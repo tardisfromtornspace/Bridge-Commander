@@ -1,0 +1,252 @@
+<html>
+	<body BGCOLOR="#ffffff">
+		<B>DISCLAIMER:</B><BR>
+		<P>Use this mod at your own risk. I am not responsible for any damage to your 
+			computer, your ship or your crew.</P>
+		<P>This mod is distributed under the terms of the <A HREF="SDKLicense.txt">STAR TREK 
+				BRIDGE COMMANDER SDK LICENSING AGREEMENT</A>. For purposes of 
+			redistributing and modifying of this mod the terms of the <A HREF="GNU General Public License - GNU Project - Free Software Foundation (FSF).htm">
+				GNU General Public License</A> apply.</P>
+		<B>Quick Battle Replacement 2.3 (QBR)</B><BR>
+		<P><B>Author:</B> Banbury (<A HREF="mailto:baley5@excite.com">baley5@excite.com</A>)<BR>
+			<BR>
+			<B>Additional Programming by:</B></P>
+		<dir>
+			<LI>
+				Capt. Redbeard</LI>
+			<LI>
+				Defiant</LI>
+		</dir>
+		<P><B>Changes:</B><BR>
+			<BR>
+		</P>
+		<I>Version 2.3</I>
+		<dir>
+			<LI>
+				Added new group Neutrals2</LI>
+			<LI>
+				Added default AI for Neutrals and Neutrals2</LI>
+			<li>
+				Ships can now be marked as critical for a mission</li>
+			<LI>
+				Setup format changed.</LI>
+			<LI>
+				Ships can now appear after a random amount of time (Defiant)</LI>
+			<LI>
+				Setups are now saved in folder Missions (Defiant)</LI>
+			<LI>
+				Custom bridges should work now (Defiant)</LI>
+			<LI>
+				Included Defiant's Engineering Extension in setup</LI>
+		</dir>
+		<I>Version 2.2</I>
+		<dir>
+			<LI>
+				Added pre-damaging of ships</LI>
+			<LI>
+				Added support for plugins</LI>
+			<LI>
+				Added Briefing plugin</LI>
+			<LI>
+				Redesigned GUI</LI>
+			<LI>
+				Added Advanced Technology Plugin (in the samples folder)</LI>
+		</dir>
+		<I>Version 2.1.4</I>
+		<dir>
+			<LI>
+				Fixed System loading bug</LI>
+			<LI>
+				Added Fleet Hail menu</LI>
+			<LI>
+				Added Emergency Transport</LI>
+		</dir>
+		<I>Version 2.1.3</I>
+		<dir>
+			<LI>
+				Added tutorial courtesy of Capt. Redbeard</LI>
+			<LI>
+				Add bridge menu fix by Capt. Redbeard</LI>
+			<LI>
+				Added optional Foundation compatible mainmenu.py by Capt. Redbeard</LI>
+			<LI>
+				Added some error checking by me ;)</LI>
+		</dir>
+		<I>Version 2.1.2</I>
+		<dir>
+			<LI>
+				Fixed bug in system selector</LI>
+			<LI>
+				Fixed installer</LI>
+		</dir>
+		<I>Version 2.1.1</I>
+		<dir>
+			<LI>
+				QBR comes now with an installer.</LI>
+			<LI>
+				Added loading and saving of setups.</LI>
+			<LI>
+				Added support for latest Foundation.</LI>
+			<LI>
+				Added ship preview icon.</LI>
+		</dir>
+		<I>Version 2.0.2</I>
+		<dir>
+			<LI>
+				QBR is now open source</LI>
+			<LI>
+				changes to make QBR compatible with patch 1.1</LI>
+			<LI>
+				<B>QBR is now fully compatible with Dasher42's foundation!</B></LI>
+			<LI>
+				ships with coordinates 0/0/0 will be placed randomly (except the player ship).</LI>
+			<LI>
+				The name of the player ship can no longer be changed.</LI>
+			<LI>
+				bug fix: QBSetup.txt is now written correctly.</LI>
+		</dir>
+		<I>Version 2.0.1</I>
+		<dir>
+			<LI>
+				fixed bug with ships being not deleted on restart</LI>
+		</dir>
+		<I>Version 2.0</I>
+		<dir>
+			<LI>
+				Added GUI</LI>
+			<LI>
+				Added Neutrals</LI>
+			<LI>
+				Added linking of missions via solar systems</LI>
+			<LI>
+				Ships can now have different AI levels under default AI</LI>
+		</dir>
+		<I>Version 1.2</I>
+		<dir>
+			<LI>
+				Added docking via 'Hail' menu</LI>
+			<LI>
+				Added use of custom AIs</LI>
+		</dir>
+		<I>Version 1.1</I>
+		<dir>
+			<LI>
+				Added battles in multiple systems</LI>
+			<LI>
+				ships may warp between systems</LI>
+			<LI>
+				Changed syntax: 1.0 scripts must be changed to run with this version</LI>
+		</dir>
+		<P>This replacement allows you to do a lot of things the original QuickBattle 
+			doesn't.</P>
+		<P>With QBR you can use all the ships and objects in the scripts\ship folder and 
+			all star systems. You can even play as a starbase. All friendly ships take 
+			orders. You can share your QuickBattle setups with your friends. This should be 
+			also useful to modders. New ships can be used with QBR without modifications to 
+			the script. (Try this with the original QuickBattle script.;))
+		</P>
+		<HR>
+		<P><B>Installation</B><BR>
+			Just run QuickBattle.exe. QBR will run only with the BC patch 1.1 and 
+			Dasher42's Foundation installed. QuickBattle will not be replaced.<BR>
+			'setup.bat' is no longer needed.
+		</P>
+		<HR>
+		<P><B>Usage</B><BR>
+			To play QBR you have to start Bridge Commander with the -TestMode parameter. 
+			Press the 'Test Only' button. To start QBR press the 'QuickBattleGame' button 
+			in the custom missions menu.</P>
+		<P>All aspects of QBR are controlled with python script files. At least QBSetup.py 
+			has to be present and will be loaded on startup.</P>
+		<P>Since Version 2.0 you can configure most options from within a dialog. Look in 
+			Saffi's menu and press 'Configure'. You can add ships and systems by clicking 
+			on their buttons in the menus. When you add a ship, you must select it in the 
+			right menu and change its properties. You must at least set a starting system 
+			and a new position. Press 'Update' to make changes permanent. Press 'Close' to 
+			cancel any changes. Press 'Start' to run the new setup.<BR>
+			The player ship's name is always 'player'. All other ships must have unique 
+			names. For friendly ships you might want to enter 'FleetAI' in the AI edit box.<BR>
+			Neutrals don't have a default AI. They will just sit in space. You can create a 
+			custom AI with the SDK's AI editor for more interesting missions.<BR>
+			If you create a wrong setup, BC might crash. (I was too lazy to add a 
+			validation routine. :); There is a simple check since version 2.13)<BR>
+			Ship, Bridge and system mods will be added automaticlly to their menus, if they 
+			are correctly installed as Foundation plugins.</P>
+		<P>In the Hail menu is a new entry 'Fleet'. Here you can order all friendly ships 
+			in the area to attack your current target.</P>
+		<P>In the Chief Engineer's menu you will find another new button. If you press 
+			'Transporter' you and your crew will be beamed to the nearest friendly ship. 
+			The Transporter has a range of about 50 km.</P>
+		<P>With the 'File' pane you can load and save your setups. To save a setup, enter 
+			the filename without extension in the edit field and press 'Save'. To load a 
+			setup select a file in the list box and press 'Load'. There is no warning, if 
+			you overwrite a file, so be careful where you click.<BR>
+			To start QBR with a saved setup, rename your file to 'QBSetup.py' and start a 
+			new QuickBattle mission from the BC main menu.</P>
+		<P>The systems of any ship or starbase can be pre-damaged randomly. Just enter the 
+			minimum and maximum values of the desired damage in percent into the 
+			editfields.</P>
+		<P><B>Briefings</B><BR>
+			If you enter text into the fields on the 'Briefing' page, your mission will be 
+			preceded by a short cutscene. The first line will be shown as the title of the 
+			mission. The following lines will be shown as subtitles. After the title is 
+			visible, the briefing can be skipped by pressing the 's' key. Don't allow ships 
+			to warp, if you are using a briefing.</P>
+		<P><B>Neutrals</B><BR>
+			I have added a second neutrals group 'Neutral2' which will appear gray on your 
+			sensors. Both neutral groups have now a default AI. Neutral ships will attack 
+			Neutral2 ships and after that enemy ships. Neutral2 ships attack Neutral ships 
+			and after that all friendly ships. This should add some new possiblities for 
+			games, because potential allies or enemies have nour their own agenda.</P>
+		<P><B>ETA</B><BR>
+			Defiant has added additional parameters to the 'Ships' page. 'ETA Min' and 'ETA 
+			Max' set a random time in minutes a ship waits until it appears in its system. 
+			If 'ETA Max' is lower than 'ETA Min' the ship will appear exactly at the time 
+			given in 'ETA Min'. Does nothing for the Player ship.
+		</P>
+		<B>Critical</B><br>
+		A ship marked 'Critical' influences the ending of a mission when destroyed. If 
+		all ships belonging to the Enemy and Neutral2 groups are destroyed the mission is considered as 
+		won. Otherwise if all critical ships of the other groups are destroyed the mission is lost. Any number of ships can set to 'Critical'. The Player 
+		ship is of course always critical for the success of a mission.
+		The critical ships are listed in the 'Objectives' menu of the First Officer.
+		<p>
+		</p>
+		<HR>
+		<P><B>Plugin Development</B></P>
+		<P>Plugins can be used to add new features to QBR. Plugins can have their own GUI, 
+			change event handlers or modify the QuickBattle setup. Plugin settings can be 
+			saved within the setup script.</P>
+		<P>QBR will look for three functions in a plugin:</P>
+		<dir>
+			<LI>
+				Initialize(pMission)</LI></dir>
+		This function will be called once when QBR is started.<BR>
+		<dir>
+			<LI>
+				Restart()</LI></dir>
+		This function will be called when the 'Start' button is pressed. This is for 
+		any code that should be executed each time a new mission is started.<BR>
+		<dir>
+			<LI>
+				Terminate()</LI></dir>
+		This function will be called once when QBR is shut down.<BR>
+		<P>The plugin module offers some convenience functions for communicating with QBR. 
+			With these you can save and retrieve settings from a setup file and manipulate 
+			the GUI of QBR.</P>
+		<P>I have provided a template in the samples folder (plugin.py.template) for a 
+			quick start. Just copy the file and rename it (eg. 'MyPlugin.py'). Then add 
+			code to the functions. The next time you start up QBR your plugin will be 
+			loaded and the code executed.</P>
+		<P>Please have a look at the 'Briefing' plugin for an example, on how to implement 
+			a plugin. It shows the usage of 'plugin.py' and how to create a simple GUI.</P>
+		<P>If there is enough interest by third party developers (this means you :)) in 
+			writing plugins, I will create a better tutorial.</P>
+		<P><B>Docking with Starbases</B><BR>
+			Despite hours of experimenting I couldn't get the 'Dock' button to work outside 
+			of the 'Starbase 12' system. Therefore I abused the 'Hail' button for this 
+			purpose. If you hail a Federation starbase or one of your allies the docking 
+			procedure will begin. Right now only the Federation Starbase has docking 
+			points.</P>
+	</body>
+</html>

@@ -1,0 +1,27 @@
+#This is the dump of the LogCreator: <CylonBasestar 26 Travel Logger LogCreator_xtmabmTHZ6pe>
+#This log file was created on: 20:3:37.106 of 21/February/2017, Tuesday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>20:3:37.106 of 21/February/2017, Tuesday
+#>>>Initialized CylonBasestar 26 Travel logger
+#>>>SELF = <CylonBasestar 26(582384) Travel_084ouyW1G4of>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>20:3:56.027 of 21/February/2017, Tuesday
+#>>>Updated Target Ship = Player

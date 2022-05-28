@@ -1,0 +1,53 @@
+#This is the dump of the LogCreator: <DRA_Raider 8 Travel Logger LogCreator_7v74rPY5cUb5>
+#This log file was created on: 17:49:35.075 of 29/June/2017, Thursday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>17:49:35.075 of 29/June/2017, Thursday
+#>>>Initialized DRA_Raider 8 Travel logger
+#>>>SELF = <DRA_Raider 8(501768) Travel_QY33m7871Xd2>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>17:49:38.248 of 29/June/2017, Thursday
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>17:49:48.889 of 29/June/2017, Thursday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>17:49:50.215 of 29/June/2017, Thursday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>17:49:51.026 of 29/June/2017, Thursday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>17:49:52.438 of 29/June/2017, Thursday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>17:49:53.010 of 29/June/2017, Thursday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>17:51:33.115 of 29/June/2017, Thursday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

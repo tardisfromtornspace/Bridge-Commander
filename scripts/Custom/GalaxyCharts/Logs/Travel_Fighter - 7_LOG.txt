@@ -1,0 +1,44 @@
+#This is the dump of the LogCreator: <Fighter - 7 Travel Logger LogCreator_669Y1LRyfR41>
+#This log file was created on: 15:35:22.764 of 26/June/2017, Monday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>15:35:22.764 of 26/June/2017, Monday
+#>>>Initialized Fighter - 7 Travel logger
+#>>>SELF = <Fighter - 7(861765) Travel_sACj3b10SPi8>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>15:35:24.616 of 26/June/2017, Monday
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>15:35:34.866 of 26/June/2017, Monday
+#>>>Updated Target Ship = Attack Mode-9
+## -------------------- ##
+####################
+#######>>>15:37:27.238 of 26/June/2017, Monday
+#>>>Updated Target Ship = T.A.R.D.I.S.-4
+## -------------------- ##
+####################
+#######>>>15:37:33.203 of 26/June/2017, Monday
+#>>>Updated Target Ship = Attack Mode-9
+## -------------------- ##
+####################
+#######>>>15:38:15.208 of 26/June/2017, Monday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

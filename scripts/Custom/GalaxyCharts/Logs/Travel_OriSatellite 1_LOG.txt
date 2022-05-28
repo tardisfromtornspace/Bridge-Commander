@@ -1,0 +1,32 @@
+#This is the dump of the LogCreator: <OriSatellite 1 Travel Logger LogCreator_W32ri98b8u9y>
+#This log file was created on: 18:48:31.110 of 4/May/2017, Thursday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>18:48:31.110 of 4/May/2017, Thursday
+#>>>Initialized OriSatellite 1 Travel logger
+#>>>SELF = <OriSatellite 1(554517) Travel_rZrY936Gs8R4>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>18:48:50.882 of 4/May/2017, Thursday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 19:29:48.554 of 4/May/2017, Thursday
+#Ending of log dump - User is quiting the game
+########################################

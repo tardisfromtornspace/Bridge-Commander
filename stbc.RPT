@@ -1,0 +1,3958 @@
+//=====================================================
+Current Time: Sun Dec 11 11:45:58 2016
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  0044D565 01:0004C565 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:044F8BF4
+EBX:00000000
+ECX:0000000B
+EDX:006F1E9E
+ESI:009803A0
+EDI:02884628
+CS:EIP:001B:0044D565
+SS:ESP:0023:0012F8C8  EBP:02884634
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010283
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+0044D565  02884634  0001:0004C565 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+028969DC  006F1FA7  0000:00000000  (No symbol info found)
+90909090  C30099A7  0000:00000000  (No symbol info found)
+
+//=====================================================
+Current Time: Sun Dec 11 11:47:27 2016
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  0044D565 01:0004C565 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:04C6BFF0
+EBX:00000000
+ECX:0000000B
+EDX:006F1E9E
+ESI:009803A0
+EDI:0285FBD4
+CS:EIP:001B:0044D565
+SS:ESP:0023:0012F8C8  EBP:0285FBE0
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00090283
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+0044D565  0285FBE0  0001:0004C565 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+028B03B8  006F1FA7  0000:00000000  (No symbol info found)
+90909090  C30099A7  0000:00000000  (No symbol info found)
+
+//=====================================================
+Current Time: Sun Dec 11 11:49:20 2016
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  0044D565 01:0004C565 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:05F254B4
+EBX:00000000
+ECX:C3009143
+EDX:006D8FEF
+ESI:009803A0
+EDI:0285FBD4
+CS:EIP:001B:0044D565
+SS:ESP:0023:0012F8C8  EBP:0285FBE0
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010296
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+0044D565  0285FBE0  0001:0004C565 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+028B03D4  006D90F8  0000:00000000  (No symbol info found)
+90909090  0004C2C0  0000:00000000  (No symbol info found)
+
+//=====================================================
+Current Time: Sun Dec 11 11:52:01 2016
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  0044D565 01:0004C565 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:048FA298
+EBX:00000000
+ECX:C3009143
+EDX:006D8FEF
+ESI:009803A0
+EDI:02727360
+CS:EIP:001B:0044D565
+SS:ESP:0023:0012F8C8  EBP:0272736C
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010292
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+0044D565  0272736C  0001:0004C565 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+028AF640  006D90F8  0000:00000000  (No symbol info found)
+90909090  0004C2C0  0000:00000000  (No symbol info found)
+
+//=====================================================
+Current Time: Sun Dec 11 14:06:42 2016
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Sun Dec 11 16:52:05 2016
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Sun Dec 11 19:14:58 2016
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  00700B05 01:002FFB05 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:00CD0999
+EBX:00000000
+ECX:01970A80
+EDX:00000201
+ESI:00000000
+EDI:10244F28
+CS:EIP:001B:00700B05
+SS:ESP:0023:0012FA38  EBP:0097FA00
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010206
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+00700B05  0097FA00  0001:002FFB05 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+//=====================================================
+Current Time: Sun Dec 11 22:31:55 2016
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Fri Jan 27 10:27:36 2017
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Fri Jan 27 09:50:26 2017
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Fri Jan 27 10:25:25 2017
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Tue Feb 14 19:38:39 2017
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Tue Feb 14 19:41:46 2017
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Tue Feb 14 19:58:44 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  006D1EB0 01:002D0EB0 C:\Alejandro\Tempstbc\Bridge Commander modif\stbc.exe
+
+Registers:
+EAX:B4597D7A
+EBX:00000000
+ECX:00000000
+EDX:02B71BA9
+ESI:00000000
+EDI:0BDF20C8
+CS:EIP:001B:006D1EB0
+SS:ESP:0023:0012F544  EBP:00000000
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010282
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+
+//=====================================================
+Current Time: Tue Feb 14 20:16:57 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  006E21F3 01:002E11F3 C:\Alejandro\Tempstbc\Bridge Commander modif\stbc.exe
+
+Registers:
+EAX:FFFFFFFF
+EBX:00000000
+ECX:0F6118EC
+EDX:00000001
+ESI:0F6118EC
+EDI:1B512B6C
+CS:EIP:001B:006E21F3
+SS:ESP:0023:0012FCB4  EBP:1B512B6C
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010286
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+006E21F3  1B512B6C  0001:002E11F3 C:\Alejandro\Tempstbc\Bridge Commander modif\stbc.exe
+00042C1C  0089460C  0000:00000000  (No symbol info found)
+005C9E30  005C9EB0  0001:001C8E30 C:\Alejandro\Tempstbc\Bridge Commander modif\stbc.exe
+
+//=====================================================
+Current Time: Tue Feb 14 20:32:13 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  004AB062 01:000AA062 C:\Alejandro\Tempstbc\Bridge Commander modif\stbc.exe
+
+Registers:
+EAX:0000005A
+EBX:006F0043
+ECX:00000000
+EDX:00000041
+ESI:00000061
+EDI:006F01C8
+CS:EIP:001B:004AB062
+SS:ESP:0023:0012FAF8  EBP:00000061
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010202
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+004AB062  00000061  0001:000AA062 C:\Alejandro\Tempstbc\Bridge Commander modif\stbc.exe
+
+//=====================================================
+Current Time: Tue Feb 14 19:35:08 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  7370012F 01:0001F12F C:\WINDOWS\system32\DDRAW.dll
+
+Registers:
+EAX:61002000
+EBX:157D4290
+ECX:69006D00
+EDX:0012F658
+ESI:00000373
+EDI:06BFFF80
+CS:EIP:001B:7370012F
+SS:ESP:0023:0012F5D0  EBP:0012F5E4
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010202
+
+Application Timestamp: Fri Aug 20 00:38:43 2004
+Doing stack walk
+
+Call stack:
+Address   Frame
+7370012F  0012F5E4  0001:0001F12F C:\WINDOWS\system32\DDRAW.dll (No symbol info found)
+737004AB  0012F628  0001:0001F4AB C:\WINDOWS\system32\DDRAW.dll (No symbol info found)
+007D53EC  7C859EF8  0001:003D43EC C:\Alejandro\Tempstbc\Bridge Commander modif\stbc.exe
+A2206800  00023468  0000:00000000  (No symbol info found)
+
+//=====================================================
+Current Time: Tue Feb 14 20:03:27 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  005CDDAC 01:001CCDAC C:\Alejandro\Tempstbc\Bridge Commander modif\stbc.exe
+
+Registers:
+EAX:00000058
+EBX:1B38E674
+ECX:1A751500
+EDX:00000001
+ESI:1B38E674
+EDI:005CDD40
+CS:EIP:001B:005CDDAC
+SS:ESP:0023:0012F9F4  EBP:00000000
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010202
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+
+//=====================================================
+Current Time: Tue Feb 14 20:19:07 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  00419963 01:00018963 C:\Alejandro\Tempstbc\Bridge Commander modif\stbc.exe
+
+Registers:
+EAX:00893AE8
+EBX:0F8677B4
+ECX:00000000
+EDX:171D0080
+ESI:171D0040
+EDI:005F3730
+CS:EIP:001B:00419963
+SS:ESP:0023:0012F9E4  EBP:00000000
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010216
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+
+//=====================================================
+Current Time: Tue Feb 14 20:28:29 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  007DB1E0 01:003DA1E0 C:\Alejandro\Tempstbc\Bridge Commander modif\stbc.exe
+
+Registers:
+EAX:00000000
+EBX:00000000
+ECX:00000000
+EDX:0F66D2B4
+ESI:0012F93C
+EDI:161EA3C4
+CS:EIP:001B:007DB1E0
+SS:ESP:0023:0012F810  EBP:0F66B764
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010202
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+007DB1E0  0F66B764  0001:003DA1E0 C:\Alejandro\Tempstbc\Bridge Commander modif\stbc.exe
+16133434  1689F5FC  0000:00000000  (No symbol info found)
+646F4D2F  61746164  //=====================================================
+Current Time: Tue Feb 14 19:55:57 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  005D0440 01:001CF440 C:\Alejandro\Tempstbc\Bridge Commander modif\stbc.exe
+
+Registers:
+EAX:00000000
+EBX:1B5CB7E0
+ECX:162C276C
+EDX:00000058
+ESI:1B5CB7E0
+EDI:005D03F0
+CS:EIP:001B:005D0440
+SS:ESP:0023:0012FA48  EBP:00000000
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010213
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+
+//=====================================================
+Current Time: Tue Feb 14 20:07:39 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  004AB062 01:000AA062 C:\Alejandro\Tempstbc\Bridge Commander modif\stbc.exe
+
+Registers:
+EAX:0000005A
+EBX:006F0043
+ECX:02100301
+EDX:00000041
+ESI:00000061
+EDI:006F01C8
+CS:EIP:001B:004AB062
+SS:ESP:0023:0012FAF8  EBP:00000061
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010202
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+004AB062  00000061  0001:000AA062 C:\Alejandro\Tempstbc\Bridge Commander modif\stbc.exe
+
+//=====================================================
+Current Time: Tue Feb 14 20:27:28 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  005A772A 01:001A672A C:\Alejandro\Tempstbc\Bridge Commander modif\stbc.exe
+
+Registers:
+EAX:00000000
+EBX:035B5C9C
+ECX:035B5C9C
+EDX:0095DD20
+ESI:175F4164
+EDI:006148F0
+CS:EIP:001B:005A772A
+SS:ESP:0023:0012FA34  EBP:00000000
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010212
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+
+//=====================================================
+Current Time: Tue Feb 14 19:51:31 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  006E21F3 01:002E11F3 C:\Alejandro\Tempstbc\Bridge Commander modif\stbc.exe
+
+Registers:
+EAX:FFFFFFFF
+EBX:00000000
+ECX:0EDA7654
+EDX:00000001
+ESI:0EDA7654
+EDI:16E9D544
+CS:EIP:001B:006E21F3
+SS:ESP:0023:0012FCB4  EBP:16E9D544
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010286
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+006E21F3  16E9D544  0001:002E11F3 C:\Alejandro\Tempstbc\Bridge Commander modif\stbc.exe
+0003B27D  0089460C  0000:00000000  (No symbol info found)
+005C9E30  005C9EB0  0001:001C8E30 C:\Alejandro\Tempstbc\Bridge Commander modif\stbc.exe
+
+//=====================================================
+Current Time: Tue Feb 14 20:15:16 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  006E21F3 01:002E11F3 C:\Alejandro\Tempstbc\Bridge Commander modif\stbc.exe
+
+Registers:
+EAX:FFFFFFFF
+EBX:00000000
+ECX:0EE2EBE4
+EDX:00000001
+ESI:0EE2EBE4
+EDI:276D3BA0
+CS:EIP:001B:006E21F3
+SS:ESP:0023:0012FCB4  EBP:276D3BA0
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010286
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+006E21F3  276D3BA0  0001:002E11F3 C:\Alejandro\Tempstbc\Bridge Commander modif\stbc.exe
+0006E954  0089460C  0000:00000000  (No symbol info found)
+005C9E30  005C9EB0  0001:001C8E30 C:\Alejandro\Tempstbc\Bridge Commander modif\stbc.exe
+
+//=====================================================
+Current Time: Tue Feb 14 19:43:59 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  007DB1E0 01:003DA1E0 C:\Alejandro\Tempstbc\Bridge Commander modif\stbc.exe
+
+Registers:
+EAX:00000000
+EBX:00000000
+ECX:00000000
+EDX:00000020
+ESI:0012F958
+EDI:0F11451C
+CS:EIP:001B:007DB1E0
+SS:ESP:0023:0012F82C  EBP:275907BC
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010216
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+007DB1E0  275907BC  0001:003DA1E0 C:\Alejandro\Tempstbc\Bridge Commander modif\stbc.exe
+27121F1C  275E0D7C  0000:00000000  (No symbol info found)
+646F4D2F  61746164  //=====================================================
+Current Time: Tue Feb 14 20:23:13 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  005CFCC2 01:001CECC2 C:\Alejandro\Tempstbc\Bridge Commander modif\stbc.exe
+
+Registers:
+EAX:00000048
+EBX:1660E37C
+ECX:1C9A5D3C
+EDX:16812508
+ESI:1660E37C
+EDI:005CFBF0
+CS:EIP:001B:005CFCC2
+SS:ESP:0023:0012F9BC  EBP:00000000
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010202
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+
+//=====================================================
+Current Time: Tue Feb 14 20:31:40 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  007DB1E0 01:003DA1E0 C:\Alejandro\Tempstbc\Bridge Commander modif\stbc.exe
+
+Registers:
+EAX:00000000
+EBX:00000000
+ECX:00000000
+EDX:00000020
+ESI:0012F8D8
+EDI:0F127F54
+CS:EIP:001B:007DB1E0
+SS:ESP:0023:0012F7AC  EBP:171F8364
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010212
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+007DB1E0  171F8364  0001:003DA1E0 C:\Alejandro\Tempstbc\Bridge Commander modif\stbc.exe
+1721752C  0E85365C  0000:00000000  (No symbol info found)
+646F4D2F  61746164  //=====================================================
+Current Time: Tue Feb 14 19:34:58 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  004AB062 01:000AA062 C:\Alejandro\Tempstbc\Bridge Commander modif\stbc.exe
+
+Registers:
+EAX:0000005A
+EBX:006F0043
+ECX:02100301
+EDX:00000041
+ESI:00000061
+EDI:006F01C8
+CS:EIP:001B:004AB062
+SS:ESP:0023:0012FAF8  EBP:00000061
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010202
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+004AB062  00000061  0001:000AA062 C:\Alejandro\Tempstbc\Bridge Commander modif\stbc.exe
+
+//=====================================================
+Current Time: Tue Feb 14 19:42:43 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  00564FE0 01:00163FE0 C:\Alejandro\Tempstbc\Bridge Commander modif\stbc.exe
+
+Registers:
+EAX:00000000
+EBX:00000000
+ECX:00000000
+EDX:00000114
+ESI:035BEEE4
+EDI:00000000
+CS:EIP:001B:00564FE0
+SS:ESP:0023:0012FA70  EBP:028706DC
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010246
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+00564FE0  028706DC  0001:00163FE0 C:\Alejandro\Tempstbc\Bridge Commander modif\stbc.exe
+
+//=====================================================
+Current Time: Tue Feb 21 20:05:28 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  004AB062 01:000AA062 C:\Alejandro\Tempstbc\Bridge Commander modif\stbc.exe
+
+Registers:
+EAX:0000005A
+EBX:006F0043
+ECX:02100301
+EDX:00000041
+ESI:00000061
+EDI:006F01C8
+CS:EIP:001B:004AB062
+SS:ESP:0023:0012FAF8  EBP:00000061
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010202
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+004AB062  00000061  0001:000AA062 C:\Alejandro\Tempstbc\Bridge Commander modif\stbc.exe
+
+//=====================================================
+Current Time: Tue Feb 21 20:22:30 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  00419963 01:00018963 C:\Alejandro\Tempstbc\Bridge Commander modif\stbc.exe
+
+Registers:
+EAX:00893458
+EBX:0012FA7C
+ECX:00000000
+EDX:000001B9
+ESI:1491F558
+EDI:0012FA70
+CS:EIP:001B:00419963
+SS:ESP:0023:0012FA1C  EBP:0356D284
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010202
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+00419963  0356D284  0001:00018963 C:\Alejandro\Tempstbc\Bridge Commander modif\stbc.exe
+13A9A7A8  008942D4  0000:00000000  (No symbol info found)
+60AD78EC  005A9A20  //=====================================================
+Current Time: Tue Feb 21 19:46:44 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  004AB062 01:000AA062 C:\Alejandro\Tempstbc\Bridge Commander modif\stbc.exe
+
+Registers:
+EAX:0000005A
+EBX:006F0043
+ECX:02100301
+EDX:00000041
+ESI:00000061
+EDI:006F01C8
+CS:EIP:001B:004AB062
+SS:ESP:0023:0012FAF8  EBP:00000061
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010202
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+004AB062  00000061  0001:000AA062 C:\Alejandro\Tempstbc\Bridge Commander modif\stbc.exe
+
+//=====================================================
+Current Time: Tue Feb 21 20:08:05 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  004AB062 01:000AA062 C:\Alejandro\Tempstbc\Bridge Commander modif\stbc.exe
+
+Registers:
+EAX:0000005A
+EBX:006F0043
+ECX:02100301
+EDX:00000041
+ESI:00000061
+EDI:006F01C8
+CS:EIP:001B:004AB062
+SS:ESP:0023:0012FAF8  EBP:00000061
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010202
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+004AB062  00000061  0001:000AA062 C:\Alejandro\Tempstbc\Bridge Commander modif\stbc.exe
+
+//=====================================================
+Current Time: Tue Feb 21 20:11:51 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  004AB062 01:000AA062 C:\Alejandro\Tempstbc\Bridge Commander modif\stbc.exe
+
+Registers:
+EAX:0000005A
+EBX:006F0043
+ECX:02100301
+EDX:00000041
+ESI:00000061
+EDI:006F01C8
+CS:EIP:001B:004AB062
+SS:ESP:0023:0012FAF8  EBP:00000061
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010202
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+004AB062  00000061  0001:000AA062 C:\Alejandro\Tempstbc\Bridge Commander modif\stbc.exe
+
+//=====================================================
+Current Time: Tue Feb 21 20:13:20 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  004AB062 01:000AA062 C:\Alejandro\Tempstbc\Bridge Commander modif\stbc.exe
+
+Registers:
+EAX:0000005A
+EBX:006F0043
+ECX:02100301
+EDX:00000041
+ESI:00000061
+EDI:006F01C8
+CS:EIP:001B:004AB062
+SS:ESP:0023:0012FAF8  EBP:00000061
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010202
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+004AB062  00000061  0001:000AA062 C:\Alejandro\Tempstbc\Bridge Commander modif\stbc.exe
+
+//=====================================================
+Current Time: Tue Feb 21 20:15:35 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  004AB062 01:000AA062 C:\Alejandro\Tempstbc\Bridge Commander modif\stbc.exe
+
+Registers:
+EAX:0000005A
+EBX:006F0043
+ECX:02100301
+EDX:00000041
+ESI:00000061
+EDI:006F01C8
+CS:EIP:001B:004AB062
+SS:ESP:0023:0012FAF8  EBP:00000061
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010202
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+004AB062  00000061  0001:000AA062 C:\Alejandro\Tempstbc\Bridge Commander modif\stbc.exe
+
+//=====================================================
+Current Time: Tue Feb 21 20:19:49 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  004AB062 01:000AA062 C:\Alejandro\Tempstbc\Bridge Commander modif\stbc.exe
+
+Registers:
+EAX:0000005A
+EBX:006F0043
+ECX:02100301
+EDX:00000041
+ESI:00000061
+EDI:006F01C8
+CS:EIP:001B:004AB062
+SS:ESP:0023:0012FAF8  EBP:00000061
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010202
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+004AB062  00000061  0001:000AA062 C:\Alejandro\Tempstbc\Bridge Commander modif\stbc.exe
+
+//=====================================================
+Current Time: Tue Feb 21 20:23:46 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  004AB062 01:000AA062 C:\Alejandro\Tempstbc\Bridge Commander modif\stbc.exe
+
+Registers:
+EAX:0000005A
+EBX:006F0043
+ECX:02100301
+EDX:00000041
+ESI:00000061
+EDI:006F01C8
+CS:EIP:001B:004AB062
+SS:ESP:0023:0012FAF8  EBP:00000061
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010202
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+004AB062  00000061  0001:000AA062 C:\Alejandro\Tempstbc\Bridge Commander modif\stbc.exe
+
+//=====================================================
+Current Time: Tue Feb 21 19:50:38 2017
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Tue Feb 21 20:05:46 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  0044D565 01:0004C565 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:033AC304
+EBX:00000000
+ECX:0000081A
+EDX:00000810
+ESI:009803A0
+EDI:0325B280
+CS:EIP:001B:0044D565
+SS:ESP:0023:0012F8C8  EBP:0325B28C
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010283
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+0044D565  0325B28C  0001:0004C565 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+0332DA98  0000082D  0000:00000000  (No symbol info found)
+
+//=====================================================
+Current Time: Tue Feb 21 20:06:32 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  0044D565 01:0004C565 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:033ADEA4
+EBX:00000000
+ECX:0000081A
+EDX:00000810
+ESI:009803A0
+EDI:0325B248
+CS:EIP:001B:0044D565
+SS:ESP:0023:0012F8C8  EBP:0325B254
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010297
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+0044D565  0325B254  0001:0004C565 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+033233E4  0000082D  0000:00000000  (No symbol info found)
+
+//=====================================================
+Current Time: Tue Feb 21 19:56:17 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  0044D565 01:0004C565 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:0E57F514
+EBX:00000000
+ECX:000230BB
+EDX:000230BC
+ESI:009803A0
+EDI:0325CA88
+CS:EIP:001B:0044D565
+SS:ESP:0023:0012F8C8  EBP:0325CA94
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00090297
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+0044D565  0325CA94  0001:0004C565 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+03321DEC  0002323E  0000:00000000  (No symbol info found)
+
+//=====================================================
+Current Time: Tue Feb 21 19:56:48 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  0044D565 01:0004C565 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:0E8ABCF4
+EBX:00000000
+ECX:000230BB
+EDX:000230BC
+ESI:009803A0
+EDI:0326FC10
+CS:EIP:001B:0044D565
+SS:ESP:0023:0012F8C8  EBP:0326FC1C
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00090297
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+0044D565  0326FC1C  0001:0004C565 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+03322F64  0002323E  0000:00000000  (No symbol info found)
+
+//=====================================================
+Current Time: Tue Feb 21 19:57:32 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  0044D565 01:0004C565 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:0E639D10
+EBX:00000000
+ECX:000230BB
+EDX:000230BC
+ESI:009803A0
+EDI:0325B248
+CS:EIP:001B:0044D565
+SS:ESP:0023:0012F8C8  EBP:0325B254
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010283
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+0044D565  0325B254  0001:0004C565 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+033233E4  0002323E  0000:00000000  (No symbol info found)
+
+//=====================================================
+Current Time: Tue Feb 21 19:33:04 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  00563AB8 01:00162AB8 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:00000000
+EBX:00000001
+ECX:00000000
+EDX:42840000
+ESI:00000000
+EDI:03556064
+CS:EIP:001B:00563AB8
+SS:ESP:0023:0012FBE8  EBP:00000000
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00090246
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+
+//=====================================================
+Current Time: Tue Feb 21 19:35:19 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  00563AB8 01:00162AB8 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:00000000
+EBX:00000001
+ECX:00000000
+EDX:42840000
+ESI:00000000
+EDI:035556CC
+CS:EIP:001B:00563AB8
+SS:ESP:0023:0012FBE8  EBP:00000000
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010246
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+
+//=====================================================
+Current Time: Tue Feb 21 19:44:51 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  00563AB8 01:00162AB8 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:00000000
+EBX:00000001
+ECX:00000000
+EDX:42840000
+ESI:00000000
+EDI:03555194
+CS:EIP:001B:00563AB8
+SS:ESP:0023:0012FBE8  EBP:00000000
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00090246
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+
+//=====================================================
+Current Time: Tue Feb 21 19:47:15 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  00563AB8 01:00162AB8 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:00000000
+EBX:00000001
+ECX:00000000
+EDX:42840000
+ESI:00000000
+EDI:035549D4
+CS:EIP:001B:00563AB8
+SS:ESP:0023:0012FBE8  EBP:00000000
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010246
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+
+//=====================================================
+Current Time: Tue Feb 21 19:58:58 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  004090EB 01:000080EB C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:0EBDD1B0
+EBX:0000008F
+ECX:00000000
+EDX:149B6B10
+ESI:152F065C
+EDI:00000005
+CS:EIP:001B:004090EB
+SS:ESP:0023:0012FC8C  EBP:0E863050
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010202
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+004090EB  0E863050  0001:000080EB C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+0001F695  00888864  //=====================================================
+Current Time: Tue Feb 21 20:07:29 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  004090EB 01:000080EB C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:0EA8E358
+EBX:00000090
+ECX:00000000
+EDX:17468C10
+ESI:1728D1B4
+EDI:00000005
+CS:EIP:001B:004090EB
+SS:ESP:0023:0012FC8C  EBP:1669DE50
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010202
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+004090EB  1669DE50  0001:000080EB C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+0001D428  00888864  //=====================================================
+Current Time: Tue Feb 21 20:20:42 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  006D5A8C 01:002D4A8C C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:00000F92
+EBX:0EB99CD4
+ECX:00000000
+EDX:00000010
+ESI:0EC10F9C
+EDI:00000000
+CS:EIP:001B:006D5A8C
+SS:ESP:0023:0012F42C  EBP:00000F92
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010217
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+006D5A8C  00000F92  0001:002D4A8C C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+//=====================================================
+Current Time: Tue Feb 21 20:04:24 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  004AB8FE 01:000AA8FE C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:0000005A
+EBX:0054004E
+ECX:00010000
+EDX:00000043
+ESI:00000061
+EDI:005401D1
+CS:EIP:001B:004AB8FE
+SS:ESP:0023:0012FB04  EBP:00000061
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010206
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+004AB8FE  00000061  0001:000AA8FE C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+//=====================================================
+Current Time: Tue Feb 21 19:36:11 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  006D5A8C 01:002D4A8C C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:0000B686
+EBX:038465A4
+ECX:00000000
+EDX:00000010
+ESI:0348ABE0
+EDI:00000000
+CS:EIP:001B:006D5A8C
+SS:ESP:0023:0012F1E4  EBP:0000B686
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010283
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+006D5A8C  0000B686  0001:002D4A8C C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+//=====================================================
+Current Time: Tue Feb 21 19:54:09 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  0074DAC8 01:0034CAC8 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:00000001
+EBX:00000001
+ECX:0012F964
+EDX:00000004
+ESI:00000001
+EDI:0071E560
+CS:EIP:001B:0074DAC8
+SS:ESP:0023:0012F90C  EBP:00000000
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010202
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+
+//=====================================================
+Current Time: Tue Feb 21 19:35:56 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  00760D1B 01:0035FD1B C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:00000000
+EBX:00000004
+ECX:00000000
+EDX:01ADD0D0
+ESI:10961FD4
+EDI:01ADD0D0
+CS:EIP:001B:00760D1B
+SS:ESP:0023:0012F620  EBP:FFFFFFFF
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010202
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+00760D1B  FFFFFFFF  0001:0035FD1B C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+//=====================================================
+Current Time: Tue Feb 21 19:34:50 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  00760D1B 01:0035FD1B C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:00000000
+EBX:40400000
+ECX:00000000
+EDX:01ADD0D0
+ESI:036B2EC4
+EDI:01ADD0D0
+CS:EIP:001B:00760D1B
+SS:ESP:0023:0012F5D0  EBP:FFFFFFFF
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010202
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+00760D1B  FFFFFFFF  0001:0035FD1B C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+//=====================================================
+Current Time: Tue Feb 21 19:39:46 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  006E21F3 01:002E11F3 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:FFFFFFFF
+EBX:00000000
+ECX:0EFF14D4
+EDX:00000001
+ESI:0EFF14D4
+EDI:27A6CB78
+CS:EIP:001B:006E21F3
+SS:ESP:0023:0012FCB4  EBP:27A6CB78
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00090286
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+006E21F3  27A6CB78  0001:002E11F3 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+000308F2  0089460C  0000:00000000  (No symbol info found)
+005C9E30  005C9EB0  0001:001C8E30 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+//=====================================================
+Current Time: Tue Feb 21 19:50:12 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  0044D565 01:0004C565 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:03255628
+EBX:00000000
+ECX:0000082C
+EDX:00000822
+ESI:009803A0
+EDI:0325B280
+CS:EIP:001B:0044D565
+SS:ESP:0023:0012F8C8  EBP:0325B28C
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010283
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+0044D565  0325B28C  0001:0004C565 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+0332DAB4  0000083F  0000:00000000  (No symbol info found)
+
+//=====================================================
+Current Time: Tue Feb 21 19:51:06 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  0044D565 01:0004C565 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:0326FC10
+EBX:00000000
+ECX:0000082C
+EDX:00000822
+ESI:009803A0
+EDI:0325B248
+CS:EIP:001B:0044D565
+SS:ESP:0023:0012F8C8  EBP:0325B254
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010287
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+0044D565  0325B254  0001:0004C565 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+033233E4  0000083F  0000:00000000  (No symbol info found)
+
+//=====================================================
+Current Time: Tue Feb 21 20:07:36 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  0044D565 01:0004C565 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:0E9EB320
+EBX:00000000
+ECX:000111D3
+EDX:000111D4
+ESI:009803A0
+EDI:0325CA88
+CS:EIP:001B:0044D565
+SS:ESP:0023:0012F8C8  EBP:0325CA94
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010297
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+0044D565  0325CA94  0001:0004C565 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+03321DEC  00011356  0000:00000000  (No symbol info found)
+
+//=====================================================
+Current Time: Tue Feb 21 19:51:46 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  0059D008 01:0019C008 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:158C320C
+EBX:00000000
+ECX:0EF1BAE0
+EDX:BDA7D7D5
+ESI:036465D4
+EDI:3DBD1A5E
+CS:EIP:001B:0059D008
+SS:ESP:0023:0012FC70  EBP:00000000
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010282
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+
+//=====================================================
+Current Time: Tue Feb 21 19:43:11 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  006E21F3 01:002E11F3 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:FFFFFFFF
+EBX:00000000
+ECX:033BDC7C
+EDX:00000001
+ESI:033BDC7C
+EDI:281B0F24
+CS:EIP:001B:006E21F3
+SS:ESP:0023:0012FCB4  EBP:281B0F24
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010286
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+006E21F3  281B0F24  0001:002E11F3 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+0014F9BB  0089460C  0000:00000000  (No symbol info found)
+005C9E30  005C9EB0  0001:001C8E30 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+//=====================================================
+Current Time: Tue Feb 21 19:53:43 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  006DF0A6 01:002DE0A6 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:000FFE16
+EBX:00000000
+ECX:00FB4904
+EDX:00000039
+ESI:000FFE16
+EDI:00FB4904
+CS:EIP:001B:006DF0A6
+SS:ESP:0023:0012FA78  EBP:0097FA00
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010202
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+006DF0A6  0097FA00  0001:002DE0A6 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+//=====================================================
+Current Time: Tue Feb 21 19:52:41 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  006E21F3 01:002E11F3 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:FFFFFFFF
+EBX:00000000
+ECX:15215434
+EDX:00000001
+ESI:15215434
+EDI:28B24370
+CS:EIP:001B:006E21F3
+SS:ESP:0023:0012FCB4  EBP:28B24370
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010286
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+006E21F3  28B24370  0001:002E11F3 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+000E658E  0089460C  0000:00000000  (No symbol info found)
+005C9E30  005C9EB0  0001:001C8E30 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+//=====================================================
+Current Time: Tue Feb 21 19:57:57 2017
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Tue Feb 21 19:57:15 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  005EE328 01:001ED328 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:0012F77C
+EBX:2943A6B4
+ECX:00000000
+EDX:0095DD20
+ESI:2943A6B4
+EDI:005EE2A0
+CS:EIP:001B:005EE328
+SS:ESP:0023:0012F77C  EBP:00000000
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010212
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+
+//=====================================================
+Current Time: Tue Feb 21 20:14:22 2017
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Mon Feb 27 16:27:31 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  004AB8FE 01:000AA8FE C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:0000005A
+EBX:0054004E
+ECX:00010000
+EDX:00000043
+ESI:00000061
+EDI:005401D1
+CS:EIP:001B:004AB8FE
+SS:ESP:0023:0012FB04  EBP:00000061
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010206
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+004AB8FE  00000061  0001:000AA8FE C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+//=====================================================
+Current Time: Mon Feb 27 16:25:40 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  004AB8FE 01:000AA8FE C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:0000005A
+EBX:0054004E
+ECX:00010000
+EDX:00000043
+ESI:00000061
+EDI:005401D1
+CS:EIP:001B:004AB8FE
+SS:ESP:0023:0012FB04  EBP:00000061
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010206
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+004AB8FE  00000061  0001:000AA8FE C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+//=====================================================
+Current Time: Mon Feb 27 16:12:57 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  004B7202 01:000B6202 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:00000000
+EBX:1F233648
+ECX:1EB91000
+EDX:00000000
+ESI:1F213044
+EDI:14D2244C
+CS:EIP:001B:004B7202
+SS:ESP:0023:0012F798  EBP:28A53C1C
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010246
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+004B7202  28A53C1C  0001:000B6202 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+//=====================================================
+Current Time: Mon Feb 27 16:23:37 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  004B7202 01:000B6202 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:00000000
+EBX:218A3648
+ECX:21771000
+EDX:00000000
+ESI:21883044
+EDI:2892094C
+CS:EIP:001B:004B7202
+SS:ESP:0023:0012F694  EBP:28A23FCC
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010246
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+004B7202  28A23FCC  0001:000B6202 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+//=====================================================
+Current Time: Mon Feb 27 16:30:31 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  004B7202 01:000B6202 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:00000000
+EBX:1FC33648
+ECX:1E351000
+EDX:00000000
+ESI:1FC13044
+EDI:27294E84
+CS:EIP:001B:004B7202
+SS:ESP:0023:0012F774  EBP:284DBE74
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010246
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+004B7202  284DBE74  0001:000B6202 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+//=====================================================
+Current Time: Mon Feb 27 15:44:03 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  004B7202 01:000B6202 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:00000000
+EBX:1E413648
+ECX:1E1D1000
+EDX:00000000
+ESI:1E3F3044
+EDI:1514AEAC
+CS:EIP:001B:004B7202
+SS:ESP:0023:0012F774  EBP:27949EE4
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00090246
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+004B7202  27949EE4  0001:000B6202 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+//=====================================================
+Current Time: Mon Feb 27 16:15:45 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  00431AD6 01:00030AD6 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:0012FA84
+EBX:271F2570
+ECX:00000001
+EDX:3F7B3879
+ESI:271F2570
+EDI:005CE690
+CS:EIP:001B:00431AD6
+SS:ESP:0023:0012FA84  EBP:00000000
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010206
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+
+//=====================================================
+Current Time: Mon Feb 27 16:20:43 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  005D0440 01:001CF440 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:00000000
+EBX:26FBFBC8
+ECX:1444A748
+EDX:00000058
+ESI:26FBFBC8
+EDI:005D03F0
+CS:EIP:001B:005D0440
+SS:ESP:0023:0012FA48  EBP:00000000
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010213
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+
+//=====================================================
+Current Time: Tue Mar 07 16:17:36 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  005A772A 01:001A672A C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:00000000
+EBX:0349DD4C
+ECX:0349DD4C
+EDX:0095DD20
+ESI:13B0BD54
+EDI:006148F0
+CS:EIP:001B:005A772A
+SS:ESP:0023:0012FA34  EBP:00000000
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010212
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+
+//=====================================================
+Current Time: Sun Mar 12 17:29:29 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  007DB1E0 01:003DA1E0 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:00000000
+EBX:00000000
+ECX:00000000
+EDX:00000020
+ESI:0012F958
+EDI:13CE24CC
+CS:EIP:001B:007DB1E0
+SS:ESP:0023:0012F82C  EBP:2AA3E774
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010216
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+007DB1E0  2AA3E774  0001:003DA1E0 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+29A7FA20  2956D974  0000:00000000  (No symbol info found)
+646F4D2F  61746164  //=====================================================
+Current Time: Fri Mar 17 11:59:18 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  004AB8FE 01:000AA8FE C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:0000005A
+EBX:0054004E
+ECX:00010000
+EDX:00000043
+ESI:00000061
+EDI:005401D1
+CS:EIP:001B:004AB8FE
+SS:ESP:0023:0012FB04  EBP:00000061
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010206
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+004AB8FE  00000061  0001:000AA8FE C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+//=====================================================
+Current Time: Fri Mar 17 20:09:41 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  0040AFE5 01:00009FE5 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:00000000
+EBX:00000014
+ECX:00000014
+EDX:0002B085
+ESI:17ED3E54
+EDI:17CC6C20
+CS:EIP:001B:0040AFE5
+SS:ESP:0023:0012FCD0  EBP:00000000
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010246
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+
+//=====================================================
+Current Time: Sat Mar 18 00:56:46 2017
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Sat Mar 18 00:22:55 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  006E21F3 01:002E11F3 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:FFFFFFFF
+EBX:00000000
+ECX:178205A4
+EDX:00000001
+ESI:178205A4
+EDI:28CB6E38
+CS:EIP:001B:006E21F3
+SS:ESP:0023:0012FCB4  EBP:28CB6E38
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010286
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+006E21F3  28CB6E38  0001:002E11F3 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+00071205  0089460C  0000:00000000  (No symbol info found)
+005C9E30  005C9EB0  0001:001C8E30 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+//=====================================================
+Current Time: Sat Mar 18 00:26:02 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  006E21F3 01:002E11F3 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:FFFFFFFF
+EBX:00000000
+ECX:177A8814
+EDX:00000001
+ESI:177A8814
+EDI:2727F4D4
+CS:EIP:001B:006E21F3
+SS:ESP:0023:0012FCB4  EBP:2727F4D4
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010286
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+006E21F3  2727F4D4  0001:002E11F3 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+0001AAE8  0089460C  //=====================================================
+Current Time: Sat Mar 18 00:52:26 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  006E21F3 01:002E11F3 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:FFFFFFFF
+EBX:00000000
+ECX:1782B7DC
+EDX:00000001
+ESI:1782B7DC
+EDI:2926747C
+CS:EIP:001B:006E21F3
+SS:ESP:0023:0012FCB4  EBP:2926747C
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010286
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+006E21F3  2926747C  0001:002E11F3 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+0004ABF7  0089460C  0000:00000000  (No symbol info found)
+005C9E30  005C9EB0  0001:001C8E30 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+//=====================================================
+Current Time: Sat Mar 18 00:42:22 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  007DB1E0 01:003DA1E0 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:00000000
+EBX:00000000
+ECX:00000000
+EDX:00000020
+ESI:0012F8D8
+EDI:17E1FCA4
+CS:EIP:001B:007DB1E0
+SS:ESP:0023:0012F7AC  EBP:18B210CC
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010212
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+007DB1E0  18B210CC  0001:003DA1E0 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+18BD2E04  178515DC  0000:00000000  (No symbol info found)
+646F4D2F  61746164  //=====================================================
+Current Time: Sat Mar 18 00:13:25 2017
+Exception code: C0000096 PRIV_INSTRUCTION
+Fault address:  03335105 6D006D:00650064 
+
+Registers:
+EAX:03334F05
+EBX:00000000
+ECX:03335100
+EDX:01082128
+ESI:033311CC
+EDI:033311CC
+CS:EIP:001B:03335105
+SS:ESP:0023:0012F88C  EBP:066660D1
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010216
+
+Application Timestamp: Thu Jan 01 01:00:00 1970
+Doing stack walk
+
+Call stack:
+Address   Frame
+03335105  066660D1  0000:00000000  (No symbol info found)
+
+//=====================================================
+Current Time: Sat Mar 18 00:39:43 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  00585205 01:00184205 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:0012F9F8
+EBX:00000000
+ECX:00000000
+EDX:00895520
+ESI:00000000
+EDI:1818BE48
+CS:EIP:001B:00585205
+SS:ESP:0023:0012F8D4  EBP:00000000
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00090202
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+
+//=====================================================
+Current Time: Sat Mar 18 00:41:36 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  00585205 01:00184205 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:0012F9F8
+EBX:00000000
+ECX:00000000
+EDX:00895520
+ESI:00000000
+EDI:1818DA68
+CS:EIP:001B:00585205
+SS:ESP:0023:0012F8D4  EBP:00000000
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010202
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+
+//=====================================================
+Current Time: Sat Mar 18 01:10:49 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  004B7202 01:000B6202 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:00000000
+EBX:21A13648
+ECX:218E1000
+EDX:00000000
+ESI:219F3044
+EDI:18B539EC
+CS:EIP:001B:004B7202
+SS:ESP:0023:0012F798  EBP:27FABD54
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010246
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+004B7202  27FABD54  0001:000B6202 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+//=====================================================
+Current Time: Sat Mar 18 00:14:52 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  004B7202 01:000B6202 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:00000000
+EBX:22843648
+ECX:19AD1000
+EDX:00000000
+ESI:22823044
+EDI:274F785C
+CS:EIP:001B:004B7202
+SS:ESP:0023:0012F774  EBP:28CA3F34
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010246
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+004B7202  28CA3F34  0001:000B6202 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+//=====================================================
+Current Time: Sun Mar 19 01:20:25 2017
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Thu Mar 23 03:25:05 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  004B7202 01:000B6202 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:00000000
+EBX:3C003648
+ECX:2FFD1000
+EDX:00000000
+ESI:3BFE3044
+EDI:17868E34
+CS:EIP:001B:004B7202
+SS:ESP:0023:0012F798  EBP:279CD7E4
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010246
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+004B7202  279CD7E4  0001:000B6202 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+//=====================================================
+Current Time: Thu Mar 23 03:51:57 2017
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Thu Mar 23 04:01:45 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  004B7202 01:000B6202 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:00000000
+EBX:1F2A3648
+ECX:1F171000
+EDX:00000000
+ESI:1F283044
+EDI:179C7EBC
+CS:EIP:001B:004B7202
+SS:ESP:0023:0012F774  EBP:276AA85C
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010246
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+004B7202  276AA85C  0001:000B6202 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+//=====================================================
+Current Time: Thu Mar 23 03:10:39 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  004AB8FE 01:000AA8FE C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:0000005A
+EBX:0054004E
+ECX:00010000
+EDX:00000043
+ESI:00000061
+EDI:005401D1
+CS:EIP:001B:004AB8FE
+SS:ESP:0023:0012FB04  EBP:00000061
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010206
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+004AB8FE  00000061  0001:000AA8FE C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+//=====================================================
+Current Time: Wed Mar 29 03:41:41 2017
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Wed Mar 29 04:21:59 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  006E21F3 01:002E11F3 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:FFFFFFFF
+EBX:00000000
+ECX:0EBCAF1C
+EDX:00000001
+ESI:0EBCAF1C
+EDI:1804BFDC
+CS:EIP:001B:006E21F3
+SS:ESP:0023:0012FCB4  EBP:1804BFDC
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010286
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+006E21F3  1804BFDC  0001:002E11F3 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+000E064D  0089460C  0000:00000000  (No symbol info found)
+005C9E30  005C9EB0  0001:001C8E30 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+//=====================================================
+Current Time: Wed Mar 29 03:48:16 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  00419963 01:00018963 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:00893458
+EBX:0012FA7C
+ECX:00000000
+EDX:0000009A
+ESI:17164FC0
+EDI:0012FA70
+CS:EIP:001B:00419963
+SS:ESP:0023:0012FA1C  EBP:034AC50C
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010202
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+00419963  034AC50C  0001:00018963 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+0F0B4A68  008942D4  0000:00000000  (No symbol info found)
+60AD78EC  005A9A20  //=====================================================
+Current Time: Wed Mar 29 03:57:16 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  0057235A 01:0017135A C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:2B0D147C
+EBX:00000000
+ECX:00000000
+EDX:000011D6
+ESI:2B0D1370
+EDI:2B0D1448
+CS:EIP:001B:0057235A
+SS:ESP:0023:0012FA5C  EBP:2B0D1470
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010212
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+0057235A  2B0D1470  0001:0017135A C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+42AF2874  C1D2FBC6  //=====================================================
+Current Time: Wed Mar 29 03:48:35 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  004463B1 01:000453B1 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:00000000
+EBX:0097FA00
+ECX:FFFFFFFF
+EDX:00000000
+ESI:00000000
+EDI:00000000
+CS:EIP:001B:004463B1
+SS:ESP:0023:0012F8C0  EBP:00000000
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010246
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+
+//=====================================================
+Current Time: Wed Mar 29 03:42:48 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  004BB306 01:000BA306 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:285F2F2C
+EBX:00000080
+ECX:00000007
+EDX:000000E8
+ESI:00000000
+EDI:27D1D33C
+CS:EIP:001B:004BB306
+SS:ESP:0023:0012F8BC  EBP:00000004
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010A82
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+004BB306  00000004  0001:000BA306 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+//=====================================================
+Current Time: Fri Mar 31 23:42:28 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  0044D565 01:0004C565 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:0E0FFAE0
+EBX:00000000
+ECX:000303E4
+EDX:000303E5
+ESI:009803A0
+EDI:0328A84C
+CS:EIP:001B:0044D565
+SS:ESP:0023:0012F8C8  EBP:0328A858
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010287
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+0044D565  0328A858  0001:0004C565 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+03370E3C  000304EE  0000:00000000  (No symbol info found)
+
+//=====================================================
+Current Time: Mon Apr 03 00:14:41 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  004B7202 01:000B6202 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:00000000
+EBX:1FFA3648
+ECX:1B191000
+EDX:00000000
+ESI:1FF83044
+EDI:16DC086C
+CS:EIP:001B:004B7202
+SS:ESP:0023:0012F798  EBP:17E7E1F4
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010246
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+004B7202  17E7E1F4  0001:000B6202 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+//=====================================================
+Current Time: Tue Apr 04 00:40:46 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  004B7202 01:000B6202 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:00000000
+EBX:1F8A3648
+ECX:1F771000
+EDX:00000000
+ESI:1F883044
+EDI:3019AB54
+CS:EIP:001B:004B7202
+SS:ESP:0023:0012F798  EBP:30EFC004
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010246
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+004B7202  30EFC004  0001:000B6202 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+//=====================================================
+Current Time: Tue Apr 04 00:12:14 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  7C920F29 01:0000FF29 C:\WINDOWS\system32\ntdll.dll
+
+Registers:
+EAX:354D6970
+EBX:00FB0000
+ECX:89BC89BB
+EDX:89C089BF
+ESI:354D6968
+EDI:354A05F0
+CS:EIP:001B:7C920F29
+SS:ESP:0023:0012FA98  EBP:0012FAA4
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010283
+
+Application Timestamp: Fri Aug 20 00:41:30 2004
+Doing stack walk
+
+Call stack:
+Address   Frame
+7C920F29  0012FAA4  0001:0000FF29 C:\WINDOWS\system32\ntdll.dll (No symbol info found)
+7C920D5C  0012FB78  0001:0000FD5C C:\WINDOWS\system32\ntdll.dll (No symbol info found)
+0085AE9E  0012FBC0  0001:00459E9E C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+007179A4  00018F1E  0001:003169A4 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+//=====================================================
+Current Time: Fri Apr 07 16:14:27 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  006D5A8C 01:002D4A8C C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:00001346
+EBX:1250A204
+ECX:00000000
+EDX:00000010
+ESI:13DC241C
+EDI:00000000
+CS:EIP:001B:006D5A8C
+SS:ESP:0023:0012F42C  EBP:00001346
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010283
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+006D5A8C  00001346  0001:002D4A8C C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+//=====================================================
+Current Time: Fri Apr 07 17:25:16 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  006D5A8C 01:002D4A8C C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:00086E73
+EBX:037E23EC
+ECX:00000000
+EDX:00000010
+ESI:128FC19C
+EDI:00000000
+CS:EIP:001B:006D5A8C
+SS:ESP:0023:0012F1E4  EBP:00086E73
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010287
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+006D5A8C  00086E73  0001:002D4A8C C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+//=====================================================
+Current Time: Fri Apr 07 18:38:38 2017
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Sun Apr 09 22:08:33 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  0059D008 01:0019C008 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:15F83764
+EBX:00000000
+ECX:1570AC6C
+EDX:3E4FA2A0
+ESI:31F4C424
+EDI:3C67EC87
+CS:EIP:001B:0059D008
+SS:ESP:0023:0012FC70  EBP:00000000
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010206
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+
+//=====================================================
+Current Time: Sun Apr 09 21:29:24 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  0044D565 01:0004C565 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:0E927304
+EBX:00000000
+ECX:000AB6C8
+EDX:000AB6C9
+ESI:009803A0
+EDI:0329BBE0
+CS:EIP:001B:0044D565
+SS:ESP:0023:0012F8C8  EBP:0329BBEC
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010287
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+0044D565  0329BBEC  0001:0004C565 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+03347A00  000AB84B  0000:00000000  (No symbol info found)
+
+//=====================================================
+Current Time: Sun Apr 09 21:48:54 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  0059D008 01:0019C008 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:0F24F61C
+EBX:00000000
+ECX:03598A8C
+EDX:3D9BC935
+ESI:0EB52024
+EDI:BD33660E
+CS:EIP:001B:0059D008
+SS:ESP:0023:0012FC70  EBP:00000000
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010206
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+
+//=====================================================
+Current Time: Sun Apr 09 21:50:11 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  006DF0A6 01:002DE0A6 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:0008F283
+EBX:00000000
+ECX:00FB4904
+EDX:00000039
+ESI:0008F283
+EDI:00FB4904
+CS:EIP:001B:006DF0A6
+SS:ESP:0023:0012FA78  EBP:0097FA00
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010202
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+006DF0A6  0097FA00  0001:002DE0A6 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+//=====================================================
+Current Time: Sun Apr 09 12:54:46 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  00760D1B 01:0035FD1B C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:00000000
+EBX:20522031
+ECX:00000000
+EDX:01AEB0EC
+ESI:160F8E8C
+EDI:01AEB0EC
+CS:EIP:001B:00760D1B
+SS:ESP:0023:0012F6E0  EBP:FFFFFFFF
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010206
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+00760D1B  FFFFFFFF  0001:0035FD1B C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+//=====================================================
+Current Time: Sun Apr 09 16:03:58 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  006D5A8C 01:002D4A8C C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:00065638
+EBX:0F3D46E4
+ECX:00000000
+EDX:00000010
+ESI:0F316AC0
+EDI:00000000
+CS:EIP:001B:006D5A8C
+SS:ESP:0023:0012F42C  EBP:00065638
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010293
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+006D5A8C  00065638  0001:002D4A8C C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+//=====================================================
+Current Time: Sun Apr 09 16:06:35 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  004AB8FE 01:000AA8FE C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:0000005A
+EBX:0054004E
+ECX:00010000
+EDX:00000043
+ESI:00000061
+EDI:005401D1
+CS:EIP:001B:004AB8FE
+SS:ESP:0023:0012FB04  EBP:00000061
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010206
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+004AB8FE  00000061  0001:000AA8FE C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+//=====================================================
+Current Time: Mon Apr 10 00:13:21 2017
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Sun Apr 09 23:48:08 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  005EE328 01:001ED328 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:0012F77C
+EBX:17F15364
+ECX:00000000
+EDX:0095DD20
+ESI:17F15364
+EDI:005EE2A0
+CS:EIP:001B:005EE328
+SS:ESP:0023:0012F77C  EBP:00000000
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010212
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+
+//=====================================================
+Current Time: Mon Apr 10 00:05:01 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  00452B4A 01:00051B4A C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:03378344
+EBX:29115100
+ECX:17E15300
+EDX:00000000
+ESI:03378344
+EDI:00FB4B00
+CS:EIP:001B:00452B4A
+SS:ESP:0023:0012FA24  EBP:17E15300
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010206
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+00452B4A  17E15300  0001:00051B4A C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+//=====================================================
+Current Time: Sun Apr 09 23:50:07 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  005CFCC2 01:001CECC2 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:00000058
+EBX:1691F82C
+ECX:163898C8
+EDX:162EA038
+ESI:1691F82C
+EDI:005CFBF0
+CS:EIP:001B:005CFCC2
+SS:ESP:0023:0012FA20  EBP:00000000
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010202
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+
+//=====================================================
+Current Time: Fri Apr 21 23:58:26 2017
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Sat Apr 22 00:08:38 2017
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Mon Apr 24 15:15:07 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  006E21F3 01:002E11F3 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:FFFFFFFF
+EBX:00000000
+ECX:0ED6FADC
+EDX:00000001
+ESI:0ED6FADC
+EDI:17F8BB88
+CS:EIP:001B:006E21F3
+SS:ESP:0023:0012FCB4  EBP:17F8BB88
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010286
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+006E21F3  17F8BB88  0001:002E11F3 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+000634FC  0089460C  0000:00000000  (No symbol info found)
+005C9E30  005C9EB0  0001:001C8E30 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+//=====================================================
+Current Time: Mon Apr 24 17:30:11 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  00410112 01:0000F112 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:00000001
+EBX:3D240000
+ECX:3F800000
+EDX:17DF0420
+ESI:0F061D60
+EDI:16C51CE4
+CS:EIP:001B:00410112
+SS:ESP:0023:0012FC5C  EBP:00000000
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010202
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+
+//=====================================================
+Current Time: Tue Apr 25 22:52:23 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  005D0440 01:001CF440 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:00000000
+EBX:1AD28E04
+ECX:19C5C050
+EDX:00000058
+ESI:1AD28E04
+EDI:005D03F0
+CS:EIP:001B:005D0440
+SS:ESP:0023:0012FA48  EBP:00000000
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010213
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+
+//=====================================================
+Current Time: Tue Apr 25 23:04:40 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  005CFCC2 01:001CECC2 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:00000058
+EBX:09CCDD54
+ECX:19E55390
+EDX:037B4298
+ESI:09CCDD54
+EDI:005CFBF0
+CS:EIP:001B:005CFCC2
+SS:ESP:0023:0012FA20  EBP:00000000
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010202
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+
+//=====================================================
+Current Time: Wed Apr 26 22:33:29 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  006D5A8C 01:002D4A8C C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:000061FF
+EBX:0917AF7C
+ECX:00000000
+EDX:00000010
+ESI:0902BAA8
+EDI:00000000
+CS:EIP:001B:006D5A8C
+SS:ESP:0023:0012F1E4  EBP:000061FF
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010297
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+006D5A8C  000061FF  0001:002D4A8C C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+//=====================================================
+Current Time: Wed Apr 26 22:58:41 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  0059D012 01:0019C012 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:0EFACA0C
+EBX:0000004A
+ECX:184DBE4A
+EDX:3F800000
+ESI:2E000000
+EDI:01B00005
+CS:EIP:001B:0059D012
+SS:ESP:0023:0012FC70  EBP:00000001
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010283
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+0059D012  00000001  0001:0019C012 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+//=====================================================
+Current Time: Tue May 02 01:06:22 2017
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Tue May 02 09:56:28 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  0044D565 01:0004C565 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:037AF270
+EBX:00000000
+ECX:00000819
+EDX:0000080F
+ESI:009803A0
+EDI:0365354C
+CS:EIP:001B:0044D565
+SS:ESP:0023:0012F8C8  EBP:03653558
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010297
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+0044D565  03653558  0001:0004C565 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+03700EB4  0000082C  0000:00000000  (No symbol info found)
+
+//=====================================================
+Current Time: Wed May 03 19:12:47 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  00717FDB 01:00316FDB C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:00000040
+EBX:01120444
+ECX:00FA0014
+EDX:00FA0014
+ESI:000330F0
+EDI:00000040
+CS:EIP:001B:00717FDB
+SS:ESP:0023:0012F7C8  EBP:396C6060
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010206
+Couldn't load module
+
+//=====================================================
+Current Time: Thu May 04 23:18:00 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  0044FE72 01:0004EE72 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:00000000
+EBX:19DD5674
+ECX:FFFFFFFF
+EDX:0000003A
+ESI:27245626
+EDI:00000000
+CS:EIP:001B:0044FE72
+SS:ESP:0023:0012F860  EBP:00000000
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010246
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+
+//=====================================================
+Current Time: Thu May 04 23:21:41 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  0044FE72 01:0004EE72 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:00000000
+EBX:27154DB8
+ECX:FFFFFFFF
+EDX:0000003A
+ESI:1B203696
+EDI:00000000
+CS:EIP:001B:0044FE72
+SS:ESP:0023:0012F860  EBP:00000000
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010246
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+
+//=====================================================
+Current Time: Thu May 04 23:23:18 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  007DB1E0 01:003DA1E0 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:00000000
+EBX:00000000
+ECX:00000000
+EDX:00000020
+ESI:0012F8D8
+EDI:19FC7B54
+CS:EIP:001B:007DB1E0
+SS:ESP:0023:0012F7AC  EBP:1AA66FFC
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010212
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+007DB1E0  1AA66FFC  0001:003DA1E0 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+1AB2438C  1AAE2F10  0000:00000000  (No symbol info found)
+646F4D2F  61746164  //=====================================================
+Current Time: Thu May 04 23:24:34 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  00564FE0 01:00163FE0 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:00000000
+EBX:00000000
+ECX:00000000
+EDX:0088E1F4
+ESI:0397898C
+EDI:00000000
+CS:EIP:001B:00564FE0
+SS:ESP:0023:0012F9F0  EBP:0294093C
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010246
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+00564FE0  0294093C  0001:00163FE0 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+//=====================================================
+Current Time: Tue May 09 17:49:42 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  0040AFE5 01:00009FE5 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:00000000
+EBX:00000014
+ECX:00000014
+EDX:000396ED
+ESI:274AD898
+EDI:093E3DC8
+CS:EIP:001B:0040AFE5
+SS:ESP:0023:0012FCD0  EBP:00000000
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010246
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+
+//=====================================================
+Current Time: Thu May 11 22:33:29 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  0044D565 01:0004C565 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:03656BA8
+EBX:00000000
+ECX:00000819
+EDX:0000080F
+ESI:009803A0
+EDI:036511C4
+CS:EIP:001B:0044D565
+SS:ESP:0023:0012F8C8  EBP:036511D0
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010287
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+0044D565  036511D0  0001:0004C565 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+0371CE28  0000082C  0000:00000000  (No symbol info found)
+
+//=====================================================
+Current Time: Thu May 11 23:24:53 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  006D5A8C 01:002D4A8C C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:000015B7
+EBX:1CBF0794
+ECX:00000000
+EDX:00000010
+ESI:1CEA1AE8
+EDI:00000000
+CS:EIP:001B:006D5A8C
+SS:ESP:0023:0012F1E4  EBP:000015B7
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010217
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+006D5A8C  000015B7  0001:002D4A8C C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+//=====================================================
+Current Time: Thu May 11 23:40:00 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  0059D012 01:0019C012 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:08F9B550
+EBX:0000004A
+ECX:1A8D8F4A
+EDX:3F800000
+ESI:000095E9
+EDI:01AE0001
+CS:EIP:001B:0059D012
+SS:ESP:0023:0012FC70  EBP:00000000
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010206
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+
+//=====================================================
+Current Time: Fri May 12 00:42:44 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  00700839 01:002FF839 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:4347FFFF
+EBX:3067AF10
+ECX:5860FFF4
+EDX:31010000
+ESI:19F72E30
+EDI:00000000
+CS:EIP:001B:00700839
+SS:ESP:0023:0012FB50  EBP:30C23DAC
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010206
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+00700839  30C23DAC  0001:002FF839 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+00206777  0088863C  0000:00000000  (No symbol info found)
+004033C0  00403430  0001:000023C0 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+002FC378  E8F18B56  0000:00000000  (No symbol info found)
+
+//=====================================================
+Current Time: Sat May 13 22:58:30 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  0040AFE5 01:00009FE5 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:00000000
+EBX:00000014
+ECX:00000014
+EDX:002F9805
+ESI:2A044BFC
+EDI:3AC5E828
+CS:EIP:001B:0040AFE5
+SS:ESP:0023:0012FCD0  EBP:00000000
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010246
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+
+//=====================================================
+Current Time: Wed May 24 22:56:55 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  005D0440 01:001CF440 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:00000000
+EBX:1A700A74
+ECX:1AA68274
+EDX:00000058
+ESI:1A700A74
+EDI:005D03F0
+CS:EIP:001B:005D0440
+SS:ESP:0023:0012FA48  EBP:00000000
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010213
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+
+//=====================================================
+Current Time: Wed May 24 23:01:38 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  004BB306 01:000BA306 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:29B74BC4
+EBX:00000040
+ECX:00000006
+EDX:00001ADC
+ESI:00000000
+EDI:2873F00C
+CS:EIP:001B:004BB306
+SS:ESP:0023:0012F870  EBP:28686034
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010202
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+004BB306  28686034  0001:000BA306 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+//=====================================================
+Current Time: Fri May 26 20:11:26 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  00545EDB 01:00144EDB C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:039F6040
+EBX:039F6040
+ECX:00000000
+EDX:00000000
+ESI:00000000
+EDI:039F4228
+CS:EIP:001B:00545EDB
+SS:ESP:0023:0012FAF0  EBP:00000000
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010202
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+
+//=====================================================
+Current Time: Fri May 26 20:13:10 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  00545EDB 01:00144EDB C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:039F5158
+EBX:039F5158
+ECX:00000000
+EDX:00000000
+ESI:00000000
+EDI:039F3340
+CS:EIP:001B:00545EDB
+SS:ESP:0023:0012FAF0  EBP:00000000
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010202
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+
+//=====================================================
+Current Time: Fri May 26 20:23:11 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  00545EDB 01:00144EDB C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:039F5D68
+EBX:039F5D68
+ECX:00000000
+EDX:00000000
+ESI:00000000
+EDI:039F3F50
+CS:EIP:001B:00545EDB
+SS:ESP:0023:0012FAF0  EBP:00000000
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010206
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+
+//=====================================================
+Current Time: Fri May 26 20:27:20 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  007DB1E0 01:003DA1E0 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:00000000
+EBX:00000000
+ECX:00000000
+EDX:1B30CA2C
+ESI:0012F93C
+EDI:1A0FF764
+CS:EIP:001B:007DB1E0
+SS:ESP:0023:0012F810  EBP:1B1F075C
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010206
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+007DB1E0  1B1F075C  0001:003DA1E0 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+19BD93FC  1B268F84  0000:00000000  (No symbol info found)
+646F4D2F  61746164  //=====================================================
+Current Time: Fri May 26 21:21:26 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  007DB1E0 01:003DA1E0 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:00000000
+EBX:00000000
+ECX:00000000
+EDX:00000020
+ESI:0012F8D8
+EDI:1A0A9414
+CS:EIP:001B:007DB1E0
+SS:ESP:0023:0012F7AC  EBP:1B186894
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010212
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+007DB1E0  1B186894  0001:003DA1E0 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+1B04F1D4  1B1E831C  0000:00000000  (No symbol info found)
+646F4D2F  61746164  //=====================================================
+Current Time: Thu Jun 22 16:21:45 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  00476BCD 01:00075BCD C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:00000000
+EBX:00000000
+ECX:303ECD8C
+EDX:0088BBE0
+ESI:00000000
+EDI:00000000
+CS:EIP:001B:00476BCD
+SS:ESP:0023:0012FC10  EBP:303ECD8C
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010246
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+00476BCD  303ECD8C  0001:00075BCD C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+00016229  0088BBE0  //=====================================================
+Current Time: Thu Jun 22 17:26:44 2017
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Thu Jun 22 18:16:52 2017
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Sat Jun 24 22:20:21 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  739186D3 01:000506D3 C:\WINDOWS.0\system32\D3DIM700.DLL
+
+Registers:
+EAX:10817218
+EBX:0012F7AC
+ECX:00000008
+EDX:0E077000
+ESI:00375DC0
+EDI:00000000
+CS:EIP:001B:739186D3
+SS:ESP:0023:0012F6B0  EBP:00000010
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010287
+
+Application Timestamp: Fri Aug 20 00:38:31 2004
+Doing stack walk
+
+Call stack:
+Address   Frame
+739186D3  00000010  0001:000506D3 C:\WINDOWS.0\system32\D3DIM700.DLL (No symbol info found)
+
+//=====================================================
+Current Time: Sun Jun 25 14:39:29 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  00684A92 01:00283A92 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:00000050
+EBX:27115730
+ECX:1AF3A324
+EDX:1AF3A324
+ESI:1AF3A324
+EDI:00646A30
+CS:EIP:001B:00684A92
+SS:ESP:0023:0012F584  EBP:00000000
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010206
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+
+//=====================================================
+Current Time: Mon Jun 26 15:42:37 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  005EE328 01:001ED328 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:0012F77C
+EBX:29676A44
+ECX:00000000
+EDX:0095DD20
+ESI:29676A44
+EDI:005EE2A0
+CS:EIP:001B:005EE328
+SS:ESP:0023:0012F77C  EBP:00000000
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010212
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+
+//=====================================================
+Current Time: Thu Jun 29 18:24:24 2017
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Fri Jun 30 00:13:17 2017
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Fri Jun 30 20:02:49 2017
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Fri Jun 30 20:19:30 2017
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Sat Jul 01 14:45:23 2017
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Sat Jul 01 15:04:27 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  0072BE00 01:0032AE00 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:0012F38C
+EBX:0099D1F0
+ECX:00000000
+EDX:00000053
+ESI:00000000
+EDI:00000000
+CS:EIP:001B:0072BE00
+SS:ESP:0023:0012F340  EBP:00000014
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010246
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+0072BE00  00000014  0001:0032AE00 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+//=====================================================
+Current Time: Sat Jul 01 15:04:42 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  0072BE00 01:0032AE00 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:0012F38C
+EBX:0099D1F0
+ECX:00000000
+EDX:00000053
+ESI:00000000
+EDI:00000000
+CS:EIP:001B:0072BE00
+SS:ESP:0023:0012F340  EBP:00000014
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010246
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+0072BE00  00000014  0001:0032AE00 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+//=====================================================
+Current Time: Sat Jul 08 01:49:21 2017
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Mon Jul 10 11:05:04 2017
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Tue Jul 11 22:10:14 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  007DB440 01:003DA440 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:3D4C0000
+EBX:00000000
+ECX:00000000
+EDX:44901C10
+ESI:0AF5F7B0
+EDI:00000000
+CS:EIP:001B:007DB440
+SS:ESP:0023:0012FA3C  EBP:0097FA00
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010246
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+007DB440  0097FA00  0001:003DA440 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+//=====================================================
+Current Time: Wed Jul 12 20:02:17 2017
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Wed Jul 12 22:02:39 2017
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Wed Jul 12 23:08:47 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  0059D012 01:0019C012 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:03A40D9C
+EBX:0000004A
+ECX:0ED4A84A
+EDX:3F000000
+ESI:52005500
+EDI:03B50001
+CS:EIP:001B:0059D012
+SS:ESP:0023:0012FC70  EBP:00000000
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010206
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+
+//=====================================================
+Current Time: Fri Jul 14 01:16:07 2017
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  00410112 01:0000F112 C:\Archivos de programa\Activision\Bridge Commander\stbc.exe
+
+Registers:
+EAX:00000001
+EBX:3E800000
+ECX:3F800000
+EDX:00893194
+ESI:19D57AB0
+EDI:38DFE634
+CS:EIP:001B:00410112
+SS:ESP:0023:0012FC5C  EBP:00000000
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010202
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+
+//=====================================================
+Current Time: Fri Sep 20 18:04:26 2019
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  004B7202 01:000B6202 E:\Bridge Commander Kobayashi Maru mod\Bridge Commander\stbc.exe
+
+Registers:
+EAX:00000000
+EBX:468F4648
+ECX:226A7000
+EDX:00000000
+ESI:468D4044
+EDI:3C98B6FC
+CS:EIP:0023:004B7202
+SS:ESP:002B:0019F758  EBP:3F0C3014
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+004B7202  0019F78C  0001:000B6202 E:\Bridge Commander Kobayashi Maru mod\Bridge Commander\stbc.exe
+
+//=====================================================
+Current Time: Fri Sep 20 18:56:05 2019
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  30018DF3 02:00000DF3 E:\Bridge Commander Kobayashi Maru mod\Bridge Commander\binkw32.dll
+
+Registers:
+EAX:00000082
+EBX:0DF38E8A
+ECX:00000000
+EDX:0DF35BD4
+ESI:0000004B
+EDI:03C94FFC
+CS:EIP:0023:30018DF3
+SS:ESP:002B:0019FAF4  EBP:0DF3BE0A
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00210202
+
+Application Timestamp: Wed Nov 07 23:53:36 2001
+Doing stack walk
+
+Call stack:
+Address   Frame
+30018DF3  0019FB00  0002:00000DF3 E:\Bridge Commander Kobayashi Maru mod\Bridge Commander\binkw32.dll (No symbol info found)
+
+//=====================================================
+Current Time: Mon Oct 07 18:16:59 2019
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  00717874 01:00316874 E:\Bridge Commander Kobayashi Maru mod\Bridge Commander\stbc.exe
+
+Registers:
+EAX:00000000
+EBX:01C2D2AC
+ECX:00000000
+EDX:00000000
+ESI:01C2D2AC
+EDI:69CAADEC
+CS:EIP:0023:00717874
+SS:ESP:002B:0019F5B0  EBP:1CC3743C
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+00717874  0019F5B8  0001:00316874 E:\Bridge Commander Kobayashi Maru mod\Bridge Commander\stbc.exe
+
+//=====================================================
+Current Time: Mon Oct 07 18:21:34 2019
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  0046884A 01:0006784A E:\Bridge Commander Kobayashi Maru mod\Bridge Commander\stbc.exe
+
+Registers:
+EAX:396F6FD8
+EBX:0019F800
+ECX:396D0068
+EDX:0019F838
+ESI:1D31E814
+EDI:0019F844
+CS:EIP:0023:0046884A
+SS:ESP:002B:0019F348  EBP:0019F8BC
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+0046884A  0019F8BC  0001:0006784A E:\Bridge Commander Kobayashi Maru mod\Bridge Commander\stbc.exe
+
+//=====================================================
+Current Time: Wed Oct 09 20:12:12 2019
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  00717874 01:00316874 E:\Bridge Commander Kobayashi Maru mod\Bridge Commander\stbc.exe
+
+Registers:
+EAX:00000000
+EBX:00088EB8
+ECX:00000000
+EDX:00000000
+ESI:00088EB8
+EDI:7F89C3DC
+CS:EIP:0023:00717874
+SS:ESP:002B:0019F0F8  EBP:1C4F6404
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+Couldn't initialize symbol reader, no symbol info available
+
+Call stack:
+Address   Frame     Logical addr  Module
+00717874  1C4F6404  0001:00316874 E:\Bridge Commander Kobayashi Maru mod\Bridge Commander\stbc.exe
+41CFD89A  41700000  0000:00000000 
+//=====================================================
+Current Time: Fri Nov 01 18:24:46 2019
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Fri Nov 01 18:32:58 2019
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  80828383 00:00000000 
+
+Registers:
+EAX:0DADA8B0
+EBX:00000000
+ECX:80828383
+EDX:00008000
+ESI:0DAD8DA0
+EDI:0DAE0CF0
+CS:EIP:0023:80828383
+SS:ESP:002B:0019F9E0  EBP:00000000
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010282
+
+Application Timestamp: Thu Jan 01 01:00:00 1970
+Doing stack walk
+
+Call stack:
+Address   Frame
+80828383  0019F9DC  0000:00000000  (No symbol info found)
+
+//=====================================================
+Current Time: Fri Nov 01 18:32:58 2019
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  83838383 00:00000000 
+
+Registers:
+EAX:0DADA8B0
+EBX:00000000
+ECX:4A17E173
+EDX:00000000
+ESI:0DAD90A0
+EDI:00000000
+CS:EIP:0023:83838383
+SS:ESP:002B:00EEFEA8  EBP:0DAD8DA0
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010202
+
+Application Timestamp: Thu Jan 01 01:00:00 1970
+Doing stack walk
+
+Call stack:
+Address   Frame
+83838383  00EEFEA4  0000:00000000  (No symbol info found)
+
+//=====================================================
+Current Time: Fri Nov 01 18:45:12 2019
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Fri Nov 01 18:50:15 2019
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  80828383 00:00000000 
+
+Registers:
+EAX:0DB6A8B0
+EBX:00000000
+ECX:80828383
+EDX:00008000
+ESI:0DB68DA0
+EDI:0DB70CF0
+CS:EIP:0023:80828383
+SS:ESP:002B:0019F9E0  EBP:00000000
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010282
+
+Application Timestamp: Thu Jan 01 01:00:00 1970
+Doing stack walk
+
+Call stack:
+Address   Frame
+80828383  0019F9DC  0000:00000000  (No symbol info found)
+
+//=====================================================
+Current Time: Fri Nov 01 18:50:15 2019
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  83838383 00:00000000 
+
+Registers:
+EAX:0DB6A8B0
+EBX:00000000
+ECX:FED642D2
+EDX:00000000
+ESI:0DB690A0
+EDI:00000000
+CS:EIP:0023:83838383
+SS:ESP:002B:00EAFEA8  EBP:0DB68DA0
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010202
+
+Application Timestamp: Thu Jan 01 01:00:00 1970
+Doing stack walk
+
+Call stack:
+Address   Frame
+83838383  00EAFEA4  0000:00000000  (No symbol info found)
+
+//=====================================================
+Current Time: Fri Nov 01 18:58:33 2019
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Fri Nov 01 19:14:09 2019
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Fri Nov 01 19:25:03 2019
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  80828383 00:00000000 
+
+Registers:
+EAX:0DCAA8B0
+EBX:00000000
+ECX:80828383
+EDX:00008000
+ESI:0DCA8DA0
+EDI:0DCB0CF0
+CS:EIP:0023:80828383
+SS:ESP:002B:0019F9E0  EBP:00000000
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010282
+
+Application Timestamp: Thu Jan 01 01:00:00 1970
+Doing stack walk
+
+Call stack:
+Address   Frame
+80828383  0019F9DC  0000:00000000  (No symbol info found)
+
+//=====================================================
+Current Time: Fri Nov 01 19:25:03 2019
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  83838383 00:00000000 
+
+Registers:
+EAX:0DCAA8B0
+EBX:00000000
+ECX:4EC584E3
+EDX:00000000
+ESI:0DCA90A0
+EDI:00000000
+CS:EIP:0023:83838383
+SS:ESP:002B:00F0FEA8  EBP:0DCA8DA0
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010202
+
+Application Timestamp: Thu Jan 01 01:00:00 1970
+Doing stack walk
+
+Call stack:
+Address   Frame
+83838383  00F0FEA4  0000:00000000  (No symbol info found)
+
+//=====================================================
+Current Time: Fri Nov 01 19:32:58 2019
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  80828383 00:00000000 
+
+Registers:
+EAX:0DB9A8B0
+EBX:00000000
+ECX:80828383
+EDX:00008000
+ESI:0DB98DA0
+EDI:0DBA0CF0
+CS:EIP:0023:80828383
+SS:ESP:002B:0019F9E0  EBP:00000000
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010282
+
+Application Timestamp: Thu Jan 01 01:00:00 1970
+Doing stack walk
+
+Call stack:
+Address   Frame
+80828383  0019F9DC  0000:00000000  (No symbol info found)
+
+//=====================================================
+Current Time: Fri Nov 01 19:32:58 2019
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  83838383 00:00000000 
+
+Registers:
+EAX:0DB9A8B0
+EBX:00000000
+ECX:E8F3133B
+EDX:00000000
+ESI:0DB990A0
+EDI:00000000
+CS:EIP:0023:83838383
+SS:ESP:002B:07F4FEA8  EBP:0DB98DA0
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010202
+
+Application Timestamp: Thu Jan 01 01:00:00 1970
+Doing stack walk
+
+Call stack:
+Address   Frame
+83838383  07F4FEA4  0000:00000000  (No symbol info found)
+
+//=====================================================
+Current Time: Fri Nov 01 19:40:48 2019
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  80828383 00:00000000 
+
+Registers:
+EAX:0DDAA8B0
+EBX:00000000
+ECX:80828383
+EDX:00008000
+ESI:0DDA8DA0
+EDI:0DDB0CF0
+CS:EIP:0023:80828383
+SS:ESP:002B:0019F9E0  EBP:00000000
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010282
+
+Application Timestamp: Thu Jan 01 01:00:00 1970
+Doing stack walk
+
+Call stack:
+Address   Frame
+80828383  0019F9DC  0000:00000000  (No symbol info found)
+
+//=====================================================
+Current Time: Fri Nov 01 19:40:48 2019
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  83838383 00:00000000 
+
+Registers:
+EAX:0DDAA8B0
+EBX:00000000
+ECX:3E0F8F2C
+EDX:00000000
+ESI:0DDA90A0
+EDI:00000000
+CS:EIP:0023:83838383
+SS:ESP:002B:00F1FEA8  EBP:0DDA8DA0
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010202
+
+Application Timestamp: Thu Jan 01 01:00:00 1970
+Doing stack walk
+
+Call stack:
+Address   Frame
+83838383  00F1FEA4  0000:00000000  (No symbol info found)
+
+//=====================================================
+Current Time: Fri Nov 01 19:49:40 2019
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Fri Nov 01 19:54:25 2019
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  005367ED 01:001357ED E:\Bridge Commander Kobayashi Maru mod\Bridge Commander\stbc.exe
+
+Registers:
+EAX:000000A8
+EBX:00000000
+ECX:13EDF594
+EDX:00890AC4
+ESI:24E546D8
+EDI:149AEA10
+CS:EIP:0023:005367ED
+SS:ESP:002B:0019FB48  EBP:00000000
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010282
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+
+//=====================================================
+Current Time: Fri Nov 01 19:56:01 2019
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  005781BF 01:001771BF E:\Bridge Commander Kobayashi Maru mod\Bridge Commander\stbc.exe
+
+Registers:
+EAX:00000000
+EBX:044E65C0
+ECX:FFFFFFFF
+EDX:045A8070
+ESI:00007BD8
+EDI:00007BD8
+CS:EIP:0023:005781BF
+SS:ESP:002B:0019FB2C  EBP:04F1B148
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+005781BF  0019FB38  0001:001771BF E:\Bridge Commander Kobayashi Maru mod\Bridge Commander\stbc.exe
+
+//=====================================================
+Current Time: Fri Nov 01 19:58:00 2019
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  005781BF 01:001771BF E:\Bridge Commander Kobayashi Maru mod\Bridge Commander\stbc.exe
+
+Registers:
+EAX:00000000
+EBX:11851E80
+ECX:FFFFFFFF
+EDX:0C955338
+ESI:40400000
+EDI:40400000
+CS:EIP:0023:005781BF
+SS:ESP:002B:0019FB2C  EBP:0C7E92D0
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+005781BF  0019FB38  0001:001771BF E:\Bridge Commander Kobayashi Maru mod\Bridge Commander\stbc.exe
+
+//=====================================================
+Current Time: Fri Nov 01 19:59:42 2019
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  00419963 01:00018963 E:\Bridge Commander Kobayashi Maru mod\Bridge Commander\stbc.exe
+
+Registers:
+EAX:00893458
+EBX:0019FB00
+ECX:00000000
+EDX:000000D9
+ESI:047F3080
+EDI:0019FAF4
+CS:EIP:0023:00419963
+SS:ESP:002B:0019FAA0  EBP:0CC9F82C
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010202
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+00419963  0019FA9C  0001:00018963 E:\Bridge Commander Kobayashi Maru mod\Bridge Commander\stbc.exe
+
+//=====================================================
+Current Time: Fri Nov 01 20:03:59 2019
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  005781BF 01:001771BF E:\Bridge Commander Kobayashi Maru mod\Bridge Commander\stbc.exe
+
+Registers:
+EAX:00000000
+EBX:0CEDC3F8
+ECX:FFFFFFFF
+EDX:0CC2BE40
+ESI:42D00000
+EDI:42D00000
+CS:EIP:0023:005781BF
+SS:ESP:002B:0019FB2C  EBP:0CFBC808
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+005781BF  0019FB38  0001:001771BF E:\Bridge Commander Kobayashi Maru mod\Bridge Commander\stbc.exe
+
+//=====================================================
+Current Time: Fri Nov 01 20:13:30 2019
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Fri Nov 01 20:17:11 2019
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  0057D218 01:0017C218 E:\Bridge Commander Kobayashi Maru mod\Bridge Commander\stbc.exe
+
+Registers:
+EAX:0019FB18
+EBX:0D07FB18
+ECX:02A84A8C
+EDX:0CE82400
+ESI:0D30EF14
+EDI:0CD12810
+CS:EIP:0023:0057D218
+SS:ESP:002B:0019FAE0  EBP:0D2B9570
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010297
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+0057D218  0019FB28  0001:0017C218 E:\Bridge Commander Kobayashi Maru mod\Bridge Commander\stbc.exe
+
+//=====================================================
+Current Time: Fri Nov 01 20:19:44 2019
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  005781BF 01:001771BF E:\Bridge Commander Kobayashi Maru mod\Bridge Commander\stbc.exe
+
+Registers:
+EAX:00000000
+EBX:1D6282D8
+ECX:FFFFFFFF
+EDX:0F54C7D8
+ESI:40E00000
+EDI:40E00000
+CS:EIP:0023:005781BF
+SS:ESP:002B:0019FB2C  EBP:0F8C9EF0
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+005781BF  0019FB38  0001:001771BF E:\Bridge Commander Kobayashi Maru mod\Bridge Commander\stbc.exe
+
+//=====================================================
+Current Time: Fri Nov 01 20:28:39 2019
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Fri Nov 01 20:41:04 2019
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  00564FE0 01:00163FE0 E:\Bridge Commander Kobayashi Maru mod\Bridge Commander\stbc.exe
+
+Registers:
+EAX:00000000
+EBX:00000000
+ECX:00000000
+EDX:00000114
+ESI:1355A280
+EDI:00000000
+CS:EIP:0023:00564FE0
+SS:ESP:002B:0019FA20  EBP:0894288C
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+00564FE0  0019FA1C  0001:00163FE0 E:\Bridge Commander Kobayashi Maru mod\Bridge Commander\stbc.exe
+
+//=====================================================
+Current Time: Fri Nov 01 20:49:04 2019
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Mon Apr 13 14:00:11 2020
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  94828B3C 00:00000000 
+//=====================================================
+Current Time: Mon Apr 13 14:16:45 2020
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Mon Apr 13 15:13:54 2020
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  005EE328 01:001ED328 E:\Bridge Commander Kobayashi Maru mod\Bridge Commander\stbc.exe
+
+Registers:
+EAX:0019F72C
+EBX:3AAB3AE4
+ECX:00000000
+EDX:0095DD20
+ESI:3AAB3AE4
+EDI:005EE2A0
+CS:EIP:0023:005EE328
+SS:ESP:002B:0019F72C  EBP:00000000
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010212
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+

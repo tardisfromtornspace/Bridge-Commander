@@ -1,0 +1,24 @@
+#This is the dump of the LogCreator: <Outpost 2 Travel Logger LogCreator_M78U00A0u2Xe>
+#This log file was created on: 0:59:29.471 of 10/April/2017, Monday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>0:59:29.471 of 10/April/2017, Monday
+#>>>Initialized Outpost 2 Travel logger
+#>>>SELF = <Outpost 2(1019723) Travel_V88y6s13dN7B>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: Player Travel Destination OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization

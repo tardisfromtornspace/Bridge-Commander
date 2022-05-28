@@ -1,0 +1,56 @@
+#This is the dump of the LogCreator: <Enterprise 1701 WC-1 Travel Logger LogCreator_3xEp3NLHP2lO>
+#This log file was created on: 13:59:33.107 of 17/March/2017, Friday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>13:59:33.107 of 17/March/2017, Friday
+#>>>Initialized Enterprise 1701 WC-1 Travel logger
+#>>>SELF = <Enterprise 1701 WC-1(56620) Travel_nK4V1E2Uz9Ui>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>13:59:52.931 of 17/March/2017, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>13:59:54.260 of 17/March/2017, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>13:59:54.663 of 17/March/2017, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>13:59:55.290 of 17/March/2017, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>13:59:55.810 of 17/March/2017, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>14:2:5.903 of 17/March/2017, Friday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 14:10:45.837 of 17/March/2017, Friday
+#Ending of log dump - User is quiting the game
+########################################

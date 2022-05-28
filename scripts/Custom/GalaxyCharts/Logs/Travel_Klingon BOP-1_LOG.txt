@@ -1,0 +1,27 @@
+#This is the dump of the LogCreator: <Klingon BOP-1 Travel Logger LogCreator_xw1UYfUM9m8t>
+#This log file was created on: 1:3:28.832 of 19/March/2017, Sunday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>1:3:28.832 of 19/March/2017, Sunday
+#>>>Initialized Klingon BOP-1 Travel logger
+#>>>SELF = <Klingon BOP-1(53721) Travel_C418Id0jf7b5>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+########################################
+# 1:3:40.737 of 19/March/2017, Sunday
+#Ending of log dump - User is quiting the game
+########################################

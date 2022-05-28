@@ -1,0 +1,325 @@
+<HTML>
+<HEAD>
+  <TITLE>Model Property Editor</TITLE>
+  <LINK REV="made" HREF="mailto:">
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-1">
+  <META NAME="author" CONTENT="">
+  <META NAME="description" CONTENT="">
+  <META NAME="keywords" CONTENT="">
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000" LINK="#0000FF" VLINK="#800080" ALINK="#FF0000">
+
+<P>
+<H1>Model Property Editor</H1>
+</P>
+<P>
+This document describes how to use the model property editor, a separate application that allows you to edit ships. It's located in the Tools subdirectory. Before you run the application, it is recommended that you run the included registry file (modelpropertyeditor.reg). This will enter some of the preferences needed to work with Bridge Commander into the registry.
+</P>
+<P>
+<UL>
+<LI><A HREF="#Setting up the editor">Setting up the editor</A></LI>
+<LI><A HREF="#Using the editor">Using the editor</A></LI>
+<LI><A HREF="#Creating and editing properties">Creating and editing properties</A></LI>
+<LI><A HREF="#Moving around the editor">Moving around the editor</A></LI>
+<LI><A HREF="#Using hardpoint scripts with Bridge Commander">Using hardpoint scripts with Bridge Commander</A></LI>
+<LI><A HREF="#Specific properties">Reference for specific properties</A>
+	<UL>
+		<LI><A HREF="#Subsystem Property">Subsystem Property</A></LI>
+		<LI><A HREF="#Position/Orientation Property">Position/Orientation Property</A></LI>
+		<LI><A HREF="#Emitter properties">Emitter properties</A></LI>
+		<LI><A HREF="#Ship Property">Ship Property</A></LI>
+		<LI><A HREF="#Powered Subsystem">Powered Subsystem</A></LI>
+		<LI><A HREF="#Cloaking Subsystem">Cloaking Subsystem</A></LI>
+		<LI><A HREF="#Sensor Subsystem">Sensor Subsystem</A></LI>
+		<LI><A HREF="#Warp Engine System">Warp Engine System</A></LI>
+		<LI><A HREF="#Engine Property">Engine Property</A></LI>
+		<LI><A HREF="#Power System">Power System</A></LI>
+		<LI><A HREF="#Repair System">Repair System</A></LI>
+		<LI><A HREF="#Shield system">Shield system</A></LI>
+		<LI><A HREF="#Weapon systems">Weapon systems</A></LI>
+		<LI><A HREF="#Weapons">Weapons</A></LI>
+		<LI><A HREF="#Energy Weapons">Energy Weapons</A></LI>
+		<LI><A HREF="#Phasers">Phasers</A></LI>
+		<LI><A HREF="#Torpedoes">Torpedoes</A></LI>
+		<LI><A HREF="#Pulse weapons">Pulse weapons</A></LI>
+	</UL>
+</LI>
+<LI>
+	<A HREF="#Advanced topics">Advanced topics</A>
+	<UL>
+		<LI><A HREF="#Parent scripts">Parent scripts</A></LI>
+		<LI><A HREF="#Localization concerns">Localization concerns</A></LI>
+	</UL>
+</LI>
+<LI><A HREF="#FAQ">Frequently Asked Questions</A></LI>
+</UL>
+</P>
+
+<HR>
+<P><A NAME="Setting up the editor"><H2>Setting up the editor</H2></A></P>
+<P>
+When you run the editor, the first thing you'll want to do is set up your preferences. Select <B>Edit -> Options...</B> to open up the Options dialog box. If you ran the included registry file, the model scale and texture path should already be set up. Change the default model directory to wherever you have Bridge Commander installed, in the 'data\models\ships' subdirectory. Then, change the default script directory to point to the 'scripts\ships\hardpoints' subdirectory where BC is installed. <B>Warning: you should only have one file open at once in the editor.</B>
+</P>
+
+<HR>
+<P><A NAME="Using the editor"><H2>Using the editor</H2></A></P>
+<P>
+Select <B>Open</B> from the <B>File</B> menu. You'll be presented with the models directory, from which you should choose a model. You'll then be asked if you want to load a script -- if you're modifying a ship, say yes, and then select its script from the dialog box. If you're starting from scratch, hit no, and you'll be left with a blank slate.
+</P>
+
+<P>
+On the right hand side of the window, you'll see a tree representing the scene graph of the model. Open up the tree until you reach 'Scene Root', and select that. (The editor supports placing properties at any location in the model, but Bridge Commander expects them to all be at 'Scene Root'.) If you loaded a script, you'll probably see a list of properties fill up the left hand side of the screen. These are the properties that are actually attached to the model.
+</P>
+<HR>
+<P><A NAME="Moving around the editor"><H2>Moving around the editor</H2></A></P>
+<P>
+The center view can be used to examine the model. You can use the mouse to move around the view window in various ways. Normally, the mouse is in a certain "click mode", indicated in the bottom right corner of the tool bar. For example, in "pan mode", dragging with the left mouse button in the view will pan the camera around. These modes are accessible from the View menu.
+</P>
+<P>
+Alternately, you can use the middle and right mouse buttons, along with the mouse wheel, to move directly. Right-dragging in the view will rotate the camera. Dragging with the middle button will pan the camera, and rolling up and down with the mouse wheel will move the camera forward and backward.
+</P>
+<P>
+Here is a brief summary of what each mode in the editor does:
+<UL>
+<LI><B>Pan tool</B> will allow you to pan the camera when dragging in the view.</LI>
+<LI><B>Orbit tool</B> will swing the camera around a point in front of it.</LI>
+<LI><B>Zoom tool</B> will move the camera forward and backwards.</LI>
+<LI><B>Selection tool</B> will pick the model leaf that you click on in the scene graph representation. Not really useful for editing ships, this is here as more of an aid to checking models.</LI>
+<LI><B>Locate tool</B> will store the coordinates of the point you click on, in the bottom part of the toolbar. This is useful for editing systems, so you can specify where they are attached easily. This also stores the normal of the point.</LI>
+<LI><B>Rotate tool</B> will rotate the camera when you drag in the view.</LI>
+</UL>
+<HR>
+<P><A NAME="Creating and editing properties"><H2>Creating and editing properties</H2></A></P>
+<P>
+In Bridge Commander, properties usually describe systems attached to the ship. All of the properties in the script are listed in the template list, which can be accessed under the <B>Properties</B> menu. This dialog will allow you to create new properties, edit existing ones, and move ones between the global and local lists (advanced usage -- not really necessary for editing ships). It is recommended that you use the local lists only, located on the right hand side of the dialog.
+</P>
+<P>
+Selecting <B>New...</B> will let you create a new property, by choosing from some predefined types. Select the one that you want, and a name for it, and it will be added to the set you chose. You can then edit it, if you choose, by double-clicking it or selecting <B>Edit</B>. This will bring up a dialog box whose contents will depend on what type of property you selected.
+</P>
+<P>
+When you are done editing the property, you still need to add it to the model for it to be recognized by the game. Close the template list, and select 'Scene Root' out of the scene graph on the right-hand-side of the main window. Then, click <B>Add Property</B>, on the left hand side of the window. You can then select the property to add. It will be attached to the model.
+</P>
+<HR>
+<P><A NAME="Using hardpoint scripts with Bridge Commander"><H2>Using hardpoint scripts with Bridge Commander</H2></A></P>
+<P>
+When you save your hardpoint script, it should be in the "scripts/ships/Hardpoints" directory under Bridge Commander. In order to use it, you'll need a corresponding "ship script" that points to the hardpoint script. These files are located in the "scripts/ships" directory.
+</P>
+<P>
+If you've just modified an existing ship (and didn't overwrite its hardpoint file), it's easiest to just make a copy of that ship's ship script, rename it to your new ship's name, then edit it to point to the correct hardpoint script. Copy the ship script (in "scripts/ships"), rename it, then change the "HardpointFile" entry at the top of the file to the name of your new hardpoint script (minus the .py extension).
+</P>
+<P>
+Now, if a mission creates your ship using loadspacehelper.CreateShip(), it will use the right hardpoint file and you'll have your modified ship in the game.
+</P>
+<HR>
+<P><A NAME="Specific properties"><H2>Reference for specific properties</H2></A></P>
+<P>
+Each of the properties you can add to a model has a specific purpose. Some of them can be very complex, and inherit features from other properties, while others are fairly simple. This section will start with the properties that are basic building blocks of others, and move on to more specialized ones.
+</P>
+<P>
+<B>Note:</B> The names of these properties usually correspond with the tabs that appear in the property editing dialogs.
+</P>
+<P>
+<UL>
+	<LI>
+	<A NAME="Subsystem Property"><B>Subsystem Property</B></A>: This cannot be created explicitly, but is part of almost all other properties. When selected, the subsystem is usually represented in the 3D view as a 3-dimensional crosshair.
+		<UL>
+		<LI><B>Hit points.</B> This is the amount of damage the system can take before being destroyed.</LI>
+		<LI><B>Repair complexity.</B> This is a multiplier specifying how difficult it is to repair the system. 1.0 is normal, lower numbers will make the system repair faster, higher numbers will make it slower.</LI>
+		<LI><B>Disabled at (%).</B> This specifies the percentage of hit points at which the system will be disabled. For some subsystems, this does nothing.</LI>
+		<LI><B>Radius.</B> This specifies the radius of the sphere that this system occupies. Weapons fire that hits anywhere in this radius will damage this system.</LI>
+		<LI><B>Flags.</B> Critical specifies whether destroying this system will destroy the ship. Targetable determines whether the system can be damaged, and targeted. Primary is used if you have multiple systems of the same type (only really usable for hulls), and marks which one is considered the main system.</LI>
+		<LI><B>3D Position.</B> This is the 3D position on the model that this system occupies. You can enter it either numerically, or by using the Locate mode of the viewer to choose a point, then clicking the <B>Get Position</B> button. Clicking and dragging on the <B>Slide</B> button with the left mouse button will move it along two axes, and dragging with the right mouse button will move it along the third. Holding down the Shift or Ctrl key will constrain the movement to a particular axis.</LI>
+		<LI><B>2D Overlay Position.</B> This indicates the location, in pixels, of the icon representing the system on the 2D damage display.</LI>
+		</UL>
+	</LI>
+	<LI>
+	<A NAME="Position/Orientation Property"><B>Position/Orientation Property</B></A>: This is a position/orientation pair used on a model. This, or similar editing controls, are used in a couple of places, such as weapons. These are usually represented in the 3D view as a set of axes, with the red line being forward, green being up, and blue being right.
+		<UL>
+		<LI><B>Direction, Up, Right.</B> These are the three unit vectors that define the orientation, or which way the thing is pointing. It's probably easiest to edit this using the <B>Spin</B> drag control, which works similarly to the <B>Slide</B> button mentioned above -- click and drag with either the left or right mouse button. Clicking the <B>Normal</B> button will fill in this information with the normal set using Locate mode in the editor.</LI>
+		<LI><B>3D Position.</B> Same as above.</LI>
+		</UL>
+	</LI>
+	<LI>
+	<A NAME="Emitter properties"><B>Emitter properties.</B></A>: These are basically identical to Position/Orientation properties, and are currently only used for the bridge models.
+	</LI>
+	<LI>
+	<A NAME="Ship Property"><B>Ship Property:</B></A> This is used to hold some general information about a ship.
+		<UL>
+		<LI><B>Ship genus:</B> Used to specify whether a ship belongs to the "ship", "station", or "asteroid" groups. Look for "GENUS_" in scripts/App.py for the values, or just copy them from other ships.</LI>
+		<LI><B>Ship species:</B> Used to specify the species type of a ship. Used to determine which icon to show in the target displays, for example. Again, look in scripts/App.py for "SPECIES_" for some values. Anything not defined is fair game, but be careful not to cause conflicts between two ships.</LI>
+		<LI><B>Mass:</B> how massive the ship is. Affects collisions.</LI>
+		<LI><B>Rotational inertia:</B> Affects the ship's ability to stop turning.</LI>
+		<LI><B>Stationary:</B> Set this for objects that will never move.</LI>
+		<LI><B>Ship name, Model file name, Damage resolution, Affiliation: </B> Unused. Most of these are specified in the "ship file", not the hardpoint file.</LI>
+		<LI><B>AI String:</B> specifies the script to use for the default attack AI. i.e. FedAttack, NonFedAttack, StarbaseAttack.</LI>
+		<LI><B>Death explosion sound:</B> specifies the sound name (not the file name) to use for death explosions.</LI>
+		</UL>
+	</LI>
+	<LI><A NAME="Powered Subsystem"><B>Powered Subsystem:</B></A> like Subsystem Properties, cannot be created directly, but is used by many other things.
+		<UL>
+		<LI><B>Normal power/second</B>: how much power is drained by this system per second, at 100% power.</LI>
+		</UL>
+	</LI>
+	<LI><A NAME="Cloaking Subsystem"><B>Cloaking Subsystem:</B></A> Adding this will add a cloaking system to the ship.
+		<UL>
+		<LI><B>Cloak strength:</B> not used.</LI>
+		</UL>
+	</LI>
+	<LI><A NAME="Sensor Subsystem"><B>Sensor Subsystem:</B></A> Any flyable ship needs this.
+		<UL>
+		<LI><B>Sensor base range:</B> the normal sensor range, at 100% power, in game units. Objects within this range will be detected. Objects within half of this range will be identified.</LI>
+		<LI><B>Max # of probes:</B> the number of probes this ship can carry at once.</LI>
+		</UL>
+	</LI>
+	<LI><B>Impulse Engine System:</B> Any ship that wants to move under its own power needs this.
+		<UL>
+		<LI><B>Max speed:</B> the maximum speed this ship can attain under its own power, in game units/second.</LI>
+		<LI><B>Max acceleration:</B> the maximum acceleration this ship can apply per second.</LI>
+		<LI><B>Max angular velocity:</B> the maximum speed at which the ship can turn.</LI>
+		<LI><B>Max angular acceleration:</B> the maximum acceleration this ship which this ship can apply for turning.</LI>
+		<LI><B>Engine sound name:</B> the name of the sound (not the file name) for the engine noise.</LI>
+		</UL>
+	</LI>
+	<LI><A NAME="Warp Engine System"><B>Warp Engine System:</B></A> any ship that wants to warp needs one.
+	</LI>
+	<LI><A NAME="Engine Property"><B>Engine Property:</B></A> this is a single engine on the ship. (Warp or impulse)
+	</LI>
+	<LI><A NAME="Power System"><B>Power System:</B></A> this produces and distributes power on the ship, to all of the powered subsystems.
+		<UL>
+		<LI><B>Power output/second:</B> This is how much power is produced per second, if the system is not damaged.</LI>
+		<LI><B>Main battery limit:</B> This is how much power can be stored in the main battery.</LI>
+		<LI><B>Backup battery limit:</B> This is how much power can be stored in the backup battery.</LI>
+		<LI><B>Main conduit capacity:</B> This is how much power can be drawn from the main battery per second.</LI>
+		<LI><B>Backup conduit capacity:</B> This is how much power can be drawn from the backup battery per second.</LI>
+		</UL>
+	</LI>
+	<LI><A NAME="Repair System"><B>Repair System:</B></A> if the ship has one, damage will be repaired over time.
+		<UL>
+		<LI><B>Maximum repair points:</B> this is how many points of damage can be repaired per second.</LI>
+		<LI><B>Repair teams:</B> this is how many systems can be repaired at once. The repair points available will be divided among the repair teams.</LI>
+		</UL>
+	</LI>
+	<LI><A NAME="Shield system"><B>Shield system:</B></A> this protects a ship from damage.
+		<UL>
+		<LI><B>Glow color:</B> this is the color that the shields glow when they are hit by weapons fire. Clicking <B>Pick Color</B> will bring up a standard color selector for you to make your choice.</LI>
+		<LI><B>Glow decay time:</B> unused.</LI>
+		<LI><B>Shield strength:</B> Here you specify the amount of damage points each shield can take when fully charged.</LI>
+		<LI><B>Charge rate:</B> this is the amount of points that will be restored per second to this shield, if the system is powered at 100%.</LI>
+		</UL>
+	</LI>
+	<LI><A NAME="Weapon systems"><B>Weapon systems:</B></A> You must have a weapon system for each type of weapon on the ship. i.e. a torpedo system if you have torps on the ship, a phaser system if you have phasers, etc. You can only have one system of each type, although you can have as many weapons as you like.
+		<UL>
+		<LI><B>Type:</B> Select the type of weapon system that this is.</LI>
+		<LI><B>Single fire only:</B> if this is checked, the weapon system can only fire one of its weapons at once.</LI>
+		<LI><B>Slow weapon (AI needs to aim):</B> modifies AI behavior so it knows that it needs to aim this weapon for best effect.</LI>
+		<LI><B>Firing chain string:</B> used to implement torpedo spread modes. It's a semicolon-delimited string, with weapon group numbers followed by a string used to display the name of the spread. (Zero is used for the group of all weapons, single-firing.)</LI>
+		</UL>
+	</LI>
+	<LI><A NAME="Weapons"><B>Weapons:</B></A> These are things common to all weapons.
+		<UL>
+		<LI><B>Weapon ID:</B> can be used to 'tag' weapons for mission-specific purposes. (you can determine which weapon fired by its ID)</LI>
+		<LI><B>Dumb-fire capable:</B> whether the weapon can fire without a target (torps, disruptors).</LI>
+		<LI><B>Groups:</B> which weapon groups this weapon belongs to. Used for building firing chains in Weapon Systems, as noted above.</LI>
+		<LI><B>Damage radius factor:</B> the radius of damage caused by this weapon. Anything within this range of a weapon strike will be damaged by this weapon. This also affects the radius of visible damage.</LI>
+		<LI><B>Icon number:</B> specifies the icon (from the WeaponIcons icon group) to use for this weapon on the player's weapons display.</LI>
+		<LI><B>Icon above ship:</B> specifies that the weapon icon should be in the layer above the ship icon, rather than below the ship icon.</LI>
+		<LI><B>Icon position:</B> specifies the x,y position for the weapon status icon in the player's weapons display.</LI>
+		</UL>
+	</LI>
+	<LI><A NAME="Energy Weapons"><B>Energy Weapons:</B></A> These are things common to all energy weapons (phasers, disruptors, tractors).
+		<UL>
+		<LI><B>Max charge:</B> The maximum amount of charge that can be stored in this weapon. Not applicable for tractor beams.</LI>
+		<LI><B>Max damage:</B> The maximum amount of damage that can be dealt by this weapon, in ideal conditions. For tractor beams, this is the amount of force applied.</LI>
+		<LI><B>Max damage distance:</B> The maximum distance at which full damage will be done by this weapon. (or in which the tractor beam will fire)</LI>
+		<LI><B>Min. firing charge:</B> The minimum amount of charge needed to fire this weapon. Used to prevent cases where weapons fire for a fraction of a second, drain, recharge, fire, etc. Not applicable for tractor beams.</LI>
+		<LI><B>Normal discharge rate:</B> The amount of charge drained per second, while the weapon is firing. Not applicable for tractor beams.</LI>
+		<LI><B>Recharge rate:</B> The amount of charge this weapon regains per second, if the weapon system is powered at 100%. Not applicable for tractor beams.</LI>
+		<LI><B>Fire sound:</B> the name of the sound (not the file name) used when the weapon fires.</LI>
+		<LI><B>Firing arc icon number:</B> icon number for icon used to indicate when the target is in this weapon's firing arc.</LI>
+		<LI><B>Icon offset:</B> offset from the weapon's icon for the firing arc icon.</LI>
+		</UL>
+	</LI>
+	<LI><A NAME="Phasers"><B>Phasers:</B></A> These are your primary beam weapons.
+		<UL>
+		<LI><B>Orientation:</B> see <B>Position/Orientation Property</B> above. This affects the direction the phaser faces. As you change the orientation, you'll notice that the firing cone in the model viewer changes.</LI>
+		<LI><B>Ellipse size:</B> Phasers arcs are specified in terms of angles along an ellipse (to make phasers for Federation ships easier to implement). This specifies the length and width of the ellipse.</LI>
+		<LI><B>Texture numbers:</B> no longer used.</LI>
+		<LI><B>Angles:</B> These specify the angles along the ellipse that the phaser covers. Vertical angles are perpendicular to the plane of the ellipse. Changing these angles will change the firing cone in the model viewer, so you can keep an eye on how the firing arc looks.</LI>
+		<LI><B>Colors:</B> Here you can specify the colors for the phaser effect.</LI>
+		<LI><B>Sides, Main radius, Taper radius, Core scale, Taper ratio, Taper min length, Taper max length, length texture tile/unit, perimeter tile, texture speed, texture name:</B> These all specify how the phaser should look. Most of them are somewhat self-explanatory, so it is recommended that you just experiment with these values.</LI>
+		</UL>
+	</LI>
+	<LI><A NAME="Torpedoes"><B>Torpedoes:</B></A>
+		<UL>
+		<LI><B>Direction, Right:</B> see <B>Position/Orientation Property</B> above. Note that the right vector will be used to change the firing direction slightly if torpedoes are fired in non-single-fire mode.</LI>
+		<LI><B>Immediate delay:</B> the amount of time you must wait between firing torpedoes.</LI>
+		<LI><B>Reload delay:</B> how long it takes to reload a torpedo in this tube.</LI>
+		<LI><B>Maximum ready:</B> how many torpedoes can be loaded in this tube at once.</LI>
+		</UL>
+	</LI>
+	<LI><A NAME="Pulse weapons"><B>Pulse weapons:</B></A> these are disruptor-type weapons.
+		<UL>
+		<LI><B>Direction, Up, Right:</B> see <B>Position/Orientation Property</B> above.</LI>
+		<LI><B>Angles:</B> similar to phaser firing arcs, except that these originate from a point rather than an ellipse. Like with phasers, you'll see a representation of the firing arc in the viewer window.</LI>
+		<LI><B>Cooldown time:</B> how long you must wait between shots.</LI>
+		<LI><B>Script:</B> the script used for whatever shoots out of this gun. i.e. Tactical.Projectiles.FusionBolt.</LI>
+		</UL>
+	</LI>
+
+</UL>
+</P>
+<HR>
+<P><A NAME="Advanced topics"><H2>Advanced topics</H2></A></P>
+<P>
+This section discusses some advanced or special-purpose things in the editor.
+</P>
+<P><A NAME="Parent scripts"><H3>Parent scripts</H3></A></P>
+<P>
+If you're trying to create a "souped up" version of a ship, it's often easier to just modify one or two things about it, than to create a new ship. You can do this with the parent script option, located under the <B>Property</B> menu. You will be prompted for a script from which to inherit (i.e. "ships.Hardpoints.galaxy"). When you save the script, it will be changed so that in the game, it loads "ships.Hardpoints.galaxy" first, and then loads the inheriting script.
+</P>
+<P>
+Properties in the inheriting script with the same name as ones in the parent script will override them. For example, if you want to create a Galaxy with a better phaser system, you would create a script "SuperGalaxy", that inherits from "ships.Hardpoints.galaxy", but contains a property named "Phaser System", which is the modified phaser system. When the script is read by the game, the "Phaser System" in SuperGalaxy will override the one from the original script.
+</P>
+<P><A NAME="Localization concerns"><H3>Localization concerns</H3></A></P>
+<P>
+The game will look for localized versions of subsystem names when building the target menu. It looks for them in the file "data/TGL/Subsystems.tgl", so if you want localized strings for your subsystem names, place localized strings in that file.
+</P>
+
+<HR>
+<P><A NAME="#FAQ"><H2>Frequently Asked Questions</H2></A></P>
+<P>
+<UL>
+<LI><B>I can't get the Model Property Editor to run!</B>
+<BR>
+Your graphics card needs to be able to do accelerated graphics in a window. Voodoo cards may have issues with running the editor. Make sure to update your drivers. Also, if you're running in a multiple monitor setup, don't drag the editor between monitors while running.</LI>
+<LI><B>I can't use the registry file!</B>
+<BR>
+The registry file only seems to work on Windows 2000/XP. As a workaround, you can enter the texture and other paths manually. The texture paths are RELATIVE to the file being worked on, so you may need to back up a directory (..) for some of the odder ships (like the stations).
+</LI>
+<LI><B>The model property editor crashes when I try to add a property!</B>
+<BR>
+Make sure you have "Scene Root" selected in the tree in the right-hand side of the main window. You should then be able to add and remove properties from that node.
+</LI>
+<LI><B>My phasers are firing way out in the middle of space!</B>
+<BR>
+Make sure your model scale is set at 0.01. You may need to redo your hardpoints if you've done them with the wrong scale.
+</LI>
+<LI><B>My hardpoint file won't load!</B>
+<BR>
+If you've been editing the file by hand (in a text editor, for example), it's likely that you have a typo somewhere which is causing a script error. Try importing the script by hand from the in-game console, so you can see the error message.
+</LI>
+<LI><B>I tried editing a ship, and now the game is messed up!</B>
+<BR>
+Make sure you saved your hardpoint files in <B>scripts/Ships/Hardpoints</B>, not just scripts/Ships. (those are two different kinds of scripts in there!) If all else fails, reinstall the game and the SDK.
+</LI>
+<LI><B>It's a pain to get phasers to line up correctly with the dish on Federation ships!</B>
+<BR>
+Yes, I know. :)
+</LI>
+</UL>
+</P>
+<HR>
+<P><SMALL>Created on ... January 31, 2002</SMALL></P>
+</BODY>
+</HTML>

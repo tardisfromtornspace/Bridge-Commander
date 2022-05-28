@@ -1,0 +1,43 @@
+#This is the dump of the LogCreator: <FirePoint5Player Travel Logger[2] LogCreator_tnU16NOJsKBA>
+#This log file was created on: 0:3:16.640 of 30/June/2017, Friday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>0:3:16.640 of 30/June/2017, Friday
+#>>>Initialized FirePoint5Player Travel logger
+#>>>SELF = <FirePoint5Player(3090363) Travel_hNR2rr1057J7>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>0:3:32.110 of 30/June/2017, Friday
+#>>>Initialized FirePoint5Player Travel logger
+#>>>SELF = <FirePoint5Player(3096757) Travel_yqq0K883i3Pc>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization

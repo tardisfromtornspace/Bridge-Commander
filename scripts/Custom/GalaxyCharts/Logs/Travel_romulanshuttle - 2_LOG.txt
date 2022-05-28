@@ -1,0 +1,52 @@
+#This is the dump of the LogCreator: <romulanshuttle - 2 Travel Logger LogCreator_huyacbiUT4aj>
+#This log file was created on: 23:36:33.990 of 21/April/2017, Friday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>23:36:33.990 of 21/April/2017, Friday
+#>>>Initialized romulanshuttle - 2 Travel logger
+#>>>SELF = <romulanshuttle - 2(351610) Travel_681SvrnNOnY6>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>23:36:35.087 of 21/April/2017, Friday
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>23:36:46.036 of 21/April/2017, Friday
+#>>>Updated Target Ship = VOR_Cruiser 1
+## -------------------- ##
+####################
+#######>>>23:37:41.805 of 21/April/2017, Friday
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>23:38:9.621 of 21/April/2017, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:38:9.967 of 21/April/2017, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:38:10.633 of 21/April/2017, Friday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 23:45:19.318 of 21/April/2017, Friday
+#Ending of log dump - User is quiting the game
+########################################

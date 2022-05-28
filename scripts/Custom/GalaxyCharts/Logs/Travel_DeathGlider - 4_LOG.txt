@@ -1,0 +1,32 @@
+#This is the dump of the LogCreator: <DeathGlider - 4 Travel Logger LogCreator_K0M7bkcoCDgm>
+#This log file was created on: 17:49:18.299 of 7/October/2019, Monday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>17:49:18.299 of 7/October/2019, Monday
+#>>>Initialized DeathGlider - 4 Travel logger
+#>>>SELF = <DeathGlider - 4(683421) Travel_97888JQX6lW5>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>17:49:21.654 of 7/October/2019, Monday
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>17:49:29.781 of 7/October/2019, Monday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

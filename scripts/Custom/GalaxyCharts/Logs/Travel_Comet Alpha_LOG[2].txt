@@ -1,0 +1,28 @@
+#This is the dump of the LogCreator: <Comet Alpha Travel Logger[2] LogCreator_5cEoxm557f0G>
+#This log file was created on: 19:58:0.187 of 24/April/2017, Monday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>19:58:0.187 of 24/April/2017, Monday
+#>>>Initialized Comet Alpha Travel logger
+#>>>SELF = <Comet Alpha(315229) Travel_x14YRvY6WXLm>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: Player Travel Destination OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+########################################
+# 20:0:53.223 of 24/April/2017, Monday
+#Ending of log dump - User is quiting the game
+########################################

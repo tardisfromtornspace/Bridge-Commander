@@ -1,0 +1,48 @@
+#This is the dump of the LogCreator: <DRA_Raider-1 Travel Logger[2] LogCreator_fN6O18u5i4GL>
+#This log file was created on: 1:2:5.708 of 18/March/2017, Saturday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>1:2:5.708 of 18/March/2017, Saturday
+#>>>Initialized DRA_Raider-1 Travel logger
+#>>>SELF = <DRA_Raider-1(384111) Travel_FE89NseiJMC9>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>1:2:15.143 of 18/March/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>1:2:16.206 of 18/March/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>1:2:17.416 of 18/March/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>1:3:5.548 of 18/March/2017, Saturday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 1:8:54.309 of 18/March/2017, Saturday
+#Ending of log dump - User is quiting the game
+########################################

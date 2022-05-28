@@ -1,0 +1,4259 @@
+#This is the dump of the LogCreator: <Enterprise E-1 Travel Logger LogCreator_IqChbVsA0d33>
+#This log file was created on: 19:8:6.359 of 24/April/2017, Monday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>19:8:6.359 of 24/April/2017, Monday
+#>>>Initialized Enterprise E-1 Travel logger
+#>>>SELF = <Enterprise E-1(419748) Travel_WY55bs12nowR>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>19:8:10.023 of 24/April/2017, Monday
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>19:10:38.832 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>19:10:40.259 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>19:10:40.432 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>19:10:41.175 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>19:10:41.534 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>19:10:42.160 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>19:10:43.093 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>19:10:44.065 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>19:10:45.310 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>19:10:46.948 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>19:10:48.903 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>19:10:50.580 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>19:10:53.151 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:10:54.044 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:11:36.228 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:11:40.277 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:11:40.489 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:11:40.943 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:11:41.676 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:11:42.223 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:11:43.049 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:11:43.515 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:11:44.327 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:11:44.966 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:11:45.872 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:11:46.259 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:11:47.058 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:11:48.245 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:11:49.112 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:11:49.590 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:11:50.589 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:11:51.602 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:11:52.747 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:11:54.148 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:11:54.279 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:11:54.813 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:11:55.545 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:11:55.692 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:11:56.384 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:11:57.317 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:11:58.476 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:11:58.663 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:11:59.716 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:0.435 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:0.888 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:2.020 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:2.580 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:3.103 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:3.220 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:4.352 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:5.244 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:5.863 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:6.701 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:7.500 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:8.260 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:8.860 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:9.540 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:10.259 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:11.179 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:11.885 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:12.404 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:12.964 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:13.764 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:14.936 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:15.910 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:17.001 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:17.801 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:18.627 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:19.370 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:20.399 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:21.277 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:22.330 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:23.289 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:23.423 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:24.128 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:24.928 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:26.060 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:26.940 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:27.727 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:28.660 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:29.351 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:30.351 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:31.190 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:32.776 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:32.882 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:33.468 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:34.126 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:34.629 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:35.374 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:36.172 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:36.998 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:38.077 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:39.116 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:39.876 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:40.129 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:40.822 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:41.568 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:42.407 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:43.608 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:43.929 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:44.141 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:44.460 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:44.740 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:45.100 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:45.646 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:46.178 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:47.040 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:47.929 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:48.302 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:48.987 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:49.731 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:50.182 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:51.621 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:52.436 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:53.463 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:54.061 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:54.901 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:55.647 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:56.433 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:57.179 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:57.832 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:58.791 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:59.245 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:12:59.924 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:13:0.444 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:13:1.723 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:13:2.309 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:13:2.709 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:13:3.215 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:13:3.721 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:13:4.455 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:13:5.042 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:13:5.722 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:13:6.311 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:13:6.710 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:13:7.110 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:13:7.746 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:13:8.146 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:13:8.590 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:13:9.224 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:13:9.731 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:13:10.291 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:13:10.730 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:13:11.583 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:13:12.237 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:13:12.624 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:13:12.850 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:13:13.193 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:13:13.608 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:13:14.474 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:13:15.179 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:13:16.085 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:13:16.659 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:13:17.312 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:13:17.871 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:13:18.631 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:13:19.204 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:13:19.991 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:13:21.708 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:13:22.694 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:13:23.440 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:13:24.146 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:13:24.972 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:13:26.079 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:13:26.425 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:13:27.237 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:13:28.291 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:13:29.609 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:13:31.314 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:13:32.354 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:13:33.406 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:13:33.660 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:13:34.220 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:13:34.726 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:13:35.193 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:13:36.292 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:13:36.719 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:13:37.331 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:13:37.573 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:13:37.824 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:13:38.237 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:13:38.862 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:13:40.119 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:13:42.144 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:13:43.549 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:13:44.250 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:13:45.170 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:13:46.197 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:13:47.315 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:13:48.900 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:13:50.126 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:13:51.045 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:13:52.338 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:13:53.563 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:13:54.696 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:13:56.415 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:13:57.574 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:13:58.706 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:14:0.225 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:14:1.584 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:14:3.116 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:14:4.674 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:14:6.273 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:14:7.113 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:14:8.059 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:14:9.724 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:14:11.506 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:14:12.432 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:14:13.032 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:14:14.151 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:14:15.857 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:14:17.322 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:14:18.894 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:14:20.306 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:14:21.773 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:14:22.838 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:14:24.944 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:14:25.983 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:14:26.170 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:14:27.208 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:14:28.753 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:14:29.366 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:14:29.607 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:14:29.926 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:14:30.938 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:14:32.378 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:14:33.284 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:14:33.497 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:14:34.271 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:14:35.282 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:14:36.934 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:14:38.214 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:14:38.347 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:14:38.906 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:14:40.614 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:14:41.144 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:14:41.279 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:14:44.874 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:14:45.061 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:14:45.168 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:14:45.754 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:14:46.723 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:14:47.083 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:14:48.828 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:14:50.400 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:14:51.120 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:14:52.705 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:14:53.545 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:14:54.384 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:14:55.478 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:14:56.943 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:14:58.543 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:14:59.847 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:15:0.114 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:15:0.410 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:15:0.621 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:15:0.834 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:15:1.233 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:15:1.979 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:15:3.211 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:15:3.611 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:15:3.792 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:15:3.899 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:15:4.005 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:15:4.126 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:15:4.260 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:15:5.485 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:15:5.671 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:15:5.778 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:15:6.284 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:15:7.377 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:15:7.536 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:15:8.069 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:15:8.203 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:15:8.975 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:15:9.762 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:15:9.868 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:15:10.161 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:15:10.347 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:15:11.405 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:15:11.651 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:15:12.904 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:15:14.836 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:15:16.915 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:15:18.460 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:15:20.619 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:15:22.297 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:15:24.432 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:15:25.722 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:15:27.520 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:15:29.970 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:15:37.189 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:15:39.486 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:15:40.006 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:15:40.112 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:15:40.657 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:15:40.975 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:15:43.368 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:15:43.420 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:15:43.647 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:15:43.841 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:15:44.082 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:15:44.599 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:15:45.135 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:15:45.590 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:15:46.067 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:15:46.707 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:15:47.559 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:15:48.184 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:15:48.598 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:15:49.344 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:15:49.957 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:15:50.703 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:15:51.663 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:15:52.355 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:15:53.155 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:15:54.113 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:15:54.967 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:15:55.448 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:15:56.032 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:15:56.887 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:15:57.498 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:15:58.591 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:15:59.017 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:15:59.711 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:16:0.297 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:16:0.510 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:16:1.015 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:16:1.655 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:16:1.868 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:16:2.854 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:16:3.441 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:16:4.161 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:16:4.454 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:16:5.145 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:16:5.972 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:16:6.452 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:16:7.064 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:16:7.651 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:16:7.890 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:16:8.744 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:16:9.143 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:16:9.542 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:16:10.075 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:16:10.395 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:16:11.062 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:16:11.915 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:16:13.059 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:16:14.232 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:16:15.218 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:16:16.019 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:16:16.284 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:16:17.063 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:16:17.190 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:16:18.042 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:16:19.002 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:16:19.668 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:16:20.441 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:16:21.293 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:16:22.146 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:16:23.292 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:16:24.598 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:16:25.584 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:16:26.823 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:16:27.969 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:16:28.901 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:16:29.221 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:16:29.462 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:16:30.048 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:16:31.619 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:16:32.831 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:16:33.658 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:16:34.431 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:16:35.737 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:16:36.615 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:16:37.815 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:16:39.102 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:16:40.773 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:16:41.786 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:16:42.931 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:16:44.132 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:16:45.089 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:16:46.208 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:16:47.487 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:16:48.768 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:16:50.631 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:16:52.637 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:16:53.456 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:16:54.337 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:16:55.454 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:16:56.947 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:16:57.587 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:16:58.947 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:16:59.638 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:17:0.091 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:17:0.758 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:17:1.077 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:17:1.397 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:17:2.489 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:17:2.596 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:17:3.102 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:17:5.301 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:17:5.488 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:17:5.594 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:17:5.779 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:17:6.327 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:17:7.765 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:17:8.657 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:17:10.483 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:17:13.174 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:17:14.507 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:17:14.827 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:17:15.759 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:17:17.204 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:17:17.383 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:17:18.370 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:17:19.703 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:17:20.130 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:17:20.262 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:17:21.275 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:17:22.500 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:17:23.941 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:17:25.929 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:17:26.035 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:17:26.890 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:17:27.233 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:17:28.299 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:17:29.764 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:17:30.991 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:17:31.632 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:17:32.403 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:17:33.216 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:17:33.999 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:17:34.585 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:17:35.425 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:17:36.117 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:17:36.918 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:17:37.650 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:17:38.370 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:17:38.930 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:17:39.543 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:17:40.303 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:17:40.771 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:17:41.462 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:17:42.211 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:17:42.957 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:17:43.594 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:17:44.260 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:17:44.728 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:17:45.099 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:17:45.632 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:17:46.353 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:17:47.206 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:17:47.952 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:17:48.404 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:17:49.283 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:17:50.018 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:17:50.495 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:17:51.309 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:17:52.057 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:17:52.667 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:17:53.370 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:17:54.280 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:17:54.613 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:17:55.506 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:17:56.810 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:17:57.877 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:17:58.917 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:17:59.423 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:0.569 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:0.969 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:1.184 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:1.390 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:1.611 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:1.757 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:1.921 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:2.077 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:2.283 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:2.489 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:2.674 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:2.899 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:3.567 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:3.699 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:3.806 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:4.287 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:4.927 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:5.619 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:6.661 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:7.328 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:7.891 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:8.447 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:9.393 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:10.112 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:10.938 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:11.604 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:12.902 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:14.027 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:15.054 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:16.279 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:17.282 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:18.521 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:19.238 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:20.158 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:21.076 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:21.756 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:22.877 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:23.315 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:24.485 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:25.285 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:26.124 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:26.459 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:26.609 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:26.843 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:27.043 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:27.163 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:27.315 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:27.429 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:27.658 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:28.003 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:28.323 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:29.494 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:29.659 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:29.883 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:30.060 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:30.163 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:30.532 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:30.661 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:30.764 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:31.028 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:32.309 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:32.806 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:33.056 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:33.594 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:33.724 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:33.891 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:34.071 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:34.252 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:34.637 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:34.785 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:35.025 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:35.186 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:35.294 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:36.496 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:37.005 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:37.201 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:37.400 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:37.662 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:38.089 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:39.104 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:40.358 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:40.943 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:42.236 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:43.715 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:44.249 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:44.369 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:44.555 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:44.714 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:44.890 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:45.019 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:45.141 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:45.273 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:45.646 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:45.834 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:46.047 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:46.209 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:46.312 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:46.446 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:46.745 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:46.859 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:46.964 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:47.085 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:47.310 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:47.484 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:47.724 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:47.886 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:48.023 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:48.245 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:48.406 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:48.914 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:49.174 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:49.285 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:49.484 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:50.512 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:51.938 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:52.323 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:53.414 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:54.189 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:54.816 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:55.212 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:55.334 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:55.599 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:55.799 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:56.228 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:56.426 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:56.617 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:56.730 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:57.068 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:57.284 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:58.025 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:58.478 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:58.648 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:59.169 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:59.344 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:18:59.686 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:19:1.082 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:19:2.582 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:19:3.262 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:19:3.405 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:19:3.526 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:19:3.647 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:19:3.765 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:19:4.117 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:19:4.218 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:19:4.366 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:19:4.499 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:19:4.673 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:19:4.780 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:19:4.977 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:19:5.329 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:19:5.630 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:19:6.389 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:19:7.243 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:19:9.787 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:19:11.268 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:19:12.614 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:19:14.076 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:19:14.466 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:19:14.586 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:19:14.757 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:19:15.038 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:19:15.428 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:19:15.557 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:19:15.752 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:19:15.902 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:19:16.070 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:19:16.406 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:19:16.786 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:19:17.072 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:19:18.351 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:19:18.967 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:19:20.671 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:19:22.143 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:19:23.692 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:19:24.760 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:19:25.878 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:19:27.103 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:19:28.491 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:19:29.529 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:19:31.129 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:19:32.407 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:19:33.737 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:19:35.229 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:19:37.040 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:19:38.586 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:19:39.839 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:19:41.570 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:19:42.715 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:19:44.395 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:19:45.914 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:19:47.193 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:19:48.474 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:19:49.565 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:19:51.030 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:19:52.231 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:19:54.576 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:19:55.775 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:19:57.026 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:19:57.456 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:19:57.879 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:19:58.707 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:19:59.665 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:20:1.014 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:20:1.867 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:20:3.252 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:20:5.290 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:20:7.551 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:20:8.617 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:20:10.003 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:20:11.415 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:20:12.401 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:20:13.325 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:20:14.496 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:20:15.908 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:20:18.094 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:20:19.481 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:20:20.828 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:20:22.290 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:20:23.594 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:20:24.821 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:20:25.979 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:20:27.311 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:20:28.989 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:20:30.536 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:20:31.649 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:20:33.224 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:20:35.126 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:20:36.264 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:20:37.542 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:20:38.982 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:20:40.901 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:20:41.968 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:20:43.245 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:20:43.951 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:20:45.043 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:20:46.215 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:20:47.787 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:20:49.547 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:20:51.496 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:20:52.691 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:20:53.597 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:20:53.865 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:20:54.317 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:20:54.602 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:20:54.744 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:20:55.224 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:20:56.795 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:20:59.514 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:21:1.205 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:21:3.230 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:21:3.923 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:21:4.936 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:21:6.536 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:21:6.907 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:21:7.173 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:21:7.415 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:21:7.707 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:21:7.947 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:21:9.335 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:21:11.308 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:21:12.554 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:21:13.334 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:21:13.507 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:21:13.612 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:21:14.452 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:21:15.597 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:21:16.840 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:21:18.119 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:21:20.094 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:21:21.141 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:21:22.686 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:21:24.072 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:21:25.536 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:21:26.777 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:21:27.627 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:21:28.481 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:21:29.866 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:21:31.732 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:21:33.144 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:21:34.585 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:21:36.809 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:21:37.303 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:21:38.463 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:21:38.820 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:21:39.088 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:21:39.270 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:21:39.484 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:21:39.929 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:21:40.256 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:21:40.372 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:21:40.590 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:21:40.828 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:21:41.022 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:21:41.479 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:21:41.715 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:21:42.140 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:21:43.949 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:21:45.667 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:21:46.883 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:21:47.014 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:21:47.187 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:21:47.561 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:21:47.800 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:21:48.066 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:21:49.344 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:21:50.491 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:21:52.430 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:21:54.715 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:21:56.501 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:21:58.173 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:21:58.685 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:21:58.866 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:21:59.086 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:21:59.234 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:21:59.339 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:21:59.458 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:21:59.619 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:21:59.928 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:1.589 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:1.989 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:2.229 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:2.781 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:3.141 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:3.404 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:3.614 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:3.789 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:3.977 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:4.124 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:4.217 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:4.387 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:4.553 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:4.693 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:4.828 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:5.054 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:6.546 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:8.453 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:10.302 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:12.533 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:14.511 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:15.385 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:15.548 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:15.795 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:16.168 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:16.300 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:16.445 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:16.601 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:16.718 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:16.927 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:17.048 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:22.691 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:22.797 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:22.905 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:23.046 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:23.518 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:25.196 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:25.942 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:27.407 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:28.602 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:29.738 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:31.242 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:32.934 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:34.829 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:35.229 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:36.867 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:38.627 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:39.746 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:42.091 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:44.407 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:46.422 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:46.954 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:47.139 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:47.433 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:47.805 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:48.073 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:48.725 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:50.111 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:50.457 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:50.672 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:50.803 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:50.909 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:51.055 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:51.245 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:51.429 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:51.539 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:51.761 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:53.070 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:53.814 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:54.240 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:54.559 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:55.120 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:56.238 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:56.639 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:57.063 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:57.464 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:57.731 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:58.184 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:58.638 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:22:59.476 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:23:0.118 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:23:2.756 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:23:5.830 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:23:8.255 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:23:10.040 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:23:12.438 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:23:14.091 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:23:15.664 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:23:17.583 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:23:21.046 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:23:24.298 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:23:27.487 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:23:30.114 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:23:33.666 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:23:35.638 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:23:37.490 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:23:39.968 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:23:42.393 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:23:44.073 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:23:46.497 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:23:48.763 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:23:50.734 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:23:53.000 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:23:55.785 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:23:57.838 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:23:59.888 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:24:2.419 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:24:5.844 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:24:7.710 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:24:9.655 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:24:13.772 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:24:18.398 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:24:22.085 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:24:25.188 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:24:26.882 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:24:28.575 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:24:31.505 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:24:35.103 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:24:38.782 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:24:43.885 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:24:44.949 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:24:45.068 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:24:45.189 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:24:45.349 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:24:45.509 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:24:45.748 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:24:46.070 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:24:46.349 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:24:46.535 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:24:46.681 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:24:46.840 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:24:48.876 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:24:48.992 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:24:49.770 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:24:51.271 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:24:53.028 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:24:55.668 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:24:56.947 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:24:58.970 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:25:1.673 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:25:1.780 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:25:3.925 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:25:5.897 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:25:9.110 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:25:9.321 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:25:11.173 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:25:13.344 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:25:15.956 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:25:18.341 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:25:21.300 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:25:24.724 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:25:24.858 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:25:25.018 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:25:25.591 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:25:26.777 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:25:28.188 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:25:29.601 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:25:31.510 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:25:31.829 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:25:32.536 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:25:33.681 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:25:34.907 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:25:36.704 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:25:37.037 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:25:37.769 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:25:39.115 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:25:40.487 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:25:43.032 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:25:45.056 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:25:47.429 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:25:49.082 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:25:51.188 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:25:53.213 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:25:55.747 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:25:58.063 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:25:59.662 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:26:0.966 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:26:1.259 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:26:1.713 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:26:2.646 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:26:4.858 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:26:6.831 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:26:8.534 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:26:11.118 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:26:13.543 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:26:15.332 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:26:17.380 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:26:19.698 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:26:21.564 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:26:25.856 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:26:28.387 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:26:30.066 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:26:32.757 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:26:35.661 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:26:37.526 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:26:39.606 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:26:41.328 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:26:41.818 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:26:42.398 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:26:42.500 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:26:42.944 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:26:43.552 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:26:46.906 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:26:49.279 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:26:51.239 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:26:52.735 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:26:54.041 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:26:54.827 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:26:55.224 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:26:55.770 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:26:56.076 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:26:56.289 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:26:56.502 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:26:56.690 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:26:56.850 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:26:57.155 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:26:57.333 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:26:57.476 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:26:57.689 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:26:57.862 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:26:57.989 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:26:58.118 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:26:58.343 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:26:58.581 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:26:58.930 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:26:59.422 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:27:0.197 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:27:1.076 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:27:2.616 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:27:3.100 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:27:3.645 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:27:4.236 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:27:4.497 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:27:4.708 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:27:5.055 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:27:5.242 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:27:5.567 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:27:5.883 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:27:6.177 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:27:6.602 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:27:6.708 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:27:7.246 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:27:8.404 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:27:9.397 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:27:10.261 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:27:10.845 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:27:11.150 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:27:11.282 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:27:11.799 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:27:12.183 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:27:12.369 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:27:12.823 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:27:14.739 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:27:14.920 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:27:17.942 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:27:19.211 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:27:21.090 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:27:23.515 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:27:26.139 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:27:28.446 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:27:31.711 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:27:35.121 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:27:39.359 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:27:41.036 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:27:43.579 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>19:27:45.458 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+########################################
+# 19:27:46.204 of 24/April/2017, Monday
+#Ending of log dump - User is quiting the game
+########################################
+## -------------------- ##
+####################
+#######>>>19:27:46.204 of 24/April/2017, Monday
+#>>>Ship is dead or dying (at Chaser Update)

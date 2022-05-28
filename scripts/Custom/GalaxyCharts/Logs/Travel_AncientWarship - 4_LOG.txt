@@ -1,0 +1,36 @@
+#This is the dump of the LogCreator: <AncientWarship - 4 Travel Logger LogCreator_D3DkL43yrzG2>
+#This log file was created on: 20:23:15.775 of 9/October/2019, Wednesday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>20:23:15.775 of 9/October/2019, Wednesday
+#>>>Initialized AncientWarship - 4 Travel logger
+#>>>SELF = <AncientWarship - 4(294085) Travel_CVh1xHVHfMrD>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>20:23:16.670 of 9/October/2019, Wednesday
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>20:24:17.161 of 9/October/2019, Wednesday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 20:28:21.572 of 9/October/2019, Wednesday
+#Ending of log dump - User is quiting the game
+########################################

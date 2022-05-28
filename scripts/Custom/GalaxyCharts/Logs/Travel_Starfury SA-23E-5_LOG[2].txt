@@ -1,0 +1,75 @@
+#This is the dump of the LogCreator: <Starfury SA-23E-5 Travel Logger[2] LogCreator_9hbEb71r3wNy>
+#This log file was created on: 16:2:27.520 of 28/May/2017, Sunday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>16:2:27.520 of 28/May/2017, Sunday
+#>>>Initialized Starfury SA-23E-5 Travel logger
+#>>>SELF = <Starfury SA-23E-5(555660) Travel_al3qL5x4wr22>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>16:2:38.243 of 28/May/2017, Sunday
+#>>>Updated Target Ship = X-Wing-6
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>16:2:38.829 of 28/May/2017, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>16:2:39.401 of 28/May/2017, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>16:2:40.055 of 28/May/2017, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>16:2:40.683 of 28/May/2017, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>16:2:41.351 of 28/May/2017, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>16:2:42.380 of 28/May/2017, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>16:2:43.126 of 28/May/2017, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>16:2:43.714 of 28/May/2017, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>16:3:16.326 of 28/May/2017, Sunday
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>16:3:21.253 of 28/May/2017, Sunday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 16:7:15.184 of 28/May/2017, Sunday
+#Ending of log dump - User is quiting the game
+########################################

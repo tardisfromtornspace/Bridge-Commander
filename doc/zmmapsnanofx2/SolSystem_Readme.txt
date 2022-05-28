@@ -1,0 +1,58 @@
+All images are copyrighted under the terms stated by their original
+authors, and are redistributed with this package under their terms.
+This package may not be redistributed without these credits attached!
+
+
+--- Credits ---
+
+* Mercury	: James Hastings-Trew
+* Venus		: A synthesis of textures by Bj”rn J¢nsson and by David Seal of JPL/Caltech.
+* Earth		: "The Blue Marble", retouched synthesis *1
+Moon		: James Hastings-Trew
+* Mars		: David Seal, JPG/Caltech; retouched
+
+Jupiter		: James Hastings-Trew
+* Io,		: Bj”rn J¢nsson
+* Europa,
+* Ganymede,
+* Callisto,
+
+Saturn		: A synthesis of textures by Bj”rn J¢nsson and by Don Davis of JPL/Caltech.
+* Tethys,	: USGS
+* Dione,
+* Rhea,
+* Titan		: NASA/JPL/David Seal
+
+Uranus		: James Hastings-Trew
+Ariel,		: USGS, retouched, with thanks to Tammy Becker
+Umbriel,
+Titania,
+Oberon,
+
+
+Neptune		: A synthesis of textures by Bj”rn J¢nsson and by Don Davis of JPL/Caltech.
+Triton		: USGS, retouched
+
+* Pluto		: David Seal, Rawlings, CalTech/JPL
+* Charon	: David Seal, CalTech/JPL
+
+
+
+*1	Earth - A retouched synthesis of textures from "The Blue Marble" at
+	http://earthobservatory.nasa.gov/Newsroom/BlueMarble/.
+
+	NASA Goddard Space Flight Center
+
+	Image by Reto St”ckli (land surface, shallow water, clouds).
+
+	Enhancements by Robert Simmon (ocean color, compositing, 3D globes,
+	animation).
+
+	Data and technical support: MODIS Land Group; MODIS Science Data Support
+	Team; MODIS Atmosphere Group; MODIS Ocean Group
+
+	Additional data: USGS EROS Data Center (topography); USGS Terrestrial
+	Remote Sensing Flagstaff Field Center (Antarctica); Defense
+	Meteorological Satellite Program (city lights).
+
+All retouching done by Daniel Houghton AKA Dasher42 unless otherwise noted.

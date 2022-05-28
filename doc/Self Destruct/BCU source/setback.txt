@@ -1,0 +1,13 @@
+Make sure "g_iCountdown = 11" is tabbed in one more tab than the else line.  Like this:
+ 
+	if (g_iCountdown == -1):
+		# We are starting our countdown..
+		g_iCountdown = 11
+	else if (g_iCountdown == 0):
+        	# We're dead!
+	        FinallyDie()
+        	return
+ 
+One tab before the "if" and "else" lines, two tabs before each of the others (in case my paste didn't come out right).  Tabbing is very important to Python, so that it knows what block of code you're working with.  I don't know if you've done other programming, but in C/C++, blocks of code are defined by "{" at the start and "}" at the end, and in Python/Delphi, you use "begin" and "end".  Python doesn't have anything like that, so it relies on how many tabs you put before each line to know what block of code the line belongs with.
+ 
+Oh, and about the TGL thing - Saffi uses "BridgeCrewGeneral.tgl", generated from "BridgeCrewGeneral.doc".  You can find the TGL in data/TGL/

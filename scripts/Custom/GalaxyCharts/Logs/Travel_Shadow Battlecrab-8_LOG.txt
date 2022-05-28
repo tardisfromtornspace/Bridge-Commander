@@ -1,0 +1,49 @@
+#This is the dump of the LogCreator: <Shadow Battlecrab-8 Travel Logger LogCreator_5XS1bg918uy5>
+#This log file was created on: 14:21:2.937 of 25/June/2017, Sunday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>14:21:2.937 of 25/June/2017, Sunday
+#>>>Initialized Shadow Battlecrab-8 Travel logger
+#>>>SELF = <Shadow Battlecrab-8(118344) Travel_64x29M8bluU1>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>14:21:12.670 of 25/June/2017, Sunday
+#>>>Updated Target Ship =  Warship-1
+## -------------------- ##
+####################
+#######>>>14:21:23.456 of 25/June/2017, Sunday
+#>>>Updated Target Ship =  Warship-3
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>14:21:23.959 of 25/June/2017, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>14:21:24.343 of 25/June/2017, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>14:21:24.842 of 25/June/2017, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>14:21:45.455 of 25/June/2017, Sunday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

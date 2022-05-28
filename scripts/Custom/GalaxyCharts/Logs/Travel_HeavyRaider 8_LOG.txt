@@ -1,0 +1,42 @@
+#This is the dump of the LogCreator: <HeavyRaider 8 Travel Logger LogCreator_K0O1wTfoaU2F>
+#This log file was created on: 4:9:52.722 of 23/March/2017, Thursday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>4:9:52.722 of 23/March/2017, Thursday
+#>>>Initialized HeavyRaider 8 Travel logger
+#>>>SELF = <HeavyRaider 8(418765) Travel_2zlMWpblx411>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>4:10:8.852 of 23/March/2017, Thursday
+#>>>Updated Target Ship = Whitestar-10
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>4:10:23.111 of 23/March/2017, Thursday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>4:10:26.034 of 23/March/2017, Thursday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...

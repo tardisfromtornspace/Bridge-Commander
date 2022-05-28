@@ -1,0 +1,32 @@
+#This is the dump of the LogCreator: <FedStarbase 2 Travel Logger LogCreator_VLhK556uO7aa>
+#This log file was created on: 19:15:37.189 of 24/April/2017, Monday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>19:15:37.189 of 24/April/2017, Monday
+#>>>Initialized FedStarbase 2 Travel logger
+#>>>SELF = <FedStarbase 2(572725) Travel_77Ma901gXCPT>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>19:18:52.323 of 24/April/2017, Monday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 19:27:46.204 of 24/April/2017, Monday
+#Ending of log dump - User is quiting the game
+########################################

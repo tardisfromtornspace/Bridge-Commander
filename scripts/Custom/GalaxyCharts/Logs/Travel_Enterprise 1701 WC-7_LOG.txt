@@ -1,0 +1,48 @@
+#This is the dump of the LogCreator: <Enterprise 1701 WC-7 Travel Logger LogCreator_0t966hQw7f0K>
+#This log file was created on: 13:30:34.655 of 17/March/2017, Friday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>13:30:34.655 of 17/March/2017, Friday
+#>>>Initialized Enterprise 1701 WC-7 Travel logger
+#>>>SELF = <Enterprise 1701 WC-7(135326) Travel_ok2hKCSA9u6m>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>13:31:17.315 of 17/March/2017, Friday
+#>>>Updated Target Ship = Intrepid 1631-A WC-10
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>13:31:19.600 of 17/March/2017, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>13:31:26.904 of 17/March/2017, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+########################################
+# 13:33:22.167 of 17/March/2017, Friday
+#Ending of log dump - User is quiting the game
+########################################

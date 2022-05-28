@@ -1,0 +1,44 @@
+#This is the dump of the LogCreator: <Imperator Mk III-4 Travel Logger LogCreator_FH3584fZ47sP>
+#This log file was created on: 18:46:31.017 of 20/September/2019, Friday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>18:46:31.017 of 20/September/2019, Friday
+#>>>Initialized Imperator Mk III-4 Travel logger
+#>>>SELF = <Imperator Mk III-4(1056893) Travel_oWc4W38mvv5V>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>18:46:45.130 of 20/September/2019, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>18:53:13.260 of 20/September/2019, Friday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 18:55:2.114 of 20/September/2019, Friday
+#Ending of log dump - User is quiting the game
+########################################

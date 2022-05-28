@@ -1,0 +1,43 @@
+<HTML>
+<HEAD>
+  <TITLE>Using the damage tool</TITLE>
+  <LINK REV="made" HREF="mailto:">
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-1">
+  <META NAME="author" CONTENT="">
+  <META NAME="description" CONTENT="">
+  <META NAME="keywords" CONTENT="">
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000" LINK="#0000FF" VLINK="#800080" ALINK="#FF0000">
+
+<H1>Using the damage tool</H1>
+
+<P>The damage tool is used to output scripts that can be used to "pre-damage" ships. For example, if a mission calls for the player to find the wreckage of a freighter, the damage tool can be used to make the freighter appear badly damaged in the game.</P>
+<P>
+The tool is located in the Tools/DamageTool subdirectory. To use it, first edit the file "ConfigFile.txt" to point to the model you wish to use. You may want to copy the textures for that model into the same directory, otherwise you will see a white model.
+</P>
+<P>
+When you run the tool, you'll be asked to select your video device, then you will see a window with the ship model you selected. Clicking on the model will add damage to that point. (Left-clicking will apply a small amount of damage, right-clicking will apply a large amount of damage.)
+</P>
+<P>
+Key list:
+</P>
+<P>
+<UL>
+<LI><B>T</B> - toggles arrow keys between rotating and moving the model.</LI>
+<LI><B>W</B> - toggles wireframe mode</LI>
+<LI><B>S</B> - saves the damage script to "DamageShip.py"</LI>
+<LI><B>Escape, Alt-F4, Q</B> - quits</LI>
+</UL>
+</P>
+<P>
+When you are done damaging a ship, save the damage. You will have a script named "DamageShip.py", which you can then place in your mission directory (renamed, most likely). After you create the ship, import the script, and call DamageShip.AddDamage(pShip), where pShip is the ship you created. The ship will then be damaged like it was in the tool.
+</P>
+<P>
+<B>Usage tips:</B> every time you add damage, you add polys to the model. It's best to try and achieve the effect you desire with as few damage spheres as possible, so don't just click like crazy to damage a model. Use wireframe mode to see how many polys are being added.
+</P>
+
+<HR>
+<P><SMALL>Created on ... February 01, 2002</SMALL></P>
+</BODY>
+</HTML>

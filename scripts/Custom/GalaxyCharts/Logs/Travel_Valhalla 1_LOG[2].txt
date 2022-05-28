@@ -1,0 +1,43 @@
+#This is the dump of the LogCreator: <Valhalla 1 Travel Logger[2] LogCreator_4ntP62TsR22s>
+#This log file was created on: 18:50:0.351 of 24/April/2017, Monday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>18:50:0.351 of 24/April/2017, Monday
+#>>>Initialized Valhalla 1 Travel logger
+#>>>SELF = <Valhalla 1(215001) Travel_e866N3X16yH8>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>18:50:35.899 of 24/April/2017, Monday
+#>>> -Tried to set to a non-existant travel type: None
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at Update (Chaser)
+Traceback of Error: TypeError: call of non-function (type None)
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 2306, in the function "Update".
+Script: ".\Scripts\Custom\GalaxyCharts\HelmAddonGUI.py", Line 93, in the function "CreateTravelTypeButtons".
+Script: ".\Scripts\Custom\GalaxyCharts\HelmAddonGUI.py", Line 118, in the function "UpdateTravelType".
+Script: ".\Scripts\Custom\GalaxyCharts\HelmAddonGUI.py", Line 299, in the function "UpdateEmergencyOutButton".
+Script: ".\Scripts\Custom\GalaxyCharts\HelmAddonGUI.py", Line 245, in the function "CanEmergencyTravelOut".
+Script: ".\Scripts\Custom\GalaxyCharts\HelmAddonGUI.py", Line 288, in the function "CheckBasicPlayerCanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+########################################
+# 18:51:38.805 of 24/April/2017, Monday
+#Ending of log dump - User is quiting the game
+########################################

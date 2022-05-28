@@ -1,0 +1,66 @@
+#This is the dump of the LogCreator: <Battlecrab 56 Travel Logger LogCreator_7soy6U49stCQ>
+#This log file was created on: 1:26:5.330 of 18/March/2017, Saturday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>1:26:5.330 of 18/March/2017, Saturday
+#>>>Initialized Battlecrab 56 Travel logger
+#>>>SELF = <Battlecrab 56(2422958) Travel_ixffNIp8582S>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>1:26:18.984 of 18/March/2017, Saturday
+#>>>Updated Target Ship = whitestar 37
+## -------------------- ##
+####################
+#######>>>1:26:26.950 of 18/March/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>1:26:31.494 of 18/March/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>1:26:34.827 of 18/March/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>1:26:38.806 of 18/March/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>1:27:2.174 of 18/March/2017, Saturday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 1:56:32.319 of 18/March/2017, Saturday
+#Ending of log dump - User is quiting the game
+########################################

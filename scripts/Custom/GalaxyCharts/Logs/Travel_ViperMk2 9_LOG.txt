@@ -1,0 +1,62 @@
+#This is the dump of the LogCreator: <ViperMk2 9 Travel Logger LogCreator_mWUgvt52qyIR>
+#This log file was created on: 20:3:37.106 of 21/February/2017, Tuesday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>20:3:37.106 of 21/February/2017, Tuesday
+#>>>Initialized ViperMk2 9 Travel logger
+#>>>SELF = <ViperMk2 9(572255) Travel_RssAM5M9a6Gw>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>20:4:6.384 of 21/February/2017, Tuesday
+#>>>Updated Target Ship = CylonBasestar 24
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>20:4:9.133 of 21/February/2017, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>20:4:10.081 of 21/February/2017, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>20:4:10.401 of 21/February/2017, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>20:4:10.835 of 21/February/2017, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>20:4:12.106 of 21/February/2017, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>20:4:12.473 of 21/February/2017, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>20:5:11.401 of 21/February/2017, Tuesday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

@@ -1,0 +1,81 @@
+#This is the dump of the LogCreator: <SuperHiveShip 4 Travel Logger LogCreator_85TMUKW59aZt>
+#This log file was created on: 19:52:21.927 of 9/October/2019, Wednesday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>19:52:21.927 of 9/October/2019, Wednesday
+#>>>Initialized SuperHiveShip 4 Travel logger
+#>>>SELF = <SuperHiveShip 4(1394994) Travel_r4r7BX2Mi4X5>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>19:52:28.071 of 9/October/2019, Wednesday
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>19:52:39.285 of 9/October/2019, Wednesday
+#>>>Updated Target Ship = USS Orville-4
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>19:52:39.860 of 9/October/2019, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>19:52:40.441 of 9/October/2019, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>19:52:40.944 of 9/October/2019, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>19:52:41.604 of 9/October/2019, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>19:52:42.768 of 9/October/2019, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>19:52:43.387 of 9/October/2019, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>19:52:44.241 of 9/October/2019, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>19:52:44.856 of 9/October/2019, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>19:52:45.416 of 9/October/2019, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>19:52:46.041 of 9/October/2019, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>19:53:37.668 of 9/October/2019, Wednesday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

@@ -1,0 +1,28 @@
+#This is the dump of the LogCreator: <Nebulon B Frigate-10 Travel Logger LogCreator_Q5abOaHBRGSh>
+#This log file was created on: 17:24:46.791 of 22/June/2017, Thursday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>17:24:46.791 of 22/June/2017, Thursday
+#>>>Initialized Nebulon B Frigate-10 Travel logger
+#>>>SELF = <Nebulon B Frigate-10(2589485) Travel_FEkhf0S2F7NK>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Imperial Super Star Destroyer-1
+## -------------------- ##
+####################
+#######>>>17:25:14.293 of 22/June/2017, Thursday
+#>>>Updated Target Ship = Victory-4

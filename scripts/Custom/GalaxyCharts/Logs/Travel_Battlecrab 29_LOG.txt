@@ -1,0 +1,55 @@
+#This is the dump of the LogCreator: <Battlecrab 29 Travel Logger LogCreator_DjpKU7y39X8s>
+#This log file was created on: 17:2:43.565 of 9/April/2017, Sunday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>17:2:43.565 of 9/April/2017, Sunday
+#>>>Initialized Battlecrab 29 Travel logger
+#>>>SELF = <Battlecrab 29(1638275) Travel_5A1Mn1cBl2PI>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: Player Travel Destination OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>17:2:57.598 of 9/April/2017, Sunday
+#>>>Updated Target Ship = whitestar 27
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>17:3:1.947 of 9/April/2017, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>17:3:16.050 of 9/April/2017, Sunday
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>17:3:42.967 of 9/April/2017, Sunday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 17:28:0.014 of 9/April/2017, Sunday
+#Ending of log dump - User is quiting the game
+########################################

@@ -1,0 +1,466 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=windows-1252">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice.org 1.0  (Win32)">
+	<META NAME="AUTHOR" CONTENT="Daniel Houghton">
+	<META NAME="CREATED" CONTENT="20020525;7142522">
+	<META NAME="CHANGEDBY" CONTENT="Daniel Houghton">
+	<META NAME="CHANGED" CONTENT="20020525;9413960">
+</HEAD>
+<BODY LANG="en-US">
+<P ALIGN=CENTER STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><FONT SIZE=4 STYLE="font-size: 15pt"><B>Foundation
+plugin system for Bridge Commander</B></FONT></FONT></P>
+<P ALIGN=CENTER STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><FONT SIZE=2 STYLE="font-size: 9pt">Released
+May 25, 2002</FONT></FONT></P>
+<P ALIGN=CENTER STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><FONT SIZE=2 STYLE="font-size: 9pt">Written
+by Daniel B. Houghton (aka Dasher42), 2002. All rights reserved.</FONT></FONT></P>
+<HR>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif">By
+default, Bridge Commander allows a great deal of moddability, but
+adding new ships requires users to download the SDK and edit the .py
+files. This is a tedious process, and it is unfeasible to distribute,
+say, an edited QuickBattle.py for every ship out there if you want
+multiple mods on a single installation.</FONT></P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif">This is
+a system to allow easy integration of mods into Bridge Commander. It
+replaces the static indexes of Bridge Commander with dynamic
+structures, thus providing the means for ship modders to easily
+distribute their ships without overwriting any of the end user's
+files.</FONT></P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif">Specifically,
+the Foundation currently allows the following types of mods:</FONT></P>
+<UL>
+	<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif">Ships</FONT></P>
+	<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif">Systems</FONT></P>
+	<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif">Sounds</FONT></P>
+	<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif">Overrides
+	&ndash; A special Foundation concept, this allows you to replace an
+	object or module inside the Python interpreter with another without
+	having to overwrite any of the game's .py/.pyc files! An example is
+	the intercept or planet-orbiting AI; this can now be replaced
+	without overwriting stock files.</FONT></P>
+	<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif">Mutators
+	&ndash; Another special Foundation concept; it contains any number
+	of the above mods within itself and allows the (de)activation of its
+	contents from a new section of the game configure screen.</FONT></P>
+</UL>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<HR>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><FONT SIZE=4><B>FOUNDATION
+INSTALLATION</B></FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif">To
+install this, simply copy the files into the Bridge Commander
+installation - or a second copy of it, which I do *strongly*
+recommend. This can be done with a simple copy of the Bridge
+Commander folder. If you mess up, just rename your suspect scripts
+folder and copy the scripts folder from your original BC installation
+in!</FONT></P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif">This
+package is <I>still </I>beta, and has not been thoroughly tested for
+compatibility with single player and multiplayer game modes.</FONT></P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif">As a
+result, you should have:</FONT></P>
+<P STYLE="margin-bottom: 0cm"><FONT SIZE=2><FONT FACE="Courier New, monospace">(Bridge
+Commander Folder)\Foundation_Readme.html<BR>(Bridge Commander
+Folder)\scripts\Foundation.py<BR>(Bridge Commander
+Folder)\scripts\FoundationMenu.py<BR>(Bridge Commander
+Folder)\scripts\loadspacehelper.py</FONT></FONT><BR><FONT SIZE=2><FONT FACE="Courier New, monospace">(Bridge
+Commander Folder)\scripts\LoadTacticalSounds.py<BR>(Bridge Commander
+Folder)\scripts\Registry.py<BR>(Bridge Commander
+Folder)\scripts\StaticDefs.py<BR>(Bridge Commander
+Folder)\scripts\AI\Compound\BasicAttack.py<BR>(Bridge Commander
+Folder)\scripts\Custom\__init__.py<BR>(Bridge Commander
+Folder)\scripts\Custom\Autoload\__init__.py<BR>(Bridge Commander
+Folder)\scripts\Custom\Ships\__init__.py<BR>(Bridge Commander
+Folder)\scripts\Custom\Ships\Example.py<BR>(Bridge Commander
+Folder)\scripts\Icons\ShipIcons.py<BR>(Bridge Commander
+Folder)\scripts\MainMenu\mainmenu.py<BR>(Bridge Commander
+Folder)\scripts\Plugins\__init__.py<BR>(Bridge Commander
+Folder)\scripts\Plugins\Custom\__init__.py<BR>(Bridge Commander
+Folder)\scripts\Plugins\Custom\Custom.py<BR>(Bridge Commander
+Folder)\scripts\QuickBattle\QuickBattle.py<BR>(Bridge Commander
+Folder)\scripts\Systems\FoundationUtils.py<BR>(Bridge Commander
+Folder)\scripts\Tactical\Interface\ShieldsDisplay.py<BR>(Bridge
+Commander Folder)\scripts\Tactical\Interface\WeaponsDisplay.py</FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif">...where
+(Bridge Commander Folder) is wherever the new copy of Bridge
+Commander is located. To help ensure that the installation is
+completed successfully, .pyc versions of the above .py files will be
+provided as well.</FONT></P>
+<HR>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><FONT SIZE=4><B>USAGE</B></FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><B>Installing
+a mod</B></FONT></P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif">Installing
+a properly-packaged mod into a Foundation-enabled Bridge Commander
+installation is a simple matter of copying it in, subfolders and all.
+</FONT>
+</P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif">If the
+mod in question is an older-style mod that has a plugin file in
+scripts\Plugins, simply move that file to scripts\Custom\Autoload.</FONT></P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif">A
+&ldquo;properly-packaged&rdquo; mod will not overwrite pre-existing
+.py or .pyc files. Mods that overwrite your existing .py or .pyc
+files when first installed may well cause problems with your
+installation. If you're not sure that a mod is properly packaged,
+unzip it separately and copy it over top of your BC/Foundation
+installation, but refuse to overwrite files when prompted.</FONT></P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif">Some
+mods, usually those that are not a simple ship or sound, need to be
+activated from the game's configuration panel. When in the game you
+will want to go to the Configure -&gt; Mutators section and enable
+them.</FONT></P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><B>Packaging
+a ship</B></FONT></P>
+<P STYLE="margin-bottom: 0cm; font-weight: medium"><FONT FACE="Arial, sans-serif">Got
+a ship you want to make plugin-ready? Here is a step-by-step guide to
+making a ship compliant with Foundation. When done you will have
+something that you can distribute and that the end user can integrate
+by simply copying it in.</FONT></P>
+<OL>
+	<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif">Export
+	the models. You should have the following:<BR><BR><I>The model and
+	textures:</I><BR><BR>data\Models\Ships\NewShip\<BR>data\Models\Ships\NewShip\NewShip.NIF
+	(optionally NewShipMed.NIF and NewShipLow.NIF
+	too)<BR>data\Models\Ships\NewShip\High\(textures as
+	.TGA's)<BR>data\Models\Ships\NewShip\Medium\(textures as
+	.TGA's)<BR>data\Models\Ships\NewShip\Low\(textures as .TGA's)<BR><BR><I>The
+	ship definition and
+	hardpoints:</I><BR><BR>scripts\Ships\NewShip.py<BR>scripts\Ships\Hardpoints\newship.py</FONT></P>
+	<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif">Scripts\Ships\NewShip.py
+	must have a properly set up GetShipStats() section for the ship to
+	work. Some of these parameters are case- sensitive; be careful!<BR><BR>def
+	GetShipStats():</FONT></P>
+	<TABLE WIDTH=886 BORDER=0 CELLPADDING=0 CELLSPACING=0>
+		<COL WIDTH=127>
+		<COL WIDTH=759>
+		<TR VALIGN=TOP>
+			<TD WIDTH=127>
+				<P><FONT FACE="Arial, sans-serif">KShipStats = {</FONT></P>
+			</TD>
+			<TH WIDTH=759>
+				<P><BR>
+				</P>
+			</TH>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=127></TD>
+			<TD WIDTH=759>
+				<OL START=3>
+					<P><FONT FACE="Arial, sans-serif">&quot;FilenameHigh&quot;:
+					&quot;data/Models/Ships/NewShip/NewShip.nif&quot;,<BR>&quot;FilenameMed&quot;:
+					&quot;data/Models/Ships/NewShip/NewShipMed.nif&quot;,<BR>&quot;FilenameLow&quot;:
+					&quot;data/Models/Ships/NewShip/NewShipLow.nif&quot;,<BR>&quot;Name&quot;:
+					&quot;NewShip&quot;, # &lt;- These are<BR>&quot;HardpointFile&quot;:
+					&quot;newship&quot;, # &lt;- important!<BR>&quot;Species&quot;:
+					<A HREF="http://Multiplayer.SpeciesToShip.VORCHA/">Multiplayer.SpeciesToShip.VORCHA</A></FONT></P>
+				</OL>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=127>
+				<P>}<BR><FONT FACE="Arial, sans-serif">return kShipStats</FONT></P>
+			</TD>
+			<TD WIDTH=759></TD>
+		</TR>
+	</TABLE>
+	<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif">You
+	must make a scripts\Custom\Ships\NewShip.py file. The simplest way
+	to do this is to copy the Example.py file in that folder to
+	NewShip.py and edit it by replacing &ldquo;Example&rdquo; with the
+	name of your ship. More editing may be required; read the file's
+	comments for details. It is important that it refer to the name of
+	the scripts\Ships\NewShip.py file, and it is case- sensitive. </FONT>
+	</P>
+	<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif">Got
+	an icon? A 128x128 .TGA of your ship? Put it in data\Icons\Ships. If
+	its name is different from that of the ship, the Example.py file
+	will show you how to use it.</FONT></P>
+</OL>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif">That's
+it!</FONT></P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><B>Packaging
+a sound effect</B></FONT></P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif">You may
+include statements to load sound effects ship plugin files or indeed
+any file you load along with the ship. You can even use it to make
+drop-in replacements for sound effects without replacing the stock
+sounds. You need only include a line like the following:</FONT></P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif">Foundation.SoundDef(&quot;sfx/Weapons/Klingon
+Torp.wav&quot;, &quot;Klingon Plasma Torpedo&quot;, 1.0)</FONT></P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif">The
+first argument in double quotes specifies the file, the second gives
+you a name to refer to this sound by from inside the ship's
+hardpoints, and the third is a volume adjuster, 1.0 being the normal
+level.</FONT></P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><B>Packaging
+a system</B></FONT></P>
+<P STYLE="margin-bottom: 0cm; font-weight: medium"><FONT FACE="Arial, sans-serif">Adding
+a new system is relatively easy. You need only make a .py file in
+scripts\Custom\Autoload named after the system you're adding. Its
+contents should look like this:</FONT></P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Courier New, monospace"><FONT SIZE=2>import
+Foundation<BR><BR>Foundation.SystemDef('New System', 3)</FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif">This
+will set things up for a new system with three planets. Systems
+without planets can get by with 0 planets; systems like Vesuvi which
+have missing inner planets get defined in this manner:</FONT></P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Courier New, monospace"><FONT SIZE=2>import
+Foundation<BR><BR>Foundation.SystemDef('New System', 5, 2)</FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif">This
+will create a system with the inner two planets missing.</FONT></P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><B>Packaging
+a TGL</B></FONT></P>
+<P STYLE="margin-bottom: 0cm; font-weight: medium"><FONT FACE="Arial, sans-serif">This
+is fairly simple. Look at the following example:</FONT></P>
+<P STYLE="margin-bottom: 0cm; font-weight: medium"><FONT FACE="Courier New, monospace"><FONT SIZE=2>Foundation.TGLDef('FTB
+Ships', 'data/TGL/FTBShips.TGL')</FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm; font-weight: medium"><FONT FACE="Arial, sans-serif">The
+first argument is a simple name for the TGL, the second is the
+path/filename to be used. See QuickBattle.py if you want to see how
+this is being loaded/unloaded.</FONT></P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><B>Packaging
+an Override</B></FONT></P>
+<P STYLE="margin-bottom: 0cm; font-weight: medium"><FONT FACE="Arial, sans-serif">This
+procedure is not for the novice, but it does allow the intermediate
+to advanced Bridge Commander modder a way to replace the game's code
+without overwriting it. While it may not always work with some setups
+of GUI events, cases where an object or module is all that need be
+replaced should be doable. This is a bleeding-edge feature that
+requires some knowledge of Python to know how to package the
+replacements properly. However, getting the Foundation to play its
+part is simple, as seen in this example from the author's Intercept
+AI plugin:</FONT></P>
+<P STYLE="margin-bottom: 0cm; font-weight: medium"><FONT FACE="Courier New, monospace"><FONT SIZE=2>import
+Foundation</FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm"><FONT SIZE=2><FONT FACE="Courier New, monospace">Foundation.OverrideDef('Intercept_Dasher',
+'AI.PlainAI.Intercept.Intercept',
+'<A HREF="http://AI.PlainAI.Intercept/">AI.PlainAI.Intercept</A>_Dasher.Intercept_Dasher'
+} )</FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm; font-weight: medium"><FONT FACE="Arial, sans-serif"><FONT SIZE=3>The
+override is actually activated by calling the override's Activate()
+function, i.e. interceptoverride.Activate(), and deactivated by &ndash;
+you guessed it &ndash; Deactivate(), which puts the overriden Python
+object back in place.</FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><FONT SIZE=3><B>Packaging
+a Mutator</B></FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm; font-weight: medium"><FONT FACE="Arial, sans-serif">This
+procedure is not for the novice either! Any SoundDef, ShipDef,
+SystemDef, or OverrideDef can have, as a final argument to its
+constructor, a dictionary as an argument, which is surprisingly
+enough named &ldquo;dict&rdquo;. Here's a version of the example of
+an Override that packages two Overrides inside a single Mutator.</FONT></P>
+<P STYLE="margin-bottom: 0cm; font-weight: medium"><FONT FACE="Courier New, monospace"><FONT SIZE=2>import
+Foundation</FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm; font-weight: medium"><FONT FACE="Courier New, monospace"><FONT SIZE=2>mode
+= Foundation.MutatorDef('Acceleration Intercept')</FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm; font-weight: medium"><FONT FACE="Courier New, monospace"><FONT SIZE=2>Foundation.OverrideDef.Intercept_Dasher
+= Foundation.OverrideDef('Intercept_Dasher',
+'AI.PlainAI.Intercept.Intercept',
+'AI.PlainAI.Intercept_Dasher.Intercept_Dasher', dict = { 'modes': [
+mode ] } )<BR>Foundation.OverrideDef.Orbit_Dasher =
+Foundation.OverrideDef('Orbit_Dasher',
+'AI.Player.OrbitPlanet.CreateAI',
+'AI.Player.OrbitPlanet_Dasher.CreateAI', dict = { 'modes': [ mode ] }
+)</FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm; font-weight: medium"><FONT FACE="Arial, sans-serif">Note
+that mutators are loaded in the order that they are defined inside
+the Python interpreter. If you want detailed control of what mutator
+takes precedence over another, I recommend the use of Nanobyte's Mod
+Packager, version 3.0 or higher.<BR>Currently, the Foundation's
+version of QuickBattle builds a temporary mutator that copies all
+active mutators into a single object to provide a &ldquo;master
+control&rdquo;. See QuickBattle.py for details on the useage of
+Foundation.BuildGameMode().</FONT></P>
+<P STYLE="margin-bottom: 0cm; font-weight: medium"><FONT FACE="Arial, sans-serif">It
+is good form to call a Mutator's Activate() method when initializing
+a game that uses it and the Deactivate() method when the game is
+being terminated. This essentially calls the related methods of all
+contained overrides.</FONT></P>
+<HR>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><FONT SIZE=4><B>PREVIOUS
+CHANGES</B></FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif">March
+31, 2002 release:</FONT></P>
+<OL>
+	<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif">A
+	number of new features have been added:</FONT></P>
+	<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif">A
+	ship may be added to the game without a file in the scripts\Plugins
+	folder. Thanks to a snippet from Banbury which I have adapted and
+	incorporated, you only need the conventional file in scripts\Ships
+	and its related hardpoint file for the ship to appear in the &quot;Other
+	Ships&quot; QuickBattle menus.</FONT></P>
+	<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif">The
+	structure of the scripts\Plugins folder has changed;
+	scripts\Plugins\Custom will be used for future versions of
+	Nanobyte's GUI tool and use Custom.py as a direct counterpart of the
+	old Plugins.py. Other plugin files can be copied into
+	scripts\Plugins where they will be loaded automatically. Regular
+	plugins cannot override Custom plugins.</FONT></P>
+	<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif">By
+	default, ships now use ASCII strings for the QuickBattle menu
+	buttons. See the above instructions. This is meant to provide an
+	acceptable minimum level of functionality; TGL support is
+	encouraged! It will help the non-English-speaking users.</FONT></P>
+	<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif">Sounds
+	can now be incorporated via plugins!</FONT></P>
+</OL>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif">March
+20, 2002 release 2:</FONT></P>
+<OL>
+	<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif">The
+	format for the plugins has changed. I didn't want to do this, but
+	the change that's been made is the kind that means that we won't
+	have to do this again. The new format is much more flexible and
+	forward-compatible. It's best to get this over and done with at this
+	early stage.</FONT></P>
+	<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif">This
+	mod's name has changed to better suit its idiom. &quot;Dynamic
+	Tables&quot; was rather awkward, and hey, a better name always helps
+	my propaganda efforts. ;)</FONT></P>
+	<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif">Finally,
+	a bug has been fixed associated with some ships being set as the
+	player's ship when their ships\Script\ship.py filename didn't match
+	their abbreviation.</FONT></P>
+</OL>
+<HR>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><FONT SIZE=4><B>TROUBLESHOOTING</B></FONT></FONT></P>
+<OL>
+	<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif">Did
+	you install this mod and then see Bridge Commander stop working?
+	Walk through the following steps:</FONT></P>
+	<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif">Is
+	this about the '???' buttons? They still work. See the Bridge
+	Commander SDK's documentation about TGL files. If this is your only
+	problem, relax. We're working on it. ;)</FONT></P>
+	<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif">Did
+	you unpack this into your copy of the Bridge Commander directory? If
+	so, this file you're reading should appear there, above \data,
+	\scripts, \Screen Shots, everything.</FONT></P>
+	<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif">Did
+	you have any mods already installed that could be conflicting? Try
+	renaming your scripts folder and copying in the scripts folder from
+	under the Setup folder on your Bridge Commander CD, and then
+	installing a fresh copy of the Foundation over top.</FONT></P>
+	<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif">Did
+	you install a plugin and then see the game stop working? Try putting
+	# signs in front of its import statement in
+	\scripts\Plugins\Custom\Custom.py, or moving the .py and .pyc files
+	out of \scripts\Plugins.</FONT></P>
+	<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif">Did
+	it work? Maybe an import statement is incorrect. Double-check to be
+	sure; these things are case-sensitive and must match the .py file's
+	name. Also, make sure you have no leading spaces; a line that reads
+	&quot; import NewShip.py&quot; is trouble! See step 8.</FONT></P>
+	<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif">If
+	the plugin still doesn't work, it or Foundation itself could have an
+	error, or maybe there's a conflict of some kind. Getting work from
+	separate sources to cooperate nicely on a single install isn't as
+	simple as it sounds.</FONT></P>
+	<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif">Make
+	sure there are no .PY files in your Bridge Commander folder that
+	correspond to the ones included herein. They could be compiled to
+	.PYCs and break this mod. QuickBattles.py, loadspacehelper.py,
+	ShipIcons.py, ShieldDisplay.py, and WeaponsDisplay.py would be
+	obvious offenders.</FONT></P>
+	<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif">Get
+	the latest release version of this mod from
+	<A HREF="http://www.beldar.com/~dasher/Foundation-current.zip">www.beldar.com/~dasher/Foundation-current.zip</A>
+	- you might get the fix you so crave.</FONT></P>
+	<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif">Did
+	you install another mod after this one that overwrote Foundation?
+	Regrettably, all other existing QuickBattle mods are incompatible
+	with this one as of now. Work will go forward to make them into
+	plugins as well. If you want this mod and them, make another fresh
+	copy of Bridge Commander or just get your hands dirty.</FONT></P>
+	<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif">Failing
+	all this, append &quot; -TestMode&quot; to your Bridge Commander
+	icon's target field, hit the back apostrophe in-game when it starts
+	to have trouble, and press enter. Tell the experts what happened.</FONT></P>
+</OL>
+<HR>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><FONT SIZE=4><B>NOTE
+TO DEVELOPERS</B></FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><B><I>Goals
+and proper usage: </I></B>This plugin project is meant to expand
+beyond ships into an easy &quot;glue layer&quot; for Bridge Commander
+mods, providing a simple installation process and an easy way to
+activate or deactivate mods. As such, please do not distribute
+modified versions of the existing .PY and .PYC files in this mod
+indiscriminately, as you could break compatibility with other mods
+that people *will* try to install and future versions of the
+Foundation. Until a better installation framework is available, the
+recommended way to distribute the Foundation with your mod is to
+include it in a nested ZIP file where the user has the option to
+install it or not. You should be able to do this without requiring
+any files to be overwritten.</FONT></P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><B><I>MenuBuilders
+&ndash; the other feature:</I></B> Contained within
+scripts\FoundationMenu are classes that will let you easily create
+menus of Foundation-loaded ships and systems. They are the
+ShipMenuBuilderDef and SystemMenuBuilderDef, and they may be loaded
+as follows:</FONT></P>
+<P STYLE="margin-bottom: 0cm; font-style: normal; font-weight: medium">
+<FONT FACE="Courier New, monospace"><FONT SIZE=2>systemMenu =
+Foundation.SystemMenuBuilderDef(tglDatabase)</FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif">The
+tglDatabase parameter is a table usually loaded through a
+pMission.SetDatabase() call. See the included QuickBattle.py &ndash;
+if you're going to try this, I assume you understand the Python
+script! ;)</FONT></P>
+<HR>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><FONT SIZE=4><B>(the
+sadly necessary) LEGALESE AND DISCLAIMER:</B></FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif">This
+software is provided as-is, and the author (Daniel B. Houghton) makes
+no guarantee of the performance of this software, its security,
+compatibility, safety, or usefulness, and cannot be held liable for
+any consequence of this software's use.</FONT></P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif">Permission
+is given to modify or distribute the acommpanying files as a
+component of Bridge Commander under the terms of the Activision SDK
+license with the following provisions:</FONT></P>
+<OL>
+	<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif">This
+	readme file and shall be included in any distribution, and credit
+	given in any work which incorporates this package's files,</FONT></P>
+	<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif">Any
+	changes to the .PY files included in this distribution that do not
+	incorporate Activision material (Registry.py as of this writing)
+	shall be included as source code per the terms of the Lesser GNU
+	Public License (LGPL), where this does not violate the terms of the
+	Activision SDK license. Other files shall be construed as New Game
+	Materials per the Activision SDK agreement.</FONT></P>
+</OL>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif">All
+rights are reserved by the author.</FONT></P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif">In
+short, use it, hack it, if you distribute changes to it make them
+open and give the following people credit:</FONT></P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif">Daniel
+Houghton AKA Dasher42,</FONT></P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif">Evan
+Light AKA Sleight42,</FONT></P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif">Banbury,
+who contributed code snippets that were adapted into this release of
+the Foundation.</FONT></P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif">Special
+thanks also go out to Nanobyte and DigitalFiend whose work is making
+the Foundation more accessible for the end users.</FONT></P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif">That's
+all, have fun!</FONT></P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+</BODY>
+</HTML>

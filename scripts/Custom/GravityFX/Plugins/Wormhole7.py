@@ -1,0 +1,1 @@
+PluginType = "NotToBeAffected"

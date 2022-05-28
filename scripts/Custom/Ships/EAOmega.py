@@ -1,0 +1,63 @@
+#######################################################################################
+#  Custom Ship Plugin                                                                 #
+#  Created by BC - Mod Packager                                                       #
+#  Date: 16/04/2005                                                                    #
+#######################################################################################
+#                                                                                     #
+import Foundation
+import App
+#                                                                                     #
+#######################################################################################
+#                                                                                     #
+abbrev = 'EAOmega'
+iconName = 'EAOmega'
+longName = 'Omega Class'
+shipFile = 'EAOmega' 
+menuGroup = 'Babylon 5'
+playerMenuGroup = 'Babylon 5'
+species = App.SPECIES_GALAXY
+SubMenu = "Earth Alliance"
+#                                                                                     #
+#######################################################################################
+#                                                                                     #
+# Mod Info.  Use this as an opportunity to describe your work in brief.  This may     #
+# have use later on for updates and such.                                             #
+#                                                                                     #
+credits = {
+	'modName': 'EAOmega',
+	'author': 'Madjohn',
+	'version': '0.1beta',
+	'sources': [ 'http://' ],
+	'comments': ''
+}
+#                                                                                     #
+#######################################################################################
+#                                                                                     #
+# This is the ShipDef that adds the Ship to the game... BC-Mod Packager has           #
+# automatically generated the proper ShipDef Line for you.                            #
+#                                                                                     #
+Foundation.ShipDef.EAOmega = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
+#                                                                                     #
+#######################################################################################
+#                                                                                     #
+# Uncomment these if you have TGL                                                     #
+#                                                                                     #
+# Foundation.ShipDef.EAOmega.hasTGLName = 1
+# Foundation.ShipDef.EAOmega.hasTGLDesc = 1
+#                                                                                     #
+# Otherwise, uncomment this and type something in:                                    #
+#                                                                                     #
+Foundation.ShipDef.EAOmega.desc = 'The Omega class destroyer was an Earth Alliance warship, manufactured by Rocketdyne at the Neue Hanse Orbital Shipyard in Earth orbit. Following the Earth-Minbari War, it became the most powerful and ubiquitous capital ship of the Earthforce fleet and one of the strongest ships ever built of the younger races. A continuation of many of the design elements from the Nova-class dreadnought, the Omega possessed a large rotating section, allowing the crew to operate in gravity, eliminating the constant need for handholds and straps that often hindered the older zero gravity warships. Ships of the Omega class were equipped with a DX-419 tracking system, supposedly an improvement over the standard XB7 units used during the war, though several officers have noted that they never worked right. By 2261 the system had at least begun to be upgraded. During the Earth-Minbari War, Earth did not have any ships that could lock onto Minbari vessels, due to the stealth technology the Minbari possessed. However, Earth ships still had the firepower to damage Minbari cruisers. The Omega Class Destroyer was the first Earth ship capable of locking onto a Minbari ship. Another lesson learned from the Earth-Minbari War was that the solid beam weapons used by the Minbari had proven to be deadly effective. Taking this lesson in hand, the Omega´s cannons could fire both in pulse mode and in solid beam, allowing for more precise and accurate fire.'
+#                                                                                     #
+#######################################################################################
+#                                                                                     #
+# These register the ship with the QuickBattle menus.  Don't touch them!!!            #
+#                                                                                     #
+if menuGroup:           Foundation.ShipDef.EAOmega.RegisterQBShipMenu(menuGroup)
+if playerMenuGroup:     Foundation.ShipDef.EAOmega.RegisterQBPlayerShipMenu(playerMenuGroup)
+
+if Foundation.shipList._keyList.has_key(longName):
+     Foundation.ShipDef.__dict__[longName].friendlyDetails[2] = Foundation.shipList[longName].friendlyDetails[2]
+     Foundation.ShipDef.__dict__[longName].enemyDetails[2] = Foundation.shipList[longName].enemyDetails[2]
+#                                                                                     #
+#######################################################################################

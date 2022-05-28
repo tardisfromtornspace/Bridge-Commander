@@ -1,0 +1,51 @@
+#This is the dump of the LogCreator: <X-Wing-6 Travel Logger[2] LogCreator_58jS52vATgRt>
+#This log file was created on: 16:2:27.520 of 28/May/2017, Sunday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>16:2:27.520 of 28/May/2017, Sunday
+#>>>Initialized X-Wing-6 Travel logger
+#>>>SELF = <X-Wing-6(555951) Travel_Bjf2097F5zpL>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>16:2:31.777 of 28/May/2017, Sunday
+#>>>Updated Target Ship = Omega Class-1
+## -------------------- ##
+####################
+#######>>>16:2:42.380 of 28/May/2017, Sunday
+#>>>Updated Target Ship = Starfury SA-23E-5
+## -------------------- ##
+####################
+#######>>>16:3:0.197 of 28/May/2017, Sunday
+#>>>Updated Target Ship = Starfury SA-23E-2
+## -------------------- ##
+####################
+#######>>>16:3:12.591 of 28/May/2017, Sunday
+#>>>Updated Target Ship = Starfury SA-23E-5
+## -------------------- ##
+####################
+#######>>>16:3:24.286 of 28/May/2017, Sunday
+#>>>Updated Target Ship = Starfury SA-23E-4
+## -------------------- ##
+####################
+#######>>>16:3:39.839 of 28/May/2017, Sunday
+#>>>Updated Target Ship = Omega Class-1
+########################################
+# 16:7:15.184 of 28/May/2017, Sunday
+#Ending of log dump - User is quiting the game
+########################################

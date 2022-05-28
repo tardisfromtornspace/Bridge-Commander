@@ -1,0 +1,82 @@
+
+Title		: U.S.S Eximius
+Filename	: Eximius.zip
+Version		: 0.95 Beta (not tested in Multiplayer)
+Date		: 2/9/2001
+Author		: Don Woligroski (A.K.A. - Cleeve)
+website         : www.STARYARDS.com
+Credits		: Daniel B. Houghton (aka Dasher42) who made it possible for everyone to
+use new Bridge Commander mods with the his 'Foundation Plugin System'!
+NanoByte, who made the mod packager!
+And Fenlock, who made a better Pulse Phaser sound for the Eximius!
+
+
+
+Description of the Mod File
+---------------------------
+
+The Eximius Class:
+Well, here is a design I came up with that was inspired by several ships: The Promethius, Voyager, Steamrunner, voyager, and Sovreign classes. She also has elements from her inspiration... the Excellentia Class, another Starfleet battlecruiser design of my own that is set in the movie era.
+
+I tried to picture the future of Starfleet, post Enterprise-E... to get a direction where it's going. I'm pleased with the result.  =)
+
+The conjectural design history:
+
+This ship has but one , and that's laying smack down. She's a Battlecruiser through and through.
+
+The design is a post dominion war/Borg encounter battlecruiser that incorporates advanced weapons systems to fight those threats, including the defiant's own beloved pulse phasers!
+
+The tubes on this ship can fire both quantums and standard photorps. There are 4 in the front, and 2 in the rear (the rear torp bays are attached to the nacelles)
+The pulse phasers are right beside the forward firing torp bays. Regular phaser arrays are all about the ship in the regular places. =)
+
+- Cleeve
+
+Fixes for 0.95 Beta:
+--------------------
+
+Added 256*256 textures for Voodoo cards
+Add LOD models
+Fix damage issues
+Fix crash when destroyed issue
+Name Pulse Phaser system 'Pulse Phasers'
+Lower maneuverability to worse than BOP
+Increase pulse phaser power 10%
+Add TGL description and put under Fed category
+
+
+Requirements:
+-------------
+
+1. The 'Foundation Plugin System'(grab the nwewst version at www.STARYARDS.com)
+
+2. Enter this line into the PLUGNS.PY file:
+
+import Eximius
+
+NOTE: it's CASE SENSITIVE, and make sure to ADD NO EXTRA SPACES BEFORE OR AFTER!
+
+
+*** For a detailed explanation of installing ships into bridge commander, go check out the FAQ
+link at www.STARYARDS.com! ***
+
+
+
+Copyright and Distribution Permissions
+--------------------------------------
+THIS PATCH IS NOT MADE, DISTRIBUTED, OR SUPPORTED BY Activision
+ TM & (C) INTERPLAY & PARAMOUNT PICTURES.
+
+Copyright notices: 
+
+Star Trek, Bridge Commander, Star Trek: Deep Space Nine, Star Trek: The Next Generation,
+Star Trek: Voyager (and the various logo devices used in them) are copyright
+Paramount Pictures, as are the characters, related images, and sound from the productions. 
+
+If you use this model in any Bridge COmmander project please include this file. 
+If you make this file available at your website or anothers please include a link to
+http://starfleet.thegamers.net
+
+Please do not modify this file or the included texture with out seeking the authors opinion.
+
+COPYRIGHT DON WOLIGROSKI, 2002
+

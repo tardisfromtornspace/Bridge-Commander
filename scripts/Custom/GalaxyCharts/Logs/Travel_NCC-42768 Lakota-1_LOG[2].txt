@@ -1,0 +1,53 @@
+#This is the dump of the LogCreator: <NCC-42768 Lakota-1 Travel Logger[2] LogCreator_Od9cvq7dei1j>
+#This log file was created on: 21:1:1.993 of 17/March/2017, Friday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>21:1:1.993 of 17/March/2017, Friday
+#>>>Initialized NCC-42768 Lakota-1 Travel logger
+#>>>SELF = <NCC-42768 Lakota-1(366475) Travel_Ff21gMhiy41t>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>21:1:12.161 of 17/March/2017, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>21:1:12.653 of 17/March/2017, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>21:1:12.870 of 17/March/2017, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>21:1:13.352 of 17/March/2017, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>21:1:13.616 of 17/March/2017, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>21:1:39.064 of 17/March/2017, Friday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 21:10:37.224 of 17/March/2017, Friday
+#Ending of log dump - User is quiting the game
+########################################

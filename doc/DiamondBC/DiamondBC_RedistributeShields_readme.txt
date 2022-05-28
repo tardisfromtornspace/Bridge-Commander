@@ -1,0 +1,19 @@
+Diamond BC RedistributeShields v1
+by MLeo Daalder
+
+Diamond Bridge Commander (or DiamondBC for short) is a series of, usually, little mods that all have the common purpose to make Bridge Commander more robust, to the point of being as hard as a diamond. It is about taking away the corner cases of the Bridge Commander scripting system that when triggered, which at the very least, only provide a small warning in the console, but could have as much impact as actually crashing BC, or somewhere in between, as a black screen. And DiamondBC aims to take these problems away, or at the very least, soften the blow.
+
+RedistributeShields is one of those mods, its aim, to make BC _not_ freeze when you call RedistributeShields on a shield generator of a ship that does not have all the same maximum shields for all vectors. The mostlikely problem is that the original function goes into a while loop because it wants to equally distribute all vectors to the same level, this fails because one (or more) of the vectors either take more or less, thereby not being equal to the others and thereby it goes into an infinite loop. This script evades this behaviour by first normalizing all shield (maximum) power to the range 0 -> 1, then calling the original RedistributeShields and then denormalizing the maximum shield settings, and of course using the restored maximum the redistributed shield levels. For example, on the stock Galaxy, one of the shields has a maximum of 8000, while the rest are 4000. Calling RedistributeShields without this would result in a frozen game, with this, each shield gets his share. A scenario would help I think, say, the forward shield (8000) is completely drained, the remaining power is 20000 (5*4000), and you call RedistributeShields. The result is as follows, each shield vector, save one, gets 1/7th, because there are 6 shield vectors, but one of them is twice as strong, this twice as strong shield vector gets 2/7ths of the power. So the 5 vectors are at 2857+1/7th while the forward shield is twice at that. I guess that wasn't entirely needed, nearly everyone knows MultiVectral Shielding, and this file makes sure that you can safely add it to all your ships without the risk of freezing your game.
+
+The only requirement is the Foundation, and even then it only needs it to load itself into BC, you do not need to activate any mutators to enable this mod.
+
+To install this mod, the archive you just downloaded is entirely formatted for easy installation, just copy the scripts directory you found into your BC directory (the same place where you can find the STBC executable).
+If your archive program didn't properly handle (sub) directories/folders/maps, then the DiamondBC_RedistributeShields.py needs to be copied to scripts/Custom/Autoload/
+
+Any questions and problems should be directed to MLeoDaalder+DiamondBC _AT_ gmail _DOT_ com or through a PM on bc-central.com, if you experience a black screen or a crash after installation (meaning, a black screen or crash caused by this mod), create a thread in the Technical Support forum on bc-central.com and, if you can manage it, a console report would be nice.
+
+If you have any ideas for future DiamondBC releases, make sure you e-mail them to MLeoDaalder+DiamondBC _AT_ gmail _DOT_ com!
+
+It should be noted that this mod won't (shouldn't) cause any problems and can be safely installed even if you don't experience freezes caused by the normal RedistributeShields function. Installing this makes your BC future proof for that one instance where you (or the author of a mod) forget did install a ship that didn't list their dependancies correctly.
+
+Modders may include this two files (this readme and the script itself) in their own mods without notification (albeit it would be nice to know where it gets included), but honestly, you normalize your shield vectors when you add MultiVectral Shielding, right?

@@ -1,0 +1,27 @@
+#This is the dump of the LogCreator: <Nuke - 16 Travel Logger LogCreator_E3QXx0Il2aC4>
+#This log file was created on: 20:18:46.911 of 20/April/2017, Thursday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>20:18:46.911 of 20/April/2017, Thursday
+#>>>Initialized Nuke - 16 Travel logger
+#>>>SELF = <Nuke - 16(638987) Travel_f35FURMSAjV4>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+########################################
+# 20:19:25.789 of 20/April/2017, Thursday
+#Ending of log dump - User is quiting the game
+########################################

@@ -1,0 +1,32 @@
+#This is the dump of the LogCreator: <Card Station-1 Travel Logger LogCreator_uM0N71mFa326>
+#This log file was created on: 23:55:47.109 of 9/April/2017, Sunday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>23:55:47.109 of 9/April/2017, Sunday
+#>>>Initialized Card Station-1 Travel logger
+#>>>SELF = <Card Station-1(40324) Travel_za1133k63woc>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>23:57:2.662 of 9/April/2017, Sunday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 23:57:12.688 of 9/April/2017, Sunday
+#Ending of log dump - User is quiting the game
+########################################

@@ -1,0 +1,27 @@
+#This is the dump of the LogCreator: <Bajoran Wormhole Inner Travel Logger LogCreator_9A7CI60z016K>
+#This log file was created on: 18:9:3.333 of 15/August/2017, Tuesday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>18:9:3.333 of 15/August/2017, Tuesday
+#>>>Initialized Bajoran Wormhole Inner Travel logger
+#>>>SELF = <Bajoran Wormhole Inner(211094) Travel_TCw8V344T53v>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+########################################
+# 18:12:37.265 of 15/August/2017, Tuesday
+#Ending of log dump - User is quiting the game
+########################################

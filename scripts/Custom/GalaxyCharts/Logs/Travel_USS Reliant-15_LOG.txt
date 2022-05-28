@@ -1,0 +1,51 @@
+#This is the dump of the LogCreator: <USS Reliant-15 Travel Logger LogCreator_cZQS82XSeIk2>
+#This log file was created on: 4:4:37.362 of 29/March/2017, Wednesday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>4:4:37.362 of 29/March/2017, Wednesday
+#>>>Initialized USS Reliant-15 Travel logger
+#>>>SELF = <USS Reliant-15(621092) Travel_0kjL772lp81m>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Minbari Sharlin-1
+## -------------------- ##
+####################
+#######>>>4:5:1.887 of 29/March/2017, Wednesday
+#>>>Updated Target Ship = Minbari Sharlin-11
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>4:6:36.428 of 29/March/2017, Wednesday
+#>>>Updated Target Ship = Minbari Sharlin-9
+## -------------------- ##
+####################
+#######>>>4:8:43.172 of 29/March/2017, Wednesday
+#>>>Updated Target Ship = Player
+#>>>Updated Target Ship = NCC-2000 Excelsior-13
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>4:10:13.528 of 29/March/2017, Wednesday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

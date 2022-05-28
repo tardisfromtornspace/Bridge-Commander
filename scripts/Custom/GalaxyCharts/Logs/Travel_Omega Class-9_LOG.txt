@@ -1,0 +1,29 @@
+#This is the dump of the LogCreator: <Omega Class-9 Travel Logger LogCreator_C0G3Z0z547dJ>
+#This log file was created on: 23:51:32.653 of 9/April/2017, Sunday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>23:51:32.653 of 9/April/2017, Sunday
+#>>>Initialized Omega Class-9 Travel logger
+#>>>SELF = <Omega Class-9(111144) Travel_az477uUfA00o>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Shadow Battlecrab-1
+## -------------------- ##
+####################
+#######>>>23:52:3.876 of 9/April/2017, Sunday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

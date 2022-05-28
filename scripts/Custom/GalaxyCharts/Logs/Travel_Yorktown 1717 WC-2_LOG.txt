@@ -1,0 +1,42 @@
+#This is the dump of the LogCreator: <Yorktown 1717 WC-2 Travel Logger LogCreator_2j2z54qTnhBk>
+#This log file was created on: 13:30:34.655 of 17/March/2017, Friday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>13:30:34.655 of 17/March/2017, Friday
+#>>>Initialized Yorktown 1717 WC-2 Travel logger
+#>>>SELF = <Yorktown 1717 WC-2(132906) Travel_164XWsyhh2Pn>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>13:31:17.315 of 17/March/2017, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>13:31:19.600 of 17/March/2017, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+########################################
+# 13:33:22.167 of 17/March/2017, Friday
+#Ending of log dump - User is quiting the game
+########################################

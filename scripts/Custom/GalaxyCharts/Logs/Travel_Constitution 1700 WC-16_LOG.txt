@@ -1,0 +1,32 @@
+#This is the dump of the LogCreator: <Constitution 1700 WC-16 Travel Logger LogCreator_Dv1611Dj06fi>
+#This log file was created on: 13:30:34.655 of 17/March/2017, Friday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>13:30:34.655 of 17/March/2017, Friday
+#>>>Initialized Constitution 1700 WC-16 Travel logger
+#>>>SELF = <Constitution 1700 WC-16(139682) Travel_40lkrI29Lqn9>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Lexington 1709 WC-1
+## -------------------- ##
+####################
+#######>>>13:31:29.979 of 17/March/2017, Friday
+#>>>Updated Target Ship = Kongo 1710 WC-5
+########################################
+# 13:33:22.167 of 17/March/2017, Friday
+#Ending of log dump - User is quiting the game
+########################################

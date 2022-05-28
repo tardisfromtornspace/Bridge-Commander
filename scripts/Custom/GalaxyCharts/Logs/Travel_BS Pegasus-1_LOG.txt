@@ -1,0 +1,41 @@
+#This is the dump of the LogCreator: <BS Pegasus-1 Travel Logger LogCreator_zV8acInASZya>
+#This log file was created on: 23:45:40.423 of 9/April/2017, Sunday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>23:45:40.423 of 9/April/2017, Sunday
+#>>>Initialized BS Pegasus-1 Travel logger
+#>>>SELF = <BS Pegasus-1(172268) Travel_IXP0v2QDztdt>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>23:45:45.846 of 9/April/2017, Sunday
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>23:45:52.163 of 9/April/2017, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:45:53.540 of 9/April/2017, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+########################################
+# 23:48:16.694 of 9/April/2017, Sunday
+#Ending of log dump - User is quiting the game
+########################################

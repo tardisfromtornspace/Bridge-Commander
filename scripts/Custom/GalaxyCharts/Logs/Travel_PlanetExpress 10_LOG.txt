@@ -1,0 +1,54 @@
+#This is the dump of the LogCreator: <PlanetExpress 10 Travel Logger LogCreator_CSHRPBCrT101>
+#This log file was created on: 20:46:41.343 of 12/June/2017, Monday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>20:46:41.343 of 12/June/2017, Monday
+#>>>Initialized PlanetExpress 10 Travel logger
+#>>>SELF = <PlanetExpress 10(2534877) Travel_Y7Yf8gKD0NCw>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>20:46:43.828 of 12/June/2017, Monday
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>20:46:53.213 of 12/June/2017, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>20:46:55.054 of 12/June/2017, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>20:46:58.047 of 12/June/2017, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>20:48:6.473 of 12/June/2017, Monday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 20:48:17.696 of 12/June/2017, Monday
+#Ending of log dump - User is quiting the game
+########################################

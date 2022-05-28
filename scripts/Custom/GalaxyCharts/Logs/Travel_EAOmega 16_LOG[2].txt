@@ -1,0 +1,27 @@
+#This is the dump of the LogCreator: <EAOmega 16 Travel Logger[2] LogCreator_w53QLoP8gT17>
+#This log file was created on: 0:20:5.208 of 4/April/2017, Tuesday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>0:20:5.208 of 4/April/2017, Tuesday
+#>>>Initialized EAOmega 16 Travel logger
+#>>>SELF = <EAOmega 16(1050605) Travel_6Mae7765SuOc>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Ship is dead or dying
+#>>>Ship is dead or dying (at SetDestination)
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+########################################
+# 0:20:6.582 of 4/April/2017, Tuesday
+#Ending of log dump - User is quiting the game
+########################################

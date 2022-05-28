@@ -1,0 +1,81 @@
+#This is the dump of the LogCreator: <WraithDart - 17 Travel Logger LogCreator_XISSTto65Bz6>
+#This log file was created on: 1:53:38.749 of 20/May/2017, Saturday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>1:53:38.749 of 20/May/2017, Saturday
+#>>>Initialized WraithDart - 17 Travel logger
+#>>>SELF = <WraithDart - 17(986938) Travel_PUTEFbE8n78X>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+#>>>Beginning to chase target... better late than never...
+#>>>Setting Destination...
+#>>> -Destination: Systems.Belaruz.Belaruz4
+#>>>Travelling procedures initiated...
+#>>> -Cancelling, travel type is None
+## -------------------- ##
+####################
+#######>>>1:53:43.494 of 20/May/2017, Saturday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+#>>>Travelling procedures initiated...
+#>>> -Cancelling, travel type is None
+## -------------------- ##
+####################
+#######>>>1:53:46.930 of 20/May/2017, Saturday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+#>>>Travelling procedures initiated...
+#>>> -Cancelling, travel type is None
+## -------------------- ##
+####################
+#######>>>1:53:47.251 of 20/May/2017, Saturday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+#>>>Travelling procedures initiated...
+#>>> -Cancelling, travel type is None
+## -------------------- ##
+####################
+#######>>>1:53:47.487 of 20/May/2017, Saturday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+#>>>Travelling procedures initiated...
+#>>> -Cancelling, travel type is None
+## -------------------- ##
+####################
+#######>>>1:53:48.129 of 20/May/2017, Saturday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+#>>>Travelling procedures initiated...
+#>>> -Cancelling, travel type is None
+## -------------------- ##
+####################
+#######>>>1:53:52.163 of 20/May/2017, Saturday
+#>>>Updated Target Ship = Prometheus
+## -------------------- ##
+####################
+#######>>>1:55:21.156 of 20/May/2017, Saturday
+#>>>Updated Target Ship = F3021 - 18
+## -------------------- ##
+####################
+#######>>>1:56:12.168 of 20/May/2017, Saturday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 2:1:20.768 of 20/May/2017, Saturday
+#Ending of log dump - User is quiting the game
+########################################

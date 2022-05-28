@@ -1,0 +1,36 @@
+#This is the dump of the LogCreator: <vicstar 8 Travel Logger[2] LogCreator_uVDBn8bBluo6>
+#This log file was created on: 0:23:3.835 of 10/April/2017, Monday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>0:23:3.835 of 10/April/2017, Monday
+#>>>Initialized vicstar 8 Travel logger
+#>>>SELF = <vicstar 8(932190) Travel_4o7X122sV5OS>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>0:23:7.809 of 10/April/2017, Monday
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>0:23:22.753 of 10/April/2017, Monday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 7:1:36.75 of 10/April/2017, Monday
+#Ending of log dump - User is quiting the game
+########################################

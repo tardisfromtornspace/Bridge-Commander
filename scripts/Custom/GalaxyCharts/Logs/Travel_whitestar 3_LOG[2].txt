@@ -1,0 +1,26 @@
+#This is the dump of the LogCreator: <whitestar 3 Travel Logger[2] LogCreator_44NdH43QEID7>
+#This log file was created on: 0:41:29.893 of 10/April/2017, Monday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>0:41:29.893 of 10/April/2017, Monday
+#>>>Initialized whitestar 3 Travel logger
+#>>>SELF = <whitestar 3(383790) Travel_I06r9Ui5tnyh>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Ship is dead or dying
+#>>>Ship is dead or dying (at SetDestination)
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:41:30.981 of 10/April/2017, Monday
+#>>> -Cancelling, too close to target to warp intercept...

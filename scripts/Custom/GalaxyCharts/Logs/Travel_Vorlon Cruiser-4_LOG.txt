@@ -1,0 +1,80 @@
+#This is the dump of the LogCreator: <Vorlon Cruiser-4 Travel Logger LogCreator_MmE6kJmxgkpo>
+#This log file was created on: 22:9:36.999 of 30/November/2019, Saturday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>22:9:36.999 of 30/November/2019, Saturday
+#>>>Initialized Vorlon Cruiser-4 Travel logger
+#>>>SELF = <Vorlon Cruiser-4(372907) Travel_6VotOdDl6Pvp>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>22:9:50.099 of 30/November/2019, Saturday
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>22:9:56.180 of 30/November/2019, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:9:56.598 of 30/November/2019, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:9:57.202 of 30/November/2019, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:9:57.988 of 30/November/2019, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:9:58.518 of 30/November/2019, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:9:59.127 of 30/November/2019, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:9:59.560 of 30/November/2019, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:9:59.827 of 30/November/2019, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:10:0.908 of 30/November/2019, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:10:1.258 of 30/November/2019, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:10:30.933 of 30/November/2019, Saturday
+#>>>Updated Target Ship = Pax Magellanic-7
+## -------------------- ##
+####################
+#######>>>22:11:30.868 of 30/November/2019, Saturday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 22:38:19.331 of 30/November/2019, Saturday
+#Ending of log dump - User is quiting the game
+########################################

@@ -1,0 +1,61 @@
+#This is the dump of the LogCreator: <Basestar-3 Travel Logger LogCreator_p8ua61c3761Y>
+#This log file was created on: 0:18:52.800 of 30/June/2017, Friday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>0:18:52.800 of 30/June/2017, Friday
+#>>>Initialized Basestar-3 Travel logger
+#>>>SELF = <Basestar-3(105576) Travel_c9cuUBGx8nkA>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>0:19:3.103 of 30/June/2017, Friday
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>0:19:8.042 of 30/June/2017, Friday
+#>>>Updated Target Ship = Cloud 9-10
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:19:9.168 of 30/June/2017, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:19:9.638 of 30/June/2017, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:19:10.266 of 30/June/2017, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:19:10.839 of 30/June/2017, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:19:11.504 of 30/June/2017, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:19:25.940 of 30/June/2017, Friday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 0:57:7.353 of 30/June/2017, Friday
+#Ending of log dump - User is quiting the game
+########################################

@@ -1,0 +1,17 @@
+gVersion = '2.11'
+gSystem = [['Starbase12', 'Starbase12', ''], ['Itari', 'Itari5', '']]
+gBridge = 'Sovereign'
+gPlayer = ['Akira', 'player', 'Starbase12']
+gPlayerLoc = [0, 0, 0]
+gEnemy = [['Keldon', 'Gecko', 'Itari5', 0, '', 0.5], ['Galor', 'Brute', 'Itari5', 0, '', 0.5], ['Galor', 'Lizard', 'Itari5', 0, '', 0.5]]
+gEnemyLoc = [[650, 250, 0], [700, 2000, 50], [600, 250, 50]]
+gEnemyStarbases = [['CardStarbase', 'Bobo Nor', 'Itari5', '']]
+gEnStLoc = [[600, 250, -100]]
+gFriendly = [['Galaxy', 'Popov', 'Starbase12', 0, 'FleetAI', 0.5], ['Galaxy', 'Constipation', 'Starbase12', 0, 'FleetAI', 0.5]]
+gFriendlyLoc = [[50, 0, 0], [-50, 0, 0]]
+gFriendlyStarbases = []
+gFrStLoc = []
+gNeutral = []
+gNeutralLoc = []
+gNeutralStarbases = []
+gNeStLoc = []

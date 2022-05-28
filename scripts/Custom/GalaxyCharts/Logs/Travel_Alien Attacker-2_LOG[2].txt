@@ -1,0 +1,44 @@
+#This is the dump of the LogCreator: <Alien Attacker-2 Travel Logger[2] LogCreator_JYt44k83L3qL>
+#This log file was created on: 22:47:16.357 of 29/June/2017, Thursday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>22:47:16.357 of 29/June/2017, Thursday
+#>>>Initialized Alien Attacker-2 Travel logger
+#>>>SELF = <Alien Attacker-2(491584) Travel_M35Zq53Q5NE3>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>22:47:22.805 of 29/June/2017, Thursday
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>22:47:29.594 of 29/June/2017, Thursday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:47:32.467 of 29/June/2017, Thursday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:47:46.297 of 29/June/2017, Thursday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

@@ -1,0 +1,78 @@
+Ship:		Romulan Praetor Battlecruiser 
+Filename:	Romulan_Praetor_LD.zip
+Version:	1.0
+Date:		06/23/2002
+Author:		Lord Delekhan
+E-mail:		lorddelekhan@ldrealms.org
+WWW:		http://www.ldrealms.org/bc
+
+
+General Info
+-------------------------------------
+The Praetor is the smaller counterpart to the Warbird, it 
+is faster, more manuverable, and better armed; a pure gunship.
+I tested it vs. the stock Sovy and it was a knockdown, dragout
+fight that could have gone either way.
+
+Mod Details
+-------------------------------------
+Lods:		1
+Textures:	5
+Illumination:	yes
+Specular Maps:	no
+Hardpoints:	yes
+Extra Weapons:  yes
+Custom TGL:	yes
+
+
+Installation
+-------------------------------------
+*remember*: you must have foundation plug-in installed. download it at http://www.bcfiles.com
+and you must have the BCMP to make use of the TGL included.  It must be copied to the BCMP ShipTGLs folder,
+If you went with the default install that would be C:\Program Files\BC-Mod Packager\ShipTGLs
+
+you can unzip this zip in a temporary folder and then copy data and scripts directories in you activision/bridge commander folder,
+or unzip this zip directly into the bridge commander folder. Be sure you have it set to use paths, there are a few scripts all with
+the same name but very different. Once all the files are in place fire up BCMP and add the ship, then use the TGL tools to install 
+the description included in the TGL file.
+
+If you don't have it download the bc mod packager here:
+http://dynamic3.gamespy.com/~bridgecommander/vbforums/showthread.php?s=&threadid=1812
+
+Bugs
+-------------------------------------
+none known
+
+Credits
+-------------------------------------
+-Model Design by Lord Delekhan
+-Mesh and textures by Lord Delekhan
+-Hardpoints and scripting by Lord Delekhan
+-Weapon sounds, graphic and scripting by Lord Delekhan
+
+Copyright
+-------------------------------------
+THIS MODEL IS NOT MADE, DISTRIBUTED, OR SUPPORTED BY Activision or any of it's affiliates.
+
+STAR TREK and related elements are trademarks of Paramount Pictures, Inc.  All rights Reserved.
+Star Trek ® is a registered trademark and copyright of Paramount Pictures. Copyright © 1966 - Present. 
+Totally Games is a registered trademark of Totally Games, Inc.
+Activision is a registered trademark of Activision, Inc.
+All other trademarks and copyrights are the property of their respective holders.
+
+Distribution
+-------------------------------------
+All files in this zip are for personal use only and cannot be bought or sold. They also cannot be modified without author's permission.
+They can be uploaded in any site but credits MUST be given.
+
+Thanks
+-------------------------------------
+to Activision and Totally games for making this very cool very configurable game.
+to Nanobyte for making the entire mod release process a simple click here and there.
+
+LEGAL STUFF
+-------------------------------------
+This file is not supported or affiliated with Activision or any of it's affiliates.
+While most who have used these files have had no problems, we will not be held 
+accountable for any damage done to your computer by use of these files or techniques. 
+USE AT YOUR OWN RISK! 

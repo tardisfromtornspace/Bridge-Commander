@@ -1,0 +1,42 @@
+#This is the dump of the LogCreator: <ImperatorIII 7 Travel Logger LogCreator_PfsmYnWLiwa9>
+#This log file was created on: 19:56:26.979 of 9/October/2019, Wednesday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>19:56:26.979 of 9/October/2019, Wednesday
+#>>>Initialized ImperatorIII 7 Travel logger
+#>>>SELF = <ImperatorIII 7(1474930) Travel_4OLFDO66wugi>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>19:56:33.869 of 9/October/2019, Wednesday
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>19:56:44.813 of 9/October/2019, Wednesday
+#>>>Updated Target Ship = Assault Ship-2
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>19:58:22.022 of 9/October/2019, Wednesday
+#>>>Updated Target Ship = Victory-5
+## -------------------- ##
+####################
+#######>>>19:58:33.033 of 9/October/2019, Wednesday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

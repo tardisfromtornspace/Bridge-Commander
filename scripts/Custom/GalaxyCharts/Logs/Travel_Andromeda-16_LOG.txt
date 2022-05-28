@@ -1,0 +1,67 @@
+#This is the dump of the LogCreator: <Andromeda-16 Travel Logger LogCreator_327d27cRQj2V>
+#This log file was created on: 23:57:31.884 of 9/April/2017, Sunday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>23:57:31.884 of 9/April/2017, Sunday
+#>>>Initialized Andromeda-16 Travel logger
+#>>>SELF = <Andromeda-16(399795) Travel_TJX8gA51xuM6>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Shadow Battlecrab-1
+## -------------------- ##
+####################
+#######>>>23:57:51.076 of 9/April/2017, Sunday
+#>>>Updated Target Ship = Breen BCH-3
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:58:16.045 of 9/April/2017, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:58:21.056 of 9/April/2017, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:58:25.135 of 9/April/2017, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:58:31.509 of 9/April/2017, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:58:32.662 of 9/April/2017, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:59:5.176 of 9/April/2017, Sunday
+#>>>Updated Target Ship = Shadow Battlecrab-1
+## -------------------- ##
+####################
+#######>>>23:59:57.402 of 9/April/2017, Sunday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

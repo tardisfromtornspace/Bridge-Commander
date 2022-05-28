@@ -1,0 +1,65 @@
+#This is the dump of the LogCreator: <Starfury SA-23E-1 Travel Logger LogCreator_nBQZqYC16BzB>
+#This log file was created on: 15:51:34.928 of 28/May/2017, Sunday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>15:51:34.928 of 28/May/2017, Sunday
+#>>>Initialized Starfury SA-23E-1 Travel logger
+#>>>SELF = <Starfury SA-23E-1(276660) Travel_MyPT73q05hPH>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>15:51:44.515 of 28/May/2017, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>15:51:45.182 of 28/May/2017, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>15:51:45.501 of 28/May/2017, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>15:51:45.995 of 28/May/2017, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>15:51:46.568 of 28/May/2017, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>15:51:46.901 of 28/May/2017, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>15:51:47.128 of 28/May/2017, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>15:51:47.382 of 28/May/2017, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>15:54:19.911 of 28/May/2017, Sunday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 16:7:15.184 of 28/May/2017, Sunday
+#Ending of log dump - User is quiting the game
+########################################

@@ -1,0 +1,208 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Art Info Sheet</title>
+</head>
+
+<body>
+
+<p><b><font face="Arial" size="4">Art Info Sheet</font></b></p>
+<p><b><u><font size="2" face="Arial">Software:</font></u></b></p>
+<p><font size="2" face="Arial">All Bridge Commander ship &amp; character models
+were built using 3D Studio Max version 3.1. Models were exported using the
+STBCExporter plugin (STBCExporter.dlu placed in Max's &quot;plugins&quot; folder).
+Be sure &quot;export textures separately&quot; and &quot;keep original texture
+names&quot; is checked.&nbsp; Bridges, ships and characters all used different
+techniques to make some of the interesting graphical effects that are in
+BC.&nbsp; We used Character Studio R2 &amp; R2.5 to do character
+animations.&nbsp; We used Lightscape to help create the lighting effects on the
+bridges.&nbsp; The STBCExporter.dlu is in root of the Tools directory.</font></p>
+<font SIZE="2"><u><b>
+<p><font face="Arial">Character Models:</font></p>
+</b></u>
+<p><font face="Arial">Characters were built using 3D Studio Max 3.1 and textured
+with Photoshop.&nbsp; Each character is about 1000 polys.&nbsp; Roughly
+750 for the body and 250 for head.&nbsp; Character animations were done using
+Character Studio.</font></p>
+<p><font size="2" face="Arial">To maximize the re-use of assets characters in BC
+are built up from separate heads and bodies.  Each are textured separately and
+physiqued on to the skeleton in such a way as to perfectly match their neck
+vertices.  The neck verts of a particular body therefore have to match the heads
+that will be placed on it exactly.  Be aware that this means not only the same
+position, but the same weights (physiquing) and they must be &quot;locked&quot;.
+We call this process &quot;Frankensteining&quot;, and the character scripts in
+scripts/Bridge/Characters determine how a character is made from its four pieces
+(head, head texture, body, body texture).  To properly physique a body and head
+it makes sense to put them together in one model and physique it as one piece, then
+make two copies and delete either the head or body to create the two files.  After
+they are separated they will have the same location and weighting, but still need
+to be locked individually.</font></p>
+<u><b>
+<p><font face="Arial">Character Texture Maps:</font></p>
+</b></u>
+<p><font face="Arial">Each character has two 256 x 256 textures.&nbsp; The first
+one is for the head and hands. The second one is for the body. 4. Each character
+has three additional head textures for lip-syncing &quot;a,&quot; &quot;e,&quot;
+&quot;u.&quot; According to our programmers, code has been written to
+accommodate the additional mouth shapes.&nbsp; There are three additional
+textures for eye blinks. In the first two, the eyes are partially closed. In the
+third texture, the eyes are completely closed.  Scripts in scripts/Bridge/Characters
+link these textures to the eye and mouth shapes.&nbsp;&nbsp;</font></p>
+<u><b>
+<p><font face="Arial">Character Animation:</font></p>
+</b></u>
+<p><font face="Arial">Animation of bridge objects (characters and chairs) was done
+by saving the animated object to its own file, animating it, then exporting the
+keyframe info in a NIF file. The object needs to be placed at coordinates world
+0, 0, 0, with a corresponding dummy object in the bridge set that designates its
+actual position in the set.&nbsp; We used three sizes of biped skeletons: small
+(small male, small female), medium (medium male, medium female), and large (large male,
+Klingons). We used a Ponytail bone as the mouth bone for jaw movement and pseudo
+lip-syncing.&nbsp;&nbsp; All of the walks were position specific, while the turn
+and ambient animations were centered at (0,0,0). The get up and sit down
+animations were independent of the walk animations.&nbsp; Most animations were
+built off of each other.&nbsp; Artists would share and blend lots of animations when
+needed to create them. This is easy when using Character Studio's Motion
+Flow.&nbsp; Some animations were position specific and had to be animated using
+the bridge model and saved in that exact location in World Space.</font></p>
+<p><font size="2" face="Arial">When an animiation is exported as a .nif it contains
+all the model and texture data of the model being animated.  To slim this down to
+just the animation data (much smaller and more efficient) use the
+<A HREF="animonly.html">AnimOnly</A> tool.</font></p>
+<p><font size="2" face="Arial">All BC character models are based on three skeleton
+sizes: Small (Female small, Male small), Medium (Female large, Male medium) and Large
+(Male large).  We've provided these blank skeletons <A HREF="ART/Skeletons">here</A>
+to make it easier for mod makers to share our animations for completely new models.</font></p>
+<u><b>
+<p><font face="Arial">Bridge Models:</font></p>
+</b></u>
+<p><font size="2" face="Arial">Bridge models were built and textured in Max 3.1,
+much the same way as the ship models were. They were then brought into
+Lightscape (an architectural rendering program), which has a radiosity renderer
+that Max lacks. We were able to apply more realistic lighting than in Max, which
+allowed getting good vertex coloring and (with some specialized tools) generate 
+light maps to be applied across sections of the model (floor map, wall maps, roof
+map, etc.).  Theoretically you could use this to &quot;bake&quot; shadows into
+the existing texture maps, but this tends to make for large maps where you would be
+better off tiling a small map with a shadow pass separate. When bringing models into
+Lightscape, the bridge models had to be completely &quot;bulletproof&quot;. That
+means no double faces, un-welded vertices, etc. Lightscape always seemed to find
+these glitches and magnify them since it tesselates the mesh when it renders and
+would produce some unpleasant results. It was not the most streamlined process, but
+the final results looked good. Many small and somewhat throw away tools were designed
+for solving minor problems on each of the bridges that looking back don't make sense
+to release.  These tools had to do with the fact that Lightscape doesn't preserve the
+hierarchy of the Max model, and so we had to make a tool that took the heirarchy of
+a non-Lightscaped model and graft it onto the Lightscaped model exported as a
+hierarcy-less .nif file.  There are also special organization issues and naming issues
+needed to get the lightmaps to dim and brighten for red alert lighting, as well as
+other maps to glow and flash (red wall lights).</font></p>
+<p><font size="2" face="Arial">Both bridges in the game were in the 4000+ poly range
+not including character and chair models.&nbsp; We experimented with 2000, 3000, 4000
+poly to get the best look and not over burden the graphics engine.&nbsp; We don't
+recommend focusing on bridges for most mod folks as they were very difficult to do --
+but would love to see what those dedicated fans come up with.</font></p>
+<u><b>
+<p><font face="Arial">Bridge Texture Maps:</font></p>
+</b></u>
+<p><font size="2" face="Arial">Texture Map dimensions are always factors of 2
+(i.e. 4, 8, 16, 32, 64, 128, etc.) and were usually 256 x 256 in size. Also keep
+in mind that older cards can't support textures bigger than 256x256. The file
+format for all textures is TGA also known as TARGAs.  The bridges generally used
+about 2 meg of total texture, and tended to use many small maps.
+</font></p>
+<p><u><b><font size="2" face="Arial">Ship Models:</font></p>
+</b></u>
+<p><font size="2" face="Arial">Most ships had 3 different levels of detail, or
+LODs. As an example (<A HREF="ART/Marauder">look here</A>), the Ferengi Marauder's
+poly counts were 248 polys for the low detail version, 928 polys for the medium, and
+2843 polys for the high. If a model has more than one part (the Marauder has 3 pieces),
+all parts must have coincident centerpoints. Average polygon count on the models:
+Highest LOD: 2500 - 3000, Mid level LOD: 1000, Lowest: 200-300.</font></p>
+<p><font size="2" face="Arial">Mapping was generally done using Max's standard planar UVW
+mapping modifier (although other mappings are not excluded). Materials were usually
+&quot;multi/sub-object&quot; using Blinn shader type. Different map channels were
+used to map parts of the ship with different material IDs and/or UVW map modifiers.</font></p>
+</font><b><u>
+<p><font size="2" face="Arial">Ship Texture Maps:</font></p>
+</u></b>
+<p><font size="2" face="Arial">Texture Map dimensions are always factors of 2
+(i.e. 4, 8, 16, 32, 64, 128, etc.) and were usually 256 x 256 in size. Also keep
+in mind that older cards can't support textures bigger than 256x256. The file
+format for all textures is TGA also known as TARGAs. The medium and high detail
+Marauder use the same texture maps (a total of 4 maps were used), while the low
+poly version uses its own, all-in-one texture maps (two total, one for the top,
+one for the bottom). All textures are 32 bit per pixel if they have glow, 24 if
+they don't. There can be anywhere from 1 texture per ship to as much as 10 in
+some cases. Usually the high and the medium level of detail share the same
+textures and there is a much smaller one for the lowest level.</font></p>
+<p><font size="2" face="Arial">As an example we've provided the model and textures
+of the Marauder </font></p>
+<b><u>
+<p><font size="2" face="Arial">Ship Special Effects &amp; Qualities:</font></p>
+</u></b><font SIZE="2">
+<p><font size="2" face="Arial">Glows and enhanced glows are controlled with the
+textures' alpha channel. The lighter the alpha channel, the better lit the area.
+A good example for a map is: data\Models\SharedTextures\FedShips\High\Ent-D_Nacelle_glow.tga.</font></p>
+<p><font size="2" face="Arial">Enabling the glow maps is done by name matching.
+The actual strings to match are defined in the ship script file (which can be
+found in scripts/ships). As a convention, we used '_glow' to enable glows. This
+means that any maps used by a ship that contains '_glow' will have the light
+alpha regions always fully lit.</font></p>
+<p><font size="2" face="Arial">If you want different attenuation maps for
+specular highlights, a good example script is scripts/ships/FedOutpost.py. In
+this example it will use any texture that it can find that ends with _specular
+for the high and the mid level of detail.</font></p>
+<p><font size="2" face="Arial">You can also control the shininess for all the
+maps just by adding a &quot;SpecularCoef&quot; in the ships stats.
+scripts/ships/Sovereign.py is a good example, in that case it uses 0.5 (or 50%)
+of the specular highlights since it is already such a light ship.</font></p>
+</font><b><u>
+<p><font size="2" face="Arial">About </font></u></b><u><b><font size="2" face="Arial">ship
+dynamic damage:</font></p>
+</b></u><font SIZE="2">
+<p><font size="2" face="Arial">The dynamic damage is also controlled by the ship
+script file. There are a few numbers that help control how much damage a ship
+will take before breaking apart those are the burn value and the hole value.
+Basically a ship will get progressively scorched up the burn value. Any damage
+above the burn value will display by default the skeleton texture
+(data/textures/effects/damage.tga). Higher values will result in a gaping hole.
+There is are ship modifiers that makes damage appear bigger and stronger on
+certain ships. This is useful on stations because otherwise you would almost
+never see the tiny specs of damage. To modify the damage radius, put an entry of
+&quot;DamageRadMod&quot; in the ship stats. To modify the strength put a &quot;DamageStrMod&quot;
+entry. You can find an example in scripts/ships/FedStarbase.py in the ship
+stats. In this case the damage volumes are 15 times bigger but only 0.06 (or 6%)
+of the usual strength.</font></p>
+<p><font size="2" face="Arial">The first time a ship is ever loaded in the game,
+a _vox.nif file is created in the same directory as the original .nif to keep
+track of the structure of the ship. This process can take some time on slower
+machines. Make sure to throw away any related _vox.nif if you modify a ship's
+geometry. Otherwise, you will have damage and structure based on the old model.
+Be aware that changing the voxel size of a model can result in huge voxel files
+if you make the resolution too high.  While this might be good for the look of the
+damage, it will mean loads of RAM as well as load time and run time slowdowns.  Note
+that stations have much larger voxels than ships because of their size, and
+compensate in their damage values.</font></p>
+<p>&nbsp;</p>
+<p><font size="2" face="Arial">Compiled by PL.&nbsp; Version 1.0&nbsp;&nbsp;
+March 14, 2002.</font></p>
+<p><font size="2" face="Arial">Contributors:&nbsp;</font></p>
+<ul>
+  <li><font size="2" face="Arial">Richard Green</font></li>
+  <li><font size="2" face="Arial">James Therien</font></li>
+  <li><font size="2" face="Arial">Anthony Hon</font></li>
+  <li><font size="2" face="Arial">Victor Bennett</font></li>
+  <li><font face="Arial">Armand Cabrera</font></li>
+  <li><font face="Arial">David Litwin</font></li>
+</ul>
+</font>
+<p>&nbsp;</p>
+
+</body>
+
+</html>

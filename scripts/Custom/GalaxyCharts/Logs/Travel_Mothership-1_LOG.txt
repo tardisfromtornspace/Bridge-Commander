@@ -1,0 +1,85 @@
+#This is the dump of the LogCreator: <Mothership-1 Travel Logger LogCreator_eu5w8GmeVP7T>
+#This log file was created on: 23:6:21.756 of 5/May/2017, Friday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>23:6:21.756 of 5/May/2017, Friday
+#>>>Initialized Mothership-1 Travel logger
+#>>>SELF = <Mothership-1(285286) Travel_20zr9d3kxoo5>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>23:6:25.382 of 5/May/2017, Friday
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>23:6:30.834 of 5/May/2017, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:6:32.287 of 5/May/2017, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:6:33.326 of 5/May/2017, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:6:33.566 of 5/May/2017, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:6:34.127 of 5/May/2017, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:6:34.544 of 5/May/2017, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:6:34.851 of 5/May/2017, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:8:44.570 of 5/May/2017, Friday
+#>>>Updated Target Ship = Glider6
+## -------------------- ##
+####################
+#######>>>23:8:54.552 of 5/May/2017, Friday
+#>>>Updated Target Ship = Glider4
+## -------------------- ##
+####################
+#######>>>23:9:3.232 of 5/May/2017, Friday
+#>>>Updated Target Ship = Glider5
+## -------------------- ##
+####################
+#######>>>23:9:8.661 of 5/May/2017, Friday
+#>>>Updated Target Ship = Glider2
+## -------------------- ##
+####################
+#######>>>23:9:25.324 of 5/May/2017, Friday
+#>>>Updated Target Ship = UpgradedHatak
+## -------------------- ##
+####################
+#######>>>23:10:39.229 of 5/May/2017, Friday
+#>>>Updated Target Ship = Glider3
+########################################
+# 23:46:2.381 of 5/May/2017, Friday
+#Ending of log dump - User is quiting the game
+########################################

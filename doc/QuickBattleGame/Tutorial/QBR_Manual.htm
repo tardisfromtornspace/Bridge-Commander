@@ -1,0 +1,197 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>QBR Tutorial v2.14</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<META content="MSHTML 6.00.2719.2200" name=GENERATOR></HEAD>
+<BODY>
+<CENTER><B>Welcome to the QBR 2.14 tutorial</B><P>This tutorial will explain the 
+workings of QuickBattle Replacement (QBR) from how to start the game to creating and saving your own 
+QuickBattleGame configurations<P></CENTER><BR>
+
+<P>
+<a href="#START">Tutorial</a><BR>
+<a href="#FAQ">Troubleshooting Help</a>
+</P>
+
+<HR><a name="START"></a><I><B>Getting 
+Started</I></B><br><br>
+<I><B>*** If you chose to install the optional
+ main menu mod, you can skip this section ***</I></B><br>
+<B>-------------- just start the game normally and the menu will appear as below --------------</B>
+<P>The first thing to do is get the game to run in "TestMode". If you chose to install the optional
+ main menu mod, you can skip this section.
+You can do this by using the supplied shortcut in the Bridge Commander Start 
+Menu group, or by creating your own shortcut.<BR><BR>If you want to create a 
+shortcut manually, locate the "stbc.exe: file in your game directory (typically 
+the path is C:\Program Files\Activision\Bridge Commander. Right click on this 
+file and choose "Send to" and then choose "Desktop(create shortcut)". Then right 
+click on the newly created shortcut (on your desktop) and change the text in the 
+"Target" box to read:</P>
+<CENTER>"C:Program Files\Activision\Bridge Commander\stbc.exe" 
+-TestMode</CENTER><BR><BR>There must be ONE space at the end, a dash, then TestMode with 
+a capital T and M in the word TestMode. You can also rename the shortcut by 
+right clicking on it and selecting "rename".<BR><BR>Start the game from 
+the supplied shortcut (located in the Bridge Commander Start Menu Folder or on the desktop) or with 
+the one you may have just created.<BR><BR>The game will load normally and when the main menu appears, the 
+quickbattle button will be replaced by "Missions" if you have opted to install 
+the supplied MainMenu.py, or "Test Only" if you have not. <BR>Also notice that the 
+regular old Quick Battle button is here as an option as well as jumps to the 
+single player missions. You can go to regular quick battle from here without 
+incedent - it will work as it always has. You can also go to any Single Player 
+Mission. <BR><BR>But, right now to start the QBR game:
+<BR>see fig 1: <BR><IMG 
+height=450 alt="" src="QBR Manual_files/1.jpg" width=600 border=0> <BR>Click on 
+the missions(test only) button, click Custom Missions, and select 
+"QuickBattleGame". DO NOT select Autoload, Ships, or Carriers.<BR>
+<BR>The game 
+will then load, then you will find yourself on the bridge of an Sovereign class 
+ship.<BR>
+<BR>see fig 2:<BR><IMG height=450 
+alt="" src="QBR Manual_files/2.jpg" width=600 border=0> <IMG height=450 alt="" 
+src="QBR Manual_files/2A.jpg" width=600 border=0> 
+<BR>The QuickBattleGame has 
+now loaded in the default configuration. There has to be a default configuration 
+in order for it to load. If you look around, you will find yourself floating in 
+the Tevron II system with a friendly ship, the USS Constipation and a 
+Federation Starbase. Have your Helm Officer hail the Constipation - click "hail" 
+and watch the Constipation dock. You can issue orders to friendly ships 
+through the hail command. Since there aren't any enemy ships in the system, 
+right now you can only order them to dock (by just hailing them) or to protect 
+you. Next, hail the Starbase and watch yourself dock. You can dock whenever you need repair 
+or resupply. You can also order friendlies to dock for the same 
+reason...<BR><BR>After you get tired of ordering the Constipation around and 
+bugging the poor starbase commander, head off to Artrus system.You will 
+arrive at Outpost 7. You cannot dock at outpost 7. The Constipation will follow 
+you automatically (albeit kind off slowly - it's hard to get good help these 
+days...)<BR><BR>Set a course for Artrus I. There you will find two Cardassian 
+ships, the Bubblegum &amp; the Rogue. Now it's battle time, wipe them out. 
+Remember you can order the Constipation around and warp back to Tevron II to 
+repair if need be. Remember to go to Red Alert as each game starts you at green 
+alert. <BR><BR>
+
+<I><B>Advanced Features:<BR><BR></I></B>
+<I><B>*** Fleet Hail:<BR></I></B>Access the fleet hail option under your helm menu.
+ You can order the whole fleet to attack your target, or to resume their old orders.</B><BR><BR>
+ <I><B>*** Emergency Transport:<BR></I></B>Access this from your engineer's console.
+  You can transfer your crew to a freindly ship if your ship has had it or if you want
+   to abandon your ship for some reason. Your crew will be transported to the friendly
+    ship and leave yours floating in space. You will have limited control over your
+	 guest ship (just be glad your still alive). From the guest ship, you can transfer
+	  to another or back to your derelict ship. You must be within transporter range (ca. 50 km) for
+	   this to work.</B><BR><BR>
+<I><B>*** Shuttle Launching:<BR></I></B>The shuttle launching framework will now work in QBR - special thanks to Poddy for this. </B><BR><BR>
+
+<I><B>Making Your Own Missions:<BR><BR></I></B>Now let us create 
+our own new game configuration. Go to your first officer and click 
+configure.<BR>
+<BR>fig 3:<BR><IMG height=450 alt="" src="QBR Manual_files/3.jpg" 
+width=600 border=0> <BR>The QBR editing screen will open. Here you will see the 
+default configuration. Click on the selected ships pane on the right and notice 
+how each ship is configured.<BR><BR>OK - now it's time to create our own 
+mission.<BR><BR>Click on each ship in the "selected ships" menu and hit delete 
+each time until no ships appear there.<BR>
+<BR>fig 4:<BR><IMG height=450 alt="" 
+src="QBR Manual_files/4.jpg" width=600 border=0> <IMG height=450 alt="" 
+src="QBR Manual_files/4A.jpg" width=600 border=0> <BR>Then, select the yellow 
+"Systems" button at the top of the menu. on the left are the systems you have 
+installed, on the right are there selected systems to be in the game. Click each 
+of the three systems on the right to remove them from the list.<BR><BR>Select 
+two systems from the left hand menu. We'll use Beol 1 and Biranu 1. Click on 
+them and add them to the selected regions list.Now go back to the ships screen 
+by clicking the yellow Ships button at the top bar. Notice that now in the 
+center box, Beol 1 and Biranu 1 are listed as the only two systems.<BR><BR><IMG 
+height=450 alt="" src="QBR Manual_files/5.jpg" width=600 border=0><BR>Now it's time 
+to select some ships to be in the game. On the left hand ships pane, select an 
+Akira, a Galaxy, and a Vorcha. Notice how they appear in the right hand pane 
+with a yellow button. Now we must set each ship up with a 
+configuration.<BR>
+<BR><IMG height=450 alt="" src="QBR Manual_files/6.jpg" 
+width=600 border=0><BR><P>Select the Akira 1 button on the right hand pane.</P>
+<LI>click 
+in the text box at the top to change the name of the ship - let's use the "USS 
+Buttkicker"</LI><BR>
+<LI>below that are the x, y, &amp; z coordinates. You can enter 
+these or leave them blank for random placement</LI><BR>
+<LI>below that is the custom AI text box. You can enter the filename for a custom AI script here (for advanced users)</LI><BR>
+<LI>the next two buttons are "Starbase" &amp; "Warp". If you configuring 
+a starbase, enable the Starbase button, but since we are doing the Akira, leave 
+this blank. We do want to enable the Warp button. This will allow the ship to 
+move between systems. If you do not enable this button, the ship will be 
+contained in the system it starts in</LI><BR>
+<LI>next down on the list is the Systems 
+Box. This is very important. You must have each ship assigned to a starting 
+system or the game will not load. For the Akira, we'll use Beol 1.</LI><BR>
+<LI>next 
+down is the AI &amp; Group boxes. Choose the AI level of the USS Buttkicker, and 
+designate it "friendly"</LI><BR>
+<LI>PRESS THE UPDATE BUTTON AT THE BOTTOM</LI><BR>
+<P>The yellow 
+"akira 1" button will now change to a blue button with the "USS Buttkicker" name 
+on it. This ship is now configured for the game.You must hit the update button 
+each time you change anything on this screen to save it to the 
+configuration.</P>
+<P>Select the Galaxy 1 button on the right hand pane.</P>
+<LI>Click in the text box and change the name. I'll use "USS Enterprise"</LI><BR>
+<LI>enter the x,y,z coordinates or leave them blank to have the ship start at 0,0,0</LI><BR>
+<LI>Enable the Warp button</LI><BR>
+<LI>Designate this ship to also start in the Beol 1 
+system in the system box</LI><BR>
+<LI>In the Group menu, select "PLAYER"</LI><BR>
+<LI>PRESS THE UPDATE BUTTON</LI><BR>
+<P>The yellow "galaxy 1" button will now turn grey and display 
+"Player". This will be the ship you will control.</P><P>Select the Vorcha 1 
+button on the right hand pane.</P>
+<LI>Click in the text box and change the name. 
+I'll use "IKV Bloody Mary"</LI><BR>
+<LI>enter x,y,z, coordiantes or leave them blank for 
+random placement</LI><BR>
+<LI>make sure the warp button is off, so he'll stay put where 
+he is</LI><BR>
+<LI>have this ship start in the Biranu 1 system</LI><BR>
+<LI>In the Group Menu, select "enemy"</LI><BR>
+<LI>PRESS THE UPDATE BUTTON</LI><BR>
+<P>The yellow "vorcha 1" button on 
+the right will turn red and display "IKV Bloody Mary"</P><P>Since we are flying 
+a Galaxy class ship, select the Galaxy bridge from the bridge menu at the bottom 
+left. All bridges installed to the game will available here.</P>
+<BR><IMG 
+height=450 alt="" src="QBR Manual_files/7.jpg" width=600 border=0><P>Now it is 
+time for the moment of truth - Press the red "Start" button at the top. If you 
+entered everything correctly the game will start. If not, the game will freeze 
+and leave you with the starfleet cursor. If this happens, don't panic. Press the 
+ESC key to return to the QBR editing screen an recheck your parameters. Play the 
+configuration to see how the information you entered will work in the 
+game.</P><P>Now lets say for the sake of argument, that this is the coolest 
+configuration you ever have or will make. Go back to the QBR editing screen (1st 
+officer "configure command)</P><P>You will see the current configuration 
+displayed. Click on the yellow "File" buton at the top of the menu.<BR>In the 
+filename text box change the text to read "Kill the Vorcha". Then click the 
+"save" button.<BR>Your new configuration will now be saved in the right hand 
+load setup menu. Here you will find all the saved configurations.<BR>Click on 
+any button in the right hand pane and click "Load". Go back to the Ships screen and you 
+will see this configuration loaded.</P>
+<BR><P>You can experiment with 
+different setups at will and your are only limited by the number of ships, 
+systems, and bridges you have installed. Remember, for the game to run, you MUST 
+have at least one player ship, one enemy ship, and one system selected. Each 
+ship must be asssigned to a system and a group. </P>
+<BR><IMG height=450 alt="" 
+src="QBR Manual_files/9.JPG" width=600 border=0> <P><B>Good Luck and Happy Hunting !!!</B></P>
+<HR><a name="FAQ"></a>
+<div align="left"><b>TROUBLESHOOTING HELP:</b></div><BR>
+<I><div align="left">"I installed QBR, and when the main menu appears, there is no 'Missions' or 'Test Only' Button!"
+</div></I>
+<P>The game isn't starting in TestMode. Either you installed QBR to a different directory or there is something wrong with the shortcut. Try
+ checking the path of your shortcut. Make sure it points to the game directory where you installed QBR.</P>
+<I> <div align="left">"When the main menu appears, there is a 'Missions' or 'Test Only' button, but there is no 'Custom Missions' button at the bottom"</div></I>
+<P>The game IS starting in TestMode, but QBR is not installed to that game directory.</P>
+<I><div align="left">"Some or all the ships or systems or bridges I have installed don't show up in the QBR Editing screen or the game hangs when I press the 'QuickBattleGame' button!!!"</div></I>
+<P>Quit the game and restart. Check the Mutators Tab to make sure all the buttons are lit.</P>
+<P><I>"I set up a QBR game, and when I press the Start button, the hard drive spins for a few seconds and the game hangs."</I></P>
+<P>Something is wrong with the configuration. Press the ESC key to return to the editing screen and recheck each ship to see that it has a starting system and is assigned to a group (friendly,enemy,neutral,or player).</P>
+<I> <div align="left">"I select a ship, set up it's configuration, and go to configure the next ship, and the ship I did didn't stay configured"</div></I>
+<P>You forgot to press the Update button. Each time you change a ship's configuration, you have to click the Update button.</P>
+<HR>
+   <div align="left"><b>For any other issues you may encounter, or any questions regarding QBR, you may email me at <a href="mailto:Redbeard@stny.rr.com">Redbeard@stny.rr.com</a> and I will get back to you as soon as I can.</b>
+   
+ </div>
+<BR></BODY></HTML>

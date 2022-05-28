@@ -1,0 +1,47 @@
+#This is the dump of the LogCreator: <Command Cruiser-1 Travel Logger[2] LogCreator_5zrVeFlC9KZi>
+#This log file was created on: 23:37:25.436 of 5/May/2017, Friday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>23:37:25.436 of 5/May/2017, Friday
+#>>>Initialized Command Cruiser-1 Travel logger
+#>>>SELF = <Command Cruiser-1(1040938) Travel_b86a46C8WN6g>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>23:37:29.277 of 5/May/2017, Friday
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>23:37:35.009 of 5/May/2017, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:37:35.595 of 5/May/2017, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:38:5.505 of 5/May/2017, Friday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 23:46:2.381 of 5/May/2017, Friday
+#Ending of log dump - User is quiting the game
+########################################

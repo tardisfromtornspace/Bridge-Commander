@@ -1,0 +1,45 @@
+
+Title		: Cardassian Hideki
+Filename	: BC_Hideki.zip
+Version		: 1.0 (not tested in Multiplayer)
+Date		: 5/10/2002
+Author		: Michael Frederick (A.K.A. - Zorg/Morpheus)
+website         : www.zorgspace0001.com
+Credits		: Daniel B. Houghton (aka Dasher42) who made it possible for everyone to
+use new Bridge Commander mods with the his 'Foundation Plugin System'!
+NanoByte, who made the mod packager!
+
+
+
+Description of the Mod File
+---------------------------
+
+Cardassian Hideki Destroyer:
+
+
+Installation:
+-------------
+
+Unzip the files into a temp directory on your hard disk, copy the files to your root Star Trek Bridge Commander directory.
+ 
+Edit Dasher42’s Plugins.py and add the following:
+
+import Hideki
+
+NOTE: Above line is CASE SENSITIVE, and make sure to ADD NO EXTRA SPACES BEFORE OR AFTER!
+
+
+--------------------------
+
+Copyright and Distribution Permissions
+--------------------------------------
+THIS PATCH IS NOT MADE, DISTRIBUTED, OR SUPPORTED BY Activision
+ TM & (C) INTERPLAY & PARAMOUNT PICTURES.
+
+Copyright notices: 
+
+Star Trek, Bridge Commander, Star Trek: Deep Space Nine, Star Trek: The Next Generation,
+Star Trek: Voyager (and the various logo devices used in them) are copyright
+Paramount Pictures, as are the characters, related images, and sound from the productions. 
+
+Please use this mod in any way you wish, all I asked for is credit for the original model & textures.  This mod is not to be sold or put on any compilation Cd for sale.

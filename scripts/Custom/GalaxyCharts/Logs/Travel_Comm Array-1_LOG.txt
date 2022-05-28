@@ -1,0 +1,27 @@
+#This is the dump of the LogCreator: <Comm Array-1 Travel Logger LogCreator_xy85VB9nciJQ>
+#This log file was created on: 18:49:57.507 of 12/June/2017, Monday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>18:49:57.507 of 12/June/2017, Monday
+#>>>Initialized Comm Array-1 Travel logger
+#>>>SELF = <Comm Array-1(46726) Travel_3d1Ohs3wHe0z>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+########################################
+# 18:53:14.517 of 12/June/2017, Monday
+#Ending of log dump - User is quiting the game
+########################################

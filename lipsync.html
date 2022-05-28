@@ -1,0 +1,49 @@
+<HTML>
+<HEAD>
+  <TITLE>Lip Synching</TITLE>
+  <LINK REV="made" HREF="mailto:">
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-1">
+  <META NAME="generator" CONTENT="NoteTab Light 4.86c">
+  <META NAME="author" CONTENT="">
+  <META NAME="description" CONTENT="">
+  <META NAME="keywords" CONTENT="">
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000" LINK="#0000FF" VLINK="#800080" ALINK="#FF0000">
+
+<H1>Lip Syncing</H1>
+
+<P>
+Bridge Commander supports lip syncing for its characters. To use it, you need to generate a phoneme (.LIP) file for each sound file in the game. If a .LIP file is present in the same directory as a line a character is speaking, it will be used to lip sync the character. If there is no .LIP file, the game will use some random phonemes instead.
+</P>
+<P>
+To produce .LIP files, do the following:
+<UL>
+<LI>Download and install <A HREF="http://www.microsoft.com/agent2/sdk/liset.exe">LISET</A>, Microsoft's free linguistic sound analysis tool (part of the MS Agent developer tool set).</LI>
+<LI>Load the sound file (.wav format) you wish to process into LISET. Enter the text that the line represents into the <B>Text Representation</B> field. Then, select the <B>Generate Linguistic Info</B> option from the <B>Edit</B> menu. LISET will then process the file, and generate phonemes for the text you entered.</LI>
+<LI>When it's done, you should have a bunch of rectangular boxes in the waveform display, representing the phonemes generated. Save the file (a "linguistically enhanced wave file") to the same location as the source file.</LI>
+<LI>If LISET was unsuccessful in producing phonemes for the wave file (no phoneme rectangles), you can have a couple of options:
+<UL>
+<LI>Check to make sure that the text matches the line exactly.</LI>
+<LI>Adjust the text to more closely match the pronunciation of the line. Possessives, words that run together, and punctuation are all things that might be causing trouble.</LI>
+<LI>Record a line in the same meter as the spoken line, but enunciated more clearly. Some voices are understood better by LISET, for some reason.</LI>
+<LI>Manually place phonemes in LISET. See the LISET documentation for instructions on how to do this.</LI>
+</UL>
+</LI>
+<LI>Run Bridge Commander with the -TestMode option, to enable the console. (tilde key by default) Enter the following into the console:
+<BR>
+<PRE>
+App.CharacterAction_ConvertFolderLWVs(path)
+</PRE>
+where <I>path</I> is the relative path of the directory of .LWV files to convert. (i.e. "sfx/Bridge/Crew/Admiral Liu") It does not recursively process directories, and it will not delete the .lwv files when it is done. It just generates the .LIP files needed for lip syncing.
+</LI>
+<LI>
+After you have produced the .LIP files, you no longer need the .LWV files. You can delete them if you want.
+</LI>
+</UL>
+</P>
+
+<HR>
+<P><SMALL>Created on ... February 06, 2002</SMALL></P>
+</BODY>
+</HTML>

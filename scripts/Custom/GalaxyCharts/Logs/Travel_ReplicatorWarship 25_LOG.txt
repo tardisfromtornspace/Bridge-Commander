@@ -1,0 +1,54 @@
+#This is the dump of the LogCreator: <ReplicatorWarship 25 Travel Logger LogCreator_ARsXj2gi1uN4>
+#This log file was created on: 18:22:35.989 of 29/June/2017, Thursday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>18:22:35.989 of 29/June/2017, Thursday
+#>>>Initialized ReplicatorWarship 25 Travel logger
+#>>>SELF = <ReplicatorWarship 25(1300741) Travel_dkN4zQUUWvxJ>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>18:22:49.377 of 29/June/2017, Thursday
+#>>>Updated Target Ship = MinbariSharlin 18
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>18:22:50.837 of 29/June/2017, Thursday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>18:23:11.900 of 29/June/2017, Thursday
+#>>>Updated Target Ship = whitestar 22
+## -------------------- ##
+####################
+#######>>>18:23:20.590 of 29/June/2017, Thursday
+#>>>Updated Target Ship = MinbariSharlin 19
+## -------------------- ##
+####################
+#######>>>18:23:24.406 of 29/June/2017, Thursday
+#>>>Updated Target Ship = whitestar 24
+## -------------------- ##
+####################
+#######>>>18:23:43.425 of 29/June/2017, Thursday
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>18:23:51.534 of 29/June/2017, Thursday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

@@ -1,0 +1,32 @@
+#This is the dump of the LogCreator: <Escape Pod 6 Travel Logger[2] LogCreator_eCAVAHg9mG25>
+#This log file was created on: 20:27:16.100 of 9/October/2019, Wednesday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>20:27:16.100 of 9/October/2019, Wednesday
+#>>>Initialized Escape Pod 6 Travel logger
+#>>>SELF = <Escape Pod 6(401901) Travel_1WR9Txa4czFs>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>20:27:47.046 of 9/October/2019, Wednesday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 20:28:21.572 of 9/October/2019, Wednesday
+#Ending of log dump - User is quiting the game
+########################################

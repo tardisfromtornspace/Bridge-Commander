@@ -1,0 +1,293 @@
+#This is the dump of the LogCreator: <Assault Frigate-19 Travel Logger LogCreator_7hyeYmwv2C2d>
+#This log file was created on: 0:38:16.694 of 10/April/2017, Monday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>0:38:16.694 of 10/April/2017, Monday
+#>>>Initialized Assault Frigate-19 Travel logger
+#>>>SELF = <Assault Frigate-19(850110) Travel_GZSFiWF7y209>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Victory-1
+## -------------------- ##
+####################
+#######>>>0:39:27.163 of 10/April/2017, Monday
+#>>>Updated Target Ship = Breen BB-7
+########################################
+# 0:42:41.618 of 10/April/2017, Monday
+#Ending of log dump - User is quiting the game
+########################################
+## -------------------- ##
+####################
+#######>>>0:46:37.384 of 10/April/2017, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Setting Destination...
+#>>> -Destination: Systems.Starbase12.Starbase12
+#>>> -Travel Type Set: Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = Belaruz4
+#>>> -Attribute: Destination Set = Starbase12
+#>>> -Going to wait 3.515625 secs to try again, while ship is turning to a good direction
+## -------------------- ##
+####################
+#######>>>0:46:49.223 of 10/April/2017, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+#>>> -Travel Type Set: Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Warp
+#>>> -Ship is turning to face a good direction
+## -------------------- ##
+####################
+#######>>>0:46:49.447 of 10/April/2017, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>> -Ship is turning to face a good direction
+## -------------------- ##
+####################
+#######>>>0:46:49.757 of 10/April/2017, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+#>>> -Travel Type Set: Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Warp
+#>>> -Ship is turning to face a good direction
+## -------------------- ##
+####################
+#######>>>0:46:49.952 of 10/April/2017, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+#>>> -Travel Type Set: Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Warp
+#>>> -Ship is turning to face a good direction
+## -------------------- ##
+####################
+#######>>>0:46:50.144 of 10/April/2017, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+#>>> -Travel Type Set: Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Warp
+#>>> -Ship is turning to face a good direction
+## -------------------- ##
+####################
+#######>>>0:46:51.075 of 10/April/2017, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>> -Ship is turning to face a good direction
+#>>>Travelling procedures initiated...
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = Belaruz4
+#>>> -Attribute: Destination Set = Starbase12
+#>>> -Going to wait 3.4375 secs to try again, while ship is turning to a good direction
+## -------------------- ##
+####################
+#######>>>0:46:52.801 of 10/April/2017, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+#>>> -Travel Type Set: Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Warp
+#>>> -Ship is turning to face a good direction
+## -------------------- ##
+####################
+#######>>>0:46:53.528 of 10/April/2017, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+#>>> -Travel Type Set: Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Warp
+#>>> -Ship is turning to face a good direction
+## -------------------- ##
+####################
+#######>>>0:46:55.343 of 10/April/2017, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+#>>> -Travel Type Set: Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Warp
+#>>> -Ship is turning to face a good direction
+## -------------------- ##
+####################
+#######>>>0:46:55.909 of 10/April/2017, Monday
+#>>>Travelling procedures initiated...
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = Belaruz4
+#>>> -Attribute: Destination Set = Starbase12
+#>>> -Going to wait 4.765625 secs to try again, while ship is turning to a good direction
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+#>>> -Travel Type Set: Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Warp
+#>>> -Ship is turning to face a good direction
+## -------------------- ##
+####################
+#######>>>0:46:57.000 of 10/April/2017, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+#>>> -Travel Type Set: Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Warp
+#>>> -Ship is turning to face a good direction
+## -------------------- ##
+####################
+#######>>>0:46:58.281 of 10/April/2017, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>> -Ship is turning to face a good direction
+## -------------------- ##
+####################
+#######>>>0:47:0.535 of 10/April/2017, Monday
+#>>>Travelling procedures initiated...
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = Belaruz4
+#>>> -Attribute: Destination Set = Starbase12
+#>>> -Going to wait 3.1640625 secs to try again, while ship is turning to a good direction
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+#>>> -Travel Type Set: Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Warp
+#>>> -Ship is turning to face a good direction
+## -------------------- ##
+####################
+#######>>>0:47:2.465 of 10/April/2017, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+#>>> -Travel Type Set: Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Warp
+#>>> -Ship is turning to face a good direction
+## -------------------- ##
+####################
+#######>>>0:47:3.270 of 10/April/2017, Monday
+#>>>Travelling procedures initiated...
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = Belaruz4
+#>>> -Attribute: Destination Set = Starbase12
+#>>> -Going to wait 4.6484375 secs to try again, while ship is turning to a good direction
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>> -Ship is turning to face a good direction
+## -------------------- ##
+####################
+#######>>>0:47:5.472 of 10/April/2017, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+#>>> -Travel Type Set: Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Warp
+#>>> -Ship is turning to face a good direction
+#>>>Travelling procedures initiated...
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = Belaruz4
+#>>> -Attribute: Destination Set = Starbase12
+#>>> -Going to wait 2.96875 secs to try again, while ship is turning to a good direction
+## -------------------- ##
+####################
+#######>>>0:47:15.177 of 10/April/2017, Monday
+#>>>Travelling procedures initiated...
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = Belaruz4
+#>>> -Attribute: Destination Set = Starbase12
+#>>> -Going to wait 5.341796875 secs to try again, while ship is turning to a good direction
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+#>>> -Travel Type Set: Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Warp
+#>>> -Ship is turning to face a good direction
+## -------------------- ##
+####################
+#######>>>0:47:31.340 of 10/April/2017, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+#>>> -Travel Type Set: Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Warp
+#>>> -Ship is turning to face a good direction
+#>>>Travelling procedures initiated...
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = Belaruz4
+#>>> -Attribute: Destination Set = Starbase12
+#>>> -Checked: Ship can warp, travel procedures started.
+#>>> -Speed Check:
+#>>>     -Current:  9.0
+#>>>     -Real Speed:  1517.38085938
+#>>>     -Cruise:  9.0
+#>>>     -Max:  9.0
+#>>>     -Actual Cruise:  9.0
+#>>>     -Actual Max:  9.0
+#>>> -GFX Sequence Set up DONE
+#>>> -Travel Values calculated:
+#>>>   -Time To Reach: 5.79484367371 seconds
+#>>> -Started playing engaging sequence.
+## -------------------- ##
+####################
+#######>>>0:47:58.465 of 10/April/2017, Monday
+#>>> -Finishing travelling procedures...
+#>>> -Started Refresher Loop
+#>>> -Travel Set being used: Starbase12
+#>>> -Just changed ship set.
+#>>> -Travelling procedures ended, ship is already travelling.
+## -------------------- ##
+####################
+#######>>>0:48:3.762 of 10/April/2017, Monday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: -1.05427742004 seconds
+#>>> -Update Loop MARK COMPLETED, arrived at destination.
+#>>>Drop Out Of Travel Procedures Started:
+#>>> -Is Dropping out: 0
+#>>> -Traveler Systems Location Set
+#>>> -Travel Values are zero
+#>>> -Stopped Refresher...
+#>>> -Impulse Engines status reset
+#>>>Checking Exit Point/Placement and exiting path...
+#>>>Set Exit Placement Name as TravelerWarpPlacement1
+#>>>Set Exit Point to <C TGPoint3 instance at _370b7e4_p_TGPoint3> // components: X = -5701.79833984,  Y = 260.232910156,  Z = -231.388046265

@@ -1,0 +1,46 @@
+#This is the dump of the LogCreator: <Interdictor SD-14 Travel Logger LogCreator_9A8KK0vu310F>
+#This log file was created on: 18:0:36.663 of 20/September/2019, Friday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>18:0:36.663 of 20/September/2019, Friday
+#>>>Initialized Interdictor SD-14 Travel logger
+#>>>SELF = <Interdictor SD-14(146794) Travel_wQ8hIxvlhr3a>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>18:1:7.131 of 20/September/2019, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>18:1:8.400 of 20/September/2019, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>18:1:10.183 of 20/September/2019, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>18:1:10.735 of 20/September/2019, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>18:1:11.742 of 20/September/2019, Friday
+#>>> -Cancelling, too close to target to warp intercept...

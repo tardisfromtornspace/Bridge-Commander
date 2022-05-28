@@ -1,0 +1,1364 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./MissionLib_files/filelist.xml">
+<title>Function</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Colin Carley</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>Totally Games</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>234</o:TotalTime>
+  <o:Created>2002-03-13T22:50:00Z</o:Created>
+  <o:LastSaved>2002-03-13T22:50:00Z</o:LastSaved>
+  <o:Pages>4</o:Pages>
+  <o:Words>1759</o:Words>
+  <o:Characters>10029</o:Characters>
+  <o:Company>Totally Games</o:Company>
+  <o:Lines>83</o:Lines>
+  <o:Paragraphs>20</o:Paragraphs>
+  <o:CharactersWithSpaces>12316</o:CharactersWithSpaces>
+  <o:Version>9.3821</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+</head>
+
+<body lang=EN-US style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<table border=1 cellspacing=0 cellpadding=0 width=1041 style='width:780.85pt;
+ border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-padding-alt:0in 5.4pt 0in 5.4pt'>
+ <tr>
+  <td width=145 valign=top style='width:108.55pt;border:none;border-bottom:
+  solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><b><span style='font-size:14.0pt;mso-bidi-font-size:12.0pt'>Function<o:p></o:p></span></b></p>
+  </td>
+  <td width=217 valign=top style='width:162.85pt;border:none;border-bottom:
+  solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><b><span style='font-size:14.0pt;mso-bidi-font-size:12.0pt'>Parameters<o:p></o:p></span></b></p>
+  </td>
+  <td width=168 valign=top style='width:125.85pt;border:none;border-bottom:
+  solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><b><span style='font-size:14.0pt;mso-bidi-font-size:12.0pt'>Description<o:p></o:p></span></b></p>
+  </td>
+  <td width=511 valign=top style='width:383.6pt;border:none;border-bottom:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><b><span style='font-size:14.0pt;mso-bidi-font-size:12.0pt'>Usage<o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=145 valign=top style='width:108.55pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>CreatePlayerShip()<o:p></o:p></span></p>
+  </td>
+  <td width=217 valign=top style='width:162.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>sShipClass
+  - class of ship (a ship file)<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>pSet
+  - the set to use<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>pcName
+  - name for the player<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>sWaypoint
+  - placement at which to place the player<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>bUnloadShip
+  - unload all torps? defaults to zero<o:p></o:p></span></p>
+  </td>
+  <td width=168 valign=top style='width:125.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>Creates
+  the player's ship in the specified set, at the specified placement.<o:p></o:p></span></p>
+  </td>
+  <td width=511 valign=top style='width:383.6pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>pPlayer
+  = MissionLib.CreatePlayerShip(&quot;Galaxy&quot;, pSet, &quot;player&quot;,
+  &quot;Player Start&quot;)<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=145 valign=top style='width:108.55pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>SetupSpaceSet()<o:p></o:p></span></p>
+  </td>
+  <td width=217 valign=top style='width:162.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>pcSetName
+  - module name for set to create<o:p></o:p></span></p>
+  </td>
+  <td width=168 valign=top style='width:125.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>Creates
+  and initializes the set.<o:p></o:p></span></p>
+  </td>
+  <td width=511 valign=top style='width:383.6pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>pSet
+  = MissionLib.SetupSpaceSet(&quot;Systems.Starbase12.Starbase12&quot;)<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=145 valign=top style='width:108.55pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>SetupBridgeSet()<o:p></o:p></span></p>
+  </td>
+  <td width=217 valign=top style='width:162.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>pcSetName
+  - module name for set to create<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>pcModelName
+  - name of model for the bridge<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>fX,
+  fY, fZ - translate for the camera<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>fMX,
+  fMY, fMZ - translate for the model<o:p></o:p></span></p>
+  </td>
+  <td width=168 valign=top style='width:125.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>Creates
+  and initializes a set for another ship's bridge. (not the player)<o:p></o:p></span></p>
+  </td>
+  <td width=511 valign=top style='width:383.6pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>pCardSet
+  = MissionLib.SetupBridgeSet(&quot;CardSet&quot;,
+  &quot;data/Models/Sets/Cardassian/cardbridge.nif&quot;, -30, 65, -1.55)<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=145 valign=top style='width:108.55pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>SetupCharacter()<o:p></o:p></span></p>
+  </td>
+  <td width=217 valign=top style='width:162.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>pcCharacterPath
+  - path of the character<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>pcSetName
+  - name of the set<o:p></o:p></span></p>
+  </td>
+  <td width=168 valign=top style='width:125.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>Creates
+  and sets up a character on a bridge set.<o:p></o:p></span></p>
+  </td>
+  <td width=511 valign=top style='width:383.6pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>pLiu
+  = MissionLib.SetupCharacter(&quot;Bridge.Characters.Admiral_Liu&quot;,
+  &quot;StarbaseSet&quot;, 0, 0, 5)<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=145 valign=top style='width:108.55pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>CreateTimer()<o:p></o:p></span></p>
+  </td>
+  <td width=217 valign=top style='width:162.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>eType
+  - event type<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>sFunctionHandler
+  - function to run<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>fStart
+  - start time for timer<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>fDelay
+  - delay between firings<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>fDuration
+  - how long timer fires<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>bEpisode
+  - attach to episode instead of mission. default 0<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>bRealTime
+  - use real time instead of game time. default 0<o:p></o:p></span></p>
+  </td>
+  <td width=168 valign=top style='width:125.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>This
+  is a simplified interface for creating a mission timer. You specify an event
+  type, the function to run, and timer parameters, and it will create a handler
+  for the mission to deal with that timer.<o:p></o:p></span></p>
+  </td>
+  <td width=511 valign=top style='width:383.6pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>MissionLib.CreateTimer(ET_MY_EVENT_TYPE,
+  __name__ + &quot;.TimerHandler&quot;, App.g_kUtopiaModule.GetGameTime() +
+  5.0, 5.0, 5.0)<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=145 valign=top style='width:108.55pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>DeleteAllMissionTimers()<o:p></o:p></span></p>
+  </td>
+  <td width=217 valign=top style='width:162.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>none<o:p></o:p></span></p>
+  </td>
+  <td width=168 valign=top style='width:125.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>Deletes
+  all mission-level timers created by CreateTimer()<o:p></o:p></span></p>
+  </td>
+  <td width=511 valign=top style='width:383.6pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>MissionLib.DeleteAllMissionTimers()<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=145 valign=top style='width:108.55pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>DeleteAllEpisodeTimers()<o:p></o:p></span></p>
+  </td>
+  <td width=217 valign=top style='width:162.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>none<o:p></o:p></span></p>
+  </td>
+  <td width=168 valign=top style='width:125.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>Deletes
+  all episode-level timers created by CreateTimer()<o:p></o:p></span></p>
+  </td>
+  <td width=511 valign=top style='width:383.6pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>MissionLib.DeleteAllEpisodeTimers()<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=145 valign=top style='width:108.55pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>GetShip()<o:p></o:p></span></p>
+  </td>
+  <td width=217 valign=top style='width:162.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>pcShipName
+  - name of the ship<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>pSet
+  - set to search<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>bAnySet
+  - search all sets? defaults to zero<o:p></o:p></span></p>
+  </td>
+  <td width=168 valign=top style='width:125.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>Returns
+  the ship with the specified name.<o:p></o:p></span></p>
+  </td>
+  <td width=511 valign=top style='width:383.6pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>pShip
+  = MissionLib.GetShip(&quot;Galor 1&quot;, None, 1)<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=145 valign=top style='width:108.55pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>IsInSameSet()<o:p></o:p></span></p>
+  </td>
+  <td width=217 valign=top style='width:162.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>pcShip
+  - name of ship to check<o:p></o:p></span></p>
+  </td>
+  <td width=168 valign=top style='width:125.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>Checks
+  if the ship is in the same set as the player.<o:p></o:p></span></p>
+  </td>
+  <td width=511 valign=top style='width:383.6pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>if
+  MissionLib.IsInSameSet(&quot;Galor 1&quot;):<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=145 valign=top style='width:108.55pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>ProximityCheck()<o:p></o:p></span></p>
+  </td>
+  <td width=217 valign=top style='width:162.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>pMainObj
+  - object the check is centered around<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>fRadius
+  - radius to check. Negative to check if inside, positive to check if outside<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>pObjList
+  - Python list of objects that can trigger the proximity<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>pSet
+  - the set<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>eEventType
+  - event type for proximity<o:p></o:p></span></p>
+  </td>
+  <td width=168 valign=top style='width:125.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>Creates
+  a proximity check for the specified object. If an object crosses the
+  specified boundary, an event with the specified type will be sent.<o:p></o:p></span></p>
+  </td>
+  <td width=511 valign=top style='width:383.6pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>MissionLib.ProximityCheck(pPlayer,
+  500.0, [pGalor1, pGalor2], pPlayer.GetContainingSet(), ET_GALOR_ATTACK)<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=145 valign=top style='width:108.55pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>IgnoreEvent()<o:p></o:p></span></p>
+  </td>
+  <td width=217 valign=top style='width:162.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>pObject
+  - object for event<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>pEvent
+  - the event<o:p></o:p></span></p>
+  </td>
+  <td width=168 valign=top style='width:125.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>This
+  is useful to attach as an instance handler on an object to make it ignore a
+  certain event type.<o:p></o:p></span></p>
+  </td>
+  <td width=511 valign=top style='width:383.6pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>pObject.AddPythonFuncHandlerForInstance(ET_WHATEVER,
+  &quot;MissionLib.IgnoreEvent&quot;)<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=145 valign=top style='width:108.55pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>IgnoreEventOnce()<o:p></o:p></span></p>
+  </td>
+  <td width=217 valign=top style='width:162.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>pObject
+  - object for event<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>pEvent
+  - the event<o:p></o:p></span></p>
+  </td>
+  <td width=168 valign=top style='width:125.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>Like
+  IgnoreEvent(), but only ignores once.<o:p></o:p></span></p>
+  </td>
+  <td width=511 valign=top style='width:383.6pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>pObject.AddPythonFuncHandlerForInstance(ET_WHATEVER,
+  &quot;MissionLib.IgnoreEventOnce&quot;)<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=145 valign=top style='width:108.55pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>CallWaiting()<o:p></o:p></span></p>
+  </td>
+  <td width=217 valign=top style='width:162.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>bOn
+  - turn on and off<o:p></o:p></span></p>
+  </td>
+  <td width=168 valign=top style='width:125.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>This
+  function turns on and off &quot;Call Waiting&quot;, which disables menu items
+  associated with contacting other ships<o:p></o:p></span></p>
+  </td>
+  <td width=511 valign=top style='width:383.6pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>#
+  Turn on call waiting in a sequence<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>pAction
+  = App.TGScriptAction_Create(&quot;MissionLib&quot;, &quot;CallWaiting&quot;,
+  1)<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>#
+  Turn off call waiting<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>MissionLib.CallWaiting(None,
+  0)<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=145 valign=top style='width:108.55pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>ViewscreenOn()<o:p></o:p></span></p>
+  </td>
+  <td width=217 valign=top style='width:162.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>pAction
+  - for TGScriptActions<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>pcLookAtSet
+  - the set to view<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>pcName
+  - who to look at<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>fMinStatic
+  - minimum static value<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>fMaxStatic
+  - maximum static value<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>bDropMenus
+  - do we drop menus?<o:p></o:p></span></p>
+  </td>
+  <td width=168 valign=top style='width:125.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>This
+  function turns on the viewscreen to look at another set.<span
+  style="mso-spacerun: yes">  </span>You can turn static on if desired, and
+  also drop character menus and have the camera look forward.<span
+  style="mso-spacerun: yes">  </span>If you specify None as pcName, it will
+  keep the visibility of the characters as-is, not hiding anyone, and not
+  unhiding anyone.<o:p></o:p></span></p>
+  </td>
+  <td width=511 valign=top style='width:383.6pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>#
+  Turn the viewscreen on in a sequence<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>pAction
+  = App.TGScriptAction_Create(&quot;MissionLib&quot;, &quot;ViewscreenOn&quot;,
+  &quot;Starbase&quot;, &quot;Liu&quot;)<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>#
+  Turn it on directly<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>MissionLib.ViewscreenOn(None,
+  &quot;EBridgeSet&quot;, &quot;Picard&quot;, 0.1, 0.5, 0)<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>#
+  Show everyone on the set<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>MissionLib.ViewscreenOn(None,
+  &quot;WillisSet&quot;, None, 0.1, 0.5, 0)<o:p></o:p></span></p>
+  <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><span
+  style='font-size:10.0pt;mso-bidi-font-size:12.0pt'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=145 valign=top style='width:108.55pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>ViewscreenOff()<o:p></o:p></span></p>
+  </td>
+  <td width=217 valign=top style='width:162.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>pAction
+  - for TGScriptActions<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>iPlaySound
+  - whether or not to play the ViewOff sound. Defaults to 1.<o:p></o:p></span></p>
+  </td>
+  <td width=168 valign=top style='width:125.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>Changes
+  the viewscreen so it's looking at the player's set.<o:p></o:p></span></p>
+  </td>
+  <td width=511 valign=top style='width:383.6pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>#
+  Called in a sequence.<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>pAction
+  = App.TGScriptAction_Create(&quot;MissionLib&quot;,
+  &quot;ViewscreenOff&quot;)<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>#
+  Called directly.<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>MissionLib.ViewscreenOff(None)<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=145 valign=top style='width:108.55pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>SetupExtra()<o:p></o:p></span></p>
+  </td>
+  <td width=217 valign=top style='width:162.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>pcBridge
+  - name of the set to add to<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>pcName
+  - name of the extra<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>pcLocation
+  - where to place them<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>pcHeadNIF,
+  pcBodyNIF - models<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>pcHeadTexture
+  - texture of head<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>pcBodyTexture
+  - texture of body<o:p></o:p></span></p>
+  </td>
+  <td width=168 valign=top style='width:125.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>This
+  function creates a character to place on a bridge, to make it look more
+  lifelike<o:p></o:p></span></p>
+  </td>
+  <td width=511 valign=top style='width:383.6pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>#
+  Add a Kessok as a guest to our D Bridge<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>MissionLib.SetupExtra(&quot;bridge&quot;,
+  &quot;Kessok&quot;, &quot;DBGuest&quot;, &quot;HeadKessok/kessok_head.nif&quot;,
+  &quot;BodyKessok/BodyKessok.nif&quot;,
+  &quot;HeadKessok/kessok_head.tga&quot;,
+  &quot;BodyKessok/kessok_body.tga&quot;)<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=145 valign=top style='width:108.55pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>SetSpeakingVolume()<o:p></o:p></span></p>
+  </td>
+  <td width=217 valign=top style='width:162.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>pAction
+  - for TGScriptActions<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>iType
+  - type of line to set volume on<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>fVolume
+  - 0 = mute, 1 = normal<o:p></o:p></span></p>
+  </td>
+  <td width=168 valign=top style='width:125.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>This
+  function tells the characters to soften certain line types, if needed<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>CSP_SPONTANEOUS<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>CSP_NORMAL<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>CSP_MISSION_CRITICAL<o:p></o:p></span></p>
+  </td>
+  <td width=511 valign=top style='width:383.6pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>#
+  Mute &quot;spontaneous noises&quot;<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>MissionLib.SetSpeakingVolume(None,
+  App.CSP_SPONTANEOUS, 0.0)<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>#
+  Soften &quot;normal noises&quot; like &quot;Yes, Sir&quot; lines<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>pAction
+  = App.TGScriptAction_Create(&quot;MissionLib&quot;,
+  &quot;SetSpeakingVolume&quot;, App.CSP_NORMAL, 0.5)<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=145 valign=top style='width:108.55pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>PreloadSequenceLines()<o:p></o:p></span></p>
+  </td>
+  <td width=217 valign=top style='width:162.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>None<o:p></o:p></span></p>
+  </td>
+  <td width=168 valign=top style='width:125.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>This
+  searches through the sequence that contains it and preloads any voice lines
+  into memory, so they don’t hitch the framerate when that line starts.<o:p></o:p></span></p>
+  </td>
+  <td width=511 valign=top style='width:383.6pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>#
+  Create a sequence that will contain some dialogue.<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>pSequence
+  = App.TGSequence_Create()<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+  color:blue'># First thing in the sequence, setup an action to preload the
+  voice lines.<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+  color:blue'>pSequence.AddAction(
+  App.TGScriptAction_Create(&quot;MissionLib&quot;,
+  &quot;PreloadSequenceLines&quot;) )<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>#
+  Add some voice lines…<o:p></o:p></span></p>
+  <p class=MsoBodyText>pSequence.AddAction(App.CharacterAction_Create(g_pFelix,
+  App.CharacterAction.AT_SPEAK_LINE_NO_FLAP_LIPS, &quot;E6Intro1&quot;, None,
+  0, g_pMissionDatabase)</p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>pSequence.AppendAction(App.CharacterAction_Create(g_pFelix,
+  App.CharacterAction.AT_SPEAK_LINE_NO_FLAP_LIPS, &quot;E6Intro2&quot;, None,
+  0, g_pMissionDatabase)<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>#
+  Play the sequence.<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>pSequence.Play()<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=145 valign=top style='width:108.55pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>FadeOut<o:p></o:p></span></p>
+  </td>
+  <td width=217 valign=top style='width:162.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>pAction
+  – For TGScriptActions<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>fFadeTime
+  – Time (in seconds) over which to fade to black.<span style="mso-spacerun:
+  yes">  </span>Defaults to 1.5 seconds<o:p></o:p></span></p>
+  </td>
+  <td width=168 valign=top style='width:125.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>Fade
+  to black<o:p></o:p></span></p>
+  </td>
+  <td width=511 valign=top style='width:383.6pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>#
+  Add a fade out to a sequence, using the default fade-out time.<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>pSequence.AppendAction(
+  App.TGScriptAction_Create(“MissionLib”, “FadeOut”) )<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=145 valign=top style='width:108.55pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>FadeIn<o:p></o:p></span></p>
+  </td>
+  <td width=217 valign=top style='width:162.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>pAction
+  – For TGScriptActions<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>fFadeTime
+  – Time (in seconds) over which to fade back up to normal.<span
+  style="mso-spacerun: yes">  </span>Defaults to 1.5 seconds.<o:p></o:p></span></p>
+  </td>
+  <td width=168 valign=top style='width:125.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>Fade
+  from black back to normal<o:p></o:p></span></p>
+  </td>
+  <td width=511 valign=top style='width:383.6pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>#
+  Add a fade in after the fade out…<span style="mso-spacerun: yes"> 
+  </span>Take 5 seconds to fade in, though.<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>pSequence.AppendAction(
+  App.TGScriptAction_Create(“MissionLib”, “FadeIn”, 5.0) )<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=145 valign=top style='width:108.55pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>StartCutscene<o:p></o:p></span></p>
+  </td>
+  <td width=217 valign=top style='width:162.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>pAction
+  - For TGScriptActions<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>fTimeToComeIn
+  - Time (in seconds) to bring cutscene bars in, defaults to 1 sec.<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>fCoveredArea
+  - How much of the screen is covered by cutscene bars defaults to 0.125.<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>bHideReticle
+  - Do we want to hide the target reticle, defaults to true<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>bSilenceCallOuts
+  - Do we want the crew call outs silenced, defaults to true.<o:p></o:p></span></p>
+  </td>
+  <td width=168 valign=top style='width:125.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>Brings
+  down the cutscene bars and takes control away from the player.<o:p></o:p></span></p>
+  </td>
+  <td width=511 valign=top style='width:383.6pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>Normally
+  called as a script action in a TGSequence.<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>#
+  Start a standard cutscene in a sequence<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>pSequence.AppendAction(
+  App.TGScriptAction_Create(“MissionLib”, “StartCutscene”) )<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=145 valign=top style='width:108.55pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>EndCutscene<o:p></o:p></span></p>
+  </td>
+  <td width=217 valign=top style='width:162.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>pAction
+  - For TGScriptActions.<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>fTimeToLeave
+  - Time (in seconds) to bring the cutscene bars up, defaults to 1.0 sec.<o:p></o:p></span></p>
+  </td>
+  <td width=168 valign=top style='width:125.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>Brings
+  up the cutscene bars and returns control to the player.<span
+  style="mso-spacerun: yes">  </span>Also returns the volume of the crew
+  call-outs to the default level.<o:p></o:p></span></p>
+  </td>
+  <td width=511 valign=top style='width:383.6pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>Normally
+  called as script action in a TGSequence.<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>#
+  End a cutscene in a TGSequence.<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>pSequence.AppendAction(
+  App.TGScriptAction_Create(“MissionLib”, “EndCutscene”) )<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=145 valign=top style='width:108.55pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>TextBanner<o:p></o:p></span></p>
+  </td>
+  <td width=217 valign=top style='width:162.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>pAction
+  - For TGScriptActions.<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>kTextString
+  - String to display.<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>fX,
+  fY - position of the banner<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>fDuration
+  - Time (in seconds) the banner remains up, defaults to .<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>iSize
+  - Font size to use, defaults to 16.<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>bHCentered
+  - To center banner horizontally or no, defaults to true.<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>bVCentered
+  - To center banner vertically or not, defaults to false..<o:p></o:p></span></p>
+  </td>
+  <td width=168 valign=top style='width:125.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>Displays
+  a passed in string as a text banner on the screen.<span style="mso-spacerun:
+  yes">  </span>Normally called as a script action.<o:p></o:p></span></p>
+  </td>
+  <td width=511 valign=top style='width:383.6pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>#
+  Put a text banner across the top of the screen after getting<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>#
+  the string to display from a localized TGL with a 10 sec duration.<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>kSting
+  = pTGLDatabase.GetString(&quot;BannerText&quot;)<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>pSequence.AppendAction(
+  App.TGScriptAction_Create(“MissionLib”, “TextBanner”, kString, 0, 0.05, 10) )<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=145 valign=top style='width:108.55pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>AddNavPoints()<o:p></o:p></span></p>
+  </td>
+  <td width=217 valign=top style='width:162.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>sSet
+  - name of set<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>*lsNavPointNames
+  - list of names of placements to make nav points<o:p></o:p></span></p>
+  </td>
+  <td width=168 valign=top style='width:125.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>Changes
+  the specified placements to be nav points, which will then show up in the
+  helm menu.<o:p></o:p></span></p>
+  </td>
+  <td width=511 valign=top style='width:383.6pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>MissionLib.AddNavPoints(&quot;Biranu2&quot;,
+  [&quot;Placement 1&quot;, &quot;Placement 2&quot;])<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=145 valign=top style='width:108.55pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>RemoveNavPoints()<o:p></o:p></span></p>
+  </td>
+  <td width=217 valign=top style='width:162.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>same
+  as AddNavPoints()<o:p></o:p></span></p>
+  </td>
+  <td width=168 valign=top style='width:125.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>Changes
+  the specified placements to <i>not</i> be nav points. Removes them from the
+  helm menu.<o:p></o:p></span></p>
+  </td>
+  <td width=511 valign=top style='width:383.6pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>MissionLib.RemoveNavPoints(&quot;Biranu2&quot;,
+  [&quot;Placement 1&quot;, &quot;Placement 2&quot;])<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=145 valign=top style='width:108.55pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>AddCommandableShip()<o:p></o:p></span></p>
+  </td>
+  <td width=217 valign=top style='width:162.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>sShipName
+  - name of ship<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>lsCommands
+  - list of commands. optional -- if not included, will enable all commands<o:p></o:p></span></p>
+  </td>
+  <td width=168 valign=top style='width:125.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>Makes
+  a ship commandable by the player (using the hail menu). Enables the specified
+  orders (or all of them, if none were specified). Orders are
+  &quot;AttackTarget&quot;, &quot;DisableTarget&quot;,
+  &quot;DefendTarget&quot;, &quot;HelpMe&quot;.<o:p></o:p></span></p>
+  </td>
+  <td width=511 valign=top style='width:383.6pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>#
+  Only one order<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>MissionLib.AddCommandableShip(&quot;Geronimo&quot;,
+  &quot;HelpMe&quot;)<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>#
+  All orders<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>MissionLib.AddCommandableShip(&quot;Enterprise&quot;)<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=145 valign=top style='width:108.55pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>RemoveCommandableShip()<o:p></o:p></span></p>
+  </td>
+  <td width=217 valign=top style='width:162.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>sShipName
+  - name of ship<o:p></o:p></span></p>
+  </td>
+  <td width=168 valign=top style='width:125.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>Makes
+  the ship no longer commandable by the player.<o:p></o:p></span></p>
+  </td>
+  <td width=511 valign=top style='width:383.6pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>MissionLib.RemoveCommandableShip(&quot;Enterprise&quot;)<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=145 valign=top style='width:108.55pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>RemoveAllCommandableShips()<o:p></o:p></span></p>
+  </td>
+  <td width=217 valign=top style='width:162.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><span
+  style='font-size:10.0pt;mso-bidi-font-size:12.0pt'><o:p></o:p></span></p>
+  </td>
+  <td width=168 valign=top style='width:125.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>Removes
+  all ships from the list that can be commanded by the player.<o:p></o:p></span></p>
+  </td>
+  <td width=511 valign=top style='width:383.6pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>MissionLib.RemoveAllCommandableShips()<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=145 valign=top style='width:108.55pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>AddGoal()<o:p></o:p></span></p>
+  </td>
+  <td width=217 valign=top style='width:162.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>pcGoalStringID
+  - list of goal string IDs to add to first officer's menu<o:p></o:p></span></p>
+  </td>
+  <td width=168 valign=top style='width:125.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>Used
+  to add objectives to the first officer's menu.<o:p></o:p></span></p>
+  </td>
+  <td width=511 valign=top style='width:383.6pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>MissionLib.AddGoal(&quot;Goal1&quot;,
+  &quot;Goal2&quot;, &quot;Goal3&quot;)<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=145 valign=top style='width:108.55pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>AddGoalAction()<o:p></o:p></span></p>
+  </td>
+  <td width=217 valign=top style='width:162.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>pAction
+  - for TGScriptActions<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>pcGoalStringID
+  - goal to add<o:p></o:p></span></p>
+  </td>
+  <td width=168 valign=top style='width:125.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>Like
+  AddGoal(), but called as a script action.<o:p></o:p></span></p>
+  </td>
+  <td width=511 valign=top style='width:383.6pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>pAction
+  = App.TGScriptAction_Create(&quot;MissionLib&quot;,
+  &quot;AddGoalAction&quot;, &quot;Goal1&quot;)<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=145 valign=top style='width:108.55pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>RemoveGoal()<o:p></o:p></span></p>
+  </td>
+  <td width=217 valign=top style='width:162.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>pcGoalStringID
+  - goal to disable<o:p></o:p></span></p>
+  </td>
+  <td width=168 valign=top style='width:125.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>Disables
+  the goal in the first officer's menu.<o:p></o:p></span></p>
+  </td>
+  <td width=511 valign=top style='width:383.6pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>MissionLib.RemoveGoal(&quot;Goal1&quot;)<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=145 valign=top style='width:108.55pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>RemoveGoalAction()<o:p></o:p></span></p>
+  </td>
+  <td width=217 valign=top style='width:162.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>pAction
+  - for TGScriptActions<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>pcGoalStringID
+  - goal to disable<o:p></o:p></span></p>
+  </td>
+  <td width=168 valign=top style='width:125.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>Like
+  RemoveGoal(), but called as a script action.<o:p></o:p></span></p>
+  </td>
+  <td width=511 valign=top style='width:383.6pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>pAction
+  = App.TGScriptAction_Create(&quot;MissionLib&quot;, &quot;RemoveGoalAction&quot;,
+  &quot;Goal1&quot;)<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=145 valign=top style='width:108.55pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>DeleteGoal()<o:p></o:p></span></p>
+  </td>
+  <td width=217 valign=top style='width:162.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>pcGoalStringID
+  - goal to delete<o:p></o:p></span></p>
+  </td>
+  <td width=168 valign=top style='width:125.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>Deletes
+  the goal from the first officer's menu.<o:p></o:p></span></p>
+  </td>
+  <td width=511 valign=top style='width:383.6pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>MissionLib.DeleteGoal(&quot;Goal2&quot;)<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=145 valign=top style='width:108.55pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>DeleteAllGoals()<o:p></o:p></span></p>
+  </td>
+  <td width=217 valign=top style='width:162.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><span
+  style='font-size:10.0pt;mso-bidi-font-size:12.0pt'><o:p></o:p></span></p>
+  </td>
+  <td width=168 valign=top style='width:125.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>Deletes
+  all goals from the first officer's menu.<o:p></o:p></span></p>
+  </td>
+  <td width=511 valign=top style='width:383.6pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>MissionLib.DeleteAllGoals()<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=145 valign=top style='width:108.55pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>GameOver()<o:p></o:p></span></p>
+  </td>
+  <td width=217 valign=top style='width:162.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>pAction
+  - for TGScriptActions<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>pSequence
+  - alternate &quot;you lose&quot; sequence to use<o:p></o:p></span></p>
+  </td>
+  <td width=168 valign=top style='width:125.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>Does
+  a &quot;game over&quot; -- tells the player they failed, fades to black,
+  brings up game over screen. Can use provided sequence instead of default
+  &quot;you failed&quot; message.<o:p></o:p></span></p>
+  </td>
+  <td width=511 valign=top style='width:383.6pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>pAction
+  = App.TGScriptAction_Create(&quot;MissionLib&quot;, &quot;GameOver&quot;)<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=145 valign=top style='width:108.55pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>LookForward()<o:p></o:p></span></p>
+  </td>
+  <td width=217 valign=top style='width:162.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>pAction
+  - for TGScriptActions<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>bWaitForSweep
+  - wait for sweep to complete before completing action<o:p></o:p></span></p>
+  </td>
+  <td width=168 valign=top style='width:125.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>Makes
+  the player's bridge camera look forward, at the viewscreen.<o:p></o:p></span></p>
+  </td>
+  <td width=511 valign=top style='width:383.6pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>pAction
+  = App.TGScriptAction_Create(&quot;MissionLib&quot;, &quot;LookForward&quot;,
+  1)<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=145 valign=top style='width:108.55pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>GetDistance()<o:p></o:p></span></p>
+  </td>
+  <td width=217 valign=top style='width:162.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>pObj1,
+  pObj2 - objects to compare<o:p></o:p></span></p>
+  </td>
+  <td width=168 valign=top style='width:125.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>Returns
+  the straight-line distance between the two objects.<o:p></o:p></span></p>
+  </td>
+  <td width=511 valign=top style='width:383.6pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>fDist
+  = MissionLib.GetDistance(pObj1, pObj2)<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=145 valign=top style='width:108.55pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>CreateCompletionEvent<o:p></o:p></span></p>
+  </td>
+  <td width=217 valign=top style='width:162.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>pAction
+  - For TGScriptActions.<o:p></o:p></span></p>
+  <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><span
+  style='font-size:10.0pt;mso-bidi-font-size:12.0pt'><o:p></o:p></span></p>
+  </td>
+  <td width=168 valign=top style='width:125.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>Creates
+  and returns a ET_ACTION_COMPLETED TGObjPtr Event for given action.<o:p></o:p></span></p>
+  </td>
+  <td width=511 valign=top style='width:383.6pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>def
+  WhatuSay(pAction):<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>#
+  Delay main sequence until action has been completed. <o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>pSeq
+  = App.TGSequence_Create()<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>pAction
+  = App.CharacterAction_Create(pFelix, App.CharacterAction.AT_MOVE,
+  &quot;L1&quot;)<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>pSeq.AppendAction(pAction)<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>pSeq.AddCompletedEvent(MissionLib.CreateCompletionEvent(pAction))<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>pSeq.Play()<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>#
+  Function returns 1<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>return
+  1<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+</div>
+
+</body>
+
+</html>

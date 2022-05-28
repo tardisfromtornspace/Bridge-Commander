@@ -1,0 +1,256 @@
+# C:\Program Files\Activision\Bridge Commander\scripts\ships\Hardpoints\PegInactive.py
+# This file was automatically generated - modify at your own risk.
+# 
+
+import App
+import GlobalPropertyTemplates
+# Setting up local templates.
+#################################################
+Hull = App.HullProperty_Create("Hull")
+
+Hull.SetMaxCondition(350.000000)
+Hull.SetCritical(1)
+Hull.SetTargetable(1)
+Hull.SetPrimary(1)
+Hull.SetPosition(0.070000, 0.000000, 0.000000)
+Hull.SetPosition2D(67.000000, 47.000000)
+Hull.SetRepairComplexity(3.000000)
+Hull.SetDisabledPercentage(0.000000)
+Hull.SetRadius(0.005000)
+App.g_kModelPropertyManager.RegisterLocalTemplate(Hull)
+#################################################
+Capacitors = App.PowerProperty_Create("Capacitors")
+
+Capacitors.SetMaxCondition(250.000000)
+Capacitors.SetCritical(1)
+Capacitors.SetTargetable(0)
+Capacitors.SetPrimary(1)
+Capacitors.SetPosition(0.000000, 0.000000, 0.000000)
+Capacitors.SetPosition2D(65.000000, 70.000000)
+Capacitors.SetRepairComplexity(2.000000)
+Capacitors.SetDisabledPercentage(0.500000)
+Capacitors.SetRadius(0.050000)
+Capacitors.SetMainBatteryLimit(10000.000000)
+Capacitors.SetBackupBatteryLimit(5000.000000)
+Capacitors.SetMainConduitCapacity(200.000000)
+Capacitors.SetBackupConduitCapacity(100.000000)
+Capacitors.SetPowerOutput(1000.000000)
+App.g_kModelPropertyManager.RegisterLocalTemplate(Capacitors)
+#################################################
+SensorArray = App.SensorProperty_Create("Sensor Array")
+
+SensorArray.SetMaxCondition(1000.000000)
+SensorArray.SetCritical(0)
+SensorArray.SetTargetable(0)
+SensorArray.SetPrimary(1)
+SensorArray.SetPosition(0.000000, 0.000000, 0.072500)
+SensorArray.SetPosition2D(65.000000, 15.000000)
+SensorArray.SetRepairComplexity(1.000000)
+SensorArray.SetDisabledPercentage(0.750000)
+SensorArray.SetRadius(0.010000)
+SensorArray.SetNormalPowerPerSecond(30.000000)
+SensorArray.SetBaseSensorRange(1000.000000)
+SensorArray.SetMaxProbes(0)
+App.g_kModelPropertyManager.RegisterLocalTemplate(SensorArray)
+#################################################
+ShieldGenerator = App.ShieldProperty_Create("Shield Generator")
+
+ShieldGenerator.SetMaxCondition(300.000000)
+ShieldGenerator.SetCritical(0)
+ShieldGenerator.SetTargetable(0)
+ShieldGenerator.SetPrimary(1)
+ShieldGenerator.SetPosition(0.000000, 0.000000, 0.072500)
+ShieldGenerator.SetPosition2D(66.000000, 70.000000)
+ShieldGenerator.SetRepairComplexity(1.000000)
+ShieldGenerator.SetDisabledPercentage(0.500000)
+ShieldGenerator.SetRadius(0.002000)
+ShieldGenerator.SetNormalPowerPerSecond(1.000000)
+ShieldGeneratorShieldGlowColor = App.TGColorA()
+ShieldGeneratorShieldGlowColor.SetRGBA(0.000000, 0.000000, 0.000000, 0.000000)
+ShieldGenerator.SetShieldGlowColor(ShieldGeneratorShieldGlowColor)
+ShieldGenerator.SetShieldGlowDecay(1.000000)
+ShieldGenerator.SetMaxShields(ShieldGenerator.FRONT_SHIELDS, 0.000000)
+ShieldGenerator.SetMaxShields(ShieldGenerator.REAR_SHIELDS, 0.000000)
+ShieldGenerator.SetMaxShields(ShieldGenerator.TOP_SHIELDS, 0.000000)
+ShieldGenerator.SetMaxShields(ShieldGenerator.BOTTOM_SHIELDS, 0.000000)
+ShieldGenerator.SetMaxShields(ShieldGenerator.LEFT_SHIELDS, 0.000000)
+ShieldGenerator.SetMaxShields(ShieldGenerator.RIGHT_SHIELDS, 0.000000)
+ShieldGenerator.SetShieldChargePerSecond(ShieldGenerator.FRONT_SHIELDS, 0.000000)
+ShieldGenerator.SetShieldChargePerSecond(ShieldGenerator.REAR_SHIELDS, 0.000000)
+ShieldGenerator.SetShieldChargePerSecond(ShieldGenerator.TOP_SHIELDS, 0.000000)
+ShieldGenerator.SetShieldChargePerSecond(ShieldGenerator.BOTTOM_SHIELDS, 0.000000)
+ShieldGenerator.SetShieldChargePerSecond(ShieldGenerator.LEFT_SHIELDS, 0.000000)
+ShieldGenerator.SetShieldChargePerSecond(ShieldGenerator.RIGHT_SHIELDS, 0.000000)
+App.g_kModelPropertyManager.RegisterLocalTemplate(ShieldGenerator)
+#################################################
+PegInactive = App.ShipProperty_Create("PegInactive")
+
+PegInactive.SetGenus(1)
+PegInactive.SetSpecies(778)
+PegInactive.SetMass(80.000000)
+PegInactive.SetRotationalInertia(2000.000000)
+PegInactive.SetShipName("PegInactive")
+PegInactive.SetModelFilename("data/Models/Ships/Stargates/PegInactive.NIF")
+PegInactive.SetDamageResolution(0.000100)
+PegInactive.SetAffiliation(0)
+PegInactive.SetStationary(1)
+PegInactive.SetAIString("StarbaseAttack")
+PegInactive.SetDeathExplosionSound("g_lsDeathExplosions")
+App.g_kModelPropertyManager.RegisterLocalTemplate(PegInactive)
+#################################################
+ViewscreenForward = App.PositionOrientationProperty_Create("ViewscreenForward")
+
+ViewscreenForwardForward = App.TGPoint3()
+ViewscreenForwardForward.SetXYZ(0.000000, 1.000000, 0.000000)
+ViewscreenForwardUp = App.TGPoint3()
+ViewscreenForwardUp.SetXYZ(0.000000, 0.000000, 1.000000)
+ViewscreenForwardRight = App.TGPoint3()
+ViewscreenForwardRight.SetXYZ(1.000000, 0.000000, 0.000000)
+ViewscreenForward.SetOrientation(ViewscreenForwardForward, ViewscreenForwardUp, ViewscreenForwardRight)
+ViewscreenForwardPosition = App.TGPoint3()
+ViewscreenForwardPosition.SetXYZ(0.000000, 0.320000, 0.030000)
+ViewscreenForward.SetPosition(ViewscreenForwardPosition)
+App.g_kModelPropertyManager.RegisterLocalTemplate(ViewscreenForward)
+#################################################
+ViewscreenLeft = App.PositionOrientationProperty_Create("ViewscreenLeft")
+
+ViewscreenLeftForward = App.TGPoint3()
+ViewscreenLeftForward.SetXYZ(-1.000000, 0.000000, 0.000000)
+ViewscreenLeftUp = App.TGPoint3()
+ViewscreenLeftUp.SetXYZ(0.000000, 0.000000, 1.000000)
+ViewscreenLeftRight = App.TGPoint3()
+ViewscreenLeftRight.SetXYZ(0.000000, 1.000000, 0.000000)
+ViewscreenLeft.SetOrientation(ViewscreenLeftForward, ViewscreenLeftUp, ViewscreenLeftRight)
+ViewscreenLeftPosition = App.TGPoint3()
+ViewscreenLeftPosition.SetXYZ(0.000000, 0.320000, 0.030000)
+ViewscreenLeft.SetPosition(ViewscreenLeftPosition)
+App.g_kModelPropertyManager.RegisterLocalTemplate(ViewscreenLeft)
+#################################################
+ViewscreenRight = App.PositionOrientationProperty_Create("ViewscreenRight")
+
+ViewscreenRightForward = App.TGPoint3()
+ViewscreenRightForward.SetXYZ(1.000000, 0.000000, 0.000000)
+ViewscreenRightUp = App.TGPoint3()
+ViewscreenRightUp.SetXYZ(0.000000, 0.000000, 1.000000)
+ViewscreenRightRight = App.TGPoint3()
+ViewscreenRightRight.SetXYZ(0.000000, 1.000000, 0.000000)
+ViewscreenRight.SetOrientation(ViewscreenRightForward, ViewscreenRightUp, ViewscreenRightRight)
+ViewscreenRightPosition = App.TGPoint3()
+ViewscreenRightPosition.SetXYZ(0.000000, 0.320000, 0.030000)
+ViewscreenRight.SetPosition(ViewscreenRightPosition)
+App.g_kModelPropertyManager.RegisterLocalTemplate(ViewscreenRight)
+#################################################
+ViewscreenBack = App.PositionOrientationProperty_Create("ViewscreenBack")
+
+ViewscreenBackForward = App.TGPoint3()
+ViewscreenBackForward.SetXYZ(0.000000, -1.000000, 0.000000)
+ViewscreenBackUp = App.TGPoint3()
+ViewscreenBackUp.SetXYZ(0.000000, 0.000000, 1.000000)
+ViewscreenBackRight = App.TGPoint3()
+ViewscreenBackRight.SetXYZ(-1.000000, 0.000000, 0.000000)
+ViewscreenBack.SetOrientation(ViewscreenBackForward, ViewscreenBackUp, ViewscreenBackRight)
+ViewscreenBackPosition = App.TGPoint3()
+ViewscreenBackPosition.SetXYZ(0.000000, -0.220000, 0.040000)
+ViewscreenBack.SetPosition(ViewscreenBackPosition)
+App.g_kModelPropertyManager.RegisterLocalTemplate(ViewscreenBack)
+#################################################
+ViewscreenUp = App.PositionOrientationProperty_Create("ViewscreenUp")
+
+ViewscreenUpForward = App.TGPoint3()
+ViewscreenUpForward.SetXYZ(0.000000, 0.000000, 1.000000)
+ViewscreenUpUp = App.TGPoint3()
+ViewscreenUpUp.SetXYZ(0.000000, -1.000000, 0.000000)
+ViewscreenUpRight = App.TGPoint3()
+ViewscreenUpRight.SetXYZ(1.000000, 0.000000, 0.000000)
+ViewscreenUp.SetOrientation(ViewscreenUpForward, ViewscreenUpUp, ViewscreenUpRight)
+ViewscreenUpPosition = App.TGPoint3()
+ViewscreenUpPosition.SetXYZ(0.000000, 0.000000, 0.150000)
+ViewscreenUp.SetPosition(ViewscreenUpPosition)
+App.g_kModelPropertyManager.RegisterLocalTemplate(ViewscreenUp)
+#################################################
+ViewscreenDown = App.PositionOrientationProperty_Create("ViewscreenDown")
+
+ViewscreenDownForward = App.TGPoint3()
+ViewscreenDownForward.SetXYZ(0.000000, 0.000000, -1.000000)
+ViewscreenDownUp = App.TGPoint3()
+ViewscreenDownUp.SetXYZ(0.000000, 1.000000, 0.000000)
+ViewscreenDownRight = App.TGPoint3()
+ViewscreenDownRight.SetXYZ(1.000000, 0.000000, 0.000000)
+ViewscreenDown.SetOrientation(ViewscreenDownForward, ViewscreenDownUp, ViewscreenDownRight)
+ViewscreenDownPosition = App.TGPoint3()
+ViewscreenDownPosition.SetXYZ(0.000000, 0.000000, -0.080000)
+ViewscreenDown.SetPosition(ViewscreenDownPosition)
+App.g_kModelPropertyManager.RegisterLocalTemplate(ViewscreenDown)
+#################################################
+FirstPersonCamera = App.PositionOrientationProperty_Create("FirstPersonCamera")
+
+FirstPersonCameraForward = App.TGPoint3()
+FirstPersonCameraForward.SetXYZ(0.000000, 1.000000, 0.000000)
+FirstPersonCameraUp = App.TGPoint3()
+FirstPersonCameraUp.SetXYZ(0.000000, 0.000000, 1.000000)
+FirstPersonCameraRight = App.TGPoint3()
+FirstPersonCameraRight.SetXYZ(1.000000, 0.000000, 0.000000)
+FirstPersonCamera.SetOrientation(FirstPersonCameraForward, FirstPersonCameraUp, FirstPersonCameraRight)
+FirstPersonCameraPosition = App.TGPoint3()
+FirstPersonCameraPosition.SetXYZ(0.000000, 0.320000, 0.030000)
+FirstPersonCamera.SetPosition(FirstPersonCameraPosition)
+App.g_kModelPropertyManager.RegisterLocalTemplate(FirstPersonCamera)
+#################################################
+Engineering = App.RepairSubsystemProperty_Create("Engineering")
+
+Engineering.SetMaxCondition(2000.000000)
+Engineering.SetCritical(0)
+Engineering.SetTargetable(0)
+Engineering.SetPrimary(1)
+Engineering.SetPosition(0.000000, 0.000000, 11.000000)
+Engineering.SetPosition2D(0.000000, 0.000000)
+Engineering.SetRepairComplexity(1.000000)
+Engineering.SetDisabledPercentage(0.500000)
+Engineering.SetRadius(0.060000)
+Engineering.SetNormalPowerPerSecond(1.000000)
+Engineering.SetMaxRepairPoints(0.001000)
+Engineering.SetNumRepairTeams(1)
+App.g_kModelPropertyManager.RegisterLocalTemplate(Engineering)
+
+# Property load function.
+def LoadPropertySet(pObj):
+	"Sets up the object's properties."
+	prop = App.g_kModelPropertyManager.FindByName("Hull", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	if (prop != None):
+		pObj.AddToSet("Scene Root", prop)
+	prop = App.g_kModelPropertyManager.FindByName("Shield Generator", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	if (prop != None):
+		pObj.AddToSet("Scene Root", prop)
+	prop = App.g_kModelPropertyManager.FindByName("Sensor Array", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	if (prop != None):
+		pObj.AddToSet("Scene Root", prop)
+	prop = App.g_kModelPropertyManager.FindByName("Engineering", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	if (prop != None):
+		pObj.AddToSet("Scene Root", prop)
+	prop = App.g_kModelPropertyManager.FindByName("ViewscreenForward", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	if (prop != None):
+		pObj.AddToSet("Scene Root", prop)
+	prop = App.g_kModelPropertyManager.FindByName("ViewscreenBack", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	if (prop != None):
+		pObj.AddToSet("Scene Root", prop)
+	prop = App.g_kModelPropertyManager.FindByName("ViewscreenLeft", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	if (prop != None):
+		pObj.AddToSet("Scene Root", prop)
+	prop = App.g_kModelPropertyManager.FindByName("ViewscreenRight", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	if (prop != None):
+		pObj.AddToSet("Scene Root", prop)
+	prop = App.g_kModelPropertyManager.FindByName("ViewscreenUp", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	if (prop != None):
+		pObj.AddToSet("Scene Root", prop)
+	prop = App.g_kModelPropertyManager.FindByName("ViewscreenDown", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	if (prop != None):
+		pObj.AddToSet("Scene Root", prop)
+	prop = App.g_kModelPropertyManager.FindByName("FirstPersonCamera", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	if (prop != None):
+		pObj.AddToSet("Scene Root", prop)
+	prop = App.g_kModelPropertyManager.FindByName("PegInactive", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	if (prop != None):
+		pObj.AddToSet("Scene Root", prop)
+	prop = App.g_kModelPropertyManager.FindByName("Capacitors", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	if (prop != None):
+		pObj.AddToSet("Scene Root", prop)

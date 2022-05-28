@@ -1,0 +1,28 @@
+#This is the dump of the LogCreator: <TIE X1-10 Travel Logger LogCreator_T0uMU8fm2x0Q>
+#This log file was created on: 16:21:25.999 of 22/June/2017, Thursday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>16:21:25.999 of 22/June/2017, Thursday
+#>>>Initialized TIE X1-10 Travel logger
+#>>>SELF = <TIE X1-10(90471) Travel_1ROP5WV6r1qp>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>16:21:43.837 of 22/June/2017, Thursday
+#>>> -Cancelling, too close to target to warp intercept...

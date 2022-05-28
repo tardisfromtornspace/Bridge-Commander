@@ -1,0 +1,28 @@
+#This is the dump of the LogCreator: <CardStarbase 13 Travel Logger LogCreator_I61u5p16YK59>
+#This log file was created on: 20:49:44.272 of 21/February/2017, Tuesday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>20:49:44.272 of 21/February/2017, Tuesday
+#>>>Initialized CardStarbase 13 Travel logger
+#>>>SELF = <CardStarbase 13(2129852) Travel_y5Eo80z6Pb13>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: Player Travel Destination OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+########################################
+# 21:6:20.462 of 21/February/2017, Tuesday
+#Ending of log dump - User is quiting the game
+########################################

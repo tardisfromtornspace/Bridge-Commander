@@ -1,0 +1,47 @@
+#This is the dump of the LogCreator: <MvamPrometheusDorsal Travel Logger LogCreator_bs5d80ScG43s>
+#This log file was created on: 18:7:6.877 of 4/May/2017, Thursday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>18:7:6.877 of 4/May/2017, Thursday
+#>>>Initialized MvamPrometheusDorsal Travel logger
+#>>>SELF = <MvamPrometheusDorsal(207315) Travel_2HHIVv3FmCdy>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>18:8:10.675 of 4/May/2017, Thursday
+#>>>Updated Target Ship = X-303-1
+## -------------------- ##
+####################
+#######>>>18:8:58.948 of 4/May/2017, Thursday
+#>>>Updated Target Ship = F3026 1
+## -------------------- ##
+####################
+#######>>>18:9:14.705 of 4/May/2017, Thursday
+#>>>Updated Target Ship = F3022 1
+## -------------------- ##
+####################
+#######>>>18:9:43.842 of 4/May/2017, Thursday
+#>>>Updated Target Ship = F3023 1
+## -------------------- ##
+####################
+#######>>>18:9:59.608 of 4/May/2017, Thursday
+#>>>Updated Target Ship = Prometheus 1
+########################################
+# 18:12:48.683 of 4/May/2017, Thursday
+#Ending of log dump - User is quiting the game
+########################################

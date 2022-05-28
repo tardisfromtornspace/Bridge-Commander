@@ -1,0 +1,25 @@
+#This is the dump of the LogCreator: <HeavyRaider 4 Travel Logger[2] LogCreator_UjyN5SLIsO8j>
+#This log file was created on: 19:0:43.249 of 3/May/2017, Wednesday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>19:0:43.249 of 3/May/2017, Wednesday
+#>>>Initialized HeavyRaider 4 Travel logger
+#>>>SELF = <HeavyRaider 4(984729) Travel_cyEV29WDESc6>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Ship is dead or dying
+#>>>Ship is dead or dying (at SetDestination)
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>19:0:44.378 of 3/May/2017, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...

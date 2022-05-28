@@ -1,0 +1,19 @@
+[ActiveNet]
+Cmdline=
+Name=Star Trek: Bridge Commander
+Run=stbc.exe
+SessionType=
+Platform=1
+Language=1
+Version=55.2
+ShellOpts=
+
+[Version Info]
+Version=1.0
+Branch=0.0
+QA=2339
+               
+[Product Info]
+ProductID=stbcw98
+ProductName=Star Trek: Bridge Commander
+WebReg=http://cgi.activision.com/cgi/webreg/webreg

@@ -1,0 +1,69 @@
+Title : Delta Flyer Bridge
+Filename : Delta Flyer Cockpit v.1.1.rar
+Version : 1.1
+Date : 1/5/2012, 8/23/2018
+Author : Lurok91
+
+
+CHANGELOG SINCE V1.0
+--------------------------------
+
+This new beta release is to get feedback on new open side windows and viewscreen.  Please report any helpful feedback in the Delta Flyer WIP thread at BCC.  As textures unchanged, this beta release only includes new bridge model and viewscreen, and revised animations and scripts which should overwrite original beta install.  
+
+
+V.1.1 Experimental Viewscreen:
+
+To give the illusion of total conversion, the cockpit viewscreen was made into a globe. This in theory should give the player
+the immersion of seeing visible movement on the port and starboard cockpit viewports.
+
+
+v.1.0 Known Bug/Issues: 
+ 
+There will be stretch/distortion as eyeline moves to edges of viewscreen.  Also repeat of ingame target model as eyeline moves to left edge of viewscreen. 
+These seem to be endemic to model properties in BC engine and may not be resolveable but will continue to experiment.
+
+
+
+DESCRIPTION
+------------------
+
+This is iconic Delta Flyer bridge as seen in Star Trek: Voyager.  This set comes with custom red, yellow and green alerts. To give the illusion of total conversion, the bridge cockpit viewscreen was made into a globe. This should give the player, the immersion of seeing visible action movement on the port and starboard cockpit viewports. 
+
+CREDITS
+-----------
+
+Original DF bridge design : Paramount Studios
+Mesh, textures, lightmaps & scripting :  Lurok91
+Bridge LCARS based on original work by: Robert aka Explorer/Deif/Lurok91
+
+Final Mod Packaging and Debugging: Blackrook32
+
+Special thanks to 3rd Era and all at the BCC community for their encouragement and support (especially JimmyB, Baz, Nero, Bones and Tiqhud and Barihawk).  
+And a special final thanks to all the beta testers :)
+
+
+Technical Details
+---------------------
+Tested with BC version 1.1 with Kobayashi Maru 1.0 
+
+
+Known Bugs
+----------------
+Please report any bugs and feedback to Lurok91 via BCC. 
+
+
+Install instructions
+--------------------
+
+1 Drag and copy the  folders from the ZIP into your main BC directory
+2 This should not ask to overwrite anything (but if it does will be safe to overwrite) and will install as a separate bridge (Delta Flyer Bridge in bridge menu scroller)
+
+
+-------------------------------------------------------------------------
+THIS MODEL(S) IS NOT MADE, DISTRIBUTED, OR SUPPORTED BY Activision
+TM & (C) INTERPLAY & PARAMOUNT PICTURES.
+Copyright Notices: 
+Star Trek, Bridge Commander, Star Trek: Deep Space Nine, Star Trek: The Next Generation, Star Trek: Voyager (and the various logo devices used in them)
+are copyright Paramount Pictures, as are the characters, related images, and sound from the productions. 
+
+Please do not modify this file or the included textures without seeking the authors permission.

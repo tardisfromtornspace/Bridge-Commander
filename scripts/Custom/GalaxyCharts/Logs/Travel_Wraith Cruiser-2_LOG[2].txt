@@ -1,0 +1,50 @@
+#This is the dump of the LogCreator: <Wraith Cruiser-2 Travel Logger[2] LogCreator_PfU7fAE4HVlW>
+#This log file was created on: 21:28:5.015 of 17/May/2017, Wednesday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>21:28:5.015 of 17/May/2017, Wednesday
+#>>>Initialized Wraith Cruiser-2 Travel logger
+#>>>SELF = <Wraith Cruiser-2(404798) Travel_67SCgDpuF39E>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>21:28:16.035 of 17/May/2017, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>21:28:18.440 of 17/May/2017, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>21:28:21.445 of 17/May/2017, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>21:30:9.521 of 17/May/2017, Wednesday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 22:6:59.077 of 17/May/2017, Wednesday
+#Ending of log dump - User is quiting the game
+########################################

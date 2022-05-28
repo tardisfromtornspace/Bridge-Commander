@@ -1,0 +1,102 @@
+Okay, I notice that you have:
+App.TopWindow_GetTopWindow().AddPythonFuncHandlerForInstance(App.ET_INPUT_PLAYER_SELF_DESTRUCT, __name__ + ".MySelfDestruct")
+
+Hopefully that's one line in your script, and it was just when it became an email that it inserted the enter there.  Now, move that down a few lines - right before the "# Debugging ONLY" line.  Basically, you put your lines of code in the middle of a list, which, unfortunately, is the one spot in that function that won't work for you.
+
+Also, you had this:
+
+def FinallyDie():
+
+pPlayer = MissionLib.GetPlayer()
+
+if not (pPlayer):
+
+return
+
+pPlayer.DestroySystem(pPlayer.GetHull())
+
+Make sure that the code reads "if not (pPlayer):" rather than "f not(pPlayer):", "return" rather than "eturn", and "pPlayer.DestroySystem" rather than "Player.DestroySystem"
+
+In your message, I got this:
+
+# Create a timer - it's a thing that will wait for a given time,
+
+then do something
+
+That should be a single line in your script - again, don't know if that was something that happened in the email or not.
+
+
+
+
+
+
+
+
+
+
+
+
+Sure.. as I said in my post to the message boards, this mod is somewhat
+complex - not difficult, just involved.  I haven't tested it, either, since
+I actually don't have BC installed right now, but if it doesn't work, drop
+me another note and I'll re-install/fix the script.  
+
+Now, a good rule of thumb for any modding is to be sure to make a backup
+copy of the files you're planning on changing, that way if something goes
+wrong, you can always restore your backup and still have a playable game.
+
+Okay, first, open up Scripts/BridgeHandlers.py, and go to the def Initialize() function.  
+At the end of the function, add the following:
+
+App.TopWindow_GetTopWindow().AddPythonFuncHandlerForInstance(App.ET_INPUT_PLAYER_SELF_DESTRUCT, __name__ + ".MySelfDestruct")
+
+(be sure to keep the tab, since Python is tab-based.  If your tabs don't
+line up, the script will fail to load, and the game won't work.  And it has
+to be tabs, not spaces).
+
+Next, let's go down to the end of the file, and add this:
+
+g_iCountdown = -1
+
+def MySelfDestruct(pObject, pEvent):
+if (g_iCountdown == -1):
+# We are starting our countdown..
+g_iCountdown = 11
+else if (g_iCountdown == 0):
+# We're dead!
+FinallyDie()
+return
+
+g_iCountdown = g_iCountdown - 1
+
+# Create an event - it's a thing that will call this function
+pTimerEvent = App.TGEvent_Create()
+pTimerEvent.SetEventType(App.ET_INPUT_PLAYER_SELF_DESTRUCT)
+pTimerEvent.SetDestination(App.TopWindow_GetTopWindow())
+
+# Create a timer - it's a thing that will wait for a given time,then do something
+pTimer = App.TGTimer_Create()
+pTimer.SetTimerStart(App.g_kUtopiaModule.GetGameTime() + 1.0)
+pTimer.SetDelay(0)
+pTimer.SetDuration(0)
+pTimer.SetEvent(pTimerEvent)
+App.g_kTimerManager.AddTimer(pTimer)
+
+# And finally, call out the line..
+pCharacter = App.CharacterClass_Cast(App.g_kSetManager.GetSet("bridge").GetObject("XO"))
+if (pCharacter):
+pCharacter.SpeakLine(pCharacter.GetDatabase(),"SelfDestruct" + str(g_iCountdown))
+
+def FinallyDie():
+pPlayer = MissionLib.GetPlayer()
+if not (pPlayer):
+return
+
+pPlayer.DestroySystem(pPlayer.GetHull())
+
+
+
+Now, I can't remember if Saffi's TGL has "SelfDestruct10" through
+"SelfDestruct0" in it or not.. if not, you'll have to add them to the .DOC
+and then export the TGL.  It's not too hard, and instructions are included
+with the SDK.

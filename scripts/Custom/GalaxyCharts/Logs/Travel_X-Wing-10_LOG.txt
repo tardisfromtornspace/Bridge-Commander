@@ -1,0 +1,41 @@
+#This is the dump of the LogCreator: <X-Wing-10 Travel Logger LogCreator_uG1pj01b3J7I>
+#This log file was created on: 16:2:27.520 of 28/May/2017, Sunday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>16:2:27.520 of 28/May/2017, Sunday
+#>>>Initialized X-Wing-10 Travel logger
+#>>>SELF = <X-Wing-10(556811) Travel_HH1XBN2ub0Wu>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Omega Class-1
+## -------------------- ##
+####################
+#######>>>16:2:43.126 of 28/May/2017, Sunday
+#>>>Updated Target Ship = Starfury SA-23E-2
+## -------------------- ##
+####################
+#######>>>16:2:48.742 of 28/May/2017, Sunday
+#>>>Updated Target Ship = Omega Class-1
+## -------------------- ##
+####################
+#######>>>16:2:53.962 of 28/May/2017, Sunday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 16:7:15.184 of 28/May/2017, Sunday
+#Ending of log dump - User is quiting the game
+########################################

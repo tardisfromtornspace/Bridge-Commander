@@ -1,0 +1,37 @@
+#This is the dump of the LogCreator: <Hive Ship-3 Travel Logger[2] LogCreator_9K5t9Lrb7YM1>
+#This log file was created on: 21:28:5.015 of 17/May/2017, Wednesday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>21:28:5.015 of 17/May/2017, Wednesday
+#>>>Initialized Hive Ship-3 Travel logger
+#>>>SELF = <Hive Ship-3(405119) Travel_CtQCURynIspN>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>21:28:10.794 of 17/May/2017, Wednesday
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>21:28:16.035 of 17/May/2017, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+########################################
+# 22:6:59.077 of 17/May/2017, Wednesday
+#Ending of log dump - User is quiting the game
+########################################

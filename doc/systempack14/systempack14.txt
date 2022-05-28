@@ -1,0 +1,78 @@
+BanzaiZAP System Pack 14
+
+This is a modification of the original game Star Trek:Bridge Commander by Totally Games and Activision. Neither party has authorized this mod, and therefore bear no responsibility to any affect it may have on the game.  Buyer Beware!
+
+REQUIREMENTS:
+
+Star Trek: Bridge Commander version 1.0 OR 1.1
+"Foundation" plug-in system version 5/26/02 (or later)
+
+
+QUICK INSTALL:
+
+Unzip into your Bridge Commander program folder, being sure to keep the directory structure intact. When you next start Bridge Commander, immediately go to "Configure," BEFORE you choose Quick Battle. Under the heading for "Mutators" there should now be an option for "BanzaiZAP SystemPack."
+
+
+INSTALLATION DETAILS FOR SYSTEM PACK 14
+
+1) Find your Bridge Commander directory, usually: 
+C:/ Program Files / Activision / Bridge Commander
+
+2) Unzip into this folder. It will create some new folders and files. It will only replace files if you have a previous System Pack installed, automagically updating any systems. You will NOT need to update any files yourself.
+
+3) When you next start Bridge Commander, immediately go to "Configure," BEFORE you choose Quick Battle or the Single Player game. 
+
+4) Under the heading for "Mutators" there should now be an option for "BanzaiZAP SystemPack." Make sure it is checked in.
+
+System Pack 14 contains all files necessary to play in the new systems, and includes all of the extra backgrounds, nebulae, and all "secret" objects and locations. Installation should create new files in  "data/Backgrounds/" High, Medium and Low folders. It also creates a new City object. There are many "secret" details hidden in the systems. You can fly around and discover them yourself, or a quicker option is to set Sensors to 125% and Scan the area. There are some player-made "Intercept" mods that allow you to target and intercept stars, and achieve higher-than-normal Impulse speeds. These mods can make exploring much quicker and easier.
+
+"Warp-Speed Wobble" is a graphic effect that occurs in very large maps. It is due to the way the engine handles extremely large distances between locations. It is harmless, and does not interfere with targeting in any way. You'll know what this means when you encounter it.
+
+
+System Pack 14 includes the following star systems: 
+  Arena A: Compact star system with a variety of locations for ambushes
+  Banzai System: Binary star system with several planets to visit
+  Briar Patch:* Small system tucked into nebulae, as seen in ST: Insurrection
+  Calufrax: Trinary system with several planets
+  Comet: Comet with tail drifting past a Cardassian Starbase
+  Fluid: This simulates Fluid Space as seen in Star Trek: Voyager
+  Junk Yard:* A variety of wrecked ships drifting in an asteroid field
+  Khan: Wrath of Khan system with nebula
+  Stellar Nursery:* Stars being born in Pillars of Creation at M16
+  Obstacle Course: Follow the Nav Points through the solar system. 
+  Rainbow System:* Rainbow-Corona star, and flyable gas giant
+  Smoke Ring: Dwarf star with a gaseous torus around it
+  Cosmic String:* Stream of stellar matter with science stations.
+  The Galaxy: The Galactic Core, Earth, Vulcan, Kronos, Romulus, the Rim, and Intergalactic Space
+  Vger: An encounter from the first movie, Star Trek:The Motion Picture
+  The Void: Nothing to see here. Really. Nothing at all. It's dark.
+  Universe: Very large single map with many scattered star systems
+  Wolf 359:* Battle site of Borg vs Starfleet
+  
+* : These systems are ESPECIALLY graphics-intensive, so mid-range systems may start to stutter.
+ 
+MULTIPLAYER
+
+You can use the MPMP 1.4c (or higher), which includes System Pack. This is recommended, as it allows you to use the player-made mods in a multiplayer setting.  
+
+If you don't want the MPMP, but do want the systems in multiplayer, look in this folder:
+Bridge Commander : scripts : Multiplayer : 
+and rename the file "SpeciesToSystemBZ.py" to "SpeciesToSystem.py" Then go into this folder:
+Bridge Commander : data : TGL : 
+and rename the file "SystemsBZ.TGL" to "Systems.TGL" 
+
+We do recommend making a backup of the original files, in case anything goes wrong. This HAS been tested, so it does work. Once the files are renamed, jump into BC and the systems are now Multiplayer! The best part about this is you can warp from point to point in TheGalaxy without leaving the in-game environment. Anyone participating in the game must also have the same System Pack, and the same modified files.
+
+Special Thanks and Extra Credits go to these people:
+Dasher42 and redragon for the Ringed Planet and Earth
+BlackRook32 for the Planet Textures "TanGasGiant" and "AquaPlanet"
+Admiral Ames for the City model
+CJones and jwattsjr for unlocking the secret and sharing AI within a system
+
+I have left the Pythons uncompiled, so others can use this as a template to modify.  More advanced systems are forthcoming. 
+Have fun!
+
+BanzaiZAP
+aka Ben Howard
+discord@maui.net
+www.maui.net/~discord/bc/

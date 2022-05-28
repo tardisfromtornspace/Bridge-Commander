@@ -1,0 +1,46 @@
+<HTML>
+<HEAD>
+<TITLE>=^= Future Technologies Addition =^=</TITLE>
+</HEAD>
+<BODY LINK="#0000ff" VLINK="#800080">
+
+<FONT SIZE=2 COLOR="#0000ff"><P>=^= Future Technologies Addition 2.0 Modding Info =^=</P>
+</FONT><FONT SIZE=2><P>In the following instructions, "your ship's .py file" refers to your vessel's .py file, <U>not the hardpoint file. </U>(e.g. use bridgecommander/scripts/ships/your ship.py)</P>
+</FONT><FONT SIZE=2 COLOR="#008080"><P>This Color</FONT><FONT SIZE=2> denotes script code.</P>
+</FONT><FONT SIZE=2 COLOR="#0000ff"><P>=^= Advanced Armor =^=</P>
+</FONT><FONT SIZE=2><P>To equip your vessel with the advanced armor, just paste the following lines to the bottom of your ship's .py file.</P>
+</FONT><FONT SIZE=2 COLOR="#008080">def GetArmorRatio():<br>
+&#9;return 0.1<br>
+</FONT><FONT SIZE=2><P>Now, the number in the line </FONT><FONT SIZE=2 COLOR="#008080">return 0.1 </FONT><FONT SIZE=2>sets the <I>efficiency </I>at which the armor operates, the higher this number is, the stronger the armor, the lower it is, the weaker. (For example, if you use </FONT><FONT SIZE=2 COLOR="#008080">return 1.0</FONT><FONT SIZE=2>, then the armor will be 10 times stronger than </FONT><FONT SIZE=2 COLOR="#008080">return 0.1</FONT><FONT SIZE=2>, if you use </FONT><FONT SIZE=2 COLOR="#008080">return 10.0</FONT><FONT SIZE=2>, then the armor will be 100 times stronger than </FONT><FONT SIZE=2 COLOR="#008080">return 0.1</FONT><FONT SIZE=2>.</P>
+</FONT><FONT SIZE=2 COLOR="#0000ff"><P>=^= Cloaked Torpedo Launching =^=</P>
+</FONT><FONT SIZE=2><P>This technology allows vessels to be equipped with the ability to fire torpedoes while under cloak, the following instructions show you how to enable this for each torpedo tube on your ship. Note that you can optionally give select tubes this ability, while leaving other tubes normal.</P>
+<P>To allow a vessel to fire torpedoes while cloaked:</P>
+<OL>
+
+<LI>Open the ship's hardpoint file in the model property editor.</LI>
+<LI>Double click on the torpedo tube you want to be cloaked-firing enabled.</LI>
+<LI>Click the weapon tab that's on the window that pops up.</LI>
+<U><LI>Deselect</U> the checkbox labeled Dumb-fire capable.</LI>
+<LI>Repeat steps 2-4 for each torpedo tube you want to be cloak-firing enabled.</LI></OL>
+
+</FONT><FONT SIZE=2 COLOR="#0000ff"><P>=^= In-Game Disruptor Switching =^=</P>
+</FONT><FONT SIZE=2><P>Because this step can be somewhat complicated, a tool has been provided named DisruptorGen.html located in the same directory as this file.</P>
+<OL>
+
+<LI>Double-click on DisruptorGen.html.</LI>
+<LI>Enter the file name of the disruptor file you want to add without the .py extension.</LI>
+<LI>Enter the name you want to see on the disruptor button when this disruptor is being used.</LI>
+<LI>Click Add.</LI>
+<LI>Repeat steps 1 through 3 for each disruptor option you want your ship to have.</LI>
+<LI>Select <U>all</U> of the text in the text field at the bottom. Right-click and select copy.</LI>
+<LI>Paste the code at the bottom of your ship's .py file.</LI></OL>
+
+</FONT><FONT SIZE=2 COLOR="#0000ff"><P>=^= Script Torpedo Support =^=</P>
+</FONT><FONT SIZE=2><P>The Script Torpedo technology is what all of the weapons included in this mod are based on, all script code that give those weapons their unique functionality are contained in the WeaponFired () and TargetHit () handlers in the torpedoes' .py file. Looking at all of these weapons should give you a feel for scripting your own weapons.</P>
+<P>The Future Technologies addition looks for two procedures in torpedo files: </FONT><FONT SIZE=2 COLOR="#008080">TargetHit (pObject, pEvent)</FONT><FONT SIZE=2> and </FONT><FONT SIZE=2 COLOR="#008080">WeaponFired (pObject, pEvent)</FONT><FONT SIZE=2>. If it finds them:</P>
+</FONT><FONT SIZE=2 COLOR="#008080"><P>WeaponFired (pObject, pEvent)</FONT><FONT SIZE=2> will be called when the torpedo is fired.</P>
+</FONT><FONT SIZE=2 COLOR="#008080"><P>TargetHit (pObject, pEvent)</FONT><FONT SIZE=2> will be called when the torpedo hits an object.</P>
+<P>The Future Technologies Addition calls the procedures of the torpedo <U>only</U> when <U>that</U> torpedo was fired, or hit.</P>
+<P>If my poor explanation was insufficient, there are several example torpedo files included, as well as a skeleton you can fill in, you might look at these to get the general idea.</P></FONT></BODY>
+<p><font color=#004070><b>Included in this mod is the .py file for the stock bird of prey that has been equipped with the armor, disruptor switching, and cloaked firing to illustrate the use of FTA.</b></font></p>
+</HTML>

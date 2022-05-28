@@ -1,0 +1,210 @@
+# C:\Program Files\Activision\Bridge Commander\scripts\ships\Hardpoints\Celestra.py
+# This file was automatically generated - modify at your own risk.
+# 
+
+import App
+import GlobalPropertyTemplates
+# Setting up local templates.
+#################################################
+Celestra = App.ShipProperty_Create("Celestra")
+
+Celestra.SetGenus(0)
+Celestra.SetSpecies(103)
+Celestra.SetMass(1000.000000)
+Celestra.SetRotationalInertia(1000.000000)
+Celestra.SetShipName("Celestra")
+Celestra.SetModelFilename("data/Models/Ships/Celestra/Celestra.nif")
+Celestra.SetDamageResolution(0.010000)
+Celestra.SetAffiliation(0)
+Celestra.SetStationary(0)
+Celestra.SetAIString("FedAttack")
+Celestra.SetDeathExplosionSound("g_lsDeathExplosions")
+App.g_kModelPropertyManager.RegisterLocalTemplate(Celestra)
+#################################################
+Hull = App.HullProperty_Create("Hull")
+
+Hull.SetMaxCondition(4500.000000)
+Hull.SetCritical(1)
+Hull.SetTargetable(0)
+Hull.SetPrimary(1)
+Hull.SetPosition(0.000000, 0.000000, 0.000000)
+Hull.SetPosition2D(0.000000, 0.000000)
+Hull.SetRepairComplexity(1.000000)
+Hull.SetDisabledPercentage(0.500000)
+Hull.SetRadius(0.250000)
+App.g_kModelPropertyManager.RegisterLocalTemplate(Hull)
+#################################################
+PowerCore = App.PowerProperty_Create("Power Core")
+
+PowerCore.SetMaxCondition(3500.000000)
+PowerCore.SetCritical(1)
+PowerCore.SetTargetable(1)
+PowerCore.SetPrimary(1)
+PowerCore.SetPosition(0.000000, -2.500000, 0.000000)
+PowerCore.SetPosition2D(0.000000, 0.000000)
+PowerCore.SetRepairComplexity(1.000000)
+PowerCore.SetDisabledPercentage(0.500000)
+PowerCore.SetRadius(0.250000)
+PowerCore.SetMainBatteryLimit(70000.000000)
+PowerCore.SetBackupBatteryLimit(10000.000000)
+PowerCore.SetMainConduitCapacity(400.000000)
+PowerCore.SetBackupConduitCapacity(200.000000)
+PowerCore.SetPowerOutput(200.000000)
+App.g_kModelPropertyManager.RegisterLocalTemplate(PowerCore)
+#################################################
+CommsArray = App.SensorProperty_Create("Comms Array")
+
+CommsArray.SetMaxCondition(2500.000000)
+CommsArray.SetCritical(0)
+CommsArray.SetTargetable(1)
+CommsArray.SetPrimary(1)
+CommsArray.SetPosition(0.000000, -1.275000, 1.000000)
+CommsArray.SetPosition2D(0.000000, 0.000000)
+CommsArray.SetRepairComplexity(1.000000)
+CommsArray.SetDisabledPercentage(0.500000)
+CommsArray.SetRadius(0.250000)
+CommsArray.SetNormalPowerPerSecond(50.000000)
+CommsArray.SetBaseSensorRange(1000.000000)
+CommsArray.SetMaxProbes(3)
+App.g_kModelPropertyManager.RegisterLocalTemplate(CommsArray)
+#################################################
+SheildSys = App.ShieldProperty_Create("Sheild Sys")
+
+SheildSys.SetMaxCondition(200.000000)
+SheildSys.SetCritical(0)
+SheildSys.SetTargetable(0)
+SheildSys.SetPrimary(1)
+SheildSys.SetPosition(0.000000, 0.000000, 0.000000)
+SheildSys.SetPosition2D(0.000000, 0.000000)
+SheildSys.SetRepairComplexity(1.000000)
+SheildSys.SetDisabledPercentage(0.500000)
+SheildSys.SetRadius(0.250000)
+SheildSys.SetNormalPowerPerSecond(0.000000)
+SheildSysShieldGlowColor = App.TGColorA()
+SheildSysShieldGlowColor.SetRGBA(0.000000, 0.000000, 0.000000, 0.000000)
+SheildSys.SetShieldGlowColor(SheildSysShieldGlowColor)
+SheildSys.SetShieldGlowDecay(0.000000)
+SheildSys.SetMaxShields(SheildSys.FRONT_SHIELDS, 0.000000)
+SheildSys.SetMaxShields(SheildSys.REAR_SHIELDS, 0.000000)
+SheildSys.SetMaxShields(SheildSys.TOP_SHIELDS, 0.000000)
+SheildSys.SetMaxShields(SheildSys.BOTTOM_SHIELDS, 0.000000)
+SheildSys.SetMaxShields(SheildSys.LEFT_SHIELDS, 0.000000)
+SheildSys.SetMaxShields(SheildSys.RIGHT_SHIELDS, 0.000000)
+SheildSys.SetShieldChargePerSecond(SheildSys.FRONT_SHIELDS, 0.000000)
+SheildSys.SetShieldChargePerSecond(SheildSys.REAR_SHIELDS, 0.000000)
+SheildSys.SetShieldChargePerSecond(SheildSys.TOP_SHIELDS, 0.000000)
+SheildSys.SetShieldChargePerSecond(SheildSys.BOTTOM_SHIELDS, 0.000000)
+SheildSys.SetShieldChargePerSecond(SheildSys.LEFT_SHIELDS, 0.000000)
+SheildSys.SetShieldChargePerSecond(SheildSys.RIGHT_SHIELDS, 0.000000)
+App.g_kModelPropertyManager.RegisterLocalTemplate(SheildSys)
+#################################################
+SubLightSys = App.ImpulseEngineProperty_Create("Sub Light Sys")
+
+SubLightSys.SetMaxCondition(200.000000)
+SubLightSys.SetCritical(0)
+SubLightSys.SetTargetable(0)
+SubLightSys.SetPrimary(1)
+SubLightSys.SetPosition(0.000000, 0.000000, 0.000000)
+SubLightSys.SetPosition2D(0.000000, 0.000000)
+SubLightSys.SetRepairComplexity(1.000000)
+SubLightSys.SetDisabledPercentage(0.500000)
+SubLightSys.SetRadius(0.250000)
+SubLightSys.SetNormalPowerPerSecond(50.000000)
+SubLightSys.SetMaxAccel(1.000000)
+SubLightSys.SetMaxAngularAccel(0.100000)
+SubLightSys.SetMaxAngularVelocity(0.250000)
+SubLightSys.SetMaxSpeed(2.500000)
+SubLightSys.SetEngineSound("Federation Engines")
+App.g_kModelPropertyManager.RegisterLocalTemplate(SubLightSys)
+#################################################
+Engines = App.EngineProperty_Create("Engines")
+
+Engines.SetMaxCondition(3500.000000)
+Engines.SetCritical(0)
+Engines.SetTargetable(1)
+Engines.SetPrimary(1)
+Engines.SetPosition(0.000000, -3.500000, -0.050000)
+Engines.SetPosition2D(0.000000, 0.000000)
+Engines.SetRepairComplexity(1.000000)
+Engines.SetDisabledPercentage(0.500000)
+Engines.SetRadius(0.250000)
+Engines.SetEngineType(Engines.EP_IMPULSE)
+App.g_kModelPropertyManager.RegisterLocalTemplate(Engines)
+#################################################
+DamageControl = App.RepairSubsystemProperty_Create("Damage Control")
+
+DamageControl.SetMaxCondition(200.000000)
+DamageControl.SetCritical(0)
+DamageControl.SetTargetable(0)
+DamageControl.SetPrimary(1)
+DamageControl.SetPosition(0.000000, 0.000000, 0.000000)
+DamageControl.SetPosition2D(0.000000, 0.000000)
+DamageControl.SetRepairComplexity(1.000000)
+DamageControl.SetDisabledPercentage(0.500000)
+DamageControl.SetRadius(0.250000)
+DamageControl.SetNormalPowerPerSecond(1.000000)
+DamageControl.SetMaxRepairPoints(10.000000)
+DamageControl.SetNumRepairTeams(1)
+App.g_kModelPropertyManager.RegisterLocalTemplate(DamageControl)
+#################################################
+FTLCoils = App.EngineProperty_Create("FTL Coils")
+
+FTLCoils.SetMaxCondition(3000.000000)
+FTLCoils.SetCritical(0)
+FTLCoils.SetTargetable(1)
+FTLCoils.SetPrimary(1)
+FTLCoils.SetPosition(0.000000, -3.000000, 0.000000)
+FTLCoils.SetPosition2D(0.000000, 0.000000)
+FTLCoils.SetRepairComplexity(1.000000)
+FTLCoils.SetDisabledPercentage(0.500000)
+FTLCoils.SetRadius(0.250000)
+FTLCoils.SetEngineType(FTLCoils.EP_WARP)
+App.g_kModelPropertyManager.RegisterLocalTemplate(FTLCoils)
+#################################################
+FTLDrive = App.WarpEngineProperty_Create("FTL Drive")
+
+FTLDrive.SetMaxCondition(200.000000)
+FTLDrive.SetCritical(0)
+FTLDrive.SetTargetable(0)
+FTLDrive.SetPrimary(1)
+FTLDrive.SetPosition(0.000000, 0.000000, 0.000000)
+FTLDrive.SetPosition2D(0.000000, 0.000000)
+FTLDrive.SetRepairComplexity(1.000000)
+FTLDrive.SetDisabledPercentage(0.500000)
+FTLDrive.SetRadius(0.250000)
+FTLDrive.SetNormalPowerPerSecond(50.000000)
+App.g_kModelPropertyManager.RegisterLocalTemplate(FTLDrive)
+
+# Property load function.
+def LoadPropertySet(pObj):
+	"Sets up the object's properties."
+	prop = App.g_kModelPropertyManager.FindByName("Celestra", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	if (prop != None):
+		pObj.AddToSet("Scene Root", prop)
+	prop = App.g_kModelPropertyManager.FindByName("Hull", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	if (prop != None):
+		pObj.AddToSet("Scene Root", prop)
+	prop = App.g_kModelPropertyManager.FindByName("Power Core", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	if (prop != None):
+		pObj.AddToSet("Scene Root", prop)
+	prop = App.g_kModelPropertyManager.FindByName("Comms Array", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	if (prop != None):
+		pObj.AddToSet("Scene Root", prop)
+	prop = App.g_kModelPropertyManager.FindByName("Sheild Sys", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	if (prop != None):
+		pObj.AddToSet("Scene Root", prop)
+	prop = App.g_kModelPropertyManager.FindByName("Sub Light Sys", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	if (prop != None):
+		pObj.AddToSet("Scene Root", prop)
+	prop = App.g_kModelPropertyManager.FindByName("Engines", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	if (prop != None):
+		pObj.AddToSet("Scene Root", prop)
+	prop = App.g_kModelPropertyManager.FindByName("Damage Control", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	if (prop != None):
+		pObj.AddToSet("Scene Root", prop)
+	prop = App.g_kModelPropertyManager.FindByName("FTL Drive", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	if (prop != None):
+		pObj.AddToSet("Scene Root", prop)
+	prop = App.g_kModelPropertyManager.FindByName("FTL Coils", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	if (prop != None):
+		pObj.AddToSet("Scene Root", prop)

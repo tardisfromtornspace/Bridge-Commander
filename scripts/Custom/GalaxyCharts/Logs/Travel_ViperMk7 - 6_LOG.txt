@@ -1,0 +1,31 @@
+#This is the dump of the LogCreator: <ViperMk7 - 6 Travel Logger LogCreator_Y68sd8yfmnBO>
+#This log file was created on: 23:24:24.799 of 25/April/2017, Tuesday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>23:24:24.799 of 25/April/2017, Tuesday
+#>>>Initialized ViperMk7 - 6 Travel logger
+#>>>SELF = <ViperMk7 - 6(1310807) Travel_35ts2DWEIAqk>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>23:24:37.166 of 25/April/2017, Tuesday
+#>>>Updated Target Ship = PlanetExpress 1
+########################################
+# 23:25:37.079 of 25/April/2017, Tuesday
+#Ending of log dump - User is quiting the game
+########################################

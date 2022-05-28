@@ -1,0 +1,33 @@
+#This is the dump of the LogCreator: <Nebulon B-2 Frigate-14 Travel Logger LogCreator_n2HbHGVJ06L2>
+#This log file was created on: 23:57:31.884 of 9/April/2017, Sunday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>23:57:31.884 of 9/April/2017, Sunday
+#>>>Initialized Nebulon B-2 Frigate-14 Travel logger
+#>>>SELF = <Nebulon B-2 Frigate-14(399245) Travel_wADbH11M880I>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Shadow Battlecrab-1
+## -------------------- ##
+####################
+#######>>>23:58:2.978 of 9/April/2017, Sunday
+#>>>Updated Target Ship = Vorlon Fighter-2
+## -------------------- ##
+####################
+#######>>>23:58:16.045 of 9/April/2017, Sunday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

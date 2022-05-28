@@ -1,0 +1,57 @@
+#This is the dump of the LogCreator: <Battlestar-4 Travel Logger LogCreator_9SWr53PG0vEc>
+#This log file was created on: 14:21:2.937 of 25/June/2017, Sunday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>14:21:2.937 of 25/June/2017, Sunday
+#>>>Initialized Battlestar-4 Travel logger
+#>>>SELF = <Battlestar-4(115467) Travel_ToLnxBd8ju8z>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>14:21:12.670 of 25/June/2017, Sunday
+#>>>Updated Target Ship =  Warship-1
+## -------------------- ##
+####################
+#######>>>14:21:24.343 of 25/June/2017, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>14:21:24.842 of 25/June/2017, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>14:21:25.852 of 25/June/2017, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>14:21:27.223 of 25/June/2017, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>14:21:27.571 of 25/June/2017, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>14:21:27.993 of 25/June/2017, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>14:22:8.537 of 25/June/2017, Sunday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

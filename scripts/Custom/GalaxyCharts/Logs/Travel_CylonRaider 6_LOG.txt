@@ -1,0 +1,33 @@
+#This is the dump of the LogCreator: <CylonRaider 6 Travel Logger LogCreator_AeqyE3Z6812B>
+#This log file was created on: 4:9:52.722 of 23/March/2017, Thursday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>4:9:52.722 of 23/March/2017, Thursday
+#>>>Initialized CylonRaider 6 Travel logger
+#>>>SELF = <CylonRaider 6(416714) Travel_p15Gdowc761G>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>4:10:8.852 of 23/March/2017, Thursday
+#>>>Updated Target Ship = Whitestar-5
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>4:10:19.736 of 23/March/2017, Thursday
+#>>>Updated Target Ship = Player

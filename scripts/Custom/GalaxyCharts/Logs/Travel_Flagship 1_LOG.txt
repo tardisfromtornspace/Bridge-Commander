@@ -1,0 +1,28 @@
+#This is the dump of the LogCreator: <Flagship 1 Travel Logger LogCreator_y034ng3mLd81>
+#This log file was created on: 17:31:51.113 of 7/October/2019, Monday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>17:31:51.113 of 7/October/2019, Monday
+#>>>Initialized Flagship 1 Travel logger
+#>>>SELF = <Flagship 1(169743) Travel_0NLwwc2CA8sJ>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>17:32:7.678 of 7/October/2019, Monday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

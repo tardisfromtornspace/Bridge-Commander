@@ -1,0 +1,66 @@
+#This is the dump of the LogCreator: <Primus Warship-1 Travel Logger LogCreator_0Z37zlaMIh74>
+#This log file was created on: 3:17:8.155 of 6/October/2019, Sunday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>3:17:8.155 of 6/October/2019, Sunday
+#>>>Initialized Primus Warship-1 Travel logger
+#>>>SELF = <Primus Warship-1(63499) Travel_58g5023U5ZLr>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>3:17:17.699 of 6/October/2019, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>3:17:17.852 of 6/October/2019, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>3:17:18.081 of 6/October/2019, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>3:17:18.300 of 6/October/2019, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>3:17:18.783 of 6/October/2019, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>3:17:19.137 of 6/October/2019, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>3:17:19.461 of 6/October/2019, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>3:17:19.910 of 6/October/2019, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>3:17:51.538 of 6/October/2019, Sunday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 3:36:36.610 of 6/October/2019, Sunday
+#Ending of log dump - User is quiting the game
+########################################

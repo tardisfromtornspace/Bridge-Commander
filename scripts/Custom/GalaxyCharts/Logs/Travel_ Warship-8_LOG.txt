@@ -1,0 +1,44 @@
+#This is the dump of the LogCreator: < Warship-8 Travel Logger LogCreator_wb7r3YKBnREM>
+#This log file was created on: 22:25:18.177 of 13/May/2017, Saturday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>22:25:18.177 of 13/May/2017, Saturday
+#>>>Initialized  Warship-8 Travel logger
+#>>>SELF = < Warship-8(1262867) Travel_v102U0nvkMzN>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Daedalus-1
+## -------------------- ##
+####################
+#######>>>22:25:44.355 of 13/May/2017, Saturday
+#>>>Updated Target Ship = Ha`tak-4
+## -------------------- ##
+####################
+#######>>>22:26:3.539 of 13/May/2017, Saturday
+#>>>Updated Target Ship = Odyssey-2
+## -------------------- ##
+####################
+#######>>>22:26:22.257 of 13/May/2017, Saturday
+#>>>Updated Target Ship = Daedalus-1
+## -------------------- ##
+####################
+#######>>>22:27:13.308 of 13/May/2017, Saturday
+#>>>Updated Target Ship = Warship (Standard)-6
+########################################
+# 22:58:24.885 of 13/May/2017, Saturday
+#Ending of log dump - User is quiting the game
+########################################

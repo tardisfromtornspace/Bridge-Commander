@@ -1,0 +1,32 @@
+#This is the dump of the LogCreator: <Shuttle - 2 Travel Logger LogCreator_oP90moBU472u>
+#This log file was created on: 18:49:14.803 of 24/April/2017, Monday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>18:49:14.803 of 24/April/2017, Monday
+#>>>Initialized Shuttle - 2 Travel logger
+#>>>SELF = <Shuttle - 2(187885) Travel_91TE8MN26ERW>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>18:49:26.638 of 24/April/2017, Monday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 18:51:38.805 of 24/April/2017, Monday
+#Ending of log dump - User is quiting the game
+########################################

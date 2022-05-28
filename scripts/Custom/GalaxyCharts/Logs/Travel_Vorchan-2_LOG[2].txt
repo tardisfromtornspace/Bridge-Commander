@@ -1,0 +1,54 @@
+#This is the dump of the LogCreator: <Vorchan-2 Travel Logger[2] LogCreator_ytgZ0ul19fkT>
+#This log file was created on: 17:26:50.766 of 12/March/2017, Sunday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>17:26:50.766 of 12/March/2017, Sunday
+#>>>Initialized Vorchan-2 Travel logger
+#>>>SELF = <Vorchan-2(799078) Travel_rSw4qaQD7zDD>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>17:26:55.382 of 12/March/2017, Sunday
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>17:27:1.465 of 12/March/2017, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>17:27:2.466 of 12/March/2017, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>17:27:3.677 of 12/March/2017, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>17:27:4.723 of 12/March/2017, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>17:27:15.061 of 12/March/2017, Sunday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 17:32:3.358 of 12/March/2017, Sunday
+#Ending of log dump - User is quiting the game
+########################################

@@ -1,0 +1,32 @@
+#This is the dump of the LogCreator: <GoauldStarbase 1 Travel Logger LogCreator_vTRLAu9oU8zM>
+#This log file was created on: 18:50:6.690 of 4/May/2017, Thursday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>18:50:6.690 of 4/May/2017, Thursday
+#>>>Initialized GoauldStarbase 1 Travel logger
+#>>>SELF = <GoauldStarbase 1(588506) Travel_69gXEgj9DT81>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>18:53:4.854 of 4/May/2017, Thursday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 19:29:48.554 of 4/May/2017, Thursday
+#Ending of log dump - User is quiting the game
+########################################

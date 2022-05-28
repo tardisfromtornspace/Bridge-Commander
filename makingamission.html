@@ -1,0 +1,168 @@
+<HTML>
+<HEAD>
+  <TITLE>Making a Mission</TITLE>
+  <LINK REV="made" HREF="mailto:">
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-1">
+  <META NAME="author" CONTENT="">
+  <META NAME="description" CONTENT="">
+  <META NAME="keywords" CONTENT="">
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000" LINK="#0000FF" VLINK="#800080" ALINK="#FF0000">
+
+<H1>Making a Mission</H1>
+
+<P>
+<UL>
+<LI><A HREF="#Initialization and Termination">Initialization and Termination</A></LI>
+<LI><A HREF="#Creating sets">Creating sets</A></LI>
+<LI><A HREF="#FleshingOut">Fleshing out a mission</A></LI>
+<LI><A HREF="#MissionMenu">Putting a mission in the Custom Missions menu</A></LI>
+</UL>
+</P>
+
+<P>
+This document is about the implementation details of making a mission for Bridge Commander. You should probably already have a good idea of what you want your mission to be like, and it also wouldn't hurt to take a glance at some of the mission scripts in the game (E2M6 is recommended as a fairly straightforward example). It is also recommended that you read the <A HREF="basics.html">basics page</A> as well as the <A HREF="apibasics.html">API basics page</A> before beginning.
+</P>
+<P>
+There are also some sample custom missions, which are very straightforward, located in the <I>Scripts/Custom/Tutorial</I> directory in the SDK. It is strongly advised that you look them over, starting with the first one (which is very simple). You can access these missions from the <B>Test Only</B> menu when you run the game with the <B>-TestMode</B> parameter, under <B>Custom Missions</B>.
+</P>
+<P>
+Missions are composed of a <B>lot</B> of Python functions. Some of them are called by the game, others you set up to be called by the mission itself.
+</P>
+<HR>
+<P><A NAME="Initialization and Termination"><H2>Initialization and Termination</H2></P></A>
+<P>
+Each mission is required to have two functions, called Initialize(), and Terminate(). The C++ object that represents the mission is passed in. These two functions are the barest minimum necessary to constitute a "mission" -- you'll want lots more, to do mission-specific things, but this is the starting point for building a mission.
+<BR>
+<PRE>
+def Initialize(pMission):
+	# In Initialize(), you set up everything you need for the mission.
+
+	# Create the regions (space sets) for this mission
+	CreateRegions()
+	
+	# Create bridge sets we need.
+	CreateSets()
+	
+	# Create the starting objects.
+	CreateStartingObjects(pMission)
+	
+	# Setup more mission-specific events.
+	SetupEventHandlers()
+
+def Terminate(pMission):
+	# Do whatever shutdown stuff might be necessary.
+	.
+	.
+	.
+	return
+</PRE>
+
+The <B>CreateRegions()</B>, <B>CreateSets()</B>, <B>CreateStartingObjects()</B>, and <B>SetupEventHandlers()</B> functions are user-created functions that set up various elements of the mission. These "kick off" the mission.
+</P>
+<HR>
+<P><A NAME="Creating sets"><H2>Creating sets</H2></P>
+<P>
+Sets contain game objects, and you must have some in order to have any sort of mission. You'll typically create some space sets, where ships will travel and fight, and then some other sets in which you'll place animated characters.
+</P>
+<P>
+Creating space sets is fairly easy, if you use the pre-existing sets that come with the game. You can just use the MissionLib function <B>SetupSpaceSet()</B> with the package name of the set. If you have a placement file for this set (for this mission), you can then load it afterwards.
+<PRE>
+# Creates and sets up the space set for Biranu 1.
+pBiranu1Set = MissionLib.SetupSpaceSet("Systems.Biranu.Biranu1")
+
+# Load the mission-specific placement file for this set.
+import E2M6_Biranu1_P
+E2M6_Biranu1_P.LoadPlacements(pBiranu1Set.GetName())
+</PRE>
+You can create bridge sets (for animated characters) easily, also, using another MissionLib function, <B>SetupBridgeSet()</B>. You specify the set name (used to refer to the set in the set manager), and the model to use, along with a camera position for the set.
+<PRE>
+	pStarbaseSet	= MissionLib.SetupBridgeSet("StarbaseSet", "data/Models/Sets/StarbaseControl/starbasecontrolRM.nif", -30, 65, -1.55)
+</PRE>
+</P>
+<HR>
+<P><A NAME="#Creating Objects"><H2>Creating Objects</H2></A></P>
+<P>
+Once you've created some sets, you can populate them with objects. For example, you can create the player's ship, some other ships, and characters on other bridge sets. The player's bridge is set up specially, though, so you don't really need to do much to make it.
+</P>
+<P><H3>Creating the player</H3></P>
+<P>
+To create the player's ship, use the MissionLib function <B>CreatePlayerShip()</B>.
+</P>
+<P>
+<CODE>
+MissionLib.CreatePlayerShip(<I>sShipClass, pSet, pcName, sWaypoint, bUnloadShip</I>)
+</CODE>
+<UL>
+<LI><I>sShipClass</I> is either "Galaxy" or "Sovereign" -- picks the bridge model.</LI>
+<LI><I>pSet</I> is a pointer to the set in which to create the player.</LI>
+<LI><I>pcName</I> is a string for the name of the player.</LI>
+<LI><I>sWaypoint</I> is the placement at which to create the player.</LI>
+<LI><I>bUnloadShip</I> specifies whether or not to unload the player's weapons if recreating the player.</LI>
+</UL>
+</P>
+<P><H3>Creating other ships</H3></P>
+<P>
+To create other ships, use the function in the <I>loadspacehelper</I> module, called <B>CreateShip()</B>.</P>
+<P>
+<CODE>
+pGalor1 = loadspacehelper.CreateShip("Galor", pBiranu1Set, "Galor 1", "Galor1Start")
+</CODE>
+<UL>
+<LI><I>"Galor"</I> is the name of the hardpoint file to use.</LI>
+<LI><I>pBiranu1Set</I> is a pointer to the set in which to create the ship.</LI>
+<LI><I>"Galor 1"</I> is the name of the ship.</LI>
+<LI><I>"Galor1Start"</I> is the name of the placement at which to create the ship.</LI>
+</UL>
+</P>
+<P>
+You may want to look at the AI editor documentation for information on how to create and assign AIs to ships.
+</P>
+
+<HR>
+<P><A NAME="#FleshingOut"><H2>Fleshing Out the Mission</H2></A></P>
+<P>
+Once you've created some objects and sets, and started the game, you're only partway to having created a fun mission. You want the game to react to things that happen during the mission, such as ships getting destroyed, the player hailing a ship, or the player entering a new area. You do this by handling events, setting timers, creating sequences of actions, setting up conditions, or using proximities (as mentioned in the basic concepts document).
+</P>
+<P>
+<B>Events</B> can be sent by one object to another, and consist of a type (the <B>event type</B>), source object, destination object, and perhaps some auxiliary data, depending on the class of event. Events are ignored unless the destination object has a <B>handler</B> for that event type -- a lot of objects have handlers for events that are attached automatically, as part of their creation process. You can also create a <B>broadcast handler</B> for an event type, which will be called any time an event of that type is sent. There are more intricacies than what is presented here, but that's the basic idea.
+</P>
+<P>
+As an example, many missions have broadcast handlers for the <B>ET_ENTERED_SET</B> and <B>ET_EXITED_SET</B> events. These are sent when an object enters, or exits, a set, naturally -- the event's destination is the object which is entering or exiting, so the handler can take special action based on which ship it is. For example, a mission may have a handler for <B>ET_ENTERED_SET</B> which checks when the player enters a certain set. When the player enters a certain set, a dialogue sequence plays. Look at the <B>M3Gameflow</B> example mission for some usage of event handlers.
+</P>
+<P>
+<B>Timers</B> are objects that will send a specified event after a certain time has passed. It can optionally be a repeating timer, as well. Look at the MissionLib.CreateTimer() function for an easy-to-use interface for timers.
+</P>
+<P>
+<B>Sequences</B> are used constantly in the game. Every chain of dialogue in the game is a sequence -- a lot of mission gameflow is done using sequences also. Sequences are basically more sophisticated ways of using timers -- you can set up a string of <B>actions</B> that will happen when the sequence is played. For example, you can set up a sequence to play three voice lines, one after the other, using character actions -- when the first action in the sequence is completed (the line has been said), the next will start. You can also specify delays between actions -- for example, you could have a script action that makes a ship explode occur 5 seconds after a dialogue line is done playing.
+</P>
+<P>
+Probably the most important type of action in terms of mission scripting is the <B>TGScriptAction</B>. A script action calls a Python function (one you write, or a predefined one), with any number of parameters. You simply specify the module of the function (i.e. "MissionLib", "Maelstrom.Episode1.E1M1"), and the function name, and pass in whatever parameters you want. When the script action triggers, that function will be run with your parameters. This is an extremely powerful system for doing flexible missions, and also lends itself well to script reuse.
+</P>
+<P>
+As with timers, the <B>M3Gameflow</B> mission is a good example of basic sequence creation and usage. You can also look at <B>M4Complex</B> for more examples.
+</P>
+<P>
+<B>Conditions</B> and <B>proximities</B> are more advanced mission building features, and will not be covered here. Look at the missions that ship with the game for usage (and in the case of proximities, look at MissionLib.ProximityCheck).
+</P>
+
+<HR>
+<P><A NAME="#MissionMenu"><H2>Putting a mission in the Custom Missions menu</H2></A></P>
+<P>
+The Custom Missions menu appears in the <B>Test Only</B> menu, when the game is started with the <B>-TestMode</B> command-line parameter. You can set up your missions so that they automatically place a button or menu for themselves into this menu.
+</P>
+<P>
+<UL>
+<LI>You should have a game/episode/mission directory structure, similar to the Tutorial missions. (i.e. game directory, then an episode directory, then mission directories) Your stuff also needs to be in the Scripts/Custom directory -- make sure you have a Game and Episode script also (copy these from Tutorial/Tutorial.py and Tutorial/Episode/Episode.py if necessary).</LI>
+<LI>Make sure that your game/episode scripts are named the same as the directory they are contained in. (i.e. for Tutorial, the game script must be named Tutorial.py)</LI>
+<LI>If you copied the sample game/episode script, make sure to change any names that are specific to the sample stuff. (for example, the game/episode TGLs that are loaded) Do a search, just to be sure.</LI>
+<LI>Finally, change the CreateMenu() function in the game script to only create buttons for the missions you are installing. Then, change the MissionHandler() event handler's dButtonToOverride table to include your missions, along with the episode and script name to use when launching the mission. (follow the examples that are there).</LI>
+<LI>Once you're done, you should be able to start up using <B>-TestMode</B> and start your missions from the Test Menu.</LI>
+</UL>
+</P>
+
+<HR>
+<P><SMALL>Created on ... February 04, 2002</SMALL></P>
+</BODY>
+</HTML>

@@ -1,0 +1,118 @@
+###########################################################################################
+###########################################################################################
+#############         Change Log   v0.8(initial release) to v0.9
+###########################################################################################
+###########################################################################################
+
+- GravityForceXvalue bar on UMM now has a range of 1-2000 instead of 1-5000
+- You can now select if the Gravity Wells will be shown on the BC 3D Map in the Grav Sensors Menu, the toggle map button in 
+  this menu has also been scaled to have the same size than other buttons.
+- System Map was seriously modified to correct some bugs, improve performance and added 2 new features:
+	- After the NAV Point is created, left clicking will on an obj (his icon) will make you (the player) target him.
+	- A new yes/no button allows you to select if the name and Z axis (relative to the player) of the objs will appear
+	  on the map.
+- Logger also was refactored to improve performance, and added some new features to the LogCreator.
+- GravityFX Triggers were improved to use less file size, increase performance and correct a few bugs.
+- Now if a random density is set to an planet/sun, the planet/sun in question will have the same density until BC is 
+  restarted.
+- A math bug was discovered and fixed on the GravityFXlib script, this bug was affecting plugin masses and the damage done 
+  to ship when very close to a strong grav well.
+- Another math bug was found and fixed on the function that sets a random density to planets.
+- A bug that was causing erroneous mass-radius values for Gravity Wells was found and fixed.
+- In UMM you can select the exact part you want to Log, also the logger support has been improved on some scripts.
+- GravityFXguilib sustained a very little update.
+- New "Creaks and Goans" sounds added, thanks to Rob Archer, plus NanoFXv2 ExpMed sounds were removed from Crush Sounds.
+- Crush sounds now only play when the Player ship is being damaged by a gravity well.
+- Added the option to select in UMM the initial state of the thrusters to counter gravity option.
+- Fixed bug that was causing a sudden crash to desktop. (i know what was causing it, but not why it was happening =P)
+- Random density set to planets is now based on the class of that planet.
+  NOTE: At the point of release of this version, v0.9, not all classes that are contained in KM0.9.1 (which has pratically
+	all planet classes created for BC so far) have their "Density ranges" set, they'll instead use the default density
+	range of [0.1-10.0]. I plan of course on making them all for v1.0, so if you want to contribute to this aspect of
+	this mod, go to the "Planet Classes" topic on the GravityFX Beta thread over at http://forums.bcscripters.us.to/ 
+	(the BCS:TNG forum)
+- Added the option of players setting ON/OFF the grav well from their ship (if it has one) on the GravSensors Menu.
+- Now it's possible to create an specially named plugin to give a gravity or anti-grav effect to all torpedoes in-game,
+  instead of creating an plugin for each one. To do this, simply create an GravTorpedo or AntiGravTorpedo plugin with the 
+  name: "AllAround".
+  NOTE: Because of BC's limitations, checking by code if a torpedo is really a torpedo (for BC's engine a torpedo can be a 
+	torpedo projectile or an disruptor (pulse) projectile) is almost impossible, so the "AllAround" grav effect plugin
+	will be applied to practically ALL of the projectiles in your Tactical/Projectiles folder...
+- Added the option to select on UMM if gravity can affect stations if their impulse systems (or power system if she doesn't
+  have an impulse system) are disabled/offline/destroyed.
+  NOTE: Again, because of BC's limitations, some stations can't (and won't be able to) be affected by gravity...
+	And the ones that can be affected, when their impulse/power system is back online they'll continue to drift as they
+	were before, with the influence of gravity (tho they aren't being affected anymore, they will retain the velocity 
+	they had previously).
+- Added Blackhole support (had forgot about this on v0.8 =P):
+	- Setted thru any kind of plugin for ships (preferably the "GravWell" type), with the attribute "IsBlackhole".
+	- Special icon to show the object that is a blackhole on the system map
+	- Will ALWAYS be of the GravWell type, even if the plugin says that it is a "AntiGravWell" or any other plugin type
+	  for ships.
+	- Also affects torpedoes, pulse weapons and stations(even if the "Gravity Affect Stations?" option on UMM is off).
+
+###########################################################################################
+###########################################################################################
+#############         Change Log   v0.9 to v1.0(public BCFiles release)
+###########################################################################################
+###########################################################################################
+- Logger script was updated to use the TimeMeasurement script (in Autoload) to get the time. (hopefully the right one, previously it was getting from the python TIME module, but that module wasn't "updating" the time correctly), thanks RobArcher, i had the idea for this when i saw that you had done that ClockFX mod 
+
+- Fixed a bug that was causing erroneous deleting of gravity well, mostly torpedo gravity effects
+
+- Added a new method to App.Planet :    GetClass()
+  It returns the class of the planet using EarthFX, and if for some reason it can't get the class, it'll return the class being "DEFAULT".
+
+- Added a few more functions to the library.
+
+- Finished Density Dict
+
+- Updated GravityManager.GetGravInfoOnObj to return short or text-like info on ships, and short info on planets, suns and waypoints.
+
+- Created the AstrometricsGUI script, which handles the creation/deletion/update of the informative paragraphs on the BC 3D Map, it's dependant of the GravSensorsOptGUI script to be initialized and turned on/off.
+
+- Added a button "Enable Astrometrics" to the Grav Sensors Menu, which will turn on/off the paragraphs containing info about an object on the BC 3D Map.
+
+- Added feature: now instead of creating plugins users can use MPE to give a ship a Non-primary hull property called *CHECK THIS BELOW* that will give the ship a gravity well, it'll use power from the batteries (from the main, and if the main doesn't have enough, it'll get from the reserve), it'll be able to be disabled/destroyed by other ships, and the captain of that ship can change the amount of power the gravity generator will use, thus changing the strength of the gravity well (more power = stronger gravity well) or even shutdown the generator if he wants, thus shutting down the gravity well. The gravity well will be infinite (endless, it'll never "die", unless the generator is shutdown, disabled or destroyed) and won't be set as a blackhole, to create a blackhole you'll have to use a plugin.
+  Also, the bigger the gravity generator is (the radius of the subsystem), the stronger the gravity well will be, and the bigger it's repair complexity, the stronger the gravity well will be; Here's the exact formula:
+    --> GravWellMass = ShipMass + (ShipMass * (GeneratorRadius*GeneratorRepairComplexity*GeneratorPower))
+   GravWellMass = the mass of the gravity well, it's this attribute that sets it's strength
+   ShipMass = the mass of the ship (set in the ship property item of the hardpoint)
+   GeneratorRadius = the radius of the Gravity Generator subsystem
+   GeneratorRepairComplexity = the repair complexity of the Gravity Generator subsystem
+   GeneratorPower = the power percentage the generator is using, the user sets this by the "Gravity Generator Options Menu" in the Engineering menu. being 0.0 offline, 1.0 normal power, above 1 = more than normal power
+  Also note that the normal amount of power the generator uses per second is:
+    --> PowerPerSec = (GeneratorRadius * GeneratorRepairComplexity) * 50 * GeneratorPower
+   (the variables are the same than the above formula to get the GravWellMass
+    And to finalize: it's possible to have MULTIPLE gravity generators on a ship, you'll be able to shutdown/change the power of each one of them in the Gravity Generator Options Menu. And they are cumulative: the more generators you have, with the more power they are using, the bigger the gravity well will be. If 1 of them is critical, like i said above, it'll be set as non-critical and the gravity well will be infact a Anti-Gravity well, so with this you can give a ship one of the best defensive (or offensive) assets this game has! (And now let me add again: it's really cool lol)
+   The "Generator"s (the hull subsytems) have to have in their names one of the following names: "Gravity Generator", "Grav Generator", "Grav Gen", "GravityGenerator", "GravGenerator", "GravGen", "Anti-Gravity Generator", "Anti-Grav Generator", "Anti-Grav Gen", "AntiGravityGenerator", "AntiGravGenerator", "AntiGravGen", "Blackhole Generator", "Blackhole Gen", "BlackholeGenerator" or "BlackholeGen".  So you can have for example: "Gravity Generator 1", "Gravity Generator 2", "Gravity Generator 3",  OR   "Primary GravGen", "Secondary GravGen",  AND SO ON.   And if you do use one of the names with "Anti" in it, like "Anti-Gravity Generator", then the gravity well produced by the ship will be a anti-gravity well, if you use one of the "Blackhole" names, it'll be a blackhole gravity well, otherwise it'll be a normal gravity well.
+
+- The new "Gravity Generator Options Menu" has the following features:
+   - Shows status of the gravity generators (online/offline/disabled/destroyed)
+   - Allows the selection of the amount of power each gravity generator will use, as in the weapons/engines/sensors/shields control in engineering. (0% in bar = offline // 100% in bar = normal power // 1000% in bar = 10 times normal power)
+     The more power you use, the stronger the gravity well will be.
+   - Shows status of the gravity well (radius, age, type, damage distance, power used per sec, mass, mass of the ship and radius of the ship)
+   - Close button to close the menu window. (duh...)
+
+- Minor bug in GuiLib's ButtonCreator class was fixed.
+
+- Plugin system was changed:
+	- now all "NotToBeAffected" plugins are contained in a single plugin script called NotToBeAffectedShips, in it there's a list with the ship script's name of the not to be affected ships.
+	- There isn't plugins for ships anymore, now you create gravity wells for ships by hardpoint (check the Gravity Generator section)
+
+- Plugin Tool was updated to v1.7.0:  Following the new specifications of the GravityFX Plugin System.
+	- Now you can add/remove NotToBeAffected ships using the tool
+	- The option to create GravWell, AntiGravWell and Blackhole plugins for ships has been removed, now that's done by hardpoint.
+
+- As gravity wells for ships are being created with gravity generators on ships, they won't have a lifetime (that means they'll last as long as the gravity generators on the ship are online).
+
+- Remember that with the UMM option "LogGravityManager" on, it'll also log the gravity wells.
+- Remember that with the UMM option "LogGravSensors" on, it'll also log the astronometrics and gravgenerator (i think)
+
+- Made the Psi's Blackhole system set, which contains a blackhole =)
+
+- A bunch of small things where changed/fixed.
+
+- Configuration Options updated:
+	- Now you can select to log activities of the AstrometricsGUI and/or GravGeneratorGUI script in GravityFX's UMM menu
+	- "Close Prox. To Strong GravWell causes dmg."  YesNo button was replaced with a bar "Gravity Damage Factor". Now instead of just choosing if there will be or if there won't be gravity damage, you can choose the factor of gravity damage that there will be (0% in bar = NO gravity damage // bar marker in the bar = the same amount of previous versions // 100% in bar = the gravity damage radius will be the same than the gravity well radius)

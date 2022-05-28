@@ -1,0 +1,44 @@
+#This is the dump of the LogCreator: <Republic 1371 WC-3 Travel Logger LogCreator_703VWLQ4925d>
+#This log file was created on: 13:30:34.655 of 17/March/2017, Friday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>13:30:34.655 of 17/March/2017, Friday
+#>>>Initialized Republic 1371 WC-3 Travel logger
+#>>>SELF = <Republic 1371 WC-3(133390) Travel_y64E4zucnFM3>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>13:31:17.315 of 17/March/2017, Friday
+#>>>Updated Target Ship = Exeter 1672 WC-13
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>13:31:19.600 of 17/March/2017, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+########################################
+# 13:33:22.167 of 17/March/2017, Friday
+#Ending of log dump - User is quiting the game
+########################################

@@ -1,0 +1,37 @@
+#This is the dump of the LogCreator: <Victory-6 Travel Logger LogCreator_I78JmU9sf6GJ>
+#This log file was created on: 0:47:57.410 of 10/April/2017, Monday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>0:47:57.410 of 10/April/2017, Monday
+#>>>Initialized Victory-6 Travel logger
+#>>>SELF = <Victory-6(499773) Travel_9laEf0403IFa>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>0:48:15.033 of 10/April/2017, Monday
+#>>>Updated Target Ship = Nebulon B-2 Frigate-17
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:48:27.209 of 10/April/2017, Monday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

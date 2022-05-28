@@ -1,0 +1,36 @@
+#This is the dump of the LogCreator: <Satellite Weapon-1 Travel Logger LogCreator_ofHIFl3uCU6B>
+#This log file was created on: 19:51:30.096 of 9/May/2017, Tuesday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>19:51:30.096 of 9/May/2017, Tuesday
+#>>>Initialized Satellite Weapon-1 Travel logger
+#>>>SELF = <Satellite Weapon-1(452312) Travel_Ry3W8HgBp38V>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>19:51:33.719 of 9/May/2017, Tuesday
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>19:53:26.944 of 9/May/2017, Tuesday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 19:55:7.370 of 9/May/2017, Tuesday
+#Ending of log dump - User is quiting the game
+########################################

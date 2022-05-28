@@ -1,0 +1,9 @@
+In GravityFX v1.0, to make a not-to-be-affected ship you can:
+
+1) Use the plugin tool to add a ship to the Not-To-Be-Affected ship list
+
+2) Manually create a NotToBeAffected plugin for GravityFX and place it at "[BC folder]\scripts\Custom\GravityFX\Plugins". You can check how to create such a plugin script in the example "ExampleMyShipNOTTOBEAFFECTED", contained in the RAR file "PluginExamples" which comes with GravityFX v1.0. (Don't worry, it's really easy to create it)
+
+3) Make your ship stationary (this is done in the hardpoint), this way it won't move with gravity, but the ship might still receive gravity damage if she gets too close to a gravity well, and the Gravity Damage Factor option in UMM is set to something bigger than 0%
+
+4) Make your ship have a Genus different than 1, this is because real ships are genus 1, while stations are genus 2 and asteroids are genus 3. Bear in mind that if the option to affect stations is selected genus 2 ships will be affected as well.

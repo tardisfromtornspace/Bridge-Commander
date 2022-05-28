@@ -1,0 +1,58 @@
+<HTML>
+<HEAD>
+  <TITLE>TGL Exporter</TITLE>
+  <LINK REV="made" HREF="mailto:">
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-1">
+  <META NAME="author" CONTENT="">
+  <META NAME="description" CONTENT="">
+  <META NAME="keywords" CONTENT="">
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000" LINK="#0000FF" VLINK="#800080" ALINK="#FF0000">
+
+<H1>TGL Exporter</H1>
+
+<P>The TGL exporter is used to produce string database files from Microsoft Word 2000 documents. These string databases are essentially a lookup table -- given a particular string ID, you can find a wide-character string in the database. To support different languages in Bridge Commander, you simply need to export different TGL files for each language.</P>
+<HR>
+<P><H2>Installation</H2></P>
+<P>
+To install, place the tgl.dot file (located in Tools\TglWordExport) into the Startup folder for Microsoft Office (usually something like \Program Files\Microsoft Office\Office\Startup). When you start Word, you should see a new option in the File menu, <B>Export TGL...</B>.
+</P>
+<HR>
+<P><H2>Exporter Usage</H2></P>
+<P>
+If you open the tgl.dot file as a document, you'll see that it contains its own documentation. Basically, you need to have a table in your Word document, with at least two columns, titled "String Name" and "String Data". The string name is the key in the database, and the string data is the associated string.
+</P>
+<P>
+Optional columns include "Speaker" (used to automatically prepend the name of the speaker for subtitled voice lines), and "File Name" (an associated .wav or .mp3 file -- used for dialogue). You can also add other columns to correspond to different languages -- when you go to export the file, you can select columns other than String Data to use as your data.
+</P>
+<P>
+When you go to export a TGL, you'll be presented with some options. <B>Output File</B> is the file name for the TGL you're saving. <B>Media Path</B> is the prefix to be applied to all file names (i.e. sfx\Maelstrom\Episode 1). <B>Data Column</B> is the column containing the string data you want to export -- if you have multiple languages, then put the appropriate column here. <B>Include Speaker Prefix</B> is whether you want the line to include the speaker name. This should no longer be necessary in the game. <B>Speaker Prefix Separator</B> is what to put after the speaker's name. Finally, <B>Default Media Extension</B> is the extension to use if one is not supplied in the file name.
+</P>
+<P>
+<B>Note:</B> You definitely want to turn off Word's auto-text and auto-correction features when working with TGLs. Smart quotes and other substitutions usually show up as box characters in the game, as opposed to quotes or whatever.
+</P>
+<HR>
+<P><H2>In-Game Usage</H2></P>
+<P>
+To get localized strings in the game, you need to load the localization database, then query it for the string ID you want. It will return a TGString (basically, a wide-character string). For example, you could do something like this:
+</P>
+<P>
+<PRE>
+# Load the database.
+pDatabase = App.g_kLocalizationManager.Load("data/TGL/MyDatabase.tgl")
+
+# Retrieve the string with ID "foo".
+kString = pDatabase.GetString("foo")
+
+# Now, print the string.
+print kString.GetCString()
+
+# Finally, unload the database.
+App.g_kLocalizationManager.Unload(pDatabase)
+</PRE>
+</P>
+<HR>
+<P><SMALL>Created on ... February 01, 2002</SMALL></P>
+</BODY>
+</HTML>

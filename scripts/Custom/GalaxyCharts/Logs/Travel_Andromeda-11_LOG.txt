@@ -1,0 +1,76 @@
+#This is the dump of the LogCreator: <Andromeda-11 Travel Logger LogCreator_23tq1fCa53uQ>
+#This log file was created on: 15:26:39.434 of 26/June/2017, Monday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>15:26:39.434 of 26/June/2017, Monday
+#>>>Initialized Andromeda-11 Travel logger
+#>>>SELF = <Andromeda-11(474133) Travel_BsUS69tZV27I>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>15:26:51.812 of 26/June/2017, Monday
+#>>>Updated Target Ship =  Warship-1
+#>>>Can Chase Target = 0
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>15:26:52.184 of 26/June/2017, Monday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>15:26:52.468 of 26/June/2017, Monday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>15:26:53.020 of 26/June/2017, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>15:26:53.782 of 26/June/2017, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>>Ship can't chase, directing to Travel update...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>15:26:56.515 of 26/June/2017, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>>Ship can't chase, directing to Travel update...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>15:26:59.890 of 26/June/2017, Monday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>15:27:1.972 of 26/June/2017, Monday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>15:27:3.275 of 26/June/2017, Monday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>15:27:5.925 of 26/June/2017, Monday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

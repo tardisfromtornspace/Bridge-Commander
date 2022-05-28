@@ -1,0 +1,42 @@
+#This is the dump of the LogCreator: <PlanetExpress-14 Travel Logger LogCreator_5zk1P7qVCRhn>
+#This log file was created on: 0:5:25.980 of 10/April/2017, Monday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>0:5:25.980 of 10/April/2017, Monday
+#>>>Initialized PlanetExpress-14 Travel logger
+#>>>SELF = <PlanetExpress-14(161623) Travel_HjLgPfJ3w8a4>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Cylon Raider-1
+## -------------------- ##
+####################
+#######>>>0:5:47.989 of 10/April/2017, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:5:49.314 of 10/April/2017, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:5:57.610 of 10/April/2017, Monday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 0:8:36.686 of 10/April/2017, Monday
+#Ending of log dump - User is quiting the game
+########################################

@@ -1,0 +1,27 @@
+#This is the dump of the LogCreator: <Dry Dock3 Travel Logger LogCreator_I1k6nWl5OT6X>
+#This log file was created on: 22:31:59.379 of 13/May/2017, Saturday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>22:31:59.379 of 13/May/2017, Saturday
+#>>>Initialized Dry Dock3 Travel logger
+#>>>SELF = <Dry Dock3(1492439) Travel_0hdcoCutoOO3>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+########################################
+# 22:58:24.885 of 13/May/2017, Saturday
+#Ending of log dump - User is quiting the game
+########################################

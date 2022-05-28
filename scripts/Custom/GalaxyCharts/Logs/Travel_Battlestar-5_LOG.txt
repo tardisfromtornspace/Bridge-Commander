@@ -1,0 +1,41 @@
+#This is the dump of the LogCreator: <Battlestar-5 Travel Logger LogCreator_e7KWJ36id6T5>
+#This log file was created on: 14:21:2.937 of 25/June/2017, Sunday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>14:21:2.937 of 25/June/2017, Sunday
+#>>>Initialized Battlestar-5 Travel logger
+#>>>SELF = <Battlestar-5(116346) Travel_62osf2i4StFg>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>14:21:12.573 of 25/June/2017, Sunday
+#>>>Updated Target Ship =  Warship-1
+## -------------------- ##
+####################
+#######>>>14:21:24.842 of 25/June/2017, Sunday
+#>>>Updated Target Ship =  Warship-2
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>14:21:25.574 of 25/June/2017, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>14:21:45.455 of 25/June/2017, Sunday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

@@ -1,0 +1,57 @@
+#This is the dump of the LogCreator: <Vorchan-4 Travel Logger LogCreator_ljmrRsyj4bzy>
+#This log file was created on: 14:56:59.800 of 20/May/2017, Saturday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>14:56:59.800 of 20/May/2017, Saturday
+#>>>Initialized Vorchan-4 Travel logger
+#>>>SELF = <Vorchan-4(354190) Travel_zubGso34VQZh>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>14:57:4.121 of 20/May/2017, Saturday
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>14:57:10.078 of 20/May/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>14:57:11.119 of 20/May/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>14:57:11.398 of 20/May/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>14:57:12.479 of 20/May/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>14:57:13.355 of 20/May/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>14:58:2.258 of 20/May/2017, Saturday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 15:10:7.922 of 20/May/2017, Saturday
+#Ending of log dump - User is quiting the game
+########################################

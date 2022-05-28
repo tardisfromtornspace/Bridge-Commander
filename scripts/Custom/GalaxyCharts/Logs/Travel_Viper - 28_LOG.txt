@@ -1,0 +1,36 @@
+#This is the dump of the LogCreator: <Viper - 28 Travel Logger LogCreator_6CKjBQ0y35W5>
+#This log file was created on: 14:38:44.942 of 25/June/2017, Sunday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>14:38:44.942 of 25/June/2017, Sunday
+#>>>Initialized Viper - 28 Travel logger
+#>>>SELF = <Viper - 28(968696) Travel_4bau9T109DWK>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship =  Warship-1
+## -------------------- ##
+####################
+#######>>>14:39:1.862 of 25/June/2017, Sunday
+#>>>Updated Target Ship =  Warship-2
+## -------------------- ##
+####################
+#######>>>14:39:6.386 of 25/June/2017, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...

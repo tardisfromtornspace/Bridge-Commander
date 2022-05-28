@@ -1,0 +1,32 @@
+#This is the dump of the LogCreator: <Milky Way (Active)-1 Travel Logger LogCreator_HofKSlq8Hv1M>
+#This log file was created on: 0:37:12.974 of 10/April/2017, Monday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>0:37:12.974 of 10/April/2017, Monday
+#>>>Initialized Milky Way (Active)-1 Travel logger
+#>>>SELF = <Milky Way (Active)-1(1283964) Travel_712R5zVzNBaJ>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>0:37:29.200 of 10/April/2017, Monday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 0:37:32.175 of 10/April/2017, Monday
+#Ending of log dump - User is quiting the game
+########################################

@@ -1,0 +1,39 @@
+#This is the dump of the LogCreator: <NCC-38907 Intrepid-1 Travel Logger LogCreator_RZh0poegj7or>
+#This log file was created on: 1:4:16.020 of 18/March/2017, Saturday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>1:4:16.020 of 18/March/2017, Saturday
+#>>>Initialized NCC-38907 Intrepid-1 Travel logger
+#>>>SELF = <NCC-38907 Intrepid-1(369624) Travel_wXDnUqNIQLK2>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>1:4:29.579 of 18/March/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>1:4:32.145 of 18/March/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+########################################
+# 1:7:12.161 of 18/March/2017, Saturday
+#Ending of log dump - User is quiting the game
+########################################

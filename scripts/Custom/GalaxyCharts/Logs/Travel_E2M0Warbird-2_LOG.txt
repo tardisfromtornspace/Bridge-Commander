@@ -1,0 +1,32 @@
+#This is the dump of the LogCreator: <E2M0Warbird-2 Travel Logger LogCreator_68d92z5Ch8Dx>
+#This log file was created on: 0:18:44.379 of 1/April/2017, Saturday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>0:18:44.379 of 1/April/2017, Saturday
+#>>>Initialized E2M0Warbird-2 Travel logger
+#>>>SELF = <E2M0Warbird-2(152752) Travel_zmdhm6gI047f>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>0:24:33.383 of 1/April/2017, Saturday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 0:25:1.676 of 1/April/2017, Saturday
+#Ending of log dump - User is quiting the game
+########################################

@@ -1,0 +1,27 @@
+#This is the dump of the LogCreator: <AndSlipFighter 1 Travel Logger LogCreator_ZTWL5E60b3lS>
+#This log file was created on: 23:15:39.412 of 23/June/2017, Friday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>23:15:39.412 of 23/June/2017, Friday
+#>>>Initialized AndSlipFighter 1 Travel logger
+#>>>SELF = <AndSlipFighter 1(763352) Travel_Iv8x9189sWti>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+########################################
+# 23:15:50.486 of 23/June/2017, Friday
+#Ending of log dump - User is quiting the game
+########################################

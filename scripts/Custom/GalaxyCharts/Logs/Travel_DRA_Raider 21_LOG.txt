@@ -1,0 +1,59 @@
+#This is the dump of the LogCreator: <DRA_Raider 21 Travel Logger LogCreator_v7asRg4F23S3>
+#This log file was created on: 16:57:34.605 of 9/April/2017, Sunday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>16:57:34.605 of 9/April/2017, Sunday
+#>>>Initialized DRA_Raider 21 Travel logger
+#>>>SELF = <DRA_Raider 21(1426556) Travel_SHidc1yE0ItB>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: Player Travel Destination OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>16:57:49.581 of 9/April/2017, Sunday
+#>>>Updated Target Ship = whitestar 18
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>16:57:52.492 of 9/April/2017, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>16:57:55.010 of 9/April/2017, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>16:58:30.418 of 9/April/2017, Sunday
+#>>>Updated Target Ship = B5Station 10
+## -------------------- ##
+####################
+#######>>>16:58:56.817 of 9/April/2017, Sunday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 17:28:0.014 of 9/April/2017, Sunday
+#Ending of log dump - User is quiting the game
+########################################

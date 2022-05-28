@@ -1,0 +1,167 @@
+#
+# EnemiesInSetStronger
+#
+# A condition that's true when the Enemy objects in the
+# set are significantly stronger than the Friendly objects.
+# Just what "significantly stronger" means can be adjusted
+# with variables that are passed in.
+#
+import App
+from bcdebug import debug
+
+#kDebugObj = App.CPyDebug()
+#kDebugObj.Print('Loading ' + __name__ + ' Condition module...')
+
+class EnemiesInSetStronger:
+	# Arguments to the contstructor:
+	# pCodeCondition	- the ConditionScript this will
+	#			  be attached to
+	# pShip
+	# fThresholdMultiple	- Multiple of the Enemy group's strength
+	#			  that the Friendly group must be above,
+	#			  in order for the condition to be true.
+	# fShieldImportance	- How important shields are to the strength
+	#			  calculation.
+	# fHullImportance	- How important hull strength is to the
+	#			  overall strength calculation.
+	# fWeaponImportance	- How important weapons are to the overall
+	#			  strength calculation.
+	def __init__(self, pCodeCondition, pShip, fThresholdMultiple, fShieldImportance = 1.0, fHullImportance = 1.0, fWeaponImportance = 1.0):
+		# Store variables...
+		debug(__name__ + ", __init__")
+		self.pCodeCondition = pCodeCondition
+		self.fThresholdMultiple = fThresholdMultiple
+		self.fShieldImportance = fShieldImportance
+		self.fHullImportance = fHullImportance
+		self.fWeaponImportance = fWeaponImportance
+		self.pShip = pShip
+
+		# Save a reference to our module, so the module isn't
+		# unloaded unexpectedly.
+		self.pModule = __import__(__name__)
+
+		# Setup a process to update us..
+		self.pTimerProcess = None
+		self.SetupTimer()
+
+		# Set our initial state...
+		self.EvaluateState()
+
+	def __getstate__(self):
+		debug(__name__ + ", __getstate__")
+		dState = self.__dict__.copy()
+		dState["pModule"] = self.pModule.__name__
+		dState["pTimerProcess"] = (self.pTimerProcess is not None)
+		return dState
+
+	def __setstate__(self, dict):
+		debug(__name__ + ", __setstate__")
+		self.__dict__ = dict
+		self.pModule = __import__(self.pModule)
+
+		if self.pTimerProcess:
+			self.pTimerProcess = None
+			self.SetupTimer()
+		else:
+			self.pTimerProcess = None
+
+	def SetupTimer(self):
+		debug(__name__ + ", SetupTimer")
+		if self.pTimerProcess is not None:
+			# We already have a timer.
+			return
+
+		self.pTimerProcess = App.PythonMethodProcess()
+		self.pTimerProcess.SetInstance(self)
+		self.pTimerProcess.SetFunction("EvaluateState")
+		self.pTimerProcess.SetDelay( 15.0 )
+		self.pTimerProcess.SetPriority( App.TimeSliceProcess.LOW )
+
+	def EvaluateState(self, dEndTime = 0.0):
+		# Get the Game/Episode/Mission objects.
+		debug(__name__ + ", EvaluateState")
+		pGame = App.Game_GetCurrentGame()
+		if (pGame == None):
+			return
+
+		pEpisode = pGame.GetCurrentEpisode()
+		if (pEpisode == None):
+			return
+
+		pMission = pEpisode.GetCurrentMission()
+		if (pMission == None):
+			return
+
+		# Find the player's set.
+		pSet = self.pShip.GetContainingSet()
+		if (pSet == None):
+			return
+
+		# Got the set.  Get the friendly and enemy objects
+		# that are inside that set.
+		pGroup1 = pMission.GetFriendlyGroup()
+		pGroup2 = pMission.GetEnemyGroup()
+
+		if pGroup1.IsNameInGroup(self.pShip.GetName()):
+			pFriendlyGroup = pGroup1
+			pEnemyGroup = pGroup2
+		elif pGroup2.IsNameInGroup(self.pShip.GetName()):
+			pFriendlyGroup = pGroup2
+			pEnemyGroup = pGroup1
+		else:
+			# can't find this ship in a group
+			return
+
+		lpFriendlies = pFriendlyGroup.GetActiveObjectTupleInSet(pSet)
+		lpEnemies = pEnemyGroup.GetActiveObjectTupleInSet(pSet)
+
+		fFriendlyStrength = self.CalculateStrength(lpFriendlies)
+		fEnemyStrength = self.CalculateStrength(lpEnemies)
+
+		bCondition = 0
+		if fFriendlyStrength * self.fThresholdMultiple < fEnemyStrength:
+			# We should be true.
+			bCondition = 1
+
+		#kDebugObj.Print("Friendly %f, Enemy %f, Condition %d" % (fFriendlyStrength, fEnemyStrength, bCondition))
+
+		if self.pCodeCondition.GetStatus() != bCondition:
+			self.pCodeCondition.SetStatus(bCondition)
+
+	def CalculateStrength(self, lpObjects):
+		# Total shield and hull values affect side strength..
+		debug(__name__ + ", CalculateStrength")
+		fShieldStrength = 0.0
+		fHullStrength = 0.0
+		fWeaponStrength = 0.0
+		for pObject in lpObjects:
+			pShip = App.ShipClass_Cast(pObject)
+			if (pShip != None):
+				# Add shield strength..
+				pShields = pShip.GetShields()
+				if pShields:
+					for eSide in ( App.ShieldClass.FRONT_SHIELDS,
+							App.ShieldClass.REAR_SHIELDS,
+							App.ShieldClass.TOP_SHIELDS,
+							App.ShieldClass.BOTTOM_SHIELDS,
+							App.ShieldClass.LEFT_SHIELDS,
+							App.ShieldClass.RIGHT_SHIELDS ):
+						# Add the strength from this shield
+						# to the total...
+						fShieldStrength = fShieldStrength + pShields.GetCurShields(eSide)
+
+				# Add hull strength..
+				pHull = pShip.GetHull()
+				if pHull:
+					fHullStrength = fHullStrength + pHull.GetCondition()
+
+				# ***FIXME: Calculate weapon strength.
+
+		fTotalStrength = 0.0
+		for fImportance, fStat in (
+			(self.fShieldImportance, fShieldStrength),
+			(self.fHullImportance, fHullStrength),
+			(self.fWeaponImportance, fWeaponStrength)):
+			fTotalStrength = fTotalStrength + fImportance * fStat
+
+		return fTotalStrength

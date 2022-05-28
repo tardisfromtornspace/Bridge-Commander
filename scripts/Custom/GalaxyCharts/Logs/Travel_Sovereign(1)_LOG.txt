@@ -1,0 +1,25 @@
+#This is the dump of the LogCreator: <Sovereign(1) Travel Logger LogCreator_G6MtSZgts9kN>
+#This log file was created on: 23:36:32.951 of 9/April/2017, Sunday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>23:36:32.951 of 9/April/2017, Sunday
+#>>>Initialized Sovereign(1) Travel logger
+#>>>SELF = <Sovereign(1)(7789) Travel_61s1LMG7lz1N>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Initialized AI Travel Set
+#>>> -Initialized Travel Set
+#>>> -Initialized Space Set
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = player
+#>>>Chaser pre-emptive Refresher Initialization

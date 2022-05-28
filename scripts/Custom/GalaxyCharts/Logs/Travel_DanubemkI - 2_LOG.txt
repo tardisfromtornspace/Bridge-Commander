@@ -1,0 +1,40 @@
+#This is the dump of the LogCreator: <DanubemkI - 2 Travel Logger LogCreator_g94XRQ4X1sYO>
+#This log file was created on: 18:21:12.649 of 20/September/2019, Friday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>18:21:12.649 of 20/September/2019, Friday
+#>>>Initialized DanubemkI - 2 Travel logger
+#>>>SELF = <DanubemkI - 2(461854) Travel_8sOGOl2QS32N>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>18:21:35.822 of 20/September/2019, Friday
+#>>>Updated Target Ship = ISS 12
+## -------------------- ##
+####################
+#######>>>18:21:47.852 of 20/September/2019, Friday
+#>>> -Travel Type Set: Warp
+## -------------------- ##
+####################
+#######>>>18:24:49.181 of 20/September/2019, Friday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 18:55:2.114 of 20/September/2019, Friday
+#Ending of log dump - User is quiting the game
+########################################

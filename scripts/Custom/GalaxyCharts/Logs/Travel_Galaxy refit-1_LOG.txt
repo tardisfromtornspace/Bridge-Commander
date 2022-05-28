@@ -1,0 +1,53 @@
+#This is the dump of the LogCreator: <Galaxy refit-1 Travel Logger LogCreator_n1GgQk5KGSn3>
+#This log file was created on: 0:28:45.809 of 10/April/2017, Monday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>0:28:45.809 of 10/April/2017, Monday
+#>>>Initialized Galaxy refit-1 Travel logger
+#>>>SELF = <Galaxy refit-1(44747) Travel_QcvOBoVtjuwv>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>0:28:58.136 of 10/April/2017, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:28:58.610 of 10/April/2017, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:28:58.724 of 10/April/2017, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:28:59.050 of 10/April/2017, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:28:59.401 of 10/April/2017, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:28:59.869 of 10/April/2017, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:31:10.217 of 10/April/2017, Monday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

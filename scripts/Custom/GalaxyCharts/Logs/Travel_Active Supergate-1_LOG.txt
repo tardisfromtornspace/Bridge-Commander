@@ -1,0 +1,35 @@
+#This is the dump of the LogCreator: <Active Supergate-1 Travel Logger LogCreator_9M7GCI028AS2>
+#This log file was created on: 23:55:23.468 of 9/April/2017, Sunday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>23:55:23.468 of 9/April/2017, Sunday
+#>>>Initialized Active Supergate-1 Travel logger
+#>>>SELF = <Active Supergate-1(163771) Travel_9i1edguu2Zs2>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>23:59:49.155 of 9/April/2017, Sunday
+#>>>Updated Target Ship = OriFighter 1
+## -------------------- ##
+####################
+#######>>>0:0:35.707 of 10/April/2017, Monday
+#>>>Updated Target Ship = OriFighter 3
+########################################
+# 0:5:3.967 of 10/April/2017, Monday
+#Ending of log dump - User is quiting the game
+########################################

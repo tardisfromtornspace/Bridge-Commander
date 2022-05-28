@@ -1,0 +1,28 @@
+#This is the dump of the LogCreator: <IKS Qok'azz Travel Logger LogCreator_c5iCsP1eGo03>
+#This log file was created on: 17:54:46.059 of 29/June/2017, Thursday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>17:54:46.059 of 29/June/2017, Thursday
+#>>>Initialized IKS Qok'azz Travel logger
+#>>>SELF = <IKS Qok'azz(688502) Travel_0izf4ywXc1S9>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>17:58:21.883 of 29/June/2017, Thursday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

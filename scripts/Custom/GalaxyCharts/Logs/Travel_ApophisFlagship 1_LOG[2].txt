@@ -1,0 +1,25 @@
+#This is the dump of the LogCreator: <ApophisFlagship 1 Travel Logger[2] LogCreator_Aedwnvd29bE5>
+#This log file was created on: 20:15:36.107 of 20/April/2017, Thursday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>20:15:36.107 of 20/April/2017, Thursday
+#>>>Initialized ApophisFlagship 1 Travel logger
+#>>>SELF = <ApophisFlagship 1(88356) Travel_z07ttcHg33ie>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Ship is dead or dying
+#>>>Ship is dead or dying (at SetDestination)
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>> -Cancelling, too close to target to warp intercept...
+########################################
+# 20:19:25.789 of 20/April/2017, Thursday
+#Ending of log dump - User is quiting the game
+########################################

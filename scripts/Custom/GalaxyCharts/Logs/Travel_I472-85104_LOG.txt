@@ -1,0 +1,41 @@
+#This is the dump of the LogCreator: <I472-85104 Travel Logger LogCreator_826e42Ygda0i>
+#This log file was created on: 23:43:41.380 of 29/June/2017, Thursday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>23:43:41.380 of 29/June/2017, Thursday
+#>>>Initialized I472-85104 Travel logger
+#>>>SELF = <I472-85104(2601965) Travel_b4buckn5GokA>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>23:43:49.688 of 29/June/2017, Thursday
+#>>>Arrived Events:  added event <C TGEvent instance at _27def4a8_p_TGEvent>
+#>>>Updated Target Ship = aaNebulonB 25
+## -------------------- ##
+####################
+#######>>>23:45:1.806 of 29/June/2017, Thursday
+#>>>Updated Target Ship = Andromeda 23
+## -------------------- ##
+####################
+#######>>>23:45:12.322 of 29/June/2017, Thursday
+#>>>Updated Target Ship = Tardis 25
+## -------------------- ##
+####################
+#######>>>0:0:2.272 of 30/June/2017, Friday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

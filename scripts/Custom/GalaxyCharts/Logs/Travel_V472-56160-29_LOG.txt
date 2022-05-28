@@ -1,0 +1,36 @@
+#This is the dump of the LogCreator: <V472-56160-29 Travel Logger LogCreator_lARFxPlcowd0>
+#This log file was created on: 20:31:20.943 of 1/May/2017, Monday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>20:31:20.943 of 1/May/2017, Monday
+#>>>Initialized V472-56160-29 Travel logger
+#>>>SELF = <V472-56160-29(1415237) Travel_tBGs1mN8DU93>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>20:31:26.143 of 1/May/2017, Monday
+#>>>Arrived Events:  added event <C TGEvent instance at _2a8dfdd0_p_TGEvent>
+#>>>Updated Target Ship = IKS Mierda-9
+## -------------------- ##
+####################
+#######>>>20:33:20.573 of 1/May/2017, Monday
+#>>>Updated Target Ship = Theron-2
+########################################
+# 20:33:43.884 of 1/May/2017, Monday
+#Ending of log dump - User is quiting the game
+########################################

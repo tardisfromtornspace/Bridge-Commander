@@ -1,0 +1,59 @@
+<HTML>
+<HEAD>
+</HEAD>
+<BODY onload="Reset()">
+<script language="javascript">
+var ModScriptStr="";
+var NameScriptStr="";
+var CurCount=1;
+function AddClick()
+{
+if (document.entry.filename.value.length==0 || document.entry.buttontext.value.length==0)
+{
+alert("Please fill out both fields");
+return;
+}
+ModScriptStr+="\t" + "if (pulsenum==" + CurCount + "):\r";
+ModScriptStr+="\t\t" + "return 'Tactical.Projectiles." + document.entry.filename.value + "'\r";
+NameScriptStr+="\t" + "if (pulsenum==" + CurCount + "):\r";
+NameScriptStr+="\t\t" + "return '" + document.entry.buttontext.value + "'\r"
+CurCount++;
+document.entry.filename.value="";
+document.entry.buttontext.value="";
+Display();
+}
+
+function Display()
+{
+document.entry.result.value="";
+document.entry.result.value+="def GetPulseModule(pulsenum):\r";
+document.entry.result.value+=ModScriptStr;
+document.entry.result.value+="\t" + "return 'End'\r\r";
+document.entry.result.value+="def GetPulseName(pulsenum):\r";
+document.entry.result.value+=NameScriptStr;
+document.entry.result.value+="\t" + "return 'No Name'\r\r";
+}
+
+function Reset()
+{
+CurCount=1;
+ModScriptStr="";
+NameScriptStr="";
+document.entry.result.value="def GetPulseModule(pulsenum):\r\treturn 'End'\r" + "\r" + "def GetPulseName(pulsenum):\r\treturn 'No Name'\r";
+document.entry.filename.value="";
+document.entry.buttontext.value="";
+}
+</script>
+<form name="entry">
+Filename of the projectile without the .py extension (e.g. PulseDisruptor not PulseDisruptor.py):
+<br><input type="text" name="filename" size="30">
+<hr size=2 width=70% color="#000000" align="left">
+Text to be on button when this type is selected:<br><input type="text" name="buttontext" size="30">
+<hr size=2 width=70% color="#000000" align="left">
+<input type="button" onclick="AddClick()" value="Add">&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" onclick="Reset()" value="Clear">
+<hr size=2 width=100% color="#000000" align="left">
+When you are done, select all of the text in the box below, and paste it to the bottom of your ship's .py file,  <u>Not</u> the hardpoint file<br>(e.g. BridgeCommander\Scripts\Ships\myship.py)<br>
+<textarea rows=25 cols=70 name="result" readonly=true></textarea>
+</form>
+</BODY>
+</HTML>

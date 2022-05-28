@@ -1,0 +1,27 @@
+#This is the dump of the LogCreator: <Galaxy-2 Travel Logger LogCreator_8NAgXgexs01W>
+#This log file was created on: 3:58:45.036 of 29/March/2017, Wednesday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>3:58:45.036 of 29/March/2017, Wednesday
+#>>>Initialized Galaxy-2 Travel logger
+#>>>SELF = <Galaxy-2(57392) Travel_PKrKKOkMGX0e>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+########################################
+# 4:2:31.566 of 29/March/2017, Wednesday
+#Ending of log dump - User is quiting the game
+########################################

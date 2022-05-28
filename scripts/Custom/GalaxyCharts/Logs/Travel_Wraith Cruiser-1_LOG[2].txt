@@ -1,0 +1,87 @@
+#This is the dump of the LogCreator: <Wraith Cruiser-1 Travel Logger[2] LogCreator_FLxCgwlBi0Zv>
+#This log file was created on: 21:26:27.673 of 17/May/2017, Wednesday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>21:26:27.673 of 17/May/2017, Wednesday
+#>>>Initialized Wraith Cruiser-1 Travel logger
+#>>>SELF = <Wraith Cruiser-1(349559) Travel_39AG0p1kR8fM>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>21:26:37.523 of 17/May/2017, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>21:26:38.379 of 17/May/2017, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>21:27:38.257 of 17/May/2017, Wednesday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>21:28:5.015 of 17/May/2017, Wednesday
+#>>>Initialized Wraith Cruiser-1 Travel logger
+#>>>SELF = <Wraith Cruiser-1(404477) Travel_TUh6Mak99X07>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>21:28:16.035 of 17/May/2017, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>21:28:18.440 of 17/May/2017, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>21:29:7.760 of 17/May/2017, Wednesday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 22:6:59.077 of 17/May/2017, Wednesday
+#Ending of log dump - User is quiting the game
+########################################
+########################################
+# 22:6:59.077 of 17/May/2017, Wednesday
+#Ending of log dump - User is quiting the game
+########################################

@@ -1,0 +1,40 @@
+#This is the dump of the LogCreator: <DRA_Raider 13 Travel Logger LogCreator_bZE0YxlyAcE9>
+#This log file was created on: 10:30:38.552 of 2/May/2017, Tuesday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>10:30:38.552 of 2/May/2017, Tuesday
+#>>>Initialized DRA_Raider 13 Travel logger
+#>>>SELF = <DRA_Raider 13(705253) Travel_yFj5JUgr0GXd>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>10:30:40.143 of 2/May/2017, Tuesday
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>10:30:51.496 of 2/May/2017, Tuesday
+#>>>Updated Target Ship = whitestar 5
+## -------------------- ##
+####################
+#######>>>10:31:22.451 of 2/May/2017, Tuesday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 10:33:22.387 of 2/May/2017, Tuesday
+#Ending of log dump - User is quiting the game
+########################################

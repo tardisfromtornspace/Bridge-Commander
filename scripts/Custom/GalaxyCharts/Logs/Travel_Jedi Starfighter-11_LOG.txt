@@ -1,0 +1,36 @@
+#This is the dump of the LogCreator: <Jedi Starfighter-11 Travel Logger LogCreator_4GQv5jGax3ZS>
+#This log file was created on: 14:39:45.873 of 13/April/2020, Monday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>14:39:45.873 of 13/April/2020, Monday
+#>>>Initialized Jedi Starfighter-11 Travel logger
+#>>>SELF = <Jedi Starfighter-11(1015467) Travel_Sre8Vh9foE6s>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Droid Fighter-1
+## -------------------- ##
+####################
+#######>>>14:40:7.479 of 13/April/2020, Monday
+#>>>Updated Target Ship = Droid Fighter-3
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>14:40:9.262 of 13/April/2020, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...

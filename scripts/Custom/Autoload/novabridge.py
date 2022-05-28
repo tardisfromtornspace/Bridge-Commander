@@ -1,0 +1,65 @@
+import Foundation
+
+# Uncomment the below to enable!
+Foundation.BridgeDef('Nova Bridge', 'novabridge', dict = {
+	'modes': [ Foundation.MutatorDef.Stock ],
+	'locations': {
+		'novaHelm':	[ 'data/animations/nova_stand_h_m.nif', 'nova_stand_h_m' ],
+		'novaTactical':	[ 'data/animations/nova_stand_t_l.nif', 'nova_stand_t_l' ],
+		'novaCommander':[ 'data/animations/Int_stand_c_m.nif', 'Int_stand_c_m' ],
+		'novaScience':	[ 'data/animations/nova_stand_S_S.nif', 'nova_stand_s_s' ],
+		'novaEngineer':	[ 'data/animations/nova_stand_e_s.nif', 'nova_stand_e_s' ],
+		'novaGuest':	[ 'data/animations/nova_stand_X_m.nif', 'nova_stand_X_m' ],
+		'novaL1S':	[ 'data/animations/nova_L1toG3_S.nif', 'nova_L1toG3_s', 'pCharacter.SetHidden(1)' ],
+		'novaL1M':	[ 'data/animations/nova_L1toG3_M.nif', 'nova_L1toG3_M', 'pCharacter.SetHidden(1)' ],
+		'novaL1L':	[ 'data/animations/nova_L1toG3_L.nif', 'nova_L1toG3_L', 'pCharacter.SetHidden(1)' ],
+		'novaL2M':	[ 'data/animations/nova_L2toG1_M.nif', 'nova_L2toG1_M', 'pCharacter.SetHidden(1)' ],
+		'novaL3M':	[ 'data/animations/nova_L2toG2_M.nif', 'nova_L3toG1_M', 'pCharacter.SetHidden(1)' ],
+		'novaG1M':	[ 'data/animations/nova_G1toL2_M.nif', 'nova_G1toL2_M' ],
+		'novaG2M':	[ 'data/animations/nova_G2toL2_M.nif', 'nova_G2toL2_M' ],
+		'novaG3M':	[ 'data/animations/nova_G3toL1_M.nif', 'nova_G3toL1_M' ],
+	},
+	'Maps':{
+		'CurrentMaps': {"beams": "beams", "dome" : "dome", "side1-1" : "side1-1", "side3-1" : "side3-1", "side6-1" : "side6-1", "side10-1" : "side10-1", "chair6_LM" : "chair6_LM", "doors_LM" : "doors_LM", "redblink" : "redblink" },
+		'GreenMaps':{'beams': 
+'data/Models/Sets/novabridge/High/beams.tga',
+			     'dome': 
+'data/Models/Sets/novabridge/High/dome.tga',
+'side1-1': 'data/Models/Sets/novabridge/High/side1-1.tga',
+'side3-1': 'data/Models/Sets/novabridge/High/side3-1.tga',
+'side6-1': 'data/Models/Sets/novabridge/High/side6-1.tga',
+'side10-1': 'data/Models/Sets/novabridge/High/side10-1.tga',
+'chair6_LM': 'data/Models/Sets/novabridge/High/chair6_LM.tga',
+'doors_LM': 'data/Models/Sets/novabridge/High/doors_LM.tga',
+'redblink': 'data/Models/Sets/novabridge/High/redblink.tga'},
+		'YellowMaps':{'beams': 
+'data/Models/Sets/novabridge/High/beams.tga',
+			     'dome': 
+'data/Models/Sets/novabridge/High/dome.tga',
+'side1-1': 'data/Models/Sets/novabridge/High/side1-1.tga',
+'side3-1': 'data/Models/Sets/novabridge/High/side3-1.tga',
+'side6-1': 'data/Models/Sets/novabridge/High/side6-1.tga',
+'side10-1': 'data/Models/Sets/novabridge/High/side10-1.tga',
+'chair6_LM': 'data/Models/Sets/novabridge/High/chair6_LM.tga',
+'doors_LM': 'data/Models/Sets/novabridge/High/doors_LM.tga',
+'redblink': 'data/Models/Sets/novabridge/High/redblink.tga'},
+		'RedMaps':{'beams': 'data/Models/Sets/novabridge/High/beams_red.tga',
+			     'dome': 'data/Models/Sets/novabridge/High/dome_blue.tga',
+'side1-1': 'data/Models/Sets/novabridge/High/side1-1RED.tga',
+'side3-1': 'data/Models/Sets/novabridge/High/side3-1RED.tga',
+'side6-1': 'data/Models/Sets/novabridge/High/side6-1RED.tga',
+'side10-1': 'data/Models/Sets/novabridge/High/side10-1RED.tga',
+'chair6_LM': 'data/Models/Sets/novabridge/High/chair6_LMr.tga',
+'doors_LM': 'data/Models/Sets/novabridge/High/doors_LMr.tga',
+'redblink': [1, {1: 'data/Models/Sets/novabridge/redblinkRED.tga', 2: 'data/Models/Sets/novabridge/redblink.tga',}]},
+	},
+	"bridgeSound":	{"LiftDoor": {"volume": 1.0,"file": "sfx/Intrepid/door.wav", "group": "BridgeGeneric"},
+			"AmbBridge": {"volume": 0.4,"file": "sfx/Intrepid/ambience.wav", "group": "BridgeGeneric"},
+			"RedAlertSound": {"volume": 1.0,"file": "sfx/Intrepid/red.wav", "group": "BridgeGeneric"},
+			"YellowAlertSound": {"volume": 1.0,"file": "sfx/Intrepid/yellow.wav", "group": "BridgeGeneric"},
+			"GreenAlertSound": {"volume": 0.5,"file": "sfx/Intrepid/green.wav", "group": "BridgeGeneric"},
+			"ViewOn": {"volume": 1.0,"file": "sfx/Intrepid/view_on.wav", "group": "BridgeGeneric"},
+			"ViewOff": {"volume": 1.0,"file": "sfx/Intrepid/view_off.wav", "group": "BridgeGeneric"}
+	},
+	"LoadingScreen": "data/Icons/LoadingScreens/NovaLoading.tga",
+})

@@ -1,0 +1,13 @@
+Yes, just a little reminder.
+
+This folder (Custom\Eras) is the folder which contains the Era Plugins for BC.
+AND it also contains the script which loads them all, turning each one of them in a python class object.
+Now you ask: "wtf? How, what script?!?"
+
+The awnser is simple:  "the  __init__.py   script"   (yeah, never wondered why a useless __init__ script is 10Kb ?)
+
+So, anyway, the WARNING I wanted to give here is:
+Do not modify in any way the __init__.py file in this folder (which comes in Galaxy Charts). Do not replace it, do not overwrite it, etc...
+Doing so can cause severe bugs in mods that use the Era Plugin (most likely Galaxy Charts, since the era plugin system comes with it, and is used by it too).
+Plus, if you're a modder which created your own Era Plugin, and are imcluding it in a mod you're going to release, include in your mod the Custom\Eras folder, and your
+era plugin. Don't include other plugins (unless they are yours too) and most importantly do not include the __init__.py (or/and  __init__.pyc) script.

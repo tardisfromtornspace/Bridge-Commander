@@ -1,0 +1,66 @@
+
+Title		: ZM System Pack 2.0
+Filename	: zmsystempack2.0.zip
+Version		: 2.0 (not tested in Multiplayer)
+Date		: 2/23/2003
+Author		: Michael Frederick (A.K.A. - Zorg/Morpheus)
+Credits		: Daniel B. Houghton (aka Dasher42) who made it possible for everyone to
+use new Bridge Commander mods with the his 'Foundation Plugin System'!
+NanoByte, who made the mod packager!
+
+Description of the Mod File
+---------------------------
+
+This will add 15 new systems to Bridge Commander: 8 new as well as Systempack 1.0
+
+Arcturus: A system named after a real star in our Galaxy, - 6 planets.
+Badlands: As seen in the premier episode of Star Trek Voyager.  A large plasma cloud full of asteroids and plasma cyclones.
+Canopus: A system named after a real star in our galaxy, - 3 planets.
+GalaxyEdge: An accident has thrown your ship outside the galaxy into a small cluster of stars.
+Hekaras: As seen on Star Trek TNG, warp speeds are damaging our galaxy.  The Hekaras corridor is a turbulent area filled with Tetryon Particles and spacial eddys.
+Kastra: Completely imaginary just for fun.
+KavisAlpha: As seen on Star Trek TNG, A large red giants steller matierial is pulled away by the gravity of it's nuetron star companion.  Visit planet IV, the Nanite planet.
+Tathis: Completely imaginary just for fun.
+Baqis: A trinary star with an asteroid field and nebula.
+Betelgeuse: A Red Giant star with a single system. (NEW and IMPROVED) Yeap it's a red giant alright.
+Pleides: The Seven Sisters, my favorite in the night sky, also features Blackrooks terraformed Mars as planet Eridian.
+Procyon: A Binary system with 3 planets
+RedGiant: Mostly I just wanted to create a giant red star far far away.  This also contains a white dwarf star and a new black nuetron star.
+SystemJ25: A binary system.
+Vatris: A large system with three planets and lots of moons.
+
+
+Some Planets and Moons are from Dasher42's Sol system and I have included the original readme file that came with that system.  I did not alter any of those textures from their original form. The terraformed Mars texture is by BlackRook32, I have also included the original readme. 
+
+Special Thanks to Ben Howard aka BanzaiZAP, who created the Banzai System pack, his scripts provided me with a guide and inspiration to making these systems.
+
+Thanks to all.
+
+
+March-April 2004 - NanoFx2 Planet Atmospheres added in by Chris Jones. GalaxyEdge Class E Atmosphere created by Ken Jones (son).
+
+
+Installation:
+-------------
+
+1. Unzip the files into a temp directory on your hard disk, copy the files to your root Star Trek Bridge Commander directory.
+ 
+2. Use BCMP 4.4 to import a special ship from SFCII, open up BCMP and under Game tools/Ship Plugin, type in "Junk" and make a plugin for it and you are all set, if not the Betelgeuse system may crash your game :(
+
+3. To Activate the systems start BC, Choose Configure then Mutators and check ZMSystempack, enjoy!
+
+All of these systems should be compatible with QBR 2.13 I don't know about 2.14 I don't use that one (doesn't like me for some reason?)  Please report and bugs or problems that you find to me at mfrederick@columbus.rr.com, however their shouldn't be any but I have been known to miss stuff, thanks.
+--------------------------
+
+Copyright and Distribution Permissions
+--------------------------------------
+THIS PATCH IS NOT MADE, DISTRIBUTED, OR SUPPORTED BY Activision
+ TM & (C) INTERPLAY & PARAMOUNT PICTURES.
+
+Copyright notices: 
+
+Star Trek, Bridge Commander, Star Trek: Deep Space Nine, Star Trek: The Next Generation,
+Star Trek: Voyager (and the various logo devices used in them) are copyright
+Paramount Pictures, as are the characters, related images, and sound from the productions. 
+
+Please use this mod in any way you wish, all I asked for is credit for the original mod & textures.  This mod is not to be sold or put on any compilation Cd for sale.

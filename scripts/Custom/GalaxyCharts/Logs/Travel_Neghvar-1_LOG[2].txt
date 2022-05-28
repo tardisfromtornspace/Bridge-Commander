@@ -1,0 +1,27 @@
+#This is the dump of the LogCreator: <Neghvar-1 Travel Logger[2] LogCreator_JVpie5H7zikp>
+#This log file was created on: 0:4:30.215 of 10/April/2017, Monday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>0:4:30.215 of 10/April/2017, Monday
+#>>>Initialized Neghvar-1 Travel logger
+#>>>SELF = <Neghvar-1(88373) Travel_yAYtnc5Ba88S>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+########################################
+# 0:5:33.528 of 10/April/2017, Monday
+#Ending of log dump - User is quiting the game
+########################################

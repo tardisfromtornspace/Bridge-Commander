@@ -1,0 +1,50 @@
+#This is the dump of the LogCreator: <Drakh Fighter-2 Travel Logger[2] LogCreator_1frmymVq3jRZ>
+#This log file was created on: 12:23:2.065 of 28/May/2017, Sunday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>12:23:2.065 of 28/May/2017, Sunday
+#>>>Initialized Drakh Fighter-2 Travel logger
+#>>>SELF = <Drakh Fighter-2(189351) Travel_F5RtPAZJBIN5>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>12:23:15.996 of 28/May/2017, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>12:23:16.661 of 28/May/2017, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>12:23:17.251 of 28/May/2017, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>12:23:17.817 of 28/May/2017, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>12:23:28.566 of 28/May/2017, Sunday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 12:37:58.865 of 28/May/2017, Sunday
+#Ending of log dump - User is quiting the game
+########################################

@@ -1,0 +1,1179 @@
+#This is the dump of the LogCreator: <Galor 1 Travel Logger LogCreator_00i6h870yQVv>
+#This log file was created on: 0:2:38.853 of 22/April/2017, Saturday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>0:2:38.853 of 22/April/2017, Saturday
+#>>>Initialized Galor 1 Travel logger
+#>>>SELF = <Galor 1(92021) Travel_6j7h7V32hsVm>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: Player Travel Destination OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>0:2:49.492 of 22/April/2017, Saturday
+#>>>Updated Target Ship = Player
+#>>>Beginning to chase target... better late than never...
+#>>>Setting Destination...
+#>>> -Destination: Systems.DS9FXChintoka.DS9FXChintoka1
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: Player Travel Destination OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Is AI in Player in route CHECKING: Player Set = DS9FXChintoka1 // self Set = DS9FXCardassia1
+#>>> -Is AI in Player in route CHECKING: Player Dest Set = DS9FXCardassia1 // self Dest Set = DS9FXChintoka1
+#>>> -Attribute: Initial Set = DS9FXCardassia1
+#>>> -Attribute: Destination Set = DS9FXChintoka1
+#>>> -Checked: Ship can warp, travel procedures started.
+#>>> -Speed Check:
+#>>>     -Current:  9.97999954224
+#>>>     -Real Speed:  8776.38183594
+#>>>     -Cruise:  9.98
+#>>>     -Max:  9.99
+#>>>     -Actual Cruise:  9.97999954224
+#>>>     -Actual Max:  9.98999977112
+#>>> -GFX Sequence Set up DONE
+#>>> -Travel Values calculated:
+#>>>   -Time To Reach: 4.98582935333 seconds
+#>>> -Started playing engaging sequence.
+## -------------------- ##
+####################
+#######>>>0:2:56.905 of 22/April/2017, Saturday
+#>>> -Finishing travelling procedures...
+#>>> -Started Refresher Loop
+#>>> -Travel Set being used: AITravelSet
+#>>> -Just changed ship set.
+#>>> -Travelling procedures ended, ship is already travelling.
+#>>>Updating travel values (ship changed speed)
+#>>> -New Speed: 9.99
+#>>> -New time to reach: 2.76235866547 seconds
+#>>> -Finished updating travel values
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 2.68157863617 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>0:2:57.122 of 22/April/2017, Saturday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 2.44271755219 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>0:2:57.398 of 22/April/2017, Saturday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 2.16525173187 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>0:2:57.652 of 22/April/2017, Saturday
+#>>>Updating destination to chase target...
+#>>>Setting Destination...
+#>>> -Destination: Systems.DS9FXCardassia.DS9FXCardassia1
+#>>> -Updating travel values (ship changed course)
+#>>> -New time to reach: 0.597137391567 seconds
+#>>> -Finished updating travel values
+#>>>Updating travel values (ship changed speed)
+#>>> -New Speed: 9.97999954224
+#>>> -New time to reach: 1.0777837038 seconds
+#>>> -Finished updating travel values
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 0.390100598335 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>0:2:58.501 of 22/April/2017, Saturday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: -0.130559802055 seconds
+#>>> -Update Loop MARK COMPLETED, arrived at destination.
+#>>>Drop Out Of Travel Procedures Started:
+#>>> -Is Dropping out: 0
+#>>> -Traveler Systems Location Set
+#>>> -Travel Values are zero
+#>>> -Stopped Refresher...
+#>>> -Impulse Engines status reset
+#>>>Checking Exit Point/Placement and exiting path...
+#>>>Set Exit Placement Name as TravelerWarpPlacement2
+#>>>Set Exit Point to <C TGPoint3 instance at _174e4bdc_p_TGPoint3> // components: X = -5700.40917969,  Y = -2372.84423828,  Z = 805.545288086
+#>>> -Changed ship set to destination: DS9FXCardassia1
+#>>> -Sent Arrived Events
+#>>> -Exiting warp Seq played
+#>>> -Clocked Real Time taken to Travel: 1.90991210938 seconds
+#>>>Finished procedures to Drop Out Of Travel.
+## -------------------- ##
+####################
+#######>>>0:3:7.575 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:8.888 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:9.411 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:9.790 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:9.953 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:10.615 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:10.857 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:11.253 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:11.690 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:12.055 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:12.247 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:12.748 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:13.241 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:13.570 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:13.723 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:14.001 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:14.498 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:14.884 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:15.385 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:15.663 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:15.776 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:16.340 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:16.581 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:17.220 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:17.716 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:18.204 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:18.501 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:18.875 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:19.491 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:19.754 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:20.119 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:20.368 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:20.484 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:20.931 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:21.149 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:21.458 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:21.793 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:22.226 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:22.724 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:23.221 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:23.667 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:23.901 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:24.286 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:24.585 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:25.153 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:25.565 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:26.143 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:26.370 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:26.700 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:26.937 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:27.552 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:27.762 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:27.999 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:28.338 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:28.803 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:29.026 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:29.139 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:29.502 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:29.824 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:30.174 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:30.655 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:31.113 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:31.345 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:31.811 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:32.062 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:32.407 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:32.524 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:33.085 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:33.455 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:33.571 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:33.981 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:34.445 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:34.810 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:35.276 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:35.607 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:35.855 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:36.187 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:36.618 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:36.833 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:37.445 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:37.679 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:38.015 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:38.276 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:38.392 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:38.723 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:39.208 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:39.506 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:39.738 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:40.097 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:40.199 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:40.795 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:41.162 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:41.443 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:41.809 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:42.019 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:42.292 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:42.882 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:43.309 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:43.412 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:44.019 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:44.611 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:44.922 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:45.182 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:45.976 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:46.573 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:46.670 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:47.170 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:47.322 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:47.873 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:48.434 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:48.879 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:49.045 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:49.264 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:49.556 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:50.028 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:50.392 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:50.644 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:51.182 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:51.660 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:52.175 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:52.447 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:52.802 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:53.051 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:53.520 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:53.977 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:54.318 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:54.822 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:55.106 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:55.615 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:55.855 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:56.268 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:56.563 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:56.958 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:57.124 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:57.594 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:58.073 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:58.568 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:58.995 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:59.387 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:3:59.866 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:0.239 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:0.481 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:0.614 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:0.973 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:1.359 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:1.757 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:2.134 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:2.482 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:2.926 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:3.248 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:3.359 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:3.493 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:3.841 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:4.256 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:4.373 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:4.610 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:5.239 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:5.351 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:5.764 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:5.980 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:6.312 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:6.543 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:8.015 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:8.481 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:8.859 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:9.207 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:9.412 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:9.656 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:10.235 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:10.701 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:10.841 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:11.199 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:11.531 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:12.083 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:12.296 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:12.409 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:12.907 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:13.138 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:13.379 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:13.485 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:13.752 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:14.114 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:14.285 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:14.644 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:15.026 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:15.291 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:15.740 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:15.888 of 22/April/2017, Saturday
+#>>>Beginning to chase target...
+#>>>Setting Destination...
+#>>> -Destination: Systems.Hekaras.Hekaras1
+#>>> -Travel Type Set: Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: Player Travel Destination OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Is AI in Player in route CHECKING: Player Set = DS9FXCardassia1 // self Set = DS9FXCardassia1
+#>>> -Is AI in Player in route CHECKING: Player Dest Set = Hekaras1 // self Dest Set = Hekaras1
+#>>> -Is AI in Player Route - Checked
+#>>> -Attribute: Initial Set = DS9FXCardassia1
+#>>> -Attribute: Destination Set = Hekaras1
+#>>> -Checked: Ship can warp, travel procedures started.
+#>>> -Speed Check:
+#>>>     -Current:  9.97999954224
+#>>>     -Real Speed:  4388.19091797
+#>>>     -Cruise:  9.98
+#>>>     -Max:  9.99
+#>>>     -Actual Cruise:  9.97999954224
+#>>>     -Actual Max:  9.98999977112
+#>>> -GFX Sequence Set up DONE
+#>>> -Travel Values calculated:
+#>>>   -Time To Reach: 11.3354711533 seconds
+#>>> -Started playing engaging sequence.
+## -------------------- ##
+####################
+#######>>>0:4:23.563 of 22/April/2017, Saturday
+#>>> -Finishing travelling procedures...
+#>>> -Started Refresher Loop
+#>>> -Travel Set being used: TravelSet
+#>>> -Just changed ship set.
+#>>> -Travelling procedures ended, ship is already travelling.
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 11.0325536728 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>0:4:24.205 of 22/April/2017, Saturday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 10.5277929306 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>0:4:24.628 of 22/April/2017, Saturday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 10.1499242783 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>0:4:25.016 of 22/April/2017, Saturday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 9.77983760834 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>0:4:25.399 of 22/April/2017, Saturday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 9.33653926849 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>0:4:25.895 of 22/April/2017, Saturday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 8.92046260834 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>0:4:26.573 of 22/April/2017, Saturday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 8.24614620209 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>0:4:27.090 of 22/April/2017, Saturday
+#>>>Updating travel values (ship changed speed)
+#>>> -New Speed: 9.99
+#>>> -New time to reach: 4.56868886948 seconds
+#>>> -Finished updating travel values
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 3.48549795151 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>0:4:27.973 of 22/April/2017, Saturday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 3.25344228745 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>0:4:28.162 of 22/April/2017, Saturday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 3.07360219955 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>0:4:28.353 of 22/April/2017, Saturday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 2.88369131088 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>0:4:28.576 of 22/April/2017, Saturday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 2.59539175034 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>0:4:28.854 of 22/April/2017, Saturday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 2.17305898666 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>0:4:29.264 of 22/April/2017, Saturday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 1.80443716049 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>0:4:29.651 of 22/April/2017, Saturday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 1.19057607651 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>0:4:30.227 of 22/April/2017, Saturday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 0.663262844086 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>0:4:30.763 of 22/April/2017, Saturday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: -0.243536472321 seconds
+#>>> -Update Loop MARK COMPLETED, arrived at destination.
+#>>>Drop Out Of Travel Procedures Started:
+#>>> -Is Dropping out: 0
+#>>> -Traveler Systems Location Set
+#>>> -Travel Values are zero
+#>>> -Stopped Refresher...
+#>>> -Impulse Engines status reset
+#>>>Checking Exit Point/Placement and exiting path...
+#>>> -Changed ship set to destination: Hekaras1
+#>>> -Sent Arrived Events
+#>>> -Exiting warp Seq played
+#>>> -Clocked Real Time taken to Travel: 7.97967529297 seconds
+#>>>Finished procedures to Drop Out Of Travel.
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:32.116 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:33.931 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:34.045 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:34.576 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:34.907 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:35.041 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:35.587 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:36.034 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:36.154 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:36.692 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:37.016 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:37.260 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:37.772 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:38.007 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:38.354 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:38.593 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:38.908 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:39.352 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:39.483 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:39.948 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:40.303 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:40.411 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:40.835 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:41.385 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:41.711 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:42.046 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:42.401 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:42.634 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:42.999 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:43.578 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:4:43.839 of 22/April/2017, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:5:31.042 of 22/April/2017, Saturday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 0:7:56.785 of 22/April/2017, Saturday
+#Ending of log dump - User is quiting the game
+########################################

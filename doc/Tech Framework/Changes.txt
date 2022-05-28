@@ -1,0 +1,60 @@
+CHANGE LIST
+-----------
+
+1.2:
+-Multiplayer Bugfixes
+-Added standard Carrier ship "Galaxy + Carrier"
+
+1.1:
+-Some minor Bugfixes
+-Added some minor changes for Multiplayer
+-Added support for MLeoDaalder KeyFoundation, can be found here:
+http://dynamic3.gamespy.com/~bridgecommander/phpBB/viewtopic.php?t=15481
+
+1.0:
+- Release by the new Shuttle Launching group
+-Re-enable collision detection after launch - Admiral Ames, jwattsjr
+-Makes the Seconday Fireing working - mldaalder, defiant
+-Useful changes to the ftbMissionLib - Sim Rex
+-Additional Bug Fixes, some minor new functions - Defiant
+
+050102:
+- Added Launcher, LauncherGroup, and LauncherManager
+- Carriers now contain Launchers and/or LauncherGroups instead of containing "ships"
+- LauncherGroups contain arbitrary sets of Launchers.
+- Launchers require *TWO* hardpoints (important for future releases):
+	-> an ObjectEmitterProperty named "<launcher name> OEP"
+	-> a HullSubsystem named "<launcher name>"
+	NOTE: It would be wise to have both subsystems colocated at the same XYZ coordinate on the ship
+- For each Launcher/LauncherGroup, a "Launcher #" and "Type: #" button pair is generated in the GUI
+
+050502a:
+- User-definable AIs may be specified on a per ship type basis
+- Launched objects are optionally commandable on a per ship type basis
+
+051102a:
+- Carriers are now "plugins" defined in /scripts/Custom/Carriers.
+  See the included /scripts/Custom/Carriers/Dauntless.py for an example.  There have been some changes to Carrier
+  modules since 050502a.
+
+051102b:
+- Fixed a bug introduced in 051102a where a Launcher can launch more ships than it contains.
+
+
+Return Shuttles Changes (old)
+<---------->
+Version 0.7b:
+Big bug fixes
+
+Version 0.6b:
+Code cleaned up
+
+Version 0.5b:
+Re-formatted the .txt file from UNIX to Dos.
+
+Version 0.4b:
+Added the Possibility to exclude Tractors for Docking
+
+Version 0.3b:
+File scripts/Custom/Carrier/SetMaxShuttlesInBay.py is no longer used.
+Update your Carrier files instead (see Install.txt).

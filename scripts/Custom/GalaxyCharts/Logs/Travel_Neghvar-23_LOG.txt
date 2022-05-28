@@ -1,0 +1,40 @@
+#This is the dump of the LogCreator: <Neghvar-23 Travel Logger LogCreator_rt45823H67Vn>
+#This log file was created on: 0:38:16.694 of 10/April/2017, Monday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>0:38:16.694 of 10/April/2017, Monday
+#>>>Initialized Neghvar-23 Travel logger
+#>>>SELF = <Neghvar-23(851817) Travel_PHzec8UN7Ydq>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Victory-1
+## -------------------- ##
+####################
+#######>>>0:38:46.224 of 10/April/2017, Monday
+#>>>Updated Target Ship = Slipfighter MK-I-17
+## -------------------- ##
+####################
+#######>>>0:38:52.307 of 10/April/2017, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+########################################
+# 0:42:41.618 of 10/April/2017, Monday
+#Ending of log dump - User is quiting the game
+########################################

@@ -1,0 +1,82 @@
+<HTML>
+<HEAD>
+  <TITLE>In-game Editors and Debugging Aids</TITLE>
+  <LINK REV="made" HREF="mailto:">
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-1">
+  <META NAME="author" CONTENT="">
+  <META NAME="description" CONTENT="">
+  <META NAME="keywords" CONTENT="">
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000" LINK="#0000FF" VLINK="#800080" ALINK="#FF0000">
+
+<H1>In-game Editors and Debugging Aids</H1>
+
+<P>There are some editing tools that are contained in Bridge Commander, and are run from within the game. This section will describe how to use them, along with other debugging aids.</P>
+
+<P>
+<UL>
+<LI><A HREF="#Console">The console</A></LI>
+<LI><A HREF="#Cheat keys">Cheat keys</A></LI>
+<LI><A HREF="#Placement Editor">Placement Editor</A></LI>
+</UL>
+</P>
+
+<HR>
+<P>
+<A NAME="Console"><H2>The console</H2></A>
+</P>
+<P>
+Bridge Commander includes a Python interpreter, accessible through an in-game console. To access the console, start up Bridge Commander with the <B>-TestMode</B> command line option. This will enable some cheats and other aids. Press the tilde key (~) to toggle the console. When you type a line in the console and hit return, it will be passed to the Python interpreter, evaluated, and then any error messages will be printed.
+</P>
+<P>
+The console is very useful for debugging missions while they're running. For example, you can import the mission file, then print out the values of its globals, or run functions from the mission directly. You can also get ships, sets, or other objects, and then manipulate them from the console.
+</P>
+<P>
+Any functions in the script file SimpleAPI.py will automatically be accessible from the console. (i.e. you don't need to import them beforehand, or specify the module name beforehand) Other scripts will need to be imported before they are used.
+</P>
+
+<HR>
+<P>
+<A NAME="Cheat keys"><H2>Cheat keys</H2></A>
+</P>
+<P>
+When you have <B>-TestMode</B> enabled, as above, certain cheat keys become active in the game. While in tactical mode:
+<UL>
+<LI>Shift-G enters god mode. Your ship will be invincible.</LI>
+<LI>Shift-K damages the currently targeted subsystem by 25%.</LI>
+<LI>Shift-R repairs the current target fully.</LI>
+<LI>Shift-Q gives your ship another 10 quantum torpedoes, if possible.</LI>
+</UL>
+</P>
+
+<HR>
+<P>
+<A NAME="Placement Editor"><H2>Placement Editor</H2></A>
+</P>
+<P>
+The placement editor is used to navigate sets, and create or manipulate placement objects (used for ship starting positions, planet positions, asteroid fields, camera positions, waypoints...the list goes on and on). You can toggle the placement editor while in-game by typing "Edit()" at the console.
+</P>
+<P>
+When you start the placement editor, you will see a control panel, with a bunch of buttons on it for editing things in the current set. You can navigate through the set by dragging the mouse in the view window, as well as using the arrow keys. Alternately, you can cycle through objects using the Chase buttons in the panel, or their hotkeys. Press + and - to change the speed of keyboard navigation.
+</P>
+<P>
+You can select objects in the view by clicking on them, or by using the Target Next/Prev buttons/hotkeys. When you have an object selected, you can move it by clicking on the <B>Move Object</B> button (or pressing 'm'), then using the mouse/keys in a similar fashion to moving the camera. You can also use the Obj to Cam button to move the object to the camera's current location.
+</P>
+<P>
+Normally, placements are not shown in the view, but you can toggle them on using the <B>Togl Plcmnts</B> button. To create a placement, click on the <B>Insert Object</B> button -- this will create a placement in front of the camera. You can then move it around like any other object. Note that a placement has a facing as well as a position -- the red (or pink, if the placement is static) prong is the forward vector, the other one is the up vector. In your mission script, you can then create objects at a placement by name (editing the placement's name with the <B>Edit Name</B> button if necessary).
+</P>
+<P>
+You can also connect placements to create a path. If you enter <B>Path Mode</B> using the button, any placements you create will automatically be connected into a path. Alternately, you can select a waypoint and choose <B>Attach Waypoint</B>, then select another waypoint. This will connect the chosen waypoint to the previous, and you can construct a path this way.
+</P>
+<P>
+Placements are typically placed in two files -- a "region" file, with static placements which may be used in multiple missions (the _S scripts in the Systems directory are these files), and a "mission" file, which contains other, potentially mission-specific placements (these are the non _S scripts -- you can also find some in mission directories). When you click <B>Save</B>, you will be prompted for two file names, one for each file. Placements marked static (using the <B>Toggle Static</B> button) will be saved to the static file, others to the mission file. Please note that you can't hit enter in the dialogs to save -- click on the button instead.
+</P>
+<P>
+Other notes: asteroid fields may not work when created, until you reload the mission/placement file. Do not increase the tiles/axis value for asteroid fields too much (basically, it increases the number of asteroids cubically) -- experiment to find reasonable values. (the defaults are, in fact, reasonable) The backdrop editor (using <B>Next/Prev Editor</B>) is used for backdrops -- you specify the texture to use, along with some other parameters, and it is saved in the region placement file. Finally, you can use the <B>Switch Sets</B> button to change to another set -- this is useful if you want to add placements to the bridge set, for example, as camera positions for a cutscene.
+</P>
+
+<HR>
+<P><SMALL>Created on ... January 31, 2002</SMALL></P>
+</BODY>
+</HTML>

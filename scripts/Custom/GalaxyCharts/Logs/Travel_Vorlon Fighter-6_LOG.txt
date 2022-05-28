@@ -1,0 +1,43 @@
+#This is the dump of the LogCreator: <Vorlon Fighter-6 Travel Logger LogCreator_2J2527240gKs>
+#This log file was created on: 0:46:37.384 of 10/April/2017, Monday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>0:46:37.384 of 10/April/2017, Monday
+#>>>Initialized Vorlon Fighter-6 Travel logger
+#>>>SELF = <Vorlon Fighter-6(1008999) Travel_Lhwb60O9CGt7>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>0:46:55.343 of 10/April/2017, Monday
+#>>>Updated Target Ship = DS9 K´tinga-19
+## -------------------- ##
+####################
+#######>>>0:46:55.909 of 10/April/2017, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:46:57.000 of 10/April/2017, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:46:58.281 of 10/April/2017, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...

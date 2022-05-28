@@ -1,0 +1,41 @@
+#This is the dump of the LogCreator: <Nebulon B-2 Frigate-12 Travel Logger LogCreator_z3fnrrC75855>
+#This log file was created on: 17:24:46.791 of 22/June/2017, Thursday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>17:24:46.791 of 22/June/2017, Thursday
+#>>>Initialized Nebulon B-2 Frigate-12 Travel logger
+#>>>SELF = <Nebulon B-2 Frigate-12(2590260) Travel_EPAh7E87nkR8>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Imperial Super Star Destroyer-1
+## -------------------- ##
+####################
+#######>>>17:25:14.293 of 22/June/2017, Thursday
+#>>>Updated Target Ship = TIE Fighter-5
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>17:25:17.539 of 22/June/2017, Thursday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>>Updated Target Ship = Victory-2

@@ -1,0 +1,60 @@
+#This is the dump of the LogCreator: <I472-05641-4 Travel Logger LogCreator_4REZj47O7GpB>
+#This log file was created on: 20:25:9.502 of 1/May/2017, Monday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>20:25:9.502 of 1/May/2017, Monday
+#>>>Initialized I472-05641-4 Travel logger
+#>>>SELF = <I472-05641-4(1173582) Travel_W37365unaPs4>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>20:25:13.654 of 1/May/2017, Monday
+#>>>Arrived Events:  added event <C TGEvent instance at _1a914cb8_p_TGEvent>
+#>>>Updated Target Ship = bug
+## -------------------- ##
+####################
+#######>>>20:25:57.225 of 1/May/2017, Monday
+#>>>Updated Target Ship = Marauder-1
+## -------------------- ##
+####################
+#######>>>20:26:1.184 of 1/May/2017, Monday
+#>>>Updated Target Ship = bug-3
+## -------------------- ##
+####################
+#######>>>20:26:13.666 of 1/May/2017, Monday
+#>>>Updated Target Ship = T'nar-5
+## -------------------- ##
+####################
+#######>>>20:26:52.451 of 1/May/2017, Monday
+#>>>Updated Target Ship = Theron-2
+## -------------------- ##
+####################
+#######>>>20:27:11.407 of 1/May/2017, Monday
+#>>>Updated Target Ship = IKS Mierda-9
+## -------------------- ##
+####################
+#######>>>20:33:20.573 of 1/May/2017, Monday
+#>>>Updated Target Ship = Marauder-18
+## -------------------- ##
+####################
+#######>>>20:33:22.443 of 1/May/2017, Monday
+#>>>Updated Target Ship = Theron-2
+########################################
+# 20:33:43.884 of 1/May/2017, Monday
+#Ending of log dump - User is quiting the game
+########################################

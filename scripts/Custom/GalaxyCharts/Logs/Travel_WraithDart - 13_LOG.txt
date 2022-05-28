@@ -1,0 +1,32 @@
+#This is the dump of the LogCreator: <WraithDart - 13 Travel Logger LogCreator_K2BrHHtlWM5F>
+#This log file was created on: 1:20:37.865 of 20/May/2017, Saturday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>1:20:37.865 of 20/May/2017, Saturday
+#>>>Initialized WraithDart - 13 Travel logger
+#>>>SELF = <WraithDart - 13(255592) Travel_adn7087Wl7n6>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is Player - Checked
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>1:22:22.347 of 20/May/2017, Saturday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 2:1:20.768 of 20/May/2017, Saturday
+#Ending of log dump - User is quiting the game
+########################################

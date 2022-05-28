@@ -1,0 +1,109 @@
+
+ Valdore class - 2nd class of warbird (also known as Norexan)
+
+
+
+Very fast and maneuverable while at the same time heavily armed, the Valdore is the Heavy cruiser of the fleet.
+
+
+
+== CREDITS ==================================================================
+
+
+Mesh/Textures: Redragon (redragon@trekmods.com) - http://www.trekmods.com
+
+BC Convertion/Hardpoint/Speculars: Zambie Zan (alexandre.marques@gmail.com)
+
+
+
+== SPECS ====================================================================
+
+
+Valdore Heavy Cruiser
+
+603m
+3 Plasma Torpedo Launchers (2f/1a - shots 8f/4a)
+6 Disruptor Cannons (4f/2a)
+
+
+
+== INSTALLATION ==============================================================
+
+
+Unrar the file into a temporary folder
+Copy all the files into your Bridge Commander folder
+Overwrite if asked
+
+
+== REQUIREMENTS ==============================================================
+
+
+- SubMenu
+
+
+== GLITCHES ==================================================================
+
+
+None
+
+Tested in Bridge Commander v1.1
+
+
+
+Enjoy
+
+
+=============================================================================
+
+
+
+
+
+Please do NOT convert this ship to any other game with out permission of 
+of STHW lead - Dolphoenix - dolphoenix@trekmods.com
+
+Copyright and Distribution Permissions
+--------------------------------------
+THIS PATCH IS NOT MADE, DISTRIBUTED, OR SUPPORTED BY INTERPLAY
+ TM & (C) INTERPLAY & PARAMOUNT PICTURES.
+
+Copyright notices: 
+
+Star Trek, Star Fleet Command, Star Trek: Deep Space Nine, Star Trek: The Next Generation,
+Star Trek: Voyager (and the various logo devices used in them) are copyright
+Paramount Pictures, as are the characters, related images, and sound from the productions. 
+
+If you use this model in any Starleet Command project please include this file. 
+If you make this file available at your website or anothers please include a link to
+http://starfleet.thegamers.net
+
+Please do not modify this file or the included texture with out seeking the authors opinion.
+Nothing legal here, it is just polite.
+
+
+
+*********************************************
+Copyright and Distribution Permissions 
+-------------------------------------- 
+THIS PATCH IS NOT MADE, DISTRIBUTED, OR SUPPORTED BY INTERPLAY TM & (C) INTERPLAY & TALDREN & PARAMOUNT PICTURES. 
+
+Copyright notices: 
+
+Star Trek, Star Fleet Command, Star Trek: Deep Space Nine, Star Trek: The Next Generation, Star Trek: Voyager (and the various logo devices used in them) are copyright Paramount Pictures, as are the  characters, related images, and sound from the productions. 
+
+LEGAL STUFF: This file is not supported or affiliated with Interplay Productions. While most who have used these files have had no problems, we will not be held accountable for any damage done to your computer by use of these files or techniques. USE AT YOUR OWN RISK! This file is freeware. It is not to be sold. 
+
+Copyrights 
+User-created missions contain source-code that is the property of Interplay Productions and Quicksilver Software. In addition, Star Trek is a property of Paramount Pictures. Star Fleet Battles is the property of ADB, Inc. You may not sell user-created missions commercially. You should respect the rights of the property owners. Missions created based on Star Fleet Battles material must be marked "Based on copyrighted material by ADB, Inc."in the documentation or mission briefing. ADB also requests that these missions not be placed on "out of network" SFB web-sites. 
+
+SOFTWARE USE LIMITATIONS AND LIMITED LICENSE 
+Any Star Trek: Starfleet Command mission (each, a "Mission", and collectively, "Missions") created using the Star Trek: Starfleet Command Mission API ("SFC Mission API") is intended solely for your personal, noncommercial home entertainment use. You may not decompile, reverse engineer, or disassemble SFC Mission API or any Mission, except as permitted by law. Interplay Entertainment Corp. ("Interplay") retains all rights and title in SFC Mission API and the Missions including all intellectual property rights embodied therein and derivatives thereof. SFC Mission API and the Missions, including, without limitation, all code, data structures, characters, images, sounds, text, screens, game play, derivative works and all other elements may not be copied (except as provided below), sold, rented, leased, distributed (except as provided below), used on pay-per-play, coin-op or other for-charge basis, or for commercial purpose. You may make copies of SFC Mission API and any Mission for your personal, noncommercial  home entertainment use and to give to friends and acquaintances on a no cost, noncommercial basis. This limited right to copy or provide public access to the SFC Mission API and the Missions expressly excludes any copying, access or distribution of SFC Mission API and the Missions on a commercial basis, including, without limitation, bundling SFC Mission API or any Mission with any other product or service, selling SFC Mission API or any Mission, and any giveaway in connection with another product or service. Any permissions granted herein are provided on a temporary basis and can be withdrawn by Interplay at any time. All rights not expressly granted herein are reserved. No technical support from either Interplay or Quicksilver Software, Inc. ("Quicksilver") shall be available  for SFC Mission API or any Mission. 
+
+INTERPLAY AND QUICKSILVER DISCLAIM ALL WARRANTIES, EXPRESS OR IMPLIED, RELATING TO SFC MISSION API AND THE MISSIONS (INCLUDING WITHOUT LIMITATION, MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT), AND NEITHER INTERPLAY NOR QUICKSILVER SHALL HAVE ANY RESPONSIBILITY OR LIABILITY REGARDING SFC MISSION API AND THE MISSIONS, INCLUDING, WITHOUT LIMITATION, ANY RESPONSIBILITY OR LIABILITY REGARDING USE OR OPERABILITY OF SFC MISSION API AND THE MISSIONS. YOU ASSUME ALL RISK OF LOSS IN CHOOSING TO USE SFC MISSION API AND THE MISSIONS. 
+
+SFC Mission API and all Missions © 1999 Interplay Entertainment Corp. SFC Mission API and Star Trek: Starfleet  Command are trademarks of Interplay Entertainment Corp. All Rights Reserved. 
+
+_____________________________________________________
+Redragon (Luan Ngo)
+Star Trek: Homeworld Team
+

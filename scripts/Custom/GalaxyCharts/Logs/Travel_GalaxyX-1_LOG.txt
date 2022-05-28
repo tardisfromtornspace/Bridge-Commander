@@ -1,0 +1,56 @@
+#This is the dump of the LogCreator: <GalaxyX-1 Travel Logger LogCreator_9Pr3k8pNtBZw>
+#This log file was created on: 21:15:37.272 of 17/March/2017, Friday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>21:15:37.272 of 17/March/2017, Friday
+#>>>Initialized GalaxyX-1 Travel logger
+#>>>SELF = <GalaxyX-1(54842) Travel_UT54NeX69GDv>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>21:15:42.083 of 17/March/2017, Friday
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>21:15:48.766 of 17/March/2017, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>21:15:48.960 of 17/March/2017, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>21:15:49.143 of 17/March/2017, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>21:15:49.456 of 17/March/2017, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>21:15:49.772 of 17/March/2017, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>21:16:13.686 of 17/March/2017, Friday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 21:20:10.418 of 17/March/2017, Friday
+#Ending of log dump - User is quiting the game
+########################################

@@ -1,0 +1,29 @@
+#This is the dump of the LogCreator: <HeavyRaider 10 Travel Logger LogCreator_9Hl959enbn4i>
+#This log file was created on: 4:9:52.722 of 23/March/2017, Thursday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>4:9:52.722 of 23/March/2017, Thursday
+#>>>Initialized HeavyRaider 10 Travel logger
+#>>>SELF = <HeavyRaider 10(419463) Travel_kQwsTN652H2y>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>4:10:6.849 of 23/March/2017, Thursday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

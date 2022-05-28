@@ -1,0 +1,36 @@
+#This is the dump of the LogCreator: <Assault Ship-7 Travel Logger LogCreator_zWPRQ7Z4V6s6>
+#This log file was created on: 14:39:45.873 of 13/April/2020, Monday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>14:39:45.873 of 13/April/2020, Monday
+#>>>Initialized Assault Ship-7 Travel logger
+#>>>SELF = <Assault Ship-7(1013443) Travel_5735h5mD5hYx>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Droid Fighter-1
+## -------------------- ##
+####################
+#######>>>14:42:17.712 of 13/April/2020, Monday
+#>>>Updated Target Ship = Nebulon B Frigate-6
+## -------------------- ##
+####################
+#######>>>14:52:17.166 of 13/April/2020, Monday
+#>>>Updated Target Ship = Droid Fighter-2
+## -------------------- ##
+####################
+#######>>>14:53:50.093 of 13/April/2020, Monday
+#>>>Updated Target Ship = Droid Fighter-3

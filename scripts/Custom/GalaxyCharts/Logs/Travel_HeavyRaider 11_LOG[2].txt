@@ -1,0 +1,53 @@
+#This is the dump of the LogCreator: <HeavyRaider 11 Travel Logger[2] LogCreator_rQu4C0AQO9UU>
+#This log file was created on: 4:10:18.331 of 23/March/2017, Thursday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>4:10:18.331 of 23/March/2017, Thursday
+#>>>Initialized HeavyRaider 11 Travel logger
+#>>>SELF = <HeavyRaider 11(419795) Travel_V3G2U8YvS267>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Ship is dead or dying
+#>>>Ship is dead or dying (at SetDestination)
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>4:10:19.736 of 23/March/2017, Thursday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>>Deleting...
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>4:10:19.736 of 23/March/2017, Thursday
+#>>>Initialized HeavyRaider 11 Travel logger
+#>>>SELF = <HeavyRaider 11(419795) Travel_8Vts96OoJ2JL>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Ship is dead or dying
+#>>>Ship is dead or dying (at SetDestination)
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = Whitestar-8
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>4:10:23.111 of 23/March/2017, Thursday
+#>>>Ship is dead or dying (at Chaser Update)

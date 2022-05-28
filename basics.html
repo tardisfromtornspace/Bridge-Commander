@@ -1,0 +1,174 @@
+<HTML>
+<HEAD>
+  <TITLE>Basic Concepts in Bridge Commander</TITLE>
+  <LINK REV="made" HREF="mailto:">
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-1">
+  <META NAME="author" CONTENT="">
+  <META NAME="description" CONTENT="">
+  <META NAME="keywords" CONTENT="">
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000" LINK="#0000FF" VLINK="#800080" ALINK="#FF0000">
+
+<H1>Basic Concepts in Bridge Commander</H1>
+
+<P>This section describes some of the basic concepts in Bridge Commander -- basically, the way the world "works". Other documents provide much more detail on the concepts presented here, but this is a good starting point for learning about the internals of Bridge Commander.</P>
+<P>
+<UL>
+<LI><A HREF="#Scripts">Scripts</A></LI>
+<LI><A HREF="#Game, Episode, Mission">Game, Episode, Mission</A></LI>
+<LI><A HREF="#Objects and Sets">Objects and Sets</A></LI>
+<LI><A HREF="#More specific object types">More specific object types</A></LI>
+<LI><A HREF="#Controlling Mission Flow">Controlling Mission Flow</A>
+  <UL>
+  <LI><A HREF="#Mission example">Mission example</A></LI>
+  </UL>
+</LI>
+<LI><A HREF="#Ship Internals">Ship Internals</A></LI>
+</UL>
+</P>
+<HR>
+<P><A NAME="Scripts"><H2>Scripts</H2></A></P>
+<P>
+Python scripts control a lot of what happens in Bridge Commander. These scripts are located in the "scripts" subdirectory in the Bridge Commander directory. There are a number of subdirectories in here -- some of the more important ones are:
+<UL>
+<LI><B>Maelstrom:</B> these are the scripts for the single-player campaign in Bridge Commander. You can use these mission scripts as a reference or guide.</LI>
+<LI><B>ships:</B> this contains scripts that define the ships in the game. The <B>Hardpoints</B> subdirectory contains specific information about the systems that make up each ship.</LI>
+<LI><B>Systems:</B> these are scripts that describe the space regions of the game.</LI>
+</UL>
+</P>
+<P>
+You can modify these scripts, or create new ones, to change the way Bridge Commander behaves.
+</P>
+
+<HR>
+<P>
+<A NAME="Game, Episode, Mission"><H2>Game, Episode, Mission</H2></A>
+</P>
+<P>
+Bridge Commander "campaigns" are broken down into smaller pieces. A <B>Game</B> contains an entire campaign, and contains any number of episodes. An <B>Episode</B> is, in turn, composed of any number of <B>Mission</B>s. Games, Episodes, and Missions are represented by scripts -- if you look in the <B>Maelstrom</B> subdirectory in <B>scripts</B>, you'll see a file called Maelstrom.py. This is the Game script for the single-player campaign in Bridge Commander. There are subdirectories for each episode of the game (each containing an Episode script), and subdirectories in each episode for missions (which contain Mission scripts).
+</P>
+<HR>
+<P>
+<A NAME="Objects and Sets"><H2>Objects and Sets</H2></A>
+</P>
+<P>
+Any sort of object in the world is considered to be of type <B>ObjectClass</B> (henceforth "objects") -- basically, it's the root class for most object types in the game world. Objects are usually contained in a "set" (class <B>SetClass</B>). A set is an environment in the game world -- for example, the bridge of the Dauntless, the region of space called "Biranu 2", or the "warp set", where ships go when they are warping. Sets can contain any number of objects -- however, the objects must be uniquely named (if they have a name). Objects can be moved to different sets at any time, but can only exist in one set at a time.
+</P>
+<P>
+All of the sets in the game are accessed through the <I>set manager</I>. Objects in the game are accessed by getting them from their particular set, or by their unique ID.
+</P>
+<P>
+A typical object and set list in Bridge Commander might look something like this:
+<UL>
+
+  <LI>The bridge, containing:
+  <UL>
+    <LI>The bridge object</LI>
+    <LI>The viewscreen object</LI>
+    <LI>5 crew member character objects</LI>
+    <LI>A camera</LI>
+  </UL>
+  </LI>
+
+  <LI>The "Biranu 2" space region, containing:
+  <UL>
+    <LI>A ship, named the "Dauntless"</LI>
+    <LI>A ship, named "Freighter"</LI>
+    <LI>A planet</LI>
+    <LI>A sun</LI>
+    <LI>6 torpedoes</LI>
+    <LI>A camera</LI>
+  </UL>
+  </LI>
+
+  <LI>The "freighter bridge" set, containing:
+  <UL>
+    <LI>Object representing the bridge of the freighter</LI>
+    <LI>A character named "freighter captain"</LI>
+    <LI>A camera</LI>
+  </UL>
+  </LI>
+
+</UL>
+
+</P>
+<HR>
+<P>
+<A NAME="More specific object types"><H2>More specific object types</H2></A>
+</P>
+<P>
+Many classes inherit from ObjectClass, to implement more specific behavior for an object. In particular, objects in space and objects on a bridge follow separate inheritance paths. Below is a diagram showing some of the more important inheritance paths from ObjectClass.
+</P>
+<IMG SRC="objectinheritance.jpg" WIDTH="579" HEIGHT="603" BORDER="0" ALIGN="middle" ALT="Diagram">
+<P>
+<UL>
+<LI><B>BaseObjectClass</B> is very similar to ObjectClass, except that BaseObjectClass objects do not have to have a 3D model.</LI>
+<LI><B>LightObjectClass</B> is used to place lights in the world. Lights are placed in sets just like other objects.</LI>
+<LI><B>CameraObjectClass</B> is used for cameras in the game world. Cameras are also placed in sets just like other objects.</LI>
+<LI><B>PhysicsObjectClass</B> represents objects that have world physics applied to them. These can accelerate, turn, and otherwise act like physical objects. They can also be assigned AI.</LI>
+<LI><B>CharacterClass</B> is used for animated characters, such as your bridge crew, or people on the viewscreen.</LI>
+<LI><B>Planet</B> is a special case class, used for planets, since they don't need to obey the game physics.</LI>
+<LI><B>DamageableObjects</B> can have real-time damage applied to them. Most space objects fall into this category -- ships, debris, asteroids, etc.</LI>
+<LI><B>Torpedo</B> is another special case class because, while they need to obey the game physics, torpedoes do not need to be damageable.</LI>
+<LI><B>ShipClass</B> is used for all ship and ship-like objects, including stations. Ships can contain any number of subsystems, representing the different components of the ship.</LI>
+</UL>
+</P>
+<HR>
+<P>
+<A NAME="Controlling Mission Flow"><H2>Controlling Mission Flow</H2></A>
+</P>
+<P>
+A typical mission is not just a group of ships in sets. The mission must react to events in the game world and the player's actions, and trigger other things when appropriate. There are several mechanisms in Bridge Commander used to make things happen in the game world.
+<UL>
+<LI><B>Events</B> can be sent at any time to objects. If the object is set to handle that particular event type, then it will perform some action based on the event. You can set up your own specialized handlers and event types for mission-specific behavior. Also, user interface objects send events, so you can set up handlers that run when a particular button is pressed.</LI>
+<LI><B>Timers</B> can be set to send events at certain times. You can also specify that the timer should be repeating, and how many times it should trigger, if desired.</LI>
+<LI><B>Sequences</B> can be triggered at any time. Sequences are an easy way to string together pieces of script or actions using timers. For example, mission briefings in Bridge Commander are simply sequences of "say line" actions. As another example, you could create a sequence that plays a voice line, then 15 seconds later, calls a script action to create some ships, and finally, one minute after that, calls another script action to make those ships warp out of the system.</LI>
+<LI><B>Conditions</B> can trigger when certain requirements are met ("in range", "attacked", "critical system damaged", etc.)</LI>
+<LI><B>Proximities</B> will send an event if other objects enter or exit a specified radius. You can use this to trigger dialogue when the player reaches a certain distance from a planet, for example.</LI>
+</UL>
+</P>
+<P>
+Missions will usually set up some of these mechanisms during initialization, and set up more during the course of a mission.
+</P>
+<P><A NAME="Mission example"><H3>Mission example</H3></A></P>
+<P>
+Missions use a combination of the above mechanisms to control gameflow, and to make the mission "come alive." Here's an example of a very simple mission, and how it uses these mechanisms.
+</P>
+<P>
+The mission involves having the player travel to Biranu 2. When the player arrives at Biranu 2, a dialogue sequence plays that talks about some strange readings coming from the planet. If the player comes close to the planet, four Cardassian Galors warp in and fight the player. When each Galor is damaged sufficiently, it warps out of the region. When all of the Galors have left, the player wins the mission.
+</P>
+<P>
+To make this happen, you might implement the following pseudocode:
+<UL>
+<LI>Set up an event handler for the "entered set" event, which is sent when an object enters a set. In this handler, if the object is the player, and the set is Biranu 2, then create and play the sequence of actions that explains the strange readings.</LI>
+<LI>Set up a proximity on the planet object, with range of 500 game units. Set up an event handler for this proximity that will create the four Galors when the player triggers it.</LI>
+<LI>When the Galors are created, make a condition "condition system below", which will trigger when their hull is below 50% and cause them to warp out.</LI>
+<LI>Set up an event handler for the "exited set" event. In this handler, if the object is one of the Galors, add to a counter (the Galor has run away). If the number of Galors that has run away is 4, then create and play a sequence that tells the player they've won the mission.</LI>
+</UL>
+</P>
+<HR>
+<P><A NAME="Ship Internals"><H2>Ship Internals</H2></A></P>
+<P>
+Each ship in the game is made up of a number of different subsystems. Not every ship is required to have every subsystem, but most ships contain a large number of subsystems. These subsystems have attributes particular to them, and range from the very simple, like a hull, to complicated, like a phaser bank.
+</P>
+<P>
+<H3>Types of subsystems:</H3>
+<UL>
+<LI>Hulls</LI>
+<LI>Sensors</LI>
+<LI>Impulse engines</LI>
+<LI>Warp engines</LI>
+<LI>Power systems</LI>
+<LI>Shields</LI>
+<LI>Repair systems</LI>
+<LI>Cloaking systems</LI>
+<LI>Weapon systems (containing phasers, torpedoes, pulse weapons/disruptors, tractor beams)</LI>
+<LI>Weapons (the individual phasers, torps, disruptors, etc.)</LI>
+</UL>
+</P>
+
+<HR>
+<P><SMALL>Created on ... January 30, 2002</SMALL></P>
+</BODY>
+</HTML>

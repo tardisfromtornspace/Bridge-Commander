@@ -1,0 +1,31 @@
+Star Trek : Bridge Commander
+
+Developer - DKealt
+
+Torpedo Pack (2.0)
+
+Ism't it always the way, you release something, you see it, and you just want to change it. Well that's what's happened here, i decided to revamp the scripts and textures I just so recently released. I also took on some comments made about the Sovereign and Breen torpedoes and have adjusted them accordingly. All the torpedo properties made in the previous version remain the same in this pack. I also attempted to create a few of my very own original glow textures, to again diversify the feel of each torpedo, hope you enjoy...
+
+-Terek'Nor Photon (New Texture)
+-DS9 Photon (New Texture)
+-VOY Photon (New Texture)
+-Breen Photon
+-Danube Photon
+-Klingon Photon
+-Shuttle Photon
+-Sovereign Photon
+-Sovereign Quantum
+-TNG Photon
+
+
+Installation:
+
+Within the packs folder (scripts/tactical/projectiles) are the torpedo scripts, if you want to use these torpedoes either...
+
+-Rename them to replace the torpedo script used by the ship you want to apply the torpedo to (can be found in the torpedoes section of the ship hardpoint).
+
+-Rename the torpedo script used by the ship's hardpoint to match the torpedo script file using either a text version of the hardpoint or MPE
+
+
+Credits:
+Zombie Zan, C2X, Collective Alliance, Knox1711

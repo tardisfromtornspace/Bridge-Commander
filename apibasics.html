@@ -1,0 +1,60 @@
+<HTML>
+<HEAD>
+  <TITLE>BC API Basics</TITLE>
+  <LINK REV="made" HREF="mailto:">
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-1">
+  <META NAME="author" CONTENT="">
+  <META NAME="description" CONTENT="">
+  <META NAME="keywords" CONTENT="">
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000" LINK="#0000FF" VLINK="#800080" ALINK="#FF0000">
+
+<H1>BC API Basics</H1>
+
+<P>This page describes some basics of the Bridge Commander API.
+<UL>
+<LI><A HREF="#App Module">App Module</A></LI>
+<LI><A HREF="#Important Globals">Important Globals</A></LI>
+<LI><A HREF="#MissionLib">MissionLib</A></LI>
+</UL>
+</P>
+<HR>
+<P><A NAME="#App Module"><H2>App Module</H2></A></P>
+<P>
+All functions and objects that are owned by the game (C++) are wrapped within the App Python module. You'll typically want to import App at the top of each script you use. Classes, functions, and objects are referred to like so:
+<UL>
+<LI><I>Class</I><PRE>App.ObjectClass</PRE></LI>
+<LI><I>Function</I><PRE>App.Game_GetDifficulty()         # a static function</PRE></LI>
+<LI><I>Object</I><PRE>App.g_kUtopiaModule</PRE></LI>
+</UL>
+</P>
+<P>
+If you open the App.py script file, you'll see that it contains a ton of stuff. You can use it as an API reference for Bridge Commander -- if it's accessible from Python, it's in App.py, almost without exception.
+</P>
+<HR>
+<P><A NAME="#Important Globals"><H2>Important Globals</H2></A></P>
+<P>
+There are a number of globals that are used fairly frequently in missions and in game scripts. Here are some of them. The first four are essential for building missions -- the others (and ones not mentioned here) would be used if you wanted to make other modifications to the game.
+</P>
+<P>
+<UL>
+<LI><B>g_kSetManager</B> - the interface for adding, removing, and retrieving sets in the game.</LI>
+<LI><B>g_kEventManager</B> - used to send events, as well as set up event handlers.</LI>
+<LI><B>g_kTimerManager</B> - used to set up timers that trigger events.</LI>
+<LI><B>App.Game_GetCurrentGame()</B> - returns the current "game" (campaign), through which the episode and mission can be accessed.</LI>
+<LI><B>g_kIconManager</B> - used to retrieve and manage user-interface textures ("icons")</LI>
+<LI><B>g_kUtopiaModule</B> - contains a lot of application-specific information, like version, time, and multiplayer information</LI>
+</UL>
+</P>
+<HR>
+<P><A NAME="#MissionLib"><H2>MissionLib</H2></A></P>
+<P>
+MissionLib is a Python script created to simplify some common mission tasks. It contains many, many useful functions. Like App, you'll want to import this in your mission scripts. A summary of some MissionLib functions is in the <A HREF="MissionLib.doc">MissionLib API reference</A> (incomplete).
+</P>
+
+
+<HR>
+<P><SMALL>Created on ... February 04, 2002</SMALL></P>
+</BODY>
+</HTML>
