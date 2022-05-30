@@ -8,7 +8,7 @@ import GlobalPropertyTemplates
 #################################################
 Engine = App.EngineProperty_Create("Engine")
 
-Engine.SetMaxCondition(16000.000000)
+Engine.SetMaxCondition(1600.000000)
 Engine.SetCritical(0)
 Engine.SetTargetable(1)
 Engine.SetPrimary(1)
@@ -35,7 +35,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(BioOrganicHull)
 #################################################
 HyperspaceTap = App.PowerProperty_Create("Hyperspace Tap")
 
-HyperspaceTap.SetMaxCondition(12200.000000)
+HyperspaceTap.SetMaxCondition(1500.000000)
 HyperspaceTap.SetCritical(1)
 HyperspaceTap.SetTargetable(0)
 HyperspaceTap.SetPrimary(1)
@@ -53,7 +53,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(HyperspaceTap)
 #################################################
 Sensor = App.SensorProperty_Create("Sensor")
 
-Sensor.SetMaxCondition(16000.000000)
+Sensor.SetMaxCondition(2000.000000)
 Sensor.SetCritical(0)
 Sensor.SetTargetable(0)
 Sensor.SetPrimary(1)
@@ -69,7 +69,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(Sensor)
 #################################################
 RepairSystem = App.RepairSubsystemProperty_Create("Repair System")
 
-RepairSystem.SetMaxCondition(20000.000000)
+RepairSystem.SetMaxCondition(2000.000000)
 RepairSystem.SetCritical(0)
 RepairSystem.SetTargetable(0)
 RepairSystem.SetPrimary(1)
@@ -85,7 +85,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(RepairSystem)
 #################################################
 ShadowShields = App.ShieldProperty_Create("Shadow Shields")
 
-ShadowShields.SetMaxCondition(20000.000000)
+ShadowShields.SetMaxCondition(2000.000000)
 ShadowShields.SetCritical(0)
 ShadowShields.SetTargetable(0)
 ShadowShields.SetPrimary(1)
@@ -130,8 +130,8 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(ShadowBattlecrab)
 #################################################
 Cockpit = App.TorpedoSystemProperty_Create("Cockpit")
 
-Cockpit.SetMaxCondition(32000.000000)
-Cockpit.SetCritical(0)
+Cockpit.SetMaxCondition(2000.000000)
+Cockpit.SetCritical(1)
 Cockpit.SetTargetable(0)
 Cockpit.SetPrimary(1)
 Cockpit.SetPosition(0.000000, 0.000000, 0.000000)
@@ -155,7 +155,7 @@ AftTorpedo = App.TorpedoTubeProperty_Create("Aft Torpedo")
 
 AftTorpedo.SetMaxCondition(1800.000000)
 AftTorpedo.SetCritical(0)
-AftTorpedo.SetTargetable(1)
+AftTorpedo.SetTargetable(0)
 AftTorpedo.SetPrimary(1)
 AftTorpedo.SetPosition(0.000000, -0.600000, -0.040000)
 AftTorpedo.SetPosition2D(0.000000, 0.000000)
@@ -183,7 +183,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(AftTorpedo)
 #################################################
 LaserEmiter = App.WeaponSystemProperty_Create("Laser Emiter")
 
-LaserEmiter.SetMaxCondition(22000.000000)
+LaserEmiter.SetMaxCondition(2200.000000)
 LaserEmiter.SetCritical(0)
 LaserEmiter.SetTargetable(0)
 LaserEmiter.SetPrimary(1)
@@ -203,7 +203,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(LaserEmiter)
 #################################################
 ShadowEngine = App.ImpulseEngineProperty_Create("Shadow Engine")
 
-ShadowEngine.SetMaxCondition(10000.000000)
+ShadowEngine.SetMaxCondition(2000.000000)
 ShadowEngine.SetCritical(0)
 ShadowEngine.SetTargetable(0)
 ShadowEngine.SetPrimary(1)
@@ -236,7 +236,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(HyperspaceEngine)
 #################################################
 hyperback = App.WarpEngineProperty_Create("hyper back")
 
-hyperback.SetMaxCondition(20000.000000)
+hyperback.SetMaxCondition(2000.000000)
 hyperback.SetCritical(0)
 hyperback.SetTargetable(0)
 hyperback.SetPrimary(1)
@@ -250,7 +250,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(hyperback)
 #################################################
 DeathRay = App.PhaserProperty_Create("Death Ray")
 
-DeathRay.SetMaxCondition(60000.000000)
+DeathRay.SetMaxCondition(2000.000000)
 DeathRay.SetCritical(0)
 DeathRay.SetTargetable(0)
 DeathRay.SetPrimary(1)
@@ -411,7 +411,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(FirstPersonCamera)
 #################################################
 ShadowSceam = App.WeaponSystemProperty_Create("ShadowSceam")
 
-ShadowSceam.SetMaxCondition(50000.000000)
+ShadowSceam.SetMaxCondition(5000.000000)
 ShadowSceam.SetCritical(0)
 ShadowSceam.SetTargetable(0)
 ShadowSceam.SetPrimary(1)
@@ -431,7 +431,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(ShadowSceam)
 #################################################
 Scream = App.PulseWeaponProperty_Create("Scream")
 
-Scream.SetMaxCondition(30000.000000)
+Scream.SetMaxCondition(3000.000000)
 Scream.SetCritical(0)
 Scream.SetTargetable(0)
 Scream.SetPrimary(1)
