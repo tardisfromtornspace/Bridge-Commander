@@ -31,19 +31,18 @@ Torpedoes.SetTorpedoScript(1, "Tactical.Projectiles.B5_HvyPulse")
 Torpedoes.SetNumAmmoTypes(2)
 App.g_kModelPropertyManager.RegisterLocalTemplate(Torpedoes)
 #################################################
-WarpEngines = App.WarpEngineProperty_Create("Warp Engines")
+JumpspaceDrive = App.HullProperty_Create("Jumpspace Drive 1")
 
-WarpEngines.SetMaxCondition(10000.000000)
-WarpEngines.SetCritical(0)
-WarpEngines.SetTargetable(0)
-WarpEngines.SetPrimary(1)
-WarpEngines.SetPosition(0.241791, -0.524087, 0.116556)
-WarpEngines.SetPosition2D(0.000000, 0.000000)
-WarpEngines.SetRepairComplexity(3.000000)
-WarpEngines.SetDisabledPercentage(0.750000)
-WarpEngines.SetRadius(0.200000)
-WarpEngines.SetNormalPowerPerSecond(0.000000)
-App.g_kModelPropertyManager.RegisterLocalTemplate(WarpEngines)
+JumpspaceDrive.SetMaxCondition(10000.000000)
+JumpspaceDrive.SetCritical(0)
+JumpspaceDrive.SetTargetable(0)
+JumpspaceDrive.SetPrimary(1)
+JumpspaceDrive.SetPosition(0.241791, -0.524087, 0.116556)
+JumpspaceDrive.SetPosition2D(0.000000, 0.000000)
+JumpspaceDrive.SetRepairComplexity(3.000000)
+JumpspaceDrive.SetDisabledPercentage(0.750000)
+JumpspaceDrive.SetRadius(0.200000)
+App.g_kModelPropertyManager.RegisterLocalTemplate(JumpspaceDrive)
 #################################################
 SensorArray = App.SensorProperty_Create("Sensor Array")
 
@@ -407,7 +406,7 @@ Hull.SetDisabledPercentage(0.000000)
 Hull.SetRadius(6.500000)
 App.g_kModelPropertyManager.RegisterLocalTemplate(Hull)
 #################################################
-WarpCore = App.PowerProperty_Create("Warp Core")
+WarpCore = App.PowerProperty_Create("Fusion Reactors")
 
 WarpCore.SetMaxCondition(8000.000000)
 WarpCore.SetCritical(1)
@@ -1070,7 +1069,7 @@ def LoadPropertySet(pObj):
 	prop = App.g_kModelPropertyManager.FindByName("Shield Generator", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
-	prop = App.g_kModelPropertyManager.FindByName("Warp Core", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	prop = App.g_kModelPropertyManager.FindByName("Fusion Reactors", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
 	prop = App.g_kModelPropertyManager.FindByName("Torpedoes", App.TGModelPropertyManager.LOCAL_TEMPLATES)
@@ -1079,7 +1078,7 @@ def LoadPropertySet(pObj):
 	prop = App.g_kModelPropertyManager.FindByName("Impulse Engines", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
-	prop = App.g_kModelPropertyManager.FindByName("Warp Engines", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	prop = App.g_kModelPropertyManager.FindByName("Jumpspace Drive 1", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
 	prop = App.g_kModelPropertyManager.FindByName("Sensor Array", App.TGModelPropertyManager.LOCAL_TEMPLATES)
