@@ -285,10 +285,47 @@ def RandomReflector(pShip, pInstance, pTorp, oYield, pEvent):
 
 	# Remove damage caused by the torpedo
 	pTorp.SetLifetime(0.0)
-	fDamage = pEvent.GetDamage()/10#The power to reflect the weapon causes damage, 10% of the original damage
+	fDamage = pEvent.GetDamage()/1 #The power to reflect the weapon causes damage, 1% of the original damage
 	#ShieldDistributePos(pShip,fDamage)
 	ShieldDistributeNeg(pShip, fDamage)
 
+def GridReflector(pShip, pInstance, pTorp, oYield, pEvent):
+	debug(__name__ + ", DirectReflector")
+	pAttacker = App.ShipClass_Cast(pEvent.GetFiringObject())
+
+	pTorpPath = pTorp.GetModuleName()
+	life = pTorp.GetGuidanceLifeTime()
+
+	pSet = pAttacker.GetContainingSet()
+
+	X = pAttacker.GetWorldLocation()
+
+	kVectNiWorldHitPoint = pEvent.GetWorldHitPoint()
+	Y = App.TGPoint3()
+	Y.SetX(kVectNiWorldHitPoint.x)
+	Y.SetY(kVectNiWorldHitPoint.y)
+	Y.SetZ(kVectNiWorldHitPoint.z)
+	kVectNiWorldHitNormal = pEvent.GetWorldHitNormal()
+	N = App.TGPoint3()
+	N.SetX(kVectNiWorldHitNormal.x)
+	N.SetY(kVectNiWorldHitNormal.y)
+	N.SetZ(kVectNiWorldHitNormal.z)
+
+	X.Subtract(Y)
+	X.Unitize()
+	U = X.Cross(N)
+	V = N.Cross(U)
+	V.Unitize()
+	V.Scale(-2.0*X.Dot(V))
+	X.Add(V)
+	
+	#FireTorpFromPointWithVector(Y,X,pTorpPath,pAttacker.GetObjID(),pShip.GetObjID(),pTorp.GetLaunchSpeed())
+
+	# Remove damage caused by the torpedo
+	pTorp.SetLifetime(0.0)
+	fDamage = pEvent.GetDamage() #The power to reflect the weapon causes damage, 10% of the original damage
+	ShieldDistributePos(pShip,fDamage)
+	#ShieldDistributeNeg(pShip, fDamage)
 
 def CopyVector(kVect):
 	debug(__name__ + ", CopyVector")

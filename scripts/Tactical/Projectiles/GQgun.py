@@ -16,24 +16,24 @@ import App
 def Create(pTorp):
 
 	kGlowColor = App.TGColorA()
-	kGlowColor.SetRGBA(65.0 / 255.0, 250.0 / 65.0, 50.0 / 255., 1.000000)	
+	kGlowColor.SetRGBA(250.0 / 255.0, 250.0 / 255.0, 255.0 / 255.0, 1.000000)	
 	kCoreColor = App.TGColorA()
-	kCoreColor.SetRGBA(81.0 / 255.0, 218.0 / 55.0, 17.0 / 255.0, 1.000000)
+	kCoreColor.SetRGBA(255.0 / 255.0, 218.0 / 255.0, 255.0 / 255.0, 1.000000)
 
 	pTorp.CreateTorpedoModel(
 					"data/Textures/Tactical/TorpedoCore.tga",
 					kCoreColor, 
-					0.2,
+					0.5,
 					1.0,	 
 					"data/Textures/Tactical/TorpedoGlow.tga", 
 					kGlowColor,
-					3.0,	
+					4.0,	
 					0.2,	 
-					0.6,	
+					0.7,	
 					"data/Textures/Tactical/TorpedoFlares.tga",
 					kGlowColor,										
-					8,		
-					0.8,		
+					32,		
+					0.4,		
 					0.4)
 
 	pTorp.SetDamage( GetDamage() )
@@ -49,7 +49,7 @@ def Create(pTorp):
 	return(0)
 
 def GetLaunchSpeed():
-	return(19.0)
+	return(59.0)
 
 def GetLaunchSound():
 	return("GQgun")

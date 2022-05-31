@@ -37,6 +37,10 @@ credits = {
 # automatically generated the proper ShipDef Line for you.                            #
 #                                                                                     #
 Foundation.ShipDef.EAOmega = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
+
+Foundation.ShipDef.EAOmega.dTechs = {
+	'Defense Grid': 150
+}
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

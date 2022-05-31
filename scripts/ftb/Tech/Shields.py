@@ -15,6 +15,7 @@ NonSerializedObjects = (
 "oRegenerative",
 "oReflector",
 "oReflector2",
+"oGridDefense",
 )
 
 class MultivectDef(FoundationTech.TechDef):
@@ -179,5 +180,56 @@ class ReflectorDef(FoundationTech.TechDef):
 
 oReflector = ReflectorDef('Reflector')
 oReflector2= ReflectorDef('Reflector Shields') # Request by DarkThunder, it does help the consistancy in name calling
+
+
+class GridDef(FoundationTech.TechDef):
+
+	def OnPulseDefense(self, pShip, pInstance, pTorp, oYield, pEvent):
+		debug(__name__ + ", OnPulseDefense")
+		if pEvent.IsHullHit():
+			return
+
+		if oYield:
+		 	if oYield.IsPhaseYield() or oYield.IsDrainYield():
+		 		return
+
+		if App.g_kSystemWrapper.GetRandomNumber(100) > 75.0 or (pInstance.__dict__[self.name] < pEvent.GetDamage()):
+			return
+		GridReflector(pShip, pInstance, pTorp, oYield, pEvent)
+
+		return 1	# Meaning no more defense functions are necessary.
+
+
+	def OnTorpDefense(self, pShip, pInstance, pTorp, oYield, pEvent):
+		debug(__name__ + ", OnTorpDefense")
+		if pEvent.IsHullHit():
+			return
+
+		if oYield:
+		 	if oYield.IsPhaseYield() or oYield.IsDrainYield():
+		 		return
+
+		if App.g_kSystemWrapper.GetRandomNumber(100) > 50.0 or (pInstance.__dict__[self.name] < pEvent.GetDamage()):
+			return
+
+		GridReflector(pShip, pInstance, pTorp, oYield, pEvent)
+
+		return 1	# Meaning no more defense functions are necessary. 
+
+
+	# TODO:  Make this an activated technology
+	def Attach(self, pInstance):
+		debug(__name__ + ", Attach")
+		pInstance.lTechs.append(self)
+		pInstance.lTorpDefense.insert(0, self)		# Important to put shield-type weapons in the front
+		pInstance.lPulseDefense.insert(0, self)
+		#print 'Attaching Defense Grid to', pInstance, pInstance.__dict__
+
+	# def Activate(self):
+	# 	FoundationTech.oWeaponHit.Start()
+	# def Deactivate(self):
+	# 	FoundationTech.oWeaponHit.Stop()
+    
+oGridDefense = GridDef('Defense Grid')
 
 # print 'Multivectral Shields loaded'

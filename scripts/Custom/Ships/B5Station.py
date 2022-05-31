@@ -28,7 +28,9 @@ credits = {
 # in front of the first line and uncomment the line with FedShipDef.
 
 Foundation.ShipDef.B5Station = Foundation.KlingonShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile })
-
+Foundation.ShipDef.B5Station.dTechs = {
+	'Defense Grid': 200
+}
 # Uncomment these if you have TGL
 #Foundation.ShipDef.B5Station.hasTGLName = 1
 #Foundation.ShipDef.B5Station.hasTGLDesc = 1
