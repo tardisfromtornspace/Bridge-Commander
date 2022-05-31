@@ -3,7 +3,7 @@ import App
 
 # Usually, you need only edit these seven lines
 abbrev = 'ISS'				# Short name, no spaces, used as a preface for descriptions
-iconName = 'CSS'				# Name of icon .tga file
+iconName = 'KuatCommandShip'				# Name of icon .tga file
 longName = 'Imperial Super Star Destroyer'				# Long name with spaces
 shipFile = 'ISS'				# Name of the file in Scripts\Ships\ to use.			
 menuGroup = 'Star Wars Fleet'                  # Menu to appear under in Quick Battle
