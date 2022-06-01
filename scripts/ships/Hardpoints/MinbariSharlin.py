@@ -333,6 +333,32 @@ StarWarp.SetRadius(0.090000)
 StarWarp.SetEngineType(StarWarp.EP_WARP)
 App.g_kModelPropertyManager.RegisterLocalTemplate(StarWarp)
 #################################################
+JumpspaceDriveB = App.HullProperty_Create("Jumpspace Drive 2")
+
+JumpspaceDriveB.SetMaxCondition(2000.000000)
+JumpspaceDriveB.SetCritical(0)
+JumpspaceDriveB.SetTargetable(1)
+JumpspaceDriveB.SetPrimary(0)
+JumpspaceDriveB.SetPosition(-0.354340, -1.000000, 0.285476)
+JumpspaceDriveB.SetPosition2D(57.000000, 80.000000)
+JumpspaceDriveB.SetRepairComplexity(3.000000)
+JumpspaceDriveB.SetDisabledPercentage(0.500000)
+JumpspaceDriveB.SetRadius(0.090000)
+App.g_kModelPropertyManager.RegisterLocalTemplate(JumpspaceDriveB)
+#################################################
+JumpspaceDriveA = App.HullProperty_Create("Jumpspace Drive 1")
+
+JumpspaceDriveA.SetMaxCondition(2000.000000)
+JumpspaceDriveA.SetCritical(0)
+JumpspaceDriveA.SetTargetable(1)
+JumpspaceDriveA.SetPrimary(0)
+JumpspaceDriveA.SetPosition(0.354340, -1.000000, 0.285476)
+JumpspaceDriveA.SetPosition2D(80.000000, 80.000000)
+JumpspaceDriveA.SetRepairComplexity(3.000000)
+JumpspaceDriveA.SetDisabledPercentage(0.500000)
+JumpspaceDriveA.SetRadius(0.090000)
+App.g_kModelPropertyManager.RegisterLocalTemplate(JumpspaceDriveA)
+#################################################
 GFBeam1 = App.PhaserProperty_Create("GFBeam1")
 
 GFBeam1.SetMaxCondition(10000.000000)
@@ -1129,9 +1155,6 @@ def LoadPropertySet(pObj):
 	prop = App.g_kModelPropertyManager.FindByName("Sensor Array", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
-	prop = App.g_kModelPropertyManager.FindByName("Warp Engines", App.TGModelPropertyManager.LOCAL_TEMPLATES)
-	if (prop != None):
-		pObj.AddToSet("Scene Root", prop)
 	prop = App.g_kModelPropertyManager.FindByName("Engineering", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
@@ -1150,10 +1173,10 @@ def LoadPropertySet(pObj):
 	prop = App.g_kModelPropertyManager.FindByName("Bridge", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
-	prop = App.g_kModelPropertyManager.FindByName("Port Warp", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	prop = App.g_kModelPropertyManager.FindByName("Jumpspace Drive 1", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
-	prop = App.g_kModelPropertyManager.FindByName("Star Warp", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	prop = App.g_kModelPropertyManager.FindByName("Jumpspace Drive 2", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
 	prop = App.g_kModelPropertyManager.FindByName("GFBeam1", App.TGModelPropertyManager.LOCAL_TEMPLATES)

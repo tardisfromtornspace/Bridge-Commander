@@ -483,6 +483,19 @@ PhaseCloak.SetRadius(0.250000)
 PhaseCloak.SetNormalPowerPerSecond(0.000001)
 PhaseCloak.SetCloakStrength(7.000000)
 App.g_kModelPropertyManager.RegisterLocalTemplate(PhaseCloak)
+#################################################
+JumpspaceDrive = App.HullProperty_Create("Jumpspace Drive 1")
+
+JumpspaceDrive.SetMaxCondition(2000.000000)
+JumpspaceDrive.SetCritical(0)
+JumpspaceDrive.SetTargetable(0)
+JumpspaceDrive.SetPrimary(0)
+JumpspaceDrive.SetPosition(0.000000, 0.000000, 0.000000)
+JumpspaceDrive.SetPosition2D(0.000000, 0.000000)
+JumpspaceDrive.SetRepairComplexity(1.000000)
+JumpspaceDrive.SetDisabledPercentage(0.500000)
+JumpspaceDrive.SetRadius(7.000000)
+App.g_kModelPropertyManager.RegisterLocalTemplate(JumpspaceDrive)
 
 # Property load function.
 def LoadPropertySet(pObj):
@@ -557,5 +570,8 @@ def LoadPropertySet(pObj):
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
 	prop = App.g_kModelPropertyManager.FindByName("Hyperspace Cloak", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	if (prop != None):
+		pObj.AddToSet("Scene Root", prop)
+	prop = App.g_kModelPropertyManager.FindByName("Jumpspace Drive 1", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)

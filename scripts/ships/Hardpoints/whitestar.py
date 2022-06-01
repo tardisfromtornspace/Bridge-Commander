@@ -209,7 +209,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(StarImpulse)
 #################################################
 PortJumpEngine = App.EngineProperty_Create("Port Jump Engine")
 
-PortJumpEngine.SetMaxCondition(8000.000000)
+PortJumpEngine.SetMaxCondition(1400.000000)
 PortJumpEngine.SetCritical(0)
 PortJumpEngine.SetTargetable(0)
 PortJumpEngine.SetPrimary(1)
@@ -223,7 +223,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(PortJumpEngine)
 #################################################
 StarboardJumpEngine = App.EngineProperty_Create("Starboard Jump Engine")
 
-StarboardJumpEngine.SetMaxCondition(8000.000000)
+StarboardJumpEngine.SetMaxCondition(1400.000000)
 StarboardJumpEngine.SetCritical(0)
 StarboardJumpEngine.SetTargetable(0)
 StarboardJumpEngine.SetPrimary(1)
@@ -234,6 +234,32 @@ StarboardJumpEngine.SetDisabledPercentage(0.750000)
 StarboardJumpEngine.SetRadius(0.100000)
 StarboardJumpEngine.SetEngineType(StarboardJumpEngine.EP_WARP)
 App.g_kModelPropertyManager.RegisterLocalTemplate(StarboardJumpEngine)
+#################################################
+JumpspaceDriveB = App.HullProperty_Create("Jumpspace Drive 2")
+
+JumpspaceDriveB.SetMaxCondition(1400.000000)
+JumpspaceDriveB.SetCritical(0)
+JumpspaceDriveB.SetTargetable(1)
+JumpspaceDriveB.SetPrimary(0)
+JumpspaceDriveB.SetPosition(-0.128000, -0.800000, -0.040000)
+JumpspaceDriveB.SetPosition2D(7.000000, 100.000000)
+JumpspaceDriveB.SetRepairComplexity(3.000000)
+JumpspaceDriveB.SetDisabledPercentage(0.750000)
+JumpspaceDriveB.SetRadius(0.100000)
+App.g_kModelPropertyManager.RegisterLocalTemplate(JumpspaceDriveB)
+#################################################
+JumpspaceDriveA = App.HullProperty_Create("Jumpspace Drive 1")
+
+JumpspaceDriveA.SetMaxCondition(1400.000000)
+JumpspaceDriveA.SetCritical(0)
+JumpspaceDriveA.SetTargetable(1)
+JumpspaceDriveA.SetPrimary(0)
+JumpspaceDriveA.SetPosition(0.127000, -0.800000, -0.040000)
+JumpspaceDriveA.SetPosition2D(121.000000, 100.000000)
+JumpspaceDriveA.SetRepairComplexity(3.000000)
+JumpspaceDriveA.SetDisabledPercentage(0.750000)
+JumpspaceDriveA.SetRadius(0.100000)
+App.g_kModelPropertyManager.RegisterLocalTemplate(JumpspaceDriveA)
 #################################################
 VortexGen = App.TorpedoTubeProperty_Create("Vortex Generator Weapon")
 
@@ -1081,13 +1107,10 @@ def LoadPropertySet(pObj):
 	prop = App.g_kModelPropertyManager.FindByName("Starboard Thruster", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
-	prop = App.g_kModelPropertyManager.FindByName("Vortex Generator", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	prop = App.g_kModelPropertyManager.FindByName("Jumpspace Drive 2", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
-	prop = App.g_kModelPropertyManager.FindByName("Port Jump Engine", App.TGModelPropertyManager.LOCAL_TEMPLATES)
-	if (prop != None):
-		pObj.AddToSet("Scene Root", prop)
-	prop = App.g_kModelPropertyManager.FindByName("Starboard Jump Engine", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	prop = App.g_kModelPropertyManager.FindByName("Jumpspace Drive 1", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
 	prop = App.g_kModelPropertyManager.FindByName("Regeneration System", App.TGModelPropertyManager.LOCAL_TEMPLATES)

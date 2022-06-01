@@ -16,6 +16,7 @@ NonSerializedObjects = (
 "oReflector",
 "oReflector2",
 "oGridDefense",
+"oCentauriGravimetric",
 )
 
 class MultivectDef(FoundationTech.TechDef):
@@ -231,5 +232,55 @@ class GridDef(FoundationTech.TechDef):
 	# 	FoundationTech.oWeaponHit.Stop()
     
 oGridDefense = GridDef('Defense Grid')
+
+class CentauriDef(FoundationTech.TechDef):
+
+	def OnPulseDefense(self, pShip, pInstance, pTorp, oYield, pEvent):
+		debug(__name__ + ", OnPulseDefense")
+		if pEvent.IsHullHit():
+			return
+
+		if oYield:
+		 	if oYield.IsPhaseYield() or oYield.IsDrainYield():
+		 		return
+
+		if App.g_kSystemWrapper.GetRandomNumber(100) > 55.0 or (pInstance.__dict__[self.name] < pEvent.GetDamage()):
+			return
+		GridReflector(pShip, pInstance, pTorp, oYield, pEvent)
+
+		return 1	# Meaning no more defense functions are necessary.
+
+
+	def OnTorpDefense(self, pShip, pInstance, pTorp, oYield, pEvent):
+		debug(__name__ + ", OnTorpDefense")
+		if pEvent.IsHullHit():
+			return
+
+		if oYield:
+		 	if oYield.IsPhaseYield() or oYield.IsDrainYield():
+		 		return
+
+		if App.g_kSystemWrapper.GetRandomNumber(100) > 85.0 or (pInstance.__dict__[self.name] < pEvent.GetDamage()):
+			return
+
+		DirectReflector2(pShip, pInstance, pTorp, oYield, pEvent)
+
+		return 1	# Meaning no more defense functions are necessary. 
+
+
+	# TODO:  Make this an activated technology
+	def Attach(self, pInstance):
+		debug(__name__ + ", Attach")
+		pInstance.lTechs.append(self)
+		pInstance.lTorpDefense.insert(0, self)		# Important to put shield-type weapons in the front
+		pInstance.lPulseDefense.insert(0, self)
+		#print 'Attaching Defense Grid to', pInstance, pInstance.__dict__
+
+	# def Activate(self):
+	# 	FoundationTech.oWeaponHit.Start()
+	# def Deactivate(self):
+	# 	FoundationTech.oWeaponHit.Stop()
+    
+oCentauriGravimetric = CentauriDef('Gravimetric Defense')
 
 # print 'Multivectral Shields loaded'

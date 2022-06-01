@@ -48,12 +48,15 @@ def StartGFX():
                             pFlash = "scripts/Custom/Jumpspace/GFX/" + JumpspaceConfiguration.FlashGFX
 
                             LoadGFX(4, 4, pFlash)
-
+def EndFlashGFX():
+                print 'the Jumpspace exit GFX should be loading now...'   
+                LoadGFX(4, 4, GFX + "JumpspaceFlashExit.tga")
+                print 'the JumpspaceFlashExit.tga should be seen now...'   
 
 # Create flash effect on a ship
 def CreateGFX(pShip):
 		pAttachTo = pShip.GetNode()
-                fSize = pShip.GetRadius() * 10
+                fSize = pShip.GetRadius() * 5
 		pSequence = App.TGSequence_Create()	
 		pEmitFrom = App.TGModelUtils_CastNodeToAVObject(pShip.GetNode())
 
@@ -87,7 +90,43 @@ def CreateGFX(pShip):
                 pSequence.Play ()
                 
                 return
+                
+def B5CreateGFX(pShip):
+		pAttachTo = pShip.GetNode()
+                fSize = pShip.GetRadius() * 5
+		pSequence = App.TGSequence_Create()	
+		pEmitFrom = App.TGModelUtils_CastNodeToAVObject(pShip.GetNode())
 
+                sFile = B5GetTexture()
+                fLifeTime = 1
+                fRed = 200.0
+                fGreen = 255.0
+                fBlue = 255.0
+                fBrightness = 0.8
+                fSpeed = 1
+       
+		pEffect = App.AnimTSParticleController_Create()
+		pEffect.AddColorKey(0.0, fRed / 255, fGreen / 255, fBlue / 255)
+		pEffect.AddColorKey(1.0, fRed / 255, fGreen / 255, fBlue / 255)
+		pEffect.AddAlphaKey(0.0, 1.0)
+		pEffect.AddAlphaKey(1.0, 1.0)
+		pEffect.AddSizeKey(0.0, fSize)
+		pEffect.AddSizeKey(1.0, fSize)
+		
+                pEffect.SetEmitLife(fSpeed)
+                pEffect.SetEmitFrequency(1)
+                pEffect.SetEffectLifeTime(fSpeed + fLifeTime)
+                pEffect.SetInheritsVelocity(0)
+                pEffect.SetDetachEmitObject(0)
+                pEffect.CreateTarget(sFile)
+                pEffect.SetTargetAlphaBlendModes(0, 7)
+                pEffect.SetEmitFromObject(pEmitFrom)
+                pEffect.AttachEffect(pAttachTo)                
+                fEffect = App.EffectAction_Create(pEffect)
+                pSequence.AddAction(fEffect)
+                pSequence.Play ()
+                
+                return
 # Returns texture filename
 def GetTexture():
                 pPlayer = MissionLib.GetPlayer()
@@ -122,6 +161,9 @@ def GetTexture():
                         else:
                             strFile = GFX + JumpspaceConfiguration.FlashGFX
                 
+                return strFile
+def B5GetTexture():
+                strFile = GFX + "JumpspaceFlashExit.tga"
                 return strFile
 
 

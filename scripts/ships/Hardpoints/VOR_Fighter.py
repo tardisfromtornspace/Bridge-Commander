@@ -352,6 +352,19 @@ BiobeamEmitter.SetPerimeterTile(1.000000)
 BiobeamEmitter.SetTextureSpeed(4.000000)
 BiobeamEmitter.SetTextureName("data/VORLON_Lightning.tga")
 App.g_kModelPropertyManager.RegisterLocalTemplate(BiobeamEmitter)
+#################################################
+JumpspaceDriveA = App.HullProperty_Create("Jumpspace Drive 1")
+
+JumpspaceDriveA.SetMaxCondition(800.000000)
+JumpspaceDriveA.SetCritical(0)
+JumpspaceDriveA.SetTargetable(1)
+JumpspaceDriveA.SetPrimary(0)
+JumpspaceDriveA.SetPosition(0.000000, -0.600000, 0.000000)
+JumpspaceDriveA.SetPosition2D(75.000000, 40.000000)
+JumpspaceDriveA.SetRepairComplexity(3.000000)
+JumpspaceDriveA.SetDisabledPercentage(0.750000)
+JumpspaceDriveA.SetRadius(0.200000)
+App.g_kModelPropertyManager.RegisterLocalTemplate(JumpspaceDriveA)
 
 # Property Set
 def LoadPropertySet(pObj):
@@ -366,6 +379,9 @@ def LoadPropertySet(pObj):
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
 	prop = App.g_kModelPropertyManager.FindByName("Warp Core", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	if (prop != None):
+		pObj.AddToSet("Scene Root", prop)
+	prop = App.g_kModelPropertyManager.FindByName("Jumpspace Drive 1", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
 	prop = App.g_kModelPropertyManager.FindByName("Impulse Engines", App.TGModelPropertyManager.LOCAL_TEMPLATES)

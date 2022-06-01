@@ -677,15 +677,15 @@ def AdditionalPosAndCheckIntercept(pAction, pTarget, IsPlanet):
                 pSequence.AddAction(pAction, None, 0)
                 pSequence.AppendAction(App.TGScriptAction_Create("Actions.CameraScriptActions", "TargetWatch", pPlayer.GetContainingSet().GetName (), pCamPlacement.GetName(), pPlayer.GetName(), 0))
                 pAction = App.TGScriptAction_Create(__name__, "MoveForwardAI")
-                pSequence.AddAction(pAction, None, 0.5)
+                pSequence.AddAction(pAction, None, 1.5)
                 pAction = App.TGScriptAction_Create(__name__, "EnteringFlash")
                 pSequence.AddAction(pAction, None, 1.5)
                 pAction = App.TGScriptAction_Create(__name__, "MaxSpeed")
                 pSequence.AddAction(pAction, None, 1.5)
                 pAction = App.TGScriptAction_Create(__name__, "JumpspaceFlash")
-                pSequence.AddAction(pAction, None, 3.5)
+                pSequence.AddAction(pAction, None, 2.5)
                 pAction = App.TGScriptAction_Create(__name__, "HidePlayer")
-                pSequence.AddAction(pAction, None, 5)
+                pSequence.AddAction(pAction, None, 4.5)
                 pAction = App.TGScriptAction_Create(__name__, "RestoreSpeedValues")
                 pSequence.AddAction(pAction, None, 5.5)
                 pAction = App.TGScriptAction_Create(__name__, "ClearAIs")
@@ -694,7 +694,7 @@ def AdditionalPosAndCheckIntercept(pAction, pTarget, IsPlanet):
                 pSequence.AddAction(pAction, None, 5.5)
                 pAction = App.TGScriptAction_Create("Actions.CameraScriptActions", "DropAndWatch", pPlayer.GetContainingSet().GetName(), pPlayer.GetName())
                 pSequence.AddAction(pAction, None, 6)
-                pAction = App.TGScriptAction_Create(__name__, "JumpspaceFlash")
+                pAction = App.TGScriptAction_Create(__name__, "JumpspaceFlashExit")
                 pSequence.AddAction(pAction, None, 6.5)
                 pAction = App.TGScriptAction_Create(__name__, "MoveForwardAI")
                 pSequence.AddAction(pAction, None, 6.5)
@@ -1489,15 +1489,15 @@ def AdditionalPosAndCheck(pObject, pEvent):
                 pSequence.AddAction(pAction, None, 0)
                 pSequence.AppendAction(App.TGScriptAction_Create("Actions.CameraScriptActions", "TargetWatch", pPlayer.GetContainingSet().GetName (), pCamPlacement.GetName(), pPlayer.GetName(), 0))
                 pAction = App.TGScriptAction_Create(__name__, "MoveForwardAI")
-                pSequence.AddAction(pAction, None, 0.5)
+                pSequence.AddAction(pAction, None, 1.5)
                 pAction = App.TGScriptAction_Create(__name__, "EnteringFlash")
                 pSequence.AddAction(pAction, None, 1.5)
                 pAction = App.TGScriptAction_Create(__name__, "MaxSpeed")
                 pSequence.AddAction(pAction, None, 1.5)
                 pAction = App.TGScriptAction_Create(__name__, "JumpspaceFlash")
-                pSequence.AddAction(pAction, None, 3.5)
+                pSequence.AddAction(pAction, None, 2.5)
                 pAction = App.TGScriptAction_Create(__name__, "HidePlayer")
-                pSequence.AddAction(pAction, None, 5)
+                pSequence.AddAction(pAction, None, 4.5)
                 pAction = App.TGScriptAction_Create(__name__, "RestoreSpeedValues")
                 pSequence.AddAction(pAction, None, 5.5)
                 pAction = App.TGScriptAction_Create(__name__, "SwapSets")
@@ -1561,7 +1561,7 @@ def CutsceneExit(pObject, pEvent):
         if App.g_kSetManager.GetSet(pSet.GetName()):
             pAction = App.TGScriptAction_Create("Actions.CameraScriptActions", "ChangeRenderedSet", pSet.GetName())
             pSequence.AddAction(pAction, None, 0.5)       
-        pAction = App.TGScriptAction_Create(__name__, "JumpspaceFlash")
+        pAction = App.TGScriptAction_Create(__name__, "JumpspaceFlashExit")
         pSequence.AddAction(pAction, None, 1)
         pAction = App.TGScriptAction_Create(__name__, "MoveForwardAI")
         pSequence.AddAction(pAction, None, 1)
@@ -1848,6 +1848,16 @@ def JumpspaceFlash(pAction):
         LoadFlash.StartGFX()
         # Create flash
         LoadFlash.CreateGFX(pPlayer)
+
+        return 0
+def JumpspaceFlashExit(pAction):
+        # print 'Jumpspace exit should be starting now...'    
+        pPlayer = MissionLib.GetPlayer()
+            
+        # Load texture GFX
+        LoadFlash.EndFlashGFX()
+        # Create flash
+        LoadFlash.B5CreateGFX(pPlayer)
 
         return 0
 

@@ -46,6 +46,9 @@ Foundation.ShipDef.Primus = Foundation.FedShipDef(abbrev, species, { 'name': lon
 
 # Otherwise, uncomment this and type something in:
 Foundation.ShipDef.Primus.desc = 'The Primus class battle cruiser was a mainstay of the Centauri Republic fleet. The Primus was built by House Tavari Armaments at the Hevaria Orbital Shipyards at Tolonius VII. A very powerful warship compared to its contemporaries, the only real weakness of the Primus is its lack of fighter bay facilities. During the last days of the Narn-Centauri War, several Primus class battle cruisers were outfitted with highly illegal mass drivers and were used in the planetary bombardment of Narn. The Primus´ standard armament of two twin barrell heavy pulse cannons allow it equal ability to deal with capital ships and fighters. Despite this, without fighter support the Primus can be quickly overwhelmed by intense barrages from enemy fighters and a powerful Defense Grid.'
+Foundation.ShipDef.Primus.dTechs = {
+	'Gravimetric Defense': 150
+}
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

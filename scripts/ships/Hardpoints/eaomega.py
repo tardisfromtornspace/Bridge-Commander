@@ -316,6 +316,32 @@ JumpEngine2.SetRadius(0.250000)
 JumpEngine2.SetEngineType(JumpEngine2.EP_WARP)
 App.g_kModelPropertyManager.RegisterLocalTemplate(JumpEngine2)
 #################################################
+JumpspaceDriveB = App.HullProperty_Create("Jumpspace Drive 2")
+
+JumpspaceDriveB.SetMaxCondition(1500.000000)
+JumpspaceDriveB.SetCritical(0)
+JumpspaceDriveB.SetTargetable(1)
+JumpspaceDriveB.SetPrimary(0)
+JumpspaceDriveB.SetPosition(0.000000, -7.770240, 0.000000)
+JumpspaceDriveB.SetPosition2D(65.000000, 65.000000)
+JumpspaceDriveB.SetRepairComplexity(1.000000)
+JumpspaceDriveB.SetDisabledPercentage(0.500000)
+JumpspaceDriveB.SetRadius(0.250000)
+App.g_kModelPropertyManager.RegisterLocalTemplate(JumpspaceDriveB)
+#################################################
+JumpspaceDriveA = App.HullProperty_Create("Jumpspace Drive 1")
+
+JumpspaceDriveA.SetMaxCondition(1500.000000)
+JumpspaceDriveA.SetCritical(0)
+JumpspaceDriveA.SetTargetable(1)
+JumpspaceDriveA.SetPrimary(0)
+JumpspaceDriveA.SetPosition(0.000000, 8.042850, 0.000000)
+JumpspaceDriveA.SetPosition2D(65.000000, 75.000000)
+JumpspaceDriveA.SetRepairComplexity(1.000000)
+JumpspaceDriveA.SetDisabledPercentage(0.500000)
+JumpspaceDriveA.SetRadius(0.250000)
+App.g_kModelPropertyManager.RegisterLocalTemplate(JumpspaceDriveA)
+#################################################
 DefenseGrid = App.ShieldProperty_Create("Defense Grid")
 
 DefenseGrid.SetMaxCondition(1500.000000)
@@ -2931,9 +2957,6 @@ def LoadPropertySet(pObj):
 	prop = App.g_kModelPropertyManager.FindByName("Sublight Drive Sys", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
-	prop = App.g_kModelPropertyManager.FindByName("Jump Engine Sys", App.TGModelPropertyManager.LOCAL_TEMPLATES)
-	if (prop != None):
-		pObj.AddToSet("Scene Root", prop)
 	prop = App.g_kModelPropertyManager.FindByName("Sensor Grid", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
@@ -2961,10 +2984,10 @@ def LoadPropertySet(pObj):
 	prop = App.g_kModelPropertyManager.FindByName("Bridge", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
-	prop = App.g_kModelPropertyManager.FindByName("Jump Engine 1", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	prop = App.g_kModelPropertyManager.FindByName("Jumpspace Drive 1", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
-	prop = App.g_kModelPropertyManager.FindByName("Jump Engine 2", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	prop = App.g_kModelPropertyManager.FindByName("Jumpspace Drive 2", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
 	prop = App.g_kModelPropertyManager.FindByName("Defense Grid", App.TGModelPropertyManager.LOCAL_TEMPLATES)

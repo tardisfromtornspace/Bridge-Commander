@@ -2267,6 +2267,32 @@ SecondaryDrive.SetRadius(0.500000)
 SecondaryDrive.SetEngineType(SecondaryDrive.EP_WARP)
 App.g_kModelPropertyManager.RegisterLocalTemplate(SecondaryDrive)
 #################################################
+JumpspaceDriveB = App.HullProperty_Create("Jumpspace Drive 2")
+
+JumpspaceDriveB.SetMaxCondition(2000.000000)
+JumpspaceDriveB.SetCritical(0)
+JumpspaceDriveB.SetTargetable(1)
+JumpspaceDriveB.SetPrimary(0)
+JumpspaceDriveB.SetPosition(-0.850000, -6.900000, 0.000000)
+JumpspaceDriveB.SetPosition2D(124.000000, 60.000000)
+JumpspaceDriveB.SetRepairComplexity(3.000000)
+JumpspaceDriveB.SetDisabledPercentage(0.500000)
+JumpspaceDriveB.SetRadius(0.500000)
+App.g_kModelPropertyManager.RegisterLocalTemplate(JumpspaceDriveB)
+#################################################
+JumpspaceDriveA = App.HullProperty_Create("Jumpspace Drive 1")
+
+JumpspaceDriveA.SetMaxCondition(3000.000000)
+JumpspaceDriveA.SetCritical(0)
+JumpspaceDriveA.SetTargetable(1)
+JumpspaceDriveA.SetPrimary(0)
+JumpspaceDriveA.SetPosition(0.700000, -6.750000, 0.000000)
+JumpspaceDriveA.SetPosition2D(4.000000, 60.000000)
+JumpspaceDriveA.SetRepairComplexity(3.000000)
+JumpspaceDriveA.SetDisabledPercentage(0.500000)
+JumpspaceDriveA.SetRadius(0.500000)
+App.g_kModelPropertyManager.RegisterLocalTemplate(JumpspaceDriveA)
+#################################################
 Engines = App.ImpulseEngineProperty_Create("Engines")
 
 Engines.SetMaxCondition(3200.000000)
@@ -2688,13 +2714,10 @@ def LoadPropertySet(pObj):
 	prop = App.g_kModelPropertyManager.FindByName("Plasma 22", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
-	prop = App.g_kModelPropertyManager.FindByName("Jump Drives", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	prop = App.g_kModelPropertyManager.FindByName("Jumpspace Drive 1", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
-	prop = App.g_kModelPropertyManager.FindByName("Primary Drive", App.TGModelPropertyManager.LOCAL_TEMPLATES)
-	if (prop != None):
-		pObj.AddToSet("Scene Root", prop)
-	prop = App.g_kModelPropertyManager.FindByName("Secondary Drive", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	prop = App.g_kModelPropertyManager.FindByName("Jumpspace Drive 2", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
 	prop = App.g_kModelPropertyManager.FindByName("Engines", App.TGModelPropertyManager.LOCAL_TEMPLATES)

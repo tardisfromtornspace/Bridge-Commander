@@ -1062,6 +1062,19 @@ DockingPort1.SetRepairComplexity(1.000000)
 DockingPort1.SetDisabledPercentage(0.500000)
 DockingPort1.SetRadius(1.300000)
 App.g_kModelPropertyManager.RegisterLocalTemplate(DockingPort1)
+#################################################
+JumpspaceDrive = App.HullProperty_Create("Jumpspace Drive 1")
+
+JumpspaceDrive.SetMaxCondition(10000.000000)
+JumpspaceDrive.SetCritical(0)
+JumpspaceDrive.SetTargetable(1)
+JumpspaceDrive.SetPrimary(0)
+JumpspaceDrive.SetPosition(0.241791, -0.524087, 0.116556)
+JumpspaceDrive.SetPosition2D(0.000000, 0.000000)
+JumpspaceDrive.SetRepairComplexity(3.000000)
+JumpspaceDrive.SetDisabledPercentage(0.750000)
+JumpspaceDrive.SetRadius(0.200000)
+App.g_kModelPropertyManager.RegisterLocalTemplate(JumpspaceDrive)
 
 # Property load function.
 def LoadPropertySet(pObj):
@@ -1184,5 +1197,8 @@ def LoadPropertySet(pObj):
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
 	prop = App.g_kModelPropertyManager.FindByName("Shuttle Bay 4", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	if (prop != None):
+		pObj.AddToSet("Scene Root", prop)
+	prop = App.g_kModelPropertyManager.FindByName("Jumpspace Drive 1", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)

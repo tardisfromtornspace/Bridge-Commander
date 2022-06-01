@@ -132,6 +132,19 @@ VortexGenerator.SetRadius(0.040000)
 VortexGenerator.SetNormalPowerPerSecond(0.000000)
 App.g_kModelPropertyManager.RegisterLocalTemplate(VortexGenerator)
 #################################################
+JumpspaceDrive = App.HullProperty_Create("Jumpspace Drive 1")
+
+JumpspaceDrive.SetMaxCondition(1500.000000)
+JumpspaceDrive.SetCritical(0)
+JumpspaceDrive.SetTargetable(1)
+JumpspaceDrive.SetPrimary(0)
+JumpspaceDrive.SetPosition(0.000000, -0.300000, 0.034000)
+JumpspaceDrive.SetPosition2D(0.000000, 0.000000)
+JumpspaceDrive.SetRepairComplexity(3.000000)
+JumpspaceDrive.SetDisabledPercentage(0.750000)
+JumpspaceDrive.SetRadius(0.040000)
+App.g_kModelPropertyManager.RegisterLocalTemplate(JumpspaceDrive)
+#################################################
 CloakingDevice = App.CloakingSubsystemProperty_Create("Cloaking Device")
 
 CloakingDevice.SetMaxCondition(2000.000000)
@@ -790,6 +803,36 @@ FusionGun2.SetArcHeightAngles(-0.174533, 0.174533)
 FusionGun2.SetCooldownTime(0.500000)
 FusionGun2.SetModuleName("Tactical.Projectiles.bsfusion")
 App.g_kModelPropertyManager.RegisterLocalTemplate(FusionGun2)
+#################################################
+VortexGen = App.TorpedoTubeProperty_Create("Vortex Generator Weapon")
+
+VortexGen.SetMaxCondition(1400.000000)
+VortexGen.SetCritical(0)
+VortexGen.SetTargetable(0)
+VortexGen.SetPrimary(1)
+VortexGen.SetPosition(0.000000, -0.500000, 0.200000)
+VortexGen.SetPosition2D(0.000000, 0.000000)
+VortexGen.SetRepairComplexity(3.000000)
+VortexGen.SetDisabledPercentage(0.750000)
+VortexGen.SetRadius(0.100000)
+VortexGen.SetDumbfire(1)
+VortexGen.SetWeaponID(2)
+VortexGen.SetGroups(2)
+VortexGen.SetDamageRadiusFactor(1.999999)
+VortexGen.SetIconNum(370)
+VortexGen.SetIconPositionX(77.000000)
+VortexGen.SetIconPositionY(116.000000)
+VortexGen.SetIconAboveShip(1)
+VortexGen.SetImmediateDelay(0.600000)
+VortexGen.SetReloadDelay(100.000000)
+VortexGen.SetMaxReady(1)
+VortexGenDirection = App.TGPoint3()
+VortexGenDirection.SetXYZ(0.000000, -1.000000, 0.000000)
+VortexGen.SetDirection(VortexGenDirection)
+VortexGenRight = App.TGPoint3()
+VortexGenRight.SetXYZ(1.000000, 0.000000, 0.000000)
+VortexGen.SetRight(VortexGenRight)
+App.g_kModelPropertyManager.RegisterLocalTemplate(VortexGen)
 
 # Property load function.
 def LoadPropertySet(pObj):
@@ -833,7 +876,10 @@ def LoadPropertySet(pObj):
 	prop = App.g_kModelPropertyManager.FindByName("Starboard Thruster", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
-	prop = App.g_kModelPropertyManager.FindByName("Vortex Generator", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	prop = App.g_kModelPropertyManager.FindByName("Jumpspace Drive 1", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	if (prop != None):
+		pObj.AddToSet("Scene Root", prop)
+	prop = App.g_kModelPropertyManager.FindByName("Vortex Generator Weapon", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
 	prop = App.g_kModelPropertyManager.FindByName("Port Jump Engine", App.TGModelPropertyManager.LOCAL_TEMPLATES)

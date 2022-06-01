@@ -725,6 +725,19 @@ Bottstargl.SetPeriod(1.000000)
 Bottstargl.SetDuration(0.000000)
 Bottstargl.SetTextureName("scripts/Custom/NanoFXv2/SpecialFX/Gfx/Blinker/Blank.tga")
 App.g_kModelPropertyManager.RegisterLocalTemplate(Bottstargl)
+#################################################
+JumpspaceDrive = App.HullProperty_Create("Jumpspace Drive 1")
+
+JumpspaceDrive.SetMaxCondition(2000.000000)
+JumpspaceDrive.SetCritical(0)
+JumpspaceDrive.SetTargetable(1)
+JumpspaceDrive.SetPrimary(0)
+JumpspaceDrive.SetPosition(-0.872860, -3.498040, 0.007280)
+JumpspaceDrive.SetPosition2D(0.000000, 0.000000)
+JumpspaceDrive.SetRepairComplexity(1.000000)
+JumpspaceDrive.SetDisabledPercentage(0.500000)
+JumpspaceDrive.SetRadius(0.250000)
+App.g_kModelPropertyManager.RegisterLocalTemplate(JumpspaceDrive)
 
 # Property Set
 def LoadPropertySet(pObj):
@@ -820,5 +833,8 @@ def LoadPropertySet(pObj):
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
 	prop = App.g_kModelPropertyManager.FindByName("Bott star gl", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	if (prop != None):
+		pObj.AddToSet("Scene Root", prop)
+	prop = App.g_kModelPropertyManager.FindByName("Jumpspace Drive 1", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
