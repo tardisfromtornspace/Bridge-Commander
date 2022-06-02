@@ -17,6 +17,7 @@ NonSerializedObjects = (
 "oReflector2",
 "oGridDefense",
 "oCentauriGravimetric",
+"oShadowEffect",
 )
 
 class MultivectDef(FoundationTech.TechDef):
@@ -283,4 +284,58 @@ class CentauriDef(FoundationTech.TechDef):
     
 oCentauriGravimetric = CentauriDef('Gravimetric Defense')
 
+class BabFiveShadowDef(FoundationTech.TechDef):
+
+	def OnDefense(self, pShip, pInstance, oYield, pEvent):
+		debug(__name__ + ", OnDefense")
+                if (pShip != None):
+                        pShip.SetImpulse(0, pShip.GetWorldForwardTG(), App.PhysicsObjectClass.DIRECTION_WORLD_SPACE)
+
+		if pEvent.IsHullHit():
+			return
+
+                if (pShip != None):
+                        pShip.SetImpulse(0, pShip.GetWorldForwardTG(), App.PhysicsObjectClass.DIRECTION_WORLD_SPACE)
+
+		if oYield:
+		 	if oYield.IsPhaseYield() or oYield.IsDrainYield():
+		 		return
+
+                if (pShip != None):
+                        pShip.SetImpulse(0, pShip.GetWorldForwardTG(), App.PhysicsObjectClass.DIRECTION_WORLD_SPACE)
+
+		pShields = pShip.GetShields()
+
+		if pShields:
+			# Thanks, MLeoDaalder, for the tip!  -Dasher42
+			pShields.RedistributeShields()
+			
+		# if pShields:
+		# 	pShieldTotal = 0.0
+		# 	for shieldDir in range(App.ShieldClass.NUM_SHIELDS):			#Calculate the total shieldpower
+		# 		pShieldTotal = pShieldTotal+pShields.GetCurShields(shieldDir)
+		# 	for shieldDir in range(App.ShieldClass.NUM_SHIELDS):
+		# 		pShields.SetCurShields(shieldDir,pShieldTotal/6.0)  		#Redistribute shields equally
+
+
+	def OnBeamDefense(self, pShip, pInstance, oYield, pEvent):
+		debug(__name__ + ", OnBeamDefense")
+                if (pShip != None):
+                        pShip.SetImpulse(0, pShip.GetWorldForwardTG(), App.PhysicsObjectClass.DIRECTION_WORLD_SPACE)
+		if App.g_kSystemWrapper.GetRandomNumber(100) <= pInstance.__dict__[self.name]:
+			return self.OnDefense(pShip, pInstance, oYield, pEvent)
+
+	# TODO:  Make this an activated technology
+	def Attach(self, pInstance):
+		debug(__name__ + ", Attach")
+		pInstance.lTechs.append(self)
+		pInstance.lBeamDefense.insert(0, self)		# Important to put shield-type weapons in the front
+		# print 'Attaching Shadow Dispersive Hull to', pInstance, pInstance.__dict__
+
+	# def Activate(self):
+	# 	FoundationTech.oWeaponHit.Start()
+	# def Deactivate(self):
+	# 	FoundationTech.oWeaponHit.Stop()
+
+oShadowEffect = BabFiveShadowDef('Shadow Dispersive Hull')
 # print 'Multivectral Shields loaded'
