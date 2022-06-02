@@ -475,7 +475,7 @@ def JumpspaceInterceptStats(pObject, pEvent):
         
         # Grab values
         pPlayer = MissionLib.GetPlayer()
-        pIterator = pPlayer.StartGetSubsystemMatch(App.CT_HULL_SUBSYSTEM)
+        pIterator = pPlayer.StartGetSubsystemMatch(App.CT_SHIP_SUBSYSTEM)
 	pSystem = pPlayer.GetNextSubsystemMatch(pIterator)
 
 	# Add the stats of each engine into the list
@@ -667,6 +667,20 @@ def AdditionalPosAndCheckIntercept(pAction, pTarget, IsPlanet):
                 pCamPlacement.AlignToVectors(pPlayerBackward, pPlayerDown)
                 pCamPlacement.UpdateNodeOnly()
 
+                pEntro = "JumpspaceFlash"
+                pSalgo = "JumpspaceFlashExit"
+                pSonidoEntro = "EnteringFlash"
+                pSonidoSalgo = "ExitingFlash"
+                if (HasPhasedJumpspace(pPlayer) == "Phased Jumpspace Installed"):
+                    if not pPlayer.IsCloaked():
+                        pCloak = pPlayer.GetCloakingSubsystem()
+                        if pCloak:
+                            pCloak.InstantCloak()
+                    pEntro = "InaccionEntry"
+                    pSalgo = "ShadowFlashExit"
+                    pSonidoEntro = "ShadowFlashEntry"
+                    pSonidoSalgo = "InaccionExit"                            
+
                 # All in one, entry and exiting no set swapping
                 pSequence = App.TGSequence_Create()
                 pAction = App.TGScriptAction_Create("MissionLib", "StartCutscene")
@@ -678,11 +692,11 @@ def AdditionalPosAndCheckIntercept(pAction, pTarget, IsPlanet):
                 pSequence.AppendAction(App.TGScriptAction_Create("Actions.CameraScriptActions", "TargetWatch", pPlayer.GetContainingSet().GetName (), pCamPlacement.GetName(), pPlayer.GetName(), 0))
                 pAction = App.TGScriptAction_Create(__name__, "MoveForwardAI")
                 pSequence.AddAction(pAction, None, 1.5)
-                pAction = App.TGScriptAction_Create(__name__, "EnteringFlash")
+                pAction = App.TGScriptAction_Create(__name__, pSonidoEntro)
                 pSequence.AddAction(pAction, None, 1.5)
                 pAction = App.TGScriptAction_Create(__name__, "MaxSpeed")
                 pSequence.AddAction(pAction, None, 1.5)
-                pAction = App.TGScriptAction_Create(__name__, "JumpspaceFlash")
+                pAction = App.TGScriptAction_Create(__name__, pEntro)
                 pSequence.AddAction(pAction, None, 2.5)
                 pAction = App.TGScriptAction_Create(__name__, "HidePlayer")
                 pSequence.AddAction(pAction, None, 4.5)
@@ -694,11 +708,11 @@ def AdditionalPosAndCheckIntercept(pAction, pTarget, IsPlanet):
                 pSequence.AddAction(pAction, None, 5.5)
                 pAction = App.TGScriptAction_Create("Actions.CameraScriptActions", "DropAndWatch", pPlayer.GetContainingSet().GetName(), pPlayer.GetName())
                 pSequence.AddAction(pAction, None, 6)
-                pAction = App.TGScriptAction_Create(__name__, "JumpspaceFlashExit")
+                pAction = App.TGScriptAction_Create(__name__, pSalgo)
                 pSequence.AddAction(pAction, None, 6.5)
                 pAction = App.TGScriptAction_Create(__name__, "MoveForwardAI")
                 pSequence.AddAction(pAction, None, 6.5)
-                pAction = App.TGScriptAction_Create(__name__, "ExitingFlash")
+                pAction = App.TGScriptAction_Create(__name__, pSonidoSalgo)
                 pSequence.AddAction(pAction, None, 7)
                 pAction = App.TGScriptAction_Create(__name__, "UnhidePlayer")
                 pSequence.AddAction(pAction, None, 8)
@@ -723,6 +737,23 @@ def AdditionalPosAndCheckIntercept(pAction, pTarget, IsPlanet):
 
         return 0
 
+def InaccionEntry():
+        pEnterSound = App.TGSound_Create("scripts/Custom/Jumpspace/SFX/dummy.wav", "Enter", 0)
+        pEnterSound.SetSFX(0) 
+        pEnterSound.SetInterface(1)
+
+        App.g_kSoundManager.PlaySound("Enter")
+
+        return 0
+        
+def InaccionExit():
+        pEnterSound = App.TGSound_Create("scripts/Custom/Jumpspace/SFX/dummy.wav", "Exit", 0)
+        pEnterSound.SetSFX(0) 
+        pEnterSound.SetInterface(1)
+
+        App.g_kSoundManager.PlaySound("Exit")
+
+        return 0
 
 # Swap players position
 def SwapPlayerPos(pAction, pTarget, IsPlanet):
@@ -1121,7 +1152,7 @@ def ReturnETA(pSelectedSpeed):
         
         # Grab values
         pPlayer = MissionLib.GetPlayer()
-        pIterator = pPlayer.StartGetSubsystemMatch(App.CT_HULL_SUBSYSTEM)
+        pIterator = pPlayer.StartGetSubsystemMatch(App.CT_SHIP_SUBSYSTEM)
 	pSystem = pPlayer.GetNextSubsystemMatch(pIterator)
 
 	# Add the stats of each engine into the list
@@ -1194,7 +1225,7 @@ def ReturnIdealETA(pSelectedSpeed):
         
         # Grab values
         pPlayer = MissionLib.GetPlayer()
-        pIterator = pPlayer.StartGetSubsystemMatch(App.CT_HULL_SUBSYSTEM)
+        pIterator = pPlayer.StartGetSubsystemMatch(App.CT_SHIP_SUBSYSTEM)
 	pSystem = pPlayer.GetNextSubsystemMatch(pIterator)
 
 	# Add the stats of each engine into the list
@@ -1259,7 +1290,7 @@ def ReturnEngineStats():
         
         # Grab values
         pPlayer = MissionLib.GetPlayer()
-        pIterator = pPlayer.StartGetSubsystemMatch(App.CT_HULL_SUBSYSTEM)
+        pIterator = pPlayer.StartGetSubsystemMatch(App.CT_SHIP_SUBSYSTEM)
 	pSystem = pPlayer.GetNextSubsystemMatch(pIterator)
 
 	# Add the stats of each engine into the list
@@ -1321,7 +1352,7 @@ def JumpspaceStats(pObject, pEvent):
         
         # Grab values
         pPlayer = MissionLib.GetPlayer()
-        pIterator = pPlayer.StartGetSubsystemMatch(App.CT_HULL_SUBSYSTEM)
+        pIterator = pPlayer.StartGetSubsystemMatch(App.CT_SHIP_SUBSYSTEM)
 	pSystem = pPlayer.GetNextSubsystemMatch(pIterator)
 
 	# Add the stats of each engine into the list
@@ -1402,7 +1433,7 @@ def DS9FXMusicBugfix():
 # Check if the ship is actually equiped with jumpspace drive
 def HasJumpspace(pShip):        
         # Grab values
-        pIterator = pShip.StartGetSubsystemMatch(App.CT_HULL_SUBSYSTEM)
+        pIterator = pShip.StartGetSubsystemMatch(App.CT_SHIP_SUBSYSTEM)
 	pSystem = pShip.GetNextSubsystemMatch(pIterator)
 
 	# No ship has 20 engines! Right?!
@@ -1416,7 +1447,23 @@ def HasJumpspace(pShip):
 		pSystem = pShip.GetNextSubsystemMatch(pIterator)
 
         pShip.EndGetSubsystemMatch(pIterator)
+# Checks if this ship can do phased Jumpspace
+def HasPhasedJumpspace(pPlayer):
+        pIterator = pPlayer.StartGetSubsystemMatch(App.CT_SHIP_SUBSYSTEM)
+	pSystem = pPlayer.GetNextSubsystemMatch(pIterator)
 
+	# Add the stats of each engine into the list
+        while (pSystem != None):
+		if pSystem.GetName() == "Hyperspace Cloak":
+                   pStats = pSystem.GetConditionPercentage() * 100.0
+                   pDisabled = pSystem.GetDisabledPercentage() * 100.0
+                   if pStats > pDisabled:
+                       # Engine is enabled, means it works
+                       return 'Phased Jumpspace Installed'
+                       break                
+		pSystem = pPlayer.GetNextSubsystemMatch(pIterator)
+
+        pPlayer.EndGetSubsystemMatch(pIterator)
 
 # Jumpspace sequence initiated
 def PreEngage(pObject, pEvent):
@@ -1479,6 +1526,20 @@ def AdditionalPosAndCheck(pObject, pEvent):
                 pCamPlacement.SetTranslateXYZ(cordX, cordY, cordZ)
                 pCamPlacement.AlignToVectors(pPlayerBackward, pPlayerDown)
                 pCamPlacement.UpdateNodeOnly()
+
+                pEntro = "JumpspaceFlash"
+                pSalgo = "JumpspaceFlashExit"
+                pSonidoEntro = "EnteringFlash"
+                pSonidoSalgo = "ExitingFlash"
+                if (HasPhasedJumpspace(pPlayer) == "Phased Jumpspace Installed"):
+                    if not pPlayer.IsCloaked():
+                        pCloak = pPlayer.GetCloakingSubsystem()
+                        if pCloak:
+                            pCloak.InstantCloak()
+                    pEntro = "InaccionEntry"
+                    pSalgo = "ShadowFlashExit"
+                    pSonidoEntro = "ShadowFlashEntry"
+                    pSonidoSalgo = "InaccionExit"   
                 
                 pSequence = App.TGSequence_Create()
                 pAction = App.TGScriptAction_Create("MissionLib", "StartCutscene")
@@ -1490,11 +1551,11 @@ def AdditionalPosAndCheck(pObject, pEvent):
                 pSequence.AppendAction(App.TGScriptAction_Create("Actions.CameraScriptActions", "TargetWatch", pPlayer.GetContainingSet().GetName (), pCamPlacement.GetName(), pPlayer.GetName(), 0))
                 pAction = App.TGScriptAction_Create(__name__, "MoveForwardAI")
                 pSequence.AddAction(pAction, None, 1.5)
-                pAction = App.TGScriptAction_Create(__name__, "EnteringFlash")
+                pAction = App.TGScriptAction_Create(__name__, pSonidoEntro)
                 pSequence.AddAction(pAction, None, 1.5)
                 pAction = App.TGScriptAction_Create(__name__, "MaxSpeed")
                 pSequence.AddAction(pAction, None, 1.5)
-                pAction = App.TGScriptAction_Create(__name__, "JumpspaceFlash")
+                pAction = App.TGScriptAction_Create(__name__, pEntro)
                 pSequence.AddAction(pAction, None, 2.5)
                 pAction = App.TGScriptAction_Create(__name__, "HidePlayer")
                 pSequence.AddAction(pAction, None, 4.5)
@@ -1546,6 +1607,20 @@ def CutsceneExit(pObject, pEvent):
         pCamPlacement.AlignToVectors(pPlayerBackward, pPlayerDown)
         pCamPlacement.UpdateNodeOnly()
 
+        pEntro = "JumpspaceFlash"
+        pSalgo = "JumpspaceFlashExit"
+        pSonidoEntro = "EnteringFlash"
+        pSonidoSalgo = "ExitingFlash"
+        if (HasPhasedJumpspace(pPlayer) == "Phased Jumpspace Installed"):
+            if not pPlayer.IsCloaked():
+                pCloak = pPlayer.GetCloakingSubsystem()
+                if pCloak:
+                    pCloak.InstantCloak()
+            pEntro = "InaccionEntry"
+            pSalgo = "ShadowFlashExit"
+            pSonidoEntro = "ShadowFlashEntry"
+            pSonidoSalgo = "InaccionExit"  
+
         # Initiate scripted sequences
         pSequence = App.TGSequence_Create ()
         pAction = App.TGScriptAction_Create(__name__, "HidePlayer")
@@ -1561,11 +1636,11 @@ def CutsceneExit(pObject, pEvent):
         if App.g_kSetManager.GetSet(pSet.GetName()):
             pAction = App.TGScriptAction_Create("Actions.CameraScriptActions", "ChangeRenderedSet", pSet.GetName())
             pSequence.AddAction(pAction, None, 0.5)       
-        pAction = App.TGScriptAction_Create(__name__, "JumpspaceFlashExit")
+        pAction = App.TGScriptAction_Create(__name__, pSalgo)
         pSequence.AddAction(pAction, None, 1)
         pAction = App.TGScriptAction_Create(__name__, "MoveForwardAI")
         pSequence.AddAction(pAction, None, 1)
-        pAction = App.TGScriptAction_Create(__name__, "ExitingFlash")
+        pAction = App.TGScriptAction_Create(__name__, pSonidoSalgo)
         pSequence.AddAction(pAction, None, 2)
         pAction = App.TGScriptAction_Create(__name__, "MaxSpeedExit")
         pSequence.AddAction(pAction, None, 2.5)
@@ -1634,6 +1709,23 @@ def EnteringFlash(pAction):
 
         return 0
 
+def ShadowFlashEntry(pAction):
+        pEnterSound = App.TGSound_Create("scripts/Custom/Jumpspace/SFX/shadowPhasedScream.wav", "Enter", 0)
+        pEnterSound.SetSFX(0) 
+        pEnterSound.SetInterface(1)
+
+        App.g_kSoundManager.PlaySound("Enter")
+
+        return 0
+        
+def ShadowFlashExit(pAction):
+        pEnterSound = App.TGSound_Create("scripts/Custom/Jumpspace/SFX/shadowPhasedScream.wav", "Exit", 0)
+        pEnterSound.SetSFX(0) 
+        pEnterSound.SetInterface(1)
+
+        App.g_kSoundManager.PlaySound("Exit")
+
+        return 0
 
 # Exiting sound
 def ExitingFlash(pAction):
