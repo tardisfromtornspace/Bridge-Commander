@@ -330,7 +330,7 @@ JumpEngine.SetRadius(0.250000)
 JumpEngine.SetNormalPowerPerSecond(50.000000)
 App.g_kModelPropertyManager.RegisterLocalTemplate(JumpEngine)
 #################################################
-Jump = App.EngineProperty_Create("Jump")
+Jump = App.EngineProperty_Create("Jumpspace Drive 1")
 
 Jump.SetMaxCondition(1500.000000)
 Jump.SetCritical(0)
@@ -343,19 +343,6 @@ Jump.SetDisabledPercentage(0.500000)
 Jump.SetRadius(3.500000)
 Jump.SetEngineType(Jump.EP_WARP)
 App.g_kModelPropertyManager.RegisterLocalTemplate(Jump)
-#################################################
-JumpspaceDrive = App.HullProperty_Create("Jumpspace Drive 1")
-
-JumpspaceDrive.SetMaxCondition(1500.000000)
-JumpspaceDrive.SetCritical(0)
-JumpspaceDrive.SetTargetable(1)
-JumpspaceDrive.SetPrimary(0)
-JumpspaceDrive.SetPosition(-0.033092, -6.404870, -0.145745)
-JumpspaceDrive.SetPosition2D(66.000000, 34.000000)
-JumpspaceDrive.SetRepairComplexity(1.000000)
-JumpspaceDrive.SetDisabledPercentage(0.500000)
-JumpspaceDrive.SetRadius(3.50000)
-App.g_kModelPropertyManager.RegisterLocalTemplate(JumpspaceDrive)
 #################################################
 MainSubJumpENGINES = App.EngineProperty_Create("Main SubJump ENGINES")
 

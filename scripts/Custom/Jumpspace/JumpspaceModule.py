@@ -611,7 +611,7 @@ def InterceptTarget(pTarget, IsPlanet):
 
         # I have to grab the player over here and see if he's actually cloaked
         pWasCloaked = 0
-        if pPlayer.IsCloaked():
+        if pPlayer.IsCloaked() and not (HasPhasedJumpspace(pPlayer) == "Phased Jumpspace Installed"):
             pWasCloaked = 1
             pCloak = pPlayer.GetCloakingSubsystem()
             if pCloak:
@@ -675,7 +675,7 @@ def AdditionalPosAndCheckIntercept(pAction, pTarget, IsPlanet):
                     if not pPlayer.IsCloaked():
                         pCloak = pPlayer.GetCloakingSubsystem()
                         if pCloak:
-                            pCloak.InstantCloak()
+                            pCloak.StartCloaking()
                     pEntro = "InaccionEntry"
                     pSalgo = "ShadowFlashExit"
                     pSonidoEntro = "ShadowFlashEntry"
@@ -1535,7 +1535,7 @@ def AdditionalPosAndCheck(pObject, pEvent):
                     if not pPlayer.IsCloaked():
                         pCloak = pPlayer.GetCloakingSubsystem()
                         if pCloak:
-                            pCloak.InstantCloak()
+                            pCloak.StartCloaking()
                     pEntro = "InaccionEntry"
                     pSalgo = "ShadowFlashExit"
                     pSonidoEntro = "ShadowFlashEntry"
@@ -1615,7 +1615,7 @@ def CutsceneExit(pObject, pEvent):
             if not pPlayer.IsCloaked():
                 pCloak = pPlayer.GetCloakingSubsystem()
                 if pCloak:
-                    pCloak.InstantCloak()
+                    pCloak.StopCloaking()
             pEntro = "InaccionEntry"
             pSalgo = "ShadowFlashExit"
             pSonidoEntro = "ShadowFlashEntry"
@@ -1900,7 +1900,7 @@ def BackToNormal(pAction):
 
         pPlayer = MissionLib.GetPlayer()
         
-        if pWasCloaked == 1:
+        if pWasCloaked == 1 and not (HasPhasedJumpspace(pPlayer) == "Phased Jumpspace Installed"):
             pCloak = pPlayer.GetCloakingSubsystem()
             if pCloak:
                 pCloak.InstantCloak()
@@ -2370,11 +2370,15 @@ def Exiting(pObject, pEvent):
             pModule = pSys.GetSet()
 
         pSet.RemoveObjectFromSet(pPlayerName)
+
         if pPlayer.IsCloaked():
             pWasCloaked = 1
             pCloak = pPlayer.GetCloakingSubsystem()
             if pCloak:
-                pCloak.InstantDecloak()
+                if (HasPhasedJumpspace(pPlayer) == "Phased Jumpspace Installed"):
+                    pCloak.StopCloaking()
+                else:
+                    pCloak.InstantDecloak()
         pModule.AddObjectToSet(pPlayer, pPlayerName)
 
         # Avoiding any potential problems

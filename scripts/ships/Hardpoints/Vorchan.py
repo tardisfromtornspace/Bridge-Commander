@@ -245,7 +245,7 @@ GravimetricDefenses.SetShieldChargePerSecond(GravimetricDefenses.LEFT_SHIELDS, 3
 GravimetricDefenses.SetShieldChargePerSecond(GravimetricDefenses.RIGHT_SHIELDS, 3.000000)
 App.g_kModelPropertyManager.RegisterLocalTemplate(GravimetricDefenses)
 #################################################
-PortGravimetric = App.EngineProperty_Create("Port Gravimetric")
+PortGravimetric = App.EngineProperty_Create("Jumpspace Drive 1")
 
 PortGravimetric.SetMaxCondition(1500.000000)
 PortGravimetric.SetCritical(0)
@@ -259,7 +259,7 @@ PortGravimetric.SetRadius(0.600000)
 PortGravimetric.SetEngineType(PortGravimetric.EP_WARP)
 App.g_kModelPropertyManager.RegisterLocalTemplate(PortGravimetric)
 #################################################
-StarGravimetric = App.EngineProperty_Create("Star Gravimetric")
+StarGravimetric = App.EngineProperty_Create("Jumpspace Drive 2")
 
 StarGravimetric.SetMaxCondition(1500.000000)
 StarGravimetric.SetCritical(0)
@@ -272,32 +272,6 @@ StarGravimetric.SetDisabledPercentage(0.330000)
 StarGravimetric.SetRadius(0.600000)
 StarGravimetric.SetEngineType(StarGravimetric.EP_WARP)
 App.g_kModelPropertyManager.RegisterLocalTemplate(StarGravimetric)
-#################################################
-JumpspaceDriveB = App.HullProperty_Create("Jumpspace Drive 2")
-
-JumpspaceDriveB.SetMaxCondition(1500.000000)
-JumpspaceDriveB.SetCritical(0)
-JumpspaceDriveB.SetTargetable(1)
-JumpspaceDriveB.SetPrimary(0)
-JumpspaceDriveB.SetPosition(-0.653857, 0.746822, 1.042730)
-JumpspaceDriveB.SetPosition2D(55.000000, 80.000000)
-JumpspaceDriveB.SetRepairComplexity(1.000000)
-JumpspaceDriveB.SetDisabledPercentage(0.330000)
-JumpspaceDriveB.SetRadius(0.600000)
-App.g_kModelPropertyManager.RegisterLocalTemplate(JumpspaceDriveB)
-#################################################
-JumpspaceDriveA = App.HullProperty_Create("Jumpspace Drive 1")
-
-JumpspaceDriveA.SetMaxCondition(1500.000000)
-JumpspaceDriveA.SetCritical(0)
-JumpspaceDriveA.SetTargetable(1)
-JumpspaceDriveA.SetPrimary(0)
-JumpspaceDriveA.SetPosition(0.594314, 0.758897, 1.033090)
-JumpspaceDriveA.SetPosition2D(75.000000, 80.000000)
-JumpspaceDriveA.SetRepairComplexity(1.000000)
-JumpspaceDriveA.SetDisabledPercentage(0.330000)
-JumpspaceDriveA.SetRadius(0.600000)
-App.g_kModelPropertyManager.RegisterLocalTemplate(JumpspaceDriveA)
 #################################################
 ImpulseThrusters1 = App.EngineProperty_Create("Impulse Thrusters 1")
 
@@ -587,32 +561,6 @@ Cann3.SetArcHeightAngles(-0.785398, 0.785398)
 Cann3.SetCooldownTime(1.000000)
 Cann3.SetModuleName("Tactical.Projectiles.CentCannon")
 App.g_kModelPropertyManager.RegisterLocalTemplate(Cann3)
-#################################################
-JumpspaceDriveB = App.HullProperty_Create("Jumpspace Drive 2")
-
-JumpspaceDriveB.SetMaxCondition(1500.000000)
-JumpspaceDriveB.SetCritical(0)
-JumpspaceDriveB.SetTargetable(1)
-JumpspaceDriveB.SetPrimary(0)
-JumpspaceDriveB.SetPosition(-0.653857, 0.746822, 1.042730)
-JumpspaceDriveB.SetPosition2D(55.000000, 80.000000)
-JumpspaceDriveB.SetRepairComplexity(1.000000)
-JumpspaceDriveB.SetDisabledPercentage(0.330000)
-JumpspaceDriveB.SetRadius(0.600000)
-App.g_kModelPropertyManager.RegisterLocalTemplate(JumpspaceDriveB)
-#################################################
-JumpspaceDriveA = App.HullProperty_Create("Jumpspace Drive 1")
-
-JumpspaceDriveA.SetMaxCondition(1500.000000)
-JumpspaceDriveA.SetCritical(0)
-JumpspaceDriveA.SetTargetable(1)
-JumpspaceDriveA.SetPrimary(0)
-JumpspaceDriveA.SetPosition(0.594314, 0.758897, 1.033090)
-JumpspaceDriveA.SetPosition2D(75.000000, 80.000000)
-JumpspaceDriveA.SetRepairComplexity(1.000000)
-JumpspaceDriveA.SetDisabledPercentage(0.330000)
-JumpspaceDriveA.SetRadius(0.600000)
-App.g_kModelPropertyManager.RegisterLocalTemplate(JumpspaceDriveA)
 
 # Property Set
 def LoadPropertySet(pObj):

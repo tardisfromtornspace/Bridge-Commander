@@ -132,19 +132,6 @@ VortexGenerator.SetRadius(0.040000)
 VortexGenerator.SetNormalPowerPerSecond(0.000000)
 App.g_kModelPropertyManager.RegisterLocalTemplate(VortexGenerator)
 #################################################
-JumpspaceDrive = App.HullProperty_Create("Jumpspace Drive 1")
-
-JumpspaceDrive.SetMaxCondition(1500.000000)
-JumpspaceDrive.SetCritical(0)
-JumpspaceDrive.SetTargetable(1)
-JumpspaceDrive.SetPrimary(0)
-JumpspaceDrive.SetPosition(0.000000, -0.300000, 0.034000)
-JumpspaceDrive.SetPosition2D(0.000000, 0.000000)
-JumpspaceDrive.SetRepairComplexity(3.000000)
-JumpspaceDrive.SetDisabledPercentage(0.750000)
-JumpspaceDrive.SetRadius(0.040000)
-App.g_kModelPropertyManager.RegisterLocalTemplate(JumpspaceDrive)
-#################################################
 CloakingDevice = App.CloakingSubsystemProperty_Create("Cloaking Device")
 
 CloakingDevice.SetMaxCondition(2000.000000)
@@ -218,7 +205,7 @@ StarImpulse.SetRadius(0.100000)
 StarImpulse.SetEngineType(StarImpulse.EP_IMPULSE)
 App.g_kModelPropertyManager.RegisterLocalTemplate(StarImpulse)
 #################################################
-PortJumpEngine = App.EngineProperty_Create("Port Jump Engine")
+PortJumpEngine = App.EngineProperty_Create("Jumpspace Drive 1")
 
 PortJumpEngine.SetMaxCondition(4000.000000)
 PortJumpEngine.SetCritical(0)
@@ -232,7 +219,7 @@ PortJumpEngine.SetRadius(0.020000)
 PortJumpEngine.SetEngineType(PortJumpEngine.EP_WARP)
 App.g_kModelPropertyManager.RegisterLocalTemplate(PortJumpEngine)
 #################################################
-StarboardJumpEngine = App.EngineProperty_Create("Starboard Jump Engine")
+StarboardJumpEngine = App.EngineProperty_Create("Jumpspace Drive 2")
 
 StarboardJumpEngine.SetMaxCondition(4000.000000)
 StarboardJumpEngine.SetCritical(0)
@@ -877,6 +864,9 @@ def LoadPropertySet(pObj):
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
 	prop = App.g_kModelPropertyManager.FindByName("Jumpspace Drive 1", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	if (prop != None):
+		pObj.AddToSet("Scene Root", prop)
+	prop = App.g_kModelPropertyManager.FindByName("Jumpspace Drive 2", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
 	prop = App.g_kModelPropertyManager.FindByName("Vortex Generator Weapon", App.TGModelPropertyManager.LOCAL_TEMPLATES)

@@ -216,7 +216,7 @@ ShadowEngine.SetNormalPowerPerSecond(80.000000)
 ShadowEngine.SetMaxAccel(5.000000)
 ShadowEngine.SetMaxAngularAccel(2.600000)
 ShadowEngine.SetMaxAngularVelocity(2.400000)
-ShadowEngine.SetMaxSpeed(10.000000)
+ShadowEngine.SetMaxSpeed(15.000000)
 ShadowEngine.SetEngineSound("shadowengine")
 App.g_kModelPropertyManager.RegisterLocalTemplate(ShadowEngine)
 #################################################

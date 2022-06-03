@@ -243,7 +243,7 @@ GravimetricDefenses.SetShieldChargePerSecond(GravimetricDefenses.LEFT_SHIELDS, 2
 GravimetricDefenses.SetShieldChargePerSecond(GravimetricDefenses.RIGHT_SHIELDS, 2.000000)
 App.g_kModelPropertyManager.RegisterLocalTemplate(GravimetricDefenses)
 #################################################
-PortWarp = App.EngineProperty_Create("Port Warp")
+PortWarp = App.EngineProperty_Create("Jumpspace Drive 1")
 
 PortWarp.SetMaxCondition(1500.000000)
 PortWarp.SetCritical(0)
@@ -257,7 +257,7 @@ PortWarp.SetRadius(0.600000)
 PortWarp.SetEngineType(PortWarp.EP_WARP)
 App.g_kModelPropertyManager.RegisterLocalTemplate(PortWarp)
 #################################################
-StarWarp = App.EngineProperty_Create("Star Warp")
+StarWarp = App.EngineProperty_Create("Jumpspace Drive 2")
 
 StarWarp.SetMaxCondition(1500.000000)
 StarWarp.SetCritical(0)
@@ -270,32 +270,6 @@ StarWarp.SetDisabledPercentage(0.330000)
 StarWarp.SetRadius(0.600000)
 StarWarp.SetEngineType(StarWarp.EP_WARP)
 App.g_kModelPropertyManager.RegisterLocalTemplate(StarWarp)
-#################################################
-JumpspaceDriveB = App.HullProperty_Create("Jumpspace Drive 2")
-
-JumpspaceDriveB.SetMaxCondition(1500.000000)
-JumpspaceDriveB.SetCritical(0)
-JumpspaceDriveB.SetTargetable(1)
-JumpspaceDriveB.SetPrimary(0)
-JumpspaceDriveB.SetPosition(-0.635164, -0.765807, 0.106181)
-JumpspaceDriveB.SetPosition2D(77.000000, 80.000000)
-JumpspaceDriveB.SetRepairComplexity(1.000000)
-JumpspaceDriveB.SetDisabledPercentage(0.330000)
-JumpspaceDriveB.SetRadius(0.600000)
-App.g_kModelPropertyManager.RegisterLocalTemplate(JumpspaceDriveB)
-#################################################
-JumpspaceDriveA = App.HullProperty_Create("Jumpspace Drive 1")
-
-JumpspaceDriveA.SetMaxCondition(1500.000000)
-JumpspaceDriveA.SetCritical(0)
-JumpspaceDriveA.SetTargetable(1)
-JumpspaceDriveA.SetPrimary(0)
-JumpspaceDriveA.SetPosition(0.644475, -0.765725, 0.106181)
-JumpspaceDriveA.SetPosition2D(50.000000, 80.000000)
-JumpspaceDriveA.SetRepairComplexity(1.000000)
-JumpspaceDriveA.SetDisabledPercentage(0.330000)
-JumpspaceDriveA.SetRadius(0.600000)
-App.g_kModelPropertyManager.RegisterLocalTemplate(JumpspaceDriveA)
 #################################################
 ImpulseThrusters1 = App.EngineProperty_Create("Impulse Thrusters 1")
 

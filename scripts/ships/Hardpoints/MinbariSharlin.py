@@ -305,7 +305,7 @@ Bridge.SetDisabledPercentage(0.750000)
 Bridge.SetRadius(0.200000)
 App.g_kModelPropertyManager.RegisterLocalTemplate(Bridge)
 #################################################
-PortWarp = App.EngineProperty_Create("Port Warp")
+PortWarp = App.EngineProperty_Create("Jumpspace Drive 1")
 
 PortWarp.SetMaxCondition(4000.000000)
 PortWarp.SetCritical(0)
@@ -319,7 +319,7 @@ PortWarp.SetRadius(0.090000)
 PortWarp.SetEngineType(PortWarp.EP_WARP)
 App.g_kModelPropertyManager.RegisterLocalTemplate(PortWarp)
 #################################################
-StarWarp = App.EngineProperty_Create("Star Warp")
+StarWarp = App.EngineProperty_Create("Jumpspace Drive 2")
 
 StarWarp.SetMaxCondition(4000.000000)
 StarWarp.SetCritical(0)
@@ -332,32 +332,6 @@ StarWarp.SetDisabledPercentage(0.500000)
 StarWarp.SetRadius(0.090000)
 StarWarp.SetEngineType(StarWarp.EP_WARP)
 App.g_kModelPropertyManager.RegisterLocalTemplate(StarWarp)
-#################################################
-JumpspaceDriveB = App.HullProperty_Create("Jumpspace Drive 2")
-
-JumpspaceDriveB.SetMaxCondition(2000.000000)
-JumpspaceDriveB.SetCritical(0)
-JumpspaceDriveB.SetTargetable(1)
-JumpspaceDriveB.SetPrimary(0)
-JumpspaceDriveB.SetPosition(-0.354340, -1.000000, 0.285476)
-JumpspaceDriveB.SetPosition2D(57.000000, 80.000000)
-JumpspaceDriveB.SetRepairComplexity(3.000000)
-JumpspaceDriveB.SetDisabledPercentage(0.500000)
-JumpspaceDriveB.SetRadius(0.090000)
-App.g_kModelPropertyManager.RegisterLocalTemplate(JumpspaceDriveB)
-#################################################
-JumpspaceDriveA = App.HullProperty_Create("Jumpspace Drive 1")
-
-JumpspaceDriveA.SetMaxCondition(2000.000000)
-JumpspaceDriveA.SetCritical(0)
-JumpspaceDriveA.SetTargetable(1)
-JumpspaceDriveA.SetPrimary(0)
-JumpspaceDriveA.SetPosition(0.354340, -1.000000, 0.285476)
-JumpspaceDriveA.SetPosition2D(80.000000, 80.000000)
-JumpspaceDriveA.SetRepairComplexity(3.000000)
-JumpspaceDriveA.SetDisabledPercentage(0.500000)
-JumpspaceDriveA.SetRadius(0.090000)
-App.g_kModelPropertyManager.RegisterLocalTemplate(JumpspaceDriveA)
 #################################################
 GFBeam1 = App.PhaserProperty_Create("GFBeam1")
 
