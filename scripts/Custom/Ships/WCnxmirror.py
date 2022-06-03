@@ -14,7 +14,9 @@ Foundation.ShipDef.WCnxmirror = Foundation.FedShipDef(abbrev, species, { 'name':
 
 Foundation.ShipDef.WCnxmirror.desc = "The ISS Enterprise (NX-01) was a Terran NX-class battle cruiser that was in service to Starfleet in the mid-22nd century. Mirror NX-01 by WileyCoyote"
 Foundation.ShipDef.WCnxmirror.SubMenu = "NX Class"
-
+Foundation.ShipDef.WCnxmirror.dTechs = {
+	'Polarized Hull Plating': { "Plates": ["Hull Polarizer"]
+}}
 
 if menuGroup:           Foundation.ShipDef.WCnxmirror.RegisterQBShipMenu(menuGroup)
 if playerMenuGroup:     Foundation.ShipDef.WCnxmirror.RegisterQBPlayerShipMenu(playerMenuGroup)

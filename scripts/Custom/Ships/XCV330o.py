@@ -12,6 +12,9 @@ SubSubMenu = "XCV Class"
 Foundation.ShipDef.XCV330o = Foundation.FedShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu, "SubSubMenu": SubSubMenu })
 Foundation.ShipDef.XCV330o.fMaxWarp = 1.3
 Foundation.ShipDef.XCV330o.fCruiseWarp = 1.2
+Foundation.ShipDef.XCV330o.dTechs = {
+	'Polarized Hull Plating': { "Plates": ["Hull Polarizer"]
+}}
 
 Foundation.ShipDef.XCV330o.desc = "The XCV-330 was one of the most radical experiments in early Earth starship design, partially based on Vulcan annular propulsion system, but using a cyclotron accelerator system to create a proton flux that circulated through the outer rings of verterium gallenide segments. While it proved 17% more efficient than its vulcan predeccesors, it was considered a dead-end since it proved resistant to flight directional changes (typical of a coleopteric drive system), a lack of flexibility humans considered too important."
 

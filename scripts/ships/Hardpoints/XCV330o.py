@@ -59,9 +59,9 @@ SensorArray.SetBaseSensorRange(500.000000)
 SensorArray.SetMaxProbes(15)
 App.g_kModelPropertyManager.RegisterLocalTemplate(SensorArray)
 #################################################
-ShieldGenerator = App.ShieldProperty_Create("Hull Integrity")
+ShieldGenerator = App.ShieldProperty_Create("Hull Polarizer")
 
-ShieldGenerator.SetMaxCondition(1.000000)
+ShieldGenerator.SetMaxCondition(2000.000000)
 ShieldGenerator.SetCritical(0)
 ShieldGenerator.SetTargetable(0)
 ShieldGenerator.SetPrimary(1)
@@ -476,7 +476,7 @@ def LoadPropertySet(pObj):
 	prop = App.g_kModelPropertyManager.FindByName("Sensor Array", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
-	prop = App.g_kModelPropertyManager.FindByName("Hull Integrity", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	prop = App.g_kModelPropertyManager.FindByName("Hull Polarizer", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
 	prop = App.g_kModelPropertyManager.FindByName("Engineering", App.TGModelPropertyManager.LOCAL_TEMPLATES)

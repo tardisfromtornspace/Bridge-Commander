@@ -15,7 +15,9 @@ menuGroup = "Pre-Fed ships"
 playerMenuGroup = "Pre-Fed ships"
 SubMenu = "United Earth ships"
 Foundation.ShipDef.EIntrepid = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
-
+Foundation.ShipDef.EIntrepid.dTechs = {
+	'Polarized Hull Plating': { "Plates": ["Hull Polarizer"]
+}}
 
 Foundation.ShipDef.EIntrepid.desc = "The Neptune class was a United Earth starship class in service to Earth Starfleet in the 22nd century. The Neptune class saw service in the Earth-Romulan War."
 
