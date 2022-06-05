@@ -109,7 +109,7 @@ def ResChanged(sCardString):
 		#							  800:	-.5,
 		#							  1024: -.45,
 		#							  ...
-									}
+		#							}
 		}
 
 	# Cycle through all the keys in the dictionary...

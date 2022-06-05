@@ -39,10 +39,10 @@ def GetDamage():
 	return 100.0
 
 def GetGuidanceLifetime():
-	return 0.0
+	return 0.5
 
 def GetMaxAngularAccel():
-	return 0.125
+	return 1.125
 
 def GetLifetime():
 	return 8.0
