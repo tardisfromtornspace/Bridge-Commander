@@ -272,11 +272,11 @@ class PolarizedHullPlatingDef(FoundationTech.TechDef):
 			if not pProtectingPlate.IsDisabled():
 				fDiff = 1 - fOldCondition + fDamage / pSystem.GetMaxCondition()
 				# some of these calcs could be done outside the loop
-				fNewCondition = fOldCondition - 1.5 * fDiff * (1-pProtectingPlate.GetConditionPercentage()) * fAllocatedFactor / len(lAffectedSystems)
+				fNewCondition = fOldCondition - 1.5 * fDiff * (1-pProtectingPlate.GetConditionPercentage()) * fAllocatedFactor / (1 + len(lAffectedSystems))
 			else:
 				fDiff = 1 - fOldCondition + fDamage / pSystem.GetMaxCondition()
 				# some of these calcs could be done outside the loop
-				fNewCondition = fOldCondition - 1.5 * fDiff * fAllocatedFactor / len(lAffectedSystems)
+				fNewCondition = fOldCondition - 1.5 * fDiff * fAllocatedFactor / (1 + len(lAffectedSystems))
 			pSystem.SetConditionPercentage(fNewCondition)
 			dOldConditions[pSystem.GetName()] = fNewCondition
                 if bPlateAtRange == 0:
