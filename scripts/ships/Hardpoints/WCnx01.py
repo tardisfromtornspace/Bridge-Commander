@@ -37,7 +37,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(SensorArray)
 #################################################
 WarpReactorCore = App.PowerProperty_Create("Warp Reactor Core")
 
-WarpReactorCore.SetMaxCondition(4500.000000)
+WarpReactorCore.SetMaxCondition(4000.000000)
 WarpReactorCore.SetCritical(1)
 WarpReactorCore.SetTargetable(1)
 WarpReactorCore.SetPrimary(1)
