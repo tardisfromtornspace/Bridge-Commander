@@ -3,7 +3,7 @@
 
 
 Carrier = __import__('ftb.Carrier')
-class EAOmega(Carrier.Carrier):
+class Warlock(Carrier.Carrier):
    def __init__(self, pShip):
                Carrier.Carrier.__init__(self, pShip)
                LauncherGroup = __import__('ftb.LauncherGroup')
@@ -17,10 +17,7 @@ class EAOmega(Carrier.Carrier):
                group.AddLauncher('Shuttle Bay 1', launcher1)
 
 
-               launcher1.AddLaunchable('Thunderbolt', 'ftb.friendlyAI', 6)
-
-
-               launcher1.AddLaunchable('EAStarfury', 'ftb.friendlyAI', 6)
+               launcher1.AddLaunchable('EAStarfury', 'ftb.friendlyAI', 12)
 
 
                self.AddLauncher('Group 1', group)
@@ -28,9 +25,10 @@ class EAOmega(Carrier.Carrier):
                # Play with this feature if you dare... MUHAHAHAHAHAHAHAHAHAHAHAHA!!!!!
                group.SetLaunchMode( LauncherGroup.ALL)
 
+
    def GetMaxShuttles(self):
                return 18
 
 
 ShipManager = __import__('ftb.ShipManager')
-ShipManager.RegisterShipClass('EAOmega', EAOmega)
+ShipManager.RegisterShipClass('Warlock', Warlock)

@@ -12,7 +12,7 @@ Omega.SetGenus(1)
 Omega.SetSpecies(106)
 Omega.SetMass(100000.000000)
 Omega.SetRotationalInertia(60000.000000)
-Omega.SetShipName("Nimrod")
+Omega.SetShipName("EAOmega")
 Omega.SetModelFilename("data/Models/Ships/EAOmega/eaomega.nif")
 Omega.SetDamageResolution(5.000000)
 Omega.SetAffiliation(0)
@@ -211,19 +211,6 @@ Bridge.SetRepairComplexity(1.000000)
 Bridge.SetDisabledPercentage(0.500000)
 Bridge.SetRadius(0.500000)
 App.g_kModelPropertyManager.RegisterLocalTemplate(Bridge)
-#################################################
-Hanger1 = App.HullProperty_Create("Hanger 1")
-
-Hanger1.SetMaxCondition(1300.000000)
-Hanger1.SetCritical(0)
-Hanger1.SetTargetable(1)
-Hanger1.SetPrimary(0)
-Hanger1.SetPosition(0.000000, 9.580680, 0.300000)
-Hanger1.SetPosition2D(0.000000, 0.000000)
-Hanger1.SetRepairComplexity(7.500000)
-Hanger1.SetDisabledPercentage(0.500000)
-Hanger1.SetRadius(0.350000)
-App.g_kModelPropertyManager.RegisterLocalTemplate(Hanger1)
 #################################################
 PulseCannonSys = App.WeaponSystemProperty_Create("Pulse Cannon Sys")
 
@@ -1413,21 +1400,6 @@ PulseTurret12.SetArcHeightAngles(-1.553343, 0.698132)
 PulseTurret12.SetCooldownTime(0.300000)
 PulseTurret12.SetModuleName("Tactical.Projectiles.B5_Pulse")
 App.g_kModelPropertyManager.RegisterLocalTemplate(PulseTurret12)
-#################################################
-Hanger1OEP = App.ObjectEmitterProperty_Create("Hanger 1 OEP")
-
-Hanger1OEPForward = App.TGPoint3()
-Hanger1OEPForward.SetXYZ(0.000000, 1.000000, 0.000000)
-Hanger1OEPUp = App.TGPoint3()
-Hanger1OEPUp.SetXYZ(0.000000, 0.000000, 1.000000)
-Hanger1OEPRight = App.TGPoint3()
-Hanger1OEPRight.SetXYZ(1.000000, 0.000000, 0.000000)
-Hanger1OEP.SetOrientation(Hanger1OEPForward, Hanger1OEPUp, Hanger1OEPRight)
-Hanger1OEPPosition = App.TGPoint3()
-Hanger1OEPPosition.SetXYZ(0.000000, 9.580680, 0.300000)
-Hanger1OEP.SetPosition(Hanger1OEPPosition)
-Hanger1OEP.SetEmittedObjectType(Hanger1OEP.OEP_SHUTTLE)
-App.g_kModelPropertyManager.RegisterLocalTemplate(Hanger1OEP)
 #################################################
 ParticleBeam1 = App.PhaserProperty_Create("Particle Beam 1")
 
@@ -2918,6 +2890,34 @@ PezLock2OEPPosition.SetXYZ(0.968357, 5.015730, 0.241701)
 PezLock2OEP.SetPosition(PezLock2OEPPosition)
 PezLock2OEP.SetEmittedObjectType(PezLock2OEP.OEP_SHUTTLE)
 App.g_kModelPropertyManager.RegisterLocalTemplate(PezLock2OEP)
+#################################################
+ShuttleBay1OEP = App.ObjectEmitterProperty_Create("Shuttle Bay 1 OEP")
+
+ShuttleBay1OEPForward = App.TGPoint3()
+ShuttleBay1OEPForward.SetXYZ(0.000000, 1.000000, 0.000000)
+ShuttleBay1OEPUp = App.TGPoint3()
+ShuttleBay1OEPUp.SetXYZ(0.000000, 0.000000, 1.000000)
+ShuttleBay1OEPRight = App.TGPoint3()
+ShuttleBay1OEPRight.SetXYZ(-0.219878, 0.968905, 0.113474)
+ShuttleBay1OEP.SetOrientation(ShuttleBay1OEPForward, ShuttleBay1OEPUp, ShuttleBay1OEPRight)
+ShuttleBay1OEPPosition = App.TGPoint3()
+ShuttleBay1OEPPosition.SetXYZ(0.000000, 9.580680, 0.300000)
+ShuttleBay1OEP.SetPosition(ShuttleBay1OEPPosition)
+ShuttleBay1OEP.SetEmittedObjectType(ShuttleBay1OEP.OEP_SHUTTLE)
+App.g_kModelPropertyManager.RegisterLocalTemplate(ShuttleBay1OEP)
+#################################################
+ShuttleBay1 = App.HullProperty_Create("Shuttle Bay 1")
+
+ShuttleBay1.SetMaxCondition(1300.000000)
+ShuttleBay1.SetCritical(0)
+ShuttleBay1.SetTargetable(1)
+ShuttleBay1.SetPrimary(0)
+ShuttleBay1.SetPosition(0.000000, 9.580680, 0.300000)
+ShuttleBay1.SetPosition2D(64.000000, 25.000000)
+ShuttleBay1.SetRepairComplexity(7.500000)
+ShuttleBay1.SetDisabledPercentage(0.000000)
+ShuttleBay1.SetRadius(1.300000)
+App.g_kModelPropertyManager.RegisterLocalTemplate(ShuttleBay1)
 
 # Property load function.
 def LoadPropertySet(pObj):
@@ -2982,10 +2982,10 @@ def LoadPropertySet(pObj):
 	prop = App.g_kModelPropertyManager.FindByName("Eng 4 glow", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
-	prop = App.g_kModelPropertyManager.FindByName("Hanger 1", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	prop = App.g_kModelPropertyManager.FindByName("Shuttle Bay 1", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
-	prop = App.g_kModelPropertyManager.FindByName("Hanger 1 OEP", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	prop = App.g_kModelPropertyManager.FindByName("Shuttle Bay 1 OEP", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
 	prop = App.g_kModelPropertyManager.FindByName("P Nav 1", App.TGModelPropertyManager.LOCAL_TEMPLATES)

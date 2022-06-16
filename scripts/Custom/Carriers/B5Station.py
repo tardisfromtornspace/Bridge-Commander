@@ -33,6 +33,8 @@ class B5Station( Carrier.Carrier):
        
         self.AddLauncher( "Group 1", group)
 
+        # Play with this feature if you dare... MUHAHAHAHAHAHAHAHAHAHAHAHA!!!!!
+        group.SetLaunchMode( LauncherGroup.ALL)
 
     # Define how much Shuttles we can carry maximal (Return Shuttles script)
     def GetMaxShuttles(self):

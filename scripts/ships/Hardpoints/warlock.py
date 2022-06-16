@@ -568,7 +568,7 @@ Warbird.SetGenus(1)
 Warbird.SetSpecies(301)
 Warbird.SetMass(400.000000)
 Warbird.SetRotationalInertia(20000.000000)
-Warbird.SetShipName("Warbird")
+Warbird.SetShipName("Warlock")
 Warbird.SetModelFilename("data/Models/Ships/Warbird.nif")
 Warbird.SetDamageResolution(12.000000)
 Warbird.SetAffiliation(0)
@@ -2540,6 +2540,34 @@ SmallMissile2Right = App.TGPoint3()
 SmallMissile2Right.SetXYZ(1.000000, 0.000000, 0.000000)
 SmallMissile2.SetRight(SmallMissile2Right)
 App.g_kModelPropertyManager.RegisterLocalTemplate(SmallMissile2)
+#################################################
+ShuttleBay1OEP = App.ObjectEmitterProperty_Create("Shuttle Bay 1 OEP")
+
+ShuttleBay1OEPForward = App.TGPoint3()
+ShuttleBay1OEPForward.SetXYZ(0.000000, 1.000000, 0.000000)
+ShuttleBay1OEPUp = App.TGPoint3()
+ShuttleBay1OEPUp.SetXYZ(0.000000, 0.000000, 1.000000)
+ShuttleBay1OEPRight = App.TGPoint3()
+ShuttleBay1OEPRight.SetXYZ(-0.219878, 0.968905, 0.113474)
+ShuttleBay1OEP.SetOrientation(ShuttleBay1OEPForward, ShuttleBay1OEPUp, ShuttleBay1OEPRight)
+ShuttleBay1OEPPosition = App.TGPoint3()
+ShuttleBay1OEPPosition.SetXYZ(0.000000, 8.950000, -0.200000)
+ShuttleBay1OEP.SetPosition(ShuttleBay1OEPPosition)
+ShuttleBay1OEP.SetEmittedObjectType(ShuttleBay1OEP.OEP_SHUTTLE)
+App.g_kModelPropertyManager.RegisterLocalTemplate(ShuttleBay1OEP)
+#################################################
+ShuttleBay1 = App.HullProperty_Create("Shuttle Bay 1")
+
+ShuttleBay1.SetMaxCondition(2000.000000)
+ShuttleBay1.SetCritical(0)
+ShuttleBay1.SetTargetable(1)
+ShuttleBay1.SetPrimary(0)
+ShuttleBay1.SetPosition(0.000000, 8.950000, -0.200000)
+ShuttleBay1.SetPosition2D(64.000000, 25.000000)
+ShuttleBay1.SetRepairComplexity(4.000000)
+ShuttleBay1.SetDisabledPercentage(0.000000)
+ShuttleBay1.SetRadius(1.300000)
+App.g_kModelPropertyManager.RegisterLocalTemplate(ShuttleBay1)
 
 # Property load function.
 def LoadPropertySet(pObj):
@@ -2728,5 +2756,11 @@ def LoadPropertySet(pObj):
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
 	prop = App.g_kModelPropertyManager.FindByName("Large Missile 2", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	if (prop != None):
+		pObj.AddToSet("Scene Root", prop)
+	prop = App.g_kModelPropertyManager.FindByName("Shuttle Bay 1", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	if (prop != None):
+		pObj.AddToSet("Scene Root", prop)
+	prop = App.g_kModelPropertyManager.FindByName("Shuttle Bay 1 OEP", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
