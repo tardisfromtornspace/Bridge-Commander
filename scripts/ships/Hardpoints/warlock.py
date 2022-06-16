@@ -1062,7 +1062,7 @@ RailGun2.SetOrientation(RailGun2Forward, RailGun2Up)
 RailGun2.SetArcWidthAngles(-0.349066, 0.349066)
 RailGun2.SetArcHeightAngles(-0.349066, 0.349066)
 RailGun2.SetCooldownTime(2.000000)
-RailGun2.SetModuleName("Tactical.Projectiles.RomulanCannon")
+RailGun2.SetModuleName("Tactical.Projectiles.WarlockRail")
 App.g_kModelPropertyManager.RegisterLocalTemplate(RailGun2)
 #################################################
 RailGun2 = App.PulseWeaponProperty_Create("Rail Gun 2")
