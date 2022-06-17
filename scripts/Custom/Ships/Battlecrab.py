@@ -19,6 +19,8 @@ Foundation.ShipDef.Battlecrab = Foundation.ShipDef(abbrev, species, { 'name': lo
 Foundation.ShipDef.Battlecrab.dTechs = { "Phase Cloak": 10, 'Breen Drainer Immune': 1, 'Shadow Dispersive Hull': 3}
 
 Foundation.ShipDef.Battlecrab.desc = "The Shadow Vessel (sometimes known as Battle Crab or The Ghost) is the primary starship of the Shadows. Easily distinguished by its spiny, almost spider like shape and its constantly undulating black skin, Shadow vessels are known to have a deeply unsettling effect on sentients and can somehow project a scream like noise into the mind of any that get near it as it goes by. An extremely powerful war machine, its primary beam weapon has an energy output on par with a controlled thermonuclear reaction and can effortlessly cut through even a four mile wide space station from a range of around a dozen miles. A direct hit from this weapon is under normal circumstances sufficient to destroy almost any ship of the Young races. The Shadow vessel also possesses a weapon capable of destabilizing jump points. When fired into active hyperspace vortex it causes the formed jump point to quickly collapse, which leads to a massive shockwave that will destroy any ships caught in the blast radius. Even inactive, a Shadow Vessel is extremely dangerous. "
+Foundation.ShipDef.Battlecrab.CloakingSFX = "shadowscream"
+Foundation.ShipDef.Battlecrab.DeCloakingSFX = "shadowscream"
 
 
 if menuGroup:           Foundation.ShipDef.Battlecrab.RegisterQBShipMenu(menuGroup)
