@@ -81,7 +81,7 @@ Reactor.SetMainBatteryLimit(150000.000000)
 Reactor.SetBackupBatteryLimit(100000.000000)
 Reactor.SetMainConduitCapacity(500.000000)
 Reactor.SetBackupConduitCapacity(120.000000)
-Reactor.SetPowerOutput(600.000000)
+Reactor.SetPowerOutput(60.000000)
 App.g_kModelPropertyManager.RegisterLocalTemplate(Reactor)
 #################################################
 RepairSystem = App.RepairSubsystemProperty_Create("Repair System")

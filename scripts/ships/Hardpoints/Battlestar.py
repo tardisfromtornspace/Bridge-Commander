@@ -49,7 +49,7 @@ TyliumEnergizer.SetMainBatteryLimit(70000.000000)
 TyliumEnergizer.SetBackupBatteryLimit(10000.000000)
 TyliumEnergizer.SetMainConduitCapacity(6500.000000)
 TyliumEnergizer.SetBackupConduitCapacity(2500.000000)
-TyliumEnergizer.SetPowerOutput(7360.000000)
+TyliumEnergizer.SetPowerOutput(360.000000)
 App.g_kModelPropertyManager.RegisterLocalTemplate(TyliumEnergizer)
 #################################################
 FusionReactor1 = App.PowerProperty_Create("Fusion Reactor 1")

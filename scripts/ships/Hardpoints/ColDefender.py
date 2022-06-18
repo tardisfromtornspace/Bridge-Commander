@@ -42,7 +42,7 @@ PowerCore.SetMainBatteryLimit(70000.000000)
 PowerCore.SetBackupBatteryLimit(40000.000000)
 PowerCore.SetMainConduitCapacity(650.000000)
 PowerCore.SetBackupConduitCapacity(400.000000)
-PowerCore.SetPowerOutput(600.000000)
+PowerCore.SetPowerOutput(500.000000)
 App.g_kModelPropertyManager.RegisterLocalTemplate(PowerCore)
 #################################################
 DamageControl = App.RepairSubsystemProperty_Create("Damage Control")

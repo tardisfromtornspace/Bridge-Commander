@@ -424,7 +424,7 @@ WarpCore.SetMainBatteryLimit(285000.000000)
 WarpCore.SetBackupBatteryLimit(91179.203125)
 WarpCore.SetMainConduitCapacity(1367.689941)
 WarpCore.SetBackupConduitCapacity(227.947998)
-WarpCore.SetPowerOutput(21139.740234)
+WarpCore.SetPowerOutput(5139.740234)
 App.g_kModelPropertyManager.RegisterLocalTemplate(WarpCore)
 #################################################
 ShieldGenerator = App.ShieldProperty_Create("Shield Generator")

@@ -82,7 +82,7 @@ WarpCore.SetMainBatteryLimit(1500000.000000)
 WarpCore.SetBackupBatteryLimit(50000.000000)
 WarpCore.SetMainConduitCapacity(9000.000000)
 WarpCore.SetBackupConduitCapacity(1000.000000)
-WarpCore.SetPowerOutput(8000.000000)
+WarpCore.SetPowerOutput(3000.000000)
 App.g_kModelPropertyManager.RegisterLocalTemplate(WarpCore)
 #################################################
 ImpulseEngines = App.ImpulseEngineProperty_Create("Impulse Engines")

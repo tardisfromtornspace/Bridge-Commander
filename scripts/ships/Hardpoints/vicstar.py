@@ -731,7 +731,7 @@ SolarIonReactor.SetMainBatteryLimit(999999.000000)
 SolarIonReactor.SetBackupBatteryLimit(240000.000000)
 SolarIonReactor.SetMainConduitCapacity(4000.000000)
 SolarIonReactor.SetBackupConduitCapacity(800.000000)
-SolarIonReactor.SetPowerOutput(4000.000000)
+SolarIonReactor.SetPowerOutput(800.000000)
 App.g_kModelPropertyManager.RegisterLocalTemplate(SolarIonReactor)
 #################################################
 Hyperdrive = App.WarpEngineProperty_Create("Hyperdrive")

@@ -49,7 +49,7 @@ TyliumEnergizer.SetMainBatteryLimit(3000.000000)
 TyliumEnergizer.SetBackupBatteryLimit(800.000000)
 TyliumEnergizer.SetMainConduitCapacity(600.000000)
 TyliumEnergizer.SetBackupConduitCapacity(300.000000)
-TyliumEnergizer.SetPowerOutput(700.000000)
+TyliumEnergizer.SetPowerOutput(5.000000)
 App.g_kModelPropertyManager.RegisterLocalTemplate(TyliumEnergizer)
 #################################################
 SensorArray = App.SensorProperty_Create("Sensor Array")

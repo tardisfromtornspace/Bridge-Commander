@@ -49,7 +49,7 @@ TyliumEnigizer.SetMainBatteryLimit(7000.000000)
 TyliumEnigizer.SetBackupBatteryLimit(1000.000000)
 TyliumEnigizer.SetMainConduitCapacity(600.000000)
 TyliumEnigizer.SetBackupConduitCapacity(300.000000)
-TyliumEnigizer.SetPowerOutput(800.000000)
+TyliumEnigizer.SetPowerOutput(55.000000)
 App.g_kModelPropertyManager.RegisterLocalTemplate(TyliumEnigizer)
 #################################################
 SensorArray = App.SensorProperty_Create("Sensor Array")

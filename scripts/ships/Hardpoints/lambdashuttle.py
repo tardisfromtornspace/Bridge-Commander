@@ -62,7 +62,7 @@ SolarIonizationReactor.SetMainBatteryLimit(150000.000000)
 SolarIonizationReactor.SetBackupBatteryLimit(100000.000000)
 SolarIonizationReactor.SetMainConduitCapacity(500.000000)
 SolarIonizationReactor.SetBackupConduitCapacity(120.000000)
-SolarIonizationReactor.SetPowerOutput(400.000000)
+SolarIonizationReactor.SetPowerOutput(150.000000)
 App.g_kModelPropertyManager.RegisterLocalTemplate(SolarIonizationReactor)
 #################################################
 Sensor = App.SensorProperty_Create("Sensor")

@@ -53,7 +53,7 @@ PowerGenerator.SetMainBatteryLimit(700000.000000)
 PowerGenerator.SetBackupBatteryLimit(200000.000000)
 PowerGenerator.SetMainConduitCapacity(2000.000000)
 PowerGenerator.SetBackupConduitCapacity(300.000000)
-PowerGenerator.SetPowerOutput(1500.000000)
+PowerGenerator.SetPowerOutput(150.000000)
 App.g_kModelPropertyManager.RegisterLocalTemplate(PowerGenerator)
 #################################################
 AstromechDroid = App.RepairSubsystemProperty_Create("Astromech Droid")

@@ -94,7 +94,7 @@ ReactorModule.SetMainBatteryLimit(2000000.000000)
 ReactorModule.SetBackupBatteryLimit(100000.000000)
 ReactorModule.SetMainConduitCapacity(2500.000000)
 ReactorModule.SetBackupConduitCapacity(500.000000)
-ReactorModule.SetPowerOutput(2000.000000)
+ReactorModule.SetPowerOutput(1000.000000)
 App.g_kModelPropertyManager.RegisterLocalTemplate(ReactorModule)
 #################################################
 SensorArray = App.SensorProperty_Create("Sensor Array")

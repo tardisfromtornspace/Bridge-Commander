@@ -53,7 +53,7 @@ WarpCore.SetMainBatteryLimit(2000000.000000)
 WarpCore.SetBackupBatteryLimit(100000.000000)
 WarpCore.SetMainConduitCapacity(1400.000000)
 WarpCore.SetBackupConduitCapacity(400.000000)
-WarpCore.SetPowerOutput(1000.000000)
+WarpCore.SetPowerOutput(10000.000000)
 App.g_kModelPropertyManager.RegisterLocalTemplate(WarpCore)
 #################################################
 RepairSystem = App.RepairSubsystemProperty_Create("Repair System")
