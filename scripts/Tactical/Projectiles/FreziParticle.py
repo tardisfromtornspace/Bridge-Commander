@@ -22,9 +22,9 @@ import App
 def Create(pTorp):
 
 	kOuterShellColor = App.TGColorA()
-	kOuterShellColor.SetRGBA(0.500000, 0.580392, 1.000000, 1.000000)	
+	kOuterShellColor.SetRGBA(0.500000, 1.000000, 0.580392, 1.000000)	
 	kOuterCoreColor = App.TGColorA()
-	kOuterCoreColor.SetRGBA(0.800000, 0.870588, 1.000000, 1.000000)
+	kOuterCoreColor.SetRGBA(0.800000, 1.000000, 0.870588, 1.000000)
 
 	pTorp.CreateDisruptorModel(kOuterShellColor,kOuterCoreColor, 0.030, 0.006) 	
 	pTorp.SetDamage( GetDamage() )
@@ -44,16 +44,16 @@ def GetLaunchSpeed():
 	return(100.0)
 
 def GetLaunchSound():
-	return("EAPulse2")
+	return("GQgun")
 
 def GetPowerCost():
 	return(10.0)
 
 def GetName():
-	return("Blue Plasma Bolt 40")
+	return("Frezi Particle")
 
 def GetDamage():
-	return 8.0
+	return 13.0
 
 def GetGuidanceLifetime():
 	return 0.0

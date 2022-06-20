@@ -8,7 +8,7 @@ import GlobalPropertyTemplates
 #################################################
 Hull = App.HullProperty_Create("Hull")
 
-Hull.SetMaxCondition(15.000000)
+Hull.SetMaxCondition(24.000000)
 Hull.SetCritical(1)
 Hull.SetTargetable(1)
 Hull.SetPrimary(1)
@@ -21,7 +21,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(Hull)
 #################################################
 PowerPlant = App.PowerProperty_Create("Power Plant")
 
-PowerPlant.SetMaxCondition(15.000000)
+PowerPlant.SetMaxCondition(22.000000)
 PowerPlant.SetCritical(1)
 PowerPlant.SetTargetable(1)
 PowerPlant.SetPrimary(1)
@@ -36,32 +36,6 @@ PowerPlant.SetMainConduitCapacity(18.000000)
 PowerPlant.SetBackupConduitCapacity(7.000000)
 PowerPlant.SetPowerOutput(20.000000)
 App.g_kModelPropertyManager.RegisterLocalTemplate(PowerPlant)
-#################################################
-FuealTank1 = App.HullProperty_Create("Fuel Tank 1")
-
-FuealTank1.SetMaxCondition(12.000000)
-FuealTank1.SetCritical(1)
-FuealTank1.SetTargetable(1)
-FuealTank1.SetPrimary(0)
-FuealTank1.SetPosition(0.400000, -0.060744, 0.000000)
-FuealTank1.SetPosition2D(65.000000, 55.000000)
-FuealTank1.SetRepairComplexity(15.000000)
-FuealTank1.SetDisabledPercentage(0.500000)
-FuealTank1.SetRadius(0.005000)
-App.g_kModelPropertyManager.RegisterLocalTemplate(FuealTank1)
-#################################################
-FuealTank2 = App.HullProperty_Create("Fuel Tank 2")
-
-FuealTank2.SetMaxCondition(12.000000)
-FuealTank2.SetCritical(1)
-FuealTank2.SetTargetable(1)
-FuealTank2.SetPrimary(0)
-FuealTank2.SetPosition(-0.400000, -0.060744, 0.000000)
-FuealTank2.SetPosition2D(65.000000, 55.000000)
-FuealTank2.SetRepairComplexity(15.000000)
-FuealTank2.SetDisabledPercentage(0.500000)
-FuealTank2.SetRadius(0.005000)
-App.g_kModelPropertyManager.RegisterLocalTemplate(FuealTank2)
 #################################################
 Sensor = App.SensorProperty_Create("Sensor")
 
@@ -111,7 +85,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(Shields)
 #################################################
 SubLightSys = App.ImpulseEngineProperty_Create("Sub Light Sys")
 
-SubLightSys.SetMaxCondition(10.000000)
+SubLightSys.SetMaxCondition(21.000000)
 SubLightSys.SetCritical(0)
 SubLightSys.SetTargetable(0)
 SubLightSys.SetPrimary(1)
@@ -130,7 +104,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(SubLightSys)
 #################################################
 JumpSys = App.WarpEngineProperty_Create("Jump Sys")
 
-JumpSys.SetMaxCondition(4.000000)
+JumpSys.SetMaxCondition(22.000000)
 JumpSys.SetCritical(0)
 JumpSys.SetTargetable(0)
 JumpSys.SetPrimary(1)
@@ -144,7 +118,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(JumpSys)
 #################################################
 RepairSys = App.RepairSubsystemProperty_Create("Repair Sys")
 
-RepairSys.SetMaxCondition(10.000000)
+RepairSys.SetMaxCondition(22.000000)
 RepairSys.SetCritical(0)
 RepairSys.SetTargetable(0)
 RepairSys.SetPrimary(1)
@@ -158,14 +132,14 @@ RepairSys.SetMaxRepairPoints(2.000000)
 RepairSys.SetNumRepairTeams(2)
 App.g_kModelPropertyManager.RegisterLocalTemplate(RepairSys)
 #################################################
-EAStarfury = App.ShipProperty_Create("B5ZephyrRaider")
+EAStarfury = App.ShipProperty_Create("NarnFraziFighter")
 
 EAStarfury.SetGenus(1)
 EAStarfury.SetSpecies(106)
 EAStarfury.SetMass(90.000000)
 EAStarfury.SetRotationalInertia(600.000000)
 EAStarfury.SetShipName("B5 Zephyr Raider")
-EAStarfury.SetModelFilename("data/Models/Ships/B5ZephyrRaider/B5ZephyrRaider.nif")
+EAStarfury.SetModelFilename("data/Models/Ships/NarnFraziFighter/NarnFraziFighter.nif")
 EAStarfury.SetDamageResolution(15.000000)
 EAStarfury.SetAffiliation(0)
 EAStarfury.SetStationary(0)
@@ -175,7 +149,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(EAStarfury)
 #################################################
 PulseCannonSys = App.WeaponSystemProperty_Create("Pulse Cannon Sys")
 
-PulseCannonSys.SetMaxCondition(9.000000)
+PulseCannonSys.SetMaxCondition(19.000000)
 PulseCannonSys.SetCritical(0)
 PulseCannonSys.SetTargetable(0)
 PulseCannonSys.SetPrimary(1)
@@ -195,7 +169,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(PulseCannonSys)
 #################################################
 Engine1 = App.EngineProperty_Create("Engine 1")
 
-Engine1.SetMaxCondition(3.000000)
+Engine1.SetMaxCondition(18.000000)
 Engine1.SetCritical(0)
 Engine1.SetTargetable(1)
 Engine1.SetPrimary(0)
@@ -209,11 +183,11 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(Engine1)
 #################################################
 Engine2 = App.EngineProperty_Create("Engine 2")
 
-Engine2.SetMaxCondition(3.000000)
+Engine2.SetMaxCondition(18.000000)
 Engine2.SetCritical(0)
 Engine2.SetTargetable(1)
 Engine2.SetPrimary(0)
-Engine2.SetPosition(-0.080184, -0.052331, 0.000000)
+Engine2.SetPosition(-0.080184, -0.052331, -0.000000)
 Engine2.SetPosition2D(55.000000, 85.000000)
 Engine2.SetRepairComplexity(1.000000)
 Engine2.SetDisabledPercentage(0.500000)
@@ -258,7 +232,7 @@ PulseCannon1.SetOrientation(PulseCannon1Forward, PulseCannon1Up)
 PulseCannon1.SetArcWidthAngles(-0.174533, 0.174533)
 PulseCannon1.SetArcHeightAngles(-0.174533, 0.174533)
 PulseCannon1.SetCooldownTime(0.300000)
-PulseCannon1.SetModuleName("Tactical.Projectiles.ZephyrBolter")
+PulseCannon1.SetModuleName("Tactical.Projectiles.FreziParticle")
 App.g_kModelPropertyManager.RegisterLocalTemplate(PulseCannon1)
 #################################################
 PulseCannon2 = App.PulseWeaponProperty_Create("Pulse Cannon 2")
@@ -298,12 +272,12 @@ PulseCannon2.SetOrientation(PulseCannon2Forward, PulseCannon2Up)
 PulseCannon2.SetArcWidthAngles(-0.174533, 0.174533)
 PulseCannon2.SetArcHeightAngles(-0.174533, 0.174533)
 PulseCannon2.SetCooldownTime(0.300000)
-PulseCannon2.SetModuleName("Tactical.Projectiles.ZephyrBolter")
+PulseCannon2.SetModuleName("Tactical.Projectiles.FreziParticle")
 App.g_kModelPropertyManager.RegisterLocalTemplate(PulseCannon2)
 #################################################
 TractorSys = App.WeaponSystemProperty_Create("Tractor Sys")
 
-TractorSys.SetMaxCondition(3.000000)
+TractorSys.SetMaxCondition(15.000000)
 TractorSys.SetCritical(0)
 TractorSys.SetTargetable(0)
 TractorSys.SetPrimary(1)
@@ -323,7 +297,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(TractorSys)
 #################################################
 GraplingClaw = App.TractorBeamProperty_Create("Grapling Claw")
 
-GraplingClaw.SetMaxCondition(4.000000)
+GraplingClaw.SetMaxCondition(14.000000)
 GraplingClaw.SetCritical(0)
 GraplingClaw.SetTargetable(1)
 GraplingClaw.SetPrimary(0)
@@ -389,12 +363,6 @@ def LoadPropertySet(pObj):
 	prop = App.g_kModelPropertyManager.FindByName("Hull", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
-	prop = App.g_kModelPropertyManager.FindByName("Fuel Tank 1", App.TGModelPropertyManager.LOCAL_TEMPLATES)
-	if (prop != None):
-		pObj.AddToSet("Scene Root", prop)
-	prop = App.g_kModelPropertyManager.FindByName("Fuel Tank 2", App.TGModelPropertyManager.LOCAL_TEMPLATES)
-	if (prop != None):
-		pObj.AddToSet("Scene Root", prop)
 	prop = App.g_kModelPropertyManager.FindByName("Power Plant", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
@@ -413,7 +381,7 @@ def LoadPropertySet(pObj):
 	prop = App.g_kModelPropertyManager.FindByName("Repair Sys", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
-	prop = App.g_kModelPropertyManager.FindByName("B5ZephyrRaider", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	prop = App.g_kModelPropertyManager.FindByName("NarnFraziFighter", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
 	prop = App.g_kModelPropertyManager.FindByName("Pulse Cannon Sys", App.TGModelPropertyManager.LOCAL_TEMPLATES)

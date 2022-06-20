@@ -307,7 +307,7 @@ GQuan.SetSpecies(401)
 GQuan.SetMass(100.000000)
 GQuan.SetRotationalInertia(7000.000000)
 GQuan.SetShipName("GQuan")
-GQuan.SetModelFilename("data/Models/Ships/Gquan.nif")
+GQuan.SetModelFilename("data/Models/Ships/GQuan/GQuan.nif")
 GQuan.SetDamageResolution(5.000000)
 GQuan.SetAffiliation(0)
 GQuan.SetStationary(0)
@@ -436,7 +436,7 @@ energyminelauncherstarRight.SetXYZ(1.000000, 0.000000, 0.000000)
 energyminelauncherstar.SetRight(energyminelauncherstarRight)
 App.g_kModelPropertyManager.RegisterLocalTemplate(energyminelauncherstar)
 #################################################
-Particale = App.PhaserProperty_Create("Particale")
+Particale = App.PhaserProperty_Create("Particle")
 
 Particale.SetMaxCondition(1500.000000)
 Particale.SetCritical(0)
@@ -499,7 +499,7 @@ Particale.SetTextureSpeed(2.500000)
 Particale.SetTextureName("data/phaser.tga")
 App.g_kModelPropertyManager.RegisterLocalTemplate(Particale)
 #################################################
-Particale2 = App.PhaserProperty_Create("Part icale2")
+Particale2 = App.PhaserProperty_Create("Particle 2")
 
 Particale2.SetMaxCondition(1500.000000)
 Particale2.SetCritical(0)
@@ -709,6 +709,34 @@ Bottstargl.SetPeriod(1.000000)
 Bottstargl.SetDuration(0.000000)
 Bottstargl.SetTextureName("scripts/Custom/NanoFXv2/SpecialFX/Gfx/Blinker/Blank.tga")
 App.g_kModelPropertyManager.RegisterLocalTemplate(Bottstargl)
+#################################################
+ShuttleBay1OEP = App.ObjectEmitterProperty_Create("Shuttle Bay 1 OEP")
+
+ShuttleBay1OEPForward = App.TGPoint3()
+ShuttleBay1OEPForward.SetXYZ(0.000000, 1.000000, 0.000000)
+ShuttleBay1OEPUp = App.TGPoint3()
+ShuttleBay1OEPUp.SetXYZ(0.000000, 0.000000, 1.000000)
+ShuttleBay1OEPRight = App.TGPoint3()
+ShuttleBay1OEPRight.SetXYZ(-0.219878, 0.968905, 0.113474)
+ShuttleBay1OEP.SetOrientation(ShuttleBay1OEPForward, ShuttleBay1OEPUp, ShuttleBay1OEPRight)
+ShuttleBay1OEPPosition = App.TGPoint3()
+ShuttleBay1OEPPosition.SetXYZ(0.000000, 3.580680, 0.000000)
+ShuttleBay1OEP.SetPosition(ShuttleBay1OEPPosition)
+ShuttleBay1OEP.SetEmittedObjectType(ShuttleBay1OEP.OEP_SHUTTLE)
+App.g_kModelPropertyManager.RegisterLocalTemplate(ShuttleBay1OEP)
+#################################################
+ShuttleBay1 = App.HullProperty_Create("Shuttle Bay 1")
+
+ShuttleBay1.SetMaxCondition(1300.000000)
+ShuttleBay1.SetCritical(0)
+ShuttleBay1.SetTargetable(1)
+ShuttleBay1.SetPrimary(0)
+ShuttleBay1.SetPosition(0.000000, 3.580680, 0.000000)
+ShuttleBay1.SetPosition2D(64.000000, 25.000000)
+ShuttleBay1.SetRepairComplexity(7.500000)
+ShuttleBay1.SetDisabledPercentage(0.000000)
+ShuttleBay1.SetRadius(1.300000)
+App.g_kModelPropertyManager.RegisterLocalTemplate(ShuttleBay1)
 
 # Property Set
 def LoadPropertySet(pObj):
@@ -776,13 +804,12 @@ def LoadPropertySet(pObj):
 	prop = App.g_kModelPropertyManager.FindByName("energy mine launcher star", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
-	prop = App.g_kModelPropertyManager.FindByName("Particale", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	prop = App.g_kModelPropertyManager.FindByName("Particle", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
-	prop = App.g_kModelPropertyManager.FindByName("Part icale2", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	prop = App.g_kModelPropertyManager.FindByName("Particle 2", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
-
 	prop = App.g_kModelPropertyManager.FindByName("Main SubJump ENGINES", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
@@ -802,5 +829,11 @@ def LoadPropertySet(pObj):
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
 	prop = App.g_kModelPropertyManager.FindByName("Bott star gl", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	if (prop != None):
+		pObj.AddToSet("Scene Root", prop)
+	prop = App.g_kModelPropertyManager.FindByName("Shuttle Bay 1", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	if (prop != None):
+		pObj.AddToSet("Scene Root", prop)
+	prop = App.g_kModelPropertyManager.FindByName("Shuttle Bay 1 OEP", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
