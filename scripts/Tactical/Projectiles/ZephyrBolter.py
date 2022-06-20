@@ -1,5 +1,5 @@
 ###############################################################################
-#	Filename:	Plasma Bolt 40.py
+#	Filename:	Plasma Bolt 35.py
 #	
 #	Confidential and Proprietary, Copyright 2000 by Totally Games
 #	
@@ -26,9 +26,9 @@ def Create(pTorp):
 	kOuterCoreColor = App.TGColorA()
 	kOuterCoreColor.SetRGBA(1.000000, 0.870588, 0.662745, 1.000000)
 
-	pTorp.CreateDisruptorModel(kOuterShellColor,kOuterCoreColor, 0.030, 0.006) 	
+	pTorp.CreateDisruptorModel(kOuterShellColor,kOuterCoreColor, 0.025, 0.005) 	
 	pTorp.SetDamage( GetDamage() )
-	pTorp.SetDamageRadiusFactor(0.025)
+	pTorp.SetDamageRadiusFactor(0.020)
 	pTorp.SetGuidanceLifetime( GetGuidanceLifetime() )
 	pTorp.SetMaxAngularAccel( GetMaxAngularAccel() )
 	pTorp.SetLifetime( GetLifetime() )
@@ -41,7 +41,7 @@ def Create(pTorp):
 	return(0)
 
 def GetLaunchSpeed():
-	return(100.0)
+	return(150.0)
 
 def GetLaunchSound():
 	return("EAPulse2")
@@ -50,10 +50,10 @@ def GetPowerCost():
 	return(10.0)
 
 def GetName():
-	return("Plasma Bolt 40")
+	return("Zephyr Bolt")
 
 def GetDamage():
-	return 8.0
+	return 5.5
 
 def GetGuidanceLifetime():
 	return 0.0

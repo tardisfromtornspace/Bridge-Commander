@@ -53,7 +53,7 @@ def GetName():
 	return("Plasma Bolt 35")
 
 def GetDamage():
-	return 8.75
+	return 7.0
 
 def GetGuidanceLifetime():
 	return 0.0
