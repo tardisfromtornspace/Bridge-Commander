@@ -18,6 +18,7 @@ NonSerializedObjects = (
 "oGridDefense",
 "oCentauriGravimetric",
 "oShadowEffect",
+"oVorlonShields",
 )
 
 class MultivectDef(FoundationTech.TechDef):
@@ -338,4 +339,67 @@ class BabFiveShadowDef(FoundationTech.TechDef):
 	# 	FoundationTech.oWeaponHit.Stop()
 
 oShadowEffect = BabFiveShadowDef('Shadow Dispersive Hull')
+
+class BabFiveVreeDef(FoundationTech.TechDef):
+
+	def OnDefense(self, pShip, pInstance, oYield, pEvent):
+		debug(__name__ + ", OnDefense")
+		# if pEvent.IsHullHit():
+		#	return
+
+		if oYield:
+		 	if oYield.IsPhaseYield() or oYield.IsDrainYield():
+		 		return
+
+		pShields = pShip.GetShields()
+
+		if pShields:
+			# Thanks, MLeoDaalder, for the tip!  -Dasher42
+                        # ShieldDistributeNeg(pShip, pEvent.GetDamage())
+		 	# pShieldTotal = 0.0
+                        pShieldTotal = -pEvent.GetDamage()
+		 	for shieldDir in range(App.ShieldClass.NUM_SHIELDS):			#Calculate the total shieldpower
+		 		pShieldTotal = pShieldTotal+pShields.GetCurShields(shieldDir)
+		 	for shieldDir in range(App.ShieldClass.NUM_SHIELDS):
+		 		pShields.SetCurShields(shieldDir,pShieldTotal/6.0)  		#Redistribute shields equally
+			
+		# if pShields:
+		# 	pShieldTotal = 0.0
+		# 	for shieldDir in range(App.ShieldClass.NUM_SHIELDS):			#Calculate the total shieldpower
+		# 		pShieldTotal = pShieldTotal+pShields.GetCurShields(shieldDir)
+		# 	for shieldDir in range(App.ShieldClass.NUM_SHIELDS):
+		# 		pShields.SetCurShields(shieldDir,pShieldTotal/6.0)  		#Redistribute shields equally
+
+
+	def OnBeamDefense(self, pShip, pInstance, oYield, pEvent):
+		debug(__name__ + ", OnBeamDefense")
+		if App.g_kSystemWrapper.GetRandomNumber(100) <= pInstance.__dict__['Vorlon Shields']:
+			return self.OnDefense(pShip, pInstance, oYield, pEvent)
+
+	def OnPulseDefense(self, pShip, pInstance, pTorp, oYield, pEvent):
+		debug(__name__ + ", OnPulseDefense")
+		if App.g_kSystemWrapper.GetRandomNumber(100) <= pInstance.__dict__['Vorlon Shields']:
+			return self.OnDefense(pShip, pInstance, oYield, pEvent)
+
+	def OnTorpDefense(self, pShip, pInstance, pTorp, oYield, pEvent):
+		debug(__name__ + ", OnTorpDefense")
+		if App.g_kSystemWrapper.GetRandomNumber(100) <= pInstance.__dict__['Vorlon Shields']:
+			return self.OnDefense(pShip, pInstance, oYield, pEvent)
+
+
+	# TODO:  Make this an activated technology
+	def Attach(self, pInstance):
+		debug(__name__ + ", Attach")
+		pInstance.lTechs.append(self)
+		pInstance.lTorpDefense.insert(0, self)		# Important to put shield-type weapons in the front
+		pInstance.lPulseDefense.insert(0, self)
+		pInstance.lBeamDefense.insert(0, self)
+		# print 'Attaching Multivectral to', pInstance, pInstance.__dict__
+
+	# def Activate(self):
+	# 	FoundationTech.oWeaponHit.Start()
+	# def Deactivate(self):
+	# 	FoundationTech.oWeaponHit.Stop()
+
+oVorlonShields = BabFiveVreeDef('Vree Shields')
 # print 'Multivectral Shields loaded'
