@@ -49,7 +49,7 @@ def GetLaunchSound():
 	return("VOR_LG_loop")
 
 def GetPowerCost():
-	return(100000.0)
+	return(1000.0)
 
 def GetName():
 	return("Vorlon Weapon")

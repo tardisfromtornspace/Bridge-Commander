@@ -356,8 +356,8 @@ class BabFiveVreeDef(FoundationTech.TechDef):
 		if pShields:
 			# Thanks, MLeoDaalder, for the tip!  -Dasher42
                         # ShieldDistributeNeg(pShip, pEvent.GetDamage())
-		 	# pShieldTotal = 0.0
-                        pShieldTotal = -pEvent.GetDamage()
+		 	pShieldTotal = 0.0
+                        # pShieldTotal = -pEvent.GetDamage()
 		 	for shieldDir in range(App.ShieldClass.NUM_SHIELDS):			#Calculate the total shieldpower
 		 		pShieldTotal = pShieldTotal+pShields.GetCurShields(shieldDir)
 		 	for shieldDir in range(App.ShieldClass.NUM_SHIELDS):
