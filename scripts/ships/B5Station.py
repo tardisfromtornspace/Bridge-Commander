@@ -22,8 +22,8 @@ def LoadModel(bPreLoad = 0):
 		# Search String for Glow, Search string for Specular, Suffix for specular
 		pLODModel = App.g_kLODModelManager.Create(pStats["Name"])
 		pLODModel.AddLOD(pStats["FilenameHigh"], 10, 1000.0, 15.0, 15.0, 400, 900, "_glow", None, "_specular")
-		pLODModel.AddLOD(pStats["FilenameMed"],  10, 1000.0, 15.0, 15.0, 400, 900, "_glow", None, "_specular")
-		pLODModel.AddLOD(pStats["FilenameLow"],  10, 1000.0, 15.0, 30.0, 400, 900, "_glow", None, None)
+		pLODModel.AddLOD(pStats["FilenameMed"],  10, 2000.0, 15.0, 15.0, 400, 900, "_glow", None, "_specular")
+		pLODModel.AddLOD(pStats["FilenameLow"],  10, 3000.0, 15.0, 30.0, 400, 900, "_glow", None, None)
 
 #		kDebugObj = App.CPyDebug()
 		if (bPreLoad == 0):
