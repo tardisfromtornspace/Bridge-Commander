@@ -18,7 +18,7 @@ Foundation.ShipDef.VOR_Cruiser = Foundation.ShipDef(abbrev, species, { 'name': l
 Foundation.ShipDef.VOR_Cruiser.dTechs = {'Breen Drainer Immune': 0}
 
 Foundation.ShipDef.VOR_Cruiser.desc = "The Vorlon cruiser was the largest and most powerful ship of the Vorlon fleet, save of course for the Vorlon planetkiller. Fast, powerful and very big, Vorlon Cruisers have seen to be more than a match for the Shadow Vessel and seems to only be vulnerable to overwhelming numbers though they have on occasion been seen to travel alone."
-
+Foundation.ShipDef.VOR_Cruiser.SubSubMenu = "Starships"
 
 if menuGroup:           Foundation.ShipDef.VOR_Cruiser.RegisterQBShipMenu(menuGroup)
 if playerMenuGroup:     Foundation.ShipDef.VOR_Cruiser.RegisterQBPlayerShipMenu(playerMenuGroup)

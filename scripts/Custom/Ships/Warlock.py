@@ -41,6 +41,7 @@ Foundation.ShipDef.Warlock = Foundation.ShipDef(abbrev, species, { 'name': longN
 Foundation.ShipDef.Warlock.dTechs = {
 	'Defense Grid': 195
 }
+Foundation.ShipDef.Warlock.SubSubMenu = "Capital Ships"
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

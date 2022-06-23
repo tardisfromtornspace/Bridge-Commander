@@ -49,6 +49,7 @@ Foundation.ShipDef.Primus.desc = 'The Primus class battle cruiser was a mainstay
 Foundation.ShipDef.Primus.dTechs = {
 	'Gravimetric Defense': 150
 }
+Foundation.ShipDef.Primus.SubSubMenu = "Capital ships"
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

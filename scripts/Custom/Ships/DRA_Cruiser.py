@@ -18,7 +18,7 @@ Foundation.ShipDef.DRA_Cruiser = Foundation.ShipDef(abbrev, species, { 'name': l
 
 
 Foundation.ShipDef.DRA_Cruiser.desc = "The Drakh cruiser was a vessel of unknown class used by the Drakh. The overall design of the vessel is essentially identical to the Drakh carrier, though on a much smaller scale. As with the carriers, the cruisers are typically accompanied by a number of Drakh fighters."
-
+Foundation.ShipDef.DRA_Cruiser.SubSubMenu = "Carriers"
 
 if menuGroup:           Foundation.ShipDef.DRA_Cruiser.RegisterQBShipMenu(menuGroup)
 if playerMenuGroup:     Foundation.ShipDef.DRA_Cruiser.RegisterQBPlayerShipMenu(playerMenuGroup)

@@ -18,7 +18,7 @@ Foundation.ShipDef.VOR_Fighter = Foundation.ShipDef(abbrev, species, { 'name': l
 Foundation.ShipDef.VOR_Fighter.dTechs = {'Breen Drainer Immune': 1}
 
 Foundation.ShipDef.VOR_Fighter.desc = "The Vorlon fighter was the Vorlons´ smallest known vessel and only known type of fighter. The Vorlon fighters appear to be able to create their own independent jump points into hyperspace. Fast, powerful and in numbers, these ships have been seen capable of overwhelming and destroying a Shadow Vessel."
-
+Foundation.ShipDef.VOR_Fighter.SubSubMenu = "Fighters"
 
 if menuGroup:           Foundation.ShipDef.VOR_Fighter.RegisterQBShipMenu(menuGroup)
 if playerMenuGroup:     Foundation.ShipDef.VOR_Fighter.RegisterQBPlayerShipMenu(playerMenuGroup)

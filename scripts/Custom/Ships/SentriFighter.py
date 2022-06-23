@@ -46,6 +46,7 @@ Foundation.ShipDef.SentriFighter = Foundation.ShipDef(abbrev, species, { 'name':
 #
 # Otherwise, uncomment this and type something in:
 Foundation.ShipDef.SentriFighter.desc = 'The Sentri class medium fighter is a fast but lightly armed aerospace fighter deployed by the Centauri military. House Tavari Armaments located at Hevaria Orbital Shipyards over Tolonius VII is responsible for manufacturing this class of vessel. Possessing greater maneuverability and acceleration than comparable craft such as the Earthforce Starfury, Centauri pilots have been known to perform drastic and stressful maneuvers that will cause them to pass out, passing control over to the autopilot to complete the maneuver and bring the fighter around to a superior tactical position.'
+Foundation.ShipDef.SentriFighter.SubSubMenu = "Fighters"
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

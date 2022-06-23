@@ -42,6 +42,7 @@ Foundation.ShipDef.EAOmegaX.dTechs = {
 	'Defense Grid': 150,
         'Shadow Dispersive Hull': 1
 }
+Foundation.ShipDef.EAOmegaX.SubSubMenu = "Capital Ships"
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

@@ -25,14 +25,27 @@ PolyCrystallineArmour = App.HullProperty_Create("PolyCrystalline Armour")
 
 PolyCrystallineArmour.SetMaxCondition(600.000000)
 PolyCrystallineArmour.SetCritical(0)
-PolyCrystallineArmour.SetTargetable(1)
+PolyCrystallineArmour.SetTargetable(0)
 PolyCrystallineArmour.SetPrimary(0)
-PolyCrystallineArmour.SetPosition(0.005609, 0.192146, -0.018743)
+PolyCrystallineArmour.SetPosition(0.000000, 0.172146, 0.018743)
 PolyCrystallineArmour.SetPosition2D(65.000000, 48.000000)
 PolyCrystallineArmour.SetRepairComplexity(1.000000)
 PolyCrystallineArmour.SetDisabledPercentage(0.500000)
 PolyCrystallineArmour.SetRadius(2.550000)
 App.g_kModelPropertyManager.RegisterLocalTemplate(PolyCrystallineArmour)
+#################################################
+Stealth = App.HullProperty_Create("Stealth")
+
+Stealth.SetMaxCondition(60.000000)
+Stealth.SetCritical(0)
+Stealth.SetTargetable(0)
+Stealth.SetPrimary(0)
+Stealth.SetPosition(0.000000, 5.572146, 8.018743)
+Stealth.SetPosition2D(65.000000, 48.000000)
+Stealth.SetRepairComplexity(1.000000)
+Stealth.SetDisabledPercentage(0.500000)
+Stealth.SetRadius(2.550000)
+App.g_kModelPropertyManager.RegisterLocalTemplate(Stealth)
 #################################################
 SensorArray = App.SensorProperty_Create("Sensor Array")
 
@@ -130,7 +143,7 @@ ForwardTorpedoRight.SetXYZ(1.000000, 0.000000, 0.000000)
 ForwardTorpedo.SetRight(ForwardTorpedoRight)
 App.g_kModelPropertyManager.RegisterLocalTemplate(ForwardTorpedo)
 #################################################
-Torpedoes = App.TorpedoSystemProperty_Create("Torpedoes")
+Torpedoes = App.TorpedoSystemProperty_Create("Vortex Generator")
 
 Torpedoes.SetMaxCondition(1500.000000)
 Torpedoes.SetCritical(0)
@@ -1113,6 +1126,34 @@ PolyCrystallineArmourPlating.SetShieldChargePerSecond(PolyCrystallineArmourPlati
 PolyCrystallineArmourPlating.SetShieldChargePerSecond(PolyCrystallineArmourPlating.LEFT_SHIELDS, 150.000000)
 PolyCrystallineArmourPlating.SetShieldChargePerSecond(PolyCrystallineArmourPlating.RIGHT_SHIELDS, 150.000000)
 App.g_kModelPropertyManager.RegisterLocalTemplate(PolyCrystallineArmourPlating)
+#################################################
+ShuttleBay1OEP = App.ObjectEmitterProperty_Create("Shuttle Bay 1 OEP")
+
+ShuttleBay1OEPForward = App.TGPoint3()
+ShuttleBay1OEPForward.SetXYZ(0.000000, 1.000000, 0.000000)
+ShuttleBay1OEPUp = App.TGPoint3()
+ShuttleBay1OEPUp.SetXYZ(0.000000, 0.000000, 1.000000)
+ShuttleBay1OEPRight = App.TGPoint3()
+ShuttleBay1OEPRight.SetXYZ(-0.219878, 0.968905, 0.113474)
+ShuttleBay1OEP.SetOrientation(ShuttleBay1OEPForward, ShuttleBay1OEPUp, ShuttleBay1OEPRight)
+ShuttleBay1OEPPosition = App.TGPoint3()
+ShuttleBay1OEPPosition.SetXYZ(0.000000, 1.580680, -0.300000)
+ShuttleBay1OEP.SetPosition(ShuttleBay1OEPPosition)
+ShuttleBay1OEP.SetEmittedObjectType(ShuttleBay1OEP.OEP_SHUTTLE)
+App.g_kModelPropertyManager.RegisterLocalTemplate(ShuttleBay1OEP)
+#################################################
+ShuttleBay1 = App.HullProperty_Create("Shuttle Bay 1")
+
+ShuttleBay1.SetMaxCondition(1300.000000)
+ShuttleBay1.SetCritical(0)
+ShuttleBay1.SetTargetable(1)
+ShuttleBay1.SetPrimary(0)
+ShuttleBay1.SetPosition(0.000000, 1.580680, -0.300000)
+ShuttleBay1.SetPosition2D(64.000000, 25.000000)
+ShuttleBay1.SetRepairComplexity(7.500000)
+ShuttleBay1.SetDisabledPercentage(0.000000)
+ShuttleBay1.SetRadius(1.300000)
+App.g_kModelPropertyManager.RegisterLocalTemplate(ShuttleBay1)
 
 # Property Set
 def LoadPropertySet(pObj):
@@ -1120,7 +1161,13 @@ def LoadPropertySet(pObj):
 	prop = App.g_kModelPropertyManager.FindByName("Hull", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
-        prop = App.g_kModelPropertyManager.FindByName("Torpedoes", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	prop = App.g_kModelPropertyManager.FindByName("PolyCrystalline Armour Plating", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	if (prop != None):
+		pObj.AddToSet("Scene Root", prop)
+	prop = App.g_kModelPropertyManager.FindByName("PolyCrystalline Armour", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	if (prop != None):
+		pObj.AddToSet("Scene Root", prop)
+        prop = App.g_kModelPropertyManager.FindByName("Vortex Generator", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
         prop = App.g_kModelPropertyManager.FindByName("Forward Torpedo", App.TGModelPropertyManager.LOCAL_TEMPLATES)
@@ -1207,9 +1254,9 @@ def LoadPropertySet(pObj):
 	prop = App.g_kModelPropertyManager.FindByName("MG Engine 2", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
-	prop = App.g_kModelPropertyManager.FindByName("PolyCrystalline Armour Plating", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	prop = App.g_kModelPropertyManager.FindByName("Shuttle Bay 1", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
-	prop = App.g_kModelPropertyManager.FindByName("PolyCrystalline Armour", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	prop = App.g_kModelPropertyManager.FindByName("Shuttle Bay 1 OEP", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)

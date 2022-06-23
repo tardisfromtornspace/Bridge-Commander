@@ -41,6 +41,7 @@ Foundation.ShipDef.Victory.dTechs = {
 	'Regenerative Shields': 30,
 	'Polarized Hull Plating': { "Plates": ["PlastiCrystalline Armour"]
 }}
+Foundation.ShipDef.Victory.SubSubMenu = "Destroyers"
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

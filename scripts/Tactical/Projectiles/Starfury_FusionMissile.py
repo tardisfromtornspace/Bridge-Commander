@@ -60,7 +60,7 @@ def Create(pTorp):
 	return(0)
 
 def GetLaunchSpeed():
-	return(69.0)
+	return(36.0)
 
 def GetLaunchSound():
 	return("EA_Torp1")
@@ -78,7 +78,7 @@ def GetGuidanceLifetime():
 	return 16.0
 
 def GetMaxAngularAccel():
-	return 1.05
+	return 0.95
 
 def IsRocket():
 	return 1

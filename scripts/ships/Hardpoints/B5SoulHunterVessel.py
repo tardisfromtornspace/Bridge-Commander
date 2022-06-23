@@ -283,7 +283,7 @@ B5SoulHunterVessel = App.ShipProperty_Create("B5SoulHunterVessel")
 
 B5SoulHunterVessel.SetGenus(1)
 B5SoulHunterVessel.SetSpecies(103)
-B5SoulHunterVessel.SetMass(70.000000)
+B5SoulHunterVessel.SetMass(150.000000)
 B5SoulHunterVessel.SetRotationalInertia(8000.000000)
 B5SoulHunterVessel.SetShipName("B5SoulHunterVessel")
 B5SoulHunterVessel.SetModelFilename("data/Models/Ships/DRA_Raider.nif")

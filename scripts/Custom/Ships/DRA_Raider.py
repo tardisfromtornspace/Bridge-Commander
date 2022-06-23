@@ -18,7 +18,7 @@ Foundation.ShipDef.DRA_Raider = Foundation.ShipDef(abbrev, species, { 'name': lo
 
 
 Foundation.ShipDef.DRA_Raider.desc = "The Drakh fighter was a large fighter vessel used by the Drakh. Ships of this type are carried into the battle usually by large carriers or cruisers. Two of these vessels are capable of shooting down a White Star with just a few direct hits."
-
+Foundation.ShipDef.DRA_Raider.SubSubMenu = "Fighters"
 
 if menuGroup:           Foundation.ShipDef.DRA_Raider.RegisterQBShipMenu(menuGroup)
 if playerMenuGroup:     Foundation.ShipDef.DRA_Raider.RegisterQBPlayerShipMenu(playerMenuGroup)

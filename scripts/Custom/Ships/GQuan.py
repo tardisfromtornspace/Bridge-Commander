@@ -18,7 +18,7 @@ Foundation.ShipDef.GQuan = Foundation.ShipDef(abbrev, species, { 'name': longNam
 
 
 Foundation.ShipDef.GQuan.desc = "G´Quan class heavy cruisers were the backbone of the Narn Regime´s naval forces up until their defeat by the Centauri Republic in 2259. Ma´Kan Industries located at Wings of G´Lan facility over Narn is responsible for manufactoring this class of vessel. "
-
+Foundation.ShipDef.GQuan.SubSubMenu = "Capital ships"
 
 if menuGroup:           Foundation.ShipDef.GQuan.RegisterQBShipMenu(menuGroup)
 if playerMenuGroup:     Foundation.ShipDef.GQuan.RegisterQBPlayerShipMenu(playerMenuGroup)

@@ -19,6 +19,7 @@ Foundation.ShipDef.Shadow_Fighter5.dTechs = { "Phase Cloak": 10, 'Breen Drainer 
 Foundation.ShipDef.Shadow_Fighter5.desc = "The Shadow Fighter was the standard fighter used by the Shadows. Shadow fighters are extremely tough, fast and powerful. It appears to feature the same resilient, blast refracting material as the larger Shadow Vessels. The squat, spiky body of the Shadow Fighter is built around a central pulse cannon which, when fired causes the entire craft to convulse, appearing to 'spit' as it discharges the weapon. More than capable of holding its own against most fighters used by the Younger Races, the only non-First One fighter seen to outmatch the Shadow Fighter was the early White Star prototype."
 Foundation.ShipDef.Shadow_Fighter5.CloakingSFX = "shadowscream"
 Foundation.ShipDef.Shadow_Fighter5.DeCloakingSFX = "shadowscream"
+Foundation.ShipDef.Shadow_Fighter5.SubSubMenu = "Fighters"
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

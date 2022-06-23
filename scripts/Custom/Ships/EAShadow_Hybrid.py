@@ -19,7 +19,7 @@ Foundation.ShipDef.EAShadow_Hybrid = Foundation.ShipDef(abbrev, species, { 'name
 Foundation.ShipDef.EAShadow_Hybrid.dTechs = {'Breen Drainer Immune': 1}
 
 Foundation.ShipDef.EAShadow_Hybrid.desc = "A Shadow Hybrid was a prototype starship based on Shadow technology, built by a secret division of Earthforce. It was the first ship to have original Shadow technology in cooperation with Earth Alliance capabilities, equipped with a hybrid version of the Shadow Pulse Ray. In 2259, one such ship was witnessed to have destroyed the EAS Cerberus, leaving then Ensign Matthew Gideon as the only survivor."
-
+Foundation.ShipDef.EAShadow_Hybrid.SubSubMenu = "Prototypes"
 
 if menuGroup:           Foundation.ShipDef.EAShadow_Hybrid.RegisterQBShipMenu(menuGroup)
 if playerMenuGroup:     Foundation.ShipDef.EAShadow_Hybrid.RegisterQBPlayerShipMenu(playerMenuGroup)

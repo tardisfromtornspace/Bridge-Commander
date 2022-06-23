@@ -21,6 +21,7 @@ Foundation.ShipDef.Vorchan.desc = "The Vorchan class medium warship is one of th
 Foundation.ShipDef.Vorchan.dTechs = {
 	'Gravimetric Defense': 180
 }
+Foundation.ShipDef.Vorchan.SubSubMenu = "Capital ships"
 
 if menuGroup:           Foundation.ShipDef.Vorchan.RegisterQBShipMenu(menuGroup)
 if playerMenuGroup:     Foundation.ShipDef.Vorchan.RegisterQBPlayerShipMenu(playerMenuGroup)

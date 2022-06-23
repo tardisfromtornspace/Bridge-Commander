@@ -19,7 +19,7 @@ Foundation.ShipDef.VOR_Planetkiller.dTechs = {'Breen Drainer Immune': 1}
 Foundation.ShipDef.VOR_Planetkiller.bPlanetKiller = 1
 
 Foundation.ShipDef.VOR_Planetkiller.desc = "The Vorlon planet killer was an enormous type of ship used by the Vorlon Empire to destroy entire planets. The planet killers were first discovered by the younger races in 2261 when White Star 2 detected a fleet of thousands of ships led by two planet killers in Hyperspace in Sector 70 by 10 by 53. Shortly afterwards the fleet moved in on Arcata VII and the planet was reduced to rubble."
-
+Foundation.ShipDef.VOR_Planetkiller.SubSubMenu = "Doomsday ships"
 
 if menuGroup:           Foundation.ShipDef.VOR_Planetkiller.RegisterQBShipMenu(menuGroup)
 if playerMenuGroup:     Foundation.ShipDef.VOR_Planetkiller.RegisterQBPlayerShipMenu(playerMenuGroup)

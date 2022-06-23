@@ -22,6 +22,7 @@ Foundation.ShipDef.Shadow_FighterBall.dTechs = { "Phase Cloak": 10, 'Breen Drain
 Foundation.ShipDef.Shadow_FighterBall.desc = "The Shadow Battlecrabs don't throw Fighters one by one, but in a great bundled group."
 Foundation.ShipDef.Shadow_FighterBall.CloakingSFX = "shadowscream"
 Foundation.ShipDef.Shadow_FighterBall.DeCloakingSFX = "shadowscream"
+Foundation.ShipDef.Shadow_FighterBall.SubSubMenu = "Fighters"
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

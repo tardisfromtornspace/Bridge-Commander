@@ -48,6 +48,7 @@ Foundation.ShipDef.ThNor = Foundation.ShipDef(abbrev, species, { 'name': longNam
 # Otherwise, uncomment this and type something in:                                    #
 #                                                                                     #
 Foundation.ShipDef.ThNor.desc = 'The Th´Nor Narn Cruiser is used by the Narn Regime and manufactured by Ma´Kan Industries on the Wings of G´Lan Orbital facility over Narn. Although these ships are technologically out-of-date in comparison with newer models such as the G´Quan class, they remain formidable.'
+Foundation.ShipDef.ThNor.SubSubMenu = "Capital ships"
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

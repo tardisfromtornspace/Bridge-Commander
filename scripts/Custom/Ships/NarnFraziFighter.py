@@ -18,7 +18,7 @@ Foundation.ShipDef.NarnFraziFighter = Foundation.ShipDef(abbrev, species, { 'nam
 
 
 Foundation.ShipDef.NarnFraziFighter.desc = "The Frazi class heavy fighter was the predominant class of fighter spacecraft utilized by the Narn Regime and was manufactured by Ma'Kan Industries at the Wings of G'Lan Orbital facility over Narn."
-
+Foundation.ShipDef.NarnFraziFighter.SubSubMenu = "Fighters"
 
 if menuGroup:           Foundation.ShipDef.NarnFraziFighter.RegisterQBShipMenu(menuGroup)
 if playerMenuGroup:     Foundation.ShipDef.NarnFraziFighter.RegisterQBPlayerShipMenu(playerMenuGroup)

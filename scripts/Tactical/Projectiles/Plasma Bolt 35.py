@@ -28,7 +28,7 @@ def Create(pTorp):
 
 	pTorp.CreateDisruptorModel(kOuterShellColor,kOuterCoreColor, 0.025, 0.005) 	
 	pTorp.SetDamage( GetDamage() )
-	pTorp.SetDamageRadiusFactor(0.020)
+	pTorp.SetDamageRadiusFactor(0.005)
 	pTorp.SetGuidanceLifetime( GetGuidanceLifetime() )
 	pTorp.SetMaxAngularAccel( GetMaxAngularAccel() )
 	pTorp.SetLifetime( GetLifetime() )

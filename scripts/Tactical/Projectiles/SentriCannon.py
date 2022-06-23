@@ -44,7 +44,7 @@ def GetLaunchSpeed():
 	return(90.0)
 
 def GetLaunchSound():
-	return("CentCannon")
+	return("CentSentriCannon")
 
 def GetPowerCost():
 	return(10.0)

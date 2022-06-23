@@ -8,7 +8,7 @@ import GlobalPropertyTemplates
 #################################################
 Hull = App.HullProperty_Create("Hull")
 
-Hull.SetMaxCondition(1500.000000)
+Hull.SetMaxCondition(1450.000000)
 Hull.SetCritical(1)
 Hull.SetTargetable(0)
 Hull.SetPrimary(1)
@@ -21,7 +21,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(Hull)
 #################################################
 QuantumGraviticEngines = App.ImpulseEngineProperty_Create("Quantum Gravitic Engines")
 
-QuantumGraviticEngines.SetMaxCondition(6000.000000)
+QuantumGraviticEngines.SetMaxCondition(1000.000000)
 QuantumGraviticEngines.SetCritical(0)
 QuantumGraviticEngines.SetTargetable(0)
 QuantumGraviticEngines.SetPrimary(1)
@@ -40,7 +40,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(QuantumGraviticEngines)
 #################################################
 MicroQuantumGraviticReactor = App.PowerProperty_Create("Micro Quantum Gravitic Reactor")
 
-MicroQuantumGraviticReactor.SetMaxCondition(5500.000000)
+MicroQuantumGraviticReactor.SetMaxCondition(1000.000000)
 MicroQuantumGraviticReactor.SetCritical(1)
 MicroQuantumGraviticReactor.SetTargetable(0)
 MicroQuantumGraviticReactor.SetPrimary(1)
@@ -74,7 +74,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(RegenerationSystem)
 #################################################
 SensorArray = App.SensorProperty_Create("Sensor Array")
 
-SensorArray.SetMaxCondition(7000.000000)
+SensorArray.SetMaxCondition(1000.000000)
 SensorArray.SetCritical(0)
 SensorArray.SetTargetable(0)
 SensorArray.SetPrimary(1)
@@ -120,7 +120,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(ShieldGenerator)
 #################################################
 VortexGenerator = App.WarpEngineProperty_Create("Vortex Generator")
 
-VortexGenerator.SetMaxCondition(10000.000000)
+VortexGenerator.SetMaxCondition(1000.000000)
 VortexGenerator.SetCritical(0)
 VortexGenerator.SetTargetable(0)
 VortexGenerator.SetPrimary(1)
@@ -134,7 +134,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(VortexGenerator)
 #################################################
 CloakingDevice = App.CloakingSubsystemProperty_Create("Cloaking Device")
 
-CloakingDevice.SetMaxCondition(2000.000000)
+CloakingDevice.SetMaxCondition(1000.000000)
 CloakingDevice.SetCritical(0)
 CloakingDevice.SetTargetable(1)
 CloakingDevice.SetPrimary(1)
@@ -149,7 +149,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(CloakingDevice)
 #################################################
 FwdTorpedo = App.TorpedoTubeProperty_Create("Fwd Torpedo")
 
-FwdTorpedo.SetMaxCondition(2200.000000)
+FwdTorpedo.SetMaxCondition(1000.000000)
 FwdTorpedo.SetCritical(0)
 FwdTorpedo.SetTargetable(1)
 FwdTorpedo.SetPrimary(1)
@@ -179,7 +179,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(FwdTorpedo)
 #################################################
 GraviticEngine = App.EngineProperty_Create("Gravitic Engine")
 
-GraviticEngine.SetMaxCondition(6000.000000)
+GraviticEngine.SetMaxCondition(1100.000000)
 GraviticEngine.SetCritical(0)
 GraviticEngine.SetTargetable(0)
 GraviticEngine.SetPrimary(1)
@@ -193,7 +193,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(GraviticEngine)
 #################################################
 StarImpulse = App.EngineProperty_Create("Star Impulse")
 
-StarImpulse.SetMaxCondition(2200.000000)
+StarImpulse.SetMaxCondition(1100.000000)
 StarImpulse.SetCritical(0)
 StarImpulse.SetTargetable(1)
 StarImpulse.SetPrimary(1)
@@ -207,7 +207,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(StarImpulse)
 #################################################
 PortJumpEngine = App.EngineProperty_Create("Jumpspace Drive 1")
 
-PortJumpEngine.SetMaxCondition(4000.000000)
+PortJumpEngine.SetMaxCondition(1050.000000)
 PortJumpEngine.SetCritical(0)
 PortJumpEngine.SetTargetable(0)
 PortJumpEngine.SetPrimary(1)
@@ -221,7 +221,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(PortJumpEngine)
 #################################################
 StarboardJumpEngine = App.EngineProperty_Create("Jumpspace Drive 2")
 
-StarboardJumpEngine.SetMaxCondition(4000.000000)
+StarboardJumpEngine.SetMaxCondition(1050.000000)
 StarboardJumpEngine.SetCritical(0)
 StarboardJumpEngine.SetTargetable(0)
 StarboardJumpEngine.SetPrimary(1)
@@ -235,7 +235,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(StarboardJumpEngine)
 #################################################
 AftTorpedo = App.TorpedoTubeProperty_Create("Aft Torpedo")
 
-AftTorpedo.SetMaxCondition(2200.000000)
+AftTorpedo.SetMaxCondition(990.000000)
 AftTorpedo.SetCritical(0)
 AftTorpedo.SetTargetable(1)
 AftTorpedo.SetPrimary(1)
@@ -265,7 +265,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(AftTorpedo)
 #################################################
 Tractors = App.WeaponSystemProperty_Create("Tractors")
 
-Tractors.SetMaxCondition(2400.000000)
+Tractors.SetMaxCondition(990.000000)
 Tractors.SetCritical(0)
 Tractors.SetTargetable(0)
 Tractors.SetPrimary(1)
@@ -285,9 +285,9 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(Tractors)
 #################################################
 AftTractor = App.TractorBeamProperty_Create("Aft Tractor")
 
-AftTractor.SetMaxCondition(1200.000000)
+AftTractor.SetMaxCondition(990.000000)
 AftTractor.SetCritical(0)
-AftTractor.SetTargetable(1)
+AftTractor.SetTargetable(0)
 AftTractor.SetPrimary(1)
 AftTractor.SetPosition(0.000000, -0.500000, 0.200000)
 AftTractor.SetPosition2D(39, 72)
@@ -319,7 +319,7 @@ AftTractorUp.SetXYZ(0.000000, 0.000000, 1.000000)
 AftTractor.SetOrientation(AftTractorForward, AftTractorUp)
 AftTractor.SetArcWidthAngles(-0.523599, 0.523599)
 AftTractor.SetArcHeightAngles(-0.523599, 0.523599)
-AftTractor.SetTractorBeamWidth(0.300000)
+AftTractor.SetTractorBeamWidth(0.001000)
 AftTractor.SetTextureStart(0)
 AftTractor.SetTextureEnd(0)
 AftTractor.SetTextureName("data/Textures/Tactical/TractorBeam.tga")
@@ -333,8 +333,8 @@ AftTractor.SetOuterCoreColor(kColor)
 kColor.SetRGBA(0.400000, 0.400000, 1.000000, 1.000000)
 AftTractor.SetInnerCoreColor(kColor)
 AftTractor.SetNumSides(12)
-AftTractor.SetMainRadius(0.075000)
-AftTractor.SetTaperRadius(0.000000)
+AftTractor.SetMainRadius(0.015000)
+AftTractor.SetTaperRadius(0.015000)
 AftTractor.SetCoreScale(0.450000)
 AftTractor.SetTaperRatio(0.200000)
 AftTractor.SetTaperMinLength(1.000000)
@@ -362,9 +362,9 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(Bluestar)
 #################################################
 ForwardTractor = App.TractorBeamProperty_Create("Forward Tractor")
 
-ForwardTractor.SetMaxCondition(1200.000000)
+ForwardTractor.SetMaxCondition(960.000000)
 ForwardTractor.SetCritical(0)
-ForwardTractor.SetTargetable(1)
+ForwardTractor.SetTargetable(0)
 ForwardTractor.SetPrimary(1)
 ForwardTractor.SetPosition(0.000000, 1.500000, -0.180000)
 ForwardTractor.SetPosition2D(90, 72)
@@ -396,7 +396,7 @@ ForwardTractorUp.SetXYZ(0.000000, 0.000000, 1.000000)
 ForwardTractor.SetOrientation(ForwardTractorForward, ForwardTractorUp)
 ForwardTractor.SetArcWidthAngles(-0.523599, 0.523599)
 ForwardTractor.SetArcHeightAngles(-1.047198, 0.000000)
-ForwardTractor.SetTractorBeamWidth(0.300000)
+ForwardTractor.SetTractorBeamWidth(0.001000)
 ForwardTractor.SetTextureStart(0)
 ForwardTractor.SetTextureEnd(0)
 ForwardTractor.SetTextureName("data/Textures/Tactical/TractorBeam.tga")
@@ -410,8 +410,8 @@ ForwardTractor.SetOuterCoreColor(kColor)
 kColor.SetRGBA(0.400000, 0.400000, 1.000000, 1.000000)
 ForwardTractor.SetInnerCoreColor(kColor)
 ForwardTractor.SetNumSides(12)
-ForwardTractor.SetMainRadius(0.075000)
-ForwardTractor.SetTaperRadius(0.000000)
+ForwardTractor.SetMainRadius(0.015000)
+ForwardTractor.SetTaperRadius(0.015000)
 ForwardTractor.SetCoreScale(0.450000)
 ForwardTractor.SetTaperRatio(0.200000)
 ForwardTractor.SetTaperMinLength(1.000000)
@@ -522,7 +522,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(FirstPersonCamera)
 #################################################
 PulseWeapons = App.WeaponSystemProperty_Create("Pulse Weapons")
 
-PulseWeapons.SetMaxCondition(6000.000000)
+PulseWeapons.SetMaxCondition(1300.000000)
 PulseWeapons.SetCritical(0)
 PulseWeapons.SetTargetable(0)
 PulseWeapons.SetPrimary(1)
@@ -542,7 +542,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(PulseWeapons)
 #################################################
 FusionGun1 = App.PulseWeaponProperty_Create("Fusion Gun 1")
 
-FusionGun1.SetMaxCondition(5000.000000)
+FusionGun1.SetMaxCondition(900.000000)
 FusionGun1.SetCritical(0)
 FusionGun1.SetTargetable(0)
 FusionGun1.SetPrimary(1)
@@ -582,7 +582,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(FusionGun1)
 #################################################
 Cannon3 = App.PulseWeaponProperty_Create("Cannon 3")
 
-Cannon3.SetMaxCondition(1000.000000)
+Cannon3.SetMaxCondition(900.000000)
 Cannon3.SetCritical(0)
 Cannon3.SetTargetable(1)
 Cannon3.SetPrimary(1)
@@ -622,7 +622,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(Cannon3)
 #################################################
 Cannon4 = App.PulseWeaponProperty_Create("Cannon 4")
 
-Cannon4.SetMaxCondition(1000.000000)
+Cannon4.SetMaxCondition(900.000000)
 Cannon4.SetCritical(0)
 Cannon4.SetTargetable(1)
 Cannon4.SetPrimary(1)
@@ -662,7 +662,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(Cannon4)
 #################################################
 Cannon5 = App.PulseWeaponProperty_Create("Cannon 5")
 
-Cannon5.SetMaxCondition(1000.000000)
+Cannon5.SetMaxCondition(900.000000)
 Cannon5.SetCritical(0)
 Cannon5.SetTargetable(1)
 Cannon5.SetPrimary(1)
@@ -702,7 +702,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(Cannon5)
 #################################################
 Autopilot = App.TorpedoSystemProperty_Create("Autopilot")
 
-Autopilot.SetMaxCondition(8000.000000)
+Autopilot.SetMaxCondition(1200.000000)
 Autopilot.SetCritical(0)
 Autopilot.SetTargetable(0)
 Autopilot.SetPrimary(1)
@@ -725,7 +725,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(Autopilot)
 #################################################
 PortThruster = App.EngineProperty_Create("Port Thruster")
 
-PortThruster.SetMaxCondition(6000.000000)
+PortThruster.SetMaxCondition(900.000000)
 PortThruster.SetCritical(0)
 PortThruster.SetTargetable(0)
 PortThruster.SetPrimary(1)
@@ -739,7 +739,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(PortThruster)
 #################################################
 StarboardThruster = App.EngineProperty_Create("Starboard Thruster")
 
-StarboardThruster.SetMaxCondition(6000.000000)
+StarboardThruster.SetMaxCondition(900.000000)
 StarboardThruster.SetCritical(0)
 StarboardThruster.SetTargetable(0)
 StarboardThruster.SetPrimary(1)
@@ -753,7 +753,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(StarboardThruster)
 #################################################
 FusionGun2 = App.PulseWeaponProperty_Create("Fusion Gun 2")
 
-FusionGun2.SetMaxCondition(5000.000000)
+FusionGun2.SetMaxCondition(900.000000)
 FusionGun2.SetCritical(0)
 FusionGun2.SetTargetable(0)
 FusionGun2.SetPrimary(1)
@@ -793,7 +793,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(FusionGun2)
 #################################################
 VortexGen = App.TorpedoTubeProperty_Create("Vortex Generator Weapon")
 
-VortexGen.SetMaxCondition(1400.000000)
+VortexGen.SetMaxCondition(1200.000000)
 VortexGen.SetCritical(0)
 VortexGen.SetTargetable(0)
 VortexGen.SetPrimary(1)
@@ -825,6 +825,9 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(VortexGen)
 def LoadPropertySet(pObj):
 	"Sets up the object's properties."
 	prop = App.g_kModelPropertyManager.FindByName("Hull", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	if (prop != None):
+		pObj.AddToSet("Scene Root", prop)
+	prop = App.g_kModelPropertyManager.FindByName("Shield Generator", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
 	prop = App.g_kModelPropertyManager.FindByName("Sensor Array", App.TGModelPropertyManager.LOCAL_TEMPLATES)
@@ -899,6 +902,12 @@ def LoadPropertySet(pObj):
 	prop = App.g_kModelPropertyManager.FindByName("Bluestar", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
-	prop = App.g_kModelPropertyManager.FindByName("Shield Generator", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	prop = App.g_kModelPropertyManager.FindByName("Tractors", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	if (prop != None):
+		pObj.AddToSet("Scene Root", prop)
+	prop = App.g_kModelPropertyManager.FindByName("Forward Tractor", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	if (prop != None):
+		pObj.AddToSet("Scene Root", prop)
+	prop = App.g_kModelPropertyManager.FindByName("Aft Tractor", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)

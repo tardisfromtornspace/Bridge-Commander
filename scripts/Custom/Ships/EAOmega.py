@@ -41,6 +41,7 @@ Foundation.ShipDef.EAOmega = Foundation.ShipDef(abbrev, species, { 'name': longN
 Foundation.ShipDef.EAOmega.dTechs = {
 	'Defense Grid': 150
 }
+Foundation.ShipDef.EAOmega.SubSubMenu = "Capital Ships"
 #                                                                                     #
 #######################################################################################
 #                                                                                     #
