@@ -17,7 +17,7 @@ class Warlock(Carrier.Carrier):
                group.AddLauncher('Shuttle Bay 1', launcher1)
 
 
-               launcher1.AddLaunchable('EAStarfury', 'ftb.friendlyAI', 12)
+               launcher1.AddLaunchable('EAStarfury', 'Custom.Sneaker.Mvam.MvamAI', 12)
 
 
                self.AddLauncher('Group 1', group)

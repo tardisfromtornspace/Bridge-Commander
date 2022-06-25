@@ -16,7 +16,7 @@ class B5Station( Carrier.Carrier):
         LauncherManager = __import__( "ftb.LauncherManager")
         launcher = LauncherManager.GetLauncher( "Shuttle Bay 1", pShip)
         group.AddLauncher( "Shuttle Bay 1", launcher)
-        launcher.AddLaunchable( "AlphaWing", "ftb.friendlyAI", 7)
+        launcher.AddLaunchable( "AlphaWing", "Custom.Sneaker.Mvam.MvamAI", 7)
 
         launcher = LauncherManager.GetLauncher( "Shuttle Bay 2", pShip)
         group.AddLauncher( "Shuttle Bay 2", launcher)
@@ -24,7 +24,7 @@ class B5Station( Carrier.Carrier):
         
         launcher = LauncherManager.GetLauncher( "Shuttle Bay 3", pShip)
         group.AddLauncher( "Shuttle Bay 3", launcher)
-        launcher.AddLaunchable( "DeltaWing", "ftb.friendlyAI", 7)
+        launcher.AddLaunchable( "DeltaWing", "Custom.Sneaker.Mvam.MvamAI", 7)
 
         launcher = LauncherManager.GetLauncher( "Shuttle Bay 4", pShip)
         group.AddLauncher( "Shuttle Bay 4", launcher)

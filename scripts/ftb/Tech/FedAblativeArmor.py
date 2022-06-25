@@ -284,7 +284,7 @@ class PolarizedHullPlatingDef(FoundationTech.TechDef):
 				dOldConditions[pProtectingPlate.GetName()] = 1.0
                         fOldCondition2 = dOldConditions[pProtectingPlate.GetName()]
                         fDiff2 = 1 - fOldCondition2 + fDamage / pProtectingPlate.GetMaxCondition()
-                        fNewCondition2 = fOldCondition2 - 0.5 * fDiff2 / len(lAffectedSystems)
+                        fNewCondition2 = fOldCondition2 - 0.5 * fDiff2 / (len(lAffectedSystems) + 1)
                         pProtectingPlate.SetConditionPercentage(fNewCondition2)
                         dOldConditions[pProtectingPlate.GetName()] = fNewCondition2
 

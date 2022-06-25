@@ -14,11 +14,12 @@ species = App.SPECIES_SHUTTLE
 menuGroup = "Babylon 5"
 playerMenuGroup = "Babylon 5"
 SubMenu = "Narn Regime"
-Foundation.ShipDef.NarnFraziFighter = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
+SubSubMenu = "Fighters"
+
+Foundation.ShipDef.NarnFraziFighter = Foundation.FedShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu, "SubSubMenu": SubSubMenu })
 
 
 Foundation.ShipDef.NarnFraziFighter.desc = "The Frazi class heavy fighter was the predominant class of fighter spacecraft utilized by the Narn Regime and was manufactured by Ma'Kan Industries at the Wings of G'Lan Orbital facility over Narn."
-Foundation.ShipDef.NarnFraziFighter.SubSubMenu = "Fighters"
 
 if menuGroup:           Foundation.ShipDef.NarnFraziFighter.RegisterQBShipMenu(menuGroup)
 if playerMenuGroup:     Foundation.ShipDef.NarnFraziFighter.RegisterQBPlayerShipMenu(playerMenuGroup)

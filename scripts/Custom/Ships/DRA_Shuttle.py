@@ -14,11 +14,12 @@ species = App.SPECIES_SHUTTLE
 menuGroup = "Babylon 5"
 playerMenuGroup = "Babylon 5"
 SubMenu = "Drakh Horde"
-Foundation.ShipDef.DRA_Shuttle = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
+SubSubMenu = "Shuttles"
+Foundation.ShipDef.DRA_Shuttle = Foundation.FedShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu, "SubSubMenu": SubSubMenu })
 
 
 Foundation.ShipDef.DRA_Shuttle.desc = "The Drakh shuttle (also refereed to as a life-pod) was a type of vessel used by the Drakh to transport personnel between larger ships. In 2261, a Drakh emissary took a shuttle to board Delenn's White Star to parley following a series of attacks on League ships."
-Foundation.ShipDef.DRA_Shuttle.SubSubMenu = "Shuttles"
+
 
 if menuGroup:           Foundation.ShipDef.DRA_Shuttle.RegisterQBShipMenu(menuGroup)
 if playerMenuGroup:     Foundation.ShipDef.DRA_Shuttle.RegisterQBPlayerShipMenu(playerMenuGroup)

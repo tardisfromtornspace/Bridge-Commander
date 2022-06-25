@@ -266,7 +266,7 @@ VOR_Cruiser.SetModelFilename("data/Models/Ships/VOR_Cruiser/VOR_Cruiser.nif")
 VOR_Cruiser.SetDamageResolution(8.000000)
 VOR_Cruiser.SetAffiliation(0)
 VOR_Cruiser.SetStationary(0)
-VOR_Cruiser.SetAIString("FedAttack")
+VOR_Cruiser.SetAIString("NonFedAttack")
 VOR_Cruiser.SetDeathExplosionSound("g_lsDeathExplosions")
 App.g_kModelPropertyManager.RegisterLocalTemplate(VOR_Cruiser)
 #################################################

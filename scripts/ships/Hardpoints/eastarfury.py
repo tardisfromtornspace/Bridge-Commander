@@ -19,6 +19,19 @@ Hull.SetDisabledPercentage(0.500000)
 Hull.SetRadius(0.075000)
 App.g_kModelPropertyManager.RegisterLocalTemplate(Hull)
 #################################################
+Cockpit = App.HullProperty_Create("Cockpit")
+
+Cockpit.SetMaxCondition(22.000000)
+Cockpit.SetCritical(1)
+Cockpit.SetTargetable(1)
+Cockpit.SetPrimary(0)
+Cockpit.SetPosition(0.000000, 0.230744, 0.000000)
+Cockpit.SetPosition2D(65.000000, 55.000000)
+Cockpit.SetRepairComplexity(15.000000)
+Cockpit.SetDisabledPercentage(0.500000)
+Cockpit.SetRadius(0.075000)
+App.g_kModelPropertyManager.RegisterLocalTemplate(Cockpit)
+#################################################
 PowerPlant = App.PowerProperty_Create("Power Plant")
 
 PowerPlant.SetMaxCondition(16.000000)
@@ -57,7 +70,7 @@ Shields = App.ShieldProperty_Create("Shields")
 
 Shields.SetMaxCondition(5.000000)
 Shields.SetCritical(0)
-Shields.SetTargetable(1)
+Shields.SetTargetable(0)
 Shields.SetPrimary(1)
 Shields.SetPosition(0.000000, 0.000000, 0.000000)
 Shields.SetPosition2D(65.000000, 65.000000)
@@ -799,6 +812,9 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(GraplingClaw)
 def LoadPropertySet(pObj):
 	"Sets up the object's properties."
 	prop = App.g_kModelPropertyManager.FindByName("Hull", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	if (prop != None):
+		pObj.AddToSet("Scene Root", prop)
+	prop = App.g_kModelPropertyManager.FindByName("Cockpit", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
 	prop = App.g_kModelPropertyManager.FindByName("Power Plant", App.TGModelPropertyManager.LOCAL_TEMPLATES)

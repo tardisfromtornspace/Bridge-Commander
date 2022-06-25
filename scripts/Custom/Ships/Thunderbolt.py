@@ -17,6 +17,7 @@ menuGroup = 'Babylon 5'
 playerMenuGroup = 'Babylon 5'
 species = App.SPECIES_GALAXY
 SubMenu = "Earth Alliance"
+SubSubMenu = "Fighters"
 #                                                                                     #
 #######################################################################################
 #                                                                                     #
@@ -36,8 +37,7 @@ credits = {
 # This is the ShipDef that adds the Ship to the game... BC-Mod Packager has           #
 # automatically generated the proper ShipDef Line for you.                            #
 #                                                                                     #
-Foundation.ShipDef.Thunderbolt = Foundation.FerengiShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
-Foundation.ShipDef.Thunderbolt.SubSubMenu = "Fighters"
+Foundation.ShipDef.Thunderbolt = Foundation.FedShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu, "SubSubMenu": SubSubMenu })
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

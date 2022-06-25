@@ -14,11 +14,13 @@ species = App.SPECIES_SOVEREIGN
 menuGroup = "Babylon 5"
 playerMenuGroup = "Babylon 5"
 SubMenu = "Vorlon Empire"
-Foundation.ShipDef.VOR_Destroyer = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
+SubSubMenu = "Starships"
+
+Foundation.ShipDef.VOR_Destroyer = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu, "SubSubMenu": SubSubMenu })
 Foundation.ShipDef.VOR_Destroyer.dTechs = {'Breen Drainer Immune': 1}
 
 Foundation.ShipDef.VOR_Destroyer.desc = "The Vorlon Transport, or Destroyer, is a class of ship in use by the Vorlon Empire, sometimes to transport diplomats to various locations, and to guard the frontiers of Vorlon Space. Vorlon Transports have been known to easily destroy Shadow Battlecrabs alone with sustained fire."
-Foundation.ShipDef.VOR_Destroyer.SubSubMenu = "Starships"
+
 
 if menuGroup:           Foundation.ShipDef.VOR_Destroyer.RegisterQBShipMenu(menuGroup)
 if playerMenuGroup:     Foundation.ShipDef.VOR_Destroyer.RegisterQBPlayerShipMenu(playerMenuGroup)

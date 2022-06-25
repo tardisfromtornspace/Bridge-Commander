@@ -20,7 +20,7 @@ class EAOmega(Carrier.Carrier):
                launcher1.AddLaunchable('Thunderbolt', 'ftb.friendlyAI', 6)
 
 
-               launcher1.AddLaunchable('EAStarfury', 'ftb.friendlyAI', 6)
+               launcher1.AddLaunchable('EAStarfury', 'Custom.Sneaker.Mvam.MvamAI', 6)
 
 
                self.AddLauncher('Group 1', group)

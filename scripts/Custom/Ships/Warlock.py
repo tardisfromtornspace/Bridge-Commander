@@ -17,6 +17,7 @@ menuGroup = 'Babylon 5'
 playerMenuGroup = 'Babylon 5'
 SubMenu = "Earth Alliance"
 species = App.SPECIES_GALAXY
+SubSubMenu = "Capital Ships"
 #                                                                                     #
 #######################################################################################
 #                                                                                     #
@@ -36,12 +37,11 @@ credits = {
 # This is the ShipDef that adds the Ship to the game... BC-Mod Packager has           #
 # automatically generated the proper ShipDef Line for you.                            #
 #                                                                                     #
-Foundation.ShipDef.Warlock = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
+Foundation.ShipDef.Warlock = Foundation.FedShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu, "SubSubMenu": SubSubMenu })
 
 Foundation.ShipDef.Warlock.dTechs = {
 	'Defense Grid': 195
 }
-Foundation.ShipDef.Warlock.SubSubMenu = "Capital Ships"
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

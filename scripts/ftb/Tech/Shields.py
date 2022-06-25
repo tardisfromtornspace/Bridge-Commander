@@ -344,12 +344,12 @@ class BabFiveVreeDef(FoundationTech.TechDef):
 
 	def OnDefense(self, pShip, pInstance, oYield, pEvent):
 		debug(__name__ + ", OnDefense")
-		# if pEvent.IsHullHit():
-		#	return
-
 		if oYield:
 		 	if oYield.IsPhaseYield() or oYield.IsDrainYield():
 		 		return
+
+		if pEvent.IsHullHit():
+			return
 
 		pShields = pShip.GetShields()
 
@@ -373,17 +373,17 @@ class BabFiveVreeDef(FoundationTech.TechDef):
 
 	def OnBeamDefense(self, pShip, pInstance, oYield, pEvent):
 		debug(__name__ + ", OnBeamDefense")
-		if App.g_kSystemWrapper.GetRandomNumber(100) <= pInstance.__dict__['Vorlon Shields']:
+		if App.g_kSystemWrapper.GetRandomNumber(100) <= pInstance.__dict__['Vree Shields']:
 			return self.OnDefense(pShip, pInstance, oYield, pEvent)
 
 	def OnPulseDefense(self, pShip, pInstance, pTorp, oYield, pEvent):
 		debug(__name__ + ", OnPulseDefense")
-		if App.g_kSystemWrapper.GetRandomNumber(100) <= pInstance.__dict__['Vorlon Shields']:
+		if App.g_kSystemWrapper.GetRandomNumber(100) <= pInstance.__dict__['Vree Shields']:
 			return self.OnDefense(pShip, pInstance, oYield, pEvent)
 
 	def OnTorpDefense(self, pShip, pInstance, pTorp, oYield, pEvent):
 		debug(__name__ + ", OnTorpDefense")
-		if App.g_kSystemWrapper.GetRandomNumber(100) <= pInstance.__dict__['Vorlon Shields']:
+		if App.g_kSystemWrapper.GetRandomNumber(100) <= pInstance.__dict__['Vree Shields']:
 			return self.OnDefense(pShip, pInstance, oYield, pEvent)
 
 

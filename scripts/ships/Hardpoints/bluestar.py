@@ -101,7 +101,7 @@ ShieldGenerator.SetDisabledPercentage(0.750000)
 ShieldGenerator.SetRadius(0.050000)
 ShieldGenerator.SetNormalPowerPerSecond(300.000000)
 ShieldGeneratorShieldGlowColor = App.TGColorA()
-ShieldGeneratorShieldGlowColor.SetRGBA(0.721569, 0.721569, 1.000000, 0.466667)
+ShieldGeneratorShieldGlowColor.SetRGBA(0.721569, 0.721569, 1.000000, 0.000000)
 ShieldGenerator.SetShieldGlowColor(ShieldGeneratorShieldGlowColor)
 ShieldGenerator.SetShieldGlowDecay(1.000000)
 ShieldGenerator.SetMaxShields(ShieldGenerator.FRONT_SHIELDS, 350.000000)
@@ -873,12 +873,6 @@ def LoadPropertySet(pObj):
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
 	prop = App.g_kModelPropertyManager.FindByName("Vortex Generator Weapon", App.TGModelPropertyManager.LOCAL_TEMPLATES)
-	if (prop != None):
-		pObj.AddToSet("Scene Root", prop)
-	prop = App.g_kModelPropertyManager.FindByName("Port Jump Engine", App.TGModelPropertyManager.LOCAL_TEMPLATES)
-	if (prop != None):
-		pObj.AddToSet("Scene Root", prop)
-	prop = App.g_kModelPropertyManager.FindByName("Starboard Jump Engine", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
 	prop = App.g_kModelPropertyManager.FindByName("Regeneration System", App.TGModelPropertyManager.LOCAL_TEMPLATES)

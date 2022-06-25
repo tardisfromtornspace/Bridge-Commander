@@ -40,7 +40,7 @@ ShieldGenerator = App.ShieldProperty_Create("Shield Generator")
 
 ShieldGenerator.SetMaxCondition(6.000000)
 ShieldGenerator.SetCritical(0)
-ShieldGenerator.SetTargetable(1)
+ShieldGenerator.SetTargetable(0)
 ShieldGenerator.SetPrimary(1)
 ShieldGenerator.SetPosition(0.010815, -0.014159, 0.017642)
 ShieldGenerator.SetPosition2D(66.000000, 38.000000)

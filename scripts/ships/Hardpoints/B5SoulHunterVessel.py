@@ -220,7 +220,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(FirstPersonCamera)
 #################################################
 Cockpit = App.HullProperty_Create("Cockpit")
 
-Cockpit.SetMaxCondition(490.000000)
+Cockpit.SetMaxCondition(190.000000)
 Cockpit.SetCritical(1)
 Cockpit.SetTargetable(1)
 Cockpit.SetPrimary(0)

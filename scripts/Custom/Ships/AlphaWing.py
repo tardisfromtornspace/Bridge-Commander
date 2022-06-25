@@ -12,7 +12,7 @@ import App
 abbrev = 'EAStarfury'
 iconName = 'EAStarfury'
 longName = 'AlphaWing'
-shipFile = 'EAStarfury'
+shipFile = 'AlphaWing'
 menuGroup = 'Babylon 5'
 playerMenuGroup = 'Babylon 5' 
 SubMenu = "B-5 starfuries wings"

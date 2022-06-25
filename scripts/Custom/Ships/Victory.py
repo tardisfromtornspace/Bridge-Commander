@@ -17,6 +17,7 @@ menuGroup = "Babylon 5"
 playerMenuGroup = "Babylon 5"
 SubMenu = "Interestellar Alliance"
 species = App.SPECIES_GALAXY
+SubSubMenu = "Destroyers"
 #                                                                                     #
 #######################################################################################
 #                                                                                     #
@@ -36,12 +37,11 @@ credits = {
 # This is the ShipDef that adds the Ship to the game... BC-Mod Packager has           #
 # automatically generated the proper ShipDef Line for you.                            #
 #                                                                                     #
-Foundation.ShipDef.Victory = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
+Foundation.ShipDef.Victory = Foundation.FedShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu, "SubSubMenu": SubSubMenu })
 Foundation.ShipDef.Victory.dTechs = {
 	'Regenerative Shields': 30,
 	'Polarized Hull Plating': { "Plates": ["PlastiCrystalline Armour"]
 }}
-Foundation.ShipDef.Victory.SubSubMenu = "Destroyers"
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

@@ -17,6 +17,7 @@ menuGroup = "Babylon 5"
 playerMenuGroup = "Babylon 5"
 SubMenu = "Centauri Republic"
 species = App.SPECIES_GALAXY
+SubSubMenu = "Capital ships"
 #                                                                                     #
 #######################################################################################
 #                                                                                     #
@@ -36,7 +37,7 @@ credits = {
 # This is the ShipDef that adds the Ship to the game... BC-Mod Packager has           #
 # automatically generated the proper ShipDef Line for you.                            #
 #                                                                                     #
-Foundation.ShipDef.Primus = Foundation.FedShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
+Foundation.ShipDef.Primus = Foundation.FedShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu, "SubSubMenu": SubSubMenu })
 #                                                                                     #
 #######################################################################################
 #                                                                                     #
@@ -49,7 +50,6 @@ Foundation.ShipDef.Primus.desc = 'The Primus class battle cruiser was a mainstay
 Foundation.ShipDef.Primus.dTechs = {
 	'Gravimetric Defense': 150
 }
-Foundation.ShipDef.Primus.SubSubMenu = "Capital ships"
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

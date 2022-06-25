@@ -17,6 +17,7 @@ menuGroup = 'Babylon 5'
 playerMenuGroup = 'Babylon 5'
 species = 787
 SubMenu = "Centauri Republic"
+SubSubMenu = "Fighters"
 #                                                                                     #
 #######################################################################################
 #                                                                                     #
@@ -36,7 +37,7 @@ credits = {
 # This is the ShipDef that adds the Ship to the game... BC-Mod Packager has           #
 # automatically generated the proper ShipDef Line for you.                            #
 #                                                                                     #
-Foundation.ShipDef.SentriFighter = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
+Foundation.ShipDef.SentriFighter = Foundation.FedShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu, "SubSubMenu": SubSubMenu })
 #                                                                                     #
 #######################################################################################
 #                                                                                     #
@@ -46,7 +47,6 @@ Foundation.ShipDef.SentriFighter = Foundation.ShipDef(abbrev, species, { 'name':
 #
 # Otherwise, uncomment this and type something in:
 Foundation.ShipDef.SentriFighter.desc = 'The Sentri class medium fighter is a fast but lightly armed aerospace fighter deployed by the Centauri military. House Tavari Armaments located at Hevaria Orbital Shipyards over Tolonius VII is responsible for manufacturing this class of vessel. Possessing greater maneuverability and acceleration than comparable craft such as the Earthforce Starfury, Centauri pilots have been known to perform drastic and stressful maneuvers that will cause them to pass out, passing control over to the autopilot to complete the maneuver and bring the fighter around to a superior tactical position.'
-Foundation.ShipDef.SentriFighter.SubSubMenu = "Fighters"
 #                                                                                     #
 #######################################################################################
 #                                                                                     #
