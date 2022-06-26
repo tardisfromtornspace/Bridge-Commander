@@ -497,7 +497,7 @@ Thunderbolt = App.ShipProperty_Create("Thunderbolt")
 
 Thunderbolt.SetGenus(1)
 Thunderbolt.SetSpecies(401)
-Thunderbolt.SetMass(90.000000)
+Thunderbolt.SetMass(9.000000)
 Thunderbolt.SetRotationalInertia(2000.000000)
 Thunderbolt.SetShipName("Thunderbolt")
 Thunderbolt.SetModelFilename("data/Models/Ships/Thunderbolt/Thunderbolt.nif")

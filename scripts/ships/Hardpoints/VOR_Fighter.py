@@ -259,7 +259,7 @@ VOR_Fighter = App.ShipProperty_Create("VOR_Fighter")
 
 VOR_Fighter.SetGenus(1)
 VOR_Fighter.SetSpecies(101)
-VOR_Fighter.SetMass(70.000000)
+VOR_Fighter.SetMass(30.000000)
 VOR_Fighter.SetRotationalInertia(3000.000000)
 VOR_Fighter.SetShipName("VOR_Fighter")
 VOR_Fighter.SetModelFilename("data/Models/Ships/VOR_Fighter/VOR_Fighter.nif")

@@ -106,7 +106,7 @@ Sentri = App.ShipProperty_Create("Sentri")
 
 Sentri.SetGenus(1)
 Sentri.SetSpecies(787)
-Sentri.SetMass(25.000000)
+Sentri.SetMass(10.000000)
 Sentri.SetRotationalInertia(200.000000)
 Sentri.SetShipName("SentriFighter")
 Sentri.SetModelFilename("data/Models/Ships/Sentri/Sentri.nif")

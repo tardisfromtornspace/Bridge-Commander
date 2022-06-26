@@ -259,7 +259,7 @@ VOR_Cruiser = App.ShipProperty_Create("VOR_Cruiser")
 
 VOR_Cruiser.SetGenus(1)
 VOR_Cruiser.SetSpecies(101)
-VOR_Cruiser.SetMass(10000.000000)
+VOR_Cruiser.SetMass(12000.000000)
 VOR_Cruiser.SetRotationalInertia(4000.000000)
 VOR_Cruiser.SetShipName("VOR_Cruiser")
 VOR_Cruiser.SetModelFilename("data/Models/Ships/VOR_Cruiser/VOR_Cruiser.nif")

@@ -117,7 +117,7 @@ ShadowBattlecrab = App.ShipProperty_Create("Shadow Fighter")
 
 ShadowBattlecrab.SetGenus(0)
 ShadowBattlecrab.SetSpecies(401)
-ShadowBattlecrab.SetMass(60.000000)
+ShadowBattlecrab.SetMass(30.000000)
 ShadowBattlecrab.SetRotationalInertia(500.000000)
 ShadowBattlecrab.SetShipName("Shadow Fighter")
 ShadowBattlecrab.SetModelFilename("data/Models/Ships/Shadow_Fighter/Shadow_Fighter.nif")

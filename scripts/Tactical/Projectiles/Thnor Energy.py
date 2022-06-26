@@ -3,11 +3,11 @@ import App
 
 def Create(pTorp):
 	kCoreColor = App.TGColorA()
-	kCoreColor.SetRGBA(128.0 / 255.0, 235.0 / 255.0, 108.0 / 255.0, 0.500000)
+	kCoreColor.SetRGBA(255.0 / 255.0, 255.0 / 255.0, 255.0 / 255.0, 0.500000)
 	kGlowColor = App.TGColorA()
-	kGlowColor.SetRGBA(100.0 / 255.0, 108.0 / 255.0, 1.0 / 255.0, 1.000000)
+	kGlowColor.SetRGBA(255.0 / 255.0, 255.0 / 255.0, 255.0 / 255.0, 1.000000)
 	kFlareColor = App.TGColorA()
-	kFlareColor.SetRGBA(128.0 / 255.0, 255.0 / 255.0, 118.0 / 255.0, 1.000000)
+	kFlareColor.SetRGBA(255.0 / 255.0, 255.0 / 255.0, 255.0 / 255.0, 1.000000)
 
 	pTorp.CreateTorpedoModel(
 					"data/Textures/Tactical/TorpedoCore.tga",

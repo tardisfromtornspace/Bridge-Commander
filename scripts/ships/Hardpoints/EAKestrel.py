@@ -149,7 +149,7 @@ EAKestrel = App.ShipProperty_Create("EAKestrel")
 
 EAKestrel.SetGenus(1)
 EAKestrel.SetSpecies(106)
-EAKestrel.SetMass(150.000000)
+EAKestrel.SetMass(27.000000)
 EAKestrel.SetRotationalInertia(600.000000)
 EAKestrel.SetShipName("EAKestrel")
 EAKestrel.SetModelFilename("data/Models/Ships/EAKestrel/EAKestrel.nif")

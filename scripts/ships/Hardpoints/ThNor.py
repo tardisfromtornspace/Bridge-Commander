@@ -51,7 +51,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(Hull)
 #################################################
 SensorArray = App.SensorProperty_Create("Sensor Array")
 
-SensorArray.SetMaxCondition(5000.000000)
+SensorArray.SetMaxCondition(1400.000000)
 SensorArray.SetCritical(0)
 SensorArray.SetTargetable(1)
 SensorArray.SetPrimary(1)
@@ -67,7 +67,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(SensorArray)
 #################################################
 ImpulseEngines = App.ImpulseEngineProperty_Create("Impulse Engines")
 
-ImpulseEngines.SetMaxCondition(2200.000000)
+ImpulseEngines.SetMaxCondition(1300.000000)
 ImpulseEngines.SetCritical(0)
 ImpulseEngines.SetTargetable(0)
 ImpulseEngines.SetPrimary(1)
@@ -86,7 +86,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(ImpulseEngines)
 #################################################
 PortCannon = App.PulseWeaponProperty_Create("Port Cannon")
 
-PortCannon.SetMaxCondition(2000.000000)
+PortCannon.SetMaxCondition(1000.000000)
 PortCannon.SetCritical(0)
 PortCannon.SetTargetable(1)
 PortCannon.SetPrimary(1)
@@ -126,7 +126,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(PortCannon)
 #################################################
 StarCannon = App.PulseWeaponProperty_Create("Star Cannon")
 
-StarCannon.SetMaxCondition(2000.000000)
+StarCannon.SetMaxCondition(1000.000000)
 StarCannon.SetCritical(0)
 StarCannon.SetTargetable(1)
 StarCannon.SetPrimary(1)
@@ -166,7 +166,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(StarCannon)
 #################################################
 DisruptorCannons = App.WeaponSystemProperty_Create("Disruptor Cannons")
 
-DisruptorCannons.SetMaxCondition(3000.000000)
+DisruptorCannons.SetMaxCondition(1300.000000)
 DisruptorCannons.SetCritical(0)
 DisruptorCannons.SetTargetable(0)
 DisruptorCannons.SetPrimary(1)
@@ -300,7 +300,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(FirstPersonCamera)
 #################################################
 MainReactor = App.PowerProperty_Create("Main Reactor")
 
-MainReactor.SetMaxCondition(2000.000000)
+MainReactor.SetMaxCondition(1500.000000)
 MainReactor.SetCritical(1)
 MainReactor.SetTargetable(1)
 MainReactor.SetPrimary(1)
@@ -318,7 +318,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(MainReactor)
 #################################################
 JumpEngine = App.WarpEngineProperty_Create("Jump Engine")
 
-JumpEngine.SetMaxCondition(2000.000000)
+JumpEngine.SetMaxCondition(1500.000000)
 JumpEngine.SetCritical(0)
 JumpEngine.SetTargetable(1)
 JumpEngine.SetPrimary(1)

@@ -273,7 +273,7 @@ VOR_Destroyer = App.ShipProperty_Create("VOR_Destroyer")
 
 VOR_Destroyer.SetGenus(1)
 VOR_Destroyer.SetSpecies(101)
-VOR_Destroyer.SetMass(1000.000000)
+VOR_Destroyer.SetMass(750.000000)
 VOR_Destroyer.SetRotationalInertia(3000.000000)
 VOR_Destroyer.SetShipName("VOR_Destroyer")
 VOR_Destroyer.SetModelFilename("data/Models/Ships/VOR_Destroyer/VOR_Destroyer.nif")

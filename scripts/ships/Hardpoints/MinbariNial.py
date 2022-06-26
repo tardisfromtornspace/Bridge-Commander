@@ -262,7 +262,7 @@ MinbariNial = App.ShipProperty_Create("MinbariNial")
 
 MinbariNial.SetGenus(1)
 MinbariNial.SetSpecies(103)
-MinbariNial.SetMass(100.000000)
+MinbariNial.SetMass(10.000000)
 MinbariNial.SetRotationalInertia(1000.000000)
 MinbariNial.SetShipName("MinbariNial")
 MinbariNial.SetModelFilename("data/Models/Ships/MinbariNial/MinbariNial.nif")

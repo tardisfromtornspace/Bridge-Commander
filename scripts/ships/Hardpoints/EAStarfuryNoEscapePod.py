@@ -136,7 +136,7 @@ EAStarfury = App.ShipProperty_Create("EAStarfury")
 
 EAStarfury.SetGenus(1)
 EAStarfury.SetSpecies(106)
-EAStarfury.SetMass(90.000000)
+EAStarfury.SetMass(9.000000)
 EAStarfury.SetRotationalInertia(600.000000)
 EAStarfury.SetShipName("EAStarfuryNoEscapePod")
 EAStarfury.SetModelFilename("data/Models/Ships/EAStarfury/eastarfury.nif")
