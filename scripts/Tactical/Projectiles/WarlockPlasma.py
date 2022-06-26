@@ -53,7 +53,7 @@ def GetName():
 	return("WarlockPlasma")
 
 def GetDamage():
-	return 250.0
+	return 220.0
 
 def GetGuidanceLifetime():
 	return 0.0

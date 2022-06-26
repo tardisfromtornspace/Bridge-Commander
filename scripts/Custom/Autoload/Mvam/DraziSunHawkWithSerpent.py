@@ -37,7 +37,7 @@ import App
 
 
 ###TO CHANGE: what ships are in this? start with the full ship, then the ones that seperate
-MvamShips = ["Battlecrab", "Battlecrab", "Shadow_Fighter2", "Shadow_Fighter3", "Shadow_Fighter4", "Shadow_Fighter5", "Shadow_Fighter6", "Shadow_Fighter7"]
+MvamShips = ["DraziSunHawkWithSerpent", "DraziSunHawk", "DraziSkySerpent"]
 
 
 #this is to make things less confusing... don't touch this!
@@ -55,7 +55,7 @@ for i in range (len(MvamShips) - 1):
 ###TO CHANGE: these are all the buttons used. Keep them in the order that you named them first (ie: saucer sep for the
 ############# saucer, then stardrive, etc). Note: For the reintegration button, make sure you have "$Rein" at the VERY
 ############# end, so I know what it is. Dont worry, that part wont show in game.
-IconNames = ["Launch fighters", "Pilot a fighter"]
+IconNames = ["Launch Sky Serpent", "Fly Sky Serpent", "Reintegrate$Rein"]
 
 
 ###TO CHANGE: This is the hardest part. You need to find the offset of the new ship models as opposed to the
@@ -76,12 +76,7 @@ IconNames = ["Launch fighters", "Pilot a fighter"]
 ############# 4) Repeat for each seperated ship, using a different point each time of course. Remember to record the
 #############    results of your calculations and put them below. Be as accurate as possible, as you can see I have done.
 MvamDistances[0].SetXYZ(0.0, 0.000000, 0.000000)
-MvamDistances[1].SetXYZ(1.25, 1.125000, -1.050000)
-MvamDistances[2].SetXYZ(-1.25, 1.125000, -1.050000)
-MvamDistances[3].SetXYZ(1.35, 2.125000, -1.050000)
-MvamDistances[4].SetXYZ(-1.35, 2.125000, -1.050000)
-MvamDistances[5].SetXYZ(1.45, 3.125000, -1.050000)
-MvamDistances[6].SetXYZ(-1.45, 3.125000, -1.050000)
+MvamDistances[1].SetXYZ(0.0, 0.350000, 0.150000)
 
 
 ###TO CHANGE: This is the direction you want the seperated ship to go during the seperation sequence. It's all X, Y, Z.
@@ -91,17 +86,12 @@ MvamDistances[6].SetXYZ(-1.45, 3.125000, -1.050000)
 ############# of forward and up, or about a positive 45 degree pitch (i use the word pitch lightly, it doesnt twist or turn
 ############# the model whatsoever, it's just the direction it moves)
 MvamDirections[0].SetXYZ(0.0, 1.0, 0.0)
-MvamDirections[1].SetXYZ(0.5, -1.0, 0.0)
-MvamDirections[2].SetXYZ(0.0, -1.0, 0.0)
-MvamDirections[3].SetXYZ(1.0, 0.0, 0.0)
-MvamDirections[4].SetXYZ(-1.0, 0.0, 0.0)
-MvamDirections[5].SetXYZ(0.0, 0.0, 1.0)
-MvamDirections[6].SetXYZ(0.0, 0.0, -1.0)
+MvamDirections[1].SetXYZ(0.0, 0.0, 1.0)
 
 
 ###TO CHANGE: This is the speed you want each ship to go. 1.0 is about 600 km/h on the speed display ingame for the
 ############# prometheus. Remember, its in the same order as the ships.. ie [ship1, ship2, ship3, ship4]
-MvamSpeeds = [4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0]
+MvamSpeeds = [0.0, 0.1]
 
 
 ###TO CHANGE: This is the reintegrating distance. Basically, this where each ship starts off at the beginning
@@ -123,29 +113,19 @@ MvamSpeeds = [4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0]
 #############    the result of this calculation into the variables below, keeping the order of the ships like you should
 #############    have been doing throughout this plugin.
 MvamReinDistances[0].SetXYZ(0.0, 0.000000, 0.000000)
-MvamReinDistances[1].SetXYZ(1.25, 1.125000, -1.050000)
-MvamReinDistances[2].SetXYZ(-1.25, 1.125000, -1.050000)
-MvamReinDistances[3].SetXYZ(1.35, 2.125000, -1.050000)
-MvamReinDistances[4].SetXYZ(-1.35, 2.125000, -1.050000)
-MvamReinDistances[5].SetXYZ(1.45, 3.125000, -1.050000)
-MvamReinDistances[6].SetXYZ(-1.45, 3.125000, -1.050000)
+MvamReinDistances[1].SetXYZ(0.0, 0.350000, 0.250000)
 
 
 ###TO CHANGE: This is the reintegration heading. If you used the 6 step guide in MvamReinDistances, you would simply
 ############# take the value in MvamDirections two steps above; switch the +/- sign on the Z value for each; and put it
 ############# in the appropriate spot below. Remember to keep the proper order of the ships.
 MvamReinDirections[0].SetXYZ(0.0, 1.0, 0.0)
-MvamReinDirections[1].SetXYZ(0.5, -1.0, 0.0)
-MvamReinDirections[2].SetXYZ(0.0, -1.0, 0.0)
-MvamReinDirections[3].SetXYZ(1.0, 0.0, 0.0)
-MvamReinDirections[4].SetXYZ(-1.0, 0.0, 0.0)
-MvamReinDirections[5].SetXYZ(0.0, 0.0, -1.0)
-MvamReinDirections[6].SetXYZ(0.0, 0.0, 1.0)
+MvamReinDirections[1].SetXYZ(0.0, 0.0, -1.0)
 
 
 ###TO CHANGE: This is how fast each ship is going during the reintegration sequence. If you used the 6 step guide in
 ############# MvamReinDistances, you simple use the same speed values you used in MvamSpeeds three steps above.
-MvamReinSpeeds = [0.3, 0.3, 0.3, 0,3, 0.3, 0.3, 0.3]
+MvamReinSpeeds = [0.0, -0.04]
 
 
 ###TO CHANGE: this is the name of your music! It's the file in sfx/music. REMEMBER to include this file in your plugin if
@@ -189,7 +169,7 @@ AiSepAbility = 1
 
 ###TO CHANGE: name the following def's EXACTLY what the seperated mvam ships are called. You need to have as many def's
 ############# as you have ships seperating (we aren't counting the integrated ship).
-def Battlecrab(pObject, pEvent):
+def DraziSunHawk(pObject, pEvent):
 
 
 	# get the base variables
@@ -202,14 +182,14 @@ def Battlecrab(pObject, pEvent):
 
 
 ###TO CHANGE: change the last word in quotes in the next line to the name of the def
-		Custom.Sneaker.Mvam.Seperation.Seperation(snkMvamModule, "Battlecrab")
+		Custom.Sneaker.Mvam.Seperation.Seperation(snkMvamModule, "DraziSunHawk")
 
 
 	pObject.CallNextHandler(pEvent)
 
 
 ###TO CHANGE: dont forget to change this name too.
-def Shadow_Fighter2(pObject, pEvent):
+def DraziSkySerpent(pObject, pEvent):
 
 
 	# get the base variables
@@ -222,110 +202,10 @@ def Shadow_Fighter2(pObject, pEvent):
 
 
 ###TO CHANGE: change the last word in quotes in the next line to the name of the def
-		Custom.Sneaker.Mvam.Seperation.Seperation(snkMvamModule, "Shadow_Fighter2")
+		Custom.Sneaker.Mvam.Seperation.Seperation(snkMvamModule, "DraziSkySerpent")
 
 
 	pObject.CallNextHandler(pEvent)
-
-
-###TO CHANGE: dont forget to change this name too.
-def Shadow_Fighter3(pObject, pEvent):
-
-
-	# get the base variables
-	pGame = App.Game_GetCurrentGame()
-	pPlayer = pGame.GetPlayer()
-	snkMvamModule = __import__ (__name__)
-	# check if its our full ship
-	if (pPlayer.GetScript() == "ships." + snkMvamModule.ReturnMvamShips()[0]):
-		import Custom.Sneaker.Mvam.Seperation
-
-
-###TO CHANGE: change the last word in quotes in the next line to the name of the def
-		Custom.Sneaker.Mvam.Seperation.Seperation(snkMvamModule, "Shadow_Fighter3")
-
-
-	pObject.CallNextHandler(pEvent)
-
-
-###TO CHANGE: dont forget to change this name too.
-def Shadow_Fighter4(pObject, pEvent):
-
-
-	# get the base variables
-	pGame = App.Game_GetCurrentGame()
-	pPlayer = pGame.GetPlayer()
-	snkMvamModule = __import__ (__name__)
-	# check if its our full ship
-	if (pPlayer.GetScript() == "ships." + snkMvamModule.ReturnMvamShips()[0]):
-		import Custom.Sneaker.Mvam.Seperation
-
-
-###TO CHANGE: change the last word in quotes in the next line to the name of the def
-		Custom.Sneaker.Mvam.Seperation.Seperation(snkMvamModule, "Shadow_Fighter4")
-
-
-	pObject.CallNextHandler(pEvent)
-
-
-###TO CHANGE: dont forget to change this name too.
-def Shadow_Fighter5(pObject, pEvent):
-
-
-	# get the base variables
-	pGame = App.Game_GetCurrentGame()
-	pPlayer = pGame.GetPlayer()
-	snkMvamModule = __import__ (__name__)
-	# check if its our full ship
-	if (pPlayer.GetScript() == "ships." + snkMvamModule.ReturnMvamShips()[0]):
-		import Custom.Sneaker.Mvam.Seperation
-
-
-###TO CHANGE: change the last word in quotes in the next line to the name of the def
-		Custom.Sneaker.Mvam.Seperation.Seperation(snkMvamModule, "Shadow_Fighter5")
-
-
-	pObject.CallNextHandler(pEvent)
-
-
-###TO CHANGE: dont forget to change this name too.
-def Shadow_Fighter6(pObject, pEvent):
-
-
-	# get the base variables
-	pGame = App.Game_GetCurrentGame()
-	pPlayer = pGame.GetPlayer()
-	snkMvamModule = __import__ (__name__)
-	# check if its our full ship
-	if (pPlayer.GetScript() == "ships." + snkMvamModule.ReturnMvamShips()[0]):
-		import Custom.Sneaker.Mvam.Seperation
-
-
-###TO CHANGE: change the last word in quotes in the next line to the name of the def
-		Custom.Sneaker.Mvam.Seperation.Seperation(snkMvamModule, "Shadow_Fighter6")
-
-
-	pObject.CallNextHandler(pEvent)
-
-###TO CHANGE: dont forget to change this name too.
-def Shadow_Fighter7(pObject, pEvent):
-
-
-	# get the base variables
-	pGame = App.Game_GetCurrentGame()
-	pPlayer = pGame.GetPlayer()
-	snkMvamModule = __import__ (__name__)
-	# check if its our full ship
-	if (pPlayer.GetScript() == "ships." + snkMvamModule.ReturnMvamShips()[0]):
-		import Custom.Sneaker.Mvam.Seperation
-
-
-###TO CHANGE: change the last word in quotes in the next line to the name of the def
-		Custom.Sneaker.Mvam.Seperation.Seperation(snkMvamModule, "Shadow_Fighter7")
-
-
-	pObject.CallNextHandler(pEvent)
-
 
 ###OPTIONAL CHANGE: This is the reintegrate sequence. You really don't need to touch this
 def Reintegrate(pObject, pEvent):
@@ -363,19 +243,19 @@ def CheckSeperate (pShip):
         
 	#is the ship an enemy?
 	if (pEnemies.IsNameInGroup(pShip.GetName())):
-		#seperate if we're outnumbered 6 to 1
-		if ((pFriendlies.GetNumActiveObjects() >= (pEnemies.GetNumActiveObjects() * 6)) and (snkAiRanSep == 4)):
+		#seperate if we're outnumbered 3 to 1
+		if ((pFriendlies.GetNumActiveObjects() >= (pEnemies.GetNumActiveObjects() * 3)) and (snkAiRanSep == 4)):
 			return 1
-		#seperate if 50% damaged and outnumbered 3 to 1
-		if ((pShip.GetHull().GetConditionPercentage() <= 0.5) and (pFriendlies.GetNumActiveObjects() >= (pEnemies.GetNumActiveObjects() * 3)) and (snkAiRanSep == 4)):
+		#seperate if 50% damaged and outnumbered 1 to 1
+		if ((pShip.GetHull().GetConditionPercentage() <= 0.5) and (pFriendlies.GetNumActiveObjects() >= (pEnemies.GetNumActiveObjects() * 1)) and (snkAiRanSep == 4)):
 			return 1
 	#the ship is a friendly or neutral
 	else:
-		#seperate if we're outnumbered 6 to 1
-		if (pEnemies.GetNumActiveObjects() >= (pFriendlies.GetNumActiveObjects() * 6) and (snkAiRanSep == 4)):
+		#seperate if we're outnumbered 3 to 1
+		if (pEnemies.GetNumActiveObjects() >= (pFriendlies.GetNumActiveObjects() * 3) and (snkAiRanSep == 4)):
 			return 1
-		#seperate if 50% damaged and outnumbered 3 to 1
-		if ((pShip.GetHull().GetConditionPercentage() <= 0.5) and (pEnemies.GetNumActiveObjects() >= (pFriendlies.GetNumActiveObjects() * 3)) and (snkAiRanSep == 4)):
+		#seperate if 50% damaged and outnumbered 1 to 1
+		if ((pShip.GetHull().GetConditionPercentage() <= 0.5) and (pEnemies.GetNumActiveObjects() >= (pFriendlies.GetNumActiveObjects() * 1)) and (snkAiRanSep == 4)):
 			return 1
 	return 0
 
@@ -469,13 +349,13 @@ def ReturnCameraValues ():
 
 ###OPTIONAL CHANGE: How long would you like the seperation cutscene to play? Remember, 1.0 is about a half a second
 def ReturnCameraSepLength ():
-	return 1.0
+	return 3.0
 
 ###OPTIONAL CHANGE: How long would you like the reintegration cutscene to play? Remember that changing this value will
 ################### affect how your ships come together in the reintegration cutscene, since they aren't timed to exactly
 ################### how long the cutscene plays.
 def ReturnCameraReinLength ():
-	return 1.0
+	return 3.0
 
 
 ### DON'T TOUCH ANYTHING PAST HERE. THEY RETURN VALUES TO THE MVAM PROGRAM. MODIFY AT YOUR OWN RISK ###

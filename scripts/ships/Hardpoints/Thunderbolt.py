@@ -68,7 +68,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(ShieldGenerator)
 #################################################
 Hull = App.HullProperty_Create("Hull")
 
-Hull.SetMaxCondition(22.000000)
+Hull.SetMaxCondition(25.000000)
 Hull.SetCritical(1)
 Hull.SetTargetable(1)
 Hull.SetPrimary(1)

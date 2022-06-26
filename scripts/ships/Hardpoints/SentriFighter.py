@@ -8,7 +8,7 @@ import GlobalPropertyTemplates
 #################################################
 Hull = App.HullProperty_Create("Hull")
 
-Hull.SetMaxCondition(24.500000)
+Hull.SetMaxCondition(20.000000)
 Hull.SetCritical(1)
 Hull.SetTargetable(0)
 Hull.SetPrimary(1)

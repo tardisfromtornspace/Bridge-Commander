@@ -53,7 +53,7 @@ def GetName():
 	return("Frezi Particle")
 
 def GetDamage():
-	return 13.0
+	return 12.0
 
 def GetGuidanceLifetime():
 	return 0.0

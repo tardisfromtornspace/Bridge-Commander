@@ -53,7 +53,7 @@ def GetName():
 	return("Xorr Cannon")
 
 def GetDamage():
-	return 80.0
+	return 60.0
 
 def GetGuidanceLifetime():
 	return 0.0

@@ -1,11 +1,11 @@
 ###############################################################################
-#	Filename:	RomulanCannon.py
+#	Filename:	Plasma Bolt 40.py
 #	
 #	Confidential and Proprietary, Copyright 2000 by Totally Games
 #	
 #	Script for filling in the attributes of disruptor blasts.
 #	
-#	Created:	8/28/01 -	Evan Birkby
+#	Created:	11/3/00 -	Erik Novales
 ###############################################################################
 
 import App
@@ -13,7 +13,7 @@ import App
 ###############################################################################
 #	Create(pTorp)
 #	
-#	Creates a Romulan Disruptor Cannon Blast.
+#	Creates a disruptor blast.
 #	
 #	Args:	pTorp - the "torpedo", ready to be filled-in
 #	
@@ -22,13 +22,13 @@ import App
 def Create(pTorp):
 
 	kOuterShellColor = App.TGColorA()
-	kOuterShellColor.SetRGBA(0.507843, 1.000000, 0.007843, 1.000000)	
+	kOuterShellColor.SetRGBA(1.000000, 0.500000, 0.080392, 1.000000)	
 	kOuterCoreColor = App.TGColorA()
-	kOuterCoreColor.SetRGBA(0.588235, 1.000000, 0.588235, 1.000000)
+	kOuterCoreColor.SetRGBA(1.000000, 0.500000, 0.070588, 1.000000)
 
-	pTorp.CreateDisruptorModel(kOuterShellColor,kOuterCoreColor, 0.6, 0.14) 	
+	pTorp.CreateDisruptorModel(kOuterShellColor,kOuterCoreColor, 0.030, 0.006) 	
 	pTorp.SetDamage( GetDamage() )
-	pTorp.SetDamageRadiusFactor(0.2)
+	pTorp.SetDamageRadiusFactor(0.025)
 	pTorp.SetGuidanceLifetime( GetGuidanceLifetime() )
 	pTorp.SetMaxAngularAccel( GetMaxAngularAccel() )
 	pTorp.SetLifetime( GetLifetime() )
@@ -41,19 +41,19 @@ def Create(pTorp):
 	return(0)
 
 def GetLaunchSpeed():
-	return(90.0)
+	return(100.0)
 
 def GetLaunchSound():
-	return("GQgun2")
+	return("GQgun")
 
 def GetPowerCost():
 	return(10.0)
 
 def GetName():
-	return("Brakiri Pulse")
+	return("Drazi Pulse")
 
 def GetDamage():
-	return 40.0
+	return 14.0
 
 def GetGuidanceLifetime():
 	return 0.0
@@ -62,4 +62,4 @@ def GetMaxAngularAccel():
 	return 0.125
 
 def GetLifetime():
-	return 8.0
+	return 3.0
