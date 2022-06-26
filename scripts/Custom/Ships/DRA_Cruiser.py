@@ -15,7 +15,7 @@ menuGroup = "Babylon 5"
 playerMenuGroup = "Babylon 5"
 SubMenu = "Drakh Horde"
 SubSubMenu = "Carriers"
-Foundation.ShipDef.DRA_Cruiser = Foundation.FedShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu, "SubSubMenu": SubSubMenu })
+Foundation.ShipDef.DRA_Cruiser = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu, "SubSubMenu": SubSubMenu })
 
 
 Foundation.ShipDef.DRA_Cruiser.desc = "The Drakh cruiser was a vessel of unknown class used by the Drakh. The overall design of the vessel is essentially identical to the Drakh carrier, though on a much smaller scale. As with the carriers, the cruisers are typically accompanied by a number of Drakh fighters."

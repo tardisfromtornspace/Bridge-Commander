@@ -15,7 +15,7 @@ menuGroup = "Babylon 5"
 playerMenuGroup = "Babylon 5"
 SubMenu = "Drakh Horde"
 SubSubMenu = "Fighters"
-Foundation.ShipDef.DRA_Raider = Foundation.FedShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu, "SubSubMenu": SubSubMenu })
+Foundation.ShipDef.DRA_Raider = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu, "SubSubMenu": SubSubMenu })
 
 
 Foundation.ShipDef.DRA_Raider.desc = "The Drakh fighter was a large fighter vessel used by the Drakh. Ships of this type are carried into the battle usually by large carriers or cruisers. Two of these vessels are capable of shooting down a White Star with just a few direct hits."

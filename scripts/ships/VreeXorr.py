@@ -3,12 +3,12 @@ import Multiplayer.SpeciesToShip
 
 def GetShipStats():
 	kShipStats = {
-		"FilenameHigh": "data/Models/Ships/Battlecrab/battlecrab.nif",
-		"FilenameMed": "data/Models/Ships/Battlecrab/battlecrab.nif",
-		"FilenameLow": "data/Models/Ships/Battlecrab/battlecrab.nif",
-		"Name": "Battlecrab",
-		"HardpointFile": "Battlecrab",
-		"Species": Multiplayer.SpeciesToShip.SOVEREIGN,
+		"FilenameHigh": "data/Models/Ships/VreeXorr/VreeXorr.nif",
+		"FilenameMed": "data/Models/Ships/VreeXorr/VreeXorr.nif",
+		"FilenameLow": "data/Models/Ships/VreeXorr/VreeXorr.nif",
+		"Name": "VreeXorr",
+		"HardpointFile": "VreeXorr",
+		"Species": Multiplayer.SpeciesToShip.AMBASSADOR,
 	}
 	return kShipStats
 
@@ -21,9 +21,9 @@ def LoadModel(bPreLoad = 0):
 		# Surface Damage Res, Internal Damage Res, Burn Value, Hole Value,
 		# Search String for Glow, Search string for Specular, Suffix for specular
 		pLODModel = App.g_kLODModelManager.Create(pStats["Name"])
-		pLODModel.AddLOD(pStats["FilenameHigh"], 10, 200.0, 20.0, 20.0, 400, 2000, "_glow", None, None)
-		pLODModel.AddLOD(pStats["FilenameMed"], 10, 400.0, 20.0, 20.0, 400, 2000, "_glow", None, None)
-		pLODModel.AddLOD(pStats["FilenameLow"], 10, 800.0, 20.0, 20.0, 400, 2000, "_glow", None, None)
+		pLODModel.AddLOD(pStats["FilenameHigh"], 10, 200.0, 35.0, 10.0, 400, 2000, "_glow", None, None)
+		pLODModel.AddLOD(pStats["FilenameMed"], 10, 400.0, 35.0, 10.0, 400, 2000, "_glow", None, None)
+		pLODModel.AddLOD(pStats["FilenameLow"], 10, 800.0, 35.0, 10.0, 400, 2000, "_glow", None, None)
 
 #		kDebugObj = App.CPyDebug()
 		if (bPreLoad == 0):

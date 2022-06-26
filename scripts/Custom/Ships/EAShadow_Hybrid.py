@@ -16,7 +16,7 @@ playerMenuGroup = "Babylon 5"
 SubMenu = "Earth Alliance"
 SubSubMenu = "Prototypes"
 
-Foundation.ShipDef.EAShadow_Hybrid = Foundation.FedShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu, "SubSubMenu": SubSubMenu })
+Foundation.ShipDef.EAShadow_Hybrid = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu, "SubSubMenu": SubSubMenu })
 
 Foundation.ShipDef.EAShadow_Hybrid.dTechs = {'Breen Drainer Immune': 1}
 
