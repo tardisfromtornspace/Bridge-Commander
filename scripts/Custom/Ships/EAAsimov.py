@@ -9,10 +9,10 @@ import App
 #                                                                                     #
 #######################################################################################
 #                                                                                     #
-abbrev = 'B5PsiCorpMothership'
-iconName = 'B5PsiCorpMothership'
-longName = 'Psi-Corp Mothership'
-shipFile = 'B5PsiCorpMothership' 
+abbrev = 'EAAsimov'
+iconName = 'EAAsimov'
+longName = 'Asimov starliner'
+shipFile = 'EAAsimov' 
 menuGroup = 'Babylon 5'
 playerMenuGroup = 'Babylon 5'
 species = App.SPECIES_SHUTTLE
@@ -26,7 +26,7 @@ SubSubMenu = "Non-military craft"
 # have use later on for updates and such.                                             #
 #                                                                                     #
 credits = {
-	'modName': 'B5PsiCorpMothership',
+	'modName': 'EAAsimov',
 	'author': '',
 	'version': '1.0',
 	'sources': [ 'http://' ],
@@ -38,28 +38,30 @@ credits = {
 # This is the ShipDef that adds the Ship to the game... BC-Mod Packager has           #
 # automatically generated the proper ShipDef Line for you.                            #
 #                                                                                     #
-Foundation.ShipDef.B5PsiCorpMothership = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu, "SubSubMenu": SubSubMenu })
-Foundation.ShipDef.B5PsiCorpMothership.dTechs = {
-	'Defense Grid': 20
-}
+Foundation.ShipDef.EAAsimov = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu, "SubSubMenu": SubSubMenu })
+
 #                                                                                     #
 #######################################################################################
 #                                                                                     #
 # Uncomment these if you have TGL                                                     #
 #                                                                                     #
-# Foundation.ShipDef.B5PsiCorpMothership.hasTGLName = 1
-# Foundation.ShipDef.B5PsiCorpMothership.hasTGLDesc = 1
+# Foundation.ShipDef.EAAsimov.hasTGLName = 1
+# Foundation.ShipDef.EAAsimov.hasTGLDesc = 1
 #                                                                                     #
 # Otherwise, uncomment this and type something in:                                    #
 #                                                                                     #
-Foundation.ShipDef.B5PsiCorpMothership.desc = "The Psi Corps motherships were a type of ship, secretly operated by Psi Corps in the years leading up to the Telepath War. The ships themselves were heavily modified Asimov class commercial liners and would spend the vast majority of the time in hyperspace, staying out of sight while ferrying missions back and forth, coming into normal space only when in need of repairs."
+Foundation.ShipDef.EAAsimov.desc = "Asimov Class is a type of commercial starliner produced by the Earth Alliance Barfingle's Manufactory located at Earth. All Asimov Class liners have a rotating habitat area. The command decks and shuttle bays do not have artificial gravity. While most Asimovs are used for comfortable transportation, some are used just for cargo, especially when cargo may need to be under gravity for long durations."
+Foundation.ShipDef.EAAsimov.dTechs = {
+	'Defense Grid': 6
+}
+
 #                                                                                     #
 #######################################################################################
 #                                                                                     #
 # These register the ship with the QuickBattle menus.  Don't touch them!!!            #
 #                                                                                     #
-if menuGroup:           Foundation.ShipDef.B5PsiCorpMothership.RegisterQBShipMenu(menuGroup)
-if playerMenuGroup:     Foundation.ShipDef.B5PsiCorpMothership.RegisterQBPlayerShipMenu(playerMenuGroup)
+if menuGroup:           Foundation.ShipDef.EAAsimov.RegisterQBShipMenu(menuGroup)
+if playerMenuGroup:     Foundation.ShipDef.EAAsimov.RegisterQBPlayerShipMenu(playerMenuGroup)
 
 if Foundation.shipList._keyList.has_key(longName):
      Foundation.ShipDef.__dict__[longName].friendlyDetails[2] = Foundation.shipList[longName].friendlyDetails[2]
