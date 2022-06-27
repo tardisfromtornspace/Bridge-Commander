@@ -112,7 +112,7 @@ MvamSpeeds = [0.5, 0.01]
 #############    This is because you want the ship to reintegrate to the spot it would be on the combined ship. Write down
 #############    the result of this calculation into the variables below, keeping the order of the ships like you should
 #############    have been doing throughout this plugin.
-MvamReinDistances[0].SetXYZ(0.0, 5.050000, 0.000000)
+MvamReinDistances[0].SetXYZ(0.0, 2.050000, 0.000000)
 MvamReinDistances[1].SetXYZ(0.0, 0.000000, 0.000000)
 
 
