@@ -53,7 +53,7 @@ def GetName():
 	return("Drazi Pulse")
 
 def GetDamage():
-	return 14.0
+	return 11.0
 
 def GetGuidanceLifetime():
 	return 0.0
