@@ -4,7 +4,7 @@ from bcdebug import debug
 ##############################################################################
 
 Carrier = __import__( "ftb.Carrier")
-class B5Station( Carrier.Carrier):
+class THSB5StationUpgrade( Carrier.Carrier):
     def __init__( self, pShip):
         debug(__name__ + ", __init__")
         Carrier.Carrier.__init__( self, pShip)
@@ -47,4 +47,4 @@ class B5Station( Carrier.Carrier):
 
    
 ShipManager = __import__( "ftb.ShipManager")
-ShipManager.RegisterShipClass( "B5Station", B5Station)
+ShipManager.RegisterShipClass( "THSB5StationUpgrade", THSB5StationUpgrade)

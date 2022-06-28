@@ -3,7 +3,7 @@
 
 
 Carrier = __import__('ftb.Carrier')
-class EAAsimov(Carrier.Carrier):
+class EAPsiCorpCrewShuttle(Carrier.Carrier):
    def __init__(self, pShip):
                Carrier.Carrier.__init__(self, pShip)
                LauncherGroup = __import__('ftb.LauncherGroup')
@@ -17,9 +17,7 @@ class EAAsimov(Carrier.Carrier):
                group.AddLauncher('Shuttle Bay 1', launcher1)
 
 
-               launcher1.AddLaunchable("EACrewShuttle", 'ftb.friendlyAI', 1)
-               launcher1.AddLaunchable("EACrewShuttleRed", 'ftb.friendlyAI', 1)
-               launcher1.AddLaunchable( "EACrewShuttleBlue", "ftb.friendlyAI", 1)
+               launcher1.AddLaunchable('EAStealthStarfury', 'Custom.Sneaker.Mvam.MvamAI', 4)
 
 
                self.AddLauncher('Group 1', group)
@@ -30,4 +28,4 @@ class EAAsimov(Carrier.Carrier):
 
 
 ShipManager = __import__('ftb.ShipManager')
-ShipManager.RegisterShipClass('EAAsimov', EAAsimov)
+ShipManager.RegisterShipClass('EAPsiCorpCrewShuttle', EAPsiCorpCrewShuttle)

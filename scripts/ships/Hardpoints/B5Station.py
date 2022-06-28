@@ -1059,6 +1059,34 @@ DockingPort1.SetRepairComplexity(1.000000)
 DockingPort1.SetDisabledPercentage(0.500000)
 DockingPort1.SetRadius(1.300000)
 App.g_kModelPropertyManager.RegisterLocalTemplate(DockingPort1)
+#################################################
+ShuttleBay5 = App.HullProperty_Create("Shuttle Bay 5")
+
+ShuttleBay5.SetMaxCondition(24000.000000)
+ShuttleBay5.SetCritical(0)
+ShuttleBay5.SetTargetable(0)
+ShuttleBay5.SetPrimary(0)
+ShuttleBay5.SetPosition(-0.011374, -15.563700, -0.061284)
+ShuttleBay5.SetPosition2D(65.000000, 24.000000)
+ShuttleBay5.SetRepairComplexity(1.000000)
+ShuttleBay5.SetDisabledPercentage(0.500000)
+ShuttleBay5.SetRadius(1.300000)
+App.g_kModelPropertyManager.RegisterLocalTemplate(ShuttleBay5)
+#################################################
+ShuttleBay5OEP = App.ObjectEmitterProperty_Create("Shuttle Bay 5 OEP")
+
+ShuttleBay5OEPForward = App.TGPoint3()
+ShuttleBay5OEPForward.SetXYZ(0.000000, -1.000000, 0.000000)
+ShuttleBay5OEPUp = App.TGPoint3()
+ShuttleBay5OEPUp.SetXYZ(0.000000, 0.000000, 1.000000)
+ShuttleBay5OEPRight = App.TGPoint3()
+ShuttleBay5OEPRight.SetXYZ(-0.011374, -15.563700, -0.061284)
+ShuttleBay5OEP.SetOrientation(ShuttleBay5OEPForward, ShuttleBay5OEPUp, ShuttleBay5OEPRight)
+ShuttleBay5OEPPosition = App.TGPoint3()
+ShuttleBay5OEPPosition.SetXYZ(-0.011374, -15.563700, -0.061284)
+ShuttleBay5OEP.SetPosition(ShuttleBay5OEPPosition)
+ShuttleBay5OEP.SetEmittedObjectType(ShuttleBay5OEP.OEP_SHUTTLE)
+App.g_kModelPropertyManager.RegisterLocalTemplate(ShuttleBay5OEP)
 
 # Property load function.
 def LoadPropertySet(pObj):
@@ -1181,5 +1209,11 @@ def LoadPropertySet(pObj):
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
 	prop = App.g_kModelPropertyManager.FindByName("Shuttle Bay 4", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	if (prop != None):
+		pObj.AddToSet("Scene Root", prop)
+	prop = App.g_kModelPropertyManager.FindByName("Shuttle Bay 5 OEP", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	if (prop != None):
+		pObj.AddToSet("Scene Root", prop)
+	prop = App.g_kModelPropertyManager.FindByName("Shuttle Bay 5", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)

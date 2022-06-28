@@ -17,14 +17,16 @@ class B5PsiCorpMothership(Carrier.Carrier):
                group.AddLauncher('Shuttle Bay 1', launcher1)
 
 
-               launcher1.AddLaunchable('EAKestrel', 'ftb.friendlyAI', 10)
+               launcher1.AddLaunchable('EAKestrel', 'ftb.friendlyAI', 5)
+               launcher1.AddLaunchable('EAPsiCorpCrewShuttle', 'ftb.friendlyAI', 5)
+               launcher1.AddLaunchable('EAStealthStarfury', 'Custom.Sneaker.Mvam.MvamAI', 1)
 
 
                self.AddLauncher('Group 1', group)
 
 
    def GetMaxShuttles(self):
-               return 10
+               return 11
 
 
 ShipManager = __import__('ftb.ShipManager')

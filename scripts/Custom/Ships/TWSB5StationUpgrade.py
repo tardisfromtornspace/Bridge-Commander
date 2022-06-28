@@ -2,9 +2,9 @@ import Foundation
 import App
 # Usually you need only edit these seven lines
 
-abbrev = 'B5StationUpgrade'
+abbrev = 'THSB5StationUpgrade'
 iconName = 'B5Station'
-longName = 'Babylon 5 Station'
+longName = 'Retrofit Babylon 5 Station'
 shipFile = 'THSB5StationUpgrade' 
 menuGroup = 'Non canon X-Overs'
 playerMenuGroup = 'Non canon X-Overs'
