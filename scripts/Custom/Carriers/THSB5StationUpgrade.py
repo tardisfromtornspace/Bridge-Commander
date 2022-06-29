@@ -28,12 +28,17 @@ class THSB5StationUpgrade( Carrier.Carrier):
 
         launcher = LauncherManager.GetLauncher( "Shuttle Bay 4", pShip)
         group.AddLauncher( "Shuttle Bay 4", launcher)
+        launcher.AddLaunchable( "EchoWing", "ftb.friendlyAI", 6)
 
         launcher = LauncherManager.GetLauncher( "Shuttle Bay 5", pShip)
         group.AddLauncher( "Shuttle Bay 5", launcher)
+        launcher.AddLaunchable( "EAAchillesFreighter", "Custom.Sneaker.Mvam.MvamAI", 2)
+        launcher.AddLaunchable( "EACrewShuttleBlue", "ftb.friendlyAI", 1)
+
+        launcher = LauncherManager.GetLauncher( "Shuttle Bay 6", pShip)
+        group.AddLauncher( "Shuttle Bay 6", launcher)
         launcher.AddLaunchable( "EACrewShuttle", "ftb.friendlyAI", 2)
         launcher.AddLaunchable( "EACrewShuttleRed", "ftb.friendlyAI", 1)
-        launcher.AddLaunchable( "EACrewShuttleBlue", "ftb.friendlyAI", 1)
        
         self.AddLauncher( "Group 1", group)
 

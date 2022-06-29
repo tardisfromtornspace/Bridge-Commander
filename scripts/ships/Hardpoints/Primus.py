@@ -466,7 +466,7 @@ Primus = App.ShipProperty_Create("Primus")
 
 Primus.SetGenus(1)
 Primus.SetSpecies(104)
-Primus.SetMass(51.000000)
+Primus.SetMass(1050.000000)
 Primus.SetRotationalInertia(1000.000000)
 Primus.SetShipName("Primus")
 Primus.SetModelFilename("data/Models/Ships/Primus/Primus.nif")

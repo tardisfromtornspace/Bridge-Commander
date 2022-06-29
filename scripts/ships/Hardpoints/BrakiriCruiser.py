@@ -384,7 +384,7 @@ BrakiriCruiser = App.ShipProperty_Create("BrakiriCruiser")
 
 BrakiriCruiser.SetGenus(1)
 BrakiriCruiser.SetSpecies(401)
-BrakiriCruiser.SetMass(90.000000)
+BrakiriCruiser.SetMass(900.000000)
 BrakiriCruiser.SetRotationalInertia(7000.000000)
 BrakiriCruiser.SetShipName("BrakiriCruiser")
 BrakiriCruiser.SetModelFilename("data/Models/Ships/BrakiriCruiser/BrakiriCruiser.nif")

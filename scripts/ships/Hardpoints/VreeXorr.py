@@ -184,7 +184,7 @@ VreeXorr = App.ShipProperty_Create("VreeXorr")
 
 VreeXorr.SetGenus(1)
 VreeXorr.SetSpecies(410)
-VreeXorr.SetMass(600.000000)
+VreeXorr.SetMass(500.000000)
 VreeXorr.SetRotationalInertia(20.000000)
 VreeXorr.SetShipName("VreeXorr")
 VreeXorr.SetModelFilename("data/Models/Ships/VreeXorr/VreeXorr.nif")

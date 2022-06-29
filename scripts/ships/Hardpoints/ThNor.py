@@ -442,7 +442,7 @@ ThNor = App.ShipProperty_Create("ThNor")
 
 ThNor.SetGenus(1)
 ThNor.SetSpecies(401)
-ThNor.SetMass(70.000000)
+ThNor.SetMass(700.000000)
 ThNor.SetRotationalInertia(7000.000000)
 ThNor.SetShipName("ThNor")
 ThNor.SetModelFilename("data/Models/Ships/ThNor.nif")

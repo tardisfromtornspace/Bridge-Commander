@@ -378,7 +378,7 @@ Vorchan = App.ShipProperty_Create("Vorchan")
 
 Vorchan.SetGenus(1)
 Vorchan.SetSpecies(104)
-Vorchan.SetMass(45.000000)
+Vorchan.SetMass(870.000000)
 Vorchan.SetRotationalInertia(950.000000)
 Vorchan.SetShipName("Vorchan")
 Vorchan.SetModelFilename("data/Models/Ships/Vorchan/Vorchan.nif")

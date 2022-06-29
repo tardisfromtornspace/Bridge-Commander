@@ -304,7 +304,7 @@ GQuan = App.ShipProperty_Create("GQuan")
 
 GQuan.SetGenus(1)
 GQuan.SetSpecies(401)
-GQuan.SetMass(100.000000)
+GQuan.SetMass(1000.000000)
 GQuan.SetRotationalInertia(7000.000000)
 GQuan.SetShipName("GQuan")
 GQuan.SetModelFilename("data/Models/Ships/GQuan/GQuan.nif")

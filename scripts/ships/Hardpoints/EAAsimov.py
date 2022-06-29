@@ -10,7 +10,7 @@ EAAsimov = App.ShipProperty_Create("EAAsimov")
 
 EAAsimov.SetGenus(1)
 EAAsimov.SetSpecies(106)
-EAAsimov.SetMass(100.000000)
+EAAsimov.SetMass(200.000000)
 EAAsimov.SetRotationalInertia(60000.000000)
 EAAsimov.SetShipName("EAAsimov")
 EAAsimov.SetModelFilename("data/Models/Ships/EAAsimov/EAAsimov.nif")
@@ -23,7 +23,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(EAAsimov)
 #################################################
 Hull = App.HullProperty_Create("Hull")
 
-Hull.SetMaxCondition(800.000000)
+Hull.SetMaxCondition(600.000000)
 Hull.SetCritical(1)
 Hull.SetTargetable(1)
 Hull.SetPrimary(1)
@@ -54,7 +54,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(PowerCore)
 #################################################
 SublightDriveSys = App.ImpulseEngineProperty_Create("Sublight Drive Sys")
 
-SublightDriveSys.SetMaxCondition(800.000000)
+SublightDriveSys.SetMaxCondition(400.000000)
 SublightDriveSys.SetCritical(0)
 SublightDriveSys.SetTargetable(0)
 SublightDriveSys.SetPrimary(1)
@@ -73,7 +73,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(SublightDriveSys)
 #################################################
 JumpEngineSys = App.WarpEngineProperty_Create("Jump Engine Sys")
 
-JumpEngineSys.SetMaxCondition(800.000000)
+JumpEngineSys.SetMaxCondition(400.000000)
 JumpEngineSys.SetCritical(0)
 JumpEngineSys.SetTargetable(0)
 JumpEngineSys.SetPrimary(1)
@@ -103,7 +103,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(SensorGrid)
 #################################################
 DamageControl = App.RepairSubsystemProperty_Create("Damage Control")
 
-DamageControl.SetMaxCondition(1500.000000)
+DamageControl.SetMaxCondition(800.000000)
 DamageControl.SetCritical(0)
 DamageControl.SetTargetable(0)
 DamageControl.SetPrimary(1)
@@ -188,7 +188,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(Bridge)
 #################################################
 PulseCannonSys = App.WeaponSystemProperty_Create("Telepaths")
 
-PulseCannonSys.SetMaxCondition(800.000000)
+PulseCannonSys.SetMaxCondition(600.000000)
 PulseCannonSys.SetCritical(0)
 PulseCannonSys.SetTargetable(1)
 PulseCannonSys.SetPrimary(1)
@@ -208,7 +208,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(PulseCannonSys)
 #################################################
 JumpEngine1 = App.EngineProperty_Create("Jumpspace Drive 1")
 
-JumpEngine1.SetMaxCondition(1500.000000)
+JumpEngine1.SetMaxCondition(500.000000)
 JumpEngine1.SetCritical(0)
 JumpEngine1.SetTargetable(1)
 JumpEngine1.SetPrimary(0)
@@ -222,7 +222,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(JumpEngine1)
 #################################################
 JumpEngine2 = App.EngineProperty_Create("Jumpspace Drive 2")
 
-JumpEngine2.SetMaxCondition(1500.000000)
+JumpEngine2.SetMaxCondition(500.000000)
 JumpEngine2.SetCritical(0)
 JumpEngine2.SetTargetable(1)
 JumpEngine2.SetPrimary(0)
@@ -236,7 +236,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(JumpEngine2)
 #################################################
 DefenseGrid = App.ShieldProperty_Create("Defense Grid")
 
-DefenseGrid.SetMaxCondition(1500.000000)
+DefenseGrid.SetMaxCondition(600.000000)
 DefenseGrid.SetCritical(0)
 DefenseGrid.SetTargetable(1)
 DefenseGrid.SetPrimary(1)

@@ -991,7 +991,7 @@ MinbariSharlin = App.ShipProperty_Create("MinbariSharlin")
 
 MinbariSharlin.SetGenus(1)
 MinbariSharlin.SetSpecies(103)
-MinbariSharlin.SetMass(100.000000)
+MinbariSharlin.SetMass(1600.000000)
 MinbariSharlin.SetRotationalInertia(8000.000000)
 MinbariSharlin.SetShipName("MinbariSharlin")
 MinbariSharlin.SetModelFilename("data/Models/Ships/MinbariSharlin/MinbariSharlin.nif")

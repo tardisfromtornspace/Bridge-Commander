@@ -10,7 +10,7 @@ Omega = App.ShipProperty_Create("Omega")
 
 Omega.SetGenus(1)
 Omega.SetSpecies(106)
-Omega.SetMass(100000.000000)
+Omega.SetMass(1800.000000)
 Omega.SetRotationalInertia(60000.000000)
 Omega.SetShipName("EAOmega")
 Omega.SetModelFilename("data/Models/Ships/EAOmega/eaomega.nif")

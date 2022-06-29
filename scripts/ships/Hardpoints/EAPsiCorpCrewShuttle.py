@@ -149,7 +149,7 @@ EACrewShuttle = App.ShipProperty_Create("EACrewShuttle")
 
 EACrewShuttle.SetGenus(1)
 EACrewShuttle.SetSpecies(106)
-EACrewShuttle.SetMass(27.000000)
+EACrewShuttle.SetMass(29.000000)
 EACrewShuttle.SetRotationalInertia(600.000000)
 EACrewShuttle.SetShipName("EAPsiCorpCrewShuttle")
 EACrewShuttle.SetModelFilename("data/Models/Ships/EACrewShuttle/EAPsiCorpCrewShuttle.nif")

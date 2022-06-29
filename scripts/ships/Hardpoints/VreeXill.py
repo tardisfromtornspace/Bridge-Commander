@@ -184,7 +184,7 @@ VreeXill = App.ShipProperty_Create("VreeXill")
 
 VreeXill.SetGenus(1)
 VreeXill.SetSpecies(410)
-VreeXill.SetMass(600.000000)
+VreeXill.SetMass(700.000000)
 VreeXill.SetRotationalInertia(20.000000)
 VreeXill.SetShipName("VreeXill")
 VreeXill.SetModelFilename("data/Models/Ships/VreeXill/VreeXill.nif")

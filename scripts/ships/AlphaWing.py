@@ -7,7 +7,7 @@ def GetShipStats():
 		"FilenameMed": "data/Models/Ships/EAStarfury/EAStarfury.nif",
 		"FilenameLow": "data/Models/Ships/EAStarfury/EAStarfury.nif",
 		"Name": "AlphaWing",
-		"HardpointFile": "EAStarfury",
+		"HardpointFile": "eastarfury",
 		"Species": Multiplayer.SpeciesToShip.SHUTTLE
 	}
 	return kShipStats

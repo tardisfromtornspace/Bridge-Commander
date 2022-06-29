@@ -293,7 +293,7 @@ Drakh = App.ShipProperty_Create("Drakh")
 
 Drakh.SetGenus(1)
 Drakh.SetSpecies(103)
-Drakh.SetMass(70.000000)
+Drakh.SetMass(90.000000)
 Drakh.SetRotationalInertia(8000.000000)
 Drakh.SetShipName("Drakh")
 Drakh.SetModelFilename("data/Models/Ships/DRA_Raider.nif")

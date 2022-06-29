@@ -162,7 +162,7 @@ DraziSunHawk = App.ShipProperty_Create("DraziSunHawk")
 
 DraziSunHawk.SetGenus(1)
 DraziSunHawk.SetSpecies(106)
-DraziSunHawk.SetMass(95.000000)
+DraziSunHawk.SetMass(200.000000)
 DraziSunHawk.SetRotationalInertia(190.000000)
 DraziSunHawk.SetShipName("DraziSunHawk")
 DraziSunHawk.SetModelFilename("data/Models/Ships/DraziSunHawk/DraziSunHawk.nif")

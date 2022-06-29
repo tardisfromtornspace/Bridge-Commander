@@ -9,7 +9,7 @@ import App
 #                                                                                     #
 #######################################################################################
 #                                                                                     #
-abbrev = 'EAStarfury'
+abbrev = 'AlphaWing'
 iconName = 'EAStarfury'
 longName = 'AlphaWing'
 shipFile = 'AlphaWing'
@@ -25,7 +25,7 @@ species = App.SPECIES_GALAXY
 # have use later on for updates and such.                                             #
 #                                                                                     #
 credits = {
-	'modName': 'EAStarfury',
+	'modName': 'AlphaWing',
 	'author': '',
 	'version': '1.0',
 	'sources': [ 'http://' ],
@@ -37,25 +37,25 @@ credits = {
 # This is the ShipDef that adds the Ship to the game... BC-Mod Packager has           #
 # automatically generated the proper ShipDef Line for you.                            #
 #                                                                                     #
-Foundation.ShipDef.EAStarfury = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
+Foundation.ShipDef.AlphaWing = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
 #                                                                                     #
 #######################################################################################
 #                                                                                     #
 # Uncomment these if you have TGL                                                     #
 #                                                                                     #
-# Foundation.ShipDef.EAStarfury.hasTGLName = 1
-# Foundation.ShipDef.EAStarfury.hasTGLDesc = 1
+# Foundation.ShipDef.AlphaWing.hasTGLName = 1
+# Foundation.ShipDef.AlphaWing.hasTGLDesc = 1
 #                                                                                     #
 # Otherwise, uncomment this and type something in:                                    #
 #                                                                                     #
-Foundation.ShipDef.EAStarfury.desc = 'Alpha Wing of Babylon 5'
+Foundation.ShipDef.AlphaWing.desc = 'Alpha Wing of Babylon 5.'
 #                                                                                     #
 #######################################################################################
 #                                                                                     #
 # These register the ship with the QuickBattle menus.  Don't touch them!!!            #
 #                                                                                     #
-if menuGroup:           Foundation.ShipDef.EAStarfury.RegisterQBShipMenu(menuGroup)
-if playerMenuGroup:     Foundation.ShipDef.EAStarfury.RegisterQBPlayerShipMenu(playerMenuGroup)
+if menuGroup:           Foundation.ShipDef.AlphaWing.RegisterQBShipMenu(menuGroup)
+if playerMenuGroup:     Foundation.ShipDef.AlphaWing.RegisterQBPlayerShipMenu(playerMenuGroup)
 
 if Foundation.shipList._keyList.has_key(longName):
      Foundation.ShipDef.__dict__[longName].friendlyDetails[2] = Foundation.shipList[longName].friendlyDetails[2]

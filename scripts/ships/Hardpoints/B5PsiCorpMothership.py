@@ -10,7 +10,7 @@ B5PsiCorpMothership = App.ShipProperty_Create("B5PsiCorpMothership")
 
 B5PsiCorpMothership.SetGenus(1)
 B5PsiCorpMothership.SetSpecies(106)
-B5PsiCorpMothership.SetMass(100.000000)
+B5PsiCorpMothership.SetMass(200.000000)
 B5PsiCorpMothership.SetRotationalInertia(60000.000000)
 B5PsiCorpMothership.SetShipName("B5PsiCorpMothership")
 B5PsiCorpMothership.SetModelFilename("data/Models/Ships/B5PsiCorpMothership/B5PsiCorpMothership.nif")

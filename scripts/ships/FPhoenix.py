@@ -6,7 +6,7 @@ def GetShipStats():
 		"FilenameHigh": "data/Models/Ships/phoenix/phoenix.NIF",
 		"FilenameMed": "data/Models/Ships/phoenix/phoenix.NIF",
 		"FilenameLow": "data/Models/Ships/phoenix/phoenix.NIF",		
-		"Name": "phoenix",
+		"Name": "CochranePhoenix",
 		"HardpointFile": "Fphoenix",
 		"Species": Multiplayer.SpeciesToShip.GALOR
 	}

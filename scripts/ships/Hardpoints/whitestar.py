@@ -352,7 +352,7 @@ whitestar = App.ShipProperty_Create("whitestar")
 
 whitestar.SetGenus(1)
 whitestar.SetSpecies(410)
-whitestar.SetMass(250.000000)
+whitestar.SetMass(500.000000)
 whitestar.SetRotationalInertia(25000.000000)
 whitestar.SetShipName("whitestar")
 whitestar.SetModelFilename("data/Models/Ships/whitestar.nif")
