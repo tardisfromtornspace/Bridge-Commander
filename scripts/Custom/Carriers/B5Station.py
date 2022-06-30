@@ -34,6 +34,8 @@ class B5Station( Carrier.Carrier):
         group.AddLauncher( "Shuttle Bay 5", launcher)
         launcher.AddLaunchable( "EAAchillesFreighter", "Custom.Sneaker.Mvam.MvamAI", 2)
         launcher.AddLaunchable( "EACrewShuttleBlue", "ftb.friendlyAI", 1)
+        launcher.AddLaunchable( "EAWorkerPod", "Custom.Sneaker.Mvam.MvamAI", 10)
+        launcher.AddLaunchable( "EACargoPod", "ftb.friendlyAI", 2)
 
         launcher = LauncherManager.GetLauncher( "Shuttle Bay 6", pShip)
         group.AddLauncher( "Shuttle Bay 6", launcher)
@@ -48,7 +50,7 @@ class B5Station( Carrier.Carrier):
     # Define how much Shuttles we can carry maximal (Return Shuttles script)
     def GetMaxShuttles(self):
     	debug(__name__ + ", GetMaxShuttles")
-    	return 40
+    	return 44
 
    
 ShipManager = __import__( "ftb.ShipManager")
