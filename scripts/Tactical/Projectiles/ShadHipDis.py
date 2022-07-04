@@ -32,7 +32,7 @@ def Create(pTorp):
     pTorp.SetGuidanceLifetime(GetGuidanceLifetime())
     pTorp.SetMaxAngularAccel(GetMaxAngularAccel())
     import Multiplayer.SpeciesToTorp
-    pTorp.SetNetType(Multiplayer.SpeciesToTorp.QUANTUMTORPEDO)
+    pTorp.SetNetType(Multiplayer.SpeciesToTorp.QUANTUM)
     return 0
 
 

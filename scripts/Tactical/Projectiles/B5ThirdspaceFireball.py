@@ -46,7 +46,7 @@ def GetLaunchSpeed():
 	return(30.0)
 
 def GetLaunchSound():
-	return("OCD_Pulse")
+	return("Centbeam Start")
 
 def GetPowerCost():
 	return(10.0)

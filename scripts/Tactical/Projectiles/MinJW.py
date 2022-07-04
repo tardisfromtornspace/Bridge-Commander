@@ -86,7 +86,7 @@ def GetGuidanceLifetime():
 def GetMaxAngularAccel():
 	return 9.9
 
-global lImmuneShips   #Tardis is immune because it's the TARDIS, a wormhole is not gonna appear inside the ship, Borg ships because of the subspace shields which may interfere with the formation of a jump-point inside the cube, super-future ships because they may have adapted to that too, and that odd Hatak there because of another mod where a Hatak is powered by Harry Potter energy blocking teleporting and wormholes or something.
+global lImmuneShips   #Tardis is immune because it's the TARDIS, a wormhole is not gonna appear inside the ship, Borg ships because of the subspace shields which may interfere with the formation of a jump-point inside the cube, super-future ships because they may have adapted to that too, the Thirdspace aliens to be more scary, and that odd Hatak there because of another mod where a Hatak is powered by Harry Potter energy blocking teleporting and wormholes or something.
 lImmuneShips = (
                 "Tardis",
                 "BorgCube",
@@ -98,6 +98,7 @@ lImmuneShips = (
                 "vger",
                 "VulcanXRT55D",
                 "EnterpriseJ",
+                "ThirdspaceCapitalShip",
                 )
 
 def TargetHit(pObject, pEvent):
