@@ -671,6 +671,9 @@ def AdditionalPosAndCheckIntercept(pAction, pTarget, IsPlanet):
                 pSalgo = "JumpspaceFlashExit"
                 pSonidoEntro = "EnteringFlash"
                 pSonidoSalgo = "ExitingFlash"
+                if (HasSigmaJumpspace(pPlayer) == "Sigma Walkers Jumpspace Installed"):
+                    pEntro = "SigmaFlash"
+                    pSalgo = "SigmaFlash"
                 if (HasPhasedJumpspace(pPlayer) == "Phased Jumpspace Installed"):
                     if not pPlayer.IsCloaked():
                         pCloak = pPlayer.GetCloakingSubsystem()
@@ -1205,7 +1208,10 @@ def ReturnETA(pSelectedSpeed):
 
         # Damn, all of this to get that... It's finally done!!!
         pTimerETA = 100000.0 / pTotal
-        
+
+        if (HasSigmaJumpspace(pPlayer) == "Sigma Walkers Jumpspace Installed"):
+                pTimerETA = pTimerETA / 1000
+
         pTimerETA = pTimerETA / pSelectedSpeed
 
         pTimerETA = float(str(pTimerETA)[0:3+1])
@@ -1271,6 +1277,9 @@ def ReturnIdealETA(pSelectedSpeed):
         # Damn, all of this to get that... It's finally done!!!
         pTimerIdealETA = 100000.0 / pTotal
         
+        if (HasSigmaJumpspace(pPlayer) == "Sigma Walkers Jumpspace Installed"):
+                pTimerIdealETA = pTimerIdealETA / 1000
+
         pTimerIdealETA = pTimerIdealETA / pSelectedSpeed
 
         pTimerIdealETA = float(str(pTimerIdealETA)[0:3+1])
@@ -1406,7 +1415,10 @@ def JumpspaceStats(pObject, pEvent):
 
         # Damn, all of this to get that... It's finally done!!!
         pTimer = 100000.0 / pTotal
-        
+
+        if (HasSigmaJumpspace(pPlayer) == "Sigma Walkers Jumpspace Installed"):
+                pTimer = pTimer / 1000
+
         pTimer = pTimer / pSelectedSpeed
 
         pTimer = float(str(pTimer)[0:3+1])
@@ -1447,6 +1459,7 @@ def HasJumpspace(pShip):
 		pSystem = pShip.GetNextSubsystemMatch(pIterator)
 
         pShip.EndGetSubsystemMatch(pIterator)
+
 # Checks if this ship can do phased Jumpspace
 def HasPhasedJumpspace(pPlayer):
         pIterator = pPlayer.StartGetSubsystemMatch(App.CT_SHIP_SUBSYSTEM)
@@ -1460,6 +1473,24 @@ def HasPhasedJumpspace(pPlayer):
                    if pStats > pDisabled:
                        # Engine is enabled, means it works
                        return 'Phased Jumpspace Installed'
+                       break                
+		pSystem = pPlayer.GetNextSubsystemMatch(pIterator)
+
+        pPlayer.EndGetSubsystemMatch(pIterator)
+
+# Checks if this ship can do Sigma Walkers Dimensional Drive
+def HasSigmaJumpspace(pPlayer):
+        pIterator = pPlayer.StartGetSubsystemMatch(App.CT_SHIP_SUBSYSTEM)
+	pSystem = pPlayer.GetNextSubsystemMatch(pIterator)
+
+	# Add the stats of each engine into the list
+        while (pSystem != None):
+		if pSystem.GetName() == "TransDimensional Drive":
+                   pStats = pSystem.GetConditionPercentage() * 100.0
+                   pDisabled = pSystem.GetDisabledPercentage() * 100.0
+                   if pStats > pDisabled:
+                       # Engine is enabled, means it works
+                       return 'Sigma Walkers Jumpspace Installed'
                        break                
 		pSystem = pPlayer.GetNextSubsystemMatch(pIterator)
 
@@ -1531,6 +1562,9 @@ def AdditionalPosAndCheck(pObject, pEvent):
                 pSalgo = "JumpspaceFlashExit"
                 pSonidoEntro = "EnteringFlash"
                 pSonidoSalgo = "ExitingFlash"
+                if (HasSigmaJumpspace(pPlayer) == "Sigma Walkers Jumpspace Installed"):
+                    pEntro = "SigmaFlash"
+                    pSalgo = "SigmaFlash"
                 if (HasPhasedJumpspace(pPlayer) == "Phased Jumpspace Installed"):
                     if not pPlayer.IsCloaked():
                         pCloak = pPlayer.GetCloakingSubsystem()
@@ -1611,6 +1645,9 @@ def CutsceneExit(pObject, pEvent):
         pSalgo = "JumpspaceFlashExit"
         pSonidoEntro = "EnteringFlash"
         pSonidoSalgo = "ExitingFlash"
+        if (HasSigmaJumpspace(pPlayer) == "Sigma Walkers Jumpspace Installed"):
+            pEntro = "SigmaFlash"
+            pSalgo = "SigmaFlash"
         if (HasPhasedJumpspace(pPlayer) == "Phased Jumpspace Installed"):
             if not pPlayer.IsCloaked():
                 pCloak = pPlayer.GetCloakingSubsystem()
@@ -1952,7 +1989,16 @@ def JumpspaceFlashExit(pAction):
         LoadFlash.B5CreateGFX(pPlayer)
 
         return 0
+def SigmaFlash(pAction):
+            
+        pPlayer = MissionLib.GetPlayer()
+            
+        # Load texture GFX
+        LoadFlash.SigmaFlashGFX()
+        # Create flash
+        LoadFlash.B5SigmaCreateGFX(pPlayer)
 
+        return 0
         
 # Here we go baby!
 def Engage(pObject, pEvent):
