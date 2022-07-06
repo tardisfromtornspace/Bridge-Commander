@@ -69,7 +69,7 @@ QuantumSingularity.SetMainBatteryLimit(15000000.000000)
 QuantumSingularity.SetBackupBatteryLimit(10000000.000000)
 QuantumSingularity.SetMainConduitCapacity(600.000000)
 QuantumSingularity.SetBackupConduitCapacity(400.000000)
-QuantumSingularity.SetPowerOutput(2000.000000)
+QuantumSingularity.SetPowerOutput(800.000000)
 App.g_kModelPropertyManager.RegisterLocalTemplate(QuantumSingularity)
 #################################################
 Sensor = App.SensorProperty_Create("Sensor")
