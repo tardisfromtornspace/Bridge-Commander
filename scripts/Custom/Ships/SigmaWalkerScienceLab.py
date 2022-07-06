@@ -8,7 +8,7 @@ import Foundation
 
 abbrev = "SigmaWalkerScienceLab"
 iconName = "SigmaWalkerScienceLab"
-longName = "Scientific Lab"
+longName = "The Traveller"
 shipFile = "SigmaWalkerScienceLab"
 species = App.SPECIES_SOVEREIGN
 menuGroup = "Babylon 5"

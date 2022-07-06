@@ -99,6 +99,8 @@ lImmuneShips = (
                 "VulcanXRT55D",
                 "EnterpriseJ",
                 "ThirdspaceCapitalShip",
+                "B5TriadTriumviron",
+                "SigmaWalkerScienceLab",
                 )
 
 def TargetHit(pObject, pEvent):
