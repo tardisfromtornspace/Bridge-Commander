@@ -33,3 +33,5 @@ InsideWormholeModel = 0
 StabilizeBC = 0
 IntroVid = 1
 CompletionVid = 1
+NoDamageThroughShields = 1
+EasterEggs = 1

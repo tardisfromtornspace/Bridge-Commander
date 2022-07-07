@@ -17,7 +17,9 @@ SubMenu = "Vorlon Empire"
 SubSubMenu = "Doomsday ships"
 
 Foundation.ShipDef.VOR_Planetkiller = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu, "SubSubMenu": SubSubMenu })
-Foundation.ShipDef.VOR_Planetkiller.dTechs = {'Breen Drainer Immune': 1,     'Fed Ablative Armor': { "Plates": ["Bio Organic Hull"]}}
+Foundation.ShipDef.VOR_Planetkiller.dTechs = {
+        'Breen Drainer Immune': 1
+}
 Foundation.ShipDef.VOR_Planetkiller.bPlanetKiller = 1
 
 Foundation.ShipDef.VOR_Planetkiller.desc = "The Vorlon planet killer was an enormous type of ship used by the Vorlon Empire to destroy entire planets. The planet killers were first discovered by the younger races in 2261 when White Star 2 detected a fleet of thousands of ships led by two planet killers in Hyperspace in Sector 70 by 10 by 53. Shortly afterwards the fleet moved in on Arcata VII and the planet was reduced to rubble."

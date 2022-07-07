@@ -8,7 +8,7 @@ import Foundation
 
 abbrev = "B5TriadTriumviron"
 iconName = "B5TriadTriumviron"
-longName = "The Triumviron"
+longName = "Triumviron"
 shipFile = "B5TriadTriumviron"
 species = App.SPECIES_SOVEREIGN
 menuGroup = "Babylon 5"

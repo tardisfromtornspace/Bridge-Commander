@@ -514,7 +514,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(ShuttleBay1OEP)
 #################################################
 ShuttleBay1 = App.HullProperty_Create("Shuttle Bay 1")
 
-ShuttleBay1.SetMaxCondition(1300.000000)
+ShuttleBay1.SetMaxCondition(1800.000000)
 ShuttleBay1.SetCritical(0)
 ShuttleBay1.SetTargetable(1)
 ShuttleBay1.SetPrimary(0)

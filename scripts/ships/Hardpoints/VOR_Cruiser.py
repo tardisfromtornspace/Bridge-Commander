@@ -18,7 +18,7 @@ BioOrganicHull.SetPosition(0.009189, 0.237915, 0.118693)
 BioOrganicHull.SetPosition2D(64.000000, 50.000000)
 BioOrganicHull.SetRepairComplexity(1.000000)
 BioOrganicHull.SetDisabledPercentage(0.000000)
-BioOrganicHull.SetRadius(4.000000)
+BioOrganicHull.SetRadius(30.000000)
 App.g_kModelPropertyManager.RegisterLocalTemplate(BioOrganicHull)
 #################################################
 ShieldGenerator = App.ShieldProperty_Create("Shield Generator")

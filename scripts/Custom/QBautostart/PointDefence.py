@@ -15,7 +15,11 @@ MODINFO = { "Author": "\"Defiant\" erik@bckobayashimaru.de",
             }
             
 
-lShipsPDWhiteList = ["AdOberth", "Aegean", "Aegian", "AlphaWing", "Ambassador", "Ambassadortp", "AMVoyager", "AncientCity", "AncientSatellite", "Andromeda", "ArmoredVoyager", "Atlantis", "B5CargoPod", "B5PsiCorpMothership", "B5Station", "B5TechnomageTransport", "B5TechnomageTransportIllusion", "B5TriadTriumviron", "Battlecrab", "Battlestar", "BrakiriCruiser", "CA8472", "C2Valdore", "C2excelsiorII", "CardHybrid", "CN_FedStarbase", "CylonBasestar", "DanielJackson", "DCMPDefiant", "Defiant", "DeltaWing", "DJEnterpriseG", "DJEnterpriseGDrive", "DJEnterpriseGSaucer", "DJEnterpriseGThunderbird", "DRA_Shuttle", "DRA_Raider", "DRA_Fighter", "DRA_Cruiser", "DRA_Carrier", "DraziSkySerpent", "DraziSunHawk", "DraziSunHawkWithSerpent", "ds9", "DyExcalibur", "EAForceOne", "EAHyperion", "EANova", "EAOmega", "EAOmegaX", "EAShadow_Hybrid", "EAStarfury", "EAStealthStarfury", "EAKestrel", "EAWorkerPod", "EchoWing", "Enterprise", "EnterpriseF", "EnterpriseJ", "Excalibur Transwarp", "Excalibur Uprated", "Excalibur", "ExcelsiorP81", "exeter", "Eximius", "Firebird", "FTBNeghvar", "Galactica", "Galaxy", "GalaxySaucer", "GalaxyStardrive", "GalaxyX", "Galor", "GQuan", "HadesBasestar", "HadesBasestar2003", "HalcyonPromise", "Hutet", "JediStarfighter", "Keldon", "KlingonImperialStarbase", "KTinga", "Kvort", "LCIntrepid", "LC_Excalibur", "LC_Excaliburtp", "LCIntrepid_warp", "LCRaptor", "lintsktinga", "MillionVoices", "MinbariNial", "MinbariSharlin", "MPneghvar", "MvamPrometheus", "MvamPrometheusDorsal", "MvamPrometheusSaucer", "MvamPrometheusVentral", "MvamVoyager", "MvamVoyagerSep", "NebulaX", "norway", "Nova", "novaII", "PaxMagellanic", "Pegasus", "PlanetExpress", "Praetor", "PsExcelsiorRefitTNG1", "pulsemine", "RomulanOutpost", "Shadow_Scout", "SigmaWalkerScienceLab", "SonaB", "Steamrunner", "Tardis", "ThirdspaceFighter", "ThirdspaceCapitalShip", "Tholian", "Thunderbolt", "TOSColDefender", "TWSB5StationUpgrade", "USSOrville", "ValdoreG", "VasKholhr", "Victory", "VOR_Cruiser", "VOR_Destroyer", "VOR_DestroyerClosed", "VOR_Fighter", "VOR_FighterOpen", "VOR_Planetkiller", "VulcanXRT55D", "Warbird", "Vorcha", "Warlock", "WCneghvar", "WCNemEntEnoyacht", "WCSonaBattleship", "XOversMinbariAshenShuumtian", "XOverAncientCityFed", "XOverAncientSatelliteFed", "Sovereign", "Nebula", "Phoenix", "USSLennox", "proximarefit", "Amredanddangerous", "TiconderogaA"]
+lShipsPDWhiteList = ["AdOberth", "Aegean", "Aegian", "AlphaWing", "Ambassador", "Ambassadortp", "AMVoyager", "AncientCity", "AncientSatellite", "Andromeda", "ArmoredVoyager", "Atlantis", "EACargoPod", "B5LordShip", "B5PsiCorpMothership", "B5Station", "B5TechnomageTransport", "B5TechnomageTransportIllusion", "B5TriadTriumviron", "Battlecrab", "Battlestar", "BrakiriCruiser", "CA8472", "C2Valdore", "C2excelsiorII", "CardHybrid", "CN_FedStarbase", "CylonBasestar", "DanielJackson", "DCMPDefiant", "Defiant", "DeltaWing", "DJEnterpriseG", "DJEnterpriseGDrive", "DJEnterpriseGSaucer", "DJEnterpriseGThunderbird", "DRA_Shuttle", "DRA_Raider", "DRA_Fighter", "DRA_Cruiser", "DRA_Carrier", "DraziSkySerpent", "DraziSunHawk", "DraziSunHawkWithSerpent", "ds9", "DyExcalibur", "EAForceOne", "EAHyperion", "EANova", "EAOmega", "EAOmegaX", "EAShadow_Hybrid", "EAStarfury", "EAStealthStarfury", "EAKestrel", "EAWorkerPod", "EchoWing", "Enterprise", "EnterpriseF", "EnterpriseJ", "Excalibur Transwarp", "Excalibur Uprated", "Excalibur", "ExcelsiorP81", "exeter", "Eximius", "Firebird", "FTBNeghvar", "Galactica", "Galaxy", "GalaxySaucer", "GalaxyStardrive", "GalaxyX", "Galor", "GQuan", "HadesBasestar", "HadesBasestar2003", "HalcyonPromise", "Hutet", "JediStarfighter", "Keldon", "KlingonImperialStarbase", "KTinga", "Kvort", "LCIntrepid", "LC_Excalibur", "LC_Excaliburtp", "LCIntrepid_warp", "LCRaptor", "lintsktinga", "MillionVoices", "MinbariNial", "MinbariSharlin", "MPneghvar", "MvamPrometheus", "MvamPrometheusDorsal", "MvamPrometheusSaucer", "MvamPrometheusVentral", "MvamVoyager", "MvamVoyagerSep", "NebulaX", "norway", "Nova", "novaII", "PaxMagellanic", "Pegasus", "PlanetExpress", "Praetor", "PsExcelsiorRefitTNG1", "pulsemine", "RomulanOutpost", "Shadow_Scout", "SigmaWalkerScienceLab", "SonaB", "Steamrunner", "Tardis", "ThirdspaceFighter", "ThirdspaceCapitalShip", "Tholian", "Thunderbolt", "TOSColDefender", "TWSB5StationUpgrade", "USSOrville", "ValdoreG", "VasKholhr", "Victory", "VOR_Cruiser", "VOR_Destroyer", "VOR_DestroyerClosed", "VOR_Fighter", "VOR_FighterOpen", "VOR_Planetkiller", "VulcanXRT55D", "Warbird", "Vorcha", "Warlock", "WCneghvar", "WCNemEntEnoyacht", "WCSonaBattleship", "XOversMinbariAshenShuumtian", "XOverAncientCityFed", "XOverAncientSatelliteFed", "Sovereign", "Nebula", "Phoenix", "USSLennox", "proximarefit", "Amredanddangerous", "TiconderogaA"]
+
+lShipsPulseDWhiteList = ["Andromeda", "B5CargoPod", "B5PsiCorpMothership", "B5Station", "Battlestar", "BrakiriCruiser", "CylonBasestar", "DeltaWing", "DRA_Shuttle", "EAForceOne", "EAHyperion", "EANova", "EAOmega", "EAOmegaX", "EAStarfury", "EAStealthStarfury", "EAKestrel", "EchoWing", "Galactica", "GQuan", "HadesBasestar", "HadesBasestar2003", "HalcyonPromise", "MillionVoices", "MinbariSharlin", "PaxMagellanic", "Pegasus", "ThirdspaceFighter", "ThirdspaceCapitalShip", "Thunderbolt", "TOSColDefender", "TWSB5StationUpgrade", "Warlock", "XOversMinbariAshenShuumtian"]
+
+
 FirePointName = "PointDefence Firepoint"
 i_FPcount = 0
 dictFirePointToTorp = {}
@@ -24,7 +28,6 @@ REMOVE_POINTER_FROM_SET = 190
 REMOVE_TORP_MESSAGE_AT = 191
 TorpList = []
 PointDefenceRunning = 0
-
 
 def MPSendRemoveTorpMessage(pTorp):
         # Now send a message to everybody else that the score was updated.
@@ -133,27 +136,44 @@ def ShipIsAllowedForPointDefence(pShip):
 
         return 0
 
+def ShipIsAllowedForPreferredPulseDefence(pShip):
+        debug(__name__ + ", ShipIsAllowedForPreferredPulseDefence")
+        global lShipsPulseDWhiteList
+        shipfile = GetShipType(pShip)
+
+	for sShip in lShipsPulseDWhiteList:
+		if ShipHasStringInName(shipfile, sShip):
+			return 1
+
+        return 0
+
 
 def PointDefenceStartStop(pObject, pEvent):
         debug(__name__ + ", PointDefenceStartStop")
         global PointDefenceRunning
         
         if PointDefenceRunning == 1:
-                return
-        PointDefenceRunning = 1
+                PointDefenceRunning = 0
+        else:   
+                PointDefenceRunning = 1
         
         pButton = GetPDButton()
         if pButton:
-                pButton.SetName(App.TGString("Point Defence: On"))
+                if PointDefenceRunning == 1:
+                        pButton.SetName(App.TGString("Point Defence: On"))
+                else:   
+                        pButton.SetName(App.TGString("Point Defence: Off"))
         
         pPlayer = MissionLib.GetPlayer()
         if not pPlayer:
                 return
         
         # Fed only Technology
-        if ShipIsAllowedForPointDefence(pPlayer):
+        if ShipIsAllowedForPointDefence(pPlayer) and PointDefenceRunning == 1:
                 PointDefenceGetTargets(pPlayer)
                 PointDefenceNextTarget(pObject, pEvent)
+
+        #return
 
 
 def PointDefenceGetTargets(pPlayer):
@@ -167,14 +187,21 @@ def PointDefenceGetTargets(pPlayer):
                 return
 
         lObjects = pSet.GetClassObjectList(App.CT_TORPEDO)
+
+        pWeaponSystem2 = pPlayer.GetPulseWeaponSystem()
+
+        PulseDefense = 0
+        if pWeaponSystem2 and ShipIsAllowedForPreferredPulseDefence(pPlayer):
+                PulseDefense = 1
         
         for pObject in lObjects:
                 # GetGuidanceLifeTime() > 0.0 will make sure we only Target Torpedos and no Pulse Weapons
                 pFiringShip = App.ShipClass_GetObjectByID(None, pObject.GetParentID())
 		if not pFiringShip:
 			return
-                if Distance(pPlayer, pObject) < 600 and pObject.GetGuidanceLifeTime() > 0.0 and not pFriendlies.IsNameInGroup(pFiringShip.GetName()):
-                        TorpList.append(pObject)
+                if Distance(pPlayer, pObject) < 600 and not pFriendlies.IsNameInGroup(pFiringShip.GetName()):
+                        if pObject.GetGuidanceLifeTime() > 0.0 or (pObject.GetGuidanceLifeTime() < 0.1 and PulseDefense == 1):
+                                TorpList.append(pObject)
         
 
 def PointDefenceNextTarget(pObject, pEvent):
@@ -189,23 +216,43 @@ def PointDefenceNextTarget(pObject, pEvent):
         pSensorSubsystem = pPlayer.GetSensorSubsystem()
         pSet = pPlayer.GetContainingSet()
         pWeaponSystem = pPlayer.GetPhaserSystem()
-        
-        if not pSet or not pWeaponSystem:
+
+        # Alex SL Gato changes, you can use disruptors and torpedoes too
+     
+        if not pSet:
                 return
-                
+ 
+        pWeaponSystem2 = pPlayer.GetPulseWeaponSystem()
+        PulseDefense = 0
+        if pWeaponSystem2 and (ShipIsAllowedForPreferredPulseDefence(pPlayer)):
+                pWeaponSystem = pPlayer.GetPulseWeaponSystem()   
+                PulseDefense = 1
+
+        if not pWeaponSystem:
+                pWeaponSystem = pPlayer.GetTorpedoSystem()
+                PulseDefense = 0
+
+        if not pWeaponSystem:
+                return
+                                           
         pWeaponSystem.StopFiring()
         sThisFirePointName = FirePointName + " " + pPlayer.GetName() + " " + str(i_FPcount)
-        if i_FPcount < 9:
+        if i_FPcount < 40: # Originally 9
                 i_FPcount = i_FPcount + 1
         else:
                 i_FPcount = 0
         
+        pSingleWeapon = pWeaponSystem.IsSingleFire()
+
         if TorpList:
+
                 pTorp = TorpList[0]
                 del TorpList[0]
                 
                 # check if the torpedo still exists:
                 if App.Torpedo_GetObjectByID(None, pTorp.GetObjID()):
+
+                        pWeaponSystem.GetProperty().SetSingleFire(1)
                 
                         pFirePoint = MissionLib.GetShip(sThisFirePointName)
                         # if it does not exist we have to create it first
@@ -217,7 +264,10 @@ def PointDefenceNextTarget(pObject, pEvent):
                         if pFirePoint:
                                 pTarget = App.ShipClass_GetObjectByID(None, pTorp.GetTargetID())
                                 if pTarget:
-                                        pFirePoint.EnableCollisionsWith(pTarget, 0)
+                                        if PulseDefense == 1:
+                                                pFirePoint.EnableCollisionsWith(pTarget, 1) # O normally
+                                        else:
+                                                pFirePoint.EnableCollisionsWith(pTarget, 0) # O normally
                 
                                 # This should make sure that the clients in MP get the right position
                                 if App.g_kUtopiaModule.IsMultiplayer():
@@ -240,11 +290,45 @@ def PointDefenceNextTarget(pObject, pEvent):
 
                                 pWeaponSystem.StartFiring(pFirePoint, vSubsystemOffset)
 
+                                if (PulseDefense == 1):
+                                        # get the World location of out Firepoint
+                                        kLocation = pTorp.GetWorldLocation()
+                                
+                                        # For the Explosion Size
+                                        if pFirePoint.GetPowerSubsystem():
+                                                pFirePoint.GetPowerSubsystem().GetProperty().SetPowerOutput(pTorp.GetDamage() / 10)
+                                
+                                        # Detach it from the Torpedo
+                                        if not App.g_kUtopiaModule.IsMultiplayer():
+                                                pTorp.DetachObject(pFirePoint)
+                                
+                                        # and let the torpedo fly on our Firepoint to get destroyed
+                                        pTorp.SetTarget(pFirePoint.GetObjID())
+                                                                
+                                        # tell other clients to also move the firepoint to the ship
+                                        if App.g_kUtopiaModule.IsMultiplayer():
+                                                MPSendRemoveTorpMessage(pTorp)
+                                
+                                        # Let the Torp destroy the Firepoint
+                                        pFirePoint.SetTranslate(kLocation)
+                                        pFirePoint.UpdateNodeOnly()
+
+                                pTime = 1 # 2
+                                pTime2 = 0.9
+                                if (PulseDefense == 1):
+                                        pTime = 0.5
+                                        pTime2 = 0.5
+
                                 pSeq = App.TGSequence_Create()
-                                pSeq.AppendAction(App.TGScriptAction_Create(__name__, "DeleteFirePoint", sThisFirePointName), 2)
+                                pSeq.AppendAction(App.TGScriptAction_Create(__name__, "DeleteFirePoint", sThisFirePointName), pTime + 1)
                                 pSeq.Play()
 
-		        MissionLib.CreateTimer(POINT_DEFENCE_TIMER, __name__ + ".PointDefenceNextTarget", App.g_kUtopiaModule.GetGameTime() + 0.9, 0, 0)
+                                if pSingleWeapon:
+                                        pWeaponSystem.GetProperty().SetSingleFire(1)
+                                else:
+                                        pWeaponSystem.GetProperty().SetSingleFire(0)
+
+		        MissionLib.CreateTimer(POINT_DEFENCE_TIMER, __name__ + ".PointDefenceNextTarget", App.g_kUtopiaModule.GetGameTime() + pTime2, 0, 0)
                 else:
                         PointDefenceRunning = 0
         else:

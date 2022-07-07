@@ -227,7 +227,7 @@ def PDNextTarget(pObject, pEvent):
                 else:
                         PDRunning = 0
         else:
-                PointDefenceRunning = 0
+                PDRunning = 0
 
 
 def DeleteFirePoint(pAction, sThisFirePointName):
