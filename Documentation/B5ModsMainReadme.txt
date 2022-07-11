@@ -5,6 +5,7 @@
 - scripts: for the most part Alex SL Gato, except the Babylon 5 Jumpspace technology, which was adapted from the Slipstream's creator by Alex SL Gato
 - mod/ships/hardpoint: Alex SL Gato.
 - Special shadow cloak/decloak sound: taken by Alex SL Gato from the Babylon 5 season 4 intro.
+- Movie intro: All credit to the original visual effects artists at Foundation Imaging and Netter Digital who made television history.
 
 ===Mods required===
 You'll of course need Foundation, Nanofx2, Submenu v 3.0, QBAutostart and Kobayashi Maru mod, the latest version the better. 
@@ -16,7 +17,7 @@ You'll of course need Foundation, Nanofx2, Submenu v 3.0, QBAutostart and Kobaya
 
 3º After opening your STBC go to the options and activate "The Jumpspace" in start menu, and then activate all the new incorporated mutators (this mod uses foundation, all variants of Mvam, B5 uniforms, and Jumpspace, plus point defence, redistribute shields and repair destroyed systems mod. Ensure all of those Mutators are activated when playing to get the best experience of the B5 mod).
 
-4º It's strongly recommended to activate DS9FX so No Damage through Shields is active (see reasons below), but it's not necessary.
+4º It's strongly recommended to activate DS9FX so No Damage through Shields is active, but it's not necessary.
 
 --- Why those mutators/configurations are important ---
 

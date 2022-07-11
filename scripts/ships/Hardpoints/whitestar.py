@@ -60,7 +60,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(QuantumGraviticReactor)
 #################################################
 RegenerationSystem = App.RepairSubsystemProperty_Create("Regeneration System")
 
-RegenerationSystem.SetMaxCondition(1800.000000)
+RegenerationSystem.SetMaxCondition(2000.000000)
 RegenerationSystem.SetCritical(0)
 RegenerationSystem.SetTargetable(0)
 RegenerationSystem.SetPrimary(1)

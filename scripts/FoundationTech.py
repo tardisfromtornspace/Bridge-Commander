@@ -1346,7 +1346,10 @@ def InaccurateFire(pShip, pSystem, pTarget):
                 fSensorRange = fSensorRange * pSensor.GetConditionPercentage() * pSensor.GetPowerPercentageWanted()
 
         #fMiss = (fAngleDiff * 0.5 + fObjectDistance * 0.5) / ((fSensorRange / 20.0)+ 1.0)
-        fMiss = (fAngleDiff * fObjectDistance * 2.2) / (fSensorRange + 1.0)
+
+        # Alex SL Gato: We love innacurate phasers, but not that much when the target is literally at 10 units from you and keep missing. Changing 2.2 to 1.0 and 0.15, and made it so sensors are better
+        # fMiss = ((fAngleDiff * fObjectDistance) * 2.2) / (fSensorRange + 1.0)
+        fMiss = (fAngleDiff * (1.0 + fObjectDistance * 0.15)) / (16 * fSensorRange + 1.0)
         if fMiss > 2.0:
                 fMiss = 2.0 + fMiss / 100.0
 
@@ -1361,7 +1364,7 @@ def InaccurateFire(pShip, pSystem, pTarget):
 		pSystem.SetForceUpdate(1) # update and fire immediately
 
 	else:
-		#if fMiss > 2.0:
+		# if fMiss > 2.0:
 		#	fMiss = 2.0
 
 		# print 'Off target', fMiss

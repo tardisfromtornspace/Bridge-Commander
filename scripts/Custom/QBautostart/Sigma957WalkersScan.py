@@ -148,7 +148,7 @@ def ReleaseEMPulse(pObject, pEvent):
 					for pSystem in lSubs:
 						if pSystem:		
 							DisabledPercentage = pSystem.GetDisabledPercentage()
-							pSystem.SetConditionPercentage(DisabledPercentage-0.02) # Will disable but still allow repair systems to work.EMPDamageEffect
+							pSystem.SetConditionPercentage(DisabledPercentage-0.15) # Will disable but still allow repair systems to work.EMPDamageEffect
 					Custom.NanoFXv2.NanoFX_Lib.CreateFlickerSeq(pObject, 1.5, sStatus = "Off")
 	pObject.CallNextHandler(pEvent)
 

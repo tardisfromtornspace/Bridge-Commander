@@ -63,7 +63,7 @@ Sensor.SetRepairComplexity(1.000000)
 Sensor.SetDisabledPercentage(0.500000)
 Sensor.SetRadius(0.060000)
 Sensor.SetNormalPowerPerSecond(1.000000)
-Sensor.SetBaseSensorRange(1000.000000)
+Sensor.SetBaseSensorRange(3500.000000)
 Sensor.SetMaxProbes(0)
 App.g_kModelPropertyManager.RegisterLocalTemplate(Sensor)
 #################################################
