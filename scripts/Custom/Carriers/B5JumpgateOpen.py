@@ -197,11 +197,14 @@ class B5JumpgateOpen(Carrier.Carrier):
                launcher1.AddLaunchable('whitestar', 'ftb.friendlyAI', 12)
 
 
+               launcher1.AddLaunchable('EAExplorer', 'ftb.friendlyAI', 1)
+
+
                self.AddLauncher('Group 1', group)
 
 
    def GetMaxShuttles(self):
-               return 180
+               return 181
 
 
 ShipManager = __import__('ftb.ShipManager')
