@@ -24,7 +24,7 @@ MainSensorArray.SetBaseSensorRange(12000.000000)
 MainSensorArray.SetMaxProbes(100)
 App.g_kModelPropertyManager.RegisterLocalTemplate(MainSensorArray)
 #################################################
-FrontCannon = App.PulseWeaponProperty_Create("Front Cannon")
+FrontCannon = App.PulseWeaponProperty_Create("Front Cannon 1")
 
 FrontCannon.SetMaxCondition(5000.000000)
 FrontCannon.SetCritical(0)
@@ -468,7 +468,7 @@ ImpulseEngines.SetMaxSpeed(9.000000)
 ImpulseEngines.SetEngineSound("Federation Engines")
 App.g_kModelPropertyManager.RegisterLocalTemplate(ImpulseEngines)
 #################################################
-Phasers = App.WeaponSystemProperty_Create("Phasers")
+Phasers = App.WeaponSystemProperty_Create("Beam")
 
 Phasers.SetMaxCondition(3200.000000)
 Phasers.SetCritical(0)
@@ -866,7 +866,7 @@ USSOrville.SetGenus(1)
 USSOrville.SetSpecies(103)
 USSOrville.SetMass(1000.000000)
 USSOrville.SetRotationalInertia(8000.000000)
-USSOrville.SetShipName("Prometheus")
+USSOrville.SetShipName("USSOrville")
 USSOrville.SetModelFilename("data/Models/Ships/USSOrville/USSOrville.nif")
 USSOrville.SetDamageResolution(8.000000)
 USSOrville.SetAffiliation(0)
@@ -1344,7 +1344,7 @@ def LoadPropertySet(pObj):
 	prop = App.g_kModelPropertyManager.FindByName("Dysonium Core", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
-	prop = App.g_kModelPropertyManager.FindByName("Phasers", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	prop = App.g_kModelPropertyManager.FindByName("Beam", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
 	prop = App.g_kModelPropertyManager.FindByName("Pulse Weapons", App.TGModelPropertyManager.LOCAL_TEMPLATES)
@@ -1374,7 +1374,7 @@ def LoadPropertySet(pObj):
 	prop = App.g_kModelPropertyManager.FindByName("Engineering", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
-	prop = App.g_kModelPropertyManager.FindByName("Front Cannon", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	prop = App.g_kModelPropertyManager.FindByName("Front Cannon 1", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
 	prop = App.g_kModelPropertyManager.FindByName("Front Cannon 2", App.TGModelPropertyManager.LOCAL_TEMPLATES)
