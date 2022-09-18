@@ -1,0 +1,32 @@
+#This is the dump of the LogCreator: <USS Orville-8 Travel Logger LogCreator_IyxnCG2el1B2>
+#This log file was created on: 1:24:26.850 of 17/September/2022, Saturday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>1:24:26.850 of 17/September/2022, Saturday
+#>>>Initialized USS Orville-8 Travel logger
+#>>>SELF = <USS Orville-8(88615) Travel_L5E24ba6lV2Y>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Omega Class-1
+## -------------------- ##
+####################
+#######>>>1:24:40.165 of 17/September/2022, Saturday
+#>>>Updated Target Ship = Omega Class-5
+########################################
+# 1:29:12.923 of 17/September/2022, Saturday
+#Ending of log dump - User is quiting the game
+########################################

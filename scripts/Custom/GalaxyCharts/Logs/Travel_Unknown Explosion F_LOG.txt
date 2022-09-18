@@ -1,0 +1,27 @@
+#This is the dump of the LogCreator: <Unknown Explosion F Travel Logger LogCreator_D6GI6tbgd4F5>
+#This log file was created on: 3:29:50.154 of 17/September/2022, Saturday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>3:29:50.154 of 17/September/2022, Saturday
+#>>>Initialized Unknown Explosion F Travel logger
+#>>>SELF = <Unknown Explosion F(384914) Travel_s7CQXZ24tdF6>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+########################################
+# 3:39:7.718 of 17/September/2022, Saturday
+#Ending of log dump - User is quiting the game
+########################################

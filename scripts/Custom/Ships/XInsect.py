@@ -36,6 +36,10 @@ credits = {
 # automatically generated the proper ShipDef Line for you.                            #
 #                                                                                     #
 Foundation.ShipDef.XInsect = Foundation.FerengiShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile })
+
+Foundation.ShipDef.XInsect.dTechs = {
+	'Polarized Hull Plating': { "Plates": ["Hull Polarizer"]
+}}
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

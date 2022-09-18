@@ -18,6 +18,8 @@ Foundation.ShipDef.UENeptune = Foundation.ShipDef(abbrev, species, { 'name': lon
 
 
 Foundation.ShipDef.UENeptune.desc = "The Neptune class was a United Earth starship class in service to Earth Starfleet in the 22nd century. The Neptune class saw service in the Earth-Romulan War."
+Foundation.ShipDef.UENeptune.fMaxWarp = 2.0
+Foundation.ShipDef.UENeptune.fCruiseWarp = 1.7
 Foundation.ShipDef.UENeptune.dTechs = {
 	'Polarized Hull Plating': { "Plates": ["Hull Polarizer"]
 }}

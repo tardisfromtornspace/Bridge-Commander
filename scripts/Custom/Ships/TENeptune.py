@@ -17,6 +17,8 @@ Foundation.ShipDef.TENeptune = Foundation.ShipDef(abbrev, species, { 'name': lon
 
 
 Foundation.ShipDef.TENeptune.desc = "Use the four forward phasers and 2 torpedo tubes to soften up the opponents forward shielding because the ships limited sensor range prohibits subsystem targeting until 30 kilometers distance. Watch your flank, there is no aft waepons and your enemy can exploit that weakness. Once your shields go down on any point, the opponent will make quick work of your ships systems and hull so turn that part AWAY from the firing line. To go againt this ship, target the Hull Polarizer and destroy it then go for the impulse engines. The ship will be easier to hit with the Photonic torpedos of the era becasue the ship will be less manuverable"
+Foundation.ShipDef.TENeptune.fMaxWarp = 2.0
+Foundation.ShipDef.TENeptune.fCruiseWarp = 1.7
 Foundation.ShipDef.TENeptune.dTechs = {
 	'Polarized Hull Plating': { "Plates": ["Hull Polarizer"]
 }}

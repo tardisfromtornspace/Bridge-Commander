@@ -1,0 +1,50 @@
+#This is the dump of the LogCreator: <Shadow_Fighter6 2 Travel Logger LogCreator_pYO4hJysJh2e>
+#This log file was created on: 3:29:43.923 of 17/September/2022, Saturday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>3:29:43.923 of 17/September/2022, Saturday
+#>>>Initialized Shadow_Fighter6 2 Travel logger
+#>>>SELF = <Shadow_Fighter6 2(377403) Travel_u9a09Z40AWTm>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>3:29:49.801 of 17/September/2022, Saturday
+#>>>Updated Target Ship = USS Orville-1
+#>>>Can Chase Target = 0
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>3:29:50.154 of 17/September/2022, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>3:29:50.694 of 17/September/2022, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>3:29:51.529 of 17/September/2022, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>3:29:52.496 of 17/September/2022, Saturday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 3:39:7.718 of 17/September/2022, Saturday
+#Ending of log dump - User is quiting the game
+########################################

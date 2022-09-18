@@ -952,7 +952,7 @@ Sickbay.SetDisabledPercentage(0.500000)
 Sickbay.SetRadius(0.060000)
 App.g_kModelPropertyManager.RegisterLocalTemplate(Sickbay)
 #################################################
-ObersationDeck = App.HullProperty_Create("Obersation Deck")
+ObersationDeck = App.HullProperty_Create("Observation Deck")
 
 ObersationDeck.SetMaxCondition(600.000000)
 ObersationDeck.SetCritical(0)

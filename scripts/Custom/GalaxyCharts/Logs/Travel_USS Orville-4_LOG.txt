@@ -1,0 +1,32 @@
+#This is the dump of the LogCreator: <USS Orville-4 Travel Logger LogCreator_NG9291x2odFn>
+#This log file was created on: 2:22:37.904 of 17/September/2022, Saturday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>2:22:37.904 of 17/September/2022, Saturday
+#>>>Initialized USS Orville-4 Travel logger
+#>>>SELF = <USS Orville-4(2040112) Travel_peCqd4n9OhFQ>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship =  Warship-1
+## -------------------- ##
+####################
+#######>>>2:22:57.610 of 17/September/2022, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>2:22:57.957 of 17/September/2022, Saturday
+#>>> -Cancelling, too close to target to warp intercept...

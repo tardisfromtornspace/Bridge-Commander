@@ -37,6 +37,9 @@ credits = {
 # automatically generated the proper ShipDef Line for you.                            #
 #                                                                                     #
 Foundation.ShipDef.Surrok = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
+
+Foundation.ShipDef.Surrok.fMaxWarp = 7.0
+Foundation.ShipDef.Surrok.fCruiseWarp = 6.5
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

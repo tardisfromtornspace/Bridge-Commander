@@ -1,7 +1,123 @@
-#This is the dump of the LogCreator: <Gravity Manager LogCreator_8YzXzUF6aYDM>
-#This log file was created on: 18:46:13.0 of 29/June/2022, Wednesday
+#This is the dump of the LogCreator: <Gravity Manager LogCreator_Dy4b44kjf63N>
+#This log file was created on: 1:4:10.0 of 19/September/2022, Monday
 ########################################
 ## -------------------- ##
 ####################
-#######>>>18:46:13.0 of 29/June/2022, Wednesday
-#>>>Initialized GravityManager_uR5lANkYK192 logger
+#######>>>1:4:10.0 of 19/September/2022, Monday
+#>>>Initialized GravityManager_HA01bwKr12X9 logger
+## -------------------- ##
+####################
+#######>>>1:4:40.864 of 19/September/2022, Monday
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_bKhZy9q8G50i>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player']
+#>>>Updated radius for grav well <Belaruz 4 GravityWell_bKhZy9q8G50i>, radius is now 1600.50195313
+## -------------------- ##
+####################
+#######>>>1:5:20.510 of 19/September/2022, Monday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_viZ9h86ub21b>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player', 'Xorr Saucer-1']
+#>>>Refreshed Ship List: ['Player', 'Xorr Saucer-1']
+## -------------------- ##
+####################
+#######>>>1:7:8.800 of 19/September/2022, Monday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_6jmy4d3R7HN1>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Xorr Saucer-1', 'Player']
+## -------------------- ##
+####################
+#######>>>1:7:26.314 of 19/September/2022, Monday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_JU4686YL343R>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player', 'Xorr Saucer-1', 'Insectoid-2']
+#>>>Refreshed Ship List: ['Player', 'Xorr Saucer-1', 'Insectoid-2']
+#>>>Refreshed Ship List: ['Player', 'Xorr Saucer-1', 'Insectoid-2']
+## -------------------- ##
+####################
+#######>>>1:8:6.620 of 19/September/2022, Monday
+#>>>Refreshed Ship List: ['Player', 'Insectoid-2']
+## -------------------- ##
+####################
+#######>>>1:9:45.987 of 19/September/2022, Monday
+#>>>Refreshed Ship List: ['Player', 'Insectoid-2']
+## -------------------- ##
+####################
+#######>>>1:9:46.598 of 19/September/2022, Monday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_1C35lc1O29XK>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Insectoid-2', 'Player']
+## -------------------- ##
+####################
+#######>>>1:15:3.213 of 19/September/2022, Monday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_BSL5RrWO3e3v>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player', 'Insectoid-1']
+#>>>Refreshed Ship List: ['Player', 'Insectoid-1']
+## -------------------- ##
+####################
+#######>>>1:18:5.167 of 19/September/2022, Monday
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>1:19:8.892 of 19/September/2022, Monday
+#>>>Refreshed Ship List: ['Player', 'XInsect 1']
+## -------------------- ##
+####################
+#######>>>1:20:52.721 of 19/September/2022, Monday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_Zj6sQKJ99HU3>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['XInsect 1', 'Player']
+## -------------------- ##
+####################
+#######>>>1:20:54.280 of 19/September/2022, Monday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_SCGaOUapyJ0O>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['XInsect 1', 'Player']
+## -------------------- ##
+####################
+#######>>>1:20:55.425 of 19/September/2022, Monday
+#>>>Refreshed Ship List: ['XInsect 1', 'Player']
+## -------------------- ##
+####################
+#######>>>1:20:56.508 of 19/September/2022, Monday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_PIzUEPm7iUrM>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player', 'Insectoid-1']
+#>>>Refreshed Ship List: ['Player', 'Insectoid-1']
+## -------------------- ##
+####################
+#######>>>1:22:4.577 of 19/September/2022, Monday
+#>>>Refreshed Ship List: ['Player', 'Insectoid-1']
+## -------------------- ##
+####################
+#######>>>1:29:32.931 of 19/September/2022, Monday
+#>>>Refreshed Ship List: ['Player', 'Insectoid-1']
+## -------------------- ##
+####################
+#######>>>1:29:34.218 of 19/September/2022, Monday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_e3PWyA1JtwWq>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Insectoid-1', 'Player']
+########################################
+# 1:29:41.207 of 19/September/2022, Monday
+#Ending of log dump - User is quiting the game
+########################################

@@ -24,6 +24,7 @@ lActiveMutators = [
 	"""USS Frontier's Galaxy Charts""",
 	"""Planet Classification Script""",
 	"""Extra Ships and Mods""",
+	"""Babylon 5 Uniforms""",
 	"""Random Crew Reports""",
 	"""Foundation Technologies""",
 	"""Stock Ships""",

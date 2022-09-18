@@ -1,0 +1,61 @@
+#This is the dump of the LogCreator: < Warship-1 Travel Logger LogCreator_Xpc8fTI4hMfm>
+#This log file was created on: 2:22:37.904 of 17/September/2022, Saturday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>2:22:37.904 of 17/September/2022, Saturday
+#>>>Initialized  Warship-1 Travel logger
+#>>>SELF = < Warship-1(2030601) Travel_97ZL8A7i4DZ5>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>2:22:52.627 of 17/September/2022, Saturday
+#>>>Updated Target Ship = USS Orville-2
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>2:22:53.089 of 17/September/2022, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>2:22:53.252 of 17/September/2022, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>2:22:53.731 of 17/September/2022, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>2:22:54.362 of 17/September/2022, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>2:22:54.891 of 17/September/2022, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>2:22:55.324 of 17/September/2022, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>2:23:17.926 of 17/September/2022, Saturday
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>2:24:8.760 of 17/September/2022, Saturday
+#>>>Updated Target Ship = USS Orville-3
