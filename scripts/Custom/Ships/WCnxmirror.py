@@ -50,7 +50,9 @@ Foundation.ShipDef.WCnxmirroravenger = Foundation.FedShipDef(abbrev, species, { 
 
 Foundation.ShipDef.WCnxmirroravenger.desc = "The ISS Avenger (NX-09) was a Terran NX-class battle cruiser that was in service to Starfleet in the mid-22nd century. Avenger had fought for the Terran Empire in their war against rebels in the 2150s, and was one of several vessels destroyed by the starship USS Defiant during Jonathan Archer's power struggle for the throne of the Empire. Mirror NX-09 Avenger by WileyCoyote"
 Foundation.ShipDef.WCnxmirroravenger.SubMenu = "NX Class"
-
+Foundation.ShipDef.WCnxmirroravenger.dTechs = {
+	'Polarized Hull Plating': { "Plates": ["Hull Polarizer"]
+}}
 
 if menuGroup:           Foundation.ShipDef.WCnxmirroravenger.RegisterQBShipMenu(menuGroup)
 if playerMenuGroup:     Foundation.ShipDef.WCnxmirroravenger.RegisterQBPlayerShipMenu(playerMenuGroup)
