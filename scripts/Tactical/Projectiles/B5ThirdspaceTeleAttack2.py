@@ -137,9 +137,9 @@ def TargetHit(pObject, pEvent):
         pSequence.Play()
         #pGroup.AddName(pVictim.GetName())
         ## Clear AI
-        #pAIModule = __import__("QuickBattle.QuickBattleAI")
-        #pVictim.SetAI(pAIModule.CreateAI(pVictim), 0, 0)
-        #pVictim.ClearAI()
+        pAIModule = __import__("QuickBattle.QuickBattleAI")
+        pVictim.SetAI(pAIModule.CreateAI(pVictim), 0, 0)
+        pVictim.ClearAI()
         ####################################################################
 	return
 

@@ -35,7 +35,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(Cockpit)
 Hull = App.HullProperty_Create("Sky Serpent Hull")
 
 Hull.SetMaxCondition(50.000000)
-Hull.SetCritical(1)
+Hull.SetCritical(0)
 Hull.SetTargetable(1)
 Hull.SetPrimary(0)
 Hull.SetPosition(0.000000, 0.330744, 0.250000)
