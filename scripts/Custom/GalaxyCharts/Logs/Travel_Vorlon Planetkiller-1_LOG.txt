@@ -1,0 +1,42 @@
+#This is the dump of the LogCreator: <Vorlon Planetkiller-1 Travel Logger LogCreator_96so9gO5hzSv>
+#This log file was created on: 20:51:47.962 of 26/September/2022, Monday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>20:51:47.962 of 26/September/2022, Monday
+#>>>Initialized Vorlon Planetkiller-1 Travel logger
+#>>>SELF = <Vorlon Planetkiller-1(1655830) Travel_F5J2vi8OXz7H>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>20:51:57.703 of 26/September/2022, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>20:51:58.328 of 26/September/2022, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>20:52:16.429 of 26/September/2022, Monday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 20:52:56.928 of 26/September/2022, Monday
+#Ending of log dump - User is quiting the game
+########################################

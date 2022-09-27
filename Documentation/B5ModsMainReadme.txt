@@ -1,11 +1,14 @@
 ==Changelog==
+1.0.2 - 
+ Bug Fixes:
+ * Missing Bluestar fusion beams, now fixed! Thanks to RetroBadger for finding it out!
 1.0.1 - 
  Bug Fixes:
  * SkyHawk hardpoint had the shuttle Mvam hull set as critical, now it won't randomly explode.
  * Fixes to Torvalus Dark Knife hardpoint, shielding was not regenerating.
  * Fixes to projectiles B5ThirdspaceTeleAttack and B5ThirdspaceTeleAttack2, now the AI swap should be clean(er). Be careful players, that will mean friendlies will attack you.
  Extra Features:
- * Minbari Sharlin hardpoint gained another Fusion Beam Cannon, as seen in Thridspace movie.
+ * Minbari Sharlin hardpoint gained another Fusion Beam Cannon, as seen in Thirdspace movie.
 1.0.0 - Mod released. Verified functionality on Kobayashi Maru Mod, and both disk and GoG versions of STBC (thanks to THE SCI-FI KING and RetroBadger Gaming).
 
 

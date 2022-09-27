@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Thirdspace Fighter-7 Travel Logger[2] LogCreator_4OAPtAWkj3ya>
-#This log file was created on: 18:27:43.746 of 18/September/2022, Sunday
+#This is the dump of the LogCreator: <Thirdspace Fighter-7 Travel Logger[2] LogCreator_yJRK8Ygnq3H2>
+#This log file was created on: 22:14:57.845 of 25/September/2022, Sunday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>18:27:43.746 of 18/September/2022, Sunday
+#######>>>22:14:57.845 of 25/September/2022, Sunday
 #>>>Initialized Thirdspace Fighter-7 Travel logger
-#>>>SELF = <Thirdspace Fighter-7(168504) Travel_28jDbnHo1wG2>
+#>>>SELF = <Thirdspace Fighter-7(543292) Travel_B16rN26e2dFa>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -21,52 +21,41 @@ Updating Travelling Procedures...
 #>>>Chaser base class initialization complete.
 #>>>Target Ship = NONE
 #>>>Chaser pre-emptive Refresher Initialization
-#>>>Updated Target Ship = Player
+#>>>Updated Target Ship = Cube-1
 ## -------------------- ##
 ####################
-#######>>>18:28:4.128 of 18/September/2022, Sunday
-#>>>Updated Target Ship = Thirdspace Capital Ship-1
+#######>>>22:15:10.194 of 25/September/2022, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>18:28:4.660 of 18/September/2022, Sunday
-#>>>Updated Target Ship = Cheyenne-10
+#######>>>22:15:10.478 of 25/September/2022, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>18:28:48.065 of 18/September/2022, Sunday
-#>>>Updated Target Ship = Thirdspace Capital Ship-1
+#######>>>22:15:11.028 of 25/September/2022, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>18:28:48.902 of 18/September/2022, Sunday
-#>>>Updated Target Ship = Cheyenne-9
+#######>>>22:15:11.878 of 25/September/2022, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>18:29:11.946 of 18/September/2022, Sunday
-#>>>Updated Target Ship = Cheyenne-12
+#######>>>22:15:12.161 of 25/September/2022, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>18:30:35.662 of 18/September/2022, Sunday
-#>>>Updated Target Ship = Defiant-16
+#######>>>22:15:12.744 of 25/September/2022, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>18:30:37.221 of 18/September/2022, Sunday
-#>>>Updated Target Ship = Cheyenne-11
+#######>>>22:15:13.744 of 25/September/2022, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>18:30:39.225 of 18/September/2022, Sunday
-#>>>Updated Target Ship = Cheyenne-12
-## -------------------- ##
-####################
-#######>>>18:30:41.056 of 18/September/2022, Sunday
-#>>>Updated Target Ship = Defiant-15
-## -------------------- ##
-####################
-#######>>>18:30:41.395 of 18/September/2022, Sunday
-#>>>Updated Target Ship = Defiant-16
-## -------------------- ##
-####################
-#######>>>18:30:45.126 of 18/September/2022, Sunday
-#>>>Stopping Refresh Handler
-#>>>Deleting...
+#######>>>22:15:14.145 of 25/September/2022, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
  -Update Loop MARK START
@@ -75,9 +64,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>18:32:48.523 of 18/September/2022, Sunday
+#######>>>22:15:32.310 of 25/September/2022, Sunday
 #>>>Initialized Thirdspace Fighter-7 Travel logger
-#>>>SELF = <Thirdspace Fighter-7(516646) Travel_zNAtASa0d7cZ>
+#>>>SELF = <Thirdspace Fighter-7(598951) Travel_GNDmkc8V5s4z>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -87,133 +76,9 @@ Updating Travelling Procedures...
 #>>>Chaser base class initialization complete.
 #>>>Target Ship = NONE
 #>>>Chaser pre-emptive Refresher Initialization
-#>>>Updated Target Ship = Player
+#>>>Updated Target Ship = Cube-1
 ## -------------------- ##
 ####################
-#######>>>18:32:56.373 of 18/September/2022, Sunday
-#>>>Updated Target Ship = Defiant-14
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>18:32:56.747 of 18/September/2022, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>18:32:57.316 of 18/September/2022, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>18:32:57.453 of 18/September/2022, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>18:32:57.980 of 18/September/2022, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>18:32:58.540 of 18/September/2022, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>18:32:59.114 of 18/September/2022, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>18:32:59.521 of 18/September/2022, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>18:33:0.199 of 18/September/2022, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>18:33:0.735 of 18/September/2022, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>18:33:1.355 of 18/September/2022, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>18:33:1.600 of 18/September/2022, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>18:33:1.935 of 18/September/2022, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>18:33:2.257 of 18/September/2022, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>18:33:2.815 of 18/September/2022, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>18:33:3.104 of 18/September/2022, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>18:33:3.616 of 18/September/2022, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>18:33:3.937 of 18/September/2022, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>18:33:4.371 of 18/September/2022, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>18:33:4.984 of 18/September/2022, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>18:33:5.371 of 18/September/2022, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>18:33:6.356 of 18/September/2022, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>18:33:6.754 of 18/September/2022, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>18:33:7.238 of 18/September/2022, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>18:33:7.988 of 18/September/2022, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>18:33:8.239 of 18/September/2022, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>18:33:8.930 of 18/September/2022, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>18:33:9.189 of 18/September/2022, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>18:33:9.620 of 18/September/2022, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>18:33:9.937 of 18/September/2022, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>18:33:17.461 of 18/September/2022, Sunday
-#>>>Updated Target Ship = Defiant-16
-## -------------------- ##
-####################
-#######>>>18:33:44.859 of 18/September/2022, Sunday
-#>>>Updated Target Ship = Cheyenne-12
+#######>>>22:15:43.344 of 25/September/2022, Sunday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

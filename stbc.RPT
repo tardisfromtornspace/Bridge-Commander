@@ -4251,3 +4251,89 @@ Doing stack walk
 Call stack:
 Address   Frame
 
+//=====================================================
+Current Time: Mon Sep 19 19:33:47 2022
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  00717874 01:00316874 C:\ASL\Soft\GithubPlay\Bridge-Commander\stbc.exe
+
+Registers:
+EAX:00000000
+EBX:00000000
+ECX:00000000
+EDX:00000008
+ESI:00400000
+EDI:00000400
+CS:EIP:0023:00717874
+SS:ESP:002B:0019F3C8  EBP:00000002
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+Couldn't load module
+
+//=====================================================
+Current Time: Fri Sep 23 20:47:37 2022
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  00717874 01:00316874 C:\ASL\Soft\GithubPlay\Bridge-Commander\stbc.exe
+
+Registers:
+EAX:00000000
+EBX:00000000
+ECX:00000000
+EDX:00000008
+ESI:00400000
+EDI:00000400
+CS:EIP:0023:00717874
+SS:ESP:002B:0019F634  EBP:00000002
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+Couldn't load module
+
+//=====================================================
+Current Time: Fri Sep 23 23:41:15 2022
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Sun Sep 25 13:50:15 2022
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  00717874 01:00316874 C:\ASL\Soft\GithubPlay\Bridge-Commander\stbc.exe
+
+Registers:
+EAX:00000000
+EBX:00000000
+ECX:00000000
+EDX:00000008
+ESI:01000000
+EDI:00000800
+CS:EIP:0023:00717874
+SS:ESP:002B:0019F6CC  EBP:00000002
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+Couldn't load module
+
+//=====================================================
+Current Time: Sun Sep 25 22:16:02 2022
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Sun Sep 25 22:26:41 2022
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  004ABA68 01:000AAA68 C:\ASL\Soft\GithubPlay\Bridge-Commander\stbc.exe
+
+Registers:
+EAX:00007CFF
+EBX:3F810002
+ECX:0006DBF9
+EDX:0000F9FF
+ESI:1FB20000
+EDI:00010005
+CS:EIP:0023:004ABA68
+SS:ESP:002B:0019FAA8  EBP:00000000
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010207
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+
+//=====================================================
+Current Time: Sun Sep 25 23:30:30 2022
+Exception code: C0000005 ACCESS_VIOLATION

@@ -1,0 +1,33 @@
+#This is the dump of the LogCreator: <F3024 - 8 Travel Logger LogCreator_mxl61Su6fk36>
+#This log file was created on: 20:50:45.621 of 26/September/2022, Monday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>20:50:45.621 of 26/September/2022, Monday
+#>>>Initialized F3024 - 8 Travel logger
+#>>>SELF = <F3024 - 8(1595330) Travel_84ZVuaS6FyG1>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = AncientCity-1
+## -------------------- ##
+####################
+#######>>>20:51:10.750 of 26/September/2022, Monday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 20:52:56.928 of 26/September/2022, Monday
+#Ending of log dump - User is quiting the game
+########################################

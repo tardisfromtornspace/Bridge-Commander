@@ -1,0 +1,77 @@
+#This is the dump of the LogCreator: <BirdOfPrey 3 Travel Logger LogCreator_9Iz1lhw7N6D2>
+#This log file was created on: 20:43:37.537 of 23/September/2022, Friday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>20:43:37.537 of 23/September/2022, Friday
+#>>>Initialized BirdOfPrey 3 Travel logger
+#>>>SELF = <BirdOfPrey 3(224416) Travel_iEt9oBwHfSVg>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>20:43:41.200 of 23/September/2022, Friday
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>20:43:52.956 of 23/September/2022, Friday
+#>>>Updated Target Ship = USS Lakota-12
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>20:43:53.462 of 23/September/2022, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>20:43:53.710 of 23/September/2022, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>20:43:54.209 of 23/September/2022, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>20:43:54.462 of 23/September/2022, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>20:43:54.704 of 23/September/2022, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>20:43:55.077 of 23/September/2022, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>20:43:55.330 of 23/September/2022, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>20:43:55.583 of 23/September/2022, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>20:43:55.827 of 23/September/2022, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>20:43:56.018 of 23/September/2022, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>20:44:8.046 of 23/September/2022, Friday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

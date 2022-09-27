@@ -1,0 +1,41 @@
+#This is the dump of the LogCreator: <DRA_Raider 1 Travel Logger LogCreator_eA5uEjiQLXF8>
+#This log file was created on: 23:34:3.331 of 23/September/2022, Friday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>23:34:3.331 of 23/September/2022, Friday
+#>>>Initialized DRA_Raider 1 Travel logger
+#>>>SELF = <DRA_Raider 1(542111) Travel_GXldN6Vr67Lj>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>23:34:15.684 of 23/September/2022, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:34:16.084 of 23/September/2022, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:34:30.416 of 23/September/2022, Friday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 23:41:7.875 of 23/September/2022, Friday
+#Ending of log dump - User is quiting the game
+########################################

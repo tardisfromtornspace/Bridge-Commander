@@ -1,0 +1,23 @@
+#This is the dump of the LogCreator: <USS Kasparaitis Travel Logger LogCreator_ZUX278126Rxp>
+#This log file was created on: 13:48:46.007 of 25/September/2022, Sunday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>13:48:46.007 of 25/September/2022, Sunday
+#>>>Initialized USS Kasparaitis Travel logger
+#>>>SELF = <USS Kasparaitis(416916) Travel_U8TSBEs2Evzb>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization

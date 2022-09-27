@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Thirdspace Capital Ship-4 Travel Logger[2] LogCreator_xsXL88X73Zw6>
-#This log file was created on: 22:15:53.600 of 16/September/2022, Friday
+#This is the dump of the LogCreator: <Thirdspace Capital Ship-4 Travel Logger[2] LogCreator_XN8DqT8A59uJ>
+#This log file was created on: 22:14:57.845 of 25/September/2022, Sunday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,228 +9,132 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>22:15:53.600 of 16/September/2022, Friday
+#######>>>22:14:57.845 of 25/September/2022, Sunday
 #>>>Initialized Thirdspace Capital Ship-4 Travel logger
-#>>>SELF = <Thirdspace Capital Ship-4(1402308) Travel_g4uKQJisNY68>
+#>>>SELF = <Thirdspace Capital Ship-4(542602) Travel_aOfQh456xbXX>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
-#>>> -Ship is dead or dying
-#>>>Ship is dead or dying (at SetDestination)
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
 #>>>Set Exit Placement Name as None
 #>>>Set Exit Point to None
 #>>>Chaser base class initialization complete.
-#>>>Target Ship = Player
+#>>>Target Ship = NONE
 #>>>Chaser pre-emptive Refresher Initialization
-#>>>Ship is dead or dying (at Chaser Update)
+#>>>Updated Target Ship = Cube-1
 ## -------------------- ##
 ####################
-#######>>>22:15:53.728 of 16/September/2022, Friday
-#>>>Ship is dead or dying (at Chaser Update)
+#######>>>22:15:10.478 of 25/September/2022, Sunday
+#>>>Updated Target Ship = Cube-2
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>22:15:53.856 of 16/September/2022, Friday
-#>>>Ship is dead or dying (at Chaser Update)
+#######>>>22:15:11.028 of 25/September/2022, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>22:15:54.124 of 16/September/2022, Friday
-#>>>Ship is dead or dying (at Chaser Update)
+#######>>>22:15:11.878 of 25/September/2022, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>22:15:54.364 of 16/September/2022, Friday
-#>>>Ship is dead or dying (at Chaser Update)
+#######>>>22:15:12.161 of 25/September/2022, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>22:15:54.614 of 16/September/2022, Friday
-#>>>Ship is dead or dying (at Chaser Update)
+#######>>>22:15:13.744 of 25/September/2022, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>22:15:54.776 of 16/September/2022, Friday
-#>>>Ship is dead or dying (at Chaser Update)
+#######>>>22:15:14.345 of 25/September/2022, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>22:15:54.947 of 16/September/2022, Friday
-#>>>Ship is dead or dying (at Chaser Update)
+#######>>>22:15:15.088 of 25/September/2022, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>22:15:55.206 of 16/September/2022, Friday
-#>>>Ship is dead or dying (at Chaser Update)
+#######>>>22:15:15.920 of 25/September/2022, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>22:15:55.387 of 16/September/2022, Friday
-#>>>Ship is dead or dying (at Chaser Update)
+#######>>>22:15:18.518 of 25/September/2022, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>22:15:55.614 of 16/September/2022, Friday
-#>>>Ship is dead or dying (at Chaser Update)
+#######>>>22:15:19.161 of 25/September/2022, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>22:15:55.842 of 16/September/2022, Friday
-#>>>Ship is dead or dying (at Chaser Update)
+#######>>>22:15:32.310 of 25/September/2022, Sunday
+#>>>Initialized Thirdspace Capital Ship-4 Travel logger
+#>>>SELF = <Thirdspace Capital Ship-4(598261) Travel_HypLwL59346K>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Cube-1
 ## -------------------- ##
 ####################
-#######>>>22:15:56.120 of 16/September/2022, Friday
-#>>>Ship is dead or dying (at Chaser Update)
+#######>>>22:15:46.381 of 25/September/2022, Sunday
+#>>>Updated Target Ship = Cube-3
+#>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>22:15:56.257 of 16/September/2022, Friday
-#>>>Ship is dead or dying (at Chaser Update)
+#######>>>22:15:46.777 of 25/September/2022, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>22:15:56.484 of 16/September/2022, Friday
-#>>>Ship is dead or dying (at Chaser Update)
+#######>>>22:15:47.345 of 25/September/2022, Sunday
+#>>>Updated Target Ship = Thirdspace Fighter-9
+#>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>22:15:56.733 of 16/September/2022, Friday
-#>>>Ship is dead or dying (at Chaser Update)
+#######>>>22:15:47.827 of 25/September/2022, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>22:15:56.937 of 16/September/2022, Friday
-#>>>Ship is dead or dying (at Chaser Update)
+#######>>>22:15:48.845 of 25/September/2022, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>22:15:57.186 of 16/September/2022, Friday
-#>>>Ship is dead or dying (at Chaser Update)
+#######>>>22:15:52.038 of 25/September/2022, Sunday
+#>>>Updated Target Ship = Cube-1
+#>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>22:15:57.401 of 16/September/2022, Friday
-#>>>Ship is dead or dying (at Chaser Update)
+#######>>>22:15:52.338 of 25/September/2022, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>22:15:57.640 of 16/September/2022, Friday
-#>>>Ship is dead or dying (at Chaser Update)
+#######>>>22:15:52.910 of 25/September/2022, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>22:15:57.816 of 16/September/2022, Friday
-#>>>Ship is dead or dying (at Chaser Update)
+#######>>>22:15:54.163 of 25/September/2022, Sunday
+#>>>Updated Target Ship = Thirdspace Fighter-9
 ## -------------------- ##
 ####################
-#######>>>22:15:58.035 of 16/September/2022, Friday
-#>>>Ship is dead or dying (at Chaser Update)
+#######>>>22:15:54.911 of 25/September/2022, Sunday
+#>>>Updated Target Ship = Cube-3
+#>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>22:15:58.177 of 16/September/2022, Friday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>22:15:58.492 of 16/September/2022, Friday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>22:15:58.741 of 16/September/2022, Friday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>22:15:58.865 of 16/September/2022, Friday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>22:15:59.148 of 16/September/2022, Friday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>22:15:59.333 of 16/September/2022, Friday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>22:15:59.546 of 16/September/2022, Friday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>22:15:59.737 of 16/September/2022, Friday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>22:15:59.879 of 16/September/2022, Friday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>22:16:0.118 of 16/September/2022, Friday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>22:16:0.266 of 16/September/2022, Friday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>22:16:0.491 of 16/September/2022, Friday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>22:16:0.745 of 16/September/2022, Friday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>22:16:0.892 of 16/September/2022, Friday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>22:16:1.028 of 16/September/2022, Friday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>22:16:1.227 of 16/September/2022, Friday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>22:16:1.417 of 16/September/2022, Friday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>22:16:1.682 of 16/September/2022, Friday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>22:16:1.868 of 16/September/2022, Friday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>22:16:2.119 of 16/September/2022, Friday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>22:16:2.389 of 16/September/2022, Friday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>22:16:2.682 of 16/September/2022, Friday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>22:16:2.911 of 16/September/2022, Friday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>22:16:3.137 of 16/September/2022, Friday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>22:16:3.389 of 16/September/2022, Friday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>22:16:3.541 of 16/September/2022, Friday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>22:16:3.734 of 16/September/2022, Friday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>22:16:3.946 of 16/September/2022, Friday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>22:16:4.223 of 16/September/2022, Friday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>22:16:4.371 of 16/September/2022, Friday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>22:16:4.610 of 16/September/2022, Friday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>22:16:4.783 of 16/September/2022, Friday
-#>>>Ship is dead or dying (at Chaser Update)
+#######>>>22:15:55.144 of 25/September/2022, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...

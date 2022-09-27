@@ -1,0 +1,72 @@
+#This is the dump of the LogCreator: <Vorchan-1 Travel Logger LogCreator_yKOd3u4Wg2Tm>
+#This log file was created on: 19:6:28.670 of 19/September/2022, Monday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>19:6:28.670 of 19/September/2022, Monday
+#>>>Initialized Vorchan-1 Travel logger
+#>>>SELF = <Vorchan-1(236804) Travel_tfwRP2UHE5EO>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>19:6:35.828 of 19/September/2022, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>19:6:36.402 of 19/September/2022, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>19:6:37.015 of 19/September/2022, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>19:6:37.548 of 19/September/2022, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>19:6:38.174 of 19/September/2022, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>19:7:50.949 of 19/September/2022, Monday
+#>>> -Tried to set to a non-existant travel type: None
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at Update (Chaser)
+Traceback of Error: TypeError: call of non-function (type None)
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 2307, in the function "Update".
+Script: ".\Scripts\Custom\GalaxyCharts\HelmAddonGUI.py", Line 93, in the function "CreateTravelTypeButtons".
+Script: ".\Scripts\Custom\GalaxyCharts\HelmAddonGUI.py", Line 118, in the function "UpdateTravelType".
+Script: ".\Scripts\Custom\GalaxyCharts\HelmAddonGUI.py", Line 299, in the function "UpdateEmergencyOutButton".
+Script: ".\Scripts\Custom\GalaxyCharts\HelmAddonGUI.py", Line 245, in the function "CanEmergencyTravelOut".
+Script: ".\Scripts\Custom\GalaxyCharts\HelmAddonGUI.py", Line 288, in the function "CheckBasicPlayerCanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+## -------------------- ##
+####################
+#######>>>19:10:41.871 of 19/September/2022, Monday
+#>>>Updated Target Ship = XInsect 1
+## -------------------- ##
+####################
+#######>>>19:12:19.870 of 19/September/2022, Monday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

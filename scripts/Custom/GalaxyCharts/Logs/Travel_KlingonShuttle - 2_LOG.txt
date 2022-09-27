@@ -1,0 +1,36 @@
+#This is the dump of the LogCreator: <KlingonShuttle - 2 Travel Logger LogCreator_JO626zy2Nppr>
+#This log file was created on: 20:44:32.889 of 23/September/2022, Friday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>20:44:32.889 of 23/September/2022, Friday
+#>>>Initialized KlingonShuttle - 2 Travel logger
+#>>>SELF = <KlingonShuttle - 2(292696) Travel_hCkIn9E242tV>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>20:44:33.275 of 23/September/2022, Friday
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>20:44:44.858 of 23/September/2022, Friday
+#>>>Updated Target Ship = Rhode Island-5
+## -------------------- ##
+####################
+#######>>>20:44:59.989 of 23/September/2022, Friday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

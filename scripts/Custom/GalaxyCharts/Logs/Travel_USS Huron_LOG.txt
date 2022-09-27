@@ -1,0 +1,23 @@
+#This is the dump of the LogCreator: <USS Huron Travel Logger LogCreator_T4MV14I3ttV8>
+#This log file was created on: 13:48:44.700 of 25/September/2022, Sunday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>13:48:44.700 of 25/September/2022, Sunday
+#>>>Initialized USS Huron Travel logger
+#>>>SELF = <USS Huron(415596) Travel_mBNLErPu2q02>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization

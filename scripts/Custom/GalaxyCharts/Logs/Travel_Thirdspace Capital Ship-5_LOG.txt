@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Thirdspace Capital Ship-5 Travel Logger LogCreator_4f2HzoxKAYS8>
-#This log file was created on: 22:14:53.967 of 16/September/2022, Friday
+#This is the dump of the LogCreator: <Thirdspace Capital Ship-5 Travel Logger LogCreator_j09Cxr5b27L8>
+#This log file was created on: 22:13:8.830 of 25/September/2022, Sunday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>22:14:53.967 of 16/September/2022, Friday
+#######>>>22:13:8.830 of 25/September/2022, Sunday
 #>>>Initialized Thirdspace Capital Ship-5 Travel logger
-#>>>SELF = <Thirdspace Capital Ship-5(1402538) Travel_Bbm279GjttW3>
+#>>>SELF = <Thirdspace Capital Ship-5(400434) Travel_7UVXuG0oh38q>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -21,132 +21,120 @@ Updating Travelling Procedures...
 #>>>Chaser base class initialization complete.
 #>>>Target Ship = NONE
 #>>>Chaser pre-emptive Refresher Initialization
-#>>>Updated Target Ship = Player
+#>>>Updated Target Ship = Cube-1
 ## -------------------- ##
 ####################
-#######>>>22:15:1.352 of 16/September/2022, Friday
+#######>>>22:13:21.863 of 25/September/2022, Sunday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>22:15:1.578 of 16/September/2022, Friday
+#######>>>22:13:22.062 of 25/September/2022, Sunday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>22:15:1.725 of 16/September/2022, Friday
+#######>>>22:13:22.529 of 25/September/2022, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>22:15:2.004 of 16/September/2022, Friday
+#######>>>22:13:23.163 of 25/September/2022, Sunday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>22:15:2.071 of 16/September/2022, Friday
+#######>>>22:13:27.230 of 25/September/2022, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>22:15:2.578 of 16/September/2022, Friday
+#######>>>22:13:27.730 of 25/September/2022, Sunday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>22:15:2.738 of 16/September/2022, Friday
+#######>>>22:13:28.054 of 25/September/2022, Sunday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>22:15:3.177 of 16/September/2022, Friday
+#######>>>22:13:31.771 of 25/September/2022, Sunday
+#>>>Updated Target Ship = Cube-3
+## -------------------- ##
+####################
+#######>>>22:13:32.657 of 25/September/2022, Sunday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>22:15:3.431 of 16/September/2022, Friday
+#######>>>22:13:32.825 of 25/September/2022, Sunday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>22:15:3.884 of 16/September/2022, Friday
+#######>>>22:13:33.182 of 25/September/2022, Sunday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>22:15:4.177 of 16/September/2022, Friday
+#######>>>22:13:33.826 of 25/September/2022, Sunday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>22:15:4.644 of 16/September/2022, Friday
+#######>>>22:13:35.130 of 25/September/2022, Sunday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>22:15:4.764 of 16/September/2022, Friday
+#######>>>22:13:35.631 of 25/September/2022, Sunday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>22:15:4.977 of 16/September/2022, Friday
+#######>>>22:13:38.815 of 25/September/2022, Sunday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>22:15:5.372 of 16/September/2022, Friday
+#######>>>22:13:39.163 of 25/September/2022, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>22:15:5.696 of 16/September/2022, Friday
+#######>>>22:13:39.892 of 25/September/2022, Sunday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>22:15:6.110 of 16/September/2022, Friday
+#######>>>22:13:40.242 of 25/September/2022, Sunday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>22:15:6.683 of 16/September/2022, Friday
+#######>>>22:13:42.380 of 25/September/2022, Sunday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>22:15:6.977 of 16/September/2022, Friday
+#######>>>22:13:44.158 of 25/September/2022, Sunday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>22:15:7.362 of 16/September/2022, Friday
+#######>>>22:13:45.773 of 25/September/2022, Sunday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>22:15:7.582 of 16/September/2022, Friday
+#######>>>22:13:46.980 of 25/September/2022, Sunday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>22:15:7.736 of 16/September/2022, Friday
+#######>>>22:13:47.536 of 25/September/2022, Sunday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>22:15:8.189 of 16/September/2022, Friday
+#######>>>22:13:48.127 of 25/September/2022, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>22:15:8.322 of 16/September/2022, Friday
-#>>> -Cancelling, too close to target to warp intercept...
+#######>>>22:14:9.028 of 25/September/2022, Sunday
+#>>>Updated Target Ship = Cube-2
 ## -------------------- ##
 ####################
-#######>>>22:15:8.682 of 16/September/2022, Friday
-#>>> -Cancelling, too close to target to warp intercept...
+#######>>>22:14:11.026 of 25/September/2022, Sunday
+#>>>Updated Target Ship = Cube-3
 ## -------------------- ##
 ####################
-#######>>>22:15:10.018 of 16/September/2022, Friday
-#>>> -Cancelling, too close to target to warp intercept...
+#######>>>22:14:13.056 of 25/September/2022, Sunday
+#>>>Updated Target Ship = Cube-2
 ## -------------------- ##
 ####################
-#######>>>22:15:10.308 of 16/September/2022, Friday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>22:15:10.801 of 16/September/2022, Friday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>22:15:11.327 of 16/September/2022, Friday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>22:15:11.595 of 16/September/2022, Friday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>22:15:11.886 of 16/September/2022, Friday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>22:15:12.389 of 16/September/2022, Friday
-#>>> -Cancelling, too close to target to warp intercept...
+#######>>>22:14:13.370 of 25/September/2022, Sunday
+#>>>Updated Target Ship = Cube-1
