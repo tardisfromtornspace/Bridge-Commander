@@ -1,7 +1,7 @@
 ==Changelog==
 1.0.3 - 
  New Features:
- * Since the 1.0.2 was not approved yet, I've decided to add a mod I nearly frogot about that added more music to the battles, including Babylon 5.
+ * Since the 1.0.2 was not approved yet, I've decided to add a mod I nearly forgot about that added more music to the battles, including Babylon 5.
 1.0.2 - 
  Bug Fixes:
  * Missing Bluestar fusion beams, now fixed! Thanks to RetroBadger for finding it out!
