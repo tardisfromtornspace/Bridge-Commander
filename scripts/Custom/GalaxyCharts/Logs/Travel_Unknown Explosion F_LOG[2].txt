@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Unknown Explosion F Travel Logger[2] LogCreator_PlPNikpYj5XQ>
-#This log file was created on: 23:2:17.337 of 25/September/2022, Sunday
+#This is the dump of the LogCreator: <Unknown Explosion F Travel Logger[2] LogCreator_DoBYVTfQ7D80>
+#This log file was created on: 21:22:24.371 of 2/October/2022, Sunday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>23:2:17.337 of 25/September/2022, Sunday
+#######>>>21:22:24.371 of 2/October/2022, Sunday
 #>>>Initialized Unknown Explosion F Travel logger
-#>>>SELF = <Unknown Explosion F(1315508) Travel_3yvM3QedvG8z>
+#>>>SELF = <Unknown Explosion F(445031) Travel_tv8HK9z0GsVI>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -21,3 +21,7 @@ Updating Travelling Procedures...
 #>>>Chaser base class initialization complete.
 #>>>Target Ship = NONE
 #>>>Chaser pre-emptive Refresher Initialization
+########################################
+# 21:22:49.121 of 2/October/2022, Sunday
+#Ending of log dump - User is quiting the game
+########################################

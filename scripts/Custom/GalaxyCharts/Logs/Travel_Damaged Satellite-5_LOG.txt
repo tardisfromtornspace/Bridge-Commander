@@ -1,0 +1,33 @@
+#This is the dump of the LogCreator: <Damaged Satellite-5 Travel Logger LogCreator_J2e58IuvQ01Y>
+#This log file was created on: 3:35:44.124 of 2/October/2022, Sunday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>3:35:44.124 of 2/October/2022, Sunday
+#>>>Initialized Damaged Satellite-5 Travel logger
+#>>>SELF = <Damaged Satellite-5(370555) Travel_1G9F74vRvUd5>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>3:37:20.924 of 2/October/2022, Sunday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 3:40:46.870 of 2/October/2022, Sunday
+#Ending of log dump - User is quiting the game
+########################################

@@ -1,0 +1,32 @@
+#This is the dump of the LogCreator: <Fighter - 6 Travel Logger LogCreator_U4905nPvw32q>
+#This log file was created on: 20:59:56.843 of 2/October/2022, Sunday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>20:59:56.843 of 2/October/2022, Sunday
+#>>>Initialized Fighter - 6 Travel logger
+#>>>SELF = <Fighter - 6(343035) Travel_RBN168rW6a6B>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>20:59:57.475 of 2/October/2022, Sunday
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>21:0:8.840 of 2/October/2022, Sunday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

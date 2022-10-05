@@ -1,0 +1,82 @@
+#This is the dump of the LogCreator: <ValdoreG 2 Travel Logger LogCreator_AuBI2g4847D7>
+#This log file was created on: 19:48:13.779 of 4/October/2022, Tuesday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>19:48:13.779 of 4/October/2022, Tuesday
+#>>>Initialized ValdoreG 2 Travel logger
+#>>>SELF = <ValdoreG 2(5798976) Travel_K49i1xi5mNNN>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>19:48:25.909 of 4/October/2022, Tuesday
+#>>>Updated Target Ship = Xill Cruiser-6
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>19:48:26.039 of 4/October/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>19:48:26.414 of 4/October/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>19:48:26.526 of 4/October/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>19:48:27.026 of 4/October/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>19:48:27.526 of 4/October/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>19:48:28.909 of 4/October/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>19:48:29.409 of 4/October/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>19:48:29.913 of 4/October/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>19:48:30.276 of 4/October/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>19:48:30.409 of 4/October/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>19:49:36.658 of 4/October/2022, Tuesday
+#>>>Updated Target Ship = Brakiri Cruiser-3
+## -------------------- ##
+####################
+#######>>>19:50:1.975 of 4/October/2022, Tuesday
+#>>>Updated Target Ship = Xill Cruiser-5
+## -------------------- ##
+####################
+#######>>>19:52:12.156 of 4/October/2022, Tuesday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

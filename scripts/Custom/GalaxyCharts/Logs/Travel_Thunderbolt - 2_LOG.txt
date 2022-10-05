@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Thunderbolt - 2 Travel Logger LogCreator_FQ7HD6A1WOiX>
-#This log file was created on: 19:29:36.472 of 19/September/2022, Monday
+#This is the dump of the LogCreator: <Thunderbolt - 2 Travel Logger LogCreator_rLuY9LhWAwHe>
+#This log file was created on: 23:39:4.318 of 29/September/2022, Thursday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>19:29:36.472 of 19/September/2022, Monday
+#######>>>23:39:4.318 of 29/September/2022, Thursday
 #>>>Initialized Thunderbolt - 2 Travel logger
-#>>>SELF = <Thunderbolt - 2(1112222) Travel_nDPSAV5220F9>
+#>>>SELF = <Thunderbolt - 2(267757) Travel_8E03s95s4W2T>
 #>>>Initial Travel Type: None
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -21,9 +21,12 @@ Updating Travelling Procedures...
 #>>>Chaser base class initialization complete.
 #>>>Target Ship = NONE
 #>>>Chaser pre-emptive Refresher Initialization
-#>>>Updated Target Ship = Player
 ## -------------------- ##
 ####################
-#######>>>19:30:15.622 of 19/September/2022, Monday
+#######>>>23:39:4.433 of 29/September/2022, Thursday
+#>>>Updated Target Ship = Hirogen Hunter-1
+## -------------------- ##
+####################
+#######>>>23:39:9.917 of 29/September/2022, Thursday
 #>>>Stopping Refresh Handler
 #>>>Deleting...

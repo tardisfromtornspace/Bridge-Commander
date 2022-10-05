@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <PointDefence Firepoint Player 1 Travel Logger LogCreator_61Q73cgBnI3C>
-#This log file was created on: 20:43:43.707 of 26/September/2022, Monday
+#This is the dump of the LogCreator: <PointDefence Firepoint Player 1 Travel Logger LogCreator_t69zsX6QX9l0>
+#This log file was created on: 20:9:47.859 of 4/October/2022, Tuesday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>20:43:43.707 of 26/September/2022, Monday
+#######>>>20:9:47.859 of 4/October/2022, Tuesday
 #>>>Initialized PointDefence Firepoint Player 1 Travel logger
-#>>>SELF = <PointDefence Firepoint Player 1(1172043) Travel_0gdtMpbllaj4>
+#>>>SELF = <PointDefence Firepoint Player 1(9078505) Travel_4Zm6jRLH5B7N>
 #>>>Initial Travel Type: None
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -23,7 +23,3 @@ Updating Travelling Procedures...
 #>>>Chaser pre-emptive Refresher Initialization
 #>>>Stopping Refresh Handler
 #>>>Deleting...
-########################################
-# 20:52:56.928 of 26/September/2022, Monday
-#Ending of log dump - User is quiting the game
-########################################

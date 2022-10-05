@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Shadow Battlecrab-4 Travel Logger LogCreator_jTF5DdP2JEDE>
-#This log file was created on: 18:30:5.048 of 21/September/2022, Wednesday
+#This is the dump of the LogCreator: <Shadow Battlecrab-4 Travel Logger LogCreator_567z08iCYVgg>
+#This log file was created on: 21:12:37.963 of 2/October/2022, Sunday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>18:30:5.048 of 21/September/2022, Wednesday
+#######>>>21:12:37.963 of 2/October/2022, Sunday
 #>>>Initialized Shadow Battlecrab-4 Travel logger
-#>>>SELF = <Shadow Battlecrab-4(81988) Travel_Wh7339996v48>
+#>>>SELF = <Shadow Battlecrab-4(65588) Travel_Y37wLq33m1t6>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -21,1012 +21,2859 @@ Updating Travelling Procedures...
 #>>>Chaser base class initialization complete.
 #>>>Target Ship = NONE
 #>>>Chaser pre-emptive Refresher Initialization
-#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>21:12:38.697 of 2/October/2022, Sunday
+#>>>Updated Target Ship = Deep Space Nine-1
 #>>>Can Chase Target = 0
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:6.950 of 21/September/2022, Wednesday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>18:30:7.170 of 21/September/2022, Wednesday
+#######>>>21:12:38.813 of 2/October/2022, Sunday
 #>>> -Cancelling, too close to target to warp intercept...
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:7.370 of 21/September/2022, Wednesday
+#######>>>21:12:39.048 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:7.613 of 21/September/2022, Wednesday
+#######>>>21:12:39.180 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:7.743 of 21/September/2022, Wednesday
+#######>>>21:12:39.463 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:8.063 of 21/September/2022, Wednesday
+#######>>>21:12:39.646 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:8.356 of 21/September/2022, Wednesday
+#######>>>21:12:39.896 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:8.690 of 21/September/2022, Wednesday
+#######>>>21:12:40.030 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:8.889 of 21/September/2022, Wednesday
+#######>>>21:12:40.280 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:9.303 of 21/September/2022, Wednesday
+#######>>>21:12:40.496 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:9.729 of 21/September/2022, Wednesday
+#######>>>21:12:40.713 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:9.929 of 21/September/2022, Wednesday
+#######>>>21:12:40.963 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:10.036 of 21/September/2022, Wednesday
+#######>>>21:12:41.213 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:10.342 of 21/September/2022, Wednesday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>18:30:10.636 of 21/September/2022, Wednesday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>18:30:10.822 of 21/September/2022, Wednesday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>18:30:11.116 of 21/September/2022, Wednesday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>18:30:11.289 of 21/September/2022, Wednesday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>18:30:11.515 of 21/September/2022, Wednesday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>18:30:11.648 of 21/September/2022, Wednesday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>18:30:11.862 of 21/September/2022, Wednesday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>18:30:12.128 of 21/September/2022, Wednesday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>18:30:12.382 of 21/September/2022, Wednesday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>18:30:12.608 of 21/September/2022, Wednesday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>18:30:12.888 of 21/September/2022, Wednesday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>18:30:13.208 of 21/September/2022, Wednesday
+#######>>>21:12:41.346 of 2/October/2022, Sunday
 #>>> -Cancelling, too close to target to warp intercept...
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:13.341 of 21/September/2022, Wednesday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>18:30:13.489 of 21/September/2022, Wednesday
-#>>> -Cancelling, too close to target to warp intercept...
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>18:30:13.729 of 21/September/2022, Wednesday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>18:30:13.834 of 21/September/2022, Wednesday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>18:30:14.117 of 21/September/2022, Wednesday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>18:30:14.221 of 21/September/2022, Wednesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>18:30:14.328 of 21/September/2022, Wednesday
-#>>> -Cancelling, too close to target to warp intercept...
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>18:30:14.528 of 21/September/2022, Wednesday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>18:30:14.661 of 21/September/2022, Wednesday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>18:30:14.794 of 21/September/2022, Wednesday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>18:30:14.981 of 21/September/2022, Wednesday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>18:30:15.088 of 21/September/2022, Wednesday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>18:30:15.234 of 21/September/2022, Wednesday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>18:30:15.515 of 21/September/2022, Wednesday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>18:30:15.687 of 21/September/2022, Wednesday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>18:30:15.794 of 21/September/2022, Wednesday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>18:30:15.941 of 21/September/2022, Wednesday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>18:30:16.074 of 21/September/2022, Wednesday
-#>>> -Cancelling, too close to target to warp intercept...
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>18:30:16.287 of 21/September/2022, Wednesday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>18:30:16.407 of 21/September/2022, Wednesday
+#######>>>21:12:41.580 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>18:30:16.567 of 21/September/2022, Wednesday
+#######>>>21:12:41.730 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:16.847 of 21/September/2022, Wednesday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>18:30:16.954 of 21/September/2022, Wednesday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>18:30:17.061 of 21/September/2022, Wednesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>18:30:17.194 of 21/September/2022, Wednesday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>18:30:17.328 of 21/September/2022, Wednesday
+#######>>>21:12:41.896 of 2/October/2022, Sunday
 #>>> -Cancelling, too close to target to warp intercept...
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:17.460 of 21/September/2022, Wednesday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>18:30:17.615 of 21/September/2022, Wednesday
-#>>> -Cancelling, too close to target to warp intercept...
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>18:30:17.768 of 21/September/2022, Wednesday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>18:30:17.991 of 21/September/2022, Wednesday
-#>>> -Cancelling, too close to target to warp intercept...
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>18:30:18.193 of 21/September/2022, Wednesday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>18:30:18.353 of 21/September/2022, Wednesday
+#######>>>21:12:42.079 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>18:30:18.500 of 21/September/2022, Wednesday
+#######>>>21:12:42.230 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:18.673 of 21/September/2022, Wednesday
+#######>>>21:12:42.364 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:18.848 of 21/September/2022, Wednesday
+#######>>>21:12:42.630 of 2/October/2022, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>21:12:42.746 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:12:42.946 of 2/October/2022, Sunday
 #>>> -Cancelling, too close to target to warp intercept...
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:19.180 of 21/September/2022, Wednesday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>18:30:19.368 of 21/September/2022, Wednesday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>18:30:19.494 of 21/September/2022, Wednesday
+#######>>>21:12:43.113 of 2/October/2022, Sunday
 #>>> -Cancelling, too close to target to warp intercept...
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:19.659 of 21/September/2022, Wednesday
+#######>>>21:12:43.296 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:19.833 of 21/September/2022, Wednesday
+#######>>>21:12:43.446 of 2/October/2022, Sunday
 #>>> -Cancelling, too close to target to warp intercept...
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:19.955 of 21/September/2022, Wednesday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>18:30:20.328 of 21/September/2022, Wednesday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>18:30:20.435 of 21/September/2022, Wednesday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>18:30:20.646 of 21/September/2022, Wednesday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>18:30:20.819 of 21/September/2022, Wednesday
+#######>>>21:12:43.597 of 2/October/2022, Sunday
 #>>> -Cancelling, too close to target to warp intercept...
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:21.072 of 21/September/2022, Wednesday
+#######>>>21:12:43.763 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>21:12:43.996 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:21.206 of 21/September/2022, Wednesday
+#######>>>21:12:44.164 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:21.459 of 21/September/2022, Wednesday
+#######>>>21:12:44.313 of 2/October/2022, Sunday
 #>>> -Cancelling, too close to target to warp intercept...
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:21.647 of 21/September/2022, Wednesday
+#######>>>21:12:44.513 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:12:44.696 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:12:44.846 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:12:45.080 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:12:45.246 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:12:45.646 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:12:45.797 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>21:12:45.963 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:12:46.080 of 2/October/2022, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>21:12:46.213 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:12:46.330 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:12:46.513 of 2/October/2022, Sunday
 #>>> -Cancelling, too close to target to warp intercept...
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:21.832 of 21/September/2022, Wednesday
+#######>>>21:12:46.646 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:22.274 of 21/September/2022, Wednesday
+#######>>>21:12:46.846 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:22.378 of 21/September/2022, Wednesday
+#######>>>21:12:46.980 of 2/October/2022, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:22.717 of 21/September/2022, Wednesday
+#######>>>21:12:47.246 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
+#>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>18:30:22.822 of 21/September/2022, Wednesday
+#######>>>21:12:47.363 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:23.132 of 21/September/2022, Wednesday
+#######>>>21:12:47.496 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:23.256 of 21/September/2022, Wednesday
+#######>>>21:12:47.763 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:23.356 of 21/September/2022, Wednesday
+#######>>>21:12:47.896 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:23.668 of 21/September/2022, Wednesday
+#######>>>21:12:48.030 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:23.805 of 21/September/2022, Wednesday
+#######>>>21:12:48.280 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:24.005 of 21/September/2022, Wednesday
+#######>>>21:12:48.463 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:24.218 of 21/September/2022, Wednesday
+#######>>>21:12:48.630 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:24.379 of 21/September/2022, Wednesday
+#######>>>21:12:48.779 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:24.485 of 21/September/2022, Wednesday
+#######>>>21:12:48.963 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:24.716 of 21/September/2022, Wednesday
+#######>>>21:12:49.146 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:24.818 of 21/September/2022, Wednesday
+#######>>>21:12:49.330 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:24.977 of 21/September/2022, Wednesday
+#######>>>21:12:49.463 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:25.151 of 21/September/2022, Wednesday
+#######>>>21:12:49.613 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:25.297 of 21/September/2022, Wednesday
+#######>>>21:12:49.763 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:25.431 of 21/September/2022, Wednesday
+#######>>>21:12:49.929 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:25.636 of 21/September/2022, Wednesday
+#######>>>21:12:50.096 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:25.738 of 21/September/2022, Wednesday
+#######>>>21:12:50.263 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:25.911 of 21/September/2022, Wednesday
+#######>>>21:12:50.429 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:26.017 of 21/September/2022, Wednesday
+#######>>>21:12:50.713 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:26.124 of 21/September/2022, Wednesday
+#######>>>21:12:50.880 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:26.377 of 21/September/2022, Wednesday
+#######>>>21:12:51.030 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:26.524 of 21/September/2022, Wednesday
+#######>>>21:12:51.146 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:26.844 of 21/September/2022, Wednesday
+#######>>>21:12:51.329 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:27.030 of 21/September/2022, Wednesday
+#######>>>21:12:51.480 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:27.527 of 21/September/2022, Wednesday
+#######>>>21:12:51.648 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:27.697 of 21/September/2022, Wednesday
+#######>>>21:12:51.880 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:27.818 of 21/September/2022, Wednesday
+#######>>>21:12:51.998 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:27.923 of 21/September/2022, Wednesday
+#######>>>21:12:52.173 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:28.112 of 21/September/2022, Wednesday
+#######>>>21:12:52.296 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:28.340 of 21/September/2022, Wednesday
+#######>>>21:12:52.563 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:28.463 of 21/September/2022, Wednesday
+#######>>>21:12:52.679 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:28.574 of 21/September/2022, Wednesday
+#######>>>21:12:52.913 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:28.795 of 21/September/2022, Wednesday
+#######>>>21:12:53.029 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:28.943 of 21/September/2022, Wednesday
+#######>>>21:12:53.196 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:29.230 of 21/September/2022, Wednesday
+#######>>>21:12:53.446 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:29.382 of 21/September/2022, Wednesday
+#######>>>21:12:53.830 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:29.610 of 21/September/2022, Wednesday
+#######>>>21:12:53.980 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:29.752 of 21/September/2022, Wednesday
+#######>>>21:12:54.163 of 2/October/2022, Sunday
+#>>>Updated Target Ship = Defiant - 2
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:29.925 of 21/September/2022, Wednesday
+#######>>>21:12:54.446 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:30.071 of 21/September/2022, Wednesday
+#######>>>21:12:54.546 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:30.189 of 21/September/2022, Wednesday
+#######>>>21:12:54.746 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:30.443 of 21/September/2022, Wednesday
+#######>>>21:12:54.963 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:30.696 of 21/September/2022, Wednesday
+#######>>>21:12:55.413 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:30.843 of 21/September/2022, Wednesday
+#######>>>21:12:55.629 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:31.074 of 21/September/2022, Wednesday
+#######>>>21:12:55.833 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:31.296 of 21/September/2022, Wednesday
+#######>>>21:12:56.230 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:31.429 of 21/September/2022, Wednesday
+#######>>>21:12:56.496 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:31.678 of 21/September/2022, Wednesday
+#######>>>21:12:56.796 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:31.842 of 21/September/2022, Wednesday
+#######>>>21:12:57.030 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:32.071 of 21/September/2022, Wednesday
+#######>>>21:12:57.329 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:32.204 of 21/September/2022, Wednesday
+#######>>>21:12:57.713 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:32.308 of 21/September/2022, Wednesday
+#######>>>21:12:57.879 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:32.415 of 21/September/2022, Wednesday
+#######>>>21:12:58.146 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:32.615 of 21/September/2022, Wednesday
+#######>>>21:12:58.496 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:32.860 of 21/September/2022, Wednesday
+#######>>>21:12:58.696 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:33.137 of 21/September/2022, Wednesday
+#######>>>21:12:58.996 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:33.281 of 21/September/2022, Wednesday
+#######>>>21:12:59.246 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:33.430 of 21/September/2022, Wednesday
+#######>>>21:12:59.513 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:33.645 of 21/September/2022, Wednesday
+#######>>>21:12:59.863 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:33.788 of 21/September/2022, Wednesday
+#######>>>21:13:0.263 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:33.896 of 21/September/2022, Wednesday
+#######>>>21:13:0.513 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:34.037 of 21/September/2022, Wednesday
+#######>>>21:13:0.779 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:34.179 of 21/September/2022, Wednesday
+#######>>>21:13:1.180 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:34.313 of 21/September/2022, Wednesday
+#######>>>21:13:1.429 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:34.414 of 21/September/2022, Wednesday
+#######>>>21:13:1.646 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:34.595 of 21/September/2022, Wednesday
+#######>>>21:13:2.113 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:34.706 of 21/September/2022, Wednesday
+#######>>>21:13:2.246 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:34.864 of 21/September/2022, Wednesday
+#######>>>21:13:2.580 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:34.977 of 21/September/2022, Wednesday
+#######>>>21:13:2.813 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:35.074 of 21/September/2022, Wednesday
+#######>>>21:13:3.096 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:35.307 of 21/September/2022, Wednesday
+#######>>>21:13:3.429 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:35.515 of 21/September/2022, Wednesday
+#######>>>21:13:3.646 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:35.621 of 21/September/2022, Wednesday
+#######>>>21:13:3.913 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:35.730 of 21/September/2022, Wednesday
+#######>>>21:13:4.213 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:35.912 of 21/September/2022, Wednesday
+#######>>>21:13:4.446 of 2/October/2022, Sunday
+#>>>Updated Target Ship = Deep Space Nine-1
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:36.023 of 21/September/2022, Wednesday
+#######>>>21:13:4.679 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:36.135 of 21/September/2022, Wednesday
+#######>>>21:13:4.829 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:36.251 of 21/September/2022, Wednesday
+#######>>>21:13:5.196 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:36.427 of 21/September/2022, Wednesday
+#######>>>21:13:5.463 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:36.534 of 21/September/2022, Wednesday
+#######>>>21:13:5.779 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:36.668 of 21/September/2022, Wednesday
+#######>>>21:13:6.113 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:36.774 of 21/September/2022, Wednesday
+#######>>>21:13:6.479 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:36.883 of 21/September/2022, Wednesday
+#######>>>21:13:6.896 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:36.995 of 21/September/2022, Wednesday
+#######>>>21:13:7.296 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:37.093 of 21/September/2022, Wednesday
+#######>>>21:13:7.579 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:37.202 of 21/September/2022, Wednesday
+#######>>>21:13:7.946 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:37.321 of 21/September/2022, Wednesday
+#######>>>21:13:8.163 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:37.547 of 21/September/2022, Wednesday
+#######>>>21:13:8.396 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:37.653 of 21/September/2022, Wednesday
+#######>>>21:13:8.646 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:37.760 of 21/September/2022, Wednesday
+#######>>>21:13:8.946 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:37.922 of 21/September/2022, Wednesday
+#######>>>21:13:9.363 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:38.024 of 21/September/2022, Wednesday
+#######>>>21:13:9.679 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:38.165 of 21/September/2022, Wednesday
+#######>>>21:13:9.880 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:38.413 of 21/September/2022, Wednesday
+#######>>>21:13:10.246 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:38.518 of 21/September/2022, Wednesday
+#######>>>21:13:10.646 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:38.676 of 21/September/2022, Wednesday
+#######>>>21:13:10.996 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:38.833 of 21/September/2022, Wednesday
+#######>>>21:13:11.463 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:38.954 of 21/September/2022, Wednesday
+#######>>>21:13:11.746 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:39.188 of 21/September/2022, Wednesday
+#######>>>21:13:11.896 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:39.288 of 21/September/2022, Wednesday
+#######>>>21:13:12.117 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:39.407 of 21/September/2022, Wednesday
+#######>>>21:13:12.363 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:39.714 of 21/September/2022, Wednesday
+#######>>>21:13:12.763 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:39.835 of 21/September/2022, Wednesday
+#######>>>21:13:13.113 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:40.068 of 21/September/2022, Wednesday
+#######>>>21:13:13.463 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:40.300 of 21/September/2022, Wednesday
+#######>>>21:13:13.647 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:40.406 of 21/September/2022, Wednesday
+#######>>>21:13:13.779 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:40.620 of 21/September/2022, Wednesday
+#######>>>21:13:14.029 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:40.723 of 21/September/2022, Wednesday
+#######>>>21:13:14.363 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:40.832 of 21/September/2022, Wednesday
+#######>>>21:13:14.496 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:40.932 of 21/September/2022, Wednesday
+#######>>>21:13:14.679 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:41.040 of 21/September/2022, Wednesday
+#######>>>21:13:14.896 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:41.266 of 21/September/2022, Wednesday
+#######>>>21:13:15.096 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:41.397 of 21/September/2022, Wednesday
+#######>>>21:13:15.366 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:41.517 of 21/September/2022, Wednesday
+#######>>>21:13:15.496 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:41.680 of 21/September/2022, Wednesday
+#######>>>21:13:15.613 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:41.800 of 21/September/2022, Wednesday
+#######>>>21:13:15.763 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:41.908 of 21/September/2022, Wednesday
+#######>>>21:13:15.963 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:42.118 of 21/September/2022, Wednesday
+#######>>>21:13:16.213 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:42.227 of 21/September/2022, Wednesday
+#######>>>21:13:16.396 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:42.385 of 21/September/2022, Wednesday
+#######>>>21:13:16.547 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:42.505 of 21/September/2022, Wednesday
+#######>>>21:13:16.899 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:42.718 of 21/September/2022, Wednesday
+#######>>>21:13:17.096 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:42.852 of 21/September/2022, Wednesday
+#######>>>21:13:17.396 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:42.958 of 21/September/2022, Wednesday
+#######>>>21:13:17.529 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:43.135 of 21/September/2022, Wednesday
+#######>>>21:13:17.797 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:43.238 of 21/September/2022, Wednesday
+#######>>>21:13:18.047 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:43.411 of 21/September/2022, Wednesday
+#######>>>21:13:18.264 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:43.518 of 21/September/2022, Wednesday
+#######>>>21:13:18.413 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:43.624 of 21/September/2022, Wednesday
+#######>>>21:13:18.564 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:43.731 of 21/September/2022, Wednesday
+#######>>>21:13:18.680 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:43.851 of 21/September/2022, Wednesday
+#######>>>21:13:18.846 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:43.958 of 21/September/2022, Wednesday
+#######>>>21:13:18.986 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:44.064 of 21/September/2022, Wednesday
+#######>>>21:13:19.130 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:44.171 of 21/September/2022, Wednesday
+#######>>>21:13:19.262 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:44.411 of 21/September/2022, Wednesday
+#######>>>21:13:19.430 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:44.517 of 21/September/2022, Wednesday
+#######>>>21:13:19.629 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:44.624 of 21/September/2022, Wednesday
+#######>>>21:13:19.763 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:44.731 of 21/September/2022, Wednesday
+#######>>>21:13:19.896 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:44.837 of 21/September/2022, Wednesday
+#######>>>21:13:20.014 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:44.944 of 21/September/2022, Wednesday
+#######>>>21:13:20.163 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:45.050 of 21/September/2022, Wednesday
+#######>>>21:13:20.330 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:45.157 of 21/September/2022, Wednesday
+#######>>>21:13:20.563 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:45.371 of 21/September/2022, Wednesday
+#######>>>21:13:20.679 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:45.477 of 21/September/2022, Wednesday
+#######>>>21:13:20.830 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:45.601 of 21/September/2022, Wednesday
+#######>>>21:13:21.220 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:45.704 of 21/September/2022, Wednesday
+#######>>>21:13:21.329 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:45.810 of 21/September/2022, Wednesday
+#######>>>21:13:21.581 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:45.921 of 21/September/2022, Wednesday
+#######>>>21:13:21.701 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:46.024 of 21/September/2022, Wednesday
+#######>>>21:13:21.846 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:46.132 of 21/September/2022, Wednesday
+#######>>>21:13:22.196 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:46.254 of 21/September/2022, Wednesday
+#######>>>21:13:22.346 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:46.375 of 21/September/2022, Wednesday
+#######>>>21:13:22.646 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:46.504 of 21/September/2022, Wednesday
+#######>>>21:13:22.779 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:46.610 of 21/September/2022, Wednesday
+#######>>>21:13:22.962 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:46.748 of 21/September/2022, Wednesday
+#######>>>21:13:23.146 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:46.851 of 21/September/2022, Wednesday
+#######>>>21:13:23.362 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:46.957 of 21/September/2022, Wednesday
+#######>>>21:13:23.546 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:47.076 of 21/September/2022, Wednesday
+#######>>>21:13:23.679 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:47.211 of 21/September/2022, Wednesday
+#######>>>21:13:23.963 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:47.356 of 21/September/2022, Wednesday
+#######>>>21:13:24.113 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:47.569 of 21/September/2022, Wednesday
+#######>>>21:13:24.334 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:47.676 of 21/September/2022, Wednesday
+#######>>>21:13:24.519 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:47.798 of 21/September/2022, Wednesday
+#######>>>21:13:24.813 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:47.909 of 21/September/2022, Wednesday
+#######>>>21:13:24.936 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:48.171 of 21/September/2022, Wednesday
+#######>>>21:13:25.052 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>18:30:48.276 of 21/September/2022, Wednesday
+#######>>>21:13:25.179 of 2/October/2022, Sunday
 #>>>Ship can't chase, directing to Travel update...
-#>>>Stopping Refresh Handler
-#>>>Deleting...
+## -------------------- ##
+####################
+#######>>>21:13:25.313 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:25.463 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:25.679 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:25.862 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:26.029 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:26.329 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:26.462 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:26.679 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:26.846 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:27.146 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:27.379 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:27.529 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:27.729 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:28.013 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:28.179 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:28.396 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:28.663 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:28.937 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:29.179 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:29.396 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:29.579 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:29.764 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:29.929 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:30.064 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:30.282 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:30.396 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:30.629 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:30.862 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:30.996 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:31.179 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:31.362 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:31.496 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:31.745 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:32.012 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:32.179 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:32.446 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:32.679 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:32.862 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:33.130 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:33.279 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:33.396 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:33.529 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:33.796 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:34.029 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:34.146 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:34.363 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:34.496 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:34.796 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:34.962 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:35.145 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:35.363 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:35.646 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:35.806 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:35.983 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:36.129 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:36.380 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:36.513 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:36.646 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:36.796 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:36.929 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:37.046 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:37.379 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:37.530 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:37.646 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:37.781 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:37.896 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:38.029 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:38.146 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:38.379 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:38.497 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:38.612 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:38.862 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:38.999 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:39.112 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:39.279 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:39.396 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:39.529 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:39.780 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:39.929 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:40.047 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:40.212 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:40.579 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:40.774 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:40.892 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:41.016 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:41.212 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:41.415 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:41.610 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:41.737 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:41.859 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:42.046 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:42.329 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:42.512 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:42.654 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:43.029 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:43.145 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:43.279 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:43.464 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:43.645 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:43.814 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:43.929 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:44.046 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:44.174 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:44.313 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:44.446 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:44.562 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:44.696 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:44.796 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:45.046 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:45.213 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:45.329 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:45.479 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:45.712 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:45.846 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:46.062 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:46.213 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:46.362 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:46.529 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:46.645 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:46.779 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:46.946 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:47.062 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:47.229 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:47.412 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:47.679 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:47.862 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:48.145 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:48.329 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:48.512 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:48.745 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:48.912 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:49.095 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:49.262 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:49.446 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:49.645 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:49.829 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:50.079 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:50.245 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:50.379 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:50.529 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:50.712 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:50.879 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:51.050 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:51.212 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:51.346 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:51.679 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:51.812 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:51.979 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:52.212 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:52.395 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:52.529 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:52.712 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:52.895 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:53.028 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:53.178 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:53.362 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:53.645 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:53.778 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:53.962 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:54.079 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:54.212 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:54.428 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:54.579 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:54.779 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:54.932 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:55.046 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:55.212 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:55.362 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:55.562 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:55.712 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:55.862 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:55.995 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:56.145 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:56.395 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:56.529 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:56.678 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:56.845 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:56.978 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:57.145 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:57.328 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:57.495 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:58.245 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:58.363 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:58.495 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:58.662 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:59.095 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:13:59.678 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:0.045 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:0.478 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:1.128 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:1.545 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:1.961 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:2.478 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:2.945 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:3.445 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:3.628 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:3.995 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:4.678 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:5.278 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:5.878 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:6.628 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:7.128 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:7.578 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:7.911 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:8.311 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:8.778 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:9.345 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:9.945 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:10.562 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:11.062 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:11.528 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:12.095 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:12.411 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:13.161 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:13.628 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:14.061 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:14.728 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:15.311 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:15.795 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:16.295 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:16.761 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:17.245 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:17.712 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:18.178 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:18.761 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:19.345 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:19.928 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:20.328 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:20.778 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:21.211 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:21.678 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:22.128 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:22.545 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:23.011 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:23.428 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:24.161 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:24.712 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:25.378 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:25.895 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:26.478 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:26.978 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:27.661 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:27.995 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:28.478 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:28.928 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:29.411 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:29.845 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:30.361 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:30.728 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:31.095 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:31.545 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:31.994 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:32.595 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:33.044 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:33.445 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:33.861 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:34.245 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:34.761 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:35.295 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:35.644 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:36.111 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:36.644 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:37.264 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:37.495 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:37.961 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:38.361 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:39.011 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:39.378 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:40.044 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:40.394 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:40.778 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:41.428 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:41.844 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:42.561 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:42.994 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:43.411 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:43.678 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:44.078 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:44.628 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:45.027 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:45.544 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:46.061 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:46.511 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:47.111 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:47.744 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:48.144 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:48.744 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:49.161 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:49.628 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:50.278 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:50.828 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:51.361 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:51.794 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:52.261 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:52.828 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:53.344 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:53.811 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:54.378 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:54.911 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:55.394 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:55.944 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:56.378 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:56.944 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:57.394 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:57.828 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:58.344 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:58.877 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:59.444 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:14:59.927 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:15:0.477 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:15:0.878 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:15:1.327 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:15:1.777 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:15:2.177 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:15:2.794 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:15:3.177 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:15:3.611 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:15:4.061 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:15:4.777 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:15:5.327 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:15:5.777 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:15:6.194 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:15:6.628 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:15:7.227 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:15:7.677 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:15:8.194 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:15:8.727 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:15:9.361 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:15:9.811 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:15:10.327 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:15:10.911 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:15:11.444 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:15:11.977 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:15:12.477 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:15:13.077 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:15:13.611 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:15:14.194 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:15:14.727 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:15:15.177 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:15:15.744 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:15:16.294 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:15:16.794 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:15:17.344 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:15:17.927 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:15:18.427 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:15:18.861 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:15:19.361 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:15:19.777 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:15:20.427 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:15:20.977 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:15:21.511 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:15:22.227 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:15:22.827 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:15:23.377 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:15:23.727 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:15:24.111 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:15:24.810 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:15:25.277 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:15:25.794 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:15:26.194 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:15:26.844 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:15:27.161 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:15:27.544 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:20:38.057 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>21:20:39.439 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>21:20:40.739 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>21:20:42.623 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>21:20:42.773 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>21:20:44.193 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>21:20:45.944 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>21:20:47.689 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>21:20:49.689 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>21:20:51.656 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:20:59.639 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:21:1.422 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:21:1.556 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:21:2.556 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:21:3.606 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:21:4.672 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:21:5.889 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:21:6.756 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:21:7.806 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:21:9.139 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:21:10.372 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:21:11.406 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:21:12.772 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:21:14.006 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:21:14.906 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:21:15.806 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:21:16.708 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:21:18.039 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:21:19.272 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:21:20.272 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:21:21.022 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:21:21.805 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:21:22.455 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:21:23.539 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:21:24.439 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:21:24.839 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:21:25.206 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:21:25.805 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:21:26.456 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:21:26.922 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:21:27.992 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:21:28.356 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:21:29.205 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:21:29.807 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:21:30.022 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:21:30.939 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:21:31.506 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:21:32.142 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:21:32.689 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:21:33.122 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:21:33.622 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:21:34.155 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:21:34.458 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:21:34.805 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:21:35.105 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:21:35.831 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:21:35.972 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:21:36.366 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:21:36.872 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:21:37.766 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:21:37.895 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:21:38.022 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:21:38.989 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:21:39.755 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:21:40.522 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:21:41.111 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:21:41.922 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:21:42.893 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:21:43.822 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:21:45.092 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:21:46.755 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:21:47.988 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:21:49.838 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:21:51.188 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:21:51.422 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:21:51.555 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:21:51.738 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:21:52.555 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:21:53.472 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:21:54.338 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:21:55.122 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:21:55.872 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:21:56.589 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:21:57.505 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:21:58.305 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:21:59.256 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:22:0.338 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:22:1.672 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:22:2.722 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:22:3.705 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:22:4.022 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:22:4.855 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:22:5.605 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:22:6.388 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:22:7.122 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:22:7.513 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:22:7.905 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:22:9.055 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:22:9.706 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:22:10.238 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:22:10.788 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:22:11.238 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:22:12.088 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:22:12.855 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:22:14.255 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:22:16.155 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:22:17.571 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:22:18.739 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:22:19.455 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:22:20.488 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:22:22.338 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:22:24.371 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:22:26.021 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:22:27.454 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:22:28.338 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:22:29.704 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:22:31.061 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:22:32.356 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:22:33.605 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:22:35.022 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:22:36.405 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:22:37.922 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:22:39.454 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:22:40.411 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:22:41.754 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:22:43.237 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:22:45.637 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:22:47.437 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:22:49.121 of 2/October/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
 ########################################
-# 18:56:19.751 of 21/September/2022, Wednesday
+# 21:22:49.121 of 2/October/2022, Sunday
 #Ending of log dump - User is quiting the game
 ########################################

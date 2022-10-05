@@ -1,0 +1,55 @@
+#This is the dump of the LogCreator: <Superweapon-1 Travel Logger LogCreator_HzHu13O00bxl>
+#This log file was created on: 2:56:36.900 of 2/October/2022, Sunday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>2:56:36.900 of 2/October/2022, Sunday
+#>>>Initialized Superweapon-1 Travel logger
+#>>>SELF = <Superweapon-1(273513) Travel_Sk1pYtm1SMZL>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>2:56:44.774 of 2/October/2022, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>2:56:45.307 of 2/October/2022, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>2:56:45.759 of 2/October/2022, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>2:56:46.408 of 2/October/2022, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>2:56:46.890 of 2/October/2022, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>2:59:19.606 of 2/October/2022, Sunday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 3:16:12.841 of 2/October/2022, Sunday
+#Ending of log dump - User is quiting the game
+########################################

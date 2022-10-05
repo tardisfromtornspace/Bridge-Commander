@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Shadow_Fighter6 3 Travel Logger LogCreator_G1pi9sQwggpc>
-#This log file was created on: 21:34:30.582 of 25/September/2022, Sunday
+#This is the dump of the LogCreator: <Shadow_Fighter6 3 Travel Logger LogCreator_Hv83DFd6DKGY>
+#This log file was created on: 21:16:52.693 of 2/October/2022, Sunday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>21:34:30.582 of 25/September/2022, Sunday
+#######>>>21:16:52.693 of 2/October/2022, Sunday
 #>>>Initialized Shadow_Fighter6 3 Travel logger
-#>>>SELF = <Shadow_Fighter6 3(560032) Travel_6n2BY833G706>
+#>>>SELF = <Shadow_Fighter6 3(219265) Travel_7Irr2PVw67u8>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -21,3 +21,58 @@ Updating Travelling Procedures...
 #>>>Chaser base class initialization complete.
 #>>>Target Ship = NONE
 #>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>21:17:3.843 of 2/October/2022, Sunday
+#>>>Updated Target Ship = Deep Space Nine-1
+#>>>Can Chase Target = 0
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:17:4.047 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:17:4.210 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:17:4.745 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:17:5.060 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:17:5.633 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:17:6.189 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:17:6.863 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:17:7.331 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:17:7.777 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:17:8.345 of 2/October/2022, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:17:8.843 of 2/October/2022, Sunday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 21:22:49.121 of 2/October/2022, Sunday
+#Ending of log dump - User is quiting the game
+########################################

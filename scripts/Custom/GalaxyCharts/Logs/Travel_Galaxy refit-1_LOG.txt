@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Galaxy refit-1 Travel Logger LogCreator_O41GG8brg36k>
-#This log file was created on: 22:52:56.123 of 25/September/2022, Sunday
+#This is the dump of the LogCreator: <Galaxy refit-1 Travel Logger LogCreator_es8Jlg20UoDm>
+#This log file was created on: 20:50:30.692 of 2/October/2022, Sunday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>22:52:56.123 of 25/September/2022, Sunday
+#######>>>20:50:30.692 of 2/October/2022, Sunday
 #>>>Initialized Galaxy refit-1 Travel logger
-#>>>SELF = <Galaxy refit-1(933494) Travel_e3qj6vsW5qgp>
+#>>>SELF = <Galaxy refit-1(62967) Travel_E22B57gBnVdq>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -24,16 +24,10 @@ Updating Travelling Procedures...
 #>>>Updated Target Ship = Player
 ## -------------------- ##
 ####################
-#######>>>22:53:4.007 of 25/September/2022, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-#>>> -Cancelling, too close to target to warp intercept...
+#######>>>20:50:38.066 of 2/October/2022, Sunday
+#>>>Updated Target Ship = Shadow Battlecrab-2
 ## -------------------- ##
 ####################
-#######>>>22:53:4.907 of 25/September/2022, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>22:53:5.523 of 25/September/2022, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-#>>> -Cancelling, too close to target to warp intercept...
+#######>>>20:51:36.614 of 2/October/2022, Sunday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

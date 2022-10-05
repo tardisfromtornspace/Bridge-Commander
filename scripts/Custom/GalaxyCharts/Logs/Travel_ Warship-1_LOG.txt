@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: < Warship-1 Travel Logger LogCreator_Xpc8fTI4hMfm>
-#This log file was created on: 2:22:37.904 of 17/September/2022, Saturday
+#This is the dump of the LogCreator: < Warship-1 Travel Logger LogCreator_u3zozFS0FCgB>
+#This log file was created on: 17:49:34.204 of 4/October/2022, Tuesday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>2:22:37.904 of 17/September/2022, Saturday
+#######>>>17:49:34.204 of 4/October/2022, Tuesday
 #>>>Initialized  Warship-1 Travel logger
-#>>>SELF = < Warship-1(2030601) Travel_97ZL8A7i4DZ5>
+#>>>SELF = < Warship-1(2194682) Travel_TwwL3qhCPDY6>
 #>>>Initial Travel Type: None
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -24,38 +24,52 @@ Updating Travelling Procedures...
 #>>>Updated Target Ship = Player
 ## -------------------- ##
 ####################
-#######>>>2:22:52.627 of 17/September/2022, Saturday
-#>>>Updated Target Ship = USS Orville-2
+#######>>>17:49:41.784 of 4/October/2022, Tuesday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>2:22:53.089 of 17/September/2022, Saturday
+#######>>>17:49:42.167 of 4/October/2022, Tuesday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>2:22:53.252 of 17/September/2022, Saturday
+#######>>>17:49:42.300 of 4/October/2022, Tuesday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>2:22:53.731 of 17/September/2022, Saturday
+#######>>>17:49:42.849 of 4/October/2022, Tuesday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>2:22:54.362 of 17/September/2022, Saturday
+#######>>>17:49:43.083 of 4/October/2022, Tuesday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>2:22:54.891 of 17/September/2022, Saturday
+#######>>>17:49:43.567 of 4/October/2022, Tuesday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>2:22:55.324 of 17/September/2022, Saturday
+#######>>>17:49:43.733 of 4/October/2022, Tuesday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>2:23:17.926 of 17/September/2022, Saturday
-#>>>Updated Target Ship = Player
+#######>>>17:49:44.083 of 4/October/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>2:24:8.760 of 17/September/2022, Saturday
-#>>>Updated Target Ship = USS Orville-3
+#######>>>17:50:59.783 of 4/October/2022, Tuesday
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at Update (Chaser)
+Traceback of Error: TypeError: call of non-function (type None)
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 2307, in the function "Update".
+Script: ".\Scripts\Custom\GalaxyCharts\HelmAddonGUI.py", Line 93, in the function "CreateTravelTypeButtons".
+Script: ".\Scripts\Custom\GalaxyCharts\HelmAddonGUI.py", Line 118, in the function "UpdateTravelType".
+Script: ".\Scripts\Custom\GalaxyCharts\HelmAddonGUI.py", Line 299, in the function "UpdateEmergencyOutButton".
+Script: ".\Scripts\Custom\GalaxyCharts\HelmAddonGUI.py", Line 245, in the function "CanEmergencyTravelOut".
+Script: ".\Scripts\Custom\GalaxyCharts\HelmAddonGUI.py", Line 288, in the function "CheckBasicPlayerCanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+########################################
+# 17:52:42.715 of 4/October/2022, Tuesday
+#Ending of log dump - User is quiting the game
+########################################

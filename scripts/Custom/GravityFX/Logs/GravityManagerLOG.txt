@@ -1,13 +1,13 @@
-#This is the dump of the LogCreator: <Gravity Manager LogCreator_I8Sko0v9X8dR>
-#This log file was created on: 20:25:1.0 of 26/September/2022, Monday
+#This is the dump of the LogCreator: <Gravity Manager LogCreator_Ms6K0o0AI01G>
+#This log file was created on: 20:52:55.0 of 5/October/2022, Wednesday
 ########################################
 ## -------------------- ##
 ####################
-#######>>>20:25:1.0 of 26/September/2022, Monday
-#>>>Initialized GravityManager_y9GRqLfI0l1i logger
+#######>>>20:52:55.0 of 5/October/2022, Wednesday
+#>>>Initialized GravityManager_Zaf9zX7BjF36 logger
 ## -------------------- ##
 ####################
-#######>>>20:25:8.854 of 26/September/2022, Monday
+#######>>>20:53:4.079 of 5/October/2022, Wednesday
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
@@ -17,549 +17,113 @@
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_k2zLlsbX0ejR>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_4lh0MvsDuE25>]
 #>>>Planets/Suns List: ['Belaruz 4']
 #>>>Refreshed Ship List: ['Player']
-#>>>Updated radius for grav well <Belaruz 4 GravityWell_k2zLlsbX0ejR>, radius is now 1609.24829102
+#>>>Updated radius for grav well <Belaruz 4 GravityWell_4lh0MvsDuE25>, radius is now 1603.09033203
 ## -------------------- ##
 ####################
-#######>>>20:25:50.624 of 26/September/2022, Monday
+#######>>>20:53:41.909 of 5/October/2022, Wednesday
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_LHRA0RwhJm20>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_8Q9Y3mq8SBGk>]
 #>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player', 'USS Orville-1', 'USS Orville-2', 'USS Orville-3', 'USS Orville-4', 'USS Orville-5', 'USS Orville-6', 'USS Orville-7']
-#>>>Refreshed Ship List: ['Player', 'USS Orville-1', 'USS Orville-2', 'USS Orville-3', 'USS Orville-4', 'USS Orville-5', 'USS Orville-6', 'USS Orville-7']
-#>>>Refreshed Ship List: ['Player', 'USS Orville-1', 'USS Orville-2', 'USS Orville-3', 'USS Orville-4', 'USS Orville-5', 'USS Orville-6', 'USS Orville-7']
-#>>>Refreshed Ship List: ['Player', 'USS Orville-1', 'USS Orville-2', 'USS Orville-3', 'USS Orville-4', 'USS Orville-5', 'USS Orville-6', 'USS Orville-7']
-#>>>Refreshed Ship List: ['Player', 'USS Orville-1', 'USS Orville-2', 'USS Orville-3', 'USS Orville-4', 'USS Orville-5', 'USS Orville-6', 'USS Orville-7']
-#>>>Refreshed Ship List: ['Player', 'USS Orville-1', 'USS Orville-2', 'USS Orville-3', 'USS Orville-4', 'USS Orville-5', 'USS Orville-6', 'USS Orville-7']
-#>>>Refreshed Ship List: ['Player', 'USS Orville-1', 'USS Orville-2', 'USS Orville-3', 'USS Orville-4', 'USS Orville-5', 'USS Orville-6', 'USS Orville-7']
-#>>>Refreshed Ship List: ['Player', 'USS Orville-1', 'USS Orville-2', 'USS Orville-3', 'USS Orville-4', 'USS Orville-5', 'USS Orville-6', 'USS Orville-7']
+#>>>Refreshed Ship List: ['Player', 'Dominion Battlecruiser-1']
+#>>>Refreshed Ship List: ['Player', 'Dominion Battlecruiser-1']
 ## -------------------- ##
 ####################
-#######>>>20:27:21.558 of 26/September/2022, Monday
-#>>>Refreshed Ship List: ['Player', 'USS Orville-1', 'USS Orville-2', 'USS Orville-3', 'USS Orville-4', 'USS Orville-6', 'USS Orville-7']
-## -------------------- ##
-####################
-#######>>>20:27:21.772 of 26/September/2022, Monday
-#>>>Refreshed Ship List: ['Player', 'USS Orville-1', 'USS Orville-2', 'USS Orville-3', 'USS Orville-4', 'USS Orville-7']
-## -------------------- ##
-####################
-#######>>>20:27:47.133 of 26/September/2022, Monday
-#>>>Refreshed Ship List: ['Player', 'USS Orville-1', 'USS Orville-2', 'USS Orville-3', 'USS Orville-4', 'USS Orville-7']
-## -------------------- ##
-####################
-#######>>>20:27:56.261 of 26/September/2022, Monday
-#>>>Refreshed Ship List: ['Player', 'USS Orville-1', 'USS Orville-2', 'USS Orville-3', 'USS Orville-4']
-## -------------------- ##
-####################
-#######>>>20:27:56.554 of 26/September/2022, Monday
-#>>>Refreshed Ship List: ['Player', 'USS Orville-2', 'USS Orville-3', 'USS Orville-4']
-## -------------------- ##
-####################
-#######>>>20:27:59.321 of 26/September/2022, Monday
-#>>>Refreshed Ship List: ['Player', 'USS Orville-2', 'USS Orville-3']
-## -------------------- ##
-####################
-#######>>>20:28:34.753 of 26/September/2022, Monday
-#>>>Refreshed Ship List: ['Player', 'USS Orville-2']
-## -------------------- ##
-####################
-#######>>>20:28:35.535 of 26/September/2022, Monday
-#>>>Refreshed Ship List: ['Player', 'USS Orville-2']
-## -------------------- ##
-####################
-#######>>>20:28:43.035 of 26/September/2022, Monday
+#######>>>20:55:19.793 of 5/October/2022, Wednesday
 #>>>Refreshed Ship List: ['Player']
 ## -------------------- ##
 ####################
-#######>>>20:28:46.718 of 26/September/2022, Monday
+#######>>>20:55:38.728 of 5/October/2022, Wednesday
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_58B58hlUM24F>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_nlOLqPZ480Hf>]
 #>>>Planets/Suns List: ['Belaruz 4']
 #>>>Refreshed Ship List: ['Player']
 ## -------------------- ##
 ####################
-#######>>>20:29:5.041 of 26/September/2022, Monday
+#######>>>20:55:48.435 of 5/October/2022, Wednesday
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_N24is3RNCj80>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_25ee8KJE33D1>]
 #>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1']
+#>>>Refreshed Ship List: ['Player', 'Dominion Battlecruiser-1', 'Dominion Battleship-2', 'Dominion Battleship-3', 'Dominion Battleship-4', 'Dominion Battleship-5']
+#>>>Refreshed Ship List: ['Player', 'Dominion Battlecruiser-1', 'Dominion Battleship-2', 'Dominion Battleship-3', 'Dominion Battleship-4', 'Dominion Battleship-5']
+#>>>Refreshed Ship List: ['Player', 'Dominion Battlecruiser-1', 'Dominion Battleship-2', 'Dominion Battleship-3', 'Dominion Battleship-4', 'Dominion Battleship-5']
+#>>>Refreshed Ship List: ['Player', 'Dominion Battlecruiser-1', 'Dominion Battleship-2', 'Dominion Battleship-3', 'Dominion Battleship-4', 'Dominion Battleship-5']
+#>>>Refreshed Ship List: ['Player', 'Dominion Battlecruiser-1', 'Dominion Battleship-2', 'Dominion Battleship-3', 'Dominion Battleship-4', 'Dominion Battleship-5']
+#>>>Refreshed Ship List: ['Player', 'Dominion Battlecruiser-1', 'Dominion Battleship-2', 'Dominion Battleship-3', 'Dominion Battleship-4', 'Dominion Battleship-5']
 ## -------------------- ##
 ####################
-#######>>>20:30:18.967 of 26/September/2022, Monday
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1']
+#######>>>20:57:20.198 of 5/October/2022, Wednesday
+#>>>Refreshed Ship List: ['Player', 'Dominion Battlecruiser-1', 'Dominion Battleship-2', 'Dominion Battleship-3', 'Dominion Battleship-4', 'Dominion Battleship-5', 'bug - 2']
 ## -------------------- ##
 ####################
-#######>>>20:30:19.899 of 26/September/2022, Monday
+#######>>>20:57:24.291 of 5/October/2022, Wednesday
+#>>>Refreshed Ship List: ['Player', 'Dominion Battlecruiser-1', 'Dominion Battleship-2', 'Dominion Battleship-3', 'Dominion Battleship-4', 'Dominion Battleship-5', 'bug - 2', 'bug - 3']
+## -------------------- ##
+####################
+#######>>>20:57:35.429 of 5/October/2022, Wednesday
+#>>>Refreshed Ship List: ['Player', 'Dominion Battlecruiser-1', 'Dominion Battleship-2', 'Dominion Battleship-3', 'Dominion Battleship-5', 'bug - 2', 'bug - 3']
+## -------------------- ##
+####################
+#######>>>20:58:4.974 of 5/October/2022, Wednesday
+#>>>Refreshed Ship List: ['Player', 'Dominion Battlecruiser-1', 'Dominion Battleship-2', 'Dominion Battleship-3', 'Dominion Battleship-5', 'bug - 2', 'bug - 3']
+## -------------------- ##
+####################
+#######>>>20:58:6.700 of 5/October/2022, Wednesday
+#>>>Refreshed Ship List: ['Player', 'Dominion Battlecruiser-1', 'Dominion Battleship-2', 'Dominion Battleship-3', 'Dominion Battleship-5', 'bug - 2', 'bug - 3']
+## -------------------- ##
+####################
+#######>>>20:58:14.634 of 5/October/2022, Wednesday
+#>>>Refreshed Ship List: ['Player', 'Dominion Battlecruiser-1', 'Dominion Battleship-2', 'Dominion Battleship-3', 'Dominion Battleship-5', 'bug - 2', 'bug - 3']
+## -------------------- ##
+####################
+#######>>>20:58:14.728 of 5/October/2022, Wednesday
+#>>>Refreshed Ship List: ['Player', 'Dominion Battlecruiser-1', 'Dominion Battleship-2', 'Dominion Battleship-3', 'Dominion Battleship-5', 'bug - 2', 'bug - 3']
+## -------------------- ##
+####################
+#######>>>20:58:14.912 of 5/October/2022, Wednesday
+#>>>Refreshed Ship List: ['Player', 'Dominion Battlecruiser-1', 'Dominion Battleship-2', 'Dominion Battleship-3', 'Dominion Battleship-5', 'bug - 2', 'bug - 3']
+## -------------------- ##
+####################
+#######>>>21:0:29.871 of 5/October/2022, Wednesday
+#>>>Refreshed Ship List: ['Player', 'Dominion Battlecruiser-1', 'Dominion Battleship-2', 'Dominion Battleship-3', 'Dominion Battleship-5', 'bug - 2', 'bug - 3']
+## -------------------- ##
+####################
+#######>>>21:0:31.680 of 5/October/2022, Wednesday
+#>>>Refreshed Ship List: ['Player', 'Dominion Battlecruiser-1', 'Dominion Battleship-2', 'Dominion Battleship-3', 'Dominion Battleship-5', 'bug - 2', 'bug - 3']
+## -------------------- ##
+####################
+#######>>>21:0:34.638 of 5/October/2022, Wednesday
+#>>>Refreshed Ship List: ['Player', 'Dominion Battlecruiser-1', 'Dominion Battleship-2', 'Dominion Battleship-3', 'Dominion Battleship-5', 'bug - 2', 'bug - 3']
+## -------------------- ##
+####################
+#######>>>21:0:39.541 of 5/October/2022, Wednesday
+#>>>Refreshed Ship List: ['Player', 'Dominion Battlecruiser-1', 'Dominion Battleship-2', 'Dominion Battleship-3', 'Dominion Battleship-5', 'bug - 2']
+## -------------------- ##
+####################
+#######>>>21:0:39.893 of 5/October/2022, Wednesday
+#>>>Refreshed Ship List: ['Player', 'Dominion Battlecruiser-1', 'Dominion Battleship-2', 'Dominion Battleship-3', 'Dominion Battleship-5', 'bug - 2']
+## -------------------- ##
+####################
+#######>>>21:0:40.049 of 5/October/2022, Wednesday
+#>>>Refreshed Ship List: ['Player', 'Dominion Battlecruiser-1', 'Dominion Battleship-2', 'Dominion Battleship-3', 'Dominion Battleship-5', 'bug - 2']
+## -------------------- ##
+####################
+#######>>>21:7:39.650 of 5/October/2022, Wednesday
+#>>>Refreshed Ship List: ['Player', 'Dominion Battlecruiser-1', 'Dominion Battleship-2', 'Dominion Battleship-5', 'bug - 2']
+## -------------------- ##
+####################
+#######>>>21:9:0.330 of 5/October/2022, Wednesday
+#>>>Refreshed Ship List: ['Player', 'Dominion Battlecruiser-1', 'Dominion Battleship-2', 'bug - 2']
+## -------------------- ##
+####################
+#######>>>21:9:3.664 of 5/October/2022, Wednesday
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_0puratUSgujO>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_IjLjEJMkY5kJ>]
 #>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['U.S.S. Enterprise J-1', 'Player']
-## -------------------- ##
-####################
-#######>>>20:30:28.116 of 26/September/2022, Monday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_J0yGtpE2sw4u>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player']
-## -------------------- ##
-####################
-#######>>>20:30:30.133 of 26/September/2022, Monday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_6zK8Ljd4DI1G>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1']
-## -------------------- ##
-####################
-#######>>>20:30:36.633 of 26/September/2022, Monday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_TXA90ynIyw6y>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['U.S.S. Enterprise J-1', 'Player', 'MvamPrometheusSaucer', 'MvamPrometheusVentral']
-#>>>Refreshed Ship List: ['U.S.S. Enterprise J-1', 'Player', 'MvamPrometheusSaucer', 'MvamPrometheusVentral']
-#>>>Refreshed Ship List: ['U.S.S. Enterprise J-1', 'Player', 'MvamPrometheusSaucer', 'MvamPrometheusVentral']
-## -------------------- ##
-####################
-#######>>>20:30:58.400 of 26/September/2022, Monday
-#>>>Refreshed Ship List: ['U.S.S. Enterprise J-1', 'Player', 'MvamPrometheusSaucer', 'MvamPrometheusVentral']
-## -------------------- ##
-####################
-#######>>>20:31:1.783 of 26/September/2022, Monday
-#>>>Refreshed Ship List: ['U.S.S. Enterprise J-1', 'Player', 'MvamPrometheusVentral']
-## -------------------- ##
-####################
-#######>>>20:31:2.835 of 26/September/2022, Monday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_D74Y10qQcC0w>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['U.S.S. Enterprise J-1', 'MvamPrometheusVentral', 'Player']
-## -------------------- ##
-####################
-#######>>>20:31:7.132 of 26/September/2022, Monday
-#>>>Refreshed Ship List: ['MvamPrometheusVentral', 'Player']
-## -------------------- ##
-####################
-#######>>>20:31:21.565 of 26/September/2022, Monday
-#>>>Refreshed Ship List: ['Player']
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_03i4DBHe79k1>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player']
-## -------------------- ##
-####################
-#######>>>20:31:31.432 of 26/September/2022, Monday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_Tf6E7v01uM98>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2']
-## -------------------- ##
-####################
-#######>>>20:31:57.683 of 26/September/2022, Monday
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1']
-## -------------------- ##
-####################
-#######>>>20:32:17.415 of 26/September/2022, Monday
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1']
-## -------------------- ##
-####################
-#######>>>20:32:18.181 of 26/September/2022, Monday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_sGZL4a179L5F>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['U.S.S. Enterprise J-1', 'Player']
-## -------------------- ##
-####################
-#######>>>20:32:39.397 of 26/September/2022, Monday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_RsAtYoyz3CXV>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2', 'Galaxy refit-3', 'USS Voyager-4']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2', 'Galaxy refit-3', 'USS Voyager-4']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2', 'Galaxy refit-3', 'USS Voyager-4']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2', 'Galaxy refit-3', 'USS Voyager-4']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2', 'Galaxy refit-3', 'USS Voyager-4']
-## -------------------- ##
-####################
-#######>>>20:33:17.365 of 26/September/2022, Monday
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2', 'Galaxy refit-3', 'USS Voyager-4']
-## -------------------- ##
-####################
-#######>>>20:33:18.748 of 26/September/2022, Monday
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2', 'USS Voyager-4']
-## -------------------- ##
-####################
-#######>>>20:33:19.997 of 26/September/2022, Monday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_3ii64bev61w4>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['U.S.S. Enterprise J-1', 'Firebird-2', 'USS Voyager-4', 'Player']
-## -------------------- ##
-####################
-#######>>>20:33:26.297 of 26/September/2022, Monday
-#>>>Refreshed Ship List: ['Player']
-## -------------------- ##
-####################
-#######>>>20:34:19.413 of 26/September/2022, Monday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_ueIkN9m0r09K>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2', 'Galaxy refit-3', 'USS Voyager-4', 'Prometheus-5', 'USS Orville-6', 'ArmoredVoyager-7']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2', 'Galaxy refit-3', 'USS Voyager-4', 'Prometheus-5', 'USS Orville-6', 'ArmoredVoyager-7']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2', 'Galaxy refit-3', 'USS Voyager-4', 'Prometheus-5', 'USS Orville-6', 'ArmoredVoyager-7']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2', 'Galaxy refit-3', 'USS Voyager-4', 'Prometheus-5', 'USS Orville-6', 'ArmoredVoyager-7']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2', 'Galaxy refit-3', 'USS Voyager-4', 'Prometheus-5', 'USS Orville-6', 'ArmoredVoyager-7']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2', 'Galaxy refit-3', 'USS Voyager-4', 'Prometheus-5', 'USS Orville-6', 'ArmoredVoyager-7']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2', 'Galaxy refit-3', 'USS Voyager-4', 'Prometheus-5', 'USS Orville-6', 'ArmoredVoyager-7']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2', 'Galaxy refit-3', 'USS Voyager-4', 'Prometheus-5', 'USS Orville-6', 'ArmoredVoyager-7']
-## -------------------- ##
-####################
-#######>>>20:34:47.402 of 26/September/2022, Monday
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2', 'Galaxy refit-3', 'USS Voyager-4', 'USS Orville-6', 'ArmoredVoyager-7']
-## -------------------- ##
-####################
-#######>>>20:34:50.317 of 26/September/2022, Monday
-#>>>Refreshed Ship List: ['Player', 'Firebird-2', 'Galaxy refit-3', 'USS Voyager-4', 'USS Orville-6', 'ArmoredVoyager-7']
-## -------------------- ##
-####################
-#######>>>20:34:57.964 of 26/September/2022, Monday
-#>>>Refreshed Ship List: ['Player', 'Galaxy refit-3', 'USS Voyager-4', 'USS Orville-6', 'ArmoredVoyager-7']
-#>>>Refreshed Ship List: ['Player', 'USS Voyager-4', 'USS Orville-6', 'ArmoredVoyager-7']
-#>>>Refreshed Ship List: ['Player', 'USS Orville-6', 'ArmoredVoyager-7']
-#>>>Refreshed Ship List: ['Player', 'ArmoredVoyager-7']
-#>>>Refreshed Ship List: ['Player']
-## -------------------- ##
-####################
-#######>>>20:35:3.295 of 26/September/2022, Monday
-#>>>Refreshed Ship List: []
-#>>>Added Player to the Ship List
-## -------------------- ##
-####################
-#######>>>20:35:5.279 of 26/September/2022, Monday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_t6f0fY5d2VWk>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player']
-## -------------------- ##
-####################
-#######>>>20:35:18.578 of 26/September/2022, Monday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_10dqJ6QwC42p>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2', 'Galaxy refit-3', 'USS Voyager-4', 'Prometheus-5', 'USS Orville-6']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2', 'Galaxy refit-3', 'USS Voyager-4', 'Prometheus-5', 'USS Orville-6']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2', 'Galaxy refit-3', 'USS Voyager-4', 'Prometheus-5', 'USS Orville-6']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2', 'Galaxy refit-3', 'USS Voyager-4', 'Prometheus-5', 'USS Orville-6']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2', 'Galaxy refit-3', 'USS Voyager-4', 'Prometheus-5', 'USS Orville-6']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2', 'Galaxy refit-3', 'USS Voyager-4', 'Prometheus-5', 'USS Orville-6']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2', 'Galaxy refit-3', 'USS Voyager-4', 'Prometheus-5', 'USS Orville-6']
-## -------------------- ##
-####################
-#######>>>20:36:1.479 of 26/September/2022, Monday
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2', 'Galaxy refit-3', 'USS Voyager-4', 'USS Orville-6']
-## -------------------- ##
-####################
-#######>>>20:36:13.613 of 26/September/2022, Monday
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2', 'USS Voyager-4', 'USS Orville-6']
-## -------------------- ##
-####################
-#######>>>20:36:40.677 of 26/September/2022, Monday
-#>>>Refreshed Ship List: []
-#>>>Added Player to the Ship List
-## -------------------- ##
-####################
-#######>>>20:36:42.210 of 26/September/2022, Monday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_7BUGNI3eR92C>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['U.S.S. Enterprise J-1', 'Firebird-2', 'USS Voyager-4', 'USS Orville-6', 'Player']
-## -------------------- ##
-####################
-#######>>>20:37:1.326 of 26/September/2022, Monday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_9yJPz3tScu04>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2', 'Galaxy refit-3', 'USS Voyager-4', 'Prometheus-5', 'USS Orville-6']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2', 'Galaxy refit-3', 'USS Voyager-4', 'Prometheus-5', 'USS Orville-6']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2', 'Galaxy refit-3', 'USS Voyager-4', 'Prometheus-5', 'USS Orville-6']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2', 'Galaxy refit-3', 'USS Voyager-4', 'Prometheus-5', 'USS Orville-6']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2', 'Galaxy refit-3', 'USS Voyager-4', 'Prometheus-5', 'USS Orville-6']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2', 'Galaxy refit-3', 'USS Voyager-4', 'Prometheus-5', 'USS Orville-6']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2', 'Galaxy refit-3', 'USS Voyager-4', 'Prometheus-5', 'USS Orville-6']
-## -------------------- ##
-####################
-#######>>>20:37:45.794 of 26/September/2022, Monday
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2', 'Galaxy refit-3', 'USS Voyager-4', 'USS Orville-6']
-## -------------------- ##
-####################
-#######>>>20:38:19.977 of 26/September/2022, Monday
-#>>>Refreshed Ship List: ['Player', 'Firebird-2', 'Galaxy refit-3', 'USS Voyager-4', 'USS Orville-6']
-## -------------------- ##
-####################
-#######>>>20:38:27.093 of 26/September/2022, Monday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_kVA3tRUswL9J>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Firebird-2', 'Galaxy refit-3', 'USS Voyager-4', 'USS Orville-6', 'Player']
-## -------------------- ##
-####################
-#######>>>20:38:27.775 of 26/September/2022, Monday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_hXaxhZKLbcAp>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player']
-## -------------------- ##
-####################
-#######>>>20:38:30.659 of 26/September/2022, Monday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_ngRS44lh62uY>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2', 'Galaxy refit-3', 'USS Voyager-4', 'Prometheus-5', 'USS Orville-6']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2', 'Galaxy refit-3', 'USS Voyager-4', 'Prometheus-5', 'USS Orville-6']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2', 'Galaxy refit-3', 'USS Voyager-4', 'Prometheus-5', 'USS Orville-6']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2', 'Galaxy refit-3', 'USS Voyager-4', 'Prometheus-5', 'USS Orville-6']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2', 'Galaxy refit-3', 'USS Voyager-4', 'Prometheus-5', 'USS Orville-6']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2', 'Galaxy refit-3', 'USS Voyager-4', 'Prometheus-5', 'USS Orville-6']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2', 'Galaxy refit-3', 'USS Voyager-4', 'Prometheus-5', 'USS Orville-6']
-## -------------------- ##
-####################
-#######>>>20:39:15.905 of 26/September/2022, Monday
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2', 'Galaxy refit-3', 'USS Voyager-4', 'USS Orville-6']
-## -------------------- ##
-####################
-#######>>>20:39:19.442 of 26/September/2022, Monday
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2', 'USS Voyager-4', 'USS Orville-6']
-## -------------------- ##
-####################
-#######>>>20:39:28.747 of 26/September/2022, Monday
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2', 'USS Voyager-4']
-## -------------------- ##
-####################
-#######>>>20:42:55.738 of 26/September/2022, Monday
-#>>>Refreshed Ship List: ['Player', 'Firebird-2', 'USS Voyager-4']
-## -------------------- ##
-####################
-#######>>>20:42:58.438 of 26/September/2022, Monday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_74ZlziTe4Mca>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Firebird-2', 'USS Voyager-4', 'Player']
-## -------------------- ##
-####################
-#######>>>20:43:13.571 of 26/September/2022, Monday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_tyAdce3167xB>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2', 'Galaxy refit-3', 'USS Voyager-4', 'Prometheus-5', 'USS Orville-6']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2', 'Galaxy refit-3', 'USS Voyager-4', 'Prometheus-5', 'USS Orville-6']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2', 'Galaxy refit-3', 'USS Voyager-4', 'Prometheus-5', 'USS Orville-6']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2', 'Galaxy refit-3', 'USS Voyager-4', 'Prometheus-5', 'USS Orville-6']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2', 'Galaxy refit-3', 'USS Voyager-4', 'Prometheus-5', 'USS Orville-6']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2', 'Galaxy refit-3', 'USS Voyager-4', 'Prometheus-5', 'USS Orville-6']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2', 'Galaxy refit-3', 'USS Voyager-4', 'Prometheus-5', 'USS Orville-6']
-## -------------------- ##
-####################
-#######>>>20:43:43.305 of 26/September/2022, Monday
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2', 'Galaxy refit-3', 'USS Voyager-4', 'Prometheus-5', 'USS Orville-6']
-## -------------------- ##
-####################
-#######>>>20:43:43.707 of 26/September/2022, Monday
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2', 'Galaxy refit-3', 'USS Voyager-4', 'Prometheus-5', 'USS Orville-6']
-## -------------------- ##
-####################
-#######>>>20:43:44.117 of 26/September/2022, Monday
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2', 'Galaxy refit-3', 'USS Voyager-4', 'Prometheus-5', 'USS Orville-6']
-## -------------------- ##
-####################
-#######>>>20:43:44.647 of 26/September/2022, Monday
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2', 'Galaxy refit-3', 'USS Voyager-4', 'Prometheus-5', 'USS Orville-6']
-## -------------------- ##
-####################
-#######>>>20:43:45.107 of 26/September/2022, Monday
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2', 'Galaxy refit-3', 'USS Voyager-4', 'Prometheus-5', 'USS Orville-6']
-## -------------------- ##
-####################
-#######>>>20:43:45.762 of 26/September/2022, Monday
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2', 'Galaxy refit-3', 'USS Voyager-4', 'Prometheus-5', 'USS Orville-6']
-## -------------------- ##
-####################
-#######>>>20:43:46.084 of 26/September/2022, Monday
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2', 'Galaxy refit-3', 'USS Voyager-4', 'Prometheus-5', 'USS Orville-6']
-## -------------------- ##
-####################
-#######>>>20:43:46.789 of 26/September/2022, Monday
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2', 'Galaxy refit-3', 'USS Voyager-4', 'Prometheus-5', 'USS Orville-6']
-## -------------------- ##
-####################
-#######>>>20:43:52.476 of 26/September/2022, Monday
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2', 'Galaxy refit-3', 'USS Voyager-4', 'Prometheus-5', 'USS Orville-6']
-## -------------------- ##
-####################
-#######>>>20:43:52.943 of 26/September/2022, Monday
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2', 'Galaxy refit-3', 'USS Voyager-4', 'Prometheus-5', 'USS Orville-6']
-## -------------------- ##
-####################
-#######>>>20:43:53.453 of 26/September/2022, Monday
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2', 'Galaxy refit-3', 'USS Voyager-4', 'Prometheus-5', 'USS Orville-6']
-## -------------------- ##
-####################
-#######>>>20:43:53.835 of 26/September/2022, Monday
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2', 'Galaxy refit-3', 'USS Voyager-4', 'Prometheus-5', 'USS Orville-6']
-## -------------------- ##
-####################
-#######>>>20:43:57.172 of 26/September/2022, Monday
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2', 'Galaxy refit-3', 'USS Voyager-4', 'Prometheus-5', 'USS Orville-6']
-## -------------------- ##
-####################
-#######>>>20:44:1.967 of 26/September/2022, Monday
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2', 'Galaxy refit-3', 'USS Voyager-4', 'USS Orville-6']
-## -------------------- ##
-####################
-#######>>>20:44:4.639 of 26/September/2022, Monday
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2', 'Galaxy refit-3', 'USS Voyager-4', 'USS Orville-6']
-## -------------------- ##
-####################
-#######>>>20:46:45.302 of 26/September/2022, Monday
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2', 'Galaxy refit-3', 'USS Voyager-4', 'USS Orville-6', 'AndSlipFighterMK2 - 2']
-## -------------------- ##
-####################
-#######>>>20:46:49.010 of 26/September/2022, Monday
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2', 'Galaxy refit-3', 'USS Voyager-4', 'USS Orville-6', 'AndSlipFighterMK2 - 2', 'AndSlipFighterMK2 - 3']
-## -------------------- ##
-####################
-#######>>>20:46:51.952 of 26/September/2022, Monday
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2', 'Galaxy refit-3', 'USS Voyager-4', 'USS Orville-6', 'AndSlipFighterMK2 - 2', 'AndSlipFighterMK2 - 3', 'AndSlipFighterMK2 - 4']
-## -------------------- ##
-####################
-#######>>>20:46:55.124 of 26/September/2022, Monday
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2', 'Galaxy refit-3', 'USS Voyager-4', 'USS Orville-6', 'AndSlipFighterMK2 - 2', 'AndSlipFighterMK2 - 3', 'AndSlipFighterMK2 - 4', 'AndSlipFighterMK2 - 5']
-## -------------------- ##
-####################
-#######>>>20:46:56.490 of 26/September/2022, Monday
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2', 'Galaxy refit-3', 'USS Voyager-4', 'USS Orville-6', 'AndSlipFighterMK2 - 2', 'AndSlipFighterMK2 - 3', 'AndSlipFighterMK2 - 4', 'AndSlipFighterMK2 - 5', 'AndSlipFighterMK2 - 6']
-## -------------------- ##
-####################
-#######>>>20:48:46.966 of 26/September/2022, Monday
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2', 'USS Voyager-4', 'USS Orville-6', 'AndSlipFighterMK2 - 2', 'AndSlipFighterMK2 - 3', 'AndSlipFighterMK2 - 4', 'AndSlipFighterMK2 - 5', 'AndSlipFighterMK2 - 6']
-## -------------------- ##
-####################
-#######>>>20:48:54.788 of 26/September/2022, Monday
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2', 'USS Voyager-4', 'USS Orville-6', 'AndSlipFighterMK2 - 3', 'AndSlipFighterMK2 - 4', 'AndSlipFighterMK2 - 5', 'AndSlipFighterMK2 - 6']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2', 'USS Voyager-4', 'USS Orville-6', 'AndSlipFighterMK2 - 4', 'AndSlipFighterMK2 - 5', 'AndSlipFighterMK2 - 6']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2', 'USS Voyager-4', 'USS Orville-6', 'AndSlipFighterMK2 - 5', 'AndSlipFighterMK2 - 6']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2', 'USS Voyager-4', 'USS Orville-6', 'AndSlipFighterMK2 - 6']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2', 'USS Voyager-4', 'USS Orville-6']
-## -------------------- ##
-####################
-#######>>>20:49:11.932 of 26/September/2022, Monday
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1', 'Firebird-2', 'USS Voyager-4', 'USS Orville-6']
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_La971uw4ekK3>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['U.S.S. Enterprise J-1', 'Firebird-2', 'USS Voyager-4', 'USS Orville-6', 'Player']
-## -------------------- ##
-####################
-#######>>>20:50:6.597 of 26/September/2022, Monday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_ia55kHceNFk5>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player', 'AncientCity-1', 'Firebird-2', 'Galaxy refit-3', 'USS Voyager-4', 'Prometheus-5', 'USS Orville-6']
-#>>>Refreshed Ship List: ['Player', 'AncientCity-1', 'Firebird-2', 'Galaxy refit-3', 'USS Voyager-4', 'Prometheus-5', 'USS Orville-6']
-#>>>Refreshed Ship List: ['Player', 'AncientCity-1', 'Firebird-2', 'Galaxy refit-3', 'USS Voyager-4', 'Prometheus-5', 'USS Orville-6']
-#>>>Refreshed Ship List: ['Player', 'AncientCity-1', 'Firebird-2', 'Galaxy refit-3', 'USS Voyager-4', 'Prometheus-5', 'USS Orville-6']
-#>>>Refreshed Ship List: ['Player', 'AncientCity-1', 'Firebird-2', 'Galaxy refit-3', 'USS Voyager-4', 'Prometheus-5', 'USS Orville-6']
-#>>>Refreshed Ship List: ['Player', 'AncientCity-1', 'Firebird-2', 'Galaxy refit-3', 'USS Voyager-4', 'Prometheus-5', 'USS Orville-6']
-#>>>Refreshed Ship List: ['Player', 'AncientCity-1', 'Firebird-2', 'Galaxy refit-3', 'USS Voyager-4', 'Prometheus-5', 'USS Orville-6']
-## -------------------- ##
-####################
-#######>>>20:50:45.621 of 26/September/2022, Monday
-#>>>Refreshed Ship List: ['Player', 'AncientCity-1', 'Firebird-2', 'Galaxy refit-3', 'USS Voyager-4', 'Prometheus-5', 'USS Orville-6', 'F3024 - 8']
-## -------------------- ##
-####################
-#######>>>20:51:10.750 of 26/September/2022, Monday
-#>>>Refreshed Ship List: ['Player', 'AncientCity-1', 'Firebird-2', 'USS Voyager-4', 'Prometheus-5', 'USS Orville-6', 'F3024 - 8']
-#>>>Refreshed Ship List: ['Player', 'AncientCity-1', 'Firebird-2', 'USS Voyager-4', 'Prometheus-5', 'F3024 - 8']
-## -------------------- ##
-####################
-#######>>>20:51:17.926 of 26/September/2022, Monday
-#>>>Refreshed Ship List: []
-#>>>Added Player to the Ship List
-## -------------------- ##
-####################
-#######>>>20:51:18.580 of 26/September/2022, Monday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_e6JzOEGAN0g4>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['AncientCity-1', 'Firebird-2', 'USS Voyager-4', 'Prometheus-5', 'F3024 - 8', 'Player']
-#>>>Refreshed Ship List: ['Player']
-## -------------------- ##
-####################
-#######>>>20:51:47.962 of 26/September/2022, Monday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_uxGORR5rM5zd>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player', 'Vorlon Planetkiller-1', 'Vorlon Planetkiller-2', 'Vorlon Planetkiller-3', 'Vorlon Planetkiller-4', 'Vorlon Planetkiller-5', 'Vorlon Planetkiller-6', 'Vorlon Planetkiller-7', 'Vorlon Planetkiller-8', 'Vorlon Planetkiller-9', 'Vorlon Planetkiller-10', 'Vorlon Planetkiller-11', 'Vorlon Planetkiller-12', 'Vorlon Planetkiller-13', 'Firebird-14', 'Galaxy refit-15', 'USS Voyager-16', 'Prometheus-17', 'USS Orville-18']
-#>>>Refreshed Ship List: ['Player', 'Vorlon Planetkiller-1', 'Vorlon Planetkiller-2', 'Vorlon Planetkiller-3', 'Vorlon Planetkiller-4', 'Vorlon Planetkiller-5', 'Vorlon Planetkiller-6', 'Vorlon Planetkiller-7', 'Vorlon Planetkiller-8', 'Vorlon Planetkiller-9', 'Vorlon Planetkiller-10', 'Vorlon Planetkiller-11', 'Vorlon Planetkiller-12', 'Vorlon Planetkiller-13', 'Firebird-14', 'Galaxy refit-15', 'USS Voyager-16', 'Prometheus-17', 'USS Orville-18']
-#>>>Refreshed Ship List: ['Player', 'Vorlon Planetkiller-1', 'Vorlon Planetkiller-2', 'Vorlon Planetkiller-3', 'Vorlon Planetkiller-4', 'Vorlon Planetkiller-5', 'Vorlon Planetkiller-6', 'Vorlon Planetkiller-7', 'Vorlon Planetkiller-8', 'Vorlon Planetkiller-9', 'Vorlon Planetkiller-10', 'Vorlon Planetkiller-11', 'Vorlon Planetkiller-12', 'Vorlon Planetkiller-13', 'Firebird-14', 'Galaxy refit-15', 'USS Voyager-16', 'Prometheus-17', 'USS Orville-18']
-#>>>Refreshed Ship List: ['Player', 'Vorlon Planetkiller-1', 'Vorlon Planetkiller-2', 'Vorlon Planetkiller-3', 'Vorlon Planetkiller-4', 'Vorlon Planetkiller-5', 'Vorlon Planetkiller-6', 'Vorlon Planetkiller-7', 'Vorlon Planetkiller-8', 'Vorlon Planetkiller-9', 'Vorlon Planetkiller-10', 'Vorlon Planetkiller-11', 'Vorlon Planetkiller-12', 'Vorlon Planetkiller-13', 'Firebird-14', 'Galaxy refit-15', 'USS Voyager-16', 'Prometheus-17', 'USS Orville-18']
-#>>>Refreshed Ship List: ['Player', 'Vorlon Planetkiller-1', 'Vorlon Planetkiller-2', 'Vorlon Planetkiller-3', 'Vorlon Planetkiller-4', 'Vorlon Planetkiller-5', 'Vorlon Planetkiller-6', 'Vorlon Planetkiller-7', 'Vorlon Planetkiller-8', 'Vorlon Planetkiller-9', 'Vorlon Planetkiller-10', 'Vorlon Planetkiller-11', 'Vorlon Planetkiller-12', 'Vorlon Planetkiller-13', 'Firebird-14', 'Galaxy refit-15', 'USS Voyager-16', 'Prometheus-17', 'USS Orville-18']
-#>>>Refreshed Ship List: ['Player', 'Vorlon Planetkiller-1', 'Vorlon Planetkiller-2', 'Vorlon Planetkiller-3', 'Vorlon Planetkiller-4', 'Vorlon Planetkiller-5', 'Vorlon Planetkiller-6', 'Vorlon Planetkiller-7', 'Vorlon Planetkiller-8', 'Vorlon Planetkiller-9', 'Vorlon Planetkiller-10', 'Vorlon Planetkiller-11', 'Vorlon Planetkiller-12', 'Vorlon Planetkiller-13', 'Firebird-14', 'Galaxy refit-15', 'USS Voyager-16', 'Prometheus-17', 'USS Orville-18']
-#>>>Refreshed Ship List: ['Player', 'Vorlon Planetkiller-1', 'Vorlon Planetkiller-2', 'Vorlon Planetkiller-3', 'Vorlon Planetkiller-4', 'Vorlon Planetkiller-5', 'Vorlon Planetkiller-6', 'Vorlon Planetkiller-7', 'Vorlon Planetkiller-8', 'Vorlon Planetkiller-9', 'Vorlon Planetkiller-10', 'Vorlon Planetkiller-11', 'Vorlon Planetkiller-12', 'Vorlon Planetkiller-13', 'Firebird-14', 'Galaxy refit-15', 'USS Voyager-16', 'Prometheus-17', 'USS Orville-18']
-#>>>Refreshed Ship List: ['Player', 'Vorlon Planetkiller-1', 'Vorlon Planetkiller-2', 'Vorlon Planetkiller-3', 'Vorlon Planetkiller-4', 'Vorlon Planetkiller-5', 'Vorlon Planetkiller-6', 'Vorlon Planetkiller-7', 'Vorlon Planetkiller-8', 'Vorlon Planetkiller-9', 'Vorlon Planetkiller-10', 'Vorlon Planetkiller-11', 'Vorlon Planetkiller-12', 'Vorlon Planetkiller-13', 'Firebird-14', 'Galaxy refit-15', 'USS Voyager-16', 'Prometheus-17', 'USS Orville-18']
-#>>>Refreshed Ship List: ['Player', 'Vorlon Planetkiller-1', 'Vorlon Planetkiller-2', 'Vorlon Planetkiller-3', 'Vorlon Planetkiller-4', 'Vorlon Planetkiller-5', 'Vorlon Planetkiller-6', 'Vorlon Planetkiller-7', 'Vorlon Planetkiller-8', 'Vorlon Planetkiller-9', 'Vorlon Planetkiller-10', 'Vorlon Planetkiller-11', 'Vorlon Planetkiller-12', 'Vorlon Planetkiller-13', 'Firebird-14', 'Galaxy refit-15', 'USS Voyager-16', 'Prometheus-17', 'USS Orville-18']
-#>>>Refreshed Ship List: ['Player', 'Vorlon Planetkiller-1', 'Vorlon Planetkiller-2', 'Vorlon Planetkiller-3', 'Vorlon Planetkiller-4', 'Vorlon Planetkiller-5', 'Vorlon Planetkiller-6', 'Vorlon Planetkiller-7', 'Vorlon Planetkiller-8', 'Vorlon Planetkiller-9', 'Vorlon Planetkiller-10', 'Vorlon Planetkiller-11', 'Vorlon Planetkiller-12', 'Vorlon Planetkiller-13', 'Firebird-14', 'Galaxy refit-15', 'USS Voyager-16', 'Prometheus-17', 'USS Orville-18']
-#>>>Refreshed Ship List: ['Player', 'Vorlon Planetkiller-1', 'Vorlon Planetkiller-2', 'Vorlon Planetkiller-3', 'Vorlon Planetkiller-4', 'Vorlon Planetkiller-5', 'Vorlon Planetkiller-6', 'Vorlon Planetkiller-7', 'Vorlon Planetkiller-8', 'Vorlon Planetkiller-9', 'Vorlon Planetkiller-10', 'Vorlon Planetkiller-11', 'Vorlon Planetkiller-12', 'Vorlon Planetkiller-13', 'Firebird-14', 'Galaxy refit-15', 'USS Voyager-16', 'Prometheus-17', 'USS Orville-18']
-#>>>Refreshed Ship List: ['Player', 'Vorlon Planetkiller-1', 'Vorlon Planetkiller-2', 'Vorlon Planetkiller-3', 'Vorlon Planetkiller-4', 'Vorlon Planetkiller-5', 'Vorlon Planetkiller-6', 'Vorlon Planetkiller-7', 'Vorlon Planetkiller-8', 'Vorlon Planetkiller-9', 'Vorlon Planetkiller-10', 'Vorlon Planetkiller-11', 'Vorlon Planetkiller-12', 'Vorlon Planetkiller-13', 'Firebird-14', 'Galaxy refit-15', 'USS Voyager-16', 'Prometheus-17', 'USS Orville-18']
-#>>>Refreshed Ship List: ['Player', 'Vorlon Planetkiller-1', 'Vorlon Planetkiller-2', 'Vorlon Planetkiller-3', 'Vorlon Planetkiller-4', 'Vorlon Planetkiller-5', 'Vorlon Planetkiller-6', 'Vorlon Planetkiller-7', 'Vorlon Planetkiller-8', 'Vorlon Planetkiller-9', 'Vorlon Planetkiller-10', 'Vorlon Planetkiller-11', 'Vorlon Planetkiller-12', 'Vorlon Planetkiller-13', 'Firebird-14', 'Galaxy refit-15', 'USS Voyager-16', 'Prometheus-17', 'USS Orville-18']
-#>>>Refreshed Ship List: ['Player', 'Vorlon Planetkiller-1', 'Vorlon Planetkiller-2', 'Vorlon Planetkiller-3', 'Vorlon Planetkiller-4', 'Vorlon Planetkiller-5', 'Vorlon Planetkiller-6', 'Vorlon Planetkiller-7', 'Vorlon Planetkiller-8', 'Vorlon Planetkiller-9', 'Vorlon Planetkiller-10', 'Vorlon Planetkiller-11', 'Vorlon Planetkiller-12', 'Vorlon Planetkiller-13', 'Firebird-14', 'Galaxy refit-15', 'USS Voyager-16', 'Prometheus-17', 'USS Orville-18']
-#>>>Refreshed Ship List: ['Player', 'Vorlon Planetkiller-1', 'Vorlon Planetkiller-2', 'Vorlon Planetkiller-3', 'Vorlon Planetkiller-4', 'Vorlon Planetkiller-5', 'Vorlon Planetkiller-6', 'Vorlon Planetkiller-7', 'Vorlon Planetkiller-8', 'Vorlon Planetkiller-9', 'Vorlon Planetkiller-10', 'Vorlon Planetkiller-11', 'Vorlon Planetkiller-12', 'Vorlon Planetkiller-13', 'Firebird-14', 'Galaxy refit-15', 'USS Voyager-16', 'Prometheus-17', 'USS Orville-18']
-#>>>Refreshed Ship List: ['Player', 'Vorlon Planetkiller-1', 'Vorlon Planetkiller-2', 'Vorlon Planetkiller-3', 'Vorlon Planetkiller-4', 'Vorlon Planetkiller-5', 'Vorlon Planetkiller-6', 'Vorlon Planetkiller-7', 'Vorlon Planetkiller-8', 'Vorlon Planetkiller-9', 'Vorlon Planetkiller-10', 'Vorlon Planetkiller-11', 'Vorlon Planetkiller-12', 'Vorlon Planetkiller-13', 'Firebird-14', 'Galaxy refit-15', 'USS Voyager-16', 'Prometheus-17', 'USS Orville-18']
-#>>>Refreshed Ship List: ['Player', 'Vorlon Planetkiller-1', 'Vorlon Planetkiller-2', 'Vorlon Planetkiller-3', 'Vorlon Planetkiller-4', 'Vorlon Planetkiller-5', 'Vorlon Planetkiller-6', 'Vorlon Planetkiller-7', 'Vorlon Planetkiller-8', 'Vorlon Planetkiller-9', 'Vorlon Planetkiller-10', 'Vorlon Planetkiller-11', 'Vorlon Planetkiller-12', 'Vorlon Planetkiller-13', 'Firebird-14', 'Galaxy refit-15', 'USS Voyager-16', 'Prometheus-17', 'USS Orville-18']
-#>>>Refreshed Ship List: ['Player', 'Vorlon Planetkiller-1', 'Vorlon Planetkiller-2', 'Vorlon Planetkiller-3', 'Vorlon Planetkiller-4', 'Vorlon Planetkiller-5', 'Vorlon Planetkiller-6', 'Vorlon Planetkiller-7', 'Vorlon Planetkiller-8', 'Vorlon Planetkiller-9', 'Vorlon Planetkiller-10', 'Vorlon Planetkiller-11', 'Vorlon Planetkiller-12', 'Vorlon Planetkiller-13', 'Firebird-14', 'Galaxy refit-15', 'USS Voyager-16', 'Prometheus-17', 'USS Orville-18']
-#>>>Refreshed Ship List: ['Player', 'Vorlon Planetkiller-1', 'Vorlon Planetkiller-2', 'Vorlon Planetkiller-3', 'Vorlon Planetkiller-4', 'Vorlon Planetkiller-5', 'Vorlon Planetkiller-6', 'Vorlon Planetkiller-7', 'Vorlon Planetkiller-8', 'Vorlon Planetkiller-9', 'Vorlon Planetkiller-10', 'Vorlon Planetkiller-11', 'Vorlon Planetkiller-12', 'Vorlon Planetkiller-13', 'Firebird-14', 'Galaxy refit-15', 'USS Voyager-16', 'Prometheus-17', 'USS Orville-18']
-## -------------------- ##
-####################
-#######>>>20:52:14.335 of 26/September/2022, Monday
-#>>>Refreshed Ship List: ['Player', 'Vorlon Planetkiller-1', 'Vorlon Planetkiller-2', 'Vorlon Planetkiller-3', 'Vorlon Planetkiller-4', 'Vorlon Planetkiller-5', 'Vorlon Planetkiller-6', 'Vorlon Planetkiller-7', 'Vorlon Planetkiller-8', 'Vorlon Planetkiller-9', 'Vorlon Planetkiller-10', 'Vorlon Planetkiller-11', 'Vorlon Planetkiller-12', 'Vorlon Planetkiller-13', 'Firebird-14', 'Galaxy refit-15', 'USS Voyager-16', 'Prometheus-17']
-## -------------------- ##
-####################
-#######>>>20:52:16.429 of 26/September/2022, Monday
-#>>>Refreshed Ship List: ['Player', 'Vorlon Planetkiller-1', 'Vorlon Planetkiller-2', 'Vorlon Planetkiller-3', 'Vorlon Planetkiller-4', 'Vorlon Planetkiller-5', 'Vorlon Planetkiller-6', 'Vorlon Planetkiller-7', 'Vorlon Planetkiller-8', 'Vorlon Planetkiller-9', 'Vorlon Planetkiller-10', 'Vorlon Planetkiller-11', 'Vorlon Planetkiller-12', 'Vorlon Planetkiller-13', 'Firebird-14', 'Galaxy refit-15', 'USS Voyager-16']
-## -------------------- ##
-####################
-#######>>>20:52:21.704 of 26/September/2022, Monday
-#>>>Refreshed Ship List: ['Player', 'Vorlon Planetkiller-1', 'Vorlon Planetkiller-3', 'Vorlon Planetkiller-4', 'Vorlon Planetkiller-5', 'Vorlon Planetkiller-6', 'Vorlon Planetkiller-7', 'Vorlon Planetkiller-8', 'Vorlon Planetkiller-9', 'Vorlon Planetkiller-10', 'Vorlon Planetkiller-11', 'Vorlon Planetkiller-12', 'Vorlon Planetkiller-13', 'Firebird-14', 'Galaxy refit-15', 'USS Voyager-16']
-## -------------------- ##
-####################
-#######>>>20:52:22.547 of 26/September/2022, Monday
-#>>>Refreshed Ship List: ['Player', 'Vorlon Planetkiller-3', 'Vorlon Planetkiller-4', 'Vorlon Planetkiller-5', 'Vorlon Planetkiller-6', 'Vorlon Planetkiller-7', 'Vorlon Planetkiller-8', 'Vorlon Planetkiller-9', 'Vorlon Planetkiller-10', 'Vorlon Planetkiller-11', 'Vorlon Planetkiller-12', 'Vorlon Planetkiller-13', 'Firebird-14', 'Galaxy refit-15', 'USS Voyager-16']
-#>>>Refreshed Ship List: ['Player', 'Vorlon Planetkiller-4', 'Vorlon Planetkiller-5', 'Vorlon Planetkiller-6', 'Vorlon Planetkiller-7', 'Vorlon Planetkiller-8', 'Vorlon Planetkiller-9', 'Vorlon Planetkiller-10', 'Vorlon Planetkiller-11', 'Vorlon Planetkiller-12', 'Vorlon Planetkiller-13', 'Firebird-14', 'Galaxy refit-15', 'USS Voyager-16']
-#>>>Refreshed Ship List: ['Player', 'Vorlon Planetkiller-5', 'Vorlon Planetkiller-6', 'Vorlon Planetkiller-7', 'Vorlon Planetkiller-8', 'Vorlon Planetkiller-9', 'Vorlon Planetkiller-10', 'Vorlon Planetkiller-11', 'Vorlon Planetkiller-12', 'Vorlon Planetkiller-13', 'Firebird-14', 'Galaxy refit-15', 'USS Voyager-16']
-#>>>Refreshed Ship List: ['Player', 'Vorlon Planetkiller-6', 'Vorlon Planetkiller-7', 'Vorlon Planetkiller-8', 'Vorlon Planetkiller-9', 'Vorlon Planetkiller-10', 'Vorlon Planetkiller-11', 'Vorlon Planetkiller-12', 'Vorlon Planetkiller-13', 'Firebird-14', 'Galaxy refit-15', 'USS Voyager-16']
-#>>>Refreshed Ship List: ['Player', 'Vorlon Planetkiller-7', 'Vorlon Planetkiller-8', 'Vorlon Planetkiller-9', 'Vorlon Planetkiller-10', 'Vorlon Planetkiller-11', 'Vorlon Planetkiller-12', 'Vorlon Planetkiller-13', 'Firebird-14', 'Galaxy refit-15', 'USS Voyager-16']
-#>>>Refreshed Ship List: ['Player', 'Vorlon Planetkiller-8', 'Vorlon Planetkiller-9', 'Vorlon Planetkiller-10', 'Vorlon Planetkiller-11', 'Vorlon Planetkiller-12', 'Vorlon Planetkiller-13', 'Firebird-14', 'Galaxy refit-15', 'USS Voyager-16']
-#>>>Refreshed Ship List: ['Player', 'Vorlon Planetkiller-9', 'Vorlon Planetkiller-10', 'Vorlon Planetkiller-11', 'Vorlon Planetkiller-12', 'Vorlon Planetkiller-13', 'Firebird-14', 'Galaxy refit-15', 'USS Voyager-16']
-#>>>Refreshed Ship List: ['Player', 'Vorlon Planetkiller-10', 'Vorlon Planetkiller-11', 'Vorlon Planetkiller-12', 'Vorlon Planetkiller-13', 'Firebird-14', 'Galaxy refit-15', 'USS Voyager-16']
-#>>>Refreshed Ship List: ['Player', 'Vorlon Planetkiller-11', 'Vorlon Planetkiller-12', 'Vorlon Planetkiller-13', 'Firebird-14', 'Galaxy refit-15', 'USS Voyager-16']
-#>>>Refreshed Ship List: ['Player', 'Vorlon Planetkiller-12', 'Vorlon Planetkiller-13', 'Firebird-14', 'Galaxy refit-15', 'USS Voyager-16']
-#>>>Refreshed Ship List: ['Player', 'Vorlon Planetkiller-13', 'Firebird-14', 'Galaxy refit-15', 'USS Voyager-16']
-#>>>Refreshed Ship List: ['Player', 'Vorlon Planetkiller-13', 'Galaxy refit-15', 'USS Voyager-16']
-## -------------------- ##
-####################
-#######>>>20:52:32.483 of 26/September/2022, Monday
-#>>>Refreshed Ship List: ['Player', 'Galaxy refit-15', 'USS Voyager-16']
-## -------------------- ##
-####################
-#######>>>20:52:55.779 of 26/September/2022, Monday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_f83NAXLHjgJE>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Galaxy refit-15', 'USS Voyager-16', 'Player']
+#>>>Refreshed Ship List: ['Dominion Battlecruiser-1', 'Dominion Battleship-2', 'bug - 2', 'Player']
 ########################################
-# 20:52:56.928 of 26/September/2022, Monday
+# 21:9:4.817 of 5/October/2022, Wednesday
 #Ending of log dump - User is quiting the game
 ########################################

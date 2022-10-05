@@ -1,0 +1,42 @@
+#This is the dump of the LogCreator: <Shadow Battlecrab-1 Travel Logger[2] LogCreator_qxt7JX78eZbA>
+#This log file was created on: 21:4:44.219 of 2/October/2022, Sunday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>21:4:44.219 of 2/October/2022, Sunday
+#>>>Initialized Shadow Battlecrab-1 Travel logger
+#>>>SELF = <Shadow Battlecrab-1(1230215) Travel_bUfzj5n2rqS1>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>21:8:5.433 of 2/October/2022, Sunday
+#>>>Updated Target Ship = OriWarship 1
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>21:8:5.900 of 2/October/2022, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>21:8:6.750 of 2/October/2022, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>21:8:24.650 of 2/October/2022, Sunday
+#>>>Updated Target Ship = Fighter - 8

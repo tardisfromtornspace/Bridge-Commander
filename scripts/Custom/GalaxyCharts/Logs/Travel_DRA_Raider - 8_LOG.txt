@@ -1,0 +1,36 @@
+#This is the dump of the LogCreator: <DRA_Raider - 8 Travel Logger LogCreator_8o3nJZLqKtcQ>
+#This log file was created on: 20:42:23.095 of 4/October/2022, Tuesday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>20:42:23.095 of 4/October/2022, Tuesday
+#>>>Initialized DRA_Raider - 8 Travel logger
+#>>>SELF = <DRA_Raider - 8(10818985) Travel_12k1u6YbYOnR>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>20:42:24.255 of 4/October/2022, Tuesday
+#>>>Updated Target Ship = Keldon-1
+## -------------------- ##
+####################
+#######>>>20:42:34.811 of 4/October/2022, Tuesday
+#>>>Updated Target Ship = Keldon-2
+## -------------------- ##
+####################
+#######>>>20:43:24.210 of 4/October/2022, Tuesday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

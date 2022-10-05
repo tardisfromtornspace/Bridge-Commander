@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Thirdspace Capital Ship-1 Travel Logger[2] LogCreator_CaGE201836tT>
-#This log file was created on: 18:27:43.746 of 18/September/2022, Sunday
+#This is the dump of the LogCreator: <Thirdspace Capital Ship-1 Travel Logger[2] LogCreator_oYC9WDd3298v>
+#This log file was created on: 1:31:31.148 of 29/September/2022, Thursday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,144 +9,24 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>18:27:43.746 of 18/September/2022, Sunday
+#######>>>1:31:31.148 of 29/September/2022, Thursday
 #>>>Initialized Thirdspace Capital Ship-1 Travel logger
-#>>>SELF = <Thirdspace Capital Ship-1(167385) Travel_7oj6R790L3y2>
+#>>>SELF = <Thirdspace Capital Ship-1(682047) Travel_5ijR0R3Ge53Q>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
-#>>> -Is AI in Player in route CHECKING: Player Travel OK
-#>>>Destination set as None
+#>>> -Ship is dead or dying
+#>>>Ship is dead or dying (at SetDestination)
 #>>>Set Exit Placement Name as None
 #>>>Set Exit Point to None
 #>>>Chaser base class initialization complete.
-#>>>Target Ship = NONE
+#>>>Target Ship = Player
 #>>>Chaser pre-emptive Refresher Initialization
-#>>>Updated Target Ship = Player
+#>>>Ship is dead or dying (at Chaser Update)
+########################################
+# 1:31:33.539 of 29/September/2022, Thursday
+#Ending of log dump - User is quiting the game
+########################################
 ## -------------------- ##
 ####################
-#######>>>18:28:4.128 of 18/September/2022, Sunday
-#>>>Updated Target Ship = Cheyenne-11
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>18:28:58.609 of 18/September/2022, Sunday
-#>>>Stopping Refresh Handler
-#>>>Deleting...
-< ======== Dynamic TS ========= >
-Updating Travelling Procedures...
- -Update Loop MARK START
-<DTSC> -Time left:
- -Update Loop MARK COMPLETED
-< ========== END DTS ========== >
-## -------------------- ##
-####################
-#######>>>18:32:48.523 of 18/September/2022, Sunday
-#>>>Initialized Thirdspace Capital Ship-1 Travel logger
-#>>>SELF = <Thirdspace Capital Ship-1(515527) Travel_Y4Sj4dHFinag>
-#>>>Initial Travel Type: Warp
-#>>>Updating Variables...
-#>>> -Is AI in Player in route CHECKING: Player Travel OK
-#>>>Destination set as None
-#>>>Set Exit Placement Name as None
-#>>>Set Exit Point to None
-#>>>Chaser base class initialization complete.
-#>>>Target Ship = NONE
-#>>>Chaser pre-emptive Refresher Initialization
-#>>>Updated Target Ship = Player
-## -------------------- ##
-####################
-#######>>>18:32:56.373 of 18/September/2022, Sunday
-#>>>Updated Target Ship = Defiant-16
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>18:32:56.867 of 18/September/2022, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>18:32:57.453 of 18/September/2022, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>18:32:57.613 of 18/September/2022, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>18:32:58.158 of 18/September/2022, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>18:32:58.741 of 18/September/2022, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>18:32:59.114 of 18/September/2022, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>18:32:59.521 of 18/September/2022, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>18:32:59.841 of 18/September/2022, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>18:33:0.333 of 18/September/2022, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>18:33:0.735 of 18/September/2022, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>18:33:1.355 of 18/September/2022, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>18:33:1.600 of 18/September/2022, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>18:33:2.257 of 18/September/2022, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>18:33:2.815 of 18/September/2022, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>18:33:3.382 of 18/September/2022, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>18:33:5.371 of 18/September/2022, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>18:33:5.855 of 18/September/2022, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>18:33:6.356 of 18/September/2022, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>18:33:6.754 of 18/September/2022, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>18:33:44.859 of 18/September/2022, Sunday
-#>>>Updated Target Ship = Cheyenne-9
-## -------------------- ##
-####################
-#######>>>18:33:50.782 of 18/September/2022, Sunday
-#>>>Updated Target Ship = Defiant-13
-## -------------------- ##
-####################
-#######>>>18:33:52.089 of 18/September/2022, Sunday
-#>>>Updated Target Ship = Defiant-16
-## -------------------- ##
-####################
-#######>>>18:33:53.248 of 18/September/2022, Sunday
-#>>>Updated Target Ship = Defiant-13
+#######>>>1:31:33.539 of 29/September/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)

@@ -1,0 +1,67 @@
+#This is the dump of the LogCreator: <Science Vessel-2 Travel Logger LogCreator_7AH3MdEmp12c>
+#This log file was created on: 1:26:35.962 of 29/September/2022, Thursday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>1:26:35.962 of 29/September/2022, Thursday
+#>>>Initialized Science Vessel-2 Travel logger
+#>>>SELF = <Science Vessel-2(522233) Travel_Bnflf0EipBL4>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>1:26:43.092 of 29/September/2022, Thursday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>1:26:48.460 of 29/September/2022, Thursday
+#>>>Updated Target Ship = Shadow_Fighter5
+## -------------------- ##
+####################
+#######>>>1:27:45.242 of 29/September/2022, Thursday
+#>>>Updated Target Ship = Shadow_Fighter3
+## -------------------- ##
+####################
+#######>>>1:29:15.941 of 29/September/2022, Thursday
+#>>>Updated Target Ship = Shadow_Fighter6
+## -------------------- ##
+####################
+#######>>>1:29:41.473 of 29/September/2022, Thursday
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>1:29:47.256 of 29/September/2022, Thursday
+#>>>Updated Target Ship = Shadow_Fighter7
+## -------------------- ##
+####################
+#######>>>1:30:36.873 of 29/September/2022, Thursday
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at Update (Chaser)
+Traceback of Error: TypeError: call of non-function (type None)
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 2307, in the function "Update".
+Script: ".\Scripts\Custom\GalaxyCharts\HelmAddonGUI.py", Line 93, in the function "CreateTravelTypeButtons".
+Script: ".\Scripts\Custom\GalaxyCharts\HelmAddonGUI.py", Line 118, in the function "UpdateTravelType".
+Script: ".\Scripts\Custom\GalaxyCharts\HelmAddonGUI.py", Line 299, in the function "UpdateEmergencyOutButton".
+Script: ".\Scripts\Custom\GalaxyCharts\HelmAddonGUI.py", Line 245, in the function "CanEmergencyTravelOut".
+Script: ".\Scripts\Custom\GalaxyCharts\HelmAddonGUI.py", Line 288, in the function "CheckBasicPlayerCanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+########################################
+# 1:31:33.539 of 29/September/2022, Thursday
+#Ending of log dump - User is quiting the game
+########################################

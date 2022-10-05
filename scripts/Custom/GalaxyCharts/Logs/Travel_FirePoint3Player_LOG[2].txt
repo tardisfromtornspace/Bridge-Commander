@@ -1,0 +1,23 @@
+#This is the dump of the LogCreator: <FirePoint3Player Travel Logger[2] LogCreator_55Tm9ZEa2hYw>
+#This log file was created on: 15:7:26.551 of 1/October/2022, Saturday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>15:7:26.551 of 1/October/2022, Saturday
+#>>>Initialized FirePoint3Player Travel logger
+#>>>SELF = <FirePoint3Player(10935763) Travel_FdIb535I474D>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization

@@ -1,0 +1,57 @@
+#This is the dump of the LogCreator: <WCNXRefit 5 Travel Logger LogCreator_LG76VPK1RMfI>
+#This log file was created on: 0:35:3.901 of 3/October/2022, Monday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>0:35:3.901 of 3/October/2022, Monday
+#>>>Initialized WCNXRefit 5 Travel logger
+#>>>SELF = <WCNXRefit 5(1007017) Travel_3YxAI6y8C527>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>0:35:17.701 of 3/October/2022, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:35:18.362 of 3/October/2022, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:35:18.899 of 3/October/2022, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:35:19.215 of 3/October/2022, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:35:19.932 of 3/October/2022, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:35:20.532 of 3/October/2022, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:35:20.951 of 3/October/2022, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:35:39.432 of 3/October/2022, Monday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

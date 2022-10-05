@@ -1,0 +1,44 @@
+#This is the dump of the LogCreator: <DanubemkII - 4 Travel Logger LogCreator_VfbO2hxdGJws>
+#This log file was created on: 21:16:14.877 of 2/October/2022, Sunday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>21:16:14.877 of 2/October/2022, Sunday
+#>>>Initialized DanubemkII - 4 Travel logger
+#>>>SELF = <DanubemkII - 4(181524) Travel_0zwu6JOD0tu6>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>21:16:15.110 of 2/October/2022, Sunday
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>21:16:26.493 of 2/October/2022, Sunday
+#>>>Updated Target Ship = Shadow Battlecrab-3
+## -------------------- ##
+####################
+#######>>>21:16:37.168 of 2/October/2022, Sunday
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>21:17:32.893 of 2/October/2022, Sunday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 21:22:49.121 of 2/October/2022, Sunday
+#Ending of log dump - User is quiting the game
+########################################

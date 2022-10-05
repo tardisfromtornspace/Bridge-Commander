@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <NX-01 Enterprise-1 Travel Logger LogCreator_3s4pXi4P6C6g>
-#This log file was created on: 0:28:26.563 of 22/September/2022, Thursday
+#This is the dump of the LogCreator: <NX-01 Enterprise-1 Travel Logger LogCreator_x4Y7v8zy1Q7J>
+#This log file was created on: 0:23:0.561 of 3/October/2022, Monday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>0:28:26.563 of 22/September/2022, Thursday
+#######>>>0:23:0.561 of 3/October/2022, Monday
 #>>>Initialized NX-01 Enterprise-1 Travel logger
-#>>>SELF = <NX-01 Enterprise-1(470371) Travel_OX7tGK844H5H>
+#>>>SELF = <NX-01 Enterprise-1(495983) Travel_402gj39ZuzZ5>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -21,40 +21,27 @@ Updating Travelling Procedures...
 #>>>Chaser base class initialization complete.
 #>>>Target Ship = NONE
 #>>>Chaser pre-emptive Refresher Initialization
-## -------------------- ##
-####################
-#######>>>0:28:28.473 of 22/September/2022, Thursday
 #>>>Updated Target Ship = Player
 ## -------------------- ##
 ####################
-#######>>>0:28:34.893 of 22/September/2022, Thursday
-#>>> -Cancelling, too close to target to warp intercept...
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>0:28:35.546 of 22/September/2022, Thursday
+#######>>>0:23:8.326 of 3/October/2022, Monday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>0:28:36.187 of 22/September/2022, Thursday
+#######>>>0:23:9.026 of 3/October/2022, Monday
 #>>> -Cancelling, too close to target to warp intercept...
 #>>> -Cancelling, too close to target to warp intercept...
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>0:28:36.734 of 22/September/2022, Thursday
-#>>> -Cancelling, too close to target to warp intercept...
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>0:28:37.134 of 22/September/2022, Thursday
+#######>>>0:23:10.059 of 3/October/2022, Monday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>0:29:0.806 of 22/September/2022, Thursday
+#######>>>0:23:10.760 of 3/October/2022, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:23:39.161 of 3/October/2022, Monday
 #>>>Stopping Refresh Handler
 #>>>Deleting...
-########################################
-# 0:38:43.405 of 22/September/2022, Thursday
-#Ending of log dump - User is quiting the game
-########################################
