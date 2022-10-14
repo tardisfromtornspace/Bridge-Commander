@@ -1,0 +1,47 @@
+#This is the dump of the LogCreator: <F3023 3 Travel Logger LogCreator_7bx82wxUY6Mn>
+#This log file was created on: 20:38:49.654 of 12/October/2022, Wednesday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>20:38:49.654 of 12/October/2022, Wednesday
+#>>>Initialized F3023 3 Travel logger
+#>>>SELF = <F3023 3(792490) Travel_ZX29A8ogqtC8>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>20:38:54.834 of 12/October/2022, Wednesday
+#>>>Updated Target Ship = Player
+#>>>Can Chase Target = 0
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>20:38:56.205 of 12/October/2022, Wednesday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>20:38:56.808 of 12/October/2022, Wednesday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>20:38:57.241 of 12/October/2022, Wednesday
+#>>>Updated Target Ship = PlanetExpress-7
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 20:41:56.346 of 12/October/2022, Wednesday
+#Ending of log dump - User is quiting the game
+########################################

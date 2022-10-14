@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Shadow_Fighter5 3 Travel Logger LogCreator_7hV2BVdG1s59>
-#This log file was created on: 21:16:52.693 of 2/October/2022, Sunday
+#This is the dump of the LogCreator: <Shadow_Fighter5 3 Travel Logger LogCreator_iC8U8QZ47jCf>
+#This log file was created on: 22:17:9.085 of 5/October/2022, Wednesday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>21:16:52.693 of 2/October/2022, Sunday
+#######>>>22:17:9.085 of 5/October/2022, Wednesday
 #>>>Initialized Shadow_Fighter5 3 Travel logger
-#>>>SELF = <Shadow_Fighter5 3(219106) Travel_eV0BSSCV1GdP>
+#>>>SELF = <Shadow_Fighter5 3(1823301) Travel_y17g2vaxgYNw>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -23,89 +23,96 @@ Updating Travelling Procedures...
 #>>>Chaser pre-emptive Refresher Initialization
 ## -------------------- ##
 ####################
-#######>>>21:17:3.843 of 2/October/2022, Sunday
-#>>>Updated Target Ship = Deep Space Nine-1
+#######>>>22:18:25.611 of 5/October/2022, Wednesday
+#>>>Updated Target Ship = EnterpriseF 1
 #>>>Can Chase Target = 0
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:17:4.047 of 2/October/2022, Sunday
+#######>>>22:18:26.728 of 5/October/2022, Wednesday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:17:4.210 of 2/October/2022, Sunday
-#>>>Updated Target Ship = DanubemkII - 4
+#######>>>22:18:27.027 of 5/October/2022, Wednesday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:17:4.745 of 2/October/2022, Sunday
+#######>>>22:18:27.322 of 5/October/2022, Wednesday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:17:5.060 of 2/October/2022, Sunday
+#######>>>22:18:28.045 of 5/October/2022, Wednesday
+#>>>Ship can't chase, directing to Travel update...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:18:28.563 of 5/October/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:17:5.633 of 2/October/2022, Sunday
+#######>>>22:18:29.962 of 5/October/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:17:6.189 of 2/October/2022, Sunday
+#######>>>22:18:31.228 of 5/October/2022, Wednesday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:17:6.863 of 2/October/2022, Sunday
+#######>>>22:18:32.626 of 5/October/2022, Wednesday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:17:7.331 of 2/October/2022, Sunday
+#######>>>22:18:33.962 of 5/October/2022, Wednesday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:17:7.777 of 2/October/2022, Sunday
+#######>>>22:18:35.018 of 5/October/2022, Wednesday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:17:8.345 of 2/October/2022, Sunday
+#######>>>22:18:35.951 of 5/October/2022, Wednesday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:17:8.843 of 2/October/2022, Sunday
+#######>>>22:18:37.510 of 5/October/2022, Wednesday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:17:9.174 of 2/October/2022, Sunday
+#######>>>22:18:38.532 of 5/October/2022, Wednesday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:17:9.402 of 2/October/2022, Sunday
+#######>>>22:18:39.849 of 5/October/2022, Wednesday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:17:9.867 of 2/October/2022, Sunday
+#######>>>22:18:43.608 of 5/October/2022, Wednesday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:17:9.993 of 2/October/2022, Sunday
+#######>>>22:18:44.723 of 5/October/2022, Wednesday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:17:10.295 of 2/October/2022, Sunday
+#######>>>22:18:46.040 of 5/October/2022, Wednesday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:17:10.688 of 2/October/2022, Sunday
+#######>>>22:18:47.356 of 5/October/2022, Wednesday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:17:11.076 of 2/October/2022, Sunday
+#######>>>22:18:47.869 of 5/October/2022, Wednesday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:17:11.730 of 2/October/2022, Sunday
+#######>>>22:18:48.715 of 5/October/2022, Wednesday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>22:18:50.269 of 5/October/2022, Wednesday
 #>>>Stopping Refresh Handler
 #>>>Deleting...
-########################################
-# 21:22:49.121 of 2/October/2022, Sunday
-#Ending of log dump - User is quiting the game
-########################################

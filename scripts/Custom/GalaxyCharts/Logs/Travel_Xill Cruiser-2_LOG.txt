@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Xill Cruiser-2 Travel Logger LogCreator_60jBjn40AJ9K>
-#This log file was created on: 21:51:12.929 of 18/September/2022, Sunday
+#This is the dump of the LogCreator: <Xill Cruiser-2 Travel Logger LogCreator_75UuC67h7lg0>
+#This log file was created on: 1:57:48.584 of 12/October/2022, Wednesday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>21:51:12.929 of 18/September/2022, Sunday
+#######>>>1:57:48.584 of 12/October/2022, Wednesday
 #>>>Initialized Xill Cruiser-2 Travel logger
-#>>>SELF = <Xill Cruiser-2(337424) Travel_e4nqq227Kt0V>
+#>>>SELF = <Xill Cruiser-2(75895) Travel_TgXl16w5wqvq>
 #>>>Initial Travel Type: None
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -21,66 +21,24 @@ Updating Travelling Procedures...
 #>>>Chaser base class initialization complete.
 #>>>Target Ship = NONE
 #>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>1:58:15.556 of 12/October/2022, Wednesday
 #>>>Updated Target Ship = Player
 ## -------------------- ##
 ####################
-#######>>>21:51:20.109 of 18/September/2022, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
+#######>>>1:58:16.272 of 12/October/2022, Wednesday
+#>>>Updated Target Ship = Xill Cruiser-1
 ## -------------------- ##
 ####################
-#######>>>21:51:20.472 of 18/September/2022, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-#>>> -Cancelling, too close to target to warp intercept...
+#######>>>1:58:17.738 of 12/October/2022, Wednesday
+#>>>Updated Target Ship = Player
 ## -------------------- ##
 ####################
-#######>>>21:51:20.925 of 18/September/2022, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>21:51:21.309 of 18/September/2022, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>21:51:22.071 of 18/September/2022, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>21:51:22.403 of 18/September/2022, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>21:51:22.922 of 18/September/2022, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>21:51:23.045 of 18/September/2022, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>21:51:23.384 of 18/September/2022, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>21:51:23.838 of 18/September/2022, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>21:51:24.040 of 18/September/2022, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>21:51:24.299 of 18/September/2022, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>21:51:24.576 of 18/September/2022, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>21:51:25.081 of 18/September/2022, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>21:51:56.240 of 18/September/2022, Sunday
+#######>>>1:58:42.588 of 12/October/2022, Wednesday
 #>>>Stopping Refresh Handler
 #>>>Deleting...
+########################################
+# 2:16:10.554 of 12/October/2022, Wednesday
+#Ending of log dump - User is quiting the game
+########################################

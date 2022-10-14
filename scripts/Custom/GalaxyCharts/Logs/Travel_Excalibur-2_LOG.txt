@@ -1,0 +1,27 @@
+#This is the dump of the LogCreator: <Excalibur-2 Travel Logger LogCreator_mvc7d3qMG4eo>
+#This log file was created on: 0:23:9.834 of 13/October/2022, Thursday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>0:23:9.834 of 13/October/2022, Thursday
+#>>>Initialized Excalibur-2 Travel logger
+#>>>SELF = <Excalibur-2(102487) Travel_G1ml4Zw7vmIq>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+########################################
+# 0:29:12.441 of 13/October/2022, Thursday
+#Ending of log dump - User is quiting the game
+########################################

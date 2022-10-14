@@ -1,0 +1,28 @@
+#This is the dump of the LogCreator: <Norexan-28 Travel Logger LogCreator_fkr5p2PokX57>
+#This log file was created on: 22:20:14.526 of 5/October/2022, Wednesday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>22:20:14.526 of 5/October/2022, Wednesday
+#>>>Initialized Norexan-28 Travel logger
+#>>>SELF = <Norexan-28(2073160) Travel_5l3ZnpUU7MoP>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>22:20:39.562 of 5/October/2022, Wednesday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

@@ -1,0 +1,50 @@
+#This is the dump of the LogCreator: <Drakh Carrier-1 Travel Logger LogCreator_966e512f0DrE>
+#This log file was created on: 1:54:46.310 of 12/October/2022, Wednesday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>1:54:46.310 of 12/October/2022, Wednesday
+#>>>Initialized Drakh Carrier-1 Travel logger
+#>>>SELF = <Drakh Carrier-1(5376365) Travel_5q8tpAX8qzyD>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>1:54:53.836 of 12/October/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>1:54:54.220 of 12/October/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>1:54:54.636 of 12/October/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>1:54:55.420 of 12/October/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>1:54:55.919 of 12/October/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+########################################
+# 1:55:8.036 of 12/October/2022, Wednesday
+#Ending of log dump - User is quiting the game
+########################################

@@ -1,3 +1,3 @@
 ESRHullCustomizationOptionDefault = 4
-SRCutsceneDefault = "ON"
+SRCutsceneDefault = "OFF"
 EngineeringOptionDefault = 1

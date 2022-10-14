@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Xill Cruiser-1 Travel Logger LogCreator_LWf9kZVaiziC>
-#This log file was created on: 0:38:36.321 of 19/September/2022, Monday
+#This is the dump of the LogCreator: <Xill Cruiser-1 Travel Logger LogCreator_858CJpy7NK38>
+#This log file was created on: 1:57:48.584 of 12/October/2022, Wednesday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>0:38:36.321 of 19/September/2022, Monday
+#######>>>1:57:48.584 of 12/October/2022, Wednesday
 #>>>Initialized Xill Cruiser-1 Travel logger
-#>>>SELF = <Xill Cruiser-1(69284) Travel_GjAJ4N56i9B2>
+#>>>SELF = <Xill Cruiser-1(75508) Travel_5L5xeMB5Rizi>
 #>>>Initial Travel Type: None
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -21,87 +21,16 @@ Updating Travelling Procedures...
 #>>>Chaser base class initialization complete.
 #>>>Target Ship = NONE
 #>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>1:58:17.738 of 12/October/2022, Wednesday
 #>>>Updated Target Ship = Player
 ## -------------------- ##
 ####################
-#######>>>0:38:44.598 of 19/September/2022, Monday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>0:38:44.853 of 19/September/2022, Monday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>0:38:45.353 of 19/September/2022, Monday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>0:38:45.484 of 19/September/2022, Monday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>0:38:45.980 of 19/September/2022, Monday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>0:38:46.292 of 19/September/2022, Monday
-#>>> -Cancelling, too close to target to warp intercept...
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>0:38:46.611 of 19/September/2022, Monday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>0:38:46.847 of 19/September/2022, Monday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>0:38:47.222 of 19/September/2022, Monday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>0:38:47.585 of 19/September/2022, Monday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>0:38:47.790 of 19/September/2022, Monday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>0:38:47.918 of 19/September/2022, Monday
-#>>> -Cancelling, too close to target to warp intercept...
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>0:38:48.175 of 19/September/2022, Monday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>0:38:48.663 of 19/September/2022, Monday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>0:38:49.055 of 19/September/2022, Monday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>0:38:49.556 of 19/September/2022, Monday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>0:38:49.915 of 19/September/2022, Monday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>0:38:50.155 of 19/September/2022, Monday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>0:38:50.676 of 19/September/2022, Monday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>0:40:19.112 of 19/September/2022, Monday
+#######>>>2:1:41.135 of 12/October/2022, Wednesday
 #>>>Stopping Refresh Handler
 #>>>Deleting...
+########################################
+# 2:16:10.554 of 12/October/2022, Wednesday
+#Ending of log dump - User is quiting the game
+########################################

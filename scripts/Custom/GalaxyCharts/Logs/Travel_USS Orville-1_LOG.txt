@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <USS Orville-1 Travel Logger LogCreator_eZb1Eh7U6a89>
-#This log file was created on: 20:25:50.624 of 26/September/2022, Monday
+#This is the dump of the LogCreator: <USS Orville-1 Travel Logger LogCreator_68yfv9ETM1o8>
+#This log file was created on: 20:40:56.827 of 6/October/2022, Thursday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>20:25:50.624 of 26/September/2022, Monday
+#######>>>20:40:56.827 of 6/October/2022, Thursday
 #>>>Initialized USS Orville-1 Travel logger
-#>>>SELF = <USS Orville-1(63419) Travel_nm5VaWauGTCv>
+#>>>SELF = <USS Orville-1(132054) Travel_2Cf9YO62a2a9>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -24,38 +24,46 @@ Updating Travelling Procedures...
 #>>>Updated Target Ship = Player
 ## -------------------- ##
 ####################
-#######>>>20:25:59.187 of 26/September/2022, Monday
+#######>>>20:41:3.961 of 6/October/2022, Thursday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>20:25:59.671 of 26/September/2022, Monday
+#######>>>20:41:4.361 of 6/October/2022, Thursday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>20:25:59.971 of 26/September/2022, Monday
+#######>>>20:41:4.777 of 6/October/2022, Thursday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>20:26:0.238 of 26/September/2022, Monday
+#######>>>20:41:5.244 of 6/October/2022, Thursday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>20:26:0.589 of 26/September/2022, Monday
+#######>>>20:41:5.528 of 6/October/2022, Thursday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>20:26:1.038 of 26/September/2022, Monday
+#######>>>20:41:5.777 of 6/October/2022, Thursday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>20:26:1.389 of 26/September/2022, Monday
+#######>>>20:41:6.261 of 6/October/2022, Thursday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>20:27:48.576 of 26/September/2022, Monday
+#######>>>20:41:6.527 of 6/October/2022, Thursday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>20:41:6.695 of 6/October/2022, Thursday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>20:41:6.843 of 6/October/2022, Thursday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>20:42:4.709 of 6/October/2022, Thursday
 #>>>Stopping Refresh Handler
 #>>>Deleting...
-########################################
-# 20:52:56.928 of 26/September/2022, Monday
-#Ending of log dump - User is quiting the game
-########################################

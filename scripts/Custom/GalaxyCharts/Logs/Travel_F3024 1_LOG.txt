@@ -1,0 +1,75 @@
+#This is the dump of the LogCreator: <F3024 1 Travel Logger LogCreator_3F2sFPg4Iqy4>
+#This log file was created on: 20:33:0.414 of 12/October/2022, Wednesday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>20:33:0.414 of 12/October/2022, Wednesday
+#>>>Initialized F3024 1 Travel logger
+#>>>SELF = <F3024 1(279229) Travel_7BIo0nOfHfgC>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>20:33:9.509 of 12/October/2022, Wednesday
+#>>>Updated Target Ship = Player
+#>>>Can Chase Target = 0
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>20:33:10.021 of 12/October/2022, Wednesday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>20:33:10.127 of 12/October/2022, Wednesday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>20:33:10.267 of 12/October/2022, Wednesday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>20:33:10.904 of 12/October/2022, Wednesday
+#>>>Updated Target Ship = PlanetExpress-12
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>20:33:11.498 of 12/October/2022, Wednesday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>20:33:11.625 of 12/October/2022, Wednesday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>20:33:11.910 of 12/October/2022, Wednesday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>20:33:13.052 of 12/October/2022, Wednesday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>20:33:14.100 of 12/October/2022, Wednesday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>20:33:15.506 of 12/October/2022, Wednesday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 20:41:56.346 of 12/October/2022, Wednesday
+#Ending of log dump - User is quiting the game
+########################################

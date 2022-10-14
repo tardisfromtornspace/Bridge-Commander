@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Shadow_Fighter4 3 Travel Logger LogCreator_HM384SI7mBPu>
-#This log file was created on: 21:16:52.693 of 2/October/2022, Sunday
+#This is the dump of the LogCreator: <Shadow_Fighter4 3 Travel Logger LogCreator_76k58IuOiO8W>
+#This log file was created on: 22:17:9.085 of 5/October/2022, Wednesday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>21:16:52.693 of 2/October/2022, Sunday
+#######>>>22:17:9.085 of 5/October/2022, Wednesday
 #>>>Initialized Shadow_Fighter4 3 Travel logger
-#>>>SELF = <Shadow_Fighter4 3(218947) Travel_OjROFiT4gcKf>
+#>>>SELF = <Shadow_Fighter4 3(1823142) Travel_x8cyzzZz8cwY>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -23,10 +23,74 @@ Updating Travelling Procedures...
 #>>>Chaser pre-emptive Refresher Initialization
 ## -------------------- ##
 ####################
-#######>>>21:16:59.494 of 2/October/2022, Sunday
+#######>>>22:18:25.611 of 5/October/2022, Wednesday
+#>>>Updated Target Ship = EnterpriseF 1
+#>>>Can Chase Target = 0
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>22:18:26.728 of 5/October/2022, Wednesday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>22:18:27.027 of 5/October/2022, Wednesday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>22:18:27.322 of 5/October/2022, Wednesday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>22:18:28.045 of 5/October/2022, Wednesday
+#>>>Ship can't chase, directing to Travel update...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:18:28.563 of 5/October/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>22:18:29.962 of 5/October/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>22:18:31.228 of 5/October/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>22:18:32.626 of 5/October/2022, Wednesday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>22:18:33.962 of 5/October/2022, Wednesday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>22:18:35.018 of 5/October/2022, Wednesday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>22:18:35.951 of 5/October/2022, Wednesday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>22:18:37.510 of 5/October/2022, Wednesday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>22:18:38.532 of 5/October/2022, Wednesday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>22:18:39.849 of 5/October/2022, Wednesday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>22:18:43.608 of 5/October/2022, Wednesday
 #>>>Stopping Refresh Handler
 #>>>Deleting...
-########################################
-# 21:22:49.121 of 2/October/2022, Sunday
-#Ending of log dump - User is quiting the game
-########################################

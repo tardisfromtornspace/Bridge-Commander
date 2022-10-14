@@ -1,13 +1,13 @@
-#This is the dump of the LogCreator: <Gravity Manager LogCreator_Ms6K0o0AI01G>
-#This log file was created on: 20:52:55.0 of 5/October/2022, Wednesday
+#This is the dump of the LogCreator: <Gravity Manager LogCreator_f8oNE2UWC2A9>
+#This log file was created on: 0:21:15.0 of 13/October/2022, Thursday
 ########################################
 ## -------------------- ##
 ####################
-#######>>>20:52:55.0 of 5/October/2022, Wednesday
-#>>>Initialized GravityManager_Zaf9zX7BjF36 logger
+#######>>>0:21:15.0 of 13/October/2022, Thursday
+#>>>Initialized GravityManager_hqU836YVvjJI logger
 ## -------------------- ##
 ####################
-#######>>>20:53:4.079 of 5/October/2022, Wednesday
+#######>>>0:21:23.515 of 13/October/2022, Thursday
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
@@ -17,113 +17,27 @@
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_4lh0MvsDuE25>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_zSB1M3Db68yr>]
 #>>>Planets/Suns List: ['Belaruz 4']
 #>>>Refreshed Ship List: ['Player']
-#>>>Updated radius for grav well <Belaruz 4 GravityWell_4lh0MvsDuE25>, radius is now 1603.09033203
+#>>>Updated radius for grav well <Belaruz 4 GravityWell_zSB1M3Db68yr>, radius is now 1608.61047363
 ## -------------------- ##
 ####################
-#######>>>20:53:41.909 of 5/October/2022, Wednesday
+#######>>>0:23:9.834 of 13/October/2022, Thursday
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_8Q9Y3mq8SBGk>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_x7CUx134w4lN>]
 #>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player', 'Dominion Battlecruiser-1']
-#>>>Refreshed Ship List: ['Player', 'Dominion Battlecruiser-1']
+#>>>Refreshed Ship List: ['Player', 'Enterprise F-1', 'Excalibur-2']
+#>>>Refreshed Ship List: ['Player', 'Enterprise F-1', 'Excalibur-2']
+#>>>Refreshed Ship List: ['Player', 'Enterprise F-1', 'Excalibur-2']
 ## -------------------- ##
 ####################
-#######>>>20:55:19.793 of 5/October/2022, Wednesday
-#>>>Refreshed Ship List: ['Player']
-## -------------------- ##
-####################
-#######>>>20:55:38.728 of 5/October/2022, Wednesday
+#######>>>0:29:11.291 of 13/October/2022, Thursday
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_nlOLqPZ480Hf>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_Q4E7470z3I7X>]
 #>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player']
-## -------------------- ##
-####################
-#######>>>20:55:48.435 of 5/October/2022, Wednesday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_25ee8KJE33D1>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player', 'Dominion Battlecruiser-1', 'Dominion Battleship-2', 'Dominion Battleship-3', 'Dominion Battleship-4', 'Dominion Battleship-5']
-#>>>Refreshed Ship List: ['Player', 'Dominion Battlecruiser-1', 'Dominion Battleship-2', 'Dominion Battleship-3', 'Dominion Battleship-4', 'Dominion Battleship-5']
-#>>>Refreshed Ship List: ['Player', 'Dominion Battlecruiser-1', 'Dominion Battleship-2', 'Dominion Battleship-3', 'Dominion Battleship-4', 'Dominion Battleship-5']
-#>>>Refreshed Ship List: ['Player', 'Dominion Battlecruiser-1', 'Dominion Battleship-2', 'Dominion Battleship-3', 'Dominion Battleship-4', 'Dominion Battleship-5']
-#>>>Refreshed Ship List: ['Player', 'Dominion Battlecruiser-1', 'Dominion Battleship-2', 'Dominion Battleship-3', 'Dominion Battleship-4', 'Dominion Battleship-5']
-#>>>Refreshed Ship List: ['Player', 'Dominion Battlecruiser-1', 'Dominion Battleship-2', 'Dominion Battleship-3', 'Dominion Battleship-4', 'Dominion Battleship-5']
-## -------------------- ##
-####################
-#######>>>20:57:20.198 of 5/October/2022, Wednesday
-#>>>Refreshed Ship List: ['Player', 'Dominion Battlecruiser-1', 'Dominion Battleship-2', 'Dominion Battleship-3', 'Dominion Battleship-4', 'Dominion Battleship-5', 'bug - 2']
-## -------------------- ##
-####################
-#######>>>20:57:24.291 of 5/October/2022, Wednesday
-#>>>Refreshed Ship List: ['Player', 'Dominion Battlecruiser-1', 'Dominion Battleship-2', 'Dominion Battleship-3', 'Dominion Battleship-4', 'Dominion Battleship-5', 'bug - 2', 'bug - 3']
-## -------------------- ##
-####################
-#######>>>20:57:35.429 of 5/October/2022, Wednesday
-#>>>Refreshed Ship List: ['Player', 'Dominion Battlecruiser-1', 'Dominion Battleship-2', 'Dominion Battleship-3', 'Dominion Battleship-5', 'bug - 2', 'bug - 3']
-## -------------------- ##
-####################
-#######>>>20:58:4.974 of 5/October/2022, Wednesday
-#>>>Refreshed Ship List: ['Player', 'Dominion Battlecruiser-1', 'Dominion Battleship-2', 'Dominion Battleship-3', 'Dominion Battleship-5', 'bug - 2', 'bug - 3']
-## -------------------- ##
-####################
-#######>>>20:58:6.700 of 5/October/2022, Wednesday
-#>>>Refreshed Ship List: ['Player', 'Dominion Battlecruiser-1', 'Dominion Battleship-2', 'Dominion Battleship-3', 'Dominion Battleship-5', 'bug - 2', 'bug - 3']
-## -------------------- ##
-####################
-#######>>>20:58:14.634 of 5/October/2022, Wednesday
-#>>>Refreshed Ship List: ['Player', 'Dominion Battlecruiser-1', 'Dominion Battleship-2', 'Dominion Battleship-3', 'Dominion Battleship-5', 'bug - 2', 'bug - 3']
-## -------------------- ##
-####################
-#######>>>20:58:14.728 of 5/October/2022, Wednesday
-#>>>Refreshed Ship List: ['Player', 'Dominion Battlecruiser-1', 'Dominion Battleship-2', 'Dominion Battleship-3', 'Dominion Battleship-5', 'bug - 2', 'bug - 3']
-## -------------------- ##
-####################
-#######>>>20:58:14.912 of 5/October/2022, Wednesday
-#>>>Refreshed Ship List: ['Player', 'Dominion Battlecruiser-1', 'Dominion Battleship-2', 'Dominion Battleship-3', 'Dominion Battleship-5', 'bug - 2', 'bug - 3']
-## -------------------- ##
-####################
-#######>>>21:0:29.871 of 5/October/2022, Wednesday
-#>>>Refreshed Ship List: ['Player', 'Dominion Battlecruiser-1', 'Dominion Battleship-2', 'Dominion Battleship-3', 'Dominion Battleship-5', 'bug - 2', 'bug - 3']
-## -------------------- ##
-####################
-#######>>>21:0:31.680 of 5/October/2022, Wednesday
-#>>>Refreshed Ship List: ['Player', 'Dominion Battlecruiser-1', 'Dominion Battleship-2', 'Dominion Battleship-3', 'Dominion Battleship-5', 'bug - 2', 'bug - 3']
-## -------------------- ##
-####################
-#######>>>21:0:34.638 of 5/October/2022, Wednesday
-#>>>Refreshed Ship List: ['Player', 'Dominion Battlecruiser-1', 'Dominion Battleship-2', 'Dominion Battleship-3', 'Dominion Battleship-5', 'bug - 2', 'bug - 3']
-## -------------------- ##
-####################
-#######>>>21:0:39.541 of 5/October/2022, Wednesday
-#>>>Refreshed Ship List: ['Player', 'Dominion Battlecruiser-1', 'Dominion Battleship-2', 'Dominion Battleship-3', 'Dominion Battleship-5', 'bug - 2']
-## -------------------- ##
-####################
-#######>>>21:0:39.893 of 5/October/2022, Wednesday
-#>>>Refreshed Ship List: ['Player', 'Dominion Battlecruiser-1', 'Dominion Battleship-2', 'Dominion Battleship-3', 'Dominion Battleship-5', 'bug - 2']
-## -------------------- ##
-####################
-#######>>>21:0:40.049 of 5/October/2022, Wednesday
-#>>>Refreshed Ship List: ['Player', 'Dominion Battlecruiser-1', 'Dominion Battleship-2', 'Dominion Battleship-3', 'Dominion Battleship-5', 'bug - 2']
-## -------------------- ##
-####################
-#######>>>21:7:39.650 of 5/October/2022, Wednesday
-#>>>Refreshed Ship List: ['Player', 'Dominion Battlecruiser-1', 'Dominion Battleship-2', 'Dominion Battleship-5', 'bug - 2']
-## -------------------- ##
-####################
-#######>>>21:9:0.330 of 5/October/2022, Wednesday
-#>>>Refreshed Ship List: ['Player', 'Dominion Battlecruiser-1', 'Dominion Battleship-2', 'bug - 2']
-## -------------------- ##
-####################
-#######>>>21:9:3.664 of 5/October/2022, Wednesday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_IjLjEJMkY5kJ>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Dominion Battlecruiser-1', 'Dominion Battleship-2', 'bug - 2', 'Player']
+#>>>Refreshed Ship List: ['Enterprise F-1', 'Excalibur-2', 'Player']
 ########################################
-# 21:9:4.817 of 5/October/2022, Wednesday
+# 0:29:12.441 of 13/October/2022, Thursday
 #Ending of log dump - User is quiting the game
 ########################################

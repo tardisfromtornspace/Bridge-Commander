@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Thunderbolt - 3 Travel Logger LogCreator_vi2x92s6B936>
-#This log file was created on: 23:39:10.650 of 29/September/2022, Thursday
+#This is the dump of the LogCreator: <Thunderbolt - 3 Travel Logger LogCreator_p546H9emYnv3>
+#This log file was created on: 20:39:9.829 of 12/October/2022, Wednesday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>23:39:10.650 of 29/September/2022, Thursday
+#######>>>20:39:9.829 of 12/October/2022, Wednesday
 #>>>Initialized Thunderbolt - 3 Travel logger
-#>>>SELF = <Thunderbolt - 3(276407) Travel_19r3yYUr02n0>
+#>>>SELF = <Thunderbolt - 3(833650) Travel_4wK5rz6aNGF2>
 #>>>Initial Travel Type: None
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -23,10 +23,22 @@ Updating Travelling Procedures...
 #>>>Chaser pre-emptive Refresher Initialization
 ## -------------------- ##
 ####################
-#######>>>23:39:11.053 of 29/September/2022, Thursday
-#>>>Updated Target Ship = Hirogen Hunter-1
+#######>>>20:39:10.319 of 12/October/2022, Wednesday
+#>>>Updated Target Ship = OdysseyRefit 3
 ## -------------------- ##
 ####################
-#######>>>23:39:12.517 of 29/September/2022, Thursday
+#######>>>20:39:30.718 of 12/October/2022, Wednesday
+#>>>Updated Target Ship = F3021 - 4
+## -------------------- ##
+####################
+#######>>>20:39:36.457 of 12/October/2022, Wednesday
+#>>>Updated Target Ship = OdysseyRefit 3
+## -------------------- ##
+####################
+#######>>>20:39:51.839 of 12/October/2022, Wednesday
 #>>>Stopping Refresh Handler
 #>>>Deleting...
+########################################
+# 20:41:56.346 of 12/October/2022, Wednesday
+#Ending of log dump - User is quiting the game
+########################################

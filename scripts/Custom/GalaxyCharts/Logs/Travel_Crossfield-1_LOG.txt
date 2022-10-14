@@ -1,0 +1,63 @@
+#This is the dump of the LogCreator: <Crossfield-1 Travel Logger LogCreator_bf229MP6Lsqk>
+#This log file was created on: 21:7:42.265 of 11/October/2022, Tuesday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>21:7:42.265 of 11/October/2022, Tuesday
+#>>>Initialized Crossfield-1 Travel logger
+#>>>SELF = <Crossfield-1(88063) Travel_310RnKDUJWEF>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>21:7:50.342 of 11/October/2022, Tuesday
+#>>>Updated Target Ship = PlanetExpress-5
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>21:7:50.676 of 11/October/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>21:7:51.450 of 11/October/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>21:7:52.036 of 11/October/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>21:7:52.147 of 11/October/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>21:7:52.367 of 11/October/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>21:7:52.644 of 11/October/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>21:8:45.443 of 11/October/2022, Tuesday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 21:37:30.745 of 11/October/2022, Tuesday
+#Ending of log dump - User is quiting the game
+########################################

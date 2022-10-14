@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Shadow_Fighter7 2 Travel Logger LogCreator_78hHg9uKL5n4>
-#This log file was created on: 21:16:52.693 of 2/October/2022, Sunday
+#This is the dump of the LogCreator: <Shadow_Fighter7 2 Travel Logger LogCreator_wHFZl61Z7c6z>
+#This log file was created on: 22:13:34.506 of 5/October/2022, Wednesday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>21:16:52.693 of 2/October/2022, Sunday
+#######>>>22:13:34.506 of 5/October/2022, Wednesday
 #>>>Initialized Shadow_Fighter7 2 Travel logger
-#>>>SELF = <Shadow_Fighter7 2(218289) Travel_mjY1rZi2196M>
+#>>>SELF = <Shadow_Fighter7 2(1457111) Travel_6PdSi16YSynN>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -21,12 +21,3 @@ Updating Travelling Procedures...
 #>>>Chaser base class initialization complete.
 #>>>Target Ship = NONE
 #>>>Chaser pre-emptive Refresher Initialization
-## -------------------- ##
-####################
-#######>>>21:16:57.247 of 2/October/2022, Sunday
-#>>>Stopping Refresh Handler
-#>>>Deleting...
-########################################
-# 21:22:49.121 of 2/October/2022, Sunday
-#Ending of log dump - User is quiting the game
-########################################

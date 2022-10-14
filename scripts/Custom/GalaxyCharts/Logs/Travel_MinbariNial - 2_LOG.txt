@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <MinbariNial - 2 Travel Logger LogCreator_Kj21B1Jn1JF4>
-#This log file was created on: 15:52:7.706 of 20/September/2022, Tuesday
+#This is the dump of the LogCreator: <MinbariNial - 2 Travel Logger LogCreator_QjQ73O2mGv78>
+#This log file was created on: 21:35:44.848 of 5/October/2022, Wednesday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>15:52:7.706 of 20/September/2022, Tuesday
+#######>>>21:35:44.848 of 5/October/2022, Wednesday
 #>>>Initialized MinbariNial - 2 Travel logger
-#>>>SELF = <MinbariNial - 2(146330) Travel_6b97Kf76EBof>
+#>>>SELF = <MinbariNial - 2(181211) Travel_0wJbBHDm52cX>
 #>>>Initial Travel Type: None
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -21,8 +21,9 @@ Updating Travelling Procedures...
 #>>>Chaser base class initialization complete.
 #>>>Target Ship = NONE
 #>>>Chaser pre-emptive Refresher Initialization
-#>>>Updated Target Ship = Breen CA-1
-########################################
-# 15:52:35.083 of 20/September/2022, Tuesday
-#Ending of log dump - User is quiting the game
-########################################
+#>>>Updated Target Ship = Galor-1
+## -------------------- ##
+####################
+#######>>>21:36:16.749 of 5/October/2022, Wednesday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
