@@ -1,0 +1,39 @@
+#This is the dump of the LogCreator: <DanubemkI - 2 Travel Logger LogCreator_97Sx3sw723hu>
+#This log file was created on: 0:5:30.066 of 20/October/2022, Thursday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>0:5:30.066 of 20/October/2022, Thursday
+#>>>Initialized DanubemkI - 2 Travel logger
+#>>>SELF = <DanubemkI - 2(2621016) Travel_piaz9HE08b2n>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>0:5:30.384 of 20/October/2022, Thursday
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>0:5:42.074 of 20/October/2022, Thursday
+#>>>Updated Target Ship = Protector-4
+## -------------------- ##
+####################
+#######>>>0:5:57.329 of 20/October/2022, Thursday
+#>>>Updated Target Ship = Protector-5
+## -------------------- ##
+####################
+#######>>>0:6:18.769 of 20/October/2022, Thursday
+#>>>Updated Target Ship = USS Orville-7
