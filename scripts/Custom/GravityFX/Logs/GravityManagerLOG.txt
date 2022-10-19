@@ -1,13 +1,13 @@
-#This is the dump of the LogCreator: <Gravity Manager LogCreator_f8oNE2UWC2A9>
-#This log file was created on: 0:21:15.0 of 13/October/2022, Thursday
+#This is the dump of the LogCreator: <Gravity Manager LogCreator_30t9OLI45jO1>
+#This log file was created on: 23:43:13.0 of 19/October/2022, Wednesday
 ########################################
 ## -------------------- ##
 ####################
-#######>>>0:21:15.0 of 13/October/2022, Thursday
-#>>>Initialized GravityManager_hqU836YVvjJI logger
+#######>>>23:43:13.0 of 19/October/2022, Wednesday
+#>>>Initialized GravityManager_mkh9w4VoZ04L logger
 ## -------------------- ##
 ####################
-#######>>>0:21:23.515 of 13/October/2022, Thursday
+#######>>>23:43:21.892 of 19/October/2022, Wednesday
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
@@ -17,27 +17,19 @@
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_zSB1M3Db68yr>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_Pz45Dh7ZbS9t>]
 #>>>Planets/Suns List: ['Belaruz 4']
 #>>>Refreshed Ship List: ['Player']
-#>>>Updated radius for grav well <Belaruz 4 GravityWell_zSB1M3Db68yr>, radius is now 1608.61047363
+#>>>Updated radius for grav well <Belaruz 4 GravityWell_Pz45Dh7ZbS9t>, radius is now 1605.95947266
 ## -------------------- ##
 ####################
-#######>>>0:23:9.834 of 13/October/2022, Thursday
+#######>>>23:43:48.177 of 19/October/2022, Wednesday
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_x7CUx134w4lN>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_Vy4wT9gmVqA4>]
 #>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player', 'Enterprise F-1', 'Excalibur-2']
-#>>>Refreshed Ship List: ['Player', 'Enterprise F-1', 'Excalibur-2']
-#>>>Refreshed Ship List: ['Player', 'Enterprise F-1', 'Excalibur-2']
-## -------------------- ##
-####################
-#######>>>0:29:11.291 of 13/October/2022, Thursday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_Q4E7470z3I7X>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Enterprise F-1', 'Excalibur-2', 'Player']
+#>>>Refreshed Ship List: ['Player', 'Ambassador-1']
+#>>>Refreshed Ship List: ['Player', 'Ambassador-1']
 ########################################
-# 0:29:12.441 of 13/October/2022, Thursday
+# 23:46:8.976 of 19/October/2022, Wednesday
 #Ending of log dump - User is quiting the game
 ########################################
