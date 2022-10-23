@@ -15,7 +15,8 @@ menuGroup = "Pre-Fed ships"
 playerMenuGroup = "Pre-Fed ships"
 SubMenu = "Andorian Empire"
 Foundation.ShipDef.Kumari = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
-
+Foundation.ShipDef.Kumari.fMaxWarp = 5.5
+Foundation.ShipDef.Kumari.fCruiseWarp = 5.0
 
 Foundation.ShipDef.Kumari.desc = "The Kumari was an Andorian battle cruiser that was in service with the Andorian Imperial Guard during the mid-22nd century. It was named after the first ice-cutter to circumnavigate Andoria, and was the first starship of her class. The Kumari was capable of speeds in excess of warp five and was armed with advanced weaponry and a tractor beam. In 2154, the ship had a crew complement of eighty-six."
 

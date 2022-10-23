@@ -38,10 +38,11 @@ credits = {
 # automatically generated the proper ShipDef Line for you.                            #
 #                                                                                     #
 Foundation.ShipDef.WCNXRefit = Foundation.FedShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu, "SubSubMenu": SubSubMenu })
-Foundation.ShipDef.EIntrepid.dTechs = {
+Foundation.ShipDef.WCNXRefit.dTechs = {
 	'Polarized Hull Plating': { "Plates": ["Hull"]
 }}
-
+Foundation.ShipDef.WCNXRefit.fMaxWarp = 6.5
+Foundation.ShipDef.WCNXRefit.fCruiseWarp = 6.0
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

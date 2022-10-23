@@ -36,6 +36,9 @@ credits = {
 # automatically generated the proper ShipDef Line for you.                            #
 #                                                                                     #
 Foundation.ShipDef.Phoenix = Foundation.FedShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile })
+
+Foundation.ShipDef.Phoenix.fMaxWarp = 1.0
+Foundation.ShipDef.Phoenix.fCruiseWarp = 1.0
 #                                                                                     #
 #######################################################################################
 #                                                                                     #
@@ -44,7 +47,7 @@ Foundation.ShipDef.Phoenix = Foundation.FedShipDef(abbrev, species, { 'name': lo
 #Foundation.ShipDef.Phoenix.hasTGLDesc = 1
 
 # Otherwise, uncomment this and type something in:
-Foundation.ShipDef.Phoenix.desc = 'The first Earth warp capable ship, no defenses or weaponry.'
+Foundation.ShipDef.Phoenix.desc = "The Phoenix warp ship was the first man-made, manned spacecraft to achieve light speed using warp drive that was constructed during the mid-21st century. The Phoenix was remembered as the ship that instigated Earth's First Contact with Vulcans. Built from a missile, it had no defenses or weaponry. It didn't use a dilithium-regulated reaction to propel itself, but a far more inefficient fission reactor that didn't allow any warp factor beyond lightspeed."
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

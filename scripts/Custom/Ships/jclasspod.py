@@ -40,6 +40,9 @@ Foundation.ShipDef.jclasspod = Foundation.ShipDef(abbrev, species, { 'name': lon
 Foundation.ShipDef.jclasspod.dTechs = {
 	'Polarized Hull Plating': { "Plates": ["Hull Polarizer"]
 }}
+
+Foundation.ShipDef.jclasspod.fMaxWarp = 2.0
+Foundation.ShipDef.jclasspod.fCruiseWarp = 1.5
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

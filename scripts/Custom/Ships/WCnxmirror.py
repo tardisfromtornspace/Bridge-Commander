@@ -17,6 +17,8 @@ Foundation.ShipDef.WCnxmirror.SubMenu = "NX Class"
 Foundation.ShipDef.WCnxmirror.dTechs = {
 	'Polarized Hull Plating': { "Plates": ["Hull Polarizer"]
 }}
+Foundation.ShipDef.WCnxmirror.fMaxWarp = 5.25
+Foundation.ShipDef.WCnxmirror.fCruiseWarp = 5.0
 
 if menuGroup:           Foundation.ShipDef.WCnxmirror.RegisterQBShipMenu(menuGroup)
 if playerMenuGroup:     Foundation.ShipDef.WCnxmirror.RegisterQBPlayerShipMenu(playerMenuGroup)

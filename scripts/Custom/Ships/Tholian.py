@@ -36,6 +36,8 @@ credits = {
 # automatically generated the proper ShipDef Line for you.                            #
 #                                                                                     #
 Foundation.ShipDef.Tholian = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile })
+Foundation.ShipDef.Tholian.fMaxWarp = 7.0
+Foundation.ShipDef.Tholian.fCruiseWarp = 6.5
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

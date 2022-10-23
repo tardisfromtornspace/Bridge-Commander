@@ -41,6 +41,8 @@ Foundation.ShipDef.WCnx01 = Foundation.FedShipDef(abbrev, species, { 'name': lon
 Foundation.ShipDef.WCnx01.dTechs = {
 	'Polarized Hull Plating': { "Plates": ["Hull Polarizer"]
 }}
+Foundation.ShipDef.WCnx01.fMaxWarp = 5.25
+Foundation.ShipDef.WCnx01.fCruiseWarp = 5.0
 
 #                                                                                     #
 #######################################################################################

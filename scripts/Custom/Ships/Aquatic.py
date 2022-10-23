@@ -36,6 +36,9 @@ credits = {
 # automatically generated the proper ShipDef Line for you.                            #
 #                                                                                     #
 Foundation.ShipDef.Aquatic = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile })
+
+Foundation.ShipDef.Aquatic.fMaxWarp = 9.0
+Foundation.ShipDef.Aquatic.fCruiseWarp = 6.5
 #                                                                                     #
 #######################################################################################
 #                                                                                     #
