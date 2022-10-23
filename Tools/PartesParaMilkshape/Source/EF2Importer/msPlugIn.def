@@ -1,0 +1,7 @@
+DESCRIPTION 'MilkShape 3D EF2 Importer'
+
+VERSION     1.0
+
+LIBRARY      "msEF2importer.dll"
+EXPORTS
+    CreatePlugIn

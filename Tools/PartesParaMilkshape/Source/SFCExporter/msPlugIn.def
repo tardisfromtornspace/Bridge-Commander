@@ -1,0 +1,7 @@
+DESCRIPTION 'Star Fleet Command Exporter'
+
+VERSION     1.0
+
+LIBRARY      "msSFCExporter.dll"
+EXPORTS
+    CreatePlugIn

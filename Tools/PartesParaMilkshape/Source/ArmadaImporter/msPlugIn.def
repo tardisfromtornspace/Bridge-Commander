@@ -1,0 +1,7 @@
+DESCRIPTION 'MilkShape 3D SOD Importer'
+
+VERSION     1.0
+
+LIBRARY      "msSODImporter.dll"
+EXPORTS
+    CreatePlugIn

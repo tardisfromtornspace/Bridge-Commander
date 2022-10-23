@@ -1,0 +1,6 @@
+DESCRIPTION 'Armada Exporter'
+
+VERSION     1.0
+
+EXPORTS
+    CreatePlugIn
