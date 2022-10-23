@@ -20,7 +20,8 @@ Foundation.ShipDef.EIntrepid.dTechs = {
 }}
 
 Foundation.ShipDef.EIntrepid.desc = "The Neptune class was a United Earth starship class in service to Earth Starfleet in the 22nd century. The Neptune class saw service in the Earth-Romulan War."
-
+Foundation.ShipDef.EIntrepid.fMaxWarp = 2.0
+Foundation.ShipDef.EIntrepid.fCruiseWarp = 1.8
 
 #if menuGroup:           Foundation.ShipDef.EIntrepid.RegisterQBShipMenu(menuGroup)
 #if playerMenuGroup:     Foundation.ShipDef.EIntrepid.RegisterQBPlayerShipMenu(playerMenuGroup)

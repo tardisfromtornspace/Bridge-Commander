@@ -40,6 +40,9 @@ Foundation.ShipDef.XInsect = Foundation.FerengiShipDef(abbrev, species, { 'name'
 Foundation.ShipDef.XInsect.dTechs = {
 	'Polarized Hull Plating': { "Plates": ["Hull Polarizer"]
 }}
+
+Foundation.ShipDef.XInsect.fMaxWarp = 9.0
+Foundation.ShipDef.XInsect.fCruiseWarp = 6.5
 #                                                                                     #
 #######################################################################################
 #                                                                                     #
