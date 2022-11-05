@@ -15,6 +15,9 @@ from Custom.DS9FX.DS9FXPulsarFX.SoundFX import SoundLoader
 from Custom.DS9FX.DS9FXSoundManager import DynamicMusicHandling, MusicTypeSelector, SoundManager
 from Custom.UnifiedMainMenu.ConfigModules.Options.SavedConfigs import DS9FXSavedConfig
 
+#Added by Alex SL Gato
+from Custom.DS9FX.DS9FXLib import DS9FXLifeSupportLib
+
 bAllowPrint = 1
 bWormholeNoEntry = 0
 bForceMissionPlaying = 0
@@ -163,12 +166,36 @@ def ShipCreatedHandling(pObject, pEvent):
 def HandleNoDamageThroughShields(param, pObject, pEvent):
         reload (DS9FXSavedConfig)
         if not DS9FXSavedConfig.NoDamageThroughShields == 1:
-                return 
-
+                return 		
+	
         if param == "ShipCreated":
                 HandleShields.ShipCreated(pObject, pEvent)
         elif param == "WeaponHit":
-                HandleShields.WeaponHit(pObject, pEvent)
+		#print "I  got hit"
+		isthisPhased = 0 # Alex SL Gato: Taking into account phased weaponry
+        	pWeaponType = pEvent.GetWeaponType()
+		if pWeaponType == pEvent.TORPEDO: # Fixing how this mod conflicts with PhasedTorp
+			try:
+				pTorp=App.Torpedo_Cast(pEvent.GetSource())
+				#print "Verifying what I have"
+				#if not pTorp:
+				#	print "Welp I guess there is no torp, something went wrong"
+				#print(pTorp.GetName())
+				#print "Now the ModuleName"
+				#print(pTorp.GetModuleName())
+				#print "Now the NetType"
+				#print(pTorp.GetNetType())
+				##12 = PHASEDPLASMA
+				##pTorp.GetNetType() == Multiplayer.SpeciesToTorp.PHASEDPLASMA
+				if pTorp.GetNetType() == 12:
+					isthisPhased = 1
+				#	print "Yup I think I am called Phased"
+			except:
+				isthisPhased = 0
+		if isthisPhased == 0:
+                	HandleShields.WeaponHit(pObject, pEvent)
+		#else:
+		#	print "So I am phased I guess"
 
 def HandleLifeSupportNewShip(pObject, pEvent):
         reload (DS9FXSavedConfig)

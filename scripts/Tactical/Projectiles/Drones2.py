@@ -58,7 +58,7 @@ def GetDamage():
 
 # Sets the minimum damage the torpedo will do
 def GetMinDamage():
-	return 180
+	return 200
 # Sets the percentage of damage the torpedo will do
 def GetPercentage():
 	return 0.00001

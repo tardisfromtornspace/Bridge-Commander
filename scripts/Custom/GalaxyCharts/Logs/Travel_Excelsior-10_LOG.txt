@@ -1,0 +1,32 @@
+#This is the dump of the LogCreator: <Excelsior-10 Travel Logger LogCreator_HpEAU50MXOzu>
+#This log file was created on: 22:36:56.871 of 5/November/2022, Saturday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>22:36:56.871 of 5/November/2022, Saturday
+#>>>Initialized Excelsior-10 Travel logger
+#>>>SELF = <Excelsior-10(108232) Travel_6j23xm8c0UqL>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>22:39:14.528 of 5/November/2022, Saturday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 22:39:37.133 of 5/November/2022, Saturday
+#Ending of log dump - User is quiting the game
+########################################

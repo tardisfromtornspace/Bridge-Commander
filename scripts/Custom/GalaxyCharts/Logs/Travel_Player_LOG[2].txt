@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Player Travel Logger[2] LogCreator_RF066BZ26BFd>
-#This log file was created on: 3:39:55.108 of 5/November/2022, Saturday
+#This is the dump of the LogCreator: <Player Travel Logger[2] LogCreator_FA51YFO7vs51>
+#This log file was created on: 23:57:1.195 of 5/November/2022, Saturday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,10 +9,10 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>3:39:55.108 of 5/November/2022, Saturday
+#######>>>23:57:1.195 of 5/November/2022, Saturday
 #>>>Initialized Player Travel logger
-#>>>SELF = <Player(102364) Travel_09S3t1CQFTe8>
-#>>>Initial Travel Type: None
+#>>>SELF = <Player(52247) Travel_qLEP309So5lI>
+#>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Is Player - Checked
 #>>>Destination set as None
@@ -21,20 +21,7 @@ Updating Travelling Procedures...
 #>>>Chaser base class initialization complete.
 #>>>Target Ship = NONE
 #>>>Chaser pre-emptive Refresher Initialization
-#>>> -Tried to set to a non-existant travel type: None
-< ------------------------------------------- >
-<----------------- EXCEPTION ----------------->
------> ERROR at Update (Chaser)
-Traceback of Error: TypeError: call of non-function (type None)
-Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 2307, in the function "Update".
-Script: ".\Scripts\Custom\GalaxyCharts\HelmAddonGUI.py", Line 93, in the function "CreateTravelTypeButtons".
-Script: ".\Scripts\Custom\GalaxyCharts\HelmAddonGUI.py", Line 118, in the function "UpdateTravelType".
-Script: ".\Scripts\Custom\GalaxyCharts\HelmAddonGUI.py", Line 299, in the function "UpdateEmergencyOutButton".
-Script: ".\Scripts\Custom\GalaxyCharts\HelmAddonGUI.py", Line 245, in the function "CanEmergencyTravelOut".
-Script: ".\Scripts\Custom\GalaxyCharts\HelmAddonGUI.py", Line 288, in the function "CheckBasicPlayerCanTravel".
-<--------------- END EXCEPTION --------------->
-< ------------------------------------------- >
 ########################################
-# 3:45:26.059 of 5/November/2022, Saturday
+# 23:57:26.567 of 5/November/2022, Saturday
 #Ending of log dump - User is quiting the game
 ########################################

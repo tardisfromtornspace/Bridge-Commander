@@ -6,8 +6,8 @@
 ###############################################################################
 
 import App
-from Custom.Techs.PhasedTorpedoV1 import *
-
+import string
+pWeaponLock = {}
 
 ###############################################################################
 #	Create(pTorp)
@@ -20,29 +20,31 @@ from Custom.Techs.PhasedTorpedoV1 import *
 ###############################################################################
 def Create(pTorp):
 	
-	kGlowColor = App.TGColorA()
-	kGlowColor.SetRGBA(230.0 / 255.0, 220.0 / 255.0, 78.0 / 255.0, 1.000000)
 	kCoreColor = App.TGColorA()
-	kCoreColor.SetRGBA(230.0 / 255.0, 245.0 / 255.0, 208.0 / 255.0, 1.000000)
+	kCoreColor.SetRGBA(124.0 / 200.0, 180.0 / 255.0, 240.0 / 255.0, 1.000000)
+	kGlowColor = App.TGColorA()
+	kGlowColor.SetRGBA(124.0 / 200.0, 180.0 / 255.0, 240.0 / 255.0, 1.000000)	
+	kFlareColor = App.TGColorA()
+	kFlareColor.SetRGBA(49.0 / 124.0, 114.0 / 175.0, 150.0 / 255.0, 1.000000)
 
 	pTorp.CreateTorpedoModel(
-					"data/Textures/Tactical/TorpedoFlares.tga",
-					kCoreColor, 
-					0.175,
-					0.93,	 
-					"data/Textures/Tactical/TorpedoGlow.tga", 
-					kGlowColor,
-					2.8,	
-					0.23,	 
-					0.47,	
 					"data/Textures/Tactical/TorpedoCore.tga",
-					kGlowColor,										
-					16,		
-					0.4,		
-					0.20)
+					kCoreColor,
+					0.1,
+					1.0,	 
+					"data/Textures/Tactical/ArmVoyX.tga", 
+					kCoreColor,
+					2.0,	
+					0.2,	 
+					0.4,	
+					"data/Textures/Tactical/TorpedoFlares.tga",
+					kFlareColor,										
+					7,		
+					0.1,		
+					0.1)
 
 	pTorp.SetDamage( GetDamage() )
-	pTorp.SetDamageRadiusFactor(0.005)
+	pTorp.SetDamageRadiusFactor(99999999999.50)
 	pTorp.SetGuidanceLifetime( GetGuidanceLifetime() )
 	pTorp.SetMaxAngularAccel( GetMaxAngularAccel() )
 
@@ -53,6 +55,9 @@ def Create(pTorp):
 
 	return(0)
 
+def GetLifetime():
+        return 60
+
 def GetLaunchSpeed():
 	return(100.0)
 
@@ -60,25 +65,23 @@ def GetLaunchSound():
 	return("Transphasic")
 
 def GetPowerCost():
-	return(90.01)
+	return(90)
 
 def GetName():
-	return("Transphasic")
+	return("31st Transphasic")
 
 def GetDamage():
-        # For phasedPlasmaTorp foundation scripts
-        return 991.91
-
-# Sets the minimum damage the torpedo will do
-def GetMinDamage():
-	return 39991.91
-
-# Sets the percentage of damage the torpedo will do
-def GetPercentage():
-	return 0.70
+	return 99991.90
 
 def GetGuidanceLifetime():
-	return 3.0
+	return 23.0
 
 def GetMaxAngularAccel():
-	return 0.335
+	return 2.235
+
+try:
+	modPhasedTorp = __import__("Custom.Techs.PhasedTorp")
+	if(modPhasedTorp):
+		modPhasedTorp.oPhasedTorp.AddTorpedo(__name__)
+except:
+	print "Phased Torpedo script not installed, or you are missing Foundation Tech"
