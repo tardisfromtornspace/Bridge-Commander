@@ -6,5 +6,4 @@ config = {
 """Debug Mode""": 1,
 """Disable Extra Models""": 0,
 """Disable Animated Maps""": 0,
-"""Disable Bridge Sounds""": 1,
 }

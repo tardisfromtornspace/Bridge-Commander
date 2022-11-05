@@ -1,5 +1,5 @@
-TunnelGFX = 'JumpspaceTunnelAlt1.tga'
-FlashGFX = 'JumpspaceFlashAlternate.tga'
+TunnelGFX = 'Default'
+FlashGFX = 'Default'
 BackdropGFX = 'Default'
 LoopSound = 1
 Prints = 1

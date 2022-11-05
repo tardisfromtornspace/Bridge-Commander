@@ -1,6 +1,6 @@
 I've tried to find all the readmes about the original mods these pack modifies, specially the WC NX Pack and the Xindi Aquatic, Insectoid and 22nd Century Tholian ship.
 
-I've personally asked for permission from WileyCoyote via e-mail and <STILL WAITING FOR RESPONSE>.
+I've personally asked for permission from WileyCoyote via e-mail and while I didn't get a respose, a friend who is in contact with them (THE-SCI-FI-KING) SAID "He said along you give proper credit he is fine".
 
 ==CHANGES DONE ON THIS MOD==
 This mod aims for a more canon ship, that is, power-level-wise and tech-level wise. As such:

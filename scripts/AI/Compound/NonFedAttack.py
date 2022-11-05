@@ -627,18 +627,28 @@ def BuilderCreate22(pShip, pICO_ShieldBiasMoveIn, dKeywords):
 	## Conditions:
 	#### Condition ShieldLow
 	debug(__name__ + ", BuilderCreate22")
-	pShieldLow = App.ConditionScript_Create("Conditions.ConditionSingleShieldBelow", "ConditionSingleShieldBelow", pShip.GetName(), 0.25, App.ShieldClass.FRONT_SHIELDS)
+	pShieldLow = App.ConditionScript_Create("Conditions.ConditionSingleShieldBelow", "ConditionSingleShieldBelow", pShip.GetName(), 0.32, App.ShieldClass.FRONT_SHIELDS)
+	#### Condition LeftLow
+	pLeftLow = App.ConditionScript_Create("Conditions.ConditionSingleShieldBelow", "ConditionSingleShieldBelow", pShip.GetName(), 0.45, App.ShieldClass.LEFT_SHIELDS)
+	#### Condition RightLow
+	pRightLow = App.ConditionScript_Create("Conditions.ConditionSingleShieldBelow", "ConditionSingleShieldBelow", pShip.GetName(), 0.45, App.ShieldClass.RIGHT_SHIELDS)
+	#### Condition TopLow
+	pTopLow = App.ConditionScript_Create("Conditions.ConditionSingleShieldBelow", "ConditionSingleShieldBelow", pShip.GetName(), 0.4, App.ShieldClass.TOP_SHIELDS)
+	#### Condition BottomLow
+	pBottomLow = App.ConditionScript_Create("Conditions.ConditionSingleShieldBelow", "ConditionSingleShieldBelow", pShip.GetName(), 0.6, App.ShieldClass.BOTTOM_SHIELDS)
+	#### Condition RearShieldsLow
+	pRearShieldsLow = App.ConditionScript_Create("Conditions.ConditionSingleShieldBelow", "ConditionSingleShieldBelow", pShip.GetName(), 0.5, App.ShieldClass.REAR_SHIELDS)
 	#### Condition SmartShields
 	pSmartShields = App.ConditionScript_Create("Conditions.ConditionFlagSet", "ConditionFlagSet", "SmartShields", dKeywords)
 	## Evaluation function:
-	def EvalFunc(bShieldLow, bSmartShields):
+	def EvalFunc(bShieldLow, bLeftLow, bRightLow, bTopLow, bBottomLow, bRearShieldsLow, bSmartShields):
 		debug(__name__ + ", EvalFunc")
 		ACTIVE = App.ArtificialIntelligence.US_ACTIVE
 		DORMANT = App.ArtificialIntelligence.US_DORMANT
 		DONE = App.ArtificialIntelligence.US_DONE
 		if not bSmartShields:
 			return DONE
-		if bShieldLow:
+		if bShieldLow and not (bLeftLow and bRightLow and bTopLow and bBottomLow):
 			return ACTIVE
 		return DORMANT
 	## The ConditionalAI:
@@ -646,6 +656,11 @@ def BuilderCreate22(pShip, pICO_ShieldBiasMoveIn, dKeywords):
 	pFwdShieldsLow.SetInterruptable(1)
 	pFwdShieldsLow.SetContainedAI(pICO_ShieldBiasMoveIn)
 	pFwdShieldsLow.AddCondition(pShieldLow)
+	pFwdShieldsLow.AddCondition(pLeftLow)
+	pFwdShieldsLow.AddCondition(pRightLow)
+	pFwdShieldsLow.AddCondition(pTopLow)
+	pFwdShieldsLow.AddCondition(pBottomLow)
+	pFwdShieldsLow.AddCondition(pRearShieldsLow)
 	pFwdShieldsLow.AddCondition(pSmartShields)
 	pFwdShieldsLow.SetEvaluationFunction(EvalFunc)
 	# Done creating ConditionalAI FwdShieldsLow

@@ -492,17 +492,19 @@ def BuilderCreate14(pShip, pICOMoveIn):
 	## Conditions:
 	#### Condition FrontLow
 	debug(__name__ + ", BuilderCreate14")
-	pFrontLow = App.ConditionScript_Create("Conditions.ConditionSingleShieldBelow", "ConditionSingleShieldBelow", pShip.GetName(), 0.7, App.ShieldClass.FRONT_SHIELDS)
+	pFrontLow = App.ConditionScript_Create("Conditions.ConditionSingleShieldBelow", "ConditionSingleShieldBelow", pShip.GetName(), 0.6, App.ShieldClass.FRONT_SHIELDS)
 	#### Condition LeftLow
-	pLeftLow = App.ConditionScript_Create("Conditions.ConditionSingleShieldBelow", "ConditionSingleShieldBelow", pShip.GetName(), 0.3, App.ShieldClass.LEFT_SHIELDS)
+	pLeftLow = App.ConditionScript_Create("Conditions.ConditionSingleShieldBelow", "ConditionSingleShieldBelow", pShip.GetName(), 0.4, App.ShieldClass.LEFT_SHIELDS)
 	#### Condition RightLow
-	pRightLow = App.ConditionScript_Create("Conditions.ConditionSingleShieldBelow", "ConditionSingleShieldBelow", pShip.GetName(), 0.3, App.ShieldClass.RIGHT_SHIELDS)
+	pRightLow = App.ConditionScript_Create("Conditions.ConditionSingleShieldBelow", "ConditionSingleShieldBelow", pShip.GetName(), 0.4, App.ShieldClass.RIGHT_SHIELDS)
 	#### Condition TopLow
-	pTopLow = App.ConditionScript_Create("Conditions.ConditionSingleShieldBelow", "ConditionSingleShieldBelow", pShip.GetName(), 0.3, App.ShieldClass.TOP_SHIELDS)
+	pTopLow = App.ConditionScript_Create("Conditions.ConditionSingleShieldBelow", "ConditionSingleShieldBelow", pShip.GetName(), 0.6, App.ShieldClass.TOP_SHIELDS)
 	#### Condition BottomLow
-	pBottomLow = App.ConditionScript_Create("Conditions.ConditionSingleShieldBelow", "ConditionSingleShieldBelow", pShip.GetName(), 0.3, App.ShieldClass.BOTTOM_SHIELDS)
+	pBottomLow = App.ConditionScript_Create("Conditions.ConditionSingleShieldBelow", "ConditionSingleShieldBelow", pShip.GetName(), 0.6, App.ShieldClass.BOTTOM_SHIELDS)
+	#### Condition RearShieldsLow
+	pRearShieldsLow = App.ConditionScript_Create("Conditions.ConditionSingleShieldBelow", "ConditionSingleShieldBelow", pShip.GetName(), 0.58, App.ShieldClass.REAR_SHIELDS)
 	## Evaluation function:
-	def EvalFunc(bFrontLow, bLeftLow, bRightLow, bTopLow, bBottomLow):
+	def EvalFunc(bFrontLow, bLeftLow, bRightLow, bTopLow, bBottomLow, bRearShieldsLow):
 		debug(__name__ + ", EvalFunc")
 		ACTIVE = App.ArtificialIntelligence.US_ACTIVE
 		DORMANT = App.ArtificialIntelligence.US_DORMANT
@@ -519,6 +521,7 @@ def BuilderCreate14(pShip, pICOMoveIn):
 	pFrontShieldLowSidesNotLow.AddCondition(pRightLow)
 	pFrontShieldLowSidesNotLow.AddCondition(pTopLow)
 	pFrontShieldLowSidesNotLow.AddCondition(pBottomLow)
+	pFrontShieldLowSidesNotLow.AddCondition(pRearShieldsLow)
 	pFrontShieldLowSidesNotLow.SetEvaluationFunction(EvalFunc)
 	# Done creating ConditionalAI FrontShieldLowSidesNotLow
 	#########################################
@@ -670,7 +673,7 @@ def BuilderCreate21(pShip, pRearTorpRun, dKeywords):
 	#### Condition RearTorpsFlag
 	pRearTorpsFlag = App.ConditionScript_Create("Conditions.ConditionFlagSet", "ConditionFlagSet", "UseRearTorps", dKeywords)
 	#### Condition RearShieldsLow
-	pRearShieldsLow = App.ConditionScript_Create("Conditions.ConditionSingleShieldBelow", "ConditionSingleShieldBelow", pShip.GetName(), 0.25, App.ShieldClass.REAR_SHIELDS)
+	pRearShieldsLow = App.ConditionScript_Create("Conditions.ConditionSingleShieldBelow", "ConditionSingleShieldBelow", pShip.GetName(), 0.45, App.ShieldClass.REAR_SHIELDS)
 	#### Condition UsingTorps
 	pUsingTorps = App.ConditionScript_Create("Conditions.ConditionUsingWeapon", "ConditionUsingWeapon", App.CT_TORPEDO_SYSTEM)
 	## Evaluation function:
@@ -728,7 +731,7 @@ def BuilderCreate23(pShip, pTorpRun_4):
 	## Conditions:
 	#### Condition TimePassed
 	debug(__name__ + ", BuilderCreate23")
-	pTimePassed = App.ConditionScript_Create("Conditions.ConditionTimer", "ConditionTimer", 10.0, 1)
+	pTimePassed = App.ConditionScript_Create("Conditions.ConditionTimer", "ConditionTimer", 3.0, 1)
 	## Evaluation function:
 	def EvalFunc(bTimePassed):
 		debug(__name__ + ", EvalFunc")
@@ -761,7 +764,7 @@ def BuilderCreate24(pShip, pSignificantTimePassed, dKeywords):
 	#### Condition SmartShields
 	pSmartShields = App.ConditionScript_Create("Conditions.ConditionFlagSet", "ConditionFlagSet", "SmartShields", dKeywords)
 	#### Condition FrontShieldLow
-	pFrontShieldLow = App.ConditionScript_Create("Conditions.ConditionSingleShieldBelow", "ConditionSingleShieldBelow", pShip.GetName(), 0.3, App.ShieldClass.FRONT_SHIELDS)
+	pFrontShieldLow = App.ConditionScript_Create("Conditions.ConditionSingleShieldBelow", "ConditionSingleShieldBelow", pShip.GetName(), 0.45, App.ShieldClass.FRONT_SHIELDS)
 	#### Condition SmartWeaponBalance
 	pSmartWeaponBalance = App.ConditionScript_Create("Conditions.ConditionFlagSet", "ConditionFlagSet", "SmartWeaponBalance", dKeywords)
 	## Evaluation function:
@@ -822,7 +825,7 @@ def BuilderCreate26(pShip, pICO_WeaponBias, dKeywords):
 	debug(__name__ + ", BuilderCreate26")
 	pSideArcsFlag = App.ConditionScript_Create("Conditions.ConditionFlagSet", "ConditionFlagSet", "UseSideArcs", dKeywords)
 	#### Condition TimePassed
-	pTimePassed = App.ConditionScript_Create("Conditions.ConditionTimer", "ConditionTimer", 15.0)
+	pTimePassed = App.ConditionScript_Create("Conditions.ConditionTimer", "ConditionTimer", 1.0)
 	## Evaluation function:
 	def EvalFunc(bSideArcsFlag, bTimePassed):
 		debug(__name__ + ", EvalFunc")
@@ -870,7 +873,7 @@ def BuilderCreate28(pShip, pICOMoveOut, dKeywords):
 	## Conditions:
 	#### Condition RearLow
 	debug(__name__ + ", BuilderCreate28")
-	pRearLow = App.ConditionScript_Create("Conditions.ConditionSingleShieldBelow", "ConditionSingleShieldBelow", pShip.GetName(), 0.25, App.ShieldClass.REAR_SHIELDS)
+	pRearLow = App.ConditionScript_Create("Conditions.ConditionSingleShieldBelow", "ConditionSingleShieldBelow", pShip.GetName(), 0.45, App.ShieldClass.REAR_SHIELDS)
 	#### Condition SmartShields
 	pSmartShields = App.ConditionScript_Create("Conditions.ConditionFlagSet", "ConditionFlagSet", "SmartShields", dKeywords)
 	## Evaluation function:
@@ -1082,7 +1085,7 @@ def BuilderCreate37(pShip, pTorpRun):
 	debug(__name__ + ", BuilderCreate37")
 	pTorpsReady = App.ConditionScript_Create("Conditions.ConditionTorpsReady", "ConditionTorpsReady", pShip.GetName(), App.TGPoint3_GetModelForward())
 	#### Condition FrontLow
-	pFrontLow = App.ConditionScript_Create("Conditions.ConditionSingleShieldBelow", "ConditionSingleShieldBelow", pShip.GetName(), 0.4, App.ShieldClass.FRONT_SHIELDS)
+	pFrontLow = App.ConditionScript_Create("Conditions.ConditionSingleShieldBelow", "ConditionSingleShieldBelow", pShip.GetName(), 0.45, App.ShieldClass.FRONT_SHIELDS)
 	#### Condition UsingTorps
 	pUsingTorps = App.ConditionScript_Create("Conditions.ConditionUsingWeapon", "ConditionUsingWeapon", App.CT_TORPEDO_SYSTEM)
 	## Evaluation function:
@@ -1506,3 +1509,4 @@ def BuilderCreate56(pShip, pPowerManagement):
 	######### AI Builder Begin #########
 	return pAlertLevel  # Builder Return
 	########## AI Builder End ##########
+	######### AI Builder Begin #########

@@ -6,7 +6,7 @@ def CreateAI(pShip):
 	#########################################
 	# Creating CompoundAI Attack at (113, 68)
 	import AI.Compound.BasicAttack
-	pAttack = AI.Compound.BasicAttack.CreateAI(pShip, MissionLib.GetFriendlyGroup(), Difficulty = QuickBattle.GetCurrentAILevel(), MaxFiringRange = 1000.0, AggressivePulseWeapons = 0, ChooseSubsystemTargets = 1, DisableBeforeDestroy = 0, FollowTargetThroughWarp = 1, InaccurateTorps = 1, SmartShields = 0, UseRearTorps = 1, UseCloaking = 1)
+	pAttack = AI.Compound.BasicAttack.CreateAI(pShip, MissionLib.GetFriendlyGroup(), Difficulty = QuickBattle.GetCurrentAILevel(), DisableBeforeDestroy = 0, AggressivePulseWeapons = 1, ChooseSubsystemTargets = 1, FollowTargetThroughWarp = 1, InaccurateTorps = 0, PowerManagement = 1, SmartPhasers = 1, SmartShields = 1, SmartTorpSelection = 1, SmartWeaponBalance = 1, UseRearTorps = 1, UseCloaking = 1, UseSideArcs = 1, WarpOutBeforeDying = 1)
 	# Done creating CompoundAI Attack
 	#########################################
 	#########################################

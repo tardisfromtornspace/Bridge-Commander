@@ -1,13 +1,8 @@
 ###############################################################################
-#	Filename:	PoleronTorp.py
-#	By:		edtheborg
-###############################################################################
-# This torpedo uses the FTA mod...
-#
-# it actually passes through shields and damages whatever subsystem it was
-# targeted at
-#
-# please refer to the bottom of this file for details on changing effects
+#		
+#	Script for filling in the attributes of Fusion torpedoes.
+#	
+#	Created:	012/10/04 -	 MRJOHN
 ###############################################################################
 
 import App
@@ -15,12 +10,16 @@ import string
 pWeaponLock = {}
 
 ###############################################################################
+#	Create(pTorp)
+#	
+#	Creates a Fusion torpedo.
+#	
 #	Args:	pTorp - the torpedo, ready to be filled-in
 #	
 #	Return:	zero
 ###############################################################################
 def Create(pTorp):
-
+	
 	kOuterShellColor = App.TGColorA()
 	kOuterShellColor.SetRGBA(1.000000, 0.823000, 0.000000, 1.000000)	
 	kOuterCoreColor = App.TGColorA()
@@ -39,72 +38,102 @@ def Create(pTorp):
 	pTorp.SetNetType (Multiplayer.SpeciesToTorp.DISRUPTOR)
 
 	return(0)
-
 def GetLifetime():
         return 60
 
 def GetLaunchSpeed():
-	return(22)
+	return(25.0)
 
 def GetLaunchSound():
 	return("Drone")
 
 def GetPowerCost():
-	return(500.0)
+	return(500)
 
 def GetName():
 	return("Drone")
 
 def GetDamage():
-	return 15.00001
+	return 50.001
 
 # Sets the minimum damage the torpedo will do
 def GetMinDamage():
-	return 600
-
+	return 180
 # Sets the percentage of damage the torpedo will do
 def GetPercentage():
 	return 0.00001
 
 def GetGuidanceLifetime():
-	return 100.0
+	return 700.0
 
 def GetMaxAngularAccel():
 	return 7.5
 
 
 global lImmuneShips
-lImmuneShips = (                
-                "Satellite",
-                "Sovereign",
-                "AMVogager",
-                "ArmoredVoyager",
-                "BorgDiamond",
-                "CA8472",
-                "Firebird",
-                "DJEnterpriseG",
-                "GalaxyX",
-                "EnterpriseF",
-                "EnterpriseJ",
-                "Excalibur",
-                "Tardis",
-                "Andromeda",
-                "DRA_Raider",
-                "enterprise",
-                "DCMPDefiant",
-                "B5Station",
+lImmuneShips = (
                 "Aegean",
                 "Aegian",
+                "AMVogager",
+                "AncientCity",
+                "Andromeda",
+                "ArmoredVoyager",
+                "Atlantis",
+                "B5LordShip",
+                "B5TriadTriumviron",
+                "bcnarada",
+                "BorgDiamond",
+                "CA8472",
+                "crossfield31",
+                "DanielJackson",
+                "DCMPDefiant",
+                "DJEnterpriseG",
+                "DJEnterpriseGDrive",
+                "DJEnterpriseGSaucer",
+                "DSC304Apollo",
+                "DSC304Daedalus",
+                "DSC304Korolev",
+                "DSC304Odyssey",
+                "DSC304OdysseyRefit",
+                "DSC304OdysseyUpgrade",
+                "DyExcalibur",
+                "GalaxyX",
+                "Enterprise",
+                "EnterpriseF",
+                "EnterpriseG",
+                "EnterpriseH",
+                "EnterpriseI",
+                "EnterpriseJ",
+                "Excalibur",
+                "Firebird",
+                "janeway",
+                "Korolev",
+                "MindridersThoughtforce",
+                "MvamPrometheus",
+                "MvamPrometheusDorsal",
+                "MvamPrometheusSaucer",
+                "MvamPrometheusVentral",
+                "novaII",
+                "Odyssey",
+                "OdysseyRefit",
+                "OdysseyUpgrade",
+                "ONeill",
+                "OdysseyRefit",
+                "OdysseyUpgrade",
+                "PsVoyagerA",
+                "Satellite",
+                "Sovereign",
+                "Supership",
+                "Tardis",
+                "ThirdspaceCapitalShip",
+                "VulcanXRT55D",
+                "WCNemEntE",
+                "Wells",
+                "Windrunner",
+                "WCNemEntEnoyacht",  
                 "XOverAlteranWarship",
                 "XOverAncientCityFed",
                 "XOverAncientSatelliteFed",
-                "AncientCity",
-                "Atlantis",   
-                "VulcanXRT55D",
-                "MvamPrometheus",
-                "novaII",
-                "WCNemEntE",
-                "WCNemEntEnoyacht",  
                 )
 
 def TargetHit(pObject, pEvent):
@@ -152,3 +181,43 @@ def WeaponFired(pObject, pEvent):
 	except:
 		return
 	return
+
+#try:
+#    sYieldName = 'Phased Torpedo'
+#    import FoundationTech
+#    try:
+#        oYield = FoundationTech.oTechs[sYieldName]
+#        FoundationTech.dYields[__name__] = oYield
+#    except:
+
+#        import FoundationTech
+#        import ftb.Tech.FedTransphasic
+#      
+#        sYieldName = ''
+#        sFireName = ''
+
+#        oFire = ftb.Tech.FedTransphasic.oTransphasicWeapon
+#        FoundationTech.dOnFires[__name__] = oFire
+#        FoundationTech.dYields[__name__] = oFire
+#        pass
+#except:
+#    pass
+
+try:
+        sYieldName = "Hopping Torpedo"
+
+        import FoundationTech
+        import Custom.Techs.HoppingTorp
+	#modPhasedTorp = __import__("Custom.Techs.HoppingTorp")
+	#if(modPhasedTorp):
+	#	modPhasedTorp.oPhasedTorp.AddTorpedo(__name__)
+
+        oFire = Custom.Techs.HoppingTorp.oHoppingTorp
+        FoundationTech.dOnFires[__name__] = oFire
+
+        oYield = FoundationTech.oTechs[sYieldName]
+        FoundationTech.dYields[__name__] = oYield
+
+
+except:
+	print "Hopping Torpedo script not installed, or you are missing Foundation Tech"
