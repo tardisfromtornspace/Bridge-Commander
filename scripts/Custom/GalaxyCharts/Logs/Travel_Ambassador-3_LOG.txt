@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Ambassador-3 Travel Logger LogCreator_V2ruhbfaY644>
-#This log file was created on: 22:36:56.871 of 5/November/2022, Saturday
+#This is the dump of the LogCreator: <Ambassador-3 Travel Logger LogCreator_Pj971bnyV9Rb>
+#This log file was created on: 3:11:7.252 of 6/November/2022, Sunday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>22:36:56.871 of 5/November/2022, Saturday
+#######>>>3:11:7.252 of 6/November/2022, Sunday
 #>>>Initialized Ambassador-3 Travel logger
-#>>>SELF = <Ambassador-3(104109) Travel_m5aC112v54g7>
+#>>>SELF = <Ambassador-3(84118) Travel_04NZcT1YHQ31>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -21,7 +21,8 @@ Updating Travelling Procedures...
 #>>>Chaser base class initialization complete.
 #>>>Target Ship = NONE
 #>>>Chaser pre-emptive Refresher Initialization
-########################################
-# 22:39:37.133 of 5/November/2022, Saturday
-#Ending of log dump - User is quiting the game
-########################################
+## -------------------- ##
+####################
+#######>>>3:11:47.039 of 6/November/2022, Sunday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

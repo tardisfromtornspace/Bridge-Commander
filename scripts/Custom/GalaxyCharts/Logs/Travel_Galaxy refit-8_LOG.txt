@@ -1,0 +1,28 @@
+#This is the dump of the LogCreator: <Galaxy refit-8 Travel Logger LogCreator_8W93N7YUOzp9>
+#This log file was created on: 3:11:7.252 of 6/November/2022, Sunday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>3:11:7.252 of 6/November/2022, Sunday
+#>>>Initialized Galaxy refit-8 Travel logger
+#>>>SELF = <Galaxy refit-8(87232) Travel_8999v6AoT5Kw>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>3:12:33.887 of 6/November/2022, Sunday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

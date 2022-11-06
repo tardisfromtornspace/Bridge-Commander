@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Asteroid 5 Travel Logger LogCreator_PawkgpIo3oNh>
-#This log file was created on: 23:56:35.713 of 5/November/2022, Saturday
+#This is the dump of the LogCreator: <Asteroid 5 Travel Logger LogCreator_tWnk60y0i1r8>
+#This log file was created on: 3:9:50.505 of 6/November/2022, Sunday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>23:56:35.713 of 5/November/2022, Saturday
+#######>>>3:9:50.505 of 6/November/2022, Sunday
 #>>>Initialized Asteroid 5 Travel logger
-#>>>SELF = <Asteroid 5(5786) Travel_eQ0C9GsF4rjd>
+#>>>SELF = <Asteroid 5(5601) Travel_u2paBvRs50Ko>
 #>>>Initial Travel Type: None
 #>>>Updating Variables...
 #>>>Destination set as None
@@ -20,7 +20,8 @@ Updating Travelling Procedures...
 #>>>Chaser base class initialization complete.
 #>>>Target Ship = NONE
 #>>>Chaser pre-emptive Refresher Initialization
-########################################
-# 23:57:26.567 of 5/November/2022, Saturday
-#Ending of log dump - User is quiting the game
-########################################
+## -------------------- ##
+####################
+#######>>>3:12:44.437 of 6/November/2022, Sunday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

@@ -3,6 +3,8 @@
 #
 # Start on 2:
 # At the bottom of your torpedo projectile file add this (Between the """ and """):
+# Note, your SpeciesToTorp value must be set to PHASEDPLASAMA for it to work
+# pTorp.SetNetType (Multiplayer.SpeciesToTorp.PHASEDPLASMA)
 """
 try:
 	modPhasedTorp = __import__("Custom.Techs.PhasedTorp")

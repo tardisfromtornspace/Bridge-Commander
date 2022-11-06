@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Enterprise F-5 Travel Logger LogCreator_SqQ8InfRr40r>
-#This log file was created on: 22:36:56.871 of 5/November/2022, Saturday
+#This is the dump of the LogCreator: <Enterprise F-5 Travel Logger LogCreator_NKLf6QDpA1Fl>
+#This log file was created on: 3:8:32.217 of 6/November/2022, Sunday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>22:36:56.871 of 5/November/2022, Saturday
+#######>>>3:8:32.217 of 6/November/2022, Sunday
 #>>>Initialized Enterprise F-5 Travel logger
-#>>>SELF = <Enterprise F-5(105460) Travel_YQ77B89SpM9t>
+#>>>SELF = <Enterprise F-5(106306) Travel_31N67v20eJvi>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -21,7 +21,3 @@ Updating Travelling Procedures...
 #>>>Chaser base class initialization complete.
 #>>>Target Ship = NONE
 #>>>Chaser pre-emptive Refresher Initialization
-########################################
-# 22:39:37.133 of 5/November/2022, Saturday
-#Ending of log dump - User is quiting the game
-########################################
