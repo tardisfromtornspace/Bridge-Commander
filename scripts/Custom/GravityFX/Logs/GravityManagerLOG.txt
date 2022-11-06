@@ -1,13 +1,13 @@
-#This is the dump of the LogCreator: <Gravity Manager LogCreator_H3u25JYBOTa4>
-#This log file was created on: 3:9:39.0 of 6/November/2022, Sunday
+#This is the dump of the LogCreator: <Gravity Manager LogCreator_a2Ui7b84r1C0>
+#This log file was created on: 21:47:32.0 of 6/November/2022, Sunday
 ########################################
 ## -------------------- ##
 ####################
-#######>>>3:9:39.0 of 6/November/2022, Sunday
-#>>>Initialized GravityManager_i2mf4g92jhT1 logger
+#######>>>21:47:32.0 of 6/November/2022, Sunday
+#>>>Initialized GravityManager_23B3ki4ePvUU logger
 ## -------------------- ##
 ####################
-#######>>>3:9:50.505 of 6/November/2022, Sunday
+#######>>>21:48:8.583 of 6/November/2022, Sunday
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
@@ -17,140 +17,45 @@
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_208mbjEwvSX0>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_3K8ze3KVLdlo>]
 #>>>Planets/Suns List: ['Belaruz 4']
 #>>>Refreshed Ship List: ['Player']
-#>>>Updated radius for grav well <Belaruz 4 GravityWell_208mbjEwvSX0>, radius is now 1600.7746582
+#>>>Updated radius for grav well <Belaruz 4 GravityWell_3K8ze3KVLdlo>, radius is now 1601.57128906
 ## -------------------- ##
 ####################
-#######>>>3:11:7.252 of 6/November/2022, Sunday
+#######>>>21:49:5.112 of 6/November/2022, Sunday
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_98MsZdpkQYZP>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_jgA51h36GOSv>]
 #>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player', 'Aegian-1', 'Akira-2', 'Ambassador-3', 'Defiant Refit-4', 'Enterprise E-5', 'Enterprise F-6', 'Excelsior-7', 'Galaxy refit-8', 'Rhode Island-9', 'U.S.S. Enterprise J-10', 'Vulcan XRT55D-11', ' Warship-12']
-#>>>Refreshed Ship List: ['Player', 'Aegian-1', 'Akira-2', 'Ambassador-3', 'Defiant Refit-4', 'Enterprise E-5', 'Enterprise F-6', 'Excelsior-7', 'Galaxy refit-8', 'Rhode Island-9', 'U.S.S. Enterprise J-10', 'Vulcan XRT55D-11', ' Warship-12']
-#>>>Refreshed Ship List: ['Player', 'Aegian-1', 'Akira-2', 'Ambassador-3', 'Defiant Refit-4', 'Enterprise E-5', 'Enterprise F-6', 'Excelsior-7', 'Galaxy refit-8', 'Rhode Island-9', 'U.S.S. Enterprise J-10', 'Vulcan XRT55D-11', ' Warship-12']
-#>>>Refreshed Ship List: ['Player', 'Aegian-1', 'Akira-2', 'Ambassador-3', 'Defiant Refit-4', 'Enterprise E-5', 'Enterprise F-6', 'Excelsior-7', 'Galaxy refit-8', 'Rhode Island-9', 'U.S.S. Enterprise J-10', 'Vulcan XRT55D-11', ' Warship-12']
-#>>>Refreshed Ship List: ['Player', 'Aegian-1', 'Akira-2', 'Ambassador-3', 'Defiant Refit-4', 'Enterprise E-5', 'Enterprise F-6', 'Excelsior-7', 'Galaxy refit-8', 'Rhode Island-9', 'U.S.S. Enterprise J-10', 'Vulcan XRT55D-11', ' Warship-12']
-#>>>Refreshed Ship List: ['Player', 'Aegian-1', 'Akira-2', 'Ambassador-3', 'Defiant Refit-4', 'Enterprise E-5', 'Enterprise F-6', 'Excelsior-7', 'Galaxy refit-8', 'Rhode Island-9', 'U.S.S. Enterprise J-10', 'Vulcan XRT55D-11', ' Warship-12']
-#>>>Refreshed Ship List: ['Player', 'Aegian-1', 'Akira-2', 'Ambassador-3', 'Defiant Refit-4', 'Enterprise E-5', 'Enterprise F-6', 'Excelsior-7', 'Galaxy refit-8', 'Rhode Island-9', 'U.S.S. Enterprise J-10', 'Vulcan XRT55D-11', ' Warship-12']
-#>>>Refreshed Ship List: ['Player', 'Aegian-1', 'Akira-2', 'Ambassador-3', 'Defiant Refit-4', 'Enterprise E-5', 'Enterprise F-6', 'Excelsior-7', 'Galaxy refit-8', 'Rhode Island-9', 'U.S.S. Enterprise J-10', 'Vulcan XRT55D-11', ' Warship-12']
-#>>>Refreshed Ship List: ['Player', 'Aegian-1', 'Akira-2', 'Ambassador-3', 'Defiant Refit-4', 'Enterprise E-5', 'Enterprise F-6', 'Excelsior-7', 'Galaxy refit-8', 'Rhode Island-9', 'U.S.S. Enterprise J-10', 'Vulcan XRT55D-11', ' Warship-12']
-#>>>Refreshed Ship List: ['Player', 'Aegian-1', 'Akira-2', 'Ambassador-3', 'Defiant Refit-4', 'Enterprise E-5', 'Enterprise F-6', 'Excelsior-7', 'Galaxy refit-8', 'Rhode Island-9', 'U.S.S. Enterprise J-10', 'Vulcan XRT55D-11', ' Warship-12']
-#>>>Refreshed Ship List: ['Player', 'Aegian-1', 'Akira-2', 'Ambassador-3', 'Defiant Refit-4', 'Enterprise E-5', 'Enterprise F-6', 'Excelsior-7', 'Galaxy refit-8', 'Rhode Island-9', 'U.S.S. Enterprise J-10', 'Vulcan XRT55D-11', ' Warship-12']
-#>>>Refreshed Ship List: ['Player', 'Aegian-1', 'Akira-2', 'Ambassador-3', 'Defiant Refit-4', 'Enterprise E-5', 'Enterprise F-6', 'Excelsior-7', 'Galaxy refit-8', 'Rhode Island-9', 'U.S.S. Enterprise J-10', 'Vulcan XRT55D-11', ' Warship-12']
-#>>>Refreshed Ship List: ['Player', 'Aegian-1', 'Akira-2', 'Ambassador-3', 'Defiant Refit-4', 'Enterprise E-5', 'Enterprise F-6', 'Excelsior-7', 'Galaxy refit-8', 'Rhode Island-9', 'U.S.S. Enterprise J-10', 'Vulcan XRT55D-11', ' Warship-12']
+#>>>Refreshed Ship List: ['Player', 'DJEnterpriseG-1']
+#>>>Refreshed Ship List: ['Player', 'DJEnterpriseG-1']
 ## -------------------- ##
 ####################
-#######>>>3:11:39.572 of 6/November/2022, Sunday
-#>>>Refreshed Ship List: ['Player', 'Akira-2', 'Ambassador-3', 'Defiant Refit-4', 'Enterprise E-5', 'Enterprise F-6', 'Excelsior-7', 'Galaxy refit-8', 'Rhode Island-9', 'U.S.S. Enterprise J-10', 'Vulcan XRT55D-11', ' Warship-12']
+#######>>>21:49:37.099 of 6/November/2022, Sunday
+#>>>Refreshed Ship List: ['Player']
 ## -------------------- ##
 ####################
-#######>>>3:11:50.792 of 6/November/2022, Sunday
-#>>>Refreshed Ship List: ['Player', 'Ambassador-3', 'Defiant Refit-4', 'Enterprise E-5', 'Enterprise F-6', 'Excelsior-7', 'Galaxy refit-8', 'Rhode Island-9', 'U.S.S. Enterprise J-10', 'Vulcan XRT55D-11', ' Warship-12']
-## -------------------- ##
-####################
-#######>>>3:11:55.432 of 6/November/2022, Sunday
-#>>>Refreshed Ship List: ['Player', 'Defiant Refit-4', 'Enterprise E-5', 'Enterprise F-6', 'Excelsior-7', 'Galaxy refit-8', 'Rhode Island-9', 'U.S.S. Enterprise J-10', 'Vulcan XRT55D-11', ' Warship-12']
-## -------------------- ##
-####################
-#######>>>3:12:2.426 of 6/November/2022, Sunday
-#>>>Refreshed Ship List: ['Player', 'Enterprise E-5', 'Enterprise F-6', 'Excelsior-7', 'Galaxy refit-8', 'Rhode Island-9', 'U.S.S. Enterprise J-10', 'Vulcan XRT55D-11', ' Warship-12']
-## -------------------- ##
-####################
-#######>>>3:12:9.288 of 6/November/2022, Sunday
-#>>>Refreshed Ship List: ['Player', 'Enterprise F-6', 'Excelsior-7', 'Galaxy refit-8', 'Rhode Island-9', 'U.S.S. Enterprise J-10', 'Vulcan XRT55D-11', ' Warship-12']
-## -------------------- ##
-####################
-#######>>>3:12:15.822 of 6/November/2022, Sunday
-#>>>Refreshed Ship List: ['Player', 'Excelsior-7', 'Galaxy refit-8', 'Rhode Island-9', 'U.S.S. Enterprise J-10', 'Vulcan XRT55D-11', ' Warship-12']
-## -------------------- ##
-####################
-#######>>>3:12:24.471 of 6/November/2022, Sunday
-#>>>Refreshed Ship List: ['Player', 'Galaxy refit-8', 'Rhode Island-9', 'U.S.S. Enterprise J-10', 'Vulcan XRT55D-11', ' Warship-12']
-## -------------------- ##
-####################
-#######>>>3:12:42.071 of 6/November/2022, Sunday
-#>>>Refreshed Ship List: ['Player', 'Rhode Island-9', 'U.S.S. Enterprise J-10', 'Vulcan XRT55D-11', ' Warship-12']
-## -------------------- ##
-####################
-#######>>>3:12:44.437 of 6/November/2022, Sunday
-#>>>Refreshed Ship List: ['Player', 'Rhode Island-9', 'U.S.S. Enterprise J-10', 'Vulcan XRT55D-11', ' Warship-12']
-## -------------------- ##
-####################
-#######>>>3:12:51.236 of 6/November/2022, Sunday
-#>>>Refreshed Ship List: ['Player', 'Rhode Island-9', 'Vulcan XRT55D-11', ' Warship-12']
-## -------------------- ##
-####################
-#######>>>3:12:52.286 of 6/November/2022, Sunday
-#>>>Refreshed Ship List: ['Player', 'Vulcan XRT55D-11', ' Warship-12']
-#>>>Refreshed Ship List: ['Player', 'Vulcan XRT55D-11', ' Warship-12']
-#>>>Refreshed Ship List: ['Player', 'Vulcan XRT55D-11', ' Warship-12']
-#>>>Refreshed Ship List: ['Player', 'Vulcan XRT55D-11', ' Warship-12']
-#>>>Refreshed Ship List: ['Player', 'Vulcan XRT55D-11', ' Warship-12']
-#>>>Refreshed Ship List: ['Player', 'Vulcan XRT55D-11', ' Warship-12']
-#>>>Refreshed Ship List: ['Player', 'Vulcan XRT55D-11', ' Warship-12']
-## -------------------- ##
-####################
-#######>>>3:12:58.286 of 6/November/2022, Sunday
-#>>>Refreshed Ship List: ['Player', 'Vulcan XRT55D-11', ' Warship-12']
-## -------------------- ##
-####################
-#######>>>3:12:59.535 of 6/November/2022, Sunday
+#######>>>21:50:14.473 of 6/November/2022, Sunday
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_5m2qRQAMK2X6>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Vulcan XRT55D-11', ' Warship-12', 'Player']
-## -------------------- ##
-####################
-#######>>>3:13:6.901 of 6/November/2022, Sunday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_xa92lrD5e7N0>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_Ocl0mi58w75C>]
 #>>>Planets/Suns List: ['Belaruz 4']
 #>>>Refreshed Ship List: ['Player']
 ## -------------------- ##
 ####################
-#######>>>3:13:9.054 of 6/November/2022, Sunday
+#######>>>21:50:32.557 of 6/November/2022, Sunday
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_E91H8877uf6A>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_Chs7Qx9vtv9M>]
 #>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player', 'Aegian-1', 'Akira-2', 'Ambassador-3', 'Defiant Refit-4', 'Enterprise E-5', 'Enterprise F-6', 'Excelsior-7', 'Galaxy refit-8', 'Rhode Island-9', 'U.S.S. Enterprise J-10', 'Vulcan XRT55D-11', ' Warship-12']
-#>>>Refreshed Ship List: ['Player', 'Aegian-1', 'Akira-2', 'Ambassador-3', 'Defiant Refit-4', 'Enterprise E-5', 'Enterprise F-6', 'Excelsior-7', 'Galaxy refit-8', 'Rhode Island-9', 'U.S.S. Enterprise J-10', 'Vulcan XRT55D-11', ' Warship-12']
-#>>>Refreshed Ship List: ['Player', 'Aegian-1', 'Akira-2', 'Ambassador-3', 'Defiant Refit-4', 'Enterprise E-5', 'Enterprise F-6', 'Excelsior-7', 'Galaxy refit-8', 'Rhode Island-9', 'U.S.S. Enterprise J-10', 'Vulcan XRT55D-11', ' Warship-12']
-#>>>Refreshed Ship List: ['Player', 'Aegian-1', 'Akira-2', 'Ambassador-3', 'Defiant Refit-4', 'Enterprise E-5', 'Enterprise F-6', 'Excelsior-7', 'Galaxy refit-8', 'Rhode Island-9', 'U.S.S. Enterprise J-10', 'Vulcan XRT55D-11', ' Warship-12']
-#>>>Refreshed Ship List: ['Player', 'Aegian-1', 'Akira-2', 'Ambassador-3', 'Defiant Refit-4', 'Enterprise E-5', 'Enterprise F-6', 'Excelsior-7', 'Galaxy refit-8', 'Rhode Island-9', 'U.S.S. Enterprise J-10', 'Vulcan XRT55D-11', ' Warship-12']
-#>>>Refreshed Ship List: ['Player', 'Aegian-1', 'Akira-2', 'Ambassador-3', 'Defiant Refit-4', 'Enterprise E-5', 'Enterprise F-6', 'Excelsior-7', 'Galaxy refit-8', 'Rhode Island-9', 'U.S.S. Enterprise J-10', 'Vulcan XRT55D-11', ' Warship-12']
-#>>>Refreshed Ship List: ['Player', 'Aegian-1', 'Akira-2', 'Ambassador-3', 'Defiant Refit-4', 'Enterprise E-5', 'Enterprise F-6', 'Excelsior-7', 'Galaxy refit-8', 'Rhode Island-9', 'U.S.S. Enterprise J-10', 'Vulcan XRT55D-11', ' Warship-12']
-#>>>Refreshed Ship List: ['Player', 'Aegian-1', 'Akira-2', 'Ambassador-3', 'Defiant Refit-4', 'Enterprise E-5', 'Enterprise F-6', 'Excelsior-7', 'Galaxy refit-8', 'Rhode Island-9', 'U.S.S. Enterprise J-10', 'Vulcan XRT55D-11', ' Warship-12']
-#>>>Refreshed Ship List: ['Player', 'Aegian-1', 'Akira-2', 'Ambassador-3', 'Defiant Refit-4', 'Enterprise E-5', 'Enterprise F-6', 'Excelsior-7', 'Galaxy refit-8', 'Rhode Island-9', 'U.S.S. Enterprise J-10', 'Vulcan XRT55D-11', ' Warship-12']
-#>>>Refreshed Ship List: ['Player', 'Aegian-1', 'Akira-2', 'Ambassador-3', 'Defiant Refit-4', 'Enterprise E-5', 'Enterprise F-6', 'Excelsior-7', 'Galaxy refit-8', 'Rhode Island-9', 'U.S.S. Enterprise J-10', 'Vulcan XRT55D-11', ' Warship-12']
-#>>>Refreshed Ship List: ['Player', 'Aegian-1', 'Akira-2', 'Ambassador-3', 'Defiant Refit-4', 'Enterprise E-5', 'Enterprise F-6', 'Excelsior-7', 'Galaxy refit-8', 'Rhode Island-9', 'U.S.S. Enterprise J-10', 'Vulcan XRT55D-11', ' Warship-12']
-#>>>Refreshed Ship List: ['Player', 'Aegian-1', 'Akira-2', 'Ambassador-3', 'Defiant Refit-4', 'Enterprise E-5', 'Enterprise F-6', 'Excelsior-7', 'Galaxy refit-8', 'Rhode Island-9', 'U.S.S. Enterprise J-10', 'Vulcan XRT55D-11', ' Warship-12']
-#>>>Refreshed Ship List: ['Player', 'Aegian-1', 'Akira-2', 'Ambassador-3', 'Defiant Refit-4', 'Enterprise E-5', 'Enterprise F-6', 'Excelsior-7', 'Galaxy refit-8', 'Rhode Island-9', 'U.S.S. Enterprise J-10', 'Vulcan XRT55D-11', ' Warship-12']
+#>>>Refreshed Ship List: ['Player', 'T.A.R.D.I.S.-1']
+#>>>Refreshed Ship List: ['Player', 'T.A.R.D.I.S.-1']
 ## -------------------- ##
 ####################
-#######>>>3:14:10.241 of 6/November/2022, Sunday
-#>>>Refreshed Ship List: ['Player', 'Aegian-1', 'Akira-2', 'Ambassador-3', 'Defiant Refit-4', 'Enterprise E-5', 'Enterprise F-6', 'Excelsior-7', 'Galaxy refit-8', 'Rhode Island-9', 'U.S.S. Enterprise J-10', 'Vulcan XRT55D-11', ' Warship-12']
-## -------------------- ##
-####################
-#######>>>3:14:18.390 of 6/November/2022, Sunday
-#>>>Refreshed Ship List: ['Player', 'Aegian-1', 'Akira-2', 'Ambassador-3', 'Defiant Refit-4', 'Enterprise E-5', 'Enterprise F-6', 'Excelsior-7', 'Galaxy refit-8', 'Rhode Island-9', 'Vulcan XRT55D-11', ' Warship-12']
-#>>>Refreshed Ship List: ['Player', 'Aegian-1', 'Akira-2', 'Ambassador-3', 'Defiant Refit-4', 'Enterprise E-5', 'Enterprise F-6', 'Excelsior-7', 'Galaxy refit-8', 'Rhode Island-9', 'Vulcan XRT55D-11', ' Warship-12']
-#>>>Refreshed Ship List: ['Player', 'Aegian-1', 'Akira-2', 'Ambassador-3', 'Defiant Refit-4', 'Enterprise E-5', 'Enterprise F-6', 'Excelsior-7', 'Galaxy refit-8', 'Rhode Island-9', 'Vulcan XRT55D-11', ' Warship-12']
-#>>>Refreshed Ship List: ['Player', 'Aegian-1', 'Akira-2', 'Ambassador-3', 'Defiant Refit-4', 'Enterprise E-5', 'Enterprise F-6', 'Excelsior-7', 'Galaxy refit-8', 'Rhode Island-9', 'Vulcan XRT55D-11', ' Warship-12']
-#>>>Refreshed Ship List: ['Player', 'Aegian-1', 'Akira-2', 'Ambassador-3', 'Defiant Refit-4', 'Enterprise E-5', 'Enterprise F-6', 'Excelsior-7', 'Galaxy refit-8', 'Rhode Island-9', 'Vulcan XRT55D-11', ' Warship-12']
-#>>>Refreshed Ship List: ['Player', 'Aegian-1', 'Akira-2', 'Ambassador-3', 'Defiant Refit-4', 'Enterprise E-5', 'Enterprise F-6', 'Excelsior-7', 'Galaxy refit-8', 'Rhode Island-9', 'Vulcan XRT55D-11', ' Warship-12']
-#>>>Refreshed Ship List: ['Player', 'Aegian-1', 'Akira-2', 'Ambassador-3', 'Defiant Refit-4', 'Enterprise E-5', 'Enterprise F-6', 'Excelsior-7', 'Galaxy refit-8', 'Rhode Island-9', 'Vulcan XRT55D-11', ' Warship-12']
-#>>>Refreshed Ship List: ['Player', 'Aegian-1', 'Akira-2', 'Ambassador-3', 'Defiant Refit-4', 'Enterprise E-5', 'Enterprise F-6', 'Excelsior-7', 'Galaxy refit-8', 'Rhode Island-9', 'Vulcan XRT55D-11', ' Warship-12']
-#>>>Refreshed Ship List: ['Player', 'Aegian-1', 'Akira-2', 'Ambassador-3', 'Defiant Refit-4', 'Enterprise E-5', 'Enterprise F-6', 'Excelsior-7', 'Galaxy refit-8', 'Rhode Island-9', 'Vulcan XRT55D-11', ' Warship-12']
-## -------------------- ##
-####################
-#######>>>3:14:24.369 of 6/November/2022, Sunday
-#>>>Refreshed Ship List: ['Player', 'Vulcan XRT55D-11', ' Warship-12']
-## -------------------- ##
-####################
-#######>>>3:14:25.365 of 6/November/2022, Sunday
+#######>>>22:3:8.545 of 6/November/2022, Sunday
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_3C0W8gX98bw8>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_p9J63guz4Q96>]
 #>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Vulcan XRT55D-11', ' Warship-12', 'Player']
+#>>>Refreshed Ship List: ['T.A.R.D.I.S.-1', 'Player']
+########################################
+# 22:3:9.911 of 6/November/2022, Sunday
+#Ending of log dump - User is quiting the game
+########################################
