@@ -1,0 +1,40 @@
+#This is the dump of the LogCreator: <TelTakUpgrade - 5 Travel Logger LogCreator_AW7wSvHBdz78>
+#This log file was created on: 0:19:40.546 of 7/November/2022, Monday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>0:19:40.546 of 7/November/2022, Monday
+#>>>Initialized TelTakUpgrade - 5 Travel logger
+#>>>SELF = <TelTakUpgrade - 5(117621) Travel_NVVFpsVyvEhR>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>0:19:41.014 of 7/November/2022, Monday
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>0:19:52.356 of 7/November/2022, Monday
+#>>>Updated Target Ship = Shadow_Fighter5 2
+## -------------------- ##
+####################
+#######>>>0:19:59.028 of 7/November/2022, Monday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 0:26:41.272 of 7/November/2022, Monday
+#Ending of log dump - User is quiting the game
+########################################

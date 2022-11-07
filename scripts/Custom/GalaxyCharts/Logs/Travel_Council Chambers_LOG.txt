@@ -1,0 +1,23 @@
+#This is the dump of the LogCreator: <Council Chambers Travel Logger LogCreator_Gw1r5o6M02P6>
+#This log file was created on: 0:12:42.648 of 7/November/2022, Monday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>0:12:42.648 of 7/November/2022, Monday
+#>>>Initialized Council Chambers Travel logger
+#>>>SELF = <Council Chambers(135046) Travel_gE99fWU6rC1T>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization

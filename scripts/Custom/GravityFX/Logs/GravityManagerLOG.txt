@@ -1,13 +1,13 @@
-#This is the dump of the LogCreator: <Gravity Manager LogCreator_a2Ui7b84r1C0>
-#This log file was created on: 21:47:32.0 of 6/November/2022, Sunday
+#This is the dump of the LogCreator: <Gravity Manager LogCreator_fomH10hYu4eI>
+#This log file was created on: 0:17:29.0 of 7/November/2022, Monday
 ########################################
 ## -------------------- ##
 ####################
-#######>>>21:47:32.0 of 6/November/2022, Sunday
-#>>>Initialized GravityManager_23B3ki4ePvUU logger
+#######>>>0:17:29.0 of 7/November/2022, Monday
+#>>>Initialized GravityManager_j27ogdfxuPqx logger
 ## -------------------- ##
 ####################
-#######>>>21:48:8.583 of 6/November/2022, Sunday
+#######>>>0:17:40.997 of 7/November/2022, Monday
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
@@ -17,45 +17,136 @@
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_3K8ze3KVLdlo>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_4nWmNC2Jmc0g>]
 #>>>Planets/Suns List: ['Belaruz 4']
 #>>>Refreshed Ship List: ['Player']
-#>>>Updated radius for grav well <Belaruz 4 GravityWell_3K8ze3KVLdlo>, radius is now 1601.57128906
+#>>>Updated radius for grav well <Belaruz 4 GravityWell_4nWmNC2Jmc0g>, radius is now 1600.61340332
 ## -------------------- ##
 ####################
-#######>>>21:49:5.112 of 6/November/2022, Sunday
+#######>>>0:18:31.186 of 7/November/2022, Monday
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_jgA51h36GOSv>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_Rniq0F054xMs>]
 #>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player', 'DJEnterpriseG-1']
-#>>>Refreshed Ship List: ['Player', 'DJEnterpriseG-1']
+#>>>Refreshed Ship List: ['Superweapon-1']
+#>>>Refreshed Ship List: ['Superweapon-1']
 ## -------------------- ##
 ####################
-#######>>>21:49:37.099 of 6/November/2022, Sunday
+#######>>>0:18:43.663 of 7/November/2022, Monday
+#>>>Refreshed Ship List: ['Superweapon-1']
+## -------------------- ##
+####################
+#######>>>0:18:48.630 of 7/November/2022, Monday
+#>>>Refreshed Ship List: ['Superweapon-1']
+#>>>Refreshed Ship List: ['Superweapon-1']
+#>>>Refreshed Ship List: ['Superweapon-1']
+#>>>Refreshed Ship List: ['Superweapon-1']
+#>>>Refreshed Ship List: ['Superweapon-1']
+#>>>Refreshed Ship List: ['Superweapon-1']
+#>>>Refreshed Ship List: ['Superweapon-1']
+## -------------------- ##
+####################
+#######>>>0:18:49.812 of 7/November/2022, Monday
+#>>>Refreshed Ship List: ['Superweapon-1']
+## -------------------- ##
+####################
+#######>>>0:18:56.146 of 7/November/2022, Monday
+#>>>Refreshed Ship List: ['Superweapon-1']
+## -------------------- ##
+####################
+#######>>>0:19:8.529 of 7/November/2022, Monday
+#>>>Refreshed Ship List: ['Superweapon-1']
+#>>>Refreshed Ship List: ['Superweapon-1']
+#>>>Refreshed Ship List: ['Superweapon-1']
+#>>>Refreshed Ship List: ['Superweapon-1']
+#>>>Refreshed Ship List: ['Superweapon-1']
+#>>>Refreshed Ship List: ['Superweapon-1']
+#>>>Refreshed Ship List: ['Superweapon-1']
+#>>>Refreshed Ship List: ['Superweapon-1']
+#>>>Refreshed Ship List: ['Superweapon-1']
+#>>>Refreshed Ship List: ['Superweapon-1']
+#>>>Refreshed Ship List: ['Superweapon-1']
+#>>>Refreshed Ship List: ['Superweapon-1']
+#>>>Refreshed Ship List: ['Superweapon-1']
+#>>>Refreshed Ship List: ['Superweapon-1']
+## -------------------- ##
+####################
+#######>>>0:19:40.546 of 7/November/2022, Monday
+#>>>Refreshed Ship List: ['Superweapon-1', 'TelTakUpgrade - 5']
+## -------------------- ##
+####################
+#######>>>0:20:1.431 of 7/November/2022, Monday
+#>>>Refreshed Ship List: ['Superweapon-1', 'TelTakUpgrade - 5', 'TelTakUpgrade - 6']
+## -------------------- ##
+####################
+#######>>>0:20:7.212 of 7/November/2022, Monday
+#>>>Refreshed Ship List: ['Superweapon-1', 'TelTakUpgrade - 6']
+## -------------------- ##
+####################
+#######>>>0:20:20.402 of 7/November/2022, Monday
+#>>>Refreshed Ship List: ['Superweapon-1', 'TelTakUpgrade - 6', 'DeathGlider - 7']
+## -------------------- ##
+####################
+#######>>>0:20:47.197 of 7/November/2022, Monday
+#>>>Refreshed Ship List: ['Superweapon-1', 'DeathGlider - 7']
+## -------------------- ##
+####################
+#######>>>0:20:50.268 of 7/November/2022, Monday
+#>>>Refreshed Ship List: ['Superweapon-1']
+## -------------------- ##
+####################
+#######>>>0:21:35.677 of 7/November/2022, Monday
+#>>>Refreshed Ship List: ['Superweapon-1', 'TelTakUpgrade - 8']
+## -------------------- ##
+####################
+#######>>>0:21:54.077 of 7/November/2022, Monday
+#>>>Refreshed Ship List: ['Superweapon-1']
+## -------------------- ##
+####################
+#######>>>0:23:58.842 of 7/November/2022, Monday
+#>>>Refreshed Ship List: []
+## -------------------- ##
+####################
+#######>>>0:24:3.375 of 7/November/2022, Monday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_EJ6EJyRAHbLm>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: []
+## -------------------- ##
+####################
+#######>>>0:24:4.877 of 7/November/2022, Monday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_zGBUYX9ge6cp>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: []
+## -------------------- ##
+####################
+#######>>>0:24:6.260 of 7/November/2022, Monday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_0i1Ki8hY3Y3P>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Superweapon-1']
+#>>>Refreshed Ship List: ['Superweapon-1']
+## -------------------- ##
+####################
+#######>>>0:24:57.224 of 7/November/2022, Monday
+#>>>Refreshed Ship List: []
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_69UyB6OsB7Cr>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Superweapon-1']
+## -------------------- ##
+####################
+#######>>>0:25:20.025 of 7/November/2022, Monday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_Jcbb4eH9GC44>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player', 'Superweapon-1']
+#>>>Refreshed Ship List: ['Player', 'Superweapon-1']
+## -------------------- ##
+####################
+#######>>>0:26:30.950 of 7/November/2022, Monday
 #>>>Refreshed Ship List: ['Player']
-## -------------------- ##
-####################
-#######>>>21:50:14.473 of 6/November/2022, Sunday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_Ocl0mi58w75C>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player']
-## -------------------- ##
-####################
-#######>>>21:50:32.557 of 6/November/2022, Sunday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_Chs7Qx9vtv9M>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player', 'T.A.R.D.I.S.-1']
-#>>>Refreshed Ship List: ['Player', 'T.A.R.D.I.S.-1']
-## -------------------- ##
-####################
-#######>>>22:3:8.545 of 6/November/2022, Sunday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_p9J63guz4Q96>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['T.A.R.D.I.S.-1', 'Player']
 ########################################
-# 22:3:9.911 of 6/November/2022, Sunday
+# 0:26:41.272 of 7/November/2022, Monday
 #Ending of log dump - User is quiting the game
 ########################################

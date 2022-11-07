@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: < Warship-1 Travel Logger[2] LogCreator_IJ4s07m0987v>
-#This log file was created on: 21:34:15.356 of 5/November/2022, Saturday
+#This is the dump of the LogCreator: < Warship-1 Travel Logger[2] LogCreator_yJj25tF4t46b>
+#This log file was created on: 0:17:16.856 of 7/November/2022, Monday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,15 +9,100 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>21:34:15.356 of 5/November/2022, Saturday
+#######>>>0:17:16.856 of 7/November/2022, Monday
 #>>>Initialized  Warship-1 Travel logger
-#>>>SELF = < Warship-1(1793849) Travel_JOm49f9Ql9E0>
+#>>>SELF = < Warship-1(102670) Travel_91R3pJvVe2fe>
 #>>>Initial Travel Type: None
 #>>>Updating Variables...
-#>>> -Is AI in Player in route CHECKING: Player Travel OK
-#>>>Destination set as None
+#>>> -Ship is dead or dying
+#>>>Ship is dead or dying (at SetDestination)
 #>>>Set Exit Placement Name as None
 #>>>Set Exit Point to None
 #>>>Chaser base class initialization complete.
-#>>>Target Ship = NONE
+#>>>Target Ship = Player
 #>>>Chaser pre-emptive Refresher Initialization
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>0:17:17.497 of 7/November/2022, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>0:17:17.597 of 7/November/2022, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>0:17:17.719 of 7/November/2022, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>0:17:17.804 of 7/November/2022, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>0:17:17.956 of 7/November/2022, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>0:17:18.072 of 7/November/2022, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>0:17:18.209 of 7/November/2022, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>0:17:18.306 of 7/November/2022, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>0:17:18.451 of 7/November/2022, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>0:17:18.595 of 7/November/2022, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>0:17:18.695 of 7/November/2022, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>0:17:18.806 of 7/November/2022, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>0:17:18.950 of 7/November/2022, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>0:17:19.075 of 7/November/2022, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>0:17:19.209 of 7/November/2022, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>0:17:19.303 of 7/November/2022, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>0:17:19.450 of 7/November/2022, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>0:17:19.584 of 7/November/2022, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>0:17:19.674 of 7/November/2022, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>0:17:19.834 of 7/November/2022, Monday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>0:17:19.951 of 7/November/2022, Monday
+#>>>Ship is dead or dying (at Chaser Update)

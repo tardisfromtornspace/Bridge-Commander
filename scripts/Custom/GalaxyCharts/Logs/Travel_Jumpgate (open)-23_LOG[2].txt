@@ -1,0 +1,23 @@
+#This is the dump of the LogCreator: <Jumpgate (open)-23 Travel Logger[2] LogCreator_v0IU96uk1Ub8>
+#This log file was created on: 0:0:42.297 of 7/November/2022, Monday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>0:0:42.297 of 7/November/2022, Monday
+#>>>Initialized Jumpgate (open)-23 Travel logger
+#>>>SELF = <Jumpgate (open)-23(1800693) Travel_z23Xfwmm02BW>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization

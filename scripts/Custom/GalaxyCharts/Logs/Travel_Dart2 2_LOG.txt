@@ -1,0 +1,57 @@
+#This is the dump of the LogCreator: <Dart2 2 Travel Logger LogCreator_2Sgw4vAwmXpk>
+#This log file was created on: 0:7:53.842 of 7/November/2022, Monday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>0:7:53.842 of 7/November/2022, Monday
+#>>>Initialized Dart2 2 Travel logger
+#>>>SELF = <Dart2 2(2361368) Travel_B0ss312CJg4n>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>0:8:4.928 of 7/November/2022, Monday
+#>>>Updated Target Ship = Player
+#>>>Can Chase Target = 0
+## -------------------- ##
+####################
+#######>>>0:8:5.112 of 7/November/2022, Monday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>0:8:5.521 of 7/November/2022, Monday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>0:8:6.192 of 7/November/2022, Monday
+#>>>Updated Target Ship = B5ZephyrRaider 1
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>0:8:9.224 of 7/November/2022, Monday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>0:8:10.005 of 7/November/2022, Monday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>0:8:14.484 of 7/November/2022, Monday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>0:8:21.011 of 7/November/2022, Monday
+#>>>Ship can't chase, directing to Travel update...

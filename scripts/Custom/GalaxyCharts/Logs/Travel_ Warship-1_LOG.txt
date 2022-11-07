@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: < Warship-1 Travel Logger LogCreator_Mo759V05wZAi>
-#This log file was created on: 22:36:56.871 of 5/November/2022, Saturday
+#This is the dump of the LogCreator: < Warship-1 Travel Logger LogCreator_ZI7m8DeemD1e>
+#This log file was created on: 0:16:32.913 of 7/November/2022, Monday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>22:36:56.871 of 5/November/2022, Saturday
+#######>>>0:16:32.913 of 7/November/2022, Monday
 #>>>Initialized  Warship-1 Travel logger
-#>>>SELF = < Warship-1(103202) Travel_FJ5sG9e7W1ii>
+#>>>SELF = < Warship-1(102670) Travel_C5ZLiTnzsT6F>
 #>>>Initial Travel Type: None
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -21,7 +21,26 @@ Updating Travelling Procedures...
 #>>>Chaser base class initialization complete.
 #>>>Target Ship = NONE
 #>>>Chaser pre-emptive Refresher Initialization
-########################################
-# 22:39:37.133 of 5/November/2022, Saturday
-#Ending of log dump - User is quiting the game
-########################################
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>0:16:41.371 of 7/November/2022, Monday
+#>>>Updated Target Ship = Vorlon Fighter-13
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:16:41.805 of 7/November/2022, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:16:42.688 of 7/November/2022, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:17:6.334 of 7/November/2022, Monday
+#>>>Updated Target Ship = Vorlon Cruiser-19
+## -------------------- ##
+####################
+#######>>>0:17:14.722 of 7/November/2022, Monday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

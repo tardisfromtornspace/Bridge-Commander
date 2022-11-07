@@ -1,0 +1,37 @@
+#This is the dump of the LogCreator: <Superweapon-2 Travel Logger LogCreator_LI0vJFp1M4O2>
+#This log file was created on: 0:12:42.648 of 7/November/2022, Monday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>0:12:42.648 of 7/November/2022, Monday
+#>>>Initialized Superweapon-2 Travel logger
+#>>>SELF = <Superweapon-2(125457) Travel_6l0kq6jLMvTi>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>0:12:53.638 of 7/November/2022, Monday
+#>>>Updated Target Ship = Vorlon Fighter-13
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:12:54.199 of 7/November/2022, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:13:16.432 of 7/November/2022, Monday
+#>>>Updated Target Ship = Vorlon Fighter-15

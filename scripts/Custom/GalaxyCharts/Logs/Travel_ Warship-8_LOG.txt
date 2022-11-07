@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: < Warship-8 Travel Logger LogCreator_4Zp06dPuP29v>
-#This log file was created on: 22:10:35.226 of 5/November/2022, Saturday
+#This is the dump of the LogCreator: < Warship-8 Travel Logger LogCreator_l5W94C05blK0>
+#This log file was created on: 0:12:42.648 of 7/November/2022, Monday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>22:10:35.226 of 5/November/2022, Saturday
+#######>>>0:12:42.648 of 7/November/2022, Monday
 #>>>Initialized  Warship-8 Travel logger
-#>>>SELF = < Warship-8(96179) Travel_B0loLjwl0qZs>
+#>>>SELF = < Warship-8(128812) Travel_77b21VCYN6S6>
 #>>>Initial Travel Type: None
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -21,3 +21,25 @@ Updating Travelling Procedures...
 #>>>Chaser base class initialization complete.
 #>>>Target Ship = NONE
 #>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>0:12:53.985 of 7/November/2022, Monday
+#>>>Updated Target Ship = Vorlon Fighter-12
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:12:54.563 of 7/November/2022, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:12:54.998 of 7/November/2022, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:12:55.802 of 7/November/2022, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:13:17.418 of 7/November/2022, Monday
+#>>>Updated Target Ship = Vorlon Fighter (Open)-20

@@ -1,0 +1,42 @@
+#This is the dump of the LogCreator: <Dark Knife-34 Travel Logger LogCreator_UGo0gWi6vcTQ>
+#This log file was created on: 0:7:38.548 of 7/November/2022, Monday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>0:7:38.548 of 7/November/2022, Monday
+#>>>Initialized Dark Knife-34 Travel logger
+#>>>SELF = <Dark Knife-34(2320619) Travel_Vi8c6dvnr8e7>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship =  Warship-1
+## -------------------- ##
+####################
+#######>>>0:8:5.521 of 7/November/2022, Monday
+#>>>Updated Target Ship = Dart4 2
+## -------------------- ##
+####################
+#######>>>0:8:6.192 of 7/November/2022, Monday
+#>>>Updated Target Ship =  Warship-3
+## -------------------- ##
+####################
+#######>>>0:8:10.005 of 7/November/2022, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:8:14.484 of 7/November/2022, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
