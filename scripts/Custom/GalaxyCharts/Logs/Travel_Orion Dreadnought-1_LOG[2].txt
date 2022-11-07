@@ -1,0 +1,29 @@
+#This is the dump of the LogCreator: <Orion Dreadnought-1 Travel Logger[2] LogCreator_3pmQ5ZAV67Z4>
+#This log file was created on: 23:54:15.046 of 7/November/2022, Monday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>23:54:15.046 of 7/November/2022, Monday
+#>>>Initialized Orion Dreadnought-1 Travel logger
+#>>>SELF = <Orion Dreadnought-1(74187) Travel_6Nyc76wi48pB>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Ship is dead or dying
+#>>>Ship is dead or dying (at SetDestination)
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Ship is dead or dying (at SetDestination)
+#>>>Set Exit Placement Name as None
+#>>>Enable Towing: 0
+#>>>Travelling procedures initiated...
+#>>> -Ship is dead or dying
+########################################
+# 0:9:5.850 of 8/November/2022, Tuesday
+#Ending of log dump - User is quiting the game
+########################################

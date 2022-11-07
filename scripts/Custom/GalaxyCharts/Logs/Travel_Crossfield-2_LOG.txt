@@ -1,0 +1,53 @@
+#This is the dump of the LogCreator: <Crossfield-2 Travel Logger LogCreator_KtxvkfwMTgTn>
+#This log file was created on: 23:11:34.363 of 7/November/2022, Monday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>23:11:34.363 of 7/November/2022, Monday
+#>>>Initialized Crossfield-2 Travel logger
+#>>>SELF = <Crossfield-2(66218) Travel_inava5q4ppF7>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>23:11:42.023 of 7/November/2022, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:11:42.539 of 7/November/2022, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:11:42.890 of 7/November/2022, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:11:43.422 of 7/November/2022, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:11:43.657 of 7/November/2022, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:11:44.172 of 7/November/2022, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:12:19.071 of 7/November/2022, Monday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
