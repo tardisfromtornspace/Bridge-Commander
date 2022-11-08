@@ -1011,7 +1011,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(FirstPersonCamera)
 #################################################
 AblativeArmour = App.HullProperty_Create("Ablative Armour")
 
-AblativeArmour.SetMaxCondition(10000.000000)
+AblativeArmour.SetMaxCondition(295000.000000)
 AblativeArmour.SetCritical(0)
 AblativeArmour.SetTargetable(1)
 AblativeArmour.SetPrimary(0)
@@ -1019,7 +1019,7 @@ AblativeArmour.SetPosition(0.000000, 0.000000, 0.000000)
 AblativeArmour.SetPosition2D(65.000000, 49.000000)
 AblativeArmour.SetRepairComplexity(0.510000)
 AblativeArmour.SetDisabledPercentage(0.000000)
-AblativeArmour.SetRadius(0.500000)
+AblativeArmour.SetRadius(20.500000)
 App.g_kModelPropertyManager.RegisterLocalTemplate(AblativeArmour)
 #################################################
 VentralPhaser5SArray = App.PhaserProperty_Create("Ventral Phaser 5 SArray")

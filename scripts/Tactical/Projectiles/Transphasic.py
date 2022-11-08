@@ -6,6 +6,8 @@
 ###############################################################################
 
 import App
+import string
+pWeaponLock = {}
 
 ###############################################################################
 #	Create(pTorp)
@@ -17,46 +19,45 @@ import App
 #	Return:	zero
 ###############################################################################
 def Create(pTorp):
-	kCoreColor = App.TGColorA()
-	kCoreColor.SetRGBA(124.0 / 200.0, 180.0 / 255.0, 240.0 / 255.0, 1.000000)
+	
 	kGlowColor = App.TGColorA()
-	kGlowColor.SetRGBA(124.0 / 200.0, 180.0 / 255.0, 240.0 / 255.0, 1.000000)	
-	kFlareColor = App.TGColorA()
-	kFlareColor.SetRGBA(49.0 / 124.0, 114.0 / 175.0, 150.0 / 255.0, 1.000000)
+	kGlowColor.SetRGBA(230.0 / 255.0, 220.0 / 255.0, 78.0 / 255.0, 1.000000)
+	kCoreColor = App.TGColorA()
+	kCoreColor.SetRGBA(230.0 / 255.0, 245.0 / 255.0, 208.0 / 255.0, 1.000000)
 
 	pTorp.CreateTorpedoModel(
-					"data/Textures/Tactical/TorpedoCore.tga",
-					kCoreColor,
-					0.1,
-					1.0,	 
-					"data/Textures/Tactical/ArmVoyX.tga", 
-					kCoreColor,
-					2.0,	
-					0.2,	 
-					0.4,	
 					"data/Textures/Tactical/TorpedoFlares.tga",
-					kFlareColor,										
-					7,		
-					0.1,		
-					0.1)
+					kCoreColor, 
+					0.175,
+					0.93,	 
+					"data/Textures/Tactical/TorpedoGlow.tga", 
+					kGlowColor,
+					2.8,	
+					0.23,	 
+					0.47,	
+					"data/Textures/Tactical/TorpedoCore.tga",
+					kGlowColor,										
+					16,		
+					0.4,		
+					0.20)
 
 	pTorp.SetDamage( GetDamage() )
-	pTorp.SetDamageRadiusFactor(99999999999.50)
+	pTorp.SetDamageRadiusFactor(9999.75)
 	pTorp.SetGuidanceLifetime( GetGuidanceLifetime() )
 	pTorp.SetMaxAngularAccel( GetMaxAngularAccel() )
 
 	# Multiplayer specific stuff.  Please, if you create a new torp
 	# type. modify the SpeciesToTorp.py file to add the new type.
 	import Multiplayer.SpeciesToTorp
-	pTorp.SetNetType (Multiplayer.SpeciesToTorp.QUANTUM)
+	pTorp.SetNetType (Multiplayer.SpeciesToTorp.PHASEDPLASMA)
 
 	return(0)
 
 def GetLaunchSpeed():
-	return(30.0)
+	return(100.0)
 
 def GetLaunchSound():
-	return("Quantum Torpedo")
+	return("Transphasic")
 
 def GetPowerCost():
 	return(90.01)
@@ -65,10 +66,17 @@ def GetName():
 	return("Transphasic")
 
 def GetDamage():
-	return 99991.90
+	return 35000.91
 
 def GetGuidanceLifetime():
-	return 23.0
+	return 6.0
 
 def GetMaxAngularAccel():
-	return 2.0
+	return 0.435
+
+try:
+	modTransphasicTorp = __import__("Custom.Techs.TransphasicTorp")
+	if(modTransphasicTorp):
+		modTransphasicTorp.oTransphasicTorp.AddTorpedo(__name__)
+except:
+	print "Transphasic Torpedo script not installed, or you are missing Foundation Tech"

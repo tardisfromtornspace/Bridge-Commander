@@ -1,13 +1,13 @@
-#This is the dump of the LogCreator: <Gravity Manager LogCreator_c6558VgKj88m>
-#This log file was created on: 23:53:2.0 of 7/November/2022, Monday
+#This is the dump of the LogCreator: <Gravity Manager LogCreator_Q2fM4F7GAT2P>
+#This log file was created on: 0:49:15.0 of 9/November/2022, Wednesday
 ########################################
 ## -------------------- ##
 ####################
-#######>>>23:53:2.0 of 7/November/2022, Monday
-#>>>Initialized GravityManager_eCg4jO2LG4W7 logger
+#######>>>0:49:15.0 of 9/November/2022, Wednesday
+#>>>Initialized GravityManager_8Iy390r4Du35 logger
 ## -------------------- ##
 ####################
-#######>>>23:53:10.880 of 7/November/2022, Monday
+#######>>>0:49:26.237 of 9/November/2022, Wednesday
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
@@ -17,117 +17,36 @@
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_m2314o2W6116>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_vpEaHKXdKd1m>]
 #>>>Planets/Suns List: ['Belaruz 4']
 #>>>Refreshed Ship List: ['Player']
-#>>>Updated radius for grav well <Belaruz 4 GravityWell_m2314o2W6116>, radius is now 1608.16223145
+#>>>Updated radius for grav well <Belaruz 4 GravityWell_vpEaHKXdKd1m>, radius is now 1601.93518066
 ## -------------------- ##
 ####################
-#######>>>23:53:52.886 of 7/November/2022, Monday
+#######>>>0:49:55.058 of 9/November/2022, Wednesday
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_Wxawbis2e0EL>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_5QCFsRduU350>]
 #>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player', 'Orion Dreadnought-1', 'Orion Dreadnought-2']
-#>>>Refreshed Ship List: ['Player', 'Orion Dreadnought-1', 'Orion Dreadnought-2']
-#>>>Refreshed Ship List: ['Player', 'Orion Dreadnought-1', 'Orion Dreadnought-2']
+#>>>Refreshed Ship List: ['Player', 'Kessok Heavy-1', 'Kessok Heavy-2', 'Kessok Heavy-3']
+#>>>Refreshed Ship List: ['Player', 'Kessok Heavy-1', 'Kessok Heavy-2', 'Kessok Heavy-3']
+#>>>Refreshed Ship List: ['Player', 'Kessok Heavy-1', 'Kessok Heavy-2', 'Kessok Heavy-3']
+#>>>Refreshed Ship List: ['Player', 'Kessok Heavy-1', 'Kessok Heavy-2', 'Kessok Heavy-3']
 ## -------------------- ##
 ####################
-#######>>>23:54:4.380 of 7/November/2022, Monday
-#>>>Refreshed Ship List: ['Player', 'Orion Dreadnought-1', 'Orion Dreadnought-2', 'Player_Port Wing', 'Player_Starboard Wing']
-#>>>Refreshed Ship List: ['Player', 'Orion Dreadnought-1', 'Orion Dreadnought-2', 'Player_Port Wing', 'Player_Starboard Wing']
+#######>>>0:50:23.237 of 9/November/2022, Wednesday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_5UyAG34FJQDd>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Kessok Heavy-1', 'Kessok Heavy-2', 'Kessok Heavy-3', 'Player']
 ## -------------------- ##
 ####################
-#######>>>23:54:19.196 of 7/November/2022, Monday
-#>>>Refreshed Ship List: ['Player', 'Orion Dreadnought-2']
-#>>>Refreshed Ship List: ['Player']
+#######>>>0:51:25.603 of 9/November/2022, Wednesday
+#>>>Refreshed Ship List: ['Kessok Heavy-1', 'Kessok Heavy-3', 'Player']
 ## -------------------- ##
 ####################
-#######>>>23:56:27.278 of 7/November/2022, Monday
-#>>>Refreshed Ship List: ['Player']
-## -------------------- ##
-####################
-#######>>>23:58:27.993 of 7/November/2022, Monday
-#>>>Refreshed Ship List: ['Player']
-## -------------------- ##
-####################
-#######>>>23:58:44.576 of 7/November/2022, Monday
-#>>>Refreshed Ship List: ['Player']
-#>>>Refreshed Ship List: ['Player', 'Player_Port Wing', 'Player_Starboard Wing']
-#>>>Refreshed Ship List: ['Player', 'Player_Port Wing', 'Player_Starboard Wing']
-## -------------------- ##
-####################
-#######>>>23:58:50.809 of 7/November/2022, Monday
-#>>>Refreshed Ship List: ['Player', 'Player_Port Wing', 'Player_Starboard Wing']
-#>>>Refreshed Ship List: ['Player', 'Player_Port Wing', 'Player_Starboard Wing']
-## -------------------- ##
-####################
-#######>>>23:58:56.776 of 7/November/2022, Monday
-#>>>Refreshed Ship List: ['Player']
-#>>>Refreshed Ship List: ['Player', 'Player_Port Wing', 'Player_Starboard Wing']
-#>>>Refreshed Ship List: ['Player', 'Player_Port Wing', 'Player_Starboard Wing']
-## -------------------- ##
-####################
-#######>>>23:59:5.660 of 7/November/2022, Monday
-#>>>Refreshed Ship List: ['Player']
-## -------------------- ##
-####################
-#######>>>23:59:10.692 of 7/November/2022, Monday
-#>>>Refreshed Ship List: ['Player']
-#>>>Refreshed Ship List: ['Player', 'Player_Port Wing', 'Player_Starboard Wing']
-#>>>Refreshed Ship List: ['Player', 'Player_Port Wing', 'Player_Starboard Wing']
-## -------------------- ##
-####################
-#######>>>0:0:6.308 of 8/November/2022, Tuesday
-#>>>Refreshed Ship List: ['Player']
-#>>>Refreshed Ship List: ['Player', 'Player_Port Wing', 'Player_Starboard Wing']
-#>>>Refreshed Ship List: ['Player', 'Player_Port Wing', 'Player_Starboard Wing']
-## -------------------- ##
-####################
-#######>>>0:0:13.066 of 8/November/2022, Tuesday
-#>>>Refreshed Ship List: ['Player', 'Player_Port Wing', 'Player_Starboard Wing']
-#>>>Refreshed Ship List: ['Player', 'Player_Port Wing', 'Player_Starboard Wing']
-## -------------------- ##
-####################
-#######>>>0:0:21.291 of 8/November/2022, Tuesday
-#>>>Refreshed Ship List: ['Player']
-#>>>Refreshed Ship List: ['Player', 'Player_Port Wing', 'Player_Starboard Wing']
-#>>>Refreshed Ship List: ['Player', 'Player_Port Wing', 'Player_Starboard Wing']
-## -------------------- ##
-####################
-#######>>>0:2:2.690 of 8/November/2022, Tuesday
-#>>>Refreshed Ship List: ['Player']
-## -------------------- ##
-####################
-#######>>>0:7:52.685 of 8/November/2022, Tuesday
-#>>>Refreshed Ship List: ['Player']
-#>>>Refreshed Ship List: ['Player', 'Player_Port Wing', 'Player_Starboard Wing']
-#>>>Refreshed Ship List: ['Player', 'Player_Port Wing', 'Player_Starboard Wing']
-## -------------------- ##
-####################
-#######>>>0:8:10.267 of 8/November/2022, Tuesday
-#>>>Refreshed Ship List: ['Player']
-#>>>Refreshed Ship List: ['Player', 'Player_Port Wing', 'Player_Starboard Wing']
-#>>>Refreshed Ship List: ['Player', 'Player_Port Wing', 'Player_Starboard Wing']
-## -------------------- ##
-####################
-#######>>>0:8:20.784 of 8/November/2022, Tuesday
-#>>>Refreshed Ship List: ['Player']
-## -------------------- ##
-####################
-#######>>>0:8:41.417 of 8/November/2022, Tuesday
-#>>>Refreshed Ship List: ['Player']
-## -------------------- ##
-####################
-#######>>>0:8:43.567 of 8/November/2022, Tuesday
-#>>>Refreshed Ship List: ['Player', 'Player_Port Wing', 'Player_Starboard Wing']
-#>>>Refreshed Ship List: ['Player', 'Player_Port Wing', 'Player_Starboard Wing']
-## -------------------- ##
-####################
-#######>>>0:8:55.833 of 8/November/2022, Tuesday
-#>>>Refreshed Ship List: ['Player']
-#>>>Refreshed Ship List: ['Player', 'Player_Port Wing', 'Player_Starboard Wing']
-#>>>Refreshed Ship List: ['Player', 'Player_Port Wing', 'Player_Starboard Wing']
+#######>>>0:52:14.112 of 9/November/2022, Wednesday
+#>>>Refreshed Ship List: ['Kessok Heavy-3', 'Player']
 ########################################
-# 0:9:5.850 of 8/November/2022, Tuesday
+# 0:52:16.653 of 9/November/2022, Wednesday
 #Ending of log dump - User is quiting the game
 ########################################

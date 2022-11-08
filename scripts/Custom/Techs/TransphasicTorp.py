@@ -42,7 +42,7 @@ lImmuneTransphasicShips = (
                 "Thant",
                 "VulcanXRT55D",
                 "Wells",
-                "32crossfield",
+                "Windrunner",
                 "32C_crossfield",
                 )
 

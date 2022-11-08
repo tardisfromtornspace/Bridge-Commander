@@ -1,0 +1,844 @@
+#This is the dump of the LogCreator: <Gorn Battleship-5 Travel Logger[2] LogCreator_17ht7Uk92tz1>
+#This log file was created on: 23:55:31.551 of 8/November/2022, Tuesday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>23:55:31.551 of 8/November/2022, Tuesday
+#>>>Initialized Gorn Battleship-5 Travel logger
+#>>>SELF = <Gorn Battleship-5(543840) Travel_764OkXLHTfO1>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Ship is dead or dying
+#>>>Ship is dead or dying (at SetDestination)
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Ship is dead or dying (at SetDestination)
+#>>>Set Exit Placement Name as None
+#>>>Enable Towing: 0
+#>>>Travelling procedures initiated...
+#>>> -Ship is dead or dying
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>23:58:55.730 of 8/November/2022, Tuesday
+#>>>Initialized Gorn Battleship-5 Travel logger
+#>>>SELF = <Gorn Battleship-5(1040191) Travel_QyyCAfsJA14d>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>23:59:3.747 of 8/November/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:59:4.297 of 8/November/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:59:4.414 of 8/November/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:59:4.747 of 8/November/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:59:5.147 of 8/November/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:59:5.781 of 8/November/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:59:6.064 of 8/November/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:59:6.316 of 8/November/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:59:6.531 of 8/November/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:59:6.935 of 8/November/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:59:7.668 of 8/November/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:59:8.352 of 8/November/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:59:23.929 of 8/November/2022, Tuesday
+#>>>Beginning to chase target...
+#>>>Setting Destination...
+#>>> -Destination: Systems.Belaruz.Belaruz2
+#>>> -Travel Type Set: Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: Player Travel Destination OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Is AI in Player in route CHECKING: Player Set = Belaruz4 // self Set = Belaruz4
+#>>> -Is AI in Player in route CHECKING: Player Dest Set = Belaruz2 // self Dest Set = Belaruz2
+#>>> -Is AI in Player Route - Checked
+#>>> -Attribute: Initial Set = Belaruz4
+#>>> -Attribute: Destination Set = Belaruz2
+#>>> -Checked: Ship can warp, travel procedures started.
+#>>> -Speed Check:
+#>>>     -Current:  9.97999954224
+#>>>     -Real Speed:  4388.19091797
+#>>>     -Cruise:  9.98
+#>>>     -Max:  9.99
+#>>>     -Actual Cruise:  9.97999954224
+#>>>     -Actual Max:  9.98999977112
+#>>> -GFX Sequence Set up DONE
+#>>> -Travel Values calculated:
+#>>>   -Time To Reach: 10.8186759949 seconds
+#>>> -Started playing engaging sequence.
+## -------------------- ##
+####################
+#######>>>23:59:30.869 of 8/November/2022, Tuesday
+#>>> -Finishing travelling procedures...
+#>>> -Started Refresher Loop
+#>>> -Travel Set being used: TravelSet
+#>>> -Just changed ship set.
+#>>> -Travelling procedures ended, ship is already travelling.
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 10.59217453 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>23:59:31.170 of 8/November/2022, Tuesday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 10.4912528992 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>23:59:31.284 of 8/November/2022, Tuesday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 10.3738212585 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>23:59:31.813 of 8/November/2022, Tuesday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 9.7400932312 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>23:59:32.163 of 8/November/2022, Tuesday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 9.19068527222 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>23:59:32.718 of 8/November/2022, Tuesday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 8.79108810425 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>23:59:33.146 of 8/November/2022, Tuesday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 8.35721969604 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>23:59:33.530 of 8/November/2022, Tuesday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 7.9412651062 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>23:59:34.079 of 8/November/2022, Tuesday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 7.39106369019 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>23:59:34.579 of 8/November/2022, Tuesday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 6.98499679565 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>23:59:34.929 of 8/November/2022, Tuesday
+#>>>Updating travel values (ship changed speed)
+#>>> -New Speed: 9.99
+#>>> -New time to reach: 2.12405085564 seconds
+#>>> -Finished updating travel values
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 1.47900080681 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>23:59:35.546 of 8/November/2022, Tuesday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 1.11373591423 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>23:59:35.963 of 8/November/2022, Tuesday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 0.695370435715 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>23:59:36.329 of 8/November/2022, Tuesday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 0.130398511887 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>23:59:36.980 of 8/November/2022, Tuesday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: -0.46258854866 seconds
+#>>> -Update Loop MARK COMPLETED, arrived at destination.
+#>>>Drop Out Of Travel Procedures Started:
+#>>> -Is Dropping out: 0
+#>>> -Traveler Systems Location Set
+#>>> -Travel Values are zero
+#>>> -Stopped Refresher...
+#>>> -Impulse Engines status reset
+#>>>Checking Exit Point/Placement and exiting path...
+#>>>Set Exit Placement Name as TravelerWarpPlacement4
+#>>>Set Exit Point to <C TGPoint3 instance at _240a7fe4_p_TGPoint3> // components: X = -5653.02392578,  Y = 348.441864014,  Z = 30.0383815765
+#>>> -Changed ship set to destination: Belaruz2
+#>>> -Sent Arrived Events
+#>>> -Exiting warp Seq played
+#>>> -Clocked Real Time taken to Travel: 6.42346191406 seconds
+#>>>Finished procedures to Drop Out Of Travel.
+## -------------------- ##
+####################
+#######>>>23:59:41.880 of 8/November/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:59:42.397 of 8/November/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:59:42.612 of 8/November/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:59:42.980 of 8/November/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:59:43.779 of 8/November/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:59:44.079 of 8/November/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:59:44.579 of 8/November/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:59:45.029 of 8/November/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:59:45.212 of 8/November/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:59:45.991 of 8/November/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:59:46.429 of 8/November/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:59:46.863 of 8/November/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:59:47.262 of 8/November/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:59:48.113 of 8/November/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:59:48.263 of 8/November/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:59:48.829 of 8/November/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:59:49.012 of 8/November/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:59:49.196 of 8/November/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:59:49.480 of 8/November/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:59:49.771 of 8/November/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:59:50.280 of 8/November/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:59:50.446 of 8/November/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:59:50.796 of 8/November/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:59:51.162 of 8/November/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:59:51.312 of 8/November/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:59:51.779 of 8/November/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:59:52.546 of 8/November/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:59:53.129 of 8/November/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:59:53.430 of 8/November/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:59:53.779 of 8/November/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:59:53.896 of 8/November/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:59:54.079 of 8/November/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:59:54.429 of 8/November/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:59:54.629 of 8/November/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:59:55.296 of 8/November/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:59:55.896 of 8/November/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:59:56.213 of 8/November/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:59:56.429 of 8/November/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:59:56.847 of 8/November/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:59:57.163 of 8/November/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:59:57.629 of 8/November/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:59:57.895 of 8/November/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:59:58.463 of 8/November/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:59:58.996 of 8/November/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:59:59.412 of 8/November/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:0.029 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:0.564 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:1.199 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:1.813 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:2.129 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:2.481 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:3.024 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:3.497 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:3.796 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:4.180 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:4.362 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:4.912 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:5.512 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:5.929 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:6.229 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:6.429 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:7.095 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:7.645 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:8.362 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:8.563 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:9.212 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:9.696 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:9.995 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:10.546 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:11.012 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:11.395 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:11.645 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:12.046 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:12.445 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:12.612 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:13.046 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:13.462 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:13.912 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:14.362 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:14.545 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:14.828 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:15.029 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:15.262 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:15.429 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:15.846 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:16.145 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:16.579 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:17.012 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:17.512 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:17.762 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:18.162 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:18.662 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:19.429 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:19.596 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:20.445 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:20.629 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:20.862 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:21.296 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:21.496 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:21.712 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:22.395 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:22.712 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:23.062 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:23.529 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:23.728 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:24.145 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:24.829 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:25.062 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:25.629 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:25.928 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:26.528 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:26.862 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:27.362 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:27.646 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:27.962 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:28.662 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:29.033 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:29.695 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:30.278 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:30.845 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:31.328 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:31.979 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:32.395 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:32.962 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:33.362 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:33.812 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:34.278 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:34.612 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:34.995 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:35.412 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:36.162 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:36.445 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:36.895 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:37.328 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:38.246 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:38.678 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:39.412 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:0:40.362 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:7:18.541 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:7:23.389 of 9/November/2022, Wednesday
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Enable Towing: 0
+#>>>Travelling procedures initiated...
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Extra path: AI ship warping to None
+#>>> -Checked: Ship can warp, travel procedures started.
+#>>> -Speed Check:
+#>>>     -Current:  9.97999954224
+#>>>     -Real Speed:  4388.19091797
+#>>>     -Cruise:  9.98
+#>>>     -Max:  9.99
+#>>>     -Actual Cruise:  9.97999954224
+#>>>     -Actual Max:  9.98999977112
+#>>> -Started playing engaging sequence.
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 0:7:24.894 of 9/November/2022, Wednesday
+#Ending of log dump - User is quiting the game
+########################################
+########################################
+# 0:7:24.894 of 9/November/2022, Wednesday
+#Ending of log dump - User is quiting the game
+########################################

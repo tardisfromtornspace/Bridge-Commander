@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Player Travel Logger[2] LogCreator_A9VZG0o68wZI>
-#This log file was created on: 23:53:52.886 of 7/November/2022, Monday
+#This is the dump of the LogCreator: <Player Travel Logger[2] LogCreator_Wgi4iWcNW8uW>
+#This log file was created on: 0:49:55.058 of 9/November/2022, Wednesday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,10 +9,10 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>23:53:52.886 of 7/November/2022, Monday
+#######>>>0:49:55.058 of 9/November/2022, Wednesday
 #>>>Initialized Player Travel logger
-#>>>SELF = <Player(60932) Travel_UBB4VNrUDETN>
-#>>>Initial Travel Type: None
+#>>>SELF = <Player(53651) Travel_0x4Jos29XYlK>
+#>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Is Player - Checked
 #>>>Destination set as None
@@ -21,37 +21,31 @@ Updating Travelling Procedures...
 #>>>Chaser base class initialization complete.
 #>>>Target Ship = NONE
 #>>>Chaser pre-emptive Refresher Initialization
-#>>> -Tried to set to a non-existant travel type: None
-< ------------------------------------------- >
-<----------------- EXCEPTION ----------------->
------> ERROR at Update (Chaser)
-Traceback of Error: TypeError: call of non-function (type None)
-Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 2307, in the function "Update".
-Script: ".\Scripts\Custom\GalaxyCharts\HelmAddonGUI.py", Line 93, in the function "CreateTravelTypeButtons".
-Script: ".\Scripts\Custom\GalaxyCharts\HelmAddonGUI.py", Line 118, in the function "UpdateTravelType".
-Script: ".\Scripts\Custom\GalaxyCharts\HelmAddonGUI.py", Line 299, in the function "UpdateEmergencyOutButton".
-Script: ".\Scripts\Custom\GalaxyCharts\HelmAddonGUI.py", Line 245, in the function "CanEmergencyTravelOut".
-Script: ".\Scripts\Custom\GalaxyCharts\HelmAddonGUI.py", Line 288, in the function "CheckBasicPlayerCanTravel".
-<--------------- END EXCEPTION --------------->
-< ------------------------------------------- >
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>23:54:30.696 of 7/November/2022, Monday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:54:31.396 of 7/November/2022, Monday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:54:32.063 of 7/November/2022, Monday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:54:32.579 of 7/November/2022, Monday
-#>>> -Cancelling, too close to target to warp intercept...
-#>>> -Cancelling, too close to target to warp intercept...
+#######>>>0:50:23.237 of 9/November/2022, Wednesday
+#>>>Initialized Player Travel logger
+#>>>SELF = <Player(83550) Travel_nD63q4ixPrs4>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is Player - Checked
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
 ########################################
-# 0:9:5.850 of 8/November/2022, Tuesday
+# 0:52:16.653 of 9/November/2022, Wednesday
+#Ending of log dump - User is quiting the game
+########################################
+########################################
+# 0:52:16.653 of 9/November/2022, Wednesday
 #Ending of log dump - User is quiting the game
 ########################################
