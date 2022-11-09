@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Player Travel Logger[2] LogCreator_l24yHZ16p59v>
-#This log file was created on: 10:36:26.711 of 9/November/2022, Wednesday
+#This is the dump of the LogCreator: <Player Travel Logger[2] LogCreator_Z9Y9k1pj9fwj>
+#This log file was created on: 10:42:50.321 of 9/November/2022, Wednesday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>10:36:26.711 of 9/November/2022, Wednesday
+#######>>>10:42:50.321 of 9/November/2022, Wednesday
 #>>>Initialized Player Travel logger
-#>>>SELF = <Player(53316) Travel_jLi0YZn1STws>
+#>>>SELF = <Player(53538) Travel_Vpgl2Ajm9h68>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Is Player - Checked
@@ -23,34 +23,10 @@ Updating Travelling Procedures...
 #>>>Chaser pre-emptive Refresher Initialization
 ## -------------------- ##
 ####################
-#######>>>10:36:40.050 of 9/November/2022, Wednesday
+#######>>>10:43:34.257 of 9/November/2022, Wednesday
 #>>>Stopping Refresh Handler
 #>>>Deleting...
-< ======== Dynamic TS ========= >
-Updating Travelling Procedures...
- -Update Loop MARK START
-<DTSC> -Time left:
- -Update Loop MARK COMPLETED
-< ========== END DTS ========== >
-## -------------------- ##
-####################
-#######>>>10:36:54.915 of 9/November/2022, Wednesday
-#>>>Initialized Player Travel logger
-#>>>SELF = <Player(86889) Travel_y5e22smxMggu>
-#>>>Initial Travel Type: Warp
-#>>>Updating Variables...
-#>>> -Is Player - Checked
-#>>>Destination set as None
-#>>>Set Exit Placement Name as None
-#>>>Set Exit Point to None
-#>>>Chaser base class initialization complete.
-#>>>Target Ship = NONE
-#>>>Chaser pre-emptive Refresher Initialization
 ########################################
-# 10:37:12.665 of 9/November/2022, Wednesday
-#Ending of log dump - User is quiting the game
-########################################
-########################################
-# 10:37:12.665 of 9/November/2022, Wednesday
+# 10:43:36.056 of 9/November/2022, Wednesday
 #Ending of log dump - User is quiting the game
 ########################################
