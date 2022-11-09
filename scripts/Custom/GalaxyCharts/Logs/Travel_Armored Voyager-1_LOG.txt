@@ -1,0 +1,57 @@
+#This is the dump of the LogCreator: <Armored Voyager-1 Travel Logger LogCreator_S7KWCnR7hFym>
+#This log file was created on: 10:36:26.711 of 9/November/2022, Wednesday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>10:36:26.711 of 9/November/2022, Wednesday
+#>>>Initialized Armored Voyager-1 Travel logger
+#>>>SELF = <Armored Voyager-1(55661) Travel_5RU1268w8VzZ>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>10:36:34.716 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>10:36:34.916 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>10:36:35.416 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>10:36:35.950 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>10:36:36.150 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>10:36:36.516 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>10:36:43.400 of 9/November/2022, Wednesday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 10:37:12.665 of 9/November/2022, Wednesday
+#Ending of log dump - User is quiting the game
+########################################

@@ -55,4 +55,4 @@ def GetGuidanceLifetime():
 	return 12.0
 
 def GetMaxAngularAccel():
-	return 0.8
+	return 1.8

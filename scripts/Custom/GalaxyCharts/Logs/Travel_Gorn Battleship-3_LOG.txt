@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Gorn Battleship-3 Travel Logger LogCreator_jKaYYRB30LJK>
-#This log file was created on: 23:54:5.560 of 8/November/2022, Tuesday
+#This is the dump of the LogCreator: <Gorn Battleship-3 Travel Logger LogCreator_97UbB8P61QRL>
+#This log file was created on: 10:7:14.906 of 9/November/2022, Wednesday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>23:54:5.560 of 8/November/2022, Tuesday
+#######>>>10:7:14.906 of 9/November/2022, Wednesday
 #>>>Initialized Gorn Battleship-3 Travel logger
-#>>>SELF = <Gorn Battleship-3(541862) Travel_XBlM1ZBN1K23>
+#>>>SELF = <Gorn Battleship-3(56629) Travel_hHt3s17sx5YS>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -24,527 +24,125 @@ Updating Travelling Procedures...
 #>>>Updated Target Ship = Player
 ## -------------------- ##
 ####################
-#######>>>23:54:14.817 of 8/November/2022, Tuesday
+#######>>>10:7:22.792 of 9/November/2022, Wednesday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>23:54:15.201 of 8/November/2022, Tuesday
+#######>>>10:7:22.992 of 9/November/2022, Wednesday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>23:54:15.585 of 8/November/2022, Tuesday
+#######>>>10:7:24.142 of 9/November/2022, Wednesday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>23:54:16.018 of 8/November/2022, Tuesday
+#######>>>10:7:24.326 of 9/November/2022, Wednesday
 #>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:54:16.535 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:54:17.002 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:54:17.118 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:54:17.651 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:54:18.052 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:54:18.468 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:54:18.819 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:54:19.568 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:54:20.218 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:54:20.720 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:54:20.987 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:54:21.136 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:54:21.370 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:54:21.803 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:54:22.236 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:54:22.703 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:54:23.054 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:54:23.503 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:54:23.920 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:54:24.220 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:54:24.637 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:54:24.856 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:54:25.529 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:54:25.995 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:54:26.460 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:54:26.570 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:54:26.804 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:54:27.300 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:54:27.763 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:54:27.996 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:54:28.422 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:54:28.899 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:54:29.371 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:54:29.910 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:54:30.142 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:56:38.272 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:56:38.546 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:56:39.123 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:56:39.855 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:56:40.477 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:56:40.916 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:56:41.133 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:56:41.269 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:56:41.737 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:56:41.849 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:56:42.356 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:56:42.994 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:56:43.379 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:56:43.533 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:56:44.042 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:56:44.153 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:56:44.567 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:56:44.917 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:56:45.390 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:56:45.529 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:56:45.733 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:56:46.017 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:56:46.339 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:56:46.451 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:56:46.684 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:56:47.433 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:56:47.583 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:56:47.900 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:56:48.363 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:56:48.917 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:56:49.167 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:56:49.439 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:56:49.683 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:56:50.120 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:56:50.633 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:56:50.738 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:56:51.373 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:56:51.676 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:56:52.023 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:56:52.622 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:56:52.977 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:56:53.357 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:56:53.583 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:56:53.783 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:56:54.200 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:56:54.421 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:56:54.769 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:56:55.336 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:56:55.800 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:56:56.243 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:56:56.367 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:56:56.913 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:56:57.200 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:56:57.744 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:56:58.076 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:56:58.300 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:56:58.687 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:56:59.029 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:56:59.289 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:56:59.571 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:56:59.667 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:57:0.261 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:57:0.590 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:57:1.060 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:57:1.667 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:57:1.789 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:57:2.234 of 8/November/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:57:2.463 of 8/November/2022, Tuesday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>23:57:2.791 of 8/November/2022, Tuesday
+#######>>>10:7:24.726 of 9/November/2022, Wednesday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>23:57:2.942 of 8/November/2022, Tuesday
+#######>>>10:7:24.826 of 9/November/2022, Wednesday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>23:57:3.118 of 8/November/2022, Tuesday
+#######>>>10:7:25.409 of 9/November/2022, Wednesday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>23:57:3.584 of 8/November/2022, Tuesday
+#######>>>10:7:25.526 of 9/November/2022, Wednesday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>23:57:4.054 of 8/November/2022, Tuesday
+#######>>>10:7:25.776 of 9/November/2022, Wednesday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>23:57:4.267 of 8/November/2022, Tuesday
+#######>>>10:7:26.043 of 9/November/2022, Wednesday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>23:57:4.518 of 8/November/2022, Tuesday
+#######>>>10:7:26.543 of 9/November/2022, Wednesday
 #>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:57:4.883 of 8/November/2022, Tuesday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>23:57:5.400 of 8/November/2022, Tuesday
+#######>>>10:7:26.926 of 9/November/2022, Wednesday
 #>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:57:5.650 of 8/November/2022, Tuesday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>23:57:5.934 of 8/November/2022, Tuesday
+#######>>>10:7:27.543 of 9/November/2022, Wednesday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>23:57:6.405 of 8/November/2022, Tuesday
+#######>>>10:7:27.893 of 9/November/2022, Wednesday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>23:57:6.518 of 8/November/2022, Tuesday
+#######>>>10:7:28.126 of 9/November/2022, Wednesday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>23:57:6.850 of 8/November/2022, Tuesday
+#######>>>10:7:28.226 of 9/November/2022, Wednesday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>23:57:7.417 of 8/November/2022, Tuesday
+#######>>>10:7:28.761 of 9/November/2022, Wednesday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>23:57:7.777 of 8/November/2022, Tuesday
+#######>>>10:7:28.993 of 9/November/2022, Wednesday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>23:57:8.217 of 8/November/2022, Tuesday
+#######>>>10:7:29.259 of 9/November/2022, Wednesday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>23:57:8.350 of 8/November/2022, Tuesday
+#######>>>10:7:29.576 of 9/November/2022, Wednesday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>23:57:8.835 of 8/November/2022, Tuesday
+#######>>>10:7:30.143 of 9/November/2022, Wednesday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>23:57:9.017 of 8/November/2022, Tuesday
+#######>>>10:7:30.576 of 9/November/2022, Wednesday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>23:57:9.338 of 8/November/2022, Tuesday
+#######>>>10:7:31.076 of 9/November/2022, Wednesday
 #>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:57:9.466 of 8/November/2022, Tuesday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>23:58:6.299 of 8/November/2022, Tuesday
-#>>>Stopping Refresh Handler
-#>>>Deleting...
+#######>>>10:7:47.426 of 9/November/2022, Wednesday
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Enable Towing: 0
+#>>>Travelling procedures initiated...
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Extra path: AI ship warping to None
+#>>> -Checked: Ship can warp, travel procedures started.
+#>>> -Speed Check:
+#>>>     -Current:  9.97999954224
+#>>>     -Real Speed:  4388.19091797
+#>>>     -Cruise:  9.98
+#>>>     -Max:  9.99
+#>>>     -Actual Cruise:  9.97999954224
+#>>>     -Actual Max:  9.98999977112
+#>>> -Started playing engaging sequence.
+## -------------------- ##
+####################
+#######>>>10:7:54.109 of 9/November/2022, Wednesday
+#>>> -Finishing travelling procedures...
+#>>> -Finished. AI Ship travelling to None.
 ########################################
-# 0:7:24.894 of 9/November/2022, Wednesday
+# 10:11:43.171 of 9/November/2022, Wednesday
 #Ending of log dump - User is quiting the game
 ########################################

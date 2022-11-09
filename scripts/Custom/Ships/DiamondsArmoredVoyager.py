@@ -41,7 +41,8 @@ Foundation.ShipDef.DiamondsArmoredVoyager.dTechs = {
 'Breen Drainer Immune': 1,
 'Multivectral Shields': 30,
 "Phase Cloak": 10,
-"Regenerative Shields": 30
+"Regenerative Shields": 30,
+"Transphasic Torpedo Immune": 1
 }
 Foundation.ShipDef.DiamondsArmoredVoyager.CloakingSFX   = "Phasing_Device"
 Foundation.ShipDef.DiamondsArmoredVoyager.DeCloakingSFX = "Unphasing_Device"

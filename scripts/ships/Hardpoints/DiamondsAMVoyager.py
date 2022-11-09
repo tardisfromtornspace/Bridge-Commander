@@ -67,7 +67,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(SensorArray)
 #################################################
 WarpCore = App.PowerProperty_Create("Warp Core")
 
-WarpCore.SetMaxCondition(5000.000000)
+WarpCore.SetMaxCondition(15000.000000)
 WarpCore.SetCritical(1)
 WarpCore.SetTargetable(1)
 WarpCore.SetPrimary(1)
@@ -1117,7 +1117,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(FirstPersonCamera)
 Bridge = App.HullProperty_Create("Bridge")
 
 Bridge.SetMaxCondition(18000.000000)
-Bridge.SetCritical(1)
+Bridge.SetCritical(0)
 Bridge.SetTargetable(1)
 Bridge.SetPrimary(0)
 Bridge.SetPosition(0.005644, 0.362572, 0.320000)

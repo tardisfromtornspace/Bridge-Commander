@@ -1,0 +1,41 @@
+#This is the dump of the LogCreator: <BorgDiamond-1 Travel Logger LogCreator_MNj7bzNjzFAr>
+#This log file was created on: 1:6:54.097 of 9/November/2022, Wednesday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>1:6:54.097 of 9/November/2022, Wednesday
+#>>>Initialized BorgDiamond-1 Travel logger
+#>>>SELF = <BorgDiamond-1(64689) Travel_94ceHL4cp128>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>1:7:4.472 of 9/November/2022, Wednesday
+#>>>Arrived Events:  added event <C TGEvent instance at _20d103c0_p_TGEvent>
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>1:14:41.832 of 9/November/2022, Wednesday
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>1:15:48.697 of 9/November/2022, Wednesday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 1:20:38.893 of 9/November/2022, Wednesday
+#Ending of log dump - User is quiting the game
+########################################

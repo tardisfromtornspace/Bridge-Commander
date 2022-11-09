@@ -71,7 +71,8 @@ Foundation.ShipDef.DiamondsAMVoyager.dTechs = {
                 "WarpDuration":       150.0,
                 }
         ],
-}
+},
+"Transphasic Torpedo Immune": 1
 }
 #                                                                                     #
 #######################################################################################

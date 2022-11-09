@@ -1,13 +1,13 @@
-#This is the dump of the LogCreator: <Gravity Manager LogCreator_Q2fM4F7GAT2P>
-#This log file was created on: 0:49:15.0 of 9/November/2022, Wednesday
+#This is the dump of the LogCreator: <Gravity Manager LogCreator_3cECBa6TW4au>
+#This log file was created on: 10:35:47.0 of 9/November/2022, Wednesday
 ########################################
 ## -------------------- ##
 ####################
-#######>>>0:49:15.0 of 9/November/2022, Wednesday
-#>>>Initialized GravityManager_8Iy390r4Du35 logger
+#######>>>10:35:47.0 of 9/November/2022, Wednesday
+#>>>Initialized GravityManager_iWFXbutsGU06 logger
 ## -------------------- ##
 ####################
-#######>>>0:49:26.237 of 9/November/2022, Wednesday
+#######>>>10:35:58.490 of 9/November/2022, Wednesday
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
@@ -17,36 +17,35 @@
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_vpEaHKXdKd1m>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_ue369d2eZp8z>]
 #>>>Planets/Suns List: ['Belaruz 4']
 #>>>Refreshed Ship List: ['Player']
-#>>>Updated radius for grav well <Belaruz 4 GravityWell_vpEaHKXdKd1m>, radius is now 1601.93518066
+#>>>Updated radius for grav well <Belaruz 4 GravityWell_ue369d2eZp8z>, radius is now 1607.14660645
 ## -------------------- ##
 ####################
-#######>>>0:49:55.058 of 9/November/2022, Wednesday
+#######>>>10:36:26.711 of 9/November/2022, Wednesday
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_5QCFsRduU350>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_F50F53NIow16>]
 #>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player', 'Kessok Heavy-1', 'Kessok Heavy-2', 'Kessok Heavy-3']
-#>>>Refreshed Ship List: ['Player', 'Kessok Heavy-1', 'Kessok Heavy-2', 'Kessok Heavy-3']
-#>>>Refreshed Ship List: ['Player', 'Kessok Heavy-1', 'Kessok Heavy-2', 'Kessok Heavy-3']
-#>>>Refreshed Ship List: ['Player', 'Kessok Heavy-1', 'Kessok Heavy-2', 'Kessok Heavy-3']
+#>>>Refreshed Ship List: ['Player', 'Armored Voyager-1', 'Armored Voyager-2']
+#>>>Refreshed Ship List: ['Player', 'Armored Voyager-1', 'Armored Voyager-2']
+#>>>Refreshed Ship List: ['Player', 'Armored Voyager-1', 'Armored Voyager-2']
 ## -------------------- ##
 ####################
-#######>>>0:50:23.237 of 9/November/2022, Wednesday
+#######>>>10:36:51.299 of 9/November/2022, Wednesday
+#>>>Refreshed Ship List: ['Player', 'Armored Voyager-1', 'Armored Voyager-2']
+## -------------------- ##
+####################
+#######>>>10:36:54.032 of 9/November/2022, Wednesday
+#>>>Refreshed Ship List: ['Player', 'Armored Voyager-2']
+## -------------------- ##
+####################
+#######>>>10:36:54.915 of 9/November/2022, Wednesday
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_5UyAG34FJQDd>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_QA6X21AixoPi>]
 #>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Kessok Heavy-1', 'Kessok Heavy-2', 'Kessok Heavy-3', 'Player']
-## -------------------- ##
-####################
-#######>>>0:51:25.603 of 9/November/2022, Wednesday
-#>>>Refreshed Ship List: ['Kessok Heavy-1', 'Kessok Heavy-3', 'Player']
-## -------------------- ##
-####################
-#######>>>0:52:14.112 of 9/November/2022, Wednesday
-#>>>Refreshed Ship List: ['Kessok Heavy-3', 'Player']
+#>>>Refreshed Ship List: ['Armored Voyager-2', 'Player']
 ########################################
-# 0:52:16.653 of 9/November/2022, Wednesday
+# 10:37:12.665 of 9/November/2022, Wednesday
 #Ending of log dump - User is quiting the game
 ########################################
