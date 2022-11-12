@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Rhode Island-5 Travel Logger LogCreator_9m54hEdXElpF>
-#This log file was created on: 22:10:35.226 of 5/November/2022, Saturday
+#This is the dump of the LogCreator: <Rhode Island-5 Travel Logger LogCreator_76LH2aqA3qlR>
+#This log file was created on: 15:36:20.313 of 9/November/2022, Wednesday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>22:10:35.226 of 5/November/2022, Saturday
+#######>>>15:36:20.313 of 9/November/2022, Wednesday
 #>>>Initialized Rhode Island-5 Travel logger
-#>>>SELF = <Rhode Island-5(94384) Travel_Uhg1ygedEv3A>
+#>>>SELF = <Rhode Island-5(2928820) Travel_626w2AFA2Bjf>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -21,3 +21,20 @@ Updating Travelling Procedures...
 #>>>Chaser base class initialization complete.
 #>>>Target Ship = NONE
 #>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>15:36:27.467 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>15:36:27.750 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>15:36:28.083 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>15:37:3.837 of 9/November/2022, Wednesday
+#>>>Updated Target Ship = Rhode Island-1

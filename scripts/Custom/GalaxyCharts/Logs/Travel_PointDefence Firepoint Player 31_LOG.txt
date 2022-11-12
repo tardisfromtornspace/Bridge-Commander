@@ -1,0 +1,32 @@
+#This is the dump of the LogCreator: <PointDefence Firepoint Player 31 Travel Logger LogCreator_6mTXgKg9vPdo>
+#This log file was created on: 21:57:17.313 of 11/November/2022, Friday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>21:57:17.313 of 11/November/2022, Friday
+#>>>Initialized PointDefence Firepoint Player 31 Travel logger
+#>>>SELF = <PointDefence Firepoint Player 31(194144) Travel_ZgkJ6RZkCv0r>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>21:57:18.183 of 11/November/2022, Friday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 22:15:57.189 of 11/November/2022, Friday
+#Ending of log dump - User is quiting the game
+########################################

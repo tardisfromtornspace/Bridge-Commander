@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: < Warship-4 Travel Logger LogCreator_NCj2kp22eonO>
-#This log file was created on: 22:50:41.032 of 5/November/2022, Saturday
+#This is the dump of the LogCreator: < Warship-4 Travel Logger LogCreator_Q102a61KDl7e>
+#This log file was created on: 13:17:2.800 of 9/November/2022, Wednesday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>22:50:41.032 of 5/November/2022, Saturday
+#######>>>13:17:2.800 of 9/November/2022, Wednesday
 #>>>Initialized  Warship-4 Travel logger
-#>>>SELF = < Warship-4(385892) Travel_a96cFSIi657W>
+#>>>SELF = < Warship-4(5719854) Travel_MdSMTjpWsir8>
 #>>>Initial Travel Type: None
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -21,8 +21,1087 @@ Updating Travelling Procedures...
 #>>>Chaser base class initialization complete.
 #>>>Target Ship = NONE
 #>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
 ## -------------------- ##
 ####################
-#######>>>22:51:23.074 of 5/November/2022, Saturday
-#>>>Stopping Refresh Handler
-#>>>Deleting...
+#######>>>13:17:12.824 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>13:17:13.791 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>13:17:14.225 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>13:17:14.541 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>13:17:14.841 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>13:17:15.042 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>13:17:15.558 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>13:17:15.909 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>13:17:16.025 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>13:17:16.211 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>13:17:16.642 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>13:17:17.108 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>13:17:17.542 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>13:17:17.878 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>13:17:18.459 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>13:17:18.692 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>13:17:19.025 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>13:17:19.325 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>13:17:19.743 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>13:17:20.242 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>13:17:20.725 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>13:17:21.025 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>13:17:21.310 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>13:17:21.526 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>13:17:21.877 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>13:17:22.492 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>13:17:22.633 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>13:17:23.360 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>13:17:23.897 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>13:17:24.009 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>13:17:24.469 of 9/November/2022, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>13:21:43.344 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>13:21:43.644 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>13:21:44.020 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>13:21:44.653 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>13:21:44.887 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>13:21:45.493 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>13:21:45.986 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>13:21:46.421 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>13:21:46.937 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>13:21:47.470 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>13:21:48.287 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>13:21:49.204 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>13:21:49.570 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>13:21:50.036 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>13:21:50.420 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>13:21:50.970 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>13:21:51.553 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>13:21:52.086 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>13:21:52.603 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>13:21:53.257 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>13:21:54.236 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>13:21:54.586 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>13:21:55.119 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>13:21:55.789 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>13:21:55.994 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>13:21:56.420 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>13:21:57.153 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>13:21:57.394 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:21:57.486 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:21:57.735 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:14.435 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:14.785 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:15.252 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:15.685 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:19.056 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:19.171 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:19.286 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:19.621 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:19.868 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:20.252 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:20.485 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:20.868 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:21.169 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:21.602 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:22.018 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:22.786 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:23.302 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:23.519 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:23.854 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:24.052 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:24.452 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:24.952 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:25.252 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:25.568 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:25.935 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:26.364 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:26.818 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:27.192 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:27.473 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:27.763 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:28.300 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:28.546 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:28.987 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:29.136 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:29.369 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:29.653 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:29.997 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:30.104 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:30.403 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:30.591 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:30.720 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:31.103 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:31.270 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:31.470 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:31.702 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:31.886 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:32.287 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:32.386 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:32.653 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:32.953 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:33.179 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:33.375 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:33.570 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:33.803 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:33.969 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:34.286 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:34.537 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:34.903 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:35.170 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:35.486 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:35.591 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:35.853 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:36.069 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:36.187 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:36.353 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:36.725 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:36.970 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:37.259 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:37.403 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:37.786 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:38.036 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:38.374 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:38.525 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:38.704 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:38.986 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:39.226 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:39.553 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:39.836 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:40.153 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:40.371 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:40.537 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:40.686 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:40.986 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:41.109 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:41.255 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:41.469 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:41.821 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:42.036 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:42.420 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:42.669 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:43.036 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:43.237 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:43.640 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:43.753 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:43.886 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:44.153 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:44.403 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:44.609 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:44.870 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:45.193 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:45.320 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:45.436 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:45.620 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:45.736 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:46.020 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:46.254 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:46.436 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:46.786 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:46.886 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:47.103 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:47.403 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:47.537 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:48.036 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:48.320 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:48.891 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:49.025 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:49.341 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:49.453 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:49.903 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:50.244 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:50.437 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:50.586 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:50.825 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:51.221 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:51.455 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:51.722 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:51.820 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:52.337 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:52.488 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:52.654 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:53.070 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:53.203 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:53.670 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:53.771 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:53.970 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:54.437 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:54.721 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:54.904 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:55.170 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:55.570 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:55.737 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:55.971 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:56.320 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:56.437 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:56.653 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:56.887 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:57.220 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:57.421 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:57.520 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:57.720 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:57.937 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:58.137 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:58.242 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:58.437 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:58.553 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:58.736 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:58.970 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:59.307 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:59.553 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:59.804 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:22:59.920 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:23:0.268 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:23:0.404 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:23:0.641 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:23:0.936 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:23:1.137 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:23:1.509 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:23:1.804 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:23:2.086 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:23:2.387 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:23:2.753 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:23:2.936 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:23:3.387 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:23:3.753 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:23:4.104 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:23:4.420 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:23:4.737 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:23:5.036 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:23:5.303 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:23:5.620 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:23:5.820 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:23:6.403 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:23:6.753 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:23:7.387 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:23:7.720 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:23:8.260 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:23:8.837 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:23:9.665 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:23:10.196 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:23:10.721 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:23:11.082 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:23:11.925 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:23:12.248 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:23:12.450 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:23:12.947 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:23:13.465 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:23:14.317 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:23:14.791 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:23:14.948 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:23:17.439 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:23:17.550 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:23:17.661 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>13:23:21.784 of 9/November/2022, Wednesday
+#>>>Ship is dead or dying (at Chaser Update)

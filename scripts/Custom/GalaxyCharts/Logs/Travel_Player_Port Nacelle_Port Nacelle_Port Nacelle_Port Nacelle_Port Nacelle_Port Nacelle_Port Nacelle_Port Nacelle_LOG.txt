@@ -1,0 +1,23 @@
+#This is the dump of the LogCreator: <Player_Port Nacelle_Port Nacelle_Port Nacelle_Port Nacelle_Port Nacelle_Port Nacelle_Port Nacelle_Port Nacelle Travel Logger LogCreator_c54xOL4y59yC>
+#This log file was created on: 15:5:49.192 of 9/November/2022, Wednesday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>15:5:49.192 of 9/November/2022, Wednesday
+#>>>Initialized Player_Port Nacelle_Port Nacelle_Port Nacelle_Port Nacelle_Port Nacelle_Port Nacelle_Port Nacelle_Port Nacelle Travel logger
+#>>>SELF = <Player_Port Nacelle_Port Nacelle_Port Nacelle_Port Nacelle_Port Nacelle_Port Nacelle_Port Nacelle_Port Nacelle(74652) Travel_kB06NtodX85j>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization

@@ -1,13 +1,13 @@
-#This is the dump of the LogCreator: <Gravity Manager LogCreator_XWz3D06WlJMi>
-#This log file was created on: 10:42:12.0 of 9/November/2022, Wednesday
+#This is the dump of the LogCreator: <Gravity Manager LogCreator_lRStI4XwXv52>
+#This log file was created on: 12:42:56.0 of 12/November/2022, Saturday
 ########################################
 ## -------------------- ##
 ####################
-#######>>>10:42:12.0 of 9/November/2022, Wednesday
-#>>>Initialized GravityManager_w04Tl1v9kdah logger
+#######>>>12:42:56.0 of 12/November/2022, Saturday
+#>>>Initialized GravityManager_3coWVxqzhu8C logger
 ## -------------------- ##
 ####################
-#######>>>10:42:22.085 of 9/November/2022, Wednesday
+#######>>>12:43:6.244 of 12/November/2022, Saturday
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
@@ -17,19 +17,62 @@
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_V51jy07lO2f4>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_jMBra5vMiz0F>]
 #>>>Planets/Suns List: ['Belaruz 4']
 #>>>Refreshed Ship List: ['Player']
-#>>>Updated radius for grav well <Belaruz 4 GravityWell_V51jy07lO2f4>, radius is now 1606.08032227
+#>>>Updated radius for grav well <Belaruz 4 GravityWell_jMBra5vMiz0F>, radius is now 1602.17602539
 ## -------------------- ##
 ####################
-#######>>>10:42:50.321 of 9/November/2022, Wednesday
+#######>>>12:43:47.469 of 12/November/2022, Saturday
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_875cWGcnEVwU>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_d17twscFkkPI>]
 #>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player', 'Armored Voyager-1']
-#>>>Refreshed Ship List: ['Player', 'Armored Voyager-1']
+#>>>Refreshed Ship List: ['Player', 'Enterprise TOS-1', 'Enterprise TOS-2', 'Enterprise TOS-3']
+#>>>Refreshed Ship List: ['Player', 'Enterprise TOS-1', 'Enterprise TOS-2', 'Enterprise TOS-3']
+#>>>Refreshed Ship List: ['Player', 'Enterprise TOS-1', 'Enterprise TOS-2', 'Enterprise TOS-3']
+#>>>Refreshed Ship List: ['Player', 'Enterprise TOS-1', 'Enterprise TOS-2', 'Enterprise TOS-3']
+## -------------------- ##
+####################
+#######>>>12:45:5.077 of 12/November/2022, Saturday
+#>>>Refreshed Ship List: ['Player', 'Enterprise TOS-2', 'Enterprise TOS-3']
+## -------------------- ##
+####################
+#######>>>12:46:56.641 of 12/November/2022, Saturday
+#>>>Refreshed Ship List: ['Player', 'Enterprise TOS-3']
+## -------------------- ##
+####################
+#######>>>12:47:29.815 of 12/November/2022, Saturday
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>12:47:35.340 of 12/November/2022, Saturday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_U774w9pcRm82>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>12:47:51.139 of 12/November/2022, Saturday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_3D5MNHHNyI33>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player', 'Ambassador-1', 'Ambassador-2', 'Ambassador-3']
+#>>>Refreshed Ship List: ['Player', 'Ambassador-1', 'Ambassador-2', 'Ambassador-3']
+#>>>Refreshed Ship List: ['Player', 'Ambassador-1', 'Ambassador-2', 'Ambassador-3']
+#>>>Refreshed Ship List: ['Player', 'Ambassador-1', 'Ambassador-2', 'Ambassador-3']
+## -------------------- ##
+####################
+#######>>>12:48:22.789 of 12/November/2022, Saturday
+#>>>Refreshed Ship List: []
+#>>>Added Player to the Ship List
+## -------------------- ##
+####################
+#######>>>12:48:23.722 of 12/November/2022, Saturday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_31ha6u8WO8a9>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Ambassador-1', 'Ambassador-2', 'Ambassador-3', 'Player']
 ########################################
-# 10:43:36.056 of 9/November/2022, Wednesday
+# 12:48:24.340 of 12/November/2022, Saturday
 #Ending of log dump - User is quiting the game
 ########################################

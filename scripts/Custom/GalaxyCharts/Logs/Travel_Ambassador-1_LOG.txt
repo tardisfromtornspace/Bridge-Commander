@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Ambassador-1 Travel Logger LogCreator_6N347Zf4Afkf>
-#This log file was created on: 23:5:54.584 of 7/November/2022, Monday
+#This is the dump of the LogCreator: <Ambassador-1 Travel Logger LogCreator_4B31R91e6MOz>
+#This log file was created on: 12:47:51.139 of 12/November/2022, Saturday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>23:5:54.584 of 7/November/2022, Monday
+#######>>>12:47:51.139 of 12/November/2022, Saturday
 #>>>Initialized Ambassador-1 Travel logger
-#>>>SELF = <Ambassador-1(66219) Travel_alPA3ig5cXCh>
+#>>>SELF = <Ambassador-1(272928) Travel_uIB3lLrO2WDY>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -24,50 +24,29 @@ Updating Travelling Procedures...
 #>>>Updated Target Ship = Player
 ## -------------------- ##
 ####################
-#######>>>23:6:2.124 of 7/November/2022, Monday
+#######>>>12:47:58.224 of 12/November/2022, Saturday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>23:6:2.390 of 7/November/2022, Monday
+#######>>>12:47:58.806 of 12/November/2022, Saturday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>23:6:2.807 of 7/November/2022, Monday
+#######>>>12:47:59.256 of 12/November/2022, Saturday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>23:6:2.890 of 7/November/2022, Monday
+#######>>>12:47:59.407 of 12/November/2022, Saturday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>23:6:3.207 of 7/November/2022, Monday
+#######>>>12:47:59.790 of 12/November/2022, Saturday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>23:6:3.507 of 7/November/2022, Monday
+#######>>>12:48:0.040 of 12/November/2022, Saturday
 #>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:6:3.824 of 7/November/2022, Monday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:6:3.907 of 7/November/2022, Monday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:6:4.257 of 7/November/2022, Monday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:6:4.757 of 7/November/2022, Monday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:6:5.190 of 7/November/2022, Monday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:6:31.157 of 7/November/2022, Monday
-#>>>Stopping Refresh Handler
-#>>>Deleting...
+########################################
+# 12:48:24.340 of 12/November/2022, Saturday
+#Ending of log dump - User is quiting the game
+########################################

@@ -1,0 +1,27 @@
+#This is the dump of the LogCreator: <PlanetExpress-1 Travel Logger LogCreator_w22Xh0I6oGD5>
+#This log file was created on: 15:52:31.512 of 9/November/2022, Wednesday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>15:52:31.512 of 9/November/2022, Wednesday
+#>>>Initialized PlanetExpress-1 Travel logger
+#>>>SELF = <PlanetExpress-1(54061) Travel_M7npAJ15Xfmh>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+########################################
+# 15:53:11.336 of 9/November/2022, Wednesday
+#Ending of log dump - User is quiting the game
+########################################

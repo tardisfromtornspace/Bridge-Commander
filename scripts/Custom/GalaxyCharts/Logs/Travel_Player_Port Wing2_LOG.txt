@@ -1,0 +1,28 @@
+#This is the dump of the LogCreator: <Player_Port Wing2 Travel Logger LogCreator_79467jRvtV82>
+#This log file was created on: 18:33:8.169 of 9/November/2022, Wednesday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>18:33:8.169 of 9/November/2022, Wednesday
+#>>>Initialized Player_Port Wing2 Travel logger
+#>>>SELF = <Player_Port Wing2(64447) Travel_Js964p5W3i6m>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: Player Travel Destination OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+########################################
+# 18:33:44.800 of 9/November/2022, Wednesday
+#Ending of log dump - User is quiting the game
+########################################

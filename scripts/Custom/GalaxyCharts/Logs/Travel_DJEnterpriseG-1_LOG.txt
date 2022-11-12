@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <DJEnterpriseG-1 Travel Logger LogCreator_o70V4G58tSS9>
-#This log file was created on: 21:49:5.112 of 6/November/2022, Sunday
+#This is the dump of the LogCreator: <DJEnterpriseG-1 Travel Logger LogCreator_1JchH9bb32Op>
+#This log file was created on: 20:48:3.374 of 10/November/2022, Thursday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>21:49:5.112 of 6/November/2022, Sunday
+#######>>>20:48:3.374 of 10/November/2022, Thursday
 #>>>Initialized DJEnterpriseG-1 Travel logger
-#>>>SELF = <DJEnterpriseG-1(73060) Travel_HyD2Vu0NQX1e>
+#>>>SELF = <DJEnterpriseG-1(402960) Travel_hdrft1SXIVZJ>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -21,711 +21,1936 @@ Updating Travelling Procedures...
 #>>>Chaser base class initialization complete.
 #>>>Target Ship = NONE
 #>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>20:48:5.818 of 10/November/2022, Thursday
 #>>>Updated Target Ship = Player
 #>>>Can Chase Target = 0
 #>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>20:48:6.041 of 10/November/2022, Thursday
 #>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>21:49:6.764 of 6/November/2022, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>21:49:6.858 of 6/November/2022, Sunday
-#>>>Ship can't chase, directing to Travel update...
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>21:49:7.008 of 6/November/2022, Sunday
-#>>>Ship can't chase, directing to Travel update...
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>21:49:7.140 of 6/November/2022, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>21:49:7.244 of 6/November/2022, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>21:49:7.358 of 6/November/2022, Sunday
-#>>>Ship can't chase, directing to Travel update...
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>21:49:7.475 of 6/November/2022, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>21:49:7.641 of 6/November/2022, Sunday
-#>>>Ship can't chase, directing to Travel update...
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>21:49:7.761 of 6/November/2022, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>21:49:7.874 of 6/November/2022, Sunday
-#>>>Ship can't chase, directing to Travel update...
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>21:49:7.991 of 6/November/2022, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>21:49:8.141 of 6/November/2022, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>21:49:8.224 of 6/November/2022, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-#>>>Ship can't chase, directing to Travel update...
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>21:49:8.390 of 6/November/2022, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>21:49:8.524 of 6/November/2022, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>21:49:8.674 of 6/November/2022, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>21:49:8.790 of 6/November/2022, Sunday
-#>>>Ship can't chase, directing to Travel update...
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>21:49:8.875 of 6/November/2022, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>21:49:8.992 of 6/November/2022, Sunday
-#>>>Ship can't chase, directing to Travel update...
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>21:49:9.140 of 6/November/2022, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>21:49:9.225 of 6/November/2022, Sunday
 #>>> -Cancelling, too close to target to warp intercept...
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:9.374 of 6/November/2022, Sunday
-#>>>Ship can't chase, directing to Travel update...
+#######>>>20:48:6.359 of 10/November/2022, Thursday
 #>>> -Cancelling, too close to target to warp intercept...
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>20:48:6.823 of 10/November/2022, Thursday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>20:48:7.323 of 10/November/2022, Thursday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>20:48:7.890 of 10/November/2022, Thursday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>20:48:8.239 of 10/November/2022, Thursday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>20:48:8.789 of 10/November/2022, Thursday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>20:48:9.323 of 10/November/2022, Thursday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>20:48:10.089 of 10/November/2022, Thursday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>20:48:10.589 of 10/November/2022, Thursday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>20:48:11.123 of 10/November/2022, Thursday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>20:48:11.623 of 10/November/2022, Thursday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>20:48:12.123 of 10/November/2022, Thursday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>20:48:12.756 of 10/November/2022, Thursday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>20:48:13.123 of 10/November/2022, Thursday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>20:48:13.673 of 10/November/2022, Thursday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>20:48:14.190 of 10/November/2022, Thursday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>20:48:14.723 of 10/November/2022, Thursday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>20:48:15.239 of 10/November/2022, Thursday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>20:48:15.773 of 10/November/2022, Thursday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>20:48:16.389 of 10/November/2022, Thursday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>20:48:16.956 of 10/November/2022, Thursday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>20:48:17.523 of 10/November/2022, Thursday
+#>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:9.507 of 6/November/2022, Sunday
+#######>>>20:48:17.873 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:9.691 of 6/November/2022, Sunday
+#######>>>20:48:18.339 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:9.790 of 6/November/2022, Sunday
+#######>>>20:48:18.790 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:9.857 of 6/November/2022, Sunday
+#######>>>20:48:19.156 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:9.974 of 6/November/2022, Sunday
+#######>>>20:48:19.523 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:10.157 of 6/November/2022, Sunday
+#######>>>20:48:20.040 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:10.274 of 6/November/2022, Sunday
+#######>>>20:48:20.539 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:10.390 of 6/November/2022, Sunday
+#######>>>20:48:20.924 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:10.507 of 6/November/2022, Sunday
+#######>>>20:48:21.323 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:10.657 of 6/November/2022, Sunday
+#######>>>20:48:21.739 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:10.790 of 6/November/2022, Sunday
+#######>>>20:48:22.173 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:10.858 of 6/November/2022, Sunday
+#######>>>20:48:22.673 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:10.974 of 6/November/2022, Sunday
+#######>>>20:48:23.140 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:11.206 of 6/November/2022, Sunday
+#######>>>20:48:23.473 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:11.258 of 6/November/2022, Sunday
+#######>>>20:48:24.106 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:11.374 of 6/November/2022, Sunday
+#######>>>20:48:24.273 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:11.490 of 6/November/2022, Sunday
+#######>>>20:48:24.740 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:11.640 of 6/November/2022, Sunday
+#######>>>20:48:25.273 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:11.790 of 6/November/2022, Sunday
+#######>>>20:48:25.706 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:11.890 of 6/November/2022, Sunday
+#######>>>20:48:26.139 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:12.024 of 6/November/2022, Sunday
+#######>>>20:48:26.439 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:12.191 of 6/November/2022, Sunday
+#######>>>20:48:26.823 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:12.257 of 6/November/2022, Sunday
+#######>>>20:48:27.107 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:12.374 of 6/November/2022, Sunday
+#######>>>20:48:27.439 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:12.490 of 6/November/2022, Sunday
+#######>>>20:48:27.889 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:12.657 of 6/November/2022, Sunday
+#######>>>20:48:28.356 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:12.775 of 6/November/2022, Sunday
+#######>>>20:48:28.689 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:12.890 of 6/November/2022, Sunday
+#######>>>20:48:29.007 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:13.007 of 6/November/2022, Sunday
+#######>>>20:48:29.307 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:13.140 of 6/November/2022, Sunday
+#######>>>20:48:29.739 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:13.241 of 6/November/2022, Sunday
+#######>>>20:48:29.923 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:13.360 of 6/November/2022, Sunday
+#######>>>20:48:30.123 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:13.474 of 6/November/2022, Sunday
+#######>>>20:48:30.240 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:13.657 of 6/November/2022, Sunday
+#######>>>20:48:30.423 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:13.824 of 6/November/2022, Sunday
+#######>>>20:48:30.589 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:13.940 of 6/November/2022, Sunday
+#######>>>20:48:30.740 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:14.057 of 6/November/2022, Sunday
+#######>>>20:48:31.023 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:14.157 of 6/November/2022, Sunday
+#######>>>20:48:31.174 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:14.407 of 6/November/2022, Sunday
+#######>>>20:48:31.339 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:14.591 of 6/November/2022, Sunday
+#######>>>20:48:31.556 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:14.774 of 6/November/2022, Sunday
+#######>>>20:48:31.740 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:14.857 of 6/November/2022, Sunday
+#######>>>20:48:31.989 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:14.974 of 6/November/2022, Sunday
+#######>>>20:48:32.239 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:15.107 of 6/November/2022, Sunday
+#######>>>20:48:32.523 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:15.290 of 6/November/2022, Sunday
+#######>>>20:48:32.789 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:15.374 of 6/November/2022, Sunday
+#######>>>20:48:33.023 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:15.474 of 6/November/2022, Sunday
+#######>>>20:48:33.523 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:15.640 of 6/November/2022, Sunday
+#######>>>20:48:33.873 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:15.808 of 6/November/2022, Sunday
+#######>>>20:48:33.989 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:15.977 of 6/November/2022, Sunday
+#######>>>20:48:34.439 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:16.180 of 6/November/2022, Sunday
+#######>>>20:48:34.756 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:16.258 of 6/November/2022, Sunday
+#######>>>20:48:35.189 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:16.410 of 6/November/2022, Sunday
+#######>>>20:48:35.523 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:16.475 of 6/November/2022, Sunday
+#######>>>20:48:35.857 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:16.607 of 6/November/2022, Sunday
+#######>>>20:48:36.189 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:16.741 of 6/November/2022, Sunday
+#######>>>20:48:36.639 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:16.844 of 6/November/2022, Sunday
+#######>>>20:48:37.023 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:16.991 of 6/November/2022, Sunday
+#######>>>20:48:37.439 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:17.093 of 6/November/2022, Sunday
+#######>>>20:48:37.623 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:17.274 of 6/November/2022, Sunday
+#######>>>20:48:37.906 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:17.407 of 6/November/2022, Sunday
+#######>>>20:48:38.089 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:17.541 of 6/November/2022, Sunday
+#######>>>20:48:38.389 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:17.657 of 6/November/2022, Sunday
+#######>>>20:48:38.873 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:17.824 of 6/November/2022, Sunday
+#######>>>20:48:39.156 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:17.940 of 6/November/2022, Sunday
+#######>>>20:48:39.573 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:18.124 of 6/November/2022, Sunday
+#######>>>20:48:39.939 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:18.240 of 6/November/2022, Sunday
+#######>>>20:48:40.373 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:18.357 of 6/November/2022, Sunday
+#######>>>20:48:40.656 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:18.473 of 6/November/2022, Sunday
+#######>>>20:48:40.973 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:18.657 of 6/November/2022, Sunday
+#######>>>20:48:41.289 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:18.919 of 6/November/2022, Sunday
+#######>>>20:48:41.539 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:18.976 of 6/November/2022, Sunday
+#######>>>20:48:41.789 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:19.157 of 6/November/2022, Sunday
+#######>>>20:48:42.139 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:19.258 of 6/November/2022, Sunday
+#######>>>20:48:42.473 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:19.408 of 6/November/2022, Sunday
+#######>>>20:48:42.906 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:19.494 of 6/November/2022, Sunday
+#######>>>20:48:43.256 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:19.624 of 6/November/2022, Sunday
+#######>>>20:48:43.674 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:19.757 of 6/November/2022, Sunday
+#######>>>20:48:44.189 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:19.912 of 6/November/2022, Sunday
+#######>>>20:48:44.589 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:19.979 of 6/November/2022, Sunday
+#######>>>20:48:45.123 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:20.092 of 6/November/2022, Sunday
+#######>>>20:48:45.256 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:20.267 of 6/November/2022, Sunday
+#######>>>20:48:45.689 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:20.407 of 6/November/2022, Sunday
+#######>>>20:48:45.975 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:20.474 of 6/November/2022, Sunday
+#######>>>20:48:46.127 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:20.600 of 6/November/2022, Sunday
+#######>>>20:48:46.373 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:20.746 of 6/November/2022, Sunday
+#######>>>20:48:46.772 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:20.859 of 6/November/2022, Sunday
+#######>>>20:48:47.256 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:20.974 of 6/November/2022, Sunday
+#######>>>20:48:47.622 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:21.108 of 6/November/2022, Sunday
+#######>>>20:48:48.056 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:21.324 of 6/November/2022, Sunday
+#######>>>20:48:48.389 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:21.410 of 6/November/2022, Sunday
+#######>>>20:48:48.892 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:21.558 of 6/November/2022, Sunday
+#######>>>20:48:49.289 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:21.647 of 6/November/2022, Sunday
+#######>>>20:48:49.639 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:21.773 of 6/November/2022, Sunday
+#######>>>20:48:50.239 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:21.912 of 6/November/2022, Sunday
+#######>>>20:48:50.672 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:22.050 of 6/November/2022, Sunday
+#######>>>20:48:51.256 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:22.174 of 6/November/2022, Sunday
+#######>>>20:48:51.773 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:22.311 of 6/November/2022, Sunday
+#######>>>20:48:52.322 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:22.460 of 6/November/2022, Sunday
+#######>>>20:48:53.023 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:22.563 of 6/November/2022, Sunday
+#######>>>20:48:53.739 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:22.707 of 6/November/2022, Sunday
+#######>>>20:48:54.322 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:22.807 of 6/November/2022, Sunday
+#######>>>20:48:54.856 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:22.926 of 6/November/2022, Sunday
+#######>>>20:48:55.389 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:23.007 of 6/November/2022, Sunday
+#######>>>20:48:55.922 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:23.157 of 6/November/2022, Sunday
+#######>>>20:48:56.572 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:23.277 of 6/November/2022, Sunday
+#######>>>20:48:57.239 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:23.507 of 6/November/2022, Sunday
+#######>>>20:48:57.772 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:23.654 of 6/November/2022, Sunday
+#######>>>20:48:58.406 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:23.750 of 6/November/2022, Sunday
+#######>>>20:48:58.956 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:23.886 of 6/November/2022, Sunday
+#######>>>20:48:59.739 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:24.016 of 6/November/2022, Sunday
+#######>>>20:49:0.123 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:24.146 of 6/November/2022, Sunday
+#######>>>20:49:0.655 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:24.280 of 6/November/2022, Sunday
+#######>>>20:49:1.723 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:24.359 of 6/November/2022, Sunday
+#######>>>20:49:2.188 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:24.499 of 6/November/2022, Sunday
+#######>>>20:49:2.872 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:24.651 of 6/November/2022, Sunday
+#######>>>20:49:3.489 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:24.762 of 6/November/2022, Sunday
+#######>>>20:49:4.089 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:24.877 of 6/November/2022, Sunday
+#######>>>20:49:4.622 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:25.007 of 6/November/2022, Sunday
+#######>>>20:49:5.273 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:25.098 of 6/November/2022, Sunday
+#######>>>20:49:5.639 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:25.224 of 6/November/2022, Sunday
+#######>>>20:49:6.156 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:25.442 of 6/November/2022, Sunday
+#######>>>20:49:6.639 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:25.574 of 6/November/2022, Sunday
+#######>>>20:49:7.022 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:25.679 of 6/November/2022, Sunday
+#######>>>20:49:7.572 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:25.790 of 6/November/2022, Sunday
+#######>>>20:49:8.055 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:25.896 of 6/November/2022, Sunday
+#######>>>20:49:8.555 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:26.062 of 6/November/2022, Sunday
+#######>>>20:49:9.105 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:26.174 of 6/November/2022, Sunday
+#######>>>20:49:9.539 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:26.310 of 6/November/2022, Sunday
+#######>>>20:49:10.090 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:26.444 of 6/November/2022, Sunday
+#######>>>20:49:10.472 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:26.542 of 6/November/2022, Sunday
+#######>>>20:49:11.205 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:26.641 of 6/November/2022, Sunday
+#######>>>20:49:11.755 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:26.794 of 6/November/2022, Sunday
+#######>>>20:49:12.189 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:26.941 of 6/November/2022, Sunday
+#######>>>20:49:12.622 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:27.006 of 6/November/2022, Sunday
+#######>>>20:49:13.189 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:27.190 of 6/November/2022, Sunday
+#######>>>20:49:13.788 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:27.308 of 6/November/2022, Sunday
+#######>>>20:49:14.205 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:27.506 of 6/November/2022, Sunday
+#######>>>20:49:14.705 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:27.607 of 6/November/2022, Sunday
+#######>>>20:49:15.455 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:27.756 of 6/November/2022, Sunday
+#######>>>20:49:15.956 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:27.923 of 6/November/2022, Sunday
+#######>>>20:49:16.705 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:28.074 of 6/November/2022, Sunday
+#######>>>20:49:17.239 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:28.124 of 6/November/2022, Sunday
+#######>>>20:49:17.872 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:28.241 of 6/November/2022, Sunday
+#######>>>20:49:18.489 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:28.358 of 6/November/2022, Sunday
+#######>>>20:49:19.273 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:28.506 of 6/November/2022, Sunday
+#######>>>20:49:19.707 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:28.657 of 6/November/2022, Sunday
+#######>>>20:49:20.305 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:28.774 of 6/November/2022, Sunday
+#######>>>20:49:20.972 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>21:49:28.941 of 6/November/2022, Sunday
+#######>>>20:49:21.522 of 10/November/2022, Thursday
 #>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>20:49:22.056 of 10/November/2022, Thursday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>20:49:22.522 of 10/November/2022, Thursday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>20:49:23.222 of 10/November/2022, Thursday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>20:49:23.939 of 10/November/2022, Thursday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>20:49:24.355 of 10/November/2022, Thursday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>20:49:24.906 of 10/November/2022, Thursday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>20:49:25.489 of 10/November/2022, Thursday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>20:50:44.205 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>20:50:44.406 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>20:50:44.691 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>20:50:44.943 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>20:50:45.174 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>20:50:45.388 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>20:50:45.705 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>20:50:46.055 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>20:50:46.437 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>20:50:46.921 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>20:50:47.571 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>20:50:48.087 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>20:50:48.721 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>20:50:49.204 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>20:50:49.738 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>20:50:50.321 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>20:50:50.838 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>20:50:51.454 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>20:50:52.004 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>20:50:52.737 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>20:50:53.271 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>20:50:53.737 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>20:50:54.338 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>20:50:54.741 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>20:50:55.404 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>20:50:55.787 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>20:50:56.487 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>20:50:56.954 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>20:50:57.387 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>20:50:58.137 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:51:33.487 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:51:34.587 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:51:35.187 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:51:35.753 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:51:36.970 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:51:37.120 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:51:37.720 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:51:38.654 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:51:39.270 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:51:39.987 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:51:40.637 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:51:41.325 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:51:41.687 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:51:42.153 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:51:42.737 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:51:43.287 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:51:43.870 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:51:44.337 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:51:44.937 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:51:45.522 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:51:45.942 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:51:46.287 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:51:46.854 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:51:47.353 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:51:47.871 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:51:48.454 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:51:48.987 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:51:49.537 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:51:50.104 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:51:50.670 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:51:51.054 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:51:51.371 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:51:51.638 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:51:51.891 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:51:52.028 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:51:52.359 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:51:52.461 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:51:52.605 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:51:52.805 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:51:52.972 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:51:53.111 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:51:53.305 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:51:53.424 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:51:53.537 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:51:53.758 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:51:54.090 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:51:54.492 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:51:54.747 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:51:55.297 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:51:55.720 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:51:56.295 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:51:56.833 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:51:57.306 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:51:58.060 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:51:58.906 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:51:59.653 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:0.287 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:1.036 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:2.220 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:3.037 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:3.870 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:4.487 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:5.103 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:5.636 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:6.203 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:6.804 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:7.370 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:7.903 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:8.570 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:9.237 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:9.820 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:10.520 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:11.136 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:11.853 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:12.470 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:13.053 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:13.803 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:14.470 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:15.220 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:15.837 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:16.621 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:17.087 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:17.754 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:18.238 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:18.720 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:19.154 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:19.690 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:20.375 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:20.805 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:21.258 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:21.636 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:22.238 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:22.742 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:23.170 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:23.771 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:24.319 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:30.553 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:31.136 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:31.886 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:32.420 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:32.969 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:33.653 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:34.436 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:35.103 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:35.786 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:36.319 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:36.920 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:37.453 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:37.936 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:38.619 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:39.136 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:39.769 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:40.437 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:41.069 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:41.603 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:42.269 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:42.953 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:43.569 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:44.119 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:44.820 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:45.353 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:46.243 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:46.769 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:47.486 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:48.169 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:48.786 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:49.336 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:50.103 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:50.836 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:51.586 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:52.269 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:52.936 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:53.603 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:54.336 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:54.987 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:55.669 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:56.286 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:57.136 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:57.669 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:58.303 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:58.753 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:59.369 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:52:59.853 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:0.453 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:1.253 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:1.886 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:2.686 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:3.337 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:3.852 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:4.369 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:4.903 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:5.436 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:6.169 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:6.823 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:7.302 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:7.935 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:8.536 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:9.369 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:9.985 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:10.702 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:11.202 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:11.786 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:12.352 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:13.002 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:13.585 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:14.069 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:14.685 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:15.302 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:16.036 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:16.719 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:17.353 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:17.819 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:18.385 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:18.902 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:19.352 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:19.819 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:20.302 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:20.702 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:21.102 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:21.686 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:22.186 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:22.636 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:23.202 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:23.772 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:24.422 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:24.886 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:25.336 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:25.686 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:26.203 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:26.652 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:27.136 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:27.686 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:28.269 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:28.719 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:29.219 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:29.669 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:30.135 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:30.459 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:30.773 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:31.025 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:31.269 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:31.555 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:31.872 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:32.285 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:32.619 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:33.053 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:33.325 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:33.699 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:33.853 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:33.960 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:34.103 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:34.289 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:34.535 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:35.102 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:35.735 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:36.352 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:37.052 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:37.652 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:38.268 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:38.802 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:39.502 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:40.218 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:40.768 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:41.518 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:42.302 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:42.868 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:43.469 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:43.919 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:44.618 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:45.635 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:46.435 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:46.885 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:47.902 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:48.354 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:48.751 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:50.018 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:50.135 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:50.636 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:51.486 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:52.351 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:52.951 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:53.585 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:54.368 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:55.118 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:55.868 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:56.618 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:57.219 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:57.902 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:58.735 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:53:59.418 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:54:0.269 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:54:1.119 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:54:1.902 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:54:2.651 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:54:3.218 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:54:4.052 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:54:4.735 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:54:5.385 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:54:6.168 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:54:6.751 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>20:54:7.535 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>21:49:29.040 of 6/November/2022, Sunday
-#>>>Stopping Refresh Handler
-#>>>Deleting...
+#######>>>20:54:8.435 of 10/November/2022, Thursday
+#>>>Ship is dead or dying (at Chaser Update)
 ########################################
-# 22:3:9.911 of 6/November/2022, Sunday
+# 20:54:9.104 of 10/November/2022, Thursday
 #Ending of log dump - User is quiting the game
 ########################################

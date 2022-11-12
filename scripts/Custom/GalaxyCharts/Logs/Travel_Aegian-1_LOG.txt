@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Aegian-1 Travel Logger LogCreator_425jLwE5Z1ep>
-#This log file was created on: 3:11:7.252 of 6/November/2022, Sunday
+#This is the dump of the LogCreator: <Aegian-1 Travel Logger LogCreator_RdDWnCY3cmhF>
+#This log file was created on: 18:11:38.237 of 9/November/2022, Wednesday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>3:11:7.252 of 6/November/2022, Sunday
+#######>>>18:11:38.237 of 9/November/2022, Wednesday
 #>>>Initialized Aegian-1 Travel logger
-#>>>SELF = <Aegian-1(82664) Travel_r04eTM5Sd2DH>
+#>>>SELF = <Aegian-1(55644) Travel_GCicb7XUS6Vm>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -21,8 +21,7 @@ Updating Travelling Procedures...
 #>>>Chaser base class initialization complete.
 #>>>Target Ship = NONE
 #>>>Chaser pre-emptive Refresher Initialization
-## -------------------- ##
-####################
-#######>>>3:11:31.539 of 6/November/2022, Sunday
-#>>>Stopping Refresh Handler
-#>>>Deleting...
+########################################
+# 18:16:53.027 of 9/November/2022, Wednesday
+#Ending of log dump - User is quiting the game
+########################################
