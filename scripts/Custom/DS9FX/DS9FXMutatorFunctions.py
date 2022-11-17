@@ -193,10 +193,10 @@ def HandleNoDamageThroughShields(param, pObject, pEvent):
 			except:
 				isthisPhased = 0
 		if isthisPhased == 0:
-			print "Not phased, I'll protect it"
+			#print "Not phased, I'll protect it"
                 	HandleShields.WeaponHit(pObject, pEvent)
-		else:
-			print "So I am phased I guess"
+		#else:
+			#print "So I am phased I guess"
 
 def HandleLifeSupportNewShip(pObject, pEvent):
         reload (DS9FXSavedConfig)

@@ -1,13 +1,13 @@
-#This is the dump of the LogCreator: <Gravity Manager LogCreator_kbLO8JT7mlcz>
-#This log file was created on: 17:32:18.0 of 17/November/2022, Thursday
+#This is the dump of the LogCreator: <Gravity Manager LogCreator_91DK98E1T1fO>
+#This log file was created on: 21:45:55.0 of 17/November/2022, Thursday
 ########################################
 ## -------------------- ##
 ####################
-#######>>>17:32:18.0 of 17/November/2022, Thursday
-#>>>Initialized GravityManager_j4Q13YY3tR45 logger
+#######>>>21:45:55.0 of 17/November/2022, Thursday
+#>>>Initialized GravityManager_RA4KrWO96806 logger
 ## -------------------- ##
 ####################
-#######>>>17:32:26.464 of 17/November/2022, Thursday
+#######>>>21:46:28.745 of 17/November/2022, Thursday
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
@@ -17,105 +17,64 @@
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_C7R5oeP7As50>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_7PXkR7fUVCTp>]
 #>>>Planets/Suns List: ['Belaruz 4']
 #>>>Refreshed Ship List: ['Player']
-#>>>Updated radius for grav well <Belaruz 4 GravityWell_C7R5oeP7As50>, radius is now 1607.04040527
+#>>>Updated radius for grav well <Belaruz 4 GravityWell_7PXkR7fUVCTp>, radius is now 1610.37194824
 ## -------------------- ##
 ####################
-#######>>>17:33:1.663 of 17/November/2022, Thursday
+#######>>>21:47:2.377 of 17/November/2022, Thursday
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_c6P36rkiP3lE>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player', 'Hirogen Hunter-1', 'Hirogen Hunter-2', 'Hirogen Hunter-3', 'Hirogen Hunter-4', 'Hirogen Hunter-5', 'Hirogen Hunter-6', 'Hirogen Hunter-7', 'Hirogen Hunter-8']
-#>>>Refreshed Ship List: ['Player', 'Hirogen Hunter-1', 'Hirogen Hunter-2', 'Hirogen Hunter-3', 'Hirogen Hunter-4', 'Hirogen Hunter-5', 'Hirogen Hunter-6', 'Hirogen Hunter-7', 'Hirogen Hunter-8']
-#>>>Refreshed Ship List: ['Player', 'Hirogen Hunter-1', 'Hirogen Hunter-2', 'Hirogen Hunter-3', 'Hirogen Hunter-4', 'Hirogen Hunter-5', 'Hirogen Hunter-6', 'Hirogen Hunter-7', 'Hirogen Hunter-8']
-#>>>Refreshed Ship List: ['Player', 'Hirogen Hunter-1', 'Hirogen Hunter-2', 'Hirogen Hunter-3', 'Hirogen Hunter-4', 'Hirogen Hunter-5', 'Hirogen Hunter-6', 'Hirogen Hunter-7', 'Hirogen Hunter-8']
-#>>>Refreshed Ship List: ['Player', 'Hirogen Hunter-1', 'Hirogen Hunter-2', 'Hirogen Hunter-3', 'Hirogen Hunter-4', 'Hirogen Hunter-5', 'Hirogen Hunter-6', 'Hirogen Hunter-7', 'Hirogen Hunter-8']
-#>>>Refreshed Ship List: ['Player', 'Hirogen Hunter-1', 'Hirogen Hunter-2', 'Hirogen Hunter-3', 'Hirogen Hunter-4', 'Hirogen Hunter-5', 'Hirogen Hunter-6', 'Hirogen Hunter-7', 'Hirogen Hunter-8']
-#>>>Refreshed Ship List: ['Player', 'Hirogen Hunter-1', 'Hirogen Hunter-2', 'Hirogen Hunter-3', 'Hirogen Hunter-4', 'Hirogen Hunter-5', 'Hirogen Hunter-6', 'Hirogen Hunter-7', 'Hirogen Hunter-8']
-#>>>Refreshed Ship List: ['Player', 'Hirogen Hunter-1', 'Hirogen Hunter-2', 'Hirogen Hunter-3', 'Hirogen Hunter-4', 'Hirogen Hunter-5', 'Hirogen Hunter-6', 'Hirogen Hunter-7', 'Hirogen Hunter-8']
-#>>>Refreshed Ship List: ['Player', 'Hirogen Hunter-1', 'Hirogen Hunter-2', 'Hirogen Hunter-3', 'Hirogen Hunter-4', 'Hirogen Hunter-5', 'Hirogen Hunter-6', 'Hirogen Hunter-7', 'Hirogen Hunter-8']
-## -------------------- ##
-####################
-#######>>>17:38:18.775 of 17/November/2022, Thursday
-#>>>Refreshed Ship List: ['Player', 'Hirogen Hunter-2', 'Hirogen Hunter-3', 'Hirogen Hunter-4', 'Hirogen Hunter-5', 'Hirogen Hunter-6', 'Hirogen Hunter-7', 'Hirogen Hunter-8']
-## -------------------- ##
-####################
-#######>>>17:39:10.091 of 17/November/2022, Thursday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_eF61oNKZ7z9B>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Hirogen Hunter-2', 'Hirogen Hunter-3', 'Hirogen Hunter-4', 'Hirogen Hunter-5', 'Hirogen Hunter-6', 'Hirogen Hunter-7', 'Hirogen Hunter-8', 'Player']
-## -------------------- ##
-####################
-#######>>>17:39:22.673 of 17/November/2022, Thursday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_yW2EFMaZq3wN>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player', 'Hirogen Hunter-1', 'Hirogen Hunter-2', 'AM Voyager-3']
-#>>>Refreshed Ship List: ['Player', 'Hirogen Hunter-1', 'Hirogen Hunter-2', 'AM Voyager-3']
-#>>>Refreshed Ship List: ['Player', 'Hirogen Hunter-1', 'Hirogen Hunter-2', 'AM Voyager-3']
-#>>>Refreshed Ship List: ['Player', 'Hirogen Hunter-1', 'Hirogen Hunter-2', 'AM Voyager-3']
-## -------------------- ##
-####################
-#######>>>17:41:32.655 of 17/November/2022, Thursday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_eh39llJ7w84R>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Hirogen Hunter-1', 'Hirogen Hunter-2', 'AM Voyager-3', 'Player']
-## -------------------- ##
-####################
-#######>>>17:41:54.956 of 17/November/2022, Thursday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_uFUd2zPT4Rms>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_Ks1HA50i8dgI>]
 #>>>Planets/Suns List: ['Belaruz 4']
 #>>>Refreshed Ship List: ['Player', 'U.S.S. Voyager J-1']
 #>>>Refreshed Ship List: ['Player', 'U.S.S. Voyager J-1']
 ## -------------------- ##
 ####################
-#######>>>17:42:22.856 of 17/November/2022, Thursday
+#######>>>21:49:53.225 of 17/November/2022, Thursday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_YB85c45wTeOX>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>21:49:55.826 of 17/November/2022, Thursday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_X9nuMZLjPq5F>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>21:49:57.943 of 17/November/2022, Thursday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_V8HZJ9H4FkFI>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Voyager J-1']
 #>>>Refreshed Ship List: ['Player', 'U.S.S. Voyager J-1']
 ## -------------------- ##
 ####################
-#######>>>17:42:23.454 of 17/November/2022, Thursday
+#######>>>21:50:26.492 of 17/November/2022, Thursday
+#>>>Refreshed Ship List: []
+#>>>Added Player to the Ship List
+## -------------------- ##
+####################
+#######>>>21:50:27.367 of 17/November/2022, Thursday
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_iK0P9e86sxzZ>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_B0K9ojIc44Oa>]
 #>>>Planets/Suns List: ['Belaruz 4']
 #>>>Refreshed Ship List: ['U.S.S. Voyager J-1', 'Player']
 ## -------------------- ##
 ####################
-#######>>>17:42:46.436 of 17/November/2022, Thursday
+#######>>>21:50:53.742 of 17/November/2022, Thursday
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_78Mf0S7I1s2t>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_G8U4fagpm8KF>]
 #>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player', ' Warship-1', ' Warship-2', ' Warship-3', ' Warship-4', ' Warship-5']
-#>>>Refreshed Ship List: ['Player', ' Warship-1', ' Warship-2', ' Warship-3', ' Warship-4', ' Warship-5']
-#>>>Refreshed Ship List: ['Player', ' Warship-1', ' Warship-2', ' Warship-3', ' Warship-4', ' Warship-5']
-#>>>Refreshed Ship List: ['Player', ' Warship-1', ' Warship-2', ' Warship-3', ' Warship-4', ' Warship-5']
-#>>>Refreshed Ship List: ['Player', ' Warship-1', ' Warship-2', ' Warship-3', ' Warship-4', ' Warship-5']
-#>>>Refreshed Ship List: ['Player', ' Warship-1', ' Warship-2', ' Warship-3', ' Warship-4', ' Warship-5']
-## -------------------- ##
-####################
-#######>>>17:45:37.586 of 17/November/2022, Thursday
-#>>>Refreshed Ship List: ['Player', ' Warship-1', ' Warship-2', ' Warship-3', ' Warship-4']
-## -------------------- ##
-####################
-#######>>>17:45:44.353 of 17/November/2022, Thursday
-#>>>Refreshed Ship List: ['Player', ' Warship-1', ' Warship-2', ' Warship-4']
-## -------------------- ##
-####################
-#######>>>17:45:58.104 of 17/November/2022, Thursday
-#>>>Refreshed Ship List: ['Player', ' Warship-1', ' Warship-2']
-## -------------------- ##
-####################
-#######>>>17:46:7.086 of 17/November/2022, Thursday
-#>>>Refreshed Ship List: ['Player', ' Warship-2']
-## -------------------- ##
-####################
-#######>>>17:46:20.319 of 17/November/2022, Thursday
 #>>>Refreshed Ship List: ['Player']
-########################################
-# 17:46:25.052 of 17/November/2022, Thursday
-#Ending of log dump - User is quiting the game
-########################################
+## -------------------- ##
+####################
+#######>>>21:50:55.908 of 17/November/2022, Thursday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_5j890v74gvgt>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Voyager J-1']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Voyager J-1']
