@@ -1,13 +1,13 @@
-#This is the dump of the LogCreator: <Gravity Manager LogCreator_91DK98E1T1fO>
-#This log file was created on: 21:45:55.0 of 17/November/2022, Thursday
+#This is the dump of the LogCreator: <Gravity Manager LogCreator_SKj5c0e4b00J>
+#This log file was created on: 16:55:59.0 of 18/November/2022, Friday
 ########################################
 ## -------------------- ##
 ####################
-#######>>>21:45:55.0 of 17/November/2022, Thursday
-#>>>Initialized GravityManager_RA4KrWO96806 logger
+#######>>>16:55:59.0 of 18/November/2022, Friday
+#>>>Initialized GravityManager_8SWy8VrEZweI logger
 ## -------------------- ##
 ####################
-#######>>>21:46:28.745 of 17/November/2022, Thursday
+#######>>>16:56:17.151 of 18/November/2022, Friday
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
@@ -17,64 +17,766 @@
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_7PXkR7fUVCTp>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_oyZ4t3EFx19j>]
 #>>>Planets/Suns List: ['Belaruz 4']
 #>>>Refreshed Ship List: ['Player']
-#>>>Updated radius for grav well <Belaruz 4 GravityWell_7PXkR7fUVCTp>, radius is now 1610.37194824
+#>>>Updated radius for grav well <Belaruz 4 GravityWell_oyZ4t3EFx19j>, radius is now 1601.48669434
 ## -------------------- ##
 ####################
-#######>>>21:47:2.377 of 17/November/2022, Thursday
+#######>>>16:56:51.172 of 18/November/2022, Friday
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_Ks1HA50i8dgI>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_1GXp0VdeQg5B>]
 #>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Voyager J-1']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Voyager J-1']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
 ## -------------------- ##
 ####################
-#######>>>21:49:53.225 of 17/November/2022, Thursday
+#######>>>17:4:15.796 of 18/November/2022, Friday
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_YB85c45wTeOX>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_5kqwi8G94az1>]
 #>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['U.S.S. Armstrong-1', 'U.S.S. Gateway-2', 'Player']
 ## -------------------- ##
 ####################
-#######>>>21:49:55.826 of 17/November/2022, Thursday
+#######>>>17:5:36.449 of 18/November/2022, Friday
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_X9nuMZLjPq5F>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player']
-## -------------------- ##
-####################
-#######>>>21:49:57.943 of 17/November/2022, Thursday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_V8HZJ9H4FkFI>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Voyager J-1']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Voyager J-1']
-## -------------------- ##
-####################
-#######>>>21:50:26.492 of 17/November/2022, Thursday
-#>>>Refreshed Ship List: []
-#>>>Added Player to the Ship List
-## -------------------- ##
-####################
-#######>>>21:50:27.367 of 17/November/2022, Thursday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_B0K9ojIc44Oa>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['U.S.S. Voyager J-1', 'Player']
-## -------------------- ##
-####################
-#######>>>21:50:53.742 of 17/November/2022, Thursday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_G8U4fagpm8KF>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_ExiqjZX1p4Px>]
 #>>>Planets/Suns List: ['Belaruz 4']
 #>>>Refreshed Ship List: ['Player']
 ## -------------------- ##
 ####################
-#######>>>21:50:55.908 of 17/November/2022, Thursday
+#######>>>17:5:38.661 of 18/November/2022, Friday
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_5j890v74gvgt>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_r8r3c9AJNff5>]
 #>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Voyager J-1']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Voyager J-1']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+## -------------------- ##
+####################
+#######>>>17:7:37.177 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_1EQVu29y34Ej>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['U.S.S. Armstrong-1', 'U.S.S. Gateway-2', 'Player']
+## -------------------- ##
+####################
+#######>>>17:11:15.540 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_a68KiIO34PfJ>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>17:11:17.673 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_H3ODMNfi86Xo>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+## -------------------- ##
+####################
+#######>>>17:14:43.805 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_ZhvGI9S5188a>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['U.S.S. Armstrong-1', 'U.S.S. Gateway-2', 'Player']
+## -------------------- ##
+####################
+#######>>>17:15:39.753 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_pEoL7D1RdBq2>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>17:15:41.319 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_9QO0GSgRtPaz>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+## -------------------- ##
+####################
+#######>>>17:18:24.502 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_rwL45pE1350m>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['U.S.S. Armstrong-1', 'U.S.S. Gateway-2', 'Player']
+## -------------------- ##
+####################
+#######>>>17:19:7.417 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_9LH7P3cv63QF>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>17:19:9.300 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_F1dx145DTm80>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+## -------------------- ##
+####################
+#######>>>17:21:55.632 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_21Fj41Hg7iR6>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['U.S.S. Armstrong-1', 'U.S.S. Gateway-2', 'Player']
+## -------------------- ##
+####################
+#######>>>17:23:44.996 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_5O2DeZy5gnpD>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>17:23:47.696 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_AanULFsjU8yY>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+## -------------------- ##
+####################
+#######>>>17:26:38.562 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_k6YY4Afxz172>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['U.S.S. Armstrong-1', 'U.S.S. Gateway-2', 'Player']
+## -------------------- ##
+####################
+#######>>>17:26:40.344 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_Hl5a080cDIR6>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>17:26:42.446 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_UgP1i9AsSGKf>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+## -------------------- ##
+####################
+#######>>>17:32:42.908 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_T2mB22rqyXK9>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['U.S.S. Armstrong-1', 'U.S.S. Gateway-2', 'Player']
+## -------------------- ##
+####################
+#######>>>17:33:43.555 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_hJ74lC9DXMkP>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>17:33:46.039 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_XJN0kKJztw0X>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+## -------------------- ##
+####################
+#######>>>17:35:15.772 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_T7G9eb013V4S>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['U.S.S. Armstrong-1', 'U.S.S. Gateway-2', 'Player']
+## -------------------- ##
+####################
+#######>>>17:36:49.086 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_PpGU0824IUC5>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>17:36:50.487 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_qZBu4444Owh3>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+## -------------------- ##
+####################
+#######>>>17:39:47.901 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_9DJIz1mVaajk>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['U.S.S. Armstrong-1', 'U.S.S. Gateway-2', 'Player']
+## -------------------- ##
+####################
+#######>>>17:41:25.616 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_Z60Z58cd54mZ>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>17:41:27.732 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_mSZ5jtK6MUW6>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+## -------------------- ##
+####################
+#######>>>17:43:53.906 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_C83kY5JeWiD5>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['U.S.S. Armstrong-1', 'U.S.S. Gateway-2', 'Player']
+## -------------------- ##
+####################
+#######>>>17:44:1.997 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_o8i1PsKB4L11>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>17:44:4.597 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_rpY8vBaLZ7JW>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+## -------------------- ##
+####################
+#######>>>17:46:36.463 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_gYs8zJ1gz341>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['U.S.S. Armstrong-1', 'U.S.S. Gateway-2', 'Player']
+## -------------------- ##
+####################
+#######>>>17:46:38.080 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_0Vi6wVPk8I2O>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>17:46:40.128 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_6C570g0h16fR>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+## -------------------- ##
+####################
+#######>>>17:51:0.576 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_mfa1p7PPXAhQ>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['U.S.S. Armstrong-1', 'U.S.S. Gateway-2', 'Player']
+## -------------------- ##
+####################
+#######>>>17:51:49.675 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_yOv53g5b42dy>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>17:51:51.641 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_vRr26jzXtxHd>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+## -------------------- ##
+####################
+#######>>>17:55:4.056 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_F2R3YvqU0uoa>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['U.S.S. Armstrong-1', 'U.S.S. Gateway-2', 'Player']
+## -------------------- ##
+####################
+#######>>>17:55:55.521 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_LRlG10c2K3iD>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>17:55:58.404 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_3mPEMN4P6AEy>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+## -------------------- ##
+####################
+#######>>>18:1:1.134 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_d3OGfIV55KAz>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['U.S.S. Armstrong-1', 'U.S.S. Gateway-2', 'Player']
+## -------------------- ##
+####################
+#######>>>18:2:20.299 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_LX99w1gkys61>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>18:2:21.832 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_0WRC2J2HsFZB>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+## -------------------- ##
+####################
+#######>>>18:2:24.467 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_Un36Fq90bFEe>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['U.S.S. Armstrong-1', 'U.S.S. Gateway-2', 'Player']
+## -------------------- ##
+####################
+#######>>>18:2:32.448 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_017SylqhN877>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+## -------------------- ##
+####################
+#######>>>18:2:48.033 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_Oe67rl0dY5yK>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['U.S.S. Armstrong-1', 'U.S.S. Gateway-2', 'Player']
+## -------------------- ##
+####################
+#######>>>18:3:7.815 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_9dKgEv8Z1hD1>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+## -------------------- ##
+####################
+#######>>>18:9:18.212 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_AUbqHlvwWO5T>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['U.S.S. Armstrong-1', 'U.S.S. Gateway-2', 'Player']
+## -------------------- ##
+####################
+#######>>>18:9:30.077 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_42AGIEIrMl6G>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>18:9:33.110 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_58TAfS6qlbH2>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+## -------------------- ##
+####################
+#######>>>18:14:34.451 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_7SwL8uXh3xm3>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['U.S.S. Armstrong-1', 'U.S.S. Gateway-2', 'Player']
+## -------------------- ##
+####################
+#######>>>18:14:51.089 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_I2OnCwu4y971>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>18:14:53.555 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_zXoQB685G96c>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+## -------------------- ##
+####################
+#######>>>18:18:4.871 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_5sH1K3W57BK5>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['U.S.S. Armstrong-1', 'U.S.S. Gateway-2', 'Player']
+## -------------------- ##
+####################
+#######>>>18:18:19.670 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_784QFvnr5WkW>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>18:18:21.986 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_9cNatcN16oq9>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+## -------------------- ##
+####################
+#######>>>18:22:1.034 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_X2d8H6XRCuAd>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['U.S.S. Armstrong-1', 'U.S.S. Gateway-2', 'Player']
+## -------------------- ##
+####################
+#######>>>18:22:15.134 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_UyMiI8W2eICl>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>18:22:17.767 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_8x7Uqxv1fnf1>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+## -------------------- ##
+####################
+#######>>>18:24:7.232 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_dniv51Pxr30a>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['U.S.S. Armstrong-1', 'U.S.S. Gateway-2', 'Player']
+## -------------------- ##
+####################
+#######>>>18:24:8.615 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_qepoe1JxATTe>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player']
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_CZA1T4R17t88>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+## -------------------- ##
+####################
+#######>>>18:26:9.448 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_weytF7F14an1>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['U.S.S. Armstrong-1', 'U.S.S. Gateway-2', 'Player']
+## -------------------- ##
+####################
+#######>>>18:27:27.095 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_Qku350Bx1qIT>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>18:27:29.495 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_zJti8GWM7aaD>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+## -------------------- ##
+####################
+#######>>>18:29:2.079 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_85iz2hu8DSFd>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['U.S.S. Armstrong-1', 'U.S.S. Gateway-2', 'Player']
+## -------------------- ##
+####################
+#######>>>18:29:5.360 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_FtMOxRe9bszQ>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>18:29:7.561 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_A0MBtw8jiAtA>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+## -------------------- ##
+####################
+#######>>>18:31:6.894 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_Gx49ya7DlWvI>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['U.S.S. Armstrong-1', 'U.S.S. Gateway-2', 'Player']
+## -------------------- ##
+####################
+#######>>>18:32:5.041 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_X152CLhOjwep>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>18:32:7.475 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_HCM2A4G7l17r>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+## -------------------- ##
+####################
+#######>>>18:41:25.935 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_pKMAT5P0N683>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['U.S.S. Armstrong-1', 'U.S.S. Gateway-2', 'Player']
+## -------------------- ##
+####################
+#######>>>18:41:53.834 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_GtK3e9QDqI71>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>18:41:56.600 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_Z5lmL5Mzs0jd>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+## -------------------- ##
+####################
+#######>>>18:44:16.216 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_2mCX9m5f2dKG>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['U.S.S. Armstrong-1', 'U.S.S. Gateway-2', 'Player']
+## -------------------- ##
+####################
+#######>>>18:45:3.582 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_sCpg6LdSL3wF>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>18:45:6.047 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_V52khLsCiz90>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+## -------------------- ##
+####################
+#######>>>18:50:12.578 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_6do5JSENwfJo>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['U.S.S. Armstrong-1', 'U.S.S. Gateway-2', 'Player']
+## -------------------- ##
+####################
+#######>>>18:50:57.677 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_40bhKst5Mqqy>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>18:51:1.177 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_ZdjH675ZN4w8>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+## -------------------- ##
+####################
+#######>>>18:57:26.005 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_FeC9E245FC92>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['U.S.S. Armstrong-1', 'U.S.S. Gateway-2', 'Player']
+## -------------------- ##
+####################
+#######>>>18:57:38.039 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_igE7mVGAEfCa>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>18:57:41.022 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_E0lFKg1J3X6G>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+## -------------------- ##
+####################
+#######>>>19:1:26.352 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_Av9cL0pCMDrP>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['U.S.S. Armstrong-1', 'U.S.S. Gateway-2', 'Player']
+## -------------------- ##
+####################
+#######>>>19:1:41.718 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_NAo64G9pyt43>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player']
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_r0WF4YDlii1p>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+## -------------------- ##
+####################
+#######>>>19:4:0.017 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_3VA928yN02UP>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['U.S.S. Armstrong-1', 'U.S.S. Gateway-2', 'Player']
+## -------------------- ##
+####################
+#######>>>19:4:11.883 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_RHw7UmR8vQxo>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player']
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_Y1XNmCxoyyV1>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+## -------------------- ##
+####################
+#######>>>19:8:20.246 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_ntQ7CAnUa5KJ>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['U.S.S. Armstrong-1', 'U.S.S. Gateway-2', 'Player']
+## -------------------- ##
+####################
+#######>>>19:9:2.043 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_62sHX6bL9cGL>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:9:4.579 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_2CerOI70129B>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+## -------------------- ##
+####################
+#######>>>19:12:6.459 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_6p81k5vDApLM>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['U.S.S. Armstrong-1', 'U.S.S. Gateway-2', 'Player']
+## -------------------- ##
+####################
+#######>>>19:12:26.092 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_7k7DcNy32vTn>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player']
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_5Eg1E1s0tjPP>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+## -------------------- ##
+####################
+#######>>>19:16:54.725 of 18/November/2022, Friday
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Gateway-2']
+## -------------------- ##
+####################
+#######>>>19:19:53.587 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_kHx86e5f3ujE>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['U.S.S. Gateway-2', 'Player']
+## -------------------- ##
+####################
+#######>>>19:19:57.770 of 18/November/2022, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_xelqIOV1B77f>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player']
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_NaBxsXs7s4KH>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2']
+## -------------------- ##
+####################
+#######>>>19:22:52.823 of 18/November/2022, Friday
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1']
+## -------------------- ##
+####################
+#######>>>19:25:31.912 of 18/November/2022, Friday
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1']
+## -------------------- ##
+####################
+#######>>>19:26:4.823 of 18/November/2022, Friday
+#>>>Refreshed Ship List: ['Player']
+########################################
+# 19:29:38.544 of 18/November/2022, Friday
+#Ending of log dump - User is quiting the game
+########################################
