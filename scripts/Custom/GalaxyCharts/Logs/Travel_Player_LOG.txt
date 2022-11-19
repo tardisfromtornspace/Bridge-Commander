@@ -1,0 +1,48 @@
+#This is the dump of the LogCreator: <Player Travel Logger LogCreator_u78GX920S292>
+#This log file was created on: 3:8:50.827 of 19/November/2022, Saturday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>3:8:50.827 of 19/November/2022, Saturday
+#>>>Initialized Player Travel logger
+#>>>SELF = <Player(5792) Travel_L8k07nXyRA1j>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is Player - Checked
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>> -Travel Type Set: Warp
+## -------------------- ##
+####################
+#######>>>3:9:17.858 of 19/November/2022, Saturday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>3:9:19.189 of 19/November/2022, Saturday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>3:9:19.739 of 19/November/2022, Saturday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>3:9:19.889 of 19/November/2022, Saturday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>3:9:20.190 of 19/November/2022, Saturday
+#>>>Ship is dead or dying (at Chaser Update)
+########################################
+# 3:9:20.190 of 19/November/2022, Saturday
+#Ending of log dump - User is quiting the game
+########################################
