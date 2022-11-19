@@ -126,7 +126,12 @@ except:
 class TransphasicTorpedoDef(FoundationTech.TechDef):
 
 	def OnTorpDefense(self, pShip, pInstance, pTorp, oYield, pEvent):
-		if oYield and oYield.IsTransphasicYield():
+		isThis = 0
+		try:
+			isThis = oYield.IsTransphasicYield()
+		except:
+			isThis = 0
+		if oYield and isThis:
 			return 1
 
 	def Attach(self, pInstance):

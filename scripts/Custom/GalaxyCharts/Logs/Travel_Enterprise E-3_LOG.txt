@@ -1,0 +1,27 @@
+#This is the dump of the LogCreator: <Enterprise E-3 Travel Logger LogCreator_nE7m8hyXmCnz>
+#This log file was created on: 22:24:22.891 of 19/November/2022, Saturday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>22:24:22.891 of 19/November/2022, Saturday
+#>>>Initialized Enterprise E-3 Travel logger
+#>>>SELF = <Enterprise E-3(93496) Travel_C1X3seTrKwKf>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+########################################
+# 22:26:3.731 of 19/November/2022, Saturday
+#Ending of log dump - User is quiting the game
+########################################

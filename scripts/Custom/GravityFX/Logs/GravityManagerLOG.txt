@@ -1,13 +1,13 @@
-#This is the dump of the LogCreator: <Gravity Manager LogCreator_4Bb8FL3qoDpJ>
-#This log file was created on: 18:38:20.0 of 19/November/2022, Saturday
+#This is the dump of the LogCreator: <Gravity Manager LogCreator_43amAAyr6KF5>
+#This log file was created on: 22:23:4.0 of 19/November/2022, Saturday
 ########################################
 ## -------------------- ##
 ####################
-#######>>>18:38:20.0 of 19/November/2022, Saturday
-#>>>Initialized GravityManager_f8a6pk43SL83 logger
+#######>>>22:23:4.0 of 19/November/2022, Saturday
+#>>>Initialized GravityManager_2lvuIhPFrR3B logger
 ## -------------------- ##
 ####################
-#######>>>18:38:31.951 of 19/November/2022, Saturday
+#######>>>22:23:20.434 of 19/November/2022, Saturday
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
@@ -17,30 +17,28 @@
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_SdFp87J5eSI8>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_tzp24gBB4K3g>]
 #>>>Planets/Suns List: ['Belaruz 4']
 #>>>Refreshed Ship List: ['Player']
-#>>>Updated radius for grav well <Belaruz 4 GravityWell_SdFp87J5eSI8>, radius is now 1611.50427246
+#>>>Updated radius for grav well <Belaruz 4 GravityWell_tzp24gBB4K3g>, radius is now 1602.96179199
 ## -------------------- ##
 ####################
-#######>>>18:40:1.783 of 19/November/2022, Saturday
+#######>>>22:24:22.891 of 19/November/2022, Saturday
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_1Di6CFvV16lP>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_CSmANSM4j3tF>]
 #>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2', 'U.S.S. Enterprise J-3', 'USS Lakota-4', 'U.S.S. Voyager J-5']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2', 'U.S.S. Enterprise J-3', 'USS Lakota-4', 'U.S.S. Voyager J-5']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2', 'U.S.S. Enterprise J-3', 'USS Lakota-4', 'U.S.S. Voyager J-5']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2', 'U.S.S. Enterprise J-3', 'USS Lakota-4', 'U.S.S. Voyager J-5']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2', 'U.S.S. Enterprise J-3', 'USS Lakota-4', 'U.S.S. Voyager J-5']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1', 'U.S.S. Gateway-2', 'U.S.S. Enterprise J-3', 'USS Lakota-4', 'U.S.S. Voyager J-5']
-## -------------------- ##
-####################
-#######>>>18:46:58.563 of 19/November/2022, Saturday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_j7s1ilrb08mr>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['U.S.S. Armstrong-1', 'U.S.S. Gateway-2', 'U.S.S. Enterprise J-3', 'USS Lakota-4', 'U.S.S. Voyager J-5', 'Player']
+#>>>Refreshed Ship List: ['Player', 'Constitution-1', 'Defiant-2', 'Enterprise E-3', 'Galaxy-4', 'Galaxy refit-5', 'USS Lakota-6', 'U.S.S. Enterprise J-7', 'U.S.S. Armstrong-8', 'U.S.S. Gateway-9', 'U.S.S. Voyager J-10']
+#>>>Refreshed Ship List: ['Player', 'Constitution-1', 'Defiant-2', 'Enterprise E-3', 'Galaxy-4', 'Galaxy refit-5', 'USS Lakota-6', 'U.S.S. Enterprise J-7', 'U.S.S. Armstrong-8', 'U.S.S. Gateway-9', 'U.S.S. Voyager J-10']
+#>>>Refreshed Ship List: ['Player', 'Constitution-1', 'Defiant-2', 'Enterprise E-3', 'Galaxy-4', 'Galaxy refit-5', 'USS Lakota-6', 'U.S.S. Enterprise J-7', 'U.S.S. Armstrong-8', 'U.S.S. Gateway-9', 'U.S.S. Voyager J-10']
+#>>>Refreshed Ship List: ['Player', 'Constitution-1', 'Defiant-2', 'Enterprise E-3', 'Galaxy-4', 'Galaxy refit-5', 'USS Lakota-6', 'U.S.S. Enterprise J-7', 'U.S.S. Armstrong-8', 'U.S.S. Gateway-9', 'U.S.S. Voyager J-10']
+#>>>Refreshed Ship List: ['Player', 'Constitution-1', 'Defiant-2', 'Enterprise E-3', 'Galaxy-4', 'Galaxy refit-5', 'USS Lakota-6', 'U.S.S. Enterprise J-7', 'U.S.S. Armstrong-8', 'U.S.S. Gateway-9', 'U.S.S. Voyager J-10']
+#>>>Refreshed Ship List: ['Player', 'Constitution-1', 'Defiant-2', 'Enterprise E-3', 'Galaxy-4', 'Galaxy refit-5', 'USS Lakota-6', 'U.S.S. Enterprise J-7', 'U.S.S. Armstrong-8', 'U.S.S. Gateway-9', 'U.S.S. Voyager J-10']
+#>>>Refreshed Ship List: ['Player', 'Constitution-1', 'Defiant-2', 'Enterprise E-3', 'Galaxy-4', 'Galaxy refit-5', 'USS Lakota-6', 'U.S.S. Enterprise J-7', 'U.S.S. Armstrong-8', 'U.S.S. Gateway-9', 'U.S.S. Voyager J-10']
+#>>>Refreshed Ship List: ['Player', 'Constitution-1', 'Defiant-2', 'Enterprise E-3', 'Galaxy-4', 'Galaxy refit-5', 'USS Lakota-6', 'U.S.S. Enterprise J-7', 'U.S.S. Armstrong-8', 'U.S.S. Gateway-9', 'U.S.S. Voyager J-10']
+#>>>Refreshed Ship List: ['Player', 'Constitution-1', 'Defiant-2', 'Enterprise E-3', 'Galaxy-4', 'Galaxy refit-5', 'USS Lakota-6', 'U.S.S. Enterprise J-7', 'U.S.S. Armstrong-8', 'U.S.S. Gateway-9', 'U.S.S. Voyager J-10']
+#>>>Refreshed Ship List: ['Player', 'Constitution-1', 'Defiant-2', 'Enterprise E-3', 'Galaxy-4', 'Galaxy refit-5', 'USS Lakota-6', 'U.S.S. Enterprise J-7', 'U.S.S. Armstrong-8', 'U.S.S. Gateway-9', 'U.S.S. Voyager J-10']
+#>>>Refreshed Ship List: ['Player', 'Constitution-1', 'Defiant-2', 'Enterprise E-3', 'Galaxy-4', 'Galaxy refit-5', 'USS Lakota-6', 'U.S.S. Enterprise J-7', 'U.S.S. Armstrong-8', 'U.S.S. Gateway-9', 'U.S.S. Voyager J-10']
 ########################################
-# 18:46:59.722 of 19/November/2022, Saturday
+# 22:26:3.731 of 19/November/2022, Saturday
 #Ending of log dump - User is quiting the game
 ########################################

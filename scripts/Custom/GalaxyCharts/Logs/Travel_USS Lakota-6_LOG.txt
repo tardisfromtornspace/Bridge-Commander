@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <USS Lakota-6 Travel Logger LogCreator_k1j0V4Tzlcf4>
-#This log file was created on: 18:28:37.651 of 19/November/2022, Saturday
+#This is the dump of the LogCreator: <USS Lakota-6 Travel Logger LogCreator_HW5kFF9F6i0v>
+#This log file was created on: 22:24:22.891 of 19/November/2022, Saturday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>18:28:37.651 of 19/November/2022, Saturday
+#######>>>22:24:22.891 of 19/November/2022, Saturday
 #>>>Initialized USS Lakota-6 Travel logger
-#>>>SELF = <USS Lakota-6(68499) Travel_8W8d7P6Li8qj>
+#>>>SELF = <USS Lakota-6(96068) Travel_G7343ECE2LN2>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -21,12 +21,7 @@ Updating Travelling Procedures...
 #>>>Chaser base class initialization complete.
 #>>>Target Ship = NONE
 #>>>Chaser pre-emptive Refresher Initialization
-## -------------------- ##
-####################
-#######>>>18:29:39.683 of 19/November/2022, Saturday
-#>>>Stopping Refresh Handler
-#>>>Deleting...
 ########################################
-# 18:29:47.883 of 19/November/2022, Saturday
+# 22:26:3.731 of 19/November/2022, Saturday
 #Ending of log dump - User is quiting the game
 ########################################

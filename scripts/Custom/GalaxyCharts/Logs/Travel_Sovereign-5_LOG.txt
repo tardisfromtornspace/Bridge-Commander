@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Sovereign-5 Travel Logger LogCreator_psNeVCjG3xz1>
-#This log file was created on: 18:0:30.824 of 19/November/2022, Saturday
+#This is the dump of the LogCreator: <Sovereign-5 Travel Logger LogCreator_j8vCx11MVpm8>
+#This log file was created on: 21:16:50.433 of 19/November/2022, Saturday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>18:0:30.824 of 19/November/2022, Saturday
+#######>>>21:16:50.433 of 19/November/2022, Saturday
 #>>>Initialized Sovereign-5 Travel logger
-#>>>SELF = <Sovereign-5(648168) Travel_47A7712doQG8>
+#>>>SELF = <Sovereign-5(89807) Travel_mPISr1kO6V27>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -21,3 +21,8 @@ Updating Travelling Procedures...
 #>>>Chaser base class initialization complete.
 #>>>Target Ship = NONE
 #>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>21:17:56.759 of 19/November/2022, Saturday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

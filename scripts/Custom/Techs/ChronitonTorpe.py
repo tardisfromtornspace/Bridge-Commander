@@ -3,6 +3,7 @@
 #
 # Start on 2:
 # At the bottom of your torpedo projectile file add this (Between the """ and """):
+# You can add a secondary torpedo version by copying the file and adding "_P" to the end of the new file name, which will be the torpedo after the shield
 """
 try:
 	modChronitonTorpe = __import__("Custom.Techs.ChronitonTorpe")
@@ -10,6 +11,13 @@ try:
 		modChronitonTorpe.oChronitonTorpe.AddTorpedo(__name__)
 except:
 	print "Chroniton Torpedo script not installed, or you are missing Foundation Tech"
+"""
+# You can also add your ship to an immunity list, not only the one below, in order to keep the files unaltered... just add to your Custom/Ships/shipFileName.py this:
+# NOTE: replace "Ambassador" with the abbrev
+"""
+Foundation.ShipDef.Ambassador.dTechs = {
+	"ChronitonTorpe Immune": 1
+}
 """
 
 import App
@@ -45,12 +53,19 @@ try:
 			pHitPoint = ConvertPointNiToTG(pEvent.GetWorldHitPoint())
 
 			pVec = pTorp.GetVelocityTG()
-			pVec.Scale(pEvent.GetRadius())
+			pVec.Scale(0.001)
 			pHitPoint.Add(pVec)
 
 			mod = pTorp.GetModuleName()
-			if(self.__dict__.has_key("SubTorp")):
-				mod = self.SubTorp
+
+			try:
+				projectile = mod + "_P"
+				torpedoScript = __import__(projectile)
+				mod = projectile
+			except:
+				mod = pTorp.GetModuleName()
+
+			print mod
 
 			pTempTorp = FireTorpFromPointWithVector(pHitPoint, pVec, mod, pTorp.GetTargetID(), pTorp.GetParentID(), __import__(mod).GetLaunchSpeed())
 			self.lFired.append(pTempTorp.GetObjID())
