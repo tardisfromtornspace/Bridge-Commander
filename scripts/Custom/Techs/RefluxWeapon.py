@@ -78,6 +78,7 @@ try:
 				Percentage = self.lThePercentage
 				if not Percentage or Percentage == 0.0:
 					Percentage = 0.01 # Default
+			print Percentage
 
 			pShields = pShip.GetShields()
 			for shieldDir in range(App.ShieldClass.NUM_SHIELDS):
@@ -114,7 +115,12 @@ except:
 class RefluxWeaponDef(FoundationTech.TechDef):
 
 	def OnTorpDefense(self, pShip, pInstance, pTorp, oYield, pEvent):
-		if oYield and oYield.IsRefluxWeaponYield():
+		isThis = 0
+		try:
+			isThis = oYield.IsRefluxWeaponYield()
+		except:
+			isThis = 0
+		if oYield and isThis:
 			return 1
 
 	def Attach(self, pInstance):

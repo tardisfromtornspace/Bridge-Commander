@@ -1,0 +1,27 @@
+#This is the dump of the LogCreator: <T.A.R.D.I.S.-6 Travel Logger LogCreator_lkz9VKb8O5HX>
+#This log file was created on: 15:8:59.289 of 19/November/2022, Saturday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>15:8:59.289 of 19/November/2022, Saturday
+#>>>Initialized T.A.R.D.I.S.-6 Travel logger
+#>>>SELF = <T.A.R.D.I.S.-6(86888) Travel_C5WyrnUW7kmK>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+########################################
+# 15:11:54.155 of 19/November/2022, Saturday
+#Ending of log dump - User is quiting the game
+########################################

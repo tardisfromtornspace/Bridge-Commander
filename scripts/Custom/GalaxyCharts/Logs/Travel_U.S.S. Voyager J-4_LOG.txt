@@ -1,0 +1,27 @@
+#This is the dump of the LogCreator: <U.S.S. Voyager J-4 Travel Logger LogCreator_Uqf2V3i3v64D>
+#This log file was created on: 18:32:26.340 of 19/November/2022, Saturday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>18:32:26.340 of 19/November/2022, Saturday
+#>>>Initialized U.S.S. Voyager J-4 Travel logger
+#>>>SELF = <U.S.S. Voyager J-4(72032) Travel_pU42Xy8mEdhy>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+########################################
+# 18:33:25.434 of 19/November/2022, Saturday
+#Ending of log dump - User is quiting the game
+########################################

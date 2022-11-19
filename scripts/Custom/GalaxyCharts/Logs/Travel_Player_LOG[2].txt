@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Player Travel Logger[2] LogCreator_81H1fdN7fqlB>
-#This log file was created on: 3:9:17.858 of 19/November/2022, Saturday
+#This is the dump of the LogCreator: <Player Travel Logger[2] LogCreator_G7hV99NBrNj3>
+#This log file was created on: 18:40:1.783 of 19/November/2022, Saturday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>3:9:17.858 of 19/November/2022, Saturday
+#######>>>18:40:1.783 of 19/November/2022, Saturday
 #>>>Initialized Player Travel logger
-#>>>SELF = <Player(52853) Travel_EWnRd1VmRRr4>
+#>>>SELF = <Player(653827) Travel_X1g2PsO1S8uM>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Is Player - Checked
@@ -21,7 +21,81 @@ Updating Travelling Procedures...
 #>>>Chaser base class initialization complete.
 #>>>Target Ship = NONE
 #>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>18:45:18.016 of 19/November/2022, Saturday
+#>>>Travelling INTERCEPT procedures initiated...
+#>>>Updating Variables...
+#>>> -Is Player - Checked
+#>>> -Checked: Ship can warp, travel procedures started.
+#>>> -Stopped Intercept speed, incase the ship was intercepting.
+#>>> -Doing Player only stuff
+#>>> -Target is InSystemWarpNavPoint_Player (1632824)
+#>>>Playing travel intercept sequence...
+## -------------------- ##
+####################
+#######>>>18:45:19.669 of 19/November/2022, Saturday
+#>>>Travel INTERCEPT sequence ended...
+#>>> -Doing Player only stuff
+#>>>Travelling Intercept procedures finished...
+## -------------------- ##
+####################
+#######>>>18:45:20.609 of 19/November/2022, Saturday
+#>>>Stopping warp intercept
+#>>>Stopped Warp Intercept...
+## -------------------- ##
+####################
+#######>>>18:45:22.505 of 19/November/2022, Saturday
+#>>>Finished  FinishStopIntercept
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>18:46:58.563 of 19/November/2022, Saturday
+#>>>Initialized Player Travel logger
+#>>>SELF = <Player(1734101) Travel_35nl57809m65>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is Player - Checked
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>18:46:58.563 of 19/November/2022, Saturday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>18:46:59.092 of 19/November/2022, Saturday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>18:46:59.195 of 19/November/2022, Saturday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>18:46:59.312 of 19/November/2022, Saturday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>18:46:59.562 of 19/November/2022, Saturday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>18:46:59.722 of 19/November/2022, Saturday
+#>>>Ship is dead or dying (at Chaser Update)
 ########################################
-# 3:9:20.190 of 19/November/2022, Saturday
+# 18:46:59.722 of 19/November/2022, Saturday
+#Ending of log dump - User is quiting the game
+########################################
+########################################
+# 18:46:59.722 of 19/November/2022, Saturday
 #Ending of log dump - User is quiting the game
 ########################################
