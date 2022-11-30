@@ -3,9 +3,9 @@ import Multiplayer.SpeciesToShip
 
 def GetShipStats():
 	kShipStats = {
-		"FilenameHigh": "data/Models/Ships/ArmoredVoyager/AMVoyager.nif",
-		"FilenameMed": "data/Models/Ships/ArmoredVoyager/AMVoyagerMed.nif",
-		"FilenameLow": "data/Models/Ships/ArmoredVoyager/AMVoyagerLow.nif",
+		"FilenameHigh": "data/Models/Ships/AMVoyager/AMVoyager.nif",
+		"FilenameMed": "data/Models/Ships/AMVoyager/AMVoyager.nif",
+		"FilenameLow": "data/Models/Ships/AMVoyager/AMVoyager.nif",
 		"Name": "DiamondsAMVoyager",
 		"HardpointFile": "DiamondsAMVoyager",
 		"Species": Multiplayer.SpeciesToShip.SOVEREIGN,

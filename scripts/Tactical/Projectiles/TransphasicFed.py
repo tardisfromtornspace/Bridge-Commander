@@ -54,13 +54,10 @@ def GetGuidanceLifetime():
 
 def GetMaxAngularAccel():
 	return 0.3
-
-import FoundationTech
-import ftb.Tech.FedTransphasic
       
-sYieldName = ''
-sFireName = ''
-
-oFire = ftb.Tech.FedTransphasic.oTransphasicWeapon
-FoundationTech.dOnFires[__name__] = oFire
-FoundationTech.dYields[__name__] = oFire
+try:
+	modPhasedTorp = __import__("Custom.Techs.PhasedTorp")
+	if(modPhasedTorp):
+		modPhasedTorp.oPhasedTorp.AddTorpedo(__name__)
+except:
+	print "Phased Torpedo script not installed, or you are missing Foundation Tech"

@@ -41,9 +41,9 @@ Foundation.ShipDef.DiamondsAMVoyager.dTechs = {
 "Phase Cloak": 10,
 'SubModel': {
         "Setup":        {
-                "Body":                 "LCIntrepid_no_nacelle",
+                "Body":                 "DLCIntrepid_no_nacelle",
                 "NormalModel":          shipFile,
-                "WarpModel":          "LCIntrepid_Warp",
+                "WarpModel":          "DLCIntrepid_Warp",
                 "Hardpoints":       {
 			"Port Warp":  [-0.63, -1.15223, -0.15],
 			"Star Warp":  [0.63, -1.15223, -0.15],
@@ -54,7 +54,7 @@ Foundation.ShipDef.DiamondsAMVoyager.dTechs = {
                 },
         },
                 
-        "Port Nacelle":     ["LCIntrepid_n_left", {
+        "Port Nacelle":     ["DLCIntrepid_n_left", {
                 "Position":             [-0.32, -1.07, -0.144],
                 "Rotation":             [0, 0, 0], # normal Rotation used if not Warp
                 "WarpRotation":       [0, -0.45, 0],
@@ -63,7 +63,7 @@ Foundation.ShipDef.DiamondsAMVoyager.dTechs = {
                 }
         ],
         
-        "Starboard Nacelle":     ["LCIntrepid_n_right", {
+        "Starboard Nacelle":     ["DLCIntrepid_n_right", {
                 "Position":             [0.32, -1.07, -0.144],
                 "Rotation":             [0, 0, 0],
                 "WarpRotation":       [0, 0.45, 0],

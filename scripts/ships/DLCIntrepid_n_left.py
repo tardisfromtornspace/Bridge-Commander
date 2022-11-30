@@ -4,9 +4,9 @@ import Multiplayer.SpeciesToShip
 
 def GetShipStats():
 	kShipStats = {
-		"FilenameHigh": "data/Models/Ships/ArmoredVoyager/Intrepid_nacelle_left.NIF",
-		"FilenameMed": "data/Models/Ships/ArmoredVoyager/Intrepid_nacelle_left.NIF",
-		"FilenameLow": "data/Models/Ships/ArmoredVoyager/Intrepid_nacelle_left.NIF",
+		"FilenameHigh": "data/Models/Ships/AMVoyager/Intrepid_nacelle_left.NIF",
+		"FilenameMed": "data/Models/Ships/AMVoyager/Intrepid_nacelle_left.NIF",
+		"FilenameLow": "data/Models/Ships/AMVoyager/Intrepid_nacelle_left.NIF",
 		"Name": "Intrepid_left",
 		"HardpointFile": "DLCIntrepid_left",
 		"Species": Multiplayer.SpeciesToShip.NEBULA
