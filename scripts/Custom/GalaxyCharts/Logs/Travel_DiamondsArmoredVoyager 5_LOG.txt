@@ -1,0 +1,40 @@
+#This is the dump of the LogCreator: <DiamondsArmoredVoyager 5 Travel Logger LogCreator_IYu7KUuYbB6a>
+#This log file was created on: 18:16:34.753 of 3/December/2022, Saturday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>18:16:34.753 of 3/December/2022, Saturday
+#>>>Initialized DiamondsArmoredVoyager 5 Travel logger
+#>>>SELF = <DiamondsArmoredVoyager 5(311844) Travel_kA5JBobuIC4d>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>18:17:0.244 of 3/December/2022, Saturday
+#>>>Updated Target Ship = U.S.S. Gateway-1
+## -------------------- ##
+####################
+#######>>>18:17:0.994 of 3/December/2022, Saturday
+#>>>Updated Target Ship = U.S.S. Voyager J-2
+## -------------------- ##
+####################
+#######>>>18:17:40.402 of 3/December/2022, Saturday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 18:35:59.708 of 3/December/2022, Saturday
+#Ending of log dump - User is quiting the game
+########################################

@@ -1,0 +1,30 @@
+#This is the dump of the LogCreator: <Asteroid 5 Travel Logger LogCreator_1HG7JY4pR8d0>
+#This log file was created on: 18:44:10.445 of 3/December/2022, Saturday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>18:44:10.445 of 3/December/2022, Saturday
+#>>>Initialized Asteroid 5 Travel logger
+#>>>SELF = <Asteroid 5(5438) Travel_98Ta5Ql95T2e>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>18:47:48.956 of 3/December/2022, Saturday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>18:47:49.040 of 3/December/2022, Saturday
+#>>>Ship is dead or dying (at Chaser Update)

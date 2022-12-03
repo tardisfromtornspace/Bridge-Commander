@@ -1,0 +1,88 @@
+#This is the dump of the LogCreator: <U.S.S. Armstrong-5 Travel Logger LogCreator_jk29v2q9x7yB>
+#This log file was created on: 18:16:7.338 of 3/December/2022, Saturday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>18:16:7.338 of 3/December/2022, Saturday
+#>>>Initialized U.S.S. Armstrong-5 Travel logger
+#>>>SELF = <U.S.S. Armstrong-5(265601) Travel_AyN3W3saE5E1>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>18:16:16.557 of 3/December/2022, Saturday
+#>>>Updated Target Ship = AM Voyager-11
+## -------------------- ##
+####################
+#######>>>18:16:27.182 of 3/December/2022, Saturday
+#>>>Updated Target Ship = deltaflyer - 4
+## -------------------- ##
+####################
+#######>>>18:16:32.584 of 3/December/2022, Saturday
+#>>>Updated Target Ship = AM Voyager-7
+## -------------------- ##
+####################
+#######>>>18:16:55.124 of 3/December/2022, Saturday
+#>>>Updated Target Ship = DiamondsArmoredVoyager 6
+## -------------------- ##
+####################
+#######>>>18:19:4.123 of 3/December/2022, Saturday
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>18:19:43.489 of 3/December/2022, Saturday
+#>>>Updated Target Ship = Plasma Stream Firepoint0_t
+## -------------------- ##
+####################
+#######>>>18:19:48.855 of 3/December/2022, Saturday
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>18:20:13.705 of 3/December/2022, Saturday
+#>>>Updated Target Ship = Plasma Stream Firepoint1_t
+## -------------------- ##
+####################
+#######>>>18:20:19.208 of 3/December/2022, Saturday
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>18:21:0.372 of 3/December/2022, Saturday
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Enable Towing: 0
+#>>>Travelling procedures initiated...
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Extra path: AI ship warping to None
+#>>> -Checked: Ship can warp, travel procedures started.
+#>>> -Speed Check:
+#>>>     -Current:  9.97999954224
+#>>>     -Real Speed:  4388.19091797
+#>>>     -Cruise:  9.98
+#>>>     -Max:  9.99
+#>>>     -Actual Cruise:  9.97999954224
+#>>>     -Actual Max:  9.98999977112
+#>>> -Started playing engaging sequence.
+## -------------------- ##
+####################
+#######>>>18:21:7.106 of 3/December/2022, Saturday
+#>>> -Finishing travelling procedures...
+#>>> -Finished. AI Ship travelling to None.
+########################################
+# 18:35:59.708 of 3/December/2022, Saturday
+#Ending of log dump - User is quiting the game
+########################################

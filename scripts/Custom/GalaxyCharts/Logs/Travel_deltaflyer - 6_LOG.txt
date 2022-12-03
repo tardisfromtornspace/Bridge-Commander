@@ -1,0 +1,40 @@
+#This is the dump of the LogCreator: <deltaflyer - 6 Travel Logger LogCreator_jHLpP6H451Jy>
+#This log file was created on: 18:16:32.584 of 3/December/2022, Saturday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>18:16:32.584 of 3/December/2022, Saturday
+#>>>Initialized deltaflyer - 6 Travel logger
+#>>>SELF = <deltaflyer - 6(304281) Travel_TX15A7gMivK3>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>18:16:32.758 of 3/December/2022, Saturday
+#>>>Updated Target Ship = U.S.S. Gateway-1
+## -------------------- ##
+####################
+#######>>>18:16:44.874 of 3/December/2022, Saturday
+#>>>Updated Target Ship = U.S.S. Voyager J-2
+## -------------------- ##
+####################
+#######>>>18:16:48.593 of 3/December/2022, Saturday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 18:35:59.708 of 3/December/2022, Saturday
+#Ending of log dump - User is quiting the game
+########################################
