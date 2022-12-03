@@ -3,9 +3,15 @@ import Multiplayer.SpeciesToShip
 
 def GetShipStats():
 	kShipStats = {
-		"FilenameHigh": "data/Models/Ships/ArmoredVoyager/ArmoredVoyager.nif",
-		"FilenameMed": "data/Models/Ships/ArmoredVoyager/ArmoredVoyagerMed.nif",
-		"FilenameLow": "data/Models/Ships/ArmoredVoyager/ArmoredVoyagerLow.nif",
+	#	"FilenameHigh": "data/Models/Ships/ArmoredVoyager/ArmoredVoyager.nif",
+	#	"FilenameMed": "data/Models/Ships/ArmoredVoyager/ArmoredVoyagerMed.nif",
+	#	"FilenameLow": "data/Models/Ships/ArmoredVoyager/ArmoredVoyagerLow.nif",
+	#	"FilenameHigh": "data/Models/Ships/ArmoredIntrepid/ArmoredIntrepid.nif",
+	#	"FilenameMed": "data/Models/Ships/ArmoredIntrepid/ArmoredIntrepid.nif",
+	#	"FilenameLow": "data/Models/Ships/ArmoredIntrepid/ArmoredIntrepid.nif",
+		"FilenameHigh": "data/Models/Ships/AMVoyager/AMVoyager.nif",
+		"FilenameMed": "data/Models/Ships/AMVoyager/AMVoyager.nif",
+		"FilenameLow": "data/Models/Ships/AMVoyager/AMVoyager.nif",
 		"Name": "DiamondsArmoredVoyager",
 		"HardpointFile": "DiamondsArmoredVoyager",
 		"Species": Multiplayer.SpeciesToShip.SOVEREIGN,
@@ -22,9 +28,9 @@ def LoadModel(bPreLoad = 0):
 		# Surface Damage Res, Internal Damage Res, Burn Value, Hole Value,
 		# Search String for Glow, Search string for Specular, Suffix for specular
 		pLODModel = App.g_kLODModelManager.Create(pStats["Name"])
-		pLODModel.AddLOD(pStats["FilenameHigh"], 10, 1000.0, 15.0, 15.0, 200000, 390000, "_glow", None, "_specular")
-		pLODModel.AddLOD(pStats["FilenameMed"],  10, 2000.0, 15.0, 15.0, 200000, 390000, "_glow", None, None)
-		pLODModel.AddLOD(pStats["FilenameLow"],  10, 4000.0, 15.0, 15.0, 200000, 390000, "_glow", None, None)
+		pLODModel.AddLOD(pStats["FilenameHigh"], 10, 1000.0, 0.0, 0.0, 0, 0, "_glow", None, "_specular")
+		pLODModel.AddLOD(pStats["FilenameMed"],  10, 2000.0, 0.0, 0.0, 0, 0, "_glow", None, None)
+		pLODModel.AddLOD(pStats["FilenameLow"],  10, 4000.0, 0.0, 0.0, 0, 0, "_glow", None, None)
 
 #		kDebugObj = App.CPyDebug()
 		if (bPreLoad == 0):
@@ -38,10 +44,19 @@ def PreLoadModel():
 	LoadModel(1)
 
 def GetArmorRatio():
-      return 2.5
+      return 1.8
 
 def GetDamageStrMod():
-	return 0;
+	return 0
 
 def GetDamageRadMod():
-	return 0;
+	return 0
+
+def GetForcedArmor():
+	return 1
+
+def GetArmouredModel():
+	return "DiamondsArmorVoyager"
+
+def GetOriginalShipModel(): # Should be this script, but for more flexibility, here you can change it to never return...
+	return "DiamondsArmoredVoyager"

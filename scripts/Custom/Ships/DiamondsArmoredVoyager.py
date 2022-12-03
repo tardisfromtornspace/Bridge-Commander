@@ -37,7 +37,8 @@ credits = {
 #                                                                                     #
 Foundation.ShipDef.DiamondsArmoredVoyager = Foundation.FedShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile })
 Foundation.ShipDef.DiamondsArmoredVoyager.dTechs = {
-'Ablative Armour': 295000,
+#'Ablative Armour': 295000,
+'Adv Armor Tech': 1,
 'Breen Drainer Immune': 1,
 'Multivectral Shields': 30,
 "Phase Cloak": 10,

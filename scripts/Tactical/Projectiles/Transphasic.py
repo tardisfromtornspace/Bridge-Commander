@@ -66,7 +66,7 @@ def GetName():
 	return("Transphasic")
 
 def GetDamage():
-	return 35000.91
+	return 19000
 
 def GetGuidanceLifetime():
 	return 6.0

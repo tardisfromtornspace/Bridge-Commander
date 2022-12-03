@@ -22,9 +22,9 @@ def LoadModel(bPreLoad = 0):
 		# Surface Damage Res, Internal Damage Res, Burn Value, Hole Value,
 		# Search String for Glow, Search string for Specular, Suffix for specular
 		pLODModel = App.g_kLODModelManager.Create(pStats["Name"])
-		pLODModel.AddLOD(pStats["FilenameHigh"], 10, 200.0, 15.0, 15.0, 400, 900, "_glow", None, None)
-		pLODModel.AddLOD(pStats["FilenameMed"],  10, 400.0, 15.0, 15.0, 400, 900, "_glow", None, None)
-		pLODModel.AddLOD(pStats["FilenameLow"],  10, 800.0, 15.0, 30.0, 400, 900, "_glow", None, None)
+		pLODModel.AddLOD(pStats["FilenameHigh"], 10, 100.0, 15.0, 15.0, 400, 900, "_glow", None, None)
+		pLODModel.AddLOD(pStats["FilenameMed"],  10, 200.0, 15.0, 15.0, 400, 900, "_glow", None, None)
+		pLODModel.AddLOD(pStats["FilenameLow"],  10, 4000.0, 15.0, 30.0, 400, 900, "_glow", None, None)
 
 #		kDebugObj = App.CPyDebug()
 		if (bPreLoad == 0):
@@ -38,16 +38,16 @@ def PreLoadModel():
 	LoadModel(1)
 
 def GetArmorRatio():
-      return 2.5
+      return 1.75
 
 def GetDamageStrMod():
-	return 0;
+	return 0
 
 def GetDamageRadMod():
-	return 0;
+	return 0
 
 def GetArmouredModel():
-	return "DiamondsArmoredVoyager"
+	return "DiamondsArmorVoyager"
 
 def GetOriginalShipModel(): # Should be this script, but for more flexibility, here you can change it to never return...
 	return "DiamondsAMVoyager"

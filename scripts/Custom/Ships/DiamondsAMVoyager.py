@@ -72,7 +72,8 @@ Foundation.ShipDef.DiamondsAMVoyager.dTechs = {
                 }
         ],
 },
-"Transphasic Torpedo Immune": 1
+"Transphasic Torpedo Immune": 1,
+"Adv Armor Tech": 1  # Please notice that this is only here to allow the non-players to have this special armor and for the armor to apply after Mvam
 }
 #                                                                                     #
 #######################################################################################
