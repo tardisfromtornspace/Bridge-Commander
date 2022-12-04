@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Player Travel Logger[2] LogCreator_fKL7jNG5SGyQ>
-#This log file was created on: 12:20:12.101 of 4/December/2022, Sunday
+#This is the dump of the LogCreator: <Player Travel Logger[2] LogCreator_YTgL4XCHd4r4>
+#This log file was created on: 12:31:52.165 of 4/December/2022, Sunday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,34 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>12:20:12.101 of 4/December/2022, Sunday
+#######>>>12:31:52.165 of 4/December/2022, Sunday
 #>>>Initialized Player Travel logger
-#>>>SELF = <Player(3058862) Travel_4f5wU58L7pjN>
+#>>>SELF = <Player(85580) Travel_eTK6029L2HZZ>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is Player - Checked
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>12:32:45.659 of 4/December/2022, Sunday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>12:33:0.872 of 4/December/2022, Sunday
+#>>>Initialized Player Travel logger
+#>>>SELF = <Player(176152) Travel_2Y3Uk82N6jd2>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Is Player - Checked
@@ -22,6 +47,10 @@ Updating Travelling Procedures...
 #>>>Target Ship = NONE
 #>>>Chaser pre-emptive Refresher Initialization
 ########################################
-# 12:21:42.420 of 4/December/2022, Sunday
+# 12:33:13.955 of 4/December/2022, Sunday
+#Ending of log dump - User is quiting the game
+########################################
+########################################
+# 12:33:13.955 of 4/December/2022, Sunday
 #Ending of log dump - User is quiting the game
 ########################################

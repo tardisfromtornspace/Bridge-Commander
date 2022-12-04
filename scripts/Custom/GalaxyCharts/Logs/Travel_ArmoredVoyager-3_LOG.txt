@@ -1,0 +1,72 @@
+#This is the dump of the LogCreator: <ArmoredVoyager-3 Travel Logger LogCreator_g5GZbho6r9N1>
+#This log file was created on: 12:31:52.165 of 4/December/2022, Sunday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>12:31:52.165 of 4/December/2022, Sunday
+#>>>Initialized ArmoredVoyager-3 Travel logger
+#>>>SELF = <ArmoredVoyager-3(89231) Travel_cmdL64V4xI57>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>12:32:0.357 of 4/December/2022, Sunday
+#>>>Updated Target Ship = AM Voyager-6
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>12:32:0.875 of 4/December/2022, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>12:32:1.139 of 4/December/2022, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>12:32:1.924 of 4/December/2022, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>12:32:2.206 of 4/December/2022, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>12:32:2.923 of 4/December/2022, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>12:32:3.673 of 4/December/2022, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>12:32:16.207 of 4/December/2022, Sunday
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>12:32:50.441 of 4/December/2022, Sunday
+#>>>Updated Target Ship = Armored Voyager-7
+## -------------------- ##
+####################
+#######>>>12:33:0.872 of 4/December/2022, Sunday
+#>>>Updated Target Ship = Player
+########################################
+# 12:33:13.955 of 4/December/2022, Sunday
+#Ending of log dump - User is quiting the game
+########################################

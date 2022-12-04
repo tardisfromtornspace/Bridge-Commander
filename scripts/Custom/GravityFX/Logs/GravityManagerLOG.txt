@@ -1,13 +1,13 @@
-#This is the dump of the LogCreator: <Gravity Manager LogCreator_P0D4qaquIO80>
-#This log file was created on: 12:17:15.0 of 4/December/2022, Sunday
+#This is the dump of the LogCreator: <Gravity Manager LogCreator_w8c2ebZJORzs>
+#This log file was created on: 12:30:34.0 of 4/December/2022, Sunday
 ########################################
 ## -------------------- ##
 ####################
-#######>>>12:17:15.0 of 4/December/2022, Sunday
-#>>>Initialized GravityManager_R7bs438BvoWu logger
+#######>>>12:30:34.0 of 4/December/2022, Sunday
+#>>>Initialized GravityManager_X623yH2fo7VE logger
 ## -------------------- ##
 ####################
-#######>>>12:17:25.301 of 4/December/2022, Sunday
+#######>>>12:30:53.856 of 4/December/2022, Sunday
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
@@ -17,36 +17,54 @@
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_KV43SJUZm6hK>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_yUfll7C2J9YR>]
 #>>>Planets/Suns List: ['Belaruz 4']
 #>>>Refreshed Ship List: ['Player']
-#>>>Updated radius for grav well <Belaruz 4 GravityWell_KV43SJUZm6hK>, radius is now 1607.46166992
+#>>>Updated radius for grav well <Belaruz 4 GravityWell_yUfll7C2J9YR>, radius is now 1602.87475586
 ## -------------------- ##
 ####################
-#######>>>12:20:12.101 of 4/December/2022, Sunday
+#######>>>12:31:52.165 of 4/December/2022, Sunday
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_GY7W5nQK2tSM>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_t3g6DZKK0003>]
 #>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player', 'AncientCity-1', 'AncientCity-2', 'AncientCity-3', 'AM Voyager-4', 'Armored Voyager-5', 'AM Voyager-6']
-#>>>Refreshed Ship List: ['Player', 'AncientCity-1', 'AncientCity-2', 'AncientCity-3', 'AM Voyager-4', 'Armored Voyager-5', 'AM Voyager-6']
-#>>>Refreshed Ship List: ['Player', 'AncientCity-1', 'AncientCity-2', 'AncientCity-3', 'AM Voyager-4', 'Armored Voyager-5', 'AM Voyager-6']
-#>>>Refreshed Ship List: ['Player', 'AncientCity-1', 'AncientCity-2', 'AncientCity-3', 'AM Voyager-4', 'Armored Voyager-5', 'AM Voyager-6']
-#>>>Refreshed Ship List: ['Player', 'AncientCity-1', 'AncientCity-2', 'AncientCity-3', 'AM Voyager-4', 'Armored Voyager-5', 'AM Voyager-6']
-#>>>Refreshed Ship List: ['Player', 'AncientCity-1', 'AncientCity-2', 'AncientCity-3', 'AM Voyager-4', 'Armored Voyager-5', 'AM Voyager-6']
-#>>>Refreshed Ship List: ['Player', 'AncientCity-1', 'AncientCity-2', 'AncientCity-3', 'AM Voyager-4', 'Armored Voyager-5', 'AM Voyager-6']
+#>>>Refreshed Ship List: ['Player', 'AMVoyager-1', 'AMVoyager-2', 'ArmoredVoyager-3', 'ArmoredVoyager-4', 'AM Voyager-5', 'AM Voyager-6', 'Armored Voyager-7', 'Armored Voyager-8']
+#>>>Refreshed Ship List: ['Player', 'AMVoyager-1', 'AMVoyager-2', 'ArmoredVoyager-3', 'ArmoredVoyager-4', 'AM Voyager-5', 'AM Voyager-6', 'Armored Voyager-7', 'Armored Voyager-8']
+#>>>Refreshed Ship List: ['Player', 'AMVoyager-1', 'AMVoyager-2', 'ArmoredVoyager-3', 'ArmoredVoyager-4', 'AM Voyager-5', 'AM Voyager-6', 'Armored Voyager-7', 'Armored Voyager-8']
+#>>>Refreshed Ship List: ['Player', 'AMVoyager-1', 'AMVoyager-2', 'ArmoredVoyager-3', 'ArmoredVoyager-4', 'AM Voyager-5', 'AM Voyager-6', 'Armored Voyager-7', 'Armored Voyager-8']
+#>>>Refreshed Ship List: ['Player', 'AMVoyager-1', 'AMVoyager-2', 'ArmoredVoyager-3', 'ArmoredVoyager-4', 'AM Voyager-5', 'AM Voyager-6', 'Armored Voyager-7', 'Armored Voyager-8']
+#>>>Refreshed Ship List: ['Player', 'AMVoyager-1', 'AMVoyager-2', 'ArmoredVoyager-3', 'ArmoredVoyager-4', 'AM Voyager-5', 'AM Voyager-6', 'Armored Voyager-7', 'Armored Voyager-8']
+#>>>Refreshed Ship List: ['Player', 'AMVoyager-1', 'AMVoyager-2', 'ArmoredVoyager-3', 'ArmoredVoyager-4', 'AM Voyager-5', 'AM Voyager-6', 'Armored Voyager-7', 'Armored Voyager-8']
+#>>>Refreshed Ship List: ['Player', 'AMVoyager-1', 'AMVoyager-2', 'ArmoredVoyager-3', 'ArmoredVoyager-4', 'AM Voyager-5', 'AM Voyager-6', 'Armored Voyager-7', 'Armored Voyager-8']
+#>>>Refreshed Ship List: ['Player', 'AMVoyager-1', 'AMVoyager-2', 'ArmoredVoyager-3', 'ArmoredVoyager-4', 'AM Voyager-5', 'AM Voyager-6', 'Armored Voyager-7', 'Armored Voyager-8']
 ## -------------------- ##
 ####################
-#######>>>12:20:41.511 of 4/December/2022, Sunday
-#>>>Refreshed Ship List: ['Player', 'AncientCity-1', 'AncientCity-3', 'AM Voyager-4', 'Armored Voyager-5', 'AM Voyager-6']
+#######>>>12:32:18.423 of 4/December/2022, Sunday
+#>>>Refreshed Ship List: ['Player', 'AMVoyager-2', 'ArmoredVoyager-3', 'ArmoredVoyager-4', 'AM Voyager-5', 'Armored Voyager-7', 'Armored Voyager-8', 'DiamondsArmoredVoyager 1', 'ArmoredVoyager 2']
+#>>>Refreshed Ship List: ['Player', 'AMVoyager-2', 'ArmoredVoyager-3', 'ArmoredVoyager-4', 'AM Voyager-5', 'Armored Voyager-7', 'Armored Voyager-8', 'DiamondsArmoredVoyager 1', 'ArmoredVoyager 2']
 ## -------------------- ##
 ####################
-#######>>>12:21:12.771 of 4/December/2022, Sunday
-#>>>Refreshed Ship List: ['Player', 'AncientCity-1', 'AM Voyager-4', 'Armored Voyager-5', 'AM Voyager-6']
+#######>>>12:32:29.222 of 4/December/2022, Sunday
+#>>>Refreshed Ship List: ['Player', 'AMVoyager-2', 'ArmoredVoyager-3', 'ArmoredVoyager-4', 'AM Voyager-5', 'Armored Voyager-7', 'Armored Voyager-8', 'DiamondsArmoredVoyager 1']
 ## -------------------- ##
 ####################
-#######>>>12:21:39.707 of 4/December/2022, Sunday
-#>>>Refreshed Ship List: ['Player', 'AM Voyager-4', 'Armored Voyager-5', 'AM Voyager-6']
+#######>>>12:32:33.935 of 4/December/2022, Sunday
+#>>>Refreshed Ship List: ['Player', 'AMVoyager-2', 'ArmoredVoyager-3', 'ArmoredVoyager-4', 'AM Voyager-5', 'Armored Voyager-7', 'DiamondsArmoredVoyager 1']
+## -------------------- ##
+####################
+#######>>>12:32:57.888 of 4/December/2022, Sunday
+#>>>Refreshed Ship List: ['Player', 'AMVoyager-2', 'ArmoredVoyager-3', 'ArmoredVoyager-4', 'AM Voyager-5', 'Armored Voyager-7', 'DiamondsArmoredVoyager 1']
+## -------------------- ##
+####################
+#######>>>12:32:59.888 of 4/December/2022, Sunday
+#>>>Refreshed Ship List: ['Player', 'AMVoyager-2', 'ArmoredVoyager-3', 'ArmoredVoyager-4', 'Armored Voyager-7', 'DiamondsArmoredVoyager 1']
+## -------------------- ##
+####################
+#######>>>12:33:0.872 of 4/December/2022, Sunday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_t0J5hINZa9Y9>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['AMVoyager-2', 'ArmoredVoyager-3', 'ArmoredVoyager-4', 'Armored Voyager-7', 'DiamondsArmoredVoyager 1', 'Player']
 ########################################
-# 12:21:42.420 of 4/December/2022, Sunday
+# 12:33:13.955 of 4/December/2022, Sunday
 #Ending of log dump - User is quiting the game
 ########################################
