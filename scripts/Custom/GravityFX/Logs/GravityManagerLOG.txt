@@ -1,13 +1,13 @@
-#This is the dump of the LogCreator: <Gravity Manager LogCreator_SA6iB68j0La7>
-#This log file was created on: 3:14:17.0 of 4/December/2022, Sunday
+#This is the dump of the LogCreator: <Gravity Manager LogCreator_P0D4qaquIO80>
+#This log file was created on: 12:17:15.0 of 4/December/2022, Sunday
 ########################################
 ## -------------------- ##
 ####################
-#######>>>3:14:17.0 of 4/December/2022, Sunday
-#>>>Initialized GravityManager_4ZNXlTdlhelz logger
+#######>>>12:17:15.0 of 4/December/2022, Sunday
+#>>>Initialized GravityManager_R7bs438BvoWu logger
 ## -------------------- ##
 ####################
-#######>>>3:14:25.457 of 4/December/2022, Sunday
+#######>>>12:17:25.301 of 4/December/2022, Sunday
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
@@ -17,83 +17,36 @@
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_SXK93jcCCarY>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_KV43SJUZm6hK>]
 #>>>Planets/Suns List: ['Belaruz 4']
 #>>>Refreshed Ship List: ['Player']
-#>>>Updated radius for grav well <Belaruz 4 GravityWell_SXK93jcCCarY>, radius is now 1603.04040527
+#>>>Updated radius for grav well <Belaruz 4 GravityWell_KV43SJUZm6hK>, radius is now 1607.46166992
 ## -------------------- ##
 ####################
-#######>>>3:15:18.063 of 4/December/2022, Sunday
+#######>>>12:20:12.101 of 4/December/2022, Sunday
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_1v0AKoBbs76J>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_GY7W5nQK2tSM>]
 #>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Voyager J-1', 'U.S.S. Voyager J-2', 'U.S.S. Voyager J-3', 'AM Voyager-4', 'AM Voyager-5', 'Armored Voyager-6']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Voyager J-1', 'U.S.S. Voyager J-2', 'U.S.S. Voyager J-3', 'AM Voyager-4', 'AM Voyager-5', 'Armored Voyager-6']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Voyager J-1', 'U.S.S. Voyager J-2', 'U.S.S. Voyager J-3', 'AM Voyager-4', 'AM Voyager-5', 'Armored Voyager-6']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Voyager J-1', 'U.S.S. Voyager J-2', 'U.S.S. Voyager J-3', 'AM Voyager-4', 'AM Voyager-5', 'Armored Voyager-6']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Voyager J-1', 'U.S.S. Voyager J-2', 'U.S.S. Voyager J-3', 'AM Voyager-4', 'AM Voyager-5', 'Armored Voyager-6']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Voyager J-1', 'U.S.S. Voyager J-2', 'U.S.S. Voyager J-3', 'AM Voyager-4', 'AM Voyager-5', 'Armored Voyager-6']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Voyager J-1', 'U.S.S. Voyager J-2', 'U.S.S. Voyager J-3', 'AM Voyager-4', 'AM Voyager-5', 'Armored Voyager-6']
+#>>>Refreshed Ship List: ['Player', 'AncientCity-1', 'AncientCity-2', 'AncientCity-3', 'AM Voyager-4', 'Armored Voyager-5', 'AM Voyager-6']
+#>>>Refreshed Ship List: ['Player', 'AncientCity-1', 'AncientCity-2', 'AncientCity-3', 'AM Voyager-4', 'Armored Voyager-5', 'AM Voyager-6']
+#>>>Refreshed Ship List: ['Player', 'AncientCity-1', 'AncientCity-2', 'AncientCity-3', 'AM Voyager-4', 'Armored Voyager-5', 'AM Voyager-6']
+#>>>Refreshed Ship List: ['Player', 'AncientCity-1', 'AncientCity-2', 'AncientCity-3', 'AM Voyager-4', 'Armored Voyager-5', 'AM Voyager-6']
+#>>>Refreshed Ship List: ['Player', 'AncientCity-1', 'AncientCity-2', 'AncientCity-3', 'AM Voyager-4', 'Armored Voyager-5', 'AM Voyager-6']
+#>>>Refreshed Ship List: ['Player', 'AncientCity-1', 'AncientCity-2', 'AncientCity-3', 'AM Voyager-4', 'Armored Voyager-5', 'AM Voyager-6']
+#>>>Refreshed Ship List: ['Player', 'AncientCity-1', 'AncientCity-2', 'AncientCity-3', 'AM Voyager-4', 'Armored Voyager-5', 'AM Voyager-6']
 ## -------------------- ##
 ####################
-#######>>>3:15:30.669 of 4/December/2022, Sunday
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Voyager J-1', 'U.S.S. Voyager J-2', 'U.S.S. Voyager J-3', 'AM Voyager-4', 'AM Voyager-5', 'Armored Voyager-6', 'Escape Pod 1', 'Escape Pod 2', 'Escape Pod 3', 'Escape Pod 4', 'Escape Pod 5', 'Escape Pod 6', 'Escape Pod 7', 'Escape Pod 8']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Voyager J-1', 'U.S.S. Voyager J-2', 'U.S.S. Voyager J-3', 'AM Voyager-4', 'AM Voyager-5', 'Armored Voyager-6', 'Escape Pod 1', 'Escape Pod 2', 'Escape Pod 3', 'Escape Pod 4', 'Escape Pod 5', 'Escape Pod 6', 'Escape Pod 7', 'Escape Pod 8']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Voyager J-1', 'U.S.S. Voyager J-2', 'U.S.S. Voyager J-3', 'AM Voyager-4', 'AM Voyager-5', 'Armored Voyager-6', 'Escape Pod 1', 'Escape Pod 2', 'Escape Pod 3', 'Escape Pod 4', 'Escape Pod 5', 'Escape Pod 6', 'Escape Pod 7', 'Escape Pod 8']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Voyager J-1', 'U.S.S. Voyager J-2', 'U.S.S. Voyager J-3', 'AM Voyager-4', 'AM Voyager-5', 'Armored Voyager-6', 'Escape Pod 1', 'Escape Pod 2', 'Escape Pod 3', 'Escape Pod 4', 'Escape Pod 5', 'Escape Pod 6', 'Escape Pod 7', 'Escape Pod 8']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Voyager J-1', 'U.S.S. Voyager J-2', 'U.S.S. Voyager J-3', 'AM Voyager-4', 'AM Voyager-5', 'Armored Voyager-6', 'Escape Pod 1', 'Escape Pod 2', 'Escape Pod 3', 'Escape Pod 4', 'Escape Pod 5', 'Escape Pod 6', 'Escape Pod 7', 'Escape Pod 8']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Voyager J-1', 'U.S.S. Voyager J-2', 'U.S.S. Voyager J-3', 'AM Voyager-4', 'AM Voyager-5', 'Armored Voyager-6', 'Escape Pod 1', 'Escape Pod 2', 'Escape Pod 3', 'Escape Pod 4', 'Escape Pod 5', 'Escape Pod 6', 'Escape Pod 7', 'Escape Pod 8']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Voyager J-1', 'U.S.S. Voyager J-2', 'U.S.S. Voyager J-3', 'AM Voyager-4', 'AM Voyager-5', 'Armored Voyager-6', 'Escape Pod 1', 'Escape Pod 2', 'Escape Pod 3', 'Escape Pod 4', 'Escape Pod 5', 'Escape Pod 6', 'Escape Pod 7', 'Escape Pod 8']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Voyager J-1', 'U.S.S. Voyager J-2', 'U.S.S. Voyager J-3', 'AM Voyager-4', 'AM Voyager-5', 'Armored Voyager-6', 'Escape Pod 1', 'Escape Pod 2', 'Escape Pod 3', 'Escape Pod 4', 'Escape Pod 5', 'Escape Pod 6', 'Escape Pod 7', 'Escape Pod 8']
+#######>>>12:20:41.511 of 4/December/2022, Sunday
+#>>>Refreshed Ship List: ['Player', 'AncientCity-1', 'AncientCity-3', 'AM Voyager-4', 'Armored Voyager-5', 'AM Voyager-6']
 ## -------------------- ##
 ####################
-#######>>>3:16:38.870 of 4/December/2022, Sunday
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Voyager J-1', 'U.S.S. Voyager J-2', 'U.S.S. Voyager J-3', 'AM Voyager-4', 'AM Voyager-5', 'Escape Pod 1', 'Escape Pod 2', 'Escape Pod 3', 'Escape Pod 4', 'Escape Pod 5', 'Escape Pod 6', 'Escape Pod 7', 'Escape Pod 8']
+#######>>>12:21:12.771 of 4/December/2022, Sunday
+#>>>Refreshed Ship List: ['Player', 'AncientCity-1', 'AM Voyager-4', 'Armored Voyager-5', 'AM Voyager-6']
 ## -------------------- ##
 ####################
-#######>>>3:17:4.467 of 4/December/2022, Sunday
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Voyager J-1', 'U.S.S. Voyager J-2', 'U.S.S. Voyager J-3', 'AM Voyager-4', 'Escape Pod 1', 'Escape Pod 2', 'Escape Pod 3', 'Escape Pod 4', 'Escape Pod 5', 'Escape Pod 6', 'Escape Pod 7', 'Escape Pod 8', 'DiamondsArmoredVoyager 1']
-## -------------------- ##
-####################
-#######>>>3:17:11.351 of 4/December/2022, Sunday
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Voyager J-1', 'U.S.S. Voyager J-2', 'U.S.S. Voyager J-3', 'AM Voyager-4', 'Escape Pod 1', 'Escape Pod 2', 'Escape Pod 3', 'Escape Pod 4', 'Escape Pod 5', 'Escape Pod 6', 'Escape Pod 7', 'Escape Pod 8', 'DiamondsArmoredVoyager 1']
-## -------------------- ##
-####################
-#######>>>3:17:24.442 of 4/December/2022, Sunday
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Voyager J-1', 'U.S.S. Voyager J-2', 'U.S.S. Voyager J-3', 'Escape Pod 1', 'Escape Pod 2', 'Escape Pod 3', 'Escape Pod 4', 'Escape Pod 5', 'Escape Pod 6', 'Escape Pod 7', 'Escape Pod 8', 'DiamondsArmoredVoyager 1', 'DiamondsArmoredVoyager 2']
-## -------------------- ##
-####################
-#######>>>3:17:32.950 of 4/December/2022, Sunday
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Voyager J-1', 'U.S.S. Voyager J-2', 'U.S.S. Voyager J-3', 'Escape Pod 1', 'Escape Pod 2', 'Escape Pod 3', 'Escape Pod 4', 'Escape Pod 5', 'Escape Pod 6', 'Escape Pod 7', 'Escape Pod 8', 'DiamondsArmoredVoyager 1']
-## -------------------- ##
-####################
-#######>>>3:17:33.233 of 4/December/2022, Sunday
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Voyager J-1', 'U.S.S. Voyager J-2', 'U.S.S. Voyager J-3', 'Escape Pod 1', 'Escape Pod 2', 'Escape Pod 3', 'Escape Pod 4', 'Escape Pod 5', 'Escape Pod 6', 'Escape Pod 7', 'Escape Pod 8', 'DiamondsArmoredVoyager 1']
-## -------------------- ##
-####################
-#######>>>3:17:41.119 of 4/December/2022, Sunday
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Voyager J-1', 'U.S.S. Voyager J-2', 'U.S.S. Voyager J-3', 'Escape Pod 1', 'Escape Pod 2', 'Escape Pod 3', 'Escape Pod 4', 'Escape Pod 5', 'Escape Pod 6', 'Escape Pod 7', 'Escape Pod 8', 'DiamondsArmoredVoyager 1']
-## -------------------- ##
-####################
-#######>>>3:17:41.600 of 4/December/2022, Sunday
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Voyager J-1', 'U.S.S. Voyager J-2', 'U.S.S. Voyager J-3', 'Escape Pod 1', 'Escape Pod 2', 'Escape Pod 3', 'Escape Pod 4', 'Escape Pod 5', 'Escape Pod 6', 'Escape Pod 7', 'Escape Pod 8', 'DiamondsArmoredVoyager 1']
-## -------------------- ##
-####################
-#######>>>3:17:43.801 of 4/December/2022, Sunday
-#>>>Refreshed Ship List: []
-#>>>Added Player to the Ship List
-## -------------------- ##
-####################
-#######>>>3:17:44.500 of 4/December/2022, Sunday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_7W54zsqTGLyD>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['U.S.S. Voyager J-1', 'U.S.S. Voyager J-2', 'U.S.S. Voyager J-3', 'Escape Pod 1', 'Escape Pod 2', 'Escape Pod 3', 'Escape Pod 4', 'Escape Pod 5', 'Escape Pod 6', 'Escape Pod 7', 'Escape Pod 8', 'DiamondsArmoredVoyager 1', 'Player']
-## -------------------- ##
-####################
-#######>>>3:17:46.367 of 4/December/2022, Sunday
-#>>>Refreshed Ship List: ['Player']
+#######>>>12:21:39.707 of 4/December/2022, Sunday
+#>>>Refreshed Ship List: ['Player', 'AM Voyager-4', 'Armored Voyager-5', 'AM Voyager-6']
 ########################################
-# 3:17:55.650 of 4/December/2022, Sunday
+# 12:21:42.420 of 4/December/2022, Sunday
 #Ending of log dump - User is quiting the game
 ########################################

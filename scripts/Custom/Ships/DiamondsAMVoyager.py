@@ -37,6 +37,7 @@ credits = {
 #                                                                                     #
 Foundation.ShipDef.DiamondsAMVoyager = Foundation.FedShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile })
 Foundation.ShipDef.DiamondsAMVoyager.dTechs = {
+"Adv Armor Tech": 1,
 'Multivectral Shields': 30,
 "Phase Cloak": 10,
 'SubModel': {
@@ -72,8 +73,7 @@ Foundation.ShipDef.DiamondsAMVoyager.dTechs = {
                 }
         ],
 },
-"Transphasic Torpedo Immune": 1,
-"Adv Armor Tech": 1  # Please notice that this is only here to allow the non-players to have this special armor and for the armor to apply after Mvam
+"Transphasic Torpedo Immune": 1
 }
 #                                                                                     #
 #######################################################################################
