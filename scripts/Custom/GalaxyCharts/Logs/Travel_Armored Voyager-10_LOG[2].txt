@@ -1,0 +1,34 @@
+#This is the dump of the LogCreator: <Armored Voyager-10 Travel Logger[2] LogCreator_uHbsCSWweXNl>
+#This log file was created on: 0:6:13.697 of 4/December/2022, Sunday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>0:6:13.697 of 4/December/2022, Sunday
+#>>>Initialized Armored Voyager-10 Travel logger
+#>>>SELF = <Armored Voyager-10(742930) Travel_1vv5372DLGv2>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship =  Warship-1
+## -------------------- ##
+####################
+#######>>>0:6:30.863 of 4/December/2022, Sunday
+#>>>Updated Target Ship =  Warship-5
+## -------------------- ##
+####################
+#######>>>0:6:37.206 of 4/December/2022, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...

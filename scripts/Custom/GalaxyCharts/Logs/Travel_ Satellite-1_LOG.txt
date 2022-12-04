@@ -1,0 +1,44 @@
+#This is the dump of the LogCreator: < Satellite-1 Travel Logger LogCreator_ib9HZO46oNOx>
+#This log file was created on: 21:21:35.760 of 3/December/2022, Saturday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>21:21:35.760 of 3/December/2022, Saturday
+#>>>Initialized  Satellite-1 Travel logger
+#>>>SELF = < Satellite-1(1094071) Travel_ku82q89187S7>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>21:21:44.293 of 3/December/2022, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>21:21:47.677 of 3/December/2022, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>21:23:7.177 of 3/December/2022, Saturday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

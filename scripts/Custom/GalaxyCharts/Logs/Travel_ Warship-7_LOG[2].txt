@@ -1,0 +1,62 @@
+#This is the dump of the LogCreator: < Warship-7 Travel Logger[2] LogCreator_437MD5L5DA68>
+#This log file was created on: 0:6:13.697 of 4/December/2022, Sunday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>0:6:13.697 of 4/December/2022, Sunday
+#>>>Initialized  Warship-7 Travel logger
+#>>>SELF = < Warship-7(741378) Travel_zRqVHTU38eBH>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>0:6:24.050 of 4/December/2022, Sunday
+#>>>Updated Target Ship = Armored Voyager-10
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:6:24.630 of 4/December/2022, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:6:24.959 of 4/December/2022, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:6:25.230 of 4/December/2022, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:6:25.477 of 4/December/2022, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:6:25.949 of 4/December/2022, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:6:26.353 of 4/December/2022, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:6:26.897 of 4/December/2022, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>0:6:33.513 of 4/December/2022, Sunday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

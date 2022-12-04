@@ -1,0 +1,68 @@
+#This is the dump of the LogCreator: <Armored Voyager-3 Travel Logger LogCreator_N54ISWcnkqNQ>
+#This log file was created on: 21:2:23.659 of 3/December/2022, Saturday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>21:2:23.659 of 3/December/2022, Saturday
+#>>>Initialized Armored Voyager-3 Travel logger
+#>>>SELF = <Armored Voyager-3(309806) Travel_WGG704m6V2N6>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>21:2:31.055 of 3/December/2022, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>21:2:31.693 of 3/December/2022, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>21:2:31.976 of 3/December/2022, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>21:2:32.343 of 3/December/2022, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>21:2:33.076 of 3/December/2022, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>21:5:27.824 of 3/December/2022, Saturday
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Enable Towing: 0
+#>>>Travelling procedures initiated...
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Extra path: AI ship warping to None
+#>>> -Checked: Ship can warp, travel procedures started.
+#>>> -Speed Check:
+#>>>     -Current:  9.97999954224
+#>>>     -Real Speed:  4388.19091797
+#>>>     -Cruise:  9.98
+#>>>     -Max:  9.99
+#>>>     -Actual Cruise:  9.97999954224
+#>>>     -Actual Max:  9.98999977112
+#>>> -Started playing engaging sequence.
+## -------------------- ##
+####################
+#######>>>21:5:34.224 of 3/December/2022, Saturday
+#>>> -Finishing travelling procedures...
+#>>> -Finished. AI Ship travelling to None.

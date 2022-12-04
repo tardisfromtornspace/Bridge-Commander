@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <U.S.S. Voyager J-3 Travel Logger LogCreator_k0yPwOo018w3>
-#This log file was created on: 18:16:7.338 of 3/December/2022, Saturday
+#This is the dump of the LogCreator: <U.S.S. Voyager J-3 Travel Logger LogCreator_v93F86E0yk1X>
+#This log file was created on: 3:15:18.063 of 4/December/2022, Sunday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>18:16:7.338 of 3/December/2022, Saturday
+#######>>>3:15:18.063 of 4/December/2022, Sunday
 #>>>Initialized U.S.S. Voyager J-3 Travel logger
-#>>>SELF = <U.S.S. Voyager J-3(264579) Travel_4Pca96OILr4x>
+#>>>SELF = <U.S.S. Voyager J-3(70258) Travel_Ek5CIiVKH824>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -21,36 +21,83 @@ Updating Travelling Procedures...
 #>>>Chaser base class initialization complete.
 #>>>Target Ship = NONE
 #>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>3:15:19.664 of 4/December/2022, Sunday
 #>>>Updated Target Ship = Player
 ## -------------------- ##
 ####################
-#######>>>18:16:16.557 of 3/December/2022, Saturday
-#>>>Updated Target Ship = AM Voyager-9
+#######>>>3:15:26.468 of 4/December/2022, Sunday
+#>>>Updated Target Ship = Armored Voyager-6
 ## -------------------- ##
 ####################
-#######>>>18:16:34.753 of 3/December/2022, Saturday
-#>>>Updated Target Ship = DiamondsArmoredVoyager 4
+#######>>>3:15:32.605 of 4/December/2022, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>18:21:7.504 of 3/December/2022, Saturday
-#>>>Updated Target Ship = DiamondsArmoredVoyager 3
+#######>>>3:15:32.865 of 4/December/2022, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>18:21:9.161 of 3/December/2022, Saturday
-#>>>Updated Target Ship = DiamondsArmoredVoyager 4
+#######>>>3:15:33.219 of 4/December/2022, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>18:21:22.971 of 3/December/2022, Saturday
-#>>>Updated Target Ship = DiamondsArmoredVoyager 3
+#######>>>3:15:33.419 of 4/December/2022, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>18:21:41.087 of 3/December/2022, Saturday
-#>>>Updated Target Ship = Plasma Stream Firepoint6_t
+#######>>>3:15:33.707 of 4/December/2022, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>18:23:6.618 of 3/December/2022, Saturday
+#######>>>3:15:34.089 of 4/December/2022, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>3:15:34.307 of 4/December/2022, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>3:15:34.958 of 4/December/2022, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>3:15:35.419 of 4/December/2022, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>3:15:35.968 of 4/December/2022, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>3:15:36.502 of 4/December/2022, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>3:15:37.019 of 4/December/2022, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>3:15:37.473 of 4/December/2022, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>3:15:38.223 of 4/December/2022, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>3:15:38.701 of 4/December/2022, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>3:16:33.119 of 4/December/2022, Sunday
 #>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>3:17:34.572 of 4/December/2022, Sunday
+#>>>Updated Target Ship = DiamondsArmoredVoyager 1
 ########################################
-# 18:35:59.708 of 3/December/2022, Saturday
+# 3:17:55.650 of 4/December/2022, Sunday
 #Ending of log dump - User is quiting the game
 ########################################

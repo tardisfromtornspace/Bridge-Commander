@@ -1,0 +1,33 @@
+#This is the dump of the LogCreator: < Warship-1 Travel Logger LogCreator_KAuvSTI8SzR9>
+#This log file was created on: 3:13:39.417 of 4/December/2022, Sunday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>3:13:39.417 of 4/December/2022, Sunday
+#>>>Initialized  Warship-1 Travel logger
+#>>>SELF = < Warship-1(951848) Travel_I20E0wSVlHbO>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>3:13:49.496 of 4/December/2022, Sunday
+#>>>Updated Target Ship = AM Voyager-8
+## -------------------- ##
+####################
+#######>>>3:14:4.108 of 4/December/2022, Sunday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

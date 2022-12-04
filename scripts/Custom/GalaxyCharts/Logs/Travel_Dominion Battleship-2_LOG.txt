@@ -1,0 +1,37 @@
+#This is the dump of the LogCreator: <Dominion Battleship-2 Travel Logger LogCreator_u5f41pt87jU5>
+#This log file was created on: 0:48:9.981 of 4/December/2022, Sunday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>0:48:9.981 of 4/December/2022, Sunday
+#>>>Initialized Dominion Battleship-2 Travel logger
+#>>>SELF = <Dominion Battleship-2(804225) Travel_cRPg1k87M31i>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>0:48:18.989 of 4/December/2022, Sunday
+#>>>Updated Target Ship = AM Voyager-5
+## -------------------- ##
+####################
+#######>>>0:48:57.493 of 4/December/2022, Sunday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 0:52:59.473 of 4/December/2022, Sunday
+#Ending of log dump - User is quiting the game
+########################################

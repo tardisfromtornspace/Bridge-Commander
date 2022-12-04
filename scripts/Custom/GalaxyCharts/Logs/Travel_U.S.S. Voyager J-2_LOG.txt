@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <U.S.S. Voyager J-2 Travel Logger LogCreator_516bRY48KK1z>
-#This log file was created on: 18:16:7.338 of 3/December/2022, Saturday
+#This is the dump of the LogCreator: <U.S.S. Voyager J-2 Travel Logger LogCreator_i3915t57k86K>
+#This log file was created on: 3:15:18.063 of 4/December/2022, Sunday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>18:16:7.338 of 3/December/2022, Saturday
+#######>>>3:15:18.063 of 4/December/2022, Sunday
 #>>>Initialized U.S.S. Voyager J-2 Travel logger
-#>>>SELF = <U.S.S. Voyager J-2(264021) Travel_LDrsUz936fAq>
+#>>>SELF = <U.S.S. Voyager J-2(69747) Travel_eV45aGC6YH3w>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -21,48 +21,31 @@ Updating Travelling Procedures...
 #>>>Chaser base class initialization complete.
 #>>>Target Ship = NONE
 #>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>3:15:19.664 of 4/December/2022, Sunday
 #>>>Updated Target Ship = Player
 ## -------------------- ##
 ####################
-#######>>>18:16:16.557 of 3/December/2022, Saturday
-#>>>Updated Target Ship = AM Voyager-10
+#######>>>3:15:26.468 of 4/December/2022, Sunday
+#>>>Updated Target Ship = AM Voyager-5
 ## -------------------- ##
 ####################
-#######>>>18:16:34.753 of 3/December/2022, Saturday
-#>>>Updated Target Ship = DiamondsArmoredVoyager 5
+#######>>>3:16:48.951 of 4/December/2022, Sunday
+#>>>Updated Target Ship = AM Voyager-4
 ## -------------------- ##
 ####################
-#######>>>18:17:40.274 of 3/December/2022, Saturday
+#######>>>3:17:21.268 of 4/December/2022, Sunday
 #>>>Updated Target Ship = DiamondsArmoredVoyager 1
 ## -------------------- ##
 ####################
-#######>>>18:20:57.455 of 3/December/2022, Saturday
-#>>>Updated Target Ship = Plasma Stream Firepoint3_t
+#######>>>3:17:24.442 of 4/December/2022, Sunday
+#>>>Updated Target Ship = DiamondsArmoredVoyager 2
 ## -------------------- ##
 ####################
-#######>>>18:21:2.984 of 3/December/2022, Saturday
-#>>>Updated Target Ship = DiamondsArmoredVoyager 4
-## -------------------- ##
-####################
-#######>>>18:21:4.121 of 3/December/2022, Saturday
-#>>>Updated Target Ship = Plasma Stream Firepoint4_t
-## -------------------- ##
-####################
-#######>>>18:21:7.106 of 3/December/2022, Saturday
-#>>>Updated Target Ship = DiamondsArmoredVoyager 4
-## -------------------- ##
-####################
-#######>>>18:21:7.504 of 3/December/2022, Saturday
-#>>>Updated Target Ship = Player
-## -------------------- ##
-####################
-#######>>>18:21:9.161 of 3/December/2022, Saturday
-#>>>Updated Target Ship = DiamondsArmoredVoyager 4
-## -------------------- ##
-####################
-#######>>>18:21:22.971 of 3/December/2022, Saturday
-#>>>Updated Target Ship = Player
+#######>>>3:17:29.950 of 4/December/2022, Sunday
+#>>>Updated Target Ship = DiamondsArmoredVoyager 1
 ########################################
-# 18:35:59.708 of 3/December/2022, Saturday
+# 3:17:55.650 of 4/December/2022, Sunday
 #Ending of log dump - User is quiting the game
 ########################################

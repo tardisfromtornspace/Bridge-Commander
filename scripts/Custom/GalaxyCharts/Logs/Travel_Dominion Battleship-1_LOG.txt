@@ -1,0 +1,59 @@
+#This is the dump of the LogCreator: <Dominion Battleship-1 Travel Logger LogCreator_6P8OozWYJs81>
+#This log file was created on: 0:48:9.981 of 4/December/2022, Sunday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>0:48:9.981 of 4/December/2022, Sunday
+#>>>Initialized Dominion Battleship-1 Travel logger
+#>>>SELF = <Dominion Battleship-1(803597) Travel_3YuS5cH2E22U>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>0:48:19.127 of 4/December/2022, Sunday
+#>>>Updated Target Ship = AM Voyager-6
+## -------------------- ##
+####################
+#######>>>0:48:57.028 of 4/December/2022, Sunday
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Enable Towing: 0
+#>>>Travelling procedures initiated...
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Extra path: AI ship warping to None
+#>>> -Checked: Ship can warp, travel procedures started.
+#>>> -Speed Check:
+#>>>     -Current:  8.5
+#>>>     -Real Speed:  1253.54907227
+#>>>     -Cruise:  8.5
+#>>>     -Max:  8.5
+#>>>     -Actual Cruise:  8.5
+#>>>     -Actual Max:  8.5
+#>>> -Started playing engaging sequence.
+#>>>Updated Target Ship = DiamondsArmoredVoyager 2
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+## -------------------- ##
+####################
+#######>>>0:49:3.386 of 4/December/2022, Sunday
+#>>> -Finishing travelling procedures...
+#>>> -Finished. AI Ship travelling to None.
+########################################
+# 0:52:59.473 of 4/December/2022, Sunday
+#Ending of log dump - User is quiting the game
+########################################

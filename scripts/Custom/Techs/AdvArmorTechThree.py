@@ -1,4 +1,3 @@
-from bcdebug import debug
 import App
 import FoundationTech
 import MissionLib
@@ -6,6 +5,8 @@ import loadspacehelper
 import Bridge.BridgeUtils
 import Lib.LibEngineering
 import math
+from bcdebug import debug
+
 
 """
 
@@ -63,9 +64,17 @@ REPLACE_MODEL_MSG = 208
 SET_TARGETABLE_MSG = 209
 
 global sNewShipScript
-sNewShipScript = None
+sNewShipScript = {}
 global sOriginalShipScript
-OriginalShipScript = None
+sOriginalShipScript = {}
+global AdvArmorRecord
+AdvArmorRecord = {}
+global vd_rad_mod
+vd_rad_mod = {}
+global vd_str_mod
+vd_str_mod = {}
+global pShipp
+pShipp = {}
 
 #global LastShipType
 LastShipType = "nonArmored"
@@ -106,16 +115,21 @@ class AdvArmorTechTwoDef(FoundationTech.TechDef):
 			pBridge = App.g_kSetManager.GetSet("bridge")
 			g_pTactical = App.CharacterClass_GetObject(pBridge,"Tactical")
 			pTacticalMenu = Bridge.BridgeUtils.GetBridgeMenu("Tactical")
-			AdvArmorRecord=0
-			vd_rad_mod=0.0
-			vd_str_mod=0.0
-			pShipp = pShip
+			AdvArmorRecord[pShip.GetName()] = 0
+			vd_rad_mod[pShip.GetName()] = 0.0
+			vd_str_mod[pShip.GetName()] = 0.0
+			pShipp[pShip.GetName()] = pShip
+
+			print AdvArmorRecord[pShip.GetName()]
+			print vd_rad_mod[pShip.GetName()]
+			print vd_str_mod[pShip.GetName()]
+			print pShipp[pShip.GetName()]
 			mustGo = 0
 			if (pShip.GetName() == pPlayer.GetName()):
 				if not self.bAddedWarpListener.has_key(pShip.GetName()):
 					if LastShipType == "nonArmored":
 						print ("Ok the previous was not armored")
-						ArmorButton = Lib.LibEngineering.CreateMenuButton("Plating Offline", "Tactical", __name__ + ".AdvArmorToggle")
+						ArmorButton = Lib.LibEngineering.CreateMenuButton("Plating Offline", "Tactical", __name__ + ".AdvArmorTogglePlayer")
 					else:
 						print ("Ok the previous WAS armored, attempting to get the past button")
 						try:
@@ -129,15 +143,17 @@ class AdvArmorTechTwoDef(FoundationTech.TechDef):
 								#DeleteMenuButton("Tactical", "Plating Online")
 							except:
 								print("No armor button to grab, huh")
-					#ArmorButton = Lib.LibEngineering.CreateMenuButton("Plating Offline", "Tactical", __name__ + ".AdvArmorToggle")
 					try:
 						LastShipType = "yesArmored"
 					except:
 						print("It doesn't let me change the LastShipType witb")
+					App.g_kEventManager.AddBroadcastPythonFuncHandler(App.ET_SUBSYSTEM_DAMAGED, pMission, __name__ + ".SubDamagePlayer")
 					self.bAddedWarpListener[pShip.GetName()] = 1
 			else:
 				if not self.bAddedWarpListener.has_key(pShip.GetName()):
 					pShip.AddPythonFuncHandlerForInstance(App.ET_SUBSYSTEM_STATE_CHANGED, __name__ + ".SubsystemStateChanged")
+					pShip.AddPythonFuncHandlerForInstance(App.ET_SUBSYSTEM_DAMAGED, __name__ + ".SubDamage") # to-do aniadi esto y luego pMission to-do prueba pShip
+					#App.g_kEventManager.AddBroadcastPythonFuncHandler(App.ET_SUBSYSTEM_DAMAGED, pMission, __name__ + ".SubDamage") # TO-DO AÑADI PSHIP BORRAR SI CRASHEA EL SISTEMA
 					self.bAddedWarpListener[pShip.GetName()] = 1
 				mustGo = 1
 
@@ -151,9 +167,13 @@ class AdvArmorTechTwoDef(FoundationTech.TechDef):
 				imForced = 0
 
 			if (mustGo == 1 or imForced == 1):
-				AdvArmorToggleFirst(pShip)
+				if (pShip.GetName() == pPlayer.GetName()):
+					AdvArmorTogglePlayerFirst()
+				else:
+					AdvArmorToggleAIFirst(pShip)
+					
 
-			App.g_kEventManager.AddBroadcastPythonFuncHandler(App.ET_SUBSYSTEM_DAMAGED, pMission, __name__ + ".SubDamage")
+			
 			print("SUCCESS while attaching advarmortechthree")
 		except:
 			print("ERROR while attaching advarmortechthree")                
@@ -166,7 +186,7 @@ class AdvArmorTechTwoDef(FoundationTech.TechDef):
                 if pShip:
 			# remove the listeners
 			print("Have to detach advarmortechtwo")
-			if (pShip == pPlayer or pShip.GetName() == pPlayer.GetName()):
+			if (pShip.GetName() == pPlayer.GetName()):
 				try:
 					DeleteMenuButton("Tactical", "Plating Offline")
 				except:
@@ -174,30 +194,44 @@ class AdvArmorTechTwoDef(FoundationTech.TechDef):
 						DeleteMenuButton("Tactical", "Plating Online")
 					except:
 						print("No armor button to delete, huh")
+				pShip.RemoveHandlerForInstance(App.ET_SUBSYSTEM_DAMAGED, __name__ + ".SubDamagePlayer")
 			else:
 				pShip.RemoveHandlerForInstance(App.ET_SUBSYSTEM_STATE_CHANGED, __name__ + ".SubsystemStateChanged")
+				pShip.RemoveHandlerForInstance(App.ET_SUBSYSTEM_DAMAGED, __name__ + ".SubDamage")
 			if self.bAddedWarpListener.has_key(pShip.GetName()):
 				del self.bAddedWarpListener[pShip.GetName()]
+				del AdvArmorRecord[pShip.GetName()]
+				del vd_rad_mod[pShip.GetName()]
+				del vd_str_mod[pShip.GetName()]
+				del pShipp[pShip.GetName()]
+
+        def SubsystemStateChanged(pObject, pEvent):
+                debug(__name__ + ", SubsystemStateChanged")
+                pShip = App.ShipClass_Cast(pObject)
+                pSubsystem = pEvent.GetSource()
+                print "Ship %s with AdvArmorTech2 has changed a subsystem" % pShip.GetName()
+
+        	# if the subsystem that changes its power is a weapon
+                if pSubsystem.IsTypeOf(App.CT_WEAPON_SYSTEM):
+        		# set wings for this alert state
+        		print "Ship %s with AdvArmorTech2 has changed the weapon subsystem" % pShip.GetName()
+                        AdvArmorToggleAI(pObject, pEvent, pShip)
+		
+                pObject.CallNextHandler(pEvent)
                 
 oAdvArmorTechTwo = AdvArmorTechTwoDef("Adv Armor Tech")
 
-def SubsystemStateChanged(pObject, pEvent):
-        debug(__name__ + ", SubsystemStateChanged")
-        pShip = App.ShipClass_Cast(pObject)
-        pSubsystem = pEvent.GetSource()
-        print "Ship %s with AdvArmorTech2 has changed a subsystem" % pShip.GetName()
-
-	# if the subsystem that changes its power is a weapon
-        if pSubsystem.IsTypeOf(App.CT_WEAPON_SYSTEM):
-		# set wings for this alert state
-		print "Ship %s with AdvArmorTech2 has changed the weapon subsystem" % pShip.GetName()
-                AdvArmorToggleAI(pObject, pEvent, pShip)
-		
-        pObject.CallNextHandler(pEvent)
 
 # called when subsystem on any ship is damaged
-def SubDamage(pObject, pEvent):
-	AdvArmor()
+def SubDamage(pObject, pEvent): # TO-DO ARREGLAR ESTO, NO CAPTA NINGUN OBJETO
+	pShip = App.ShipClass_Cast(pObject)
+	print pObject # ARREGLAR, ESTO SON CMISSION INSTANCE, NO LO QUE QUEREMOS
+	AdvArmor(pShip)
+	pObject.CallNextHandler(pEvent)
+
+# called when subsystem on the player ship is damaged
+def SubDamagePlayer(pObject, pEvent):
+	AdvArmorPlayer()
 	pObject.CallNextHandler(pEvent)
 
 # Replaces the Model of pShip
@@ -214,7 +248,7 @@ def ReplaceModel(pShip, sNewShipScript):
 	if App.g_kUtopiaModule.IsMultiplayer():
 		MPSentReplaceModelMessage(pShip, sNewShipScript)
 
-def AdvArmor():
+def AdvArmorPlayer(): # For player
 	global AdvArmorRecord
 	global ArmorButton
 	global vd_rad_mod
@@ -223,8 +257,7 @@ def AdvArmor():
 	global sOriginalShipScript
 	global pShipp
 	armor_ratio=0.0
-	pShip=pShipp
-	pPlayer=MissionLib.GetPlayer()
+	pShip=MissionLib.GetPlayer()
 	pShipModule=__import__(pShip.GetScript())
 	try:
 		armor_ratio=pShipModule.GetArmorRatio()
@@ -239,30 +272,24 @@ def AdvArmor():
 	pHull=pShip.GetHull()
 	if (pHull==None):
 		return
-	theCondition = 0
-	if (pShip == pPlayer):
-		BtnName=App.TGString()
-		ArmorButton.GetName(BtnName)
-		theCondition = BtnName.Compare(App.TGString("Plating Online"),1)
-	else:
-		theCondition = not AdvArmorRecord
-	
-	if (theCondition):
+
+	BtnName=App.TGString()
+	ArmorButton.GetName(BtnName)
+	if (BtnName.Compare(App.TGString("Plating Online"),1)):
 		return
 
 	batt_chg=pPower.GetMainBatteryPower()
 	batt_limit=pPower.GetMainBatteryLimit()
 	if (batt_chg<=(batt_limit*.05)):
-		if (pShip == pPlayer):
-			ArmorButton.SetName(App.TGString("Plating Offline"))
-		if (AdvArmorRecord):
-			MissionLib.ShowSubsystems(AdvArmorRecord)
-			AdvArmorRecord=0
+		ArmorButton.SetName(App.TGString("Plating Offline"))
+		if (AdvArmorRecord[pShip.GetName()]):
+			MissionLib.ShowSubsystems(AdvArmorRecord[pShip.GetName()])
+			AdvArmorRecord[pShip.GetName()]=0
 			pShip.SetInvincible(0)
-			pShip.SetVisibleDamageRadiusModifier(vd_rad_mod)
-			pShip.SetVisibleDamageStrengthModifier(vd_str_mod)
-		if (not sOriginalShipScript == None):
-			ReplaceModel(pShip, sOriginalShipScript)
+			pShip.SetVisibleDamageRadiusModifier(vd_rad_mod[pShip.GetName()])
+			pShip.SetVisibleDamageStrengthModifier(vd_str_mod[pShip.GetName()])
+		if (not sOriginalShipScript[pShip.GetName()] == None):
+			ReplaceModel(pShip, sOriginalShipScript[pShip.GetName()])
 		return
 	armor_pwr=batt_chg*armor_ratio
 	hull_max=pHull.GetMaxCondition()
@@ -274,16 +301,77 @@ def AdvArmor():
 	else:
 		pHull.SetCondition(hull_cond+armor_pwr)
 		armor_pwr=0
-		if (pShip == pPlayer):
-			ArmorButton.SetName(App.TGString("Plating Offline"))
-		if (AdvArmorRecord):
-			MissionLib.ShowSubsystems(AdvArmorRecord)
-			AdvArmorRecord=0
+		ArmorButton.SetName(App.TGString("Plating Offline"))
+		if (AdvArmorRecord[pShip.GetName()]):
+			MissionLib.ShowSubsystems(AdvArmorRecord[pShip.GetName()])
+			AdvArmorRecord[pShip.GetName()]=0
 			pShip.SetInvincible(0)
-			pShip.SetVisibleDamageRadiusModifier(vd_rad_mod)
-			pShip.SetVisibleDamageStrengthModifier(vd_str_mod)		
-			if (not sOriginalShipScript == None):
-				ReplaceModel(pShip, sOriginalShipScript)
+			pShip.SetVisibleDamageRadiusModifier(vd_rad_mod[pShip.GetName()])
+			pShip.SetVisibleDamageStrengthModifier(vd_str_mod[pShip.GetName()])		
+			if (not sOriginalShipScript[pShip.GetName()] == None):
+				ReplaceModel(pShip, sOriginalShipScript[pShip.GetName()])
+	pPower.SetMainBatteryPower(armor_pwr/armor_ratio)
+	return
+
+def AdvArmor(pShip): # for AI
+	global AdvArmorRecord
+	global ArmorButton
+	global vd_rad_mod
+	global vd_str_mod
+	global sNewShipScript
+	global sOriginalShipScript
+	global pShipp
+	armor_ratio=0.0
+	#pShip=pShipp
+	pShipModule=__import__(pShip.GetScript())
+	try:
+		armor_ratio=pShipModule.GetArmorRatio()
+	except:
+		OldArmor=GetAdvArmor(pShip)
+		if (OldArmor==0):
+			return
+		armor_ratio=.3
+	pPower=pShip.GetPowerSubsystem()
+	if (pPower==None):
+		return
+	pHull=pShip.GetHull()
+	if (pHull==None):
+		return
+	theCondition = not AdvArmorRecord[pShip.GetName()]
+	
+	if (theCondition):
+		return
+
+	batt_chg=pPower.GetMainBatteryPower()
+	batt_limit=pPower.GetMainBatteryLimit()
+	if (batt_chg<=(batt_limit*.05)):
+		if (AdvArmorRecord[pShip.GetName()]):
+			MissionLib.ShowSubsystems(AdvArmorRecord[pShip.GetName()])
+			AdvArmorRecord[pShip.GetName()]=0
+			pShip.SetInvincible(0)
+			pShip.SetVisibleDamageRadiusModifier(vd_rad_mod[pShip.GetName()])
+			pShip.SetVisibleDamageStrengthModifier(vd_str_mod[pShip.GetName()])
+		if (not sOriginalShipScript[pShip.GetName()] == None):
+			ReplaceModel(pShip, sOriginalShipScript[pShip.GetName()])
+		return
+	armor_pwr=batt_chg*armor_ratio
+	hull_max=pHull.GetMaxCondition()
+	hull_cond=pHull.GetCondition()
+	hull_dmg=hull_max-hull_cond
+	if (armor_pwr>=hull_dmg):
+		armor_pwr=armor_pwr-hull_dmg
+		pHull.SetCondition(hull_max)
+	else:
+		pHull.SetCondition(hull_cond+armor_pwr)
+		armor_pwr=0
+		if (AdvArmorRecord[pShip.GetName()]):
+			MissionLib.ShowSubsystems(AdvArmorRecord[pShip.GetName()])
+			AdvArmorRecord[pShip.GetName()]=0
+			pShip.SetInvincible(0)
+			pShip.SetVisibleDamageRadiusModifier(vd_rad_mod[pShip.GetName()])
+			pShip.SetVisibleDamageStrengthModifier(vd_str_mod[pShip.GetName()])		
+			if (not sOriginalShipScript[pShip.GetName()] == None):
+				ReplaceModel(pShip, sOriginalShipScript[pShip.GetName()])
 	pPower.SetMainBatteryPower(armor_pwr/armor_ratio)
 	return
 
@@ -299,16 +387,14 @@ def GetAdvArmor(pShip):
 	return(pAdvArmor)
 
 # called when armor button is clicked
-def AdvArmorToggle(pObject, pEvent):
+def AdvArmorTogglePlayer(pObject, pEvent):
 	global AdvArmorRecord
 	global ArmorButton
 	global vd_rad_mod
 	global vd_str_mod
 	global sNewShipScript
 	global sOriginalShipScript
-	global pShipp
-	pShip=pShipp
-	pPlayer=MissionLib.GetPlayer()
+	pShip=MissionLib.GetPlayer()
 	pShipModule=__import__(pShip.GetScript())
 
 	try:
@@ -322,71 +408,58 @@ def AdvArmorToggle(pObject, pEvent):
 	try:
 		kStats=pShipModule.GetShipStats
 		if (kStats.has_key('DamageRadMod')):
-			vd_rad_mod=kStats['DamageRadMod']
+			vd_rad_mod[pShip.GetName()]=kStats['DamageRadMod']
 		else:
-			vd_rad_mod=1
+			vd_rad_mod[pShip.GetName()]=1
 		if (kStats.has_key('DamageStrMod')):
-			vd_str_mod=kStats['DamageStrMod']
+			vd_str_mod[pShip.GetName()]=kStats['DamageStrMod']
 		else:
-			vd_str_mod=1
+			vd_str_mod[pShip.GetName()]=1
 	except:
 		try:
-			vd_rad_mod=pShipModule.GetDamageRadMod()
-			vd_str_mod=pShipModule.GetDamageStrMod()
-			print vd_rad_mod
-			print vd_str_mod
+			vd_rad_mod[pShip.GetName()]=pShipModule.GetDamageRadMod()
+			vd_str_mod[pShip.GetName()]=pShipModule.GetDamageStrMod()
 		except:
 			print "No visual changes, understood"
-			vd_rad_mod=1
-			vd_str_mod=1
+			vd_rad_mod[pShip.GetName()]=1
+			vd_str_mod[pShip.GetName()]=1
 	try:
 		if (kStats.has_key('ArmouredModel')):
 			print "Hey I got it, extra model armour"
-			sNewShipScript = kStats['ArmouredModel']
-			print sNewShipScript
-			sOriginalShipScript = kStats["OriginalModel"]
-			#ReplaceModel(pShip, sNewShipScript)
+			sNewShipScript[pShip.GetName()] = kStats['ArmouredModel']
+			sOriginalShipScript[pShip.GetName()] = kStats["OriginalModel"]
 	except:
 		try:
-			sNewShipScript=pShipModule.GetArmouredModel()
-			sOriginalShipScript=pShipModule.GetOriginalShipModel()
-			print sNewShipScript
-			print sOriginalShipScript
+			sNewShipScript[pShip.GetName()]=pShipModule.GetArmouredModel()
+			sOriginalShipScript[pShip.GetName()]=pShipModule.GetOriginalShipModel()
 		except:
 			print "No visual armour, understood"
-			sNewShipScript = None
-			sOriginalShipScript = None
+			sNewShipScript[pShip.GetName()] = None
+			sOriginalShipScript[pShip.GetName()] = None
 
-	theCondition = 0
-	if (pShip == pPlayer):
-		BtnName=App.TGString()
-		ArmorButton.GetName(BtnName)
-		theCondition = BtnName.Compare(App.TGString("Plating Online"),1)
-	else:
-		theCondition = not AdvArmorRecord
-	
-		
-	if not (theCondition):
-		if (pShip == pPlayer):
-			ArmorButton.SetName(App.TGString("Plating Offline"))
-		if (AdvArmorRecord):
-			MissionLib.ShowSubsystems(AdvArmorRecord)
-			AdvArmorRecord=0
+	BtnName=App.TGString()
+	ArmorButton.GetName(BtnName)
+
+	if not (BtnName.Compare(App.TGString("Plating Online"),1)):
+		ArmorButton.SetName(App.TGString("Plating Offline"))
+		conditionA = AdvArmorRecord[pShip.GetName()]
+		if (conditionA):
+			MissionLib.ShowSubsystems(AdvArmorRecord[pShip.GetName()])
+			AdvArmorRecord[pShip.GetName()]=0
 			pShip.SetInvincible(0)
-			pShip.SetVisibleDamageRadiusModifier(vd_rad_mod)
-			pShip.SetVisibleDamageStrengthModifier(vd_str_mod)
-			if not (sOriginalShipScript == None):
-				ReplaceModel(pShip, sOriginalShipScript)
+			pShip.SetVisibleDamageRadiusModifier(vd_rad_mod[pShip.GetName()])
+			pShip.SetVisibleDamageStrengthModifier(vd_str_mod[pShip.GetName()])
+			if not (sOriginalShipScript[pShip.GetName()] == None):
+				ReplaceModel(pShip, sOriginalShipScript[pShip.GetName()])
 	else:
-		if (pShip == pPlayer):
-			ArmorButton.SetName(App.TGString("Plating Online"))
-		AdvArmorRecord=MissionLib.HideSubsystems(pShip)
+		ArmorButton.SetName(App.TGString("Plating Online"))
+		AdvArmorRecord[pShip.GetName()]=MissionLib.HideSubsystems(pShip)
 		pShip.SetInvincible(1)
 		pShip.SetVisibleDamageRadiusModifier(0.0)
 		pShip.SetVisibleDamageStrengthModifier(0.0)
-		if sNewShipScript:
-			ReplaceModel(pShip, sNewShipScript)
-		AdvArmor()
+		if sNewShipScript[pShip.GetName()]:
+			ReplaceModel(pShip, sNewShipScript[pShip.GetName()])
+		AdvArmorPlayer()
 	return
 
 # called when armor button is clicked
@@ -397,9 +470,6 @@ def AdvArmorToggleAI(pObject, pEvent, pShip):
 	global vd_str_mod
 	global sNewShipScript
 	global sOriginalShipScript
-	#global pShipp
-	#pShip=pShipp
-	pPlayer=MissionLib.GetPlayer()
 	pShipModule=__import__(pShip.GetScript())
 
 	try:
@@ -413,84 +483,64 @@ def AdvArmorToggleAI(pObject, pEvent, pShip):
 	try:
 		kStats=pShipModule.GetShipStats
 		if (kStats.has_key('DamageRadMod')):
-			vd_rad_mod=kStats['DamageRadMod']
+			vd_rad_mod[pShip.GetName()]=kStats['DamageRadMod']
 		else:
-			vd_rad_mod=1
+			vd_rad_mod[pShip.GetName()]=1
 		if (kStats.has_key('DamageStrMod')):
-			vd_str_mod=kStats['DamageStrMod']
+			vd_str_mod[pShip.GetName()]=kStats['DamageStrMod']
 		else:
-			vd_str_mod=1
+			vd_str_mod[pShip.GetName()]=1
 	except:
 		try:
-			vd_rad_mod=pShipModule.GetDamageRadMod()
-			vd_str_mod=pShipModule.GetDamageStrMod()
-			print vd_rad_mod
-			print vd_str_mod
+			vd_rad_mod[pShip.GetName()]=pShipModule.GetDamageRadMod()
+			vd_str_mod[pShip.GetName()]=pShipModule.GetDamageStrMod()
 		except:
 			print "No visual changes, understood"
-			vd_rad_mod=1
-			vd_str_mod=1
+			vd_rad_mod[pShip.GetName()]=1
+			vd_str_mod[pShip.GetName()]=1
 	try:
 		if (kStats.has_key('ArmouredModel')):
 			print "Hey I got it, extra model armour"
-			sNewShipScript = kStats['ArmouredModel']
-			print sNewShipScript
-			sOriginalShipScript = kStats["OriginalModel"]
-			#ReplaceModel(pShip, sNewShipScript)
+			sNewShipScript[pShip.GetName()] = kStats['ArmouredModel']
+			sOriginalShipScript[pShip.GetName()] = kStats["OriginalModel"]
 	except:
 		try:
-			sNewShipScript=pShipModule.GetArmouredModel()
-			sOriginalShipScript=pShipModule.GetOriginalShipModel()
-			print sNewShipScript
-			print sOriginalShipScript
+			sNewShipScript[pShip.GetName()]=pShipModule.GetArmouredModel()
+			sOriginalShipScript[pShip.GetName()]=pShipModule.GetOriginalShipModel()
 		except:
 			print "No visual armour, understood"
-			sNewShipScript = None
-			sOriginalShipScript = None
+			sNewShipScript[pShip.GetName()] = None
+			sOriginalShipScript[pShip.GetName()] = None
 
-	theCondition = 0
-	if (pShip == pPlayer):
-		BtnName=App.TGString()
-		ArmorButton.GetName(BtnName)
-		theCondition = BtnName.Compare(App.TGString("Plating Online"),1)
-	else:
-		theCondition = not AdvArmorRecord
-	
+	theCondition = not AdvArmorRecord[pShip.GetName()]	
 		
-	if not (theCondition):
-		if (pShip == pPlayer):
-			ArmorButton.SetName(App.TGString("Plating Offline"))
-		if (AdvArmorRecord):
-			MissionLib.ShowSubsystems(AdvArmorRecord)
-			AdvArmorRecord=0
+	if not (theCondition): # simplify? it's the same as below
+		if (AdvArmorRecord[pShip.GetName()]):
+			MissionLib.ShowSubsystems(AdvArmorRecord[pShip.GetName()])
+			AdvArmorRecord[pShip.GetName()]=0
 			pShip.SetInvincible(0)
-			pShip.SetVisibleDamageRadiusModifier(vd_rad_mod)
-			pShip.SetVisibleDamageStrengthModifier(vd_str_mod)
-			if not (sOriginalShipScript == None):
-				ReplaceModel(pShip, sOriginalShipScript)
+			pShip.SetVisibleDamageRadiusModifier(vd_rad_mod[pShip.GetName()])
+			pShip.SetVisibleDamageStrengthModifier(vd_str_mod[pShip.GetName()])
+			if not (sOriginalShipScript[pShip.GetName()] == None):
+				ReplaceModel(pShip, sOriginalShipScript[pShip.GetName()])
 	else:
-		if (pShip == pPlayer):
-			ArmorButton.SetName(App.TGString("Plating Online"))
-		AdvArmorRecord=MissionLib.HideSubsystems(pShip)
+		AdvArmorRecord[pShip.GetName()]=MissionLib.HideSubsystems(pShip)
 		pShip.SetInvincible(1)
 		pShip.SetVisibleDamageRadiusModifier(0.0)
 		pShip.SetVisibleDamageStrengthModifier(0.0)
-		if sNewShipScript:
-			ReplaceModel(pShip, sNewShipScript)
-		AdvArmor()
+		if sNewShipScript[pShip.GetName()]:
+			ReplaceModel(pShip, sNewShipScript[pShip.GetName()])
+		AdvArmor(pShip)
 	return
-
 # called when armor button is clicked
-def AdvArmorToggleFirst(pShip):
+def AdvArmorTogglePlayerFirst():
 	global AdvArmorRecord
 	global ArmorButton
 	global vd_rad_mod
 	global vd_str_mod
 	global sNewShipScript
 	global sOriginalShipScript
-	#global pShipp
-	#pShip=pShipp
-	pPlayer=MissionLib.GetPlayer()
+	pShip=MissionLib.GetPlayer()
 	pShipModule=__import__(pShip.GetScript())
 
 	try:
@@ -504,72 +554,131 @@ def AdvArmorToggleFirst(pShip):
 	try:
 		kStats=pShipModule.GetShipStats
 		if (kStats.has_key('DamageRadMod')):
-			vd_rad_mod=kStats['DamageRadMod']
+			vd_rad_mod[pShip.GetName()]=kStats['DamageRadMod']
 		else:
-			vd_rad_mod=1
+			vd_rad_mod[pShip.GetName()]=1
 		if (kStats.has_key('DamageStrMod')):
-			vd_str_mod=kStats['DamageStrMod']
+			vd_str_mod[pShip.GetName()]=kStats['DamageStrMod']
 		else:
-			vd_str_mod=1
+			vd_str_mod[pShip.GetName()]=1
 	except:
 		try:
-			vd_rad_mod=pShipModule.GetDamageRadMod()
-			vd_str_mod=pShipModule.GetDamageStrMod()
-			print vd_rad_mod
-			print vd_str_mod
+			vd_rad_mod[pShip.GetName()]=pShipModule.GetDamageRadMod()
+			vd_str_mod[pShip.GetName()]=pShipModule.GetDamageStrMod()
 		except:
 			print "No visual changes, understood"
-			vd_rad_mod=1
-			vd_str_mod=1
+			vd_rad_mod[pShip.GetName()]=1
+			vd_str_mod[pShip.GetName()]=1
 	try:
 		if (kStats.has_key('ArmouredModel')):
 			print "Hey I got it, extra model armour"
-			sNewShipScript = kStats['ArmouredModel']
-			print sNewShipScript
-			sOriginalShipScript = kStats["OriginalModel"]
-			#ReplaceModel(pShip, sNewShipScript)
+			sNewShipScript[pShip.GetName()] = kStats['ArmouredModel']
+			sOriginalShipScript[pShip.GetName()] = kStats["OriginalModel"]
 	except:
 		try:
-			sNewShipScript=pShipModule.GetArmouredModel()
-			sOriginalShipScript=pShipModule.GetOriginalShipModel()
-			print sNewShipScript
-			print sOriginalShipScript
+			sNewShipScript[pShip.GetName()]=pShipModule.GetArmouredModel()
+			sOriginalShipScript[pShip.GetName()]=pShipModule.GetOriginalShipModel()
 		except:
 			print "No visual armour, understood"
-			sNewShipScript = None
-			sOriginalShipScript = None
+			sNewShipScript[pShip.GetName()] = None
+			sOriginalShipScript[pShip.GetName()] = None
 
-	theCondition = 0
-	if (pShip == pPlayer):
-		BtnName=App.TGString()
-		ArmorButton.GetName(BtnName)
-		theCondition = BtnName.Compare(App.TGString("Plating Online"),1)
-	else:
-		theCondition = not AdvArmorRecord
-	
-		
-	if not (theCondition):
-		if (pShip == pPlayer):
-			ArmorButton.SetName(App.TGString("Plating Offline"))
-		if (AdvArmorRecord):
-			MissionLib.ShowSubsystems(AdvArmorRecord)
-			AdvArmorRecord=0
+	BtnName=App.TGString()
+	ArmorButton.GetName(BtnName)
+
+	if not (BtnName.Compare(App.TGString("Plating Online"),1)):
+		ArmorButton.SetName(App.TGString("Plating Offline"))
+		if (AdvArmorRecord[pShip.GetName()]):
+			MissionLib.ShowSubsystems(AdvArmorRecord[pShip.GetName()])
+			AdvArmorRecord[pShip.GetName()]=0
 			pShip.SetInvincible(0)
-			pShip.SetVisibleDamageRadiusModifier(vd_rad_mod)
-			pShip.SetVisibleDamageStrengthModifier(vd_str_mod)
-			if not (sOriginalShipScript == None):
-				ReplaceModel(pShip, sOriginalShipScript)
+			pShip.SetVisibleDamageRadiusModifier(vd_rad_mod[pShip.GetName()])
+			pShip.SetVisibleDamageStrengthModifier(vd_str_mod[pShip.GetName()])
+			if not (sOriginalShipScript[pShip.GetName()] == None):
+				ReplaceModel(pShip, sOriginalShipScript[pShip.GetName()])
 	else:
-		if (pShip == pPlayer):
-			ArmorButton.SetName(App.TGString("Plating Online"))
-		AdvArmorRecord=MissionLib.HideSubsystems(pShip)
+		ArmorButton.SetName(App.TGString("Plating Online"))
+		AdvArmorRecord[pShip.GetName()]=MissionLib.HideSubsystems(pShip)
 		pShip.SetInvincible(1)
 		pShip.SetVisibleDamageRadiusModifier(0.0)
 		pShip.SetVisibleDamageStrengthModifier(0.0)
-		if sNewShipScript:
-			ReplaceModel(pShip, sNewShipScript)
-		AdvArmor()
+		if sNewShipScript[pShip.GetName()]:
+			ReplaceModel(pShip, sNewShipScript[pShip.GetName()])
+		AdvArmorPlayer()
 	return
+
+# called when armor button is clicked
+def AdvArmorToggleAIFirst(pShip):
+	global AdvArmorRecord
+	global ArmorButton
+	global vd_rad_mod
+	global vd_str_mod
+	global sNewShipScript
+	global sOriginalShipScript
+	pShipModule=__import__(pShip.GetScript())
+
+	try:
+		armor_ratio=pShipModule.GetArmorRatio()
+	except:
+		try:
+			OldArmor=GetAdvArmor(pShip)
+		except:
+			return # this ship has no armor don't try to make it invincible
+
+	try:
+		kStats=pShipModule.GetShipStats
+		if (kStats.has_key('DamageRadMod')):
+			vd_rad_mod[pShip.GetName()]=kStats['DamageRadMod']
+		else:
+			vd_rad_mod[pShip.GetName()]=1
+		if (kStats.has_key('DamageStrMod')):
+			vd_str_mod[pShip.GetName()]=kStats['DamageStrMod']
+		else:
+			vd_str_mod[pShip.GetName()]=1
+	except:
+		try:
+			vd_rad_mod[pShip.GetName()]=pShipModule.GetDamageRadMod()
+			vd_str_mod[pShip.GetName()]=pShipModule.GetDamageStrMod()
+		except:
+			print "No visual changes, understood"
+			vd_rad_mod[pShip.GetName()]=1
+			vd_str_mod[pShip.GetName()]=1
+	try:
+		if (kStats.has_key('ArmouredModel')):
+			print "Hey I got it, extra model armour"
+			sNewShipScript[pShip.GetName()] = kStats['ArmouredModel']
+			sOriginalShipScript[pShip.GetName()] = kStats["OriginalModel"]
+	except:
+		try:
+			sNewShipScript[pShip.GetName()]=pShipModule.GetArmouredModel()
+			sOriginalShipScript[pShip.GetName()]=pShipModule.GetOriginalShipModel()
+		except:
+			print "No visual armour, understood"
+			sNewShipScript[pShip.GetName()] = None
+			sOriginalShipScript[pShip.GetName()] = None
+
+	theCondition = not AdvArmorRecord[pShip.GetName()]	
+		
+	if not (theCondition): # simplify? it's the same as below
+		if (AdvArmorRecord[pShip.GetName()]):
+			MissionLib.ShowSubsystems(AdvArmorRecord)
+			AdvArmorRecord[pShip.GetName()]=0
+			pShip.SetInvincible(0)
+			pShip.SetVisibleDamageRadiusModifier(vd_rad_mod[pShip.GetName()])
+			pShip.SetVisibleDamageStrengthModifier(vd_str_mod[pShip.GetName()])
+			if not (sOriginalShipScript[pShip.GetName()] == None):
+				ReplaceModel(pShip, sOriginalShipScript[pShip.GetName()])
+	else:
+		AdvArmorRecord[pShip.GetName()]=MissionLib.HideSubsystems(pShip)
+		pShip.SetInvincible(1)
+		pShip.SetVisibleDamageRadiusModifier(0.0)
+		pShip.SetVisibleDamageStrengthModifier(0.0)
+		if sNewShipScript[pShip.GetName()]:
+			ReplaceModel(pShip, sNewShipScript[pShip.GetName()])
+		AdvArmor(pShip)
+	return
+
+
 
 def Restart():
 	global ArmorButton
@@ -578,7 +687,7 @@ def Restart():
 	pEpisode = pGame.GetCurrentEpisode()
 	pMission = pEpisode.GetCurrentMission()
 	pPlayer=MissionLib.GetPlayer()
-	if (pShipp == pPlayer):
+	if (pShipp == pPlayer.GetName()):
 		ArmorButton.SetName(App.TGString("Plating Offline"))
 	return
 
