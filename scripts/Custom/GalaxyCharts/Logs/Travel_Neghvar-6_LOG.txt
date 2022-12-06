@@ -1,0 +1,52 @@
+#This is the dump of the LogCreator: <Neghvar-6 Travel Logger LogCreator_kYOHeA34K9P2>
+#This log file was created on: 21:36:55.095 of 6/December/2022, Tuesday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>21:36:55.095 of 6/December/2022, Tuesday
+#>>>Initialized Neghvar-6 Travel logger
+#>>>SELF = <Neghvar-6(562656) Travel_0q7G4hlIFj8d>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>21:37:20.914 of 6/December/2022, Tuesday
+#>>>Updated Target Ship = AM Voyager-9
+## -------------------- ##
+####################
+#######>>>21:39:45.040 of 6/December/2022, Tuesday
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Enable Towing: 0
+#>>>Travelling procedures initiated...
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Extra path: AI ship warping to None
+#>>> -Checked: Ship can warp, travel procedures started.
+#>>> -Speed Check:
+#>>>     -Current:  8.67000007629
+#>>>     -Real Speed:  1339.19628906
+#>>>     -Cruise:  8.67
+#>>>     -Max:  8.67
+#>>>     -Actual Cruise:  8.67000007629
+#>>>     -Actual Max:  8.67000007629
+#>>> -Started playing engaging sequence.
+## -------------------- ##
+####################
+#######>>>21:39:51.393 of 6/December/2022, Tuesday
+#>>> -Finishing travelling procedures...
+#>>> -Finished. AI Ship travelling to None.

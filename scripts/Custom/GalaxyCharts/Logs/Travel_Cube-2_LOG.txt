@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Cube-2 Travel Logger LogCreator_RqQxEP204LVE>
-#This log file was created on: 18:12:5.653 of 3/December/2022, Saturday
+#This is the dump of the LogCreator: <Cube-2 Travel Logger LogCreator_wJx5gI6vMC21>
+#This log file was created on: 23:11:16.460 of 4/December/2022, Sunday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>18:12:5.653 of 3/December/2022, Saturday
+#######>>>23:11:16.460 of 4/December/2022, Sunday
 #>>>Initialized Cube-2 Travel logger
-#>>>SELF = <Cube-2(70963) Travel_m81B0v58R46M>
+#>>>SELF = <Cube-2(400806) Travel_bjs524f6nU8Y>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -23,15 +23,35 @@ Updating Travelling Procedures...
 #>>>Chaser pre-emptive Refresher Initialization
 ## -------------------- ##
 ####################
-#######>>>18:12:53.960 of 3/December/2022, Saturday
-#>>>Arrived Events:  added event <C TGEvent instance at _1bf39340_p_TGEvent>
+#######>>>23:12:3.459 of 4/December/2022, Sunday
+#>>>Arrived Events:  added event <C TGEvent instance at _3899a090_p_TGEvent>
 #>>>Updated Target Ship = Player
 ## -------------------- ##
 ####################
-#######>>>18:13:17.960 of 3/December/2022, Saturday
-#>>>Stopping Refresh Handler
-#>>>Deleting...
+#######>>>23:24:59.086 of 4/December/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>23:25:0.571 of 4/December/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>23:25:1.482 of 4/December/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>23:25:2.980 of 4/December/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
+## -------------------- ##
+####################
+#######>>>23:25:5.722 of 4/December/2022, Sunday
+#>>>Ship is dead or dying (at Chaser Update)
+#>>>Ship is dead or dying (at Update)
 ########################################
-# 18:35:59.708 of 3/December/2022, Saturday
+# 23:25:5.722 of 4/December/2022, Sunday
 #Ending of log dump - User is quiting the game
 ########################################

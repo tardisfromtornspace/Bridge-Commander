@@ -1,0 +1,34 @@
+#This is the dump of the LogCreator: <Neghvar-2 Travel Logger LogCreator_pXxU1YQsG1ji>
+#This log file was created on: 21:36:55.095 of 6/December/2022, Tuesday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>21:36:55.095 of 6/December/2022, Tuesday
+#>>>Initialized Neghvar-2 Travel logger
+#>>>SELF = <Neghvar-2(560276) Travel_ZHEq26N74wBy>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>21:37:20.914 of 6/December/2022, Tuesday
+#>>>Updated Target Ship = AM Voyager-9
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>21:38:32.266 of 6/December/2022, Tuesday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

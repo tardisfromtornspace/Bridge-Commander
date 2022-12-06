@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Player_Port Nacelle Travel Logger[2] LogCreator_p9J96vXakYOi>
-#This log file was created on: 18:35:30.825 of 3/December/2022, Saturday
+#This is the dump of the LogCreator: <Player_Port Nacelle Travel Logger[2] LogCreator_95mHGK1mD2as>
+#This log file was created on: 16:3:52.909 of 4/December/2022, Sunday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,93 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>18:35:30.825 of 3/December/2022, Saturday
+#######>>>16:3:52.909 of 4/December/2022, Sunday
 #>>>Initialized Player_Port Nacelle Travel logger
-#>>>SELF = <Player_Port Nacelle(1888767) Travel_h8VRI38uV8h6>
+#>>>SELF = <Player_Port Nacelle(98648) Travel_0M48AlrH2UOw>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: Player Travel Destination OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>16:5:11.175 of 4/December/2022, Sunday
+#>>>Initialized Player_Port Nacelle Travel logger
+#>>>SELF = <Player_Port Nacelle(123163) Travel_0p7Hl8dEm481>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: Player Travel Destination OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>16:5:39.855 of 4/December/2022, Sunday
+#>>>Initialized Player_Port Nacelle Travel logger
+#>>>SELF = <Player_Port Nacelle(159765) Travel_HD9Ffhjg2jAD>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: Player Travel Destination OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>16:6:45.524 of 4/December/2022, Sunday
+#>>>Initialized Player_Port Nacelle Travel logger
+#>>>SELF = <Player_Port Nacelle(269208) Travel_Mqtk7V7Fw292>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: Player Travel Destination OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>16:7:17.024 of 4/December/2022, Sunday
+#>>>Initialized Player_Port Nacelle Travel logger
+#>>>SELF = <Player_Port Nacelle(278336) Travel_N7Uzw0ba9U1P>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -23,6 +107,22 @@ Updating Travelling Procedures...
 #>>>Target Ship = NONE
 #>>>Chaser pre-emptive Refresher Initialization
 ########################################
-# 18:35:59.708 of 3/December/2022, Saturday
+# 16:10:39.254 of 4/December/2022, Sunday
+#Ending of log dump - User is quiting the game
+########################################
+########################################
+# 16:10:39.254 of 4/December/2022, Sunday
+#Ending of log dump - User is quiting the game
+########################################
+########################################
+# 16:10:39.254 of 4/December/2022, Sunday
+#Ending of log dump - User is quiting the game
+########################################
+########################################
+# 16:10:39.254 of 4/December/2022, Sunday
+#Ending of log dump - User is quiting the game
+########################################
+########################################
+# 16:10:39.254 of 4/December/2022, Sunday
 #Ending of log dump - User is quiting the game
 ########################################

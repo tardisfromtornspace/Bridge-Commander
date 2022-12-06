@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <DiamondsArmoredVoyager 1 Travel Logger LogCreator_Lh8EniSG12YE>
-#This log file was created on: 12:32:18.423 of 4/December/2022, Sunday
+#This is the dump of the LogCreator: <DiamondsArmoredVoyager 1 Travel Logger LogCreator_lE3Cx69G38g1>
+#This log file was created on: 21:35:3.786 of 6/December/2022, Tuesday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>12:32:18.423 of 4/December/2022, Sunday
+#######>>>21:35:3.786 of 6/December/2022, Tuesday
 #>>>Initialized DiamondsArmoredVoyager 1 Travel logger
-#>>>SELF = <DiamondsArmoredVoyager 1(124127) Travel_4V6W24Ejkv7f>
+#>>>SELF = <DiamondsArmoredVoyager 1(453888) Travel_CdryTtx6r4jf>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -23,17 +23,5 @@ Updating Travelling Procedures...
 #>>>Chaser pre-emptive Refresher Initialization
 ## -------------------- ##
 ####################
-#######>>>12:32:23.706 of 4/December/2022, Sunday
-#>>>Updated Target Ship = AMVoyager-2
-## -------------------- ##
-####################
-#######>>>12:32:23.937 of 4/December/2022, Sunday
-#>>>Updated Target Ship = ArmoredVoyager-3
-## -------------------- ##
-####################
-#######>>>12:32:43.926 of 4/December/2022, Sunday
-#>>>Updated Target Ship = AMVoyager-2
-########################################
-# 12:33:13.955 of 4/December/2022, Sunday
-#Ending of log dump - User is quiting the game
-########################################
+#######>>>21:35:8.864 of 6/December/2022, Tuesday
+#>>>Updated Target Ship = AMVoyager-1

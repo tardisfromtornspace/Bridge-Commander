@@ -1,0 +1,32 @@
+#This is the dump of the LogCreator: <Deep Space Nine-5 Travel Logger LogCreator_Yqw3W0AKnlB3>
+#This log file was created on: 15:56:26.256 of 4/December/2022, Sunday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>15:56:26.256 of 4/December/2022, Sunday
+#>>>Initialized Deep Space Nine-5 Travel logger
+#>>>SELF = <Deep Space Nine-5(66886) Travel_ig0kLEjgq8qU>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>15:57:28.739 of 4/December/2022, Sunday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 15:59:36.154 of 4/December/2022, Sunday
+#Ending of log dump - User is quiting the game
+########################################

@@ -135,7 +135,6 @@ class AdvArmorTechTwoDef(FoundationTech.TechDef):
 						try:
 							theMenu = Libs.LibEngineering.GetBridgeMenu("Tactical")
 							ArmorButton = Libs.LibEngineering.GetButton("Plating Offline", theMenu)
-							#DeleteMenuButton("Tactical", "Plating Offline")
 						except:
 							try:
 								theMenu = Libs.LibEngineering.GetBridgeMenu("Tactical")
@@ -166,13 +165,13 @@ class AdvArmorTechTwoDef(FoundationTech.TechDef):
 				print "I am not forced, understood"
 				imForced = 0
 
-			if (mustGo == 1 or imForced == 1):
-				if (pShip.GetName() == pPlayer.GetName()):
-					AdvArmorTogglePlayerFirst()
-				else:
-					AdvArmorToggleAIFirst(pShip)
-					
+			armorStatus = ((mustGo == 1) or (imForced == 1))
 
+
+			if (pShip.GetName() == pPlayer.GetName()):
+				AdvArmorTogglePlayerFirst(armorStatus)
+			else:
+				AdvArmorToggleAIFirst(pShip, armorStatus)
 			
 			print("SUCCESS while attaching advarmortechthree")
 		except:
@@ -533,7 +532,7 @@ def AdvArmorToggleAI(pObject, pEvent, pShip):
 		AdvArmor(pShip)
 	return
 # called when armor button is clicked
-def AdvArmorTogglePlayerFirst():
+def AdvArmorTogglePlayerFirst(armourActive):
 	global AdvArmorRecord
 	global ArmorButton
 	global vd_rad_mod
@@ -586,16 +585,15 @@ def AdvArmorTogglePlayerFirst():
 	BtnName=App.TGString()
 	ArmorButton.GetName(BtnName)
 
-	if not (BtnName.Compare(App.TGString("Plating Online"),1)):
+	if not (armourActive):
 		ArmorButton.SetName(App.TGString("Plating Offline"))
-		if (AdvArmorRecord[pShip.GetName()]):
-			MissionLib.ShowSubsystems(AdvArmorRecord[pShip.GetName()])
-			AdvArmorRecord[pShip.GetName()]=0
-			pShip.SetInvincible(0)
-			pShip.SetVisibleDamageRadiusModifier(vd_rad_mod[pShip.GetName()])
-			pShip.SetVisibleDamageStrengthModifier(vd_str_mod[pShip.GetName()])
-			if not (sOriginalShipScript[pShip.GetName()] == None):
-				ReplaceModel(pShip, sOriginalShipScript[pShip.GetName()])
+		MissionLib.ShowSubsystems(AdvArmorRecord[pShip.GetName()])
+		AdvArmorRecord[pShip.GetName()]=0
+		pShip.SetInvincible(0)
+		pShip.SetVisibleDamageRadiusModifier(vd_rad_mod[pShip.GetName()])
+		pShip.SetVisibleDamageStrengthModifier(vd_str_mod[pShip.GetName()])
+		if not (sOriginalShipScript[pShip.GetName()] == None):
+			ReplaceModel(pShip, sOriginalShipScript[pShip.GetName()])
 	else:
 		ArmorButton.SetName(App.TGString("Plating Online"))
 		AdvArmorRecord[pShip.GetName()]=MissionLib.HideSubsystems(pShip)
@@ -608,7 +606,7 @@ def AdvArmorTogglePlayerFirst():
 	return
 
 # called when armor button is clicked
-def AdvArmorToggleAIFirst(pShip):
+def AdvArmorToggleAIFirst(pShip, armourActive):
 	global AdvArmorRecord
 	global ArmorButton
 	global vd_rad_mod
@@ -659,15 +657,14 @@ def AdvArmorToggleAIFirst(pShip):
 
 	theCondition = not AdvArmorRecord[pShip.GetName()]	
 		
-	if not (theCondition): # simplify? it's the same as below
-		if (AdvArmorRecord[pShip.GetName()]):
-			MissionLib.ShowSubsystems(AdvArmorRecord)
-			AdvArmorRecord[pShip.GetName()]=0
-			pShip.SetInvincible(0)
-			pShip.SetVisibleDamageRadiusModifier(vd_rad_mod[pShip.GetName()])
-			pShip.SetVisibleDamageStrengthModifier(vd_str_mod[pShip.GetName()])
-			if not (sOriginalShipScript[pShip.GetName()] == None):
-				ReplaceModel(pShip, sOriginalShipScript[pShip.GetName()])
+	if not (armourActive):
+		MissionLib.ShowSubsystems(AdvArmorRecord)
+		AdvArmorRecord[pShip.GetName()]=0
+		pShip.SetInvincible(0)
+		pShip.SetVisibleDamageRadiusModifier(vd_rad_mod[pShip.GetName()])
+		pShip.SetVisibleDamageStrengthModifier(vd_str_mod[pShip.GetName()])
+		if not (sOriginalShipScript[pShip.GetName()] == None):
+			ReplaceModel(pShip, sOriginalShipScript[pShip.GetName()])
 	else:
 		AdvArmorRecord[pShip.GetName()]=MissionLib.HideSubsystems(pShip)
 		pShip.SetInvincible(1)

@@ -1,0 +1,50 @@
+#This is the dump of the LogCreator: <U.S.S. Armstrong-1 Travel Logger LogCreator_2OaV95tEKyrI>
+#This log file was created on: 23:23:20.432 of 4/December/2022, Sunday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>23:23:20.432 of 4/December/2022, Sunday
+#>>>Initialized U.S.S. Armstrong-1 Travel logger
+#>>>SELF = <U.S.S. Armstrong-1(1264530) Travel_9DYJ8xk5Bxzp>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>23:23:28.133 of 4/December/2022, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:23:29.655 of 4/December/2022, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:23:30.900 of 4/December/2022, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:23:31.883 of 4/December/2022, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+########################################
+# 23:25:5.722 of 4/December/2022, Sunday
+#Ending of log dump - User is quiting the game
+########################################
