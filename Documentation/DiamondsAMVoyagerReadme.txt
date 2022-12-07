@@ -9,7 +9,6 @@ all I did was rehardpoint this mod and include the ship along with it, everythin
 
 Known issues:
 
-- when using MVAM, the armoured version of voyager appears to not load the torpedo scripts properly, 
-leading the ship to only have one torpedo per torpedo tube, and not 35, as instructed.
+- Activating the plating with the Plating button instead of the Mvam may leave your ship in the dark for a few seconds.
 
 
