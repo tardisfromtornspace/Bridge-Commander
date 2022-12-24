@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <T.A.R.D.I.S.-1 Travel Logger LogCreator_8551roruOY3d>
-#This log file was created on: 23:36:57.284 of 4/December/2022, Sunday
+#This is the dump of the LogCreator: <T.A.R.D.I.S.-1 Travel Logger LogCreator_o18d3u68027Q>
+#This log file was created on: 22:42:21.359 of 20/December/2022, Tuesday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>23:36:57.284 of 4/December/2022, Sunday
+#######>>>22:42:21.359 of 20/December/2022, Tuesday
 #>>>Initialized T.A.R.D.I.S.-1 Travel logger
-#>>>SELF = <T.A.R.D.I.S.-1(52280) Travel_rjG2di7EHfXM>
+#>>>SELF = <T.A.R.D.I.S.-1(2129951) Travel_Y8jvLBYq373u>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -24,75 +24,49 @@ Updating Travelling Procedures...
 #>>>Updated Target Ship = Player
 ## -------------------- ##
 ####################
-#######>>>23:37:4.301 of 4/December/2022, Sunday
+#######>>>22:42:28.209 of 20/December/2022, Tuesday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>23:37:4.800 of 4/December/2022, Sunday
+#######>>>22:42:28.993 of 20/December/2022, Tuesday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>23:37:5.283 of 4/December/2022, Sunday
+#######>>>22:42:29.486 of 20/December/2022, Tuesday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>23:37:5.817 of 4/December/2022, Sunday
+#######>>>22:42:29.976 of 20/December/2022, Tuesday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>23:37:6.285 of 4/December/2022, Sunday
+#######>>>22:42:30.226 of 20/December/2022, Tuesday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>23:37:6.617 of 4/December/2022, Sunday
+#######>>>22:42:30.476 of 20/December/2022, Tuesday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>23:37:7.034 of 4/December/2022, Sunday
+#######>>>22:42:30.710 of 20/December/2022, Tuesday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>23:37:7.567 of 4/December/2022, Sunday
+#######>>>22:42:30.976 of 20/December/2022, Tuesday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>23:37:8.035 of 4/December/2022, Sunday
+#######>>>22:42:31.142 of 20/December/2022, Tuesday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>23:37:8.301 of 4/December/2022, Sunday
+#######>>>22:42:31.516 of 20/December/2022, Tuesday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>23:42:7.377 of 4/December/2022, Sunday
-< ------------------------------------------- >
-<----------------- EXCEPTION ----------------->
------> ERROR at Update (Chaser)
-Traceback of Error: TypeError: call of non-function (type None)
-Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 2307, in the function "Update".
-Script: ".\Scripts\Custom\GalaxyCharts\HelmAddonGUI.py", Line 93, in the function "CreateTravelTypeButtons".
-Script: ".\Scripts\Custom\GalaxyCharts\HelmAddonGUI.py", Line 118, in the function "UpdateTravelType".
-Script: ".\Scripts\Custom\GalaxyCharts\HelmAddonGUI.py", Line 299, in the function "UpdateEmergencyOutButton".
-Script: ".\Scripts\Custom\GalaxyCharts\HelmAddonGUI.py", Line 245, in the function "CanEmergencyTravelOut".
-Script: ".\Scripts\Custom\GalaxyCharts\HelmAddonGUI.py", Line 288, in the function "CheckBasicPlayerCanTravel".
-<--------------- END EXCEPTION --------------->
-< ------------------------------------------- >
-## -------------------- ##
-####################
-#######>>>23:44:17.954 of 4/December/2022, Sunday
-#>>>Ship is dead or dying (at Chaser Update)
-#>>>Ship is dead or dying (at Update)
-## -------------------- ##
-####################
-#######>>>23:44:18.114 of 4/December/2022, Sunday
-#>>>Ship is dead or dying (at Chaser Update)
-#>>>Ship is dead or dying (at Update)
-## -------------------- ##
-####################
-#######>>>23:44:18.454 of 4/December/2022, Sunday
-#>>>Ship is dead or dying (at Chaser Update)
-#>>>Ship is dead or dying (at Update)
+#######>>>22:42:31.859 of 20/December/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
 ########################################
-# 23:44:18.454 of 4/December/2022, Sunday
+# 22:43:5.975 of 20/December/2022, Tuesday
 #Ending of log dump - User is quiting the game
 ########################################

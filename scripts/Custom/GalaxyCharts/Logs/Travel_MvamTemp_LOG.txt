@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <MvamTemp Travel Logger LogCreator_m25vHPe6hJ0Q>
-#This log file was created on: 21:41:45.459 of 6/December/2022, Tuesday
+#This is the dump of the LogCreator: <MvamTemp Travel Logger LogCreator_U01Rx2EN6F0K>
+#This log file was created on: 20:42:13.806 of 7/December/2022, Wednesday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>21:41:45.459 of 6/December/2022, Tuesday
+#######>>>20:42:13.806 of 7/December/2022, Wednesday
 #>>>Initialized MvamTemp Travel logger
-#>>>SELF = <MvamTemp(919817) Travel_miIm1K0H0U85>
+#>>>SELF = <MvamTemp(206772) Travel_3Mb91k71tuC9>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>>Destination set as None
@@ -20,3 +20,7 @@ Updating Travelling Procedures...
 #>>>Chaser base class initialization complete.
 #>>>Target Ship = NONE
 #>>>Chaser pre-emptive Refresher Initialization
+########################################
+# 20:42:43.821 of 7/December/2022, Wednesday
+#Ending of log dump - User is quiting the game
+########################################

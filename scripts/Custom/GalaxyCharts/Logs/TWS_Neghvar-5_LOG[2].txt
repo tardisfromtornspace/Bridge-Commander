@@ -1,19 +1,27 @@
-#This is the dump of the LogCreator: <TravelerWarpSequence of Ship Neghvar-5[2] LogCreator_30n95mtbtw0e>
-#This log file was created on: 21:42:26.708 of 6/December/2022, Tuesday
+#This is the dump of the LogCreator: <TravelerWarpSequence of Ship Neghvar-5[2] LogCreator_99SgLI3Kj0dB>
+#This log file was created on: 22:4:52.579 of 20/December/2022, Tuesday
 ########################################
 ## -------------------- ##
 ####################
-#######>>>21:42:26.708 of 6/December/2022, Tuesday
+#######>>>22:4:52.579 of 20/December/2022, Tuesday
 #>>>Initialized TravelerWarpSequence of ship Neghvar-5 logger
-#>>>SELF = <C WarpSequence instance at _f54Ef12H95U1>
+#>>>SELF = <C WarpSequence instance at _63CZkM9SE9SH>
 ## -------------------- ##
 ####################
-#######>>>21:42:50.653 of 6/December/2022, Tuesday
+#######>>>22:11:16.584 of 20/December/2022, Tuesday
 #>>>Initialized TravelerWarpSequence of ship Neghvar-5 logger
-#>>>SELF = <C WarpSequence instance at _T29s3Sss0gNz>
+#>>>SELF = <C WarpSequence instance at _37c78k3MwLjS>
+## -------------------- ##
+####################
+#######>>>22:13:25.332 of 20/December/2022, Tuesday
+#>>>Initialized TravelerWarpSequence of ship Neghvar-5 logger
+#>>>SELF = <C WarpSequence instance at _KkxYS1843t7n>
+## -------------------- ##
+####################
+#######>>>22:14:3.522 of 20/December/2022, Tuesday
 #>>>Play called
-## -------------------- ##
-####################
-#######>>>21:42:51.375 of 6/December/2022, Tuesday
-#>>>Initialized TravelerWarpSequence of ship Neghvar-5 logger
-#>>>SELF = <C WarpSequence instance at _b3fPlvwZlZ6p>
+#>>>Setting sequence up...
+#>>>GetDestination called
+#>>>Got species of ship from NanoFXv2
+#>>>Using Nacelle Flash Sequence from NanoFXv2
+#>>>Sequence was set up.

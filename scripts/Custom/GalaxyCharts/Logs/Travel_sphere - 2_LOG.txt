@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <sphere - 2 Travel Logger LogCreator_5t17JSQ53DX0>
-#This log file was created on: 21:21:35.056 of 6/December/2022, Tuesday
+#This is the dump of the LogCreator: <sphere - 2 Travel Logger LogCreator_Z0cREK9VnVAC>
+#This log file was created on: 17:30:4.166 of 19/December/2022, Monday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>21:21:35.056 of 6/December/2022, Tuesday
+#######>>>17:30:4.166 of 19/December/2022, Monday
 #>>>Initialized sphere - 2 Travel logger
-#>>>SELF = <sphere - 2(735532) Travel_3yPHg3t5dIM6>
+#>>>SELF = <sphere - 2(161210) Travel_R33dS5sQCWj2>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -23,15 +23,23 @@ Updating Travelling Procedures...
 #>>>Chaser pre-emptive Refresher Initialization
 ## -------------------- ##
 ####################
-#######>>>21:21:49.990 of 6/December/2022, Tuesday
-#>>>Arrived Events:  added event <C TGEvent instance at _45242c00_p_TGEvent>
+#######>>>17:30:19.302 of 19/December/2022, Monday
+#>>>Arrived Events:  added event <C TGEvent instance at _3ca84930_p_TGEvent>
 #>>>Updated Target Ship = Player
 ## -------------------- ##
 ####################
-#######>>>21:21:56.206 of 6/December/2022, Tuesday
+#######>>>17:30:26.854 of 19/December/2022, Monday
+#>>>Updated Target Ship = Neghvar-3
+## -------------------- ##
+####################
+#######>>>17:30:54.832 of 19/December/2022, Monday
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>17:31:30.932 of 19/December/2022, Monday
 #>>>Stopping Refresh Handler
 #>>>Deleting...
 ########################################
-# 21:22:31.472 of 6/December/2022, Tuesday
+# 17:50:4.016 of 19/December/2022, Monday
 #Ending of log dump - User is quiting the game
 ########################################

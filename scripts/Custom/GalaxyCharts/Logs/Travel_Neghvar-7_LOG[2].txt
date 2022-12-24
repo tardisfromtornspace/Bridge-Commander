@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Neghvar-7 Travel Logger[2] LogCreator_Zj386OixQhMx>
-#This log file was created on: 21:42:26.708 of 6/December/2022, Tuesday
+#This is the dump of the LogCreator: <Neghvar-7 Travel Logger[2] LogCreator_I1Ws4BgjjUlU>
+#This log file was created on: 22:4:52.579 of 20/December/2022, Tuesday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,76 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>21:42:26.708 of 6/December/2022, Tuesday
+#######>>>22:4:52.579 of 20/December/2022, Tuesday
 #>>>Initialized Neghvar-7 Travel logger
-#>>>SELF = <Neghvar-7(1001552) Travel_dv4BF6SdAlg7>
+#>>>SELF = <Neghvar-7(1081684) Travel_ry2t1J0fkttr>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = AM Voyager-1
+## -------------------- ##
+####################
+#######>>>22:6:35.007 of 20/December/2022, Tuesday
+#>>>Updated Target Ship = Plasma Stream Firepoint0_t
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>22:11:16.584 of 20/December/2022, Tuesday
+#>>>Initialized Neghvar-7 Travel logger
+#>>>SELF = <Neghvar-7(2331186) Travel_2lL8TZB8TzL2>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Armored Voyager-1
+## -------------------- ##
+####################
+#######>>>22:11:30.368 of 20/December/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:11:31.018 of 20/December/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:11:31.334 of 20/December/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:11:31.670 of 20/December/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:11:32.535 of 20/December/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>22:13:25.332 of 20/December/2022, Tuesday
+#>>>Initialized Neghvar-7 Travel logger
+#>>>SELF = <Neghvar-7(2424067) Travel_9E0H5idduxJg>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -24,37 +91,23 @@ Updating Travelling Procedures...
 #>>>Updated Target Ship = Player
 ## -------------------- ##
 ####################
-#######>>>21:42:34.507 of 6/December/2022, Tuesday
-#>>>Updated Target Ship = AM Voyager-9
+#######>>>22:13:32.583 of 20/December/2022, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:13:33.267 of 20/December/2022, Tuesday
 #>>> -Cancelling, too close to target to warp intercept...
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>21:42:35.124 of 6/December/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>21:42:35.775 of 6/December/2022, Tuesday
+#######>>>22:13:33.716 of 20/December/2022, Tuesday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>21:42:36.307 of 6/December/2022, Tuesday
+#######>>>22:13:34.266 of 20/December/2022, Tuesday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>21:42:36.894 of 6/December/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>21:42:37.459 of 6/December/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>21:42:38.209 of 6/December/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>21:42:38.728 of 6/December/2022, Tuesday
-#>>> -Cancelling, too close to target to warp intercept...
+#######>>>22:14:59.998 of 20/December/2022, Tuesday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
