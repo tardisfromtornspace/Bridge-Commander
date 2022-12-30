@@ -1,0 +1,28 @@
+#This is the dump of the LogCreator: <SCIFIKINGOdyssey 19 Travel Logger LogCreator_N549gy2pO0ZG>
+#This log file was created on: 22:32:1.929 of 28/December/2022, Wednesday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>22:32:1.929 of 28/December/2022, Wednesday
+#>>>Initialized SCIFIKINGOdyssey 19 Travel logger
+#>>>SELF = <SCIFIKINGOdyssey 19(1941025) Travel_Hl1oE263DodB>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>22:32:9.197 of 28/December/2022, Wednesday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

@@ -1,0 +1,27 @@
+#This is the dump of the LogCreator: <DJEnterpriseGSaucer Travel Logger LogCreator_2oJI8O7NWSAd>
+#This log file was created on: 19:54:48.825 of 30/December/2022, Friday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>19:54:48.825 of 30/December/2022, Friday
+#>>>Initialized DJEnterpriseGSaucer Travel logger
+#>>>SELF = <DJEnterpriseGSaucer(13307291) Travel_zeFT38hUtd4v>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+########################################
+# 19:59:3.306 of 30/December/2022, Friday
+#Ending of log dump - User is quiting the game
+########################################

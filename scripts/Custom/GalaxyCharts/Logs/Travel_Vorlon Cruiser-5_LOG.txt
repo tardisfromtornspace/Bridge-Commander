@@ -1,0 +1,33 @@
+#This is the dump of the LogCreator: <Vorlon Cruiser-5 Travel Logger LogCreator_834z7Wsx1550>
+#This log file was created on: 12:30:58.684 of 30/December/2022, Friday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>12:30:58.684 of 30/December/2022, Friday
+#>>>Initialized Vorlon Cruiser-5 Travel logger
+#>>>SELF = <Vorlon Cruiser-5(763190) Travel_89YjR1mdk26F>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = SuperHive Ship-1
+## -------------------- ##
+####################
+#######>>>12:31:16.342 of 30/December/2022, Friday
+#>>>Updated Target Ship = SuperHive Ship-2
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>12:31:16.842 of 30/December/2022, Friday
+#>>> -Cancelling, too close to target to warp intercept...

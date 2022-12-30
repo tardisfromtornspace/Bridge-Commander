@@ -1,0 +1,23 @@
+#This is the dump of the LogCreator: <Triumviron-1 Travel Logger LogCreator_k4JW92Kn0lYb>
+#This log file was created on: 12:28:34.405 of 30/December/2022, Friday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>12:28:34.405 of 30/December/2022, Friday
+#>>>Initialized Triumviron-1 Travel logger
+#>>>SELF = <Triumviron-1(56467) Travel_TSOk95P58rN6>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization

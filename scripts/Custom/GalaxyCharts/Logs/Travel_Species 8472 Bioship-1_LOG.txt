@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Species 8472 Bioship-1 Travel Logger LogCreator_5V0TIq34ug6U>
-#This log file was created on: 22:22:22.479 of 20/December/2022, Tuesday
+#This is the dump of the LogCreator: <Species 8472 Bioship-1 Travel Logger LogCreator_4t87djHYxH7D>
+#This log file was created on: 14:34:27.365 of 30/December/2022, Friday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>22:22:22.479 of 20/December/2022, Tuesday
+#######>>>14:34:27.365 of 30/December/2022, Friday
 #>>>Initialized Species 8472 Bioship-1 Travel logger
-#>>>SELF = <Species 8472 Bioship-1(55711) Travel_FWzuivG0lNmO>
+#>>>SELF = <Species 8472 Bioship-1(54573) Travel_Vgf6Un8l1quV>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -24,62 +24,67 @@ Updating Travelling Procedures...
 #>>>Updated Target Ship = Player
 ## -------------------- ##
 ####################
-#######>>>22:22:32.957 of 20/December/2022, Tuesday
+#######>>>14:34:36.222 of 30/December/2022, Friday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>22:22:33.407 of 20/December/2022, Tuesday
+#######>>>14:34:36.689 of 30/December/2022, Friday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>22:22:33.657 of 20/December/2022, Tuesday
+#######>>>14:34:37.089 of 30/December/2022, Friday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>22:22:34.023 of 20/December/2022, Tuesday
+#######>>>14:34:37.222 of 30/December/2022, Friday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>22:22:34.523 of 20/December/2022, Tuesday
+#######>>>14:34:37.572 of 30/December/2022, Friday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>22:22:35.057 of 20/December/2022, Tuesday
+#######>>>14:34:37.906 of 30/December/2022, Friday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>22:22:35.307 of 20/December/2022, Tuesday
+#######>>>14:34:38.156 of 30/December/2022, Friday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>22:22:35.574 of 20/December/2022, Tuesday
+#######>>>14:34:38.271 of 30/December/2022, Friday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>22:22:35.924 of 20/December/2022, Tuesday
+#######>>>14:34:38.509 of 30/December/2022, Friday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>22:22:36.057 of 20/December/2022, Tuesday
+#######>>>14:34:41.039 of 30/December/2022, Friday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>22:22:36.340 of 20/December/2022, Tuesday
+#######>>>14:34:41.306 of 30/December/2022, Friday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>22:22:36.707 of 20/December/2022, Tuesday
+#######>>>14:34:41.822 of 30/December/2022, Friday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>22:22:36.957 of 20/December/2022, Tuesday
+#######>>>14:34:42.122 of 30/December/2022, Friday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>22:22:37.090 of 20/December/2022, Tuesday
+#######>>>14:34:42.289 of 30/December/2022, Friday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>22:22:41.057 of 20/December/2022, Tuesday
+#######>>>14:34:42.588 of 30/December/2022, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>14:43:36.898 of 30/December/2022, Friday
 #>>>Stopping Refresh Handler
 #>>>Deleting...

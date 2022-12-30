@@ -80,8 +80,8 @@ def GetMaxAngularAccel():
 	return 2.235
 
 try:
-	modTransphasicTorp = __import__("Custom.Techs.TransphasicTorp")
-	if(modTransphasicTorp):
-		modTransphasicTorp.oTransphasicTorp.AddTorpedo(__name__)
+	modPhasedTorp = __import__("Custom.Techs.PhasedTorp")
+	if(modPhasedTorp):
+		modPhasedTorp.oPhasedTorp.AddTorpedo(__name__)
 except:
-	print "Transphasic Torpedo script not installed, or you are missing Foundation Tech"
+	print "Phased Torpedo script not installed, or you are missing Foundation Tech"
