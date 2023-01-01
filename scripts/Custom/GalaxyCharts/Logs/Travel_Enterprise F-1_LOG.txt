@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Enterprise F-1 Travel Logger LogCreator_LNysebM7ja9M>
-#This log file was created on: 4:20:38.511 of 24/December/2022, Saturday
+#This is the dump of the LogCreator: <Enterprise F-1 Travel Logger LogCreator_tZNa957Ws7gg>
+#This log file was created on: 21:46:33.552 of 30/December/2022, Friday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>4:20:38.511 of 24/December/2022, Saturday
+#######>>>21:46:33.552 of 30/December/2022, Friday
 #>>>Initialized Enterprise F-1 Travel logger
-#>>>SELF = <Enterprise F-1(54933) Travel_Oaj0H7scDXo2>
+#>>>SELF = <Enterprise F-1(7921042) Travel_7Nh1r3S8WJM8>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -23,82 +23,50 @@ Updating Travelling Procedures...
 #>>>Chaser pre-emptive Refresher Initialization
 ## -------------------- ##
 ####################
-#######>>>4:20:41.687 of 24/December/2022, Saturday
+#######>>>21:46:35.570 of 30/December/2022, Friday
 #>>>Updated Target Ship = Player
 ## -------------------- ##
 ####################
-#######>>>4:20:48.481 of 24/December/2022, Saturday
+#######>>>21:46:41.967 of 30/December/2022, Friday
+#>>> -Cancelling, too close to target to warp intercept...
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>4:20:48.714 of 24/December/2022, Saturday
+#######>>>21:46:43.217 of 30/December/2022, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>4:20:48.980 of 24/December/2022, Saturday
+#######>>>21:46:44.001 of 30/December/2022, Friday
+#>>> -Cancelling, too close to target to warp intercept...
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>4:20:49.113 of 24/December/2022, Saturday
+#######>>>21:46:44.967 of 30/December/2022, Friday
+#>>> -Cancelling, too close to target to warp intercept...
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>4:20:49.230 of 24/December/2022, Saturday
-#>>> -Cancelling, too close to target to warp intercept...
+#######>>>21:51:30.444 of 30/December/2022, Friday
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Enable Towing: 0
+#>>>Travelling procedures initiated...
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Extra path: AI ship warping to None
+#>>> -Checked: Ship can warp, travel procedures started.
+#>>> -Speed Check:
+#>>>     -Current:  9.97999954224
+#>>>     -Real Speed:  4388.19091797
+#>>>     -Cruise:  9.98
+#>>>     -Max:  9.99
+#>>>     -Actual Cruise:  9.97999954224
+#>>>     -Actual Max:  9.98999977112
+#>>> -Started playing engaging sequence.
 ## -------------------- ##
 ####################
-#######>>>4:20:49.497 of 24/December/2022, Saturday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>4:20:49.864 of 24/December/2022, Saturday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>4:20:50.014 of 24/December/2022, Saturday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>4:20:50.314 of 24/December/2022, Saturday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>4:20:50.598 of 24/December/2022, Saturday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>4:20:50.863 of 24/December/2022, Saturday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>4:20:51.047 of 24/December/2022, Saturday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>4:20:51.419 of 24/December/2022, Saturday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>4:20:51.664 of 24/December/2022, Saturday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>4:20:51.801 of 24/December/2022, Saturday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>4:20:52.453 of 24/December/2022, Saturday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>4:20:52.849 of 24/December/2022, Saturday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>4:26:5.794 of 24/December/2022, Saturday
-#>>>Stopping Refresh Handler
-#>>>Deleting...
-########################################
-# 4:26:15.576 of 24/December/2022, Saturday
-#Ending of log dump - User is quiting the game
-########################################
+#######>>>21:51:36.465 of 30/December/2022, Friday
+#>>> -Finishing travelling procedures...
+#>>> -Finished. AI Ship travelling to None.
