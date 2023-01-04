@@ -1,0 +1,52 @@
+#This is the dump of the LogCreator: <Canon Enterprise F-5 Travel Logger LogCreator_kn9V9zo2BwFW>
+#This log file was created on: 23:33:49.457 of 4/January/2023, Wednesday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>23:33:49.457 of 4/January/2023, Wednesday
+#>>>Initialized Canon Enterprise F-5 Travel logger
+#>>>SELF = <Canon Enterprise F-5(6360853) Travel_STeWOYI1eWuu>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>23:33:51.143 of 4/January/2023, Wednesday
+#>>>Updated Target Ship = Species 8472 Bioship-1
+## -------------------- ##
+####################
+#######>>>23:34:2.949 of 4/January/2023, Wednesday
+#>>>Updated Target Ship = Species 8472 Bioship-3
+## -------------------- ##
+####################
+#######>>>23:35:57.123 of 4/January/2023, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:35:57.765 of 4/January/2023, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:36:0.064 of 4/January/2023, Wednesday
+#>>>Updated Target Ship = Species 8472 Bioship-2
+## -------------------- ##
+####################
+#######>>>23:36:52.532 of 4/January/2023, Wednesday
+#>>>Updated Target Ship = Galaxy refit-9
+## -------------------- ##
+####################
+#######>>>23:39:16.128 of 4/January/2023, Wednesday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

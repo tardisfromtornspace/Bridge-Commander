@@ -1,0 +1,128 @@
+#This is the dump of the LogCreator: <Species 8472 Bioship-3 Travel Logger LogCreator_Es0hdiXXsa9i>
+#This log file was created on: 23:33:49.457 of 4/January/2023, Wednesday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>23:33:49.457 of 4/January/2023, Wednesday
+#>>>Initialized Species 8472 Bioship-3 Travel logger
+#>>>SELF = <Species 8472 Bioship-3(6360498) Travel_057Sc1rkD8j0>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>23:33:51.143 of 4/January/2023, Wednesday
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>23:33:57.901 of 4/January/2023, Wednesday
+#>>>Updated Target Ship = Enterprise F-7
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:33:58.382 of 4/January/2023, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:33:58.633 of 4/January/2023, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:33:59.132 of 4/January/2023, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:33:59.383 of 4/January/2023, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:33:59.882 of 4/January/2023, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:34:0.449 of 4/January/2023, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:34:0.699 of 4/January/2023, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:34:0.949 of 4/January/2023, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:34:1.199 of 4/January/2023, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:34:1.699 of 4/January/2023, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:34:1.949 of 4/January/2023, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:34:2.449 of 4/January/2023, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:34:2.949 of 4/January/2023, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:34:3.449 of 4/January/2023, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:34:3.699 of 4/January/2023, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:34:4.203 of 4/January/2023, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:34:13.299 of 4/January/2023, Wednesday
+#>>>Updated Target Ship = Canon Enterprise F-5
+## -------------------- ##
+####################
+#######>>>23:35:42.538 of 4/January/2023, Wednesday
+#>>>Updated Target Ship = Galaxy refit-9
+## -------------------- ##
+####################
+#######>>>23:35:53.381 of 4/January/2023, Wednesday
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Enable Towing: 0
+#>>>Travelling procedures initiated...
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Extra path: AI ship warping to None
+#>>> -Checked: Ship can warp, travel procedures started.
+#>>> -Speed Check:
+#>>>     -Current:  9.97999954224
+#>>>     -Real Speed:  4388.19091797
+#>>>     -Cruise:  9.98
+#>>>     -Max:  9.98
+#>>>     -Actual Cruise:  9.97999954224
+#>>>     -Actual Max:  9.97999954224
+#>>> -Started playing engaging sequence.
+## -------------------- ##
+####################
+#######>>>23:35:59.881 of 4/January/2023, Wednesday
+#>>> -Finishing travelling procedures...
+#>>> -Finished. AI Ship travelling to None.

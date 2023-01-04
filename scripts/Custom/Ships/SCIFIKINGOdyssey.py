@@ -15,6 +15,7 @@ menuGroup = "Fed Ships"
 playerMenuGroup = "Fed Ships"
 Foundation.ShipDef.SCIFIKINGOdyssey = Foundation.FedShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile })
 Foundation.ShipDef.SCIFIKINGOdyssey.dTechs = {
+	"AutoTargeting": { "Phaser": [3, 1] },
 	'Breen Drainer Immune': 1,
 	'Drainer Immune': 1,
 	'Multivectral Shields': 15,

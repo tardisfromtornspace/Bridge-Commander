@@ -1,0 +1,40 @@
+#This is the dump of the LogCreator: <Enterprise F-6 Travel Logger LogCreator_9w7A7Oq1f41s>
+#This log file was created on: 23:33:49.457 of 4/January/2023, Wednesday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>23:33:49.457 of 4/January/2023, Wednesday
+#>>>Initialized Enterprise F-6 Travel logger
+#>>>SELF = <Enterprise F-6(6361597) Travel_sOOLg38aPoD0>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>23:33:51.143 of 4/January/2023, Wednesday
+#>>>Updated Target Ship = Species 8472 Bioship-1
+## -------------------- ##
+####################
+#######>>>23:34:3.332 of 4/January/2023, Wednesday
+#>>>Updated Target Ship = Species 8472 Bioship-2
+## -------------------- ##
+####################
+#######>>>23:34:4.699 of 4/January/2023, Wednesday
+#>>>Updated Target Ship = Vorlon Cruiser-4
+## -------------------- ##
+####################
+#######>>>23:34:10.765 of 4/January/2023, Wednesday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
