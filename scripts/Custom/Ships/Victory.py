@@ -40,6 +40,7 @@ credits = {
 Foundation.ShipDef.Victory = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu, "SubSubMenu": SubSubMenu })
 Foundation.ShipDef.Victory.dTechs = {
 	'Regenerative Shields': 30,
+	"AutoTargeting": { "Phaser": [3, 1] },
 	'Polarized Hull Plating': { "Plates": ["PlastiCrystalline Armour"]
 }}
 #                                                                                     #

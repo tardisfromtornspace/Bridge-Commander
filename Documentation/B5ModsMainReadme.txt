@@ -1,4 +1,8 @@
 ==Changelog==
+1.0.4 -
+ New Features:
+ * Some ships like the Victory and the Omegas gained automatic multi-targeting.
+ Small Fixes on syntax use (thank you Elijah)
 1.0.3 - 
  New Features:
  * Since the 1.0.2 was not approved yet, I've decided to add a mod I nearly forgot about that added more music to the battles, including Babylon 5.

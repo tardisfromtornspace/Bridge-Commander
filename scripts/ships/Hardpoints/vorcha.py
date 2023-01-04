@@ -587,7 +587,7 @@ Vorcha = App.ShipProperty_Create("Vorcha")
 
 Vorcha.SetGenus(1)
 Vorcha.SetSpecies(402)
-Vorcha.SetMass(150.000000)
+Vorcha.SetMass(9000.000000)
 Vorcha.SetRotationalInertia(15000.000000)
 Vorcha.SetShipName("Vorcha")
 Vorcha.SetModelFilename("data/Models/Ships/Vorcha.nif")

@@ -40,6 +40,7 @@ credits = {
 Foundation.ShipDef.Warlock = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu, "SubSubMenu": SubSubMenu })
 
 Foundation.ShipDef.Warlock.dTechs = {
+	"AutoTargeting": { "Pulse": [3, 1] },
 	'Defense Grid': 195
 }
 #                                                                                     #

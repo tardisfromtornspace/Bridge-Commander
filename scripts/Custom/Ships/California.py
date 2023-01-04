@@ -16,9 +16,9 @@ playerMenuGroup = "Fed Ships"
 Foundation.ShipDef.California = Foundation.FedShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile })
 Foundation.ShipDef.California.dTechs = {
 #	'Breen Drainer Immune': 1,
-	'Drainer Immune': 1,
+#	'Drainer Immune': 1,
 #	'Regenerative Shields': 10,
-	"Disable Immunity": { "Power": 150, "Sensor": 100, "Phaser": 100, "Torpedo": 100, "Pulse": 100}
+	"Disabler Immunity": { "Power": 150, "Sensor": 100, "Phaser": 100, "Torpedo": 100, "Pulse": 100}
 }
 
 Foundation.ShipDef.California.fMaxWarp = 8.0 + 0.0001

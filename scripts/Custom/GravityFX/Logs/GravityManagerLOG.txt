@@ -1,13 +1,13 @@
-#This is the dump of the LogCreator: <Gravity Manager LogCreator_OKFV5w238OWZ>
-#This log file was created on: 22:20:48.0 of 2/January/2023, Monday
+#This is the dump of the LogCreator: <Gravity Manager LogCreator_9G7q6oZAHrUf>
+#This log file was created on: 20:27:10.0 of 4/January/2023, Wednesday
 ########################################
 ## -------------------- ##
 ####################
-#######>>>22:20:48.0 of 2/January/2023, Monday
-#>>>Initialized GravityManager_JUb41rmqi6gF logger
+#######>>>20:27:10.0 of 4/January/2023, Wednesday
+#>>>Initialized GravityManager_v0orVH5ASqt7 logger
 ## -------------------- ##
 ####################
-#######>>>22:20:57.494 of 2/January/2023, Monday
+#######>>>20:27:19.711 of 4/January/2023, Wednesday
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
@@ -17,176 +17,103 @@
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_R6494VlTzt6v>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_73ewU2GQPjn0>]
 #>>>Planets/Suns List: ['Belaruz 4']
 #>>>Refreshed Ship List: ['Player']
-#>>>Updated radius for grav well <Belaruz 4 GravityWell_R6494VlTzt6v>, radius is now 1604.69104004
+#>>>Updated radius for grav well <Belaruz 4 GravityWell_73ewU2GQPjn0>, radius is now 1603.11560059
 ## -------------------- ##
 ####################
-#######>>>22:22:27.930 of 2/January/2023, Monday
+#######>>>20:27:51.704 of 4/January/2023, Wednesday
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_6xIS5LWK3IDA>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_2K10VYb73SBL>]
 #>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player', 'SuperHive Ship-1', ' Warship-2', ' Warship-3']
-#>>>Refreshed Ship List: ['Player', 'SuperHive Ship-1', ' Warship-2', ' Warship-3']
-#>>>Refreshed Ship List: ['Player', 'SuperHive Ship-1', ' Warship-2', ' Warship-3']
-#>>>Refreshed Ship List: ['Player', 'SuperHive Ship-1', ' Warship-2', ' Warship-3']
+#>>>Refreshed Ship List: ['Player', 'Ha`tak (Upgrade)-1', 'Ha`tak (Upgrade)-2', 'Ha`tak (Upgrade)-3', 'Ha`tak (Upgrade)-4', 'Ha`tak (Upgrade)-5']
+#>>>Refreshed Ship List: ['Player', 'Ha`tak (Upgrade)-1', 'Ha`tak (Upgrade)-2', 'Ha`tak (Upgrade)-3', 'Ha`tak (Upgrade)-4', 'Ha`tak (Upgrade)-5']
+#>>>Refreshed Ship List: ['Player', 'Ha`tak (Upgrade)-1', 'Ha`tak (Upgrade)-2', 'Ha`tak (Upgrade)-3', 'Ha`tak (Upgrade)-4', 'Ha`tak (Upgrade)-5']
+#>>>Refreshed Ship List: ['Player', 'Ha`tak (Upgrade)-1', 'Ha`tak (Upgrade)-2', 'Ha`tak (Upgrade)-3', 'Ha`tak (Upgrade)-4', 'Ha`tak (Upgrade)-5']
+#>>>Refreshed Ship List: ['Player', 'Ha`tak (Upgrade)-1', 'Ha`tak (Upgrade)-2', 'Ha`tak (Upgrade)-3', 'Ha`tak (Upgrade)-4', 'Ha`tak (Upgrade)-5']
+#>>>Refreshed Ship List: ['Player', 'Ha`tak (Upgrade)-1', 'Ha`tak (Upgrade)-2', 'Ha`tak (Upgrade)-3', 'Ha`tak (Upgrade)-4', 'Ha`tak (Upgrade)-5']
 ## -------------------- ##
 ####################
-#######>>>22:23:9.030 of 2/January/2023, Monday
-#>>>Refreshed Ship List: ['Player', ' Warship-2', ' Warship-3']
+#######>>>20:27:55.244 of 4/January/2023, Wednesday
+#>>>Refreshed Ship List: ['Player', 'Ha`tak (Upgrade)-1', 'Ha`tak (Upgrade)-2', 'Ha`tak (Upgrade)-3', 'Ha`tak (Upgrade)-4', 'Ha`tak (Upgrade)-5', 'Player_Port Wing', 'Player_Starboard Wing']
+#>>>Refreshed Ship List: ['Player', 'Ha`tak (Upgrade)-1', 'Ha`tak (Upgrade)-2', 'Ha`tak (Upgrade)-3', 'Ha`tak (Upgrade)-4', 'Ha`tak (Upgrade)-5', 'Player_Port Wing', 'Player_Starboard Wing']
 ## -------------------- ##
 ####################
-#######>>>22:23:17.443 of 2/January/2023, Monday
+#######>>>20:28:41.461 of 4/January/2023, Wednesday
+#>>>Refreshed Ship List: ['Player', 'Ha`tak (Upgrade)-1', 'Ha`tak (Upgrade)-2', 'Ha`tak (Upgrade)-3', 'Ha`tak (Upgrade)-4', 'Ha`tak (Upgrade)-5']
+## -------------------- ##
+####################
+#######>>>20:28:42.261 of 4/January/2023, Wednesday
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_5w760pwg87J4>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_z38ro6Jn6Tgo>]
 #>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: [' Warship-2', ' Warship-3', 'Player']
+#>>>Refreshed Ship List: ['Ha`tak (Upgrade)-1', 'Ha`tak (Upgrade)-2', 'Ha`tak (Upgrade)-3', 'Ha`tak (Upgrade)-4', 'Ha`tak (Upgrade)-5', 'Player']
 ## -------------------- ##
 ####################
-#######>>>22:23:39.957 of 2/January/2023, Monday
+#######>>>20:28:48.694 of 4/January/2023, Wednesday
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_7yiW7Dnvc2l0>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player', 'SuperHive Ship-1', 'Odyssey (Refit)-2']
-#>>>Refreshed Ship List: ['Player', 'SuperHive Ship-1', 'Odyssey (Refit)-2']
-#>>>Refreshed Ship List: ['Player', 'SuperHive Ship-1', 'Odyssey (Refit)-2']
-## -------------------- ##
-####################
-#######>>>22:24:16.977 of 2/January/2023, Monday
-#>>>Refreshed Ship List: ['Player', 'SuperHive Ship-1']
-## -------------------- ##
-####################
-#######>>>22:25:1.791 of 2/January/2023, Monday
-#>>>Refreshed Ship List: []
-#>>>Added Player to the Ship List
-## -------------------- ##
-####################
-#######>>>22:25:2.490 of 2/January/2023, Monday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_BVW1tY92387y>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['SuperHive Ship-1', 'Player']
-## -------------------- ##
-####################
-#######>>>22:25:22.673 of 2/January/2023, Monday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_wX9z646ZM4cg>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player', 'SuperHive Ship-1', 'Odyssey (Refit)-2', 'Odyssey (Refit)-3', 'Odyssey (Refit)-4', 'Odyssey (Refit)-5', 'Odyssey (Refit)-6']
-#>>>Refreshed Ship List: ['Player', 'SuperHive Ship-1', 'Odyssey (Refit)-2', 'Odyssey (Refit)-3', 'Odyssey (Refit)-4', 'Odyssey (Refit)-5', 'Odyssey (Refit)-6']
-#>>>Refreshed Ship List: ['Player', 'SuperHive Ship-1', 'Odyssey (Refit)-2', 'Odyssey (Refit)-3', 'Odyssey (Refit)-4', 'Odyssey (Refit)-5', 'Odyssey (Refit)-6']
-#>>>Refreshed Ship List: ['Player', 'SuperHive Ship-1', 'Odyssey (Refit)-2', 'Odyssey (Refit)-3', 'Odyssey (Refit)-4', 'Odyssey (Refit)-5', 'Odyssey (Refit)-6']
-#>>>Refreshed Ship List: ['Player', 'SuperHive Ship-1', 'Odyssey (Refit)-2', 'Odyssey (Refit)-3', 'Odyssey (Refit)-4', 'Odyssey (Refit)-5', 'Odyssey (Refit)-6']
-#>>>Refreshed Ship List: ['Player', 'SuperHive Ship-1', 'Odyssey (Refit)-2', 'Odyssey (Refit)-3', 'Odyssey (Refit)-4', 'Odyssey (Refit)-5', 'Odyssey (Refit)-6']
-#>>>Refreshed Ship List: ['Player', 'SuperHive Ship-1', 'Odyssey (Refit)-2', 'Odyssey (Refit)-3', 'Odyssey (Refit)-4', 'Odyssey (Refit)-5', 'Odyssey (Refit)-6']
-## -------------------- ##
-####################
-#######>>>22:26:2.441 of 2/January/2023, Monday
-#>>>Refreshed Ship List: ['Player', 'Odyssey (Refit)-2', 'Odyssey (Refit)-3', 'Odyssey (Refit)-4', 'Odyssey (Refit)-5', 'Odyssey (Refit)-6']
-## -------------------- ##
-####################
-#######>>>22:26:10.808 of 2/January/2023, Monday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_lxgeGe9FV00j>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Odyssey (Refit)-2', 'Odyssey (Refit)-3', 'Odyssey (Refit)-4', 'Odyssey (Refit)-5', 'Odyssey (Refit)-6', 'Player']
-## -------------------- ##
-####################
-#######>>>22:26:20.506 of 2/January/2023, Monday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_w72L10701PzP>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player', 'SuperHive Ship-1', 'Odyssey (Refit)-2', 'Odyssey (Refit)-3', 'Odyssey (Refit)-4']
-#>>>Refreshed Ship List: ['Player', 'SuperHive Ship-1', 'Odyssey (Refit)-2', 'Odyssey (Refit)-3', 'Odyssey (Refit)-4']
-#>>>Refreshed Ship List: ['Player', 'SuperHive Ship-1', 'Odyssey (Refit)-2', 'Odyssey (Refit)-3', 'Odyssey (Refit)-4']
-#>>>Refreshed Ship List: ['Player', 'SuperHive Ship-1', 'Odyssey (Refit)-2', 'Odyssey (Refit)-3', 'Odyssey (Refit)-4']
-#>>>Refreshed Ship List: ['Player', 'SuperHive Ship-1', 'Odyssey (Refit)-2', 'Odyssey (Refit)-3', 'Odyssey (Refit)-4']
-## -------------------- ##
-####################
-#######>>>22:27:9.279 of 2/January/2023, Monday
-#>>>Refreshed Ship List: ['Player', 'SuperHive Ship-1', 'Odyssey (Refit)-2', 'Odyssey (Refit)-4']
-## -------------------- ##
-####################
-#######>>>22:27:11.148 of 2/January/2023, Monday
-#>>>Refreshed Ship List: ['Player', 'Odyssey (Refit)-2', 'Odyssey (Refit)-4']
-## -------------------- ##
-####################
-#######>>>22:27:21.456 of 2/January/2023, Monday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_0m4829ZEgzBz>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Odyssey (Refit)-2', 'Odyssey (Refit)-4', 'Player']
-## -------------------- ##
-####################
-#######>>>22:29:39.870 of 2/January/2023, Monday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_mX9Bz9rOJ3gX>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player', 'SuperHive Ship-1', 'Odyssey (Refit)-2', 'Odyssey (Refit)-3']
-#>>>Refreshed Ship List: ['Player', 'SuperHive Ship-1', 'Odyssey (Refit)-2', 'Odyssey (Refit)-3']
-#>>>Refreshed Ship List: ['Player', 'SuperHive Ship-1', 'Odyssey (Refit)-2', 'Odyssey (Refit)-3']
-#>>>Refreshed Ship List: ['Player', 'SuperHive Ship-1', 'Odyssey (Refit)-2', 'Odyssey (Refit)-3']
-## -------------------- ##
-####################
-#######>>>22:30:8.121 of 2/January/2023, Monday
-#>>>Refreshed Ship List: ['Player', 'SuperHive Ship-1', 'Odyssey (Refit)-3']
-## -------------------- ##
-####################
-#######>>>22:30:32.220 of 2/January/2023, Monday
-#>>>Refreshed Ship List: ['Player', 'Odyssey (Refit)-3']
-## -------------------- ##
-####################
-#######>>>22:30:52.820 of 2/January/2023, Monday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_2xsOezhhlw9c>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Odyssey (Refit)-3', 'Player']
-## -------------------- ##
-####################
-#######>>>22:31:4.602 of 2/January/2023, Monday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_9Y5Cfv9UG3UU>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player', 'SuperHive Ship-1', 'Odyssey (Refit)-2']
-#>>>Refreshed Ship List: ['Player', 'SuperHive Ship-1', 'Odyssey (Refit)-2']
-#>>>Refreshed Ship List: ['Player', 'SuperHive Ship-1', 'Odyssey (Refit)-2']
-## -------------------- ##
-####################
-#######>>>22:31:36.977 of 2/January/2023, Monday
-#>>>Refreshed Ship List: ['Player', 'SuperHive Ship-1']
-## -------------------- ##
-####################
-#######>>>22:32:45.401 of 2/January/2023, Monday
-#>>>Refreshed Ship List: ['Player']
-## -------------------- ##
-####################
-#######>>>22:32:55.201 of 2/January/2023, Monday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_JVtnZcuY510Y>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_5d264r53l08Q>]
 #>>>Planets/Suns List: ['Belaruz 4']
 #>>>Refreshed Ship List: ['Player']
 ## -------------------- ##
 ####################
-#######>>>22:33:40.450 of 2/January/2023, Monday
+#######>>>20:28:50.844 of 4/January/2023, Wednesday
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_1oqs5UgRP1A5>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_b25i2U7A3wAB>]
 #>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player', 'SuperHive Ship-1', 'Odyssey (Refit)-2']
-#>>>Refreshed Ship List: ['Player', 'SuperHive Ship-1', 'Odyssey (Refit)-2']
-#>>>Refreshed Ship List: ['Player', 'SuperHive Ship-1', 'Odyssey (Refit)-2']
+#>>>Refreshed Ship List: ['Player', 'Ha`tak (Upgrade)-1', 'Ha`tak (Upgrade)-2', 'Ha`tak (Upgrade)-3', 'Ha`tak (Upgrade)-4', 'Ha`tak (Upgrade)-5']
+#>>>Refreshed Ship List: ['Player', 'Ha`tak (Upgrade)-1', 'Ha`tak (Upgrade)-2', 'Ha`tak (Upgrade)-3', 'Ha`tak (Upgrade)-4', 'Ha`tak (Upgrade)-5']
+#>>>Refreshed Ship List: ['Player', 'Ha`tak (Upgrade)-1', 'Ha`tak (Upgrade)-2', 'Ha`tak (Upgrade)-3', 'Ha`tak (Upgrade)-4', 'Ha`tak (Upgrade)-5']
+#>>>Refreshed Ship List: ['Player', 'Ha`tak (Upgrade)-1', 'Ha`tak (Upgrade)-2', 'Ha`tak (Upgrade)-3', 'Ha`tak (Upgrade)-4', 'Ha`tak (Upgrade)-5']
+#>>>Refreshed Ship List: ['Player', 'Ha`tak (Upgrade)-1', 'Ha`tak (Upgrade)-2', 'Ha`tak (Upgrade)-3', 'Ha`tak (Upgrade)-4', 'Ha`tak (Upgrade)-5']
+#>>>Refreshed Ship List: ['Player', 'Ha`tak (Upgrade)-1', 'Ha`tak (Upgrade)-2', 'Ha`tak (Upgrade)-3', 'Ha`tak (Upgrade)-4', 'Ha`tak (Upgrade)-5']
 ## -------------------- ##
 ####################
-#######>>>22:34:13.337 of 2/January/2023, Monday
-#>>>Refreshed Ship List: ['Player', 'SuperHive Ship-1']
+#######>>>20:28:55.577 of 4/January/2023, Wednesday
+#>>>Refreshed Ship List: ['Player', 'Ha`tak (Upgrade)-1', 'Ha`tak (Upgrade)-2', 'Ha`tak (Upgrade)-3', 'Ha`tak (Upgrade)-4', 'Ha`tak (Upgrade)-5', 'Player_Port Wing', 'Player_Starboard Wing']
+#>>>Refreshed Ship List: ['Player', 'Ha`tak (Upgrade)-1', 'Ha`tak (Upgrade)-2', 'Ha`tak (Upgrade)-3', 'Ha`tak (Upgrade)-4', 'Ha`tak (Upgrade)-5', 'Player_Port Wing', 'Player_Starboard Wing']
 ## -------------------- ##
 ####################
-#######>>>22:35:9.451 of 2/January/2023, Monday
-#>>>Refreshed Ship List: ['Player', 'SuperHive Ship-1']
+#######>>>20:29:10.427 of 4/January/2023, Wednesday
+#>>>Refreshed Ship List: ['Player', 'Ha`tak (Upgrade)-1', 'Ha`tak (Upgrade)-2', 'Ha`tak (Upgrade)-3', 'Ha`tak (Upgrade)-4', 'Ha`tak (Upgrade)-5']
 ## -------------------- ##
 ####################
-#######>>>22:35:10.344 of 2/January/2023, Monday
+#######>>>20:29:10.944 of 4/January/2023, Wednesday
+#>>>Refreshed Ship List: ['Player', 'Ha`tak (Upgrade)-1', 'Ha`tak (Upgrade)-2', 'Ha`tak (Upgrade)-3', 'Ha`tak (Upgrade)-4', 'Ha`tak (Upgrade)-5']
+## -------------------- ##
+####################
+#######>>>20:29:11.310 of 4/January/2023, Wednesday
+#>>>Refreshed Ship List: ['Player', 'Ha`tak (Upgrade)-1', 'Ha`tak (Upgrade)-2', 'Ha`tak (Upgrade)-3', 'Ha`tak (Upgrade)-4', 'Ha`tak (Upgrade)-5']
+## -------------------- ##
+####################
+#######>>>20:29:11.912 of 4/January/2023, Wednesday
+#>>>Refreshed Ship List: ['Player', 'Ha`tak (Upgrade)-1', 'Ha`tak (Upgrade)-2', 'Ha`tak (Upgrade)-3', 'Ha`tak (Upgrade)-4', 'Ha`tak (Upgrade)-5']
+## -------------------- ##
+####################
+#######>>>20:29:12.447 of 4/January/2023, Wednesday
+#>>>Refreshed Ship List: ['Player', 'Ha`tak (Upgrade)-1', 'Ha`tak (Upgrade)-2', 'Ha`tak (Upgrade)-3', 'Ha`tak (Upgrade)-4', 'Ha`tak (Upgrade)-5']
+## -------------------- ##
+####################
+#######>>>20:29:54.212 of 4/January/2023, Wednesday
+#>>>Refreshed Ship List: ['Player', 'Ha`tak (Upgrade)-1', 'Ha`tak (Upgrade)-3', 'Ha`tak (Upgrade)-4', 'Ha`tak (Upgrade)-5']
+## -------------------- ##
+####################
+#######>>>20:30:3.959 of 4/January/2023, Wednesday
+#>>>Refreshed Ship List: ['Player', 'Ha`tak (Upgrade)-1', 'Ha`tak (Upgrade)-3', 'Ha`tak (Upgrade)-4', 'Ha`tak (Upgrade)-5', 'Player_Port Wing', 'Player_Starboard Wing']
+#>>>Refreshed Ship List: ['Player', 'Ha`tak (Upgrade)-1', 'Ha`tak (Upgrade)-3', 'Ha`tak (Upgrade)-4', 'Ha`tak (Upgrade)-5', 'Player_Port Wing', 'Player_Starboard Wing']
+## -------------------- ##
+####################
+#######>>>20:30:19.075 of 4/January/2023, Wednesday
+#>>>Refreshed Ship List: ['Player', 'Ha`tak (Upgrade)-1', 'Ha`tak (Upgrade)-3', 'Ha`tak (Upgrade)-4', 'Ha`tak (Upgrade)-5']
+## -------------------- ##
+####################
+#######>>>20:30:19.909 of 4/January/2023, Wednesday
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_3caQe70HQOz4>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_JghEtBl6fVzL>]
 #>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['SuperHive Ship-1', 'Player']
+#>>>Refreshed Ship List: ['Ha`tak (Upgrade)-1', 'Ha`tak (Upgrade)-3', 'Ha`tak (Upgrade)-4', 'Ha`tak (Upgrade)-5', 'Player']
+########################################
+# 20:30:26.958 of 4/January/2023, Wednesday
+#Ending of log dump - User is quiting the game
+########################################

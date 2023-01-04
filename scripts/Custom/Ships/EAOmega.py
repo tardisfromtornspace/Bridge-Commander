@@ -41,6 +41,7 @@ credits = {
 Foundation.ShipDef.EAOmega = Foundation.FedShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu, "SubSubMenu": SubSubMenu })
 
 Foundation.ShipDef.EAOmega.dTechs = {
+	"AutoTargeting": { "Phaser": [3, 1] },
 	'Defense Grid': 150
 }
 #                                                                                     #

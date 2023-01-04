@@ -16,6 +16,7 @@ playerMenuGroup = "Andromeda"
 SubMenu = "System´s Commonwealth"
 Foundation.ShipDef.Andromeda = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
 Foundation.ShipDef.Andromeda.dTechs = {
+	"AutoTargeting": { "Torpedo": [8, 1] },
 	'Breen Drainer Immune': 1,
 	'Multivectral Shields': 10,
         "Reflector Shields": 40,

@@ -570,7 +570,7 @@ Warbird = App.ShipProperty_Create("Warbird")
 
 Warbird.SetGenus(1)
 Warbird.SetSpecies(301)
-Warbird.SetMass(400.000000)
+Warbird.SetMass(12000.000000)
 Warbird.SetRotationalInertia(1000.000000)
 Warbird.SetShipName("Warbird")
 Warbird.SetModelFilename("data/Models/Ships/Warbird.nif")

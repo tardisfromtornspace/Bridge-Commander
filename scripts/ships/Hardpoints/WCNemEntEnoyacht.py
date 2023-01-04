@@ -370,7 +370,7 @@ Sovereign = App.ShipProperty_Create("Sovereign")
 
 Sovereign.SetGenus(1)
 Sovereign.SetSpecies(135)
-Sovereign.SetMass(850.000000)
+Sovereign.SetMass(10000.000000)
 Sovereign.SetRotationalInertia(10000.000000)
 Sovereign.SetShipName("Sovereign")
 Sovereign.SetModelFilename("data/Models/Ships/JL Studios/NemesisEnterprise/NemesisEnterpriseE.nif")
