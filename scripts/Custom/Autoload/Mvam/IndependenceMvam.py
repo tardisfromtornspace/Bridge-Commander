@@ -91,7 +91,7 @@ MvamDirections[1].SetXYZ(0.0, 0.0, -2.0)
 
 ###TO CHANGE: This is the speed you want each ship to go. 1.0 is about 600 km/h on the speed display ingame for the
 ############# prometheus. Remember, its in the same order as the ships.. ie [ship1, ship2, ship3, ship4]
-MvamSpeeds = [0.0, 0.1]
+MvamSpeeds = [0.0, 0.6]
 
 
 ###TO CHANGE: This is the reintegrating distance. Basically, this where each ship starts off at the beginning

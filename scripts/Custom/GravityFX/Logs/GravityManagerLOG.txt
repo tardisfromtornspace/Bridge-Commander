@@ -1,13 +1,13 @@
-#This is the dump of the LogCreator: <Gravity Manager LogCreator_62c9dSV0UAV2>
-#This log file was created on: 23:25:15.0 of 5/January/2023, Thursday
+#This is the dump of the LogCreator: <Gravity Manager LogCreator_MNc4t7j3i0Ki>
+#This log file was created on: 23:57:50.0 of 5/January/2023, Thursday
 ########################################
 ## -------------------- ##
 ####################
-#######>>>23:25:15.0 of 5/January/2023, Thursday
-#>>>Initialized GravityManager_zS4K80qBaGy3 logger
+#######>>>23:57:50.0 of 5/January/2023, Thursday
+#>>>Initialized GravityManager_2b1Etg5yMJtK logger
 ## -------------------- ##
 ####################
-#######>>>23:25:23.954 of 5/January/2023, Thursday
+#######>>>23:58:0.264 of 5/January/2023, Thursday
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
@@ -17,27 +17,38 @@
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_tHgz87DdIHtN>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_Wt7kgOETaT0z>]
 #>>>Planets/Suns List: ['Belaruz 4']
 #>>>Refreshed Ship List: ['Player']
-#>>>Updated radius for grav well <Belaruz 4 GravityWell_tHgz87DdIHtN>, radius is now 1609.81225586
+#>>>Updated radius for grav well <Belaruz 4 GravityWell_Wt7kgOETaT0z>, radius is now 1606.37451172
 ## -------------------- ##
 ####################
-#######>>>23:25:52.509 of 5/January/2023, Thursday
+#######>>>23:58:33.147 of 5/January/2023, Thursday
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_2iI46fs698N2>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_IdL0s21i8yZ5>]
 #>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player', 'Gorn Battleship-1']
-#>>>Refreshed Ship List: ['Player', 'Gorn Battleship-1']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1']
 ## -------------------- ##
 ####################
-#######>>>23:26:32.621 of 5/January/2023, Thursday
+#######>>>23:58:38.219 of 5/January/2023, Thursday
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_YB62382Tug1j>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_g4tb4EpP5AGP>]
 #>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player', 'IndependenceNoYacht']
-#>>>Refreshed Ship List: ['Player', 'IndependenceNoYacht']
-########################################
-# 23:26:55.580 of 5/January/2023, Thursday
-#Ending of log dump - User is quiting the game
-########################################
+#>>>Refreshed Ship List: ['U.S.S. Enterprise J-1', 'Player', 'IndependenceYacht']
+#>>>Refreshed Ship List: ['U.S.S. Enterprise J-1', 'Player', 'IndependenceYacht']
+## -------------------- ##
+####################
+#######>>>23:59:7.090 of 5/January/2023, Thursday
+#>>>Refreshed Ship List: ['U.S.S. Enterprise J-1', 'Player', 'IndependenceYacht']
+## -------------------- ##
+####################
+#######>>>23:59:8.087 of 5/January/2023, Thursday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_T7ZbwsmJ2hi8>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['U.S.S. Enterprise J-1', 'IndependenceYacht', 'Player']
+## -------------------- ##
+####################
+#######>>>23:59:10.214 of 5/January/2023, Thursday
+#>>>Refreshed Ship List: ['Player']
