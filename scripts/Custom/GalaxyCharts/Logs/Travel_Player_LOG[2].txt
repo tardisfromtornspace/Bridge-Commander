@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Player Travel Logger[2] LogCreator_KJ0vJUr2Pvsp>
-#This log file was created on: 23:58:33.147 of 5/January/2023, Thursday
+#This is the dump of the LogCreator: <Player Travel Logger[2] LogCreator_FY4743qX7L12>
+#This log file was created on: 0:16:45.983 of 6/January/2023, Friday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>23:58:33.147 of 5/January/2023, Thursday
+#######>>>0:16:45.983 of 6/January/2023, Friday
 #>>>Initialized Player Travel logger
-#>>>SELF = <Player(56863) Travel_J6XCil15ikGx>
+#>>>SELF = <Player(54186) Travel_yumZ44457zpa>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Is Player - Checked
@@ -29,9 +29,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>23:58:38.219 of 5/January/2023, Thursday
+#######>>>0:16:51.586 of 6/January/2023, Friday
 #>>>Initialized Player Travel logger
-#>>>SELF = <Player(65319) Travel_UXBaike8csEr>
+#>>>SELF = <Player(62294) Travel_WxyMCvWoaw28>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Is Player - Checked
@@ -41,11 +41,6 @@ Updating Travelling Procedures...
 #>>>Chaser base class initialization complete.
 #>>>Target Ship = NONE
 #>>>Chaser pre-emptive Refresher Initialization
-## -------------------- ##
-####################
-#######>>>23:58:53.133 of 5/January/2023, Thursday
-#>>>Stopping Refresh Handler
-#>>>Deleting...
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
  -Update Loop MARK START
@@ -54,9 +49,29 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>23:59:8.087 of 5/January/2023, Thursday
+#######>>>0:16:59.537 of 6/January/2023, Friday
 #>>>Initialized Player Travel logger
-#>>>SELF = <Player(135659) Travel_1jEY4v44bYKN>
+#>>>SELF = <Player(72816) Travel_37v6Vqgiw4Pt>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is Player - Checked
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>0:17:2.703 of 6/January/2023, Friday
+#>>>Initialized Player Travel logger
+#>>>SELF = <Player(82900) Travel_mro5W439K3yH>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Is Player - Checked

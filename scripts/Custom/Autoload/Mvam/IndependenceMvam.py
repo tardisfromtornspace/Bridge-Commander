@@ -113,7 +113,7 @@ MvamSpeeds = [0.0, 0.6]
 #############    the result of this calculation into the variables below, keeping the order of the ships like you should
 #############    have been doing throughout this plugin.
 MvamReinDistances[0].SetXYZ(0.0, 0.000000, 0.000000)
-MvamReinDistances[1].SetXYZ(0.0, 2.750000, -0.250000)
+MvamReinDistances[1].SetXYZ(0.0, 2.750000, -1.650000)
 
 
 ###TO CHANGE: This is the reintegration heading. If you used the 6 step guide in MvamReinDistances, you would simply
@@ -125,7 +125,7 @@ MvamReinDirections[1].SetXYZ(0.0, 0.0, 1.0)
 
 ###TO CHANGE: This is how fast each ship is going during the reintegration sequence. If you used the 6 step guide in
 ############# MvamReinDistances, you simple use the same speed values you used in MvamSpeeds three steps above.
-MvamReinSpeeds = [0.0, -0.04]
+MvamReinSpeeds = [0.0, -0.01]
 
 
 ###TO CHANGE: this is the name of your music! It's the file in sfx/music. REMEMBER to include this file in your plugin if

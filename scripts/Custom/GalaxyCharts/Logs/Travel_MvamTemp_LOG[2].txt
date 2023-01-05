@@ -1,0 +1,49 @@
+#This is the dump of the LogCreator: <MvamTemp Travel Logger[2] LogCreator_H4MgY1c2yR64>
+#This log file was created on: 0:12:10.621 of 6/January/2023, Friday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>0:12:10.621 of 6/January/2023, Friday
+#>>>Initialized MvamTemp Travel logger
+#>>>SELF = <MvamTemp(1033946) Travel_d714GsyJfxi5>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>0:13:58.838 of 6/January/2023, Friday
+#>>>Initialized MvamTemp Travel logger
+#>>>SELF = <MvamTemp(1453546) Travel_5b6O85tTKd2w>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+########################################
+# 0:14:4.370 of 6/January/2023, Friday
+#Ending of log dump - User is quiting the game
+########################################
+########################################
+# 0:14:4.370 of 6/January/2023, Friday
+#Ending of log dump - User is quiting the game
+########################################
