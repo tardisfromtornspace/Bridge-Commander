@@ -1,13 +1,13 @@
-#This is the dump of the LogCreator: <Gravity Manager LogCreator_wA9K1YAvGMNM>
-#This log file was created on: 23:3:31.0 of 4/January/2023, Wednesday
+#This is the dump of the LogCreator: <Gravity Manager LogCreator_AaIr1j8a85zM>
+#This log file was created on: 18:47:31.0 of 5/January/2023, Thursday
 ########################################
 ## -------------------- ##
 ####################
-#######>>>23:3:31.0 of 4/January/2023, Wednesday
-#>>>Initialized GravityManager_25qU6Li9o508 logger
+#######>>>18:47:31.0 of 5/January/2023, Thursday
+#>>>Initialized GravityManager_VrK87iSlFZbL logger
 ## -------------------- ##
 ####################
-#######>>>23:3:41.559 of 4/January/2023, Wednesday
+#######>>>18:47:45.083 of 5/January/2023, Thursday
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
@@ -17,321 +17,178 @@
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_j01X052KJdiN>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_E5S73FlFg8X3>]
 #>>>Planets/Suns List: ['Belaruz 4']
 #>>>Refreshed Ship List: ['Player']
-#>>>Updated radius for grav well <Belaruz 4 GravityWell_j01X052KJdiN>, radius is now 1602.65856934
+#>>>Updated radius for grav well <Belaruz 4 GravityWell_E5S73FlFg8X3>, radius is now 1602.3729248
 ## -------------------- ##
 ####################
-#######>>>23:4:23.392 of 4/January/2023, Wednesday
+#######>>>18:48:29.222 of 5/January/2023, Thursday
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_g60Hj3PeMpsV>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_1G5GB664zV0v>]
 #>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player', 'Hideki-1', 'Hideki-2', 'Hideki-3', 'Hideki-4', 'Hideki-5', 'Hideki-6', 'Hideki-7', 'Hideki-8', 'Hideki-9', 'Hideki-10']
-#>>>Refreshed Ship List: ['Player', 'Hideki-1', 'Hideki-2', 'Hideki-3', 'Hideki-4', 'Hideki-5', 'Hideki-6', 'Hideki-7', 'Hideki-8', 'Hideki-9', 'Hideki-10']
-#>>>Refreshed Ship List: ['Player', 'Hideki-1', 'Hideki-2', 'Hideki-3', 'Hideki-4', 'Hideki-5', 'Hideki-6', 'Hideki-7', 'Hideki-8', 'Hideki-9', 'Hideki-10']
-#>>>Refreshed Ship List: ['Player', 'Hideki-1', 'Hideki-2', 'Hideki-3', 'Hideki-4', 'Hideki-5', 'Hideki-6', 'Hideki-7', 'Hideki-8', 'Hideki-9', 'Hideki-10']
-#>>>Refreshed Ship List: ['Player', 'Hideki-1', 'Hideki-2', 'Hideki-3', 'Hideki-4', 'Hideki-5', 'Hideki-6', 'Hideki-7', 'Hideki-8', 'Hideki-9', 'Hideki-10']
-#>>>Refreshed Ship List: ['Player', 'Hideki-1', 'Hideki-2', 'Hideki-3', 'Hideki-4', 'Hideki-5', 'Hideki-6', 'Hideki-7', 'Hideki-8', 'Hideki-9', 'Hideki-10']
-#>>>Refreshed Ship List: ['Player', 'Hideki-1', 'Hideki-2', 'Hideki-3', 'Hideki-4', 'Hideki-5', 'Hideki-6', 'Hideki-7', 'Hideki-8', 'Hideki-9', 'Hideki-10']
-#>>>Refreshed Ship List: ['Player', 'Hideki-1', 'Hideki-2', 'Hideki-3', 'Hideki-4', 'Hideki-5', 'Hideki-6', 'Hideki-7', 'Hideki-8', 'Hideki-9', 'Hideki-10']
-#>>>Refreshed Ship List: ['Player', 'Hideki-1', 'Hideki-2', 'Hideki-3', 'Hideki-4', 'Hideki-5', 'Hideki-6', 'Hideki-7', 'Hideki-8', 'Hideki-9', 'Hideki-10']
-#>>>Refreshed Ship List: ['Player', 'Hideki-1', 'Hideki-2', 'Hideki-3', 'Hideki-4', 'Hideki-5', 'Hideki-6', 'Hideki-7', 'Hideki-8', 'Hideki-9', 'Hideki-10']
-#>>>Refreshed Ship List: ['Player', 'Hideki-1', 'Hideki-2', 'Hideki-3', 'Hideki-4', 'Hideki-5', 'Hideki-6', 'Hideki-7', 'Hideki-8', 'Hideki-9', 'Hideki-10']
+#>>>Refreshed Ship List: ['Player', 'DJEnterpriseG-1', 'DJEnterpriseG-2', 'DJEnterpriseG-3']
+#>>>Refreshed Ship List: ['Player', 'DJEnterpriseG-1', 'DJEnterpriseG-2', 'DJEnterpriseG-3']
+#>>>Refreshed Ship List: ['Player', 'DJEnterpriseG-1', 'DJEnterpriseG-2', 'DJEnterpriseG-3']
+#>>>Refreshed Ship List: ['Player', 'DJEnterpriseG-1', 'DJEnterpriseG-2', 'DJEnterpriseG-3']
 ## -------------------- ##
 ####################
-#######>>>23:4:53.530 of 4/January/2023, Wednesday
-#>>>Refreshed Ship List: ['Player', 'Hideki-1', 'Hideki-2', 'Hideki-4', 'Hideki-5', 'Hideki-6', 'Hideki-7', 'Hideki-8', 'Hideki-9', 'Hideki-10']
+#######>>>18:50:13.215 of 5/January/2023, Thursday
+#>>>Refreshed Ship List: ['Player', 'DJEnterpriseG-1', 'DJEnterpriseG-2']
 ## -------------------- ##
 ####################
-#######>>>23:4:58.890 of 4/January/2023, Wednesday
-#>>>Refreshed Ship List: ['Player', 'Hideki-1', 'Hideki-2', 'Hideki-4', 'Hideki-6', 'Hideki-7', 'Hideki-8', 'Hideki-9', 'Hideki-10']
+#######>>>18:51:50.362 of 5/January/2023, Thursday
+#>>>Refreshed Ship List: ['Player', 'DJEnterpriseG-2']
 ## -------------------- ##
 ####################
-#######>>>23:5:6.823 of 4/January/2023, Wednesday
-#>>>Refreshed Ship List: ['Player', 'Hideki-1', 'Hideki-2', 'Hideki-4', 'Hideki-6', 'Hideki-7', 'Hideki-8', 'Hideki-9']
+#######>>>18:53:46.898 of 5/January/2023, Thursday
+#>>>Refreshed Ship List: ['Player']
 ## -------------------- ##
 ####################
-#######>>>23:5:14.756 of 4/January/2023, Wednesday
-#>>>Refreshed Ship List: ['Player', 'Hideki-1', 'Hideki-2', 'Hideki-4', 'Hideki-6', 'Hideki-8', 'Hideki-9']
-## -------------------- ##
-####################
-#######>>>23:5:37.755 of 4/January/2023, Wednesday
-#>>>Refreshed Ship List: ['Player', 'Hideki-1', 'Hideki-2', 'Hideki-4', 'Hideki-6', 'Hideki-9']
-## -------------------- ##
-####################
-#######>>>23:6:28.888 of 4/January/2023, Wednesday
-#>>>Refreshed Ship List: ['Player', 'Hideki-2', 'Hideki-6', 'Hideki-9']
-## -------------------- ##
-####################
-#######>>>23:9:21.736 of 4/January/2023, Wednesday
-#>>>Refreshed Ship List: ['Player', 'Hideki-2', 'Hideki-6']
-## -------------------- ##
-####################
-#######>>>23:17:25.014 of 4/January/2023, Wednesday
+#######>>>18:54:30.313 of 5/January/2023, Thursday
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_Y9sfiK00v95s>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_o3Qgt6HRR4hl>]
 #>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Hideki-2', 'Player']
+#>>>Refreshed Ship List: ['Player', 'IndependenceNoYacht']
+#>>>Refreshed Ship List: ['Player', 'IndependenceNoYacht']
 ## -------------------- ##
 ####################
-#######>>>23:18:3.796 of 4/January/2023, Wednesday
+#######>>>18:56:54.526 of 5/January/2023, Thursday
+#>>>Refreshed Ship List: ['IndependenceNoYacht', 'MvamTemp', 'Player']
+#>>>Refreshed Ship List: ['IndependenceNoYacht', 'MvamTemp', 'Player']
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_p439mih9SXJG>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_duehH9iq5UBz>]
 #>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player', 'Species 8472 Bioship-1']
-#>>>Refreshed Ship List: ['Player', 'Species 8472 Bioship-1']
+#>>>Refreshed Ship List: ['IndependenceNoYacht', 'MvamTemp', 'Player']
 ## -------------------- ##
 ####################
-#######>>>23:32:11.817 of 4/January/2023, Wednesday
-#>>>Refreshed Ship List: ['Player', 'Species 8472 Bioship-1']
-## -------------------- ##
-####################
-#######>>>23:32:12.200 of 4/January/2023, Wednesday
+#######>>>18:56:57.626 of 5/January/2023, Thursday
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_I71sKJ3XqT7y>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Species 8472 Bioship-1', 'Player']
-## -------------------- ##
-####################
-#######>>>23:33:49.457 of 4/January/2023, Wednesday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_G6DAg2N2YU51>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player', 'Species 8472 Bioship-1', 'Species 8472 Bioship-2', 'Species 8472 Bioship-3', 'Vorlon Cruiser-4', 'Canon Enterprise F-5', 'Enterprise F-6', 'Enterprise F-7', 'Enterprise E-8', 'Galaxy refit-9', 'DJEnterpriseG-10']
-#>>>Refreshed Ship List: ['Player', 'Species 8472 Bioship-1', 'Species 8472 Bioship-2', 'Species 8472 Bioship-3', 'Vorlon Cruiser-4', 'Canon Enterprise F-5', 'Enterprise F-6', 'Enterprise F-7', 'Enterprise E-8', 'Galaxy refit-9', 'DJEnterpriseG-10']
-#>>>Refreshed Ship List: ['Player', 'Species 8472 Bioship-1', 'Species 8472 Bioship-2', 'Species 8472 Bioship-3', 'Vorlon Cruiser-4', 'Canon Enterprise F-5', 'Enterprise F-6', 'Enterprise F-7', 'Enterprise E-8', 'Galaxy refit-9', 'DJEnterpriseG-10']
-#>>>Refreshed Ship List: ['Player', 'Species 8472 Bioship-1', 'Species 8472 Bioship-2', 'Species 8472 Bioship-3', 'Vorlon Cruiser-4', 'Canon Enterprise F-5', 'Enterprise F-6', 'Enterprise F-7', 'Enterprise E-8', 'Galaxy refit-9', 'DJEnterpriseG-10']
-#>>>Refreshed Ship List: ['Player', 'Species 8472 Bioship-1', 'Species 8472 Bioship-2', 'Species 8472 Bioship-3', 'Vorlon Cruiser-4', 'Canon Enterprise F-5', 'Enterprise F-6', 'Enterprise F-7', 'Enterprise E-8', 'Galaxy refit-9', 'DJEnterpriseG-10']
-#>>>Refreshed Ship List: ['Player', 'Species 8472 Bioship-1', 'Species 8472 Bioship-2', 'Species 8472 Bioship-3', 'Vorlon Cruiser-4', 'Canon Enterprise F-5', 'Enterprise F-6', 'Enterprise F-7', 'Enterprise E-8', 'Galaxy refit-9', 'DJEnterpriseG-10']
-#>>>Refreshed Ship List: ['Player', 'Species 8472 Bioship-1', 'Species 8472 Bioship-2', 'Species 8472 Bioship-3', 'Vorlon Cruiser-4', 'Canon Enterprise F-5', 'Enterprise F-6', 'Enterprise F-7', 'Enterprise E-8', 'Galaxy refit-9', 'DJEnterpriseG-10']
-#>>>Refreshed Ship List: ['Player', 'Species 8472 Bioship-1', 'Species 8472 Bioship-2', 'Species 8472 Bioship-3', 'Vorlon Cruiser-4', 'Canon Enterprise F-5', 'Enterprise F-6', 'Enterprise F-7', 'Enterprise E-8', 'Galaxy refit-9', 'DJEnterpriseG-10']
-#>>>Refreshed Ship List: ['Player', 'Species 8472 Bioship-1', 'Species 8472 Bioship-2', 'Species 8472 Bioship-3', 'Vorlon Cruiser-4', 'Canon Enterprise F-5', 'Enterprise F-6', 'Enterprise F-7', 'Enterprise E-8', 'Galaxy refit-9', 'DJEnterpriseG-10']
-#>>>Refreshed Ship List: ['Player', 'Species 8472 Bioship-1', 'Species 8472 Bioship-2', 'Species 8472 Bioship-3', 'Vorlon Cruiser-4', 'Canon Enterprise F-5', 'Enterprise F-6', 'Enterprise F-7', 'Enterprise E-8', 'Galaxy refit-9', 'DJEnterpriseG-10']
-#>>>Refreshed Ship List: ['Player', 'Species 8472 Bioship-1', 'Species 8472 Bioship-2', 'Species 8472 Bioship-3', 'Vorlon Cruiser-4', 'Canon Enterprise F-5', 'Enterprise F-6', 'Enterprise F-7', 'Enterprise E-8', 'Galaxy refit-9', 'DJEnterpriseG-10']
-## -------------------- ##
-####################
-#######>>>23:34:18.737 of 4/January/2023, Wednesday
-#>>>Refreshed Ship List: ['Player', 'Species 8472 Bioship-1', 'Species 8472 Bioship-2', 'Species 8472 Bioship-3', 'Vorlon Cruiser-4', 'Canon Enterprise F-5', 'Enterprise F-7', 'Enterprise E-8', 'Galaxy refit-9', 'DJEnterpriseG-10']
-## -------------------- ##
-####################
-#######>>>23:34:20.916 of 4/January/2023, Wednesday
-#>>>Refreshed Ship List: ['Player', 'Species 8472 Bioship-1', 'Species 8472 Bioship-2', 'Species 8472 Bioship-3', 'Vorlon Cruiser-4', 'Canon Enterprise F-5', 'Enterprise E-8', 'Galaxy refit-9', 'DJEnterpriseG-10']
-## -------------------- ##
-####################
-#######>>>23:34:52.765 of 4/January/2023, Wednesday
-#>>>Refreshed Ship List: ['Player', 'Species 8472 Bioship-1', 'Species 8472 Bioship-2', 'Species 8472 Bioship-3', 'Canon Enterprise F-5', 'Enterprise E-8', 'Galaxy refit-9', 'DJEnterpriseG-10']
-## -------------------- ##
-####################
-#######>>>23:38:13.850 of 4/January/2023, Wednesday
-#>>>Refreshed Ship List: ['Player', 'Canon Enterprise F-5', 'Enterprise E-8', 'Galaxy refit-9']
-## -------------------- ##
-####################
-#######>>>23:39:23.962 of 4/January/2023, Wednesday
-#>>>Refreshed Ship List: ['Player', 'Enterprise E-8', 'Galaxy refit-9']
-## -------------------- ##
-####################
-#######>>>23:41:3.410 of 4/January/2023, Wednesday
-#>>>Refreshed Ship List: ['Player', 'Enterprise E-8', 'Galaxy refit-9']
-## -------------------- ##
-####################
-#######>>>23:41:4.309 of 4/January/2023, Wednesday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_3aQ6TGr669b8>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Enterprise E-8', 'Galaxy refit-9', 'Player']
-## -------------------- ##
-####################
-#######>>>23:41:20.377 of 4/January/2023, Wednesday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_9GoT69oZz7u1>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player', 'Species 8472 Bioship-1', 'Species 8472 Bioship-2', 'Species 8472 Bioship-3', 'Vorlon Cruiser-4', 'Canon Enterprise F-5', 'Enterprise F-6', 'Enterprise F-7', 'Enterprise E-8', 'Galaxy refit-9', 'DJEnterpriseG-10']
-#>>>Refreshed Ship List: ['Player', 'Species 8472 Bioship-1', 'Species 8472 Bioship-2', 'Species 8472 Bioship-3', 'Vorlon Cruiser-4', 'Canon Enterprise F-5', 'Enterprise F-6', 'Enterprise F-7', 'Enterprise E-8', 'Galaxy refit-9', 'DJEnterpriseG-10']
-#>>>Refreshed Ship List: ['Player', 'Species 8472 Bioship-1', 'Species 8472 Bioship-2', 'Species 8472 Bioship-3', 'Vorlon Cruiser-4', 'Canon Enterprise F-5', 'Enterprise F-6', 'Enterprise F-7', 'Enterprise E-8', 'Galaxy refit-9', 'DJEnterpriseG-10']
-#>>>Refreshed Ship List: ['Player', 'Species 8472 Bioship-1', 'Species 8472 Bioship-2', 'Species 8472 Bioship-3', 'Vorlon Cruiser-4', 'Canon Enterprise F-5', 'Enterprise F-6', 'Enterprise F-7', 'Enterprise E-8', 'Galaxy refit-9', 'DJEnterpriseG-10']
-#>>>Refreshed Ship List: ['Player', 'Species 8472 Bioship-1', 'Species 8472 Bioship-2', 'Species 8472 Bioship-3', 'Vorlon Cruiser-4', 'Canon Enterprise F-5', 'Enterprise F-6', 'Enterprise F-7', 'Enterprise E-8', 'Galaxy refit-9', 'DJEnterpriseG-10']
-#>>>Refreshed Ship List: ['Player', 'Species 8472 Bioship-1', 'Species 8472 Bioship-2', 'Species 8472 Bioship-3', 'Vorlon Cruiser-4', 'Canon Enterprise F-5', 'Enterprise F-6', 'Enterprise F-7', 'Enterprise E-8', 'Galaxy refit-9', 'DJEnterpriseG-10']
-#>>>Refreshed Ship List: ['Player', 'Species 8472 Bioship-1', 'Species 8472 Bioship-2', 'Species 8472 Bioship-3', 'Vorlon Cruiser-4', 'Canon Enterprise F-5', 'Enterprise F-6', 'Enterprise F-7', 'Enterprise E-8', 'Galaxy refit-9', 'DJEnterpriseG-10']
-#>>>Refreshed Ship List: ['Player', 'Species 8472 Bioship-1', 'Species 8472 Bioship-2', 'Species 8472 Bioship-3', 'Vorlon Cruiser-4', 'Canon Enterprise F-5', 'Enterprise F-6', 'Enterprise F-7', 'Enterprise E-8', 'Galaxy refit-9', 'DJEnterpriseG-10']
-#>>>Refreshed Ship List: ['Player', 'Species 8472 Bioship-1', 'Species 8472 Bioship-2', 'Species 8472 Bioship-3', 'Vorlon Cruiser-4', 'Canon Enterprise F-5', 'Enterprise F-6', 'Enterprise F-7', 'Enterprise E-8', 'Galaxy refit-9', 'DJEnterpriseG-10']
-#>>>Refreshed Ship List: ['Player', 'Species 8472 Bioship-1', 'Species 8472 Bioship-2', 'Species 8472 Bioship-3', 'Vorlon Cruiser-4', 'Canon Enterprise F-5', 'Enterprise F-6', 'Enterprise F-7', 'Enterprise E-8', 'Galaxy refit-9', 'DJEnterpriseG-10']
-#>>>Refreshed Ship List: ['Player', 'Species 8472 Bioship-1', 'Species 8472 Bioship-2', 'Species 8472 Bioship-3', 'Vorlon Cruiser-4', 'Canon Enterprise F-5', 'Enterprise F-6', 'Enterprise F-7', 'Enterprise E-8', 'Galaxy refit-9', 'DJEnterpriseG-10']
-## -------------------- ##
-####################
-#######>>>23:41:49.827 of 4/January/2023, Wednesday
-#>>>Refreshed Ship List: ['Player', 'Species 8472 Bioship-1', 'Species 8472 Bioship-2', 'Species 8472 Bioship-3', 'Canon Enterprise F-5', 'Enterprise F-6', 'Enterprise F-7', 'Enterprise E-8', 'Galaxy refit-9', 'DJEnterpriseG-10']
-## -------------------- ##
-####################
-#######>>>23:42:24.676 of 4/January/2023, Wednesday
-#>>>Refreshed Ship List: ['Player', 'Species 8472 Bioship-2', 'Species 8472 Bioship-3', 'Canon Enterprise F-5', 'Enterprise F-6', 'Enterprise F-7', 'Enterprise E-8', 'Galaxy refit-9', 'DJEnterpriseG-10']
-## -------------------- ##
-####################
-#######>>>23:43:3.261 of 4/January/2023, Wednesday
-#>>>Refreshed Ship List: ['Player', 'Species 8472 Bioship-2', 'Species 8472 Bioship-3', 'Canon Enterprise F-5', 'Enterprise F-6', 'Enterprise F-7', 'Enterprise E-8', 'Galaxy refit-9', 'DJEnterpriseG-10']
-## -------------------- ##
-####################
-#######>>>23:44:39.740 of 4/January/2023, Wednesday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_B7i6852yN697>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Species 8472 Bioship-3', 'Canon Enterprise F-5', 'Enterprise F-6', 'Enterprise E-8', 'Galaxy refit-9', 'DJEnterpriseG-10', 'Player']
-## -------------------- ##
-####################
-#######>>>23:45:45.172 of 4/January/2023, Wednesday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_uTuatkNg68kQ>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1']
-## -------------------- ##
-####################
-#######>>>23:46:17.458 of 4/January/2023, Wednesday
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1']
-## -------------------- ##
-####################
-#######>>>23:46:18.656 of 4/January/2023, Wednesday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_D1EoC65PwG96>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['U.S.S. Enterprise J-1', 'Player']
-## -------------------- ##
-####################
-#######>>>23:46:24.823 of 4/January/2023, Wednesday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_k9576OUkovqM>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_ppm27jt11VOg>]
 #>>>Planets/Suns List: ['Belaruz 4']
 #>>>Refreshed Ship List: ['Player']
 ## -------------------- ##
 ####################
-#######>>>23:46:27.374 of 4/January/2023, Wednesday
+#######>>>18:57:44.893 of 5/January/2023, Thursday
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_YDy2m7C87aSP>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1']
-## -------------------- ##
-####################
-#######>>>23:47:16.054 of 4/January/2023, Wednesday
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1']
-## -------------------- ##
-####################
-#######>>>23:47:16.821 of 4/January/2023, Wednesday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_w6y9i61Nup25>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['U.S.S. Enterprise J-1', 'Player']
-## -------------------- ##
-####################
-#######>>>23:47:23.874 of 4/January/2023, Wednesday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_N9BOtf4JKtmL>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_459QS6z8fFTv>]
 #>>>Planets/Suns List: ['Belaruz 4']
 #>>>Refreshed Ship List: ['Player']
 ## -------------------- ##
 ####################
-#######>>>23:47:25.290 of 4/January/2023, Wednesday
+#######>>>18:57:59.842 of 5/January/2023, Thursday
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_yUMvJDJR3X0g>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_M6XWtY6KrDUn>]
 #>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1']
 ## -------------------- ##
 ####################
-#######>>>23:55:4.650 of 4/January/2023, Wednesday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_8MJG3SiaIH3C>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['U.S.S. Enterprise J-1', 'Player']
-## -------------------- ##
-####################
-#######>>>23:55:16.799 of 4/January/2023, Wednesday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_lLBma424AaG3>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1']
-## -------------------- ##
-####################
-#######>>>23:56:25.636 of 4/January/2023, Wednesday
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Enterprise J-1']
-## -------------------- ##
-####################
-#######>>>23:56:26.564 of 4/January/2023, Wednesday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_oQD7Taz622q2>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['U.S.S. Enterprise J-1', 'Player']
-## -------------------- ##
-####################
-#######>>>23:56:44.730 of 4/January/2023, Wednesday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_AT44llWo72mv>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Gateway-1', 'U.S.S. Gateway-2', 'U.S.S. Gateway-3']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Gateway-1', 'U.S.S. Gateway-2', 'U.S.S. Gateway-3']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Gateway-1', 'U.S.S. Gateway-2', 'U.S.S. Gateway-3']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Gateway-1', 'U.S.S. Gateway-2', 'U.S.S. Gateway-3']
-## -------------------- ##
-####################
-#######>>>23:57:16.262 of 4/January/2023, Wednesday
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Gateway-1', 'U.S.S. Gateway-2', 'U.S.S. Gateway-3']
-## -------------------- ##
-####################
-#######>>>23:57:32.004 of 4/January/2023, Wednesday
+#######>>>19:1:26.330 of 5/January/2023, Thursday
 #>>>Refreshed Ship List: []
 #>>>Added Player to the Ship List
 ## -------------------- ##
 ####################
-#######>>>23:57:33.048 of 4/January/2023, Wednesday
+#######>>>19:1:27.330 of 5/January/2023, Thursday
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_nMS0Tq4qY065>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_NTh29RMLnR4v>]
 #>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['U.S.S. Gateway-1', 'U.S.S. Gateway-2', 'U.S.S. Gateway-3', 'Player']
+#>>>Refreshed Ship List: ['U.S.S. Armstrong-1', 'Player']
 ## -------------------- ##
 ####################
-#######>>>23:57:40.313 of 4/January/2023, Wednesday
+#######>>>19:1:34.339 of 5/January/2023, Thursday
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_89hKz4b24m5a>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_a2sLn6OisoY3>]
 #>>>Planets/Suns List: ['Belaruz 4']
 #>>>Refreshed Ship List: ['Player']
 ## -------------------- ##
 ####################
-#######>>>23:57:41.532 of 4/January/2023, Wednesday
+#######>>>19:1:36.440 of 5/January/2023, Thursday
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_6g5CA0TpoDdh>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_8203P4R86LJx>]
 #>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Gateway-1', 'U.S.S. Gateway-2', 'U.S.S. Gateway-3']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Gateway-1', 'U.S.S. Gateway-2', 'U.S.S. Gateway-3']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Gateway-1', 'U.S.S. Gateway-2', 'U.S.S. Gateway-3']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Gateway-1', 'U.S.S. Gateway-2', 'U.S.S. Gateway-3']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1']
 ## -------------------- ##
 ####################
-#######>>>23:58:17.963 of 4/January/2023, Wednesday
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Gateway-1', 'U.S.S. Gateway-2', 'U.S.S. Gateway-3']
-## -------------------- ##
-####################
-#######>>>23:58:19.078 of 4/January/2023, Wednesday
+#######>>>19:1:40.872 of 5/January/2023, Thursday
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_M67xUhHM4cAl>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_l7pR2IZDZ6x4>]
 #>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['U.S.S. Gateway-1', 'U.S.S. Gateway-2', 'U.S.S. Gateway-3', 'Player']
+#>>>Refreshed Ship List: ['U.S.S. Armstrong-1', 'Player', 'IndependenceNoYacht']
+#>>>Refreshed Ship List: ['U.S.S. Armstrong-1', 'Player', 'IndependenceNoYacht']
 ## -------------------- ##
 ####################
-#######>>>23:58:29.545 of 4/January/2023, Wednesday
+#######>>>19:2:10.571 of 5/January/2023, Thursday
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_hmV2hKUe6KVB>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_q70yg01xmwFD>]
 #>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Gateway-1']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Gateway-1']
+#>>>Refreshed Ship List: ['U.S.S. Armstrong-1', 'IndependenceNoYacht', 'Player']
 ## -------------------- ##
 ####################
-#######>>>0:0:28.830 of 5/January/2023, Thursday
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Gateway-1']
-## -------------------- ##
-####################
-#######>>>0:0:29.842 of 5/January/2023, Thursday
+#######>>>19:2:12.223 of 5/January/2023, Thursday
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_hdVM811p8R8H>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_ZGEOjE3f6q8M>]
 #>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['U.S.S. Gateway-1', 'Player']
+#>>>Refreshed Ship List: ['IndependenceNoYacht', 'Player']
+## -------------------- ##
+####################
+#######>>>19:2:14.355 of 5/January/2023, Thursday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_71qfarJoAn5s>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['IndependenceNoYacht', 'Player', 'U.S.S. Armstrong-1']
+#>>>Refreshed Ship List: ['IndependenceNoYacht', 'Player', 'U.S.S. Armstrong-1']
+## -------------------- ##
+####################
+#######>>>19:2:15.388 of 5/January/2023, Thursday
+#>>>Refreshed Ship List: ['IndependenceNoYacht', 'Player', 'U.S.S. Armstrong-1']
+## -------------------- ##
+####################
+#######>>>19:2:21.407 of 5/January/2023, Thursday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_sSXX79SQ9FF2>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['U.S.S. Armstrong-1', 'Player']
+## -------------------- ##
+####################
+#######>>>19:2:23.604 of 5/January/2023, Thursday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_e9KsMzmbX228>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:2:25.521 of 5/January/2023, Thursday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_61D866UL4Amh>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1']
+## -------------------- ##
+####################
+#######>>>19:2:33.154 of 5/January/2023, Thursday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_gQ85SQ58oKk2>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['U.S.S. Armstrong-1', 'Player', 'IndependenceNoYacht']
+#>>>Refreshed Ship List: ['U.S.S. Armstrong-1', 'Player', 'IndependenceNoYacht']
+## -------------------- ##
+####################
+#######>>>19:3:45.453 of 5/January/2023, Thursday
+#>>>Refreshed Ship List: ['U.S.S. Armstrong-1', 'Player', 'IndependenceNoYacht']
+## -------------------- ##
+####################
+#######>>>19:3:56.837 of 5/January/2023, Thursday
+#>>>Refreshed Ship List: ['U.S.S. Armstrong-1', 'Player']
+## -------------------- ##
+####################
+#######>>>19:3:57.119 of 5/January/2023, Thursday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_wpY53ufbPJr6>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['U.S.S. Armstrong-1', 'Player']
+########################################
+# 19:4:12.222 of 5/January/2023, Thursday
+#Ending of log dump - User is quiting the game
+########################################
