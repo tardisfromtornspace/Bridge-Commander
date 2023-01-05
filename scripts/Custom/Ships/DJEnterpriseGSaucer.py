@@ -25,6 +25,7 @@ Foundation.ShipDef.DJEnterpriseGSaucer.dTechs = {
 	'Breen Drainer Immune': 0,
 	'Regenerative Shields': 20,
 	'Multivectral Shields': 20,
+	"Transphasic Torpedo Immune": 1,
 	"Fed Ablative Armor": {"Plates": ["Forward Ablative Armor", "Aft Ablative Armor", "Dorsal Ablative Armor", "Ventral Ablative Armor"]}
 }
 

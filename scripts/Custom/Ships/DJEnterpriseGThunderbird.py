@@ -24,7 +24,8 @@ Foundation.ShipDef.DJEnterpriseGThunderbird.fCruiseWarp = 7.5 + 0.0001
 Foundation.ShipDef.DJEnterpriseGThunderbird.dTechs = {
 	'Breen Drainer Immune': 0,
 	'Regenerative Shields': 20,
-	'Multivectral Shields': 20
+	'Multivectral Shields': 20,
+	"Transphasic Torpedo Immune": 1
 }
 
 

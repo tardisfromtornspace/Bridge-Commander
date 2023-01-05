@@ -19,8 +19,8 @@ Foundation.ShipDef.IndependenceYacht.dTechs = {
 	'Breen Drainer Immune': 1,
 	'Drainer Immune': 1,
 	'Multivectral Shields': 20,
-	'Regenerative Shields': 25
-
+	'Regenerative Shields': 25,
+	"Transphasic Torpedo Immune": 1
 }
 
 Foundation.ShipDef.IndependenceYacht.desc = "Emulating the old Sovereign class, the Enterprise H included an upgraded Captain's Yacht as well."

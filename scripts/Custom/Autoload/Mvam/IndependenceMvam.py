@@ -76,7 +76,7 @@ IconNames = ["Launch Yacht", "Fly Yacht", "Reintegrate$Rein"]
 ############# 4) Repeat for each seperated ship, using a different point each time of course. Remember to record the
 #############    results of your calculations and put them below. Be as accurate as possible, as you can see I have done.
 MvamDistances[0].SetXYZ(0.0, 0.000000, 0.000000)
-MvamDistances[1].SetXYZ(0.0, 0.350000, 0.150000)
+MvamDistances[1].SetXYZ(0.0, 2.750000, -0.150000)
 
 
 ###TO CHANGE: This is the direction you want the seperated ship to go during the seperation sequence. It's all X, Y, Z.
@@ -86,7 +86,7 @@ MvamDistances[1].SetXYZ(0.0, 0.350000, 0.150000)
 ############# of forward and up, or about a positive 45 degree pitch (i use the word pitch lightly, it doesnt twist or turn
 ############# the model whatsoever, it's just the direction it moves)
 MvamDirections[0].SetXYZ(0.0, 1.0, 0.0)
-MvamDirections[1].SetXYZ(0.0, 0.0, 1.0)
+MvamDirections[1].SetXYZ(0.0, 0.0, -2.0)
 
 
 ###TO CHANGE: This is the speed you want each ship to go. 1.0 is about 600 km/h on the speed display ingame for the
@@ -113,14 +113,14 @@ MvamSpeeds = [0.0, 0.1]
 #############    the result of this calculation into the variables below, keeping the order of the ships like you should
 #############    have been doing throughout this plugin.
 MvamReinDistances[0].SetXYZ(0.0, 0.000000, 0.000000)
-MvamReinDistances[1].SetXYZ(0.0, 0.350000, 0.250000)
+MvamReinDistances[1].SetXYZ(0.0, 2.750000, -0.250000)
 
 
 ###TO CHANGE: This is the reintegration heading. If you used the 6 step guide in MvamReinDistances, you would simply
 ############# take the value in MvamDirections two steps above; switch the +/- sign on the Z value for each; and put it
 ############# in the appropriate spot below. Remember to keep the proper order of the ships.
 MvamReinDirections[0].SetXYZ(0.0, 1.0, 0.0)
-MvamReinDirections[1].SetXYZ(0.0, 0.0, -1.0)
+MvamReinDirections[1].SetXYZ(0.0, 0.0, 1.0)
 
 
 ###TO CHANGE: This is how fast each ship is going during the reintegration sequence. If you used the 6 step guide in

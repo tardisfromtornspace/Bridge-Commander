@@ -21,6 +21,7 @@ Foundation.ShipDef.IndependenceNoYacht.dTechs = {
 	'Drainer Immune': 1,
 	'Multivectral Shields': 20,
 	'Regenerative Shields': 25,
+	"Transphasic Torpedo Immune": 1,
 	"Fed Ablative Armor": {"Plates": ["Forward Ablative Armor","Aft Ablative Armor","Dorsal Ablative Armor","Ventral Ablative Armor"]}
 
 }

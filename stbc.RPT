@@ -6879,3 +6879,30 @@ Call stack:
 Address   Frame
 00585738  0019FBD0  0001:00184738 C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
 
+//=====================================================
+Current Time: Thu Jan 05 21:17:49 2023
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Thu Jan 05 21:48:02 2023
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  004BC76A 01:000BB76A C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+Registers:
+EAX:3FA1DFE0
+EBX:0088C6F4
+ECX:00000000
+EDX:4E366A9C
+ESI:0019FA74
+EDI:00000000
+CS:EIP:0023:004BC76A
+SS:ESP:002B:0019F9F8  EBP:0019FA74
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+004BC76A  0019FA74  0001:000BB76A C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+

@@ -1,0 +1,93 @@
+#This is the dump of the LogCreator: <Gorn Battleship-1 Travel Logger LogCreator_qr7o2alo94zL>
+#This log file was created on: 23:25:52.509 of 5/January/2023, Thursday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>23:25:52.509 of 5/January/2023, Thursday
+#>>>Initialized Gorn Battleship-1 Travel logger
+#>>>SELF = <Gorn Battleship-1(57584) Travel_UYqL79Yhd7C7>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>23:26:0.871 of 5/January/2023, Thursday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:26:1.205 of 5/January/2023, Thursday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:26:1.721 of 5/January/2023, Thursday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:26:2.005 of 5/January/2023, Thursday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:26:2.520 of 5/January/2023, Thursday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:26:3.055 of 5/January/2023, Thursday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:26:3.405 of 5/January/2023, Thursday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:26:3.822 of 5/January/2023, Thursday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:26:4.072 of 5/January/2023, Thursday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:26:20.988 of 5/January/2023, Thursday
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Enable Towing: 0
+#>>>Travelling procedures initiated...
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Extra path: AI ship warping to None
+#>>> -Checked: Ship can warp, travel procedures started.
+#>>> -Speed Check:
+#>>>     -Current:  9.97999954224
+#>>>     -Real Speed:  4388.19091797
+#>>>     -Cruise:  9.98
+#>>>     -Max:  9.99
+#>>>     -Actual Cruise:  9.97999954224
+#>>>     -Actual Max:  9.98999977112
+#>>> -Started playing engaging sequence.
+## -------------------- ##
+####################
+#######>>>23:26:22.005 of 5/January/2023, Thursday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+## -------------------- ##
+####################
+#######>>>23:26:27.523 of 5/January/2023, Thursday
+#>>> -Finishing travelling procedures...
+#>>> -Finished. AI Ship travelling to None.
+########################################
+# 23:26:55.580 of 5/January/2023, Thursday
+#Ending of log dump - User is quiting the game
+########################################
