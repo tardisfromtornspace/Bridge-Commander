@@ -1,13 +1,13 @@
-#This is the dump of the LogCreator: <Gravity Manager LogCreator_uFh1oD988hvk>
-#This log file was created on: 17:49:51.0 of 7/January/2023, Saturday
+#This is the dump of the LogCreator: <Gravity Manager LogCreator_IovnIfhSNbV1>
+#This log file was created on: 19:54:5.0 of 7/January/2023, Saturday
 ########################################
 ## -------------------- ##
 ####################
-#######>>>17:49:51.0 of 7/January/2023, Saturday
-#>>>Initialized GravityManager_93rFbE40bw41 logger
+#######>>>19:54:5.0 of 7/January/2023, Saturday
+#>>>Initialized GravityManager_1d49CHAOyxLB logger
 ## -------------------- ##
 ####################
-#######>>>17:50:2.989 of 7/January/2023, Saturday
+#######>>>19:54:14.546 of 7/January/2023, Saturday
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
@@ -17,24 +17,46 @@
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_i1p9vJA023EC>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_T4z0yl2Ca1Xr>]
 #>>>Planets/Suns List: ['Belaruz 4']
 #>>>Refreshed Ship List: ['Player']
-#>>>Updated radius for grav well <Belaruz 4 GravityWell_i1p9vJA023EC>, radius is now 1604.75402832
+#>>>Updated radius for grav well <Belaruz 4 GravityWell_T4z0yl2Ca1Xr>, radius is now 1602.72131348
 ## -------------------- ##
 ####################
-#######>>>17:50:39.994 of 7/January/2023, Saturday
+#######>>>19:54:47.528 of 7/January/2023, Saturday
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_jrs839674jc0>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_DVX25ACjaPJW>]
 #>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player', 'Atlantis-1', 'Atlantis-2']
-#>>>Refreshed Ship List: ['Player', 'Atlantis-1', 'Atlantis-2']
-#>>>Refreshed Ship List: ['Player', 'Atlantis-1', 'Atlantis-2']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Armstrong-1']
 ## -------------------- ##
 ####################
-#######>>>17:52:35.566 of 7/January/2023, Saturday
-#>>>Refreshed Ship List: ['Player', 'Atlantis-1', 'Atlantis-2', 'Daedalus - 2']
-########################################
-# 17:56:36.248 of 7/January/2023, Saturday
-#Ending of log dump - User is quiting the game
-########################################
+#######>>>19:56:10.817 of 7/January/2023, Saturday
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:57:30.078 of 7/January/2023, Saturday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_uMM25T0I3s8p>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:57:44.412 of 7/January/2023, Saturday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_71tby279WfTK>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Gateway-1']
+#>>>Refreshed Ship List: ['Player', 'U.S.S. Gateway-1']
+## -------------------- ##
+####################
+#######>>>19:58:38.157 of 7/January/2023, Saturday
+#>>>Refreshed Ship List: []
+#>>>Added Player to the Ship List
+## -------------------- ##
+####################
+#######>>>19:58:39.168 of 7/January/2023, Saturday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_8ei4e0o4e8t5>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['U.S.S. Gateway-1', 'Player']

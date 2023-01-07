@@ -29,7 +29,7 @@ Foundation.ShipDef.DalekSaucer.dTechs = {
 	"FiveSecsGodPhaser": 1,
 	"Vree Shields": 100,
 	"Phased Torpedo Immune": 1,
-	'Reflux Weapon': 10000,
+	'Reflux Weapon': 100,
 	'Regenerative Shields': 25,
 	"Inversion Beam": [0.5, 0, 0.5, 1500],
 	"Power Drain Beam": [0.5, 0, 0.5, 1500]

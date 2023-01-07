@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Asteroid 1 Travel Logger LogCreator_Afdjjwvakc5v>
-#This log file was created on: 17:50:2.989 of 7/January/2023, Saturday
+#This is the dump of the LogCreator: <Asteroid 1 Travel Logger LogCreator_rEU1ZFh9FcU3>
+#This log file was created on: 19:54:14.546 of 7/January/2023, Saturday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>17:50:2.989 of 7/January/2023, Saturday
+#######>>>19:54:14.546 of 7/January/2023, Saturday
 #>>>Initialized Asteroid 1 Travel logger
-#>>>SELF = <Asteroid 1(5298) Travel_J3nB1dRjP33W>
+#>>>SELF = <Asteroid 1(5280) Travel_265L8N7Ey2b6>
 #>>>Initial Travel Type: None
 #>>>Updating Variables...
 #>>> -Initialized AI Travel Set
@@ -23,7 +23,3 @@ Updating Travelling Procedures...
 #>>>Chaser base class initialization complete.
 #>>>Target Ship = NONE
 #>>>Chaser pre-emptive Refresher Initialization
-########################################
-# 17:56:36.248 of 7/January/2023, Saturday
-#Ending of log dump - User is quiting the game
-########################################
