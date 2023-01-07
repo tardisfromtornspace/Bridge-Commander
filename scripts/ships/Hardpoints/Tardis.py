@@ -621,11 +621,27 @@ CloakingDevice.SetRadius(0.002500)
 CloakingDevice.SetNormalPowerPerSecond(1.000000)
 CloakingDevice.SetCloakStrength(100.000000)
 App.g_kModelPropertyManager.RegisterLocalTemplate(CloakingDevice)
+#################################################
+ArmourGenerator = App.HullProperty_Create("Armored Hull")
+
+ArmourGenerator.SetMaxCondition(295000.000000)
+ArmourGenerator.SetCritical(0)
+ArmourGenerator.SetTargetable(0)
+ArmourGenerator.SetPrimary(0)
+ArmourGenerator.SetPosition(0.000000, 0.000000, 0.000000)
+ArmourGenerator.SetPosition2D(0.000000, 0.000000)
+ArmourGenerator.SetRepairComplexity(1.000000)
+ArmourGenerator.SetDisabledPercentage(0.500000)
+ArmourGenerator.SetRadius(0.250000)
+App.g_kModelPropertyManager.RegisterLocalTemplate(ArmourGenerator)
 
 # Property load function.
 def LoadPropertySet(pObj):
 	"Sets up the object's properties."
 	prop = App.g_kModelPropertyManager.FindByName("Hull", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	if (prop != None):
+		pObj.AddToSet("Scene Root", prop)
+	prop = App.g_kModelPropertyManager.FindByName("Armored Hull", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
 	prop = App.g_kModelPropertyManager.FindByName("Impulse Engines", App.TGModelPropertyManager.LOCAL_TEMPLATES)

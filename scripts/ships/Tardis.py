@@ -21,9 +21,9 @@ def LoadModel(bPreLoad = 0):
 		# Surface Damage Res, Internal Damage Res, Burn Value, Hole Value,
 		# Search String for Glow, Search string for Specular, Suffix for specular
 		pLODModel = App.g_kLODModelManager.Create(pStats["Name"])
-		pLODModel.AddLOD(pStats["FilenameHigh"], 10, 200.0, 15.0, 15.0, 400, 900, "_glow", None, None)
-		pLODModel.AddLOD(pStats["FilenameMed"], 10, 400.0, 15.0, 15.0, 400, 900, "_glow", None, None)
-		pLODModel.AddLOD(pStats["FilenameLow"], 10, 800.0, 15.0, 15.0, 400, 900, "_glow", None, None)
+		pLODModel.AddLOD(pStats["FilenameHigh"], 10, 600.0, 15.0, 8000.0, 0, 0, "_glow", None, None)
+		pLODModel.AddLOD(pStats["FilenameMed"], 10, 1200.0, 15.0, 8000.0, 0, 0, "_glow", None, None)
+		pLODModel.AddLOD(pStats["FilenameLow"], 10, 1800.0, 15.0, 8000.0, 0, 0, "_glow", None, None)
 
 #		kDebugObj = App.CPyDebug()
 		if (bPreLoad == 0):
@@ -35,3 +35,21 @@ def LoadModel(bPreLoad = 0):
 
 def PreLoadModel():
 	LoadModel(1)
+
+def GetArmorRatio(): # Strength of the armor, in a way
+      return 0.01
+
+def GetDamageStrMod(): # visual damage strength
+	return 0.0
+
+def GetDamageRadMod(): # visual damage radius
+	return 0.0
+
+def GetForcedArmor(): # If everyone is forced to wear it once it loads
+	return 1
+
+def GetArmouredModel(): # OPTIONAL: Select another scripts/ships/yourShip2.py with a adifferent model so when you are armored you change to this
+	return "Tardis"
+
+def GetOriginalShipModel(): # Should be the same script scripts/ships/yourShip2.py, but for more flexibility, here you can change it to never return when the armor drops
+	return "Tardis"

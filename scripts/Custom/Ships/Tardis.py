@@ -20,7 +20,13 @@ SubMenu = "Gallifreyan"
 
 
 Foundation.ShipDef.Tardis = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
-Foundation.ShipDef.Tardis.dTechs = { 'Breen Drainer Immune': 0 }
+Foundation.ShipDef.Tardis.dTechs = {
+	'Adv Armor Tech': 1,
+	'Breen Drainer Immune': 0,
+	'ChronitonTorpe Immune': 1,
+	'Drainer Immune': 1,
+	"Phased Torpedo Immune": 1
+}
 Foundation.ShipDef.Tardis.bPlanetKiller = 1
 
 Foundation.ShipDef.Tardis.fMaxWarp = 8.0 + 0.0   # 0.0 makes sure that the number is a decimal number

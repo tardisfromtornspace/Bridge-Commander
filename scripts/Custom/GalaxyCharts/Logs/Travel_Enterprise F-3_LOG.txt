@@ -1,0 +1,56 @@
+#This is the dump of the LogCreator: <Enterprise F-3 Travel Logger LogCreator_zRpOcK27i65Y>
+#This log file was created on: 2:20:19.124 of 7/January/2023, Saturday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>2:20:19.124 of 7/January/2023, Saturday
+#>>>Initialized Enterprise F-3 Travel logger
+#>>>SELF = <Enterprise F-3(2482594) Travel_Eo06oh583pZ2>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>2:20:20.439 of 7/January/2023, Saturday
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>2:20:27.325 of 7/January/2023, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>2:20:27.658 of 7/January/2023, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>2:20:28.208 of 7/January/2023, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>2:20:28.611 of 7/January/2023, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>2:20:29.110 of 7/January/2023, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>2:20:29.943 of 7/January/2023, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>2:21:58.540 of 7/January/2023, Saturday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
