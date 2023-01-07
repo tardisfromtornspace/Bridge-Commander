@@ -1,13 +1,13 @@
-#This is the dump of the LogCreator: <Gravity Manager LogCreator_03dsLr2A05P9>
-#This log file was created on: 3:0:29.0 of 7/January/2023, Saturday
+#This is the dump of the LogCreator: <Gravity Manager LogCreator_uFh1oD988hvk>
+#This log file was created on: 17:49:51.0 of 7/January/2023, Saturday
 ########################################
 ## -------------------- ##
 ####################
-#######>>>3:0:29.0 of 7/January/2023, Saturday
-#>>>Initialized GravityManager_wmdI5cajyEDK logger
+#######>>>17:49:51.0 of 7/January/2023, Saturday
+#>>>Initialized GravityManager_93rFbE40bw41 logger
 ## -------------------- ##
 ####################
-#######>>>3:1:1.927 of 7/January/2023, Saturday
+#######>>>17:50:2.989 of 7/January/2023, Saturday
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
@@ -17,40 +17,24 @@
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_y8Iu9r33y5YS>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_i1p9vJA023EC>]
 #>>>Planets/Suns List: ['Belaruz 4']
 #>>>Refreshed Ship List: ['Player']
-#>>>Updated radius for grav well <Belaruz 4 GravityWell_y8Iu9r33y5YS>, radius is now 1611.0012207
+#>>>Updated radius for grav well <Belaruz 4 GravityWell_i1p9vJA023EC>, radius is now 1604.75402832
 ## -------------------- ##
 ####################
-#######>>>3:1:52.540 of 7/January/2023, Saturday
+#######>>>17:50:39.994 of 7/January/2023, Saturday
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_BU21F4Rg5oU6>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_jrs839674jc0>]
 #>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player', 'Canon Enterprise F-1', 'Canon Enterprise F-2', 'Canon Enterprise F-3', 'Canon Enterprise F-4', 'Canon Enterprise F-5', 'Canon Enterprise F-6']
-#>>>Refreshed Ship List: ['Player', 'Canon Enterprise F-1', 'Canon Enterprise F-2', 'Canon Enterprise F-3', 'Canon Enterprise F-4', 'Canon Enterprise F-5', 'Canon Enterprise F-6']
-#>>>Refreshed Ship List: ['Player', 'Canon Enterprise F-1', 'Canon Enterprise F-2', 'Canon Enterprise F-3', 'Canon Enterprise F-4', 'Canon Enterprise F-5', 'Canon Enterprise F-6']
-#>>>Refreshed Ship List: ['Player', 'Canon Enterprise F-1', 'Canon Enterprise F-2', 'Canon Enterprise F-3', 'Canon Enterprise F-4', 'Canon Enterprise F-5', 'Canon Enterprise F-6']
-#>>>Refreshed Ship List: ['Player', 'Canon Enterprise F-1', 'Canon Enterprise F-2', 'Canon Enterprise F-3', 'Canon Enterprise F-4', 'Canon Enterprise F-5', 'Canon Enterprise F-6']
-#>>>Refreshed Ship List: ['Player', 'Canon Enterprise F-1', 'Canon Enterprise F-2', 'Canon Enterprise F-3', 'Canon Enterprise F-4', 'Canon Enterprise F-5', 'Canon Enterprise F-6']
-#>>>Refreshed Ship List: ['Player', 'Canon Enterprise F-1', 'Canon Enterprise F-2', 'Canon Enterprise F-3', 'Canon Enterprise F-4', 'Canon Enterprise F-5', 'Canon Enterprise F-6']
+#>>>Refreshed Ship List: ['Player', 'Atlantis-1', 'Atlantis-2']
+#>>>Refreshed Ship List: ['Player', 'Atlantis-1', 'Atlantis-2']
+#>>>Refreshed Ship List: ['Player', 'Atlantis-1', 'Atlantis-2']
 ## -------------------- ##
 ####################
-#######>>>3:3:11.911 of 7/January/2023, Saturday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_tzt10W60E4ib>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Canon Enterprise F-2', 'Canon Enterprise F-3', 'Canon Enterprise F-4', 'Canon Enterprise F-5', 'Canon Enterprise F-6', 'Player']
-## -------------------- ##
-####################
-#######>>>3:3:24.813 of 7/January/2023, Saturday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_TL8w3iRqqZY8>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player', 'Canon Enterprise F-1', 'Canon Enterprise F-2', 'Canon Enterprise F-3', 'Canon Enterprise F-4', 'Canon Enterprise F-5', 'Canon Enterprise F-6']
-#>>>Refreshed Ship List: ['Player', 'Canon Enterprise F-1', 'Canon Enterprise F-2', 'Canon Enterprise F-3', 'Canon Enterprise F-4', 'Canon Enterprise F-5', 'Canon Enterprise F-6']
-#>>>Refreshed Ship List: ['Player', 'Canon Enterprise F-1', 'Canon Enterprise F-2', 'Canon Enterprise F-3', 'Canon Enterprise F-4', 'Canon Enterprise F-5', 'Canon Enterprise F-6']
-#>>>Refreshed Ship List: ['Player', 'Canon Enterprise F-1', 'Canon Enterprise F-2', 'Canon Enterprise F-3', 'Canon Enterprise F-4', 'Canon Enterprise F-5', 'Canon Enterprise F-6']
-#>>>Refreshed Ship List: ['Player', 'Canon Enterprise F-1', 'Canon Enterprise F-2', 'Canon Enterprise F-3', 'Canon Enterprise F-4', 'Canon Enterprise F-5', 'Canon Enterprise F-6']
-#>>>Refreshed Ship List: ['Player', 'Canon Enterprise F-1', 'Canon Enterprise F-2', 'Canon Enterprise F-3', 'Canon Enterprise F-4', 'Canon Enterprise F-5', 'Canon Enterprise F-6']
-#>>>Refreshed Ship List: ['Player', 'Canon Enterprise F-1', 'Canon Enterprise F-2', 'Canon Enterprise F-3', 'Canon Enterprise F-4', 'Canon Enterprise F-5', 'Canon Enterprise F-6']
+#######>>>17:52:35.566 of 7/January/2023, Saturday
+#>>>Refreshed Ship List: ['Player', 'Atlantis-1', 'Atlantis-2', 'Daedalus - 2']
+########################################
+# 17:56:36.248 of 7/January/2023, Saturday
+#Ending of log dump - User is quiting the game
+########################################

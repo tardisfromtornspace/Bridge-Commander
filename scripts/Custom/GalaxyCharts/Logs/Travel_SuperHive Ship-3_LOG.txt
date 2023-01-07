@@ -1,0 +1,57 @@
+#This is the dump of the LogCreator: <SuperHive Ship-3 Travel Logger LogCreator_VsAu387GF89y>
+#This log file was created on: 5:54:27.324 of 7/January/2023, Saturday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>5:54:27.324 of 7/January/2023, Saturday
+#>>>Initialized SuperHive Ship-3 Travel logger
+#>>>SELF = <SuperHive Ship-3(60356) Travel_6jno8hnh37aE>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>5:54:34.962 of 7/January/2023, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>5:54:35.462 of 7/January/2023, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>5:54:35.596 of 7/January/2023, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>5:54:36.162 of 7/January/2023, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>5:54:36.545 of 7/January/2023, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>5:54:36.913 of 7/January/2023, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>5:54:53.530 of 7/January/2023, Saturday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 5:55:35.545 of 7/January/2023, Saturday
+#Ending of log dump - User is quiting the game
+########################################

@@ -1,0 +1,80 @@
+#This is the dump of the LogCreator: <Thirdspace Capital Ship-1 Travel Logger[2] LogCreator_S3XM57lua2zN>
+#This log file was created on: 3:27:25.657 of 7/January/2023, Saturday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>3:27:25.657 of 7/January/2023, Saturday
+#>>>Initialized Thirdspace Capital Ship-1 Travel logger
+#>>>SELF = <Thirdspace Capital Ship-1(7193947) Travel_e87H7XxmF51l>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>3:27:32.090 of 7/January/2023, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>3:27:33.424 of 7/January/2023, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>3:27:34.590 of 7/January/2023, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>3:27:35.873 of 7/January/2023, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>3:27:36.807 of 7/January/2023, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>3:27:40.259 of 7/January/2023, Saturday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>3:27:46.690 of 7/January/2023, Saturday
+#>>>Initialized Thirdspace Capital Ship-1 Travel logger
+#>>>SELF = <Thirdspace Capital Ship-1(7193947) Travel_Tz58VbK1HRGd>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Ship is dead or dying
+#>>>Ship is dead or dying (at SetDestination)
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Ship is dead or dying (at SetDestination)
+#>>>Set Exit Placement Name as None
+#>>>Enable Towing: 0
+#>>>Travelling procedures initiated...
+#>>> -Ship is dead or dying

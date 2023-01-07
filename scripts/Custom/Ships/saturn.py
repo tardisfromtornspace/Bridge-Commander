@@ -21,7 +21,7 @@ Foundation.ShipDef.saturn.dTechs = {
 	'ChronitonTorpe Immune': 1,
 	"Phased Torpedo Immune": 1,
 	'Multivectral Shields': 30,
-	'Regenerative Shields': 80
+	'Regenerative Shields': 45
 }
 Foundation.ShipDef.saturn.CloakingSFX   = "FutureBattleCloak"
 Foundation.ShipDef.saturn.DeCloakingSFX = "FutureBattleDecloak"

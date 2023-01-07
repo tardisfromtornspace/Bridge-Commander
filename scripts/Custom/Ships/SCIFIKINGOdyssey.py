@@ -19,7 +19,7 @@ Foundation.ShipDef.SCIFIKINGOdyssey.dTechs = {
 	'Breen Drainer Immune': 1,
 	'Drainer Immune': 1,
 	'Multivectral Shields': 15,
-	'Regenerative Shields': 15,
+	'Regenerative Shields': 65,
 	'Ablative Armour': 40000.000000
 }
 

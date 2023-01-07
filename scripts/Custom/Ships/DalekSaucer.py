@@ -30,9 +30,9 @@ Foundation.ShipDef.DalekSaucer.dTechs = {
 	"Vree Shields": 100,
 	"Phased Torpedo Immune": 1,
 	'Reflux Weapon': 10000,
-	'Regenerative Shields': 10#,
-#	"Inversion Beam": [0.5, 0, 0.5, 1500],
-#	"Power Drain Beam": [0.5, 0, 0.5, {1500}]
+	'Regenerative Shields': 25,
+	"Inversion Beam": [0.5, 0, 0.5, 1500],
+	"Power Drain Beam": [0.5, 0, 0.5, 1500]
 }
 Foundation.ShipDef.DalekSaucer.bPlanetKiller = 1
 

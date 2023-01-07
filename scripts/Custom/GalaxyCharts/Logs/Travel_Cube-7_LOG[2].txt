@@ -1,0 +1,28 @@
+#This is the dump of the LogCreator: <Cube-7 Travel Logger[2] LogCreator_4065F8WSLX0h>
+#This log file was created on: 4:29:27.991 of 7/January/2023, Saturday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>4:29:27.991 of 7/January/2023, Saturday
+#>>>Initialized Cube-7 Travel logger
+#>>>SELF = <Cube-7(1259198) Travel_7N460esxJHx7>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>4:31:42.506 of 7/January/2023, Saturday
+#>>>Arrived Events:  added event <C TGEvent instance at _4811eac0_p_TGEvent>
+#>>>Updated Target Ship = Player

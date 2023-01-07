@@ -1,0 +1,28 @@
+#This is the dump of the LogCreator: <Daedalus - 2 Travel Logger LogCreator_r7I2GCFxwR3P>
+#This log file was created on: 17:52:35.566 of 7/January/2023, Saturday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>17:52:35.566 of 7/January/2023, Saturday
+#>>>Initialized Daedalus - 2 Travel logger
+#>>>SELF = <Daedalus - 2(163469) Travel_wPxgF4d28Bg6>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+########################################
+# 17:56:36.248 of 7/January/2023, Saturday
+#Ending of log dump - User is quiting the game
+########################################

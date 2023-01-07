@@ -24,7 +24,7 @@ Foundation.ShipDef.DJEnterpriseG.fCruiseWarp = 8.5 + 0.0001
 
 Foundation.ShipDef.DJEnterpriseG.dTechs = {
 	'Breen Drainer Immune': 0,
-	'Regenerative Shields': 20,
+	'Regenerative Shields': 45,
 	'Multivectral Shields': 20,
 	"Transphasic Torpedo Immune": 1,
 	"Fed Ablative Armor": {"Plates": ["Forward Ablative Armor", "Aft Ablative Armor", "Dorsal Ablative Armor", "Ventral Ablative Armor"]}

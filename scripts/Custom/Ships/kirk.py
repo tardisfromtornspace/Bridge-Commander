@@ -24,7 +24,7 @@ Foundation.ShipDef.kirk.dTechs = {
 	'ChronitonTorpe Immune': 1,
 	"Phased Torpedo Immune": 1,
 	'Multivectral Shields': 30,
-	'Regenerative Shields': 75
+	'Regenerative Shields': 40
 }
 Foundation.ShipDef.kirk.CloakingSFX   = "FutureBattleCloak"
 Foundation.ShipDef.kirk.DeCloakingSFX = "FutureBattleDecloak"

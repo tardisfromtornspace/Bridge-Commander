@@ -1,0 +1,44 @@
+#This is the dump of the LogCreator: <Fighter - 4 Travel Logger LogCreator_tnnW3QZSj2aS>
+#This log file was created on: 4:31:49.824 of 7/January/2023, Saturday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>4:31:49.824 of 7/January/2023, Saturday
+#>>>Initialized Fighter - 4 Travel logger
+#>>>SELF = <Fighter - 4(1522713) Travel_QitE3B6vWhe9>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>4:33:57.848 of 7/January/2023, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>4:33:58.093 of 7/January/2023, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>4:33:59.002 of 7/January/2023, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>4:33:59.687 of 7/January/2023, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>4:34:0.250 of 7/January/2023, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
