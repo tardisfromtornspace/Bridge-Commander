@@ -1,0 +1,64 @@
+#This is the dump of the LogCreator: <Cube-12 Travel Logger[2] LogCreator_Tl12T04X2j3X>
+#This log file was created on: 21:15:30.963 of 7/January/2023, Saturday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>21:15:30.963 of 7/January/2023, Saturday
+#>>>Initialized Cube-12 Travel logger
+#>>>SELF = <Cube-12(2617351) Travel_43149ui2pJlN>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>21:16:18.304 of 7/January/2023, Saturday
+#>>>Arrived Events:  added event <C TGEvent instance at _584a8230_p_TGEvent>
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>21:23:16.218 of 7/January/2023, Saturday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:23:17.741 of 7/January/2023, Saturday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:23:19.616 of 7/January/2023, Saturday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:23:20.783 of 7/January/2023, Saturday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:23:23.130 of 7/January/2023, Saturday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:23:25.490 of 7/January/2023, Saturday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>21:23:26.827 of 7/January/2023, Saturday
+#>>>Ship is dead or dying (at Chaser Update)
+########################################
+# 21:23:28.828 of 7/January/2023, Saturday
+#Ending of log dump - User is quiting the game
+########################################
+## -------------------- ##
+####################
+#######>>>21:23:28.828 of 7/January/2023, Saturday
+#>>>Ship is dead or dying (at Chaser Update)

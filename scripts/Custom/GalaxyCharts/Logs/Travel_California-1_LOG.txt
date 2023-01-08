@@ -1,0 +1,27 @@
+#This is the dump of the LogCreator: <California-1 Travel Logger LogCreator_CvU3S6D3hT1b>
+#This log file was created on: 3:54:44.838 of 8/January/2023, Sunday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>3:54:44.838 of 8/January/2023, Sunday
+#>>>Initialized California-1 Travel logger
+#>>>SELF = <California-1(54700) Travel_2Gq8o18i4a65>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+########################################
+# 3:55:40.933 of 8/January/2023, Sunday
+#Ending of log dump - User is quiting the game
+########################################
