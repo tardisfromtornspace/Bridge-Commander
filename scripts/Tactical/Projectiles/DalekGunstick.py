@@ -24,13 +24,13 @@ pWeaponLock = {}
 def Create(pTorp):
 
 	kOuterShellColor = App.TGColorA()
-	kOuterShellColor.SetRGBA(0.900000, 0.950000, 1.000000, 0.0100000)	
+	kOuterShellColor.SetRGBA(0.600000, 0.650000, 1.000000, 0.0100000)	
 	kOuterCoreColor = App.TGColorA()
 	kOuterCoreColor.SetRGBA(1.000000, 1.000000, 1.000000, 1.000000)
 
-	pTorp.CreateDisruptorModel(kOuterShellColor,kOuterCoreColor, 0.3, 0.01) 	
+	pTorp.CreateDisruptorModel(kOuterShellColor,kOuterCoreColor, 0.1, 0.001) 	
 	pTorp.SetDamage( GetDamage() )
-	pTorp.SetDamageRadiusFactor(0.015)
+	pTorp.SetDamageRadiusFactor(0.0015)
 	pTorp.SetGuidanceLifetime( GetGuidanceLifetime() )
 	pTorp.SetMaxAngularAccel( GetMaxAngularAccel() )
 	pTorp.SetLifetime( GetLifetime() )
@@ -55,7 +55,7 @@ def GetName():
 	return("Dalek Pulse")
 
 def GetDamage():
-	return 10.0
+	return 60.0
 
 def GetLifetime():
 	return 15.0

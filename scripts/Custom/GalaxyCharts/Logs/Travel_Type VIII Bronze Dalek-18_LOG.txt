@@ -1,0 +1,27 @@
+#This is the dump of the LogCreator: <Type VIII Bronze Dalek-18 Travel Logger LogCreator_IpPIg6dT13sN>
+#This log file was created on: 22:52:16.625 of 9/January/2023, Monday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>22:52:16.625 of 9/January/2023, Monday
+#>>>Initialized Type VIII Bronze Dalek-18 Travel logger
+#>>>SELF = <Type VIII Bronze Dalek-18(307549) Travel_5a6R8SDavxA5>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+########################################
+# 22:55:38.814 of 9/January/2023, Monday
+#Ending of log dump - User is quiting the game
+########################################

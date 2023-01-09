@@ -260,6 +260,32 @@ Repair.SetMaxRepairPoints(700.000000)
 Repair.SetNumRepairTeams(100)
 App.g_kModelPropertyManager.RegisterLocalTemplate(Repair)
 #################################################
+Hyperdrive1 = App.HullProperty_Create("Hyperdrive 1")
+
+Hyperdrive1.SetMaxCondition(70.000000)
+Hyperdrive1.SetCritical(0)
+Hyperdrive1.SetTargetable(0)
+Hyperdrive1.SetPrimary(0)
+Hyperdrive1.SetPosition(0.000000, -0.001700, 0.000000)
+Hyperdrive1.SetPosition2D(46, 78)
+Hyperdrive1.SetRepairComplexity(1.000000)
+Hyperdrive1.SetDisabledPercentage(0.000000)
+Hyperdrive1.SetRadius(0.025000)
+App.g_kModelPropertyManager.RegisterLocalTemplate(Hyperdrive1)
+#################################################
+SlipstreamDrive1 = App.HullProperty_Create("Slipstream Drive 1")
+
+SlipstreamDrive1.SetMaxCondition(70.000000)
+SlipstreamDrive1.SetCritical(0)
+SlipstreamDrive1.SetTargetable(0)
+SlipstreamDrive1.SetPrimary(0)
+SlipstreamDrive1.SetPosition(0.000000, -0.001500, 0.000000)
+SlipstreamDrive1.SetPosition2D(46, 66)
+SlipstreamDrive1.SetRepairComplexity(0.900000)
+SlipstreamDrive1.SetDisabledPercentage(0.500000)
+SlipstreamDrive1.SetRadius(0.200000)
+App.g_kModelPropertyManager.RegisterLocalTemplate(SlipstreamDrive1)
+#################################################
 WarpEngines = App.WarpEngineProperty_Create("Warp Engines")
 
 WarpEngines.SetMaxCondition(160000.000000)
@@ -273,6 +299,45 @@ WarpEngines.SetDisabledPercentage(0.500000)
 WarpEngines.SetRadius(0.010000)
 WarpEngines.SetNormalPowerPerSecond(0.000000)
 App.g_kModelPropertyManager.RegisterLocalTemplate(WarpEngines)
+#################################################
+JumpspaceDriveA = App.HullProperty_Create("Jumpspace Drive 1")
+
+JumpspaceDriveA.SetMaxCondition(60000.000000)
+JumpspaceDriveA.SetCritical(0)
+JumpspaceDriveA.SetTargetable(0)
+JumpspaceDriveA.SetPrimary(0)
+JumpspaceDriveA.SetPosition(0.000000, 0.000000, 0.000000)
+JumpspaceDriveA.SetPosition2D(75.000000, 40.000000)
+JumpspaceDriveA.SetRepairComplexity(3.000000)
+JumpspaceDriveA.SetDisabledPercentage(0.750000)
+JumpspaceDriveA.SetRadius(0.200000)
+App.g_kModelPropertyManager.RegisterLocalTemplate(JumpspaceDriveA)
+#################################################
+JumpspaceDriveB = App.HullProperty_Create("TimeVortex Drive 1")
+
+JumpspaceDriveB.SetMaxCondition(960000.000000)
+JumpspaceDriveB.SetCritical(0)
+JumpspaceDriveB.SetTargetable(0)
+JumpspaceDriveB.SetPrimary(0)
+JumpspaceDriveB.SetPosition(0.000000, 0.000000, 0.000000)
+JumpspaceDriveB.SetPosition2D(75.000000, 40.000000)
+JumpspaceDriveB.SetRepairComplexity(3.000000)
+JumpspaceDriveB.SetDisabledPercentage(0.750000)
+JumpspaceDriveB.SetRadius(0.200000)
+App.g_kModelPropertyManager.RegisterLocalTemplate(JumpspaceDriveB)
+#################################################
+JumpspaceDriveC = App.HullProperty_Create("Good TimeVortex Drive")
+
+JumpspaceDriveC.SetMaxCondition(960000.000000)
+JumpspaceDriveC.SetCritical(0)
+JumpspaceDriveC.SetTargetable(0)
+JumpspaceDriveC.SetPrimary(0)
+JumpspaceDriveC.SetPosition(0.000000, 0.000000, 0.000000)
+JumpspaceDriveC.SetPosition2D(75.000000, 40.000000)
+JumpspaceDriveC.SetRepairComplexity(3.000000)
+JumpspaceDriveC.SetDisabledPercentage(0.750000)
+JumpspaceDriveC.SetRadius(0.200000)
+App.g_kModelPropertyManager.RegisterLocalTemplate(JumpspaceDriveC)
 #################################################
 PortWarp = App.EngineProperty_Create("Port Warp")
 
@@ -671,6 +736,15 @@ def LoadPropertySet(pObj):
 	prop = App.g_kModelPropertyManager.FindByName("Repair", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
+	prop = App.g_kModelPropertyManager.FindByName("Hyperdrive 1", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	if (prop != None):
+		pObj.AddToSet("Scene Root", prop)
+	prop = App.g_kModelPropertyManager.FindByName("Slipstream Drive 1", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	if (prop != None):
+		pObj.AddToSet("Scene Root", prop)
+	prop = App.g_kModelPropertyManager.FindByName("Jumpspace Drive 1", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	if (prop != None):
+		pObj.AddToSet("Scene Root", prop)
 	prop = App.g_kModelPropertyManager.FindByName("Warp Engines", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
@@ -720,5 +794,11 @@ def LoadPropertySet(pObj):
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
 	prop = App.g_kModelPropertyManager.FindByName("Repair System", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	if (prop != None):
+		pObj.AddToSet("Scene Root", prop)
+	prop = App.g_kModelPropertyManager.FindByName("TimeVortex Drive 1", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	if (prop != None):
+		pObj.AddToSet("Scene Root", prop)
+	prop = App.g_kModelPropertyManager.FindByName("Good TimeVortex Drive", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)

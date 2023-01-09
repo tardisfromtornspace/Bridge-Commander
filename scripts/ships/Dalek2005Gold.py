@@ -7,7 +7,7 @@ def GetShipStats():
 		"FilenameMed": "data/Models/Ships/Dalek2005/Dalek2005Gold.nif",
 		"FilenameLow": "data/Models/Ships/Dalek2005/Dalek2005Gold.nif",
 		"Name": "Dalek2005Gold",
-		"HardpointFile": "Dalek2005Black",
+		"HardpointFile": "Dalek2005Gold",
 		"Species": Multiplayer.SpeciesToShip.AKIRA
 		
 	}
@@ -49,7 +49,7 @@ def GetForcedArmor(): # If everyone is forced to wear it once it loads
 	return 1
 
 def GetArmouredModel(): # OPTIONAL: Select another scripts/ships/yourShip2.py with a adifferent model so when you are armored you change to this
-	return "NewParadigmDalekWhite"
+	return "Dalek2005Gold"
 
 def GetOriginalShipModel(): # Should be the same script scripts/ships/yourShip2.py, but for more flexibility, here you can change it to never return when the armor drops
-	return "NewParadigmDalekWhite"
+	return "Dalek2005Gold"

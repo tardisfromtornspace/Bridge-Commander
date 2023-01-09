@@ -25,10 +25,6 @@ Foundation.ShipDef.Dalek2005Gold.dTechs = {
 	'Breen Drainer Immune': 0,
 	'Drainer Immune': 1,
 	"Vree Shields": 100,
-	'Reflux Weapon': 100,
-	'Regenerative Shields': 25,
-	"Inversion Beam": [0.5, 0, 0.5, 15],
-	"Power Drain Beam": [0.5, 0, 0.5, 15]
 }
 
 Foundation.ShipDef.Dalek2005Gold.fMaxWarp = 9.99 + 0.0   # 0.0 makes sure that the number is a decimal number

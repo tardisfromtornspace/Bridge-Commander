@@ -1,0 +1,37 @@
+#This is the dump of the LogCreator: <sphere-1 Travel Logger LogCreator_F57VbDOgUKKZ>
+#This log file was created on: 22:18:19.408 of 9/January/2023, Monday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>22:18:19.408 of 9/January/2023, Monday
+#>>>Initialized sphere-1 Travel logger
+#>>>SELF = <sphere-1(59457) Travel_92JuH1j61Tp2>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>22:18:22.919 of 9/January/2023, Monday
+#>>>Arrived Events:  added event <C TGEvent instance at _1efdbbb0_p_TGEvent>
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>22:18:38.235 of 9/January/2023, Monday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 22:20:10.300 of 9/January/2023, Monday
+#Ending of log dump - User is quiting the game
+########################################

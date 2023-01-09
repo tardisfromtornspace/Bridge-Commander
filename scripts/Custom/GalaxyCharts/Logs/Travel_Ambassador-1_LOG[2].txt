@@ -1,0 +1,23 @@
+#This is the dump of the LogCreator: <Ambassador-1 Travel Logger[2] LogCreator_4xBMzdf3urLl>
+#This log file was created on: 19:16:5.749 of 9/January/2023, Monday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>19:16:5.749 of 9/January/2023, Monday
+#>>>Initialized Ambassador-1 Travel logger
+#>>>SELF = <Ambassador-1(1413438) Travel_O76g6Dftuf05>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization

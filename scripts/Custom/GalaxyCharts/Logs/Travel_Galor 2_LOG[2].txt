@@ -1,0 +1,1515 @@
+#This is the dump of the LogCreator: <Galor 2 Travel Logger[2] LogCreator_5RrovnwH4Y1E>
+#This log file was created on: 22:51:18.868 of 9/January/2023, Monday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>22:51:18.868 of 9/January/2023, Monday
+#>>>Initialized Galor 2 Travel logger
+#>>>SELF = <Galor 2(279218) Travel_1WV579W6oueK>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>22:51:19.725 of 9/January/2023, Monday
+#>>>Travelling INTERCEPT procedures initiated...
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Checked: Ship can warp, travel procedures started.
+#>>> -Stopped Intercept speed, incase the ship was intercepting.
+#>>> -Target is Player (274476)
+#>>>Playing travel intercept sequence...
+## -------------------- ##
+####################
+#######>>>22:51:22.868 of 9/January/2023, Monday
+#>>>Travel INTERCEPT sequence ended...
+#>>>Travelling Intercept procedures finished...
+## -------------------- ##
+####################
+#######>>>22:51:25.501 of 9/January/2023, Monday
+#>>>Cancelling Intercept update, we are within distance...
+#>>>Stopping warp intercept
+#>>>Stopped Warp Intercept...
+## -------------------- ##
+####################
+#######>>>22:51:27.385 of 9/January/2023, Monday
+#>>>Finished  FinishStopIntercept
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:27.734 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:28.117 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:28.207 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:28.739 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:29.117 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:29.234 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:29.619 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:29.841 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:30.218 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:30.351 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:30.717 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:30.888 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:31.234 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:31.619 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:31.967 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:32.384 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:32.870 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:33.367 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:33.867 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:34.234 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:34.735 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:35.234 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:35.685 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:36.184 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:36.601 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:36.718 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:37.184 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:37.568 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:37.957 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:38.185 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:38.467 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:38.958 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:39.184 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:39.467 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:39.684 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:39.984 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:40.188 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:40.684 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:41.101 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:41.188 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:41.567 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:42.067 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:42.575 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:43.068 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:43.184 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:43.684 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:44.091 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:44.184 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:44.684 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:45.184 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:45.688 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:46.184 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:46.567 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:47.072 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:47.319 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:47.851 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:48.067 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:48.468 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:48.567 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:49.184 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:49.317 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:49.684 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:49.984 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:50.501 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:50.567 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:50.718 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:51.200 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:51.569 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:52.072 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:52.317 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:52.567 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:52.685 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:53.067 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:53.567 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:53.850 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:54.184 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:54.567 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:54.684 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:55.067 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:55.567 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:56.068 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:56.318 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:56.690 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:57.189 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:57.684 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:58.067 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:58.318 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:58.688 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:59.184 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:51:59.734 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:52:0.318 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:52:0.841 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:52:1.184 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:52:1.318 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:52:1.840 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:52:2.186 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:52:2.317 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:52:2.967 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:52:3.317 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:52:3.850 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:52:4.067 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:52:4.317 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:52:4.567 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:52:4.956 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:52:5.067 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:52:5.317 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:52:5.568 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:52:6.067 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:52:6.467 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:52:6.850 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:52:7.072 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:52:7.317 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:52:7.567 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:52:7.967 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:52:8.067 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:52:8.567 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:52:8.684 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:52:9.184 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:52:9.684 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:52:10.184 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:52:10.567 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:52:10.718 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:52:11.186 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:52:11.317 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:52:11.850 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:52:12.191 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:52:12.567 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:52:12.683 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:52:13.183 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:52:13.718 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:52:14.183 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:52:14.317 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:52:14.683 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:52:15.538 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:52:16.099 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:52:17.676 of 9/January/2023, Monday
+#>>>Updated Target Ship = Player
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:52:18.634 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:52:19.017 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:52:19.467 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:52:19.934 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:52:20.434 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:52:20.841 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:52:21.184 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:52:21.684 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:52:22.217 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:52:22.707 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:52:23.117 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:52:37.042 of 9/January/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Setting Destination...
+#>>> -Destination: Systems.Belaruz.Belaruz4
+#>>> -Travel Type Set: Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = DS9FXCardassia1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Checked: Ship can warp, travel procedures started.
+#>>> -Speed Check:
+#>>>     -Current:  9.97999954224
+#>>>     -Real Speed:  4388.19091797
+#>>>     -Cruise:  9.98
+#>>>     -Max:  9.99
+#>>>     -Actual Cruise:  9.97999954224
+#>>>     -Actual Max:  9.98999977112
+#>>> -GFX Sequence Set up DONE
+#>>> -Travel Values calculated:
+#>>>   -Time To Reach: 6.89480876923 seconds
+#>>> -Started playing engaging sequence.
+## -------------------- ##
+####################
+#######>>>22:52:43.533 of 9/January/2023, Monday
+#>>> -Finishing travelling procedures...
+#>>> -Started Refresher Loop
+#>>> -Travel Set being used: AITravelSet
+#>>> -Just changed ship set.
+#>>> -Travelling procedures ended, ship is already travelling.
+#>>>Updating travel values (ship changed speed)
+#>>> -New Speed: 9.99
+#>>> -New time to reach: 3.82001304626 seconds
+#>>> -Finished updating travel values
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 3.75552940369 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>22:52:43.666 of 9/January/2023, Monday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 3.58945274353 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>22:52:43.850 of 9/January/2023, Monday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 3.22269248962 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>22:52:44.483 of 9/January/2023, Monday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 2.70630455017 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>22:52:44.966 of 9/January/2023, Monday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 2.00647544861 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>22:52:45.800 of 9/January/2023, Monday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 1.43851280212 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>22:52:45.983 of 9/January/2023, Monday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 1.32181358337 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>22:52:46.100 of 9/January/2023, Monday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 1.18948936462 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>22:52:46.250 of 9/January/2023, Monday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 0.923070907593 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>22:52:46.617 of 9/January/2023, Monday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 0.672826766968 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>22:52:46.883 of 9/January/2023, Monday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 0.389806747437 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>22:52:47.133 of 9/January/2023, Monday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 0.139898300171 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>22:52:47.384 of 9/January/2023, Monday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: -0.376825332642 seconds
+#>>> -Update Loop MARK COMPLETED, arrived at destination.
+#>>>Drop Out Of Travel Procedures Started:
+#>>> -Is Dropping out: 0
+#>>> -Traveler Systems Location Set
+#>>> -Travel Values are zero
+#>>> -Stopped Refresher...
+#>>> -Impulse Engines status reset
+#>>>Checking Exit Point/Placement and exiting path...
+#>>>Set Exit Placement Name as TravelerWarpPlacement5
+#>>>Set Exit Point to <C TGPoint3 instance at _38a47a74_p_TGPoint3> // components: X = -5669.51757813,  Y = -652.746337891,  Z = -57.4566841125
+#>>> -Changed ship set to destination: Belaruz4
+#>>> -Sent Arrived Events
+#>>> -Exiting warp Seq played
+#>>> -Clocked Real Time taken to Travel: 4.19952392578 seconds
+#>>>Finished procedures to Drop Out Of Travel.
+## -------------------- ##
+####################
+#######>>>22:52:47.834 of 9/January/2023, Monday
+#>>>Travelling INTERCEPT procedures initiated...
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Checked: Ship can warp, travel procedures started.
+#>>> -Stopped Intercept speed, incase the ship was intercepting.
+#>>> -Target is Player (324509)
+#>>>Playing travel intercept sequence...
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>22:52:53.249 of 9/January/2023, Monday
+#>>>Initialized Galor 2 Travel logger
+#>>>SELF = <Galor 2(343121) Travel_gBaQW6Y1bWhM>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>22:52:53.249 of 9/January/2023, Monday
+#>>>Stopping warp intercept
+#>>>Stopped Warp Intercept...
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>22:52:55.752 of 9/January/2023, Monday
+#>>>Updated Target Ship = Type VIII Bronze Dalek-11
+#>>>Travelling INTERCEPT procedures initiated...
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Checked: Ship can warp, travel procedures started.
+#>>> -Stopped Intercept speed, incase the ship was intercepting.
+#>>> -Target is Type VIII Bronze Dalek-11 (338043)
+#>>>Playing travel intercept sequence...
+## -------------------- ##
+####################
+#######>>>22:52:56.961 of 9/January/2023, Monday
+#>>>Finished  FinishStopIntercept
+## -------------------- ##
+####################
+#######>>>22:52:58.750 of 9/January/2023, Monday
+#>>>Travel INTERCEPT sequence ended...
+#>>>Travelling Intercept procedures finished...
+## -------------------- ##
+####################
+#######>>>22:53:1.250 of 9/January/2023, Monday
+#>>>Cancelling Intercept update, we are within distance...
+#>>>Stopping warp intercept
+#>>>Stopped Warp Intercept...
+## -------------------- ##
+####################
+#######>>>22:53:3.232 of 9/January/2023, Monday
+#>>>Finished  FinishStopIntercept
+## -------------------- ##
+####################
+#######>>>22:53:3.461 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:53:4.116 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:53:4.621 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:53:5.237 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:53:5.711 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:53:6.244 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:53:6.845 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:53:7.488 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:53:8.000 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:53:8.595 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:53:9.122 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:53:9.619 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:53:10.211 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:53:10.802 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:53:11.372 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:53:11.884 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:53:12.376 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:53:12.962 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:53:13.488 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:53:14.121 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:53:14.622 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:53:15.115 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:53:15.738 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:53:16.212 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:53:16.867 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:53:17.371 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:53:18.003 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:53:18.488 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:53:19.167 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:53:19.770 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:53:20.418 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:53:20.650 of 9/January/2023, Monday
+#>>>Travel INTERCEPT sequence ended...
+#>>> -cancelling, being called when it shouldnt
+## -------------------- ##
+####################
+#######>>>22:53:21.006 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:53:21.650 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:53:22.228 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:53:22.906 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:53:23.410 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:53:23.924 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:53:24.590 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:53:25.226 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:53:25.881 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:53:26.439 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:53:27.158 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:53:27.694 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:53:28.354 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:53:28.935 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:53:29.567 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:53:30.249 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:53:30.749 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:53:31.211 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:53:31.845 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:53:32.384 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:53:32.992 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:53:33.518 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:53:34.117 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:53:34.623 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:53:35.211 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:53:35.769 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:53:36.367 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:53:36.990 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:53:37.461 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:53:37.986 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:53:38.667 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:53:39.247 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:53:51.620 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:53:52.287 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:53:52.917 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:53:53.481 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:53:54.133 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:53:54.773 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:53:55.360 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:53:56.043 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:53:56.652 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:53:57.102 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:53:57.766 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:53:58.403 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:53:58.983 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:53:59.461 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:54:0.116 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:54:0.628 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:54:1.103 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:54:20.236 of 9/January/2023, Monday
+#>>>Updated Target Ship = Dalek Saucer-1
+## -------------------- ##
+####################
+#######>>>22:54:21.075 of 9/January/2023, Monday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>22:54:50.065 of 9/January/2023, Monday
+#>>>Initialized Galor 2 Travel logger
+#>>>SELF = <Galor 2(511766) Travel_B47z046Q9cuv>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>22:54:52.115 of 9/January/2023, Monday
+#>>>Travelling INTERCEPT procedures initiated...
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Checked: Ship can warp, travel procedures started.
+#>>> -Stopped Intercept speed, incase the ship was intercepting.
+#>>> -Target is Player (504269)
+#>>>Playing travel intercept sequence...
+## -------------------- ##
+####################
+#######>>>22:54:55.248 of 9/January/2023, Monday
+#>>>Travel INTERCEPT sequence ended...
+#>>>Travelling Intercept procedures finished...
+## -------------------- ##
+####################
+#######>>>22:54:57.836 of 9/January/2023, Monday
+#>>>Cancelling Intercept update, we are within distance...
+#>>>Stopping warp intercept
+#>>>Stopped Warp Intercept...
+## -------------------- ##
+####################
+#######>>>22:54:59.865 of 9/January/2023, Monday
+#>>>Finished  FinishStopIntercept
+## -------------------- ##
+####################
+#######>>>22:55:0.065 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:55:0.565 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:55:0.865 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:55:1.337 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:55:1.566 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:55:1.681 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:55:2.181 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:55:2.452 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:55:2.681 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:55:2.852 of 9/January/2023, Monday
+#>>>Updated Target Ship = Type VIII Bronze Dalek-11
+#>>> -Cancelling, too close to target to warp intercept...
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>22:55:5.248 of 9/January/2023, Monday
+#>>>Updated Target Ship = Type VIII Bronze Dalek-11
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:55:5.883 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:55:6.437 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:55:7.065 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:55:7.620 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:55:8.182 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:55:8.686 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:55:9.342 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:55:9.936 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:55:10.593 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:55:11.067 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:55:11.725 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:55:12.182 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:55:12.850 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:55:13.432 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:55:13.932 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:55:14.626 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:55:15.183 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:55:15.734 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:55:16.370 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:55:16.991 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:55:17.436 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:55:18.065 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:55:18.685 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:55:19.432 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:55:20.066 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:55:20.773 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:55:21.387 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:55:22.006 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:55:22.617 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:55:23.253 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:55:23.837 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:55:24.482 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:55:25.130 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:55:25.748 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:55:26.362 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:55:26.988 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:55:27.592 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:55:28.240 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:55:28.681 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:55:29.323 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:55:29.894 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:55:30.480 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:55:31.114 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:55:31.616 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:55:32.208 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:55:32.725 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>22:55:33.115 of 9/January/2023, Monday
+#>>>Initialized Galor 2 Travel logger
+#>>>SELF = <Galor 2(581830) Travel_9Euh7c0s8QC6>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>22:55:34.201 of 9/January/2023, Monday
+#>>>Travelling INTERCEPT procedures initiated...
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Checked: Ship can warp, travel procedures started.
+#>>> -Stopped Intercept speed, incase the ship was intercepting.
+#>>> -Target is Player (575479)
+#>>>Playing travel intercept sequence...
+## -------------------- ##
+####################
+#######>>>22:55:37.481 of 9/January/2023, Monday
+#>>>Travel INTERCEPT sequence ended...
+#>>>Travelling Intercept procedures finished...
+########################################
+# 22:55:38.814 of 9/January/2023, Monday
+#Ending of log dump - User is quiting the game
+########################################
+########################################
+# 22:55:38.814 of 9/January/2023, Monday
+#Ending of log dump - User is quiting the game
+########################################
+########################################
+# 22:55:38.814 of 9/January/2023, Monday
+#Ending of log dump - User is quiting the game
+########################################
+########################################
+# 22:55:38.814 of 9/January/2023, Monday
+#Ending of log dump - User is quiting the game
+########################################
+## -------------------- ##
+####################
+#######>>>22:55:38.814 of 9/January/2023, Monday
+#>>>Stopping warp intercept
+#>>>Stopped Warp Intercept...
