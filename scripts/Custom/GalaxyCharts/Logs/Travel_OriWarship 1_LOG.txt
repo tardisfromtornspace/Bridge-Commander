@@ -1,0 +1,33 @@
+#This is the dump of the LogCreator: <OriWarship 1 Travel Logger LogCreator_QaYDm35Bl1Nn>
+#This log file was created on: 23:16:22.398 of 9/January/2023, Monday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>23:16:22.398 of 9/January/2023, Monday
+#>>>Initialized OriWarship 1 Travel logger
+#>>>SELF = <OriWarship 1(1945126) Travel_7cN0X7BX7g2Y>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>23:16:35.195 of 9/January/2023, Monday
+#>>>Updated Target Ship = Type IX Dalek Scientist-3
+## -------------------- ##
+####################
+#######>>>23:16:52.730 of 9/January/2023, Monday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

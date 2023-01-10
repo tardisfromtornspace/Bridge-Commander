@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Escape Pod 2 Travel Logger LogCreator_4U94DRj03pU2>
-#This log file was created on: 3:25:56.360 of 7/January/2023, Saturday
+#This is the dump of the LogCreator: <Escape Pod 2 Travel Logger LogCreator_1XJkc7AHL6ES>
+#This log file was created on: 23:52:59.881 of 9/January/2023, Monday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>3:25:56.360 of 7/January/2023, Saturday
+#######>>>23:52:59.881 of 9/January/2023, Monday
 #>>>Initialized Escape Pod 2 Travel logger
-#>>>SELF = <Escape Pod 2(7103587) Travel_5r5G4pZZ5767>
+#>>>SELF = <Escape Pod 2(255754) Travel_JGUZV9wuDe5P>
 #>>>Initial Travel Type: None
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -21,3 +21,16 @@ Updating Travelling Procedures...
 #>>>Chaser base class initialization complete.
 #>>>Target Ship = NONE
 #>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>23:53:27.115 of 9/January/2023, Monday
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>23:53:28.365 of 9/January/2023, Monday
+#>>>Updated Target Ship = Type IX Dalek Strategist-12
+## -------------------- ##
+####################
+#######>>>23:53:31.099 of 9/January/2023, Monday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

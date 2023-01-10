@@ -1,13 +1,13 @@
-#This is the dump of the LogCreator: <Gravity Manager LogCreator_t3C4DE06A08j>
-#This log file was created on: 22:47:3.0 of 9/January/2023, Monday
+#This is the dump of the LogCreator: <Gravity Manager LogCreator_70CEu3A4clGT>
+#This log file was created on: 23:48:47.0 of 9/January/2023, Monday
 ########################################
 ## -------------------- ##
 ####################
-#######>>>22:47:3.0 of 9/January/2023, Monday
-#>>>Initialized GravityManager_zqgrAz3wgJdT logger
+#######>>>23:48:47.0 of 9/January/2023, Monday
+#>>>Initialized GravityManager_2EQ0O42TEWWW logger
 ## -------------------- ##
 ####################
-#######>>>22:47:25.187 of 9/January/2023, Monday
+#######>>>23:49:7.632 of 9/January/2023, Monday
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
@@ -17,21 +17,154 @@
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_46p1W3l9F00z>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_2Yz61N129Ko8>]
 #>>>Planets/Suns List: ['Belaruz 4']
 #>>>Refreshed Ship List: ['Player']
-#>>>Updated radius for grav well <Belaruz 4 GravityWell_46p1W3l9F00z>, radius is now 1607.00061035
+#>>>Updated radius for grav well <Belaruz 4 GravityWell_2Yz61N129Ko8>, radius is now 1607.70178223
 ## -------------------- ##
 ####################
-#######>>>22:47:52.849 of 9/January/2023, Monday
+#######>>>23:50:17.564 of 9/January/2023, Monday
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_99QH0H16V53F>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_8j0386pqwRFO>]
 #>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player', 'Ferengi shuttle-1']
-#>>>Refreshed Ship List: ['Player', 'Ferengi shuttle-1']
+#>>>Refreshed Ship List: ['Player', 'NX-01 Enterprise-1', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12']
+#>>>Refreshed Ship List: ['Player', 'NX-01 Enterprise-1', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12']
+#>>>Refreshed Ship List: ['Player', 'NX-01 Enterprise-1', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12']
+#>>>Refreshed Ship List: ['Player', 'NX-01 Enterprise-1', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12']
+#>>>Refreshed Ship List: ['Player', 'NX-01 Enterprise-1', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12']
+#>>>Refreshed Ship List: ['Player', 'NX-01 Enterprise-1', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12']
+#>>>Refreshed Ship List: ['Player', 'NX-01 Enterprise-1', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12']
+#>>>Refreshed Ship List: ['Player', 'NX-01 Enterprise-1', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12']
+#>>>Refreshed Ship List: ['Player', 'NX-01 Enterprise-1', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12']
+#>>>Refreshed Ship List: ['Player', 'NX-01 Enterprise-1', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12']
+#>>>Refreshed Ship List: ['Player', 'NX-01 Enterprise-1', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12']
+#>>>Refreshed Ship List: ['Player', 'NX-01 Enterprise-1', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12']
+#>>>Refreshed Ship List: ['Player', 'NX-01 Enterprise-1', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12']
 ## -------------------- ##
 ####################
-#######>>>22:48:42.687 of 9/January/2023, Monday
+#######>>>23:52:59.881 of 9/January/2023, Monday
+#>>>Refreshed Ship List: ['Player', 'NX-01 Enterprise-1', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12', 'Escape Pod 1', 'Escape Pod 2', 'Escape Pod 3', 'Escape Pod 4']
+#>>>Refreshed Ship List: ['Player', 'NX-01 Enterprise-1', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12', 'Escape Pod 1', 'Escape Pod 2', 'Escape Pod 3', 'Escape Pod 4']
+#>>>Refreshed Ship List: ['Player', 'NX-01 Enterprise-1', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12', 'Escape Pod 1', 'Escape Pod 2', 'Escape Pod 3', 'Escape Pod 4']
+#>>>Refreshed Ship List: ['Player', 'NX-01 Enterprise-1', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12', 'Escape Pod 1', 'Escape Pod 2', 'Escape Pod 3', 'Escape Pod 4']
+## -------------------- ##
+####################
+#######>>>23:53:31.232 of 9/January/2023, Monday
+#>>>Refreshed Ship List: ['Player', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12', 'Escape Pod 2', 'Escape Pod 3', 'Escape Pod 4']
+## -------------------- ##
+####################
+#######>>>23:53:39.252 of 9/January/2023, Monday
+#>>>Refreshed Ship List: ['Player', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12', 'Escape Pod 3', 'Escape Pod 4']
+## -------------------- ##
+####################
+#######>>>23:53:50.182 of 9/January/2023, Monday
+#>>>Refreshed Ship List: ['Player', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12', 'Escape Pod 4']
+## -------------------- ##
+####################
+#######>>>23:53:58.282 of 9/January/2023, Monday
+#>>>Refreshed Ship List: ['Player', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12']
+## -------------------- ##
+####################
+#######>>>23:54:26.351 of 9/January/2023, Monday
+#>>>Refreshed Ship List: ['Player', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12', 'MinbariNial 1', 'MinbariNial 2', 'MinbariNial 3', 'MinbariNial 4', 'MinbariNial 5', 'MinbariNial 6', 'MinbariNial 7', 'MinbariNial 8']
+#>>>Refreshed Ship List: ['Player', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12', 'MinbariNial 1', 'MinbariNial 2', 'MinbariNial 3', 'MinbariNial 4', 'MinbariNial 5', 'MinbariNial 6', 'MinbariNial 7', 'MinbariNial 8']
+#>>>Refreshed Ship List: ['Player', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12', 'MinbariNial 1', 'MinbariNial 2', 'MinbariNial 3', 'MinbariNial 4', 'MinbariNial 5', 'MinbariNial 6', 'MinbariNial 7', 'MinbariNial 8']
+#>>>Refreshed Ship List: ['Player', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12', 'MinbariNial 1', 'MinbariNial 2', 'MinbariNial 3', 'MinbariNial 4', 'MinbariNial 5', 'MinbariNial 6', 'MinbariNial 7', 'MinbariNial 8']
+#>>>Refreshed Ship List: ['Player', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12', 'MinbariNial 1', 'MinbariNial 2', 'MinbariNial 3', 'MinbariNial 4', 'MinbariNial 5', 'MinbariNial 6', 'MinbariNial 7', 'MinbariNial 8']
+#>>>Refreshed Ship List: ['Player', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12', 'MinbariNial 1', 'MinbariNial 2', 'MinbariNial 3', 'MinbariNial 4', 'MinbariNial 5', 'MinbariNial 6', 'MinbariNial 7', 'MinbariNial 8']
+#>>>Refreshed Ship List: ['Player', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12', 'MinbariNial 1', 'MinbariNial 2', 'MinbariNial 3', 'MinbariNial 4', 'MinbariNial 5', 'MinbariNial 6', 'MinbariNial 7', 'MinbariNial 8']
+#>>>Refreshed Ship List: ['Player', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12', 'MinbariNial 1', 'MinbariNial 2', 'MinbariNial 3', 'MinbariNial 4', 'MinbariNial 5', 'MinbariNial 6', 'MinbariNial 7', 'MinbariNial 8']
+## -------------------- ##
+####################
+#######>>>23:54:44.764 of 9/January/2023, Monday
+#>>>Refreshed Ship List: ['Player', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12', 'MinbariNial 2', 'MinbariNial 3', 'MinbariNial 4', 'MinbariNial 5', 'MinbariNial 6', 'MinbariNial 7', 'MinbariNial 8']
+## -------------------- ##
+####################
+#######>>>23:55:3.014 of 9/January/2023, Monday
+#>>>Refreshed Ship List: ['Player', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12', 'MinbariNial 2', 'MinbariNial 3', 'MinbariNial 4', 'MinbariNial 5', 'MinbariNial 6', 'MinbariNial 8']
+## -------------------- ##
+####################
+#######>>>23:55:11.401 of 9/January/2023, Monday
+#>>>Refreshed Ship List: ['Player', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12', 'MinbariNial 2', 'MinbariNial 3', 'MinbariNial 4', 'MinbariNial 5', 'MinbariNial 6']
+## -------------------- ##
+####################
+#######>>>23:55:17.250 of 9/January/2023, Monday
+#>>>Refreshed Ship List: ['Player', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12', 'MinbariNial 2', 'MinbariNial 3', 'MinbariNial 5', 'MinbariNial 6']
+## -------------------- ##
+####################
+#######>>>23:55:30.747 of 9/January/2023, Monday
+#>>>Refreshed Ship List: ['Player', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12', 'MinbariNial 2', 'MinbariNial 3', 'MinbariNial 5']
+## -------------------- ##
+####################
+#######>>>23:55:35.364 of 9/January/2023, Monday
+#>>>Refreshed Ship List: ['Player', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12', 'MinbariNial 2', 'MinbariNial 3', 'MinbariNial 5', 'MinbariSharlin 8', 'MinbariSharlin 9', 'MinbariSharlin 10']
+#>>>Refreshed Ship List: ['Player', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12', 'MinbariNial 2', 'MinbariNial 3', 'MinbariNial 5', 'MinbariSharlin 8', 'MinbariSharlin 9', 'MinbariSharlin 10']
+#>>>Refreshed Ship List: ['Player', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12', 'MinbariNial 2', 'MinbariNial 3', 'MinbariNial 5', 'MinbariSharlin 8', 'MinbariSharlin 9', 'MinbariSharlin 10']
+## -------------------- ##
+####################
+#######>>>23:56:44.779 of 9/January/2023, Monday
+#>>>Refreshed Ship List: ['Player', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12', 'MinbariNial 2', 'MinbariNial 3', 'MinbariNial 5', 'MinbariSharlin 8', 'MinbariSharlin 9', 'MinbariSharlin 10', 'MinbariNial - 2']
+## -------------------- ##
+####################
+#######>>>23:57:56.147 of 9/January/2023, Monday
+#>>>Refreshed Ship List: ['Player', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12', 'MinbariNial 2', 'MinbariNial 3', 'MinbariNial 5', 'MinbariSharlin 8', 'MinbariSharlin 9', 'MinbariSharlin 10', 'MinbariNial - 2']
+## -------------------- ##
+####################
+#######>>>23:58:30.497 of 9/January/2023, Monday
+#>>>Refreshed Ship List: ['Player', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12', 'MinbariNial 2', 'MinbariNial 3', 'MinbariNial 5', 'MinbariSharlin 8', 'MinbariSharlin 9', 'MinbariSharlin 10', 'MinbariNial - 2']
+## -------------------- ##
+####################
+#######>>>23:58:32.969 of 9/January/2023, Monday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_SXOr33PjW0N9>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12', 'MinbariNial 2', 'MinbariNial 3', 'MinbariNial 5', 'MinbariSharlin 8', 'MinbariSharlin 9', 'MinbariSharlin 10', 'MinbariNial - 2', 'Player']
+## -------------------- ##
+####################
+#######>>>23:58:42.344 of 9/January/2023, Monday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_G8E9S2537szV>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player', 'NX-01 Enterprise-1', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12']
+#>>>Refreshed Ship List: ['Player', 'NX-01 Enterprise-1', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12']
+#>>>Refreshed Ship List: ['Player', 'NX-01 Enterprise-1', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12']
+#>>>Refreshed Ship List: ['Player', 'NX-01 Enterprise-1', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12']
+#>>>Refreshed Ship List: ['Player', 'NX-01 Enterprise-1', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12']
+#>>>Refreshed Ship List: ['Player', 'NX-01 Enterprise-1', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12']
+#>>>Refreshed Ship List: ['Player', 'NX-01 Enterprise-1', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12']
+#>>>Refreshed Ship List: ['Player', 'NX-01 Enterprise-1', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12']
+#>>>Refreshed Ship List: ['Player', 'NX-01 Enterprise-1', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12']
+#>>>Refreshed Ship List: ['Player', 'NX-01 Enterprise-1', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12']
+#>>>Refreshed Ship List: ['Player', 'NX-01 Enterprise-1', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12']
+#>>>Refreshed Ship List: ['Player', 'NX-01 Enterprise-1', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12']
+#>>>Refreshed Ship List: ['Player', 'NX-01 Enterprise-1', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12']
+## -------------------- ##
+####################
+#######>>>23:59:5.128 of 9/January/2023, Monday
+#>>>Refreshed Ship List: ['Player', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12']
+## -------------------- ##
+####################
+#######>>>23:59:13.880 of 9/January/2023, Monday
+#>>>Refreshed Ship List: ['Player', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12']
+## -------------------- ##
+####################
+#######>>>23:59:33.747 of 9/January/2023, Monday
+#>>>Refreshed Ship List: ['Player', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12']
+## -------------------- ##
+####################
+#######>>>23:59:47.964 of 9/January/2023, Monday
+#>>>Refreshed Ship List: ['Player', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12']
+## -------------------- ##
+####################
+#######>>>23:59:48.951 of 9/January/2023, Monday
+#>>>Refreshed Ship List: ['Player', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12']
+## -------------------- ##
+####################
+#######>>>23:59:51.147 of 9/January/2023, Monday
+#>>>Refreshed Ship List: ['Player', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12']
+## -------------------- ##
+####################
+#######>>>23:59:58.779 of 9/January/2023, Monday
 #>>>Creating Grav Wells - Set: Systems.TimeVortexTunnel.TimeVortexTunnel1
 #>>>Creating Grav Wells: []
 #>>>Planets/Suns List: []
@@ -43,308 +176,188 @@
 #>>>Added Player to the Ship List
 ## -------------------- ##
 ####################
-#######>>>22:48:57.319 of 9/January/2023, Monday
-#>>>Refreshed Ship List: ['Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2']
-#>>>Added Player to the Ship List
-#>>>Creating Grav Wells - Set: Systems.DS9FXCardassia.DS9FXCardassia1
-#>>>Creating Grav Wells: [<Cardassia Sun GravityWell_H0X4136ezaK6>, <SunStr SunStreak GravityWell_T6ro5srAg4Gd>, <Cardassia 1 GravityWell_c7Zy6bI1KV2T>, <Cardassia 2 GravityWell_Eu5C7joqIllu>, <Cardassia 3 GravityWell_23qZydYsLHF5>, <Cardassia 4 GravityWell_j4wOIe84BB4v>, <Cardassia 5 GravityWell_OJR5htZ2K4B4>, <Cardassia Prime GravityWell_k2Y8c52n1Mg0>, <Cardassia 7 GravityWell_EOfGDDGLa5vI>, <Cardassia 8 GravityWell_Q802806nRXu5>]
-#>>>Planets/Suns List: ['Cardassia Sun', 'SunStr SunStreak', 'Cardassia 1', 'Cardassia 2', 'Cardassia 3', 'Cardassia 4', 'Cardassia 5', 'Cardassia Prime', 'Cardassia 7', 'Cardassia 8']
-#>>>Refreshed Ship List: ['Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2']
+#######>>>0:0:19.010 of 10/January/2023, Tuesday
+#>>>Creating Grav Wells - Set: Systems.Sirius_B.Sirius_B2
+#>>>Creating Grav Wells: [<Sirius A GravityWell_e628YzESFHec>, <Sirius B GravityWell_3lmIX5GZDk8W>]
+#>>>Planets/Suns List: ['Sirius A', 'Sirius B']
+#>>>Refreshed Ship List: []
 #>>>Added Player to the Ship List
 ## -------------------- ##
 ####################
-#######>>>22:51:11.735 of 9/January/2023, Monday
-#>>>Refreshed Ship List: ['Hutet 1', 'Keldon 1', 'Galor 1', 'Galor 2']
+#######>>>0:1:32.125 of 10/January/2023, Tuesday
+#>>>Creating Grav Wells - Set: Systems.TimeVortexTunnel.TimeVortexTunnel1
+#>>>Creating Grav Wells: []
+#>>>Planets/Suns List: []
+#>>>Refreshed Ship List: ['TimeVortex Outer', 'TimeVortex Inner']
+#>>>Added Player to the Ship List
+#>>>Refreshed Ship List: ['TimeVortex Outer', 'TimeVortex Inner']
+#>>>Added Player to the Ship List
+#>>>Refreshed Ship List: ['TimeVortex Outer', 'TimeVortex Inner']
 #>>>Added Player to the Ship List
 ## -------------------- ##
 ####################
-#######>>>22:51:14.968 of 9/January/2023, Monday
-#>>>Refreshed Ship List: ['Hutet 1', 'Galor 1', 'Galor 2']
+#######>>>0:1:52.012 of 10/January/2023, Tuesday
+#>>>Creating Grav Wells - Set: Systems.Sol.Sol9
+#>>>Creating Grav Wells: [<Sun GravityWell_8njZbNuG615L>, <Pluto GravityWell_7vb0ZS8HE6i3>, <Charon GravityWell_pknWB7MZxzr9>]
+#>>>Planets/Suns List: ['Sun', 'Pluto', 'Charon']
+#>>>Refreshed Ship List: []
 #>>>Added Player to the Ship List
 ## -------------------- ##
 ####################
-#######>>>22:51:15.484 of 9/January/2023, Monday
-#>>>Refreshed Ship List: ['Hutet 1', 'Galor 1']
+#######>>>0:2:24.508 of 10/January/2023, Tuesday
+#>>>Creating Grav Wells - Set: Systems.TimeVortexTunnel.TimeVortexTunnel1
+#>>>Creating Grav Wells: []
+#>>>Planets/Suns List: []
+#>>>Refreshed Ship List: ['TimeVortex Outer', 'TimeVortex Inner']
+#>>>Added Player to the Ship List
+#>>>Refreshed Ship List: ['TimeVortex Outer', 'TimeVortex Inner']
+#>>>Added Player to the Ship List
+#>>>Refreshed Ship List: ['TimeVortex Outer', 'TimeVortex Inner']
 #>>>Added Player to the Ship List
 ## -------------------- ##
 ####################
-#######>>>22:51:16.206 of 9/January/2023, Monday
-#>>>Refreshed Ship List: ['Hutet 1']
+#######>>>0:2:33.567 of 10/January/2023, Tuesday
+#>>>Refreshed Ship List: ['Lunar Voyage', 'Lunar Traveler', 'USS Geronimo', 'USS Full Moon', 'USS Sutherland']
+#>>>Added Player to the Ship List
+#>>>Refreshed Ship List: ['Lunar Voyage', 'Lunar Traveler', 'USS Geronimo', 'USS Full Moon', 'USS Sutherland']
+#>>>Added Player to the Ship List
+#>>>Refreshed Ship List: ['Lunar Voyage', 'Lunar Traveler', 'USS Geronimo', 'USS Full Moon', 'USS Sutherland']
+#>>>Added Player to the Ship List
+#>>>Refreshed Ship List: ['Lunar Voyage', 'Lunar Traveler', 'USS Geronimo', 'USS Full Moon', 'USS Sutherland']
+#>>>Added Player to the Ship List
+#>>>Refreshed Ship List: ['Lunar Voyage', 'Lunar Traveler', 'USS Geronimo', 'USS Full Moon', 'USS Sutherland']
+#>>>Added Player to the Ship List
+#>>>Refreshed Ship List: ['Lunar Voyage', 'Lunar Traveler', 'USS Geronimo', 'USS Full Moon', 'USS Sutherland']
+#>>>Added Player to the Ship List
+#>>>Creating Grav Wells - Set: Systems.Sol.Sol3
+#>>>Creating Grav Wells: [<Sun GravityWell_IK0H8P32JT4J>, <Earth GravityWell_Gjff503MPslF>, <Moon GravityWell_565t8JGmi64Z>]
+#>>>Planets/Suns List: ['Sun', 'Earth', 'Moon']
+#>>>Refreshed Ship List: ['Lunar Voyage', 'Lunar Traveler', 'USS Geronimo', 'USS Full Moon', 'USS Sutherland']
 #>>>Added Player to the Ship List
 ## -------------------- ##
 ####################
-#######>>>22:51:18.868 of 9/January/2023, Monday
-#>>>Creating Grav Wells - Set: Systems.DS9FXCardassia.DS9FXCardassia1
-#>>>Creating Grav Wells: [<Cardassia Sun GravityWell_g08Q4lVdLCxK>, <SunStr SunStreak GravityWell_uFxLXvNcfR8T>, <Cardassia 1 GravityWell_pxbcSkY6LvY8>, <Cardassia 2 GravityWell_7h45SYiV5uGw>, <Cardassia 3 GravityWell_y7n4bExjpf07>, <Cardassia 4 GravityWell_5BXBKhoYfiPq>, <Cardassia 5 GravityWell_w7T1OJbq5YIh>, <Cardassia Prime GravityWell_4mWOto6GY62x>, <Cardassia 7 GravityWell_1FwJUd6mw2HS>, <Cardassia 8 GravityWell_mDRxF7tK27gz>]
-#>>>Planets/Suns List: ['Cardassia Sun', 'SunStr SunStreak', 'Cardassia 1', 'Cardassia 2', 'Cardassia 3', 'Cardassia 4', 'Cardassia 5', 'Cardassia Prime', 'Cardassia 7', 'Cardassia 8']
-#>>>Refreshed Ship List: ['Hutet 1', 'Player']
-#>>>Refreshed Ship List: ['Hutet 1', 'Player', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2']
-#>>>Refreshed Ship List: ['Hutet 1', 'Player', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2']
-#>>>Refreshed Ship List: ['Hutet 1', 'Player', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2']
-#>>>Refreshed Ship List: ['Hutet 1', 'Player', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2']
-## -------------------- ##
-####################
-#######>>>22:51:20.868 of 9/January/2023, Monday
-#>>>Refreshed Ship List: ['Player', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2']
-## -------------------- ##
-####################
-#######>>>22:52:16.625 of 9/January/2023, Monday
-#>>>Creating Grav Wells - Set: Systems.DS9FXCardassia.DS9FXCardassia1
-#>>>Creating Grav Wells: [<Cardassia Sun GravityWell_uhUHj1LdxC8y>, <SunStr SunStreak GravityWell_8w90522XWOO5>, <Cardassia 1 GravityWell_bV919SX8Tm40>, <Cardassia 2 GravityWell_91I9AKRMASeu>, <Cardassia 3 GravityWell_3Z55Ay8th3w9>, <Cardassia 4 GravityWell_lYAWu3mMuJ36>, <Cardassia 5 GravityWell_Mgl8u4iVnaGQ>, <Cardassia Prime GravityWell_yrDoVP6Nyr72>, <Cardassia 7 GravityWell_3c737pAxHt8Q>, <Cardassia 8 GravityWell_LnqJ7PrMMbc5>]
-#>>>Planets/Suns List: ['Cardassia Sun', 'SunStr SunStreak', 'Cardassia 1', 'Cardassia 2', 'Cardassia 3', 'Cardassia 4', 'Cardassia 5', 'Cardassia Prime', 'Cardassia 7', 'Cardassia 8']
-#>>>Refreshed Ship List: ['Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2', 'Player']
-#>>>Refreshed Ship List: ['Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2', 'Player']
-#>>>Refreshed Ship List: ['Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2', 'Player']
-#>>>Refreshed Ship List: ['Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2', 'Player']
-#>>>Refreshed Ship List: ['Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2', 'Player']
-#>>>Refreshed Ship List: ['Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2', 'Player']
-#>>>Refreshed Ship List: ['Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2', 'Player']
-#>>>Refreshed Ship List: ['Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2', 'Player']
-#>>>Refreshed Ship List: ['Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2', 'Player']
-#>>>Refreshed Ship List: ['Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2', 'Player']
-#>>>Refreshed Ship List: ['Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2', 'Player']
-#>>>Refreshed Ship List: ['Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2', 'Player']
-#>>>Refreshed Ship List: ['Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2', 'Player']
-#>>>Refreshed Ship List: ['Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2', 'Player']
-#>>>Refreshed Ship List: ['Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2', 'Player']
-#>>>Refreshed Ship List: ['Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2', 'Player']
-#>>>Refreshed Ship List: ['Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2', 'Player']
-#>>>Refreshed Ship List: ['Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2', 'Player']
-#>>>Refreshed Ship List: ['Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2', 'Player']
-#>>>Refreshed Ship List: ['Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2', 'Player']
-#>>>Refreshed Ship List: ['Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2', 'Player']
-## -------------------- ##
-####################
-#######>>>22:52:17.676 of 9/January/2023, Monday
-#>>>Refreshed Ship List: ['Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2', 'Player', 'Hutet 1']
-## -------------------- ##
-####################
-#######>>>22:52:35.483 of 9/January/2023, Monday
-#>>>Refreshed Ship List: ['Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2', 'Player', 'Hutet 1']
-## -------------------- ##
-####################
-#######>>>22:52:36.183 of 9/January/2023, Monday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_JjNp9LOs64q3>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Dalek Saucer-1', 'Type IX Dalek Drone (Grey)-2', 'Type IX Dalek Drone (Red)-3', 'Type IX Dalek Scientist-4', 'Type IX Dalek Strategist-5', 'Type IX Supreme Dalek-6', 'Type VIII Black Dalek-7', 'Type VIII Bronze Dalek-8', 'Type VIII Bronze Dalek-9', 'Type VIII Bronze Dalek-10', 'Type VIII Bronze Dalek-11', 'Type VIII Bronze Dalek-12', 'Type VIII Bronze Dalek-13', 'Type VIII Bronze Dalek-14', 'Type VIII Bronze Dalek-15', 'Type VIII Bronze Dalek-16', 'Type VIII Bronze Dalek-17', 'Type VIII Bronze Dalek-18', 'Type VIII Bronze Dalek-19', 'Type VIII Bronze Dalek-20', 'Player']
-## -------------------- ##
-####################
-#######>>>22:52:43.050 of 9/January/2023, Monday
-#>>>Refreshed Ship List: ['Player']
-#>>>Refreshed Ship List: ['Player']
-## -------------------- ##
-####################
-#######>>>22:52:43.533 of 9/January/2023, Monday
-#>>>Refreshed Ship List: ['Player']
-#>>>Refreshed Ship List: ['Player']
-#>>>Refreshed Ship List: ['Player']
-## -------------------- ##
-####################
-#######>>>22:52:44.966 of 9/January/2023, Monday
-#>>>Refreshed Ship List: ['Hutet 1', 'Player']
-## -------------------- ##
-####################
-#######>>>22:52:45.800 of 9/January/2023, Monday
-#>>>Refreshed Ship List: ['Keldon 1', 'Hutet 1', 'Player']
-#>>>Refreshed Ship List: ['Keldon 1', 'Keldon 2', 'Hutet 1', 'Player']
-## -------------------- ##
-####################
-#######>>>22:52:47.384 of 9/January/2023, Monday
-#>>>Refreshed Ship List: ['Keldon 1', 'Keldon 2', 'Galor 1', 'Hutet 1', 'Player']
-#>>>Refreshed Ship List: ['Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2', 'Hutet 1', 'Player']
-## -------------------- ##
-####################
-#######>>>22:52:53.249 of 9/January/2023, Monday
-#>>>Creating Grav Wells - Set: Systems.DS9FXCardassia.DS9FXCardassia1
-#>>>Creating Grav Wells: [<Cardassia Sun GravityWell_yp7Ln44laaqB>, <SunStr SunStreak GravityWell_qe8nlkXW3Y6C>, <Cardassia 1 GravityWell_4B117tC9CFM5>, <Cardassia 2 GravityWell_3IF5HojB2K0L>, <Cardassia 3 GravityWell_r4Sp51y8q7vR>, <Cardassia 4 GravityWell_HRR03zV3t59C>, <Cardassia 5 GravityWell_cfwT8Yy7R6Q4>, <Cardassia Prime GravityWell_8S2wzP8ai69D>, <Cardassia 7 GravityWell_kG7z865TVDxG>, <Cardassia 8 GravityWell_1z8vDcLEtV8q>]
-#>>>Planets/Suns List: ['Cardassia Sun', 'SunStr SunStreak', 'Cardassia 1', 'Cardassia 2', 'Cardassia 3', 'Cardassia 4', 'Cardassia 5', 'Cardassia Prime', 'Cardassia 7', 'Cardassia 8']
-#>>>Refreshed Ship List: ['Dalek Saucer-1', 'Type IX Dalek Drone (Grey)-2', 'Type IX Dalek Drone (Red)-3', 'Type IX Dalek Scientist-4', 'Type IX Dalek Strategist-5', 'Type IX Supreme Dalek-6', 'Type VIII Black Dalek-7', 'Type VIII Bronze Dalek-8', 'Type VIII Bronze Dalek-9', 'Type VIII Bronze Dalek-10', 'Type VIII Bronze Dalek-11', 'Type VIII Bronze Dalek-12', 'Type VIII Bronze Dalek-13', 'Type VIII Bronze Dalek-14', 'Type VIII Bronze Dalek-15', 'Type VIII Bronze Dalek-16', 'Type VIII Bronze Dalek-17', 'Type VIII Bronze Dalek-18', 'Type VIII Bronze Dalek-19', 'Type VIII Bronze Dalek-20', 'Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['Dalek Saucer-1', 'Type IX Dalek Drone (Grey)-2', 'Type IX Dalek Drone (Red)-3', 'Type IX Dalek Scientist-4', 'Type IX Dalek Strategist-5', 'Type IX Supreme Dalek-6', 'Type VIII Black Dalek-7', 'Type VIII Bronze Dalek-8', 'Type VIII Bronze Dalek-9', 'Type VIII Bronze Dalek-10', 'Type VIII Bronze Dalek-11', 'Type VIII Bronze Dalek-12', 'Type VIII Bronze Dalek-13', 'Type VIII Bronze Dalek-14', 'Type VIII Bronze Dalek-15', 'Type VIII Bronze Dalek-16', 'Type VIII Bronze Dalek-17', 'Type VIII Bronze Dalek-18', 'Type VIII Bronze Dalek-19', 'Type VIII Bronze Dalek-20', 'Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['Dalek Saucer-1', 'Type IX Dalek Drone (Grey)-2', 'Type IX Dalek Drone (Red)-3', 'Type IX Dalek Scientist-4', 'Type IX Dalek Strategist-5', 'Type IX Supreme Dalek-6', 'Type VIII Black Dalek-7', 'Type VIII Bronze Dalek-8', 'Type VIII Bronze Dalek-9', 'Type VIII Bronze Dalek-10', 'Type VIII Bronze Dalek-11', 'Type VIII Bronze Dalek-12', 'Type VIII Bronze Dalek-13', 'Type VIII Bronze Dalek-14', 'Type VIII Bronze Dalek-15', 'Type VIII Bronze Dalek-16', 'Type VIII Bronze Dalek-17', 'Type VIII Bronze Dalek-18', 'Type VIII Bronze Dalek-19', 'Type VIII Bronze Dalek-20', 'Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['Dalek Saucer-1', 'Type IX Dalek Drone (Grey)-2', 'Type IX Dalek Drone (Red)-3', 'Type IX Dalek Scientist-4', 'Type IX Dalek Strategist-5', 'Type IX Supreme Dalek-6', 'Type VIII Black Dalek-7', 'Type VIII Bronze Dalek-8', 'Type VIII Bronze Dalek-9', 'Type VIII Bronze Dalek-10', 'Type VIII Bronze Dalek-11', 'Type VIII Bronze Dalek-12', 'Type VIII Bronze Dalek-13', 'Type VIII Bronze Dalek-14', 'Type VIII Bronze Dalek-15', 'Type VIII Bronze Dalek-16', 'Type VIII Bronze Dalek-17', 'Type VIII Bronze Dalek-18', 'Type VIII Bronze Dalek-19', 'Type VIII Bronze Dalek-20', 'Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['Dalek Saucer-1', 'Type IX Dalek Drone (Grey)-2', 'Type IX Dalek Drone (Red)-3', 'Type IX Dalek Scientist-4', 'Type IX Dalek Strategist-5', 'Type IX Supreme Dalek-6', 'Type VIII Black Dalek-7', 'Type VIII Bronze Dalek-8', 'Type VIII Bronze Dalek-9', 'Type VIII Bronze Dalek-10', 'Type VIII Bronze Dalek-11', 'Type VIII Bronze Dalek-12', 'Type VIII Bronze Dalek-13', 'Type VIII Bronze Dalek-14', 'Type VIII Bronze Dalek-15', 'Type VIII Bronze Dalek-16', 'Type VIII Bronze Dalek-17', 'Type VIII Bronze Dalek-18', 'Type VIII Bronze Dalek-19', 'Type VIII Bronze Dalek-20', 'Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['Dalek Saucer-1', 'Type IX Dalek Drone (Grey)-2', 'Type IX Dalek Drone (Red)-3', 'Type IX Dalek Scientist-4', 'Type IX Dalek Strategist-5', 'Type IX Supreme Dalek-6', 'Type VIII Black Dalek-7', 'Type VIII Bronze Dalek-8', 'Type VIII Bronze Dalek-9', 'Type VIII Bronze Dalek-10', 'Type VIII Bronze Dalek-11', 'Type VIII Bronze Dalek-12', 'Type VIII Bronze Dalek-13', 'Type VIII Bronze Dalek-14', 'Type VIII Bronze Dalek-15', 'Type VIII Bronze Dalek-16', 'Type VIII Bronze Dalek-17', 'Type VIII Bronze Dalek-18', 'Type VIII Bronze Dalek-19', 'Type VIII Bronze Dalek-20', 'Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['Dalek Saucer-1', 'Type IX Dalek Drone (Grey)-2', 'Type IX Dalek Drone (Red)-3', 'Type IX Dalek Scientist-4', 'Type IX Dalek Strategist-5', 'Type IX Supreme Dalek-6', 'Type VIII Black Dalek-7', 'Type VIII Bronze Dalek-8', 'Type VIII Bronze Dalek-9', 'Type VIII Bronze Dalek-10', 'Type VIII Bronze Dalek-11', 'Type VIII Bronze Dalek-12', 'Type VIII Bronze Dalek-13', 'Type VIII Bronze Dalek-14', 'Type VIII Bronze Dalek-15', 'Type VIII Bronze Dalek-16', 'Type VIII Bronze Dalek-17', 'Type VIII Bronze Dalek-18', 'Type VIII Bronze Dalek-19', 'Type VIII Bronze Dalek-20', 'Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['Dalek Saucer-1', 'Type IX Dalek Drone (Grey)-2', 'Type IX Dalek Drone (Red)-3', 'Type IX Dalek Scientist-4', 'Type IX Dalek Strategist-5', 'Type IX Supreme Dalek-6', 'Type VIII Black Dalek-7', 'Type VIII Bronze Dalek-8', 'Type VIII Bronze Dalek-9', 'Type VIII Bronze Dalek-10', 'Type VIII Bronze Dalek-11', 'Type VIII Bronze Dalek-12', 'Type VIII Bronze Dalek-13', 'Type VIII Bronze Dalek-14', 'Type VIII Bronze Dalek-15', 'Type VIII Bronze Dalek-16', 'Type VIII Bronze Dalek-17', 'Type VIII Bronze Dalek-18', 'Type VIII Bronze Dalek-19', 'Type VIII Bronze Dalek-20', 'Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['Dalek Saucer-1', 'Type IX Dalek Drone (Grey)-2', 'Type IX Dalek Drone (Red)-3', 'Type IX Dalek Scientist-4', 'Type IX Dalek Strategist-5', 'Type IX Supreme Dalek-6', 'Type VIII Black Dalek-7', 'Type VIII Bronze Dalek-8', 'Type VIII Bronze Dalek-9', 'Type VIII Bronze Dalek-10', 'Type VIII Bronze Dalek-11', 'Type VIII Bronze Dalek-12', 'Type VIII Bronze Dalek-13', 'Type VIII Bronze Dalek-14', 'Type VIII Bronze Dalek-15', 'Type VIII Bronze Dalek-16', 'Type VIII Bronze Dalek-17', 'Type VIII Bronze Dalek-18', 'Type VIII Bronze Dalek-19', 'Type VIII Bronze Dalek-20', 'Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['Dalek Saucer-1', 'Type IX Dalek Drone (Grey)-2', 'Type IX Dalek Drone (Red)-3', 'Type IX Dalek Scientist-4', 'Type IX Dalek Strategist-5', 'Type IX Supreme Dalek-6', 'Type VIII Black Dalek-7', 'Type VIII Bronze Dalek-8', 'Type VIII Bronze Dalek-9', 'Type VIII Bronze Dalek-10', 'Type VIII Bronze Dalek-11', 'Type VIII Bronze Dalek-12', 'Type VIII Bronze Dalek-13', 'Type VIII Bronze Dalek-14', 'Type VIII Bronze Dalek-15', 'Type VIII Bronze Dalek-16', 'Type VIII Bronze Dalek-17', 'Type VIII Bronze Dalek-18', 'Type VIII Bronze Dalek-19', 'Type VIII Bronze Dalek-20', 'Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['Dalek Saucer-1', 'Type IX Dalek Drone (Grey)-2', 'Type IX Dalek Drone (Red)-3', 'Type IX Dalek Scientist-4', 'Type IX Dalek Strategist-5', 'Type IX Supreme Dalek-6', 'Type VIII Black Dalek-7', 'Type VIII Bronze Dalek-8', 'Type VIII Bronze Dalek-9', 'Type VIII Bronze Dalek-10', 'Type VIII Bronze Dalek-11', 'Type VIII Bronze Dalek-12', 'Type VIII Bronze Dalek-13', 'Type VIII Bronze Dalek-14', 'Type VIII Bronze Dalek-15', 'Type VIII Bronze Dalek-16', 'Type VIII Bronze Dalek-17', 'Type VIII Bronze Dalek-18', 'Type VIII Bronze Dalek-19', 'Type VIII Bronze Dalek-20', 'Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['Dalek Saucer-1', 'Type IX Dalek Drone (Grey)-2', 'Type IX Dalek Drone (Red)-3', 'Type IX Dalek Scientist-4', 'Type IX Dalek Strategist-5', 'Type IX Supreme Dalek-6', 'Type VIII Black Dalek-7', 'Type VIII Bronze Dalek-8', 'Type VIII Bronze Dalek-9', 'Type VIII Bronze Dalek-10', 'Type VIII Bronze Dalek-11', 'Type VIII Bronze Dalek-12', 'Type VIII Bronze Dalek-13', 'Type VIII Bronze Dalek-14', 'Type VIII Bronze Dalek-15', 'Type VIII Bronze Dalek-16', 'Type VIII Bronze Dalek-17', 'Type VIII Bronze Dalek-18', 'Type VIII Bronze Dalek-19', 'Type VIII Bronze Dalek-20', 'Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['Dalek Saucer-1', 'Type IX Dalek Drone (Grey)-2', 'Type IX Dalek Drone (Red)-3', 'Type IX Dalek Scientist-4', 'Type IX Dalek Strategist-5', 'Type IX Supreme Dalek-6', 'Type VIII Black Dalek-7', 'Type VIII Bronze Dalek-8', 'Type VIII Bronze Dalek-9', 'Type VIII Bronze Dalek-10', 'Type VIII Bronze Dalek-11', 'Type VIII Bronze Dalek-12', 'Type VIII Bronze Dalek-13', 'Type VIII Bronze Dalek-14', 'Type VIII Bronze Dalek-15', 'Type VIII Bronze Dalek-16', 'Type VIII Bronze Dalek-17', 'Type VIII Bronze Dalek-18', 'Type VIII Bronze Dalek-19', 'Type VIII Bronze Dalek-20', 'Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['Dalek Saucer-1', 'Type IX Dalek Drone (Grey)-2', 'Type IX Dalek Drone (Red)-3', 'Type IX Dalek Scientist-4', 'Type IX Dalek Strategist-5', 'Type IX Supreme Dalek-6', 'Type VIII Black Dalek-7', 'Type VIII Bronze Dalek-8', 'Type VIII Bronze Dalek-9', 'Type VIII Bronze Dalek-10', 'Type VIII Bronze Dalek-11', 'Type VIII Bronze Dalek-12', 'Type VIII Bronze Dalek-13', 'Type VIII Bronze Dalek-14', 'Type VIII Bronze Dalek-15', 'Type VIII Bronze Dalek-16', 'Type VIII Bronze Dalek-17', 'Type VIII Bronze Dalek-18', 'Type VIII Bronze Dalek-19', 'Type VIII Bronze Dalek-20', 'Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['Dalek Saucer-1', 'Type IX Dalek Drone (Grey)-2', 'Type IX Dalek Drone (Red)-3', 'Type IX Dalek Scientist-4', 'Type IX Dalek Strategist-5', 'Type IX Supreme Dalek-6', 'Type VIII Black Dalek-7', 'Type VIII Bronze Dalek-8', 'Type VIII Bronze Dalek-9', 'Type VIII Bronze Dalek-10', 'Type VIII Bronze Dalek-11', 'Type VIII Bronze Dalek-12', 'Type VIII Bronze Dalek-13', 'Type VIII Bronze Dalek-14', 'Type VIII Bronze Dalek-15', 'Type VIII Bronze Dalek-16', 'Type VIII Bronze Dalek-17', 'Type VIII Bronze Dalek-18', 'Type VIII Bronze Dalek-19', 'Type VIII Bronze Dalek-20', 'Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['Dalek Saucer-1', 'Type IX Dalek Drone (Grey)-2', 'Type IX Dalek Drone (Red)-3', 'Type IX Dalek Scientist-4', 'Type IX Dalek Strategist-5', 'Type IX Supreme Dalek-6', 'Type VIII Black Dalek-7', 'Type VIII Bronze Dalek-8', 'Type VIII Bronze Dalek-9', 'Type VIII Bronze Dalek-10', 'Type VIII Bronze Dalek-11', 'Type VIII Bronze Dalek-12', 'Type VIII Bronze Dalek-13', 'Type VIII Bronze Dalek-14', 'Type VIII Bronze Dalek-15', 'Type VIII Bronze Dalek-16', 'Type VIII Bronze Dalek-17', 'Type VIII Bronze Dalek-18', 'Type VIII Bronze Dalek-19', 'Type VIII Bronze Dalek-20', 'Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['Dalek Saucer-1', 'Type IX Dalek Drone (Grey)-2', 'Type IX Dalek Drone (Red)-3', 'Type IX Dalek Scientist-4', 'Type IX Dalek Strategist-5', 'Type IX Supreme Dalek-6', 'Type VIII Black Dalek-7', 'Type VIII Bronze Dalek-8', 'Type VIII Bronze Dalek-9', 'Type VIII Bronze Dalek-10', 'Type VIII Bronze Dalek-11', 'Type VIII Bronze Dalek-12', 'Type VIII Bronze Dalek-13', 'Type VIII Bronze Dalek-14', 'Type VIII Bronze Dalek-15', 'Type VIII Bronze Dalek-16', 'Type VIII Bronze Dalek-17', 'Type VIII Bronze Dalek-18', 'Type VIII Bronze Dalek-19', 'Type VIII Bronze Dalek-20', 'Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['Dalek Saucer-1', 'Type IX Dalek Drone (Grey)-2', 'Type IX Dalek Drone (Red)-3', 'Type IX Dalek Scientist-4', 'Type IX Dalek Strategist-5', 'Type IX Supreme Dalek-6', 'Type VIII Black Dalek-7', 'Type VIII Bronze Dalek-8', 'Type VIII Bronze Dalek-9', 'Type VIII Bronze Dalek-10', 'Type VIII Bronze Dalek-11', 'Type VIII Bronze Dalek-12', 'Type VIII Bronze Dalek-13', 'Type VIII Bronze Dalek-14', 'Type VIII Bronze Dalek-15', 'Type VIII Bronze Dalek-16', 'Type VIII Bronze Dalek-17', 'Type VIII Bronze Dalek-18', 'Type VIII Bronze Dalek-19', 'Type VIII Bronze Dalek-20', 'Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['Dalek Saucer-1', 'Type IX Dalek Drone (Grey)-2', 'Type IX Dalek Drone (Red)-3', 'Type IX Dalek Scientist-4', 'Type IX Dalek Strategist-5', 'Type IX Supreme Dalek-6', 'Type VIII Black Dalek-7', 'Type VIII Bronze Dalek-8', 'Type VIII Bronze Dalek-9', 'Type VIII Bronze Dalek-10', 'Type VIII Bronze Dalek-11', 'Type VIII Bronze Dalek-12', 'Type VIII Bronze Dalek-13', 'Type VIII Bronze Dalek-14', 'Type VIII Bronze Dalek-15', 'Type VIII Bronze Dalek-16', 'Type VIII Bronze Dalek-17', 'Type VIII Bronze Dalek-18', 'Type VIII Bronze Dalek-19', 'Type VIII Bronze Dalek-20', 'Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['Dalek Saucer-1', 'Type IX Dalek Drone (Grey)-2', 'Type IX Dalek Drone (Red)-3', 'Type IX Dalek Scientist-4', 'Type IX Dalek Strategist-5', 'Type IX Supreme Dalek-6', 'Type VIII Black Dalek-7', 'Type VIII Bronze Dalek-8', 'Type VIII Bronze Dalek-9', 'Type VIII Bronze Dalek-10', 'Type VIII Bronze Dalek-11', 'Type VIII Bronze Dalek-12', 'Type VIII Bronze Dalek-13', 'Type VIII Bronze Dalek-14', 'Type VIII Bronze Dalek-15', 'Type VIII Bronze Dalek-16', 'Type VIII Bronze Dalek-17', 'Type VIII Bronze Dalek-18', 'Type VIII Bronze Dalek-19', 'Type VIII Bronze Dalek-20', 'Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['Dalek Saucer-1', 'Type IX Dalek Drone (Grey)-2', 'Type IX Dalek Drone (Red)-3', 'Type IX Dalek Scientist-4', 'Type IX Dalek Strategist-5', 'Type IX Supreme Dalek-6', 'Type VIII Black Dalek-7', 'Type VIII Bronze Dalek-8', 'Type VIII Bronze Dalek-9', 'Type VIII Bronze Dalek-10', 'Type VIII Bronze Dalek-11', 'Type VIII Bronze Dalek-12', 'Type VIII Bronze Dalek-13', 'Type VIII Bronze Dalek-14', 'Type VIII Bronze Dalek-15', 'Type VIII Bronze Dalek-16', 'Type VIII Bronze Dalek-17', 'Type VIII Bronze Dalek-18', 'Type VIII Bronze Dalek-19', 'Type VIII Bronze Dalek-20', 'Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['Dalek Saucer-1', 'Type IX Dalek Drone (Grey)-2', 'Type IX Dalek Drone (Red)-3', 'Type IX Dalek Scientist-4', 'Type IX Dalek Strategist-5', 'Type IX Supreme Dalek-6', 'Type VIII Black Dalek-7', 'Type VIII Bronze Dalek-8', 'Type VIII Bronze Dalek-9', 'Type VIII Bronze Dalek-10', 'Type VIII Bronze Dalek-11', 'Type VIII Bronze Dalek-12', 'Type VIII Bronze Dalek-13', 'Type VIII Bronze Dalek-14', 'Type VIII Bronze Dalek-15', 'Type VIII Bronze Dalek-16', 'Type VIII Bronze Dalek-17', 'Type VIII Bronze Dalek-18', 'Type VIII Bronze Dalek-19', 'Type VIII Bronze Dalek-20', 'Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['Dalek Saucer-1', 'Type IX Dalek Drone (Grey)-2', 'Type IX Dalek Drone (Red)-3', 'Type IX Dalek Scientist-4', 'Type IX Dalek Strategist-5', 'Type IX Supreme Dalek-6', 'Type VIII Black Dalek-7', 'Type VIII Bronze Dalek-8', 'Type VIII Bronze Dalek-9', 'Type VIII Bronze Dalek-10', 'Type VIII Bronze Dalek-11', 'Type VIII Bronze Dalek-12', 'Type VIII Bronze Dalek-13', 'Type VIII Bronze Dalek-14', 'Type VIII Bronze Dalek-15', 'Type VIII Bronze Dalek-16', 'Type VIII Bronze Dalek-17', 'Type VIII Bronze Dalek-18', 'Type VIII Bronze Dalek-19', 'Type VIII Bronze Dalek-20', 'Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['Dalek Saucer-1', 'Type IX Dalek Drone (Grey)-2', 'Type IX Dalek Drone (Red)-3', 'Type IX Dalek Scientist-4', 'Type IX Dalek Strategist-5', 'Type IX Supreme Dalek-6', 'Type VIII Black Dalek-7', 'Type VIII Bronze Dalek-8', 'Type VIII Bronze Dalek-9', 'Type VIII Bronze Dalek-10', 'Type VIII Bronze Dalek-11', 'Type VIII Bronze Dalek-12', 'Type VIII Bronze Dalek-13', 'Type VIII Bronze Dalek-14', 'Type VIII Bronze Dalek-15', 'Type VIII Bronze Dalek-16', 'Type VIII Bronze Dalek-17', 'Type VIII Bronze Dalek-18', 'Type VIII Bronze Dalek-19', 'Type VIII Bronze Dalek-20', 'Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['Dalek Saucer-1', 'Type IX Dalek Drone (Grey)-2', 'Type IX Dalek Drone (Red)-3', 'Type IX Dalek Scientist-4', 'Type IX Dalek Strategist-5', 'Type IX Supreme Dalek-6', 'Type VIII Black Dalek-7', 'Type VIII Bronze Dalek-8', 'Type VIII Bronze Dalek-9', 'Type VIII Bronze Dalek-10', 'Type VIII Bronze Dalek-11', 'Type VIII Bronze Dalek-12', 'Type VIII Bronze Dalek-13', 'Type VIII Bronze Dalek-14', 'Type VIII Bronze Dalek-15', 'Type VIII Bronze Dalek-16', 'Type VIII Bronze Dalek-17', 'Type VIII Bronze Dalek-18', 'Type VIII Bronze Dalek-19', 'Type VIII Bronze Dalek-20', 'Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['Dalek Saucer-1', 'Type IX Dalek Drone (Grey)-2', 'Type IX Dalek Drone (Red)-3', 'Type IX Dalek Scientist-4', 'Type IX Dalek Strategist-5', 'Type IX Supreme Dalek-6', 'Type VIII Black Dalek-7', 'Type VIII Bronze Dalek-8', 'Type VIII Bronze Dalek-9', 'Type VIII Bronze Dalek-10', 'Type VIII Bronze Dalek-11', 'Type VIII Bronze Dalek-12', 'Type VIII Bronze Dalek-13', 'Type VIII Bronze Dalek-14', 'Type VIII Bronze Dalek-15', 'Type VIII Bronze Dalek-16', 'Type VIII Bronze Dalek-17', 'Type VIII Bronze Dalek-18', 'Type VIII Bronze Dalek-19', 'Type VIII Bronze Dalek-20', 'Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2']
-#>>>Added Player to the Ship List
-#>>>Creating Grav Wells - Set: Systems.DS9FXCardassia.DS9FXCardassia1
-#>>>Creating Grav Wells: [<Cardassia Sun GravityWell_Zv0SjDbC2T0B>, <SunStr SunStreak GravityWell_xHz5Td5Y65z3>, <Cardassia 1 GravityWell_G8H9648K65ir>, <Cardassia 2 GravityWell_l5HGQ5t3A2I1>, <Cardassia 3 GravityWell_Exz0WqApE1dw>, <Cardassia 4 GravityWell_JZTktQ0k9RPZ>, <Cardassia 5 GravityWell_lzR169w9nCY4>, <Cardassia Prime GravityWell_ukLrQ83iV960>, <Cardassia 7 GravityWell_4GsrEZ663K1h>, <Cardassia 8 GravityWell_3lye5CdRnXl4>]
-#>>>Planets/Suns List: ['Cardassia Sun', 'SunStr SunStreak', 'Cardassia 1', 'Cardassia 2', 'Cardassia 3', 'Cardassia 4', 'Cardassia 5', 'Cardassia Prime', 'Cardassia 7', 'Cardassia 8']
-#>>>Refreshed Ship List: ['Dalek Saucer-1', 'Type IX Dalek Drone (Grey)-2', 'Type IX Dalek Drone (Red)-3', 'Type IX Dalek Scientist-4', 'Type IX Dalek Strategist-5', 'Type IX Supreme Dalek-6', 'Type VIII Black Dalek-7', 'Type VIII Bronze Dalek-8', 'Type VIII Bronze Dalek-9', 'Type VIII Bronze Dalek-10', 'Type VIII Bronze Dalek-11', 'Type VIII Bronze Dalek-12', 'Type VIII Bronze Dalek-13', 'Type VIII Bronze Dalek-14', 'Type VIII Bronze Dalek-15', 'Type VIII Bronze Dalek-16', 'Type VIII Bronze Dalek-17', 'Type VIII Bronze Dalek-18', 'Type VIII Bronze Dalek-19', 'Type VIII Bronze Dalek-20', 'Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['Dalek Saucer-1', 'Type IX Dalek Drone (Grey)-2', 'Type IX Dalek Drone (Red)-3', 'Type IX Dalek Scientist-4', 'Type IX Dalek Strategist-5', 'Type IX Supreme Dalek-6', 'Type VIII Black Dalek-7', 'Type VIII Bronze Dalek-8', 'Type VIII Bronze Dalek-9', 'Type VIII Bronze Dalek-10', 'Type VIII Bronze Dalek-11', 'Type VIII Bronze Dalek-12', 'Type VIII Bronze Dalek-13', 'Type VIII Bronze Dalek-14', 'Type VIII Bronze Dalek-15', 'Type VIII Bronze Dalek-16', 'Type VIII Bronze Dalek-17', 'Type VIII Bronze Dalek-18', 'Type VIII Bronze Dalek-19', 'Type VIII Bronze Dalek-20', 'Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['Dalek Saucer-1', 'Type IX Dalek Drone (Grey)-2', 'Type IX Dalek Drone (Red)-3', 'Type IX Dalek Scientist-4', 'Type IX Dalek Strategist-5', 'Type IX Supreme Dalek-6', 'Type VIII Black Dalek-7', 'Type VIII Bronze Dalek-8', 'Type VIII Bronze Dalek-9', 'Type VIII Bronze Dalek-10', 'Type VIII Bronze Dalek-11', 'Type VIII Bronze Dalek-12', 'Type VIII Bronze Dalek-13', 'Type VIII Bronze Dalek-14', 'Type VIII Bronze Dalek-15', 'Type VIII Bronze Dalek-16', 'Type VIII Bronze Dalek-17', 'Type VIII Bronze Dalek-18', 'Type VIII Bronze Dalek-19', 'Type VIII Bronze Dalek-20', 'Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['Dalek Saucer-1', 'Type IX Dalek Drone (Grey)-2', 'Type IX Dalek Drone (Red)-3', 'Type IX Dalek Scientist-4', 'Type IX Dalek Strategist-5', 'Type IX Supreme Dalek-6', 'Type VIII Black Dalek-7', 'Type VIII Bronze Dalek-8', 'Type VIII Bronze Dalek-9', 'Type VIII Bronze Dalek-10', 'Type VIII Bronze Dalek-11', 'Type VIII Bronze Dalek-12', 'Type VIII Bronze Dalek-13', 'Type VIII Bronze Dalek-14', 'Type VIII Bronze Dalek-15', 'Type VIII Bronze Dalek-16', 'Type VIII Bronze Dalek-17', 'Type VIII Bronze Dalek-18', 'Type VIII Bronze Dalek-19', 'Type VIII Bronze Dalek-20', 'Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['Dalek Saucer-1', 'Type IX Dalek Drone (Grey)-2', 'Type IX Dalek Drone (Red)-3', 'Type IX Dalek Scientist-4', 'Type IX Dalek Strategist-5', 'Type IX Supreme Dalek-6', 'Type VIII Black Dalek-7', 'Type VIII Bronze Dalek-8', 'Type VIII Bronze Dalek-9', 'Type VIII Bronze Dalek-10', 'Type VIII Bronze Dalek-11', 'Type VIII Bronze Dalek-12', 'Type VIII Bronze Dalek-13', 'Type VIII Bronze Dalek-14', 'Type VIII Bronze Dalek-15', 'Type VIII Bronze Dalek-16', 'Type VIII Bronze Dalek-17', 'Type VIII Bronze Dalek-18', 'Type VIII Bronze Dalek-19', 'Type VIII Bronze Dalek-20', 'Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['Dalek Saucer-1', 'Type IX Dalek Drone (Grey)-2', 'Type IX Dalek Drone (Red)-3', 'Type IX Dalek Scientist-4', 'Type IX Dalek Strategist-5', 'Type IX Supreme Dalek-6', 'Type VIII Black Dalek-7', 'Type VIII Bronze Dalek-8', 'Type VIII Bronze Dalek-9', 'Type VIII Bronze Dalek-10', 'Type VIII Bronze Dalek-11', 'Type VIII Bronze Dalek-12', 'Type VIII Bronze Dalek-13', 'Type VIII Bronze Dalek-14', 'Type VIII Bronze Dalek-15', 'Type VIII Bronze Dalek-16', 'Type VIII Bronze Dalek-17', 'Type VIII Bronze Dalek-18', 'Type VIII Bronze Dalek-19', 'Type VIII Bronze Dalek-20', 'Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['Dalek Saucer-1', 'Type IX Dalek Drone (Grey)-2', 'Type IX Dalek Drone (Red)-3', 'Type IX Dalek Scientist-4', 'Type IX Dalek Strategist-5', 'Type IX Supreme Dalek-6', 'Type VIII Black Dalek-7', 'Type VIII Bronze Dalek-8', 'Type VIII Bronze Dalek-9', 'Type VIII Bronze Dalek-10', 'Type VIII Bronze Dalek-11', 'Type VIII Bronze Dalek-12', 'Type VIII Bronze Dalek-13', 'Type VIII Bronze Dalek-14', 'Type VIII Bronze Dalek-15', 'Type VIII Bronze Dalek-16', 'Type VIII Bronze Dalek-17', 'Type VIII Bronze Dalek-18', 'Type VIII Bronze Dalek-19', 'Type VIII Bronze Dalek-20', 'Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['Dalek Saucer-1', 'Type IX Dalek Drone (Grey)-2', 'Type IX Dalek Drone (Red)-3', 'Type IX Dalek Scientist-4', 'Type IX Dalek Strategist-5', 'Type IX Supreme Dalek-6', 'Type VIII Black Dalek-7', 'Type VIII Bronze Dalek-8', 'Type VIII Bronze Dalek-9', 'Type VIII Bronze Dalek-10', 'Type VIII Bronze Dalek-11', 'Type VIII Bronze Dalek-12', 'Type VIII Bronze Dalek-13', 'Type VIII Bronze Dalek-14', 'Type VIII Bronze Dalek-15', 'Type VIII Bronze Dalek-16', 'Type VIII Bronze Dalek-17', 'Type VIII Bronze Dalek-18', 'Type VIII Bronze Dalek-19', 'Type VIII Bronze Dalek-20', 'Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['Dalek Saucer-1', 'Type IX Dalek Drone (Grey)-2', 'Type IX Dalek Drone (Red)-3', 'Type IX Dalek Scientist-4', 'Type IX Dalek Strategist-5', 'Type IX Supreme Dalek-6', 'Type VIII Black Dalek-7', 'Type VIII Bronze Dalek-8', 'Type VIII Bronze Dalek-9', 'Type VIII Bronze Dalek-10', 'Type VIII Bronze Dalek-11', 'Type VIII Bronze Dalek-12', 'Type VIII Bronze Dalek-13', 'Type VIII Bronze Dalek-14', 'Type VIII Bronze Dalek-15', 'Type VIII Bronze Dalek-16', 'Type VIII Bronze Dalek-17', 'Type VIII Bronze Dalek-18', 'Type VIII Bronze Dalek-19', 'Type VIII Bronze Dalek-20', 'Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['Dalek Saucer-1', 'Type IX Dalek Drone (Grey)-2', 'Type IX Dalek Drone (Red)-3', 'Type IX Dalek Scientist-4', 'Type IX Dalek Strategist-5', 'Type IX Supreme Dalek-6', 'Type VIII Black Dalek-7', 'Type VIII Bronze Dalek-8', 'Type VIII Bronze Dalek-9', 'Type VIII Bronze Dalek-10', 'Type VIII Bronze Dalek-11', 'Type VIII Bronze Dalek-12', 'Type VIII Bronze Dalek-13', 'Type VIII Bronze Dalek-14', 'Type VIII Bronze Dalek-15', 'Type VIII Bronze Dalek-16', 'Type VIII Bronze Dalek-17', 'Type VIII Bronze Dalek-18', 'Type VIII Bronze Dalek-19', 'Type VIII Bronze Dalek-20', 'Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['Dalek Saucer-1', 'Type IX Dalek Drone (Grey)-2', 'Type IX Dalek Drone (Red)-3', 'Type IX Dalek Scientist-4', 'Type IX Dalek Strategist-5', 'Type IX Supreme Dalek-6', 'Type VIII Black Dalek-7', 'Type VIII Bronze Dalek-8', 'Type VIII Bronze Dalek-9', 'Type VIII Bronze Dalek-10', 'Type VIII Bronze Dalek-11', 'Type VIII Bronze Dalek-12', 'Type VIII Bronze Dalek-13', 'Type VIII Bronze Dalek-14', 'Type VIII Bronze Dalek-15', 'Type VIII Bronze Dalek-16', 'Type VIII Bronze Dalek-17', 'Type VIII Bronze Dalek-18', 'Type VIII Bronze Dalek-19', 'Type VIII Bronze Dalek-20', 'Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['Dalek Saucer-1', 'Type IX Dalek Drone (Grey)-2', 'Type IX Dalek Drone (Red)-3', 'Type IX Dalek Scientist-4', 'Type IX Dalek Strategist-5', 'Type IX Supreme Dalek-6', 'Type VIII Black Dalek-7', 'Type VIII Bronze Dalek-8', 'Type VIII Bronze Dalek-9', 'Type VIII Bronze Dalek-10', 'Type VIII Bronze Dalek-11', 'Type VIII Bronze Dalek-12', 'Type VIII Bronze Dalek-13', 'Type VIII Bronze Dalek-14', 'Type VIII Bronze Dalek-15', 'Type VIII Bronze Dalek-16', 'Type VIII Bronze Dalek-17', 'Type VIII Bronze Dalek-18', 'Type VIII Bronze Dalek-19', 'Type VIII Bronze Dalek-20', 'Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['Dalek Saucer-1', 'Type IX Dalek Drone (Grey)-2', 'Type IX Dalek Drone (Red)-3', 'Type IX Dalek Scientist-4', 'Type IX Dalek Strategist-5', 'Type IX Supreme Dalek-6', 'Type VIII Black Dalek-7', 'Type VIII Bronze Dalek-8', 'Type VIII Bronze Dalek-9', 'Type VIII Bronze Dalek-10', 'Type VIII Bronze Dalek-11', 'Type VIII Bronze Dalek-12', 'Type VIII Bronze Dalek-13', 'Type VIII Bronze Dalek-14', 'Type VIII Bronze Dalek-15', 'Type VIII Bronze Dalek-16', 'Type VIII Bronze Dalek-17', 'Type VIII Bronze Dalek-18', 'Type VIII Bronze Dalek-19', 'Type VIII Bronze Dalek-20', 'Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['Dalek Saucer-1', 'Type IX Dalek Drone (Grey)-2', 'Type IX Dalek Drone (Red)-3', 'Type IX Dalek Scientist-4', 'Type IX Dalek Strategist-5', 'Type IX Supreme Dalek-6', 'Type VIII Black Dalek-7', 'Type VIII Bronze Dalek-8', 'Type VIII Bronze Dalek-9', 'Type VIII Bronze Dalek-10', 'Type VIII Bronze Dalek-11', 'Type VIII Bronze Dalek-12', 'Type VIII Bronze Dalek-13', 'Type VIII Bronze Dalek-14', 'Type VIII Bronze Dalek-15', 'Type VIII Bronze Dalek-16', 'Type VIII Bronze Dalek-17', 'Type VIII Bronze Dalek-18', 'Type VIII Bronze Dalek-19', 'Type VIII Bronze Dalek-20', 'Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['Dalek Saucer-1', 'Type IX Dalek Drone (Grey)-2', 'Type IX Dalek Drone (Red)-3', 'Type IX Dalek Scientist-4', 'Type IX Dalek Strategist-5', 'Type IX Supreme Dalek-6', 'Type VIII Black Dalek-7', 'Type VIII Bronze Dalek-8', 'Type VIII Bronze Dalek-9', 'Type VIII Bronze Dalek-10', 'Type VIII Bronze Dalek-11', 'Type VIII Bronze Dalek-12', 'Type VIII Bronze Dalek-13', 'Type VIII Bronze Dalek-14', 'Type VIII Bronze Dalek-15', 'Type VIII Bronze Dalek-16', 'Type VIII Bronze Dalek-17', 'Type VIII Bronze Dalek-18', 'Type VIII Bronze Dalek-19', 'Type VIII Bronze Dalek-20', 'Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['Dalek Saucer-1', 'Type IX Dalek Drone (Grey)-2', 'Type IX Dalek Drone (Red)-3', 'Type IX Dalek Scientist-4', 'Type IX Dalek Strategist-5', 'Type IX Supreme Dalek-6', 'Type VIII Black Dalek-7', 'Type VIII Bronze Dalek-8', 'Type VIII Bronze Dalek-9', 'Type VIII Bronze Dalek-10', 'Type VIII Bronze Dalek-11', 'Type VIII Bronze Dalek-12', 'Type VIII Bronze Dalek-13', 'Type VIII Bronze Dalek-14', 'Type VIII Bronze Dalek-15', 'Type VIII Bronze Dalek-16', 'Type VIII Bronze Dalek-17', 'Type VIII Bronze Dalek-18', 'Type VIII Bronze Dalek-19', 'Type VIII Bronze Dalek-20', 'Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['Dalek Saucer-1', 'Type IX Dalek Drone (Grey)-2', 'Type IX Dalek Drone (Red)-3', 'Type IX Dalek Scientist-4', 'Type IX Dalek Strategist-5', 'Type IX Supreme Dalek-6', 'Type VIII Black Dalek-7', 'Type VIII Bronze Dalek-8', 'Type VIII Bronze Dalek-9', 'Type VIII Bronze Dalek-10', 'Type VIII Bronze Dalek-11', 'Type VIII Bronze Dalek-12', 'Type VIII Bronze Dalek-13', 'Type VIII Bronze Dalek-14', 'Type VIII Bronze Dalek-15', 'Type VIII Bronze Dalek-16', 'Type VIII Bronze Dalek-17', 'Type VIII Bronze Dalek-18', 'Type VIII Bronze Dalek-19', 'Type VIII Bronze Dalek-20', 'Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['Dalek Saucer-1', 'Type IX Dalek Drone (Grey)-2', 'Type IX Dalek Drone (Red)-3', 'Type IX Dalek Scientist-4', 'Type IX Dalek Strategist-5', 'Type IX Supreme Dalek-6', 'Type VIII Black Dalek-7', 'Type VIII Bronze Dalek-8', 'Type VIII Bronze Dalek-9', 'Type VIII Bronze Dalek-10', 'Type VIII Bronze Dalek-11', 'Type VIII Bronze Dalek-12', 'Type VIII Bronze Dalek-13', 'Type VIII Bronze Dalek-14', 'Type VIII Bronze Dalek-15', 'Type VIII Bronze Dalek-16', 'Type VIII Bronze Dalek-17', 'Type VIII Bronze Dalek-18', 'Type VIII Bronze Dalek-19', 'Type VIII Bronze Dalek-20', 'Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['Dalek Saucer-1', 'Type IX Dalek Drone (Grey)-2', 'Type IX Dalek Drone (Red)-3', 'Type IX Dalek Scientist-4', 'Type IX Dalek Strategist-5', 'Type IX Supreme Dalek-6', 'Type VIII Black Dalek-7', 'Type VIII Bronze Dalek-8', 'Type VIII Bronze Dalek-9', 'Type VIII Bronze Dalek-10', 'Type VIII Bronze Dalek-11', 'Type VIII Bronze Dalek-12', 'Type VIII Bronze Dalek-13', 'Type VIII Bronze Dalek-14', 'Type VIII Bronze Dalek-15', 'Type VIII Bronze Dalek-16', 'Type VIII Bronze Dalek-17', 'Type VIII Bronze Dalek-18', 'Type VIII Bronze Dalek-19', 'Type VIII Bronze Dalek-20', 'Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['Dalek Saucer-1', 'Type IX Dalek Drone (Grey)-2', 'Type IX Dalek Drone (Red)-3', 'Type IX Dalek Scientist-4', 'Type IX Dalek Strategist-5', 'Type IX Supreme Dalek-6', 'Type VIII Black Dalek-7', 'Type VIII Bronze Dalek-8', 'Type VIII Bronze Dalek-9', 'Type VIII Bronze Dalek-10', 'Type VIII Bronze Dalek-11', 'Type VIII Bronze Dalek-12', 'Type VIII Bronze Dalek-13', 'Type VIII Bronze Dalek-14', 'Type VIII Bronze Dalek-15', 'Type VIII Bronze Dalek-16', 'Type VIII Bronze Dalek-17', 'Type VIII Bronze Dalek-18', 'Type VIII Bronze Dalek-19', 'Type VIII Bronze Dalek-20', 'Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['Dalek Saucer-1', 'Type IX Dalek Drone (Grey)-2', 'Type IX Dalek Drone (Red)-3', 'Type IX Dalek Scientist-4', 'Type IX Dalek Strategist-5', 'Type IX Supreme Dalek-6', 'Type VIII Black Dalek-7', 'Type VIII Bronze Dalek-8', 'Type VIII Bronze Dalek-9', 'Type VIII Bronze Dalek-10', 'Type VIII Bronze Dalek-11', 'Type VIII Bronze Dalek-12', 'Type VIII Bronze Dalek-13', 'Type VIII Bronze Dalek-14', 'Type VIII Bronze Dalek-15', 'Type VIII Bronze Dalek-16', 'Type VIII Bronze Dalek-17', 'Type VIII Bronze Dalek-18', 'Type VIII Bronze Dalek-19', 'Type VIII Bronze Dalek-20', 'Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2']
+#######>>>0:3:41.507 of 10/January/2023, Tuesday
+#>>>Refreshed Ship List: ['Lunar Voyage', 'Lunar Traveler', 'USS Geronimo', 'USS Full Moon', 'USS Sutherland', 'DalekSaucer 10']
 #>>>Added Player to the Ship List
 ## -------------------- ##
 ####################
-#######>>>22:53:56.360 of 9/January/2023, Monday
-#>>>Refreshed Ship List: ['Dalek Saucer-1', 'Type IX Dalek Drone (Grey)-2', 'Type IX Dalek Drone (Red)-3', 'Type IX Dalek Scientist-4', 'Type IX Dalek Strategist-5', 'Type IX Supreme Dalek-6', 'Type VIII Black Dalek-7', 'Type VIII Bronze Dalek-8', 'Type VIII Bronze Dalek-9', 'Type VIII Bronze Dalek-10', 'Type VIII Bronze Dalek-11', 'Type VIII Bronze Dalek-12', 'Type VIII Bronze Dalek-13', 'Type VIII Bronze Dalek-14', 'Type VIII Bronze Dalek-15', 'Type VIII Bronze Dalek-16', 'Type VIII Bronze Dalek-17', 'Type VIII Bronze Dalek-18', 'Type VIII Bronze Dalek-19', 'Type VIII Bronze Dalek-20', 'Hutet 1', 'Keldon 1', 'Galor 1', 'Galor 2']
+#######>>>0:4:0.390 of 10/January/2023, Tuesday
+#>>>Refreshed Ship List: ['Lunar Voyage', 'Lunar Traveler', 'USS Geronimo', 'USS Full Moon', 'USS Sutherland']
 #>>>Added Player to the Ship List
 ## -------------------- ##
 ####################
-#######>>>22:53:57.903 of 9/January/2023, Monday
-#>>>Refreshed Ship List: ['Dalek Saucer-1', 'Type IX Dalek Drone (Grey)-2', 'Type IX Dalek Drone (Red)-3', 'Type IX Dalek Scientist-4', 'Type IX Dalek Strategist-5', 'Type IX Supreme Dalek-6', 'Type VIII Black Dalek-7', 'Type VIII Bronze Dalek-8', 'Type VIII Bronze Dalek-9', 'Type VIII Bronze Dalek-10', 'Type VIII Bronze Dalek-11', 'Type VIII Bronze Dalek-12', 'Type VIII Bronze Dalek-13', 'Type VIII Bronze Dalek-14', 'Type VIII Bronze Dalek-15', 'Type VIII Bronze Dalek-16', 'Type VIII Bronze Dalek-17', 'Type VIII Bronze Dalek-18', 'Type VIII Bronze Dalek-19', 'Type VIII Bronze Dalek-20', 'Hutet 1', 'Galor 1', 'Galor 2']
+#######>>>0:4:5.039 of 10/January/2023, Tuesday
+#>>>Refreshed Ship List: ['Lunar Voyage', 'Lunar Traveler', 'USS Geronimo', 'USS Full Moon', 'USS Sutherland', 'Enterprise 10', 'Akira 10', 'Akira 11', 'Akira 12', 'Akira 13', 'Akira 14', 'Akira 15', 'Akira 16', 'Akira 17']
+#>>>Added Player to the Ship List
+#>>>Refreshed Ship List: ['Lunar Voyage', 'Lunar Traveler', 'USS Geronimo', 'USS Full Moon', 'USS Sutherland', 'Enterprise 10', 'Akira 10', 'Akira 11', 'Akira 12', 'Akira 13', 'Akira 14', 'Akira 15', 'Akira 16', 'Akira 17']
+#>>>Added Player to the Ship List
+#>>>Refreshed Ship List: ['Lunar Voyage', 'Lunar Traveler', 'USS Geronimo', 'USS Full Moon', 'USS Sutherland', 'Enterprise 10', 'Akira 10', 'Akira 11', 'Akira 12', 'Akira 13', 'Akira 14', 'Akira 15', 'Akira 16', 'Akira 17']
+#>>>Added Player to the Ship List
+#>>>Refreshed Ship List: ['Lunar Voyage', 'Lunar Traveler', 'USS Geronimo', 'USS Full Moon', 'USS Sutherland', 'Enterprise 10', 'Akira 10', 'Akira 11', 'Akira 12', 'Akira 13', 'Akira 14', 'Akira 15', 'Akira 16', 'Akira 17']
+#>>>Added Player to the Ship List
+#>>>Refreshed Ship List: ['Lunar Voyage', 'Lunar Traveler', 'USS Geronimo', 'USS Full Moon', 'USS Sutherland', 'Enterprise 10', 'Akira 10', 'Akira 11', 'Akira 12', 'Akira 13', 'Akira 14', 'Akira 15', 'Akira 16', 'Akira 17']
+#>>>Added Player to the Ship List
+#>>>Refreshed Ship List: ['Lunar Voyage', 'Lunar Traveler', 'USS Geronimo', 'USS Full Moon', 'USS Sutherland', 'Enterprise 10', 'Akira 10', 'Akira 11', 'Akira 12', 'Akira 13', 'Akira 14', 'Akira 15', 'Akira 16', 'Akira 17']
+#>>>Added Player to the Ship List
+#>>>Refreshed Ship List: ['Lunar Voyage', 'Lunar Traveler', 'USS Geronimo', 'USS Full Moon', 'USS Sutherland', 'Enterprise 10', 'Akira 10', 'Akira 11', 'Akira 12', 'Akira 13', 'Akira 14', 'Akira 15', 'Akira 16', 'Akira 17']
+#>>>Added Player to the Ship List
+#>>>Refreshed Ship List: ['Lunar Voyage', 'Lunar Traveler', 'USS Geronimo', 'USS Full Moon', 'USS Sutherland', 'Enterprise 10', 'Akira 10', 'Akira 11', 'Akira 12', 'Akira 13', 'Akira 14', 'Akira 15', 'Akira 16', 'Akira 17']
+#>>>Added Player to the Ship List
+#>>>Refreshed Ship List: ['Lunar Voyage', 'Lunar Traveler', 'USS Geronimo', 'USS Full Moon', 'USS Sutherland', 'Enterprise 10', 'Akira 10', 'Akira 11', 'Akira 12', 'Akira 13', 'Akira 14', 'Akira 15', 'Akira 16', 'Akira 17']
 #>>>Added Player to the Ship List
 ## -------------------- ##
 ####################
-#######>>>22:54:29.253 of 9/January/2023, Monday
-#>>>Refreshed Ship List: ['Dalek Saucer-1', 'Type IX Dalek Drone (Grey)-2', 'Type IX Dalek Drone (Red)-3', 'Type IX Dalek Scientist-4', 'Type IX Dalek Strategist-5', 'Type IX Supreme Dalek-6', 'Type VIII Black Dalek-7', 'Type VIII Bronze Dalek-8', 'Type VIII Bronze Dalek-9', 'Type VIII Bronze Dalek-10', 'Type VIII Bronze Dalek-11', 'Type VIII Bronze Dalek-12', 'Type VIII Bronze Dalek-13', 'Type VIII Bronze Dalek-14', 'Type VIII Bronze Dalek-15', 'Type VIII Bronze Dalek-16', 'Type VIII Bronze Dalek-17', 'Type VIII Bronze Dalek-18', 'Type VIII Bronze Dalek-19', 'Type VIII Bronze Dalek-20', 'Hutet 1', 'Galor 1']
+#######>>>0:4:5.742 of 10/January/2023, Tuesday
+#>>>Refreshed Ship List: ['Lunar Voyage', 'Lunar Traveler', 'USS Geronimo', 'USS Full Moon', 'USS Sutherland', 'Enterprise 10', 'Akira 10', 'Akira 11', 'Akira 12', 'Akira 13', 'Akira 14', 'Akira 15', 'Akira 16', 'Akira 17']
 #>>>Added Player to the Ship List
 ## -------------------- ##
 ####################
-#######>>>22:54:30.882 of 9/January/2023, Monday
-#>>>Refreshed Ship List: ['Dalek Saucer-1', 'Type IX Dalek Drone (Grey)-2', 'Type IX Dalek Drone (Red)-3', 'Type IX Dalek Scientist-4', 'Type IX Dalek Strategist-5', 'Type IX Supreme Dalek-6', 'Type VIII Black Dalek-7', 'Type VIII Bronze Dalek-8', 'Type VIII Bronze Dalek-9', 'Type VIII Bronze Dalek-10', 'Type VIII Bronze Dalek-11', 'Type VIII Bronze Dalek-12', 'Type VIII Bronze Dalek-13', 'Type VIII Bronze Dalek-14', 'Type VIII Bronze Dalek-15', 'Type VIII Bronze Dalek-16', 'Type VIII Bronze Dalek-17', 'Type VIII Bronze Dalek-18', 'Type VIII Bronze Dalek-19', 'Type VIII Bronze Dalek-20', 'Hutet 1']
+#######>>>0:4:23.573 of 10/January/2023, Tuesday
+#>>>Refreshed Ship List: ['Lunar Voyage', 'Lunar Traveler', 'USS Geronimo', 'USS Full Moon', 'USS Sutherland', 'Enterprise 10', 'Akira 10', 'Akira 11', 'Akira 12', 'Akira 13', 'Akira 14', 'Akira 15', 'Akira 16', 'Akira 17', 'SCIFIKINGOdyssey 17', 'SCIFIKINGOdyssey 18', 'SCIFIKINGOdyssey 19', 'GalaxyX 19']
+#>>>Added Player to the Ship List
+#>>>Refreshed Ship List: ['Lunar Voyage', 'Lunar Traveler', 'USS Geronimo', 'USS Full Moon', 'USS Sutherland', 'Enterprise 10', 'Akira 10', 'Akira 11', 'Akira 12', 'Akira 13', 'Akira 14', 'Akira 15', 'Akira 16', 'Akira 17', 'SCIFIKINGOdyssey 17', 'SCIFIKINGOdyssey 18', 'SCIFIKINGOdyssey 19', 'GalaxyX 19']
+#>>>Added Player to the Ship List
+#>>>Refreshed Ship List: ['Lunar Voyage', 'Lunar Traveler', 'USS Geronimo', 'USS Full Moon', 'USS Sutherland', 'Enterprise 10', 'Akira 10', 'Akira 11', 'Akira 12', 'Akira 13', 'Akira 14', 'Akira 15', 'Akira 16', 'Akira 17', 'SCIFIKINGOdyssey 17', 'SCIFIKINGOdyssey 18', 'SCIFIKINGOdyssey 19', 'GalaxyX 19']
+#>>>Added Player to the Ship List
+#>>>Refreshed Ship List: ['Lunar Voyage', 'Lunar Traveler', 'USS Geronimo', 'USS Full Moon', 'USS Sutherland', 'Enterprise 10', 'Akira 10', 'Akira 11', 'Akira 12', 'Akira 13', 'Akira 14', 'Akira 15', 'Akira 16', 'Akira 17', 'SCIFIKINGOdyssey 17', 'SCIFIKINGOdyssey 18', 'SCIFIKINGOdyssey 19', 'GalaxyX 19']
 #>>>Added Player to the Ship List
 ## -------------------- ##
 ####################
-#######>>>22:54:49.143 of 9/January/2023, Monday
-#>>>Refreshed Ship List: ['Dalek Saucer-1', 'Type IX Dalek Drone (Grey)-2', 'Type IX Dalek Drone (Red)-3', 'Type IX Dalek Scientist-4', 'Type IX Dalek Strategist-5', 'Type IX Supreme Dalek-6', 'Type VIII Black Dalek-7', 'Type VIII Bronze Dalek-8', 'Type VIII Bronze Dalek-9', 'Type VIII Bronze Dalek-10', 'Type VIII Bronze Dalek-11', 'Type VIII Bronze Dalek-12', 'Type VIII Bronze Dalek-13', 'Type VIII Bronze Dalek-14', 'Type VIII Bronze Dalek-15', 'Type VIII Bronze Dalek-16', 'Type VIII Bronze Dalek-17', 'Type VIII Bronze Dalek-18', 'Type VIII Bronze Dalek-19', 'Type VIII Bronze Dalek-20', 'Hutet 1']
+#######>>>0:5:7.605 of 10/January/2023, Tuesday
+#>>>Refreshed Ship List: ['Lunar Voyage', 'Lunar Traveler', 'USS Geronimo', 'USS Full Moon', 'USS Sutherland', 'Enterprise 10', 'Akira 10', 'Akira 11', 'Akira 12', 'Akira 13', 'Akira 14', 'Akira 15', 'Akira 16', 'Akira 17', 'SCIFIKINGOdyssey 17', 'SCIFIKINGOdyssey 18', 'SCIFIKINGOdyssey 19', 'GalaxyX 19', 'DalekSaucer 19']
 #>>>Added Player to the Ship List
 ## -------------------- ##
 ####################
-#######>>>22:54:50.065 of 9/January/2023, Monday
-#>>>Creating Grav Wells - Set: Systems.DS9FXCardassia.DS9FXCardassia1
-#>>>Creating Grav Wells: [<Cardassia Sun GravityWell_5i7q7621NZ3P>, <SunStr SunStreak GravityWell_DFkJke2cd1UH>, <Cardassia 1 GravityWell_5V6Vj7Pnm85D>, <Cardassia 2 GravityWell_Z8YxS9L1nbgT>, <Cardassia 3 GravityWell_UNW0g3g57Bkz>, <Cardassia 4 GravityWell_j1x03Zb4t24q>, <Cardassia 5 GravityWell_HnTrLmAuttEL>, <Cardassia Prime GravityWell_39b6ykqViYb0>, <Cardassia 7 GravityWell_VOu2f33iB22T>, <Cardassia 8 GravityWell_CUvbMb51x8iT>]
-#>>>Planets/Suns List: ['Cardassia Sun', 'SunStr SunStreak', 'Cardassia 1', 'Cardassia 2', 'Cardassia 3', 'Cardassia 4', 'Cardassia 5', 'Cardassia Prime', 'Cardassia 7', 'Cardassia 8']
-#>>>Refreshed Ship List: ['Type IX Dalek Drone (Grey)-2', 'Type IX Dalek Drone (Red)-3', 'Type IX Dalek Scientist-4', 'Type IX Dalek Strategist-5', 'Type IX Supreme Dalek-6', 'Type VIII Black Dalek-7', 'Type VIII Bronze Dalek-8', 'Type VIII Bronze Dalek-9', 'Type VIII Bronze Dalek-10', 'Type VIII Bronze Dalek-11', 'Type VIII Bronze Dalek-12', 'Type VIII Bronze Dalek-13', 'Type VIII Bronze Dalek-14', 'Type VIII Bronze Dalek-15', 'Type VIII Bronze Dalek-16', 'Type VIII Bronze Dalek-17', 'Type VIII Bronze Dalek-18', 'Type VIII Bronze Dalek-19', 'Type VIII Bronze Dalek-20', 'Hutet 1', 'Player']
-#>>>Refreshed Ship List: ['Player', 'Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2']
-#>>>Refreshed Ship List: ['Player', 'Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2']
-#>>>Refreshed Ship List: ['Player', 'Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2']
-#>>>Refreshed Ship List: ['Player', 'Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2']
-#>>>Refreshed Ship List: ['Player', 'Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2']
+#######>>>0:5:41.505 of 10/January/2023, Tuesday
+#>>>Refreshed Ship List: ['Lunar Voyage', 'Lunar Traveler', 'USS Geronimo', 'USS Full Moon', 'USS Sutherland', 'Enterprise 10', 'Akira 10', 'Akira 11', 'Akira 12', 'Akira 13', 'Akira 15', 'Akira 16', 'Akira 17', 'SCIFIKINGOdyssey 17', 'SCIFIKINGOdyssey 18', 'SCIFIKINGOdyssey 19', 'GalaxyX 19', 'DalekSaucer 19']
+#>>>Added Player to the Ship List
 ## -------------------- ##
 ####################
-#######>>>22:55:2.852 of 9/January/2023, Monday
-#>>>Creating Grav Wells - Set: Systems.DS9FXCardassia.DS9FXCardassia1
-#>>>Creating Grav Wells: [<Cardassia Sun GravityWell_55Zo25dSj291>, <SunStr SunStreak GravityWell_FYIMvkS3O141>, <Cardassia 1 GravityWell_6T5u43esl9D5>, <Cardassia 2 GravityWell_iOQSciy605wp>, <Cardassia 3 GravityWell_FpI64n1Wz3A8>, <Cardassia 4 GravityWell_54OTldQ9KygO>, <Cardassia 5 GravityWell_bQs3qjw48Jns>, <Cardassia Prime GravityWell_hknBqz2d7qZ4>, <Cardassia 7 GravityWell_1LRPk15z48nX>, <Cardassia 8 GravityWell_p2hgYlWahfQ7>]
-#>>>Planets/Suns List: ['Cardassia Sun', 'SunStr SunStreak', 'Cardassia 1', 'Cardassia 2', 'Cardassia 3', 'Cardassia 4', 'Cardassia 5', 'Cardassia Prime', 'Cardassia 7', 'Cardassia 8']
-#>>>Refreshed Ship List: ['Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2', 'Player', 'Dalek Saucer-1', 'Type IX Dalek Drone (Grey)-2', 'Type IX Dalek Drone (Red)-3', 'Type IX Dalek Scientist-4', 'Type IX Dalek Strategist-5', 'Type IX Supreme Dalek-6', 'Type VIII Black Dalek-7', 'Type VIII Bronze Dalek-8', 'Type VIII Bronze Dalek-9', 'Type VIII Bronze Dalek-10', 'Type VIII Bronze Dalek-11', 'Type VIII Bronze Dalek-12', 'Type VIII Bronze Dalek-13', 'Type VIII Bronze Dalek-14', 'Type VIII Bronze Dalek-15', 'Type VIII Bronze Dalek-16', 'Type VIII Bronze Dalek-17', 'Type VIII Bronze Dalek-18', 'Type VIII Bronze Dalek-19', 'Type VIII Bronze Dalek-20']
-#>>>Refreshed Ship List: ['Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2', 'Player', 'Dalek Saucer-1', 'Type IX Dalek Drone (Grey)-2', 'Type IX Dalek Drone (Red)-3', 'Type IX Dalek Scientist-4', 'Type IX Dalek Strategist-5', 'Type IX Supreme Dalek-6', 'Type VIII Black Dalek-7', 'Type VIII Bronze Dalek-8', 'Type VIII Bronze Dalek-9', 'Type VIII Bronze Dalek-10', 'Type VIII Bronze Dalek-11', 'Type VIII Bronze Dalek-12', 'Type VIII Bronze Dalek-13', 'Type VIII Bronze Dalek-14', 'Type VIII Bronze Dalek-15', 'Type VIII Bronze Dalek-16', 'Type VIII Bronze Dalek-17', 'Type VIII Bronze Dalek-18', 'Type VIII Bronze Dalek-19', 'Type VIII Bronze Dalek-20']
-#>>>Refreshed Ship List: ['Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2', 'Player', 'Dalek Saucer-1', 'Type IX Dalek Drone (Grey)-2', 'Type IX Dalek Drone (Red)-3', 'Type IX Dalek Scientist-4', 'Type IX Dalek Strategist-5', 'Type IX Supreme Dalek-6', 'Type VIII Black Dalek-7', 'Type VIII Bronze Dalek-8', 'Type VIII Bronze Dalek-9', 'Type VIII Bronze Dalek-10', 'Type VIII Bronze Dalek-11', 'Type VIII Bronze Dalek-12', 'Type VIII Bronze Dalek-13', 'Type VIII Bronze Dalek-14', 'Type VIII Bronze Dalek-15', 'Type VIII Bronze Dalek-16', 'Type VIII Bronze Dalek-17', 'Type VIII Bronze Dalek-18', 'Type VIII Bronze Dalek-19', 'Type VIII Bronze Dalek-20']
-#>>>Refreshed Ship List: ['Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2', 'Player', 'Dalek Saucer-1', 'Type IX Dalek Drone (Grey)-2', 'Type IX Dalek Drone (Red)-3', 'Type IX Dalek Scientist-4', 'Type IX Dalek Strategist-5', 'Type IX Supreme Dalek-6', 'Type VIII Black Dalek-7', 'Type VIII Bronze Dalek-8', 'Type VIII Bronze Dalek-9', 'Type VIII Bronze Dalek-10', 'Type VIII Bronze Dalek-11', 'Type VIII Bronze Dalek-12', 'Type VIII Bronze Dalek-13', 'Type VIII Bronze Dalek-14', 'Type VIII Bronze Dalek-15', 'Type VIII Bronze Dalek-16', 'Type VIII Bronze Dalek-17', 'Type VIII Bronze Dalek-18', 'Type VIII Bronze Dalek-19', 'Type VIII Bronze Dalek-20']
-#>>>Refreshed Ship List: ['Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2', 'Player', 'Dalek Saucer-1', 'Type IX Dalek Drone (Grey)-2', 'Type IX Dalek Drone (Red)-3', 'Type IX Dalek Scientist-4', 'Type IX Dalek Strategist-5', 'Type IX Supreme Dalek-6', 'Type VIII Black Dalek-7', 'Type VIII Bronze Dalek-8', 'Type VIII Bronze Dalek-9', 'Type VIII Bronze Dalek-10', 'Type VIII Bronze Dalek-11', 'Type VIII Bronze Dalek-12', 'Type VIII Bronze Dalek-13', 'Type VIII Bronze Dalek-14', 'Type VIII Bronze Dalek-15', 'Type VIII Bronze Dalek-16', 'Type VIII Bronze Dalek-17', 'Type VIII Bronze Dalek-18', 'Type VIII Bronze Dalek-19', 'Type VIII Bronze Dalek-20']
-#>>>Refreshed Ship List: ['Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2', 'Player', 'Dalek Saucer-1', 'Type IX Dalek Drone (Grey)-2', 'Type IX Dalek Drone (Red)-3', 'Type IX Dalek Scientist-4', 'Type IX Dalek Strategist-5', 'Type IX Supreme Dalek-6', 'Type VIII Black Dalek-7', 'Type VIII Bronze Dalek-8', 'Type VIII Bronze Dalek-9', 'Type VIII Bronze Dalek-10', 'Type VIII Bronze Dalek-11', 'Type VIII Bronze Dalek-12', 'Type VIII Bronze Dalek-13', 'Type VIII Bronze Dalek-14', 'Type VIII Bronze Dalek-15', 'Type VIII Bronze Dalek-16', 'Type VIII Bronze Dalek-17', 'Type VIII Bronze Dalek-18', 'Type VIII Bronze Dalek-19', 'Type VIII Bronze Dalek-20']
-#>>>Refreshed Ship List: ['Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2', 'Player', 'Dalek Saucer-1', 'Type IX Dalek Drone (Grey)-2', 'Type IX Dalek Drone (Red)-3', 'Type IX Dalek Scientist-4', 'Type IX Dalek Strategist-5', 'Type IX Supreme Dalek-6', 'Type VIII Black Dalek-7', 'Type VIII Bronze Dalek-8', 'Type VIII Bronze Dalek-9', 'Type VIII Bronze Dalek-10', 'Type VIII Bronze Dalek-11', 'Type VIII Bronze Dalek-12', 'Type VIII Bronze Dalek-13', 'Type VIII Bronze Dalek-14', 'Type VIII Bronze Dalek-15', 'Type VIII Bronze Dalek-16', 'Type VIII Bronze Dalek-17', 'Type VIII Bronze Dalek-18', 'Type VIII Bronze Dalek-19', 'Type VIII Bronze Dalek-20']
-#>>>Refreshed Ship List: ['Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2', 'Player', 'Dalek Saucer-1', 'Type IX Dalek Drone (Grey)-2', 'Type IX Dalek Drone (Red)-3', 'Type IX Dalek Scientist-4', 'Type IX Dalek Strategist-5', 'Type IX Supreme Dalek-6', 'Type VIII Black Dalek-7', 'Type VIII Bronze Dalek-8', 'Type VIII Bronze Dalek-9', 'Type VIII Bronze Dalek-10', 'Type VIII Bronze Dalek-11', 'Type VIII Bronze Dalek-12', 'Type VIII Bronze Dalek-13', 'Type VIII Bronze Dalek-14', 'Type VIII Bronze Dalek-15', 'Type VIII Bronze Dalek-16', 'Type VIII Bronze Dalek-17', 'Type VIII Bronze Dalek-18', 'Type VIII Bronze Dalek-19', 'Type VIII Bronze Dalek-20']
-#>>>Refreshed Ship List: ['Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2', 'Player', 'Dalek Saucer-1', 'Type IX Dalek Drone (Grey)-2', 'Type IX Dalek Drone (Red)-3', 'Type IX Dalek Scientist-4', 'Type IX Dalek Strategist-5', 'Type IX Supreme Dalek-6', 'Type VIII Black Dalek-7', 'Type VIII Bronze Dalek-8', 'Type VIII Bronze Dalek-9', 'Type VIII Bronze Dalek-10', 'Type VIII Bronze Dalek-11', 'Type VIII Bronze Dalek-12', 'Type VIII Bronze Dalek-13', 'Type VIII Bronze Dalek-14', 'Type VIII Bronze Dalek-15', 'Type VIII Bronze Dalek-16', 'Type VIII Bronze Dalek-17', 'Type VIII Bronze Dalek-18', 'Type VIII Bronze Dalek-19', 'Type VIII Bronze Dalek-20']
-#>>>Refreshed Ship List: ['Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2', 'Player', 'Dalek Saucer-1', 'Type IX Dalek Drone (Grey)-2', 'Type IX Dalek Drone (Red)-3', 'Type IX Dalek Scientist-4', 'Type IX Dalek Strategist-5', 'Type IX Supreme Dalek-6', 'Type VIII Black Dalek-7', 'Type VIII Bronze Dalek-8', 'Type VIII Bronze Dalek-9', 'Type VIII Bronze Dalek-10', 'Type VIII Bronze Dalek-11', 'Type VIII Bronze Dalek-12', 'Type VIII Bronze Dalek-13', 'Type VIII Bronze Dalek-14', 'Type VIII Bronze Dalek-15', 'Type VIII Bronze Dalek-16', 'Type VIII Bronze Dalek-17', 'Type VIII Bronze Dalek-18', 'Type VIII Bronze Dalek-19', 'Type VIII Bronze Dalek-20']
-#>>>Refreshed Ship List: ['Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2', 'Player', 'Dalek Saucer-1', 'Type IX Dalek Drone (Grey)-2', 'Type IX Dalek Drone (Red)-3', 'Type IX Dalek Scientist-4', 'Type IX Dalek Strategist-5', 'Type IX Supreme Dalek-6', 'Type VIII Black Dalek-7', 'Type VIII Bronze Dalek-8', 'Type VIII Bronze Dalek-9', 'Type VIII Bronze Dalek-10', 'Type VIII Bronze Dalek-11', 'Type VIII Bronze Dalek-12', 'Type VIII Bronze Dalek-13', 'Type VIII Bronze Dalek-14', 'Type VIII Bronze Dalek-15', 'Type VIII Bronze Dalek-16', 'Type VIII Bronze Dalek-17', 'Type VIII Bronze Dalek-18', 'Type VIII Bronze Dalek-19', 'Type VIII Bronze Dalek-20']
-#>>>Refreshed Ship List: ['Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2', 'Player', 'Dalek Saucer-1', 'Type IX Dalek Drone (Grey)-2', 'Type IX Dalek Drone (Red)-3', 'Type IX Dalek Scientist-4', 'Type IX Dalek Strategist-5', 'Type IX Supreme Dalek-6', 'Type VIII Black Dalek-7', 'Type VIII Bronze Dalek-8', 'Type VIII Bronze Dalek-9', 'Type VIII Bronze Dalek-10', 'Type VIII Bronze Dalek-11', 'Type VIII Bronze Dalek-12', 'Type VIII Bronze Dalek-13', 'Type VIII Bronze Dalek-14', 'Type VIII Bronze Dalek-15', 'Type VIII Bronze Dalek-16', 'Type VIII Bronze Dalek-17', 'Type VIII Bronze Dalek-18', 'Type VIII Bronze Dalek-19', 'Type VIII Bronze Dalek-20']
-#>>>Refreshed Ship List: ['Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2', 'Player', 'Dalek Saucer-1', 'Type IX Dalek Drone (Grey)-2', 'Type IX Dalek Drone (Red)-3', 'Type IX Dalek Scientist-4', 'Type IX Dalek Strategist-5', 'Type IX Supreme Dalek-6', 'Type VIII Black Dalek-7', 'Type VIII Bronze Dalek-8', 'Type VIII Bronze Dalek-9', 'Type VIII Bronze Dalek-10', 'Type VIII Bronze Dalek-11', 'Type VIII Bronze Dalek-12', 'Type VIII Bronze Dalek-13', 'Type VIII Bronze Dalek-14', 'Type VIII Bronze Dalek-15', 'Type VIII Bronze Dalek-16', 'Type VIII Bronze Dalek-17', 'Type VIII Bronze Dalek-18', 'Type VIII Bronze Dalek-19', 'Type VIII Bronze Dalek-20']
-#>>>Refreshed Ship List: ['Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2', 'Player', 'Dalek Saucer-1', 'Type IX Dalek Drone (Grey)-2', 'Type IX Dalek Drone (Red)-3', 'Type IX Dalek Scientist-4', 'Type IX Dalek Strategist-5', 'Type IX Supreme Dalek-6', 'Type VIII Black Dalek-7', 'Type VIII Bronze Dalek-8', 'Type VIII Bronze Dalek-9', 'Type VIII Bronze Dalek-10', 'Type VIII Bronze Dalek-11', 'Type VIII Bronze Dalek-12', 'Type VIII Bronze Dalek-13', 'Type VIII Bronze Dalek-14', 'Type VIII Bronze Dalek-15', 'Type VIII Bronze Dalek-16', 'Type VIII Bronze Dalek-17', 'Type VIII Bronze Dalek-18', 'Type VIII Bronze Dalek-19', 'Type VIII Bronze Dalek-20']
-#>>>Refreshed Ship List: ['Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2', 'Player', 'Dalek Saucer-1', 'Type IX Dalek Drone (Grey)-2', 'Type IX Dalek Drone (Red)-3', 'Type IX Dalek Scientist-4', 'Type IX Dalek Strategist-5', 'Type IX Supreme Dalek-6', 'Type VIII Black Dalek-7', 'Type VIII Bronze Dalek-8', 'Type VIII Bronze Dalek-9', 'Type VIII Bronze Dalek-10', 'Type VIII Bronze Dalek-11', 'Type VIII Bronze Dalek-12', 'Type VIII Bronze Dalek-13', 'Type VIII Bronze Dalek-14', 'Type VIII Bronze Dalek-15', 'Type VIII Bronze Dalek-16', 'Type VIII Bronze Dalek-17', 'Type VIII Bronze Dalek-18', 'Type VIII Bronze Dalek-19', 'Type VIII Bronze Dalek-20']
-#>>>Refreshed Ship List: ['Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2', 'Player', 'Dalek Saucer-1', 'Type IX Dalek Drone (Grey)-2', 'Type IX Dalek Drone (Red)-3', 'Type IX Dalek Scientist-4', 'Type IX Dalek Strategist-5', 'Type IX Supreme Dalek-6', 'Type VIII Black Dalek-7', 'Type VIII Bronze Dalek-8', 'Type VIII Bronze Dalek-9', 'Type VIII Bronze Dalek-10', 'Type VIII Bronze Dalek-11', 'Type VIII Bronze Dalek-12', 'Type VIII Bronze Dalek-13', 'Type VIII Bronze Dalek-14', 'Type VIII Bronze Dalek-15', 'Type VIII Bronze Dalek-16', 'Type VIII Bronze Dalek-17', 'Type VIII Bronze Dalek-18', 'Type VIII Bronze Dalek-19', 'Type VIII Bronze Dalek-20']
-#>>>Refreshed Ship List: ['Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2', 'Player', 'Dalek Saucer-1', 'Type IX Dalek Drone (Grey)-2', 'Type IX Dalek Drone (Red)-3', 'Type IX Dalek Scientist-4', 'Type IX Dalek Strategist-5', 'Type IX Supreme Dalek-6', 'Type VIII Black Dalek-7', 'Type VIII Bronze Dalek-8', 'Type VIII Bronze Dalek-9', 'Type VIII Bronze Dalek-10', 'Type VIII Bronze Dalek-11', 'Type VIII Bronze Dalek-12', 'Type VIII Bronze Dalek-13', 'Type VIII Bronze Dalek-14', 'Type VIII Bronze Dalek-15', 'Type VIII Bronze Dalek-16', 'Type VIII Bronze Dalek-17', 'Type VIII Bronze Dalek-18', 'Type VIII Bronze Dalek-19', 'Type VIII Bronze Dalek-20']
-#>>>Refreshed Ship List: ['Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2', 'Player', 'Dalek Saucer-1', 'Type IX Dalek Drone (Grey)-2', 'Type IX Dalek Drone (Red)-3', 'Type IX Dalek Scientist-4', 'Type IX Dalek Strategist-5', 'Type IX Supreme Dalek-6', 'Type VIII Black Dalek-7', 'Type VIII Bronze Dalek-8', 'Type VIII Bronze Dalek-9', 'Type VIII Bronze Dalek-10', 'Type VIII Bronze Dalek-11', 'Type VIII Bronze Dalek-12', 'Type VIII Bronze Dalek-13', 'Type VIII Bronze Dalek-14', 'Type VIII Bronze Dalek-15', 'Type VIII Bronze Dalek-16', 'Type VIII Bronze Dalek-17', 'Type VIII Bronze Dalek-18', 'Type VIII Bronze Dalek-19', 'Type VIII Bronze Dalek-20']
-#>>>Refreshed Ship List: ['Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2', 'Player', 'Dalek Saucer-1', 'Type IX Dalek Drone (Grey)-2', 'Type IX Dalek Drone (Red)-3', 'Type IX Dalek Scientist-4', 'Type IX Dalek Strategist-5', 'Type IX Supreme Dalek-6', 'Type VIII Black Dalek-7', 'Type VIII Bronze Dalek-8', 'Type VIII Bronze Dalek-9', 'Type VIII Bronze Dalek-10', 'Type VIII Bronze Dalek-11', 'Type VIII Bronze Dalek-12', 'Type VIII Bronze Dalek-13', 'Type VIII Bronze Dalek-14', 'Type VIII Bronze Dalek-15', 'Type VIII Bronze Dalek-16', 'Type VIII Bronze Dalek-17', 'Type VIII Bronze Dalek-18', 'Type VIII Bronze Dalek-19', 'Type VIII Bronze Dalek-20']
-#>>>Refreshed Ship List: ['Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2', 'Player', 'Dalek Saucer-1', 'Type IX Dalek Drone (Grey)-2', 'Type IX Dalek Drone (Red)-3', 'Type IX Dalek Scientist-4', 'Type IX Dalek Strategist-5', 'Type IX Supreme Dalek-6', 'Type VIII Black Dalek-7', 'Type VIII Bronze Dalek-8', 'Type VIII Bronze Dalek-9', 'Type VIII Bronze Dalek-10', 'Type VIII Bronze Dalek-11', 'Type VIII Bronze Dalek-12', 'Type VIII Bronze Dalek-13', 'Type VIII Bronze Dalek-14', 'Type VIII Bronze Dalek-15', 'Type VIII Bronze Dalek-16', 'Type VIII Bronze Dalek-17', 'Type VIII Bronze Dalek-18', 'Type VIII Bronze Dalek-19', 'Type VIII Bronze Dalek-20']
-#>>>Refreshed Ship List: ['Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2', 'Player', 'Dalek Saucer-1', 'Type IX Dalek Drone (Grey)-2', 'Type IX Dalek Drone (Red)-3', 'Type IX Dalek Scientist-4', 'Type IX Dalek Strategist-5', 'Type IX Supreme Dalek-6', 'Type VIII Black Dalek-7', 'Type VIII Bronze Dalek-8', 'Type VIII Bronze Dalek-9', 'Type VIII Bronze Dalek-10', 'Type VIII Bronze Dalek-11', 'Type VIII Bronze Dalek-12', 'Type VIII Bronze Dalek-13', 'Type VIII Bronze Dalek-14', 'Type VIII Bronze Dalek-15', 'Type VIII Bronze Dalek-16', 'Type VIII Bronze Dalek-17', 'Type VIII Bronze Dalek-18', 'Type VIII Bronze Dalek-19', 'Type VIII Bronze Dalek-20']
+#######>>>0:5:42.256 of 10/January/2023, Tuesday
+#>>>Refreshed Ship List: ['Lunar Voyage', 'Lunar Traveler', 'USS Geronimo', 'USS Full Moon', 'USS Sutherland', 'Enterprise 10', 'Akira 10', 'Akira 11', 'Akira 12', 'Akira 13', 'Akira 15', 'Akira 16', 'Akira 17', 'SCIFIKINGOdyssey 17', 'SCIFIKINGOdyssey 18', 'SCIFIKINGOdyssey 19', 'GalaxyX 19', 'DalekSaucer 19']
+#>>>Added Player to the Ship List
 ## -------------------- ##
 ####################
-#######>>>22:55:22.294 of 9/January/2023, Monday
-#>>>Refreshed Ship List: ['Hutet 1', 'Keldon 1', 'Galor 1', 'Galor 2', 'Player', 'Dalek Saucer-1', 'Type IX Dalek Drone (Grey)-2', 'Type IX Dalek Drone (Red)-3', 'Type IX Dalek Scientist-4', 'Type IX Dalek Strategist-5', 'Type IX Supreme Dalek-6', 'Type VIII Black Dalek-7', 'Type VIII Bronze Dalek-8', 'Type VIII Bronze Dalek-9', 'Type VIII Bronze Dalek-10', 'Type VIII Bronze Dalek-11', 'Type VIII Bronze Dalek-12', 'Type VIII Bronze Dalek-13', 'Type VIII Bronze Dalek-14', 'Type VIII Bronze Dalek-15', 'Type VIII Bronze Dalek-16', 'Type VIII Bronze Dalek-17', 'Type VIII Bronze Dalek-18', 'Type VIII Bronze Dalek-19', 'Type VIII Bronze Dalek-20']
+#######>>>0:5:43.389 of 10/January/2023, Tuesday
+#>>>Refreshed Ship List: ['Lunar Voyage', 'Lunar Traveler', 'USS Geronimo', 'USS Full Moon', 'USS Sutherland', 'Enterprise 10', 'Akira 10', 'Akira 11', 'Akira 12', 'Akira 13', 'Akira 15', 'Akira 16', 'Akira 17', 'SCIFIKINGOdyssey 17', 'SCIFIKINGOdyssey 18', 'SCIFIKINGOdyssey 19', 'GalaxyX 19', 'DalekSaucer 19']
+#>>>Added Player to the Ship List
 ## -------------------- ##
 ####################
-#######>>>22:55:33.115 of 9/January/2023, Monday
-#>>>Creating Grav Wells - Set: Systems.DS9FXCardassia.DS9FXCardassia1
-#>>>Creating Grav Wells: [<Cardassia Sun GravityWell_PHx64sna4Nur>, <SunStr SunStreak GravityWell_00iXfspKSmne>, <Cardassia 1 GravityWell_DpbT67H0xaGj>, <Cardassia 2 GravityWell_flZh3Dh0e2tT>, <Cardassia 3 GravityWell_sLA19Y7k07FT>, <Cardassia 4 GravityWell_1RIoAxDP96oz>, <Cardassia 5 GravityWell_DciL30ip52MT>, <Cardassia Prime GravityWell_Kf203TR8bgUd>, <Cardassia 7 GravityWell_m2oWaTuQ7Cka>, <Cardassia 8 GravityWell_u092sdJqzXce>]
-#>>>Planets/Suns List: ['Cardassia Sun', 'SunStr SunStreak', 'Cardassia 1', 'Cardassia 2', 'Cardassia 3', 'Cardassia 4', 'Cardassia 5', 'Cardassia Prime', 'Cardassia 7', 'Cardassia 8']
-#>>>Refreshed Ship List: ['Hutet 1', 'Keldon 1', 'Galor 1', 'Galor 2', 'Dalek Saucer-1', 'Type IX Dalek Drone (Grey)-2', 'Type IX Dalek Drone (Red)-3', 'Type IX Dalek Scientist-4', 'Type IX Dalek Strategist-5', 'Type IX Supreme Dalek-6', 'Type VIII Black Dalek-7', 'Type VIII Bronze Dalek-8', 'Type VIII Bronze Dalek-9', 'Type VIII Bronze Dalek-10', 'Type VIII Bronze Dalek-11', 'Type VIII Bronze Dalek-12', 'Type VIII Bronze Dalek-13', 'Type VIII Bronze Dalek-14', 'Type VIII Bronze Dalek-15', 'Type VIII Bronze Dalek-16', 'Type VIII Bronze Dalek-17', 'Type VIII Bronze Dalek-18', 'Type VIII Bronze Dalek-19', 'Type VIII Bronze Dalek-20', 'Player']
-#>>>Refreshed Ship List: ['Player', 'Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2']
-#>>>Refreshed Ship List: ['Player', 'Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2']
-#>>>Refreshed Ship List: ['Player', 'Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2']
-#>>>Refreshed Ship List: ['Player', 'Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2']
-#>>>Refreshed Ship List: ['Player', 'Hutet 1', 'Keldon 1', 'Keldon 2', 'Galor 1', 'Galor 2']
-########################################
-# 22:55:38.814 of 9/January/2023, Monday
-#Ending of log dump - User is quiting the game
-########################################
+#######>>>0:5:50.239 of 10/January/2023, Tuesday
+#>>>Refreshed Ship List: ['Lunar Voyage', 'Lunar Traveler', 'USS Geronimo', 'USS Full Moon', 'USS Sutherland', 'Enterprise 10', 'Akira 10', 'Akira 12', 'Akira 13', 'Akira 15', 'Akira 16', 'Akira 17', 'SCIFIKINGOdyssey 17', 'SCIFIKINGOdyssey 18', 'SCIFIKINGOdyssey 19', 'DalekSaucer 19']
+#>>>Added Player to the Ship List
+## -------------------- ##
+####################
+#######>>>0:6:6.732 of 10/January/2023, Tuesday
+#>>>Refreshed Ship List: ['Lunar Voyage', 'Lunar Traveler', 'USS Geronimo', 'USS Full Moon', 'USS Sutherland', 'Enterprise 10', 'Akira 10', 'Akira 12', 'Akira 13', 'Akira 16', 'Akira 17', 'SCIFIKINGOdyssey 17', 'SCIFIKINGOdyssey 18', 'SCIFIKINGOdyssey 19', 'DalekSaucer 19']
+#>>>Added Player to the Ship List
+## -------------------- ##
+####################
+#######>>>0:6:8.694 of 10/January/2023, Tuesday
+#>>>Refreshed Ship List: ['Lunar Voyage', 'Lunar Traveler', 'USS Geronimo', 'USS Full Moon', 'USS Sutherland', 'Enterprise 10', 'Akira 10', 'Akira 12', 'Akira 13', 'Akira 16', 'Akira 17', 'SCIFIKINGOdyssey 17', 'SCIFIKINGOdyssey 18', 'SCIFIKINGOdyssey 19', 'DalekSaucer 19']
+#>>>Added Player to the Ship List
+## -------------------- ##
+####################
+#######>>>0:6:23.242 of 10/January/2023, Tuesday
+#>>>Refreshed Ship List: ['Lunar Voyage', 'Lunar Traveler', 'USS Geronimo', 'USS Full Moon', 'USS Sutherland', 'Enterprise 10', 'Akira 10', 'Akira 12', 'Akira 16', 'Akira 17', 'SCIFIKINGOdyssey 17', 'SCIFIKINGOdyssey 18', 'SCIFIKINGOdyssey 19', 'DalekSaucer 19']
+#>>>Added Player to the Ship List
+## -------------------- ##
+####################
+#######>>>0:6:23.771 of 10/January/2023, Tuesday
+#>>>Refreshed Ship List: ['Lunar Voyage', 'Lunar Traveler', 'USS Geronimo', 'USS Full Moon', 'USS Sutherland', 'Enterprise 10', 'Akira 12', 'Akira 16', 'Akira 17', 'SCIFIKINGOdyssey 17', 'SCIFIKINGOdyssey 18', 'SCIFIKINGOdyssey 19', 'DalekSaucer 19']
+#>>>Added Player to the Ship List
+## -------------------- ##
+####################
+#######>>>0:6:32.055 of 10/January/2023, Tuesday
+#>>>Refreshed Ship List: ['Lunar Voyage', 'Lunar Traveler', 'USS Geronimo', 'USS Full Moon', 'USS Sutherland', 'Enterprise 10', 'Akira 12', 'Akira 17', 'SCIFIKINGOdyssey 17', 'SCIFIKINGOdyssey 18', 'SCIFIKINGOdyssey 19', 'DalekSaucer 19']
+#>>>Added Player to the Ship List
+## -------------------- ##
+####################
+#######>>>0:6:33.217 of 10/January/2023, Tuesday
+#>>>Refreshed Ship List: ['Lunar Voyage', 'Lunar Traveler', 'USS Geronimo', 'USS Full Moon', 'USS Sutherland', 'Enterprise 10', 'Akira 12', 'Akira 17', 'SCIFIKINGOdyssey 17', 'SCIFIKINGOdyssey 19', 'DalekSaucer 19']
+#>>>Added Player to the Ship List
+## -------------------- ##
+####################
+#######>>>0:6:38.055 of 10/January/2023, Tuesday
+#>>>Refreshed Ship List: ['Lunar Voyage', 'Lunar Traveler', 'USS Geronimo', 'USS Full Moon', 'USS Sutherland', 'Enterprise 10', 'Akira 17', 'SCIFIKINGOdyssey 17', 'SCIFIKINGOdyssey 19', 'DalekSaucer 19']
+#>>>Added Player to the Ship List
+## -------------------- ##
+####################
+#######>>>0:6:43.871 of 10/January/2023, Tuesday
+#>>>Refreshed Ship List: ['Lunar Voyage', 'Lunar Traveler', 'USS Geronimo', 'USS Full Moon', 'USS Sutherland', 'Enterprise 10', 'SCIFIKINGOdyssey 17', 'SCIFIKINGOdyssey 19', 'DalekSaucer 19']
+#>>>Added Player to the Ship List
+## -------------------- ##
+####################
+#######>>>0:6:53.904 of 10/January/2023, Tuesday
+#>>>Refreshed Ship List: ['Lunar Voyage', 'Lunar Traveler', 'USS Geronimo', 'USS Full Moon', 'USS Sutherland', 'Enterprise 10', 'SCIFIKINGOdyssey 17', 'DalekSaucer 19']
+#>>>Added Player to the Ship List
+## -------------------- ##
+####################
+#######>>>0:7:6.526 of 10/January/2023, Tuesday
+#>>>Refreshed Ship List: ['Lunar Voyage', 'Lunar Traveler', 'USS Geronimo', 'USS Full Moon', 'USS Sutherland', 'SCIFIKINGOdyssey 17', 'DalekSaucer 19']
+#>>>Added Player to the Ship List
+## -------------------- ##
+####################
+#######>>>0:7:10.054 of 10/January/2023, Tuesday
+#>>>Refreshed Ship List: ['Lunar Voyage', 'Lunar Traveler', 'USS Geronimo', 'USS Full Moon', 'USS Sutherland', 'DalekSaucer 19']
+#>>>Added Player to the Ship List

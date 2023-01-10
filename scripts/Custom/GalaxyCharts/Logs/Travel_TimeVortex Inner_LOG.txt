@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <TimeVortex Inner Travel Logger LogCreator_D3lJ6Q8cm57G>
-#This log file was created on: 22:48:42.687 of 9/January/2023, Monday
+#This is the dump of the LogCreator: <TimeVortex Inner Travel Logger LogCreator_6622R5MB0khb>
+#This log file was created on: 23:59:58.779 of 9/January/2023, Monday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>22:48:42.687 of 9/January/2023, Monday
+#######>>>23:59:58.779 of 9/January/2023, Monday
 #>>>Initialized TimeVortex Inner Travel logger
-#>>>SELF = <TimeVortex Inner(108558) Travel_rW9WeZ7uarI8>
+#>>>SELF = <TimeVortex Inner(578831) Travel_g687JhO6rXCZ>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -21,7 +21,3 @@ Updating Travelling Procedures...
 #>>>Chaser base class initialization complete.
 #>>>Target Ship = NONE
 #>>>Chaser pre-emptive Refresher Initialization
-########################################
-# 22:55:38.814 of 9/January/2023, Monday
-#Ending of log dump - User is quiting the game
-########################################

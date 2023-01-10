@@ -1,57 +1,18 @@
-#This is the dump of the LogCreator: <Main Galaxy Logger LogCreator_uVOON77N8L4f>
-#This log file was created on: 22:47:3.0 of 9/January/2023, Monday
+#This is the dump of the LogCreator: <Main Galaxy Logger LogCreator_vbWZKRpMnrFd>
+#This log file was created on: 23:48:47.0 of 9/January/2023, Monday
 ########################################
 ## -------------------- ##
 ####################
-#######>>>22:47:3.0 of 9/January/2023, Monday
+#######>>>23:48:47.0 of 9/January/2023, Monday
 #>>>Initialized Main Galaxy logger
 ## -------------------- ##
 ####################
-#######>>>22:52:36.183 of 9/January/2023, Monday
+#######>>>0:3:53.856 of 10/January/2023, Tuesday
 #>>>Calculating Time To Travel...
-#>>> -Was Set: DS9FXCardassia1
-#>>> -GoingTo Set: Belaruz4
-#>>> -Was Region: <DS9FX CardassiaRegion_gn0uGWNspPvn>
-#>>> -Going Region: <BelaruzRegion_0JZYL0029jLb>
-#>>> -Distance: 38.2001304626 lightyears
-#>>> -Speed (arg): 8776.38183594
-#>>> -Time to reach: 3.44740438461 seconds
-## -------------------- ##
-####################
-#######>>>22:52:37.042 of 9/January/2023, Monday
-#>>>Calculating Time To Travel...
-#>>> -Was Set: DS9FXCardassia1
-#>>> -GoingTo Set: Belaruz4
-#>>> -Was Region: <DS9FX CardassiaRegion_gn0uGWNspPvn>
-#>>> -Going Region: <BelaruzRegion_0JZYL0029jLb>
-#>>> -Distance: 38.2001304626 lightyears
-#>>> -Speed (arg): 8776.38183594
-#>>> -Time to reach: 3.44740438461 seconds
-#>>>Calculating Time To Travel...
-#>>> -Was Set: DS9FXCardassia1
-#>>> -GoingTo Set: Belaruz4
-#>>> -Was Region: <DS9FX CardassiaRegion_gn0uGWNspPvn>
-#>>> -Going Region: <BelaruzRegion_0JZYL0029jLb>
-#>>> -Distance: 38.2001304626 lightyears
-#>>> -Speed (arg): 8776.38183594
-#>>> -Time to reach: 3.44740438461 seconds
-#>>>Calculating Time To Travel...
-#>>> -Was Set: DS9FXCardassia1
-#>>> -GoingTo Set: Belaruz4
-#>>> -Was Region: <DS9FX CardassiaRegion_gn0uGWNspPvn>
-#>>> -Going Region: <BelaruzRegion_0JZYL0029jLb>
-#>>> -Distance: 38.2001304626 lightyears
-#>>> -Speed (arg): 4388.19091797
-#>>> -Time to reach: 6.89480876923 seconds
-#>>>Calculating Time To Travel...
-#>>> -Was Set: DS9FXCardassia1
-#>>> -GoingTo Set: Belaruz4
-#>>> -Was Region: <DS9FX CardassiaRegion_gn0uGWNspPvn>
-#>>> -Going Region: <BelaruzRegion_0JZYL0029jLb>
-#>>> -Distance: 38.2001304626 lightyears
-#>>> -Speed (arg): 4388.19091797
-#>>> -Time to reach: 6.89480876923 seconds
-########################################
-# 22:55:38.814 of 9/January/2023, Monday
-#Ending of log dump - User is quiting the game
-########################################
+#>>> -Was Set: Sol3
+#>>> -GoingTo Set: Starbase12
+#>>> -Was Region: <SolRegion_97aAi6uyndDu>
+#>>> -Going Region: <Starbase 12Region_QmTj6c7hu3iQ>
+#>>> -Distance: 106.420158386 lightyears
+#>>> -Speed (arg): 15840.2314453
+#>>> -Time to reach: 5.32114696503 seconds

@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Attack Ship-1 Travel Logger[2] LogCreator_75svN9lGRXMl>
-#This log file was created on: 21:45:26.843 of 9/January/2023, Monday
+#This is the dump of the LogCreator: <Attack Ship-1 Travel Logger[2] LogCreator_E1o4S2kow4O4>
+#This log file was created on: 23:15:14.847 of 9/January/2023, Monday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,81 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>21:45:26.843 of 9/January/2023, Monday
+#######>>>23:15:14.847 of 9/January/2023, Monday
 #>>>Initialized Attack Ship-1 Travel logger
-#>>>SELF = <Attack Ship-1(1780576) Travel_isY5hc6xxcmn>
-#>>>Initial Travel Type: Warp
-#>>>Updating Variables...
-#>>> -Is AI in Player in route CHECKING: Player Travel OK
-#>>>Destination set as None
-#>>>Set Exit Placement Name as None
-#>>>Set Exit Point to None
-#>>>Chaser base class initialization complete.
-#>>>Target Ship = NONE
-#>>>Chaser pre-emptive Refresher Initialization
-## -------------------- ##
-####################
-#######>>>21:45:28.098 of 9/January/2023, Monday
-#>>>Updated Target Ship = Player
-## -------------------- ##
-####################
-#######>>>21:45:34.691 of 9/January/2023, Monday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>21:45:35.187 of 9/January/2023, Monday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>21:45:35.687 of 9/January/2023, Monday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>21:45:36.187 of 9/January/2023, Monday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>21:45:36.438 of 9/January/2023, Monday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>21:45:36.970 of 9/January/2023, Monday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>21:45:37.437 of 9/January/2023, Monday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>21:45:37.691 of 9/January/2023, Monday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>21:45:37.970 of 9/January/2023, Monday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>21:45:38.208 of 9/January/2023, Monday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>21:45:38.437 of 9/January/2023, Monday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>21:46:57.119 of 9/January/2023, Monday
-#>>>Updated Target Ship = Type IX Dalek Drone (Grey)-5
-< ======== Dynamic TS ========= >
-Updating Travelling Procedures...
- -Update Loop MARK START
-<DTSC> -Time left:
- -Update Loop MARK COMPLETED
-< ========== END DTS ========== >
-## -------------------- ##
-####################
-#######>>>21:47:20.019 of 9/January/2023, Monday
-#>>>Initialized Attack Ship-1 Travel logger
-#>>>SELF = <Attack Ship-1(1836185) Travel_nYG7OE9592p7>
+#>>>SELF = <Attack Ship-1(1905117) Travel_2433M7cLOoJ2>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -96,35 +24,51 @@ Updating Travelling Procedures...
 #>>>Updated Target Ship = Player
 ## -------------------- ##
 ####################
-#######>>>21:47:27.955 of 9/January/2023, Monday
-#>>>Updated Target Ship = Type IX Dalek Drone (Red)-6
+#######>>>23:15:22.584 of 9/January/2023, Monday
+#>>>Updated Target Ship = Type IX Dalek Strategist-2
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>21:47:28.186 of 9/January/2023, Monday
+#######>>>23:15:22.950 of 9/January/2023, Monday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>21:47:28.735 of 9/January/2023, Monday
+#######>>>23:15:23.647 of 9/January/2023, Monday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>21:47:29.336 of 9/January/2023, Monday
+#######>>>23:15:23.913 of 9/January/2023, Monday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>21:47:29.619 of 9/January/2023, Monday
+#######>>>23:15:24.147 of 9/January/2023, Monday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>21:47:29.752 of 9/January/2023, Monday
+#######>>>23:15:24.513 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:15:24.763 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:15:25.263 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:15:25.663 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:15:25.896 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:15:26.013 of 9/January/2023, Monday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:15:58.696 of 9/January/2023, Monday
 #>>>Stopping Refresh Handler
 #>>>Deleting...
-########################################
-# 21:49:37.100 of 9/January/2023, Monday
-#Ending of log dump - User is quiting the game
-########################################
-########################################
-# 21:49:37.100 of 9/January/2023, Monday
-#Ending of log dump - User is quiting the game
-########################################
