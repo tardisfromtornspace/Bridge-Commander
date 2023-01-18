@@ -164,6 +164,19 @@ StarEngine.SetRadius(0.250000)
 StarEngine.SetEngineType(StarEngine.EP_IMPULSE)
 App.g_kModelPropertyManager.RegisterLocalTemplate(StarEngine)
 #################################################
+JumpspaceDriveB = App.HullProperty_Create("TimeVortex Drive 1")
+
+JumpspaceDriveB.SetMaxCondition(960000.000000)
+JumpspaceDriveB.SetCritical(0)
+JumpspaceDriveB.SetTargetable(0)
+JumpspaceDriveB.SetPrimary(0)
+JumpspaceDriveB.SetPosition(0.000000, 0.000000, 0.000000)
+JumpspaceDriveB.SetPosition2D(75.000000, 40.000000)
+JumpspaceDriveB.SetRepairComplexity(3.000000)
+JumpspaceDriveB.SetDisabledPercentage(0.750000)
+JumpspaceDriveB.SetRadius(0.200000)
+App.g_kModelPropertyManager.RegisterLocalTemplate(JumpspaceDriveB)
+#################################################
 Hyperdrive1 = App.HullProperty_Create("Hyperdrive 1")
 
 Hyperdrive1.SetMaxCondition(70000.000000)
@@ -267,7 +280,7 @@ DalekSaucer = App.ShipProperty_Create("DalekSaucer")
 DalekSaucer.SetGenus(1)
 DalekSaucer.SetSpecies(301)
 DalekSaucer.SetMass(70000.000000)
-DalekSaucer.SetRotationalInertia(50000000.000000)
+DalekSaucer.SetRotationalInertia(500000000.000000)
 DalekSaucer.SetShipName("DalekSaucer")
 DalekSaucer.SetModelFilename("data/Models/Ships/DalekSaucer/DalekSaucer.nif")
 DalekSaucer.SetDamageResolution(0.000100)
@@ -1767,6 +1780,9 @@ def LoadPropertySet(pObj):
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
 	prop = App.g_kModelPropertyManager.FindByName("Slipstream Drive 1", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	if (prop != None):
+		pObj.AddToSet("Scene Root", prop)
+	prop = App.g_kModelPropertyManager.FindByName("TimeVortex Drive 1", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
 	prop = App.g_kModelPropertyManager.FindByName("Warp Engines", App.TGModelPropertyManager.LOCAL_TEMPLATES)

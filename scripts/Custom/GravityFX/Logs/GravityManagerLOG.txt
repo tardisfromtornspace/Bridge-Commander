@@ -1,13 +1,13 @@
-#This is the dump of the LogCreator: <Gravity Manager LogCreator_70CEu3A4clGT>
-#This log file was created on: 23:48:47.0 of 9/January/2023, Monday
+#This is the dump of the LogCreator: <Gravity Manager LogCreator_xYsS6g0S34Je>
+#This log file was created on: 16:40:7.0 of 18/January/2023, Wednesday
 ########################################
 ## -------------------- ##
 ####################
-#######>>>23:48:47.0 of 9/January/2023, Monday
-#>>>Initialized GravityManager_2EQ0O42TEWWW logger
+#######>>>16:40:7.0 of 18/January/2023, Wednesday
+#>>>Initialized GravityManager_ZAqUK5z7mKwN logger
 ## -------------------- ##
 ####################
-#######>>>23:49:7.632 of 9/January/2023, Monday
+#######>>>16:40:18.198 of 18/January/2023, Wednesday
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
@@ -17,347 +17,60 @@
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_2Yz61N129Ko8>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_RP0KDm44inT0>]
 #>>>Planets/Suns List: ['Belaruz 4']
 #>>>Refreshed Ship List: ['Player']
-#>>>Updated radius for grav well <Belaruz 4 GravityWell_2Yz61N129Ko8>, radius is now 1607.70178223
+#>>>Updated radius for grav well <Belaruz 4 GravityWell_RP0KDm44inT0>, radius is now 1609.11376953
 ## -------------------- ##
 ####################
-#######>>>23:50:17.564 of 9/January/2023, Monday
+#######>>>16:40:53.809 of 18/January/2023, Wednesday
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_8j0386pqwRFO>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_PzZ69ay6i8sU>]
 #>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player', 'NX-01 Enterprise-1', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12']
-#>>>Refreshed Ship List: ['Player', 'NX-01 Enterprise-1', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12']
-#>>>Refreshed Ship List: ['Player', 'NX-01 Enterprise-1', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12']
-#>>>Refreshed Ship List: ['Player', 'NX-01 Enterprise-1', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12']
-#>>>Refreshed Ship List: ['Player', 'NX-01 Enterprise-1', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12']
-#>>>Refreshed Ship List: ['Player', 'NX-01 Enterprise-1', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12']
-#>>>Refreshed Ship List: ['Player', 'NX-01 Enterprise-1', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12']
-#>>>Refreshed Ship List: ['Player', 'NX-01 Enterprise-1', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12']
-#>>>Refreshed Ship List: ['Player', 'NX-01 Enterprise-1', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12']
-#>>>Refreshed Ship List: ['Player', 'NX-01 Enterprise-1', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12']
-#>>>Refreshed Ship List: ['Player', 'NX-01 Enterprise-1', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12']
-#>>>Refreshed Ship List: ['Player', 'NX-01 Enterprise-1', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12']
-#>>>Refreshed Ship List: ['Player', 'NX-01 Enterprise-1', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12']
+#>>>Refreshed Ship List: ['Player', 'Type 89 TARDIS-1']
+#>>>Refreshed Ship List: ['Player', 'Type 89 TARDIS-1']
 ## -------------------- ##
 ####################
-#######>>>23:52:59.881 of 9/January/2023, Monday
-#>>>Refreshed Ship List: ['Player', 'NX-01 Enterprise-1', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12', 'Escape Pod 1', 'Escape Pod 2', 'Escape Pod 3', 'Escape Pod 4']
-#>>>Refreshed Ship List: ['Player', 'NX-01 Enterprise-1', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12', 'Escape Pod 1', 'Escape Pod 2', 'Escape Pod 3', 'Escape Pod 4']
-#>>>Refreshed Ship List: ['Player', 'NX-01 Enterprise-1', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12', 'Escape Pod 1', 'Escape Pod 2', 'Escape Pod 3', 'Escape Pod 4']
-#>>>Refreshed Ship List: ['Player', 'NX-01 Enterprise-1', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12', 'Escape Pod 1', 'Escape Pod 2', 'Escape Pod 3', 'Escape Pod 4']
+#######>>>16:40:57.083 of 18/January/2023, Wednesday
+#>>>Refreshed Ship List: ['Player', 'Type 89 TARDIS-1', 'Player_Starboard Wing', 'Player_Upper Wing', 'Player_Port Wing', 'Player_Lower Wing']
+#>>>Refreshed Ship List: ['Player', 'Type 89 TARDIS-1', 'Player_Starboard Wing', 'Player_Upper Wing', 'Player_Port Wing', 'Player_Lower Wing']
+#>>>Refreshed Ship List: ['Player', 'Type 89 TARDIS-1', 'Player_Starboard Wing', 'Player_Upper Wing', 'Player_Port Wing', 'Player_Lower Wing']
+#>>>Refreshed Ship List: ['Player', 'Type 89 TARDIS-1', 'Player_Starboard Wing', 'Player_Upper Wing', 'Player_Port Wing', 'Player_Lower Wing']
 ## -------------------- ##
 ####################
-#######>>>23:53:31.232 of 9/January/2023, Monday
-#>>>Refreshed Ship List: ['Player', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12', 'Escape Pod 2', 'Escape Pod 3', 'Escape Pod 4']
-## -------------------- ##
-####################
-#######>>>23:53:39.252 of 9/January/2023, Monday
-#>>>Refreshed Ship List: ['Player', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12', 'Escape Pod 3', 'Escape Pod 4']
-## -------------------- ##
-####################
-#######>>>23:53:50.182 of 9/January/2023, Monday
-#>>>Refreshed Ship List: ['Player', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12', 'Escape Pod 4']
-## -------------------- ##
-####################
-#######>>>23:53:58.282 of 9/January/2023, Monday
-#>>>Refreshed Ship List: ['Player', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12']
-## -------------------- ##
-####################
-#######>>>23:54:26.351 of 9/January/2023, Monday
-#>>>Refreshed Ship List: ['Player', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12', 'MinbariNial 1', 'MinbariNial 2', 'MinbariNial 3', 'MinbariNial 4', 'MinbariNial 5', 'MinbariNial 6', 'MinbariNial 7', 'MinbariNial 8']
-#>>>Refreshed Ship List: ['Player', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12', 'MinbariNial 1', 'MinbariNial 2', 'MinbariNial 3', 'MinbariNial 4', 'MinbariNial 5', 'MinbariNial 6', 'MinbariNial 7', 'MinbariNial 8']
-#>>>Refreshed Ship List: ['Player', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12', 'MinbariNial 1', 'MinbariNial 2', 'MinbariNial 3', 'MinbariNial 4', 'MinbariNial 5', 'MinbariNial 6', 'MinbariNial 7', 'MinbariNial 8']
-#>>>Refreshed Ship List: ['Player', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12', 'MinbariNial 1', 'MinbariNial 2', 'MinbariNial 3', 'MinbariNial 4', 'MinbariNial 5', 'MinbariNial 6', 'MinbariNial 7', 'MinbariNial 8']
-#>>>Refreshed Ship List: ['Player', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12', 'MinbariNial 1', 'MinbariNial 2', 'MinbariNial 3', 'MinbariNial 4', 'MinbariNial 5', 'MinbariNial 6', 'MinbariNial 7', 'MinbariNial 8']
-#>>>Refreshed Ship List: ['Player', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12', 'MinbariNial 1', 'MinbariNial 2', 'MinbariNial 3', 'MinbariNial 4', 'MinbariNial 5', 'MinbariNial 6', 'MinbariNial 7', 'MinbariNial 8']
-#>>>Refreshed Ship List: ['Player', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12', 'MinbariNial 1', 'MinbariNial 2', 'MinbariNial 3', 'MinbariNial 4', 'MinbariNial 5', 'MinbariNial 6', 'MinbariNial 7', 'MinbariNial 8']
-#>>>Refreshed Ship List: ['Player', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12', 'MinbariNial 1', 'MinbariNial 2', 'MinbariNial 3', 'MinbariNial 4', 'MinbariNial 5', 'MinbariNial 6', 'MinbariNial 7', 'MinbariNial 8']
-## -------------------- ##
-####################
-#######>>>23:54:44.764 of 9/January/2023, Monday
-#>>>Refreshed Ship List: ['Player', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12', 'MinbariNial 2', 'MinbariNial 3', 'MinbariNial 4', 'MinbariNial 5', 'MinbariNial 6', 'MinbariNial 7', 'MinbariNial 8']
-## -------------------- ##
-####################
-#######>>>23:55:3.014 of 9/January/2023, Monday
-#>>>Refreshed Ship List: ['Player', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12', 'MinbariNial 2', 'MinbariNial 3', 'MinbariNial 4', 'MinbariNial 5', 'MinbariNial 6', 'MinbariNial 8']
-## -------------------- ##
-####################
-#######>>>23:55:11.401 of 9/January/2023, Monday
-#>>>Refreshed Ship List: ['Player', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12', 'MinbariNial 2', 'MinbariNial 3', 'MinbariNial 4', 'MinbariNial 5', 'MinbariNial 6']
-## -------------------- ##
-####################
-#######>>>23:55:17.250 of 9/January/2023, Monday
-#>>>Refreshed Ship List: ['Player', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12', 'MinbariNial 2', 'MinbariNial 3', 'MinbariNial 5', 'MinbariNial 6']
-## -------------------- ##
-####################
-#######>>>23:55:30.747 of 9/January/2023, Monday
-#>>>Refreshed Ship List: ['Player', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12', 'MinbariNial 2', 'MinbariNial 3', 'MinbariNial 5']
-## -------------------- ##
-####################
-#######>>>23:55:35.364 of 9/January/2023, Monday
-#>>>Refreshed Ship List: ['Player', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12', 'MinbariNial 2', 'MinbariNial 3', 'MinbariNial 5', 'MinbariSharlin 8', 'MinbariSharlin 9', 'MinbariSharlin 10']
-#>>>Refreshed Ship List: ['Player', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12', 'MinbariNial 2', 'MinbariNial 3', 'MinbariNial 5', 'MinbariSharlin 8', 'MinbariSharlin 9', 'MinbariSharlin 10']
-#>>>Refreshed Ship List: ['Player', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12', 'MinbariNial 2', 'MinbariNial 3', 'MinbariNial 5', 'MinbariSharlin 8', 'MinbariSharlin 9', 'MinbariSharlin 10']
-## -------------------- ##
-####################
-#######>>>23:56:44.779 of 9/January/2023, Monday
-#>>>Refreshed Ship List: ['Player', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12', 'MinbariNial 2', 'MinbariNial 3', 'MinbariNial 5', 'MinbariSharlin 8', 'MinbariSharlin 9', 'MinbariSharlin 10', 'MinbariNial - 2']
-## -------------------- ##
-####################
-#######>>>23:57:56.147 of 9/January/2023, Monday
-#>>>Refreshed Ship List: ['Player', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12', 'MinbariNial 2', 'MinbariNial 3', 'MinbariNial 5', 'MinbariSharlin 8', 'MinbariSharlin 9', 'MinbariSharlin 10', 'MinbariNial - 2']
-## -------------------- ##
-####################
-#######>>>23:58:30.497 of 9/January/2023, Monday
-#>>>Refreshed Ship List: ['Player', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12', 'MinbariNial 2', 'MinbariNial 3', 'MinbariNial 5', 'MinbariSharlin 8', 'MinbariSharlin 9', 'MinbariSharlin 10', 'MinbariNial - 2']
-## -------------------- ##
-####################
-#######>>>23:58:32.969 of 9/January/2023, Monday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_SXOr33PjW0N9>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12', 'MinbariNial 2', 'MinbariNial 3', 'MinbariNial 5', 'MinbariSharlin 8', 'MinbariSharlin 9', 'MinbariSharlin 10', 'MinbariNial - 2', 'Player']
-## -------------------- ##
-####################
-#######>>>23:58:42.344 of 9/January/2023, Monday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_G8E9S2537szV>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player', 'NX-01 Enterprise-1', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12']
-#>>>Refreshed Ship List: ['Player', 'NX-01 Enterprise-1', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12']
-#>>>Refreshed Ship List: ['Player', 'NX-01 Enterprise-1', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12']
-#>>>Refreshed Ship List: ['Player', 'NX-01 Enterprise-1', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12']
-#>>>Refreshed Ship List: ['Player', 'NX-01 Enterprise-1', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12']
-#>>>Refreshed Ship List: ['Player', 'NX-01 Enterprise-1', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12']
-#>>>Refreshed Ship List: ['Player', 'NX-01 Enterprise-1', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12']
-#>>>Refreshed Ship List: ['Player', 'NX-01 Enterprise-1', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12']
-#>>>Refreshed Ship List: ['Player', 'NX-01 Enterprise-1', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12']
-#>>>Refreshed Ship List: ['Player', 'NX-01 Enterprise-1', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12']
-#>>>Refreshed Ship List: ['Player', 'NX-01 Enterprise-1', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12']
-#>>>Refreshed Ship List: ['Player', 'NX-01 Enterprise-1', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12']
-#>>>Refreshed Ship List: ['Player', 'NX-01 Enterprise-1', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12']
-## -------------------- ##
-####################
-#######>>>23:59:5.128 of 9/January/2023, Monday
-#>>>Refreshed Ship List: ['Player', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12']
-## -------------------- ##
-####################
-#######>>>23:59:13.880 of 9/January/2023, Monday
-#>>>Refreshed Ship List: ['Player', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12']
-## -------------------- ##
-####################
-#######>>>23:59:33.747 of 9/January/2023, Monday
-#>>>Refreshed Ship List: ['Player', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12']
-## -------------------- ##
-####################
-#######>>>23:59:47.964 of 9/January/2023, Monday
-#>>>Refreshed Ship List: ['Player', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12']
-## -------------------- ##
-####################
-#######>>>23:59:48.951 of 9/January/2023, Monday
-#>>>Refreshed Ship List: ['Player', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12']
-## -------------------- ##
-####################
-#######>>>23:59:51.147 of 9/January/2023, Monday
-#>>>Refreshed Ship List: ['Player', 'Type IX Dalek Strategist-2', 'Type IX Dalek Strategist-3', 'Type IX Dalek Strategist-4', 'Type IX Dalek Strategist-5', 'Type IX Dalek Strategist-6', 'Type IX Dalek Strategist-7', 'Type IX Dalek Strategist-8', 'Type IX Dalek Strategist-9', 'Type IX Dalek Strategist-10', 'Type IX Dalek Strategist-11', 'Type IX Dalek Strategist-12']
-## -------------------- ##
-####################
-#######>>>23:59:58.779 of 9/January/2023, Monday
-#>>>Creating Grav Wells - Set: Systems.TimeVortexTunnel.TimeVortexTunnel1
-#>>>Creating Grav Wells: []
-#>>>Planets/Suns List: []
-#>>>Refreshed Ship List: ['TimeVortex Outer', 'TimeVortex Inner']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['TimeVortex Outer', 'TimeVortex Inner']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['TimeVortex Outer', 'TimeVortex Inner']
-#>>>Added Player to the Ship List
-## -------------------- ##
-####################
-#######>>>0:0:19.010 of 10/January/2023, Tuesday
-#>>>Creating Grav Wells - Set: Systems.Sirius_B.Sirius_B2
-#>>>Creating Grav Wells: [<Sirius A GravityWell_e628YzESFHec>, <Sirius B GravityWell_3lmIX5GZDk8W>]
-#>>>Planets/Suns List: ['Sirius A', 'Sirius B']
-#>>>Refreshed Ship List: []
-#>>>Added Player to the Ship List
-## -------------------- ##
-####################
-#######>>>0:1:32.125 of 10/January/2023, Tuesday
-#>>>Creating Grav Wells - Set: Systems.TimeVortexTunnel.TimeVortexTunnel1
-#>>>Creating Grav Wells: []
-#>>>Planets/Suns List: []
-#>>>Refreshed Ship List: ['TimeVortex Outer', 'TimeVortex Inner']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['TimeVortex Outer', 'TimeVortex Inner']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['TimeVortex Outer', 'TimeVortex Inner']
-#>>>Added Player to the Ship List
-## -------------------- ##
-####################
-#######>>>0:1:52.012 of 10/January/2023, Tuesday
-#>>>Creating Grav Wells - Set: Systems.Sol.Sol9
-#>>>Creating Grav Wells: [<Sun GravityWell_8njZbNuG615L>, <Pluto GravityWell_7vb0ZS8HE6i3>, <Charon GravityWell_pknWB7MZxzr9>]
-#>>>Planets/Suns List: ['Sun', 'Pluto', 'Charon']
-#>>>Refreshed Ship List: []
-#>>>Added Player to the Ship List
-## -------------------- ##
-####################
-#######>>>0:2:24.508 of 10/January/2023, Tuesday
-#>>>Creating Grav Wells - Set: Systems.TimeVortexTunnel.TimeVortexTunnel1
-#>>>Creating Grav Wells: []
-#>>>Planets/Suns List: []
-#>>>Refreshed Ship List: ['TimeVortex Outer', 'TimeVortex Inner']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['TimeVortex Outer', 'TimeVortex Inner']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['TimeVortex Outer', 'TimeVortex Inner']
-#>>>Added Player to the Ship List
-## -------------------- ##
-####################
-#######>>>0:2:33.567 of 10/January/2023, Tuesday
-#>>>Refreshed Ship List: ['Lunar Voyage', 'Lunar Traveler', 'USS Geronimo', 'USS Full Moon', 'USS Sutherland']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['Lunar Voyage', 'Lunar Traveler', 'USS Geronimo', 'USS Full Moon', 'USS Sutherland']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['Lunar Voyage', 'Lunar Traveler', 'USS Geronimo', 'USS Full Moon', 'USS Sutherland']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['Lunar Voyage', 'Lunar Traveler', 'USS Geronimo', 'USS Full Moon', 'USS Sutherland']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['Lunar Voyage', 'Lunar Traveler', 'USS Geronimo', 'USS Full Moon', 'USS Sutherland']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['Lunar Voyage', 'Lunar Traveler', 'USS Geronimo', 'USS Full Moon', 'USS Sutherland']
-#>>>Added Player to the Ship List
-#>>>Creating Grav Wells - Set: Systems.Sol.Sol3
-#>>>Creating Grav Wells: [<Sun GravityWell_IK0H8P32JT4J>, <Earth GravityWell_Gjff503MPslF>, <Moon GravityWell_565t8JGmi64Z>]
-#>>>Planets/Suns List: ['Sun', 'Earth', 'Moon']
-#>>>Refreshed Ship List: ['Lunar Voyage', 'Lunar Traveler', 'USS Geronimo', 'USS Full Moon', 'USS Sutherland']
-#>>>Added Player to the Ship List
-## -------------------- ##
-####################
-#######>>>0:3:41.507 of 10/January/2023, Tuesday
-#>>>Refreshed Ship List: ['Lunar Voyage', 'Lunar Traveler', 'USS Geronimo', 'USS Full Moon', 'USS Sutherland', 'DalekSaucer 10']
-#>>>Added Player to the Ship List
-## -------------------- ##
-####################
-#######>>>0:4:0.390 of 10/January/2023, Tuesday
-#>>>Refreshed Ship List: ['Lunar Voyage', 'Lunar Traveler', 'USS Geronimo', 'USS Full Moon', 'USS Sutherland']
-#>>>Added Player to the Ship List
-## -------------------- ##
-####################
-#######>>>0:4:5.039 of 10/January/2023, Tuesday
-#>>>Refreshed Ship List: ['Lunar Voyage', 'Lunar Traveler', 'USS Geronimo', 'USS Full Moon', 'USS Sutherland', 'Enterprise 10', 'Akira 10', 'Akira 11', 'Akira 12', 'Akira 13', 'Akira 14', 'Akira 15', 'Akira 16', 'Akira 17']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['Lunar Voyage', 'Lunar Traveler', 'USS Geronimo', 'USS Full Moon', 'USS Sutherland', 'Enterprise 10', 'Akira 10', 'Akira 11', 'Akira 12', 'Akira 13', 'Akira 14', 'Akira 15', 'Akira 16', 'Akira 17']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['Lunar Voyage', 'Lunar Traveler', 'USS Geronimo', 'USS Full Moon', 'USS Sutherland', 'Enterprise 10', 'Akira 10', 'Akira 11', 'Akira 12', 'Akira 13', 'Akira 14', 'Akira 15', 'Akira 16', 'Akira 17']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['Lunar Voyage', 'Lunar Traveler', 'USS Geronimo', 'USS Full Moon', 'USS Sutherland', 'Enterprise 10', 'Akira 10', 'Akira 11', 'Akira 12', 'Akira 13', 'Akira 14', 'Akira 15', 'Akira 16', 'Akira 17']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['Lunar Voyage', 'Lunar Traveler', 'USS Geronimo', 'USS Full Moon', 'USS Sutherland', 'Enterprise 10', 'Akira 10', 'Akira 11', 'Akira 12', 'Akira 13', 'Akira 14', 'Akira 15', 'Akira 16', 'Akira 17']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['Lunar Voyage', 'Lunar Traveler', 'USS Geronimo', 'USS Full Moon', 'USS Sutherland', 'Enterprise 10', 'Akira 10', 'Akira 11', 'Akira 12', 'Akira 13', 'Akira 14', 'Akira 15', 'Akira 16', 'Akira 17']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['Lunar Voyage', 'Lunar Traveler', 'USS Geronimo', 'USS Full Moon', 'USS Sutherland', 'Enterprise 10', 'Akira 10', 'Akira 11', 'Akira 12', 'Akira 13', 'Akira 14', 'Akira 15', 'Akira 16', 'Akira 17']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['Lunar Voyage', 'Lunar Traveler', 'USS Geronimo', 'USS Full Moon', 'USS Sutherland', 'Enterprise 10', 'Akira 10', 'Akira 11', 'Akira 12', 'Akira 13', 'Akira 14', 'Akira 15', 'Akira 16', 'Akira 17']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['Lunar Voyage', 'Lunar Traveler', 'USS Geronimo', 'USS Full Moon', 'USS Sutherland', 'Enterprise 10', 'Akira 10', 'Akira 11', 'Akira 12', 'Akira 13', 'Akira 14', 'Akira 15', 'Akira 16', 'Akira 17']
-#>>>Added Player to the Ship List
-## -------------------- ##
-####################
-#######>>>0:4:5.742 of 10/January/2023, Tuesday
-#>>>Refreshed Ship List: ['Lunar Voyage', 'Lunar Traveler', 'USS Geronimo', 'USS Full Moon', 'USS Sutherland', 'Enterprise 10', 'Akira 10', 'Akira 11', 'Akira 12', 'Akira 13', 'Akira 14', 'Akira 15', 'Akira 16', 'Akira 17']
-#>>>Added Player to the Ship List
-## -------------------- ##
-####################
-#######>>>0:4:23.573 of 10/January/2023, Tuesday
-#>>>Refreshed Ship List: ['Lunar Voyage', 'Lunar Traveler', 'USS Geronimo', 'USS Full Moon', 'USS Sutherland', 'Enterprise 10', 'Akira 10', 'Akira 11', 'Akira 12', 'Akira 13', 'Akira 14', 'Akira 15', 'Akira 16', 'Akira 17', 'SCIFIKINGOdyssey 17', 'SCIFIKINGOdyssey 18', 'SCIFIKINGOdyssey 19', 'GalaxyX 19']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['Lunar Voyage', 'Lunar Traveler', 'USS Geronimo', 'USS Full Moon', 'USS Sutherland', 'Enterprise 10', 'Akira 10', 'Akira 11', 'Akira 12', 'Akira 13', 'Akira 14', 'Akira 15', 'Akira 16', 'Akira 17', 'SCIFIKINGOdyssey 17', 'SCIFIKINGOdyssey 18', 'SCIFIKINGOdyssey 19', 'GalaxyX 19']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['Lunar Voyage', 'Lunar Traveler', 'USS Geronimo', 'USS Full Moon', 'USS Sutherland', 'Enterprise 10', 'Akira 10', 'Akira 11', 'Akira 12', 'Akira 13', 'Akira 14', 'Akira 15', 'Akira 16', 'Akira 17', 'SCIFIKINGOdyssey 17', 'SCIFIKINGOdyssey 18', 'SCIFIKINGOdyssey 19', 'GalaxyX 19']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['Lunar Voyage', 'Lunar Traveler', 'USS Geronimo', 'USS Full Moon', 'USS Sutherland', 'Enterprise 10', 'Akira 10', 'Akira 11', 'Akira 12', 'Akira 13', 'Akira 14', 'Akira 15', 'Akira 16', 'Akira 17', 'SCIFIKINGOdyssey 17', 'SCIFIKINGOdyssey 18', 'SCIFIKINGOdyssey 19', 'GalaxyX 19']
-#>>>Added Player to the Ship List
-## -------------------- ##
-####################
-#######>>>0:5:7.605 of 10/January/2023, Tuesday
-#>>>Refreshed Ship List: ['Lunar Voyage', 'Lunar Traveler', 'USS Geronimo', 'USS Full Moon', 'USS Sutherland', 'Enterprise 10', 'Akira 10', 'Akira 11', 'Akira 12', 'Akira 13', 'Akira 14', 'Akira 15', 'Akira 16', 'Akira 17', 'SCIFIKINGOdyssey 17', 'SCIFIKINGOdyssey 18', 'SCIFIKINGOdyssey 19', 'GalaxyX 19', 'DalekSaucer 19']
-#>>>Added Player to the Ship List
-## -------------------- ##
-####################
-#######>>>0:5:41.505 of 10/January/2023, Tuesday
-#>>>Refreshed Ship List: ['Lunar Voyage', 'Lunar Traveler', 'USS Geronimo', 'USS Full Moon', 'USS Sutherland', 'Enterprise 10', 'Akira 10', 'Akira 11', 'Akira 12', 'Akira 13', 'Akira 15', 'Akira 16', 'Akira 17', 'SCIFIKINGOdyssey 17', 'SCIFIKINGOdyssey 18', 'SCIFIKINGOdyssey 19', 'GalaxyX 19', 'DalekSaucer 19']
-#>>>Added Player to the Ship List
-## -------------------- ##
-####################
-#######>>>0:5:42.256 of 10/January/2023, Tuesday
-#>>>Refreshed Ship List: ['Lunar Voyage', 'Lunar Traveler', 'USS Geronimo', 'USS Full Moon', 'USS Sutherland', 'Enterprise 10', 'Akira 10', 'Akira 11', 'Akira 12', 'Akira 13', 'Akira 15', 'Akira 16', 'Akira 17', 'SCIFIKINGOdyssey 17', 'SCIFIKINGOdyssey 18', 'SCIFIKINGOdyssey 19', 'GalaxyX 19', 'DalekSaucer 19']
-#>>>Added Player to the Ship List
-## -------------------- ##
-####################
-#######>>>0:5:43.389 of 10/January/2023, Tuesday
-#>>>Refreshed Ship List: ['Lunar Voyage', 'Lunar Traveler', 'USS Geronimo', 'USS Full Moon', 'USS Sutherland', 'Enterprise 10', 'Akira 10', 'Akira 11', 'Akira 12', 'Akira 13', 'Akira 15', 'Akira 16', 'Akira 17', 'SCIFIKINGOdyssey 17', 'SCIFIKINGOdyssey 18', 'SCIFIKINGOdyssey 19', 'GalaxyX 19', 'DalekSaucer 19']
-#>>>Added Player to the Ship List
-## -------------------- ##
-####################
-#######>>>0:5:50.239 of 10/January/2023, Tuesday
-#>>>Refreshed Ship List: ['Lunar Voyage', 'Lunar Traveler', 'USS Geronimo', 'USS Full Moon', 'USS Sutherland', 'Enterprise 10', 'Akira 10', 'Akira 12', 'Akira 13', 'Akira 15', 'Akira 16', 'Akira 17', 'SCIFIKINGOdyssey 17', 'SCIFIKINGOdyssey 18', 'SCIFIKINGOdyssey 19', 'DalekSaucer 19']
-#>>>Added Player to the Ship List
-## -------------------- ##
-####################
-#######>>>0:6:6.732 of 10/January/2023, Tuesday
-#>>>Refreshed Ship List: ['Lunar Voyage', 'Lunar Traveler', 'USS Geronimo', 'USS Full Moon', 'USS Sutherland', 'Enterprise 10', 'Akira 10', 'Akira 12', 'Akira 13', 'Akira 16', 'Akira 17', 'SCIFIKINGOdyssey 17', 'SCIFIKINGOdyssey 18', 'SCIFIKINGOdyssey 19', 'DalekSaucer 19']
-#>>>Added Player to the Ship List
-## -------------------- ##
-####################
-#######>>>0:6:8.694 of 10/January/2023, Tuesday
-#>>>Refreshed Ship List: ['Lunar Voyage', 'Lunar Traveler', 'USS Geronimo', 'USS Full Moon', 'USS Sutherland', 'Enterprise 10', 'Akira 10', 'Akira 12', 'Akira 13', 'Akira 16', 'Akira 17', 'SCIFIKINGOdyssey 17', 'SCIFIKINGOdyssey 18', 'SCIFIKINGOdyssey 19', 'DalekSaucer 19']
-#>>>Added Player to the Ship List
-## -------------------- ##
-####################
-#######>>>0:6:23.242 of 10/January/2023, Tuesday
-#>>>Refreshed Ship List: ['Lunar Voyage', 'Lunar Traveler', 'USS Geronimo', 'USS Full Moon', 'USS Sutherland', 'Enterprise 10', 'Akira 10', 'Akira 12', 'Akira 16', 'Akira 17', 'SCIFIKINGOdyssey 17', 'SCIFIKINGOdyssey 18', 'SCIFIKINGOdyssey 19', 'DalekSaucer 19']
-#>>>Added Player to the Ship List
-## -------------------- ##
-####################
-#######>>>0:6:23.771 of 10/January/2023, Tuesday
-#>>>Refreshed Ship List: ['Lunar Voyage', 'Lunar Traveler', 'USS Geronimo', 'USS Full Moon', 'USS Sutherland', 'Enterprise 10', 'Akira 12', 'Akira 16', 'Akira 17', 'SCIFIKINGOdyssey 17', 'SCIFIKINGOdyssey 18', 'SCIFIKINGOdyssey 19', 'DalekSaucer 19']
-#>>>Added Player to the Ship List
-## -------------------- ##
-####################
-#######>>>0:6:32.055 of 10/January/2023, Tuesday
-#>>>Refreshed Ship List: ['Lunar Voyage', 'Lunar Traveler', 'USS Geronimo', 'USS Full Moon', 'USS Sutherland', 'Enterprise 10', 'Akira 12', 'Akira 17', 'SCIFIKINGOdyssey 17', 'SCIFIKINGOdyssey 18', 'SCIFIKINGOdyssey 19', 'DalekSaucer 19']
-#>>>Added Player to the Ship List
-## -------------------- ##
-####################
-#######>>>0:6:33.217 of 10/January/2023, Tuesday
-#>>>Refreshed Ship List: ['Lunar Voyage', 'Lunar Traveler', 'USS Geronimo', 'USS Full Moon', 'USS Sutherland', 'Enterprise 10', 'Akira 12', 'Akira 17', 'SCIFIKINGOdyssey 17', 'SCIFIKINGOdyssey 19', 'DalekSaucer 19']
-#>>>Added Player to the Ship List
-## -------------------- ##
-####################
-#######>>>0:6:38.055 of 10/January/2023, Tuesday
-#>>>Refreshed Ship List: ['Lunar Voyage', 'Lunar Traveler', 'USS Geronimo', 'USS Full Moon', 'USS Sutherland', 'Enterprise 10', 'Akira 17', 'SCIFIKINGOdyssey 17', 'SCIFIKINGOdyssey 19', 'DalekSaucer 19']
-#>>>Added Player to the Ship List
-## -------------------- ##
-####################
-#######>>>0:6:43.871 of 10/January/2023, Tuesday
-#>>>Refreshed Ship List: ['Lunar Voyage', 'Lunar Traveler', 'USS Geronimo', 'USS Full Moon', 'USS Sutherland', 'Enterprise 10', 'SCIFIKINGOdyssey 17', 'SCIFIKINGOdyssey 19', 'DalekSaucer 19']
-#>>>Added Player to the Ship List
-## -------------------- ##
-####################
-#######>>>0:6:53.904 of 10/January/2023, Tuesday
-#>>>Refreshed Ship List: ['Lunar Voyage', 'Lunar Traveler', 'USS Geronimo', 'USS Full Moon', 'USS Sutherland', 'Enterprise 10', 'SCIFIKINGOdyssey 17', 'DalekSaucer 19']
-#>>>Added Player to the Ship List
-## -------------------- ##
-####################
-#######>>>0:7:6.526 of 10/January/2023, Tuesday
-#>>>Refreshed Ship List: ['Lunar Voyage', 'Lunar Traveler', 'USS Geronimo', 'USS Full Moon', 'USS Sutherland', 'SCIFIKINGOdyssey 17', 'DalekSaucer 19']
-#>>>Added Player to the Ship List
-## -------------------- ##
-####################
-#######>>>0:7:10.054 of 10/January/2023, Tuesday
-#>>>Refreshed Ship List: ['Lunar Voyage', 'Lunar Traveler', 'USS Geronimo', 'USS Full Moon', 'USS Sutherland', 'DalekSaucer 19']
-#>>>Added Player to the Ship List
+#######>>>16:41:57.847 of 18/January/2023, Wednesday
+#>>>Refreshed Ship List: ['Player', 'Type 89 TARDIS-1', 'Player_Starboard Wing', 'Player_Upper Wing', 'Player_Port Wing', 'Player_Lower Wing', 'ONeill 1', 'BelisknerRefit 1', 'BelisknerRefit 2', 'BelisknerRefit 3', 'BelisknerRefit 4', 'BelisknerRefit 5', 'BelisknerRefit 6']
+#>>>Refreshed Ship List: ['Player', 'Type 89 TARDIS-1', 'Player_Starboard Wing', 'Player_Upper Wing', 'Player_Port Wing', 'Player_Lower Wing', 'ONeill 1', 'BelisknerRefit 1', 'BelisknerRefit 2', 'BelisknerRefit 3', 'BelisknerRefit 4', 'BelisknerRefit 5', 'BelisknerRefit 6']
+#>>>Refreshed Ship List: ['Player', 'Type 89 TARDIS-1', 'Player_Starboard Wing', 'Player_Upper Wing', 'Player_Port Wing', 'Player_Lower Wing', 'ONeill 1', 'BelisknerRefit 1', 'BelisknerRefit 2', 'BelisknerRefit 3', 'BelisknerRefit 4', 'BelisknerRefit 5', 'BelisknerRefit 6', 'BelisknerRefit 1_Starboard Wing', 'BelisknerRefit 1_Upper Wing', 'BelisknerRefit 1_Port Wing', 'BelisknerRefit 1_Lower Wing']
+#>>>Refreshed Ship List: ['Player', 'Type 89 TARDIS-1', 'Player_Starboard Wing', 'Player_Upper Wing', 'Player_Port Wing', 'Player_Lower Wing', 'ONeill 1', 'BelisknerRefit 1', 'BelisknerRefit 2', 'BelisknerRefit 3', 'BelisknerRefit 4', 'BelisknerRefit 5', 'BelisknerRefit 6', 'BelisknerRefit 1_Starboard Wing', 'BelisknerRefit 1_Upper Wing', 'BelisknerRefit 1_Port Wing', 'BelisknerRefit 1_Lower Wing', 'BelisknerRefit 2_Starboard Wing', 'BelisknerRefit 2_Upper Wing', 'BelisknerRefit 2_Port Wing', 'BelisknerRefit 2_Lower Wing']
+#>>>Refreshed Ship List: ['Player', 'Type 89 TARDIS-1', 'Player_Starboard Wing', 'Player_Upper Wing', 'Player_Port Wing', 'Player_Lower Wing', 'ONeill 1', 'BelisknerRefit 1', 'BelisknerRefit 2', 'BelisknerRefit 3', 'BelisknerRefit 4', 'BelisknerRefit 5', 'BelisknerRefit 6', 'BelisknerRefit 1_Starboard Wing', 'BelisknerRefit 1_Upper Wing', 'BelisknerRefit 1_Port Wing', 'BelisknerRefit 1_Lower Wing', 'BelisknerRefit 2_Starboard Wing', 'BelisknerRefit 2_Upper Wing', 'BelisknerRefit 2_Port Wing', 'BelisknerRefit 2_Lower Wing', 'BelisknerRefit 3_Starboard Wing', 'BelisknerRefit 3_Upper Wing', 'BelisknerRefit 3_Port Wing', 'BelisknerRefit 3_Lower Wing']
+#>>>Refreshed Ship List: ['Player', 'Type 89 TARDIS-1', 'Player_Starboard Wing', 'Player_Upper Wing', 'Player_Port Wing', 'Player_Lower Wing', 'ONeill 1', 'BelisknerRefit 1', 'BelisknerRefit 2', 'BelisknerRefit 3', 'BelisknerRefit 4', 'BelisknerRefit 5', 'BelisknerRefit 6', 'BelisknerRefit 1_Starboard Wing', 'BelisknerRefit 1_Upper Wing', 'BelisknerRefit 1_Port Wing', 'BelisknerRefit 1_Lower Wing', 'BelisknerRefit 2_Starboard Wing', 'BelisknerRefit 2_Upper Wing', 'BelisknerRefit 2_Port Wing', 'BelisknerRefit 2_Lower Wing', 'BelisknerRefit 3_Starboard Wing', 'BelisknerRefit 3_Upper Wing', 'BelisknerRefit 3_Port Wing', 'BelisknerRefit 3_Lower Wing', 'BelisknerRefit 4_Starboard Wing', 'BelisknerRefit 4_Upper Wing', 'BelisknerRefit 4_Port Wing', 'BelisknerRefit 4_Lower Wing']
+#>>>Refreshed Ship List: ['Player', 'Type 89 TARDIS-1', 'Player_Starboard Wing', 'Player_Upper Wing', 'Player_Port Wing', 'Player_Lower Wing', 'ONeill 1', 'BelisknerRefit 1', 'BelisknerRefit 2', 'BelisknerRefit 3', 'BelisknerRefit 4', 'BelisknerRefit 5', 'BelisknerRefit 6', 'BelisknerRefit 1_Starboard Wing', 'BelisknerRefit 1_Upper Wing', 'BelisknerRefit 1_Port Wing', 'BelisknerRefit 1_Lower Wing', 'BelisknerRefit 2_Starboard Wing', 'BelisknerRefit 2_Upper Wing', 'BelisknerRefit 2_Port Wing', 'BelisknerRefit 2_Lower Wing', 'BelisknerRefit 3_Starboard Wing', 'BelisknerRefit 3_Upper Wing', 'BelisknerRefit 3_Port Wing', 'BelisknerRefit 3_Lower Wing', 'BelisknerRefit 4_Starboard Wing', 'BelisknerRefit 4_Upper Wing', 'BelisknerRefit 4_Port Wing', 'BelisknerRefit 4_Lower Wing', 'BelisknerRefit 5_Starboard Wing', 'BelisknerRefit 5_Upper Wing', 'BelisknerRefit 5_Port Wing', 'BelisknerRefit 5_Lower Wing']
+#>>>Refreshed Ship List: ['Player', 'Type 89 TARDIS-1', 'Player_Starboard Wing', 'Player_Upper Wing', 'Player_Port Wing', 'Player_Lower Wing', 'ONeill 1', 'BelisknerRefit 1', 'BelisknerRefit 2', 'BelisknerRefit 3', 'BelisknerRefit 4', 'BelisknerRefit 5', 'BelisknerRefit 6', 'BelisknerRefit 1_Starboard Wing', 'BelisknerRefit 1_Upper Wing', 'BelisknerRefit 1_Port Wing', 'BelisknerRefit 1_Lower Wing', 'BelisknerRefit 2_Starboard Wing', 'BelisknerRefit 2_Upper Wing', 'BelisknerRefit 2_Port Wing', 'BelisknerRefit 2_Lower Wing', 'BelisknerRefit 3_Starboard Wing', 'BelisknerRefit 3_Upper Wing', 'BelisknerRefit 3_Port Wing', 'BelisknerRefit 3_Lower Wing', 'BelisknerRefit 4_Starboard Wing', 'BelisknerRefit 4_Upper Wing', 'BelisknerRefit 4_Port Wing', 'BelisknerRefit 4_Lower Wing', 'BelisknerRefit 5_Starboard Wing', 'BelisknerRefit 5_Upper Wing', 'BelisknerRefit 5_Port Wing', 'BelisknerRefit 5_Lower Wing', 'BelisknerRefit 6_Starboard Wing', 'BelisknerRefit 6_Upper Wing', 'BelisknerRefit 6_Port Wing', 'BelisknerRefit 6_Lower Wing']
+#>>>Refreshed Ship List: ['Player', 'Type 89 TARDIS-1', 'Player_Starboard Wing', 'Player_Upper Wing', 'Player_Port Wing', 'Player_Lower Wing', 'ONeill 1', 'BelisknerRefit 1', 'BelisknerRefit 2', 'BelisknerRefit 3', 'BelisknerRefit 4', 'BelisknerRefit 5', 'BelisknerRefit 6', 'BelisknerRefit 1_Starboard Wing', 'BelisknerRefit 1_Upper Wing', 'BelisknerRefit 1_Port Wing', 'BelisknerRefit 1_Lower Wing', 'BelisknerRefit 2_Starboard Wing', 'BelisknerRefit 2_Upper Wing', 'BelisknerRefit 2_Port Wing', 'BelisknerRefit 2_Lower Wing', 'BelisknerRefit 3_Starboard Wing', 'BelisknerRefit 3_Upper Wing', 'BelisknerRefit 3_Port Wing', 'BelisknerRefit 3_Lower Wing', 'BelisknerRefit 4_Starboard Wing', 'BelisknerRefit 4_Upper Wing', 'BelisknerRefit 4_Port Wing', 'BelisknerRefit 4_Lower Wing', 'BelisknerRefit 5_Starboard Wing', 'BelisknerRefit 5_Upper Wing', 'BelisknerRefit 5_Port Wing', 'BelisknerRefit 5_Lower Wing', 'BelisknerRefit 6_Starboard Wing', 'BelisknerRefit 6_Upper Wing', 'BelisknerRefit 6_Port Wing', 'BelisknerRefit 6_Lower Wing']
+#>>>Refreshed Ship List: ['Player', 'Type 89 TARDIS-1', 'Player_Starboard Wing', 'Player_Upper Wing', 'Player_Port Wing', 'Player_Lower Wing', 'ONeill 1', 'BelisknerRefit 1', 'BelisknerRefit 2', 'BelisknerRefit 3', 'BelisknerRefit 4', 'BelisknerRefit 5', 'BelisknerRefit 6', 'BelisknerRefit 1_Starboard Wing', 'BelisknerRefit 1_Upper Wing', 'BelisknerRefit 1_Port Wing', 'BelisknerRefit 1_Lower Wing', 'BelisknerRefit 2_Starboard Wing', 'BelisknerRefit 2_Upper Wing', 'BelisknerRefit 2_Port Wing', 'BelisknerRefit 2_Lower Wing', 'BelisknerRefit 3_Starboard Wing', 'BelisknerRefit 3_Upper Wing', 'BelisknerRefit 3_Port Wing', 'BelisknerRefit 3_Lower Wing', 'BelisknerRefit 4_Starboard Wing', 'BelisknerRefit 4_Upper Wing', 'BelisknerRefit 4_Port Wing', 'BelisknerRefit 4_Lower Wing', 'BelisknerRefit 5_Starboard Wing', 'BelisknerRefit 5_Upper Wing', 'BelisknerRefit 5_Port Wing', 'BelisknerRefit 5_Lower Wing', 'BelisknerRefit 6_Starboard Wing', 'BelisknerRefit 6_Upper Wing', 'BelisknerRefit 6_Port Wing', 'BelisknerRefit 6_Lower Wing']
+#>>>Refreshed Ship List: ['Player', 'Type 89 TARDIS-1', 'Player_Starboard Wing', 'Player_Upper Wing', 'Player_Port Wing', 'Player_Lower Wing', 'ONeill 1', 'BelisknerRefit 1', 'BelisknerRefit 2', 'BelisknerRefit 3', 'BelisknerRefit 4', 'BelisknerRefit 5', 'BelisknerRefit 6', 'BelisknerRefit 1_Starboard Wing', 'BelisknerRefit 1_Upper Wing', 'BelisknerRefit 1_Port Wing', 'BelisknerRefit 1_Lower Wing', 'BelisknerRefit 2_Starboard Wing', 'BelisknerRefit 2_Upper Wing', 'BelisknerRefit 2_Port Wing', 'BelisknerRefit 2_Lower Wing', 'BelisknerRefit 3_Starboard Wing', 'BelisknerRefit 3_Upper Wing', 'BelisknerRefit 3_Port Wing', 'BelisknerRefit 3_Lower Wing', 'BelisknerRefit 4_Starboard Wing', 'BelisknerRefit 4_Upper Wing', 'BelisknerRefit 4_Port Wing', 'BelisknerRefit 4_Lower Wing', 'BelisknerRefit 5_Starboard Wing', 'BelisknerRefit 5_Upper Wing', 'BelisknerRefit 5_Port Wing', 'BelisknerRefit 5_Lower Wing', 'BelisknerRefit 6_Starboard Wing', 'BelisknerRefit 6_Upper Wing', 'BelisknerRefit 6_Port Wing', 'BelisknerRefit 6_Lower Wing']
+#>>>Refreshed Ship List: ['Player', 'Type 89 TARDIS-1', 'Player_Starboard Wing', 'Player_Upper Wing', 'Player_Port Wing', 'Player_Lower Wing', 'ONeill 1', 'BelisknerRefit 1', 'BelisknerRefit 2', 'BelisknerRefit 3', 'BelisknerRefit 4', 'BelisknerRefit 5', 'BelisknerRefit 6', 'BelisknerRefit 1_Starboard Wing', 'BelisknerRefit 1_Upper Wing', 'BelisknerRefit 1_Port Wing', 'BelisknerRefit 1_Lower Wing', 'BelisknerRefit 2_Starboard Wing', 'BelisknerRefit 2_Upper Wing', 'BelisknerRefit 2_Port Wing', 'BelisknerRefit 2_Lower Wing', 'BelisknerRefit 3_Starboard Wing', 'BelisknerRefit 3_Upper Wing', 'BelisknerRefit 3_Port Wing', 'BelisknerRefit 3_Lower Wing', 'BelisknerRefit 4_Starboard Wing', 'BelisknerRefit 4_Upper Wing', 'BelisknerRefit 4_Port Wing', 'BelisknerRefit 4_Lower Wing', 'BelisknerRefit 5_Starboard Wing', 'BelisknerRefit 5_Upper Wing', 'BelisknerRefit 5_Port Wing', 'BelisknerRefit 5_Lower Wing', 'BelisknerRefit 6_Starboard Wing', 'BelisknerRefit 6_Upper Wing', 'BelisknerRefit 6_Port Wing', 'BelisknerRefit 6_Lower Wing']
+#>>>Refreshed Ship List: ['Player', 'Type 89 TARDIS-1', 'Player_Starboard Wing', 'Player_Upper Wing', 'Player_Port Wing', 'Player_Lower Wing', 'ONeill 1', 'BelisknerRefit 1', 'BelisknerRefit 2', 'BelisknerRefit 3', 'BelisknerRefit 4', 'BelisknerRefit 5', 'BelisknerRefit 6', 'BelisknerRefit 1_Starboard Wing', 'BelisknerRefit 1_Upper Wing', 'BelisknerRefit 1_Port Wing', 'BelisknerRefit 1_Lower Wing', 'BelisknerRefit 2_Starboard Wing', 'BelisknerRefit 2_Upper Wing', 'BelisknerRefit 2_Port Wing', 'BelisknerRefit 2_Lower Wing', 'BelisknerRefit 3_Starboard Wing', 'BelisknerRefit 3_Upper Wing', 'BelisknerRefit 3_Port Wing', 'BelisknerRefit 3_Lower Wing', 'BelisknerRefit 4_Starboard Wing', 'BelisknerRefit 4_Upper Wing', 'BelisknerRefit 4_Port Wing', 'BelisknerRefit 4_Lower Wing', 'BelisknerRefit 5_Starboard Wing', 'BelisknerRefit 5_Upper Wing', 'BelisknerRefit 5_Port Wing', 'BelisknerRefit 5_Lower Wing', 'BelisknerRefit 6_Starboard Wing', 'BelisknerRefit 6_Upper Wing', 'BelisknerRefit 6_Port Wing', 'BelisknerRefit 6_Lower Wing']
+#>>>Refreshed Ship List: ['Player', 'Type 89 TARDIS-1', 'Player_Starboard Wing', 'Player_Upper Wing', 'Player_Port Wing', 'Player_Lower Wing', 'ONeill 1', 'BelisknerRefit 1', 'BelisknerRefit 2', 'BelisknerRefit 3', 'BelisknerRefit 4', 'BelisknerRefit 5', 'BelisknerRefit 6', 'BelisknerRefit 1_Starboard Wing', 'BelisknerRefit 1_Upper Wing', 'BelisknerRefit 1_Port Wing', 'BelisknerRefit 1_Lower Wing', 'BelisknerRefit 2_Starboard Wing', 'BelisknerRefit 2_Upper Wing', 'BelisknerRefit 2_Port Wing', 'BelisknerRefit 2_Lower Wing', 'BelisknerRefit 3_Starboard Wing', 'BelisknerRefit 3_Upper Wing', 'BelisknerRefit 3_Port Wing', 'BelisknerRefit 3_Lower Wing', 'BelisknerRefit 4_Starboard Wing', 'BelisknerRefit 4_Upper Wing', 'BelisknerRefit 4_Port Wing', 'BelisknerRefit 4_Lower Wing', 'BelisknerRefit 5_Starboard Wing', 'BelisknerRefit 5_Upper Wing', 'BelisknerRefit 5_Port Wing', 'BelisknerRefit 5_Lower Wing', 'BelisknerRefit 6_Starboard Wing', 'BelisknerRefit 6_Upper Wing', 'BelisknerRefit 6_Port Wing', 'BelisknerRefit 6_Lower Wing']
+#>>>Refreshed Ship List: ['Player', 'Type 89 TARDIS-1', 'Player_Starboard Wing', 'Player_Upper Wing', 'Player_Port Wing', 'Player_Lower Wing', 'ONeill 1', 'BelisknerRefit 1', 'BelisknerRefit 2', 'BelisknerRefit 3', 'BelisknerRefit 4', 'BelisknerRefit 5', 'BelisknerRefit 6', 'BelisknerRefit 1_Starboard Wing', 'BelisknerRefit 1_Upper Wing', 'BelisknerRefit 1_Port Wing', 'BelisknerRefit 1_Lower Wing', 'BelisknerRefit 2_Starboard Wing', 'BelisknerRefit 2_Upper Wing', 'BelisknerRefit 2_Port Wing', 'BelisknerRefit 2_Lower Wing', 'BelisknerRefit 3_Starboard Wing', 'BelisknerRefit 3_Upper Wing', 'BelisknerRefit 3_Port Wing', 'BelisknerRefit 3_Lower Wing', 'BelisknerRefit 4_Starboard Wing', 'BelisknerRefit 4_Upper Wing', 'BelisknerRefit 4_Port Wing', 'BelisknerRefit 4_Lower Wing', 'BelisknerRefit 5_Starboard Wing', 'BelisknerRefit 5_Upper Wing', 'BelisknerRefit 5_Port Wing', 'BelisknerRefit 5_Lower Wing', 'BelisknerRefit 6_Starboard Wing', 'BelisknerRefit 6_Upper Wing', 'BelisknerRefit 6_Port Wing', 'BelisknerRefit 6_Lower Wing']
+#>>>Refreshed Ship List: ['Player', 'Type 89 TARDIS-1', 'Player_Starboard Wing', 'Player_Upper Wing', 'Player_Port Wing', 'Player_Lower Wing', 'ONeill 1', 'BelisknerRefit 1', 'BelisknerRefit 2', 'BelisknerRefit 3', 'BelisknerRefit 4', 'BelisknerRefit 5', 'BelisknerRefit 6', 'BelisknerRefit 1_Starboard Wing', 'BelisknerRefit 1_Upper Wing', 'BelisknerRefit 1_Port Wing', 'BelisknerRefit 1_Lower Wing', 'BelisknerRefit 2_Starboard Wing', 'BelisknerRefit 2_Upper Wing', 'BelisknerRefit 2_Port Wing', 'BelisknerRefit 2_Lower Wing', 'BelisknerRefit 3_Starboard Wing', 'BelisknerRefit 3_Upper Wing', 'BelisknerRefit 3_Port Wing', 'BelisknerRefit 3_Lower Wing', 'BelisknerRefit 4_Starboard Wing', 'BelisknerRefit 4_Upper Wing', 'BelisknerRefit 4_Port Wing', 'BelisknerRefit 4_Lower Wing', 'BelisknerRefit 5_Starboard Wing', 'BelisknerRefit 5_Upper Wing', 'BelisknerRefit 5_Port Wing', 'BelisknerRefit 5_Lower Wing', 'BelisknerRefit 6_Starboard Wing', 'BelisknerRefit 6_Upper Wing', 'BelisknerRefit 6_Port Wing', 'BelisknerRefit 6_Lower Wing']
+#>>>Refreshed Ship List: ['Player', 'Type 89 TARDIS-1', 'Player_Starboard Wing', 'Player_Upper Wing', 'Player_Port Wing', 'Player_Lower Wing', 'ONeill 1', 'BelisknerRefit 1', 'BelisknerRefit 2', 'BelisknerRefit 3', 'BelisknerRefit 4', 'BelisknerRefit 5', 'BelisknerRefit 6', 'BelisknerRefit 1_Starboard Wing', 'BelisknerRefit 1_Upper Wing', 'BelisknerRefit 1_Port Wing', 'BelisknerRefit 1_Lower Wing', 'BelisknerRefit 2_Starboard Wing', 'BelisknerRefit 2_Upper Wing', 'BelisknerRefit 2_Port Wing', 'BelisknerRefit 2_Lower Wing', 'BelisknerRefit 3_Starboard Wing', 'BelisknerRefit 3_Upper Wing', 'BelisknerRefit 3_Port Wing', 'BelisknerRefit 3_Lower Wing', 'BelisknerRefit 4_Starboard Wing', 'BelisknerRefit 4_Upper Wing', 'BelisknerRefit 4_Port Wing', 'BelisknerRefit 4_Lower Wing', 'BelisknerRefit 5_Starboard Wing', 'BelisknerRefit 5_Upper Wing', 'BelisknerRefit 5_Port Wing', 'BelisknerRefit 5_Lower Wing', 'BelisknerRefit 6_Starboard Wing', 'BelisknerRefit 6_Upper Wing', 'BelisknerRefit 6_Port Wing', 'BelisknerRefit 6_Lower Wing']
+#>>>Refreshed Ship List: ['Player', 'Type 89 TARDIS-1', 'Player_Starboard Wing', 'Player_Upper Wing', 'Player_Port Wing', 'Player_Lower Wing', 'ONeill 1', 'BelisknerRefit 1', 'BelisknerRefit 2', 'BelisknerRefit 3', 'BelisknerRefit 4', 'BelisknerRefit 5', 'BelisknerRefit 6', 'BelisknerRefit 1_Starboard Wing', 'BelisknerRefit 1_Upper Wing', 'BelisknerRefit 1_Port Wing', 'BelisknerRefit 1_Lower Wing', 'BelisknerRefit 2_Starboard Wing', 'BelisknerRefit 2_Upper Wing', 'BelisknerRefit 2_Port Wing', 'BelisknerRefit 2_Lower Wing', 'BelisknerRefit 3_Starboard Wing', 'BelisknerRefit 3_Upper Wing', 'BelisknerRefit 3_Port Wing', 'BelisknerRefit 3_Lower Wing', 'BelisknerRefit 4_Starboard Wing', 'BelisknerRefit 4_Upper Wing', 'BelisknerRefit 4_Port Wing', 'BelisknerRefit 4_Lower Wing', 'BelisknerRefit 5_Starboard Wing', 'BelisknerRefit 5_Upper Wing', 'BelisknerRefit 5_Port Wing', 'BelisknerRefit 5_Lower Wing', 'BelisknerRefit 6_Starboard Wing', 'BelisknerRefit 6_Upper Wing', 'BelisknerRefit 6_Port Wing', 'BelisknerRefit 6_Lower Wing']
+#>>>Refreshed Ship List: ['Player', 'Type 89 TARDIS-1', 'Player_Starboard Wing', 'Player_Upper Wing', 'Player_Port Wing', 'Player_Lower Wing', 'ONeill 1', 'BelisknerRefit 1', 'BelisknerRefit 2', 'BelisknerRefit 3', 'BelisknerRefit 4', 'BelisknerRefit 5', 'BelisknerRefit 6', 'BelisknerRefit 1_Starboard Wing', 'BelisknerRefit 1_Upper Wing', 'BelisknerRefit 1_Port Wing', 'BelisknerRefit 1_Lower Wing', 'BelisknerRefit 2_Starboard Wing', 'BelisknerRefit 2_Upper Wing', 'BelisknerRefit 2_Port Wing', 'BelisknerRefit 2_Lower Wing', 'BelisknerRefit 3_Starboard Wing', 'BelisknerRefit 3_Upper Wing', 'BelisknerRefit 3_Port Wing', 'BelisknerRefit 3_Lower Wing', 'BelisknerRefit 4_Starboard Wing', 'BelisknerRefit 4_Upper Wing', 'BelisknerRefit 4_Port Wing', 'BelisknerRefit 4_Lower Wing', 'BelisknerRefit 5_Starboard Wing', 'BelisknerRefit 5_Upper Wing', 'BelisknerRefit 5_Port Wing', 'BelisknerRefit 5_Lower Wing', 'BelisknerRefit 6_Starboard Wing', 'BelisknerRefit 6_Upper Wing', 'BelisknerRefit 6_Port Wing', 'BelisknerRefit 6_Lower Wing']
+#>>>Refreshed Ship List: ['Player', 'Type 89 TARDIS-1', 'Player_Starboard Wing', 'Player_Upper Wing', 'Player_Port Wing', 'Player_Lower Wing', 'ONeill 1', 'BelisknerRefit 1', 'BelisknerRefit 2', 'BelisknerRefit 3', 'BelisknerRefit 4', 'BelisknerRefit 5', 'BelisknerRefit 6', 'BelisknerRefit 1_Starboard Wing', 'BelisknerRefit 1_Upper Wing', 'BelisknerRefit 1_Port Wing', 'BelisknerRefit 1_Lower Wing', 'BelisknerRefit 2_Starboard Wing', 'BelisknerRefit 2_Upper Wing', 'BelisknerRefit 2_Port Wing', 'BelisknerRefit 2_Lower Wing', 'BelisknerRefit 3_Starboard Wing', 'BelisknerRefit 3_Upper Wing', 'BelisknerRefit 3_Port Wing', 'BelisknerRefit 3_Lower Wing', 'BelisknerRefit 4_Starboard Wing', 'BelisknerRefit 4_Upper Wing', 'BelisknerRefit 4_Port Wing', 'BelisknerRefit 4_Lower Wing', 'BelisknerRefit 5_Starboard Wing', 'BelisknerRefit 5_Upper Wing', 'BelisknerRefit 5_Port Wing', 'BelisknerRefit 5_Lower Wing', 'BelisknerRefit 6_Starboard Wing', 'BelisknerRefit 6_Upper Wing', 'BelisknerRefit 6_Port Wing', 'BelisknerRefit 6_Lower Wing']
+#>>>Refreshed Ship List: ['Player', 'Type 89 TARDIS-1', 'Player_Starboard Wing', 'Player_Upper Wing', 'Player_Port Wing', 'Player_Lower Wing', 'ONeill 1', 'BelisknerRefit 1', 'BelisknerRefit 2', 'BelisknerRefit 3', 'BelisknerRefit 4', 'BelisknerRefit 5', 'BelisknerRefit 6', 'BelisknerRefit 1_Starboard Wing', 'BelisknerRefit 1_Upper Wing', 'BelisknerRefit 1_Port Wing', 'BelisknerRefit 1_Lower Wing', 'BelisknerRefit 2_Starboard Wing', 'BelisknerRefit 2_Upper Wing', 'BelisknerRefit 2_Port Wing', 'BelisknerRefit 2_Lower Wing', 'BelisknerRefit 3_Starboard Wing', 'BelisknerRefit 3_Upper Wing', 'BelisknerRefit 3_Port Wing', 'BelisknerRefit 3_Lower Wing', 'BelisknerRefit 4_Starboard Wing', 'BelisknerRefit 4_Upper Wing', 'BelisknerRefit 4_Port Wing', 'BelisknerRefit 4_Lower Wing', 'BelisknerRefit 5_Starboard Wing', 'BelisknerRefit 5_Upper Wing', 'BelisknerRefit 5_Port Wing', 'BelisknerRefit 5_Lower Wing', 'BelisknerRefit 6_Starboard Wing', 'BelisknerRefit 6_Upper Wing', 'BelisknerRefit 6_Port Wing', 'BelisknerRefit 6_Lower Wing']
+#>>>Refreshed Ship List: ['Player', 'Type 89 TARDIS-1', 'Player_Starboard Wing', 'Player_Upper Wing', 'Player_Port Wing', 'Player_Lower Wing', 'ONeill 1', 'BelisknerRefit 1', 'BelisknerRefit 2', 'BelisknerRefit 3', 'BelisknerRefit 4', 'BelisknerRefit 5', 'BelisknerRefit 6', 'BelisknerRefit 1_Starboard Wing', 'BelisknerRefit 1_Upper Wing', 'BelisknerRefit 1_Port Wing', 'BelisknerRefit 1_Lower Wing', 'BelisknerRefit 2_Starboard Wing', 'BelisknerRefit 2_Upper Wing', 'BelisknerRefit 2_Port Wing', 'BelisknerRefit 2_Lower Wing', 'BelisknerRefit 3_Starboard Wing', 'BelisknerRefit 3_Upper Wing', 'BelisknerRefit 3_Port Wing', 'BelisknerRefit 3_Lower Wing', 'BelisknerRefit 4_Starboard Wing', 'BelisknerRefit 4_Upper Wing', 'BelisknerRefit 4_Port Wing', 'BelisknerRefit 4_Lower Wing', 'BelisknerRefit 5_Starboard Wing', 'BelisknerRefit 5_Upper Wing', 'BelisknerRefit 5_Port Wing', 'BelisknerRefit 5_Lower Wing', 'BelisknerRefit 6_Starboard Wing', 'BelisknerRefit 6_Upper Wing', 'BelisknerRefit 6_Port Wing', 'BelisknerRefit 6_Lower Wing']
+#>>>Refreshed Ship List: ['Player', 'Type 89 TARDIS-1', 'Player_Starboard Wing', 'Player_Upper Wing', 'Player_Port Wing', 'Player_Lower Wing', 'ONeill 1', 'BelisknerRefit 1', 'BelisknerRefit 2', 'BelisknerRefit 3', 'BelisknerRefit 4', 'BelisknerRefit 5', 'BelisknerRefit 6', 'BelisknerRefit 1_Starboard Wing', 'BelisknerRefit 1_Upper Wing', 'BelisknerRefit 1_Port Wing', 'BelisknerRefit 1_Lower Wing', 'BelisknerRefit 2_Starboard Wing', 'BelisknerRefit 2_Upper Wing', 'BelisknerRefit 2_Port Wing', 'BelisknerRefit 2_Lower Wing', 'BelisknerRefit 3_Starboard Wing', 'BelisknerRefit 3_Upper Wing', 'BelisknerRefit 3_Port Wing', 'BelisknerRefit 3_Lower Wing', 'BelisknerRefit 4_Starboard Wing', 'BelisknerRefit 4_Upper Wing', 'BelisknerRefit 4_Port Wing', 'BelisknerRefit 4_Lower Wing', 'BelisknerRefit 5_Starboard Wing', 'BelisknerRefit 5_Upper Wing', 'BelisknerRefit 5_Port Wing', 'BelisknerRefit 5_Lower Wing', 'BelisknerRefit 6_Starboard Wing', 'BelisknerRefit 6_Upper Wing', 'BelisknerRefit 6_Port Wing', 'BelisknerRefit 6_Lower Wing']
+#>>>Refreshed Ship List: ['Player', 'Type 89 TARDIS-1', 'Player_Starboard Wing', 'Player_Upper Wing', 'Player_Port Wing', 'Player_Lower Wing', 'ONeill 1', 'BelisknerRefit 1', 'BelisknerRefit 2', 'BelisknerRefit 3', 'BelisknerRefit 4', 'BelisknerRefit 5', 'BelisknerRefit 6', 'BelisknerRefit 1_Starboard Wing', 'BelisknerRefit 1_Upper Wing', 'BelisknerRefit 1_Port Wing', 'BelisknerRefit 1_Lower Wing', 'BelisknerRefit 2_Starboard Wing', 'BelisknerRefit 2_Upper Wing', 'BelisknerRefit 2_Port Wing', 'BelisknerRefit 2_Lower Wing', 'BelisknerRefit 3_Starboard Wing', 'BelisknerRefit 3_Upper Wing', 'BelisknerRefit 3_Port Wing', 'BelisknerRefit 3_Lower Wing', 'BelisknerRefit 4_Starboard Wing', 'BelisknerRefit 4_Upper Wing', 'BelisknerRefit 4_Port Wing', 'BelisknerRefit 4_Lower Wing', 'BelisknerRefit 5_Starboard Wing', 'BelisknerRefit 5_Upper Wing', 'BelisknerRefit 5_Port Wing', 'BelisknerRefit 5_Lower Wing', 'BelisknerRefit 6_Starboard Wing', 'BelisknerRefit 6_Upper Wing', 'BelisknerRefit 6_Port Wing', 'BelisknerRefit 6_Lower Wing']
+#>>>Refreshed Ship List: ['Player', 'Type 89 TARDIS-1', 'Player_Starboard Wing', 'Player_Upper Wing', 'Player_Port Wing', 'Player_Lower Wing', 'ONeill 1', 'BelisknerRefit 1', 'BelisknerRefit 2', 'BelisknerRefit 3', 'BelisknerRefit 4', 'BelisknerRefit 5', 'BelisknerRefit 6', 'BelisknerRefit 1_Starboard Wing', 'BelisknerRefit 1_Upper Wing', 'BelisknerRefit 1_Port Wing', 'BelisknerRefit 1_Lower Wing', 'BelisknerRefit 2_Starboard Wing', 'BelisknerRefit 2_Upper Wing', 'BelisknerRefit 2_Port Wing', 'BelisknerRefit 2_Lower Wing', 'BelisknerRefit 3_Starboard Wing', 'BelisknerRefit 3_Upper Wing', 'BelisknerRefit 3_Port Wing', 'BelisknerRefit 3_Lower Wing', 'BelisknerRefit 4_Starboard Wing', 'BelisknerRefit 4_Upper Wing', 'BelisknerRefit 4_Port Wing', 'BelisknerRefit 4_Lower Wing', 'BelisknerRefit 5_Starboard Wing', 'BelisknerRefit 5_Upper Wing', 'BelisknerRefit 5_Port Wing', 'BelisknerRefit 5_Lower Wing', 'BelisknerRefit 6_Starboard Wing', 'BelisknerRefit 6_Upper Wing', 'BelisknerRefit 6_Port Wing', 'BelisknerRefit 6_Lower Wing']
+#>>>Refreshed Ship List: ['Player', 'Type 89 TARDIS-1', 'Player_Starboard Wing', 'Player_Upper Wing', 'Player_Port Wing', 'Player_Lower Wing', 'ONeill 1', 'BelisknerRefit 1', 'BelisknerRefit 2', 'BelisknerRefit 3', 'BelisknerRefit 4', 'BelisknerRefit 5', 'BelisknerRefit 6', 'BelisknerRefit 1_Starboard Wing', 'BelisknerRefit 1_Upper Wing', 'BelisknerRefit 1_Port Wing', 'BelisknerRefit 1_Lower Wing', 'BelisknerRefit 2_Starboard Wing', 'BelisknerRefit 2_Upper Wing', 'BelisknerRefit 2_Port Wing', 'BelisknerRefit 2_Lower Wing', 'BelisknerRefit 3_Starboard Wing', 'BelisknerRefit 3_Upper Wing', 'BelisknerRefit 3_Port Wing', 'BelisknerRefit 3_Lower Wing', 'BelisknerRefit 4_Starboard Wing', 'BelisknerRefit 4_Upper Wing', 'BelisknerRefit 4_Port Wing', 'BelisknerRefit 4_Lower Wing', 'BelisknerRefit 5_Starboard Wing', 'BelisknerRefit 5_Upper Wing', 'BelisknerRefit 5_Port Wing', 'BelisknerRefit 5_Lower Wing', 'BelisknerRefit 6_Starboard Wing', 'BelisknerRefit 6_Upper Wing', 'BelisknerRefit 6_Port Wing', 'BelisknerRefit 6_Lower Wing']
+#>>>Refreshed Ship List: ['Player', 'Type 89 TARDIS-1', 'Player_Starboard Wing', 'Player_Upper Wing', 'Player_Port Wing', 'Player_Lower Wing', 'ONeill 1', 'BelisknerRefit 1', 'BelisknerRefit 2', 'BelisknerRefit 3', 'BelisknerRefit 4', 'BelisknerRefit 5', 'BelisknerRefit 6', 'BelisknerRefit 1_Starboard Wing', 'BelisknerRefit 1_Upper Wing', 'BelisknerRefit 1_Port Wing', 'BelisknerRefit 1_Lower Wing', 'BelisknerRefit 2_Starboard Wing', 'BelisknerRefit 2_Upper Wing', 'BelisknerRefit 2_Port Wing', 'BelisknerRefit 2_Lower Wing', 'BelisknerRefit 3_Starboard Wing', 'BelisknerRefit 3_Upper Wing', 'BelisknerRefit 3_Port Wing', 'BelisknerRefit 3_Lower Wing', 'BelisknerRefit 4_Starboard Wing', 'BelisknerRefit 4_Upper Wing', 'BelisknerRefit 4_Port Wing', 'BelisknerRefit 4_Lower Wing', 'BelisknerRefit 5_Starboard Wing', 'BelisknerRefit 5_Upper Wing', 'BelisknerRefit 5_Port Wing', 'BelisknerRefit 5_Lower Wing', 'BelisknerRefit 6_Starboard Wing', 'BelisknerRefit 6_Upper Wing', 'BelisknerRefit 6_Port Wing', 'BelisknerRefit 6_Lower Wing']
+#>>>Refreshed Ship List: ['Player', 'Type 89 TARDIS-1', 'Player_Starboard Wing', 'Player_Upper Wing', 'Player_Port Wing', 'Player_Lower Wing', 'ONeill 1', 'BelisknerRefit 1', 'BelisknerRefit 2', 'BelisknerRefit 3', 'BelisknerRefit 4', 'BelisknerRefit 5', 'BelisknerRefit 6', 'BelisknerRefit 1_Starboard Wing', 'BelisknerRefit 1_Upper Wing', 'BelisknerRefit 1_Port Wing', 'BelisknerRefit 1_Lower Wing', 'BelisknerRefit 2_Starboard Wing', 'BelisknerRefit 2_Upper Wing', 'BelisknerRefit 2_Port Wing', 'BelisknerRefit 2_Lower Wing', 'BelisknerRefit 3_Starboard Wing', 'BelisknerRefit 3_Upper Wing', 'BelisknerRefit 3_Port Wing', 'BelisknerRefit 3_Lower Wing', 'BelisknerRefit 4_Starboard Wing', 'BelisknerRefit 4_Upper Wing', 'BelisknerRefit 4_Port Wing', 'BelisknerRefit 4_Lower Wing', 'BelisknerRefit 5_Starboard Wing', 'BelisknerRefit 5_Upper Wing', 'BelisknerRefit 5_Port Wing', 'BelisknerRefit 5_Lower Wing', 'BelisknerRefit 6_Starboard Wing', 'BelisknerRefit 6_Upper Wing', 'BelisknerRefit 6_Port Wing', 'BelisknerRefit 6_Lower Wing']
+#>>>Refreshed Ship List: ['Player', 'Type 89 TARDIS-1', 'Player_Starboard Wing', 'Player_Upper Wing', 'Player_Port Wing', 'Player_Lower Wing', 'ONeill 1', 'BelisknerRefit 1', 'BelisknerRefit 2', 'BelisknerRefit 3', 'BelisknerRefit 4', 'BelisknerRefit 5', 'BelisknerRefit 6', 'BelisknerRefit 1_Starboard Wing', 'BelisknerRefit 1_Upper Wing', 'BelisknerRefit 1_Port Wing', 'BelisknerRefit 1_Lower Wing', 'BelisknerRefit 2_Starboard Wing', 'BelisknerRefit 2_Upper Wing', 'BelisknerRefit 2_Port Wing', 'BelisknerRefit 2_Lower Wing', 'BelisknerRefit 3_Starboard Wing', 'BelisknerRefit 3_Upper Wing', 'BelisknerRefit 3_Port Wing', 'BelisknerRefit 3_Lower Wing', 'BelisknerRefit 4_Starboard Wing', 'BelisknerRefit 4_Upper Wing', 'BelisknerRefit 4_Port Wing', 'BelisknerRefit 4_Lower Wing', 'BelisknerRefit 5_Starboard Wing', 'BelisknerRefit 5_Upper Wing', 'BelisknerRefit 5_Port Wing', 'BelisknerRefit 5_Lower Wing', 'BelisknerRefit 6_Starboard Wing', 'BelisknerRefit 6_Upper Wing', 'BelisknerRefit 6_Port Wing', 'BelisknerRefit 6_Lower Wing']
+#>>>Refreshed Ship List: ['Player', 'Type 89 TARDIS-1', 'Player_Starboard Wing', 'Player_Upper Wing', 'Player_Port Wing', 'Player_Lower Wing', 'ONeill 1', 'BelisknerRefit 1', 'BelisknerRefit 2', 'BelisknerRefit 3', 'BelisknerRefit 4', 'BelisknerRefit 5', 'BelisknerRefit 6', 'BelisknerRefit 1_Starboard Wing', 'BelisknerRefit 1_Upper Wing', 'BelisknerRefit 1_Port Wing', 'BelisknerRefit 1_Lower Wing', 'BelisknerRefit 2_Starboard Wing', 'BelisknerRefit 2_Upper Wing', 'BelisknerRefit 2_Port Wing', 'BelisknerRefit 2_Lower Wing', 'BelisknerRefit 3_Starboard Wing', 'BelisknerRefit 3_Upper Wing', 'BelisknerRefit 3_Port Wing', 'BelisknerRefit 3_Lower Wing', 'BelisknerRefit 4_Starboard Wing', 'BelisknerRefit 4_Upper Wing', 'BelisknerRefit 4_Port Wing', 'BelisknerRefit 4_Lower Wing', 'BelisknerRefit 5_Starboard Wing', 'BelisknerRefit 5_Upper Wing', 'BelisknerRefit 5_Port Wing', 'BelisknerRefit 5_Lower Wing', 'BelisknerRefit 6_Starboard Wing', 'BelisknerRefit 6_Upper Wing', 'BelisknerRefit 6_Port Wing', 'BelisknerRefit 6_Lower Wing']
+#>>>Refreshed Ship List: ['Player', 'Type 89 TARDIS-1', 'Player_Starboard Wing', 'Player_Upper Wing', 'Player_Port Wing', 'Player_Lower Wing', 'ONeill 1', 'BelisknerRefit 1', 'BelisknerRefit 2', 'BelisknerRefit 3', 'BelisknerRefit 4', 'BelisknerRefit 5', 'BelisknerRefit 6', 'BelisknerRefit 1_Starboard Wing', 'BelisknerRefit 1_Upper Wing', 'BelisknerRefit 1_Port Wing', 'BelisknerRefit 1_Lower Wing', 'BelisknerRefit 2_Starboard Wing', 'BelisknerRefit 2_Upper Wing', 'BelisknerRefit 2_Port Wing', 'BelisknerRefit 2_Lower Wing', 'BelisknerRefit 3_Starboard Wing', 'BelisknerRefit 3_Upper Wing', 'BelisknerRefit 3_Port Wing', 'BelisknerRefit 3_Lower Wing', 'BelisknerRefit 4_Starboard Wing', 'BelisknerRefit 4_Upper Wing', 'BelisknerRefit 4_Port Wing', 'BelisknerRefit 4_Lower Wing', 'BelisknerRefit 5_Starboard Wing', 'BelisknerRefit 5_Upper Wing', 'BelisknerRefit 5_Port Wing', 'BelisknerRefit 5_Lower Wing', 'BelisknerRefit 6_Starboard Wing', 'BelisknerRefit 6_Upper Wing', 'BelisknerRefit 6_Port Wing', 'BelisknerRefit 6_Lower Wing']
+########################################
+# 16:44:41.360 of 18/January/2023, Wednesday
+#Ending of log dump - User is quiting the game
+########################################

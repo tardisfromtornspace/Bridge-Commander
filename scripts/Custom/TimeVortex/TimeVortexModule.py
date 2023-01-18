@@ -1472,12 +1472,10 @@ def HasPhasedTimeVortex(pPlayer):
                    pDisabled = pSystem.GetDisabledPercentage() * 100.0
                    if pStats > pDisabled:
                        # Engine is enabled, means it works
-                       print "Smooth"
                        return 'Phased TimeVortex Installed'
                        break                
 		pSystem = pPlayer.GetNextSubsystemMatch(pIterator)
 
-        print "harsh"
         pPlayer.EndGetSubsystemMatch(pIterator)
 
 # Checks if this ship can do Sigma Walkers Dimensional Drive

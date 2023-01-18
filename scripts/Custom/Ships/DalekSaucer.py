@@ -5,21 +5,23 @@
 
 import App
 import Foundation
-
-
+# thank you Mario
+from Custom.Autoload.RaceDalek import *
 
 abbrev = 'DalekSaucer'
 iconName = 'DalekSaucer'
 longName = 'Dalek Saucer'
 shipFile = 'DalekSaucer'
 species = App.SPECIES_GALAXY
-# SubMenu
 menuGroup = 'Doctor Who'
 playerMenuGroup = 'Doctor Who'
 SubMenu = "Dalek"
 
+# Once you have implemented the Autoload file, now you need to add the following, replacing "Dalek" by the species name
+# , "race": Dalek
+#
 
-Foundation.ShipDef.DalekSaucer = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
+Foundation.ShipDef.DalekSaucer = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu, "race": Dalek})
 Foundation.ShipDef.DalekSaucer.dTechs = {
 	'Adv Armor Tech': 1,
 	"AutoTargeting": { "Pulse": [2, 0] },
@@ -34,6 +36,7 @@ Foundation.ShipDef.DalekSaucer.dTechs = {
 	"Inversion Beam": [0.5, 0, 0.5, 1500],
 	"Power Drain Beam": [0.5, 0, 0.5, 1500]
 }
+
 Foundation.ShipDef.DalekSaucer.bPlanetKiller = 1
 
 Foundation.ShipDef.DalekSaucer.fMaxWarp = 9.99 + 0.0   # 0.0 makes sure that the number is a decimal number

@@ -29,7 +29,7 @@ sLookInMenu = "Dalek Ships"
 ########
 ## list of the ship script name  of ships of this race, to be added manually (that is, besides looking in the above 
 ## mentioned menu)
-lDefaultShips = ["Dalek2005Black", "Dalek2005Gold", "DalekNewParadigmBlue", "DalekNewParadigmGrey", "DalekNewParadigmOrange", "DalekNewParadigmRed", "DalekNewParadigmWhite", "DalekSaucer", "DalekSaucerShielded", "DalekBigSaucer", "DalekBigSaucerShielded"]
+lDefaultShips = ["Dalek2005Black", "Dalek2005Gold", "DalekNewParadigmBlue", "DalekNewParadigmEternal", "DalekNewParadigmGrey", "DalekNewParadigmOrange", "DalekNewParadigmRed", "DalekNewParadigmWhite", "DalekSaucer", "DalekSaucerShielded", "DalekBigSaucer", "DalekBigSaucerShielded", "Dalek Saucer"]
 
 ########
 ## dictionary showing the escorts of a ship class  (for a example, check the Dominion race script)

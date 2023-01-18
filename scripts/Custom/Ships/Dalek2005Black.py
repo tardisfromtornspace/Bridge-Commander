@@ -5,7 +5,7 @@
 
 import App
 import Foundation
-
+from Custom.Autoload.RaceDalek import *
 
 
 abbrev = 'Dalek2005Black'
@@ -17,9 +17,10 @@ species = App.SPECIES_AKIRA
 menuGroup = 'Doctor Who'
 playerMenuGroup = 'Doctor Who'
 SubMenu = "Dalek"
+SubSubMenu = "Leaders"
 
 
-Foundation.ShipDef.Dalek2005Black = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
+Foundation.ShipDef.Dalek2005Black = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu, "SubSubMenu": SubSubMenu, "race": Dalek })
 Foundation.ShipDef.Dalek2005Black.dTechs = {
 	'Adv Armor Tech': 1,
 	'Breen Drainer Immune': 0,

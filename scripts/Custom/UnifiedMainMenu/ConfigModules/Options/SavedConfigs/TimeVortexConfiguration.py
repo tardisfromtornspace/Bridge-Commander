@@ -1,4 +1,4 @@
-TunnelGFX = 'TimeVortexTunnelAlt6.tga'
+TunnelGFX = 'Default'
 FlashGFX = 'Default'
 BackdropGFX = 'Default'
 LoopSound = 1
