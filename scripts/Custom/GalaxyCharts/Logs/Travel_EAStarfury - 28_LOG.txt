@@ -1,0 +1,36 @@
+#This is the dump of the LogCreator: <EAStarfury - 28 Travel Logger LogCreator_20jtCvpt75pX>
+#This log file was created on: 21:2:42.747 of 19/January/2023, Thursday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>21:2:42.747 of 19/January/2023, Thursday
+#>>>Initialized EAStarfury - 28 Travel logger
+#>>>SELF = <EAStarfury - 28(1966429) Travel_6tYY1MxF5GQB>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>21:2:49.871 of 19/January/2023, Thursday
+#>>>Updated Target Ship = Dalek2005Gold10 24
+## -------------------- ##
+####################
+#######>>>21:3:17.623 of 19/January/2023, Thursday
+#>>>Updated Target Ship = Dalek2005Gold8 23
+## -------------------- ##
+####################
+#######>>>21:3:21.942 of 19/January/2023, Thursday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

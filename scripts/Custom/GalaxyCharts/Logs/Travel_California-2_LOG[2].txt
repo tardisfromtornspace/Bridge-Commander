@@ -1,0 +1,25 @@
+#This is the dump of the LogCreator: <California-2 Travel Logger[2] LogCreator_DwdxpwyIXT18>
+#This log file was created on: 21:25:40.252 of 18/January/2023, Wednesday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>21:25:40.252 of 18/January/2023, Wednesday
+#>>>Initialized California-2 Travel logger
+#>>>SELF = <California-2(58305) Travel_t1h71T4PC8zR>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Ship is dead or dying
+#>>>Ship is dead or dying (at SetDestination)
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Ship is dead or dying (at SetDestination)
+#>>>Set Exit Placement Name as None
+#>>>Enable Towing: 0
+#>>>Travelling procedures initiated...
+#>>> -Ship is dead or dying

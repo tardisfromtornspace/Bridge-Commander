@@ -41,8 +41,8 @@ Foundation.ShipDef.Victory = Foundation.ShipDef(abbrev, species, { 'name': longN
 Foundation.ShipDef.Victory.dTechs = {
 	'Regenerative Shields': 30,
 	"AutoTargeting": { "Phaser": [3, 1] },
-	'Polarized Hull Plating': { "Plates": ["PlastiCrystalline Armour"]
-}}
+	'Polarized Hull Plating': { "Plates": ["PlastiCrystalline Armour"]}
+}
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

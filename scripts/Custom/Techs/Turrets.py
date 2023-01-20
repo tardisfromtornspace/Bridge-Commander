@@ -146,8 +146,9 @@ class Turrets(FoundationTech.TechDef):
                                 # Alert change handler doesn't work for AI ships, so use subsystem changed instead
                                 pShip.AddPythonFuncHandlerForInstance(App.ET_SUBSYSTEM_STATE_CHANGED, __name__ + ".SubsystemStateChanged")
 
-                                pShip.AddPythonFuncHandlerForInstance(App.ET_CLOAK_BEGINNING, __name__ + ".CloakHandler")
-                                pShip.AddPythonFuncHandlerForInstance(App.ET_DECLOAK_BEGINNING, __name__ + ".DecloakHandler")
+# TO-DO see why these lines may break some of the code
+                                #pShip.AddPythonFuncHandlerForInstance(App.ET_CLOAK_BEGINNING, __name__ + ".CloakHandler")
+                                #pShip.AddPythonFuncHandlerForInstance(App.ET_DECLOAK_BEGINNING, __name__ + ".DecloakHandler")
                                 self.bAddedAlertListener[pShip.GetName()] = 1
 				AlertListener = 1
                 
@@ -161,6 +162,11 @@ class Turrets(FoundationTech.TechDef):
 		# get our Ship
                 debug(__name__ + ", DetachShip")
                 pShip = App.ShipClass_GetObjectByID(None, iShipID)
+
+                pSeq = App.TGSequence_Create()
+                pSeq.AppendAction(App.TGScriptAction_Create(__name__, "AlertMoveFinishAction", pShip, pInstance, GetCurrentMoveID(pShip, pInstance)), 1.0)
+                pSeq.Play()
+
                 if pShip:
 			# remove the listeners
                         if self.bAddedWarpListener.has_key(pShip.GetName()):
@@ -172,9 +178,8 @@ class Turrets(FoundationTech.TechDef):
                                 pShip.RemoveHandlerForInstance(App.ET_SUBSYSTEM_STATE_CHANGED, __name__ + ".SubsystemStateChanged")
 				pShip.RemoveHandlerForInstance(App.ET_SET_ALERT_LEVEL, __name__ + ".AlertStateChanged")
 
-                                pShip.RemoveHandlerForInstance(App.ET_CLOAK_BEGINNING, __name__ + ".CloakHandler")
-                                pShip.RemoveHandlerForInstance(App.ET_DECLOAK_BEGINNING, __name__ + ".DecloakHandler")
-
+                                #pShip.RemoveHandlerForInstance(App.ET_CLOAK_BEGINNING, __name__ + ".CloakHandler")
+                                #pShip.RemoveHandlerForInstance(App.ET_DECLOAK_BEGINNING, __name__ + ".DecloakHandler")
                                 del self.bAddedAlertListener[pShip.GetName()]
 			
                         if hasattr(pInstance, "OptionsList"):
@@ -362,7 +367,7 @@ class MovingEvent:
                 if not pNacelle:
                         #print "Moving Error: Lost part"
                         return 0
-
+                        
                 # set new Rotation values
                 pTarget = pShip.GetTarget()
                 if pTarget:
@@ -395,7 +400,7 @@ class MovingEvent:
                 
                 self.dOptionsList["currentRotation"][self.pShip.GetName()] = [self.iCurRotX, self.iCurRotY, self.iCurRotZ]
                 self.dOptionsList["currentPosition"][self.pShip.GetName()] = [self.iCurTransX, self.iCurTransY, self.iCurTransZ]
- 
+                
 		# Hardpoints
 		for sHP in self.dCurHPs.keys():
 			self.dCurHPs[sHP][0] = self.dCurHPs[sHP][0] + self.dHPSteps[sHP][0]
@@ -440,7 +445,6 @@ class MovingEvent:
                 if pCloak:
                         pCloak.InstantDecloak()
 
-
 # calls the MovingEvent class and returns its return value
 def MovingAction(pAction, oMovingEvent, pShip):
         debug(__name__ + ", MovingAction")
@@ -476,6 +480,140 @@ def SubsystemStateChanged(pObject, pEvent):
                 PartsForWeaponState(pShip)
 		
         pObject.CallNextHandler(pEvent)
+
+def CloakHandler(pObject, pEvent):
+        pInstance = FoundationTech.dShips[pObject.GetName()]
+
+        pShip = App.ShipClass_Cast(App.TGObject_GetTGObjectPtr(pInstance.pShipID))
+
+        iType = pShip.GetAlertLevel()
+        iLongestTime = 0.0
+        dHardpoints = {}
+        
+        # check if ship still exits
+        pShip = App.ShipClass_GetObjectByID(None, pShip.GetObjID())
+        if not pShip:
+                return
+        
+        # try to get the last alert level
+        for item in pInstance.OptionsList:
+                if item[0] == "Setup":
+                        dGenShipDict = item[1]
+                        break
+	
+	# update alert state
+        dGenShipDict["AlertLevel"][pShip.GetName()] = iType
+        IncCurrentMoveID(pShip, pInstance)
+
+        # iterate over every Turret
+
+        for item in pInstance.OptionsList:
+                if item[0] == "Setup":
+                        # attack or cruise modus?
+			dHardpoints = {}
+                        if iType == 2 and item[1].has_key("AttackHardpoints"):
+                                dHardpoints = item[1]["AttackHardpoints"]
+                        elif iType != 2 and item[1].has_key("Hardpoints"):
+                                dHardpoints = item[1]["Hardpoints"]
+                        
+                        # setup is not a Turret
+                        continue
+
+                # set the id for this move
+                iThisMovID = item[1]["curMovID"][pShip.GetName()] + 1
+                item[1]["curMovID"][pShip.GetName()] = iThisMovID
+        
+                fDuration = 1000.0
+                #if item[1].has_key("AttackDuration"):
+                #        fDuration = item[1]["AttackDuration"]
+                    
+                # Rotation
+                lStartingRotation = item[1]["currentRotation"][pShip.GetName()]
+                lStoppingRotation = lStartingRotation
+                if item[1].has_key("AttackRotation") and iType == 2:
+                        lStoppingRotation = item[1]["AttackRotation"]
+		else:
+			lStoppingRotation = item[1]["Rotation"]
+                
+		
+                # Translation
+                lStartingTranslation = item[1]["currentPosition"][pShip.GetName()]
+                lStoppingTranslation = lStartingTranslation
+                if item[1].has_key("AttackPosition") and iType == 2:
+                        lStoppingTranslation = item[1]["AttackPosition"]
+		else:
+			lStoppingTranslation = item[1]["Position"]
+                oMovingEvent = MovingEvent(pShip, item, fDuration, lStartingRotation, lStoppingRotation, lStartingTranslation, lStoppingTranslation, dHardpoints)
+                oMovingEvent.isCloaking(pShip)
+
+	pObject.CallNextHandler(pEvent)
+
+def DecloakHandler(pObject, pEvent):
+        pInstance = FoundationTech.dShips[pObject.GetName()]
+
+        pShip = App.ShipClass_Cast(App.TGObject_GetTGObjectPtr(pInstance.pShipID))
+
+        iType = pShip.GetAlertLevel()
+        iLongestTime = 0.0
+        dHardpoints = {}
+        
+        # check if ship still exits
+        pShip = App.ShipClass_GetObjectByID(None, pShip.GetObjID())
+        if not pShip:
+                return
+        
+        # try to get the last alert level
+        for item in pInstance.OptionsList:
+                if item[0] == "Setup":
+                        dGenShipDict = item[1]
+                        break
+	
+	# update alert state
+        dGenShipDict["AlertLevel"][pShip.GetName()] = iType
+        IncCurrentMoveID(pShip, pInstance)
+
+        # iterate over every Turret
+
+        for item in pInstance.OptionsList:
+                if item[0] == "Setup":
+                        # attack or cruise modus?
+			dHardpoints = {}
+                        if iType == 2 and item[1].has_key("AttackHardpoints"):
+                                dHardpoints = item[1]["AttackHardpoints"]
+                        elif iType != 2 and item[1].has_key("Hardpoints"):
+                                dHardpoints = item[1]["Hardpoints"]
+                        
+                        # setup is not a Turret
+                        continue
+
+                # set the id for this move
+                iThisMovID = item[1]["curMovID"][pShip.GetName()] + 1
+                item[1]["curMovID"][pShip.GetName()] = iThisMovID
+        
+                fDuration = 1000.0
+                #if item[1].has_key("AttackDuration"):
+                #        fDuration = item[1]["AttackDuration"]
+                    
+                # Rotation
+                lStartingRotation = item[1]["currentRotation"][pShip.GetName()]
+                lStoppingRotation = lStartingRotation
+                if item[1].has_key("AttackRotation") and iType == 2:
+                        lStoppingRotation = item[1]["AttackRotation"]
+		else:
+			lStoppingRotation = item[1]["Rotation"]
+                
+		
+                # Translation
+                lStartingTranslation = item[1]["currentPosition"][pShip.GetName()]
+                lStoppingTranslation = lStartingTranslation
+                if item[1].has_key("AttackPosition") and iType == 2:
+                        lStoppingTranslation = item[1]["AttackPosition"]
+		else:
+			lStoppingTranslation = item[1]["Position"]
+                oMovingEvent = MovingEvent(pShip, item, fDuration, lStartingRotation, lStoppingRotation, lStartingTranslation, lStoppingTranslation, dHardpoints)
+                oMovingEvent.isDecloaking(pShip)
+
+	pObject.CallNextHandler(pEvent)
         
 
 # called when a ship exits a Set. Replacement for WARP_END Handler.
@@ -720,7 +858,7 @@ def PartsForWeaponStateLoop(pShip):
                 iThisMovID = item[1]["curMovID"][pShip.GetName()] + 1
                 item[1]["curMovID"][pShip.GetName()] = iThisMovID
         
-                fDuration = 1000.0
+                fDuration = 200.0
                 #if item[1].has_key("AttackDuration"):
                 #        fDuration = item[1]["AttackDuration"]
                     
@@ -744,6 +882,15 @@ def PartsForWeaponStateLoop(pShip):
                 iTime = 0.0
                 iTimeNeededTotal = 0.0
                 oMovingEvent = MovingEvent(pShip, item, fDuration, lStartingRotation, lStoppingRotation, lStartingTranslation, lStoppingTranslation, dHardpoints)
+# EXTRA ADDITIO HOPEFULLY TO REPLACE THE HANDLERS WHICH SEEM TO CAUSE AN ISSUE AS WELL
+
+                pCloak = pShip.GetCloakingSubsystem()
+                if pCloak:
+                        if pCloak.IsCloaking():
+                                oMovingEvent.isCloaking(pShip)
+                        else:
+                                if pCloak.IsDecloaking():
+                                        oMovingEvent.isDecloaking(pShip)
                 pSeq = App.TGSequence_Create()
                 
 		# do the move
@@ -763,154 +910,27 @@ def PartsForWeaponStateLoop(pShip):
                         iLongestTime = iTimeNeededTotal
                 
         # finally detach
+
+        pShip = App.ShipClass_GetObjectByID(None, pShip.GetObjID())
+        if not pShip:
+                return
+
         pSeq = App.TGSequence_Create()
         pSeq.AppendAction(App.TGScriptAction_Create(__name__, "UpdateHardpointPositions", pShip, dHardpoints), iLongestTime)
         pSeq.AppendAction(App.TGScriptAction_Create(__name__, "PartsForWeaponStateLoopAction", pShip), iLongestTime)
         #pSeq.AppendAction(App.TGScriptAction_Create(__name__, "AlertMoveFinishAction", pShip, pInstance, GetCurrentMoveID(pShip, pInstance)), 2.0)
         pSeq.Play()
 
-        #Infinite loop
-        #PartsForWeaponStateLoop(pShip)
         return 0
 
 def PartsForWeaponStateLoopAction(pAction, pShip):	
 
+        pShip = App.ShipClass_GetObjectByID(None, pShip.GetObjID())
+        if not pShip:
+                return
+
         PartsForWeaponStateLoop(pShip)
         return 0
-
-def CloakHandler(pObject, pEvent):
-        pInstance = FoundationTech.dShips[pObject.GetName()]
-
-        pShip = App.ShipClass_Cast(App.TGObject_GetTGObjectPtr(pInstance.pShipID))
-
-        iType = pShip.GetAlertLevel()
-        iLongestTime = 0.0
-        dHardpoints = {}
-        
-        # check if ship still exits
-        pShip = App.ShipClass_GetObjectByID(None, pShip.GetObjID())
-        if not pShip:
-                return
-        
-        # try to get the last alert level
-        for item in pInstance.OptionsList:
-                if item[0] == "Setup":
-                        dGenShipDict = item[1]
-                        break
-	
-	# update alert state
-        dGenShipDict["AlertLevel"][pShip.GetName()] = iType
-        IncCurrentMoveID(pShip, pInstance)
-
-        # iterate over every Turret
-
-        for item in pInstance.OptionsList:
-                if item[0] == "Setup":
-                        # attack or cruise modus?
-			dHardpoints = {}
-                        if iType == 2 and item[1].has_key("AttackHardpoints"):
-                                dHardpoints = item[1]["AttackHardpoints"]
-                        elif iType != 2 and item[1].has_key("Hardpoints"):
-                                dHardpoints = item[1]["Hardpoints"]
-                        
-                        # setup is not a Turret
-                        continue
-
-                # set the id for this move
-                iThisMovID = item[1]["curMovID"][pShip.GetName()] + 1
-                item[1]["curMovID"][pShip.GetName()] = iThisMovID
-        
-                fDuration = 1000.0
-                #if item[1].has_key("AttackDuration"):
-                #        fDuration = item[1]["AttackDuration"]
-                    
-                # Rotation
-                lStartingRotation = item[1]["currentRotation"][pShip.GetName()]
-                lStoppingRotation = lStartingRotation
-                if item[1].has_key("AttackRotation") and iType == 2:
-                        lStoppingRotation = item[1]["AttackRotation"]
-		else:
-			lStoppingRotation = item[1]["Rotation"]
-                
-		
-                # Translation
-                lStartingTranslation = item[1]["currentPosition"][pShip.GetName()]
-                lStoppingTranslation = lStartingTranslation
-                if item[1].has_key("AttackPosition") and iType == 2:
-                        lStoppingTranslation = item[1]["AttackPosition"]
-		else:
-			lStoppingTranslation = item[1]["Position"]
-                oMovingEvent = MovingEvent(pShip, item, fDuration, lStartingRotation, lStoppingRotation, lStartingTranslation, lStoppingTranslation, dHardpoints)
-                oMovingEvent.isCloaking(pShip)
-
-	pObject.CallNextHandler(pEvent)
-
-def DecloakHandler(pObject, pEvent):
-        pInstance = FoundationTech.dShips[pObject.GetName()]
-
-        pShip = App.ShipClass_Cast(App.TGObject_GetTGObjectPtr(pInstance.pShipID))
-
-        iType = pShip.GetAlertLevel()
-        iLongestTime = 0.0
-        dHardpoints = {}
-        
-        # check if ship still exits
-        pShip = App.ShipClass_GetObjectByID(None, pShip.GetObjID())
-        if not pShip:
-                return
-        
-        # try to get the last alert level
-        for item in pInstance.OptionsList:
-                if item[0] == "Setup":
-                        dGenShipDict = item[1]
-                        break
-	
-	# update alert state
-        dGenShipDict["AlertLevel"][pShip.GetName()] = iType
-        IncCurrentMoveID(pShip, pInstance)
-
-        # iterate over every Turret
-
-        for item in pInstance.OptionsList:
-                if item[0] == "Setup":
-                        # attack or cruise modus?
-			dHardpoints = {}
-                        if iType == 2 and item[1].has_key("AttackHardpoints"):
-                                dHardpoints = item[1]["AttackHardpoints"]
-                        elif iType != 2 and item[1].has_key("Hardpoints"):
-                                dHardpoints = item[1]["Hardpoints"]
-                        
-                        # setup is not a Turret
-                        continue
-
-                # set the id for this move
-                iThisMovID = item[1]["curMovID"][pShip.GetName()] + 1
-                item[1]["curMovID"][pShip.GetName()] = iThisMovID
-        
-                fDuration = 1000.0
-                #if item[1].has_key("AttackDuration"):
-                #        fDuration = item[1]["AttackDuration"]
-                    
-                # Rotation
-                lStartingRotation = item[1]["currentRotation"][pShip.GetName()]
-                lStoppingRotation = lStartingRotation
-                if item[1].has_key("AttackRotation") and iType == 2:
-                        lStoppingRotation = item[1]["AttackRotation"]
-		else:
-			lStoppingRotation = item[1]["Rotation"]
-                
-		
-                # Translation
-                lStartingTranslation = item[1]["currentPosition"][pShip.GetName()]
-                lStoppingTranslation = lStartingTranslation
-                if item[1].has_key("AttackPosition") and iType == 2:
-                        lStoppingTranslation = item[1]["AttackPosition"]
-		else:
-			lStoppingTranslation = item[1]["Position"]
-                oMovingEvent = MovingEvent(pShip, item, fDuration, lStartingRotation, lStoppingRotation, lStartingTranslation, lStoppingTranslation, dHardpoints)
-                oMovingEvent.isDecloaking(pShip)
-
-	pObject.CallNextHandler(pEvent)
 
 
 # Set the parts for Warp state

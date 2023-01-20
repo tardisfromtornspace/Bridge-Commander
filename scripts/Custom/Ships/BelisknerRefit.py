@@ -38,7 +38,6 @@ credits = {
 #                                                                                     #
 Foundation.ShipDef.BelisknerRefit = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
 
-
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

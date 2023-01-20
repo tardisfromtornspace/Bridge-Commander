@@ -1,0 +1,23 @@
+#This is the dump of the LogCreator: <Player_Lower Wing Travel Logger LogCreator_YJ3Gd4O08537>
+#This log file was created on: 21:37:43.166 of 18/January/2023, Wednesday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>21:37:43.166 of 18/January/2023, Wednesday
+#>>>Initialized Player_Lower Wing Travel logger
+#>>>SELF = <Player_Lower Wing(72039) Travel_MXal6yydsh9n>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization

@@ -1,0 +1,32 @@
+#This is the dump of the LogCreator: <EAKestrel - 22 Travel Logger LogCreator_57FH2hIQ7mt1>
+#This log file was created on: 20:58:55.288 of 19/January/2023, Thursday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>20:58:55.288 of 19/January/2023, Thursday
+#>>>Initialized EAKestrel - 22 Travel logger
+#>>>SELF = <EAKestrel - 22(1701933) Travel_1e83130lws6D>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>20:58:56.732 of 19/January/2023, Thursday
+#>>>Updated Target Ship = Dalek2005Gold 22
+## -------------------- ##
+####################
+#######>>>20:59:1.774 of 19/January/2023, Thursday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

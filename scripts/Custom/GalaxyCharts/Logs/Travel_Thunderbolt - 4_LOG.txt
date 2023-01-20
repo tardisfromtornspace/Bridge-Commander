@@ -1,0 +1,31 @@
+#This is the dump of the LogCreator: <Thunderbolt - 4 Travel Logger LogCreator_G26q7gS1M3V9>
+#This log file was created on: 20:42:14.384 of 19/January/2023, Thursday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>20:42:14.384 of 19/January/2023, Thursday
+#>>>Initialized Thunderbolt - 4 Travel logger
+#>>>SELF = <Thunderbolt - 4(351145) Travel_EE2IiEIM175k>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>20:42:15.526 of 19/January/2023, Thursday
+#>>>Updated Target Ship = Dalek2005Gold 3
+## -------------------- ##
+####################
+#######>>>20:42:21.240 of 19/January/2023, Thursday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

@@ -1,0 +1,23 @@
+#This is the dump of the LogCreator: <Victory-1_Port Wing Travel Logger LogCreator_I4bcc4q59g5T>
+#This log file was created on: 21:37:35.341 of 18/January/2023, Wednesday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>21:37:35.341 of 18/January/2023, Wednesday
+#>>>Initialized Victory-1_Port Wing Travel logger
+#>>>SELF = <Victory-1_Port Wing(63899) Travel_2mCJn1Lfk9a1>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
