@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Dalek2005Gold6 5 Travel Logger LogCreator_21Pz15q011yF>
-#This log file was created on: 20:42:48.498 of 19/January/2023, Thursday
+#This is the dump of the LogCreator: <Dalek2005Gold6 5 Travel Logger LogCreator_B7i7l7DBmoZ0>
+#This log file was created on: 18:56:46.536 of 27/January/2023, Friday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>20:42:48.498 of 19/January/2023, Thursday
+#######>>>18:56:46.536 of 27/January/2023, Friday
 #>>>Initialized Dalek2005Gold6 5 Travel logger
-#>>>SELF = <Dalek2005Gold6 5(407144) Travel_79c0oaN5w9Ts>
+#>>>SELF = <Dalek2005Gold6 5(358884) Travel_S8rZDhvy8F77>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -23,322 +23,72 @@ Updating Travelling Procedures...
 #>>>Chaser pre-emptive Refresher Initialization
 ## -------------------- ##
 ####################
-#######>>>20:42:54.138 of 19/January/2023, Thursday
-#>>>Updated Target Ship = Player
+#######>>>18:56:58.853 of 27/January/2023, Friday
+#>>>Updated Target Ship = U.S.S. Gateway-1
 #>>>Can Chase Target = 0
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>20:42:54.621 of 19/January/2023, Thursday
+#######>>>18:56:59.339 of 27/January/2023, Friday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>20:42:54.738 of 19/January/2023, Thursday
+#######>>>18:56:59.441 of 27/January/2023, Friday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>20:42:54.942 of 19/January/2023, Thursday
+#######>>>18:56:59.552 of 27/January/2023, Friday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>20:42:55.178 of 19/January/2023, Thursday
+#######>>>18:56:59.654 of 27/January/2023, Friday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>20:42:55.421 of 19/January/2023, Thursday
+#######>>>18:57:0.005 of 27/January/2023, Friday
+#>>>Updated Target Ship = U.S.S. Gateway-4
+#>>> -Cancelling, too close to target to warp intercept...
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>20:42:55.606 of 19/January/2023, Thursday
+#######>>>18:57:0.423 of 27/January/2023, Friday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>20:42:55.835 of 19/January/2023, Thursday
+#######>>>18:57:0.589 of 27/January/2023, Friday
+#>>> -Cancelling, too close to target to warp intercept...
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>20:42:56.142 of 19/January/2023, Thursday
+#######>>>18:57:0.943 of 27/January/2023, Friday
 #>>>Ship can't chase, directing to Travel update...
+#>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>20:42:56.321 of 19/January/2023, Thursday
+#######>>>18:57:1.961 of 27/January/2023, Friday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>20:42:56.572 of 19/January/2023, Thursday
+#######>>>18:57:2.120 of 27/January/2023, Friday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>20:42:56.807 of 19/January/2023, Thursday
+#######>>>18:57:2.259 of 27/January/2023, Friday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>20:42:57.055 of 19/January/2023, Thursday
+#######>>>18:57:2.384 of 27/January/2023, Friday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>20:42:57.184 of 19/January/2023, Thursday
+#######>>>18:57:2.551 of 27/January/2023, Friday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>20:42:57.422 of 19/January/2023, Thursday
-#>>>Updated Target Ship = Victory-3
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>20:42:57.774 of 19/January/2023, Thursday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>20:42:57.901 of 19/January/2023, Thursday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>20:42:58.185 of 19/January/2023, Thursday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>20:42:58.520 of 19/January/2023, Thursday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>20:42:58.750 of 19/January/2023, Thursday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>20:42:59.877 of 19/January/2023, Thursday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>20:43:0.129 of 19/January/2023, Thursday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>20:43:0.245 of 19/January/2023, Thursday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>20:43:0.464 of 19/January/2023, Thursday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>20:43:0.707 of 19/January/2023, Thursday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>20:43:0.924 of 19/January/2023, Thursday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>20:43:1.234 of 19/January/2023, Thursday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>20:43:1.401 of 19/January/2023, Thursday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>20:43:1.658 of 19/January/2023, Thursday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>20:43:2.016 of 19/January/2023, Thursday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>20:43:2.401 of 19/January/2023, Thursday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>20:43:2.722 of 19/January/2023, Thursday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>20:43:3.144 of 19/January/2023, Thursday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>20:43:3.408 of 19/January/2023, Thursday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>20:43:4.121 of 19/January/2023, Thursday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>20:43:4.621 of 19/January/2023, Thursday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>20:43:4.764 of 19/January/2023, Thursday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>20:43:5.678 of 19/January/2023, Thursday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>20:43:5.821 of 19/January/2023, Thursday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>20:43:5.940 of 19/January/2023, Thursday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>20:43:6.067 of 19/January/2023, Thursday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>20:43:6.491 of 19/January/2023, Thursday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>20:43:6.881 of 19/January/2023, Thursday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>20:43:7.569 of 19/January/2023, Thursday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>20:43:8.824 of 19/January/2023, Thursday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>20:43:8.960 of 19/January/2023, Thursday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>20:43:9.296 of 19/January/2023, Thursday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>20:43:9.533 of 19/January/2023, Thursday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>20:43:9.883 of 19/January/2023, Thursday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>20:43:10.336 of 19/January/2023, Thursday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>20:43:11.037 of 19/January/2023, Thursday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>20:43:11.279 of 19/January/2023, Thursday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>20:43:11.494 of 19/January/2023, Thursday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>20:43:11.686 of 19/January/2023, Thursday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>20:43:12.351 of 19/January/2023, Thursday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>20:43:12.597 of 19/January/2023, Thursday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>20:43:12.789 of 19/January/2023, Thursday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>20:43:13.174 of 19/January/2023, Thursday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>20:43:14.086 of 19/January/2023, Thursday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>20:43:16.120 of 19/January/2023, Thursday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>20:43:16.279 of 19/January/2023, Thursday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>20:43:16.429 of 19/January/2023, Thursday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>20:43:16.627 of 19/January/2023, Thursday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>20:43:16.767 of 19/January/2023, Thursday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>20:43:16.884 of 19/January/2023, Thursday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>20:43:17.083 of 19/January/2023, Thursday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>20:43:18.078 of 19/January/2023, Thursday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>20:43:19.138 of 19/January/2023, Thursday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>20:43:19.561 of 19/January/2023, Thursday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>20:43:20.375 of 19/January/2023, Thursday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>20:43:20.686 of 19/January/2023, Thursday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>20:43:20.893 of 19/January/2023, Thursday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>20:43:21.083 of 19/January/2023, Thursday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>20:43:21.286 of 19/January/2023, Thursday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>20:43:21.419 of 19/January/2023, Thursday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>20:43:21.666 of 19/January/2023, Thursday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>20:43:23.640 of 19/January/2023, Thursday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>20:43:27.850 of 19/January/2023, Thursday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>20:43:29.954 of 19/January/2023, Thursday
-#>>>Ship can't chase, directing to Travel update...
+#######>>>18:57:2.723 of 27/January/2023, Friday
 #>>>Stopping Refresh Handler
 #>>>Deleting...
+########################################
+# 19:0:2.134 of 27/January/2023, Friday
+#Ending of log dump - User is quiting the game
+########################################

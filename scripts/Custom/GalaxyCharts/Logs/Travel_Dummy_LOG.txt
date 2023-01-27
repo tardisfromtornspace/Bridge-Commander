@@ -1,0 +1,23 @@
+#This is the dump of the LogCreator: <Dummy Travel Logger LogCreator_Q3xvwbjfr9cJ>
+#This log file was created on: 15:1:38.515 of 25/January/2023, Wednesday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>15:1:38.515 of 25/January/2023, Wednesday
+#>>>Initialized Dummy Travel logger
+#>>>SELF = <Dummy(319791) Travel_vtfbl9J1j9V3>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is Player - Checked
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization

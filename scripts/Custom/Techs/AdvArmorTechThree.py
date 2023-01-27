@@ -182,6 +182,12 @@ class AdvArmorTechTwoDef(FoundationTech.TechDef):
 		# get our Ship
                 debug(__name__ + ", DetachShip")
                 pShip = App.ShipClass_GetObjectByID(None, iShipID)
+
+                pGame = App.Game_GetCurrentGame()
+                pEpisode = pGame.GetCurrentEpisode()
+                pMission = pEpisode.GetCurrentMission()
+                pPlayer=MissionLib.GetPlayer()
+
                 if pShip:
 			# remove the listeners
 			print("Have to detach advarmortechtwo")

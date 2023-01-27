@@ -1,0 +1,45 @@
+#This is the dump of the LogCreator: <Armored Voyager-1 Travel Logger LogCreator_sZDV2Sz8rKkZ>
+#This log file was created on: 18:46:7.062 of 27/January/2023, Friday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>18:46:7.062 of 27/January/2023, Friday
+#>>>Initialized Armored Voyager-1 Travel logger
+#>>>SELF = <Armored Voyager-1(80769) Travel_Q6705Q1zq5BA>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>18:46:17.106 of 27/January/2023, Friday
+#>>>Updated Target Ship = Dalek2005Gold7 1
+## -------------------- ##
+####################
+#######>>>18:46:23.002 of 27/January/2023, Friday
+#>>>Updated Target Ship = Dalek2005Gold2 1
+## -------------------- ##
+####################
+#######>>>18:46:28.895 of 27/January/2023, Friday
+#>>>Updated Target Ship = Dalek Saucer-9
+## -------------------- ##
+####################
+#######>>>18:46:34.094 of 27/January/2023, Friday
+#>>>Updated Target Ship = DalekSaucer 1
+## -------------------- ##
+####################
+#######>>>18:47:7.938 of 27/January/2023, Friday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

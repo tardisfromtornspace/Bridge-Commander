@@ -1,0 +1,28 @@
+#This is the dump of the LogCreator: <Ketracel White Facility Travel Logger LogCreator_2eQi0tN7732C>
+#This log file was created on: 15:18:20.643 of 25/January/2023, Wednesday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>15:18:20.643 of 25/January/2023, Wednesday
+#>>>Initialized Ketracel White Facility Travel logger
+#>>>SELF = <Ketracel White Facility(2636492) Travel_c9lwcL068802>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>15:19:42.547 of 25/January/2023, Wednesday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
