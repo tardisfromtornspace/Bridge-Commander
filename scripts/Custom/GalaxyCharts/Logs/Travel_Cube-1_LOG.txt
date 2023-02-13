@@ -1,0 +1,32 @@
+#This is the dump of the LogCreator: <Cube-1 Travel Logger LogCreator_GPHvU00Rwk5g>
+#This log file was created on: 16:16:9.171 of 13/February/2023, Monday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>16:16:9.171 of 13/February/2023, Monday
+#>>>Initialized Cube-1 Travel logger
+#>>>SELF = <Cube-1(251870) Travel_XvTs8msNq9LB>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>16:19:15.598 of 13/February/2023, Monday
+#>>>Arrived Events:  added event <C TGEvent instance at _38139750_p_TGEvent>
+#>>>Updated Target Ship = Dalek Void Ship-7
+########################################
+# 16:31:10.476 of 13/February/2023, Monday
+#Ending of log dump - User is quiting the game
+########################################

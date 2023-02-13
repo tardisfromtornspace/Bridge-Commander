@@ -1,0 +1,27 @@
+#This is the dump of the LogCreator: <Dalek Void Ship-3 Travel Logger LogCreator_J39s2RbGMxZe>
+#This log file was created on: 16:14:51.502 of 13/February/2023, Monday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>16:14:51.502 of 13/February/2023, Monday
+#>>>Initialized Dalek Void Ship-3 Travel logger
+#>>>SELF = <Dalek Void Ship-3(74427) Travel_R4zj12WM5gTB>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+########################################
+# 16:31:10.476 of 13/February/2023, Monday
+#Ending of log dump - User is quiting the game
+########################################

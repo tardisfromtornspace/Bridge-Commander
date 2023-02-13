@@ -1,0 +1,56 @@
+#This is the dump of the LogCreator: <Jumpgate (open)-6 Travel Logger[2] LogCreator_6TzHn107fgOs>
+#This log file was created on: 15:47:19.850 of 13/February/2023, Monday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>15:47:19.850 of 13/February/2023, Monday
+#>>>Initialized Jumpgate (open)-6 Travel logger
+#>>>SELF = <Jumpgate (open)-6(86889) Travel_J5uR44r95Q93>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>15:47:38.499 of 13/February/2023, Monday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>15:48:5.381 of 13/February/2023, Monday
+#>>>Initialized Jumpgate (open)-6 Travel logger
+#>>>SELF = <Jumpgate (open)-6(121745) Travel_QzEy2Tdc7JnQ>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+########################################
+# 15:48:52.331 of 13/February/2023, Monday
+#Ending of log dump - User is quiting the game
+########################################
+########################################
+# 15:48:52.331 of 13/February/2023, Monday
+#Ending of log dump - User is quiting the game
+########################################

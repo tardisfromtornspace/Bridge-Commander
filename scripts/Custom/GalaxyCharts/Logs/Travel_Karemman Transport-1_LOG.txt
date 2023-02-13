@@ -1,0 +1,23 @@
+#This is the dump of the LogCreator: <Karemman Transport-1 Travel Logger LogCreator_JqL72BdjSo08>
+#This log file was created on: 18:5:1.434 of 13/February/2023, Monday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>18:5:1.434 of 13/February/2023, Monday
+#>>>Initialized Karemman Transport-1 Travel logger
+#>>>SELF = <Karemman Transport-1(60288) Travel_Rgle2853bVys>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization

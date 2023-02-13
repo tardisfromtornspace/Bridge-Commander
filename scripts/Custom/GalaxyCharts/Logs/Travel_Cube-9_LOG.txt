@@ -1,0 +1,3032 @@
+#This is the dump of the LogCreator: <Cube-9 Travel Logger LogCreator_O8BRtfsiAyB8>
+#This log file was created on: 15:41:35.403 of 13/February/2023, Monday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>15:41:35.403 of 13/February/2023, Monday
+#>>>Initialized Cube-9 Travel logger
+#>>>SELF = <Cube-9(77026) Travel_j143u1enEW4k>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>15:43:19.947 of 13/February/2023, Monday
+#>>>Arrived Events:  added event <C TGEvent instance at _37edd1f8_p_TGEvent>
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>15:45:31.820 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Setting Destination...
+#>>> -Destination: Systems.Belaruz.Belaruz4
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:31.933 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:32.071 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:32.237 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:32.486 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:32.640 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:32.819 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:33.076 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:33.440 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:33.588 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:33.731 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:33.895 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:34.130 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:34.311 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:34.477 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:34.693 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:34.874 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:35.011 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:35.240 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:35.465 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:35.617 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:36.012 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:36.182 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:36.340 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:36.620 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:36.830 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:37.070 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:37.214 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:37.461 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:37.689 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:37.848 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:38.184 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:38.387 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:38.878 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:38.981 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:39.134 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:39.367 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:39.645 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:39.812 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:40.185 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:40.321 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:40.494 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:40.628 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:40.849 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:41.054 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:41.177 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:41.490 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:41.686 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:41.882 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:42.039 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:42.188 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:42.359 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:42.528 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:42.755 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:42.988 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:43.110 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:43.321 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:43.498 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:43.745 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:44.027 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:44.251 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:44.478 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:44.636 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:44.834 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:44.962 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:45.116 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:45.319 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:45.526 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:45.647 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:45.972 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:46.130 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:46.374 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:46.570 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:46.696 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:46.978 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:47.170 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:47.323 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:47.484 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:47.611 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:47.882 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:48.195 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:48.471 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:48.610 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:48.745 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:48.961 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:49.254 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:49.454 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:49.750 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:49.966 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:50.214 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:50.390 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:50.541 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:50.735 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:50.894 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:51.232 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:51.361 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:51.581 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:51.833 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:51.999 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:52.261 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:52.440 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:52.615 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:52.859 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:53.113 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:53.370 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:53.741 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:53.884 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:54.000 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:54.219 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:54.477 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:54.635 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:54.895 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:55.086 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:55.300 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:55.521 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:55.804 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:55.946 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:56.137 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:56.569 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:56.715 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:56.852 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:57.229 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:57.351 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:57.561 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:57.955 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:58.069 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:58.216 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:58.449 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:58.556 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:58.743 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:59.172 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:59.269 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:59.451 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:59.593 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:59.745 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:45:59.936 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:46:0.154 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:46:0.310 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:46:0.496 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:46:0.635 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:46:0.845 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:46:1.046 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>15:46:1.345 of 13/February/2023, Monday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.

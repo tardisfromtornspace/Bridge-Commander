@@ -1,10 +1,14 @@
 === Changelong ===
+1.0.4
+* Dalek Void Ship, Cult of Skaro and Genesis Ark added.
+1.0.3
+* Small fix to a script.
 1.0.2
-* Added one more music for Dalek Victory
-* As per Elijah's request, added the library of the Smoke trail script to reduce dependancy on Stargate Pack 3.0
+* Added one more music for Dalek Victory.
+* As per Elijah's request, added the library of the Smoke trail script to reduce dependancy on Stargate Pack 3.0.
 1.0.1
 * Fixed two bugs, one related with losing the system you were in if you got attacked by a Time Torpedo and the other of sometimes crashing during time vortex battles. This update definetely fixes the first. While the second has been fixed as far as I'm aware as well, please tell me if it keeps happening as well as what you were doing before happening, since that bug was a bit tricky.
-1.0.0 - Release of the mod
+1.0.0 - Release of the mod.
 
 
 - First of all, thank you, SCI-FI KING for giving me the dalek models. I needed something compatible with my tools and you found them. Also thank them for giving me some sounds to import.

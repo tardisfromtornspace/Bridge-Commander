@@ -1,0 +1,23 @@
+#This is the dump of the LogCreator: <Dalek Thay-1 Travel Logger LogCreator_OV7ImtvfnjOZ>
+#This log file was created on: 19:55:40.562 of 13/February/2023, Monday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>19:55:40.562 of 13/February/2023, Monday
+#>>>Initialized Dalek Thay-1 Travel logger
+#>>>SELF = <Dalek Thay-1(1647954) Travel_7Y6S7s5hjQIN>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
