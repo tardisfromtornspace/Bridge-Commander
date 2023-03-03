@@ -7849,3 +7849,75 @@ Doing stack walk
 Call stack:
 Address   Frame
 
+//=====================================================
+Current Time: Fri Mar 03 18:44:55 2023
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  004B45A0 01:000B35A0 C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+Registers:
+EAX:0000A115
+EBX:22FFE2EC
+ECX:22FFE2EC
+EDX:412CC832
+ESI:0001E33F
+EDI:00000000
+CS:EIP:0023:004B45A0
+SS:ESP:002B:0019FB6C  EBP:35E737CC
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010202
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+004B45A0  0019FB94  0001:000B35A0 C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+//=====================================================
+Current Time: Fri Mar 03 18:47:16 2023
+Exception code: C0000094 INT_DIVIDE_BY_ZERO
+Fault address:  773B3AC8 01:00042AC8 C:\Windows\SYSTEM32\ntdll.dll
+
+Registers:
+EAX:00000031
+EBX:0000119A
+ECX:00000000
+EDX:00000000
+ESI:00000000
+EDI:00000000
+CS:EIP:0023:773B3AC8
+SS:ESP:002B:0019F72C  EBP:0019F764
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+
+Application Timestamp: Thu Jan 01 01:00:00 1970
+Doing stack walk
+
+Call stack:
+Address   Frame
+773B3AC8  0019F764  0001:00042AC8 C:\Windows\SYSTEM32\ntdll.dll (No symbol info found)
+
+//=====================================================
+Current Time: Fri Mar 03 18:50:12 2023
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  004B45A0 01:000B35A0 C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+Registers:
+EAX:00009F03
+EBX:1F3AEC44
+ECX:1F3AEC44
+EDX:37100F96
+ESI:0001DD09
+EDI:00000000
+CS:EIP:0023:004B45A0
+SS:ESP:002B:0019FB6C  EBP:365B8EE4
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010206
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+004B45A0  0019FB94  0001:000B35A0 C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+

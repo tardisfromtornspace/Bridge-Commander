@@ -1,13 +1,13 @@
-#This is the dump of the LogCreator: <Gravity Manager LogCreator_xc1mtI3rA3h0>
-#This log file was created on: 16:10:3.0 of 25/February/2023, Saturday
+#This is the dump of the LogCreator: <Gravity Manager LogCreator_x3LB5v5OmVw2>
+#This log file was created on: 19:2:29.0 of 3/March/2023, Friday
 ########################################
 ## -------------------- ##
 ####################
-#######>>>16:10:3.0 of 25/February/2023, Saturday
-#>>>Initialized GravityManager_872131U651Uc logger
+#######>>>19:2:29.0 of 3/March/2023, Friday
+#>>>Initialized GravityManager_RxR4PJ0F2F5C logger
 ## -------------------- ##
 ####################
-#######>>>16:10:14.645 of 25/February/2023, Saturday
+#######>>>19:2:38.650 of 3/March/2023, Friday
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
@@ -17,150 +17,903 @@
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_S84lIW5V3ish>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_E2tjCL5Wc5n7>]
 #>>>Planets/Suns List: ['Belaruz 4']
 #>>>Refreshed Ship List: ['Player']
-#>>>Updated radius for grav well <Belaruz 4 GravityWell_S84lIW5V3ish>, radius is now 1636.06164551
+#>>>Updated radius for grav well <Belaruz 4 GravityWell_E2tjCL5Wc5n7>, radius is now 1610.01123047
 ## -------------------- ##
 ####################
-#######>>>16:11:13.267 of 25/February/2023, Saturday
+#######>>>19:3:16.699 of 3/March/2023, Friday
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_jlz7A7fbsUCU>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_HFDZYkjOs2o4>]
 #>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player', "The Doctor's TARDIS-1", 'Type 560 TARDIS-2', 'Type 560 TARDIS-3', 'Type 560 TARDIS-4', 'Type 89 TARDIS-5', 'Type 89 TARDIS (Chamaleon)-6', 'Dalek Saucer-7', 'Dalek Saucer-8', 'Dalek Saucer-9', 'Dalek Saucer-10', 'Dalek Saucer-11']
-#>>>Refreshed Ship List: ['Player', "The Doctor's TARDIS-1", 'Type 560 TARDIS-2', 'Type 560 TARDIS-3', 'Type 560 TARDIS-4', 'Type 89 TARDIS-5', 'Type 89 TARDIS (Chamaleon)-6', 'Dalek Saucer-7', 'Dalek Saucer-8', 'Dalek Saucer-9', 'Dalek Saucer-10', 'Dalek Saucer-11']
-#>>>Refreshed Ship List: ['Player', "The Doctor's TARDIS-1", 'Type 560 TARDIS-2', 'Type 560 TARDIS-3', 'Type 560 TARDIS-4', 'Type 89 TARDIS-5', 'Type 89 TARDIS (Chamaleon)-6', 'Dalek Saucer-7', 'Dalek Saucer-8', 'Dalek Saucer-9', 'Dalek Saucer-10', 'Dalek Saucer-11']
-#>>>Refreshed Ship List: ['Player', "The Doctor's TARDIS-1", 'Type 560 TARDIS-2', 'Type 560 TARDIS-3', 'Type 560 TARDIS-4', 'Type 89 TARDIS-5', 'Type 89 TARDIS (Chamaleon)-6', 'Dalek Saucer-7', 'Dalek Saucer-8', 'Dalek Saucer-9', 'Dalek Saucer-10', 'Dalek Saucer-11']
-#>>>Refreshed Ship List: ['Player', "The Doctor's TARDIS-1", 'Type 560 TARDIS-2', 'Type 560 TARDIS-3', 'Type 560 TARDIS-4', 'Type 89 TARDIS-5', 'Type 89 TARDIS (Chamaleon)-6', 'Dalek Saucer-7', 'Dalek Saucer-8', 'Dalek Saucer-9', 'Dalek Saucer-10', 'Dalek Saucer-11']
-#>>>Refreshed Ship List: ['Player', "The Doctor's TARDIS-1", 'Type 560 TARDIS-2', 'Type 560 TARDIS-3', 'Type 560 TARDIS-4', 'Type 89 TARDIS-5', 'Type 89 TARDIS (Chamaleon)-6', 'Dalek Saucer-7', 'Dalek Saucer-8', 'Dalek Saucer-9', 'Dalek Saucer-10', 'Dalek Saucer-11']
-#>>>Refreshed Ship List: ['Player', "The Doctor's TARDIS-1", 'Type 560 TARDIS-2', 'Type 560 TARDIS-3', 'Type 560 TARDIS-4', 'Type 89 TARDIS-5', 'Type 89 TARDIS (Chamaleon)-6', 'Dalek Saucer-7', 'Dalek Saucer-8', 'Dalek Saucer-9', 'Dalek Saucer-10', 'Dalek Saucer-11']
-#>>>Refreshed Ship List: ['Player', "The Doctor's TARDIS-1", 'Type 560 TARDIS-2', 'Type 560 TARDIS-3', 'Type 560 TARDIS-4', 'Type 89 TARDIS-5', 'Type 89 TARDIS (Chamaleon)-6', 'Dalek Saucer-7', 'Dalek Saucer-8', 'Dalek Saucer-9', 'Dalek Saucer-10', 'Dalek Saucer-11']
-#>>>Refreshed Ship List: ['Player', "The Doctor's TARDIS-1", 'Type 560 TARDIS-2', 'Type 560 TARDIS-3', 'Type 560 TARDIS-4', 'Type 89 TARDIS-5', 'Type 89 TARDIS (Chamaleon)-6', 'Dalek Saucer-7', 'Dalek Saucer-8', 'Dalek Saucer-9', 'Dalek Saucer-10', 'Dalek Saucer-11']
-#>>>Refreshed Ship List: ['Player', "The Doctor's TARDIS-1", 'Type 560 TARDIS-2', 'Type 560 TARDIS-3', 'Type 560 TARDIS-4', 'Type 89 TARDIS-5', 'Type 89 TARDIS (Chamaleon)-6', 'Dalek Saucer-7', 'Dalek Saucer-8', 'Dalek Saucer-9', 'Dalek Saucer-10', 'Dalek Saucer-11']
-#>>>Refreshed Ship List: ['Player', "The Doctor's TARDIS-1", 'Type 560 TARDIS-2', 'Type 560 TARDIS-3', 'Type 560 TARDIS-4', 'Type 89 TARDIS-5', 'Type 89 TARDIS (Chamaleon)-6', 'Dalek Saucer-7', 'Dalek Saucer-8', 'Dalek Saucer-9', 'Dalek Saucer-10', 'Dalek Saucer-11']
-#>>>Refreshed Ship List: ['Player', "The Doctor's TARDIS-1", 'Type 560 TARDIS-2', 'Type 560 TARDIS-3', 'Type 560 TARDIS-4', 'Type 89 TARDIS-5', 'Type 89 TARDIS (Chamaleon)-6', 'Dalek Saucer-7', 'Dalek Saucer-8', 'Dalek Saucer-9', 'Dalek Saucer-10', 'Dalek Saucer-11']
+#>>>Refreshed Ship List: ['Player', 'Insectoid-1', 'Insectoid-2', 'Insectoid-3', 'Insectoid-4', 'Insectoid-5', 'Insectoid-6', 'Insectoid-7', 'Insectoid-8', 'Insectoid-9']
+#>>>Refreshed Ship List: ['Player', 'Insectoid-1', 'Insectoid-2', 'Insectoid-3', 'Insectoid-4', 'Insectoid-5', 'Insectoid-6', 'Insectoid-7', 'Insectoid-8', 'Insectoid-9']
+#>>>Refreshed Ship List: ['Player', 'Insectoid-1', 'Insectoid-2', 'Insectoid-3', 'Insectoid-4', 'Insectoid-5', 'Insectoid-6', 'Insectoid-7', 'Insectoid-8', 'Insectoid-9']
+#>>>Refreshed Ship List: ['Player', 'Insectoid-1', 'Insectoid-2', 'Insectoid-3', 'Insectoid-4', 'Insectoid-5', 'Insectoid-6', 'Insectoid-7', 'Insectoid-8', 'Insectoid-9']
+#>>>Refreshed Ship List: ['Player', 'Insectoid-1', 'Insectoid-2', 'Insectoid-3', 'Insectoid-4', 'Insectoid-5', 'Insectoid-6', 'Insectoid-7', 'Insectoid-8', 'Insectoid-9']
+#>>>Refreshed Ship List: ['Player', 'Insectoid-1', 'Insectoid-2', 'Insectoid-3', 'Insectoid-4', 'Insectoid-5', 'Insectoid-6', 'Insectoid-7', 'Insectoid-8', 'Insectoid-9']
+#>>>Refreshed Ship List: ['Player', 'Insectoid-1', 'Insectoid-2', 'Insectoid-3', 'Insectoid-4', 'Insectoid-5', 'Insectoid-6', 'Insectoid-7', 'Insectoid-8', 'Insectoid-9']
+#>>>Refreshed Ship List: ['Player', 'Insectoid-1', 'Insectoid-2', 'Insectoid-3', 'Insectoid-4', 'Insectoid-5', 'Insectoid-6', 'Insectoid-7', 'Insectoid-8', 'Insectoid-9']
+#>>>Refreshed Ship List: ['Player', 'Insectoid-1', 'Insectoid-2', 'Insectoid-3', 'Insectoid-4', 'Insectoid-5', 'Insectoid-6', 'Insectoid-7', 'Insectoid-8', 'Insectoid-9']
+#>>>Refreshed Ship List: ['Player', 'Insectoid-1', 'Insectoid-2', 'Insectoid-3', 'Insectoid-4', 'Insectoid-5', 'Insectoid-6', 'Insectoid-7', 'Insectoid-8', 'Insectoid-9']
 ## -------------------- ##
 ####################
-#######>>>16:11:19.145 of 25/February/2023, Saturday
-#>>>Refreshed Ship List: ['Player', "The Doctor's TARDIS-1", 'Type 560 TARDIS-2', 'Type 560 TARDIS-4', 'Type 89 TARDIS-5', 'Type 89 TARDIS (Chamaleon)-6', 'Dalek Saucer-8', 'Dalek Saucer-9', 'Dalek Saucer-10', 'Dalek Saucer-11', 'DalekSaucer 1', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1', 'BattleTardisChamaleon 2']
-#>>>Refreshed Ship List: ['Player', "The Doctor's TARDIS-1", 'Type 560 TARDIS-2', 'Type 560 TARDIS-4', 'Type 89 TARDIS-5', 'Type 89 TARDIS (Chamaleon)-6', 'Dalek Saucer-8', 'Dalek Saucer-9', 'Dalek Saucer-10', 'Dalek Saucer-11', 'DalekSaucer 1', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1', 'BattleTardisChamaleon 2']
-#>>>Refreshed Ship List: ['Player', "The Doctor's TARDIS-1", 'Type 560 TARDIS-2', 'Type 560 TARDIS-4', 'Type 89 TARDIS-5', 'Type 89 TARDIS (Chamaleon)-6', 'Dalek Saucer-8', 'Dalek Saucer-9', 'Dalek Saucer-10', 'Dalek Saucer-11', 'DalekSaucer 1', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1', 'BattleTardisChamaleon 2']
-#>>>Refreshed Ship List: ['Player', "The Doctor's TARDIS-1", 'Type 560 TARDIS-2', 'Type 560 TARDIS-4', 'Type 89 TARDIS-5', 'Type 89 TARDIS (Chamaleon)-6', 'Dalek Saucer-8', 'Dalek Saucer-9', 'Dalek Saucer-10', 'Dalek Saucer-11', 'DalekSaucer 1', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1', 'BattleTardisChamaleon 2']
-#>>>Refreshed Ship List: ['Player', "The Doctor's TARDIS-1", 'Type 560 TARDIS-2', 'Type 560 TARDIS-4', 'Type 89 TARDIS-5', 'Type 89 TARDIS (Chamaleon)-6', 'Dalek Saucer-8', 'Dalek Saucer-9', 'Dalek Saucer-10', 'Dalek Saucer-11', 'DalekSaucer 1', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1', 'BattleTardisChamaleon 2']
-#>>>Refreshed Ship List: ['Player', "The Doctor's TARDIS-1", 'Type 560 TARDIS-2', 'Type 560 TARDIS-4', 'Type 89 TARDIS-5', 'Type 89 TARDIS (Chamaleon)-6', 'Dalek Saucer-8', 'Dalek Saucer-9', 'Dalek Saucer-10', 'Dalek Saucer-11', 'DalekSaucer 1', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1', 'BattleTardisChamaleon 2']
-#>>>Refreshed Ship List: ['Player', "The Doctor's TARDIS-1", 'Type 560 TARDIS-2', 'Type 560 TARDIS-4', 'Type 89 TARDIS-5', 'Type 89 TARDIS (Chamaleon)-6', 'Dalek Saucer-8', 'Dalek Saucer-9', 'Dalek Saucer-10', 'Dalek Saucer-11', 'DalekSaucer 1', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1', 'BattleTardisChamaleon 2']
-#>>>Refreshed Ship List: ['Player', "The Doctor's TARDIS-1", 'Type 560 TARDIS-2', 'Type 560 TARDIS-4', 'Type 89 TARDIS-5', 'Type 89 TARDIS (Chamaleon)-6', 'Dalek Saucer-8', 'Dalek Saucer-9', 'Dalek Saucer-10', 'Dalek Saucer-11', 'DalekSaucer 1', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1', 'BattleTardisChamaleon 2']
-#>>>Refreshed Ship List: ['Player', "The Doctor's TARDIS-1", 'Type 560 TARDIS-2', 'Type 560 TARDIS-4', 'Type 89 TARDIS-5', 'Type 89 TARDIS (Chamaleon)-6', 'Dalek Saucer-8', 'Dalek Saucer-9', 'Dalek Saucer-10', 'Dalek Saucer-11', 'DalekSaucer 1', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1', 'BattleTardisChamaleon 2']
-#>>>Refreshed Ship List: ['Player', "The Doctor's TARDIS-1", 'Type 560 TARDIS-2', 'Type 560 TARDIS-4', 'Type 89 TARDIS-5', 'Type 89 TARDIS (Chamaleon)-6', 'Dalek Saucer-8', 'Dalek Saucer-9', 'Dalek Saucer-10', 'Dalek Saucer-11', 'DalekSaucer 1', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1', 'BattleTardisChamaleon 2']
-#>>>Refreshed Ship List: ['Player', "The Doctor's TARDIS-1", 'Type 560 TARDIS-2', 'Type 560 TARDIS-4', 'Type 89 TARDIS-5', 'Type 89 TARDIS (Chamaleon)-6', 'Dalek Saucer-8', 'Dalek Saucer-9', 'Dalek Saucer-10', 'Dalek Saucer-11', 'DalekSaucer 1', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1', 'BattleTardisChamaleon 2']
-#>>>Refreshed Ship List: ['Player', "The Doctor's TARDIS-1", 'Type 560 TARDIS-2', 'Type 560 TARDIS-4', 'Type 89 TARDIS-5', 'Type 89 TARDIS (Chamaleon)-6', 'Dalek Saucer-8', 'Dalek Saucer-9', 'Dalek Saucer-10', 'Dalek Saucer-11', 'DalekSaucer 1', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1', 'BattleTardisChamaleon 2']
+#######>>>19:3:46.331 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player', 'Insectoid-1', 'Insectoid-2', 'Insectoid-3', 'Insectoid-4', 'Insectoid-5', 'Insectoid-6', 'Insectoid-7', 'Insectoid-8', 'Insectoid-9']
 ## -------------------- ##
 ####################
-#######>>>16:11:24.612 of 25/February/2023, Saturday
-#>>>Refreshed Ship List: ['Player', "The Doctor's TARDIS-1", 'Type 560 TARDIS-2', 'Type 560 TARDIS-4', 'Type 89 TARDIS-5', 'Type 89 TARDIS (Chamaleon)-6', 'Dalek Saucer-8', 'Dalek Saucer-9', 'Dalek Saucer-10', 'Dalek Saucer-11', 'DalekSaucer 1', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1', 'BattleTardisChamaleon 2']
+#######>>>19:3:54.396 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player', 'Insectoid-1', 'Insectoid-3', 'Insectoid-4', 'Insectoid-5', 'Insectoid-6', 'Insectoid-7', 'Insectoid-8', 'Insectoid-9']
+#>>>Refreshed Ship List: ['Player', 'Insectoid-1', 'Insectoid-3', 'Insectoid-4', 'Insectoid-5', 'Insectoid-6', 'Insectoid-7', 'Insectoid-8', 'Insectoid-9']
+#>>>Refreshed Ship List: ['Player', 'Insectoid-1', 'Insectoid-3', 'Insectoid-4', 'Insectoid-5', 'Insectoid-6', 'Insectoid-7', 'Insectoid-8', 'Insectoid-9']
 ## -------------------- ##
 ####################
-#######>>>16:11:25.928 of 25/February/2023, Saturday
-#>>>Creating Grav Wells - Set: Systems.TimeVortexTunnel.TimeVortexTunnel1
-#>>>Creating Grav Wells: []
-#>>>Planets/Suns List: []
-#>>>Refreshed Ship List: ['Dalek Saucer-10']
-#>>>Added Player to the Ship List
+#######>>>19:3:57.166 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player', 'Insectoid-1', 'Insectoid-4', 'Insectoid-5', 'Insectoid-6', 'Insectoid-9']
 ## -------------------- ##
 ####################
-#######>>>16:11:26.295 of 25/February/2023, Saturday
-#>>>Refreshed Ship List: ['Dalek Saucer-8', 'Dalek Saucer-10']
-#>>>Added Player to the Ship List
+#######>>>19:3:58.147 of 3/March/2023, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_LiEB1U917g94>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Insectoid-1', 'Insectoid-4', 'Insectoid-5', 'Insectoid-6', 'Insectoid-9', 'Player']
 ## -------------------- ##
 ####################
-#######>>>16:12:16.694 of 25/February/2023, Saturday
-#>>>Creating Grav Wells - Set: Systems.TimeVortexTunnel.TimeVortexTunnel1
-#>>>Creating Grav Wells: []
-#>>>Planets/Suns List: []
-#>>>Refreshed Ship List: ['Dalek Saucer-8', 'Dalek Saucer-10', 'TimeVortex Outer', 'TimeVortex Inner']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['Dalek Saucer-8', 'Dalek Saucer-10', 'TimeVortex Outer', 'TimeVortex Inner']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['Dalek Saucer-8', 'Dalek Saucer-10', 'TimeVortex Outer', 'TimeVortex Inner']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['Dalek Saucer-8', 'Dalek Saucer-10', 'TimeVortex Outer', 'TimeVortex Inner']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['Dalek Saucer-8', 'Dalek Saucer-10', 'TimeVortex Outer', 'TimeVortex Inner']
-#>>>Added Player to the Ship List
+#######>>>19:4:2.613 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Insectoid-4', 'Insectoid-6', 'Insectoid-9', 'Player']
+#>>>Refreshed Ship List: ['Insectoid-4', 'Insectoid-9', 'Player']
+#>>>Refreshed Ship List: ['Insectoid-4', 'Player']
 ## -------------------- ##
 ####################
-#######>>>16:12:25.562 of 25/February/2023, Saturday
-#>>>Creating Grav Wells - Set: Systems.Albirea.Albirea3
-#>>>Creating Grav Wells: [<Sun GravityWell_6kIJZ2fO2XFu>, <Albirea 3 GravityWell_6Zk5snD0luNc>]
-#>>>Planets/Suns List: ['Sun', 'Albirea 3']
-#>>>Refreshed Ship List: []
-#>>>Added Player to the Ship List
-#>>>Updated radius for grav well <Sun GravityWell_6kIJZ2fO2XFu>, radius is now 25136.5664063
-#>>>Updated radius for grav well <Albirea 3 GravityWell_6Zk5snD0luNc>, radius is now 1164.50585938
-## -------------------- ##
-####################
-#######>>>16:12:33.027 of 25/February/2023, Saturday
-#>>>Refreshed Ship List: ['Dalek Saucer-8', 'Dalek Saucer-10']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['Dalek Saucer-8', 'Dalek Saucer-10']
-#>>>Added Player to the Ship List
-## -------------------- ##
-####################
-#######>>>16:12:41.777 of 25/February/2023, Saturday
-#>>>Refreshed Ship List: ['Dalek Saucer-8', 'Dalek Saucer-10']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['Dalek Saucer-8', 'Dalek Saucer-10']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['Dalek Saucer-8', 'Dalek Saucer-10']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['Dalek Saucer-8', 'Dalek Saucer-10']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['Dalek Saucer-8', 'Dalek Saucer-10']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['Dalek Saucer-8', 'Dalek Saucer-10']
-#>>>Added Player to the Ship List
-#>>>Refreshed Ship List: ['Dalek Saucer-8', 'Dalek Saucer-10']
-#>>>Added Player to the Ship List
-## -------------------- ##
-####################
-#######>>>16:12:50.194 of 25/February/2023, Saturday
-#>>>Creating Grav Wells - Set: Custom.GalaxyCharts.TravelerSystems.TravelSet
-#>>>Creating Grav Wells: []
-#>>>Planets/Suns List: []
+#######>>>19:4:2.714 of 3/March/2023, Friday
 #>>>Refreshed Ship List: ['Player']
 ## -------------------- ##
 ####################
-#######>>>16:12:52.277 of 25/February/2023, Saturday
+#######>>>19:5:47.812 of 3/March/2023, Friday
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_7oJ30oeJF1OU>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_PdngXq2nkhGf>]
 #>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: []
-#>>>Added Player to the Ship List
-#>>>Updated radius for grav well <Belaruz 4 GravityWell_7oJ30oeJF1OU>, radius is now 1636.06164551
+#>>>Refreshed Ship List: ['Player']
 ## -------------------- ##
 ####################
-#######>>>16:13:11.127 of 25/February/2023, Saturday
-#>>>Refreshed Ship List: []
-#>>>Added Player to the Ship List
-## -------------------- ##
-####################
-#######>>>16:13:14.043 of 25/February/2023, Saturday
-#>>>Refreshed Ship List: []
-#>>>Added Player to the Ship List
-## -------------------- ##
-####################
-#######>>>16:13:34.060 of 25/February/2023, Saturday
-#>>>Refreshed Ship List: []
-#>>>Added Player to the Ship List
-## -------------------- ##
-####################
-#######>>>16:13:48.227 of 25/February/2023, Saturday
-#>>>Refreshed Ship List: []
-#>>>Added Player to the Ship List
-## -------------------- ##
-####################
-#######>>>16:13:49.943 of 25/February/2023, Saturday
+#######>>>19:5:49.930 of 3/March/2023, Friday
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_TsnJ1iF8aoRn>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_p6LZ8g3C6mn4>]
 #>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player', 'Insectoid-1', 'Insectoid-2', 'Insectoid-3', 'Insectoid-4', 'Insectoid-5', 'Insectoid-6', 'Insectoid-7', 'Insectoid-8', 'Insectoid-9']
+#>>>Refreshed Ship List: ['Player', 'Insectoid-1', 'Insectoid-2', 'Insectoid-3', 'Insectoid-4', 'Insectoid-5', 'Insectoid-6', 'Insectoid-7', 'Insectoid-8', 'Insectoid-9']
+#>>>Refreshed Ship List: ['Player', 'Insectoid-1', 'Insectoid-2', 'Insectoid-3', 'Insectoid-4', 'Insectoid-5', 'Insectoid-6', 'Insectoid-7', 'Insectoid-8', 'Insectoid-9']
+#>>>Refreshed Ship List: ['Player', 'Insectoid-1', 'Insectoid-2', 'Insectoid-3', 'Insectoid-4', 'Insectoid-5', 'Insectoid-6', 'Insectoid-7', 'Insectoid-8', 'Insectoid-9']
+#>>>Refreshed Ship List: ['Player', 'Insectoid-1', 'Insectoid-2', 'Insectoid-3', 'Insectoid-4', 'Insectoid-5', 'Insectoid-6', 'Insectoid-7', 'Insectoid-8', 'Insectoid-9']
+#>>>Refreshed Ship List: ['Player', 'Insectoid-1', 'Insectoid-2', 'Insectoid-3', 'Insectoid-4', 'Insectoid-5', 'Insectoid-6', 'Insectoid-7', 'Insectoid-8', 'Insectoid-9']
+#>>>Refreshed Ship List: ['Player', 'Insectoid-1', 'Insectoid-2', 'Insectoid-3', 'Insectoid-4', 'Insectoid-5', 'Insectoid-6', 'Insectoid-7', 'Insectoid-8', 'Insectoid-9']
+#>>>Refreshed Ship List: ['Player', 'Insectoid-1', 'Insectoid-2', 'Insectoid-3', 'Insectoid-4', 'Insectoid-5', 'Insectoid-6', 'Insectoid-7', 'Insectoid-8', 'Insectoid-9']
+#>>>Refreshed Ship List: ['Player', 'Insectoid-1', 'Insectoid-2', 'Insectoid-3', 'Insectoid-4', 'Insectoid-5', 'Insectoid-6', 'Insectoid-7', 'Insectoid-8', 'Insectoid-9']
+#>>>Refreshed Ship List: ['Player', 'Insectoid-1', 'Insectoid-2', 'Insectoid-3', 'Insectoid-4', 'Insectoid-5', 'Insectoid-6', 'Insectoid-7', 'Insectoid-8', 'Insectoid-9']
+## -------------------- ##
+####################
+#######>>>19:6:7.898 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player', 'Insectoid-1', 'Insectoid-2', 'Insectoid-3', 'Insectoid-4', 'Insectoid-5', 'Insectoid-6', 'Insectoid-7', 'Insectoid-8', 'Insectoid-9', 'Escape Pod 1', 'Escape Pod 2', 'Escape Pod 3', 'Escape Pod 4']
+#>>>Refreshed Ship List: ['Player', 'Insectoid-1', 'Insectoid-2', 'Insectoid-3', 'Insectoid-4', 'Insectoid-5', 'Insectoid-6', 'Insectoid-7', 'Insectoid-8', 'Insectoid-9', 'Escape Pod 1', 'Escape Pod 2', 'Escape Pod 3', 'Escape Pod 4']
+#>>>Refreshed Ship List: ['Player', 'Insectoid-1', 'Insectoid-2', 'Insectoid-3', 'Insectoid-4', 'Insectoid-5', 'Insectoid-6', 'Insectoid-7', 'Insectoid-8', 'Insectoid-9', 'Escape Pod 1', 'Escape Pod 2', 'Escape Pod 3', 'Escape Pod 4']
+#>>>Refreshed Ship List: ['Player', 'Insectoid-1', 'Insectoid-2', 'Insectoid-3', 'Insectoid-4', 'Insectoid-5', 'Insectoid-6', 'Insectoid-7', 'Insectoid-8', 'Insectoid-9', 'Escape Pod 1', 'Escape Pod 2', 'Escape Pod 3', 'Escape Pod 4']
+## -------------------- ##
+####################
+#######>>>19:6:16.574 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player', 'Insectoid-2', 'Insectoid-3', 'Insectoid-4', 'Insectoid-5', 'Insectoid-6', 'Insectoid-7', 'Insectoid-8', 'Insectoid-9', 'Escape Pod 1', 'Escape Pod 2', 'Escape Pod 3', 'Escape Pod 4']
+## -------------------- ##
+####################
+#######>>>19:6:24.515 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player', 'Insectoid-2', 'Insectoid-3', 'Insectoid-5', 'Insectoid-6', 'Insectoid-7', 'Insectoid-8', 'Insectoid-9', 'Escape Pod 1', 'Escape Pod 2', 'Escape Pod 3', 'Escape Pod 4']
+#>>>Refreshed Ship List: ['Player', 'Insectoid-2', 'Insectoid-3', 'Insectoid-5', 'Insectoid-6', 'Insectoid-7', 'Insectoid-8', 'Escape Pod 1', 'Escape Pod 2', 'Escape Pod 3', 'Escape Pod 4']
+## -------------------- ##
+####################
+#######>>>19:6:32.586 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player', 'Insectoid-2', 'Insectoid-3', 'Insectoid-6', 'Insectoid-7', 'Insectoid-8', 'Escape Pod 1', 'Escape Pod 2', 'Escape Pod 3', 'Escape Pod 4']
+#>>>Refreshed Ship List: ['Player', 'Insectoid-2', 'Insectoid-3', 'Insectoid-6', 'Insectoid-7', 'Insectoid-8', 'Escape Pod 2', 'Escape Pod 3', 'Escape Pod 4']
+#>>>Refreshed Ship List: ['Player', 'Insectoid-2', 'Insectoid-3', 'Insectoid-6', 'Insectoid-7', 'Insectoid-8', 'Escape Pod 3', 'Escape Pod 4']
+#>>>Refreshed Ship List: ['Player', 'Insectoid-2', 'Insectoid-3', 'Insectoid-6', 'Insectoid-7', 'Insectoid-8', 'Escape Pod 4']
+#>>>Refreshed Ship List: ['Player', 'Insectoid-2', 'Insectoid-3', 'Insectoid-6', 'Insectoid-7', 'Insectoid-8']
+#>>>Refreshed Ship List: ['Player', 'Insectoid-3', 'Insectoid-6', 'Insectoid-7', 'Insectoid-8']
+#>>>Refreshed Ship List: ['Player', 'Insectoid-6', 'Insectoid-7', 'Insectoid-8']
+## -------------------- ##
+####################
+#######>>>19:6:40.454 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player', 'Insectoid-6']
+## -------------------- ##
+####################
+#######>>>19:6:48.628 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:6:54.661 of 3/March/2023, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_vU946wgaOhGR>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:7:2.211 of 3/March/2023, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_3r957nBxjP4Z>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player', 'Insectoid-1', 'Insectoid-2', 'Insectoid-3', 'Insectoid-4']
+#>>>Refreshed Ship List: ['Player', 'Insectoid-1', 'Insectoid-2', 'Insectoid-3', 'Insectoid-4']
+#>>>Refreshed Ship List: ['Player', 'Insectoid-1', 'Insectoid-2', 'Insectoid-3', 'Insectoid-4']
+#>>>Refreshed Ship List: ['Player', 'Insectoid-1', 'Insectoid-2', 'Insectoid-3', 'Insectoid-4']
+#>>>Refreshed Ship List: ['Player', 'Insectoid-1', 'Insectoid-2', 'Insectoid-3', 'Insectoid-4']
+## -------------------- ##
+####################
+#######>>>19:8:8.643 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player', 'Insectoid-1', 'Insectoid-2', 'Insectoid-3', 'Insectoid-4']
+## -------------------- ##
+####################
+#######>>>19:8:9.011 of 3/March/2023, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_zJk38swP2z66>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Insectoid-1', 'Insectoid-2', 'Insectoid-3', 'Insectoid-4', 'Player']
+## -------------------- ##
+####################
+#######>>>19:9:2.757 of 3/March/2023, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_h0tV6z1Q4vJQ>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:9:22.677 of 3/March/2023, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_l3M6yt0NC7FU>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player', 'Dalek2005Gold', 'Dalek2005Gold2', 'Dalek2005Gold3', 'Dalek2005Gold4', 'Dalek2005Gold5', 'Dalek2005Gold6', 'Dalek2005Gold7', 'Dalek2005Gold8', 'Dalek2005Gold9', 'Dalek2005Gold10']
+#>>>Refreshed Ship List: ['Player', 'Dalek2005Gold', 'Dalek2005Gold2', 'Dalek2005Gold3', 'Dalek2005Gold4', 'Dalek2005Gold5', 'Dalek2005Gold6', 'Dalek2005Gold7', 'Dalek2005Gold8', 'Dalek2005Gold9', 'Dalek2005Gold10']
+#>>>Refreshed Ship List: ['Player', 'Dalek2005Gold', 'Dalek2005Gold2', 'Dalek2005Gold3', 'Dalek2005Gold4', 'Dalek2005Gold5', 'Dalek2005Gold6', 'Dalek2005Gold7', 'Dalek2005Gold8', 'Dalek2005Gold9', 'Dalek2005Gold10']
+#>>>Refreshed Ship List: ['Player', 'Dalek2005Gold', 'Dalek2005Gold2', 'Dalek2005Gold3', 'Dalek2005Gold4', 'Dalek2005Gold5', 'Dalek2005Gold6', 'Dalek2005Gold7', 'Dalek2005Gold8', 'Dalek2005Gold9', 'Dalek2005Gold10']
+#>>>Refreshed Ship List: ['Player', 'Dalek2005Gold', 'Dalek2005Gold2', 'Dalek2005Gold3', 'Dalek2005Gold4', 'Dalek2005Gold5', 'Dalek2005Gold6', 'Dalek2005Gold7', 'Dalek2005Gold8', 'Dalek2005Gold9', 'Dalek2005Gold10']
+#>>>Refreshed Ship List: ['Player', 'Dalek2005Gold', 'Dalek2005Gold2', 'Dalek2005Gold3', 'Dalek2005Gold4', 'Dalek2005Gold5', 'Dalek2005Gold6', 'Dalek2005Gold7', 'Dalek2005Gold8', 'Dalek2005Gold9', 'Dalek2005Gold10']
+#>>>Refreshed Ship List: ['Player', 'Dalek2005Gold', 'Dalek2005Gold2', 'Dalek2005Gold3', 'Dalek2005Gold4', 'Dalek2005Gold5', 'Dalek2005Gold6', 'Dalek2005Gold7', 'Dalek2005Gold8', 'Dalek2005Gold9', 'Dalek2005Gold10']
+#>>>Refreshed Ship List: ['Player', 'Dalek2005Gold', 'Dalek2005Gold2', 'Dalek2005Gold3', 'Dalek2005Gold4', 'Dalek2005Gold5', 'Dalek2005Gold6', 'Dalek2005Gold7', 'Dalek2005Gold8', 'Dalek2005Gold9', 'Dalek2005Gold10']
+#>>>Refreshed Ship List: ['Player', 'Dalek2005Gold', 'Dalek2005Gold2', 'Dalek2005Gold3', 'Dalek2005Gold4', 'Dalek2005Gold5', 'Dalek2005Gold6', 'Dalek2005Gold7', 'Dalek2005Gold8', 'Dalek2005Gold9', 'Dalek2005Gold10']
+#>>>Refreshed Ship List: ['Player', 'Dalek2005Gold', 'Dalek2005Gold2', 'Dalek2005Gold3', 'Dalek2005Gold4', 'Dalek2005Gold5', 'Dalek2005Gold6', 'Dalek2005Gold7', 'Dalek2005Gold8', 'Dalek2005Gold9', 'Dalek2005Gold10']
+#>>>Refreshed Ship List: ['Player', 'Dalek2005Gold', 'Dalek2005Gold2', 'Dalek2005Gold3', 'Dalek2005Gold4', 'Dalek2005Gold5', 'Dalek2005Gold6', 'Dalek2005Gold7', 'Dalek2005Gold8', 'Dalek2005Gold9', 'Dalek2005Gold10']
+## -------------------- ##
+####################
+#######>>>19:9:48.816 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player', 'Dalek2005Gold', 'Dalek2005Gold2', 'Dalek2005Gold3', 'Dalek2005Gold4', 'Dalek2005Gold5', 'Dalek2005Gold6', 'Dalek2005Gold7', 'Dalek2005Gold8', 'Dalek2005Gold9', 'Dalek2005Gold10']
+## -------------------- ##
+####################
+#######>>>19:9:56.696 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player', 'Dalek2005Gold', 'Dalek2005Gold2', 'Dalek2005Gold3', 'Dalek2005Gold4', 'Dalek2005Gold5', 'Dalek2005Gold6', 'Dalek2005Gold7', 'Dalek2005Gold8', 'Dalek2005Gold9', 'Dalek2005Gold10']
+#>>>Refreshed Ship List: ['Player', 'Dalek2005Gold', 'Dalek2005Gold2', 'Dalek2005Gold3', 'Dalek2005Gold4', 'Dalek2005Gold5', 'Dalek2005Gold6', 'Dalek2005Gold7', 'Dalek2005Gold8', 'Dalek2005Gold9', 'Dalek2005Gold10']
+#>>>Refreshed Ship List: ['Player', 'Dalek2005Gold', 'Dalek2005Gold2', 'Dalek2005Gold3', 'Dalek2005Gold4', 'Dalek2005Gold5', 'Dalek2005Gold6', 'Dalek2005Gold7', 'Dalek2005Gold8', 'Dalek2005Gold9', 'Dalek2005Gold10']
+#>>>Refreshed Ship List: ['Player', 'Dalek2005Gold', 'Dalek2005Gold2', 'Dalek2005Gold3', 'Dalek2005Gold4', 'Dalek2005Gold5', 'Dalek2005Gold6', 'Dalek2005Gold7', 'Dalek2005Gold8', 'Dalek2005Gold9', 'Dalek2005Gold10']
+#>>>Refreshed Ship List: ['Player', 'Dalek2005Gold', 'Dalek2005Gold2', 'Dalek2005Gold3', 'Dalek2005Gold4', 'Dalek2005Gold5', 'Dalek2005Gold6', 'Dalek2005Gold7', 'Dalek2005Gold8', 'Dalek2005Gold9', 'Dalek2005Gold10']
+#>>>Refreshed Ship List: ['Player', 'Dalek2005Gold', 'Dalek2005Gold2', 'Dalek2005Gold3', 'Dalek2005Gold4', 'Dalek2005Gold5', 'Dalek2005Gold6', 'Dalek2005Gold7', 'Dalek2005Gold8', 'Dalek2005Gold9', 'Dalek2005Gold10']
+#>>>Refreshed Ship List: ['Player', 'Dalek2005Gold', 'Dalek2005Gold2', 'Dalek2005Gold3', 'Dalek2005Gold4', 'Dalek2005Gold5', 'Dalek2005Gold6', 'Dalek2005Gold7', 'Dalek2005Gold8', 'Dalek2005Gold9', 'Dalek2005Gold10']
+#>>>Refreshed Ship List: ['Player', 'Dalek2005Gold', 'Dalek2005Gold2', 'Dalek2005Gold3', 'Dalek2005Gold4', 'Dalek2005Gold5', 'Dalek2005Gold6', 'Dalek2005Gold7', 'Dalek2005Gold8', 'Dalek2005Gold9', 'Dalek2005Gold10']
+## -------------------- ##
+####################
+#######>>>19:10:5.723 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player', 'Dalek2005Gold', 'Dalek2005Gold2', 'Dalek2005Gold3', 'Dalek2005Gold4', 'Dalek2005Gold5', 'Dalek2005Gold6', 'Dalek2005Gold7', 'Dalek2005Gold8', 'Dalek2005Gold9', 'Dalek2005Gold10']
+## -------------------- ##
+####################
+#######>>>19:10:7.009 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player', 'Dalek2005Gold2', 'Dalek2005Gold3', 'Dalek2005Gold4', 'Dalek2005Gold5', 'Dalek2005Gold6', 'Dalek2005Gold7', 'Dalek2005Gold8', 'Dalek2005Gold9', 'Dalek2005Gold10']
+#>>>Refreshed Ship List: ['Player', 'Dalek2005Gold2', 'Dalek2005Gold3', 'Dalek2005Gold4', 'Dalek2005Gold5', 'Dalek2005Gold6', 'Dalek2005Gold7', 'Dalek2005Gold9', 'Dalek2005Gold10']
+## -------------------- ##
+####################
+#######>>>19:10:12.212 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player', 'Dalek2005Gold2', 'Dalek2005Gold3', 'Dalek2005Gold4', 'Dalek2005Gold5', 'Dalek2005Gold6', 'Dalek2005Gold7', 'Dalek2005Gold9', 'Dalek2005Gold10']
+## -------------------- ##
+####################
+#######>>>19:10:13.567 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player', 'Dalek2005Gold2', 'Dalek2005Gold3', 'Dalek2005Gold4', 'Dalek2005Gold5', 'Dalek2005Gold6', 'Dalek2005Gold7', 'Dalek2005Gold9', 'Dalek2005Gold10']
+## -------------------- ##
+####################
+#######>>>19:10:13.809 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player', 'Dalek2005Gold2', 'Dalek2005Gold3', 'Dalek2005Gold4', 'Dalek2005Gold5', 'Dalek2005Gold6', 'Dalek2005Gold7', 'Dalek2005Gold9', 'Dalek2005Gold10']
+## -------------------- ##
+####################
+#######>>>19:10:13.962 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player', 'Dalek2005Gold2', 'Dalek2005Gold3', 'Dalek2005Gold4', 'Dalek2005Gold5', 'Dalek2005Gold6', 'Dalek2005Gold7', 'Dalek2005Gold9', 'Dalek2005Gold10']
+## -------------------- ##
+####################
+#######>>>19:10:16.938 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player', 'Dalek2005Gold2', 'Dalek2005Gold3', 'Dalek2005Gold4', 'Dalek2005Gold5', 'Dalek2005Gold6', 'Dalek2005Gold7', 'Dalek2005Gold9', 'Dalek2005Gold10']
+#>>>Refreshed Ship List: ['Player', 'Dalek2005Gold2', 'Dalek2005Gold3', 'Dalek2005Gold4', 'Dalek2005Gold5', 'Dalek2005Gold6', 'Dalek2005Gold7', 'Dalek2005Gold9', 'Dalek2005Gold10']
+#>>>Refreshed Ship List: ['Player', 'Dalek2005Gold2', 'Dalek2005Gold3', 'Dalek2005Gold4', 'Dalek2005Gold5', 'Dalek2005Gold6', 'Dalek2005Gold7', 'Dalek2005Gold9', 'Dalek2005Gold10']
+#>>>Refreshed Ship List: ['Player', 'Dalek2005Gold2', 'Dalek2005Gold3', 'Dalek2005Gold4', 'Dalek2005Gold5', 'Dalek2005Gold6', 'Dalek2005Gold7', 'Dalek2005Gold9', 'Dalek2005Gold10']
+#>>>Refreshed Ship List: ['Player', 'Dalek2005Gold2', 'Dalek2005Gold3', 'Dalek2005Gold4', 'Dalek2005Gold5', 'Dalek2005Gold6', 'Dalek2005Gold7', 'Dalek2005Gold9', 'Dalek2005Gold10']
+#>>>Refreshed Ship List: ['Player', 'Dalek2005Gold2', 'Dalek2005Gold3', 'Dalek2005Gold4', 'Dalek2005Gold5', 'Dalek2005Gold6', 'Dalek2005Gold7', 'Dalek2005Gold9', 'Dalek2005Gold10']
+#>>>Refreshed Ship List: ['Player', 'Dalek2005Gold2', 'Dalek2005Gold3', 'Dalek2005Gold4', 'Dalek2005Gold5', 'Dalek2005Gold6', 'Dalek2005Gold7', 'Dalek2005Gold9', 'Dalek2005Gold10']
+#>>>Refreshed Ship List: ['Player', 'Dalek2005Gold2', 'Dalek2005Gold3', 'Dalek2005Gold4', 'Dalek2005Gold5', 'Dalek2005Gold6', 'Dalek2005Gold7', 'Dalek2005Gold9', 'Dalek2005Gold10']
+## -------------------- ##
+####################
+#######>>>19:10:19.387 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player', 'Dalek2005Gold2', 'Dalek2005Gold3', 'Dalek2005Gold4', 'Dalek2005Gold5', 'Dalek2005Gold6', 'Dalek2005Gold7', 'Dalek2005Gold9', 'Dalek2005Gold10']
+## -------------------- ##
+####################
+#######>>>19:10:22.286 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player', 'Dalek2005Gold2', 'Dalek2005Gold3', 'Dalek2005Gold4', 'Dalek2005Gold5', 'Dalek2005Gold6', 'Dalek2005Gold7', 'Dalek2005Gold9', 'Dalek2005Gold10']
+## -------------------- ##
+####################
+#######>>>19:10:25.025 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player', 'Dalek2005Gold2', 'Dalek2005Gold3', 'Dalek2005Gold4', 'Dalek2005Gold5', 'Dalek2005Gold6', 'Dalek2005Gold7', 'Dalek2005Gold9', 'Dalek2005Gold10']
+## -------------------- ##
+####################
+#######>>>19:10:28.646 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player', 'Dalek2005Gold2', 'Dalek2005Gold3', 'Dalek2005Gold4', 'Dalek2005Gold5', 'Dalek2005Gold6', 'Dalek2005Gold7', 'Dalek2005Gold9', 'Dalek2005Gold10']
+## -------------------- ##
+####################
+#######>>>19:10:34.826 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player', 'Dalek2005Gold2', 'Dalek2005Gold3', 'Dalek2005Gold4', 'Dalek2005Gold5', 'Dalek2005Gold6', 'Dalek2005Gold7', 'Dalek2005Gold9', 'Dalek2005Gold10']
+## -------------------- ##
+####################
+#######>>>19:10:36.768 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player', 'Dalek2005Gold2', 'Dalek2005Gold3', 'Dalek2005Gold4', 'Dalek2005Gold5', 'Dalek2005Gold6', 'Dalek2005Gold7', 'Dalek2005Gold9', 'Dalek2005Gold10']
+## -------------------- ##
+####################
+#######>>>19:10:40.737 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player', 'Dalek2005Gold2', 'Dalek2005Gold3', 'Dalek2005Gold4', 'Dalek2005Gold5', 'Dalek2005Gold6', 'Dalek2005Gold7', 'Dalek2005Gold9', 'Dalek2005Gold10']
+#>>>Refreshed Ship List: ['Player', 'Dalek2005Gold2', 'Dalek2005Gold3', 'Dalek2005Gold4', 'Dalek2005Gold5', 'Dalek2005Gold6', 'Dalek2005Gold7', 'Dalek2005Gold9', 'Dalek2005Gold10']
+#>>>Refreshed Ship List: ['Player', 'Dalek2005Gold2', 'Dalek2005Gold3', 'Dalek2005Gold4', 'Dalek2005Gold5', 'Dalek2005Gold6', 'Dalek2005Gold7', 'Dalek2005Gold9', 'Dalek2005Gold10']
+## -------------------- ##
+####################
+#######>>>19:10:42.204 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player', 'Dalek2005Gold2', 'Dalek2005Gold3', 'Dalek2005Gold4', 'Dalek2005Gold5', 'Dalek2005Gold6', 'Dalek2005Gold7', 'Dalek2005Gold9', 'Dalek2005Gold10']
+## -------------------- ##
+####################
+#######>>>19:10:42.727 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player', 'Dalek2005Gold2', 'Dalek2005Gold3', 'Dalek2005Gold4', 'Dalek2005Gold5', 'Dalek2005Gold6', 'Dalek2005Gold7', 'Dalek2005Gold9', 'Dalek2005Gold10']
+## -------------------- ##
+####################
+#######>>>19:10:48.875 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player', 'Dalek2005Gold2', 'Dalek2005Gold3', 'Dalek2005Gold4', 'Dalek2005Gold5', 'Dalek2005Gold6', 'Dalek2005Gold7', 'Dalek2005Gold10']
+## -------------------- ##
+####################
+#######>>>19:10:57.130 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player', 'Dalek2005Gold2', 'Dalek2005Gold3', 'Dalek2005Gold4', 'Dalek2005Gold5', 'Dalek2005Gold6', 'Dalek2005Gold10']
+## -------------------- ##
+####################
+#######>>>19:10:57.693 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player', 'Dalek2005Gold2', 'Dalek2005Gold3', 'Dalek2005Gold4', 'Dalek2005Gold5', 'Dalek2005Gold10']
+## -------------------- ##
+####################
+#######>>>19:10:58.364 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player', 'Dalek2005Gold2', 'Dalek2005Gold3', 'Dalek2005Gold4', 'Dalek2005Gold5', 'Dalek2005Gold10']
+## -------------------- ##
+####################
+#######>>>19:10:59.484 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player', 'Dalek2005Gold2', 'Dalek2005Gold3', 'Dalek2005Gold5', 'Dalek2005Gold10']
+## -------------------- ##
+####################
+#######>>>19:11:1.148 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player', 'Dalek2005Gold2', 'Dalek2005Gold3', 'Dalek2005Gold5', 'Dalek2005Gold10']
+#>>>Refreshed Ship List: ['Player', 'Dalek2005Gold3', 'Dalek2005Gold5', 'Dalek2005Gold10']
+#>>>Refreshed Ship List: ['Player', 'Dalek2005Gold3', 'Dalek2005Gold5', 'Dalek2005Gold10']
+## -------------------- ##
+####################
+#######>>>19:11:6.130 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player', 'Dalek2005Gold3', 'Dalek2005Gold5', 'Dalek2005Gold10']
+## -------------------- ##
+####################
+#######>>>19:11:7.732 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player', 'Dalek2005Gold3', 'Dalek2005Gold10']
+## -------------------- ##
+####################
+#######>>>19:11:12.919 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player', 'Dalek2005Gold3']
+## -------------------- ##
+####################
+#######>>>19:11:13.190 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player', 'Dalek2005Gold3']
+## -------------------- ##
+####################
+#######>>>19:11:14.814 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:11:18.075 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:11:27.192 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:11:32.319 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:11:35.053 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:11:37.108 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:11:41.732 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:11:47.923 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:11:52.249 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:11:53.349 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:11:57.002 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:11:57.587 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:12:5.291 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:12:8.024 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:12:20.476 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:12:22.824 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:12:24.336 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:12:37.174 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:12:38.397 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:12:43.807 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:12:51.682 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:12:53.856 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:12:56.565 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:12:57.129 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:13:8.991 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:13:11.108 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:13:13.651 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:13:15.240 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:13:23.293 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:13:23.685 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:13:25.861 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:13:32.971 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:13:34.756 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:13:44.024 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:13:45.092 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:13:53.173 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:13:54.189 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:14:1.806 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:14:7.490 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:14:11.956 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:14:17.856 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:14:20.589 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:14:28.239 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:14:35.524 of 3/March/2023, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_GG8rhpi84x1L>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:14:46.224 of 3/March/2023, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_5QS90O78Dslc>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:14:49.455 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player', 'Player_Port Wing', 'Player_Starboard Wing']
+#>>>Refreshed Ship List: ['Player', 'Player_Port Wing', 'Player_Starboard Wing']
+## -------------------- ##
+####################
+#######>>>19:15:52.321 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:16:28.137 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:16:29.539 of 3/March/2023, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_0loH3KADN22X>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:16:35.471 of 3/March/2023, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_FS198l86Pgs6>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:16:37.321 of 3/March/2023, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_Wbo1b2A8JUrU>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:16:40.837 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player', 'Player_Port Wing', 'Player_Starboard Wing']
+#>>>Refreshed Ship List: ['Player', 'Player_Port Wing', 'Player_Starboard Wing']
+## -------------------- ##
+####################
+#######>>>19:17:42.670 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:17:43.136 of 3/March/2023, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_7c7jc1s2Pq13>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:17:50.337 of 3/March/2023, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_E3RQX3pIopP3>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:17:51.553 of 3/March/2023, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_LuX3SqW2Qxy2>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:17:54.986 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player', 'Player_Port Wing', 'Player_Starboard Wing']
+#>>>Refreshed Ship List: ['Player', 'Player_Port Wing', 'Player_Starboard Wing']
+## -------------------- ##
+####################
+#######>>>19:18:5.287 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:18:49.369 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:18:50.985 of 3/March/2023, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_aTIqa3ndp026>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:18:56.869 of 3/March/2023, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_NosL8l7Lnz2K>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:18:59.269 of 3/March/2023, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_3mO2quX8cHY8>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:19:1.152 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player', 'Player_Port Wing', 'Player_Starboard Wing']
+#>>>Refreshed Ship List: ['Player', 'Player_Port Wing', 'Player_Starboard Wing']
+## -------------------- ##
+####################
+#######>>>19:20:4.472 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:20:39.834 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:20:43.817 of 3/March/2023, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_7kJPAst981iY>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:20:49.102 of 3/March/2023, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_397awpaCMugk>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:20:52.768 of 3/March/2023, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_21R8PbXao6DS>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:21:0.833 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player', 'Player_Port Wing', 'Player_Starboard Wing']
+#>>>Refreshed Ship List: ['Player', 'Player_Port Wing', 'Player_Starboard Wing']
+## -------------------- ##
+####################
+#######>>>19:21:40.517 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player']
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_Oj7DfJxKwxyl>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:21:46.317 of 3/March/2023, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_RdGPZYnGFcP7>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:21:49.134 of 3/March/2023, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_GbGL1NsDwnL2>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:21:51.850 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player', 'Player_Port Wing', 'Player_Starboard Wing']
+#>>>Refreshed Ship List: ['Player', 'Player_Port Wing', 'Player_Starboard Wing']
+## -------------------- ##
+####################
+#######>>>19:22:38.399 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player']
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_Ce232V1W8vty>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:22:43.833 of 3/March/2023, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_LBxpNmGnWrX1>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:22:47.75 of 3/March/2023, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_ws2Zt4rk3H4v>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:22:50.616 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player', 'Player_Port Wing', 'Player_Starboard Wing']
+#>>>Refreshed Ship List: ['Player', 'Player_Port Wing', 'Player_Starboard Wing']
+## -------------------- ##
+####################
+#######>>>19:23:44.115 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:23:47.381 of 3/March/2023, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_pi3SeqNGGcEz>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:23:55.184 of 3/March/2023, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_apyiMN5UN03U>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player']
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_wgLpR6NExNqN>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:24:1.648 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:24:19.633 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player', 'Player_Port Wing', 'Player_Starboard Wing']
+#>>>Refreshed Ship List: ['Player', 'Player_Port Wing', 'Player_Starboard Wing']
+## -------------------- ##
+####################
+#######>>>19:25:23.207 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:25:34.040 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:29:22.881 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:29:24.177 of 3/March/2023, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_vHUP0IVX7Okd>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:30:53.296 of 3/March/2023, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_3fu7WEAcrQ2N>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:30:57.827 of 3/March/2023, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_x819sGv5gHGa>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:31:0.743 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player', 'Player_Port Wing', 'Player_Starboard Wing']
+#>>>Refreshed Ship List: ['Player', 'Player_Port Wing', 'Player_Starboard Wing']
+## -------------------- ##
+####################
+#######>>>19:31:4.810 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player', 'Player_Port Wing', 'Player_Starboard Wing']
+#>>>Refreshed Ship List: ['Player', 'Player_Port Wing', 'Player_Starboard Wing']
+#>>>Refreshed Ship List: ['Player', 'Player_Port Wing', 'Player_Starboard Wing']
+#>>>Refreshed Ship List: ['Player', 'Player_Port Wing', 'Player_Starboard Wing']
+#>>>Refreshed Ship List: ['Player', 'Player_Port Wing', 'Player_Starboard Wing']
+#>>>Refreshed Ship List: ['Player', 'Player_Port Wing', 'Player_Starboard Wing']
+#>>>Refreshed Ship List: ['Player', 'Player_Port Wing', 'Player_Starboard Wing']
+#>>>Refreshed Ship List: ['Player', 'Player_Port Wing', 'Player_Starboard Wing']
+## -------------------- ##
+####################
+#######>>>19:31:47.263 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:31:50.926 of 3/March/2023, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_GP3Yubk6j2ns>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:32:8.010 of 3/March/2023, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_9oQwA855GetE>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player', 'WarShipIntrepid-1']
+#>>>Refreshed Ship List: ['Player', 'WarShipIntrepid-1']
+## -------------------- ##
+####################
+#######>>>19:32:13.242 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player', 'WarShipIntrepid-1', 'Player_Port Wing', 'Player_Starboard Wing']
+#>>>Refreshed Ship List: ['Player', 'WarShipIntrepid-1', 'Player_Port Wing', 'Player_Starboard Wing']
+## -------------------- ##
+####################
+#######>>>19:33:4.525 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player', 'WarShipIntrepid-1']
+## -------------------- ##
+####################
+#######>>>19:33:8.025 of 3/March/2023, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_V1DOn4wi211G>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['WarShipIntrepid-1', 'Player']
+## -------------------- ##
+####################
+#######>>>19:33:27.216 of 3/March/2023, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_ZXv7y64D1162>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player', 'WarShipIntrepid-1']
+#>>>Refreshed Ship List: ['Player', 'WarShipIntrepid-1']
+## -------------------- ##
+####################
+#######>>>19:34:14.561 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player', 'WarShipIntrepid-1']
+## -------------------- ##
+####################
+#######>>>19:34:21.908 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player', 'WarShipIntrepid-1']
+## -------------------- ##
+####################
+#######>>>19:34:49.492 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:34:52.440 of 3/March/2023, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_SH8e84BiL6No>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:35:21.257 of 3/March/2023, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_JG0qUWW879ZC>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player', 'Husnock Warship-1']
+#>>>Refreshed Ship List: ['Player', 'Husnock Warship-1']
+## -------------------- ##
+####################
+#######>>>19:35:59.451 of 3/March/2023, Friday
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:36:3.522 of 3/March/2023, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_236jtPv20X53>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>19:36:16.822 of 3/March/2023, Friday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_69JK23WuS76P>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player', 'Husnock Warship-1']
+#>>>Refreshed Ship List: ['Player', 'Husnock Warship-1']
+## -------------------- ##
+####################
+#######>>>19:36:44.829 of 3/March/2023, Friday
 #>>>Refreshed Ship List: ['Player']
