@@ -1,0 +1,23 @@
+#This is the dump of the LogCreator: <Ferengi shuttle-1 Travel Logger LogCreator_bE94TW4iu5Is>
+#This log file was created on: 22:13:31.968 of 29/March/2023, Wednesday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>22:13:31.968 of 29/March/2023, Wednesday
+#>>>Initialized Ferengi shuttle-1 Travel logger
+#>>>SELF = <Ferengi shuttle-1(60641) Travel_jAV1WX1mqY8e>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization

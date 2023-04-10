@@ -1,0 +1,50 @@
+#This is the dump of the LogCreator: <ReplicatorWarship 3 Travel Logger LogCreator_p9m39gIKxJ2A>
+#This log file was created on: 23:26:48.166 of 19/March/2023, Sunday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>23:26:48.166 of 19/March/2023, Sunday
+#>>>Initialized ReplicatorWarship 3 Travel logger
+#>>>SELF = <ReplicatorWarship 3(196682) Travel_AxJhhAfYyy8O>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>23:27:0.551 of 19/March/2023, Sunday
+#>>>Updated Target Ship = Dalek2005Gold9 1
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:27:0.835 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:27:1.093 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:27:1.863 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:27:15.582 of 19/March/2023, Sunday
+#>>>Updated Target Ship = Dalek Saucer-8
+## -------------------- ##
+####################
+#######>>>23:27:25.646 of 19/March/2023, Sunday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

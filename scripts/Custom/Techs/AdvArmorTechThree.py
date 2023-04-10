@@ -120,18 +120,18 @@ class AdvArmorTechTwoDef(FoundationTech.TechDef):
 			vd_str_mod[pShip.GetName()] = 0.0
 			pShipp[pShip.GetName()] = pShip
 
-			#print AdvArmorRecord[pShip.GetName()]
-			#print vd_rad_mod[pShip.GetName()]
-			#print vd_str_mod[pShip.GetName()]
-			#print pShipp[pShip.GetName()]
+			print AdvArmorRecord[pShip.GetName()]
+			print vd_rad_mod[pShip.GetName()]
+			print vd_str_mod[pShip.GetName()]
+			print pShipp[pShip.GetName()]
 			mustGo = 0
 			if (pShip.GetName() == pPlayer.GetName()):
 				if not self.bAddedWarpListener.has_key(pShip.GetName()):
 					if LastShipType == "nonArmored":
-						#print ("Ok the previous was not armored")
+						print ("Ok the previous was not armored")
 						ArmorButton = Lib.LibEngineering.CreateMenuButton("Plating Offline", "Tactical", __name__ + ".AdvArmorTogglePlayer")
 					else:
-						#print ("Ok the previous WAS armored, attempting to get the past button")
+						print ("Ok the previous WAS armored, attempting to get the past button")
 						try:
 							theMenu = Libs.LibEngineering.GetBridgeMenu("Tactical")
 							ArmorButton = Libs.LibEngineering.GetButton("Plating Offline", theMenu)
@@ -151,8 +151,8 @@ class AdvArmorTechTwoDef(FoundationTech.TechDef):
 			else:
 				if not self.bAddedWarpListener.has_key(pShip.GetName()):
 					pShip.AddPythonFuncHandlerForInstance(App.ET_SUBSYSTEM_STATE_CHANGED, __name__ + ".SubsystemStateChanged")
-					pShip.AddPythonFuncHandlerForInstance(App.ET_SUBSYSTEM_DAMAGED, __name__ + ".SubDamage") 
-					#App.g_kEventManager.AddBroadcastPythonFuncHandler(App.ET_SUBSYSTEM_DAMAGED, pMission, __name__ + ".SubDamage")
+					pShip.AddPythonFuncHandlerForInstance(App.ET_SUBSYSTEM_DAMAGED, __name__ + ".SubDamage") # to-do aniadi esto y luego pMission to-do prueba pShip
+					#App.g_kEventManager.AddBroadcastPythonFuncHandler(App.ET_SUBSYSTEM_DAMAGED, pMission, __name__ + ".SubDamage") # TO-DO AÑADI PSHIP BORRAR SI CRASHEA EL SISTEMA
 					self.bAddedWarpListener[pShip.GetName()] = 1
 				mustGo = 1
 
@@ -160,9 +160,9 @@ class AdvArmorTechTwoDef(FoundationTech.TechDef):
 			try:
 				pShipModule=__import__(pShip.GetScript())
 				imForced = pShipModule.GetForcedArmor()
-				#print "I am forced, understood"
+				print "I am forced, understood"
 			except:
-				#print "I am not forced, understood"
+				print "I am not forced, understood"
 				imForced = 0
 
 			armorStatus = ((mustGo == 1) or (imForced == 1))
@@ -182,12 +182,6 @@ class AdvArmorTechTwoDef(FoundationTech.TechDef):
 		# get our Ship
                 debug(__name__ + ", DetachShip")
                 pShip = App.ShipClass_GetObjectByID(None, iShipID)
-
-                pGame = App.Game_GetCurrentGame()
-                pEpisode = pGame.GetCurrentEpisode()
-                pMission = pEpisode.GetCurrentMission()
-                pPlayer=MissionLib.GetPlayer()
-
                 if pShip:
 			# remove the listeners
 			print("Have to detach advarmortechtwo")
@@ -214,12 +208,12 @@ class AdvArmorTechTwoDef(FoundationTech.TechDef):
                 debug(__name__ + ", SubsystemStateChanged")
                 pShip = App.ShipClass_Cast(pObject)
                 pSubsystem = pEvent.GetSource()
-                #print "Ship %s with AdvArmorTech2 has changed a subsystem" % pShip.GetName()
+                print "Ship %s with AdvArmorTech2 has changed a subsystem" % pShip.GetName()
 
         	# if the subsystem that changes its power is a weapon
                 if pSubsystem.IsTypeOf(App.CT_WEAPON_SYSTEM):
         		# set wings for this alert state
-        		#print "Ship %s with AdvArmorTech2 has changed the weapon subsystem" % pShip.GetName()
+        		print "Ship %s with AdvArmorTech2 has changed the weapon subsystem" % pShip.GetName()
                         AdvArmorToggleAI(pObject, pEvent, pShip)
 		
                 pObject.CallNextHandler(pEvent)
@@ -228,8 +222,9 @@ oAdvArmorTechTwo = AdvArmorTechTwoDef("Adv Armor Tech")
 
 
 # called when subsystem on any ship is damaged
-def SubDamage(pObject, pEvent):
+def SubDamage(pObject, pEvent): # TO-DO ARREGLAR ESTO, NO CAPTA NINGUN OBJETO
 	pShip = App.ShipClass_Cast(pObject)
+	print pObject # ARREGLAR, ESTO SON CMISSION INSTANCE, NO LO QUE QUEREMOS
 	AdvArmor(pShip)
 	pObject.CallNextHandler(pEvent)
 
@@ -240,11 +235,11 @@ def SubDamagePlayer(pObject, pEvent):
 
 # Replaces the Model of pShip
 def ReplaceModel(pShip, sNewShipScript):
-	#print __name__ + ", ReplaceModel"
+	print __name__ + ", ReplaceModel"
 	#pShip = App.ShipClass_GetObjectByID(None, pShip.GetObjID())
 	#if not pShip:
 	#	return
-	#print sNewShipScript
+	print sNewShipScript
         ShipScript = __import__('ships.' + sNewShipScript)
         ShipScript.LoadModel()
         kStats = ShipScript.GetShipStats()
@@ -424,12 +419,12 @@ def AdvArmorTogglePlayer(pObject, pEvent):
 			vd_rad_mod[pShip.GetName()]=pShipModule.GetDamageRadMod()
 			vd_str_mod[pShip.GetName()]=pShipModule.GetDamageStrMod()
 		except:
-			#print "No visual changes, understood"
+			print "No visual changes, understood"
 			vd_rad_mod[pShip.GetName()]=1
 			vd_str_mod[pShip.GetName()]=1
 	try:
 		if (kStats.has_key('ArmouredModel')):
-			#print "Hey I got it, extra model armour"
+			print "Hey I got it, extra model armour"
 			sNewShipScript[pShip.GetName()] = kStats['ArmouredModel']
 			sOriginalShipScript[pShip.GetName()] = kStats["OriginalModel"]
 	except:
@@ -437,7 +432,7 @@ def AdvArmorTogglePlayer(pObject, pEvent):
 			sNewShipScript[pShip.GetName()]=pShipModule.GetArmouredModel()
 			sOriginalShipScript[pShip.GetName()]=pShipModule.GetOriginalShipModel()
 		except:
-			#print "No visual armour, understood"
+			print "No visual armour, understood"
 			sNewShipScript[pShip.GetName()] = None
 			sOriginalShipScript[pShip.GetName()] = None
 
@@ -499,12 +494,12 @@ def AdvArmorToggleAI(pObject, pEvent, pShip):
 			vd_rad_mod[pShip.GetName()]=pShipModule.GetDamageRadMod()
 			vd_str_mod[pShip.GetName()]=pShipModule.GetDamageStrMod()
 		except:
-			#print "No visual changes, understood"
+			print "No visual changes, understood"
 			vd_rad_mod[pShip.GetName()]=1
 			vd_str_mod[pShip.GetName()]=1
 	try:
 		if (kStats.has_key('ArmouredModel')):
-			#print "Hey I got it, extra model armour"
+			print "Hey I got it, extra model armour"
 			sNewShipScript[pShip.GetName()] = kStats['ArmouredModel']
 			sOriginalShipScript[pShip.GetName()] = kStats["OriginalModel"]
 	except:
@@ -512,7 +507,7 @@ def AdvArmorToggleAI(pObject, pEvent, pShip):
 			sNewShipScript[pShip.GetName()]=pShipModule.GetArmouredModel()
 			sOriginalShipScript[pShip.GetName()]=pShipModule.GetOriginalShipModel()
 		except:
-			#print "No visual armour, understood"
+			print "No visual armour, understood"
 			sNewShipScript[pShip.GetName()] = None
 			sOriginalShipScript[pShip.GetName()] = None
 
@@ -570,12 +565,12 @@ def AdvArmorTogglePlayerFirst(armourActive):
 			vd_rad_mod[pShip.GetName()]=pShipModule.GetDamageRadMod()
 			vd_str_mod[pShip.GetName()]=pShipModule.GetDamageStrMod()
 		except:
-			#print "No visual changes, understood"
+			print "No visual changes, understood"
 			vd_rad_mod[pShip.GetName()]=1
 			vd_str_mod[pShip.GetName()]=1
 	try:
 		if (kStats.has_key('ArmouredModel')):
-			#print "Hey I got it, extra model armour"
+			print "Hey I got it, extra model armour"
 			sNewShipScript[pShip.GetName()] = kStats['ArmouredModel']
 			sOriginalShipScript[pShip.GetName()] = kStats["OriginalModel"]
 	except:
@@ -583,7 +578,7 @@ def AdvArmorTogglePlayerFirst(armourActive):
 			sNewShipScript[pShip.GetName()]=pShipModule.GetArmouredModel()
 			sOriginalShipScript[pShip.GetName()]=pShipModule.GetOriginalShipModel()
 		except:
-			#print "No visual armour, understood"
+			print "No visual armour, understood"
 			sNewShipScript[pShip.GetName()] = None
 			sOriginalShipScript[pShip.GetName()] = None
 
@@ -643,12 +638,12 @@ def AdvArmorToggleAIFirst(pShip, armourActive):
 			vd_rad_mod[pShip.GetName()]=pShipModule.GetDamageRadMod()
 			vd_str_mod[pShip.GetName()]=pShipModule.GetDamageStrMod()
 		except:
-			#print "No visual changes, understood"
+			print "No visual changes, understood"
 			vd_rad_mod[pShip.GetName()]=1
 			vd_str_mod[pShip.GetName()]=1
 	try:
 		if (kStats.has_key('ArmouredModel')):
-			#print "Hey I got it, extra model armour"
+			print "Hey I got it, extra model armour"
 			sNewShipScript[pShip.GetName()] = kStats['ArmouredModel']
 			sOriginalShipScript[pShip.GetName()] = kStats["OriginalModel"]
 	except:
@@ -656,7 +651,7 @@ def AdvArmorToggleAIFirst(pShip, armourActive):
 			sNewShipScript[pShip.GetName()]=pShipModule.GetArmouredModel()
 			sOriginalShipScript[pShip.GetName()]=pShipModule.GetOriginalShipModel()
 		except:
-			#print "No visual armour, understood"
+			print "No visual armour, understood"
 			sNewShipScript[pShip.GetName()] = None
 			sOriginalShipScript[pShip.GetName()] = None
 

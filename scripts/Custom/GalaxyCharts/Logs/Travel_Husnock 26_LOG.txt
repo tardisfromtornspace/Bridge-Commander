@@ -1,0 +1,37 @@
+#This is the dump of the LogCreator: <Husnock 26 Travel Logger LogCreator_fQ3y21Uf5Y84>
+#This log file was created on: 18:48:4.446 of 20/March/2023, Monday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>18:48:4.446 of 20/March/2023, Monday
+#>>>Initialized Husnock 26 Travel logger
+#>>>SELF = <Husnock 26(490917) Travel_vRgsiuIK2q0L>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>18:48:20.862 of 20/March/2023, Monday
+#>>>Arrived Events:  added event <C TGEvent instance at _55537788_p_TGEvent>
+#>>>Updated Target Ship = Dalek Saucer-23
+## -------------------- ##
+####################
+#######>>>18:48:34.035 of 20/March/2023, Monday
+#>>>Updated Target Ship = DalekSaucer 1
+## -------------------- ##
+####################
+#######>>>18:48:36.788 of 20/March/2023, Monday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

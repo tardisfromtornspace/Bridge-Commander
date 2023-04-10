@@ -1,0 +1,24 @@
+#This is the dump of the LogCreator: <Hyperdrive Inner Travel Logger LogCreator_OX04R1qWVE9P>
+#This log file was created on: 1:59:51.256 of 19/March/2023, Sunday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>1:59:51.256 of 19/March/2023, Sunday
+#>>>Initialized Hyperdrive Inner Travel logger
+#>>>SELF = <Hyperdrive Inner(4478809) Travel_vb92tOyh90Hg>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: Player Travel Destination OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization

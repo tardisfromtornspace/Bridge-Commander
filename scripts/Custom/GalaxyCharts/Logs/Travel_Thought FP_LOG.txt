@@ -1,0 +1,27 @@
+#This is the dump of the LogCreator: <Thought FP Travel Logger LogCreator_9k20Y4RIkPWy>
+#This log file was created on: 11:44:52.484 of 19/March/2023, Sunday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>11:44:52.484 of 19/March/2023, Sunday
+#>>>Initialized Thought FP Travel logger
+#>>>SELF = <Thought FP(1083270) Travel_1xGI9fL3S684>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+########################################
+# 11:45:14.334 of 19/March/2023, Sunday
+#Ending of log dump - User is quiting the game
+########################################

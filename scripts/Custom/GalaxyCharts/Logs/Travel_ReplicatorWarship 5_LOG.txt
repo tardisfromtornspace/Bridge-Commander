@@ -1,0 +1,41 @@
+#This is the dump of the LogCreator: <ReplicatorWarship 5 Travel Logger LogCreator_QT57yE6izXP4>
+#This log file was created on: 23:27:57.551 of 19/March/2023, Sunday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>23:27:57.551 of 19/March/2023, Sunday
+#>>>Initialized ReplicatorWarship 5 Travel logger
+#>>>SELF = <ReplicatorWarship 5(263788) Travel_76uTklccTA1h>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>23:28:9.463 of 19/March/2023, Sunday
+#>>>Updated Target Ship = Dalek2005Gold 1
+## -------------------- ##
+####################
+#######>>>23:28:26.412 of 19/March/2023, Sunday
+#>>>Updated Target Ship = Dalek2005Gold4 1
+## -------------------- ##
+####################
+#######>>>23:28:39.615 of 19/March/2023, Sunday
+#>>>Updated Target Ship = Dalek Saucer-8
+## -------------------- ##
+####################
+#######>>>23:28:42.900 of 19/March/2023, Sunday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

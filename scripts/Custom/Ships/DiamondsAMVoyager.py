@@ -11,7 +11,7 @@ import App
 #                                                                                     #
 abbrev = 'DiamondsAMVoyager'
 iconName = 'AMVoyager'
-longName = 'AM Voyager'
+longName = 'Endgame AM Voyager'
 shipFile = 'DiamondsAMVoyager' 
 menuGroup = 'Fed Ships'
 playerMenuGroup = 'Fed Ships'
@@ -99,3 +99,7 @@ if Foundation.shipList._keyList.has_key(longName):
      Foundation.ShipDef.__dict__[longName].enemyDetails[2] = Foundation.shipList[longName].enemyDetails[2]
 #                                                                                     #
 #######################################################################################
+
+#Foundation.ShipDef.DiamondsAMVoyager.SDTEntry = {
+#	"Textures": [["voyager01_glow", "data/Models/Ships/ArmoredVoyager/High/voyager01.tga"]]
+#}

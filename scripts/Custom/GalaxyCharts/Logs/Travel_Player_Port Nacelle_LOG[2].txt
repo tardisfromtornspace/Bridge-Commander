@@ -1,0 +1,28 @@
+#This is the dump of the LogCreator: <Player_Port Nacelle Travel Logger[2] LogCreator_IFShLwGtbfSR>
+#This log file was created on: 18:42:46.447 of 29/March/2023, Wednesday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>18:42:46.447 of 29/March/2023, Wednesday
+#>>>Initialized Player_Port Nacelle Travel logger
+#>>>SELF = <Player_Port Nacelle(120615) Travel_Bl14D65tA6i3>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: Player Travel Destination OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+########################################
+# 18:42:52.447 of 29/March/2023, Wednesday
+#Ending of log dump - User is quiting the game
+########################################

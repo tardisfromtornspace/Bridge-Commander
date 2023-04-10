@@ -1,0 +1,23 @@
+#This is the dump of the LogCreator: <Attack Ship-4 Travel Logger LogCreator_gJ4xdBQnpsCt>
+#This log file was created on: 2:13:48.992 of 19/March/2023, Sunday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>2:13:48.992 of 19/March/2023, Sunday
+#>>>Initialized Attack Ship-4 Travel logger
+#>>>SELF = <Attack Ship-4(4476394) Travel_2cy3t1V1y4Gm>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization

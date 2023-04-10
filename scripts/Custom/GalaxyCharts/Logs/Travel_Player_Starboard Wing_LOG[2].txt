@@ -1,0 +1,43 @@
+#This is the dump of the LogCreator: <Player_Starboard Wing Travel Logger[2] LogCreator_IOjU8xQ3sqxd>
+#This log file was created on: 23:6:30.782 of 7/March/2023, Tuesday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>23:6:30.782 of 7/March/2023, Tuesday
+#>>>Initialized Player_Starboard Wing Travel logger
+#>>>SELF = <Player_Starboard Wing(217833) Travel_2X6i1c2Z2Bsf>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>23:7:28.065 of 7/March/2023, Tuesday
+#>>>Initialized Player_Starboard Wing Travel logger
+#>>>SELF = <Player_Starboard Wing(315631) Travel_1GE093h1a2RO>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization

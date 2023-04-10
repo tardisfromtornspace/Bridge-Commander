@@ -69,10 +69,10 @@ def GetDamage():
 	return 19000
 
 def GetGuidanceLifetime():
-	return 6.0
+	return 2.0
 
 def GetMaxAngularAccel():
-	return 0.435
+	return 1.635
 
 try:
 	modTransphasicTorp = __import__("Custom.Techs.TransphasicTorp")

@@ -1,0 +1,29 @@
+#This is the dump of the LogCreator: <Gorn Battleship-4 Travel Logger[2] LogCreator_isFclm5WCfB1>
+#This log file was created on: 22:10:42.895 of 29/March/2023, Wednesday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>22:10:42.895 of 29/March/2023, Wednesday
+#>>>Initialized Gorn Battleship-4 Travel logger
+#>>>SELF = <Gorn Battleship-4(61558) Travel_Z889Dww6Huch>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Ship is dead or dying
+#>>>Ship is dead or dying (at SetDestination)
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Ship is dead or dying (at SetDestination)
+#>>>Set Exit Placement Name as None
+#>>>Enable Towing: 0
+#>>>Travelling procedures initiated...
+#>>> -Ship is dead or dying
+########################################
+# 22:11:38.801 of 29/March/2023, Wednesday
+#Ending of log dump - User is quiting the game
+########################################

@@ -4,28 +4,28 @@ import App
 
 def Create(pTorp):
 	kCoreColor = App.TGColorA()
-	kCoreColor.SetRGBA(255.0 / 255.0, 255.0 / 255.0, 225.0 / 255.0, 1.000000)
+	kCoreColor.SetRGBA(255.0, 255.0, 255.0, 1.000000)
 	kGlowColor = App.TGColorA()
-	kGlowColor.SetRGBA(255.0 / 255.0, 255.0 / 255.0, 225.0 / 255.0, 1.000000)	
+	kGlowColor.SetRGBA(255.0, 255.0, 255.0, 1.000000)	
 
 	pTorp.CreateTorpedoModel(
-					"data/Textures/Tactical/TorpedoCore.tga",
+					"data/Textures/Tactical/ds9torp.tga",
 					kCoreColor, 
-					0.1,
-					0.0,	 
-					"data/Textures/Tactical/ArmVoyX.tga", 
-					kCoreColor,
-					0.1,	
-					0.3,	 
-					0.05,	
-					"data/Textures/Tactical/ArmVoyX.tga",
+					0.2,
+					6.0,	 
+					"data/Textures/Tactical/ds9torp.tga", 
+					kGlowColor,
+					2.3,	
+					0.4,	 
+					0.5,	
+					"data/Textures/Tactical/TorpedoFlares.tga",
 					kGlowColor,										
-					5,		
-					0.1,		
-					0.06)
+					3,		
+					0.2,		
+					0.1)
 
 	pTorp.SetDamage( GetDamage() )
-	pTorp.SetDamageRadiusFactor(90.99)
+	pTorp.SetDamageRadiusFactor(1.0)
 	pTorp.SetGuidanceLifetime( GetGuidanceLifetime() )
 	pTorp.SetMaxAngularAccel( GetMaxAngularAccel() )
 
@@ -37,22 +37,22 @@ def Create(pTorp):
 	return(0)
 
 def GetLaunchSpeed():
-	return(60.0)
+	return(69.0)
 
 def GetLaunchSound():
-	return("Photon Torpedo")
+	return("IntrepidCannon")
 
 def GetPowerCost():
-	return(890.0)
+	return(35.0)
 
 def GetName():
 	return("ArmVoyX")
 
 def GetDamage():
-	return 999.0
+	return 790.0
 
 def GetGuidanceLifetime():
-	return 9.0
+	return 4.0
 
 def GetMaxAngularAccel():
-	return 0.60
+	return 1.40

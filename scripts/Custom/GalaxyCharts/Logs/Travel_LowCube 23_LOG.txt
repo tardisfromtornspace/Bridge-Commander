@@ -1,0 +1,45 @@
+#This is the dump of the LogCreator: <LowCube 23 Travel Logger LogCreator_WKe2Ybksc0OZ>
+#This log file was created on: 18:48:4.446 of 20/March/2023, Monday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>18:48:4.446 of 20/March/2023, Monday
+#>>>Initialized LowCube 23 Travel logger
+#>>>SELF = <LowCube 23(489285) Travel_5jNnwb56nX2w>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>18:48:9.862 of 20/March/2023, Monday
+#>>>Arrived Events:  added event <C TGEvent instance at _3a0d9ea0_p_TGEvent>
+#>>>Updated Target Ship = Dalek Saucer-23
+## -------------------- ##
+####################
+#######>>>18:48:43.053 of 20/March/2023, Monday
+#>>>Updated Target Ship = DalekSaucer 1
+## -------------------- ##
+####################
+#######>>>18:48:47.063 of 20/March/2023, Monday
+#>>>Updated Target Ship = Dalek Saucer-18
+## -------------------- ##
+####################
+#######>>>18:48:54.074 of 20/March/2023, Monday
+#>>>Updated Target Ship = DalekSaucer 1
+## -------------------- ##
+####################
+#######>>>18:49:3.388 of 20/March/2023, Monday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

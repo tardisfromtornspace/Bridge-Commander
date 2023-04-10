@@ -1,0 +1,2765 @@
+#This is the dump of the LogCreator: <Type 89 TARDIS-1 Travel Logger LogCreator_2eYM30jGimto>
+#This log file was created on: 11:34:59.022 of 19/March/2023, Sunday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>11:34:59.022 of 19/March/2023, Sunday
+#>>>Initialized Type 89 TARDIS-1 Travel logger
+#>>>SELF = <Type 89 TARDIS-1(107780) Travel_RE3Vj07vYvb4>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>11:37:24.753 of 19/March/2023, Sunday
+#>>>Updated Target Ship = RIS Tomalok
+#>>>Travelling INTERCEPT procedures initiated...
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Checked: Ship can warp, travel procedures started.
+#>>> -Stopped Intercept speed, incase the ship was intercepting.
+#>>> -Target is RIS Tomalok (196647)
+#>>>Playing travel intercept sequence...
+## -------------------- ##
+####################
+#######>>>11:37:29.539 of 19/March/2023, Sunday
+#>>>Travel INTERCEPT sequence ended...
+#>>>Travelling Intercept procedures finished...
+## -------------------- ##
+####################
+#######>>>11:37:29.806 of 19/March/2023, Sunday
+#>>>Cancelling Intercept update, we are within distance...
+#>>>Stopping warp intercept
+#>>>Stopped Warp Intercept...
+## -------------------- ##
+####################
+#######>>>11:37:38.572 of 19/March/2023, Sunday
+#>>>Finished  FinishStopIntercept
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:37:39.258 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:37:39.573 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:37:40.256 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:37:40.572 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:37:41.056 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:37:41.556 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:37:42.257 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:37:42.589 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:37:43.275 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:37:43.539 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:37:43.789 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:37:44.056 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:37:44.285 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:37:45.026 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:37:45.257 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:37:45.856 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:37:46.039 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:37:46.526 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:37:47.256 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:37:47.555 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:37:48.256 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:37:48.572 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:37:49.055 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:37:49.555 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:37:50.056 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:37:50.556 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:37:51.072 of 19/March/2023, Sunday
+#>>>Beginning to chase target... better late than never...
+#>>>Setting Destination...
+#>>> -Destination: Systems.CJones.CJones9
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = CJones9
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>11:37:51.289 of 19/March/2023, Sunday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = CJones9
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>11:37:51.773 of 19/March/2023, Sunday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = CJones9
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>11:37:52.056 of 19/March/2023, Sunday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = CJones9
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>11:37:52.275 of 19/March/2023, Sunday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = CJones9
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>11:37:52.556 of 19/March/2023, Sunday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = CJones9
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>11:37:52.839 of 19/March/2023, Sunday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = CJones9
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>11:37:53.123 of 19/March/2023, Sunday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = CJones9
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>11:37:53.490 of 19/March/2023, Sunday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = CJones9
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>11:37:53.705 of 19/March/2023, Sunday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = CJones9
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>11:37:53.989 of 19/March/2023, Sunday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = CJones9
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>11:37:54.206 of 19/March/2023, Sunday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = CJones9
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>11:37:54.622 of 19/March/2023, Sunday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = CJones9
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>11:37:54.839 of 19/March/2023, Sunday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = CJones9
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>11:37:55.110 of 19/March/2023, Sunday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = CJones9
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>11:37:55.456 of 19/March/2023, Sunday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = CJones9
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>11:37:55.823 of 19/March/2023, Sunday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = CJones9
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>11:37:56.089 of 19/March/2023, Sunday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = CJones9
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>11:37:56.439 of 19/March/2023, Sunday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = CJones9
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>11:37:56.705 of 19/March/2023, Sunday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = CJones9
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>11:37:57.039 of 19/March/2023, Sunday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = CJones9
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>11:37:57.251 of 19/March/2023, Sunday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = CJones9
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>11:37:57.502 of 19/March/2023, Sunday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = CJones9
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>11:37:57.754 of 19/March/2023, Sunday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = CJones9
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>11:37:58.000 of 19/March/2023, Sunday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = CJones9
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>11:37:58.250 of 19/March/2023, Sunday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = CJones9
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>11:37:58.501 of 19/March/2023, Sunday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = CJones9
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>11:37:58.750 of 19/March/2023, Sunday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = CJones9
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>11:37:59.000 of 19/March/2023, Sunday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = CJones9
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>11:37:59.250 of 19/March/2023, Sunday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = CJones9
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>11:37:59.500 of 19/March/2023, Sunday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = CJones9
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>11:38:0.292 of 19/March/2023, Sunday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = CJones9
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>11:38:0.499 of 19/March/2023, Sunday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = CJones9
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>11:38:0.751 of 19/March/2023, Sunday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = CJones9
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>11:38:1.082 of 19/March/2023, Sunday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = CJones9
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>11:38:1.339 of 19/March/2023, Sunday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = CJones9
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>11:38:1.572 of 19/March/2023, Sunday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = CJones9
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>11:38:1.839 of 19/March/2023, Sunday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = CJones9
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>11:38:2.055 of 19/March/2023, Sunday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = CJones9
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>11:38:2.355 of 19/March/2023, Sunday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = CJones9
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>11:38:2.556 of 19/March/2023, Sunday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = CJones9
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>11:38:2.822 of 19/March/2023, Sunday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = CJones9
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>11:38:3.072 of 19/March/2023, Sunday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = CJones9
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>11:38:3.338 of 19/March/2023, Sunday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = CJones9
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>11:38:3.555 of 19/March/2023, Sunday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = CJones9
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>11:38:3.905 of 19/March/2023, Sunday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = CJones9
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>11:38:4.106 of 19/March/2023, Sunday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = CJones9
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>11:38:4.339 of 19/March/2023, Sunday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = CJones9
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>11:38:4.605 of 19/March/2023, Sunday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = CJones9
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>11:38:4.906 of 19/March/2023, Sunday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = CJones9
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>11:38:5.106 of 19/March/2023, Sunday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = CJones9
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>11:38:5.372 of 19/March/2023, Sunday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = CJones9
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>11:38:5.605 of 19/March/2023, Sunday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = CJones9
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>11:38:5.888 of 19/March/2023, Sunday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = CJones9
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>11:38:6.338 of 19/March/2023, Sunday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = CJones9
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>11:38:6.572 of 19/March/2023, Sunday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = CJones9
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>11:38:6.855 of 19/March/2023, Sunday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = CJones9
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+## -------------------- ##
+####################
+#######>>>11:38:7.088 of 19/March/2023, Sunday
+#>>>Beginning to chase target... better late than never...
+#>>>Tried to set the same destination...
+#>>> -Travel Type Set: Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = DryDock
+#>>> -Attribute: Destination Set = CJones9
+#>>> -Checked: Ship can warp, travel procedures started.
+#>>> -Speed Check:
+#>>>     -Current:  9.98999977112
+#>>>     -Real Speed:  7920.11572266
+#>>>     -Cruise:  9.99
+#>>>     -Max:  8.0
+#>>>     -Actual Cruise:  9.98999977112
+#>>>     -Actual Max:  8.0
+#>>> -GFX Sequence Set up DONE
+#>>> -Travel Values calculated:
+#>>>   -Time To Reach: 29.6897029877 seconds
+#>>> -Started playing engaging sequence.
+## -------------------- ##
+####################
+#######>>>11:38:18.789 of 19/March/2023, Sunday
+#>>> -Finishing travelling procedures...
+#>>> -Started Refresher Loop
+#>>> -Travel Set being used: AITravelSet
+#>>> -Just changed ship set.
+#>>> -Travelling procedures ended, ship is already travelling.
+## -------------------- ##
+####################
+#######>>>11:38:19.023 of 19/March/2023, Sunday
+#>>>Updating travel values (ship changed speed)
+#>>> -New Speed: 9.99
+#>>> -New time to reach: 29.6889286041 seconds
+#>>> -Finished updating travel values
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 29.6556339264 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:19.305 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 29.3731327057 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:19.523 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 29.1062870026 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:19.805 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 28.7831058502 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:20.039 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 28.6234378815 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:20.305 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 28.3732852936 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:20.522 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 28.139673233 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:20.805 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 27.8063297272 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:21.039 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 27.6392154694 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:21.389 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 27.2732181549 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:21.572 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 27.0897159576 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:21.839 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 26.7560367584 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:22.089 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 26.5895023346 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:22.322 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 26.3555545807 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:22.571 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 26.0903263092 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:22.838 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 25.8232059479 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:23.055 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 25.6060123444 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:23.356 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 25.2891178131 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:23.589 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 24.9888858795 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:23.839 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 24.8389530182 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:24.072 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 24.5225162506 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:24.355 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 24.2889957428 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:24.639 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 24.0012760162 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:24.839 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 23.7561283112 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:25.105 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 23.5731143951 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:25.456 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 23.1704349518 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:25.672 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 22.9385929108 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:25.922 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 22.6395206451 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:26.172 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 22.3893680573 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:26.405 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 22.171503067 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:26.705 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 21.888299942 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:26.905 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 21.6393070221 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:27.172 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 21.339258194 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:27.739 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 20.8731021881 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:27.889 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 20.6567020416 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:28.455 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 20.0896244049 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:29.072 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 19.4722232819 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:29.639 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 18.8392276764 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:30.239 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 18.2388248444 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:30.806 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 17.7564945221 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:31.189 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 17.4730167389 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:31.405 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 17.0729618073 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:31.889 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 16.5892887115 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:32.372 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 16.3067264557 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:32.622 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 16.0399417877 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:32.856 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 15.755853653 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:33.122 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 15.405298233 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:33.555 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 15.0563602448 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:33.822 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 14.7721500397 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:34.139 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 14.455286026 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:34.472 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 14.122461319 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:34.805 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 13.6888980865 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:35.013 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 13.4436588287 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:35.257 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 13.1935062408 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:35.505 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 12.9436893463 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:35.755 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 12.6943912506 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:36.004 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 12.444360733 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:36.254 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 12.0061283112 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:36.691 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 11.9426822662 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:36.756 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 11.6956424713 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:37.002 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 11.4439029694 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:37.256 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 11.1946659088 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:37.503 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 10.799036026 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:38.088 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 10.5899295807 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:38.322 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 10.3237857819 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:38.688 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 9.95647621155 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:38.939 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 9.7069644928 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:39.088 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 9.57332801819 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:39.406 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 9.25695228577 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:39.688 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 8.93981361389 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:39.905 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 8.65633583069 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:40.222 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 8.28716468811 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:40.556 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 8.05721473694 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:40.788 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 7.83999061584 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:41.055 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 7.59020423889 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:41.338 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 7.32320594788 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:41.571 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 7.0903263092 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:41.805 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 6.85711097717 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:42.071 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 6.590051651 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:42.305 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 6.20647621155 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:42.672 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 5.90697669983 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:42.871 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 5.63979530334 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:43.321 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 5.35698890686 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:43.588 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 4.98934364319 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:43.839 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 4.78838539124 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:44.055 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 4.57262611389 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:44.405 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 4.24022865295 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:44.622 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 4.00670814514 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:44.872 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 3.78923988342 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:45.072 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 3.58916664124 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:45.389 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 3.25570106506 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:45.571 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 3.10689735413 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:45.855 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 2.77340126038 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:46.239 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 2.43950843811 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:46.372 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 2.10643959045 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:46.739 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 1.90685462952 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:46.888 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 1.57314491272 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:47.238 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 1.38949012756 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:47.572 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 1.00594520569 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:47.805 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 0.855981826782 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:48.106 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 0.52285194397 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:48.339 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 0.30620765686 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:48.605 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: 0.0567569732666 seconds
+#>>> -Update Loop MARK COMPLETED
+## -------------------- ##
+####################
+#######>>>11:38:48.838 of 19/March/2023, Sunday
+#>>>Updating Travelling Procedures...
+#>>> -Update Loop MARK START
+#>>> -Time left: -0.159826278687 seconds
+#>>> -Update Loop MARK COMPLETED, arrived at destination.
+#>>>Drop Out Of Travel Procedures Started:
+#>>> -Is Dropping out: 0
+#>>> -Traveler Systems Location Set
+#>>> -Travel Values are zero
+#>>> -Stopped Refresher...
+#>>> -Impulse Engines status reset
+#>>>Checking Exit Point/Placement and exiting path...
+#>>>Set Exit Placement Name as TravelerWarpPlacement1
+#>>>Set Exit Point to <C TGPoint3 instance at _394d3dbc_p_TGPoint3> // components: X = -5416.56835938,  Y = 231.978942871,  Z = -38.8441696167
+#>>> -Changed ship set to destination: CJones9
+#>>> -Sent Arrived Events
+#>>> -Exiting warp Seq played
+#>>> -Clocked Real Time taken to Travel: 29.8516845703 seconds
+#>>>Finished procedures to Drop Out Of Travel.
+#>>>Travelling INTERCEPT procedures initiated...
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Checked: Ship can warp, travel procedures started.
+#>>> -Stopped Intercept speed, incase the ship was intercepting.
+#>>> -Target is RIS Tomalok (196647)
+#>>>Playing travel intercept sequence...
+## -------------------- ##
+####################
+#######>>>11:39:24.605 of 19/March/2023, Sunday
+#>>>Travel INTERCEPT sequence ended...
+#>>>Travelling Intercept procedures finished...
+## -------------------- ##
+####################
+#######>>>11:39:28.071 of 19/March/2023, Sunday
+#>>>Cancelling Intercept update, we are within distance...
+#>>>Stopping warp intercept
+#>>>Stopped Warp Intercept...
+## -------------------- ##
+####################
+#######>>>11:39:29.938 of 19/March/2023, Sunday
+#>>>Finished  FinishStopIntercept
+## -------------------- ##
+####################
+#######>>>11:39:30.371 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:39:30.588 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:39:30.821 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:39:31.054 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:39:31.338 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:39:31.888 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:39:32.155 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:39:32.405 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:39:32.621 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:39:33.704 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:39:38.288 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:39:38.555 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:39:39.054 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:39:39.888 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:39:40.371 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:39:40.604 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:39:41.171 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:39:41.337 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:39:41.887 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:39:42.239 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:39:42.804 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:39:43.054 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:39:43.555 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:39:44.288 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:39:44.804 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:39:45.105 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:39:45.604 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:39:46.071 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:39:46.804 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:39:47.337 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:39:47.688 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:39:48.154 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:39:48.621 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:39:49.055 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:39:49.404 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:39:49.971 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:39:50.337 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:39:50.954 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:39:51.221 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:39:51.471 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:39:51.887 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:39:52.501 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:39:52.755 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:39:53.006 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:39:53.509 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:39:54.011 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:39:54.256 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:39:54.755 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:39:55.004 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:39:56.194 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:39:56.508 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:39:57.014 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:39:57.261 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:39:57.758 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:39:58.259 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:39:58.761 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:39:59.016 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:39:59.261 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:39:59.512 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:39:59.770 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:0.258 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:0.768 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:1.508 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:2.008 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:2.508 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:2.757 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:3.010 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:3.517 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:3.767 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:4.256 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:4.756 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:5.252 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:5.506 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:6.004 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:6.503 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:7.002 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:7.756 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:8.016 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:8.753 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:9.008 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:9.510 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:10.005 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:10.252 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:10.507 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:11.257 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:11.516 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:11.775 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:12.256 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:12.755 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:13.055 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:13.513 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:14.257 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:14.752 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:15.006 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:15.776 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:16.007 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:16.753 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:17.257 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:17.506 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:18.007 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:18.252 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:18.504 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:18.756 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:19.588 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:19.871 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:20.438 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:20.637 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:21.304 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:21.604 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:21.820 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:22.337 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:22.987 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:23.188 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:23.604 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:23.904 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:24.187 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:24.604 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:25.137 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:25.637 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:26.287 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:26.754 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:27.287 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:27.837 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:28.387 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:28.988 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:29.637 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:30.055 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:30.272 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:30.804 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:31.137 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:31.354 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:31.587 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:32.221 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:32.571 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:33.120 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:33.622 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:33.920 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:34.454 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:34.787 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:35.054 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:35.287 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:35.871 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:36.370 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:36.954 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:37.321 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:37.604 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:38.170 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>11:40:38.604 of 19/March/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+########################################
+# 11:45:14.334 of 19/March/2023, Sunday
+#Ending of log dump - User is quiting the game
+########################################

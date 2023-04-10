@@ -1,0 +1,34 @@
+#This is the dump of the LogCreator: <LintsDomBB 18 Travel Logger LogCreator_2264TXKH9IQb>
+#This log file was created on: 18:46:12.364 of 20/March/2023, Monday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>18:46:12.364 of 20/March/2023, Monday
+#>>>Initialized LintsDomBB 18 Travel logger
+#>>>SELF = <LintsDomBB 18(367731) Travel_Lw4HOmICH531>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>18:46:27.063 of 20/March/2023, Monday
+#>>>Updated Target Ship = Dalek2005Gold5 3
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>18:47:10.662 of 20/March/2023, Monday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

@@ -1,0 +1,40 @@
+#This is the dump of the LogCreator: <DanubemkII - 3 Travel Logger LogCreator_ON3640FPFwrb>
+#This log file was created on: 2:4:32.034 of 19/March/2023, Sunday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>2:4:32.034 of 19/March/2023, Sunday
+#>>>Initialized DanubemkII - 3 Travel logger
+#>>>SELF = <DanubemkII - 3(175091) Travel_Up88OjF3AQtR>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>2:4:32.387 of 19/March/2023, Sunday
+#>>>Updated Target Ship = Husnock Warship-1
+## -------------------- ##
+####################
+#######>>>2:4:54.932 of 19/March/2023, Sunday
+#>>>Updated Target Ship = Husnock Warship-5
+## -------------------- ##
+####################
+#######>>>2:4:55.166 of 19/March/2023, Sunday
+#>>>Updated Target Ship = Husnock Warship-4
+## -------------------- ##
+####################
+#######>>>2:7:51.830 of 19/March/2023, Sunday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

@@ -11,7 +11,7 @@ import App
 #                                                                                     #
 abbrev = 'DiamondsArmoredVoyager'
 iconName = 'ArmoredVoyager'
-longName = 'Armored Voyager'
+longName = 'Endgame Armored Voyager'
 shipFile = 'DiamondsArmoredVoyager' 
 menuGroup = 'Fed Ships'
 playerMenuGroup = 'Fed Ships'
