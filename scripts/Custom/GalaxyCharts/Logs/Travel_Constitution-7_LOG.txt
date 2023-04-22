@@ -1,0 +1,57 @@
+#This is the dump of the LogCreator: <Constitution-7 Travel Logger LogCreator_0ca83U4UlHrs>
+#This log file was created on: 20:26:35.013 of 17/April/2023, Monday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>20:26:35.013 of 17/April/2023, Monday
+#>>>Initialized Constitution-7 Travel logger
+#>>>SELF = <Constitution-7(1377505) Travel_8NY424Fm4104>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Shadow Battlecrab-1
+## -------------------- ##
+####################
+#######>>>20:26:49.713 of 17/April/2023, Monday
+#>>>Updated Target Ship = Shadow Battlecrab-2
+## -------------------- ##
+####################
+#######>>>20:27:8.597 of 17/April/2023, Monday
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Enable Towing: 0
+#>>>Travelling procedures initiated...
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Extra path: AI ship warping to None
+#>>> -Checked: Ship can warp, travel procedures started.
+#>>> -Speed Check:
+#>>>     -Current:  9.97999954224
+#>>>     -Real Speed:  4388.19091797
+#>>>     -Cruise:  9.98
+#>>>     -Max:  9.99
+#>>>     -Actual Cruise:  9.97999954224
+#>>>     -Actual Max:  9.98999977112
+#>>> -Started playing engaging sequence.
+## -------------------- ##
+####################
+#######>>>20:27:8.980 of 17/April/2023, Monday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+## -------------------- ##
+####################
+#######>>>20:27:14.914 of 17/April/2023, Monday
+#>>> -Finishing travelling procedures...
+#>>> -Finished. AI Ship travelling to None.

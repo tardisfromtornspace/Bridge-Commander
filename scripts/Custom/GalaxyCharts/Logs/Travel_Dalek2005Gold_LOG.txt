@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Dalek2005Gold Travel Logger LogCreator_ziOoa2pfA1fW>
-#This log file was created on: 19:57:51.459 of 3/March/2023, Friday
+#This is the dump of the LogCreator: <Dalek2005Gold Travel Logger LogCreator_19t0xd6D84Yh>
+#This log file was created on: 20:21:34.418 of 17/April/2023, Monday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>19:57:51.459 of 3/March/2023, Friday
+#######>>>20:21:34.418 of 17/April/2023, Monday
 #>>>Initialized Dalek2005Gold Travel logger
-#>>>SELF = <Dalek2005Gold(1312107) Travel_AqA6A31a60G3>
+#>>>SELF = <Dalek2005Gold(1040714) Travel_6MlqdVwC9TA4>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -21,3 +21,8 @@ Updating Travelling Procedures...
 #>>>Chaser base class initialization complete.
 #>>>Target Ship = NONE
 #>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>20:21:36.750 of 17/April/2023, Monday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

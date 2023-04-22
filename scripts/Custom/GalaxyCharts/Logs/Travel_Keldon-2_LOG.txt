@@ -1,0 +1,140 @@
+#This is the dump of the LogCreator: <Keldon-2 Travel Logger LogCreator_37rKMmQ259mi>
+#This log file was created on: 19:21:52.803 of 19/April/2023, Wednesday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>19:21:52.803 of 19/April/2023, Wednesday
+#>>>Initialized Keldon-2 Travel logger
+#>>>SELF = <Keldon-2(83139) Travel_i50xNl8ZmA0t>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>19:36:32.270 of 19/April/2023, Wednesday
+#>>>Updated Target Ship = Andromeda-5
+#>>>Travelling INTERCEPT procedures initiated...
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Checked: Ship can warp, travel procedures started.
+#>>> -Stopped Intercept speed, incase the ship was intercepting.
+#>>> -Target is Andromeda-5 (85658)
+#>>>Playing travel intercept sequence...
+## -------------------- ##
+####################
+#######>>>19:36:38.219 of 19/April/2023, Wednesday
+#>>>Updated Target Ship = Cube-3
+## -------------------- ##
+####################
+#######>>>19:36:38.354 of 19/April/2023, Wednesday
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>19:36:38.470 of 19/April/2023, Wednesday
+#>>>TravelIntercept: updated target to Cube-3 (83629)
+## -------------------- ##
+####################
+#######>>>19:36:38.586 of 19/April/2023, Wednesday
+#>>>Stopping warp intercept
+#>>>Stopped Warp Intercept...
+## -------------------- ##
+####################
+#######>>>19:36:38.969 of 19/April/2023, Wednesday
+#>>>Travel INTERCEPT sequence ended...
+#>>> -cancelling, being called when it shouldnt
+## -------------------- ##
+####################
+#######>>>19:36:39.236 of 19/April/2023, Wednesday
+#>>>Updated Target Ship = Andromeda-6
+## -------------------- ##
+####################
+#######>>>19:36:40.469 of 19/April/2023, Wednesday
+#>>>Finished  FinishStopIntercept
+#>>>Travelling INTERCEPT procedures initiated...
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Checked: Ship can warp, travel procedures started.
+#>>> -Stopped Intercept speed, incase the ship was intercepting.
+#>>> -Target is Andromeda-6 (96989)
+#>>>Playing travel intercept sequence...
+## -------------------- ##
+####################
+#######>>>19:36:41.237 of 19/April/2023, Wednesday
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>19:36:41.586 of 19/April/2023, Wednesday
+#>>>TravelIntercept: updated target to Player (79324)
+## -------------------- ##
+####################
+#######>>>19:36:42.752 of 19/April/2023, Wednesday
+#>>>Travel INTERCEPT sequence ended...
+#>>>Travelling Intercept procedures finished...
+## -------------------- ##
+####################
+#######>>>19:37:55.336 of 19/April/2023, Wednesday
+#>>>Stopping warp intercept
+#>>>Stopped Warp Intercept...
+## -------------------- ##
+####################
+#######>>>19:37:56.969 of 19/April/2023, Wednesday
+#>>>Updated Target Ship = Cube-3
+## -------------------- ##
+####################
+#######>>>19:37:57.336 of 19/April/2023, Wednesday
+#>>>Finished  FinishStopIntercept
+## -------------------- ##
+####################
+#######>>>19:37:57.584 of 19/April/2023, Wednesday
+#>>>Travelling INTERCEPT procedures initiated...
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Checked: Ship can warp, travel procedures started.
+#>>> -Stopped Intercept speed, incase the ship was intercepting.
+#>>> -Target is Cube-3 (83629)
+#>>>Playing travel intercept sequence...
+## -------------------- ##
+####################
+#######>>>19:37:59.334 of 19/April/2023, Wednesday
+#>>>Travel INTERCEPT sequence ended...
+#>>>Travelling Intercept procedures finished...
+## -------------------- ##
+####################
+#######>>>19:38:1.335 of 19/April/2023, Wednesday
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>19:38:1.584 of 19/April/2023, Wednesday
+#>>>Stopping warp intercept
+#>>>Stopped Warp Intercept...
+## -------------------- ##
+####################
+#######>>>19:38:3.551 of 19/April/2023, Wednesday
+#>>>Finished  FinishStopIntercept
+## -------------------- ##
+####################
+#######>>>19:38:3.901 of 19/April/2023, Wednesday
+#>>>Travelling INTERCEPT procedures initiated...
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Checked: Ship can warp, travel procedures started.
+#>>> -Stopped Intercept speed, incase the ship was intercepting.
+#>>> -Target is Player (79324)
+#>>>Playing travel intercept sequence...
+## -------------------- ##
+####################
+#######>>>19:38:5.351 of 19/April/2023, Wednesday
+#>>>Travel INTERCEPT sequence ended...
+#>>>Travelling Intercept procedures finished...

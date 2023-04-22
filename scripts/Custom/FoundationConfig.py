@@ -22,7 +22,6 @@ lActiveMutators = [
 	"""3E's Bridge Menu Enlarger""",
 	"""Sol""",
 	"""BCS:TB: Emergency Repair""",
-	"""USS Frontier's Galaxy Charts""",
 	"""Planet Classification Script""",
 	"""Extra Ships and Mods""",
 	"""Babylon 5 Uniforms""",

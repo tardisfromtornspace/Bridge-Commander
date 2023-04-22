@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Player_Port Nacelle Travel Logger[2] LogCreator_IFShLwGtbfSR>
-#This log file was created on: 18:42:46.447 of 29/March/2023, Wednesday
+#This is the dump of the LogCreator: <Player_Port Nacelle Travel Logger[2] LogCreator_L31AEo751Z05>
+#This log file was created on: 0:33:10.956 of 22/April/2023, Saturday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>18:42:46.447 of 29/March/2023, Wednesday
+#######>>>0:33:10.956 of 22/April/2023, Saturday
 #>>>Initialized Player_Port Nacelle Travel logger
-#>>>SELF = <Player_Port Nacelle(120615) Travel_Bl14D65tA6i3>
+#>>>SELF = <Player_Port Nacelle(120463) Travel_YbtoSD3RG0iP>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -23,6 +23,6 @@ Updating Travelling Procedures...
 #>>>Target Ship = NONE
 #>>>Chaser pre-emptive Refresher Initialization
 ########################################
-# 18:42:52.447 of 29/March/2023, Wednesday
+# 0:33:48.756 of 22/April/2023, Saturday
 #Ending of log dump - User is quiting the game
 ########################################

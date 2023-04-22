@@ -8,7 +8,7 @@ import GlobalPropertyTemplates
 #################################################
 hyperdriveengine1 = App.EngineProperty_Create("hyperdrive engine 1")
 
-hyperdriveengine1.SetMaxCondition(600.000000)
+hyperdriveengine1.SetMaxCondition(60.000000)
 hyperdriveengine1.SetCritical(0)
 hyperdriveengine1.SetTargetable(1)
 hyperdriveengine1.SetPrimary(1)
@@ -22,7 +22,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(hyperdriveengine1)
 #################################################
 hyperdriveengine2 = App.EngineProperty_Create("hyperdrive engine 2")
 
-hyperdriveengine2.SetMaxCondition(500.000000)
+hyperdriveengine2.SetMaxCondition60.000000)
 hyperdriveengine2.SetCritical(0)
 hyperdriveengine2.SetTargetable(1)
 hyperdriveengine2.SetPrimary(1)
@@ -36,7 +36,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(hyperdriveengine2)
 #################################################
 sublightengine1 = App.EngineProperty_Create("sublight engine 1")
 
-sublightengine1.SetMaxCondition(500.000000)
+sublightengine1.SetMaxCondition(50.000000)
 sublightengine1.SetCritical(0)
 sublightengine1.SetTargetable(1)
 sublightengine1.SetPrimary(1)
@@ -50,7 +50,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(sublightengine1)
 #################################################
 sublightengine2 = App.EngineProperty_Create("sublight engine 2")
 
-sublightengine2.SetMaxCondition(500.000000)
+sublightengine2.SetMaxCondition(50.000000)
 sublightengine2.SetCritical(0)
 sublightengine2.SetTargetable(1)
 sublightengine2.SetPrimary(1)
@@ -64,7 +64,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(sublightengine2)
 #################################################
 Hull = App.HullProperty_Create("Hull")
 
-Hull.SetMaxCondition(600.000000)
+Hull.SetMaxCondition(150.000000)
 Hull.SetCritical(1)
 Hull.SetTargetable(1)
 Hull.SetPrimary(1)
@@ -77,7 +77,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(Hull)
 #################################################
 EngineBackup = App.ImpulseEngineProperty_Create("Engine Backup")
 
-EngineBackup.SetMaxCondition(600.000000)
+EngineBackup.SetMaxCondition(60.000000)
 EngineBackup.SetCritical(0)
 EngineBackup.SetTargetable(0)
 EngineBackup.SetPrimary(1)
@@ -96,7 +96,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(EngineBackup)
 #################################################
 Reactor = App.PowerProperty_Create("Reactor")
 
-Reactor.SetMaxCondition(600.000000)
+Reactor.SetMaxCondition(140.000000)
 Reactor.SetCritical(1)
 Reactor.SetTargetable(1)
 Reactor.SetPrimary(1)
@@ -114,7 +114,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(Reactor)
 #################################################
 RepairSystem = App.RepairSubsystemProperty_Create("Repair System")
 
-RepairSystem.SetMaxCondition(200.000000)
+RepairSystem.SetMaxCondition(150.000000)
 RepairSystem.SetCritical(0)
 RepairSystem.SetTargetable(0)
 RepairSystem.SetPrimary(1)
@@ -130,7 +130,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(RepairSystem)
 #################################################
 SensorArray = App.SensorProperty_Create("Sensor Array")
 
-SensorArray.SetMaxCondition(600.000000)
+SensorArray.SetMaxCondition(150.000000)
 SensorArray.SetCritical(0)
 SensorArray.SetTargetable(1)
 SensorArray.SetPrimary(1)
@@ -146,7 +146,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(SensorArray)
 #################################################
 ShieldGenerator = App.ShieldProperty_Create("Shield Generator")
 
-ShieldGenerator.SetMaxCondition(600.000000)
+ShieldGenerator.SetMaxCondition(150.000000)
 ShieldGenerator.SetCritical(0)
 ShieldGenerator.SetTargetable(1)
 ShieldGenerator.SetPrimary(1)
@@ -160,12 +160,12 @@ ShieldGeneratorShieldGlowColor = App.TGColorA()
 ShieldGeneratorShieldGlowColor.SetRGBA(0.501961, 1.000000, 1.000000, 0.000000)
 ShieldGenerator.SetShieldGlowColor(ShieldGeneratorShieldGlowColor)
 ShieldGenerator.SetShieldGlowDecay(1.000000)
-ShieldGenerator.SetMaxShields(ShieldGenerator.FRONT_SHIELDS, 300.000000)
-ShieldGenerator.SetMaxShields(ShieldGenerator.REAR_SHIELDS, 300.000000)
-ShieldGenerator.SetMaxShields(ShieldGenerator.TOP_SHIELDS, 500.000000)
-ShieldGenerator.SetMaxShields(ShieldGenerator.BOTTOM_SHIELDS, 500.000000)
-ShieldGenerator.SetMaxShields(ShieldGenerator.LEFT_SHIELDS, 500.000000)
-ShieldGenerator.SetMaxShields(ShieldGenerator.RIGHT_SHIELDS, 500.000000)
+ShieldGenerator.SetMaxShields(ShieldGenerator.FRONT_SHIELDS, 150.000000)
+ShieldGenerator.SetMaxShields(ShieldGenerator.REAR_SHIELDS, 150.000000)
+ShieldGenerator.SetMaxShields(ShieldGenerator.TOP_SHIELDS, 200.000000)
+ShieldGenerator.SetMaxShields(ShieldGenerator.BOTTOM_SHIELDS, 200.000000)
+ShieldGenerator.SetMaxShields(ShieldGenerator.LEFT_SHIELDS, 200.000000)
+ShieldGenerator.SetMaxShields(ShieldGenerator.RIGHT_SHIELDS, 200.000000)
 ShieldGenerator.SetShieldChargePerSecond(ShieldGenerator.FRONT_SHIELDS, 10.000000)
 ShieldGenerator.SetShieldChargePerSecond(ShieldGenerator.REAR_SHIELDS, 10.000000)
 ShieldGenerator.SetShieldChargePerSecond(ShieldGenerator.TOP_SHIELDS, 10.000000)
@@ -191,7 +191,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(DroidFighter)
 #################################################
 Torpedosystem = App.WeaponSystemProperty_Create("Torpedo system")
 
-Torpedosystem.SetMaxCondition(200.000000)
+Torpedosystem.SetMaxCondition(150.000000)
 Torpedosystem.SetCritical(0)
 Torpedosystem.SetTargetable(1)
 Torpedosystem.SetPrimary(1)
@@ -211,7 +211,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(Torpedosystem)
 #################################################
 Hyperdrive = App.WarpEngineProperty_Create("Hyperdrive")
 
-Hyperdrive.SetMaxCondition(600.000000)
+Hyperdrive.SetMaxCondition(60.000000)
 Hyperdrive.SetCritical(0)
 Hyperdrive.SetTargetable(0)
 Hyperdrive.SetPrimary(1)
@@ -225,7 +225,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(Hyperdrive)
 #################################################
 ionizationreactor = App.PowerProperty_Create("ionization reactor")
 
-ionizationreactor.SetMaxCondition(600.000000)
+ionizationreactor.SetMaxCondition(150.000000)
 ionizationreactor.SetCritical(0)
 ionizationreactor.SetTargetable(0)
 ionizationreactor.SetPrimary(1)
@@ -243,7 +243,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(ionizationreactor)
 #################################################
 TorpedoSystem = App.TorpedoSystemProperty_Create("Torpedo System")
 
-TorpedoSystem.SetMaxCondition(600.000000)
+TorpedoSystem.SetMaxCondition(150.000000)
 TorpedoSystem.SetCritical(0)
 TorpedoSystem.SetTargetable(0)
 TorpedoSystem.SetPrimary(1)
@@ -266,7 +266,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(TorpedoSystem)
 #################################################
 EnergieTorpedo1 = App.TorpedoTubeProperty_Create("Energie Torpedo 1")
 
-EnergieTorpedo1.SetMaxCondition(200.000000)
+EnergieTorpedo1.SetMaxCondition(150.000000)
 EnergieTorpedo1.SetCritical(0)
 EnergieTorpedo1.SetTargetable(0)
 EnergieTorpedo1.SetPrimary(1)
@@ -296,7 +296,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(EnergieTorpedo1)
 #################################################
 EnergieTorpedo2 = App.TorpedoTubeProperty_Create("Energie Torpedo 2")
 
-EnergieTorpedo2.SetMaxCondition(200.000000)
+EnergieTorpedo2.SetMaxCondition(150.000000)
 EnergieTorpedo2.SetCritical(0)
 EnergieTorpedo2.SetTargetable(0)
 EnergieTorpedo2.SetPrimary(1)
@@ -326,7 +326,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(EnergieTorpedo2)
 #################################################
 Blaster1 = App.PhaserProperty_Create("Blaster 1")
 
-Blaster1.SetMaxCondition(200.000000)
+Blaster1.SetMaxCondition(150.000000)
 Blaster1.SetCritical(0)
 Blaster1.SetTargetable(0)
 Blaster1.SetPrimary(1)
@@ -389,7 +389,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(Blaster1)
 #################################################
 BlasterEmiter = App.WeaponSystemProperty_Create("Blaster Emiter")
 
-BlasterEmiter.SetMaxCondition(200.000000)
+BlasterEmiter.SetMaxCondition(150.000000)
 BlasterEmiter.SetCritical(0)
 BlasterEmiter.SetTargetable(0)
 BlasterEmiter.SetPrimary(1)
@@ -409,7 +409,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(BlasterEmiter)
 #################################################
 Blaster2 = App.PhaserProperty_Create("Blaster 2")
 
-Blaster2.SetMaxCondition(200.000000)
+Blaster2.SetMaxCondition(150.000000)
 Blaster2.SetCritical(0)
 Blaster2.SetTargetable(0)
 Blaster2.SetPrimary(1)
@@ -472,7 +472,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(Blaster2)
 #################################################
 Blaster3 = App.PhaserProperty_Create("Blaster 3")
 
-Blaster3.SetMaxCondition(200.000000)
+Blaster3.SetMaxCondition(150.000000)
 Blaster3.SetCritical(0)
 Blaster3.SetTargetable(0)
 Blaster3.SetPrimary(1)
@@ -535,7 +535,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(Blaster3)
 #################################################
 Blaster4 = App.PhaserProperty_Create("Blaster 4")
 
-Blaster4.SetMaxCondition(200.000000)
+Blaster4.SetMaxCondition(150.000000)
 Blaster4.SetCritical(0)
 Blaster4.SetTargetable(0)
 Blaster4.SetPrimary(1)

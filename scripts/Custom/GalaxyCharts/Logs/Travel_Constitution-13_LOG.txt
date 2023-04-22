@@ -1,0 +1,33 @@
+#This is the dump of the LogCreator: <Constitution-13 Travel Logger LogCreator_27ysu002m6tG>
+#This log file was created on: 20:22:42.600 of 17/April/2023, Monday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>20:22:42.600 of 17/April/2023, Monday
+#>>>Initialized Constitution-13 Travel logger
+#>>>SELF = <Constitution-13(1101823) Travel_EcMF4p6OIbJC>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Shadow Battlecrab-1
+## -------------------- ##
+####################
+#######>>>20:22:55.750 of 17/April/2023, Monday
+#>>>Updated Target Ship = Shadow Battlecrab-2
+## -------------------- ##
+####################
+#######>>>20:23:18.500 of 17/April/2023, Monday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

@@ -1,0 +1,33 @@
+#This is the dump of the LogCreator: <NX Armed And Dangerous-7 Travel Logger LogCreator_P2h0MhFk1MXX>
+#This log file was created on: 20:40:55.385 of 17/April/2023, Monday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>20:40:55.385 of 17/April/2023, Monday
+#>>>Initialized NX Armed And Dangerous-7 Travel logger
+#>>>SELF = <NX Armed And Dangerous-7(91817) Travel_f04MMnX59nCZ>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Shadow Battlecrab-1
+## -------------------- ##
+####################
+#######>>>20:41:8.557 of 17/April/2023, Monday
+#>>>Updated Target Ship = Shadow Battlecrab-4
+## -------------------- ##
+####################
+#######>>>20:41:25.999 of 17/April/2023, Monday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

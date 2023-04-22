@@ -1,0 +1,29 @@
+#This is the dump of the LogCreator: <Miranda-11 Travel Logger LogCreator_v5DK18pnj2g6>
+#This log file was created on: 20:40:55.385 of 17/April/2023, Monday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>20:40:55.385 of 17/April/2023, Monday
+#>>>Initialized Miranda-11 Travel logger
+#>>>SELF = <Miranda-11(95749) Travel_y9L7W4N04DJJ>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Shadow Battlecrab-1
+## -------------------- ##
+####################
+#######>>>20:41:41.872 of 17/April/2023, Monday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
