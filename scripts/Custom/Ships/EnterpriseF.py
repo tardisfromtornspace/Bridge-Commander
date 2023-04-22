@@ -18,7 +18,7 @@ Foundation.ShipDef.EnterpriseF.dTechs = {
 	'Breen Drainer Immune': 0,
 	'Regenerative Shields': 30,
 	'Multivectral Shields': 20,
-	'Fed Ablative Armor': { "Plates": ["Aft Ablative Armor", "Engineering Ablative Armor", "Top Ablative Armor", "Forward Ablative Armor"]
+	'Fed Ablative Armor': { "Plates": ["Aft Ablative Armor", "Engineering Ablative Armor", "Top Ablative Armor", "Forward Ablative Armor"],
 }}
 
 Foundation.ShipDef.EnterpriseF.desc = "The USS Enterprise (NCC-1701-F) was an Odyssey-class starship in service during the 25th century. The second ship of her class, she was launched in 2409."

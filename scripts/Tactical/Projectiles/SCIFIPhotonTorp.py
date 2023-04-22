@@ -1,62 +1,81 @@
+###############################################################################
+#	Filename:	PhotonTorpedo.py
+#	
+#	Confidential and Proprietary, Copyright 2000 by Totally Games
+#	
+#	Script for filling in the attributes of photon torpedoes.
+#	
+#	Created:	11/3/00 -	Erik Novales
+###############################################################################
+
 import App
 
+###############################################################################
+#	Create(pTorp)
+#	
+#	Creates a photon torpedo.
+#	
+#	Args:	pTorp - the torpedo, ready to be filled-in
+#	
+#	Return:	zero
+###############################################################################
 def Create(pTorp):
-    kGlowColor = App.TGColorA()
-    kGlowColor.SetRGBA(253.0 / 255.0, 128.0 / 255.0, 0.0 / 255.0, 1.0)
-    kCoreColor = App.TGColorA()
-    kCoreColor.SetRGBA(255.0 / 255.0, 255.0 / 255.0, 0.0 / 139.0, 1.0)
-    pTorp.CreateTorpedoModel(
-                    'data/Textures/Tactical/ZZ_FCPhotonCore.tga', 
-                    kCoreColor, 
-                    0.06, 
-                    4.2, 
-                    'data/textures/tactical/ZZ_FCPhotonGlow.tga', 
-                    kGlowColor, 
-                    3.0, 
-                    0.5, 
-                    0.8, 
-                    'data/textures/tactical/ZZ_FCPhotonFlares.tga', 
-                    kGlowColor, 
-                    8, 
-                    0.17, 
-                    0.4)
 
-    pTorp.SetDamage(GetDamage())
-    pTorp.SetDamageRadiusFactor(0.25)
-    pTorp.SetGuidanceLifetime(GetGuidanceLifetime())
-    pTorp.SetMaxAngularAccel(GetMaxAngularAccel())
-    import Multiplayer
-    pTorp.SetNetType(Multiplayer.SpeciesToTorp.PHOTON)
-    return 0
+	kGlowColor = App.TGColorA()
+	kGlowColor.SetRGBA(253.0 / 255.0, 128.0 / 255.0, 0.0 / 255.0, 1.0)
+	kCoreColor = App.TGColorA()
+	kCoreColor.SetRGBA(255.0 / 255.0, 255.0 / 255.0, 0.0 / 139.0, 1.0)
 
+	# Params are:
+
+	pTorp.CreateTorpedoModel(
+					'data/Textures/Tactical/ZZ_FCPhotonCore.tga', 
+					kCoreColor, 
+					0.06, 
+					4.2, 
+					'data/textures/tactical/ZZ_FCPhotonGlow.tga', 
+					kGlowColor, 
+					3.0, 
+					0.5, 
+					0.8, 
+					'data/textures/tactical/ZZ_FCPhotonFlares.tga', 
+					kGlowColor, 
+					8, 
+					0.17, 
+					0.4)
+
+	pTorp.SetDamage( GetDamage() )
+	pTorp.SetDamageRadiusFactor(0.25)
+	pTorp.SetGuidanceLifetime( GetGuidanceLifetime() )
+	pTorp.SetMaxAngularAccel( GetMaxAngularAccel() )
+
+	# Multiplayer specific stuff.  Please, if you create a new torp
+	# type. modify the SpeciesToTorp.py file to add the new type.
+	import Multiplayer.SpeciesToTorp
+	pTorp.SetNetType (Multiplayer.SpeciesToTorp.PHOTON)
+
+	return(0)
 
 def GetLaunchSpeed():
-    return 100.0
-
+	return (100.0)
 
 def GetLaunchSound():
-    return 'SCIFIPhotonTorp'
-
+	return ("SCIFIPhotonTorp")
 
 def GetPowerCost():
-    return 20.0
-
+	return (20.0)
 
 def GetName():
-    return 'ADVPhoton'
-
+	return ("ADVPhoton")
 
 def GetDamage():
-    return 1850.0
-
+	return 1850.0
 
 def GetGuidanceLifetime():
-    return 13.0
-
+	return 15.0
 
 def GetMaxAngularAccel():
-    return 3.16
-
+	return 5.18
 
 def GetLifetime():
-    return 20.0
+	return 20.0
