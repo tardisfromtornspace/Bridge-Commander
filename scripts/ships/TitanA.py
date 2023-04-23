@@ -3,8 +3,8 @@ import Multiplayer.SpeciesToShip
 
 def GetShipStats():
 	kShipStats = {
-		"DamageRadMod" : 0.560,
-		#"DamageStrMod" : 1.000,
+		"DamageRadMod" : 0.460,
+		"DamageStrMod" : 0.400,
 		"FilenameHigh": "data/Models/Ships/TitanA/TitanA.nif",
 		"FilenameMed": "data/Models/Ships/TitanA/TitanA.nif",
 		"FilenameLow": "data/Models/ships/TitanA/TitanA.nif",
@@ -23,9 +23,9 @@ def LoadModel(bPreLoad = 0):
 		# Surface Damage Res, Internal Damage Res, Burn Value, Hole Value,
 		# Search String for Glow, Search string for Specular, Suffix for specular
 		pLODModel = App.g_kLODModelManager.Create(pStats["Name"])
-		pLODModel.AddLOD(pStats["FilenameHigh"], 10, 1500.0, 15.0, 15.0, 400, 2000, "_glow", None, "_specular")
-		pLODModel.AddLOD(pStats["FilenameMed"],  10, 1900.0, 15.0, 15.0, 400, 2000, "_glow", None, "_specular")
-		pLODModel.AddLOD(pStats["FilenameLow"],  10, 2500.0, 15.0, 30.0, 400, 2000, "_glow", None, "_specular")
+		pLODModel.AddLOD(pStats["FilenameHigh"], 10, 1500.0, 15.0, 10.0, 400, 2200, "_glow", None, "_specular")
+		pLODModel.AddLOD(pStats["FilenameMed"],  10, 1900.0, 15.0, 10.0, 400, 2200, "_glow", None, "_specular")
+		pLODModel.AddLOD(pStats["FilenameLow"],  10, 2500.0, 15.0, 10.0, 400, 2200, "_glow", None, "_specular")
 
 #		kDebugObj = App.CPyDebug()
 		if (bPreLoad == 0):
