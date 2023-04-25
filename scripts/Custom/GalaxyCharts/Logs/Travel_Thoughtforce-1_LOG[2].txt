@@ -1,0 +1,25 @@
+#This is the dump of the LogCreator: <Thoughtforce-1 Travel Logger[2] LogCreator_971qY7b66Y8r>
+#This log file was created on: 22:46:14.247 of 25/April/2023, Tuesday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>22:46:14.247 of 25/April/2023, Tuesday
+#>>>Initialized Thoughtforce-1 Travel logger
+#>>>SELF = <Thoughtforce-1(3042662) Travel_g3nDK19D1cBB>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Ship is dead or dying
+#>>>Ship is dead or dying (at SetDestination)
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Ship is dead or dying (at SetDestination)
+#>>>Set Exit Placement Name as None
+#>>>Enable Towing: 0
+#>>>Travelling procedures initiated...
+#>>> -Ship is dead or dying

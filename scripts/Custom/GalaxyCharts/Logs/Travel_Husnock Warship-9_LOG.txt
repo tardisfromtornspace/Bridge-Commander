@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Husnock Warship-9 Travel Logger LogCreator_2WHUutUj8lX2>
-#This log file was created on: 23:46:16.897 of 3/March/2023, Friday
+#This is the dump of the LogCreator: <Husnock Warship-9 Travel Logger LogCreator_H7w0f2Ipdm4L>
+#This log file was created on: 22:53:23.933 of 25/April/2023, Tuesday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>23:46:16.897 of 3/March/2023, Friday
+#######>>>22:53:23.933 of 25/April/2023, Tuesday
 #>>>Initialized Husnock Warship-9 Travel logger
-#>>>SELF = <Husnock Warship-9(68041) Travel_7JLj2G7x2Nv0>
+#>>>SELF = <Husnock Warship-9(3769474) Travel_3iE3xr9LCBRX>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -23,19 +23,11 @@ Updating Travelling Procedures...
 #>>>Chaser pre-emptive Refresher Initialization
 ## -------------------- ##
 ####################
-#######>>>23:46:34.486 of 3/March/2023, Friday
-#>>>Arrived Events:  added event <C TGEvent instance at _4785ef28_p_TGEvent>
-#>>>Updated Target Ship = Dalek Saucer-6
+#######>>>22:53:46.799 of 25/April/2023, Tuesday
+#>>>Arrived Events:  added event <C TGEvent instance at _385e6ae8_p_TGEvent>
+#>>>Updated Target Ship = Player
 ## -------------------- ##
 ####################
-#######>>>23:46:49.357 of 3/March/2023, Friday
-#>>>Updated Target Ship = Dalek Saucer-5
-## -------------------- ##
-####################
-#######>>>23:46:57.089 of 3/March/2023, Friday
+#######>>>22:54:40.757 of 25/April/2023, Tuesday
 #>>>Stopping Refresh Handler
 #>>>Deleting...
-########################################
-# 23:47:33.138 of 3/March/2023, Friday
-#Ending of log dump - User is quiting the game
-########################################

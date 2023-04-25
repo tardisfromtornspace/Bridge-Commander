@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Husnock Warship-13 Travel Logger LogCreator_Vf9e79s92TKc>
-#This log file was created on: 23:46:16.897 of 3/March/2023, Friday
+#This is the dump of the LogCreator: <Husnock Warship-13 Travel Logger LogCreator_4494drasFnoz>
+#This log file was created on: 22:53:23.933 of 25/April/2023, Tuesday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>23:46:16.897 of 3/March/2023, Friday
+#######>>>22:53:23.933 of 25/April/2023, Tuesday
 #>>>Initialized Husnock Warship-13 Travel logger
-#>>>SELF = <Husnock Warship-13(68941) Travel_jagDpFY9xmEa>
+#>>>SELF = <Husnock Warship-13(3770374) Travel_YO7N403Pvd0N>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -23,23 +23,11 @@ Updating Travelling Procedures...
 #>>>Chaser pre-emptive Refresher Initialization
 ## -------------------- ##
 ####################
-#######>>>23:46:33.988 of 3/March/2023, Friday
-#>>>Arrived Events:  added event <C TGEvent instance at _1e4909b8_p_TGEvent>
-#>>>Updated Target Ship = Dalek Saucer-6
+#######>>>22:53:46.615 of 25/April/2023, Tuesday
+#>>>Arrived Events:  added event <C TGEvent instance at _385ee7f8_p_TGEvent>
+#>>>Updated Target Ship = Player
 ## -------------------- ##
 ####################
-#######>>>23:46:55.560 of 3/March/2023, Friday
-#>>>Updated Target Ship = Dalek Saucer-2
-## -------------------- ##
-####################
-#######>>>23:47:7.119 of 3/March/2023, Friday
-#>>>Updated Target Ship = Dalek Saucer-7
-## -------------------- ##
-####################
-#######>>>23:47:9.431 of 3/March/2023, Friday
+#######>>>22:54:49.014 of 25/April/2023, Tuesday
 #>>>Stopping Refresh Handler
 #>>>Deleting...
-########################################
-# 23:47:33.138 of 3/March/2023, Friday
-#Ending of log dump - User is quiting the game
-########################################
