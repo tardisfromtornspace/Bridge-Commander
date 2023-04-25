@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Neghvar-1 Travel Logger LogCreator_FS36J7zadJ0o>
-#This log file was created on: 1:48:37.422 of 23/April/2023, Sunday
+#This is the dump of the LogCreator: <Neghvar-1 Travel Logger LogCreator_601UYnBhZCAs>
+#This log file was created on: 3:30:47.724 of 23/April/2023, Sunday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>1:48:37.422 of 23/April/2023, Sunday
+#######>>>3:30:47.724 of 23/April/2023, Sunday
 #>>>Initialized Neghvar-1 Travel logger
-#>>>SELF = <Neghvar-1(188458) Travel_3sB03B18Ug3T>
+#>>>SELF = <Neghvar-1(10133676) Travel_NhvBw3cwX1If>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -24,140 +24,46 @@ Updating Travelling Procedures...
 #>>>Updated Target Ship = Player
 ## -------------------- ##
 ####################
-#######>>>1:48:45.321 of 23/April/2023, Sunday
+#######>>>3:30:56.091 of 23/April/2023, Sunday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>1:48:45.571 of 23/April/2023, Sunday
+#######>>>3:30:56.531 of 23/April/2023, Sunday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>1:48:45.771 of 23/April/2023, Sunday
+#######>>>3:30:56.824 of 23/April/2023, Sunday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>1:48:46.059 of 23/April/2023, Sunday
+#######>>>3:30:56.919 of 23/April/2023, Sunday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>1:48:46.434 of 23/April/2023, Sunday
+#######>>>3:30:57.407 of 23/April/2023, Sunday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>1:48:47.002 of 23/April/2023, Sunday
+#######>>>3:30:57.660 of 23/April/2023, Sunday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>1:48:47.667 of 23/April/2023, Sunday
+#######>>>3:30:58.157 of 23/April/2023, Sunday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>1:48:48.144 of 23/April/2023, Sunday
+#######>>>3:30:58.526 of 23/April/2023, Sunday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>1:48:48.505 of 23/April/2023, Sunday
+#######>>>3:30:58.774 of 23/April/2023, Sunday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>1:48:48.755 of 23/April/2023, Sunday
+#######>>>3:30:59.342 of 23/April/2023, Sunday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>1:48:49.405 of 23/April/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>1:48:49.772 of 23/April/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>1:48:50.022 of 23/April/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>1:53:33.572 of 23/April/2023, Sunday
-#>>>Ship is dead or dying (at Chaser Update)
-#>>>Ship is dead or dying (at Update)
-## -------------------- ##
-####################
-#######>>>1:53:33.654 of 23/April/2023, Sunday
-#>>>Ship is dead or dying (at Chaser Update)
-#>>>Ship is dead or dying (at Update)
-## -------------------- ##
-####################
-#######>>>1:53:33.772 of 23/April/2023, Sunday
-#>>>Ship is dead or dying (at Chaser Update)
-#>>>Ship is dead or dying (at Update)
-## -------------------- ##
-####################
-#######>>>1:53:33.941 of 23/April/2023, Sunday
-#>>>Ship is dead or dying (at Chaser Update)
-#>>>Ship is dead or dying (at Update)
-## -------------------- ##
-####################
-#######>>>1:53:34.218 of 23/April/2023, Sunday
-#>>>Ship is dead or dying (at Chaser Update)
-#>>>Ship is dead or dying (at Update)
-## -------------------- ##
-####################
-#######>>>1:53:34.652 of 23/April/2023, Sunday
-#>>>Ship is dead or dying (at Chaser Update)
-#>>>Ship is dead or dying (at Update)
-## -------------------- ##
-####################
-#######>>>1:53:35.872 of 23/April/2023, Sunday
-#>>>Ship is dead or dying (at Chaser Update)
-#>>>Ship is dead or dying (at Update)
-## -------------------- ##
-####################
-#######>>>1:53:35.969 of 23/April/2023, Sunday
-#>>>Ship is dead or dying (at Chaser Update)
-#>>>Ship is dead or dying (at Update)
-## -------------------- ##
-####################
-#######>>>1:53:36.118 of 23/April/2023, Sunday
-#>>>Ship is dead or dying (at Chaser Update)
-#>>>Ship is dead or dying (at Update)
-## -------------------- ##
-####################
-#######>>>1:53:36.634 of 23/April/2023, Sunday
-#>>>Ship is dead or dying (at Chaser Update)
-#>>>Ship is dead or dying (at Update)
-## -------------------- ##
-####################
-#######>>>1:53:37.304 of 23/April/2023, Sunday
-#>>>Ship is dead or dying (at Chaser Update)
-#>>>Ship is dead or dying (at Update)
-## -------------------- ##
-####################
-#######>>>1:53:38.986 of 23/April/2023, Sunday
-#>>>Ship is dead or dying (at Chaser Update)
-#>>>Ship is dead or dying (at Update)
-## -------------------- ##
-####################
-#######>>>1:53:40.052 of 23/April/2023, Sunday
-#>>>Ship is dead or dying (at Chaser Update)
-#>>>Ship is dead or dying (at Update)
-## -------------------- ##
-####################
-#######>>>1:53:42.186 of 23/April/2023, Sunday
-#>>>Ship is dead or dying (at Chaser Update)
-#>>>Ship is dead or dying (at Update)
-## -------------------- ##
-####################
-#######>>>1:53:44.450 of 23/April/2023, Sunday
-#>>>Ship is dead or dying (at Chaser Update)
-#>>>Ship is dead or dying (at Update)
-## -------------------- ##
-####################
-#######>>>1:53:46.617 of 23/April/2023, Sunday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>1:53:47.617 of 23/April/2023, Sunday
-#>>>Ship is dead or dying (at Chaser Update)
-########################################
-# 1:53:54.267 of 23/April/2023, Sunday
-#Ending of log dump - User is quiting the game
-########################################
+#######>>>3:35:42.237 of 23/April/2023, Sunday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

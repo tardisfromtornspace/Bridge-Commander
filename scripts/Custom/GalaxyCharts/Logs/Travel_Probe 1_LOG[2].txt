@@ -1,0 +1,30 @@
+#This is the dump of the LogCreator: <Probe 1 Travel Logger[2] LogCreator_4Bmlzow1aB55>
+#This log file was created on: 12:42:0.198 of 23/April/2023, Sunday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>12:42:0.198 of 23/April/2023, Sunday
+#>>>Initialized Probe 1 Travel logger
+#>>>SELF = <Probe 1(2939942) Travel_5tb01FJt576a>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Ship is dead or dying
+#>>>Ship is dead or dying (at SetDestination)
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>12:42:0.655 of 23/April/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+########################################
+# 12:50:45.633 of 23/April/2023, Sunday
+#Ending of log dump - User is quiting the game
+########################################

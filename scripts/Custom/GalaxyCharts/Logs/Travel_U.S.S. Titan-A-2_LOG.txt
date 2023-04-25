@@ -1,0 +1,109 @@
+#This is the dump of the LogCreator: <U.S.S. Titan-A-2 Travel Logger LogCreator_F7zM7rcY4HoM>
+#This log file was created on: 12:29:16.750 of 23/April/2023, Sunday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>12:29:16.750 of 23/April/2023, Sunday
+#>>>Initialized U.S.S. Titan-A-2 Travel logger
+#>>>SELF = <U.S.S. Titan-A-2(293310) Travel_u9O7Yy574E09>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>12:29:24.099 of 23/April/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>12:29:24.415 of 23/April/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>12:29:24.916 of 23/April/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>12:29:25.566 of 23/April/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>12:29:25.949 of 23/April/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>12:29:26.085 of 23/April/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>12:29:26.449 of 23/April/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>12:29:26.949 of 23/April/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>12:29:27.316 of 23/April/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>12:29:27.815 of 23/April/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>12:29:27.949 of 23/April/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>12:29:28.449 of 23/April/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>12:29:28.949 of 23/April/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>12:30:12.368 of 23/April/2023, Sunday
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Enable Towing: 0
+#>>>Travelling procedures initiated...
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Extra path: AI ship warping to None
+#>>> -Checked: Ship can warp, travel procedures started.
+#>>> -Speed Check:
+#>>>     -Current:  9.97999954224
+#>>>     -Real Speed:  4388.19091797
+#>>>     -Cruise:  9.98
+#>>>     -Max:  9.99
+#>>>     -Actual Cruise:  9.97999954224
+#>>>     -Actual Max:  9.98999977112
+#>>> -Started playing engaging sequence.
+## -------------------- ##
+####################
+#######>>>12:30:18.632 of 23/April/2023, Sunday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+## -------------------- ##
+####################
+#######>>>12:30:18.901 of 23/April/2023, Sunday
+#>>> -Finishing travelling procedures...
+#>>> -Finished. AI Ship travelling to None.
+########################################
+# 12:50:45.633 of 23/April/2023, Sunday
+#Ending of log dump - User is quiting the game
+########################################

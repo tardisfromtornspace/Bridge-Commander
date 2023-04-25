@@ -1,21 +1,22 @@
-#This is the dump of the LogCreator: <TravelerWarpSequence of Ship Neghvar-4[2] LogCreator_8Pt0bU8A9T65>
-#This log file was created on: 1:49:49.821 of 23/April/2023, Sunday
+#This is the dump of the LogCreator: <TravelerWarpSequence of Ship Neghvar-4[2] LogCreator_02EWs2a3s7Bf>
+#This log file was created on: 2:36:2.251 of 23/April/2023, Sunday
 ########################################
 ## -------------------- ##
 ####################
-#######>>>1:49:49.821 of 23/April/2023, Sunday
+#######>>>2:36:2.251 of 23/April/2023, Sunday
 #>>>Initialized TravelerWarpSequence of ship Neghvar-4 logger
-#>>>SELF = <C WarpSequence instance at _zv0KK5rMJ69A>
+#>>>SELF = <C WarpSequence instance at _woE6hnyQoxvW>
 ## -------------------- ##
 ####################
-#######>>>1:50:53.836 of 23/April/2023, Sunday
+#######>>>2:36:45.370 of 23/April/2023, Sunday
+#>>>Play called
+#>>>Setting sequence up...
+#>>>GetDestination called
+#>>>Got species of ship from NanoFXv2
+#>>>Using Nacelle Flash Sequence from NanoFXv2
+#>>>Sequence was set up.
+## -------------------- ##
+####################
+#######>>>2:37:28.966 of 23/April/2023, Sunday
 #>>>Initialized TravelerWarpSequence of ship Neghvar-4 logger
-#>>>SELF = <C WarpSequence instance at _NDouC5sc32p7>
-########################################
-# 1:53:54.267 of 23/April/2023, Sunday
-#Ending of log dump - User is quiting the game
-########################################
-########################################
-# 1:53:54.267 of 23/April/2023, Sunday
-#Ending of log dump - User is quiting the game
-########################################
+#>>>SELF = <C WarpSequence instance at _ER4m0Rv1VV65>

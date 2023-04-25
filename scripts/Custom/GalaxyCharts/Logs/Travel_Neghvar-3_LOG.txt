@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Neghvar-3 Travel Logger LogCreator_EOt60gk8E07d>
-#This log file was created on: 1:48:37.422 of 23/April/2023, Sunday
+#This is the dump of the LogCreator: <Neghvar-3 Travel Logger LogCreator_47fal0xen4gG>
+#This log file was created on: 3:30:47.724 of 23/April/2023, Sunday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>1:48:37.422 of 23/April/2023, Sunday
+#######>>>3:30:47.724 of 23/April/2023, Sunday
 #>>>Initialized Neghvar-3 Travel logger
-#>>>SELF = <Neghvar-3(189716) Travel_sLsCu8He0vUT>
+#>>>SELF = <Neghvar-3(10134934) Travel_8L69jsb1CRwE>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -24,81 +24,77 @@ Updating Travelling Procedures...
 #>>>Updated Target Ship = Player
 ## -------------------- ##
 ####################
-#######>>>1:48:45.321 of 23/April/2023, Sunday
+#######>>>3:30:56.091 of 23/April/2023, Sunday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>1:48:45.771 of 23/April/2023, Sunday
+#######>>>3:30:56.661 of 23/April/2023, Sunday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>1:48:46.059 of 23/April/2023, Sunday
+#######>>>3:30:57.164 of 23/April/2023, Sunday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>1:48:46.434 of 23/April/2023, Sunday
+#######>>>3:30:57.407 of 23/April/2023, Sunday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>1:48:47.002 of 23/April/2023, Sunday
+#######>>>3:30:57.660 of 23/April/2023, Sunday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>1:48:47.245 of 23/April/2023, Sunday
+#######>>>3:30:58.024 of 23/April/2023, Sunday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>1:48:47.949 of 23/April/2023, Sunday
+#######>>>3:30:58.157 of 23/April/2023, Sunday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>1:48:48.322 of 23/April/2023, Sunday
+#######>>>3:30:58.526 of 23/April/2023, Sunday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>1:48:49.072 of 23/April/2023, Sunday
+#######>>>3:30:58.943 of 23/April/2023, Sunday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>1:48:49.641 of 23/April/2023, Sunday
+#######>>>3:30:59.489 of 23/April/2023, Sunday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>1:48:50.022 of 23/April/2023, Sunday
+#######>>>3:30:59.708 of 23/April/2023, Sunday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>1:48:50.225 of 23/April/2023, Sunday
+#######>>>3:31:0.127 of 23/April/2023, Sunday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>1:48:50.705 of 23/April/2023, Sunday
+#######>>>3:31:0.591 of 23/April/2023, Sunday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>1:48:50.874 of 23/April/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
+#######>>>3:33:1.589 of 23/April/2023, Sunday
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Enable Towing: 0
+#>>>Travelling procedures initiated...
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Extra path: AI ship warping to None
+#>>> -Checked: Ship can warp, travel procedures started.
+#>>> -Speed Check:
+#>>>     -Current:  8.67000007629
+#>>>     -Real Speed:  1339.19628906
+#>>>     -Cruise:  8.67
+#>>>     -Max:  8.67
+#>>>     -Actual Cruise:  8.67000007629
+#>>>     -Actual Max:  8.67000007629
+#>>> -Started playing engaging sequence.
 ## -------------------- ##
 ####################
-#######>>>1:48:51.372 of 23/April/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>1:48:51.857 of 23/April/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>1:48:52.456 of 23/April/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>1:48:52.625 of 23/April/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>1:48:52.938 of 23/April/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-########################################
-# 1:53:54.267 of 23/April/2023, Sunday
-#Ending of log dump - User is quiting the game
-########################################
+#######>>>3:33:7.972 of 23/April/2023, Sunday
+#>>> -Finishing travelling procedures...
+#>>> -Finished. AI Ship travelling to None.
