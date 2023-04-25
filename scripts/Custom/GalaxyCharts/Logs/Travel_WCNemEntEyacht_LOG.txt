@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Asteroid 1 Travel Logger LogCreator_lS60175fcz1v>
-#This log file was created on: 22:40:38.945 of 25/April/2023, Tuesday
+#This is the dump of the LogCreator: <WCNemEntEyacht Travel Logger LogCreator_W6AD4470L342>
+#This log file was created on: 16:46:26.443 of 25/April/2023, Tuesday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,14 +9,12 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>22:40:38.945 of 25/April/2023, Tuesday
-#>>>Initialized Asteroid 1 Travel logger
-#>>>SELF = <Asteroid 1(5285) Travel_0dunCAv3ykHv>
-#>>>Initial Travel Type: None
+#######>>>16:46:26.443 of 25/April/2023, Tuesday
+#>>>Initialized WCNemEntEyacht Travel logger
+#>>>SELF = <WCNemEntEyacht(171569) Travel_zXU0Sn8zKBL6>
+#>>>Initial Travel Type: Warp
 #>>>Updating Variables...
-#>>> -Initialized AI Travel Set
-#>>> -Initialized Travel Set
-#>>> -Initialized Space Set
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
 #>>>Destination set as None
 #>>>Set Exit Placement Name as None
 #>>>Set Exit Point to None
