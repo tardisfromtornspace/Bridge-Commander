@@ -1,0 +1,23 @@
+#This is the dump of the LogCreator: <Backdrop stars Atom field Travel Logger LogCreator_E3Ug8B8K5I32>
+#This log file was created on: 22:12:41.387 of 26/April/2023, Wednesday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>22:12:41.387 of 26/April/2023, Wednesday
+#>>>Initialized Backdrop stars Atom field Travel logger
+#>>>SELF = <Backdrop stars Atom field(85415) Travel_MG6DusdJRjXr>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization

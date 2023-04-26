@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Canon Enterprise F-1 Travel Logger LogCreator_wqGEZ6Ihs597>
-#This log file was created on: 12:43:17.190 of 23/April/2023, Sunday
+#This is the dump of the LogCreator: <Canon Enterprise F-1 Travel Logger LogCreator_rh0ofNpdev5j>
+#This log file was created on: 21:58:55.609 of 26/April/2023, Wednesday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>12:43:17.190 of 23/April/2023, Sunday
+#######>>>21:58:55.609 of 26/April/2023, Wednesday
 #>>>Initialized Canon Enterprise F-1 Travel logger
-#>>>SELF = <Canon Enterprise F-1(2991476) Travel_4m4AAS8GLv1O>
+#>>>SELF = <Canon Enterprise F-1(55209) Travel_D7PrT7svM32t>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -21,60 +21,3 @@ Updating Travelling Procedures...
 #>>>Chaser base class initialization complete.
 #>>>Target Ship = NONE
 #>>>Chaser pre-emptive Refresher Initialization
-#>>>Updated Target Ship = Player
-## -------------------- ##
-####################
-#######>>>12:43:24.254 of 23/April/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>12:43:24.620 of 23/April/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>12:43:25.254 of 23/April/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>12:43:25.554 of 23/April/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>12:43:25.821 of 23/April/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>12:43:26.320 of 23/April/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>12:43:26.571 of 23/April/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>12:46:14.425 of 23/April/2023, Sunday
-#>>>Destination set as None
-#>>>Set Exit Placement Name as None
-#>>>Enable Towing: 0
-#>>>Travelling procedures initiated...
-#>>>Updating Variables...
-#>>> -Is AI in Player in route CHECKING: Player Travel OK
-#>>> -Extra path: AI ship warping to None
-#>>> -Checked: Ship can warp, travel procedures started.
-#>>> -Speed Check:
-#>>>     -Current:  9.97999954224
-#>>>     -Real Speed:  4388.19091797
-#>>>     -Cruise:  9.98
-#>>>     -Max:  9.99
-#>>>     -Actual Cruise:  9.97999954224
-#>>>     -Actual Max:  9.98999977112
-#>>> -Started playing engaging sequence.
-## -------------------- ##
-####################
-#######>>>12:46:21.068 of 23/April/2023, Sunday
-#>>> -Finishing travelling procedures...
-#>>> -Finished. AI Ship travelling to None.
-########################################
-# 12:50:45.633 of 23/April/2023, Sunday
-#Ending of log dump - User is quiting the game
-########################################

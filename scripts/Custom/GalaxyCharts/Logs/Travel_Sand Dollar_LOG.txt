@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Sand Dollar Travel Logger LogCreator_3grk9D7QS8cX>
-#This log file was created on: 1:53:15.377 of 19/March/2023, Sunday
+#This is the dump of the LogCreator: <Sand Dollar Travel Logger LogCreator_0gvy0Qa4sSQn>
+#This log file was created on: 22:9:16.951 of 26/April/2023, Wednesday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>1:53:15.377 of 19/March/2023, Sunday
+#######>>>22:9:16.951 of 26/April/2023, Wednesday
 #>>>Initialized Sand Dollar Travel logger
-#>>>SELF = <Sand Dollar(4120122) Travel_5Ynk0L70eGIU>
+#>>>SELF = <Sand Dollar(98857) Travel_kYKB0yLeRy53>
 #>>>Initial Travel Type: None
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -22,3 +22,7 @@ Updating Travelling Procedures...
 #>>>Chaser base class initialization complete.
 #>>>Target Ship = NONE
 #>>>Chaser pre-emptive Refresher Initialization
+########################################
+# 22:10:10.816 of 26/April/2023, Wednesday
+#Ending of log dump - User is quiting the game
+########################################

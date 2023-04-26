@@ -1,13 +1,13 @@
-#This is the dump of the LogCreator: <Gravity Manager LogCreator_BMYOeLaI0rOS>
-#This log file was created on: 22:40:30.0 of 25/April/2023, Tuesday
+#This is the dump of the LogCreator: <Gravity Manager LogCreator_HOdU6S4q4wrd>
+#This log file was created on: 22:11:16.0 of 26/April/2023, Wednesday
 ########################################
 ## -------------------- ##
 ####################
-#######>>>22:40:30.0 of 25/April/2023, Tuesday
-#>>>Initialized GravityManager_Cg6GkI9p1nfh logger
+#######>>>22:11:16.0 of 26/April/2023, Wednesday
+#>>>Initialized GravityManager_B4Ypn4DsEt80 logger
 ## -------------------- ##
 ####################
-#######>>>22:40:38.945 of 25/April/2023, Tuesday
+#######>>>22:11:23.880 of 26/April/2023, Wednesday
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
@@ -17,219 +17,54 @@
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_400g9t195qfy>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_DE8cFd6Qy7e4>]
 #>>>Planets/Suns List: ['Belaruz 4']
 #>>>Refreshed Ship List: ['Player']
-#>>>Updated radius for grav well <Belaruz 4 GravityWell_400g9t195qfy>, radius is now 1606.19055176
+#>>>Updated radius for grav well <Belaruz 4 GravityWell_DE8cFd6Qy7e4>, radius is now 1606.72314453
 ## -------------------- ##
 ####################
-#######>>>22:43:30.947 of 25/April/2023, Tuesday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_co88Oa7Acb2W>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player', 'Thoughtforce-1', 'Thoughtforce-2', 'Thoughtforce-3']
-#>>>Refreshed Ship List: ['Player', 'Thoughtforce-1', 'Thoughtforce-2', 'Thoughtforce-3']
-#>>>Refreshed Ship List: ['Player', 'Thoughtforce-1', 'Thoughtforce-2', 'Thoughtforce-3']
-#>>>Refreshed Ship List: ['Player', 'Thoughtforce-1', 'Thoughtforce-2', 'Thoughtforce-3']
+#######>>>22:11:51.854 of 26/April/2023, Wednesday
+#>>>Creating Grav Wells - Set: Systems.Betelgeuse.Betelgeuse1
+#>>>Creating Grav Wells: [<Sun GravityWell_tNfM365rSYRN>, <Betelgeuse 1 GravityWell_9xOi22ikg7yU>, <Syrna GravityWell_Xb4EpPvkgCXi>, <Asteroid Moon GravityWell_25mCP1bFRiu4>]
+#>>>Planets/Suns List: ['Sun', 'Betelgeuse 1', 'Syrna', 'Asteroid Moon']
+#>>>Refreshed Ship List: ['Player', 'Keldon-1', 'Alien Wreckage']
+#>>>Refreshed Ship List: ['Player', 'Keldon-1', 'Alien Wreckage']
+#>>>Refreshed Ship List: ['Player', 'Keldon-1', 'Alien Wreckage']
+#>>>Refreshed Ship List: ['Player', 'Keldon-1', 'Alien Wreckage']
+#>>>Refreshed Ship List: ['Player', 'Keldon-1', 'Alien Wreckage']
+#>>>Refreshed Ship List: ['Player', 'Keldon-1', 'Alien Wreckage']
+#>>>Refreshed Ship List: ['Player', 'Keldon-1', 'Alien Wreckage']
+#>>>Refreshed Ship List: ['Player', 'Keldon-1', 'Alien Wreckage']
+#>>>Refreshed Ship List: ['Player', 'Keldon-1', 'Alien Wreckage']
+#>>>Refreshed Ship List: ['Player', 'Keldon-1', 'Alien Wreckage']
+#>>>Creating Grav Wells - Set: Systems.Betelgeuse.Betelgeuse1
+#>>>Creating Grav Wells: [<Sun GravityWell_rmcP7H5oTwao>, <Betelgeuse 1 GravityWell_1d3Uq5Aiy9VT>, <Syrna GravityWell_qeeOY9D2G8aB>, <Asteroid Moon GravityWell_z1riR8658XSr>]
+#>>>Planets/Suns List: ['Sun', 'Betelgeuse 1', 'Syrna', 'Asteroid Moon']
+#>>>Refreshed Ship List: ['Player', 'Keldon-1', 'Alien Wreckage']
+#>>>Refreshed Ship List: ['Player', 'Keldon-1', 'Alien Wreckage']
 ## -------------------- ##
 ####################
-#######>>>22:45:32.356 of 25/April/2023, Tuesday
-#>>>Refreshed Ship List: ['Player', 'Thoughtforce-1', 'Thoughtforce-3']
-## -------------------- ##
-####################
-#######>>>22:46:22.205 of 25/April/2023, Tuesday
-#>>>Refreshed Ship List: ['Player']
-## -------------------- ##
-####################
-#######>>>22:47:41.322 of 25/April/2023, Tuesday
-#>>>Refreshed Ship List: ['Player', 'Dalek2005Black 1', 'Dalek2005Black 2', 'Dalek2005Black 3', 'DalekNewParadigmGrey 3', 'DalekNewParadigmGrey 4', 'DalekNewParadigmGrey 5', 'DalekNewParadigmGrey 6', 'DalekNewParadigmGrey 7', 'DalekNewParadigmGrey 8', 'DalekNewParadigmGrey 9', 'DalekNewParadigmGrey 10', 'DalekNewParadigmGrey 11', 'DalekNewParadigmGrey 12', 'DalekNewParadigmGrey 13', 'DalekNewParadigmGrey 14', 'DalekNewParadigmGrey 15', 'DalekNewParadigmGrey 16']
-#>>>Refreshed Ship List: ['Player', 'Dalek2005Black 1', 'Dalek2005Black 2', 'Dalek2005Black 3', 'DalekNewParadigmGrey 3', 'DalekNewParadigmGrey 4', 'DalekNewParadigmGrey 5', 'DalekNewParadigmGrey 6', 'DalekNewParadigmGrey 7', 'DalekNewParadigmGrey 8', 'DalekNewParadigmGrey 9', 'DalekNewParadigmGrey 10', 'DalekNewParadigmGrey 11', 'DalekNewParadigmGrey 12', 'DalekNewParadigmGrey 13', 'DalekNewParadigmGrey 14', 'DalekNewParadigmGrey 15', 'DalekNewParadigmGrey 16']
-#>>>Refreshed Ship List: ['Player', 'Dalek2005Black 1', 'Dalek2005Black 2', 'Dalek2005Black 3', 'DalekNewParadigmGrey 3', 'DalekNewParadigmGrey 4', 'DalekNewParadigmGrey 5', 'DalekNewParadigmGrey 6', 'DalekNewParadigmGrey 7', 'DalekNewParadigmGrey 8', 'DalekNewParadigmGrey 9', 'DalekNewParadigmGrey 10', 'DalekNewParadigmGrey 11', 'DalekNewParadigmGrey 12', 'DalekNewParadigmGrey 13', 'DalekNewParadigmGrey 14', 'DalekNewParadigmGrey 15', 'DalekNewParadigmGrey 16']
-#>>>Refreshed Ship List: ['Player', 'Dalek2005Black 1', 'Dalek2005Black 2', 'Dalek2005Black 3', 'DalekNewParadigmGrey 3', 'DalekNewParadigmGrey 4', 'DalekNewParadigmGrey 5', 'DalekNewParadigmGrey 6', 'DalekNewParadigmGrey 7', 'DalekNewParadigmGrey 8', 'DalekNewParadigmGrey 9', 'DalekNewParadigmGrey 10', 'DalekNewParadigmGrey 11', 'DalekNewParadigmGrey 12', 'DalekNewParadigmGrey 13', 'DalekNewParadigmGrey 14', 'DalekNewParadigmGrey 15', 'DalekNewParadigmGrey 16']
-#>>>Refreshed Ship List: ['Player', 'Dalek2005Black 1', 'Dalek2005Black 2', 'Dalek2005Black 3', 'DalekNewParadigmGrey 3', 'DalekNewParadigmGrey 4', 'DalekNewParadigmGrey 5', 'DalekNewParadigmGrey 6', 'DalekNewParadigmGrey 7', 'DalekNewParadigmGrey 8', 'DalekNewParadigmGrey 9', 'DalekNewParadigmGrey 10', 'DalekNewParadigmGrey 11', 'DalekNewParadigmGrey 12', 'DalekNewParadigmGrey 13', 'DalekNewParadigmGrey 14', 'DalekNewParadigmGrey 15', 'DalekNewParadigmGrey 16']
-#>>>Refreshed Ship List: ['Player', 'Dalek2005Black 1', 'Dalek2005Black 2', 'Dalek2005Black 3', 'DalekNewParadigmGrey 3', 'DalekNewParadigmGrey 4', 'DalekNewParadigmGrey 5', 'DalekNewParadigmGrey 6', 'DalekNewParadigmGrey 7', 'DalekNewParadigmGrey 8', 'DalekNewParadigmGrey 9', 'DalekNewParadigmGrey 10', 'DalekNewParadigmGrey 11', 'DalekNewParadigmGrey 12', 'DalekNewParadigmGrey 13', 'DalekNewParadigmGrey 14', 'DalekNewParadigmGrey 15', 'DalekNewParadigmGrey 16']
-#>>>Refreshed Ship List: ['Player', 'Dalek2005Black 1', 'Dalek2005Black 2', 'Dalek2005Black 3', 'DalekNewParadigmGrey 3', 'DalekNewParadigmGrey 4', 'DalekNewParadigmGrey 5', 'DalekNewParadigmGrey 6', 'DalekNewParadigmGrey 7', 'DalekNewParadigmGrey 8', 'DalekNewParadigmGrey 9', 'DalekNewParadigmGrey 10', 'DalekNewParadigmGrey 11', 'DalekNewParadigmGrey 12', 'DalekNewParadigmGrey 13', 'DalekNewParadigmGrey 14', 'DalekNewParadigmGrey 15', 'DalekNewParadigmGrey 16']
-#>>>Refreshed Ship List: ['Player', 'Dalek2005Black 1', 'Dalek2005Black 2', 'Dalek2005Black 3', 'DalekNewParadigmGrey 3', 'DalekNewParadigmGrey 4', 'DalekNewParadigmGrey 5', 'DalekNewParadigmGrey 6', 'DalekNewParadigmGrey 7', 'DalekNewParadigmGrey 8', 'DalekNewParadigmGrey 9', 'DalekNewParadigmGrey 10', 'DalekNewParadigmGrey 11', 'DalekNewParadigmGrey 12', 'DalekNewParadigmGrey 13', 'DalekNewParadigmGrey 14', 'DalekNewParadigmGrey 15', 'DalekNewParadigmGrey 16']
-#>>>Refreshed Ship List: ['Player', 'Dalek2005Black 1', 'Dalek2005Black 2', 'Dalek2005Black 3', 'DalekNewParadigmGrey 3', 'DalekNewParadigmGrey 4', 'DalekNewParadigmGrey 5', 'DalekNewParadigmGrey 6', 'DalekNewParadigmGrey 7', 'DalekNewParadigmGrey 8', 'DalekNewParadigmGrey 9', 'DalekNewParadigmGrey 10', 'DalekNewParadigmGrey 11', 'DalekNewParadigmGrey 12', 'DalekNewParadigmGrey 13', 'DalekNewParadigmGrey 14', 'DalekNewParadigmGrey 15', 'DalekNewParadigmGrey 16']
-#>>>Refreshed Ship List: ['Player', 'Dalek2005Black 1', 'Dalek2005Black 2', 'Dalek2005Black 3', 'DalekNewParadigmGrey 3', 'DalekNewParadigmGrey 4', 'DalekNewParadigmGrey 5', 'DalekNewParadigmGrey 6', 'DalekNewParadigmGrey 7', 'DalekNewParadigmGrey 8', 'DalekNewParadigmGrey 9', 'DalekNewParadigmGrey 10', 'DalekNewParadigmGrey 11', 'DalekNewParadigmGrey 12', 'DalekNewParadigmGrey 13', 'DalekNewParadigmGrey 14', 'DalekNewParadigmGrey 15', 'DalekNewParadigmGrey 16']
-#>>>Refreshed Ship List: ['Player', 'Dalek2005Black 1', 'Dalek2005Black 2', 'Dalek2005Black 3', 'DalekNewParadigmGrey 3', 'DalekNewParadigmGrey 4', 'DalekNewParadigmGrey 5', 'DalekNewParadigmGrey 6', 'DalekNewParadigmGrey 7', 'DalekNewParadigmGrey 8', 'DalekNewParadigmGrey 9', 'DalekNewParadigmGrey 10', 'DalekNewParadigmGrey 11', 'DalekNewParadigmGrey 12', 'DalekNewParadigmGrey 13', 'DalekNewParadigmGrey 14', 'DalekNewParadigmGrey 15', 'DalekNewParadigmGrey 16']
-#>>>Refreshed Ship List: ['Player', 'Dalek2005Black 1', 'Dalek2005Black 2', 'Dalek2005Black 3', 'DalekNewParadigmGrey 3', 'DalekNewParadigmGrey 4', 'DalekNewParadigmGrey 5', 'DalekNewParadigmGrey 6', 'DalekNewParadigmGrey 7', 'DalekNewParadigmGrey 8', 'DalekNewParadigmGrey 9', 'DalekNewParadigmGrey 10', 'DalekNewParadigmGrey 11', 'DalekNewParadigmGrey 12', 'DalekNewParadigmGrey 13', 'DalekNewParadigmGrey 14', 'DalekNewParadigmGrey 15', 'DalekNewParadigmGrey 16']
-#>>>Refreshed Ship List: ['Player', 'Dalek2005Black 1', 'Dalek2005Black 2', 'Dalek2005Black 3', 'DalekNewParadigmGrey 3', 'DalekNewParadigmGrey 4', 'DalekNewParadigmGrey 5', 'DalekNewParadigmGrey 6', 'DalekNewParadigmGrey 7', 'DalekNewParadigmGrey 8', 'DalekNewParadigmGrey 9', 'DalekNewParadigmGrey 10', 'DalekNewParadigmGrey 11', 'DalekNewParadigmGrey 12', 'DalekNewParadigmGrey 13', 'DalekNewParadigmGrey 14', 'DalekNewParadigmGrey 15', 'DalekNewParadigmGrey 16']
-#>>>Refreshed Ship List: ['Player', 'Dalek2005Black 1', 'Dalek2005Black 2', 'Dalek2005Black 3', 'DalekNewParadigmGrey 3', 'DalekNewParadigmGrey 4', 'DalekNewParadigmGrey 5', 'DalekNewParadigmGrey 6', 'DalekNewParadigmGrey 7', 'DalekNewParadigmGrey 8', 'DalekNewParadigmGrey 9', 'DalekNewParadigmGrey 10', 'DalekNewParadigmGrey 11', 'DalekNewParadigmGrey 12', 'DalekNewParadigmGrey 13', 'DalekNewParadigmGrey 14', 'DalekNewParadigmGrey 15', 'DalekNewParadigmGrey 16']
-#>>>Refreshed Ship List: ['Player', 'Dalek2005Black 1', 'Dalek2005Black 2', 'Dalek2005Black 3', 'DalekNewParadigmGrey 3', 'DalekNewParadigmGrey 4', 'DalekNewParadigmGrey 5', 'DalekNewParadigmGrey 6', 'DalekNewParadigmGrey 7', 'DalekNewParadigmGrey 8', 'DalekNewParadigmGrey 9', 'DalekNewParadigmGrey 10', 'DalekNewParadigmGrey 11', 'DalekNewParadigmGrey 12', 'DalekNewParadigmGrey 13', 'DalekNewParadigmGrey 14', 'DalekNewParadigmGrey 15', 'DalekNewParadigmGrey 16']
-#>>>Refreshed Ship List: ['Player', 'Dalek2005Black 1', 'Dalek2005Black 2', 'Dalek2005Black 3', 'DalekNewParadigmGrey 3', 'DalekNewParadigmGrey 4', 'DalekNewParadigmGrey 5', 'DalekNewParadigmGrey 6', 'DalekNewParadigmGrey 7', 'DalekNewParadigmGrey 8', 'DalekNewParadigmGrey 9', 'DalekNewParadigmGrey 10', 'DalekNewParadigmGrey 11', 'DalekNewParadigmGrey 12', 'DalekNewParadigmGrey 13', 'DalekNewParadigmGrey 14', 'DalekNewParadigmGrey 15', 'DalekNewParadigmGrey 16']
-#>>>Refreshed Ship List: ['Player', 'Dalek2005Black 1', 'Dalek2005Black 2', 'Dalek2005Black 3', 'DalekNewParadigmGrey 3', 'DalekNewParadigmGrey 4', 'DalekNewParadigmGrey 5', 'DalekNewParadigmGrey 6', 'DalekNewParadigmGrey 7', 'DalekNewParadigmGrey 8', 'DalekNewParadigmGrey 9', 'DalekNewParadigmGrey 10', 'DalekNewParadigmGrey 11', 'DalekNewParadigmGrey 12', 'DalekNewParadigmGrey 13', 'DalekNewParadigmGrey 14', 'DalekNewParadigmGrey 15', 'DalekNewParadigmGrey 16']
-## -------------------- ##
-####################
-#######>>>22:48:55.190 of 25/April/2023, Tuesday
-#>>>Refreshed Ship List: ['Player', 'Dalek2005Black 1', 'Dalek2005Black 2', 'Dalek2005Black 3', 'DalekNewParadigmGrey 3', 'DalekNewParadigmGrey 4', 'DalekNewParadigmGrey 5', 'DalekNewParadigmGrey 6', 'DalekNewParadigmGrey 7', 'DalekNewParadigmGrey 8', 'DalekNewParadigmGrey 9', 'DalekNewParadigmGrey 10', 'DalekNewParadigmGrey 11', 'DalekNewParadigmGrey 12', 'DalekNewParadigmGrey 14', 'DalekNewParadigmGrey 15', 'DalekNewParadigmGrey 16']
-## -------------------- ##
-####################
-#######>>>22:49:25.570 of 25/April/2023, Tuesday
-#>>>Refreshed Ship List: ['Player', 'Dalek2005Black 1', 'Dalek2005Black 2', 'Dalek2005Black 3', 'DalekNewParadigmGrey 3', 'DalekNewParadigmGrey 4', 'DalekNewParadigmGrey 5', 'DalekNewParadigmGrey 6', 'DalekNewParadigmGrey 7', 'DalekNewParadigmGrey 8', 'DalekNewParadigmGrey 9', 'DalekNewParadigmGrey 10', 'DalekNewParadigmGrey 11', 'DalekNewParadigmGrey 14', 'DalekNewParadigmGrey 15', 'DalekNewParadigmGrey 16']
-## -------------------- ##
-####################
-#######>>>22:49:42.619 of 25/April/2023, Tuesday
-#>>>Refreshed Ship List: ['Player', 'Dalek2005Black 1', 'Dalek2005Black 2', 'Dalek2005Black 3', 'DalekNewParadigmGrey 3', 'DalekNewParadigmGrey 4', 'DalekNewParadigmGrey 5', 'DalekNewParadigmGrey 6', 'DalekNewParadigmGrey 7', 'DalekNewParadigmGrey 8', 'DalekNewParadigmGrey 9', 'DalekNewParadigmGrey 10', 'DalekNewParadigmGrey 11', 'DalekNewParadigmGrey 15', 'DalekNewParadigmGrey 16']
-## -------------------- ##
-####################
-#######>>>22:50:18.501 of 25/April/2023, Tuesday
-#>>>Refreshed Ship List: ['Player', 'Dalek2005Black 1', 'Dalek2005Black 2', 'Dalek2005Black 3', 'DalekNewParadigmGrey 3', 'DalekNewParadigmGrey 4', 'DalekNewParadigmGrey 5', 'DalekNewParadigmGrey 6', 'DalekNewParadigmGrey 7', 'DalekNewParadigmGrey 8', 'DalekNewParadigmGrey 9', 'DalekNewParadigmGrey 10', 'DalekNewParadigmGrey 11', 'DalekNewParadigmGrey 16']
-## -------------------- ##
-####################
-#######>>>22:50:42.751 of 25/April/2023, Tuesday
-#>>>Refreshed Ship List: ['Player', 'Dalek2005Black 1', 'Dalek2005Black 2', 'Dalek2005Black 3', 'DalekNewParadigmGrey 3', 'DalekNewParadigmGrey 4', 'DalekNewParadigmGrey 5', 'DalekNewParadigmGrey 6', 'DalekNewParadigmGrey 7', 'DalekNewParadigmGrey 8', 'DalekNewParadigmGrey 9', 'DalekNewParadigmGrey 10', 'DalekNewParadigmGrey 11']
-## -------------------- ##
-####################
-#######>>>22:51:25.267 of 25/April/2023, Tuesday
-#>>>Refreshed Ship List: ['Player', 'Dalek2005Black 2', 'Dalek2005Black 3', 'DalekNewParadigmGrey 3', 'DalekNewParadigmGrey 4', 'DalekNewParadigmGrey 5', 'DalekNewParadigmGrey 6', 'DalekNewParadigmGrey 7', 'DalekNewParadigmGrey 8', 'DalekNewParadigmGrey 9', 'DalekNewParadigmGrey 10', 'DalekNewParadigmGrey 11']
-## -------------------- ##
-####################
-#######>>>22:51:50.933 of 25/April/2023, Tuesday
-#>>>Refreshed Ship List: ['Player', 'Dalek2005Black 3', 'DalekNewParadigmGrey 3', 'DalekNewParadigmGrey 4', 'DalekNewParadigmGrey 5', 'DalekNewParadigmGrey 6', 'DalekNewParadigmGrey 7', 'DalekNewParadigmGrey 8', 'DalekNewParadigmGrey 9', 'DalekNewParadigmGrey 10', 'DalekNewParadigmGrey 11']
-## -------------------- ##
-####################
-#######>>>22:52:34.866 of 25/April/2023, Tuesday
-#>>>Refreshed Ship List: ['Player', 'DalekNewParadigmGrey 3', 'DalekNewParadigmGrey 4', 'DalekNewParadigmGrey 5', 'DalekNewParadigmGrey 6', 'DalekNewParadigmGrey 7', 'DalekNewParadigmGrey 8', 'DalekNewParadigmGrey 9', 'DalekNewParadigmGrey 10', 'DalekNewParadigmGrey 11']
-## -------------------- ##
-####################
-#######>>>22:52:49.899 of 25/April/2023, Tuesday
-#>>>Refreshed Ship List: ['Player', 'DalekNewParadigmGrey 4', 'DalekNewParadigmGrey 5', 'DalekNewParadigmGrey 6', 'DalekNewParadigmGrey 7', 'DalekNewParadigmGrey 8', 'DalekNewParadigmGrey 9', 'DalekNewParadigmGrey 10', 'DalekNewParadigmGrey 11']
-## -------------------- ##
-####################
-#######>>>22:52:56.666 of 25/April/2023, Tuesday
-#>>>Refreshed Ship List: ['Player', 'DalekNewParadigmGrey 5', 'DalekNewParadigmGrey 6', 'DalekNewParadigmGrey 7', 'DalekNewParadigmGrey 8', 'DalekNewParadigmGrey 9', 'DalekNewParadigmGrey 10', 'DalekNewParadigmGrey 11']
-## -------------------- ##
-####################
-#######>>>22:53:0.784 of 25/April/2023, Tuesday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_LUWkEf37q6UN>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['DalekNewParadigmGrey 5', 'DalekNewParadigmGrey 6', 'DalekNewParadigmGrey 7', 'DalekNewParadigmGrey 8', 'DalekNewParadigmGrey 9', 'DalekNewParadigmGrey 10', 'DalekNewParadigmGrey 11', 'Player']
-## -------------------- ##
-####################
-#######>>>22:53:23.933 of 25/April/2023, Tuesday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_0mI65RF12G89>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player', 'Husnock Warship-1', 'Husnock Warship-2', 'Husnock Warship-3', 'Husnock Warship-4', 'Husnock Warship-5', 'Husnock Warship-6', 'Husnock Warship-7', 'Husnock Warship-8', 'Husnock Warship-9', 'Husnock Warship-10', 'Husnock Warship-11', 'Husnock Warship-12', 'Husnock Warship-13', 'Husnock Warship-14']
-#>>>Refreshed Ship List: ['Player', 'Husnock Warship-1', 'Husnock Warship-2', 'Husnock Warship-3', 'Husnock Warship-4', 'Husnock Warship-5', 'Husnock Warship-6', 'Husnock Warship-7', 'Husnock Warship-8', 'Husnock Warship-9', 'Husnock Warship-10', 'Husnock Warship-11', 'Husnock Warship-12', 'Husnock Warship-13', 'Husnock Warship-14']
-#>>>Refreshed Ship List: ['Player', 'Husnock Warship-1', 'Husnock Warship-2', 'Husnock Warship-3', 'Husnock Warship-4', 'Husnock Warship-5', 'Husnock Warship-6', 'Husnock Warship-7', 'Husnock Warship-8', 'Husnock Warship-9', 'Husnock Warship-10', 'Husnock Warship-11', 'Husnock Warship-12', 'Husnock Warship-13', 'Husnock Warship-14']
-#>>>Refreshed Ship List: ['Player', 'Husnock Warship-1', 'Husnock Warship-2', 'Husnock Warship-3', 'Husnock Warship-4', 'Husnock Warship-5', 'Husnock Warship-6', 'Husnock Warship-7', 'Husnock Warship-8', 'Husnock Warship-9', 'Husnock Warship-10', 'Husnock Warship-11', 'Husnock Warship-12', 'Husnock Warship-13', 'Husnock Warship-14']
-#>>>Refreshed Ship List: ['Player', 'Husnock Warship-1', 'Husnock Warship-2', 'Husnock Warship-3', 'Husnock Warship-4', 'Husnock Warship-5', 'Husnock Warship-6', 'Husnock Warship-7', 'Husnock Warship-8', 'Husnock Warship-9', 'Husnock Warship-10', 'Husnock Warship-11', 'Husnock Warship-12', 'Husnock Warship-13', 'Husnock Warship-14']
-#>>>Refreshed Ship List: ['Player', 'Husnock Warship-1', 'Husnock Warship-2', 'Husnock Warship-3', 'Husnock Warship-4', 'Husnock Warship-5', 'Husnock Warship-6', 'Husnock Warship-7', 'Husnock Warship-8', 'Husnock Warship-9', 'Husnock Warship-10', 'Husnock Warship-11', 'Husnock Warship-12', 'Husnock Warship-13', 'Husnock Warship-14']
-#>>>Refreshed Ship List: ['Player', 'Husnock Warship-1', 'Husnock Warship-2', 'Husnock Warship-3', 'Husnock Warship-4', 'Husnock Warship-5', 'Husnock Warship-6', 'Husnock Warship-7', 'Husnock Warship-8', 'Husnock Warship-9', 'Husnock Warship-10', 'Husnock Warship-11', 'Husnock Warship-12', 'Husnock Warship-13', 'Husnock Warship-14']
-#>>>Refreshed Ship List: ['Player', 'Husnock Warship-1', 'Husnock Warship-2', 'Husnock Warship-3', 'Husnock Warship-4', 'Husnock Warship-5', 'Husnock Warship-6', 'Husnock Warship-7', 'Husnock Warship-8', 'Husnock Warship-9', 'Husnock Warship-10', 'Husnock Warship-11', 'Husnock Warship-12', 'Husnock Warship-13', 'Husnock Warship-14']
-#>>>Refreshed Ship List: ['Player', 'Husnock Warship-1', 'Husnock Warship-2', 'Husnock Warship-3', 'Husnock Warship-4', 'Husnock Warship-5', 'Husnock Warship-6', 'Husnock Warship-7', 'Husnock Warship-8', 'Husnock Warship-9', 'Husnock Warship-10', 'Husnock Warship-11', 'Husnock Warship-12', 'Husnock Warship-13', 'Husnock Warship-14']
-#>>>Refreshed Ship List: ['Player', 'Husnock Warship-1', 'Husnock Warship-2', 'Husnock Warship-3', 'Husnock Warship-4', 'Husnock Warship-5', 'Husnock Warship-6', 'Husnock Warship-7', 'Husnock Warship-8', 'Husnock Warship-9', 'Husnock Warship-10', 'Husnock Warship-11', 'Husnock Warship-12', 'Husnock Warship-13', 'Husnock Warship-14']
-#>>>Refreshed Ship List: ['Player', 'Husnock Warship-1', 'Husnock Warship-2', 'Husnock Warship-3', 'Husnock Warship-4', 'Husnock Warship-5', 'Husnock Warship-6', 'Husnock Warship-7', 'Husnock Warship-8', 'Husnock Warship-9', 'Husnock Warship-10', 'Husnock Warship-11', 'Husnock Warship-12', 'Husnock Warship-13', 'Husnock Warship-14']
-#>>>Refreshed Ship List: ['Player', 'Husnock Warship-1', 'Husnock Warship-2', 'Husnock Warship-3', 'Husnock Warship-4', 'Husnock Warship-5', 'Husnock Warship-6', 'Husnock Warship-7', 'Husnock Warship-8', 'Husnock Warship-9', 'Husnock Warship-10', 'Husnock Warship-11', 'Husnock Warship-12', 'Husnock Warship-13', 'Husnock Warship-14']
-#>>>Refreshed Ship List: ['Player', 'Husnock Warship-1', 'Husnock Warship-2', 'Husnock Warship-3', 'Husnock Warship-4', 'Husnock Warship-5', 'Husnock Warship-6', 'Husnock Warship-7', 'Husnock Warship-8', 'Husnock Warship-9', 'Husnock Warship-10', 'Husnock Warship-11', 'Husnock Warship-12', 'Husnock Warship-13', 'Husnock Warship-14']
-#>>>Refreshed Ship List: ['Player', 'Husnock Warship-1', 'Husnock Warship-2', 'Husnock Warship-3', 'Husnock Warship-4', 'Husnock Warship-5', 'Husnock Warship-6', 'Husnock Warship-7', 'Husnock Warship-8', 'Husnock Warship-9', 'Husnock Warship-10', 'Husnock Warship-11', 'Husnock Warship-12', 'Husnock Warship-13', 'Husnock Warship-14']
-#>>>Refreshed Ship List: ['Player', 'Husnock Warship-1', 'Husnock Warship-2', 'Husnock Warship-3', 'Husnock Warship-4', 'Husnock Warship-5', 'Husnock Warship-6', 'Husnock Warship-7', 'Husnock Warship-8', 'Husnock Warship-9', 'Husnock Warship-10', 'Husnock Warship-11', 'Husnock Warship-12', 'Husnock Warship-13', 'Husnock Warship-14']
-## -------------------- ##
-####################
-#######>>>22:53:53.840 of 25/April/2023, Tuesday
-#>>>Refreshed Ship List: ['Player', 'Husnock Warship-1', 'Husnock Warship-2', 'Husnock Warship-3', 'Husnock Warship-4', 'Husnock Warship-5', 'Husnock Warship-6', 'Husnock Warship-7', 'Husnock Warship-8', 'Husnock Warship-9', 'Husnock Warship-11', 'Husnock Warship-12', 'Husnock Warship-13', 'Husnock Warship-14']
-## -------------------- ##
-####################
-#######>>>22:54:18.443 of 25/April/2023, Tuesday
-#>>>Refreshed Ship List: ['Player', 'Husnock Warship-1', 'Husnock Warship-2', 'Husnock Warship-3', 'Husnock Warship-4', 'Husnock Warship-5', 'Husnock Warship-6', 'Husnock Warship-7', 'Husnock Warship-8', 'Husnock Warship-9', 'Husnock Warship-12', 'Husnock Warship-13', 'Husnock Warship-14']
-## -------------------- ##
-####################
-#######>>>22:54:21.486 of 25/April/2023, Tuesday
-#>>>Refreshed Ship List: ['Player', 'Husnock Warship-1', 'Husnock Warship-2', 'Husnock Warship-3', 'Husnock Warship-4', 'Husnock Warship-5', 'Husnock Warship-6', 'Husnock Warship-7', 'Husnock Warship-8', 'Husnock Warship-9', 'Husnock Warship-13', 'Husnock Warship-14']
-## -------------------- ##
-####################
-#######>>>22:54:32.948 of 25/April/2023, Tuesday
-#>>>Refreshed Ship List: ['Player', 'Husnock Warship-1', 'Husnock Warship-3', 'Husnock Warship-4', 'Husnock Warship-5', 'Husnock Warship-6', 'Husnock Warship-7', 'Husnock Warship-8', 'Husnock Warship-9', 'Husnock Warship-13', 'Husnock Warship-14']
-## -------------------- ##
-####################
-#######>>>22:54:35.269 of 25/April/2023, Tuesday
-#>>>Refreshed Ship List: ['Player', 'Husnock Warship-1', 'Husnock Warship-3', 'Husnock Warship-4', 'Husnock Warship-5', 'Husnock Warship-7', 'Husnock Warship-8', 'Husnock Warship-9', 'Husnock Warship-13', 'Husnock Warship-14']
-## -------------------- ##
-####################
-#######>>>22:54:38.753 of 25/April/2023, Tuesday
-#>>>Refreshed Ship List: ['Player', 'Husnock Warship-1', 'Husnock Warship-3', 'Husnock Warship-4', 'Husnock Warship-5', 'Husnock Warship-7', 'Husnock Warship-9', 'Husnock Warship-13', 'Husnock Warship-14']
-## -------------------- ##
-####################
-#######>>>22:54:49.014 of 25/April/2023, Tuesday
-#>>>Refreshed Ship List: ['Player', 'Husnock Warship-1', 'Husnock Warship-3', 'Husnock Warship-4', 'Husnock Warship-5', 'Husnock Warship-7', 'Husnock Warship-13', 'Husnock Warship-14']
-## -------------------- ##
-####################
-#######>>>22:54:57.269 of 25/April/2023, Tuesday
-#>>>Refreshed Ship List: ['Player', 'Husnock Warship-1', 'Husnock Warship-3', 'Husnock Warship-4', 'Husnock Warship-5', 'Husnock Warship-7', 'Husnock Warship-14']
-## -------------------- ##
-####################
-#######>>>22:55:3.416 of 25/April/2023, Tuesday
-#>>>Refreshed Ship List: ['Player', 'Husnock Warship-1', 'Husnock Warship-3', 'Husnock Warship-4', 'Husnock Warship-5', 'Husnock Warship-7']
-## -------------------- ##
-####################
-#######>>>22:55:26.235 of 25/April/2023, Tuesday
-#>>>Refreshed Ship List: ['Player', 'Husnock Warship-3', 'Husnock Warship-4', 'Husnock Warship-5', 'Husnock Warship-7']
-## -------------------- ##
-####################
-#######>>>22:55:27.378 of 25/April/2023, Tuesday
-#>>>Refreshed Ship List: ['Player', 'Husnock Warship-3', 'Husnock Warship-4', 'Husnock Warship-5', 'Husnock Warship-7']
-#>>>Refreshed Ship List: ['Player', 'Husnock Warship-4', 'Husnock Warship-5', 'Husnock Warship-7']
-## -------------------- ##
-####################
-#######>>>22:55:34.950 of 25/April/2023, Tuesday
-#>>>Refreshed Ship List: ['Player', 'Husnock Warship-4', 'Husnock Warship-7']
-## -------------------- ##
-####################
-#######>>>22:55:35.664 of 25/April/2023, Tuesday
-#>>>Refreshed Ship List: ['Player', 'Husnock Warship-7']
-## -------------------- ##
-####################
-#######>>>22:55:40.997 of 25/April/2023, Tuesday
-#>>>Refreshed Ship List: ['Player']
-## -------------------- ##
-####################
-#######>>>22:56:16.596 of 25/April/2023, Tuesday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_4rKnacMclKcT>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player', 'DalekEmperorSaucer', 'Dalek2005Gold2', 'Dalek2005Gold3', 'Dalek2005Gold4', 'Dalek2005Gold5', 'Dalek2005Gold6', 'Dalek2005Gold7', 'Dalek2005Gold8', 'Dalek2005Gold9', 'Dalek2005Gold10']
-#>>>Refreshed Ship List: ['Player', 'DalekEmperorSaucer', 'Dalek2005Gold2', 'Dalek2005Gold3', 'Dalek2005Gold4', 'Dalek2005Gold5', 'Dalek2005Gold6', 'Dalek2005Gold7', 'Dalek2005Gold8', 'Dalek2005Gold9', 'Dalek2005Gold10']
-#>>>Refreshed Ship List: ['Player', 'DalekEmperorSaucer', 'Dalek2005Gold2', 'Dalek2005Gold3', 'Dalek2005Gold4', 'Dalek2005Gold5', 'Dalek2005Gold6', 'Dalek2005Gold7', 'Dalek2005Gold8', 'Dalek2005Gold9', 'Dalek2005Gold10']
-#>>>Refreshed Ship List: ['Player', 'DalekEmperorSaucer', 'Dalek2005Gold2', 'Dalek2005Gold3', 'Dalek2005Gold4', 'Dalek2005Gold5', 'Dalek2005Gold6', 'Dalek2005Gold7', 'Dalek2005Gold8', 'Dalek2005Gold9', 'Dalek2005Gold10']
-#>>>Refreshed Ship List: ['Player', 'DalekEmperorSaucer', 'Dalek2005Gold2', 'Dalek2005Gold3', 'Dalek2005Gold4', 'Dalek2005Gold5', 'Dalek2005Gold6', 'Dalek2005Gold7', 'Dalek2005Gold8', 'Dalek2005Gold9', 'Dalek2005Gold10']
-#>>>Refreshed Ship List: ['Player', 'DalekEmperorSaucer', 'Dalek2005Gold2', 'Dalek2005Gold3', 'Dalek2005Gold4', 'Dalek2005Gold5', 'Dalek2005Gold6', 'Dalek2005Gold7', 'Dalek2005Gold8', 'Dalek2005Gold9', 'Dalek2005Gold10']
-#>>>Refreshed Ship List: ['Player', 'DalekEmperorSaucer', 'Dalek2005Gold2', 'Dalek2005Gold3', 'Dalek2005Gold4', 'Dalek2005Gold5', 'Dalek2005Gold6', 'Dalek2005Gold7', 'Dalek2005Gold8', 'Dalek2005Gold9', 'Dalek2005Gold10']
-#>>>Refreshed Ship List: ['Player', 'DalekEmperorSaucer', 'Dalek2005Gold2', 'Dalek2005Gold3', 'Dalek2005Gold4', 'Dalek2005Gold5', 'Dalek2005Gold6', 'Dalek2005Gold7', 'Dalek2005Gold8', 'Dalek2005Gold9', 'Dalek2005Gold10']
-#>>>Refreshed Ship List: ['Player', 'DalekEmperorSaucer', 'Dalek2005Gold2', 'Dalek2005Gold3', 'Dalek2005Gold4', 'Dalek2005Gold5', 'Dalek2005Gold6', 'Dalek2005Gold7', 'Dalek2005Gold8', 'Dalek2005Gold9', 'Dalek2005Gold10']
-#>>>Refreshed Ship List: ['Player', 'DalekEmperorSaucer', 'Dalek2005Gold2', 'Dalek2005Gold3', 'Dalek2005Gold4', 'Dalek2005Gold5', 'Dalek2005Gold6', 'Dalek2005Gold7', 'Dalek2005Gold8', 'Dalek2005Gold9', 'Dalek2005Gold10']
-#>>>Refreshed Ship List: ['Player', 'DalekEmperorSaucer', 'Dalek2005Gold2', 'Dalek2005Gold3', 'Dalek2005Gold4', 'Dalek2005Gold5', 'Dalek2005Gold6', 'Dalek2005Gold7', 'Dalek2005Gold8', 'Dalek2005Gold9', 'Dalek2005Gold10']
-## -------------------- ##
-####################
-#######>>>22:56:54.832 of 25/April/2023, Tuesday
-#>>>Refreshed Ship List: ['DalekEmperorSaucer', 'MvamTemp', 'Player', 'Dalek2005Gold2', 'Dalek2005Gold3', 'Dalek2005Gold4', 'Dalek2005Gold5', 'Dalek2005Gold6', 'Dalek2005Gold7', 'Dalek2005Gold8', 'Dalek2005Gold9', 'Dalek2005Gold10']
-#>>>Refreshed Ship List: ['DalekEmperorSaucer', 'MvamTemp', 'Player', 'Dalek2005Gold2', 'Dalek2005Gold3', 'Dalek2005Gold4', 'Dalek2005Gold5', 'Dalek2005Gold6', 'Dalek2005Gold7', 'Dalek2005Gold8', 'Dalek2005Gold9', 'Dalek2005Gold10']
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_7pNPUUPOl4qH>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['DalekEmperorSaucer', 'MvamTemp', 'Player', 'Dalek2005Gold2', 'Dalek2005Gold3', 'Dalek2005Gold4', 'Dalek2005Gold5', 'Dalek2005Gold6', 'Dalek2005Gold7', 'Dalek2005Gold8', 'Dalek2005Gold9', 'Dalek2005Gold10']
-#>>>Refreshed Ship List: ['DalekEmperorSaucer', 'MvamTemp', 'Player', 'Dalek2005Gold2', 'Dalek2005Gold3', 'Dalek2005Gold4', 'Dalek2005Gold5', 'Dalek2005Gold6', 'Dalek2005Gold7', 'Dalek2005Gold8', 'Dalek2005Gold9', 'Dalek2005Gold10']
-#>>>Refreshed Ship List: ['DalekEmperorSaucer', 'MvamTemp', 'Player', 'Dalek2005Gold2', 'Dalek2005Gold3', 'Dalek2005Gold4', 'Dalek2005Gold5', 'Dalek2005Gold6', 'Dalek2005Gold7', 'Dalek2005Gold8', 'Dalek2005Gold9', 'Dalek2005Gold10']
-#>>>Refreshed Ship List: ['DalekEmperorSaucer', 'MvamTemp', 'Player', 'Dalek2005Gold2', 'Dalek2005Gold3', 'Dalek2005Gold4', 'Dalek2005Gold5', 'Dalek2005Gold6', 'Dalek2005Gold7', 'Dalek2005Gold8', 'Dalek2005Gold9', 'Dalek2005Gold10']
-#>>>Refreshed Ship List: ['DalekEmperorSaucer', 'MvamTemp', 'Player', 'Dalek2005Gold2', 'Dalek2005Gold3', 'Dalek2005Gold4', 'Dalek2005Gold5', 'Dalek2005Gold6', 'Dalek2005Gold7', 'Dalek2005Gold8', 'Dalek2005Gold9', 'Dalek2005Gold10']
-#>>>Refreshed Ship List: ['DalekEmperorSaucer', 'MvamTemp', 'Player', 'Dalek2005Gold2', 'Dalek2005Gold3', 'Dalek2005Gold4', 'Dalek2005Gold5', 'Dalek2005Gold6', 'Dalek2005Gold7', 'Dalek2005Gold8', 'Dalek2005Gold9', 'Dalek2005Gold10']
-#>>>Refreshed Ship List: ['DalekEmperorSaucer', 'MvamTemp', 'Player', 'Dalek2005Gold2', 'Dalek2005Gold3', 'Dalek2005Gold4', 'Dalek2005Gold5', 'Dalek2005Gold6', 'Dalek2005Gold7', 'Dalek2005Gold8', 'Dalek2005Gold9', 'Dalek2005Gold10']
-#>>>Refreshed Ship List: ['DalekEmperorSaucer', 'MvamTemp', 'Player', 'Dalek2005Gold2', 'Dalek2005Gold3', 'Dalek2005Gold4', 'Dalek2005Gold5', 'Dalek2005Gold6', 'Dalek2005Gold7', 'Dalek2005Gold8', 'Dalek2005Gold9', 'Dalek2005Gold10']
-#>>>Refreshed Ship List: ['DalekEmperorSaucer', 'MvamTemp', 'Player', 'Dalek2005Gold2', 'Dalek2005Gold3', 'Dalek2005Gold4', 'Dalek2005Gold5', 'Dalek2005Gold6', 'Dalek2005Gold7', 'Dalek2005Gold8', 'Dalek2005Gold9', 'Dalek2005Gold10']
-#>>>Refreshed Ship List: ['DalekEmperorSaucer', 'MvamTemp', 'Player', 'Dalek2005Gold2', 'Dalek2005Gold3', 'Dalek2005Gold4', 'Dalek2005Gold5', 'Dalek2005Gold6', 'Dalek2005Gold7', 'Dalek2005Gold8', 'Dalek2005Gold9', 'Dalek2005Gold10']
-## -------------------- ##
-####################
-#######>>>22:56:58.280 of 25/April/2023, Tuesday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_6hgrjwCD9i99>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['MvamTemp', 'Player']
-## -------------------- ##
-####################
-#######>>>22:57:25.396 of 25/April/2023, Tuesday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_EsdPIxjbIV2v>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['MvamTemp', 'Player']
+#######>>>22:12:41.387 of 26/April/2023, Wednesday
+#>>>Refreshed Ship List: ['Player', 'Keldon-1', 'Alien Wreckage']
+#>>>Refreshed Ship List: ['Player', 'Keldon-1', 'Alien Wreckage']
+#>>>Refreshed Ship List: ['Player', 'Keldon-1', 'Alien Wreckage']
+#>>>Refreshed Ship List: ['Player', 'Keldon-1', 'Alien Wreckage']
+#>>>Refreshed Ship List: ['Player', 'Keldon-1', 'Alien Wreckage']
+#>>>Refreshed Ship List: ['Player', 'Keldon-1', 'Alien Wreckage']
+#>>>Refreshed Ship List: ['Player', 'Keldon-1', 'Alien Wreckage']
+#>>>Refreshed Ship List: ['Player', 'Keldon-1', 'Alien Wreckage']
+#>>>Refreshed Ship List: ['Player', 'Keldon-1', 'Alien Wreckage']
+#>>>Refreshed Ship List: ['Player', 'Keldon-1', 'Alien Wreckage']
+#>>>Refreshed Ship List: ['Player', 'Keldon-1', 'Alien Wreckage']
+#>>>Refreshed Ship List: ['Player', 'Keldon-1', 'Alien Wreckage']
+#>>>Refreshed Ship List: ['Player', 'Keldon-1', 'Alien Wreckage']
+#>>>Refreshed Ship List: ['Player', 'Keldon-1', 'Alien Wreckage']
+#>>>Refreshed Ship List: ['Player', 'Keldon-1', 'Alien Wreckage']
+#>>>Refreshed Ship List: ['Player', 'Keldon-1', 'Alien Wreckage']
+#>>>Refreshed Ship List: ['Player', 'Keldon-1', 'Alien Wreckage']
+#>>>Refreshed Ship List: ['Player', 'Keldon-1', 'Alien Wreckage']
+#>>>Refreshed Ship List: ['Player', 'Keldon-1', 'Alien Wreckage']
+#>>>Refreshed Ship List: ['Player', 'Keldon-1', 'Alien Wreckage']
+#>>>Refreshed Ship List: ['Player', 'Keldon-1', 'Alien Wreckage']
+#>>>Refreshed Ship List: ['Player', 'Keldon-1', 'Alien Wreckage']
+#>>>Refreshed Ship List: ['Player', 'Keldon-1', 'Alien Wreckage']

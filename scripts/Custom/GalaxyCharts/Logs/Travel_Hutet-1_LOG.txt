@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Hutet-1 Travel Logger LogCreator_2VHb457ROC31>
-#This log file was created on: 19:21:52.803 of 19/April/2023, Wednesday
+#This is the dump of the LogCreator: <Hutet-1 Travel Logger LogCreator_VrSlUE82rY9Q>
+#This log file was created on: 19:29:44.814 of 26/April/2023, Wednesday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>19:21:52.803 of 19/April/2023, Wednesday
+#######>>>19:29:44.814 of 26/April/2023, Wednesday
 #>>>Initialized Hutet-1 Travel logger
-#>>>SELF = <Hutet-1(82189) Travel_m2oT1aQ4r841>
+#>>>SELF = <Hutet-1(56793) Travel_0tl106PVxQU1>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -21,16 +21,3 @@ Updating Travelling Procedures...
 #>>>Chaser base class initialization complete.
 #>>>Target Ship = NONE
 #>>>Chaser pre-emptive Refresher Initialization
-## -------------------- ##
-####################
-#######>>>19:36:32.270 of 19/April/2023, Wednesday
-#>>>Updated Target Ship = Andromeda-5
-## -------------------- ##
-####################
-#######>>>19:36:43.339 of 19/April/2023, Wednesday
-#>>>Updated Target Ship = Player
-## -------------------- ##
-####################
-#######>>>19:37:56.337 of 19/April/2023, Wednesday
-#>>>Stopping Refresh Handler
-#>>>Deleting...
