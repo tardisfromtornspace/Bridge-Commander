@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Player Travel Logger[2] LogCreator_GH3VX4oeqF89>
-#This log file was created on: 22:11:51.854 of 26/April/2023, Wednesday
+#This is the dump of the LogCreator: <Player Travel Logger[2] LogCreator_OJP287WuNTK1>
+#This log file was created on: 21:36:4.583 of 28/April/2023, Friday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>22:11:51.854 of 26/April/2023, Wednesday
+#######>>>21:36:4.583 of 28/April/2023, Friday
 #>>>Initialized Player Travel logger
-#>>>SELF = <Player(54981) Travel_Z5M1ZJcUVl8G>
+#>>>SELF = <Player(52279) Travel_xOs6namUweN6>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Is Player - Checked
@@ -21,29 +21,7 @@ Updating Travelling Procedures...
 #>>>Chaser base class initialization complete.
 #>>>Target Ship = NONE
 #>>>Chaser pre-emptive Refresher Initialization
-## -------------------- ##
-####################
-#######>>>22:12:14.237 of 26/April/2023, Wednesday
-#>>>Travelling INTERCEPT procedures initiated...
-#>>>Updating Variables...
-#>>> -Is Player - Checked
-#>>> -Checked: Ship can warp, travel procedures started.
-#>>> -Stopped Intercept speed, incase the ship was intercepting.
-#>>> -Doing Player only stuff
-#>>> -Target is Betelgeuse 1 (58172)
-#>>>Playing travel intercept sequence...
-## -------------------- ##
-####################
-#######>>>22:12:18.520 of 26/April/2023, Wednesday
-#>>>Travel INTERCEPT sequence ended...
-#>>> -Doing Player only stuff
-#>>>Travelling Intercept procedures finished...
-## -------------------- ##
-####################
-#######>>>22:12:19.629 of 26/April/2023, Wednesday
-#>>>Stopping warp intercept
-#>>>Stopped Warp Intercept...
-## -------------------- ##
-####################
-#######>>>22:12:21.492 of 26/April/2023, Wednesday
-#>>>Finished  FinishStopIntercept
+########################################
+# 21:36:59.454 of 28/April/2023, Friday
+#Ending of log dump - User is quiting the game
+########################################

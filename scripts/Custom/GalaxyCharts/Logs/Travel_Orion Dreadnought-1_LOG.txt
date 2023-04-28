@@ -1,0 +1,32 @@
+#This is the dump of the LogCreator: <Orion Dreadnought-1 Travel Logger LogCreator_Ifr4PFA61Y7N>
+#This log file was created on: 21:26:5.091 of 27/April/2023, Thursday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>21:26:5.091 of 27/April/2023, Thursday
+#>>>Initialized Orion Dreadnought-1 Travel logger
+#>>>SELF = <Orion Dreadnought-1(57021) Travel_wjoj7pMM3w6Y>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>21:26:47.834 of 27/April/2023, Thursday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 21:29:55.732 of 27/April/2023, Thursday
+#Ending of log dump - User is quiting the game
+########################################

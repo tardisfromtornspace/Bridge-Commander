@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Hybrid-1 Travel Logger LogCreator_tJyIWG9g8c9u>
-#This log file was created on: 21:52:49.726 of 26/April/2023, Wednesday
+#This is the dump of the LogCreator: <Hybrid-1 Travel Logger LogCreator_B76g7dcOZqbb>
+#This log file was created on: 20:52:0.868 of 28/April/2023, Friday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>21:52:49.726 of 26/April/2023, Wednesday
+#######>>>20:52:0.868 of 28/April/2023, Friday
 #>>>Initialized Hybrid-1 Travel logger
-#>>>SELF = <Hybrid-1(52768) Travel_g73bU8PiAInH>
+#>>>SELF = <Hybrid-1(56256) Travel_6YcJE7816L2h>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -21,7 +21,3 @@ Updating Travelling Procedures...
 #>>>Chaser base class initialization complete.
 #>>>Target Ship = NONE
 #>>>Chaser pre-emptive Refresher Initialization
-########################################
-# 21:55:56.963 of 26/April/2023, Wednesday
-#Ending of log dump - User is quiting the game
-########################################

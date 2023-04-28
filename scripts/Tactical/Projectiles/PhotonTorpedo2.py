@@ -76,10 +76,3 @@ def GetGuidanceLifetime():
 
 def GetMaxAngularAccel():
 	return 3.7
-
-try:
-	modMicrozneutrinosingleStringBomb = __import__("Custom.Techs.MicrozneutrinosingleStringBomb")
-	if(modMicrozneutrinosingleStringBomb):
-		modMicrozneutrinosingleStringBomb.oMicrozneutrinosingleStringBombTorpe.AddTorpedo(__name__)
-except:
-	print "Micro Z-Neutrino Wave flattened into a single String Bomb script not installed, or you are missing Foundation Tech"

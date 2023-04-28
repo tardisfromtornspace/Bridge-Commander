@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <OriWarship 1 Travel Logger LogCreator_h85dLVsTT5m6>
-#This log file was created on: 17:8:33.870 of 23/April/2023, Sunday
+#This is the dump of the LogCreator: <OriWarship 1 Travel Logger LogCreator_9wNX3YtP3B3j>
+#This log file was created on: 20:58:39.998 of 27/April/2023, Thursday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>17:8:33.870 of 23/April/2023, Sunday
+#######>>>20:58:39.998 of 27/April/2023, Thursday
 #>>>Initialized OriWarship 1 Travel logger
-#>>>SELF = <OriWarship 1(300923) Travel_q1Tk1XBzESBF>
+#>>>SELF = <OriWarship 1(2199807) Travel_olZ8nT6GCyNo>
 #>>>Initial Travel Type: None
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -21,61 +21,26 @@ Updating Travelling Procedures...
 #>>>Chaser base class initialization complete.
 #>>>Target Ship = NONE
 #>>>Chaser pre-emptive Refresher Initialization
-## -------------------- ##
-####################
-#######>>>17:8:34.756 of 23/April/2023, Sunday
 #>>>Updated Target Ship = Player
 ## -------------------- ##
 ####################
-#######>>>17:8:46.285 of 23/April/2023, Sunday
-#>>>Updated Target Ship = California-5
+#######>>>20:58:51.880 of 27/April/2023, Thursday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>17:8:46.868 of 23/April/2023, Sunday
+#######>>>20:58:52.863 of 27/April/2023, Thursday
+#>>> -Cancelling, too close to target to warp intercept...
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>17:8:47.368 of 23/April/2023, Sunday
+#######>>>20:58:53.763 of 27/April/2023, Thursday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>17:8:47.619 of 23/April/2023, Sunday
+#######>>>20:58:54.513 of 27/April/2023, Thursday
 #>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>17:8:48.119 of 23/April/2023, Sunday
 #>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>17:8:48.619 of 23/April/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>17:8:48.869 of 23/April/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>17:8:49.368 of 23/April/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>17:8:49.868 of 23/April/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>17:8:50.118 of 23/April/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>17:9:1.436 of 23/April/2023, Sunday
-#>>>Updated Target Ship = California-8
-## -------------------- ##
-####################
-#######>>>17:9:15.003 of 23/April/2023, Sunday
-#>>>Updated Target Ship = Player
-## -------------------- ##
-####################
-#######>>>17:13:10.183 of 23/April/2023, Sunday
-#>>>Stopping Refresh Handler
-#>>>Deleting...

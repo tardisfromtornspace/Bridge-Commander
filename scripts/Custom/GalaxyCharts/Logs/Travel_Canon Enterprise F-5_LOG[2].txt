@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Canon Enterprise F-5 Travel Logger[2] LogCreator_jaRr9KzW4QRT>
-#This log file was created on: 3:2:33.673 of 23/April/2023, Sunday
+#This is the dump of the LogCreator: <Canon Enterprise F-5 Travel Logger[2] LogCreator_A1D7L0zTa7rn>
+#This log file was created on: 21:5:34.993 of 28/April/2023, Friday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,56 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>3:2:33.673 of 23/April/2023, Sunday
+#######>>>21:5:34.993 of 28/April/2023, Friday
 #>>>Initialized Canon Enterprise F-5 Travel logger
-#>>>SELF = <Canon Enterprise F-5(1474585) Travel_25CEQ5QnpWpP>
-#>>>Initial Travel Type: Warp
-#>>>Updating Variables...
-#>>> -Is AI in Player in route CHECKING: Player Travel OK
-#>>>Destination set as None
-#>>>Set Exit Placement Name as None
-#>>>Set Exit Point to None
-#>>>Chaser base class initialization complete.
-#>>>Target Ship = NONE
-#>>>Chaser pre-emptive Refresher Initialization
-#>>>Updated Target Ship = Cube-1
-## -------------------- ##
-####################
-#######>>>3:2:46.207 of 23/April/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>3:2:47.223 of 23/April/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>3:2:47.757 of 23/April/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>3:2:48.458 of 23/April/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>3:2:49.290 of 23/April/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>3:4:41.090 of 23/April/2023, Sunday
-#>>>Stopping Refresh Handler
-#>>>Deleting...
-< ======== Dynamic TS ========= >
-Updating Travelling Procedures...
- -Update Loop MARK START
-<DTSC> -Time left:
- -Update Loop MARK COMPLETED
-< ========== END DTS ========== >
-## -------------------- ##
-####################
-#######>>>3:4:41.539 of 23/April/2023, Sunday
-#>>>Initialized Canon Enterprise F-5 Travel logger
-#>>>SELF = <Canon Enterprise F-5(1474585) Travel_xW5qDnhLXayo>
+#>>>SELF = <Canon Enterprise F-5(61601) Travel_p6hQDC8Ip9Jr>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Ship is dead or dying
@@ -71,10 +24,6 @@ Updating Travelling Procedures...
 #>>>Travelling procedures initiated...
 #>>> -Ship is dead or dying
 ########################################
-# 3:11:37.266 of 23/April/2023, Sunday
-#Ending of log dump - User is quiting the game
-########################################
-########################################
-# 3:11:37.266 of 23/April/2023, Sunday
+# 21:5:49.794 of 28/April/2023, Friday
 #Ending of log dump - User is quiting the game
 ########################################

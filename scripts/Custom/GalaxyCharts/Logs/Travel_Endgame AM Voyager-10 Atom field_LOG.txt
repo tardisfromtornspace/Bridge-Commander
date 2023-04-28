@@ -1,0 +1,23 @@
+#This is the dump of the LogCreator: <Endgame AM Voyager-10 Atom field Travel Logger LogCreator_fj10TS3CEkaQ>
+#This log file was created on: 20:56:42.299 of 27/April/2023, Thursday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>20:56:42.299 of 27/April/2023, Thursday
+#>>>Initialized Endgame AM Voyager-10 Atom field Travel logger
+#>>>SELF = <Endgame AM Voyager-10 Atom field(2103874) Travel_r6In9a3C0FPk>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization

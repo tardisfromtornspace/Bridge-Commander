@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Ambassador-1 Travel Logger LogCreator_Yunp4Nc638D3>
-#This log file was created on: 21:35:56.356 of 26/April/2023, Wednesday
+#This is the dump of the LogCreator: <Ambassador-1 Travel Logger LogCreator_8siM407JF64E>
+#This log file was created on: 20:48:3.517 of 28/April/2023, Friday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>21:35:56.356 of 26/April/2023, Wednesday
+#######>>>20:48:3.517 of 28/April/2023, Friday
 #>>>Initialized Ambassador-1 Travel logger
-#>>>SELF = <Ambassador-1(970584) Travel_04o8n0kU292S>
+#>>>SELF = <Ambassador-1(866085) Travel_gJ097C0xHyI3>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -21,3 +21,8 @@ Updating Travelling Procedures...
 #>>>Chaser base class initialization complete.
 #>>>Target Ship = NONE
 #>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>20:48:33.383 of 28/April/2023, Friday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

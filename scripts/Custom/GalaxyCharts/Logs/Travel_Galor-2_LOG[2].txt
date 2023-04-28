@@ -1,0 +1,21 @@
+#This is the dump of the LogCreator: <Galor-2 Travel Logger[2] LogCreator_GJ0f5b04M00e>
+#This log file was created on: 20:56:42.299 of 27/April/2023, Thursday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>20:56:42.299 of 27/April/2023, Thursday
+#>>>Initialized Galor-2 Travel logger
+#>>>SELF = <Galor-2(2073890) Travel_34zC5mj25162>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Ship is dead or dying
+#>>>Ship is dead or dying (at SetDestination)
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>> -Cancelling, too close to target to warp intercept...

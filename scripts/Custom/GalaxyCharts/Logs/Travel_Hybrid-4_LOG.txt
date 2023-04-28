@@ -1,0 +1,23 @@
+#This is the dump of the LogCreator: <Hybrid-4 Travel Logger LogCreator_pIVy5q16RGe6>
+#This log file was created on: 20:52:0.868 of 28/April/2023, Friday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>20:52:0.868 of 28/April/2023, Friday
+#>>>Initialized Hybrid-4 Travel logger
+#>>>SELF = <Hybrid-4(57388) Travel_YUdAYbid2dTu>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization

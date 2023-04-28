@@ -1,0 +1,28 @@
+#This is the dump of the LogCreator: <Ambassador-9 Atom field Travel Logger LogCreator_wEauza6LEH6n>
+#This log file was created on: 21:0:40.328 of 28/April/2023, Friday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>21:0:40.328 of 28/April/2023, Friday
+#>>>Initialized Ambassador-9 Atom field Travel logger
+#>>>SELF = <Ambassador-9 Atom field(154593) Travel_1yGfh11tCA4s>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>21:0:40.612 of 28/April/2023, Friday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

@@ -1,0 +1,28 @@
+#This is the dump of the LogCreator: <Species 8472 Bioship-1 Travel Logger LogCreator_OIgDAc8XXQ3H>
+#This log file was created on: 21:17:50.148 of 27/April/2023, Thursday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>21:17:50.148 of 27/April/2023, Thursday
+#>>>Initialized Species 8472 Bioship-1 Travel logger
+#>>>SELF = <Species 8472 Bioship-1(57979) Travel_Br82q1gEhRwY>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>21:18:27.496 of 27/April/2023, Thursday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

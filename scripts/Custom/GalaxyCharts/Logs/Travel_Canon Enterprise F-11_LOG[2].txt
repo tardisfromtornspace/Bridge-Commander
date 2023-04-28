@@ -1,0 +1,29 @@
+#This is the dump of the LogCreator: <Canon Enterprise F-11 Travel Logger[2] LogCreator_94O18a4Dt17w>
+#This log file was created on: 21:5:40.030 of 28/April/2023, Friday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>21:5:40.030 of 28/April/2023, Friday
+#>>>Initialized Canon Enterprise F-11 Travel logger
+#>>>SELF = <Canon Enterprise F-11(66065) Travel_t4qbJYZIINn7>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Ship is dead or dying
+#>>>Ship is dead or dying (at SetDestination)
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Ship is dead or dying (at SetDestination)
+#>>>Set Exit Placement Name as None
+#>>>Enable Towing: 0
+#>>>Travelling procedures initiated...
+#>>> -Ship is dead or dying
+########################################
+# 21:5:49.794 of 28/April/2023, Friday
+#Ending of log dump - User is quiting the game
+########################################

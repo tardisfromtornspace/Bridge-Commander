@@ -1,0 +1,23 @@
+#This is the dump of the LogCreator: <Breen BB-1 Atom field Travel Logger LogCreator_98aG0230J0Du>
+#This log file was created on: 20:46:45.935 of 28/April/2023, Friday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>20:46:45.935 of 28/April/2023, Friday
+#>>>Initialized Breen BB-1 Atom field Travel logger
+#>>>SELF = <Breen BB-1 Atom field(670314) Travel_g488QqGWlei6>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization

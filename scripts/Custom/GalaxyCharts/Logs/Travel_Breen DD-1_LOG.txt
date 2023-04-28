@@ -1,0 +1,23 @@
+#This is the dump of the LogCreator: <Breen DD-1 Travel Logger LogCreator_if9t2njLpukU>
+#This log file was created on: 18:0:22.898 of 27/April/2023, Thursday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>18:0:22.898 of 27/April/2023, Thursday
+#>>>Initialized Breen DD-1 Travel logger
+#>>>SELF = <Breen DD-1(59910) Travel_0bAqU0BySc5t>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization

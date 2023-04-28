@@ -1,0 +1,32 @@
+#This is the dump of the LogCreator: <Attack Ship-1 Atom field Atom field Atom field Atom field Atom field Atom field Atom field Atom field Atom field Atom field Atom field Travel Logger LogCreator_yQXpTcc5pyQv>
+#This log file was created on: 21:36:43.746 of 28/April/2023, Friday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>21:36:43.746 of 28/April/2023, Friday
+#>>>Initialized Attack Ship-1 Atom field Atom field Atom field Atom field Atom field Atom field Atom field Atom field Atom field Atom field Atom field Travel logger
+#>>>SELF = <Attack Ship-1 Atom field Atom field Atom field Atom field Atom field Atom field Atom field Atom field Atom field Atom field Atom field(119061) Travel_0ZqCkOCJQ1ed>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>21:36:44.340 of 28/April/2023, Friday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 21:36:59.454 of 28/April/2023, Friday
+#Ending of log dump - User is quiting the game
+########################################

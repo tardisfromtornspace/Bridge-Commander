@@ -1,0 +1,23 @@
+#This is the dump of the LogCreator: <Warbird-3 Travel Logger LogCreator_6avOolHl4W7B>
+#This log file was created on: 20:59:50.927 of 28/April/2023, Friday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>20:59:50.927 of 28/April/2023, Friday
+#>>>Initialized Warbird-3 Travel logger
+#>>>SELF = <Warbird-3(85522) Travel_Zt1uiX7HBT5Q>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization

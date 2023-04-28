@@ -1,0 +1,32 @@
+#This is the dump of the LogCreator: <Kazon Raider-1 Atom field Travel Logger LogCreator_S2eNwN42E247>
+#This log file was created on: 21:14:5.582 of 27/April/2023, Thursday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>21:14:5.582 of 27/April/2023, Thursday
+#>>>Initialized Kazon Raider-1 Atom field Travel logger
+#>>>SELF = <Kazon Raider-1 Atom field(82388) Travel_2ZBz14I4JOo2>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>21:14:5.965 of 27/April/2023, Thursday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 21:15:25.197 of 27/April/2023, Thursday
+#Ending of log dump - User is quiting the game
+########################################
