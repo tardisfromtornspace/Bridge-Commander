@@ -7,6 +7,6 @@ We've left our milkshape file at data/Models/Ships/31stOberth so you can improve
 
 == Credits and Special Thanks ==
 * Current model: heavily modified NSEA Protector by Alex SL Gato.
-** Original NSEA Protector mod - unfortuantely couldn't be found.
+** Original NSEA Protector mod by Banbury.
 * Techs used for this mod: mostly either Alex SL Gato or Hexagonal Nexul's.
 * Projectiles, Custom and Hardpoint: Alex SL Gato and Hexagonal_Nexul.

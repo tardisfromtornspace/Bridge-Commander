@@ -9152,3 +9152,19 @@ Call stack:
 Address   Frame
 0041214A  0019FB10  0001:0001114A C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
 
+//=====================================================
+Current Time: Tue May 09 23:48:40 2023
+Exception code: C00000FD STACK_OVERFLOW
+Fault address:  7735828B 01:0007728B C:\Windows\SYSTEM32\ntdll.dll
+
+Registers:
+EAX:00000010
+EBX:00000009
+ECX:00000002
+EDX:00000001
+ESI:00000002
+EDI:001B0000
+CS:EIP:0023:7735828B
+SS:ESP:002B:000A2FF8  EBP:000A3004
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010212
