@@ -36,3 +36,6 @@ def LoadModel(bPreLoad = 0):
 
 def PreLoadModel():
 	LoadModel(1)
+
+def ImImmuneToZNeutrinos(): # Immunity against Reality Bombs
+      return 1

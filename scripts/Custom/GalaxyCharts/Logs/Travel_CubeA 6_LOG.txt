@@ -1,0 +1,66 @@
+#This is the dump of the LogCreator: <CubeA 6 Travel Logger LogCreator_6J48YMbI6tj8>
+#This log file was created on: 21:57:19.773 of 2/May/2023, Tuesday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>21:57:19.773 of 2/May/2023, Tuesday
+#>>>Initialized CubeA 6 Travel logger
+#>>>SELF = <CubeA 6(1091716) Travel_H68634ED2KZg>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>21:57:25.644 of 2/May/2023, Tuesday
+#>>>Updated Target Ship = Player
+#>>>Can Chase Target = 0
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:57:26.195 of 2/May/2023, Tuesday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:57:26.309 of 2/May/2023, Tuesday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:57:26.741 of 2/May/2023, Tuesday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:57:27.273 of 2/May/2023, Tuesday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:57:27.981 of 2/May/2023, Tuesday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:57:28.473 of 2/May/2023, Tuesday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:57:29.045 of 2/May/2023, Tuesday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:57:29.779 of 2/May/2023, Tuesday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>21:57:30.633 of 2/May/2023, Tuesday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

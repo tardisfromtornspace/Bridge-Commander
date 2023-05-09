@@ -159,55 +159,109 @@ try:
 				#NOTE: Using App.CT_OBJECT may not be a good idea, that will kill characters as well
 				for aObject in pSet.GetClassObjectList(App.CT_PLANET):
 					try:
-						DestroyEverything(aObject)
+						kTemp = App.TGPoint3()
+						kTemp = aObject.GetWorldLocation()
+						kTemp.Subtract(pHitPoint)
+						fKey = kTemp.Length()
+
+						if fKey <= 1000000.0:
+							DestroyEverything(aObject)
 					except:
 						print "a PLANET survived"
 
 				for aObject in pSet.GetClassObjectList(App.CT_SUN):
 					try:
-						DestroyEverything(aObject)
+						kTemp = App.TGPoint3()
+						kTemp = aObject.GetWorldLocation()
+						kTemp.Subtract(pHitPoint)
+						fKey = kTemp.Length()
+
+						if fKey <= 1000000.0:
+							DestroyEverything(aObject)
 					except:
 						print "a SUN survived"
 
 				for aObject in pSet.GetClassObjectList(App.CT_BACKDROP):
 					try:
-						DestroyEverything(aObject)
+						kTemp = App.TGPoint3()
+						kTemp = aObject.GetWorldLocation()
+						kTemp.Subtract(pHitPoint)
+						fKey = kTemp.Length()
+
+						if fKey <= 1000000.0:
+							DestroyEverything(aObject)
 					except:
 						print "a BACKDROP survived"
 
 				for aObject in pSet.GetClassObjectList(App.CT_BACKDROP_SPHERE):
 					try:
-						DestroyEverything(aObject)
+						kTemp = App.TGPoint3()
+						kTemp = aObject.GetWorldLocation()
+						kTemp.Subtract(pHitPoint)
+						fKey = kTemp.Length()
+
+						if fKey <= 1000000.0:
+							DestroyEverything(aObject)
 					except:
 						print "a BACK. SPHERE survived"
 
 				for aObject in pSet.GetClassObjectList(App.CT_STAR_SPHERE):
 					try:
-						DestroyEverything(aObject)
+						kTemp = App.TGPoint3()
+						kTemp = aObject.GetWorldLocation()
+						kTemp.Subtract(pHitPoint)
+						fKey = kTemp.Length()
+
+						if fKey <= 1000000.0:
+							DestroyEverything(aObject)
 					except:
 						print "a CT_STAR_SPHERE survived"
 
 				for aObject in pSet.GetClassObjectList(App.CT_NEBULA):
 					try:
-						DestroyEverything(aObject)
+						kTemp = App.TGPoint3()
+						kTemp = aObject.GetWorldLocation()
+						kTemp.Subtract(pHitPoint)
+						fKey = kTemp.Length()
+
+						if fKey <= 1000000.0:
+							DestroyEverything(aObject)
 					except:
 						print "a CT_NEBULA survived"
 
 				for aObject in pSet.GetClassObjectList(App.CT_META_NEBULA):
 					try:
-						DestroyEverything(aObject)
+						kTemp = App.TGPoint3()
+						kTemp = aObject.GetWorldLocation()
+						kTemp.Subtract(pHitPoint)
+						fKey = kTemp.Length()
+
+						if fKey <= 1000000.0:
+							DestroyEverything(aObject)
 					except:
 						print "a CT_META_NEBULA survived"
 
 				for aObject in pSet.GetClassObjectList(App.CT_ASTEROID_FIELD):
 					try:
-						DestroyEverything(aObject)
+						kTemp = App.TGPoint3()
+						kTemp = aObject.GetWorldLocation()
+						kTemp.Subtract(pHitPoint)
+						fKey = kTemp.Length()
+
+						if fKey <= 1000000.0:
+							DestroyEverything(aObject)
 					except:
 						print "a CT_ASTEROID_FIELD survived"
 
 				for aObject in pSet.GetClassObjectList(App.CT_ASTEROID_TILE):
 					try:
-						DestroyEverything(aObject)
+						kTemp = App.TGPoint3()
+						kTemp = aObject.GetWorldLocation()
+						kTemp.Subtract(pHitPoint)
+						fKey = kTemp.Length()
+
+						if fKey <= 1000000.0:
+							DestroyEverything(aObject)
 					except:
 						print "a CT_ASTEROID_TILE survived"
 

@@ -1,0 +1,33 @@
+#This is the dump of the LogCreator: <CubeH 8 Travel Logger LogCreator_b5836F1CDE37>
+#This log file was created on: 21:58:20.298 of 2/May/2023, Tuesday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>21:58:20.298 of 2/May/2023, Tuesday
+#>>>Initialized CubeH 8 Travel logger
+#>>>SELF = <CubeH 8(1249285) Travel_pl0I07Nf59M9>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>21:58:30.385 of 2/May/2023, Tuesday
+#>>>Arrived Events:  added event <C TGEvent instance at _3654a850_p_TGEvent>
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>21:59:25.380 of 2/May/2023, Tuesday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

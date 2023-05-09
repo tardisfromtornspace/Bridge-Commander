@@ -1,0 +1,33 @@
+#This is the dump of the LogCreator: <BorgShuttle - 2 Travel Logger LogCreator_J9HKuCyGRJQD>
+#This log file was created on: 21:37:34.142 of 2/May/2023, Tuesday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>21:37:34.142 of 2/May/2023, Tuesday
+#>>>Initialized BorgShuttle - 2 Travel logger
+#>>>SELF = <BorgShuttle - 2(829443) Travel_J08QBsjom50u>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>21:37:50.175 of 2/May/2023, Tuesday
+#>>>Arrived Events:  added event <C TGEvent instance at _52231d10_p_TGEvent>
+#>>>Updated Target Ship = MvamFusionCube 3
+## -------------------- ##
+####################
+#######>>>21:38:33.758 of 2/May/2023, Tuesday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

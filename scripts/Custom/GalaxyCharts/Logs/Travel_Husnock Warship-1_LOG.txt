@@ -1,0 +1,37 @@
+#This is the dump of the LogCreator: <Husnock Warship-1 Travel Logger LogCreator_X8ph80aAS086>
+#This log file was created on: 23:37:16.044 of 9/May/2023, Tuesday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>23:37:16.044 of 9/May/2023, Tuesday
+#>>>Initialized Husnock Warship-1 Travel logger
+#>>>SELF = <Husnock Warship-1(67328) Travel_BVu9qlgtcOC7>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>23:37:26.895 of 9/May/2023, Tuesday
+#>>>Arrived Events:  added event <C TGEvent instance at _13c67358_p_TGEvent>
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>23:38:13.194 of 9/May/2023, Tuesday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 23:38:34.660 of 9/May/2023, Tuesday
+#Ending of log dump - User is quiting the game
+########################################
