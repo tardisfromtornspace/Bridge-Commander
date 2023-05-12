@@ -7,7 +7,7 @@ We've left our milkshape file at data/Models/Ships/31stOberth so you can improve
 
 == Required mods ==
 * Kobayashi Maru Mod (the newest, the better. I personally used KM 2011).
-* Foudnation Technologies (already installed on Kobayashi Maru).
+* Foundation Technologies (already installed on Kobayashi Maru).
 
 == Installation guide ==
 1º Ok, first of all, just in case, backup your STBC.
@@ -24,4 +24,4 @@ We've left our milkshape file at data/Models/Ships/31stOberth so you can improve
 ** Original NSEA Protector mod by Banbury.
 * Techs used for this mod: mostly either Alex SL Gato or Hexagonal Nexul's.
 * Projectiles, Custom and Hardpoint: Alex SL Gato and Hexagonal_Nexul.
-* Music: originally taken from recordings of Galaxy Wuest Medley and some other series meshed together.
+* Music: originally taken from recordings of Galaxy Quest Medley and some other series meshed together in Audacity with leimotifs.
