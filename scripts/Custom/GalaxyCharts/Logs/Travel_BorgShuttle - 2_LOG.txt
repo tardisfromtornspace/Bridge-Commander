@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <BorgShuttle - 2 Travel Logger LogCreator_J9HKuCyGRJQD>
-#This log file was created on: 21:37:34.142 of 2/May/2023, Tuesday
+#This is the dump of the LogCreator: <BorgShuttle - 2 Travel Logger LogCreator_p94Dv8EO13KF>
+#This log file was created on: 0:28:1.722 of 10/May/2023, Wednesday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,12 +9,13 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>21:37:34.142 of 2/May/2023, Tuesday
+#######>>>0:28:1.722 of 10/May/2023, Wednesday
 #>>>Initialized BorgShuttle - 2 Travel logger
-#>>>SELF = <BorgShuttle - 2(829443) Travel_J08QBsjom50u>
+#>>>SELF = <BorgShuttle - 2(1171012) Travel_3K20rRcQq7nQ>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: Player Travel Destination OK
 #>>>Destination set as None
 #>>>Set Exit Placement Name as None
 #>>>Set Exit Point to None
@@ -23,11 +24,15 @@ Updating Travelling Procedures...
 #>>>Chaser pre-emptive Refresher Initialization
 ## -------------------- ##
 ####################
-#######>>>21:37:50.175 of 2/May/2023, Tuesday
-#>>>Arrived Events:  added event <C TGEvent instance at _52231d10_p_TGEvent>
-#>>>Updated Target Ship = MvamFusionCube 3
+#######>>>0:28:16.812 of 10/May/2023, Wednesday
+#>>>Arrived Events:  added event <C TGEvent instance at _3ee348a0_p_TGEvent>
+#>>>Updated Target Ship = MvamFusionCube 4
 ## -------------------- ##
 ####################
-#######>>>21:38:33.758 of 2/May/2023, Tuesday
+#######>>>0:28:29.824 of 10/May/2023, Wednesday
 #>>>Stopping Refresh Handler
 #>>>Deleting...
+########################################
+# 0:38:42.363 of 10/May/2023, Wednesday
+#Ending of log dump - User is quiting the game
+########################################

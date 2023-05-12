@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Neghvar-3 Travel Logger[2] LogCreator_9q8X7aO8jFZJ>
-#This log file was created on: 22:40:37.963 of 28/April/2023, Friday
+#This is the dump of the LogCreator: <Neghvar-3 Travel Logger[2] LogCreator_rl80S3RUH94b>
+#This log file was created on: 19:20:45.339 of 12/May/2023, Friday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>22:40:37.963 of 28/April/2023, Friday
+#######>>>19:20:45.339 of 12/May/2023, Friday
 #>>>Initialized Neghvar-3 Travel logger
-#>>>SELF = <Neghvar-3(82697) Travel_ucTm008MEl46>
+#>>>SELF = <Neghvar-3(1397798) Travel_68WBfy5Im323>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Ship is dead or dying
@@ -21,12 +21,5 @@ Updating Travelling Procedures...
 #>>>Ship is dead or dying (at SetDestination)
 #>>>Set Exit Placement Name as None
 #>>>Enable Towing: 0
-#>>>Travelling procedures initiated...
-#>>> -Ship is dead or dying
-## -------------------- ##
-####################
-#######>>>22:40:42.947 of 28/April/2023, Friday
-#>>>Ship is dead or dying (at SetDestination)
-#>>>Set Exit Placement Name as None
 #>>>Travelling procedures initiated...
 #>>> -Ship is dead or dying

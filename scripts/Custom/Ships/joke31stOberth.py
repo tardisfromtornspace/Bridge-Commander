@@ -7,12 +7,14 @@ from bcdebug import debug
 #                                                                                     #
 import Foundation
 import App
+
+from Custom.Autoload.RaceMixedGalaxyQuest import *
 #                                                                                     #
 #######################################################################################
 #                                                                                     #
 abbrev = 'joke31stOberth'
 iconName = 'joke31stOberth'
-longName = 'Oberth V'
+longName = 'USS Imahara'
 shipFile = 'joke31stOberth' 
 menuGroup = 'Fed Ships'
 playerMenuGroup = 'Fed Ships'
@@ -36,7 +38,7 @@ credits = {
 # This is the ShipDef that adds the Ship to the game... BC-Mod Packager has           #
 # automatically generated the proper ShipDef Line for you.                            #
 #                                                                                     #
-Foundation.ShipDef.joke31stOberth = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile })
+Foundation.ShipDef.joke31stOberth = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "race": MixedGalaxyQuest })
 Foundation.ShipDef.joke31stOberth.sBridge = 'novabridge'
 Foundation.ShipDef.joke31stOberth.dTechs = {
 #	"AutoTargeting": {"Phaser": [2, 1], "Torpedo": [2, 1]},
@@ -65,7 +67,7 @@ Foundation.ShipDef.joke31stOberth.DeCloakingSFX = "FutureBattleDecloak"
 #Foundation.ShipDef.joke31stOberth.hasTGLDesc = 1
 
 # Otherwise, uncomment this and type something in:
-Foundation.ShipDef.joke31stOberth.desc = "The Oberth V class was an alternate timeline, small Federation starship used primarily by Starfleet and civilian scientists alike, as a scout class and science vessel, from the late 30th to the late 32nd century; and produced on Nivar."
+Foundation.ShipDef.joke31stOberth.desc = "The Imahara class is an alternate timeline, small Federation starship class heavily inspired by the Oberth class, used primarily by Starfleet and civilian scientists alike, as a scout and science vessel, from the late 30th to the late 32nd century; and produced on Nivar."
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

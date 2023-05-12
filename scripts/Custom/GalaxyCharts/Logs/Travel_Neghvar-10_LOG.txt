@@ -1,0 +1,85 @@
+#This is the dump of the LogCreator: <Neghvar-10 Travel Logger LogCreator_dKTj1nB3E3bT>
+#This log file was created on: 19:20:29.197 of 12/May/2023, Friday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>19:20:29.197 of 12/May/2023, Friday
+#>>>Initialized Neghvar-10 Travel logger
+#>>>SELF = <Neghvar-10(1401963) Travel_orr9lbID5ZEu>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>19:20:32.403 of 12/May/2023, Friday
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>19:20:38.331 of 12/May/2023, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>19:20:39.384 of 12/May/2023, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>19:20:40.071 of 12/May/2023, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>19:20:41.049 of 12/May/2023, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>19:20:42.089 of 12/May/2023, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>19:20:43.065 of 12/May/2023, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>19:20:43.564 of 12/May/2023, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>19:20:44.540 of 12/May/2023, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>19:20:45.339 of 12/May/2023, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>19:20:45.548 of 12/May/2023, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>19:20:46.518 of 12/May/2023, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>19:20:47.174 of 12/May/2023, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>19:23:39.265 of 12/May/2023, Friday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

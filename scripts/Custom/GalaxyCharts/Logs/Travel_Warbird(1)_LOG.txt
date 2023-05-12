@@ -1,0 +1,25 @@
+#This is the dump of the LogCreator: <Warbird(1) Travel Logger LogCreator_213862Iw18sd>
+#This log file was created on: 0:43:15.105 of 10/May/2023, Wednesday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>0:43:15.105 of 10/May/2023, Wednesday
+#>>>Initialized Warbird(1) Travel logger
+#>>>SELF = <Warbird(1)(7681) Travel_9o50OLpa8367>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Initialized AI Travel Set
+#>>> -Initialized Travel Set
+#>>> -Initialized Space Set
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = player
+#>>>Chaser pre-emptive Refresher Initialization

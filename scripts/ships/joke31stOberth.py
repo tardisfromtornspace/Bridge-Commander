@@ -23,7 +23,7 @@ def LoadModel(bPreLoad = 0):
 		pLODModel = App.g_kLODModelManager.Create(pStats["Name"])
 		pLODModel.AddLOD(pStats["FilenameHigh"], 10, 200.0, 15.0, 15.0, 24000, 150000, "_glow", None, None)
 		pLODModel.AddLOD(pStats["FilenameMed"],  10, 400.0, 15.0, 15.0, 24000, 150000, "_glow", None, None)
-		pLODModel.AddLOD(pStats["FilenameLow"],  10, 800.0, 15.0, 30.0, 24000, 150000, "_glow", None, None)
+		pLODModel.AddLOD(pStats["FilenameLow"],  10, 800.0, 15.0, 15.0, 24000, 150000, "_glow", None, None)
 
 #		kDebugObj = App.CPyDebug()
 		if (bPreLoad == 0):
