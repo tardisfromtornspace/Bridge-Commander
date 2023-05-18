@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <CubeD 7 Travel Logger LogCreator_b6CuwW1CH6Bf>
-#This log file was created on: 21:58:0.007 of 2/May/2023, Tuesday
+#This is the dump of the LogCreator: <CubeD 7 Travel Logger LogCreator_qPnQFodg32kx>
+#This log file was created on: 3:49:8.141 of 13/May/2023, Saturday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>21:58:0.007 of 2/May/2023, Tuesday
+#######>>>3:49:8.141 of 13/May/2023, Saturday
 #>>>Initialized CubeD 7 Travel logger
-#>>>SELF = <CubeD 7(1173832) Travel_smD28rooVPm7>
+#>>>SELF = <CubeD 7(340277) Travel_Ey3Ousq6iHvf>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -23,6 +23,6 @@ Updating Travelling Procedures...
 #>>>Chaser pre-emptive Refresher Initialization
 ## -------------------- ##
 ####################
-#######>>>21:58:4.136 of 2/May/2023, Tuesday
+#######>>>3:49:22.342 of 13/May/2023, Saturday
 #>>>Stopping Refresh Handler
 #>>>Deleting...

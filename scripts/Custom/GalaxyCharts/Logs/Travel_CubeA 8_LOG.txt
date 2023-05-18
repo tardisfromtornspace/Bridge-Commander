@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <CubeA 8 Travel Logger LogCreator_x7Zu52k5qA6e>
-#This log file was created on: 21:58:20.298 of 2/May/2023, Tuesday
+#This is the dump of the LogCreator: <CubeA 8 Travel Logger LogCreator_25Wb5FDuNuC9>
+#This log file was created on: 3:49:8.141 of 13/May/2023, Saturday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>21:58:20.298 of 2/May/2023, Tuesday
+#######>>>3:49:8.141 of 13/May/2023, Saturday
 #>>>Initialized CubeA 8 Travel logger
-#>>>SELF = <CubeA 8(1246181) Travel_hxLXV4ij5ifZ>
+#>>>SELF = <CubeA 8(343233) Travel_Lr68qhrYYaP0>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -21,8 +21,3 @@ Updating Travelling Procedures...
 #>>>Chaser base class initialization complete.
 #>>>Target Ship = NONE
 #>>>Chaser pre-emptive Refresher Initialization
-## -------------------- ##
-####################
-#######>>>21:58:25.980 of 2/May/2023, Tuesday
-#>>>Stopping Refresh Handler
-#>>>Deleting...

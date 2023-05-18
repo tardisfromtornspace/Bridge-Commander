@@ -1,13 +1,13 @@
-#This is the dump of the LogCreator: <Gravity Manager LogCreator_PP791Ft7r05m>
-#This log file was created on: 18:56:21.0 of 12/May/2023, Friday
+#This is the dump of the LogCreator: <Gravity Manager LogCreator_v9RpodKUlXR2>
+#This log file was created on: 17:45:21.0 of 18/May/2023, Thursday
 ########################################
 ## -------------------- ##
 ####################
-#######>>>18:56:21.0 of 12/May/2023, Friday
-#>>>Initialized GravityManager_aqr3450eGGce logger
+#######>>>17:45:21.0 of 18/May/2023, Thursday
+#>>>Initialized GravityManager_h4kXpRh41qx1 logger
 ## -------------------- ##
 ####################
-#######>>>18:56:29.336 of 12/May/2023, Friday
+#######>>>17:45:49.288 of 18/May/2023, Thursday
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
@@ -17,167 +17,42 @@
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_CmYz1R8bQ2YE>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_Q0YPgaR81b33>]
 #>>>Planets/Suns List: ['Belaruz 4']
 #>>>Refreshed Ship List: ['Player']
-#>>>Updated radius for grav well <Belaruz 4 GravityWell_CmYz1R8bQ2YE>, radius is now 1605.27294922
+#>>>Updated radius for grav well <Belaruz 4 GravityWell_Q0YPgaR81b33>, radius is now 1615.78027344
 ## -------------------- ##
 ####################
-#######>>>18:57:3.035 of 12/May/2023, Friday
+#######>>>17:49:12.768 of 18/May/2023, Thursday
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_v479SKDVH3TC>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_4F92o619TsB5>]
 #>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player', 'USS Imahara-1']
-#>>>Refreshed Ship List: ['Player', 'USS Imahara-1']
+#>>>Refreshed Ship List: ['Player', 'Endgame Armored Voyager-1']
+#>>>Refreshed Ship List: ['Player', 'Endgame Armored Voyager-1']
 ## -------------------- ##
 ####################
-#######>>>18:58:30.632 of 12/May/2023, Friday
+#######>>>17:52:2.684 of 18/May/2023, Thursday
+#>>>Refreshed Ship List: ['Player', 'Endgame Armored Voyager-1']
+#>>>Refreshed Ship List: ['Player', 'Endgame Armored Voyager-1']
+#>>>Refreshed Ship List: ['Player', 'Endgame Armored Voyager-1']
+#>>>Refreshed Ship List: ['Player', 'Endgame Armored Voyager-1']
+#>>>Refreshed Ship List: ['Player', 'Endgame Armored Voyager-1']
+## -------------------- ##
+####################
+#######>>>17:55:5.098 of 18/May/2023, Thursday
+#>>>Refreshed Ship List: ['Player', 'Endgame Armored Voyager-1']
+## -------------------- ##
+####################
+#######>>>17:55:5.947 of 18/May/2023, Thursday
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_Ii9bWOG8uB3C>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_j1QF3z7n4hNg>]
 #>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['USS Imahara-1', 'Player']
+#>>>Refreshed Ship List: ['Endgame Armored Voyager-1', 'Player']
 ## -------------------- ##
 ####################
-#######>>>18:59:7.531 of 12/May/2023, Friday
+#######>>>17:55:26.264 of 18/May/2023, Thursday
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_FsbsMwA1zlBS>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player']
-## -------------------- ##
-####################
-#######>>>18:59:9.615 of 12/May/2023, Friday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_SEr58r622b1s>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player', 'USS Imahara-1']
-#>>>Refreshed Ship List: ['Player', 'USS Imahara-1']
-## -------------------- ##
-####################
-#######>>>19:0:25.981 of 12/May/2023, Friday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_slhLrmy91pK1>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['USS Imahara-1', 'Player']
-## -------------------- ##
-####################
-#######>>>19:0:38.446 of 12/May/2023, Friday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_7URsek79c26h>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player', 'USS Imahara-1']
-#>>>Refreshed Ship List: ['Player', 'USS Imahara-1']
-## -------------------- ##
-####################
-#######>>>19:5:49.909 of 12/May/2023, Friday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_3YDSy9S6MuE8>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player']
-## -------------------- ##
-####################
-#######>>>19:5:51.330 of 12/May/2023, Friday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_er4ElvteUo5G>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player']
-## -------------------- ##
-####################
-#######>>>19:5:52.943 of 12/May/2023, Friday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_f96iM9n7oi9W>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player', 'USS Imahara-1']
-#>>>Refreshed Ship List: ['Player', 'USS Imahara-1']
-## -------------------- ##
-####################
-#######>>>19:8:34.840 of 12/May/2023, Friday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_AoZC46kL414e>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player']
-## -------------------- ##
-####################
-#######>>>19:8:45.673 of 12/May/2023, Friday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_PW1wP4KQ89S2>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player', 'USS Imahara-1']
-#>>>Refreshed Ship List: ['Player', 'USS Imahara-1']
-## -------------------- ##
-####################
-#######>>>19:10:33.639 of 12/May/2023, Friday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_6Ydbhq1pLzet>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player']
-## -------------------- ##
-####################
-#######>>>19:10:34.689 of 12/May/2023, Friday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_Wf06y8nF7Rl5>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player']
-## -------------------- ##
-####################
-#######>>>19:10:36.489 of 12/May/2023, Friday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_5T4Yc07OTCaY>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player', 'USS Imahara-1']
-#>>>Refreshed Ship List: ['Player', 'USS Imahara-1']
-## -------------------- ##
-####################
-#######>>>19:12:28.287 of 12/May/2023, Friday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_y9pPTr8d9P3r>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player']
-## -------------------- ##
-####################
-#######>>>19:12:30.220 of 12/May/2023, Friday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_7p4u60zzWQbW>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player']
-## -------------------- ##
-####################
-#######>>>19:12:32.487 of 12/May/2023, Friday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_429ex3Alx0W4>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player', 'USS Imahara-1']
-#>>>Refreshed Ship List: ['Player', 'USS Imahara-1']
-## -------------------- ##
-####################
-#######>>>19:16:6.539 of 12/May/2023, Friday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_908uIeqQo14f>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player']
-## -------------------- ##
-####################
-#######>>>19:16:55.750 of 12/May/2023, Friday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_F3AvJ0ha2859>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player']
-#>>>Refreshed Ship List: ['Player']
-## -------------------- ##
-####################
-#######>>>19:20:9.948 of 12/May/2023, Friday
-#>>>Refreshed Ship List: ['Player']
-## -------------------- ##
-####################
-#######>>>19:20:13.801 of 12/May/2023, Friday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_IOSre26m54wo>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player']
-## -------------------- ##
-####################
-#######>>>19:20:29.197 of 12/May/2023, Friday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_ew7L9W3D7JDe>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_Dkr7sdaDa9dk>]
 #>>>Planets/Suns List: ['Belaruz 4']
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
@@ -189,107 +64,222 @@
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>17:55:51.848 of 18/May/2023, Thursday
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
 ## -------------------- ##
 ####################
-#######>>>19:20:53.033 of 12/May/2023, Friday
+#######>>>17:56:30.147 of 18/May/2023, Thursday
 #>>>Refreshed Ship List: ['Player']
 ## -------------------- ##
 ####################
-#######>>>19:21:16.516 of 12/May/2023, Friday
+#######>>>17:56:31.580 of 18/May/2023, Thursday
 #>>>Refreshed Ship List: ['Player']
 ## -------------------- ##
 ####################
-#######>>>19:21:38.980 of 12/May/2023, Friday
-#>>>Refreshed Ship List: ['Player']
-#>>>Refreshed Ship List: ['Player']
-## -------------------- ##
-####################
-#######>>>19:21:40.747 of 12/May/2023, Friday
+#######>>>17:56:41.897 of 18/May/2023, Thursday
 #>>>Refreshed Ship List: ['Player']
 ## -------------------- ##
 ####################
-#######>>>19:21:54.355 of 12/May/2023, Friday
+#######>>>17:56:57.397 of 18/May/2023, Thursday
 #>>>Refreshed Ship List: ['Player']
 ## -------------------- ##
 ####################
-#######>>>19:22:7.644 of 12/May/2023, Friday
+#######>>>17:57:1.613 of 18/May/2023, Thursday
 #>>>Refreshed Ship List: ['Player']
 ## -------------------- ##
 ####################
-#######>>>19:22:18.670 of 12/May/2023, Friday
+#######>>>17:57:29.645 of 18/May/2023, Thursday
 #>>>Refreshed Ship List: ['Player']
 ## -------------------- ##
 ####################
-#######>>>19:22:38.165 of 12/May/2023, Friday
+#######>>>17:57:32.146 of 18/May/2023, Thursday
 #>>>Refreshed Ship List: ['Player']
 ## -------------------- ##
 ####################
-#######>>>19:22:54.099 of 12/May/2023, Friday
+#######>>>17:57:56.445 of 18/May/2023, Thursday
 #>>>Refreshed Ship List: ['Player']
 ## -------------------- ##
 ####################
-#######>>>19:23:13.739 of 12/May/2023, Friday
+#######>>>17:58:1.462 of 18/May/2023, Thursday
 #>>>Refreshed Ship List: ['Player']
 ## -------------------- ##
 ####################
-#######>>>19:23:38.178 of 12/May/2023, Friday
+#######>>>17:58:12.512 of 18/May/2023, Thursday
 #>>>Refreshed Ship List: ['Player']
 ## -------------------- ##
 ####################
-#######>>>19:23:46.535 of 12/May/2023, Friday
+#######>>>17:58:36.512 of 18/May/2023, Thursday
 #>>>Refreshed Ship List: ['Player']
 ## -------------------- ##
 ####################
-#######>>>19:23:49.511 of 12/May/2023, Friday
+#######>>>17:58:49.112 of 18/May/2023, Thursday
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>17:59:0.911 of 18/May/2023, Thursday
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>17:59:9.395 of 18/May/2023, Thursday
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>17:59:34.961 of 18/May/2023, Thursday
+#>>>Refreshed Ship List: ['Player', 'BorgShuttle - 2']
+## -------------------- ##
+####################
+#######>>>18:0:10.927 of 18/May/2023, Thursday
+#>>>Refreshed Ship List: ['Player', 'BorgShuttle - 2']
+## -------------------- ##
+####################
+#######>>>18:0:20.027 of 18/May/2023, Thursday
+#>>>Refreshed Ship List: ['Player', 'BorgShuttle - 2']
+## -------------------- ##
+####################
+#######>>>18:0:54.260 of 18/May/2023, Thursday
+#>>>Refreshed Ship List: ['Player', 'BorgShuttle - 2']
+## -------------------- ##
+####################
+#######>>>18:1:7.526 of 18/May/2023, Thursday
+#>>>Refreshed Ship List: ['Player', 'BorgShuttle - 2']
+## -------------------- ##
+####################
+#######>>>18:1:34.792 of 18/May/2023, Thursday
+#>>>Refreshed Ship List: ['Player', 'BorgShuttle - 2', 'BorgShuttle - 3']
+## -------------------- ##
+####################
+#######>>>18:1:50.593 of 18/May/2023, Thursday
+#>>>Refreshed Ship List: ['Player', 'BorgShuttle - 2', 'BorgShuttle - 3']
+## -------------------- ##
+####################
+#######>>>18:2:1.692 of 18/May/2023, Thursday
+#>>>Refreshed Ship List: ['Player', 'BorgShuttle - 2', 'BorgShuttle - 3']
+## -------------------- ##
+####################
+#######>>>18:2:20.159 of 18/May/2023, Thursday
+#>>>Refreshed Ship List: ['Player', 'BorgShuttle - 2', 'BorgShuttle - 3']
+## -------------------- ##
+####################
+#######>>>18:2:34.139 of 18/May/2023, Thursday
+#>>>Refreshed Ship List: ['Player', 'BorgShuttle - 2', 'BorgShuttle - 3']
+## -------------------- ##
+####################
+#######>>>18:2:35.475 of 18/May/2023, Thursday
+#>>>Refreshed Ship List: ['Player', 'BorgShuttle - 2', 'BorgShuttle - 3']
+## -------------------- ##
+####################
+#######>>>18:2:38.780 of 18/May/2023, Thursday
+#>>>Refreshed Ship List: ['Player', 'BorgShuttle - 2', 'BorgShuttle - 3']
+## -------------------- ##
+####################
+#######>>>18:2:43.402 of 18/May/2023, Thursday
+#>>>Refreshed Ship List: ['Player', 'BorgShuttle - 2', 'BorgShuttle - 3']
+## -------------------- ##
+####################
+#######>>>18:2:45.792 of 18/May/2023, Thursday
+#>>>Refreshed Ship List: ['Player', 'BorgShuttle - 2', 'BorgShuttle - 3']
+## -------------------- ##
+####################
+#######>>>18:2:47.092 of 18/May/2023, Thursday
+#>>>Refreshed Ship List: ['Player', 'BorgShuttle - 2', 'BorgShuttle - 3']
+## -------------------- ##
+####################
+#######>>>18:2:51.761 of 18/May/2023, Thursday
+#>>>Refreshed Ship List: ['Player', 'BorgShuttle - 2', 'BorgShuttle - 3']
+#>>>Refreshed Ship List: ['Player', 'BorgShuttle - 2', 'BorgShuttle - 3']
+#>>>Refreshed Ship List: ['Player', 'BorgShuttle - 2', 'BorgShuttle - 3']
+#>>>Refreshed Ship List: ['Player', 'BorgShuttle - 2', 'BorgShuttle - 3']
+#>>>Refreshed Ship List: ['Player', 'BorgShuttle - 2', 'BorgShuttle - 3']
+#>>>Refreshed Ship List: ['Player', 'BorgShuttle - 2', 'BorgShuttle - 3']
+#>>>Refreshed Ship List: ['Player', 'BorgShuttle - 2', 'BorgShuttle - 3']
+#>>>Refreshed Ship List: ['Player', 'BorgShuttle - 2', 'BorgShuttle - 3']
+## -------------------- ##
+####################
+#######>>>18:2:56.458 of 18/May/2023, Thursday
+#>>>Refreshed Ship List: ['Player', 'BorgShuttle - 2', 'BorgShuttle - 3']
+## -------------------- ##
+####################
+#######>>>18:3:1.292 of 18/May/2023, Thursday
+#>>>Refreshed Ship List: ['Player', 'BorgShuttle - 2', 'BorgShuttle - 3']
+## -------------------- ##
+####################
+#######>>>18:3:9.292 of 18/May/2023, Thursday
+#>>>Refreshed Ship List: ['Player', 'BorgShuttle - 2', 'BorgShuttle - 3']
+## -------------------- ##
+####################
+#######>>>18:3:18.962 of 18/May/2023, Thursday
+#>>>Refreshed Ship List: ['Player', 'BorgShuttle - 2', 'BorgShuttle - 3']
+## -------------------- ##
+####################
+#######>>>18:3:31.829 of 18/May/2023, Thursday
+#>>>Refreshed Ship List: ['Player', 'BorgShuttle - 2', 'BorgShuttle - 3']
+#>>>Refreshed Ship List: ['Player', 'BorgShuttle - 2', 'BorgShuttle - 3']
+#>>>Refreshed Ship List: ['Player', 'BorgShuttle - 2', 'BorgShuttle - 3']
+#>>>Refreshed Ship List: ['Player', 'BorgShuttle - 2', 'BorgShuttle - 3']
+#>>>Refreshed Ship List: ['Player', 'BorgShuttle - 2', 'BorgShuttle - 3']
+#>>>Refreshed Ship List: ['Player', 'BorgShuttle - 2', 'BorgShuttle - 3']
+#>>>Refreshed Ship List: ['Player', 'BorgShuttle - 2', 'BorgShuttle - 3']
+#>>>Refreshed Ship List: ['Player', 'BorgShuttle - 2', 'BorgShuttle - 3']
+## -------------------- ##
+####################
+#######>>>18:3:34.865 of 18/May/2023, Thursday
+#>>>Refreshed Ship List: ['Player', 'BorgShuttle - 2', 'BorgShuttle - 3']
+## -------------------- ##
+####################
+#######>>>18:3:42.828 of 18/May/2023, Thursday
+#>>>Refreshed Ship List: ['Player', 'BorgShuttle - 2', 'BorgShuttle - 3']
+## -------------------- ##
+####################
+#######>>>18:3:43.642 of 18/May/2023, Thursday
+#>>>Refreshed Ship List: ['Player', 'BorgShuttle - 2', 'BorgShuttle - 3']
+## -------------------- ##
+####################
+#######>>>18:3:58.535 of 18/May/2023, Thursday
+#>>>Refreshed Ship List: ['Player', 'BorgShuttle - 2', 'BorgShuttle - 3']
+## -------------------- ##
+####################
+#######>>>18:4:8.386 of 18/May/2023, Thursday
+#>>>Refreshed Ship List: ['Player', 'BorgShuttle - 2', 'BorgShuttle - 3']
+## -------------------- ##
+####################
+#######>>>18:4:12.097 of 18/May/2023, Thursday
+#>>>Refreshed Ship List: ['Player', 'BorgShuttle - 2', 'BorgShuttle - 3']
+#>>>Refreshed Ship List: ['Player', 'BorgShuttle - 2', 'BorgShuttle - 3']
+#>>>Refreshed Ship List: ['Player', 'BorgShuttle - 2', 'BorgShuttle - 3']
+#>>>Refreshed Ship List: ['Player', 'BorgShuttle - 2', 'BorgShuttle - 3']
+#>>>Refreshed Ship List: ['Player', 'BorgShuttle - 2', 'BorgShuttle - 3']
+#>>>Refreshed Ship List: ['Player', 'BorgShuttle - 2', 'BorgShuttle - 3']
+#>>>Refreshed Ship List: ['Player', 'BorgShuttle - 2', 'BorgShuttle - 3']
+#>>>Refreshed Ship List: ['Player', 'BorgShuttle - 2', 'BorgShuttle - 3']
+## -------------------- ##
+####################
+#######>>>18:4:13.060 of 18/May/2023, Thursday
+#>>>Refreshed Ship List: ['Player', 'BorgShuttle - 2', 'BorgShuttle - 3']
+## -------------------- ##
+####################
+#######>>>18:4:16.766 of 18/May/2023, Thursday
+#>>>Refreshed Ship List: ['Player', 'BorgShuttle - 2', 'BorgShuttle - 3']
+## -------------------- ##
+####################
+#######>>>18:4:35.273 of 18/May/2023, Thursday
+#>>>Refreshed Ship List: ['Player', 'BorgShuttle - 2', 'BorgShuttle - 3']
+## -------------------- ##
+####################
+#######>>>18:4:35.740 of 18/May/2023, Thursday
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_yBaxdf3G9SUF>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_MZjRk1H5miMo>]
 #>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player']
-## -------------------- ##
-####################
-#######>>>19:24:11.862 of 12/May/2023, Friday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_U330Ge567Pe0>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Titan-A-1']
-#>>>Refreshed Ship List: ['Player', 'U.S.S. Titan-A-1']
-## -------------------- ##
-####################
-#######>>>19:24:53.844 of 12/May/2023, Friday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_Q70ymo0841O3>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player']
-## -------------------- ##
-####################
-#######>>>19:25:28.843 of 12/May/2023, Friday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_a2w34TB1181E>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player', 'Enterprise F-1', 'Canon Enterprise F-2', 'DJEnterpriseG-3', 'USS Enterprise H-4']
-#>>>Refreshed Ship List: ['Player', 'Enterprise F-1', 'Canon Enterprise F-2', 'DJEnterpriseG-3', 'USS Enterprise H-4']
-#>>>Refreshed Ship List: ['Player', 'Enterprise F-1', 'Canon Enterprise F-2', 'DJEnterpriseG-3', 'USS Enterprise H-4']
-#>>>Refreshed Ship List: ['Player', 'Enterprise F-1', 'Canon Enterprise F-2', 'DJEnterpriseG-3', 'USS Enterprise H-4']
-#>>>Refreshed Ship List: ['Player', 'Enterprise F-1', 'Canon Enterprise F-2', 'DJEnterpriseG-3', 'USS Enterprise H-4']
-## -------------------- ##
-####################
-#######>>>19:26:9.444 of 12/May/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'Enterprise F-1', 'Canon Enterprise F-2', 'USS Enterprise H-4']
-## -------------------- ##
-####################
-#######>>>19:26:25.843 of 12/May/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'Canon Enterprise F-2', 'USS Enterprise H-4']
-## -------------------- ##
-####################
-#######>>>19:28:31.558 of 12/May/2023, Friday
-#>>>Refreshed Ship List: ['Player']
-## -------------------- ##
-####################
-#######>>>19:28:35.925 of 12/May/2023, Friday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_3B4UATSBPrHZ>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['BorgShuttle - 2', 'BorgShuttle - 3', 'Player']
+########################################
+# 18:4:44.590 of 18/May/2023, Thursday
+#Ending of log dump - User is quiting the game
+########################################

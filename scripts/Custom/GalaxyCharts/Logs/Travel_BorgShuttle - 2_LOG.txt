@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <BorgShuttle - 2 Travel Logger LogCreator_p94Dv8EO13KF>
-#This log file was created on: 0:28:1.722 of 10/May/2023, Wednesday
+#This is the dump of the LogCreator: <BorgShuttle - 2 Travel Logger LogCreator_PsKz9G652T04>
+#This log file was created on: 17:59:34.961 of 18/May/2023, Thursday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,13 +9,12 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>0:28:1.722 of 10/May/2023, Wednesday
+#######>>>17:59:34.961 of 18/May/2023, Thursday
 #>>>Initialized BorgShuttle - 2 Travel logger
-#>>>SELF = <BorgShuttle - 2(1171012) Travel_3K20rRcQq7nQ>
+#>>>SELF = <BorgShuttle - 2(4120822) Travel_gAj0IIZjX00K>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
-#>>> -Is AI in Player in route CHECKING: Player Travel Destination OK
 #>>>Destination set as None
 #>>>Set Exit Placement Name as None
 #>>>Set Exit Point to None
@@ -24,15 +23,26 @@ Updating Travelling Procedures...
 #>>>Chaser pre-emptive Refresher Initialization
 ## -------------------- ##
 ####################
-#######>>>0:28:16.812 of 10/May/2023, Wednesday
-#>>>Arrived Events:  added event <C TGEvent instance at _3ee348a0_p_TGEvent>
-#>>>Updated Target Ship = MvamFusionCube 4
+#######>>>17:59:49.994 of 18/May/2023, Thursday
+#>>>Arrived Events:  added event <C TGEvent instance at _496380d8_p_TGEvent>
+#>>>Updated Target Ship = MvamFusionCube-9
 ## -------------------- ##
 ####################
-#######>>>0:28:29.824 of 10/May/2023, Wednesday
-#>>>Stopping Refresh Handler
-#>>>Deleting...
+#######>>>18:0:15.110 of 18/May/2023, Thursday
+#>>>Updated Target Ship = MvamFusionCube-3
+## -------------------- ##
+####################
+#######>>>18:0:18.460 of 18/May/2023, Thursday
+#>>>Updated Target Ship = CubeH 1
+## -------------------- ##
+####################
+#######>>>18:0:59.605 of 18/May/2023, Thursday
+#>>>Updated Target Ship = MvamFusionCube-2
+## -------------------- ##
+####################
+#######>>>18:1:29.292 of 18/May/2023, Thursday
+#>>>Updated Target Ship = MvamFusionCube-3
 ########################################
-# 0:38:42.363 of 10/May/2023, Wednesday
+# 18:4:44.590 of 18/May/2023, Thursday
 #Ending of log dump - User is quiting the game
 ########################################

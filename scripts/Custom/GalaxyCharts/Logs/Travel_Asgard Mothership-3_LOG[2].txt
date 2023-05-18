@@ -1,0 +1,54 @@
+#This is the dump of the LogCreator: <Asgard Mothership-3 Travel Logger[2] LogCreator_G9PvCu6d7jGi>
+#This log file was created on: 3:56:59.942 of 13/May/2023, Saturday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>3:56:59.942 of 13/May/2023, Saturday
+#>>>Initialized Asgard Mothership-3 Travel logger
+#>>>SELF = <Asgard Mothership-3(458891) Travel_9Ym8lOjVgs83>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>3:57:7.271 of 13/May/2023, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>3:57:7.821 of 13/May/2023, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>3:57:8.467 of 13/May/2023, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>3:57:8.868 of 13/May/2023, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>3:57:9.401 of 13/May/2023, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>4:1:27.807 of 13/May/2023, Saturday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 4:7:0.248 of 13/May/2023, Saturday
+#Ending of log dump - User is quiting the game
+########################################

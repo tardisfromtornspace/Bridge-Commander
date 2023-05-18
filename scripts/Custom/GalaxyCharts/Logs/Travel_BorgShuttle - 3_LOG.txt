@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <BorgShuttle - 3 Travel Logger LogCreator_t27112iA201J>
-#This log file was created on: 21:40:1.475 of 2/May/2023, Tuesday
+#This is the dump of the LogCreator: <BorgShuttle - 3 Travel Logger LogCreator_3e4nyjk7FPy0>
+#This log file was created on: 18:1:34.792 of 18/May/2023, Thursday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>21:40:1.475 of 2/May/2023, Tuesday
+#######>>>18:1:34.792 of 18/May/2023, Thursday
 #>>>Initialized BorgShuttle - 3 Travel logger
-#>>>SELF = <BorgShuttle - 3(901991) Travel_x3V0jS1Nv1lE>
+#>>>SELF = <BorgShuttle - 3(4223937) Travel_330qQs3o01gi>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -23,14 +23,22 @@ Updating Travelling Procedures...
 #>>>Chaser pre-emptive Refresher Initialization
 ## -------------------- ##
 ####################
-#######>>>21:40:16.773 of 2/May/2023, Tuesday
-#>>>Arrived Events:  added event <C TGEvent instance at _384f47b8_p_TGEvent>
-#>>>Updated Target Ship = MvamFusionCube-1
+#######>>>18:1:50.177 of 18/May/2023, Thursday
+#>>>Arrived Events:  added event <C TGEvent instance at _49637d68_p_TGEvent>
+#>>>Updated Target Ship = MvamFusionCube-3
 ## -------------------- ##
 ####################
-#######>>>21:40:20.023 of 2/May/2023, Tuesday
-#>>>Updated Target Ship = CubeF 5
+#######>>>18:2:8.642 of 18/May/2023, Thursday
+#>>>Updated Target Ship = BorgShuttle - 2
 ## -------------------- ##
 ####################
-#######>>>21:40:28.290 of 2/May/2023, Tuesday
-#>>>Updated Target Ship = CubeA 5
+#######>>>18:2:12.225 of 18/May/2023, Thursday
+#>>>Updated Target Ship = MvamFusionCube-3
+## -------------------- ##
+####################
+#######>>>18:4:20.457 of 18/May/2023, Thursday
+#>>>Updated Target Ship = BorgShuttle - 2
+########################################
+# 18:4:44.590 of 18/May/2023, Thursday
+#Ending of log dump - User is quiting the game
+########################################

@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Plasma Stream Firepoint11_t Travel Logger LogCreator_90c0ML30N5UP>
-#This log file was created on: 21:58:30.210 of 2/May/2023, Tuesday
+#This is the dump of the LogCreator: <Plasma Stream Firepoint11_t Travel Logger LogCreator_So7MEx7u1n74>
+#This log file was created on: 18:2:20.159 of 18/May/2023, Thursday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>21:58:30.210 of 2/May/2023, Tuesday
+#######>>>18:2:20.159 of 18/May/2023, Thursday
 #>>>Initialized Plasma Stream Firepoint11_t Travel logger
-#>>>SELF = <Plasma Stream Firepoint11_t(1281109) Travel_6uFk0Ml8iw5r>
+#>>>SELF = <Plasma Stream Firepoint11_t(4254731) Travel_pH2o4EbRjg0z>
 #>>>Initial Travel Type: None
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -23,6 +23,10 @@ Updating Travelling Procedures...
 #>>>Chaser pre-emptive Refresher Initialization
 ## -------------------- ##
 ####################
-#######>>>21:58:30.385 of 2/May/2023, Tuesday
+#######>>>18:2:27.276 of 18/May/2023, Thursday
 #>>>Stopping Refresh Handler
 #>>>Deleting...
+########################################
+# 18:4:44.590 of 18/May/2023, Thursday
+#Ending of log dump - User is quiting the game
+########################################

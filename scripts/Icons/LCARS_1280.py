@@ -410,19 +410,19 @@ def LoadLCARS_1280(LCARS = None):
 
 	# Menu icons
 	# ----------
-	kTextureHandle = LCARS.LoadIconTexture("Data/Icons/STMenu.tga")
-	
+	kTextureHandle = LCARS.LoadIconTexture("Data/Icons/STMenuHigh.tga")
+
 	# Title bar
 	LCARS.SetIconLocation(3000, kTextureHandle, 5, 3, 8, 8)
-			
+
 	# Highlight Marker
-	LCARS.SetIconLocation(3001, kTextureHandle, 5, 3, 8, 8)
+	LCARS.SetIconLocation(3001, kTextureHandle, 0, 0, 1, 1)
 
 	# Left end cap normal
-	LCARS.SetIconLocation(3002, kTextureHandle, 1, 0, 13, 14)
+	LCARS.SetIconLocation(3002, kTextureHandle, 2, 0, 26, 28)
 
 	# Right end cap.
-	LCARS.SetIconLocation(3003, kTextureHandle, 1, 0, 13, 14, App.TGIconGroup.ROTATE_0, App.TGIconGroup.MIRROR_HORIZONTAL)
+	LCARS.SetIconLocation(3003, kTextureHandle, 2, 0, 26, 28, App.TGIconGroup.ROTATE_0, App.TGIconGroup.MIRROR_HORIZONTAL)
 
 	# Arrows...
 	kTextureHandle = LCARS.LoadIconTexture("Data/Icons/Bridge/NormalStyleFrameHigh.tga")

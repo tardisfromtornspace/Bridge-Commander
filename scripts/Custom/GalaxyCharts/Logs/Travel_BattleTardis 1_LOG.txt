@@ -1,0 +1,27 @@
+#This is the dump of the LogCreator: <BattleTardis 1 Travel Logger LogCreator_xHni74u6p1bx>
+#This log file was created on: 4:3:54.650 of 13/May/2023, Saturday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>4:3:54.650 of 13/May/2023, Saturday
+#>>>Initialized BattleTardis 1 Travel logger
+#>>>SELF = <BattleTardis 1(727725) Travel_NoQnRsok7N53>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+########################################
+# 4:7:0.248 of 13/May/2023, Saturday
+#Ending of log dump - User is quiting the game
+########################################
