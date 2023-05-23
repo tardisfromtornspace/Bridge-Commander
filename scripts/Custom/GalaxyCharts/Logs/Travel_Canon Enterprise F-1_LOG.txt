@@ -1,0 +1,80 @@
+#This is the dump of the LogCreator: <Canon Enterprise F-1 Travel Logger LogCreator_L30xWeF01ohx>
+#This log file was created on: 1:8:30.706 of 21/May/2023, Sunday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>1:8:30.706 of 21/May/2023, Sunday
+#>>>Initialized Canon Enterprise F-1 Travel logger
+#>>>SELF = <Canon Enterprise F-1(75053) Travel_NXi6S8BBj8Sv>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>1:8:39.525 of 21/May/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>1:8:39.635 of 21/May/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>1:8:40.376 of 21/May/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>1:8:40.701 of 21/May/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>1:8:41.230 of 21/May/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>1:8:41.700 of 21/May/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>1:8:42.105 of 21/May/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>1:8:42.637 of 21/May/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>1:8:45.376 of 21/May/2023, Sunday
+#>>>Beginning to chase target... better late than never...
+#>>>Setting Destination...
+#>>> -Destination: Systems.Belaruz.Belaruz4
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at CanTravel
+Traceback of Error: AttributeError: 'None' object has no attribute 'GetOnlyByRestrictedMethods'
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 1917, in the function "CanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Travelling procedures initiated...
+#>>> -Travel Type Set: Enhanced Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: self Destination OK
+#>>> -Attribute: Initial Set = TimeVortexTunnel1
+#>>> -Attribute: Destination Set = Belaruz4
+#>>> -Cancelling, initial set or destination set doesn't have the Region set.
+#>>>Stopping Refresh Handler
+#>>>Deleting...

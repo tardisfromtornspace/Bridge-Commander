@@ -1,0 +1,44 @@
+#This is the dump of the LogCreator: <U.S.S. Voyager J-7 Travel Logger LogCreator_Ac91445in2ys>
+#This log file was created on: 1:8:30.706 of 21/May/2023, Sunday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>1:8:30.706 of 21/May/2023, Sunday
+#>>>Initialized U.S.S. Voyager J-7 Travel logger
+#>>>SELF = <U.S.S. Voyager J-7(79380) Travel_2G7X5k4U8ZRr>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>1:8:39.418 of 21/May/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>1:8:39.635 of 21/May/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>1:8:40.701 of 21/May/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>1:8:41.029 of 21/May/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>1:8:41.512 of 21/May/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...

@@ -1,0 +1,40 @@
+#This is the dump of the LogCreator: <USS Imahara-12 Travel Logger LogCreator_4N62Jkg4zz4C>
+#This log file was created on: 1:8:30.706 of 21/May/2023, Sunday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>1:8:30.706 of 21/May/2023, Sunday
+#>>>Initialized USS Imahara-12 Travel logger
+#>>>SELF = <USS Imahara-12(82008) Travel_swS0hsL25W6E>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>1:8:39.418 of 21/May/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>1:8:40.128 of 21/May/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>1:8:40.562 of 21/May/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>1:8:41.512 of 21/May/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...

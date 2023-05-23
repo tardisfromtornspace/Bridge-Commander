@@ -1,0 +1,23 @@
+#This is the dump of the LogCreator: <Starbase 457 Travel Logger LogCreator_627Dpzfo8lFk>
+#This log file was created on: 0:55:16.510 of 21/May/2023, Sunday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>0:55:16.510 of 21/May/2023, Sunday
+#>>>Initialized Starbase 457 Travel logger
+#>>>SELF = <Starbase 457(164577) Travel_89C75O9F29Nh>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
