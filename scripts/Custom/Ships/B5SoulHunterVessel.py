@@ -47,7 +47,7 @@ Foundation.ShipDef.B5SoulHunterVessel = Foundation.ShipDef(abbrev, species, { 'n
 # Foundation.ShipDef.B5SoulHunterVessel.hasTGLDesc = 1
 #                                                                                     #
 # Otherwise, uncomment this and type something in:                                    #
-#                                                                                     #
+#                                                                    #
 Foundation.ShipDef.B5SoulHunterVessel.desc = "Soul Hunters have been using this type of ship for millennia. Little is known of its capabilities."
 #                                                                                     #
 #######################################################################################
