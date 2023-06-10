@@ -1,0 +1,34 @@
+#This is the dump of the LogCreator: <EAStarfuryNoEscapePod 9 Travel Logger LogCreator_243Dpq4Lu549>
+#This log file was created on: 0:43:7.052 of 2/June/2023, Friday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>0:43:7.052 of 2/June/2023, Friday
+#>>>Initialized EAStarfuryNoEscapePod 9 Travel logger
+#>>>SELF = <EAStarfuryNoEscapePod 9(1265105) Travel_34b6Vr86x7gu>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>0:43:23.077 of 2/June/2023, Friday
+#>>>Updated Target Ship = Player
+#>>>Can Chase Target = 0
+#>>>Updated Target Ship = Omega Class-20
+## -------------------- ##
+####################
+#######>>>0:43:27.658 of 2/June/2023, Friday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

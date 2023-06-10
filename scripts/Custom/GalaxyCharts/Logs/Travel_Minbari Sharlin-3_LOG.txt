@@ -1,0 +1,37 @@
+#This is the dump of the LogCreator: <Minbari Sharlin-3 Travel Logger LogCreator_IOPlR6C733xF>
+#This log file was created on: 0:46:18.246 of 2/June/2023, Friday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>0:46:18.246 of 2/June/2023, Friday
+#>>>Initialized Minbari Sharlin-3 Travel logger
+#>>>SELF = <Minbari Sharlin-3(1640744) Travel_2LFyuWVoPPMH>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>0:46:25.475 of 2/June/2023, Friday
+#>>>Updated Target Ship = Starfury SA-23E-30
+## -------------------- ##
+####################
+#######>>>0:46:34.254 of 2/June/2023, Friday
+#>>>Updated Target Ship = Omega Class-24
+## -------------------- ##
+####################
+#######>>>0:46:48.548 of 2/June/2023, Friday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
