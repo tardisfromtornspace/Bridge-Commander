@@ -216,7 +216,7 @@ def WeaponFired(pObject, pEvent):
 	return
 
 def RicochetChance(): # Chance of the projectile to do a comeback
-	return 90
+	return 96
 
 try:
 	modSGRealisticHoppingTorp = __import__("Custom.Techs.SGRealisticHoppingTorp")

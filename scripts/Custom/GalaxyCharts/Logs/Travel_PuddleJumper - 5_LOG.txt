@@ -1,0 +1,32 @@
+#This is the dump of the LogCreator: <PuddleJumper - 5 Travel Logger LogCreator_974JY3Cxc507>
+#This log file was created on: 18:7:14.319 of 13/June/2023, Tuesday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>18:7:14.319 of 13/June/2023, Tuesday
+#>>>Initialized PuddleJumper - 5 Travel logger
+#>>>SELF = <PuddleJumper - 5(364226) Travel_7d9w8J3CKt9S>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>18:7:15.042 of 13/June/2023, Tuesday
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>18:7:20.193 of 13/June/2023, Tuesday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

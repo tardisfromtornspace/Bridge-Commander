@@ -1,0 +1,215 @@
+#This is the dump of the LogCreator: <Player Travel Logger[2] LogCreator_G0nXXoLo43T5>
+#This log file was created on: 18:24:11.077 of 13/June/2023, Tuesday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>18:24:11.077 of 13/June/2023, Tuesday
+#>>>Initialized Player Travel logger
+#>>>SELF = <Player(59599) Travel_HHlOQS90u3ky>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is Player - Checked
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>> -Tried to set to a non-existant travel type: None
+< ------------------------------------------- >
+<----------------- EXCEPTION ----------------->
+-----> ERROR at Update (Chaser)
+Traceback of Error: TypeError: call of non-function (type None)
+Script: ".\Scripts\Custom\GalaxyCharts\Traveler.py", Line 2307, in the function "Update".
+Script: ".\Scripts\Custom\GalaxyCharts\HelmAddonGUI.py", Line 93, in the function "CreateTravelTypeButtons".
+Script: ".\Scripts\Custom\GalaxyCharts\HelmAddonGUI.py", Line 118, in the function "UpdateTravelType".
+Script: ".\Scripts\Custom\GalaxyCharts\HelmAddonGUI.py", Line 299, in the function "UpdateEmergencyOutButton".
+Script: ".\Scripts\Custom\GalaxyCharts\HelmAddonGUI.py", Line 245, in the function "CanEmergencyTravelOut".
+Script: ".\Scripts\Custom\GalaxyCharts\HelmAddonGUI.py", Line 288, in the function "CheckBasicPlayerCanTravel".
+<--------------- END EXCEPTION --------------->
+< ------------------------------------------- >
+## -------------------- ##
+####################
+#######>>>18:24:43.124 of 13/June/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>18:24:43.381 of 13/June/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>18:24:43.841 of 13/June/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>18:24:44.373 of 13/June/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>18:24:44.591 of 13/June/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>18:24:44.857 of 13/June/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>18:24:45.591 of 13/June/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>18:24:45.857 of 13/June/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>18:24:46.106 of 13/June/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>18:24:46.623 of 13/June/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>18:24:46.856 of 13/June/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>18:24:47.646 of 13/June/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>18:24:47.894 of 13/June/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>18:24:48.373 of 13/June/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>18:24:48.850 of 13/June/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>18:24:49.167 of 13/June/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>18:24:49.657 of 13/June/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>18:24:49.862 of 13/June/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>18:24:50.393 of 13/June/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>18:24:50.856 of 13/June/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>18:24:51.123 of 13/June/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>18:24:51.624 of 13/June/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>18:24:51.873 of 13/June/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>18:24:52.375 of 13/June/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>18:24:52.624 of 13/June/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>18:24:53.126 of 13/June/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>18:24:53.407 of 13/June/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>18:24:53.874 of 13/June/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>18:24:54.126 of 13/June/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>18:24:54.623 of 13/June/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>18:24:55.151 of 13/June/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>18:24:55.647 of 13/June/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>18:24:55.916 of 13/June/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>18:24:56.125 of 13/June/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>18:24:56.395 of 13/June/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>18:24:56.916 of 13/June/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>18:24:57.408 of 13/June/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>18:24:57.906 of 13/June/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>18:24:58.410 of 13/June/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>18:24:58.890 of 13/June/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>18:24:59.366 of 13/June/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>18:24:59.909 of 13/June/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>18:25:0.152 of 13/June/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+########################################
+# 18:31:7.868 of 13/June/2023, Tuesday
+#Ending of log dump - User is quiting the game
+########################################

@@ -1,0 +1,56 @@
+#This is the dump of the LogCreator: <AncientCity-1 Travel Logger LogCreator_ocjH3o447R03>
+#This log file was created on: 18:5:15.460 of 13/June/2023, Tuesday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>18:5:15.460 of 13/June/2023, Tuesday
+#>>>Initialized AncientCity-1 Travel logger
+#>>>SELF = <AncientCity-1(66358) Travel_l7MamjQlhHSA>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>18:5:23.253 of 13/June/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>18:5:23.540 of 13/June/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>18:5:24.253 of 13/June/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>18:5:24.754 of 13/June/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>18:5:25.004 of 13/June/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>18:7:43.565 of 13/June/2023, Tuesday
+#>>>Updated Target Ship = Defiant Refit-4
+## -------------------- ##
+####################
+#######>>>18:7:51.362 of 13/June/2023, Tuesday
+#>>>Updated Target Ship = Defiant Refit-3
+## -------------------- ##
+####################
+#######>>>18:8:6.580 of 13/June/2023, Tuesday
+#>>>Updated Target Ship = Defiant Refit-6

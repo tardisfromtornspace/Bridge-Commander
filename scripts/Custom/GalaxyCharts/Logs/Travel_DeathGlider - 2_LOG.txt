@@ -1,0 +1,33 @@
+#This is the dump of the LogCreator: <DeathGlider - 2 Travel Logger LogCreator_DCk4uJNrn8dp>
+#This log file was created on: 18:28:36.120 of 13/June/2023, Tuesday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>18:28:36.120 of 13/June/2023, Tuesday
+#>>>Initialized DeathGlider - 2 Travel logger
+#>>>SELF = <DeathGlider - 2(686400) Travel_gFMZi78371pT>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>18:28:47.353 of 13/June/2023, Tuesday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 18:31:7.868 of 13/June/2023, Tuesday
+#Ending of log dump - User is quiting the game
+########################################
