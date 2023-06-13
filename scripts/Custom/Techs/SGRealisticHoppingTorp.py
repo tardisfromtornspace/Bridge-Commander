@@ -55,9 +55,9 @@ class SGRealisticHoppingTorpedo(FoundationTech.TechDef):
 		#	pTorp.SetLifetime(0)
 		pTorp.SetLifetime(0)
 
-		pShipID = pShip.GetObjID()
+		#pShipID = pShip.GetObjID()
 
-		pShip = App.ShipClass_Cast(App.TGObject_GetTGObjectPtr(pShipID))
+		#pShip = App.ShipClass_Cast(App.TGObject_GetTGObjectPtr(pShipID))
 		if not pShip :
 			return
 
@@ -74,6 +74,12 @@ class SGRealisticHoppingTorpedo(FoundationTech.TechDef):
 		mod = pTorp.GetModuleName()
 		if(self.__dict__.has_key("SubTorp")):
 			mod = self.SubTorp
+
+		pShipID = pTorp.GetParentID()
+
+		pShip2 = App.ShipClass_Cast(App.TGObject_GetTGObjectPtr(pShipID))
+		if not pShip2 :
+			return
 
 		pTempTorp = FireTorpFromPointWithVector(pHitPoint, pVec, mod, pTorp.GetTargetID(), pTorp.GetParentID(), __import__(mod).GetLaunchSpeed())
                 pTempTorp.SetLifetime(15.0)

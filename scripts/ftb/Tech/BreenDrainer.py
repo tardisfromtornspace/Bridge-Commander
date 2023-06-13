@@ -120,7 +120,7 @@ class DrainerImmuneDef(FoundationTech.TechDef):
 
 	def OnTorpDefense(self, pShip, pInstance, pTorp, oYield, pEvent):
 		debug(__name__ + ", OnTorpDefense")
-		if oYield and oYield.IsDrainYield():
+		if oYield and hasattr(oYield, "IsDrainYield") and oYield.IsDrainYield():
 			return 1
 
 	def Attach(self, pInstance):

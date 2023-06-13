@@ -1,0 +1,57 @@
+#This is the dump of the LogCreator: <Warship-3 Travel Logger LogCreator_GboOYpaAG1zV>
+#This log file was created on: 21:50:59.969 of 13/June/2023, Tuesday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>21:50:59.969 of 13/June/2023, Tuesday
+#>>>Initialized Warship-3 Travel logger
+#>>>SELF = <Warship-3(841566) Travel_ip2hW7fz1zd7>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>21:51:7.251 of 13/June/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>21:51:7.533 of 13/June/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>21:51:7.861 of 13/June/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>21:51:8.385 of 13/June/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>21:51:8.791 of 13/June/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>21:51:9.350 of 13/June/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>21:52:0.813 of 13/June/2023, Tuesday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 22:9:44.037 of 13/June/2023, Tuesday
+#Ending of log dump - User is quiting the game
+########################################

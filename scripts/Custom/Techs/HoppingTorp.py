@@ -51,17 +51,10 @@ class HoppingTorpedo(FoundationTech.TechDef):
 		#if(pEvent.IsHullHit()):
 		#	return
 
-		#if pTorp.GetObjID() in self.lFired:
-		#	pTorp.SetLifetime(0)
-		pTorp.SetLifetime(0)
-
-		pShipID = pShip.GetObjID()
-
-		pShip = App.ShipClass_Cast(App.TGObject_GetTGObjectPtr(pShipID))
 		if not pShip:
 			return
 
-		#pHitPoint = self.ConvertPointNiToTG(pEvent.GetWorldHitPoint())
+		pTorp.SetLifetime(0)
 
                 pHitPoint = self.ConvertPointNiToTG(pTorp.GetWorldLocation())
 
@@ -74,6 +67,12 @@ class HoppingTorpedo(FoundationTech.TechDef):
 		mod = pTorp.GetModuleName()
 		if(self.__dict__.has_key("SubTorp")):
 			mod = self.SubTorp
+
+		pShipID = pTorp.GetParentID()
+
+		pShip2 = App.ShipClass_Cast(App.TGObject_GetTGObjectPtr(pShipID))
+		if not pShip2 :
+			return
 
 		pTempTorp = FireTorpFromPointWithVector(pHitPoint, pVec, mod, pTorp.GetTargetID(), pTorp.GetParentID(), __import__(mod).GetLaunchSpeed())
                 pTempTorp.SetLifetime(15.0)
