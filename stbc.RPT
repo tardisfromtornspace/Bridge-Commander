@@ -9337,3 +9337,80 @@ Doing stack walk
 Call stack:
 Address   Frame
 
+//=====================================================
+Current Time: Mon Jun 12 21:01:01 2023
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  00611D78 01:00210D78 C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+Registers:
+EAX:38A2EE0C
+EBX:1F171A44
+ECX:00000000
+EDX:0095DD20
+ESI:1F171A44
+EDI:00611CF0
+CS:EIP:0023:00611D78
+SS:ESP:002B:0019F81C  EBP:00000000
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010206
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+
+//=====================================================
+Current Time: Mon Jun 12 21:13:45 2023
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Mon Jun 12 21:30:32 2023
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Tue Jun 13 15:31:01 2023
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  0041214A 01:0001114A C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+Registers:
+EAX:0019FB40
+EBX:149D1E68
+ECX:00000000
+EDX:00898984
+ESI:14B38364
+EDI:00000000
+CS:EIP:0023:0041214A
+SS:ESP:002B:0019FAF0  EBP:0EAED41C
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010202
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+0041214A  0019FB10  0001:0001114A C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+//=====================================================
+Current Time: Tue Jun 13 16:30:49 2023
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  434B0E13 00:00000000 
+
+Registers:
+EAX:3FEAA380
+EBX:1B8ABD54
+ECX:3FEA9D30
+EDX:3FEA9D30
+ESI:3FEA9D30
+EDI:00609700
+CS:EIP:0023:434B0E13
+SS:ESP:002B:0019F880  EBP:00000000
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010206
+
+Application Timestamp: Thu Jan 01 01:00:00 1970
+Doing stack walk
+
+Call stack:
+Address   Frame
+434B0E13  0019F87C  0000:00000000  (No symbol info found)
+

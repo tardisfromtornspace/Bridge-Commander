@@ -3,6 +3,8 @@ Modifications made by Alex SL Gato
 Special Thanks to 𝕟𝕒𝕣𝕣𝕠𝕨𝕔𝕨𝕪𝕗𝕖#0007 for driving me to complete this mod for their Voyager-J mod, as well as for some help with the PhasedTorp scripts.
 
 ===Changelog===
+1.2.2 - Small bug fix with Hopping Torpedo - now Droones should work normally on unshielded vessels
+1.2.1 - Small bug fix with the Advanced Energy Armour 1.0
 1.2 - EXTRA TECHNOLOGIES: Chroniton Torpedo, Reflux Torpedo, Tricobalt Torpedo, Advanced Energy Armour 1.0.
       BUG FIXES: Compatibility issues fix, done a "Monkey Patch" so those with DS9FX 1.1 don't crash if they download this mod. On DS9FX 1.2 I talked with Mario and the fix is planned to be there right now. For BC: rematered don't forget to manually overwrite the Stock function with this one.
 1.1 - Small fix

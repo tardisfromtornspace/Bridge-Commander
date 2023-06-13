@@ -5,15 +5,12 @@
 # At the bottom of your torpedo projectile file add this (Between the """ and """):
 """
 try:
-        sYieldName = "Hopping Torpedo"
+        sYieldName = "SG Hopping Torpedo"
 
         import FoundationTech
-        import Custom.Techs.HoppingTorp
-	#modPhasedTorp = __import__("Custom.Techs.HoppingTorp")
-	#if(modPhasedTorp):
-	#	modPhasedTorp.oPhasedTorp.AddTorpedo(__name__)
+        import Custom.Techs.SGRealisticHoppingTorp
 
-        oFire = Custom.Techs.HoppingTorp.oHoppingTorp
+        oFire = Custom.Techs.SGRealisticHoppingTorp.oSGRealisticHoppingTorp
         FoundationTech.dOnFires[__name__] = oFire
 
         oYield = FoundationTech.oTechs[sYieldName]
@@ -21,7 +18,7 @@ try:
 
 
 except:
-	print "Hopping Torpedo script not installed, or you are missing Foundation Tech"
+	print "SG Hopping Torpedo script not installed, or you are missing Foundation Tech"
 """
 
 import App
@@ -33,10 +30,13 @@ from ftb.Tech.ATPFunctions import *
 from math import *
 
 NonSerializedObjects = (
-"oHoppingTorp",
+"oSGRealisticHoppingTorp",
 )
 
-class HoppingTorpedo(FoundationTech.TechDef):
+class SGRealisticHoppingTorpedo(FoundationTech.TechDef):
+
+	ricochetChance = 100.0
+
 	def __init__(self, name, dict = {}):
 		FoundationTech.TechDef.__init__(self, name, FoundationTech.dMode)
 		self.lYields = []
@@ -58,17 +58,17 @@ class HoppingTorpedo(FoundationTech.TechDef):
 		pShipID = pShip.GetObjID()
 
 		pShip = App.ShipClass_Cast(App.TGObject_GetTGObjectPtr(pShipID))
-		if not pShip:
+		if not pShip :
 			return
 
-		#pHitPoint = self.ConvertPointNiToTG(pEvent.GetWorldHitPoint())
-
+		myChance = App.g_kSystemWrapper.GetRandomNumber(100)
+		print myChance
+		if myChance > self.ricochetChance:
+			return
                 pHitPoint = self.ConvertPointNiToTG(pTorp.GetWorldLocation())
 
 		pVec = pTorp.GetVelocityTG()
                 
-		#pVec.Scale(pEvent.GetRadius())
-                #pVec.Scale((0.06 * pEvent.GetRadius()) / pTorp.GetLaunchSpeed()) # Don't add this line to make it a funny drone seeking weapon that keeps bypassing the hull and harming the shields until the shields fail and hits the hull
 		pHitPoint.Add(pVec)
 
 		mod = pTorp.GetModuleName()
@@ -79,8 +79,10 @@ class HoppingTorpedo(FoundationTech.TechDef):
                 pTempTorp.SetLifetime(15.0)
 		self.lFired.append(pTempTorp.GetObjID())
 
-	def AddTorpedo(self, path):
+	def AddTorpedo(self, path, myPercent):
 		FoundationTech.dYields[path] = self
+		self.ricochetChance = myPercent
+		
 
 	def ConvertPointNiToTG(self, point):
 		retval = App.TGPoint3()
@@ -93,11 +95,11 @@ class HoppingTorpedo(FoundationTech.TechDef):
 				return 1
 		return 0
 
-oHoppingTorp = HoppingTorpedo("Hopping Torpedo")
+oSGRealisticHoppingTorp = SGRealisticHoppingTorpedo("SG Hopping Torpedo")
 
 # Just a few standard torps I know of that are Phased... 
 # All but the first one, that is the first torp on my test bed ship...
 # Should be commented out on release...
-# oHoppingTorp.AddTorpedo("Tactical.Projectiles.PhasedPlasma")
+# oSGRealisticHoppingTorp.AddTorpedo("Tactical.Projectiles.Drones", 0.75)
 
-print "Hopping Torp ready"
+print "SG Hopping Torp ready"

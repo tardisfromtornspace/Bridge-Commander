@@ -39,7 +39,8 @@ credits = {
 Foundation.ShipDef.Atlantis = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
 
 Foundation.ShipDef.Atlantis.dTechs = {
-	'Breen Drainer Immune': 0
+	'Breen Drainer Immune': 0,
+	'Alteran ZPM Shields': 1
 }
 #                                                                                     #
 #######################################################################################

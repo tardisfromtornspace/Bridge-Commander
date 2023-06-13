@@ -9,6 +9,12 @@ import App
 import string
 pWeaponLock = {}
 
+"""
+# if you want the ship to be immune to this weapon, add this at the end of your scripts/ships file
+def IsStargateDroneImmune():
+	return 1
+"""
+
 ###############################################################################
 #	Create(pTorp)
 #	
@@ -81,10 +87,14 @@ lImmuneShips = (
                 "Atlantis",
                 "B5LordShip",
                 "B5TriadTriumviron",
+                "BattleTardis",
                 "bcnarada",
                 "BorgDiamond",
                 "CA8472",
                 "crossfield31",
+                "DalekEmperorSaucer",
+                "DalekGenesisArk",
+                "DalekVoidShip",
                 "DanielJackson",
                 "DCMPDefiant",
                 "DJEnterpriseG",
@@ -125,6 +135,7 @@ lImmuneShips = (
                 "Sovereign",
                 "Supership",
                 "Tardis",
+                "TardisType89",
                 "ThirdspaceCapitalShip",
                 "VulcanXRT55D",
                 "WCNemEntE",
@@ -149,12 +160,34 @@ def TargetHit(pObject, pEvent):
 	except:
 		pSubsystem=pShip.GetHull()
 
-	### LJ INSERTS - CHECK FOR IMMUNE SHIP
+	### LJ + ALEX SL GATO INSERTS - CHECK FOR IMMUNE SHIP
 	global lImmuneShips
+
 	sScript     = pShip.GetScript()
 	sShipScript = string.split(sScript, ".")[-1]
-	if sShipScript in lImmuneShips:
-		return
+
+	pShipModule =__import__(sScript)
+	pShields = pShip.GetShields()
+	if hasattr(pShipModule, "IsStargateDroneImmune") and pShields or sShipScript in lImmuneShips:
+		# print "the target is immune to drones via ship script"
+		shieldsStrong = 6
+		for shieldDir in range(App.ShieldClass.NUM_SHIELDS):
+			fCurr = pShields.GetCurShields(shieldDir)
+			fMax = pShields.GetMaxShields(shieldDir)
+			if fMax == 0.0 or (fCurr < 0.3 * fMax):
+				shieldsStrong = shieldsStrong - 1
+		if shieldsStrong > 3:
+			for shieldDir in range(App.ShieldClass.NUM_SHIELDS):
+				fCurr = pShields.GetCurShields(shieldDir)
+				fMax = pShields.GetMaxShields(shieldDir)
+				fCurr = fCurr - (GetMinDamage()/6.0)
+				if fCurr <= 0.0:
+					fCurr = 0.0
+				elif fCurr > fMax:
+					fCurr = fMax
+				pShields.SetCurShields(shieldDir, fCurr)
+			return
+
 	######################################
 	if (pSubsystem==None):
 		return
@@ -182,42 +215,13 @@ def WeaponFired(pObject, pEvent):
 		return
 	return
 
-#try:
-#    sYieldName = 'Phased Torpedo'
-#    import FoundationTech
-#    try:
-#        oYield = FoundationTech.oTechs[sYieldName]
-#        FoundationTech.dYields[__name__] = oYield
-#    except:
-
-#        import FoundationTech
-#        import ftb.Tech.FedTransphasic
-#      
-#        sYieldName = ''
-#        sFireName = ''
-
-#        oFire = ftb.Tech.FedTransphasic.oTransphasicWeapon
-#        FoundationTech.dOnFires[__name__] = oFire
-#        FoundationTech.dYields[__name__] = oFire
-#        pass
-#except:
-#    pass
+def RicochetChance(): # Chance of the projectile to do a comeback
+	return 90
 
 try:
-        sYieldName = "Hopping Torpedo"
-
-        import FoundationTech
-        import Custom.Techs.HoppingTorp
-	#modPhasedTorp = __import__("Custom.Techs.HoppingTorp")
-	#if(modPhasedTorp):
-	#	modPhasedTorp.oPhasedTorp.AddTorpedo(__name__)
-
-        oFire = Custom.Techs.HoppingTorp.oHoppingTorp
-        FoundationTech.dOnFires[__name__] = oFire
-
-        oYield = FoundationTech.oTechs[sYieldName]
-        FoundationTech.dYields[__name__] = oYield
-
+	modSGRealisticHoppingTorp = __import__("Custom.Techs.SGRealisticHoppingTorp")
+	if(modSGRealisticHoppingTorp):
+		modSGRealisticHoppingTorp.oSGRealisticHoppingTorp.AddTorpedo(__name__, RicochetChance())
 
 except:
-	print "Hopping Torpedo script not installed, or you are missing Foundation Tech"
+	print "SG Hopping Torpedo script not installed, or you are missing Foundation Tech"

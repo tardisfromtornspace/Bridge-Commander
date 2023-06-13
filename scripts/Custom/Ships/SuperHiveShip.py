@@ -47,6 +47,7 @@ Foundation.ShipDef.SuperHiveShip.fTorpedoID = "Not-Target"
 # Foundation.ShipDef.SuperHiveShip.hasTGLDesc = 1
 Foundation.ShipDef.SuperHiveShip.dTechs = {"Multivectral Shields": 100}
 Foundation.ShipDef.SuperHiveShip.dTechs = {'Breen Drainer Immune': 1}
+Foundation.ShipDef.SuperHiveShip.dTechs = {'Fed Ablative Armor': { "Plates": ["Regenerative Armor"]}}
 #                                                                                     #
 # Otherwise, uncomment this and type something in:                                    #
 #                                                                                     #
