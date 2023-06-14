@@ -1,3 +1,6 @@
+# THIS FILE IS NOT SUPPORTED BY ACTIVISION
+# THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
+
 # TODO: 1. Create Read Me
 #	2. Create a clear guide on how to add this...
 #

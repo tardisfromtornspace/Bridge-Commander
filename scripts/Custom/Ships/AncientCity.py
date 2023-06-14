@@ -1,3 +1,5 @@
+# THIS FILE IS NOT SUPPORTED BY ACTIVISION
+# THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
 #######################################################################################
 #  Custom Ship Plugin                                                                 #
 #  Created by BC - Mod Packager                                                       #
@@ -39,7 +41,7 @@ credits = {
 Foundation.ShipDef.AncientCity = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
 Foundation.ShipDef.AncientCity.dTechs = {
 	'Breen Drainer Immune': 0,
-	'Alteran ZPM Shields': 1
+	'Alteran ZPM Shields': { "Strength": 1 }
 }
 
 #                                                                                     #

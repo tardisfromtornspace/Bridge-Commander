@@ -1,3 +1,5 @@
+# THIS FILE IS NOT SUPPORTED BY ACTIVISION
+# THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
 #######################################################################################
 #  Custom Ship Plugin                                                                 #
 #  Created by BC - Mod Packager                                                       #
@@ -40,7 +42,7 @@ Foundation.ShipDef.Atlantis = Foundation.ShipDef(abbrev, species, { 'name': long
 
 Foundation.ShipDef.Atlantis.dTechs = {
 	'Breen Drainer Immune': 0,
-	'Alteran ZPM Shields': 1
+	'Alteran ZPM Shields': { "Strength": 1 }
 }
 #                                                                                     #
 #######################################################################################

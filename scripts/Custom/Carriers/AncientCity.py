@@ -1,3 +1,9 @@
+# THIS FILE IS NOT SUPPORTED BY ACTIVISION
+# THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
+# AncientCity.py
+# June 14, 2023
+# Based on, and compliant to the SDK and LGPL License, modified by Alex SL Gato:
+#
 # Dauntless.py
 # April 11, 2002
 #

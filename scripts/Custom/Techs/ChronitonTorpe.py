@@ -35,8 +35,14 @@ try:
 			self.__dict__.update(dict)
 			self.lFired = []
 
-                def IsChronTorpYield(self):
+		def IsChronTorpYield(self):
 			return 1
+
+		def IsPhaseYield(self):
+			return 0
+
+		def IsDrainYield(self):
+			return 0
 
 		def OnYield(self, pShip, pInstance, pEvent, pTorp):
 			if(pEvent.IsHullHit()):

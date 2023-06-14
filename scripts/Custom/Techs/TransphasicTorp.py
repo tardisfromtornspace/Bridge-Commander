@@ -1,4 +1,6 @@
-# Amodfication of a modification, by Alex SL Gato (CharaToLoki)
+# THIS FILE IS NOT SUPPORTED BY ACTIVISION
+# THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
+# A modfication of a modification, last modification by Alex SL Gato (CharaToLoki)
 #
 # TODO: 1. Create Read Me
 #	2. Create a clear guide on how to add this...
@@ -61,8 +63,14 @@ try:
 			self.__dict__.update(dict)
 			self.lFired = []
 
-                def IsTransphasicYield(self):
+		def IsTransphasicYield(self):
 			return 1
+
+		def IsPhaseYield(self):
+			return 0
+
+		def IsDrainYield(self):
+			return 0
 
 		def OnYield(self, pShip, pInstance, pEvent, pTorp):
 			if(pEvent.IsHullHit()):

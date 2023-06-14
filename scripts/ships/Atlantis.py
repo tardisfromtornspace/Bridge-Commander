@@ -1,3 +1,5 @@
+# THIS FILE IS NOT SUPPORTED BY ACTIVISION
+
 import App
 import Multiplayer.SpeciesToShip
 

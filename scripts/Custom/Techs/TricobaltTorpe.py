@@ -163,8 +163,11 @@ try:
 			self.__dict__.update(dict)
 			self.lFired = []
 
-                def IsChronTorpYield(self):
-			return 1
+		def IsPhaseYield(self):
+			return 0
+
+		def IsDrainYield(self):
+			return 0
 
 		def OnYield(self, pShip, pInstance, pEvent, pTorp):
 
@@ -186,7 +189,7 @@ try:
 			pShipID = pShip.GetObjID()
 
 			pShip = App.ShipClass_Cast(App.TGObject_GetTGObjectPtr(pShipID))
-			if not pShip:
+			if not pShip or (not pEvent.IsHullHit()):
 				return
 
 			pHitPoint = ConvertPointNiToTG(pEvent.GetWorldHitPoint())

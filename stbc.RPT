@@ -9460,3 +9460,21 @@ Doing stack walk
 Call stack:
 Address   Frame
 
+//=====================================================
+Current Time: Tue Jun 13 23:12:19 2023
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Wed Jun 14 16:11:32 2023
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Wed Jun 14 16:35:52 2023
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Wed Jun 14 17:43:35 2023
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Wed Jun 14 18:06:17 2023
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Wed Jun 14 18:21:18 2023
+Exception code: C0000005 ACCESS_VIOLATION

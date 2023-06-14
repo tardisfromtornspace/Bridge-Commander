@@ -1,3 +1,4 @@
+# THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # C:\Dokumente und Einstellungen\CafeX\Eigene Dateien\STBC\scripts\ships\Hardpoints\Atlantis.py
 # This file was automatically generated - modify at your own risk.
 # 
@@ -1628,6 +1629,21 @@ RailGun18.SetArcHeightAngles(3.124140, 0.017453)
 RailGun18.SetCooldownTime(0.000001)
 RailGun18.SetModuleName("Tactical.Projectiles.RailGunA")
 App.g_kModelPropertyManager.RegisterLocalTemplate(RailGun18)
+#################################################
+CloakingDevice = App.CloakingSubsystemProperty_Create("Shield Cloak")
+
+CloakingDevice.SetMaxCondition(8000.000000)
+CloakingDevice.SetCritical(0)
+CloakingDevice.SetTargetable(0)
+CloakingDevice.SetPrimary(1)
+CloakingDevice.SetPosition(0.000000, -0.500000, 0.350000)
+CloakingDevice.SetPosition2D(64.000000, 92.000000)
+CloakingDevice.SetRepairComplexity(7.000000)
+CloakingDevice.SetDisabledPercentage(0.750000)
+CloakingDevice.SetRadius(0.550000)
+CloakingDevice.SetNormalPowerPerSecond(900.000000)
+CloakingDevice.SetCloakStrength(100.000000)
+App.g_kModelPropertyManager.RegisterLocalTemplate(CloakingDevice)
 
 # Property load function.
 def LoadPropertySet(pObj):
@@ -1822,5 +1838,8 @@ def LoadPropertySet(pObj):
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
 	prop = App.g_kModelPropertyManager.FindByName("Rail Gun 18", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	if (prop != None):
+		pObj.AddToSet("Scene Root", prop)
+	prop = App.g_kModelPropertyManager.FindByName("Shield Cloak", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)

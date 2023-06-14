@@ -1,3 +1,5 @@
+# THIS FILE IS NOT SUPPORTED BY ACTIVISION
+# THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
 ###############################################################################
 #	Filename:	Solonite Missile.py
 #	

@@ -1,3 +1,5 @@
+# THIS FILE IS NOT SUPPORTED BY ACTIVISION
+# THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
 ###############################################################################
 #		
 #	Script for filling in the attributes of Fusion torpedoes.
@@ -216,7 +218,7 @@ def WeaponFired(pObject, pEvent):
 	return
 
 def RicochetChance(): # Chance of the projectile to do a comeback
-	return 96
+	return 92
 
 try:
 	modSGRealisticHoppingTorp = __import__("Custom.Techs.SGRealisticHoppingTorp")
