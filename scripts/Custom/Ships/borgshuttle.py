@@ -36,6 +36,7 @@ credits = {
 # automatically generated the proper ShipDef Line for you.                            #
 #                                                                                     #
 Foundation.ShipDef.borgshuttle = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile })
+Foundation.ShipDef.borgshuttle.dTechs = { 'Borg Adaptation': 1 }
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

@@ -1,5 +1,6 @@
 == Changelog ==
-0.9.8 - Adjsuted AncientCity so it fires the drones faster, thank you MSR1701, Grey da Deg and Grim455
+1.0.0 - Official release
+0.9.8 - Adjsuted AncientCity so it fires the drones faster, thank you Grey da Deg, Grim455, MSR1701 and .truncatedcake0161
 0.9.7 - Small shield fixes on hardpoint and tech.
 0.9.6 - Per request of Dasher42, I've included the SDKLicense and the Foundation license
 0.9.5 - several bugfixes - drainer weapons bugs and drone crashing the game if the ship launching the drones died are now fixed
@@ -19,15 +20,15 @@ All of these must be installed before installing this mod, in this order:
 * Stargate pack 3.0 or 4.0 https://www.gamefront.com/games/bridge-commander/file/stargate-ship-pack-dave975-and-dkealt
 
 == Credits ==
-* Everyone involved in Foundation - without you this would have been a real pain to do (please read the separate Foundation.txt license) - also includes MLeo.
+* Everyone involved in Foundation - without you this would have been a real pain to do (please read the separate Foundation.txt license) - Banbury, Dasher42, DigitalFriend, MLeo, Nanobyte and Sleight42, among others
 * Everyone involved in KM - specifically those involved in the creation of armour and Shields.py (FoundationTechnologies) and the AdvArmorTech.py - Apollo from ATP Technologies as well.
 * Dasher42 and USS Sovereign, not only for the above but for some feedback.
-* .truncatedcake0161 for feedback on the Discord abut power tweaks.
 * Those involved with the Stargate Pack 4.0 and other Stargate packs for STBC:
 ** https://www.gamefront.com/games/bridge-commander/file/stargate-ship-pack-dave975-and-dkealt by Dave975 and DKealt, among others mentioned on its readme, and LJ.
 ** https://www.gamefront.com/games/bridge-commander/file/ancient-city-atlantis-pack-0-9: abt, limey, cliperkins, jb and dave (models) and icons (http://www.lostmindsinc.com/index.php?page=races)
 *** Evan Light aka sleight42 for the original Carriers script.
 *** Erik Novales, MRJOHN and Lost_Jedi for the original Projectiles.
+* .truncatedcake0161 for feedback on the Discord about power tweaks.
 * Grey da Derg#2305 for helping with noticing bugs and their cause.
 * Grim455#4905 aka THE SCI-FI KING, for beign inquisitive and finding out possible ways to tweak the hardpoints and techs.
 * Alex SL Gato (aka CharaToLoki) for any new code implemented or modified - specifically the heavy modifications to the SG Drone script.

@@ -37,6 +37,7 @@ credits = {
 #                                                                                     #
 Foundation.ShipDef.BorgDiamond = Foundation.BorgShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile })
 Foundation.ShipDef.BorgDiamond.dTechs = { 'Breen Drainer Immune': 1 }
+Foundation.ShipDef.BorgDiamond.dTechs = { 'Borg Adaptation': 1 }
 Foundation.ShipDef.BorgDiamond.fMaxWarp = 9.999
 #                                                                                     #
 #######################################################################################
