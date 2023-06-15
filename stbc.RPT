@@ -9478,3 +9478,27 @@ Exception code: C0000005 ACCESS_VIOLATION
 //=====================================================
 Current Time: Wed Jun 14 18:21:18 2023
 Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Thu Jun 15 19:47:16 2023
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  0041214A 01:0001114A C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+Registers:
+EAX:0019FB40
+EBX:1634B3B0
+ECX:00000000
+EDX:00898984
+ESI:16ABBFC4
+EDI:00000000
+CS:EIP:0023:0041214A
+SS:ESP:002B:0019FAF0  EBP:0E6D0D44
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010202
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+0041214A  0019FB10  0001:0001114A C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+

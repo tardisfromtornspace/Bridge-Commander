@@ -50,6 +50,10 @@ class SGRealisticHoppingTorpedo(FoundationTech.TechDef):
 		debug(__name__ + ", IsDrainYield")
 		return 0
 
+	def IsPhaseYield(self):
+		debug(__name__ + ", IsDrainYield")
+		return 0
+
 	def OnYield(self, pShip, pInstance, pEvent, pTorp):
 		#if(pEvent.IsHullHit()):
 		#	return
