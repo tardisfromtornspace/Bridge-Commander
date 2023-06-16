@@ -52,8 +52,15 @@ try:
 			self.__dict__.update(dict)
 			self.lFired = []
 
-                def IsTimeVortexYield(self):
+		def IsTimeVortexYield(self):
 			return 1
+
+
+		def PhaseYield(self):
+			return 0
+
+		def IsDrainYield(self):
+			return 0
 
 		def OnYield(self, pShip, pInstance, pEvent, pTorp):
 

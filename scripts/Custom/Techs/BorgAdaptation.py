@@ -1,7 +1,7 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
-# 15 June 2023, by Alex SL Gato (CharaToLoki), partially based on the Shield.py script by the Foundation Technologies team and Dasher42's Foundation script
-# Version: 0.4
+# 16 June 2023, by Alex SL Gato (CharaToLoki), partially based on the Shield.py script by the Foundation Technologies team and Dasher42's Foundation script
+# Version: 0.5
 #
 # TODO: 1. Create Read Me
 #	2. Create a clear guide on how to add this...
@@ -38,6 +38,7 @@ adaptationProgress = {
 "CRP Projectile": App.g_kSystemWrapper.GetRandomNumber(90) + 20,              
 
 "IsChronitonYield" : App.g_kSystemWrapper.GetRandomNumber(160) + 60,                    # Immunity to Chroniton torpedoes
+"IsChronTorpYield" : App.g_kSystemWrapper.GetRandomNumber(160) + 60,
 "Chroniton Torp" : App.g_kSystemWrapper.GetRandomNumber(160) + 60,                      
 "ChronitonTorpe" : App.g_kSystemWrapper.GetRandomNumber(160) + 60,                      
 "Chroniton Torpedo" : App.g_kSystemWrapper.GetRandomNumber(160) + 60,                   
