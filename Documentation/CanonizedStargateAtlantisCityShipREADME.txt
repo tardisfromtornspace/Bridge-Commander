@@ -1,4 +1,5 @@
 == Changelog ==
+1.0.1 - Added and adjusted Aurora Cannons to be yellow - thanks @Jovan Blackman for noticing. Also removed the excessive prints.
 1.0.0 - Official release
 0.9.8 - Adjsuted AncientCity so it fires the drones faster, thank you Grey da Deg, Grim455, MSR1701 and .truncatedcake0161
 0.9.7 - Small shield fixes on hardpoint and tech.
@@ -31,6 +32,7 @@ All of these must be installed before installing this mod, in this order:
 * .truncatedcake0161 for feedback on the Discord about power tweaks.
 * Grey da Derg#2305 for helping with noticing bugs and their cause.
 * Grim455#4905 aka THE SCI-FI KING, for beign inquisitive and finding out possible ways to tweak the hardpoints and techs.
+* @Jovan Blackman for noticing that Aurura Cannons are effectively yellow.
 * Alex SL Gato (aka CharaToLoki) for any new code implemented or modified - specifically the heavy modifications to the SG Drone script.
 ** NOTICE: There's an Altantis HP fix on gamefront that added a cloak, but by the time I noticed I already added the cloak myself to the file
 

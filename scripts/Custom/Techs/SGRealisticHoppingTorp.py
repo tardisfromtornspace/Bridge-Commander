@@ -1,5 +1,6 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
+# Version 1.1
 
 # TODO: 1. Create Read Me
 #	2. Create a clear guide on how to add this...
@@ -69,7 +70,7 @@ class SGRealisticHoppingTorpedo(FoundationTech.TechDef):
 			return
 
 		myChance = App.g_kSystemWrapper.GetRandomNumber(100)
-		print myChance
+		# print myChance
 		if myChance > self.ricochetChance:
 			return
                 pHitPoint = self.ConvertPointNiToTG(pTorp.GetWorldLocation())

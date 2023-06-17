@@ -1,5 +1,11 @@
 == Changelog ==
-* 1.0 Mod release
+1.0.2
+* Small fix to some techs so the Breen Drainer Immunity doesn't break them.
+* Removed Time Vortex torpedo - it should not be there. Thanks for THE SCCI-FI KING for pointing it out!
+1.0.1
+* Per Dasher42's request, added the SDKLIcense and the Foundation readme.
+1.0 
+* Mod release
 
 == About this mod ==
 The Imahara class mod adds an alternate-timeline Oberth class from the 31st Century. This started as a joke between our team upon seeing a Star Trek USS Ambassador with the Galaxy Quest's NSEA Protector "nacelles", and then that 31st Century ship being practically a Mass Effect ripoff, and ended up like this. Enjoy.

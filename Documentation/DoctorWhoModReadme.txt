@@ -1,4 +1,8 @@
 === Changelong ===
+1.0.6
+* Small fixes to a few torpedo scripts, to prevent issues with Breen Drainer Immunity Tech breaking them.
+1.0.5
+* As per Dasher42's request, added the SDK License and Foundation license readme.
 1.0.4
 * Dalek Void Ship, Cult of Skaro and Genesis Ark added.
 1.0.3

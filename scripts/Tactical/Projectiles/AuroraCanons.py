@@ -22,7 +22,7 @@ import App
 def Create(pTorp):
 
 	kOuterShellColor = App.TGColorA()
-	kOuterShellColor.SetRGBA(84.0 / 255.0, 67.0 / 255.0, 255.0 / 255.0, 1.000000)	
+	kOuterShellColor.SetRGBA(255.0 / 255.0, 250.0 / 255.0, 100.0 / 255.0, 1.000000)	
 	kOuterCoreColor = App.TGColorA()
 	kOuterCoreColor.SetRGBA(255.0 / 255.0, 255.0 / 255.0, 255.0 / 255.0, 1.000000)
 
