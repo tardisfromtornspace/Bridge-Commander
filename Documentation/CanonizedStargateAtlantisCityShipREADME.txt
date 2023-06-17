@@ -9,7 +9,7 @@
 
 == What does this mod do ==
 This mod makes the Atlantis and AncientCity from the Stargate pack 3.0 far more canonical by tweaking their shields and weaponry:
-* Shields now follow canon configuration (shiels cannot normally drop unless the Main Battery/ZPM has been depleted).
+* Shields now follow canon configuration (shields cannot normally drop unless the Main Battery/ZPM has been depleted).
 * Drones tweak:
 ** Power reduction by a third.
 ** Increased range and lifetime.
