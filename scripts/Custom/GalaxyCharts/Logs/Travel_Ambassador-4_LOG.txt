@@ -1,0 +1,60 @@
+#This is the dump of the LogCreator: <Ambassador-4 Travel Logger LogCreator_kZCk5bGtAJ5l>
+#This log file was created on: 19:14:52.856 of 17/June/2023, Saturday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>19:14:52.856 of 17/June/2023, Saturday
+#>>>Initialized Ambassador-4 Travel logger
+#>>>SELF = <Ambassador-4(8465822) Travel_Sw600er5rE2i>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Cube-1
+## -------------------- ##
+####################
+#######>>>19:15:9.335 of 17/June/2023, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>19:15:9.906 of 17/June/2023, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>19:15:10.619 of 17/June/2023, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>19:15:11.147 of 17/June/2023, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>19:15:12.040 of 17/June/2023, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>19:15:12.570 of 17/June/2023, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>19:15:13.285 of 17/June/2023, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>19:15:13.967 of 17/June/2023, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+########################################
+# 19:24:46.262 of 17/June/2023, Saturday
+#Ending of log dump - User is quiting the game
+########################################

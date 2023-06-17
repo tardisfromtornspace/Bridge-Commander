@@ -1,4 +1,6 @@
 == Changelog ==
+0.7 - now torpedoes, pulses and phasers may get resisted as well
+0.6 - made all the counters modular so they are in scripts/Custom/Techs/BorgAdaptationsDefensive, in order to prevent people trying to monkey-patch the file.
 0.5 - added the modified KM Borg Custom/ships files: BorgDiamond, borgshuttle, LowCube, and Sphere
 0.4 - first unofficial release of this mod, for feedback
 

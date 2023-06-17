@@ -1,0 +1,29 @@
+#This is the dump of the LogCreator: <Ambassador-6 Travel Logger[2] LogCreator_gp9bEpx72Sxp>
+#This log file was created on: 16:17:13.084 of 17/June/2023, Saturday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>16:17:13.084 of 17/June/2023, Saturday
+#>>>Initialized Ambassador-6 Travel logger
+#>>>SELF = <Ambassador-6(335236) Travel_h359ssueJx2G>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Ship is dead or dying
+#>>>Ship is dead or dying (at SetDestination)
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Ship is dead or dying (at SetDestination)
+#>>>Set Exit Placement Name as None
+#>>>Enable Towing: 0
+#>>>Travelling procedures initiated...
+#>>> -Ship is dead or dying
+########################################
+# 16:31:8.368 of 17/June/2023, Saturday
+#Ending of log dump - User is quiting the game
+########################################

@@ -1,0 +1,36 @@
+#This is the dump of the LogCreator: <Shuttle - 22 Travel Logger LogCreator_6PdbP76Etw7Y>
+#This log file was created on: 19:23:16.285 of 17/June/2023, Saturday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>19:23:16.285 of 17/June/2023, Saturday
+#>>>Initialized Shuttle - 22 Travel logger
+#>>>SELF = <Shuttle - 22(9323870) Travel_29ya2bJ90uXi>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>19:23:22.575 of 17/June/2023, Saturday
+#>>>Updated Target Ship = Cube-1
+## -------------------- ##
+####################
+#######>>>19:23:47.556 of 17/June/2023, Saturday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 19:24:46.262 of 17/June/2023, Saturday
+#Ending of log dump - User is quiting the game
+########################################

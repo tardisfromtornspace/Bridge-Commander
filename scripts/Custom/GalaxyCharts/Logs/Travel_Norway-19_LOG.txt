@@ -1,0 +1,57 @@
+#This is the dump of the LogCreator: <Norway-19 Travel Logger LogCreator_Tukin153eFun>
+#This log file was created on: 14:10:39.631 of 17/June/2023, Saturday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>14:10:39.631 of 17/June/2023, Saturday
+#>>>Initialized Norway-19 Travel logger
+#>>>SELF = <Norway-19(113718) Travel_t48aeMaSN2ze>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Cube-1
+## -------------------- ##
+####################
+#######>>>14:11:3.015 of 17/June/2023, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>14:11:3.750 of 17/June/2023, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>14:11:4.373 of 17/June/2023, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>14:11:5.024 of 17/June/2023, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>14:11:5.724 of 17/June/2023, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>14:11:6.454 of 17/June/2023, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>14:18:14.534 of 17/June/2023, Saturday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 14:18:20.284 of 17/June/2023, Saturday
+#Ending of log dump - User is quiting the game
+########################################

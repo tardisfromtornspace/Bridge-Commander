@@ -1,0 +1,57 @@
+#This is the dump of the LogCreator: <type9 - 2 Travel Logger LogCreator_0joI7Njcd22w>
+#This log file was created on: 19:15:36.811 of 17/June/2023, Saturday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>19:15:36.811 of 17/June/2023, Saturday
+#>>>Initialized type9 - 2 Travel logger
+#>>>SELF = <type9 - 2(8602224) Travel_bwoS4r4ODq4F>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Cube-1
+## -------------------- ##
+####################
+#######>>>19:15:56.779 of 17/June/2023, Saturday
+#>>>Updated Target Ship = sphere - 4
+## -------------------- ##
+####################
+#######>>>19:17:35.867 of 17/June/2023, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>19:17:37.917 of 17/June/2023, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>19:17:39.046 of 17/June/2023, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>19:17:40.673 of 17/June/2023, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>19:18:1.528 of 17/June/2023, Saturday
+#>>>Updated Target Ship = Cube-1
+########################################
+# 19:24:46.262 of 17/June/2023, Saturday
+#Ending of log dump - User is quiting the game
+########################################

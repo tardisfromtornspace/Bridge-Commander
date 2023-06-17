@@ -1,0 +1,2872 @@
+#This is the dump of the LogCreator: <GalaxySaucer 3 Travel Logger LogCreator_x6oq1an0d58P>
+#This log file was created on: 14:10:48.826 of 17/June/2023, Saturday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>14:10:48.826 of 17/June/2023, Saturday
+#>>>Initialized GalaxySaucer 3 Travel logger
+#>>>SELF = <GalaxySaucer 3(151949) Travel_ZfdgXk1uYv1w>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>14:11:9.888 of 17/June/2023, Saturday
+#>>>Updated Target Ship = Cube-1
+#>>>Can Chase Target = 0
+## -------------------- ##
+####################
+#######>>>14:11:10.137 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:10.583 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:10.690 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:10.791 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:10.957 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:11.084 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:11.214 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:11.414 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:11.579 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:11.746 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:11.868 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:12.030 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:12.151 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:12.328 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:12.453 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:12.787 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:12.886 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:13.036 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:13.278 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:13.387 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:13.639 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:13.877 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:14.043 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:14.151 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:14.318 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:14.422 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:14.542 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:14.713 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:15.015 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:15.383 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:15.557 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:15.729 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:15.924 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:16.041 of 17/June/2023, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>14:11:16.161 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:16.266 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:16.443 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:16.673 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:16.776 of 17/June/2023, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:16.949 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:17.140 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:17.334 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:17.451 of 17/June/2023, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:17.578 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:17.891 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:18.004 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:18.116 of 17/June/2023, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:18.386 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:18.513 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:18.739 of 17/June/2023, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:19.336 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:19.434 of 17/June/2023, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>14:11:19.642 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:19.772 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:19.873 of 17/June/2023, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>14:11:25.076 of 17/June/2023, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:25.773 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:25.910 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:26.020 of 17/June/2023, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:26.398 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:26.603 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:26.756 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:26.884 of 17/June/2023, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:27.013 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:27.241 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:27.412 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>14:11:27.775 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:27.893 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:28.170 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:28.312 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>14:11:28.422 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:28.545 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:28.779 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:28.893 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:29.032 of 17/June/2023, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:29.234 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:29.344 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:29.461 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:29.582 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:29.730 of 17/June/2023, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:30.113 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:30.241 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:30.346 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:30.468 of 17/June/2023, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>14:11:30.839 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:30.951 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:31.070 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:31.182 of 17/June/2023, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:31.546 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:31.707 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:31.911 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:32.022 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:32.268 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:32.444 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:32.555 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:32.847 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:33.287 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:33.393 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:33.513 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:33.665 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:33.803 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:34.049 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:34.525 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:34.802 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:35.012 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:35.353 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:35.554 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:35.678 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:35.779 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:35.907 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:36.445 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:36.553 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:36.848 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:37.047 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:37.359 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:37.495 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:37.797 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:37.947 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:38.171 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:38.397 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:38.609 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:38.724 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:38.840 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:39.024 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:39.136 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:39.331 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:39.791 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:39.907 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:40.066 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:40.227 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:40.363 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:40.929 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:41.039 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:41.258 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:42.003 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:42.133 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:42.247 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:42.380 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:42.832 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:42.989 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:43.156 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:43.352 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:43.467 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:43.669 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:43.915 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:44.181 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:44.330 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:44.476 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:44.581 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:44.685 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:45.251 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:45.496 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:45.622 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:45.959 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:46.426 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:47.298 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:47.433 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:47.646 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:48.043 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:48.181 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:48.496 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:48.588 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:48.725 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:48.838 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:49.152 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:49.308 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:49.931 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:50.132 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:50.485 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:50.749 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:50.877 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:51.035 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:51.181 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:51.543 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:51.662 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:51.791 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:52.583 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:52.705 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:53.752 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:53.932 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:54.138 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:54.499 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:54.624 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:55.310 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:56.002 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:56.551 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:56.790 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:56.911 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:57.079 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:57.780 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:57.907 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:58.369 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:58.792 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:58.921 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:59.105 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:11:59.559 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:12:0.119 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:12:0.294 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:12:0.841 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:12:1.500 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:12:2.833 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:12:3.487 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:12:3.792 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:12:3.963 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:12:4.206 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:12:4.328 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:12:4.492 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:12:4.646 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:13:41.548 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:13:41.684 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:13:41.816 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:13:41.908 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:13:42.057 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:13:42.266 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:13:42.546 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:13:42.696 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:13:43.009 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:13:43.149 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:13:43.370 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:13:43.950 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:13:44.086 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:13:44.314 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:13:44.495 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:13:44.638 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:13:44.797 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:13:45.071 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:13:45.817 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:13:46.099 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:13:46.373 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:13:46.771 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:13:46.898 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:13:47.248 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:13:47.648 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:13:50.563 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:13:51.118 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:13:51.340 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:13:51.453 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:13:51.618 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:13:51.771 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:13:52.309 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:13:52.649 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:13:53.256 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:13:53.422 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:13:53.824 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:13:54.294 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:13:54.468 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:13:54.661 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:13:55.326 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:13:55.478 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:13:55.853 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:13:56.714 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:13:57.207 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:13:57.636 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:13:58.685 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:13:58.919 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:13:59.128 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:13:59.267 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:13:59.403 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:13:59.522 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:13:59.896 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:0.051 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:0.515 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:1.318 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:1.816 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:2.000 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:2.546 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:2.903 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:3.030 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:3.190 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:3.308 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:4.338 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:4.993 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:5.451 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:5.669 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:5.935 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:6.105 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:6.515 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:6.738 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:7.108 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:7.315 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:7.526 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:7.658 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:8.254 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:8.591 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:8.732 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:9.849 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:9.994 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:10.601 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:11.065 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:11.292 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:11.414 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:11.656 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:11.910 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:13.676 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:14.557 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:14.788 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:14.991 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:15.248 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:15.786 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:16.069 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:16.636 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:16.793 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:17.006 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:17.233 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:18.017 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:18.160 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:18.323 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:18.606 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:18.768 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:18.929 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:19.112 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:19.341 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:19.501 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:19.646 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:19.910 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:20.261 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:20.884 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:21.617 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:22.377 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:22.792 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:22.920 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:23.481 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:23.928 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:24.570 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:24.833 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:25.754 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:25.958 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:26.096 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:26.728 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:27.053 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:27.488 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:27.993 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:28.536 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:28.901 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:29.039 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:29.291 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:30.152 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:30.444 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:31.008 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:31.297 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:31.502 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:31.625 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:31.736 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:32.282 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:32.592 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:32.904 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:33.069 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:34.266 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:34.714 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:34.984 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:35.092 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:35.787 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:36.013 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:36.587 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:36.902 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:37.228 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:37.510 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:38.241 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:39.002 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:39.233 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:39.592 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:39.825 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:40.290 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:40.508 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:40.896 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:41.212 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:41.419 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:42.585 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:42.775 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:44.366 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:44.497 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:44.663 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:44.763 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:44.936 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:45.227 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:46.100 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:46.489 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:46.604 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:46.772 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:46.927 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:47.142 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:48.135 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:48.576 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:48.869 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:49.206 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:49.339 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:49.529 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:50.722 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:50.929 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:51.120 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:52.227 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:53.232 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:53.393 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:53.527 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:53.676 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:53.792 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:55.633 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:56.834 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:57.031 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:57.156 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:57.383 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:57.786 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:57.894 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:58.203 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:59.316 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:59.506 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:59.691 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:14:59.839 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:0.143 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:0.605 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:1.345 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:1.605 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:1.716 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:1.904 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:2.041 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:3.036 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:3.406 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:3.609 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:3.783 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:4.025 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:4.547 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:4.710 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:5.405 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:6.776 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:6.928 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:7.550 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:8.829 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:11.195 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:11.330 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:11.475 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:11.632 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:11.773 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:11.891 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:12.016 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:12.157 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:12.418 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:12.579 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:12.685 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:12.829 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:13.217 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:13.819 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:14.107 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:14.411 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:14.916 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:15.056 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:15.193 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:15.378 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:15.855 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:16.133 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:16.327 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:17.022 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:17.775 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:18.246 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:18.357 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:18.665 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:19.072 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:19.487 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:19.665 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:20.087 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:21.347 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:21.620 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:22.280 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:22.602 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:22.704 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:22.836 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:23.054 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:24.712 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:24.834 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:24.965 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:25.065 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:25.208 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:25.381 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:26.705 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:26.939 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:27.080 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:27.234 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:28.285 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:28.523 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:28.723 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:29.569 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:31.152 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:31.297 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:32.595 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:32.814 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:33.114 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:33.993 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:34.245 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:35.443 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:35.754 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:36.332 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:36.484 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:38.275 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:39.349 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:39.580 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:39.861 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:40.365 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:40.564 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:42.427 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:43.038 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:44.036 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:44.348 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:45.882 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:46.143 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:46.356 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:46.575 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:46.966 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:48.273 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:49.624 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:50.857 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:51.193 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:52.508 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:53.178 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:54.121 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:55.314 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:57.579 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:57.676 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:59.391 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:59.572 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:15:59.769 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:16:0.054 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:16:0.309 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:16:0.576 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:16:2.195 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:16:2.640 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:16:3.308 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:16:3.764 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:16:3.885 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:16:4.101 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:16:5.706 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:16:7.526 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:16:7.696 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:16:7.807 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:16:8.369 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:16:8.726 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:16:8.843 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:16:10.082 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:16:10.947 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:16:11.553 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:16:12.198 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:16:12.410 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:16:12.943 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:16:13.660 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:16:13.835 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:16:14.154 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:16:14.390 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:16:14.638 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:16:14.874 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:16:16.631 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:16:16.846 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:16:17.370 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:16:17.564 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:16:18.092 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:16:18.305 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:16:18.963 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:16:20.141 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:16:20.715 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:16:21.315 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:16:22.129 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:16:22.645 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:16:22.913 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:16:23.636 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:16:23.830 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:16:23.954 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:16:24.113 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:16:24.221 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:16:24.547 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:16:25.777 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:16:26.893 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:16:27.064 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:16:27.216 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:16:27.410 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:16:27.956 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:16:28.247 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:16:29.600 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:16:29.811 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:16:30.052 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:16:30.195 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:16:30.326 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:16:30.574 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:16:30.721 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:16:31.502 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:16:31.662 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:16:31.875 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:16:34.342 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:16:34.683 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:16:34.783 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:16:35.081 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:16:35.591 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:16:36.328 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:16:37.401 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:16:37.512 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:16:37.658 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:16:38.090 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:16:38.306 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:16:38.973 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:16:40.547 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:17:28.202 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:17:28.445 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:17:28.828 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:17:28.958 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:17:29.988 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:17:30.101 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:17:30.715 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:17:31.230 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:17:31.536 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:17:31.644 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:17:32.226 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:17:32.403 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:17:32.706 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:17:33.700 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:17:34.397 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:17:34.614 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:17:35.318 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:17:36.231 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:17:36.350 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:17:36.740 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:17:37.572 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:17:37.946 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:17:39.002 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:17:39.320 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:17:40.047 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:17:41.083 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:17:41.732 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:17:42.669 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:17:44.298 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:17:44.919 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:17:45.213 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:17:45.892 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:17:46.112 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:17:47.786 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:17:48.191 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:17:49.081 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:17:49.280 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:17:49.480 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:17:49.804 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:17:50.094 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:17:50.624 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:17:51.200 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:17:51.764 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:17:53.020 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:17:53.247 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:17:53.731 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:17:54.303 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:17:55.704 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:17:56.860 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:17:57.100 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:17:57.338 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:17:58.082 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:17:58.393 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:17:58.609 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:17:59.192 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:18:0.475 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:18:0.659 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:18:0.942 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:18:1.268 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:18:1.754 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:18:4.014 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:18:4.188 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:18:4.630 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:18:4.791 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:18:5.137 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:18:7.658 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:18:7.765 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:18:7.973 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:18:8.064 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:18:8.174 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:18:8.351 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:18:8.557 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:18:8.849 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:18:9.066 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:18:9.492 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:18:10.034 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:18:10.653 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:18:11.388 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:18:11.535 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:18:11.693 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:18:11.947 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:18:12.560 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:18:12.688 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:18:13.183 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:18:14.057 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:18:14.534 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:18:15.383 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:18:15.649 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:18:15.790 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:18:15.927 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:18:16.035 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:18:16.343 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:18:16.455 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:18:16.588 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:18:16.904 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:18:17.050 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:18:17.170 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:18:17.335 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:18:17.533 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:18:17.739 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:18:18.048 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:18:18.376 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:18:18.486 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:18:18.608 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:18:18.775 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:18:19.167 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:18:19.414 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:18:19.518 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:18:19.630 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:18:20.176 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>14:18:20.284 of 17/June/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+########################################
+# 14:18:20.284 of 17/June/2023, Saturday
+#Ending of log dump - User is quiting the game
+########################################

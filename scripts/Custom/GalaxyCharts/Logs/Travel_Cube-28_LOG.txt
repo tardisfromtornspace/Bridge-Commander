@@ -1,0 +1,33 @@
+#This is the dump of the LogCreator: <Cube-28 Travel Logger LogCreator_N8F5tqovg87O>
+#This log file was created on: 13:14:23.503 of 17/June/2023, Saturday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>13:14:23.503 of 17/June/2023, Saturday
+#>>>Initialized Cube-28 Travel logger
+#>>>SELF = <Cube-28(2322017) Travel_8053J13GnD50>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>13:15:24.187 of 17/June/2023, Saturday
+#>>>Arrived Events:  added event <C TGEvent instance at _44f55fc8_p_TGEvent>
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>13:15:43.345 of 17/June/2023, Saturday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

@@ -1,0 +1,85 @@
+#This is the dump of the LogCreator: <Cube-6 Travel Logger[2] LogCreator_pRXyje07XJa3>
+#This log file was created on: 17:46:34.938 of 17/June/2023, Saturday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>17:46:34.938 of 17/June/2023, Saturday
+#>>>Initialized Cube-6 Travel logger
+#>>>SELF = <Cube-6(189601) Travel_8R61WSbiMU2k>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>17:47:2.321 of 17/June/2023, Saturday
+#>>>Initialized Cube-6 Travel logger
+#>>>SELF = <Cube-6(238682) Travel_4Y5OcOf6yWnr>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>17:48:10.764 of 17/June/2023, Saturday
+#>>>Arrived Events:  added event <C TGEvent instance at _3c6c7c78_p_TGEvent>
+#>>>Updated Target Ship = Player
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>17:51:14.101 of 17/June/2023, Saturday
+#>>>Initialized Cube-6 Travel logger
+#>>>SELF = <Cube-6(590722) Travel_5uXHy0edgBGG>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>17:52:3.284 of 17/June/2023, Saturday
+#>>>Arrived Events:  added event <C TGEvent instance at _3c6d1570_p_TGEvent>
+#>>>Updated Target Ship = Player
+########################################
+# 17:55:13.018 of 17/June/2023, Saturday
+#Ending of log dump - User is quiting the game
+########################################
+########################################
+# 17:55:13.018 of 17/June/2023, Saturday
+#Ending of log dump - User is quiting the game
+########################################
+########################################
+# 17:55:13.018 of 17/June/2023, Saturday
+#Ending of log dump - User is quiting the game
+########################################

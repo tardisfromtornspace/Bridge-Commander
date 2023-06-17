@@ -1,0 +1,28 @@
+#This is the dump of the LogCreator: <sphere - 5 Travel Logger LogCreator_Tz46aNAfNaS3>
+#This log file was created on: 13:8:58.174 of 17/June/2023, Saturday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>13:8:58.174 of 17/June/2023, Saturday
+#>>>Initialized sphere - 5 Travel logger
+#>>>SELF = <sphere - 5(1760955) Travel_0t8qH7190vps>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>13:9:8.129 of 17/June/2023, Saturday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
