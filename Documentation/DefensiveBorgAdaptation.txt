@@ -1,4 +1,5 @@
 == Changelog ==
+0.8 - Added Borg Detector to the list of Borg ships with this perk
 0.7 - now torpedoes, pulses and phasers may get resisted as well
 0.6 - made all the counters modular so they are in scripts/Custom/Techs/BorgAdaptationsDefensive, in order to prevent people trying to monkey-patch the file.
 0.5 - added the modified KM Borg Custom/ships files: BorgDiamond, borgshuttle, LowCube, and Sphere
@@ -13,7 +14,7 @@ For more details, read the licenses and readmes inside each file - I've done it 
 
 == Dependancies ==
 All of these must be installed before installing this mod, in this order:
-* Foundation + Kobayashi Maru (has Foundation already installed - the most recent version of KM, the better).
+* Foundation + Kobayashi Maru + DS9FX (KM has Foundation and DS9FX already installed - the most recent version of KM, the better).
 
 == Credits ==
 * Everyone involved in Foundation - without you this would have been a real pain to do (please read the separate Foundation.txt license) - Banbury, Dasher42, DigitalFriend, MLeo, Nanobyte and Sleight42, among others
@@ -30,4 +31,4 @@ This mod falls under the GNU LESSER GENERAL PUBLIC LICENSE Version 3, 29 June 20
 
 
 == Bugs ==
-* No bugs noticed, but if you notice them, pelase feel free to share and report them
+* No bugs noticed, but if you notice them, please feel free to share and report them
