@@ -1,0 +1,27 @@
+#This is the dump of the LogCreator: <SigmaWalkerScienceLab 15 Travel Logger LogCreator_p79Y9Qr1C1Un>
+#This log file was created on: 22:57:0.936 of 18/June/2023, Sunday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>22:57:0.936 of 18/June/2023, Sunday
+#>>>Initialized SigmaWalkerScienceLab 15 Travel logger
+#>>>SELF = <SigmaWalkerScienceLab 15(738098) Travel_gthe401j9VP2>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>22:57:13.336 of 18/June/2023, Sunday
+#>>>Updated Target Ship = ThirdspaceFighter 5

@@ -1,0 +1,23 @@
+#This is the dump of the LogCreator: <Unknown Anomaly E Travel Logger LogCreator_m0NbDP897neB>
+#This log file was created on: 23:8:8.034 of 18/June/2023, Sunday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>23:8:8.034 of 18/June/2023, Sunday
+#>>>Initialized Unknown Anomaly E Travel logger
+#>>>SELF = <Unknown Anomaly E(456854) Travel_B0GI571pi085>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization

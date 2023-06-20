@@ -1,13 +1,13 @@
-#This is the dump of the LogCreator: <Gravity Manager LogCreator_6IlKwKSzz8o6>
-#This log file was created on: 17:33:54.0 of 18/June/2023, Sunday
+#This is the dump of the LogCreator: <Gravity Manager LogCreator_cDf4Kias72pD>
+#This log file was created on: 23:0:24.0 of 18/June/2023, Sunday
 ########################################
 ## -------------------- ##
 ####################
-#######>>>17:33:54.0 of 18/June/2023, Sunday
-#>>>Initialized GravityManager_6W1vT06KCJN4 logger
+#######>>>23:0:24.0 of 18/June/2023, Sunday
+#>>>Initialized GravityManager_4RpZ06dqEcdo logger
 ## -------------------- ##
 ####################
-#######>>>17:34:10.227 of 18/June/2023, Sunday
+#######>>>23:2:0.156 of 18/June/2023, Sunday
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
@@ -17,38 +17,163 @@
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_VYY3s3m0ItE0>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_78ojaiB8cr6A>]
 #>>>Planets/Suns List: ['Belaruz 4']
 #>>>Refreshed Ship List: ['Player']
-#>>>Updated radius for grav well <Belaruz 4 GravityWell_VYY3s3m0ItE0>, radius is now 1607.49780273
+#>>>Updated radius for grav well <Belaruz 4 GravityWell_78ojaiB8cr6A>, radius is now 1609.50073242
 ## -------------------- ##
 ####################
-#######>>>17:34:45.099 of 18/June/2023, Sunday
+#######>>>23:4:13.464 of 18/June/2023, Sunday
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_OD870V65H3tO>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_lUnXzi2YKOgI>]
 #>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player', 'Galor-1', 'Galor-2', 'Galor-3', 'Galor-4']
-#>>>Refreshed Ship List: ['Player', 'Galor-1', 'Galor-2', 'Galor-3', 'Galor-4']
-#>>>Refreshed Ship List: ['Player', 'Galor-1', 'Galor-2', 'Galor-3', 'Galor-4']
-#>>>Refreshed Ship List: ['Player', 'Galor-1', 'Galor-2', 'Galor-3', 'Galor-4']
-#>>>Refreshed Ship List: ['Player', 'Galor-1', 'Galor-2', 'Galor-3', 'Galor-4']
+#>>>Refreshed Ship List: ['Player', 'Lordship-1', 'Thoughtforce-2', 'The Traveller-3', 'Dark Knife-7', 'Triumviron-8', 'Vorlon Cruiser-9', 'Vorlon Destroyer-10', 'Vorlon Fighter-11', 'Warship-12', 'Warship-13']
+#>>>Refreshed Ship List: ['Player', 'Lordship-1', 'Thoughtforce-2', 'The Traveller-3', 'Dark Knife-7', 'Triumviron-8', 'Vorlon Cruiser-9', 'Vorlon Destroyer-10', 'Vorlon Fighter-11', 'Warship-12', 'Warship-13']
+#>>>Refreshed Ship List: ['Player', 'Lordship-1', 'Thoughtforce-2', 'The Traveller-3', 'Dark Knife-7', 'Triumviron-8', 'Vorlon Cruiser-9', 'Vorlon Destroyer-10', 'Vorlon Fighter-11', 'Warship-12', 'Warship-13']
+#>>>Refreshed Ship List: ['Player', 'Lordship-1', 'Thoughtforce-2', 'The Traveller-3', 'Dark Knife-7', 'Triumviron-8', 'Vorlon Cruiser-9', 'Vorlon Destroyer-10', 'Vorlon Fighter-11', 'Warship-12', 'Warship-13']
+#>>>Refreshed Ship List: ['Player', 'Lordship-1', 'Thoughtforce-2', 'The Traveller-3', 'Dark Knife-7', 'Triumviron-8', 'Vorlon Cruiser-9', 'Vorlon Destroyer-10', 'Vorlon Fighter-11', 'Warship-12', 'Warship-13']
+#>>>Refreshed Ship List: ['Player', 'Lordship-1', 'Thoughtforce-2', 'The Traveller-3', 'Dark Knife-7', 'Triumviron-8', 'Vorlon Cruiser-9', 'Vorlon Destroyer-10', 'Vorlon Fighter-11', 'Warship-12', 'Warship-13']
+#>>>Refreshed Ship List: ['Player', 'Lordship-1', 'Thoughtforce-2', 'The Traveller-3', 'Dark Knife-7', 'Triumviron-8', 'Vorlon Cruiser-9', 'Vorlon Destroyer-10', 'Vorlon Fighter-11', 'Warship-12', 'Warship-13']
+#>>>Refreshed Ship List: ['Player', 'Lordship-1', 'Thoughtforce-2', 'The Traveller-3', 'Dark Knife-7', 'Triumviron-8', 'Vorlon Cruiser-9', 'Vorlon Destroyer-10', 'Vorlon Fighter-11', 'Warship-12', 'Warship-13']
+#>>>Refreshed Ship List: ['Player', 'Lordship-1', 'Thoughtforce-2', 'The Traveller-3', 'Dark Knife-7', 'Triumviron-8', 'Vorlon Cruiser-9', 'Vorlon Destroyer-10', 'Vorlon Fighter-11', 'Warship-12', 'Warship-13']
+#>>>Refreshed Ship List: ['Player', 'Lordship-1', 'Thoughtforce-2', 'The Traveller-3', 'Dark Knife-7', 'Triumviron-8', 'Vorlon Cruiser-9', 'Vorlon Destroyer-10', 'Vorlon Fighter-11', 'Warship-12', 'Warship-13']
+#>>>Refreshed Ship List: ['Player', 'Lordship-1', 'Thoughtforce-2', 'The Traveller-3', 'Dark Knife-7', 'Triumviron-8', 'Vorlon Cruiser-9', 'Vorlon Destroyer-10', 'Vorlon Fighter-11', 'Warship-12', 'Warship-13']
+#>>>Refreshed Ship List: ['Player', 'Lordship-1', 'Thoughtforce-2', 'The Traveller-3', 'Dark Knife-7', 'Triumviron-8', 'Vorlon Cruiser-9', 'Vorlon Destroyer-10', 'Vorlon Fighter-11', 'Warship-12', 'Warship-13']
+#>>>Refreshed Ship List: ['Player', 'Lordship-1', 'Thoughtforce-2', 'The Traveller-3', 'Dark Knife-7', 'Triumviron-8', 'Vorlon Cruiser-9', 'Vorlon Destroyer-10', 'Vorlon Fighter-11', 'Warship-12', 'Warship-13']
+#>>>Refreshed Ship List: ['Player', 'Lordship-1', 'Thoughtforce-2', 'The Traveller-3', 'Dark Knife-7', 'Triumviron-8', 'Vorlon Cruiser-9', 'Vorlon Destroyer-10', 'Vorlon Fighter-11', 'Warship-12', 'Warship-13']
 ## -------------------- ##
 ####################
-#######>>>17:35:40.019 of 18/June/2023, Sunday
-#>>>Refreshed Ship List: ['Player', 'Galor-1', 'Galor-3', 'Galor-4']
+#######>>>23:4:55.253 of 18/June/2023, Sunday
+#>>>Refreshed Ship List: ['Player', 'Lordship-1', 'Thoughtforce-2', 'The Traveller-3', 'Dark Knife-7', 'Triumviron-8', 'Vorlon Cruiser-9', 'Vorlon Destroyer-10', 'Vorlon Fighter-11', 'Warship-12', 'Warship-13']
 ## -------------------- ##
 ####################
-#######>>>17:35:50.219 of 18/June/2023, Sunday
-#>>>Refreshed Ship List: ['Player', 'Galor-1', 'Galor-4']
+#######>>>23:5:35.716 of 18/June/2023, Sunday
+#>>>Refreshed Ship List: ['Player', 'Lordship-1', 'Thoughtforce-2', 'The Traveller-3', 'Dark Knife-7', 'Triumviron-8', 'Vorlon Destroyer-10', 'Vorlon Fighter-11', 'Warship-12', 'Warship-13']
 ## -------------------- ##
 ####################
-#######>>>17:36:11.998 of 18/June/2023, Sunday
-#>>>Refreshed Ship List: ['Player', 'Galor-4']
+#######>>>23:5:35.943 of 18/June/2023, Sunday
+#>>>Refreshed Ship List: ['Player', 'Lordship-1', 'Thoughtforce-2', 'The Traveller-3', 'Dark Knife-7', 'Triumviron-8', 'Vorlon Destroyer-10', 'Warship-12', 'Warship-13']
 ## -------------------- ##
 ####################
-#######>>>17:36:30.010 of 18/June/2023, Sunday
-#>>>Refreshed Ship List: ['Player']
-########################################
-# 17:36:31.599 of 18/June/2023, Sunday
-#Ending of log dump - User is quiting the game
-########################################
+#######>>>23:5:45.219 of 18/June/2023, Sunday
+#>>>Refreshed Ship List: ['Player', 'Lordship-1', 'Thoughtforce-2', 'The Traveller-3', 'Dark Knife-7', 'Triumviron-8', 'Vorlon Destroyer-10', 'Warship-12', 'Warship-13']
+## -------------------- ##
+####################
+#######>>>23:6:59.654 of 18/June/2023, Sunday
+#>>>Refreshed Ship List: ['Player', 'Thoughtforce-2', 'The Traveller-3', 'Dark Knife-7', 'Triumviron-8', 'Warship-12', 'Warship-13']
+## -------------------- ##
+####################
+#######>>>23:8:8.034 of 18/June/2023, Sunday
+#>>>Refreshed Ship List: ['Player', 'Thoughtforce-2', 'Dark Knife-7', 'Warship-12', 'Warship-13']
+## -------------------- ##
+####################
+#######>>>23:9:13.883 of 18/June/2023, Sunday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_hXo5E6y0NG5R>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Dark Knife-7', 'Warship-12', 'Warship-13', 'Player']
+## -------------------- ##
+####################
+#######>>>23:9:29.318 of 18/June/2023, Sunday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_skc7w3y5G80m>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player', 'Lordship-1', 'Thoughtforce-2', 'The Traveller-3', 'Dark Knife-7', 'Triumviron-8', 'Vorlon Cruiser-9', 'Vorlon Destroyer-10', 'Vorlon Fighter-11', 'Warship-12']
+#>>>Refreshed Ship List: ['Player', 'Lordship-1', 'Thoughtforce-2', 'The Traveller-3', 'Dark Knife-7', 'Triumviron-8', 'Vorlon Cruiser-9', 'Vorlon Destroyer-10', 'Vorlon Fighter-11', 'Warship-12']
+#>>>Refreshed Ship List: ['Player', 'Lordship-1', 'Thoughtforce-2', 'The Traveller-3', 'Dark Knife-7', 'Triumviron-8', 'Vorlon Cruiser-9', 'Vorlon Destroyer-10', 'Vorlon Fighter-11', 'Warship-12']
+#>>>Refreshed Ship List: ['Player', 'Lordship-1', 'Thoughtforce-2', 'The Traveller-3', 'Dark Knife-7', 'Triumviron-8', 'Vorlon Cruiser-9', 'Vorlon Destroyer-10', 'Vorlon Fighter-11', 'Warship-12']
+#>>>Refreshed Ship List: ['Player', 'Lordship-1', 'Thoughtforce-2', 'The Traveller-3', 'Dark Knife-7', 'Triumviron-8', 'Vorlon Cruiser-9', 'Vorlon Destroyer-10', 'Vorlon Fighter-11', 'Warship-12']
+#>>>Refreshed Ship List: ['Player', 'Lordship-1', 'Thoughtforce-2', 'The Traveller-3', 'Dark Knife-7', 'Triumviron-8', 'Vorlon Cruiser-9', 'Vorlon Destroyer-10', 'Vorlon Fighter-11', 'Warship-12']
+#>>>Refreshed Ship List: ['Player', 'Lordship-1', 'Thoughtforce-2', 'The Traveller-3', 'Dark Knife-7', 'Triumviron-8', 'Vorlon Cruiser-9', 'Vorlon Destroyer-10', 'Vorlon Fighter-11', 'Warship-12']
+#>>>Refreshed Ship List: ['Player', 'Lordship-1', 'Thoughtforce-2', 'The Traveller-3', 'Dark Knife-7', 'Triumviron-8', 'Vorlon Cruiser-9', 'Vorlon Destroyer-10', 'Vorlon Fighter-11', 'Warship-12']
+#>>>Refreshed Ship List: ['Player', 'Lordship-1', 'Thoughtforce-2', 'The Traveller-3', 'Dark Knife-7', 'Triumviron-8', 'Vorlon Cruiser-9', 'Vorlon Destroyer-10', 'Vorlon Fighter-11', 'Warship-12']
+#>>>Refreshed Ship List: ['Player', 'Lordship-1', 'Thoughtforce-2', 'The Traveller-3', 'Dark Knife-7', 'Triumviron-8', 'Vorlon Cruiser-9', 'Vorlon Destroyer-10', 'Vorlon Fighter-11', 'Warship-12']
+#>>>Refreshed Ship List: ['Player', 'Lordship-1', 'Thoughtforce-2', 'The Traveller-3', 'Dark Knife-7', 'Triumviron-8', 'Vorlon Cruiser-9', 'Vorlon Destroyer-10', 'Vorlon Fighter-11', 'Warship-12']
+#>>>Refreshed Ship List: ['Player', 'Lordship-1', 'Thoughtforce-2', 'The Traveller-3', 'Dark Knife-7', 'Triumviron-8', 'Vorlon Cruiser-9', 'Vorlon Destroyer-10', 'Vorlon Fighter-11', 'Warship-12']
+#>>>Refreshed Ship List: ['Player', 'Lordship-1', 'Thoughtforce-2', 'The Traveller-3', 'Dark Knife-7', 'Triumviron-8', 'Vorlon Cruiser-9', 'Vorlon Destroyer-10', 'Vorlon Fighter-11', 'Warship-12']
+## -------------------- ##
+####################
+#######>>>23:10:1.136 of 18/June/2023, Sunday
+#>>>Refreshed Ship List: ['Player', 'Lordship-1', 'Thoughtforce-2', 'The Traveller-3', 'Dark Knife-7', 'Triumviron-8', 'Vorlon Cruiser-9', 'Vorlon Destroyer-10', 'Warship-12']
+## -------------------- ##
+####################
+#######>>>23:10:2.200 of 18/June/2023, Sunday
+#>>>Refreshed Ship List: ['Player', 'Lordship-1', 'The Traveller-3', 'Dark Knife-7', 'Triumviron-8', 'Vorlon Cruiser-9', 'Vorlon Destroyer-10', 'Warship-12']
+## -------------------- ##
+####################
+#######>>>23:10:6.285 of 18/June/2023, Sunday
+#>>>Refreshed Ship List: ['Player', 'Lordship-1', 'The Traveller-3', 'Dark Knife-7', 'Triumviron-8', 'Vorlon Cruiser-9', 'Vorlon Destroyer-10', 'Warship-12']
+## -------------------- ##
+####################
+#######>>>23:10:7.949 of 18/June/2023, Sunday
+#>>>Refreshed Ship List: ['Player', 'Lordship-1', 'The Traveller-3', 'Dark Knife-7', 'Triumviron-8', 'Vorlon Cruiser-9', 'Warship-12']
+## -------------------- ##
+####################
+#######>>>23:10:21.352 of 18/June/2023, Sunday
+#>>>Refreshed Ship List: ['Player', 'Lordship-1', 'The Traveller-3', 'Dark Knife-7', 'Triumviron-8', 'Warship-12']
+## -------------------- ##
+####################
+#######>>>23:10:43.558 of 18/June/2023, Sunday
+#>>>Refreshed Ship List: ['Player', 'The Traveller-3', 'Dark Knife-7', 'Triumviron-8', 'Warship-12']
+## -------------------- ##
+####################
+#######>>>23:11:36.293 of 18/June/2023, Sunday
+#>>>Refreshed Ship List: ['Player', 'The Traveller-3', 'Dark Knife-7', 'Triumviron-8', 'Warship-12']
+## -------------------- ##
+####################
+#######>>>23:13:22.681 of 18/June/2023, Sunday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_95cYD9OHZiro>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['The Traveller-3', 'Dark Knife-7', 'Warship-12', 'Player']
+## -------------------- ##
+####################
+#######>>>23:13:58.329 of 18/June/2023, Sunday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_V0A3qLXAFOk6>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player', 'Warship-1']
+#>>>Refreshed Ship List: ['Player', 'Warship-1']
+## -------------------- ##
+####################
+#######>>>23:20:37.841 of 18/June/2023, Sunday
+#>>>Refreshed Ship List: []
+#>>>Added Player to the Ship List
+## -------------------- ##
+####################
+#######>>>23:20:38.690 of 18/June/2023, Sunday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_6OkNm51xV6wx>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Warship-1', 'Player']
+## -------------------- ##
+####################
+#######>>>23:21:16.207 of 18/June/2023, Sunday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_Xo1faZzdhQid>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player', 'Warship-1', 'Warship-2', 'Warship-3', 'Warship-4', 'Warship-5', 'Warship-6', 'Triumviron-7', 'Triumviron-8', 'Triumviron-9', 'Triumviron-10', 'Triumviron-11']
+#>>>Refreshed Ship List: ['Player', 'Warship-1', 'Warship-2', 'Warship-3', 'Warship-4', 'Warship-5', 'Warship-6', 'Triumviron-7', 'Triumviron-8', 'Triumviron-9', 'Triumviron-10', 'Triumviron-11']
+#>>>Refreshed Ship List: ['Player', 'Warship-1', 'Warship-2', 'Warship-3', 'Warship-4', 'Warship-5', 'Warship-6', 'Triumviron-7', 'Triumviron-8', 'Triumviron-9', 'Triumviron-10', 'Triumviron-11']
+#>>>Refreshed Ship List: ['Player', 'Warship-1', 'Warship-2', 'Warship-3', 'Warship-4', 'Warship-5', 'Warship-6', 'Triumviron-7', 'Triumviron-8', 'Triumviron-9', 'Triumviron-10', 'Triumviron-11']
+#>>>Refreshed Ship List: ['Player', 'Warship-1', 'Warship-2', 'Warship-3', 'Warship-4', 'Warship-5', 'Warship-6', 'Triumviron-7', 'Triumviron-8', 'Triumviron-9', 'Triumviron-10', 'Triumviron-11']
+#>>>Refreshed Ship List: ['Player', 'Warship-1', 'Warship-2', 'Warship-3', 'Warship-4', 'Warship-5', 'Warship-6', 'Triumviron-7', 'Triumviron-8', 'Triumviron-9', 'Triumviron-10', 'Triumviron-11']
+#>>>Refreshed Ship List: ['Player', 'Warship-1', 'Warship-2', 'Warship-3', 'Warship-4', 'Warship-5', 'Warship-6', 'Triumviron-7', 'Triumviron-8', 'Triumviron-9', 'Triumviron-10', 'Triumviron-11']
+#>>>Refreshed Ship List: ['Player', 'Warship-1', 'Warship-2', 'Warship-3', 'Warship-4', 'Warship-5', 'Warship-6', 'Triumviron-7', 'Triumviron-8', 'Triumviron-9', 'Triumviron-10', 'Triumviron-11']
+#>>>Refreshed Ship List: ['Player', 'Warship-1', 'Warship-2', 'Warship-3', 'Warship-4', 'Warship-5', 'Warship-6', 'Triumviron-7', 'Triumviron-8', 'Triumviron-9', 'Triumviron-10', 'Triumviron-11']
+#>>>Refreshed Ship List: ['Player', 'Warship-1', 'Warship-2', 'Warship-3', 'Warship-4', 'Warship-5', 'Warship-6', 'Triumviron-7', 'Triumviron-8', 'Triumviron-9', 'Triumviron-10', 'Triumviron-11']
+#>>>Refreshed Ship List: ['Player', 'Warship-1', 'Warship-2', 'Warship-3', 'Warship-4', 'Warship-5', 'Warship-6', 'Triumviron-7', 'Triumviron-8', 'Triumviron-9', 'Triumviron-10', 'Triumviron-11']
+#>>>Refreshed Ship List: ['Player', 'Warship-1', 'Warship-2', 'Warship-3', 'Warship-4', 'Warship-5', 'Warship-6', 'Triumviron-7', 'Triumviron-8', 'Triumviron-9', 'Triumviron-10', 'Triumviron-11']
+## -------------------- ##
+####################
+#######>>>23:23:18.723 of 18/June/2023, Sunday
+#>>>Refreshed Ship List: ['Player', 'Warship-1', 'Warship-2', 'Warship-3', 'Warship-4', 'Warship-5', 'Warship-6', 'Triumviron-7', 'Triumviron-8', 'Triumviron-10', 'Triumviron-11']
+## -------------------- ##
+####################
+#######>>>23:23:25.865 of 18/June/2023, Sunday
+#>>>Refreshed Ship List: ['Player', 'Warship-1', 'Warship-2', 'Warship-3', 'Warship-4', 'Warship-5', 'Warship-6', 'Triumviron-7', 'Triumviron-8', 'Triumviron-11']
+#>>>Refreshed Ship List: ['Player', 'Warship-1', 'Warship-2', 'Warship-3', 'Warship-4', 'Warship-5', 'Warship-6', 'Triumviron-7', 'Triumviron-8']
+## -------------------- ##
+####################
+#######>>>23:24:17.045 of 18/June/2023, Sunday
+#>>>Refreshed Ship List: ['Player', 'Warship-1', 'Warship-2', 'Warship-3', 'Warship-4', 'Warship-5', 'Warship-6', 'Triumviron-8']

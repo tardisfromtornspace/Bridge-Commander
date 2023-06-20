@@ -1,0 +1,29 @@
+#This is the dump of the LogCreator: <type9 - 14 Travel Logger LogCreator_78BcHyoB4WA1>
+#This log file was created on: 22:32:15.798 of 18/June/2023, Sunday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>22:32:15.798 of 18/June/2023, Sunday
+#>>>Initialized type9 - 14 Travel logger
+#>>>SELF = <type9 - 14(586180) Travel_1oN1n9aD61y0>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Cube-1
+## -------------------- ##
+####################
+#######>>>22:36:4.482 of 18/June/2023, Sunday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

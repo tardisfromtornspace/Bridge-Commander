@@ -1,4 +1,5 @@
 == Changelog ==
+0.9 - Added counter for Alex SL Gato's TachyonBeam Technology 
 0.8 - Added Borg Detector to the list of Borg ships with this perk
 0.7 - now torpedoes, pulses and phasers may get resisted as well
 0.6 - made all the counters modular so they are in scripts/Custom/Techs/BorgAdaptationsDefensive, in order to prevent people trying to monkey-patch the file.
