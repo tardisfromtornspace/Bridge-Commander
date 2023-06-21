@@ -1,4 +1,14 @@
 ==Changelog==
+1.0.6 -
+ Fixes: now that I know how to make things right, I've added some of the Techs used on the proepr file, to avoid overwriting defaults:
+   * The Special "Hull Polarizer"/Special field defense tech which was used as a watere-down Minbari-Earth Alliance-Vorlon PolyCrystalline Armour for the Excalibur now has its proper own file at scripts/Custom/Techs
+   * Fixed random bug that made the aforementioned tech from working at full capacity even after docking with a Starbase.
+   * Fixed Minbari Sharlin PolyCrystalline Armour not covering things completely.
+   * Fixed that the shield techs were inside the generic shield file, now they are at scrips/Custom/Techs/B5Defences.py . Left the expanded ATPFunctions library, though.
+ Licensing: 
+   * Added a bit more detailed sections to the readme.
+1.0.5 -
+ * Licensing: by petition of Dasher42, added the SDK license and Foundation readme.
 1.0.4 -
  New Features:
  * Some ships like the Victory and the Omegas gained automatic multi-targeting.
@@ -18,15 +28,23 @@
  * Minbari Sharlin hardpoint gained another Fusion Beam Cannon, as seen in Thirdspace movie.
 1.0.0 - Mod released. Verified functionality on Kobayashi Maru Mod, and both disk and GoG versions of STBC (thanks to THE SCI-FI KING and RetroBadger Gaming).
 
-
-***Basically every other Babylon 5 ship mod has been overhauled by Alex SL Gato to include Jumpspace Drive, usually additional weapons and techs, and to balance each other - for example we had a Minbari cruiser to the level of a Sovereign and then we had a regular Omega which crushed easily several Minbari Sharlins, that won't do.***
+== Waht does this mod do + Credits ==
+***Basically every other pre-existing Babylon 5 ship mod has been overhauled by Alex SL Gato to include Jumpspace Drive, usually additional weapons and techs, and to balance each other - for example we had a Minbari cruiser to the level of a Sovereign and then we had a regular Omega which crushed easily several Minbari Sharlins, that won't do.
+Additionally around 60+ ships from the Babylon 5 franchise have been added***
 
 - Most meshes and textures not present on the other mods/readmes were taken from the Celestia Motherlode or remodeled by Alex SL Gato (tardisfromtornspace) when too complex for the tools used, with Blender and Milkshape. When those tools failed, rebuilt from mostly scratch (Earth Alliance Explorer).
-- Icons done by Alex SL Gato.
+- Icons done by Alex SL Gato (by screenshotting the progress done in the Milkshape 3D tool).
 - scripts: for the most part Alex SL Gato, except the Babylon 5 Jumpspace technology, which was adapted from the Slipstream's creator by Alex SL Gato
 - mod/ships/hardpoint: Alex SL Gato.
 - Special shadow cloak/decloak sound: taken by Alex SL Gato from the Babylon 5 season 4 intro.
 - Movie intro: All credit to the original visual effects artists at Foundation Imaging and Netter Digital who made television history.
+- ATPFunctions: originally made by Apollo, later expanded by Alex SL Gato.
+- B5Defences: originally based on Shields.py by MLeoDaalder and Dasher42, then heavily modified by Alex SL Gato.
+
+Fulfilling both the SDK and LGPL licenses:
+THIS MOD IS NOT SUPPORTED BY ACTIVISION
+
+This mod falls under the GNU LESSER GENERAL PUBLIC LICENSE Version 3, 29 June 2007, both from any derivative or original work done to the mod. Everyone is permitted to copy and distribute verbatim copies of this mod. As per the LPGL license, everything in this mod is open for everybody to use, read and modify. Just do not forget to credit everyone involved and follow the LGPL license so derivatives of this code remain LGPL.
 
 ===Mods required===
 You'll of course need Foundation, Nanofx2, Submenu v 3.0, QBAutostart and Kobayashi Maru mod, the latest version the better. 

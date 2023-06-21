@@ -1,0 +1,152 @@
+#This is the dump of the LogCreator: <Insectoid-2 Travel Logger LogCreator_vp01MoB6ny38>
+#This log file was created on: 16:18:20.168 of 21/June/2023, Wednesday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>16:18:20.168 of 21/June/2023, Wednesday
+#>>>Initialized Insectoid-2 Travel logger
+#>>>SELF = <Insectoid-2(67754) Travel_55p4U8VyZB3H>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>16:18:34.139 of 21/June/2023, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>16:18:34.523 of 21/June/2023, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>16:18:34.639 of 21/June/2023, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>16:18:35.139 of 21/June/2023, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>16:18:35.523 of 21/June/2023, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>16:18:35.772 of 21/June/2023, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>16:18:36.022 of 21/June/2023, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>16:18:36.140 of 21/June/2023, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>16:18:36.272 of 21/June/2023, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>16:18:36.523 of 21/June/2023, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>16:18:37.042 of 21/June/2023, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>16:18:37.275 of 21/June/2023, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>16:18:37.391 of 21/June/2023, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>16:18:37.792 of 21/June/2023, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>16:18:38.306 of 21/June/2023, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>16:18:38.556 of 21/June/2023, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>16:18:38.792 of 21/June/2023, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>16:18:39.141 of 21/June/2023, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>16:18:39.542 of 21/June/2023, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>16:18:39.774 of 21/June/2023, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>16:18:40.056 of 21/June/2023, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>16:18:40.422 of 21/June/2023, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>16:18:40.541 of 21/June/2023, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>16:18:41.056 of 21/June/2023, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>16:18:41.408 of 21/June/2023, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>16:18:41.806 of 21/June/2023, Wednesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>16:19:14.341 of 21/June/2023, Wednesday
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Enable Towing: 0
+#>>>Travelling procedures initiated...
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Extra path: AI ship warping to None
+#>>> -Checked: Ship can warp, travel procedures started.
+#>>> -Speed Check:
+#>>>     -Current:  6.5
+#>>>     -Real Speed:  512.530517578
+#>>>     -Cruise:  6.5
+#>>>     -Max:  9.0
+#>>>     -Actual Cruise:  6.5
+#>>>     -Actual Max:  9.0
+#>>> -Started playing engaging sequence.
+## -------------------- ##
+####################
+#######>>>16:19:20.791 of 21/June/2023, Wednesday
+#>>> -Finishing travelling procedures...
+#>>> -Finished. AI Ship travelling to None.

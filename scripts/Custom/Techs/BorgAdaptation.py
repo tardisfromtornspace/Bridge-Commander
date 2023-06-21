@@ -245,7 +245,7 @@ class BorgAdaptationDef(FoundationTech.TechDef):
 					if pEvent.IsHullHit():
 						# damage values
 						fRadius = pEvent.GetRadius()
-						fDamage = pEvent.GetDamage()
+						fDamage = abs(pEvent.GetDamage())
 
 						# get the systems
 						lSystems = []
@@ -279,6 +279,7 @@ class BorgAdaptationDef(FoundationTech.TechDef):
 							if normalWeaponAdaptation[itemName] < -10:
 								normalWeaponAdaptation[itemName] = -10
 							elif normalWeaponAdaptation[itemName] > (nonYieldAdaptationCounter + extraReductionAdaptationCycle):
+								print "OH NO, THE BORG ADAPTED TO THIS WEAPON AND ITS DAMAGE IS REDUCED"
 								normalWeaponAdaptation[itemName] = nonYieldAdaptationCounter + extraReductionAdaptationCycle
 
 						# calculate the damage per radius
@@ -296,9 +297,16 @@ class BorgAdaptationDef(FoundationTech.TechDef):
 							countDamage2 = 0
 
 						damageMultiplier = (countDamage2  + 1.0) * 0.5
-						# print "dmg multiplier for " + str(itemName) + " stage " + str(normalWeaponAdaptation[itemName]) + " with " + str(countDamage1) + " and " + str(countDamage2) + ": " + str(damageMultiplier)
+						print "dmg multiplier for " + str(itemName) + " stage " + str(normalWeaponAdaptation[itemName]) + " with " + str(countDamage1) + " and " + str(countDamage2) + ": " + str(damageMultiplier)
 						damageHealed = (fDamage * ( 1 - damageMultiplier))
 						# print "Event radius: " + str(fRadius)
+						if len(lAffectedSystems) <= 0: # hull hit but no subsystems affected? We must guess it's the hull only, then
+							pHull=pShip.GetHull()
+							if not(pHull==None):
+								status = pHull.GetConditionPercentage()
+								fNewCondition = status + (damageHealed / pHull.GetMaxCondition()) * fAllocatedFactor
+								pHull.SetConditionPercentage(fNewCondition)
+
 						for pSystem in lAffectedSystems:
 							status = pSystem.GetConditionPercentage()
 							# print "status" + str(status)

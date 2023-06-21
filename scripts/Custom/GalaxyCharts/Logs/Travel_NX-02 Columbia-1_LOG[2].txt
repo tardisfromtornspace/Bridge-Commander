@@ -1,0 +1,29 @@
+#This is the dump of the LogCreator: <NX-02 Columbia-1 Travel Logger[2] LogCreator_s8Ic20WKXawX>
+#This log file was created on: 16:52:48.902 of 21/June/2023, Wednesday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>16:52:48.902 of 21/June/2023, Wednesday
+#>>>Initialized NX-02 Columbia-1 Travel logger
+#>>>SELF = <NX-02 Columbia-1(60359) Travel_9pe55Lr2993w>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Ship is dead or dying
+#>>>Ship is dead or dying (at SetDestination)
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Ship is dead or dying (at SetDestination)
+#>>>Set Exit Placement Name as None
+#>>>Enable Towing: 0
+#>>>Travelling procedures initiated...
+#>>> -Ship is dead or dying
+########################################
+# 16:58:28.244 of 21/June/2023, Wednesday
+#Ending of log dump - User is quiting the game
+########################################

@@ -1,0 +1,27 @@
+#This is the dump of the LogCreator: <Omega Class-1 Travel Logger[2] LogCreator_ma3dZ2fyiYE2>
+#This log file was created on: 18:51:19.513 of 21/June/2023, Wednesday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>18:51:19.513 of 21/June/2023, Wednesday
+#>>>Initialized Omega Class-1 Travel logger
+#>>>SELF = <Omega Class-1(3425604) Travel_6exBHl7NAfh6>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+########################################
+# 18:55:20.993 of 21/June/2023, Wednesday
+#Ending of log dump - User is quiting the game
+########################################

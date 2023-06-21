@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <sphere - 2 Travel Logger LogCreator_pd0rX9ZI46H7>
-#This log file was created on: 22:29:26.788 of 18/June/2023, Sunday
+#This is the dump of the LogCreator: <sphere - 2 Travel Logger LogCreator_DW5fHU1KFRD0>
+#This log file was created on: 15:24:26.339 of 21/June/2023, Wednesday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>22:29:26.788 of 18/June/2023, Sunday
+#######>>>15:24:26.339 of 21/June/2023, Wednesday
 #>>>Initialized sphere - 2 Travel logger
-#>>>SELF = <sphere - 2(158865) Travel_1N4xIYCn3089>
+#>>>SELF = <sphere - 2(280441) Travel_1BqyT3c5I5yN>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -23,23 +23,15 @@ Updating Travelling Procedures...
 #>>>Chaser pre-emptive Refresher Initialization
 ## -------------------- ##
 ####################
-#######>>>22:29:42.658 of 18/June/2023, Sunday
-#>>>Arrived Events:  added event <C TGEvent instance at _52b98800_p_TGEvent>
+#######>>>15:24:41.395 of 21/June/2023, Wednesday
+#>>>Arrived Events:  added event <C TGEvent instance at _3cd0c368_p_TGEvent>
 #>>>Updated Target Ship = Player
 ## -------------------- ##
 ####################
-#######>>>22:30:3.348 of 18/June/2023, Sunday
-#>>>Updated Target Ship = Defiant-8
-## -------------------- ##
-####################
-#######>>>22:30:23.976 of 18/June/2023, Sunday
-#>>>Updated Target Ship = Norway-18
-## -------------------- ##
-####################
-#######>>>22:30:48.103 of 18/June/2023, Sunday
-#>>>Updated Target Ship = Player
-## -------------------- ##
-####################
-#######>>>22:31:17.717 of 18/June/2023, Sunday
+#######>>>15:25:52.261 of 21/June/2023, Wednesday
 #>>>Stopping Refresh Handler
 #>>>Deleting...
+########################################
+# 15:32:53.822 of 21/June/2023, Wednesday
+#Ending of log dump - User is quiting the game
+########################################

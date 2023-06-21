@@ -1,0 +1,29 @@
+#This is the dump of the LogCreator: <Enterprise TOS-1 Travel Logger[2] LogCreator_1f4z7S6Ht3gh>
+#This log file was created on: 17:43:43.845 of 21/June/2023, Wednesday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>17:43:43.845 of 21/June/2023, Wednesday
+#>>>Initialized Enterprise TOS-1 Travel logger
+#>>>SELF = <Enterprise TOS-1(62616) Travel_83nc937Vxuhk>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Ship is dead or dying
+#>>>Ship is dead or dying (at SetDestination)
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Ship is dead or dying (at SetDestination)
+#>>>Set Exit Placement Name as None
+#>>>Enable Towing: 0
+#>>>Travelling procedures initiated...
+#>>> -Ship is dead or dying
+########################################
+# 17:44:59.259 of 21/June/2023, Wednesday
+#Ending of log dump - User is quiting the game
+########################################

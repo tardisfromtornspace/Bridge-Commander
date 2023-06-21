@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Escape Pod 2 Travel Logger LogCreator_VK80s70220VE>
-#This log file was created on: 22:37:35.650 of 18/June/2023, Sunday
+#This is the dump of the LogCreator: <Escape Pod 2 Travel Logger LogCreator_6rVkLi0eO81I>
+#This log file was created on: 18:49:41.230 of 21/June/2023, Wednesday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>22:37:35.650 of 18/June/2023, Sunday
+#######>>>18:49:41.230 of 21/June/2023, Wednesday
 #>>>Initialized Escape Pod 2 Travel logger
-#>>>SELF = <Escape Pod 2(1146631) Travel_P113u2KgoXzV>
+#>>>SELF = <Escape Pod 2(86439) Travel_02M3P3T9A2D5>
 #>>>Initial Travel Type: None
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -21,3 +21,7 @@ Updating Travelling Procedures...
 #>>>Chaser base class initialization complete.
 #>>>Target Ship = NONE
 #>>>Chaser pre-emptive Refresher Initialization
+########################################
+# 18:49:47.868 of 21/June/2023, Wednesday
+#Ending of log dump - User is quiting the game
+########################################
