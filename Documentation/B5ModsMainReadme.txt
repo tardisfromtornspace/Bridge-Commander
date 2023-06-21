@@ -1,7 +1,7 @@
 ==Changelog==
 1.0.6 -
- Fixes: now that I know how to make things right, I've added some of the Techs used on the proepr file, to avoid overwriting defaults:
-   * The Special "Hull Polarizer"/Special field defense tech which was used as a watere-down Minbari-Earth Alliance-Vorlon PolyCrystalline Armour for the Excalibur now has its proper own file at scripts/Custom/Techs
+ Fixes: now that I know how to make things right, I've added some of the Techs used on the proper file, to avoid overwriting defaults:
+   * The Special "Hull Polarizer"/Special field defense tech which was used as a watered-down Minbari-Earth Alliance-Vorlon PolyCrystalline Armour for the Excalibur now has its proper own file at scripts/Custom/Techs
    * Fixed random bug that made the aforementioned tech from working at full capacity even after docking with a Starbase.
    * Fixed Minbari Sharlin PolyCrystalline Armour not covering things completely.
    * Fixed that the shield techs were inside the generic shield file, now they are at scrips/Custom/Techs/B5Defences.py . Left the expanded ATPFunctions library, though.
