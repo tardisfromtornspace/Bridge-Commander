@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Enterprise TOS-1 Travel Logger[2] LogCreator_1f4z7S6Ht3gh>
-#This log file was created on: 17:43:43.845 of 21/June/2023, Wednesday
+#This is the dump of the LogCreator: <Enterprise TOS-1 Travel Logger[2] LogCreator_QL98U27hm3QN>
+#This log file was created on: 18:14:16.454 of 25/June/2023, Sunday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,21 +9,38 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>17:43:43.845 of 21/June/2023, Wednesday
+#######>>>18:14:16.454 of 25/June/2023, Sunday
 #>>>Initialized Enterprise TOS-1 Travel logger
-#>>>SELF = <Enterprise TOS-1(62616) Travel_83nc937Vxuhk>
+#>>>SELF = <Enterprise TOS-1(3795490) Travel_l5623T0eS0wK>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
-#>>> -Ship is dead or dying
-#>>>Ship is dead or dying (at SetDestination)
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
 #>>>Set Exit Placement Name as None
 #>>>Set Exit Point to None
-#>>>Ship is dead or dying (at SetDestination)
-#>>>Set Exit Placement Name as None
-#>>>Enable Towing: 0
-#>>>Travelling procedures initiated...
-#>>> -Ship is dead or dying
-########################################
-# 17:44:59.259 of 21/June/2023, Wednesday
-#Ending of log dump - User is quiting the game
-########################################
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>18:14:23.170 of 25/June/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>18:14:24.437 of 25/June/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>18:14:24.854 of 25/June/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>18:14:25.254 of 25/June/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>18:14:25.753 of 25/June/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...

@@ -1,0 +1,23 @@
+#This is the dump of the LogCreator: <EFP Firepoint9_t Travel Logger LogCreator_vxc5xroh14U4>
+#This log file was created on: 12:59:55.791 of 25/June/2023, Sunday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>12:59:55.791 of 25/June/2023, Sunday
+#>>>Initialized EFP Firepoint9_t Travel logger
+#>>>SELF = <EFP Firepoint9_t(246952) Travel_HcBLqgF1wo17>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization

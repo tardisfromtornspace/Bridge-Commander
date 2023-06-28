@@ -18,6 +18,7 @@ Foundation.ShipDef.California.dTechs = {
 #	'Breen Drainer Immune': 1,
 #	'Drainer Immune': 1,
 #	'Regenerative Shields': 10,
+	'Breen Drainer Resistance': 0,
 	"Disabler Immunity": { "Power": 150, "Sensor": 100, "Phaser": 100, "Torpedo": 100, "Pulse": 100}
 }
 

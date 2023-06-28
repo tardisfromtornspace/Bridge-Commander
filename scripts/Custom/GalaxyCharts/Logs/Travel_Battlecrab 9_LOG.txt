@@ -1,0 +1,78 @@
+#This is the dump of the LogCreator: <Battlecrab 9 Travel Logger LogCreator_5VxmYR5E2VBK>
+#This log file was created on: 13:11:13.416 of 25/June/2023, Sunday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>13:11:13.416 of 25/June/2023, Sunday
+#>>>Initialized Battlecrab 9 Travel logger
+#>>>SELF = <Battlecrab 9(896611) Travel_5A5Ywy8D2X6r>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>13:11:13.947 of 25/June/2023, Sunday
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>13:11:25.536 of 25/June/2023, Sunday
+#>>>Updated Target Ship = Primus 5
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>13:11:26.164 of 25/June/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>13:11:26.414 of 25/June/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>13:11:28.164 of 25/June/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>13:11:28.664 of 25/June/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>13:11:29.335 of 25/June/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>13:11:31.317 of 25/June/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>13:11:31.551 of 25/June/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>13:11:32.167 of 25/June/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>13:11:32.664 of 25/June/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>13:11:48.047 of 25/June/2023, Sunday
+#>>>Updated Target Ship = B5Station 1
+## -------------------- ##
+####################
+#######>>>13:13:27.463 of 25/June/2023, Sunday
+#>>>Updated Target Ship = IKS Fartnutz-1
+#>>>Stopping Refresh Handler
+#>>>Deleting...
