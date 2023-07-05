@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Warship-1 Travel Logger[2] LogCreator_Q27m9xoy6H6e>
-#This log file was created on: 23:21:16.207 of 18/June/2023, Sunday
+#This is the dump of the LogCreator: <Warship-1 Travel Logger[2] LogCreator_JF5tYCKb4sLU>
+#This log file was created on: 16:42:2.504 of 29/June/2023, Thursday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>23:21:16.207 of 18/June/2023, Sunday
+#######>>>16:42:2.504 of 29/June/2023, Thursday
 #>>>Initialized Warship-1 Travel logger
-#>>>SELF = <Warship-1(1202657) Travel_sDjVmbu4x8Pe>
+#>>>SELF = <Warship-1(1691652) Travel_31ir9Ef90EK6>
 #>>>Initial Travel Type: None
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -24,58 +24,35 @@ Updating Travelling Procedures...
 #>>>Updated Target Ship = Player
 ## -------------------- ##
 ####################
-#######>>>23:21:23.891 of 18/June/2023, Sunday
-#>>>Updated Target Ship = Triumviron-9
+#######>>>16:42:15.016 of 29/June/2023, Thursday
+#>>>Updated Target Ship = Dominion Battlecruiser-10
+#>>> -Cancelling, too close to target to warp intercept...
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>23:21:24.653 of 18/June/2023, Sunday
+#######>>>16:42:16.013 of 29/June/2023, Thursday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>23:21:25.416 of 18/June/2023, Sunday
+#######>>>16:42:17.148 of 29/June/2023, Thursday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>23:21:25.981 of 18/June/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
+#######>>>16:42:46.215 of 29/June/2023, Thursday
+#>>>Updated Target Ship = Attack Ship-18
 ## -------------------- ##
 ####################
-#######>>>23:21:26.724 of 18/June/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
+#######>>>16:44:18.384 of 29/June/2023, Thursday
+#>>>Updated Target Ship = Attack Ship-15
 ## -------------------- ##
 ####################
-#######>>>23:21:27.261 of 18/June/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
+#######>>>16:45:17.919 of 29/June/2023, Thursday
+#>>>Updated Target Ship = Dominion Battlecruiser-12
 ## -------------------- ##
 ####################
-#######>>>23:21:27.696 of 18/June/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:21:28.175 of 18/June/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:21:28.543 of 18/June/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:21:29.381 of 18/June/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:21:29.757 of 18/June/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:21:30.007 of 18/June/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>23:23:5.138 of 18/June/2023, Sunday
-#>>>Updated Target Ship = Triumviron-11
-## -------------------- ##
-####################
-#######>>>23:23:5.993 of 18/June/2023, Sunday
+#######>>>16:45:45.490 of 29/June/2023, Thursday
 #>>>Updated Target Ship = Player
+########################################
+# 16:46:33.417 of 29/June/2023, Thursday
+#Ending of log dump - User is quiting the game
+########################################

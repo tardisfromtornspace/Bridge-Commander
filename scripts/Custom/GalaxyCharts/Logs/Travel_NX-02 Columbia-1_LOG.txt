@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <NX-02 Columbia-1 Travel Logger LogCreator_b5q7ZOF1202J>
-#This log file was created on: 17:8:30.054 of 21/June/2023, Wednesday
+#This is the dump of the LogCreator: <NX-02 Columbia-1 Travel Logger LogCreator_xtLx648HT0Sk>
+#This log file was created on: 2:51:47.329 of 4/July/2023, Tuesday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>17:8:30.054 of 21/June/2023, Wednesday
+#######>>>2:51:47.329 of 4/July/2023, Tuesday
 #>>>Initialized NX-02 Columbia-1 Travel logger
-#>>>SELF = <NX-02 Columbia-1(63727) Travel_cmG8qYa2wd3d>
+#>>>SELF = <NX-02 Columbia-1(922675) Travel_LX65v3lzBAwX>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -24,53 +24,25 @@ Updating Travelling Procedures...
 #>>>Updated Target Ship = Player
 ## -------------------- ##
 ####################
-#######>>>17:8:42.062 of 21/June/2023, Wednesday
+#######>>>2:51:55.128 of 4/July/2023, Tuesday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>17:8:42.145 of 21/June/2023, Wednesday
+#######>>>2:51:56.379 of 4/July/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>17:8:42.412 of 21/June/2023, Wednesday
+#######>>>2:51:57.379 of 4/July/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>17:8:42.945 of 21/June/2023, Wednesday
+#######>>>2:51:57.763 of 4/July/2023, Tuesday
 #>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>17:8:43.112 of 21/June/2023, Wednesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>17:8:43.346 of 21/June/2023, Wednesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>17:8:43.645 of 21/June/2023, Wednesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>17:8:43.812 of 21/June/2023, Wednesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>17:8:43.928 of 21/June/2023, Wednesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>17:8:44.279 of 21/June/2023, Wednesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>17:8:44.578 of 21/June/2023, Wednesday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>17:8:44.812 of 21/June/2023, Wednesday
 #>>> -Cancelling, too close to target to warp intercept...
 ########################################
-# 17:9:57.844 of 21/June/2023, Wednesday
+# 2:55:9.426 of 4/July/2023, Tuesday
 #Ending of log dump - User is quiting the game
 ########################################

@@ -1,0 +1,43 @@
+#This is the dump of the LogCreator: <Dart1 1 Travel Logger LogCreator_ZWFZSaY6pu7M>
+#This log file was created on: 16:36:50.453 of 29/June/2023, Thursday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>16:36:50.453 of 29/June/2023, Thursday
+#>>>Initialized Dart1 1 Travel logger
+#>>>SELF = <Dart1 1(1252450) Travel_LTfB3wp6Wp39>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>16:36:56.136 of 29/June/2023, Thursday
+#>>>Updated Target Ship = Player
+#>>>Can Chase Target = 0
+## -------------------- ##
+####################
+#######>>>16:37:0.189 of 29/June/2023, Thursday
+#>>>Ship can't chase, directing to Travel update...
+#>>>Updated Target Ship = Attack Ship-39
+## -------------------- ##
+####################
+#######>>>16:37:3.549 of 29/June/2023, Thursday
+#>>>Ship can't chase, directing to Travel update...
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 16:46:33.417 of 29/June/2023, Thursday
+#Ending of log dump - User is quiting the game
+########################################

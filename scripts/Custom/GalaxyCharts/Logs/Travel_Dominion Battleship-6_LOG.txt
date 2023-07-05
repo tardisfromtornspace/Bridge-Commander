@@ -1,0 +1,61 @@
+#This is the dump of the LogCreator: <Dominion Battleship-6 Travel Logger LogCreator_h62d45klvr4Q>
+#This log file was created on: 16:38:34.145 of 29/June/2023, Thursday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>16:38:34.145 of 29/June/2023, Thursday
+#>>>Initialized Dominion Battleship-6 Travel logger
+#>>>SELF = <Dominion Battleship-6(1392142) Travel_BW01MFe5ew2J>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Warship-1
+## -------------------- ##
+####################
+#######>>>16:38:47.740 of 29/June/2023, Thursday
+#>>>Updated Target Ship = Warship-2
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>16:38:48.390 of 29/June/2023, Thursday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>16:41:46.889 of 29/June/2023, Thursday
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Enable Towing: 0
+#>>>Travelling procedures initiated...
+#>>>Updating Variables...
+#>>> -Extra path: AI ship warping to None
+#>>> -Checked: Ship can warp, travel procedures started.
+#>>> -Speed Check:
+#>>>     -Current:  8.5
+#>>>     -Real Speed:  1253.54907227
+#>>>     -Cruise:  8.5
+#>>>     -Max:  8.5
+#>>>     -Actual Cruise:  8.5
+#>>>     -Actual Max:  8.5
+#>>> -Started playing engaging sequence.
+## -------------------- ##
+####################
+#######>>>16:41:54.737 of 29/June/2023, Thursday
+#>>> -Finishing travelling procedures...
+#>>> -Finished. AI Ship travelling to None.
+########################################
+# 16:46:33.417 of 29/June/2023, Thursday
+#Ending of log dump - User is quiting the game
+########################################

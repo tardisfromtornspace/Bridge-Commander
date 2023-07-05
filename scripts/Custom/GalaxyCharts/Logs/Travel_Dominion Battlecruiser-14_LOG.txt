@@ -1,0 +1,71 @@
+#This is the dump of the LogCreator: <Dominion Battlecruiser-14 Travel Logger LogCreator_jk5bg25N74ch>
+#This log file was created on: 16:38:34.145 of 29/June/2023, Thursday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>16:38:34.145 of 29/June/2023, Thursday
+#>>>Initialized Dominion Battlecruiser-14 Travel logger
+#>>>SELF = <Dominion Battlecruiser-14(1396337) Travel_uS60l3gOp088>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Warship-1
+## -------------------- ##
+####################
+#######>>>16:38:47.740 of 29/June/2023, Thursday
+#>>>Updated Target Ship = AncientCity-4
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>16:38:52.694 of 29/June/2023, Thursday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>16:38:53.257 of 29/June/2023, Thursday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>16:41:4.772 of 29/June/2023, Thursday
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Enable Towing: 0
+#>>>Travelling procedures initiated...
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Extra path: AI ship warping to None
+#>>> -Checked: Ship can warp, travel procedures started.
+#>>> -Speed Check:
+#>>>     -Current:  9.14999961853
+#>>>     -Real Speed:  1604.08886719
+#>>>     -Cruise:  9.15
+#>>>     -Max:  9.15
+#>>>     -Actual Cruise:  9.14999961853
+#>>>     -Actual Max:  9.14999961853
+#>>> -Started playing engaging sequence.
+## -------------------- ##
+####################
+#######>>>16:41:6.405 of 29/June/2023, Thursday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+## -------------------- ##
+####################
+#######>>>16:41:11.988 of 29/June/2023, Thursday
+#>>> -Finishing travelling procedures...
+#>>> -Finished. AI Ship travelling to None.
+########################################
+# 16:46:33.417 of 29/June/2023, Thursday
+#Ending of log dump - User is quiting the game
+########################################

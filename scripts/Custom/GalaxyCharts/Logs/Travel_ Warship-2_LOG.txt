@@ -1,0 +1,69 @@
+#This is the dump of the LogCreator: < Warship-2 Travel Logger LogCreator_yl3Wo5zfrqT4>
+#This log file was created on: 2:49:42.339 of 4/July/2023, Tuesday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>2:49:42.339 of 4/July/2023, Tuesday
+#>>>Initialized  Warship-2 Travel logger
+#>>>SELF = < Warship-2(744038) Travel_Cz6894t5v8Ff>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>2:49:55.894 of 4/July/2023, Tuesday
+#>>>Updated Target Ship = Warship (Prototype)-22
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>2:49:56.545 of 4/July/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>2:49:57.262 of 4/July/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>2:49:57.894 of 4/July/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>2:49:58.570 of 4/July/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>2:49:59.216 of 4/July/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>2:49:59.998 of 4/July/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>2:50:0.695 of 4/July/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>2:50:1.482 of 4/July/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>2:50:2.056 of 4/July/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+########################################
+# 2:55:9.426 of 4/July/2023, Tuesday
+#Ending of log dump - User is quiting the game
+########################################

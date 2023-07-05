@@ -1,0 +1,51 @@
+#This is the dump of the LogCreator: <Dart11 1 Travel Logger LogCreator_ux3ccF9Sl9D3>
+#This log file was created on: 16:36:50.453 of 29/June/2023, Thursday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>16:36:50.453 of 29/June/2023, Thursday
+#>>>Initialized Dart11 1 Travel logger
+#>>>SELF = <Dart11 1(1253740) Travel_1OquNrA8qK4d>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>16:36:56.136 of 29/June/2023, Thursday
+#>>>Updated Target Ship = Player
+#>>>Can Chase Target = 0
+## -------------------- ##
+####################
+#######>>>16:37:0.189 of 29/June/2023, Thursday
+#>>>Updated Target Ship = Dominion Battlecruiser-30
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>16:37:3.549 of 29/June/2023, Thursday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>16:37:4.202 of 29/June/2023, Thursday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>16:37:4.378 of 29/June/2023, Thursday
+#>>>Ship can't chase, directing to Travel update...
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 16:46:33.417 of 29/June/2023, Thursday
+#Ending of log dump - User is quiting the game
+########################################

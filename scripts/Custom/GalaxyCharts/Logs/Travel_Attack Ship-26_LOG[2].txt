@@ -1,0 +1,29 @@
+#This is the dump of the LogCreator: <Attack Ship-26 Travel Logger[2] LogCreator_HG7Ch05k0Jh5>
+#This log file was created on: 16:31:34.416 of 29/June/2023, Thursday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>16:31:34.416 of 29/June/2023, Thursday
+#>>>Initialized Attack Ship-26 Travel logger
+#>>>SELF = <Attack Ship-26(582521) Travel_I6Wz3cWp9Z2i>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Ship is dead or dying
+#>>>Ship is dead or dying (at SetDestination)
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Ship is dead or dying (at SetDestination)
+#>>>Set Exit Placement Name as None
+#>>>Enable Towing: 0
+#>>>Travelling procedures initiated...
+#>>> -Ship is dead or dying
+########################################
+# 16:46:33.417 of 29/June/2023, Thursday
+#Ending of log dump - User is quiting the game
+########################################
