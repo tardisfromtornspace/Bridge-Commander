@@ -6,8 +6,10 @@ if __name__ == '__main__':
 	AIEditor.Go()
 	import sys
 	sys.exit()
-
-from Tkinter import *
+try:
+    from Tkinter import *
+except:
+    from tkinter import *
 import CanvasUtils
 import re
 import string
@@ -16,6 +18,31 @@ import os.path
 
 sSeparationBlock = "\t#########################################\n"
 sBaseTitle = "AI Editor"
+
+def install(package):
+	# This is an evil little function
+	# that installs packages via pip.
+	# This means the script can install
+	# it's own dependencies.
+	try:
+		 __import__(package)
+	except:
+		import sys
+		import subprocess
+		subprocess.call([sys.executable, "-m", "pip", "install", package])
+        
+try:
+	@lru_cache(32)
+	def cached_listdir(d):
+		return os.listdir(d)
+except:
+	global_cache = {}
+	def cached_listdir(path):
+		res = global_cache.get(path)
+		if res is None:
+			res = os.listdir(path)
+			global_cache[path] = res
+		return res
 
 # For processing configuration data:
 def ProcessConfigData(sKeyword, sData):
@@ -31,7 +58,7 @@ def ProcessConfigData(sKeyword, sData):
 	try:
 		pFunc = dKeyFuncMap[sKeyword]
 	except KeyError:
-		print "Unrecognized key: " + pFunc
+		print("Unrecognized key: " + pFunc)
 		return
 
 	pFunc(sData)
@@ -58,7 +85,10 @@ def GetPlainAIPath():
 	return g_sPlainAIDir
 
 def SetActionPaths(sData):
-	lsPaths = string.split(sData, ",")
+	try:
+		lsPaths = string.split(sData, ",")
+	except:
+		lsPaths = sData.split(",")
 
 	import ActionUtils
 	ActionUtils.SetProjectDirectories( lsPaths )
@@ -120,7 +150,7 @@ def Initialize():
 				sKeyword = string.strip( sLine[:iKeywordEnd] )
 				sData = string.strip( sLine[(iKeywordEnd + 1):] )
 
-				print "Found config pair: [%s:%s]" % (sKeyword, sData)
+				print("Found config pair: [%s:%s]" % (sKeyword, sData))
 
 				ProcessConfigData(sKeyword, sData)
 	
@@ -131,7 +161,11 @@ class AIMenus(Frame):
 	"Basic menus for accessing basic functionality."
 	def __init__(self, parent, pOutput, **kw):
 		# Base class init
-		apply(Frame.__init__, (self, parent), kw)
+		try:
+			apply(Frame.__init__, (self, parent), kw)
+		except:
+			from apply import apply
+			apply(Frame.__init__, (self, parent), kw)
 
 		self.pOutput = pOutput
 
@@ -349,7 +383,11 @@ class AIMenus(Frame):
 		pEntity.sMethod = "pPreprocess.Update"
 		
 	def CreateAIStatusUpdate(self):
-		from tkSimpleDialog import askstring
+		try:
+			from tkSimpleDialog import askstring
+		except:
+			#install("tkSimpleDialog")
+			from tkinter.simpledialog import askstring
 		sDesc = askstring("AI Status Update", "Enter new AI status:")
 		# Create the entity...
 		pEntity = self.pOutput.AddEntity( PreprocessingAIEntity )
@@ -471,7 +509,7 @@ class FileDialog(Toplevel):
 				self.ChangeDirectory(sNewDir)
 
 	def ChangeDirectory(self, sNewDir):
-       			self.sCWD.set( os.path.abspath(sNewDir) )
+			self.sCWD.set( os.path.abspath(sNewDir) )
 
 			# Now that we're in a new directory, we need to update the file lists...
 			self.UpdateFileFrames()
@@ -527,7 +565,11 @@ class SaveDialog(FileDialog):
 		sFilename = os.path.join( self.sCWD.get(), self.sFilename.get() )
 		if len(sFilename) > 0:
 			# Check if it has a .py in it:
-			if string.find(sFilename, ".py") == -1:
+			try:
+				tethys = string.find(sFilename, ".py")
+			except:
+				tethys = sFilename.find(".py")
+			if tethys == -1:
 				# Couldn't find it.  Add it.
 				sFilename = sFilename + ".py"
 			
@@ -578,7 +620,12 @@ class LoadDialog(FileDialog):
 
 		# If the filename doesn't have a .py at the end, add one:
 		sFilename = os.path.join( self.sCWD.get(), self.sFilename.get() )
-		if string.find(sFilename, ".py") == -1:
+		try:
+			hybridCondition = string.find(sFilename, ".py")
+		except:
+			hybridCondition = sFilename.find(".py")
+		
+		if hybridCondition == -1:
 			# Couldn't find it.  Add it.
 			sFilename = sFilename + ".py"
 
@@ -610,7 +657,7 @@ class LoadDialog(FileDialog):
 			self.pOutput.Load(lsFileText)
 			self.pOutput.SetFilename(self.sFilename.get())
 		else:
-			print "Error opening file " + sFilename
+			print("Error opening file " + sFilename)
 		
 		self.destroy()
 
@@ -654,7 +701,11 @@ class SelectFileDialog(FileDialog):
 		#print "Selected " + str(sFilename)
 		if len(sFilename) > 0:
 			# Check if it has a .py in it:
-			if string.find(sFilename, ".py") == -1:
+			try:
+				auxVariableE = string.find(sFilename, ".py")
+			except:
+				auxVariableE = sFilename.find(".py")
+			if auxVariableE == -1:
 				# Couldn't find it.  Add it.
 				sFilename = sFilename + ".py"
 
@@ -670,7 +721,11 @@ class Output(Canvas):
 		# Base class init
 		kw['width'] = width
 		kw['height'] = height
-		apply(Canvas.__init__, (self, parent), kw)
+		try:
+			apply(Canvas.__init__, (self, parent), kw)
+		except:
+			from apply import apply
+			apply(Canvas.__init__, (self, parent), kw)
 
 		# Setup our list of entities
 		self.lEntities = []
@@ -814,7 +869,10 @@ class Entity(CanvasUtils.DraggableCanvasIcon):
 
 	def SetName(self, sName):
 		# Remove any whitespace from sName
-		sName = string.replace(sName, " ", "_")
+		try:
+			sName = string.replace(sName, " ", "_")
+		except:
+			sName = sName.replace(" ", "_")
 
 		# Make sure that name isn't in use (unless it's our name):
 		if sName != self.sText:
@@ -866,13 +924,13 @@ class Entity(CanvasUtils.DraggableCanvasIcon):
 		pass
 
 	def Configure(self, event):
-		print "Configuration of this item not yet implemented."
+		print("Configuration of this item not yet implemented.")
 	
 	def Load(self, lsCreationText):
-		print "Load not implemented yet for %s" % self.GetName()
+		print("Load not implemented yet for %s" % self.GetName())
 	
 	def Save(self, pFile):
-		print "Save not implemented for %s" % self.GetName()
+		print("Save not implemented for %s" % self.GetName())
 
 
 class AIEntity(Entity):
@@ -1141,7 +1199,7 @@ class ConditionalAIEntity(ContainingAIEntity):
 		if self.GetContainedEntity():
 			self.GetContainedEntity().Save(pFile)
 		else:
-			print "WARNING: Conditional AI \"%s\" has no contained AI" % self.GetName()
+			print("WARNING: Conditional AI \"%s\" has no contained AI" % self.GetName())
 
 		# Next, output the comments that surround our creation:
 		pFile.write(sSeparationBlock)
@@ -1153,7 +1211,7 @@ class ConditionalAIEntity(ContainingAIEntity):
 			for pCondition in self.lConditions:
 				pCondition.Save(pFile)
 		else:
-			print "WARNING: Conditional AI \"%s\" has no conditions" % self.GetName()
+			print("WARNING: Conditional AI \"%s\" has no conditions" % self.GetName())
 		
 		# Create our evaluation function.
 		pFile.write("\t## Evaluation function:\n")
@@ -1171,7 +1229,7 @@ class ConditionalAIEntity(ContainingAIEntity):
 			for sLine in self.lsEvalFunc:
 				pFile.write("\t\t%s\n" % sLine)
 		else:
-			print "WARNING: Conditional AI \"%s\" has no evaluation function" % self.GetName()
+			print("WARNING: Conditional AI \"%s\" has no evaluation function" % self.GetName())
 
 		# Create ourselves:
 		pFile.write("\t## The ConditionalAI:\n")
@@ -1253,7 +1311,10 @@ class ConditionalAIConfigurationDialog(ConfigurationDialog):
 	def Apply(self):
 		# Copy our EvalFunc lines into the AI.
 		# They need to be split by \n's, first...
-		lsSplit = string.split(self.pEvalFuncText.get(0.0, END), "\n")
+		try:
+			lsSplit = string.split(self.pEvalFuncText.get(0.0, END), "\n")
+		except:
+			lsSplit = self.pEvalFuncText.get(0.0, END).split("\n")
 		lsEvalFunc = []
 		for sLine in lsSplit:
 			if len(sLine):
@@ -1329,9 +1390,14 @@ class AddConditionDialog(Toplevel):
 		pButtonFrames[1].pack(side=RIGHT, fill=Y, anchor=N)
 		lsAvailable = self.GetAvailableConditions()
 		self.pRadioVar = IntVar()
-		for iIndex  in range( len(lsAvailable) ):
-			pRadio = Radiobutton(pButtonFrames[iIndex * 2 / len(lsAvailable)], text=lsAvailable[iIndex], variable=self.pRadioVar, value = iIndex, command=lambda self=self, iIndex=iIndex: self.SelectClass(iIndex))
-			pRadio.pack(side=TOP, anchor=W)
+		try:
+			for iIndex  in range( len(lsAvailable) ):
+				pRadio = Radiobutton(pButtonFrames[iIndex * 2 / len(lsAvailable)], text=lsAvailable[iIndex], variable=self.pRadioVar, value = iIndex, command=lambda self=self, iIndex=iIndex: self.SelectClass(iIndex))
+				pRadio.pack(side=TOP, anchor=W)
+		except:
+			for iIndex  in list(range( len(lsAvailable) )):
+				pRadio = Radiobutton(pButtonFrames[int(iIndex * 2 / len(lsAvailable))], text=lsAvailable[int(iIndex)], variable=self.pRadioVar, value = int(iIndex), command=lambda self=self, iIndex=int(iIndex): self.SelectClass(int(iIndex)))
+				pRadio.pack(side=TOP, anchor=W)
 
 		# Let the user specify params:
 		pFrame = Frame(self)
@@ -1354,7 +1420,11 @@ class AddConditionDialog(Toplevel):
 		# Check if the character is one of the characters
 		# we'll allow in a name.  If not, we need to return
 		# "break", so the event isn't propogated any further.
-		if -1 == string.find(string.digits + string.letters, event.keysym):
+		try:
+			darkthunder = string.find(string.digits + string.letters, event.keysym) 
+		except:
+			darkthunder = (string.digits + string.ascii_letters).find(event.keysym)
+		if -1 == darkthunder:
 			# Didn't find it.  Check for special keys.
 			if not (event.keysym in ( "BackSpace", "Tab", "Left", "Right", "Home", "End" )):
 				# It's not a special key.  Don't propogate
@@ -1362,8 +1432,11 @@ class AddConditionDialog(Toplevel):
 				return "break"
 
 	def GetAvailableConditions(self):
-		import dircache
-		lsDir = dircache.listdir(GetConditionPath())
+		try:
+			import dircache
+			lsDir = dircache.listdir(GetConditionPath())
+		except:
+			lsDir = cached_listdir(GetConditionPath())
 		matchstr = re.compile("^([A-Za-z].+)\.py$")
 		lsAvailable = []
 		for sEntry in lsDir:
@@ -1554,11 +1627,18 @@ class PlainAIEntity(AIEntity):
 		# Look for the GetScriptInstance line....
 		matchstr = re.compile("^pScript = p(.*)\.GetScriptInstance\(\)\n$")
 		lsFunctionLines = []
-		for iLine in range(len(lsCreationText)):
-			if matchstr.search(lsCreationText[iLine]):
-				# Found a match.  Lines following this one
-				# should be function calls..
-				lsFunctionLines = lsCreationText[(iLine+1):]
+		try:
+			for iLine in range(len(lsCreationText)):
+				if matchstr.search(lsCreationText[iLine]):
+					# Found a match.  Lines following this one
+					# should be function calls..
+					lsFunctionLines = lsCreationText[(iLine+1):]
+		except:  
+			for iLine in list(range(len(lsCreationText))):
+				if matchstr.search(lsCreationText[iLine]):
+					# Found a match.  Lines following this one
+					# should be function calls..
+					lsFunctionLines = lsCreationText[(iLine+1):]
 		
 		# Cycle through all the lines that call functions on our
 		# script, and grab the functions and args they're using.
@@ -1581,7 +1661,7 @@ class PlainAIEntity(AIEntity):
 		if len(self.sScriptName):
 			pFile.write("\tp%s.SetScriptModule(\"%s\")\n" % (self.GetName(), self.sScriptName))
 		else:
-			print "WARNING: No script module set for " + self.GetName()
+			print("WARNING: No script module set for " + self.GetName())
 
 		# Parent class save..
 		AIEntity.Save(self, pFile)
@@ -1636,7 +1716,12 @@ class PlainAIConfigurationDialog(ConfigurationDialog):
 		pRadioFrameLeft.pack(side=LEFT, fill=Y, anchor=N)
 		pRadioFrameRight.pack(side=RIGHT, fill=Y, anchor=N)
 		self.pModuleVar = IntVar()
-		for iIndex in range( len(lsScriptModules) ):
+		try:
+			dummyAuxDumb = xrange( len(lsScriptModules) )
+			elijah = range( len(lsScriptModules) )
+		except:
+			elijah = list(range( len(lsScriptModules) ))
+		for iIndex in elijah:
 			sModule = lsScriptModules[iIndex]
 			pRadio = Radiobutton(lRadioFrames[iIndex * 2 / len(lsScriptModules)], text=sModule, variable = self.pModuleVar, value=iIndex+1, command=lambda self=self, iIndex=iIndex: self.SelectModule(iIndex))
 			pRadio.pack(side=TOP, anchor=W)
@@ -1656,7 +1741,7 @@ class PlainAIConfigurationDialog(ConfigurationDialog):
 		self.UpdateModule()
 
 	def __del__(self):
-		print "PlainAIConfig del."
+		print("PlainAIConfig del.")
 		ConfigurationDialog.__del__(self)
 
 	def GetAvailableModules(self):
@@ -1908,7 +1993,7 @@ class PreprocessingAIEntity(ContainingAIEntity):
 		if self.GetContainedEntity():
 			self.GetContainedEntity().Save(pFile)
 		else:
-			print "WARNING: Preprocessing AI \"%s\" has no contained AI" % self.GetName()
+			print("WARNING: Preprocessing AI \"%s\" has no contained AI" % self.GetName())
 
 		# Next, output the comments that surround our creation:
 		pFile.write(sSeparationBlock)
@@ -1921,7 +2006,7 @@ class PreprocessingAIEntity(ContainingAIEntity):
 			for sLine in self.lsSetup:
 				pFile.write("\t%s\n" % sLine)
 		else:
-			print "WARNING: Preprocessing AI \"%s\" has setup" % self.GetName()
+			print("WARNING: Preprocessing AI \"%s\" has setup" % self.GetName())
 
 		# Create ourselves:
 		pFile.write("\t## The PreprocessingAI:\n")
@@ -1937,12 +2022,15 @@ class PreprocessingAIEntity(ContainingAIEntity):
 
 			# Set our preprocessing method, if any:
 			if len(self.sMethod):
-				sSplitString = string.split(self.sMethod, ".")
+				try:
+					sSplitString = string.split(self.sMethod, ".")
+				except:
+					sSplitString = self.sMethod.split(".")
 				sInstance = sSplitString[0]
 				sMethod = sSplitString[1]
 				pFile.write("\tp%s.SetPreprocessingMethod(%s, \"%s\")\n" % (self.GetName(), sInstance, sMethod))
 		else:
-			print "WARNING: No preprocessing function or method setup for " + self.GetName()
+			print("WARNING: No preprocessing function or method setup for " + self.GetName())
 
 		# Save which AI we contain:
 		if self.GetContainedEntity():
@@ -2011,7 +2099,10 @@ class PreprocessingAIConfigurationDialog(ConfigurationDialog):
 
 	def Apply(self):
 		# Copy our script setup lines to the AI
-		lsSplit = string.split(self.pSetupText.get(0.0, END), "\n")
+		try:
+			lsSplit = string.split(self.pSetupText.get(0.0, END), "\n")
+		except:
+			lsSplit = self.pSetupText.get(0.0, END).split("\n")
 		lsSetup = []
 		for sLine in lsSplit:
 			if len(sLine):
@@ -2071,9 +2162,12 @@ class AIEntityWithSequenceBlock(AIEntity):
 		for sLine in lsCreationText:
 			match = matchstr.search(sLine)
 			if match:
-				iXPos = string.atoi( match.group(1) )
-				iYPos = string.atoi( match.group(2) )
-				
+				try:
+					iXPos = string.atoi( match.group(1) )
+					iYPos = string.atoi( match.group(2) )
+				except:
+					iXPos = int( match.group(1) )
+					iYPos = int( match.group(2) )
 				self.pSequenceBlock.MoveTo(iXPos, iYPos)
 
 	def SaveSequenceBlock(self, pFile):
@@ -2252,7 +2346,10 @@ class SequenceAIEntity(AIEntityWithSequenceBlock):
 				if match:
 					# Found it.  Call the function with the
 					# (numeric) value we found.
-					iValue = string.atoi( match.group(2) )
+					try:
+						iValue = string.atoi( match.group(2) )
+					except:
+						iValue = match.group(2).atoi()
 					pSetFunc(iValue)
 
 		self.LoadSequenceBlock(lsCreationText)
@@ -2456,9 +2553,14 @@ class SequenceBlock(CanvasUtils.DraggableCanvasIcon):
 		self.iBoxWidth = 16
 		self.iBoxHeight = 16
 
-		self.lContainedEntities = range(self.iNumBlocks)
-		for i in range(self.iNumBlocks):
-			self.lContainedEntities[i] = None
+		try:
+			self.lContainedEntities = range(self.iNumBlocks)
+			for i in range(self.iNumBlocks):
+				self.lContainedEntities[i] = None
+		except:
+			self.lContainedEntities = list(range(self.iNumBlocks))
+			for aux in list(range(self.iNumBlocks)):
+				self.lContainedEntities[aux] = None          
 
 		# Setup our graphical bits.
 		self.liContainedLines = []
@@ -2629,8 +2731,8 @@ class SequenceBlock(CanvasUtils.DraggableCanvasIcon):
 	def SetContainedEntity(self, iIndex, pEntity):
 		# If we had an old contained AI here, let it know it's
 		# no longer contained here.
-		pContained = self.lContainedEntities[iIndex]
-		self.lContainedEntities[iIndex] = None
+		pContained = self.lContainedEntities[int(iIndex)]
+		self.lContainedEntities[int(iIndex)] = None
 		if pContained:
 			pContained.SetContainingEntity(None)
 		
@@ -2638,17 +2740,24 @@ class SequenceBlock(CanvasUtils.DraggableCanvasIcon):
 		if pEntity:
 			if pEntity.CanBeContainedBy(self.pParentAI):
 				pEntity.SetContainingEntity(self)
-				self.lContainedEntities[iIndex] = pEntity
+				self.lContainedEntities[int(iIndex)] = pEntity
 
 	def RemoveContainedEntity(self, pEntity):
 		bRedraw = 0
-		for i in range(self.iNumBlocks):
-			if self.lContainedEntities[i] == pEntity:
-				# Found the match.  Remove it.
-				self.SetContainedEntity(i, None)
-
-				# We need to redraw ourselves.
-				bRedraw = 1
+		try:
+			for i in range(self.iNumBlocks):
+				if self.lContainedEntities[i] == pEntity:
+					# Found the match.  Remove it.
+					self.SetContainedEntity(i, None)
+					# We need to redraw ourselves.
+					bRedraw = 1
+		except:
+			for i in list(range(self.iNumBlocks)):
+				if self.lContainedEntities[i] == pEntity:
+					# Found the match.  Remove it.
+					self.SetContainedEntity(i, None)
+					# We need to redraw ourselves.
+					bRedraw = 1
 		
 		if bRedraw:
 			self.Redraw()
@@ -2656,13 +2765,22 @@ class SequenceBlock(CanvasUtils.DraggableCanvasIcon):
 	def Redraw(self):
 		# More like reposition, for us...
 		# Reposition our lines:
-		for i in range(self.iNumBlocks):
-			vStart = self.GetLineStart(i)
-			vEnd = vStart
-			if self.lContainedEntities[i]:
-				vEnd = self.lContainedEntities[i].GetAttachPoint()
-			
-			self.pCanvas.coords(self.liContainedLines[i], vStart[0], vStart[1], vEnd[0], vEnd[1])
+		try:
+			for i in range(self.iNumBlocks):
+				vStart = self.GetLineStart(i)
+				vEnd = vStart
+				if self.lContainedEntities[i]:
+					vEnd = self.lContainedEntities[i].GetAttachPoint()
+				
+				self.pCanvas.coords(self.liContainedLines[i], vStart[0], vStart[1], vEnd[0], vEnd[1])
+		except:
+			for i in range(self.iNumBlocks):
+				vStart = self.GetLineStart(i)
+				vEnd = vStart
+				if self.lContainedEntities[i]:
+					vEnd = self.lContainedEntities[i].GetAttachPoint()
+				
+				self.pCanvas.coords(self.liContainedLines[i], vStart[0], vStart[1], vEnd[0], vEnd[1])
 
 		# Reposition our line to our parent.
 		vAttach = self.pParentAI.GetBlockAttachPoint()
@@ -2768,7 +2886,11 @@ class CompoundAIEntity(AIEntity):
 class CompoundAIConfigurationDialog(ConfigurationDialog):
 	class FlagConfig(Frame):
 		def __init__(self, pParent, pConfigDialog, pAI, lSettings, text="", **kw):
-			apply(Frame.__init__, (self, pParent), kw)
+			try:
+				apply(Frame.__init__, (self, pParent), kw)
+			except:
+				from apply import apply
+				apply(Frame.__init__, (self, pParent), kw)
 			self.pConfigDialog = pConfigDialog
 			self.bEnabled = IntVar()
 			self.sName = text
@@ -2840,7 +2962,12 @@ class CompoundAIConfigurationDialog(ConfigurationDialog):
 
 	class RangeConfig(FlagConfig):
 		def __init__(self, pParent, pConfigDialog, pAI, lSettings, **kw):
-			apply(CompoundAIConfigurationDialog.FlagConfig.__init__, (self, pParent, pConfigDialog, pAI, lSettings), kw)
+			try:
+				apply(CompoundAIConfigurationDialog.FlagConfig.__init__, (self, pParent, pConfigDialog, pAI, lSettings), kw)
+			except:
+				from apply import apply
+				apply(CompoundAIConfigurationDialog.FlagConfig.__init__, (self, pParent, pConfigDialog, pAI, lSettings), kw)
+
 			self.fValue = DoubleVar()
 
 			for iIndex in range(len(lSettings)):
@@ -2927,7 +3054,15 @@ class CompoundAIConfigurationDialog(ConfigurationDialog):
 		self.lFlags = []
 
 		if self.sModuleVar.get():
-			sModuleFilePath = apply(os.path.join, (GetScriptsPath(),) + tuple(string.split(self.sModuleVar.get(), "."))) + ".py"
+			try:
+				frakaux = string.split(self.sModuleVar.get(), ".")
+			except:
+				frakaux = self.sModuleVar.get().split(".")
+			try:
+				sModuleFilePath = apply(os.path.join, (GetScriptsPath(),) + tuple(frakaux)) + ".py"
+			except:
+				from apply import apply
+				sModuleFilePath = apply(os.path.join, (GetScriptsPath(),) + tuple(frakaux)) + ".py"
 			self.SetModule(sModuleFilePath)
 
 	def SelectModule(self):
@@ -2947,8 +3082,12 @@ class CompoundAIConfigurationDialog(ConfigurationDialog):
 			sModule = sFilePath[len(GetScriptsPath()) + 1:]
 			if len(sModule):
 				# Replace all slashes with dots.
-				sModule = string.replace(sModule, "/", ".")
-				sModule = string.replace(sModule, "\\", ".")
+				try:
+					sModule = string.replace(sModule, "/", ".")
+					sModule = string.replace(sModule, "\\", ".")
+				except:
+					sModule = sModule.replace("/", ".")
+					sModule = sModule.replace("\\", ".")
 
 				# And strip off the ".py"
 				sModule = sModule[:-3]
@@ -2996,7 +3135,11 @@ class CompoundAIConfigurationDialog(ConfigurationDialog):
 		sGroup = None
 		for sLine in lsLines:
 			# Check for group tabs.
-			pMatch = pGroupTabMatch.match(string.strip(sLine))
+			try:
+				auxVarE1 = string.strip(sLine)
+			except:
+				auxVarE1 = sLine.strip()
+			pMatch = pGroupTabMatch.match(auxVarE1)
 			if pMatch:
 				# Found a tab.  Save info on it.
 				sTab = pMatch.group(1)
@@ -3007,13 +3150,21 @@ class CompoundAIConfigurationDialog(ConfigurationDialog):
 				# If this tab has the "default" setting for its group,
 				# save that info..
 				sArgs = pMatch.group(3)
-				if "Default" in string.split(sArgs, " "):
+				try:
+					auxVarS1 = string.split(sArgs, " ")
+				except:
+					auxVarS1 = sArgs.split(" ")
+				if "Default" in auxVarS1:
 					dGroupDefaultTabs[sGroup] = sTab
 
 			# If we're in a group right now, look for flags.
 			if lCurrentGroup is not None:
 				# First check for a group end marker.
-				pMatch = pGroupEndMatch.match(string.strip(sLine))
+				try:
+					auxVarE2 = string.strip(sLine)
+				except:
+					auxVarE2 = sLine.strip()
+				pMatch = pGroupEndMatch.match(auxVarE2)
 				if pMatch:
 					if pMatch.group(1) == sGroup:
 						# Done with this group.
@@ -3022,9 +3173,17 @@ class CompoundAIConfigurationDialog(ConfigurationDialog):
 						lCurrentGroup = None
 						continue
 
-				pMatch = pFlagMatch.match(string.strip(sLine))
+				try:
+					auxVarE21 = string.strip(sLine)
+				except:
+					auxVarE21 = sLine.strip()
+				pMatch = pFlagMatch.match(auxVarE21)
 				if pMatch:
-					sFlag, lSettings = (pMatch.group(1), string.split(pMatch.group(2), " "))
+					try:
+						auxVarS21 = string.split(pMatch.group(2), " ")
+					except:
+						auxVarS21 = pMatch.group(2).split(" ")
+					sFlag, lSettings = (pMatch.group(1), auxVarS21)
 
 					# Don't include advanced flags, if advanced features aren't on.
 					if ("Advanced" in lSettings) and (not GetAdvancedFeatures()):
@@ -3033,7 +3192,11 @@ class CompoundAIConfigurationDialog(ConfigurationDialog):
 					lCurrentGroup.append( [sFlag, lSettings] )
 			else:
 				# No current group.  Look for a group start marker.
-				pMatch = pGroupStartMatch.match(string.strip(sLine))
+				try:
+					auxVarE3 = string.strip(sLine)
+				except:
+					auxVarE3 = sLine.strip()
+				pMatch = pGroupStartMatch.match(auxVarE3)
 				if pMatch:
 					# Found the start of a group...
 					sGroup = pMatch.group(1)
@@ -3050,7 +3213,11 @@ class CompoundAIConfigurationDialog(ConfigurationDialog):
 				# default tab, change the names of the flags
 				# to match the tab...
 				sGroup = dTabs[sTab]
-				if (not dGroupDefaultTabs.has_key(sGroup))  or  (dGroupDefaultTabs[sGroup] != sTab):
+				try:
+					anotherFrigginAuxiliar = dGroupDefaultTabs.has_key(sGroup)
+				except:
+					anotherFrigginAuxiliar = sGroup in dGroupDefaultTabs.keys()
+				if (not anotherFrigginAuxiliar)  or  (dGroupDefaultTabs[sGroup] != sTab):
 					lFlags = dGroups[ sGroup ]
 					lRevisedFlags = []
 					for sFlag, lSettings in lFlags:
@@ -3073,7 +3240,11 @@ class CompoundAIConfigurationDialog(ConfigurationDialog):
 			# Read in all the flags defined in the file, and their settings.
 			lFlags = []
 			for sLine in lsLines:
-				match = pFlagMatch.match(string.strip(sLine))
+				try:
+					mierdaux = string.strip(sLine)
+				except:
+					mierdaux = sLine.strip()
+				match = pFlagMatch.match(mierdaux)
 				if match:
 					sFlag, sSettings = match.group(1, 2)
 					lSettings = string.split(sSettings, " ")
@@ -3091,7 +3262,11 @@ class CompoundAIConfigurationDialog(ConfigurationDialog):
 		# Get the path to our module.
 		if not self.sModuleVar.get():
 			return
-		sFilePath = apply(os.path.join, (GetScriptsPath(),) + tuple(string.split(self.sModuleVar.get(), "."))) + ".py"
+		try:
+			sFilePath = apply(os.path.join, (GetScriptsPath(),) + tuple(string.split(self.sModuleVar.get(), "."))) + ".py"
+		except:
+			from apply import apply
+			sFilePath = apply(os.path.join, (GetScriptsPath(),) + tuple(self.sModuleVar.get().split("."))) + ".py"
 
 		# Import the given module, and set the colors of all our flag
 		# settings based on what the module tells us to do.
@@ -3102,7 +3277,8 @@ class CompoundAIConfigurationDialog(ConfigurationDialog):
 		try:
 			pFile, sPathName, sDescription = imp.find_module(sFile, [sPath])
 			pModule = imp.load_module(sFile, pFile, sFilePath, sDescription)
-		except ImportError, sValue:
+		#except (ImportError, sValue) as e:
+		except ImportError as sValue:
 			#print "Error importing file for colors: (%s), (%s)" % (sPath, sFile)
 			#print sValue
 			return
@@ -3116,7 +3292,7 @@ class CompoundAIConfigurationDialog(ConfigurationDialog):
 		# to get info about what colors the various flags should be.
 		try:
 			dKeyColors = getattr(pModule, "GetKeyColors")(dKeys)
-		except Exception, sValue:
+		except Exception as sValue:
 			#print "Error calling %s.GetKeyColors" % sFile
 			#print sValue
 			return
@@ -3250,10 +3426,13 @@ class FileLoader:
 				# Found a match.  Pull the class name and
 				# object 
 				sClass, sName = match.group(1, 2)
-				print "Matched %sAI: %s" % (sClass, sName)
-
-				iXPos = string.atoi( match.group(3) )
-				iYPos = string.atoi( match.group(4) )
+				print("Matched %sAI: %s" % (sClass, sName))
+				try:
+					iXPos = string.atoi( match.group(3) )
+					iYPos = string.atoi( match.group(4) )
+				except:
+					iXPos = int(match.group(3))
+					iYPos = int(match.group(4))
 
 				lsBlock = lsBlock[(iLine+1):]
 				break
@@ -3262,17 +3441,21 @@ class FileLoader:
 			if match:
 				# Found a match on a special object.
 				sSpecial = match.group(1)
-				print "Matched special: %s" % sSpecial
+				print("Matched special: %s" % sSpecial)
 				break
 			# Check for actions.
 			match = actionmatch.search(lsBlock[iLine])
 			if match:
 				bAction = 1
 				sClass, sName = match.group(1, 2)
-				print "Matched Action %s: %s" % (sClass, sName)
+				print("Matched Action %s: %s" % (sClass, sName))
 
-				iXPos = string.atoi( match.group(3) )
-				iYPos = string.atoi( match.group(4) )
+				try:
+					iXPos = string.atoi( match.group(3) )
+					iYPos = string.atoi( match.group(4) )
+				except:
+					iXPos = int(match.group(3))
+					iYPos = int(match.group(4))
 
 				lsBlock = lsBlock[(iLine+1):]
 				break
@@ -3282,7 +3465,7 @@ class FileLoader:
 			sDone = "# ?Done creating %s %s\n" % (sClass, sName)
 		else:
 			sDone = "# ?Done creating %sAI %s\n" % (sClass, sName)
-
+ 
 		for iLine in range(len(lsBlock)):
 			if lsBlock[iLine] == sDone:
 				lsBlock = lsBlock[:iLine]
@@ -3356,4 +3539,4 @@ def Go():
 	root.bind("<Control-s>", menus.SaveAI)
 
 	root.mainloop()
-	print "Exiting editor..."
+	print("Exiting editor...")

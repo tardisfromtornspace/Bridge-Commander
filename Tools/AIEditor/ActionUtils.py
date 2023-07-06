@@ -48,7 +48,7 @@ def FindActions(lsPaths):
 			if sFile[-2:] == ".h"  or  sFile[-2:] == ".H":
 				# It's a header file..
 				lsFileList.append(sPath + "/" + sFile)
-	print "Searching %d files for TGAction classes." % len(lsFileList)
+	print("Searching %d files for TGAction classes." % len(lsFileList))
 
 	# Ok, we have a list of all the header files in all the
 	# directories we need to search.  Make a pass through the
@@ -59,7 +59,7 @@ def FindActions(lsPaths):
 		try:
 			pFile = open(sFile, "r")
 		except IOError:
-			print "Unable to open file: " + sFile
+			print("Unable to open file: " + sFile)
 			pFile = None
 
 		if pFile:

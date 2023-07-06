@@ -1,4 +1,7 @@
-from Tkinter import *
+try:
+    from Tkinter import *
+except:
+    from tkinter import *
 
 class EditTextDialog(Toplevel):
 	def __init__(self, pParent, pSetTextFunc, sText):
@@ -105,7 +108,11 @@ class ConfigurationDialog(Toplevel):
 		# we'll allow in a name.  If not, we need to return
 		# "break", so the event isn't propogated any further.
 		import string
-		if -1 == string.find(string.digits + string.letters, event.keysym):
+		try:
+			auxVariable = string.find(string.digits + string.letters, event.keysym)
+		except:
+			auxVariable = (string.digits + string.ascii_letters).find(event.keysym)
+		if -1 == auxVariable:
 			# Didn't find it.  Check for special keys.
 			if not (event.keysym in ( "BackSpace", "Tab", "underscore", "Left", "Right", "Home", "End" )):
 				# It's not a special key.  Don't propogate
@@ -125,7 +132,7 @@ class ConfigurationDialog(Toplevel):
 		self.pAI.bInterruptable = self.bInterruptable.get()
 
 	def DeleteAI(self):
-		print "Deleting " + self.pAI.GetName()
+		print("Deleting " + self.pAI.GetName())
 		self.pOutput.RemoveEntity(self.pAI)
 		self.pAI = None
 		self.destroy()

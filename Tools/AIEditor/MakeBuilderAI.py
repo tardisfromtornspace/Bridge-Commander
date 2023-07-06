@@ -40,11 +40,20 @@ def Go(sFile, bRemoveOnly = 0):
 def IsBuilderAI(sFile):
 	# If this is a builder AI, it'll have a builder AI header...
 	file = open(sFile, "rt")
-	for sLine in string.split(g_sBuilderAIHeader, "\n")[:-1]:
-		sFileLine = string.rstrip(file.readline())
-		if sLine != sFileLine:
-			#print "(%s) is not (%s)" % (sLine, sFileLine)
-			return 0
+	try:
+		auxiliarList = string.split(g_sBuilderAIHeader, "\n")
+		for sLine in auxiliarList[:-1]:
+			sFileLine = string.rstrip(file.readline())
+			if sLine != sFileLine:
+				#print "(%s) is not (%s)" % (sLine, sFileLine)
+				return 0
+	except:
+		auxiliarList = g_sBuilderAIHeader.split("\n")
+		for sLine in auxiliarList[:-1]:
+			sFileLine = file.readline().rstrip()
+			if sLine != sFileLine:
+				#print "(%s) is not (%s)" % (sLine, sFileLine)
+				return 0
 
 	return 1
 
