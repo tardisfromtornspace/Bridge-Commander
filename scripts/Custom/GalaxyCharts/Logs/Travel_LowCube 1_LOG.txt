@@ -1,0 +1,32 @@
+#This is the dump of the LogCreator: <LowCube 1 Travel Logger LogCreator_b4Z1nabYXRs7>
+#This log file was created on: 22:15:18.455 of 18/July/2023, Tuesday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>22:15:18.455 of 18/July/2023, Tuesday
+#>>>Initialized LowCube 1 Travel logger
+#>>>SELF = <LowCube 1(891529) Travel_P9F46r2mFiQK>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>22:15:21.690 of 18/July/2023, Tuesday
+#>>>Arrived Events:  added event <C TGEvent instance at _3f136720_p_TGEvent>
+#>>>Updated Target Ship = Player
+########################################
+# 22:22:33.406 of 18/July/2023, Tuesday
+#Ending of log dump - User is quiting the game
+########################################

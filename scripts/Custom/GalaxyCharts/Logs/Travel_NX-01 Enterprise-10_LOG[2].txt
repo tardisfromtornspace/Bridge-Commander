@@ -1,0 +1,25 @@
+#This is the dump of the LogCreator: <NX-01 Enterprise-10 Travel Logger[2] LogCreator_9Jm21ujLibdU>
+#This log file was created on: 1:22:52.261 of 7/July/2023, Friday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>1:22:52.261 of 7/July/2023, Friday
+#>>>Initialized NX-01 Enterprise-10 Travel logger
+#>>>SELF = <NX-01 Enterprise-10(106973) Travel_wOT5MHX55K4k>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Ship is dead or dying
+#>>>Ship is dead or dying (at SetDestination)
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Ship is dead or dying (at SetDestination)
+#>>>Set Exit Placement Name as None
+#>>>Enable Towing: 0
+#>>>Travelling procedures initiated...
+#>>> -Ship is dead or dying

@@ -1,38 +1,20 @@
-#This is the dump of the LogCreator: <TravelerWarpSequence of Ship Player[2] LogCreator_1h7TNk7WOgob>
-#This log file was created on: 22:17:53.631 of 5/July/2023, Wednesday
+#This is the dump of the LogCreator: <TravelerWarpSequence of Ship Player[2] LogCreator_u692COtwd2uq>
+#This log file was created on: 0:15:38.046 of 19/July/2023, Wednesday
 ########################################
 ## -------------------- ##
 ####################
-#######>>>22:17:53.631 of 5/July/2023, Wednesday
+#######>>>0:15:38.046 of 19/July/2023, Wednesday
 #>>>Initialized TravelerWarpSequence of ship Player logger
-#>>>SELF = <C WarpSequence instance at _82Z9S1ONPCvB>
+#>>>SELF = <C WarpSequence instance at _fQ25dw4afVRi>
 ## -------------------- ##
 ####################
-#######>>>22:20:44.780 of 5/July/2023, Wednesday
-#>>>Initialized TravelerWarpSequence of ship Player logger
-#>>>SELF = <C WarpSequence instance at _3BOPtt6ORjG5>
+#######>>>0:33:39.748 of 19/July/2023, Wednesday
+#>>>Setting sequence up...
+#>>>GetDestination called
+#>>>Got species of ship from NanoFXv2
+#>>>Using Nacelle Flash Sequence from NanoFXv2
+#>>>Sequence was set up.
 ## -------------------- ##
 ####################
-#######>>>22:21:0.280 of 5/July/2023, Wednesday
-#>>>Initialized TravelerWarpSequence of ship Player logger
-#>>>SELF = <C WarpSequence instance at _VE7Z35GM2X85>
-## -------------------- ##
-####################
-#######>>>22:21:2.313 of 5/July/2023, Wednesday
-#>>>Initialized TravelerWarpSequence of ship Player logger
-#>>>SELF = <C WarpSequence instance at _47U1jB154453>
-## -------------------- ##
-####################
-#######>>>22:23:10.111 of 5/July/2023, Wednesday
-#>>>Initialized TravelerWarpSequence of ship Player logger
-#>>>SELF = <C WarpSequence instance at _r8FRRDiLeYr7>
-## -------------------- ##
-####################
-#######>>>22:23:19.545 of 5/July/2023, Wednesday
-#>>>Initialized TravelerWarpSequence of ship Player logger
-#>>>SELF = <C WarpSequence instance at _Wq081l0iHd5Y>
-## -------------------- ##
-####################
-#######>>>22:23:21.446 of 5/July/2023, Wednesday
-#>>>Initialized TravelerWarpSequence of ship Player logger
-#>>>SELF = <C WarpSequence instance at _q8nw9x41WwCX>
+#######>>>0:33:58.525 of 19/July/2023, Wednesday
+#>>>GetPlacementName called

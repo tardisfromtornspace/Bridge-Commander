@@ -5,9 +5,9 @@ def GetShipStats():
 	kShipStats = {
 		"DamageRadMod" : 0.75, 
 		"DamageStrMod" : 0.75, 
-		"FilenameHigh": "data/Models/Ships/EnterpriseJ/EnterpriseJ.nif",
-		"FilenameMed": "data/Models/Ships/EnterpriseJ/EnterpriseJ.nif",
-		"FilenameLow": "data/Models/Ships/EnterpriseJ/EnterpriseJ.nif",
+		"FilenameHigh": "data/Models/Ships/EnterpriseJ/CanonEnterpriseJ.nif",
+		"FilenameMed": "data/Models/Ships/EnterpriseJ/CanonEnterpriseJ.nif",
+		"FilenameLow": "data/Models/Ships/EnterpriseJ/CanonEnterpriseJ.nif",
 		"Name": "EnterpriseJ",
 		"HardpointFile": "EnterpriseJ",
 		"Species": Multiplayer.SpeciesToShip.MARAUDER
@@ -23,9 +23,9 @@ def LoadModel(bPreLoad = 0):
 		# Surface Damage Res, Internal Damage Res, Burn Value, Hole Value,
 		# Search String for Glow, Search string for Specular, Suffix for specular
 		pLODModel = App.g_kLODModelManager.Create(pStats["Name"])
-		pLODModel.AddLOD(pStats["FilenameHigh"], 10, 200.0, 15.0, 15.0, 400, 900, "_glow", None, "_specular")
-		pLODModel.AddLOD(pStats["FilenameMed"],  10, 300.0, 15.0, 15.0, 400, 900, "_glow", None, None)
-		pLODModel.AddLOD(pStats["FilenameLow"],  10, 800.0, 15.0, 30.0, 400, 900, "_glow", None, None)
+		pLODModel.AddLOD(pStats["FilenameHigh"], 10, 200.0, 15.0, 15.0, 9000, 82000, "_glow", None, "_specular")
+		pLODModel.AddLOD(pStats["FilenameMed"],  10, 300.0, 15.0, 15.0, 9000, 82000, "_glow", None, None)
+		pLODModel.AddLOD(pStats["FilenameLow"],  10, 800.0, 15.0, 30.0, 9000, 82000, "_glow", None, None)
 
 #		kDebugObj = App.CPyDebug()
 		if (bPreLoad == 0):
@@ -37,3 +37,21 @@ def LoadModel(bPreLoad = 0):
 
 def PreLoadModel():
 	LoadModel(1)
+
+def GetArmorRatio():
+      return 1.5
+
+def GetDamageStrMod():
+	return 0
+
+def GetDamageRadMod():
+	return 0
+
+def GetForcedArmor():
+	return 1
+
+#def GetArmouredModel():
+#	return "EnterpriseJ"
+
+#def GetOriginalShipModel(): # Should be this script, but for more flexibility, here you can change it to never return...
+#	return "EnterpriseJ"

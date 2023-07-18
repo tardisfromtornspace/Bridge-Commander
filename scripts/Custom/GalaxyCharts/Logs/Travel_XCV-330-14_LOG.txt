@@ -1,0 +1,28 @@
+#This is the dump of the LogCreator: <XCV-330-14 Travel Logger LogCreator_v0YSeUO2Ahb1>
+#This log file was created on: 1:22:22.864 of 7/July/2023, Friday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>1:22:22.864 of 7/July/2023, Friday
+#>>>Initialized XCV-330-14 Travel logger
+#>>>SELF = <XCV-330-14(109199) Travel_nJRBaFu5nKuq>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>1:22:31.435 of 7/July/2023, Friday
+#>>>Updated Target Ship = Apollo-20

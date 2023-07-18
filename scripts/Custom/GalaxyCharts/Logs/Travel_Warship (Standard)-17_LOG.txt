@@ -1,0 +1,45 @@
+#This is the dump of the LogCreator: <Warship (Standard)-17 Travel Logger LogCreator_U7G03k6PonF1>
+#This log file was created on: 1:22:22.864 of 7/July/2023, Friday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>1:22:22.864 of 7/July/2023, Friday
+#>>>Initialized Warship (Standard)-17 Travel logger
+#>>>SELF = <Warship (Standard)-17(110290) Travel_d1zPWGfgvJpg>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Warbird-1
+## -------------------- ##
+####################
+#######>>>1:22:36.336 of 7/July/2023, Friday
+#>>>Updated Target Ship = NX-02 Columbia-12
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>1:22:36.716 of 7/July/2023, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>1:22:37.150 of 7/July/2023, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>1:22:37.937 of 7/July/2023, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>1:22:38.359 of 7/July/2023, Friday
+#>>> -Cancelling, too close to target to warp intercept...

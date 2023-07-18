@@ -1,3 +1,5 @@
+
+
 from bcdebug import debug
 import Foundation
 import App
@@ -14,8 +16,8 @@ Foundation.SoundDef("sfx/Weapons/PPhaser.wav", "PPhaser", 0.7)
 
 # Usually, you need only edit these seven lines
 abbrev = 'EnterpriseJ'				# Short name, no spaces, used as a preface for descriptions
-iconName = 'EnterpriseJ'					# Name of icon .tga file
-longName = 'U.S.S. Enterprise J'					# Long name with spaces
+iconName = 'EnterpriseJUniverse'					# Name of icon .tga file
+longName = 'USS Enterprise J'					# Long name with spaces
 shipFile = 'EnterpriseJ'				# Name of the file in Scripts\Ships\ to use.
 menuGroup = 'Fed Ships'			# Menu to appear under in Quick Battle
 playerMenuGroup = 'Fed Ships'		# ...set to None if you don't want to appear here.
@@ -37,11 +39,21 @@ credits = {
 
 Foundation.ShipDef.EnterpriseJ = Foundation.FedShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile })
 Foundation.ShipDef.EnterpriseJ.dTechs = {
+	'Ablative Armour': 295000,
+	'Adv Armor Tech': 1,
 	'Breen Drainer Immune': 0,
-	'Regenerative Shields': 60,
+	'ChronitonTorpe Immune': 1,
+	'Drainer Immune': 1,
+	'Fed Ablative Armor': { "Plates": ["Forward Ablative Armor", "Aft Ablative Armor", "Dorsal Ablative Armor", "Ventral Ablative Armor"]},
+	"Inversion Beam": [0.9, 0, 0.5, 1500],
 	'Multivectral Shields': 50,
-	'Fed Ablative Armor': { "Plates": ["Forward Ablative Armor", "Aft Ablative Armor", "Dorsal Ablative Armor", "Ventral Ablative Armor"]
-}}
+	"Phased Torpedo Immune": 1,
+	"Power Drain Beam": [0.9, 0, 0.5, 1500],
+	"Transphasic Torpedo Immune": 1,
+	"Reflector Shields": 2,
+	'Reflux Weapon': 2800,
+	'Regenerative Shields': 60
+}
 Foundation.ShipDef.EnterpriseJ.sBridge = 'defiantbridge'
 Foundation.ShipDef.EnterpriseJ.fMaxWarp = 9.995
 Foundation.ShipDef.EnterpriseJ.fWarpEntryDelayTime = 3.5

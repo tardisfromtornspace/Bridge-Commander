@@ -1,13 +1,13 @@
-#This is the dump of the LogCreator: <Gravity Manager LogCreator_OI8Qoo01o571>
-#This log file was created on: 22:14:54.0 of 5/July/2023, Wednesday
+#This is the dump of the LogCreator: <Gravity Manager LogCreator_wqVZ4pdC0rUc>
+#This log file was created on: 0:14:53.0 of 19/July/2023, Wednesday
 ########################################
 ## -------------------- ##
 ####################
-#######>>>22:14:54.0 of 5/July/2023, Wednesday
-#>>>Initialized GravityManager_vEaKcRez7gnD logger
+#######>>>0:14:53.0 of 19/July/2023, Wednesday
+#>>>Initialized GravityManager_22gLq146wLVN logger
 ## -------------------- ##
 ####################
-#######>>>22:15:3.820 of 5/July/2023, Wednesday
+#######>>>0:15:2.444 of 19/July/2023, Wednesday
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
@@ -17,87 +17,66 @@
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_ugOFi8eqX52B>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_1fLtD9uHqczg>]
 #>>>Planets/Suns List: ['Belaruz 4']
 #>>>Refreshed Ship List: ['Player']
-#>>>Updated radius for grav well <Belaruz 4 GravityWell_ugOFi8eqX52B>, radius is now 1604.25073242
+#>>>Updated radius for grav well <Belaruz 4 GravityWell_1fLtD9uHqczg>, radius is now 1606.86523438
 ## -------------------- ##
 ####################
-#######>>>22:17:53.631 of 5/July/2023, Wednesday
+#######>>>0:15:38.046 of 19/July/2023, Wednesday
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_Fx5dE2j4fxuR>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_39CTP9097y9J>]
 #>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player', 'Breen DD-1']
-#>>>Refreshed Ship List: ['Player', 'Breen DD-1']
+#>>>Refreshed Ship List: ['Player', 'Dalek Saucer-1']
+#>>>Refreshed Ship List: ['Player', 'Dalek Saucer-1']
 ## -------------------- ##
 ####################
-#######>>>22:20:43.780 of 5/July/2023, Wednesday
-#>>>Refreshed Ship List: ['Player', 'Breen DD-1']
+#######>>>0:15:43.810 of 19/July/2023, Wednesday
+#>>>Refreshed Ship List: ['Player', 'DalekSaucer 1', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1']
+#>>>Refreshed Ship List: ['Player', 'DalekSaucer 1', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1']
+#>>>Refreshed Ship List: ['Player', 'DalekSaucer 1', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1']
+#>>>Refreshed Ship List: ['Player', 'DalekSaucer 1', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1']
+#>>>Refreshed Ship List: ['Player', 'DalekSaucer 1', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1']
+#>>>Refreshed Ship List: ['Player', 'DalekSaucer 1', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1']
+#>>>Refreshed Ship List: ['Player', 'DalekSaucer 1', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1']
+#>>>Refreshed Ship List: ['Player', 'DalekSaucer 1', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1']
+#>>>Refreshed Ship List: ['Player', 'DalekSaucer 1', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1']
+#>>>Refreshed Ship List: ['Player', 'DalekSaucer 1', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1']
+#>>>Refreshed Ship List: ['Player', 'DalekSaucer 1', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1']
 ## -------------------- ##
 ####################
-#######>>>22:20:44.780 of 5/July/2023, Wednesday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_4aEL3UKdn90p>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Breen DD-1', 'Player']
+#######>>>0:16:4.525 of 19/July/2023, Wednesday
+#>>>Refreshed Ship List: ['Player', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1', 'DalekSaucer 2', 'Dalek2005Gold 2', 'Dalek2005Gold2 2', 'Dalek2005Gold3 2', 'Dalek2005Gold4 2', 'Dalek2005Gold5 2', 'Dalek2005Gold6 2', 'Dalek2005Gold7 2', 'Dalek2005Gold8 2', 'Dalek2005Gold9 2', 'Dalek2005Gold10 2']
+#>>>Refreshed Ship List: ['Player', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1', 'DalekSaucer 2', 'Dalek2005Gold 2', 'Dalek2005Gold2 2', 'Dalek2005Gold3 2', 'Dalek2005Gold4 2', 'Dalek2005Gold5 2', 'Dalek2005Gold6 2', 'Dalek2005Gold7 2', 'Dalek2005Gold8 2', 'Dalek2005Gold9 2', 'Dalek2005Gold10 2']
+#>>>Refreshed Ship List: ['Player', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1', 'DalekSaucer 2', 'Dalek2005Gold 2', 'Dalek2005Gold2 2', 'Dalek2005Gold3 2', 'Dalek2005Gold4 2', 'Dalek2005Gold5 2', 'Dalek2005Gold6 2', 'Dalek2005Gold7 2', 'Dalek2005Gold8 2', 'Dalek2005Gold9 2', 'Dalek2005Gold10 2']
+#>>>Refreshed Ship List: ['Player', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1', 'DalekSaucer 2', 'Dalek2005Gold 2', 'Dalek2005Gold2 2', 'Dalek2005Gold3 2', 'Dalek2005Gold4 2', 'Dalek2005Gold5 2', 'Dalek2005Gold6 2', 'Dalek2005Gold7 2', 'Dalek2005Gold8 2', 'Dalek2005Gold9 2', 'Dalek2005Gold10 2']
+#>>>Refreshed Ship List: ['Player', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1', 'DalekSaucer 2', 'Dalek2005Gold 2', 'Dalek2005Gold2 2', 'Dalek2005Gold3 2', 'Dalek2005Gold4 2', 'Dalek2005Gold5 2', 'Dalek2005Gold6 2', 'Dalek2005Gold7 2', 'Dalek2005Gold8 2', 'Dalek2005Gold9 2', 'Dalek2005Gold10 2']
+#>>>Refreshed Ship List: ['Player', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1', 'DalekSaucer 2', 'Dalek2005Gold 2', 'Dalek2005Gold2 2', 'Dalek2005Gold3 2', 'Dalek2005Gold4 2', 'Dalek2005Gold5 2', 'Dalek2005Gold6 2', 'Dalek2005Gold7 2', 'Dalek2005Gold8 2', 'Dalek2005Gold9 2', 'Dalek2005Gold10 2']
+#>>>Refreshed Ship List: ['Player', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1', 'DalekSaucer 2', 'Dalek2005Gold 2', 'Dalek2005Gold2 2', 'Dalek2005Gold3 2', 'Dalek2005Gold4 2', 'Dalek2005Gold5 2', 'Dalek2005Gold6 2', 'Dalek2005Gold7 2', 'Dalek2005Gold8 2', 'Dalek2005Gold9 2', 'Dalek2005Gold10 2']
+#>>>Refreshed Ship List: ['Player', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1', 'DalekSaucer 2', 'Dalek2005Gold 2', 'Dalek2005Gold2 2', 'Dalek2005Gold3 2', 'Dalek2005Gold4 2', 'Dalek2005Gold5 2', 'Dalek2005Gold6 2', 'Dalek2005Gold7 2', 'Dalek2005Gold8 2', 'Dalek2005Gold9 2', 'Dalek2005Gold10 2']
+#>>>Refreshed Ship List: ['Player', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1', 'DalekSaucer 2', 'Dalek2005Gold 2', 'Dalek2005Gold2 2', 'Dalek2005Gold3 2', 'Dalek2005Gold4 2', 'Dalek2005Gold5 2', 'Dalek2005Gold6 2', 'Dalek2005Gold7 2', 'Dalek2005Gold8 2', 'Dalek2005Gold9 2', 'Dalek2005Gold10 2']
+#>>>Refreshed Ship List: ['Player', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1', 'DalekSaucer 2', 'Dalek2005Gold 2', 'Dalek2005Gold2 2', 'Dalek2005Gold3 2', 'Dalek2005Gold4 2', 'Dalek2005Gold5 2', 'Dalek2005Gold6 2', 'Dalek2005Gold7 2', 'Dalek2005Gold8 2', 'Dalek2005Gold9 2', 'Dalek2005Gold10 2']
+#>>>Refreshed Ship List: ['Player', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1', 'DalekSaucer 2', 'Dalek2005Gold 2', 'Dalek2005Gold2 2', 'Dalek2005Gold3 2', 'Dalek2005Gold4 2', 'Dalek2005Gold5 2', 'Dalek2005Gold6 2', 'Dalek2005Gold7 2', 'Dalek2005Gold8 2', 'Dalek2005Gold9 2', 'Dalek2005Gold10 2']
 ## -------------------- ##
 ####################
-#######>>>22:21:0.280 of 5/July/2023, Wednesday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_AW7ngou4u031>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player']
+#######>>>0:17:11.425 of 19/July/2023, Wednesday
+#>>>Refreshed Ship List: ['Player', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1', 'DalekSaucer 2', 'Dalek2005Gold2 2', 'Dalek2005Gold3 2', 'Dalek2005Gold4 2', 'Dalek2005Gold5 2', 'Dalek2005Gold6 2', 'Dalek2005Gold7 2', 'Dalek2005Gold8 2', 'Dalek2005Gold9 2', 'Dalek2005Gold10 2']
 ## -------------------- ##
 ####################
-#######>>>22:21:2.313 of 5/July/2023, Wednesday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_S5gv3AL81e21>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player', 'Breen DD-1']
-#>>>Refreshed Ship List: ['Player', 'Breen DD-1']
+#######>>>0:31:32.128 of 19/July/2023, Wednesday
+#>>>Refreshed Ship List: ['Player', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1', 'DalekSaucer 2', 'Dalek2005Gold2 2', 'Dalek2005Gold3 2', 'Dalek2005Gold4 2', 'Dalek2005Gold5 2', 'Dalek2005Gold6 2', 'Dalek2005Gold7 2', 'Dalek2005Gold8 2', 'Dalek2005Gold9 2', 'Dalek2005Gold10 2']
 ## -------------------- ##
 ####################
-#######>>>22:23:4.279 of 5/July/2023, Wednesday
-#>>>Refreshed Ship List: ['Player']
-## -------------------- ##
-####################
-#######>>>22:23:10.111 of 5/July/2023, Wednesday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_1a1ZtNhiv3Fb>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player']
-## -------------------- ##
-####################
-#######>>>22:23:19.545 of 5/July/2023, Wednesday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_2IIc56nECIVS>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player']
-## -------------------- ##
-####################
-#######>>>22:23:21.446 of 5/July/2023, Wednesday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_36Yu2RjJbiut>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player', 'Breen DD-1']
-#>>>Refreshed Ship List: ['Player', 'Breen DD-1']
-## -------------------- ##
-####################
-#######>>>22:26:21.911 of 5/July/2023, Wednesday
+#######>>>0:33:48.193 of 19/July/2023, Wednesday
+#>>>Creating Grav Wells - Set: Custom.GalaxyCharts.TravelerSystems.TravelSet
+#>>>Creating Grav Wells: []
+#>>>Planets/Suns List: []
 #>>>Refreshed Ship List: ['Player']
 ## -------------------- ##
 ####################
-#######>>>22:36:57.182 of 5/July/2023, Wednesday
-#>>>Refreshed Ship List: ['Player', 'WCnx01 1']
-## -------------------- ##
-####################
-#######>>>22:49:36.822 of 5/July/2023, Wednesday
-#>>>Refreshed Ship List: ['Player', 'WCnx01 1']
-## -------------------- ##
-####################
-#######>>>22:50:40.020 of 5/July/2023, Wednesday
-#>>>Refreshed Ship List: ['Player', 'WCnx01 1', 'WCNXRefit 1']
-## -------------------- ##
-####################
-#######>>>22:51:55.559 of 5/July/2023, Wednesday
-#>>>Refreshed Ship List: ['Player', 'WCNXRefit 1']
+#######>>>0:33:58.525 of 19/July/2023, Wednesday
+#>>>Creating Grav Wells - Set: Systems.Sirius_B.Sirius_B2
+#>>>Creating Grav Wells: [<Sirius A GravityWell_I59HOY6U3Ij2>, <Sirius B GravityWell_3Qt4AwM9kBGF>]
+#>>>Planets/Suns List: ['Sirius A', 'Sirius B']
+#>>>Refreshed Ship List: []
+#>>>Added Player to the Ship List

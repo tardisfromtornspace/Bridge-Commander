@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Cube-4 Travel Logger LogCreator_Io0IW64266FK>
-#This log file was created on: 15:20:17.797 of 21/June/2023, Wednesday
+#This is the dump of the LogCreator: <Cube-4 Travel Logger LogCreator_bp290t2avz6M>
+#This log file was created on: 1:11:30.232 of 7/July/2023, Friday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>15:20:17.797 of 21/June/2023, Wednesday
+#######>>>1:11:30.232 of 7/July/2023, Friday
 #>>>Initialized Cube-4 Travel logger
-#>>>SELF = <Cube-4(63934) Travel_8WG1XoXV3LM6>
+#>>>SELF = <Cube-4(298866) Travel_GAjr2G30m2oj>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -23,15 +23,6 @@ Updating Travelling Procedures...
 #>>>Chaser pre-emptive Refresher Initialization
 ## -------------------- ##
 ####################
-#######>>>15:21:32.253 of 21/June/2023, Wednesday
-#>>>Arrived Events:  added event <C TGEvent instance at _3cd08bc0_p_TGEvent>
-#>>>Updated Target Ship = Player
-## -------------------- ##
-####################
-#######>>>15:24:26.339 of 21/June/2023, Wednesday
+#######>>>1:11:45.964 of 7/July/2023, Friday
 #>>>Stopping Refresh Handler
 #>>>Deleting...
-########################################
-# 15:32:53.822 of 21/June/2023, Wednesday
-#Ending of log dump - User is quiting the game
-########################################
