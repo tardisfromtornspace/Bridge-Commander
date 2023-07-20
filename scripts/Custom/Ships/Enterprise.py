@@ -8,7 +8,7 @@ import Foundation
 
 abbrev = "Enterprise"
 iconName = "NemesisSovereign"
-longName = "Enterprise E"
+longName = "USS Enterprise E"
 shipFile = "Enterprise"
 species = App.SPECIES_GALAXY
 menuGroup = "Fed Ships"

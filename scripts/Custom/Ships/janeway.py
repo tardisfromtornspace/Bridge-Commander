@@ -8,7 +8,7 @@ import Foundation
 
 abbrev = "janeway"
 iconName = "janeway"
-longName = "U.S.S. Voyager J"
+longName = "USS Voyager J"
 shipFile = "janeway"
 species = App.SPECIES_GALAXY
 menuGroup = "Fed Ships"

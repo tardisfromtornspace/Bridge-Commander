@@ -10,7 +10,7 @@ import Foundation
 
 abbrev = 'bcjjenterprisev3'
 iconName = 'bcjjprisev3'
-longName = 'JJ Enterprise'
+longName = 'USS Enterprise JJ Kelvin'
 shipFile = 'bcjjenterprisev3'
 species = App.SPECIES_GALAXY
 # SubMenu

@@ -8,7 +8,7 @@ import Foundation
 
 abbrev = "SCIFIKINGOdyssey"
 iconName = "Canon Enterprise F"
-longName = "Canon Enterprise F"
+longName = "USS Enterprise F Canon"
 shipFile = "SCIFIKINGOdyssey"
 species = App.SPECIES_GALAXY
 menuGroup = "Fed Ships"
@@ -23,7 +23,7 @@ Foundation.ShipDef.SCIFIKINGOdyssey.dTechs = {
 	'Ablative Armour': 40000.000000
 }
 
-Foundation.ShipDef.SCIFIKINGOdyssey.desc = "The USS Enterprise ( NCC-1701-F) was a 25th century Federation starship, initially an Odyssey-class star cruiser and post-refit a Yorktown-class dreadnought in Starfleet service in the 2400s and 2410s decades. Its commanding officer was Captain Va'Kel Shon."
+Foundation.ShipDef.SCIFIKINGOdyssey.desc = "The USS Enterprise (NCC-1701-F) was an Odyssey-class Federation starship operated by Starfleet in the 25th century. It was the seventh Federation vessel to bear the name Enterprise. On her final mission in 2401, she was under command of Fleet Admiral Elizabeth Shelby."
 
 
 if menuGroup:           Foundation.ShipDef.SCIFIKINGOdyssey.RegisterQBShipMenu(menuGroup)

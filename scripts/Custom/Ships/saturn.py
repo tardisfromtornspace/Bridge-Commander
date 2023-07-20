@@ -8,7 +8,7 @@ import Foundation
 
 abbrev = "saturn"
 iconName = "saturn"
-longName = "U.S.S. Gateway"
+longName = "USS Gateway"
 shipFile = "saturn"
 species = App.SPECIES_GALAXY
 menuGroup = "Fed Ships"

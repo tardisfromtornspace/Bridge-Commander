@@ -68,10 +68,17 @@ def GetName():
 	return("Enhanced Plasma Torp")
 
 def GetDamage():
-	return 5990.0
+	return 4990.0
 
 def GetGuidanceLifetime():
 	return 30.0
 
 def GetMaxAngularAccel():
 	return 4.26
+
+try:
+	modPhasedTorp = __import__("Custom.Techs.PhasedTorp")
+	if(modPhasedTorp):
+		modPhasedTorp.oPhasedTorp.AddTorpedo(__name__)
+except:
+	print "Phased Torpedo script not installed, or you are missing Foundation Tech"

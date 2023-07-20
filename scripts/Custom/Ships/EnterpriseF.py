@@ -8,7 +8,7 @@ import Foundation
 
 abbrev = "EnterpriseF"
 iconName = "Century"
-longName = "Enterprise F"
+longName = "USS Enterprise F Century"
 shipFile = "EnterpriseF"
 species = App.SPECIES_GALAXY
 menuGroup = "Fed Ships"
@@ -21,7 +21,7 @@ Foundation.ShipDef.EnterpriseF.dTechs = {
 	'Fed Ablative Armor': { "Plates": ["Aft Ablative Armor", "Engineering Ablative Armor", "Top Ablative Armor", "Forward Ablative Armor"],
 }}
 
-Foundation.ShipDef.EnterpriseF.desc = "The USS Enterprise (NCC-1701-F) was an Odyssey-class starship in service during the 25th century. The second ship of her class, she was launched in 2409."
+Foundation.ShipDef.EnterpriseF.desc = "The USS Enterprise (NCC-1701-F) was a Century-class starship in service during the 25th century. The second ship of her class, she was launched in 2409."
 
 
 if menuGroup:           Foundation.ShipDef.EnterpriseF.RegisterQBShipMenu(menuGroup)

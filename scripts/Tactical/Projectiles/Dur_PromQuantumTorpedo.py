@@ -65,7 +65,7 @@ def GetName():
     return ("Quantum")
 
 def GetDamage():
-    return 2200.0
+    return 8500.0
 
 def GetGuidanceLifetime():
     return 50.0

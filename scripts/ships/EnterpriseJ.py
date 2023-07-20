@@ -1,10 +1,19 @@
+# THIS FILE IS NOT SUPPORTED BY ACTIVISION
+# THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
+#         EnterpriseJ.py by Alex SL Gato
+#         Version 1.3
+#         19th July 2023
+#         Based on previous versions done by EnterpriseJ and WileyCoyote
+#                          
+#################################################################################################################
+
 import App
 import Multiplayer.SpeciesToShip
 
 def GetShipStats():
 	kShipStats = {
-		"DamageRadMod" : 0.75, 
-		"DamageStrMod" : 0.75, 
+		"DamageRadMod" : 0.0009765625, 
+		"DamageStrMod" : 0.0009765625, 
 		"FilenameHigh": "data/Models/Ships/EnterpriseJ/CanonEnterpriseJ.nif",
 		"FilenameMed": "data/Models/Ships/EnterpriseJ/CanonEnterpriseJ.nif",
 		"FilenameLow": "data/Models/Ships/EnterpriseJ/CanonEnterpriseJ.nif",
@@ -23,9 +32,9 @@ def LoadModel(bPreLoad = 0):
 		# Surface Damage Res, Internal Damage Res, Burn Value, Hole Value,
 		# Search String for Glow, Search string for Specular, Suffix for specular
 		pLODModel = App.g_kLODModelManager.Create(pStats["Name"])
-		pLODModel.AddLOD(pStats["FilenameHigh"], 10, 200.0, 15.0, 15.0, 9000, 82000, "_glow", None, "_specular")
-		pLODModel.AddLOD(pStats["FilenameMed"],  10, 300.0, 15.0, 15.0, 9000, 82000, "_glow", None, None)
-		pLODModel.AddLOD(pStats["FilenameLow"],  10, 800.0, 15.0, 30.0, 9000, 82000, "_glow", None, None)
+		pLODModel.AddLOD(pStats["FilenameHigh"], 10, 600.0, 15.0, 15.0, 9000, 382000, "_glow", None, "_specular")
+		pLODModel.AddLOD(pStats["FilenameMed"],  10, 1500.0, 15.0, 15.0, 9000, 382000, "_glow", None, None)
+		pLODModel.AddLOD(pStats["FilenameLow"],  10, 1800.0, 15.0, 30.0, 9000, 382000, "_glow", None, None)
 
 #		kDebugObj = App.CPyDebug()
 		if (bPreLoad == 0):

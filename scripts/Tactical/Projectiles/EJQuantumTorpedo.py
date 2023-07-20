@@ -66,7 +66,7 @@ def GetName():
 	return("26th century quantum")
 
 def GetDamage():
-	return 2100.0
+	return 7950.0
 
 def GetGuidanceLifetime():
 	return 50.0

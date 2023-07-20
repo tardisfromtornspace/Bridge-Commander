@@ -8,7 +8,7 @@ import Foundation
 
 abbrev = "kirk"
 iconName = "kirk"
-longName = "U.S.S. Armstrong"
+longName = "USS Armstrong"
 shipFile = "kirk"
 species = App.SPECIES_GALAXY
 menuGroup = "Fed Ships"
