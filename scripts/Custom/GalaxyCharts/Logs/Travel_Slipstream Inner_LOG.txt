@@ -1,0 +1,28 @@
+#This is the dump of the LogCreator: <Slipstream Inner Travel Logger LogCreator_dg5Y60gva4o2>
+#This log file was created on: 17:40:54.215 of 21/July/2023, Friday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>17:40:54.215 of 21/July/2023, Friday
+#>>>Initialized Slipstream Inner Travel logger
+#>>>SELF = <Slipstream Inner(1069307) Travel_X6nsH96sXUU2>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: Player Travel Destination OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+########################################
+# 17:48:51.275 of 21/July/2023, Friday
+#Ending of log dump - User is quiting the game
+########################################

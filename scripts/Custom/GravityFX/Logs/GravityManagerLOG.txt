@@ -1,13 +1,13 @@
-#This is the dump of the LogCreator: <Gravity Manager LogCreator_8o4nzJc022GM>
-#This log file was created on: 17:2:3.0 of 21/July/2023, Friday
+#This is the dump of the LogCreator: <Gravity Manager LogCreator_3D98p8q0XeeM>
+#This log file was created on: 0:53:46.0 of 22/July/2023, Saturday
 ########################################
 ## -------------------- ##
 ####################
-#######>>>17:2:3.0 of 21/July/2023, Friday
-#>>>Initialized GravityManager_ZU26g20Wmb3V logger
+#######>>>0:53:46.0 of 22/July/2023, Saturday
+#>>>Initialized GravityManager_7WJVVH81GiTP logger
 ## -------------------- ##
 ####################
-#######>>>17:2:13.593 of 21/July/2023, Friday
+#######>>>0:53:57.526 of 22/July/2023, Saturday
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
@@ -17,17 +17,19 @@
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_NMMXYUf46QU0>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_S2t75d4g2MR6>]
 #>>>Planets/Suns List: ['Belaruz 4']
 #>>>Refreshed Ship List: ['Player']
-#>>>Updated radius for grav well <Belaruz 4 GravityWell_NMMXYUf46QU0>, radius is now 1608.95654297
+#>>>Updated radius for grav well <Belaruz 4 GravityWell_S2t75d4g2MR6>, radius is now 1614.4354248
 ## -------------------- ##
 ####################
-#######>>>17:3:11.677 of 21/July/2023, Friday
+#######>>>0:54:40.043 of 22/July/2023, Saturday
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_X6qxgUwQVTB4>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_6VI648wHwy4t>]
 #>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player', 'Odyssey (Refit)-1', 'Odyssey (Refit)-2', 'Odyssey (Refit)-3']
-#>>>Refreshed Ship List: ['Player', 'Odyssey (Refit)-1', 'Odyssey (Refit)-2', 'Odyssey (Refit)-3']
-#>>>Refreshed Ship List: ['Player', 'Odyssey (Refit)-1', 'Odyssey (Refit)-2', 'Odyssey (Refit)-3']
-#>>>Refreshed Ship List: ['Player', 'Odyssey (Refit)-1', 'Odyssey (Refit)-2', 'Odyssey (Refit)-3']
+#>>>Refreshed Ship List: ['Player', 'SuperHive Ship-1']
+#>>>Refreshed Ship List: ['Player', 'SuperHive Ship-1']
+## -------------------- ##
+####################
+#######>>>0:55:52.210 of 22/July/2023, Saturday
+#>>>Refreshed Ship List: ['Player']

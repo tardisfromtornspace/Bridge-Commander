@@ -1,16 +1,21 @@
-#This is the dump of the LogCreator: <Galaxy WarpAI Logger LogCreator_1r8fVADU0Yzx>
-#This log file was created on: 17:2:3.0 of 21/July/2023, Friday
+#This is the dump of the LogCreator: <Galaxy WarpAI Logger LogCreator_0o5a04w9FhRp>
+#This log file was created on: 0:53:46.0 of 22/July/2023, Saturday
 ########################################
 ## -------------------- ##
 ####################
-#######>>>17:2:3.0 of 21/July/2023, Friday
+#######>>>0:53:46.0 of 22/July/2023, Saturday
 #>>>Initialized Galaxy WarpAI logger
 ## -------------------- ##
 ####################
-#######>>>17:3:11.677 of 21/July/2023, Friday
+#######>>>0:54:40.043 of 22/July/2023, Saturday
 #>>>Initializing a TravelerWarp instance
 #>>>WarpIntercept class initialization
-#>>>Initializing a TravelerWarp instance
-#>>>WarpIntercept class initialization
-#>>>Initializing a TravelerWarp instance
-#>>>WarpIntercept class initialization
+## -------------------- ##
+####################
+#######>>>0:55:0.277 of 22/July/2023, Saturday
+#>>>WIU: lost focus - stop in system warp
+## -------------------- ##
+####################
+#######>>>0:55:15.110 of 22/July/2023, Saturday
+#>>>WIU: returning - fDistance is less that ship radius
+#>>>WIU: lost focus - stop in system warp
