@@ -2456,10 +2456,10 @@ def LoadPropertySet(pObj):
 
 	# Shield properties - remember that there can only be one primary shield, else the ones before and after it will not count
 	prop = App.g_kModelPropertyManager.FindByName("Shield Generator", App.TGModelPropertyManager.LOCAL_TEMPLATES)
-        if (prop != None):
+	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
 	prop = App.g_kModelPropertyManager.FindByName("Regenerative Shields", App.TGModelPropertyManager.LOCAL_TEMPLATES)
-        if (prop != None):
+	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
 	prop = App.g_kModelPropertyManager.FindByName("Multivectral Shields", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):

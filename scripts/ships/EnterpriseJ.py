@@ -12,8 +12,8 @@ import Multiplayer.SpeciesToShip
 
 def GetShipStats():
 	kShipStats = {
-		"DamageRadMod" : 0.0009765625, 
-		"DamageStrMod" : 0.0009765625, 
+		"DamageRadMod" : 0.25, 
+		"DamageStrMod" : 0.0625, 
 		"FilenameHigh": "data/Models/Ships/EnterpriseJ/CanonEnterpriseJ.nif",
 		"FilenameMed": "data/Models/Ships/EnterpriseJ/CanonEnterpriseJ.nif",
 		"FilenameLow": "data/Models/Ships/EnterpriseJ/CanonEnterpriseJ.nif",
@@ -48,7 +48,7 @@ def PreLoadModel():
 	LoadModel(1)
 
 def GetArmorRatio():
-      return 0.75
+      return 1.75
 
 def GetDamageStrMod():
 	return 0
