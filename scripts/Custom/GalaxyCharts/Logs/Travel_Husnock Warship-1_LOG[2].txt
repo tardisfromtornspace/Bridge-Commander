@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Husnock Warship-1 Travel Logger[2] LogCreator_5cCEGky59HeC>
-#This log file was created on: 11:6:11.378 of 19/July/2023, Wednesday
+#This is the dump of the LogCreator: <Husnock Warship-1 Travel Logger[2] LogCreator_43htIq3zVE65>
+#This log file was created on: 23:30:43.532 of 20/July/2023, Thursday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>11:6:11.378 of 19/July/2023, Wednesday
+#######>>>23:30:43.532 of 20/July/2023, Thursday
 #>>>Initialized Husnock Warship-1 Travel logger
-#>>>SELF = <Husnock Warship-1(62540) Travel_8pkgQzqA3H5u>
+#>>>SELF = <Husnock Warship-1(74402) Travel_4d90725Z9456>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Ship is dead or dying
@@ -21,425 +21,320 @@ Updating Travelling Procedures...
 #>>>Chaser base class initialization complete.
 #>>>Target Ship = Player
 #>>>Chaser pre-emptive Refresher Initialization
-#>>>Arrived Events:  added event <C TGEvent instance at _3697c508_p_TGEvent>
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>11:6:11.520 of 19/July/2023, Wednesday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>11:6:11.648 of 19/July/2023, Wednesday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>11:6:11.751 of 19/July/2023, Wednesday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>11:6:11.921 of 19/July/2023, Wednesday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>11:6:12.050 of 19/July/2023, Wednesday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>11:6:12.261 of 19/July/2023, Wednesday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>11:6:12.357 of 19/July/2023, Wednesday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>11:6:12.462 of 19/July/2023, Wednesday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>11:6:12.586 of 19/July/2023, Wednesday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>11:6:12.702 of 19/July/2023, Wednesday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>11:6:12.817 of 19/July/2023, Wednesday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>11:6:12.970 of 19/July/2023, Wednesday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>11:6:13.095 of 19/July/2023, Wednesday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>11:6:13.218 of 19/July/2023, Wednesday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>11:6:13.334 of 19/July/2023, Wednesday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>11:6:13.466 of 19/July/2023, Wednesday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>11:6:13.566 of 19/July/2023, Wednesday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>11:6:13.711 of 19/July/2023, Wednesday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>11:6:13.913 of 19/July/2023, Wednesday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>11:6:14.035 of 19/July/2023, Wednesday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>11:6:14.078 of 19/July/2023, Wednesday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>11:6:14.362 of 19/July/2023, Wednesday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>11:6:14.432 of 19/July/2023, Wednesday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>11:6:14.579 of 19/July/2023, Wednesday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>11:6:14.795 of 19/July/2023, Wednesday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>11:6:14.829 of 19/July/2023, Wednesday
-#>>>Ship is dead or dying (at Chaser Update)
+#>>>Arrived Events:  added event <C TGEvent instance at _37bfe3c8_p_TGEvent>
 ## -------------------- ##
 ####################
-#######>>>11:6:14.998 of 19/July/2023, Wednesday
+#######>>>23:30:43.967 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>11:6:15.128 of 19/July/2023, Wednesday
+#######>>>23:30:44.248 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>11:6:15.254 of 19/July/2023, Wednesday
+#######>>>23:30:44.498 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>11:6:15.341 of 19/July/2023, Wednesday
+#######>>>23:30:44.631 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>11:6:15.517 of 19/July/2023, Wednesday
+#######>>>23:30:44.831 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>11:6:15.578 of 19/July/2023, Wednesday
+#######>>>23:30:45.014 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>11:6:15.795 of 19/July/2023, Wednesday
+#######>>>23:30:45.248 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>11:6:15.828 of 19/July/2023, Wednesday
+#######>>>23:30:45.498 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>11:6:15.983 of 19/July/2023, Wednesday
+#######>>>23:30:45.631 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>11:6:16.136 of 19/July/2023, Wednesday
+#######>>>23:30:46.031 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>11:6:16.247 of 19/July/2023, Wednesday
+#######>>>23:30:46.331 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>11:6:16.402 of 19/July/2023, Wednesday
+#######>>>23:30:46.581 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>11:6:16.446 of 19/July/2023, Wednesday
+#######>>>23:30:47.114 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>11:6:16.649 of 19/July/2023, Wednesday
+#######>>>23:30:47.514 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>11:6:16.882 of 19/July/2023, Wednesday
+#######>>>23:30:47.631 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>11:6:16.954 of 19/July/2023, Wednesday
+#######>>>23:30:47.865 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>11:6:17.081 of 19/July/2023, Wednesday
+#######>>>23:30:48.298 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>11:6:17.211 of 19/July/2023, Wednesday
+#######>>>23:30:48.614 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>11:6:17.428 of 19/July/2023, Wednesday
+#######>>>23:30:48.814 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>11:6:17.661 of 19/July/2023, Wednesday
+#######>>>23:30:49.281 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>11:6:18.128 of 19/July/2023, Wednesday
+#######>>>23:30:49.448 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>11:6:18.361 of 19/July/2023, Wednesday
+#######>>>23:30:49.814 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>11:6:18.795 of 19/July/2023, Wednesday
+#######>>>23:30:50.031 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>11:6:18.880 of 19/July/2023, Wednesday
+#######>>>23:30:50.381 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>11:6:18.963 of 19/July/2023, Wednesday
+#######>>>23:30:50.714 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>11:6:19.078 of 19/July/2023, Wednesday
+#######>>>23:30:51.231 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>11:6:19.294 of 19/July/2023, Wednesday
+#######>>>23:30:51.414 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>11:6:19.378 of 19/July/2023, Wednesday
+#######>>>23:30:51.764 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>11:6:19.544 of 19/July/2023, Wednesday
+#######>>>23:30:51.998 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>11:6:19.661 of 19/July/2023, Wednesday
+#######>>>23:30:52.164 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>11:6:19.778 of 19/July/2023, Wednesday
+#######>>>23:30:52.231 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>11:6:19.911 of 19/July/2023, Wednesday
+#######>>>23:30:52.464 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>11:6:20.094 of 19/July/2023, Wednesday
+#######>>>23:30:53.114 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>11:6:20.227 of 19/July/2023, Wednesday
+#######>>>23:30:53.531 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>11:6:20.346 of 19/July/2023, Wednesday
+#######>>>23:30:53.747 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>11:6:20.464 of 19/July/2023, Wednesday
+#######>>>23:30:54.214 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>11:6:20.628 of 19/July/2023, Wednesday
+#######>>>23:30:54.347 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>11:6:20.744 of 19/July/2023, Wednesday
+#######>>>23:30:54.781 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>11:6:20.861 of 19/July/2023, Wednesday
+#######>>>23:30:55.264 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>11:6:20.988 of 19/July/2023, Wednesday
+#######>>>23:30:55.564 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>11:6:21.098 of 19/July/2023, Wednesday
+#######>>>23:30:55.847 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>11:6:21.227 of 19/July/2023, Wednesday
+#######>>>23:30:56.231 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>11:6:21.378 of 19/July/2023, Wednesday
+#######>>>23:30:56.614 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>11:6:21.494 of 19/July/2023, Wednesday
+#######>>>23:30:56.914 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>11:6:21.644 of 19/July/2023, Wednesday
+#######>>>23:30:57.319 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>11:6:21.746 of 19/July/2023, Wednesday
+#######>>>23:30:57.464 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>11:6:21.844 of 19/July/2023, Wednesday
+#######>>>23:30:57.780 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>11:6:21.977 of 19/July/2023, Wednesday
+#######>>>23:30:58.097 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>11:6:22.129 of 19/July/2023, Wednesday
+#######>>>23:30:58.280 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>11:6:22.231 of 19/July/2023, Wednesday
+#######>>>23:30:58.717 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>11:6:22.328 of 19/July/2023, Wednesday
+#######>>>23:30:59.014 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>11:6:22.461 of 19/July/2023, Wednesday
+#######>>>23:30:59.180 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>11:6:22.630 of 19/July/2023, Wednesday
+#######>>>23:30:59.464 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>11:6:22.769 of 19/July/2023, Wednesday
+#######>>>23:30:59.714 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>11:6:22.861 of 19/July/2023, Wednesday
+#######>>>23:30:59.865 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>11:6:22.986 of 19/July/2023, Wednesday
+#######>>>23:30:59.981 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>11:6:23.094 of 19/July/2023, Wednesday
+#######>>>23:31:0.280 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>11:6:23.194 of 19/July/2023, Wednesday
+#######>>>23:31:0.630 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>11:6:23.381 of 19/July/2023, Wednesday
+#######>>>23:31:0.981 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>11:6:23.478 of 19/July/2023, Wednesday
+#######>>>23:31:1.397 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>11:6:23.648 of 19/July/2023, Wednesday
+#######>>>23:31:1.915 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>11:6:23.814 of 19/July/2023, Wednesday
+#######>>>23:31:2.497 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>11:6:23.932 of 19/July/2023, Wednesday
+#######>>>23:31:2.730 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>11:6:24.094 of 19/July/2023, Wednesday
+#######>>>23:31:3.047 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>11:6:24.345 of 19/July/2023, Wednesday
+#######>>>23:31:3.264 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>11:6:24.462 of 19/July/2023, Wednesday
+#######>>>23:31:3.847 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>11:6:24.577 of 19/July/2023, Wednesday
+#######>>>23:31:4.064 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>11:6:24.744 of 19/July/2023, Wednesday
+#######>>>23:31:4.247 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>11:6:25.094 of 19/July/2023, Wednesday
+#######>>>23:31:4.430 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>11:6:25.444 of 19/July/2023, Wednesday
+#######>>>23:31:4.597 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>11:6:25.577 of 19/July/2023, Wednesday
+#######>>>23:31:5.147 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>11:6:25.911 of 19/July/2023, Wednesday
+#######>>>23:31:5.348 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>11:6:26.328 of 19/July/2023, Wednesday
+#######>>>23:31:5.531 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>11:6:26.461 of 19/July/2023, Wednesday
+#######>>>23:31:5.714 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>11:6:26.911 of 19/July/2023, Wednesday
+#######>>>23:31:5.980 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>11:6:27.561 of 19/July/2023, Wednesday
+#######>>>23:31:6.230 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>11:6:27.966 of 19/July/2023, Wednesday
+#######>>>23:31:6.347 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>11:6:28.361 of 19/July/2023, Wednesday
+#######>>>23:31:6.697 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>11:6:28.661 of 19/July/2023, Wednesday
+#######>>>23:31:7.397 of 20/July/2023, Thursday
 #>>>Ship is dead or dying (at Chaser Update)

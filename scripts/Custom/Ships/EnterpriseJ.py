@@ -15,6 +15,8 @@ import App
 import App
 
 Foundation.SoundDef("sfx/Weapons/PPhaser.wav", "PPhaser", 0.7)
+Foundation.SoundDef("sfx/Weapons/UniverseGravLanceA.wav", "Enterprise J Gravitic Lance Start", 0.7)
+Foundation.SoundDef("sfx/Weapons/UniverseGravLanceB.wav", "Enterprise J Gravitic Lance Loop", 0.7)
 
 # Usually, you need only edit these seven lines
 abbrev = 'EnterpriseJ'				# Short name, no spaces, used as a preface for descriptions
@@ -46,12 +48,15 @@ Foundation.ShipDef.EnterpriseJ.dTechs = {
 	"AutoTargeting": {"Phaser": [3, 1], "Torpedo": [2, 1], "Pulse": [2, 1] },
 	'Breen Drainer Immune': 0,
 	'ChronitonTorpe Immune': 1,
+	'Defensive AOE Siphoon' : { "Distance": 55.0, "Power": -10000.0, "Efficiency": 0.99, "Resistance": 1.0,},
 	'Drainer Immune': 1,
 	'Fed Ablative Armor': { "Plates": ["Forward Ablative Armor", "Aft Ablative Armor", "Dorsal Ablative Armor", "Ventral Ablative Armor"]},
-	"Inversion Beam": [0.9, 0, 0.5, 1500],
+	"GraviticLance": { "Time": 0.1, "TimeEffect": 5.0, "RadDepletionStrength": 500, "Beams": ["Gravitic Lance"], "Immune": 0},
+	"Inversion Beam": [12000, 0, 0.5, 1500],
 	'Multivectral Shields': 20,
 	"Phased Torpedo Immune": 1,
-	"Power Drain Beam": [0.9, 0, 0.5, 1500],
+	"Power Drain Beam": [1500, 0, 0.5, 1500],
+	"TachyonBeam": {"Immune": -1},
 	"Transphasic Torpedo Immune": 1,
 	"Reflector Shields": 2,
 	'Reflux Weapon': 2800,

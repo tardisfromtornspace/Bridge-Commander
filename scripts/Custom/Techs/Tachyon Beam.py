@@ -1,7 +1,7 @@
 #################################################################################################################
 #         TachyonBeam by Alex SL Gato
-#         Version 1.0
-#         18 June 2023
+#         Version 1.1.5
+#         20th July 2023
 #         Based on FiveSecsGodPhaser by USS Frontier, scripts/ftb/Tech/TachyonProjectile by the FoundationTechnologies team, and scripts/ftb/Tech/FedAblativeArmour by the FoundationTechnologies team
 #                          
 #################################################################################################################
@@ -13,12 +13,13 @@
 # Time: seconds needed for the tachyon beam to drop the shields must be above 0. 5 by default
 # TimeEffect: how many seconsd do the shields remain dropped. Must be above 0. 5 by default
 # Beams: this field indicates which beams on your ship have tachyon beam properties. Don't add the field or leave it empty to consider all phasers tachyon beams
+# Immune: NEW!!! Finally found how to add the immunity to another side of the party! Immune makes this ship immune to its effects. Set it to greater or lesser than 0 to be immune! negatives also make it immune without the weapon, while 1 keeps it active
 """
 Foundation.ShipDef.Sovereign.dTechs = {
-	"TachyonBeam": { "Time": 5.0, "TimeEffect": 5.0, "Beams": ["PhaserNsme1", "PhaserName2", "PhaserName3", "PhaserName4"],}
+	"TachyonBeam": { "Time": 5.0, "TimeEffect": 5.0, "Beams": ["PhaserNsme1", "PhaserName2", "PhaserName3", "PhaserName4"], "Immune": 1}
 }
 """
-# As for immunities, unfortunately I have not yet found the way to do it directly through the Custom script, so you'll have to add these at the end of the scripts/ships script:
+# As for immunities, there is another way, elgacy from 1.0 and before, directly through the Custom script, so you'll have to add these at the end of the scripts/ships script:
 """
 def IsTachyonImmune():
 	return 1
@@ -265,6 +266,10 @@ class TachyonBeam(FoundationTech.TechDef):
 		if not pInstance.__dict__.has_key("TachyonBeam"):
 			#print "FSTB: cancelling, ship does not have FSTB equipped..."
 			return
+
+		if pInstance.__dict__['TachyonBeam'].has_key("Immune") and pInstance.__dict__['TachyonBeam']["Immune"] < 0:
+			#print "FSTB: cancelling, ship is immune but NOT meant to have FSTB equipped..."
+			return
 		
 		if pInstance.__dict__['TachyonBeam'].has_key("Beams") and len(pInstance.__dict__['TachyonBeam']["Beams"]) > 0:
 			#print "FSTB: I have beams key, verifying the phaser is among them"
@@ -326,7 +331,12 @@ class TachyonBeam(FoundationTech.TechDef):
 			return
 		if not pInstance.__dict__.has_key("TachyonBeam"):
 			#print "FSTB (Stop): ship does not have FSTB equipped."
-			return	
+			return
+
+		if pInstance.__dict__['TachyonBeam'].has_key("Immune") and pInstance.__dict__['TachyonBeam']["Immune"] < 0:
+			#print "FSTB: cancelling, ship is immune but NOT meant to have FSTB equipped..."
+			return
+	
 		pTarget = App.ShipClass_Cast(pEvent.GetDestination())
 		if pTarget == None:
 			#print "FSTB (Stop): cancelling, no target"
@@ -366,6 +376,11 @@ class TachyonBeam(FoundationTech.TechDef):
 		if not pInstance.__dict__.has_key("TachyonBeam"):
 			#print "FSTB (HIK): cancelling, ship is not equipped with FSTB..."
 			return
+
+		if pInstance.__dict__['TachyonBeam'].has_key("Immune") and pInstance.__dict__['TachyonBeam']["Immune"] < 0:
+			#print "FSTB: cancelling, ship is immune but NOT meant to have FSTB equipped..."
+			return
+
 		if pInstance.__dict__['TachyonBeam'].has_key(sTargetName):
 			#okydokey, we did it. Drop the target shields. then delete our data about it.
 			pTarget = pInstance.__dict__['TachyonBeam'][sTargetName]['Target']
@@ -392,6 +407,19 @@ class TachyonBeam(FoundationTech.TechDef):
 		pShipModule =__import__(sScript)
 		pShields = pShip.GetShields()
 		if (hasattr(pShipModule, "IsTachyonImmune") and (pShipModule.IsTachyonImmune() == 1) and pShields) or sShipScript in lImmuneShips:
+			return
+
+		pShipInst = None
+		vibechecker = 1
+		try: 
+			pShipInst = FoundationTech.dShips[pShip.GetName()]
+			if pShipInst == None:
+				#print "After looking, no instance for Ship:", pShip.GetName(), "How odd..."
+				vibechecker = 0
+		except:
+			#print "Error, so no instance for Ship:", pShip.GetName(), "How odd..."
+			vibechecker = 0
+		if vibechecker == 1 and pShipInst.__dict__.has_key('TachyonBeam') and pShipInst.__dict__['TachyonBeam'].has_key("Immune") and not pShipInst.__dict__['TachyonBeam']["Immune"] == 0:
 			return
 
 		pPlayer = MissionLib.GetPlayer()

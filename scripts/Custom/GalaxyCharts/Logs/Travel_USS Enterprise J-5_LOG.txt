@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <USS Enterprise J-5 Travel Logger LogCreator_mK7ll3HsBos5>
-#This log file was created on: 0:8:39.455 of 20/July/2023, Thursday
+#This is the dump of the LogCreator: <USS Enterprise J-5 Travel Logger LogCreator_THq8CbI6p6zn>
+#This log file was created on: 21:58:16.196 of 20/July/2023, Thursday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>0:8:39.455 of 20/July/2023, Thursday
+#######>>>21:58:16.196 of 20/July/2023, Thursday
 #>>>Initialized USS Enterprise J-5 Travel logger
-#>>>SELF = <USS Enterprise J-5(727666) Travel_127y6bP9A58B>
+#>>>SELF = <USS Enterprise J-5(133269) Travel_Xe4r0cCKbl3R>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -21,4 +21,3 @@ Updating Travelling Procedures...
 #>>>Chaser base class initialization complete.
 #>>>Target Ship = NONE
 #>>>Chaser pre-emptive Refresher Initialization
-#>>>Updated Target Ship = Player

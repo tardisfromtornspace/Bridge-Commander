@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Husnock Warship-1 Travel Logger LogCreator_Z55Ylr23O2Zq>
-#This log file was created on: 11:4:53.253 of 19/July/2023, Wednesday
+#This is the dump of the LogCreator: <Husnock Warship-1 Travel Logger LogCreator_mVQlRW63wjr7>
+#This log file was created on: 23:28:53.888 of 20/July/2023, Thursday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>11:4:53.253 of 19/July/2023, Wednesday
+#######>>>23:28:53.888 of 20/July/2023, Thursday
 #>>>Initialized Husnock Warship-1 Travel logger
-#>>>SELF = <Husnock Warship-1(62540) Travel_0p8GKHUiKopZ>
+#>>>SELF = <Husnock Warship-1(74402) Travel_F7l87B3889T4>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -23,11 +23,11 @@ Updating Travelling Procedures...
 #>>>Chaser pre-emptive Refresher Initialization
 ## -------------------- ##
 ####################
-#######>>>11:5:4.803 of 19/July/2023, Wednesday
-#>>>Arrived Events:  added event <C TGEvent instance at _1ec571c0_p_TGEvent>
+#######>>>23:29:16.382 of 20/July/2023, Thursday
+#>>>Arrived Events:  added event <C TGEvent instance at _37c05fc0_p_TGEvent>
 #>>>Updated Target Ship = Player
 ## -------------------- ##
 ####################
-#######>>>11:6:8.598 of 19/July/2023, Wednesday
+#######>>>23:30:41.114 of 20/July/2023, Thursday
 #>>>Stopping Refresh Handler
 #>>>Deleting...

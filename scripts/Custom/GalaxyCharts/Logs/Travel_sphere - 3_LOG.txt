@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <sphere - 3 Travel Logger LogCreator_mgN6SBg5PCcK>
-#This log file was created on: 15:30:11.992 of 21/June/2023, Wednesday
+#This is the dump of the LogCreator: <sphere - 3 Travel Logger LogCreator_0IV6968sR9I3>
+#This log file was created on: 15:44:39.597 of 21/July/2023, Friday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>15:30:11.992 of 21/June/2023, Wednesday
+#######>>>15:44:39.597 of 21/July/2023, Friday
 #>>>Initialized sphere - 3 Travel logger
-#>>>SELF = <sphere - 3(567398) Travel_IT8kem7NS2vf>
+#>>>SELF = <sphere - 3(513822) Travel_aH255CXdkgrD>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -23,15 +23,11 @@ Updating Travelling Procedures...
 #>>>Chaser pre-emptive Refresher Initialization
 ## -------------------- ##
 ####################
-#######>>>15:30:26.995 of 21/June/2023, Wednesday
-#>>>Arrived Events:  added event <C TGEvent instance at _3cd0e3d8_p_TGEvent>
+#######>>>15:44:54.593 of 21/July/2023, Friday
+#>>>Arrived Events:  added event <C TGEvent instance at _3c0dc368_p_TGEvent>
 #>>>Updated Target Ship = Player
 ## -------------------- ##
 ####################
-#######>>>15:30:56.691 of 21/June/2023, Wednesday
+#######>>>15:44:59.242 of 21/July/2023, Friday
 #>>>Stopping Refresh Handler
 #>>>Deleting...
-########################################
-# 15:32:53.822 of 21/June/2023, Wednesday
-#Ending of log dump - User is quiting the game
-########################################

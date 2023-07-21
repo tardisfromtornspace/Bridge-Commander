@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <USS Enterprise J-3 Travel Logger[2] LogCreator_49X00QZr2PYZ>
-#This log file was created on: 0:12:35.693 of 20/July/2023, Thursday
+#This is the dump of the LogCreator: <USS Enterprise J-3 Travel Logger[2] LogCreator_DLylJl9Pl2sG>
+#This log file was created on: 14:54:13.799 of 21/July/2023, Friday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>0:12:35.693 of 20/July/2023, Thursday
+#######>>>14:54:13.799 of 21/July/2023, Friday
 #>>>Initialized USS Enterprise J-3 Travel logger
-#>>>SELF = <USS Enterprise J-3(162684) Travel_89lf5zk1Asfz>
+#>>>SELF = <USS Enterprise J-3(2465589) Travel_5tG3OPkj91sj>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -21,75 +21,7 @@ Updating Travelling Procedures...
 #>>>Chaser base class initialization complete.
 #>>>Target Ship = NONE
 #>>>Chaser pre-emptive Refresher Initialization
-#>>>Updated Target Ship = Player
-## -------------------- ##
-####################
-#######>>>0:12:43.678 of 20/July/2023, Thursday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>0:12:43.912 of 20/July/2023, Thursday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>0:12:44.430 of 20/July/2023, Thursday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>0:12:44.979 of 20/July/2023, Thursday
-#>>> -Cancelling, too close to target to warp intercept...
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>0:12:52.893 of 20/July/2023, Thursday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>0:12:53.090 of 20/July/2023, Thursday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>0:12:53.596 of 20/July/2023, Thursday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>0:12:53.934 of 20/July/2023, Thursday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>0:12:54.337 of 20/July/2023, Thursday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>0:12:54.731 of 20/July/2023, Thursday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>0:12:54.897 of 20/July/2023, Thursday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>0:12:55.448 of 20/July/2023, Thursday
-#>>> -Cancelling, too close to target to warp intercept...
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>0:12:56.299 of 20/July/2023, Thursday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>0:12:56.868 of 20/July/2023, Thursday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>0:12:57.183 of 20/July/2023, Thursday
-#>>> -Cancelling, too close to target to warp intercept...
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>0:12:57.716 of 20/July/2023, Thursday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>0:12:58.178 of 20/July/2023, Thursday
-#>>> -Cancelling, too close to target to warp intercept...
+########################################
+# 14:55:9.248 of 21/July/2023, Friday
+#Ending of log dump - User is quiting the game
+########################################

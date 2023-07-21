@@ -48,7 +48,7 @@ def PreLoadModel():
 	LoadModel(1)
 
 def GetArmorRatio():
-      return 1.5
+      return 0.75
 
 def GetDamageStrMod():
 	return 0
@@ -64,3 +64,6 @@ def GetForcedArmor():
 
 #def GetOriginalShipModel(): # Should be this script, but for more flexibility, here you can change it to never return...
 #	return "EnterpriseJ"
+
+def IsTachyonImmune():
+	return 1

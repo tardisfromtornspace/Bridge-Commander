@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Dominion Battleship-6 Travel Logger LogCreator_h62d45klvr4Q>
-#This log file was created on: 16:38:34.145 of 29/June/2023, Thursday
+#This is the dump of the LogCreator: <Dominion Battleship-6 Travel Logger LogCreator_oDgI6JiUttsg>
+#This log file was created on: 22:4:22.566 of 20/July/2023, Thursday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>16:38:34.145 of 29/June/2023, Thursday
+#######>>>22:4:22.566 of 20/July/2023, Thursday
 #>>>Initialized Dominion Battleship-6 Travel logger
-#>>>SELF = <Dominion Battleship-6(1392142) Travel_BW01MFe5ew2J>
+#>>>SELF = <Dominion Battleship-6(86272) Travel_354692jRcbFO>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -21,41 +21,7 @@ Updating Travelling Procedures...
 #>>>Chaser base class initialization complete.
 #>>>Target Ship = NONE
 #>>>Chaser pre-emptive Refresher Initialization
-#>>>Updated Target Ship = Warship-1
-## -------------------- ##
-####################
-#######>>>16:38:47.740 of 29/June/2023, Thursday
-#>>>Updated Target Ship = Warship-2
-#>>> -Cancelling, too close to target to warp intercept...
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>16:38:48.390 of 29/June/2023, Thursday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>16:41:46.889 of 29/June/2023, Thursday
-#>>>Destination set as None
-#>>>Set Exit Placement Name as None
-#>>>Enable Towing: 0
-#>>>Travelling procedures initiated...
-#>>>Updating Variables...
-#>>> -Extra path: AI ship warping to None
-#>>> -Checked: Ship can warp, travel procedures started.
-#>>> -Speed Check:
-#>>>     -Current:  8.5
-#>>>     -Real Speed:  1253.54907227
-#>>>     -Cruise:  8.5
-#>>>     -Max:  8.5
-#>>>     -Actual Cruise:  8.5
-#>>>     -Actual Max:  8.5
-#>>> -Started playing engaging sequence.
-## -------------------- ##
-####################
-#######>>>16:41:54.737 of 29/June/2023, Thursday
-#>>> -Finishing travelling procedures...
-#>>> -Finished. AI Ship travelling to None.
 ########################################
-# 16:46:33.417 of 29/June/2023, Thursday
+# 22:8:46.468 of 20/July/2023, Thursday
 #Ending of log dump - User is quiting the game
 ########################################

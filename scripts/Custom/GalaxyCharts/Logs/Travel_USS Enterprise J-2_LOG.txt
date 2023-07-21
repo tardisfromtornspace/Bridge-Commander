@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <USS Enterprise J-2 Travel Logger LogCreator_hgpmgUbmyHAU>
-#This log file was created on: 0:11:21.135 of 20/July/2023, Thursday
+#This is the dump of the LogCreator: <USS Enterprise J-2 Travel Logger LogCreator_X1laU61Nhk6l>
+#This log file was created on: 14:47:2.022 of 21/July/2023, Friday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>0:11:21.135 of 20/July/2023, Thursday
+#######>>>14:47:2.022 of 21/July/2023, Friday
 #>>>Initialized USS Enterprise J-2 Travel logger
-#>>>SELF = <USS Enterprise J-2(62383) Travel_1mB4JPOpEXBf>
+#>>>SELF = <USS Enterprise J-2(422873) Travel_12CLGBz12XCN>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -21,12 +21,7 @@ Updating Travelling Procedures...
 #>>>Chaser base class initialization complete.
 #>>>Target Ship = NONE
 #>>>Chaser pre-emptive Refresher Initialization
-#>>>Updated Target Ship = Player
-## -------------------- ##
-####################
-#######>>>0:11:29.232 of 20/July/2023, Thursday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>0:11:29.489 of 20/July/2023, Thursday
-#>>> -Cancelling, too close to target to warp intercept...
+########################################
+# 14:55:9.248 of 21/July/2023, Friday
+#Ending of log dump - User is quiting the game
+########################################

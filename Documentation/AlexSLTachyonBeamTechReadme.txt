@@ -1,4 +1,6 @@
 == Changelog ==
+1.1.5 - Small bugfix
+1.1 - NEW UPDATE - Immunities can be added now within scripts/Custom/Ships/ship file!
 1.0 Release of this mod
 
 == What does this mod do ==
@@ -9,12 +11,13 @@ This mod adds a far more customizable script, based on the "FiveSecsGodPhaser", 
 # Time: seconds needed for the tachyon beam to drop the shields must be above 0. 5 by default
 # TimeEffect: how many seconsd do the shields remain dropped. Must be above 0. 5 by default
 # Beams: this field indicates which beams on your ship have tachyon beam properties. Don't add the field or leave it empty to consider all phasers tachyon beams
+# Immune: NEW!!! Finally found how to add the immunity to another side of the party! Immune makes this ship immune to its effects. Set it to greater or lesser than 0 to be immune! negatives also make it immune without the weapon, while 1 keeps it active
 """
 Foundation.ShipDef.Sovereign.dTechs = {
-	"TachyonBeam": { "Time": 5.0, "TimeEffect": 5.0, "Beams": ["PhaserNsme1", "PhaserName2", "PhaserName3", "PhaserName4"],}
+	"TachyonBeam": { "Time": 5.0, "TimeEffect": 5.0, "Beams": ["PhaserNsme1", "PhaserName2", "PhaserName3", "PhaserName4"], "Immune": 1}
 }
 """
-# As for immunities against this tech, you'll have to add these at the end of the scripts/ships script:
+# As for immunities, there is another way, elgacy from 1.0 and before, directly through the Custom script, so you'll have to add these at the end of the scripts/ships script:
 """
 def IsTachyonImmune():
 	return 1

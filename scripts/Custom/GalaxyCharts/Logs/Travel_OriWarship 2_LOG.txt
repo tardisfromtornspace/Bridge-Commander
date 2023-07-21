@@ -1,0 +1,29 @@
+#This is the dump of the LogCreator: <OriWarship 2 Travel Logger LogCreator_215CK4krrvY8>
+#This log file was created on: 23:31:8.097 of 20/July/2023, Thursday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>23:31:8.097 of 20/July/2023, Thursday
+#>>>Initialized OriWarship 2 Travel logger
+#>>>SELF = <OriWarship 2(213127) Travel_C2ty47o1gC0G>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>23:31:44.241 of 20/July/2023, Thursday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

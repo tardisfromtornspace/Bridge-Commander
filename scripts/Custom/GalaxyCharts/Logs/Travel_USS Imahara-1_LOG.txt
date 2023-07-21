@@ -1,0 +1,61 @@
+#This is the dump of the LogCreator: <USS Imahara-1 Travel Logger LogCreator_p7c7n4E07U8M>
+#This log file was created on: 20:58:31.569 of 20/July/2023, Thursday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>20:58:31.569 of 20/July/2023, Thursday
+#>>>Initialized USS Imahara-1 Travel logger
+#>>>SELF = <USS Imahara-1(527621) Travel_17zSmV7YpHKv>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>20:58:40.000 of 20/July/2023, Thursday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>20:58:40.517 of 20/July/2023, Thursday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>20:58:41.067 of 20/July/2023, Thursday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>20:58:41.351 of 20/July/2023, Thursday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>20:58:42.039 of 20/July/2023, Thursday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>20:58:42.509 of 20/July/2023, Thursday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>20:58:42.855 of 20/July/2023, Thursday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>20:58:43.549 of 20/July/2023, Thursday
+#>>> -Cancelling, too close to target to warp intercept...
+########################################
+# 21:1:20.448 of 20/July/2023, Thursday
+#Ending of log dump - User is quiting the game
+########################################

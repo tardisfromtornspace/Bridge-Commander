@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Dominion Battleship-7 Travel Logger LogCreator_KpvyCuO4AD2B>
-#This log file was created on: 16:38:34.145 of 29/June/2023, Thursday
+#This is the dump of the LogCreator: <Dominion Battleship-7 Travel Logger LogCreator_ROXkX3r01MPz>
+#This log file was created on: 22:8:1.066 of 20/July/2023, Thursday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>16:38:34.145 of 29/June/2023, Thursday
+#######>>>22:8:1.066 of 20/July/2023, Thursday
 #>>>Initialized Dominion Battleship-7 Travel logger
-#>>>SELF = <Dominion Battleship-7(1392712) Travel_pGY20zX4fcqB>
+#>>>SELF = <Dominion Battleship-7(227204) Travel_EouLxIXHkYNX>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -21,32 +21,7 @@ Updating Travelling Procedures...
 #>>>Chaser base class initialization complete.
 #>>>Target Ship = NONE
 #>>>Chaser pre-emptive Refresher Initialization
-#>>>Updated Target Ship = Warship-1
-## -------------------- ##
-####################
-#######>>>16:38:52.694 of 29/June/2023, Thursday
-#>>>Updated Target Ship = Warship-3
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>16:38:53.257 of 29/June/2023, Thursday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>16:38:53.858 of 29/June/2023, Thursday
-#>>> -Cancelling, too close to target to warp intercept...
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>16:38:54.891 of 29/June/2023, Thursday
-#>>> -Cancelling, too close to target to warp intercept...
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>16:39:25.357 of 29/June/2023, Thursday
-#>>>Stopping Refresh Handler
-#>>>Deleting...
 ########################################
-# 16:46:33.417 of 29/June/2023, Thursday
+# 22:8:46.468 of 20/July/2023, Thursday
 #Ending of log dump - User is quiting the game
 ########################################
