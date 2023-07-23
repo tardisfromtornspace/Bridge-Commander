@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <USS Voyager J-2 Travel Logger LogCreator_6ByN31xdabNK>
-#This log file was created on: 16:34:32.121 of 21/July/2023, Friday
+#This is the dump of the LogCreator: <USS Voyager J-2 Travel Logger LogCreator_1NksJs0o1Us6>
+#This log file was created on: 15:31:34.626 of 23/July/2023, Sunday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>16:34:32.121 of 21/July/2023, Friday
+#######>>>15:31:34.626 of 23/July/2023, Sunday
 #>>>Initialized USS Voyager J-2 Travel logger
-#>>>SELF = <USS Voyager J-2(62700) Travel_Z4w1g1sMfRsN>
+#>>>SELF = <USS Voyager J-2(65264) Travel_A8fUId1ngI68>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -21,57 +21,59 @@ Updating Travelling Procedures...
 #>>>Chaser base class initialization complete.
 #>>>Target Ship = NONE
 #>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>15:31:41.412 of 23/July/2023, Sunday
 #>>>Updated Target Ship = Player
 ## -------------------- ##
 ####################
-#######>>>16:34:40.605 of 21/July/2023, Friday
+#######>>>15:31:48.309 of 23/July/2023, Sunday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>16:34:41.138 of 21/July/2023, Friday
-#>>> -Cancelling, too close to target to warp intercept...
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>16:34:41.386 of 21/July/2023, Friday
+#######>>>15:31:48.460 of 23/July/2023, Sunday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>16:34:41.887 of 21/July/2023, Friday
+#######>>>15:31:51.105 of 23/July/2023, Sunday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>16:34:42.155 of 21/July/2023, Friday
+#######>>>15:31:51.669 of 23/July/2023, Sunday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>16:34:42.402 of 21/July/2023, Friday
+#######>>>15:31:52.056 of 23/July/2023, Sunday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>16:34:42.913 of 21/July/2023, Friday
+#######>>>15:31:52.181 of 23/July/2023, Sunday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>16:34:43.321 of 21/July/2023, Friday
+#######>>>15:31:52.633 of 23/July/2023, Sunday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>16:34:43.393 of 21/July/2023, Friday
+#######>>>15:31:53.147 of 23/July/2023, Sunday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>16:34:43.883 of 21/July/2023, Friday
+#######>>>15:31:53.655 of 23/July/2023, Sunday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>16:34:44.388 of 21/July/2023, Friday
+#######>>>15:31:53.785 of 23/July/2023, Sunday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>16:34:44.671 of 21/July/2023, Friday
+#######>>>15:31:54.081 of 23/July/2023, Sunday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>16:34:44.948 of 21/July/2023, Friday
+#######>>>15:31:54.535 of 23/July/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>15:31:55.029 of 23/July/2023, Sunday
 #>>> -Cancelling, too close to target to warp intercept...

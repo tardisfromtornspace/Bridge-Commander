@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <USS Enterprise F Canon-3 Travel Logger[2] LogCreator_fzf1Masro131>
-#This log file was created on: 22:8:1.066 of 20/July/2023, Thursday
+#This is the dump of the LogCreator: <USS Enterprise F Canon-3 Travel Logger[2] LogCreator_8e504hkLz61J>
+#This log file was created on: 18:52:44.605 of 23/July/2023, Sunday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,19 +9,17 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>22:8:1.066 of 20/July/2023, Thursday
+#######>>>18:52:44.605 of 23/July/2023, Sunday
 #>>>Initialized USS Enterprise F Canon-3 Travel logger
-#>>>SELF = <USS Enterprise F Canon-3(224667) Travel_2TB1Gtl1cqP7>
+#>>>SELF = <USS Enterprise F Canon-3(6359896) Travel_omstA07403W0>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
-#>>> -Is AI in Player in route CHECKING: Player Travel OK
-#>>>Destination set as None
+#>>> -Ship is dead or dying
+#>>>Ship is dead or dying (at SetDestination)
 #>>>Set Exit Placement Name as None
 #>>>Set Exit Point to None
-#>>>Chaser base class initialization complete.
-#>>>Target Ship = NONE
-#>>>Chaser pre-emptive Refresher Initialization
-########################################
-# 22:8:46.468 of 20/July/2023, Thursday
-#Ending of log dump - User is quiting the game
-########################################
+#>>>Ship is dead or dying (at SetDestination)
+#>>>Set Exit Placement Name as None
+#>>>Enable Towing: 0
+#>>>Travelling procedures initiated...
+#>>> -Ship is dead or dying

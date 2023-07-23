@@ -1,0 +1,46 @@
+#This is the dump of the LogCreator: <USS Titan-A-8 Travel Logger[2] LogCreator_00y8rc83A5Y8>
+#This log file was created on: 18:22:25.933 of 23/July/2023, Sunday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>18:22:25.933 of 23/July/2023, Sunday
+#>>>Initialized USS Titan-A-8 Travel logger
+#>>>SELF = <USS Titan-A-8(66776) Travel_KTWP0sK1IwUJ>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Ship is dead or dying
+#>>>Ship is dead or dying (at SetDestination)
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Ship is dead or dying (at SetDestination)
+#>>>Set Exit Placement Name as None
+#>>>Enable Towing: 0
+#>>>Travelling procedures initiated...
+#>>> -Ship is dead or dying
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>18:59:37.215 of 23/July/2023, Sunday
+#>>>Initialized USS Titan-A-8 Travel logger
+#>>>SELF = <USS Titan-A-8(6826136) Travel_UMsJTF4LATOP>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = USS Enterprise J-1

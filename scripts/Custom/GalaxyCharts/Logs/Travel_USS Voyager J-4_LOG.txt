@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <USS Voyager J-4 Travel Logger LogCreator_Ti498DqdxUR4>
-#This log file was created on: 16:34:32.121 of 21/July/2023, Friday
+#This is the dump of the LogCreator: <USS Voyager J-4 Travel Logger LogCreator_DxWAn4Ps73SS>
+#This log file was created on: 15:31:34.626 of 23/July/2023, Sunday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>16:34:32.121 of 21/July/2023, Friday
+#######>>>15:31:34.626 of 23/July/2023, Sunday
 #>>>Initialized USS Voyager J-4 Travel logger
-#>>>SELF = <USS Voyager J-4(63722) Travel_CB68Gq80YC97>
+#>>>SELF = <USS Voyager J-4(66286) Travel_q41rnW5Z055F>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -21,60 +21,43 @@ Updating Travelling Procedures...
 #>>>Chaser base class initialization complete.
 #>>>Target Ship = NONE
 #>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>15:31:41.412 of 23/July/2023, Sunday
 #>>>Updated Target Ship = Player
 ## -------------------- ##
 ####################
-#######>>>16:34:40.605 of 21/July/2023, Friday
+#######>>>15:31:48.309 of 23/July/2023, Sunday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>16:34:40.924 of 21/July/2023, Friday
+#######>>>15:31:50.916 of 23/July/2023, Sunday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>16:34:41.138 of 21/July/2023, Friday
+#######>>>15:31:51.057 of 23/July/2023, Sunday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>16:34:41.335 of 21/July/2023, Friday
+#######>>>15:31:51.407 of 23/July/2023, Sunday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>16:34:41.887 of 21/July/2023, Friday
+#######>>>15:31:51.918 of 23/July/2023, Sunday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>16:34:42.155 of 21/July/2023, Friday
+#######>>>15:31:52.306 of 23/July/2023, Sunday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>16:34:42.654 of 21/July/2023, Friday
+#######>>>15:31:52.762 of 23/July/2023, Sunday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>16:34:43.225 of 21/July/2023, Friday
+#######>>>15:31:53.519 of 23/July/2023, Sunday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>16:34:43.321 of 21/July/2023, Friday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>16:34:43.642 of 21/July/2023, Friday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>16:34:44.151 of 21/July/2023, Friday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>16:34:44.598 of 21/July/2023, Friday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>16:34:44.777 of 21/July/2023, Friday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>16:34:45.135 of 21/July/2023, Friday
+#######>>>15:31:53.655 of 23/July/2023, Sunday
 #>>> -Cancelling, too close to target to warp intercept...

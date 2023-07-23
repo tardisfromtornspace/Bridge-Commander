@@ -1,0 +1,90 @@
+#This is the dump of the LogCreator: <USS Enterprise H-8 Travel Logger[2] LogCreator_E93s1E08a72N>
+#This log file was created on: 19:7:36.224 of 23/July/2023, Sunday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>19:7:36.224 of 23/July/2023, Sunday
+#>>>Initialized USS Enterprise H-8 Travel logger
+#>>>SELF = <USS Enterprise H-8(7454322) Travel_Yr2tqTphOS56>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = USS Enterprise J-1
+#>>>Can Chase Target = 0
+#>>> -Cancelling, too close to target to warp intercept...
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>19:7:42.452 of 23/July/2023, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>19:7:44.335 of 23/July/2023, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>19:7:45.284 of 23/July/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>19:7:46.733 of 23/July/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>>Ship can't chase, directing to Travel update...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>19:7:51.018 of 23/July/2023, Sunday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>19:7:53.432 of 23/July/2023, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>19:7:56.939 of 23/July/2023, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>19:8:17.438 of 23/July/2023, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>19:8:19.428 of 23/July/2023, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>19:8:26.259 of 23/July/2023, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>19:8:33.281 of 23/July/2023, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>19:8:36.397 of 23/July/2023, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>19:8:37.475 of 23/July/2023, Sunday
+#>>>Ship can't chase, directing to Travel update...
+#>>>Stopping Refresh Handler
+#>>>Deleting...

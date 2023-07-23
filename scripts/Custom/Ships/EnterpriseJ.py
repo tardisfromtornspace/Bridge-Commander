@@ -2,8 +2,8 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
 #         EnterpriseJ.py by Alex SL Gato
-#         Version 1.3
-#         19th July 2023
+#         Version 1.5
+#         23rd July 2023
 #         Based on previous versions done by EnterpriseJ and WileyCoyote
 #                          
 #################################################################################################################
@@ -17,6 +17,8 @@ import App
 Foundation.SoundDef("sfx/Weapons/PPhaser.wav", "PPhaser", 0.7)
 Foundation.SoundDef("sfx/Weapons/UniverseGravLanceA.wav", "Enterprise J Gravitic Lance Start", 0.7)
 Foundation.SoundDef("sfx/Weapons/UniverseGravLanceB.wav", "Enterprise J Gravitic Lance Loop", 0.7)
+Foundation.SoundDef("sfx/Weapons/InfinityModulator_a.wav", "Enterprise J Phaser Start", 0.7)
+Foundation.SoundDef("sfx/Weapons/InfinityModulator_b.wav", "Enterprise J Phaser Loop", 0.4)
 
 # Usually, you need only edit these seven lines
 abbrev = 'EnterpriseJ'				# Short name, no spaces, used as a preface for descriptions
@@ -34,7 +36,7 @@ species = App.SPECIES_MARAUDER			# I'm not sure how important this is.
 credits = {
 	'modName': 'EnterpriseJ',			# The full name of your mod if applicable
 	'author': 'EnterpriseJ + WC + Alex SL Gato (aka CharaToLoki)',					# Your name here
-	'version': '1.3',						# No more than one period please!  
+	'version': '1.5',						# No more than one period please!  
 										# I'd like to be able to do a numeric comparison.
 	'sources': [ '' ],				# Source for this mod
 	'comments': ''						# General info
@@ -51,16 +53,16 @@ Foundation.ShipDef.EnterpriseJ.dTechs = {
 	'Defensive AOE Siphoon' : { "Distance": 55.0, "Power": -10000.0, "Efficiency": 0.99, "Resistance": 1.0,},
 	'Drainer Immune': 1,
 	#'Fed Ablative Armor': { "Plates": ["Forward Ablative Armor", "Aft Ablative Armor", "Dorsal Ablative Armor", "Ventral Ablative Armor"]},
-	"GraviticLance": { "Time": 0.1, "TimeEffect": 5.0, "RadDepletionStrength": 500, "Beams": ["Gravitic Lance"], "Immune": 0},
+	"GraviticLance": { "Time": 0.1, "TimeEffect": 5.0, "RadDepletionStrength": 1000, "Beams": ["Gravitic Lance"], "Immune": 0},
 	"Inversion Beam": [12000, 0, 0.5, 1500],
-	'Multivectral Shields': 20,
+	'Multivectral Shields': 18,
 	"Phased Torpedo Immune": 1,
 	"Power Drain Beam": [1500, 0, 0.5, 1500],
 	"TachyonBeam": {"Immune": -1},
 	"Transphasic Torpedo Immune": 1,
 	"Reflector Shields": 2,
-	'Reflux Weapon': 2800,
-	'Regenerative Shields': 70
+	'Reflux Weapon': 3800,
+	'Regenerative Shields': 75
 }
 Foundation.ShipDef.EnterpriseJ.sBridge = 'defiantbridge'
 Foundation.ShipDef.EnterpriseJ.fMaxWarp = 9.995

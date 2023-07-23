@@ -1723,7 +1723,7 @@ class PlainAIConfigurationDialog(ConfigurationDialog):
 			elijah = list(range( len(lsScriptModules) ))
 		for iIndex in elijah:
 			sModule = lsScriptModules[iIndex]
-			pRadio = Radiobutton(lRadioFrames[iIndex * 2 / len(lsScriptModules)], text=sModule, variable = self.pModuleVar, value=iIndex+1, command=lambda self=self, iIndex=iIndex: self.SelectModule(iIndex))
+			pRadio = Radiobutton(lRadioFrames[int(iIndex * 2 / len(lsScriptModules))], text=sModule, variable = self.pModuleVar, value=int(iIndex+1), command=lambda self=self, iIndex=int(iIndex): self.SelectModule(iIndex))
 			pRadio.pack(side=TOP, anchor=W)
 
 		self.pFunctionFrame = Frame(self)
@@ -1745,8 +1745,11 @@ class PlainAIConfigurationDialog(ConfigurationDialog):
 		ConfigurationDialog.__del__(self)
 
 	def GetAvailableModules(self):
-		import dircache
-		lsDir = dircache.listdir(GetPlainAIPath())
+		try:
+			import dircache
+			lsDir = dircache.listdir(GetPlainAIPath())
+		except:
+			lsDir = cached_listdir(GetPlainAIPath())
 		matchstr = re.compile("^([A-Za-z0-9]+)\.py$")
 		lsAvailable = []
 		for sEntry in lsDir:
@@ -1772,7 +1775,11 @@ class PlainAIConfigurationDialog(ConfigurationDialog):
 				if match and match.group(1):
 					# Found AI flags..  NOTINLIST flag excludes
 					# the AI from being valid.
-					for sFlag in string.split(match.group(1), " "):
+					try:
+						remusLoopin = string.split(match.group(1), " ")
+					except:
+						remusLoopin = match.group(1).split(" ")
+					for sFlag in remusLoopin:
 						if sFlag == "NOTINLIST":
 							return 0
 		file.close()
@@ -1800,17 +1807,27 @@ class PlainAIConfigurationDialog(ConfigurationDialog):
 					# Found a match.  Add it to the list.
 					lsFunctions.append([pMatch.group(1), pMatch.group(2)])
 				if iNeedParens > 0:
-					sRequiredParamsLine = sRequiredParamsLine + string.split(sLine[:-1], "#")[0]
-					iNeedParens = iNeedParens + string.count(sLine, "(")
-					iNeedParens = iNeedParens - string.count(sLine, ")")
+					try:
+						sRequiredParamsLine = sRequiredParamsLine + string.split(sLine[:-1], "#")[0]
+						iNeedParens = iNeedParens + string.count(sLine, "(")
+						iNeedParens = iNeedParens - string.count(sLine, ")")
+					except:
+						sRequiredParamsLine = sRequiredParamsLine + sLine[:-1].split("#")[0]
+						iNeedParens = iNeedParens + sLine.count("(")
+						iNeedParens = iNeedParens - sLine.count(")")
 				elif (sRequiredParamsLine is None)  and  pRequiredParamsLine.search(sLine):
 					# Found the start of a SetRequiredParams line.
 					# Start counting the number of open and close parens.
 					# Stop grabbing lines when we get the last close paren.
-					sRequiredParamsLine = string.split(sLine[:-1], "#")[0]
-					iNeedParens = string.count(sLine, "(")
-					iNeedParens = iNeedParens - string.count(sLine, ")")
-
+					try:
+						sRequiredParamsLine = string.split(sLine[:-1], "#")[0]
+						iNeedParens = string.count(sLine, "(")
+						iNeedParens = iNeedParens - string.count(sLine, ")")
+					except:
+						sRequiredParamsLine = sLine[:-1].split("#")[0]
+						iNeedParens = sLine.count("(")
+						iNeedParens = iNeedParens - sLine.count(")")
+                        
 				sLine = pFile.readline()
 			pFile.close()
 
