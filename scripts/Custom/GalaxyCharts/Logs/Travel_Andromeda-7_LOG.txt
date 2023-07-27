@@ -1,0 +1,58 @@
+#This is the dump of the LogCreator: <Andromeda-7 Travel Logger LogCreator_lwWwZl7aT8lt>
+#This log file was created on: 23:59:16.747 of 25/July/2023, Tuesday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>23:59:16.747 of 25/July/2023, Tuesday
+#>>>Initialized Andromeda-7 Travel logger
+#>>>SELF = <Andromeda-7(2139321) Travel_gYZq5S14tPx4>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Warship-1
+## -------------------- ##
+####################
+#######>>>23:59:33.229 of 25/July/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:59:33.763 of 25/July/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:59:33.963 of 25/July/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:59:34.583 of 25/July/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:59:40.815 of 25/July/2023, Tuesday
+#>>>Updated Target Ship = Warship-3
+## -------------------- ##
+####################
+#######>>>0:0:15.761 of 26/July/2023, Wednesday
+#>>>Updated Target Ship = Warship-4
+## -------------------- ##
+####################
+#######>>>0:0:23.280 of 26/July/2023, Wednesday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 0:4:25.476 of 26/July/2023, Wednesday
+#Ending of log dump - User is quiting the game
+########################################

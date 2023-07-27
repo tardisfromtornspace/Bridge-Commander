@@ -58,6 +58,7 @@ Foundation.ShipDef.EnterpriseJ.dTechs = {
 	'Multivectral Shields': 18,
 	"Phased Torpedo Immune": 1,
 	"Power Drain Beam": [1500, 0, 0.5, 1500],
+	'Simulated Point Defence' : { "Distance": 75.0, "InnerDistance": 10.0, "Effectiveness": 0.9, "LimitTurn": 5.0, "LimitSpeed": 120, "LimitDamage": "-5000", "Period": 1.0, "MaxNumberTorps": 50, "Phaser": {"Priority": 1}},
 	"TachyonBeam": {"Immune": -1},
 	"Transphasic Torpedo Immune": 1,
 	"Reflector Shields": 2,

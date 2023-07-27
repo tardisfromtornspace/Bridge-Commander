@@ -1,0 +1,28 @@
+#This is the dump of the LogCreator: <Kumari 6 Travel Logger LogCreator_5PmpyAtU616D>
+#This log file was created on: 22:17:56.507 of 26/July/2023, Wednesday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>22:17:56.507 of 26/July/2023, Wednesday
+#>>>Initialized Kumari 6 Travel logger
+#>>>SELF = <Kumari 6(922398) Travel_DyIN0i98II8n>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+########################################
+# 22:18:29.506 of 26/July/2023, Wednesday
+#Ending of log dump - User is quiting the game
+########################################

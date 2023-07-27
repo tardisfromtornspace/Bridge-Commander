@@ -16,7 +16,9 @@ playerMenuGroup = "Andromeda"
 SubMenu = "System´s Commonwealth"
 Foundation.ShipDef.AndArchlike = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
 
-
+Foundation.ShipDef.AndArchlike.dTechs = {
+	'Simulated Point Defence' : { "Distance": 120.0, "InnerDistance": 15.0, "Effectiveness": 0.3, "LimitTurn": 5.2, "LimitSpeed": 300, "Period": 1.0, "MaxNumberTorps": 1, "Pulse": {"Priority": 1}}
+}
 Foundation.ShipDef.AndArchlike.desc = "The Type 2 Arc Light Slipfighter was a class of long-range strike fighter used by the High Guard of the Systems Commonwealth, capable of firing Nova Bombs."
 
 

@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <USS Enterprise H-10 Travel Logger LogCreator_5q5BS3jv8CW5>
-#This log file was created on: 19:1:9.763 of 23/July/2023, Sunday
+#This is the dump of the LogCreator: <USS Enterprise H-10 Travel Logger LogCreator_9ML2l59gEcN1>
+#This log file was created on: 14:10:10.687 of 24/July/2023, Monday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>19:1:9.763 of 23/July/2023, Sunday
+#######>>>14:10:10.687 of 24/July/2023, Monday
 #>>>Initialized USS Enterprise H-10 Travel logger
-#>>>SELF = <USS Enterprise H-10(6932867) Travel_6vwd73OREd55>
+#>>>SELF = <USS Enterprise H-10(2048156) Travel_tNm383tF9UZY>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -23,2556 +23,844 @@ Updating Travelling Procedures...
 #>>>Chaser pre-emptive Refresher Initialization
 ## -------------------- ##
 ####################
-#######>>>19:1:12.105 of 23/July/2023, Sunday
-#>>>Updated Target Ship = USS Enterprise J-1
+#######>>>14:10:12.306 of 24/July/2023, Monday
+#>>>Updated Target Ship = Player
 #>>>Can Chase Target = 0
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:1:12.371 of 23/July/2023, Sunday
+#######>>>14:10:12.509 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:1:12.400 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:1:12.564 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:1:13.147 of 23/July/2023, Sunday
+#######>>>14:10:12.605 of 24/July/2023, Monday
 #>>> -Cancelling, too close to target to warp intercept...
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:1:13.797 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:1:14.534 of 23/July/2023, Sunday
+#######>>>14:10:13.120 of 24/July/2023, Monday
 #>>> -Cancelling, too close to target to warp intercept...
 #>>> -Cancelling, too close to target to warp intercept...
 #>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:1:15.714 of 23/July/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:1:16.597 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:1:17.497 of 23/July/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:1:18.297 of 23/July/2023, Sunday
 #>>> -Cancelling, too close to target to warp intercept...
 #>>> -Cancelling, too close to target to warp intercept...
-#>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:1:18.980 of 23/July/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:1:20.200 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:1:21.451 of 23/July/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:1:21.734 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:1:22.583 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:1:23.098 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:1:23.374 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:1:23.700 of 23/July/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:1:23.955 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:1:24.386 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:1:24.623 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:1:24.747 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:1:24.949 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:1:25.047 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:1:25.237 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:1:25.456 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:1:25.723 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:1:25.962 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:1:26.013 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:1:26.492 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:1:29.009 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:1:29.064 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:1:29.168 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:1:29.365 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:1:29.475 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:1:29.523 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:1:29.650 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:1:29.880 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:1:30.118 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:1:31.466 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:1:32.241 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:1:32.352 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:1:32.477 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:1:32.761 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:1:32.990 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:1:33.254 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:1:35.381 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:1:36.903 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:1:37.008 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:1:37.171 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:1:37.291 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:1:38.425 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:1:41.905 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:1:45.168 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:1:45.880 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:1:45.972 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:1:46.066 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:1:46.357 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:1:46.388 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:1:46.533 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:1:46.700 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:1:46.880 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:1:47.088 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:1:47.984 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:1:51.794 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:1:54.531 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:1:55.128 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:1:55.969 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:0.760 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:2.320 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:2.461 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:2.619 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:2.995 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:3.534 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:3.693 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:6.216 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:6.609 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:7.122 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:7.457 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:8.121 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:8.503 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:8.637 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:8.923 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:11.764 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:15.576 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:16.149 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:17.128 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:17.593 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:17.763 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:18.033 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:18.145 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:18.292 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:18.496 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:18.599 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:18.997 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:19.279 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:19.481 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:20.041 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:20.376 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:20.881 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:21.253 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:21.629 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:22.366 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:22.447 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:22.753 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:22.924 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:23.289 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:23.871 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:23.987 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:24.434 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:24.600 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:24.823 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:25.110 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:25.267 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:25.483 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:25.647 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:25.954 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:26.371 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:26.589 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:26.829 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:27.304 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:27.971 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:28.277 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:28.950 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:29.373 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:29.749 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:30.388 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:30.529 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:30.747 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:31.502 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:32.104 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:32.263 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:32.898 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:33.677 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:34.339 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:35.136 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:36.001 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:36.270 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:36.715 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:37.183 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:37.347 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:37.817 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:38.445 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:39.122 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:39.344 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:39.485 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:40.232 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:40.995 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:41.466 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:41.720 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:42.732 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:42.877 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:43.064 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:44.279 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:44.401 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:44.624 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:45.246 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:46.356 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:46.519 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:47.419 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:47.881 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:48.385 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:50.264 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:53.979 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:55.481 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:55.726 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:56.592 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:57.014 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:57.570 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:57.703 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:58.023 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:58.517 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:58.645 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:2:59.284 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:3:0.288 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:3:0.881 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:3:1.382 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:3:1.623 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:3:2.052 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:3:2.255 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:3:4.201 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:3:4.415 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:3:4.540 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:3:4.656 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:3:4.830 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:3:4.888 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:3:5.395 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:3:5.726 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:3:6.871 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:3:7.203 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:3:8.669 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:3:9.055 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:3:9.304 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:3:9.493 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:3:9.531 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:3:9.642 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:3:9.775 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:3:10.004 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:3:11.364 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:3:11.468 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:3:11.607 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:3:11.750 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:3:13.545 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:3:14.031 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:3:14.246 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:3:14.666 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:3:14.778 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:3:15.060 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:3:15.591 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:3:15.641 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:3:15.775 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:3:16.015 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:3:18.556 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:3:19.682 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:3:19.786 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:3:19.958 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:3:20.968 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:3:22.317 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:3:22.993 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:3:23.374 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:3:23.502 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:3:23.601 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:3:23.747 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:3:23.788 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:3:24.036 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:3:24.198 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:3:24.278 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:3:24.752 of 23/July/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-#>>> -Cancelling, too close to target to warp intercept...
-#>>> -Cancelling, too close to target to warp intercept...
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:3:26.269 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:3:26.385 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:3:26.524 of 23/July/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:3:26.743 of 23/July/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:3:27.255 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:3:27.499 of 23/July/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:3:28.193 of 23/July/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:3:28.606 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:3:28.772 of 23/July/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:3:29.348 of 23/July/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:3:29.497 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>19:3:30.092 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:3:30.354 of 23/July/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:3:30.855 of 23/July/2023, Sunday
+#######>>>14:10:13.954 of 24/July/2023, Monday
 #>>> -Cancelling, too close to target to warp intercept...
 #>>>Ship can't chase, directing to Travel update...
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>19:3:31.992 of 23/July/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-#>>> -Cancelling, too close to target to warp intercept...
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:3:33.153 of 23/July/2023, Sunday
+#######>>>14:10:15.021 of 24/July/2023, Monday
 #>>> -Cancelling, too close to target to warp intercept...
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:3:33.274 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:3:33.491 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:3:33.638 of 23/July/2023, Sunday
+#######>>>14:10:15.504 of 24/July/2023, Monday
 #>>> -Cancelling, too close to target to warp intercept...
 #>>>Ship can't chase, directing to Travel update...
-#>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>19:3:34.438 of 23/July/2023, Sunday
+#######>>>14:10:15.904 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:3:34.604 of 23/July/2023, Sunday
+#######>>>14:10:16.263 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:3:34.717 of 23/July/2023, Sunday
+#######>>>14:10:16.521 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
-#>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>19:3:36.150 of 23/July/2023, Sunday
+#######>>>14:10:16.921 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:3:36.408 of 23/July/2023, Sunday
+#######>>>14:10:17.305 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:3:36.605 of 23/July/2023, Sunday
+#######>>>14:10:17.643 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:3:36.738 of 23/July/2023, Sunday
+#######>>>14:10:18.171 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:3:37.349 of 23/July/2023, Sunday
+#######>>>14:10:18.638 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:3:37.405 of 23/July/2023, Sunday
+#######>>>14:10:19.171 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:3:37.714 of 23/July/2023, Sunday
+#######>>>14:10:19.387 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:3:37.855 of 23/July/2023, Sunday
+#######>>>14:10:19.804 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:3:38.375 of 23/July/2023, Sunday
+#######>>>14:10:20.337 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:3:38.756 of 23/July/2023, Sunday
+#######>>>14:10:20.637 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:3:39.501 of 23/July/2023, Sunday
+#######>>>14:10:20.920 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:3:39.622 of 23/July/2023, Sunday
+#######>>>14:10:21.171 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:3:40.239 of 23/July/2023, Sunday
+#######>>>14:10:21.437 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:3:41.326 of 23/July/2023, Sunday
+#######>>>14:10:21.792 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:3:42.160 of 23/July/2023, Sunday
+#######>>>14:10:21.904 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:3:42.579 of 23/July/2023, Sunday
+#######>>>14:10:22.021 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:3:42.960 of 23/July/2023, Sunday
+#######>>>14:10:22.320 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:3:43.996 of 23/July/2023, Sunday
+#######>>>14:10:22.570 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:3:44.684 of 23/July/2023, Sunday
+#######>>>14:10:22.937 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:3:44.933 of 23/July/2023, Sunday
+#######>>>14:10:23.255 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:3:45.443 of 23/July/2023, Sunday
+#######>>>14:10:23.421 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:3:45.993 of 23/July/2023, Sunday
+#######>>>14:10:23.787 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:3:46.958 of 23/July/2023, Sunday
+#######>>>14:10:23.987 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:3:47.575 of 23/July/2023, Sunday
+#######>>>14:10:24.153 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:3:48.100 of 23/July/2023, Sunday
+#######>>>14:10:24.481 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:3:48.565 of 23/July/2023, Sunday
+#######>>>14:10:24.591 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:3:48.650 of 23/July/2023, Sunday
+#######>>>14:10:24.737 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:3:49.050 of 23/July/2023, Sunday
+#######>>>14:10:24.872 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:3:49.240 of 23/July/2023, Sunday
+#######>>>14:10:25.071 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:3:49.483 of 23/July/2023, Sunday
+#######>>>14:10:25.204 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:3:49.581 of 23/July/2023, Sunday
+#######>>>14:10:25.404 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:3:49.717 of 23/July/2023, Sunday
+#######>>>14:10:25.537 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:3:50.124 of 23/July/2023, Sunday
+#######>>>14:10:25.659 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:3:50.974 of 23/July/2023, Sunday
+#######>>>14:10:25.771 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:3:51.119 of 23/July/2023, Sunday
+#######>>>14:10:26.037 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:3:51.437 of 23/July/2023, Sunday
+#######>>>14:10:26.147 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:3:51.517 of 23/July/2023, Sunday
+#######>>>14:10:26.270 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:3:51.648 of 23/July/2023, Sunday
+#######>>>14:10:26.436 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:3:51.869 of 23/July/2023, Sunday
+#######>>>14:10:26.563 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:3:52.366 of 23/July/2023, Sunday
+#######>>>14:10:26.666 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:3:52.602 of 23/July/2023, Sunday
+#######>>>14:10:26.802 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:3:53.375 of 23/July/2023, Sunday
+#######>>>14:10:26.943 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:3:53.587 of 23/July/2023, Sunday
+#######>>>14:10:27.325 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:3:53.983 of 23/July/2023, Sunday
+#######>>>14:10:27.557 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:3:54.742 of 23/July/2023, Sunday
+#######>>>14:10:27.690 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:3:55.396 of 23/July/2023, Sunday
+#######>>>14:10:28.073 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:3:55.516 of 23/July/2023, Sunday
+#######>>>14:10:28.192 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:3:56.013 of 23/July/2023, Sunday
+#######>>>14:10:28.326 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:3:56.514 of 23/July/2023, Sunday
+#######>>>14:10:28.675 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:3:56.734 of 23/July/2023, Sunday
+#######>>>14:10:28.707 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:3:57.270 of 23/July/2023, Sunday
+#######>>>14:10:29.792 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:3:57.842 of 23/July/2023, Sunday
+#######>>>14:10:30.188 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:3:58.387 of 23/July/2023, Sunday
+#######>>>14:10:34.222 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:3:59.024 of 23/July/2023, Sunday
+#######>>>14:10:35.236 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:0.354 of 23/July/2023, Sunday
+#######>>>14:10:36.150 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:0.595 of 23/July/2023, Sunday
+#######>>>14:10:38.430 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:0.648 of 23/July/2023, Sunday
+#######>>>14:10:42.725 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:0.757 of 23/July/2023, Sunday
+#######>>>14:10:43.875 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:1.386 of 23/July/2023, Sunday
+#######>>>14:10:44.911 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:1.614 of 23/July/2023, Sunday
+#######>>>14:10:45.918 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:1.745 of 23/July/2023, Sunday
+#######>>>14:10:46.896 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:2.099 of 23/July/2023, Sunday
+#######>>>14:10:47.415 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:2.504 of 23/July/2023, Sunday
+#######>>>14:10:47.567 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:2.637 of 23/July/2023, Sunday
+#######>>>14:10:47.793 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:2.774 of 23/July/2023, Sunday
+#######>>>14:10:48.055 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:3.077 of 23/July/2023, Sunday
+#######>>>14:10:48.132 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:3.481 of 23/July/2023, Sunday
+#######>>>14:10:48.865 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:3.968 of 23/July/2023, Sunday
+#######>>>14:10:49.200 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:5.403 of 23/July/2023, Sunday
+#######>>>14:10:49.697 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:5.511 of 23/July/2023, Sunday
+#######>>>14:10:51.110 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:5.633 of 23/July/2023, Sunday
+#######>>>14:10:51.600 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:5.901 of 23/July/2023, Sunday
+#######>>>14:10:52.934 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:6.109 of 23/July/2023, Sunday
+#######>>>14:10:53.303 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:6.733 of 23/July/2023, Sunday
+#######>>>14:10:54.026 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:6.830 of 23/July/2023, Sunday
+#######>>>14:10:54.426 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:7.105 of 23/July/2023, Sunday
+#######>>>14:10:54.777 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:7.691 of 23/July/2023, Sunday
+#######>>>14:10:55.668 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:8.382 of 23/July/2023, Sunday
+#######>>>14:10:56.406 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:8.715 of 23/July/2023, Sunday
+#######>>>14:10:57.296 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:9.479 of 23/July/2023, Sunday
+#######>>>14:10:57.915 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:10.446 of 23/July/2023, Sunday
+#######>>>14:10:59.052 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:11.235 of 23/July/2023, Sunday
+#######>>>14:11:0.532 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:11.464 of 23/July/2023, Sunday
+#######>>>14:11:3.222 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:12.311 of 23/July/2023, Sunday
+#######>>>14:11:5.774 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:12.728 of 23/July/2023, Sunday
+#######>>>14:11:7.324 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:13.628 of 23/July/2023, Sunday
+#######>>>14:11:8.293 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:14.271 of 23/July/2023, Sunday
+#######>>>14:11:9.163 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:14.765 of 23/July/2023, Sunday
+#######>>>14:11:10.193 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:15.380 of 23/July/2023, Sunday
+#######>>>14:11:12.191 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:15.728 of 23/July/2023, Sunday
+#######>>>14:11:13.217 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:16.131 of 23/July/2023, Sunday
+#######>>>14:11:13.332 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:16.360 of 23/July/2023, Sunday
+#######>>>14:11:13.436 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:17.070 of 23/July/2023, Sunday
+#######>>>14:11:13.637 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:17.796 of 23/July/2023, Sunday
+#######>>>14:11:13.731 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:18.711 of 23/July/2023, Sunday
+#######>>>14:11:13.877 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:19.478 of 23/July/2023, Sunday
+#######>>>14:11:14.071 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:20.303 of 23/July/2023, Sunday
+#######>>>14:11:14.123 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:20.881 of 23/July/2023, Sunday
+#######>>>14:11:14.249 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:21.499 of 23/July/2023, Sunday
+#######>>>14:11:14.353 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:22.262 of 23/July/2023, Sunday
+#######>>>14:11:14.613 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:23.300 of 23/July/2023, Sunday
+#######>>>14:11:14.804 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:24.129 of 23/July/2023, Sunday
+#######>>>14:11:15.234 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:24.594 of 23/July/2023, Sunday
+#######>>>14:11:15.347 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:25.379 of 23/July/2023, Sunday
+#######>>>14:11:15.495 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:25.707 of 23/July/2023, Sunday
+#######>>>14:11:15.800 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:26.111 of 23/July/2023, Sunday
+#######>>>14:11:16.369 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:26.370 of 23/July/2023, Sunday
+#######>>>14:11:17.380 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:26.496 of 23/July/2023, Sunday
+#######>>>14:11:17.677 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:27.329 of 23/July/2023, Sunday
+#######>>>14:11:17.721 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:27.894 of 23/July/2023, Sunday
+#######>>>14:11:17.838 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:28.369 of 23/July/2023, Sunday
+#######>>>14:11:18.067 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:28.574 of 23/July/2023, Sunday
+#######>>>14:11:18.177 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:29.249 of 23/July/2023, Sunday
+#######>>>14:11:18.315 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:29.451 of 23/July/2023, Sunday
+#######>>>14:11:18.562 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:30.083 of 23/July/2023, Sunday
+#######>>>14:11:18.685 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:30.773 of 23/July/2023, Sunday
+#######>>>14:11:18.803 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:30.958 of 23/July/2023, Sunday
+#######>>>14:11:18.941 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:31.080 of 23/July/2023, Sunday
+#######>>>14:11:19.076 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:31.479 of 23/July/2023, Sunday
+#######>>>14:11:19.462 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:32.097 of 23/July/2023, Sunday
+#######>>>14:11:19.669 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:32.495 of 23/July/2023, Sunday
+#######>>>14:11:19.811 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:33.114 of 23/July/2023, Sunday
+#######>>>14:11:19.967 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:34.091 of 23/July/2023, Sunday
+#######>>>14:11:20.445 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:34.341 of 23/July/2023, Sunday
+#######>>>14:11:20.667 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:34.471 of 23/July/2023, Sunday
+#######>>>14:11:20.920 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:34.995 of 23/July/2023, Sunday
+#######>>>14:11:21.161 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:35.743 of 23/July/2023, Sunday
+#######>>>14:11:21.438 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:36.567 of 23/July/2023, Sunday
+#######>>>14:11:21.673 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:36.804 of 23/July/2023, Sunday
+#######>>>14:11:21.820 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:37.261 of 23/July/2023, Sunday
+#######>>>14:11:22.070 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:37.483 of 23/July/2023, Sunday
+#######>>>14:11:22.260 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:38.239 of 23/July/2023, Sunday
+#######>>>14:11:22.446 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:38.627 of 23/July/2023, Sunday
+#######>>>14:11:22.671 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:39.383 of 23/July/2023, Sunday
+#######>>>14:11:22.816 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:39.987 of 23/July/2023, Sunday
+#######>>>14:11:23.045 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:40.729 of 23/July/2023, Sunday
+#######>>>14:11:23.189 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:41.696 of 23/July/2023, Sunday
+#######>>>14:11:23.321 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:42.360 of 23/July/2023, Sunday
+#######>>>14:11:23.549 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:43.228 of 23/July/2023, Sunday
+#######>>>14:11:23.781 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:43.896 of 23/July/2023, Sunday
+#######>>>14:11:23.833 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:44.586 of 23/July/2023, Sunday
+#######>>>14:11:24.054 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:45.427 of 23/July/2023, Sunday
+#######>>>14:11:24.305 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:46.235 of 23/July/2023, Sunday
+#######>>>14:11:24.592 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:46.464 of 23/July/2023, Sunday
+#######>>>14:11:24.802 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:46.573 of 23/July/2023, Sunday
+#######>>>14:11:24.842 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:47.229 of 23/July/2023, Sunday
+#######>>>14:11:25.057 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:47.638 of 23/July/2023, Sunday
+#######>>>14:11:25.284 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:48.377 of 23/July/2023, Sunday
+#######>>>14:11:25.449 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:49.343 of 23/July/2023, Sunday
+#######>>>14:11:25.639 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:50.565 of 23/July/2023, Sunday
+#######>>>14:11:25.793 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:51.830 of 23/July/2023, Sunday
+#######>>>14:11:25.928 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:52.656 of 23/July/2023, Sunday
+#######>>>14:11:26.171 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:53.461 of 23/July/2023, Sunday
+#######>>>14:11:26.290 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:54.318 of 23/July/2023, Sunday
+#######>>>14:11:26.439 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:55.220 of 23/July/2023, Sunday
+#######>>>14:11:26.700 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:56.099 of 23/July/2023, Sunday
+#######>>>14:11:27.052 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:56.761 of 23/July/2023, Sunday
+#######>>>14:11:27.312 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:57.479 of 23/July/2023, Sunday
+#######>>>14:11:27.544 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:58.214 of 23/July/2023, Sunday
+#######>>>14:11:27.716 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:58.582 of 23/July/2023, Sunday
+#######>>>14:11:27.973 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:59.248 of 23/July/2023, Sunday
+#######>>>14:11:28.227 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:59.767 of 23/July/2023, Sunday
+#######>>>14:11:29.457 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:4:59.995 of 23/July/2023, Sunday
+#######>>>14:11:29.709 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:5:0.374 of 23/July/2023, Sunday
+#######>>>14:11:30.053 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:5:0.680 of 23/July/2023, Sunday
+#######>>>14:11:30.232 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:5:1.760 of 23/July/2023, Sunday
+#######>>>14:11:31.198 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:5:2.198 of 23/July/2023, Sunday
+#######>>>14:11:31.304 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:5:3.011 of 23/July/2023, Sunday
+#######>>>14:11:31.415 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:5:3.995 of 23/July/2023, Sunday
+#######>>>14:11:31.942 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:5:4.961 of 23/July/2023, Sunday
+#######>>>14:11:32.709 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:5:5.378 of 23/July/2023, Sunday
+#######>>>14:11:33.302 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:5:6.321 of 23/July/2023, Sunday
+#######>>>14:11:34.020 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:5:6.835 of 23/July/2023, Sunday
+#######>>>14:11:34.102 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:5:7.445 of 23/July/2023, Sunday
+#######>>>14:11:34.335 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:5:8.210 of 23/July/2023, Sunday
+#######>>>14:11:34.481 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:5:8.744 of 23/July/2023, Sunday
+#######>>>14:11:34.932 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:5:9.361 of 23/July/2023, Sunday
+#######>>>14:11:35.074 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:5:9.577 of 23/July/2023, Sunday
+#######>>>14:11:35.186 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:5:10.129 of 23/July/2023, Sunday
+#######>>>14:11:37.317 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:5:10.744 of 23/July/2023, Sunday
+#######>>>14:11:37.359 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:5:11.218 of 23/July/2023, Sunday
+#######>>>14:11:37.616 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:5:11.860 of 23/July/2023, Sunday
+#######>>>14:11:37.919 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:5:12.671 of 23/July/2023, Sunday
+#######>>>14:11:38.182 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:5:13.645 of 23/July/2023, Sunday
+#######>>>14:11:38.276 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:5:14.268 of 23/July/2023, Sunday
+#######>>>14:11:38.353 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:5:14.467 of 23/July/2023, Sunday
+#######>>>14:11:38.550 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:5:14.849 of 23/July/2023, Sunday
+#######>>>14:11:38.602 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:5:15.362 of 23/July/2023, Sunday
+#######>>>14:11:38.812 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:5:15.847 of 23/July/2023, Sunday
+#######>>>14:11:38.948 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:5:16.348 of 23/July/2023, Sunday
+#######>>>14:11:39.310 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:5:16.864 of 23/July/2023, Sunday
+#######>>>14:11:39.428 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:5:17.326 of 23/July/2023, Sunday
+#######>>>14:11:39.563 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:5:17.483 of 23/July/2023, Sunday
+#######>>>14:11:39.811 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:5:18.499 of 23/July/2023, Sunday
+#######>>>14:11:39.969 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:5:18.998 of 23/July/2023, Sunday
+#######>>>14:11:40.456 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:5:19.352 of 23/July/2023, Sunday
+#######>>>14:11:40.826 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
 ## -------------------- ##
 ####################
-#######>>>19:5:19.600 of 23/July/2023, Sunday
+#######>>>14:11:40.952 of 24/July/2023, Monday
 #>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:5:19.867 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:5:20.351 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:5:20.587 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:5:21.361 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:5:22.124 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:5:22.361 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:5:22.865 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:5:23.464 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:5:24.352 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:5:24.510 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:5:25.086 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:5:25.694 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:5:26.428 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:5:27.231 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:5:27.843 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:5:28.977 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:5:29.828 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:5:30.560 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:5:31.316 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:5:32.244 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:5:32.843 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:5:33.727 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:5:34.577 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:5:35.793 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:5:36.711 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:5:37.393 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:5:38.110 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:5:38.461 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:5:39.343 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:5:39.938 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:5:40.360 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:5:41.110 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:5:41.460 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:5:42.195 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:5:43.079 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:5:43.934 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:5:44.727 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:5:45.494 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:5:46.244 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:5:46.376 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:5:46.982 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:5:47.483 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:5:48.227 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:5:49.231 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:5:50.057 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:5:50.895 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:5:51.687 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:5:52.220 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:5:52.981 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:5:53.510 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:5:54.226 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:5:54.611 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:5:54.968 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:5:55.388 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:5:55.844 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:5:56.233 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:5:56.649 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:5:57.386 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:5:58.248 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:5:58.511 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:5:59.743 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:0.860 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:1.493 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:2.593 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:3.350 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:3.979 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:4.460 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:5.360 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:6.077 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:6.569 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:7.554 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:8.476 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:9.359 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:10.219 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:10.629 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:11.446 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:12.331 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:13.625 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:13.958 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:14.370 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:14.987 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:15.605 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:16.371 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:16.616 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:17.460 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:17.770 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:18.5 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:18.997 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:19.489 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:19.740 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:20.443 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:20.605 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:21.077 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:21.643 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:22.109 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:22.686 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:23.221 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:23.596 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:24.462 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:24.963 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:25.493 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:26.128 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:26.808 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:27.445 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:28.337 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:28.960 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:29.580 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:30.494 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:31.546 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:32.876 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:33.552 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:34.539 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:35.476 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:35.861 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:36.469 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:36.688 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:37.357 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:37.744 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:38.558 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:39.460 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:40.226 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:40.847 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:40.993 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:41.464 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:42.360 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:42.923 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:43.725 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:44.540 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:45.682 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:46.581 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:47.079 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:47.501 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:47.744 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:48.437 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:48.747 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:49.444 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:50.458 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:50.752 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:51.490 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:51.629 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:51.866 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:52.377 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:53.080 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:53.845 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:54.477 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:55.102 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:55.615 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:55.935 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:56.612 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:57.181 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:57.816 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:58.433 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:59.044 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:6:59.584 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:7:0.438 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:7:1.243 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:7:1.809 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:7:2.465 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:7:3.439 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:7:4.085 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:7:4.736 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:7:5.451 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:7:5.712 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:7:6.434 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:7:6.604 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:7:7.218 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:7:7.621 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:7:8.188 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:7:8.760 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:7:9.815 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:7:10.476 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:7:11.436 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:7:11.525 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:7:12.592 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:7:14.558 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:7:16.941 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:7:19.091 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:7:21.375 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:7:23.892 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:7:26.391 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:7:28.909 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:7:31.410 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
-## -------------------- ##
-####################
-#######>>>19:7:33.858 of 23/July/2023, Sunday
-#>>>Ship can't chase, directing to Travel update...
+########################################
+# 14:11:41.087 of 24/July/2023, Monday
+#Ending of log dump - User is quiting the game
+########################################

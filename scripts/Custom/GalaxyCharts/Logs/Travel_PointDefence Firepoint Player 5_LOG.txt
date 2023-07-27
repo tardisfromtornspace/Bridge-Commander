@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <PointDefence Firepoint Player 5 Travel Logger LogCreator_JfdFoI8Fk8Fa>
-#This log file was created on: 13:27:13.049 of 25/June/2023, Sunday
+#This is the dump of the LogCreator: <PointDefence Firepoint Player 5 Travel Logger LogCreator_OO140dHK7p2j>
+#This log file was created on: 22:18:35.602 of 24/July/2023, Monday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>13:27:13.049 of 25/June/2023, Sunday
+#######>>>22:18:35.602 of 24/July/2023, Monday
 #>>>Initialized PointDefence Firepoint Player 5 Travel logger
-#>>>SELF = <PointDefence Firepoint Player 5(1488426) Travel_EFnI0XW8C30J>
+#>>>SELF = <PointDefence Firepoint Player 5(1216418) Travel_vOQzAx8y2t9j>
 #>>>Initial Travel Type: None
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -21,5 +21,12 @@ Updating Travelling Procedures...
 #>>>Chaser base class initialization complete.
 #>>>Target Ship = NONE
 #>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>22:18:36.467 of 24/July/2023, Monday
 #>>>Stopping Refresh Handler
 #>>>Deleting...
+########################################
+# 22:40:32.048 of 24/July/2023, Monday
+#Ending of log dump - User is quiting the game
+########################################

@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Warship-4 Travel Logger LogCreator_y35vcsvcU627>
-#This log file was created on: 23:21:16.207 of 18/June/2023, Sunday
+#This is the dump of the LogCreator: <Warship-4 Travel Logger LogCreator_x69xX5DLS13n>
+#This log file was created on: 23:59:16.747 of 25/July/2023, Tuesday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>23:21:16.207 of 18/June/2023, Sunday
+#######>>>23:59:16.747 of 25/July/2023, Tuesday
 #>>>Initialized Warship-4 Travel logger
-#>>>SELF = <Warship-4(1210403) Travel_RpS8zQ9Cfsd4>
+#>>>SELF = <Warship-4(2122944) Travel_e426TWXr07Mc>
 #>>>Initial Travel Type: None
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -21,45 +21,80 @@ Updating Travelling Procedures...
 #>>>Chaser base class initialization complete.
 #>>>Target Ship = NONE
 #>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>23:59:21.029 of 25/July/2023, Tuesday
 #>>>Updated Target Ship = Player
 ## -------------------- ##
 ####################
-#######>>>23:21:23.891 of 18/June/2023, Sunday
-#>>>Updated Target Ship = Triumviron-8
+#######>>>23:59:28.013 of 25/July/2023, Tuesday
+#>>>Updated Target Ship = Andromeda-6
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>23:21:24.653 of 18/June/2023, Sunday
+#######>>>23:59:28.363 of 25/July/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>23:21:25.416 of 18/June/2023, Sunday
+#######>>>23:59:28.730 of 25/July/2023, Tuesday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>23:21:25.981 of 18/June/2023, Sunday
+#######>>>23:59:29.322 of 25/July/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>23:21:26.724 of 18/June/2023, Sunday
+#######>>>23:59:30.286 of 25/July/2023, Tuesday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>23:21:27.261 of 18/June/2023, Sunday
+#######>>>23:59:30.573 of 25/July/2023, Tuesday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>23:21:27.696 of 18/June/2023, Sunday
+#######>>>23:59:31.368 of 25/July/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>23:21:28.175 of 18/June/2023, Sunday
+#######>>>23:59:32.196 of 25/July/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>23:21:28.543 of 18/June/2023, Sunday
+#######>>>23:59:32.829 of 25/July/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>23:22:21.861 of 18/June/2023, Sunday
-#>>>Updated Target Ship = Player
+#######>>>23:59:33.229 of 25/July/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:59:33.963 of 25/July/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:59:34.583 of 25/July/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:59:35.167 of 25/July/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:59:59.417 of 25/July/2023, Tuesday
+#>>>Updated Target Ship = Andromeda-7
+## -------------------- ##
+####################
+#######>>>0:0:23.280 of 26/July/2023, Wednesday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 0:4:25.476 of 26/July/2023, Wednesday
+#Ending of log dump - User is quiting the game
+########################################

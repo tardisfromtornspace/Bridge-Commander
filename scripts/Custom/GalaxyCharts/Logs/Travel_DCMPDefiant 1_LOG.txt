@@ -1,0 +1,23 @@
+#This is the dump of the LogCreator: <DCMPDefiant 1 Travel Logger LogCreator_3B04170OLLRA>
+#This log file was created on: 22:44:57.436 of 25/July/2023, Tuesday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>22:44:57.436 of 25/July/2023, Tuesday
+#>>>Initialized DCMPDefiant 1 Travel logger
+#>>>SELF = <DCMPDefiant 1(183695) Travel_540Lu8Aji04Y>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization

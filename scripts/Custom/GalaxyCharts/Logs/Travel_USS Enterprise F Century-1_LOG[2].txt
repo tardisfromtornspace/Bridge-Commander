@@ -1,0 +1,99 @@
+#This is the dump of the LogCreator: <USS Enterprise F Century-1 Travel Logger[2] LogCreator_4JeuX0jdF2wz>
+#This log file was created on: 23:24:39.101 of 25/July/2023, Tuesday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>23:24:39.101 of 25/July/2023, Tuesday
+#>>>Initialized USS Enterprise F Century-1 Travel logger
+#>>>SELF = <USS Enterprise F Century-1(244805) Travel_uF94N5JJ9NDr>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>23:24:46.068 of 25/July/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:24:46.452 of 25/July/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:24:47.019 of 25/July/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:24:47.552 of 25/July/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:24:47.835 of 25/July/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>23:26:19.783 of 25/July/2023, Tuesday
+#>>>Initialized USS Enterprise F Century-1 Travel logger
+#>>>SELF = <USS Enterprise F Century-1(366017) Travel_C4KavAzx4hF5>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>23:26:27.433 of 25/July/2023, Tuesday
+#>>>Updated Target Ship = Kessok Heavy-4
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:26:28.101 of 25/July/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:26:28.251 of 25/July/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:26:28.618 of 25/July/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:26:29.286 of 25/July/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>23:27:2.786 of 25/July/2023, Tuesday
+#>>>Updated Target Ship = Kessok Heavy-5
+########################################
+# 23:27:7.556 of 25/July/2023, Tuesday
+#Ending of log dump - User is quiting the game
+########################################
+########################################
+# 23:27:7.556 of 25/July/2023, Tuesday
+#Ending of log dump - User is quiting the game
+########################################

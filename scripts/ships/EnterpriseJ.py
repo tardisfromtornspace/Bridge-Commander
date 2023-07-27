@@ -1,8 +1,8 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
 #         EnterpriseJ.py by Alex SL Gato
-#         Version 1.3
-#         19th July 2023
+#         Version 1.3.6
+#         24th July 2023
 #         Based on previous versions done by EnterpriseJ and WileyCoyote
 #                          
 #################################################################################################################
@@ -12,8 +12,9 @@ import Multiplayer.SpeciesToShip
 
 def GetShipStats():
 	kShipStats = {
-		"DamageRadMod" : 0.25, 
-		"DamageStrMod" : 0.0625, 
+		"DamageRadMod" : 0.00000000625, 
+		"DamageStrMod" : 0.00000000625,
+		#"SpecularCoef": 30.0,
 		"FilenameHigh": "data/Models/Ships/EnterpriseJ/CanonEnterpriseJ.nif",
 		"FilenameMed": "data/Models/Ships/EnterpriseJ/CanonEnterpriseJ.nif",
 		"FilenameLow": "data/Models/Ships/EnterpriseJ/CanonEnterpriseJ.nif",
@@ -59,11 +60,11 @@ def GetDamageRadMod():
 def GetForcedArmor():
 	return 1
 
-#def GetArmouredModel():
-#	return "EnterpriseJ"
+def GetArmouredModel():
+	return "EnterpriseJArmor"
 
-#def GetOriginalShipModel(): # Should be this script, but for more flexibility, here you can change it to never return...
-#	return "EnterpriseJ"
+def GetOriginalShipModel(): # Should be this script, but for more flexibility, here you can change it to never return...
+	return "EnterpriseJ"
 
 def IsTachyonImmune():
 	return 1

@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <EFP Firepoint9_t Travel Logger LogCreator_kBahJn6FkqME>
-#This log file was created on: 22:12:59.872 of 18/July/2023, Tuesday
+#This is the dump of the LogCreator: <EFP Firepoint9_t Travel Logger LogCreator_8Bfw2tCj9MPp>
+#This log file was created on: 2:50:45.278 of 27/July/2023, Thursday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>22:12:59.872 of 18/July/2023, Tuesday
+#######>>>2:50:45.278 of 27/July/2023, Thursday
 #>>>Initialized EFP Firepoint9_t Travel logger
-#>>>SELF = <EFP Firepoint9_t(764216) Travel_568jP0gkq04a>
+#>>>SELF = <EFP Firepoint9_t(360097) Travel_q1YIG9PY35v4>
 #>>>Initial Travel Type: None
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -23,10 +23,6 @@ Updating Travelling Procedures...
 #>>>Chaser pre-emptive Refresher Initialization
 ## -------------------- ##
 ####################
-#######>>>22:13:0.119 of 18/July/2023, Tuesday
+#######>>>2:50:45.753 of 27/July/2023, Thursday
 #>>>Stopping Refresh Handler
 #>>>Deleting...
-########################################
-# 22:22:33.406 of 18/July/2023, Tuesday
-#Ending of log dump - User is quiting the game
-########################################

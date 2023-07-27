@@ -2,13 +2,23 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
 #         DampeningAOEDefensiveField.py by Alex SL Gato
-#         Version 0.4
-#         20th July 2023
+#         Version 1.0.1
+#         25th July 2023
 #         Based strongly on scripts\Custom\DS9FX\DS9FXPulsarFX\PulsarManager by USS Sovereign, and slightly on TractorBeams.py, Inversion Beam and Power Drain Beam 1.0 by MLeo Daalder, Apollo, and Dasher; some team-switching torpedo by LJ; and GraviticLance by Alex SL Gato, which was based on FiveSecsGodPhaser by USS Frontier, scripts/ftb/Tech/TachyonProjectile by the FoundationTechnologies team, and scripts/ftb/Tech/FedAblativeArmour by the FoundationTechnologies team.
 #                          
 #################################################################################################################
-# TO-DO REMOVE EXTRAS AND ADJUST README
-# 'Defensive AOE Siphoon' : { "Distance": 50.0, "Power": 1000.0, "Efficiency": 0.1, "Resistance": 1.0,},
+# This tech gives a ship the ability to siphon energy from enemies or synergically give it to friends in an area. In both cases some energy can be given to you.
+# Usage Example:  Add this to the dTechs attribute of your ShipDef, in the Ship plugin file (replace "Sovereign" with the proper abbrev).
+# Distance: Range of effect of this ability. Logically cannot be equal or less than 0, so if you don't want this ship to drain, set it to 0. Default is 50 km.
+# Power: How much power you drain from enemies. Set to negative to add power to friendlies. If you don't want this ship to drain, set it to 0. Default 50 energy.
+# Efficiency: How much of the stolen power is transferred back. Default is 1 (so full transference).
+# Resistance: against this tech, it fights how much it will be drained. To be immune to its effects, set it to 1 or more. Negative values are allowed for extra vulnerability. Default 0 (no resistance).
+"""
+Foundation.ShipDef.Sovereign.dTechs = {
+	'Defensive AOE Siphoon' : { "Distance": 50.0, "Power": 1000.0, "Efficiency": 0.1, "Resistance": 1.0,}
+}
+"""
+
 import App
 #from Custom.DS9FX.DS9FXEventManager import DS9FXGlobalEvents
 import Foundation
@@ -22,6 +32,12 @@ import time
 
 from bcdebug import debug
 import traceback
+
+MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
+            "Version": "1.0.1",
+            "License": "LGPL",
+            "Description": "Read the small title above for more info"
+            }
 
 global lImmuneShips # A list meant only for backwards compatibility - do NOT edit
 lImmuneShips = (
@@ -100,6 +116,7 @@ try:
 	bOverflow = 0
 	pTimer = None
 	pAllShipsWithTheTech = {} # Has the ship, with the pInstances as keys
+	ticksPerKilometer = 225/40 # 225 is approximately 40 km, so 225/40 is the number of ticks per kilometer
 
 	def Start():
 		global pTimer, bOverflow
@@ -150,7 +167,7 @@ try:
 				global bOverflow, pAllShipsWithTheTech
 				dMasterDict = pInstance.__dict__['Defensive AOE Siphoon']
 				
-				#pAllShipsWithTheTech.pop(pInstance, None) # TO-DO VERIFY THIS CAN BE DONE
+				#pAllShipsWithTheTech.pop(pInstance, None)
 				if pAllShipsWithTheTech.has_key(pInstance):
 					print "key found, to remove ", pInstance
 					del pAllShipsWithTheTech[pInstance]
@@ -173,7 +190,7 @@ try:
 		def lookclosershipsEveryone(self, fTime):
 			global pAllShipsWithTheTech
 			for myShipInstance in pAllShipsWithTheTech.keys():
-				self.lookcloserships(fTime, pAllShipsWithTheTech[myShipInstance], myShipInstance) # TO-DO VERIFY
+				self.lookcloserships(fTime, pAllShipsWithTheTech[myShipInstance], myShipInstance)
 
 		def lookcloserships(self, fTime, pShip, pInstance):
 			#
@@ -196,9 +213,13 @@ try:
 
 			iRange = pInstance.__dict__['Defensive AOE Siphoon']["Distance"]
 
+			if iRange <= 0:
+				return
+
 			lDrain = []
-			
-			kIter = pProx.GetNearObjects(pShip.GetWorldLocation(), iRange * 5, 1)
+
+			global ticksPerKilometer
+			kIter = pProx.GetNearObjects(pShip.GetWorldLocation(), iRange * ticksPerKilometer, 1) 
 			while 1:
 				pObject = pProx.GetNextObject(kIter)
 				if not pObject:

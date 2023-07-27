@@ -21,7 +21,14 @@ Foundation.ShipDef.janeway.desc = "The USS Voyager (NCC-74656-J) was a Federatio
 
 if menuGroup:           Foundation.ShipDef.janeway.RegisterQBShipMenu(menuGroup)
 if playerMenuGroup:     Foundation.ShipDef.janeway.RegisterQBPlayerShipMenu(playerMenuGroup)
-Foundation.ShipDef.janeway.dTechs = { 'Breen Drainer Immune': 1,'Drainer Immune': 1,'Ablative Armour': 405000, 'ChronitonTorpe Immune': 1, 'Multivectral Shields': 30, 'Regenerative Shields': 50}
+Foundation.ShipDef.janeway.dTechs = {
+	'Breen Drainer Immune': 1,
+	'Drainer Immune': 1,
+	'Ablative Armour': 405000,
+	'ChronitonTorpe Immune': 1,
+	'Multivectral Shields': 30,
+	'Regenerative Shields': 50
+}
 Foundation.ShipDef.janeway.CloakingSFX   = "FutureBattleCloak"
 Foundation.ShipDef.janeway.DeCloakingSFX = "FutureBattleDecloak"
 

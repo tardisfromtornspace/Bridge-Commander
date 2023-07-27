@@ -1,0 +1,57 @@
+#This is the dump of the LogCreator: <DalekEmperorSaucer 14 Travel Logger LogCreator_3g0iho9kqH4f>
+#This log file was created on: 23:25:51.175 of 23/July/2023, Sunday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>23:25:51.175 of 23/July/2023, Sunday
+#>>>Initialized DalekEmperorSaucer 14 Travel logger
+#>>>SELF = <DalekEmperorSaucer 14(1906314) Travel_2KsA9HB54KFY>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>23:25:57.150 of 23/July/2023, Sunday
+#>>>Updated Target Ship = Player
+#>>>Can Chase Target = 0
+## -------------------- ##
+####################
+#######>>>23:25:57.309 of 23/July/2023, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>23:25:58.286 of 23/July/2023, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>23:25:59.279 of 23/July/2023, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>23:26:0.473 of 23/July/2023, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>23:26:1.536 of 23/July/2023, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>23:26:2.797 of 23/July/2023, Sunday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>23:26:4.062 of 23/July/2023, Sunday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

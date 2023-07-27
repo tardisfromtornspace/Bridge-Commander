@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Warship-3 Travel Logger LogCreator_wIi00FCRDM93>
-#This log file was created on: 16:38:34.145 of 29/June/2023, Thursday
+#This is the dump of the LogCreator: <Warship-3 Travel Logger LogCreator_PLv6D9rxRm34>
+#This log file was created on: 23:59:16.747 of 25/July/2023, Tuesday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>16:38:34.145 of 29/June/2023, Thursday
+#######>>>23:59:16.747 of 25/July/2023, Tuesday
 #>>>Initialized Warship-3 Travel logger
-#>>>SELF = <Warship-3(1387183) Travel_VTvRpzsxusu1>
+#>>>SELF = <Warship-3(2120362) Travel_i0gPZkRPui7Z>
 #>>>Initial Travel Type: None
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -24,119 +24,36 @@ Updating Travelling Procedures...
 #>>>Updated Target Ship = Player
 ## -------------------- ##
 ####################
-#######>>>16:38:41.607 of 29/June/2023, Thursday
-#>>>Updated Target Ship = Dominion Battleship-8
+#######>>>23:59:28.013 of 25/July/2023, Tuesday
+#>>>Updated Target Ship = Andromeda-7
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>16:38:42.832 of 29/June/2023, Thursday
+#######>>>23:59:28.363 of 25/July/2023, Tuesday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>16:38:43.451 of 29/June/2023, Thursday
+#######>>>23:59:28.730 of 25/July/2023, Tuesday
 #>>> -Cancelling, too close to target to warp intercept...
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>16:38:44.367 of 29/June/2023, Thursday
+#######>>>23:59:29.322 of 25/July/2023, Tuesday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>16:39:25.357 of 29/June/2023, Thursday
-#>>>Updated Target Ship = Dominion Battlecruiser-12
+#######>>>23:59:30.029 of 25/July/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>16:39:52.107 of 29/June/2023, Thursday
-#>>>Updated Target Ship = Attack Ship-20
-## -------------------- ##
-####################
-#######>>>16:40:38.255 of 29/June/2023, Thursday
+#######>>>0:0:3.286 of 26/July/2023, Wednesday
 #>>>Updated Target Ship = Player
 ## -------------------- ##
 ####################
-#######>>>16:41:45.838 of 29/June/2023, Thursday
-#>>>Updated Target Ship = Attack Ship-20
-## -------------------- ##
-####################
-#######>>>16:45:39.386 of 29/June/2023, Thursday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>16:45:39.987 of 29/June/2023, Thursday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>16:45:41.880 of 29/June/2023, Thursday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>16:45:44.380 of 29/June/2023, Thursday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>16:45:45.490 of 29/June/2023, Thursday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>16:45:47.336 of 29/June/2023, Thursday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>16:45:48.735 of 29/June/2023, Thursday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>16:45:50.518 of 29/June/2023, Thursday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>16:45:52.734 of 29/June/2023, Thursday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>16:45:57.069 of 29/June/2023, Thursday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>16:46:0.010 of 29/June/2023, Thursday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>16:46:2.619 of 29/June/2023, Thursday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>16:46:4.975 of 29/June/2023, Thursday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>16:46:7.015 of 29/June/2023, Thursday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>16:46:8.989 of 29/June/2023, Thursday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>16:46:11.975 of 29/June/2023, Thursday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>16:46:14.969 of 29/June/2023, Thursday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>16:46:20.334 of 29/June/2023, Thursday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>16:46:27.420 of 29/June/2023, Thursday
-#>>>Ship is dead or dying (at Chaser Update)
+#######>>>0:1:3.331 of 26/July/2023, Wednesday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
 ########################################
-# 16:46:33.417 of 29/June/2023, Thursday
+# 0:4:25.476 of 26/July/2023, Wednesday
 #Ending of log dump - User is quiting the game
 ########################################
-## -------------------- ##
-####################
-#######>>>16:46:33.417 of 29/June/2023, Thursday
-#>>>Ship is dead or dying (at Chaser Update)

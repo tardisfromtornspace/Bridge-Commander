@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Warship-1 Travel Logger LogCreator_plnrMLcsw9uX>
-#This log file was created on: 17:9:21.294 of 22/July/2023, Saturday
+#This is the dump of the LogCreator: <Warship-1 Travel Logger LogCreator_uhfW9523U2At>
+#This log file was created on: 23:59:16.747 of 25/July/2023, Tuesday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>17:9:21.294 of 22/July/2023, Saturday
+#######>>>23:59:16.747 of 25/July/2023, Tuesday
 #>>>Initialized Warship-1 Travel logger
-#>>>SELF = <Warship-1(63060) Travel_R0X90ze3sVjC>
+#>>>SELF = <Warship-1(2115125) Travel_6qhRMi4HM2V0>
 #>>>Initial Travel Type: None
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -24,74 +24,31 @@ Updating Travelling Procedures...
 #>>>Updated Target Ship = Player
 ## -------------------- ##
 ####################
-#######>>>17:9:29.342 of 22/July/2023, Saturday
+#######>>>23:59:28.013 of 25/July/2023, Tuesday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>17:9:29.734 of 22/July/2023, Saturday
+#######>>>23:59:28.363 of 25/July/2023, Tuesday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>17:9:29.825 of 22/July/2023, Saturday
+#######>>>23:59:28.730 of 25/July/2023, Tuesday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>17:9:29.993 of 22/July/2023, Saturday
+#######>>>23:59:29.322 of 25/July/2023, Tuesday
+#>>> -Cancelling, too close to target to warp intercept...
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>17:9:30.343 of 22/July/2023, Saturday
+#######>>>23:59:30.286 of 25/July/2023, Tuesday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>17:9:30.559 of 22/July/2023, Saturday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>17:9:30.809 of 22/July/2023, Saturday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>17:9:31.244 of 22/July/2023, Saturday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>17:9:45.259 of 22/July/2023, Saturday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>17:9:45.659 of 22/July/2023, Saturday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>17:9:45.909 of 22/July/2023, Saturday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>17:9:46.076 of 22/July/2023, Saturday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>17:9:46.559 of 22/July/2023, Saturday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>17:9:46.842 of 22/July/2023, Saturday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>17:9:47.143 of 22/July/2023, Saturday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>17:9:47.409 of 22/July/2023, Saturday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>17:9:47.776 of 22/July/2023, Saturday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>17:10:31.808 of 22/July/2023, Saturday
+#######>>>0:0:2.621 of 26/July/2023, Wednesday
 #>>>Stopping Refresh Handler
 #>>>Deleting...
+########################################
+# 0:4:25.476 of 26/July/2023, Wednesday
+#Ending of log dump - User is quiting the game
+########################################

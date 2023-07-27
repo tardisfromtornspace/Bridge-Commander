@@ -1,0 +1,23 @@
+#This is the dump of the LogCreator: <Andromeda-3_Port Wing Travel Logger LogCreator_G4f3RMg6vci7>
+#This log file was created on: 18:0:1.672 of 26/July/2023, Wednesday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>18:0:1.672 of 26/July/2023, Wednesday
+#>>>Initialized Andromeda-3_Port Wing Travel logger
+#>>>SELF = <Andromeda-3_Port Wing(329601) Travel_t997MYlevfFY>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization

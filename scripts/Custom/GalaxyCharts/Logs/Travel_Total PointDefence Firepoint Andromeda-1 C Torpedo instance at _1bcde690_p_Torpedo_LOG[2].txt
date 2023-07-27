@@ -1,0 +1,47 @@
+#This is the dump of the LogCreator: <Total PointDefence Firepoint Andromeda-1 C Torpedo instance at _1bcde690_p_Torpedo Travel Logger[2] LogCreator_5fxm908Q2xrh>
+#This log file was created on: 21:56:14.497 of 26/July/2023, Wednesday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>21:56:14.497 of 26/July/2023, Wednesday
+#>>>Initialized Total PointDefence Firepoint Andromeda-1 C Torpedo instance at _1bcde690_p_Torpedo Travel logger
+#>>>SELF = <Total PointDefence Firepoint Andromeda-1 C Torpedo instance at _1bcde690_p_Torpedo(145743) Travel_NdC1L3T4abn0>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>21:56:30.399 of 26/July/2023, Wednesday
+#>>>Initialized Total PointDefence Firepoint Andromeda-1 C Torpedo instance at _1bcde690_p_Torpedo Travel logger
+#>>>SELF = <Total PointDefence Firepoint Andromeda-1 C Torpedo instance at _1bcde690_p_Torpedo(156473) Travel_Td0rCc5WX4zh>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Stopping Refresh Handler
+#>>>Deleting...

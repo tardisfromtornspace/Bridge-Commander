@@ -1,0 +1,28 @@
+#This is the dump of the LogCreator: <Warship (Standard)-10 Travel Logger[2] LogCreator_NqENCF9eOsG4>
+#This log file was created on: 0:11:12.485 of 26/July/2023, Wednesday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>0:11:12.485 of 26/July/2023, Wednesday
+#>>>Initialized Warship (Standard)-10 Travel logger
+#>>>SELF = <Warship (Standard)-10(516536) Travel_K5lXFafp5Z2B>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+########################################
+# 0:11:19.024 of 26/July/2023, Wednesday
+#Ending of log dump - User is quiting the game
+########################################
