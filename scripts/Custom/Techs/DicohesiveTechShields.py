@@ -2,9 +2,10 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
 #         DampeningAOEDefensiveField.py by Alex SL Gato
-#         Version 0.3
+#         Version 1.0
 #         27th July 2023
 #         Based on scripts\Custom\DS9FX\DS9FXPulsarFX\PulsarManager by USS Sovereign, Inversion Beam and Power Drain Beam 1.0 by MLeo Daalder, Apollo, and Dasher; and GraviticLance by Alex SL Gato, which was based on FiveSecsGodPhaser by USS Frontier, scripts/ftb/Tech/Shields by the FoundationTechnologies team, and scripts/ftb/Tech/FedAblativeArmour by the FoundationTechnologies team. Also based on PhaseCloak.py by MLeo, Apollo and Dasher.
+#         Special Thanks to USS Sovereign for telling me better tips to remove the need of a hardpoint-wise made-up axis.
 #                          
 #################################################################################################################
 # This tech basically makes the ship unhurtable until a shield is breached and a hit comes from there.
@@ -14,112 +15,6 @@ Foundation.ShipDef.Sovereign.dTechs = {
 	"Dicohesive Tech Shields": {}
 }
 '''
-# Ok so for the moment I need people to add these hardpoint properties to the ship they want to use with this tech, the ship uses that for reference
-'''
-################################################
-# THESE ARE ONLY FOR THE DICOHESIVE 0.2 MOD
-#################################################
-FrontShieldIndicator = App.HullProperty_Create("FrontShieldIndicator")
-
-FrontShieldIndicator.SetMaxCondition(1.000000)
-FrontShieldIndicator.SetCritical(0)
-FrontShieldIndicator.SetTargetable(0)
-FrontShieldIndicator.SetPrimary(0)
-FrontShieldIndicator.SetPosition(0.000000, 100.300000, 0.000000)
-FrontShieldIndicator.SetPosition2D(0.000000, 0.000000)
-FrontShieldIndicator.SetRepairComplexity(0.000001)
-FrontShieldIndicator.SetDisabledPercentage(0.000000)
-FrontShieldIndicator.SetRadius(1.500000)
-App.g_kModelPropertyManager.RegisterLocalTemplate(FrontShieldIndicator)
-#################################################
-BackShieldIndicator = App.HullProperty_Create("BackShieldIndicator")
-
-BackShieldIndicator.SetMaxCondition(1.000000)
-BackShieldIndicator.SetCritical(0)
-BackShieldIndicator.SetTargetable(0)
-BackShieldIndicator.SetPrimary(0)
-BackShieldIndicator.SetPosition(0.000000, -100.300000, 0.000000)
-BackShieldIndicator.SetPosition2D(0.000000, 0.000000)
-BackShieldIndicator.SetRepairComplexity(0.000001)
-BackShieldIndicator.SetDisabledPercentage(0.000000)
-BackShieldIndicator.SetRadius(1.500000)
-App.g_kModelPropertyManager.RegisterLocalTemplate(BackShieldIndicator)
-#################################################
-PortShieldIndicator = App.HullProperty_Create("PortShieldIndicator")
-
-PortShieldIndicator.SetMaxCondition(1.000000)
-PortShieldIndicator.SetCritical(0)
-PortShieldIndicator.SetTargetable(0)
-PortShieldIndicator.SetPrimary(0)
-PortShieldIndicator.SetPosition(-100.300000, 0.000000, 0.000000)
-PortShieldIndicator.SetPosition2D(0.000000, 0.000000)
-PortShieldIndicator.SetRepairComplexity(0.000001)
-PortShieldIndicator.SetDisabledPercentage(0.000000)
-PortShieldIndicator.SetRadius(1.500000)
-App.g_kModelPropertyManager.RegisterLocalTemplate(PortShieldIndicator)
-#################################################
-StarShieldIndicator = App.HullProperty_Create("StarShieldIndicator")
-
-StarShieldIndicator.SetMaxCondition(1.000000)
-StarShieldIndicator.SetCritical(0)
-StarShieldIndicator.SetTargetable(0)
-StarShieldIndicator.SetPrimary(0)
-StarShieldIndicator.SetPosition(100.300000, 0.000000, 0.000000)
-StarShieldIndicator.SetPosition2D(0.000000, 0.000000)
-StarShieldIndicator.SetRepairComplexity(0.000001)
-StarShieldIndicator.SetDisabledPercentage(0.000000)
-StarShieldIndicator.SetRadius(1.500000)
-App.g_kModelPropertyManager.RegisterLocalTemplate(StarShieldIndicator)
-#################################################
-TopShieldIndicator = App.HullProperty_Create("TopShieldIndicator")
-
-TopShieldIndicator.SetMaxCondition(1.000000)
-TopShieldIndicator.SetCritical(0)
-TopShieldIndicator.SetTargetable(0)
-TopShieldIndicator.SetPrimary(0)
-TopShieldIndicator.SetPosition(0.000000, 0.000000, 100.300000)
-TopShieldIndicator.SetPosition2D(0.000000, 0.000000)
-TopShieldIndicator.SetRepairComplexity(0.000001)
-TopShieldIndicator.SetDisabledPercentage(0.000000)
-TopShieldIndicator.SetRadius(1.500000)
-App.g_kModelPropertyManager.RegisterLocalTemplate(TopShieldIndicator)
-#################################################
-BottomShieldIndicator = App.HullProperty_Create("BottomShieldIndicator")
-
-BottomShieldIndicator.SetMaxCondition(1.000000)
-BottomShieldIndicator.SetCritical(0)
-BottomShieldIndicator.SetTargetable(0)
-BottomShieldIndicator.SetPrimary(0)
-BottomShieldIndicator.SetPosition(0.000000, 0.000000, -100.300000)
-BottomShieldIndicator.SetPosition2D(0.000000, 0.000000)
-BottomShieldIndicator.SetRepairComplexity(0.000001)
-BottomShieldIndicator.SetDisabledPercentage(0.000000)
-BottomShieldIndicator.SetRadius(1.500000)
-App.g_kModelPropertyManager.RegisterLocalTemplate(BottomShieldIndicator)
-################################################
-################################################
-'''
-# At the end of the LoadProperties
-'''
-	prop = App.g_kModelPropertyManager.FindByName("FrontShieldIndicator", App.TGModelPropertyManager.LOCAL_TEMPLATES)
-	if (prop != None):
-		pObj.AddToSet("Scene Root", prop)
-	prop = App.g_kModelPropertyManager.FindByName("BackShieldIndicator", App.TGModelPropertyManager.LOCAL_TEMPLATES)
-	if (prop != None):
-		pObj.AddToSet("Scene Root", prop)
-	prop = App.g_kModelPropertyManager.FindByName("PortShieldIndicator", App.TGModelPropertyManager.LOCAL_TEMPLATES)
-	if (prop != None):
-		pObj.AddToSet("Scene Root", prop)
-	prop = App.g_kModelPropertyManager.FindByName("StarShieldIndicator", App.TGModelPropertyManager.LOCAL_TEMPLATES)
-	if (prop != None):
-		pObj.AddToSet("Scene Root", prop)
-	prop = App.g_kModelPropertyManager.FindByName("TopShieldIndicator", App.TGModelPropertyManager.LOCAL_TEMPLATES)
-	if (prop != None):
-		pObj.AddToSet("Scene Root", prop)
-	prop = App.g_kModelPropertyManager.FindByName("BottomShieldIndicator", App.TGModelPropertyManager.LOCAL_TEMPLATES)
-	if (prop != None):
-		pObj.AddToSet("Scene Root", prop)
-'''
 
 import App
 import FoundationTech
@@ -128,7 +23,7 @@ from bcdebug import debug
 import traceback
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-            "Version": "0.3",
+            "Version": "0.4",
             "License": "LGPL",
             "Description": "Read the small title above for more info"
             }
@@ -168,8 +63,17 @@ try:
 				pShip.SetVisibleDamageRadiusModifier(1.0)
 				pShip.SetVisibleDamageStrengthModifier(1.0)
 
+				pHull=pShip.GetHull()
+				didIDie = self.StoreHurt(pInstance, pHull, shieldHitBroken, fDamage, pShip, fRadius, kPoint, 1)
+				if didIDie == 1:
+					pShip.RunDeathScript()
+					return
+            
 				while pSubsystem:
-					self.StoreHurt(pInstance, pSubsystem, shieldHitBroken, fDamage, pShip, fRadius, kPoint)
+					didIDie = self.StoreHurt(pInstance, pSubsystem, shieldHitBroken, fDamage, pShip, fRadius, kPoint)
+					if didIDie == 1:
+						pShip.RunDeathScript()
+						return
 					pSubsystem = pShip.GetNextSubsystemMatch(pIterator)
 
 				pShip.EndGetSubsystemMatch(pIterator)
@@ -178,33 +82,25 @@ try:
 			if not pInstance.__dict__['Dicohesive Tech Shields'].has_key("Systems"):
 				pInstance.__dict__['Dicohesive Tech Shields']["Systems"] = {}
 
-			# get the references on the right lists
-			# 0 is front, 1 is back, 2 is top, 3 is bottom, 4 is left, 5 is right
-			nReferencias = ["FrontShieldIndicator", "BackShieldIndicator", "TopShieldIndicator", "BottomShieldIndicator", "PortShieldIndicator", "StarShieldIndicator"]
-			lReferencias = []
-			kIterator = pShip.StartGetSubsystemMatch(App.CT_SHIP_SUBSYSTEM)
-			while (1):
-				pSubsystem = pShip.GetNextSubsystemMatch(kIterator)
-				if not pSubsystem:
-					break
-				if pSubsystem.GetName() in nReferencias:
-					lReferencias.append(pSubsystem)
-
-			pShip.EndGetSubsystemMatch(kIterator)
-
 			# get the nearest reference
 			pReferenciado = None
 			dMasCercano = 0
 			bPlateDisabled = 0
-			print "lReferencias es ", lReferencias
+			pointForward = App.TGPoint3_GetModelForward()
+			pointBackward = App.TGPoint3_GetModelBackward()
+			pointTop = App.TGPoint3_GetModelUp()
+			pointBottom = App.TGPoint3_GetModelDown()
+			pointRight = App.TGPoint3_GetModelRight()
+			pointLeft = App.TGPoint3_GetModelLeft()
+			lReferencias = [pointForward, pointBackward, pointTop, pointBottom, pointLeft, pointRight]
+
 			for pPunto in lReferencias:
-				print pPunto.GetName()
-				vDifference = NiPoint3ToTGPoint3(pPunto.GetPosition())
-				vDifference.Subtract(kPoint)
-				print vDifference.Length()
-				if pReferenciado == None or vDifference.Length() < dMasCercano:
-					dMasCercano = vDifference.Length()
-					pReferenciado = pPunto.GetName()
+				#print lReferencias.index(pPunto)
+				pPunto.Subtract(kPoint)
+				#print pPunto.Length()
+				if pReferenciado == None or pPunto.Length() < dMasCercano:
+					dMasCercano = pPunto.Length()
+					pReferenciado = pPunto
 
 			if not pReferenciado: # Something went wrong, but it is better to keep recording the damage
 				print "Something went wrong when finding references, ship will likely be immortal"
@@ -215,11 +111,9 @@ try:
 					pSubsystem = pShip.GetNextSubsystemMatch(pIterator)
 				pShip.EndGetSubsystemMatch(pIterator)
 				return
-			shieldDir = nReferencias.index(pReferenciado)
-			#for shieldDir in range(App.ShieldClass.NUM_SHIELDS):			#Calculate the total shieldpower
-				#print shieldDir
+
+			shieldDir = lReferencias.index(pReferenciado)
 			fCurr = pShields.GetCurShields(shieldDir)
-			#print fCurr
 			fMax = pShields.GetMaxShields(shieldDir)
 			if fCurr < 0.10 * fMax:
 				if fCurr < 0.05 * fMax:
@@ -229,18 +123,26 @@ try:
 					nerf = 0
 				pShields.SetCurShields(shieldDir, nerf)
 
-
-			pIterator = pShip.StartGetSubsystemMatch(App.CT_SHIP_SUBSYSTEM)
-			pSubsystem = pShip.GetNextSubsystemMatch(pIterator)
-
 			#print "pEvent.IsHullHit() and shieldHitBroken for shieldir of name", pEvent.IsHullHit(), shieldHitBroken, shieldDir, pReferenciado
 			if pEvent.IsHullHit() and shieldHitBroken == 1: #TO-DO and things
 				#print "Hurt"
 				pShip.SetVisibleDamageRadiusModifier(1.0)
 				pShip.SetVisibleDamageStrengthModifier(1.0)
 
+				pHull=pShip.GetHull()
+				didIDie = self.StoreHurt(pInstance, pHull, shieldHitBroken, fDamage, pShip, fRadius, kPoint, 1)
+				if didIDie == 1:
+					pShip.RunDeathScript()
+					return
+				pIterator = pShip.StartGetSubsystemMatch(App.CT_SHIP_SUBSYSTEM)
+				pSubsystem = pShip.GetNextSubsystemMatch(pIterator)
+
 				while pSubsystem:
-					self.StoreHurt(pInstance, pSubsystem, shieldHitBroken, fDamage, pShip, fRadius, kPoint)
+					didIDie = self.StoreHurt(pInstance, pSubsystem, shieldHitBroken, fDamage, pShip, fRadius, kPoint)
+					if didIDie == 1:
+						pShip.EndGetSubsystemMatch(pIterator)
+						pShip.RunDeathScript()
+						return
 					pSubsystem = pShip.GetNextSubsystemMatch(pIterator)
 
 				pShip.EndGetSubsystemMatch(pIterator)
@@ -251,11 +153,14 @@ try:
 				pShip.SetVisibleDamageRadiusModifier(0.0)
 				pShip.SetVisibleDamageStrengthModifier(0.0)
 
+				pIterator = pShip.StartGetSubsystemMatch(App.CT_SHIP_SUBSYSTEM)
+				pSubsystem = pShip.GetNextSubsystemMatch(pIterator)
+
 				while pSubsystem:
 					self.Heal(pInstance, pSubsystem)
 					pSubsystem = pShip.GetNextSubsystemMatch(pIterator)
 
-			pShip.EndGetSubsystemMatch(pIterator)
+				pShip.EndGetSubsystemMatch(pIterator)
 
 		def Heal(self, pInstance, pSubsystem):
 			if not pInstance.__dict__['Dicohesive Tech Shields']["Systems"].has_key(pSubsystem.GetName()):
@@ -270,21 +175,24 @@ try:
 					pChild = pSubsystem.GetChildSubsystem(iIndex)
 					self.Heal(pInstance, pChild)
 
-		def StoreHurt(self, pInstance, pSubsystem, shieldHitBroken, fDamage, pShip, fRadius, kPoint):
+		def StoreHurt(self, pInstance, pSubsystem, shieldHitBroken, fDamage, pShip, fRadius, kPoint, force=0):
 			pInstance.__dict__['Dicohesive Tech Shields']["Systems"][pSubsystem.GetName()] = pSubsystem.GetCondition()
 			if shieldHitBroken == 1 and pSubsystem.IsCritical() and pSubsystem.GetCondition() < fDamage:
 				iamarmoredunderneath = pInstance.__dict__.has_key('Adv Armor Tech')
 				vDifference = NiPoint3ToTGPoint3(pSubsystem.GetPosition())
 				vDifference.Subtract(kPoint)
-				if vDifference.Length() < fRadius and not iamarmoredunderneath:
+				if not iamarmoredunderneath and (force == 1 or vDifference.Length() < fRadius + pSubsystem.GetRadius()) :
 					pShip.SetInvincible(0)
 					pShip.DestroySystem(pSubsystem)
-					return
+					return 1
 			iChildren = pSubsystem.GetNumChildSubsystems()
-			if iChildren > 0:
+			if iChildren > 0 and force == 0:
 				for iIndex in range(iChildren):
 					pChild = pSubsystem.GetChildSubsystem(iIndex)
-					self.StoreHurt(pInstance, pChild, shieldHitBroken, fDamage, pShip)
+					didIDie = self.StoreHurt(pInstance, pChild, shieldHitBroken, fDamage, pShip, fRadius, kPoint, force)
+					if didIDie == 1:
+						return didIDie
+			return 0
 
 		def OnBeamDefense(self, pShip, pInstance, oYield, pEvent):
 			debug(__name__ + ", OnBeamDefense")

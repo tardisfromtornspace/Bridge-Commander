@@ -10505,3 +10505,27 @@ Call stack:
 Address   Frame
 771E40E3  0019F740  0001:000430E3 C:\Windows\SYSTEM32\ntdll.dll (No symbol info found)
 
+//=====================================================
+Current Time: Thu Jul 27 16:57:52 2023
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  771E40E3 01:000430E3 C:\Windows\SYSTEM32\ntdll.dll
+
+Registers:
+EAX:00000008
+EBX:1F12A7B8
+ECX:1F1E752C
+EDX:1F127A68
+ESI:1F127A60
+EDI:00BE0000
+CS:EIP:0023:771E40E3
+SS:ESP:002B:0019F5F0  EBP:0019F740
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+
+Application Timestamp: Thu Jan 01 01:00:00 1970
+Doing stack walk
+
+Call stack:
+Address   Frame
+771E40E3  0019F740  0001:000430E3 C:\Windows\SYSTEM32\ntdll.dll (No symbol info found)
+

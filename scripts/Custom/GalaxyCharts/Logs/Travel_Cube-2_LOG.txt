@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Cube-2 Travel Logger LogCreator_3g2bmeA4wZ0c>
-#This log file was created on: 1:11:0.288 of 27/July/2023, Thursday
+#This is the dump of the LogCreator: <Cube-2 Travel Logger LogCreator_5wN5nJMv3Ijj>
+#This log file was created on: 17:17:44.231 of 27/July/2023, Thursday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>1:11:0.288 of 27/July/2023, Thursday
+#######>>>17:17:44.231 of 27/July/2023, Thursday
 #>>>Initialized Cube-2 Travel logger
-#>>>SELF = <Cube-2(61663) Travel_0R3Ai766xDZO>
+#>>>SELF = <Cube-2(118045) Travel_57Y04f2YU3jn>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -23,6 +23,10 @@ Updating Travelling Procedures...
 #>>>Chaser pre-emptive Refresher Initialization
 ## -------------------- ##
 ####################
-#######>>>1:11:56.255 of 27/July/2023, Thursday
-#>>>Arrived Events:  added event <C TGEvent instance at _1fb784e8_p_TGEvent>
+#######>>>17:18:19.080 of 27/July/2023, Thursday
+#>>>Arrived Events:  added event <C TGEvent instance at _1ef250f8_p_TGEvent>
 #>>>Updated Target Ship = Player
+########################################
+# 17:21:55.510 of 27/July/2023, Thursday
+#Ending of log dump - User is quiting the game
+########################################
