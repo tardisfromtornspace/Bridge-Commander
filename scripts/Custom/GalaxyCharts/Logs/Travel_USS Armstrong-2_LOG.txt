@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <USS Armstrong-2 Travel Logger LogCreator_ueLABxk50ImL>
-#This log file was created on: 15:58:57.680 of 21/July/2023, Friday
+#This is the dump of the LogCreator: <USS Armstrong-2 Travel Logger LogCreator_44Qw36d8Bjql>
+#This log file was created on: 18:42:21.585 of 28/July/2023, Friday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>15:58:57.680 of 21/July/2023, Friday
+#######>>>18:42:21.585 of 28/July/2023, Friday
 #>>>Initialized USS Armstrong-2 Travel logger
-#>>>SELF = <USS Armstrong-2(1556096) Travel_3XrYE20j35M2>
+#>>>SELF = <USS Armstrong-2(60603) Travel_19T237C39wbG>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -24,26 +24,77 @@ Updating Travelling Procedures...
 #>>>Updated Target Ship = Player
 ## -------------------- ##
 ####################
-#######>>>15:59:8.829 of 21/July/2023, Friday
-#>>> -Cancelling, too close to target to warp intercept...
-#>>> -Cancelling, too close to target to warp intercept...
-#>>> -Cancelling, too close to target to warp intercept...
+#######>>>18:42:29.502 of 28/July/2023, Friday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>15:59:11.213 of 21/July/2023, Friday
-#>>> -Cancelling, too close to target to warp intercept...
-#>>> -Cancelling, too close to target to warp intercept...
+#######>>>18:42:29.770 of 28/July/2023, Friday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>15:59:12.680 of 21/July/2023, Friday
+#######>>>18:42:30.052 of 28/July/2023, Friday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>15:59:13.393 of 21/July/2023, Friday
+#######>>>18:42:30.502 of 28/July/2023, Friday
 #>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>18:42:30.733 of 28/July/2023, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>18:42:31.210 of 28/July/2023, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>18:42:31.707 of 28/July/2023, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>18:42:31.958 of 28/July/2023, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>18:42:32.453 of 28/July/2023, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>18:42:32.707 of 28/July/2023, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>18:42:33.196 of 28/July/2023, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>18:42:33.451 of 28/July/2023, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>18:44:51.194 of 28/July/2023, Friday
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Enable Towing: 0
+#>>>Travelling procedures initiated...
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Extra path: AI ship warping to None
+#>>> -Checked: Ship can warp, travel procedures started.
+#>>> -Speed Check:
+#>>>     -Current:  9.97999954224
+#>>>     -Real Speed:  4388.19091797
+#>>>     -Cruise:  9.98
+#>>>     -Max:  9.99
+#>>>     -Actual Cruise:  9.97999954224
+#>>>     -Actual Max:  9.98999977112
+#>>> -Started playing engaging sequence.
+## -------------------- ##
+####################
+#######>>>18:44:57.697 of 28/July/2023, Friday
+#>>> -Finishing travelling procedures...
+#>>> -Finished. AI Ship travelling to None.
 ########################################
-# 16:1:41.515 of 21/July/2023, Friday
+# 18:47:25.731 of 28/July/2023, Friday
 #Ending of log dump - User is quiting the game
 ########################################

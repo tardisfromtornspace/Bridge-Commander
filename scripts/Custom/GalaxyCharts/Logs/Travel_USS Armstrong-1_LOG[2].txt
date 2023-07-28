@@ -1,0 +1,28 @@
+#This is the dump of the LogCreator: <USS Armstrong-1 Travel Logger[2] LogCreator_o04vs8vauIpm>
+#This log file was created on: 18:45:14.916 of 28/July/2023, Friday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>18:45:14.916 of 28/July/2023, Friday
+#>>>Initialized USS Armstrong-1 Travel logger
+#>>>SELF = <USS Armstrong-1(391932) Travel_Qpe2u163wOew>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+########################################
+# 18:47:25.731 of 28/July/2023, Friday
+#Ending of log dump - User is quiting the game
+########################################

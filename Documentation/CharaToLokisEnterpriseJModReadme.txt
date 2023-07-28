@@ -1,4 +1,6 @@
 == Changelog ==
+1.0.1 - Anotehr balance update
+ * Severely nerfed the shields and armour.
 1.0 - Official Mod Release
  * Fix on Gravitic Lance
 0.9 - Small refinement of the Simulated Point Defence script.

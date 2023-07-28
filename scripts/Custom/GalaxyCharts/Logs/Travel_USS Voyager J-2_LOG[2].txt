@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <USS Voyager J-2 Travel Logger[2] LogCreator_7aH307iMpjK1>
-#This log file was created on: 15:32:26.676 of 23/July/2023, Sunday
+#This is the dump of the LogCreator: <USS Voyager J-2 Travel Logger[2] LogCreator_Z23A7fi3PThK>
+#This log file was created on: 18:59:10.931 of 28/July/2023, Friday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>15:32:26.676 of 23/July/2023, Sunday
+#######>>>18:59:10.931 of 28/July/2023, Friday
 #>>>Initialized USS Voyager J-2 Travel logger
-#>>>SELF = <USS Voyager J-2(129714) Travel_3WS0gXWfY9E5>
+#>>>SELF = <USS Voyager J-2(107585) Travel_mt2LhWhLGfSK>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -24,291 +24,129 @@ Updating Travelling Procedures...
 #>>>Updated Target Ship = Player
 ## -------------------- ##
 ####################
-#######>>>15:32:34.409 of 23/July/2023, Sunday
+#######>>>18:59:18.446 of 28/July/2023, Friday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>15:32:34.897 of 23/July/2023, Sunday
+#######>>>18:59:18.600 of 28/July/2023, Friday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>15:32:35.237 of 23/July/2023, Sunday
+#######>>>18:59:19.029 of 28/July/2023, Friday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>15:32:35.380 of 23/July/2023, Sunday
+#######>>>18:59:19.581 of 28/July/2023, Friday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>15:32:35.782 of 23/July/2023, Sunday
+#######>>>18:59:20.050 of 28/July/2023, Friday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>15:32:35.928 of 23/July/2023, Sunday
+#######>>>18:59:20.563 of 28/July/2023, Friday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>15:32:36.287 of 23/July/2023, Sunday
+#######>>>18:59:21.036 of 28/July/2023, Friday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>15:32:36.813 of 23/July/2023, Sunday
+#######>>>18:59:21.269 of 28/July/2023, Friday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>15:32:37.414 of 23/July/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-< ======== Dynamic TS ========= >
-Updating Travelling Procedures...
- -Update Loop MARK START
-<DTSC> -Time left:
- -Update Loop MARK COMPLETED
-< ========== END DTS ========== >
-## -------------------- ##
-####################
-#######>>>15:57:10.953 of 23/July/2023, Sunday
-#>>>Initialized USS Voyager J-2 Travel logger
-#>>>SELF = <USS Voyager J-2(2035326) Travel_V173QTc51cY6>
-#>>>Initial Travel Type: Warp
-#>>>Updating Variables...
-#>>> -Is AI in Player in route CHECKING: Player Travel OK
-#>>>Destination set as None
-#>>>Set Exit Placement Name as None
-#>>>Set Exit Point to None
-#>>>Chaser base class initialization complete.
-#>>>Target Ship = NONE
-#>>>Chaser pre-emptive Refresher Initialization
-#>>>Updated Target Ship = Player
-## -------------------- ##
-####################
-#######>>>15:57:18.286 of 23/July/2023, Sunday
+#######>>>18:59:21.809 of 28/July/2023, Friday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>15:57:18.869 of 23/July/2023, Sunday
+#######>>>18:59:22.067 of 28/July/2023, Friday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>15:57:19.165 of 23/July/2023, Sunday
+#######>>>18:59:22.586 of 28/July/2023, Friday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>15:57:19.797 of 23/July/2023, Sunday
+#######>>>18:59:22.815 of 28/July/2023, Friday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>15:57:20.189 of 23/July/2023, Sunday
+#######>>>18:59:23.297 of 28/July/2023, Friday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>15:57:20.897 of 23/July/2023, Sunday
+#######>>>18:59:23.562 of 28/July/2023, Friday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>15:57:21.250 of 23/July/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>15:57:21.772 of 23/July/2023, Sunday
+#######>>>18:59:23.746 of 28/July/2023, Friday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>15:57:22.278 of 23/July/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
+#######>>>19:1:31.094 of 28/July/2023, Friday
+#>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>15:57:22.476 of 23/July/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
+#######>>>19:1:31.244 of 28/July/2023, Friday
+#>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>15:57:22.814 of 23/July/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
+#######>>>19:1:31.927 of 28/July/2023, Friday
+#>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>15:57:23.255 of 23/July/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
+#######>>>19:1:37.762 of 28/July/2023, Friday
+#>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>15:57:23.940 of 23/July/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
+#######>>>19:1:42.415 of 28/July/2023, Friday
+#>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>15:57:24.625 of 23/July/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
+#######>>>19:1:46.610 of 28/July/2023, Friday
+#>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>15:57:25.446 of 23/July/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-#>>> -Cancelling, too close to target to warp intercept...
-#>>> -Cancelling, too close to target to warp intercept...
-#>>> -Cancelling, too close to target to warp intercept...
+#######>>>19:1:49.927 of 28/July/2023, Friday
+#>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>15:57:26.986 of 23/July/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-#>>> -Cancelling, too close to target to warp intercept...
-#>>> -Cancelling, too close to target to warp intercept...
+#######>>>19:1:52.110 of 28/July/2023, Friday
+#>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>15:57:28.321 of 23/July/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
+#######>>>19:1:54.244 of 28/July/2023, Friday
+#>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>15:57:28.669 of 23/July/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-< ======== Dynamic TS ========= >
-Updating Travelling Procedures...
- -Update Loop MARK START
-<DTSC> -Time left:
- -Update Loop MARK COMPLETED
-< ========== END DTS ========== >
+#######>>>19:1:56.510 of 28/July/2023, Friday
+#>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>15:57:51.836 of 23/July/2023, Sunday
-#>>>Initialized USS Voyager J-2 Travel logger
-#>>>SELF = <USS Voyager J-2(2070574) Travel_9An8zo1Yc4Tm>
-#>>>Initial Travel Type: Warp
-#>>>Updating Variables...
-#>>> -Is AI in Player in route CHECKING: Player Travel OK
-#>>>Destination set as None
-#>>>Set Exit Placement Name as None
-#>>>Set Exit Point to None
-#>>>Chaser base class initialization complete.
-#>>>Target Ship = NONE
-#>>>Chaser pre-emptive Refresher Initialization
-#>>>Updated Target Ship = Player
+#######>>>19:1:58.728 of 28/July/2023, Friday
+#>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>15:57:59.285 of 23/July/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-#>>> -Cancelling, too close to target to warp intercept...
+#######>>>19:2:0.965 of 28/July/2023, Friday
+#>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>15:58:0.426 of 23/July/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
+#######>>>19:2:2.127 of 28/July/2023, Friday
+#>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>15:58:0.744 of 23/July/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
+#######>>>19:2:3.661 of 28/July/2023, Friday
+#>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>15:58:1.928 of 23/July/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-#>>> -Cancelling, too close to target to warp intercept...
-< ======== Dynamic TS ========= >
-Updating Travelling Procedures...
- -Update Loop MARK START
-<DTSC> -Time left:
- -Update Loop MARK COMPLETED
-< ========== END DTS ========== >
+#######>>>19:2:4.743 of 28/July/2023, Friday
+#>>>Ship is dead or dying (at Chaser Update)
 ## -------------------- ##
 ####################
-#######>>>15:59:22.817 of 23/July/2023, Sunday
-#>>>Initialized USS Voyager J-2 Travel logger
-#>>>SELF = <USS Voyager J-2(2186900) Travel_k9bqJu5aUZo2>
-#>>>Initial Travel Type: Warp
-#>>>Updating Variables...
-#>>> -Is AI in Player in route CHECKING: Player Travel OK
-#>>>Destination set as None
-#>>>Set Exit Placement Name as None
-#>>>Set Exit Point to None
-#>>>Chaser base class initialization complete.
-#>>>Target Ship = NONE
-#>>>Chaser pre-emptive Refresher Initialization
-#>>>Updated Target Ship = Player
-## -------------------- ##
-####################
-#######>>>15:59:30.700 of 23/July/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-#>>> -Cancelling, too close to target to warp intercept...
-#>>> -Cancelling, too close to target to warp intercept...
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>15:59:32.517 of 23/July/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>15:59:34.410 of 23/July/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-#>>> -Cancelling, too close to target to warp intercept...
-< ======== Dynamic TS ========= >
-Updating Travelling Procedures...
- -Update Loop MARK START
-<DTSC> -Time left:
- -Update Loop MARK COMPLETED
-< ========== END DTS ========== >
-## -------------------- ##
-####################
-#######>>>16:0:29.166 of 23/July/2023, Sunday
-#>>>Initialized USS Voyager J-2 Travel logger
-#>>>SELF = <USS Voyager J-2(2260300) Travel_fD7PP1jC3LF0>
-#>>>Initial Travel Type: Warp
-#>>>Updating Variables...
-#>>> -Is AI in Player in route CHECKING: Player Travel OK
-#>>>Destination set as None
-#>>>Set Exit Placement Name as None
-#>>>Set Exit Point to None
-#>>>Chaser base class initialization complete.
-#>>>Target Ship = NONE
-#>>>Chaser pre-emptive Refresher Initialization
-#>>>Updated Target Ship = Player
-## -------------------- ##
-####################
-#######>>>16:0:37.633 of 23/July/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>16:0:38.793 of 23/July/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>16:0:39.807 of 23/July/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>16:0:40.236 of 23/July/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>16:0:41.228 of 23/July/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-< ======== Dynamic TS ========= >
-Updating Travelling Procedures...
- -Update Loop MARK START
-<DTSC> -Time left:
- -Update Loop MARK COMPLETED
-< ========== END DTS ========== >
-## -------------------- ##
-####################
-#######>>>16:1:3.299 of 23/July/2023, Sunday
-#>>>Initialized USS Voyager J-2 Travel logger
-#>>>SELF = <USS Voyager J-2(2310331) Travel_jGRh0403E7BA>
-#>>>Initial Travel Type: Warp
-#>>>Updating Variables...
-#>>> -Is AI in Player in route CHECKING: Player Travel OK
-#>>>Destination set as None
-#>>>Set Exit Placement Name as None
-#>>>Set Exit Point to None
-#>>>Chaser base class initialization complete.
-#>>>Target Ship = NONE
-#>>>Chaser pre-emptive Refresher Initialization
-#>>>Updated Target Ship = Player
-## -------------------- ##
-####################
-#######>>>16:1:8.883 of 23/July/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>16:1:11.217 of 23/July/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-#>>> -Cancelling, too close to target to warp intercept...
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>16:1:13.225 of 23/July/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
+#######>>>19:2:6.430 of 28/July/2023, Friday
+#>>>Ship is dead or dying (at Chaser Update)
+########################################
+# 19:2:6.430 of 28/July/2023, Friday
+#Ending of log dump - User is quiting the game
+########################################

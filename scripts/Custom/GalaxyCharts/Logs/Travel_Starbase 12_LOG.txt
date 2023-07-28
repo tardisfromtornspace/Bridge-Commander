@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Starbase 12 Travel Logger LogCreator_1vI875g0k983>
-#This log file was created on: 16:58:21.443 of 28/July/2023, Friday
+#This is the dump of the LogCreator: <Starbase 12 Travel Logger LogCreator_h7ebW8F530HO>
+#This log file was created on: 19:5:31.954 of 28/July/2023, Friday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>16:58:21.443 of 28/July/2023, Friday
+#######>>>19:5:31.954 of 28/July/2023, Friday
 #>>>Initialized Starbase 12 Travel logger
-#>>>SELF = <Starbase 12(5729) Travel_9STX8D37XsLq>
+#>>>SELF = <Starbase 12(5586) Travel_GUR0pJRgk83j>
 #>>>Initial Travel Type: None
 #>>>Updating Variables...
 #>>>Destination set as None
@@ -20,3 +20,7 @@ Updating Travelling Procedures...
 #>>>Chaser base class initialization complete.
 #>>>Target Ship = NONE
 #>>>Chaser pre-emptive Refresher Initialization
+########################################
+# 19:9:27.152 of 28/July/2023, Friday
+#Ending of log dump - User is quiting the game
+########################################

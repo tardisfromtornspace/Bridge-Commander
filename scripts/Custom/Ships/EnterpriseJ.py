@@ -55,7 +55,7 @@ Foundation.ShipDef.EnterpriseJ.dTechs = {
 	#'Fed Ablative Armor': { "Plates": ["Forward Ablative Armor", "Aft Ablative Armor", "Dorsal Ablative Armor", "Ventral Ablative Armor"]},
 	"GraviticLance": { "Time": 0.1, "TimeEffect": 5.0, "RadDepletionStrength": 1000, "Beams": ["Gravitic Lance"], "Immune": 0},
 	"Inversion Beam": [12000, 0, 0.5, 1500],
-	'Multivectral Shields': 18,
+	'Multivectral Shields': 10,
 	"Phased Torpedo Immune": 1,
 	"Power Drain Beam": [1500, 0, 0.5, 1500],
 	'Simulated Point Defence' : { "Distance": 75.0, "InnerDistance": 10.0, "Effectiveness": 0.9, "LimitTurn": 5.0, "LimitSpeed": 120, "LimitDamage": "-5000", "Period": 1.0, "MaxNumberTorps": 50, "Phaser": {"Priority": 1}},
