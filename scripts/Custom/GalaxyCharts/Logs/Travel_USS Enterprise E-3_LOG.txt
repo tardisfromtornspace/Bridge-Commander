@@ -1,0 +1,63 @@
+#This is the dump of the LogCreator: <USS Enterprise E-3 Travel Logger LogCreator_S72rgi6mfOIO>
+#This log file was created on: 20:10:4.383 of 27/July/2023, Thursday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>20:10:4.383 of 27/July/2023, Thursday
+#>>>Initialized USS Enterprise E-3 Travel logger
+#>>>SELF = <USS Enterprise E-3(95576) Travel_L02u2eEpf1DG>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = USS Enterprise J-1
+## -------------------- ##
+####################
+#######>>>20:10:48.741 of 27/July/2023, Thursday
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Enable Towing: 0
+#>>>Travelling procedures initiated...
+#>>>Updating Variables...
+#>>> -Extra path: AI ship warping to None
+#>>> -Checked: Ship can warp, travel procedures started.
+#>>> -Speed Check:
+#>>>     -Current:  9.97999954224
+#>>>     -Real Speed:  4388.19091797
+#>>>     -Cruise:  9.98
+#>>>     -Max:  9.99
+#>>>     -Actual Cruise:  9.97999954224
+#>>>     -Actual Max:  9.98999977112
+#>>> -Started playing engaging sequence.
+## -------------------- ##
+####################
+#######>>>20:10:52.641 of 27/July/2023, Thursday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>20:10:54.525 of 27/July/2023, Thursday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>20:10:54.843 of 27/July/2023, Thursday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>20:10:55.025 of 27/July/2023, Thursday
+#>>> -Finishing travelling procedures...
+#>>> -Finished. AI Ship travelling to None.
+########################################
+# 20:15:44.570 of 27/July/2023, Thursday
+#Ending of log dump - User is quiting the game
+########################################

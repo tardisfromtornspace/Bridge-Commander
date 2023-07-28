@@ -20,6 +20,7 @@ Foundation.ShipDef.MillionVoices.dTechs = {
 	'Breen Drainer Immune': 1,
 	'Multivectral Shields': 15,
         "Reflector Shields": 35,
+	'Simulated Point Defence' : { "Distance": 120.0, "InnerDistance": 15.0, "Effectiveness": 0.8, "LimitTurn": 5.0, "LimitSpeed": 300, "Period": 0.2, "MaxNumberTorps": 12, "Torpedo": {"Priority": 1}},
 	'Fed Ablative Armor': { "Plates": ["Armour"]
 }}
 Foundation.ShipDef.MillionVoices.bPlanetKiller = 1

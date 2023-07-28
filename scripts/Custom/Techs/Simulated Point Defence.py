@@ -2,8 +2,8 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
 #         Simulated Point Defence.py by Alex SL Gato
-#         Version 0.2
-#         26th July 2023
+#         Version 0.5
+#         27th July 2023
 #         Based strongly on DampeningAOEDefensiveField.py by Alex Sl Gato, which was based on scripts\Custom\DS9FX\DS9FXPulsarFX\PulsarManager by USS Sovereign, and slightly on TractorBeams.py, Inversion Beam and Power Drain Beam 1.0 by MLeo Daalder, Apollo, and Dasher; some team-switching torpedo by LJ; and GraviticLance by Alex SL Gato, which was based on FiveSecsGodPhaser by USS Frontier, scripts/ftb/Tech/TachyonProjectile by the FoundationTechnologies team, and scripts/ftb/Tech/FedAblativeArmour by the FoundationTechnologies team.
 #         Also based strongly on PointDefence.py by Defiant
 #################################################################################################################
@@ -18,26 +18,13 @@
 # Period: in seconds, but then internally multiplied by 10 to get it in a base slice. Default is 1.0 Also indirectly affected by power given to the shields.
 # MaxNumberTorps: how many torps it can intercept in an area at a time. Default is 200.
 # EXPERIMENTAL: Phaser, Torpedo and Pulse properties... only to use if you want a phaser/pulse/torpedo to react as well. They can have a "Priority" field inside to indicate priority when choosing weapons (1 = lowest but still above any default, higher positive nubmers are higher priorities).
-# Note: the experimental field above  will make it enater, but it will also indirectly adjust to the weapon banks and tubes speed - and on the case of phaser bank, reduce it to the available ranges and time to fire - thus decrementing real effectivity and defensive capabilities when firing when compared with a non-experimental one.
-
-#Other Style Point Defence: easier than the Phaser-style, it just kills the enemy torps and pulses (and those pulses aimed at itself) on an area (excluding those too close, indicate mindistance via  
-#a dict) with a random chance, every dict X number of slices
-#   NOTE: KILL THE TORP DIRECLY AND CREATE A FIREPOINT ON THE AREA TO AVOID MULTIPLES TOUCHING THAT TORP - OR KEEP IT IN A DICTIONARY GLOBAL TO SAY NOT TO ATTACK IT (SEE HOW TO MANAGE RESOURCE...) OR ATTACH A THING TO THE TORP OR DO A COMBINATIO OF BOTH SO IF SOEONE ALREADY FOUND IT, KILL IT, OR IGNORE FIREPOINTS TARGETS... LATTER ONE NOT RECOMMENDED)
-#    AD A MAX NUMBER DICT OF TORPS TO HIT, IF THAT VALUE IS NOT THERE WE CONIDER  IT INFINITY
-#       - Random chance: determined by dict Effectiveness at 100% * InverseGuidanceLifetime * InverseSpeedFactor * inverseAngularAcceelration * InverseDamageFactor * InverseAngularAcceleration * RicochetChance
-#           - Effectiveness at 100%: a dict value, that dict value has range [0, 1] default 0.5. Multiplied by the power given to the shields, albeit this shield-power extra effectiveness is capped at range [0, 1.25] %
-#           - InverseSpeedFactor: (1 - getSpeed/dictValue ) range [0, 1] default dictValue is 35 * TO-DO MAKE THESE DEFAULTS GLOBALS. if the dict is 0, make it so it values 1 if getGuidance is 0, and 0 otherwise (something similar applies to Damage and guidancelifetime)
-#           - InverseDamageFactor: if damage greater than the dict, chances are reduced to (2 - getDamage/dictValue ) of range [0, 1], but if def GetName(): returns ("Breen Drain"), then the min is set to 0.9 instead (1.0 if it's Jumpspace Tunnel). If there's no dictValue for this, we consider it 1 by default; if the value is 0, apply the same as speed
-#           - InverseAngularAcceleration: (1 - GetMaxAngularAccel/dictValue ) APPLIES SAME THING TO dict value 0, and if dict value is not there we assume 1
-#           - RicochetChance: from my own SG mod, get the RicochetChance(), so then it is 1-RicochetChance(), default 1, range [0, infinity].
-#       - Base slice: 0.1 seconds
-#       - How the time is calculated: dict X number of slices has a sister variable called timeRemaining, so then timeRemaining < 0, timeRemaining = dict X number of slices, and then every slice it is -1 * the power given to the shields, and this power given to the shields is on range [0.5 - 2]
-#        
-
+# Note: the experimental field above  will make it neater, but it will also indirectly adjust to the weapon banks and tubes speed - and on the case of phaser bank, reduce it to the available ranges and time to fire - thus decrementing real effectivity and defensive capabilities when firing when compared with a non-experimental one. 
+# Properties: on this case, it sets specific properties that may be understood as point defence systems - albeit due to how STBC works you would need to either disable the other subsystems for a sec before firing (not recommended) or create a hardpoint weapon group; so this field is mostly unused except for the following field
+# Specially: if this field have a value higher than 0, the ship will not be able to use that point defense if all the subsystems indicated on the Properties field are disabled or destroyed
 
 """
 Foundation.ShipDef.Sovereign.dTechs = {
-	'Simulated Point Defence' : { "Distance": 50.0, "InnerDistance": 10.0, "Effectiveness": 0.5, "LimitTurn": 5.0, "LimitSpeed": 35, "LimitDamage": "150", "Period": 0.5, "MaxNumberTorps": 50, "Phaser": {"Priority": 1, "Beams": ["Phaser Bank Name 1"],}, "Pulse": {"Priority": 1, "Emmiters": ["Pulse Weapon Emmiter Name 1"],}, "Torpedo": {"Priority": 1, "Tubes": ["Torpedo Tube Name 1"],}, "Tractor": {"Priority": 1, "Beams": ["Tractor Beam Name 1"],}},
+	'Simulated Point Defence' : { "Distance": 50.0, "InnerDistance": 10.0, "Effectiveness": 0.5, "LimitTurn": 5.0, "LimitSpeed": 35, "LimitDamage": "150", "Period": 0.5, "MaxNumberTorps": 50, "Phaser": {"Priority": 1, "Properties": ["Phaser Bank Name 1"], "Specially": 0,}, "Pulse": {"Priority": 1, "Properties": ["Pulse Weapon Emmiter Name 1"], "Specially": 0,}, "Torpedo": {"Priority": 1, "Properties": ["Torpedo Tube Name 1"], "Specially": 0,}, "Tractor": {"Priority": 1, "Properties": ["Tractor Beam Name 1"], "Specially": 0,}},
 }
 """
 import App
@@ -55,7 +42,7 @@ from bcdebug import debug
 import traceback
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-            "Version": "0.2",
+            "Version": "0.5",
             "License": "LGPL",
             "Description": "Read the small title above for more info"
             }
@@ -136,11 +123,11 @@ try:
 					self.countdown()
 					
 			else:
-				print "SimulatedPointDefence Error (at Attach): couldn't acquire ship of id", pInstance.pShipID
+				print "Simulated Point Defence Error (at Attach): couldn't acquire ship of id", pInstance.pShipID
 				pass
 
 			pInstance.lTechs.append(self)
-			print "SimulatedPointDefence: attached to ship:", pShip.GetName()
+			print "Simulated Point Defence: attached to ship:", pShip.GetName()
 
 		def Detach(self, pInstance):
 			debug(__name__ + ", Detach")
@@ -151,14 +138,12 @@ try:
 			pShip = App.ShipClass_Cast(App.TGObject_GetTGObjectPtr(pInstance.pShipID))
 			if pShip != None:
 				dMasterDict = pInstance.__dict__['Simulated Point Defence']
-				
-				#pAllShipsWithTheTech.pop(pInstance, None) # TO-DO VERIFY THIS CAN BE DONE
 				self.pShip = None
 			else:
 				#print "SimulatedPointDefence Error (at Detach): couldn't acquire ship of id", pInstance.pShipID
 				pass
 			pInstance.lTechs.remove(self)
-			print "SimulatedPointDefence: detached from ship:", pShip.GetName()
+			print "Simulated Point Defence: detached from ship:", pShip.GetName()
 
 		def countdown(self):
 			if not self.pTimer:
@@ -225,6 +210,7 @@ try:
 			iMinRange = pInstance.__dict__['Simulated Point Defence']["InnerDistance"]
 
 			lTorpTargets = []
+			subSys = []  
 
 			pMission        = MissionLib.GetMission() 
 			pFriendlies     = pMission.GetFriendlyGroup() 
@@ -249,7 +235,6 @@ try:
 
 						## Check the friendlies and enemy group for the ship. If that ship does not exist it is a stray torpedo and must be shot down in case it hits us
 						if not pFiredShip or (pFriendlies.IsNameInGroup(pFiredShip.GetName()) and thisShipInFriendlyGroup) or (pEnemies.IsNameInGroup(pFiredShip.GetName()) and thisShipInEnemyGroup)  or (pGroup.IsNameInGroup(pFiredShip.GetName()) and thisShipInNeutralGroup):
-							# TO-DO pTorp INSTEAD OF pObject?
 							lTorpTargets.append(pObject.GetObjID())
 
 			pProx.EndObjectIteration(kIter)  
@@ -298,11 +283,13 @@ try:
 
 			preferredWeapon = "None"
 			pWeaponSystem = None
+			subSys = []
 
 			havePhaser = pInstance.__dict__['Simulated Point Defence'].has_key("Phaser")
 			havePulse = pInstance.__dict__['Simulated Point Defence'].has_key("Pulse")
 			haveTorpedo = pInstance.__dict__['Simulated Point Defence'].has_key("Torpedo")
 			haveTractor = pInstance.__dict__['Simulated Point Defence'].has_key("Tractor")
+			nottooSpecificToSwitch = 0
 
 			if havePhaser or havePulse or haveTorpedo or haveTractor:
 				pSensorSubsystem = pShip.GetSensorSubsystem()
@@ -350,7 +337,7 @@ try:
 				pWeaponSystem4 = pShip.GetTractorBeamSystem()
 
 				if not pWeaponSystem1 or pWeaponSystem1.IsDisabled():
-					priorityPhaser = -1
+    					priorityPhaser = -1
 				if not pWeaponSystem2 or pWeaponSystem2.IsDisabled():
 					priorityPulse = -1
 				if not pWeaponSystem3 or pWeaponSystem3.IsDisabled():
@@ -358,10 +345,10 @@ try:
 				if not pWeaponSystem4 or pWeaponSystem4.IsDisabled():
 					priorityTractor = -1
 
-				print "ok priorities now:", priorityPhaser, priorityPulse, priorityTorp, priorityTractor
+				#print "ok priorities now:", priorityPhaser, priorityPulse, priorityTorp, priorityTractor
 
 				if not pWeaponSystem1 and not pWeaponSystem2 and not pWeaponSystem3 and not pWeaponSystem4:
-					print "no systems to fire, how odd"
+					#print "no systems to fire, how odd"
 					return
 
 				if priorityPhaser >= priorityPulse and priorityPhaser >= priorityTorp and priorityPhaser >= priorityTractor:
@@ -377,12 +364,28 @@ try:
 					pWeaponSystem = pWeaponSystem4
 					preferredWeapon = "Tractor"
 
-				print "preferredWeapon is", preferredWeapon
+				#print "preferredWeapon is", preferredWeapon
+				if (not preferredWeapon == "None") and pInstance.__dict__['Simulated Point Defence'][preferredWeapon].has_key("Properties"):
+					subSysNames = pInstance.__dict__['Simulated Point Defence'][preferredWeapon]["Properties"]
+					if pInstance.__dict__['Simulated Point Defence'][preferredWeapon].has_key("Specially") and pInstance.__dict__['Simulated Point Defence'][preferredWeapon]["Specially"] > 0:
+						nottooSpecificToSwitch = 0
+					else:
+						nottooSpecificToSwitch = 1
+					iChildren = pWeaponSystem.GetNumChildSubsystems()
+					if iChildren > 0 and len(subSysNames) > 0:
+						for iIndex in range(iChildren):
+							pChild = pWeaponSystem.GetChildSubsystem(iIndex)
+							if pChild.GetName() in subSysNames:
+								if not pChild.IsDisabled():
+									nottooSpecificToSwitch = nottooSpecificToSwitch + 1
+									subSys.append(pChild)
+				else:
+					nottooSpecificToSwitch = 1
 
 			for kTorp in lTorpTargets:
 				pTorp = App.Torpedo_GetObjectByID(None, kTorp)
 				if not pTorp:
-					print "No torp?"
+					#print "No torp?"
 					continue
 
 				thisTorpDamage = pTorp.GetDamage()
@@ -396,26 +399,26 @@ try:
 				isLeTorpBreenDrain = 0
 				leRicochetChance = 1
 
-				print "The torp has the damage, speed, turn and lifetime shown here: ", thisTorpDamage, thisTorpSpeed, thisTorpTurn, thisTorpGuideLife
+				#print "The torp has the damage, speed, turn and lifetime shown here: ", thisTorpDamage, thisTorpSpeed, thisTorpTurn, thisTorpGuideLife
 				if hasattr(pTorp, "GetModuleName") and not pTorp.GetModuleName() == None:
 					
-					print "There is a torp module, the module name is ", pTorp.GetModuleName()
+					#print "There is a torp module, the module name is ", pTorp.GetModuleName()
 					leTorpExtraInfo = __import__(pTorp.GetModuleName(), globals(), locals())
 					if hasattr(leTorpExtraInfo, "GetName"):
 						theTorpName = leTorpExtraInfo.GetName()
-						print "the name is", theTorpName
+						#print "the name is", theTorpName
 						if theTorpName == "":
-							print "Having to do a harsher search for not including a name..."
+							#print "Having to do a harsher search for not including a name..."
 							global lImmuneTorps
 							sTorpScriptName = string.split(pTorp.GetModuleName(), ".")[-1]
 							if sTorpScriptName in lImmuneTorps:
 								continue
 							if sTorpScriptName == "BreenDrainer" or sTorpScriptName == "BreenDrain" or sTorpScriptName == "Breen Drainer":
 								isLeTorpBreenDrain = 1
-						if theTorpName == "Jumpspace Tunnel":
-							print "We cannot just shoot an interdimensional vortex on the face and with that make it collapse!"
+						if theTorpName == "Jumpspace Tunnel" or theTorpName == "Vorlon Weapon":
+							#print "We cannot just shoot an interdimensional vortex on the face and with that make it collapse!"
 							continue
-						if theTorpName == "Breen Drainer" or theTorpName == "Breen Drain" or theTorpName == "Jumpspace Disruptor" or theTorpName == "Vorlon Weapon":
+						if theTorpName == "Breen Drainer" or theTorpName == "Breen Drain" or theTorpName == "Breen Drainer" or theTorpName == "Jumpspace Disruptor":
 							isLeTorpBreenDrain = 1
 					else:
 						print "Having to do a harsher search for not including an attribute... no, really, this attribute should be here, even as an empty field for other parts of the game to work properly, please fix ", pTorp.GetModuleName(), " immediately"
@@ -423,11 +426,11 @@ try:
 						sTorpScriptName = string.split(pTorp.GetModuleName(), ".")[-1]
 						if sTorpScriptName in lImmuneTorps:
 							continue
-						if sTorpScriptName == "BreenDrainer" or sTorpScriptName == "BreenDrain" or sTorpScriptName == "Breen Drainer":
+						if sTorpScriptName == "BreenDrainer" or sTorpScriptName == "BreenDrain" or sTorpScriptName == "Breen Drainer" or sTorpScriptName == "ShadHipDis":
 							isLeTorpBreenDrain = 1
 
 					if hasattr(leTorpExtraInfo, "RicochetChance"):
-						print "hey, this has ricochet chance and may evade our defense at the last moment", leTorpExtraInfo.RicochetChance()
+						#print "hey, this has ricochet chance and may evade our defense at the last moment", leTorpExtraInfo.RicochetChance()
 						leRicochetChance = 1.2 - leTorpExtraInfo.RicochetChance()
 						if leRicochetChance < 0.0:
 							leRicochetChance = 0
@@ -446,7 +449,7 @@ try:
 						if thisTorpGuideLife < 2:
 							temporaryGuide = thisTorpGuideLife
 						if divider > 0:
-							print "divider is greater than 0, we target all objectives. Now, thisTorpTurn*temporaryGuide/divider is ", thisTorpTurn, temporaryGuide, divider, thisTorpTurn*temporaryGuide/divider
+							#print "divider is greater than 0, we target all objectives. Now, thisTorpTurn*temporaryGuide/divider is ", thisTorpTurn, temporaryGuide, divider, thisTorpTurn*temporaryGuide/divider
 							turnSpeedEffectiveness = (1 - thisTorpTurn*temporaryGuide/divider)
 						else: # Target torps only
 							if self.isAPulse(thisTorpGuideLife, thisTorpTurn):
@@ -466,6 +469,8 @@ try:
 					linearSpeedEffectiveness = -0.5 * (3 ** (1/3)) * -((-(thisTorpSpeed - dictLimitSpeed)) ** (1.0/3.0) )
 					if linearSpeedEffectiveness > 1.0:
 						linearSpeedEffectiveness = 1.0
+					if linearSpeedEffectiveness < 0.0:
+						linearSpeedEffectiveness = 0.0
 
 				damageEffectivenness = 1
 				if hasLimitDamage:
@@ -483,6 +488,8 @@ try:
 
 				if damageEffectivenness > 1.0:
 					damageEffectivenness = 1.0
+				if damageEffectivenness < 0.0:
+					damageEffectivenness = 0.0
 
 				extraFactor = 1
 				if isLeTorpBreenDrain:
@@ -490,10 +497,9 @@ try:
 
 				finalChance = effectiveness * extraFactor * energyCommited * leRicochetChance * turnSpeedEffectiveness * linearSpeedEffectiveness * damageEffectivenness
 
-				print "finalChance", finalChance, " = effectiveness", effectiveness, " * extraFactor", extraFactor, " * energyCommited", energyCommited, " * leRicochetChance", leRicochetChance, " * turnSpeedEffectiveness", turnSpeedEffectiveness, " * linearSpeedEffectiveness", linearSpeedEffectiveness, " * damageEffectivenness", damageEffectivenness 
+				#print "finalChance", finalChance, " = effectiveness", effectiveness, " * extraFactor", extraFactor, " * energyCommited", energyCommited, " * leRicochetChance", leRicochetChance, " * turnSpeedEffectiveness", turnSpeedEffectiveness, " * linearSpeedEffectiveness", linearSpeedEffectiveness, " * damageEffectivenness", damageEffectivenness 
 				if preferredWeapon == "Tractor" or preferredWeapon == "Phaser" or App.g_kSystemWrapper.GetRandomNumber(100) <= 100 * finalChance:
-					# Time to kill the torpedo TO-DO
-					print "This torp must be destroyed"
+					#print "This torp must be destroyed"
 					if torpsFiredDown >= maxTorpsPerTurn:
 						torpsFiredDown = 0
 						return
@@ -502,7 +508,7 @@ try:
 					pTorpNameStripped = string.split(str(pTorp), '<')[-1]
 					pTorpNameStripped2 = string.split(pTorpNameStripped, '>')[0]
 					sThisFirePointName = FirePointName + " " + pShip.GetName() + " " + pTorpNameStripped2 #str(firepointCount)
-					print "sThisFirePointName is ", sThisFirePointName
+					#print "sThisFirePointName is ", sThisFirePointName
 					firepointCount = firepointCount + 1
 
 					originalSingle = "Unused"
@@ -550,7 +556,7 @@ try:
 							#vSubsystemOffset.SetXYZ(0, 0, 0)
 
 							#pWeaponSystem.StartFiring(pFirePoint, vSubsystemOffset)
-							print "Phaser Attack"
+							#print "Phaser Attack"
 							if donotneedtospamattack == 0:
 								torpsFiredDown = torpsFiredDown + 1
 							pSeq = App.TGSequence_Create()
@@ -560,8 +566,15 @@ try:
 
 							vSubsystemOffset = App.TGPoint3()
 							vSubsystemOffset.SetXYZ(0, 0, 0)
-
-							pWeaponSystem.StartFiring(pFirePoint, vSubsystemOffset)
+							if len(subSys) > 0:
+								pWeaponSystem.StartFiring(pFirePoint, vSubsystemOffset)
+								# Sorry, for these we would need to edit the groups on the hardpoint itself
+								#for pChild in subSys:
+									#pChild.StartFiring(pFirePoint, vSubsystemOffset) # test .FireDumb and .Fire
+									#pChild.SetFiring(pFirePoint, vSubsystemOffset)
+							else:
+								if nottooSpecificToSwitch > 0:
+									pWeaponSystem.StartFiring(pFirePoint, vSubsystemOffset)
 						else:
 							# normally we would do the same, but this time due to simplification we are only doing it for guaranteed torpedoes to destroy! So we really want the Torp to destroy our Firepoint.
 							kLocation = App.TGPoint3()
@@ -573,8 +586,15 @@ try:
 							if not preferredWeapon == "None":
 								vSubsystemOffset = App.TGPoint3()
 								vSubsystemOffset.SetXYZ(0, 0, 0)
-
-								pWeaponSystem.StartFiring(pFirePoint, vSubsystemOffset)
+								if len(subSys) > 0:
+									pWeaponSystem.StartFiring(pFirePoint, vSubsystemOffset)
+									# Sorry, for these we would need to edit the groups on the hardpoint itself
+									#for pChild in subSys:
+										#pChild.StartFiring(pFirePoint, vSubsystemOffset) # test .FireDumb and .Fire
+										#pChild.SetFiring(pFirePoint, vSubsystemOffset)
+								else:
+									if nottooSpecificToSwitch > 0:
+										pWeaponSystem.StartFiring(pFirePoint, vSubsystemOffset)
 
 							pSeq = App.TGSequence_Create()
 							pSeq.AppendAction(App.TGScriptAction_Create(__name__, "DeleteFirePoint", sThisFirePointName), 0.5)
@@ -632,7 +652,7 @@ try:
 	def WeaponaHit(pObject, pEvent):
 		debug(__name__ + ", WeaponaHit")
 		pShip = App.ShipClass_Cast(pEvent.GetDestination())
-                print "firepoint was hit, moving to block the torp"
+                #print "firepoint was hit, moving to block the torp"
 		if pShip:
 			global dictFirePointToTorp
 			if dictFirePointToTorp.has_key(pShip.GetName()):

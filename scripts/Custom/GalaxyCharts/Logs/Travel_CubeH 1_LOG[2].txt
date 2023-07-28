@@ -1,0 +1,41 @@
+#This is the dump of the LogCreator: <CubeH 1 Travel Logger[2] LogCreator_wTL6r2gE9J3q>
+#This log file was created on: 3:35:21.355 of 28/July/2023, Friday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>3:35:21.355 of 28/July/2023, Friday
+#>>>Initialized CubeH 1 Travel logger
+#>>>SELF = <CubeH 1(464641) Travel_fXm6w0yHqew5>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Ship is dead or dying
+#>>>Ship is dead or dying (at SetDestination)
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = Player
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Arrived Events:  added event <C TGEvent instance at _53cadc38_p_TGEvent>
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>3:35:22.384 of 28/July/2023, Friday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>3:35:22.861 of 28/July/2023, Friday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>3:35:24.624 of 28/July/2023, Friday
+#>>>Ship is dead or dying (at Chaser Update)
+## -------------------- ##
+####################
+#######>>>3:35:26.618 of 28/July/2023, Friday
+#>>>Ship is dead or dying (at Chaser Update)

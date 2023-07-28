@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Defiant-1 Travel Logger LogCreator_aDp7jQIfnNz2>
-#This log file was created on: 0:1:41.060 of 26/July/2023, Wednesday
+#This is the dump of the LogCreator: <Defiant-1 Travel Logger LogCreator_xZdBMDpP8lJF>
+#This log file was created on: 22:13:43.544 of 27/July/2023, Thursday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>0:1:41.060 of 26/July/2023, Wednesday
+#######>>>22:13:43.544 of 27/July/2023, Thursday
 #>>>Initialized Defiant-1 Travel logger
-#>>>SELF = <Defiant-1(2454502) Travel_6f3ww357I17U>
+#>>>SELF = <Defiant-1(75627) Travel_yrrSO7H4k2xy>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -24,24 +24,121 @@ Updating Travelling Procedures...
 #>>>Updated Target Ship = Player
 ## -------------------- ##
 ####################
-#######>>>0:1:50.327 of 26/July/2023, Wednesday
+#######>>>22:13:51.935 of 27/July/2023, Thursday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:13:52.551 of 27/July/2023, Thursday
 #>>> -Cancelling, too close to target to warp intercept...
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>0:1:51.043 of 26/July/2023, Wednesday
+#######>>>22:13:52.871 of 27/July/2023, Thursday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:13:53.552 of 27/July/2023, Thursday
 #>>> -Cancelling, too close to target to warp intercept...
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>0:1:52.078 of 26/July/2023, Wednesday
+#######>>>22:13:54.036 of 27/July/2023, Thursday
 #>>> -Cancelling, too close to target to warp intercept...
 ## -------------------- ##
 ####################
-#######>>>0:1:52.843 of 26/July/2023, Wednesday
+#######>>>22:13:54.536 of 27/July/2023, Thursday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:13:55.251 of 27/July/2023, Thursday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:13:55.556 of 27/July/2023, Thursday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:13:55.751 of 27/July/2023, Thursday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:13:56.535 of 27/July/2023, Thursday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:13:56.785 of 27/July/2023, Thursday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:13:57.290 of 27/July/2023, Thursday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:13:57.535 of 27/July/2023, Thursday
 #>>> -Cancelling, too close to target to warp intercept...
 #>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:13:57.801 of 27/July/2023, Thursday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:13:59.023 of 27/July/2023, Thursday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:13:59.268 of 27/July/2023, Thursday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:13:59.769 of 27/July/2023, Thursday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:14:0.055 of 27/July/2023, Thursday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:14:0.305 of 27/July/2023, Thursday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:14:0.620 of 27/July/2023, Thursday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:14:2.130 of 27/July/2023, Thursday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:14:2.853 of 27/July/2023, Thursday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:14:3.285 of 27/July/2023, Thursday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:14:3.810 of 27/July/2023, Thursday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:14:4.147 of 27/July/2023, Thursday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:14:4.620 of 27/July/2023, Thursday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:15:48.933 of 27/July/2023, Thursday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
 ########################################
-# 0:4:25.476 of 26/July/2023, Wednesday
+# 22:16:46.849 of 27/July/2023, Thursday
 #Ending of log dump - User is quiting the game
 ########################################

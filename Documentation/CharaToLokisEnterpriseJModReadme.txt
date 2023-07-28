@@ -1,4 +1,27 @@
 == Changelog ==
+1.0 - Official Mod Release
+0.9 - Small refinement of the Simulated Point Defence script.
+0.8 - Model and script fixes and balancing:
+ * Blinker effects added via diffusion, we are still investigating what makes the Animations via NifSkope crash using CGSovereign model as a base, something related with TriShape and re-ordering indexes, albeit that doesn't seem to be the cause?
+ * Tweaks to bussard_glow.tga to make it redder and more glowy.
+ * Tweaks to deflector_glow to make it a bit more lavender.
+ * Tweaks to forehull_glow to be more regular.
+ * Added fix for AblativeArmour eroding itself with time due to not repairing at all.
+ * Nerfed shields even further.
+ * Buffed Gravitic Lance again.
+ * Adjusted Siphoon effect to properly adjust to distance.
+ * Added Playerside PointDefense with the Enterprise J included, RepairSystems and Redistribute shields.
+0.7 - More balancing
+ * Reduced adv armour battery strength.
+ * Placed shuttle 2D position on its correct place.
+ * Nerfed impulse speed and rotation speed and acceleration again.
+ * Nerfed a bit Multivectral and Regenerative shielding chances and regeneration once again, as well as reflux weapon defense drain.
+ * Removed Quad torpedo fire from this ship.
+ - Still awaiting for finding Nifskope 0.9.8 to add nif-side blinkers. Experiments with tweaking nifskope 1.0.2 manage to create a decent animation and do not crash the game directly, but would still cause the game to take forever to load.
+ - Asking for feedback regarding all of the above, including if the project should have nanoFX beta blinkers again or forego any blinkers.
+0.6.1 - Code cleanup and extra balancing
+ * Removed the misaligned shift-space on the hardpoint, found by THE SCI-FI KING, they were not causing any problems but they may make an interpreter mad.
+ * Reduced max angular acceleration and speed once more 
 0.6 - Balancing:
  * Nerfed shield strength
  * Nerfed Adv Energy Armour strength
@@ -16,8 +39,10 @@
 
 == What does this mod do ==
 This mod includes an improved Enterprise J model and icon, closer to the canon deal, plus a reinforced Hardpoint and its additional technologies, including a gravitic lance - with the exception of Slipstream.
+It also includes some technology fies to Power Drain Beam and Tractor Inversion so they can actually draw power, and a fix to AblativeArmour.py by the Foundation Technologies Team so the armour can repair like a normal subsystem; by Alex SL Gato.
+If you want to fuse those monkey patches with the original file, feel free to do so, I only do the monkey patch to avoid versioning problems.
 
-Additionally, the Milkshape 3D file for this model is located under a .zip in data/Models/Ships/EnterpriseJ/ if you want to change it yourself.
+Additionally, the Milkshape 3D file for this model, as well as a diffused version with duller blinkers are located under two .zip in data/Models/Ships/EnterpriseJ/ if you want to change it yourself.
 
 == Dependancies ==
 All of these must be installed before installing this mod, in this order:
@@ -32,23 +57,31 @@ All of these must be installed before installing this mod, in this order:
 * Everyone involved in Foundation - without you this would have been a real pain to do (please read the separate Foundation.txt license) - Banbury, Dasher42, DigitalFriend, MLeo, Nanobyte and Sleight42, among others.
 * Everyone involved in KM - specifically those involved in the creation of armour and Shields.py (FoundationTechnologies) the AdvArmorTech.py, FiveSecsGodPhaser.py, TractorBeams.py - Apollo from ATP Technologies as well.
 * Dasher42 for reminding me of licensing.
-* USS Sovereign for some DS9FX advice regarding timers - a LOT of tips for Alex SL Gato's DampeningAOEDefensiveField.py 
+* USS Sovereign for some DS9FX advice regarding timers - a LOT of tips for Alex SL Gato's DampeningAOEDefensiveField.py
+* USS Sovereign and Elijah both for teaching me and helping me with the use of the tools.
+* Defiant for the original PointDefence.py, which got altered later somewhere.
 * LJ for inspiration to see friendly, enemy and neutral ships
 * fekleyrtarg for telling me that decimation exists in Blender... albeit I ended up using FreeCad decimation instead lol.
 * That Guy... Brian for telling me to install Nifskope, it has proven to be very useful to me.
 * Tools used: Blender for importing the original model to Milkshape, Milkshape 3D and FreeCAD for extensive modifications and adjustments so it can run on STBC and it's the real Enterprise J and not some hybrid, Nifskope to validate the textures.
 ** Original Enterprise J Repaired file by chichirod on Thingiverse: https://www.thingiverse.com/thing:2792212 licensed under cc-sa (there is an extra readme on Documentation for this one, very short, CharaToLokisEnterpriseJModOriginalJModelSTLusedLICENSE.txt).
 ** WileyCoyote for some of the textures (specifically those regarding his Enterprise J mod https://www.gamefront.com/games/bridge-commander/file/enterprise-j-1) - their Readme has been included as well - EnterpriseJ README.txt
+** Elijah for allowing a diffusing trick to allow blinkers to partially work without the proper nifskope (0.9.8)
 * Grey da Derg#2305 for the gravitic lance sounds.
+* 𝕟𝕒𝕣𝕣𝕠𝕨𝕔𝕨𝕪𝕗𝕖 aka Hexagonal_Nexul for the transphasic torpedo sounds and .tga; as well as for the InfinityModulator_a and InfinityModulator_b phaser sounds (which are according to Haxagonal_Nexul a strong remix and mesh of Trek Sounds').
 * Grey da Derg#2305, Grim455#4905 aka THE SCI-FI KING, HexagonalNexul and MSR1701 for helping with noticing bugs and their cause, and for being inquisitive and finding out possible ways to tweak the hardpoints and techs and models.
-* Alex SL Gato (aka CharaToLoki) for any new code or model implemented or modified, plus the coiledTwistBeam1.tga texture, the icon.
+* Alex SL Gato (aka CharaToLoki) for any new code or model implemented or modified (including all the monkey patches), plus the coiledTwistBeam1.tga texture and the icon.
 
 Fulfilling both the SDK and LGPL licenses:
 THIS MOD IS NOT SUPPORTED BY ACTIVISION
 
 This mod falls under the GNU LESSER GENERAL PUBLIC LICENSE Version 3, 29 June 2007, both from any derivative or original work done to the mod. Everyone is permitted to copy and distribute verbatim copies of this mod. As per the LPGL license, everything in this mod is open for everybody to use, read and modify. Just do not forget to credit everyone involved and follow the LGPL license so derivatives of this code remain LGPL.
 
-Also for those 
+PointDefence.py (apparently under BSD license so despite the things I make have NO merchantibility and this mod MUST NOT be sold, only freely given and shared, I need to copy this line down here): 
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
 == Bugs ==
 * Enterprise J damage is a bit wonky, nothing that causes the model to crash or performance issues or anything but aesthethically the model itself may look like it was peeled off if it takes too much damage.
+* TO-DO FIX POINT DEFENCE WILL CAUSE THE PLAYER SHIP TO DEFEND IF THE ORIGINAL SHIP LEFT
+* TO-DO FIX IF A SHIP DIES SOMETIMES THE TORPEDO DEFENCE STOPS WORKING
 * No other bugs noticed, but if you notice them, please feel free to share and report them.

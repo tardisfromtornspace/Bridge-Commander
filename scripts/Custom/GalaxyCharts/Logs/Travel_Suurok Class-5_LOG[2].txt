@@ -1,0 +1,35 @@
+#This is the dump of the LogCreator: <Suurok Class-5 Travel Logger[2] LogCreator_KwSJ60tb79YP>
+#This log file was created on: 3:28:15.591 of 28/July/2023, Friday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>3:28:15.591 of 28/July/2023, Friday
+#>>>Initialized Suurok Class-5 Travel logger
+#>>>SELF = <Suurok Class-5(431038) Travel_3iq6695g0COZ>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = MvamFusionCube-1
+## -------------------- ##
+####################
+#######>>>3:28:41.974 of 28/July/2023, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>>Updated Target Ship = CubeB 1
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>3:29:27.892 of 28/July/2023, Friday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

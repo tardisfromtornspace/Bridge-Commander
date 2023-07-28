@@ -20,6 +20,7 @@ Foundation.ShipDef.PaxMagellanic.dTechs = {
 	'Breen Drainer Immune': 1,
 	'Multivectral Shields': 10,
         "Reflector Shields": 50,
+	'Simulated Point Defence' : { "Distance": 120.0, "InnerDistance": 17.0, "Effectiveness": 0.82, "LimitTurn": 5.0, "LimitSpeed": 301, "Period": 0.2, "MaxNumberTorps": 13, "Torpedo": {"Priority": 1}},
 	'Fed Ablative Armor': { "Plates": ["Armour"]
 }}
 Foundation.ShipDef.PaxMagellanic.bPlanetKiller = 1

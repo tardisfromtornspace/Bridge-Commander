@@ -20,6 +20,7 @@ Foundation.ShipDef.HalcyonPromise.dTechs = {
 	'Breen Drainer Immune': 1,
 	'Multivectral Shields': 13,
         "Reflector Shields": 55,
+	'Simulated Point Defence' : { "Distance": 120.0, "InnerDistance": 15.0, "Effectiveness": 0.8, "LimitTurn": 5.0, "LimitSpeed": 300, "Period": 0.3, "MaxNumberTorps": 14, "Torpedo": {"Priority": 1}},
 	'Fed Ablative Armor': { "Plates": ["Armour"]
 }}
 Foundation.ShipDef.HalcyonPromise.bPlanetKiller = 1

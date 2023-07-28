@@ -1,0 +1,36 @@
+#This is the dump of the LogCreator: <Defiant-11 Travel Logger[2] LogCreator_9W609q3r7N9c>
+#This log file was created on: 22:15:35.913 of 27/July/2023, Thursday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>22:15:35.913 of 27/July/2023, Thursday
+#>>>Initialized Defiant-11 Travel logger
+#>>>SELF = <Defiant-11(80597) Travel_IFfY325g3hue>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Ship is dead or dying
+#>>>Ship is dead or dying (at SetDestination)
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Ship is dead or dying (at SetDestination)
+#>>>Set Exit Placement Name as None
+#>>>Enable Towing: 0
+#>>>Travelling procedures initiated...
+#>>> -Ship is dead or dying
+## -------------------- ##
+####################
+#######>>>22:15:37.611 of 27/July/2023, Thursday
+#>>>Ship is dead or dying (at SetDestination)
+#>>>Set Exit Placement Name as None
+#>>>Travelling procedures initiated...
+#>>> -Ship is dead or dying
+########################################
+# 22:16:46.849 of 27/July/2023, Thursday
+#Ending of log dump - User is quiting the game
+########################################

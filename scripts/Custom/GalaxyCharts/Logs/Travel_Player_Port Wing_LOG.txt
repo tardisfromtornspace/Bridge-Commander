@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Player_Port Wing Travel Logger LogCreator_ZsYwGE7Qc652>
-#This log file was created on: 21:58:44.661 of 26/July/2023, Wednesday
+#This is the dump of the LogCreator: <Player_Port Wing Travel Logger LogCreator_y0amVjn5u1Th>
+#This log file was created on: 23:15:15.541 of 27/July/2023, Thursday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>21:58:44.661 of 26/July/2023, Wednesday
+#######>>>23:15:15.541 of 27/July/2023, Thursday
 #>>>Initialized Player_Port Wing Travel logger
-#>>>SELF = <Player_Port Wing(266436) Travel_pqt8a5bqU6fn>
+#>>>SELF = <Player_Port Wing(72281) Travel_fM49q395Q54n>
 #>>>Initial Travel Type: None
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -21,3 +21,7 @@ Updating Travelling Procedures...
 #>>>Chaser base class initialization complete.
 #>>>Target Ship = NONE
 #>>>Chaser pre-emptive Refresher Initialization
+########################################
+# 23:17:29.756 of 27/July/2023, Thursday
+#Ending of log dump - User is quiting the game
+########################################

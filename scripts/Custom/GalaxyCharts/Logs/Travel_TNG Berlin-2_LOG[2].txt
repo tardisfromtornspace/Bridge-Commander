@@ -1,0 +1,59 @@
+#This is the dump of the LogCreator: <TNG Berlin-2 Travel Logger[2] LogCreator_22s4NWzzlQLI>
+#This log file was created on: 20:10:25.525 of 27/July/2023, Thursday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>20:10:25.525 of 27/July/2023, Thursday
+#>>>Initialized TNG Berlin-2 Travel logger
+#>>>SELF = <TNG Berlin-2(93539) Travel_fMOAz3uH7rc8>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Ship is dead or dying
+#>>>Ship is dead or dying (at SetDestination)
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Ship is dead or dying (at SetDestination)
+#>>>Set Exit Placement Name as None
+#>>>Enable Towing: 0
+#>>>Travelling procedures initiated...
+#>>> -Ship is dead or dying
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>20:11:10.458 of 27/July/2023, Thursday
+#>>>Initialized TNG Berlin-2 Travel logger
+#>>>SELF = <TNG Berlin-2(172264) Travel_A50AXpaLaxK6>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = USS Enterprise J-1
+## -------------------- ##
+####################
+#######>>>20:11:40.543 of 27/July/2023, Thursday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 20:15:44.570 of 27/July/2023, Thursday
+#Ending of log dump - User is quiting the game
+########################################
+########################################
+# 20:15:44.570 of 27/July/2023, Thursday
+#Ending of log dump - User is quiting the game
+########################################

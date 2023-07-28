@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Player_Starboard Wing Travel Logger[2] LogCreator_Hk81M2Ea5G8z>
-#This log file was created on: 22:0:9.193 of 26/July/2023, Wednesday
+#This is the dump of the LogCreator: <Player_Starboard Wing Travel Logger[2] LogCreator_PW2ZiHaAauV1>
+#This log file was created on: 21:43:22.522 of 27/July/2023, Thursday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>22:0:9.193 of 26/July/2023, Wednesday
+#######>>>21:43:22.522 of 27/July/2023, Thursday
 #>>>Initialized Player_Starboard Wing Travel logger
-#>>>SELF = <Player_Starboard Wing(492320) Travel_L67Emc1AAb4g>
+#>>>SELF = <Player_Starboard Wing(245026) Travel_54E7QLgc9h8l>
 #>>>Initial Travel Type: None
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -21,3 +21,7 @@ Updating Travelling Procedures...
 #>>>Chaser base class initialization complete.
 #>>>Target Ship = NONE
 #>>>Chaser pre-emptive Refresher Initialization
+########################################
+# 21:45:4.202 of 27/July/2023, Thursday
+#Ending of log dump - User is quiting the game
+########################################

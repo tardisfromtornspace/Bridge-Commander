@@ -1,0 +1,56 @@
+#This is the dump of the LogCreator: <Total PointDefence Firepoint Player C Torpedo instance at _3c09e7e0_p_Torpedo Travel Logger[2] LogCreator_m2XCAdp5aMJ3>
+#This log file was created on: 22:14:4.620 of 27/July/2023, Thursday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>22:14:4.620 of 27/July/2023, Thursday
+#>>>Initialized Total PointDefence Firepoint Player C Torpedo instance at _3c09e7e0_p_Torpedo Travel logger
+#>>>SELF = <Total PointDefence Firepoint Player C Torpedo instance at _3c09e7e0_p_Torpedo(110949) Travel_B5KEEzL9fP13>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>22:14:6.114 of 27/July/2023, Thursday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>22:14:11.904 of 27/July/2023, Thursday
+#>>>Initialized Total PointDefence Firepoint Player C Torpedo instance at _3c09e7e0_p_Torpedo Travel logger
+#>>>SELF = <Total PointDefence Firepoint Player C Torpedo instance at _3c09e7e0_p_Torpedo(127758) Travel_z4i6UaN5DYlr>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+########################################
+# 22:16:46.849 of 27/July/2023, Thursday
+#Ending of log dump - User is quiting the game
+########################################
+########################################
+# 22:16:46.849 of 27/July/2023, Thursday
+#Ending of log dump - User is quiting the game
+########################################
