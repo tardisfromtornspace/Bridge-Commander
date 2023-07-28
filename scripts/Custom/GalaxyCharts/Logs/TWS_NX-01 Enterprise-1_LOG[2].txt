@@ -1,21 +1,22 @@
-#This is the dump of the LogCreator: <TravelerWarpSequence of Ship NX-01 Enterprise-1[2] LogCreator_3b227e3Zv2Ej>
-#This log file was created on: 15:8:9.649 of 28/July/2023, Friday
+#This is the dump of the LogCreator: <TravelerWarpSequence of Ship NX-01 Enterprise-1[2] LogCreator_0HFnEPFv3QqT>
+#This log file was created on: 15:43:53.129 of 28/July/2023, Friday
 ########################################
 ## -------------------- ##
 ####################
-#######>>>15:8:9.649 of 28/July/2023, Friday
+#######>>>15:43:53.129 of 28/July/2023, Friday
 #>>>Initialized TravelerWarpSequence of ship NX-01 Enterprise-1 logger
-#>>>SELF = <C WarpSequence instance at _iWj9nNXlbcQU>
+#>>>SELF = <C WarpSequence instance at _KHyZf4q2c8L1>
 ## -------------------- ##
 ####################
-#######>>>15:9:55.815 of 28/July/2023, Friday
+#######>>>15:53:44.294 of 28/July/2023, Friday
+#>>>Play called
+#>>>Setting sequence up...
+#>>>GetDestination called
+#>>>Got species of ship from NanoFXv2
+#>>>Using Nacelle Flash Sequence from NanoFXv2
+#>>>Sequence was set up.
+## -------------------- ##
+####################
+#######>>>15:54:13.325 of 28/July/2023, Friday
 #>>>Initialized TravelerWarpSequence of ship NX-01 Enterprise-1 logger
-#>>>SELF = <C WarpSequence instance at _N5nO44Pc0av3>
-########################################
-# 15:10:40.419 of 28/July/2023, Friday
-#Ending of log dump - User is quiting the game
-########################################
-########################################
-# 15:10:40.419 of 28/July/2023, Friday
-#Ending of log dump - User is quiting the game
-########################################
+#>>>SELF = <C WarpSequence instance at _bcjmfZ90c5AR>

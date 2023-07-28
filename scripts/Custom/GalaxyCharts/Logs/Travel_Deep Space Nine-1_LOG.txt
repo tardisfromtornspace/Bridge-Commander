@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Deep Space Nine-1 Travel Logger LogCreator_olgOSo47AJ25>
-#This log file was created on: 16:39:58.206 of 24/July/2023, Monday
+#This is the dump of the LogCreator: <Deep Space Nine-1 Travel Logger LogCreator_xCr0Brs872Cy>
+#This log file was created on: 16:58:52.231 of 28/July/2023, Friday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>16:39:58.206 of 24/July/2023, Monday
+#######>>>16:58:52.231 of 28/July/2023, Friday
 #>>>Initialized Deep Space Nine-1 Travel logger
-#>>>SELF = <Deep Space Nine-1(1375341) Travel_SZ4YubB1X2t8>
+#>>>SELF = <Deep Space Nine-1(59197) Travel_qS4pZR97kCw8>
 #>>>Initial Travel Type: None
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -21,8 +21,3 @@ Updating Travelling Procedures...
 #>>>Chaser base class initialization complete.
 #>>>Target Ship = NONE
 #>>>Chaser pre-emptive Refresher Initialization
-## -------------------- ##
-####################
-#######>>>16:41:28.239 of 24/July/2023, Monday
-#>>>Stopping Refresh Handler
-#>>>Deleting...

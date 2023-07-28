@@ -1,0 +1,56 @@
+#This is the dump of the LogCreator: <Thunderbolt-13 Travel Logger LogCreator_eurMv3mgk5M5>
+#This log file was created on: 16:5:22.115 of 28/July/2023, Friday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>16:5:22.115 of 28/July/2023, Friday
+#>>>Initialized Thunderbolt-13 Travel logger
+#>>>SELF = <Thunderbolt-13(1088356) Travel_92Zpv3n49O8O>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Drakh Fighter-1
+## -------------------- ##
+####################
+#######>>>16:5:35.483 of 28/July/2023, Friday
+#>>>Updated Target Ship = Drakh Cruiser-9
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>16:5:35.917 of 28/July/2023, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>16:5:36.550 of 28/July/2023, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>16:5:37.266 of 28/July/2023, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>16:5:38.116 of 28/July/2023, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>16:5:38.303 of 28/July/2023, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>16:5:41.765 of 28/July/2023, Friday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

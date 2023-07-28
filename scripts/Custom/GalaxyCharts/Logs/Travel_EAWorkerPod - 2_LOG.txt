@@ -1,0 +1,77 @@
+#This is the dump of the LogCreator: <EAWorkerPod - 2 Travel Logger LogCreator_h56S56KfaUDa>
+#This log file was created on: 16:3:28.550 of 28/July/2023, Friday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>16:3:28.550 of 28/July/2023, Friday
+#>>>Initialized EAWorkerPod - 2 Travel logger
+#>>>SELF = <EAWorkerPod - 2(993659) Travel_CO80829aiN55>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>16:3:28.970 of 28/July/2023, Friday
+#>>>Updated Target Ship = Drakh Fighter-1
+#>>>Can Chase Target = 0
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>16:3:29.334 of 28/July/2023, Friday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>16:3:29.850 of 28/July/2023, Friday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>16:3:30.553 of 28/July/2023, Friday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>16:3:30.919 of 28/July/2023, Friday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>16:3:31.333 of 28/July/2023, Friday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>16:3:32.033 of 28/July/2023, Friday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>16:3:32.403 of 28/July/2023, Friday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>16:3:33.050 of 28/July/2023, Friday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>16:3:33.252 of 28/July/2023, Friday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>16:3:33.617 of 28/July/2023, Friday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>16:3:33.833 of 28/July/2023, Friday
+#>>>Updated Target Ship = Drakh Cruiser-8
+#>>> -Cancelling, too close to target to warp intercept...
+#>>>Ship can't chase, directing to Travel update...
+#>>>Stopping Refresh Handler
+#>>>Deleting...

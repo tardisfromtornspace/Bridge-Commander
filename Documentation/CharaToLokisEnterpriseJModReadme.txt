@@ -1,5 +1,6 @@
 == Changelog ==
 1.0 - Official Mod Release
+ * Fix on Gravitic Lance
 0.9 - Small refinement of the Simulated Point Defence script.
 0.8 - Model and script fixes and balancing:
  * Blinker effects added via diffusion, we are still investigating what makes the Animations via NifSkope crash using CGSovereign model as a base, something related with TriShape and re-ordering indexes, albeit that doesn't seem to be the cause?

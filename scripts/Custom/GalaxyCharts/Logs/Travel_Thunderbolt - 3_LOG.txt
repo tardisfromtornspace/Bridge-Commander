@@ -1,0 +1,36 @@
+#This is the dump of the LogCreator: <Thunderbolt - 3 Travel Logger LogCreator_e9pENyU912cj>
+#This log file was created on: 16:3:33.050 of 28/July/2023, Friday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>16:3:33.050 of 28/July/2023, Friday
+#>>>Initialized Thunderbolt - 3 Travel logger
+#>>>SELF = <Thunderbolt - 3(996271) Travel_kwz100hkSMeZ>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>16:3:33.617 of 28/July/2023, Friday
+#>>>Updated Target Ship = Drakh Fighter-1
+## -------------------- ##
+####################
+#######>>>16:3:44.917 of 28/July/2023, Friday
+#>>>Updated Target Ship = Drakh Cruiser-7
+## -------------------- ##
+####################
+#######>>>16:4:1.984 of 28/July/2023, Friday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

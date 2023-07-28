@@ -1,7 +1,7 @@
 #################################################################################################################
 #         GraviticLance by Alex SL Gato
-#         Version 1.0
-#         20th July 2023
+#         Version 1.1
+#         28th July 2023
 #         Based on FiveSecsGodPhaser by USS Frontier, scripts/ftb/Tech/TachyonProjectile by the FoundationTechnologies team, and scripts/ftb/Tech/FedAblativeArmour by the FoundationTechnologies team
 #                          
 #################################################################################################################
@@ -296,7 +296,7 @@ class GraviticLance(FoundationTech.TechDef):
 
 		pShipModule =__import__(sScript)
 		pShields = pShip.GetShields()
-		if (hasattr(pShipModule, "IsTachyonImmune") and (pShipModule.IsTachyonImmune() == 1) and pShields) or sShipScript in lImmuneShips:
+		if sShipScript in lImmuneShips:
 			return
 
 		pShipInst = None
@@ -318,6 +318,7 @@ class GraviticLance(FoundationTech.TechDef):
 		iPower = pInstance.__dict__['GraviticLance']["RadDepletionStrength"]
 
 		pSeq = App.TGSequence_Create()
+		#print "depleting energy"
 
 		if not pInstance.__dict__['GraviticLance']["TimeEffect"] or pInstance.__dict__['GraviticLance']["TimeEffect"] <= 0.0:
 			pInstance.__dict__['GraviticLance']["TimeEffect"] = 5.0 # seconds

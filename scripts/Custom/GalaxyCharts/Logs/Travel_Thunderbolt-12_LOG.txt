@@ -1,0 +1,54 @@
+#This is the dump of the LogCreator: <Thunderbolt-12 Travel Logger LogCreator_877k9zipk35o>
+#This log file was created on: 16:5:22.115 of 28/July/2023, Friday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>16:5:22.115 of 28/July/2023, Friday
+#>>>Initialized Thunderbolt-12 Travel logger
+#>>>SELF = <Thunderbolt-12(1088122) Travel_d03Qcd14dxL6>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Drakh Fighter-1
+## -------------------- ##
+####################
+#######>>>16:5:34.865 of 28/July/2023, Friday
+#>>>Updated Target Ship = Drakh Cruiser-7
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>16:5:35.917 of 28/July/2023, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>16:5:36.550 of 28/July/2023, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>16:5:37.002 of 28/July/2023, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>16:5:37.266 of 28/July/2023, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>16:5:37.786 of 28/July/2023, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>16:5:49.058 of 28/July/2023, Friday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
