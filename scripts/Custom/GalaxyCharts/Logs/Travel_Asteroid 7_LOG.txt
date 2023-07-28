@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Asteroid 7 Travel Logger LogCreator_78p18lG1E21q>
-#This log file was created on: 3:21:52.046 of 28/July/2023, Friday
+#This is the dump of the LogCreator: <Asteroid 7 Travel Logger LogCreator_AUIE2e6mL2Em>
+#This log file was created on: 15:6:30.850 of 28/July/2023, Friday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>3:21:52.046 of 28/July/2023, Friday
+#######>>>15:6:30.850 of 28/July/2023, Friday
 #>>>Initialized Asteroid 7 Travel logger
-#>>>SELF = <Asteroid 7(5502) Travel_9A4XZGYnfQ8r>
+#>>>SELF = <Asteroid 7(5528) Travel_029pEf5T5q46>
 #>>>Initial Travel Type: None
 #>>>Updating Variables...
 #>>>Destination set as None
@@ -20,47 +20,7 @@ Updating Travelling Procedures...
 #>>>Chaser base class initialization complete.
 #>>>Target Ship = NONE
 #>>>Chaser pre-emptive Refresher Initialization
-## -------------------- ##
-####################
-#######>>>3:29:28.857 of 28/July/2023, Friday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>3:29:29.358 of 28/July/2023, Friday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>3:29:30.390 of 28/July/2023, Friday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>3:29:31.356 of 28/July/2023, Friday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>3:29:31.906 of 28/July/2023, Friday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>3:29:32.589 of 28/July/2023, Friday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>3:29:32.874 of 28/July/2023, Friday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>3:29:33.373 of 28/July/2023, Friday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>3:29:34.258 of 28/July/2023, Friday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>3:29:35.876 of 28/July/2023, Friday
-#>>>Ship is dead or dying (at Chaser Update)
-## -------------------- ##
-####################
-#######>>>3:29:36.409 of 28/July/2023, Friday
-#>>>Ship is dead or dying (at Chaser Update)
+########################################
+# 15:10:40.419 of 28/July/2023, Friday
+#Ending of log dump - User is quiting the game
+########################################

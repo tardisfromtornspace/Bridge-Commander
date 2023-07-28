@@ -1,12 +1,19 @@
 # THIS MOD IS NOT SUPPORTED BY ACTIVISION
 # HullPolarizer.py
-# Version 1.0
+# Version 1.1
 # By Alex SL Gato
-# Based on FedAblativeArmour.py and AblativeArmour.py made by the FoundationTechnologies team (specifically, but not only, MLeo)
+# Based on FedAblativeArmour.py and AblativeArmour.py made by the FoundationTechnologies team (specifically, but not only, MLeo) and scripts/Custom/DS9FX/DS9FXLifeSupport/HandleShields.py by USS Sovereign
 from bcdebug import debug
 import App
 import FoundationTech
 import Foundation
+
+MODINFO = {
+		"Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
+		"Version": "1.1",
+		"License": "LGPL",
+		"Description": "Read the small title above for more info"
+	}
 
 kEmptyColor = App.TGColorA()
 kEmptyColor.SetRGBA(App.g_kSubsystemFillColor.r,App.g_kSubsystemFillColor.g,App.g_kSubsystemFillColor.b,App.g_kSubsystemFillColor.a)
@@ -68,26 +75,45 @@ class PolarizedHullPlatingDef(FoundationTech.TechDef):
 		# get the armor covering the damage, could be done in above loop
 		pProtectingPlate = None
 		fHighestCondition = 0
-                bPlateAtRange = 0
+		bPlateAtRange = 0
 		for pPlate in lArmors:
 			vDifference = NiPoint3ToTGPoint3(pPlate.GetPosition())
 			vDifference.Subtract(kPoint)
 			
 			# if fRadius + pPlate.GetRadius() > vDifference.Length() and pPlate.GetConditionPercentage() > fHighestCondition:
-                        # Yeah I know this is oversimplified, but it has been made as if all the polarized platings can work from a range
+			# Yeah I know this is oversimplified, but it has been made as if all the polarized platings can work from a range
 			if pPlate.GetConditionPercentage() > fHighestCondition and not pPlate.IsDisabled():
 				pProtectingPlate = pPlate
 				fHighestCondition = pProtectingPlate.GetConditionPercentage()
-                                if fRadius + pPlate.GetRadius() > vDifference.Length():
-                                        bPlateAtRange = 1
-                                else:
-                                        bPlateAtRange = 0
+				if fRadius + pPlate.GetRadius() > vDifference.Length():
+					bPlateAtRange = 1
+				else:
+					bPlateAtRange = 0
 		
 		if not pProtectingPlate:
 			# no plate, but still record the current damage - we could need it later
+			pShipModule=__import__(pShip.GetScript())
+			try:
+				kShipStats = pShipModule.GetShipStats()
+				if kShipStats.has_key('DamageRadMod'):
+					pShip.SetVisibleDamageRadiusModifier(kShipStats['DamageRadMod'])
+				else:
+					pShip.SetVisibleDamageRadiusModifier(1.0)
+				if kShipStats.has_key('DamageStrMod'):
+					pShip.SetVisibleDamageStrengthModifier(kShipStats['DamageStrMod'])
+				else:
+					pShip.SetVisibleDamageStrengthModifier(1.0)
+			except:
+				pShip.SetVisibleDamageRadiusModifier(1.0)
+				pShip.SetVisibleDamageStrengthModifier(1.0)
+
 			for pSystem in lSystems:
 				dOldConditions[pSystem.GetName()] = pSystem.GetConditionPercentage()
 			return
+
+		pShip.SetVisibleDamageRadiusModifier(1 - 0.85 * pProtectingPlate.GetConditionPercentage())
+		pShip.SetVisibleDamageStrengthModifier(1 - 0.75 * pProtectingPlate.GetConditionPercentage())
+
 		# if this was not a hull hit, do nothing
 		if not pEvent.IsHullHit():
 			return
@@ -98,10 +124,10 @@ class PolarizedHullPlatingDef(FoundationTech.TechDef):
 		for pSystem in lSystems:
 			vDifference = NiPoint3ToTGPoint3(pSystem.GetPosition())
 			vDifference.Subtract(kPoint)
-                        # vDifference.Subtract(kProtectingPlatePos)
+			# vDifference.Subtract(kProtectingPlatePos)
 
 			# if pProtectingPlate.GetRadius() + pSystem.GetRadius() > vDifference.Length():
-                        if fRadius + pSystem.GetRadius() > vDifference.Length():
+			if fRadius + pSystem.GetRadius() > vDifference.Length():
 				lAffectedSystems.append(pSystem)
 		
 		# remove visible damage if our plate is still intact

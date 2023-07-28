@@ -1,4 +1,6 @@
 ==Changelog==
+1.0.7 -
+   * Upgraded the Hull Polarizer script to 1.1 - now it also protects from visible damage to an extent.
 1.0.6 -
  Fixes: now that I know how to make things right, I've added some of the Techs used on the proper file, to avoid overwriting defaults:
    * The Special "Hull Polarizer"/Special field defense tech which was used as a watered-down Minbari-Earth Alliance-Vorlon PolyCrystalline Armour for the Excalibur now has its proper own file at scripts/Custom/Techs
