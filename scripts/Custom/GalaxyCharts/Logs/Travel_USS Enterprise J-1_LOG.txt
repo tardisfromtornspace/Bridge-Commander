@@ -1,0 +1,27 @@
+#This is the dump of the LogCreator: <USS Enterprise J-1 Travel Logger LogCreator_tMOAQeSzs9Do>
+#This log file was created on: 13:33:9.695 of 29/July/2023, Saturday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>13:33:9.695 of 29/July/2023, Saturday
+#>>>Initialized USS Enterprise J-1 Travel logger
+#>>>SELF = <USS Enterprise J-1(1264098) Travel_F5X6vYR7H6i1>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+########################################
+# 13:37:31.058 of 29/July/2023, Saturday
+#Ending of log dump - User is quiting the game
+########################################

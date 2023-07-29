@@ -1,0 +1,51 @@
+#This is the dump of the LogCreator: <Total PointDefence Firepoint Player C Torpedo instance at _39441f90_p_Torpedo Travel Logger[2] LogCreator_H5THNQjSyj93>
+#This log file was created on: 13:26:16.668 of 29/July/2023, Saturday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>13:26:16.668 of 29/July/2023, Saturday
+#>>>Initialized Total PointDefence Firepoint Player C Torpedo instance at _39441f90_p_Torpedo Travel logger
+#>>>SELF = <Total PointDefence Firepoint Player C Torpedo instance at _39441f90_p_Torpedo(826791) Travel_lcSOB6JuekWX>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>13:26:22.453 of 29/July/2023, Saturday
+#>>>Initialized Total PointDefence Firepoint Player C Torpedo instance at _39441f90_p_Torpedo Travel logger
+#>>>SELF = <Total PointDefence Firepoint Player C Torpedo instance at _39441f90_p_Torpedo(831076) Travel_IWQK3zCsSsvd>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+########################################
+# 13:37:31.058 of 29/July/2023, Saturday
+#Ending of log dump - User is quiting the game
+########################################
+########################################
+# 13:37:31.058 of 29/July/2023, Saturday
+#Ending of log dump - User is quiting the game
+########################################

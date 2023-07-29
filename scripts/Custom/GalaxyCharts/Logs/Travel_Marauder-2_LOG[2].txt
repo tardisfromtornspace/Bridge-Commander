@@ -1,0 +1,72 @@
+#This is the dump of the LogCreator: <Marauder-2 Travel Logger[2] LogCreator_96x014voRWN3>
+#This log file was created on: 13:28:51.556 of 29/July/2023, Saturday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>13:28:51.556 of 29/July/2023, Saturday
+#>>>Initialized Marauder-2 Travel logger
+#>>>SELF = <Marauder-2(871368) Travel_2IL2J1sZ63K1>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Ship is dead or dying
+#>>>Ship is dead or dying (at SetDestination)
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Ship is dead or dying (at SetDestination)
+#>>>Set Exit Placement Name as None
+#>>>Enable Towing: 0
+#>>>Travelling procedures initiated...
+#>>> -Ship is dead or dying
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>13:32:39.645 of 29/July/2023, Saturday
+#>>>Initialized Marauder-2 Travel logger
+#>>>SELF = <Marauder-2(1216684) Travel_385oT7NL3v2t>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>13:32:47.746 of 29/July/2023, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>13:32:50.896 of 29/July/2023, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>13:32:52.391 of 29/July/2023, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+########################################
+# 13:37:31.058 of 29/July/2023, Saturday
+#Ending of log dump - User is quiting the game
+########################################
+########################################
+# 13:37:31.058 of 29/July/2023, Saturday
+#Ending of log dump - User is quiting the game
+########################################

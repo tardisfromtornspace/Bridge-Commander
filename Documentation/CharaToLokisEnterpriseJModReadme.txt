@@ -42,7 +42,7 @@
 
 == What does this mod do ==
 This mod includes an improved Enterprise J model and icon, closer to the canon deal, plus a reinforced Hardpoint and its additional technologies, including a gravitic lance - with the exception of Slipstream.
-It also includes some technology fies to Power Drain Beam and Tractor Inversion so they can actually draw power, and a fix to AblativeArmour.py by the Foundation Technologies Team so the armour can repair like a normal subsystem; by Alex SL Gato.
+It also includes some technology fixes to Power Drain Beam and Tractor Inversion so they can actually draw power, and a fix to AblativeArmour.py by the Foundation Technologies Team so the armour can repair like a normal subsystem; by Alex SL Gato.
 If you want to fuse those monkey patches with the original file, feel free to do so, I only do the monkey patch to avoid versioning problems.
 
 Additionally, the Milkshape 3D file for this model, as well as a diffused version with duller blinkers are located under two .zip in data/Models/Ships/EnterpriseJ/ if you want to change it yourself.
