@@ -1,13 +1,13 @@
-#This is the dump of the LogCreator: <Gravity Manager LogCreator_LX2aYaN39ZTa>
-#This log file was created on: 19:5:23.0 of 28/July/2023, Friday
+#This is the dump of the LogCreator: <Gravity Manager LogCreator_B94MWF5QT7js>
+#This log file was created on: 3:33:25.0 of 29/July/2023, Saturday
 ########################################
 ## -------------------- ##
 ####################
-#######>>>19:5:23.0 of 28/July/2023, Friday
-#>>>Initialized GravityManager_x338fKeBCKQl logger
+#######>>>3:33:25.0 of 29/July/2023, Saturday
+#>>>Initialized GravityManager_1e1hY83g25T1 logger
 ## -------------------- ##
 ####################
-#######>>>19:5:31.954 of 28/July/2023, Friday
+#######>>>3:33:41.256 of 29/July/2023, Saturday
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
@@ -17,1329 +17,446 @@
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_479eRv4QdTp3>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_RgM8m4NC3F58>]
 #>>>Planets/Suns List: ['Belaruz 4']
 #>>>Refreshed Ship List: ['Player']
-#>>>Updated radius for grav well <Belaruz 4 GravityWell_479eRv4QdTp3>, radius is now 1612.9888916
+#>>>Updated radius for grav well <Belaruz 4 GravityWell_RgM8m4NC3F58>, radius is now 1643.13110352
 ## -------------------- ##
 ####################
-#######>>>19:6:8.815 of 28/July/2023, Friday
+#######>>>3:34:13.418 of 29/July/2023, Saturday
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_R2uK3NOqhzvy>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_7EpyMNTt49xQ>]
 #>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-## -------------------- ##
-####################
-#######>>>19:6:15.386 of 28/July/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-## -------------------- ##
-####################
-#######>>>19:6:17.286 of 28/July/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-## -------------------- ##
-####################
-#######>>>19:6:19.035 of 28/July/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-## -------------------- ##
-####################
-#######>>>19:6:21.052 of 28/July/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-## -------------------- ##
-####################
-#######>>>19:6:23.257 of 28/July/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-## -------------------- ##
-####################
-#######>>>19:6:25.286 of 28/July/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-## -------------------- ##
-####################
-#######>>>19:6:27.052 of 28/July/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-## -------------------- ##
-####################
-#######>>>19:6:29.052 of 28/July/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-## -------------------- ##
-####################
-#######>>>19:6:31.236 of 28/July/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-## -------------------- ##
-####################
-#######>>>19:6:33.257 of 28/July/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-## -------------------- ##
-####################
-#######>>>19:6:35.002 of 28/July/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-## -------------------- ##
-####################
-#######>>>19:6:37.285 of 28/July/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-## -------------------- ##
-####################
-#######>>>19:6:39.268 of 28/July/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-## -------------------- ##
-####################
-#######>>>19:6:41.269 of 28/July/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-## -------------------- ##
-####################
-#######>>>19:6:43.002 of 28/July/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-## -------------------- ##
-####################
-#######>>>19:6:45.024 of 28/July/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-## -------------------- ##
-####################
-#######>>>19:6:47.306 of 28/July/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-## -------------------- ##
-####################
-#######>>>19:6:49.304 of 28/July/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-## -------------------- ##
-####################
-#######>>>19:6:51.555 of 28/July/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-## -------------------- ##
-####################
-#######>>>19:6:53.769 of 28/July/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-## -------------------- ##
-####################
-#######>>>19:6:55.752 of 28/July/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-## -------------------- ##
-####################
-#######>>>19:6:58.493 of 28/July/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-## -------------------- ##
-####################
-#######>>>19:7:0.269 of 28/July/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-## -------------------- ##
-####################
-#######>>>19:7:2.827 of 28/July/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-## -------------------- ##
-####################
-#######>>>19:7:5.038 of 28/July/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-## -------------------- ##
-####################
-#######>>>19:7:7.285 of 28/July/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-## -------------------- ##
-####################
-#######>>>19:7:9.555 of 28/July/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-## -------------------- ##
-####################
-#######>>>19:7:11.371 of 28/July/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-## -------------------- ##
-####################
-#######>>>19:7:14.106 of 28/July/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-## -------------------- ##
-####################
-#######>>>19:7:16.069 of 28/July/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-## -------------------- ##
-####################
-#######>>>19:7:18.304 of 28/July/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-## -------------------- ##
-####################
-#######>>>19:7:20.328 of 28/July/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-## -------------------- ##
-####################
-#######>>>19:7:22.203 of 28/July/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-## -------------------- ##
-####################
-#######>>>19:7:24.418 of 28/July/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-## -------------------- ##
-####################
-#######>>>19:7:26.807 of 28/July/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-## -------------------- ##
-####################
-#######>>>19:7:28.585 of 28/July/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-## -------------------- ##
-####################
-#######>>>19:7:31.308 of 28/July/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-## -------------------- ##
-####################
-#######>>>19:7:34.151 of 28/July/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-## -------------------- ##
-####################
-#######>>>19:7:36.267 of 28/July/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-## -------------------- ##
-####################
-#######>>>19:7:38.406 of 28/July/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-## -------------------- ##
-####################
-#######>>>19:7:40.273 of 28/July/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-## -------------------- ##
-####################
-#######>>>19:7:42.298 of 28/July/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-## -------------------- ##
-####################
-#######>>>19:7:44.784 of 28/July/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-## -------------------- ##
-####################
-#######>>>19:7:47.344 of 28/July/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-## -------------------- ##
-####################
-#######>>>19:7:49.866 of 28/July/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-## -------------------- ##
-####################
-#######>>>19:7:52.303 of 28/July/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-## -------------------- ##
-####################
-#######>>>19:7:54.875 of 28/July/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-## -------------------- ##
-####################
-#######>>>19:7:56.617 of 28/July/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-## -------------------- ##
-####################
-#######>>>19:7:57.421 of 28/July/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-1', 'USS Enterprise H-2', 'USS Enterprise H-3']
-## -------------------- ##
-####################
-#######>>>19:7:58.590 of 28/July/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-## -------------------- ##
-####################
-#######>>>19:7:59.554 of 28/July/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-## -------------------- ##
-####################
-#######>>>19:8:1.918 of 28/July/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-## -------------------- ##
-####################
-#######>>>19:8:5.394 of 28/July/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-## -------------------- ##
-####################
-#######>>>19:8:8.100 of 28/July/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-## -------------------- ##
-####################
-#######>>>19:8:9.843 of 28/July/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-## -------------------- ##
-####################
-#######>>>19:8:12.213 of 28/July/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-## -------------------- ##
-####################
-#######>>>19:8:14.667 of 28/July/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-## -------------------- ##
-####################
-#######>>>19:8:17.673 of 28/July/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-## -------------------- ##
-####################
-#######>>>19:8:20.297 of 28/July/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-## -------------------- ##
-####################
-#######>>>19:8:22.611 of 28/July/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-## -------------------- ##
-####################
-#######>>>19:8:26.099 of 28/July/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-## -------------------- ##
-####################
-#######>>>19:8:28.174 of 28/July/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-## -------------------- ##
-####################
-#######>>>19:8:33.425 of 28/July/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-## -------------------- ##
-####################
-#######>>>19:8:37.005 of 28/July/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-## -------------------- ##
-####################
-#######>>>19:8:40.419 of 28/July/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-2', 'USS Enterprise H-3']
-## -------------------- ##
-####################
-#######>>>19:8:40.842 of 28/July/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-3']
-## -------------------- ##
-####################
-#######>>>19:8:43.060 of 28/July/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-3']
-## -------------------- ##
-####################
-#######>>>19:8:44.601 of 28/July/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-3']
-## -------------------- ##
-####################
-#######>>>19:8:46.384 of 28/July/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-3']
-## -------------------- ##
-####################
-#######>>>19:8:48.789 of 28/July/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-3']
-## -------------------- ##
-####################
-#######>>>19:9:14.199 of 28/July/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-3']
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-3']
-## -------------------- ##
-####################
-#######>>>19:9:22.233 of 28/July/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-3']
-## -------------------- ##
-####################
-#######>>>19:9:24.825 of 28/July/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'USS Enterprise H-3']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>3:34:31.989 of 29/July/2023, Saturday
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>3:34:33.234 of 29/July/2023, Saturday
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>3:34:34.640 of 29/July/2023, Saturday
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>3:34:36.194 of 29/July/2023, Saturday
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>3:34:37.540 of 29/July/2023, Saturday
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>3:34:39.231 of 29/July/2023, Saturday
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>3:34:40.965 of 29/July/2023, Saturday
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>3:34:43.546 of 29/July/2023, Saturday
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>3:34:49.907 of 29/July/2023, Saturday
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>3:34:51.827 of 29/July/2023, Saturday
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>3:34:53.256 of 29/July/2023, Saturday
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>3:34:56.101 of 29/July/2023, Saturday
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>3:34:57.315 of 29/July/2023, Saturday
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>3:34:58.750 of 29/July/2023, Saturday
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>3:35:19.773 of 29/July/2023, Saturday
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>3:35:21.617 of 29/July/2023, Saturday
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>3:35:23.028 of 29/July/2023, Saturday
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>3:35:26.546 of 29/July/2023, Saturday
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>3:35:49.652 of 29/July/2023, Saturday
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>3:35:51.353 of 29/July/2023, Saturday
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>3:35:54.762 of 29/July/2023, Saturday
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>3:36:6.143 of 29/July/2023, Saturday
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>3:36:9.906 of 29/July/2023, Saturday
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>3:36:10.965 of 29/July/2023, Saturday
+#>>>Refreshed Ship List: ['Player', 'sphere - 2']
+## -------------------- ##
+####################
+#######>>>3:36:11.695 of 29/July/2023, Saturday
+#>>>Refreshed Ship List: ['Player', 'sphere - 2']
+## -------------------- ##
+####################
+#######>>>3:36:13.197 of 29/July/2023, Saturday
+#>>>Refreshed Ship List: ['Player', 'sphere - 2']
+## -------------------- ##
+####################
+#######>>>3:36:18.916 of 29/July/2023, Saturday
+#>>>Refreshed Ship List: ['Player', 'sphere - 2']
+## -------------------- ##
+####################
+#######>>>3:36:19.123 of 29/July/2023, Saturday
+#>>>Refreshed Ship List: ['Player', 'sphere - 2']
+#>>>Refreshed Ship List: ['Player', 'sphere - 2']
+## -------------------- ##
+####################
+#######>>>3:36:22.939 of 29/July/2023, Saturday
+#>>>Refreshed Ship List: ['Player', 'sphere - 2']
+## -------------------- ##
+####################
+#######>>>3:36:24.473 of 29/July/2023, Saturday
+#>>>Refreshed Ship List: ['Player', 'sphere - 2']
+#>>>Refreshed Ship List: ['Player', 'sphere - 2']
+## -------------------- ##
+####################
+#######>>>3:36:25.916 of 29/July/2023, Saturday
+#>>>Refreshed Ship List: ['Player', 'sphere - 2']
+#>>>Refreshed Ship List: ['Player', 'sphere - 2']
+#>>>Refreshed Ship List: ['Player', 'sphere - 2']
+## -------------------- ##
+####################
+#######>>>3:36:26.982 of 29/July/2023, Saturday
+#>>>Refreshed Ship List: ['Player', 'sphere - 2']
+#>>>Refreshed Ship List: ['Player', 'sphere - 2']
+#>>>Refreshed Ship List: ['Player', 'sphere - 2']
+## -------------------- ##
+####################
+#######>>>3:36:27.253 of 29/July/2023, Saturday
+#>>>Refreshed Ship List: ['Player', 'sphere - 2']
+#>>>Refreshed Ship List: ['Player', 'sphere - 2']
+## -------------------- ##
+####################
+#######>>>3:36:28.631 of 29/July/2023, Saturday
+#>>>Refreshed Ship List: ['Player', 'sphere - 2']
+## -------------------- ##
+####################
+#######>>>3:36:29.848 of 29/July/2023, Saturday
+#>>>Refreshed Ship List: ['Player', 'sphere - 2']
+## -------------------- ##
+####################
+#######>>>3:36:39.513 of 29/July/2023, Saturday
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>3:37:15.958 of 29/July/2023, Saturday
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>3:37:21.622 of 29/July/2023, Saturday
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>3:37:40.537 of 29/July/2023, Saturday
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>3:37:45.093 of 29/July/2023, Saturday
+#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>3:37:46.725 of 29/July/2023, Saturday
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>3:38:45.281 of 29/July/2023, Saturday
+#>>>Refreshed Ship List: ['Player', 'sphere - 3']
+## -------------------- ##
+####################
+#######>>>3:38:48.078 of 29/July/2023, Saturday
+#>>>Refreshed Ship List: ['Player', 'sphere - 3']
+## -------------------- ##
+####################
+#######>>>3:38:50.838 of 29/July/2023, Saturday
+#>>>Refreshed Ship List: ['Player', 'sphere - 3']
+## -------------------- ##
+####################
+#######>>>3:38:52.303 of 29/July/2023, Saturday
+#>>>Refreshed Ship List: ['Player', 'sphere - 3']
+## -------------------- ##
+####################
+#######>>>3:38:58.787 of 29/July/2023, Saturday
+#>>>Refreshed Ship List: ['Player', 'sphere - 3']
+#>>>Refreshed Ship List: ['Player', 'sphere - 3']
+## -------------------- ##
+####################
+#######>>>3:39:0.477 of 29/July/2023, Saturday
+#>>>Refreshed Ship List: ['Player', 'sphere - 3']
+## -------------------- ##
+####################
+#######>>>3:39:1.599 of 29/July/2023, Saturday
+#>>>Refreshed Ship List: ['Player', 'sphere - 3']
+## -------------------- ##
+####################
+#######>>>3:39:2.380 of 29/July/2023, Saturday
+#>>>Refreshed Ship List: ['Player', 'sphere - 3']
+#>>>Refreshed Ship List: ['Player', 'sphere - 3']
+## -------------------- ##
+####################
+#######>>>3:39:3.753 of 29/July/2023, Saturday
+#>>>Refreshed Ship List: ['Player', 'sphere - 3']
+#>>>Refreshed Ship List: ['Player', 'sphere - 3']
+#>>>Refreshed Ship List: ['Player', 'sphere - 3']
+## -------------------- ##
+####################
+#######>>>3:39:7.372 of 29/July/2023, Saturday
+#>>>Refreshed Ship List: ['Player', 'sphere - 3']
+#>>>Refreshed Ship List: ['Player', 'sphere - 3']
+#>>>Refreshed Ship List: ['Player', 'sphere - 3']
+#>>>Refreshed Ship List: ['Player', 'sphere - 3']
+#>>>Refreshed Ship List: ['Player', 'sphere - 3']
+## -------------------- ##
+####################
+#######>>>3:39:9.510 of 29/July/2023, Saturday
+#>>>Refreshed Ship List: ['Player', 'sphere - 3']
+#>>>Refreshed Ship List: ['Player', 'sphere - 3']
+## -------------------- ##
+####################
+#######>>>3:39:11.010 of 29/July/2023, Saturday
+#>>>Refreshed Ship List: ['Player', 'sphere - 3']
+#>>>Refreshed Ship List: ['Player', 'sphere - 3']
+#>>>Refreshed Ship List: ['Player', 'sphere - 3']
+#>>>Refreshed Ship List: ['Player', 'sphere - 3']
+#>>>Refreshed Ship List: ['Player', 'sphere - 3']
+## -------------------- ##
+####################
+#######>>>3:39:12.303 of 29/July/2023, Saturday
+#>>>Refreshed Ship List: ['Player', 'sphere - 3']
+#>>>Refreshed Ship List: ['Player', 'sphere - 3']
+## -------------------- ##
+####################
+#######>>>3:39:14.020 of 29/July/2023, Saturday
+#>>>Refreshed Ship List: ['Player', 'sphere - 3']
+#>>>Refreshed Ship List: ['Player', 'sphere - 3']
+#>>>Refreshed Ship List: ['Player', 'sphere - 3']
+#>>>Refreshed Ship List: ['Player', 'sphere - 3']
+## -------------------- ##
+####################
+#######>>>3:39:15.607 of 29/July/2023, Saturday
+#>>>Refreshed Ship List: ['Player', 'sphere - 3']
+#>>>Refreshed Ship List: ['Player', 'sphere - 3']
+#>>>Refreshed Ship List: ['Player', 'sphere - 3']
+#>>>Refreshed Ship List: ['Player', 'sphere - 3']
+#>>>Refreshed Ship List: ['Player', 'sphere - 3']
+## -------------------- ##
+####################
+#######>>>3:39:17.319 of 29/July/2023, Saturday
+#>>>Refreshed Ship List: ['Player', 'sphere - 3']
+#>>>Refreshed Ship List: ['Player', 'sphere - 3']
+#>>>Refreshed Ship List: ['Player', 'sphere - 3']
+## -------------------- ##
+####################
+#######>>>3:39:19.345 of 29/July/2023, Saturday
+#>>>Refreshed Ship List: ['Player', 'sphere - 3']
+#>>>Refreshed Ship List: ['Player', 'sphere - 3']
+#>>>Refreshed Ship List: ['Player', 'sphere - 3']
+## -------------------- ##
+####################
+#######>>>3:39:20.665 of 29/July/2023, Saturday
+#>>>Refreshed Ship List: ['Player', 'sphere - 3']
+## -------------------- ##
+####################
+#######>>>3:39:26.054 of 29/July/2023, Saturday
+#>>>Refreshed Ship List: ['Player', 'sphere - 3']
+#>>>Refreshed Ship List: ['Player', 'sphere - 3']
+## -------------------- ##
+####################
+#######>>>3:39:27.713 of 29/July/2023, Saturday
+#>>>Refreshed Ship List: ['Player', 'sphere - 3']
+## -------------------- ##
+####################
+#######>>>3:39:29.756 of 29/July/2023, Saturday
+#>>>Refreshed Ship List: ['Player', 'sphere - 3']
+#>>>Refreshed Ship List: ['Player', 'sphere - 3']
+## -------------------- ##
+####################
+#######>>>3:39:31.548 of 29/July/2023, Saturday
+#>>>Refreshed Ship List: ['Player', 'sphere - 3']
+#>>>Refreshed Ship List: ['Player', 'sphere - 3']
+#>>>Refreshed Ship List: ['Player', 'sphere - 3']
+## -------------------- ##
+####################
+#######>>>3:39:33.679 of 29/July/2023, Saturday
+#>>>Refreshed Ship List: ['Player', 'sphere - 3']
+#>>>Refreshed Ship List: ['Player', 'sphere - 3']
+#>>>Refreshed Ship List: ['Player', 'sphere - 3']
+#>>>Refreshed Ship List: ['Player', 'sphere - 3']
+#>>>Refreshed Ship List: ['Player', 'sphere - 3']
+## -------------------- ##
+####################
+#######>>>3:39:35.270 of 29/July/2023, Saturday
+#>>>Refreshed Ship List: ['Player', 'sphere - 3']
+#>>>Refreshed Ship List: ['Player', 'sphere - 3']
+#>>>Refreshed Ship List: ['Player', 'sphere - 3']
+#>>>Refreshed Ship List: ['Player', 'sphere - 3']
+## -------------------- ##
+####################
+#######>>>3:39:36.822 of 29/July/2023, Saturday
+#>>>Refreshed Ship List: ['Player', 'sphere - 3']
+#>>>Refreshed Ship List: ['Player', 'sphere - 3']
+#>>>Refreshed Ship List: ['Player', 'sphere - 3']
+#>>>Refreshed Ship List: ['Player', 'sphere - 3']
+#>>>Refreshed Ship List: ['Player', 'sphere - 3']
+#>>>Refreshed Ship List: ['Player', 'sphere - 3']
+## -------------------- ##
+####################
+#######>>>3:39:38.570 of 29/July/2023, Saturday
+#>>>Refreshed Ship List: ['Player', 'sphere - 3']
+#>>>Refreshed Ship List: ['Player', 'sphere - 3']
+#>>>Refreshed Ship List: ['Player', 'sphere - 3']
+#>>>Refreshed Ship List: ['Player', 'sphere - 3']
+#>>>Refreshed Ship List: ['Player', 'sphere - 3']
+## -------------------- ##
+####################
+#######>>>3:39:40.323 of 29/July/2023, Saturday
+#>>>Refreshed Ship List: ['Player', 'sphere - 3']
+#>>>Refreshed Ship List: ['Player', 'sphere - 3']
+## -------------------- ##
+####################
+#######>>>3:39:41.904 of 29/July/2023, Saturday
+#>>>Refreshed Ship List: ['Player', 'sphere - 3']
+## -------------------- ##
+####################
+#######>>>3:39:53.586 of 29/July/2023, Saturday
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>3:40:22.268 of 29/July/2023, Saturday
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>3:40:30.518 of 29/July/2023, Saturday
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>3:40:46.851 of 29/July/2023, Saturday
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>3:40:52.934 of 29/July/2023, Saturday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_5VZ9SmmK7WDI>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Player']
+## -------------------- ##
+####################
+#######>>>3:40:54.802 of 29/July/2023, Saturday
+#>>>Refreshed Ship List: ['Player']
 ########################################
-# 19:9:27.152 of 28/July/2023, Friday
+# 3:41:1.400 of 29/July/2023, Saturday
 #Ending of log dump - User is quiting the game
 ########################################

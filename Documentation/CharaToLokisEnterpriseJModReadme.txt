@@ -85,6 +85,4 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 
 == Bugs ==
 * Enterprise J damage is a bit wonky, nothing that causes the model to crash or performance issues or anything but aesthethically the model itself may look like it was peeled off if it takes too much damage.
-* TO-DO FIX POINT DEFENCE WILL CAUSE THE PLAYER SHIP TO DEFEND IF THE ORIGINAL SHIP LEFT
-* TO-DO FIX IF A SHIP DIES SOMETIMES THE TORPEDO DEFENCE STOPS WORKING
 * No other bugs noticed, but if you notice them, please feel free to share and report them.
