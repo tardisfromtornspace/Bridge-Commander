@@ -1,0 +1,47 @@
+#This is the dump of the LogCreator: <Total PointDefence Firepoint Andromeda-2 C Torpedo instance at _1f7be5d8_p_Torpedo Travel Logger[2] LogCreator_AKGNqJ1y3OCW>
+#This log file was created on: 14:16:44.025 of 30/July/2023, Sunday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>14:16:44.025 of 30/July/2023, Sunday
+#>>>Initialized Total PointDefence Firepoint Andromeda-2 C Torpedo instance at _1f7be5d8_p_Torpedo Travel logger
+#>>>SELF = <Total PointDefence Firepoint Andromeda-2 C Torpedo instance at _1f7be5d8_p_Torpedo(4392317) Travel_oJ3Y47YpqI1n>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Ship is dead or dying
+#>>>Ship is dead or dying (at SetDestination)
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>14:16:48.580 of 30/July/2023, Sunday
+#>>>Initialized Total PointDefence Firepoint Andromeda-2 C Torpedo instance at _1f7be5d8_p_Torpedo Travel logger
+#>>>SELF = <Total PointDefence Firepoint Andromeda-2 C Torpedo instance at _1f7be5d8_p_Torpedo(4405313) Travel_IQ9jb91FNO3H>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Ship is dead or dying
+#>>>Ship is dead or dying (at SetDestination)
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Stopping Refresh Handler
+#>>>Deleting...

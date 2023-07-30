@@ -1,5 +1,7 @@
 This mod is a modification on an older mod I could not remember. The older mod had mostly normal technologies, moved by warp drive and had an energy shield. This change intends to make it more canon
 == Changelog ==
+1.0.7 - Bug fixing
+ * Fixed Simulated Point Defence TypeError sequence issue - it didn't really cause any problems but it was flagged on the console and would have caused problems if the sequence had multiple actions.
 1.0.6
 * Fixed a bug with Simulated Point Defence Tech
 1.0.5

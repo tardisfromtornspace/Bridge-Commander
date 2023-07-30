@@ -1,4 +1,6 @@
 == Changelog ==
+1.0.2 - Bug fixing
+ * Fixed Simulated Point Defence TypeError sequence issue - it didn't really cause any problems but it was flagged on the console and would have caused problems if the sequence had multiple actions.
 1.0.1 - Anotehr balance update
  * Severely nerfed the shields and armour.
 1.0 - Official Mod Release

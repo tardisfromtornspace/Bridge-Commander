@@ -1,0 +1,32 @@
+#This is the dump of the LogCreator: <SFRD_T18 - 6 Travel Logger LogCreator_D1NPwSULL5gi>
+#This log file was created on: 15:52:43.112 of 30/July/2023, Sunday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>15:52:43.112 of 30/July/2023, Sunday
+#>>>Initialized SFRD_T18 - 6 Travel logger
+#>>>SELF = <SFRD_T18 - 6(418283) Travel_O8669daZ7vXz>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>15:52:43.319 of 30/July/2023, Sunday
+#>>>Updated Target Ship = Cube-1
+## -------------------- ##
+####################
+#######>>>15:53:3.004 of 30/July/2023, Sunday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

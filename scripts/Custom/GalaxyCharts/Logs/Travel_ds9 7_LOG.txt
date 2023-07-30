@@ -1,0 +1,32 @@
+#This is the dump of the LogCreator: <ds9 7 Travel Logger LogCreator_vX5321i001Sx>
+#This log file was created on: 1:32:48.441 of 30/July/2023, Sunday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>1:32:48.441 of 30/July/2023, Sunday
+#>>>Initialized ds9 7 Travel logger
+#>>>SELF = <ds9 7(1723040) Travel_sDrZyE76AQP9>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>1:37:24.618 of 30/July/2023, Sunday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 1:42:45.999 of 30/July/2023, Sunday
+#Ending of log dump - User is quiting the game
+########################################

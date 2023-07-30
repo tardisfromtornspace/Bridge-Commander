@@ -2,8 +2,8 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
 #         Simulated Point Defence.py by Alex SL Gato
-#         Version 0.5
-#         27th July 2023
+#         Version 0.6
+#         30th July 2023
 #         Based strongly on DampeningAOEDefensiveField.py by Alex Sl Gato, which was based on scripts\Custom\DS9FX\DS9FXPulsarFX\PulsarManager by USS Sovereign, and slightly on TractorBeams.py, Inversion Beam and Power Drain Beam 1.0 by MLeo Daalder, Apollo, and Dasher; some team-switching torpedo by LJ; and GraviticLance by Alex SL Gato, which was based on FiveSecsGodPhaser by USS Frontier, scripts/ftb/Tech/TachyonProjectile by the FoundationTechnologies team, and scripts/ftb/Tech/FedAblativeArmour by the FoundationTechnologies team.
 #         Also based strongly on PointDefence.py by Defiant
 #################################################################################################################
@@ -42,7 +42,7 @@ from bcdebug import debug
 import traceback
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-            "Version": "0.5",
+            "Version": "0.6",
             "License": "LGPL",
             "Description": "Read the small title above for more info"
             }
@@ -690,10 +690,10 @@ try:
 	def DeleteFirePoint(pAction, sThisFirePointName):
 		debug(__name__ + ", DeleteFirePoint")
 		global dictFirePointToTorp
-
+		#print "deleting firepoint"
 		pFirepoint = MissionLib.GetShip(sThisFirePointName)
 		if not pFirepoint:
-			return
+			return 0
 
 		pFirepoint.GetContainingSet().RemoveObjectFromSet(sThisFirePointName)
 
@@ -735,6 +735,7 @@ try:
 
 			# We're done.  Close the buffer.
 			kStream.CloseBuffer()
+		#print "and I return"
 		return 0
 
 	def MPSendRemoveTorpMessage(pTorp):
@@ -774,6 +775,7 @@ try:
 
 		# We're done.  Close the buffer.
 		kStream.CloseBuffer()
+		#print "end of MPSendRemoveTorpMessage"
 
 	oSimulatedPointDefence = SimulatedPointDefenceDef('Simulated Point Defence')
 
