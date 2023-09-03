@@ -1,0 +1,25 @@
+#This is the dump of the LogCreator: <Total PointDefence Firepoint HalcyonPromise 3 C Torpedo instance at _5384bbb8_p_Torpedo Travel Logger LogCreator_7LeIyw26Tgk8>
+#This log file was created on: 17:12:8.782 of 30/July/2023, Sunday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>17:12:8.782 of 30/July/2023, Sunday
+#>>>Initialized Total PointDefence Firepoint HalcyonPromise 3 C Torpedo instance at _5384bbb8_p_Torpedo Travel logger
+#>>>SELF = <Total PointDefence Firepoint HalcyonPromise 3 C Torpedo instance at _5384bbb8_p_Torpedo(4281656) Travel_4iT43cZH1n9P>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Ship is dead or dying
+#>>>Ship is dead or dying (at SetDestination)
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Stopping Refresh Handler
+#>>>Deleting...

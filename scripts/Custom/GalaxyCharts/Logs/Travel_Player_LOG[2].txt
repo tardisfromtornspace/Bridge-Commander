@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Player Travel Logger[2] LogCreator_nmBqD5Xg77pP>
-#This log file was created on: 16:24:2.508 of 30/July/2023, Sunday
+#This is the dump of the LogCreator: <Player Travel Logger[2] LogCreator_73066M9majtp>
+#This log file was created on: 5:5:19.920 of 3/September/2023, Sunday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>16:24:2.508 of 30/July/2023, Sunday
+#######>>>5:5:19.920 of 3/September/2023, Sunday
 #>>>Initialized Player Travel logger
-#>>>SELF = <Player(56892) Travel_vSGF0P9gkm42>
+#>>>SELF = <Player(84189) Travel_O8G5fN246v8D>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Is Player - Checked
@@ -21,3 +21,7 @@ Updating Travelling Procedures...
 #>>>Chaser base class initialization complete.
 #>>>Target Ship = NONE
 #>>>Chaser pre-emptive Refresher Initialization
+########################################
+# 5:15:43.282 of 3/September/2023, Sunday
+#Ending of log dump - User is quiting the game
+########################################

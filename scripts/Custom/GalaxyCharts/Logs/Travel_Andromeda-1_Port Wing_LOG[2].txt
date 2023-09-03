@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Andromeda-1_Port Wing Travel Logger[2] LogCreator_q02R6eErx6i5>
-#This log file was created on: 14:17:56.333 of 30/July/2023, Sunday
+#This is the dump of the LogCreator: <Andromeda-1_Port Wing Travel Logger[2] LogCreator_3M8M9R1tFqT3>
+#This log file was created on: 17:13:43.347 of 30/July/2023, Sunday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,29 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>14:17:56.333 of 30/July/2023, Sunday
+#######>>>17:13:43.347 of 30/July/2023, Sunday
 #>>>Initialized Andromeda-1_Port Wing Travel logger
-#>>>SELF = <Andromeda-1_Port Wing(4625737) Travel_XOCh0B6D2sXl>
+#>>>SELF = <Andromeda-1_Port Wing(4372393) Travel_tTaDGfZcD50k>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>17:14:23.097 of 30/July/2023, Sunday
+#>>>Initialized Andromeda-1_Port Wing Travel logger
+#>>>SELF = <Andromeda-1_Port Wing(4432350) Travel_e9S48wZQl4ez>
 #>>>Initial Travel Type: None
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
