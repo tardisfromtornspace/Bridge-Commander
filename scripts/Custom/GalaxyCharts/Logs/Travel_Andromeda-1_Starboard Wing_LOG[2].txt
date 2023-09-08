@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Andromeda-1_Starboard Wing Travel Logger[2] LogCreator_4886O9L07q9U>
-#This log file was created on: 11:3:44.903 of 8/September/2023, Friday
+#This is the dump of the LogCreator: <Andromeda-1_Starboard Wing Travel Logger[2] LogCreator_aGBs222RE3pX>
+#This log file was created on: 19:7:43.025 of 8/September/2023, Friday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>11:3:44.903 of 8/September/2023, Friday
+#######>>>19:7:43.025 of 8/September/2023, Friday
 #>>>Initialized Andromeda-1_Starboard Wing Travel logger
-#>>>SELF = <Andromeda-1_Starboard Wing(485827) Travel_spH1332jEr1P>
+#>>>SELF = <Andromeda-1_Starboard Wing(426233) Travel_7g6fewAI4P4A>
 #>>>Initial Travel Type: None
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -21,3 +21,7 @@ Updating Travelling Procedures...
 #>>>Chaser base class initialization complete.
 #>>>Target Ship = NONE
 #>>>Chaser pre-emptive Refresher Initialization
+########################################
+# 19:13:15.787 of 8/September/2023, Friday
+#Ending of log dump - User is quiting the game
+########################################

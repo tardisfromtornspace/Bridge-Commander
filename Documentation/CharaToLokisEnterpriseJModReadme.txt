@@ -1,4 +1,6 @@
 == Changelog ==
+1.0.3 - Bug Fixing
+ * Upgraded Simulated Point Defence from 0.6 to 0.8, now a lot of the weird behaviour happening before has been fixed.
 1.0.2 - Bug fixing
  * Fixed Simulated Point Defence TypeError sequence issue - it didn't really cause any problems but it was flagged on the console and would have caused problems if the sequence had multiple actions.
 1.0.1 - Anotehr balance update
