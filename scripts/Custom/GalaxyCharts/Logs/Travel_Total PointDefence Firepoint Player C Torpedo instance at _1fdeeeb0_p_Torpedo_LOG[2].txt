@@ -1,0 +1,50 @@
+#This is the dump of the LogCreator: <Total PointDefence Firepoint Player C Torpedo instance at _1fdeeeb0_p_Torpedo Travel Logger[2] LogCreator_PM4WySPT6tES>
+#This log file was created on: 11:58:49.847 of 8/September/2023, Friday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>11:58:49.847 of 8/September/2023, Friday
+#>>>Initialized Total PointDefence Firepoint Player C Torpedo instance at _1fdeeeb0_p_Torpedo Travel logger
+#>>>SELF = <Total PointDefence Firepoint Player C Torpedo instance at _1fdeeeb0_p_Torpedo(2331489) Travel_cn2tMJsdLwcv>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>11:58:50.113 of 8/September/2023, Friday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>11:58:50.898 of 8/September/2023, Friday
+#>>>Initialized Total PointDefence Firepoint Player C Torpedo instance at _1fdeeeb0_p_Torpedo Travel logger
+#>>>SELF = <Total PointDefence Firepoint Player C Torpedo instance at _1fdeeeb0_p_Torpedo(2334978) Travel_5w2cN85dFZvA>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Stopping Refresh Handler
+#>>>Deleting...

@@ -2,8 +2,8 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
 #         Simulated Point Defence.py by Alex SL Gato
-#         Version 0.6
-#         30th July 2023
+#         Version 0.8
+#         8th September 2023
 #         Based strongly on DampeningAOEDefensiveField.py by Alex Sl Gato, which was based on scripts\Custom\DS9FX\DS9FXPulsarFX\PulsarManager by USS Sovereign, and slightly on TractorBeams.py, Inversion Beam and Power Drain Beam 1.0 by MLeo Daalder, Apollo, and Dasher; some team-switching torpedo by LJ; and GraviticLance by Alex SL Gato, which was based on FiveSecsGodPhaser by USS Frontier, scripts/ftb/Tech/TachyonProjectile by the FoundationTechnologies team, and scripts/ftb/Tech/FedAblativeArmour by the FoundationTechnologies team.
 #         Also based strongly on PointDefence.py by Defiant
 #################################################################################################################
@@ -17,8 +17,7 @@
 # LimitDamage: torps dealing this much damage or more will have their chances at being hit cut ... unless it is Breen Drain or Jumpspace Tunnel. Negative values work the other way around, to make it so it only targets torpedoes beyond a certain damage threshold. If this value is not filled it is not calculated.
 # Period: in seconds, but then internally multiplied by 10 to get it in a base slice. Default is 1.0 Also indirectly affected by power given to the shields.
 # MaxNumberTorps: how many torps it can intercept in an area at a time. Default is 200.
-# EXPERIMENTAL: Phaser, Torpedo and Pulse properties... only to use if you want a phaser/pulse/torpedo to react as well. They can have a "Priority" field inside to indicate priority when choosing weapons (1 = lowest but still above any default, higher positive nubmers are higher priorities).
-# Note: the experimental field above  will make it neater, but it will also indirectly adjust to the weapon banks and tubes speed - and on the case of phaser bank, reduce it to the available ranges and time to fire - thus decrementing real effectivity and defensive capabilities when firing when compared with a non-experimental one. 
+# EXPERIMENTAL: Phaser, Torpedo and Pulse properties... only to use if you want a phaser/pulse/torpedo to react as well. They can have a "Priority" field inside to indicate priority when choosing weapons (1 = lowest but still above any default, higher positive nubmers are higher priorities). Note: this experimental field will make it neater, but it will also indirectly adjust to the weapon banks and tubes speed - and on the case of phaser bank, reduce it to the available ranges and time to fire - thus decrementing real effectivity and defensive capabilities when firing when compared with a non-experimental one. 
 # Properties: on this case, it sets specific properties that may be understood as point defence systems - albeit due to how STBC works you would need to either disable the other subsystems for a sec before firing (not recommended) or create a hardpoint weapon group; so this field is mostly unused except for the following field
 # Specially: if this field have a value higher than 0, the ship will not be able to use that point defense if all the subsystems indicated on the Properties field are disabled or destroyed
 
@@ -42,7 +41,7 @@ from bcdebug import debug
 import traceback
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-            "Version": "0.6",
+            "Version": "0.8",
             "License": "LGPL",
             "Description": "Read the small title above for more info"
             }
@@ -92,13 +91,9 @@ try:
 			FoundationTech.TechDef.__init__(self, name)
 			global bOverflow
 			if not bOverflow:
-				#print "ATTENTION: Called Simulated Point Defense"
+				#print "ATTENTION: Called Simulated Point Defence"
 				self.pEventHandler = App.TGPythonInstanceWrapper()
 				self.pEventHandler.SetPyWrapper(self)
-				#App.g_kEventManager.RemoveBroadcastHandler(App.ET_WEAPON_HIT, self.pEventHandler, ".WeaponaHit")
-				#App.g_kEventManager.AddBroadcastPythonMethodHandler(App.ET_WEAPON_HIT, self.pEventHandler, ".WeaponHit")
-				#App.g_kEventManager.AddBroadcastPythonFuncHandler(App.ET_WEAPON_HIT, pMission, __name__+ ".WeaponHit")
-				#App.g_kEventManager.AddBroadcastPythonFuncHandler(App.ET_WEAPON_HIT, self.pEventHandler, __name__+ ".WeaponaHit")
 
 				bOverflow = 1
 				self.pTimer = None
@@ -116,9 +111,6 @@ try:
 				if not bOverflow:
 					bOverflow = 1
 					self.pTimer = None
-
-					#App.g_kEventManager.RemoveBroadcastHandler(App.ET_WEAPON_HIT, self.pEventHandler, ".WeaponaHit")
-					#App.g_kEventManager.AddBroadcastPythonFuncHandler(App.ET_WEAPON_HIT, self.pEventHandler, __name__+ ".WeaponaHit")
 					print "SimulatedPointDefence: initiating new countdown for:", pShip.GetName()
 					self.countdown()
 					
@@ -132,18 +124,59 @@ try:
 		def Detach(self, pInstance):
 			debug(__name__ + ", Detach")
 			global bOverflow, pAllShipsWithTheTech
+			if pInstance == None:
+				return
+
 			if pAllShipsWithTheTech.has_key(pInstance):
 				print "key found, to remove ", pInstance
 				del pAllShipsWithTheTech[pInstance]
 			pShip = App.ShipClass_Cast(App.TGObject_GetTGObjectPtr(pInstance.pShipID))
 			if pShip != None:
 				dMasterDict = pInstance.__dict__['Simulated Point Defence']
-				self.pShip = None
+				#self.pShip = None
 			else:
-				#print "SimulatedPointDefence Error (at Detach): couldn't acquire ship of id", pInstance.pShipID
+				print "SimulatedPointDefence Error (at Detach): couldn't acquire ship of id", pInstance.pShipID
 				pass
+
+			print "Simulated Point Defence: detached from ship"
+			if pShip != None:
+				print "---ship name:", pShip.GetName()
+
 			pInstance.lTechs.remove(self)
-			print "Simulated Point Defence: detached from ship:", pShip.GetName()
+
+
+		def Detach2(self, pInstance, pShip):
+			debug(__name__ + ", Detach")
+			global bOverflow, pAllShipsWithTheTech
+			
+			if not pInstance and pShip:
+				try:
+					pInstance = FoundationTech.dShips[pShip.GetName()]
+					if pInstance == None:
+						return
+				except:
+					print "Simulated Point Defence: cancelling, error in try from Detach2 found..."
+					return
+				
+			if pAllShipsWithTheTech.has_key(pInstance):
+				print "key found, to remove ", pInstance
+				del pAllShipsWithTheTech[pInstance]
+			if pShip == None and pInstance != None:
+				pShip = App.ShipClass_Cast(App.TGObject_GetTGObjectPtr(pInstance.pShipID))
+			if pShip != None and pInstance != None:
+				dMasterDict = pInstance.__dict__['Simulated Point Defence']
+			else:
+				print "SimulatedPointDefence Error (at Detach): couldn't acquire ship"
+				if pInstance != None:
+					print "--- of id", pInstance.pShipID
+				pass
+
+			print "Simulated Point Defence: cleanup-detached from ship"
+			if pShip != None:
+				print "---ship name:", pShip.GetName()
+
+			if pInstance != None:
+				pInstance.lTechs.remove(self)
 
 		def countdown(self):
 			if not self.pTimer:
@@ -158,11 +191,15 @@ try:
 		def lookclosershipsEveryone(self, fTime):
 			global pAllShipsWithTheTech
 			for myShipInstance in pAllShipsWithTheTech.keys():
-				self.lookcloserProjectiles(fTime, pAllShipsWithTheTech[myShipInstance], myShipInstance)
+				if myShipInstance != None:
+					self.lookcloserProjectiles(fTime, pAllShipsWithTheTech[myShipInstance], myShipInstance)
 
 		def lookcloserProjectiles(self, fTime, pShip, pInstance):
+			if pInstance == None:
+				return
 
-			if pShip == None or pInstance == None:
+			if pShip == None or not pInstance.__dict__.has_key("Simulated Point Defence"):
+				self.Detach2(pInstance, pShip)
 				return
 
 			#print "The ship which is using it is ", pShip.GetName()
@@ -173,6 +210,18 @@ try:
 
 			if not pInstance.__dict__['Simulated Point Defence'].has_key("TimeRemaining"):
 				pInstance.__dict__['Simulated Point Defence']["TimeRemaining"] = 0.0
+
+			
+			try:
+				pInstanceAux = FoundationTech.dShips[pShip.GetName()]
+				if pInstanceAux == None or not pInstanceAux.__dict__.has_key("Simulated Point Defence"):
+					print "Simulated Point Defence: cancelling, no FTech Ship Instance obj"
+					self.Detach2(pInstance, pShip)
+					return
+			except:
+				print "Simulated Point Defence: cancelling, error in try found..."
+				self.Detach2(pInstance, pShip)
+				return
 
 			energyCommited = 1.0
 			pShields = pShip.GetShields()
@@ -347,40 +396,49 @@ try:
 
 				#print "ok priorities now:", priorityPhaser, priorityPulse, priorityTorp, priorityTractor
 
-				if not pWeaponSystem1 and not pWeaponSystem2 and not pWeaponSystem3 and not pWeaponSystem4:
-					#print "no systems to fire, how odd"
+				if priorityPhaser == -1 and priorityPulse == -1 and priorityTorp == -1  and priorityTractor == -1:
+					#print "no systems to fire"
 					return
 
-				if priorityPhaser >= priorityPulse and priorityPhaser >= priorityTorp and priorityPhaser >= priorityTractor:
+				if priorityPhaser >= priorityPulse and priorityPhaser >= priorityTorp and priorityPhaser >= priorityTractor and havePhaser:
 					pWeaponSystem = pWeaponSystem1
 					preferredWeapon = "Phaser"
-				elif priorityPulse > priorityPhaser and priorityPulse >= priorityTorp and priorityPulse >= priorityTractor:
-					pWeaponSystem = pWeaponSystem2
-					preferredWeapon = "Pulse"
-				elif priorityTorp > priorityPhaser and priorityTorp > priorityPulse and priorityTorp >= priorityTractor:
-					pWeaponSystem = pWeaponSystem3
-					preferredWeapon = "Torpedo"
 				else:
-					pWeaponSystem = pWeaponSystem4
-					preferredWeapon = "Tractor"
+					priorityPhaser = -1
+					if priorityPulse > priorityPhaser and priorityPulse >= priorityTorp and priorityPulse >= priorityTractor and havePulse:
+						pWeaponSystem = pWeaponSystem2
+						preferredWeapon = "Pulse"
+					else:
+						priorityPulse = -1
+						if priorityTorp > priorityPhaser and priorityTorp > priorityPulse and priorityTorp >= priorityTractor and haveTorpedo:
+							pWeaponSystem = pWeaponSystem3
+							preferredWeapon = "Torpedo"
+						elif haveTractor:
+							pWeaponSystem = pWeaponSystem4
+							preferredWeapon = "Tractor"
 
 				#print "preferredWeapon is", preferredWeapon
-				if (not preferredWeapon == "None") and pInstance.__dict__['Simulated Point Defence'][preferredWeapon].has_key("Properties"):
-					subSysNames = pInstance.__dict__['Simulated Point Defence'][preferredWeapon]["Properties"]
-					if pInstance.__dict__['Simulated Point Defence'][preferredWeapon].has_key("Specially") and pInstance.__dict__['Simulated Point Defence'][preferredWeapon]["Specially"] > 0:
-						nottooSpecificToSwitch = 0
+				
+				try:
+					if (not preferredWeapon == "None") and pInstance.__dict__['Simulated Point Defence'].has_key(preferredWeapon) and pInstance.__dict__['Simulated Point Defence'][preferredWeapon].has_key("Properties"):
+						subSysNames = pInstance.__dict__['Simulated Point Defence'][preferredWeapon]["Properties"]
+						if pInstance.__dict__['Simulated Point Defence'][preferredWeapon].has_key("Specially") and pInstance.__dict__['Simulated Point Defence'][preferredWeapon]["Specially"] > 0:
+							nottooSpecificToSwitch = 0
+						else:
+							nottooSpecificToSwitch = 1
+						iChildren = pWeaponSystem.GetNumChildSubsystems()
+						if iChildren > 0 and len(subSysNames) > 0:
+							for iIndex in range(iChildren):
+								pChild = pWeaponSystem.GetChildSubsystem(iIndex)
+								if pChild.GetName() in subSysNames:
+									if not pChild.IsDisabled():
+										nottooSpecificToSwitch = nottooSpecificToSwitch + 1
+										subSys.append(pChild)
 					else:
 						nottooSpecificToSwitch = 1
-					iChildren = pWeaponSystem.GetNumChildSubsystems()
-					if iChildren > 0 and len(subSysNames) > 0:
-						for iIndex in range(iChildren):
-							pChild = pWeaponSystem.GetChildSubsystem(iIndex)
-							if pChild.GetName() in subSysNames:
-								if not pChild.IsDisabled():
-									nottooSpecificToSwitch = nottooSpecificToSwitch + 1
-									subSys.append(pChild)
-				else:
-					nottooSpecificToSwitch = 1
+				except:
+					print "Error found while assigning speciality in", pShip.GetName(), "Probably all assigned systems are disabled or destroyed"
+					return
 
 			for kTorp in lTorpTargets:
 				pTorp = App.Torpedo_GetObjectByID(None, kTorp)

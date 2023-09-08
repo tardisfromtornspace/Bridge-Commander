@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Andromeda-1 Travel Logger[2] LogCreator_b0c0598gE4O8>
-#This log file was created on: 17:13:29.676 of 30/July/2023, Sunday
+#This is the dump of the LogCreator: <Andromeda-1 Travel Logger[2] LogCreator_GKK61h2F33M8>
+#This log file was created on: 11:3:44.903 of 8/September/2023, Friday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,111 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>17:13:29.676 of 30/July/2023, Sunday
+#######>>>11:3:44.903 of 8/September/2023, Friday
 #>>>Initialized Andromeda-1 Travel logger
-#>>>SELF = <Andromeda-1(4305437) Travel_UIIsXKqL5NA3>
-#>>>Initial Travel Type: None
-#>>>Updating Variables...
-#>>> -Ship is dead or dying
-#>>>Ship is dead or dying (at SetDestination)
-#>>>Set Exit Placement Name as None
-#>>>Set Exit Point to None
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>17:13:30.091 of 30/July/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>17:13:30.268 of 30/July/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>17:13:30.696 of 30/July/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>17:13:31.023 of 30/July/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-< ======== Dynamic TS ========= >
-Updating Travelling Procedures...
- -Update Loop MARK START
-<DTSC> -Time left:
- -Update Loop MARK COMPLETED
-< ========== END DTS ========== >
-## -------------------- ##
-####################
-#######>>>17:13:43.347 of 30/July/2023, Sunday
-#>>>Initialized Andromeda-1 Travel logger
-#>>>SELF = <Andromeda-1(4360795) Travel_cx7e3V13D4YW>
-#>>>Initial Travel Type: None
-#>>>Updating Variables...
-#>>> -Is AI in Player in route CHECKING: Player Travel OK
-#>>>Destination set as None
-#>>>Set Exit Placement Name as None
-#>>>Set Exit Point to None
-#>>>Chaser base class initialization complete.
-#>>>Target Ship = NONE
-#>>>Chaser pre-emptive Refresher Initialization
-#>>>Updated Target Ship = Player
-## -------------------- ##
-####################
-#######>>>17:13:52.997 of 30/July/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-#>>> -Cancelling, too close to target to warp intercept...
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>17:14:1.781 of 30/July/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>17:14:2.435 of 30/July/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>17:14:2.928 of 30/July/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>17:14:3.319 of 30/July/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>17:14:3.567 of 30/July/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>17:14:4.448 of 30/July/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-#>>> -Cancelling, too close to target to warp intercept...
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>17:14:6.662 of 30/July/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>17:14:6.928 of 30/July/2023, Sunday
-#>>> -Cancelling, too close to target to warp intercept...
-## -------------------- ##
-####################
-#######>>>17:14:9.452 of 30/July/2023, Sunday
-#>>>Stopping Refresh Handler
-#>>>Deleting...
-< ======== Dynamic TS ========= >
-Updating Travelling Procedures...
- -Update Loop MARK START
-<DTSC> -Time left:
- -Update Loop MARK COMPLETED
-< ========== END DTS ========== >
-## -------------------- ##
-####################
-#######>>>17:14:23.097 of 30/July/2023, Sunday
-#>>>Initialized Andromeda-1 Travel logger
-#>>>SELF = <Andromeda-1(4420752) Travel_MV5AuI9Uha8N>
+#>>>SELF = <Andromeda-1(418166) Travel_okFGoXn4be2f>
 #>>>Initial Travel Type: None
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK

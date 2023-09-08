@@ -1,0 +1,48 @@
+#This is the dump of the LogCreator: <Total PointDefence Firepoint Player C Torpedo instance at _1fa52518_p_Torpedo Travel Logger[2] LogCreator_11CLbabBN8G8>
+#This log file was created on: 10:33:39.036 of 8/September/2023, Friday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>10:33:39.036 of 8/September/2023, Friday
+#>>>Initialized Total PointDefence Firepoint Player C Torpedo instance at _1fa52518_p_Torpedo Travel logger
+#>>>SELF = <Total PointDefence Firepoint Player C Torpedo instance at _1fa52518_p_Torpedo(102043) Travel_yso9tQhY532B>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>10:33:57.349 of 8/September/2023, Friday
+#>>>Initialized Total PointDefence Firepoint Player C Torpedo instance at _1fa52518_p_Torpedo Travel logger
+#>>>SELF = <Total PointDefence Firepoint Player C Torpedo instance at _1fa52518_p_Torpedo(119024) Travel_bv66z2O9UgCW>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>10:33:58.566 of 8/September/2023, Friday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

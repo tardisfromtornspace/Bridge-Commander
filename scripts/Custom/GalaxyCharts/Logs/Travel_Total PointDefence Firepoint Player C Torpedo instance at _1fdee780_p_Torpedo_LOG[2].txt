@@ -1,0 +1,47 @@
+#This is the dump of the LogCreator: <Total PointDefence Firepoint Player C Torpedo instance at _1fdee780_p_Torpedo Travel Logger[2] LogCreator_220mOJpSWBIt>
+#This log file was created on: 11:58:53.830 of 8/September/2023, Friday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>11:58:53.830 of 8/September/2023, Friday
+#>>>Initialized Total PointDefence Firepoint Player C Torpedo instance at _1fdee780_p_Torpedo Travel logger
+#>>>SELF = <Total PointDefence Firepoint Player C Torpedo instance at _1fdee780_p_Torpedo(2341185) Travel_0y4z6TbS49ix>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>11:59:14.559 of 8/September/2023, Friday
+#>>>Initialized Total PointDefence Firepoint Player C Torpedo instance at _1fdee780_p_Torpedo Travel logger
+#>>>SELF = <Total PointDefence Firepoint Player C Torpedo instance at _1fdee780_p_Torpedo(2385532) Travel_8q0Qv42ckcd7>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Ship is dead or dying
+#>>>Ship is dead or dying (at SetDestination)
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Stopping Refresh Handler
+#>>>Deleting...

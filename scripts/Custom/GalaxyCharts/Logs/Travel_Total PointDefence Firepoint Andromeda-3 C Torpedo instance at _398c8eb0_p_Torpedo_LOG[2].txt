@@ -1,0 +1,53 @@
+#This is the dump of the LogCreator: <Total PointDefence Firepoint Andromeda-3 C Torpedo instance at _398c8eb0_p_Torpedo Travel Logger[2] LogCreator_2W2jI29BB61n>
+#This log file was created on: 10:9:10.310 of 8/September/2023, Friday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>10:9:10.310 of 8/September/2023, Friday
+#>>>Initialized Total PointDefence Firepoint Andromeda-3 C Torpedo instance at _398c8eb0_p_Torpedo Travel logger
+#>>>SELF = <Total PointDefence Firepoint Andromeda-3 C Torpedo instance at _398c8eb0_p_Torpedo(893946) Travel_En1nLmuPLEkK>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>10:9:10.644 of 8/September/2023, Friday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>10:9:11.069 of 8/September/2023, Friday
+#>>>Initialized Total PointDefence Firepoint Andromeda-3 C Torpedo instance at _398c8eb0_p_Torpedo Travel logger
+#>>>SELF = <Total PointDefence Firepoint Andromeda-3 C Torpedo instance at _398c8eb0_p_Torpedo(896253) Travel_dvJvGs7MMS1F>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>10:9:11.327 of 8/September/2023, Friday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

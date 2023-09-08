@@ -10805,3 +10805,84 @@ Call stack:
 Address   Frame
 00592CDA  0019FBF0  0001:00191CDA C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
 
+//=====================================================
+Current Time: Fri Sep 08 11:04:03 2023
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  4A310E88 00:00000000 
+
+Registers:
+EAX:0095DD20
+EBX:3D0B6734
+ECX:00000000
+EDX:4A6DAE5C
+ESI:4EB9A15C
+EDI:0019F9A0
+CS:EIP:0023:4A310E88
+SS:ESP:002B:0019F9B0  EBP:00000000
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010206
+
+Application Timestamp: Thu Jan 01 01:00:00 1970
+Doing stack walk
+
+Call stack:
+Address   Frame
+4A310E88  0019F9AC  0000:00000000  (No symbol info found)
+
+//=====================================================
+Current Time: Fri Sep 08 11:14:54 2023
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Fri Sep 08 11:18:35 2023
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Fri Sep 08 11:29:35 2023
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Fri Sep 08 11:41:35 2023
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Fri Sep 08 12:05:31 2023
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  00411E72 01:00010E72 C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+Registers:
+EAX:0019FB40
+EBX:1414FA30
+ECX:00000000
+EDX:00898984
+ESI:13C45D68
+EDI:0019FB94
+CS:EIP:0023:00411E72
+SS:ESP:002B:0019FAF0  EBP:13C45C0C
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010202
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+00411E72  0019FAEC  0001:00010E72 C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+//=====================================================
+Current Time: Fri Sep 08 12:07:40 2023
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Fri Sep 08 12:17:29 2023
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Fri Sep 08 12:22:04 2023
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Fri Sep 08 12:25:30 2023
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Fri Sep 08 12:27:57 2023
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Fri Sep 08 12:52:17 2023
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Fri Sep 08 13:09:19 2023
+Exception code: C0000005 ACCESS_VIOLATION

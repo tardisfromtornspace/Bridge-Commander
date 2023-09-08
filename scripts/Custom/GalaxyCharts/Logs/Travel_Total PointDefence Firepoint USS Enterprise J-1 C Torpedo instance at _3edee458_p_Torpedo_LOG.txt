@@ -1,0 +1,27 @@
+#This is the dump of the LogCreator: <Total PointDefence Firepoint USS Enterprise J-1 C Torpedo instance at _3edee458_p_Torpedo Travel Logger LogCreator_pB3INqj4lhZ0>
+#This log file was created on: 13:31:54.847 of 8/September/2023, Friday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>13:31:54.847 of 8/September/2023, Friday
+#>>>Initialized Total PointDefence Firepoint USS Enterprise J-1 C Torpedo instance at _3edee458_p_Torpedo Travel logger
+#>>>SELF = <Total PointDefence Firepoint USS Enterprise J-1 C Torpedo instance at _3edee458_p_Torpedo(227456) Travel_zT5PjrfKPZRN>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+########################################
+# 13:33:4.621 of 8/September/2023, Friday
+#Ending of log dump - User is quiting the game
+########################################

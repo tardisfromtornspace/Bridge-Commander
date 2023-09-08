@@ -1,0 +1,25 @@
+#This is the dump of the LogCreator: <Total PointDefence Firepoint Andromeda-5 C Torpedo instance at _1f9d3728_p_Torpedo Travel Logger LogCreator_3K492p4lb54d>
+#This log file was created on: 11:1:8.441 of 8/September/2023, Friday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>11:1:8.441 of 8/September/2023, Friday
+#>>>Initialized Total PointDefence Firepoint Andromeda-5 C Torpedo instance at _1f9d3728_p_Torpedo Travel logger
+#>>>SELF = <Total PointDefence Firepoint Andromeda-5 C Torpedo instance at _1f9d3728_p_Torpedo(332725) Travel_ENKPqZ7g0ev5>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Stopping Refresh Handler
+#>>>Deleting...

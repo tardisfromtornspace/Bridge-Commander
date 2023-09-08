@@ -1,0 +1,32 @@
+#This is the dump of the LogCreator: <Escape Pod 13 Travel Logger[2] LogCreator_UQZav31HVTAG>
+#This log file was created on: 11:10:5.150 of 8/September/2023, Friday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>11:10:5.150 of 8/September/2023, Friday
+#>>>Initialized Escape Pod 13 Travel logger
+#>>>SELF = <Escape Pod 13(860876) Travel_2hINl9sfVVTe>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>11:10:16.316 of 8/September/2023, Friday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 11:11:10.416 of 8/September/2023, Friday
+#Ending of log dump - User is quiting the game
+########################################

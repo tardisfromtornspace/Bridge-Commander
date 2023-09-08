@@ -1,0 +1,58 @@
+#This is the dump of the LogCreator: <USS Voyager J-1 Travel Logger LogCreator_U5591I96W8Z4>
+#This log file was created on: 13:6:49.937 of 8/September/2023, Friday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>13:6:49.937 of 8/September/2023, Friday
+#>>>Initialized USS Voyager J-1 Travel logger
+#>>>SELF = <USS Voyager J-1(74209) Travel_83fYe8JlB4Ft>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>13:7:2.796 of 8/September/2023, Friday
+#>>>Updated Target Ship = Andromeda-4
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>13:7:3.063 of 8/September/2023, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>13:7:3.529 of 8/September/2023, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>13:7:3.780 of 8/September/2023, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>13:7:4.280 of 8/September/2023, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>13:7:4.781 of 8/September/2023, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>13:7:5.029 of 8/September/2023, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>13:7:17.615 of 8/September/2023, Friday
+#>>>Updated Target Ship = Andromeda-3
