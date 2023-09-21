@@ -1,4 +1,6 @@
 == Changelog ==
+1.0.4 - Bug Fixing
+ * Upgraded Simulated Point Defence from 0.8 to 0.9, now two possible crash causes upon heavy fire have been removed. Thank USS Sovereign for telling me how to use the debug function properly.
 1.0.3 - Bug Fixing
  * Upgraded Simulated Point Defence from 0.6 to 0.8, now a lot of the weird behaviour happening before has been fixed.
 1.0.2 - Bug fixing

@@ -1,0 +1,50 @@
+#This is the dump of the LogCreator: <Total PointDefence Firepoint Andromeda-14 C Torpedo instance at _3f8f49a0_p_Torpedo Travel Logger[2] LogCreator_j6dTA9l1vYRH>
+#This log file was created on: 20:28:5.684 of 8/September/2023, Friday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>20:28:5.684 of 8/September/2023, Friday
+#>>>Initialized Total PointDefence Firepoint Andromeda-14 C Torpedo instance at _3f8f49a0_p_Torpedo Travel logger
+#>>>SELF = <Total PointDefence Firepoint Andromeda-14 C Torpedo instance at _3f8f49a0_p_Torpedo(726032) Travel_rJ18oh37q67f>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>20:28:6.541 of 8/September/2023, Friday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>20:36:38.558 of 8/September/2023, Friday
+#>>>Initialized Total PointDefence Firepoint Andromeda-14 C Torpedo instance at _3f8f49a0_p_Torpedo Travel logger
+#>>>SELF = <Total PointDefence Firepoint Andromeda-14 C Torpedo instance at _3f8f49a0_p_Torpedo(1384202) Travel_9gi56Kl90sdQ>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Ship is dead or dying
+#>>>Ship is dead or dying (at SetDestination)
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Stopping Refresh Handler
+#>>>Deleting...

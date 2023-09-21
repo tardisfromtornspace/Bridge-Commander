@@ -1,0 +1,29 @@
+#This is the dump of the LogCreator: <Total PointDefence Firepoint Player C Torpedo instance at _428411e8_p_Torpedo Travel Logger LogCreator_2LoEwVuJIt2L>
+#This log file was created on: 22:17:19.358 of 8/September/2023, Friday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>22:17:19.358 of 8/September/2023, Friday
+#>>>Initialized Total PointDefence Firepoint Player C Torpedo instance at _428411e8_p_Torpedo Travel logger
+#>>>SELF = <Total PointDefence Firepoint Player C Torpedo instance at _428411e8_p_Torpedo(1112132) Travel_5Wl54wtZ9fH8>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Ship is dead or dying
+#>>>Ship is dead or dying (at SetDestination)
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 22:20:38.939 of 8/September/2023, Friday
+#Ending of log dump - User is quiting the game
+########################################

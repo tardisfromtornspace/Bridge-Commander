@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Player_Starboard Wing Travel Logger[2] LogCreator_9lhM9F90F7Do>
-#This log file was created on: 19:7:46.009 of 8/September/2023, Friday
+#This is the dump of the LogCreator: <Player_Starboard Wing Travel Logger[2] LogCreator_IWPwmJaZM0eB>
+#This log file was created on: 22:24:55.581 of 8/September/2023, Friday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,29 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>19:7:46.009 of 8/September/2023, Friday
+#######>>>22:24:55.581 of 8/September/2023, Friday
 #>>>Initialized Player_Starboard Wing Travel logger
-#>>>SELF = <Player_Starboard Wing(451777) Travel_vE9qAhIWh8it>
-#>>>Initial Travel Type: None
-#>>>Updating Variables...
-#>>> -Is AI in Player in route CHECKING: Player Travel OK
-#>>>Destination set as None
-#>>>Set Exit Placement Name as None
-#>>>Set Exit Point to None
-#>>>Chaser base class initialization complete.
-#>>>Target Ship = NONE
-#>>>Chaser pre-emptive Refresher Initialization
-< ======== Dynamic TS ========= >
-Updating Travelling Procedures...
- -Update Loop MARK START
-<DTSC> -Time left:
- -Update Loop MARK COMPLETED
-< ========== END DTS ========== >
-## -------------------- ##
-####################
-#######>>>19:9:21.157 of 8/September/2023, Friday
-#>>>Initialized Player_Starboard Wing Travel logger
-#>>>SELF = <Player_Starboard Wing(608929) Travel_2nqO7qJ9mIy2>
+#>>>SELF = <Player_Starboard Wing(554684) Travel_dHCb8R8OxPuQ>
 #>>>Initial Travel Type: None
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -42,10 +22,6 @@ Updating Travelling Procedures...
 #>>>Target Ship = NONE
 #>>>Chaser pre-emptive Refresher Initialization
 ########################################
-# 19:13:15.787 of 8/September/2023, Friday
-#Ending of log dump - User is quiting the game
-########################################
-########################################
-# 19:13:15.787 of 8/September/2023, Friday
+# 22:28:30.386 of 8/September/2023, Friday
 #Ending of log dump - User is quiting the game
 ########################################

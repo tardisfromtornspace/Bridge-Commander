@@ -1,5 +1,9 @@
 This mod is a modification on an older mod I could not remember. The older mod had mostly normal technologies, moved by warp drive and had an energy shield. This change intends to make it more canon
 == Changelog ==
+1.0.9 - Bug Fixing
+ * Upgraded Simulated Point Defence from 0.8 to 0.9, now two possible crash causes upon heavy fire have been removed. Thank USS Sovereign for telling me how to use the debug function properly.
+1.0.8 - Bug Fixing
+ * Upgraded Simulated Point Defence from 0.6 to 0.8, now a lot of the weird behaviour happening before has been fixed.
 1.0.7 - Bug fixing
  * Fixed Simulated Point Defence TypeError sequence issue - it didn't really cause any problems but it was flagged on the console and would have caused problems if the sequence had multiple actions.
 1.0.6

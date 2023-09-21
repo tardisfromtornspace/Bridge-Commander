@@ -1,0 +1,47 @@
+#This is the dump of the LogCreator: <Total PointDefence Firepoint Andromeda-14 C Torpedo instance at _3f8f5800_p_Torpedo Travel Logger[2] LogCreator_2ajzhNU695Qu>
+#This log file was created on: 20:32:0.656 of 8/September/2023, Friday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>20:32:0.656 of 8/September/2023, Friday
+#>>>Initialized Total PointDefence Firepoint Andromeda-14 C Torpedo instance at _3f8f5800_p_Torpedo Travel logger
+#>>>SELF = <Total PointDefence Firepoint Andromeda-14 C Torpedo instance at _3f8f5800_p_Torpedo(1029064) Travel_qEZkoEO7oD69>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Ship is dead or dying
+#>>>Ship is dead or dying (at SetDestination)
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>20:34:7.089 of 8/September/2023, Friday
+#>>>Initialized Total PointDefence Firepoint Andromeda-14 C Torpedo instance at _3f8f5800_p_Torpedo Travel logger
+#>>>SELF = <Total PointDefence Firepoint Andromeda-14 C Torpedo instance at _3f8f5800_p_Torpedo(1196086) Travel_9rXyCCXEMH1k>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Ship is dead or dying
+#>>>Ship is dead or dying (at SetDestination)
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Stopping Refresh Handler
+#>>>Deleting...

@@ -1,0 +1,57 @@
+#This is the dump of the LogCreator: <Beliskner 3 Travel Logger LogCreator_6088xSuO0C0o>
+#This log file was created on: 21:45:45.703 of 8/September/2023, Friday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>21:45:45.703 of 8/September/2023, Friday
+#>>>Initialized Beliskner 3 Travel logger
+#>>>SELF = <Beliskner 3(432970) Travel_11od9tz0L1m8>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>21:45:48.109 of 8/September/2023, Friday
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>21:45:58.189 of 8/September/2023, Friday
+#>>>Updated Target Ship = Andromeda-2
+## -------------------- ##
+####################
+#######>>>21:46:2.503 of 8/September/2023, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>21:46:3.292 of 8/September/2023, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>21:46:4.539 of 8/September/2023, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>21:48:16.989 of 8/September/2023, Friday
+#>>>Updated Target Ship = Andromeda-4
+## -------------------- ##
+####################
+#######>>>21:49:37.734 of 8/September/2023, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+#>>> -Cancelling, too close to target to warp intercept...
+########################################
+# 21:52:7.446 of 8/September/2023, Friday
+#Ending of log dump - User is quiting the game
+########################################

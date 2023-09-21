@@ -1,0 +1,47 @@
+#This is the dump of the LogCreator: <Total PointDefence Firepoint Andromeda-14 C Torpedo instance at _3f713148_p_Torpedo Travel Logger[2] LogCreator_gCeZoM132mPF>
+#This log file was created on: 20:29:11.107 of 8/September/2023, Friday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>20:29:11.107 of 8/September/2023, Friday
+#>>>Initialized Total PointDefence Firepoint Andromeda-14 C Torpedo instance at _3f713148_p_Torpedo Travel logger
+#>>>SELF = <Total PointDefence Firepoint Andromeda-14 C Torpedo instance at _3f713148_p_Torpedo(809160) Travel_954VZid8281k>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Ship is dead or dying
+#>>>Ship is dead or dying (at SetDestination)
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>20:29:29.121 of 8/September/2023, Friday
+#>>>Initialized Total PointDefence Firepoint Andromeda-14 C Torpedo instance at _3f713148_p_Torpedo Travel logger
+#>>>SELF = <Total PointDefence Firepoint Andromeda-14 C Torpedo instance at _3f713148_p_Torpedo(834256) Travel_FlT0YQyZC6dm>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Ship is dead or dying
+#>>>Ship is dead or dying (at SetDestination)
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Stopping Refresh Handler
+#>>>Deleting...

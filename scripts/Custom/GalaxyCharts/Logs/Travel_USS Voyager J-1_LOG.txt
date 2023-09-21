@@ -1,0 +1,80 @@
+#This is the dump of the LogCreator: <USS Voyager J-1 Travel Logger LogCreator_t1pFHq5Gl42Q>
+#This log file was created on: 22:24:27.958 of 8/September/2023, Friday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>22:24:27.958 of 8/September/2023, Friday
+#>>>Initialized USS Voyager J-1 Travel logger
+#>>>SELF = <USS Voyager J-1(360980) Travel_lIyZeyItsv98>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>22:24:54.419 of 8/September/2023, Friday
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>22:25:0.623 of 8/September/2023, Friday
+#>>>Updated Target Ship = Andromeda-5
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:25:1.143 of 8/September/2023, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:25:1.648 of 8/September/2023, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:25:2.150 of 8/September/2023, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:25:2.726 of 8/September/2023, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:25:3.185 of 8/September/2023, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:25:3.432 of 8/September/2023, Friday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>22:25:23.246 of 8/September/2023, Friday
+#>>>Updated Target Ship = Andromeda-2
+## -------------------- ##
+####################
+#######>>>22:25:29.720 of 8/September/2023, Friday
+#>>>Updated Target Ship = Andromeda-6
+## -------------------- ##
+####################
+#######>>>22:26:17.422 of 8/September/2023, Friday
+#>>>Updated Target Ship = Andromeda-3
+## -------------------- ##
+####################
+#######>>>22:28:4.013 of 8/September/2023, Friday
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>22:28:9.471 of 8/September/2023, Friday
+#>>>Updated Target Ship = Andromeda-4
+########################################
+# 22:28:30.386 of 8/September/2023, Friday
+#Ending of log dump - User is quiting the game
+########################################

@@ -2,7 +2,7 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
 #         Simulated Point Defence.py by Alex SL Gato
-#         Version 0.8
+#         Version 0.9
 #         8th September 2023
 #         Based strongly on DampeningAOEDefensiveField.py by Alex Sl Gato, which was based on scripts\Custom\DS9FX\DS9FXPulsarFX\PulsarManager by USS Sovereign, and slightly on TractorBeams.py, Inversion Beam and Power Drain Beam 1.0 by MLeo Daalder, Apollo, and Dasher; some team-switching torpedo by LJ; and GraviticLance by Alex SL Gato, which was based on FiveSecsGodPhaser by USS Frontier, scripts/ftb/Tech/TachyonProjectile by the FoundationTechnologies team, and scripts/ftb/Tech/FedAblativeArmour by the FoundationTechnologies team.
 #         Also based strongly on PointDefence.py by Defiant
@@ -179,6 +179,7 @@ try:
 				pInstance.lTechs.remove(self)
 
 		def countdown(self):
+			debug(__name__ + ", Countdown")
 			if not self.pTimer:
 				global defaultSlice
 				self.pTimer = App.PythonMethodProcess()
@@ -189,12 +190,14 @@ try:
 				self.pTimer.SetDelayUsesGameTime(1)
 
 		def lookclosershipsEveryone(self, fTime):
+			debug(__name__ + ", lookclosershipsEveryone")
 			global pAllShipsWithTheTech
 			for myShipInstance in pAllShipsWithTheTech.keys():
 				if myShipInstance != None:
 					self.lookcloserProjectiles(fTime, pAllShipsWithTheTech[myShipInstance], myShipInstance)
 
 		def lookcloserProjectiles(self, fTime, pShip, pInstance):
+			debug(__name__ + ", lookcloserProjectiles")
 			if pInstance == None:
 				return
 
@@ -270,27 +273,64 @@ try:
 			thisShipInEnemyGroup = pEnemies.IsNameInGroup(pShip.GetName())
 			thisShipInNeutralGroup = pGroup.IsNameInGroup(pShip.GetName())
 
+			shipName = pShip.GetName()
+
 			global ticksPerKilometer
 			kIter = pProx.GetNearObjects(pShip.GetWorldLocation(), iRange * ticksPerKilometer, 1) 
 			while 1:
+				debug(__name__ + ", Checking Distance 1")
 				pObject = pProx.GetNextObject(kIter)
 				if not pObject:
 					break
-				if pObject.IsTypeOf(App.CT_TORPEDO) and not pObject.GetName() == pShip.GetName() and not (self.Distance(pShip, pObject) < (iMinRange * ticksPerKilometer)):
 
-					pTorp = App.Torpedo_GetObjectByID(None, pObject.GetObjID())
-					if pTorp:
-						pFiredShip = App.ShipClass_GetObjectByID(None, pTorp.GetTargetID())
+				if not pShip:
+					return
 
-						## Check the friendlies and enemy group for the ship. If that ship does not exist it is a stray torpedo and must be shot down in case it hits us
-						if not pFiredShip or (pFriendlies.IsNameInGroup(pFiredShip.GetName()) and thisShipInFriendlyGroup) or (pEnemies.IsNameInGroup(pFiredShip.GetName()) and thisShipInEnemyGroup)  or (pGroup.IsNameInGroup(pFiredShip.GetName()) and thisShipInNeutralGroup):
-							lTorpTargets.append(pObject.GetObjID())
+				debug(__name__ + ", Checking Distance 2")
+				isTorpedo = pObject.IsTypeOf(App.CT_TORPEDO)
+				debug(__name__ + ", Checking Distance 2A")
+				if isTorpedo:
+					#objName = None
+					#if pObject and hasattr(pObject, "GetName") and pObject.GetName() != None:
+					#	objName = pObject.GetName()
+					#debug(__name__ + ", Checking Distance 2B")
+					#sameName = 0
+					#if objName != None:
+					#	sameName = (objName == shipName)
+					#debug(__name__ + ", Checking Distance 2C")
+					#if not sameName:
+					debug(__name__ + ", Checking Distance 2D")
+					if not (self.Distance(pShip, pObject, iMinRange * ticksPerKilometer) < (iMinRange * ticksPerKilometer)):
+						
+					
 
-			pProx.EndObjectIteration(kIter)  
-			
+				
+				#sameName = (objName == shipName)
+				#debug(__name__ + ", Checking Distance 2B")
+
+				#if pObject.IsTypeOf(App.CT_TORPEDO) and not pObject.GetName() == pShip.GetName() and not (self.Distance(pShip, pObject, iMinRange * ticksPerKilometer) < (iMinRange * ticksPerKilometer)):
+				#if isTorpedo and not sameName and not (self.Distance(pShip, pObject, iMinRange * ticksPerKilometer) < (iMinRange * ticksPerKilometer)):
+				
+						debug(__name__ + ", Checking Distance 3")
+						pTorp = App.Torpedo_GetObjectByID(None, pObject.GetObjID())
+						debug(__name__ + ", Checking Distance 4")
+						if pTorp:
+							pFiredShip = App.ShipClass_GetObjectByID(None, pTorp.GetTargetID())
+							debug(__name__ + ", Checking Distance 5")
+							## Check the friendlies and enemy group for the ship. If that ship does not exist it is a stray torpedo and must be shot down in case it hits us
+							if not pFiredShip or (pFriendlies.IsNameInGroup(pFiredShip.GetName()) and thisShipInFriendlyGroup) or (pEnemies.IsNameInGroup(pFiredShip.GetName()) and thisShipInEnemyGroup)  or (pGroup.IsNameInGroup(pFiredShip.GetName()) and thisShipInNeutralGroup):
+								lTorpTargets.append(pObject.GetObjID())
+							debug(__name__ + ", Checking Distance 6")
+
+			debug(__name__ + ", Going to remove iterator")
+
+			pProx.EndObjectIteration(kIter) 
+
+			debug(__name__ + ", Finished Distance Check")			
 			self.shootThemDown(lTorpTargets, pShip, pInstance, pSet)
 
 		def shootThemDown(self, lTorpTargets, pShip, pInstance, pSet):
+			debug(__name__ + ", shootThemDown")
 			if len(lTorpTargets) == 0:
 				return 0
 			torpsFiredDown = 0
@@ -601,7 +641,8 @@ try:
 						pFirePoint.SetTranslate(kLocation)
 						pFirePoint.UpdateNodeOnly()
 					else:
-						pWeaponSystem.StopFiring()
+						if pWeaponSystem:
+							pWeaponSystem.StopFiring()
 						if preferredWeapon == "Phaser" or preferredWeapon == "Tractor":
 							# little offset, so the Torpedo doesn't destroy our firepoint
 							kLocation = App.TGPoint3()
@@ -685,17 +726,23 @@ try:
 						pWeaponSystem.GetProperty().SetSingleFire(originalSingle)
 
 
-		def Distance(self, pObject1, pObject2):
+		def Distance(self, pObject1, pObject2, minMax):
 			debug(__name__ + ", Distance")
-			vDifference = pObject1.GetWorldLocation()
-			vDifference.Subtract(pObject2.GetWorldLocation())
+			if pObject1 and pObject2:
+				vDifference = pObject1.GetWorldLocation()
+				vDifference.Subtract(pObject2.GetWorldLocation())
 
-			return vDifference.Length()
+				return vDifference.Length()
+
+			else:
+				return minMax + 1 # Absurd value, one of those ships is not there anymore so we need to indicate that ship is no longer with us
 
 		def isAPulse(self, thisTorpGuideLife, thisTorpTurn):
+			debug(__name__ + ", isAPulse")
 			return thisTorpGuideLife <= 0.0 or thisTorpTurn == 0.0
 
 	def attackaFirePoint(pAction, pWeaponSystem, pFirePoint, pShip, pInstance):
+		debug(__name__ + ", attackaFirePoint")
 		pShipInst = None
 		if pShip:
 			pShipInst = FoundationTech.dShips[pShip.GetName()]

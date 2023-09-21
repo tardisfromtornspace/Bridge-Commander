@@ -4,7 +4,7 @@ FALSE = 0
 bFX_Enabled = 1
 ###
 bFX_ExpSparkFXLevel = 4
-bFX_DamageSparkFXLevel = 4
+bFX_DamageSparkFXLevel = 1
 bFX_DamageSparkFXDuration = 60.0
 bFX_ParticleControl = 20
 ###

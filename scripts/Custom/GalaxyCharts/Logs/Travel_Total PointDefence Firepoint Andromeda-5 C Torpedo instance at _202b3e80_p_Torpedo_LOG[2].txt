@@ -1,0 +1,55 @@
+#This is the dump of the LogCreator: <Total PointDefence Firepoint Andromeda-5 C Torpedo instance at _202b3e80_p_Torpedo Travel Logger[2] LogCreator_RP7lYa3ouWfB>
+#This log file was created on: 21:46:45.769 of 8/September/2023, Friday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>21:46:45.769 of 8/September/2023, Friday
+#>>>Initialized Total PointDefence Firepoint Andromeda-5 C Torpedo instance at _202b3e80_p_Torpedo Travel logger
+#>>>SELF = <Total PointDefence Firepoint Andromeda-5 C Torpedo instance at _202b3e80_p_Torpedo(509999) Travel_ff82QRKwpY7Z>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>21:46:55.271 of 8/September/2023, Friday
+#>>>Initialized Total PointDefence Firepoint Andromeda-5 C Torpedo instance at _202b3e80_p_Torpedo Travel logger
+#>>>SELF = <Total PointDefence Firepoint Andromeda-5 C Torpedo instance at _202b3e80_p_Torpedo(524364) Travel_FsLqKt4URoaH>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 21:52:7.446 of 8/September/2023, Friday
+#Ending of log dump - User is quiting the game
+########################################
+########################################
+# 21:52:7.446 of 8/September/2023, Friday
+#Ending of log dump - User is quiting the game
+########################################

@@ -11,3 +11,5 @@ Foundation.ShipDef.Galaxy = F_FedAttackLightCruiser.FedAttackLightCruiserAI(abbr
 
 Foundation.ShipDef.Galaxy.sBridge = 'GalaxyBridge'
 Foundation.ShipDef.Galaxy.fMaxWarp = 9.6
+
+

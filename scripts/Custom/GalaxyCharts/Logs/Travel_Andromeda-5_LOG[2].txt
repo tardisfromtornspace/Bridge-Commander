@@ -1,0 +1,36 @@
+#This is the dump of the LogCreator: <Andromeda-5 Travel Logger[2] LogCreator_F7DB080Yr7dJ>
+#This log file was created on: 22:24:27.958 of 8/September/2023, Friday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>22:24:27.958 of 8/September/2023, Friday
+#>>>Initialized Andromeda-5 Travel logger
+#>>>SELF = <Andromeda-5(395177) Travel_23vrsv8E7VB2>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>22:24:53.887 of 8/September/2023, Friday
+#>>>Updated Target Ship = USS Voyager J-1
+## -------------------- ##
+####################
+#######>>>22:25:18.250 of 8/September/2023, Friday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 22:28:30.386 of 8/September/2023, Friday
+#Ending of log dump - User is quiting the game
+########################################

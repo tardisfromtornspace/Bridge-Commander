@@ -1,0 +1,69 @@
+#This is the dump of the LogCreator: <Total PointDefence Firepoint Andromeda-14 C Torpedo instance at _3f8f32a0_p_Torpedo Travel Logger[2] LogCreator_77497U5nV0am>
+#This log file was created on: 20:32:33.228 of 8/September/2023, Friday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>20:32:33.228 of 8/September/2023, Friday
+#>>>Initialized Total PointDefence Firepoint Andromeda-14 C Torpedo instance at _3f8f32a0_p_Torpedo Travel logger
+#>>>SELF = <Total PointDefence Firepoint Andromeda-14 C Torpedo instance at _3f8f32a0_p_Torpedo(1072370) Travel_W1dAC51Ho331>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>20:35:24.397 of 8/September/2023, Friday
+#>>>Initialized Total PointDefence Firepoint Andromeda-14 C Torpedo instance at _3f8f32a0_p_Torpedo Travel logger
+#>>>SELF = <Total PointDefence Firepoint Andromeda-14 C Torpedo instance at _3f8f32a0_p_Torpedo(1287816) Travel_Vl6eDY1F94qr>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Ship is dead or dying
+#>>>Ship is dead or dying (at SetDestination)
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>20:35:41.283 of 8/September/2023, Friday
+#>>>Initialized Total PointDefence Firepoint Andromeda-14 C Torpedo instance at _3f8f32a0_p_Torpedo Travel logger
+#>>>SELF = <Total PointDefence Firepoint Andromeda-14 C Torpedo instance at _3f8f32a0_p_Torpedo(1310254) Travel_zv823WTx3x2H>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Ship is dead or dying
+#>>>Ship is dead or dying (at SetDestination)
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Stopping Refresh Handler
+#>>>Deleting...
