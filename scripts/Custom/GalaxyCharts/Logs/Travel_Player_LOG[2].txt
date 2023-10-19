@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Player Travel Logger[2] LogCreator_Jt4966Ohtv7F>
-#This log file was created on: 23:43:4.702 of 19/October/2023, Thursday
+#This is the dump of the LogCreator: <Player Travel Logger[2] LogCreator_nI6M87698HAg>
+#This log file was created on: 0:2:12.273 of 20/October/2023, Friday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>23:43:4.702 of 19/October/2023, Thursday
+#######>>>0:2:12.273 of 20/October/2023, Friday
 #>>>Initialized Player Travel logger
-#>>>SELF = <Player(59109) Travel_Ma31oAEfV15z>
+#>>>SELF = <Player(63840) Travel_KiI8kW6hXs80>
 #>>>Initial Travel Type: Warp
 #>>>Updating Variables...
 #>>> -Is Player - Checked
@@ -23,10 +23,83 @@ Updating Travelling Procedures...
 #>>>Chaser pre-emptive Refresher Initialization
 ## -------------------- ##
 ####################
-#######>>>23:44:24.310 of 19/October/2023, Thursday
+#######>>>0:3:43.154 of 20/October/2023, Friday
+#>>>Travelling INTERCEPT procedures initiated...
+#>>>Updating Variables...
+#>>> -Is Player - Checked
+#>>> -Checked: Ship can warp, travel procedures started.
+#>>> -Stopped Intercept speed, incase the ship was intercepting.
+#>>> -Doing Player only stuff
+#>>> -Target is InSystemWarpNavPoint_Player (186134)
+#>>>Playing travel intercept sequence...
+## -------------------- ##
+####################
+#######>>>0:3:46.188 of 20/October/2023, Friday
+#>>>Travel INTERCEPT sequence ended...
+#>>> -Doing Player only stuff
+#>>>Travelling Intercept procedures finished...
+#>>>Stopping warp intercept
+#>>>Stopped Warp Intercept...
+## -------------------- ##
+####################
+#######>>>0:3:48.397 of 20/October/2023, Friday
+#>>>Finished  FinishStopIntercept
+## -------------------- ##
+####################
+#######>>>0:4:38.371 of 20/October/2023, Friday
+#>>>Travelling INTERCEPT procedures initiated...
+#>>>Updating Variables...
+#>>> -Is Player - Checked
+#>>> -Checked: Ship can warp, travel procedures started.
+#>>> -Stopped Intercept speed, incase the ship was intercepting.
+#>>> -Doing Player only stuff
+#>>> -Target is InSystemWarpNavPoint_Player (186134)
+#>>>Playing travel intercept sequence...
+## -------------------- ##
+####################
+#######>>>0:4:41.907 of 20/October/2023, Friday
+#>>>Travel INTERCEPT sequence ended...
+#>>> -Doing Player only stuff
+#>>>Travelling Intercept procedures finished...
+## -------------------- ##
+####################
+#######>>>0:4:42.390 of 20/October/2023, Friday
+#>>>Stopping warp intercept
+#>>>Stopped Warp Intercept...
+## -------------------- ##
+####################
+#######>>>0:4:44.437 of 20/October/2023, Friday
+#>>>Finished  FinishStopIntercept
+## -------------------- ##
+####################
+#######>>>0:6:19.620 of 20/October/2023, Friday
 #>>>Stopping Refresh Handler
 #>>>Deleting...
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>0:6:34.651 of 20/October/2023, Friday
+#>>>Initialized Player Travel logger
+#>>>SELF = <Player(357142) Travel_i54bra6pHhIx>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is Player - Checked
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
 ########################################
-# 23:44:35.763 of 19/October/2023, Thursday
+# 0:6:41.052 of 20/October/2023, Friday
+#Ending of log dump - User is quiting the game
+########################################
+########################################
+# 0:6:41.052 of 20/October/2023, Friday
 #Ending of log dump - User is quiting the game
 ########################################

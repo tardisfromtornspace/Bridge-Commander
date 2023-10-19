@@ -1,0 +1,32 @@
+#This is the dump of the LogCreator: <Cube-5 Travel Logger LogCreator_kRj14qk6irlI>
+#This log file was created on: 0:2:12.273 of 20/October/2023, Friday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>0:2:12.273 of 20/October/2023, Friday
+#>>>Initialized Cube-5 Travel logger
+#>>>SELF = <Cube-5(69728) Travel_PGjk1i60xCki>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>0:2:42.755 of 20/October/2023, Friday
+#>>>Stopping Refresh Handler
+#>>>Deleting...
+########################################
+# 0:6:41.052 of 20/October/2023, Friday
+#Ending of log dump - User is quiting the game
+########################################
