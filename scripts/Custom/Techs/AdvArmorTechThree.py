@@ -7,6 +7,11 @@ import Lib.LibEngineering
 import math
 from bcdebug import debug
 
+MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
+            "Version": "1.3",
+            "License": "LGPL",
+            "Description": "Read info below for better understanding"
+            }
 
 """
 
@@ -220,6 +225,19 @@ class AdvArmorTechTwoDef(FoundationTech.TechDef):
                 
 oAdvArmorTechTwo = AdvArmorTechTwoDef("Adv Armor Tech")
 
+def SubsystemStateChanged(pObject, pEvent):
+	debug(__name__ + ", SubsystemStateChanged")
+	pShip = App.ShipClass_Cast(pObject)
+	pSubsystem = pEvent.GetSource()
+	print "Ship %s with AdvArmorTech2 has changed a subsystem" % pShip.GetName()
+
+	# if the subsystem that changes its power is a weapon
+	if pSubsystem.IsTypeOf(App.CT_WEAPON_SYSTEM):
+		# set wings for this alert state
+		print "Ship %s with AdvArmorTech2 has changed the weapon subsystem" % pShip.GetName()
+		AdvArmorToggleAI(pObject, pEvent, pShip)
+		
+	pObject.CallNextHandler(pEvent)
 
 # called when subsystem on any ship is damaged
 def SubDamage(pObject, pEvent): # TO-DO ARREGLAR ESTO, NO CAPTA NINGUN OBJETO
@@ -281,14 +299,14 @@ def AdvArmorPlayer(): # For player
 	batt_limit=pPower.GetMainBatteryLimit()
 	if (batt_chg<=(batt_limit*.05)):
 		ArmorButton.SetName(App.TGString("Plating Offline"))
+		if (not sOriginalShipScript[pShip.GetName()] == None):
+			ReplaceModel(pShip, sOriginalShipScript[pShip.GetName()])
 		if (AdvArmorRecord[pShip.GetName()]):
 			MissionLib.ShowSubsystems(AdvArmorRecord[pShip.GetName()])
 			AdvArmorRecord[pShip.GetName()]=0
-			pShip.SetInvincible(0)
 			pShip.SetVisibleDamageRadiusModifier(vd_rad_mod[pShip.GetName()])
 			pShip.SetVisibleDamageStrengthModifier(vd_str_mod[pShip.GetName()])
-		if (not sOriginalShipScript[pShip.GetName()] == None):
-			ReplaceModel(pShip, sOriginalShipScript[pShip.GetName()])
+			pShip.SetInvincible(0)
 		return
 	armor_pwr=batt_chg*armor_ratio
 	hull_max=pHull.GetMaxCondition()
@@ -304,11 +322,11 @@ def AdvArmorPlayer(): # For player
 		if (AdvArmorRecord[pShip.GetName()]):
 			MissionLib.ShowSubsystems(AdvArmorRecord[pShip.GetName()])
 			AdvArmorRecord[pShip.GetName()]=0
-			pShip.SetInvincible(0)
 			pShip.SetVisibleDamageRadiusModifier(vd_rad_mod[pShip.GetName()])
 			pShip.SetVisibleDamageStrengthModifier(vd_str_mod[pShip.GetName()])		
 			if (not sOriginalShipScript[pShip.GetName()] == None):
 				ReplaceModel(pShip, sOriginalShipScript[pShip.GetName()])
+			pShip.SetInvincible(0)
 	pPower.SetMainBatteryPower(armor_pwr/armor_ratio)
 	return
 
@@ -344,14 +362,14 @@ def AdvArmor(pShip): # for AI
 	batt_chg=pPower.GetMainBatteryPower()
 	batt_limit=pPower.GetMainBatteryLimit()
 	if (batt_chg<=(batt_limit*.05)):
+		if (not sOriginalShipScript[pShip.GetName()] == None):
+			ReplaceModel(pShip, sOriginalShipScript[pShip.GetName()])
 		if (AdvArmorRecord[pShip.GetName()]):
 			MissionLib.ShowSubsystems(AdvArmorRecord[pShip.GetName()])
 			AdvArmorRecord[pShip.GetName()]=0
-			pShip.SetInvincible(0)
 			pShip.SetVisibleDamageRadiusModifier(vd_rad_mod[pShip.GetName()])
 			pShip.SetVisibleDamageStrengthModifier(vd_str_mod[pShip.GetName()])
-		if (not sOriginalShipScript[pShip.GetName()] == None):
-			ReplaceModel(pShip, sOriginalShipScript[pShip.GetName()])
+			pShip.SetInvincible(0)
 		return
 	armor_pwr=batt_chg*armor_ratio
 	hull_max=pHull.GetMaxCondition()
@@ -366,11 +384,11 @@ def AdvArmor(pShip): # for AI
 		if (AdvArmorRecord[pShip.GetName()]):
 			MissionLib.ShowSubsystems(AdvArmorRecord[pShip.GetName()])
 			AdvArmorRecord[pShip.GetName()]=0
-			pShip.SetInvincible(0)
 			pShip.SetVisibleDamageRadiusModifier(vd_rad_mod[pShip.GetName()])
 			pShip.SetVisibleDamageStrengthModifier(vd_str_mod[pShip.GetName()])		
 			if (not sOriginalShipScript[pShip.GetName()] == None):
 				ReplaceModel(pShip, sOriginalShipScript[pShip.GetName()])
+			pShip.SetInvincible(0)
 	pPower.SetMainBatteryPower(armor_pwr/armor_ratio)
 	return
 
@@ -445,11 +463,11 @@ def AdvArmorTogglePlayer(pObject, pEvent):
 		if (conditionA):
 			MissionLib.ShowSubsystems(AdvArmorRecord[pShip.GetName()])
 			AdvArmorRecord[pShip.GetName()]=0
-			pShip.SetInvincible(0)
 			pShip.SetVisibleDamageRadiusModifier(vd_rad_mod[pShip.GetName()])
 			pShip.SetVisibleDamageStrengthModifier(vd_str_mod[pShip.GetName()])
 			if not (sOriginalShipScript[pShip.GetName()] == None):
 				ReplaceModel(pShip, sOriginalShipScript[pShip.GetName()])
+			pShip.SetInvincible(0)
 	else:
 		ArmorButton.SetName(App.TGString("Plating Online"))
 		AdvArmorRecord[pShip.GetName()]=MissionLib.HideSubsystems(pShip)
@@ -517,11 +535,11 @@ def AdvArmorToggleAI(pObject, pEvent, pShip):
 		if (AdvArmorRecord[pShip.GetName()]):
 			MissionLib.ShowSubsystems(AdvArmorRecord[pShip.GetName()])
 			AdvArmorRecord[pShip.GetName()]=0
-			pShip.SetInvincible(0)
 			pShip.SetVisibleDamageRadiusModifier(vd_rad_mod[pShip.GetName()])
 			pShip.SetVisibleDamageStrengthModifier(vd_str_mod[pShip.GetName()])
 			if not (sOriginalShipScript[pShip.GetName()] == None):
 				ReplaceModel(pShip, sOriginalShipScript[pShip.GetName()])
+			pShip.SetInvincible(0)
 	else:
 		AdvArmorRecord[pShip.GetName()]=MissionLib.HideSubsystems(pShip)
 		pShip.SetInvincible(1)
@@ -589,11 +607,11 @@ def AdvArmorTogglePlayerFirst(armourActive):
 		ArmorButton.SetName(App.TGString("Plating Offline"))
 		MissionLib.ShowSubsystems(AdvArmorRecord[pShip.GetName()])
 		AdvArmorRecord[pShip.GetName()]=0
-		pShip.SetInvincible(0)
 		pShip.SetVisibleDamageRadiusModifier(vd_rad_mod[pShip.GetName()])
 		pShip.SetVisibleDamageStrengthModifier(vd_str_mod[pShip.GetName()])
 		if not (sOriginalShipScript[pShip.GetName()] == None):
 			ReplaceModel(pShip, sOriginalShipScript[pShip.GetName()])
+		pShip.SetInvincible(0)
 	else:
 		ArmorButton.SetName(App.TGString("Plating Online"))
 		AdvArmorRecord[pShip.GetName()]=MissionLib.HideSubsystems(pShip)
@@ -660,11 +678,11 @@ def AdvArmorToggleAIFirst(pShip, armourActive):
 	if not (armourActive):
 		MissionLib.ShowSubsystems(AdvArmorRecord)
 		AdvArmorRecord[pShip.GetName()]=0
-		pShip.SetInvincible(0)
 		pShip.SetVisibleDamageRadiusModifier(vd_rad_mod[pShip.GetName()])
 		pShip.SetVisibleDamageStrengthModifier(vd_str_mod[pShip.GetName()])
 		if not (sOriginalShipScript[pShip.GetName()] == None):
 			ReplaceModel(pShip, sOriginalShipScript[pShip.GetName()])
+		pShip.SetInvincible(0)
 	else:
 		AdvArmorRecord[pShip.GetName()]=MissionLib.HideSubsystems(pShip)
 		pShip.SetInvincible(1)
