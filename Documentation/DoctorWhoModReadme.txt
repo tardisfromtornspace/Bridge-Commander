@@ -1,4 +1,6 @@
 === Changelong ===
+1.0.8
+* Dalek Crucible now available.
 1.0.7
 * Fix to a very outlier condition with the armour tech which could only happen if a ship dealt so much ton of millions of damage continuously so fast a possible race condition happened, thanks to Grey for detecting it!
 * ??? Ehhh... it must be the alignment, I was looking at the constellation of Orion. Look! Tell me, what can you see, up there, in the sky? I can't see anything, it's just...black. But I mean, it's working, the telescope is working, there are no clouds in the sky! It was there, the entire constellat... Look, look there! They're going out! Oh my God! The Stars are going out!
@@ -29,6 +31,7 @@
 - Icons done by Alex SL Gato.
 - scripts: for the most part Alex SL Gato, except the Babylon 5 Jumpspace and Time Vortex technology, which was adapted from the Slipstream's creator by Alex SL Gato.
 - mod/ships/hardpoint: Alex SL Gato.
+- some parts of code and advice from USS Sovereign and BCS:TNG
 
 ==What does this mod include==
 Several daleks, a Time War dalek saucer, an Emperor Dalek Saucer, a refurbished Doctor's type 40 TARDIS, a Type 89 TARDIS AND a type 560 Battle TARDIS, capable of entering the Time Vortex. This Time Vortex is also customizable on its own configuration menu.

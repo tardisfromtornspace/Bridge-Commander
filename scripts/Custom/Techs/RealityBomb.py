@@ -2,9 +2,9 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
 #         RealityBomb.py by Alex SL Gato
-#         Version 0.4
-#         19th October 2023
-#         Based on Simulated Point Defense.py and DampeningAOEDefensiveField.py by Alex SL Gato, which was based strongly on scripts\Custom\DS9FX\DS9FXPulsarFX\PulsarManager by USS Sovereign, and slightly on TractorBeams.py, Inversion Beam and Power Drain Beam 1.0 by MLeo Daalder, Apollo, and Dasher; some team-switching torpedo by LJ; and GraviticLance by Alex SL Gato, which was based on FiveSecsGodPhaser by USS Frontier, scripts/ftb/Tech/TachyonProjectile by the FoundationTechnologies team, and scripts/ftb/Tech/FedAblativeArmour by the FoundationTechnologies team.
+#         Version 0.5
+#         26th October 2023
+#         Based on Simulated Point Defense.py and DampeningAOEDefensiveField.py by Alex SL Gato, which was based strongly on scripts\Custom\DS9FX\DS9FXPulsarFX\PulsarManager by USS Sovereign, and slightly on TractorBeams.py, Inversion Beam and Power Drain Beam 1.0 by MLeo Daalder, Apollo, and Dasher; some team-switching torpedo by LJ; and GraviticLance by Alex SL Gato, which was based on FiveSecsGodPhaser by USS Frontier, scripts/ftb/Tech/TachyonProjectile by the FoundationTechnologies team, and scripts/ftb/Tech/FedAblativeArmour by the FoundationTechnologies team, and AssimilationBeam.py from BCS:TNG and Apollo.
 #         Special thanks to USS Sovereign for some tips!                 
 #################################################################################################################
 # This tech gives a ship the ability to destroy an entire system during an entire play session (meaning the system will also remain destroyedd once you end this simulation).
@@ -93,8 +93,10 @@ try:
 			FoundationTech.TechDef.__init__(self, name)
 			self.pEventHandler = App.TGPythonInstanceWrapper()
 			self.pEventHandler.SetPyWrapper(self)
+			App.g_kEventManager.RemoveBroadcastHandler(App.ET_ENTERED_SET, self.pEventHandler, "PlayerRespawned")
 			App.g_kEventManager.RemoveBroadcastHandler(Foundation.TriggerDef.ET_FND_CREATE_PLAYER_SHIP, self.pEventHandler, "PlayerRespawned") #ET_PLAYER_SHIP_CREATED does not exist on App.py
 			App.g_kEventManager.AddBroadcastPythonMethodHandler(Foundation.TriggerDef.ET_FND_CREATE_PLAYER_SHIP, self.pEventHandler, "PlayerRespawned")
+			App.g_kEventManager.AddBroadcastPythonMethodHandler(App.ET_ENTERED_SET, self.pEventHandler, "PlayerRespawned")
 			global bOverflow
 			bOverflow = 1
 			self.pTimer = None
@@ -111,16 +113,35 @@ try:
 				App.g_kModelManager.Purge()
 			except:
 				pass
-			#TO-DO now what?
-			#global pAllObjectsSpecialThatNeedToBeRestored
-			#for proximityManToRestore in pAllObjectsSpecialThatNeedToBeRestored.keys():
-			#	try:
-			#		for pObject in pAllObjectsSpecialThatNeedToBeRestored[proximityManToRestore]:
-			#			pObject.SetHidden(0)
-			#			pObject.UpdateNodeOnly()
-			#			proximityManToRestore.AddObject(pObject)
-			#	except:
-			#		print "Failed to restore an item"
+
+			#try:
+			#	App.g_kSetManager.Purge()
+			#except:
+			#	pass
+			#try:
+			#	App.g_kSetManager.ClearRenderedSet()
+			#except:
+			#	pass
+			self.hideSignals()
+
+		def hideSignals(self):
+			pPlayer = MissionLib.GetPlayer()
+			playerSet = "DeepSpace"
+			if pPlayer:
+				playerSet = repr(pPlayer.GetContainingSet())
+			#print "Looking for player's set (", playerSet ,")"
+			for systemSet in pAllObjectsSpecialThatNeedToBeRestored.keys():
+				#print "systemSet"
+				if playerSet == systemSet:
+					#print "FOUND SET"
+					for planetToHide in pAllObjectsSpecialThatNeedToBeRestored[systemSet]:
+						#print "removing the button of orbit planet for planet ", planetToHide
+						try:
+							DeleteMenuButton("Helm", planetToHide, "Orbit Planet")
+						except:
+							pass
+					break
+			#print "No system match found"
 
 		def Attach(self, pInstance):
 			debug(__name__ + ", Attach")
@@ -210,6 +231,7 @@ try:
 		def lookclosershipsEveryone(self, fTime):
 			debug(__name__ + ", Reality Bomb Counter lookclosershipsEveryone")
 			global pAllShipsWithTheTech
+			#self.hideSignals() # Dirty way of keeping menu cleared
 			for myShipInstance in pAllShipsWithTheTech.keys():
 				self.lookcloserships(fTime, pAllShipsWithTheTech[myShipInstance], myShipInstance)
 
@@ -416,15 +438,30 @@ try:
 
 			for aObject in pSet.GetClassObjectList(App.CT_SUN):
 				try:
-					DestroyEverything(aObject, 1, pSet)
+					DestroyEverything2(aObject, 1, pSet, pProxManager)
 				except:
 					print "a SUN survived"
+
+			for aObject in pSet.GetClassObjectList(App.CT_WAYPOINT):
+				try:
+					DestroyEverything(aObject, 1, pSet)
+				except:
+					print "a WAYPOINT survived"
+					traceback.print_exc()
+
+			for aObject in pSet.GetClassObjectList(App.CT_LIGHT_PLACEMENT):
+				try:
+					DestroyEverything(aObject, 1, pSet)
+				except:
+					print "a LIGHT PLACEMENT survived"
+					traceback.print_exc()
 
 			for aObject in pSet.GetClassObjectList(App.CT_PLANET):
 				try:
 					DestroyEverything2(aObject, 1, pSet, pProxManager)
 				except:
 					print "a PLANET survived"
+					traceback.print_exc()
 
 			#if not playerWillDie: # Planets dying at the same time as players generates a weird issue
 
@@ -437,7 +474,12 @@ try:
 			for kObject in lDrain:
 				if kObject is not None:
 					try:
-						pFirepoint = loadspacehelper.CreateShip(sFirepointScript, pSet, kObject.GetName() + " Atom field", None)
+						myNami = kObject.GetName()
+						try:
+							myNami = kObject.GetName() + " Atom field"
+						except:
+							myNami = str(kObject) + " Atom field"
+						pFirepoint = loadspacehelper.CreateShip(sFirepointScript, pSet, myNami, None)
 						pFirepoint.SetTargetable(0)
 						pFirepoint.SetTranslate(kObject.GetWorldLocation())
 						pPower = pFirepoint.GetPowerSubsystem().GetProperty()
@@ -454,6 +496,7 @@ try:
 						
 					except:
 						print "Some error with effects"
+						traceback.print_exc()
 
 					notShip = 1
 					if kObject.IsTypeOf(App.CT_SHIP):
@@ -493,8 +536,12 @@ try:
 			return 0
 
 
-	def PlaceAsteroidField(pAction, pSet, sName, fRadius, kLocation, kThis):
-		debug(__name__ + ", Reality Bomb Counter PlaceAsteroidField")
+	def PlaceAsteroidField(pAction, pSet, sName, fRadius, kLocation):
+		debug(__name__ + ", Reality Bomb PlaceAsteroidField")
+
+		global 	fSetNumTilesPerAxisRadiusDiv, iSetNumAsteroidsPerTile, fRoidSizeFactor
+
+		kThis = App.AsteroidFieldPlacement_Create(sName + " Dust field", pSet.GetName(), None)
 		kThis.SetStatic(0)
 		kThis.SetNavPoint(0)
 		kThis.SetTranslate(kLocation)
@@ -571,36 +618,50 @@ try:
 		radio = pObject.GetRadius()
 		location = pObject.GetWorldLocation()
 		if notShip:
-			#pObject.Destroy()
 			if pObject.IsTypeOf(App.CT_TORPEDO):
 				pkTorp = App.Torpedo_Cast(pObject)
 				if pkTorp:
 					pkTorp.SetLifetime(0.0)
-			#pSet.RemoveObjectFromSet(nombre)
 			
-			#global pAllObjectsSpecialThatNeedToBeRestored
-			#if not pAllObjectsSpecialThatNeedToBeRestored.has_key(pProxManager):
-			#	pAllObjectsSpecialThatNeedToBeRestored[pProxManager] = []
+			global pAllObjectsSpecialThatNeedToBeRestored
 
-			#pAllObjectsSpecialThatNeedToBeRestored[pProxManager].append(pObject)
+			if not pAllObjectsSpecialThatNeedToBeRestored.has_key(repr(pSet)):
+				pAllObjectsSpecialThatNeedToBeRestored[repr(pSet)] = []
 
-			#pObject.SetDeleteMe(1)
+			pAllObjectsSpecialThatNeedToBeRestored[repr(pSet)].append(nombre)
 
 			# Since the game crashes if you delete a planet/Try to remove it from collisions once the player leaves the system or tries to... we'll have to keep us content with hiding it and sending it to the next universe
-			# Thanks for this tip, USS Sovereign!
+			# Thanks for this tip, USS Sovereign, even if the removing the planet from the proximity manager part didn't work!
+			pPlayer = MissionLib.GetPlayer()
+			
+			if pPlayer:
+				playerTarget = pPlayer.GetTarget()
+				if playerTarget and not playerTarget.IsTypeOf(App.CT_SHIP):
+					MissionLib.ClearTarget()
+
+			DeleteMenuButton("Helm", nombre, "Orbit Planet")
+
 			pObject.SetHidden(1)
+			pObject.SetScannable(0)
+			pObject.SetTranslateXYZ(9999999.0, 9999999.0, 9999999.0)# apparently (999999999999999.0, 999999999999999.0, 999999999999999.0) is too much
 
-			pObject.SetTranslateXYZ(0.0, 0.0, 9999999999999999999.0)
-
-			#pPlanet = App.Planet_Cast(pObject)
-			#pPlanet.__del__()
 			pObject.UpdateNodeOnly()
 
-			#-pProx = pSet.GetProximityManager()
-			#-pProx.RemoveObject(pObject)
+			# Delete the ship.
+			#pDeletionEvent = App.TGEvent_Create()
+			#pDeletionEvent.SetEventType(App.ET_DELETE_OBJECT_PUBLIC)
+			#pDeletionEvent.SetDestination(pObject)
+			#App.g_kEventManager.AddEvent(pDeletionEvent)
 
 			#pProxManager.RemoveObject(pObject)
-			#pProxManager.Update() # TEST
+
+			#pSet.RemoveObjectFromSet(nombre)
+			#pDeepSpaceSet	= App.g_kSetManager.GetSet("DeepSpace")
+			#pDeepSpaceSet.AddObjectToSet(pObject, nombre)
+
+			pSeq = App.TGSequence_Create()
+			pSeq.AppendAction(App.TGScriptAction_Create(__name__, "PlaceAsteroidField", pSet, nombre, radio, location))
+			pSeq.Play()
 		
 
 	def KillAShip(pAction, pSet, pkShip):
@@ -649,6 +710,28 @@ try:
 
 		App.g_kSoundManager.PlaySound("Enter")
 		return 0
+
+	# Deletes a button. From BCS:TNG's mod
+	def DeleteMenuButton(sMenuName, sButtonName, sSubMenuName = None):
+		debug(__name__ + ", DeleteMenuButton")
+		pMenu   = GetBridgeMenu(sMenuName)
+		pButton = pMenu.GetButton(sButtonName)
+		if sSubMenuName != None:
+			pMenu = pMenu.GetSubmenu(sSubMenuName)
+			pButton = pMenu.GetButton(sButtonName)
+
+		pMenu.DeleteChild(pButton)
+
+
+	# From ATP_GUIUtils:
+	def GetBridgeMenu(menuName):
+		debug(__name__ + ", GetBridgeMenu")
+		pTactCtrlWindow = App.TacticalControlWindow_GetTacticalControlWindow()
+		pDatabase = App.g_kLocalizationManager.Load("data/TGL/Bridge Menus.tgl")
+		if(pDatabase is None):
+			return
+		App.g_kLocalizationManager.Unload(pDatabase)
+		return pTactCtrlWindow.FindMenu(pDatabase.GetString(menuName))
 
 	oDalekRealityBomb = DalekRealityBombDef('Davros Reality Bomb')
 

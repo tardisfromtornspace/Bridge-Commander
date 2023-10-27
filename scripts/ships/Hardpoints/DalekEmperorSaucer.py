@@ -99,7 +99,7 @@ SublightEngines.SetMaxAccel(3.700000)
 SublightEngines.SetMaxAngularAccel(0.220000)
 SublightEngines.SetMaxAngularVelocity(0.350000)
 SublightEngines.SetMaxSpeed(3.700000)
-SublightEngines.SetEngineSound("HatakEngine")
+SublightEngines.SetEngineSound("DalekEngines")
 App.g_kModelPropertyManager.RegisterLocalTemplate(SublightEngines)
 #################################################
 PrimaryWeapons = App.WeaponSystemProperty_Create("Primary Weapons")

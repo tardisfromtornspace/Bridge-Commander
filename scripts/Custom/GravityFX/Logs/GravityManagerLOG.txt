@@ -1,13 +1,13 @@
-#This is the dump of the LogCreator: <Gravity Manager LogCreator_f99BGE9puWA8>
-#This log file was created on: 0:1:17.0 of 20/October/2023, Friday
+#This is the dump of the LogCreator: <Gravity Manager LogCreator_eLIi8INQ96Ig>
+#This log file was created on: 16:10:0.0 of 27/October/2023, Friday
 ########################################
 ## -------------------- ##
 ####################
-#######>>>0:1:17.0 of 20/October/2023, Friday
-#>>>Initialized GravityManager_tg3HKd47c587 logger
+#######>>>16:10:0.0 of 27/October/2023, Friday
+#>>>Initialized GravityManager_maoR1I4BQfHo logger
 ## -------------------- ##
 ####################
-#######>>>0:1:28.565 of 20/October/2023, Friday
+#######>>>16:10:15.329 of 27/October/2023, Friday
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
@@ -17,92 +17,104 @@
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_0CN9k4mQft45>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_4CNfUW2vvh4r>]
 #>>>Planets/Suns List: ['Belaruz 4']
 #>>>Refreshed Ship List: ['Player']
-#>>>Updated radius for grav well <Belaruz 4 GravityWell_0CN9k4mQft45>, radius is now 1610.9699707
+#>>>Updated radius for grav well <Belaruz 4 GravityWell_4CNfUW2vvh4r>, radius is now 1610.16345215
 ## -------------------- ##
 ####################
-#######>>>0:2:12.273 of 20/October/2023, Friday
+#######>>>16:14:8.275 of 27/October/2023, Friday
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_cQu95buzd7w1>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_vk1tFnnl80xB>]
 #>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player']
-#>>>Refreshed Ship List: ['Player']
-#>>>Refreshed Ship List: ['Player']
-#>>>Refreshed Ship List: ['Player']
-#>>>Refreshed Ship List: ['Player']
-#>>>Refreshed Ship List: ['Player']
-#>>>Refreshed Ship List: ['Player']
-#>>>Refreshed Ship List: ['Player']
+#>>>Refreshed Ship List: ['Player', 'Husnock Warship-1', 'Husnock Warship-2', 'Husnock Warship-3']
+#>>>Refreshed Ship List: ['Player', 'Husnock Warship-1', 'Husnock Warship-2', 'Husnock Warship-3']
+#>>>Refreshed Ship List: ['Player', 'Husnock Warship-1', 'Husnock Warship-2', 'Husnock Warship-3']
+#>>>Refreshed Ship List: ['Player', 'Husnock Warship-1', 'Husnock Warship-2', 'Husnock Warship-3']
 ## -------------------- ##
 ####################
-#######>>>0:2:37.144 of 20/October/2023, Friday
-#>>>Refreshed Ship List: ['Player']
+#######>>>16:14:15.975 of 27/October/2023, Friday
+#>>>Refreshed Ship List: ['Player', 'Husnock Warship-1', 'Husnock Warship-2', 'Husnock Warship-3', 'DalekEmperorSaucer - 2', 'DalekEmperorSaucer - 3']
+#>>>Refreshed Ship List: ['Player', 'Husnock Warship-1', 'Husnock Warship-2', 'Husnock Warship-3', 'DalekEmperorSaucer - 2', 'DalekEmperorSaucer - 3']
 ## -------------------- ##
 ####################
-#######>>>0:2:44.855 of 20/October/2023, Friday
-#>>>Refreshed Ship List: ['Player']
+#######>>>16:14:21.107 of 27/October/2023, Friday
+#>>>Refreshed Ship List: ['Player', 'Husnock Warship-1', 'Husnock Warship-2', 'Husnock Warship-3', 'DalekEmperorSaucer - 3', 'DalekEmperorSaucer 1', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1']
+#>>>Refreshed Ship List: ['Player', 'Husnock Warship-1', 'Husnock Warship-2', 'Husnock Warship-3', 'DalekEmperorSaucer - 3', 'DalekEmperorSaucer 1', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1']
+#>>>Refreshed Ship List: ['Player', 'Husnock Warship-1', 'Husnock Warship-2', 'Husnock Warship-3', 'DalekEmperorSaucer - 3', 'DalekEmperorSaucer 1', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1']
+#>>>Refreshed Ship List: ['Player', 'Husnock Warship-1', 'Husnock Warship-2', 'Husnock Warship-3', 'DalekEmperorSaucer - 3', 'DalekEmperorSaucer 1', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1']
+#>>>Refreshed Ship List: ['Player', 'Husnock Warship-1', 'Husnock Warship-2', 'Husnock Warship-3', 'DalekEmperorSaucer - 3', 'DalekEmperorSaucer 1', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1']
+#>>>Refreshed Ship List: ['Player', 'Husnock Warship-1', 'Husnock Warship-2', 'Husnock Warship-3', 'DalekEmperorSaucer - 3', 'DalekEmperorSaucer 1', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1']
+#>>>Refreshed Ship List: ['Player', 'Husnock Warship-1', 'Husnock Warship-2', 'Husnock Warship-3', 'DalekEmperorSaucer - 3', 'DalekEmperorSaucer 1', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1']
+#>>>Refreshed Ship List: ['Player', 'Husnock Warship-1', 'Husnock Warship-2', 'Husnock Warship-3', 'DalekEmperorSaucer - 3', 'DalekEmperorSaucer 1', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1']
+#>>>Refreshed Ship List: ['Player', 'Husnock Warship-1', 'Husnock Warship-2', 'Husnock Warship-3', 'DalekEmperorSaucer - 3', 'DalekEmperorSaucer 1', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1']
+#>>>Refreshed Ship List: ['Player', 'Husnock Warship-1', 'Husnock Warship-2', 'Husnock Warship-3', 'DalekEmperorSaucer - 3', 'DalekEmperorSaucer 1', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1']
+#>>>Refreshed Ship List: ['Player', 'Husnock Warship-1', 'Husnock Warship-2', 'Husnock Warship-3', 'DalekEmperorSaucer - 3', 'DalekEmperorSaucer 1', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1']
 ## -------------------- ##
 ####################
-#######>>>0:2:50.632 of 20/October/2023, Friday
-#>>>Refreshed Ship List: ['Player']
+#######>>>16:15:13.707 of 27/October/2023, Friday
+#>>>Refreshed Ship List: ['Player', 'Husnock Warship-2', 'Husnock Warship-3', 'DalekEmperorSaucer - 3', 'DalekEmperorSaucer 1', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1']
 ## -------------------- ##
 ####################
-#######>>>0:2:57.071 of 20/October/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'sphere - 2']
+#######>>>16:15:26.315 of 27/October/2023, Friday
+#>>>Refreshed Ship List: ['Player', 'Husnock Warship-2', 'Husnock Warship-3', 'DalekEmperorSaucer - 3', 'DalekEmperorSaucer 1', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1']
 ## -------------------- ##
 ####################
-#######>>>0:3:5.162 of 20/October/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'sphere - 2']
+#######>>>16:15:43.010 of 27/October/2023, Friday
+#>>>Refreshed Ship List: ['Player', 'Husnock Warship-2', 'DalekEmperorSaucer - 3', 'DalekEmperorSaucer 1', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1']
 ## -------------------- ##
 ####################
-#######>>>0:3:41.838 of 20/October/2023, Friday
-#>>>Refreshed Ship List: ['Player']
+#######>>>16:16:19.452 of 27/October/2023, Friday
+#>>>Refreshed Ship List: ['Player', 'DalekEmperorSaucer - 3', 'DalekEmperorSaucer 1', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1']
 ## -------------------- ##
 ####################
-#######>>>0:4:21.023 of 20/October/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'sphere - 3']
+#######>>>16:16:35.492 of 27/October/2023, Friday
+#>>>Refreshed Ship List: ['Player', 'DalekEmperorSaucer - 3', 'DalekEmperorSaucer 1', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1', 'DalekSaucer - 4', 'DalekSaucer - 5', 'DalekSaucer - 6', 'DalekSaucer - 7', 'DalekSaucer - 8']
+#>>>Refreshed Ship List: ['Player', 'DalekEmperorSaucer - 3', 'DalekEmperorSaucer 1', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1', 'DalekSaucer - 4', 'DalekSaucer - 5', 'DalekSaucer - 6', 'DalekSaucer - 7', 'DalekSaucer - 8']
+#>>>Refreshed Ship List: ['Player', 'DalekEmperorSaucer - 3', 'DalekEmperorSaucer 1', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1', 'DalekSaucer - 4', 'DalekSaucer - 5', 'DalekSaucer - 6', 'DalekSaucer - 7', 'DalekSaucer - 8']
+#>>>Refreshed Ship List: ['Player', 'DalekEmperorSaucer - 3', 'DalekEmperorSaucer 1', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1', 'DalekSaucer - 4', 'DalekSaucer - 5', 'DalekSaucer - 6', 'DalekSaucer - 7', 'DalekSaucer - 8']
+#>>>Refreshed Ship List: ['Player', 'DalekEmperorSaucer - 3', 'DalekEmperorSaucer 1', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1', 'DalekSaucer - 4', 'DalekSaucer - 5', 'DalekSaucer - 6', 'DalekSaucer - 7', 'DalekSaucer - 8']
 ## -------------------- ##
 ####################
-#######>>>0:4:29.087 of 20/October/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'sphere - 3']
+#######>>>16:17:3.389 of 27/October/2023, Friday
+#>>>Refreshed Ship List: ['Player', 'DalekEmperorSaucer - 3', 'DalekEmperorSaucer 1', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1', 'DalekSaucer - 4', 'DalekSaucer - 5', 'DalekSaucer - 6', 'DalekSaucer - 7', 'DalekSaucer - 8', 'DalekSaucer - 9', 'DalekSaucer - 10', 'DalekSaucer - 11', 'DalekSaucer - 12', 'DalekSaucer - 13']
+#>>>Refreshed Ship List: ['Player', 'DalekEmperorSaucer - 3', 'DalekEmperorSaucer 1', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1', 'DalekSaucer - 4', 'DalekSaucer - 5', 'DalekSaucer - 6', 'DalekSaucer - 7', 'DalekSaucer - 8', 'DalekSaucer - 9', 'DalekSaucer - 10', 'DalekSaucer - 11', 'DalekSaucer - 12', 'DalekSaucer - 13']
+#>>>Refreshed Ship List: ['Player', 'DalekEmperorSaucer - 3', 'DalekEmperorSaucer 1', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1', 'DalekSaucer - 4', 'DalekSaucer - 5', 'DalekSaucer - 6', 'DalekSaucer - 7', 'DalekSaucer - 8', 'DalekSaucer - 9', 'DalekSaucer - 10', 'DalekSaucer - 11', 'DalekSaucer - 12', 'DalekSaucer - 13']
+#>>>Refreshed Ship List: ['Player', 'DalekEmperorSaucer - 3', 'DalekEmperorSaucer 1', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1', 'DalekSaucer - 4', 'DalekSaucer - 5', 'DalekSaucer - 6', 'DalekSaucer - 7', 'DalekSaucer - 8', 'DalekSaucer - 9', 'DalekSaucer - 10', 'DalekSaucer - 11', 'DalekSaucer - 12', 'DalekSaucer - 13']
+#>>>Refreshed Ship List: ['Player', 'DalekEmperorSaucer - 3', 'DalekEmperorSaucer 1', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1', 'DalekSaucer - 4', 'DalekSaucer - 5', 'DalekSaucer - 6', 'DalekSaucer - 7', 'DalekSaucer - 8', 'DalekSaucer - 9', 'DalekSaucer - 10', 'DalekSaucer - 11', 'DalekSaucer - 12', 'DalekSaucer - 13']
 ## -------------------- ##
 ####################
-#######>>>0:4:35.388 of 20/October/2023, Friday
-#>>>Refreshed Ship List: ['Player']
+#######>>>16:17:42.522 of 27/October/2023, Friday
+#>>>Refreshed Ship List: ['Player', 'DalekEmperorSaucer - 3', 'DalekEmperorSaucer 1', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1', 'DalekSaucer - 4', 'DalekSaucer - 5', 'DalekSaucer - 6', 'DalekSaucer - 7', 'DalekSaucer - 8', 'DalekSaucer - 9', 'DalekSaucer - 10', 'DalekSaucer - 11', 'DalekSaucer - 12', 'DalekSaucer - 13', 'DalekSaucer - 14', 'DalekSaucer - 15', 'DalekSaucer - 16', 'DalekSaucer - 17', 'DalekSaucer - 18']
+#>>>Refreshed Ship List: ['Player', 'DalekEmperorSaucer - 3', 'DalekEmperorSaucer 1', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1', 'DalekSaucer - 4', 'DalekSaucer - 5', 'DalekSaucer - 6', 'DalekSaucer - 7', 'DalekSaucer - 8', 'DalekSaucer - 9', 'DalekSaucer - 10', 'DalekSaucer - 11', 'DalekSaucer - 12', 'DalekSaucer - 13', 'DalekSaucer - 14', 'DalekSaucer - 15', 'DalekSaucer - 16', 'DalekSaucer - 17', 'DalekSaucer - 18']
+#>>>Refreshed Ship List: ['Player', 'DalekEmperorSaucer - 3', 'DalekEmperorSaucer 1', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1', 'DalekSaucer - 4', 'DalekSaucer - 5', 'DalekSaucer - 6', 'DalekSaucer - 7', 'DalekSaucer - 8', 'DalekSaucer - 9', 'DalekSaucer - 10', 'DalekSaucer - 11', 'DalekSaucer - 12', 'DalekSaucer - 13', 'DalekSaucer - 14', 'DalekSaucer - 15', 'DalekSaucer - 16', 'DalekSaucer - 17', 'DalekSaucer - 18']
+#>>>Refreshed Ship List: ['Player', 'DalekEmperorSaucer - 3', 'DalekEmperorSaucer 1', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1', 'DalekSaucer - 4', 'DalekSaucer - 5', 'DalekSaucer - 6', 'DalekSaucer - 7', 'DalekSaucer - 8', 'DalekSaucer - 9', 'DalekSaucer - 10', 'DalekSaucer - 11', 'DalekSaucer - 12', 'DalekSaucer - 13', 'DalekSaucer - 14', 'DalekSaucer - 15', 'DalekSaucer - 16', 'DalekSaucer - 17', 'DalekSaucer - 18']
+#>>>Refreshed Ship List: ['Player', 'DalekEmperorSaucer - 3', 'DalekEmperorSaucer 1', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1', 'DalekSaucer - 4', 'DalekSaucer - 5', 'DalekSaucer - 6', 'DalekSaucer - 7', 'DalekSaucer - 8', 'DalekSaucer - 9', 'DalekSaucer - 10', 'DalekSaucer - 11', 'DalekSaucer - 12', 'DalekSaucer - 13', 'DalekSaucer - 14', 'DalekSaucer - 15', 'DalekSaucer - 16', 'DalekSaucer - 17', 'DalekSaucer - 18']
 ## -------------------- ##
 ####################
-#######>>>0:4:35.870 of 20/October/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'sphere - 4']
+#######>>>16:17:48.521 of 27/October/2023, Friday
+#>>>Refreshed Ship List: ['Player', 'DalekEmperorSaucer - 3', 'DalekEmperorSaucer 1', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1', 'DalekSaucer - 4', 'DalekSaucer - 5', 'DalekSaucer - 6', 'DalekSaucer - 7', 'DalekSaucer - 8', 'DalekSaucer - 9', 'DalekSaucer - 10', 'DalekSaucer - 11', 'DalekSaucer - 12', 'DalekSaucer - 13', 'DalekSaucer - 14', 'DalekSaucer - 15', 'DalekSaucer - 16', 'DalekSaucer - 17', 'DalekSaucer - 18', 'DalekSaucer - 19', 'DalekSaucer - 20', 'DalekSaucer - 21', 'DalekSaucer - 22', 'DalekSaucer - 23']
+#>>>Refreshed Ship List: ['Player', 'DalekEmperorSaucer - 3', 'DalekEmperorSaucer 1', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1', 'DalekSaucer - 4', 'DalekSaucer - 5', 'DalekSaucer - 6', 'DalekSaucer - 7', 'DalekSaucer - 8', 'DalekSaucer - 9', 'DalekSaucer - 10', 'DalekSaucer - 11', 'DalekSaucer - 12', 'DalekSaucer - 13', 'DalekSaucer - 14', 'DalekSaucer - 15', 'DalekSaucer - 16', 'DalekSaucer - 17', 'DalekSaucer - 18', 'DalekSaucer - 19', 'DalekSaucer - 20', 'DalekSaucer - 21', 'DalekSaucer - 22', 'DalekSaucer - 23']
+#>>>Refreshed Ship List: ['Player', 'DalekEmperorSaucer - 3', 'DalekEmperorSaucer 1', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1', 'DalekSaucer - 4', 'DalekSaucer - 5', 'DalekSaucer - 6', 'DalekSaucer - 7', 'DalekSaucer - 8', 'DalekSaucer - 9', 'DalekSaucer - 10', 'DalekSaucer - 11', 'DalekSaucer - 12', 'DalekSaucer - 13', 'DalekSaucer - 14', 'DalekSaucer - 15', 'DalekSaucer - 16', 'DalekSaucer - 17', 'DalekSaucer - 18', 'DalekSaucer - 19', 'DalekSaucer - 20', 'DalekSaucer - 21', 'DalekSaucer - 22', 'DalekSaucer - 23']
+#>>>Refreshed Ship List: ['Player', 'DalekEmperorSaucer - 3', 'DalekEmperorSaucer 1', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1', 'DalekSaucer - 4', 'DalekSaucer - 5', 'DalekSaucer - 6', 'DalekSaucer - 7', 'DalekSaucer - 8', 'DalekSaucer - 9', 'DalekSaucer - 10', 'DalekSaucer - 11', 'DalekSaucer - 12', 'DalekSaucer - 13', 'DalekSaucer - 14', 'DalekSaucer - 15', 'DalekSaucer - 16', 'DalekSaucer - 17', 'DalekSaucer - 18', 'DalekSaucer - 19', 'DalekSaucer - 20', 'DalekSaucer - 21', 'DalekSaucer - 22', 'DalekSaucer - 23']
+#>>>Refreshed Ship List: ['Player', 'DalekEmperorSaucer - 3', 'DalekEmperorSaucer 1', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1', 'DalekSaucer - 4', 'DalekSaucer - 5', 'DalekSaucer - 6', 'DalekSaucer - 7', 'DalekSaucer - 8', 'DalekSaucer - 9', 'DalekSaucer - 10', 'DalekSaucer - 11', 'DalekSaucer - 12', 'DalekSaucer - 13', 'DalekSaucer - 14', 'DalekSaucer - 15', 'DalekSaucer - 16', 'DalekSaucer - 17', 'DalekSaucer - 18', 'DalekSaucer - 19', 'DalekSaucer - 20', 'DalekSaucer - 21', 'DalekSaucer - 22', 'DalekSaucer - 23']
 ## -------------------- ##
 ####################
-#######>>>0:4:43.973 of 20/October/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'sphere - 4']
+#######>>>16:18:0.638 of 27/October/2023, Friday
+#>>>Refreshed Ship List: ['Player', 'DalekEmperorSaucer - 3', 'DalekEmperorSaucer 1', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1', 'DalekSaucer - 4', 'DalekSaucer - 5', 'DalekSaucer - 6', 'DalekSaucer - 7', 'DalekSaucer - 8', 'DalekSaucer - 9', 'DalekSaucer - 10', 'DalekSaucer - 11', 'DalekSaucer - 12', 'DalekSaucer - 13', 'DalekSaucer - 14', 'DalekSaucer - 15', 'DalekSaucer - 16', 'DalekSaucer - 17', 'DalekSaucer - 18', 'DalekSaucer - 19', 'DalekSaucer - 20', 'DalekSaucer - 21', 'DalekSaucer - 22', 'DalekSaucer - 23', 'DalekSaucer - 24', 'DalekSaucer - 25', 'DalekSaucer - 26', 'DalekSaucer - 27', 'DalekSaucer - 28']
+#>>>Refreshed Ship List: ['Player', 'DalekEmperorSaucer - 3', 'DalekEmperorSaucer 1', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1', 'DalekSaucer - 4', 'DalekSaucer - 5', 'DalekSaucer - 6', 'DalekSaucer - 7', 'DalekSaucer - 8', 'DalekSaucer - 9', 'DalekSaucer - 10', 'DalekSaucer - 11', 'DalekSaucer - 12', 'DalekSaucer - 13', 'DalekSaucer - 14', 'DalekSaucer - 15', 'DalekSaucer - 16', 'DalekSaucer - 17', 'DalekSaucer - 18', 'DalekSaucer - 19', 'DalekSaucer - 20', 'DalekSaucer - 21', 'DalekSaucer - 22', 'DalekSaucer - 23', 'DalekSaucer - 24', 'DalekSaucer - 25', 'DalekSaucer - 26', 'DalekSaucer - 27', 'DalekSaucer - 28']
+#>>>Refreshed Ship List: ['Player', 'DalekEmperorSaucer - 3', 'DalekEmperorSaucer 1', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1', 'DalekSaucer - 4', 'DalekSaucer - 5', 'DalekSaucer - 6', 'DalekSaucer - 7', 'DalekSaucer - 8', 'DalekSaucer - 9', 'DalekSaucer - 10', 'DalekSaucer - 11', 'DalekSaucer - 12', 'DalekSaucer - 13', 'DalekSaucer - 14', 'DalekSaucer - 15', 'DalekSaucer - 16', 'DalekSaucer - 17', 'DalekSaucer - 18', 'DalekSaucer - 19', 'DalekSaucer - 20', 'DalekSaucer - 21', 'DalekSaucer - 22', 'DalekSaucer - 23', 'DalekSaucer - 24', 'DalekSaucer - 25', 'DalekSaucer - 26', 'DalekSaucer - 27', 'DalekSaucer - 28']
+#>>>Refreshed Ship List: ['Player', 'DalekEmperorSaucer - 3', 'DalekEmperorSaucer 1', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1', 'DalekSaucer - 4', 'DalekSaucer - 5', 'DalekSaucer - 6', 'DalekSaucer - 7', 'DalekSaucer - 8', 'DalekSaucer - 9', 'DalekSaucer - 10', 'DalekSaucer - 11', 'DalekSaucer - 12', 'DalekSaucer - 13', 'DalekSaucer - 14', 'DalekSaucer - 15', 'DalekSaucer - 16', 'DalekSaucer - 17', 'DalekSaucer - 18', 'DalekSaucer - 19', 'DalekSaucer - 20', 'DalekSaucer - 21', 'DalekSaucer - 22', 'DalekSaucer - 23', 'DalekSaucer - 24', 'DalekSaucer - 25', 'DalekSaucer - 26', 'DalekSaucer - 27', 'DalekSaucer - 28']
+#>>>Refreshed Ship List: ['Player', 'DalekEmperorSaucer - 3', 'DalekEmperorSaucer 1', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1', 'DalekSaucer - 4', 'DalekSaucer - 5', 'DalekSaucer - 6', 'DalekSaucer - 7', 'DalekSaucer - 8', 'DalekSaucer - 9', 'DalekSaucer - 10', 'DalekSaucer - 11', 'DalekSaucer - 12', 'DalekSaucer - 13', 'DalekSaucer - 14', 'DalekSaucer - 15', 'DalekSaucer - 16', 'DalekSaucer - 17', 'DalekSaucer - 18', 'DalekSaucer - 19', 'DalekSaucer - 20', 'DalekSaucer - 21', 'DalekSaucer - 22', 'DalekSaucer - 23', 'DalekSaucer - 24', 'DalekSaucer - 25', 'DalekSaucer - 26', 'DalekSaucer - 27', 'DalekSaucer - 28']
 ## -------------------- ##
 ####################
-#######>>>0:4:54.945 of 20/October/2023, Friday
-#>>>Refreshed Ship List: ['Player']
-## -------------------- ##
-####################
-#######>>>0:5:2.937 of 20/October/2023, Friday
-#>>>Refreshed Ship List: ['Player']
-## -------------------- ##
-####################
-#######>>>0:5:30.603 of 20/October/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'janeway 1']
-## -------------------- ##
-####################
-#######>>>0:6:33.136 of 20/October/2023, Friday
-#>>>Refreshed Ship List: ['Player', 'janeway 1']
-## -------------------- ##
-####################
-#######>>>0:6:34.651 of 20/October/2023, Friday
-#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_8W8fI98f3hP4>]
-#>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['janeway 1', 'Player']
+#######>>>16:18:7.808 of 27/October/2023, Friday
+#>>>Refreshed Ship List: ['Player', 'DalekEmperorSaucer - 3', 'DalekEmperorSaucer 1', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1', 'DalekSaucer - 4', 'DalekSaucer - 5', 'DalekSaucer - 6', 'DalekSaucer - 7', 'DalekSaucer - 8', 'DalekSaucer - 9', 'DalekSaucer - 10', 'DalekSaucer - 11', 'DalekSaucer - 12', 'DalekSaucer - 13', 'DalekSaucer - 14', 'DalekSaucer - 15', 'DalekSaucer - 16', 'DalekSaucer - 17', 'DalekSaucer - 18', 'DalekSaucer - 19', 'DalekSaucer - 20', 'DalekSaucer - 21', 'DalekSaucer - 22', 'DalekSaucer - 23', 'DalekSaucer - 24', 'DalekSaucer - 25', 'DalekSaucer - 26', 'DalekSaucer - 27', 'DalekSaucer - 28', 'DalekSaucer - 29', 'DalekSaucer - 30', 'DalekSaucer - 31', 'DalekSaucer - 32', 'DalekSaucer - 33']
+#>>>Refreshed Ship List: ['Player', 'DalekEmperorSaucer - 3', 'DalekEmperorSaucer 1', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1', 'DalekSaucer - 4', 'DalekSaucer - 5', 'DalekSaucer - 6', 'DalekSaucer - 7', 'DalekSaucer - 8', 'DalekSaucer - 9', 'DalekSaucer - 10', 'DalekSaucer - 11', 'DalekSaucer - 12', 'DalekSaucer - 13', 'DalekSaucer - 14', 'DalekSaucer - 15', 'DalekSaucer - 16', 'DalekSaucer - 17', 'DalekSaucer - 18', 'DalekSaucer - 19', 'DalekSaucer - 20', 'DalekSaucer - 21', 'DalekSaucer - 22', 'DalekSaucer - 23', 'DalekSaucer - 24', 'DalekSaucer - 25', 'DalekSaucer - 26', 'DalekSaucer - 27', 'DalekSaucer - 28', 'DalekSaucer - 29', 'DalekSaucer - 30', 'DalekSaucer - 31', 'DalekSaucer - 32', 'DalekSaucer - 33']
+#>>>Refreshed Ship List: ['Player', 'DalekEmperorSaucer - 3', 'DalekEmperorSaucer 1', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1', 'DalekSaucer - 4', 'DalekSaucer - 5', 'DalekSaucer - 6', 'DalekSaucer - 7', 'DalekSaucer - 8', 'DalekSaucer - 9', 'DalekSaucer - 10', 'DalekSaucer - 11', 'DalekSaucer - 12', 'DalekSaucer - 13', 'DalekSaucer - 14', 'DalekSaucer - 15', 'DalekSaucer - 16', 'DalekSaucer - 17', 'DalekSaucer - 18', 'DalekSaucer - 19', 'DalekSaucer - 20', 'DalekSaucer - 21', 'DalekSaucer - 22', 'DalekSaucer - 23', 'DalekSaucer - 24', 'DalekSaucer - 25', 'DalekSaucer - 26', 'DalekSaucer - 27', 'DalekSaucer - 28', 'DalekSaucer - 29', 'DalekSaucer - 30', 'DalekSaucer - 31', 'DalekSaucer - 32', 'DalekSaucer - 33']
+#>>>Refreshed Ship List: ['Player', 'DalekEmperorSaucer - 3', 'DalekEmperorSaucer 1', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1', 'DalekSaucer - 4', 'DalekSaucer - 5', 'DalekSaucer - 6', 'DalekSaucer - 7', 'DalekSaucer - 8', 'DalekSaucer - 9', 'DalekSaucer - 10', 'DalekSaucer - 11', 'DalekSaucer - 12', 'DalekSaucer - 13', 'DalekSaucer - 14', 'DalekSaucer - 15', 'DalekSaucer - 16', 'DalekSaucer - 17', 'DalekSaucer - 18', 'DalekSaucer - 19', 'DalekSaucer - 20', 'DalekSaucer - 21', 'DalekSaucer - 22', 'DalekSaucer - 23', 'DalekSaucer - 24', 'DalekSaucer - 25', 'DalekSaucer - 26', 'DalekSaucer - 27', 'DalekSaucer - 28', 'DalekSaucer - 29', 'DalekSaucer - 30', 'DalekSaucer - 31', 'DalekSaucer - 32', 'DalekSaucer - 33']
+#>>>Refreshed Ship List: ['Player', 'DalekEmperorSaucer - 3', 'DalekEmperorSaucer 1', 'Dalek2005Gold 1', 'Dalek2005Gold2 1', 'Dalek2005Gold3 1', 'Dalek2005Gold4 1', 'Dalek2005Gold5 1', 'Dalek2005Gold6 1', 'Dalek2005Gold7 1', 'Dalek2005Gold8 1', 'Dalek2005Gold9 1', 'Dalek2005Gold10 1', 'DalekSaucer - 4', 'DalekSaucer - 5', 'DalekSaucer - 6', 'DalekSaucer - 7', 'DalekSaucer - 8', 'DalekSaucer - 9', 'DalekSaucer - 10', 'DalekSaucer - 11', 'DalekSaucer - 12', 'DalekSaucer - 13', 'DalekSaucer - 14', 'DalekSaucer - 15', 'DalekSaucer - 16', 'DalekSaucer - 17', 'DalekSaucer - 18', 'DalekSaucer - 19', 'DalekSaucer - 20', 'DalekSaucer - 21', 'DalekSaucer - 22', 'DalekSaucer - 23', 'DalekSaucer - 24', 'DalekSaucer - 25', 'DalekSaucer - 26', 'DalekSaucer - 27', 'DalekSaucer - 28', 'DalekSaucer - 29', 'DalekSaucer - 30', 'DalekSaucer - 31', 'DalekSaucer - 32', 'DalekSaucer - 33']
 ########################################
-# 0:6:41.052 of 20/October/2023, Friday
+# 16:20:54.593 of 27/October/2023, Friday
 #Ending of log dump - User is quiting the game
 ########################################
