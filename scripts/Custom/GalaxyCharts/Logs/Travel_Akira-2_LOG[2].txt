@@ -1,0 +1,37 @@
+#This is the dump of the LogCreator: <Akira-2 Travel Logger[2] LogCreator_Ns4T54i7Ik1e>
+#This log file was created on: 15:0:32.667 of 28/October/2023, Saturday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>15:0:32.667 of 28/October/2023, Saturday
+#>>>Initialized Akira-2 Travel logger
+#>>>SELF = <Akira-2(497109) Travel_b6eV67xlTcjN>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Dalek Saucer-1
+## -------------------- ##
+####################
+#######>>>15:0:45.470 of 28/October/2023, Saturday
+#>>>Updated Target Ship = Dalek2005Gold9 14
+## -------------------- ##
+####################
+#######>>>15:1:16.623 of 28/October/2023, Saturday
+#>>>Updated Target Ship = Dalek2005Gold10 15
+## -------------------- ##
+####################
+#######>>>15:1:19.383 of 28/October/2023, Saturday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

@@ -1,13 +1,13 @@
-#This is the dump of the LogCreator: <Gravity Manager LogCreator_8pwkZ5pQRR8B>
-#This log file was created on: 14:42:31.0 of 28/October/2023, Saturday
+#This is the dump of the LogCreator: <Gravity Manager LogCreator_hm2O2jnyN3g9>
+#This log file was created on: 20:58:43.0 of 28/October/2023, Saturday
 ########################################
 ## -------------------- ##
 ####################
-#######>>>14:42:31.0 of 28/October/2023, Saturday
-#>>>Initialized GravityManager_zaMhd4f2Ma3A logger
+#######>>>20:58:43.0 of 28/October/2023, Saturday
+#>>>Initialized GravityManager_hX99AycdK4O6 logger
 ## -------------------- ##
 ####################
-#######>>>14:42:41.934 of 28/October/2023, Saturday
+#######>>>20:59:25.523 of 28/October/2023, Saturday
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
@@ -17,69 +17,23 @@
 #>>>Refreshed Ship List: ['Player']
 #>>>Refreshed Ship List: ['Player']
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_a8mPa2dpSUbl>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_oECx0de49U56>]
 #>>>Planets/Suns List: ['Belaruz 4']
 #>>>Refreshed Ship List: ['Player']
-#>>>Updated radius for grav well <Belaruz 4 GravityWell_a8mPa2dpSUbl>, radius is now 1617.68518066
+#>>>Updated radius for grav well <Belaruz 4 GravityWell_oECx0de49U56>, radius is now 1606.98547363
 ## -------------------- ##
 ####################
-#######>>>14:43:24.078 of 28/October/2023, Saturday
+#######>>>20:59:54.360 of 28/October/2023, Saturday
 #>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
-#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_372mno4tSIXW>]
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_O820k7216j6c>]
 #>>>Planets/Suns List: ['Belaruz 4']
-#>>>Refreshed Ship List: ['Player', 'Excalibur-1', 'USS Armstrong-2']
-#>>>Refreshed Ship List: ['Player', 'Excalibur-1', 'USS Armstrong-2']
-#>>>Refreshed Ship List: ['Player', 'Excalibur-1', 'USS Armstrong-2']
+#>>>Refreshed Ship List: ['Player', 'Excalibur-1', 'Excalibur-2']
+#>>>Refreshed Ship List: ['Player', 'Excalibur-1', 'Excalibur-2']
+#>>>Refreshed Ship List: ['Player', 'Excalibur-1', 'Excalibur-2']
 ## -------------------- ##
 ####################
-#######>>>14:43:32.134 of 28/October/2023, Saturday
-#>>>Refreshed Ship List: ['Player', 'Excalibur-1', 'USS Armstrong-2', 'DalekSmallSaucer - 2', 'DalekSmallSaucer - 3', 'DalekSmallSaucer - 4', 'DalekSmallSaucer - 5', 'DalekSmallSaucer - 6', 'DalekSmallSaucer - 7']
-#>>>Refreshed Ship List: ['Player', 'Excalibur-1', 'USS Armstrong-2', 'DalekSmallSaucer - 2', 'DalekSmallSaucer - 3', 'DalekSmallSaucer - 4', 'DalekSmallSaucer - 5', 'DalekSmallSaucer - 6', 'DalekSmallSaucer - 7']
-#>>>Refreshed Ship List: ['Player', 'Excalibur-1', 'USS Armstrong-2', 'DalekSmallSaucer - 2', 'DalekSmallSaucer - 3', 'DalekSmallSaucer - 4', 'DalekSmallSaucer - 5', 'DalekSmallSaucer - 6', 'DalekSmallSaucer - 7']
-#>>>Refreshed Ship List: ['Player', 'Excalibur-1', 'USS Armstrong-2', 'DalekSmallSaucer - 2', 'DalekSmallSaucer - 3', 'DalekSmallSaucer - 4', 'DalekSmallSaucer - 5', 'DalekSmallSaucer - 6', 'DalekSmallSaucer - 7']
-#>>>Refreshed Ship List: ['Player', 'Excalibur-1', 'USS Armstrong-2', 'DalekSmallSaucer - 2', 'DalekSmallSaucer - 3', 'DalekSmallSaucer - 4', 'DalekSmallSaucer - 5', 'DalekSmallSaucer - 6', 'DalekSmallSaucer - 7']
-#>>>Refreshed Ship List: ['Player', 'Excalibur-1', 'USS Armstrong-2', 'DalekSmallSaucer - 2', 'DalekSmallSaucer - 3', 'DalekSmallSaucer - 4', 'DalekSmallSaucer - 5', 'DalekSmallSaucer - 6', 'DalekSmallSaucer - 7']
-## -------------------- ##
-####################
-#######>>>14:43:54.419 of 28/October/2023, Saturday
-#>>>Refreshed Ship List: ['Player', 'Excalibur-1', 'USS Armstrong-2', 'DalekSmallSaucer - 3', 'DalekSmallSaucer - 4', 'DalekSmallSaucer - 5', 'DalekSmallSaucer - 6', 'DalekSmallSaucer - 7']
-## -------------------- ##
-####################
-#######>>>14:44:15.318 of 28/October/2023, Saturday
-#>>>Refreshed Ship List: ['Player', 'DalekSmallSaucer - 3', 'DalekSmallSaucer - 4', 'DalekSmallSaucer - 5', 'DalekSmallSaucer - 6', 'DalekSmallSaucer - 7']
-## -------------------- ##
-####################
-#######>>>14:44:23.382 of 28/October/2023, Saturday
-#>>>Refreshed Ship List: ['Player', 'DalekSmallSaucer - 3', 'DalekSmallSaucer - 4', 'DalekSmallSaucer - 5', 'DalekSmallSaucer - 6', 'DalekSmallSaucer - 7']
-#>>>Refreshed Ship List: ['Player', 'DalekSmallSaucer - 3', 'DalekSmallSaucer - 4', 'DalekSmallSaucer - 5', 'DalekSmallSaucer - 6', 'DalekSmallSaucer - 7']
-#>>>Refreshed Ship List: ['Player', 'DalekSmallSaucer - 3', 'DalekSmallSaucer - 4', 'DalekSmallSaucer - 5', 'DalekSmallSaucer - 6', 'DalekSmallSaucer - 7']
-#>>>Refreshed Ship List: ['Player', 'DalekSmallSaucer - 3', 'DalekSmallSaucer - 4', 'DalekSmallSaucer - 5', 'DalekSmallSaucer - 6', 'DalekSmallSaucer - 7']
-#>>>Refreshed Ship List: ['Player', 'DalekSmallSaucer - 3', 'DalekSmallSaucer - 4', 'DalekSmallSaucer - 5', 'DalekSmallSaucer - 6', 'DalekSmallSaucer - 7']
-#>>>Refreshed Ship List: ['Player', 'DalekSmallSaucer - 3', 'DalekSmallSaucer - 4', 'DalekSmallSaucer - 5', 'DalekSmallSaucer - 6', 'DalekSmallSaucer - 7']
-## -------------------- ##
-####################
-#######>>>14:44:26.833 of 28/October/2023, Saturday
-#>>>Refreshed Ship List: ['Player', 'DalekSmallSaucer - 3', 'DalekSmallSaucer - 4', 'DalekSmallSaucer - 5', 'DalekSmallSaucer - 6', 'DalekSmallSaucer - 7', 'DalekSmallSaucer - 8', 'DalekSmallSaucer - 9', 'DalekSmallSaucer - 10', 'DalekSmallSaucer - 11', 'DalekSmallSaucer - 12', 'DalekSmallSaucer - 13']
-#>>>Refreshed Ship List: ['Player', 'DalekSmallSaucer - 3', 'DalekSmallSaucer - 4', 'DalekSmallSaucer - 5', 'DalekSmallSaucer - 6', 'DalekSmallSaucer - 7', 'DalekSmallSaucer - 8', 'DalekSmallSaucer - 9', 'DalekSmallSaucer - 10', 'DalekSmallSaucer - 11', 'DalekSmallSaucer - 12', 'DalekSmallSaucer - 13']
-#>>>Refreshed Ship List: ['Player', 'DalekSmallSaucer - 3', 'DalekSmallSaucer - 4', 'DalekSmallSaucer - 5', 'DalekSmallSaucer - 6', 'DalekSmallSaucer - 7', 'DalekSmallSaucer - 8', 'DalekSmallSaucer - 9', 'DalekSmallSaucer - 10', 'DalekSmallSaucer - 11', 'DalekSmallSaucer - 12', 'DalekSmallSaucer - 13']
-#>>>Refreshed Ship List: ['Player', 'DalekSmallSaucer - 3', 'DalekSmallSaucer - 4', 'DalekSmallSaucer - 5', 'DalekSmallSaucer - 6', 'DalekSmallSaucer - 7', 'DalekSmallSaucer - 8', 'DalekSmallSaucer - 9', 'DalekSmallSaucer - 10', 'DalekSmallSaucer - 11', 'DalekSmallSaucer - 12', 'DalekSmallSaucer - 13']
-#>>>Refreshed Ship List: ['Player', 'DalekSmallSaucer - 3', 'DalekSmallSaucer - 4', 'DalekSmallSaucer - 5', 'DalekSmallSaucer - 6', 'DalekSmallSaucer - 7', 'DalekSmallSaucer - 8', 'DalekSmallSaucer - 9', 'DalekSmallSaucer - 10', 'DalekSmallSaucer - 11', 'DalekSmallSaucer - 12', 'DalekSmallSaucer - 13']
-#>>>Refreshed Ship List: ['Player', 'DalekSmallSaucer - 3', 'DalekSmallSaucer - 4', 'DalekSmallSaucer - 5', 'DalekSmallSaucer - 6', 'DalekSmallSaucer - 7', 'DalekSmallSaucer - 8', 'DalekSmallSaucer - 9', 'DalekSmallSaucer - 10', 'DalekSmallSaucer - 11', 'DalekSmallSaucer - 12', 'DalekSmallSaucer - 13']
-## -------------------- ##
-####################
-#######>>>14:44:38.932 of 28/October/2023, Saturday
-#>>>Refreshed Ship List: ['Player', 'DalekSmallSaucer - 3', 'DalekSmallSaucer - 4', 'DalekSmallSaucer - 5', 'DalekSmallSaucer - 6', 'DalekSmallSaucer - 7', 'DalekSmallSaucer - 8', 'DalekSmallSaucer - 9', 'DalekSmallSaucer - 10', 'DalekSmallSaucer - 11', 'DalekSmallSaucer - 12', 'DalekSmallSaucer - 13', 'DalekSmallSaucer - 14', 'DalekSmallSaucer - 15', 'DalekSmallSaucer - 16', 'DalekSmallSaucer - 17', 'DalekSmallSaucer - 18', 'DalekSmallSaucer - 19']
-#>>>Refreshed Ship List: ['Player', 'DalekSmallSaucer - 3', 'DalekSmallSaucer - 4', 'DalekSmallSaucer - 5', 'DalekSmallSaucer - 6', 'DalekSmallSaucer - 7', 'DalekSmallSaucer - 8', 'DalekSmallSaucer - 9', 'DalekSmallSaucer - 10', 'DalekSmallSaucer - 11', 'DalekSmallSaucer - 12', 'DalekSmallSaucer - 13', 'DalekSmallSaucer - 14', 'DalekSmallSaucer - 15', 'DalekSmallSaucer - 16', 'DalekSmallSaucer - 17', 'DalekSmallSaucer - 18', 'DalekSmallSaucer - 19']
-#>>>Refreshed Ship List: ['Player', 'DalekSmallSaucer - 3', 'DalekSmallSaucer - 4', 'DalekSmallSaucer - 5', 'DalekSmallSaucer - 6', 'DalekSmallSaucer - 7', 'DalekSmallSaucer - 8', 'DalekSmallSaucer - 9', 'DalekSmallSaucer - 10', 'DalekSmallSaucer - 11', 'DalekSmallSaucer - 12', 'DalekSmallSaucer - 13', 'DalekSmallSaucer - 14', 'DalekSmallSaucer - 15', 'DalekSmallSaucer - 16', 'DalekSmallSaucer - 17', 'DalekSmallSaucer - 18', 'DalekSmallSaucer - 19']
-#>>>Refreshed Ship List: ['Player', 'DalekSmallSaucer - 3', 'DalekSmallSaucer - 4', 'DalekSmallSaucer - 5', 'DalekSmallSaucer - 6', 'DalekSmallSaucer - 7', 'DalekSmallSaucer - 8', 'DalekSmallSaucer - 9', 'DalekSmallSaucer - 10', 'DalekSmallSaucer - 11', 'DalekSmallSaucer - 12', 'DalekSmallSaucer - 13', 'DalekSmallSaucer - 14', 'DalekSmallSaucer - 15', 'DalekSmallSaucer - 16', 'DalekSmallSaucer - 17', 'DalekSmallSaucer - 18', 'DalekSmallSaucer - 19']
-#>>>Refreshed Ship List: ['Player', 'DalekSmallSaucer - 3', 'DalekSmallSaucer - 4', 'DalekSmallSaucer - 5', 'DalekSmallSaucer - 6', 'DalekSmallSaucer - 7', 'DalekSmallSaucer - 8', 'DalekSmallSaucer - 9', 'DalekSmallSaucer - 10', 'DalekSmallSaucer - 11', 'DalekSmallSaucer - 12', 'DalekSmallSaucer - 13', 'DalekSmallSaucer - 14', 'DalekSmallSaucer - 15', 'DalekSmallSaucer - 16', 'DalekSmallSaucer - 17', 'DalekSmallSaucer - 18', 'DalekSmallSaucer - 19']
-#>>>Refreshed Ship List: ['Player', 'DalekSmallSaucer - 3', 'DalekSmallSaucer - 4', 'DalekSmallSaucer - 5', 'DalekSmallSaucer - 6', 'DalekSmallSaucer - 7', 'DalekSmallSaucer - 8', 'DalekSmallSaucer - 9', 'DalekSmallSaucer - 10', 'DalekSmallSaucer - 11', 'DalekSmallSaucer - 12', 'DalekSmallSaucer - 13', 'DalekSmallSaucer - 14', 'DalekSmallSaucer - 15', 'DalekSmallSaucer - 16', 'DalekSmallSaucer - 17', 'DalekSmallSaucer - 18', 'DalekSmallSaucer - 19']
-## -------------------- ##
-####################
-#######>>>14:44:49.882 of 28/October/2023, Saturday
-#>>>Refreshed Ship List: ['Player', 'DalekSmallSaucer - 3', 'DalekSmallSaucer - 4', 'DalekSmallSaucer - 5', 'DalekSmallSaucer - 6', 'DalekSmallSaucer - 7', 'DalekSmallSaucer - 8', 'DalekSmallSaucer - 9', 'DalekSmallSaucer - 10', 'DalekSmallSaucer - 11', 'DalekSmallSaucer - 12', 'DalekSmallSaucer - 13', 'DalekSmallSaucer - 14', 'DalekSmallSaucer - 15', 'DalekSmallSaucer - 16', 'DalekSmallSaucer - 17', 'DalekSmallSaucer - 18', 'DalekSmallSaucer - 19', 'DalekSmallSaucer - 20', 'DalekSmallSaucer - 21', 'DalekSmallSaucer - 22', 'DalekSmallSaucer - 23', 'DalekSmallSaucer - 24', 'DalekSmallSaucer - 25']
-#>>>Refreshed Ship List: ['Player', 'DalekSmallSaucer - 3', 'DalekSmallSaucer - 4', 'DalekSmallSaucer - 5', 'DalekSmallSaucer - 6', 'DalekSmallSaucer - 7', 'DalekSmallSaucer - 8', 'DalekSmallSaucer - 9', 'DalekSmallSaucer - 10', 'DalekSmallSaucer - 11', 'DalekSmallSaucer - 12', 'DalekSmallSaucer - 13', 'DalekSmallSaucer - 14', 'DalekSmallSaucer - 15', 'DalekSmallSaucer - 16', 'DalekSmallSaucer - 17', 'DalekSmallSaucer - 18', 'DalekSmallSaucer - 19', 'DalekSmallSaucer - 20', 'DalekSmallSaucer - 21', 'DalekSmallSaucer - 22', 'DalekSmallSaucer - 23', 'DalekSmallSaucer - 24', 'DalekSmallSaucer - 25']
-#>>>Refreshed Ship List: ['Player', 'DalekSmallSaucer - 3', 'DalekSmallSaucer - 4', 'DalekSmallSaucer - 5', 'DalekSmallSaucer - 6', 'DalekSmallSaucer - 7', 'DalekSmallSaucer - 8', 'DalekSmallSaucer - 9', 'DalekSmallSaucer - 10', 'DalekSmallSaucer - 11', 'DalekSmallSaucer - 12', 'DalekSmallSaucer - 13', 'DalekSmallSaucer - 14', 'DalekSmallSaucer - 15', 'DalekSmallSaucer - 16', 'DalekSmallSaucer - 17', 'DalekSmallSaucer - 18', 'DalekSmallSaucer - 19', 'DalekSmallSaucer - 20', 'DalekSmallSaucer - 21', 'DalekSmallSaucer - 22', 'DalekSmallSaucer - 23', 'DalekSmallSaucer - 24', 'DalekSmallSaucer - 25']
-#>>>Refreshed Ship List: ['Player', 'DalekSmallSaucer - 3', 'DalekSmallSaucer - 4', 'DalekSmallSaucer - 5', 'DalekSmallSaucer - 6', 'DalekSmallSaucer - 7', 'DalekSmallSaucer - 8', 'DalekSmallSaucer - 9', 'DalekSmallSaucer - 10', 'DalekSmallSaucer - 11', 'DalekSmallSaucer - 12', 'DalekSmallSaucer - 13', 'DalekSmallSaucer - 14', 'DalekSmallSaucer - 15', 'DalekSmallSaucer - 16', 'DalekSmallSaucer - 17', 'DalekSmallSaucer - 18', 'DalekSmallSaucer - 19', 'DalekSmallSaucer - 20', 'DalekSmallSaucer - 21', 'DalekSmallSaucer - 22', 'DalekSmallSaucer - 23', 'DalekSmallSaucer - 24', 'DalekSmallSaucer - 25']
-#>>>Refreshed Ship List: ['Player', 'DalekSmallSaucer - 3', 'DalekSmallSaucer - 4', 'DalekSmallSaucer - 5', 'DalekSmallSaucer - 6', 'DalekSmallSaucer - 7', 'DalekSmallSaucer - 8', 'DalekSmallSaucer - 9', 'DalekSmallSaucer - 10', 'DalekSmallSaucer - 11', 'DalekSmallSaucer - 12', 'DalekSmallSaucer - 13', 'DalekSmallSaucer - 14', 'DalekSmallSaucer - 15', 'DalekSmallSaucer - 16', 'DalekSmallSaucer - 17', 'DalekSmallSaucer - 18', 'DalekSmallSaucer - 19', 'DalekSmallSaucer - 20', 'DalekSmallSaucer - 21', 'DalekSmallSaucer - 22', 'DalekSmallSaucer - 23', 'DalekSmallSaucer - 24', 'DalekSmallSaucer - 25']
-#>>>Refreshed Ship List: ['Player', 'DalekSmallSaucer - 3', 'DalekSmallSaucer - 4', 'DalekSmallSaucer - 5', 'DalekSmallSaucer - 6', 'DalekSmallSaucer - 7', 'DalekSmallSaucer - 8', 'DalekSmallSaucer - 9', 'DalekSmallSaucer - 10', 'DalekSmallSaucer - 11', 'DalekSmallSaucer - 12', 'DalekSmallSaucer - 13', 'DalekSmallSaucer - 14', 'DalekSmallSaucer - 15', 'DalekSmallSaucer - 16', 'DalekSmallSaucer - 17', 'DalekSmallSaucer - 18', 'DalekSmallSaucer - 19', 'DalekSmallSaucer - 20', 'DalekSmallSaucer - 21', 'DalekSmallSaucer - 22', 'DalekSmallSaucer - 23', 'DalekSmallSaucer - 24', 'DalekSmallSaucer - 25']
+#######>>>21:1:0.005 of 28/October/2023, Saturday
+#>>>Creating Grav Wells - Set: Systems.Belaruz.Belaruz4
+#>>>Creating Grav Wells: [<Belaruz 4 GravityWell_o647m268J3IO>]
+#>>>Planets/Suns List: ['Belaruz 4']
+#>>>Refreshed Ship List: ['Excalibur-1', 'Excalibur-2', 'Player']

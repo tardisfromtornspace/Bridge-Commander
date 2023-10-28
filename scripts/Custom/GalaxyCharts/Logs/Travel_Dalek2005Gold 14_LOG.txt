@@ -1,0 +1,58 @@
+#This is the dump of the LogCreator: <Dalek2005Gold 14 Travel Logger LogCreator_86A330fSs1Ne>
+#This log file was created on: 15:0:38.136 of 28/October/2023, Saturday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>15:0:38.136 of 28/October/2023, Saturday
+#>>>Initialized Dalek2005Gold 14 Travel logger
+#>>>SELF = <Dalek2005Gold 14(506652) Travel_o4i0GiSBHi9s>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>15:0:43.651 of 28/October/2023, Saturday
+#>>>Updated Target Ship = Player
+#>>>Can Chase Target = 0
+## -------------------- ##
+####################
+#######>>>15:0:43.822 of 28/October/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>15:0:43.951 of 28/October/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>15:0:44.376 of 28/October/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>15:0:44.551 of 28/October/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>15:0:44.685 of 28/October/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>15:0:44.835 of 28/October/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+## -------------------- ##
+####################
+#######>>>15:0:45.085 of 28/October/2023, Saturday
+#>>>Ship can't chase, directing to Travel update...
+#>>>Stopping Refresh Handler
+#>>>Deleting...

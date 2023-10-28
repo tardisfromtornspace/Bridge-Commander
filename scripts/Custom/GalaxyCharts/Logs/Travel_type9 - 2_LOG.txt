@@ -1,0 +1,31 @@
+#This is the dump of the LogCreator: <type9 - 2 Travel Logger LogCreator_PDIuKcB916F3>
+#This log file was created on: 15:1:7.508 of 28/October/2023, Saturday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>15:1:7.508 of 28/October/2023, Saturday
+#>>>Initialized type9 - 2 Travel logger
+#>>>SELF = <type9 - 2(549151) Travel_92sazbT54Wk0>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>15:1:19.682 of 28/October/2023, Saturday
+#>>>Updated Target Ship = Dalek2005Gold6 15
+## -------------------- ##
+####################
+#######>>>15:1:49.637 of 28/October/2023, Saturday
+#>>>Updated Target Ship = Dalek2005Gold3 15
