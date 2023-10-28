@@ -14,29 +14,33 @@ class DalekCrucible( Carrier.Carrier):
 		LauncherManager = __import__( "ftb.LauncherManager")
 		launcher = LauncherManager.GetLauncher( "Shuttle Bay 1", pShip)
 		group.AddLauncher( "Shuttle Bay 1", launcher)
-		launcher.AddLaunchable( "DalekSaucer", "Custom.Sneaker.Mvam.MvamAI", 5)
-		launcher.AddLaunchable( "DalekEmperorSaucer", "Custom.Sneaker.Mvam.MvamAI", 1)
+		launcher.AddLaunchable( "DalekSmallSaucer", "Custom.Sneaker.Mvam.MvamAI", 6)
+		launcher.AddLaunchable( "DalekSaucer", "Custom.Sneaker.Mvam.MvamAI", 1)
 
 		launcher = LauncherManager.GetLauncher( "Shuttle Bay 2", pShip)
 		group.AddLauncher( "Shuttle Bay 2", launcher)
-		launcher.AddLaunchable( "DalekSaucer", "Custom.Sneaker.Mvam.MvamAI", 5)
-		launcher.AddLaunchable( "DalekEmperorSaucer", "Custom.Sneaker.Mvam.MvamAI", 1)
+		launcher.AddLaunchable( "DalekSmallSaucer", "Custom.Sneaker.Mvam.MvamAI", 6)
+		launcher.AddLaunchable( "DalekSaucer", "Custom.Sneaker.Mvam.MvamAI", 1)
 		
 		launcher = LauncherManager.GetLauncher( "Shuttle Bay 3", pShip)
 		group.AddLauncher( "Shuttle Bay 3", launcher)
-		launcher.AddLaunchable( "DalekSaucer", "Custom.Sneaker.Mvam.MvamAI", 5)
+		launcher.AddLaunchable( "DalekSmallSaucer", "Custom.Sneaker.Mvam.MvamAI", 6)
+		launcher.AddLaunchable( "DalekSaucer", "Custom.Sneaker.Mvam.MvamAI", 1)
 
 		launcher = LauncherManager.GetLauncher( "Shuttle Bay 4", pShip)
 		group.AddLauncher( "Shuttle Bay 4", launcher)
-		launcher.AddLaunchable( "DalekSaucer", "Custom.Sneaker.Mvam.MvamAI", 5)
+		launcher.AddLaunchable( "DalekSmallSaucer", "Custom.Sneaker.Mvam.MvamAI", 6)
+		launcher.AddLaunchable( "DalekSaucer", "Custom.Sneaker.Mvam.MvamAI", 1)
 
 		launcher = LauncherManager.GetLauncher( "Shuttle Bay 5", pShip)
 		group.AddLauncher( "Shuttle Bay 5", launcher)
-		launcher.AddLaunchable( "DalekSaucer", "Custom.Sneaker.Mvam.MvamAI", 5)
+		launcher.AddLaunchable( "DalekSmallSaucer", "Custom.Sneaker.Mvam.MvamAI", 6)
+		launcher.AddLaunchable( "DalekSaucer", "Custom.Sneaker.Mvam.MvamAI", 1)
 
 		launcher = LauncherManager.GetLauncher( "Shuttle Bay 6", pShip)
 		group.AddLauncher( "Shuttle Bay 6", launcher)
-		launcher.AddLaunchable( "DalekSaucer", "Custom.Sneaker.Mvam.MvamAI", 5)
+		launcher.AddLaunchable( "DalekSmallSaucer", "Custom.Sneaker.Mvam.MvamAI", 6)
+		launcher.AddLaunchable( "DalekSaucer", "Custom.Sneaker.Mvam.MvamAI", 1)
 
 		self.AddLauncher( "Group 1", group)
 
