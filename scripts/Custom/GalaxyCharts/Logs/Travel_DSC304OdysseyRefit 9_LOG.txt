@@ -1,0 +1,41 @@
+#This is the dump of the LogCreator: <DSC304OdysseyRefit 9 Travel Logger LogCreator_S0OWm2Mhwz05>
+#This log file was created on: 21:9:23.148 of 28/October/2023, Saturday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>21:9:23.148 of 28/October/2023, Saturday
+#>>>Initialized DSC304OdysseyRefit 9 Travel logger
+#>>>SELF = <DSC304OdysseyRefit 9(740027) Travel_75OWS20q0qS3>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>21:9:36.498 of 28/October/2023, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>21:9:37.065 of 28/October/2023, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>21:9:58.369 of 28/October/2023, Saturday
+#>>>Updated Target Ship = DalekSaucer-9
+## -------------------- ##
+####################
+#######>>>21:10:20.819 of 28/October/2023, Saturday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

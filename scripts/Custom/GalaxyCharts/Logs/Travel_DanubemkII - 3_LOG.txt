@@ -1,0 +1,71 @@
+#This is the dump of the LogCreator: <DanubemkII - 3 Travel Logger LogCreator_IOgKtg669R05>
+#This log file was created on: 21:20:10.182 of 28/October/2023, Saturday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>21:20:10.182 of 28/October/2023, Saturday
+#>>>Initialized DanubemkII - 3 Travel logger
+#>>>SELF = <DanubemkII - 3(1336328) Travel_zWL7O4seV129>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>21:20:10.537 of 28/October/2023, Saturday
+#>>>Updated Target Ship = Player
+## -------------------- ##
+####################
+#######>>>21:20:22.806 of 28/October/2023, Saturday
+#>>>Updated Target Ship = DalekNewParadigmGrey-26
+## -------------------- ##
+####################
+#######>>>21:20:30.119 of 28/October/2023, Saturday
+#>>>Updated Target Ship = Dalek2005Gold9
+## -------------------- ##
+####################
+#######>>>21:20:51.885 of 28/October/2023, Saturday
+#>>>Updated Target Ship = DalekNewParadigmBlue-27
+## -------------------- ##
+####################
+#######>>>21:21:1.801 of 28/October/2023, Saturday
+#>>>Updated Target Ship = Dalek2005Gold7
+## -------------------- ##
+####################
+#######>>>21:21:42.431 of 28/October/2023, Saturday
+#>>>Updated Target Ship = Dalek2005Gold8
+## -------------------- ##
+####################
+#######>>>21:22:33.112 of 28/October/2023, Saturday
+#>>>Travelling INTERCEPT procedures initiated...
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Checked: Ship can warp, travel procedures started.
+#>>> -Stopped Intercept speed, incase the ship was intercepting.
+#>>> -Target is Dalek2005Gold8 (1289196)
+#>>>Playing travel intercept sequence...
+## -------------------- ##
+####################
+#######>>>21:22:38.384 of 28/October/2023, Saturday
+#>>>Travel INTERCEPT sequence ended...
+#>>>Travelling Intercept procedures finished...
+## -------------------- ##
+####################
+#######>>>21:22:47.455 of 28/October/2023, Saturday
+#>>>Stopping warp intercept
+#>>>Stopped Warp Intercept...
+## -------------------- ##
+####################
+#######>>>21:22:49.355 of 28/October/2023, Saturday
+#>>>Finished  FinishStopIntercept
