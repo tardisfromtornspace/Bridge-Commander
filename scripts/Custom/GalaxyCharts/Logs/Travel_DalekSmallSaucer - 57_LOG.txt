@@ -1,0 +1,28 @@
+#This is the dump of the LogCreator: <DalekSmallSaucer - 57 Travel Logger LogCreator_9JpNn1O2vSd3>
+#This log file was created on: 22:20:14.124 of 28/October/2023, Saturday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>22:20:14.124 of 28/October/2023, Saturday
+#>>>Initialized DalekSmallSaucer - 57 Travel logger
+#>>>SELF = <DalekSmallSaucer - 57(666895) Travel_T1ZEAd0f70dk>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+## -------------------- ##
+####################
+#######>>>22:20:22.405 of 28/October/2023, Saturday
+#>>>Stopping Refresh Handler
+#>>>Deleting...

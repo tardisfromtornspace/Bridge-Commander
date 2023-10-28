@@ -1,0 +1,34 @@
+#This is the dump of the LogCreator: <Death Star II-1 Travel Logger[2] LogCreator_Fn7J02Cn18y9>
+#This log file was created on: 21:54:12.674 of 28/October/2023, Saturday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>21:54:12.674 of 28/October/2023, Saturday
+#>>>Initialized Death Star II-1 Travel logger
+#>>>SELF = <Death Star II-1(65705) Travel_tXdt9X833t4Q>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Ship is dead or dying
+#>>>Ship is dead or dying (at SetDestination)
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Ship is dead or dying (at SetDestination)
+#>>>Set Exit Placement Name as None
+#>>>Enable Towing: 0
+#>>>Travelling procedures initiated...
+#>>> -Ship is dead or dying
+#>>> -Cancelling, too close to target to warp intercept...
+## -------------------- ##
+####################
+#######>>>21:54:13.913 of 28/October/2023, Saturday
+#>>> -Cancelling, too close to target to warp intercept...
+########################################
+# 22:11:13.238 of 28/October/2023, Saturday
+#Ending of log dump - User is quiting the game
+########################################

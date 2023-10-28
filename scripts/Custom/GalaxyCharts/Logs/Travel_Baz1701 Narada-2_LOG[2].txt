@@ -1,0 +1,29 @@
+#This is the dump of the LogCreator: <Baz1701 Narada-2 Travel Logger[2] LogCreator_iYl4C45U0n51>
+#This log file was created on: 22:9:36.145 of 28/October/2023, Saturday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>22:9:36.145 of 28/October/2023, Saturday
+#>>>Initialized Baz1701 Narada-2 Travel logger
+#>>>SELF = <Baz1701 Narada-2(944183) Travel_139r4g8vUe8Q>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Ship is dead or dying
+#>>>Ship is dead or dying (at SetDestination)
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Ship is dead or dying (at SetDestination)
+#>>>Set Exit Placement Name as None
+#>>>Enable Towing: 0
+#>>>Travelling procedures initiated...
+#>>> -Ship is dead or dying
+########################################
+# 22:11:13.238 of 28/October/2023, Saturday
+#Ending of log dump - User is quiting the game
+########################################
