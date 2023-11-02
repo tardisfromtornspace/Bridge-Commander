@@ -1,6 +1,7 @@
 This mod was changed by narrowcwyfe and Alex SL Gato.
 
 ===Changelog===
+0.9.7 - After the armour fixes, the bleedthrough is noticeably reduced, meaning that the ArmouredVoyager does not require such fast-regenerating shields. So those have been adjusted to a more regular shield.
 0.9.3 - Removed some techs the ship does not use, plus a weird armour bug - thanks for Grey for noticing.
 0.9.2 - Removed additional, unnecessary TimeVortex.py Tech script that was causing problems - thanks THE SCI-FI King for that
 0.9.1 - By Dasher42's request, added the Foundation and SDK License
