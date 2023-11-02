@@ -8,7 +8,7 @@ import math
 from bcdebug import debug
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-            "Version": "1.3",
+            "Version": "1.5",
             "License": "LGPL",
             "Description": "Read info below for better understanding"
             }
@@ -314,9 +314,11 @@ def AdvArmorPlayer(): # For player
 	hull_max=pHull.GetMaxCondition()
 	hull_cond=pHull.GetCondition()
 	hull_dmg=hull_max-hull_cond
+	
 	if (armor_pwr>=hull_dmg):
 		armor_pwr=armor_pwr-hull_dmg
 		pHull.SetCondition(hull_max)
+		pPower.SetMainBatteryPower(armor_pwr/armor_ratio)
 	else:
 		pHull.SetCondition(hull_cond+armor_pwr)
 		armor_pwr=0
@@ -328,8 +330,9 @@ def AdvArmorPlayer(): # For player
 				ReplaceModel(pShip, sOriginalShipScript[pShip.GetName()])
 			pShip.SetVisibleDamageRadiusModifier(vd_rad_mod[pShip.GetName()])
 			pShip.SetVisibleDamageStrengthModifier(vd_str_mod[pShip.GetName()])
+			pPower.SetMainBatteryPower(armor_pwr/armor_ratio)
 			pShip.SetInvincible(0)
-	pPower.SetMainBatteryPower(armor_pwr/armor_ratio)
+
 	return
 
 def AdvArmor(pShip): # for AI
@@ -377,9 +380,11 @@ def AdvArmor(pShip): # for AI
 	hull_max=pHull.GetMaxCondition()
 	hull_cond=pHull.GetCondition()
 	hull_dmg=hull_max-hull_cond
+	
 	if (armor_pwr>=hull_dmg):
 		armor_pwr=armor_pwr-hull_dmg
 		pHull.SetCondition(hull_max)
+		pPower.SetMainBatteryPower(armor_pwr/armor_ratio)
 	else:
 		pHull.SetCondition(hull_cond+armor_pwr)
 		armor_pwr=0
@@ -390,8 +395,9 @@ def AdvArmor(pShip): # for AI
 				ReplaceModel(pShip, sOriginalShipScript[pShip.GetName()])
 			pShip.SetVisibleDamageRadiusModifier(vd_rad_mod[pShip.GetName()])
 			pShip.SetVisibleDamageStrengthModifier(vd_str_mod[pShip.GetName()])
+			pPower.SetMainBatteryPower(armor_pwr/armor_ratio)
 			pShip.SetInvincible(0)
-	pPower.SetMainBatteryPower(armor_pwr/armor_ratio)
+
 	return
 
 def GetAdvArmor(pShip):

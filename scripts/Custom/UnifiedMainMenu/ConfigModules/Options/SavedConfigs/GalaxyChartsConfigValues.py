@@ -3,12 +3,12 @@ UserTimeFactor = 10000.0
 SetDefaultLocs = 1
 ShowBanners = 1
 class LoggerConfig:
-	LogChaser = 1
-	LogTravel = 1
-	LogGalaxy = 1
-	LogTravelerAI = 1
-	LogTWS = 1
-	LogRDF = 1
+	LogChaser = 0
+	LogTravel = 0
+	LogGalaxy = 0
+	LogTravelerAI = 0
+	LogTWS = 0
+	LogRDF = 0
 class Starstreaks:
 	MaxPulseUpdate = 4.0095705986
 	StreaksPerPulse = 45.597202301
@@ -40,5 +40,5 @@ class WarSimulator:
 	PlayerHasRaceCommand = 1
 	EconomicModifier = 1.0
 	RAFModifier = 100.0
-	MaxInitShips = 4.0
-	MaxReinShips = 5.0
+	MaxInitShips = 10.0
+	MaxReinShips = 15.0
