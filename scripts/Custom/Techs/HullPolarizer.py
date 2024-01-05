@@ -1,6 +1,6 @@
 # THIS MOD IS NOT SUPPORTED BY ACTIVISION
 # HullPolarizer.py
-# Version 1.1
+# Version 1.2
 # By Alex SL Gato
 # Based on FedAblativeArmour.py and AblativeArmour.py made by the FoundationTechnologies team (specifically, but not only, MLeo) and scripts/Custom/DS9FX/DS9FXLifeSupport/HandleShields.py by USS Sovereign
 from bcdebug import debug
@@ -10,7 +10,7 @@ import Foundation
 
 MODINFO = {
 		"Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-		"Version": "1.1",
+		"Version": "1.2",
 		"License": "LGPL",
 		"Description": "Read the small title above for more info"
 	}
@@ -111,8 +111,20 @@ class PolarizedHullPlatingDef(FoundationTech.TechDef):
 				dOldConditions[pSystem.GetName()] = pSystem.GetConditionPercentage()
 			return
 
-		pShip.SetVisibleDamageRadiusModifier(1 - 0.85 * pProtectingPlate.GetConditionPercentage())
-		pShip.SetVisibleDamageStrengthModifier(1 - 0.75 * pProtectingPlate.GetConditionPercentage())
+		pShields = pShip.GetShields()
+		energyCommited = 1.0
+		if pShields:
+			energyCommited = pShields.GetPowerPercentageWanted()
+
+		damageRadiVal = 1 - 0.85 * pProtectingPlate.GetConditionPercentage() * energyCommited
+		if damageRadiVal < 0.0:
+			damageRadiVal = 0
+		damageStreVal = 1 - 0.75 * pProtectingPlate.GetConditionPercentage() * energyCommited
+		if damageStreVal < 0.0:
+			damageStreVal = 0
+
+		pShip.SetVisibleDamageRadiusModifier(damageRadiVal)
+		pShip.SetVisibleDamageStrengthModifier(damageStreVal)
 
 		# if this was not a hull hit, do nothing
 		if not pEvent.IsHullHit():
@@ -140,20 +152,18 @@ class PolarizedHullPlatingDef(FoundationTech.TechDef):
 		#if fAllocatedFactor < 0:
 		#    fAllocatedFactor = 0
 		fAllocatedFactor = 1
-		pShields = pShip.GetShields()
-		energyCommited = 1.0
-		if pShields:
-			energyCommited = pShields.GetPowerPercentageWanted()
+
 		# now reallocate the damage
 
 		polarizerEffectiveness = (1-pProtectingPlate.GetConditionPercentage()) * energyCommited
 		if polarizerEffectiveness > 1.0:
 			polarizerEffectiveness = 1.0
 
-		if not dOldConditions.has_key(pProtectingPlate.GetName()):
-			dOldConditions[pProtectingPlate.GetName()] = 1.0
-		if dOldConditions[pProtectingPlate.GetName()] < pProtectingPlate.GetConditionPercentage():
-			dOldConditions[pProtectingPlate.GetName()] = pProtectingPlate.GetConditionPercentage()
+		dOldConditions[pProtectingPlate.GetName()] = pProtectingPlate.GetConditionPercentage()
+		#if not dOldConditions.has_key(pProtectingPlate.GetName()):
+		#	dOldConditions[pProtectingPlate.GetName()] = 1.0
+		#if dOldConditions[pProtectingPlate.GetName()] < pProtectingPlate.GetConditionPercentage():
+		#	dOldConditions[pProtectingPlate.GetName()] = pProtectingPlate.GetConditionPercentage()
 
 		for pSystem in lAffectedSystems:
 			if not dOldConditions.has_key(pSystem.GetName()):
@@ -176,7 +186,8 @@ class PolarizedHullPlatingDef(FoundationTech.TechDef):
 
 		if bPlateAtRange == 0:
 			fOldCondition2 = dOldConditions[pProtectingPlate.GetName()]
-			fDiff2 = 1 - fOldCondition2 + fDamage / pProtectingPlate.GetMaxCondition()
+			#fDiff2 = 1 - fOldCondition2 + fDamage / pProtectingPlate.GetMaxCondition()
+			fDiff2 = fDamage / pProtectingPlate.GetMaxCondition()
 			fNewCondition2 = fOldCondition2 - 0.5 * fDiff2 / (len(lAffectedSystems) + 1)
 			
 			pProtectingPlate.SetConditionPercentage(fNewCondition2)

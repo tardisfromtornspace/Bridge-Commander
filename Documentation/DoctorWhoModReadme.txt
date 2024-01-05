@@ -1,4 +1,8 @@
 === Changelong ===
+1.1.0 through 1.1.2
+* Improved some techs.
+1.0.9
+* Additional additional stabilization fix to the AdvArmourThree
 1.0.8
 * Dalek Crucible and smaller Dalek saucers now available.
 * REALITY BOMB technology polished - please remember this technology will affect a star system during an entire gaming session (like the PlanetKiller technology), so to reset a system to normal, you'll need to reload QuickBattle or close and re-open the game.

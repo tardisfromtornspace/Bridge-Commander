@@ -1,4 +1,6 @@
 ==Changelog==
+1.0.8 -
+   * Upgraded the Hull Polarizer script to 1.2 - now it lasts longer.
 1.0.7 -
    * Upgraded the Hull Polarizer script to 1.1 - now it also protects from visible damage to an extent.
 1.0.6 -
