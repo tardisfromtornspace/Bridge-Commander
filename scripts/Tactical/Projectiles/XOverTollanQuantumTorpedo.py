@@ -76,77 +76,9 @@ def GetGuidanceLifetime():
 def GetMaxAngularAccel():
 	return 4.15
 
-# Sets the minimum damage the torpedo will do
-def GetMinDamage():
-	return 750
-
-# Sets the percentage of damage the torpedo will do
-def GetPercentage():
-	return 0.00001
-
-global lImmuneShips
-lImmuneShips = (
-                "AMVogager",
-                "ArmoredVoyager",
-                "DJEnterpriseG",
-                "GalaxyX",
-                "EnterpriseF",
-                "EnterpriseJ",
-                "Excalibur",
-                "Tardis",
-                "enterprise",
-                "Aegean",
-                "Aegian",
-                "XOverAlteranWarship",
-                "XOverAncientCityFed",
-                "XOverAncientSatelliteFed",  
-                "VulcanXRT55D",
-                "MvamPrometheus",
-                "novaII", 
-                )
-
-def TargetHit(pObject, pEvent):
-	global pWeaponLock
-	pTorp=App.Torpedo_Cast(pEvent.GetSource())
-	pShip=App.ShipClass_Cast(pEvent.GetDestination())
-	if (pTorp==None) or (pShip==None):
-		return
-	try:
-		id=pTorp.GetObjID()
-		pSubsystem=pWeaponLock[id]
-		del pWeaponLock[id]
-	except:
-		pSubsystem=pShip.GetHull()
-
-	### LJ INSERTS - CHECK FOR IMMUNE SHIP
-	global lImmuneShips
-	sScript     = pShip.GetScript()
-	sShipScript = string.split(sScript, ".")[-1]
-	if sShipScript in lImmuneShips:
-		return
-	######################################
-	if (pSubsystem==None):
-		return
-	Dmg=pSubsystem.GetMaxCondition()*GetPercentage()
-	if (Dmg<GetMinDamage()):
-		Dmg=GetMinDamage()
-	if (pSubsystem.GetCondition()>Dmg):
-		pSubsystem.SetCondition(pSubsystem.GetCondition()-Dmg)
-	else:
-		pShip.DestroySystem(pSubsystem)
-	return
-
-def WeaponFired(pObject, pEvent):
-	global pWeaponLock
-	pTorp=App.Torpedo_Cast(pEvent.GetSource())
-	pTube=App.TorpedoTube_Cast(pEvent.GetDestination())
-	if (pTorp==None) or (pTube==None):
-		return
-	pShip=pTube.GetParentShip()
-	if (pShip==None):
-		return
-	try:
-		pWeaponLock[pTorp.GetObjID()]=pShip.GetTargetSubsystem()
-	except:
-		return
-	return
+try:
+	modTransphasicTorp = __import__("Custom.Techs.TransphasicTorp")
+	if(modTransphasicTorp):
+		modTransphasicTorp.oTransphasicTorp.AddTorpedo(__name__)
+except:
+	print "Transphasic Torpedo script not installed, or you are missing Foundation Tech"

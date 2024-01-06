@@ -10,9 +10,9 @@ import GlobalPropertyTemplates
 #################################################
 ShieldGenerator = App.ShieldProperty_Create("Shield Generator")
 
-ShieldGenerator.SetMaxCondition(5000.000000)
+ShieldGenerator.SetMaxCondition(2000.000000)
 ShieldGenerator.SetCritical(0)
-ShieldGenerator.SetTargetable(0)
+ShieldGenerator.SetTargetable(1)
 ShieldGenerator.SetPrimary(1)
 ShieldGenerator.SetPosition(-0.028201, 2.464150, 0.802552)
 ShieldGenerator.SetPosition2D(66.000000, 38.000000)
@@ -37,6 +37,36 @@ ShieldGenerator.SetShieldChargePerSecond(ShieldGenerator.BOTTOM_SHIELDS, 8.00000
 ShieldGenerator.SetShieldChargePerSecond(ShieldGenerator.LEFT_SHIELDS, 3.000000)
 ShieldGenerator.SetShieldChargePerSecond(ShieldGenerator.RIGHT_SHIELDS, 3.000000)
 App.g_kModelPropertyManager.RegisterLocalTemplate(ShieldGenerator)
+#################################################
+HullPolarizer = App.ShieldProperty_Create("Hull Polarizer")
+
+HullPolarizer.SetMaxCondition(5000.000000)
+HullPolarizer.SetCritical(0)
+HullPolarizer.SetTargetable(1)
+HullPolarizer.SetPrimary(0)
+HullPolarizer.SetPosition(-0.028201, 2.464150, 0.802552)
+HullPolarizer.SetPosition2D(66.000000, 38.000000)
+HullPolarizer.SetRepairComplexity(2.000000)
+HullPolarizer.SetDisabledPercentage(0.400000)
+HullPolarizer.SetRadius(50.120000)
+HullPolarizer.SetNormalPowerPerSecond(0.000000)
+HullPolarizerShieldGlowColor = App.TGColorA()
+HullPolarizerShieldGlowColor.SetRGBA(1.000000, 0.501961, 0.247059, 0.466667)
+HullPolarizer.SetShieldGlowColor(HullPolarizerShieldGlowColor)
+HullPolarizer.SetShieldGlowDecay(1.000000)
+HullPolarizer.SetMaxShields(HullPolarizer.FRONT_SHIELDS, 0.000000)
+HullPolarizer.SetMaxShields(HullPolarizer.REAR_SHIELDS, 0.000000)
+HullPolarizer.SetMaxShields(HullPolarizer.TOP_SHIELDS, 0.000000)
+HullPolarizer.SetMaxShields(HullPolarizer.BOTTOM_SHIELDS, 0.000000)
+HullPolarizer.SetMaxShields(HullPolarizer.LEFT_SHIELDS, 0.000000)
+HullPolarizer.SetMaxShields(HullPolarizer.RIGHT_SHIELDS, 0.000000)
+HullPolarizer.SetShieldChargePerSecond(HullPolarizer.FRONT_SHIELDS, 20.000000)
+HullPolarizer.SetShieldChargePerSecond(HullPolarizer.REAR_SHIELDS, 8.000000)
+HullPolarizer.SetShieldChargePerSecond(HullPolarizer.TOP_SHIELDS, 8.000000)
+HullPolarizer.SetShieldChargePerSecond(HullPolarizer.BOTTOM_SHIELDS, 8.000000)
+HullPolarizer.SetShieldChargePerSecond(HullPolarizer.LEFT_SHIELDS, 3.000000)
+HullPolarizer.SetShieldChargePerSecond(HullPolarizer.RIGHT_SHIELDS, 3.000000)
+App.g_kModelPropertyManager.RegisterLocalTemplate(HullPolarizer)
 #################################################
 Hull = App.HullProperty_Create("Hull")
 
@@ -743,6 +773,9 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(JumpspaceDrive)
 def LoadPropertySet(pObj):
 	"Sets up the object's properties."
 	prop = App.g_kModelPropertyManager.FindByName("Hull", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	if (prop != None):
+		pObj.AddToSet("Scene Root", prop)
+	prop = App.g_kModelPropertyManager.FindByName("Hull Polarizer", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
 	prop = App.g_kModelPropertyManager.FindByName("Shield Generator", App.TGModelPropertyManager.LOCAL_TEMPLATES)

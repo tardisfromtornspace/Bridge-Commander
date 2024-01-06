@@ -38,7 +38,8 @@ credits = {
 #                                                                                     #
 Foundation.ShipDef.XOverAncientCityFed = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
 Foundation.ShipDef.XOverAncientCityFed.dTechs = {
-	'Breen Drainer Immune': 0
+	'Breen Drainer Immune': 0,
+	'Alteran ZPM Shields': { "Strength": 1 }
 }
 
 #                                                                                     #

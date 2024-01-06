@@ -41,10 +41,10 @@ def Create(pTorp):
 	return(0)
 
 def GetLifetime():
-        return 60
+        return 64
 
 def GetLaunchSpeed():
-	return(22)
+	return(50)
 
 def GetLaunchSound():
 	return("Drone")
@@ -56,7 +56,7 @@ def GetName():
 	return("Drone")
 
 def GetDamage():
-	return 15.00001
+	return 35.00001
 
 # Sets the minimum damage the torpedo will do
 def GetMinDamage():
@@ -67,17 +67,21 @@ def GetPercentage():
 	return 0.00001
 
 def GetGuidanceLifetime():
-	return 100.0
+	return 700.0
 
 def GetMaxAngularAccel():
-	return 7.5
+	return 9.5
 
 
 global lImmuneShips
 lImmuneShips = (
+                "B5TriadTriumviron",
+                "BattleTardis",
                 "EnterpriseJ",
                 "Tardis",
+                "TardisType89",
                 "VulcanXRT55D",
+                "XOverAncientCityFed",
                 )
 
 def TargetHit(pObject, pEvent):
@@ -93,12 +97,34 @@ def TargetHit(pObject, pEvent):
 	except:
 		pSubsystem=pShip.GetHull()
 
-	### LJ INSERTS - CHECK FOR IMMUNE SHIP
+	### LJ + ALEX SL GATO INSERTS - CHECK FOR IMMUNE SHIP
 	global lImmuneShips
+
 	sScript     = pShip.GetScript()
 	sShipScript = string.split(sScript, ".")[-1]
-	if sShipScript in lImmuneShips:
-		return
+
+	pShipModule =__import__(sScript)
+	pShields = pShip.GetShields()
+	if hasattr(pShipModule, "IsStargateDroneImmune") and pShields or sShipScript in lImmuneShips:
+		# print "the target is immune to drones via ship script"
+		shieldsStrong = 6
+		for shieldDir in range(App.ShieldClass.NUM_SHIELDS):
+			fCurr = pShields.GetCurShields(shieldDir)
+			fMax = pShields.GetMaxShields(shieldDir)
+			if fMax == 0.0 or fCurr < 0.3 * fMax:
+				shieldsStrong = shieldsStrong - 1
+		if shieldsStrong > 3:
+			for shieldDir in range(App.ShieldClass.NUM_SHIELDS):
+				fCurr = pShields.GetCurShields(shieldDir)
+				fMax = pShields.GetMaxShields(shieldDir)
+				fCurr = fCurr - (GetMinDamage()/6.0)
+				if fCurr <= 0.0:
+					fCurr = 0.0
+				elif fCurr > fMax:
+					fCurr = fMax
+				pShields.SetCurShields(shieldDir, fCurr)
+			return
+		
 	######################################
 	if (pSubsystem==None):
 		return
@@ -125,3 +151,14 @@ def WeaponFired(pObject, pEvent):
 	except:
 		return
 	return
+
+def RicochetChance(): # Chance of the projectile to do a comeback
+	return 95
+
+try:
+	modSGRealisticHoppingTorp = __import__("Custom.Techs.SGRealisticHoppingTorp")
+	if(modSGRealisticHoppingTorp):
+		modSGRealisticHoppingTorp.oSGRealisticHoppingTorp.AddTorpedo(__name__, RicochetChance())
+
+except:
+	print "SG Hopping Torpedo script not installed, or you are missing Foundation Tech"
