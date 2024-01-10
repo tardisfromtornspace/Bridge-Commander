@@ -203,7 +203,8 @@ try:
 					if iChildren > 0:
 						for iIndex in range(iChildren):
 							pChild = pWeaponSystem1.GetChildSubsystem(iIndex)
-							self.Heal(lBeamNames, pChild, transparency)	
+							self.Heal(lBeamNames, pChild, transparency)
+					pWeaponSystem1.SetForceUpdate(1)	
 
 				#else:
 				#	print "FSTB: I do not have beams key or phaser control"
@@ -233,6 +234,9 @@ try:
 				pShip.UpdateNodeOnly()
 				if pInstance.__dict__['Rainbow Hardpoint'].has_key("BUG LANCE"):
 					pShip.SetupProperties()
+
+				#global pAllShipsWithTheTech
+				#pAllShipsWithTheTech[pInstance] = pShip
 
 			# App.g_kTimerManager.DeleteTimer(pTimer) ## or something similar to delete the timer once something in particular has happened to make it end 
 			return 0
@@ -270,6 +274,10 @@ try:
 					pthisPhaser.SetOuterCoreColor(kColor)
 					kColor = self.getPhaserColorRdm(transparency)
 					pthisPhaser.SetInnerCoreColor(kColor)
+					#pthisPhaser.UpdateNodeOnly()
+					#pSubsystem.UpdateNodeOnly()
+					#pSubsystem.Update()
+					#pShip.UpdateNodeOnly()
 				except:
 					print "hm"
 					traceback.print_exc()
@@ -278,7 +286,7 @@ try:
 			if iChildren > 0:
 				for iIndex in range(iChildren):
 					pChild = pSubsystem.GetChildSubsystem(iIndex)
-					self.Heal(pInstance, pChild)
+					self.Heal(pInstance, pChild, pShip)
 
 		def getPhaserColorRdm(self, transparency=0):
 			kColor = App.TGColorA()
