@@ -1,0 +1,195 @@
+Star Trek: XI Prime/Alternate Hybrid Pack v. 1.2 - Readme
+
+===============================================================
+
+10/09/2009
+
+Modding Tool: Paint Shop Pro 7
+
+File Name: st_xi_prime_alternate_hybrid_pack_v1.2.rar
+
+Modding Time: 1 Month
+
+Mod Requirements:
+
+[i]* Slipstream Framework v.1.0:[/i]
+https://www.gamefront.com/games/bridge-commander/file/slipstream-framework
+
+[i]* MLeo's Sub Menu v.3.7:[/i]
+https://www.gamefront.com/games/bridge-commander/file/submenu
+
+[i]* Nano FX2 Beta:[/i]
+https://www.gamefront.com/games/bridge-commander/file/nanofx
+
+
+Mod Description:
+===============================================================
+
+This mod pack will not replace "any" JJEnterprise mod you may have installed.
+
+This is "My" personal fan vision of what I thought the registries should have looked like on the Star Trek: XI version of the new NCC-1701. I've added the canon markings & fonts as seen in the Original Star Trek series. This pack has a total of seventeen ships. The hardpoints will have specific power, shield and phaser output, to make each ship distinct. The starships now have slipstream drive. This was added only to provide the canon warp effect as seen in Star Trek: XI.
+
+The purpose of this Mod is create balance in the Quickbattle scenarios. Consider each ship has been "tweaked" by
+it's Chief Engineer. This will result in the A.I.handling of each Constitution Class will be observed very differently, with surprising results!
+
+
+Requirements:
+===============================================================
+
+Slipstream Framework v.1.0 (not needed but capable)
+
+===============================================================
+
+Prime/Alternate Hybrid Constitution Torpedo/Phaser Specifications:
+===============================================================
+
+* Canon Phaser Discharge Arc(s)*
+* Phaser Array adaptability to damage*
+
+Canon Hardpoints and Subsystems
+Ventral Phaser Banks (6)
+Dorsal Phaser Banks (6)
+Ventral Phaser Starboard Front (1)
+Ventral Phaser Port Front (1)
+Dorsal Phaser Starboard Front (1)
+Dorsal Phaser Port Front (1)
+Aft Phaser Bank (2)
+Forward Torpedo Launchers (2)
+Aft Torpedo Launchers (1)
+Forward Tractor Beam (1)
+Aft Tractor Beam (1)
+Variable Shield Power Output
+Variable Hull Strength
+Variable Power Output
+Slipstream Drive Capable (to simulate the warp distortion field)
+
+
+* Running Lights compatible with NFX2 Beta
+* Separate No Slipstream/NFX2 Beta Hardpoint Included
+
+* Mod Update:
+===============================================================
+
+05/25/2023:
+After searcing online, I could not find this pack any where? So this is an exstract
+from my personal instal. The changes "saucer bot_glow.tga" on the Potemkin
+was mirrored, now corrected.
+
+* Known Bugs:
+
+The vox damage of the warp nacelles may not be perfect. This was noted
+by the original Author.
+
+The Models were tested using the Bridge Commander 1.1 Patch.
+Galaxy Charts v.1.0, Gravity FX v.1.0, DS9FX v.1.1, DS9 Xtended (Beta Version).
+If you are using Bridge Commander 1.0, the models will "not" work.
+
+Constitution Class Fleet:
+===============================================================
+
+USS Constitution * NCC-1700
+USS Constellation * NCC-1017
+USS Defiant * NCC-1764
+USS Endeavour * NCC-1895
+USS Enterprise * NCC-1701
+USS Essex * NCC-1697
+USS Excalibur * NCC-1664
+USS Exeter * NCC-1672
+USS Farragut * NCC-1647
+USS Hood * NCC-1703
+USS Independence * NCC-1707
+USS Intrepid * NCC-1631
+USS Kongo * NCC-1710
+USS Lexington * NCC-1709
+USS Potemkin * NCC-1657
+USS Republic * NCC-1371
+USS Yorktown * NCC-1717
+
+Kelvinverse Historical Note:
+
+With the Invasion of Federation Space in cr. 2258 and the destruction of Vulcan. Starfleet decided to augment
+the Constitution Class project. What was only to be a Twelve ship fleet. The Constitution Class fleet now includes five ships. The Starships Farragut & the Hood destroyed by the rouge Romulan, Nero. Including the ships that were under construction, slated for the Tikopai Class. The Endeavour, Essex & the Independence.
+
+*WARNING: THESE ARE "HIGH" RESOLUTION .TGA TEXTURES!!! YOU WILL ONLY BE ABLE TO SEE THESE TEXTURES BY SETTING YOUR BC INSTALL'S GRAPHICS SETTING TO "HIGH"!
+
+
+Manual Installation
+===============================================================
+
+1. Unzip all files.
+2. Open your BC folder located at C:Program Files\Activision\Bridge Commander.
+3. Copy and paste data/scripts/sfx folders into the main directory .
+4. If prompted to overwrite any files? Select "Yes".
+
+
+
+Extras
+===============================================================
+
+* No Slipstream/NanoFX2b Running Lights Hardpoints for the Constitution Fleet:
+_______________________________________________________
+
+If, for some reason you do not have "Slipstream Framework v.1.0 or NanoFX2b" on your modded install? Just copy and paste the contents of the "No Slipstream_No Nanofx Blinkers hardpoint" folder. Place them in your scripts/Ships/Hardpoints folder. If you installed the original Hardpoints version with NanoFX blinkers, then ran the install. Please make sure you delete the .py and .pyc hardpoints of this mod, to prevent conflicts.
+
+* Custom Sound FX from the Star Trek: XI [2009] Movie:
+_______________________________________________________
+
+You will now have the canon sounds for Slipstream entry and exit as heard in the 1009 Movie.
+Make sure you "BACK UP" your Original Sound SFX for the Slipstream Framework v.1.0; In case you prefer the originals.
+
+
+
+Credits
+===============================================================
+
+* Original Model Mesh/Texture/Hardpoint: WileyCoyote
+
+* Slipstream Texture/Tunnel: C2xtreme
+
+* Model Registry/Retexture/Slipstream Sound FX/Hardpoint Scripting/Conversion Scripting/
+Mod Packaging: Blackrook32
+
+
+
+===============================================================
+Copyrights and Permissions:
+===============================================================
+
+THIS MOD OR MODEL(S) ARE NOT MADE, SUPPORTED OR DISTRIBUTED BY Activision TM, INTERPLAY (C),
+OR PARAMOUNT PICTURES.
+
+Star Trek, Star Trek: Bridge Commander, Star Trek: The Next Generation, Star Trek: Deep Space Nine, Star Trek: Voyager, Star Trek: Enterprise, Star Trek: XI [2009] and all related sounds and images from the various productions are the sole copyright of Paramount Pictures and CBS Distributions. No infringement is intended. This is a "Freeware" Mod and is NOT to be Sold or Distributed for Sale in ANY manner.
+
+Please "Ask" for permission if you plan to host this Mod other than it's place of Download origin. The Author(s) reserve the Right of "Final Approval" for any Public release of this Mod. The Author(s) are not responsible for any damage occurred while or during the installation of this mod. Or for the loss of any data on your PC. * * USE AT YOUR OWN RISK * *
+
+If you gain permission from The Author(s) to use this mod? Please include a copy of this readme in your Modification. However, You are not to use the "Entire" Mod pack as a whole. Last- but not least, Please Credit the works above in your own readme. Give Credit where credit is due. . . It's only Polite.
+
+
+
+* * Mod Projects W.I.P.* *
+===============================================================
+
+Akula Class Mod Pack v.2.0 (MKI & MKII Generational Tech)
+
+Ark Royal Class Mod Pack v.1.0 (FTech Enhanced/Fighter Launching)
+
+Federation Class Mod Pack v.1.0  (FTech Enhanced)
+
+Excalibur Class Mod Pack v.1.5 (FTech Enhanced/Slipstream Capable/Fighter Launching)
+
+NV Intrepid Class Mod Pack v.2.0 (ENT/Mirror Versions)
+
+Nebula Class Mod Pack v.1.0 (MVAM Capable/Generational Tech)
+
+===============================================================
+
+
+* Special thanks to... WileyCoyote for the use of his model. :-)
+
+* Also to beta tester, Rob_Archer. ;-)
+
+Thanks to the BCFiles.com Community for your support with past projects....
+
+Just install in the Game, start it Up and Rock On!!
+
+Blackrook32
