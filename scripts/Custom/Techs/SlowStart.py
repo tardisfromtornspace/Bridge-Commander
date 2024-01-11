@@ -2,7 +2,7 @@
 #         SlowStart by Alex SL Gato
 #         11th January 2024
 #         Based on FiveSecsGodPhaser by USS Frontier, scripts/ftb/Tech/TachyonProjectile by the FoundationTechnologies team, and scripts/ftb/Tech/FedAblativeArmour by the FoundationTechnologies team
-#         Elminster did something similar this for the DCMP Sau Paulo and for the BOBW Galaxy, but I really did not know of that script's existance at the time I made this script..         
+#         Elminster did something similar for the DCMP Sau Paulo and for the BOBW Galaxy, but I really did not know of that script's existance at the time I made this script.        
 #################################################################################################################
 # Little simple tech. Any ships with phasers/pulses and equipped with this will have a slow start on specified weapons. While this could also be used for tractors, I preferred to not include such option.
 #############################################
