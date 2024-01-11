@@ -1,5 +1,5 @@
 #################################################################################################################
-#         TachyonBeam by Alex SL Gato
+#         SlowStart by Alex SL Gato
 #         11th January 2024
 #         Based on FiveSecsGodPhaser by USS Frontier, scripts/ftb/Tech/TachyonProjectile by the FoundationTechnologies team, and scripts/ftb/Tech/FedAblativeArmour by the FoundationTechnologies team
 #         NOTE: This is a tested proof of concept, only for energy weapons               
