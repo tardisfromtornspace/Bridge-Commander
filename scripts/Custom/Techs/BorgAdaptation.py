@@ -1,7 +1,6 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
-# 17 June 2023, by Alex SL Gato (CharaToLoki), partially based on the Shield.py script by the Foundation Technologies team and Dasher42's Foundation script, and the FedAblativeArmor.py found in scripts/ftb/Tech in KM 2011.10
-# Version: 0.7
+# 12th January 2024, by Alex SL Gato (CharaToLoki), partially based on the Shield.py script by the Foundation Technologies team and Dasher42's Foundation script, and the FedAblativeArmor.py found in scripts/ftb/Tech in KM 2011.10
 #
 # TODO: 1. Create Read Me
 #	2. Create a clear guide on how to add this...
@@ -14,6 +13,11 @@ Foundation.ShipDef.Ambassador.dTechs = {
 	"Borg Adaptation": 1
 }
 """
+MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
+	    "Version": "0.8",
+	    "License": "LGPL",
+	    "Description": "Read the small title above for more info"
+	    }
 
 import App
 
@@ -26,7 +30,7 @@ import string
 
 maxCountdown = 65535 # we want to keep things moderate
 nonYieldAdaptationCounter = 100.0 # the point before the Borg manage to prevent 50% of the non-yield weapons damage
-extraReductionAdaptationCycle = 4 # this is how many extra steps are taken after nonYieldAdaptationCounter has been reached - the first initial ones make a huge drop
+extraReductionAdaptationCycle = 8 # this is how many extra steps are taken after nonYieldAdaptationCounter has been reached - the first initial ones make a huge drop
 
 # THIS IS A GLOBAL LIST, WHICH WILL BE FILLED AUTOMATICALLY OR BY THE FILES IN scripts/Custom/Techs/BorgAdaptationsDefensive
 adaptationProgress = {
@@ -200,7 +204,7 @@ LoadExtraLimitedPlugins()
 class BorgAdaptationDef(FoundationTech.TechDef):
 
 	def OnDefense(self, pShip, pInstance, oYield, pEvent, itemName):
-
+		global normalWeaponAdaptation, nonYieldAdaptationCounter, extraReductionAdaptationCycle
 		# let's make it so people can customize how fast can a borg ship adapt, within reason
 		learningFactor = pInstance.__dict__['Borg Adaptation']
 		if learningFactor > maxCountdown:
@@ -208,6 +212,7 @@ class BorgAdaptationDef(FoundationTech.TechDef):
 		elif learningFactor < -maxCountdown:
 			learningFactor = -maxCountdown
 
+		borgAdapted = 0
 		if oYield:
 			import traceback
 			try:
@@ -223,8 +228,8 @@ class BorgAdaptationDef(FoundationTech.TechDef):
 							adaptationProgress[attre] = 800
 						if adaptationProgress[attre] <= 0:
 							adaptationProgress[attre] = -1
-							print "OH NO, THE BORG ADAPTED TO THIS WEAPON"
-							return 1
+							print "OH NO, THE BORG ADAPTED TO THIS WEAPON's SPECIAL YIELD"
+							borgAdapted = 1
 						elif adaptationProgress[attre] > maxCountdown:
 							adaptationProgress[attre] = maxCountdown
 
@@ -235,96 +240,188 @@ class BorgAdaptationDef(FoundationTech.TechDef):
 			except:
 				print "something went wrong with Borg Adaptation technology"
 				traceback.print_exc()
-		else:
-			import traceback
-			try:
-				if not (itemName == "None whatsoever"):
-					if not normalWeaponAdaptation.has_key(itemName):
-						normalWeaponAdaptation[itemName] = 0
+		
+	
+		import traceback
+		try:
+			if not (itemName == "None whatsoever"):
+				if not normalWeaponAdaptation.has_key(itemName):
+					normalWeaponAdaptation[itemName] = 0
 
-					if pEvent.IsHullHit():
-						# damage values
-						fRadius = pEvent.GetRadius()
-						fDamage = abs(pEvent.GetDamage())
+				fRadius = pEvent.GetRadius()
+				fDamage = abs(pEvent.GetDamage())
+				kPoint = NiPoint3ToTGPoint3(pEvent.GetObjectHitPoint())
 
-						# get the systems
-						lSystems = []
-						kIterator = pShip.StartGetSubsystemMatch(App.CT_SHIP_SUBSYSTEM)
-						while (1):
-							pSubsystem = pShip.GetNextSubsystemMatch(kIterator)
-							if not pSubsystem:
-								break
+				if pEvent.IsHullHit():
+					# damage values
 
-							lSystems.append(pSubsystem)
-						
-							for i in range(pSubsystem.GetNumChildSubsystems()):
-								pChild = pSubsystem.GetChildSubsystem(i)
-								lSystems.append(pChild)
 
-						pShip.EndGetSubsystemMatch(kIterator)
+					# get the systems
+					lSystems = []
+					
+					kIterator = pShip.StartGetSubsystemMatch(App.CT_SHIP_SUBSYSTEM)
+					while (1):
+						pSubsystem = pShip.GetNextSubsystemMatch(kIterator)
+						if not pSubsystem:
+							break
 
-						# get affected systems
-						lAffectedSystems = []
-						kPoint = NiPoint3ToTGPoint3(pEvent.GetObjectHitPoint())
-						for pSystem in lSystems:
-							vDifference = NiPoint3ToTGPoint3(pSystem.GetPosition())
-							vDifference.Subtract(kPoint)
+						lSystems.append(pSubsystem)
+					
+						for i in range(pSubsystem.GetNumChildSubsystems()):
+							pChild = pSubsystem.GetChildSubsystem(i)
+							lSystems.append(pChild)
 
-							if pSystem.GetRadius() > vDifference.Length():
+					pShip.EndGetSubsystemMatch(kIterator)
+
+					# get affected systems
+					lAffectedSystems = []
+					lNonTargetableAffeSys = []
+					kPoint = NiPoint3ToTGPoint3(pEvent.GetObjectHitPoint())
+					for pSystem in lSystems:
+						vDifference = NiPoint3ToTGPoint3(pSystem.GetPosition())
+						vDifference.Subtract(kPoint)
+
+						if pSystem.GetRadius() + fRadius >= vDifference.Length():
+							if pSystem.IsTargetable():
 								lAffectedSystems.append(pSystem)
+							else:
+								lNonTargetableAffeSys.append(pSystem)
 
-						# print lAffectedSystems
-						if len(lAffectedSystems) > 0:
-							normalWeaponAdaptation[itemName] = normalWeaponAdaptation[itemName] + learningFactor
-							if normalWeaponAdaptation[itemName] < -10:
-								normalWeaponAdaptation[itemName] = -10
-							elif normalWeaponAdaptation[itemName] > (nonYieldAdaptationCounter + extraReductionAdaptationCycle):
-								print "OH NO, THE BORG ADAPTED TO THIS WEAPON AND ITS DAMAGE IS REDUCED"
-								normalWeaponAdaptation[itemName] = nonYieldAdaptationCounter + extraReductionAdaptationCycle
+					print lAffectedSystems
+					print lNonTargetableAffeSys
 
-						# calculate the damage per radius
-						fOffSet = 1 + fRadius
-						fAllocatedFactor = fOffSet
-						if fAllocatedFactor < 1:
-							fAllocatedFactor = 1
+					normalWeaponAdaptation[itemName] = self.NormalLearningCalculation(itemName, normalWeaponAdaptation[itemName], learningFactor, nonYieldAdaptationCounter, extraReductionAdaptationCycle)
 
-						countDamage1 = ((nonYieldAdaptationCounter - normalWeaponAdaptation[itemName]) / nonYieldAdaptationCounter)
-						if countDamage1 > 0:
-							countDamage2 = countDamage1 ** (1.0/3.0)
-						elif countDamage1 < 0:
-							countDamage2 = -((-countDamage1) ** (1.0/3.0))
-						else: # In case your python doesn't support this or makes it work differently
-							countDamage2 = 0
+					# calculate the damage per radius
+					fOffSet = 1 + fRadius
+					fAllocatedFactor = fOffSet
+					if fAllocatedFactor < 1:
+						fAllocatedFactor = 1
+					
+					damageHealed = self.DamageCalculation(itemName, nonYieldAdaptationCounter, normalWeaponAdaptation, fDamage)
+					# print "Event radius: " + str(fRadius)
 
-						damageMultiplier = (countDamage2  + 1.0) * 0.5
-						print "dmg multiplier for " + str(itemName) + " stage " + str(normalWeaponAdaptation[itemName]) + " with " + str(countDamage1) + " and " + str(countDamage2) + ": " + str(damageMultiplier)
-						damageHealed = (fDamage * ( 1 - damageMultiplier))
-						# print "Event radius: " + str(fRadius)
-						if len(lAffectedSystems) <= 0: # hull hit but no subsystems affected? We must guess it's the hull only, then
-							pHull=pShip.GetHull()
-							if not(pHull==None):
-								status = pHull.GetConditionPercentage()
-								fNewCondition = status + (damageHealed / pHull.GetMaxCondition()) * fAllocatedFactor
-								pHull.SetConditionPercentage(fNewCondition)
-
-						for pSystem in lAffectedSystems:
-							status = pSystem.GetConditionPercentage()
-							# print "status" + str(status)
-							if status > 0:
-								#fNewCondition = status + (damageHealed / pSystem.GetMaxCondition()) * fAllocatedFactor / len(lAffectedSystems)
-								fNewCondition = status + (damageHealed / pSystem.GetMaxCondition()) * fAllocatedFactor / len(lAffectedSystems)
-								# print "fNewCondition = " + str(fNewCondition)
+					pHull=pShip.GetHull()
+					notInThere = 0
+					lenaffectedSys = len(lAffectedSystems)
+					for pSystem in lAffectedSystems:
+						if pSystem.GetName() == pHull.GetName():
+							print "It seems the hull is here"
+							notInThere = 1
+						status = pSystem.GetConditionPercentage()
+						# print "status" + str(status)
+						if status > 0:
+							fNewCondition = status + (damageHealed / pSystem.GetMaxCondition()) * fAllocatedFactor / lenaffectedSys
+							print "TARGE " + str(status) +"-> fNewCondition = " + str(fNewCondition) + " for " + str(pSystem.GetName())
 							
-								if fNewCondition < 0:
-									fNewCondition = 0
-								elif fNewCondition > 1:
-									fNewCondition = 1
-								pSystem.SetConditionPercentage(fNewCondition)
-					#else:	
+							if fNewCondition < 0:
+								fNewCondition = 0
+							elif fNewCondition > 1:
+								fNewCondition = 1
+							pSystem.SetConditionPercentage(fNewCondition)
+
+					lenaffecteduntSys = len(lNonTargetableAffeSys)
+					for pSystem in lNonTargetableAffeSys:
+						iamHull = 0
+						if pSystem.GetName() == pHull.GetName():
+							print "It seems the hull is here"
+							notInThere = 1
+							iamHull = 1
+						status = pSystem.GetConditionPercentage()
+						# print "status" + str(status)
+						if status > 0:
+							dividerIs = lenaffecteduntSys
+							if iamHull:
+								dividerIs = 1
+							fNewCondition = status + abs(damageHealed / pSystem.GetMaxCondition()) * fAllocatedFactor / dividerIs
+							print "NOT TARGE " + str(status) +"-> fNewCondition = " + str(fNewCondition) + "for" + str(pSystem.GetName())
+							
+							if fNewCondition < 0:
+								fNewCondition = 0
+							elif fNewCondition > 1:
+								fNewCondition = 1
+							pSystem.SetConditionPercentage(fNewCondition)
+
+					if len(lAffectedSystems) <= 0 or notInThere == 0: # hull hit but no subsystems affected? We must guess it's the hull only, then!
+						if not(pHull==None):
+							status = pHull.GetConditionPercentage()
+							fNewCondition = status + (damageHealed / pHull.GetMaxCondition()) * fAllocatedFactor / (1 + lenaffectedSys)
+							if fNewCondition > 1.0:
+								fNewCondition = 1.0
+							pHull.SetConditionPercentage(fNewCondition)
+				else:
+
+					pShields = pShip.GetShields()
+					shieldHitBroken = 0
+					if pShields and not pShields.IsDisabled():
+						# get the nearest reference
+						pReferenciado = None
+						dMasCercano = 0
+						bPlateDisabled = 0
+						pointForward = App.TGPoint3_GetModelForward()
+						pointBackward = App.TGPoint3_GetModelBackward()
+						pointTop = App.TGPoint3_GetModelUp()
+						pointBottom = App.TGPoint3_GetModelDown()
+						pointRight = App.TGPoint3_GetModelRight()
+						pointLeft = App.TGPoint3_GetModelLeft()
+						lReferencias = [pointForward, pointBackward, pointTop, pointBottom, pointLeft, pointRight]
+
+						for pPunto in lReferencias:
+							#print lReferencias.index(pPunto)
+							pPunto.Subtract(kPoint)
+							#print pPunto.Length()
+							if pReferenciado == None or pPunto.Length() < dMasCercano:
+								dMasCercano = pPunto.Length()
+								pReferenciado = pPunto
+
+						if pReferenciado:
+							shieldDir = lReferencias.index(pReferenciado)
+							fCurr = pShields.GetCurShields(shieldDir)
+							fMax = pShields.GetMaxShields(shieldDir)
+							if fCurr > (0.35 * fMax):
+								damageHealed = self.DamageCalculation(itemName, nonYieldAdaptationCounter, normalWeaponAdaptation, fDamage)
+								resultHeal = fCurr + damageHealed
+								if resultHeal < 0.0:
+									resultHeal = 0.0
+								elif resultHeal > fMax:
+									resultHeal = fMax
+								pShields.SetCurShields(shieldDir, resultHeal)
+
+					normalWeaponAdaptation[itemName] = self.NormalLearningCalculation(itemName, normalWeaponAdaptation[itemName], learningFactor, nonYieldAdaptationCounter, extraReductionAdaptationCycle)
 						
-			except:
-				print "something went wrong with Borg Adaptation technology"
-				traceback.print_exc()
+		except:
+			print "something went wrong with Borg Adaptation technology"
+			traceback.print_exc()
+
+		if borgAdapted:
+			return 1
+
+	def DamageCalculation(self, itemName, nonYieldAdaptationCounter, normalWeaponAdaptation, fDamage):
+		countDamage1 = ((nonYieldAdaptationCounter - normalWeaponAdaptation[itemName]) / nonYieldAdaptationCounter)
+		if countDamage1 > 0:
+			countDamage2 = countDamage1 ** (1.0/3.0)
+		elif countDamage1 < 0:
+			countDamage2 = -((-countDamage1) ** (1.0/3.0))
+		else: # In case your python doesn't support this or makes it work differently
+			countDamage2 = 0
+		damageMultiplier = (countDamage2  + 1.0) * 0.5
+		if nonYieldAdaptationCounter < normalWeaponAdaptation[itemName]:
+			damageMultiplier = damageMultiplier - 0.08
+		print "dmg multiplier for " + str(itemName) + " stage " + str(normalWeaponAdaptation[itemName]) + " with " + str(countDamage1) + " and " + str(countDamage2) + ": " + str(damageMultiplier)
+		damageHealed = (fDamage * ( 1 - damageMultiplier))
+
+		print "dmg multiplier for " + str(itemName) + " stage " + str(normalWeaponAdaptation[itemName]) + " with " + str(countDamage1) + " and " + str(countDamage2) + ": " + str(damageMultiplier)
+		return damageHealed
+
+	def NormalLearningCalculation(self, itemName, normalWeaponAdaptationI, learningFactor, nonYieldAdaptationCounter, extraReductionAdaptationCycle):
+		normalWeaponAdaptationI = normalWeaponAdaptationI + learningFactor
+		if normalWeaponAdaptationI < -10:
+			normalWeaponAdaptationI = -10
+		elif normalWeaponAdaptationI > (nonYieldAdaptationCounter + extraReductionAdaptationCycle):
+			print "OH NO, THE BORG ADAPTED TO THIS WEAPON AND ITS SHIELD DAMAGE IS REDUCED"
+			normalWeaponAdaptationI = nonYieldAdaptationCounter + extraReductionAdaptationCycle
+
+		return normalWeaponAdaptationI
 
 	def OnBeamDefense(self, pShip, pInstance, oYield, pEvent):
 		try:
