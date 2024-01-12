@@ -1,4 +1,13 @@
 == Changelog ==
+1.2 - Borg Adaptation script 0.9 and 1.0
+* What is new in 0.9 
+- now offensive capabilities also adapt, basically increasing the damage dealt by Borg Adaptive ships. Phasers, Torpedoes, Pulses and Tractors count as learning tools.
+-- with this, now ships can be made more resistant to this, and even use it to resist borg weapons even better - f.ex. CA8472 ship.
+- slightly reduced the capability
+* What is new in 1.0 
+- scanning a target or an area as a Borg adaptive vessel will also work towards learning from nearby ships and any torpedo or pulse close enough.
+- Improved manual/instructions of use on the script page itself.
+- Added examples of scripts that make it harder for the Borg to "adapt" - including 8472 Bioships and Weapons and some Babylon 5 Bioships and weapons.
 1.1 - Borg Adaptation script 0.8:
 * Fixed a bug that randomly made some subsystems heal from attacks at the cost of other subsystems not being protected. Now it works as it should and covers all systems evenly in all situations.
 * Made the technology tougher by allowing shields to also beneift from this and small tweaks that reduced the gap damage slightly.
@@ -13,7 +22,9 @@
 
 == What does this mod do ==
 This mod makes ships with the appropiate Technology gain an immunity over time - specifically borg immunity, so all ships with this share the same immunity over time.
-That way if you mod the Cubes to share this adaptation tech, eventually all ships with the tech will become immune to special techs.
+From 0.9 onwards, it also works onto making ships with this technology to "learn" how to deal super-effective damage towards targets.
+That way if you mod the Cubes to share this adaptation tech, eventually all ships with the tech will become immune to special techs or will have it easier to destroy more advanced vessels.
+
 It also allows for expansion without the need of a monkey patch, by adding a file with an specific format to the scripts/Custom/Techs/BorgAdaptationsDefensive.
 
 For more details, read the licenses and readmes inside each file - I've done it that way so people can still use them if they separate, plus the addition is not automatic to the techs - you must include it properly.
