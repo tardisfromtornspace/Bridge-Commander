@@ -1,6 +1,6 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
-# 12th January 2024, by Alex SL Gato (CharaToLoki), partially based on the Shield.py script by the Foundation Technologies team and Dasher42's Foundation script, and the FedAblativeArmor.py found in scripts/ftb/Tech in KM 2011.10
+# 13th January 2024, by Alex SL Gato (CharaToLoki), partially based on the Shield.py script by the Foundation Technologies team and Dasher42's Foundation script, and the FedAblativeArmor.py found in scripts/ftb/Tech in KM 2011.10
 #
 # TODO: 1. Create Read Me
 #	2. Create a clear guide on how to add this...
@@ -58,7 +58,7 @@ Foundation.ShipDef.Ambassador.dTechs = {
 
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "1.0",
+	    "Version": "1.1",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -286,7 +286,7 @@ class BorgAdaptationDef(FoundationTech.TechDef):
 					damageHealed = self.DamageCalculation(itemName, nonYieldAdaptationCounter, normalWeaponAdaptation, fDamage)
 					# print "Event radius: " + str(fRadius)
 
-					self.AdjustListedSubsystems(pShip, lAffectedSystems, lNonTargetableAffeSys, damageHealed, fAllocatedFactor)
+					self.AdjustListedSubsystems(pShip, lAffectedSystems, lNonTargetableAffeSys, damageHealed, fAllocatedFactor, 0)
 				else:
 					theDmg = self.DamageCalculation(itemName, nonYieldAdaptationCounter, normalWeaponAdaptation, fDamage)
 					self.shieldRecalculation(pShip, kPoint, theDmg, 0.35)
@@ -313,7 +313,7 @@ class BorgAdaptationDef(FoundationTech.TechDef):
 			countDamage2 = 0
 		damageMultiplier = (countDamage2  + 1.0) * 0.5
 		if nonYieldAdaptationCounter < normalWeaponAdaptation[itemName]:
-			damageMultiplier = damageMultiplier - 0.05
+			damageMultiplier = damageMultiplier - 0.01
 
 		damageHealed = (fDamage * ( 1 - damageMultiplier))
 
@@ -382,7 +382,7 @@ class BorgAdaptationDef(FoundationTech.TechDef):
 						resultHeal = fMax
 					pShields.SetCurShields(shieldDir, resultHeal)
 
-	def AdjustListedSubsystems(self, pShip, lAffectedSystems, lNonTargetableAffeSys, damageHealed, fAllocatedFactor):
+	def AdjustListedSubsystems(self, pShip, lAffectedSystems, lNonTargetableAffeSys, damageHealed, fAllocatedFactor, hurt = 0):
 		pHull=pShip.GetHull()
 		notInThere = 0
 		lenaffectedSys = len(lAffectedSystems)
@@ -403,28 +403,29 @@ class BorgAdaptationDef(FoundationTech.TechDef):
 				pSystem.SetConditionPercentage(fNewCondition)
 
 		lenaffecteduntSys = len(lNonTargetableAffeSys)
-		for pSystem in lNonTargetableAffeSys:
-			iamHull = 0
-			if pSystem.GetName() == pHull.GetName():
-				#print "It seems the hull is among non-targetable systems, but in-range"
-				notInThere = 1
-				iamHull = 1
-			status = pSystem.GetConditionPercentage()
-			# print "status" + str(status)
-			if status > 0.0:
-				dividerIs = lenaffecteduntSys
-				if iamHull:
-					dividerIs = 1 + lenaffectedSys
-				fNewCondition = status + (damageHealed / pSystem.GetMaxCondition()) * fAllocatedFactor / dividerIs
-				#print "NOT TARGETABLE " + str(status) +"-> fNewCondition = " + str(fNewCondition) + "for" + str(pSystem.GetName())
+		if hurt == 0:
+			for pSystem in lNonTargetableAffeSys:
+				iamHull = 0
+				if pSystem.GetName() == pHull.GetName():
+					#print "It seems the hull is among non-targetable systems, but in-range"
+					notInThere = 1
+					iamHull = 1
+				status = pSystem.GetConditionPercentage()
+				# print "status" + str(status)
+				if status > 0.0:
+					dividerIs = lenaffecteduntSys
+					if iamHull:
+						dividerIs = 1 + lenaffectedSys
+					fNewCondition = status + (damageHealed / pSystem.GetMaxCondition()) * fAllocatedFactor / dividerIs
+					#print "NOT TARGETABLE " + str(status) +"-> fNewCondition = " + str(fNewCondition) + "for" + str(pSystem.GetName())
 							
-				if fNewCondition < 0:
-					fNewCondition = 0
-				elif fNewCondition > 1:
-					fNewCondition = 1
-				pSystem.SetConditionPercentage(fNewCondition)
+					if fNewCondition < 0:
+						fNewCondition = 0
+					elif fNewCondition > 1:
+						fNewCondition = 1
+					pSystem.SetConditionPercentage(fNewCondition)
 
-		if len(lAffectedSystems) <= 0 or notInThere == 0: # hull hit but no subsystems affected? We must guess it's the hull only, then!
+		if notInThere == 0: # hull hit but no targetable subsystems affected? We must guess it's the hull only, then!
 			if not(pHull==None):
 				#print "It seems the hull is among non-targetable systems, and not in-range"
 				status = pHull.GetConditionPercentage()
@@ -563,7 +564,7 @@ class BorgAdaptationDef(FoundationTech.TechDef):
 					if fAllocatedFactor < 1:
 						fAllocatedFactor = 1
 
-					self.AdjustListedSubsystems(pTarget, lAffectedSystems, lNonTargetableAffeSys, -finalAddedDamage, fAllocatedFactor)
+					self.AdjustListedSubsystems(pTarget, lAffectedSystems, lNonTargetableAffeSys, -finalAddedDamage, fAllocatedFactor, 1)
 					
 				impactingShipTypeDict[itemName] = self.NormalLearningCalculation(itemName, impactingShipTypeDict[itemName], learningFactor, yieldAttackAdaptationCounter, 0)
 			
