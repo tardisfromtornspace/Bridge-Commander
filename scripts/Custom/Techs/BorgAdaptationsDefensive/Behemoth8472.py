@@ -6,4 +6,4 @@
 def defenseShipCounterRdm(): # Establishes a random factor - values must be >= 0. The greater the value, the more range can happen between sessions.
 	return 1000
 def defenseShipCounter(): # Establishes the minimum number of strikes before it adapts, stacking along the random value above - please notice some weapons deal multi-strikes. Values must be >= 0
-	return 12000
+	return 2200000

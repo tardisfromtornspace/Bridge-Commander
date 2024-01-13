@@ -58,7 +58,7 @@ Foundation.ShipDef.Ambassador.dTechs = {
 
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "1.1",
+	    "Version": "1.2",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -188,7 +188,7 @@ def LoadExtraLimitedPlugins(dExcludePlugins=_g_dExcludeBorgPlugins):
 						if hasattr(banana, "defenseShipCounterRdm"):
 							randomness = banana.defenseShipCounterRdm()
 						constantness = banana.defenseShipCounter()
-						trueRandomness = -App.g_kSystemWrapper.GetRandomNumber(randomness)
+						trueRandomness = App.g_kSystemWrapper.GetRandomNumber(randomness)
 						impactingShipTypeDict[fileName] =  -(trueRandomness + constantness)
 
 					
@@ -536,14 +536,14 @@ class BorgAdaptationDef(FoundationTech.TechDef):
 					learningFactor = maxCountdown
 				elif learningFactor < -maxCountdown:
 					learningFactor = -maxCountdown
-
+				
 				if not impactingShipTypeDict.has_key(itemName):
 
 					if pTargetInstance and pTargetInstance.__dict__.has_key("Borg Attack Resistance"):
 						impactingShipTypeDict[itemName] = -pTargetInstance.__dict__["Borg Attack Resistance"]
 					else:
 						impactingShipTypeDict[itemName] = 0
-
+				
 				fRadius, fDamage, kPoint = self.EventInformation(pEvent)
 
 				extraSteps = impactingShipTypeDict[itemName]/(1.0 * yieldAttackAdaptationCounter)

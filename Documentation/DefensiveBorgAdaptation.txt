@@ -1,4 +1,7 @@
 == Changelog ==
+1.4 - Borg Adaptation script 1.2 
+- Bugfix with randomness being detrimental for resistances
+- Fixed bad CA 8472 form which did not give immunity. Now it has.
 1.3 - Borg Adaptation script 1.1
 * What is new:
 - Bugfix, it was possible that the Hull could heal twice if it was not targetable, that now has been fixed.
