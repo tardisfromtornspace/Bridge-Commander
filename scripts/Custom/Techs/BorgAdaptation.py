@@ -14,6 +14,7 @@ Foundation.ShipDef.Ambassador.dTechs = {
 	"Borg Adaptation": 1
 }
 """
+
 # If you want an specific yield or weapon to last more or less against adaptable Borg, then you need to add a file under the scripts\Custom\Techs\BorgAdaptationsDefensive directory; called with the name of the Yield,
 # Special Technology or special specific function it may have inside (for example, if the special technology has an "IsPhaseYield" function which is a concrete way to determine it is such technology, you can call the
 # file "IsPhaseYield.py"; on the other hand if you want a Tactical.Projectiles.PhotonTorpedo85 resist more or less, you would name the file "PhotonTorpedo85")
@@ -58,7 +59,7 @@ Foundation.ShipDef.Ambassador.dTechs = {
 
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "1.2",
+	    "Version": "1.3",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }

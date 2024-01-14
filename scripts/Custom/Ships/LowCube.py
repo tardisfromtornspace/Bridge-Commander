@@ -39,8 +39,12 @@ credits = {
 #Foundation.ShipDef.LowCube = Foundation.CardStarBaseDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile })
 import F_BorgAttackDef
 Foundation.ShipDef.LowCube = F_BorgAttackDef.BorgAttackDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile })
-Foundation.ShipDef.LowCube.dTechs = { 'Breen Drainer Immune': 1 }
-Foundation.ShipDef.LowCube.dTechs = { 'Borg Adaptation': 1 }
+Foundation.ShipDef.LowCube.dTechs = {
+	'Breen Drainer Immune': 1,
+	'Borg Adaptation': 1,
+	'Automated Destroyed System Repair': {"Time": 120.0}
+}
+
 Foundation.ShipDef.LowCube.fMaxWarp = 9.999
 #                                                                                     #
 #######################################################################################

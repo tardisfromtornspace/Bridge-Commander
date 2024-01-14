@@ -36,8 +36,11 @@ credits = {
 # automatically generated the proper ShipDef Line for you.                            #
 #                                                                                     #
 Foundation.ShipDef.BorgDiamond = Foundation.BorgShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile })
-Foundation.ShipDef.BorgDiamond.dTechs = { 'Breen Drainer Immune': 1 }
-Foundation.ShipDef.BorgDiamond.dTechs = { 'Borg Adaptation': 1 }
+Foundation.ShipDef.BorgDiamond.dTechs = {
+	'Breen Drainer Immune': 1,
+	'Borg Adaptation': 1,
+	'Automated Destroyed System Repair': {"Time": 120.0}
+}
 Foundation.ShipDef.BorgDiamond.fMaxWarp = 9.999
 #                                                                                     #
 #######################################################################################

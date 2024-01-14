@@ -1,5 +1,5 @@
 # Saved Configuration File for Gravity FX,   by USS Frontier
-GravForceXvalue = 30.5926437378
+GravForceXvalue = 1.0
 SetStockPlanetsDensity = 1
 SystemMapScale = 5200.78076172
 SetSMScaleLightyear = 1
