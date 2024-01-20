@@ -6,6 +6,8 @@ def GetShipStats():
 		"FilenameHigh": "data/Models/Ships/Galor/Galor.nif",
 		"FilenameMed": "data/Models/Ships/Galor/GalorMed.nif",
 		"FilenameLow": "data/Models/Ships/Galor/GalorLow.nif",		
+		"DamageRadMod" : 0.75,
+		"DamageStrMod" : 0.9666,
 		"Name": "Galor",
 		"HardpointFile": "galor",
 		"Species": Multiplayer.SpeciesToShip.GALOR

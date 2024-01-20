@@ -6,6 +6,8 @@ def GetShipStats():
 		"FilenameHigh": "data/Models/Ships/Keldon/Keldon.nif",
 		"FilenameMed": "data/Models/Ships/Keldon/KeldonMed.nif",
 		"FilenameLow": "data/Models/Ships/Keldon/KeldonLow.nif",
+		"DamageRadMod" : 0.75,
+		"DamageStrMod" : 0.9666,
 		"Name": "Keldon",
 		"HardpointFile": "keldon",
 		"Species": Multiplayer.SpeciesToShip.KELDON
