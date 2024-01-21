@@ -69,7 +69,7 @@ def GetName():
 	return("Photon")
 
 def GetDamage():
-	return 600.0
+	return 700.0
 
 def GetGuidanceLifetime():
 	return 12.0

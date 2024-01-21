@@ -68,7 +68,7 @@ def GetName():
 	return("Positron")
 
 def GetDamage():
-	return 2200.0
+	return 2500.0
 
 def GetGuidanceLifetime():
 	return 68.0
