@@ -1,6 +1,6 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
-# 14th January 2024, by Alex SL Gato (CharaToLoki), partially based on the Shield.py script by the Foundation Technologies team and Dasher42's Foundation script, and the FedAblativeArmor.py found in scripts/ftb/Tech in KM 2011.10
+# 21st January 2024, by Alex SL Gato (CharaToLoki), partially based on the Shield.py script by the Foundation Technologies team and Dasher42's Foundation script, and the FedAblativeArmor.py found in scripts/ftb/Tech in KM 2011.10
 # Also based on Conditions.ConditionSystemBelow, probably from the original STBC Team and Activision
 # TODO: 1. Create Read Me
 #	2. Create a clear guide on how to add this...
@@ -17,7 +17,7 @@ Foundation.ShipDef.LowCube.dTechs = {
 """
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.3",
+	    "Version": "0.4",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -52,11 +52,12 @@ def findShipInstance(pShip):
 	try:
 		pInstance = FoundationTech.dShips[pShip.GetName()]
 		if pInstance == None:
-			print "After looking, no pInstance for ship:", pShip.GetName(), "How odd..."
+			print "After looking, no tech pInstance for ship:", pShip.GetName(), "How odd..."
 		
 	except:
-		print "Error while looking for pInstance for Borg technology:"
-		traceback.print_exc()
+		pass
+		#print "Error while looking for pInstance for Automated Destroyed System Repair:"
+		#traceback.print_exc()
 		
 	#finally:
 	return pInstance
@@ -85,7 +86,7 @@ class AutomatedDestroyedSystemRepairDef(FoundationTech.TechDef):
 
 	def Attach(self, pInstance):
 
-		global vOverflow, eAllSystemsat100Type
+		global vOverflow, eAllSystemsat100Type, eAllSystemsat100RealType
 		if not vOverflow:
 			pGame = App.Game_GetCurrentGame()
 			pEpisode = pGame.GetCurrentEpisode()
@@ -168,7 +169,8 @@ class AutomatedDestroyedSystemRepairDef(FoundationTech.TechDef):
 				if totalComply == 1:
 					RefreshVisibleDamage(pShip)
 			else:
-				RefreshVisibleDamage(pShip)
+				if pInstance and pInstance.__dict__.has_key("Automated Destroyed System Repair"):
+					RefreshVisibleDamage(pShip)
 
 		self.pEventHandler.CallNextHandler(pFloatEvent)
 		return 0
@@ -223,7 +225,7 @@ class AutomatedDestroyedSystemRepairDef(FoundationTech.TechDef):
 		pShip = App.ShipClass_Cast(App.TGObject_GetTGObjectPtr(pObject.GetObjID()))
 		if pShip:
 			pInstance = findShipInstance(pShip)
-			if pInstance.__dict__.has_key("Automated Destroyed System Repair"):
+			if pInstance and pInstance.__dict__.has_key("Automated Destroyed System Repair"):
 			
 				pSubsystemToRepair = App.ShipSubsystem_Cast(pEvent.GetSource())
 				if not pSubsystemToRepair:
@@ -271,12 +273,16 @@ class AutomatedDestroyedSystemRepairDef(FoundationTech.TechDef):
 		pSubsystemToRepair = App.ShipSubsystem_Cast(pEvent.GetSource())
 		pShip = pSubsystemToRepair.GetParentShip()
 		if pShip:
-			UnDestroySystem(pShip, pEvent)
-		return 0
+			pInstance = findShipInstance(pShip)
+			if pInstance and pInstance.__dict__.has_key("Automated Destroyed System Repair"):
+				UnDestroySystem(pShip, pEvent)
+
 
 		thisEventType = pEvent.GetEventType()
 		#pShip.RemoveHandlerForInstance(thisEventType, __name__ + ".unDestroySystem")
 		App.g_kEventManager.RemoveBroadcastHandler(thisEventType, self.pEventHandler, "UnDestroySystem")
+
+		return 0
 
 def UnDestroySystem(pObject, pEvent):
 	debug(__name__ + ", UnDestroySystem")
@@ -284,7 +290,7 @@ def UnDestroySystem(pObject, pEvent):
 
 	if pShip:
 		pInstance = findShipInstance(pShip)
-		if pInstance.__dict__.has_key("Automated Destroyed System Repair"):
+		if pInstance and pInstance.__dict__.has_key("Automated Destroyed System Repair"):
 			
 			destroyedSystemName = pEvent.GetCString()
 			pShipSet = pShip.GetPropertySet()

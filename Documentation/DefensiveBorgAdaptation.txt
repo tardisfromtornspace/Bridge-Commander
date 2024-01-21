@@ -1,4 +1,9 @@
 == Changelog ==
+1.7 - Automated Destroyed System Repair 0.4
+- Bugfix where an error could lead to a random ship possibly gaining part of these repairs where it shouldn't.
+- Improved cleanup.
+1.6 - Automated Destroyed System Repair 0.3.
+1.5 - Automated Destroyed System Repair 0.2 added to the Stock Borg KM Ships.
 1.4 - Borg Adaptation script 1.2 
 - Bugfix with randomness being detrimental for resistances
 - Fixed bad CA 8472 form which did not give immunity. Now it has.

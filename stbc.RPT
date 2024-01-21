@@ -12514,3 +12514,27 @@ DS:002B  ES:002B  FS:0053  GS:002B
 Flags:00010246
 Couldn't load module
 
+//=====================================================
+Current Time: Sun Jan 21 15:10:22 2024
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  0041214A 01:0001114A C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+Registers:
+EAX:0019FB40
+EBX:1420CB78
+ECX:00000000
+EDX:00898984
+ESI:14A019D4
+EDI:00000000
+CS:EIP:0023:0041214A
+SS:ESP:002B:0019FAF0  EBP:13C7A56C
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010202
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+0041214A  0019FB10  0001:0001114A C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
