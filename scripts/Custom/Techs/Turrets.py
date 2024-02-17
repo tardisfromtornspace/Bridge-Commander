@@ -15,6 +15,7 @@
 # NOTE: THIS IS VERY INCOMPLETE AND A WORK-IN-PROGRESS, EXPECT BUGS
 # KNOWN BUGS/UNINTENDED EFFECTS (By order of priority):
 # - Turrets support AutoTargeting and MultiTargeting, but it is wonky (including random spinning and turrets aiming at each other). Behaviour may turn out even weirder if multiple parent ship weapons are assigned to the same turret (with each one aiming at a different target)
+# --- IMPORTANT NOTE: In order to reduce issues, if your ships has AutoTargeting already, assign one SINGLE parent ship weapon per turret, and then just make the turret harpoint have the desired number of weapons of the same type (beam, torpedo, pulse or tractor).
 # - Turrets when firing may hit and damage the parent ship shields and subsystems with their weaponry. # TO-DO possible fix would be to add an extra hardpoint that later moves and aligns with the subShip hardpoints?
 # - Sometimes a turret will keep firing even if the parent ship stopped firing.
 # - At the moment turrets are invulnerable and can work as an effective physical shield for the subsystems underneath.
@@ -464,7 +465,7 @@ class MovingEvent:
                             pTarget = self.dOptionsList["TARGET"][repr(pShip)]
                             if pTarget:
                                 pTarget = App.ShipClass_GetObjectByID(None, pTarget.GetObjID())
-                            if not pTarget or pTarget.IsDead() or pTarget.IsDying():
+                            if not pTarget or pTarget.IsDead() or pTarget.IsDying() or pTarget.GetObjID() == self.iNacelleID:
                                 pTarget = pShip.GetTarget()
                         else:
                             pTarget = pShip.GetTarget()
@@ -473,13 +474,18 @@ class MovingEvent:
                 else:
                         self.dOptionsList["TARGET"] = pTarget
 
+                while pTarget and (pTarget.GetObjID() == self.iNacelleID): # another safety feature for doofus AutoTargeting scripts
+                    pTarget = pShip.GetNextTarget()
+
                 if pTarget:
                         kNacelleLocation = pNacelle.GetWorldLocation()
                         kTargetLocation = pTarget.GetWorldLocation()
                         #kShipLocation = pShip.GetWorldLocation()
+                        #pointTop = App.TGPoint3_GetModelUp()
 
                         kTargetLocation.Subtract(kNacelleLocation)
                         #kShipLocation.Subtract(kNacelleLocation)
+                        #pointTop.Subtract(kShipLocation)
 
                         kFwd = kTargetLocation
                         kFwd.Unitize()
@@ -491,12 +497,32 @@ class MovingEvent:
                         #kFwd2 = kShipLocation
                         #kFwd2.Unitize()
 
-                        #kPerp3 = kFwd.Perpendicular()
+                        #kPerp3 = kFwd2.Perpendicular()
                         #kPerp4 = App.TGPoint3()
-                        #kPerp4.SetXYZ(kPerp.x, kPerp.y, kPerp.z)
+                        #kPerp4.SetXYZ(kPerp3.x, kPerp3.y, kPerp3.z)
+
+                        #kFwd3 = pointTop
+                        #kFwd3.Unitize()
+
+                        #kPerp5 = kFwd3.Perpendicular()
+                        #kPerp6 = App.TGPoint3()
+                        #kPerp6.SetXYZ(kPerp5.x, kPerp5.y, kPerp5.z)
+
+                        #kPerp5 = kFwd3
+                        #kPerp6 = App.TGPoint3()
+                        #kPerp6.SetXYZ(kPerp5.x, kPerp5.y, kPerp5.z)
+
+                        #kPerp8 = App.TGPoint3()
+                        #kPerp8.SetXYZ(kFwd.x, kFwd.y, kFwd.z)
 
                         pNacelle.AlignToVectors(kFwd, kPerp2)
                         #pNacelle.AlignToVectors(kFwd, kPerp4)
+                        #pNacelle.AlignToVectors(kFwd, kPerp6)
+                        # pNacelle.AlignToObject(pShip) # this makes it spin
+                        # pNacelle.AlignToObject(pTarget) # orientation goes to the same the target has (as, if the asteroid is oriented to the left, the turrets aim to the left, not at the asteroid)
+                        # pNacelle.SetAngleAxisRotation(1.0, kPerp.x, kPerp.y, kPerp.z) # nope
+                        # pNacelle.SetAngleAxisRotation(1.0, kPerp8.x, kPerp8.y, kPerp8.z) # NOPE AS WELL
+
 
                 #self.iCurRotX = self.iCurRotX + self.iRotStepX
                 #self.iCurRotY = self.iCurRotY + self.iRotStepY
@@ -913,14 +939,15 @@ def WeaponFiredStop(pObject, pEvent, stoppedFiring=None):
 
                                 if wpnSystem != None:
                                         print "STOP FIRING BATTERIES!!!"
+                                        for anotherTurret in pInstance.TurretList:
+                                            wpnSystem.StopFiringAtTarget(anotherTurret) # NOTE: see if they have accidentally attacked themselves... it could be possible with other scripts!!!   
 
                                         #lTurretsToFire[turret][-2][1]["TARGET"][repr(pShip)] = None # In theory unnecessary but it should help with some rotational wonky behaviour
                                         if pTarget:
                                             wpnSystem.StopFiringAtTarget(pTarget)
-                                        else:
-                                            wpnSystem.StopFiring()
-                                        for anotherTurret in pInstance.TurretList:
-                                            wpnSystem.StopFiringAtTarget(anotherTurret) # NOTE: see if they have accidentally attacked themselves... it could be possible with other scripts!!!                            
+                                        #else: # We decided to remove these to ensure that when we ask a turret to stop firing a certain type of weapon, it stops firing that weapon.
+                                        wpnSystem.StopFiring()
+                         
 
                                         wpnSystem.SetForceUpdate(1)
                                 #else:
@@ -947,6 +974,8 @@ def WeaponFired(pObject, pEvent, stoppedFiring=None):
                 pTarget = App.ShipClass_Cast(App.TGObject_GetTGObjectPtr(pWeaponFired.GetTargetID()))
                 if not pTarget:
                     pTarget = pShip.GetTarget()
+                    while pTarget in pInstance.TurretList: # another safety feature for doofus AutoTargeting scripts
+                        pTarget = pShip.GetNextTarget()
 
                 pParentFired = pWeaponFired.GetParentSubsystem()
                 if pParentFired == None:
@@ -990,11 +1019,12 @@ def WeaponFired(pObject, pEvent, stoppedFiring=None):
                                             if mothershipBlock:
                                                 wpnSystem.StopFiring()
                                             else:
+                                                wpnSystem.StopFiring() # TO-DO Safety check for strays due to multi-targeting
                                                 wpnSystem.StartFiring(pTarget)
                                         else:
                                             if not lTurretsToFire[turret][-2][1].has_key("TARGET"):
                                                 lTurretsToFire[turret][-2][1]["TARGET"] = {}
-                                            lTurretsToFire[turret][-2][1]["TARGET"][repr(pShip)] = pShip.GetTarget()
+                                            lTurretsToFire[turret][-2][1]["TARGET"][repr(pShip)] = pShip.GetTarget()# TO-DO check if AI can decide to target this for no reason
 
                                         for anotherTurret in pInstance.TurretList:
                                             wpnSystem.StopFiringAtTarget(anotherTurret) # NOTE: see if they have accidentally attacked themselves... it could be possible with other scripts!!!
