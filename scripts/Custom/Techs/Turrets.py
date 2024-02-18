@@ -1,5 +1,5 @@
 #         Turrets
-#         17th February 2024
+#         18th February 2024
 #         Based strongly on SubModels.py by USS Defiant and their team, and AutoTargeting.py by USS Frontier.
 #         Also based very slightly on the Borg Technology from Alex SL Gato, and ConditionInLineOfSight by the original STBC team
 #################################################################################################################
@@ -9,19 +9,23 @@
 # the scheme is that:
 # 1. add normal model
 # 2. replace model with body + turrets
-# 3. move the turrets
+# 3. move the turrets + consider original turret size re-escale (via the "SetScale" property; else there's a default smaller than the size)
 # 4. replace body if necessary, but keep turrets moving around
 
-# NOTE: THIS IS VERY INCOMPLETE AND A WORK-IN-PROGRESS, EXPECT BUGS
+# NOTE: THIS IS A VERY EXPERIMENTAL WORK-IN-PROGRESS, EXPECT BUGS
 # KNOWN BUGS/UNINTENDED EFFECTS (By order of priority):
 # - Turrets support AutoTargeting and MultiTargeting, but it is wonky (including random spinning and turrets aiming at each other). Behaviour may turn out even weirder if multiple parent ship weapons are assigned to the same turret (with each one aiming at a different target)
 # --- IMPORTANT NOTE: In order to reduce issues, if your ships has AutoTargeting already, assign one SINGLE parent ship weapon per turret, and then just make the turret harpoint have the desired number of weapons of the same type (beam, torpedo, pulse or tractor).
 # - Turrets when firing may hit and damage the parent ship shields and subsystems with their weaponry. # TO-DO possible fix would be to add an extra hardpoint that later moves and aligns with the subShip hardpoints?
+# - Sometimes after reloading, turrets may not appear.
 # - Sometimes a turret will keep firing even if the parent ship stopped firing.
 # - At the moment turrets are invulnerable and can work as an effective physical shield for the subsystems underneath.
 # - The presence of a model makes AI act evasive due to detecting for a moment "a collision course" with the turrets, despite being uncollidable.
 # - Weapon intensity for phaser turrets is not currently being modulated - it is set to default #TO-DO MAYBE LOOK ADVANCED POWER CONTROL TO REGULATE POWER OF THE FIRED SUBSYSTEM?
-# - Target alignment is not realistically done, sometimes the turrets may flip over when trying to target.
+# - For some reason, turrets are always bigger than the model... strange. Anyways, to help fix that, we've given a SetScale option to customize their size... albeit the turret hardpoint may need to be adjusted accordingly
+# THINGS YET TO TEST FULLY
+# - Trying to warp away.
+# - Trying to cloak/decloak.
 
 """
 
@@ -56,7 +60,8 @@ Foundation.ShipDef.VasKholhr.dTechs = { 'Turret': {
                 "WarpRotation":       [0, 0.349, 0],
                 "WarpPosition":       [0, 0, 0.02],
                 "WarpDuration":       150.0,
-                }
+                },
+                "SetScale": 1.0
         ],
         
         "Starboard Wing":     ["VasKholhr_Starboardwing", {
@@ -68,7 +73,8 @@ Foundation.ShipDef.VasKholhr.dTechs = { 'Turret': {
                 "WarpRotation":       [0, -0.349, 0],
                 "WarpPosition":       [0, 0, 0.02],
                 "WarpDuration":       150.0,
-                }
+                },
+                "SetScale": 1.0
         ],
 }}
 
@@ -86,7 +92,7 @@ import MissionLib
 
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.6",
+	    "Version": "0.7",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -288,6 +294,7 @@ class Turrets(FoundationTech.TechDef):
                 sNamePrefix = repr(pShip) + "_"
                 TurretList = pInstance.TurretList
 
+                pProxManager = pSet.GetProximityManager()
                 # iteeeerate over every Turret
                 for sNameSuffix in ModelList.keys():
                         if sNameSuffix == "Setup":
@@ -347,6 +354,31 @@ class Turrets(FoundationTech.TechDef):
                                         pSubShip2.EnableCollisionsWith(pSubShip, 0)
                                         MultiPlayerEnableCollisionWith(pSubShip, pSubShip2, 0)
                                         MultiPlayerEnableCollisionWith(pSubShip2, pSubShip, 0)
+
+                        # pSubShip.DisableCollisionDamage()
+                        # pSubShip.CanCollide(0)
+
+                        #pProxManager = pSet.GetProximityManager()
+                        #if pProxManager:
+                        #    kIterator = pProxManager.GetNearObjects(pShip.GetWorldLocation(), 0.0, 0) #pProxManager.GetNearObjects(pShip.GetWorldLocation(), 50.0, 1)
+                        #    intAux = 0
+                        #    while(1):
+                        #        pProximityCheck = pProxManager.GetNextObject(kIterator)
+                        #        print "intAux = ", intAux
+                        #        if not pProximityCheck:
+                        #            print "we break"
+                        #            break
+                        #        try:
+                        #            pProximityCheck.RemoveObjectFromCheckListByID(pSubShip.GetObjID())
+                        #        except:
+                        #            print "Failed to remove object from proximityCheck"
+                        #            traceback.print_exc()
+                        #        intAux = intAux + 1
+
+                        #    pProxManager.EndObjectIteration(kIterator)
+
+                        #pSubShip.SetCollisionFlags(App.ObjectClass.CFB_NO_COLLISIONS) # This does not help and funnily enough makes the game crash when the phaser hits the parent ship shield. Interesting...
+                        #print pSubShip.GetCollisionFlags()
 
                         pSubShip.UpdateNodeOnly()
                         pShip.AttachObject(pSubShip)
@@ -480,48 +512,64 @@ class MovingEvent:
                 if pTarget:
                         kNacelleLocation = pNacelle.GetWorldLocation()
                         kTargetLocation = pTarget.GetWorldLocation()
-                        #kShipLocation = pShip.GetWorldLocation()
-                        #pointTop = App.TGPoint3_GetModelUp()
+                        kShipLocation = pShip.GetWorldLocation()
+
+                        kNewUpReal = pShip.GetWorldUpTG() # pShip.GetWorldForwardTG()
+                        #kNewUp = pShip.GetWorldUpTG()
+                        kNewForward = pShip.GetWorldForwardTG()
 
                         kTargetLocation.Subtract(kNacelleLocation)
-                        #kShipLocation.Subtract(kNacelleLocation)
-                        #pointTop.Subtract(kShipLocation)
 
                         kFwd = kTargetLocation
                         kFwd.Unitize()
+
+                        #kNewUpAux = kNewUpReal.Perpendicular()
+
+                        kNewUp = App.TGPoint3()
+                        kNewUp.SetXYZ(kNewUpReal.x, kNewUpReal.y, kNewUpReal.z)
 
                         kPerp = kFwd.Perpendicular()
                         kPerp2 = App.TGPoint3()
                         kPerp2.SetXYZ(kPerp.x, kPerp.y, kPerp.z)
 
-                        #kFwd2 = kShipLocation
-                        #kFwd2.Unitize()
+                        #kFwd.Perpendicular() ... would it give us any perpendicular in particular? If so, maybe another manual option would be better, we want the perpendicular parallel to the kNewUp
+                        # Step 1: a x b, with a and b being the kFwd and the kNewUp
+                        vAuxVx, vAuxVy, vAuxVz = MatrixMult(kFwd, kNewUp)
 
-                        #kPerp3 = kFwd2.Perpendicular()
-                        #kPerp4 = App.TGPoint3()
-                        #kPerp4.SetXYZ(kPerp3.x, kPerp3.y, kPerp3.z)
+                        if vAuxVx == 0.0 and vAuxVy == 0.0 and vAuxVz == 0.0: # No other option, we share the same rect
+                            pNacelle.AlignToVectors(kFwd, kPerp2) # Aims correctly but gives a weird clockwise or counterclockwise turn if the ship rotates
+                        else:
+                            kVect1 = App.TGPoint3()
+                            kVect1.SetXYZ(vAuxVx, vAuxVy, vAuxVz)
+                            #pNacelle.AlignToVectors(kFwd, kVect1)
 
-                        #kFwd3 = pointTop
-                        #kFwd3.Unitize()
+                            #Now that we got a x b, we want to get (a x b) x a = kVect1 x a, to get the perpendicular we really want
+                            vAuxVx, vAuxVy, vAuxVz = MatrixMult(kVect1, kFwd)
 
-                        #kPerp5 = kFwd3.Perpendicular()
-                        #kPerp6 = App.TGPoint3()
-                        #kPerp6.SetXYZ(kPerp5.x, kPerp5.y, kPerp5.z)
 
-                        #kPerp5 = kFwd3
-                        #kPerp6 = App.TGPoint3()
-                        #kPerp6.SetXYZ(kPerp5.x, kPerp5.y, kPerp5.z)
+                            kVect2 = App.TGPoint3()
+                            kVect2.SetXYZ(vAuxVx, vAuxVy, vAuxVz)
+                            kVect2.Unitize()
 
-                        #kPerp8 = App.TGPoint3()
-                        #kPerp8.SetXYZ(kFwd.x, kFwd.y, kFwd.z)
+                            pNacelle.AlignToVectors(kFwd, kVect2)
 
-                        pNacelle.AlignToVectors(kFwd, kPerp2)
-                        #pNacelle.AlignToVectors(kFwd, kPerp4)
-                        #pNacelle.AlignToVectors(kFwd, kPerp6)
-                        # pNacelle.AlignToObject(pShip) # this makes it spin
-                        # pNacelle.AlignToObject(pTarget) # orientation goes to the same the target has (as, if the asteroid is oriented to the left, the turrets aim to the left, not at the asteroid)
-                        # pNacelle.SetAngleAxisRotation(1.0, kPerp.x, kPerp.y, kPerp.z) # nope
-                        # pNacelle.SetAngleAxisRotation(1.0, kPerp8.x, kPerp8.y, kPerp8.z) # NOPE AS WELL
+                        if self.dOptionsList.has_key("SetScale"):
+                            pNacelle.SetScale(dOptionsList["SetScale"])
+                        else:
+                            pNacelle.SetScale(0.5)
+            
+                        #pNacelle.AlignToVectors(kFwd, kNewUp) # aims without clockwise or counterclockwise turn, but no turn-up
+                        #pNacelle.AlignToVectors(kFwd, kPerp2) # Aims correctly but gives a weird clockwise or counterclockwise turn if the ship rotates
+
+                        #tNewY = pShip.GetWorldForwardTG() 
+                        #tNewZ = pShip.GetWorldForwardTG()
+
+                        #vScalar = kFwd.x * kNewUp.x + kFwd.y * kNewUp.y + kFwd.z * kNewUp.z 
+                        #angleUp = math.acos(vScalar)
+
+                        #uniMatrix = pNacelle.GetWorldRotation()
+                        #uniMatrix.MakeXRotation(angleUp)
+                        #pNacelle.Rotate(uniMatrix) # Trying to rotate it this way or by pNacelle.SetAngleAxisRotation(1.0, kPerp.x, kPerp.y, kPerp.z) causes a ton of resize problems
 
 
                 #self.iCurRotX = self.iCurRotX + self.iRotStepX
@@ -530,7 +578,7 @@ class MovingEvent:
                 #iNorm = math.sqrt(self.iCurRotX ** 2 + self.iCurRotY ** 2 + self.iCurRotZ ** 2)
                 # set Rotation
                 #pNacelle.SetAngleAxisRotation(1.0, self.iCurRotX, self.iCurRotY, self.iCurRotZ)
-                #pNacelle.SetScale(-iNorm + 1.85)
+                #pNacelle.SetScale(1.0)
 
                 # set new Translation values
                 self.iCurTransX = self.iCurTransX + self.iTransStepX
@@ -585,6 +633,12 @@ class MovingEvent:
                 pCloak = pNacelle.GetCloakingSubsystem()
                 if pCloak:
                         pCloak.InstantDecloak()
+
+def MatrixMult(kFwd, kNewUp):
+    vAuxVx = kFwd.y * kNewUp.z - kNewUp.y * kFwd.z
+    vAuxVy = kNewUp.x * kFwd.z - kFwd.x * kNewUp.z
+    vAuxVz = kFwd.x * kNewUp.y - kNewUp.x * kFwd.y
+    return vAuxVx, vAuxVy, vAuxVz
 
 # calls the MovingEvent class and returns its return value
 def MovingAction(pAction, oMovingEvent, pShip):
