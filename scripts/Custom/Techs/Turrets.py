@@ -14,14 +14,15 @@
 
 # NOTE: THIS IS A VERY EXPERIMENTAL WORK-IN-PROGRESS, EXPECT BUGS
 # KNOWN BUGS/UNINTENDED EFFECTS (By order of priority):
-# - Turrets support AutoTargeting and MultiTargeting, but it is wonky (including random spinning and turrets aiming at each other). Behaviour may turn out even weirder if multiple parent ship weapons are assigned to the same turret (with each one aiming at a different target)
-# --- IMPORTANT NOTE: In order to reduce issues, if your ships has AutoTargeting already, assign one SINGLE parent ship weapon per turret, and then just make the turret harpoint have the desired number of weapons of the same type (beam, torpedo, pulse or tractor).
+
 # - Turrets when firing may hit and damage the parent ship shields and subsystems with their weaponry. # TO-DO possible fix would be to add an extra hardpoint that later moves and aligns with the subShip hardpoints?
+# - The presence of a model makes AI act evasive due to detecting for a moment "a collision course" with the turrets, despite being uncollidable. # TO-DO find a way to remove it from ProximityManager without causing a potential crash
 # - Sometimes after reloading, turrets may not appear.
 # - Sometimes a turret will keep firing even if the parent ship stopped firing.
 # - At the moment turrets are invulnerable and can work as an effective physical shield for the subsystems underneath.
-# - The presence of a model makes AI act evasive due to detecting for a moment "a collision course" with the turrets, despite being uncollidable.
 # - Weapon intensity for phaser turrets is not currently being modulated - it is set to default #TO-DO MAYBE LOOK ADVANCED POWER CONTROL TO REGULATE POWER OF THE FIRED SUBSYSTEM?
+# - Turrets support AutoTargeting and MultiTargeting, but it is wonky (including random spinning and turrets aiming at each other). Behaviour may turn out even weirder if multiple parent ship weapons are assigned to the same turret (with each one aiming at a different target)
+# --- IMPORTANT NOTE: In order to reduce issues, if your ships has AutoTargeting already, assign one SINGLE parent ship weapon per turret, and then just make the turret harpoint have the desired number of weapons of the same type (beam, torpedo, pulse or tractor).
 # - For some reason, turrets are always bigger than the model... strange. Anyways, to help fix that, we've given a SetScale option to customize their size... albeit the turret hardpoint may need to be adjusted accordingly
 # THINGS YET TO TEST FULLY
 # - Trying to warp away.
@@ -92,7 +93,7 @@ import MissionLib
 
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.7",
+	    "Version": "0.8",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -131,14 +132,17 @@ class Turrets(FoundationTech.TechDef):
                 debug(__name__ + ", Reality Bomb Counter lookclosershipsEveryone")
                 for itemList in self.bBattleTurretListener.keys():
                         pShipID = self.bBattleTurretListener[itemList][0].GetObjID()
-                        pShip = App.ShipClass_Cast(App.TGObject_GetTGObjectPtr(pShipID))
+                        pShip = App.ShipClass_GetObjectByID(None, pShipID)
 
                         if pShip:
                                 if self.bBattleTurretListener[itemList][-1] == 1:
                                         self.bBattleTurretListener[itemList][-1] = 0 # We are active in battle, but doing an action
                                         PartsForWeaponTurretState(pShip)
                         else:
+                            try:
                                 del self.bBattleTurretListener[itemList]
+                            except:
+                                pass
 
         #TO-DO maybe add a getbBattleTurretListener for targeting things
 
@@ -479,11 +483,17 @@ class MovingEvent:
         def __call__(self, pShip, pTarget=None):
                 # if the move ID doesn't match then this move is outdated
                 debug(__name__ + ", __call__")
+
                 if self.iThisMovID != self.dOptionsList["curMovID"][repr(self.pShip)]:
                         print "Moving Error: Move no longer active"
                         return 1
                 
-                # this makes sure the game does not crash when trying to access a deleted element
+                # these make sure the game does not crash when trying to access a deleted element
+                pShip = App.ShipClass_GetObjectByID(None, pShip.GetObjID())
+                if not pShip:
+                        #print "Moving Error: Lost MAIN part"
+                        return 0
+
                 pNacelle = App.ShipClass_GetObjectByID(None, self.iNacelleID)
                 if not pNacelle:
                         #print "Moving Error: Lost part"
@@ -510,20 +520,16 @@ class MovingEvent:
                     pTarget = pShip.GetNextTarget()
 
                 if pTarget:
+                        
                         kNacelleLocation = pNacelle.GetWorldLocation()
                         kTargetLocation = pTarget.GetWorldLocation()
-                        kShipLocation = pShip.GetWorldLocation()
 
-                        kNewUpReal = pShip.GetWorldUpTG() # pShip.GetWorldForwardTG()
-                        #kNewUp = pShip.GetWorldUpTG()
-                        kNewForward = pShip.GetWorldForwardTG()
+                        kNewUpReal = pShip.GetWorldUpTG()
 
                         kTargetLocation.Subtract(kNacelleLocation)
 
                         kFwd = kTargetLocation
                         kFwd.Unitize()
-
-                        #kNewUpAux = kNewUpReal.Perpendicular()
 
                         kNewUp = App.TGPoint3()
                         kNewUp.SetXYZ(kNewUpReal.x, kNewUpReal.y, kNewUpReal.z)
@@ -534,6 +540,7 @@ class MovingEvent:
 
                         #kFwd.Perpendicular() ... would it give us any perpendicular in particular? If so, maybe another manual option would be better, we want the perpendicular parallel to the kNewUp
                         # Step 1: a x b, with a and b being the kFwd and the kNewUp
+
                         vAuxVx, vAuxVy, vAuxVz = MatrixMult(kFwd, kNewUp)
 
                         if vAuxVx == 0.0 and vAuxVy == 0.0 and vAuxVz == 0.0: # No other option, we share the same rect
@@ -541,7 +548,6 @@ class MovingEvent:
                         else:
                             kVect1 = App.TGPoint3()
                             kVect1.SetXYZ(vAuxVx, vAuxVy, vAuxVz)
-                            #pNacelle.AlignToVectors(kFwd, kVect1)
 
                             #Now that we got a x b, we want to get (a x b) x a = kVect1 x a, to get the perpendicular we really want
                             vAuxVx, vAuxVy, vAuxVz = MatrixMult(kVect1, kFwd)
@@ -557,20 +563,7 @@ class MovingEvent:
                             pNacelle.SetScale(dOptionsList["SetScale"])
                         else:
                             pNacelle.SetScale(0.5)
-            
-                        #pNacelle.AlignToVectors(kFwd, kNewUp) # aims without clockwise or counterclockwise turn, but no turn-up
-                        #pNacelle.AlignToVectors(kFwd, kPerp2) # Aims correctly but gives a weird clockwise or counterclockwise turn if the ship rotates
-
-                        #tNewY = pShip.GetWorldForwardTG() 
-                        #tNewZ = pShip.GetWorldForwardTG()
-
-                        #vScalar = kFwd.x * kNewUp.x + kFwd.y * kNewUp.y + kFwd.z * kNewUp.z 
-                        #angleUp = math.acos(vScalar)
-
-                        #uniMatrix = pNacelle.GetWorldRotation()
-                        #uniMatrix.MakeXRotation(angleUp)
-                        #pNacelle.Rotate(uniMatrix) # Trying to rotate it this way or by pNacelle.SetAngleAxisRotation(1.0, kPerp.x, kPerp.y, kPerp.z) causes a ton of resize problems
-
+                        
 
                 #self.iCurRotX = self.iCurRotX + self.iRotStepX
                 #self.iCurRotY = self.iCurRotY + self.iRotStepY
@@ -1121,7 +1114,7 @@ def AlertMoveFinishTemporarilyAction(pAction, pShip, pInstance, iThisMovID, iTyp
         return 0
 
 # called after the Alert move action
-# Remove the attached parts and use the attack or normal model now
+# Remove the attached parts and use the attack or normal model now TO-DO REMOVE IF UNUSED?
 def AlertMoveFinishAction(pAction, pShip, pInstance, iThisMovID):
         
         # Don't switch Models back when the ID does not match
@@ -1148,6 +1141,7 @@ def WarpStartMoveFinishAction(pAction, pShip, pInstance, iThisMovID):
                 return 1
                 
         oTurrets.DetachParts(pShip, pInstance)
+        oTurrets.SetBattleTurretListenerTo(pShip, -1) # Not combat mode TO-DO
         sNewShipScript = pInstance.__dict__["Turret"]["Setup"]["WarpModel"]
         ReplaceModel(pShip, sNewShipScript)
         return 0
@@ -1162,10 +1156,26 @@ def WarpExitMoveFinishAction(pAction, pShip, pInstance, iThisMovID):
                 return 1
                 
         oTurrets.DetachParts(pShip, pInstance)
-        if pInstance.__dict__["Turret"]["Setup"].has_key("AttackModel") and pShip.GetAlertLevel() == 2:
+
+        # try to get the last alert level
+        for item in pInstance.OptionsList:
+                if item[0] == "Setup":
+                        dGenShipDict = item[1]
+                        break
+        
+        # update alert state
+        #dGenShipDict["AlertLevel"][repr(pShip)] = iType
+        if not dGenShipDict["AlertLevel"].has_key(repr(pShip)) or dGenShipDict["AlertLevel"][repr(pShip)] == None:
+            dGenShipDict["AlertLevel"][repr(pShip)] = pShip.GetAlertLevel()
+        iType = dGenShipDict["AlertLevel"][repr(pShip)]
+
+        if pInstance.__dict__["Turret"]["Setup"].has_key("AttackModel") and iType == 2:
                 sNewShipScript = pInstance.__dict__["Turret"]["Setup"]["AttackModel"]
+                # TO-DO CHECKING THINGS
+                oTurrets.SetBattleTurretListenerTo(pShip, 1) # Combat mode
         else:
                 sNewShipScript = pInstance.__dict__["Turret"]["Setup"]["NormalModel"]
+                oTurrets.SetBattleTurretListenerTo(pShip, -1) # Not combat mode
         ReplaceModel(pShip, sNewShipScript)
         return 0
         
@@ -1293,6 +1303,8 @@ def PartsForWeaponTurretState(pShip):
         
         # update alert state
         #dGenShipDict["AlertLevel"][repr(pShip)] = iType
+        if not dGenShipDict["AlertLevel"].has_key(repr(pShip)) or dGenShipDict["AlertLevel"][repr(pShip)] == None:
+            dGenShipDict["AlertLevel"][repr(pShip)] = pShip.GetAlertLevel()
         iType = dGenShipDict["AlertLevel"][repr(pShip)]
         
         MovingProcess(pShip, pInstance, iType, iLongestTime, dHardpoints, dGenShipDict)
