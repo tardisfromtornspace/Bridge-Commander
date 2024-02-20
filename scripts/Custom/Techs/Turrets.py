@@ -1,3 +1,4 @@
+"""
 #         Turrets
 #         19th February 2024
 #         Based strongly on SubModels.py by USS Defiant and their team, and AutoTargeting.py by USS Frontier.
@@ -51,9 +52,11 @@
 # TO-DO Fix this issue, trace why it happens.
 # - Torpedo change-type support is non-existant at the moment TO-DO
 # - Weapon intensity for phaser turrets is not currently being totally modulated to the user - it uses the main weapon control subsystem for that, not advanced power control.
-# - Turrets support AutoTargeting and MultiTargeting mostly OK, but it is jsut a tiny bit wonky (including very rarely having random spinning and turrets aiming (but not firing) at each other). 
+# - Turrets support AutoTargeting and MultiTargeting fine, but for some cases it may be a tiny bit wonky (including very rarely having random spinning and turrets aiming (but not firing) at each other). 
 # -- ***Behaviour may turn out even weirder if multiple parent ship weapons are assigned to the same turret (with each one aiming at a different target)***
-
+# - For functional turrets:
+# -- Turret fire range may not totally overlap the parent ship beam range that they are covering, specially when aiming totally upwards. They cover a slighly smaller area inside the parent beam coverage area.
+# -- Turret fire may be very slightly delayed.
 
 # THINGS YET TO TEST FULLY
 # - Trying to warp away. Exiting or leaving the system seemed to work via other methods (Slipstream and Jumpspace), but sometimes left the ship without turrets until red alert was re-issued.
@@ -61,6 +64,7 @@
 # - Trying to empty all ammo for a torpedo, restock and try to fire - it is likely they would not be restocked until they are detached-attached again, but it would be a nice TO-DO to just replenish the turret ammo every time it is fired.
 
 # TO-DO Edit sample setup to remove superfluous info
+"""
 """
 
 Sample Setup:
@@ -147,6 +151,44 @@ globalTurretTimer = None
 bOverflow = 0
 #eTurretTime = App.Mission_GetNextEventType()
 defaultSlice = 0.1 # In seconds
+
+# EXPERIMENT CLASS FOR EASIER MANAGEMENT
+class SingleTurret:
+    def __init__(self):
+        global sinTurretbOverflow
+        self.bOverflow = 1
+        self.pShips = {}
+
+    def addShip(self, pShip, pTurret):
+        self.pShips[repr(pTurret)] = [pTurret, pShip]
+
+    def removeShip(self, pTurret):
+        if self.pShips.has_key(repr(pTurret)):
+            del self.pShips[repr(pTurret)]
+
+    def getDict(self):
+        return self.pShips
+
+    def getDictEntry(self, pTurret):
+        return self.pShips[repr(pTurret)]
+        
+    def getShipForTurret(self, pTurret): #oInvertedTurretList.getShipForTurret(pTurret)
+        if self.getDictEntry(pTurret) != None:
+            return self.pShips[repr(pTurret)][-1]
+
+    def getTurretForTurret(self, pTurret): # dumb, I know, it should end up returning itself
+        if self.getDictEntry(pTurret) != None:
+            return self.pShips[repr(pTurret)][0]
+
+    def isTurretHere(self, pTurret):
+        if self.getDictEntry(pTurret) == None:
+            return 0
+        else:
+            return 1
+        
+
+oInvertedTurretList = SingleTurret()
+# END OF EXPERIMENT CLASS FOR EASIER MANAGEMENT
 
 # This class does control the attach and detach of the Models
 class Turrets(FoundationTech.TechDef):
@@ -533,9 +575,10 @@ class Turrets(FoundationTech.TechDef):
                         # TO-DO EXPERIMENTAL
                         #pSubShip.AddPythonFuncHandlerForInstance(App.ET_WEAPON_FIRED, __name__ + ".WeaponTurretFired") # TO-DO EXPERIMENTAL
                         #pSubShip.AddPythonFuncHandlerForInstance(App.ET_WEAPON_FIRED, __name__ + ".IgnoreShieldCollision") # TO-DO EXPERIMENTAL, it works
+
+                        oInvertedTurretList.addShip(pShip, pSubShip)
                         pSubShip.RemoveHandlerForInstance(App.ET_WEAPON_FIRED, __name__ + ".TorpedoTurretFiredTest") # TO-DO EXPERIMENTAL, it works
-                        pSubShip.AddPythonFuncHandlerForInstance(App.ET_WEAPON_FIRED, __name__ + ".TorpedoTurretFiredTest") # TO-DO EXPERIMENTAL, it works
-                        #pSubShip.AddPythonFuncHandlerForInstance(App.ET_TORPEDO_FIRED, __name__ + ".TorpedoTurretFired") # TO-DO only works for torpedoes fired from torps? CHECK??? check ET_TORPEDO_FIRED and ET_TORPEDO_ENTERED_SET
+                        pSubShip.AddPythonFuncHandlerForInstance(App.ET_WEAPON_FIRED, __name__ + ".TorpedoTurretFiredTest") # TO-DO EXPERIMENTAL, it works # App.ET_TORPEDO_FIRED does only works for torpedoes fired from torp tubes?
                         #TO-DO MAYBE... pSubsystem.SetParentShip(something) for beams could work???
 
 
@@ -564,6 +607,7 @@ class Turrets(FoundationTech.TechDef):
                 if hasattr(pInstance, "TurretList"):
                         for pSubShip in pInstance.TurretList:
                                 pSubShip.RemoveHandlerForInstance(App.ET_WEAPON_FIRED, __name__ + ".TorpedoTurretFiredTest") # Addition that makes torps and pulses at least work
+                                oInvertedTurretList.removeShip(pSubShip)
                                 pSet = pSubShip.GetContainingSet()
                                 pShip.DetachObject(pSubShip)
                                 DeleteObjectFromSet(pSet, pSubShip.GetName())
@@ -572,6 +616,10 @@ class Turrets(FoundationTech.TechDef):
 oTurrets = Turrets("Turret")
 
 #TO-DO move below or delete if unused, check what part of the ship takes care of that
+# TO-DO maybe this class could help
+
+
+
 def IgnoreShieldCollision(pObject, pEvent):
     print "ok so this event happened"
     #Refine to only allow your turrets to do it
@@ -582,6 +630,7 @@ def IgnoreShieldCollision(pObject, pEvent):
 
 # Phasers maybe we cannot fix, but torps? Surely we can... right?
 def TorpedoTurretFiredTest(pObject, pEvent): # ET_TORPEDO_FIRED does not sem to work... why???
+
     print "Ok TORP WAS FIRED"
     print "The source was ", pEvent.GetSource() # App.Weapon_Cast(pEvent.GetSource())
     print "The destination was ", pEvent.GetDestination() #
@@ -600,12 +649,19 @@ def TorpedoTurretFiredTest(pObject, pEvent): # ET_TORPEDO_FIRED does not sem to 
 
     mineTorps= []
 
+    
+    # Option A, look for all torps in set, this takes a long time, try to find a better option. For some reason this is the only one which, when a lot of ships are firing torps or disruptors, works even a tiny bit.
     for aObject in pSet.GetClassObjectList(App.CT_TORPEDO):
         aTorp = App.Torpedo_GetObjectByID(None, aObject.GetObjID())
         if aTorp and aTorp.GetParentID() == pTurret.GetObjID():
             mineTorps.append(aTorp)
 
-    for itemList in oTurrets.bBattleTurretListener.keys():
+    pShip = oInvertedTurretList.getShipForTurret(pTurret)
+    pShip = App.ShipClass_GetObjectByID(None, pShip.GetObjID())
+    if not pShip: # We will look it the hard way, then
+        print "Looking for parent ship the hard way..."
+        found = 0
+        for itemList in oTurrets.bBattleTurretListener.keys():
             pShipID = oTurrets.bBattleTurretListener[itemList][0].GetObjID()
             pShip = App.ShipClass_GetObjectByID(None, pShipID)
 
@@ -615,13 +671,116 @@ def TorpedoTurretFiredTest(pObject, pEvent): # ET_TORPEDO_FIRED does not sem to 
                     myParent = None
                     for pSubShip in pInstance.TurretList:
                         if repr(pSubShip) == repr(pTurret):
+                            found = 1
                             for pTorp in mineTorps:
                                 print "updating torp"
                                 pTorp.SetParent(pShipID)
-                                pTorp.UpdateNodeOnly()  #TO-DO IT DID NOT WORK CHECK WHY
+                                pTorp.UpdateNodeOnly()
                             break
+        if not found:
+            pObject.CallNextHandler(pEvent)
+            return 0
+    else:
+        pShipID = pShip.GetObjID()
+        for pTorp in mineTorps:
+            print "updating torp, fast way"
+            pTorp.SetParent(pShipID)
+            pTorp.UpdateNodeOnly()
+    
+    """
+    #Option B, search around 5 times the radious of the turret we are part of. This still causes problems
 
-    #### DOWN HERE EXPERIMENTING
+    pProx = pSet.GetProximityManager()
+
+    kIter = pProx.GetNearObjects(pTurret.GetWorldLocation(), pTurret.GetRadius() * 5 + 10, 1) 
+    while 1:
+        pdObject = pProx.GetNextObject(kIter)
+        if not pdObject:
+            break
+
+        if pdObject.IsTypeOf(App.CT_TORPEDO):
+            # Torpedo scanning would just work like normal, with no buffs
+            pTorp = App.Torpedo_Cast(App.TGObject_GetTGObjectPtr(pdObject.GetObjID()))
+            if pTorp and pTorp.GetParentID() == pTurret.GetObjID():
+                mineTorps.append(pTorp)	
+
+    pProx.EndObjectIteration(kIter)
+
+    pShip = oInvertedTurretList.getShipForTurret(pTurret)
+    pShip = App.ShipClass_GetObjectByID(None, pShip.GetObjID())
+    if not pShip: # We will look it the hard way, then
+        print "Looking for parent ship the hard way..."
+        found = 0
+        for itemList in oTurrets.bBattleTurretListener.keys():
+            pShipID = oTurrets.bBattleTurretListener[itemList][0].GetObjID()
+            pShip = App.ShipClass_GetObjectByID(None, pShipID)
+
+            if pShip:
+                pInstance = findShipInstance(pShip)
+                if pInstance and pInstance.__dict__.has_key("Turret") and hasattr(pInstance, "TurretList"):
+                    myParent = None
+                    for pSubShip in pInstance.TurretList:
+                        if repr(pSubShip) == repr(pTurret):
+                            found = 1
+                            for pTorp in mineTorps:
+                                print "updating torp"
+                                pTorp.SetParent(pShipID)
+                                pTorp.UpdateNodeOnly()
+                            break
+        if not found:
+            pObject.CallNextHandler(pEvent)
+            return 0
+    else:
+        pShipID = pShip.GetObjID()
+        for pTorp in mineTorps:
+            print "updating torp, fast way"
+            pTorp.SetParent(pShipID)
+            pTorp.UpdateNodeOnly()
+    """
+    """
+    #Option C, search around 2 times the radius of the main ship we are part of. This still gives problems!!!???
+
+    pShip = oInvertedTurretList.getShipForTurret(pTurret)
+    pShip = App.ShipClass_GetObjectByID(None, pShip.GetObjID())
+    if not pShip: # We will look it the hard way, then
+        print "Looking for parent ship the hard way..."
+        found = 0
+        for itemList in oTurrets.bBattleTurretListener.keys():
+            pShipID = oTurrets.bBattleTurretListener[itemList][0].GetObjID()
+            pShip = App.ShipClass_GetObjectByID(None, pShipID)
+
+            if pShip:
+                pInstance = findShipInstance(pShip)
+                if pInstance and pInstance.__dict__.has_key("Turret") and hasattr(pInstance, "TurretList"):
+                    myParent = None
+                    for pSubShip in pInstance.TurretList:
+                        if repr(pSubShip) == repr(pTurret):
+                            found = 1
+                            break
+        if not found:
+            pObject.CallNextHandler(pEvent)
+            return 0
+
+    if pShip:
+        pShipID = pShip.GetObjID()
+        pProx = pSet.GetProximityManager()
+
+        kIter = pProx.GetNearObjects(pShip.GetWorldLocation(), pShip.GetRadius() * 2 + 10, 1) 
+        while 1:
+            pdObject = pProx.GetNextObject(kIter)
+            if not pdObject:
+                break
+
+            if pdObject.IsTypeOf(App.CT_TORPEDO):
+                # Torpedo scanning would just work like normal, with no buffs
+                pTorp = App.Torpedo_Cast(App.TGObject_GetTGObjectPtr(pdObject.GetObjID()))
+                if pTorp and pTorp.GetParentID() == pTurret.GetObjID():
+                    pTorp.SetParent(pShipID) # TO-DO maybe appending and doing a for outside would be faster
+                    pTorp.UpdateNodeOnly() 	
+
+        pProx.EndObjectIteration(kIter)
+    """
+
     pWeaponFired = App.Weapon_Cast(pEvent.GetSource())
     if pWeaponFired == None:
         print "no weapon stopped fired obj..."
@@ -633,93 +792,43 @@ def TorpedoTurretFiredTest(pObject, pEvent): # ET_TORPEDO_FIRED does not sem to 
         print "no weapon stop-fire parent subsystem obj..."
         pObject.CallNextHandler(pEvent)
         return      
- 
-    #TO-DO if it's possible, find a way to make phaser_banks work .SetParent(pShipID) could work if we knew the type of object a beam is? Maybe PhaserType, if that exists?
-    #TO-DO EXPAND SO IT GETS THE pEVENT WEAPON PROPERTY and if it's a torp one, recharges its torpedoes!!!
+
     phsrCtrl = pTurret.GetPhaserSystem()
     trpCtrl = pTurret.GetTorpedoSystem()
 
-    if pParentFired.GetName() == trpCtrl.GetName():
+    if trpCtrl and pParentFired.GetName() == trpCtrl.GetName(): #if it's a torp one, recharges its torpedoes and max of torps ready, to allow full control from parent ship!!!
         print "It's a torp, time to recharge"
-        """
-        #This code here needs to be adjusted for teh code above TO-DO
-	pTorpSys = pShip.GetTorpedoSystem()
-	if(pTorpSys):
-		# Find proper torps..
-		iNumTypes = pTorpSys.GetNumAmmoTypes()
-		for iType in range(iNumTypes):
-			pTorpType = pTorpSys.GetAmmoType(iType)
+        # Find proper torps..
+        iNumTypes = trpCtrl.GetNumAmmoTypes()
+        for iType in range(iNumTypes):
+            print "torp type to replenish found"
+            trpCtrl.SetAmmoType(iType, 1000) # In theory, we are not going to have any turret fire more than 1000 torps at the same time... right?
+            #pTorpType = trpCtrl.GetAmmoType(iType)
+            #trpCtrl.UpdateNodeOnly()
 
-			if (pTorpType.GetAmmoName() == pcTorpName):
-				App.g_kUtopiaModule.SetCurrentStarbaseTorpedoLoad(iType, iNumTorps)
-				return
-
-                        #	#pTorps.SetAmmoType(App.AT_TWO, 0)
-        """
+        pTorpTube = App.TorpedoTube_Cast(pWeaponFired)
+        pTorpTube.IncNumReady()
 
 
-    elif pParentFired.GetName() == phsrCtrl.GetName():
+    elif phsrCtrl and (pParentFired.GetName() == phsrCtrl.GetName()):
+        #TO-DO if it's possible, find a way to make phaser_banks work .SetParent(pShipID) could work if we knew the type of object a beam is? Maybe PhaserType, if that exists? USE DECOMPILER IN STOCK SCRIPT SHIPS JUST IN CASE?
         print "It's a phaser, time to check if we can do anyting about it"
-    #### UP HERE EXPERIMENTING
 
-
+        ### EXPERIMENTAL AREA!!!!
+        ## You know this gets serious when you have to do this import, maybe even the "import new"
+        #import Appc
+        #
+        #minePhasers = []
+        #for aObject in pSet.GetClassObjectList(Appc.CT_PHASER): # Appc.CT_PHASER, Appc.CT_PHASER_TYPE do not exist, look for other options - trial and error is not really that advisable when going to C and if pointers are affected
+        #    print "Found a phaser"
+        #    #TO-DO FIND FUNCTIONS FOR THAT CLASS
+        #    #if aObject and aObject.GetParentID() == pTurret.GetObjID():
+        #    #    minePhasers.append(aObject)
+        #
+        ### END OF EXPERIMENTAL AREA!!!!
 
     pObject.CallNextHandler(pEvent)
     return 0
-
-
-def TorpedoTurretFired(pObject, pEvent): # ET_TORPEDO_FIRED does not sem to work... why???
-    print "Ok TORP WAS FIRED"
-    pObject.CallNextHandler(pEvent)
-    return 0
-    """
-    print "Event Torp: ", pEvent
-    #TO-DO maybe pEvent.SetSource(other) or pEvent.SetDestination(other)
-    print "pWeaponFired before cast is of type ", pEvent.GetSource()
-
-    pTorp=App.Torpedo_Cast(pEvent.GetSource())
-    if pTorp == None:
-        print "no torpedo fired from turret detected..."
-        pObject.CallNextHandler(pEvent)
-        return
-
-    pTorpTubeFired = App.TorpedoTube_Cast(pEvent.GetDestination()).GetName()
-    print "pTorpTubeFired: ", pTorpTubeFired
-
-    pTurret = App.ShipClass_Cast(pObject)
-    if not pTurret:
-        pObject.CallNextHandler(pEvent)
-        return
-
-    for itemList in oTurrets.bBattleTurretListener.keys():
-            pShipID = oTurrets.bBattleTurretListener[itemList][0].GetObjID()
-            pShip = App.ShipClass_GetObjectByID(None, pShipID)
-
-            if pShip:
-                pInstance = findShipInstance(pShip)
-                if pInstance and pInstance.__dict__.has_key("Turret") and hasattr(pInstance, "TurretList"):
-                    myParent = None
-                    for pSubShip in pInstance.TurretList:
-                        if repr(pSubShip) == repr(pTurret):
-                            print "found it"
-                            pTorp.SetParent(pShipID)
-                            pTorp.UpdateNodeOnly()  #TO-DO IT DID NOT WORK CHECK WHY
-
-    pWeaponFired = App.Weapon_Cast(pEvent.GetSource())
-    if pWeaponFired == None:
-        print "no weapon stopped fired obj..."
-        pObject.CallNextHandler(pEvent)
-        return
-
-    pParentFired = pWeaponFired.GetParentSubsystem()
-    if pParentFired == None:
-        print "no weapon stop-fire parent subsystem obj..."
-        pObject.CallNextHandler(pEvent)
-        return       
-     TO-DO ASK PARENT TO STOP FIRING                        
-    pObject.CallNextHandler(pEvent)
-    return 0
-    """
 
 #Guess what, subscribed pEvents can be modified for everyone by any subscriber! ~~that's a sin...~~
 def WeaponTurretFired(pObject, pEvent):
@@ -1582,7 +1691,8 @@ def WeaponFired(pObject, pEvent, stoppedFiring=None):
 
                                                 # Fix for disruptors, we only fire when we want to, once!
                                                 turPulSys = lTurretsToFire[turret][0].GetPulseWeaponSystem()
-                                                if wpnSystem.GetName() == turPulSys.GetName():
+                                                turTrpSys = lTurretsToFire[turret][0].GetTorpedoSystem()
+                                                if (turPulSys and wpnSystem.GetName() == turPulSys.GetName()) or (turTrpSys and wpnSystem.GetName() == turTrpSys.GetName()):
                                                     WeaponSystemFiredStopAction(pShip, wpnSystem, pTarget)
                                                     #wpnSystem.StopFiring()
                                                 
