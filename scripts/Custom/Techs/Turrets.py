@@ -1,6 +1,6 @@
 """
 #         Turrets
-#         22nd February 2024
+#         21st February 2024
 #         Based strongly on SubModels.py by USS Defiant and their team, and AutoTargeting.py by USS Frontier.
 #         Also based very slightly on the Borg Technology from Alex SL Gato, and ConditionInLineOfSight by the original STBC team
 #################################################################################################################
@@ -15,7 +15,6 @@
 # -- When several turrets are created, it is strongly recommended to create a generic Hardpoint template with everything available, including cloak, engines and alternative measures of travel, and then import such template for other
 # turrets, overwriting the "ShipProperty_" imported to have a unique name, and adding the appropiate weapon to track. This also allows to add a type of turret desired for the job, so f.ex. the parent fires 1 weapon, but the turret 
 # fires 7 weapons at the same time, or another weapon type... even a tractor turret! That would be funny to watch, not gonna lie! 
-# ********** TO-DO create a Generic Turret Template! **********
 # --- IMPORTANT NOTE: In order to reduce issues, if your ship has AutoTargeting already, assign one SINGLE parent ship weapon per turret, and then just make the turret hardpoint have the desired number of weapons of the same type 
 # (beam, torpedo, pulse or tractor). Also, for the sake of STABILITY and not having wonky behaviour, do not create turrets for turrets without extreme caution nor add the AutoTargeting to the turret itself (the latter is already 
 # taken care of by the parent)!!!
@@ -59,7 +58,7 @@
 # -- Turret fire may be very slightly delayed.
 
 # THINGS YET TO TEST FULLY
-# - Trying to warp away. Exiting or leaving the system seemed to work via other methods (Slipstream and Jumpspace), but sometimes left the ship without turrets until red alert was re-issued.
+# - Trying to warp away. Exiting or leaving the system works via other methods (Slipstream and Jumpspace).
 # - Trying to cloak/decloak.
 
 # TO-DO Edit sample setup to remove superfluous info
@@ -133,7 +132,7 @@ import MissionLib
 
 #################################################################################################################
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.93",
+	    "Version": "0.94",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -851,6 +850,23 @@ def TorpedoTurretFiredTest(pObject, pEvent):
         #print "Phaser ID: ", pthisPhaser.GetWeaponID()
         #print "Phaser ObjID", pthisPhaser.GetObjID()
         #print "Phaser groups", pthisPhaser.GetGroups()
+
+        # TO-DO CHECK IF pPhaserBank.CanHit(pTarget.GetWorldLocation()) AND pPhaserBank.CanFire() COULD HELP
+        # ALSO CHECK IF pObject1 = App.PlacementObject_GetObject(App.SetClass_GetNull(), pEvent.GetDestination().GetObjectID()) , TGAttrObject, TGAttrObject.LookupAttrValue(), TGAttrObject.GetAttrValue() and others
+        # others like PlacementObject.FindContainingSet() COULD HELP
+        # CT_WAYPOINT, CT_LIGHT_PLACEMENT, CT_PLACEMENT, CT_LIGHT_OBJECT, CT_PULSING_LIGHT, CT_RETICLE, CT_GRID ... CHECK THOSE WITH THE pSet.GetClassObjectList(App.CT_TORPEDO)
+        # TO-DO maybe a pSet.RemoveObjectFromCheckListByID(pSubShip.GetObjID()) could work?
+        # PROMISING TO-DO pPhaserBank.CalculateRoughDirection().Dot(vPhaserCenterDirection)
+        """
+        fPhaserDot = pBank.CalculateRoughDirection().Dot(anNNIPOINT3 THINGY, LIKE THE POSITION OF A TARGET OR SOMETHING)
+
+        """
+
+
+
+
+
+
         # App.CT_PROXIMITY_CHECK huh, useful
         #mySubsystem2 = MissionLib.GetSubsystemByName(pTurret, pWeaponFired.GetName())
         #mySubsystem2.SetParentShip(pShip)
@@ -1507,12 +1523,40 @@ def ExitSet(pObject, pEvent):
         if pInstance:
             oTurrets.DetachParts(pShip, pInstance)
 
+
+
         # if the system we come from is the warp system, then we exitwarp, right?
         if sSetName == "warp":
                 # call ExitingWarp in a few seconds
                 pSeq = App.TGSequence_Create()
                 pSeq.AppendAction(App.TGScriptAction_Create(__name__, "ExitingWarp", pShip), 4.0)
                 pSeq.Play()
+        else:
+            if pInstance and not oTurrets.ArePartsAttached(pShip, pInstance):
+                # try to get the last alert level
+                for item in pInstance.OptionsList:
+                        if item[0] == "Setup":
+                                dGenShipDict = item[1]
+                                break
+        
+                # update alert state
+                #dGenShipDict["AlertLevel"][repr(pShip)] = iType
+                if not dGenShipDict["AlertLevel"].has_key(repr(pShip)) or dGenShipDict["AlertLevel"][repr(pShip)] == None:
+                    dGenShipDict["AlertLevel"][repr(pShip)] = pShip.GetAlertLevel()
+                iType = dGenShipDict["AlertLevel"][repr(pShip)]
+
+                if pInstance.__dict__["Turret"]["Setup"].has_key("AttackModel") and iType == 2:
+                        oTurrets.AttachParts(pShip, pInstance)
+                        sNewShipScript = pInstance.__dict__["Turret"]["Setup"]["AttackModel"]
+                        # TO-DO CHECKING THINGS
+                        ReplaceModel(pShip, sNewShipScript)
+                        oTurrets.SetBattleTurretListenerTo(pShip, 1) # Combat mode
+
+                else:
+                        sNewShipScript = pInstance.__dict__["Turret"]["Setup"]["NormalModel"]
+                        oTurrets.SetBattleTurretListenerTo(pShip, -1) # Not combat mode
+                        ReplaceModel(pShip, sNewShipScript)
+                
                 
         pObject.CallNextHandler(pEvent)
 
@@ -1748,6 +1792,7 @@ def WeaponFired(pObject, pEvent, stoppedFiring=None):
 
                 pParentFired = pWeaponFired.GetParentSubsystem()
                 if pParentFired == None:
+                        print "We could not find the parent fired? what?"
                         pObject.CallNextHandler(pEvent)
                         return
 
@@ -1782,14 +1827,11 @@ def WeaponFired(pObject, pEvent, stoppedFiring=None):
                                 pTractors.AddName(pSubShip.GetName())
 
                                 mySubsystem = MissionLib.GetSubsystemByName(pSubShip, weaponName)
-                                ### EXPERIMENTAL ZONE 
-                                #mySubsystem2 = MissionLib.GetSubsystemByName(pShip, weaponName + "B")
-                                #if mySubsystem2:
-                                #    pSubShip.AddSubsystem(mySubsystem2)
-                                ### END EXPERIMENTAL ZONE 
-                                if mySubsystem != None:
+
+                                if mySubsystem:
                                         mySubsWep = App.Weapon_Cast(mySubsystem)
                                         thisParent = mySubsWep.GetParentSubsystem()
+                                        print "thisParent: ", thisParent
                                         for item in pInstance.OptionsList:
                                             if item[0] != "Setup" and item[0].GetObjID() == pSubShip.GetObjID():
                                                 lTurretsToFire[repr(pSubShip)] = [pSubShip, mySubsystem, item, thisParent]
@@ -1808,6 +1850,7 @@ def WeaponFired(pObject, pEvent, stoppedFiring=None):
                                         print "FIRING BATTERIES!!!"
 
                                         if pTarget and not shouldWeTakeMeasuresToAvoidGettingHit: # Just a safety precaution for some AutoTargeting scripts deciding to attack its own turret
+                                            print "Ok we fire"
                                             if not lTurretsToFire[turret][-2][1].has_key("TARGET"):
                                                 lTurretsToFire[turret][-2][1]["TARGET"] = {}
                                             lTurretsToFire[turret][-2][1]["TARGET"][repr(pShip)] = pTarget #item[1]["TARGET"][repr(pShip)] = pTarget
@@ -1815,8 +1858,10 @@ def WeaponFired(pObject, pEvent, stoppedFiring=None):
                                             pSet = lTurretsToFire[turret][0].GetContainingSet()
                                             mothershipBlock = CheckLOS(pTarget, lTurretsToFire[turret][0], pShip, pSet) # TO-DO check why this is not preventing the turrets from firing through the parent ship
                                             if mothershipBlock:
+                                                print "parent is between us, stopping..."
                                                 wpnSystem.StopFiring()
                                             else:
+                                                print "firing the beam weapon"
                                                 wpnSystem.StopFiring() # TO-DO Safety check for strays due to multi-targeting
                                                 wpnSystem.StartFiring(pTarget)
                                                 if phsrLvl:
@@ -1848,8 +1893,8 @@ def WeaponFired(pObject, pEvent, stoppedFiring=None):
 
                                         wpnSystem.SetForceUpdate(1)
                                         #wpnSystem.StopFiringAtTarget(pTarget)
-                                #else:
-                                #        print "We have gone so far, what do you mean you don't have the system to fire???"
+                                else:
+                                        print "We have gone so far, what do you mean you don't have the system to fire???"
                         
         pObject.CallNextHandler(pEvent)
 
