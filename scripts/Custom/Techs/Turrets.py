@@ -12,13 +12,16 @@
 # to fire than the max, not having torpedoes, etc.). Aesthethic turrets are possible because those subShips are removed from the ProximityManager, they become ghosts that can fire on other ships without risking getting hit by ships
 # or weapons. Aesthethic turrets however may be only necessary for beams.
 # -- IMPORTANT NOTE: Due to the Proximity Manager thing, the parent ship can fire through, meaning that, in a functional turret, it may be sometimes preferable to replace the parent weapon with a super-thin/small/not noticeable and
-# almost harmless weapon (like a very small/thin transparent torpedo/pulse or beam).
+#    almost harmless weapon (like a very small/thin transparent torpedo/pulse or beam).
 # -- When several turrets are created, it is strongly recommended to create a generic Hardpoint template with everything available, including cloak, engines and alternative measures of travel, and then import such template for other
-# turrets, overwriting the "ShipProperty_" imported to have a unique name, and adding the appropiate weapon to track. This also allows to add a type of turret desired for the job, so f.ex. the parent fires 1 weapon, but the turret 
-# fires 7 weapons at the same time, or another weapon type... even a tractor turret! That would be funny to watch, not gonna lie! 
+#    turrets, overwriting the "ShipProperty_" imported to have a unique name, and adding the appropiate weapon to track. This also allows to add a type of turret desired for the job, so f.ex. the parent fires 1 weapon, but the turret 
+#    fires 7 weapons at the same time, or another weapon type... even a tractor turret! That would be funny to watch, not gonna lie!
+# --- If you make a tractor turret, please notice that a functional tractor turret will not fire tractor beams if they are under the parent shield, but if there's no shield they will fire and grab anything in their line, so if the 
+#     parent has a piece of them between tractor and target, you can actually tractor the parent in place! This could be useful in a niche amount of cases, but in other cases, I recommend using something similar to phasers, 
+#     "SimulatedTractor" to 1.
 # --- IMPORTANT NOTE: In order to reduce issues, if your ship has AutoTargeting already, assign one SINGLE parent ship weapon per turret, and then just make the turret hardpoint have the desired number of weapons of the same type 
-# (beam, torpedo, pulse or tractor). Also, for the sake of STABILITY and not having wonky behaviour, do not create turrets for turrets without extreme caution nor add the AutoTargeting to the turret itself (the latter is already 
-# taken care of by the parent)!!!
+#     (beam, torpedo, pulse or tractor). Also, for the sake of STABILITY and not having wonky behaviour, do not create turrets for turrets without extreme caution nor add the AutoTargeting to the turret itself (the latter is already 
+#     taken care of by the parent)!!!
 
 # The scheme is that:
 # 1. add normal model
@@ -35,38 +38,38 @@
 # the shield grid, or for lore reasons!
 
 # NOTE: THIS IS AN EXPERIMENTAL WORK-IN-PROGRESS, EXPECT BUGS
-# KNOWN BUGS/UNINTENDED EFFECTS/LIMITS and other TO-DOs (By order of priority):
+# KNOWN BUGS/UNINTENDED EFFECTS/LIMITATIONS and other TO-DOs (By order of priority):
 
 # 1. Functional turrets when firing may hit and damage the parent ship shields and subsystems with their phaser weaponry. Originally that also included torps and pulses if they required multiple fires too fast and if they were very big
-# and their spawn location was inside the parent ship model, but that got fixed. However, if that persists, inform me. Obviously if using aesthethic turrets that will not happen.
-# TO-DO OPTIMIZE that
-# --- If facing issues with a functional turret accidentally hitting a subsystem, adjust turret and parent hardpoints so the weapon area is lesser than the amplitude needed to hit the parent ship. 
+# and their spawn location was inside the parent ship model, but that got fixed for most cases. However, if that persists or happens again, inform me. Obviously if using aesthethic turrets that will not happen.
+# TO-DO OPTIMIZE that, check torpedoes again, just in case, since there was one moment where they bugged. (if necessary re-add prints to check those cases)
+# --- If facing issues with a functional turret accidentally hitting a subsystem, adjust turret and parent hardpoints so the weapon area is lesser than the amplitude needed to hit the parent ship (if it's a turret-side beam) or so the
+#     turret torpedo launcher is not inside the parent ship (if it's a torpedo one). 
 # --- IMPORTANT NOTE: If you need to use a functional phaser turret whose phasers may be/end up inside the parent ship's shields, or suffer similar hit issues with own-turrets torps and pulses, make sure either:
 # ---- The "ShieldOption" is set to 1.
 # ---- The ship has shields at 0 or less than 10%.
 # ---- Phaser turrets can be aesthethically simulated in two ways:
-# ----- Just place a turret that never fires above a phaser or phaser group. This option is preferable if there are model issues not making the location part of the next option feasible.
+# ----- Just place a turret that never fires above a phaser or phaser group. This option is preferable if there is only 1 phaser per turret, or model issues not making the location part for the next option feasible.
 # ----- Create auxiliar parent ship hardpoint properties, identical to the turret ship phaser to imitate, but with their name ending on a " T" (space included, f.ex. if weapon was "Quantom 10", then it would be called "Quantom10 T") but with
-# a max charge identical but on the negatives and a recharge rate greater than twice its max charge. Then the script will make sure that upon firing, the fire and charge becomes the opposite value, and when a "non- T" stops firing, 
-# all the associated siblings will be sent to the negatives. Additionally, these auxiliar hardpoint properties will attempt to move to fit the turret sibling one. If this is done, you cannot use the same exact hardpoint for phaser 
-# turrets (since the common phaser name could cause a conflict which on the other case would not be). Additionally, there needs to be the option of "SimulatedPhaser" set to 1
-# TO-DO removing the main ship from the Proximitymanager **does the trick for beams, which are the only issue**... but for every ship and weapon, IT MAKES THE SHIP A GHOST WITH BITE! We only want to remove collision from our turret
-# weapons to our shields. 
-# - For this, that is DISABLED for the main part of the ship!!!!
-# TO-DO: check torpedoes again, just in case.
-
+#       a max charge identical but on the negatives and a recharge rate greater than twice its max charge. Then the script will make sure that upon firing, the fire and charge becomes the opposite value, and when a "non- T" stops firing, 
+#       all the associated siblings will be sent to the negatives. Additionally, these auxiliar hardpoint properties will attempt to move to fit the turret sibling one. Remember that the functional hardpoint positions and the ones with
+#       this function may not match (f.ex. a phaser at 0.5 forward on the turret end actually in on the middle, just that the game adjusted the turret hardpoint to fit). If this is done, you cannot use the same exact hardpoint for phaser 
+#       turrets (since the common phaser name could cause a conflict which on the other case would not be). Additionally, there needs to be the option of "SimulatedPhaser" set to 1, that is because this option is more expensive.
+# TO-DO removing the main ship from the Proximitymanager **does the trick for turret original beams, which are the only issue**... but for every ship and weapon, IT MAKES THE SHIP A GHOST WITH BITE! We only want to remove collision from 
+#  our turret weapons to our parent shields - For this, that ProximityManager trick on the parent ship is DISABLED for the main part of the ship!!!!
 # 2. Weapon intensity for phaser turrets is not currently being totally modulated to the user - it uses the main weapon control subsystem for that, not advanced power control.
 # 3. Torpedo change-type and spread-type support is non-existant at the moment
 # --- The reason for this is because, for some unexplainable reason, trying to change the ammo for a torpedo will work fine, but then when a turret torpedo of the new type collides or despawns, it causes a virtual call function error.
-# 4. Turrets support AutoTargeting and MultiTargeting fine, but for some cases it may be a tiny bit wonky (including very rarely having random spinning and turrets aiming (but not firing) at each other). 
-# -- ***Behaviour may turn out even weirder if multiple parent ship weapons are assigned to the same turret (with each one aiming at a different target)***
+# 4. Turrets support AutoTargeting and MultiTargeting fine, but for some cases it may be a tiny bit wonky (including very rarely having a turret aiming at a target for a millisecond, to later on aim and fire at another). 
+#    ***Behaviour may turn out even weirder if multiple parent ship weapons are assigned to the same turret (with each one aiming at a different target)***
 # 5. For functional turrets:
-# -- Turret fire range may not totally overlap the parent ship beam range that they are covering, specially when aiming totally upwards. They cover a slighly smaller area inside the parent beam coverage area.
+# -- Turret fire range may not totally overlap the parent ship beam range that they are covering, specially when aiming totally upwards. They cover a slighly smaller area inside the parent coverage area.
 # -- Turret fire may be very slightly delayed.
 
 # THINGS YET TO TEST FULLY
 # - Trying to warp away. Exiting or leaving the system works via other methods (Slipstream and Jumpspace).
-# - USING TRACTOR BEAMS - MAYBE THOSE DO NOT CARE ABOUT COLLISIONS? OR THEY DO
+# ALSO TO-DO (from KCS), if you're gonna muck about with tractor beams, can you figure out how to get them off the default texture?
+# Like, pShip.GetImpulseEngineSubsystem().GetTractorBeamSystem() -> get its children and for each children TractorBeamProperty.SetTextureName("Nameoftexture???")
 
 # TO-DO Edit sample setup to remove superfluous info
 """
@@ -106,6 +109,7 @@ Foundation.ShipDef.VasKholhr.dTechs = { 'Turret': {
                 "WarpDuration":       150.0,
                 "SyncTorpType": 1,
                 "SimulatedPhaser": 1,
+                "SimulatedTractor": 1,
                 "SetScale": 1.0,
                 }
         ],
@@ -121,6 +125,7 @@ Foundation.ShipDef.VasKholhr.dTechs = { 'Turret': {
                 "WarpDuration":       150.0,
                 "SyncTorpType": 1,
                 "SimulatedPhaser": 1,
+                "SimulatedTractor": 1,
                 "SetScale": 1.0,
                 }
         ],
@@ -143,7 +148,7 @@ import MissionLib
 
 #################################################################################################################
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.96",
+	    "Version": "0.97",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -888,6 +893,7 @@ class MovingEvent:
                             if turPhsSys:
                                 lookandUpdateSiblingTPhasers(turPhsSys, pShip, pNacelle, 2)
 
+                        if self.dOptionsList.has_key("SimulatedTractor") and self.dOptionsList["SimulatedTractor"] == 1:
                             turTbpSys = pNacelle.GetTractorBeamSystem()
                             if turTbpSys:
                                 lookandUpdateSiblingTPhasers(turTbpSys, pShip, pNacelle, 2)               
@@ -1354,11 +1360,15 @@ def WeaponFiredStop(pObject, pEvent, stoppedFiring=None):
 
                                         if lTurretsToFire[turret][-2][1].has_key("SimulatedPhaser") and lTurretsToFire[turret][-2][1]["SimulatedPhaser"] == 1:
                                             turPhsSys = lTurretsToFire[turret][0].GetPhaserSystem()
-                                            turTbpSys = lTurretsToFire[turret][0].GetTractorBeamSystem()
                                             isPhaserFire = turPhsSys and wpnSystem.GetName() == turPhsSys.GetName()
-                                            isTrBPFire = turTbpSys and wpnSystem.GetName() == turTbpSys.GetName()
-                                            if isPhaserFire or isTrBPFire:
+                                            if isPhaserFire:
                                                 lookandUpdateSiblingTPhasers(wpnSystem, pShip, lTurretsToFire[turret][0], 1)
+                                        if lTurretsToFire[turret][-2][1].has_key("SimulatedTractor") and lTurretsToFire[turret][-2][1]["SimulatedTractor"] == 1:
+                                            turTbpSys = lTurretsToFire[turret][0].GetTractorBeamSystem()
+                                            isTrBPFire = turTbpSys and wpnSystem.GetName() == turTbpSys.GetName()
+                                            if isTrBPFire:
+                                                lookandUpdateSiblingTPhasers(wpnSystem, pShip, lTurretsToFire[turret][0], 1)
+
                                         wpnSystem.StopFiring()
                          
 
@@ -1448,7 +1458,7 @@ def WeaponFired(pObject, pEvent, stoppedFiring=None):
                                 wpnSystem = App.WeaponSystem_Cast(lTurretsToFire[turret][-1])
 
                                 if wpnSystem != None:
-                                        #print "FIRING BATTERIES!!!"
+                                        print "FIRING BATTERIES!!!"
 
                                         if pTarget and not shouldWeTakeMeasuresToAvoidGettingHit: # Just a safety precaution
                                             #print "Ok we fire"
@@ -1462,7 +1472,7 @@ def WeaponFired(pObject, pEvent, stoppedFiring=None):
                                                 print "parent is between us, stopping..."
                                                 wpnSystem.StopFiring()
                                             else:
-                                                #print "firing the weapon"
+                                                print "firing the weapon"
 
                                                 if phsrLvl:
                                                     wpnSystemButPhaser = App.PhaserSystem_Cast(wpnSystem)
@@ -1544,8 +1554,18 @@ def WeaponFired(pObject, pEvent, stoppedFiring=None):
                                                     WeaponSystemFiredStopAction(pShip, wpnSystem, pTarget)
 
                                                 else:
+                                                    print "Firing phasers or tractors"
                                                     if lTurretsToFire[turret][-2][1].has_key("SimulatedPhaser") and lTurretsToFire[turret][-2][1]["SimulatedPhaser"] == 1:
-                                                        lookandUpdateSiblingTPhasers(wpnSystem, pShip, lTurretsToFire[turret][0], 0)
+                                                        turPhsSys = lTurretsToFire[turret][0].GetPhaserSystem()
+                                                        isPhaserFire = turPhsSys and wpnSystem.GetName() == turPhsSys.GetName()
+                                                        if isPhaserFire:
+                                                            lookandUpdateSiblingTPhasers(wpnSystem, pShip, lTurretsToFire[turret][0], 0)
+
+                                                    if lTurretsToFire[turret][-2][1].has_key("SimulatedTractor") and lTurretsToFire[turret][-2][1]["SimulatedTractor"] == 1:
+                                                        turTbpSys = lTurretsToFire[turret][0].GetTractorBeamSystem()
+                                                        isTrBPFire = turTbpSys and wpnSystem.GetName() == turTbpSys.GetName()
+                                                        if isTrBPFire:
+                                                            lookandUpdateSiblingTPhasers(wpnSystem, pShip, lTurretsToFire[turret][0], 0)
 
                                                 wpnSystem.StopFiring() # TO-DO Safety check for strays due to multi-targeting
                                                 wpnSystem.StartFiring(pTarget)
