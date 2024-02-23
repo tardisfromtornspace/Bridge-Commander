@@ -41,7 +41,59 @@ Foundation.ShipDef.Victory = Foundation.ShipDef(abbrev, species, { 'name': longN
 Foundation.ShipDef.Victory.dTechs = {
 	'Regenerative Shields': 30,
 	"AutoTargeting": { "Phaser": [3, 1] },
-	'Polarized Hull Plating': { "Plates": ["PlastiCrystalline Armour"]}
+	'Polarized Hull Plating': { "Plates": ["PlastiCrystalline Armour"]},
+        'Turret': {
+        "Setup":        {
+                "Body":                 shipFile,
+                "NormalModel":          shipFile,
+                "WarpModel":          shipFile,
+                "AttackModel":          shipFile,
+                #"ShieldOption": 1,
+                "Hardpoints":       {
+                #        "Port Cannon":  [-0.677745, 0.514529, -0.229285],
+                #        "Star Cannon":  [0.663027, 0.511252, -0.240265],
+                #        "Port Cannon 1":  [-0.323324, 0.240263, -0.115398],
+                #        "Star Cannon 1":  [0.319566, 0.242142, -0.11861],
+                },
+                "AttackHardpoints":       {
+                #        "Port Cannon":  [-0.503543, 0.524792, -0.47761],
+                #        "Star Cannon":  [0.486256, 0.527008, -0.483889],
+                #        "Port Cannon 1":  [-0.244469, 0.228191, -0.19762],
+                #        "Star Cannon 1":  [0.243789, 0.243208, -0.201933],
+                },
+        },
+                
+        "Frontal TriCannon":     ["VictoryTurret", {
+                "Position":             [0, 7.5, -0.1],
+                "Rotation":             [0, 0, 0], # normal Rotation used if not Red Alert and if not Warp
+                "AttackRotation":         [0, -0.6, 0],
+                "AttackDuration":         200.0, # Value is 1/100 of a second
+                "AttackPosition":         [0, 7.5, 0.44],
+                "WarpRotation":       [0, 0.349, 0],
+                "WarpPosition":       [0, 0, 0.02],
+                "WarpDuration":       150.0,
+                "SyncTorpType": 1,
+                "SimulatedPhaser": 1,
+                "SetScale": 0.5,
+                }
+        ],
+
+        "Central BiCannon":     ["VictoryTurretTwo", {
+                "Position":             [0, 1.0, 0.1],
+                "Rotation":             [0, 0, 0.0], # normal Rotation used if not Red Alert and if not Warp
+                "AttackRotation":         [0, -0.6, 0],
+                "AttackDuration":         200.0, # Value is 1/100 of a second
+                "AttackPosition":         [0, 1.0, 0.8],
+                "WarpRotation":       [0, 0.349, 0],
+                "WarpPosition":       [0, 0, 0.02],
+                "WarpDuration":       150.0,
+                "SyncTorpType": 1,
+                "SimulatedPhaser": 1,
+                "SetScale": 0.5,
+                }
+        ],
+        
+}
 }
 #                                                                                     #
 #######################################################################################
