@@ -20,6 +20,7 @@ Foundation.ShipDef.B5TriadTriumviron = Foundation.ShipDef(abbrev, species, { 'na
 # Unknown capabilities, just using hull polarizer here because with an appropiate hardpoint it can be repurposed as an unknown type of shield.
 Foundation.ShipDef.B5TriadTriumviron.dTechs = {
     'Breen Drainer Immune': 1,
+    'Automated Destroyed System Repair': {"Time": 180.0},
     'Fed Ablative Armor': { "Plates": ["Armor Layer 1", "Armor Layer 2", "Armor Layer 3"]}
 }
 

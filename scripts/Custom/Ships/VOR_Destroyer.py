@@ -17,7 +17,11 @@ SubMenu = "Vorlon Empire"
 SubSubMenu = "Starships"
 
 Foundation.ShipDef.VOR_Destroyer = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu, "SubSubMenu": SubSubMenu })
-Foundation.ShipDef.VOR_Destroyer.dTechs = {'Breen Drainer Immune': 1}
+
+Foundation.ShipDef.VOR_Destroyer.dTechs = {
+	'Breen Drainer Immune': 0,
+	'Automated Destroyed System Repair': {"Time": 120.0}
+}
 
 Foundation.ShipDef.VOR_Destroyer.desc = "The Vorlon Transport, or Destroyer, is a class of ship in use by the Vorlon Empire, sometimes to transport diplomats to various locations, and to guard the frontiers of Vorlon Space. Vorlon Transports have been known to easily destroy Shadow Battlecrabs alone with sustained fire."
 

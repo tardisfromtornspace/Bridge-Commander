@@ -1,4 +1,8 @@
 ==Changelog==
+1.0.9 -
+   * Added Turrets technology 0.98 for the EAS Victory.
+   * Added Automated Destroyed System repair 0.4 to the Vorlon vessels, the Shadow scout and battlecrab, and the First One vessels
+   * Updated readme with an important thing I forgot to add.
 1.0.8 -
    * Upgraded the Hull Polarizer script to 1.2 - now it lasts longer.
 1.0.7 -
@@ -32,13 +36,13 @@
  * Minbari Sharlin hardpoint gained another Fusion Beam Cannon, as seen in Thirdspace movie.
 1.0.0 - Mod released. Verified functionality on Kobayashi Maru Mod, and both disk and GoG versions of STBC (thanks to THE SCI-FI KING and RetroBadger Gaming).
 
-== Waht does this mod do + Credits ==
+== What does this mod do + Credits ==
 ***Basically every other pre-existing Babylon 5 ship mod has been overhauled by Alex SL Gato to include Jumpspace Drive, usually additional weapons and techs, and to balance each other - for example we had a Minbari cruiser to the level of a Sovereign and then we had a regular Omega which crushed easily several Minbari Sharlins, that won't do.
 Additionally around 60+ ships from the Babylon 5 franchise have been added***
 
 - Most meshes and textures not present on the other mods/readmes were taken from the Celestia Motherlode or remodeled by Alex SL Gato (tardisfromtornspace) when too complex for the tools used, with Blender and Milkshape. When those tools failed, rebuilt from mostly scratch (Earth Alliance Explorer).
 - Icons done by Alex SL Gato (by screenshotting the progress done in the Milkshape 3D tool).
-- scripts: for the most part Alex SL Gato, except the Babylon 5 Jumpspace technology, which was adapted from the Slipstream's creator by Alex SL Gato
+- scripts: for the most part Alex SL Gato, except the Babylon 5 Jumpspace technology, which was adapted from the Slipstream's creator (USS Sovereign, most likely) by Alex SL Gato
 - mod/ships/hardpoint: Alex SL Gato.
 - Special shadow cloak/decloak sound: taken by Alex SL Gato from the Babylon 5 season 4 intro.
 - Movie intro: All credit to the original visual effects artists at Foundation Imaging and Netter Digital who made television history.
