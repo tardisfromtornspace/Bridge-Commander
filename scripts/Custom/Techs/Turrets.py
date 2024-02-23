@@ -503,25 +503,27 @@ class Turrets(FoundationTech.TechDef):
 
                         ##### EXPERIMENTAL AREA
                         """
-                        # CANCELLED TO-DO (See Limitation 3), no matter where we add it, changing the torpedo type is successfull in both SetTorpedoScriipt and SetAmmoType ways, but removal of the new torpedo fired will crash
+                        # CANCELLED TO-DO (See Limitation 3), no matter where we add it, changing the torpedo type is successfull in both SetTorpedoScriipt and SetAmmoType ways, 
+                        # but removal of the new torpedo fired will cause a virtual function call crash when the new torpedo despawns or dies
                         parentTorpSys = pShip.GetTorpedoSystem()
                         turTrpSys = pSubShip.GetTorpedoSystem()
                         if parentTorpSys:
                             if turTrpSys and pInstance.__dict__["Turret"][sNameSuffix][1].has_key("SyncTorpType") and pInstance.__dict__["Turret"][sNameSuffix][1]["SyncTorpType"] > 0:
-                                pParentFiredSystemProperty = App.TorpedoSystemProperty_Cast(parentTorpSys.GetProperty())
-                                if pInstance.__dict__["Turret"][sNameSuffix][1]["SyncTorpType"] == 1: # We sync types
-                                    #print "Ok so torp slot sync"
-                                    ammoNum = parentTorpSys.GetCurrentAmmoTypeNumber() # TO-DO if this works, move them above to avoid getting too much loop
-                                    pTorpedoType = parentTorpSys.GetAmmoType(ammoNum)
-                                    pTorpedoTypeScript = pTorpedoType.GetTorpedoScript()
+                                turTrpSys.SetAmmoType(1, 0.1) # First parameter is the iType, first, second, third, fourth torpedo. Second parameter is the time to reload, in minutes
+                                #pParentFiredSystemProperty = App.TorpedoSystemProperty_Cast(parentTorpSys.GetProperty())
+                                #if pInstance.__dict__["Turret"][sNameSuffix][1]["SyncTorpType"] == 1: # We sync types
+                                #    #print "Ok so torp slot sync"
+                                #    ammoNum = parentTorpSys.GetCurrentAmmoTypeNumber() # TO-DO if this works, move them above to avoid getting too much loop
+                                #    pTorpedoType = parentTorpSys.GetAmmoType(ammoNum)
+                                #    pTorpedoTypeScript = pTorpedoType.GetTorpedoScript()
 
-                                    curTurammoNum = turTrpSys.GetCurrentAmmoTypeNumber()
-                                    curTurammoType = turTrpSys.GetAmmoType(curTurammoNum)
-                                    curTurammoTypeScript = curTurammoType.GetTorpedoScript()
-                                    #print curTurammoTypeScript ," vs ", pTorpedoTypeScript
-                                    if curTurammoTypeScript != pTorpedoTypeScript:
-                                        #print "Updating to another torp type, please wait..."
-                                        curTurammoType.SetTorpedoScript(pTorpedoTypeScript)
+                                #    curTurammoNum = turTrpSys.GetCurrentAmmoTypeNumber()
+                                #    curTurammoType = turTrpSys.GetAmmoType(curTurammoNum)
+                                #    curTurammoTypeScript = curTurammoType.GetTorpedoScript()
+                                #    #print curTurammoTypeScript ," vs ", pTorpedoTypeScript
+                                #    if curTurammoTypeScript != pTorpedoTypeScript:
+                                #        #print "Updating to another torp type, please wait..."
+                                #        curTurammoType.SetTorpedoScript(pTorpedoTypeScript)
                         """
                         ##### END EXPERIMENTAL AREA
 
