@@ -65,12 +65,9 @@ Foundation.ShipDef.Victory.dTechs = {
                 
         "Frontal TriCannon":     ["VictoryTurret", {
                 "Position":             [0, 7.5, -0.1],
-                "Rotation":             [0, 0, 0], # normal Rotation used if not Red Alert and if not Warp
-                "AttackRotation":         [0, -0.6, 0],
                 "AttackDuration":         200.0, # Value is 1/100 of a second
                 "AttackPosition":         [0, 7.5, 0.44],
-                "WarpRotation":       [0, 0.349, 0],
-                "WarpPosition":       [0, 0, 0.02],
+                "WarpPosition":       [0, 1.5, 0.44],
                 "WarpDuration":       150.0,
                 "SyncTorpType": 1,
                 "SimulatedPhaser": 1,
@@ -80,12 +77,9 @@ Foundation.ShipDef.Victory.dTechs = {
 
         "Central BiCannon":     ["VictoryTurretTwo", {
                 "Position":             [0, 1.0, 0.1],
-                "Rotation":             [0, 0, 0.0], # normal Rotation used if not Red Alert and if not Warp
-                "AttackRotation":         [0, -0.6, 0],
                 "AttackDuration":         200.0, # Value is 1/100 of a second
                 "AttackPosition":         [0, 1.0, 0.8],
-                "WarpRotation":       [0, 0.349, 0],
-                "WarpPosition":       [0, 0, 0.02],
+                "WarpPosition":       [0, 1.0, 0.4],
                 "WarpDuration":       150.0,
                 "SyncTorpType": 1,
                 "SimulatedPhaser": 1,

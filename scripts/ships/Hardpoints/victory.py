@@ -4303,6 +4303,9 @@ def LoadPropertySet(pObj):
 	prop = App.g_kModelPropertyManager.FindByName("Tractor 4", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
+	#prop = App.g_kModelPropertyManager.FindByName("Warp Engines", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	#if (prop != None):
+	#	pObj.AddToSet("Scene Root", prop)
 	#prop = App.g_kModelPropertyManager.FindByName("Cloaking Device", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	#if (prop != None):
 	#	pObj.AddToSet("Scene Root", prop)

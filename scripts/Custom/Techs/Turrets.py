@@ -37,32 +37,37 @@
 # Please note that there's a field in Setup "ShieldOption", if it doesn't exist or is set to 0, shields will work normally - else shields will drop when turrets are active - this is useful for some functional turrets that are inside
 # the shield grid, or for lore reasons!
 
-# NOTE: THIS IS AN EXPERIMENTAL WORK-IN-PROGRESS, EXPECT BUGS
-# KNOWN BUGS/UNINTENDED EFFECTS/LIMITATIONS and other TO-DOs (By order of priority):
+# NOTE: If the versioning being below 1.0 did not give you a hint, this is an experimental work-in-progress, it may be possible to find far more bugs
+# KNOWN UNINTENDED EFFECTS, BUGS, LIMITATIONS and other TO-DOs (By order of priority):
 
 # 1. Functional turrets when firing may hit and damage the parent ship shields and subsystems with their phaser weaponry. Originally that also included torps and pulses if they required multiple fires too fast and if they were very big
 # and their spawn location was inside the parent ship model, but that got fixed for most cases. However, if that persists or happens again, inform me. Obviously if using aesthethic turrets that will not happen.
-# TO-DO OPTIMIZE that, check torpedoes again, just in case, since there was one moment where they bugged. (if necessary re-add prints to check those cases)
-# --- If facing issues with a functional turret accidentally hitting a subsystem, adjust turret and parent hardpoints so the weapon area is lesser than the amplitude needed to hit the parent ship (if it's a turret-side beam) or so the
-#     turret torpedo launcher is not inside the parent ship (if it's a torpedo one). 
-# --- IMPORTANT NOTE: If you need to use a functional phaser turret whose phasers may be/end up inside the parent ship's shields, or suffer similar hit issues with own-turrets torps and pulses, make sure either:
-# ---- The "ShieldOption" is set to 1.
-# ---- The ship has shields at 0 or less than 10%.
-# ---- Phaser turrets can be aesthethically simulated in two ways:
-# ----- Just place a turret that never fires above a phaser or phaser group. This option is preferable if there is only 1 phaser per turret, or model issues not making the location part for the next option feasible.
-# ----- Create auxiliar parent ship hardpoint properties, identical to the turret ship phaser to imitate, but with their name ending on a " T" (space included, f.ex. if weapon was "Quantom 10", then it would be called "Quantom10 T") but with
-#       a max charge identical but on the negatives and a recharge rate greater than twice its max charge. Then the script will make sure that upon firing, the fire and charge becomes the opposite value, and when a "non- T" stops firing, 
-#       all the associated siblings will be sent to the negatives. Additionally, these auxiliar hardpoint properties will attempt to move to fit the turret sibling one. Remember that the functional hardpoint positions and the ones with
-#       this function may not match (f.ex. a phaser at 0.5 forward on the turret end actually in on the middle, just that the game adjusted the turret hardpoint to fit). If this is done, you cannot use the same exact hardpoint for phaser 
-#       turrets (since the common phaser name could cause a conflict which on the other case would not be). Additionally, there needs to be the option of "SimulatedPhaser" set to 1, that is because this option is more expensive.
-# TO-DO removing the main ship from the Proximitymanager **does the trick for turret original beams, which are the only issue**... but for every ship and weapon, IT MAKES THE SHIP A GHOST WITH BITE! We only want to remove collision from 
-#  our turret weapons to our parent shields - For this, that ProximityManager trick on the parent ship is DISABLED for the main part of the ship!!!!
-# 2. Weapon intensity for phaser turrets is not currently being totally modulated to the user - it uses the main weapon control subsystem for that, not advanced power control.
+#    -- If facing issues with a functional turret accidentally hitting a subsystem, adjust turret and parent hardpoints so the weapon area is lesser than the amplitude needed to hit the parent ship (if it's a turret-side beam) or so 
+#       the turret torpedo launcher is not inside the parent ship (if it's a torpedo one). 
+#    --- IMPORTANT NOTE: If you need to use a functional phaser turret whose phasers may be/end up inside the parent ship's shields, or suffer similar hit issues with own-turrets torps and pulses, make sure either:
+#    ---- The "ShieldOption" is set to 1.
+#    ---- The ship has shields at 0 or less than 10%.
+#    ---- Removing the main ship from the Proximitymanager **does the trick for turret original beams, which are the only issue**... but for every ship and weapon, IT MAKES THE SHIP A GHOST WITH BITE! If your ship uses a tech that works
+#         like that, then that's another option. However, since for this tech we only want to remove collision from our turret weapons to our parent shields, this tech will not do that for the parent ship.
+#    ---- Phaser turrets can be simulated in two ways:
+#    ----- Option A: Just place a normal aesthethic turret that never fires above a phaser or phaser group. This option is preferable if there is only 1 phaser per turret and model/scalability issues do not make the following option
+#          feasible.
+#    ----- Option B: Create auxiliar parent ship hardpoint properties, identical to the turret ship phaser to imitate if that phaser worked, but with their name ending on a " T" (space included, f.ex. if weapon was "Quantom 10", then it
+#          would be called "Quantom10 T") but with a max charge identical but on the negatives and a recharge rate greater than twice its max charge, and the firing arcs and direction of the parent , non-T hardpoint. Then the script 
+#          will make sure that upon firing a "non-T" parent phaser bank, the fire and charge of those associated "T" hardpoint properties becomes the opposite value, and when a "non- T" stops firing, all the associated T siblings' max
+#          charge will be sent to the negatives. Additionally, these auxiliar hardpoint properties will attempt to move to fit the turret sibling one.
+#          -- Remember that the functional turret hardpoint positions and the ones with this function may not totally match (f.ex. a phaser at 0.5 forward on the turret end may actually end on the middle because the game had adjusted 
+#             the hardpoint position to somehing valid according to the turret model).
+#          -- If this is done, you cannot use the same exact hardpoint for phaser turrets (since the common phaser name could cause a conflict which on the other case would not be).
+#          -- Additionally, the option of "SimulatedPhaser" needs to be set to 1, that is because this faithful option is more expensive and it's better to reduce its use if the turrets do not need it.
+# 2. Weapon intensity for turret-side phasers is not currently being totally modulated to the user - it uses the main weapon control subsystem for that, not advanced power control.
+#    -- However, naturally, phasers using the "SimulatedPhaser" will work with advanced power control because those are actually the parent ship beams.
 # 3. Torpedo change-type and spread-type support is non-existant at the moment
-# --- The reason for this is because, for some unexplainable reason, trying to change the ammo for a torpedo will work fine, but then when a turret torpedo of the new type collides or despawns, it causes a virtual call function error.
-# 4. Turrets support AutoTargeting and MultiTargeting fine, but for some cases it may be a tiny bit wonky (including very rarely having a turret aiming at a target for a millisecond, to later on aim and fire at another). 
+#    -- The reason for this is because, for some unexplainable reason, trying to change the ammo for a torpedo will work fine, but then when a turret torpedo of the new type collides or despawns, it causes a virtual call function error.
+# 4. For some unknown reason, when a ship gets out of warp, if the turret "WarpPosition" is too, too far, turrets become invisible - this does not affect the turret functionality, it can still fire and do actions
+# 5. Turrets support AutoTargeting and MultiTargeting fine, but for some cases it may be a tiny bit wonky (including very rarely having a turret aiming at a target for a millisecond, to later on aim and fire at another). 
 #    ***Behaviour may turn out even weirder if multiple parent ship weapons are assigned to the same turret (with each one aiming at a different target)***
-# 5. For functional turrets:
+# 6. For functional turrets:
 # -- Turret fire range may not totally overlap the parent ship beam range that they are covering, specially when aiming totally upwards. They cover a slighly smaller area inside the parent coverage area.
 # -- Turret fire may be very slightly delayed.
 
@@ -71,7 +76,6 @@
 # ALSO TO-DO (from KCS), if you're gonna muck about with tractor beams, can you figure out how to get them off the default texture?
 # Like, pShip.GetImpulseEngineSubsystem().GetTractorBeamSystem() -> get its children and for each children TractorBeamProperty.SetTextureName("Nameoftexture???")
 
-# TO-DO Edit sample setup to remove superfluous info
 """
 """
 
@@ -100,11 +104,8 @@ Foundation.ShipDef.VasKholhr.dTechs = { 'Turret': {
                 
         "Port Wing":     ["VasKholhr_Portwing", {
                 "Position":             [0, 0, 0],
-                "Rotation":             [0, 0, 0], # normal Rotation used if not Red Alert and if not Warp
-                "AttackRotation":         [0, -0.6, 0],
                 "AttackDuration":         200.0, # Value is 1/100 of a second
                 "AttackPosition":         [0, 0, 0.03],
-                "WarpRotation":       [0, 0.349, 0],
                 "WarpPosition":       [0, 0, 0.02],
                 "WarpDuration":       150.0,
                 "SyncTorpType": 1,
@@ -116,11 +117,8 @@ Foundation.ShipDef.VasKholhr.dTechs = { 'Turret': {
         
         "Starboard Wing":     ["VasKholhr_Starboardwing", {
                 "Position":             [0, 0, 0],
-                "Rotation":             [0, 0, 0],
-                "AttackRotation":         [0, 0.6, 0],
                 "AttackDuration":         200.0, # Value is 1/100 of a second
                 "AttackPosition":         [0, 0, 0.03],
-                "WarpRotation":       [0, -0.349, 0],
                 "WarpPosition":       [0, 0, 0.02],
                 "WarpDuration":       150.0,
                 "SyncTorpType": 1,
@@ -148,7 +146,7 @@ import MissionLib
 
 #################################################################################################################
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.97",
+	    "Version": "0.98",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -179,6 +177,11 @@ class SingleTurret:
     def removeShip(self, pTurret):
         if self.pShips.has_key(repr(pTurret)):
             del self.pShips[repr(pTurret)]
+
+    def removeTurretsforShip(self, pShip):
+        for turretElement in self.pShips.keys():
+            if repr(self.pShips[turretElement][1]) == repr(pShip):
+                del self.pShips[turretElement]
 
     def getDict(self):
         return self.pShips
@@ -291,26 +294,19 @@ class Turrets(FoundationTech.TechDef):
                         # save the shipfile for later use
                         dOptions["sShipFile"] = sFile
                         
-                        # set current rotation/position values
-                        if not dOptions.has_key("currentRotation"):
-                                dOptions["currentRotation"] = {}
+                        # set current position values
                         if not dOptions.has_key("currentPosition"):
                                 dOptions["currentPosition"] = {}
                         if not dOptions.has_key("curMovID"):
                                 dOptions["curMovID"] = {}
-                        dOptions["currentRotation"][repr(pShip)] = [0, 0, 0] # those two lists are updated with every move
                         dOptions["currentPosition"][repr(pShip)] = [0, 0, 0]
                         dOptions["curMovID"][repr(pShip)] = 0
                         if not dOptions.has_key("Position"):
                                 dOptions["Position"] = [0, 0, 0]
                         dOptions["currentPosition"][repr(pShip)] = dOptions["Position"] # set current Position
-                        
-                        if not dOptions.has_key("Rotation"):
-                                dOptions["Rotation"] = [0, 0, 0]
-                        dOptions["currentRotation"][repr(pShip)] = dOptions["Rotation"] # set current Rotation
-                        
+                      
                         # event listener
-                        #if not self.bAddedWarpListener.has_key(repr(pShip)) and (dOptions.has_key("WarpRotation") or dOptions.has_key("WarpPosition")):
+
                         pShip.AddPythonFuncHandlerForInstance(App.ET_START_WARP, __name__ + ".StartingWarp")
                         pShip.AddPythonFuncHandlerForInstance(App.ET_START_WARP_NOTIFY, __name__ + ".StartingWarp")
                         # ET_EXITED_WARP handler doesn't seem to work, so use ET_EXITED_SET instead
@@ -319,7 +315,7 @@ class Turrets(FoundationTech.TechDef):
 
                         self.bAddedWarpListener[repr(pShip)] = 1
 
-                        if not self.bAddedAlertListener.has_key(repr(pShip)) and (dOptions.has_key("AttackRotation") or dOptions.has_key("AttackPosition")):
+                        if not self.bAddedAlertListener.has_key(repr(pShip)) and dOptions.has_key("AttackPosition"):
                                 pShip.AddPythonFuncHandlerForInstance(App.ET_SET_ALERT_LEVEL, __name__ + ".AlertStateChanged")
                                 # Alert change handler doesn't work for AI ships, so use subsystem changed instead
                                 pShip.AddPythonFuncHandlerForInstance(App.ET_SUBSYSTEM_STATE_CHANGED, __name__ + ".SubsystemStateChanged")
@@ -331,13 +327,9 @@ class Turrets(FoundationTech.TechDef):
                                 pShip.AddPythonFuncHandlerForInstance(App.ET_WEAPON_FIRED, __name__ + ".WeaponFired")
                                 pShip.AddPythonFuncHandlerForInstance(App.ET_PHASER_STOPPED_FIRING, __name__ + ".WeaponFiredStop")
                                 pShip.AddPythonFuncHandlerForInstance(App.ET_TRACTOR_BEAM_STOPPED_FIRING, __name__ + ".WeaponFiredStop")
-                                # There's not good tolerance for torpedoes at the moment, potential TO-DO
-                                pShip.AddPythonFuncHandlerForInstance(App.ET_TORPEDO_FIRED, __name__ + ".WeaponFiredStopAction")
 
-                                #TO-DO TRYING TO ADD SHIELD-THROUGH SUPPORT
-                                #pShip.AddPythonFuncHandlerForInstance(App.ET_SHIELD_COLLISION, __name__ + ".IgnoreShieldCollision")
-                                #pShip.AddPythonFuncHandlerForInstance(App.ET_WEAPON_HIT, __name__ + ".IgnoreShieldCollision")
-                                # pShip.AddPythonFuncHandlerForInstance(App.ET_WEAPON_HIT, __name__ + "MissionLib.IgnoreEvent") # This one crashes the game once anything collides, do NOT do it
+                                # There's not such a good tolerance for torpedoes compared with phasers, if a problem arises due to this, it may be a potential TO-DO
+                                pShip.AddPythonFuncHandlerForInstance(App.ET_TORPEDO_FIRED, __name__ + ".WeaponFiredStopAction")
     
                                 self.bAddedAlertListener[repr(pShip)] = 1
                                 AlertListener = 1
@@ -381,10 +373,6 @@ class Turrets(FoundationTech.TechDef):
                                 pShip.RemoveHandlerForInstance(App.ET_TRACTOR_BEAM_STOPPED_FIRING, __name__ + ".WeaponFiredStop")
                                 pShip.RemoveHandlerForInstance(App.ET_TORPEDO_FIRED, __name__ + ".WeaponFiredStopAction")
 
-                                #TO-DO TRYING TO ADD SHIELD-THROUGH SUPPORT
-                                #pShip.RemoveHandlerForInstance(App.ET_SHIELD_COLLISION, __name__ + ".IgnoreShieldCollision")
-                                #pShip.RemoveHandlerForInstance(App.ET_WEAPON_HIT, __name__ + ".IgnoreShieldCollision")
-
                                 del self.bAddedAlertListener[repr(pShip)]
                                 del self.bBattleTurretListener[repr(pShip)]
                         
@@ -393,7 +381,6 @@ class Turrets(FoundationTech.TechDef):
                                         if item[0] == "Setup":
                                                 del item[1]["AlertLevel"][repr(pShip)]
                                         else:
-                                                del item[1]["currentRotation"][repr(pShip)]
                                                 del item[1]["currentPosition"][repr(pShip)]
                                 
                 if hasattr(pInstance, "TurretList"):
@@ -403,6 +390,8 @@ class Turrets(FoundationTech.TechDef):
         def AttachParts(self, pShip, pInstance):
                 debug(__name__ + ", AttachParts")
                 pSet = pShip.GetContainingSet()
+                if not pSet:
+                    return 0
                 pInstance.__dict__["TurretList"] = []
                 ModelList = pInstance.__dict__["Turret"]
                 sNamePrefix = repr(pShip) + "_"
@@ -430,60 +419,9 @@ class Turrets(FoundationTech.TechDef):
 
                 pShields = pShip.GetShields()
                 if pInstance.__dict__.has_key("Turret") and pInstance.__dict__["Turret"].has_key("Setup") and  pInstance.__dict__["Turret"]["Setup"].has_key("ShieldOption") and pInstance.__dict__["Turret"]["Setup"]["ShieldOption"] == 1 and pShields.IsOn(): # If shields are active with ShieldOption = 1, drop shields
-                    pShields.TurnOff() #.TurnOn() GetAlertState
-                    print "TO-DO look for what defines the shield bubble and remove it from the collisions from our own turret fire"
-                    # Maybe make the bubble uncollidable and then we re-add it?
-                    #pShieldObj = App.ObjectClass_Cast(pShields) #These two lines will crash the game, do not use that!
-                    #pProxManager.RemoveObject(pShieldObj)
-
-                ###     TEST AREA    ### # TO-DO 2 pShip.AddSubsystem() from the weapons of the turret could work???
+                    pShields.TurnOff()
 
               #  pProxManager.RemoveObject(pShip) # This, funnily enough, allows our weapons to bypass our shields... as well as pretty much everyone not being able to hit us
-                """
-                #OK, SO PROBABLY A FEW PROXIMITY CHECKS SHOULD BE DONE AGAIN, if we were to go ghost:
-                #For all ships (except own turrets): Proximity Check that throws the danger to collide thingy ET_OBJECT_COLLISION, ET_SHIELD_COLLISION, ET_CLOAKED_COLLISION
-                #For all weapons (specialy torps): Proximity Check, leaves WEAPON_HIT, ET_SHIELD_COLLISION, ET_PHASER_STARTED_HITTING, ET_PHASER_STOPPED_HITTING
-                #For planets: planetary collision and atmosphere collision -> ET_PLANET_COLLISION, ET_PLANET_ATMOSPHERE_COLLISION.
-                
-                pObjList = []
-                for kShip in pSet.GetClassObjectList(App.CT_SHIP): # PLANET, PhysicsObjectClass and AsteroidField should do the trick # ALSO CHECK TO IGNORE OWN TURRETS? 
-                    pObjList.append(kShip)
-                # sFunctionHandler = TO-DO to whatever function is needed
-                # pInstance.__dict__["Turret"]["MyProximity"] = MissionLib.ProximityCheck(pShip, pShip.GetRadius(), pObjList, sFunctionHandler) # TO-DO probably needs more
-                # After that do a if pInstance.__dict__["Turret"].has_key("MyProximity"), then update the info
-
-                #print pProxManager.__dict__
-
-                #print App.ProximityCheck.TT_INSIDE
-                #print App.ProximityCheck.TT_OUTSIDE
-                #print App.ProximityCheck.TT_INVALID
-
-                if pProxManager:
-
-                            kIterator = pProxManager.GetNearObjects(pShip.GetWorldLocation(), 0.0, -1) #pRPER USE IS THE THING ON THE RIGHT pProxManager.GetNearObjects(pShip.GetWorldLocation(), 50.0, 1)
-                            intAux = 0
-                            while(1):
-                                pProximityCheck = pProxManager.GetNextObject(kIterator)
-                                print "intAux = ", intAux
-                                if not pProximityCheck:
-                                    print "we break"
-                                    break
-                                try:
-                                    pProximityCheck.RemoveObjectFromCheckListByID(pSubShip.GetObjID())
-                                except:
-                                    print "Failed to remove object from proximityCheck"
-                                    traceback.print_exc()
-                                intAux = intAux + 1
-
-                            pProxManager.EndObjectIteration(kIterator)
-
-
-                #pShields = pShip.GetShields()
-                #if pShields:
-                #    #pShields.AddPythonFuncHandlerForInstance(App.ET_SHIELD_COLLISION, __name__ + ".IgnoreShieldCollision")
-                #    #pShields.AddPythonFuncHandlerForInstance(App.ET_WEAPON_HIT, __name__ + ".IgnoreShieldCollision")
-                """
-                ### END OF TEST AREA ###
 
                 pCloak = pShip.GetCloakingSubsystem()
                 shipIsCloaking = 0
@@ -510,9 +448,7 @@ class Turrets(FoundationTech.TechDef):
 
                         # set current positions
                         pSubShip.SetTranslateXYZ(dOptions["currentPosition"][repr(pShip)][0],dOptions["currentPosition"][repr(pShip)][1],dOptions["currentPosition"][repr(pShip)][2])
-                        iNorm = math.sqrt(dOptions["currentRotation"][repr(pShip)][0] ** 2 + dOptions["currentRotation"][repr(pShip)][1] ** 2 + dOptions["currentRotation"][repr(pShip)][2] ** 2)
-                        pSubShip.SetAngleAxisRotation(1.0,dOptions["currentRotation"][repr(pShip)][0],dOptions["currentRotation"][repr(pShip)][1],dOptions["currentRotation"][repr(pShip)][2])
-                        #pSubShip.SetScale(-iNorm + 1.85)
+
                         pSubShip.UpdateNodeOnly()
 
                         # save the options list
@@ -572,14 +508,14 @@ class Turrets(FoundationTech.TechDef):
 
                         ##### EXPERIMENTAL AREA
                         """
-                        # CANCELLED TO-DO (See Limitation 3), no matter where we add it, changing the torpedo type is successfull in both SetTorpedoScriipt and SetAmmoType ways, but removal of the new torpedo will crash
+                        # CANCELLED TO-DO (See Limitation 3), no matter where we add it, changing the torpedo type is successfull in both SetTorpedoScriipt and SetAmmoType ways, but removal of the new torpedo fired will crash
                         parentTorpSys = pShip.GetTorpedoSystem()
                         turTrpSys = pSubShip.GetTorpedoSystem()
                         if parentTorpSys:
                             if turTrpSys and pInstance.__dict__["Turret"][sNameSuffix][1].has_key("SyncTorpType") and pInstance.__dict__["Turret"][sNameSuffix][1]["SyncTorpType"] > 0:
                                 pParentFiredSystemProperty = App.TorpedoSystemProperty_Cast(parentTorpSys.GetProperty())
                                 if pInstance.__dict__["Turret"][sNameSuffix][1]["SyncTorpType"] == 1: # We sync types
-                                    print "Ok so torp slot sync"
+                                    #print "Ok so torp slot sync"
                                     ammoNum = parentTorpSys.GetCurrentAmmoTypeNumber() # TO-DO if this works, move them above to avoid getting too much loop
                                     pTorpedoType = parentTorpSys.GetAmmoType(ammoNum)
                                     pTorpedoTypeScript = pTorpedoType.GetTorpedoScript()
@@ -587,9 +523,9 @@ class Turrets(FoundationTech.TechDef):
                                     curTurammoNum = turTrpSys.GetCurrentAmmoTypeNumber()
                                     curTurammoType = turTrpSys.GetAmmoType(curTurammoNum)
                                     curTurammoTypeScript = curTurammoType.GetTorpedoScript()
-                                    print curTurammoTypeScript ," vs ", pTorpedoTypeScript
+                                    #print curTurammoTypeScript ," vs ", pTorpedoTypeScript
                                     if curTurammoTypeScript != pTorpedoTypeScript:
-                                        print "Updating to another torp type, please wait..."
+                                        #print "Updating to another torp type, please wait..."
                                         curTurammoType.SetTorpedoScript(pTorpedoTypeScript)
                         """
                         ##### END EXPERIMENTAL AREA
@@ -632,97 +568,17 @@ class Turrets(FoundationTech.TechDef):
                                 pSet = pSubShip.GetContainingSet()
                                 pShip.DetachObject(pSubShip)
                                 DeleteObjectFromSet(pSet, pSubShip.GetName())
+                        # TO-DO maybe with this some extra cleanup is done?
+                        #oInvertedTurretList.removeTurretsforShip(pShip)
                         del pInstance.TurretList
                 
 oTurrets = Turrets("Turret")
 
-#TO-DO move things below, to below the moving class, or delete if unused, check what part of the ship takes care of that
-
-def IgnoreShieldCollision(pObject, pEvent):
-    debug(__name__ + ", IgnoreShieldCollision")
-    print "ok so this event happened"
-    #Refine to only allow your turrets to do it
-    #pObject.AddPythonFuncHandlerForInstance(App.ET_SHIELD_COLLISION, __name__ + ".IgnoreShieldCollision")
-    #pass
-    pObject.CallNextHandler(pEvent)
-    return 0
-
-# Checking if phasers can be checked this way...
-def PhaserTurretFiredTest(pObject, pEvent):
-    debug(__name__ + ", PhaserTurretFiredTest")
-    print "ok, so the phaser firing happened"
-    if pEvent:
-        print "pEvent: ", pEvent,  " OF TYPE ", pEvent.GetEventType()
-        print "pSource: ", pEvent.GetSource()
-        print "pDestination: ", pEvent.GetDestination()
-        print "GetObjPtr: ", pEvent.GetObjPtr()
-        print "GetTimestamp: ", pEvent.GetTimestamp()
-        print "IsLogged: ", pEvent.IsLogged()
-        print "IsPrivate: ", pEvent.IsPrivate()
-        print "IsNotSaved: ", pEvent.IsNotSaved()
-        print "GetRefCount: ", pEvent.GetRefCount()
-
-        print "GetObjType: ", pEvent.GetObjType()
-        print "GetObjID: ", pEvent.GetObjID()
-        print "Print: ", pEvent.Print()
-
-    pWeaponFired = App.Weapon_Cast(pEvent.GetSource())
-    if pWeaponFired == None:
-        print "no weapon subshipphaser fired obj..."
-        pObject.CallNextHandler(pEvent)
-        return
-    
-
-
-#Guess what, subscribed pEvents can be modified for everyone by any subscriber! ~~that's a sin...~~
-def WeaponTurretFiredAtMe(pObject, pEvent):
-    debug(__name__ + ", WeaponTurretFiredAtMe")
-    print "Event 1: "
-    #TO-DO maybe pEvent.SetSource(other) or pEvent.SetDestination(other)
-    print "pWeaponFired before cast is of type ", pEvent.GetSource()
-    pWeaponFired = App.Weapon_Cast(pEvent.GetSource())
-    if pWeaponFired == None:
-        print "no weapon stopped fired obj..."
-        return
-
-    pParentFired = pWeaponFired.GetParentSubsystem()
-    if pParentFired == None:
-        print "no weapon stop-fire parent subsystem obj..."
-        pObject.CallNextHandler(pEvent)
-        return
-
-    
-    pTurret = pParentFired.GetParentShip()
-    if not pTurret:
-        return
-
-    pShipID = pObject.GetObjID()
-    pShip = App.ShipClass_GetObjectByID(None, pShipID)
-
-    if pShip:
-        pInstance = findShipInstance(pShip)
-        if pInstance and pInstance.__dict__.has_key("Turret") and hasattr(pInstance, "TurretList"):
-                    for pSubShip in pInstance.TurretList:
-                        if repr(pSubShip) == repr(pTurret):
-                            print "found it"
-                            if pInstance.__dict__["Turret"].has_key("Dummy"):
-                                pWpnSys = pInstance.__dict__["Turret"]["Dummy"]
-                                print "Another"
-                                if pWpnSys:
-                                    pEvent.SetSource(pWpnSys)
-                                    print "The Change is done"
-                            break          
-
-    pObject.CallNextHandler(pEvent)
-    return 0
-    
-
 # The class does the moving of the parts
 # with every move the part continues to move
-# TO-DO remove unnecessary rotation info, it is unused!!!
 class MovingEvent:
         # prepare fore move...
-        def __init__(self, pShip, item, fDuration, lStartingRotation, lStoppingRotation, lStartingTranslation, lStoppingTranslation, dHardpoints):
+        def __init__(self, pShip, item, fDuration, lStartingTranslation, lStoppingTranslation, dHardpoints):
                 debug(__name__ + ", __init__")
                 
                 self.iNacelleID = item[0].GetObjID()
@@ -731,19 +587,6 @@ class MovingEvent:
                 self.pShip = pShip
                         
                 fDurationMul = 0.95 # make us a little bit faster to avoid bad timing
-        
-                # rotation values
-                self.iCurRotX = lStartingRotation[0]
-                self.iCurRotY = lStartingRotation[1]
-                self.iCurRotZ = lStartingRotation[2]
-                if fDuration > 0:
-                        self.iRotStepX = (lStoppingRotation[0] - lStartingRotation[0]) / (fDuration * fDurationMul)
-                        self.iRotStepY = (lStoppingRotation[1] - lStartingRotation[1]) / (fDuration * fDurationMul)
-                        self.iRotStepZ = (lStoppingRotation[2] - lStartingRotation[2]) / (fDuration * fDurationMul)
-                else:
-                        self.iRotStepX = (lStoppingRotation[0] - lStartingRotation[0])
-                        self.iRotStepY = (lStoppingRotation[1] - lStartingRotation[1])
-                        self.iRotStepZ = (lStoppingRotation[2] - lStartingRotation[2])
                 
                 # translation values
                 self.iCurTransX = lStartingTranslation[0]
@@ -789,6 +632,12 @@ class MovingEvent:
                                 self.dHPSteps[sHP][0] = (self.dStopHardpoints[sHP][0] - self.dStartHardpoints[sHP][0])
                                 self.dHPSteps[sHP][1] = (self.dStopHardpoints[sHP][1] - self.dStartHardpoints[sHP][1])
                                 self.dHPSteps[sHP][2] = (self.dStopHardpoints[sHP][2] - self.dStartHardpoints[sHP][2])
+
+
+                if self.dOptionsList.has_key("SetScale") and self.dOptionsList["SetScale"] != 0.0:
+                    item[0].SetScale(self.dOptionsList["SetScale"])
+                else:
+                    item[0].SetScale(0.5)
                 
         # move!
         def __call__(self, pShip, pTarget=None):
@@ -840,6 +689,12 @@ class MovingEvent:
                 else:
                         self.dOptionsList["TARGET"] = pTarget
 
+                # TO-DO maybe someone could want to dynamically resize their turret
+                if self.dOptionsList.has_key("SetScale") and self.dOptionsList["SetScale"] != 0.0:
+                    pNacelle.SetScale(self.dOptionsList["SetScale"])
+                else:
+                    pNacelle.SetScale(0.5)
+
                 while pTarget and (pTarget.GetObjID() == self.iNacelleID): # another safety feature for doofus AutoTargeting scripts
                     pTarget = pShip.GetNextTarget()
 
@@ -883,11 +738,6 @@ class MovingEvent:
 
                             pNacelle.AlignToVectors(kFwd, kVect2)
 
-                        if self.dOptionsList.has_key("SetScale") and self.dOptionsList["SetScale"] != 0.0:
-                            pNacelle.SetScale(self.dOptionsList["SetScale"])
-                        else:
-                            pNacelle.SetScale(0.5)
-
                         if self.dOptionsList.has_key("SimulatedPhaser") and self.dOptionsList["SimulatedPhaser"] == 1:
                             turPhsSys = pNacelle.GetPhaserSystem()
                             if turPhsSys:
@@ -905,7 +755,6 @@ class MovingEvent:
                 # set Translation
                 pNacelle.SetTranslateXYZ(self.iCurTransX, self.iCurTransY, self.iCurTransZ)
                 
-                self.dOptionsList["currentRotation"][repr(self.pShip)] = [self.iCurRotX, self.iCurRotY, self.iCurRotZ] # TO-DO Remove
                 self.dOptionsList["currentPosition"][repr(self.pShip)] = [self.iCurTransX, self.iCurTransY, self.iCurTransZ]
                 
                 # Hardpoints
@@ -1442,7 +1291,7 @@ def WeaponFired(pObject, pEvent, stoppedFiring=None):
                                 if mySubsystem:
                                         mySubsWep = App.Weapon_Cast(mySubsystem)
                                         thisParent = mySubsWep.GetParentSubsystem()
-                                        print "thisParent: ", thisParent
+                                        #print "thisParent: ", thisParent
                                         for item in pInstance.OptionsList:
                                             if item[0] != "Setup" and item[0].GetObjID() == pSubShip.GetObjID():
                                                 lTurretsToFire[repr(pSubShip)] = [pSubShip, mySubsystem, item, thisParent]
@@ -1458,7 +1307,7 @@ def WeaponFired(pObject, pEvent, stoppedFiring=None):
                                 wpnSystem = App.WeaponSystem_Cast(lTurretsToFire[turret][-1])
 
                                 if wpnSystem != None:
-                                        print "FIRING BATTERIES!!!"
+                                        #print "FIRING BATTERIES!!!"
 
                                         if pTarget and not shouldWeTakeMeasuresToAvoidGettingHit: # Just a safety precaution
                                             #print "Ok we fire"
@@ -1469,10 +1318,10 @@ def WeaponFired(pObject, pEvent, stoppedFiring=None):
                                             pSet = lTurretsToFire[turret][0].GetContainingSet()
                                             mothershipBlock = CheckLOS(pTarget, lTurretsToFire[turret][0], pShip, pSet) # TO-DO check why this is not preventing the turrets from firing through the parent ship
                                             if mothershipBlock:
-                                                print "parent is between us, stopping..."
+                                                #print "parent is between us, stopping..."
                                                 wpnSystem.StopFiring()
                                             else:
-                                                print "firing the weapon"
+                                                #print "firing the weapon"
 
                                                 if phsrLvl:
                                                     wpnSystemButPhaser = App.PhaserSystem_Cast(wpnSystem)
@@ -1496,25 +1345,25 @@ def WeaponFired(pObject, pEvent, stoppedFiring=None):
                                                             #ammoType= pParentFiredSystem.GetCurrentAmmoType().GetTorpedoScript() # this is a C TorpedoAmmoType instance
                                                             #print ammoType
                                                             if lTurretsToFire[turret][-2][1]["SyncTorpType"] == 1: # We sync slots with slots
-                                                                print "Ok so torp slot sync"
+                                                                #print "Ok so torp slot sync"
                                                                 ammoNum = pParentFiredSystem.GetCurrentAmmoTypeNumber()
                                                                 # Version 2, it is a delayed sync, when the ammo gets changed and the ship fires, it will look for that
                                                                 maxTurAmmo = turTrpSys.GetNumAmmoTypes()
-                                                                print maxTurAmmo
+                                                                #print maxTurAmmo
                                                                 if maxTurAmmo > 0: # *** TO-DO IMPORTANT ***
                                                                     ammoNumAppropiate = ammoNum % maxTurAmmo
 
                                                                     curTurammoNum = turTrpSys.GetCurrentAmmoTypeNumber()
-                                                                    print ammoNumAppropiate, " ammoNumAppropiate vs curTurammoNum ", curTurammoNum
+                                                                    #print ammoNumAppropiate, " ammoNumAppropiate vs curTurammoNum ", curTurammoNum
                                                                     #TO-DO if this works add also an event for player changing torp types if necessary... or do a dirty thing and check it in movement... that could work
                                                                     if curTurammoNum != ammoNumAppropiate:
-                                                                        print "changing ammo types"
+                                                                        #print "changing ammo types"
                                                                         #turTrpSys.LoadAmmoType(ammoNumAppropiate, 1000)
                                                                         turTrpSys.SetAmmoType(ammoNumAppropiate)
                                                                         wpnSystem = turTrpSys # TO-DO TEST IN CASE THIS IS WHAT WAS CAUSING ISSUES
 
                                                             elif lTurretsToFire[turret][-2][1]["SyncTorpType"] == 2: # We sync types with types, if no type is found, then no change
-                                                                print "Ok so torp type sync"
+                                                                #print "Ok so torp type sync"
 
                                                                 #pTurretSystemProperty = App.TorpedoSystemProperty_Cast(turTrpSys.GetProperty())
                                                                 #pTurretSystemProperty.SetTorpedoScript(App.AT_ONE, ammoType)
@@ -1554,7 +1403,6 @@ def WeaponFired(pObject, pEvent, stoppedFiring=None):
                                                     WeaponSystemFiredStopAction(pShip, wpnSystem, pTarget)
 
                                                 else:
-                                                    print "Firing phasers or tractors"
                                                     if lTurretsToFire[turret][-2][1].has_key("SimulatedPhaser") and lTurretsToFire[turret][-2][1]["SimulatedPhaser"] == 1:
                                                         turPhsSys = lTurretsToFire[turret][0].GetPhaserSystem()
                                                         isPhaserFire = turPhsSys and wpnSystem.GetName() == turPhsSys.GetName()
@@ -1636,7 +1484,7 @@ def TorpedoTurretFiredTest(pObject, pEvent):
     else:
         pShipID = pShip.GetObjID()
         for pTorp in mineTorps:
-            print "updating torp, fast way"
+            #print "updating torp, fast way"
             pTorp.SetParent(pShipID)
             pTorp.UpdateNodeOnly()
 
@@ -1686,7 +1534,7 @@ def TorpedoTurretFiredTest(pObject, pEvent):
     else:
         pShipID = pShip.GetObjID()
         for pTorp in mineTorps:
-            print "updating torp, fast way"
+            #print "updating torp, fast way"
             pTorp.SetParent(pShipID)
             pTorp.UpdateNodeOnly()
     """
@@ -1787,138 +1635,6 @@ def TorpedoTurretFiredTest(pObject, pEvent):
         #pTorpTube.ReloadTorpedo()
         pTorpTube.SetNumReady(pTorpTube.GetMaxReady())
 
-    ########### EXPERIMENTAL AREA - THIS AREA WAS MEANT TO BE USED FOR CHANGING A PHASER BEAM PARENT ID OR EQUIVALENT AND ALLOW TURRETS TO FIRE BEAMS THROUGH SHIELDS WITHOUT THE "SIMULATION" FINALLY USED ###########
-    """
-    elif phsrCtrl and (pParentFired.GetName() == phsrCtrl.GetName()):
-        #TO-DO if it's possible, find a way to make phaser_banks work .SetParent(pShipID) could work if we knew the type of object a beam is? Maybe PhaserType, if that exists? USE DECOMPILER IN STOCK SCRIPT SHIPS JUST IN CASE?
-        print "It's a phaser, time to check if we can do anyting about it"
-        # TO-DO check if this works:
-        ### EXPERIMENTAL AREA!!!!
-        parentPhaserSubsys = MissionLib.GetSubsystemByName(pShip, (pWeaponFired.GetName() + "T")) # For phasers, recommended to add one phaser subsys with the name but unfireable, and these ones, ended on "R"
-
-        ### EXPERIMENTAL AREA!!!!
-        pPhaserBank = App.PhaserBank_Cast(pWeaponFired)
-        pTargetID = pPhaserBank.GetTargetID()
-        pTarget = App.ShipClass_GetObjectByID(None, pTargetID)
-	pthisPhaser = App.PhaserProperty_Cast(pPhaserBank.GetProperty())
-        #print "Phaser ID: ", pthisPhaser.GetWeaponID()
-        #print "Phaser ObjID", pthisPhaser.GetObjID()
-        #print "Phaser groups", pthisPhaser.GetGroups()
-
-        # TO-DO CHECK IF pPhaserBank.CanHit(pTarget.GetWorldLocation()) AND pPhaserBank.CanFire() COULD HELP
-        # ALSO CHECK IF pObject1 = App.PlacementObject_GetObject(App.SetClass_GetNull(), pEvent.GetDestination().GetObjectID()) , TGAttrObject, TGAttrObject.LookupAttrValue(), TGAttrObject.GetAttrValue() and others
-        # others like PlacementObject.FindContainingSet() COULD HELP
-        # CT_WAYPOINT, CT_LIGHT_PLACEMENT, CT_PLACEMENT, CT_LIGHT_OBJECT, CT_PULSING_LIGHT, CT_RETICLE, CT_GRID ... CHECK THOSE WITH THE pSet.GetClassObjectList(App.CT_TORPEDO)
-        # TO-DO maybe a pSet.RemoveObjectFromCheckListByID(pSubShip.GetObjID()) could work?
-        # PROMISING TO-DO pPhaserBank.CalculateRoughDirection().Dot(vPhaserCenterDirection)
-
-        #fPhaserDot = pBank.CalculateRoughDirection().Dot(anNNIPOINT3 THINGY, LIKE THE POSITION OF A TARGET OR SOMETHING)
-
-
-
-
-        pProxManager = pSet.GetProximityManager()
-        if pTarget and pProxManager:
-            #pProxManager.RemoveObject(pShip) # wth is this plus the line below ... would it even work??? No, it doesn't...
-            #pProxManager.AddObject(pShip)
-
-            #pShip.DisableCollisionDamage(0) # Maybe those use flags?
-            #pShip.UpdateNodeOnly()
-
-            kIterator = pProxManager.GetLineIntersectObjects(pTurret.GetWorldLocation(), pTarget.GetWorldLocation(), 0.05)
-
-            #App.g_kVarManager TO-DO??????
-
-            while(1):
-                pObjectI = pProxManager.GetNextObject(kIterator)
- 
-                if not pObjectI:
-                    print "we break"
-                    break
-                print "Object is ", pObjectI.GetName()
-
-                #colFlag = pObjectI.GetCollisionFlags()
-                #print colFlag # returns a 7-maybe 8, bit result, 127 (1111111) is default
-
-                #lineCollides = pObjectI.LineCollides() # what does this do? it requires 3 arguments (one of them being pObjectI)... but the othersunknown
-                #print lineCollides
-
-                # pObjectI.RemoveObjectFromCheckListByID(pSubShip.GetObjID())
-
-                #try to see if a pShip can ignore a phaser via  pObjectI.RemoveObjectFromCheckListByID(pSubShip.GetObjID()) #or pPhaserBank.GetObjID()
-                #Maybe pObjectI.GetWeaponSystemGroup() ??? Would that even work? <- TO-DO check | or pObjectI.DisableCollisionDamage() ??? <- No, that doesn't work | WAYPOINTs??? <- TO-DO
-                # TO-DO Actually... what would happen if we cloned a model for damageableobject? Maybe LODModelManager has something?
-
-                pProxManager.EndObjectIteration(kIterator)
-
-
-            print "Looking for proximity checks..."
-            for pProximityCheck in pSet.GetClassObjectList(App.CT_PROXIMITY_CHECK):
-                print "Look, we found a Proximity Check!"
-                try:
-                    pProximityCheck.RemoveObjectFromCheckListByID(pSubShip.GetObjID())
-                except:
-                    print "Failed to remove object from proximityCheck"
-                    traceback.print_exc()
-
-
-            kIterator = pProxManager.GetNearObjects(pShip.GetWorldLocation(), 2 * pShip.GetRadius() * 20)
-            intAux = 0
-            while(1):
-                pProximityCheck = pProxManager.GetNextObject(kIterator)
-                print "intAux = ", intAux
-                if not pProximityCheck:
-                    print "we break"
-                    break
-                if pObject.IsTypeOf(App.CT_PROXIMITY_CHECK):
-                    print "Look, we found a Proximity Check!"
-                    try:
-                        pProximityCheck.RemoveObjectFromCheckListByID(pSubShip.GetObjID())
-                    except:
-                        print "Failed to remove object from proximityCheck"
-                        traceback.print_exc()
-                intAux = intAux + 1
-
-                pProxManager.EndObjectIteration(kIterator)
-
-
-        #pThePhaserMaybe = pEvent.GetDestination() # check if anything happens there
-        #maybe phsrCtrl.GetWeaponID(), and change it to the parent?
-        #print "pEvent: ", pEvent,  " OF TYPE ", pEvent.GetEventType()
-        #print "pSource: ", pEvent.GetSource()
-        #print "pDestination: ", pEvent.GetDestination()
-        #print "GetObjPtr: ", pEvent.GetObjPtr()
-        #print "GetTimestamp: ", pEvent.GetTimestamp()
-        #print "IsLogged: ", pEvent.IsLogged()
-        #print "IsPrivate: ", pEvent.IsPrivate()
-        #print "IsNotSaved: ", pEvent.IsNotSaved()
-        #print "GetRefCount: ", pEvent.GetRefCount()
-
-        #print "GetObjType: ", pEvent.GetObjType()
-        #print "GetObjID: ", pEvent.GetObjID()
-        #print "Print: ", pEvent.Print()
-
-
-        #wonkyTest = App.Torpedo_Cast(pThePhaserMaybe) #(App.TGObject_GetTGObjectPtr(pdObject.GetObjID())) # Maybe Appc.PhaserType_Cast ???
-
-        #wonkyTest.SetParent(pShipID)
-        #pThePhaserMaybe.SetParent(pShipID)
-
-        ## You know this gets serious when you have to do this import, maybe even the "import new"
-        #import Appc
-        #
-        #minePhasers = []
-        #for aObject in pSet.GetClassObjectList(Appc.CT_PHASER): # Appc.CT_PHASER, Appc.CT_PHASER_TYPE do not exist, look for other options - trial and error is not really that advisable when going to C and if pointers are affected
-        #    print "Found a phaser"
-        #    #TO-DO FIND FUNCTIONS FOR THAT CLASS
-        #    #if aObject and aObject.GetParentID() == pTurret.GetObjID():
-        #    #    minePhasers.append(aObject)
-        #
-        ### END OF EXPERIMENTAL AREA!!!!
-    """
-    ########### END OF EXPERIMENTAL AREA - THIS AREA WAS MEANT TO BE USED FOR CHANGING A PHASER BEAM PARENT ID OR EQUIVALENT AND ALLOW TURRETS TO FIRE BEAMS THROUGH SHIELDS WITHOUT THE "SIMULATION" FINALLY USED ###########
-
-
     pObject.CallNextHandler(pEvent)
     return 0
 
@@ -1994,39 +1710,42 @@ def AlertMoveFinishTemporarilyAction(pAction, pShip, pInstance, iThisMovID, iTyp
 
         return 0
 
-# called after the Alert move action
-# Remove the attached parts and use the attack or normal model now TO-DO REMOVE IF UNUSED?
-def AlertMoveFinishAction(pAction, pShip, pInstance, iThisMovID):
-        
-        # Don't switch Models back when the ID does not match
-        debug(__name__ + ", AlertMoveFinishAction")
-        if not MoveFinishMatchId(pShip, pInstance, iThisMovID):
-                return 1
-        
-        oTurrets.DetachParts(pShip, pInstance)
-        if pShip.GetAlertLevel() == 2:
-                sNewShipScript = pInstance.__dict__["Turret"]["Setup"]["AttackModel"]
-        else:
-                sNewShipScript = pInstance.__dict__["Turret"]["Setup"]["NormalModel"]
-        ReplaceModel(pShip, sNewShipScript)
-        
-        return 0
-
-
 # called after the warp-start move action
-# Remove the attached parts and use the warp model now
+# Do not remove the attached parts, and use the warp model now
 def WarpStartMoveFinishAction(pAction, pShip, pInstance, iThisMovID):
         # Don't switch Models back when the ID does not match
         debug(__name__ + ", WarpStartMoveFinishAction")
         if not MoveFinishMatchId(pShip, pInstance, iThisMovID):
                 return 1
 
-        #oTurrets.SetBattleTurretListenerTo(pShip, -1) # Not combat mode
-
+        # We may have finished the start of warp, but that doesn't mean we have ended yet - turrets will remain in position and then probably hide
         oTurrets.DetachParts(pShip, pInstance)
+        """
+        for item in pInstance.OptionsList:
+            if item[0] == "Setup":
+                dGenShipDict = item[1]
+                break
 
-        sNewShipScript = pInstance.__dict__["Turret"]["Setup"]["WarpModel"]
-        ReplaceModel(pShip, sNewShipScript)
+        if not dGenShipDict["AlertLevel"].has_key(repr(pShip)) or dGenShipDict["AlertLevel"][repr(pShip)] == None:
+            if not iType:
+               dGenShipDict["AlertLevel"][repr(pShip)] = pShip.GetAlertLevel()
+            else:
+               dGenShipDict["AlertLevel"][repr(pShip)] = iType
+
+        iType = dGenShipDict["AlertLevel"][repr(pShip)]
+       
+        if pShip.GetAlertLevel() == 2 or iType == 2:
+                oTurrets.SetBattleTurretListenerTo(pShip, 1)
+                #sNewShipScript = pInstance.__dict__["Turret"]["Setup"]["AttackModel"]
+        else:
+                if oTurrets.ArePartsAttached(pShip, pInstance):
+                        oTurrets.SetBattleTurretListenerTo(pShip, -1) # Not combat mode
+                sNewShipScript = pInstance.__dict__["Turret"]["Setup"]["NormalModel"]
+                oTurrets.DetachParts(pShip, pInstance) # we hide turrets when not in alert mode, else we keep them
+
+        # For some reason this line below leads to the ship getting dark until you fire
+        #ReplaceModel(pShip, sNewShipScript)
+        """
         return 0
 
 
@@ -2056,19 +1775,20 @@ def WarpExitMoveFinishAction(pAction, pShip, pInstance, iThisMovID):
         iType = dGenShipDict["AlertLevel"][repr(pShip)]
 
         if pInstance.__dict__["Turret"]["Setup"].has_key("AttackModel") and iType == 2:
-                sNewShipScript = pInstance.__dict__["Turret"]["Setup"]["AttackModel"]
                 oTurrets.SetBattleTurretListenerTo(pShip, 1) # Combat mode
         else:
-                sNewShipScript = pInstance.__dict__["Turret"]["Setup"]["NormalModel"]
                 oTurrets.SetBattleTurretListenerTo(pShip, -1) # Not combat mode
-        ReplaceModel(pShip, sNewShipScript)
+                #if oTurrets.ArePartsAttached(pShip, pInstance):
+                #    #sNewShipScript = pInstance.__dict__["Turret"]["Setup"]["NormalModel"]
+                #    oTurrets.SetBattleTurretListenerTo(pShip, -1) # Not combat mode
+                #oTurrets.DetachParts(pShip, pInstance) # we hide turrets when not in alert mode, else we keep them
+        #ReplaceModel(pShip, sNewShipScript)
         return 0
         
 
 # called after a move, sets the current Rotation/Translation values to the final ones
-def UpdateState(pAction, pShip, item, lStoppingRotation, lStoppingTranslation):
+def UpdateState(pAction, pShip, item, lStoppingTranslation):
         debug(__name__ + ", UpdateState")
-        item[1]["currentRotation"][repr(pShip)] = lStoppingRotation
         item[1]["currentPosition"][repr(pShip)] = lStoppingTranslation
         item[1]["curMovID"][repr(pShip)] = 0
         return 0
@@ -2210,6 +1930,11 @@ def MovingProcess(pShip, pInstance, iType, iLongestTime, dHardpoints, dGenShipDi
         # start with replacing the Models
         PrepareShipForMove(pShip, pInstance)
 
+        warpDirty = 0
+        if pInstance.__dict__["Turret"]["Setup"].has_key("WarpReload") and pInstance.__dict__["Turret"]["Setup"]["WarpReload"] == 1:
+            pInstance.__dict__["Turret"]["Setup"]["WarpReload"] = 0
+            warpDirty = 1
+
         # iterate over every Turret
         for item in pInstance.OptionsList:
                 if item[0] == "Setup":
@@ -2222,7 +1947,14 @@ def MovingProcess(pShip, pInstance, iType, iLongestTime, dHardpoints, dGenShipDi
                         
                         # setup is not a Turret
                         continue
-        
+
+                #TO-DO this is a thing for warp changes, for some reason warp changes make the models not visible, so better reload them
+                if warpDirty:
+                    model = item[1]["sShipFile"]
+                    if model:
+                        ReplaceModel(item[0], model)
+                    item[0].SetHidden(0)
+
                 # set the id for this move
                 iThisMovID = item[1]["curMovID"][repr(pShip)] + 1
                 item[1]["curMovID"][repr(pShip)] = iThisMovID
@@ -2230,15 +1962,6 @@ def MovingProcess(pShip, pInstance, iType, iLongestTime, dHardpoints, dGenShipDi
                 fDuration = 200.0
                 if item[1].has_key("AttackDuration"):
                         fDuration = item[1]["AttackDuration"]
-
-                # Rotation
-                lStartingRotation = item[1]["currentRotation"][repr(pShip)]
-                lStoppingRotation = lStartingRotation
-                if item[1].has_key("AttackRotation") and iType == 2:
-                        lStoppingRotation = item[1]["AttackRotation"]
-                else:
-                        lStoppingRotation = item[1]["Rotation"]
-                
                 
                 # Translation
                 lStartingTranslation = item[1]["currentPosition"][repr(pShip)]
@@ -2250,7 +1973,7 @@ def MovingProcess(pShip, pInstance, iType, iLongestTime, dHardpoints, dGenShipDi
         
                 iTime = 0.0
                 iTimeNeededTotal = 0.0
-                oMovingEvent = MovingEvent(pShip, item, fDuration, lStartingRotation, lStoppingRotation, lStartingTranslation, lStoppingTranslation, dHardpoints)
+                oMovingEvent = MovingEvent(pShip, item, fDuration, lStartingTranslation, lStoppingTranslation, dHardpoints)
 
                 pSeq = App.TGSequence_Create()
                 
@@ -2263,7 +1986,7 @@ def MovingProcess(pShip, pInstance, iType, iLongestTime, dHardpoints, dGenShipDi
                         pSeq.AppendAction(App.TGScriptAction_Create(__name__, "MovingAction", oMovingEvent, pShip), iWait)
                         iTimeNeededTotal = iTimeNeededTotal + iWait
                         iTime = iTime + 1
-                pSeq.AppendAction(App.TGScriptAction_Create(__name__, "UpdateState", pShip, item, lStoppingRotation, lStoppingTranslation))
+                pSeq.AppendAction(App.TGScriptAction_Create(__name__, "UpdateState", pShip, item, lStoppingTranslation))
                 pSeq.Play()
                 
                 # iLongestTime is for the part that needs the longest time...
@@ -2294,19 +2017,33 @@ def StartingWarp(pObject, pEvent):
         pShip = App.ShipClass_Cast(pObject)
         pInstance = FoundationTech.dShips[pShip.GetName()]
         iLongestTime = 0.0
+        oTurrets.SetBattleTurretListenerTo(pShip, 0)
         IncCurrentMoveID(pShip, pInstance)
         dHardpoints = {}
-        
+
+
         # first replace the Models
         PrepareShipForMove(pShip, pInstance)
         
+        warpDirty = 0
+        if pInstance.__dict__["Turret"]["Setup"].has_key("WarpReload") and pInstance.__dict__["Turret"]["Setup"]["WarpReload"] == 1:
+            #pInstance.__dict__["Turret"]["Setup"]["WarpReload"] = 0
+            warpDirty = 1
+
         for item in pInstance.OptionsList:
                 # setup is not a Turret
                 if item[0] == "Setup":
                         if item[1].has_key("WarpHardpoints"):
                                 dHardpoints = item[1]["WarpHardpoints"]
                         continue
-        
+
+                #TO-DO this is a thing for warp changes, for some reason warp changes make the models not visible, so better reload them
+                if warpDirty:
+                    model = item[1]["sShipFile"]
+                    if model:
+                        ReplaceModel(item[0], model)
+                    item[0].SetHidden(0)
+
                 # set the id for this move
                 iThisMovID = item[1]["curMovID"][repr(pShip)] + 1
                 item[1]["curMovID"][repr(pShip)] = iThisMovID
@@ -2314,12 +2051,6 @@ def StartingWarp(pObject, pEvent):
                 fDuration = 200.0
                 if item[1].has_key("WarpDuration"):
                         fDuration = item[1]["WarpDuration"]
-                    
-                # Rotation
-                lStartingRotation = item[1]["currentRotation"][repr(pShip)]
-                lStoppingRotation = lStartingRotation
-                if item[1].has_key("WarpRotation"):
-                        lStoppingRotation = item[1]["WarpRotation"]
                 
                 # Translation
                 lStartingTranslation = item[1]["currentPosition"][repr(pShip)]
@@ -2329,7 +2060,7 @@ def StartingWarp(pObject, pEvent):
         
                 iTime = 0.0
                 iTimeNeededTotal = 0.0
-                oMovingEvent = MovingEvent(pShip, item, fDuration, lStartingRotation, lStoppingRotation, lStartingTranslation, lStoppingTranslation, {})
+                oMovingEvent = MovingEvent(pShip, item, fDuration, lStartingTranslation, lStoppingTranslation, {})
                 pSeq = App.TGSequence_Create()
                 
                 # do the move
@@ -2341,7 +2072,7 @@ def StartingWarp(pObject, pEvent):
                         pSeq.AppendAction(App.TGScriptAction_Create(__name__, "MovingAction", oMovingEvent, pShip), iWait)
                         iTimeNeededTotal = iTimeNeededTotal + iWait
                         iTime = iTime + 1
-                pSeq.AppendAction(App.TGScriptAction_Create(__name__, "UpdateState", pShip, item, lStoppingRotation, lStoppingTranslation))
+                pSeq.AppendAction(App.TGScriptAction_Create(__name__, "UpdateState", pShip, item, lStoppingTranslation))
                 pSeq.Play()
                 
                 # iLongestTime is for the part that needs the longest time...
@@ -2394,12 +2125,19 @@ def ExitingWarp(pAction, pShip):
         
         pInstance = FoundationTech.dShips[pShip.GetName()]
         iLongestTime = 0.0
+
+        oTurrets.SetBattleTurretListenerTo(pShip, 0) # We clearly indicate we are in combat mode, but doing a thing
         IncCurrentMoveID(pShip, pInstance)
         dHardpoints = {}
         
         # first replace the Models
         PrepareShipForMove(pShip, pInstance)
         
+        warpDirty = 0
+        if pInstance.__dict__["Turret"]["Setup"].has_key("WarpReload") and pInstance.__dict__["Turret"]["Setup"]["WarpReload"] == 1:
+            #pInstance.__dict__["Turret"]["Setup"]["WarpReload"] = 0
+            warpDirty = 1
+
         for item in pInstance.OptionsList:
                 # setup is not a Turret
                 if item[0] == "Setup":
@@ -2407,7 +2145,16 @@ def ExitingWarp(pAction, pShip):
                         if item[1].has_key("WarpHardpoints"):
                                 dHardpoints = item[1]["WarpHardpoints"]
                         continue
-        
+
+                #TO-DO this is a thing for warp changes, for some reason warp changes make the models not visible, so better reload them
+                if warpDirty:
+                    print "dirty warp, we have to fix that"
+                    model = item[1]["sShipFile"]
+                    if model:
+                        ReplaceModel(item[0], model)
+                    item[0].SetHidden(0)
+
+
                 # set the id for this move
                 iThisMovID = item[1]["curMovID"][repr(pShip)] + 1
                 item[1]["curMovID"][repr(pShip)] = iThisMovID
@@ -2415,14 +2162,6 @@ def ExitingWarp(pAction, pShip):
                 fDuration = 200.0
                 if item[1].has_key("WarpDuration"):
                         fDuration = item[1]["WarpDuration"]
-                    
-                # Rotation
-                lStartingRotation = item[1]["currentRotation"][repr(pShip)]
-                lStoppingRotation = lStartingRotation
-                if item[1].has_key("AttackRotation") and pShip.GetAlertLevel() == 2:
-                                lStoppingRotation = item[1]["AttackRotation"]
-                else:
-                        lStoppingRotation = item[1]["Rotation"]
                 
                 # Translation
                 lStartingTranslation = item[1]["currentPosition"][repr(pShip)]
@@ -2434,7 +2173,7 @@ def ExitingWarp(pAction, pShip):
         
                 iTime = 0.0
                 iTimeNeededTotal = 0.0
-                oMovingEvent = MovingEvent(pShip, item, fDuration, lStartingRotation, lStoppingRotation, lStartingTranslation, lStoppingTranslation, dHardpoints)
+                oMovingEvent = MovingEvent(pShip, item, fDuration, lStartingTranslation, lStoppingTranslation, dHardpoints)
                 pSeq = App.TGSequence_Create()
                 
                 # do the move
@@ -2446,7 +2185,7 @@ def ExitingWarp(pAction, pShip):
                         pSeq.AppendAction(App.TGScriptAction_Create(__name__, "MovingAction", oMovingEvent, pShip), iWait)
                         iTimeNeededTotal = iTimeNeededTotal + iWait
                         iTime = iTime + 1
-                pSeq.AppendAction(App.TGScriptAction_Create(__name__, "UpdateState", pShip, item, lStoppingRotation, lStoppingTranslation))
+                pSeq.AppendAction(App.TGScriptAction_Create(__name__, "UpdateState", pShip, item, lStoppingTranslation))
                 pSeq.Play()
                 
                 # iLongestTime is for the part that needs the longest time...
