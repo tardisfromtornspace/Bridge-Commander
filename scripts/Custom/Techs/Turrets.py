@@ -64,17 +64,12 @@
 #    -- However, naturally, phasers using the "SimulatedPhaser" will work with advanced power control because those are actually the parent ship beams.
 # 3. Torpedo change-type and spread-type support is non-existant at the moment
 #    -- The reason for this is because, for some unexplainable reason, trying to change the ammo for a torpedo will work fine, but then when a turret torpedo of the new type collides or despawns, it causes a virtual call function error.
-# 4. For some unknown reason, when a ship gets out of warp, if the turret "WarpPosition" is too, too far, turrets become invisible - this does not affect the turret functionality, it can still fire and do actions
+# 4. For some unknown reason, when a ship gets out of warp, if the turret "WarpPosition" is too, too far, turrets become invisible - this does not affect the turret functionality at all, it can still fire and do actions.
 # 5. Turrets support AutoTargeting and MultiTargeting fine, but for some cases it may be a tiny bit wonky (including very rarely having a turret aiming at a target for a millisecond, to later on aim and fire at another). 
 #    ***Behaviour may turn out even weirder if multiple parent ship weapons are assigned to the same turret (with each one aiming at a different target)***
 # 6. For functional turrets:
 # -- Turret fire range may not totally overlap the parent ship beam range that they are covering, specially when aiming totally upwards. They cover a slighly smaller area inside the parent coverage area.
 # -- Turret fire may be very slightly delayed.
-
-# THINGS YET TO TEST FULLY
-# - Trying to warp away. Exiting or leaving the system works via other methods (Slipstream and Jumpspace).
-# ALSO TO-DO (from KCS), if you're gonna muck about with tractor beams, can you figure out how to get them off the default texture?
-# Like, pShip.GetImpulseEngineSubsystem().GetTractorBeamSystem() -> get its children and for each children TractorBeamProperty.SetTextureName("Nameoftexture???")
 
 """
 """
@@ -1414,6 +1409,32 @@ def WeaponFired(pObject, pEvent, stoppedFiring=None):
                                                         isTrBPFire = turTbpSys and wpnSystem.GetName() == turTbpSys.GetName()
                                                         if isTrBPFire:
                                                             lookandUpdateSiblingTPhasers(wpnSystem, pShip, lTurretsToFire[turret][0], 0)
+
+
+                                                ####### XPERIMENTAL AREA, TO SEE KCS' IDEA ABOUT CHANGING A TRACTOR BEAM COLOR AND TEXTURE
+                                                #tractorQ = pShip.GetImpulseEngineSubsystem().GetTractorBeamSystem()
+                                                #if tractorQ:
+                                                #        print "Wait, there's a tractor on the impulse engine?"
+                                                #        for i in range(tractorQ.GetNumChildSubsystems()):
+                                                #            pChild = tractorQ.GetChildSubsystem(i)
+                                                #            print "pChild is of type", pChild.GetObjType()
+                                                #            pChildProperty = App.TractorBeamProperty_Cast(pChild.GetProperty())
+                                                #            #print "pChild is of type", pChild.GetObjType()
+                                                #            # subsystems TractorBeamProjector -> TractorBeamProperty
+                                                #
+                                                #            kColor = App.TGColorA()
+                                                #            kColor.SetRGBA(0.900000, 0.400000, 0.000000, 1.000000)
+                                                #            pChildProperty.SetOuterShellColor(kColor)
+                                                #            kColor.SetRGBA(0.900000, 0.400000, 0.000000, 1.000000)
+                                                #            pChildProperty.SetInnerShellColor(kColor)
+                                                #            kColor.SetRGBA(0.900000, 0.400000, 0.000000, 1.000000)
+                                                #            pChildProperty.SetOuterCoreColor(kColor)
+                                                #            kColor.SetRGBA(0.900000, 0.400000, 0.000000, 1.000000)
+                                                #            pChildProperty.SetInnerCoreColor(kColor)
+                                                #            pChildProperty.SetTextureName("data/coiledTwistBeam1.tga")
+                                                #            tractorQ.SetForceUpdate(1)
+                                                #
+                                                ####### XPERIMENTAL AREA, TO SEE KCS' idea 
 
                                                 wpnSystem.StopFiring() # TO-DO Safety check for strays due to multi-targeting
                                                 wpnSystem.StartFiring(pTarget)
