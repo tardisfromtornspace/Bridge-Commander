@@ -1,4 +1,7 @@
 ==Changelog==
+1.1.0 -
+   * Updated Turrets technology 0.98 -> 0.99 (some code has been optimized, so it is less expensive to make phaser or tractor turrets)
+   * Made the T-turret hardpoint properties non-targetable (to avoid the potential "destroyed model area -> destroyed system" issue)
 1.0.9 -
    * Added Turrets technology 0.98 for the EAS Victory.
    * Added Automated Destroyed System repair 0.4 to the Vorlon vessels, the Shadow scout and battlecrab, and the First One vessels

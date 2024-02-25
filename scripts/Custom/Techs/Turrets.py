@@ -1,6 +1,6 @@
 """
 #         Turrets
-#         23rd February 2024
+#         25th February 2024
 #         Based strongly on SubModels.py by USS Defiant and their team, and AutoTargeting.py by USS Frontier.
 #         Also based slightly on AdvancedTorpedoManagement.py from BCSTB Team, the Borg Technology from Alex SL Gato, and ConditionInLineOfSight by the original STBC team
 #         Special thanks to USS Sovereign and Gizmo_3.
@@ -59,6 +59,7 @@
 #          -- Remember that the functional turret hardpoint positions and the ones with this function may not totally match (f.ex. a phaser at 0.5 forward on the turret end may actually end on the middle because the game had adjusted 
 #             the hardpoint position to somehing valid according to the turret model).
 #          -- If this is done, you cannot use the same exact hardpoint for phaser turrets (since the common phaser name could cause a conflict which on the other case would not be).
+#          -- If this is done, it is also extremely recommended to set those " T" hardpoints as non-targetable, since some visible damage shenanigans can all of a sudden decide to destroy the systems for being separated.
 #          -- Additionally, the option of "SimulatedPhaser" needs to be set to 1, that is because this faithful option is more expensive and it's better to reduce its use if the turrets do not need it.
 # 2. Weapon intensity for turret-side phasers is not currently being totally modulated to the user - it uses the main weapon control subsystem for that, not advanced power control.
 #    -- However, naturally, phasers using the "SimulatedPhaser" will work with advanced power control because those are actually the parent ship beams.
@@ -141,7 +142,7 @@ import MissionLib
 
 #################################################################################################################
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.98",
+	    "Version": "0.99",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -738,12 +739,12 @@ class MovingEvent:
                         if self.dOptionsList.has_key("SimulatedPhaser") and self.dOptionsList["SimulatedPhaser"] == 1:
                             turPhsSys = pNacelle.GetPhaserSystem()
                             if turPhsSys:
-                                lookandUpdateSiblingTPhasers(turPhsSys, pShip, pNacelle, 2)
+                                lookandUpdateSiblingTPhasers(turPhsSys, pShip, pNacelle, 2, 1)
 
                         if self.dOptionsList.has_key("SimulatedTractor") and self.dOptionsList["SimulatedTractor"] == 1:
                             turTbpSys = pNacelle.GetTractorBeamSystem()
                             if turTbpSys:
-                                lookandUpdateSiblingTPhasers(turTbpSys, pShip, pNacelle, 2)               
+                                lookandUpdateSiblingTPhasers(turTbpSys, pShip, pNacelle, 2, 0)               
 
                 # set new Translation values
                 self.iCurTransX = self.iCurTransX + self.iTransStepX
@@ -1208,12 +1209,12 @@ def WeaponFiredStop(pObject, pEvent, stoppedFiring=None):
                                             turPhsSys = lTurretsToFire[turret][0].GetPhaserSystem()
                                             isPhaserFire = turPhsSys and wpnSystem.GetName() == turPhsSys.GetName()
                                             if isPhaserFire:
-                                                lookandUpdateSiblingTPhasers(wpnSystem, pShip, lTurretsToFire[turret][0], 1)
+                                                lookandUpdateSiblingTPhasers(wpnSystem, pShip, lTurretsToFire[turret][0], 1, 1)
                                         if lTurretsToFire[turret][-2][1].has_key("SimulatedTractor") and lTurretsToFire[turret][-2][1]["SimulatedTractor"] == 1:
                                             turTbpSys = lTurretsToFire[turret][0].GetTractorBeamSystem()
                                             isTrBPFire = turTbpSys and wpnSystem.GetName() == turTbpSys.GetName()
                                             if isTrBPFire:
-                                                lookandUpdateSiblingTPhasers(wpnSystem, pShip, lTurretsToFire[turret][0], 1)
+                                                lookandUpdateSiblingTPhasers(wpnSystem, pShip, lTurretsToFire[turret][0], 1, 0)
 
                                         wpnSystem.StopFiring()
                          
@@ -1404,13 +1405,13 @@ def WeaponFired(pObject, pEvent, stoppedFiring=None):
                                                         turPhsSys = lTurretsToFire[turret][0].GetPhaserSystem()
                                                         isPhaserFire = turPhsSys and wpnSystem.GetName() == turPhsSys.GetName()
                                                         if isPhaserFire:
-                                                            lookandUpdateSiblingTPhasers(wpnSystem, pShip, lTurretsToFire[turret][0], 0)
+                                                            lookandUpdateSiblingTPhasers(wpnSystem, pShip, lTurretsToFire[turret][0], 0, 1)
 
                                                     if lTurretsToFire[turret][-2][1].has_key("SimulatedTractor") and lTurretsToFire[turret][-2][1]["SimulatedTractor"] == 1:
                                                         turTbpSys = lTurretsToFire[turret][0].GetTractorBeamSystem()
                                                         isTrBPFire = turTbpSys and wpnSystem.GetName() == turTbpSys.GetName()
                                                         if isTrBPFire:
-                                                            lookandUpdateSiblingTPhasers(wpnSystem, pShip, lTurretsToFire[turret][0], 0)
+                                                            lookandUpdateSiblingTPhasers(wpnSystem, pShip, lTurretsToFire[turret][0], 0, 0)
 
 
                                                 ####### XPERIMENTAL AREA, TO SEE KCS' IDEA ABOUT CHANGING A TRACTOR BEAM COLOR AND TEXTURE
@@ -1661,7 +1662,7 @@ def TorpedoTurretFiredTest(pObject, pEvent):
     pObject.CallNextHandler(pEvent)
     return 0
 
-def lookandUpdateSiblingTPhasers(wpnSystem, pShip, pTurret, discharge=0):
+def lookandUpdateSiblingTPhasers(wpnSystem, pShip, pTurret, discharge=0, phaser=1):
     debug(__name__ + ", lookandUpdateSiblingTPhasers")
 
     wpnSystemButPhaser = App.PhaserSystem_Cast(wpnSystem)
@@ -1669,10 +1670,13 @@ def lookandUpdateSiblingTPhasers(wpnSystem, pShip, pTurret, discharge=0):
     if not wpnSystemButPhaser:
         itsTractor = 1
         wpnSystemButPhaser = App.TractorBeamSystem_Cast(wpnSystem)
-    #    
-    #if wpnSystemButPhaser: TO-DO CHECKS FOR TRACTOR BEAMS?
+
     pShipNode = pShip.GetNiObject()
+    pTurretNode = pTurret.GetNiObject()
     
+    # 0.99 Innovation - Optimization from O(N^2) or more to 0(3N)
+    """
+    # Old 0.98 code
     for i in range(wpnSystem.GetNumChildSubsystems()):
         pChild = wpnSystem.GetChildSubsystem(i)
         if (pChild != None):
@@ -1693,6 +1697,47 @@ def lookandUpdateSiblingTPhasers(wpnSystem, pShip, pTurret, discharge=0):
                         parentSiblingBank.SetMaxCharge(-abs(parentSiblingBank.GetMaxCharge()))
                     else:
                         parentSiblingBank.SetMaxCharge(abs(parentSiblingBank.GetMaxCharge()))
+    """
+
+    systemsToChoose = {}
+
+    for i in range(wpnSystem.GetNumChildSubsystems()):
+        pChild = wpnSystem.GetChildSubsystem(i)
+        if (pChild != None):
+            newName = pChild.GetName() + " T"
+            systemsToChoose[newName] = [pChild, None]
+
+    lTurretSys = systemsToChoose.keys()
+
+    # We are only interested on phasers or tractors, we can do this even faster
+    pEnergyWeaponSubsystem = None
+    if phaser:
+        pEnergyWeaponSubsystem = pShip.GetPhaserSystem()
+    else:
+        pEnergyWeaponSubsystem = pShip.GetTractorBeamSystem()
+
+    if pEnergyWeaponSubsystem:
+        for i in range(pEnergyWeaponSubsystem.GetNumChildSubsystems()):
+            pChildM = pEnergyWeaponSubsystem.GetChildSubsystem(i)
+            if pChildM.GetName() in lTurretSys:
+                systemsToChoose[pChildM.GetName()][-1] = pChildM
+
+    for i in lTurretSys:
+        if systemsToChoose[i][-1] != None:
+            childPos = systemsToChoose[i][0].GetWorldLocation()
+            newPosition = App.TGModelUtils_WorldToLocalPoint(pShipNode, childPos)
+
+            subsystemProperty = systemsToChoose[i][-1].GetProperty()
+            oldPosition = subsystemProperty.GetPosition()
+            subsystemProperty.SetPosition(newPosition.x/100.0, newPosition.y/100.0, newPosition.z/100.0)
+                
+            if not itsTractor and discharge != 2:
+                #print "proceed to change charge "
+                parentSiblingBank = App.EnergyWeaponProperty_Cast(subsystemProperty)
+                if discharge:
+                    parentSiblingBank.SetMaxCharge(-abs(parentSiblingBank.GetMaxCharge()))
+                else:
+                    parentSiblingBank.SetMaxCharge(abs(parentSiblingBank.GetMaxCharge()))
 
 
 # called after the Alert move action
