@@ -9,6 +9,7 @@ For more details, read the licenses and readmes inside each file - I've done it 
 == Dependancies ==
 All of these must be installed before installing this mod, in this order:
 * Foundation + Kobayashi Maru + DS9FX (KM has Foundation and DS9FX already installed - the most recent version of KM, the better).
+* Turrets technology - it can be found on this Babylon 5 mod: https://www.gamefront.com/games/bridge-commander/file/stbc-babylon-5-mod
 
 == Credits ==
 * Everyone involved in Foundation - without you this would have been a real pain to do (please read the separate Foundation.txt license) - Banbury, Dasher42, DigitalFriend, MLeo, Nanobyte and Sleight42, among others
