@@ -13576,3 +13576,71 @@ Call stack:
 Address   Frame
 0041214A  0019FB20  0001:0001114A C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
 
+//=====================================================
+Current Time: Mon Feb 26 22:03:08 2024
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Wed Mar 06 00:34:24 2024
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Wed Mar 06 00:37:58 2024
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Wed Mar 06 00:40:11 2024
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Wed Mar 06 00:41:50 2024
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Wed Mar 06 01:27:39 2024
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  00585915 01:00184915 C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+Registers:
+EAX:00000003
+EBX:00000000
+ECX:00000003
+EDX:0000000C
+ESI:00000001
+EDI:00000001
+CS:EIP:0023:00585915
+SS:ESP:002B:0019FBB4  EBP:00000002
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010206
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+00585915  0019FBB4  0001:00184915 C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+//=====================================================
+Current Time: Wed Mar 06 21:38:06 2024
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Wed Mar 06 21:42:22 2024
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Wed Mar 06 21:51:46 2024
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  005F41FF 01:001F31FF C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+Registers:
+EAX:00000000
+EBX:1F2C93DC
+ECX:3C0FE740
+EDX:3F19999A
+ESI:1F2C93DC
+EDI:005F41A0
+CS:EIP:0023:005F41FF
+SS:ESP:002B:0019F95C  EBP:00000000
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010213
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+
