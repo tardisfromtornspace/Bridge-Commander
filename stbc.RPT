@@ -13644,3 +13644,18 @@ Doing stack walk
 Call stack:
 Address   Frame
 
+//=====================================================
+Current Time: Thu Mar 07 14:07:58 2024
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Thu Mar 07 14:32:06 2024
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Thu Mar 07 14:34:24 2024
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Thu Mar 07 14:39:20 2024
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Thu Mar 07 14:48:23 2024
+Exception code: C0000005 ACCESS_VIOLATION

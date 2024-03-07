@@ -1,4 +1,5 @@
 == Changelog ==
+0.2 - Adjustments to the Minotaur + Added Warp Space tech very strongly based on USS Sovereign's Slipstream
 0.1 - first unofficial version of this mod, for feedback. Very W.I.P.
 
 == What does this mod do ==
@@ -14,7 +15,7 @@ All of these must be installed before installing this mod, in this order:
 == Credits ==
 * Everyone involved in Foundation - without you this would have been a real pain to do (please read the separate Foundation.txt license) - Banbury, Dasher42, DigitalFriend, MLeo, Nanobyte and Sleight42, among others
 * Everyone involved in KM - specifically those involved in the creation of armour and Shields.py (FoundationTechnologies) and the AdvArmorTech.py - Apollo from ATP Technologies as well.
-* USS Sovereign for the Slipstreamfor advice in structures regarding monkey patching.
+* USS Sovereign for the Slipstream which got modified.
 * Original Minotaur (Yamato Battle Cruiser) model: 09williamsad on Thingiverse. Additionally their Creative Commons license and readme has been included on this pack, still as Creative Commons - Attribution.
 * Original Hyperion model: Arawn6 on Thingiverse. Additionally their Creative Commons license and readme has been included on this pack, still as Creative Commons - Attribution.
 * Alex SL Gato (aka CharaToLoki) for any new code implemented or modified - specifically the Turrets.py, the Defensive Matrix script, importing and texturing the Minotaur, some texturing of the Hyperion, and small 

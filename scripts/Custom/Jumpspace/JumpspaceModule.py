@@ -1451,11 +1451,19 @@ def HasJumpspace(pShip):
 	# No ship has 20 engines! Right?!
         while (pSystem != None):
 		if pSystem.GetName() in sJumpspaceList:
-                    pStats = pSystem.GetConditionPercentage() * 100.0
-                    if pStats >= 1.1:
-                        # What's this? Jumpspace is installed!
-                        return 'Jumpspace Installed'
-                        break
+			pStats = pSystem.GetConditionPercentage() * 100.0
+			if pStats >= 1.1:
+				# What's this? Jumpspace is installed!
+				return 'Jumpspace Installed'
+				break
+		for i in range(pSystem.GetNumChildSubsystems()):
+			pChild = pSystem.GetChildSubsystem(i)
+			if pChild.GetName() in sJumpspaceList:
+				pStats = pChild.GetConditionPercentage()
+				if pStats >= pChild.GetDisabledPercentage():
+					# What's this? Warpspace is installed!
+					return 'TimeVortex Installed'
+					break
 		pSystem = pShip.GetNextSubsystemMatch(pIterator)
 
         pShip.EndGetSubsystemMatch(pIterator)

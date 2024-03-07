@@ -1,6 +1,5 @@
 # YamatoCannon.py
 
-import App
 """
 #EXAMPLE OF USAGE, REPLACE "Phaser1" for a non-repeated name:
 from Tactical.Beams.YamatoCannon import Phaser as Phaser1
@@ -40,6 +39,7 @@ Phaser1.SetArcWidthAngles(-1.963495, 1.963495)
 Phaser1.SetArcHeightAngles(-0.098175, 2.356194)
 App.g_kModelPropertyManager.RegisterLocalTemplate(Phaser1)
 """
+import App
 
 
 

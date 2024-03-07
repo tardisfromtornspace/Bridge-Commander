@@ -204,25 +204,25 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(Torpedoes)
 #TractorBeamSystem.SetFiringChainString(kFiringChainString)
 #App.g_kModelPropertyManager.RegisterLocalTemplate(TractorBeamSystem)
 #################################################
-#PulseWeaponSystem = App.WeaponSystemProperty_Create("Pulse Weapon System")
-#
-#PulseWeaponSystem.SetMaxCondition(200.000000)
-#PulseWeaponSystem.SetCritical(0)
-#PulseWeaponSystem.SetTargetable(1)
-#PulseWeaponSystem.SetPrimary(1)
-#PulseWeaponSystem.SetPosition(0.000000, 0.000000, 0.000000)
-#PulseWeaponSystem.SetPosition2D(0.000000, 0.000000)
-#PulseWeaponSystem.SetRepairComplexity(1.000000)
-#PulseWeaponSystem.SetDisabledPercentage(0.500000)
-#PulseWeaponSystem.SetRadius(0.250000)
-#PulseWeaponSystem.SetNormalPowerPerSecond(1.000000)
-#PulseWeaponSystem.SetWeaponSystemType(PulseWeaponSystem.WST_PULSE)
-#PulseWeaponSystem.SetSingleFire(0)
-#PulseWeaponSystem.SetAimedWeapon(0)
-#kFiringChainString = App.TGString()
-#kFiringChainString.SetString("")
-#PulseWeaponSystem.SetFiringChainString(kFiringChainString)
-#App.g_kModelPropertyManager.RegisterLocalTemplate(PulseWeaponSystem)
+PulseWeaponSystem = App.WeaponSystemProperty_Create("Pulse Weapon System")
+
+PulseWeaponSystem.SetMaxCondition(200.000000)
+PulseWeaponSystem.SetCritical(0)
+PulseWeaponSystem.SetTargetable(1)
+PulseWeaponSystem.SetPrimary(1)
+PulseWeaponSystem.SetPosition(0.000000, 0.000000, 0.000000)
+PulseWeaponSystem.SetPosition2D(0.000000, 0.000000)
+PulseWeaponSystem.SetRepairComplexity(1.000000)
+PulseWeaponSystem.SetDisabledPercentage(1.500000)
+PulseWeaponSystem.SetRadius(0.250000)
+PulseWeaponSystem.SetNormalPowerPerSecond(1.000000)
+PulseWeaponSystem.SetWeaponSystemType(PulseWeaponSystem.WST_PULSE)
+PulseWeaponSystem.SetSingleFire(0)
+PulseWeaponSystem.SetAimedWeapon(0)
+kFiringChainString = App.TGString()
+kFiringChainString.SetString("")
+PulseWeaponSystem.SetFiringChainString(kFiringChainString)
+App.g_kModelPropertyManager.RegisterLocalTemplate(PulseWeaponSystem)
 #################################################
 #CloakingSystem = App.CloakingSubsystemProperty_Create("Cloaking System")
 #
@@ -350,9 +350,9 @@ def LoadPropertySet(pObj):
 	#if (prop != None):
 	#	pObj.AddToSet("Scene Root", prop)
         ### *** TO-DO UNCOMMENT WHEN NEEDED (F.EX. BECAUSE THE TURRETS MAY USE A PULSE WEAPON FIRING CHAIN) *** ###
-	#prop = App.g_kModelPropertyManager.FindByName("Pulse Weapon System", App.TGModelPropertyManager.LOCAL_TEMPLATES)
-	#if (prop != None):
-	#	pObj.AddToSet("Scene Root", prop)
+	prop = App.g_kModelPropertyManager.FindByName("Pulse Weapon System", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	if (prop != None):
+		pObj.AddToSet("Scene Root", prop)
         ### *** TO-DO UNCOMMENT WHEN NEEDED (F.EX. BECAUSE THE TURRETS MAY USE A DIFFERENT CLOAK STRENGTH OR THE PARENT USES A TECH THAT TAKES THAT INTO ACCOUNT) *** ###
 	#prop = App.g_kModelPropertyManager.FindByName("Cloaking System", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	#if (prop != None):

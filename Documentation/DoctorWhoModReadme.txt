@@ -1,4 +1,6 @@
 === Changelong ===
+1.1.3
+* Improved Jumpspace and TimeVortex technolgoy slightly.
 1.1.0 through 1.1.2
 * Improved some techs.
 1.0.9

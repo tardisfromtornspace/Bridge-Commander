@@ -1,4 +1,6 @@
 ==Changelog==
+1.1.1 -
+   * Improved Jumpspace Module.
 1.1.0 -
    * Updated Turrets technology 0.98 -> 0.99 (some code has been optimized, so it is less expensive to make phaser or tractor turrets)
    * Made the T-turret hardpoint properties non-targetable (to avoid the potential "destroyed model area -> destroyed system" issue)
