@@ -366,7 +366,7 @@ SublightEngines.SetMaxAccel(1.000000)
 SublightEngines.SetMaxAngularAccel(0.250000)
 SublightEngines.SetMaxAngularVelocity(0.300000)
 SublightEngines.SetMaxSpeed(2.620000)
-SublightEngines.SetEngineSound("SublightEngine")
+SublightEngines.SetEngineSound("FederationEngines")
 App.g_kModelPropertyManager.RegisterLocalTemplate(SublightEngines)
 #################################################
 Engine1 = App.EngineProperty_Create("Engine 1")

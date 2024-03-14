@@ -15,14 +15,11 @@ Foundation.ShipDef.StarcraftIIMinotaurDominion = Foundation.FedShipDef(abbrev, s
 # TO-DO ADJUST + ADD SOMETHIGN FOR TEH YAMATO CANNON... ACTUALLY add a tech that replenishes torps and make the yamato cannon a torp
 Foundation.ShipDef.StarcraftIIMinotaurDominion.dTechs = {
 	"Starcraft Defensive Matrix": {
-		"MatrixScale": 1.0,
+		"MatrixScale": 0.1,
 		"PowerDrain": 100,
 		"Duration": 20,
 		"Cooldown": 20,
-		"Starcraft I": {
-			"Percentage": 75,
-			"Leakage": 0.5
-		}
+		"Smartcast": 1.6
 	},
 	"AutoTargeting": { "Pulse": [12, 0] },
         'Turret': {

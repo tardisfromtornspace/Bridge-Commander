@@ -2,7 +2,10 @@
 
 """
 #EXAMPLE OF USAGE, REPLACE "Phaser1" for a non-repeated name:
-from Tactical.Beams.YamatoCannon import Phaser as Phaser1
+# TO-DO check if this works
+#from Tactical.Beams.YamatoCannon import Phaser as Phaser1
+from Tactical.Beams import YamatoCannon
+Phaser1 = YamatoCannon.returnBeam()
 
 # Necessary to change names!!!
 Phaser1.SetName("Yamato Cannon")

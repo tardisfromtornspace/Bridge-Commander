@@ -59,7 +59,7 @@ def GetLaunchSpeed():
 	return(65.0)
 
 def GetLaunchSound():
-	return("MainBattery")
+	return("SCIIYamatoCannon")
 
 def GetPowerCost():
 	return(10.0)
@@ -74,7 +74,7 @@ def GetGuidanceLifetime():
 	return 5.0
 
 def GetMaxAngularAccel():
-	return 0.425
+	return 1.425
 
 def GetLifetime():
 	return 15.0

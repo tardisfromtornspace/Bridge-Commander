@@ -59,7 +59,7 @@ def GetLaunchSpeed():
 	return(60.0)
 
 def GetLaunchSound():
-	return("MainBattery")
+	return("SCIITerranLaser")
 
 def GetPowerCost():
 	return(10.0)

@@ -78,7 +78,7 @@ def GetLaunchSpeed():
 	return(25.0)
 
 def GetLaunchSound():
-	return("MissileFire")
+	return("SCIITerranMissile")
 
 def GetPowerCost():
 	return(30.0)
