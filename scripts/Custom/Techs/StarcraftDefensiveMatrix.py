@@ -49,7 +49,7 @@ import traceback
 
 #################################################################################################################
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.38",
+	    "Version": "0.4",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -101,7 +101,8 @@ class DefensiveMatrix(FoundationTech.TechDef):
 		pWeaponFired = App.Weapon_Cast(pEvent.GetSource())
 		if pWeaponFired:
 			pShip = App.ShipClass_Cast(App.TGObject_GetTGObjectPtr(pWeaponFired.GetTargetID()))
-			pShip = App.ShipClass_GetObjectByID(None, pShip.GetObjID())
+			if pShip:
+				pShip = App.ShipClass_GetObjectByID(None, pShip.GetObjID())
 			if pShip:
 				#print "Alright, target found", pShip.GetName()
 				pShields = pShip.GetShields()
@@ -175,7 +176,7 @@ class DefensiveMatrix(FoundationTech.TechDef):
 
 								else:
 									fDamage = App.EnergyWeapon_Cast(pWeaponFired).GetMaxDamage() # phasers and tractors
-									pthisPhaser = App.PhaserProperty_Cast(pWeapon.GetProperty()) # we don't care about tractor damage radious factor
+									pthisPhaser = App.PhaserProperty_Cast(pWeaponFired.GetProperty()) # we don't care about tractor damage radious factor
 									if pthisPhaser and hasattr("GetDamageRadiusFactor"):
 										dmgRfactor = pthisPhaser.GetDamageRadiusFactor()
 										if dmgRfactor > 0.1:
@@ -490,57 +491,57 @@ def SubsystemStateChanged(pObject, pEvent):
 		wpnActiveState = 0
 		if hasattr(pEvent, "GetBool"):
 			wpnActiveState = pEvent.GetBool()
-		pShields = pShip.GetShields()
-		if pShields:
-			pInstance = findShipInstance(pShip)
-			if pInstance:
-				instanceDict = pInstance.__dict__
-				if instanceDict.has_key("Starcraft Defensive Matrix"):
-					if wpnActiveState != instanceDict["Starcraft Defensive Matrix Active"]: # Means shields have changed
-						currentTime = App.g_kUtopiaModule.GetGameTime()
-						if wpnActiveState == 0: # Shields have been deactivated:
-							instanceDict["Starcraft Defensive Matrix Active"] = 0
-							delay = instanceDict["Starcraft Defensive Matrix"]["Cooldown"]
-							instanceDict["Starcraft Defensive Matrix"]["TimeCooldown"] = currentTime + delay
+			pShields = pShip.GetShields()
+			if pShields:
+				pInstance = findShipInstance(pShip)
+				if pInstance:
+					instanceDict = pInstance.__dict__
+					if instanceDict.has_key("Starcraft Defensive Matrix"):
+						if wpnActiveState != instanceDict["Starcraft Defensive Matrix Active"]: # Means shields have changed
+							currentTime = App.g_kUtopiaModule.GetGameTime()
+							if wpnActiveState == 0: # Shields have been deactivated:
+								instanceDict["Starcraft Defensive Matrix Active"] = 0
+								delay = instanceDict["Starcraft Defensive Matrix"]["Cooldown"]
+								instanceDict["Starcraft Defensive Matrix"]["TimeCooldown"] = currentTime + delay
 
-							oDefensiveMatrix.DetachDefensiveMatrix(pShip, pInstance)
+								oDefensiveMatrix.DetachDefensiveMatrix(pShip, pInstance)
 
-							# Remove deactivation timers
-							if instanceDict["Starcraft Defensive Matrix"].has_key("TimeDeactivate"):
-								App.g_kTimerManager.DeleteTimer(instanceDict["Starcraft Defensive Matrix TimeDeactivate"].GetObjID())
-								del instanceDict["Starcraft Defensive Matrix TimeDeactivate"]
+								# Remove deactivation timers
+								if instanceDict["Starcraft Defensive Matrix"].has_key("TimeDeactivate"):
+									App.g_kTimerManager.DeleteTimer(instanceDict["Starcraft Defensive Matrix TimeDeactivate"].GetObjID())
+									del instanceDict["Starcraft Defensive Matrix TimeDeactivate"]
 
-						else: # Shields have been activated
-							if instanceDict["Starcraft Defensive Matrix"].has_key("TimeCooldown") and instanceDict["Starcraft Defensive Matrix"]["TimeCooldown"] > currentTime:
-								# We are on cooldown, cannot activate shields:
-								pShields.TurnOff()
-								pObject.CallNextHandler(pEvent)
-								return
+							else: # Shields have been activated
+								if instanceDict["Starcraft Defensive Matrix"].has_key("TimeCooldown") and instanceDict["Starcraft Defensive Matrix"]["TimeCooldown"] > currentTime:
+									# We are on cooldown, cannot activate shields:
+									pShields.TurnOff()
+									pObject.CallNextHandler(pEvent)
+									return
 
-							instanceDict["Starcraft Defensive Matrix Active"] = 1
-							global DEFENSIVE_MATRIX_DEACTIVATE
+								instanceDict["Starcraft Defensive Matrix Active"] = 1
+								global DEFENSIVE_MATRIX_DEACTIVATE
 
-							pEvent2 = App.TGIntEvent_Create()
-							pEvent2.SetEventType(DEFENSIVE_MATRIX_DEACTIVATE)
-							pEvent2.SetSource(pEvent.GetSource()) # We could fetch the parent from the subsystem pSubsystem.GetParentShip()
-							pEvent2.SetDestination(pEvent.GetDestination())
-							pEvent2.SetInt(int(pShipID)) # Or even better, fetch it from the parent ship ID
+								pEvent2 = App.TGIntEvent_Create()
+								pEvent2.SetEventType(DEFENSIVE_MATRIX_DEACTIVATE)
+								pEvent2.SetSource(pEvent.GetSource()) # We could fetch the parent from the subsystem pSubsystem.GetParentShip()
+								pEvent2.SetDestination(pEvent.GetDestination())
+								pEvent2.SetInt(int(pShipID)) # Or even better, fetch it from the parent ship ID
 
-							delay = instanceDict["Starcraft Defensive Matrix"]["Duration"]
+								delay = instanceDict["Starcraft Defensive Matrix"]["Duration"]
 
-							pTimer = App.TGTimer_Create()
-							pTimer.SetTimerStart( currentTime + delay )
-							pTimer.SetDelay(0)
-							pTimer.SetDuration(0)
-							pTimer.SetEvent(pEvent2)
-							App.g_kTimerManager.AddTimer(pTimer)
+								pTimer = App.TGTimer_Create()
+								pTimer.SetTimerStart( currentTime + delay )
+								pTimer.SetDelay(0)
+								pTimer.SetDuration(0)
+								pTimer.SetEvent(pEvent2)
+								App.g_kTimerManager.AddTimer(pTimer)
 
-							instanceDict["Starcraft Defensive Matrix TimeDeactivate"] = pTimer
+								instanceDict["Starcraft Defensive Matrix TimeDeactivate"] = pTimer
 
-							oDefensiveMatrix.AttachDefensiveMatrix(pShip, pInstance)
+								oDefensiveMatrix.AttachDefensiveMatrix(pShip, pInstance)
 
-							#print "Attempt successfull, instanceDict is ", instanceDict
-						
+								#print "Attempt successfull, instanceDict is ", instanceDict
+					
 
 
 	pObject.CallNextHandler(pEvent)

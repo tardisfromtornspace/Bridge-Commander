@@ -10,7 +10,7 @@ import App
 #######################################################################################
 #                                                                                     #
 Foundation.SoundDef("sfx/Weapons/cmissle.wav", "SCIITerranMissile", 1)
-Foundation.SoundDef("sfx/Weapons/SCIILaserShot.wav", "SCIITerranLaser", 1)
+Foundation.SoundDef("sfx/Weapons/SCIILaserShot.wav", "SCIITerranLaser", 3.0)
 Foundation.SoundDef("sfx/Weapons/SCIIYamatoCannon.wav", "SCIIYamatoCannon", 1)
 
 #                                                                                     #

@@ -1,4 +1,5 @@
 == Changelog ==
+0.4 - Defensive Matrix 0.4
 0.3 - Defensive Matrix 0.38 + added weapon sounds
 0.2 - Adjustments to the Minotaur + Added Warp Space tech very strongly based on USS Sovereign's Slipstream
 0.1 - first unofficial version of this mod, for feedback. Very W.I.P.

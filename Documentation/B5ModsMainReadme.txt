@@ -1,4 +1,6 @@
 ==Changelog==
+1.1.2 -
+   * Updated Turrets technology 0.99 -> 0.991 (now using ship's ID as a cleaner reference, and optimized code a bit)
 1.1.1 -
    * Improved Jumpspace Module.
 1.1.0 -
