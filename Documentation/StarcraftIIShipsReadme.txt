@@ -24,7 +24,7 @@ All of these must be installed before installing this mod, in this order:
 tweaks to other scripts.
 * Sounds:
 ** SCIITerranLaser, SCIIYamatoCannon, from here https://pixabay.com/sound-effects/search/space%20shooting/ combined with YT recordings of Starcraft II by Blizzard Entertainment.
-** cmissle.wav - found on my isntall, probably from one of several Star Wars mods (unfortunately cannot find which one)
+** cmissle.wav - found on my install, probably from one of several Star Wars mods (unfortunately cannot find which one)
 * For more details, read the licenses and readmes inside each file.
 
 Fulfilling both the SDK and LGPL licenses:
