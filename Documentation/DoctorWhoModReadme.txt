@@ -1,4 +1,6 @@
 === Changelong ===
+1.1.4
+* Improved Simulated Point Defence to 0.91, avoiding a singleton issue.
 1.1.3
 * Improved Jumpspace and TimeVortex technolgoy slightly.
 1.1.0 through 1.1.2

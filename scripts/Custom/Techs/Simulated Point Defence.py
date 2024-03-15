@@ -2,8 +2,8 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
 #         Simulated Point Defence.py by Alex SL Gato
-#         Version 0.9
-#         8th September 2023
+#         Version 0.91
+#         15th March 2024
 #         Based strongly on DampeningAOEDefensiveField.py by Alex Sl Gato, which was based on scripts\Custom\DS9FX\DS9FXPulsarFX\PulsarManager by USS Sovereign, and slightly on TractorBeams.py, Inversion Beam and Power Drain Beam 1.0 by MLeo Daalder, Apollo, and Dasher; some team-switching torpedo by LJ; and GraviticLance by Alex SL Gato, which was based on FiveSecsGodPhaser by USS Frontier, scripts/ftb/Tech/TachyonProjectile by the FoundationTechnologies team, and scripts/ftb/Tech/FedAblativeArmour by the FoundationTechnologies team.
 #         Also based strongly on PointDefence.py by Defiant
 #################################################################################################################
@@ -41,7 +41,7 @@ from bcdebug import debug
 import traceback
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-            "Version": "0.8",
+            "Version": "0.91",
             "License": "LGPL",
             "Description": "Read the small title above for more info"
             }
@@ -127,9 +127,13 @@ try:
 			if pInstance == None:
 				return
 
+			del pInstance.__dict__['Simulated Point Defence Mine']
+
 			if pAllShipsWithTheTech.has_key(pInstance):
 				print "key found, to remove ", pInstance
+
 				del pAllShipsWithTheTech[pInstance]
+
 			pShip = App.ShipClass_Cast(App.TGObject_GetTGObjectPtr(pInstance.pShipID))
 			if pShip != None:
 				dMasterDict = pInstance.__dict__['Simulated Point Defence']
@@ -165,6 +169,7 @@ try:
 				pShip = App.ShipClass_Cast(App.TGObject_GetTGObjectPtr(pInstance.pShipID))
 			if pShip != None and pInstance != None:
 				dMasterDict = pInstance.__dict__['Simulated Point Defence']
+				del pInstance.__dict__['Simulated Point Defence Mine']
 			else:
 				print "SimulatedPointDefence Error (at Detach): couldn't acquire ship"
 				if pInstance != None:
@@ -211,8 +216,11 @@ try:
 			if not pInstance.__dict__['Simulated Point Defence'].has_key("Period"):
 				pInstance.__dict__['Simulated Point Defence']["Period"] = defaultPeriod
 
-			if not pInstance.__dict__['Simulated Point Defence'].has_key("TimeRemaining"):
-				pInstance.__dict__['Simulated Point Defence']["TimeRemaining"] = 0.0
+			if not pInstance.__dict__.has_key('Simulated Point Defence Mine'):
+				pInstance.__dict__['Simulated Point Defence Mine'] = {}
+
+			if not pInstance.__dict__['Simulated Point Defence Mine'].has_key("TimeRemaining"):
+				pInstance.__dict__['Simulated Point Defence Mine']["TimeRemaining"] = 0.0
 
 			
 			try:
@@ -233,12 +241,12 @@ try:
 				if energyCommited < 0.5:
 					energyCommited = 0.5
 
-			pInstance.__dict__['Simulated Point Defence']["TimeRemaining"] = pInstance.__dict__['Simulated Point Defence']["TimeRemaining"] - defaultSlice * energyCommited
+			pInstance.__dict__['Simulated Point Defence Mine']["TimeRemaining"] = pInstance.__dict__['Simulated Point Defence Mine']["TimeRemaining"] - defaultSlice * energyCommited
 
-			if pInstance.__dict__['Simulated Point Defence']["TimeRemaining"] > 0:	
+			if pInstance.__dict__['Simulated Point Defence Mine']["TimeRemaining"] > 0:	
 				return
 			else:
-				pInstance.__dict__['Simulated Point Defence']["TimeRemaining"] = pInstance.__dict__['Simulated Point Defence']["Period"]
+				pInstance.__dict__['Simulated Point Defence Mine']["TimeRemaining"] = pInstance.__dict__['Simulated Point Defence']["Period"]
 
 			pSet = pShip.GetContainingSet()
 			if not pSet:

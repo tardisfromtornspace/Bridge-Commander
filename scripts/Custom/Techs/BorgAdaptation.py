@@ -1,6 +1,6 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
-# 13th January 2024, by Alex SL Gato (CharaToLoki), partially based on the Shield.py script by the Foundation Technologies team and Dasher42's Foundation script, and the FedAblativeArmor.py found in scripts/ftb/Tech in KM 2011.10
+# 15th March 2024, by Alex SL Gato (CharaToLoki), partially based on the Shield.py script by the Foundation Technologies team and Dasher42's Foundation script, and the FedAblativeArmor.py found in scripts/ftb/Tech in KM 2011.10
 #
 # TODO: 1. Create Read Me
 #	2. Create a clear guide on how to add this...
@@ -59,7 +59,7 @@ Foundation.ShipDef.Ambassador.dTechs = {
 
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "1.3",
+	    "Version": "1.31",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -709,8 +709,10 @@ def findShipInstance(pShip):
 			print "After looking, no pInstance for ship:", pShip.GetName(), "How odd..."
 		
 	except:
-		print "Error while looking for pInstance for Borg technology:"
-		traceback.print_exc()
+		#print "Error while looking for pInstance for Borg technology:"
+		#traceback.print_exc()
+		pass
+
 		
 	#finally:
 	return pInstance

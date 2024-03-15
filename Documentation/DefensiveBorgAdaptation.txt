@@ -1,4 +1,6 @@
 == Changelog ==
+1.8 - Borg Adapttion script 1.31
+- Bugfix related with findShipInstance
 1.7 - Automated Destroyed System Repair 0.4
 - Bugfix where an error could lead to a random ship possibly gaining part of these repairs where it shouldn't.
 - Improved cleanup.

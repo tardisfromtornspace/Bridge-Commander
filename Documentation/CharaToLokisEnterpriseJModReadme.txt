@@ -1,4 +1,7 @@
 == Changelog ==
+1.0.6 to 1.0.9 - Bug fixing
+ * Refined armour even more and fixed a same-name potential issue
+ * Refined Simulated Point Defense to avoid editing a singleton.
 1.0.5 - Bug Fixing
  * Energy armour had a bug in an outlier condition, now it has been tackled. Thanks Grey for noticing it out!
 1.0.4 - Bug Fixing
