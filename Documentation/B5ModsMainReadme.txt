@@ -1,4 +1,13 @@
 ==Changelog==
+1.1.4 -
+   Fix to Automated Destroyed System Repair documentation, clarified as 0.51
+1.1.3 -
+   New Features:
+   * Whitestars and Bluestars gained Automated Destroyed System Repair... but veeeeery slow.
+   Bug Fixes:
+   * Updated Automated Destroyed System Repair to 0.5.
+	- Bugfix about singletons.
+	- Bugfix/workaround around pShip.RemoveVisibleDamage() bug that the .exe has.
 1.1.2 -
    * Updated Turrets technology 0.99 -> 0.991 (now using ship's ID as a cleaner reference, and optimized code a bit)
 1.1.1 -

@@ -37,6 +37,8 @@ credits = {
 # automatically generated the proper ShipDef Line for you.                            #
 #                                                                                     #
 Foundation.ShipDef.bluestar = Foundation.FedShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
+
+Foundation.ShipDef.bluestar.dTechs = {'Automated Destroyed System Repair': {"Time": 1800.0}}
 #                                                                                     #
 #######################################################################################
 #                                                                                     #
