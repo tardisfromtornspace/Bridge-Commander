@@ -36,7 +36,6 @@ def GetName():
 
 # Creates menus
 def CreateMenu(pOptionPane, pContentPanel, bGameEnded = 0):
-        print "I got called to create the Warpspace menus"
         CreateGFXOptions(pOptionPane, pContentPanel)
         CreateMiscOptions(pOptionPane, pContentPanel)
         CreateAdditionalOptions(pOptionPane, pContentPanel)
