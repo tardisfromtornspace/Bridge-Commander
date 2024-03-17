@@ -1,6 +1,6 @@
 """
 #         Starcraft Defensive Matrix
-#         14th March 2024
+#         17th March 2024
 #         Based strongly on Shields.py by the FoundationTech team (and QuickBattleAddon.corboniteReflector() in Apollo's Advanced Technologies) and Turrets.py by Alex SL Gato, and based on SubModels by USS Defiant and their team.
 #################################################################################################################
 # This tech gives a ship a Defensive Matrix like on Starcraft.
@@ -49,7 +49,7 @@ import traceback
 
 #################################################################################################################
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.4",
+	    "Version": "0.5",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -111,7 +111,7 @@ class DefensiveMatrix(FoundationTech.TechDef):
 					if pInstance:
 						instanceDict = pInstance.__dict__
 						#print "pInstance dict: ", instanceDict
-						if instanceDict.has_key("Starcraft Defensive Matrix") and instanceDict["Starcraft Defensive Matrix Active"] == 0: # to-do all those [pShip.GetObjID()] are 0.3 temporary patches
+						if instanceDict.has_key("Starcraft Defensive Matrix") and instanceDict["Starcraft Defensive Matrix Active"] == 0:
 							#print "Alright, shields inactive"
 							pHull = pShip.GetHull()
 							pCore = pShip.GetPowerSubsystem()
@@ -177,7 +177,7 @@ class DefensiveMatrix(FoundationTech.TechDef):
 								else:
 									fDamage = App.EnergyWeapon_Cast(pWeaponFired).GetMaxDamage() # phasers and tractors
 									pthisPhaser = App.PhaserProperty_Cast(pWeaponFired.GetProperty()) # we don't care about tractor damage radious factor
-									if pthisPhaser and hasattr("GetDamageRadiusFactor"):
+									if pthisPhaser and hasattr(pthisPhaser, "GetDamageRadiusFactor"):
 										dmgRfactor = pthisPhaser.GetDamageRadiusFactor()
 										if dmgRfactor > 0.1:
 											fDamage = fDamage * dmgRfactor
@@ -205,13 +205,12 @@ class DefensiveMatrix(FoundationTech.TechDef):
 
 	def OnDefense(self, pShip, pInstance, oYield, pEvent):
 		debug(__name__ + ", OnDefense")
-		# TO-DO ADD DEFENSIVE MATRIX MODEL TO THE SHIP AS IF ATTACHED, PLUS LISTENING TO SHIELDS UP AND DOWN
 
 		pShields = pShip.GetShields()
 
 		if pShields and pInstance:
 			instanceDict = pInstance.__dict__
-			if instanceDict.has_key("Starcraft Defensive Matrix") and instanceDict["Starcraft Defensive Matrix"].has_key(pShip.GetObjID()) and instanceDict["Starcraft Defensive Matrix"].has_key("Active") and instanceDict["Starcraft Defensive Matrix Active"] == 0:
+			if instanceDict.has_key("Starcraft Defensive Matrix") and instanceDict.has_key("Starcraft Defensive Matrix Active") and instanceDict["Starcraft Defensive Matrix Active"] == 0:
 				pHull = pShip.GetHull()
 				pCore = pShip.GetPowerSubsystem()
 				smartcastmult = instanceDict["Starcraft Defensive Matrix"]["Smartcast"]
@@ -231,10 +230,8 @@ class DefensiveMatrix(FoundationTech.TechDef):
 
 				for shieldDir in range(App.ShieldClass.NUM_SHIELDS):
 					pShields.SetCurShields(shieldDir,pShieldTotal/6.0)  		#Redistribute shields equally
-			
-				#If the option "Starcraft I" exists, then we add a random chance for the hull to receive 0.5 damage if the hull was not hit
-				#TO-DO MAYBE IS IT NECESSARY TO ENSURE SYSTEMS ARE NOT DAMAGED? ADD THINGS THAT  MAKE THE SHIP IMMORTAL AND OTHER SUBSYSTEMS IN RANGE ARE NOT HURT?
-				if (not pEvent.IsHullHit()) and instanceDict.has_key("Starcraft Defensive Matrix") and instanceDict["Starcraft Defensive Matrix"].has_key(pShip.GetObjID()) and instanceDict["Starcraft Defensive Matrix"].has_key("Starcraft I") and instanceDict["Starcraft Defensive Matrix"]["Starcraft I"].has_key("Percentage") and instanceDict["Starcraft Defensive Matrix"]["Starcraft I"]["Percentage"] > 0.0:
+
+				if (not pEvent.IsHullHit()) and instanceDict.has_key("Starcraft Defensive Matrix") and instanceDict["Starcraft Defensive Matrix"].has_key("Starcraft I") and instanceDict["Starcraft Defensive Matrix"]["Starcraft I"].has_key("Percentage") and instanceDict["Starcraft Defensive Matrix"]["Starcraft I"]["Percentage"] > 0.0:
 					pHull = pShip.GetHull()
                         	        if pHull and App.g_kSystemWrapper.GetRandomNumber(100) <= instanceDict["Starcraft Defensive Matrix"]["Starcraft I"]["Percentage"]:
 						global defaultLeakage
@@ -380,8 +377,6 @@ class DefensiveMatrix(FoundationTech.TechDef):
 			pShip.AddPythonFuncHandlerForInstance(App.ET_SUBSYSTEM_STATE_CHANGED, __name__ + ".SubsystemStateChanged")
 
 			instanceDict = pInstance.__dict__
-			#instanceDict["Starcraft Defensive Matrix"][pShip.GetObjID()] = {} # Because the game is being obnoxious and for some reason it is forcing all the pInstances I have to have same values - dumb!
-			# TO-DO ASK WHY THAT IS HAPPENING TO FIX THAT AND MAKE THE SCRIPT MORE EFFICIENT!
 
 			pShields = pShip.GetShields()
 			if pShields:
@@ -419,25 +414,6 @@ class DefensiveMatrix(FoundationTech.TechDef):
 					global defaultLeakage
 					instanceDict["Starcraft Defensive Matrix"]["Starcraft I"]["Leakage"] = defaultLeakage
 
-			#### TO-DO 0.3 TEMPORARY PATCH BELOW ####
-			"""
-			instanceDict["Starcraft Defensive Matrix"][pShip.GetObjID()]["MatrixScale"] = instanceDict["Starcraft Defensive Matrix"]["MatrixScale"]
-
-			instanceDict["Starcraft Defensive Matrix"][pShip.GetObjID()]["PowerDrain"] = instanceDict["Starcraft Defensive Matrix"]["PowerDrain"]
-
-			instanceDict["Starcraft Defensive Matrix"][pShip.GetObjID()]["Duration"] = instanceDict["Starcraft Defensive Matrix"]["Duration"]
-
-			instanceDict["Starcraft Defensive Matrix"][pShip.GetObjID()]["Cooldown"] = instanceDict["Starcraft Defensive Matrix"]["Cooldown"]
-
-			instanceDict["Starcraft Defensive Matrix"][pShip.GetObjID()]["Smartcast"] = instanceDict["Starcraft Defensive Matrix"]["Smartcast"]
-
-			if instanceDict["Starcraft Defensive Matrix"].has_key("Starcraft I"):
-				instanceDict["Starcraft Defensive Matrix"][pShip.GetObjID()]["Starcraft I"] = {}
-				instanceDict["Starcraft Defensive Matrix"][pShip.GetObjID()]["Starcraft I"]["Percentage"] = instanceDict["Starcraft Defensive Matrix"]["Starcraft I"]["Percentage"]
-				instanceDict["Starcraft Defensive Matrix"][pShip.GetObjID()]["Starcraft I"]["Leakage"] = instanceDict["Starcraft Defensive Matrix"]["Starcraft I"]["Leakage"]
-			"""
-			#### TO-DO 0.3 TEMPORARY PATCH ABOVE ####
-
 		#print 'Attaching Starcraft II Terran Defensive Matrix to', pInstance, instanceDict
 
 	def DetachShip(self, pShip, pInstance):
@@ -446,9 +422,9 @@ class DefensiveMatrix(FoundationTech.TechDef):
 		if pShip != None:
 			pShip.RemoveHandlerForInstance(App.ET_SUBSYSTEM_STATE_CHANGED, __name__ + ".SubsystemStateChanged")
 			App.g_kTimerManager.DeleteTimer(pInstance.__dict__["Starcraft Defensive Matrix TimeDeactivate"].GetObjID())
-			#del pInstance.__dict__["Starcraft Defensive Matrix"][pShip.GetObjID()] # TO-DO 0.3 temporary fix
 			del pInstance.__dict__["Starcraft Defensive Matrix TimeDeactivate"]
-			del pInstance.__dict__["Starcraft Defensive Matrix"]
+			del pInstance.__dict__["Starcraft Defensive Matrix TimeCooldown"]
+			del pInstance.__dict__["Starcraft Defensive Matrix Active"]
 		else:
 			#print "StarcraftDefensiveMatrix Error (at Detach): couldn't acquire ship of id", pInstance.pShipID
 			pass
@@ -502,17 +478,17 @@ def SubsystemStateChanged(pObject, pEvent):
 							if wpnActiveState == 0: # Shields have been deactivated:
 								instanceDict["Starcraft Defensive Matrix Active"] = 0
 								delay = instanceDict["Starcraft Defensive Matrix"]["Cooldown"]
-								instanceDict["Starcraft Defensive Matrix"]["TimeCooldown"] = currentTime + delay
+								instanceDict["Starcraft Defensive Matrix TimeCooldown"] = currentTime + delay
 
 								oDefensiveMatrix.DetachDefensiveMatrix(pShip, pInstance)
 
 								# Remove deactivation timers
-								if instanceDict["Starcraft Defensive Matrix"].has_key("TimeDeactivate"):
+								if instanceDict.has_key("Starcraft Defensive Matrix TimeDeactivate"):
 									App.g_kTimerManager.DeleteTimer(instanceDict["Starcraft Defensive Matrix TimeDeactivate"].GetObjID())
 									del instanceDict["Starcraft Defensive Matrix TimeDeactivate"]
 
 							else: # Shields have been activated
-								if instanceDict["Starcraft Defensive Matrix"].has_key("TimeCooldown") and instanceDict["Starcraft Defensive Matrix"]["TimeCooldown"] > currentTime:
+								if instanceDict.has_key("Starcraft Defensive Matrix TimeCooldown") and instanceDict["Starcraft Defensive Matrix TimeCooldown"] > currentTime:
 									# We are on cooldown, cannot activate shields:
 									pShields.TurnOff()
 									pObject.CallNextHandler(pEvent)
