@@ -146,7 +146,7 @@ import MissionLib
 
 #################################################################################################################
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.994",
+	    "Version": "0.995",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -1212,16 +1212,15 @@ def findShipInstance(pShip):
         debug(__name__ + ", findShipInstance")
         pInstance = None
         try:
-                if not pShip:
-                        return pInstance
+            if not pShip:
+                return pInstance
+            if FoundationTech.dShips.has_key(pShip.GetName()):
                 pInstance = FoundationTech.dShips[pShip.GetName()]
-                if pInstance == None:
-                        print "After looking, no pInstance for ship:", pShip.GetName(), "How odd..."
-                
+            #if pInstance == None:
+            #        print "After looking, no pInstance for ship:", pShip.GetName(), "How odd..."
         except:
-                print "Error while looking for pInstance for Turret technology:"
-                traceback.print_exc()
-                
+            pass
+
         return pInstance
 
 def CheckLOS(pObject1, pObject2, pObjectInBetween, pSet):

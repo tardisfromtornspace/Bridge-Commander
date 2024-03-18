@@ -1,6 +1,18 @@
 ==Changelog==
+1.1.6 -
+   New Features:
+   * Increased arc width and height of three of the Victory-class beams for better coverage.
+   Bug Fixes:
+   * Updated Turrets technology to 0.995.
+	- Adapted script to avoid editing the singleton as much as possible.
+	- Now this tech is even more stable.
+	- Upon discovery that the pInstance is not calling cleanup for this tech upon Detach or DetachShip, an improvised and improved manual cleaning method has been added, that should mitigate the issue.
+1.1.5 -
+   New features:
+   * Subtle buff to Warlock's Aegis Particle Beam cannons.
+   * Made such beams a bit lighter.
 1.1.4 -
-   Fix to Automated Destroyed System Repair documentation, clarified as 0.51
+   Fix to Automated Destroyed System Repair documentation, clarified as 0.51.
 1.1.3 -
    New Features:
    * Whitestars and Bluestars gained Automated Destroyed System Repair... but veeeeery slow.
