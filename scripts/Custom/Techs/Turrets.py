@@ -146,7 +146,7 @@ import MissionLib
 
 #################################################################################################################
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.995",
+	    "Version": "0.996",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -798,6 +798,8 @@ class MovingEvent:
                         #print "Moving Error: Lost MAIN part"
                         return 0
 
+                if not hasattr(self, "iNacelleID"):
+                        return 0
                 pNacelle = App.ShipClass_GetObjectByID(None, self.iNacelleID)
                 if not pNacelle:
                         #print "Moving Error: Lost part"

@@ -1,4 +1,7 @@
 ==Changelog==
+1.1.7 -
+   Bug Fixes:
+   * Updated Turrets technology to 0.996, it should be even more clean on the console now.
 1.1.6 -
    New Features:
    * Increased arc width and height of three of the Victory-class beams for better coverage.
