@@ -1,5 +1,7 @@
 This mod is a modification on an older mod I could not remember. The older mod had mostly normal technologies, moved by warp drive and had an energy shield. This change intends to make it more canon
 == Changelog ==
+1.1.1 - Features
+ * Fixed battle blades color and added the two lower battle blades.
 1.1.0 - Bug Fixing
  * Upgraded Simulated Point Defence to 0.91, removing a potential issue with singletons.
 1.0.9 - Bug Fixing
