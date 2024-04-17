@@ -24,8 +24,9 @@ Foundation.ShipDef.MinbariNial.desc = "The Nial class heavy fighter was the prim
 # Yeah, we know pollycristalline armour and polarized plating are NOT the same, but the code for both is similar enough for our purposes 
 # I have been thinking of adding an stealth system that makes fire innacurate when firing... but who needs that with Kobayashi Maru's phaser innacuracy lol.
 Foundation.ShipDef.MinbariNial.dTechs = {
-	'Polarized Hull Plating': { "Plates": ["PolyCrystalline Armour"]
-}}
+	'Polarized Hull Plating': { "Plates": ["PolyCrystalline Armour"]},
+	'Simulated Point Defence' : { "Distance": 10.0, "InnerDistance": 3.0, "Effectiveness": 0.8, "LimitTurn": 4.5, "LimitSpeed": 65, "LimitDamage": "-150", "Period": 0.5, "MaxNumberTorps": 2, "Pulse": {"Priority": 1}}
+}
 
 
 if menuGroup:           Foundation.ShipDef.MinbariNial.RegisterQBShipMenu(menuGroup)

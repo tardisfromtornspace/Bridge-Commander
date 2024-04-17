@@ -38,7 +38,10 @@ credits = {
 # automatically generated the proper ShipDef Line for you.                            #
 #                                                                                     #
 Foundation.ShipDef.B5TechnomageTransportIllusion = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
-Foundation.ShipDef.B5TechnomageTransportIllusion.dTechs = { "Phase Cloak": 10 }
+Foundation.ShipDef.B5TechnomageTransportIllusion.dTechs = {
+	"Phase Cloak": 10,
+	'Simulated Point Defence' : { "Distance": 75.0, "InnerDistance": 40.0, "Effectiveness": 0.92, "LimitTurn": 8.6, "LimitSpeed": 75, "LimitDamage": "-250", "Period": 1.0, "MaxNumberTorps": 1, "Pulse": {"Priority": 1}}
+}
 
 #                                                                                     #
 #######################################################################################

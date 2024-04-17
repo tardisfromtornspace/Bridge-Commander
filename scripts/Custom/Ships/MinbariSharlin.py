@@ -24,8 +24,8 @@ Foundation.ShipDef.MinbariSharlin.fMaxWarp = 9.99 + 0.0001
 Foundation.ShipDef.MinbariSharlin.fCruiseWarp = 6 + 0.0001
 Foundation.ShipDef.MinbariSharlin.dTechs = {
 	'Regenerative Shields': 20,
-	'Fed Ablative Armor': { "Plates": ["PolyCrystalline Armour"]
-}}
+	'Fed Ablative Armor': { "Plates": ["PolyCrystalline Armour"]}
+}
 
 
 if menuGroup:           Foundation.ShipDef.MinbariSharlin.RegisterQBShipMenu(menuGroup)

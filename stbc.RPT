@@ -13938,3 +13938,152 @@ Exception code: C0000005 ACCESS_VIOLATION
 //=====================================================
 Current Time: Mon Mar 18 22:06:36 2024
 Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Wed Apr 17 15:31:48 2024
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  00410112 01:0000F112 C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+Registers:
+EAX:00000001
+EBX:3D800000
+ECX:3F800000
+EDX:1ECD7C2C
+ESI:15AFFC60
+EDI:1F2B841C
+CS:EIP:0023:00410112
+SS:ESP:002B:0019FC0C  EBP:00000000
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010202
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+
+//=====================================================
+Current Time: Wed Apr 17 15:47:57 2024
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  00585915 01:00184915 C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+Registers:
+EAX:00000003
+EBX:00000000
+ECX:00000003
+EDX:0000000C
+ESI:00000001
+EDI:00000001
+CS:EIP:0023:00585915
+SS:ESP:002B:0019FBB4  EBP:00000002
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010206
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+00585915  0019FBB4  0001:00184915 C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+//=====================================================
+Current Time: Wed Apr 17 15:55:21 2024
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  0041011F 01:0000F11F C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+Registers:
+EAX:02BE8F04
+EBX:3D800000
+ECX:004C0002
+EDX:AE8D008E
+ESI:154F4540
+EDI:2396DB8C
+CS:EIP:0023:0041011F
+SS:ESP:002B:0019FC08  EBP:00000001
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010202
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+0041011F  0019FC3C  0001:0000F11F C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+//=====================================================
+Current Time: Wed Apr 17 15:57:49 2024
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  0041011C 01:0000F11C C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+Registers:
+EAX:02C499B4
+EBX:3D800000
+ECX:00000002
+EDX:00893194
+ESI:1449A070
+EDI:1F831ECC
+CS:EIP:0023:0041011C
+SS:ESP:002B:0019FC0C  EBP:00000008
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010202
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+0041011C  0019FC3C  0001:0000F11C C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+//=====================================================
+Current Time: Wed Apr 17 16:01:41 2024
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  0041011C 01:0000F11C C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+Registers:
+EAX:37111184
+EBX:3D800000
+ECX:00000002
+EDX:00893194
+ESI:1408CAC0
+EDI:1F1B0CF8
+CS:EIP:0023:0041011C
+SS:ESP:002B:0019FC0C  EBP:00000007
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010202
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+0041011C  0019FC24  0001:0000F11C C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+//=====================================================
+Current Time: Wed Apr 17 17:15:49 2024
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  0041214A 01:0001114A C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+Registers:
+EAX:0019FB38
+EBX:140E9AF8
+ECX:00000000
+EDX:00898984
+ESI:13F0FD44
+EDI:00000000
+CS:EIP:0023:0041214A
+SS:ESP:002B:0019FAE8  EBP:37D7D73C
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010202
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+0041214A  0019FBB8  0001:0001114A C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+//=====================================================
+Current Time: Wed Apr 17 20:36:37 2024
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Wed Apr 17 21:08:31 2024
+Exception code: C0000005 ACCESS_VIOLATION

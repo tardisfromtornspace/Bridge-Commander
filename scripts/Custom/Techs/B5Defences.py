@@ -1,3 +1,12 @@
+#################################################################################################################
+# THIS FILE IS NOT SUPPORTED BY ACTIVISION
+# THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
+#         B5Defences.py by Alex SL Gato
+#         Version 1.01
+#         17th April 2024
+#         Based strongly on Shields.py by the FoundationTechnologies team, and ATPFunctions by Apollo.
+#################################################################################################################
+
 from bcdebug import debug
 
 import App
@@ -9,6 +18,12 @@ import FoundationTech
 
 
 from ftb.Tech.ATPFunctions import *
+
+MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
+            "Version": "1.01",
+            "License": "LGPL",
+            "Description": "Read the small title above for more info"
+            }
 
 NonSerializedObjects = (
 "oGridDefense",
@@ -33,9 +48,7 @@ class GridDef(FoundationTech.TechDef):
 		if pTorp and hasattr(pTorp, "SetLifetime"):
 			pTorp.SetLifetime(0.0)
 		fDamage = pEvent.GetDamage() #The power to reflect the weapon causes damage, 10% of the original damage
-		print "distribute"
 		ShieldDistributePos(pShip,fDamage)
-		print "distribute done"
 
 		return 1	# Meaning no more defense functions are necessary.
 
@@ -56,9 +69,7 @@ class GridDef(FoundationTech.TechDef):
 		if pTorp and hasattr(pTorp, "SetLifetime"):
 			pTorp.SetLifetime(0.0)
 		fDamage = pEvent.GetDamage() #The power to reflect the weapon causes damage, 10% of the original damage
-		print "distribute"
 		ShieldDistributePos(pShip,fDamage)
-		print "distribute done"
 
 		return 1	# Meaning no more defense functions are necessary. 
 

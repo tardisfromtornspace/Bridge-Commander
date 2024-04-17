@@ -41,7 +41,8 @@ credits = {
 Foundation.ShipDef.EANova = Foundation.FedShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu, "SubSubMenu": SubSubMenu })
 
 Foundation.ShipDef.EANova.dTechs = {
-	'Defense Grid': 130
+	'Defense Grid': 130,
+	'Simulated Point Defence' : { "Distance": 60.0, "InnerDistance": 15.0, "Effectiveness": 0.7, "LimitTurn": 0.5, "LimitSpeed": 65, "LimitDamage": "650", "Period": 1.0, "MaxNumberTorps": 3, "Pulse": {"Priority": 1}},
 }
 #                                                                                     #
 #######################################################################################

@@ -42,7 +42,8 @@ Foundation.ShipDef.EAOmegaX = Foundation.ShipDef(abbrev, species, { 'name': long
 Foundation.ShipDef.EAOmegaX.dTechs = {
 	"AutoTargeting": { "Phaser": [3, 1] },
 	'Defense Grid': 150,
-        'Shadow Dispersive Hull': 1
+        'Shadow Dispersive Hull': 1,
+	'Simulated Point Defence' : { "Distance": 60.0, "InnerDistance": 15.0, "Effectiveness": 0.8, "LimitTurn": 0.5, "LimitSpeed": 75, "LimitDamage": "650", "Period": 1.0, "MaxNumberTorps": 3, "Phaser": {"Priority": 1}, "Pulse": {"Priority": 2}},
 }
 #                                                                                     #
 #######################################################################################

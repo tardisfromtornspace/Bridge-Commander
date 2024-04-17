@@ -41,7 +41,8 @@ credits = {
 Foundation.ShipDef.EAHyperion = Foundation.FedShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu, "SubSubMenu": SubSubMenu })
 
 Foundation.ShipDef.EAHyperion.dTechs = {
-	'Defense Grid': 100
+	'Defense Grid': 100,
+	'Simulated Point Defence' : { "Distance": 75.0, "InnerDistance": 10.0, "Effectiveness": 0.9, "LimitTurn": 0.7, "LimitSpeed": 75, "LimitDamage": "400", "Period": 0.6, "MaxNumberTorps": 4, "Pulse": {"Priority": 1}}
 }
 #                                                                                     #
 #######################################################################################

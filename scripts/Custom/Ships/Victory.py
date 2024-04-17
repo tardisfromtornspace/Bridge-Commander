@@ -42,6 +42,7 @@ Foundation.ShipDef.Victory.dTechs = {
 	'Regenerative Shields': 30,
 	"AutoTargeting": { "Phaser": [3, 1] },
 	'Polarized Hull Plating': { "Plates": ["PlastiCrystalline Armour"]},
+	'Simulated Point Defence' : { "Distance": 75.0, "InnerDistance": 12.0, "Effectiveness": 0.9, "LimitTurn": 0.9, "LimitSpeed": 75, "LimitDamage": "-450", "Period": 2.0, "MaxNumberTorps": 4, "Phaser": {"Priority": 2}, "Pulse": {"Priority": 1}},
         'Turret': {
         "Setup":        {
                 "Body":                 shipFile,

@@ -42,7 +42,8 @@ Foundation.ShipDef.EAOmega = Foundation.FedShipDef(abbrev, species, { 'name': lo
 
 Foundation.ShipDef.EAOmega.dTechs = {
 	"AutoTargeting": { "Phaser": [3, 1] },
-	'Defense Grid': 150
+	'Defense Grid': 150,
+	'Simulated Point Defence' : { "Distance": 60.0, "InnerDistance": 15.0, "Effectiveness": 0.8, "LimitTurn": 0.5, "LimitSpeed": 75, "LimitDamage": "650", "Period": 1.2, "MaxNumberTorps": 2, "Pulse": {"Priority": 1}},
 }
 #                                                                                     #
 #######################################################################################
