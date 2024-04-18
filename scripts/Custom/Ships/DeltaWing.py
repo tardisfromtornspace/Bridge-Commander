@@ -40,7 +40,7 @@ credits = {
 Foundation.ShipDef.DeltaWing = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
 
 Foundation.ShipDef.DeltaWing.dTechs = {
-	'Simulated Point Defence' : { "Distance": 10.0, "InnerDistance": 3.0, "Effectiveness": 0.6, "LimitTurn": 8.5, "LimitSpeed": 65, "LimitDamage": "-150", "Period": 0.5, "MaxNumberTorps": 1, "Pulse": {"Priority": 1}}
+	'Simulated Point Defence' : { "Distance": 10.0, "InnerDistance": 3.0, "Effectiveness": 0.6, "LimitTurn": 8.5, "LimitSpeed": 65, "LimitDamage": "-150", "Period": 0.3, "MaxNumberTorps": 1, "Pulse": {"Priority": 1}}
 }
 #                                                                                     #
 #######################################################################################

@@ -25,7 +25,7 @@ Foundation.ShipDef.MinbariNial.desc = "The Nial class heavy fighter was the prim
 # I have been thinking of adding an stealth system that makes fire innacurate when firing... but who needs that with Kobayashi Maru's phaser innacuracy lol.
 Foundation.ShipDef.MinbariNial.dTechs = {
 	'Polarized Hull Plating': { "Plates": ["PolyCrystalline Armour"]},
-	'Simulated Point Defence' : { "Distance": 10.0, "InnerDistance": 3.0, "Effectiveness": 0.8, "LimitTurn": 4.5, "LimitSpeed": 65, "LimitDamage": "-150", "Period": 0.5, "MaxNumberTorps": 2, "Pulse": {"Priority": 1}}
+	'Simulated Point Defence' : { "Distance": 10.0, "InnerDistance": 3.0, "Effectiveness": 0.8, "LimitTurn": 4.5, "LimitSpeed": 65, "LimitDamage": "-150", "Period": 0.4, "MaxNumberTorps": 2, "Pulse": {"Priority": 1}}
 }
 
 

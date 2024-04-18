@@ -1,4 +1,10 @@
 ==Changelog==
+1.1.8 -
+   New Features:
+   * Added Simulated Point Defence 0.91 to the Babylon 5 mod, to several ships.
+   Balancing:
+   * Found out I forgot to properly adjust the immediate reload delay value on the Hyperions, Novas and Omegas - they should not have been spamming those heavy torpedoes as much as they did. Now that is fixed, which
+   combined with having a Starfury compliment launched (with most fighters getting Simulated Point Defence), should make the battles between those last a bit longer.
 1.1.7 -
    Bug Fixes:
    * Updated Turrets technology to 0.996, it should be even more clean on the console now.
