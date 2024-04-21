@@ -42,7 +42,7 @@ Foundation.ShipDef.Victory.dTechs = {
 	'Regenerative Shields': 30,
 	"AutoTargeting": { "Phaser": [3, 1] },
 	'Polarized Hull Plating': { "Plates": ["PlastiCrystalline Armour"]},
-	'Simulated Point Defence' : { "Distance": 75.0, "InnerDistance": 12.0, "Effectiveness": 0.9, "LimitTurn": 0.9, "LimitSpeed": 76, "LimitDamage": "-450", "Period": 2.0, "MaxNumberTorps": 4, "Phaser": {"Priority": 2}, "Pulse": {"Priority": 1}},
+	'Simulated Point Defence' : { "Distance": 75.0, "InnerDistance": 12.0, "Effectiveness": 0.9, "LimitTurn": 0.9, "LimitSpeed": 76, "LimitDamage": "-450", "Period": 2.0, "MaxNumberTorps": 2, "Phaser": {"Priority": 1}, "Pulse": {"Priority": 2}},
 	"Fool Targeting": {
 		"Minbari Stealth": {
 			"Miss": 500.0,

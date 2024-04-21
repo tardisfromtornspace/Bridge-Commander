@@ -6,6 +6,9 @@
    * Tachyon Sensor technology 0.1 ->
    ** Pros: they have a chance to reveal cloaked vessels (at least, those which don't use a special type of cloak)
    ** Pros/Cons: more/less vulnerable to Minbari Stealth according to a pInstance value!
+   Bug Fixes:
+   * Updated Simulated Point Defence 0.91 to 0.92 - it is so slightly tiny bit slower, but reduces some collision issues.
+   * Updated Turrets technology 0.996 to 0.997, now it changes torps and disruptor IDs on a cleaner way.
 1.1.8 -
    New Features:
    * Added Simulated Point Defence 0.91 to the Babylon 5 mod, to several ships.

@@ -1,6 +1,6 @@
 """
 #         Turrets
-#         18th March 2024
+#         21st April 2024
 #         Based strongly on SubModels.py by USS Defiant and their team, and AutoTargeting.py by USS Frontier.
 #         Also based slightly on AdvancedTorpedoManagement.py from BCSTB Team, the Borg Technology from Alex SL Gato, and ConditionInLineOfSight by the original STBC team
 #         Special thanks to USS Sovereign and Gizmo_3.
@@ -146,7 +146,7 @@ import MissionLib
 
 #################################################################################################################
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.996",
+	    "Version": "0.997",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -214,6 +214,10 @@ class Turrets(FoundationTech.TechDef):
         def __init__(self, name):
                 debug(__name__ + ", Initiated Turrets counter")
                 FoundationTech.TechDef.__init__(self, name)
+
+                self.pEventHandler = App.TGPythonInstanceWrapper()
+                self.pEventHandler.SetPyWrapper(self)
+
                 self.pTimer = None
                 self.bBattleTurretListener = {}
                 self.bAddedWarpListener = {} # this variable will make sure we add our event handlers only once
@@ -233,8 +237,11 @@ class Turrets(FoundationTech.TechDef):
                         self.pTimer.SetDelayUsesGameTime(1)
 
         def aimingAtTarget(self, fTime):
-                debug(__name__ + ", Reality Bomb Counter lookclosershipsEveryone")
+                debug(__name__ + ", aimingAtTarget")
                 #print "self.bAddedAlertListener: ", self.bAddedAlertListener
+                if len(self.bAddedAlertListener) == 0:
+                        App.g_kEventManager.RemoveBroadcastHandler(App.ET_TORPEDO_ENTERED_SET, self.pEventHandler, "TorpEnteredSet")
+                        #App.g_kEventManager.AddBroadcastPythonMethodHandler(App.ET_TORPEDO_ENTERED_SET, self.pEventHandler, "TorpEnteredSet")
                 for itemList in self.bBattleTurretListener.keys():
                         pShip = App.ShipClass_GetObjectByID(None, itemList)
 
@@ -370,6 +377,10 @@ class Turrets(FoundationTech.TechDef):
                         pShip.AddPythonFuncHandlerForInstance(App.ET_ENTERED_SET, __name__ + ".EnterSet")
 
                         self.bAddedWarpListener[pShip.GetObjID()] = 1
+
+                        # Extra thing
+                        App.g_kEventManager.RemoveBroadcastHandler(App.ET_TORPEDO_ENTERED_SET, self.pEventHandler, "TorpEnteredSet")
+                        App.g_kEventManager.AddBroadcastPythonMethodHandler(App.ET_TORPEDO_ENTERED_SET, self.pEventHandler, "TorpEnteredSet")
 
                         if not self.bAddedAlertListener.has_key(pShip.GetObjID()) and dOptions.has_key("AttackPosition"):
 
@@ -705,8 +716,22 @@ class Turrets(FoundationTech.TechDef):
                         pShields.TurnOn()
 
                     oInvertedTurretList.removeTurretsforShip(pShip.GetObjID())
-                    
-                
+
+
+        def TorpEnteredSet(self, pEvent):
+                debug(__name__ + ", TorpEnteredSet")
+                pTorp=App.Torpedo_Cast(pEvent.GetDestination())
+                if (pTorp==None):
+                        return
+                global oInvertedTurretList
+                pShipID = oInvertedTurretList.getShipForTurret(pTorp.GetParentID())
+                if pShipID != None:
+                        pShip = App.ShipClass_GetObjectByID(None, pShipID)
+                        if pShip: 
+                                pTorp.SetParent(pShipID)
+                                pTorp.UpdateNodeOnly()
+
+
 oTurrets = Turrets("Turret")
 
 # The class does the moving of the parts
@@ -1608,7 +1633,6 @@ def WeaponFired(pObject, pEvent, stoppedFiring=None):
 # Phasers maybe we cannot fix, but torps? Surely we can... right?
 def TorpedoTurretFiredTest(pObject, pEvent):
     debug(__name__ + ", TorpedoTurretFiredTest")
-
     # Ok, so, since for some reason, firing a torpedo is not recognized unless it is a broadcast handler, and only for torpedoes and not pulses, we'll have to do this the hard and slow way...
     # Recommended to upgrade several of those for-loops into iterators if possible...
     pTurret = App.ShipClass_GetObjectByID(None, pObject.GetObjID())
@@ -1620,7 +1644,8 @@ def TorpedoTurretFiredTest(pObject, pEvent):
     if not pSet:
         pObject.CallNextHandler(pEvent)
         return
-
+    """    
+    # This section got commented, there is a more effective way to prevent torps and pulses from damaging the parent ship
     mineTorps= []
 
     
@@ -1638,7 +1663,7 @@ def TorpedoTurretFiredTest(pObject, pEvent):
             for pTorp in mineTorps:
                 pTorp.SetParent(pShipID)
                 pTorp.UpdateNodeOnly()
-
+    """
     """
     #Option B, search around 5 times the radious of the turret we are part of (OUTDATED). This still causes problems
 

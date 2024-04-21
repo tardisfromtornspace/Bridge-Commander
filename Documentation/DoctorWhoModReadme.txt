@@ -1,4 +1,6 @@
 === Changelong ===
+1.1.5
+* Improved Simulated Point Defence to 0.92, reducing ship collision chances.
 1.1.4
 * Improved Simulated Point Defence to 0.91, avoiding a singleton issue.
 1.1.3

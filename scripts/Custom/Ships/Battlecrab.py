@@ -22,7 +22,7 @@ Foundation.ShipDef.Battlecrab.dTechs = {
 	'Breen Drainer Immune': 1,
 	'Shadow Dispersive Hull': 2,
 	'Automated Destroyed System Repair': {"Time": 800.0},
-	'Simulated Point Defence' : { "Distance": 40.0, "InnerDistance": 10.0, "Effectiveness": 0.05, "LimitDamage": "-1250", "Period": 1.5, "MaxNumberTorps": 1, "Phaser": {"Priority": 1}},
+	'Simulated Point Defence' : { "Distance": 40.0, "InnerDistance": 20.0, "Effectiveness": 0.02, "LimitDamage": "-1250", "Period": 2.5, "MaxNumberTorps": 1, "Phaser": {"Priority": 1}},
 	"Tachyon Sensors": 0.1
 }
 

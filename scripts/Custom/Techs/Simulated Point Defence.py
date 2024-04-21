@@ -2,8 +2,8 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
 #         Simulated Point Defence.py by Alex SL Gato
-#         Version 0.91
-#         15th March 2024
+#         Version 0.92
+#         21st April 2024
 #         Based strongly on DampeningAOEDefensiveField.py by Alex Sl Gato, which was based on scripts\Custom\DS9FX\DS9FXPulsarFX\PulsarManager by USS Sovereign, and slightly on TractorBeams.py, Inversion Beam and Power Drain Beam 1.0 by MLeo Daalder, Apollo, and Dasher; some team-switching torpedo by LJ; and GraviticLance by Alex SL Gato, which was based on FiveSecsGodPhaser by USS Frontier, scripts/ftb/Tech/TachyonProjectile by the FoundationTechnologies team, and scripts/ftb/Tech/FedAblativeArmour by the FoundationTechnologies team.
 #         Also based strongly on PointDefence.py by Defiant
 #################################################################################################################
@@ -41,7 +41,7 @@ from bcdebug import debug
 import traceback
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-            "Version": "0.91",
+            "Version": "0.92",
             "License": "LGPL",
             "Description": "Read the small title above for more info"
             }
@@ -630,8 +630,11 @@ try:
 					if not pFirePoint:
 						pFirePoint = loadspacehelper.CreateShip("BigFirepoint", pSet, sThisFirePointName, None)
 						pFirePoint.SetTargetable(0)
+						pFirePoint.SetCollisionsOn(0)
+						pFirePoint.UpdateNodeOnly()
 						pFirePoint.AddPythonFuncHandlerForInstance(App.ET_WEAPON_HIT, __name__ + ".WeaponaHit")
 						dictFirePointToTorp[sThisFirePointName] = pTorp
+
 
 					else:
 						donotneedtospamattack = 1
