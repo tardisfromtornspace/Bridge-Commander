@@ -52,7 +52,8 @@ Foundation.ShipDef.EAAchillesFreighterModule4 = Foundation.ShipDef(abbrev, speci
 #                                                                                     #
 Foundation.ShipDef.EAAchillesFreighterModule4.desc = "The Achilles Type Freighter is a space vessel manufactered by Luigi Mendoza et Cle at Zanzibar Station orbiting Deneb IV. Designed primarily for moving cargo between stations, this freighter has no atmospheric capability and generally stays outside a station while its cargo modules are transferred by tender to and from the station's cargo bays."
 Foundation.ShipDef.EAAchillesFreighterModule4.dTechs = {
-	'Defense Grid': 6
+	'Defense Grid': 6,
+	"Tachyon Sensors": 2.5
 }
 
 #                                                                                     #

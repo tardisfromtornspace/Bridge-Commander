@@ -42,7 +42,8 @@ Foundation.ShipDef.EANova = Foundation.FedShipDef(abbrev, species, { 'name': lon
 
 Foundation.ShipDef.EANova.dTechs = {
 	'Defense Grid': 130,
-	'Simulated Point Defence' : { "Distance": 60.0, "InnerDistance": 15.0, "Effectiveness": 0.7, "LimitTurn": 0.5, "LimitSpeed": 65, "LimitDamage": "650", "Period": 1.0, "MaxNumberTorps": 3, "Pulse": {"Priority": 1}},
+	'Simulated Point Defence' : { "Distance": 38.0, "InnerDistance": 15.0, "Effectiveness": 0.7, "LimitTurn": 0.5, "LimitSpeed": 79, "LimitDamage": "650", "Period": 1.0, "MaxNumberTorps": 3, "Pulse": {"Priority": 1}},
+	"Tachyon Sensors": 2.5
 }
 #                                                                                     #
 #######################################################################################

@@ -19,7 +19,8 @@ SubSubMenu = "Doomsday ships"
 Foundation.ShipDef.VOR_Planetkiller = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu, "SubSubMenu": SubSubMenu })
 Foundation.ShipDef.VOR_Planetkiller.dTechs = {
 	'Breen Drainer Immune': 0,
-	'Automated Destroyed System Repair': {"Time": 120.0}
+	'Automated Destroyed System Repair': {"Time": 120.0},
+	"Tachyon Sensors": 0.1
 }
 Foundation.ShipDef.VOR_Planetkiller.bPlanetKiller = 1
 

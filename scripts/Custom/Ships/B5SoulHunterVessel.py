@@ -38,6 +38,10 @@ credits = {
 # automatically generated the proper ShipDef Line for you.                            #
 #                                                                                     #
 Foundation.ShipDef.B5SoulHunterVessel = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
+
+Foundation.ShipDef.B5SoulHunterVessel.dTechs = {
+	"Tachyon Sensors": 1.0
+}
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

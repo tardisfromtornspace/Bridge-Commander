@@ -17,6 +17,10 @@ SubMenu = "Drakh Horde"
 SubSubMenu = "Carriers"
 Foundation.ShipDef.DRA_Cruiser = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu, "SubSubMenu": SubSubMenu })
 
+Foundation.ShipDef.DRA_Cruiser.dTechs = {
+	'Simulated Point Defence' : { "Distance": 50.0, "InnerDistance": 3.0, "Effectiveness": 0.6, "LimitTurn": 0.85, "LimitSpeed": 76, "LimitDamage": "350", "Period": 1.0, "MaxNumberTorps": 1, "Pulse": {"Priority": 1}},
+	"Tachyon Sensors": 0.9
+}
 
 Foundation.ShipDef.DRA_Cruiser.desc = "The Drakh cruiser was a vessel of unknown class used by the Drakh. The overall design of the vessel is essentially identical to the Drakh carrier, though on a much smaller scale. As with the carriers, the cruisers are typically accompanied by a number of Drakh fighters."
 

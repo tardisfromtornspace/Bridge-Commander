@@ -38,7 +38,10 @@ credits = {
 # automatically generated the proper ShipDef Line for you.                            #
 #                                                                                     #
 Foundation.ShipDef.B5TechnomageTransport = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
-Foundation.ShipDef.B5TechnomageTransport.dTechs = { "Phase Cloak": 10 }
+Foundation.ShipDef.B5TechnomageTransport.dTechs = {
+	"Phase Cloak": 10,
+	"Tachyon Sensors": 0.1
+}
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

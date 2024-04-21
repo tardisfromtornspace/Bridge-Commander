@@ -16,7 +16,16 @@ playerMenuGroup = "Babylon 5"
 SubMenu = "Interestellar Alliance"
 Foundation.ShipDef.whitestar = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
 
-Foundation.ShipDef.whitestar.dTechs = {'Automated Destroyed System Repair': {"Time": 1800.0}}
+Foundation.ShipDef.whitestar.dTechs = {
+	'Automated Destroyed System Repair': {"Time": 1800.0},
+	"Fool Targeting": {
+		"Minbari Stealth": {
+			"Miss": 4.0,
+			"Sensor": 520,
+		}  
+	},
+	"Tachyon Sensors": 0.5
+}
 
 Foundation.ShipDef.whitestar.desc = "The White Star was a class of advanced warships maintained by the Rangers and utilizing Minbari and Vorlon technology and served as the backbone of the Interstellar Alliance's fleet. They were manufactured at the Valen's Eye manufacturing point in the Minbari System. The first White Star was developed in secret by the Anla'shok, under the supervision of Kosh Naranek and Chosen One Jenimer throughout 2259. These ships were built to be both maneuverable enough to engage fighters, and to have the punch to take on capital ships when operating in groups. They were used as the predominant weapons in the Shadow War between 2259 and 2261 and proved themselves to be formidable vessels, taking on vessels many times their size and winning. This incredible performance is in part due to advanced Vorlon components found in the ship such as the bio-armoured hull which is capable of learning from experience and adapting itself to better protect the ship in new engagements; this hull design also gives the ship the ability to 'heal' itself after it has been damaged. These ships are also capable of creating their own jump point into hyperspace without using a jumpgate, giving these ships tremendous flexibility on the battlefield. "
 

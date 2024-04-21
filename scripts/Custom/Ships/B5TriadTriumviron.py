@@ -21,7 +21,8 @@ Foundation.ShipDef.B5TriadTriumviron = Foundation.ShipDef(abbrev, species, { 'na
 Foundation.ShipDef.B5TriadTriumviron.dTechs = {
     'Breen Drainer Immune': 1,
     'Automated Destroyed System Repair': {"Time": 180.0},
-    'Fed Ablative Armor': { "Plates": ["Armor Layer 1", "Armor Layer 2", "Armor Layer 3"]}
+    'Fed Ablative Armor': { "Plates": ["Armor Layer 1", "Armor Layer 2", "Armor Layer 3"]},
+    "Tachyon Sensors": 0.2
 }
 
 Foundation.ShipDef.B5TriadTriumviron.desc = "The Triumviron is the ship of the Triad, one of the First Ones. Heavily armored, not much is known about them. However, the Triumviron is thought to not actually be a ship but a mental construct based on the Triad's phantasmal designs, a dream given form by the Triad's mental ability to shape matter."

@@ -41,7 +41,8 @@ credits = {
 Foundation.ShipDef.EAStarfury = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu, "SubSubMenu": SubSubMenu })
 
 Foundation.ShipDef.EAStarfury.dTechs = {
-	'Simulated Point Defence' : { "Distance": 10.0, "InnerDistance": 3.0, "Effectiveness": 0.6, "LimitTurn": 8.5, "LimitSpeed": 65, "LimitDamage": "-150", "Period": 0.3, "MaxNumberTorps": 1, "Pulse": {"Priority": 1}}
+	'Simulated Point Defence' : { "Distance": 10.0, "InnerDistance": 3.0, "Effectiveness": 0.6, "LimitTurn": 8.5, "LimitSpeed": 70, "LimitDamage": "-150", "Period": 0.3, "MaxNumberTorps": 1, "Pulse": {"Priority": 1}},
+	"Tachyon Sensors": 2.2
 }
 #                                                                                     #
 #######################################################################################

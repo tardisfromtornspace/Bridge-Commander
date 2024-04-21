@@ -18,7 +18,7 @@ SubSubMenu = "Fighters"
 
 Foundation.ShipDef.Shadow_FighterBall = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu, "SubSubMenu": SubSubMenu })
 
-Foundation.ShipDef.Shadow_FighterBall.dTechs = { "Phase Cloak": 10, 'Breen Drainer Immune': 1, 'Shadow Dispersive Hull': 1}
+Foundation.ShipDef.Shadow_FighterBall.dTechs = { "Phase Cloak": 10, 'Breen Drainer Immune': 1, 'Shadow Dispersive Hull': 1, "Tachyon Sensors": 0.1}
 
 Foundation.ShipDef.Shadow_FighterBall.desc = "The Shadow Battlecrabs don't throw Fighters one by one, but in a great bundled group."
 Foundation.ShipDef.Shadow_FighterBall.CloakingSFX = "shadowscream"

@@ -38,6 +38,10 @@ credits = {
 # automatically generated the proper ShipDef Line for you.                            #
 #                                                                                     #
 Foundation.ShipDef.B5JumpgateOpen = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
+
+Foundation.ShipDef.B5JumpgateOpen.dTechs = {
+	"Tachyon Sensors": 2.2
+}
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

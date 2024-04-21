@@ -18,7 +18,8 @@ SubSubMenu = "Fighters"
 Foundation.ShipDef.DRA_Raider = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu, "SubSubMenu": SubSubMenu })
 
 Foundation.ShipDef.DRA_Raider.dTechs = {
-	'Simulated Point Defence' : { "Distance": 25.0, "InnerDistance": 5.0, "Effectiveness": 0.6, "LimitTurn": 2.5, "LimitSpeed": 65, "LimitDamage": "-150", "Period": 0.5, "MaxNumberTorps": 1, "Phaser": {"Priority": 1}}
+	'Simulated Point Defence' : { "Distance": 25.0, "InnerDistance": 5.0, "Effectiveness": 0.6, "LimitTurn": 2.5, "LimitSpeed": 65, "LimitDamage": "-150", "Period": 0.5, "MaxNumberTorps": 1, "Phaser": {"Priority": 1}},
+	"Tachyon Sensors": 0.9
 }
 
 Foundation.ShipDef.DRA_Raider.desc = "The Drakh fighter was a large fighter vessel used by the Drakh. Ships of this type are carried into the battle usually by large carriers or cruisers. Two of these vessels are capable of shooting down a White Star with just a few direct hits."

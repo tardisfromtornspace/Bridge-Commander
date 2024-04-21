@@ -21,7 +21,8 @@ Foundation.ShipDef.SigmaWalkerScienceLab = Foundation.ShipDef(abbrev, species, {
 Foundation.ShipDef.SigmaWalkerScienceLab.dTechs = {
     'Breen Drainer Immune': 1,
     'Fed Ablative Armor': { "Plates": ["Shield"]},
-    'Automated Destroyed System Repair': {"Time": 20.0}
+    'Automated Destroyed System Repair': {"Time": 20.0},
+    "Tachyon Sensors": 0.1
 }
 
 Foundation.ShipDef.SigmaWalkerScienceLab.desc = "Little is known of these First Ones ships, only that on the strict sense of the word these ships are unarmed. However if necessary their sensor systems can be as destructive."

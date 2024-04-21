@@ -1,4 +1,11 @@
 ==Changelog==
+1.1.9 -
+   New Features:
+   * Fool Targeting script 0.1 -> Opportunity to tune beam and torp/pulse innacuracy!
+   ** From this tech, created Minbari Stealth 1.0 - it will make ships below a certain sensor range to have locking issues when attacking a ship with this sub-tech.
+   * Tachyon Sensor technology 0.1 ->
+   ** Pros: they have a chance to reveal cloaked vessels (at least, those which don't use a special type of cloak)
+   ** Pros/Cons: more/less vulnerable to Minbari Stealth according to a pInstance value!
 1.1.8 -
    New Features:
    * Added Simulated Point Defence 0.91 to the Babylon 5 mod, to several ships.

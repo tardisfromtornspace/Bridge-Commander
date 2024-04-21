@@ -38,7 +38,16 @@ credits = {
 #                                                                                     #
 Foundation.ShipDef.bluestar = Foundation.FedShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
 
-Foundation.ShipDef.bluestar.dTechs = {'Automated Destroyed System Repair': {"Time": 1800.0}}
+Foundation.ShipDef.bluestar.dTechs = {
+	'Automated Destroyed System Repair': {"Time": 1800.0},
+	"Fool Targeting": {
+		"Minbari Stealth": {
+			"Miss": 4.0,
+			"Sensor": 590,
+		}  
+	},
+	"Tachyon Sensors": 0.5
+}
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

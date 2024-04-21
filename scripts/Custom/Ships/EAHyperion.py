@@ -42,7 +42,8 @@ Foundation.ShipDef.EAHyperion = Foundation.FedShipDef(abbrev, species, { 'name':
 
 Foundation.ShipDef.EAHyperion.dTechs = {
 	'Defense Grid': 100,
-	'Simulated Point Defence' : { "Distance": 75.0, "InnerDistance": 10.0, "Effectiveness": 0.9, "LimitTurn": 0.7, "LimitSpeed": 75, "LimitDamage": "400", "Period": 0.6, "MaxNumberTorps": 4, "Pulse": {"Priority": 1}}
+	'Simulated Point Defence' : { "Distance": 45.0, "InnerDistance": 10.0, "Effectiveness": 0.9, "LimitTurn": 0.7, "LimitSpeed": 80, "LimitDamage": "400", "Period": 0.6, "MaxNumberTorps": 3, "Pulse": {"Priority": 1}},
+	"Tachyon Sensors": 2.5
 }
 #                                                                                     #
 #######################################################################################

@@ -52,7 +52,8 @@ Foundation.ShipDef.EAAsimov = Foundation.ShipDef(abbrev, species, { 'name': long
 #                                                                                     #
 Foundation.ShipDef.EAAsimov.desc = "Asimov Class is a type of commercial starliner produced by the Earth Alliance Barfingle's Manufactory located at Earth. All Asimov Class liners have a rotating habitat area. The command decks and shuttle bays do not have artificial gravity. While most Asimovs are used for comfortable transportation, some are used just for cargo, especially when cargo may need to be under gravity for long durations."
 Foundation.ShipDef.EAAsimov.dTechs = {
-	'Defense Grid': 6
+	'Defense Grid': 6,
+	"Tachyon Sensors": 2.5
 }
 
 #                                                                                     #

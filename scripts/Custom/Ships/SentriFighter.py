@@ -49,7 +49,8 @@ Foundation.ShipDef.SentriFighter = Foundation.FedShipDef(abbrev, species, { 'nam
 Foundation.ShipDef.SentriFighter.desc = 'The Sentri class medium fighter is a fast but lightly armed aerospace fighter deployed by the Centauri military. House Tavari Armaments located at Hevaria Orbital Shipyards over Tolonius VII is responsible for manufacturing this class of vessel. Possessing greater maneuverability and acceleration than comparable craft such as the Earthforce Starfury, Centauri pilots have been known to perform drastic and stressful maneuvers that will cause them to pass out, passing control over to the autopilot to complete the maneuver and bring the fighter around to a superior tactical position.'
 
 Foundation.ShipDef.SentriFighter.dTechs = {
-	'Simulated Point Defence' : { "Distance": 14.0, "InnerDistance": 3.0, "Effectiveness": 0.69, "LimitTurn": 4.6, "LimitSpeed": 67, "LimitDamage": "-120", "Period": 0.3, "MaxNumberTorps": 1, "Pulse": {"Priority": 1}}
+	'Simulated Point Defence' : { "Distance": 14.0, "InnerDistance": 3.0, "Effectiveness": 0.69, "LimitTurn": 4.6, "LimitSpeed": 73, "LimitDamage": "-120", "Period": 0.3, "MaxNumberTorps": 1, "Pulse": {"Priority": 1}},
+	"Tachyon Sensors": 1.4
 }
 #                                                                                     #
 #######################################################################################

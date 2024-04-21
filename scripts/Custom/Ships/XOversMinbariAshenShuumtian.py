@@ -23,8 +23,15 @@ Foundation.ShipDef.AshenShuumtian.fMaxWarp = 9.99 + 0.0001
 Foundation.ShipDef.AshenShuumtian.fCruiseWarp = 6 + 0.0001
 Foundation.ShipDef.AshenShuumtian.dTechs = {
 	'Regenerative Shields': 20,
-	'Fed Ablative Armor': { "Plates": ["PolyCrystalline Armour"]
-}}
+	'Fed Ablative Armor': { "Plates": ["PolyCrystalline Armour"]},
+	"Fool Targeting": {
+		"Minbari Stealth": {
+			"Miss": 2000.0,
+			"Sensor": 1000,
+		}  
+	},
+	"Tachyon Sensors": 0.5
+}
 
 
 if menuGroup:           Foundation.ShipDef.AshenShuumtian.RegisterQBShipMenu(menuGroup)

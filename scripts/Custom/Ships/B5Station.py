@@ -30,7 +30,8 @@ credits = {
 Foundation.ShipDef.B5Station = Foundation.KlingonShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile })
 Foundation.ShipDef.B5Station.dTechs = {
 	'Defense Grid': 200,
-	'Simulated Point Defence' : { "Distance": 75.0, "InnerDistance": 12.0, "Effectiveness": 0.9, "LimitTurn": 0.8, "LimitSpeed": 75, "LimitDamage": "450", "Period": 1.0, "MaxNumberTorps": 3, "Pulse": {"Priority": 1}}
+	'Simulated Point Defence' : { "Distance": 75.0, "InnerDistance": 12.0, "Effectiveness": 0.9, "LimitTurn": 0.8, "LimitSpeed": 80, "LimitDamage": "450", "Period": 1.0, "MaxNumberTorps": 3, "Pulse": {"Priority": 1}},
+	"Tachyon Sensors": 10.0
 }
 # Uncomment these if you have TGL
 #Foundation.ShipDef.B5Station.hasTGLName = 1

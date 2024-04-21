@@ -16,7 +16,7 @@ playerMenuGroup = "Babylon 5"
 SubMenu = "League of Non-Aligned Worlds"
 SubSubMenu = "Ventuki Conglomerate"
 Foundation.ShipDef.VreeXill = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu, "SubSubMenu": SubSubMenu })
-Foundation.ShipDef.VreeXill.dTechs = { "Vree Shields": 100}
+Foundation.ShipDef.VreeXill.dTechs = { "Vree Shields": 100, "Tachyon Sensors": 1.0}
 Foundation.ShipDef.VreeXill.desc = "The Xill Class Cruiser is the Vree's most common starship. Manufactured by the Merchant/Adventurers Guild at the Madrasi Orbital facility over Photikar, the Xill is very fast and powerful and would become a more and more common sight in the years following the Second Shadow War as the Vree continued to expand their influence. The Xill's primary weapon is a cluster of 15 phased array antimatter cannons, mounted on the vessel's ventral surface and is normally used for a strafing run that unleashes a torrent of energy bolts that can easily rip apart a squadron of Vorlon or Shadow Fighters."
 
 

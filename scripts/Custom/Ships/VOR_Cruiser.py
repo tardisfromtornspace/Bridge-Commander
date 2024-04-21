@@ -21,7 +21,8 @@ Foundation.ShipDef.VOR_Cruiser = Foundation.ShipDef(abbrev, species, { 'name': l
 Foundation.ShipDef.VOR_Cruiser.dTechs = {
 	'Automated Destroyed System Repair': {"Time": 120.0},
 	'Breen Drainer Immune': 0,
-	'Simulated Point Defence' : { "Distance": 50.0, "InnerDistance": 10.0, "Effectiveness": 0.1, "LimitTurn": 8.5, "LimitSpeed": 65, "LimitDamage": "-1500", "Period": 0.3, "MaxNumberTorps": 2, "Phaser": {"Priority": 1}}
+	'Simulated Point Defence' : { "Distance": 50.0, "InnerDistance": 10.0, "Effectiveness": 0.1, "LimitTurn": 8.5, "LimitSpeed": 65, "LimitDamage": "-1500", "Period": 0.3, "MaxNumberTorps": 2, "Phaser": {"Priority": 1}},
+	"Tachyon Sensors": 0.1
 }
 
 

@@ -42,7 +42,8 @@ Foundation.ShipDef.Warlock = Foundation.ShipDef(abbrev, species, { 'name': longN
 Foundation.ShipDef.Warlock.dTechs = {
 	"AutoTargeting": { "Pulse": [3, 1] },
 	'Defense Grid': 195,
-	'Simulated Point Defence' : { "Distance": 60.0, "InnerDistance": 15.0, "Effectiveness": 0.8, "LimitTurn": 0.5, "LimitSpeed": 85, "LimitDamage": "650", "Period": 0.6, "MaxNumberTorps": 4, "Phaser": {"Priority": 1}, "Pulse": {"Priority": 2}},
+	'Simulated Point Defence' : { "Distance": 60.0, "InnerDistance": 15.0, "Effectiveness": 0.8, "LimitTurn": 0.5, "LimitSpeed": 87, "LimitDamage": "650", "Period": 0.6, "MaxNumberTorps": 4, "Phaser": {"Priority": 1}, "Pulse": {"Priority": 2}},
+	"Tachyon Sensors": 1.0
 }
 #                                                                                     #
 #######################################################################################

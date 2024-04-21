@@ -40,7 +40,8 @@ credits = {
 Foundation.ShipDef.B5ZephyrRaider5 = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile})
 
 Foundation.ShipDef.B5ZephyrRaider5.dTechs = {
-	'Simulated Point Defence' : { "Distance": 10.0, "InnerDistance": 3.0, "Effectiveness": 0.6, "LimitTurn": 0.85, "LimitSpeed": 55, "LimitDamage": "350", "Period": 1.0, "MaxNumberTorps": 1, "Pulse": {"Priority": 1}}
+	'Simulated Point Defence' : { "Distance": 10.0, "InnerDistance": 3.0, "Effectiveness": 0.6, "LimitTurn": 0.85, "LimitSpeed": 55, "LimitDamage": "350", "Period": 1.0, "MaxNumberTorps": 1, "Pulse": {"Priority": 1}},
+	"Tachyon Sensors": 2.5
 }
 #                                                                                     #
 #######################################################################################

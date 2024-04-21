@@ -40,6 +40,10 @@ credits = {
 #                                                                                     #
 Foundation.ShipDef.EAForceOne = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu, "SubSubMenu": SubSubMenu })
 
+Foundation.ShipDef.EAForceOne.dTechs = {
+	'Defense Grid': 6,
+	"Tachyon Sensors": 2.3
+}
 #                                                                                     #
 #######################################################################################
 #                                                                                     #
@@ -51,9 +55,6 @@ Foundation.ShipDef.EAForceOne = Foundation.ShipDef(abbrev, species, { 'name': lo
 # Otherwise, uncomment this and type something in:                                    #
 #                                                                                     #
 Foundation.ShipDef.EAForceOne.desc = "Earthforce One was the spacecraft used to transport the Earth Alliance President to other planets. "
-Foundation.ShipDef.EAForceOne.dTechs = {
-	'Defense Grid': 6
-}
 
 #                                                                                     #
 #######################################################################################

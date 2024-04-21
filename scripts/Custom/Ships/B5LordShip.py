@@ -21,7 +21,9 @@ Foundation.ShipDef.B5LordShip = Foundation.ShipDef(abbrev, species, { 'name': lo
 Foundation.ShipDef.B5LordShip.dTechs = {
     'Breen Drainer Immune': 1,
     'Automated Destroyed System Repair': {"Time": 130.0},
-    'Fed Ablative Armor': { "Plates": ["Armor Layer 1", "Armor Layer 2", "Armor Layer 3"]}
+    'Fed Ablative Armor': { "Plates": ["Armor Layer 1", "Armor Layer 2", "Armor Layer 3"]},
+    'Simulated Point Defence' : { "Distance": 45.0, "InnerDistance": 10.0, "Effectiveness": 0.9, "LimitTurn": 0.7, "LimitSpeed": 85, "LimitDamage": "-500", "Period": 1.0, "MaxNumberTorps": 6, "Phaser": {"Priority": 1}},
+    "Tachyon Sensors": 0.2
 }
 
 

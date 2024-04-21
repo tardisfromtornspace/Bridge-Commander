@@ -39,6 +39,10 @@ credits = {
 # automatically generated the proper ShipDef Line for you.                            #
 #                                                                                     #
 Foundation.ShipDef.B5RaiderBattlewagonHalfFull = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
+
+Foundation.ShipDef.B5RaiderBattlewagonHalfFull.dTechs = {
+	"Tachyon Sensors": 2.9
+}
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

@@ -24,9 +24,16 @@ Foundation.ShipDef.MinbariSharlin.fMaxWarp = 9.99 + 0.0001
 Foundation.ShipDef.MinbariSharlin.fCruiseWarp = 6 + 0.0001
 Foundation.ShipDef.MinbariSharlin.dTechs = {
 	'Regenerative Shields': 20,
-	'Fed Ablative Armor': { "Plates": ["PolyCrystalline Armour"]}
+	'Fed Ablative Armor': { "Plates": ["PolyCrystalline Armour"]},
+	"Fool Targeting": {
+		"Minbari Stealth": {
+			"Miss": 1500.0,
+			"Sensor": 600,
+        	}  
+	},
+	"Tachyon Sensors": 0.5
 }
-
+#TO-DO set sensor range to 600, but for tests set it to 1200
 
 if menuGroup:           Foundation.ShipDef.MinbariSharlin.RegisterQBShipMenu(menuGroup)
 if playerMenuGroup:     Foundation.ShipDef.MinbariSharlin.RegisterQBPlayerShipMenu(playerMenuGroup)

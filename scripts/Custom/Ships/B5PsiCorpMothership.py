@@ -40,7 +40,8 @@ credits = {
 #                                                                                     #
 Foundation.ShipDef.B5PsiCorpMothership = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu, "SubSubMenu": SubSubMenu })
 Foundation.ShipDef.B5PsiCorpMothership.dTechs = {
-	'Defense Grid': 20
+	'Defense Grid': 20,
+	"Tachyon Sensors": 0.9
 }
 #                                                                                     #
 #######################################################################################

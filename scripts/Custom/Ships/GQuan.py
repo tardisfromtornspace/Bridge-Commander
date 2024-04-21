@@ -18,6 +18,9 @@ SubSubMenu = "Capital ships"
 
 Foundation.ShipDef.GQuan = Foundation.FedShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu, "SubSubMenu": SubSubMenu })
 
+Foundation.ShipDef.EAPsiCorpCrewShuttle.dTechs = {
+	"Tachyon Sensors": 2.4
+}
 
 Foundation.ShipDef.GQuan.desc = "G'Quan class heavy cruisers are the backbone of the Narn Regime's naval forces. Ma'Kan Industries located at Wings of G'Lan facility over Narn is responsible for manufactoring this class of vessel."
 
