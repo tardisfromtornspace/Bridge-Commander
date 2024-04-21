@@ -432,7 +432,7 @@ class FoolTargetingDef(FoundationTech.TechDef):
 		pInstance.lTechs.remove(self)
 		#print "FoolTargeting: detached from ship."	
 
-	def TorpEnteredSet(self, pEvent): #TO-DO
+	def TorpEnteredSet(self, pEvent):
 		debug(__name__ + ", TorpFired")
 
 		pTorp=App.Torpedo_Cast(pEvent.GetDestination())
@@ -468,7 +468,7 @@ class FoolTargetingDef(FoundationTech.TechDef):
 				fMiss = 2.0 + fMiss / 100.0
 
 			if fMiss > 0.0:
-				#print ("Proceeding to make the torpedo miss with fMiss ", fMiss) # TO-DO IMPROVE THIS
+				#print ("Proceeding to make the torpedo miss with fMiss ", fMiss)
 				# First we make the torpedo follow a straight line, then we re-orient it to a random offset according to fMiss
 				pTorp.SetGuidanceLifetime(0.0)
 
