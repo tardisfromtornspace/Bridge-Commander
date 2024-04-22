@@ -2,7 +2,7 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
 #         FoolTargeting.py by Alex SL Gato
-#         Version 0.2
+#         Version 0.3
 #         22nd April 2024
 #         Based on BorgAdaptation.py by Alex SL Gato, which was based on the Shield.py script by the Foundation Technologies team and Dasher42's FoundationTech script.
 #         Also based on ATPFunctions by Apollo and Sneaker's Innacurate Phaser mod.
@@ -294,7 +294,7 @@ LoadExtraLimitedPlugins()
 global newInaccurateFire
 def newInaccurateFire(pShip, pSystem, pTarget):
 	debug(__name__ + ", InaccurateFire")
-	if totalShips <= 0:
+	if totalShips <= 0 and necessaryToUpdate:
 		#print("Old Innacurate phasers function called")
 		oldInnacurateFire(pShip, pSystem, pTarget)
 	else:

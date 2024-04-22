@@ -1,4 +1,7 @@
 ==Changelog==
+1.2.1 -
+   Bug Fixes:
+   * Updated Fool Targeting Technology from 0.2 to 0.3, fixed small thing related with necessary update.
 1.2.0 -
    Updates:
    * Updated Fool Targeting Technology from 0.1 to 0.2, following a less smelly focus. Thanks USS Sovereign!
