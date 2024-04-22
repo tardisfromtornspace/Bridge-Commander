@@ -1,4 +1,7 @@
 ==Changelog==
+1.2.0 -
+   Updates:
+   * Updated Fool Targeting Technology from 0.1 to 0.2, following a less smelly focus. Thanks USS Sovereign!
 1.1.9 -
    New Features:
    * Fool Targeting script 0.1 -> Opportunity to tune beam and torp/pulse innacuracy!

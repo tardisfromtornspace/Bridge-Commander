@@ -2,8 +2,8 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
 #         FoolTargeting.py by Alex SL Gato
-#         Version 0.1
-#         20th April 2024
+#         Version 0.2
+#         22nd April 2024
 #         Based on BorgAdaptation.py by Alex SL Gato, which was based on the Shield.py script by the Foundation Technologies team and Dasher42's FoundationTech script.
 #         Also based on ATPFunctions by Apollo and Sneaker's Innacurate Phaser mod.
 #################################################################################################################
@@ -142,7 +142,7 @@ def pulseTCondition(techName, pInstanceFool, fMiss, pAttackerShip, pAttackerInst
 """
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.1",
+	    "Version": "0.2",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -163,7 +163,7 @@ import traceback
 necessaryToUpdate = 0 # Who knows, we may not need to update this on newer versions...
 ticksPerKilometer = 225/40 # 225 is approximately 40 km, so 225/40 is the number of ticks per kilometer
 totalShips = 0 # We count how many ships we have with this technology.
-oldInnacurateFire = None # The old function we have for InnacurateFire - yes, in a way part of this is a bit like Monkey Patching, but temporary
+oldInnacurateFire = FoundationTech.InaccurateFire # The old function we have for InnacurateFire - yes, in a way part of this is a bit like Monkey Patching, but temporary
 
 # "variableNames" is a global dictionary, filled automatically by the files in scripts/Custom/Techs/FoolTargetingScripts 
 # the purpose of this list is to append dicts f.ex. {"name": "Minbari Stealth", "beamcondition": functionObtained, "pulsetcondition": anotherfunctionObtained}
@@ -294,92 +294,96 @@ LoadExtraLimitedPlugins()
 global newInaccurateFire
 def newInaccurateFire(pShip, pSystem, pTarget):
 	debug(__name__ + ", InaccurateFire")
-	#print("New Innacurate phasers function called")
-	fMiss = 0.0
-	fSensorRange = 200.0
-
-	vAngle = pTarget.GetAngularVelocity()
-	fAngleDiff = vAngle.x + vAngle.y + vAngle.z
-	vAngle = pTarget.GetAcceleration()
-	fAngleDiff = fAngleDiff + vAngle.x + vAngle.y + vAngle.z
-
-	if fAngleDiff < 0.0:
-		fAngleDiff = fAngleDiff * -5.0
+	if totalShips <= 0:
+		#print("Old Innacurate phasers function called")
+		oldInnacurateFire(pShip, pSystem, pTarget)
 	else:
-		fAngleDiff = fAngleDiff * 5.0
+		#print("New Innacurate phasers function called")
+		fMiss = 0.0
+		fSensorRange = 200.0
 
-	vTargetLocation = pTarget.GetWorldLocation()
-	vTargetLocation.Subtract(pSystem.GetWorldLocation())
-	fObjectDistance = vTargetLocation.Unitize()
+		vAngle = pTarget.GetAngularVelocity()
+		fAngleDiff = vAngle.x + vAngle.y + vAngle.z
+		vAngle = pTarget.GetAcceleration()
+		fAngleDiff = fAngleDiff + vAngle.x + vAngle.y + vAngle.z
+
+		if fAngleDiff < 0.0:
+			fAngleDiff = fAngleDiff * -5.0
+		else:
+			fAngleDiff = fAngleDiff * 5.0
+
+		vTargetLocation = pTarget.GetWorldLocation()
+		vTargetLocation.Subtract(pSystem.GetWorldLocation())
+		fObjectDistance = vTargetLocation.Unitize()
 	
-	#fSizeFactor = 1.5 / (pTarget.GetRadius() + 0.01)
-	pSensor = pShip.GetSensorSubsystem()
-	if pSensor:
-		fSensorRange = pSensor.GetSensorRange()
-	else:
-		fSensorRange = 0.0
+		#fSizeFactor = 1.5 / (pTarget.GetRadius() + 0.01)
+		pSensor = pShip.GetSensorSubsystem()
+		if pSensor:
+			fSensorRange = pSensor.GetSensorRange()
+		else:
+			fSensorRange = 0.0
 
-        #fSensorRange = fSensorRange * (1.5 / (pTarget.GetRadius() + 0.01))
-        # calculate Sensor Damage and power into Range
-	if pSensor:
-		fSensorRange = fSensorRange * pSensor.GetConditionPercentage() * pSensor.GetPowerPercentageWanted()
+	        #fSensorRange = fSensorRange * (1.5 / (pTarget.GetRadius() + 0.01))
+	        # calculate Sensor Damage and power into Range
+		if pSensor:
+			fSensorRange = fSensorRange * pSensor.GetConditionPercentage() * pSensor.GetPowerPercentageWanted()
 
-	# Alex SL Gato: We love innacurate phasers, but not that much when the target is literally still at 10 units from you and keep missing. Changing 2.2 to 1.0 and 0.15, and made it so sensors are better
-	# If you want your ship to miss more or less, just add a sub-Tech from this that adjust the fMiss accordingly
-	# fMiss = ((fAngleDiff * fObjectDistance) * 2.2) / (fSensorRange + 1.0)
-	fMiss = (fAngleDiff * (1.0 + fObjectDistance * 0.15)) / (16 * fSensorRange + 1.0)
+		# Alex SL Gato: We love innacurate phasers, but not that much when the target is literally still at 10 units from you and keep missing. Changing 2.2 to 1.0 and 0.15, and made it so sensors are better
+		# If you want your ship to miss more or less, just add a sub-Tech from this that adjust the fMiss accordingly
+		# fMiss = ((fAngleDiff * fObjectDistance) * 2.2) / (fSensorRange + 1.0)
+		fMiss = (fAngleDiff * (1.0 + fObjectDistance * 0.15)) / (16 * fSensorRange + 1.0)
 
-	# Now comes the really extra thing - we are adding countermeasures for both sides - there is going to be a sub-tech "Accurate" that will make normal non sub-Tech fire miss more or less, or nothing.
-	# Additionally, the victim will have multiple ECM (Electronic Counter-Measures) and ECCM (Electronic Counter-Counter-Measures) that will add a Miss factor.
-	# For those modders that want to add an ECCM for an ECM, remember it can be done in many ways, among them using things like SensorRange, customized options and even the Attacker's pInstance (so you can add ECCMs to those)
-	pAttackerInstance = findShipInstance(pShip)
-	pDefenderInstance = findShipInstance(pTarget)
-	if pAttackerInstance and pAttackerInstance.__dict__.has_key("Fool Targeting") and pAttackerInstance.__dict__["Fool Targeting"].has_key("Accurate"): # This ship just cannot miss from regular innacurate fire things
-		#print("Attacker has Fool Targeting Accuracy subTech")
-		fMiss = fMiss * pAttackerInstance.__dict__["Fool Targeting"]["Accurate"]
+		# Now comes the really extra thing - we are adding countermeasures for both sides - there is going to be a sub-tech "Accurate" that will make normal non sub-Tech fire miss more or less, or nothing.
+		# Additionally, the victim will have multiple ECM (Electronic Counter-Measures) and ECCM (Electronic Counter-Counter-Measures) that will add a Miss factor.
+		# For those modders that want to add an ECCM for an ECM, remember it can be done in many ways, among them using things like SensorRange, customized options and even the Attacker's pInstance (so you can add ECCMs to those)
+		pAttackerInstance = findShipInstance(pShip)
+		pDefenderInstance = findShipInstance(pTarget)
+		if pAttackerInstance and pAttackerInstance.__dict__.has_key("Fool Targeting") and pAttackerInstance.__dict__["Fool Targeting"].has_key("Accurate"): # This ship just cannot miss from regular innacurate fire things
+			#print("Attacker has Fool Targeting Accuracy subTech")
+			fMiss = fMiss * pAttackerInstance.__dict__["Fool Targeting"]["Accurate"]
 
-	if pDefenderInstance:
-		pInstanceDict = pDefenderInstance.__dict__ # Because all techs use this __dict__ thing to fetch their keys, sorry for the hacky code USS Sovereign
-		if pInstanceDict.has_key("Fool Targeting"): # The real technology to use
-			#print("Defender has Fool Targeting")
-			global variableNames
-			pInstanceFool = pInstanceDict["Fool Targeting"]
-			for techName in variableNames.keys():
-				if pInstanceFool.has_key(techName) and variableNames[techName].has_key("beamCondition"):
-					try:
-						#ok, it's a miss (or not), let's modifiy the Miss value so it is guaranteed to miss
-						fMiss = variableNames[techName]["beamCondition"](techName, pInstanceFool, fMiss, pShip, pAttackerInstance, pTarget, pDefenderInstance, fSensorRange, fAngleDiff, fObjectDistance) # More liberty for a new tech to add incremental fMiss or totally ignore the other fMiss
-					except:
-						print "Error while reviewing a Fool Targeting tech beam function"
-						traceback.print_exc()
+		if pDefenderInstance:
+			pInstanceDict = pDefenderInstance.__dict__ # Because all techs use this __dict__ thing to fetch their keys, sorry for the hacky code USS Sovereign
+			if pInstanceDict.has_key("Fool Targeting"): # The real technology to use
+				#print("Defender has Fool Targeting")
+				global variableNames
+				pInstanceFool = pInstanceDict["Fool Targeting"]
+				for techName in variableNames.keys():
+					if pInstanceFool.has_key(techName) and variableNames[techName].has_key("beamCondition"):
+						try:
+							#ok, it's a miss (or not), let's modifiy the Miss value so it is guaranteed to miss
+							fMiss = variableNames[techName]["beamCondition"](techName, pInstanceFool, fMiss, pShip, pAttackerInstance, pTarget, pDefenderInstance, fSensorRange, fAngleDiff, fObjectDistance) # More liberty for a new tech to add incremental fMiss or totally ignore the other fMiss
+						except:
+							print "Error while reviewing a Fool Targeting tech beam function"
+							traceback.print_exc()
 						
 
-	if fMiss > 2.0:
-		fMiss = 2.0 + fMiss / 100.0
+		if fMiss > 2.0:
+			fMiss = 2.0 + fMiss / 100.0
 
-	#print 'miss', fMiss, ':', pShip.GetName(), ': a', fAngleDiff, 'd', fObjectDistance, 's', fSensorRange, pSensor.GetSensorRange()
+		#print 'miss', fMiss, ':', pShip.GetName(), ': a', fAngleDiff, 'd', fObjectDistance, 's', fSensorRange, pSensor.GetSensorRange()
 
-	# Make Mark (Ignis) happier.:P
-	#if App.Game_GetCurrentPlayer().GetObjID() != pShip.GetObjID() and not App.g_kUtopiaModule.IsMultiplayer():
-	#	fMiss=fMiss*2.0
+		# Make Mark (Ignis) happier.:P
+		#if App.Game_GetCurrentPlayer().GetObjID() != pShip.GetObjID() and not App.g_kUtopiaModule.IsMultiplayer():
+		#	fMiss=fMiss*2.0
 
-	if fMiss <= 0.0:
-		pSystem.StartFiring(pTarget, pShip.GetTargetOffsetTG())
-		pSystem.SetForceUpdate(1) # update and fire immediately
+		if fMiss <= 0.0:
+			pSystem.StartFiring(pTarget, pShip.GetTargetOffsetTG())
+			pSystem.SetForceUpdate(1) # update and fire immediately
 
-	else:
+		else:
 
-		kNewLocation = App.TGPoint3_GetRandomUnitVector()
-		# fMinDistance = 0.0
-		# fDistance = fMinDistance + (fMaxDistance - fMinDistance) * fMiss
+			kNewLocation = App.TGPoint3_GetRandomUnitVector()
+			# fMinDistance = 0.0
+			# fDistance = fMinDistance + (fMaxDistance - fMinDistance) * fMiss
 
-		# Scale the direction by the distance to get the position...
-		kNewLocation.Scale(fMiss)
-		kLocation = pShip.GetTargetOffsetTG()
-		kLocation.Add(kNewLocation)
+			# Scale the direction by the distance to get the position...
+			kNewLocation.Scale(fMiss)
+			kLocation = pShip.GetTargetOffsetTG()
+			kLocation.Add(kNewLocation)
 
-		pSystem.StartFiring(pTarget, kLocation)
-		pSystem.SetForceUpdate(1) # update and fire immediately
+			pSystem.StartFiring(pTarget, kLocation)
+			pSystem.SetForceUpdate(1) # update and fire immediately
 
 def ApplyPseudoMonkeyPatch():
 	global newInnacurateFire, oldInnacurateFire
@@ -401,6 +405,8 @@ class FoolTargetingDef(FoundationTech.TechDef):
 		FoundationTech.TechDef.__init__(self, name)
 		self.pEventHandler = App.TGPythonInstanceWrapper()
 		self.pEventHandler.SetPyWrapper(self)
+		if necessaryToUpdate:
+			ApplyPseudoMonkeyPatch()
 
 	def Attach(self, pInstance):
 		pInstance.lTechs.append(self)
@@ -416,18 +422,18 @@ class FoolTargetingDef(FoundationTech.TechDef):
 			#print("First time, or already went to 0, then a new one appeared")
 			App.g_kEventManager.RemoveBroadcastHandler(App.ET_TORPEDO_ENTERED_SET, self.pEventHandler, "TorpEnteredSet") # ET_TORPEDO_ENTERED_SET is better, specially to prevent MIRVs from all of a sudden recovering the lock
 			App.g_kEventManager.AddBroadcastPythonMethodHandler(App.ET_TORPEDO_ENTERED_SET, self.pEventHandler, "TorpEnteredSet")
-			if necessaryToUpdate:
-				#print "oldInnacurateFire:", oldInnacurateFire
-				ApplyPseudoMonkeyPatch()
-				#print "oldInnacurateFire:", oldInnacurateFire
+			#if necessaryToUpdate:
+			#	#print "oldInnacurateFire:", oldInnacurateFire
+			#	ApplyPseudoMonkeyPatch()
+			#	#print "oldInnacurateFire:", oldInnacurateFire
 		else:
 			totalShips = totalShips + 1
 
 	def Detach(self, pInstance):
 		global necessaryToUpdate, totalShips, oldfunction
 		totalShips = totalShips - 1
-		if totalShips <= 0 and necessaryToUpdate:
-			RemovePseudoMonkeyPatch()
+		if totalShips <= 0:
+			#RemovePseudoMonkeyPatch()
 			App.g_kEventManager.RemoveBroadcastHandler(App.ET_TORPEDO_ENTERED_SET, self.pEventHandler, "TorpFired") 
 		pInstance.lTechs.remove(self)
 		#print "FoolTargeting: detached from ship."	
