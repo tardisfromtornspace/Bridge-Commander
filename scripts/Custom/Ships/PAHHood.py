@@ -55,3 +55,7 @@ Foundation.ShipDef.PAHHood.dTechs = {
 
 if menuGroup:           Foundation.ShipDef.PAHHood.RegisterQBShipMenu(menuGroup)
 if playerMenuGroup:     Foundation.ShipDef.PAHHood.RegisterQBPlayerShipMenu(playerMenuGroup)
+
+if Foundation.shipList._keyList.has_key(longName):
+     Foundation.ShipDef.__dict__[longName].friendlyDetails[2] = Foundation.shipList[longName].friendlyDetails[2]
+     Foundation.ShipDef.__dict__[longName].enemyDetails[2] = Foundation.shipList[longName].enemyDetails[2]
