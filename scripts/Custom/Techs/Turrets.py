@@ -40,7 +40,7 @@
 # NOTE: If the versioning being below 1.0 did not give you a hint, this is an experimental work-in-progress, it may be possible to find far more bugs
 # KNOWN UNINTENDED EFFECTS, BUGS, LIMITATIONS and other TO-DOs (By order of priority):
 
-# 0. Cleanup issues - when a ton of turrets have been placed, every few seconds the game frames drop regularly if a ship with that turret tech has those turrets active (but not when the turrets are inactive).
+# 0. Cleanup issues - when a ton of turrets have been placed, sometimes, every few seconds the game frames drop regularly if a ship with that turret tech has those turrets active (but not when the turrets are inactive).
 # 1. Functional turrets when firing may hit and damage the parent ship shields and subsystems with their phaser weaponry. Originally that also included torps and pulses if they required multiple fires too fast and if they were very big
 # and their spawn location was inside the parent ship model, but that got fixed for most cases. However, it is known it may sometimes still happen for torpedoes, and to a lesser degree, disruptors. Obviously if using aesthethic turrets
 # that will not happen.
@@ -989,7 +989,12 @@ def MatrixDet(matrix):
 # calls the MovingEvent class and returns its return value
 def MovingAction(pAction, oMovingEvent, pShip):
         debug(__name__ + ", MovingAction")
-        return oMovingEvent(pShip)
+        pShip = App.ShipClass_GetObjectByID(None, pShip.GetObjID())
+        if pShip:
+            pInstance = findShipInstance(pShip)
+            if pInstance:
+                return oMovingEvent(pShip)
+        return 0
 
 
 def AlertStateChanged(pObject, pEvent):
