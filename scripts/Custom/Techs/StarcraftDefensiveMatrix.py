@@ -1,6 +1,6 @@
 """
 #         Starcraft Defensive Matrix
-#         17th March 2024
+#         24th April 2024
 #         Based strongly on Shields.py by the FoundationTech team (and QuickBattleAddon.corboniteReflector() in Apollo's Advanced Technologies) and Turrets.py by Alex SL Gato, and based on SubModels by USS Defiant and their team.
 #################################################################################################################
 # This tech gives a ship a Defensive Matrix like on Starcraft.
@@ -49,7 +49,7 @@ import traceback
 
 #################################################################################################################
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.5",
+	    "Version": "0.55",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -421,16 +421,20 @@ class DefensiveMatrix(FoundationTech.TechDef):
 		pShip = App.ShipClass_Cast(App.TGObject_GetTGObjectPtr(pInstance.pShipID))
 		if pShip != None:
 			pShip.RemoveHandlerForInstance(App.ET_SUBSYSTEM_STATE_CHANGED, __name__ + ".SubsystemStateChanged")
-			App.g_kTimerManager.DeleteTimer(pInstance.__dict__["Starcraft Defensive Matrix TimeDeactivate"].GetObjID())
-			del pInstance.__dict__["Starcraft Defensive Matrix TimeDeactivate"]
-			del pInstance.__dict__["Starcraft Defensive Matrix TimeCooldown"]
-			del pInstance.__dict__["Starcraft Defensive Matrix Active"]
+			if pInstance.__dict__.has_key("Starcraft Defensive Matrix TimeDeactivate"):
+				App.g_kTimerManager.DeleteTimer(pInstance.__dict__["Starcraft Defensive Matrix TimeDeactivate"].GetObjID())
+			if pInstance.__dict__.has_key("Starcraft Defensive Matrix TimeDeactivate"):
+				del pInstance.__dict__["Starcraft Defensive Matrix TimeDeactivate"]
+			if pInstance.__dict__.has_key("Starcraft Defensive Matrix TimeCooldown"):
+				del pInstance.__dict__["Starcraft Defensive Matrix TimeCooldown"]
+			if pInstance.__dict__.has_key("Starcraft Defensive Matrix Active"):
+				del pInstance.__dict__["Starcraft Defensive Matrix Active"]
 		else:
 			#print "StarcraftDefensiveMatrix Error (at Detach): couldn't acquire ship of id", pInstance.pShipID
 			pass
 
-		
-		del pInstance.__dict__["Starcraft Defensive Matrix TimeDeactivate"]
+		if pInstance.__dict__.has_key("Starcraft Defensive Matrix TimeDeactivate"):
+			del pInstance.__dict__["Starcraft Defensive Matrix TimeDeactivate"]
 		pInstance.lTechs.remove(self)
 
 	# def Activate(self):
