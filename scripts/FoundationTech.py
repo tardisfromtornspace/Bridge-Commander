@@ -1103,7 +1103,6 @@ class RemoveShip(TriggerDef):
 		if not pShip:	return
 
 		sName = pShip.GetName()
-		print ("calling RemoveShip")
 		try:
 			pInstance = dShips[sName]
 			pInstance.DetachShipTechs()

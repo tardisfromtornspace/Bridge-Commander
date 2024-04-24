@@ -418,7 +418,7 @@ class Turrets(FoundationTech.TechDef):
         def DetachShip(self, iShipID, pInstance):
                 # get our Ship
                 debug(__name__ + ", DetachShipE")
-                print "called detach ship"
+                #print "called DetachShip"
                 pShip = App.ShipClass_GetObjectByID(None, iShipID)
 
                 if pShip:
