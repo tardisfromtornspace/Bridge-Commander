@@ -40,7 +40,7 @@ class FiveSecsGodPhaser(FoundationTech.TechDef):
 			pass
 			#print "FiveSecsGodPhaser Error (at Attach): couldn't acquire ship of id", pInstance.pShipID
 		pInstance.lTechs.append(self)
-		#print "FSGP: attached to ship:", pShip.GetName()
+		print "FSGP: attached to ship:", pShip.GetName()
 	def Detach(self, pInstance):
 		pShip = App.ShipClass_Cast(App.TGObject_GetTGObjectPtr(pInstance.pShipID))
 		if pShip != None:
@@ -49,7 +49,7 @@ class FiveSecsGodPhaser(FoundationTech.TechDef):
 			#print "FiveSecsGodPhaser Error (at Detach): couldn't acquire ship of id", pInstance.pShipID
 			pass
 		pInstance.lTechs.remove(self)
-		#print "FSGP: detached from ship:", pShip.GetName()
+		print "FSGP: detached from ship:", pShip.GetName()
 
 
 	def PhaserStartedHitting(self, pEvent):

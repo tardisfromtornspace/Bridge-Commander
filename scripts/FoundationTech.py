@@ -1094,7 +1094,7 @@ def ClearShip(dShips, sName):
 	debug(__name__ + ", ClearShip")
 	del dShips[sName]
 
-
+import traceback
 # Removes a ships and shuts down its properties
 class RemoveShip(TriggerDef):
 	def __call__(self, pObject, pEvent):
@@ -1103,6 +1103,7 @@ class RemoveShip(TriggerDef):
 		if not pShip:	return
 
 		sName = pShip.GetName()
+		print ("calling RemoveShip")
 		try:
 			pInstance = dShips[sName]
 			pInstance.DetachShipTechs()
@@ -1111,6 +1112,8 @@ class RemoveShip(TriggerDef):
 			pInstance.pShipID = None
 			ClearShip(dShips, sName)
 		except KeyError:
+			print "Key error while calling FoundationTech.RemoveShip -->"
+			traceback.print_exc()
 			pass
 
 		pObject.CallNextHandler(pEvent)

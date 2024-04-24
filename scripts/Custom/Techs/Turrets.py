@@ -1,6 +1,6 @@
 """
 #         Turrets
-#         21st April 2024
+#         24th April 2024
 #         Based strongly on SubModels.py by USS Defiant and their team, and AutoTargeting.py by USS Frontier.
 #         Also based slightly on AdvancedTorpedoManagement.py from BCSTB Team, the Borg Technology from Alex SL Gato, and ConditionInLineOfSight by the original STBC team
 #         Special thanks to USS Sovereign and Gizmo_3.
@@ -40,8 +40,7 @@
 # NOTE: If the versioning being below 1.0 did not give you a hint, this is an experimental work-in-progress, it may be possible to find far more bugs
 # KNOWN UNINTENDED EFFECTS, BUGS, LIMITATIONS and other TO-DOs (By order of priority):
 
-# 0. Cleanup issues - when a ton of turrets have been placed, every few seconds the game frames drop regularly if a ship with that turret tech has those turrets active (but not when the turrets are inactive). We noticed that, for some
-# reason, the pInstance never calls to clean this technology
+# 0. Cleanup issues - when a ton of turrets have been placed, every few seconds the game frames drop regularly if a ship with that turret tech has those turrets active (but not when the turrets are inactive).
 # 1. Functional turrets when firing may hit and damage the parent ship shields and subsystems with their phaser weaponry. Originally that also included torps and pulses if they required multiple fires too fast and if they were very big
 # and their spawn location was inside the parent ship model, but that got fixed for most cases. However, it is known it may sometimes still happen for torpedoes, and to a lesser degree, disruptors. Obviously if using aesthethic turrets
 # that will not happen.
@@ -146,7 +145,7 @@ import MissionLib
 
 #################################################################################################################
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.997",
+	    "Version": "0.998",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -419,7 +418,7 @@ class Turrets(FoundationTech.TechDef):
         def DetachShip(self, iShipID, pInstance):
                 # get our Ship
                 debug(__name__ + ", DetachShipE")
-                #print "called detach ship"
+                print "called detach ship"
                 pShip = App.ShipClass_GetObjectByID(None, iShipID)
 
                 if pShip:
@@ -1070,7 +1069,7 @@ def CloakShip(pNacelleID, decloak=0):
 
 def CloakHandler(pObject, pEvent):
         debug(__name__ + ", CloakHandler")
-        pInstance = FoundationTech.dShips[pObject.GetName()]
+        pInstance = findShipInstance(pObject)
 
         pShip = App.ShipClass_GetObjectByID(None, pInstance.pShipID) # App.ShipClass_Cast(App.TGObject_GetTGObjectPtr(pInstance.pShipID))
 
@@ -1099,7 +1098,7 @@ def CloakHandler(pObject, pEvent):
 
 def DecloakHandler(pObject, pEvent):
         debug(__name__ + ", DecloakHandler")
-        pInstance = FoundationTech.dShips[pObject.GetName()]
+        pInstance = findShipInstance(pObject)
 
         pShip = App.ShipClass_GetObjectByID(None, pInstance.pShipID) #App.ShipClass_Cast(App.TGObject_GetTGObjectPtr(pInstance.pShipID))
 
@@ -2004,7 +2003,7 @@ def PartsForWeaponState(pShip, weaponsActive=None):
         if App.g_kUtopiaModule.IsMultiplayer() and not App.g_kUtopiaModule.IsHost():
                 return
         
-        pInstance = FoundationTech.dShips[pShip.GetName()]
+        pInstance = findShipInstance(pShip)
         iType = pShip.GetAlertLevel()
         iLongestTime = 0.0
         dHardpoints = {}
@@ -2052,7 +2051,7 @@ def PartsForWeaponTurretState(pShip):
         if App.g_kUtopiaModule.IsMultiplayer() and not App.g_kUtopiaModule.IsHost():
                 return
         
-        pInstance = FoundationTech.dShips[pShip.GetName()]
+        pInstance = findShipInstance(pShip)
 
         iLongestTime = 0.0
         dHardpoints = {}
@@ -2174,7 +2173,7 @@ def StartingWarp(pObject, pEvent):
                 return
         
         pShip = App.ShipClass_GetObjectByID(None, pObject.GetObjID())
-        pInstance = FoundationTech.dShips[pShip.GetName()]
+        pInstance = findShipInstance(pShip)
         iLongestTime = 0.0
         oTurrets.SetBattleTurretListenerTo(pShip, 0)
         IncCurrentMoveID(pShip, pInstance)
@@ -2254,7 +2253,7 @@ def GetStartWarpNacellePositions(pShip):
         if not FoundationTech.dShips.has_key(pShip.GetName()):
                 return []
         
-        pInstance = FoundationTech.dShips[pShip.GetName()]
+        pInstance = findShipInstance(pShip)
         if hasattr(pInstance, "OptionsList"):
                 for item in pInstance.OptionsList:
                         if item[0] == "Setup":
@@ -2282,7 +2281,7 @@ def ExitingWarp(pAction, pShip):
                 debug(__name__ + ", ExitingWarp Return not host")
                 return 0
         
-        pInstance = FoundationTech.dShips[pShip.GetName()]
+        pInstance = findShipInstance(pShip)
         iLongestTime = 0.0
 
         oTurrets.SetBattleTurretListenerTo(pShip, 0) # We clearly indicate we are in combat mode, but doing a thing
