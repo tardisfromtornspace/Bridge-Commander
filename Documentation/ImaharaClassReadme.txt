@@ -1,4 +1,6 @@
 == Changelog ==
+1.0.3 to 1.0.5
+* Updated some scripts, including AdvArmourTechThree to 1.7, finally fixing the tech bug that left some ships in the black.
 1.0.2
 * Small fix to some techs so the Breen Drainer Immunity doesn't break them.
 * Removed Time Vortex torpedo - it should not be there. Thanks for THE SCCI-FI KING for pointing it out!

@@ -1,6 +1,7 @@
 This mod was changed by narrowcwyfe and Alex SL Gato.
 
 ===Changelog===
+0.9.8 - Updated AdvArmorTechThree to 1.7, finally fixing the dark-themed bug mentioned in Known issues.
 0.9.7 - After the armour fixes, the bleedthrough is noticeably reduced, meaning that the ArmouredVoyager does not require such fast-regenerating shields. So those have been adjusted to a more regular shield.
 0.9.3 - Removed some techs the ship does not use, plus a weird armour bug - thanks for Grey for noticing.
 0.9.2 - Removed additional, unnecessary TimeVortex.py Tech script that was causing problems - thanks THE SCI-FI King for that
@@ -8,7 +9,7 @@ This mod was changed by narrowcwyfe and Alex SL Gato.
 0.9 - Early beta release.
 * Please notice we've decided to release this mod early so RetroBadger can see it before their own releases.
 ** Known issues **:
-- Activating the plating with the Plating button instead of the Mvam may leave your ship in the dark for a few seconds. Visual bug, does not affect gameplay.
+- Activating the plating with the Plating button instead of the Mvam may leave your ship in the dark for a few seconds. Visual bug, does not affect gameplay. - FIXED AS OF 0.9.8
 - There's a missing glow in one model. Visual bug, does not affect gameplay.
 
 ===What does this mod do===

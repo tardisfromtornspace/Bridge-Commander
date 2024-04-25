@@ -1,4 +1,6 @@
 == Changelog ==
+1.1.2 - Bug fixing
+ * Upgraded AdvArmorTechThree to 1.7, eliminating the dark-glow issue.
 1.1.0 to 1.1.1 - Bug fixing
  * Upgraded Simulated Point Defence from 0.91 to 0.92, reducing ship collision issues.
 1.0.6 to 1.0.9 - Bug fixing

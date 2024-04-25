@@ -3,6 +3,8 @@ Modifications made by Alex SL Gato
 Special Thanks to 𝕟𝕒𝕣𝕣𝕠𝕨𝕔𝕨𝕪𝕗𝕖#0007 for driving me to complete this mod for their Voyager-J mod, as well as for some help with the PhasedTorp scripts.
 
 ===Changelog===
+1.4.2 to 1.4.3 - Improvements to the armour to 1.7 which eliminate the no-glow issue.
+1.4 - Total bug fix to the armour
 1.3 - Partial Bug Fix on rare bug of the armour when facing a ship stronger than Grey's the Exile (thanks Grey)
 1.2.3 - Notable bug fix with Hopping Torpedo crashing if the ship who fired it died - thanks Grey for pointing it out!
 1.2.2 - Small bug fix with Hopping Torpedo - now Drones should work normally on unshielded vessels

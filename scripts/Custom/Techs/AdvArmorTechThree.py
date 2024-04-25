@@ -8,7 +8,7 @@ import math
 from bcdebug import debug
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-            "Version": "1.6",
+            "Version": "1.7",
             "License": "LGPL",
             "Description": "Read info below for better understanding"
             }
@@ -289,6 +289,24 @@ def ReplaceModel(pShip, sNewShipScript):
 	if App.g_kUtopiaModule.IsMultiplayer():
 		MPSentReplaceModelMessage(pShip, sNewShipScript)
 
+	# Because hiding and unhiding the ship does not seem to do the job of fixing the weird lack of lights, but something like this dumb thing below does :/
+	from ftb.Tech.ATPFunctions import *
+
+	point = pShip.GetWorldLocation()
+	pHitPoint = App.TGPoint3()
+	pHitPoint.SetXYZ(point.x, point.y, point.z)
+
+	pVec = pShip.GetVelocityTG()
+	pVec.Scale(0.001)
+	pHitPoint.Add(pVec)
+
+	mod = "Tactical.Projectiles.AutomaticSystemRepairDummy" 
+	try:
+		pTempTorp = FireTorpFromPointWithVector(pHitPoint, pVec, mod, pShip.GetObjID(), pShip.GetObjID(), __import__(mod).GetLaunchSpeed())
+		pTempTorp.SetLifetime(0.0)
+	except:
+		print "You are missing 'Tactical.Projectiles.AutomaticSystemRepairDummy' torpedo on your install, without that a weird black-texture-until-firing-or-fired bug may happen"
+
 def AdvArmorPlayer(): # For player
 	global AdvArmorRecord
 	global ArmorButton
@@ -433,6 +451,21 @@ def GetAdvArmor(pShip):
 	pShip.EndGetSubsystemMatch(pIterator)
 	return(pAdvArmor)
 
+def findShipInstance(pShip):
+        debug(__name__ + ", findShipInstance")
+        pInstance = None
+        try:
+            if not pShip:
+                return pInstance
+            if FoundationTech.dShips.has_key(pShip.GetName()):
+                pInstance = FoundationTech.dShips[pShip.GetName()]
+            #if pInstance == None:
+            #        print "After looking, no pInstance for ship:", pShip.GetName(), "How odd..."
+        except:
+            pass
+
+        return pInstance
+
 # called when armor button is clicked
 def AdvArmorTogglePlayer(pObject, pEvent):
 	global AdvArmorRecord
@@ -443,6 +476,10 @@ def AdvArmorTogglePlayer(pObject, pEvent):
 	global sOriginalShipScript
 	pShip=MissionLib.GetPlayer()
 	pShipModule=__import__(pShip.GetScript())
+
+	pInstance = findShipInstance(pShip)
+        if not pInstance or not pInstance.__dict__.has_key("Adv Armor Tech"):
+		return
 
 	try:
 		armor_ratio=pShipModule.GetArmorRatio()
