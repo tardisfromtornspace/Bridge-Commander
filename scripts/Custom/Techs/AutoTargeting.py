@@ -78,10 +78,9 @@ class AutoTargetingTech(FoundationTech.TechDef):
 		pInstance.lTechs.remove(self)
 
 
+pATSButton = None    #AutoTargeting Switch
+ET_AT_SWITCH = None  #AutoTargeting Switch Event code
 class AutoTargetHandler:
-	pATSButton = None    #AutoTargeting Switch
-	ET_AT_SWITCH = None  #AutoTargeting Switch Event code
-
 	def __init__(self, pShip):
 		self.Ship = pShip
 		self.pEventHandler = None
@@ -92,15 +91,21 @@ class AutoTargetHandler:
 		self.dSysTargs = {}
 		self.dSysTimes = {}
 	def Initialize(self):
+		global pATSButton, ET_AT_SWITCH
 		#print "initialized Auto Target Handler for ship", self.Ship.GetName()
 		self.pEventHandler = App.TGPythonInstanceWrapper()
 		self.pEventHandler.SetPyWrapper(self)
 		App.g_kEventManager.RemoveBroadcastHandler(App.ET_WEAPON_FIRED, self.pEventHandler, "WeaponFired")
 		App.g_kEventManager.AddBroadcastPythonMethodHandler(App.ET_WEAPON_FIRED, self.pEventHandler, "WeaponFired")
+
+		#import QuickBattle.QuickBattle
+		#App.g_kEventManager.RemoveBroadcastHandler(QuickBattle.QuickBattle.ET_END_SIMULATION, self.pEventHandler, "_deleteButton")
+		#App.g_kEventManager.AddBroadcastPythonMethodHandler(QuickBattle.QuickBattle.ET_END_SIMULATION, self.pEventHandler, "_deleteButton")
+
 		#handling button
 		pPlayer = App.Game_GetCurrentPlayer()
 		if pPlayer.GetObjID() == self.Ship.GetObjID():
-			if self.pATSButton == None:
+			if pATSButton == None:
 				pBridge = App.g_kSetManager.GetSet("bridge")
 				pTac = App.CharacterClass_GetObject(pBridge, "Tactical")
 				if pTac == None:
@@ -108,32 +113,40 @@ class AutoTargetHandler:
 				pTacMenu = pTac.GetMenu()
 				if pTacMenu == None:
 					return
-				self.ET_AT_SWITCH = App.Mission_GetNextEventType()
+				ET_AT_SWITCH = App.Mission_GetNextEventType()
 				pEvent = App.TGIntEvent_Create()
-				pEvent.SetEventType(self.ET_AT_SWITCH)
+				pEvent.SetEventType(ET_AT_SWITCH)
 				pEvent.SetDestination(pTacMenu)
 				pEvent.SetInt(1)
-				self.pATSButton = App.STButton_CreateW(App.TGString("AutoTargeting: ON"), pEvent)
-				pTacMenu.AddChild(self.pATSButton)
-				App.g_kEventManager.AddBroadcastPythonMethodHandler(self.ET_AT_SWITCH, self.pEventHandler, "ATSwitch_Click")
+				pATSButton = App.STButton_CreateW(App.TGString("AutoTargeting: ON"), pEvent)
+				pTacMenu.AddChild(pATSButton)
+				App.g_kEventManager.AddBroadcastPythonMethodHandler(ET_AT_SWITCH, self.pEventHandler, "ATSwitch_Click")
 			else:
-				self.pATSButton.SetVisible()
-				self.pATSButton.SetEnabled()
+				pATSButton.SetVisible()
+				pATSButton.SetEnabled()
 	def ATSwitch_Click(self, pEvent):
+		global pATSButton
 		if self.Online == 1:
 			self.Online = 0
-			self.pATSButton.SetName(App.TGString("AutoTargeting: OFF"))
+			pATSButton.SetName(App.TGString("AutoTargeting: OFF"))
 		elif self.Online == 0:
 			self.Online = 1
-			self.pATSButton.SetName(App.TGString("AutoTargeting: ON"))
+			pATSButton.SetName(App.TGString("AutoTargeting: ON"))
 	def Close(self):
+		global pATSButton
 		App.g_kEventManager.RemoveBroadcastHandler(App.ET_WEAPON_FIRED, self.pEventHandler, "WeaponFired")
 		pPlayer = App.Game_GetCurrentPlayer()
 		if pPlayer.GetObjID() == self.Ship.GetObjID():
-			if self.pATSButton != None:
-				self.pATSButton.SetNotVisible()
-				self.pATSButton.SetDisabled()
+			if pATSButton != None:
+				pATSButton.SetNotVisible()
+				pATSButton.SetDisabled()
 		#print "closed Auto Target Handler for ship", self.Ship.GetName()
+	def _deleteButton(self, pEvent):
+		global pATSButton
+		if pPlayer.GetObjID() == self.Ship.GetObjID():
+			if pATSButton != None:
+				pATSButton.SetNotVisible()
+				pATSButton.SetDisabled()
 	def SetPulseTargets(self, x):
 		self.pulseTargets = x
 	def SetPhaserTargets(self, x):
