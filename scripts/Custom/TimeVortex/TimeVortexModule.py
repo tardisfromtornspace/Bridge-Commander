@@ -1607,8 +1607,9 @@ def AdditionalPosAndCheck(pObject, pEvent):
                 pSequence.AddAction(pAction, None, 5.5)
                 pAction = App.TGScriptAction_Create(__name__, "UnhidePlayer")
                 pSequence.AddAction(pAction, None, 6)
-                pAction = App.TGScriptAction_Create(__name__, "DisableHelmMenu")
-                pSequence.AddAction(pAction, None, 6.5)
+                # Under normal circumstances, we shold not allow the Helm to do things. However, due to the crazy things we have seen the Doctor do... I'll allow it, under your own risk
+                #pAction = App.TGScriptAction_Create(__name__, "DisableHelmMenu")
+                #pSequence.AddAction(pAction, None, 6.5)
                 pAction = App.TGScriptAction_Create(__name__, "ClearAIs")
                 pSequence.AddAction(pAction, None, 6.5)
                 pAction = App.TGScriptAction_Create("Actions.CameraScriptActions", "CutsceneCameraEnd", pPlayer.GetContainingSet().GetName())

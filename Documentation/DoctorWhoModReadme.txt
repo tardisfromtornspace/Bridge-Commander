@@ -1,4 +1,14 @@
 === Changelong ===
+1.1.8
+* For bug fixing and fairness:
+** Updated TimeVortexTorp to 0.2 (as, versioning number, the previous one was 0.1):
+*** Now a ship pushed into the TimeVortex will be kinetically pushed correctly, and only when they are pushed into the TimeVortex.
+*** Small tweaks for more stability during Time Vortex battles. Now if a ship dies on the time vortex, the time vortex will change colour to indicate "the time vortex is unstable due to heavy battle".
+** Updated TimeVortexModule to 0.2: now we allow Helm window to be open, even if it's just to allow to do some of the things a TARDIS can do, and because it should be fair to allow the ship with the tech to have that menu, when those pushed to the TimeVortex by the torpedoes still have the Helm window.
+1.1.7
+* Updated AutoTargeting script to the 2009 version, no more duplicated autotargeting buttons issue.
+1.1.6
+* Improved AdvArmorTechThree to 1.7, fixing the dark-glow bug.
 1.1.5
 * Improved Simulated Point Defence to 0.92, reducing ship collision chances.
 1.1.4

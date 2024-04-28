@@ -1,3 +1,12 @@
+#################################################################################################################
+# THIS FILE IS NOT SUPPORTED BY ACTIVISION
+# THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
+#         TimeVortexTorp.py by Alex SL Gato
+#         28th April 2024
+#         Based strongly on the Slipstream scripts by USS Sovereign, plus the FTech scripts by the FoundationTechnologies team.
+#         Also please note, this tech is meant to be used alongside the TimeVortex Drive tech, which is a superficial but separate
+#         mod (that is, it does not overwrite Slipstream scripts) of the Slipstream scripts as well.
+#################################################################################################################
 # TODO: 1. Create Read Me
 #	2. Create a clear guide on how to add this...
 #
@@ -19,16 +28,31 @@ Foundation.ShipDef.Ambassador.dTechs = {
 	"TimeVortex Torpedo Immune": 1
 }
 """
+#################################################################################################################
+from bcdebug import debug
+import traceback
 
 import App
 
+import Actions.MissionScriptActions
+import Bridge.BridgeUtils
+import Lib.LibEngineering
+import loadspacehelper
+import MissionLib
+import nt
 import string
 
-import MissionLib
-import loadspacehelper
-import nt
-import Actions.MissionScriptActions
 from Custom.TimeVortex.Libs import DS9FXMenuLib
+from Custom.UnifiedMainMenu.ConfigModules.Options.SavedConfigs import TimeVortexConfiguration
+from Custom.TimeVortex import TimeVortexModule
+
+#################################################################################################################
+MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
+	    "Version": "0.2",
+	    "License": "LGPL",
+	    "Description": "Read the small title above for more info"
+	    }
+#################################################################################################################
 
 global lImmunePhaseShips # Some ships immune to this blow
 lImmunePhaseShips = (
@@ -45,27 +69,79 @@ try:
 	from ftb.Tech.ATPFunctions import *
 	from math import *
 
+	bOverflow = 0
+
 	class TimeVortexTorpedo(FoundationTech.TechDef):
 		def __init__(self, name, dict = {}):
+			debug(__name__ + ", __init__")
 			FoundationTech.TechDef.__init__(self, name, FoundationTech.dMode)
 			self.lYields = []
 			self.__dict__.update(dict)
 			self.lFired = []
 
+			self.pEventHandler = App.TGPythonInstanceWrapper()
+			self.pEventHandler.SetPyWrapper(self)
+
+			self.pDummy = __import__("Systems.TimeVortexTunnel.TimeVortexTunnel1")
+			#self.pDummy.Initialize()
+			#App.g_kEventManager.RemoveBroadcastHandler(Foundation.TriggerDef.ET_FND_CREATE_PLAYER_SHIP, self.pEventHandler, "PlayerRespawned")
+			#App.g_kEventManager.AddBroadcastPythonMethodHandler(Foundation.TriggerDef.ET_FND_CREATE_PLAYER_SHIP, self.pEventHandler, "PlayerRespawned")
+			App.g_kEventManager.RemoveBroadcastHandler(App.ET_MISSION_START, self.pEventHandler, "MissionRespawned")
+			App.g_kEventManager.AddBroadcastPythonMethodHandler(App.ET_MISSION_START, self.pEventHandler, "MissionRespawned")
+
+
 		def IsTimeVortexYield(self):
+			debug(__name__ + ", IsTimeVortexYield")
 			return 1
 
-
 		def PhaseYield(self):
+			debug(__name__ + ", PhaseYield")
+			return 0
+
+		def IsPhaseYield(self):
+			debug(__name__ + ", IsPhaseYield")
 			return 0
 
 		def IsDrainYield(self):
+			debug(__name__ + ", IsDrainYield")
 			return 0
 
-		def OnYield(self, pShip, pInstance, pEvent, pTorp):
+		def PlayerRespawned(self, pEvent):
+			debug(__name__ + ", PlayerRespawned")
+			global bOverflow
+			if bOverflow == 0:
+				bOverflow = 1
+				pTimeVortexSet = self.InitializeTimeVortexSet()
+			#pTimeVortexSet = self.InitializeTimeVortexSet()
 
-			kShip=App.ShipClass_Cast(pEvent.GetDestination())
-			if (kShip==None):
+		def MissionRespawned(self, pEvent):
+			debug(__name__ + ", PlayerRespawned")
+			global bOverflow
+			if bOverflow == 0:
+				bOverflow = 1
+				pTimeVortexSet = self.InitializeTimeVortexSet()
+			#pTimeVortexSet = self.InitializeTimeVortexSet()
+
+		def InitializeTimeVortexSet(self):
+			#TO-DO CHECK WHAT OF THIS CAUSES A CRASH
+			#pDummy = __import__("Systems.TimeVortexTunnel.TimeVortexTunnel1")
+			
+			#UPDATE: APPARENTLY INITILIALIZING DURING THE IMPACT CAUSES SOME SCRIPT TO CRASH - FORTUNATELY INITILIALIZING AT THE BEGINNING OF THE MISSION DOES NOT CAUSE THIS ISSUE
+			#self.pDummy.Initialize()
+			#TO-DO EXTRA TRY IF THIS DOES NOT CAUSE A CRASH - UPDATE AFTER TESTING, IT STILL CRASHES
+			MissionLib.SetupSpaceSet("Systems.TimeVortexTunnel.TimeVortexTunnel1")
+			pTimeVortexSet = self.pDummy.GetSet()
+
+			#OLD ONE Systems.TimeVortexTunnel.TimeVortexTunnel1.LoadPlacements(Systems.TimeVortexTunnel.TimeVortexTunnel1.GetSetName())
+			#self.pDummy.LoadPlacements(self.pDummy.GetSetName())
+			#print "DummySetName is ", self.pDummy.GetSetName()
+			return pTimeVortexSet
+
+		def OnYield(self, pShip, pInstance, pEvent, pTorp):
+			debug(__name__ + ", OnYield")
+			#kShip=App.ShipClass_Cast(pEvent.GetDestination()) # TO-DO maybe pShip = kShip?
+			kShip = App.ShipClass_GetObjectByID(None, pShip.GetObjID())
+			if pShip == None or kShip == None or pShip.IsDead() or pShip.IsDying():
 				return
 
 			import Systems.TimeVortexTunnel.TimeVortexTunnel
@@ -76,13 +152,10 @@ try:
 			if App.g_kSetManager.GetSet("TimeVortexTunnel1"):
 				pTimeVortexSet = App.g_kSetManager.GetSet("TimeVortexTunnel1")
 			else:
-				pDummy = __import__("Systems.TimeVortexTunnel.TimeVortexTunnel1")
-				pDummy.Initialize()
-				pTimeVortexSet = pDummy.GetSet()
-				Systems.TimeVortexTunnel.TimeVortexTunnel1.LoadPlacements(Systems.TimeVortexTunnel.TimeVortexTunnel1.GetSetName())
+				print "Need to add the vortex tunnel system"
+				pTimeVortexSet = self.InitializeTimeVortexSet()
 
 			pSet = kShip.GetContainingSet()
-
 
 			vNiWorldHitPoint=pEvent.GetWorldHitPoint()
 			vWorldHitPoint=App.TGPoint3()
@@ -94,23 +167,13 @@ try:
 			# Time Vortex
 			# Do not do a thing if we are already in the Vortex
 
-			if (pSet == None):
+			if (pSet == None) or (pTimeVortexSet == None) or pSet.GetName() == pTimeVortexSet.GetName() or pSet.GetName() == "TimeVortexTunnel1":
 				return
-
-			if pSet.GetName() == pTimeVortexSet.GetName() or pSet.GetName() == "TimeVortexTunnel1":
-				return
-
-			# Repel Ship
-			vVelocity = pShip.GetWorldLocation()
-			vVelocity.Subtract(vWorldHitPoint)
-			vVelocity.Unitize()
-			vVelocity.Scale(100)
-			pShip.SetVelocity(vVelocity)
 
 			if not App.ShipClass_GetObject(pTimeVortexSet, kShip.GetName()):
 				pPlayer = App.Game_GetCurrentPlayer()
 
-				if kShip.GetName() == pPlayer.GetName():
+				if kShip.GetObjID() == pPlayer.GetObjID():
 					
 
 					# Get the old set
@@ -132,27 +195,40 @@ try:
 				pTimeVortexSet.AddObjectToSet(kShip, kShip.GetName())
 				
 				
-				if kShip.GetName() == pPlayer.GetName():
+				if kShip.GetObjID() == pPlayer.GetObjID():
 					# Small fix for players
 					pTop = App.TopWindow_GetTopWindow()
 					pTop.ForceTacticalVisible()
 					pTop.ForceBridgeVisible()
 
 					# The attacker will follow you evem if their drive doesn't permit it
-					pAttacker = App.ShipClass_GetObjectByID(pTorp.GetContainingSet(), pTorp.GetParentID())
+					pAttacker = App.ShipClass_GetObjectByID(None, pTorp.GetParentID()) #App.ShipClass_GetObjectByID(pTorp.GetContainingSet(), pTorp.GetParentID())
 					if pAttacker == None:
 						return
 
 					pTimeVortexSet.AddObjectToSet(pAttacker, pAttacker.GetName())
 
-					pAttacker.SetVelocity(0)
+					try:
+						vWorldHitPoint=App.TGPoint3()
+						vWorldHitPoint.SetXYZ(0,0,0)
+						pAttacker.SetVelocity(vWorldHitPoint)
+					except:
+						pass
 
 					pAttacker.UpdateNodeOnly()
 					pAttacker.AddPythonFuncHandlerForInstance(App.ET_OBJECT_DESTROYED, __name__ + ".ObjectDestroyed")
 
 					from Systems.TimeVortexTunnel.TimeVortexTunnel import *
 					Systems.TimeVortexTunnel.TimeVortexTunnel.CreateMenus()
-					App.SortedRegionMenu_ClearSetCourseMenu()
+					# Hm... should we remove warp engine ability...? Nah, let's assume the engineers of the ship are intelligent enough to use the Warp Field to open a rift on the Time Vortex or something.
+					#pHelmMenu = Bridge.BridgeUtils.GetBridgeMenu("Helm")
+					#if pHelmMenu:
+					#	warpButton = Lib.LibEngineering.GetButton("Warp", pHelmMenu)
+					#	if warpButton:
+					#		warpButton.SetDisabled()
+					#		pAttacker.AddPythonFuncHandlerForInstance(App.ET_EXITED_SET, __name__ + ".ReenableWarpButton")
+
+					#App.SortedRegionMenu_ClearSetCourseMenu()
 
 					# Purge memory when transfering between sets
 					App.g_kLODModelManager.Purge()
@@ -215,6 +291,20 @@ try:
 							fTunnel.RefreshReplacedTextures()
 							fTunnel2.RefreshReplacedTextures()
             	
+					# There no customization check for default presets
+					else:
+						reload(TimeVortexConfiguration)
+
+						if TimeVortexConfiguration.TunnelGFX != 'Default':
+							GFX = "scripts/Custom/TimeVortex/GFX/" + TimeVortexConfiguration.TunnelGFX
+
+							fTunnel.ReplaceTexture(GFX, "outer_glow")
+							fTunnel2.ReplaceTexture(GFX, "outer_glow")
+
+							fTunnel.RefreshReplacedTextures()
+							fTunnel2.RefreshReplacedTextures()
+            	
+					TimeVortexModule.SwapBackdrops()
 
 					# Disable player collision with the cone
 					fTunnel.EnableCollisionsWith(pPlayer, 0)
@@ -240,7 +330,10 @@ try:
 
 					fTunnel2.AlignToVectors(pPlayerBackward, pPlayerDown)
 					fTunnel2.SetTranslate(pPlayerPosition)
-					fTunnel2.UpdateNodeOnly()        
+					fTunnel2.UpdateNodeOnly() 
+
+				pTorp.SetLifetime(0.0)       
+				pTorp.UpdateNodeOnly()
 
 				fTunnelA = MissionLib.GetShip("TimeVortex Outer", pTimeVortexSet) 
 				fTunnel2A = MissionLib.GetShip("TimeVortex Inner", pTimeVortexSet) 
@@ -261,6 +354,16 @@ try:
 				pProximityManager = pTimeVortexSet.GetProximityManager()
 				if (pProximityManager):
 					pProximityManager.UpdateObject (kShip)
+
+			# Repel Ship
+			vVelocity = pShip.GetWorldLocation()
+			vVelocity.Subtract(vWorldHitPoint)
+			vVelocity.Unitize()
+			vVelocity.Scale(100)
+			pShip.SetVelocity(vVelocity)
+
+			if (1==1): # TO-DO checking what causes the crash with gravityFX - apparently initializing the Dummy set crashes GravityFX
+				return
 			
 			return
 
@@ -268,11 +371,13 @@ try:
 			FoundationTech.dYields[path] = self
 
 	def ConvertPointNiToTG(point):
+		debug(__name__ + ", ConvertPointNiToTG")
 		retval = App.TGPoint3()
 		retval.SetXYZ(point.x, point.y, point.z)
 		return retval
 
 	def IsInList(item, list):
+		debug(__name__ + ", IsInList")
 		for i in list:
 			if item == i:
 				return 1
@@ -292,10 +397,13 @@ class TimeVortexTorpedoDef(FoundationTech.TechDef):
 
 	def OnTorpDefense(self, pShip, pInstance, pTorp, oYield, pEvent):
 		isThis = 0
-		try:
-			isThis = oYield.IsTimeVortexYield()
-		except:
-			isThis = 0
+
+		if oYield and hasattr(oYield, "IsTimeVortexYield"):
+			isThis = oYield.IsTimeVortexYield()			
+		#try:
+		#	isThis = oYield.IsTimeVortexYield()
+		#except:
+		#	isThis = 0
 		if oYield and isThis:
 			return 1
 
@@ -306,29 +414,42 @@ class TimeVortexTorpedoDef(FoundationTech.TechDef):
 oTimeVortexTorpedoImmunity = TimeVortexTorpedoDef('TimeVortex Torpedo Immune')
 
 def ObjectDestroyed(TGObject, pEvent):
+	debug(__name__ + ", ObjectDestroyed")
 	kShip = App.ShipClass_Cast(pEvent.GetDestination())
+	kShip = App.ShipClass_GetObjectByID(None, kShip.GetObjID())
 	if (kShip == None):
 		return
+
 	pTimeVortexSet = kShip.GetContainingSet()
 	#kShip.RemoveHandlerForInstance(App.ET_OBJECT_DESTROYED, __name__ + ".ObjectDestroyed")
+	try:
+		if App.g_kSetManager.GetSet("Belaruz4"):
 
-	import Systems.DeepSpace.DeepSpace
-	from Systems.DeepSpace.DeepSpace import *
+			pModule = App.g_kSetManager.GetSet("Belaruz4")
 
-
-
-	if App.g_kSetManager.GetSet("Belaruz4"):
-
-		pModule = App.g_kSetManager.GetSet("Belaruz4")
-
-	else:
+		else:
             
-		# Import the dest set & initialize it
-		import Systems.Belaruz.Belaruz4
-		Systems.Belaruz.Belaruz4.Initialize()	
-		pModule = App.g_kSetManager.GetSet("Belaruz4")
+			# Import the dest set & initialize it
+		
+			import Systems.Belaruz.Belaruz4
+			Systems.Belaruz.Belaruz4.Initialize()	
+			pModule = App.g_kSetManager.GetSet("Belaruz4")
 
-	pModule.AddObjectToSet(kShip, kShip.GetName())
-	pTimeVortexSet.DeleteObjectFromSet(kShip.GetName())
-	kShip.UpdateNodeOnly()
-	#TGObject.CallNextHandler(pEvent)
+		pModule.AddObjectToSet(kShip, kShip.GetName())
+		pTimeVortexSet.DeleteObjectFromSet(kShip.GetName())
+		kShip.UpdateNodeOnly()
+		#TGObject.CallNextHandler(pEvent)
+	except:
+		pass
+
+def ReenableWarpButton(TGObject, pEvent):
+	kShip = App.ShipClass_Cast(pEvent.GetDestination())
+	kShip = App.ShipClass_GetObjectByID(None, kShip.GetObjID())
+	if (kShip != None):
+		kShip.RemoveHandlerForInstance(App.ET_EXIT_SET, __name__ + ".ReenableWarpButton")
+
+	pHelmMenu = Bridge.BridgeUtils.GetBridgeMenu("Helm")
+	if pHelmMenu:
+		warpButton = Libs.LibEngineering.GetButton("Warp", pHelmMenu)
+		if warpButton and not warpButton.IsEnabled():
+			warpButton.SetEnabled()
