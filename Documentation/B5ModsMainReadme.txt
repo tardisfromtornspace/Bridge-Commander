@@ -1,4 +1,7 @@
 ==Changelog==
+1.2.2 -
+   Bug Fixes:
+   * Updated AutoTaergeting to the 2009 version, removing the multiple-buttons issue.
 1.2.1 -
    Bug Fixes:
    * Updated Fool Targeting Technology from 0.2 to 0.3, fixed small thing related with necessary update.

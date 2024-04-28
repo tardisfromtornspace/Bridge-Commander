@@ -1,6 +1,7 @@
 This mod was changed by narrowcwyfe and Alex SL Gato.
 
 ===Changelog===
+0.9.9 - Updated AutoTargeting script to the 2009 version, no more duplicated autotargeting buttons issue.
 0.9.8 - Updated AdvArmorTechThree to 1.7, finally fixing the dark-themed bug mentioned in Known issues.
 0.9.7 - After the armour fixes, the bleedthrough is noticeably reduced, meaning that the ArmouredVoyager does not require such fast-regenerating shields. So those have been adjusted to a more regular shield.
 0.9.3 - Removed some techs the ship does not use, plus a weird armour bug - thanks for Grey for noticing.

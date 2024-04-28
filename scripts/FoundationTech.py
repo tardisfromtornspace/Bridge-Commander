@@ -27,6 +27,9 @@ import Registry
 import string
 import TacticalInterfaceHandlers
 
+# TO-DO remove this?
+import traceback
+
 ##########################################################
 # Global variables
 ##########################################################
@@ -918,16 +921,41 @@ class ShipInstance(Propertied, FTBEventUser):
 	## DetachTechs() clears the ShipInstance of all technology references.
 	def DetachTechs(self):
 		debug(__name__ + ", DetachTechs")
+		print ("called DetachTechs")
+		print "self.pShipID: ", self.pShipID 
 		if self.pShipID:
-			self.DetachShipTechs()
-		
+			try:
+				self.DetachShipTechs()
+			except:
+				print "Error in FoundationTech.DetachTechs:"
+				traceback.print_exc()
+
+		print("self.lTechs: ", self.lTechs)
 		for i in self.lTechs:
-			i.Detach(self)
+			print "DetachTechs: detaching ", i
+			try:
+				i.Detach(self)
+			except:
+				print "Error in FoundationTech.DetachTechs Detaching:"
+				traceback.print_exc()
+			print "DetachTechs: detached "
+		print "self.lTechs: ", self.lTechs
+		print ("end DetachTechs")
 
 	def DetachShipTechs(self):
 		debug(__name__ + ", DetachShipTechs")
+		print ("called DetachShipTechs")
+		print "self.lTechs: ", self.lTechs
 		for i in self.lTechs:
-			i.DetachShip(self.pShipID, self)
+			print "DetachShipTechs: detaching ", i
+			try:
+				i.DetachShip(self.pShipID, self)
+			except:
+				print "Error in FoundationTech.DetachShipTechs:"
+				traceback.print_exc()
+			print "DetachShipTechs: detached "
+		print "self.lTechs: ", self.lTechs
+		print ("end DetachShipTechs")
 
 
 	##########################################################
@@ -1094,7 +1122,7 @@ def ClearShip(dShips, sName):
 	debug(__name__ + ", ClearShip")
 	del dShips[sName]
 
-import traceback
+
 # Removes a ships and shuts down its properties
 class RemoveShip(TriggerDef):
 	def __call__(self, pObject, pEvent):
