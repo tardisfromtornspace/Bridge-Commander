@@ -921,8 +921,6 @@ class ShipInstance(Propertied, FTBEventUser):
 	## DetachTechs() clears the ShipInstance of all technology references.
 	def DetachTechs(self):
 		debug(__name__ + ", DetachTechs")
-		print ("called DetachTechs")
-		print "self.pShipID: ", self.pShipID 
 		if self.pShipID:
 			try:
 				self.DetachShipTechs()
@@ -930,32 +928,32 @@ class ShipInstance(Propertied, FTBEventUser):
 				print "Error in FoundationTech.DetachTechs:"
 				traceback.print_exc()
 
-		print("self.lTechs: ", self.lTechs)
+		tempTechs = []
 		for i in self.lTechs:
-			print "DetachTechs: detaching ", i
+			tempTechs.append(i)
+
+		for i in tempTechs:
 			try:
 				i.Detach(self)
 			except:
-				print "Error in FoundationTech.DetachTechs Detaching:"
+				print "Error in FoundationTech.DetachTechs:"
 				traceback.print_exc()
-			print "DetachTechs: detached "
-		print "self.lTechs: ", self.lTechs
-		print ("end DetachTechs")
+
+		del tempTechs
 
 	def DetachShipTechs(self):
 		debug(__name__ + ", DetachShipTechs")
-		print ("called DetachShipTechs")
-		print "self.lTechs: ", self.lTechs
+		tempTechs = []
 		for i in self.lTechs:
-			print "DetachShipTechs: detaching ", i
+			tempTechs.append(i)
+
+		for i in tempTechs:
 			try:
 				i.DetachShip(self.pShipID, self)
 			except:
 				print "Error in FoundationTech.DetachShipTechs:"
 				traceback.print_exc()
-			print "DetachShipTechs: detached "
-		print "self.lTechs: ", self.lTechs
-		print ("end DetachShipTechs")
+		del tempTechs
 
 
 	##########################################################

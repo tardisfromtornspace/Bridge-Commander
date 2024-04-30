@@ -1,4 +1,7 @@
 ==Changelog==
+1.2.3 -
+   Bug Fixes:
+   * Added autoload fix "FIX-FoundationTech20050703ShipInstanceDetach", which solves problems related with iterating lTechs when detaching and removing from such list.
 1.2.2 -
    Bug Fixes:
    * Updated AutoTaergeting to the 2009 version, removing the multiple-buttons issue.

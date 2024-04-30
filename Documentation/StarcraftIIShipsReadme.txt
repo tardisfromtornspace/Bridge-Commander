@@ -1,4 +1,5 @@
 == Changelog ==
+0.4.7 - Defensive Matrix 0.56.
 0.4.6 - Defensive Matrix 0.55.
 0.4.5 - Defensive Matrix 0.5, it seems I goofed somewhere and removed the progress I had, so I had to re-create it.
 0.4 - Defensive Matrix 0.4.

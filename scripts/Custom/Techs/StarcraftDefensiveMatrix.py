@@ -1,6 +1,6 @@
 """
 #         Starcraft Defensive Matrix
-#         24th April 2024
+#         30th April 2024
 #         Based strongly on Shields.py by the FoundationTech team (and QuickBattleAddon.corboniteReflector() in Apollo's Advanced Technologies) and Turrets.py by Alex SL Gato, and based on SubModels by USS Defiant and their team.
 #################################################################################################################
 # This tech gives a ship a Defensive Matrix like on Starcraft.
@@ -49,7 +49,7 @@ import traceback
 
 #################################################################################################################
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.55",
+	    "Version": "0.56",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -435,7 +435,7 @@ class DefensiveMatrix(FoundationTech.TechDef):
 
 		if pInstance.__dict__.has_key("Starcraft Defensive Matrix TimeDeactivate"):
 			del pInstance.__dict__["Starcraft Defensive Matrix TimeDeactivate"]
-		pInstance.lTechs.remove(self)
+		#pInstance.lTechs.remove(self) # DO NOT INCLUDE THIS ON DETACHSHIP, LET THE DEFAULT DETACH DO ITS JOB!
 
 	# def Activate(self):
 	# 	FoundationTech.oWeaponHit.Start()
