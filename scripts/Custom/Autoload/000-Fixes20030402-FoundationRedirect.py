@@ -6,6 +6,7 @@ import Foundation
 import Actions.EffectScriptActions ### Tisk tisk Dash, STOP Forgetting to import modules :P ###
 								   # Baby why you gotta make me hitchoo?! ;)  -Dash
 import App
+import MissionLib
 
 Foundation.TriggerDef.ET_FND_CREATE_SHIP = App.UtopiaModule_GetNextEventType()
 Foundation.TriggerDef.ET_FND_CREATE_PLAYER_SHIP = App.UtopiaModule_GetNextEventType()
@@ -224,7 +225,7 @@ if int(Foundation.version[0:8]) < 20030402:
 				if (((kSpecies == App.SPECIES_GALAXY) and (sShipClass != "Galaxy")) or
 					((kSpecies == App.SPECIES_SOVEREIGN) and (sShipClass != "Sovereign"))):
 					# Remove any old menus/handlers before setting up the new ship
-					DetachCrewMenus()
+					MissionLib.DetachCrewMenus()
 
 					pOldSet.DeleteObjectFromSet(pPlayer.GetName())
 				else:
@@ -232,7 +233,7 @@ if int(Foundation.version[0:8]) < 20030402:
 			else:
 				if (pOldSet != None):
 					# Remove any old menus/handlers before setting up the new ship
-					DetachCrewMenus()
+					MissionLib.DetachCrewMenus()
 
 					pOldSet.DeleteObjectFromSet(pPlayer.GetName())
 
