@@ -1,0 +1,33 @@
+== Changelog ==
+0.1 - first unofficial showcase of this mod, for feedback
+
+== What does this mod do ==
+This mod includes the Ship Of The Imagination (or S.O.T.I.) from Cosmos: "A Space-Time Odyssey" and relative music that will play when the ship
+
+Alongside the ship, a new tech by Alex SL Gato has been added, "SOTI Inexistance", which basically makes a ship untouchable as long as shields are active.
+
+Additionally, the Milkshape 3D file for this ship model are located under a .zip in data/Models/Ships/SOTI if you want to change it yourself.
+
+== Dependancies ==
+All of these must be installed before installing this mod, in this order:
+* Foundation + Kobayashi Maru (KM has Foundation already installed - the most recent version of KM, the better).
+
+== Credits ==
+* Everyone involved in Foundation - without you this would have been a real pain to do (please read the separate Foundation.txt license) - Banbury, Dasher42, DigitalFriend, MLeo, Nanobyte and Sleight42, among others.
+* Everyone involved in KM - specifically those involved in the creation of armour and Shields.py (FoundationTechnologies) the AdvArmorTech.py, FiveSecsGodPhaser.py, TractorBeams.py - Apollo from ATP Technologies as well.
+* Dasher42 for reminding me of licensing.
+* USS Sovereign and Elijah both for teaching me and helping me with the use of the tools.
+* That Guy... Brian for telling me to install Nifskope, it has proven to be very useful to me.
+* Alan Silvestri for the music.
+* Tools used: Milkshape 3D and FreeCAD for modifications and adjustments so it can run on STBC, Nifskope to validate the textures.
+** Original S.O.T.I model made by Thingiverse user marinosdrake  https://www.thingiverse.com/thing:362006, and is licensed under Creative Commons - Attribution - Non-Commercial (there are two extra readmes on Documentation for this one, "SOTI Model LICENSE.txt" and "SOTI Model README.txt").
+* Specular texture taken from "101 005 005 v057. CDL jw2.jpg" on the VS Battles Wiki, from FOX (Disney now I guess...).
+* Alex SL Gato (aka CharaToLoki) for any new code or model modifications, plus the ship icon for the game.
+
+Fulfilling both the SDK and LGPL licenses:
+THIS MOD IS NOT SUPPORTED BY ACTIVISION
+
+This mod falls under the GNU LESSER GENERAL PUBLIC LICENSE Version 3, 29 June 2007, both from any derivative or original work done to the mod. Everyone is permitted to copy and distribute verbatim copies of this mod. As per the LPGL license, everything in this mod is open for everybody to use, read and modify. Just do not forget to credit everyone involved and follow the LGPL license so derivatives of this code remain LGPL.
+
+== Bugs ==
+* No bugs detected, but if you notice them, please feel free to share and report them.
