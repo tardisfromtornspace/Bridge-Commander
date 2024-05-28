@@ -97,6 +97,10 @@ def SubsystemStateChanged(pObject, pEvent):
 		return
 
 	pShipID = pObject.GetObjID()
+
+	if not pShipID:
+		return
+
 	pShip = App.ShipClass_GetObjectByID(None, pShipID)
 	if not pShip:
 		return

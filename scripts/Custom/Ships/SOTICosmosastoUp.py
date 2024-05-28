@@ -6,6 +6,8 @@
 #                                                                                     #
 import Foundation
 import App
+from Custom.Autoload.RaceCosmosASTO import *
+
 #                                                                                     #
 #######################################################################################
 #                                                                                     #
@@ -35,7 +37,7 @@ credits = {
 # This is the ShipDef that adds the Ship to the game... BC-Mod Packager has           #
 # automatically generated the proper ShipDef Line for you.                            #
 #                                                                                     #
-Foundation.ShipDef.SOTICosmosastoUp = Foundation.FedShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile })
+Foundation.ShipDef.SOTICosmosastoUp = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "race": CosmosASTO })
 Foundation.ShipDef.SOTICosmosastoUp.dTechs = {
 	"SOTI Inexistance": 1,
 	"SOTI Size Change": {"Scale": 1.0, "Power": 3, "Types": [App.CT_WEAPON_SYSTEM]} 
