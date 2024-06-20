@@ -1,6 +1,6 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
-# 15th March 2024, by Alex SL Gato (CharaToLoki), partially based on the Shield.py script by the Foundation Technologies team and Dasher42's Foundation script, and the FedAblativeArmor.py found in scripts/ftb/Tech in KM 2011.10
+# 20th June 2024, by Alex SL Gato (CharaToLoki), partially based on the Shield.py script by the Foundation Technologies team and Dasher42's Foundation script, and the FedAblativeArmor.py found in scripts/ftb/Tech in KM 2011.10
 #
 # TODO: 1. Create Read Me
 #	2. Create a clear guide on how to add this...
@@ -59,7 +59,7 @@ Foundation.ShipDef.Ambassador.dTechs = {
 
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "1.31",
+	    "Version": "1.32",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -651,6 +651,8 @@ class BorgAdaptationDef(FoundationTech.TechDef):
 					try:
 						itemName = pTorp.GetModuleName()
 						if itemName != None:
+							if not normalWeaponAdaptation.has_key(itemName):
+								normalWeaponAdaptation[itemName] = 0
 							normalWeaponAdaptation[itemName] = self.NormalLearningCalculation(itemName, normalWeaponAdaptation[itemName], learningFactor, nonYieldAdaptationCounter, extraReductionAdaptationCycle)
 					except:
 						print "Error while assesing area targets for Borg Adaptation Scan"
@@ -687,6 +689,8 @@ class BorgAdaptationDef(FoundationTech.TechDef):
 						pTorp = App.Torpedo_Cast(pTarget)
 						itemName = pTorp.GetModuleName()
 						if itemName != None:
+							if not normalWeaponAdaptation.has_key(itemName):
+								normalWeaponAdaptation[itemName] = 0
 							normalWeaponAdaptation[itemName] = self.NormalLearningCalculation(itemName, normalWeaponAdaptation[itemName], scanAreaMultiplierBoost*learningFactor, nonYieldAdaptationCounter, extraReductionAdaptationCycle)
 					except:
 						print "something went wrong with Borg Adaptation technology (torpedo Scan)"
