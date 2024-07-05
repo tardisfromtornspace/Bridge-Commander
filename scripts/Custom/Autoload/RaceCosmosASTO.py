@@ -1,4 +1,7 @@
+import App
 import Foundation
+from bcdebug import debug
+
 MutatorDef = Foundation.MutatorDef
 shipList = Foundation.shipList
 
@@ -9,3 +12,6 @@ class CosmosASTOShipDef(Foundation.ShipDef):
 		debug(__name__ + ", __init__")
 		dict['race'] = CosmosASTO
 		Foundation.ShipDef.__init__(self, abbrev, species, dict)
+
+Foundation.CosmosASTO = CosmosASTO
+Foundation.CosmosASTOShipDef = CosmosASTOShipDef

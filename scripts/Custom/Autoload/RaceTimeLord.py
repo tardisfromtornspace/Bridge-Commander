@@ -1,4 +1,7 @@
+import App
 import Foundation
+from bcdebug import debug
+
 MutatorDef = Foundation.MutatorDef
 shipList = Foundation.shipList
 
