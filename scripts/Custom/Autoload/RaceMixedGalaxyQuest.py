@@ -12,3 +12,6 @@ class MixedGalaxyQuestShipDef(Foundation.ShipDef):
 		debug(__name__ + ", __init__")
 		dict['race'] = MixedGalaxyQuest
 		Foundation.ShipDef.__init__(self, abbrev, species, dict)
+
+Foundation.MixedGalaxyQuest = MixedGalaxyQuest
+Foundation.MixedGalaxyQuestShipDef = MixedGalaxyQuestShipDef

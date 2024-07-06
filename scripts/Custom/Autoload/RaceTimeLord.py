@@ -12,3 +12,6 @@ class TimeLordShipDef(Foundation.ShipDef):
 		debug(__name__ + ", __init__")
 		dict['race'] = TimeLord
 		Foundation.ShipDef.__init__(self, abbrev, species, dict)
+
+Foundation.TimeLord = TimeLord
+Foundation.TimeLordShipDef = TimeLordShipDef

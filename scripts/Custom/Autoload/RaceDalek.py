@@ -12,3 +12,6 @@ class DalekShipDef(Foundation.ShipDef):
 		debug(__name__ + ", __init__")
 		dict['race'] = Dalek
 		Foundation.ShipDef.__init__(self, abbrev, species, dict)
+
+Foundation.Dalek = Dalek
+Foundation.DalekShipDef = DalekShipDef
