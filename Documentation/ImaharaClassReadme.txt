@@ -1,4 +1,6 @@
 == Changelog ==
+1.0.7
+* Bugfix to RaceMixedGalaxyQuest, for an underlying bug that did not affect this mod, but could affect future versions of the mod.
 1.0.6
 * Updated Autotargeting script to 2009 version, so no more replicated buttons issue.
 1.0.3 to 1.0.5

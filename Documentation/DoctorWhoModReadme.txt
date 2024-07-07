@@ -1,4 +1,6 @@
 === Changelong ===
+1.1.9
+* Bug fixing: updated RaceDalek and RaceTimeLord for issue that did not affect this mod, but could affect future changes to the mod.
 1.1.8
 * For bug fixing and fairness:
 ** Updated TimeVortexTorp to 0.2 (as, versioning number, the previous one was 0.1):
