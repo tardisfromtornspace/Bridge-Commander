@@ -8,7 +8,7 @@ import math
 from bcdebug import debug
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-            "Version": "1.7",
+            "Version": "1.8",
             "License": "LGPL",
             "Description": "Read info below for better understanding"
             }
@@ -234,6 +234,9 @@ class AdvArmorTechTwoDef(FoundationTech.TechDef):
         def SubsystemStateChanged(pObject, pEvent):
                 debug(__name__ + ", SubsystemStateChanged")
                 pShip = App.ShipClass_Cast(pObject)
+		pShip = App.ShipClass_GetObjectByID(None, pShip.GetObjID())
+		if not pShip:
+			return
                 pSubsystem = pEvent.GetSource()
                 #print "Ship %s with AdvArmorTech2 has changed a subsystem" % repr(pShip)
 
@@ -250,6 +253,9 @@ oAdvArmorTechTwo = AdvArmorTechTwoDef("Adv Armor Tech")
 def SubsystemStateChanged(pObject, pEvent):
 	debug(__name__ + ", SubsystemStateChanged")
 	pShip = App.ShipClass_Cast(pObject)
+	pShip = App.ShipClass_GetObjectByID(None, pShip.GetObjID())
+	if not pShip:
+		return
 	pSubsystem = pEvent.GetSource()
 	#debug(__name__ + ", SubsystemStateChanged: Ship ", repr(pShip), "with AdvArmorTech2 has changed a subsystem")
 
@@ -265,6 +271,9 @@ def SubsystemStateChanged(pObject, pEvent):
 def SubDamage(pObject, pEvent):
 	debug(__name__ + ", SubDamage")
 	pShip = App.ShipClass_Cast(pObject)
+	pShip = App.ShipClass_GetObjectByID(None, pShip.GetObjID())
+	if not pShip:
+		return
 	if pShip:
 		AdvArmor(pShip)
 	pObject.CallNextHandler(pEvent)
@@ -278,9 +287,9 @@ def SubDamagePlayer(pObject, pEvent):
 # Replaces the Model of pShip
 def ReplaceModel(pShip, sNewShipScript):
 	debug(__name__ + ", ReplaceModel")
-	#pShip = App.ShipClass_GetObjectByID(None, pShip.GetObjID())
-	#if not pShip:
-	#	return
+	pShip = App.ShipClass_GetObjectByID(None, pShip.GetObjID())
+	if not pShip:
+		return
 	#print sNewShipScript
         ShipScript = __import__('ships.' + sNewShipScript)
         ShipScript.LoadModel()
@@ -317,6 +326,9 @@ def AdvArmorPlayer(): # For player
 	global pShipp
 	armor_ratio=0.0
 	pShip=MissionLib.GetPlayer()
+	pShip = App.ShipClass_GetObjectByID(None, pShip.GetObjID())
+	if not pShip:
+		return
 	pShipModule=__import__(pShip.GetScript())
 	try:
 		armor_ratio=pShipModule.GetArmorRatio()
@@ -384,7 +396,9 @@ def AdvArmor(pShip): # for AI
 	global sOriginalShipScript
 	global pShipp
 	armor_ratio=0.0
-	#pShip=pShipp
+	pShip = App.ShipClass_GetObjectByID(None, pShip.GetObjID())
+	if not pShip:
+		return
 	pShipModule=__import__(pShip.GetScript())
 	try:
 		armor_ratio=pShipModule.GetArmorRatio()
@@ -442,6 +456,9 @@ def AdvArmor(pShip): # for AI
 
 def GetAdvArmor(pShip):
 	pAdvArmor=0
+	pShip = App.ShipClass_GetObjectByID(None, pShip.GetObjID())
+	if not pShip:
+		return pAdvArmor
 	pIterator = pShip.StartGetSubsystemMatch(App.CT_SHIP_SUBSYSTEM)
 	pSubsystem = pShip.GetNextSubsystemMatch(pIterator)
 	while (pSubsystem != None):
@@ -455,6 +472,7 @@ def findShipInstance(pShip):
         debug(__name__ + ", findShipInstance")
         pInstance = None
         try:
+            pShip = App.ShipClass_GetObjectByID(None, pShip.GetObjID())
             if not pShip:
                 return pInstance
             if FoundationTech.dShips.has_key(pShip.GetName()):
@@ -475,6 +493,9 @@ def AdvArmorTogglePlayer(pObject, pEvent):
 	global sNewShipScript
 	global sOriginalShipScript
 	pShip=MissionLib.GetPlayer()
+	pShip = App.ShipClass_GetObjectByID(None, pShip.GetObjID())
+	if not pShip:
+		return
 	pShipModule=__import__(pShip.GetScript())
 
 	pInstance = findShipInstance(pShip)
@@ -554,6 +575,9 @@ def AdvArmorToggleAI(pObject, pEvent, pShip):
 	global vd_str_mod
 	global sNewShipScript
 	global sOriginalShipScript
+	pShip = App.ShipClass_GetObjectByID(None, pShip.GetObjID())
+	if not pShip:
+		return
 	pShipModule=__import__(pShip.GetScript())
 
 	try:
@@ -625,6 +649,9 @@ def AdvArmorTogglePlayerFirst(armourActive):
 	global sNewShipScript
 	global sOriginalShipScript
 	pShip=MissionLib.GetPlayer()
+	pShip = App.ShipClass_GetObjectByID(None, pShip.GetObjID())
+	if not pShip:
+		return
 	pShipModule=__import__(pShip.GetScript())
 
 	try:
@@ -702,6 +729,9 @@ def AdvArmorToggleAIFirst(pShip, armourActive):
 	global vd_str_mod
 	global sNewShipScript
 	global sOriginalShipScript
+	pShip = App.ShipClass_GetObjectByID(None, pShip.GetObjID())
+	if not pShip:
+		return
 	pShipModule=__import__(pShip.GetScript())
 
 	try:
