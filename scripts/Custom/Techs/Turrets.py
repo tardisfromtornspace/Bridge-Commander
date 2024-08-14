@@ -1,6 +1,6 @@
 """
 #         Turrets
-#         24th April 2024
+#         14th August 2024
 #         Based strongly on SubModels.py by USS Defiant and their team, and AutoTargeting.py by USS Frontier.
 #         Also based slightly on AdvancedTorpedoManagement.py from BCSTB Team, the Borg Technology from Alex SL Gato, and ConditionInLineOfSight by the original STBC team
 #         Special thanks to USS Sovereign and Gizmo_3.
@@ -145,7 +145,7 @@ import MissionLib
 
 #################################################################################################################
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.998",
+	    "Version": "0.999",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -180,7 +180,8 @@ class SingleTurret:
             del self.pShips[pTurretID]
 
     def removeTurretsforShip(self, pShipID):
-        for turretElement in self.pShips.keys():
+        auxShipKeys = self.pShips.keys()
+        for turretElement in auxShipKeys:
             if self.pShips[turretElement] == pShipID:
                 del self.pShips[turretElement]
 
@@ -241,7 +242,8 @@ class Turrets(FoundationTech.TechDef):
                 if len(self.bAddedAlertListener) == 0:
                         App.g_kEventManager.RemoveBroadcastHandler(App.ET_TORPEDO_ENTERED_SET, self.pEventHandler, "TorpEnteredSet")
                         #App.g_kEventManager.AddBroadcastPythonMethodHandler(App.ET_TORPEDO_ENTERED_SET, self.pEventHandler, "TorpEnteredSet")
-                for itemList in self.bBattleTurretListener.keys():
+                auxBattleTurretListenerKeys = self.bBattleTurretListener.keys()
+                for itemList in auxBattleTurretListenerKeys:
                         pShip = App.ShipClass_GetObjectByID(None, itemList)
 
                         if pShip and not pShip.IsDead():

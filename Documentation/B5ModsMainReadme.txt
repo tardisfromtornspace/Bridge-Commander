@@ -1,10 +1,13 @@
 ==Changelog==
+1.2.4 -
+   Potential optimization Fixes:
+   * Updated Turrets script to 0.999 - it is just a tiny bit cleaner.
 1.2.3 -
    Bug Fixes:
    * Added autoload fix "FIX-FoundationTech20050703ShipInstanceDetach", which solves problems related with iterating lTechs when detaching and removing from such list.
 1.2.2 -
    Bug Fixes:
-   * Updated AutoTaergeting to the 2009 version, removing the multiple-buttons issue.
+   * Updated AutoTargeting to the 2009 version, removing the multiple-buttons issue.
 1.2.1 -
    Bug Fixes:
    * Updated Fool Targeting Technology from 0.2 to 0.3, fixed small thing related with necessary update.
