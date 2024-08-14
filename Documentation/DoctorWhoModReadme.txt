@@ -1,4 +1,6 @@
 === Changelong ===
+1.1.10
+* Potential bug fixing: Updated AdvArmourTechThree from 1.7 to 1.8, 1.8 is a tiny bit slower but it is far better for some KM installs where for some reason 1.7 might crash. If 1.7 did not crash for you, use the 1.7 script from previous versions instead.
 1.1.9
 * Bug fixing: updated RaceDalek and RaceTimeLord for issue that did not affect this mod, but could affect future changes to the mod.
 1.1.8

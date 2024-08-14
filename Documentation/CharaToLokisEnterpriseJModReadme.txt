@@ -1,4 +1,6 @@
 == Changelog ==
+1.1.3 - Potential bug fixing
+ * Updated AdvArmourTechThree from 1.7 to 1.8, 1.8 is a tiny bit slower but it is far better for some KM installs where for some reason 1.7 might crash. If 1.7 did not crash for you, use the 1.7 script from previous versions instead.
 1.1.2 - Bug fixing
  * Upgraded AdvArmorTechThree to 1.7, eliminating the dark-glow issue.
 1.1.0 to 1.1.1 - Bug fixing

@@ -3,6 +3,7 @@ Modifications made by Alex SL Gato
 Special Thanks to 𝕟𝕒𝕣𝕣𝕠𝕨𝕔𝕨𝕪𝕗𝕖#0007 for driving me to complete this mod for their Voyager-J mod, as well as for some help with the PhasedTorp scripts.
 
 ===Changelog===
+1.4.4 - Updated AdvArmourTechThree from 1.7 to 1.8, 1.8 is a tiny bit slower but it is far better for some KM installs where for some reason 1.7 might crash. If 1.7 did not crash for you, use the 1.7 script from previous versions instead.
 1.4.2 to 1.4.3 - Improvements to the armour to 1.7 which eliminate the no-glow issue.
 1.4 - Total bug fix to the armour
 1.3 - Partial Bug Fix on rare bug of the armour when facing a ship stronger than Grey's the Exile (thanks Grey)
