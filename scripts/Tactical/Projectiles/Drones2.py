@@ -139,6 +139,7 @@ lImmuneShips = (
                 "Tardis",
                 "TardisType89",
                 "ThirdspaceCapitalShip",
+                "Valhalla",
                 "VulcanXRT55D",
                 "WCNemEntE",
                 "Wells",

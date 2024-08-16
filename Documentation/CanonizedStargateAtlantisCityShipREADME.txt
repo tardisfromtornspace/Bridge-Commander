@@ -1,4 +1,9 @@
 == Changelog ==
+1.1 - 
+* New features:
+  - SGRealisticHoppingTorp to 1.2 - Now if you have enough energy and divert enough power to weapons, THE DRONES WILL SWITCH TARGETS UPON DESTRUCTION OF THEM, and when no enemies are found, they are recalled to the ship, replenishing ammo.
+* Bug fixes:
+  - the Standard Asgard Warship (the one that looks like the O'Neill) was not included on the legacy exceptions to drones - now that is fixed
 1.0.1 - Added and adjusted Aurora Cannons to be yellow - thanks @Jovan Blackman for noticing. Also removed the excessive prints.
 1.0.0 - Official release
 0.9.8 - Adjsuted AncientCity so it fires the drones faster, thank you Grey da Deg, Grim455, MSR1701 and .truncatedcake0161
@@ -14,6 +19,7 @@ This mod makes the Atlantis and AncientCity from the Stargate pack 3.0 far more 
 ** Power reduction by a third.
 ** Increased range and lifetime.
 ** Now they have the chance to come back and forth between ships, doing multiple strikes at the same ship before dying.
+*** From 1.2 onwards, this back and forth also allos the drones to "jump" to nearby enemy ships if the ship that is firing them has enough energy available and has directed enough power to the weapons. Additionally, drones will normally be recalled when no enemies are on sight, replenishing ammo.
 
 == Dependancies ==
 All of these must be installed before installing this mod, in this order:
