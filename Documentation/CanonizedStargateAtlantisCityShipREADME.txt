@@ -19,7 +19,7 @@ This mod makes the Atlantis and AncientCity from the Stargate pack 3.0 far more 
 ** Power reduction by a third.
 ** Increased range and lifetime.
 ** Now they have the chance to come back and forth between ships, doing multiple strikes at the same ship before dying.
-*** From 1.2 onwards, this back and forth also allos the drones to "jump" to nearby enemy ships if the ship that is firing them has enough energy available and has directed enough power to the weapons. Additionally, drones will normally be recalled when no enemies are on sight, replenishing ammo.
+*** From 1.1 onwards, this back and forth also allos the drones to "jump" to nearby enemy ships if the ship that is firing them has enough energy available and has directed enough power to the weapons. Additionally, drones will normally be recalled when no enemies are on sight, replenishing ammo.
 
 == Dependancies ==
 All of these must be installed before installing this mod, in this order:
