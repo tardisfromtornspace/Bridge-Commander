@@ -1,4 +1,5 @@
 == Changelog ==
+0.4.8 - Thanks to Greystar, the Defensive Matrix is now translucid.
 0.4.7 - Defensive Matrix 0.56.
 0.4.6 - Defensive Matrix 0.55.
 0.4.5 - Defensive Matrix 0.5, it seems I goofed somewhere and removed the progress I had, so I had to re-create it.
@@ -25,6 +26,7 @@ All of these must be installed before installing this mod, in this order:
 * Original Hyperion model: Arawn6 on Thingiverse. Additionally their Creative Commons license and readme has been included on this pack, still as Creative Commons - Attribution.
 * Alex SL Gato (aka CharaToLoki) for any new code implemented or modified - specifically the Turrets.py, the Defensive Matrix script, importing and texturing the Minotaur, some texturing of the Hyperion, and small 
 tweaks to other scripts.
+* Greystar, for making the Starcraft Defensive Matrix translucid!
 * Sounds:
 ** SCIITerranLaser, SCIIYamatoCannon, from here https://pixabay.com/sound-effects/search/space%20shooting/ combined with YT recordings of Starcraft II by Blizzard Entertainment.
 ** cmissle.wav - found on my install, probably from one of several Star Wars mods (unfortunately cannot find which one)
