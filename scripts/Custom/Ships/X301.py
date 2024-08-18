@@ -37,6 +37,10 @@ credits = {
 # automatically generated the proper ShipDef Line for you.                            #
 #                                                                                     #
 Foundation.ShipDef.X301 = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
+# Wraith do not have shields used as actual shields. At most only used for forcefields to keep things in. This serves as an addendum to possibly add a tech later to prevent transporting.
+Foundation.ShipDef.X301.dTechs = {
+	'SG Shields': { "RaceShieldTech": "Go'auld" }
+}
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

@@ -33,6 +33,9 @@ credits = {
 # automatically generated the proper ShipDef Line for you.                            #
 #                                                                                     #
 Foundation.ShipDef.Horizon = Foundation.ShipDef(abbrev, species, { 'iconName': iconName, 'shipFile': shipFile })
+Foundation.ShipDef.Horizon.dTechs = {
+	'SG Shields': { "RaceShieldTech": "Go'auld" }
+}
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

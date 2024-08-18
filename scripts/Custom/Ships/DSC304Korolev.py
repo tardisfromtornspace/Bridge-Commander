@@ -37,6 +37,9 @@ credits = {
 # automatically generated the proper ShipDef Line for you.                            #
 #                                                                                     #
 Foundation.ShipDef.DSC304Korolev = Foundation.FedShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
+Foundation.ShipDef.DSC304Korolev.dTechs = {
+	'SG Shields': { "RaceShieldTech": "Asgard" }
+}
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

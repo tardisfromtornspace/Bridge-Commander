@@ -37,6 +37,9 @@ credits = {
 # automatically generated the proper ShipDef Line for you.                            #
 #                                                                                     #
 Foundation.ShipDef.MidwayStation = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
+Foundation.ShipDef.MidwayStation.dTechs = {
+	'SG Shields': { "RaceShieldTech": "Asgard" }
+}
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

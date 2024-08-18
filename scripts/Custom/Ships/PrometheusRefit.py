@@ -33,6 +33,9 @@ credits = {
 # automatically generated the proper ShipDef Line for you.                            #
 #                                                                                     #
 Foundation.ShipDef.PrometheusRefit = Foundation.FedShipDef(abbrev, species, { 'iconName': iconName, 'shipFile': shipFile })
+Foundation.ShipDef.PrometheusRefit.dTechs = {
+	'SG Shields': { "RaceShieldTech": "Asgard" }
+}
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

@@ -63,3 +63,10 @@ def GetMaxAngularAccel():
 
 def GetLifetime():
 	return 12.0
+
+try:
+	modSGIonWeaponTorp = __import__("Custom.Techs.SGIonWeapon")
+	if(modSGIonWeaponTorp):
+		modSGIonWeaponTorp.oSGIonWeaponTorp.AddTorpedo(__name__)
+except:
+	print "SGIonWeapon projectile script not installed, or you are missing Foundation Tech"

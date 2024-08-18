@@ -37,6 +37,9 @@ credits = {
 # automatically generated the proper ShipDef Line for you.                            #
 #                                                                                     #
 Foundation.ShipDef.OriSatellite = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
+Foundation.ShipDef.OriSatellite.dTechs = {
+	'SG Shields': { "RaceShieldTech": "Ori" }
+}
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

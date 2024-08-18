@@ -38,6 +38,9 @@ credits = {
 # automatically generated the proper ShipDef Line for you.                            #
 #                                                                                     #
 Foundation.ShipDef.TobanMine = F_DomRamAI.DomRamAI(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
+Foundation.ShipDef.TobanMine.dTechs = {
+	'SG Shields': { "RaceShieldTech": "Go'auld" }
+}
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

@@ -53,7 +53,7 @@ def GetName():
 	return("Ion Cannon")
 
 def GetDamage():
-	return 1300.0
+	return 140.0
 
 def GetGuidanceLifetime():
 	return 1.5
@@ -63,3 +63,10 @@ def GetMaxAngularAccel():
 
 def GetLifetime():
 	return 8.0
+
+try:
+	modSGIonWeaponTorp = __import__("Custom.Techs.SGIonWeapon")
+	if(modSGIonWeaponTorp):
+		modSGIonWeaponTorp.oSGIonWeaponTorp.AddTorpedo(__name__)
+except:
+	print "SGIonWeapon projectile script not installed, or you are missing Foundation Tech"

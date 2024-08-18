@@ -33,6 +33,9 @@ credits = {
 # automatically generated the proper ShipDef Line for you.                            #
 #                                                                                     #
 Foundation.ShipDef.DamagedWarship = Foundation.ShipDef(abbrev, species, { 'iconName': iconName, 'shipFile': shipFile })
+Foundation.ShipDef.DamagedWarship.dTechs = {
+	'SG Shields': { "RaceShieldTech": "Lantian" }
+}
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

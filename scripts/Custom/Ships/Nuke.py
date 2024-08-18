@@ -38,6 +38,9 @@ credits = {
 # automatically generated the proper ShipDef Line for you.                            #
 #                                                                                     #
 Foundation.ShipDef.Nuke = F_MineAI.MineDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
+Foundation.ShipDef.Nuke.dTechs = {
+	'SG Shields': { "RaceShieldTech": "None" }
+}
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

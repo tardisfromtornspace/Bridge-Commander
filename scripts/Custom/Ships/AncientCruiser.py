@@ -37,7 +37,10 @@ credits = {
 # automatically generated the proper ShipDef Line for you.                            #
 #                                                                                     #
 Foundation.ShipDef.AncientCruiser = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
-Foundation.ShipDef.AncientCruiser.dTechs = {'Breen Drainer Immune': 1}
+Foundation.ShipDef.AncientCruiser.dTechs = {
+	'Breen Drainer Immune': 1,
+	'SG Shields': { "RaceShieldTech": "Lantian" }
+}
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

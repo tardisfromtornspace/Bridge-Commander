@@ -37,6 +37,9 @@ credits = {
 # automatically generated the proper ShipDef Line for you.                            #
 #                                                                                     #
 Foundation.ShipDef.MartinsShip = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
+Foundation.ShipDef.MartinsShip.dTechs = {
+	'SG Shields': { "RaceShieldTech": "Martin Lloyds People" }
+}
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

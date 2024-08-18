@@ -37,6 +37,10 @@ credits = {
 # automatically generated the proper ShipDef Line for you.                            #
 #                                                                                     #
 Foundation.ShipDef.F302 = Foundation.FedShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
+# F302 don't have shields, but we are adding this just in case
+Foundation.ShipDef.F302.dTechs = {
+	'SG Shields': { "RaceShieldTech": "None" }
+}
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

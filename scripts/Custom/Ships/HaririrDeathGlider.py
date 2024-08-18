@@ -37,6 +37,9 @@ credits = {
 # automatically generated the proper ShipDef Line for you.                            #
 #                                                                                     #
 Foundation.ShipDef.HaririrDeathGlider = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
+Foundation.ShipDef.HaririrDeathGlider.dTechs = {
+	'SG Shields': { "RaceShieldTech": "Go'auld" }
+}
 #                                                                                     #
 #######################################################################################
 #                                                                                     #
@@ -45,7 +48,7 @@ Foundation.ShipDef.HaririrDeathGlider = Foundation.ShipDef(abbrev, species, { 'n
 #Foundation.ShipDef.HaririrDeathGlider.hasTGLDesc = 1
 #
 # Otherwise, uncomment this and type something in:
-Foundation.ShipDef.HaririrDeathGlider.desc = "This Death Gliders have been updated by Lord Haririr to possess shielding, in order to have more efficiendy in battle and to reduce military losses"
+Foundation.ShipDef.HaririrDeathGlider.desc = "This Death Gliders have been updated by Lord Haririr to possess shielding, in order to have more efficiency in battle and to reduce military losses"
 #                                                                                     #
 #######################################################################################
 #                                                                                     #
