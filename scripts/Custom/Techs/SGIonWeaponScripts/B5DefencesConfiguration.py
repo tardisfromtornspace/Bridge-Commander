@@ -25,7 +25,8 @@ IonB5LegacyShieldDamageMultiplier = 5.0
 ### With that said, some B5 defences (as well as Hull Polarization) canonically would at least protect a bit from direct hull damage. Since we did the thing above to guarantee ships without shields lore-wise still take decent shield damage, we must ensure that those vessel's hull damage defences are not bypassed completely.
 defenceGridMultiplier = 0.95 # Used for legacy reasons
 hullPolarizerMultiplier = 0.7
-shadowDispersiveHullMultiplier = 0.6
+shadowDispersiveHullMultiplier = 0.9
+shadowDispersiveHullMin = 0.6
 
 ### Some ships that from legacy reasons are extra vulnerable to this weapon in some way - for these ones is because B5 defences and STBC shields work differently
 global lB5VulnerableLegacyList 
@@ -53,14 +54,18 @@ def interactionShieldBehaviour(pShip, sScript, sShipScript, pInstance, pEvent, p
 	if pInstancedict.has_key('Defense Grid') or pInstancedict.has_key('Gravimetric Defense'): # ohhhh Babylon 5 defence grids and gravimetric defenses - yeah, no shields, and if you already reached this point is because your point defence system failed to take this shot, sorry
 		wasChanged = wasChanged + 1
 		shieldDamageMultiplier = shieldDamageMultiplier + IonB5LegacyShieldDamageMultiplier
-		considerPiercing = 1
+		considerPiercing = considerPiercing + 1
 		if pInstancedict.has_key('Defense Grid'): # See how well B5 station did against a barrage
-			shouldPassThrough = 1
+			shouldPassThrough = shouldPassThrough + 1
 
 	elif pInstancedict.has_key('Shadow Dispersive Hull'): # ohhhh Babylon 5 Shadow Dispersive Hull - yeah, no shields, sorry - but don't worry, at least your hull damage will be reduced
 		wasChanged = wasChanged + 1
-		shouldPassThrough = 1
-		considerPiercing = 1
+		if hasattr(pShip, "GetRadius") and pShip.GetRadius() < 2.0: # Dumb way to fix a random issue with the shadow fighter model having some invulnerability from certain sides to this weapon and other phased weapons
+			shieldDamageMultiplier = shieldDamageMultiplier + IonB5LegacyShieldDamageMultiplier
+			shouldDealAllFacetDamage = shouldDealAllFacetDamage + 1
+			
+		shouldPassThrough = shouldPassThrough + 1
+		considerPiercing = considerPiercing + 1
 
 	elif pInstancedict.has_key("Vree Shields"): # Vree/Abbai/Shinindrea shields work very differently, they may care little about your weapon being Ions...
 		wasChanged = wasChanged + 1
@@ -69,12 +74,12 @@ def interactionShieldBehaviour(pShip, sScript, sShipScript, pInstance, pEvent, p
 	global lB5VulnerableLegacyList
 	if sShipScript in lB5VulnerableLegacyList: # These ones will not add a "wasChanged", we want the normal to stack with this effect
 		shieldDamageMultiplier = shieldDamageMultiplier + IonB5LegacyShieldDamageMultiplier
-		considerPiercing = 1
+		considerPiercing = considerPiercing + 1
 
 	return hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, considerPiercing, shouldDealAllFacetDamage, wasChanged
 
 def interactionHullBehaviour(pShip, sScript, sShipScript, pInstance, pEvent, pTorp, pInstancedict, pAttackerShipID, hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, considerPiercing, shouldDealAllFacetDamage, wasChanged):
-	global defenceGridMultiplier, hullPolarizerMultiplier, shadowDispersiveHullMultiplier
+	global defenceGridMultiplier, hullPolarizerMultiplier, shadowDispersiveHullMultiplier, shadowDispersiveHullMin
 	#INTERACTION Defence Grid reduces hull damage a tiiiiiny bit
 	if pInstancedict.has_key('Defense Grid'):
 		wasChanged = wasChanged + 1
@@ -87,7 +92,16 @@ def interactionHullBehaviour(pShip, sScript, sShipScript, pInstance, pEvent, pTo
 	#INTERACTION Shadow Dispersive Hull reduces hull damage a significant bit
 	if pInstancedict.has_key('Shadow Dispersive Hull'):
 		wasChanged = wasChanged + 1
-		hullDamageMultiplier = hullDamageMultiplier * shadowDispersiveHullMultiplier
+		radiusDispersion = 1.0
+		if hasattr(pShip, "GetRadius"):
+			radiusDispersion = pShip.GetRadius()
+			if radiusDispersion > 2.0: # The bigger the hull, the better it will disperse the damage, up to a limit
+				radiusDispersion = (shadowDispersiveHullMultiplier ** (1.0 * radiusDispersion))
+				if radiusDispersion < shadowDispersiveHullMin:
+					radiusDispersion = shadowDispersiveHullMin
+				hullDamageMultiplier = hullDamageMultiplier * radiusDispersion
+			else: # hull is too small, it may be tough, but not as tough
+				hullDamageMultiplier = hullDamageMultiplier * (shadowDispersiveHullMultiplier)
 
 	return hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, considerPiercing, shouldDealAllFacetDamage, wasChanged
 

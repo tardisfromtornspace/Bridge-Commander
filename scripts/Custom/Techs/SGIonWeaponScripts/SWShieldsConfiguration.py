@@ -21,7 +21,7 @@ import FoundationTech
 import string
 
 IonSWShieldDamageMultiplier = 30.0
-IonSWHullDamageMultiplier = 0.9 # range 0-1
+IonSWHullDamageMultiplier = 0.7 # range 0-1
 
 ### Since the "SW Shields" tech does not exist for the public, no mods at the time of release have it, so we must ensure for legacy reasons that those old SW mod vessels are still picked up #### TO-DO COMPLETE THIS LIST ####
 global lSWVulnerableLegacyList 
@@ -81,35 +81,46 @@ lSWVulnerableLegacyList = (
                 "venatorII",
                 "venimp",
                 "vicstar",
+                "XWing",
                 "YWing",
                 "ZWing",
+                "Z95",
                 )
 
 
 def interactionShieldBehaviour(pShip, sScript, sShipScript, pInstance, pEvent, pTorp, pInstancedict, pAttackerShipID, hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, considerPiercing, shouldDealAllFacetDamage, wasChanged):
+	global lSWVulnerableLegacyList
 	if pInstancedict.has_key("SW Shields") or sShipScript in lSWVulnerableLegacyList: # SW shields are extremely weak to Ion Weapons, they are used to knock them out, albeit not destroy them
+		print "SW SHIELDS"
 		wasChanged = wasChanged + 1
 		global IonSWShieldDamageMultiplier
 		shieldDamageMultiplier = shieldDamageMultiplier + IonSWShieldDamageMultiplier
-		shouldDealAllFacetDamage = 1
+		shouldDealAllFacetDamage = shouldDealAllFacetDamage + 1
 		considerPiercing = 0
 
 
 	return hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, considerPiercing, shouldDealAllFacetDamage, wasChanged
 
 def interactionHullBehaviour(pShip, sScript, sShipScript, pInstance, pEvent, pTorp, pInstancedict, pAttackerShipID, hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, considerPiercing, shouldDealAllFacetDamage, wasChanged):
+	global lSWVulnerableLegacyList
 	if pInstancedict.has_key("SW Shields") or sShipScript in lSWVulnerableLegacyList: # SW shields are extremely weak to Ion Weapons, they are used to knock them out, albeit not destroy them
+		print "SW HULL"
 		wasChanged = wasChanged + 1
 
 		global IonSWHullDamageMultiplier
 		# We reduce the damage... but your power plant gets damaged! Be careful or too many Ions may make you explode!
 		pPower = pShip.GetPowerSubsystem()
 		if pPower:
-			myDamage = hullDamageMultiplier * (1 - IonSWHullDamageMultiplier)
-  			if pPower.GetCondition() - myDamage < 0.1:
-				pPower.SetCondition(0.001)
-			elif pPower.GetCondition() - myDamage >  pPower.GetMaxCondition():
-				pPower.SetCondition(ower.GetMaxCondition())
+			print "SW POWER DAMAGE"
+			myDamage = -hullDamageMultiplier * (1 - IonSWHullDamageMultiplier)
+			print "myDamage = ", myDamage
+			myStatus = pPower.GetCondition() + myDamage
+  			if (myStatus) < 0.1:
+				myStatus = 0.1
+			elif (pPower.GetCondition() + myDamage) >  pPower.GetMaxCondition():
+				myStatus = pPower.GetMaxCondition()
+
+			pPower.SetCondition(myStatus)
 
 		hullDamageMultiplier = hullDamageMultiplier * IonSWHullDamageMultiplier
 

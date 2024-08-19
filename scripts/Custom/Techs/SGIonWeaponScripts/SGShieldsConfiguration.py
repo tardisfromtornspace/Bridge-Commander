@@ -1,6 +1,6 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
-# 18th August 2024, by Alex SL Gato (CharaToLoki)
+# 19th August 2024, by Alex SL Gato (CharaToLoki)
 # Version: 1.0
 # Meant to be used alongside the SGIonWeapon Technology (located at scripts/Custom/Techs), this file must be under scripts/Custom/Techs/SGIonWeaponScripts
 # As these are Sub-techs with some leeway, their manuals must be explained here:
@@ -11,6 +11,7 @@
 # And even between SG shields, some behave differently:
 # Early Go'auld shields could not handle Tollan nor Asgard Ion Guns - two shots from the Tollan guns shredded a single Ha'tak, bypassing the shield. The only way it makes sense for Anubis-grade shields to shrug an entire planetary defense grid of those while still being vulnerable to 3-6 unupgraded Ha'taks is for the shields to be more advanced to block this Ion weapon, and not only because of being stronger. Else we end up with a Ha'tak having 100 times more shields than normal, and if that was true, Anubis could have destroyed the other System Lords with a single Ha'tak, no superweapon needed.
 
+# On this case, more info about SG shields will be reviewed on their main SG Shields technology
 # NOTE: Imports and additional functions may be necessary here as well, depending on how creative the sub-tech becomes
 import App
 from bcdebug import debug
@@ -22,10 +23,10 @@ import FoundationTech
 import string
 
 # SG-related info
-IonSGShieldDamageMultiplier = 10.0 # TO-DO ADJUST ALL THE SG SHIPS THAT HAVE SHIELDS TO ADD THIS TECH
+IonSGShieldDamageMultiplier = 10.0
 
 ## Because some SG shields could not block Ion Cannons (see more information below)
-IonSGVulnerableShields = ["Go'auld"] # This excludes "Anubis Go'auld"
+IonSGVulnerableShields = ["Go'auld"] # This excludes "Anubis Go'auld" shields.
 
 ## Some SG-related resistances - unless there's a new Stargate franchise adding more races and spaceship combat, these should do the job
 xAnubisShieldMultiplier = 0.79
@@ -38,6 +39,7 @@ xOriShieldMultiplier = 0.67
 # Ion weaponry for the Asgard was developed also because it affects Replicator bonds, so we must give them plus damage against them
 xVulnerableNaquadahOrNeutroniumBoost = 3.0
 
+##### This function below is used for shield behaviour towards this weapon (when the hull has not been hit)
 def interactionShieldBehaviour(pShip, sScript, sShipScript, pInstance, pEvent, pTorp, pInstancedict, pAttackerShipID, hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, considerPiercing, shouldDealAllFacetDamage, wasChanged):
 	if pInstancedict.has_key("SG Shields"):
 		wasChanged = wasChanged + 1
@@ -72,6 +74,7 @@ def interactionShieldBehaviour(pShip, sScript, sShipScript, pInstance, pEvent, p
 
 	return hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, considerPiercing, shouldDealAllFacetDamage, wasChanged
 
+##### This function below is used for hull behaviour towards this weapon (when the hull has been hit)
 def interactionHullBehaviour(pShip, sScript, sShipScript, pInstance, pEvent, pTorp, pInstancedict, pAttackerShipID, hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, considerPiercing, shouldDealAllFacetDamage, wasChanged):
 	if pInstancedict.has_key("SG Shields"): # Own turf, SG Ion Weapons are meant to deal additional damage to weak Naquadah and some Neutronium hulls... and Replicator hulls
 		RaceShieldTech = None
