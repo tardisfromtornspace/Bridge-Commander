@@ -38,7 +38,7 @@ credits = {
 #                                                                                     #
 Foundation.ShipDef.DSC304Daedalus = Foundation.FedShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
 Foundation.ShipDef.DSC304Daedalus.dTechs = {
-	'SG Shields': { "RaceShieldTech": "Asgard" }
+	'SG Shields': { "RaceShieldTech": "Asgard", "RaceHullTech": "Tau'ri" }
 }
 #                                                                                     #
 #######################################################################################

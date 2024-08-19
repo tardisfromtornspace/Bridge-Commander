@@ -38,7 +38,7 @@ credits = {
 #                                                                                     #
 Foundation.ShipDef.ReplicatorBeliskner = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
 Foundation.ShipDef.ReplicatorBeliskner.dTechs = {
-	'SG Shields': { "RaceShieldTech": "Replicator" }
+	'SG Shields': { "RaceShieldTech": "Replicator", "RaceHullTech": "Asgard" }
 }
 #                                                                                     #
 #######################################################################################

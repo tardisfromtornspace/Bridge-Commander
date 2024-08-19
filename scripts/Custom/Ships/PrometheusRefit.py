@@ -34,7 +34,7 @@ credits = {
 #                                                                                     #
 Foundation.ShipDef.PrometheusRefit = Foundation.FedShipDef(abbrev, species, { 'iconName': iconName, 'shipFile': shipFile })
 Foundation.ShipDef.PrometheusRefit.dTechs = {
-	'SG Shields': { "RaceShieldTech": "Asgard" }
+	'SG Shields': { "RaceShieldTech": "Asgard", "RaceHullTech": "Tau'ri" }
 }
 #                                                                                     #
 #######################################################################################

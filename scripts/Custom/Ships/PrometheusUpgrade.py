@@ -34,7 +34,7 @@ credits = {
 #                                                                                     #
 Foundation.ShipDef.PrometheusUpgrade = Foundation.FedShipDef(abbrev, species, { 'iconName': iconName, 'shipFile': shipFile })
 Foundation.ShipDef.PrometheusUpgrade.dTechs = {
-	'SG Shields': { "RaceShieldTech": "Go'auld" }
+	'SG Shields': { "RaceShieldTech": "Go'auld", "RaceHullTech": "Tau'ri" }
 }
 #                                                                                         #
 #######################################################################################

@@ -34,7 +34,7 @@ credits = {
 #                                                                                     #
 Foundation.ShipDef.Odyssey = Foundation.FedShipDef(abbrev, species, { 'iconName': iconName, 'shipFile': shipFile })
 Foundation.ShipDef.Odyssey.dTechs = {
-	'SG Shields': { "RaceShieldTech": "Asgard" }
+	'SG Shields': { "RaceShieldTech": "Asgard", "RaceHullTech": "Tau'ri" }
 }
 #                                                                                     #
 #######################################################################################

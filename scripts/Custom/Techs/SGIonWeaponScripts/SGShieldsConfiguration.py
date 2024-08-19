@@ -28,15 +28,20 @@ IonSGShieldDamageMultiplier = 10.0 # TO-DO ADJUST ALL THE SG SHIPS THAT HAVE SHI
 IonSGVulnerableShields = ["Go'auld"] # This excludes "Anubis Go'auld"
 
 ## Some SG-related resistances - unless there's a new Stargate franchise adding more races and spaceship combat, these should do the job
-xAnubisShieldMultiplier = 0.75
+xAnubisShieldMultiplier = 0.79
+xAnubisVSTollanShieldMultiplier = -0.15
+xAnubisVSPrimitiveAsgardShieldMultiplier = 0.15
 xAsgardShieldMuliplier = 0.8
-xAlteranShieldMultiplier = 0.71
-xOriShieldMultiplier = 0.7
+xAlteranShieldMultiplier = 0.68
+xOriShieldMultiplier = 0.67
+
+# Ion weaponry for the Asgard was developed also because it affects Replicator bonds, so we must give them plus damage against them
+xVulnerableNaquadahOrNeutroniumBoost = 3.0
 
 def interactionShieldBehaviour(pShip, sScript, sShipScript, pInstance, pEvent, pTorp, pInstancedict, pAttackerShipID, hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, considerPiercing, shouldDealAllFacetDamage, wasChanged):
 	if pInstancedict.has_key("SG Shields"):
 		wasChanged = wasChanged + 1
-		global IonSGShieldDamageMultiplier, xAnubisShieldMultiplier, xAsgardShieldMuliplier, xAlteranShieldMultiplier, xOriShieldMultiplier
+		global IonSGShieldDamageMultiplier, xAnubisShieldMultiplier, xAnubisVSTollanShieldMultiplier, xAnubisVSPrimitiveAsgardShieldMultiplier, xAsgardShieldMuliplier, xAlteranShieldMultiplier, xOriShieldMultiplier
 		shieldDamageMultiplier = shieldDamageMultiplier + IonSGShieldDamageMultiplier
 		shouldDealAllFacetDamage = 0
 		considerPiercing = considerPiercing + 1
@@ -44,14 +49,50 @@ def interactionShieldBehaviour(pShip, sScript, sShipScript, pInstance, pEvent, p
 			RaceShieldTech = pInstancedict["SG Shields"]["RaceShieldTech"]
 			if RaceShieldTech in IonSGVulnerableShields:
 				shouldPassThrough = 1
-			elif RaceShieldTech == "Anubis Go'auld": # Resistances
-				shieldDamageMultiplier = shieldDamageMultiplier * xAnubisShieldMultiplier
+			elif RaceShieldTech == "Anubis Go'auld": # Resistances	
+				if pTorp and hasattr(pTorp, "GetDamageRadiusFactor"):
+					dmgRadiusFactor = pTorp.GetDamageRadiusFactor() # Meaner weapons have usually meaner knockback
+					if dmgRadiusFactor == 1.25: # Oh, the Tollan Weapon... quite an unorthodox way of knowing it tho
+						considerPiercing = considerPiercing - 1
+						shieldDamageMultiplier = shieldDamageMultiplier * xAnubisVSTollanShieldMultiplier
+					elif dmgRadiusFactor <= 0.25: # Oh, Asgard Ion weapons - here the meanest ones have a meaner kick!
+						considerPiercing = considerPiercing - 1
+						shieldDamageMultiplier = shieldDamageMultiplier * xAnubisVSPrimitiveAsgardShieldMultiplier
+					else:
+						shieldDamageMultiplier = shieldDamageMultiplier * xAnubisShieldMultiplier
+				else:
+					shieldDamageMultiplier = shieldDamageMultiplier * xAnubisShieldMultiplier
+						 
 			elif RaceShieldTech == "Asgard": # Resistances
 				shieldDamageMultiplier = shieldDamageMultiplier * xAsgardShieldMuliplier
 			elif RaceShieldTech == "Alteran" or RaceShieldTech == "Lantian" or RaceShieldTech == "Lantean" or RaceShieldTech == "Asuran": # Resistances, not including actual Replicator ships here because those will have their own tech
 				shieldDamageMultiplier = shieldDamageMultiplier * xAlteranShieldMultiplier
 			elif RaceShieldTech == "Ori": # Resistances
 				shieldDamageMultiplier = shieldDamageMultiplier * xOriShieldMultiplier
+
+	return hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, considerPiercing, shouldDealAllFacetDamage, wasChanged
+
+def interactionHullBehaviour(pShip, sScript, sShipScript, pInstance, pEvent, pTorp, pInstancedict, pAttackerShipID, hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, considerPiercing, shouldDealAllFacetDamage, wasChanged):
+	if pInstancedict.has_key("SG Shields"): # Own turf, SG Ion Weapons are meant to deal additional damage to weak Naquadah and some Neutronium hulls... and Replicator hulls
+		RaceShieldTech = None
+		if pInstancedict["SG Shields"].has_key("RaceHullTech"): # We will assume shields and hull tech races are the same unless we say otherwise, for simplicity to not add too many fields.
+			RaceShieldTech = pInstancedict["SG Shields"]["RaceHullTech"]
+		elif pInstancedict["SG Shields"].has_key("RaceShieldTech"):
+			RaceShieldTech = pInstancedict["SG Shields"]["RaceShieldTech"]
+
+		if RaceShieldTech != None:
+			global xVulnerableNaquadahOrNeutroniumBoost
+			wasChanged = wasChanged + 1
+			RaceShieldTech = pInstancedict["SG Shields"]["RaceShieldTech"]	
+			if RaceShieldTech in IonSGVulnerableShields: # Go'auld classic naquadah hull is based on Naquadah absorbing energy and being tough... but while that gives it a very high resistance, its high amplifier properties  may also overload it! Since SG Ion weapons seem to mess with it, extra damage mod-wise!
+				hullDamageMultiplier = hullDamageMultiplier * (xVulnerableNaquadahOrNeutroniumBoost)
+			#elif RaceShieldTech == "Anubis Go'auld": # Their shields are powerful, but their hulls are still of the same material, if improved
+			#	hullDamageMultiplier = hullDamageMultiplier * (xVulnerableNaquadahOrNeutroniumBoost)
+			elif RaceShieldTech == "Replicator": # You may deal a bit more damage to the hulls... is not as if they cannot eventually adapt anyways
+				hullDamageMultiplier = hullDamageMultiplier * (xVulnerableNaquadahOrNeutroniumBoost)
+
+
+
 
 	return hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, considerPiercing, shouldDealAllFacetDamage, wasChanged
 

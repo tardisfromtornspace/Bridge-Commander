@@ -1,27 +1,33 @@
 == Changelog ==
-
 0.1 - first unofficial release of this tweak, for feedback
 
 == What does this mod do ==
 This mod attempts to fix some Stargate pack balance inconsistencies by adding appropiate realistic technologies for all SG races:
 
-* SG Shields: at the moment, this tech is used to know what ships use Stargate shielding (excluding the Atlantis and AncientCity, already covered in https://www.gamefront.com/games/bridge-commander/file/canonical-alteran-technologies)
+* SG Shields: at the moment, this tech is used to know what ships use Stargate shielding/protection and which type (excluding the Atlantis and AncientCity, already covered in https://www.gamefront.com/games/bridge-commander/file/canonical-alteran-technologies)
 ** This tech also works as a marker to indicate what techs it can protect itself from better or worse, from common SG shield characteristics, to technological differences.
+** Despite the name, it is also used to storage some hull types, for tracing. This is because not all hulls are made equal, and some materials on the hulls may make them more or less susceptible to certain types of damage than others.
+
 * SG Ion Weapons: this tech works by adding a customizable drain effect; while being open to adding Subscripts that may modify its behavior (please read in-script documentation about how does this work).
-** This was meant to give the Asgard and Tollan Ion Weapons a significant buff, while providing Anubis a resistance without making Anubis vessels have shields 100 times stronger than normal (let's not forget a regular Ha'tak could be destroyed by a single Tollan Ion Cannon shot ignoring the shields, but Anubis shields on a regular Ha'tak could shrug a entire planetary defense grid of them, yet at most 1 Anubian Ha'tak was equal to 6 regular ones - if mod-wise we followed a mere shield increase strategy, in order to make Anubis Ha'taks capable of shrugging off the Tollan Ion cannons, they would become invincible to even Ori vessels)
+** This was meant to give the Asgard and Tollan Ion Weapons a significant buff, while providing Anubis a resistance without making Anubis vessels have shields 100 times stronger than normal (let's not forget a regular Ha'tak could be destroyed by a single Tollan Ion Cannon shot ignoring the shields, but Anubis shields on a regular Ha'tak could shrug a entire planetary defense grid of them, yet at most 1 Anubian Ha'tak was equal to 6 regular ones - if mod-wise we followed a mere shield increase strategy, in order to make Anubis Ha'taks capable of shrugging off the Tollan Ion cannons, they would become invincible to even Ori vessels).
+
 * SG Plasma Weapons: #### TO-DO #### the purpose of this tech was to explain why a naquadah-enhanced >1000 Megaton nuke could not deal damage to a Go'auld Ha'tak and a Ha'tak could stay 9 hours inside a sun's Corona, yet some Go'auld Death Glider's staff weapons could put the shields to strain, without performing total absurdities (before this mod, previous mods made the Go'auld death glider half-shot deal roughtly half the damage of a Ha'tak's main weapons shot, you have got to be kidding me).
 ** TO-DO
 
-* Replicator adaptation: based on my other mod, Borg Adaptation https://www.gamefront.com/games/bridge-commander/file/borg-adaptation-mod-defensive ; it is meant to be added as a modification to allow the Replicators to adapt, instead of making them a set of OP-ness that cannot adapt, they instead start a bit less overpowered, then learn and eventually make themselves far more powerful than normal.
+* Replicator adaptation: #### TO-DO #### based on my other mod, Borg Adaptation https://www.gamefront.com/games/bridge-commander/file/borg-adaptation-mod-defensive ; it is meant to be added as a modification to allow the Replicators to adapt, instead of making them a set of OP-ness that cannot adapt, they instead start a bit less overpowered, then learn and eventually make themselves far more powerful than normal.
 ** TO-DO
+* TO-DO ALSO ADD Automated Destroyed System Repair TO THE REPLICATOR VESSELS, ESPECIALLY THEIR COMMAND CARRIER AND SPIDER
 
-* Plasma and Ion weapons nerfed accordingly to deal a similar raw damage output to what they did to shields.
+* Plasma and Ion weapons nerfed accordingly to deal a similar raw damage output to what they did to shields before the mod. #### TO-DO ####
 ** Please note that "similar" is not "equal" - actually, specially for the Asgard Ion Cannons, net shield damage has been slightly buffed, specially for the higher-end vessels' Ion weapons.
 * Asgard Daniel Jackson, O'Neill and Valhalla shields and shield recharge buffed significantly (between 36% to 57%).
 
 * Ha'taks adjusted #### TO-DO ####
 
-* Wraith given Automated System Repair
+#### TO-DO ----> FOR ANUBIS MOTHERSHIP, SEE IF YOU CAN DO SOMETHING LIKE THE TURRETS SCRIPT MIXED WITH TACHYONBEAM SCRIPT, BUT ONLY MOVING TWO UNCOLLIDABLE AND UNTARGETABLE BEAMS NEXT TO AN ENEMY VESSEL, TO THEN FIRE ON THE TWO CLOSEST ENEMY VESSELS TO THE OBJECTIVE ####
+
+* Wraith given Automated System Repair #### TO-DO ####
+* Wraith HP and weapons adjusted accordingly between mods #### TO-DO ####
 
 == Dependancies ==
 All of these must be installed before installing this mod, in this order:
@@ -34,7 +40,7 @@ All of these must be installed before installing this mod, in this order:
 * Wraith SuperHive (TO-DO ADD LINK)
 * SGU Destiny with Ancient Shuttle https://www.gamefront.com/games/bridge-commander/file/sgu-destiny-with-ancient-shuttle
 * Either Automated Destroyed System Repair from:
-** https://www.gamefront.com/games/bridge-commander/file/borg-adaptation-mod-defensive
+** Borg Adaptation Mod https://www.gamefront.com/games/bridge-commander/file/borg-adaptation-mod-defensive
 ** Or from https://www.gamefront.com/games/bridge-commander/file/stbc-babylon-5-mod
 *** RECOMMENDED TO DOWNLOAD the scripts/Custom/Autoload file "FIX-FoundationTech20050703ShipInstanceDetach" from https://www.gamefront.com/games/bridge-commander/file/stbc-babylon-5-mod in order to get a better and cleaner game experience.
 * Canonical Alteran Technologies (C.A.T.) https://www.gamefront.com/games/bridge-commander/file/canonical-alteran-technologies
@@ -65,7 +71,4 @@ This mod falls under the GNU LESSER GENERAL PUBLIC LICENSE Version 3, 29 June 20
 
 
 == Bugs ==
-* As stated from the Ancient City pack, these models cannot handle damage textures so they are turned off for these models only - no performance limitations.
-* Due to circumstances that are not from this mod:
-** Big enough ships have strange collisions that may make drones far less effective - no game performance impact.
-** On some installs firing too many drones at the same time may consume memory.
+* Due to circumstances that are not from this mod, some models always have a risk of suffering bleedthrough even with shields at max (particularly notable in the BC-304 and X303 series, but also sometimes noticeable in Go'auld Ha'tak's shuttle bays) - no game performance impact.
