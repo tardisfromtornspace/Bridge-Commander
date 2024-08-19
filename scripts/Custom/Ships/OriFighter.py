@@ -38,7 +38,8 @@ credits = {
 #                                                                                     #
 Foundation.ShipDef.OriFighter = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
 Foundation.ShipDef.OriFighter.dTechs = {
-	'SG Shields': { "RaceShieldTech": "Ori" }
+	'SG Shields': { "RaceShieldTech": "Ori" },
+	"TachyonBeam": { "Immune": -1 }
 }
 #                                                                                     #
 #######################################################################################

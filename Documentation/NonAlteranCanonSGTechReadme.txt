@@ -33,36 +33,39 @@ This mod attempts to fix some Stargate pack balance inconsistencies by adding ap
 All of these must be installed before installing this mod, in this order:
 * Foundation + Kobayashi Maru (KM has Foundation already installed - the most recent, the better, preferably 2011.10 or latter)
 * Stargate pack 3.0 or 4.0 https://www.gamefront.com/games/bridge-commander/file/stargate-ship-pack-dave975-and-dkealt
-** If you want to install the Stargate multiplayer patch (TO-DO ADD LINK), do it immediately after installing this one
+** If you want to install the Stargate multiplayer patch (for 3.0, https://www.gamefront.com/games/bridge-commander/file/sg-pack-3-0-multiplayer-patch, install the KM version of it, not the other), do it immediately after installing this one
 * Ancient City mod https://www.gamefront.com/games/bridge-commander/file/ancient-city-atlantis-pack-0-9
-* Wraith Cruiser (TO-DO ADD LINK)
-* Wraith Hive (TO-DO ADD LINK)
-* Wraith SuperHive (TO-DO ADD LINK)
+* Wraith Cruiser https://www.gamefront.com/games/bridge-commander/file/wraith-cruiser-1-1
+* Wraith Hive https://www.gamefront.com/games/bridge-commander/file/wraith-hive-ship, then https://www.gamefront.com/games/bridge-commander/file/wraith-hive-ship-mvam-darts
+* Wraith SuperHive https://www.gamefront.com/games/bridge-commander/file/super-hive
 * SGU Destiny with Ancient Shuttle https://www.gamefront.com/games/bridge-commander/file/sgu-destiny-with-ancient-shuttle
-* Either Automated Destroyed System Repair from:
-** Borg Adaptation Mod https://www.gamefront.com/games/bridge-commander/file/borg-adaptation-mod-defensive
-** Or from https://www.gamefront.com/games/bridge-commander/file/stbc-babylon-5-mod
-*** RECOMMENDED TO DOWNLOAD the scripts/Custom/Autoload file "FIX-FoundationTech20050703ShipInstanceDetach" from https://www.gamefront.com/games/bridge-commander/file/stbc-babylon-5-mod in order to get a better and cleaner game experience.
-* Canonical Alteran Technologies (C.A.T.) https://www.gamefront.com/games/bridge-commander/file/canonical-alteran-technologies
+* "FIX-DS9FXbelow1dot2.py" file is required for the weapons to work accordingly on KM. This file can be found in several of CharaToLoki's (my) mods, including this one.
+* "Automated Destroyed System Repair" and "FIX-FoundationTech20050703ShipInstanceDetach.py" from the Babylon 5 Super-Pack mod https://www.gamefront.com/games/bridge-commander/file/stbc-babylon-5-mod
+*** The latter is required because "FIX-FoundationTech20050703ShipInstanceDetach" is recommended for a better and cleaner game experience, but with complex mods with complex technologies it is a must. Additionally, this pack contains a few technologies that the pack does not directly use per-se, but some ships may.
+*** "Automated Destroyed System Repair" can also be downloaded from the Borg Adaptation Mod https://www.gamefront.com/games/bridge-commander/file/borg-adaptation-mod-defensive (SMALLER FILES IN TOTAL, but requires to download )
+** Or from 
+* Canonical Alteran Technologies (C.A.T.) https://www.gamefront.com/games/bridge-commander/file/canonical-alteran-technologies (it also has the "FIX-DS9FXbelow1dot2" file)
 ** If you download the multiplayer patch, you will probably have to re-install this C.A.T. mod
 
-Also please note that if you download the multiplayer patch AFTER installing this mod, you will probably have to re-install this mod.
+OPTIONAL mods (they are not required AT ALL , but have some of the techs the pack may later reference on):
+** Tachyon Beam mod https://www.gamefront.com/games/bridge-commander/file/tachyon-beam-customizable-tech
+
+Also please note that if you download the multiplayer patch AFTER installing this mod, you will probably have to re-install the mod.
 
 == Credits ==
 * Everyone involved in Foundation - without you this would have been a real pain to do (please read the separate Foundation.txt license) - Banbury, Dasher42, DigitalFriend, MLeo, Nanobyte and Sleight42, among others
 * Everyone involved in KM - specifically those involved in the creation of armour and Shields.py (FoundationTechnologies) and the AdvArmorTech.py - Apollo from ATP Technologies as well.
 * Dasher42 and USS Sovereign, not only for the above but for some feedback.
 * Those involved with the Stargate Pack 4.0 and other Stargate packs for STBC:
-** https://www.gamefront.com/games/bridge-commander/file/stargate-ship-pack-dave975-and-dkealt by Dave975 and DKealt, among others mentioned on its readme, and LJ.
+** https://www.gamefront.com/games/bridge-commander/file/stargate-ship-pack-dave975-and-dkealt, https://www.gamefront.com/games/bridge-commander/file/wraith-hive-ship and https://www.gamefront.com/games/bridge-commander/file/sg-pack-3-0-multiplayer-patch by Dave975 and DKealt, among others mentioned on their readmes, and LJ.
 ** https://www.gamefront.com/games/bridge-commander/file/ancient-city-atlantis-pack-0-9: abt, limey, cliperkins, jb and dave (models) and icons (http://www.lostmindsinc.com/index.php?page=races)
 *** Evan Light aka sleight42 for the original Carriers script.
 *** Erik Novales, MRJOHN and Lost_Jedi for the original Projectiles.
 ** SGU Destiny and Ancient Shuttle https://www.gamefront.com/games/bridge-commander/file/sgu-destiny-with-ancient-shuttle
-** #### TO-DO ADD WRAITH CRUISER, HIVE AND SUPERHIVE CREDITS ####
+** Superhive mod uploaded by xxDABTxx https://www.gamefront.com/games/bridge-commander/file/super-hive
 * .truncatedcake0161 for feedback on the Discord about power tweaks.
 * Grey da Derg#2305 for helping with noticing bugs and their cause and finding out possible ways to tweak the hardpoints and techs.
-* Alex SL Gato (aka CharaToLoki) for any new code implemented or modified - specifically the heavy modifications to the Ion and Plasma projectiles, the buffs to the Asgard Hardpoints and modifications to the Ha'tak hardpoints.
-** NOTICE: There's an Altantis HP fix on gamefront that added a cloak, but by the time I noticed I already added the cloak myself to the file
+* Alex SL Gato (aka CharaToLoki) for any new code implemented or modified - specifically the heavy modifications to the Ion and Plasma projectiles, the buffs to the Asgard Hardpoints and modifications to the Ha'tak, X301, F302, Death Glider and Needle Threader hardpoints.
 
 Fulfilling both the SDK and LGPL licenses:
 THIS MOD IS NOT SUPPORTED BY ACTIVISION

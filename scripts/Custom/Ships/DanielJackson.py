@@ -38,7 +38,8 @@ credits = {
 #                                                                                     #
 Foundation.ShipDef.DanielJackson = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
 Foundation.ShipDef.DanielJackson.dTechs = {
-	'SG Shields': { "RaceShieldTech": "Asgard" }
+	'SG Shields': { "RaceShieldTech": "Asgard" },
+	"TachyonBeam": { "Immune": -1 }
 }
 #                                                                                     #
 #######################################################################################
