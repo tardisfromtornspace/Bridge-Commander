@@ -15,7 +15,7 @@ This mod attempts to fix some Stargate pack balance inconsistencies by adding ap
 
 * Plasma and Ion weapons base damage nerfed accordingly to deal a similar final raw damage output to what they did to shields before the mod.
 ** Please note that "similar" is not "equal" - actually, specially for the Asgard Ion Cannons, net shield damage has been slightly buffed, specially for the higher-end vessels' Ion weapons.
-** Same has been done for certain "big" weapons such as the Flagship's cannons.
+** Same has been done for certain "big" plasma weapons such as the Flagship's or Anubis Superweapon's cannons, which have only been tagged as SG plasma weapons and have their generic hull modifiers increasing such damage.
 * Asgard Daniel Jackson, O'Neill and Valhalla shields and shield recharge buffed significantly (between 36% to 57%).
 
 
@@ -29,11 +29,12 @@ This mod attempts to fix some Stargate pack balance inconsistencies by adding ap
 * Upgraded Ha'tak speed increased slightly.
 * Buffed regular Ha'tak (Early, Variant, Refit) shields significantly.
 * Nerfed regular Ha'tak hulls (Early, Variant, Refit) a bit.
+* Added Simulated Point Defence to the Replicator Stolen Cruiser.
 
 #### TO-DO ----> FOR ANUBIS MOTHERSHIP, SEE IF YOU CAN DO SOMETHING LIKE THE TURRETS SCRIPT MIXED WITH TACHYONBEAM SCRIPT, BUT ONLY MOVING TWO UNCOLLIDABLE AND UNTARGETABLE BEAMS NEXT TO AN ENEMY VESSEL, TO THEN FIRE ON THE TWO CLOSEST ENEMY VESSELS TO THE OBJECTIVE ####
 
 * Wraith given Automated System Repair #### TO-DO ####
-* Wraith HP and weapons adjusted accordingly between mods #### TO-DO ####
+* Wraith HP and weapons adjusted accordingly between mods #### TO-DO ALSO CHECK FOR WRAITH DARTS IF THEY NEED SOME HP NERF AS WELL ####
 #### ALSO TO-DO MAYBE GIVE WRAITH HULL A CERTAIN METHOD OF DAMAGE REDUCTION? ####
 
 == Dependancies ==

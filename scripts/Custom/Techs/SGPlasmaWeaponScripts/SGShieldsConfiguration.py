@@ -44,8 +44,10 @@ def interactionShieldBehaviour(pShip, sScript, sShipScript, pInstance, pEvent, p
 		wasChanged = wasChanged + 1
 		global PlasmaSGShieldDamageMultiplier, xAnubisShieldMultiplier, xAsgardShieldMuliplier, xAlteranShieldMultiplier, xOriShieldMultiplier
 
-		if hasattr(pTorp, "ShieldDmgMultiplier"): # If this torp has a special global multiplier, then we use it
-			shieldDamageMultiplier = shieldDamageMultiplier * pTorp.ShieldDmgMultiplier()
+		mod = pTorp.GetModuleName()
+		importedTorpInfo = __import__(mod)
+		if hasattr(importedTorpInfo, "ShieldDmgMultiplier"): # If this torp has a special global multiplier, then we use it
+			shieldDamageMultiplier = shieldDamageMultiplier * importedTorpInfo.ShieldDmgMultiplier()
 		else: # default multiplication dmg to shields
 			shieldDamageMultiplier = shieldDamageMultiplier * PlasmaSGShieldDamageMultiplier
 		shouldDealAllFacetDamage = 0

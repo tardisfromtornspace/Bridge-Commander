@@ -107,8 +107,10 @@ def interactionShieldBehaviour(pShip, sScript, sShipScript, pInstance, pEvent, p
 		wasChanged = wasChanged + 1
 		global PlasmaSGShieldDamageMultiplier, xAnubisShieldMultiplier, xAsgardShieldMuliplier, xAlteranShieldMultiplier, xOriShieldMultiplier
 
-		if hasattr(pTorp, "ShieldDmgMultiplier"): # If this torp has a special global multiplier, then we use it
-			shieldDamageMultiplier = shieldDamageMultiplier * pTorp.ShieldDmgMultiplier()
+		mod = pTorp.GetModuleName()
+		importedTorpInfo = __import__(mod)
+		if hasattr(importedTorpInfo, "ShieldDmgMultiplier"): # If this torp has a special global multiplier, then we use it
+			shieldDamageMultiplier = shieldDamageMultiplier * importedTorpInfo.ShieldDmgMultiplier()
 		else: # default multiplication dmg to shields
 			shieldDamageMultiplier = shieldDamageMultiplier * PlasmaSGShieldDamageMultiplier
 		shouldDealAllFacetDamage = 0
@@ -177,7 +179,7 @@ global lImmuneSGPlasmaWeaponShips
 lImmuneSGPlasmaWeaponShips = []
 
 # For every other ship (because since STBC is a ST game, the shields in-game behave more like ST shields, specifically simplified 24th century Post-Dominion War Federation ones, so we must take them as a base), excluding the examples mentioned below, this weapon causes a shield drain in each shield facet equivalent to the projectile damage received. If the hull is hit, it will deal 10 times the damage the normal projectile does.
-PlasmaGenericShieldDamageMultiplier = 2 # one from the normal shot, another from us
+PlasmaGenericShieldDamageMultiplier = 1 # one from the normal shot, another from us
 
 SlowDownRatio = 3.0/70.0 # This is an auxiliar value, it helps us for when a ship is too small, to prevent a torpedo from just teleporting to the other side
 
@@ -481,7 +483,7 @@ try:
 
 			global PlasmaHullDamageMultiplier, PlasmaGenericShieldDamageMultiplier, defenceGridMultiplier, hullPolarizerMultiplier, shadowDispersiveHullMultiplier
 			hullDamageMultiplier = 1.0
-			shieldDamageMultiplier = 1.0
+			shieldDamageMultiplier = PlasmaGenericShieldDamageMultiplier
 
 			shouldPassThrough = 0
 			considerPiercing = 0
@@ -591,8 +593,6 @@ try:
 					shieldDamageMultiplier = shieldDamageMultiplier * pTorp.ShieldDmgMultiplier()
 			
 			shieldDamageMultiplier = shieldDamageMultiplier - PlasmaGenericShieldDamageMultiplier # That is, to compensate the "extra" time we added 1 damage
-
-
 	
 			finalShieldDamage = fDamage * shieldDamageMultiplier
 
