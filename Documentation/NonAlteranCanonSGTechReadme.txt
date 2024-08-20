@@ -11,23 +11,30 @@ This mod attempts to fix some Stargate pack balance inconsistencies by adding ap
 * SG Ion Weapons: this tech works by adding a customizable drain effect; while being open to adding Subscripts that may modify its behavior (please read in-script documentation about how does this work).
 ** This was meant to give the Asgard and Tollan Ion Weapons a significant buff, while providing Anubis a resistance without making Anubis vessels have shields 100 times stronger than normal (let's not forget a regular Ha'tak could be destroyed by a single Tollan Ion Cannon shot ignoring the shields, but Anubis shields on a regular Ha'tak could shrug a entire planetary defense grid of them, yet at most 1 Anubian Ha'tak was equal to 6 regular ones - if mod-wise we followed a mere shield increase strategy, in order to make Anubis Ha'taks capable of shrugging off the Tollan Ion cannons, they would become invincible to even Ori vessels).
 
-* SG Plasma Weapons: #### TO-DO #### the purpose of this tech was to explain why a naquadah-enhanced >1000 Megaton nuke could not deal damage to a Go'auld Ha'tak and a Ha'tak could stay 9 hours inside a sun's Corona, yet some Go'auld Death Glider's staff weapons could put the shields to strain, without performing total absurdities (before this mod, previous mods made the Go'auld death glider half-shot deal roughtly half the damage of a Ha'tak's main weapons shot, you have got to be kidding me).
-** TO-DO
+* SG Plasma Weapons: the purpose of this tech was to explain why a naquadah-enhanced >1000 Megaton nuke could not deal damage to a Go'auld Ha'tak and a Ha'tak could stay 10 hours inside a sun's Corona, yet some Go'auld Death Glider's staff weapons could put the shields to strain, without performing total absurdities (before this mod, previous mods made the Go'auld death glider half-shot deal roughtly half the damage of a Ha'tak's main weapons shot, you have got to be kidding me).
+
+* Plasma and Ion weapons base damage nerfed accordingly to deal a similar final raw damage output to what they did to shields before the mod.
+** Please note that "similar" is not "equal" - actually, specially for the Asgard Ion Cannons, net shield damage has been slightly buffed, specially for the higher-end vessels' Ion weapons.
+** Same has been done for certain "big" weapons such as the Flagship's cannons.
+* Asgard Daniel Jackson, O'Neill and Valhalla shields and shield recharge buffed significantly (between 36% to 57%).
+
 
 * Replicator adaptation: #### TO-DO #### based on my other mod, Borg Adaptation https://www.gamefront.com/games/bridge-commander/file/borg-adaptation-mod-defensive ; it is meant to be added as a modification to allow the Replicators to adapt, instead of making them a set of OP-ness that cannot adapt, they instead start a bit less overpowered, then learn and eventually make themselves far more powerful than normal.
 ** TO-DO
 * TO-DO ALSO ADD Automated Destroyed System Repair TO THE REPLICATOR VESSELS, ESPECIALLY THEIR COMMAND CARRIER AND SPIDER
 
-* Plasma and Ion weapons nerfed accordingly to deal a similar raw damage output to what they did to shields before the mod. #### TO-DO ####
-** Please note that "similar" is not "equal" - actually, specially for the Asgard Ion Cannons, net shield damage has been slightly buffed, specially for the higher-end vessels' Ion weapons.
-* Asgard Daniel Jackson, O'Neill and Valhalla shields and shield recharge buffed significantly (between 36% to 57%).
 
-* Ha'taks adjusted #### TO-DO ####
+
+* Ha'taks and some capital ships' masses adjusted to comparable levels (since the mass difference has something to do with in-game collisions, it is the best way to simulate shield collisions in-game)
+* Upgraded Ha'tak speed increased slightly.
+* Buffed regular Ha'tak (Early, Variant, Refit) shields significantly.
+* Nerfed regular Ha'tak hulls (Early, Variant, Refit) a bit.
 
 #### TO-DO ----> FOR ANUBIS MOTHERSHIP, SEE IF YOU CAN DO SOMETHING LIKE THE TURRETS SCRIPT MIXED WITH TACHYONBEAM SCRIPT, BUT ONLY MOVING TWO UNCOLLIDABLE AND UNTARGETABLE BEAMS NEXT TO AN ENEMY VESSEL, TO THEN FIRE ON THE TWO CLOSEST ENEMY VESSELS TO THE OBJECTIVE ####
 
 * Wraith given Automated System Repair #### TO-DO ####
 * Wraith HP and weapons adjusted accordingly between mods #### TO-DO ####
+#### ALSO TO-DO MAYBE GIVE WRAITH HULL A CERTAIN METHOD OF DAMAGE REDUCTION? ####
 
 == Dependancies ==
 All of these must be installed before installing this mod, in this order:

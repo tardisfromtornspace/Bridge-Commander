@@ -8,7 +8,7 @@ def Create(pTorp):
 
 	pTorp.CreateDisruptorModel(kOuterShellColor,kOuterCoreColor, 0.05, 0.01) 	
 	pTorp.SetDamage( GetDamage() )
-	pTorp.SetDamageRadiusFactor(0.15)
+	pTorp.SetDamageRadiusFactor(0.01)
 	pTorp.SetGuidanceLifetime( GetGuidanceLifetime() )
 	pTorp.SetMaxAngularAccel( GetMaxAngularAccel() )
 	pTorp.SetLifetime( GetLifetime() )
@@ -33,7 +33,7 @@ def GetName():
 	return("Rail Gun")
 
 def GetDamage():
-	return 45.0
+	return 6.0
 
 def GetGuidanceLifetime():
 	return 0.05

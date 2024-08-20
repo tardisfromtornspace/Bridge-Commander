@@ -63,3 +63,16 @@ def GetMaxAngularAccel():
 
 def GetLifetime():
 	return 12.0
+
+def HullDmgMultiplier(): 
+	return 1.05
+
+def ShieldDmgMultiplier():
+	return 1.0
+
+try:
+	modSGPlasmaWeaponTorp = __import__("Custom.Techs.SGPlasmaWeapon")
+	if(modSGPlasmaWeaponTorp):
+		modSGPlasmaWeaponTorp.oSGPlasmaWeaponTorp.AddTorpedo(__name__)
+except:
+	print "SGPlasmaWeapon projectile script not installed, or you are missing Foundation Tech"

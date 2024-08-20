@@ -24,7 +24,7 @@ ONeill = App.ShipProperty_Create("ONeill")
 
 ONeill.SetGenus(1)
 ONeill.SetSpecies(770)
-ONeill.SetMass(30000.000000)
+ONeill.SetMass(300000.000000)
 ONeill.SetRotationalInertia(300.000000)
 ONeill.SetShipName("ONeill")
 ONeill.SetModelFilename("data/Models/Ships/ONeill/ONeill.nif")

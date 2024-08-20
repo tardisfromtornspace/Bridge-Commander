@@ -6,7 +6,7 @@
 # As these are Sub-techs with some leeway, their manuals must be explained here:
 ##################################
 # SPECIFIC SUB-TECH MANUAL:
-# This file takes care of how SG shielding is affected by SG Ion Weapons.
+# This file takes care of how SW shielding is affected by SG Ion Weapons.
 # The reason we make a tech for this, is because SW Shields behave differently from ST, SG shields or B5 defences against an Ion Weapon.
 # For Star Wars it is pretty obvious, their shields and equipment are extremely weak against Ion Weapons in general - in fact, Ion Weapons on SW are used as disabler weapons, a-la-ST Breen Drainer. Because Asgard Ion Weapons are more damage-dealing, a middle-ground has been reached - they deal extra damage to SW shields overall, but if the shields were down, it won't cause any EMP-Fried systems effect, just the normal SG Ion cannon punch boost Basic Configuration provides, and slight damage to the Power plant.
 
@@ -91,7 +91,6 @@ lSWVulnerableLegacyList = (
 def interactionShieldBehaviour(pShip, sScript, sShipScript, pInstance, pEvent, pTorp, pInstancedict, pAttackerShipID, hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, considerPiercing, shouldDealAllFacetDamage, wasChanged):
 	global lSWVulnerableLegacyList
 	if pInstancedict.has_key("SW Shields") or sShipScript in lSWVulnerableLegacyList: # SW shields are extremely weak to Ion Weapons, they are used to knock them out, albeit not destroy them
-		print "SW SHIELDS"
 		wasChanged = wasChanged + 1
 		global IonSWShieldDamageMultiplier
 		shieldDamageMultiplier = shieldDamageMultiplier + IonSWShieldDamageMultiplier
@@ -104,15 +103,13 @@ def interactionShieldBehaviour(pShip, sScript, sShipScript, pInstance, pEvent, p
 def interactionHullBehaviour(pShip, sScript, sShipScript, pInstance, pEvent, pTorp, pInstancedict, pAttackerShipID, hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, considerPiercing, shouldDealAllFacetDamage, wasChanged):
 	global lSWVulnerableLegacyList
 	if pInstancedict.has_key("SW Shields") or sShipScript in lSWVulnerableLegacyList: # SW shields are extremely weak to Ion Weapons, they are used to knock them out, albeit not destroy them
-		print "SW HULL"
 		wasChanged = wasChanged + 1
 
 		global IonSWHullDamageMultiplier
 		# We reduce the damage... but your power plant gets damaged! Be careful or too many Ions may make you explode!
 		pPower = pShip.GetPowerSubsystem()
 		if pPower:
-			print "SW POWER DAMAGE"
-			myDamage = -hullDamageMultiplier * (1 - IonSWHullDamageMultiplier)
+			myDamage = -hullDamageMultiplier * (1 - IonSWHullDamageMultiplier) * pTorp.GetDamage()
 			print "myDamage = ", myDamage
 			myStatus = pPower.GetCondition() + myDamage
   			if (myStatus) < 0.1:

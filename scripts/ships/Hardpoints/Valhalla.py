@@ -24,7 +24,7 @@ Valhalla = App.ShipProperty_Create("Valhalla")
 
 Valhalla.SetGenus(1)
 Valhalla.SetSpecies(770)
-Valhalla.SetMass(30000.000000)
+Valhalla.SetMass(300000.000000)
 Valhalla.SetRotationalInertia(300.000000)
 Valhalla.SetShipName("Valhalla")
 Valhalla.SetModelFilename("data/Models/Ships/ONeill/Valhalla.nif")

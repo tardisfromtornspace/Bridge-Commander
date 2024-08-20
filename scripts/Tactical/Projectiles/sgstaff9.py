@@ -63,3 +63,16 @@ def GetMaxAngularAccel():
 
 def GetLifetime():
 	return 12.0
+
+def HullDmgMultiplier(): 
+	return 1.5
+
+def ShieldDmgMultiplier(): # We don't have to add extra damage, this plasma weapon is big enough already that the base damage is enough
+	return 1.0
+
+try:
+	modSGPlasmaWeaponTorp = __import__("Custom.Techs.SGPlasmaWeapon")
+	if(modSGPlasmaWeaponTorp):
+		modSGPlasmaWeaponTorp.oSGPlasmaWeaponTorp.AddTorpedo(__name__)
+except:
+	print "SGPlasmaWeapon projectile script not installed, or you are missing Foundation Tech"

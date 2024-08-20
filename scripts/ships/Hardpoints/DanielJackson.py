@@ -24,7 +24,7 @@ DanielJackson = App.ShipProperty_Create("DanielJackson")
 
 DanielJackson.SetGenus(1)
 DanielJackson.SetSpecies(769)
-DanielJackson.SetMass(230.000000)
+DanielJackson.SetMass(23000.000000)
 DanielJackson.SetRotationalInertia(300.000000)
 DanielJackson.SetShipName("DanielJackson")
 DanielJackson.SetModelFilename("data/Models/Ships/ONeill/ONeill.nif")

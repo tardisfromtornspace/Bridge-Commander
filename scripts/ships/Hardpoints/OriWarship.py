@@ -106,7 +106,7 @@ OriWarship = App.ShipProperty_Create("Ori Warship")
 
 OriWarship.SetGenus(1)
 OriWarship.SetSpecies(758)
-OriWarship.SetMass(100000.000000)
+OriWarship.SetMass(100000000.000000)
 OriWarship.SetRotationalInertia(2000.000000)
 OriWarship.SetShipName("OriWarship")
 OriWarship.SetModelFilename("data/Models/Ships/OriWarship/OriWarship.nif")

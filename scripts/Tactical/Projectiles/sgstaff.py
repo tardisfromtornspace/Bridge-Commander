@@ -28,7 +28,7 @@ def Create(pTorp):
 
 	pTorp.CreateDisruptorModel(kOuterShellColor,kOuterCoreColor, 0.2, 0.03) 	
 	pTorp.SetDamage( GetDamage() )
-	pTorp.SetDamageRadiusFactor(0.15)
+	pTorp.SetDamageRadiusFactor(0.005)
 	pTorp.SetGuidanceLifetime( GetGuidanceLifetime() )
 	pTorp.SetMaxAngularAccel( GetMaxAngularAccel() )
 	pTorp.SetLifetime( GetLifetime() )
@@ -53,7 +53,7 @@ def GetName():
 	return("Staff")
 
 def GetDamage():
-	return 75.0
+	return 27.0
 
 def GetGuidanceLifetime():
 	return 0.01
@@ -63,3 +63,16 @@ def GetMaxAngularAccel():
 
 def GetLifetime():
 	return 12.0
+
+def HullDmgMultiplier():
+	return 8
+
+def ShieldDmgMultiplier():
+	return 8
+
+try:
+	modSGPlasmaWeaponTorp = __import__("Custom.Techs.SGPlasmaWeapon")
+	if(modSGPlasmaWeaponTorp):
+		modSGPlasmaWeaponTorp.oSGPlasmaWeaponTorp.AddTorpedo(__name__)
+except:
+	print "SGPlasmaWeapon projectile script not installed, or you are missing Foundation Tech"

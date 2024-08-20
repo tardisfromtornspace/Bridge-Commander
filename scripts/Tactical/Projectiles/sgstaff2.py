@@ -53,7 +53,7 @@ def GetName():
 	return("Staff")
 
 def GetDamage():
-	return 500.0
+	return 125.0
 
 def GetGuidanceLifetime():
 	return 0.01
@@ -63,3 +63,16 @@ def GetMaxAngularAccel():
 
 def GetLifetime():
 	return 3.0
+
+def HullDmgMultiplier():
+	return 4
+
+def ShieldDmgMultiplier():
+	return 4
+
+try:
+	modSGPlasmaWeaponTorp = __import__("Custom.Techs.SGPlasmaWeapon")
+	if(modSGPlasmaWeaponTorp):
+		modSGPlasmaWeaponTorp.oSGPlasmaWeaponTorp.AddTorpedo(__name__)
+except:
+	print "SGPlasmaWeapon projectile script not installed, or you are missing Foundation Tech"

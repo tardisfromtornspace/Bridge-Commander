@@ -1,5 +1,6 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
+# 20th August 2024, by Alex SL Gato (CharaToLoki)
 #         Based on BorgAdaptation.py and PhasedTorp.py by Alex SL Gato, which were based on the Foundation import function by Dasher; the Shield.py scripts and KM Armour scripts and FoundationTechnologies team's PhasedTorp.py
 #         Also based on ATPFunctions by Apollo.
 #################################################################################################################
@@ -160,7 +161,7 @@ import nt
 import string
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-            "Version": "0.9",
+            "Version": "0.92",
             "License": "LGPL",
             "Description": "Read the small title above for more info"
             }
@@ -529,7 +530,7 @@ try:
 
 					pHitPoint.Add(pVec)
 
-					pTempTorp = FireTorpFromPointWithVectorAndNetType(pTorp.GetWorldLocation(), pVec, mod, pShip.GetObjID(), attackerID, launchSpeed, torpsNetTypeThatCanPhase, finalHullDamage, pTorp.GetDamageRadiusFactor(), 1, pShip)
+					pTempTorp = FireTorpFromPointWithVectorAndNetType(pTorp.GetWorldLocation(), pVec, mod, pShip.GetObjID(), attackerID, launchSpeed, pTorp.GetNetType(), finalHullDamage, pTorp.GetDamageRadiusFactor(), 1, pShip)
 					pTempTorp.SetLifetime(15.0)			
 				except:
 					print "You are missing 'Tactical.Projectiles.ExtraPhasedDamageDummy' torpedo on your install, without that the SG Ion Weapons here cannot deal extra hull damage... or another error happened"
@@ -541,8 +542,6 @@ try:
 			# First, what kind of shield tech we have here?
 			if pInstancedict.has_key('SG Ion Weapon Immune') and pInstancedict['SG Ion Weapon Immune'] > 0:
 				return
-
-			global lSWVulnerableLegacyList, IonB5LegacyShieldDamageMultiplier
 
 			wasShieldChanged = 0
 			for item in variableNames.keys():
