@@ -17,6 +17,7 @@ This mod attempts to fix some Stargate pack balance inconsistencies by adding ap
 ** Please note that "similar" is not "equal" - actually, specially for the Asgard Ion Cannons, net shield damage has been slightly buffed, specially for the higher-end vessels' Ion weapons.
 ** Same has been done for certain "big" plasma weapons such as the Flagship's or Anubis Superweapon's cannons, which have only been tagged as SG plasma weapons and have their generic hull modifiers increasing such damage.
 * Asgard Daniel Jackson, O'Neill and Valhalla shields and shield recharge buffed significantly (between 36% to 57%).
+* All Asgard vessels have now tractor beams and probe launchers.
 
 
 * Replicator adaptation: #### TO-DO #### based on my other mod, Borg Adaptation https://www.gamefront.com/games/bridge-commander/file/borg-adaptation-mod-defensive ; it is meant to be added as a modification to allow the Replicators to adapt, instead of making them a set of OP-ness that cannot adapt, they instead start a bit less overpowered, then learn and eventually make themselves far more powerful than normal.
@@ -48,7 +49,7 @@ All of these must be installed before installing this mod, in this order:
 * Wraith SuperHive https://www.gamefront.com/games/bridge-commander/file/super-hive
 * SGU Destiny with Ancient Shuttle https://www.gamefront.com/games/bridge-commander/file/sgu-destiny-with-ancient-shuttle
 * "FIX-DS9FXbelow1dot2.py" file is required for the weapons to work accordingly on KM. This file can be found in several of CharaToLoki's (my) mods, including this one.
-* "Automated Destroyed System Repair" and "FIX-FoundationTech20050703ShipInstanceDetach.py" from the Babylon 5 Super-Pack mod https://www.gamefront.com/games/bridge-commander/file/stbc-babylon-5-mod
+* "Automated Destroyed System Repair", "Simulated Point Defence" and "FIX-FoundationTech20050703ShipInstanceDetach.py" from the Babylon 5 Super-Pack mod https://www.gamefront.com/games/bridge-commander/file/stbc-babylon-5-mod
 *** The latter is required because "FIX-FoundationTech20050703ShipInstanceDetach" is recommended for a better and cleaner game experience, but with complex mods with complex technologies it is a must. Additionally, this pack contains a few technologies that the pack does not directly use per-se, but some ships may.
 *** "Automated Destroyed System Repair" can also be downloaded from the Borg Adaptation Mod https://www.gamefront.com/games/bridge-commander/file/borg-adaptation-mod-defensive (SMALLER FILES IN TOTAL, but requires to download )
 ** Or from 

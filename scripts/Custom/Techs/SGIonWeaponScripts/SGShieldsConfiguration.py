@@ -32,7 +32,7 @@ IonSGVulnerableShields = ["Go'auld"] # This excludes "Anubis Go'auld" shields.
 xAnubisShieldMultiplier = 0.79
 xAnubisVSTollanShieldMultiplier = -0.15
 xAnubisVSPrimitiveAsgardShieldMultiplier = 0.15
-xAsgardShieldMuliplier = 0.8
+xAsgardShieldMultiplier = 0.8
 xAlteranShieldMultiplier = 0.68
 xOriShieldMultiplier = 0.67
 
@@ -43,7 +43,7 @@ xVulnerableNaquadahOrNeutroniumBoost = 3.0
 def interactionShieldBehaviour(pShip, sScript, sShipScript, pInstance, pEvent, pTorp, pInstancedict, pAttackerShipID, hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, considerPiercing, shouldDealAllFacetDamage, wasChanged, negateRegeneration):
 	if pInstancedict.has_key("SG Shields"):
 		wasChanged = wasChanged + 1
-		global IonSGShieldDamageMultiplier, xAnubisShieldMultiplier, xAnubisVSTollanShieldMultiplier, xAnubisVSPrimitiveAsgardShieldMultiplier, xAsgardShieldMuliplier, xAlteranShieldMultiplier, xOriShieldMultiplier
+		global IonSGShieldDamageMultiplier, xAnubisShieldMultiplier, xAnubisVSTollanShieldMultiplier, xAnubisVSPrimitiveAsgardShieldMultiplier, xAsgardShieldMultiplier, xAlteranShieldMultiplier, xOriShieldMultiplier
 		shieldDamageMultiplier = shieldDamageMultiplier + IonSGShieldDamageMultiplier
 		shouldDealAllFacetDamage = 0
 		considerPiercing = considerPiercing + 1
@@ -66,7 +66,7 @@ def interactionShieldBehaviour(pShip, sScript, sShipScript, pInstance, pEvent, p
 					shieldDamageMultiplier = shieldDamageMultiplier * xAnubisShieldMultiplier
 						 
 			elif RaceShieldTech == "Asgard": # Resistances
-				shieldDamageMultiplier = shieldDamageMultiplier * xAsgardShieldMuliplier
+				shieldDamageMultiplier = shieldDamageMultiplier * xAsgardShieldMultiplier
 			elif RaceShieldTech == "Alteran" or RaceShieldTech == "Lantian" or RaceShieldTech == "Lantean" or RaceShieldTech == "Asuran": # Resistances, not including actual Replicator ships here because those will have their own tech
 				shieldDamageMultiplier = shieldDamageMultiplier * xAlteranShieldMultiplier
 			elif RaceShieldTech == "Ori": # Resistances

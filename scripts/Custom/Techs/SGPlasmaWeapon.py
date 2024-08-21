@@ -106,8 +106,8 @@ PlasmaSGShieldDamageMultiplier = 4.0
 ## Some SG-related resistances - unless there's a new Stargate franchise adding more races and spaceship combat, these should do the job
 ## Adding Asgard and Ori here, because the Asgard used neutronium on their vessel alloys, and for most of them the Plasma cannons were primitive enough that Asgard shields could handle them easier (excluding Anubis-grade ones)
 ## The Ori just because they may have some random ascended-knowledge thing going on, and as a way to reduce damage bleedthrough in certain models mod-wise.
-xAsgardShieldMuliplier = 0.75
-xAsgardHullMuliplier = 0.8
+xAsgardShieldMultiplier = 0.75
+xAsgardHullMultiplier = 0.8
 xAnubisShieldMultiplier = 0.6 # Seems fair that when Anubis upgraded his shields, it also made them more resistant to the mainstream weapons the Go'auld use
 xAlteranShieldMultiplier = 1.0
 xAlteranHullMultiplier = 1.0
@@ -119,7 +119,7 @@ xOriHullMultiplier = 0.95
 def interactionShieldBehaviour(pShip, sScript, sShipScript, pInstance, pEvent, pTorp, pInstancedict, pAttackerShipID, hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, considerPiercing, shouldDealAllFacetDamage, wasChanged):
 	if pInstancedict.has_key("SG Shields"):
 		wasChanged = wasChanged + 1
-		global PlasmaSGShieldDamageMultiplier, xAnubisShieldMultiplier, xAsgardShieldMuliplier, xAlteranShieldMultiplier, xOriShieldMultiplier
+		global PlasmaSGShieldDamageMultiplier, xAnubisShieldMultiplier, xAsgardShieldMultiplier, xAlteranShieldMultiplier, xOriShieldMultiplier
 
 		mod = pTorp.GetModuleName()
 		importedTorpInfo = __import__(mod)
@@ -137,7 +137,7 @@ def interactionShieldBehaviour(pShip, sScript, sShipScript, pInstance, pEvent, p
 				shieldDamageMultiplier = shieldDamageMultiplier * xAnubisShieldMultiplier
 						 
 			elif RaceShieldTech == "Asgard": # Resistances
-				shieldDamageMultiplier = shieldDamageMultiplier * xAsgardShieldMuliplier
+				shieldDamageMultiplier = shieldDamageMultiplier * xAsgardShieldMultiplier
 			elif RaceShieldTech == "Alteran" or RaceShieldTech == "Lantian" or RaceShieldTech == "Lantean" or RaceShieldTech == "Asuran": # Resistances, not including actual Replicator ships here because those will have their own tech
 				shieldDamageMultiplier = shieldDamageMultiplier * xAlteranShieldMultiplier
 			elif RaceShieldTech == "Ori": # Resistances
@@ -155,15 +155,15 @@ def interactionHullBehaviour(pShip, sScript, sShipScript, pInstance, pEvent, pTo
 			RaceShieldTech = pInstancedict["SG Shields"]["RaceShieldTech"]
 
 		if RaceShieldTech != None:
-			global xAsgardHullMuliplier, xAlteranHullMultiplier, xOriHullMultiplier
+			global xAsgardHullMultiplier, xAlteranHullMultiplier, xOriHullMultiplier
 			wasChanged = wasChanged + 1
 			RaceShieldTech = pInstancedict["SG Shields"]["RaceShieldTech"]	
 			if RaceShieldTech == "Asgard":
-				hullDamageMultiplier = hullDamageMultiplier * xAsgardHullMuliplier
+				hullDamageMultiplier = hullDamageMultiplier * xAsgardHullMultiplier
 			elif RaceShieldTech == "Alteran" or RaceShieldTech == "Lantian" or RaceShieldTech == "Lantean" or RaceShieldTech == "Asuran":
-				hullDamageMultiplier = hullDamageMultiplier * xAlteranHullMuliplier
+				hullDamageMultiplier = hullDamageMultiplier * xAlteranHullMultiplier
 			elif RaceShieldTech == "Ori":
-				hullDamageMultiplier = hullDamageMultiplier * xOriHullMuliplier
+				hullDamageMultiplier = hullDamageMultiplier * xOriHullMultiplier
 
 
 
