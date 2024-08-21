@@ -68,7 +68,7 @@ def HullDmgMultiplier():
 	return 8
 
 def ShieldDmgMultiplier():
-	return 8
+	return 7
 
 try:
 	modSGPlasmaWeaponTorp = __import__("Custom.Techs.SGPlasmaWeapon")

@@ -88,7 +88,7 @@ lSWVulnerableLegacyList = (
                 )
 
 
-def interactionShieldBehaviour(pShip, sScript, sShipScript, pInstance, pEvent, pTorp, pInstancedict, pAttackerShipID, hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, considerPiercing, shouldDealAllFacetDamage, wasChanged):
+def interactionShieldBehaviour(pShip, sScript, sShipScript, pInstance, pEvent, pTorp, pInstancedict, pAttackerShipID, hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, considerPiercing, shouldDealAllFacetDamage, wasChanged, negateRegeneration):
 	global lSWVulnerableLegacyList
 	if pInstancedict.has_key("SW Shields") or sShipScript in lSWVulnerableLegacyList: # SW shields are extremely weak to Ion Weapons, they are used to knock them out, albeit not destroy them
 		wasChanged = wasChanged + 1
@@ -96,11 +96,12 @@ def interactionShieldBehaviour(pShip, sScript, sShipScript, pInstance, pEvent, p
 		shieldDamageMultiplier = shieldDamageMultiplier + IonSWShieldDamageMultiplier
 		shouldDealAllFacetDamage = shouldDealAllFacetDamage + 1
 		considerPiercing = 0
+		negateRegeneration = negateRegeneration + 1
 
 
-	return hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, considerPiercing, shouldDealAllFacetDamage, wasChanged
+	return hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, considerPiercing, shouldDealAllFacetDamage, wasChanged, negateRegeneration
 
-def interactionHullBehaviour(pShip, sScript, sShipScript, pInstance, pEvent, pTorp, pInstancedict, pAttackerShipID, hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, considerPiercing, shouldDealAllFacetDamage, wasChanged):
+def interactionHullBehaviour(pShip, sScript, sShipScript, pInstance, pEvent, pTorp, pInstancedict, pAttackerShipID, hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, considerPiercing, shouldDealAllFacetDamage, wasChanged, negateRegeneration):
 	global lSWVulnerableLegacyList
 	if pInstancedict.has_key("SW Shields") or sShipScript in lSWVulnerableLegacyList: # SW shields are extremely weak to Ion Weapons, they are used to knock them out, albeit not destroy them
 		wasChanged = wasChanged + 1
@@ -120,6 +121,7 @@ def interactionHullBehaviour(pShip, sScript, sShipScript, pInstance, pEvent, pTo
 			pPower.SetCondition(myStatus)
 
 		hullDamageMultiplier = hullDamageMultiplier * IonSWHullDamageMultiplier
+		negateRegeneration = negateRegeneration + 1
 
-	return hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, considerPiercing, shouldDealAllFacetDamage, wasChanged
+	return hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, considerPiercing, shouldDealAllFacetDamage, wasChanged, negateRegeneration
 

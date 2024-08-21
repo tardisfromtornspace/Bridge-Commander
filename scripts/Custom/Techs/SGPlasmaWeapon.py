@@ -47,7 +47,20 @@ Foundation.ShipDef.Ambassador.dTechs = {
 # Regarding subTechs
 # As those with some idea of python language can see, you can stack more than 1 subtech.
 # However, while for hulls it is recommended to be accumulative (with the ideally-coded function multiplying each effect with the old one on a percentage so it makes it stronger/weaker overall), for shields it is recommended to only add one affected sub-tech per ship in particular, since while some shield behaviours (f.ex. making the weapon pass through, or never) are more varied and sometimes could contradict each other (depending on the sub-techs handling of the "shouldPassThrough" and "considerPiercing"), the most important probable con is that shield weaknesses will stack instead of making an average value (for that you may sometimes need to make a hybrid technology).
-
+# The fields shield and hull functions have are the following:
+## "pShip": the Ship instance (not the pInstance Foundation one) of the ship that got hit by the projectile 
+## "sScript": the Script from the above ship (not the hardpoint)
+## "sShipScript": the filename of the ship script from above
+## "pInstance": the Foundation ship Instance, which often holds the special races, techs and some more, specially in KM installs.
+## "pEvent": the event in question when the projectile hit. Could be useful on certain situations
+## "pTorp": the torpedo instance that hit the pShip
+## "pInstancedict": the pInstance.__dict__, that way we can fetch it once without using the "hacky" __dict__ every single time we want the pInstance.__dict__
+## "pAttackerShipID": the ID number of the vessel that attacked pShip, or at least the parent of the torpedo that hit pShip
+## "hullDamageMultiplier": multiplies the base damage of the torpedo if it hits the hull. While you could totally overwrite the value a previous function did, it is polite to not ignore all values. On the case of hulls the functions must make sure the values are multiplied between each other (so if you make it 0.8 times something, then 2.0 times, it wil be 0.8 * 2.0 = 1.6). Careful with negative values, since they may counteract each other if an even amount of functions apply them.
+## "shieldDamageMultiplier": multiplies the damage done to the shields if they are hit. While you could totally overwrite the value a previous function did, it is polite to not ignore all values. On the case of hulls the functions must make sure the values are multiplied between each other (so if you make it 0.8 times something, then 2.0 times, it wil be 0.8 * 2.0 = 1.6). Careful with negative values, since they may counteract each other if an even amount of functions apply them.
+## "shouldPassThrough": values greater than 1 means that this script will create a torpedo replica capable of bypassing the shields. Should be stacked with sums. Negative values are allowed. Default is no passing through.
+## "considerPiercing": if the shield was not penetrated by the projectile hit, it will revise the shields, and if they are below a certain percentage, it will create a torpedo replica that will continue working past the shield ## "shouldDealAllFacetDamage": values greater than 0 will make the shield recalculation function to drain all shield facets, instead of 1. Default is not considering shield piercing.
+## "wasChanged": if this value is lesser than 0, it will perform the default effect (shield drain where "shouldPassThrough" = 0, "considerPiercing" = 0, "shouldPassThrough", "shieldDamageMultiplier = shieldDamageMultiplier + IonGenericShieldDamageMultiplier"). When some script changes things it is recommended to stack "1" to this value, unless you want a default behaviour with modified "shieldDamageMultiplier".
 # If you want an new specific subTech that modifies part of the SG Plasma Effect, you can do it by adding a file under the scripts\Custom\Techs\SGPlasmaWeaponScripts directory; if possible with a reasonable name related to the Technology(ies) it covers. 
 # For example, if the special sub-tech is called "SG Shields" you can call the file "SGShieldsConfiguration.py"; Sometimes certain sub-techs may go together on the same function of a file because being related or being sub-components.
 # Below there's an example used for the aforementioned SGShieldsConfiguration, at least the 1.0 version, but modified to include more function examples, clarify and with some parts commented so as to not trigger commentary issues - those sections have replaced the triple " with ####@@@
@@ -600,7 +613,7 @@ try:
 			shieldBroken = 0
 			if shieldDamageMultiplier != 0:
 				shieldBroken = self.shieldRecalculationAndBroken(pShip, kPoint, -finalShieldDamage, 0.25, shouldDealAllFacetDamage)
-			if considerPiercing > 0 and shouldPassThrough == 0:
+			if considerPiercing > 0 and shouldPassThrough <= 0:
 				shouldPassThrough = shieldBroken
 			
 			if shouldPassThrough > 0: # If this weapon has not hit the hull already and meets the requirements, this weapon will "bypass" the shields then (actually it creates a short-lived clone or subTorp clone after the shield)

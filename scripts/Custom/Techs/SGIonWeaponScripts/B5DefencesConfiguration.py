@@ -50,7 +50,7 @@ lB5VulnerableLegacyList = (
                 )
 
 
-def interactionShieldBehaviour(pShip, sScript, sShipScript, pInstance, pEvent, pTorp, pInstancedict, pAttackerShipID, hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, considerPiercing, shouldDealAllFacetDamage, wasChanged):
+def interactionShieldBehaviour(pShip, sScript, sShipScript, pInstance, pEvent, pTorp, pInstancedict, pAttackerShipID, hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, considerPiercing, shouldDealAllFacetDamage, wasChanged, negateRegeneration):
 	if pInstancedict.has_key('Defense Grid') or pInstancedict.has_key('Gravimetric Defense'): # ohhhh Babylon 5 defence grids and gravimetric defenses - yeah, no shields, and if you already reached this point is because your point defence system failed to take this shot, sorry
 		wasChanged = wasChanged + 1
 		shieldDamageMultiplier = shieldDamageMultiplier + IonB5LegacyShieldDamageMultiplier
@@ -75,10 +75,11 @@ def interactionShieldBehaviour(pShip, sScript, sShipScript, pInstance, pEvent, p
 	if sShipScript in lB5VulnerableLegacyList: # These ones will not add a "wasChanged", we want the normal to stack with this effect
 		shieldDamageMultiplier = shieldDamageMultiplier + IonB5LegacyShieldDamageMultiplier
 		considerPiercing = considerPiercing + 1
+		negateRegeneration = negateRegeneration - 1
 
-	return hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, considerPiercing, shouldDealAllFacetDamage, wasChanged
+	return hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, considerPiercing, shouldDealAllFacetDamage, wasChanged, negateRegeneration
 
-def interactionHullBehaviour(pShip, sScript, sShipScript, pInstance, pEvent, pTorp, pInstancedict, pAttackerShipID, hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, considerPiercing, shouldDealAllFacetDamage, wasChanged):
+def interactionHullBehaviour(pShip, sScript, sShipScript, pInstance, pEvent, pTorp, pInstancedict, pAttackerShipID, hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, considerPiercing, shouldDealAllFacetDamage, wasChanged, negateRegeneration):
 	global defenceGridMultiplier, hullPolarizerMultiplier, shadowDispersiveHullMultiplier, shadowDispersiveHullMin
 	#INTERACTION Defence Grid reduces hull damage a tiiiiiny bit
 	if pInstancedict.has_key('Defense Grid'):
@@ -103,5 +104,5 @@ def interactionHullBehaviour(pShip, sScript, sShipScript, pInstance, pEvent, pTo
 			else: # hull is too small, it may be tough, but not as tough
 				hullDamageMultiplier = hullDamageMultiplier * (shadowDispersiveHullMultiplier)
 
-	return hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, considerPiercing, shouldDealAllFacetDamage, wasChanged
+	return hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, considerPiercing, shouldDealAllFacetDamage, wasChanged, negateRegeneration
 

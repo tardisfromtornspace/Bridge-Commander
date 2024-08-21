@@ -83,3 +83,4 @@ This mod falls under the GNU LESSER GENERAL PUBLIC LICENSE Version 3, 29 June 20
 
 == Bugs ==
 * Due to circumstances that are not from this mod, some models always have a risk of suffering bleedthrough even with shields at max (particularly notable in the BC-304 and X303 series, but also sometimes noticeable in Go'auld Ha'tak's shuttle bays) - no game performance impact.
+* If a ship has a ridiculously low mass and inertia, projectiles with Ion or Plasma Weapons deal knockback.

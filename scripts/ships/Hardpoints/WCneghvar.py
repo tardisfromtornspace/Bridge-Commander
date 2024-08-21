@@ -2106,21 +2106,6 @@ ForwardBeamPort2.SetTextureSpeed(2.000000)
 ForwardBeamPort2.SetTextureName("data/CAKlingon.tga")
 App.g_kModelPropertyManager.RegisterLocalTemplate(ForwardBeamPort2)
 #################################################
-Bridge = App.ShipProperty_Create("Bridge")
-
-Bridge.SetGenus(0)
-Bridge.SetSpecies(0)
-Bridge.SetMass(1.000000)
-Bridge.SetRotationalInertia(1.000000)
-Bridge.SetShipName("(null)")
-Bridge.SetModelFilename("(null)")
-Bridge.SetDamageResolution(15.000000)
-Bridge.SetAffiliation(0)
-Bridge.SetStationary(0)
-Bridge.SetAIString("")
-Bridge.SetDeathExplosionSound("")
-App.g_kModelPropertyManager.RegisterLocalTemplate(Bridge)
-#################################################
 Bridge = App.HullProperty_Create("Bridge")
 
 Bridge.SetMaxCondition(6000.000000)

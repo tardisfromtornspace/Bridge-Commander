@@ -57,7 +57,7 @@ def Create(pTorp):
 	return(0)
 
 def GetLaunchSpeed():
-	return(30000.0)
+	return(3000.0)
 
 def GetLaunchSound():
 	return("")
