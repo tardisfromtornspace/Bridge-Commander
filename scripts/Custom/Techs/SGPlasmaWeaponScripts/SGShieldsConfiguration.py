@@ -30,11 +30,11 @@ PlasmaSGShieldDamageMultiplier = 4.0
 ## Adding Asgard and Ori here, because the Asgard used neutronium on their vessel alloys, and for most of them the Plasma cannons were primitive enough that Asgard shields could handle them easier (excluding Anubis-grade ones)
 ## The Ori just because they may have some random ascended-knowledge thing going on, and as a way to reduce damage bleedthrough in certain models mod-wise.
 xAsgardShieldMuliplier = 0.75
-xAnubisShieldMultiplier = 0.7 # Seems fair that when Anubis upgraded his shields, it also made them more resistant to the mainstream weapons the Go'auld use
 xAsgardHullMuliplier = 0.8
+xAnubisShieldMultiplier = 0.6 # Seems fair that when Anubis upgraded his shields, it also made them more resistant to the mainstream weapons the Go'auld use
 xAlteranShieldMultiplier = 1.0
 xAlteranHullMultiplier = 1.0
-xOriShieldMultiplier = 0.6
+xOriShieldMultiplier = 0.52
 xOriHullMultiplier = 0.95
 
 
