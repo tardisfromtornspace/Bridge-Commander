@@ -550,7 +550,7 @@ try:
 
 				# OPTION 2: IMPORT A DUMMY TORP, give it the damage radious factor and damage we have, and make it invisible. Pros compared with first option (manually dealing extra damage ourselves), is that armours and special defense techs work better. Cons, point defence script might work twice and manage to shot it down (extremely unlikely, but not necessarily impossible if we are not careful).
 				global SlowDownRatio
-				mod = "Tactical.Projectiles.ExtraPhasedDamageDummy" # This torpedo was made so Automated Point Defence scripts stop harrasing us! 
+				mod = "Tactical.Projectiles.ExtraPhasedDamageDummyPlasma" # This torpedo was made so Automated Point Defence scripts stop harrasing us! 
 				try:
 					launchSpeed = __import__(mod).GetLaunchSpeed()
 
