@@ -36,7 +36,7 @@ Shields.SetShieldChargePerSecond(Shields.LEFT_SHIELDS, 0.000000)
 Shields.SetShieldChargePerSecond(Shields.RIGHT_SHIELDS, 0.000000)
 App.g_kModelPropertyManager.RegisterLocalTemplate(Shields)
 #################################################
-Hull = App.HullProperty_Create("Hull")
+Hull = App.HullProperty_Create("Main Hull")
 
 Hull.SetMaxCondition(65.000000)
 Hull.SetCritical(1)
@@ -424,7 +424,7 @@ def LoadPropertySet(pObj):
 	prop = App.g_kModelPropertyManager.FindByName("Shields", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
-	prop = App.g_kModelPropertyManager.FindByName("Hull", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	prop = App.g_kModelPropertyManager.FindByName("Main Hull", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
 	prop = App.g_kModelPropertyManager.FindByName("Cockpit", App.TGModelPropertyManager.LOCAL_TEMPLATES)
