@@ -435,7 +435,7 @@ try:
 
 			pShields = pShip.GetShields()
 			shieldHitBroken = 0
-			if pShields and not pShields.IsDisabled():
+			if pShields and not (pShields.IsDisabled() or not pShields.IsOn()):
 				# get the nearest reference
 				pReferenciado = None
 				dMasCercano = 0

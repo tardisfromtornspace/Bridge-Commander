@@ -53,7 +53,7 @@ def GetName():
 	return("Ion Cannon")
 
 def GetDamage():
-	return 260.0
+	return 280.0
 
 def GetGuidanceLifetime():
 	return 1.5
