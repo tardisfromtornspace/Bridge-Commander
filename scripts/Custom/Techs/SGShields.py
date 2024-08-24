@@ -2,7 +2,7 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
 #         SGShields.py by Alex SL Gato
-#         22nd April 2024
+#         24th August 2024
 #         Based strongly on Shields.py by the FoundationTechnologies team, ATPFunctions by Apollo, and SGGIonWeapon by Alex SL Gato.
 #################################################################################################################
 # This technology encompasses most of SG defences in a generic way, mostly for tagging, but also for referencing common shield protection strengths and weaknesses over standard STBC shields.
@@ -18,6 +18,10 @@
 # * POINT 8: excluding the exceptions from the other points, SG shields in general do not take as much hull bleedthrough damage when shields are at full strength, except on counted occasions. Mostly the damage they may receive when shields are still at full is more towards the power grids and similar, not to the hull proper, unless their shields cannot adapt.
 # * POINT 9: Since SG shields and ST Federation shields work on different principles, it is very likely that Phased Polaron weapons would do nothing to SG shields.
 
+# The following is not necessarily a point of difference between ST and SG shields, but it is important for our points to determine some SG Shields things to code:
+# * POINT 10: Asgard Shields recover normally if a weapon hit is too-low yield, as if the weapon did not hit them.
+# * POINT 11: Some Ori prior shields use the energy of the impacts to become stronger, albeit that was only seen on the Ori Beachhead shield which was far more powerful than an Ori Warship shield.
+
 from bcdebug import debug
 import traceback
 
@@ -32,7 +36,7 @@ import FoundationTech
 from ftb.Tech.ATPFunctions import *
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-            "Version": "0.01",
+            "Version": "0.02",
             "License": "LGPL",
             "Description": "Read the small title above for more info"
             }
@@ -333,33 +337,37 @@ try:
 
 			return fRadius, fDamage, kPoint
 
-		def shieldRecalculationAndBroken(self, pShip, kPoint, extraDamageHeal, shieldThreshold = shieldPiercedThreshold, multifacet = 0, negateRegeneration=0, nearShields = None):
+		def shieldRecalculationAndBroken(self, pShip, kPoint, extraDamageHeal, shieldThreshold = shieldPiercedThreshold, multifacet = 0, negateRegeneration=0, nearShields = None, damageSuffered = 0, multFactor = 1.0):
 
 			pShields = pShip.GetShields()
 			shieldHitBroken = 0
+			shieldDirNearest = None
 			if pShields and not (pShields.IsDisabled() or not pShields.IsOn()):
-				# get the nearest reference
-				pReferenciado = None
-				dMasCercano = 0
-				pointForward = App.TGPoint3_GetModelForward()
-				pointBackward = App.TGPoint3_GetModelBackward()
-				pointTop = App.TGPoint3_GetModelUp()
-				pointBottom = App.TGPoint3_GetModelDown()
-				pointRight = App.TGPoint3_GetModelRight()
-				pointLeft = App.TGPoint3_GetModelLeft()
-				lReferencias = [pointForward, pointBackward, pointTop, pointBottom, pointLeft, pointRight]
+				if nearShields == None:
+					# get the nearest reference
+					pReferenciado = None
+					dMasCercano = 0
+					pointForward = App.TGPoint3_GetModelForward()
+					pointBackward = App.TGPoint3_GetModelBackward()
+					pointTop = App.TGPoint3_GetModelUp()
+					pointBottom = App.TGPoint3_GetModelDown()
+					pointRight = App.TGPoint3_GetModelRight()
+					pointLeft = App.TGPoint3_GetModelLeft()
+					lReferencias = [pointForward, pointBackward, pointTop, pointBottom, pointLeft, pointRight]
 
-				for pPunto in lReferencias:
-					pPunto.Subtract(kPoint)
-					if pReferenciado == None or pPunto.Length() < dMasCercano:
-						dMasCercano = pPunto.Length()
-						pReferenciado = pPunto
+					for pPunto in lReferencias:
+						pPunto.Subtract(kPoint)
+						if pReferenciado == None or pPunto.Length() < dMasCercano:
+							dMasCercano = pPunto.Length()
+							pReferenciado = pPunto
 
-				shieldDirNearest = None
-				if pReferenciado:
-					shieldDirNearest = lReferencias.index(pReferenciado)
+
+					if pReferenciado:
+						shieldDirNearest = lReferencias.index(pReferenciado)
+					else:
+						shieldHitBroken = 1
 				else:
-					shieldHitBroken = 1
+					shieldDirNearest = nearShields
 				
 				pShieldsProperty = pShields.GetProperty()
 				for shieldDir in range(App.ShieldClass.NUM_SHIELDS):
@@ -367,8 +375,9 @@ try:
 						fCurr = pShields.GetCurShields(shieldDir)
 						fMax = pShields.GetMaxShields(shieldDir)
 						fRecharge = 0
-						if pShieldsProperty and negateRegeneration != 0:
-							fRecharge = -pShieldsProperty.GetShieldChargePerSecond(shieldDir)
+						if pShieldsProperty and negateRegeneration != 0 and damageSuffered <= ( multFactor * pShieldsProperty.GetShieldChargePerSecond(shieldDir)):
+							fRecharge = -negateRegeneration * damageSuffered * multFactor
+								
 						resultHeal = fCurr + extraDamageHeal + fRecharge
 						if resultHeal < 0.0:
 							resultHeal = 0.0
@@ -381,7 +390,7 @@ try:
 			else:
 				shieldHitBroken = 1
 
-			return shieldHitBroken
+			return shieldHitBroken, shieldDirNearest
 
 		def shieldInGoodCondition(self, pShip, kPoint, shieldThreshold = shieldPiercedThreshold, multifacet = 0, nearShields = None):
 
@@ -441,7 +450,34 @@ try:
 			pInstancedict = pInstance.__dict__
 			fRadius, fDamage, kPoint = self.EventInformation(pEvent)
 
-			shieldsArePierced, nearestPoint = self.shieldInGoodCondition(pShip, kPoint, shieldPiercedThreshold, 0, None)
+			raceShieldTech = None
+			raceHullTech = None
+			negateRegeneration = 0
+			multFactor = 1.0
+
+			# Extra shield config things
+			if pInstancedict.has_key("SG Shields"):
+				if pInstancedict["SG Shields"].has_key("RaceShieldTech"):
+					raceShieldTech = pInstancedict["SG Shields"]["RaceShieldTech"]
+
+				if pInstancedict["SG Shields"].has_key("RaceHullTech"): # We will assume shields and hull tech races are the same unless we say otherwise, for simplicity and to not add too many fields.
+					raceHullTech = pInstancedict["SG Shields"]["RaceHullTech"]
+				else:
+					raceHullTech = raceShieldTech
+
+			if raceShieldTech == "Asgard" or raceShieldTech == "Ori": # POINT 10. TO-DO Maybe check if we need to verify if the hull was hit, to avoid some shield facet issues
+				negateRegeneration = -1
+				if raceShieldTech == "Ori": # POINT 11 - this will make the Ori vessels impervious to low-grade shots, no more Death gliders lowering their shields willy-nilly
+					negateRegeneration = negateRegeneration / 2.0
+					multFactor = multFactor * 4
+				if oYield and hasattr(oYield, "IsSGPlasmaWeaponYield") and oYield.IsSGPlasmaWeaponYield() != 0: # Some support to POINT 10 when it comes to SG Plasma weapons
+					if pTorp:
+						mod = pTorp.GetModuleName()
+						importedTorpInfo = __import__(mod)
+						if hasattr(importedTorpInfo, "ShieldDmgMultiplier"):
+							multFactor = multFactor * importedTorpInfo.ShieldDmgMultiplier()
+
+			shieldsArePierced, nearestPoint = self.shieldRecalculationAndBroken(pShip, kPoint, 0, shieldPiercedThreshold, 0, negateRegeneration, None, fDamage, multFactor)
 			shieldsAreNotGood, nearestPoint = self.shieldInGoodCondition(pShip, kPoint, shieldGoodThreshold, 0, nearestPoint)
 
 			if pEvent.IsHullHit():
@@ -465,10 +501,10 @@ try:
 							if not pSys:
 								break
 
-							print pSys.GetName()
+							#print pSys.GetName()
 
 							# The method above does not cover the children, funnily enough. We need to cover subsystems personally
-							# However, for SG shields this is fine, after all while they have taken no hull damage, we have still seen cases where with shields near to max, the Asgard Weapons or the power conduits linked to them suffered damage from the hit (POINT 8). 
+							# However, for SG shields this is fine, after all while they have taken no hull damage, we have still seen cases where with shields near to max, the Asgard Weapons or the power conduits linked to them suffered damage from the hit causing an overload (POINT 8). 
 							# But if you want for the shields to cover everything, just expand and uncomment the section below
 							#for i in range(pSys.GetNumChildSubsystems()):
 							#	pChild = pSys.GetChildSubsystem(i)
@@ -525,12 +561,13 @@ try:
 				#First check, those weapons that can pass-through
 				print "TO-DO 2"
 
-			# Extra shields
-
 			pShields = pShip.GetShields()
 
 			if pShields:
 				print "TO-DO 3"
+
+			if oYield and hasattr(oYield, "IsPhasedPolaronYield") and oYield.IsPhasedPolaronYield() != 0 and pInstance and pInstance.__dict__.has_key('SG Shields'): # POINT 9.
+				return 1
 
 
 		def OnBeamDefense(self, pShip, pInstance, oYield, pEvent):

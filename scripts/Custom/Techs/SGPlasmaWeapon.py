@@ -602,9 +602,10 @@ try:
 				shouldDealAllFacetDamage = 0
 				# If no changes were made, default damage for ST shields
 				shieldDamageMultiplier = PlasmaGenericShieldDamageMultiplier # nullify shield effects - that is, is immune
-
-				if hasattr(pTorp, "ShieldDmgMultiplier"): # If this torp has a special global multiplier, then we use it
-					shieldDamageMultiplier = shieldDamageMultiplier * pTorp.ShieldDmgMultiplier()
+				mod = pTorp.GetModuleName()
+				importedTorpInfo = __import__(mod)
+				if hasattr(importedTorpInfo, "ShieldDmgMultiplier"): # If this torp has a special global multiplier, then we use it
+					shieldDamageMultiplier = importedTorpInfo * mod.ShieldDmgMultiplier()
 			
 			shieldDamageMultiplier = shieldDamageMultiplier - PlasmaGenericShieldDamageMultiplier # That is, to compensate the "extra" time we added 1 damage
 	
