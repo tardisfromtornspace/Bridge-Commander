@@ -38,8 +38,9 @@ credits = {
 #                                                                                     #
 Foundation.ShipDef.AnubisFlagship = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
 Foundation.ShipDef.AnubisFlagship.dTechs = {
+	"AutoTargeting": { "Pulse": [4, 0] },
 	'Breen Drainer Immune': 1,
-	'SG Shields': { "RaceShieldTech": "Anubis Go'auld" }
+	'SG Shields': { "RaceShieldTech": "Anubis Go'auld", "Superweapon" : 1}
 }
 #                                                                                     #
 #######################################################################################

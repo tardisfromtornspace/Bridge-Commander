@@ -1161,3 +1161,318 @@ Address   Frame
 //=====================================================
 Current Time: Thu Aug 22 03:39:08 2024
 Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Sat Aug 24 12:02:38 2024
+//=====================================================
+Current Time: Sat Aug 24 12:26:53 2024
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  004BC76A 01:000BB76A C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+Registers:
+EAX:1FBB57D8
+EBX:0088C6F4
+ECX:00000000
+EDX:393B0C58
+ESI:0019FA74
+EDI:00000000
+CS:EIP:0023:004BC76A
+SS:ESP:002B:0019F9F8  EBP:0019FA74
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+004BC76A  0019FA74  0001:000BB76A C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+//=====================================================
+Current Time: Sat Aug 24 21:15:35 2024
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  8A8A8A8A 00:00000000 
+
+Registers:
+EAX:12A607F0
+EBX:00000000
+ECX:8A8A8A8A
+EDX:00004000
+ESI:12A5ECE0
+EDI:12A66C30
+CS:EIP:0023:8A8A8A8A
+SS:ESP:002B:0019F9E0  EBP:00000000
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010282
+
+Application Timestamp: Thu Jan 01 01:00:00 1970
+Doing stack walk
+
+Call stack:
+Address   Frame
+8A8A8A8A  0019F9DC  0000:00000000  (No symbol info found)
+
+//=====================================================
+Current Time: Sat Aug 24 21:15:35 2024
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  A0A0A0A0 00:00000000 
+
+Registers:
+EAX:12A607F0
+EBX:00000000
+ECX:530DDEE5
+EDX:00000000
+ESI:12A5EFE0
+EDI:00000000
+CS:EIP:0023:A0A0A0A0
+SS:ESP:002B:3CB6FEA8  EBP:12A5ECE0
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010206
+
+Application Timestamp: Thu Jan 01 01:00:00 1970
+Doing stack walk
+
+Call stack:
+Address   Frame
+A0A0A0A0  3CB6FEA4  0000:00000000  (No symbol info found)
+
+//=====================================================
+Current Time: Sat Aug 24 21:18:38 2024
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  8A8A8A8A 00:00000000 
+
+Registers:
+EAX:12C107F0
+EBX:00000000
+ECX:8A8A8A8A
+EDX:00004000
+ESI:12C0ECE0
+EDI:12C16C30
+CS:EIP:0023:8A8A8A8A
+SS:ESP:002B:0019F9E0  EBP:00000000
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010282
+
+Application Timestamp: Thu Jan 01 01:00:00 1970
+Doing stack walk
+
+Call stack:
+Address   Frame
+8A8A8A8A  0019F9DC  0000:00000000  (No symbol info found)
+
+//=====================================================
+Current Time: Sat Aug 24 21:18:38 2024
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  A0A0A0A0 00:00000000 
+
+Registers:
+EAX:12C107F0
+EBX:00000000
+ECX:E2584C3B
+EDX:00000000
+ESI:12C0EFE0
+EDI:00000000
+CS:EIP:0023:A0A0A0A0
+SS:ESP:002B:1F1AFEA8  EBP:12C0ECE0
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010206
+
+Application Timestamp: Thu Jan 01 01:00:00 1970
+Doing stack walk
+
+Call stack:
+Address   Frame
+A0A0A0A0  1F1AFEA4  0000:00000000  (No symbol info found)
+
+//=====================================================
+Current Time: Sat Aug 24 21:20:25 2024
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  8A8A8A8A 00:00000000 
+
+Registers:
+EAX:12B607F0
+EBX:00000000
+ECX:8A8A8A8A
+EDX:00004000
+ESI:12B5ECE0
+EDI:12B66C30
+CS:EIP:0023:8A8A8A8A
+SS:ESP:002B:0019F9E0  EBP:00000000
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010282
+
+Application Timestamp: Thu Jan 01 01:00:00 1970
+Doing stack walk
+
+Call stack:
+Address   Frame
+8A8A8A8A  0019F9DC  0000:00000000  (No symbol info found)
+
+//=====================================================
+Current Time: Sat Aug 24 21:20:25 2024
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  A0A0A0A0 00:00000000 
+
+Registers:
+EAX:12B607F0
+EBX:00000000
+ECX:EF246858
+EDX:00000000
+ESI:12B5EFE0
+EDI:00000000
+CS:EIP:0023:A0A0A0A0
+SS:ESP:002B:03A9FEA8  EBP:12B5ECE0
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010206
+
+Application Timestamp: Thu Jan 01 01:00:00 1970
+Doing stack walk
+
+Call stack:
+Address   Frame
+A0A0A0A0  03A9FEA4  0000:00000000  (No symbol info found)
+
+//=====================================================
+Current Time: Sat Aug 24 21:21:22 2024
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Sat Aug 24 21:22:00 2024
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  8A8A8A8A 00:00000000 
+
+Registers:
+EAX:12BB07F0
+EBX:00000000
+ECX:8A8A8A8A
+EDX:00004000
+ESI:12BAECE0
+EDI:12BB6C30
+CS:EIP:0023:8A8A8A8A
+SS:ESP:002B:0019F9E0  EBP:00000000
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010282
+
+Application Timestamp: Thu Jan 01 01:00:00 1970
+Doing stack walk
+
+Call stack:
+Address   Frame
+8A8A8A8A  0019F9DC  0000:00000000  (No symbol info found)
+
+//=====================================================
+Current Time: Sat Aug 24 21:22:00 2024
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  A0A0A0A0 00:00000000 
+
+Registers:
+EAX:12BB07F0
+EBX:00000000
+ECX:53606396
+EDX:00000000
+ESI:12BAEFE0
+EDI:00000000
+CS:EIP:0023:A0A0A0A0
+SS:ESP:002B:03AEFEA8  EBP:12BAECE0
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010206
+
+Application Timestamp: Thu Jan 01 01:00:00 1970
+Doing stack walk
+
+Call stack:
+Address   Frame
+A0A0A0A0  03AEFEA4  0000:00000000  (No symbol info found)
+
+//=====================================================
+Current Time: Sat Aug 24 21:23:15 2024
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  80828383 00:00000000 
+
+Registers:
+EAX:12C2A8B0
+EBX:00000000
+ECX:80828383
+EDX:00004000
+ESI:12C28DA0
+EDI:12C30CF0
+CS:EIP:0023:80828383
+SS:ESP:002B:0019F918  EBP:00000000
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010282
+
+Application Timestamp: Thu Jan 01 01:00:00 1970
+Doing stack walk
+
+Call stack:
+Address   Frame
+80828383  0019F914  0000:00000000  (No symbol info found)
+
+//=====================================================
+Current Time: Sat Aug 24 21:23:15 2024
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  83838383 00:00000000 
+
+Registers:
+EAX:12C2A8B0
+EBX:00000000
+ECX:4D0DBD8F
+EDX:00000000
+ESI:12C290A0
+EDI:00000000
+CS:EIP:0023:83838383
+SS:ESP:002B:1FBEFEA8  EBP:12C28DA0
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010202
+
+Application Timestamp: Thu Jan 01 01:00:00 1970
+Doing stack walk
+
+Call stack:
+Address   Frame
+83838383  1FBEFEA4  0000:00000000  (No symbol info found)
+
+//=====================================================
+Current Time: Sat Aug 24 22:20:38 2024
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  00595427 01:00194427 C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+Registers:
+EAX:396DD1FC
+EBX:1FB49C6C
+ECX:63496567
+EDX:01ACD5E4
+ESI:1FB50E8C
+EDI:00616C30
+CS:EIP:0023:00595427
+SS:ESP:002B:0019FA4C  EBP:00000000
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010206
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+
+//=====================================================
+Current Time: Sun Aug 25 05:15:14 2024
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  00611D78 01:00210D78 C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+Registers:
+EAX:2377A72C
+EBX:1A73100C
+ECX:00000000
+EDX:0095DD20
+ESI:1A73100C
+EDI:00611CF0
+CS:EIP:0023:00611D78
+SS:ESP:002B:0019FAA8  EBP:00000000
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010202
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+

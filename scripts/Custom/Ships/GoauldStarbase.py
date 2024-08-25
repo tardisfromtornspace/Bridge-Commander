@@ -38,6 +38,7 @@ credits = {
 #                                                                                     #
 Foundation.ShipDef.GoauldStarbase = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
 Foundation.ShipDef.GoauldStarbase.dTechs = {
+	"AutoTargeting": { "Pulse": [6, 0] },
 	'SG Shields': { "RaceShieldTech": "Starbase Go'auld" }
 }
 #                                                                                     #

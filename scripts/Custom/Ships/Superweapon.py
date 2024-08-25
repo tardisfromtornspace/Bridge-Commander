@@ -38,8 +38,11 @@ credits = {
 #                                                                                     #
 Foundation.ShipDef.Superweapon = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
 Foundation.ShipDef.Superweapon.dTechs = {
-	'SG Shields': { "RaceShieldTech": "Anubis Go'auld" }
+	"AutoTargeting": { "Pulse": [4, 0] },
+	'SG Shields': { "RaceShieldTech": "Anubis Go'auld", "Superweapon" : 1}
 }
+
+Foundation.ShipDef.Superweapon.bPlanetKiller = 1
 #                                                                                     #
 #######################################################################################
 #                                                                                     #
