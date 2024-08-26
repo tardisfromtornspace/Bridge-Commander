@@ -1446,8 +1446,8 @@ try:
 			if raceShieldTech == "Asgard" or raceShieldTech == "Ori": # POINT 10. TO-DO Maybe check if we need to verify if the hull was hit, to avoid some shield facet issues
 				negateRegeneration = -1
 				if raceShieldTech == "Ori": # POINT 11 - this will make the Ori vessels impervious to low-grade shots, no more Death gliders lowering their shields willy-nilly
-					negateRegeneration = negateRegeneration / 2.0
-					multFactor = multFactor * 4
+					negateRegeneration = negateRegeneration / 2.0 # TO-DO Make this customizable via basicconfiguration, this needs to be half of the value from the one below, or a new value
+					multFactor = multFactor * 4 # TO-DO Make this customizable via basicconfiguration
 				if oYield and hasattr(oYield, "IsSGPlasmaWeaponYield") and oYield.IsSGPlasmaWeaponYield() != 0: # Some support to POINT 10 when it comes to SG Plasma weapons
 					if pTorp:
 						mod = pTorp.GetModuleName()

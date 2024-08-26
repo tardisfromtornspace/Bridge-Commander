@@ -287,7 +287,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(Canon1)
 #################################################
 WeaponsSystem = App.WeaponSystemProperty_Create("Weapons System")
 
-WeaponsSystem.SetMaxCondition(2000.000000)
+WeaponsSystem.SetMaxCondition(750.000000)
 WeaponsSystem.SetCritical(0)
 WeaponsSystem.SetTargetable(0)
 WeaponsSystem.SetPrimary(1)
@@ -360,7 +360,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(Cockpit)
 #################################################
 MissileControl = App.TorpedoSystemProperty_Create("Missile Control")
 
-MissileControl.SetMaxCondition(1000.000000)
+MissileControl.SetMaxCondition(750.000000)
 MissileControl.SetCritical(0)
 MissileControl.SetTargetable(0)
 MissileControl.SetPrimary(1)

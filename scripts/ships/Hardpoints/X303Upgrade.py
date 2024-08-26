@@ -10,7 +10,7 @@ X303Upgrade = App.ShipProperty_Create("X303 Upgrade")
 
 X303Upgrade.SetGenus(1)
 X303Upgrade.SetSpecies(752)
-X303Upgrade.SetMass(700.000000)
+X303Upgrade.SetMass(10000.000000)
 X303Upgrade.SetRotationalInertia(5000.000000)
 X303Upgrade.SetShipName("X303Upgrade")
 X303Upgrade.SetModelFilename("data/Models/Ships/x303/x303.NIF")

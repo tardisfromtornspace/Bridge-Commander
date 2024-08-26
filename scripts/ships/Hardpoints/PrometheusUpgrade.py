@@ -10,7 +10,7 @@ x303 = App.ShipProperty_Create("x303")
 
 x303.SetGenus(1)
 x303.SetSpecies(401)
-x303.SetMass(700.000000)
+x303.SetMass(10000.000000)
 x303.SetRotationalInertia(5000.000000)
 x303.SetShipName("PrometheusUpgrade")
 x303.SetModelFilename("data/Models/Ships/x303/Prometheus.NIF")

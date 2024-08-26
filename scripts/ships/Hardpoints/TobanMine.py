@@ -120,7 +120,7 @@ AntimatMine = App.ShipProperty_Create("AntimatMine")
 
 AntimatMine.SetGenus(1)
 AntimatMine.SetSpecies(765)
-AntimatMine.SetMass(1.000000)
+AntimatMine.SetMass(5.000000)
 AntimatMine.SetRotationalInertia(500.000000)
 AntimatMine.SetShipName("TobanMine")
 AntimatMine.SetModelFilename("data/Models/Ships/TobanMine/TobanMine.nif")

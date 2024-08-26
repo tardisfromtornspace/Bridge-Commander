@@ -1614,7 +1614,7 @@ Odyssey = App.ShipProperty_Create("Odyssey")
 
 Odyssey.SetGenus(1)
 Odyssey.SetSpecies(401)
-Odyssey.SetMass(700.000000)
+Odyssey.SetMass(18000.000000)
 Odyssey.SetRotationalInertia(5000.000000)
 Odyssey.SetShipName("Odyssey")
 Odyssey.SetModelFilename("data/Models/Ships/DSC304/Odyssey.nif")

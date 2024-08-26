@@ -21,7 +21,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(Hull)
 #################################################
 SublightEngines = App.ImpulseEngineProperty_Create("Sublight Engines")
 
-SublightEngines.SetMaxCondition(2000.000000)
+SublightEngines.SetMaxCondition(900.000000)
 SublightEngines.SetCritical(0)
 SublightEngines.SetTargetable(0)
 SublightEngines.SetPrimary(1)
@@ -74,7 +74,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(SensorArray)
 #################################################
 ShieldGenerator = App.ShieldProperty_Create("Shield Generator")
 
-ShieldGenerator.SetMaxCondition(2000.000000)
+ShieldGenerator.SetMaxCondition(900.000000)
 ShieldGenerator.SetCritical(0)
 ShieldGenerator.SetTargetable(1)
 ShieldGenerator.SetPrimary(1)
@@ -119,7 +119,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(ModifiedTelTak)
 #################################################
 SublightEngine = App.EngineProperty_Create("Sublight Engine")
 
-SublightEngine.SetMaxCondition(1000.000000)
+SublightEngine.SetMaxCondition(900.000000)
 SublightEngine.SetCritical(0)
 SublightEngine.SetTargetable(1)
 SublightEngine.SetPrimary(1)
@@ -231,7 +231,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(FirstPersonCamera)
 #################################################
 Engineering = App.RepairSubsystemProperty_Create("Engineering")
 
-Engineering.SetMaxCondition(2000.000000)
+Engineering.SetMaxCondition(900.000000)
 Engineering.SetCritical(0)
 Engineering.SetTargetable(0)
 Engineering.SetPrimary(1)
@@ -247,7 +247,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(Engineering)
 #################################################
 Peltak = App.HullProperty_Create("Peltak")
 
-Peltak.SetMaxCondition(2000.000000)
+Peltak.SetMaxCondition(900.000000)
 Peltak.SetCritical(1)
 Peltak.SetTargetable(1)
 Peltak.SetPrimary(0)
@@ -260,7 +260,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(Peltak)
 #################################################
 Hyperdrive1 = App.HullProperty_Create("Hyperdrive 1")
 
-Hyperdrive1.SetMaxCondition(1000.000000)
+Hyperdrive1.SetMaxCondition(900.000000)
 Hyperdrive1.SetCritical(0)
 Hyperdrive1.SetTargetable(1)
 Hyperdrive1.SetPrimary(0)
@@ -293,7 +293,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(EnergyBeam)
 #################################################
 EnergyWeapon = App.PhaserProperty_Create("Energy Weapon")
 
-EnergyWeapon.SetMaxCondition(1000.000000)
+EnergyWeapon.SetMaxCondition(900.000000)
 EnergyWeapon.SetCritical(0)
 EnergyWeapon.SetTargetable(1)
 EnergyWeapon.SetPrimary(1)

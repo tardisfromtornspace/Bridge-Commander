@@ -24,7 +24,7 @@ ReplicatorVessel = App.ShipProperty_Create("ReplicatorVessel")
 
 ReplicatorVessel.SetGenus(1)
 ReplicatorVessel.SetSpecies(781)
-ReplicatorVessel.SetMass(3000.000000)
+ReplicatorVessel.SetMass(6000.000000)
 ReplicatorVessel.SetRotationalInertia(300.000000)
 ReplicatorVessel.SetShipName("ReplicatorVessel")
 ReplicatorVessel.SetModelFilename("data/Models/Ships/ReplicatorVessel/ReplicatorVessel.nif")

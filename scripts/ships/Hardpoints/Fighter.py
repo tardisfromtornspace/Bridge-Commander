@@ -360,7 +360,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(Cockpit)
 #################################################
 MissileControl = App.TorpedoSystemProperty_Create("Missile Control")
 
-MissileControl.SetMaxCondition(1000.000000)
+MissileControl.SetMaxCondition(750.000000)
 MissileControl.SetCritical(0)
 MissileControl.SetTargetable(0)
 MissileControl.SetPrimary(1)

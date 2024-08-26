@@ -106,7 +106,7 @@ OsirisCruiser = App.ShipProperty_Create("OsirisCruiser")
 
 OsirisCruiser.SetGenus(1)
 OsirisCruiser.SetSpecies(794)
-OsirisCruiser.SetMass(10000.000000)
+OsirisCruiser.SetMass(9000.000000)
 OsirisCruiser.SetRotationalInertia(2000.000000)
 OsirisCruiser.SetShipName("OsirisCruiser")
 OsirisCruiser.SetModelFilename("data/Models/Ships/OsirisCruiser/OsirisCruiser.nif")

@@ -8,7 +8,7 @@ import GlobalPropertyTemplates
 #################################################
 ShieldGenerator = App.ShieldProperty_Create("Shield Generator")
 
-ShieldGenerator.SetMaxCondition(15000.000000)
+ShieldGenerator.SetMaxCondition(3500.000000)
 ShieldGenerator.SetCritical(0)
 ShieldGenerator.SetTargetable(1)
 ShieldGenerator.SetPrimary(1)
@@ -38,7 +38,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(ShieldGenerator)
 #################################################
 Hyperdrive1 = App.HullProperty_Create("Hyperdrive 1")
 
-Hyperdrive1.SetMaxCondition(6000.000000)
+Hyperdrive1.SetMaxCondition(3500.000000)
 Hyperdrive1.SetCritical(0)
 Hyperdrive1.SetTargetable(1)
 Hyperdrive1.SetPrimary(0)
@@ -51,7 +51,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(Hyperdrive1)
 #################################################
 Hull = App.HullProperty_Create("Hull")
 
-Hull.SetMaxCondition(15000.000000)
+Hull.SetMaxCondition(5500.000000)
 Hull.SetCritical(1)
 Hull.SetTargetable(0)
 Hull.SetPrimary(1)
@@ -64,14 +64,14 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(Hull)
 #################################################
 SensorArray = App.SensorProperty_Create("Sensor Array")
 
-SensorArray.SetMaxCondition(15000.000000)
+SensorArray.SetMaxCondition(3500.000000)
 SensorArray.SetCritical(0)
 SensorArray.SetTargetable(1)
 SensorArray.SetPrimary(1)
 SensorArray.SetPosition(-0.090000, 0.075000, 0.000000)
 SensorArray.SetPosition2D(35.000000, 65.000000)
 SensorArray.SetRepairComplexity(2.000000)
-SensorArray.SetDisabledPercentage(0.150000)
+SensorArray.SetDisabledPercentage(0.050000)
 SensorArray.SetRadius(0.015000)
 SensorArray.SetNormalPowerPerSecond(150.000000)
 SensorArray.SetBaseSensorRange(1700.000000)
@@ -98,7 +98,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(ReactorModule)
 #################################################
 SublightEngines = App.ImpulseEngineProperty_Create("Sublight Engines")
 
-SublightEngines.SetMaxCondition(15000.000000)
+SublightEngines.SetMaxCondition(3000.000000)
 SublightEngines.SetCritical(0)
 SublightEngines.SetTargetable(0)
 SublightEngines.SetPrimary(1)
@@ -117,7 +117,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(SublightEngines)
 #################################################
 Engineering = App.RepairSubsystemProperty_Create("Engineering")
 
-Engineering.SetMaxCondition(11000.000000)
+Engineering.SetMaxCondition(3000.000000)
 Engineering.SetCritical(0)
 Engineering.SetTargetable(0)
 Engineering.SetPrimary(1)
@@ -246,7 +246,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(FirstPersonCamera)
 #################################################
 RotationalThruster1 = App.EngineProperty_Create("Rotational Thruster 1")
 
-RotationalThruster1.SetMaxCondition(14000.000000)
+RotationalThruster1.SetMaxCondition(3000.000000)
 RotationalThruster1.SetCritical(0)
 RotationalThruster1.SetTargetable(1)
 RotationalThruster1.SetPrimary(1)
@@ -260,7 +260,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(RotationalThruster1)
 #################################################
 RotationalThruster2 = App.EngineProperty_Create("Rotational Thruster 2")
 
-RotationalThruster2.SetMaxCondition(14000.000000)
+RotationalThruster2.SetMaxCondition(3000.000000)
 RotationalThruster2.SetCritical(0)
 RotationalThruster2.SetTargetable(1)
 RotationalThruster2.SetPrimary(1)
@@ -274,7 +274,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(RotationalThruster2)
 #################################################
 RotationalThruster3 = App.EngineProperty_Create("Rotational Thruster 3")
 
-RotationalThruster3.SetMaxCondition(14000.000000)
+RotationalThruster3.SetMaxCondition(3000.000000)
 RotationalThruster3.SetCritical(0)
 RotationalThruster3.SetTargetable(1)
 RotationalThruster3.SetPrimary(1)
@@ -288,7 +288,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(RotationalThruster3)
 #################################################
 RotationalThruster4 = App.EngineProperty_Create("Rotational Thruster 4")
 
-RotationalThruster4.SetMaxCondition(14000.000000)
+RotationalThruster4.SetMaxCondition(3000.000000)
 RotationalThruster4.SetCritical(0)
 RotationalThruster4.SetTargetable(1)
 RotationalThruster4.SetPrimary(1)
