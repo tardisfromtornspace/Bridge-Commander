@@ -1562,7 +1562,7 @@ DSC304Apollo = App.ShipProperty_Create("DSC304Apollo")
 
 DSC304Apollo.SetGenus(1)
 DSC304Apollo.SetSpecies(754)
-DSC304Apollo.SetMass(700.000000)
+DSC304Apollo.SetMass(18000.000000)
 DSC304Apollo.SetRotationalInertia(5000.000000)
 DSC304Apollo.SetShipName("DSC304Apollo")
 DSC304Apollo.SetModelFilename("data/Models/Ships/DSC304/DSC304Apollo.nif")

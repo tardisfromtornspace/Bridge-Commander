@@ -39,6 +39,7 @@ credits = {
 Foundation.ShipDef.AncientWarship = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
 Foundation.ShipDef.AncientWarship.dTechs = {
 	'Breen Drainer Immune': 1,
+	'Simulated Point Defence' : { "Distance": 120.0, "InnerDistance": 15.0, "Effectiveness": 1.0, "LimitTurn": 18.0, "LimitSpeed": 50, "LimitDamage": "60", "Period": 0.2, "MaxNumberTorps": 1, "Torpedo": {"Priority": 1}},
 	'SG Shields': { "RaceShieldTech": "Lantian" }
 }
 #                                                                                     #

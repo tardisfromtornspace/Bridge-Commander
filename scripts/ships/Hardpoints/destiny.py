@@ -150,7 +150,7 @@ Destiny = App.ShipProperty_Create("Destiny")
 
 Destiny.SetGenus(1)
 Destiny.SetSpecies(106)
-Destiny.SetMass(15.000000)
+Destiny.SetMass(50000.000000)
 Destiny.SetRotationalInertia(2000.000000)
 Destiny.SetShipName("Destiny")
 Destiny.SetModelFilename("data/Models/Ships/destiny/destiny.nif")

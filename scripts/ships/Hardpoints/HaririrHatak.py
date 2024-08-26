@@ -336,7 +336,7 @@ Hatak = App.ShipProperty_Create("Hatak")
 
 Hatak.SetGenus(1)
 Hatak.SetSpecies(788)
-Hatak.SetMass(700.000000)
+Hatak.SetMass(17000.000000)
 Hatak.SetRotationalInertia(5000.000000)
 Hatak.SetShipName("HaririrHatak")
 Hatak.SetModelFilename("data/Models/Ships/HaririrHatak/EarlyHatak.nif")

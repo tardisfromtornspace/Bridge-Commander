@@ -2556,7 +2556,7 @@ Superweapon = App.ShipProperty_Create("Superweapon")
 
 Superweapon.SetGenus(1)
 Superweapon.SetSpecies(796)
-Superweapon.SetMass(700.000000)
+Superweapon.SetMass(200000.000000)
 Superweapon.SetRotationalInertia(5000.000000)
 Superweapon.SetShipName("Superweapon")
 Superweapon.SetModelFilename("data/Models/Ships/AnubisFlagship/Superweapon.nif")

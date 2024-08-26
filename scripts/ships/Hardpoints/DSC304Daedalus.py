@@ -1614,7 +1614,7 @@ DSC304Daedalus = App.ShipProperty_Create("DSC304Daedalus")
 
 DSC304Daedalus.SetGenus(1)
 DSC304Daedalus.SetSpecies(754)
-DSC304Daedalus.SetMass(700.000000)
+DSC304Daedalus.SetMass(18000.000000)
 DSC304Daedalus.SetRotationalInertia(5000.000000)
 DSC304Daedalus.SetShipName("DSC304Daedalus")
 DSC304Daedalus.SetModelFilename("data/Models/Ships/DSC304/DSC304Daedalus.nif")

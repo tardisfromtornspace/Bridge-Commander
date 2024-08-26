@@ -24,7 +24,7 @@ GraceShip = App.ShipProperty_Create("Grace Ship")
 
 GraceShip.SetGenus(1)
 GraceShip.SetSpecies(762)
-GraceShip.SetMass(300000.000000)
+GraceShip.SetMass(80000.000000)
 GraceShip.SetRotationalInertia(300.000000)
 GraceShip.SetShipName("GraceShip")
 GraceShip.SetModelFilename("data/Models/Ships/GraceShip/GraceShip.nif")

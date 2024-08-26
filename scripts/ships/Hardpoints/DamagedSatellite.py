@@ -8,7 +8,7 @@ import GlobalPropertyTemplates
 #################################################
 ShieldGenerator = App.ShieldProperty_Create("Shield Generator")
 
-ShieldGenerator.SetMaxCondition(18000.000000)
+ShieldGenerator.SetMaxCondition(11000.000000)
 ShieldGenerator.SetCritical(0)
 ShieldGenerator.SetTargetable(1)
 ShieldGenerator.SetPrimary(1)
@@ -51,7 +51,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(Hull)
 #################################################
 SensorArray = App.SensorProperty_Create("Sensor Array")
 
-SensorArray.SetMaxCondition(14000.000000)
+SensorArray.SetMaxCondition(11000.000000)
 SensorArray.SetCritical(0)
 SensorArray.SetTargetable(1)
 SensorArray.SetPrimary(1)
@@ -85,7 +85,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(ReactorModule)
 #################################################
 SublightEngines = App.ImpulseEngineProperty_Create("Sublight Engines")
 
-SublightEngines.SetMaxCondition(14000.000000)
+SublightEngines.SetMaxCondition(11000.000000)
 SublightEngines.SetCritical(0)
 SublightEngines.SetTargetable(0)
 SublightEngines.SetPrimary(1)
@@ -113,7 +113,7 @@ Engineering.SetPosition2D(64.000000, 80.000000)
 Engineering.SetRepairComplexity(1.000000)
 Engineering.SetDisabledPercentage(0.100000)
 Engineering.SetRadius(0.015000)
-Engineering.SetNormalPowerPerSecond(1.000000)
+Engineering.SetNormalPowerPerSecond(0.100000)
 Engineering.SetMaxRepairPoints(1.000000)
 Engineering.SetNumRepairTeams(1)
 App.g_kModelPropertyManager.RegisterLocalTemplate(Engineering)
@@ -122,7 +122,7 @@ DamagedSatellite = App.ShipProperty_Create("Damaged Satellite")
 
 DamagedSatellite.SetGenus(1)
 DamagedSatellite.SetSpecies(772)
-DamagedSatellite.SetMass(700.000000)
+DamagedSatellite.SetMass(6800.000000)
 DamagedSatellite.SetRotationalInertia(5000.000000)
 DamagedSatellite.SetShipName("DamagedSatellite")
 DamagedSatellite.SetModelFilename("data/Models/Ships/AncientSatellite/AncientSatellite.nif")
@@ -330,7 +330,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(MainBeam)
 #################################################
 StarMissiles = App.TorpedoTubeProperty_Create("Star Missiles")
 
-StarMissiles.SetMaxCondition(11200.000000)
+StarMissiles.SetMaxCondition(10200.000000)
 StarMissiles.SetCritical(0)
 StarMissiles.SetTargetable(0)
 StarMissiles.SetPrimary(1)
@@ -360,7 +360,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(StarMissiles)
 #################################################
 Missiles = App.TorpedoSystemProperty_Create("Missiles")
 
-Missiles.SetMaxCondition(12200.000000)
+Missiles.SetMaxCondition(10000.000000)
 Missiles.SetCritical(0)
 Missiles.SetTargetable(0)
 Missiles.SetPrimary(1)

@@ -169,7 +169,7 @@ ApophisFlagship = App.ShipProperty_Create("Apophis Flagship")
 
 ApophisFlagship.SetGenus(1)
 ApophisFlagship.SetSpecies(790)
-ApophisFlagship.SetMass(35000.000000)
+ApophisFlagship.SetMass(45000.000000)
 ApophisFlagship.SetRotationalInertia(1000.000000)
 ApophisFlagship.SetShipName("ApophisFlagship")
 ApophisFlagship.SetModelFilename("data/Models/Ships/ApophisFlagship/ApophisFlagship.nif")

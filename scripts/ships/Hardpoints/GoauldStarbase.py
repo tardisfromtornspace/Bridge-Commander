@@ -2483,7 +2483,7 @@ SpaceStation = App.ShipProperty_Create("Space Station")
 
 SpaceStation.SetGenus(1)
 SpaceStation.SetSpecies(791)
-SpaceStation.SetMass(70000.000000)
+SpaceStation.SetMass(80000.000000)
 SpaceStation.SetRotationalInertia(5000.000000)
 SpaceStation.SetShipName("GoauldStarbase")
 SpaceStation.SetModelFilename("data/Models/Bases/GoauldStarbase/GoauldStarbase.nif")

@@ -2569,7 +2569,7 @@ AnubisFlagship = App.ShipProperty_Create("Anubis Flagship")
 
 AnubisFlagship.SetGenus(1)
 AnubisFlagship.SetSpecies(789)
-AnubisFlagship.SetMass(20000.000000)
+AnubisFlagship.SetMass(200000.000000)
 AnubisFlagship.SetRotationalInertia(5000.000000)
 AnubisFlagship.SetShipName("AnubisFlagship")
 AnubisFlagship.SetModelFilename("data/Models/Ships/AnubisFlagship/AnubisFlagship.nif")

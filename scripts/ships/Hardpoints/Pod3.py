@@ -6,7 +6,7 @@ import App
 import GlobalPropertyTemplates
 # Setting up local templates.
 #################################################
-Hull = App.HullProperty_Create("Hull")
+Hull = App.HullProperty_Create("Cargo Pod 3")
 
 Hull.SetMaxCondition(600.000000)
 Hull.SetCritical(1)
@@ -21,7 +21,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(Hull)
 #################################################
 PowerPlant = App.PowerProperty_Create("Power Plant")
 
-PowerPlant.SetMaxCondition(700.000000)
+PowerPlant.SetMaxCondition(600.000000)
 PowerPlant.SetCritical(1)
 PowerPlant.SetTargetable(1)
 PowerPlant.SetPrimary(1)
@@ -199,7 +199,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(FirstPersonCamera)
 # Property load function.
 def LoadPropertySet(pObj):
 	"Sets up the object's properties."
-	prop = App.g_kModelPropertyManager.FindByName("Hull", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	prop = App.g_kModelPropertyManager.FindByName("Cargo Pod 3", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
 	prop = App.g_kModelPropertyManager.FindByName("Power Plant", App.TGModelPropertyManager.LOCAL_TEMPLATES)

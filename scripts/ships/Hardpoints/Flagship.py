@@ -156,7 +156,7 @@ Flagship = App.ShipProperty_Create("Flagship")
 
 Flagship.SetGenus(1)
 Flagship.SetSpecies(799)
-Flagship.SetMass(35000.000000)
+Flagship.SetMass(45000.000000)
 Flagship.SetRotationalInertia(1000.000000)
 Flagship.SetShipName("Flagship")
 Flagship.SetModelFilename("data/Models/Ships/ApophisFlagship/Flagship.nif")

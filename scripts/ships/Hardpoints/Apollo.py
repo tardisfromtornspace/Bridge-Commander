@@ -1614,7 +1614,7 @@ Apollo = App.ShipProperty_Create("Apollo")
 
 Apollo.SetGenus(1)
 Apollo.SetSpecies(401)
-Apollo.SetMass(700.000000)
+Apollo.SetMass(18000.000000)
 Apollo.SetRotationalInertia(5000.000000)
 Apollo.SetShipName("Apollo")
 Apollo.SetModelFilename("data/Models/Ships/DSC304/Apollo.nif")

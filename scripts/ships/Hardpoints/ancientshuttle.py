@@ -150,7 +150,7 @@ AncientShuttle = App.ShipProperty_Create("Ancient Shuttle")
 
 AncientShuttle.SetGenus(1)
 AncientShuttle.SetSpecies(106)
-AncientShuttle.SetMass(15.000000)
+AncientShuttle.SetMass(50.000000)
 AncientShuttle.SetRotationalInertia(2000.000000)
 AncientShuttle.SetShipName("AncientShuttle")
 AncientShuttle.SetModelFilename("data/Models/destiny/ancientshuttle.nif")

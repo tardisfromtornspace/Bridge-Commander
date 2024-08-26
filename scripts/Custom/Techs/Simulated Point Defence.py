@@ -41,7 +41,7 @@ from bcdebug import debug
 import traceback
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-            "Version": "0.92",
+            "Version": "0.93",
             "License": "LGPL",
             "Description": "Read the small title above for more info"
             }
@@ -111,7 +111,7 @@ try:
 				if not bOverflow:
 					bOverflow = 1
 					self.pTimer = None
-					print "SimulatedPointDefence: initiating new countdown for:", pShip.GetName()
+					#print "SimulatedPointDefence: initiating new countdown for:", pShip.GetName()
 					self.countdown()
 					
 			else:
@@ -119,7 +119,7 @@ try:
 				pass
 
 			pInstance.lTechs.append(self)
-			print "Simulated Point Defence: attached to ship:", pShip.GetName()
+			#print "Simulated Point Defence: attached to ship:", pShip.GetName()
 
 		def Detach(self, pInstance):
 			debug(__name__ + ", Detach")
@@ -130,7 +130,7 @@ try:
 			del pInstance.__dict__['Simulated Point Defence Mine']
 
 			if pAllShipsWithTheTech.has_key(pInstance):
-				print "key found, to remove ", pInstance
+				#print "key found, to remove ", pInstance
 
 				del pAllShipsWithTheTech[pInstance]
 
@@ -142,9 +142,9 @@ try:
 				print "SimulatedPointDefence Error (at Detach): couldn't acquire ship of id", pInstance.pShipID
 				pass
 
-			print "Simulated Point Defence: detached from ship"
-			if pShip != None:
-				print "---ship name:", pShip.GetName()
+			#print "Simulated Point Defence: detached from ship"
+			#if pShip != None:
+			#	print "---ship name:", pShip.GetName()
 
 			pInstance.lTechs.remove(self)
 
@@ -163,7 +163,7 @@ try:
 					return
 				
 			if pAllShipsWithTheTech.has_key(pInstance):
-				print "key found, to remove ", pInstance
+				#print "key found, to remove ", pInstance
 				del pAllShipsWithTheTech[pInstance]
 			if pShip == None and pInstance != None:
 				pShip = App.ShipClass_Cast(App.TGObject_GetTGObjectPtr(pInstance.pShipID))
@@ -176,9 +176,9 @@ try:
 					print "--- of id", pInstance.pShipID
 				pass
 
-			print "Simulated Point Defence: cleanup-detached from ship"
-			if pShip != None:
-				print "---ship name:", pShip.GetName()
+			#print "Simulated Point Defence: cleanup-detached from ship"
+			#if pShip != None:
+			#	print "---ship name:", pShip.GetName()
 
 			if pInstance != None:
 				pInstance.lTechs.remove(self)
@@ -327,7 +327,11 @@ try:
 							debug(__name__ + ", Checking Distance 5")
 							## Check the friendlies and enemy group for the ship. If that ship does not exist it is a stray torpedo and must be shot down in case it hits us
 							if not pFiredShip or (pFriendlies.IsNameInGroup(pFiredShip.GetName()) and thisShipInFriendlyGroup) or (pEnemies.IsNameInGroup(pFiredShip.GetName()) and thisShipInEnemyGroup)  or (pGroup.IsNameInGroup(pFiredShip.GetName()) and thisShipInNeutralGroup):
-								lTorpTargets.append(pObject.GetObjID())
+								if pTorp.GetTargetID() != App.NULL_ID: # 0.93 update, not target torps that have same target and parent ID, because those cannot normally harm them
+									if pTorp.GetTargetID() != pTorp.GetParentID():
+										lTorpTargets.append(pObject.GetObjID())
+								else:
+									lTorpTargets.append(pObject.GetObjID())
 							debug(__name__ + ", Checking Distance 6")
 
 			debug(__name__ + ", Going to remove iterator")
@@ -896,5 +900,5 @@ try:
 	oSimulatedPointDefence = SimulatedPointDefenceDef('Simulated Point Defence')
 
 except:
-	print "Something went wrong wih Simulated Point Defence technology"
+	print "Something went wrong with Simulated Point Defence technology"
 	traceback.print_exc()
