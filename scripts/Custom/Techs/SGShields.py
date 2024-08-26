@@ -8,7 +8,7 @@
 # This technology encompasses most of SG defences in a generic way, mostly for tagging, but also for referencing common shield protection strengths and weaknesses over standard STBC shields.
 # Here are the main differences regarding strengths and weaknesses of SG Shields (in comparision with STBC shields, which are supposed to be an in-game simplified version of early post-Dominion War ST Federation shielding):
 # * POINT 1: Excluding ST metaphasic shields and some trinesium-based hulls, SG Shields can withstand being inside a star's corona for quite a while longer than regular ST Federation shielding (and better than the Borg, at least, TNG Borg), capable of avoiding the radiation from leaking inside the vessel for a while. - ONGOING
-# * POINT 2: While both ST Federation shielding and SG shields can do it, SG shields are often stronger when blocking an incoming physical object from colliding, with their shield bubbles at least. -ONGOING
+# * POINT 2: While both ST Federation shielding and SG shields can do it, SG shields are often stronger when blocking an incoming physical object from colliding, with their shield bubbles at least. - DONE
 # * POINT 3: SG Shields cannot usually block dimensional effects, such as certain dimensional disruptions like event horizons, wormholes or black holes. ST shields (at least, Federation, Klingon and Romulan ones) hold a bit better against those, with containment fields specifically built for holding micro-singularities and even those dissipating against polarized hull plating (ok that last statement is ridiculous, but it is what is mentioned in Memory Alpha). -ONGOING
 # * POINT 4: Overall, SG shields, at least Go'auld and above, are stronger against strong impacts, but also seem to have some weaknesses towards lower-powered ones... or at least, they are strong against radiation and nuclear blasts but have some weakness to concentrated plasma bolts, even small (those are the only way to explain why a >1000 Megaton Nuke had no effect on a Go'auld vessel with shields up while a few Death Gliders can drain a Go'auld shields a bit with their shots, if we don't count possible plot armor). - ONGOING
 # * POINT 5: Regarding Federation shielding, Plasma is quite a varied matter - small bolts and plasma projectiles do nothing to their shields, but big advanced ones can pack quite a punch or even drill a hole on their shields (of course the latter example is taken from TOS Balance of Terror and SNW versions against primitive plasma torpedoes and advanced plasma torpedoes, with 23rd century Constitution-class shielding being far weaker and less advanced than a 24th century Galaxy-class shield, but the point still stands) - DONE: This has already been taken care of in the SGPlasmaWeaponScript.
@@ -37,7 +37,7 @@ import FoundationTech
 from ftb.Tech.ATPFunctions import *
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-            "Version": "0.03",
+            "Version": "0.1",
             "License": "LGPL",
             "Description": "Read the small title above for more info"
             }
@@ -61,6 +61,7 @@ try:
 	torpsNetTypeThatCanPhase = [Multiplayer.SpeciesToTorp.PHASEDPLASMA] # For the "torpedoes-going-through" issue
 	defaultDummyNothing = "NaN"
 	SlowDownRatio = 3.0/70.0 # This is an auxiliar value, it helps us for when a ship is too small, to prevent a torpedo from just teleporting to the other side
+	torpCountersForInstance = 32 # Auxiliar value to fake a pEvent, for new collisions
 
 	shieldPiercedThreshold = 0.25 # If that shield is below this percentage, then the shield is considered pierced
 	shieldGoodThreshold = 0.400001 # if that shield is above or equal this percentage, then the shield is considered to be in good condition
@@ -98,6 +99,11 @@ try:
 	def NiPoint3ToTGPoint3(p, factor=1.0):
 		kPoint = App.TGPoint3()
 		kPoint.SetXYZ(p.x * factor, p.y * factor, p.z * factor)
+		return kPoint
+
+	def TGPoint3ToNiPoint3(p, factor=1.0):
+		kPoint = App.NiPoint3(p.x * factor, p.y * factor, p.z * factor)
+		#TO-DO SEE HOW TO CREATE THESE
 		return kPoint
 
 	def findShipInstance(pShip):
@@ -236,7 +242,7 @@ try:
 
 			# We don't want to accidentally load wrong things
 			if (extension == "py") and not fileName == "__init__": # I am not allowing people to just use the .pyc directly, I don't want people to not include source scripts - Alex SL Gato
-				#print "FoolTargeting script is reviewing " + fileName + " of dir " + dir
+				#print "SGShields script is reviewing " + fileName + " of dir " + dir
 				if dExcludePlugins.has_key(fileName):
 					debug(__name__ + ": Ignoring plugin" + fileName)
 					continue
@@ -338,7 +344,7 @@ try:
 							if hasattr(banana, "globalRegularShieldReduction"):
 								global globalRegularShieldReduction
 								globalRegularShieldReduction = banana.globalRegularShieldReduction
-
+						# TO-DO ADD THE CONFIG FILES!!!
 						print "SGShields reviewing of this file is a success"
 				except:
 					print "someone attempted to add more than they should to the SG Shields script"
@@ -409,7 +415,6 @@ try:
 				return -1 # ERROR HOW CAN YOU COLLIDE WITH THE NULL
 			s = [str(pShipID1), str(pShipID2)]
 			madeString = string.join(s[:], "-")
-			print madeString, " for entry"
 			if self.shipPairs.has_key(madeString):
 				return 0 # cannot enter
 			else:
@@ -419,7 +424,6 @@ try:
 		def ExitPair(self, pShipID1, pShipID2): # On one call, it will be pShipID1-pShipID2, so on the other one it must be checked the other way around pShipID2-pShipID1
 			s = [str(pShipID1), str(pShipID2)]
 			madeString = string.join(s[:], "-")
-			print madeString, " for exit"
 			if self.shipPairs.has_key(madeString):
 				del self.shipPairs[madeString]
 				return 1
@@ -430,15 +434,12 @@ try:
 		def CheckPair(self, pShipID1, pShipID2): # On one call, it will be pShipID1-pShipID2, so on the other one it must be checked first the other way around pShipID2-pShipID1
 			s = [str(pShipID1), str(pShipID2)]
 			madeString = string.join(s[:], "-")
-			print madeString, " for check"
 			if self.shipPairs.has_key(madeString):
 				return 1 # We have that string here already
 			else:
 				return 0 # We don't have it
 
 		def CheckAndDeleteOne(self, pShipID): # Cleanup issues
-			print "checking to delete: ", pShipID
-			print self.shipPairs
 			vee = {}
 			for stringbean in self.shipPairs.keys():
 				vee[stringbean] = self.shipPairs[stringbean]
@@ -452,22 +453,14 @@ try:
 							print "What in the blazes, a ship colliding with itself"
 							traceback.print_exc()
 
-			print "NOW:", self.shipPairs
-
-
 	weDidThisVerify = weDidThisPair()
 
-	def damageCalc(fTorpDamage, fShieldDamage, myShieldBroken, othersShieldBroken, myHull, otherHull, myShieldDirNearest, othersShieldDirNearest, pOtherShields, pMeShields, IhaveSGShields, OtherHasSGShields, pinstanceMeShieldRace, pinstanceOtherShieldRace, dummyDamage, massToMassRelation, otherHasSimilarShields): # massToMassRelation needs tobe the inverse for the other
-		#####
-		#damageCalc(fTorpDamage, fShieldDamage, myShieldBroken, othersShieldBroken, myHull, otherHull, myShieldDirNearest, othersShieldDirNearest, pOtherShields, pMeShields, IhaveSGShields, OtherHasSGShields, pinstanceMeShieldRace, pinstanceOtherShieldRace, dummyDamage, massToMassRelation, otherHasSimilarShields) WORKS
-		#damageCalc(fTorpDamage, fShieldDamage, othersShieldBroken, myShieldBroken, otherHull, myHull, othersShieldDirNearest, myShieldDirNearest, pMeShields, pOtherShields, OtherHasSGShields, IhaveSGShields, pinstanceOtherShieldRace, pinstanceMeShieldRace, dummyDamage, (1.0/massToMassRelation), meHasSimilarShields) DOES NOT WORK :/
-		#####
+	def damageCalc(fTorpDamage, fShieldDamage, myShieldBroken, othersShieldBroken, myHull, otherHull, myShieldDirNearest, othersShieldDirNearest, pOtherShields, pMeShields, IhaveSGShields, OtherHasSGShields, pinstanceMeShieldRace, pinstanceOtherShieldRace, dummyDamage, massToMassRelation, otherHasSimilarShields, multiplierMyShieldFactor): # massToMassRelation needs tobe the inverse for the other
 
 		global globalRegularShieldReduction
 		negateRegeneration = 0
 		multFactor = 1.0
 		if myShieldBroken: # My shield will not protect - now we choose the damage for the torpedo
-			print "My shield is now broken"
 			if othersShieldBroken and otherHull:
 				fTorpDamage = fTorpDamage + otherHull.GetCondition()
 			elif pOtherShields and othersShieldDirNearest != None: # If they have still some shield strength and they have not fallen, add it to the damage
@@ -477,20 +470,18 @@ try:
 			fTorpDamage = fTorpDamage * massToMassRelation
 
 		else: # My shield protects, now to choose the damage to the shield facet
-			print "my shield resists"
+			#print "my shield resists"
 			if othersShieldBroken:
-				print "the other is broken"
+				#print "the other is broken"
 				if otherHull:
 					# then we add the hull
 					fShieldDamage = fShieldDamage + otherHull.GetCondition()
-					print "Full hull damage"
 				else:
 					print "Dummy hull damage"
 					fShieldDamage = fShieldDamage + dummyDamage * 10
 			else:
-				print "the other resists too", pOtherShields, othersShieldDirNearest
+				#print "the other resists too", pOtherShields, othersShieldDirNearest
 				if pOtherShields and othersShieldDirNearest != None: # If they have still some shield strength, add it to the damage
-					print "Full shield damage"
 					fShieldDamage = fShieldDamage + pOtherShields.GetCurShields(othersShieldDirNearest)
 				else:
 					print "Dummy shield damage"
@@ -514,6 +505,256 @@ try:
 					multFactor = multFactor * 1000
 		#print "performing fShieldDamage ", fShieldDamage, " and torp dmg ", fTorpDamage
 		return myShieldBroken, fTorpDamage, fShieldDamage, multFactor, negateRegeneration
+
+	# "Fake" collision event. Same functions, quite a different inner implementation.
+	import Appc
+	class FakeWeaponHitEvent(App.TGEvent):
+		PHASER = App.WeaponHitEvent.PHASER
+		TORPEDO = App.WeaponHitEvent.TORPEDO
+		TRACTOR_BEAM = App.WeaponHitEvent.TRACTOR_BEAM
+		# Just apply normal TGEvent stuff, then the extra values are adapted on the getters and setters, just in case
+
+		def __init__(self, *args):
+
+			self.this = apply(Appc.new_TGEvent,args)
+			#self.thisown = 1 # TO-DO Maybe not if this does not work?
+			#self.this = this
+			self.firingObject = None # TO-DO ADD MISSING FIELDS
+			self.targetObject = None
+			self.objectHitPoint = None
+			self.objectHitNormal = None
+			self.worldHitPoint = None
+			self.worldHitNormal =  None
+			self.theCondition = 1.0 # This goes to a range
+			self.theWpnInstance = 32 # This goes up each time
+			self.evntDmg = 0.0
+			self.evntRd = 0.0
+			self.myHullWasHit = 0
+			self.theFiringPlayerID = 0
+
+		def SetFiringObject(self, pObject):
+			self.firingObject = pObject
+			
+		def GetFiringObject(self, *args):
+			val = self.firingObject
+			if val: val = App.ObjectClassPtr(val) 
+			return val
+
+		def SetTargetObject(self, pObject):
+			self.targetObject = pObject
+
+		def GetTargetObject(self, *args):
+			val = self.targetObject
+			if val: val = App.ObjectClassPtr(val) 
+			return val
+
+		def SetObjectHitPoint(self, pNiPoint3):
+			self.objectHitPoint = pNiPoint3
+
+		def GetObjectHitPoint(self, *args):
+			val = self.objectHitPoint
+			if val:
+				#val = App.NiPoint3Ptr(val) # We already gave a pointer, no need to give a pointer of a pointer
+				val.thisown = 1
+			return val
+
+		def SetObjectHitNormal(self, pNiPoint3):
+			self.objectHitNormal = pNiPoint3
+
+		def GetObjectHitNormal(self, *args):
+			val = self.objectHitNormal
+			if val:
+				val.thisown = 1
+			return val
+
+		def SetWorldHitPoint(self, pNiPoint3):
+			self.worldHitPoint = pNiPoint3
+
+		def GetWorldHitPoint(self, *args):
+			val = self.worldHitPoint
+			if val:
+				val.thisown = 1
+			return val
+
+		def SetWorldHitNormal(self, pNiPoint3):
+			self.worldHitNormal = pNiPoint3
+
+		def GetWorldHitNormal(self, *args):
+			val = self.worldHitNormal
+			if val:
+				val.thisown = 1
+			return val
+
+		def GetCondition(self, *args):
+			val = self.theCondition
+			return val
+
+		def SetCondition(self, value0to1):
+			if value0to1 < 0:
+				value0to1 = 0.0
+			elif value0to1 > 1:
+				value0to1 = 1.0
+			self.theCondition = value0to1
+
+		def SetWeaponInstanceID(self, value=32):
+			self.theWpnInstance = value
+
+		def GetWeaponInstanceID(self, *args): # This grows according to projectiles that have hit, begins at 32
+			val = self.theWpnInstance
+			return val
+
+		def SetRadius(self, rd):
+			if rd <= 0.0:
+				rd = 0.1
+			self.evntRd = rd
+			
+		def GetRadius(self, *args):
+			if self.evntRd <= 0.0:
+				self.evntRd = 0.1
+			return self.evntRd
+
+		def SetDamage(self, rd):
+			self.evntDmg = rd
+			
+		def GetDamage(self, *args):
+			return self.evntDmg			
+
+		def GetWeaponType(self, *args):
+			return App.WeaponHitEvent.TORPEDO
+
+		def IsHullHit(self, *args):
+			return self.myHullWasHit
+
+		def SetHullHit(self, rd):
+			if rd < 1:
+				rd = 0
+			elif rd > 1:
+				rd = 1
+			self.myHullWasHit = rd
+
+		def SetFiringPlayerID(self, somethingID):
+			self.theFiringPlayerID = somethingID
+
+		def GetFiringPlayerID(self, *args):
+			return self.theFiringPlayerID
+
+		def __del__(self, Appc=Appc): # TO-DO move to the end
+			if self.thisown == 1 :
+				self.firingObject = None # TO-DO ADD MISSING FIELDS
+				self.targetObject = None
+				self.objectHitPoint = None
+				self.objectHitNormal = None
+				self.worldHitPoint = None
+				self.worldHitNormal =  None
+				self.theCondition = None
+				self.theWpnInstance = None
+				self.evntRd = None
+				self.evntDmg = None
+				self.myHullWasHit = None
+				self.theFiringPlayerID = None
+				Appc.delete_TGEvent(self)
+		def __repr__(self):
+			return "<Python FakeWeaponHitEvent instance at %s>" % (self.this,)
+
+	class FakeWeaponHitEventPtr(FakeWeaponHitEvent):
+		def __init__(self,this):
+			self.this = this
+			self.thisown = 0
+			self.__class__ = FakeWeaponHitEvent
+
+	def TGFakeWeaponHitEvent_Create(*args, **kwargs):
+		val = apply(Appc.TGEvent_Create,args,kwargs)
+		if val:
+			val = FakeWeaponHitEventPtr(val)
+		return val
+
+
+	def performFakeTorpEvents(pShip, pInstanceMe, pOtherShip, mod, theTorpDamage, myHull, myShieldBroken, myShieldBroken2, otherShipRadius, pShipNode, kPointW, kPoint, kPointpShipPer, kPointpShipPerNi, pShipPositionV):
+				global torpCountersForInstance
+
+				# First part, the torpedo, easy
+				dmgRfactor = 0.01
+
+				if myShieldBroken:
+					dmgRfactor = otherShipRadius/5.0 #/10.0 
+
+				leNetType = Multiplayer.SpeciesToTorp.DISRUPTOR
+				if myShieldBroken:
+					leNetType = Multiplayer.SpeciesToTorp.PHASEDPLASMA
+
+				pTorp1 = App.Torpedo_Create(mod, kPoint)
+
+				pTorp1.SetDamageRadiusFactor(dmgRfactor)
+				pTorp1.SetDamage(theTorpDamage)
+				pTorp1.SetNetType(leNetType)
+				pTorp1.UpdateNodeOnly()
+
+				# Set up its target and target subsystem, if necessary.
+				pTorp1.SetTarget(pShip.GetObjID())
+				pTorp1.SetParent(pOtherShip.GetObjID())
+				pTorp1.SetTargetOffset(kPointpShipPer)
+				pTorp1.UpdateNodeOnly()
+
+
+				# Second part, the Event, harder. Down here is what we know about the Events that are given to the DefendVSTorp part of FoundationTech:
+				# Basic App.TGEvent things:
+				# 1º pEvent.GetSource(), pEvent.GetDestination() gives a C TGObject Instance, C TGEventHandlerObject
+				# 2º pEvent.GetEventType() is always 8388708 (App.ET_WEAPON_HIT), for torpedo hits anyways
+				# 3º pEvent.GetTimestamp(), pEvent.IsLogged(), pEvent.IsPrivate(), pEvent.IsNotSaved() will give -1.0 0 0 0
+				# App.WeaponHitEvent things (they inherit the Basic App.TGEvent things by heritage)
+				# 4º print pEvent.GetFiringObject(), " ", pEvent.GetTargetObject() ---> C ObjectClass Instance (pShip that fired), C ObjectClass Instance (pShip that got hit)
+				# 5º print pEvent.GetObjectHitPoint(), pEvent.GetObjectHitNormal(), pEvent.GetWorldHitPoint(), pEvent.GetWorldHitNormal() ---> NiPoint3 Instances with same "at", but actually give two different results, position and normal vector, the two first on local coordinates and the two last being the same values but translated for World coordinates.
+				# 6º self.this may give us hints, probably their ID or a memory allocation designation as they change between events of the same type
+				# 7º print "cond: ", pEvent.GetCondition(), " wpnInstID: ", pEvent.GetWeaponInstanceID(), " rad: ", pEvent.GetRadius(), " dmg ", pEvent.GetDamage(), "wpnType: ", pEvent.GetWeaponType(), " hullHit: ", pEvent.IsHullHit(), " gfplayID: ", pEvent.GetFiringPlayerID()
+				# When a player fired it once, it gave 0.9897142 (it is the condition of the shield or hull property), 32 (goes +1 after each event, maybe more if the hull was hit), 0.150000 (stays the same unless hull is hit, then it deals a lesser value, but closer to the original the worse the shields are... so with shields collapsed it should be the same), 144 (the damage), 1 (pEvent.TORPEDO), 0 (1 if hull was hit), 0 (no matter if the player or an AI are firing, at least on Single Player QB).
+
+				# Thus, the Event needs to imitate those values according to what we have. Since App.WeaponHitEvent lacks visible setters for us, and the actual information for some of those parameters cannot be modified, we need to create a class inheriting from App.WeaponHitEvent but with most functions overriden to give the fake resutls we want, and overriding the __del__ method so we can clean those additional fields if necessary.
+			
+				pEvent1 = TGFakeWeaponHitEvent_Create() # This gives us a pointer, it has no arguments, but it is our "fake" event
+
+				pEventSource = pTorp1
+				pEventDestination = pShip
+
+				pEvent1.SetSource(pEventSource)
+				pEvent1.SetDestination(pEventDestination)
+				pEvent1.SetEventType(App.ET_WEAPON_HIT)
+
+				#pTorpAux = App.Torpedo_Cast(pEvent1.GetSource())
+				#print pTorpAux.GetModuleName()
+				
+				pEvent1.SetFiringObject(pOtherShip)
+				pEvent1.SetTargetObject(pShip)
+
+				pEvent1.SetObjectHitPoint(kPointpShipPerNi) # TO-DO CHECK THESE 
+				pShipPositionVI = TGPoint3ToNiPoint3(pShipPositionV, -1.0)
+				pEvent1.SetObjectHitNormal(pShipPositionVI) 
+				pEvent1.SetWorldHitPoint(kPointW)
+				pShipPositionVW = TGPoint3ToNiPoint3(App.TGModelUtils_LocalToWorldUnitVector(pShipNode, pShipPositionVI), 1.0)
+				pEvent1.SetWorldHitNormal(pShipPositionVW)
+				
+				eCondition = 1.0
+				if myHull:
+					eCondition = myHull.GetConditionPercentage()
+				pEvent1.SetCondition(eCondition)
+
+				valPlus = torpCountersForInstance + 1
+
+				pEvent1.SetWeaponInstanceID(valPlus) # Not needed... at least, I am not aware of any scripts handling it for torpedo defense
+
+				pEvent1.SetRadius(dmgRfactor)
+				pEvent1.SetDamage(theTorpDamage)
+				pEvent1.SetHullHit(1)
+				pEvent1.SetFiringPlayerID(0)
+
+				#print pEvent1
+
+				# Third part, manual damage - actually quite easy
+				affectedSys, nonTargetSys = FindAllAffectedSystems(pShip, kPointpShipPer, dmgRfactor, pEvent1)
+				AdjustListedSubsystems(pShip, affectedSys, nonTargetSys, -theTorpDamage, 1.0, 1)
+
+				# Fourth part, finally using the pEvent for something! This is also so more armours can work with these collisions, and not only one or two.
+				pInstanceMe.DefendVSTorp(pShip, pEvent1, pTorp1)
+
 		
 	def CollisionHappened(pObject, pEvent): # POINT 2. Future TO-DO maybe see what triggers a shield collision event?
 		# On an ideal world we would enable and disable collisions damage. However, for some reason, Disabling collision damage permanently leaves it disabled, even if the "pShip.IsCollisionDamageDisabled()" says it is enabled
@@ -528,6 +769,9 @@ try:
 
 		IhaveSGShields = 0
 		OtherHasSGShields = 0
+
+		IhaveSGShieldsButFailed = 0
+		OtherhaveSGShieldsButFailed = 0
 		pMeShields = None
 		pOtherShields = None
 
@@ -542,14 +786,14 @@ try:
 			# I guess the other/I am something else - maybe an asteroid, debris, a ghost, or something - to be safe, return
 			return
 
-		global weDidThisVerify
-		gandalf = weDidThisVerify.CheckPair(pObject.GetObjID(), pTheOther.GetObjID())
+		#global weDidThisVerify
+		#gandalf = weDidThisVerify.CheckPair(pObject.GetObjID(), pTheOther.GetObjID())
 
-		if gandalf == 1: # We have Gandalf here
-			weDidThisVerify.ExitPair(pObject.GetObjID(), pTheOther.GetObjID())
-			# YOU SHALL NOT PASS!
-			print "returning from ", pShip.GetName(), "'s turn"
-			return
+		#if gandalf == 1: # We have Gandalf here
+		#	weDidThisVerify.ExitPair(pObject.GetObjID(), pTheOther.GetObjID())
+		#	# YOU SHALL NOT PASS!
+		#	#print "returning from ", pShip.GetName(), "'s turn"
+		#	return
 
 		if pShip.IsDead() or pShip.IsDying():
 			return
@@ -569,10 +813,12 @@ try:
 		if pInstanceMe and pInstanceMeDict.has_key("SG Shields"):
 			#print ("me have key", end= '')
 			pMeShields = pShip.GetShields()
-			if pMeShields and not (pMeShields.IsDisabled() or not pMeShields.IsOn()):
-				if pInstanceMeDict["SG Shields"].has_key("RaceShieldTech"):
-					pinstanceMeShieldRace = pInstanceMeDict["SG Shields"]["RaceShieldTech"]
-				if pinstanceMeShieldRace != "Wraith":
+
+			if pInstanceMeDict["SG Shields"].has_key("RaceShieldTech"):
+				pinstanceMeShieldRace = pInstanceMeDict["SG Shields"]["RaceShieldTech"]
+			if pinstanceMeShieldRace != "Wraith":
+				if pMeShields:
+					#pAuxShieldsProperty = pMeShields.GetProperty()
 					maxShields = 0.0
 					for shieldDir in range(App.ShieldClass.NUM_SHIELDS):
 						fMax = pMeShields.GetMaxShields(shieldDir)
@@ -580,6 +826,8 @@ try:
 
 					if maxShields > 0.0:
 						IhaveSGShields = 1
+						if pMeShields.IsDisabled() or not pMeShields.IsOn():
+							IhaveSGShieldsButFailed = 1
 
 		if IhaveSGShields <= 0: # If I don't have them, why or how am I here?
 			return
@@ -587,12 +835,11 @@ try:
 		if pInstanceOther and pInstanceOtherDict.has_key("SG Shields"):
 			#print ("others have key", end= '')
 			pOtherShields = pOtherShip.GetShields()
-			if pOtherShields and not (pOtherShields.IsDisabled() or not pOtherShields.IsOn()):
-				#print("other shields work", end= '')
-				if pInstanceOtherDict["SG Shields"].has_key("RaceShieldTech"):
-					pinstanceOtherShieldRace = pInstanceOtherDict["SG Shields"]["RaceShieldTech"]
-				if pinstanceOtherShieldRace != "Wraith":
-					#print("other shields not wraith", end= '')
+			#print("other shields work", end= '')
+			if pInstanceOtherDict["SG Shields"].has_key("RaceShieldTech"):
+				pinstanceOtherShieldRace = pInstanceOtherDict["SG Shields"]["RaceShieldTech"]
+			if pinstanceOtherShieldRace != "Wraith":
+				if pOtherShields:
 					maxShields = 0.0
 					for shieldDir in range(App.ShieldClass.NUM_SHIELDS):
 						fMax = pOtherShields.GetMaxShields(shieldDir)
@@ -600,6 +847,8 @@ try:
 
 					if maxShields > 0.0:
 						OtherHasSGShields = 1
+						if pOtherShields.IsDisabled() or not pOtherShields.IsOn():
+							OtherhaveSGShieldsButFailed = 1
 
 		# Actual collision calculations:
 		otherHasSimilarShields = 0
@@ -618,11 +867,11 @@ try:
 					meHasSimilarShields = meHasSimilarShields + 1
 					multiplierOtherShieldFactor = multiplierOtherShieldFactor * similarTechsNames[techName]
 
-		print "It is ", pShip.GetName(), "'s turn"
-		if IhaveSGShields > 0 and (OtherHasSGShields > 0 or otherHasSimilarShields > 0):
-			saruman = weDidThisVerify.EnterPair(pTheOther.GetObjID(), pObject.GetObjID()) # This means we were here first, so gandalf can control those who arrive late
-			if saruman <= 0:
-				print "the hit was already done for one side but the other did not take it or clean it in time" # TO-DO if this happens the hit was already done for one side but the other did not take it
+		#print "It is ", pShip.GetName(), "'s turn"
+		#if IhaveSGShields > 0 and (OtherHasSGShields > 0 or otherHasSimilarShields > 0):
+		#	saruman = weDidThisVerify.EnterPair(pTheOther.GetObjID(), pObject.GetObjID()) # This means we were here first, so gandalf can control those who arrive late
+		#	#if saruman <= 0:
+		#	#	print "the hit was already done for one side but the other did not take it or clean it in time" # TO-DO if this happens the hit was already done for one side but the other did not take it
 			
 		global shieldPiercedThreshold, globalRegularShieldReduction
 
@@ -678,155 +927,24 @@ try:
 			myShieldBroken, myShieldDirNearest = shieldInGoodCondition(pShip, kPointpShipPer, shieldPiercedThreshold, 0, None)
 			othersShieldBroken, othersShieldDirNearest = shieldInGoodCondition(pOtherShip, kPointpOtherShipPer, shieldPiercedThreshold, 0, None)
 
-			if OtherHasSGShields > 0 or otherHasSimilarShields > 0:
-				#Get nearest shield facet, then get its integrity... oh, wait, they have the same script, we don't need to do anything except damage calculation! HAHA!	
-				print("Other has SG shields")	
-			else:
-				if pOtherShip.IsCollisionDamageDisabled():
-					print "Damage for the opponent is disabled while not having SG Shields technology or similar"
-				#print("Other does not have SG Shields")
-
-			myShieldBroken, fTorpDamageMe, fShieldDamageMe, multFactorMe, negateRegenerationMe = damageCalc(fTorpDamage, fShieldDamage, myShieldBroken, othersShieldBroken, myHull, otherHull, myShieldDirNearest, othersShieldDirNearest, pOtherShields, pMeShields, IhaveSGShields, OtherHasSGShields, pinstanceMeShieldRace, pinstanceOtherShieldRace, dummyDamage, massToMassRelation, otherHasSimilarShields)
+			myShieldBroken, fTorpDamageMe, fShieldDamageMe, multFactorMe, negateRegenerationMe = damageCalc(fTorpDamage, fShieldDamage, myShieldBroken, othersShieldBroken, myHull, otherHull, myShieldDirNearest, othersShieldDirNearest, pOtherShields, pMeShields, IhaveSGShields, OtherHasSGShields, pinstanceMeShieldRace, pinstanceOtherShieldRace, dummyDamage, massToMassRelation, otherHasSimilarShields, multiplierMyShieldFactor)
 
 			othersShieldBroken2 = 0
 			if OtherHasSGShields > 0 or otherHasSimilarShields > 0:
-				othersShieldBroken, fTorpDamageYou, fShieldDamageYou, multFactorYou, negateRegenerationYou = damageCalc(fTorpDamage2, fShieldDamage2, othersShieldBroken, myShieldBroken, otherHull, myHull, othersShieldDirNearest, myShieldDirNearest, pMeShields, pOtherShields, OtherHasSGShields, IhaveSGShields, pinstanceOtherShieldRace, pinstanceMeShieldRace, dummyDamage, (1.0/massToMassRelation), meHasSimilarShields)
+				othersShieldBroken, fTorpDamageYou, fShieldDamageYou, multFactorYou, negateRegenerationYou = damageCalc(fTorpDamage2, fShieldDamage2, othersShieldBroken, myShieldBroken, otherHull, myHull, othersShieldDirNearest, myShieldDirNearest, pMeShields, pOtherShields, OtherHasSGShields, IhaveSGShields, pinstanceOtherShieldRace, pinstanceMeShieldRace, dummyDamage, (1.0/massToMassRelation), meHasSimilarShields, multiplierOtherShieldFactor)
 
 				othersShieldBroken2, othersShieldDirNearest = shieldRecalculationAndBroken(pOtherShip, kPointpOtherShipPer, -fShieldDamageYou, shieldPiercedThreshold, 0, negateRegenerationYou, othersShieldDirNearest, -fShieldDamageYou, multFactorYou)
 
 			myShieldBroken2, myShieldDirNearest = shieldRecalculationAndBroken(pShip, kPointpShipPer, -fShieldDamageMe, shieldPiercedThreshold, 0, negateRegenerationMe, myShieldDirNearest, fShieldDamageMe, multFactorMe)
-			
 
 			# TO-DO for the thing below it may be better to just... damage the actual subsystems manually (check Borg adaptation!), to avoid possible torpedo-related errors. and then fake a Torpedo Event and broadcast it! Oh, also, fire just one torpedo if the vessel is about to die or something, to punch a hole
-			if (myShieldBroken or myShieldBroken2) and not (pShip.IsDead() or pShip.IsDying()): # These code lines here are temporary, only for replacing
-				fNew = myHull.GetCondition() -fTorpDamageMe
-				if fNew <= 0.0:
-					fNew = 0.0
-					pShip.DestroySystem(myHull)
-				elif fNew > myHull.GetMaxCondition():
-					fNew = myHull.GetMaxCondition()
-					myHull.SetCondition(fNew)
-				else:
-					myHull.SetCondition(fNew)
-				# This code line here is temporary, only for checking if the virtual fucntion call error is from so many torpedoes or something else
-				'''
-				if fNew <= 0.0: # Time for a little explosion
-					global SlowDownRatio
-					mod = "Tactical.Projectiles.ExtraCollisionDamageDummy" # This torpedo was made so Automated Point Defence scripts stop harrasing us! 
-					try:
-						launchSpeed = __import__(mod).GetLaunchSpeed() #this 100 is temporary TO-DO remove the 100 after testing
-	
-						attackerID = App.NULL_ID # Does nullID prevent damage? let's find out!
-						defenderID = App.NULL_ID
 
-						#if pTheOther.GetObjID() != None:
-						#	attackerID = pTheOther.GetObjID()
-
-						if pShip.GetObjID() != None:
-							defenderID = pShip.GetObjID()
-
-						if not myShieldBroken:
-							fTorpDamageMe = fTorpDamageMe + 1.0
-
-						leTorpNetType = Multiplayer.SpeciesToTorp.DISRUPTOR
-						if myShieldBroken:
-							dmgRfactor = otherShipRadius/10.0
-							leTorpNetType = Multiplayer.SpeciesToTorp.PHASEDPLASMA
-						else:
-							dmgRfactor = 0.0001
-				
-				
-	
-						pTempTorp = FireTorpFromPointWithVectorAndNetType(kPoint, pShipPositionV, mod, defenderID, attackerID, launchSpeed, leTorpNetType, fTorpDamage, dmgRfactor, 0, pShip) #TO-DO 1, pShip
-						pTempTorp.SetLifetime(30.5)			
-					except:
-						print "You are missing 'Tactical.Projectiles.ExtraCollisionDamageDummy' torpedo on your install, without that the SG Ion Weapons here cannot deal extra hull damage... or another error happened"
-						traceback.print_exc()
-				'''
-			if (OtherHasSGShields > 0 or otherHasSimilarShields > 0) and (othersShieldBroken or othersShieldBroken2) and not (pOtherShip.IsDead() or pOtherShip.IsDying()):
-				fNew = otherHull.GetCondition() -fTorpDamageYou
-				if fNew < 0.0:
-					fNew = 0.0
-					pOtherShip.DestroySystem(otherHull)
-				elif fNew > otherHull.GetMaxCondition():
-					fNew = otherHull.GetMaxCondition()
-					otherHull.SetCondition(fNew)
-				else:
-					otherHull.SetCondition(fNew) 
-			# pInstance.DefendVSTorp(pShip, pEvent, pTorp)
-			# The torpedo event needs to have pEvent.IsHullHit() == 1, then pEvent.GetObjectHitPoint() == kPoint pEvent.GetDamage() == fTorpDamageMe (or fTorpDamageYou, for the other) pEvent.GetRadius() == otherShipRadius/10.0, or 0.0001, or myShipRadius/10.0, and other event thingies (like pEvent.GetDestination() being the correct form of pShip and pEvent.GetWeaponType() being the correct type TO-DO CHECK A NORMAL TORPEDO EVENT, print it all (check App for these thingies on how to print the entire event) AND CHECK ALL ITS PROPERTIES)
-			# For FedAblativeArmour and then call oAblative.OnTorpDefense(pShip, pInstance, pTorp, None, pEvent) and 
-			# For AblativeArmour, check if it has pInstance.__dict__['Ablative Armour'], then call its own oAblative.OnTorpDefense(self, pShip, pInstance, pTorp, oYield, pEvent)
-			# TO-DO CLEAR IF THIS BELOW WORKS, FUSE THIS INTO ONE FUNCTION THEN CALL IT TWICE
-			'''
+			mod = "Tactical.Projectiles.ExtraCollisionDamageDummy"
 			if (myShieldBroken or myShieldBroken2) and not (pShip.IsDead() or pShip.IsDying()):
-				# We fire a torpedo to us so it flares... or extra damage if we don't
-				global SlowDownRatio
-				mod = "Tactical.Projectiles.ExtraCollisionDamageDummy" # This torpedo was made so Automated Point Defence scripts stop harrasing us! 
-				try:
-					launchSpeed = __import__(mod).GetLaunchSpeed() #this 100 is temporary TO-DO remove the 100 after testing
-	
-					attackerID = App.NULL_ID
-					defenderID = App.NULL_ID
-
-					if pTheOther.GetObjID() != None:
-						attackerID = pTheOther.GetObjID()
-
-					if pShip.GetObjID() != None:
-						defenderID = pShip.GetObjID()
-
-					if not myShieldBroken:
-						fTorpDamageMe = fTorpDamageMe + 1.0
-
-					leTorpNetType = Multiplayer.SpeciesToTorp.DISRUPTOR
-					if myShieldBroken:
-						dmgRfactor = otherShipRadius/10.0
-						leTorpNetType = Multiplayer.SpeciesToTorp.PHASEDPLASMA
-					else:
-						dmgRfactor = 0.0001
-				
-				
-	
-					pTempTorp = FireTorpFromPointWithVectorAndNetType(kPoint, pShipPositionV, mod, defenderID, attackerID, launchSpeed, leTorpNetType, fTorpDamage, dmgRfactor, 0, pShip) #TO-DO 1, pShip
-					pTempTorp.SetLifetime(0.5)			
-				except:
-					print "You are missing 'Tactical.Projectiles.ExtraCollisionDamageDummy' torpedo on your install, without that the SG Ion Weapons here cannot deal extra hull damage... or another error happened"
-					traceback.print_exc()
+				performFakeTorpEvents(pShip, pInstanceMe, pOtherShip, mod, fTorpDamageMe, myHull, myShieldBroken, myShieldBroken2, otherShipRadius, pShipNode, kPointW, kPoint, kPointpShipPer, kPointpShipPerNi, pShipPositionV)
 
 			if (OtherHasSGShields > 0 or otherHasSimilarShields > 0) and (othersShieldBroken or othersShieldBroken2) and not (pOtherShip.IsDead() or pOtherShip.IsDying()):
-				# We fire a torpedo to us so it flares... or extra damage if we don't
-				global SlowDownRatio
-				mod = "Tactical.Projectiles.ExtraCollisionDamageDummy" # This torpedo was made so Automated Point Defence scripts stop harrasing us! 
-				try:
-					launchSpeed = __import__(mod).GetLaunchSpeed() #this 100 is temporary TO-DO remove the 100 after testing
-
-					attackerID = App.NULL_ID
-					defenderID = App.NULL_ID
-
-					if pTheOther.GetObjID() != None:
-						defenderID = pTheOther.GetObjID()
-
-					if pShip.GetObjID() != None:
-						attackerID = pShip.GetObjID()
-
-					if not othersShieldBroken:
-						fTorpDamageYou = fTorpDamageYou + 1.0
-
-					leTorpNetType = Multiplayer.SpeciesToTorp.DISRUPTOR
-					if othersShieldBroken:
-						dmgRfactor = myShipRadius/10.0
-						leTorpNetType = Multiplayer.SpeciesToTorp.PHASEDPLASMA
-					else:
-						dmgRfactor = 0.0001
-				
-				
-	
-					pTempTorp = FireTorpFromPointWithVectorAndNetType(kPoint, pOtherShipPositionV, mod, defenderID, attackerID, launchSpeed, leTorpNetType, fTorpDamageYou, dmgRfactor, 0, pShip) #TO-DO 1, pShip
-					pTempTorp.SetLifetime(0.5)			
-				except:
-					print "You are missing 'Tactical.Projectiles.ExtraCollisionDamageDummy' torpedo on your install, without that the SG Ion Weapons here cannot deal extra hull damage... or another error happened"
-					traceback.print_exc()
-			'''
+				performFakeTorpEvents(pOtherShip, pInstanceOther, pOtherShip, mod, fTorpDamageYou, otherHull, othersShieldBroken, othersShieldBroken, myShipRadius, pOtherShipNode, kPointW, kPoint, kPointpOtherShipPer, kPointpOtherShipPerNi, pOtherShipPositionV)
 
 	def ActivateSGShieldCollisions(pShip, pInstance, instanceDict, activate=1, raceShieldTech=None, pShields=None):
 		if pShip.IsDead() or pShip.IsDying():
@@ -920,14 +1038,11 @@ try:
 				
 
 	def CollisionAtmosAlertCheck(dTimeLeft): 
-		print "Check" #TO-DO MAKE THIS LIKE TURRETS WITH A LIST
-
 		
 		global g_pAtmosCollisionCheckProcess
 		if not (g_pAtmosCollisionCheckProcess):
 			g_pAtmosCollisionCheckProcess = TempProcessWrapper("CollisionAtmosAlertCheck", 5.0, App.TimeSliceProcess.LOW)
 		shipList = g_pAtmosCollisionCheckProcess.SendShipsCopy()
-		print shipList
 		for pShipID in shipList.keys():
 			doShieldNerf = 0
 			pShip = App.ShipClass_GetObjectByID(None, pShipID)
@@ -953,7 +1068,6 @@ try:
 
 				if doShieldNerf > 0:
 					g_pAtmosCollisionCheckProcess.UpdateAtmosReentry(pShipID, 1)
-					print "Anubis superweapon is next to a planet's atmosphere, debuffing shields to 40% efficiency"
 					pShields = pShip.GetShields()
 					for shieldDir in range(App.ShieldClass.NUM_SHIELDS):
 						fCurr = pShields.GetCurShields(shieldDir)
@@ -966,7 +1080,6 @@ try:
 					if shipList[pShipID].has_key("WasInside") and shipList[pShipID]["WasInside"] == 1:
 						g_pAtmosCollisionCheckProcess.UpdateAtmosReentry(pShipID, 0)
 
-						print "Anubis superweapon just left a planet's atmosphere, rebuffing shields"
 						pShields = pShip.GetShields()
 						for shieldDir in range(App.ShieldClass.NUM_SHIELDS):
 							fCurr = pShields.GetCurShields(shieldDir)
@@ -988,12 +1101,103 @@ try:
 	#def PCollisionHappened(pObject, pEvent):
 	#	print "Ok a planet collision happened"
 
+	# Slight modification from Borg Adaptation script, the Borg one is meant to weaken and be complemented by their base damage to destroy - here all the effort must be done on the same function
+	def AdjustListedSubsystems(pShip, lAffectedSystems, lNonTargetableAffeSys, damageHealed, fAllocatedFactor, hurt = 0):
+		pHull=pShip.GetHull()
+		notInThere = 0
+		lenaffectedSys = len(lAffectedSystems)
+		systemsToDestroy = []
+		for pSystem in lAffectedSystems:
+			if pSystem.GetName() == pHull.GetName():
+				notInThere = 1
+			status = pSystem.GetConditionPercentage()
+			# print "status" + str(status)
+			if status > 0.0:
+				fNewCondition = status + (damageHealed / pSystem.GetMaxCondition()) * fAllocatedFactor / lenaffectedSys
+						
+				if fNewCondition <= 0:
+					fNewCondition = 0
+					systemsToDestroy.append(pSystem)
+				elif fNewCondition > 1:
+					fNewCondition = 1
+				pSystem.SetConditionPercentage(fNewCondition)
+
+		lenaffecteduntSys = len(lNonTargetableAffeSys)
+		if hurt == 0:
+			for pSystem in lNonTargetableAffeSys:
+				iamHull = 0
+				if pSystem.GetName() == pHull.GetName():
+					notInThere = 1
+					iamHull = 1
+				status = pSystem.GetConditionPercentage()
+				# print "status" + str(status)
+				if status > 0.0:
+					dividerIs = lenaffecteduntSys
+					if iamHull:
+						dividerIs = 1 + lenaffectedSys
+					fNewCondition = status + (damageHealed / pSystem.GetMaxCondition()) * fAllocatedFactor / dividerIs
+							
+					if fNewCondition <= 0:
+						fNewCondition = 0
+						systemsToDestroy.append(pSystem)
+					elif fNewCondition > 1:
+						fNewCondition = 1
+					pSystem.SetConditionPercentage(fNewCondition)
+
+		if notInThere == 0: # hull hit but no targetable subsystems affected? We must guess it's the hull only, then!
+			if not(pHull==None):
+				status = pHull.GetConditionPercentage()
+				fNewCondition = status + (damageHealed / pHull.GetMaxCondition()) * fAllocatedFactor / (1 + lenaffectedSys)
+
+				if fNewCondition <= 0:
+					fNewCondition = 0
+					systemsToDestroy.append(pHull)
+				elif fNewCondition > 1.0:
+					fNewCondition = 1.0
+				pHull.SetConditionPercentage(fNewCondition)
+
+		for system in systemsToDestroy:
+			pShip.DestroySystem(system)
+			
+		return 0
+
+	def FindAllAffectedSystems(pShip, kPoint, fRadius, pEvent = None):
+		lSystems = []
+		
+		kIterator = pShip.StartGetSubsystemMatch(App.CT_SHIP_SUBSYSTEM)
+		while (1):
+			pSubsystem = pShip.GetNextSubsystemMatch(kIterator)
+			if not pSubsystem:
+				break
+			lSystems.append(pSubsystem)
+					
+			for i in range(pSubsystem.GetNumChildSubsystems()):
+				pChild = pSubsystem.GetChildSubsystem(i)
+				lSystems.append(pChild)
+
+		pShip.EndGetSubsystemMatch(kIterator)
+		# get affected systems
+		lAffectedSystems = []
+		lNonTargetableAffeSys = []
+		if kPoint == None and pEvent != None:
+			kPoint = NiPoint3ToTGPoint3(pEvent.GetObjectHitPoint())
+		for pSystem in lSystems:
+			vDifference = NiPoint3ToTGPoint3(pSystem.GetPosition())
+			vDifference.Subtract(kPoint)
+			if pSystem.GetRadius() + fRadius >= vDifference.Length():
+				if pSystem.IsTargetable():
+					lAffectedSystems.append(pSystem)
+				else:
+					lNonTargetableAffeSys.append(pSystem)
+
+		return lAffectedSystems, lNonTargetableAffeSys
+
 	def shieldRecalculationAndBroken(pShip, kPoint, extraDamageHeal, shieldThreshold = shieldPiercedThreshold, multifacet = 0, negateRegeneration=0, nearShields = None, damageSuffered = 0, multFactor = 1.0):
 
 		pShields = pShip.GetShields()
 		shieldHitBroken = 0
 		shieldDirNearest = None
-		if pShields and not (pShields.IsDisabled() or not pShields.IsOn()):
+		if pShields:
 			if nearShields == None:
 				# get the nearest reference
 				pReferenciado = None
@@ -1019,25 +1223,28 @@ try:
 					shieldHitBroken = 1
 			else:
 				shieldDirNearest = nearShields
-				
-			pShieldsProperty = pShields.GetProperty()
-			for shieldDir in range(App.ShieldClass.NUM_SHIELDS):
-				if shieldDirNearest == shieldDir or multifacet != 0:
-					fCurr = pShields.GetCurShields(shieldDir)
-					fMax = pShields.GetMaxShields(shieldDir)
-					fRecharge = 0
-					if pShieldsProperty and negateRegeneration != 0 and damageSuffered <= ( multFactor * pShieldsProperty.GetShieldChargePerSecond(shieldDir)):
-						fRecharge = -negateRegeneration * damageSuffered * multFactor
+
+			if not (pShields.IsDisabled() or not pShields.IsOn()):
+				pShieldsProperty = pShields.GetProperty()
+				for shieldDir in range(App.ShieldClass.NUM_SHIELDS):
+					if shieldDirNearest == shieldDir or multifacet != 0:
+						fCurr = pShields.GetCurShields(shieldDir)
+						fMax = pShields.GetMaxShields(shieldDir)
+						fRecharge = 0
+						if pShieldsProperty and negateRegeneration != 0 and damageSuffered <= ( multFactor * pShieldsProperty.GetShieldChargePerSecond(shieldDir)):
+							fRecharge = -negateRegeneration * damageSuffered * multFactor
 							
-					resultHeal = fCurr + extraDamageHeal + fRecharge
-					if resultHeal < 0.0:
-						resultHeal = 0.0
-					elif resultHeal > fMax:
-						resultHeal = fMax
-					pShields.SetCurShields(shieldDir, resultHeal)
+						resultHeal = fCurr + extraDamageHeal + fRecharge
+						if resultHeal < 0.0:
+							resultHeal = 0.0
+						elif resultHeal > fMax:
+							resultHeal = fMax
+						pShields.SetCurShields(shieldDir, resultHeal)
 						
-					if shieldDirNearest == shieldDir and (fMax <= 0 or resultHeal < (shieldThreshold * fMax)):
-						shieldHitBroken = 1
+						if shieldDirNearest == shieldDir and (fMax <= 0 or resultHeal < (shieldThreshold * fMax)):
+							shieldHitBroken = 1
+			else:
+				shieldHitBroken = 1
 		else:
 			shieldHitBroken = 1
 
@@ -1048,7 +1255,7 @@ try:
 		pShields = pShip.GetShields()
 		shieldHitBroken = 0
 		shieldDirNearest = None
-		if pShields and not (pShields.IsDisabled() or not pShields.IsOn()):
+		if pShields:
 			if nearShields == None:
 				# get the nearest reference
 				pReferenciado = None
@@ -1075,15 +1282,20 @@ try:
 
 			else:
 				shieldDirNearest = nearShields
+
+			if not (pShields.IsDisabled() or not pShields.IsOn()):
+				pShieldsProperty = pShields.GetProperty()
+				for shieldDir in range(App.ShieldClass.NUM_SHIELDS):
+					if shieldDirNearest == shieldDir or multifacet != 0:
+						fCurr = pShields.GetCurShields(shieldDir)
+						fMax = pShields.GetMaxShields(shieldDir)
+						resultHeal = fCurr
+						if shieldDirNearest == shieldDir and (fMax <= 0 or resultHeal < (shieldThreshold * fMax)):
+							shieldHitBroken = shieldHitBroken + 1
+			else:
+				shieldHitBroken = 1
 				
-			pShieldsProperty = pShields.GetProperty()
-			for shieldDir in range(App.ShieldClass.NUM_SHIELDS):
-				if shieldDirNearest == shieldDir or multifacet != 0:
-					fCurr = pShields.GetCurShields(shieldDir)
-					fMax = pShields.GetMaxShields(shieldDir)
-					resultHeal = fCurr
-					if shieldDirNearest == shieldDir and (fMax <= 0 or resultHeal < (shieldThreshold * fMax)):
-						shieldHitBroken = shieldHitBroken + 1
+
 		else:
 			shieldHitBroken = 1
 
@@ -1152,7 +1364,7 @@ try:
 							fMax = pShields.GetMaxShields(shieldDir)
 							maxShields = maxShields + fMax
 						if maxShields > 0.0:
-							print "adding this tech listeners to ship: ", pShip.GetName()
+							#print "adding SG forcefield shield tech listeners to ship: ", pShip.GetName()
 							pShields.TurnOn()
 							pShip.RemoveHandlerForInstance(App.ET_SUBSYSTEM_STATE_CHANGED, __name__ + ".SubsystemStateChanged")
 							pShip.AddPythonFuncHandlerForInstance(App.ET_SUBSYSTEM_STATE_CHANGED, __name__ + ".SubsystemStateChanged")
@@ -1212,9 +1424,6 @@ try:
 			debug(__name__ + ", OnDefense")
 
 			global shieldPiercedThreshold, shieldGoodThreshold, defaultPassThroughDmgMult, vulnerableProjToSGShields, vulnerableBeamsToSGShields
-			#if oYield:
-			#	if oYield.IsPhaseYield() or oYield.IsDrainYield():
-		 	#		return
 
 			instanceDict = pInstance.__dict__
 			fRadius, fDamage, kPoint = self.EventInformation(pEvent)

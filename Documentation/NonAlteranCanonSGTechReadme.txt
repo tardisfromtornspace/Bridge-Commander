@@ -7,11 +7,18 @@ This mod attempts to fix some Stargate pack balance inconsistencies by adding ap
 * SG Shields: at the moment, this tech is used to know what ships use Stargate shielding/protection and which type (excluding the Atlantis and AncientCity, already covered in https://www.gamefront.com/games/bridge-commander/file/canonical-alteran-technologies)
 ** This tech also works as a marker to indicate what techs it can protect itself from better or worse, from common SG shield characteristics, to technological differences.
 ** Despite the name, it is also used to storage some hull types, for tracing. This is because not all hulls are made equal, and some materials on the hulls may make them more or less susceptible to certain types of damage than others.
+** Now all SG Shields have lessened hull bleedthrough up to a bit above 40% shields (if the vessel has shields, that is).
+** Now all vessels with SG shields have collision damage disabled, and simulated by a script that simulates shield drain and collisions. That way you can ram a regular KM ambassador and suffer little to no damage.
+*** As a byproduct of this buff, all Stargate vessel's mass on this mod have been tweaked so the shield suffers from more or less strain from a collision impact. For the most part, the masses have been noticeably buffed.
+** Asgard shields will not be drained from shots that are lesser than their shield facet regeneration, unless additional effects are added.
+** Ori shields will not be drained from shots lesser than a few times their facet shield regeneration - in fact if the shot is too weak they will absorb the energy to recover and strengthen themselves.
+** Anubis's Superweapon's shields are temporarily reduced to 40% integrity when too deep inside a planet's atmosphere.
+** As a nicety to the player, SG Shields are automatically raised from the beginning.
 
 * SG Ion Weapons: this tech works by adding a customizable drain effect; while being open to adding Subscripts that may modify its behavior (please read in-script documentation about how does this work).
 ** This was meant to give the Asgard and Tollan Ion Weapons a significant buff, while providing Anubis a resistance without making Anubis vessels have shields 100 times stronger than normal (let's not forget a regular Ha'tak could be destroyed by a single Tollan Ion Cannon shot ignoring the shields, but Anubis shields on a regular Ha'tak could shrug a entire planetary defense grid of them, yet at most 1 Anubian Ha'tak was equal to 6 regular ones - if mod-wise we followed a mere shield increase strategy, in order to make Anubis Ha'taks capable of shrugging off the Tollan Ion cannons, they would become invincible to even Ori vessels).
 
-* SG Plasma Weapons: the purpose of this tech was to explain why a naquadah-enhanced >1000 Megaton nuke could not deal damage to a Go'auld Ha'tak and a Ha'tak could stay 10 hours inside a sun's Corona, yet some Go'auld Death Glider's staff weapons could put the shields to strain, without performing total absurdities (before this mod, previous mods made the Go'auld death glider half-shot deal roughtly half the damage of a Ha'tak's main weapons shot, you have got to be kidding me).
+* SG Plasma Weapons: the purpose of this tech was to explain why a naquadah-enhanced >1000 Megaton nuke could not deal damage to a Go'auld Ha'tak and a Ha'tak could stay 10 hours inside a sun's corona, yet some Go'auld Death Glider's staff weapons could put the shields to strain, without performing total absurdities (before this mod, previous mods made the Go'auld death glider half-shot deal roughtly half the damage of a Ha'tak's main weapons shot, you have got to be kidding me to have a Go'auld Death glider whose shots are as powerful as a Ha'taks).
 
 * Plasma and Ion weapons base damage nerfed accordingly to deal a similar final raw damage output to what they did to shields before the mod.
 ** Please note that "similar" is not "equal" - actually, specially for the Asgard Ion Cannons, net shield damage has been slightly buffed, specially for the higher-end vessels' Ion weapons.
@@ -24,18 +31,16 @@ This mod attempts to fix some Stargate pack balance inconsistencies by adding ap
 ** TO-DO
 * TO-DO ALSO ADD Automated Destroyed System Repair TO THE REPLICATOR VESSELS, ESPECIALLY THEIR COMMAND CARRIER AND SPIDER
 
-
-
-* Ha'taks and some capital ships' masses adjusted to comparable levels (since the mass difference has something to do with in-game collisions, it is the best way to simulate shield collisions in-game)
 * Upgraded Ha'tak speed increased slightly.
 * Buffed regular Ha'tak (Early, Variant, Refit) shields significantly.
-* Nerfed regular Ha'tak hulls (Early, Variant, Refit) a bit.
+* Nerfed regular Ha'tak hulls (Early, Variant, Refit) and power plants a tiny bit. #### TO-DO ####
 * Added Simulated Point Defence to the Replicator Stolen Cruiser.
 
 #### TO-DO ----> FOR ANUBIS MOTHERSHIP, SEE IF YOU CAN DO SOMETHING LIKE THE TURRETS SCRIPT MIXED WITH TACHYONBEAM SCRIPT, BUT ONLY MOVING TWO UNCOLLIDABLE AND UNTARGETABLE BEAMS NEXT TO AN ENEMY VESSEL, TO THEN FIRE ON THE TWO CLOSEST ENEMY VESSELS TO THE OBJECTIVE ####
 
 * Wraith given Automated System Repair #### TO-DO ####
-* Wraith HP and weapons adjusted accordingly between mods #### TO-DO ALSO CHECK FOR WRAITH DARTS IF THEY NEED SOME HP NERF AS WELL ####
+* Wraith HP and weapons adjusted accordingly between mods.
+* F302, Death Gliders, X301 and Wraith Darts hardpoints adjusted, and fixed same-HP-issue the old Mvam Wraith Hive Ship mod had.
 #### ALSO TO-DO MAYBE GIVE WRAITH HULL A CERTAIN METHOD OF DAMAGE REDUCTION? ####
 
 == Dependancies ==
