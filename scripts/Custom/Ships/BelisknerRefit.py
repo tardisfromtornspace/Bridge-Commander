@@ -38,7 +38,7 @@ credits = {
 #                                                                                     #
 Foundation.ShipDef.BelisknerRefit = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
 Foundation.ShipDef.BelisknerRefit.dTechs = {
-	'SG Shields': { "RaceShieldTech": "Asgard" },
+	'SG Shields': { "RaceShieldTech": "Asgard", "FacetFactor" : 2 },
 	"TachyonBeam": { "Immune": -1 }
 }
 

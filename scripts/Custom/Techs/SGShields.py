@@ -2,20 +2,21 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
 #         SGShields.py by Alex SL Gato
-#         24th August 2024
+#         27th August 2024
 #         Based strongly on Shields.py by the FoundationTechnologies team, ATPFunctions by Apollo, HelmMenuHandlers from the STBC Team, and SGGIonWeapon by Alex SL Gato.
 #################################################################################################################
+# === Introduction === 
 # This technology encompasses most of SG defences in a generic way, mostly for tagging, but also for referencing common shield protection strengths and weaknesses over standard STBC shields.
 # Here are the main differences regarding strengths and weaknesses of SG Shields (in comparision with STBC shields, which are supposed to be an in-game simplified version of early post-Dominion War ST Federation shielding):
-# * POINT 1: Excluding ST metaphasic shields and some trinesium-based hulls, SG Shields can withstand being inside a star's corona for quite a while longer than regular ST Federation shielding (and better than the Borg, at least, TNG Borg), capable of avoiding the radiation from leaking inside the vessel for a while. - ONGOING
+# * POINT 1: Excluding ST metaphasic shields and some trinesium-based hulls, SG Shields can withstand being inside a star's corona for quite a while longer than regular ST Federation shielding (and better than the Borg, at least, TNG Borg), capable of avoiding the radiation from leaking inside the vessel for a while. - OH HOLD, since currently the only actual environmental damage on STBC comes from certain Nebulas and GravityFX, the Nebula drain can be normally countered by a shield regeneration of 20 or above (which is what the Go'auld Ha'taks have) and Gravity damage is not blocked by SG Shields.
 # * POINT 2: While both ST Federation shielding and SG shields can do it, SG shields are often stronger when blocking an incoming physical object from colliding, with their shield bubbles at least. - DONE
-# * POINT 3: SG Shields cannot usually block dimensional effects, such as certain dimensional disruptions like event horizons, wormholes or black holes. ST shields (at least, Federation, Klingon and Romulan ones) hold a bit better against those, with containment fields specifically built for holding micro-singularities and even those dissipating against polarized hull plating (ok that last statement is ridiculous, but it is what is mentioned in Memory Alpha). -ONGOING
-# * POINT 4: Overall, SG shields, at least Go'auld and above, are stronger against strong impacts, but also seem to have some weaknesses towards lower-powered ones... or at least, they are strong against radiation and nuclear blasts but have some weakness to concentrated plasma bolts, even small (those are the only way to explain why a >1000 Megaton Nuke had no effect on a Go'auld vessel with shields up while a few Death Gliders can drain a Go'auld shields a bit with their shots, if we don't count possible plot armor). - ONGOING
+# * POINT 3: SG Shields cannot usually block dimensional effects, such as certain dimensional disruptions like event horizons, wormholes or black holes. ST shields (at least, Federation, Klingon and Romulan ones) hold a bit better against those, with containment fields specifically built for holding micro-singularities and even those dissipating against polarized hull plating (ok that last statement is ridiculous, but it is what is mentioned in Memory Alpha). -DONE
+# * POINT 4: Overall, SG shields, at least Go'auld and above, are stronger against strong impacts, but also seem to have some weaknesses towards lower-powered ones... or at least, they are strong against radiation and nuclear blasts but have some weakness to concentrated plasma bolts, even small (those are the only way to explain why a >1000 Megaton Nuke had no effect on a Go'auld vessel with shields up while a few Death Gliders can drain a Go'auld shields a bit with their shots, if we don't count possible plot armor). - DONE
 # * POINT 5: Regarding Federation shielding, Plasma is quite a varied matter - small bolts and plasma projectiles do nothing to their shields, but big advanced ones can pack quite a punch or even drill a hole on their shields (of course the latter example is taken from TOS Balance of Terror and SNW versions against primitive plasma torpedoes and advanced plasma torpedoes, with 23rd century Constitution-class shielding being far weaker and less advanced than a 24th century Galaxy-class shield, but the point still stands) - DONE: This has already been taken care of in the SGPlasmaWeaponScript.
 # * POINT 6: If properly tweaked, a SG Shield can perfectly block a certain frequency or type of weapon with (almost) no shield drain, even if before they could not block them... at least for Alteran-based shields which seem to be based on the frequency-antifrequency principle to negate damage, compared with the same-frequency-can-pass of ST Federation shielding that is only supposed to allow a single set of frequencies to pass, but all the others are blocked "almost" perfectly. - DONE here and in other scripts
 # ** F.ex. traditional Go'auld shields cannot block an Ion Weapon, but upgraded Anubis ones can and also make them totally ineffective, while still only having shields a bit stronger overall. And talking about Ion Weapons...
 # * POINT 7:  On SG, Ion Weapons work more as regular projectiles, lowering shields and then dealing hull damage, but with the twist that they deal a lot of Hull Damage, and standard Go'auld shields lack the ability to block them (for ST fans, Ion Weapons to a Go'auld shield are like a pre-Dominion-War Federation Galaxy-class shield against Phased Polaron Beams). Ion Weapons in ST work more as shield drainers - they rarely (if at all) lower all shields from one hit, requiring several even if they carry a kinetic charge, but they will definetely drain the shields and give problems to the shield regeneration. - DONE: This has already been taken care of in the SGIonWeaponScript.
-# * POINT 8: excluding the exceptions from the other points, SG shields in general do not take as much hull bleedthrough damage when shields are at full strength, except on counted occasions. Mostly the damage they may receive when shields are still at full is more towards the power grids and similar, not to the hull proper, unless their shields cannot adapt. - DONE here
+# * POINT 8: SG shields in general do not take as much hull bleedthrough damage when shields are at full strength, except on counted occasions such as the Tollan Ion weapons against standard Go'auld shields, or Prometheus against the Ori satellite. Mostly the damage they may receive when shields are still at full is more towards the power grids and similar, not to the hull proper, unless their shields cannot adapt. - DONE here.
 # * POINT 9: Since SG shields and ST Federation shields work on different principles, it is very likely that Phased Polaron weapons would do nothing to SG shields. - DONE here
 
 # The following is not necessarily a point of difference between ST and SG shields, but it is important for our points to determine some SG Shields things to code:
@@ -23,21 +24,128 @@
 # * POINT 11: Some Ori prior shields use the energy of the impacts to become stronger, albeit that was only seen on the Ori Beachhead shield which was far more powerful than an Ori Warship shield. - DONE here
 # * POINT 12: At least some SG Shields seem to be affected by merely being in an atmosphere. Or at least, only Anubis Superweapon's shields. - DONE here
 
+
+# === How to add this tech to a vessel:===
+# just add to your Custom/Ships/shipFileName.py this, modifying the appropiate sub-fields.
+# NOTE: replace "Ambassador" with the appropiate abbrev
+"""
+Foundation.ShipDef.Ambassador.dTechs = {
+	'SG Shields': { "RaceShieldTech": "Replicator", "RaceHullTech": "Asgard" }
+}
+"""
+# The sub-fields are:
+# * "RaceShieldTech": indicates the type of shield you vessel has. While this field is not mandatory, it is necessary for certain perks:
+# ** if "RaceShieldTech" : "Wraith" the SG shield collision simulation and energy block will not be added to this vessel - this is to trace Wraith ships and allow them to have a shield to block transporters and teleporters and very low-damage attacks without having an actual shield-collision-damage-block. Other scripts may use this field #### TO-DO Update if changed ####
+# ** if "RaceShieldTech" : "Go'auld" no advantages are added here... but SGIonWeapon projectiles will bypass the shield (to reference the Tollan Ion cannons and regular Asgard Beliskner Ion cannons being able to do so).
+# ** if "RaceShieldTech" : "Anubis Go'auld" no advantages are added here... but some optional fields may require for this key to have this value to act. Additionally, it makes the shields shrug off the Tollan Ion Cannon and makes Beliskner-grade Ion Weapons ineffective, and adds a very slight resistance to other Ion Cannons and SG Plasma ones.
+# ** if "RaceShieldTech" : "Asgard": several perks are added, they are more advanced, have reduced shield damage collision and when a too-low yield weapon is fired at them (lower than their shield facet regeneration, that is), the shield will regenerate as if no weapon had been fired (POINT 10)
+# ** if "RaceShieldTech": "Alteran", "RaceShieldTech": "Lantean", "RaceShieldTech": "Lantian" or "RaceShieldTech": "Asuran": no advantages are added here... but other related scripts may use them #### TO-DO Update if changed ####
+# ** if "RaceShieldTech": "Replicator": no advantages are added here... but other related scripts, like the Replicator Adaptation script, may use them. #### TO-DO Update if changed ####
+# ** if "RaceShieldTech" : "Ori": several perks are added, included severely reduced shield damage collisions and when a too-low yield weapon is fired at them (lower than a few times their shield facet regeneration) their shields will absorb the energy to recover faster, instead of taking any shield damage.
+# ** Other values like "Tau'ri", "Hebridan", "Grace", "Martin Lloyds People" or "None" currently do not do anything beyond default behaviour.
+# *** Currently, as of time of release, "Tau'ri" is unused too, at least for shields, with Tau'ri vessels having either this field set to "Go'auld", "Asgard" or "None". #### TO-DO Update if changed ####
+# * "RaceHullTech": indicates the type of hull your vessel has. While this is in fact used also for the SGIonWeapon and SGPlasmaWeapon scripts, at the moment it is unused here. If this field has not been added, it will default to the RaceShieldTech value. #### TO-DO Update if this changes ####
+# * "FacetFactor": with a numeric value (f.ex. "FacetFactor" : 2), indicates how many times is the shield facet calculation for Asgard and Ori Shields multiplied. Base is 1 for Asgard and 4 for Ori.
+# * "Superweapon": an optional field, at the moment if "Superweapon": 1 and your "RaceShieldTech" : "Anubis Go'auld", shields will be temporarily debuffed to 40% as long as you remain inside a planetary atmosphere (POINT 11).
+#
+# === Basic global configuration ===
+# Inside the list of Subscripts, that are scripts/Custom/Techs/SGShieldScripts, there's a particular file , "BasicSGShieldsConfiguration", which allows to modify some global parameters of the script without modifying the main file itself, thus bringing less problems of multiple variants of the main file. Below is an example with all parameters being in use.
+'''
+# THIS FILE IS NOT SUPPORTED BY ACTIVISION
+# THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
+# 26th August 2024, by Alex SL Gato (CharaToLoki)
+# Version: 1.0
+# Meant to be used alongside the SGShields Technology (located at scripts/Custom/Techs), this file must be under scripts/Custom/Techs/SGShieldScripts
+# As these are Sub-techs with some leeway, their manuals must be explained here:
+##################################
+# SPECIFIC SUB-TECH MANUAL:
+# This file is only added as base configuration, so if we need to change these parameters, we don't have to modify the main file.
+
+# NOTE: Imports and additional functions may be necessary here as well, depending on how creative the sub-tech becomes
+
+import App
+from bcdebug import debug
+import traceback
+
+# Some global variables could be used as well
+defaultPassThroughDmgMult = 0.1 # For things that need to actually do bleedtrough... how much?
+
+shieldGoodThreshold = 0.400001 # From this value downwards, SG special bleedthrough block will not work.
+shieldPiercedThreshold = 0.25 # Below this value shields are definetely pierced, so full bleedthrough!
+
+SlowDownRatio = 3.0/70.0 # This is an auxiliar value, it helps us when a ship is too small, to prevent a torpedo from just teleporting to the other side
+
+globalRegularShieldReduction = 0.5 # When it's a SG shield vs normal shield during a collision, we take reduced shield damage
+
+oriMultifact = 4.0 # Default "how-many-times-the-shield-regen-facet" are required for Ori ships to use their special shield thingy 
+'''
+#
+# === Weapons configuration towards POINT 3 ===
+#
+# Additionally, a file on the scripts/Custom/Techs/SGShieldScripts folder can contain certain attributes to make a certain weapon bypass shields, relative to POINT 3. The internal use is explained on the following indented area, and a file example has been added below that to guide modders with altering, adding or removing behaviours of a beam.
+
+	# vulnerableProjToSGShields: A Dict of torpedoes that normally cannot deal damage through shields to STBC shields at full, but which could deal at least some guaranteed bleedthrough to SG shields.
+	# The dict is built from a list of scripts, each dict works with the following fields (with an example)
+	# {"ProjectileName": {"GuaranteedBleedthrough": 0.1, "WhitelistFilename": ["Quantum", "QuantumTorpedo"], "BlacklistName": ["not a quantum", "not quantum", "no quantum", "anti-quantum", "antiquantum", "quantumania"], "BlacklistFilename": ["AntiQuantum", "Quantumania"]}
+	# "ProjectileName" refers to a certain projectile name that the projectile's name or sScript filename match or have a common string with, case-insenstitive.
+	# "GuaranteedBleedthrough" indicates ther relative dmg through a shield the weapon will deal, according to a multiplier. 0.1 is the default
+	# "WhitelistFilename": adds extra torpedo filenames that, if matched exactly (case-sensitive), will guarantee they are included and will ignore blacklists (this field is here if somebody wants to add a torpedo with that ProjectileName torpedo properties, but under a different name).
+	# "BlacklistName": includes a list of projectile on-screen names that cannot apply to this. This one will be triggered if the torpedo names match or have that string of words, case-insenstitive.
+	# "BlacklistFilename": includes a list of projectile filenames that if they match cannot be applied to this. This one does need to match the words exactly and is case-sensitive.
+	# vulnerableBeamsToSGShields: A Dict of beams that normally cannot deal damage through shields to STBC shields, but which could deal at least some guaranteed bleedthrough to SG shields. I currently do not know of any in particular... hm, maybe lasers, but that would go into too many what-ifs, so no, I don't know of any and on the original install from this mod this dict field will be empty. However, I'm leaving this field open for expansion.
+	# {"BeamName": {"GuaranteedBleedthrough": 0.1, "WhitelistHardname": ["Quantum", "Quantum Torpedo"], "BlacklistName": ["not a quantum", "not quantum", "no quantum", "anti-quantum", "antiquantum", "quantumania"]}
+	# "BeamName" refers to a certain App phaser bank property (that is what they are called mod-wise, to the player they could have any varied names: beams, lasers, phasers, particle beams, etc.) name that the hardpoint's name match or have a common string with, case-insenstitive.
+	# "GuaranteedBleedthrough" indicates ther relative dmg through a shield the weapon will deal, according to a multiplier. 0.1 is the default
+	# "WhitelistHardname": adds extra hardpoint names that, if matched exactly (case-sensitive), will guarantee they are included and will ignore blacklists (this field is here if somebody wants to add a phaser bank property with that BeamName properties, but under a different name).
+	# "BlacklistName": includes a list of hardpoint property names that cannot apply to this. This one will be triggered if the hardpoint names match or have that string of words, case-insenstitive.
+
+'''
+# THIS FILE IS NOT SUPPORTED BY ACTIVISION
+# THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
+# 26th August 2024, by Alex SL Gato (CharaToLoki)
+# Version: 1.0
+# Meant to be used alongside the SGShields Technology (located at scripts/Custom/Techs), this file must be under scripts/Custom/Techs/SGShieldScripts
+# As these are Sub-techs with some leeway, their manuals must be explained here:
+##################################
+# SPECIFIC SUB-TECH MANUAL:
+# This file adds Quantum torpedoes to the list of guaranteed bleedthrough to SG Shields, according to SGShields in-script documentation. Due to the parent script implementation, we could add multiple files that add elements, and repeated elements on the lists will not be repeatedly included on the parent script
+
+# NOTE: Imports and additional functions may be necessary here as well, depending on how creative the sub-tech becomes
+import App
+from bcdebug import debug
+import traceback
+
+# Some global variables could be used as well
+# On this case, we want to add the equivalent to this:
+#{"ProjectileName": {"GuaranteedBleedthrough": 0.1, "WhitelistFilename": ["Quantum", "QuantumTorpedo"], "BlacklistName": ["not a quantum", "not quantum", "no quantum", "anti-quantum", "antiquantum", "quantumania"], "BlacklistFilename": ["AntiQuantum", "Quantumania"]}
+
+ProjectileName = "Quantum"
+ProjectileGuaranteedBleedthrough = 0.1
+ProjectileWhitelistFilename = ["Quantum", "QuantumTorpedo"]  # Case-sensitive
+ProjectileBlacklistName = ["not a quantum", "not quantum", "no quantum", "anti-quantum", "antiquantum", "quantumania"]  # Case-insensitive
+ProjectileBlacklistFilename = ["AntiQuantum", "Quantumania"]  # Case-sensitive
+#ProjRacesImmune = ["Asgard"]
+
+# Below here we have an example for phasers - something which btw I totally do not think can, it's just an example
+# {"BeamName": {"GuaranteedBleedthrough": 0.05, "WhitelistHardname": ["Ventral Phaser 1"], "BlacklistName": ["not a phaser", "notphaser", "laser", "nophaser"]}
+BeamName = "Phaser" # Could be changed to another weapon, like "Phased Disrupers", "Particle Beam", "Laser",... then it will look for those instead
+BeamGuaranteedBleedthrough = 0.05
+BeamWhitelistHardname = ["Ventral Phaser 1"]
+BeamBlacklistName = ["not a phaser", "notphaser", "laser", "nophaser"]
+BeamRacesImmune = ["Ori"]
+'''
+
+
 from bcdebug import debug
 import traceback
 
 import App
 import FoundationTech
-#### TO-DO UPDATE THIS ####
-# This should be the prime example of a special yield weapon defined
-# according to Foundation Technologies.  The code is mostly based upon
-# QuickBattleAddon.corboniteReflector() in Apollo's Advanced Technologies.
-
 
 from ftb.Tech.ATPFunctions import *
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-            "Version": "0.1",
+            "Version": "0.5",
             "License": "LGPL",
             "Description": "Read the small title above for more info"
             }
@@ -51,6 +159,8 @@ try:
 	import MissionLib
 	import Multiplayer.SpeciesToTorp
 
+	from Custom.UnifiedMainMenu.ConfigModules.Options.SavedConfigs import DS9FXSavedConfig
+
 	import nt
 	import string
 
@@ -58,42 +168,29 @@ try:
 	from math import *
 
 	g_pAtmosCollisionCheckProcess = None
-	torpsNetTypeThatCanPhase = [Multiplayer.SpeciesToTorp.PHASEDPLASMA] # For the "torpedoes-going-through" issue
+	torpsNetTypeThatCanPhase = Multiplayer.SpeciesToTorp.PHASEDPLASMA # For the "torpedoes-going-through" issue
 	defaultDummyNothing = "NaN"
 	SlowDownRatio = 3.0/70.0 # This is an auxiliar value, it helps us for when a ship is too small, to prevent a torpedo from just teleporting to the other side
 	torpCountersForInstance = 32 # Auxiliar value to fake a pEvent, for new collisions
 
 	shieldPiercedThreshold = 0.25 # If that shield is below this percentage, then the shield is considered pierced
 	shieldGoodThreshold = 0.400001 # if that shield is above or equal this percentage, then the shield is considered to be in good condition
-	defaultPassThroughDmgMult = 0.1
+	defaultPassThroughDmgMult = 0.1 # How much damage from a dimensional projectile that STBC shields can easily resist, but SG shields cannot block?
 
-	# A Dict of torpedoes that normally cannot deal damage through shields to STBC shields at full, but which could deal at least some guaranteed bleedthrough to SG shields.
-	# The dict is built from a list of scripts, each dict works with the following fields (with an example)
-	# "ProjectileName": {"GuaranteedBleedthrough": 0.1, "WhitelistFilename": ["Quantum", "QuantumTorpedo"], "BlacklistName": ["not a quantum", "not quantum", "no quantum", "anti-quantum", "antiquantum", "quantumania"], "BlacklistFilename": ["AntiQuantum", "Quantumania"]}
-	# "ProjectileName" refers to a certain projectile name that the projectile's name or sScript filename match or have a common string with, case-insenstitive.. #### TO-DO Make it so the fields and name go through a lowercase function for compatibility ####
-	# "GuaranteedBleedthrough" indicates ther relative dmg through a shield the weapon will deal, according to a multiplier. 0.1 is the default
-	# "WhitelistFilename": adds extra torpedo filenames that, if matched exactly (case-sensitive), will guarantee they are included and will ignore blacklists (this field is here if somebody wants to add a torpedo with that ProjectileName torpedo properties, but under a different name).
-	# "BlacklistName": includes a list of projectile on-screen names that cannot apply to this. This one will be triggered if the torpedo names match or have that string of words, case-insenstitive.
-	# "BlacklistFilename": includes a list of projectile filenames that if they match cannot be applied to this. This one does need to match the words exactly and is case-sensitive.
+	oriMultifact = 4.0 # Default "how-many-times-the-shield-regen-facet" are required for Ori ships to use their special shield thingy 
+
+	# Used for storing file entries
 
 	vulnerableProjToSGShields = {}
-
-	# A Dict of beams that normally cannot deal damage through shields to STBC shields, but which could deal at least some guaranteed bleedthrough to SG shields. I currently do not know of any in particular... hm, maybe lasers, but that would go into too many what-ifs, so no, I don't know of any and on the original install from this mod this dict field will be empty. However, I'm leaving this field open for expansion.
-	# "BeamName": {"GuaranteedBleedthrough": 0.1, "WhitelistHardname": ["Quantum", "Quantum Torpedo"], "BlacklistName": ["not a quantum", "not quantum", "no quantum", "anti-quantum", "antiquantum", "quantumania"]}
-	# "BeamName" refers to a certain App phaser bank property (that is what they are called mod-wise, to the player they could have any varied names: beams, lasers, phasers, particle beams, etc.) name that the hardpoint's name match or have a common string with, case-insenstitive.. #### TO-DO Make it so the fields and name go through a lowercase function for compatibility ####
-	# "GuaranteedBleedthrough" indicates ther relative dmg through a shield the weapon will deal, according to a multiplier. 0.1 is the default
-	# "WhitelistHardname": adds extra hardpoint names that, if matched exactly (case-sensitive), will guarantee they are included and will ignore blacklists (this field is here if somebody wants to add a phaser bank property with that BeamName properties, but under a different name).
-	# "BlacklistName": includes a list of hardpoint property names that cannot apply to this. This one will be triggered if the hardpoint names match or have that string of words, case-insenstitive.
-
 	vulnerableBeamsToSGShields = {}
 
 	# "similarTechsNames" is a dict of technologies which can react to SGShields shield collision simulation. While I cannot immedaitely think of one in particular, this allwos expansion without editing this file
 	# Structure would go like this, where "techName" is the name of the technology, and "multiplier" is a numeric value that increases or decreases the damage SGShields would receive
 	# similarTechsNames = {"techName": multiplier}
 	similarTechsNames = {}
-
-	# For regular shields - as I said on 
-	globalRegularShieldReduction = 0.5 # TO-DO ADD A WAY TO IMPORT THIS
+	
+	# For regular shields against collisions
+	globalRegularShieldReduction = 0.5
 
 	# based on the FedAblativeArmour.py script, a fragment probably imported from ATP Functions by Apollo
 	def NiPoint3ToTGPoint3(p, factor=1.0):
@@ -103,7 +200,6 @@ try:
 
 	def TGPoint3ToNiPoint3(p, factor=1.0):
 		kPoint = App.NiPoint3(p.x * factor, p.y * factor, p.z * factor)
-		#TO-DO SEE HOW TO CREATE THESE
 		return kPoint
 
 	def findShipInstance(pShip):
@@ -165,6 +261,7 @@ try:
 		kTargetLocation = pTarget.GetWorldLocation()
 
 		kTargetLocation.Subtract(kTorpLocation)
+
 		kFwd = kTargetLocation
 		kFwd.Unitize()
 		kPerp = kFwd.Perpendicular()
@@ -231,6 +328,7 @@ try:
 
 		dotPrefix = string.join(string.split(dir, "\\")[1:], ".") + "."
 
+		filesChecked = {} 
 		for plugin in list:
 			s = string.split(plugin, ".")
 			if len(s) <= 1:
@@ -248,7 +346,8 @@ try:
 					continue
 
 				try:
-					if not variableNames.has_key(fileName):
+					if not filesChecked.has_key(fileName):
+						filesChecked[fileName] = 1
 						myGoodPlugin = dotPrefix + fileName
 
 						try:
@@ -265,9 +364,9 @@ try:
 								if not similarTechsNames.has_key(item):
 									similarTechsNames[item] = banana.similarTechNames[item]
 					
-						if hasattr(banana, "ProjectileName") and banana.ProjectileName() != "": # These will not be affected at all by the hull or shield effects, period
+						if hasattr(banana, "ProjectileName") and banana.ProjectileName != "": # These will not be affected at all by the hull or shield effects, period
 
-							projName = banana.ProjectileName()
+							projName = string.lower(banana.ProjectileName)
 							if not vulnerableProjToSGShields.has_key(projName):
 								vulnerableProjToSGShields[projName] = {}
 
@@ -286,21 +385,33 @@ try:
 							if not vulnerableProjToSGShields[projName].has_key("BlacklistFilename"):
 								vulnerableProjToSGShields[projName]["BlacklistFilename"] = []
 
+							if not vulnerableProjToSGShields[projName].has_key("RacesImmune"):
+								vulnerableProjToSGShields[projName]["RacesImmune"] = []
+
 							if hasattr(banana, "ProjectileWhitelistFilename"):
 								for item in banana.ProjectileWhitelistFilename:
-									vulnerableProjToSGShields[projName]["WhitelistFilename"].append(item)
-
-							if hasattr(banana, "ProjectileBlacklistName"):
-								for item in banana.ProjectileBlacklistName:
-									vulnerableProjToSGShields[projName]["BlacklistName"].append(item)
+									if not item in vulnerableProjToSGShields[projName]["WhitelistFilename"]:
+										vulnerableProjToSGShields[projName]["WhitelistFilename"].append(item)
 
 							if hasattr(banana, "ProjectileBlacklistFilename"):
 								for item in banana.ProjectileBlacklistFilename:
-									vulnerableProjToSGShields[projName]["BlacklistFilename"].append(item)
+									if not item in vulnerableProjToSGShields[projName]["BlacklistFilename"]:
+										vulnerableProjToSGShields[projName]["BlacklistFilename"].append(item)
 
-						if hasattr(banana, "BeamName") and banana.BeamName() != "": # These will not be affected at all by the hull or shield effects, period
+							if hasattr(banana, "ProjectileBlacklistName"):
+								for item in banana.ProjectileBlacklistName:
+									itemlower = string.lower(item)
+									if not itemlower in vulnerableProjToSGShields[projName]["BlacklistName"]:
+										vulnerableProjToSGShields[projName]["BlacklistName"].append(itemlower)
 
-							projName = banana.BeamName()
+							if hasattr(banana, "ProjRacesImmune"):
+								for item in banana.ProjRacesImmune:
+									if not item in vulnerableProjToSGShields[projName]["RacesImmune"]:
+										vulnerableProjToSGShields[projName]["RacesImmune"].append(item)
+
+						if hasattr(banana, "BeamName") and banana.BeamName != "": # These will not be affected at all by the hull or shield effects, period
+
+							projName = string.lower(banana.BeamName)
 							if not vulnerableBeamsToSGShields.has_key(projName):
 								vulnerableBeamsToSGShields[projName] = {}
 
@@ -316,13 +427,24 @@ try:
 							if not vulnerableBeamsToSGShields[projName].has_key("BlacklistName"):
 								vulnerableBeamsToSGShields[projName]["BlacklistName"] = []
 
-							if hasattr(banana, "WhitelistHardname"):
+							if not vulnerableBeamsToSGShields[projName].has_key("RacesImmune"):
+								vulnerableBeamsToSGShields[projName]["RacesImmune"] = []
+
+							if hasattr(banana, "BeamWhitelistHardname"):
 								for item in banana.BeamWhitelistHardname:
-									vulnerableBeamsToSGShields[projName]["WhitelistHardname"].append(item)
+									if not item in vulnerableBeamsToSGShields[projName]["WhitelistHardname"]:
+										vulnerableBeamsToSGShields[projName]["WhitelistHardname"].append(item)
 
 							if hasattr(banana, "BeamBlacklistName"):
 								for item in banana.BeamBlacklistName:
-									vulnerableBeamsToSGShields[projName]["BlacklistName"].append(item)
+									itemlower = string.lower(item)
+									if not itemlower in vulnerableBeamsToSGShields[projName]["BlacklistName"]:
+										vulnerableBeamsToSGShields[projName]["BlacklistName"].append(itemlower)
+
+							if hasattr(banana, "BeamRacesImmune"):
+								for item in banana.BeamRacesImmune:
+									if not item in vulnerableBeamsToSGShields[projName]["RacesImmune"]:
+										vulnerableBeamsToSGShields[projName]["RacesImmune"].append(item)
 
 						if fileName == "BasicSGShieldsConfiguration":
 							if hasattr(banana, "defaultPassThroughDmgMult"):
@@ -344,15 +466,11 @@ try:
 							if hasattr(banana, "globalRegularShieldReduction"):
 								global globalRegularShieldReduction
 								globalRegularShieldReduction = banana.globalRegularShieldReduction
-						# TO-DO ADD THE CONFIG FILES!!!
-						print "SGShields reviewing of this file is a success"
 				except:
 					print "someone attempted to add more than they should to the SG Shields script"
 					traceback.print_exc()
 
 	LoadExtraLimitedPlugins()
-	print vulnerableProjToSGShields
-	print vulnerableBeamsToSGShields
 
 	# called when a ship changes Power of one of its subsystems
 	# cause this is possibly also an alert event
@@ -405,7 +523,7 @@ try:
 				else:
 					ActivateSGShieldCollisions(pShip, pInstance, instanceDict, 0)
 
-	class weDidThisPair: # This is not a lock, not by far - in-game many things are taken sequentially, with one interlacing the other, including a collision call, where pShipA-pShipB collision message are followed by but hopefully this will prevent some issues # TO-DO ONLY ADD THIS LOCK IF BOTH SIDES HAPPEN TO HAVE SG SHIELDS OR SIMILAR, AND REMOVE THE LOCK BEFORE THAT
+	class weDidThisPair: # This is not a lock, not by far - in-game many things are taken sequentially, with one interlacing the other, including a collision call, where pShipA-pShipB collision message are followed by but hopefully this will prevent some issues
 		def __init__(self):
 			debug(__name__ + ", __init__")
 			self.shipPairs = {}
@@ -517,9 +635,8 @@ try:
 		def __init__(self, *args):
 
 			self.this = apply(Appc.new_TGEvent,args)
-			#self.thisown = 1 # TO-DO Maybe not if this does not work?
-			#self.this = this
-			self.firingObject = None # TO-DO ADD MISSING FIELDS
+			#self.thisown = 1 # Uncomment if this does not work
+			self.firingObject = None
 			self.targetObject = None
 			self.objectHitPoint = None
 			self.objectHitNormal = None
@@ -638,9 +755,9 @@ try:
 		def GetFiringPlayerID(self, *args):
 			return self.theFiringPlayerID
 
-		def __del__(self, Appc=Appc): # TO-DO move to the end
+		def __del__(self, Appc=Appc):
 			if self.thisown == 1 :
-				self.firingObject = None # TO-DO ADD MISSING FIELDS
+				self.firingObject = None
 				self.targetObject = None
 				self.objectHitPoint = None
 				self.objectHitNormal = None
@@ -725,7 +842,7 @@ try:
 				pEvent1.SetFiringObject(pOtherShip)
 				pEvent1.SetTargetObject(pShip)
 
-				pEvent1.SetObjectHitPoint(kPointpShipPerNi) # TO-DO CHECK THESE 
+				pEvent1.SetObjectHitPoint(kPointpShipPerNi)
 				pShipPositionVI = TGPoint3ToNiPoint3(pShipPositionV, -1.0)
 				pEvent1.SetObjectHitNormal(pShipPositionVI) 
 				pEvent1.SetWorldHitPoint(kPointW)
@@ -759,7 +876,7 @@ try:
 	def CollisionHappened(pObject, pEvent): # POINT 2. Future TO-DO maybe see what triggers a shield collision event?
 		# On an ideal world we would enable and disable collisions damage. However, for some reason, Disabling collision damage permanently leaves it disabled, even if the "pShip.IsCollisionDamageDisabled()" says it is enabled
 
-		#print pEvent.GetDamage() # Collision events funnily enough do not have dmg... at least if they don't have damage collisions on TO-DO check this without dmg col disabled later
+		#print pEvent.GetDamage() # Collision events funnily enough do not have dmg... at least if they don't have damage collisions on
 
 		pInstanceMeDict = None
 		pInstanceOtherDict = None
@@ -855,7 +972,7 @@ try:
 		multiplierMyShieldFactor = 1.0
 		if pInstanceOther and pInstanceOtherDict:
 			for techName in similarTechsNames.keys():
-				if pInstanceOtherDict.has_key(techName): # TO-DO ADD A WAY TO IMPORT THESE
+				if pInstanceOtherDict.has_key(techName):
 					otherHasSimilarShields = otherHasSimilarShields + 1
 					multiplierMyShieldFactor = multiplierMyShieldFactor * similarTechsNames[techName]
 
@@ -863,7 +980,7 @@ try:
 		multiplierOtherShieldFactor = 1.0
 		if pInstanceMe and pInstanceMeDict:
 			for techName in similarTechsNames.keys():
-				if pInstanceMeDict.has_key(techName): # TO-DO ADD A WAY TO IMPORT THESE
+				if pInstanceMeDict.has_key(techName):
 					meHasSimilarShields = meHasSimilarShields + 1
 					multiplierOtherShieldFactor = multiplierOtherShieldFactor * similarTechsNames[techName]
 
@@ -871,7 +988,7 @@ try:
 		#if IhaveSGShields > 0 and (OtherHasSGShields > 0 or otherHasSimilarShields > 0):
 		#	saruman = weDidThisVerify.EnterPair(pTheOther.GetObjID(), pObject.GetObjID()) # This means we were here first, so gandalf can control those who arrive late
 		#	#if saruman <= 0:
-		#	#	print "the hit was already done for one side but the other did not take it or clean it in time" # TO-DO if this happens the hit was already done for one side but the other did not take it
+		#	#	print "the hit was already done for one side but the other did not take it or clean it in time"
 			
 		global shieldPiercedThreshold, globalRegularShieldReduction
 
@@ -908,7 +1025,7 @@ try:
 			pOtherShipPositionV.Subtract(kPoint) # For a torpedo that goes from OUR ship to THEIRS
 
 			kPointpShipPerNi = App.TGModelUtils_WorldToLocalPoint(pShipNode, kPointW)
-			kPointpOtherShipPerNi = App.TGModelUtils_WorldToLocalPoint(pOtherShipNode, kPointW) # TO-DO IF YOU MOVE THIS ONE ABOVE THE OTHER ONE, WILL DUMMY DAMAGE STILL HAPPEN?
+			kPointpOtherShipPerNi = App.TGModelUtils_WorldToLocalPoint(pOtherShipNode, kPointW)
 
 			kPointpShipPer = NiPoint3ToTGPoint3(kPointpShipPerNi, 0.01)
 			kPointpOtherShipPer = NiPoint3ToTGPoint3(kPointpOtherShipPerNi, 0.01)
@@ -929,15 +1046,12 @@ try:
 
 			myShieldBroken, fTorpDamageMe, fShieldDamageMe, multFactorMe, negateRegenerationMe = damageCalc(fTorpDamage, fShieldDamage, myShieldBroken, othersShieldBroken, myHull, otherHull, myShieldDirNearest, othersShieldDirNearest, pOtherShields, pMeShields, IhaveSGShields, OtherHasSGShields, pinstanceMeShieldRace, pinstanceOtherShieldRace, dummyDamage, massToMassRelation, otherHasSimilarShields, multiplierMyShieldFactor)
 
-			othersShieldBroken2 = 0
-			if OtherHasSGShields > 0 or otherHasSimilarShields > 0:
-				othersShieldBroken, fTorpDamageYou, fShieldDamageYou, multFactorYou, negateRegenerationYou = damageCalc(fTorpDamage2, fShieldDamage2, othersShieldBroken, myShieldBroken, otherHull, myHull, othersShieldDirNearest, myShieldDirNearest, pMeShields, pOtherShields, OtherHasSGShields, IhaveSGShields, pinstanceOtherShieldRace, pinstanceMeShieldRace, dummyDamage, (1.0/massToMassRelation), meHasSimilarShields, multiplierOtherShieldFactor)
+			#othersShieldBroken2 = 0
+			#if OtherHasSGShields > 0 or otherHasSimilarShields > 0: # Hm, maybe it would be nice to make this happen regardless? 
+			othersShieldBroken, fTorpDamageYou, fShieldDamageYou, multFactorYou, negateRegenerationYou = damageCalc(fTorpDamage2, fShieldDamage2, othersShieldBroken, myShieldBroken, otherHull, myHull, othersShieldDirNearest, myShieldDirNearest, pMeShields, pOtherShields, OtherHasSGShields, IhaveSGShields, pinstanceOtherShieldRace, pinstanceMeShieldRace, dummyDamage, (1.0/massToMassRelation), meHasSimilarShields, multiplierOtherShieldFactor)
 
-				othersShieldBroken2, othersShieldDirNearest = shieldRecalculationAndBroken(pOtherShip, kPointpOtherShipPer, -fShieldDamageYou, shieldPiercedThreshold, 0, negateRegenerationYou, othersShieldDirNearest, -fShieldDamageYou, multFactorYou)
-
+			othersShieldBroken2, othersShieldDirNearest = shieldRecalculationAndBroken(pOtherShip, kPointpOtherShipPer, -fShieldDamageYou, shieldPiercedThreshold, 0, negateRegenerationYou, othersShieldDirNearest, -fShieldDamageYou, multFactorYou)
 			myShieldBroken2, myShieldDirNearest = shieldRecalculationAndBroken(pShip, kPointpShipPer, -fShieldDamageMe, shieldPiercedThreshold, 0, negateRegenerationMe, myShieldDirNearest, fShieldDamageMe, multFactorMe)
-
-			# TO-DO for the thing below it may be better to just... damage the actual subsystems manually (check Borg adaptation!), to avoid possible torpedo-related errors. and then fake a Torpedo Event and broadcast it! Oh, also, fire just one torpedo if the vessel is about to die or something, to punch a hole
 
 			mod = "Tactical.Projectiles.ExtraCollisionDamageDummy"
 			if (myShieldBroken or myShieldBroken2) and not (pShip.IsDead() or pShip.IsDying()):
@@ -971,11 +1085,11 @@ try:
 
 		pShip.UpdateNodeOnly()
 
-	def ShieldCollisionHappened(pObject, pEvent):
-		print "Ok a shield collision happened"
+	#def ShieldCollisionHappened(pObject, pEvent):
+	#	print "Ok a shield collision happened"
 
 	# POINT 12
-	# # Future TO-DO: if you finally find where the App.ET_PLANET_ATMOSPHERE_COLLISION is sent to and in what channels it is sent, and is less bothersome than having to add a lsitener to the planets, please, replace ProcessWrapper and CollisionAtmosAlertCheck for a listener on the ship or tech and def AtmosCollisionHappened
+	# A Future TO-DO: if you finally find where the App.ET_PLANET_ATMOSPHERE_COLLISION is sent to and in what channels it is sent, and is less bothersome than having to add a listener to the planets, please, replace ProcessWrapper and CollisionAtmosAlertCheck for a listener on the ship or tech and def AtmosCollisionHappened
 	#
 	# ProcessWrapper from HelmMenuHandlers
 	#
@@ -1302,7 +1416,6 @@ try:
 		return shieldHitBroken, shieldDirNearest
 				
 	class SGShieldsDef(FoundationTech.TechDef):
-		#TO-DO MAYBE ADD A COLLISION LISTENER? 
 		#ET_ORBIT_PLANET ... does it consider it too when you get too close but don't perform an orbit planet?
 		#def __init__(self, name):
 		#	debug(__name__ + ", Initiated AutomatedDestroyedSystemRepair counter")
@@ -1318,22 +1431,20 @@ try:
 		#	App.g_kEventManager.RemoveBroadcastHandler(App.ET_OBJECT_COLLISION, self.pEventHandler, "Col")
 		#	App.g_kEventManager.AddBroadcastPythonMethodHandler(App.ET_OBJECT_COLLISION, self.pEventHandler, "Col")
 
-		def Col(self, pEvent):
-			print "ET_OBJECT_COLLISION col event caught by broadcast"
+		# Future TO-DO if you can catch App.ET_SHIELD_COLLISION, it may be better for collisions being more like SG ones
+		#def OneCol(self, pEvent):
+		#	print "shield col event caught by broadcast"
+		#	ShieldCollisionHappened(self, pEvent)
 
-		def OneCol(self, pEvent):
-			print "shield col event caught by broadcast"
-			ShieldCollisionHappened(self, pEvent)
+		#def AtmosCol(self, pEvent):
+		#	print "atmos col event caught by broadcast"
+		#	AtmosCollisionHappened(self, pEvent)
 
-		def AtmosCol(self, pEvent):
-			print "atmos col event caught by broadcast"
-			AtmosCollisionHappened(self, pEvent)
+		#def PCol(self, pEvent):
+		#	print "planet col event caught by broadcast"
+		#	PCollisionHappened(self, pEvent)
 
-		def PCol(self, pEvent):
-			print "planet col event caught by broadcast"
-			PCollisionHappened(self, pEvent)
-
-		def AttachShip(self, pShip, pInstance):	# TO-DO ALSO ADD A DETACH TO REMOVE THE SG shields Active field and the CollisionCheckProcess for the vessel
+		def AttachShip(self, pShip, pInstance):
 			debug(__name__ + ", AttachShip")
 
 			raceShieldTech = None
@@ -1343,7 +1454,6 @@ try:
 				if instanceDict["SG Shields"].has_key("RaceShieldTech"):
 					raceShieldTech = instanceDict["SG Shields"]["RaceShieldTech"]
 
-			#TO-DO if ship has Anubis Shield and is labeled as superweapon, add an atmospheric listener of sorts so if it's at 20 units from the sun's surface, it nerfs shields to 40%
 			if raceShieldTech == "Anubis Go'auld":
 				if instanceDict["SG Shields"].has_key("Superweapon") and instanceDict["SG Shields"]["Superweapon"] == 1:
 				
@@ -1423,7 +1533,7 @@ try:
 		def OnDefense(self, pShip, pInstance, oYield, pEvent, pTorp=None):
 			debug(__name__ + ", OnDefense")
 
-			global shieldPiercedThreshold, shieldGoodThreshold, defaultPassThroughDmgMult, vulnerableProjToSGShields, vulnerableBeamsToSGShields
+			global shieldPiercedThreshold, shieldGoodThreshold, defaultPassThroughDmgMult, defaultDummyNothing, vulnerableProjToSGShields, vulnerableBeamsToSGShields, torpsNetTypeThatCanPhase
 
 			instanceDict = pInstance.__dict__
 			fRadius, fDamage, kPoint = self.EventInformation(pEvent)
@@ -1432,6 +1542,13 @@ try:
 			raceHullTech = None
 			negateRegeneration = 0
 			multFactor = 1.0
+
+			forcedBleedthrough = 0
+			forcedBleedthroughMultiplier = 0
+
+			attackerID = App.NULL_ID
+
+			pVec = None
 
 			# Extra shield config things
 			if instanceDict.has_key("SG Shields"):
@@ -1443,11 +1560,107 @@ try:
 				else:
 					raceHullTech = raceShieldTech
 
-			if raceShieldTech == "Asgard" or raceShieldTech == "Ori": # POINT 10. TO-DO Maybe check if we need to verify if the hull was hit, to avoid some shield facet issues
-				negateRegeneration = -1
+			if pTorp:
+				attackerID = pTorp.GetParentID()
+				mod = pTorp.GetModuleName()
+				pVec = pTorp.GetVelocityTG()
+				pVec.Scale(0.001)
+
+				if mod:
+					weaponFileName = string.split(mod, ".")[-1]
+					weaponName = __import__(mod).GetName()
+					weaponname = string.lower(weaponName)
+					
+					for key in vulnerableProjToSGShields.keys():
+							racesImmune = vulnerableProjToSGShields[key]["RacesImmune"]
+							if raceShieldTech in racesImmune:
+								continue
+							foundThis = 0
+							isinWhitelistFilename =  0
+							if weaponFileName in vulnerableProjToSGShields[key]["WhitelistFilename"]:
+								isinWhitelistFilename =  1
+							isinBlacklistFilename = 0
+							isinBlacklistname = 0
+							if not isinWhitelistFilename:
+								foundThis = string.find(weaponname, key) + 1
+								isinBlacklistFilename = (weaponFileName in vulnerableProjToSGShields[key]["BlacklistFilename"])
+
+								if not isinBlacklistFilename:
+									for item in vulnerableProjToSGShields[key]["BlacklistName"]:
+										isinBlacklistname = string.find(weaponname, item) + 1
+										if isinBlacklistname:
+											break
+
+							if isinWhitelistFilename > 0 or (foundThis > 0 and not (isinBlacklistFilename > 0 or isinBlacklistname > 0)):
+								if not vulnerableProjToSGShields[key].has_key("GuaranteedBleedthrough") or vulnerableProjToSGShields[key]["GuaranteedBleedthrough"] == defaultDummyNothing:
+									vulnerableProjToSGShields[key]["GuaranteedBleedthrough"] = defaultPassThroughDmgMult
+								if forcedBleedthrough <= 0:
+									forcedBleedthrough = 1
+									forcedBleedthroughMultiplier = vulnerableProjToSGShields[key]["GuaranteedBleedthrough"]
+								else:
+									forcedBleedthroughMultiplier = (forcedBleedthroughMultiplier * 2.0 + vulnerableProjToSGShields[key]["GuaranteedBleedthrough"]) / 2.0
+									forcedBleedthrough = forcedBleedthrough + 1
+
+			else:
+				attackerID = pEvent.GetFiringObject().GetObjID()
+				pWeaponFired = App.Weapon_Cast(pEvent.GetSource())
+				if pWeaponFired:
+
+					pVec = NiPoint3ToTGPoint3(pEvent.GetWorldHitPoint())
+
+					pWpnPos = NiPoint3ToTGPoint3(pWeaponFired.GetWorldLocation())
+					pVec.Subtract(pWpnPos)
+					pVec.Unitize()
+					pVec.Scale(0.001)
+
+					weaponName = pWeaponFired.GetName()
+					weaponname = string.lower(weaponName)
+					
+					for key in vulnerableBeamsToSGShields.keys():
+							racesImmune = vulnerableBeamsToSGShields[key]["RacesImmune"]
+							if raceShieldTech in racesImmune:
+								continue
+							isinWhitelistHardname = (weaponName in vulnerableBeamsToSGShields[key]["WhitelistHardname"])
+							foundThis = 0
+							isinBeamBlacklistName = 0
+							if not isinWhitelistHardname:
+								foundThis = string.find(weaponname, key) + 1
+
+								for item in vulnerableBeamsToSGShields[key]["BlacklistName"]:
+									isinBeamBlacklistName = string.find(weaponname, item) + 1
+									if isinBeamBlacklistName:
+										break
+
+							if isinWhitelistHardname > 0 or (foundThis > 0 and not isinBeamBlacklistName > 0):
+								if not vulnerableBeamsToSGShields[key].has_key("GuaranteedBleedthrough") or vulnerableBeamsToSGShields[key]["GuaranteedBleedthrough"] == defaultDummyNothing:
+									vulnerableBeamsToSGShields[key]["GuaranteedBleedthrough"] = defaultPassThroughDmgMult
+								if forcedBleedthrough <= 0:
+									forcedBleedthrough = 1
+									forcedBleedthroughMultiplier = vulnerableBeamsToSGShields[key]["GuaranteedBleedthrough"]
+								else:
+									forcedBleedthroughMultiplier = (forcedBleedthroughMultiplier * 2.0 + vulnerableBeamsToSGShields[key]["GuaranteedBleedthrough"]) / 2.0
+									forcedBleedthrough = forcedBleedthrough + 1
+
+			if raceShieldTech == "Asgard" or raceShieldTech == "Ori": # POINT 10. Maybe check if we need to verify if the hull was hit, to avoid some shield facets regenerating when they shouldn't.
+				negateRegeneration = -1.0
+
+				specialmultiplier = 1.0
+				if instanceDict["SG Shields"].has_key("FacetFactor"):
+					facetFactor = instanceDict["SG Shields"]["FacetFactor"]
+					if facetFactor != 0:
+						specialmultiplier = specialmultiplier * instanceDict["SG Shields"]["FacetFactor"]
+						negateRegeneration = negateRegeneration / instanceDict["SG Shields"]["FacetFactor"]
+					else: # So a ship without that?
+						negateRegeneration = 0
+
 				if raceShieldTech == "Ori": # POINT 11 - this will make the Ori vessels impervious to low-grade shots, no more Death gliders lowering their shields willy-nilly
-					negateRegeneration = negateRegeneration / 2.0 # TO-DO Make this customizable via basicconfiguration, this needs to be half of the value from the one below, or a new value
-					multFactor = multFactor * 4 # TO-DO Make this customizable via basicconfiguration
+					global oriMultifact
+					negateRegeneration = negateRegeneration / (oriMultifact * specialmultiplier * 0.5)
+					multFactor = multFactor * oriMultifact * specialmultiplier
+				else:
+					multFactor = multFactor * specialmultiplier
+
+
 				if oYield and hasattr(oYield, "IsSGPlasmaWeaponYield") and oYield.IsSGPlasmaWeaponYield() != 0: # Some support to POINT 10 when it comes to SG Plasma weapons
 					if pTorp:
 						mod = pTorp.GetModuleName()
@@ -1459,20 +1672,31 @@ try:
 			shieldsAreNotGood, nearestPoint = shieldInGoodCondition(pShip, kPoint, shieldGoodThreshold, 0, nearestPoint)
 
 			if pEvent.IsHullHit():
-				# POINT 8
-				# While in theory this is handled by the "No damage through shields" option on DS9FX configuration we want to also check it manually because:
+				# POINT 8: While in theory this is handled by the "No damage through shields" option on DS9FX configuration we want to also check it manually because:
 				# 1. - That is an option which can be turned on/off. Following POINT 8, we want to ensure that this no-dmg-through-shields behaviour happens regardless of the DS9FX option being active or inactive.
 				# 2. - Sometimes the "No damage through shields", for one reason or another, does not properly cover when a ton of incoming fire is hitting a ship, or does not cover when a vessel presents a weird geometry. In STBC, some vessels' models (including SG) present certain geometry shapes that ensure there's bleedthrough even when shields are completely full, so we need to fix that ourselves!
-				if not pTorp or not (pTorp.GetNetType() in torpsNetTypeThatCanPhase):
-					# then we do the heal if shields are good TO-DO
-					#print "valid type that cannot bypass shields"
-					if not shieldsAreNotGood:
+				if not pTorp or not (pTorp.GetNetType() == torpsNetTypeThatCanPhase):
+					# then we do the heal if shields are good
+					if not shieldsAreNotGood and raceShieldTech != "Wraith": 
 						#print "shields are good enough to block the damage, reverting it"
 						theHull = pShip.GetHull()
 						hullName = None
 						if theHull:
 							hullName = theHull.GetName()
 						hullCounted = 0
+						ds9checks = 0
+
+						try:
+							reload (DS9FXSavedConfig)
+
+							if DS9FXSavedConfig.NoDamageThroughShields == 1:
+								ds9checks = 1
+						except:
+							print "Error while trying to import DS9FXSavedConfig"
+							ds9checks = 0
+							traceback.print_exc()
+
+						# The method below does not cover the children, funnily enough. We would need to cover subsystems personally. However, for SG shields this is fine, after all while they have taken no hull damage, we have still seen cases where with shields near to max, the Asgard Weapons or the power conduits linked to them suffered an overload and thus got indirectly damaged from the hit (POINT 8). 
 						kIterator = pShip.StartGetSubsystemMatch(App.CT_SHIP_SUBSYSTEM)
 						while (1):
 							pSys = pShip.GetNextSubsystemMatch(kIterator)
@@ -1481,8 +1705,7 @@ try:
 
 							#print pSys.GetName()
 
-							# The method above does not cover the children, funnily enough. We need to cover subsystems personally
-							# However, for SG shields this is fine, after all while they have taken no hull damage, we have still seen cases where with shields near to max, the Asgard Weapons or the power conduits linked to them suffered damage from the hit causing an overload (POINT 8). 
+
 							# But if you want for the shields to cover everything, just expand and uncomment the section below
 							#for i in range(pSys.GetNumChildSubsystems()):
 							#	pChild = pSys.GetChildSubsystem(i)
@@ -1490,7 +1713,7 @@ try:
 							iCon = pSys.GetCondition()
 							iMax = pSys.GetMaxCondition()
 
-							if iCon <= 0.0 or iCon >= iMax or not pSys.IsTargetable(): # TO-DO remove the iCon <= 0.0 if this does not list destroyed subsystems
+							if iCon <= 0.0 or iCon >= iMax or not pSys.IsTargetable():
 								continue
 
 							pSysPos = pSys.GetPosition()
@@ -1502,6 +1725,10 @@ try:
 							if vDistance.Length() > (pSys.GetRadius() + fRadius):
 								continue
 
+							if ds9checks == 1 and ((pTorp != None and (iMax - iCon) < (fDamage - 0.01)) or ((vDistance.Length() / pShip.GetRadius()) > (pSys.GetRadius() + fRadius))):
+								# "DS9FX is already handling this part"
+								continue
+
 							iNewCon = iCon + fDamage
 
 							if iNewCon > iMax:
@@ -1511,8 +1738,6 @@ try:
 			
 							if pSys.GetName() == hullName:
 								hullNotCounted = hullNotCounted + 1
-
-	
 
 						pShip.EndGetSubsystemMatch(kIterator)
 
@@ -1527,22 +1752,32 @@ try:
 								iNewCon = iMax
 
 							theHull.SetCondition(iNewCon)
-
-							
-				else:
-					print "TO-DO 1"
-				# TO-DO CERTAIN SG SHIELD ARMOURS MAY DO SOMETHING, IDK
-				
+		
+				# Certain SG Armours may do something if the hull is hit. However for now this is more than enough and the extra armor-related events could be covered in another technology.
 
 			else:
-				# First check, special Asgard or
 				#First check, those weapons that can pass-through
-				print "TO-DO 2"
+				if forcedBleedthrough > 0 and raceShieldTech != "Wraith":
+					global SlowDownRatio
+					mod = "Tactical.Projectiles.ExtraPhasedDamageDummyQuantum"
+					launchSpeed = __import__(mod).GetLaunchSpeed()
+					considerspeeddebuff = launchSpeed/(1.0 * pShip.GetRadius())
 
-			pShields = pShip.GetShields()
-
-			if pShields:
-				print "TO-DO 3"
+					myDamage = fDamage * forcedBleedthroughMultiplier
+					myRadius = 0.001
+					if pTorp:
+						myRadius = pTorp.GetDamageRadiusFactor()
+					else:
+						myRadius = fRadius * 1.0 # Because damage radius for events is super-tiny unless they collided
+						
+					shipNeeded = None
+					theHitPoint = NiPoint3ToTGPoint3(pEvent.GetWorldHitPoint())
+					if considerspeeddebuff <= SlowDownRatio:
+						shipNeeded = pShip
+					if pTorp or myDamage > 0.1: # If a phaser or torp deals less than certain damage, don't bother - this is both a strategy to produce less torps, and a way to avoid "floaty ghost torps"
+						pTempTorp = FireTorpFromPointWithVectorAndNetType(theHitPoint, pVec, mod, pShip.GetObjID(), attackerID, launchSpeed, torpsNetTypeThatCanPhase, myDamage, myRadius, 1, shipNeeded)
+						pTempTorp.SetLifetime(15.0)
+						pTempTorp.UpdateNodeOnly() 
 
 			if oYield and hasattr(oYield, "IsPhasedPolaronYield") and oYield.IsPhasedPolaronYield() != 0 and pInstance and pInstance.__dict__.has_key('SG Shields'): # POINT 9.
 				return 1
@@ -1578,5 +1813,5 @@ try:
 	# print 'SG Shields loaded'
 
 except:
-	print "FoundationTech, or the FTB mod, or both are not installed, \nTrasphasic Torpedoes are there but NOT enabled or present in your current BC installation"
+	print "FoundationTech, or the FTB mod, or both are not installed, \nSG Shields are there but NOT enabled in your current BC installation"
 	traceback.print_exc()

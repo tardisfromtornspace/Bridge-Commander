@@ -57,7 +57,7 @@ def Create(pTorp):
 	return(0)
 
 def GetLaunchSpeed():
-	return(3000.0)
+	return(300.0)
 
 def GetLaunchSound():
 	return("")
@@ -69,10 +69,10 @@ def GetName():
 	return("Jumpspace Tunnel")
 
 def GetDamage():
-	return 0.0001
+	return 1.0
 
 def GetGuidanceLifetime():
 	return 100.0
 
 def GetMaxAngularAccel():
-	return 9999.7
+	return 999.7

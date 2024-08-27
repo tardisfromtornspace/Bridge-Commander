@@ -7,10 +7,9 @@ This mod attempts to fix some Stargate pack balance inconsistencies by adding ap
 * SG Shields: at the moment, this tech is used to know what ships use Stargate shielding/protection and which type (excluding the Atlantis and AncientCity, already covered in https://www.gamefront.com/games/bridge-commander/file/canonical-alteran-technologies)
 ** This tech also works as a marker to indicate what techs it can protect itself from better or worse, from common SG shield characteristics, to technological differences.
 ** Despite the name, it is also used to storage some hull types, for tracing. This is because not all hulls are made equal, and some materials on the hulls may make them more or less susceptible to certain types of damage than others.
-** Now all SG Shields have lessened hull bleedthrough up to a bit above 40% shields (if the vessel has shields, that is).
-** Now all vessels with SG shields have collision damage disabled, and simulated by a script that simulates shield drain and collisions. That way you can ram a regular KM ambassador and suffer little to no damage.
-*** As a byproduct of this buff, all Stargate vessel's mass on this mod have been tweaked so the shield suffers from more or less strain from a collision impact. For the most part, the masses have been noticeably buffed.
-** Asgard shields will not be drained from shots that are lesser than their shield facet regeneration, unless additional effects are added.
+** Now all SG Shields have lessened hull bleedthrough up to a bit above 40% shields (if the vessel has shields and is not Wraith, that is).
+** Now all vessels with SG shields have collision damage disabled, and simulated by a script that simulates shield drain and collisions, according to shield strength, ship's mass and ship radius. That way you can ram a regular KM Ambassador and suffer little to no damage.
+** Asgard shields will not be drained from shots that are lesser than their shield facet regeneration and will regenerate as if the weak shot was not there on the first place, unless additional effects are added.
 ** Ori shields will not be drained from shots lesser than a few times their facet shield regeneration - in fact if the shot is too weak they will absorb the energy to recover and strengthen themselves.
 ** Anubis's Superweapon's shields are temporarily reduced to 40% integrity when too deep inside a planet's atmosphere.
 ** As a nicety to the player, SG Shields are automatically raised from the beginning.
@@ -31,10 +30,16 @@ This mod attempts to fix some Stargate pack balance inconsistencies by adding ap
 ** TO-DO
 * TO-DO ALSO ADD Automated Destroyed System Repair TO THE REPLICATOR VESSELS, ESPECIALLY THEIR COMMAND CARRIER AND SPIDER
 
+* As a byproduct of the shield collision buff, several Stargate vessel's masses on this mod have been tweaked so the shield suffers from more or less strain from a collision impact (or equalized, so Alkesh and Goauld Alkesh have the same mass while Alkesh Transport has that mass + the one from the pods). For the most part, the masses have been noticeably buffed.
+* Made Alkesh Transport Mvam able to reintegrate with its pods.
 * Upgraded Ha'tak speed increased slightly.
 * Buffed regular Ha'tak (Early, Variant, Refit) shields significantly.
 * Nerfed regular Ha'tak hulls (Early, Variant, Refit) and power plants a tiny bit. #### TO-DO ####
-* Added Simulated Point Defence to the Replicator Stolen Cruiser.
+* Buffed Puddle Jumper shields by 120% on each facet
+** Nerfed Puddle Jumper hull by 50%
+* Added a scripts/ship file that disabled visible damage on the SuperHive ship, thus avoiding game crashes.
+* Added Simulated Point Defence to the Replicator Stolen Cruiser so it fires beams at incoming projectiles once in a while.
+* Added Simulated Point Defence to the Ancient Warship so it fires drones at incoming projectiles once in a while, including (and mostly) other drones.
 
 #### TO-DO ----> FOR ANUBIS MOTHERSHIP, SEE IF YOU CAN DO SOMETHING LIKE THE TURRETS SCRIPT MIXED WITH TACHYONBEAM SCRIPT, BUT ONLY MOVING TWO UNCOLLIDABLE AND UNTARGETABLE BEAMS NEXT TO AN ENEMY VESSEL, TO THEN FIRE ON THE TWO CLOSEST ENEMY VESSELS TO THE OBJECTIVE ####
 

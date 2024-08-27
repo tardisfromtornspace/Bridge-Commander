@@ -240,6 +240,7 @@ def LoadExtraLimitedPlugins(dExcludePlugins=_g_dExcludeSomePlugins):
 
 	dotPrefix = string.join(string.split(dir, "\\")[1:], ".") + "."
 
+	filesChecked = {} 
 	for plugin in list:
 		s = string.split(plugin, ".")
 		if len(s) <= 1:
@@ -258,6 +259,7 @@ def LoadExtraLimitedPlugins(dExcludePlugins=_g_dExcludeSomePlugins):
 
 			try:
 				if not variableNames.has_key(fileName):
+					filesChecked[fileName] = 1
 					myGoodPlugin = dotPrefix + fileName
 
 					try:
@@ -627,7 +629,7 @@ try:
 					NewScale =  considerspeeddebuff / (1000000.0 * SlowDownRatio)
 					pVec.Scale((0.001 * NewScale))
 					#launchSpeed = launchSpeed /  (100.0 * SlowDownRatio)
-					shipeeded = pShip
+					shipNeeded = pShip
 					theHitPoint = pTorp.GetWorldLocation()
 
 				pHitPoint.Add(pVec)
