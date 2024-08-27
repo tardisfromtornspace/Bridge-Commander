@@ -50,9 +50,7 @@ def interactionShieldBehaviour(pShip, sScript, sShipScript, pInstance, pEvent, p
 		if pInstancedict["SG Shields"].has_key("RaceShieldTech"):
 			RaceShieldTech = pInstancedict["SG Shields"]["RaceShieldTech"]
 			if RaceShieldTech in IonSGVulnerableShields:
-				print "ship is in vulnerable ships", pInstancedict
-				if not (pInstancedict.has_key('SG Shields Status') and pInstancedict['SG Shields Status'] == "Replicator"):
-					print "Ok needs to pass through"	
+				if not (pInstancedict.has_key('SG Shields Status') and pInstancedict['SG Shields Status'] == "Replicator"):	
 					shouldPassThrough = 1
 			elif RaceShieldTech == "Anubis Go'auld": # Resistances	
 				if pTorp and hasattr(pTorp, "GetDamageRadiusFactor"):
