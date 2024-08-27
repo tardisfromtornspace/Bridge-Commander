@@ -607,7 +607,7 @@ try:
 				mod = pTorp.GetModuleName()
 				importedTorpInfo = __import__(mod)
 				if hasattr(importedTorpInfo, "ShieldDmgMultiplier"): # If this torp has a special global multiplier, then we use it
-					shieldDamageMultiplier = importedTorpInfo * mod.ShieldDmgMultiplier()
+					shieldDamageMultiplier = importedTorpInfo * importedTorpInfo.ShieldDmgMultiplier()
 			
 			shieldDamageMultiplier = shieldDamageMultiplier - PlasmaGenericShieldDamageMultiplier # That is, to compensate the "extra" time we added 1 damage
 	

@@ -1,4 +1,8 @@
 == Changelog ==
+1.9.4 - Borg Adaptation script 1.34
+- Fixed another issue created when randomness was equal to 0.
+1.9.3 - Borg Adaptation script 1.33
+- Fixed issue created when randomness was equal to 0.
 1.9.2 - Borg Adaptation script 1.32
 - Fixed small typo with torpedoes.
 1.9.1 - Automated Destroyed System Repair 0.51

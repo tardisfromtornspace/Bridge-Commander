@@ -872,6 +872,33 @@ try:
 				# Fourth part, finally using the pEvent for something! This is also so more armours can work with these collisions, and not only one or two.
 				pInstanceMe.DefendVSTorp(pShip, pEvent1, pTorp1)
 
+				# While this below works, it has been deactivated. Why? Well, first it does not make that much of a difference. Second, the Ori Warship from stargate pack 3.0 already has a model issue where visual damage might crash the game, so let's not add something that makes little difference
+				#if pShip.IsDead() or pShip.IsDying():
+				#	pSet = pShip.GetContainingSet()
+				#	if pSet:
+				#		if theTorpDamage < 0.1:
+				#			pTorp1.SetDamage(6000.0)
+				#		pTorp1.SetTargetOffset(myHull.GetPosition())
+				#		#pTorp1.SetHidden(1) # TO-DO UNCOMMENT
+				#		pTorp1.UpdateNodeOnly()
+				#		# If there was a target, then orient the torpedo towards it.
+				#		kTorpLocation = pTorp1.GetWorldLocation()
+				#		kTargetLocation = pShip.GetWorldLocation()
+				#		kTargetLocation.Subtract(kTorpLocation)
+				#		kFwd = kTargetLocation
+				#		kFwd.Unitize()
+				#		kPerp = kFwd.Perpendicular()
+				#		kPerp2 = App.TGPoint3()
+				#		kPerp2.SetXYZ(kPerp.x, kPerp.y, kPerp.z)
+				#		pTorp1.AlignToVectors(kFwd, kPerp2)
+				#		pTorp1.UpdateNodeOnly()
+				#		# Give the torpedo an appropriate speed.
+				#		kSpeed = CopyVector(kTargetLocation)
+				#		kSpeed.Unitize()
+				#		kSpeed.Scale(300)
+				#		pTorp1.SetVelocity(kSpeed)
+				#		pTorp1.UpdateNodeOnly()
+
 		
 	def CollisionHappened(pObject, pEvent): # POINT 2. Future TO-DO maybe see what triggers a shield collision event?
 		# On an ideal world we would enable and disable collisions damage. However, for some reason, Disabling collision damage permanently leaves it disabled, even if the "pShip.IsCollisionDamageDisabled()" says it is enabled

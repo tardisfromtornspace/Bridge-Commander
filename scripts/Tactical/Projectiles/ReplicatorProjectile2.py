@@ -13,6 +13,10 @@
 
 import App
 import MissionLib
+from Custom.Techs import SGReplicatorAdaptation
+
+import traceback
+
 pWeaponLock = {}
 
 ###############################################################################
@@ -90,6 +94,14 @@ def TargetHit(pObject, pEvent):
 		pSubsystem=pShip.GetHull()
 	if (pSubsystem==None):
 		return
+
+	itemName = SGReplicatorAdaptation.findscriptsShipsField(pShip, "Name")
+	if SGReplicatorAdaptation.impactingShipTypeDict.has_key(itemName):
+		if SGReplicatorAdaptation.impactingShipTypeDict[itemName] < SGReplicatorAdaptation.yieldAttackAdaptationCounter:
+			return
+	else:
+		return
+
 	Dmg=pSubsystem.GetMaxCondition()*GetPercentage()
 	if (Dmg<GetMinDamage()):
 		Dmg=GetMinDamage()
@@ -164,6 +176,22 @@ def WeaponFired(pObject, pEvent):
 
 def ChangeAI(pAction, pShip):
         pShip.ClearAI()
+	try:
+		pTargetInstance = SGReplicatorAdaptation.findShipInstance(pShip)
+		if pTargetInstance:
+			pInsDict = pTargetInstance.__dict__
+			if not pInsDict.has_key('SGReplicator Adaptation'):
+				print "adding replicator adaptation muahaha"
+				pTargetInstance.__dict__['SGReplicator Adaptation'] = 1
+				SGReplicatorAdaptation.oSGReplicatorAdaptation.Attach(pTargetInstance)
+			if pInsDict.has_key('SG Shields'):
+				if pInsDict['SG Shields'].has_key("RaceShieldTech"):
+					if pInsDict['SG Shields']["RaceShieldTech"] == "Go'auld":
+						pInsDict['SG Shields Status'] = "Replicator"
+	except:
+		print "error when adding SG Replicator adaptation instance"
+		traceback.print_exc()
+
         return 0
 
 def SwapTeam(pAction, pShip, pGroup):

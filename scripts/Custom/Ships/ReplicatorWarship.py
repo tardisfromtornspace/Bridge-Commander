@@ -38,6 +38,8 @@ credits = {
 #                                                                                     #
 Foundation.ShipDef.ReplicatorWarship = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
 Foundation.ShipDef.ReplicatorWarship.dTechs = {
+	'Automated Destroyed System Repair': {"Time": 60.0},
+	"SGReplicator Adaptation": 1,
 	'SG Shields': { "RaceShieldTech": "Replicator" }
 }
 #                                                                                     #

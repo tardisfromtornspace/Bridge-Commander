@@ -1,7 +1,7 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
-# 19th August 2024, by Alex SL Gato (CharaToLoki)
-# Version: 1.0
+# 27th August 2024, by Alex SL Gato (CharaToLoki)
+# Version: 1.1
 # Meant to be used alongside the SGIonWeapon Technology (located at scripts/Custom/Techs), this file must be under scripts/Custom/Techs/SGIonWeaponScripts
 # As these are Sub-techs with some leeway, their manuals must be explained here:
 ##################################
@@ -50,7 +50,10 @@ def interactionShieldBehaviour(pShip, sScript, sShipScript, pInstance, pEvent, p
 		if pInstancedict["SG Shields"].has_key("RaceShieldTech"):
 			RaceShieldTech = pInstancedict["SG Shields"]["RaceShieldTech"]
 			if RaceShieldTech in IonSGVulnerableShields:
-				shouldPassThrough = 1
+				print "ship is in vulnerable ships", pInstancedict
+				if not (pInstancedict.has_key('SG Shields Status') and pInstancedict['SG Shields Status'] == "Replicator"):
+					print "Ok needs to pass through"	
+					shouldPassThrough = 1
 			elif RaceShieldTech == "Anubis Go'auld": # Resistances	
 				if pTorp and hasattr(pTorp, "GetDamageRadiusFactor"):
 					dmgRadiusFactor = pTorp.GetDamageRadiusFactor() # Meaner weapons have usually meaner knockback

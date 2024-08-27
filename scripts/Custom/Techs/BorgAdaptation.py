@@ -59,7 +59,7 @@ Foundation.ShipDef.Ambassador.dTechs = {
 
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "1.32",
+	    "Version": "1.34",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -175,7 +175,9 @@ def LoadExtraLimitedPlugins(dExcludePlugins=_g_dExcludeBorgPlugins):
 						if hasattr(banana, "defenseCounterRdm"):
 							randomness = abs(banana.defenseCounterRdm())
 						constantness = abs(banana.defenseCounter())
-						trueRandomness = App.g_kSystemWrapper.GetRandomNumber(randomness)
+						trueRandomness = 0
+						if randomness > 0:
+							trueRandomness = App.g_kSystemWrapper.GetRandomNumber(randomness)
 						#print constantness
 						#print randomness
 						#print trueRandomness
@@ -189,7 +191,9 @@ def LoadExtraLimitedPlugins(dExcludePlugins=_g_dExcludeBorgPlugins):
 						if hasattr(banana, "defenseShipCounterRdm"):
 							randomness = banana.defenseShipCounterRdm()
 						constantness = banana.defenseShipCounter()
-						trueRandomness = App.g_kSystemWrapper.GetRandomNumber(randomness)
+						trueRandomness = 0
+						if randomness > 0:
+							trueRandomness = App.g_kSystemWrapper.GetRandomNumber(randomness)
 						impactingShipTypeDict[fileName] =  -(trueRandomness + constantness)
 
 					
