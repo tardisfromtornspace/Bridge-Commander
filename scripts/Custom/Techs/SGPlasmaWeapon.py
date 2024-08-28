@@ -483,6 +483,10 @@ try:
 			if not pShip:
 				return
 
+			pShip = App.ShipClass_GetObjectByID(None, pShip.GetObjID())
+			if not pShip:
+				return
+
 			sScript     = pShip.GetScript()
 			sShipScript = string.split(sScript, ".")[-1]
 

@@ -38,6 +38,7 @@ credits = {
 #                                                                                     #
 Foundation.ShipDef.DSC304OdysseyRefit = Foundation.FedShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
 Foundation.ShipDef.DSC304OdysseyRefit.dTechs = {
+	"SG Asgard Beams Weapon": {"HullDmgMultiplier": 1.0, "ShieldDmgMultiplier": 1.0},
 	'SG Shields': { "RaceShieldTech": "Asgard", "RaceHullTech": "Tau'ri" }
 }
 #                                                                                     #

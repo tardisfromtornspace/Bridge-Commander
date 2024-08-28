@@ -236,6 +236,13 @@ class SGReplicatorAdaptationDef(FoundationTech.TechDef):
 		App.g_kEventManager.AddBroadcastPythonMethodHandler(App.ET_SCAN, self.pEventHandler, "ScanProgress")
 
 	def OnDefense(self, pShip, pInstance, oYield, pEvent, itemName, pTorp = None):
+
+		if not pShip:
+			return
+		pShip = App.ShipClass_GetObjectByID(None, pShip.GetObjID())
+		if not pShip:
+			return
+
 		global normalWeaponAdaptation, yieldAdaptationCounter, nonYieldAdaptationCounter, extraReductionAdaptationCycle, extraReductionAdaptationTorpCycle
 		# let's make it so people can customize how fast can a Stargate GReplicator ship adapt, within reason
 		learningFactor = pInstance.__dict__['SGReplicator Adaptation']

@@ -1560,6 +1560,13 @@ try:
 		def OnDefense(self, pShip, pInstance, oYield, pEvent, pTorp=None):
 			debug(__name__ + ", OnDefense")
 
+			if not pShip:
+				return
+
+			pShip = App.ShipClass_GetObjectByID(None, pShip.GetObjID())
+			if not pShip:
+				return
+
 			global shieldPiercedThreshold, shieldGoodThreshold, defaultPassThroughDmgMult, defaultDummyNothing, vulnerableProjToSGShields, vulnerableBeamsToSGShields, torpsNetTypeThatCanPhase
 
 			instanceDict = pInstance.__dict__
@@ -1700,19 +1707,24 @@ try:
 							multFactor = multFactor * importedTorpInfo.ShieldDmgMultiplier()
 
 
+			#shieldsArePierced, nearestPoint = shieldInGoodCondition(pShip, kPoint, shieldPiercedThreshold, 2, None)
 			shieldsArePierced, nearestPoint = shieldInGoodCondition(pShip, kPoint, shieldPiercedThreshold, 0, None)
 			#shieldsArePierced, nearestPoint = shieldRecalculationAndBroken(pShip, kPoint, 0, shieldPiercedThreshold, 0, negateRegeneration, None, fDamage, multFactor) # Future TO-DO RE-ENABLE THIS here if issues are fixed
+
 			if not pTorp: # For beams we have to do this or risk hardpoint heals
 				shieldsAreNotGood, nearestPoint = shieldInGoodCondition(pShip, kPoint, shieldGoodThreshold, 2, nearestPoint) # For the Future TO-DO --> 0, nearestPoint)
 			else: # This line below might be problematic on certain scenarios. If there are problems when firing torpedoes, please remove this if-else conditional while only leaving the line above for shieldsAreNotGood
-				shieldsAreNotGood, nearestPoint = shieldInGoodCondition(pShip, kPoint, shieldGoodThreshold, 0, nearestPoint)				
+				# TO-DO MAYBE CHECK THAT IF MY SHIELD IS GOOD AND NONE ARE PIERCED? Could work
+				shieldsAreNotGood, nearestPoint = shieldInGoodCondition(pShip, kPoint, shieldGoodThreshold, 0, nearestPoint)	
+
+			
 			if pEvent.IsHullHit():
 				# POINT 8: While in theory this is handled by the "No damage through shields" option on DS9FX configuration we want to also check it manually because:
 				# 1. - That is an option which can be turned on/off. Following POINT 8, we want to ensure that this no-dmg-through-shields behaviour happens regardless of the DS9FX option being active or inactive.
 				# 2. - Sometimes the "No damage through shields", for one reason or another, does not properly cover when a ton of incoming fire is hitting a ship, or does not cover when a vessel presents a weird geometry. In STBC, some vessels' models (including SG) present certain geometry shapes that ensure there's bleedthrough even when shields are completely full, so we need to fix that ourselves!
 				if not pTorp or not (pTorp.GetNetType() == torpsNetTypeThatCanPhase):
 					# then we do the heal if shields are good
-					if (shieldsAreNotGood <= 0) and raceShieldTech != "Wraith":
+					if (shieldsAreNotGood <= 0) and raceShieldTech != "Wraith": #  and (shieldsArePierced <= 0)
 						#print "shields are good enough to block the damage, reverting it"
 						theHull = pShip.GetHull()
 						hullName = None
