@@ -84,7 +84,7 @@ maxCountdown = 65535 # we want to keep things moderate
 maxCountdownModifier = 64 # for normal yields, allows a higher cap of max
 yieldAdaptationCounter = 8000.0 # default point before the SGReplicator manage to prevent the special yield of a weapon
 nonYieldAdaptationCounter = 100.0 # the point before the SGReplicator manage to prevent 50% of the non-yield weapons damage
-extraReductionAdaptationCycle = 10 # this is how many extra steps are taken after nonYieldAdaptationCounter has been reached - the first initial ones make a huge drop
+extraReductionAdaptationCycle =  2 #originally 10 TO-DO FIX THE FORMMULA THING TO PREVENT SUPER-HEAL TO-DO ADD THI TO SG SHIELDS AND HERE, THAT if pShields.GetShieldPercentage() < 0.2 it considers no damge through shields, For torps we know that if hull was hit and the torp radius is equal to the event radius, it means they hit fully # this is how many extra steps are taken after nonYieldAdaptationCounter has been reached - the first initial ones make a huge drop
 extraReductionAdaptationTorpCycle = 0 # this is how many extra steps are taken after nonYieldAdaptationCounter has been reached for torps - the first initial ones make a huge drop
 yieldAttackAdaptationCounter = 500.0 # default point before the SGReplicator reach maximum weapon Damage output - on this case, adaptation for replicator blocks bypassing a shield
 extraDamage = 1.0 # How much damage is given when reaching max offensive peak, equivalent to original damage * (1 + extraDamage). CURRENTLY UNUSED #### TO-DO change if modified ####
@@ -283,6 +283,11 @@ class SGReplicatorAdaptationDef(FoundationTech.TechDef):
 				fRadius, fDamage, kPoint = self.EventInformation(pEvent)
 				fDamage = abs(fDamage)
 
+				pShDmgForDS9FX = 0
+				if pShip.GetShields() != None:
+					myShieldSubsys = pShip.GetShields()
+					pShDmgForDS9FX = (myShieldSubsys.GetShieldPercentage() < 0.2)
+
 				global shieldGoodThreshold, shieldPiercedThreshold, torpsNetTypeThatCanPhase
 
 				ds9checks = 0 # Dunno what we may want to do with this
@@ -357,7 +362,7 @@ class SGReplicatorAdaptationDef(FoundationTech.TechDef):
 					if pEvent.IsHullHit():
 						# Since Stargate Shields tech already takes care of us for certain damage issues, we verify our shields are in good-enough condition
 
-						myShieldBroken, myShieldDirNearest = self.shieldInGoodCondition(pShip, kPoint, shieldThresholdUsed, 0, None)
+						myShieldBroken, myShieldDirNearest, aShieldBroken = self.shieldInGoodCondition(pShip, kPoint, shieldThresholdUsed, 0, None)
 						# get the systems
 						lAffectedSystems, lNonTargetableAffeSys = self.FindAllAffectedSystems(pShip, kPoint, fRadius)
 
@@ -370,11 +375,25 @@ class SGReplicatorAdaptationDef(FoundationTech.TechDef):
 						if fAllocatedFactor < 0.00001:
 							fAllocatedFactor = 0.00001
 
+						# If there are problems with the hull healing properly, then this conceptual stub below may require to be expanded and uncommented
+						#if ds9checks <= 0 and ihaveSGshields == 0:
+						#	# Simple, we heal according to this
+						#	self.AdjustListedSubsystems(pShip, lAffectedSystems, lNonTargetableAffeSys, damageHealed, fAllocatedFactor, 0) # , ds9checks, pShDmgForDS9FX
+						#elif ds9checks <= 0 and ihaveSGshields > 0:
+						#	# We only consider SG part, so only if shields are affected below 40% aprox
+						#	if pTorp:
+						# else: # We do the stuff if shields are down, then trace the hull subsystem		
+						# Future TO-DO if that issue happens, ADD THESE TO AFFECTED SYSTEMS OR SYSTEM HEAL SO IT WORKS SOMETHING ELSE
+						#if ds9checks == 1 and (pShDmgForDS9FX == 0) and not ((pTorp != None and (iMax - iCon) < (fDamage - 0.01)) or ((vDistance.Length() / pShip.GetRadius()) > (pSys.GetRadius() + fRadius))):
+						#	# "DS9FX is already handling this part"
+						#	continue
+
 						if ds9checks <= 0 or (myShieldBroken and ihaveSGshields == 0) or (myRaceHullTech == "Replicator" and ((pTorp and pTorp.GetNetType() == torpsNetTypeThatCanPhase) or myShieldBroken)):
-							self.AdjustListedSubsystems(pShip, lAffectedSystems, lNonTargetableAffeSys, damageHealed, fAllocatedFactor, 0)
+							self.AdjustListedSubsystems(pShip, lAffectedSystems, lNonTargetableAffeSys, damageHealed, fAllocatedFactor, 0) # , ds9checks, pShDmgForDS9FX
 
 
 					else:
+						# TO-DO ADD PRINTS TO CHECK WHAT IS GOING WRONG
 						shieldsArePierced, nearestPoint = self.shieldRecalculationAndBroken(pShip, kPoint, damageHealed, shieldThresholdUsed, 0, negateRegeneration, None, fDamage, multFactor)
 
 				# We learn from the experience
@@ -477,6 +496,7 @@ class SGReplicatorAdaptationDef(FoundationTech.TechDef):
 
 		pShields = pShip.GetShields()
 		shieldHitBroken = 0
+		aShieldWasBroken = 0
 		shieldDirNearest = None
 		if pShields:
 			if nearShields == None:
@@ -491,17 +511,36 @@ class SGReplicatorAdaptationDef(FoundationTech.TechDef):
 				pointLeft = App.TGPoint3_GetModelLeft()
 				lReferencias = [pointForward, pointBackward, pointTop, pointBottom, pointLeft, pointRight]
 
+				sustraccion = 1
 				for pPunto in lReferencias:
 					pPunto.Subtract(kPoint)
-					if pReferenciado == None or pPunto.Length() < dMasCercano:
-						dMasCercano = pPunto.Length()
-						pReferenciado = pPunto
+					if pReferenciado == None or pPunto.Length() <= dMasCercano:
+						fCurr = pShields.GetCurShields(lReferencias.index(pPunto))
+						fMax = pShields.GetMaxShields(lReferencias.index(pPunto))
+						currSub = fCurr - fMax
+						if pReferenciado == None:
+							sustraccion = currSub
+							dMasCercano = pPunto.Length()
+							pReferenciado = pPunto
+						else:	
+							if pPunto.Length() == dMasCercano:
+								if sustraccion == 0.0 and currSub < 0.0: # ERGO, that old shield facet was not hit, but ours definetely was sometime in the past
+									dMasCercano = pPunto.Length()
+									pReferenciado = pPunto
+									sustraccion = currSub
+								elif currSub == 0.0: # ERGO, that new shield we checked cannot have been hit
+									continue
+								# Here there could naturally be an else, but we cannot know
+							else:
+								dMasCercano = pPunto.Length()
+								pReferenciado = pPunto
 
 				
 				if pReferenciado:
 					shieldDirNearest = lReferencias.index(pReferenciado)
 				else:
 					shieldHitBroken = shieldHitBroken + 1
+					aShieldWasBroken = aShieldWasBroken + 1
 
 			else:
 				shieldDirNearest = nearShields
@@ -513,16 +552,21 @@ class SGReplicatorAdaptationDef(FoundationTech.TechDef):
 						fCurr = pShields.GetCurShields(shieldDir)
 						fMax = pShields.GetMaxShields(shieldDir)
 						resultHeal = fCurr
-						if shieldDirNearest == shieldDir and (fMax <= 0 or resultHeal < (shieldThreshold * fMax)):
-							shieldHitBroken = shieldHitBroken + 1
+						if (fMax <= 0 or resultHeal < (shieldThreshold * fMax)):
+							if (shieldDirNearest == shieldDir):
+								shieldHitBroken = shieldHitBroken + 1
+							else:
+								aShieldWasBroken = aShieldWasBroken + 1
 			else:
 				shieldHitBroken = 1
+				aShieldWasBroken = 1
 				
 
 		else:
 			shieldHitBroken = 1
+			aShieldWasBroken = 1
 
-		return shieldHitBroken, shieldDirNearest
+		return shieldHitBroken, shieldDirNearest, aShieldWasBroken
 
 	def shieldRecalculationAndBroken(self, pShip, kPoint, extraDamageHeal, shieldThreshold = shieldPiercedThreshold, multifacet = 0, negateRegeneration=0, nearShields = None, damageSuffered = 0, multFactor = 1.0):
 
@@ -542,11 +586,29 @@ class SGReplicatorAdaptationDef(FoundationTech.TechDef):
 				pointLeft = App.TGPoint3_GetModelLeft()
 				lReferencias = [pointForward, pointBackward, pointTop, pointBottom, pointLeft, pointRight]
 
+				sustraccion = 1
 				for pPunto in lReferencias:
 					pPunto.Subtract(kPoint)
-					if pReferenciado == None or pPunto.Length() < dMasCercano:
-						dMasCercano = pPunto.Length()
-						pReferenciado = pPunto
+					if pReferenciado == None or pPunto.Length() <= dMasCercano:
+						fCurr = pShields.GetCurShields(lReferencias.index(pPunto))
+						fMax = pShields.GetMaxShields(lReferencias.index(pPunto))
+						currSub = fCurr - fMax
+						if pReferenciado == None:
+							sustraccion = currSub
+							dMasCercano = pPunto.Length()
+							pReferenciado = pPunto
+						else:	
+							if pPunto.Length() == dMasCercano:
+								if sustraccion == 0.0 and currSub < 0.0: # ERGO, that old shield facet was not hit, but ours definetely was sometime in the past
+									dMasCercano = pPunto.Length()
+									pReferenciado = pPunto
+									sustraccion = currSub
+								elif currSub == 0.0: # ERGO, that new shield we checked cannot have been hit
+									continue
+								# Here there could naturally be an else, but we cannot know
+							else:
+								dMasCercano = pPunto.Length()
+								pReferenciado = pPunto
 
 
 				if pReferenciado:
@@ -556,7 +618,7 @@ class SGReplicatorAdaptationDef(FoundationTech.TechDef):
 			else:
 				shieldDirNearest = nearShields
 
-			if not (pShields.IsDisabled() or not pShields.IsOn()):
+			if shieldDirNearest and not (pShields.IsDisabled() or not pShields.IsOn()):
 				pShieldsProperty = pShields.GetProperty()
 				for shieldDir in range(App.ShieldClass.NUM_SHIELDS):
 					if shieldDirNearest == shieldDir or multifacet != 0:

@@ -71,7 +71,7 @@ import traceback
 defaultPassThroughDmgMult = 0.1 # For things that need to actually do bleedtrough... how much?
 
 shieldGoodThreshold = 0.400001 # From this value downwards, SG special bleedthrough block will not work.
-shieldPiercedThreshold = 0.25 # Below this value shields are definetely pierced, so full bleedthrough!
+shieldPiercedThreshold = 0.20 # Below this value shields are definetely pierced, so full bleedthrough!
 
 SlowDownRatio = 3.0/70.0 # This is an auxiliar value, it helps us when a ship is too small, to prevent a torpedo from just teleporting to the other side
 
@@ -145,7 +145,7 @@ import FoundationTech
 from ftb.Tech.ATPFunctions import *
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-            "Version": "0.5",
+            "Version": "0.6",
             "License": "LGPL",
             "Description": "Read the small title above for more info"
             }
@@ -1431,7 +1431,7 @@ try:
 						fCurr = pShields.GetCurShields(shieldDir)
 						fMax = pShields.GetMaxShields(shieldDir)
 						resultHeal = fCurr
-						if shieldDirNearest == shieldDir and (fMax <= 0 or resultHeal < (shieldThreshold * fMax)):
+						if (shieldDirNearest == shieldDir or multifacet == 2) and (fMax <= 0 or resultHeal < (shieldThreshold * fMax)):
 							shieldHitBroken = shieldHitBroken + 1
 			else:
 				shieldHitBroken = 1
@@ -1565,6 +1565,10 @@ try:
 			instanceDict = pInstance.__dict__
 			fRadius, fDamage, kPoint = self.EventInformation(pEvent)
 
+			pShDmgForDS9FX = 0
+			if pShip.GetShields() != None:
+				myShieldSubsys = pShip.GetShields()
+				pShDmgForDS9FX = (myShieldSubsys.GetShieldPercentage() < 0.2)
 			raceShieldTech = None
 			raceHullTech = None
 			negateRegeneration = 0
@@ -1667,7 +1671,7 @@ try:
 								else:
 									forcedBleedthroughMultiplier = (forcedBleedthroughMultiplier * 2.0 + vulnerableBeamsToSGShields[key]["GuaranteedBleedthrough"]) / 2.0
 									forcedBleedthrough = forcedBleedthrough + 1
-
+		
 			if raceShieldTech == "Asgard" or raceShieldTech == "Ori": # POINT 10. Maybe check if we need to verify if the hull was hit, to avoid some shield facets regenerating when they shouldn't.
 				negateRegeneration = -1.0
 
@@ -1695,16 +1699,20 @@ try:
 						if hasattr(importedTorpInfo, "ShieldDmgMultiplier"):
 							multFactor = multFactor * importedTorpInfo.ShieldDmgMultiplier()
 
-			shieldsArePierced, nearestPoint = shieldRecalculationAndBroken(pShip, kPoint, 0, shieldPiercedThreshold, 0, negateRegeneration, None, fDamage, multFactor)
-			shieldsAreNotGood, nearestPoint = shieldInGoodCondition(pShip, kPoint, shieldGoodThreshold, 0, nearestPoint)
 
+			shieldsArePierced, nearestPoint = shieldInGoodCondition(pShip, kPoint, shieldPiercedThreshold, 0, None)
+			#shieldsArePierced, nearestPoint = shieldRecalculationAndBroken(pShip, kPoint, 0, shieldPiercedThreshold, 0, negateRegeneration, None, fDamage, multFactor) # Future TO-DO RE-ENABLE THIS here if issues are fixed
+			if not pTorp: # For beams we have to do this or risk hardpoint heals
+				shieldsAreNotGood, nearestPoint = shieldInGoodCondition(pShip, kPoint, shieldGoodThreshold, 2, nearestPoint) # For the Future TO-DO --> 0, nearestPoint)
+			else: # This line below might be problematic on certain scenarios. If there are problems when firing torpedoes, please remove this if-else conditional while only leaving the line above for shieldsAreNotGood
+				shieldsAreNotGood, nearestPoint = shieldInGoodCondition(pShip, kPoint, shieldGoodThreshold, 0, nearestPoint)				
 			if pEvent.IsHullHit():
 				# POINT 8: While in theory this is handled by the "No damage through shields" option on DS9FX configuration we want to also check it manually because:
 				# 1. - That is an option which can be turned on/off. Following POINT 8, we want to ensure that this no-dmg-through-shields behaviour happens regardless of the DS9FX option being active or inactive.
 				# 2. - Sometimes the "No damage through shields", for one reason or another, does not properly cover when a ton of incoming fire is hitting a ship, or does not cover when a vessel presents a weird geometry. In STBC, some vessels' models (including SG) present certain geometry shapes that ensure there's bleedthrough even when shields are completely full, so we need to fix that ourselves!
 				if not pTorp or not (pTorp.GetNetType() == torpsNetTypeThatCanPhase):
 					# then we do the heal if shields are good
-					if not shieldsAreNotGood and raceShieldTech != "Wraith": 
+					if (shieldsAreNotGood <= 0) and raceShieldTech != "Wraith":
 						#print "shields are good enough to block the damage, reverting it"
 						theHull = pShip.GetHull()
 						hullName = None
@@ -1752,9 +1760,20 @@ try:
 							if vDistance.Length() > (pSys.GetRadius() + fRadius):
 								continue
 
-							if ds9checks == 1 and ((pTorp != None and (iMax - iCon) < (fDamage - 0.01)) or ((vDistance.Length() / pShip.GetRadius()) > (pSys.GetRadius() + fRadius))):
-								# "DS9FX is already handling this part"
-								continue
+							if raceShieldTech == "Replicator":
+								# We need to be very strict to avoid accidental slip-ups with damage for the Replicators
+								if ds9checks == 1 and (pShDmgForDS9FX == 0) and not ((pTorp != None and (iMax - iCon) < (fDamage - 0.01)) or ((vDistance.Length() / pShip.GetRadius()) > (pSys.GetRadius() + fRadius))):
+									if pSys.GetName() == hullName:
+										hullCounted = hullCounted + 1
+									# "DS9FX is already handling this part"
+									continue
+							else:	# For other ships that did not have that, this strategy worked better: TO-DO ADJUST IF NECESSARY
+								# OG STRATEGY
+								#if ds9checks == 1 and ((pTorp != None and (iMax - iCon) < (fDamage - 0.01)) or ((vDistance.Length() / pShip.GetRadius()) > (pSys.GetRadius() + fRadius))):
+								#	# "DS9FX is already handling this part"
+								#	continue
+								if ds9checks == 1 and (pShDmgForDS9FX == 0) and not ((pTorp != None and (iMax - iCon) < (fDamage - 0.01)) or ((vDistance.Length() / pShip.GetRadius()) > (pSys.GetRadius() + fRadius))):
+									continue
 
 							iNewCon = iCon + fDamage
 
@@ -1764,7 +1783,7 @@ try:
 							pSys.SetCondition(iNewCon)
 			
 							if pSys.GetName() == hullName:
-								hullNotCounted = hullNotCounted + 1
+								hullCounted = hullCounted + 1
 
 						pShip.EndGetSubsystemMatch(kIterator)
 
@@ -1783,6 +1802,8 @@ try:
 				# Certain SG Armours may do something if the hull is hit. However for now this is more than enough and the extra armor-related events could be covered in another technology.
 
 			else:
+				# This line was moved here to avoid invulnerable edge cases
+				shieldsArePierced, nearestPoint = shieldRecalculationAndBroken(pShip, kPoint, 0, shieldPiercedThreshold, 0, negateRegeneration, nearestPoint, fDamage, multFactor)
 				#First check, those weapons that can pass-through
 				if forcedBleedthrough > 0 and raceShieldTech != "Wraith":
 					global SlowDownRatio

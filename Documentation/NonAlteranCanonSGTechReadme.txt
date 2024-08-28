@@ -23,24 +23,23 @@ This mod attempts to fix some Stargate pack balance inconsistencies by adding ap
 * Plasma and Ion weapons base damage nerfed accordingly to deal a similar final raw damage output to what they did to shields before the mod.
 ** Please note that "similar" is not "equal" - actually, specially for the Asgard Ion Cannons, net shield damage has been slightly buffed, specially for the higher-end vessels' Ion weapons.
 ** Same has been done for certain "big" plasma weapons such as the Flagship's or Anubis Superweapon's cannons, which have only been tagged as SG plasma weapons and have their generic hull modifiers increasing such damage.
-* Asgard Daniel Jackson, O'Neill and Valhalla shields and shield recharge buffed significantly (between 36% to 57%).
+* Asgard Daniel Jackson, O'Neill and Valhalla shields and shield recharge buffed significantly (between 36% to 57%). Also, thanks to the technology, low-grade weapons may not be able to even drain their shields.
 * All Asgard vessels have now tractor beams and probe launchers.
 
-
-* Replicator adaptation: based on my other mod, Borg Adaptation https://www.gamefront.com/games/bridge-commander/file/borg-adaptation-mod-defensive ; it is meant to be added as a modification to allow the Replicators to adapt, instead of making them a set of outright OP-ness that cannot adapt, they instead start a bit less overpowered, then learn and eventually make themselves far more powerful than normal, shield-wise.
-** Alongside this, Replciator Projectiles have been tweaked - on the one hand, now they need the Replicator to have fought or scanned a type of vessel enough times to bypass the shields and initiate take-over (for most Go'auld vessels it has been left to be automatically assimilated). On the other, ships successfully taken over with this also receive the Replicator Adaptation tech, so they will become stronger, at least shield-wise.
-* Addded Automated Destroyed System Repair to the Replicator Spider and the Replicator Command Vessel.
+* Replicator adaptation: based on my other mod, Borg Adaptation https://www.gamefront.com/games/bridge-commander/file/borg-adaptation-mod-defensive ; it is meant to be added as a modification to allow the Replicators to adapt, instead of making them a set of outright OP-ness that cannot adapt, they instead start a bit less overpowered, then learn and eventually make themselves far more powerful than normal, shield-wise, with those having the proper hull race from the SG Shields tech also being a bit more powerful hull-wise.
+** Alongside this, Replicator-throwing Projectiles have been tweaked - on the one hand, now they need the Replicator to have fought or scanned a type of vessel enough times to bypass the shields and initiate take-over (for most Go'auld vessels it has been left to be automatically assimilated). On the other, ships successfully taken over with this also receive the Replicator Adaptation tech, so they will become stronger, at least shield-wise.
 
 * As a byproduct of the shield collision buff, several Stargate vessel's masses on this mod have been tweaked so the shield suffers from more or less strain from a collision impact (or equalized, so Alkesh and Goauld Alkesh have the same mass while Alkesh Transport has that mass + the one from the pods). For the most part, the masses have been noticeably buffed.
 * Made Alkesh Transport Mvam able to reintegrate with its pods.
 * Upgraded Ha'tak speed increased slightly.
 * Buffed regular Ha'tak (Early, Variant, Refit) shields significantly.
-* Nerfed regular Ha'tak hulls (Early, Variant, Refit) and power plants a tiny bit. #### TO-DO ####
-* Buffed Puddle Jumper shields by 120% on each facet
-** Nerfed Puddle Jumper hull by 50%
+* Nerfed regular Ha'tak hulls (Early, Variant, Refit) and power plants HP a tiny bit.
+* Buffed Puddle Jumper shields by 120% on each facet.
+** Nerfed Puddle Jumper hull by 50%.
 * Added a scripts/ship file that disabled visible damage on the SuperHive ship, thus avoiding game crashes.
 * Added Simulated Point Defence to the Replicator Stolen Cruiser so it fires beams at incoming projectiles once in a while.
 * Added Simulated Point Defence to the Ancient Warship so it fires drones at incoming projectiles once in a while, including (and mostly) other drones.
+* Added Automated Destroyed System Repair to the Replicator Spider and the Replicator Command Vessel.
 
 #### TO-DO ----> FOR ANUBIS MOTHERSHIP, SEE IF YOU CAN DO SOMETHING LIKE THE TURRETS SCRIPT MIXED WITH TACHYONBEAM SCRIPT, BUT ONLY MOVING TWO UNCOLLIDABLE AND UNTARGETABLE BEAMS NEXT TO AN ENEMY VESSEL, TO THEN FIRE ON THE TWO CLOSEST ENEMY VESSELS TO THE OBJECTIVE ####
 

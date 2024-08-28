@@ -18,7 +18,7 @@ import traceback
 defaultPassThroughDmgMult = 0.1 # For things that need to actually do bleedtrough... how much?
 
 shieldGoodThreshold = 0.400001 # From this value downwards, SG special bleedthrough block will not work.
-shieldPiercedThreshold = 0.25 # Below this value shields are definetely pierced, so full bleedthrough!
+shieldPiercedThreshold = 0.2 #0.25 # Below this value shields are definetely pierced, so full bleedthrough!
 
 SlowDownRatio = 3.0/70.0 # This is an auxiliar value, it helps us when a ship is too small, to prevent a torpedo from just teleporting to the other side
 
