@@ -117,7 +117,7 @@ xOriHullMultiplier = 0.95
 
 ##### This function below is used for shield behaviour towards this weapon (when the hull has not been hit)
 def interactionShieldBehaviour(pShip, sScript, sShipScript, pInstance, pEvent, pTorp, pInstancedict, pAttackerShipID, hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, considerPiercing, shouldDealAllFacetDamage, wasChanged):
-	if pInstancedict.has_key("SG Shields"):
+	if pInstance and pInstancedict.has_key("SG Shields"):
 		wasChanged = wasChanged + 1
 		global PlasmaSGShieldDamageMultiplier, xAnubisShieldMultiplier, xAsgardShieldMultiplier, xAlteranShieldMultiplier, xOriShieldMultiplier
 
@@ -147,7 +147,7 @@ def interactionShieldBehaviour(pShip, sScript, sShipScript, pInstance, pEvent, p
 
 ##### This function below is used for hull behaviour towards this weapon (when the hull has been hit)
 def interactionHullBehaviour(pShip, sScript, sShipScript, pInstance, pEvent, pTorp, pInstancedict, pAttackerShipID, hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, considerPiercing, shouldDealAllFacetDamage, wasChanged):
-	if pInstancedict.has_key("SG Shields"):
+	if pInstance and pInstancedict.has_key("SG Shields"):
 		RaceShieldTech = None
 		if pInstancedict["SG Shields"].has_key("RaceHullTech"): # We will assume shields and hull tech races are the same unless we say otherwise, for simplicity to not add too many fields.
 			RaceShieldTech = pInstancedict["SG Shields"]["RaceHullTech"]
@@ -611,7 +611,7 @@ try:
 				mod = pTorp.GetModuleName()
 				importedTorpInfo = __import__(mod)
 				if hasattr(importedTorpInfo, "ShieldDmgMultiplier"): # If this torp has a special global multiplier, then we use it
-					shieldDamageMultiplier = importedTorpInfo * importedTorpInfo.ShieldDmgMultiplier()
+					shieldDamageMultiplier = shieldDamageMultiplier * importedTorpInfo.ShieldDmgMultiplier()
 			
 			shieldDamageMultiplier = shieldDamageMultiplier - PlasmaGenericShieldDamageMultiplier # That is, to compensate the "extra" time we added 1 damage
 	
@@ -667,16 +667,6 @@ try:
 
 	oSGPlasmaWeaponTorp = SGPlasmaWeaponTorpedo("SGPlasmaWeapon Torpedo")
 	# Just a few standard torps I know of that are SGPlasmaWeapon... 
-	# All of these will also be added on the projectile script... it's better that way
-	#oSGPlasmaWeaponTorp.AddTorpedo("Tactical.Projectiles.IonCannon")
-	#oSGPlasmaWeaponTorp.AddTorpedo("Tactical.Projectiles.IonCannon2")
-	#oSGPlasmaWeaponTorp.AddTorpedo("Tactical.Projectiles.IonCannon3")
-	#oSGPlasmaWeaponTorp.AddTorpedo("Tactical.Projectiles.IonCannon4")
-	#oSGPlasmaWeaponTorp.AddTorpedo("Tactical.Projectiles.IonPulse")
-	#oSGPlasmaWeaponTorp.AddTorpedo("Tactical.Projectiles.IonPulse2")
-	#oSGPlasmaWeaponTorp.AddTorpedo("Tactical.Projectiles.IonPulse3")
-	#oSGPlasmaWeaponTorp.AddTorpedo("Tactical.Projectiles.IonPulse4")
-	#oSGPlasmaWeaponTorp.AddTorpedo("Tactical.Projectiles.IonPulse5")
 
 except:
 	print "FoundationTech, or the FTB mod, or both are not installed, \nTrasphasic Torpedoes are there but NOT enabled or present in your current BC installation"

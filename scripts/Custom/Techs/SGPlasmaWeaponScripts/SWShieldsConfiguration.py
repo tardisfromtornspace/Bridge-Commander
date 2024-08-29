@@ -91,7 +91,7 @@ lSWVulnerableLegacyList = (
 
 def interactionShieldBehaviour(pShip, sScript, sShipScript, pInstance, pEvent, pTorp, pInstancedict, pAttackerShipID, hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, considerPiercing, shouldDealAllFacetDamage, wasChanged):
 	global lSWVulnerableLegacyList
-	if pInstancedict.has_key("SW Shields") or sShipScript in lSWVulnerableLegacyList:
+	if (pInstancedict and pInstancedict.has_key("SW Shields")) or sShipScript in lSWVulnerableLegacyList:
 		global PlasmaSWShieldDamageMultiplier, PlasmaSWHullDamageMultiplier
 		wasChanged = wasChanged + 1
 		shouldDealAllFacetDamage = shouldDealAllFacetDamage + 1
@@ -116,7 +116,7 @@ def interactionShieldBehaviour(pShip, sScript, sShipScript, pInstance, pEvent, p
 
 def interactionHullBehaviour(pShip, sScript, sShipScript, pInstance, pEvent, pTorp, pInstancedict, pAttackerShipID, hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, considerPiercing, shouldDealAllFacetDamage, wasChanged):
 	global lSWVulnerableLegacyList
-	if pInstancedict.has_key("SW Shields") or sShipScript in lSWVulnerableLegacyList:
+	if (pInstancedict and pInstancedict.has_key("SW Shields")) or sShipScript in lSWVulnerableLegacyList:
 		wasChanged = wasChanged + 1
 
 		global PlasmaSWHullDamageMultiplier, PlasmaSWHullDamageMultiplierBoost

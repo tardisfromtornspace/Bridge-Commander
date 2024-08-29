@@ -44,7 +44,7 @@ lGRAVulnerableLegacyList = (
 
 
 def interactionShieldBehaviour(pShip, sScript, sShipScript, pInstance, pEvent, pTorp, pInstancedict, pAttackerShipID, hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, considerPiercing, shouldDealAllFacetDamage, wasChanged, negateRegeneration):
-	if pInstancedict.has_key('Reflector Shields') or pInstancedict.has_key('Reflector') or pInstancedict.has_key('Corbonite Reflector') and sShipScript in lGRAVulnerableLegacyList: # These ones will not add a "wasChanged", we want the normal to stack with this effect
+	if pInstance and pInstancedict.has_key('Reflector Shields') or pInstancedict.has_key('Reflector') or pInstancedict.has_key('Corbonite Reflector') and sShipScript in lGRAVulnerableLegacyList: # These ones will not add a "wasChanged", we want the normal to stack with this effect
 		shieldDamageMultiplier = shieldDamageMultiplier + IonGRALegacyShieldDamageMultiplier
 		negateRegeneration = negateRegeneration - 1
 

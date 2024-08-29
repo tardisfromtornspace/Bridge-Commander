@@ -29,6 +29,10 @@ This mod attempts to fix some Stargate pack balance inconsistencies by adding ap
 * Replicator adaptation: based on my other mod, Borg Adaptation https://www.gamefront.com/games/bridge-commander/file/borg-adaptation-mod-defensive ; it is meant to be added as a modification to allow the Replicators to adapt, instead of making them a set of outright OP-ness that cannot adapt, they instead start a bit less overpowered, then learn and eventually make themselves far more powerful than normal, shield-wise, with those having the proper hull race from the SG Shields tech also being a bit more powerful hull-wise.
 ** Alongside this, Replicator-throwing Projectiles have been tweaked - on the one hand, now they need the Replicator to have fought or scanned a type of vessel enough times to bypass the shields and initiate take-over (for most Go'auld vessels it has been left to be automatically assimilated). On the other, ships successfully taken over with this also receive the Replicator Adaptation tech, so they will become stronger, at least shield-wise.
 
+* Added Asgard Beam Weapons technology - its only purpose is making the Asgard beams on the BC-304 (and any BC-305 anybody may want to add) be more powerful and have same damage regardless of range.
+** As a byproduct of this, the actual phaser banks damage has been nerfed to 25 dmg (the remaining 25k are now done by the script).
+* Odyssey Refit and DSC304OdysseyRefit Asgard beams are now single-fire, but fire faster.
+
 * As a byproduct of the shield collision buff, several Stargate vessel's masses on this mod have been tweaked so the shield suffers from more or less strain from a collision impact (or equalized, so Alkesh and Goauld Alkesh have the same mass while Alkesh Transport has that mass + the one from the pods). For the most part, the masses have been noticeably buffed.
 * Made Alkesh Transport Mvam able to reintegrate with its pods.
 * Upgraded Ha'tak speed increased slightly.
@@ -40,12 +44,14 @@ This mod attempts to fix some Stargate pack balance inconsistencies by adding ap
 * Added Simulated Point Defence to the Replicator Stolen Cruiser so it fires beams at incoming projectiles once in a while.
 * Added Simulated Point Defence to the Ancient Warship so it fires drones at incoming projectiles once in a while, including (and mostly) other drones.
 * Added Automated Destroyed System Repair to the Replicator Spider and the Replicator Command Vessel.
+* Added Carriers script to certain BC-304 ships that were missing them.
+* F302, Death Gliders, X301 and Wraith Darts hardpoints adjusted, and fixed same-HP-issue the old Mvam Wraith Hive Ship mod had.
 
 #### TO-DO ----> FOR ANUBIS MOTHERSHIP, SEE IF YOU CAN DO SOMETHING LIKE THE TURRETS SCRIPT MIXED WITH TACHYONBEAM SCRIPT, BUT ONLY MOVING TWO UNCOLLIDABLE AND UNTARGETABLE BEAMS NEXT TO AN ENEMY VESSEL, TO THEN FIRE ON THE TWO CLOSEST ENEMY VESSELS TO THE OBJECTIVE ####
 
 * Wraith given Automated System Repair #### TO-DO ####
-* Wraith HP and weapons adjusted accordingly between mods.
-* F302, Death Gliders, X301 and Wraith Darts hardpoints adjusted, and fixed same-HP-issue the old Mvam Wraith Hive Ship mod had.
+* Wraith HP and weapons adjusted accordingly between mods. #### TO-DO ####
+
 #### ALSO TO-DO MAYBE GIVE WRAITH HULL A CERTAIN METHOD OF DAMAGE REDUCTION? ####
 
 == Dependancies ==

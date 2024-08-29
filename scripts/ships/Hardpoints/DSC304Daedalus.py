@@ -3657,6 +3657,62 @@ MissileTube22Right = App.TGPoint3()
 MissileTube22Right.SetXYZ(1.000000, 0.000000, 0.000000)
 MissileTube22.SetRight(MissileTube22Right)
 App.g_kModelPropertyManager.RegisterLocalTemplate(MissileTube22)
+#################################################
+ShuttleBayOEP = App.ObjectEmitterProperty_Create("Shuttle Bay OEP")
+
+ShuttleBayOEPForward = App.TGPoint3()
+ShuttleBayOEPForward.SetXYZ(0.000000, 1.000000, 0.000000)
+ShuttleBayOEPUp = App.TGPoint3()
+ShuttleBayOEPUp.SetXYZ(0.000000, 0.000000, 1.000000)
+ShuttleBayOEPRight = App.TGPoint3()
+ShuttleBayOEPRight.SetXYZ(1.000000, 0.000000, 0.000000)
+ShuttleBayOEP.SetOrientation(ShuttleBayOEPForward, ShuttleBayOEPUp, ShuttleBayOEPRight)
+ShuttleBayOEPPosition = App.TGPoint3()
+ShuttleBayOEPPosition.SetXYZ(0.600000, -0.150000, -0.100000)
+ShuttleBayOEP.SetPosition(ShuttleBayOEPPosition)
+ShuttleBayOEP.SetEmittedObjectType(ShuttleBayOEP.OEP_SHUTTLE)
+App.g_kModelPropertyManager.RegisterLocalTemplate(ShuttleBayOEP)
+#################################################
+ShuttleBay = App.HullProperty_Create("Shuttle Bay")
+
+ShuttleBay.SetMaxCondition(800.000000)
+ShuttleBay.SetCritical(0)
+ShuttleBay.SetTargetable(1)
+ShuttleBay.SetPrimary(0)
+ShuttleBay.SetPosition(0.600000, -0.150000, -0.100000)
+ShuttleBay.SetPosition2D(0.000000, 0.000000)
+ShuttleBay.SetRepairComplexity(7.000000)
+ShuttleBay.SetDisabledPercentage(0.750000)
+ShuttleBay.SetRadius(0.100000)
+App.g_kModelPropertyManager.RegisterLocalTemplate(ShuttleBay)
+#################################################
+ShuttleBay2OEP = App.ObjectEmitterProperty_Create("Shuttle Bay 2 OEP")
+
+ShuttleBay2OEPForward = App.TGPoint3()
+ShuttleBay2OEPForward.SetXYZ(0.000000, 1.000000, 0.000000)
+ShuttleBay2OEPUp = App.TGPoint3()
+ShuttleBay2OEPUp.SetXYZ(0.000000, 0.000000, 1.000000)
+ShuttleBay2OEPRight = App.TGPoint3()
+ShuttleBay2OEPRight.SetXYZ(-1.000000, 0.000000, 0.000000)
+ShuttleBay2OEP.SetOrientation(ShuttleBay2OEPForward, ShuttleBay2OEPUp, ShuttleBay2OEPRight)
+ShuttleBay2OEPPosition = App.TGPoint3()
+ShuttleBay2OEPPosition.SetXYZ(-0.600000, -0.150000, -0.100000)
+ShuttleBay2OEP.SetPosition(ShuttleBay2OEPPosition)
+ShuttleBay2OEP.SetEmittedObjectType(ShuttleBay2OEP.OEP_SHUTTLE)
+App.g_kModelPropertyManager.RegisterLocalTemplate(ShuttleBay2OEP)
+#################################################
+ShuttleBay2 = App.HullProperty_Create("Shuttle Bay 2")
+
+ShuttleBay2.SetMaxCondition(800.000000)
+ShuttleBay2.SetCritical(0)
+ShuttleBay2.SetTargetable(1)
+ShuttleBay2.SetPrimary(0)
+ShuttleBay2.SetPosition(-0.600000, -0.150000, -0.100000)
+ShuttleBay2.SetPosition2D(0.000000, 0.000000)
+ShuttleBay2.SetRepairComplexity(7.000000)
+ShuttleBay2.SetDisabledPercentage(0.750000)
+ShuttleBay2.SetRadius(0.100000)
+App.g_kModelPropertyManager.RegisterLocalTemplate(ShuttleBay2)
 
 # Property load function.
 def LoadPropertySet(pObj):
@@ -4091,5 +4147,17 @@ def LoadPropertySet(pObj):
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
 	prop = App.g_kModelPropertyManager.FindByName("Missile Tube 22", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	if (prop != None):
+		pObj.AddToSet("Scene Root", prop)
+	prop = App.g_kModelPropertyManager.FindByName("Shuttle Bay OEP", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	if (prop != None):
+		pObj.AddToSet("Scene Root", prop)
+	prop = App.g_kModelPropertyManager.FindByName("Shuttle Bay", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	if (prop != None):
+		pObj.AddToSet("Scene Root", prop)
+	prop = App.g_kModelPropertyManager.FindByName("Shuttle Bay 2 OEP", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	if (prop != None):
+		pObj.AddToSet("Scene Root", prop)
+	prop = App.g_kModelPropertyManager.FindByName("Shuttle Bay 2", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)

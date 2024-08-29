@@ -4,24 +4,23 @@
 #         Based on BorgAdaptation.py and PhasedTorp.py by Alex SL Gato, which were based on the Foundation import function by Dasher; the Shield.py scripts and KM Armour scripts and FoundationTechnologies team's PhasedTorp.py
 #         Also based on ATPFunctions by Apollo.
 #################################################################################################################
-# TO-DO UPDATE THIS, ADD A WEAPON_HIT
+#
 # A modification of a modification, last modification by Alex SL Gato (CharaToLoki)
 # TODO: 1. Create Read Me
 #	2. Create a clear guide on how to add this...
 #
 # Start on 2:
-# This tech makes Asgard and Tollan Ion Weapons behave more like in the Stargate show, alongside its own sub-technologies that makes the behaviour even more canonical
-# At the bottom of your torpedo projectile file add this (Between the """ and """):
+# This tech makes ships gain Asgard Beam tech, which will make the same damage from phasers regardless of distance. It still makes beam yields variable to 3 damage-dealing status with the phaser level slider or button: full-power (100%), half-power (>= 50%) and fraction power (<50%). This technology came to mind to properly fix that issue that made the battles on STBC with the Asgard beams either too overpowered when at very close range, or extremely underpowered everywhere else.
+# No add it, just add to your Custom/Ships/shipFileName.py this:
 """
-try:
-	modSGAsgardBeamsWeapon = __import__("Custom.Techs.SGAsgardBeamsWeapon")
-	if(modSGAsgardBeamsWeapon):
-		modSGAsgardBeamsWeapon.oSGAsgardBeamsWeapon.AddTorpedo(__name__)
-except:
-	print "SGAsgardBeamsWeapon projectile script not installed, or you are missing Foundation Tech"
+Foundation.ShipDef.Ambassador.dTechs = {
+	"SG Asgard Beams Weapon": {"HullDmgMultiplier": 1.0, "ShieldDmgMultiplier": 1.0, "Beams": ["Beam name 1", "Beam name 2"]},
+}
 """
-# NOTE, while on other similar phase-through torpedo mods your SpeciesToTorp value must be set to the NetType Multiplayer.SpeciesToTorp.PHASEDPLASAMA for it to work due to a conflict-bug fix that allows stock phased torpedoes to work regardless of having the no-dmg-through-shields mutator active or not... This mod will actually create a torpedo copy which will change to its appropiate NetType if it considers that the shields need to be pierced.
-# pTorp.SetNetType (Multiplayer.SpeciesToTorp.PHASEDPLASMA)
+# "HullDmgMultiplier" will multiply upon the base global multiplier for hull damage. Default is x1.0.
+# "ShieldDmgMultiplier" will multiply upon the base global multiplier for shield damage. Default is x1.0.
+# "Beams" is an optional list with Phaser Bank names, wich will narrow the asgard beams to a select few. Not adding the field or making it blank will mean all beams are Asgard beams.
+
 # You can also add your ship to an immunity list, not only the one below, in order to keep the files unaltered... just add to your Custom/Ships/shipFileName.py this:
 # NOTE: replace "Ambassador" with the abbrev
 # Also please note the value here has meaning:
@@ -35,28 +34,81 @@ Foundation.ShipDef.Ambassador.dTechs = {
 """
 # Regarding subTechs
 # As those with some idea of python language can see, you can stack more than 1 subtech.
-# However, while for hulls it is recommended to be accumulative (with the ideally-coded function multiplying each effect with the old one on a percentage so it makes it stronger/weaker overall), for shields it is recommended to only add one affected sub-tech per ship in particular, since while some shield behaviours (f.ex. making the weapon pass through, or never) are more varied and sometimes could contradict each other (depending on the sub-techs handling of the "shouldPassThrough" and "considerPiercing"), the most important probable con is that shield weaknesses will stack instead of making an average value (for that you may sometimes need to make a hybrid technology).
 # The fields shield and hull functions have are the following:
-## "pShip": the Ship instance (not the pInstance Foundation one) of the ship that got hit by the projectile 
-## "sScript": the Script from the above ship (not the hardpoint)
-## "sShipScript": the filename of the ship script from above
-## "pInstance": the Foundation ship Instance, which often holds the special races, techs and some more, specially in KM installs.
-## "pEvent": the event in question when the projectile hit. Could be useful on certain situations
-## "pTorp": the torpedo instance that hit the pShip
-## "pInstancedict": the pInstance.__dict__, that way we can fetch it once without using the "hacky" __dict__ every single time we want the pInstance.__dict__
-## "pAttackerShipID": the ID number of the vessel that attacked pShip, or at least the parent of the torpedo that hit pShip
-## "hullDamageMultiplier": multiplies the base damage of the torpedo if it hits the hull. While you could totally overwrite the value a previous function did, it is polite to not ignore all values. On the case of hulls the functions must make sure the values are multiplied between each other (so if you make it 0.8 times something, then 2.0 times, it wil be 0.8 * 2.0 = 1.6). Careful with negative values, since they may counteract each other if an even amount of functions apply them.
-## "shieldDamageMultiplier": multiplies the damage done to the shields if they are hit. While you could totally overwrite the value a previous function did, it is polite to not ignore all values. On the case of shields, functions often stack results between each other (so if you make it 0.8 times something, then 2.0 times, it wil be 0.8 + 2.0 = 2.8). Negative values are allowed.
-## "shouldPassThrough": values greater than 1 means that this script will create a torpedo replica capable of bypassing the shields. Should be stacked with sums. Negative values are allowed.
-## "considerPiercing": if the shield was not penetrated by the projectile hit, it will revise the shields, and if they are below a certain percentage, it will create a torpedo replica that will continue working past the shield 
-## "shouldDealAllFacetDamage": values greater than 0 will make the shield recalculation function to drain all shield facets, instead of 1.
-## "negateRegeneration": values greater than 0 mean that upon hitting, the shield drain will additionally perform a drain equal to each shield facet regeneration for each shield facet.
-## "wasChanged": if this value is lesser than 0, it will perform the default effect (shield drain where "shouldPassThrough" = 0, "considerPiercing" = 0, "shouldPassThrough", "shieldDamageMultiplier = shieldDamageMultiplier + AsgardBeamsGenericShieldDamageMultiplier" and "negateRegeneration = negateRegeneration - 1" / default hull hit drain). When some script changes things it is recommended to stack "1" to this value, unless you want a default behaviour with modified "shieldDamageMultiplier" and "negateRegeneration"
-# If you want an new specific subTech that modifies part of the SG AsgardBeams Effect, you can do it by adding a file under the scripts\Custom\Techs\SGAsgardBeamsWeaponScripts directory; if possible with a reasonable name related to the Technology(ies) it covers. 
+## "attackerID", the ID number of the vessel that attacked
+## "pAttacker", the Ship instance (not the pInstance Foundation one) of the ship that attacked 
+## "pAttackerInstance", the attacker ship's Foundation ship Instance, which often holds the special races, techs and some more, specially in KM installs.
+## "pAttackerInstanceDict", __dict__ of the above, that way we can fetch it once without using the "hacky" __dict__ every single time we want the pInstance.__dict__
+## "targetID", the ID number of the vessel that was attacked
+## "pTarget", the Ship instance (not the pInstance Foundation one) of the ship that got hit 
+## "pTargetInstance", the target ship's Foundation ship Instance
+## "pTargetInstanceDict", __dict__ of the above, that way we can fetch it once without using the "hacky" __dict__ every single time we want the pInstance.__dict__
+## "sScript", the Script from the Target ship (not the hardpoint)
+## "sShipScript", the filename of the ship script from above
+## "pEvent", the event in question when the projectile hit. Could be useful on certain situations
+## "hullDamageMultiplier", multiplies the base damage of the torpedo if it hits the hull. While you could totally overwrite the value a previous function did, it is polite to not ignore all values. On the case of hulls the functions must make sure the values are multiplied between each other (so if you make it 0.8 times something, then 2.0 times, it wil be 0.8 * 2.0 = 1.6). Careful with negative values, since they may counteract each other if an even amount of functions apply them.
+## "shieldDamageMultiplier", multiplies the base damage of the torpedo if it hits the shield. While you could totally overwrite the value a previous function did, it is polite to not ignore all values. On the case of shield the functions must make sure the values are multiplied between each other (so if you make it 0.8 times something, then 2.0 times, it wil be 0.8 * 2.0 = 1.6). Careful with negative values, since they may counteract each other if an even amount of functions apply them.
+## "shouldPassThrough", values greater than 1 means that this script will create a torpedo replica capable of bypassing the shields. Should be stacked with sums. Negative values are allowed.
+## "wasChanged": if this value is lesser than 0, it will perform the default effect (torpedo where "shouldPassThrough" = 0 and shield damage is halved from the generic in some regards). When some script changes things it is recommended to stack "1" to this value, unless you want a default behaviour with modified "shieldDamageMultiplier"
+##
+# If you want an new specific subTech that modifies part of the SG AsgardBeams Effect, you can do it by adding a file under the scripts\Custom\Techs\SGAsgardBeamWeaponScripts directory; if possible with a reasonable name related to the Technology(ies) it covers. 
 # For example, if the special sub-tech is called "SG Shields" you can call the file "SGShieldsConfiguration.py"; Sometimes certain sub-techs may go together on the same function of a file because being related or being sub-components.
 # Below there's an example used for the aforementioned SGShieldsConfiguration, at least the 1.0 version, but modified to include more function examples, clarify and with some parts commented so as to not trigger commentary issues - those sections have replaced the triple " with ####@@@
 """
-TO-DO UPDATE THIS SECTION
+# THIS FILE IS NOT SUPPORTED BY ACTIVISION
+# THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
+# 27th August 2024, by Alex SL Gato (CharaToLoki)
+# Version: 1.1
+# Meant to be used alongside the SGAsgardBeamWeapon Technology (located at scripts/Custom/Techs), this file must be under scripts/Custom/Techs/SGAsgardBeamWeaponScripts
+# As these are Sub-techs with some leeway, their manuals must be explained here:
+##################################
+# SPECIFIC SUB-TECH MANUAL:
+# This file takes care of how SG shielding is affected by SG AsgardBeam Weapons.
+# The reason we make a tech for this, is mostly as a way to allow a non-ZPM BC-304 to resist its own Asgard Beam, while not being so powerful it could shrug the most powerful SG weapons.
+# And even between SG shields, some behave differently:
+
+# On this case, more info about SG shields will be reviewed on their main SG Shields technology
+# NOTE: Imports and additional functions may be necessary here as well, depending on how creative the sub-tech becomes
+import App
+from bcdebug import debug
+import traceback
+
+import Foundation
+import FoundationTech
+
+import string
+
+# SG-related info
+xWraithHullResistMultiplier = 0.25
+xAsgardShieldResistMultiplier = (1.0/3.0)
+
+##### This function below is used for shield behaviour towards this weapon (when the hull has not been hit)
+def interactionShieldBehaviour(attackerID, pAttacker, pAttackerInstance, pAttackerInstanceDict, targetID, pTarget, pTargetInstance, pTargetInstanceDict, sScript, sShipScript, pEvent, hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, wasChanged):
+	if pTargetInstance and pTargetInstanceDict.has_key("SG Shields"):
+		wasChanged = wasChanged + 1
+		if pTargetInstanceDict["SG Shields"].has_key("RaceShieldTech"):
+			RaceShieldTech = pTargetInstanceDict["SG Shields"]["RaceShieldTech"]
+			if RaceShieldTech == "Asgard": # Resistances
+				global xAsgardShieldResistMultiplier
+				shieldDamageMultiplier = shieldDamageMultiplier * xAsgardShieldResistMultiplier
+
+	return hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, wasChanged
+
+##### This function below is used for hull behaviour towards this weapon (when the hull has been hit)
+def interactionHullBehaviour(attackerID, pAttacker, pAttackerInstance, pAttackerInstanceDict, targetID, pTarget, pTargetInstance, pTargetInstanceDict, sScript, sShipScript, pEvent, hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, wasChanged):
+	if pTargetInstance and pTargetInstanceDict.has_key("SG Shields"): # Own turf, SG Ion Weapons are meant to deal additional damage to weak Naquadah and some Neutronium hulls... and Replicator hulls
+		RaceShieldTech = None
+		if pTargetInstanceDict["SG Shields"].has_key("RaceHullTech"): # We will assume shields and hull tech races are the same unless we say otherwise, for simplicity to not add too many fields.
+			RaceShieldTech = pTargetInstanceDict["SG Shields"]["RaceHullTech"]
+		elif pTargetInstanceDict["SG Shields"].has_key("RaceShieldTech"):
+			RaceShieldTech = pTargetInstanceDict["SG Shields"]["RaceShieldTech"]
+
+		if RaceShieldTech == "Wraith":
+			global xWraithHullResistMultiplier
+			wasChanged = wasChanged + 1
+			hullDamageMultiplier = hullDamageMultiplier * (xWraithHullResistMultiplier)
+
+	return hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, wasChanged
 
 """
 
@@ -68,21 +120,19 @@ import nt
 import string
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-            "Version": "0.92",
+            "Version": "0.93",
             "License": "LGPL",
             "Description": "Read the small title above for more info"
             }
 # A. GENERAL BASIC CONFIGURATION
 # Some generic info that would affect mostly everyone
-AsgardBeamsGenericShieldDamageMultiplier = 100.0 # An Asgard Beam in 4-6 hits can take down an Ori shield. Ori Mothership shields at the time of release have 150k shields, current asgard beams have 25000 * 0.75 dmg = 18750 ...so we need to deal at a minimum 150k * 0.75 (enough to bypass Ori shields) / 4 <= 29k dmg per shot. For bleedthrough control reasons the Asgard torpedo base damage needs to be a 100th part, so it deals 300 dmg, which we need to multiply by 100 to get the desired damage ##### TO-DO ####(for regular STBC compatibility, and because a Wraith cruiser has 12000 hull, either add a multiplier for Wraith ships that reduce that damage to 9000 (multiplier 30 in the end) )
-AsgardBeamsHullDamageMultiplier = 50.0 # To avoid blasting the Ori hull almost always in one hit.
+AsgardBeamsGenericShieldDamageMultiplier = 100.0 # An Asgard Beam in 4-6 hits can take down an Ori shield. Ori Mothership shields at the time of release have 150k shields, current asgard beams have 25000 * 0.75 dmg = 18750 ...so we need to deal at a minimum 150k * 0.75 (enough to bypass Ori shields) / 4 <= 29k dmg per shot aprox. For bleedthrough control reasons the Asgard torpedo base damage needs to be a 100th part, so it deals 300 dmg, which we need to multiply by 100 to get the desired damage.
+
+AsgardBeamsHullDamageMultiplier = 50.0
 
 # At the moment I cannot really think of one ship immune to both effects in particular legacy-wise... adding this Dummy
 global lImmuneSGAsgardBeamsWeaponShips
 lImmuneSGAsgardBeamsWeaponShips = []
-
-#### TO-DO ####
-
 
 SlowDownRatio = 3.0/70.0 # This is an auxiliar value, it helps us for when a ship is too small, to prevent a torpedo from just teleporting to the other side
 
@@ -95,7 +145,6 @@ SlowDownRatio = 3.0/70.0 # This is an auxiliar value, it helps us for when a shi
 ## "AsgardBeamsHullDamageMultiplier": allows to edit the base damage multiplier to all hulls without needing to edit the main technology file. Default is 10 (10 -1, to deal 10 times the original damage, this script deals those 9 extra).
 ## "AsgardBeamsGenericShieldDamageMultiplier": allows to edit the base damage multiplier to all shields without needing to edit the main technology file. Default is 2 (2 -1, means deal damage once more)
 ## "SlowDownRatio": an auxiliar value that is used for considering threshold speed reduction (it's a value meant to reduce the chances of firing a too-rapid regular projectile which then might go too fast and bypass a ship instead of hitting it)
-
 
 variableNames = {}
 
@@ -125,17 +174,17 @@ def findscriptsShipsField(pShip, thingToFind):
 # Based on LoadExtraPlugins by Dasher42, but heavily modified so it only imports a few things
 def LoadExtraLimitedPlugins(dExcludePlugins=_g_dExcludeSomePlugins):
 
-	dir="scripts\\Custom\\Techs\\SGAsgardBeamsWeaponScripts" # I want to limit any vulnerability as much as I can while keeping functionality
+	dir="scripts\\Custom\\Techs\\SGAsgardBeamWeaponScripts" # I want to limit any vulnerability as much as I can while keeping functionality
 	import string
 
 	try:
 		list = nt.listdir(dir)
 		if not list:
-			print "ERROR: Missing scripts/Custom/Techs/SGAsgardBeamsWeaponScripts folder for SGAsgardBeamWeapon technology"
+			print "ERROR: Missing scripts/Custom/Techs/SGAsgardBeamWeaponScripts folder for SGAsgardBeamWeapon technology"
 			return 0
 
 	except:
-		print "ERROR: Missing scripts/Custom/Techs/SGAsgardBeamsWeaponScripts folder for SGAsgardBeamWeapon technology, or other error:"
+		print "ERROR: Missing scripts/Custom/Techs/SGAsgardBeamWeaponScripts folder for SGAsgardBeamWeapon technology, or other error:"
 		traceback.print_exc()
 		return 0
 	list.sort()
@@ -209,8 +258,8 @@ def LoadExtraLimitedPlugins(dExcludePlugins=_g_dExcludeSomePlugins):
 
 
 LoadExtraLimitedPlugins()
-print AsgardBeamsHullDamageMultiplier, AsgardBeamsGenericShieldDamageMultiplier
-print variableNames
+#print AsgardBeamsHullDamageMultiplier, AsgardBeamsGenericShieldDamageMultiplier
+#print variableNames
 
 try:
 	import Foundation
@@ -224,9 +273,13 @@ try:
 	from math import *
 
 	# based on the FedAblativeArmour.py script, a fragment probably imported from ATP Functions by Apollo
-	def NiPoint3ToTGPoint3(p):
+	def NiPoint3ToTGPoint3(p, factor = 1.0):
 		kPoint = App.TGPoint3()
-		kPoint.SetXYZ(p.x, p.y, p.z)
+		kPoint.SetXYZ(p.x * factor, p.y * factor, p.z * factor)
+		return kPoint
+
+	def TGPoint3ToNiPoint3(p, factor=1.0):
+		kPoint = App.NiPoint3(p.x * factor, p.y * factor, p.z * factor)
 		return kPoint
 
 	def findShipInstance(pShip):
@@ -264,7 +317,8 @@ try:
 		pTorp.SetDamageRadiusFactor(dmgRd)
 		pTorp.SetDamage(damage)
 		pTorp.SetNetType(NetType)
-		pTorp.SetUsePhysics(0) # TO-DO CHECK IF THIS CAUSES MORE ISSUES
+		pTorp.SetMass(0.00000001)
+		pTorp.SetUsePhysics(0) # TO-DO CHECK A WAY TO REDUCE TORPEDO EXPLOSION SIZE
 		pTorp.UpdateNodeOnly()
 
 		pShip = App.ShipClass_Cast(App.TGObject_GetTGObjectPtr(pShipID))
@@ -316,7 +370,7 @@ try:
 			FoundationTech.TechDef.__init__(self, name)
 			self.pEventHandler = App.TGPythonInstanceWrapper()
 			self.pEventHandler.SetPyWrapper(self)
-			App.g_kEventManager.RemoveBroadcastHandler(App.ET_WEAPON_HIT, self.pEventHandler, "OneWeaponHit")
+			App.g_kEventManager.RemoveBroadcastHandler(App.ET_WEAPON_HIT, self.pEventHandler, "OneWeaponHit") 
 			App.g_kEventManager.AddBroadcastPythonMethodHandler(App.ET_WEAPON_HIT, self.pEventHandler, "OneWeaponHit")
 
 		def IsSGAsgardBeamsWeaponYield(self):
@@ -335,7 +389,7 @@ try:
 
 			return fRadius, fDamage, kPoint
 
-		def shieldRecalculationAndBroken(self, pShip, kPoint, extraDamageHeal, shieldThreshold = 0.25, multifacet = 0, negateRegeneration=0):
+		def shieldIsLesserThan(self, pShip, kPoint, extraDamageHeal, shieldThreshold = 0.2, multifacet = 0, negateRegeneration=0):
 
 			pShields = pShip.GetShields()
 			shieldHitBroken = 0
@@ -362,7 +416,7 @@ try:
 					shieldDirNearest = lReferencias.index(pReferenciado)
 				else:
 					shieldHitBroken = 1
-				
+
 				pShieldsProperty = pShields.GetProperty()
 				for shieldDir in range(App.ShieldClass.NUM_SHIELDS):
 					if shieldDirNearest == shieldDir or multifacet != 0:
@@ -371,26 +425,28 @@ try:
 						fRecharge = 0
 						if pShieldsProperty and negateRegeneration != 0:
 							fRecharge = -pShieldsProperty.GetShieldChargePerSecond(shieldDir)
-						resultHeal = fCurr + extraDamageHeal + fRecharge
+						resultHeal = fCurr + fRecharge
 						if resultHeal < 0.0:
 							resultHeal = 0.0
 						elif resultHeal > fMax:
 							resultHeal = fMax
 						pShields.SetCurShields(shieldDir, resultHeal)
 						
-						if shieldDirNearest == shieldDir and (fMax <= 0 or resultHeal < (shieldThreshold * fMax)):
+						if (shieldDirNearest == shieldDir or multifacet == 2) and (fMax <= 0.0 or fMax <= extraDamageHeal or resultHeal <= extraDamageHeal or resultHeal < (shieldThreshold * fMax)):
 							shieldHitBroken = 1
 			else:
 				shieldHitBroken = 1
 
 			return shieldHitBroken
 
-		def OneWeaponHit(self, pEvent): # This throws attribute Error TO-DO CHECK WHY
+		def OneWeaponHit(self, pEvent):
 			debug(__name__ + ", OneWeaponHit")
 			try:
+				if pEvent.GetWeaponType() != pEvent.PHASER:
+					return 0
+
 				# First check we have valid targets and attackers
-				print "weapon hit"
-				pAttacker = App.ShipClass_Cast(pEvent.GetFiringObject())
+				pAttacker = App.ShipClass_Cast(pEvent.GetFiringObject()) # If we use App.ET_WEAPON_HIT, it is this
 				pTarget = App.ShipClass_Cast(pEvent.GetDestination())
 
 				if not pAttacker or not pTarget:
@@ -409,10 +465,7 @@ try:
 				pTargetInstance = findShipInstance(pTarget)
 			
 				if not pAttackerInstance or not pAttackerInstance.__dict__.has_key("SG Asgard Beams Weapon"):
-					print "attacker lacks asgard beams"
 					return 0
-
-
 
 				# Then check immunities before doing calculations
 				sScript     = pTarget.GetScript()
@@ -422,6 +475,7 @@ try:
 				if sShipScript in lImmuneSGAsgardBeamsWeaponShips:
 					return 0
 
+				pTargetInstanceDict = None
 				if pTargetInstance:
 					pTargetInstanceDict = pTargetInstance.__dict__
 					if(pEvent.IsHullHit()):
@@ -431,207 +485,233 @@ try:
 						if pTargetInstanceDict.has_key('SG Asgard Beams Weapon Immune') and pTargetInstanceDict['SG Asgard Beams Weapon Immune'] > 0:
 							return 0
 
+				pWeaponFired = App.Weapon_Cast(pEvent.GetSource())
+
+				if pWeaponFired == None:
+					print "no weapon stopped fired obj..."
+					return 0
+
+				pAttackerInstanceDict = pAttackerInstance.__dict__
+
+				if pAttackerInstanceDict["SG Asgard Beams Weapon"].has_key("Beams") and len(pAttackerInstanceDict["SG Asgard Beams Weapon"]["Beams"]) > 0:
+					#print "SGAsgardBeamWeapon: I have beams key, verifying the phaser bank is among them"
+					lBeamNames = pAttackerInstanceDict["SG Asgard Beams Weapon"]["Beams"]		
+
+					if not pWeaponFired.GetName() in lBeamNames:
+						#print "SGAsgardBeamWeapon: cancelling, ship has SGAsgardBeamWeapon equipped but not for that beam..."
+						return
+				#else:
+				#	print "SGAsgardBeamWeapon: I do not have beams key, I will assume all phasers have SG Asgard Beam weapons ability"
+
 				# Ok now the shot is almost guaranteed, proceed with calculations
 
 				fRadius, fDamage, kPoint = self.EventInformation(pEvent)
 				if fDamage <= 0.0:
 					return
 
-				# TO-DO MAYBE MOVE TO OTHER AREA TO BE MORE EFFICIENT?
-				# TO-DO IF THE ORI KEEP GETTING INVULNERABLE SPOTS WHILE A REGULAR SHIP WITH HUGE SHIELDS LACKS THE ISSUE, THEN ADJUST THE SG SHIELDS THING SO IF DOES A WHOLE SHIELD CHECKOUT INSTEAD OF JUST ONE FACET
-				# TO-DO CHECK ways to avoid the torpedo making the target spin like crazy if hit, also check if yo can make the Torp.SetUsePhysics(0) or something that disabled teh collision knockback for that torp in particular, also check pTorp.GetMass and such, or if you can apply to the object that was hit a negative force pShip.ApplyForce()
-				# TO-DO MAYBE FOR HULL HIT VERIFY FOR TORPS IF THEIR DAMAGE RADIUS EQUALS THEIR TORP DAMAGE RADIUS, SO IF THE HULL WAS HIT MAYBE DO SOMETHING?
-				hullDamageMultiplier = 1.0 
-				shieldDamageMultiplier = 1.0
-				shouldPassThrough = 0
-				#considerPiercing = 0
-
-				pAttackerInstanceDict = pAttackerInstance.__dict__
-
 				global AsgardBeamsGenericShieldDamageMultiplier, AsgardBeamsHullDamageMultiplier
 
 				baseHullMultiplier = 1.0 * AsgardBeamsHullDamageMultiplier
 				baseShieldMultiplier = 1.0 * AsgardBeamsGenericShieldDamageMultiplier
-	
+
 				if pAttackerInstanceDict["SG Asgard Beams Weapon"].has_key("HullDmgMultiplier") and pAttackerInstanceDict["SG Asgard Beams Weapon"]["HullDmgMultiplier"] > 0.0:
 					baseHullMultiplier = baseHullMultiplier * pAttackerInstanceDict["SG Asgard Beams Weapon"]["HullDmgMultiplier"]
 
 				if pAttackerInstanceDict["SG Asgard Beams Weapon"].has_key("ShieldDmgMultiplier") and pAttackerInstanceDict["SG Asgard Beams Weapon"]["ShieldDmgMultiplier"] > 0.0:
 					baseShieldMultiplier = baseShieldMultiplier * pAttackerInstanceDict["SG Asgard Beams Weapon"]["ShieldDmgMultiplier"]
 
-				#### TO-DO CONTINUE HERE ####
+				hullDamageMultiplier = baseHullMultiplier
+				shieldDamageMultiplier = baseShieldMultiplier
+				shouldPassThrough = 0
 
 				wasHullChanged = 0
-				# TO-DO ADJUST CODE BELOW PROPERLY
-				'''
+
 				for item in variableNames.keys():
 					if variableNames[item].has_key("interactionHullBehaviour"): # These are reserved for when the hull has been hit! These are meant to be accumulative, for defenses.
 						hullDamageMultiplier3 = 0
 						shieldDamageMultiplier3 = 0
 						shouldPassThrough3 = 0
-						considerPiercing3 = 0
-						shouldDealAllFacetDamage3 = 0
 						wasHullChanged3 = 0
-						negateShieldRegeneration3 = 0
 						try:
-							hullDamageMultiplier3, shieldDamageMultiplier3, shouldPassThrough3, considerPiercing3, shouldDealAllFacetDamage3, wasHullChanged3, negateShieldRegeneration3 = variableNames[item]["interactionHullBehaviour"](pShip, sScript, sShipScript, pInstance, pEvent, pTorp, pInstancedict, attackerID, hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, considerPiercing, shouldDealAllFacetDamage, wasHullChanged, negateShieldRegeneration)
+							hullDamageMultiplier3, shieldDamageMultiplier3, shouldPassThrough3, wasHullChanged3 = variableNames[item]["interactionHullBehaviour"](attackerID, pAttacker, pAttackerInstance, pAttackerInstanceDict, targetID, pTarget, pTargetInstance, pTargetInstanceDict, sScript, sShipScript, pEvent, hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, wasHullChanged)
 						except:
 							hullDamageMultiplier3 = hullDamageMultiplier
 							shieldDamageMultiplier3 = shieldDamageMultiplier
 							shouldPassThrough3 = shouldPassThrough
-							considerPiercing3 = considerPiercing
-							shouldDealAllFacetDamage3 = shouldDealAllFacetDamage
 							wasHullChanged3 = wasHullChanged
-							negateShieldRegeneration3 = negateShieldRegeneration
 							print "Some SGAsgardBeamsWeapon hull subtech suffered an error"
 							traceback.print_exc()
 
 						hullDamageMultiplier = hullDamageMultiplier3
 						shieldDamageMultiplier = shieldDamageMultiplier3
 						shouldPassThrough = shouldPassThrough3
-						considerPiercing = considerPiercing3
-						shouldDealAllFacetDamage = shouldDealAllFacetDamage3
-						negateShieldRegeneration = negateShieldRegeneration3
 						wasHullChanged = wasHullChanged3
-				'''
+
 				if wasHullChanged > 0:
-					baseHullMultiplier = baseHullMultiplier * hullDamageMultiplier
-				
+					baseHullMultiplier = hullDamageMultiplier
+
 				wasShieldChanged = 0
-				# TO-DO ADJUST CODE BELOW PROPERLY
-				'''
 				for item in variableNames.keys():
 					if variableNames[item].has_key("interactionShieldBehaviour"): # These are reserved for when the shield has been hit! Also be careful, since these are more likely to stack weaknesses! Preferable to only have one of this type per ship
 						try:
 							hullDamageMultiplier2 = 0
 							shieldDamageMultiplier2 = 0
 							shouldPassThrough2 = 0
-							considerPiercing2 = 0
-							shouldDealAllFacetDamage2 = 0
-							wasShieldChanged2 = 0
-							negateShieldRegeneration2 = 0				
-							hullDamageMultiplier2, shieldDamageMultiplier2, shouldPassThrough2, considerPiercing2, shouldDealAllFacetDamage2, wasShieldChanged2, negateShieldRegeneration2 = variableNames[item]["interactionShieldBehaviour"](pShip, sScript, sShipScript, pInstance, pEvent, pTorp, pInstancedict, attackerID, hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, considerPiercing, shouldDealAllFacetDamage, wasShieldChanged, negateShieldRegeneration)
+							wasShieldChanged2 = 0			
+							hullDamageMultiplier2, shieldDamageMultiplier2, shouldPassThrough2, wasShieldChanged2 = variableNames[item]["interactionShieldBehaviour"](attackerID, pAttacker, pAttackerInstance, pAttackerInstanceDict, targetID, pTarget, pTargetInstance, pTargetInstanceDict, sScript, sShipScript, pEvent, hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, wasShieldChanged)
+
 						except:
 							hullDamageMultiplier2 = hullDamageMultiplier
 							shieldDamageMultiplier2 = shieldDamageMultiplier
 							shouldPassThrough2 = shouldPassThrough
-							considerPiercing2 = considerPiercing
-							shouldDealAllFacetDamage2 = shouldDealAllFacetDamage
 							wasShieldChanged2 = wasShieldChanged
-							negateShieldRegeneration2 = negateShieldRegeneration
-							print "Some SGIonWeapon shield subtech suffered an error"
+							print "Some SGAsgardBeamWeapon shield subtech suffered an error"
 							traceback.print_exc()
 
 						hullDamageMultiplier = hullDamageMultiplier2
 						shieldDamageMultiplier = shieldDamageMultiplier2
 						shouldPassThrough = shouldPassThrough2
-						considerPiercing = considerPiercing2
-						shouldDealAllFacetDamage = shouldDealAllFacetDamage2
 						wasShieldChanged = wasShieldChanged2
-						negateShieldRegeneration = negateShieldRegeneration2
-				'''
+
 				if wasShieldChanged <= 0:
 					# normal shields
 					shouldPassThrough = 0
-					#considerPiercing = 1 # TO-DO remove unused fields
-					#shouldDealAllFacetDamage = 0 
-					#negateShieldRegeneration = 0
+					baseShieldMultiplier = baseShieldMultiplier * 0.5 # Half damage to STBC shields because of Plasma shenanigans - don't worry it's still enough to break most ships in one or two shots.
 				else:
-					baseShieldMultiplier = baseShieldMultiplier * shieldDamageMultiplier
+					baseShieldMultiplier = shieldDamageMultiplier
 
-				if pEvent.GetWeaponType() == pEvent.PHASER: # TO-DO if in the end torpedoes are only fired if they are phasers, maybe get considerations above inside this area
-					# TO-DO ALSO ADD THE OPTION SO ONLY A FEW PHASERS ARE ASGARD BEAMS, LIKE WITH TACHYONBEAM TECH
-					print "it is a phaser, generating the torp"
+				# Since pHitPointE = NiPoint3ToTGPoint3(pEvent.GetWorldHitPoint()) works fine for shields, but is wonky for targeting subsystems in general, we need to do some kind of approximation where we later add a projection of it
+				pHitPointE = NiPoint3ToTGPoint3(pEvent.GetWorldHitPoint())
+				theOffset =  pAttacker.GetTargetOffsetTG() # This is given on the target's coordinates
+				theOffsetNi = TGPoint3ToNiPoint3(theOffset)
 
-					pHitPoint = NiPoint3ToTGPoint3(pEvent.GetWorldHitPoint())
+				pTargetShipNode = pTarget.GetNiObject()
 
-					pWeaponFired = App.Weapon_Cast(pEvent.GetSource())
+				pHitPointONi = App.TGModelUtils_LocalToWorldVector(pTargetShipNode, theOffsetNi)
+				pHitPointO = NiPoint3ToTGPoint3(pHitPointONi, 100.0)
 
-					if pWeaponFired == None:
-						print "no weapon stopped fired obj..."
-						return 0
+				targetplacement = pTarget.GetWorldLocation()
+				targetplacement.Add(pHitPointO)
 
-					pVec = CopyVector(pHitPoint) #NiPoint3ToTGPoint3(pEvent.GetWorldHitPoint())
-					pWpnPos = NiPoint3ToTGPoint3(pWeaponFired.GetWorldLocation())
-					pVec.Subtract(pWpnPos)
-					pVec.Unitize()
-					pVec.Scale(1)
+				pHitPointObj = targetplacement # Now THAT works
 
 
-					# TO-DO GET PHASER POWER
-					thePowerPercentageWanted = 1.0
-					pParentFired = pAttacker.GetPhaserSystem()
+				pVec = CopyVector(pHitPointObj)
+				pWpnPos = NiPoint3ToTGPoint3(pWeaponFired.GetWorldLocation())
+				pVec.Subtract(pWpnPos)
+
+				distTargetSubToMe = pVec.Length()
+
+
+				# FOR THIS, WE MUST DO THINGS FIRST:
+				'''
+				Projection things: first find the plane with those normals:
+				Ax + By + Cz + D = 0
+
+				the normal vector is the rect definition so the formula above reveals:
+				(pVec.x) * x + (pVec.y) * y + (pVec.z) * z + D = 0
+
+				since pHitPointE must be there as well...
+
+				(pVec.x) * (pHitPointE.x) + (pVec.y) * (pHitPointE.y) + (pVec.z) * (pHitPointE.z) + D = 0	=> D = -((pVec.x) * (pHitPointE.x) + (pVec.y) * (pHitPointE.y) + (pVec.z) * (pHitPointE.z))
+
+				With this done, we need to complete the rect equation to give us the projected point, and replace on the plane equation.
+				    { x = pWpnPos.x + pVec.x * lambda}
+				r = { y = pWpnPos.y + pVec.y * lambda}
+				    { z = pWpnPos.z + pVec.z * lambda}
+
+				(pVec.x) * (pWpnPos.x + pVec.x * lambda) + (pVec.y) * (pWpnPos.y + pVec.y * lambda) + (pVec.z) * (pWpnPos.z + pVec.z * lambda) + D = 0 =>
+				(pVec.x) * (pWpnPos.x) + (pVec.x) * (pVec.x) * (lambda) + (pVec.y) * (pWpnPos.y) + (pVec.y) * (pVec.y) * (lambda) + (pVec.z) * (pWpnPos.z) + (pVec.z) * (pVec.z) * (lambda) + D = 0 =>
+				( (pVec.x) * (pVec.x) + (pVec.y) * (pVec.y) + (pVec.z) * (pVec.z) ) * (lambda) = -((pVec.x) * (pWpnPos.x) + (pVec.y) * (pWpnPos.y) + (pVec.z) * (pWpnPos.z) + D) =>
+				lambda = -((pVec.x) * (pWpnPos.x) + (pVec.y) * (pWpnPos.y) + (pVec.z) * (pWpnPos.z) + D)/( (pVec.x) * (pVec.x) + (pVec.y) * (pVec.y) + (pVec.z) * (pVec.z) )
+
+				and then we replace lambda		
+				'''
+
+				planeD = -((pVec.x) * (pHitPointE.x) + (pVec.y) * (pHitPointE.y) + (pVec.z) * (pHitPointE.z))
+				lambdai = -((pVec.x) * (pWpnPos.x) + (pVec.y) * (pWpnPos.y) + (pVec.z) * (pWpnPos.z) + planeD)/( (pVec.x) * (pVec.x) + (pVec.y) * (pVec.y) + (pVec.z) * (pVec.z) )
+				proyEx = pWpnPos.x + pVec.x * lambdai
+				proyEy = pWpnPos.y + pVec.y * lambdai
+				proyEz = pWpnPos.z + pVec.z * lambdai
+
+				pHitPoint = App.TGPoint3()
+				pHitPoint.SetXYZ(proyEx, proyEy, proyEz)
+
+				pVec.Unitize()
+
+				thePowerPercentageWanted = 1.0
+				pParentFired = pAttacker.GetPhaserSystem()
+				if pParentFired:
+					thePowerPercentageWanted = (pParentFired.GetPowerLevel()/2.0) # The 2.0 is ebcause the phasers work that way, 100% is 2, 50% is 1, 0% is 0
+				else:
+					pParentFired = pWeaponFired.GetParentSubsystem()
 					if pParentFired:
-						thePowerPercentageWanted = (pParentFired.GetPowerLevel()/2.0) # The 2.0 is ebcause the phasers work that way, 100% is 2, 50% is 1, 0% is 0
-						print "power wanted for the phaser: ", thePowerPercentageWanted
+						thePowerPercentageWanted = (App.PoweredSubsystem_Cast(pParentFired).GetPowerLevel()/2.0)
+				if thePowerPercentageWanted <= 0.0:
+					thePowerPercentageWanted = 0.02
+
+				pTargetBID = pWeaponFired.GetTargetID()
+				pTargetB = App.ShipClass_Cast(App.TGObject_GetTGObjectPtr(pTargetBID))
+				if pTargetB:
+					targetID = pTargetB.GetObjID()			
+
+				global SlowDownRatio
+				mod = "Tactical.Projectiles.SGAsgardBeamDummy" # This torpedo was made so Automated Point Defence scripts stop harrasing us
+				try:
+					torpImportedInfo = __import__(mod)
+					baseTorpDamage = torpImportedInfo.GetDamage()
+					leNetType = Multiplayer.SpeciesToTorp.DISRUPTOR
+					if shouldPassThrough > 0:
+						pVec.Scale(0.001)
+						leNetType = Multiplayer.SpeciesToTorp.PHASEDPLASMA
+						pHitPoint.Add(pVec) # add because we want to guarantee they bypass the shields
 					else:
-						pParentFired = pWeaponFired.GetParentSubsystem() #TO-DO ACTUALLY CHECK THE PHASER INTENSITY PROPERTY? PhaserSystem.GetPowerLevel()
-						if pParentFired:
-							thePowerPercentageWanted = (App.PoweredSubsystem_Cast(pParentFired).GetPowerLevel()/2.0)
-					if thePowerPercentageWanted <= 0.0:
-						print "Nvm power percentage is no dmg"
-						return 0
-
-					pTargetBID = pWeaponFired.GetTargetID()
-					pTargetB = App.ShipClass_Cast(App.TGObject_GetTGObjectPtr(pTargetBID))
-					if pTargetB:
-						targetID = pTargetB.GetObjID()			
-
-					global SlowDownRatio
-					mod = "Tactical.Projectiles.SGAsgardBeamDummy" # TO-DO CHANGE TO A NEW ONE This torpedo was made so Automated Point Defence scripts stop harrasing us! First we make 
-					try:
-						torpImportedInfo = __import__(mod)
-						baseTorpDamage = torpImportedInfo.GetDamage()
-						leNetType = Multiplayer.SpeciesToTorp.DISRUPTOR
-						if shouldPassThrough > 0:
-							print "bypassing shields"
-							leNetType = Multiplayer.SpeciesToTorp.PHASEDPLASMA
-							#pHitPoint.Add(pVec) # add because we want to guarantee they bypass the shields
+						targetRadius = pTarget.GetRadius()
+						pDistanceShieldToSubsys = CopyVector(pHitPointObj)
+						pDistanceShieldToSubsys.Subtract(pHitPoint)
+						lengthShieldToSubSys = pDistanceShieldToSubsys.Length()
+						lengthMeToShields = distTargetSubToMe - lengthShieldToSubSys
+						if (lengthShieldToSubSys + 1) * 2 < distTargetSubToMe: # One thing is sure, we are closer to the shield than to the subsystem
+							if (lengthShieldToSubSys + 2) > distTargetSubToMe: # One thing is sure, we are inside the shields or so close we cannot do much else
+								pVec.Scale(distTargetSubToMe + 0.5)
+							else:
+								pVec.Scale((lengthShieldToSubSys + 2))
 						else:
-							print "not bypassing shields"
-							pHitPoint.Subtract(pVec) # subtract because we want to guarantee they always hit the shields
+							pVec.Scale(lengthShieldToSubSys + 2)
 
-						if(pEvent.IsHullHit()):
-							print "hull damage calc"
-							finalTorpDamage = thePowerPercentageWanted * baseTorpDamage * baseHullMultiplier
-						else:
+						pHitPoint = pHitPointObj
+						pHitPoint.Subtract(pVec) # subtract because we want to guarantee they always hit the shields
 
-							print "shield damage calc"
-							finalTorpDamage = thePowerPercentageWanted * baseTorpDamage * baseShieldMultiplier
+					torpVSHullDamage = thePowerPercentageWanted * baseTorpDamage * baseHullMultiplier
+					torpVSShieldDamage = thePowerPercentageWanted * baseTorpDamage * baseShieldMultiplier
+					shouldDoHull = self.shieldIsLesserThan(pTarget, kPoint, torpVSShieldDamage, 0.2, 0, 0)
 
-						launchSpeed = __import__(mod).GetLaunchSpeed()
-
-						if fRadius <= 0.0:
-							fRadius = 0.00125
-						else:
-							fRadius = fRadius * 0.0001
-
-						print "final torp damage is ", finalTorpDamage
-
-						pTempTorp = FireTorpFromPointWithVectorAndNetType(pHitPoint, pVec, mod, targetID, attackerID, launchSpeed, leNetType, finalTorpDamage, fRadius, 0, pTarget) # TO-DO 1, pTarget)
-						#pTempTorp.SetUsePhysics(0)
-						pTempTorp.SetLifetime(4.0)			
-					except:
-						print "You are missing 'Tactical.Projectiles.SGAsgardBeamDummy' torpedo on your install, without that the SG Asgard Beam Weapons here cannot deal extra hull damage... or another error happened"
-						traceback.print_exc()
-
+					if pEvent.IsHullHit() or shouldPassThrough > 0 or shouldDoHull > 0:
+						finalTorpDamage = torpVSHullDamage
+						leNetType = Multiplayer.SpeciesToTorp.PHASEDPLASMA
 					else:
-						print "The hull was not hit by the Asgard beam weapon"
+						finalTorpDamage = torpVSShieldDamage
 
+					launchSpeed = __import__(mod).GetLaunchSpeed()
 
-				elif pEvent.GetWeaponType() != pEvent.TRACTOR_BEAM:
-					#TO-DO It's a projectile, so we do nothing... I think?
-					print "it's a torp"
+					if fRadius <= 0.0:
+						fRadius = 0.00125
+					else:
+						fRadius = fRadius * 0.0001
 
-				# We get first information about defences that the other may have.			
+					print "final dmg: ", finalTorpDamage
+
+					pTempTorp = FireTorpFromPointWithVectorAndNetType(pHitPoint, pVec, mod, targetID, attackerID, launchSpeed, leNetType, finalTorpDamage, fRadius, 1, pTarget, theOffset)
+					#pTempTorp.SetUsePhysics(0)
+					pTempTorp.SetLifetime(1.0)			
+				except:
+					print "You are missing 'Tactical.Projectiles.SGAsgardBeamDummy' torpedo on your install, without that the SG Asgard Beam Weapons here cannot deal extra hull damage... or another error happened"
+					traceback.print_exc()		
 			
 			except:
 				print "	Error when handling SG Asgard Beams Weapon Hit"
 				traceback.print_exc()
 			return 0
-
-
-		####TO-DO REMOVE UNUSED FUNCTONS####
 
 	def ConvertPointNiToTG(point):
 		retval = App.TGPoint3()

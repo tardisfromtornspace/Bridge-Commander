@@ -22,9 +22,9 @@ def LoadModel(bPreLoad = 0):
 		# Surface Damage Res, Internal Damage Res, Burn Value, Hole Value,
 		# Search String for Glow, Search string for Specular, Suffix for specular
 		pLODModel = App.g_kLODModelManager.Create(pStats["Name"])
-		pLODModel.AddLOD(pStats["FilenameHigh"], 10, 200.0, 5.0, 5.0, 400, 150, "_glow", None, "_specular")
-		pLODModel.AddLOD(pStats["FilenameMed"], 10, 400.0, 5.0, 5.0, 400, 150, "_glow", None, "_specular")
-         	pLODModel.AddLOD(pStats["FilenameLow"], 10, 800.0, 5.0, 10.0, 400, 150, "_glow", None, "_specular")
+		pLODModel.AddLOD(pStats["FilenameHigh"], 10, 200.0, 5.0, 0.0, 400, 0.0, "_glow", None, "_specular")
+		pLODModel.AddLOD(pStats["FilenameMed"], 10, 400.0, 5.0, 0.0, 400, 0.0, "_glow", None, "_specular")
+         	pLODModel.AddLOD(pStats["FilenameLow"], 10, 800.0, 5.0, 0.0, 400, 0.0, "_glow", None, "_specular")
 #		kDebugObj = App.CPyDebug()
 		if (bPreLoad == 0):
 			pLODModel.Load()

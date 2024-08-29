@@ -90,7 +90,7 @@ lSWVulnerableLegacyList = (
 
 def interactionShieldBehaviour(pShip, sScript, sShipScript, pInstance, pEvent, pTorp, pInstancedict, pAttackerShipID, hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, considerPiercing, shouldDealAllFacetDamage, wasChanged, negateRegeneration):
 	global lSWVulnerableLegacyList
-	if pInstancedict.has_key("SW Shields") or sShipScript in lSWVulnerableLegacyList: # SW shields are extremely weak to Ion Weapons, they are used to knock them out, albeit not destroy them
+	if pInstance and pInstancedict.has_key("SW Shields") or sShipScript in lSWVulnerableLegacyList: # SW shields are extremely weak to Ion Weapons, they are used to knock them out, albeit not destroy them
 		wasChanged = wasChanged + 1
 		global IonSWShieldDamageMultiplier
 		shieldDamageMultiplier = shieldDamageMultiplier + IonSWShieldDamageMultiplier
@@ -103,7 +103,7 @@ def interactionShieldBehaviour(pShip, sScript, sShipScript, pInstance, pEvent, p
 
 def interactionHullBehaviour(pShip, sScript, sShipScript, pInstance, pEvent, pTorp, pInstancedict, pAttackerShipID, hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, considerPiercing, shouldDealAllFacetDamage, wasChanged, negateRegeneration):
 	global lSWVulnerableLegacyList
-	if pInstancedict.has_key("SW Shields") or sShipScript in lSWVulnerableLegacyList: # SW shields are extremely weak to Ion Weapons, they are used to knock them out, albeit not destroy them
+	if pInstance and pInstancedict.has_key("SW Shields") or sShipScript in lSWVulnerableLegacyList: # SW shields are extremely weak to Ion Weapons, they are used to knock them out, albeit not destroy them
 		wasChanged = wasChanged + 1
 
 		global IonSWHullDamageMultiplier

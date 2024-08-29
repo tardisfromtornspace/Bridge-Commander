@@ -53,6 +53,7 @@ def Create(pTorp):
 	# type. modify the SpeciesToTorp.py file to add the new type.
 	import Multiplayer.SpeciesToTorp
 	pTorp.SetNetType (Multiplayer.SpeciesToTorp.PHASEDPLASMA)
+	pTorp.SetLifetime(0.0)
 
 	return(0)
 
@@ -75,4 +76,4 @@ def GetGuidanceLifetime():
 	return 0.0 #100.0
 
 def GetMaxAngularAccel():
-	return 0.0 #9999.7
+	return 9999.7 # 0.0 would be the correct one tho
