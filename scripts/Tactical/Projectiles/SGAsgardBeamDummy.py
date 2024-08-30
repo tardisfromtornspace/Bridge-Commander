@@ -22,9 +22,9 @@ import App
 def Create(pTorp):
 
 	kGlowColor = App.TGColorA()
-	kGlowColor.SetRGBA(255.0 / 255.0, 65.0 / 255.0, 0.0, 1.000000)	
+	kGlowColor.SetRGBA(0.0 / 255.0, 65.0 / 255.0, 255.0 / 255.0, 1.000000)	
 	kCoreColor = App.TGColorA()
-	kCoreColor.SetRGBA(255.0 / 255.0, 252.0 / 255.0, 100.0 / 255.0, 1.000000)
+	kCoreColor.SetRGBA(0.0 / 255.0, 252.0 / 255.0, 100.0 / 255.0, 1.000000)
 
 	# Params are:
 
@@ -53,7 +53,7 @@ def Create(pTorp):
 	# type. modify the SpeciesToTorp.py file to add the new type.
 	import Multiplayer.SpeciesToTorp
 	pTorp.SetNetType (Multiplayer.SpeciesToTorp.PHASEDPLASMA)
-	pTorp.SetLifetime(0.0)
+	#pTorp.SetLifetime(0.0)
 
 	return(0)
 
@@ -73,7 +73,7 @@ def GetDamage():
 	return 250.0 # 290 would be ideal
 
 def GetGuidanceLifetime():
-	return 0.0 #100.0
+	return 100.0 #100.0
 
 def GetMaxAngularAccel():
 	return 9999.7 # 0.0 would be the correct one tho

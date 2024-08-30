@@ -173,6 +173,7 @@ def findscriptsShipsField(pShip, thingToFind):
 
 # Based on LoadExtraPlugins by Dasher42, but heavily modified so it only imports a few things
 def LoadExtraLimitedPlugins(dExcludePlugins=_g_dExcludeSomePlugins):
+	debug(__name__ + ", LoadExtraLimitedPlugins")
 
 	dir="scripts\\Custom\\Techs\\SGAsgardBeamWeaponScripts" # I want to limit any vulnerability as much as I can while keeping functionality
 	import string
@@ -274,11 +275,13 @@ try:
 
 	# based on the FedAblativeArmour.py script, a fragment probably imported from ATP Functions by Apollo
 	def NiPoint3ToTGPoint3(p, factor = 1.0):
+		debug(__name__ + ", NiPoint3ToTGPoint3")
 		kPoint = App.TGPoint3()
 		kPoint.SetXYZ(p.x * factor, p.y * factor, p.z * factor)
 		return kPoint
 
 	def TGPoint3ToNiPoint3(p, factor=1.0):
+		debug(__name__ + ", TGPoint3ToNiPoint3")
 		kPoint = App.NiPoint3(p.x * factor, p.y * factor, p.z * factor)
 		return kPoint
 
@@ -317,8 +320,8 @@ try:
 		pTorp.SetDamageRadiusFactor(dmgRd)
 		pTorp.SetDamage(damage)
 		pTorp.SetNetType(NetType)
-		pTorp.SetMass(0.00000001)
-		pTorp.SetUsePhysics(0) # TO-DO CHECK A WAY TO REDUCE TORPEDO EXPLOSION SIZE
+		#pTorp.SetMass(0.00000001)
+		#pTorp.SetUsePhysics(0)
 		pTorp.UpdateNodeOnly()
 
 		pShip = App.ShipClass_Cast(App.TGObject_GetTGObjectPtr(pShipID))
@@ -361,12 +364,29 @@ try:
 		kSpeed.Scale(fSpeed)
 		pTorp.SetVelocity(kSpeed)
 
-		print "Torpedo mass", pTorp.GetMass()
+		#print "Torpedo mass", pTorp.GetMass()
 
 		return pTorp
 
+	def PredictTargetLocation(pTarget, fSpeed):
+		# Find how far we are to our target.
+		debug(__name__ + ", PredictTargetLocation")
+		
+		# Get a rough estimate of how long it'll take our weapon
+		# to hit the target.
+		fTime = 0.5 #fDistance / fSpeed
+		
+		# Predict the target's position in that amount of time.
+		vPredicted = pTarget.GetWorldLocation()
+		pPhysicsTarget = App.PhysicsObjectClass_Cast(pTarget)
+		if (pPhysicsTarget != None):
+			vPredicted.Set(pPhysicsTarget.GetPredictedPosition( pTarget.GetWorldLocation(), pPhysicsTarget.GetVelocityTG(), pPhysicsTarget.GetAccelerationTG(), fTime ))
+		
+		return vPredicted
+
 	class SGAsgardBeamsWeapon(FoundationTech.TechDef):
 		def __init__(self, name, dict = {}):
+			debug(__name__ + ", __init__")
 			FoundationTech.TechDef.__init__(self, name)
 			self.pEventHandler = App.TGPythonInstanceWrapper()
 			self.pEventHandler.SetPyWrapper(self)
@@ -374,15 +394,19 @@ try:
 			App.g_kEventManager.AddBroadcastPythonMethodHandler(App.ET_WEAPON_HIT, self.pEventHandler, "OneWeaponHit")
 
 		def IsSGAsgardBeamsWeaponYield(self):
+			debug(__name__ + ", IsSGAsgardBeamsWeaponYield")
 			return 1
 
 		def IsPhaseYield(self):
+			debug(__name__ + ", IsPhaseYield")
 			return 0
 
 		def IsDrainYield(self):
+			debug(__name__ + ", IsDrainYield")
 			return 0
 
 		def EventInformation(self, pEvent):
+			debug(__name__ + ", EventInformation")
 			fRadius = pEvent.GetRadius()
 			fDamage = pEvent.GetDamage()
 			kPoint = NiPoint3ToTGPoint3(pEvent.GetObjectHitPoint())
@@ -390,7 +414,7 @@ try:
 			return fRadius, fDamage, kPoint
 
 		def shieldIsLesserThan(self, pShip, kPoint, extraDamageHeal, shieldThreshold = 0.2, multifacet = 0, negateRegeneration=0):
-
+			debug(__name__ + ", shieldIsLesserThan")
 			pShields = pShip.GetShields()
 			shieldHitBroken = 0
 			if pShields and not (pShields.IsDisabled() or not pShields.IsOn()):
@@ -589,8 +613,20 @@ try:
 
 				pHitPointONi = App.TGModelUtils_LocalToWorldVector(pTargetShipNode, theOffsetNi)
 				pHitPointO = NiPoint3ToTGPoint3(pHitPointONi, 100.0)
+				mod = "Tactical.Projectiles.SGAsgardBeamDummy" # This torpedo was made so Automated Point Defence scripts stop harrasing us
+				torpImportedInfo = None
+				torpImportedSpeed = 300.0
+				try:
+					torpImportedInfo = __import__(mod)
+					if hasattr(torpImportedInfo, "GetLaunchSpeed"):
+						torpImportedSpeed = torpImportedInfo.GetLaunchSpeed()	
+				except:
+					print "Tactical.Projectiles.SGAsgardBeamDummy is missing from the install, or similar, we need that to deal damage!"
+					traceback.print_exc()
+					return 0
 
-				targetplacement = pTarget.GetWorldLocation()
+				targetplacement = PredictTargetLocation(pTarget, torpImportedSpeed) # NEW TEST CODE
+				#targetplacement = pTarget.GetWorldLocation() # THIS IS WITHOUT PREDICTIVE THINGS TO AIM BETTER
 				targetplacement.Add(pHitPointO)
 
 				pHitPointObj = targetplacement # Now THAT works
@@ -656,11 +692,15 @@ try:
 					targetID = pTargetB.GetObjID()			
 
 				global SlowDownRatio
-				mod = "Tactical.Projectiles.SGAsgardBeamDummy" # This torpedo was made so Automated Point Defence scripts stop harrasing us
+
 				try:
-					torpImportedInfo = __import__(mod)
 					baseTorpDamage = torpImportedInfo.GetDamage()
 					leNetType = Multiplayer.SpeciesToTorp.DISRUPTOR
+
+					torpVSHullDamage = thePowerPercentageWanted * baseTorpDamage * baseHullMultiplier
+					torpVSShieldDamage = thePowerPercentageWanted * baseTorpDamage * baseShieldMultiplier
+					shouldDoHull = self.shieldIsLesserThan(pTarget, kPoint, torpVSShieldDamage, 0.2, 0, 0)
+
 					if shouldPassThrough > 0:
 						pVec.Scale(0.001)
 						leNetType = Multiplayer.SpeciesToTorp.PHASEDPLASMA
@@ -673,18 +713,17 @@ try:
 						lengthMeToShields = distTargetSubToMe - lengthShieldToSubSys
 						if (lengthShieldToSubSys + 1) * 2 < distTargetSubToMe: # One thing is sure, we are closer to the shield than to the subsystem
 							if (lengthShieldToSubSys + 2) > distTargetSubToMe: # One thing is sure, we are inside the shields or so close we cannot do much else
+								print "Range 1"
 								pVec.Scale(distTargetSubToMe + 0.5)
 							else:
+								print "Range 2"
 								pVec.Scale((lengthShieldToSubSys + 2))
 						else:
+							print "Range 3"
 							pVec.Scale(lengthShieldToSubSys + 2)
 
 						pHitPoint = pHitPointObj
 						pHitPoint.Subtract(pVec) # subtract because we want to guarantee they always hit the shields
-
-					torpVSHullDamage = thePowerPercentageWanted * baseTorpDamage * baseHullMultiplier
-					torpVSShieldDamage = thePowerPercentageWanted * baseTorpDamage * baseShieldMultiplier
-					shouldDoHull = self.shieldIsLesserThan(pTarget, kPoint, torpVSShieldDamage, 0.2, 0, 0)
 
 					if pEvent.IsHullHit() or shouldPassThrough > 0 or shouldDoHull > 0:
 						finalTorpDamage = torpVSHullDamage
@@ -697,9 +736,8 @@ try:
 					if fRadius <= 0.0:
 						fRadius = 0.00125
 					else:
-						fRadius = fRadius * 0.0001
-
-					print "final dmg: ", finalTorpDamage
+						fRadius = fRadius * 0.0004
+						#fRadius = fRadius / (1.0 * finalTorpDamage) # fRadius = fRadius * 0.0001 was the old one
 
 					pTempTorp = FireTorpFromPointWithVectorAndNetType(pHitPoint, pVec, mod, targetID, attackerID, launchSpeed, leNetType, finalTorpDamage, fRadius, 1, pTarget, theOffset)
 					#pTempTorp.SetUsePhysics(0)
@@ -713,13 +751,7 @@ try:
 				traceback.print_exc()
 			return 0
 
-	def ConvertPointNiToTG(point):
-		retval = App.TGPoint3()
-		retval.SetXYZ(point.x, point.y, point.z)
-		return retval
-
 	oSGAsgardBeamsWeapon = SGAsgardBeamsWeapon("SG Asgard Beams Weapon")
-	print "Asgard Beams operational"
 
 except:
 	print "FoundationTech, or the FTB mod, or both are not installed, \nTrasphasic Torpedoes are there but NOT enabled or present in your current BC installation"
@@ -728,12 +760,15 @@ except:
 class SGAsgardBeamsWeaponDef(FoundationTech.TechDef):
 
 	def OnTorpDefense(self, pShip, pInstance, pTorp, oYield, pEvent):
+		debug(__name__ + ", OnTorpDefense")
 		self.OnProjectileDefense(pShip, pInstance, pTorp, oYield, pEvent)
 
 	def OnPulseDefense(self, pShip, pInstance, pTorp, oYield, pEvent):
+		debug(__name__ + ", OnPulseDefense")
 		self.OnProjectileDefense(pShip, pInstance, pTorp, oYield, pEvent)
 
 	def OnProjectileDefense(self, pShip, pInstance, pTorp, oYield, pEvent):
+		debug(__name__ + ", OnProjectileDefense")
 		if oYield and hasattr(oYield, "IsSGAsgardBeamsWeaponYield") and oYield.IsSGAsgardBeamsWeaponYield() != 0 and pInstance and pInstance.__dict__.has_key('SG AsgardBeams Weapon Immune') and pInstance.__dict__['SG AsgardBeams Weapon Immune'] >= 2:
 			return 1
 

@@ -2005,3 +2005,388 @@ Couldn't initialize symbol reader, no symbol info available
 Call stack:
 Address   Frame     Logical addr  Module
 00717874  000B4B2A  0001:00316874 C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+//=====================================================
+Current Time: Thu Aug 29 17:05:41 2024
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  004BC76A 01:000BB76A C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+Registers:
+EAX:50F24CC8
+EBX:0088C6F4
+ECX:00000000
+EDX:478449E8
+ESI:0019FA74
+EDI:00000000
+CS:EIP:0023:004BC76A
+SS:ESP:002B:0019F9F8  EBP:0019FA74
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+004BC76A  0019FA74  0001:000BB76A C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+//=====================================================
+Current Time: Thu Aug 29 23:26:08 2024
+Exception code: C0000094 INT_DIVIDE_BY_ZERO
+Fault address:  0071AEC7 01:00319EC7 C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+Registers:
+EAX:00003010
+EBX:22F1D99C
+ECX:B0109B4E
+EDX:00000000
+ESI:22F1D99C
+EDI:005BF680
+CS:EIP:0023:0071AEC7
+SS:ESP:002B:0019F848  EBP:00000000
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+
+//=====================================================
+Current Time: Thu Aug 29 23:34:51 2024
+Exception code: C0000094 INT_DIVIDE_BY_ZERO
+Fault address:  0071AEC7 01:00319EC7 C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+Registers:
+EAX:000027B8
+EBX:1FD9F0A4
+ECX:A7B81A4D
+EDX:00000000
+ESI:1FD9F0A4
+EDI:005BF680
+CS:EIP:0023:0071AEC7
+SS:ESP:002B:0019F848  EBP:00000000
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+
+//=====================================================
+Current Time: Thu Aug 29 23:38:42 2024
+Exception code: C0000094 INT_DIVIDE_BY_ZERO
+Fault address:  0071AEC7 01:00319EC7 C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+Registers:
+EAX:00002E9B
+EBX:1F068AE4
+ECX:AE9BE1CD
+EDX:00000000
+ESI:1F068AE4
+EDI:005BF680
+CS:EIP:0023:0071AEC7
+SS:ESP:002B:0019F848  EBP:00000000
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+
+//=====================================================
+Current Time: Thu Aug 29 23:44:48 2024
+Exception code: C0000094 INT_DIVIDE_BY_ZERO
+Fault address:  0071AEC7 01:00319EC7 C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+Registers:
+EAX:00007992
+EBX:1EF9CBEC
+ECX:F9921668
+EDX:00000000
+ESI:1EF9CBEC
+EDI:005BF680
+CS:EIP:0023:0071AEC7
+SS:ESP:002B:0019F848  EBP:00000000
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+
+//=====================================================
+Current Time: Thu Aug 29 23:46:33 2024
+Exception code: C0000094 INT_DIVIDE_BY_ZERO
+Fault address:  0071AEC7 01:00319EC7 C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+Registers:
+EAX:00003C8B
+EBX:1EE0B644
+ECX:3C8B4DD5
+EDX:00000000
+ESI:1EE0B644
+EDI:005BF680
+CS:EIP:0023:0071AEC7
+SS:ESP:002B:0019F848  EBP:00000000
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+
+//=====================================================
+Current Time: Thu Aug 29 23:52:33 2024
+Exception code: C0000094 INT_DIVIDE_BY_ZERO
+Fault address:  0071AEC7 01:00319EC7 C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+Registers:
+EAX:000018CD
+EBX:46BA6BDC
+ECX:98CD1439
+EDX:00000000
+ESI:46BA6BDC
+EDI:005BF680
+CS:EIP:0023:0071AEC7
+SS:ESP:002B:0019F848  EBP:00000000
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+
+//=====================================================
+Current Time: Thu Aug 29 23:55:07 2024
+Exception code: C0000094 INT_DIVIDE_BY_ZERO
+Fault address:  0071AEC7 01:00319EC7 C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+Registers:
+EAX:000064C5
+EBX:1FBC9284
+ECX:E4C54BF1
+EDX:00000000
+ESI:1FBC9284
+EDI:005BF680
+CS:EIP:0023:0071AEC7
+SS:ESP:002B:0019F848  EBP:00000000
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+
+//=====================================================
+Current Time: Thu Aug 29 23:58:45 2024
+Exception code: C0000094 INT_DIVIDE_BY_ZERO
+Fault address:  0071AEC7 01:00319EC7 C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+Registers:
+EAX:00000D94
+EBX:1FE0CA24
+ECX:0D946253
+EDX:00000000
+ESI:1FE0CA24
+EDI:005BF680
+CS:EIP:0023:0071AEC7
+SS:ESP:002B:0019F848  EBP:00000000
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+
+//=====================================================
+Current Time: Fri Aug 30 00:06:30 2024
+Exception code: C0000094 INT_DIVIDE_BY_ZERO
+Fault address:  0071AEC7 01:00319EC7 C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+Registers:
+EAX:00006AF3
+EBX:22F2581C
+ECX:6AF354D9
+EDX:00000000
+ESI:22F2581C
+EDI:005BF680
+CS:EIP:0023:0071AEC7
+SS:ESP:002B:0019F848  EBP:00000000
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+
+//=====================================================
+Current Time: Fri Aug 30 00:12:18 2024
+Exception code: C0000094 INT_DIVIDE_BY_ZERO
+Fault address:  0071AEC7 01:00319EC7 C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+Registers:
+EAX:00001E3A
+EBX:1FA4B56C
+ECX:9E3AE8C1
+EDX:00000000
+ESI:1FA4B56C
+EDI:005BF680
+CS:EIP:0023:0071AEC7
+SS:ESP:002B:0019F848  EBP:00000000
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+
+//=====================================================
+Current Time: Fri Aug 30 00:20:14 2024
+Exception code: C0000094 INT_DIVIDE_BY_ZERO
+Fault address:  0071AEC7 01:00319EC7 C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+Registers:
+EAX:00004F7D
+EBX:1F99943C
+ECX:4F7D8540
+EDX:00000000
+ESI:1F99943C
+EDI:005BF680
+CS:EIP:0023:0071AEC7
+SS:ESP:002B:0019F848  EBP:00000000
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+
+//=====================================================
+Current Time: Fri Aug 30 00:22:58 2024
+Exception code: C00000FD STACK_OVERFLOW
+Fault address:  7736A840 01:00049840 C:\Windows\SYSTEM32\ntdll.dll
+
+Registers:
+EAX:001C00EC
+EBX:00000009
+ECX:00000002
+EDX:00000001
+ESI:00000002
+EDI:001C0000
+CS:EIP:0023:7736A840
+SS:ESP:002B:000A3000  EBP:000A304C
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+//=====================================================
+Current Time: Fri Aug 30 01:03:30 2024
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  004899F9 01:000889F9 C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+Registers:
+EAX:00000000
+EBX:00000000
+ECX:39DE7198
+EDX:00000000
+ESI:00000000
+EDI:23160E60
+CS:EIP:0023:004899F9
+SS:ESP:002B:0019FACC  EBP:00000000
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+
+//=====================================================
+Current Time: Fri Aug 30 01:24:13 2024
+Exception code: C0000094 INT_DIVIDE_BY_ZERO
+Fault address:  0071AEC7 01:00319EC7 C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+Registers:
+EAX:00005A4E
+EBX:1EDC0E8C
+ECX:DA4E32EC
+EDX:00000000
+ESI:1EDC0E8C
+EDI:005BF680
+CS:EIP:0023:0071AEC7
+SS:ESP:002B:0019F848  EBP:00000000
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+
+//=====================================================
+Current Time: Fri Aug 30 02:20:55 2024
+Exception code: C0000094 INT_DIVIDE_BY_ZERO
+Fault address:  0071AEC7 01:00319EC7 C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+Registers:
+EAX:00004813
+EBX:1FBC9D2C
+ECX:4813266D
+EDX:00000000
+ESI:1FBC9D2C
+EDI:005BF680
+CS:EIP:0023:0071AEC7
+SS:ESP:002B:0019F848  EBP:00000000
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+
+//=====================================================
+Current Time: Fri Aug 30 02:24:43 2024
+Exception code: C0000094 INT_DIVIDE_BY_ZERO
+Fault address:  0071AEC7 01:00319EC7 C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+Registers:
+EAX:00004DC3
+EBX:1F0BE9CC
+ECX:4DC30034
+EDX:00000000
+ESI:1F0BE9CC
+EDI:005BF680
+CS:EIP:0023:0071AEC7
+SS:ESP:002B:0019F848  EBP:00000000
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+
