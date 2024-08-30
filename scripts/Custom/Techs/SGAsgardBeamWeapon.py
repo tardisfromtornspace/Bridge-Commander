@@ -711,16 +711,13 @@ try:
 						pDistanceShieldToSubsys.Subtract(pHitPoint)
 						lengthShieldToSubSys = pDistanceShieldToSubsys.Length()
 						lengthMeToShields = distTargetSubToMe - lengthShieldToSubSys
-						if (lengthShieldToSubSys + 1) * 2 < distTargetSubToMe: # One thing is sure, we are closer to the shield than to the subsystem
-							if (lengthShieldToSubSys + 2) > distTargetSubToMe: # One thing is sure, we are inside the shields or so close we cannot do much else
-								print "Range 1"
+						if (lengthShieldToSubSys + 2.5) * 2 < distTargetSubToMe: # One thing is sure, we are closer to the shield than to the subsystem
+							if (lengthShieldToSubSys + 3) > distTargetSubToMe: # One thing is sure, we are inside the shields or so close we cannot do much else
 								pVec.Scale(distTargetSubToMe + 0.5)
 							else:
-								print "Range 2"
 								pVec.Scale((lengthShieldToSubSys + 2))
 						else:
-							print "Range 3"
-							pVec.Scale(lengthShieldToSubSys + 2)
+							pVec.Scale(lengthShieldToSubSys + 2.5)
 
 						pHitPoint = pHitPointObj
 						pHitPoint.Subtract(pVec) # subtract because we want to guarantee they always hit the shields
@@ -741,7 +738,8 @@ try:
 
 					pTempTorp = FireTorpFromPointWithVectorAndNetType(pHitPoint, pVec, mod, targetID, attackerID, launchSpeed, leNetType, finalTorpDamage, fRadius, 1, pTarget, theOffset)
 					#pTempTorp.SetUsePhysics(0)
-					pTempTorp.SetLifetime(1.0)			
+					if pTempTorp:
+						pTempTorp.SetLifetime(1.0)			
 				except:
 					print "You are missing 'Tactical.Projectiles.SGAsgardBeamDummy' torpedo on your install, without that the SG Asgard Beam Weapons here cannot deal extra hull damage... or another error happened"
 					traceback.print_exc()		

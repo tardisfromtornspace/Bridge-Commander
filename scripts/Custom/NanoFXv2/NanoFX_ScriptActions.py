@@ -13,7 +13,7 @@ import Custom.NanoFXv2.NanoFX_Config
 ## Help BC clean up after itself by Deleting a TGSequence that has been Played
 ###############################################################################
 def DestroyTGSequence(pAction, pSequence):
-	return 0	
+	#return 0	 # TO-DO CHANGED
 	debug(__name__ + ", DestroyTGSequence")
 	if pSequence:
 		pSequence.Destroy()
@@ -38,8 +38,11 @@ def TurnOffLights(pAction, pObject):
 
 	### Turn off Glows ###
 	debug(__name__ + ", TurnOffLights")
+	pObject = App.DamageableObject_GetObjectByID(None, pObject.GetObjID()) # TO-DO CHANGED
+	if not pObject:
+		return 0
 	debug(__name__ + ", TurnOffLights Status: %d %d" % (pObject.IsDying(), pObject.IsDead()))
-	if not pObject.IsDead():
+	if pObject and not pObject.IsDead(): # TO-DO CHANGED
 		pObject.DisableGlowAlphaMaps()
 	debug(__name__ + ", TurnOffLights DONE")
 	###
@@ -113,7 +116,7 @@ def SetNanoRotation(pAction, pShip, fRotation, fSpeed):
 		###
 		### Set the length to the specified speed ###
 		vCurVelocity.Unitize()
-		vCurVelocity.Scale( fRotation * App.HALF_PI / 180.0 )
+		vCurVelocity.Scale( abs(fRotation) * App.HALF_PI / 180.0 ) # TO-DO CHANGED
 		pShip.SetAngularVelocity(vCurVelocity, App.PhysicsObjectClass.DIRECTION_WORLD_SPACE)
 		###
 	###
