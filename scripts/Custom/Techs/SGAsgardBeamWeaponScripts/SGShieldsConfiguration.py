@@ -50,6 +50,8 @@ def interactionHullBehaviour(attackerID, pAttacker, pAttackerInstance, pAttacker
 			global xWraithHullResistMultiplier
 			wasChanged = wasChanged + 1
 			hullDamageMultiplier = hullDamageMultiplier * (xWraithHullResistMultiplier)
+			if pTargetInstanceDict["SG Shields"].has_key("Wraith Dampening"):
+				hullDamageMultiplier = hullDamageMultiplier * pTargetInstanceDict["SG Shields"]["Wraith Dampening"]
 
 	return hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, wasChanged
 

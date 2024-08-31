@@ -38,7 +38,7 @@ credits = {
 #                                                                                     #
 Foundation.ShipDef.X303Refit = Foundation.FedShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
 Foundation.ShipDef.X303Refit.dTechs = {
-	'SG Shields': { "RaceShieldTech": "Asgard", "RaceHullTech": "Tau'ri" }
+	'SG Shields': { "RaceShieldTech": "Asgard - Go'auld Hybrid", "RaceHullTech": "Tau'ri" }
 }
 #                                                                                     #
 #######################################################################################

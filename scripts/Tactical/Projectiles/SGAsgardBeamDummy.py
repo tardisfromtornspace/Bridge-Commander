@@ -53,7 +53,7 @@ def Create(pTorp):
 	# type. modify the SpeciesToTorp.py file to add the new type.
 	import Multiplayer.SpeciesToTorp
 	pTorp.SetNetType (Multiplayer.SpeciesToTorp.PHASEDPLASMA)
-	#pTorp.SetLifetime(0.0)
+	pTorp.SetLifetime(0.0)
 
 	return(0)
 

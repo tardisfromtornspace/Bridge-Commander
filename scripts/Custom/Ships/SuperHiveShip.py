@@ -40,7 +40,11 @@ Foundation.ShipDef.SuperHiveShip = Foundation.ShipDef(abbrev, species, { 'name':
 Foundation.ShipDef.SuperHiveShip.fTorpedoID = "Not-Target"
 # Wraith do not have shields used as actual shields. At most only used for forcefields to keep things in. This serves as an addendum to possibly add a tech later to prevent transporting.
 Foundation.ShipDef.SuperHiveShip.dTechs = {
-	'SG Shields': { "RaceShieldTech": "Wraith" }
+	'Automated Destroyed System Repair': {"Time": 120.0},
+	'Breen Drainer Immune': 1,
+	'Fed Ablative Armor': { "Plates": ["Regenerative Armor"]},
+	"Multivectral Shields": 100,
+	'SG Shields': { "RaceShieldTech": "Wraith", "Wraith Dampening" : 0.5 }
 }
 #                                                                                     #
 #######################################################################################
@@ -49,9 +53,6 @@ Foundation.ShipDef.SuperHiveShip.dTechs = {
 #                                                                                     #
 # Foundation.ShipDef.SuperHiveShip.hasTGLName = 1
 # Foundation.ShipDef.SuperHiveShip.hasTGLDesc = 1
-Foundation.ShipDef.SuperHiveShip.dTechs = {"Multivectral Shields": 100}
-Foundation.ShipDef.SuperHiveShip.dTechs = {'Breen Drainer Immune': 1}
-Foundation.ShipDef.SuperHiveShip.dTechs = {'Fed Ablative Armor': { "Plates": ["Regenerative Armor"]}}
 #                                                                                     #
 # Otherwise, uncomment this and type something in:                                    #
 #                                                                                     #

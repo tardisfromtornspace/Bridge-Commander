@@ -40,19 +40,18 @@ This mod attempts to fix some Stargate pack balance inconsistencies by adding ap
 * Nerfed regular Ha'tak hulls (Early, Variant, Refit) and power plants HP a tiny bit.
 * Buffed Puddle Jumper shields by 120% on each facet.
 ** Nerfed Puddle Jumper hull by 50%.
-* Added a scripts/ship file that disabled visible damage on the SuperHive ship, thus avoiding game crashes.
+* Added two scripts/ship file that disabled visible damage on the SuperHive ship model, and partially disabled those from the Ori Warship model, thus reducing game crashes.
 * Added Simulated Point Defence to the Replicator Stolen Cruiser so it fires beams at incoming projectiles once in a while.
 * Added Simulated Point Defence to the Ancient Warship so it fires drones at incoming projectiles once in a while, including (and mostly) other drones.
 * Added Automated Destroyed System Repair to the Replicator Spider and the Replicator Command Vessel.
 * Added Carriers script to certain BC-304 ships that were missing them.
 * F302, Death Gliders, X301 and Wraith Darts hardpoints adjusted, and fixed same-HP-issue the old Mvam Wraith Hive Ship mod had.
+* Added "TWEAK-NanoFXExpFX20240829.py", a NanoFX beta stabilization code of my own, located in scripts/Custom/Autoload.
+** Also modified manually scripts/Custom/NanoFXv2/NanoFX_ScriptActions.py, because for some reason the manual edit did not cause a crash, but when monkey-patching it, it actually caused errors.
+* Wraith Cruiser and Hive Ships (included the SuperHive) have been given Automated System Repair and Breen Drainer Immune.
+* SuperHive Ship has been given a fast-regenerating Ablative Armour, and their projectiles have been adjusted to do the same damage as in the SGA episode.
 
 #### TO-DO ----> FOR ANUBIS MOTHERSHIP, SEE IF YOU CAN DO SOMETHING LIKE THE TURRETS SCRIPT MIXED WITH TACHYONBEAM SCRIPT, BUT ONLY MOVING TWO UNCOLLIDABLE AND UNTARGETABLE BEAMS NEXT TO AN ENEMY VESSEL, TO THEN FIRE ON THE TWO CLOSEST ENEMY VESSELS TO THE OBJECTIVE ####
-
-* Wraith given Automated System Repair #### TO-DO ####
-* Wraith HP and weapons adjusted accordingly between mods. #### TO-DO ####
-
-#### ALSO TO-DO MAYBE GIVE WRAITH HULL A CERTAIN METHOD OF DAMAGE REDUCTION? ####
 
 == Dependancies ==
 All of these must be installed before installing this mod, in this order:

@@ -41,6 +41,8 @@ Foundation.ShipDef.HiveShip = Foundation.ShipDef(abbrev, species, { 'name': long
 Foundation.ShipDef.HiveShip.fTorpedoID = "Not-Target"                               # 
 # Wraith do not have shields used as actual shields. At most only used for forcefields to keep things in. This serves as an addendum to possibly add a tech later to prevent transporting.
 Foundation.ShipDef.HiveShip.dTechs = {
+	'Automated Destroyed System Repair': {"Time": 1800.0},
+	'Breen Drainer Immune': 1,
 	'SG Shields': { "RaceShieldTech": "Wraith" }
 }
 #                                                                                     #
