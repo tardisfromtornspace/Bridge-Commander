@@ -39,6 +39,7 @@ credits = {
 Foundation.ShipDef.Destinymain = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, 'SubMenu': SubMenu })
 Foundation.ShipDef.Destinymain.fCrew = 80
 Foundation.ShipDef.Destinymain.dTechs = {
+	"AutoTargeting": { "Pulse": [3, 1] },
 	'SG Shields': { "RaceShieldTech": "Ancient Alteran" }
 }
 #                                                                                     #

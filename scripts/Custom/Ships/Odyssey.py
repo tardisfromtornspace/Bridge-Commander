@@ -34,6 +34,7 @@ credits = {
 #                                                                                     #
 Foundation.ShipDef.Odyssey = Foundation.FedShipDef(abbrev, species, { 'iconName': iconName, 'shipFile': shipFile })
 Foundation.ShipDef.Odyssey.dTechs = {
+	"AutoTargeting": { "Pulse": [3, 1] },
 	'SG Shields': { "RaceShieldTech": "Asgard", "RaceHullTech": "Tau'ri" }
 }
 #                                                                                     #

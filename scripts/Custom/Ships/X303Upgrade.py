@@ -38,6 +38,7 @@ credits = {
 #                                                                                     #
 Foundation.ShipDef.X303Upgrade = Foundation.FedShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
 Foundation.ShipDef.X303Upgrade.dTechs = {
+	"AutoTargeting": { "Pulse": [3, 1] },
 	'SG Shields': { "RaceShieldTech": "Go'auld", "RaceHullTech": "Tau'ri" }
 }
 #                                                                                     #

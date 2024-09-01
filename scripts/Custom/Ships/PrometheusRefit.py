@@ -34,6 +34,7 @@ credits = {
 #                                                                                     #
 Foundation.ShipDef.PrometheusRefit = Foundation.FedShipDef(abbrev, species, { 'iconName': iconName, 'shipFile': shipFile })
 Foundation.ShipDef.PrometheusRefit.dTechs = {
+	"AutoTargeting": { "Pulse": [3, 1] },
 	'SG Shields': { "RaceShieldTech": "Asgard - Go'auld Hybrid", "RaceHullTech": "Tau'ri" }
 }
 #                                                                                     #

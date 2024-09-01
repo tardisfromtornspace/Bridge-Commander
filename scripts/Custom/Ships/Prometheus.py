@@ -9,9 +9,9 @@ import App
 #                                                                                     #
 #######################################################################################
 #                                                                                     #
-abbrev = 'Prometheus'
+abbrev = 'SGPrometheus'
 iconName = 'x303'
-shipFile = 'Prometheus' 
+shipFile = 'SGPrometheus' 
 species = 752
 #                                                                                     #
 #######################################################################################
@@ -32,8 +32,9 @@ credits = {
 # This is the ShipDef that adds the Ship to the game... BC-Mod Packager has           #
 # automatically generated the proper ShipDef Line for you.                            #
 #                                                                                     #
-Foundation.ShipDef.Prometheus = Foundation.FedShipDef(abbrev, species, { 'iconName': iconName, 'shipFile': shipFile })
-Foundation.ShipDef.Prometheus.dTechs = {
+Foundation.ShipDef.SGPrometheus = Foundation.FedShipDef(abbrev, species, { 'iconName': iconName, 'shipFile': shipFile })
+Foundation.ShipDef.SGPrometheus.dTechs = {
+	"AutoTargeting": { "Pulse": [3, 1] },
 	'SG Shields': { "RaceShieldTech": "Go'auld" }
 }
 #                                                                                     #
@@ -41,12 +42,12 @@ Foundation.ShipDef.Prometheus.dTechs = {
 #                                                                                     #
 # Uncomment these if you have TGL                                                     #
 #                                                                                     #
-Foundation.ShipDef.Prometheus.hasTGLName = 1
-Foundation.ShipDef.Prometheus.hasTGLDesc = 1
+Foundation.ShipDef.SGPrometheus.hasTGLName = 1
+Foundation.ShipDef.SGPrometheus.hasTGLDesc = 1
 #                                                                                     #
 # Otherwise, uncomment this and type something in:                                    #
 #                                                                                     #
-#Foundation.ShipDef.Prometheus.desc = 'No Description Available'
+#Foundation.ShipDef.SGPrometheus.desc = 'No Description Available'
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

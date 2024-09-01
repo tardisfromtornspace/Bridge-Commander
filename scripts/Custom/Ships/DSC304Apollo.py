@@ -38,6 +38,7 @@ credits = {
 #                                                                                     #
 Foundation.ShipDef.DSC304Apollo = Foundation.FedShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
 Foundation.ShipDef.DSC304Apollo.dTechs = {
+	"AutoTargeting": { "Pulse": [3, 1] },
 	'SG Shields': { "RaceShieldTech": "Asgard", "RaceHullTech": "Tau'ri" }
 }
 #                                                                                     #

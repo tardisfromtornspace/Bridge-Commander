@@ -1,4 +1,5 @@
 == Changelog ==
+1.0 - official release
 0.1 - first unofficial release of this tweak, for feedback
 
 == What does this mod do ==
@@ -18,13 +19,7 @@ This mod attempts to fix some Stargate pack balance inconsistencies by adding ap
 * SG Ion Weapons: this tech works by adding a customizable drain effect; while being open to adding Subscripts that may modify its behavior (please read in-script documentation about how does this work).
 ** This was meant to give the Asgard and Tollan Ion Weapons a significant buff, while providing Anubis a resistance without making Anubis vessels have shields 100 times stronger than normal (let's not forget a regular Ha'tak could be destroyed by a single Tollan Ion Cannon shot ignoring the shields, but Anubis shields on a regular Ha'tak could shrug a entire planetary defense grid of them, yet at most 1 Anubian Ha'tak was equal to 6 regular ones - if mod-wise we followed a mere shield increase strategy, in order to make Anubis Ha'taks capable of shrugging off the Tollan Ion cannons, they would become invincible to even Ori vessels).
 
-* SG Plasma Weapons: the purpose of this tech was to explain why a naquadah-enhanced >1000 Megaton nuke could not deal damage to a Go'auld Ha'tak and a Ha'tak could stay 10 hours inside a sun's corona, yet some Go'auld Death Glider's staff weapons could put the shields to strain, without performing total absurdities (before this mod, previous mods made the Go'auld death glider half-shot deal roughtly half the damage of a Ha'tak's main weapons shot, you have got to be kidding me to have a Go'auld Death glider whose shots are as powerful as a Ha'taks).
-
-* Plasma and Ion weapons base damage nerfed accordingly to deal a similar final raw damage output to what they did to shields before the mod.
-** Please note that "similar" is not "equal" - actually, specially for the Asgard Ion Cannons, net shield damage has been slightly buffed, specially for the higher-end vessels' Ion weapons.
-** Same has been done for certain "big" plasma weapons such as the Flagship's or Anubis Superweapon's cannons, which have only been tagged as SG plasma weapons and have their generic hull modifiers increasing such damage.
-* Asgard Daniel Jackson, O'Neill and Valhalla shields and shield recharge buffed significantly (between 36% to 57%). Also, thanks to the technology, low-grade weapons may not be able to even drain their shields.
-* All Asgard vessels have now tractor beams and probe launchers.
+* SG Plasma Weapons: the purpose of this tech was to explain why a naquadah-enhanced >1000 Megaton nuke could not deal damage to a Go'auld Ha'tak and a Ha'tak could stay 10 hours inside a sun's corona, yet some Go'auld Death Glider's staff weapons could put the shields to strain, without performing total absurdities (before this mod, previous mods made the Go'auld death glider half-shot deal roughtly half the damage of a Ha'tak's main weapons shot, you have got to be kidding me to have a Go'auld Death glider whose shots are as powerful as a Ha'tak's).
 
 * Replicator adaptation: based on my other mod, Borg Adaptation https://www.gamefront.com/games/bridge-commander/file/borg-adaptation-mod-defensive ; it is meant to be added as a modification to allow the Replicators to adapt, instead of making them a set of outright OP-ness that cannot adapt, they instead start a bit less overpowered, then learn and eventually make themselves far more powerful than normal, shield-wise, with those having the proper hull race from the SG Shields tech also being a bit more powerful hull-wise.
 ** Alongside this, Replicator-throwing Projectiles have been tweaked - on the one hand, now they need the Replicator to have fought or scanned a type of vessel enough times to bypass the shields and initiate take-over (for most Go'auld vessels it has been left to be automatically assimilated). On the other, ships successfully taken over with this also receive the Replicator Adaptation tech, so they will become stronger, at least shield-wise.
@@ -33,27 +28,36 @@ This mod attempts to fix some Stargate pack balance inconsistencies by adding ap
 ** As a byproduct of this, the actual phaser banks damage has been nerfed to 25 dmg (the remaining 25k are now done by the script).
 * Odyssey Refit and DSC304OdysseyRefit Asgard beams are now single-fire, but fire faster.
 
+* Added Anubis Superweapon Beam technology - now the beams will hop between nearby enemies, like in the series. Works best at mid-range.
+
+* Plasma and Ion weapons base damage nerfed accordingly to deal a similar final raw damage output to what they did to shields before the mod.
+** Please note that "similar" is not "equal" - actually, specially for the Asgard Ion Cannons, net shield and hull damage has been slightly buffed, specially for the higher-end vessels' Ion weapons.
+** Same has been done for certain "big" plasma weapons such as the Flagship's or Anubis Superweapon's cannons, which have only been tagged as SG plasma weapons and have their generic hull modifiers increasing such damage.
 * As a byproduct of the shield collision buff, several Stargate vessel's masses on this mod have been tweaked so the shield suffers from more or less strain from a collision impact (or equalized, so Alkesh and Goauld Alkesh have the same mass while Alkesh Transport has that mass + the one from the pods). For the most part, the masses have been noticeably buffed.
-* Made Alkesh Transport Mvam able to reintegrate with its pods.
-* Upgraded Ha'tak speed increased slightly.
+* Asgard Daniel Jackson, O'Neill and Valhalla shields and shield recharge buffed significantly (between 36% to 57%). Also, thanks to the technology, low-grade weapons may not be able to even drain their shields.
+* All Asgard vessels have now tractor beams and probe launchers.
 * Buffed regular Ha'tak (Early, Variant, Refit) shields significantly.
 * Nerfed regular Ha'tak hulls (Early, Variant, Refit) and power plants HP a tiny bit.
 * Buffed Puddle Jumper shields by 120% on each facet.
 ** Nerfed Puddle Jumper hull by 50%.
-* Added two scripts/ship file that disabled visible damage on the SuperHive ship model, and partially disabled those from the Ori Warship model, thus reducing game crashes.
-* Added Simulated Point Defence to the Replicator Stolen Cruiser so it fires beams at incoming projectiles once in a while.
-* Added Simulated Point Defence to the Ancient Warship so it fires drones at incoming projectiles once in a while, including (and mostly) other drones.
-* Added Automated Destroyed System Repair to the Replicator Spider and the Replicator Command Vessel.
-* Added Carriers script to certain BC-304 ships that were missing them.
 * F302, Death Gliders, X301 and Wraith Darts hardpoints adjusted, and fixed same-HP-issue the old Mvam Wraith Hive Ship mod had.
-* Added "TWEAK-NanoFXExpFX20240829.py", a NanoFX beta stabilization code of my own, located in scripts/Custom/Autoload.
-** Also modified manually scripts/Custom/NanoFXv2/NanoFX_ScriptActions.py, because for some reason the manual edit did not cause a crash, but when monkey-patching it, it actually caused errors.
-* Wraith Cruiser and Hive Ships (included the SuperHive) have been given Automated System Repair and Breen Drainer Immune.
+* Upgraded Ha'tak speed increased slightly.
 * SuperHive Ship has been given a fast-regenerating Ablative Armour, and their projectiles have been adjusted to do the same damage as in the SGA episode.
+* Added AutoTargeting (2009 version, with the multi-button bug fixed) in pulse mode to Anubis Mothership, Anubis Superweapon, the Destiny, DestinyMain, the X303, BC-304 (all versions), Go'auld Starbase and Ori Mothership.
+* Added two scripts/ship file that disabled visible damage on the SuperHive ship model, and partially disabled those from the Ori Warship model, thus reducing game crashes.
+* Added Simulated Point Defence (beam-style) to the Replicator Stolen Cruiser so it fires beams at incoming staff projectiles once in a while, and (torpedo-style) to the Ancient Warship so it fires drones at incoming projectiles once in a while, including (and mostly) other drones.
+* Added Automated Destroyed System Repair to the Replicator Spider and the Replicator Command Vessel, and to the Wraith Cruiser, Wraith Hive Ship and Wraith SuperHive Ship.
+* Wraith Cruiser and Hive Ships (included the SuperHive) have been given Breen Drainer Immune.
+* Anubis Mothership and Anubis Superweapon now have 50 Death Gliders instead of 20.
+* Made Alkesh Transport Mvam able to reintegrate with its pods.
+* Added Carriers script to certain BC-304 ships that were missing them.
+* Replaced Prometheus scripts/ship file for "SGPrometheus", and re-added the original ST "Prometheus" file that the SG pack overwrote, so you no longer go on single campaign and sudenly find a guaranteed X303 docked.
+** This is also the reason this file contains a MvamPrometheus Custom/Ships file and a modified X303 Mvam file, to correct this issue.
+* Fused the SpeciesToTorp the SG pack has and KM one has so those who installed the SG packs no longer receive warnings about certain KM torpedo types not being found.
+* Added "TWEAK-NanoFXExpFX20240829.py", a NanoFX v2 beta stabilization code of my own, located in scripts/Custom/Autoload.
+** Also manually modified scripts/Custom/NanoFXv2/NanoFX_ScriptActions.py (which is not what the aforementioned Nano FX monkey patch covers, this file being changes is for an entirely different matter), because for some reason the manual edit did not cause warnings, errors nor a crash, while attempting to monkey-patching it always caused errors.
 
-#### TO-DO ----> FOR ANUBIS MOTHERSHIP, SEE IF YOU CAN DO SOMETHING LIKE THE TURRETS SCRIPT MIXED WITH TACHYONBEAM SCRIPT, BUT ONLY MOVING TWO UNCOLLIDABLE AND UNTARGETABLE BEAMS NEXT TO AN ENEMY VESSEL, TO THEN FIRE ON THE TWO CLOSEST ENEMY VESSELS TO THE OBJECTIVE ####
-
-== Dependancies ==
+== Dependencies ==
 All of these must be installed before installing this mod, in this order:
 * Foundation + Kobayashi Maru (KM has Foundation already installed - the most recent, the better, preferably 2011.10 or latter)
 * Stargate pack 3.0 or 4.0 https://www.gamefront.com/games/bridge-commander/file/stargate-ship-pack-dave975-and-dkealt

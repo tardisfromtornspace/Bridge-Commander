@@ -3,13 +3,13 @@ import Multiplayer.SpeciesToShip
 
 def GetShipStats():
 	kShipStats = {
-		"FilenameHigh": "data/Models/Ships/x303/Prometheus.nif",
-		"FilenameMed": "data/Models/Ships/x303/Prometheus.nif",
-		"FilenameLow": "data/Models/Ships/x303/Prometheus.nif",
-		"Name": "Prometheus",
-		"HardpointFile": "Prometheus",
-		"Species": Multiplayer.SpeciesToShip.GALAXY
-		 }
+		"FilenameHigh": "data/Models/Ships/MvamPrometheus/Combined.nif",
+		"FilenameMed": "data/Models/Ships/MvamPrometheus/Combined.nif",
+		"FilenameLow": "data/Models/Ships/MvamPrometheus/Combined.nif",
+		"Name": "MvamPrometheus",
+		"HardpointFile": "MvamPrometheus",
+		"Species": Multiplayer.SpeciesToShip.SOVEREIGN
+	 }
 	return kShipStats
 
 def LoadModel(bPreLoad = 0):
@@ -21,9 +21,9 @@ def LoadModel(bPreLoad = 0):
 		# Surface Damage Res, Internal Damage Res, Burn Value, Hole Value,
 		# Search String for Glow, Search string for Specular, Suffix for specular
 		pLODModel = App.g_kLODModelManager.Create(pStats["Name"])
-		pLODModel.AddLOD(pStats["FilenameHigh"], 10, 200.0, 15.0, 15.0, 400, 900, "_glow", None, "_specular")
-		pLODModel.AddLOD(pStats["FilenameMed"],  10, 200.0, 15.0, 15.0, 400, 900, "_glow", None, "_specular")
-		pLODModel.AddLOD(pStats["FilenameLow"],  10, 200.0, 15.0, 15.0, 400, 900, "_glow", None, "_specular")
+		pLODModel.AddLOD(pStats["FilenameHigh"], 10, 200.0, 15.0, 15.0, 400, 900, "_glow", None, None)
+		pLODModel.AddLOD(pStats["FilenameMed"],  10, 400.0, 15.0, 15.0, 400, 900, "_glow", None, None)
+		pLODModel.AddLOD(pStats["FilenameLow"],  10, 800.0, 15.0, 30.0, 400, 900, "_glow", None, None)
 
 #		kDebugObj = App.CPyDebug()
 		if (bPreLoad == 0):
@@ -35,11 +35,3 @@ def LoadModel(bPreLoad = 0):
 
 def PreLoadModel():
 	LoadModel(1)
-
-def HyperdriveCustomizations():
-        dict = {'TunnelTexture' : 'Hyperspace2.tga',
-                'ExitSound' : 'hypexit1.wav',
-                'FlashAnimation' : 'HyperdriveFlashPurple.tga',
-                'EntrySound' : 'hypentry1.wav',
-                'MaxSpeed' : 5.75}
-        return dict

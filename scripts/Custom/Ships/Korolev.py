@@ -34,6 +34,7 @@ credits = {
 #                                                                                     #
 Foundation.ShipDef.Korolev = Foundation.FedShipDef(abbrev, species, { 'iconName': iconName, 'shipFile': shipFile })
 Foundation.ShipDef.Korolev.dTechs = {
+	"AutoTargeting": { "Pulse": [3, 1] },
 	'SG Shields': { "RaceShieldTech": "Asgard" }
 }
 #                                                                                     #

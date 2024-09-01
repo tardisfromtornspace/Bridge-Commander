@@ -37,7 +37,7 @@ import App
 
 
 ###TO CHANGE: what ships are in this? start with the full ship, then the ones that seperate
-MvamShips = ["x303", "Prometheus", "F3021", "F3022", "F3023", "F3024", "F3025", "F3026"]
+MvamShips = ["x303", "SGPrometheus", "F3021", "F3022", "F3023", "F3024", "F3025", "F3026"]
 
 
 #this is to make things less confusing... don't touch this!
@@ -188,7 +188,7 @@ AiSepAbility = 1
 
 ###TO CHANGE: name the following def's EXACTLY what the seperated mvam ships are called. You need to have as many def's
 ############# as you have ships seperating (we aren't counting the integrated ship).
-def Prometheus(pObject, pEvent):
+def SGPrometheus(pObject, pEvent):
 
 
 	# get the player
@@ -201,7 +201,7 @@ def Prometheus(pObject, pEvent):
 
 
 ###TO CHANGE: change the last word in quotes in the next line to the name of the def. (ie: "MvamGalaxySaucer")
-		Custom.Sneaker.Mvam.Seperation.Seperation(snkMvamModule, "Prometheus")
+		Custom.Sneaker.Mvam.Seperation.Seperation(snkMvamModule, "SGPrometheus")
 
 
 	pObject.CallNextHandler(pEvent)

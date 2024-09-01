@@ -21,7 +21,7 @@ class AnubisFlagship( Carrier.Carrier):
         LauncherManager = __import__( "ftb.LauncherManager")
         launcher = LauncherManager.GetLauncher( "Shuttle Bay", pShip)
         group.AddLauncher( "Shuttle Bay", launcher)
-        launcher.AddLaunchable( "DeathGlider", "ftb.friendlyAI", 20)
+        launcher.AddLaunchable( "DeathGlider", "ftb.friendlyAI", 50)
         launcher.AddLaunchable( "TelTakUpgrade", "ftb.friendlyAI", 3)
         
         self.AddLauncher( "Group 1", group)
