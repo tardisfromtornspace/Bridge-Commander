@@ -145,7 +145,7 @@ import MissionLib
 
 #################################################################################################################
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.999",
+	    "Version": "0.9991",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -1970,6 +1970,8 @@ def GetPositionOrientationPropertyByName(pShip, pcSubsystemName):
                 pProperty = App.PositionOrientationProperty_Cast(pInstance.GetProperty())
                 
                 if pProperty.GetName().GetCString() == pcSubsystemName:
+                        pInstanceList.TGDoneIterating()
+                        pInstanceList.TGDestroy()
                         return pProperty
 
         pInstanceList.TGDoneIterating()

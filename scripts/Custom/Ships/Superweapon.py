@@ -39,6 +39,7 @@ credits = {
 Foundation.ShipDef.Superweapon = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
 Foundation.ShipDef.Superweapon.dTechs = {
 	"AutoTargeting": { "Pulse": [4, 0] },
+	"SG Anubis SuperWeapon Ray": {},
 	'SG Shields': { "RaceShieldTech": "Anubis Go'auld", "Superweapon" : 1}
 }
 
