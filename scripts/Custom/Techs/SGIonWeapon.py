@@ -1,6 +1,6 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
-# 20th August 2024, by Alex SL Gato (CharaToLoki)
+# 4th September 2024, by Alex SL Gato (CharaToLoki)
 #         Based on BorgAdaptation.py and PhasedTorp.py by Alex SL Gato, which were based on the Foundation import function by Dasher; the Shield.py scripts and KM Armour scripts and FoundationTechnologies team's PhasedTorp.py
 #         Also based on ATPFunctions by Apollo.
 #################################################################################################################
@@ -176,7 +176,7 @@ import nt
 import string
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-            "Version": "0.92",
+            "Version": "0.93",
             "License": "LGPL",
             "Description": "Read the small title above for more info"
             }
@@ -285,7 +285,7 @@ def LoadExtraLimitedPlugins(dExcludePlugins=_g_dExcludeSomePlugins):
 							variableNames[fileName] =  {}
 						variableNames[fileName]["interactionHullBehaviour"] = banana.interactionHullBehaviour
 
-					if fileName == "BasicSGIonWeaponConfiguration":
+					if fileName == "SGIonWeaponBasicConfiguration":
 						if hasattr(banana, "IonHullDamageMultiplier"):
 							global IonHullDamageMultiplier
 							IonHullDamageMultiplier = banana.IonHullDamageMultiplier
@@ -608,8 +608,7 @@ try:
 				global IonGenericShieldDamageMultiplier
 				shieldDamageMultiplier = shieldDamageMultiplier + IonGenericShieldDamageMultiplier
 				shouldDealAllFacetDamage = 1
-				negateShieldRegeneration = negateShieldRegeneration - 1
-				
+				negateShieldRegeneration = negateShieldRegeneration - 1	
 					
 			finalShieldDamage = fDamage * shieldDamageMultiplier
 

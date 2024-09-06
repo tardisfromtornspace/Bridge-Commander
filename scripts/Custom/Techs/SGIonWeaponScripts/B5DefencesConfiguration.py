@@ -1,7 +1,7 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
-# 18th August 2024, by Alex SL Gato (CharaToLoki)
-# Version: 1.0
+# 4th September 2024, by Alex SL Gato (CharaToLoki)
+# Version: 1.1
 # Meant to be used alongside the SGIonWeapon Technology (located at scripts/Custom/Techs), this file must be under scripts/Custom/Techs/SGIonWeaponScripts
 # As these are Sub-techs with some leeway, their manuals must be explained here:
 ##################################
@@ -20,7 +20,7 @@ import FoundationTech
 import string
 
 global IonB5LegacyShieldDamageMultiplier
-IonB5LegacyShieldDamageMultiplier = 5.0 
+IonB5LegacyShieldDamageMultiplier = 3.5 
 
 ### With that said, some B5 defences (as well as Hull Polarization) canonically would at least protect a bit from direct hull damage. Since we did the thing above to guarantee ships without shields lore-wise still take decent shield damage, we must ensure that those vessel's hull damage defences are not bypassed completely.
 defenceGridMultiplier = 0.95 # Used for legacy reasons

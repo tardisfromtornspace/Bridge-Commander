@@ -1,7 +1,7 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
-# 18th August 2024, by Alex SL Gato (CharaToLoki)
-# Version: 1.0
+# 4th September 2024, by Alex SL Gato (CharaToLoki)
+# Version: 1.1
 # Meant to be used alongside the SGIonWeapon Technology (located at scripts/Custom/Techs), this file must be under scripts/Custom/Techs/SGIonWeaponScripts
 # As these are Sub-techs with some leeway, their manuals must be explained here:
 ##################################
@@ -16,6 +16,6 @@ import traceback
 
 # Some global variables could be used as well
 IonHullDamageMultiplier = 10
-IonGenericShieldDamageMultiplier = 2
+IonGenericShieldDamageMultiplier = 3.25
 
 legacyImmunity = ["TheExile"]

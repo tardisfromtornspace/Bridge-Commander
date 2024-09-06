@@ -1,4 +1,9 @@
 == Changelog ==
+1.0.2 - bug fixes:
+* Upgraded SGPlasmaWeapon, SGOriBeamWeapon and SGAsgardBeamWeapon, fixing that they were not taking into account their basic configuration files.
+1.0.1 - bug fixes:
+* Updated SGIonWeapon Basic configuration - the shield damage multiplier for basic multifacet drain should have been 3.25, but for some reason the file I uploaded only had 2.0 (sorry).
+* Upgraded SGIonWeapon to 0.93, fixing that it was not taking into account basic configuration.
 1.0 - official release
 0.1 - first unofficial release of this tweak, for feedback
 
