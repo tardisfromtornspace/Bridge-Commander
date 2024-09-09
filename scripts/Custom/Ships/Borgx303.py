@@ -40,7 +40,9 @@ Foundation.ShipDef.Borgx303 = Foundation.ShipDef(abbrev, species, { 'name': long
 Foundation.ShipDef.Borgx303.dTechs = {
 	'Breen Drainer Immune': 1,
 	'Borg Adaptation': 1,
-	'Automated Destroyed System Repair': {"Time": 120.0}
+	'Automated Destroyed System Repair': {"Time": 120.0},
+	"AutoTargeting": { "Pulse": [3, 1] },
+	'SG Shields': { "RaceShieldTech": "Asgard - Go'auld Hybrid", "RaceHullTech": "Tau'ri" }
 }
 #                                                                                     #
 #######################################################################################

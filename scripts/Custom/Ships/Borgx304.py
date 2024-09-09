@@ -38,9 +38,12 @@ credits = {
 #                                                                                     #
 Foundation.ShipDef.Borgx304 = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
 Foundation.ShipDef.Borgx304.dTechs = {
-	'Breen Drainer Immune': 1,
+	'SG Shields': { "RaceShieldTech": "Asgard", "RaceHullTech": "Tau'ri" },
+	"SG Asgard Beams Weapon": {"HullDmgMultiplier": 1.0, "ShieldDmgMultiplier": 1.0},
+	'Automated Destroyed System Repair': {"Time": 120.0},
+	"AutoTargeting": { "Pulse": [3, 1] },
 	'Borg Adaptation': 2,
-	'Automated Destroyed System Repair': {"Time": 120.0}
+	'Breen Drainer Immune': 1,
 }
 #                                                                                     #
 #######################################################################################
