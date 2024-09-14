@@ -41,7 +41,8 @@ Foundation.ShipDef.WCNemEntEnoyacht.sBridge = 'SovereignBridge'
 Foundation.ShipDef.WCNemEntEnoyacht.fMaxWarp = 9.99
 Foundation.ShipDef.WCNemEntEnoyacht.dTechs = {
 	'Breen Drainer Immune': 1,
-	'Regenerative Shields': 10,
+	'Regenerative Shields': 100,
+	'Multivectral Shields': 10,
 	'Fed Ablative Armor': { "Plates": ["Aft Ablative Armor", "Engineering Ablative Armor", "Top Ablative Armor", "Forward Ablative Armor"]
 }}
 
