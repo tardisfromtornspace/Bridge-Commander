@@ -38,8 +38,9 @@ credits = {
 #                                                                                     #
 Foundation.ShipDef.SGGalacticaRefit = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
 Foundation.ShipDef.SGGalacticaRefit.dTechs = {
-	'Fed Ablative Armor': { "Plates": ["Armour"]
-}}
+	'Fed Ablative Armor': { "Plates": ["Armour"]},
+	'SG Shields': { "RaceShieldTech": "Go'auld" }
+}
 #                                                                                     #
 #######################################################################################
 #                                                                                     #
