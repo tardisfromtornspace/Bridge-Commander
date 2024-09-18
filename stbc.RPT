@@ -2667,3 +2667,137 @@ Exception code: C0000005 ACCESS_VIOLATION
 //=====================================================
 Current Time: Thu Sep 05 02:26:47 2024
 Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Fri Sep 06 20:21:13 2024
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Mon Sep 09 17:03:02 2024
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Mon Sep 09 20:09:05 2024
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Tue Sep 10 00:47:56 2024
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Sat Sep 14 20:40:29 2024
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  7701784B 01:0004684B C:\Windows\SYSTEM32\ntdll.dll
+
+Registers:
+EAX:000029F0
+EBX:A9BB29F0
+ECX:00008879
+EDX:A3CD3CD6
+ESI:A3CD3CDE
+EDI:01070000
+CS:EIP:0023:7701784B
+SS:ESP:002B:0019F8A4  EBP:0019FA44
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010217
+
+Application Timestamp: Thu Jan 01 01:00:00 1970
+Doing stack walk
+
+Call stack:
+Address   Frame
+7701784B  0019FA44  0001:0004684B C:\Windows\SYSTEM32\ntdll.dll (No symbol info found)
+
+//=====================================================
+Current Time: Sat Sep 14 21:28:12 2024
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  00717874 01:00316874 C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+Registers:
+EAX:00000000
+EBX:00000000
+ECX:00000000
+EDX:00000008
+ESI:01000000
+EDI:00000800
+CS:EIP:0023:00717874
+SS:ESP:002B:0019F4A0  EBP:00000002
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+00717874  0019F4A8  0001:00316874 C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+//=====================================================
+Current Time: Sat Sep 14 21:53:35 2024
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  00611D78 01:00210D78 C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+Registers:
+EAX:37C08EDC
+EBX:1889F334
+ECX:00000000
+EDX:0095DD20
+ESI:1889F334
+EDI:00611CF0
+CS:EIP:0023:00611D78
+SS:ESP:002B:0019F81C  EBP:00000000
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010202
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+
+//=====================================================
+Current Time: Sun Sep 15 23:40:28 2024
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  00717874 01:00316874 C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+Registers:
+EAX:00000000
+EBX:00000000
+ECX:00000000
+EDX:00000008
+ESI:01000000
+EDI:00000800
+CS:EIP:0023:00717874
+SS:ESP:002B:0019F3C8  EBP:00000002
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+00717874  0019F3D0  0001:00316874 C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+//=====================================================
+Current Time: Mon Sep 16 16:01:43 2024
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Wed Sep 18 23:04:38 2024
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  007008CC 01:002FF8CC C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+Registers:
+EAX:00000030
+EBX:5F37F5B8
+ECX:62C26350
+EDX:000000FF
+ESI:37EA617C
+EDI:0EB3C06C
+CS:EIP:0023:007008CC
+SS:ESP:002B:0019FA98  EBP:62C26350
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010206
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+007008CC  0019FAA4  0001:002FF8CC C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
