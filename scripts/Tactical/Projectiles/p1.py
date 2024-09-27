@@ -43,7 +43,7 @@ def Create(pTorp):
 def GetLaunchSpeed():
 	return(40.0)
 
-def GetLaunchSound(p1):
+def GetLaunchSound():
 	return("DisruptorNDV")
 
 def GetPowerCost():

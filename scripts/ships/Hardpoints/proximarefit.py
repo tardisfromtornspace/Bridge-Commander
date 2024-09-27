@@ -3590,6 +3590,7 @@ PulsePhaser4.SetCooldownTime(0.300000)
 PulsePhaser4.SetModuleName("Tactical.Projectiles.p1")
 App.g_kModelPropertyManager.RegisterLocalTemplate(PulsePhaser4)
 
+
 # Property load function.
 def LoadPropertySet(pObj):
 	"Sets up the object's properties."
