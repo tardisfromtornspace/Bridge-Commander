@@ -37,7 +37,7 @@ Foundation.ShipDef.PAHExeter.fMaxWarp = 7.5
 Foundation.ShipDef.PAHExeter.fCruiseWarp = 9.2
 Foundation.ShipDef.PAHExeter.desc = 'This 23rd Century ship is featured in the film Star Trek 2009. The Prime Alternate Hybrid is a envisioned cr.2267 version.'
 
-Foundation.ShipDef.PAHConstitution.dTechs = {
+Foundation.ShipDef.PAHExeter.dTechs = {
 	# Here comes the PAHWarmUp script config
 	# The sequence describes the warm up, and it's reversed (timed correctly) on cool off
 	# The numbers are moments in time

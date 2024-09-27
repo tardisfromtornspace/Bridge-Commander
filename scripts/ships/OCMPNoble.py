@@ -8,7 +8,7 @@ def GetShipStats():
 		"FilenameMed": "data/Models/Ships/OCMP/Noble/CI_OLYMPIC.nif",
 		"FilenameLow": "data/Models/Ships/OCMP/Noble/CI_OLYMPIC.nif",
 		"Name": "OCMPNoble",
-		"HardpointFile": "ocmpnobel",
+		"HardpointFile": "ocmpnoble",
 		"Species": Multiplayer.SpeciesToShip.AMBASSADOR
 	}
 	return kShipStats
