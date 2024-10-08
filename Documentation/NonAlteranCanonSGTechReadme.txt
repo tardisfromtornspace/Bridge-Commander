@@ -1,4 +1,6 @@
 == Changelog ==
+1.0.3 - bug fixes:
+* Upgraded SGPlasmaWeapon to 0.94, regarding a small goof that was giving an erroneous buff to certain weapons. 
 1.0.2 - bug fixes:
 * Upgraded SGPlasmaWeapon, SGOriBeamWeapon and SGAsgardBeamWeapon, fixing that they were not taking into account their basic configuration files.
 1.0.1 - bug fixes:

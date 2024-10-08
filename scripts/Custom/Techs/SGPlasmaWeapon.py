@@ -15,7 +15,7 @@
 ## If the plasma weapon is small and/or primitive, ST shields block them extremely easily with no strain at all. However, if the weapon is big or extremely advanced, the shields may strain.
 ## On unshielded vessels, even primitive plasma weapons can be problematic to handle - at least on the 23rd century TOS ships.
 # For this, we added a hull modifier (HullDmgMultiplier) and shield modifier (ShieldDmgMultiplier), with the option of being customizable since some weapon's damage may depend on entirely different factos we cannot forsee.
-# Values of 1.0 to those modifierds will be counted as no damage, since the normal torpedo will have already dealt such damage, so values of 2.0, 3.0, etc. will actually make this script deal 1.0, 2.0, etc -1 times the base damage, for a total of 2.0, 3.0, etc. damage in the end
+# Values of 1.0 to those modifiers will be counted as no damage, since the normal torpedo will have already dealt such damage, so values of 2.0, 3.0, etc. will actually make this script deal 1.0, 2.0, etc -1 times the base damage, for a total of 2.0, 3.0, etc. damage in the end
 # At the bottom of your torpedo projectile file add this (Between the """ and """):
 """
 def HullDmgMultiplier():
@@ -180,7 +180,7 @@ import nt
 import string
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-            "Version": "0.93",
+            "Version": "0.94",
             "License": "LGPL",
             "Description": "Read the small title above for more info"
             }
@@ -607,7 +607,7 @@ try:
 				# normal shields, we generate a slight generic one-point drain
 				shouldDealAllFacetDamage = 0
 				# If no changes were made, default damage for ST shields
-				shieldDamageMultiplier = PlasmaGenericShieldDamageMultiplier # nullify shield effects - that is, is immune
+				shieldDamageMultiplier = PlasmaGenericShieldDamageMultiplier - 1.0 # nullify shield effects - that is, is immune
 				mod = pTorp.GetModuleName()
 				importedTorpInfo = __import__(mod)
 				if hasattr(importedTorpInfo, "ShieldDmgMultiplier"): # If this torp has a special global multiplier, then we use it

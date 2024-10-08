@@ -16,6 +16,6 @@ import traceback
 
 # Some global variables could be used as well
 PlasmaHullDamageMultiplier = 8 # For standard vessels, it deals 8 times the normal damage (8 -1 = 7 from this script)
-PlasmaGenericShieldDamageMultiplier = 1 # Fors tandard vessels, it deals no additional damage (1 -1 = 0 from this script)
+PlasmaGenericShieldDamageMultiplier = 1 # For standard vessels, it deals no additional damage (1 -1 = 0 from this script)
 
 legacyImmunity = []
