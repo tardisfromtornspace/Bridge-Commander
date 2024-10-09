@@ -1,4 +1,6 @@
 == Changelog ==
+1.0.4 - bug fixes:
+* Upgraded SGPlasmaWeapon to 0.95, fixing the previous fix that was making the weapon deal 0 damage due to damage customization compensation happening twice.
 1.0.3 - bug fixes:
 * Upgraded SGPlasmaWeapon to 0.94, regarding a small goof that was giving an erroneous buff to certain weapons. 
 1.0.2 - bug fixes:

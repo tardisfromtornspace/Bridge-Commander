@@ -180,7 +180,7 @@ import nt
 import string
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-            "Version": "0.94",
+            "Version": "0.95",
             "License": "LGPL",
             "Description": "Read the small title above for more info"
             }
@@ -607,13 +607,13 @@ try:
 				# normal shields, we generate a slight generic one-point drain
 				shouldDealAllFacetDamage = 0
 				# If no changes were made, default damage for ST shields
-				shieldDamageMultiplier = PlasmaGenericShieldDamageMultiplier - 1.0 # nullify shield effects - that is, is immune
+				shieldDamageMultiplier = PlasmaGenericShieldDamageMultiplier - 1 # nullify shield effects - that is, is immune
 				mod = pTorp.GetModuleName()
 				importedTorpInfo = __import__(mod)
 				if hasattr(importedTorpInfo, "ShieldDmgMultiplier"): # If this torp has a special global multiplier, then we use it
 					shieldDamageMultiplier = shieldDamageMultiplier * importedTorpInfo.ShieldDmgMultiplier()
-			
-			shieldDamageMultiplier = shieldDamageMultiplier - PlasmaGenericShieldDamageMultiplier # That is, to compensate the "extra" time we added 1 damage
+			else:
+				shieldDamageMultiplier = shieldDamageMultiplier - PlasmaGenericShieldDamageMultiplier # That is, to compensate the "extra" time we added 1 damage
 	
 			finalShieldDamage = fDamage * shieldDamageMultiplier
 
