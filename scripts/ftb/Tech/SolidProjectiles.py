@@ -63,7 +63,7 @@ class Rocket(FoundationTech.TechDef):
 		App.g_kEventManager.RemoveBroadcastHandler(TIME_TO_DELETE_TORP, self.pEventHandler, "RemoveTorp")
 		App.g_kEventManager.AddBroadcastPythonMethodHandler(TIME_TO_DELETE_TORP, self.pEventHandler, "RemoveTorp")
 
-		loadspacehelper.PreloadShip(self.sModel, 6)
+		#loadspacehelper.PreloadShip(self.sModel, 6)
 
 	def OnFire(self, pEvent, pTorp):
 		debug(__name__ + ", OnFire")
@@ -116,12 +116,14 @@ class Rocket(FoundationTech.TechDef):
 
 			#pProxManager = pSet.GetProximityManager()
 			#if pProxManager:
-			#	pProxManager.RemoveObject(pTorpShipA) # This removes the Subship from the proximity manager without causing a crash when a ship dies or changes set - however for our case merely creating the ship brings problems
+			#	pProxManager.RemoveObject(pTorpShipA) # This removes the Subship from the proximity manager without causing a crash when a ship dies or changes set - however for our case merely creating the ship brings problems so this line is only necessary if we want projectiles to pass through other weapons.
+
 			pTorpShipA.UpdateNodeOnly()
 
 			# pTorpShipA.SetHailable(0) TO-DO ADD A CUSTOM OPTION?
 
-			"""
+
+			# OK so from what I gathered, for some reason, these vessels are not in any group, not even the tractor group!
 			pMission = MissionLib.GetMission()
 			pFriendlies     = None
 			pEnemies        = None
@@ -129,6 +131,7 @@ class Rocket(FoundationTech.TechDef):
 			pTractors       = None
 
 			if pMission:
+				print "pmission"
 				#import Custom.QuickBattleGame.QuickBattle
 				pFriendlies     = pMission.GetFriendlyGroup() 
 				pEnemies        = pMission.GetEnemyGroup() 
@@ -136,16 +139,27 @@ class Rocket(FoundationTech.TechDef):
 				#pNeutrals2      = Custom.QuickBattleGame.QuickBattle.pNeutrals2
 				pTractors       = pMission.GetTractorGroup()
 
-				pFriendlies.RemoveName(pTorpShipA.GetName())
-				pEnemies.RemoveName(pTorpShipA.GetName())
-				pNeutrals.RemoveName(pTorpShipA.GetName())
-				#pNeutrals2.RemoveName(pTorpShipA.GetName())
-				pTractors.RemoveName(pTorpShipA.GetName())
+				if pFriendlies.IsNameInGroup(pTorpShipA.GetName()):
+					print "friendly"
+					pFriendlies.RemoveName(pTorpShipA.GetName())
+				if pEnemies.IsNameInGroup(pTorpShipA.GetName()):
+					print "enemy"
+					pEnemies.RemoveName(pTorpShipA.GetName())
+				if pNeutrals.IsNameInGroup(pTorpShipA.GetName()):
+					print "neutral"
+					pNeutrals.RemoveName(pTorpShipA.GetName())
+				#if pNeutrals2.IsNameInGroup(pTorpShipA.GetName()):
+				#	print "neutral2"
+				#	pNeutrals2.RemoveName(pTorpShipA.GetName())
+				if pTractors.IsNameInGroup(pTorpShipA.GetName()):
+					print "tractor"
+					pTractors.RemoveName(pTorpShipA.GetName())
+
 				pTractors.AddName(pTorpShipA.GetName())
 
 
 			pTorpShipA.UpdateNodeOnly()
-			"""
+
 
 			global dTorpShips
 
