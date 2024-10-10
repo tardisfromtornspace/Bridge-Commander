@@ -37,7 +37,7 @@ import traceback
 
 #################################################################################################################
 MODINFO = { "Author": "\"Alex SL Gato and likely the ftb Team\" andromedavirgoa@gmail.com",
-	    "Version": "0.02",
+	    "Version": "0.03",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -134,7 +134,8 @@ class Rocket(FoundationTech.TechDef):
 
 			global dTorpShips
 
-			dTorpShips[pTorpID] = [pTorpShip, pTimer]
+			pTorpShipID = pTorpShip.GetObjID()
+			dTorpShips[pTorpID] = [pTorpShipID, pTimer]
 
 			pTorp.AttachObject(pTorpShipA)
 			pTorp.UpdateNodeOnly()
@@ -158,7 +159,7 @@ class Rocket(FoundationTech.TechDef):
 			return
 
 
-		pTorpShip = App.ShipClass_GetObjectByID(None, dTorpShips[pTorpID][0].GetObjID())
+		pTorpShip = App.ShipClass_GetObjectByID(None, dTorpShips[pTorpID][0])
 		if pTorpShip:
 			pTorp.DetachObject(pTorpShip)
 
@@ -192,7 +193,7 @@ class Rocket(FoundationTech.TechDef):
 				traceback.print_exc()
 
 			pTorp = App.Torpedo_GetObjectByID(None, pTorpID)
-			pTorpShip = App.ShipClass_GetObjectByID(None, dTorpShips[pTorpID][0].GetObjID())
+			pTorpShip = App.ShipClass_GetObjectByID(None, dTorpShips[pTorpID][0])
 			if pTorpShip:
 				if pTorp:
 					pTorp.DetachObject(pTorpShip)
