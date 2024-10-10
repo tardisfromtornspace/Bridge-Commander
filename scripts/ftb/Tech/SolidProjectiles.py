@@ -37,7 +37,7 @@ import traceback
 
 #################################################################################################################
 MODINFO = { "Author": "\"Alex SL Gato and likely the ftb Team\" andromedavirgoa@gmail.com",
-	    "Version": "0.03",
+	    "Version": "0.04",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -58,8 +58,12 @@ class Rocket(FoundationTech.TechDef):
 		self.__dict__.update(dict)
 		self.pEventHandler = App.TGPythonInstanceWrapper()
 		self.pEventHandler.SetPyWrapper(self)
+		#App.g_kEventManager.RemoveBroadcastHandler(App.ET_TORPEDO_EXITED_SET, self.pEventHandler, "RemoveTorp2") # TO-DO CHECK THIS ONE MAYBE?
+		#App.g_kEventManager.AddBroadcastPythonMethodHandler(App.ET_TORPEDO_EXITED_SET, self.pEventHandler, "RemoveTorp2")
 		App.g_kEventManager.RemoveBroadcastHandler(TIME_TO_DELETE_TORP, self.pEventHandler, "RemoveTorp")
 		App.g_kEventManager.AddBroadcastPythonMethodHandler(TIME_TO_DELETE_TORP, self.pEventHandler, "RemoveTorp")
+
+		loadspacehelper.PreloadShip(self.sModel, 6)
 
 	def OnFire(self, pEvent, pTorp):
 		debug(__name__ + ", OnFire")
@@ -88,10 +92,14 @@ class Rocket(FoundationTech.TechDef):
 			App.g_kTimerManager.AddTimer(pTimer)
 
 			#print "Creating ship:", self.sModel, pTorp.GetContainingSet(), "SolidTorpedo"+str(pTorpID)
-			#print "pTorp set is ", pTorp.GetContainingSet()
+			#print "pTorp set is ", pTorp.GetContainingSet().GetName()
+
 			pcName = "SolidTorpedo" + str(pTorpID)
 			pSet = pTorp.GetContainingSet()
-			pTorpShip = loadspacehelper.CreateShip(self.sModel, pSet, pcName, "")
+			pTorpShip = loadspacehelper.CreateShip(self.sModel, pSet, pcName, None)
+			if not pTorpShip:
+				print "Sorry, unable to add ship"
+				return
 			pTorpShipA = App.ShipClass_GetObject(pSet, pcName)
 			if not pTorpShipA:
 				print "Sorry, unable to add ship"
@@ -100,12 +108,15 @@ class Rocket(FoundationTech.TechDef):
 			pTorpShipA.SetCollisionFlags(0)
 			pTorpShipA.UpdateNodeOnly()
 			pTorpShipA.SetTranslateXYZ( 0, 0, 0)
+			
+			#if pTorpShipA.GetShields():
+			#	pTorpShipA.GetShields().TurnOff()
 
 			#pTorpShipA.ClearAI() #.SetAI(StarbaseNeutralAI.CreateAI(pShip))
 
 			#pProxManager = pSet.GetProximityManager()
 			#if pProxManager:
-			#	pProxManager.RemoveObject(pTorpShipA) # This removes the Subship from the proximity manager without causing a crash when a ship dies or changes set
+			#	pProxManager.RemoveObject(pTorpShipA) # This removes the Subship from the proximity manager without causing a crash when a ship dies or changes set - however for our case merely creating the ship brings problems
 			pTorpShipA.UpdateNodeOnly()
 
 			# pTorpShipA.SetHailable(0) TO-DO ADD A CUSTOM OPTION?
@@ -118,28 +129,32 @@ class Rocket(FoundationTech.TechDef):
 			pTractors       = None
 
 			if pMission:
+				#import Custom.QuickBattleGame.QuickBattle
 				pFriendlies     = pMission.GetFriendlyGroup() 
 				pEnemies        = pMission.GetEnemyGroup() 
 				pNeutrals       = pMission.GetNeutralGroup()
+				#pNeutrals2      = Custom.QuickBattleGame.QuickBattle.pNeutrals2
 				pTractors       = pMission.GetTractorGroup()
 
 				pFriendlies.RemoveName(pTorpShipA.GetName())
 				pEnemies.RemoveName(pTorpShipA.GetName())
 				pNeutrals.RemoveName(pTorpShipA.GetName())
+				#pNeutrals2.RemoveName(pTorpShipA.GetName())
 				pTractors.RemoveName(pTorpShipA.GetName())
 				pTractors.AddName(pTorpShipA.GetName())
+
 
 			pTorpShipA.UpdateNodeOnly()
 			"""
 
 			global dTorpShips
 
-			pTorpShipID = pTorpShip.GetObjID()
+			pTorpShipID = pTorpShipA.GetObjID()
 			dTorpShips[pTorpID] = [pTorpShipID, pTimer]
-
 			pTorp.AttachObject(pTorpShipA)
 			pTorp.UpdateNodeOnly()
-
+			#pTorpShipA.SetDeleteMe(1)
+			#pSet.AddObjectToSet(pTorpShipA, pcName)
 
 		except:
 			print "Creating ship failed somehow..."
@@ -166,6 +181,7 @@ class Rocket(FoundationTech.TechDef):
 			pSet = pTorpShip.GetContainingSet()
 			if pSet:
 				DeleteObjectFromSet(pSet, pTorpShip.GetName())
+				pTorpShip.SetDeleteMe(1)
 
 		try:
 			App.g_kTimerManager.DeleteTimer(dTorpShips[pTorpID][1].GetObjID())
@@ -201,6 +217,7 @@ class Rocket(FoundationTech.TechDef):
 				pSet = pTorpShip.GetContainingSet()
 				if pSet:
 					DeleteObjectFromSet(pSet, pTorpShip.GetName())
+					pTorpShip.SetDeleteMe(1)
 
 			del dTorpShips[pTorpID]
 
@@ -208,8 +225,8 @@ def DeleteObjectFromSet(pSet, sObjectName):
         if not MissionLib.GetShip(sObjectName):
                 return
 
-        pSet.DeleteObjectFromSet(sObjectName)
-	#pSet.RemoveObjectFromSet(sObjectName)
+        #pSet.DeleteObjectFromSet(sObjectName)
+	pSet.RemoveObjectFromSet(sObjectName)
         
         # send clients to remove this object
         if App.g_kUtopiaModule.IsMultiplayer():
