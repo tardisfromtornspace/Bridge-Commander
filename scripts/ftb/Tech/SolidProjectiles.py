@@ -25,7 +25,7 @@ except:
 	traceback.print_exc()
 ###
 Known Bugs (ordered by priority):
--1. Unfortunately, like the original, after firing, the game will crash every time you try to get out of the system, and nearly every time you try to end Simulation.
+-1. Unfortunately, like the original, after firing, the game will crash every time you try to get out of the system, nearly every time you try to end Simulation, and nearly every time a ship dies.
 """
 #################################################################################################################
 from bcdebug import debug
@@ -37,7 +37,7 @@ import traceback
 
 #################################################################################################################
 MODINFO = { "Author": "\"Alex SL Gato and likely the ftb Team\" andromedavirgoa@gmail.com",
-	    "Version": "0.01",
+	    "Version": "0.02",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -89,13 +89,26 @@ class Rocket(FoundationTech.TechDef):
 
 			#print "Creating ship:", self.sModel, pTorp.GetContainingSet(), "SolidTorpedo"+str(pTorpID)
 			#print "pTorp set is ", pTorp.GetContainingSet()
-			pTorpShip = loadspacehelper.CreateShip(self.sModel, pTorp.GetContainingSet(), "SolidTorpedo" + str(pTorpID), "")
-			pTorpShip.SetCollisionFlags(0)
-			pTorpShip.UpdateNodeOnly()
-			pTorpShip.SetTranslateXYZ( 0, 0, 0)
-			pTorpShip.UpdateNodeOnly()
+			pcName = "SolidTorpedo" + str(pTorpID)
+			pSet = pTorp.GetContainingSet()
+			pTorpShip = loadspacehelper.CreateShip(self.sModel, pSet, pcName, "")
+			pTorpShipA = App.ShipClass_GetObject(pSet, pcName)
+			if not pTorpShipA:
+				print "Sorry, unable to add ship"
+				return
 
-			# pTorpShip.SetHailable(0) TO-DO ADD A CUSTOM OPTION?
+			pTorpShipA.SetCollisionFlags(0)
+			pTorpShipA.UpdateNodeOnly()
+			pTorpShipA.SetTranslateXYZ( 0, 0, 0)
+
+			#pTorpShipA.ClearAI() #.SetAI(StarbaseNeutralAI.CreateAI(pShip))
+
+			#pProxManager = pSet.GetProximityManager()
+			#if pProxManager:
+			#	pProxManager.RemoveObject(pTorpShipA) # This removes the Subship from the proximity manager without causing a crash when a ship dies or changes set
+			pTorpShipA.UpdateNodeOnly()
+
+			# pTorpShipA.SetHailable(0) TO-DO ADD A CUSTOM OPTION?
 
 			"""
 			pMission = MissionLib.GetMission()
@@ -110,24 +123,26 @@ class Rocket(FoundationTech.TechDef):
 				pNeutrals       = pMission.GetNeutralGroup()
 				pTractors       = pMission.GetTractorGroup()
 
-				pFriendlies.RemoveName(pTorpShip.GetName())
-				pEnemies.RemoveName(pTorpShip.GetName())
-				pNeutrals.RemoveName(pTorpShip.GetName())
-				pTractors.RemoveName(pTorpShip.GetName())
-				pTractors.AddName(pTorpShip.GetName())
+				pFriendlies.RemoveName(pTorpShipA.GetName())
+				pEnemies.RemoveName(pTorpShipA.GetName())
+				pNeutrals.RemoveName(pTorpShipA.GetName())
+				pTractors.RemoveName(pTorpShipA.GetName())
+				pTractors.AddName(pTorpShipA.GetName())
 
-			pTorpShip.UpdateNodeOnly()
+			pTorpShipA.UpdateNodeOnly()
 			"""
+
 			global dTorpShips
 
 			dTorpShips[pTorpID] = [pTorpShip, pTimer]
 
-			pTorp.AttachObject(pTorpShip)
+			pTorp.AttachObject(pTorpShipA)
 			pTorp.UpdateNodeOnly()
 
 
 		except:
 			print "Creating ship failed somehow..."
+			traceback.print_exc()
 
 	def OnYield(self, pShip, pInstance, pEvent, pTorp):
 		debug(__name__ + ", OnYield")
@@ -142,12 +157,12 @@ class Rocket(FoundationTech.TechDef):
 		if not (dTorpShips.has_key(pTorpID) and dTorpShips[pTorpID]):
 			return
 
-		pSet = pTorp.GetContainingSet()
 
 		pTorpShip = App.ShipClass_GetObjectByID(None, dTorpShips[pTorpID][0].GetObjID())
 		if pTorpShip:
 			pTorp.DetachObject(pTorpShip)
 
+			pSet = pTorpShip.GetContainingSet()
 			if pSet:
 				DeleteObjectFromSet(pSet, pTorpShip.GetName())
 
@@ -179,9 +194,10 @@ class Rocket(FoundationTech.TechDef):
 			pTorp = App.Torpedo_GetObjectByID(None, pTorpID)
 			pTorpShip = App.ShipClass_GetObjectByID(None, dTorpShips[pTorpID][0].GetObjID())
 			if pTorpShip:
-				pTorp.DetachObject(pTorpShip)
+				if pTorp:
+					pTorp.DetachObject(pTorpShip)
 
-				pSet = pTorp.GetContainingSet()
+				pSet = pTorpShip.GetContainingSet()
 				if pSet:
 					DeleteObjectFromSet(pSet, pTorpShip.GetName())
 
