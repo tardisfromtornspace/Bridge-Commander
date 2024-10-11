@@ -18,7 +18,7 @@
 # - "sHideProj": if you want the projectile whose torpedo ship is attached to visible (1) or not (0). Default is 0.
 # TO-DO OPTION TO MAKE THE TORPEDO INVISIBLE!!! SetHidden
 # - "sAI": imagine your torpedo vessel firing back. This is a dictionary with some fields:
-# -- "AI": here you must include a CreateAI function to add an AI to make the ship act. Default is AuxAI.CreateAI from this file. Custom AIs need to be tailored so "def CreateAI" function has two fields, pShip and whoIattack, respectively.
+# -- "AI": here you must include a CreateAI function to add an AI to make the ship act. Default is CreateAI from this file. Custom AIs need to be tailored so "def CreateAI" function has two fields, pShip and whoIattack, respectively.
 # -- "Side": here you either indicate if you want your AI to be "Friendly", "Enemy", "Neutral" or "Tractor" compared with parent ship. Default is tractor group.
 # -- "Team": here you either indicate if you want your ship to be on the "Friendly", "Enemy", "Neutral" or "Tractor" groups compared with parent ship. Default is tractor group.
 ###
@@ -55,7 +55,7 @@ import traceback
 
 #################################################################################################################
 MODINFO = { "Author": "\"Alex SL Gato, Greystar, JohnKuhns777 and likely the ftb Team\" andromedavirgoa@gmail.com",
-	    "Version": "0.1",
+	    "Version": "0.11",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
