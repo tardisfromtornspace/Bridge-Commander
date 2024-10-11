@@ -94,8 +94,8 @@ try:
 	#import path.to.tailoredAI.tailoredAIfilename
 	#myAIfunction = tailoredAIfilename.CreateAI
 	# Remember, if you don't want AI, do not add the "sAI" field.
-	oFire = ftb.Tech.SolidProjectiles.Rocket('Spatial Projectiles', {"sModel" : "ambassador", "sScale" : 1.0, "sShield": 1, "sCollide": 1, "sHideProj": 0, "sAI": {"AI": None, "Side": "Friendly", "Team": "Friendly"}})
-	#oFire = ftb.Tech.SolidProjectiles.Rocket('Spatial Projectiles', {"sModel" : "ambassador", "sScale" : 1.0, "sShield": 1, "sCollide": 1, "sHideProj": 0}) 
+	oFire = ftb.Tech.SolidProjectiles.Rocket('Spatial Projectiles', {"sModel" : "ambassador", "sScale" : 1.0, "sShield": 1, "sCollide": 2, "sHideProj": 0, "sTargetable": 1, "sAI": {"AI": None, "Side": "Friendly", "Team": "Friendly"}})
+	#oFire = ftb.Tech.SolidProjectiles.Rocket('Spatial Projectiles', {"sModel" : "ambassador", "sScale" : 1.0, "sShield": 1, "sCollide": 2, "sHideProj": 0, "sTargetable": 1}) 
 	FoundationTech.dOnFires[__name__] = oFire
 	FoundationTech.dYields[__name__] = oFire
 except:
