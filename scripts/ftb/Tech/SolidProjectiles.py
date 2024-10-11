@@ -1,31 +1,48 @@
 """
 #         SolidProjectiles
 #         10th October 2024
-#         Modification by Alex SL Gato of ftb/Tech/SolidProjectiles.py, most likely by FoundationTechnologies team
+#         Modification by Alex SL Gato, Greystar and JohnKuhns777 of ftb/Tech/SolidProjectiles.py, most likely by FoundationTechnologies team
 #         Also based slightly on Turrets script by Alex SL Gato.
 #################################################################################################################
 # This tech update gives a torpedo or disruptor projectile the ability to fire a ship alongside it. Due to how base FoundationTech does not have a proper OnFire for projectiles fired from Pulse Weapon systems, the torpedo or disrupter needs to be fired from a Torpedo Launcher to work.
 # The update to the original was made so the technology actually works in a cleaner manner, in order not to leave random flying ships floating invisible around the map and to fix an error with a casting.
 # HOW-TO-ADD:
-# At the bottom of your torpedo projectile file add this (Between the ### and ###), replacing the fields with proper values:
+# At the bottom of your torpedo projectile file add this (Between the ### and ###), replacing the fields with proper values.
+# If you want to combine multiple projectiel technologies that use FoundationTech.dOnFires and FoundationTech.dYields, then create a custom function inside the projectile file that calls the aforementioned technologies.
 # Note that if a projectile has a torpedo model, the torpedo ship will not orient itself, but if the ship has a disruptor model, it will.
 # Fields:
 # - "sModel": literally the ship from scripts/Ships folder. That is, if we wanted a scripts/ships/ambassador ship to be deployed with the torpedo, then we make it "sModel" : "ambassador". Recommended to make the ship one without any warp engines or elements of the sort to avoid possible conflicts with certain warp or alternate FTL scripts.
+# - "sScale": changes the model's size with respect to the original.
+# - "sShield": value of 1 means shields will be in whatever state they are normally set when a non-player ship is added (which, in most cases, means shields up), value of 0 means shields down, value of 2 will guarantee shields. Default is 1.
+# - "sCollide": represents status of collisions. 0 means it's like a ghost for weapons and collisions. -1 (or lesser) ensures it's like a ghost, removing the torpedo ship from the proximity manager fully. 1 will attempt to keep some degree of tangibility, so weapons cannot pass through, but ships can. 2 will attempt to keep tangibility and collidability too but avoiding the parent ship colliding. Any other positive value will make the ship fully collidable, which is totally NOT recommended. Please consider any configuration that restores tangibility will make the AI freak out for having incoming ships trying to collide with them. Default is 0.
+# - "sHideProj": if you want the projectile whose torpedo ship is attached to visible (1) or not (0). Default is 0.
+# TO-DO OPTION TO MAKE THE TORPEDO INVISIBLE!!! SetHidden
+# - "sAI": imagine your torpedo vessel firing back. This is a dictionary with some fields:
+# -- "AI": here you must include a CreateAI function to add an AI to make the ship act. Default is AuxAI.CreateAI from this file. Custom AIs need to be tailored so "def CreateAI" function has two fields, pShip and whoIattack, respectively.
+# -- "Side": here you either indicate if you want your AI to be "Friendly", "Enemy", "Neutral" or "Tractor" compared with parent ship. Default is tractor group.
+# -- "Team": here you either indicate if you want your ship to be on the "Friendly", "Enemy", "Neutral" or "Tractor" groups compared with parent ship. Default is tractor group.
 ###
 import traceback
 
 try:
 	import FoundationTech
 	import ftb.Tech.SolidProjectiles
-	oFire = ftb.Tech.SolidProjectiles.Rocket('Spatial Projectiles', {"sModel" : "ambassador"})
+	# The line below is a hypotehthical example if you want customized AI - uncomment and adjust accordingly if you want
+	#import path.to.tailoredAI.tailoredAIfilename
+	#myAIfunction = tailoredAIfilename.CreateAI
+	# Remember, if you don't want AI, do not add the "sAI" field.
+	#oFire = ftb.Tech.SolidProjectiles.Rocket('Spatial Projectiles', {"sModel" : "ambassador", "sScale" : 1.0, "sShield": 1, "sCollide": 0, "sHideProj": 0, "sAI": {"AI": myAIfunction, "Side": None, "Team": None}})
+	oFire = ftb.Tech.SolidProjectiles.Rocket('Spatial Projectiles', {"sModel" : "ambassador", "sScale" : 1.0, "sShield": 1, "sCollide": 0, "sHideProj": 0}) 
 	FoundationTech.dOnFires[__name__] = oFire
 	FoundationTech.dYields[__name__] = oFire
 except:
-	print "Error when firing solid projectile"
+	print "Error with firing solid projectile"
 	traceback.print_exc()
 ###
 Known Bugs (ordered by priority):
--1. Unfortunately, like the original, after firing, the game will crash every time you try to get out of the system, nearly every time you try to end Simulation, and nearly every time a ship dies.
+- Firing these torpedoes while at warp makes the targets unhittable with these torpedoes (as, the projectile does not collide with the targets). No other effects. Torps keep working correctly outside warp as intended.
+- Trying to tractor a torpedo ship causes it to teleport.
+- Even when tangible, ONLY phasers can hit, no projectiles. Killing a torpedo ship causes no issues though.
 """
 #################################################################################################################
 from bcdebug import debug
@@ -33,11 +50,12 @@ import App
 import FoundationTech
 import loadspacehelper
 import MissionLib
+import string
 import traceback
 
 #################################################################################################################
-MODINFO = { "Author": "\"Alex SL Gato and likely the ftb Team\" andromedavirgoa@gmail.com",
-	    "Version": "0.04",
+MODINFO = { "Author": "\"Alex SL Gato, Greystar, JohnKuhns777 and likely the ftb Team\" andromedavirgoa@gmail.com",
+	    "Version": "0.1",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -49,9 +67,45 @@ REPLACE_MODEL_MSG = 208
 SET_TARGETABLE_MSG = 209
 TIME_TO_DELETE_TORP = App.UtopiaModule_GetNextEventType() #Maybe App.ET_TORPEDO_EXITED_SET could work?
 
-dTorpShips = {}
+dTorpShips = {} # TO-DO Maybe move this inside the AuxInitiater?
 
-class Rocket(FoundationTech.TechDef):
+#Special AI for ship
+
+def CreateAI(pShip, whoIattack): # We need a tailored function for us TO-DO
+	#########################################
+	# Creating CompoundAI StarbaseAttack at (194, 57)
+	debug(__name__ + ", CreateAI")
+
+	import AI.Compound.StarbaseAttack
+	pStarbaseAttack = AI.Compound.StarbaseAttack.CreateAI(pShip, whoIattack)
+	# Done creating CompoundAI StarbaseAttack
+	#########################################
+	#########################################
+	# Creating ConditionalAI Wait at (83, 155)
+	## Conditions:
+	#### Condition TimePassed
+	pTimePassed = App.ConditionScript_Create("Conditions.ConditionTimer", "ConditionTimer", 7, 0)
+	## Evaluation function:
+	def EvalFunc(bTimePassed):
+		debug(__name__ + ", EvalFunc")
+		ACTIVE = App.ArtificialIntelligence.US_ACTIVE
+		DORMANT = App.ArtificialIntelligence.US_DORMANT
+		DONE = App.ArtificialIntelligence.US_DONE
+		if bTimePassed:
+			return ACTIVE
+		return DORMANT
+	## The ConditionalAI:
+	pWait = App.ConditionalAI_Create(pShip, "Wait")
+	pWait.SetInterruptable(1)
+	pWait.SetContainedAI(pStarbaseAttack)
+	pWait.AddCondition(pTimePassed)
+	pWait.SetEvaluationFunction(EvalFunc)
+	# Done creating ConditionalAI Wait
+	#########################################
+	return pWait
+
+# TO-DO CREATE AL ALTERNATIVE CLASS CALLED HERE THAT TAKES CARE OF ACTUAL THINGS WHIEL THE TORPS TAKE CARE OF ANOTHER
+class AuxInitiater(FoundationTech.TechDef):
 	def __init__(self, name, dict = None):
 		debug(__name__ + ", __init__")
 		FoundationTech.TechDef.__init__(self, name, dict)
@@ -63,148 +117,202 @@ class Rocket(FoundationTech.TechDef):
 		App.g_kEventManager.RemoveBroadcastHandler(TIME_TO_DELETE_TORP, self.pEventHandler, "RemoveTorp")
 		App.g_kEventManager.AddBroadcastPythonMethodHandler(TIME_TO_DELETE_TORP, self.pEventHandler, "RemoveTorp")
 
-		#loadspacehelper.PreloadShip(self.sModel, 6)
+	def CreateTimer(self, pEvent, pTorp, pTorpID, delay = 0.0):
+		pEvent2 = App.TGIntEvent_Create()
+		pEvent2.SetEventType(TIME_TO_DELETE_TORP)
+		pEvent2.SetSource(pEvent.GetSource())
+		pEvent2.SetDestination(pEvent.GetDestination())
+		pEvent2.SetInt(int(pTorpID))
 
-	def OnFire(self, pEvent, pTorp):
-		debug(__name__ + ", OnFire")
-		#print 'SolidTorpedoTorpedo.OnFire'
+		pTimer = App.TGTimer_Create()
+		pTimer.SetTimerStart( App.g_kUtopiaModule.GetGameTime()+delay )
+		pTimer.SetDelay(0)
+		pTimer.SetDuration(0)
+		pTimer.SetEvent(pEvent2)
 
-		pTorpID = pTorp.GetObjID()
-		if not pTorpID:
-			return
-		try:
-			delay = pTorp.GetLifetime() - 0.25
-			if delay < 0.0:
-				delay = 0.0
+		App.g_kTimerManager.AddTimer(pTimer)
 
-			pEvent2 = App.TGIntEvent_Create()
-			pEvent2.SetEventType(TIME_TO_DELETE_TORP)
-			pEvent2.SetSource(pEvent.GetSource())
-			pEvent2.SetDestination(pEvent.GetDestination())
-			pEvent2.SetInt(int(pTorpID))
+		return pTimer
 
-			pTimer = App.TGTimer_Create()
-			pTimer.SetTimerStart( App.g_kUtopiaModule.GetGameTime()+delay )
-			pTimer.SetDelay(0)
-			pTimer.SetDuration(0)
-			pTimer.SetEvent(pEvent2)
+	def CreateShip(self, pEvent, pTorp, pTorpID, sModel, sScale, sShield, sCollide, sHideProj, sAI):
+		#print "Creating ship:", sModel, pTorp.GetContainingSet(), "SolidTorpedo"+str(pTorpID)
+		#print "pTorp set is ", pTorp.GetContainingSet().GetName()
 
-			App.g_kTimerManager.AddTimer(pTimer)
+		pcName = "SolidTorpedo" + str(pTorpID)
+		pSet = pTorp.GetContainingSet()
 
-			#print "Creating ship:", self.sModel, pTorp.GetContainingSet(), "SolidTorpedo"+str(pTorpID)
-			#print "pTorp set is ", pTorp.GetContainingSet().GetName()
+		pTorpShip = loadspacehelper.CreateShip(sModel, None, pcName, None) # Adding the ship to a set then changing its flags generates a glitch which causes the game to crash when a ship dies, warps out or the player reloads. Thus, we first create the ship, add the flags, and then we add it to the set.
+		if not pTorpShip:
+			print "Sorry, unable to add ship"
+			return None
 
-			pcName = "SolidTorpedo" + str(pTorpID)
-			pSet = pTorp.GetContainingSet()
-			pTorpShip = loadspacehelper.CreateShip(self.sModel, pSet, pcName, None)
-			if not pTorpShip:
-				print "Sorry, unable to add ship"
-				return
-			pTorpShipA = App.ShipClass_GetObject(pSet, pcName)
-			if not pTorpShipA:
-				print "Sorry, unable to add ship"
-				return
+		# If we set the collision flags before adding it to the set, no more issues happen
+		if sCollide <= 0:
+			pTorpShip.SetCollisionFlags(0)
+			#pTorpShip.SetCollisionsOn(0)
+			pTorpShip.UpdateNodeOnly()
+		else:
+			pTorpShip.SetCollisionFlags(1)
 
-			pTorpShipA.SetCollisionFlags(0)
-			pTorpShipA.UpdateNodeOnly()
-			pTorpShipA.SetTranslateXYZ( 0, 0, 0)
+		if not pSet.AddObjectToSet(pTorpShip, pcName):
+			# Delete the ship.
+			pDeletionEvent = App.TGEvent_Create()
+			pDeletionEvent.SetEventType(App.ET_DELETE_OBJECT_PUBLIC)
+			pDeletionEvent.SetDestination(pTorpShip)
+			App.g_kEventManager.AddEvent(pDeletionEvent)
+
+			return None
+
+		pTorpShipA = App.ShipClass_GetObject(pSet, pcName)
+		if not pTorpShipA:
+			print "Sorry, unable to add ship"
+			return None
+
+		pTorpShipA.SetTranslateXYZ( 0, 0, 0)
+		if sScale > 0.0 and sScale != 1.0:
+			pTorpShipA.SetScale(sScale)
 			
-			#if pTorpShipA.GetShields():
-			#	pTorpShipA.GetShields().TurnOff()
+		if pTorpShipA.GetShields():
+			if sShield == 0:
+				pTorpShipA.GetShields().TurnOff()
+			elif sShield == 2:
+				pTorpShipA.GetShields().TurnOn()
 
-			#pTorpShipA.ClearAI() #.SetAI(StarbaseNeutralAI.CreateAI(pShip))
+		#TO-DO ADD AI OPTIONS?
+		#pTorpShipA.ClearAI() #.SetAI(StarbaseNeutralAI.CreateAI(pShip))
 
-			#pProxManager = pSet.GetProximityManager()
-			#if pProxManager:
-			#	pProxManager.RemoveObject(pTorpShipA) # This removes the Subship from the proximity manager without causing a crash when a ship dies or changes set - however for our case merely creating the ship brings problems so this line is only necessary if we want projectiles to pass through other weapons.
+		pShip = App.ShipClass_GetObjectByID(None, pTorp.GetParentID())
+		if sCollide <= -1:
+			pProxManager = pSet.GetProximityManager()
+			if pProxManager:
+				pProxManager.RemoveObject(pTorpShipA) # This removes the Subship from the proximity manager without causing a crash when a ship dies or changes set.
+		elif sCollide == 1: # This makes a strange combo - cannot be damaged by its own torpedo nor cannot be collided with, but now weapons can actually hit its hull.
+			pTorpShip.SetCollisionFlags(0)
+			pTorpShip.UpdateNodeOnly()
+		elif sCollide == 2: # Ships are fully collidable
+			
+			if pShip:
+				pShip.EnableCollisionsWith(pTorpShip, 0)
+				pTorpShip.EnableCollisionsWith(pShip, 0)
 
-			pTorpShipA.UpdateNodeOnly()
+		pTorpShipA.SetHidden(0) # guarantees the vessel is visible
+		pTorpShipA.UpdateNodeOnly()
 
-			# pTorpShipA.SetHailable(0) TO-DO ADD A CUSTOM OPTION?
+		# pTorpShipA.SetHailable(0) TO-DO ADD A CUSTOM OPTION?
 
 
-			# OK so from what I gathered, for some reason, these vessels are not in any group, not even the tractor group!
-			pMission = MissionLib.GetMission()
-			pFriendlies     = None
-			pEnemies        = None
-			pNeutrals       = None
-			pTractors       = None
+		# OK so from what I gathered, for some reason, these vessels are not in any group, not even the tractor group!
+		pMission = MissionLib.GetMission()
+		pFriendlies     = None
+		pEnemies        = None
+		pNeutrals       = None
+		pTractors       = None
 
-			if pMission:
-				print "pmission"
-				#import Custom.QuickBattleGame.QuickBattle
-				pFriendlies     = pMission.GetFriendlyGroup() 
-				pEnemies        = pMission.GetEnemyGroup() 
-				pNeutrals       = pMission.GetNeutralGroup()
-				#pNeutrals2      = Custom.QuickBattleGame.QuickBattle.pNeutrals2
-				pTractors       = pMission.GetTractorGroup()
+		
+		if pMission:
+			#import Custom.QuickBattleGame.QuickBattle
+			pFriendlies     = pMission.GetFriendlyGroup() 
+			pEnemies        = pMission.GetEnemyGroup() 
+			pNeutrals       = pMission.GetNeutralGroup()
+			pNeutrals2      = App.ObjectGroup_FromModule("Custom.QuickBattleGame.QuickBattle", "pNeutrals2")
+			pTractors       = pMission.GetTractorGroup()
 
-				if pFriendlies.IsNameInGroup(pTorpShipA.GetName()):
-					print "friendly"
-					pFriendlies.RemoveName(pTorpShipA.GetName())
-				if pEnemies.IsNameInGroup(pTorpShipA.GetName()):
-					print "enemy"
-					pEnemies.RemoveName(pTorpShipA.GetName())
-				if pNeutrals.IsNameInGroup(pTorpShipA.GetName()):
-					print "neutral"
-					pNeutrals.RemoveName(pTorpShipA.GetName())
-				#if pNeutrals2.IsNameInGroup(pTorpShipA.GetName()):
-				#	print "neutral2"
-				#	pNeutrals2.RemoveName(pTorpShipA.GetName())
-				if pTractors.IsNameInGroup(pTorpShipA.GetName()):
-					print "tractor"
-					pTractors.RemoveName(pTorpShipA.GetName())
+			
+			if pFriendlies.IsNameInGroup(pcName):
+				pFriendlies.RemoveName(pcName)
+			if pEnemies.IsNameInGroup(pcName):
+				pEnemies.RemoveName(pcName)
+			if pNeutrals.IsNameInGroup(pcName):
+				pNeutrals.RemoveName(pcName)
+			if pNeutrals2 and pNeutrals2.IsNameInGroup(pcName):
+				pNeutrals2.RemoveName(pcName)
+			if pTractors.IsNameInGroup(pcName):
+				pTractors.RemoveName(pcName)
 
+			parentAlignment = "None"
+			parentTeam = None
+			parentName = None
+			if pShip:
+				parentName = pShip.GetName()
+				if pFriendlies.IsNameInGroup(parentName):
+					parentTeam = pFriendlies
+					parentAlignment = "pFriendlies"
+				if pEnemies.IsNameInGroup(parentName):
+					parentTeam = pEnemies
+					parentAlignment = "pEnemies"
+				if pNeutrals.IsNameInGroup(parentName):
+					parentTeam = pNeutrals
+					parentAlignment = "pNeutrals"
+				if pNeutrals2 and pNeutrals2.IsNameInGroup(parentName):
+					parentTeam = pNeutrals2
+					parentAlignment = "pNeutrals2"
+				if pTractors.IsNameInGroup(parentName):
+					parentTeam = pTractors
+					parentAlignment = "pTractors"
+
+			# TO-DO AI HERE
+			if sAI != None and sAI.has_key("AI"):
+				if sAI.has_key("Team"):
+					team = sAI["Team"]
+					if team != None and pShip and parentTeam != None:
+						if string.lower(team) == "friendly":
+							parentTeam.AddName(pTorpShipA.GetName())
+						elif string.lower(team) == "enemy":
+							if parentAlignment != "None":
+								if parentAlignment == "pFriendlies":
+									pEnemies.AddName(pTorpShipA.GetName())
+								elif parentAlignment == "pEnemies" or parentAlignment == "pNeutrals2":
+									pFriendlies.AddName(pTorpShipA.GetName())
+								elif parentAlignment == "pTractors":
+									pNeutrals.AddName(pTorpShipA.GetName())
+								else:
+									pTractors.AddName(pTorpShipA.GetName())
+							else:
+								pTractors.AddName(pTorpShipA.GetName())
+						elif string.lower(team) == "neutral":
+							pNeutrals.AddName(pTorpShipA.GetName())
+						else:
+							pTractors.AddName(pTorpShipA.GetName())
+					else:
+						pTractors.AddName(pTorpShipA.GetName())
+				else:
+					pTractors.AddName(pTorpShipA.GetName())
+
+				if sAI.has_key("Side"):
+					side = sAI["Side"]
+					if side != None and side != "None":
+						ai = sAI["AI"] # function
+						if ai == None:
+							ai = CreateAI
+
+						if parentAlignment != "None" and parentTeam != None:
+							if string.lower(side) == "friendly":
+								whoIattack = pTractors
+								if parentAlignment == "pFriendlies":
+									whoIattack = pEnemies
+								elif parentAlignment == "pEnemies":
+									whoIattack = pFriendlies
+								elif parentAlignment == "pTractors" or parentAlignment == "pNeutrals2":
+									whoIattack = pNeutrals
+
+								pShip.SetAI(ai(pTorpShipA, whoIattack))
+							
+							elif string.lower(team) == "enemy":
+								pShip.SetAI(ai(pTorpShipA, parentTeam))
+
+							elif string.lower(team) == "neutral":
+								pShip.SetAI(ai(pTorpShipA, pNeutrals))
+							else:
+								pShip.SetAI(ai(pTorpShipA, pTractors))
+						else:
+							pShip.SetAI(ai(pTorpShipA, pTractors))
+
+			else:
 				pTractors.AddName(pTorpShipA.GetName())
 
+		pTorpShipA.UpdateNodeOnly()
 
-			pTorpShipA.UpdateNodeOnly()
-
-
-			global dTorpShips
-
-			pTorpShipID = pTorpShipA.GetObjID()
-			dTorpShips[pTorpID] = [pTorpShipID, pTimer]
-			pTorp.AttachObject(pTorpShipA)
-			pTorp.UpdateNodeOnly()
-			#pTorpShipA.SetDeleteMe(1)
-			#pSet.AddObjectToSet(pTorpShipA, pcName)
-
-		except:
-			print "Creating ship failed somehow..."
-			traceback.print_exc()
-
-	def OnYield(self, pShip, pInstance, pEvent, pTorp):
-		debug(__name__ + ", OnYield")
-
-		pTorpID = pTorp.GetObjID()
-		pTorp = App.Torpedo_GetObjectByID(None, pTorpID)
-		if not pTorp:
-			return
-
-		global dTorpShips
-
-		if not (dTorpShips.has_key(pTorpID) and dTorpShips[pTorpID]):
-			return
-
-
-		pTorpShip = App.ShipClass_GetObjectByID(None, dTorpShips[pTorpID][0])
-		if pTorpShip:
-			pTorp.DetachObject(pTorpShip)
-
-			pSet = pTorpShip.GetContainingSet()
-			if pSet:
-				DeleteObjectFromSet(pSet, pTorpShip.GetName())
-				pTorpShip.SetDeleteMe(1)
-
-		try:
-			App.g_kTimerManager.DeleteTimer(dTorpShips[pTorpID][1].GetObjID())
-			del dTorpShips[pTorpID][1]
-		except:
-			print "Error on SolidProjectiles' onYield"
-			traceback.print_exc()
-
-		del dTorpShips[pTorpID]
+		return pTorpShipA
 
 	def RemoveTorp(self, pEvent):
 		debug(__name__ + ", RemoveTorp")
@@ -234,6 +342,99 @@ class Rocket(FoundationTech.TechDef):
 					pTorpShip.SetDeleteMe(1)
 
 			del dTorpShips[pTorpID]
+
+auxIniti = AuxInitiater("Solid Projectile helper", {})
+
+class Rocket(FoundationTech.TechDef):
+	def __init__(self, name, dict = None):
+		debug(__name__ + ", __init__")
+		FoundationTech.TechDef.__init__(self, name, dict)
+		self.__dict__.update(dict)
+
+		#loadspacehelper.PreloadShip(self.sModel, 6)
+
+	def OnFire(self, pEvent, pTorp):
+		debug(__name__ + ", OnFire")
+		#print 'SolidTorpedoTorpedo.OnFire'
+
+		pTorpID = pTorp.GetObjID()
+		if not pTorpID:
+			return
+		try:
+			delay = pTorp.GetLifetime() - 0.25
+			if delay < 0.0:
+				delay = 0.0
+			pTimer = auxIniti.CreateTimer(pEvent, pTorp, pTorpID, delay)
+
+			if not hasattr(self, "sScale") or self.sScale <= 0.0:
+				self.sScale = 1.0
+			if not hasattr(self, "sShield") or self.sShield <= 0.0:
+				self.sShield = 1.0
+			if not hasattr(self, "sCollide") or self.sCollide < -1:
+				self.sCollide = 0
+			if not hasattr(self, "sHideProj") or self.sHideProj <= 0:
+				self.sHideProj = 0
+			if self.sHideProj > 1:
+				self.sHideProj = 1
+			self.sHideProj = self.sHideProj%1
+			if not hasattr(self, "sAI"):
+				self.sAI = None
+			elif self.sAI != None: # So it has an AI
+				if not self.sAI.has_key("AI"):
+					self.sAI["AI"] = None
+				if not self.sAI.has_key("Side"):
+					self.sAI["Side"] = "Tractor"
+				if not self.sAI.has_key("Team"):
+					self.sAI["Team"] = "Tractor"
+				#"sAI": {"AI": None, "Side": None, "Team": None}
+
+			pTorpShipA = auxIniti.CreateShip(pEvent, pTorp, pTorpID, self.sModel, self.sScale, self.sShield, self.sCollide, self.sHideProj, self.sAI)
+
+			global dTorpShips
+
+			pTorpShipID = pTorpShipA.GetObjID()
+			dTorpShips[pTorpID] = [pTorpShipID, pTimer]
+			pTorp.AttachObject(pTorpShipA)
+			pTorp.SetHidden(self.sHideProj)
+			pTorp.UpdateNodeOnly()
+			#pTorpShipA.SetDeleteMe(1)
+			#pSet.AddObjectToSet(pTorpShipA, pcName)
+
+		except:
+			print "Creating ship failed somehow..."
+			traceback.print_exc()
+
+	def OnYield(self, pShip, pInstance, pEvent, pTorp):
+		debug(__name__ + ", OnYield")
+
+		pTorpID = pTorp.GetObjID()
+		pTorp = App.Torpedo_GetObjectByID(None, pTorpID)
+		if not pTorp:
+			return
+
+		global dTorpShips
+
+		if not (dTorpShips.has_key(pTorpID) and dTorpShips[pTorpID]):
+			return
+
+		pTorpShip = App.ShipClass_GetObjectByID(None, dTorpShips[pTorpID][0])
+		if pTorpShip:
+			pTorp.DetachObject(pTorpShip)
+
+			pSet = pTorpShip.GetContainingSet()
+			if pSet:
+				DeleteObjectFromSet(pSet, pTorpShip.GetName())
+				pTorpShip.SetDeleteMe(1)
+
+		try:
+			App.g_kTimerManager.DeleteTimer(dTorpShips[pTorpID][1].GetObjID())
+			del dTorpShips[pTorpID][1]
+		except:
+			print "Error on SolidProjectiles' onYield"
+			traceback.print_exc()
+
+		del dTorpShips[pTorpID]
+
 
 def DeleteObjectFromSet(pSet, sObjectName):
         if not MissionLib.GetShip(sObjectName):

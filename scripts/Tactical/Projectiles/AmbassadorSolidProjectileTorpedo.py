@@ -53,7 +53,7 @@ def Create(pTorp):
 
 	pTorp.CreateDisruptorModel(kOuterShellColor,kOuterCoreColor, 1.5, 0.06)
 	pTorp.SetDamage( GetDamage() )
-	pTorp.SetDamageRadiusFactor(0.13)
+	pTorp.SetDamageRadiusFactor(0.53)
 	pTorp.SetGuidanceLifetime( GetGuidanceLifetime() )
 	pTorp.SetMaxAngularAccel( GetMaxAngularAccel() )
 
@@ -74,10 +74,10 @@ def GetPowerCost():
 	return(20.0)
 
 def GetName():
-	return("Photon")
+	return("Send Ambassadors")
 
 def GetDamage():
-	return 6500.0
+	return 7500.0
 
 def GetGuidanceLifetime():
 	return 11.0
@@ -85,15 +85,19 @@ def GetGuidanceLifetime():
 def GetMaxAngularAccel():
 	return 3.7
 
-import traceback
 
+import traceback
 try:
 	import FoundationTech
 	import ftb.Tech.SolidProjectiles
-	oFire = ftb.Tech.SolidProjectiles.Rocket('Spatial Projectiles', {"sModel" : "ambassador"})
+	# The line below is a hypotehthical example if you want customized AI - uncomment and adjust accordingly if you want
+	#import path.to.tailoredAI.tailoredAIfilename
+	#myAIfunction = tailoredAIfilename.CreateAI
+	# Remember, if you don't want AI, do not add the "sAI" field.
+	oFire = ftb.Tech.SolidProjectiles.Rocket('Spatial Projectiles', {"sModel" : "ambassador", "sScale" : 1.0, "sShield": 1, "sCollide": 1, "sHideProj": 0, "sAI": {"AI": None, "Side": "Friendly", "Team": "Friendly"}})
+	#oFire = ftb.Tech.SolidProjectiles.Rocket('Spatial Projectiles', {"sModel" : "ambassador", "sScale" : 1.0, "sShield": 1, "sCollide": 1, "sHideProj": 0}) 
 	FoundationTech.dOnFires[__name__] = oFire
 	FoundationTech.dYields[__name__] = oFire
-
 except:
-	print "Error when firing solid projectile"
+	print "Error with firing solid projectile"
 	traceback.print_exc()
