@@ -68,7 +68,7 @@ Foundation.ShipDef.AndromedaTalyn.dTechs = {
 	'Reflux Weapon': 100,
 	'Regenerative Shields': 50,
 	"SG Anubis SuperWeapon Ray": { "Beams": ["Array 1", "Array 2", "Array 3", "Array 4", "Array 5", "Array 6"]},
-	"SG Asgard Beams Weapon": {"HullDmgMultiplier": 0.25, "ShieldDmgMultiplier": 0.25},
+	"SG Asgard Beams Weapon": {"HullDmgMultiplier": 0.12, "ShieldDmgMultiplier": 0.12},
 	"SG Ori Beams Weapon": {"HullDmgMultiplier": 0.5, "ShieldDmgMultiplier": 0.5, "Beams": ["Ori Array"]},
 	'Simulated Point Defence' : { "Distance": 120.0, "InnerDistance": 15.0, "Effectiveness": 0.8, "LimitTurn": 6.0, "LimitSpeed": 350, "Period": 0.2, "MaxNumberTorps": 12, "Pulse": {"Priority": 1}},
 	"Slow Start": {"Pulses": ["Nova Bomb 1", "Nova Bomb 2", "Transphasic"]},
