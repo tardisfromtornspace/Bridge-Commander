@@ -59,7 +59,7 @@ Foundation.ShipDef.AndromedaTalyn.dTechs = {
 			"Sensor": 1500,
 		}  
 	},
-	"GraviticLance": { "Time": 0.1, "TimeEffect": 10.0, "RadDepletionStrength": 1000, "Beams": ["Gravitic Lance"], "Immune": 1},
+	"GraviticLance": { "Time": 0.1, "TimeEffect": 10.0, "RadDepletionStrength": 1000, "Beams": ["Gravitic Lance", "Array 6"], "Immune": 1},
 	"Inversion Beam": [0.5, 0, 0.5, 1500],
 	"Phased Torpedo Immune": 1,
 	"Phase Cloak": 0.1,

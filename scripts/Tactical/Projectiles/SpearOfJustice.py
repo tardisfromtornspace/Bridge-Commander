@@ -28,7 +28,7 @@ def Create(pTorp):
 
 	pTorp.CreateDisruptorModel(kOuterShellColor,kOuterCoreColor, 1.5, 0.06)
 	pTorp.SetDamage( GetDamage() )
-	pTorp.SetDamageRadiusFactor(0.53)
+	pTorp.SetDamageRadiusFactor(0.43)
 	pTorp.SetGuidanceLifetime( GetGuidanceLifetime() )
 	pTorp.SetMaxAngularAccel( GetMaxAngularAccel() )
 
@@ -40,25 +40,25 @@ def Create(pTorp):
 	return(0)
 
 def GetLaunchSpeed():
-	return(60.0)
+	return(80.0)
 
 def GetLaunchSound():
-	return("Undertale Sword Appear")
+	return("UndyneRisingSpear")
 
 def GetPowerCost():
 	return(20.0)
 
 def GetName():
-	return("Tell'em to debug")
+	return("Spears of Justice")
 
 def GetDamage():
-	return 4500.0
+	return 1500.0
 
 def GetGuidanceLifetime():
 	return 11.0
 
 def GetMaxAngularAccel():
-	return 3.7
+	return 8.25
 
 
 import traceback
@@ -70,8 +70,8 @@ try:
 	#myAIfunction = tailoredAIfilename.CreateAI
 	# Remember, if you don't want AI, do not add the "sAI" field.
 	random = App.g_kSystemWrapper.GetRandomNumber(100)
-	oFire = ftb.Tech.SolidProjectiles.Rocket('Spatial Projectiles', {"sModel" : "bug", "sScale" : 0.2, "sShield": 1, "sCollide": 2, "sHideProj": 0, "sTargetable": 1, "sAI": {"AI": None, "Side": "Friendly", "Team": "Friendly"}})
-	#oFire = ftb.Tech.SolidProjectiles.Rocket('Spatial Projectiles', {"sModel" : "bug", "sScale" : 0.2, "sShield": 1, "sCollide": 2, "sHideProj": 0, "sTargetable": 1}) 
+	#oFire = ftb.Tech.SolidProjectiles.Rocket('Spatial Projectiles', {"sModel" : "SpearOfJustice", "sScale" : 5.0, "sShield": 1, "sCollide": 2, "sHideProj": 0, "sTargetable": 1, "sAI": {"AI": None, "Side": "Friendly", "Team": "Friendly"}})
+	oFire = ftb.Tech.SolidProjectiles.Rocket('Spatial Projectiles', {"sModel" : "SpearOfJustice", "sScale" : 5.0, "sShield": 1, "sCollide": 0, "sHideProj": 0, "sTargetable": 0}) 
 	FoundationTech.dOnFires[__name__] = oFire
 	FoundationTech.dYields[__name__] = oFire
 except:

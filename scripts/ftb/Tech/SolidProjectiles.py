@@ -204,8 +204,8 @@ class AuxInitiater(FoundationTech.TechDef):
 		pTorpShipA.SetHidden(0) # guarantees the vessel is visible
 		pTorpShipA.UpdateNodeOnly()
 
-		#if sTargetable <= 0:
-		#	pTorpShipA.SetTargetable(0)
+		if sTargetable <= 0:
+			pTorpShipA.SetTargetable(0)
 
 
 		# OK so from what I gathered, for some reason, these vessels are not in any group, not even the tractor group!
