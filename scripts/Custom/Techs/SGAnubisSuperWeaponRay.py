@@ -1,6 +1,6 @@
 """
 #         AnubisSuperWeaponRay
-#         1st September 2024
+#         13th October 2024
 #         Based on Turrets script, which was strongly based on SubModels.py by USS Defiant and their team, and AutoTargeting.py by USS Frontier... even if the final product of this file lacks prety much any of the features from SubModels or AutoTargeting
 #################################################################################################################
 # This technology makes your beams "jump" between targetted ships in range, like with Anubis Superweapon on Stargate, hence the name.
@@ -100,7 +100,7 @@ import MissionLib
 
 #################################################################################################################
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.1",
+	    "Version": "0.21",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -147,7 +147,7 @@ class AnubisSuperWeaponRay(FoundationTech.TechDef):
         # Called by FoundationTech when a Ship is removed from set (eg destruction)
         def Detach(self, pInstance):
                 debug(__name__ + ", Detach")
-                self.trueDetach(pInstance, pInstance.pShipID)
+                self.TrueDetach(pInstance, pInstance.pShipID)
 
         def TrueDetach(self, pInstance, pShipID):
                 debug(__name__ + ", TrueDetach")
@@ -363,7 +363,8 @@ def WeaponFired(pObject, pEvent, stoppedFiring=None):
 					#wpnSystem.StopFiring() # Safety check for strays due to multi-targeting
 
 					wpnSystem.StartFiring(pTarget)
-					if len(closestShips) > 0:
+
+					if closestShips != None and len(closestShips) > 0:
 						lookandUpdateSiblingTPhasers(wpnSystem, pShip, pTarget, closestShips[0], 0, 1, numberShots)
 						wpnSystem.StartFiring(closestShips[0])
 					

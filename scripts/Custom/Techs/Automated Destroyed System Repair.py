@@ -22,7 +22,7 @@ Foundation.ShipDef.LowCube.dTechs = {
 """
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.51",
+	    "Version": "0.52",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -320,7 +320,7 @@ def UnDestroySystem(pObject, pEvent):
 					break
 
 			pShipList.TGDoneIterating()
-			if pInstance.__dict__.has_key("Automated Destroyed System Repair I") and pInstance.__dict__['Automated Destroyed System Repair I'].has_key(destroyedSystemName):
+			if pInstance.__dict__.has_key("Automated Destroyed System Repair I") and pInstance.__dict__['Automated Destroyed System Repair I'].has_key(destroyedSystemName) and pInstance.__dict__['Automated Destroyed System Repair I'][destroyedSystemName].has_key('Timer'):
 				App.g_kTimerManager.DeleteTimer(pInstance.__dict__['Automated Destroyed System Repair I'][destroyedSystemName]['Timer'].GetObjID())
 				del pInstance.__dict__['Automated Destroyed System Repair I'][destroyedSystemName]['Timer']
 

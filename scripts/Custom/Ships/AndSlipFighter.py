@@ -14,7 +14,8 @@ species = App.SPECIES_GALAXY
 menuGroup = "Andromeda"
 playerMenuGroup = "Andromeda"
 SubMenu = "System´s Commonwealth"
-Foundation.ShipDef.AndSlipFighter = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
+SubSubMenu = "Slipfighters"
+Foundation.ShipDef.AndSlipFighter = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu, "SubSubMenu": SubSubMenu })
 
 Foundation.ShipDef.AndSlipFighter.dTechs = {
 	'Simulated Point Defence' : { "Distance": 120.0, "InnerDistance": 15.0, "Effectiveness": 0.3, "LimitTurn": 5.2, "LimitSpeed": 300, "Period": 1.0, "MaxNumberTorps": 1, "Pulse": {"Priority": 1}}

@@ -1,4 +1,8 @@
 == Changelog ==
+1.0.6 - bug fixes:
+* Upgraded SGAnubisSuperWeaponRay to 0.21, hopefully fixing a weird outlier-case of throwing a console error when firing at a friendly while such friendly is warping away.
+1.0.5 - bug fixes:
+* Upgraded SGAnubisSuperWeaponRay to 0.2, fixing a typo that did not clear its tech properly.
 1.0.4 - bug fixes:
 * Upgraded SGPlasmaWeapon to 0.95, fixing the previous fix that was making the weapon deal 0 damage due to damage customization compensation happening twice.
 1.0.3 - bug fixes:

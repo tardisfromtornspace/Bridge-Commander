@@ -1,4 +1,7 @@
 ==Changelog==
+1.2.6 -
+   Bug Fixes:
+   * Updated Automated Destroyed System Repair from 0.52 to 0.53, fixing an issue with a missing timer checkup on very outlier cases.
 1.2.5 -
    Misc. changes:
    * Updated Simulated Point Defence from 0.91 to 0.92 - this will not make the ship target projectiles that have same parent and target ID (update for compatibility with the SG Drone weaponry from CanonicalAlteranTechnologies).

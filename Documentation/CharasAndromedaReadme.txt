@@ -1,5 +1,8 @@
 This mod is a modification on an older mod I could not remember. The older mod had mostly normal technologies, moved by warp drive and had an energy shield. This change intends to make it more canon
 == Changelog ==
+1.1.4 - Misc. changes & Bug Fixing:
+   * Updated all Slipfighter Custom/Ships files so they are under a SubSubMenu.
+   * Fixed an error on the original hardpoint that was preventing the Andromeda and other variant ships from actually using their torpedo launchers at max.
 1.1.3 - Misc. changes:
    * Updated Simulated Point Defence from 0.91 to 0.92 - this will not make the ship target projectiles that have same parent and target ID (update for compatibility with the SG Drone weaponry from CanonicalAlteranTechnologies).
 1.1.2 - Bug Fixing:

@@ -3,6 +3,7 @@ Modifications made by Alex SL Gato
 Special Thanks to 𝕟𝕒𝕣𝕣𝕠𝕨𝕔𝕨𝕪𝕗𝕖#0007 for driving me to complete this mod for their Voyager-J mod, as well as for some help with the PhasedTorp scripts.
 
 ===Changelog===
+1.4.5 - Removed SRealisticHoppingTorp from here now that my other Stargate packs have it (less difficult to forget and elave outdated versions).
 1.4.4 - Updated AdvArmourTechThree from 1.7 to 1.8, 1.8 is a tiny bit slower but it is far better for some KM installs where for some reason 1.7 might crash. If 1.7 did not crash for you, use the 1.7 script from previous versions instead.
 1.4.2 to 1.4.3 - Improvements to the armour to 1.7 which eliminate the no-glow issue.
 1.4 - Total bug fix to the armour
@@ -42,11 +43,6 @@ Foundation.ShipDef.Ambassador.dTechs = {
 	"Phased Torpedo Immune": 1
 }
 ------------------
-
-Additionally, I added multiple technologies of a similar concept and use, including Transphasic Torpedo, Tricobalt Torpedo (which actually works the other way around) and one of my "failed" experiments with this, which ended up being some
-torpedo that phased through the ship and damaged the hull or desired subsystem in the process and then the torpedo had a very high chance of not dying, which with some tweaks could be used to come back and try to hurt the objective
-again. Sounds familiar? Yes, Stargate Ancient Weaponry. The mod will overwrite your current drone compliment to this nasty variant, drones deal a third of the damage now but for the most part will attack relentlessly a ship until 
-they are shot down, their target dies or the enemy ship is lucky and the drone hits in a wrong way and dies.
 
 Lastly, I present you the latest type of armor that will be the next revolution on armor defense: the energy ablative armor. While this mod existed before, it was limited to the Player and needed to be toggleable via the Tactical window.
 This version allows any ship with the proper technology to use it and even change visible armour. Once active, the ship will stop receiving damage, all damage is redirected as an energy loss until the energy depletes.

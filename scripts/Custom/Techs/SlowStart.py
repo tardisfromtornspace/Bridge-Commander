@@ -1,6 +1,6 @@
 #################################################################################################################
 #         SlowStart by Alex SL Gato
-#         11th January 2024
+#         13th October 2024
 #         Based on FiveSecsGodPhaser by USS Frontier, scripts/ftb/Tech/TachyonProjectile by the FoundationTechnologies team, and scripts/ftb/Tech/FedAblativeArmour by the FoundationTechnologies team
 #         Elminster did something similar for the DCMP Sau Paulo and for the BOBW Galaxy, but I really did not know of that script's existance at the time I made this script.        
 #################################################################################################################
@@ -16,7 +16,7 @@ Foundation.ShipDef.Sovereign.dTechs = {
 """
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.2",
+	    "Version": "0.3",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -40,10 +40,15 @@ class SlowStartWeapon(FoundationTech.TechDef):
 	def setChargeTo0(self, pSubsystem):
 		#if hasattr(pSubsystem, "SetChargeLevel"):
 		try:
-			print "Subsystem found to set charge to 0"
+			#print "Subsystem found to set charge to 0"
 			pWeapon = App.PhaserBank_Cast(pSubsystem)
-			#pthisPhaser = App.PhaserProperty_Cast(pWeapon.GetProperty())
-			pWeapon.SetChargeLevel(0.0)
+			if not pWeapon:
+				pWeapon = App.PulseWeapon_Cast(pSubsystem)
+				if not pWeapon:
+					pWeapon = App.EnergyWeapon_Cast(pSubsystem)
+
+			if pWeapon:
+				pWeapon.SetChargeLevel(0.0)
 		except:
 			print "error with slow start"
 			traceback.print_exc()
@@ -80,13 +85,13 @@ class SlowStartWeapon(FoundationTech.TechDef):
 
 				if len(pInstance.__dict__['Slow Start']["Beams"]) > 0:
 
-					print "Found things, now to see"
+					#print "Found things, now to see"
 					subsystemsOptions = pInstance.__dict__['Slow Start']["Beams"]	
 
 					pWeaponSystem1 = pShip.GetPhaserSystem()
 
 					if pWeaponSystem1:
-						print "I have beams to update"
+						#print "I have beams to update"
 
 						iChildren = pWeaponSystem1.GetNumChildSubsystems()
 						if iChildren > 0:
@@ -97,7 +102,7 @@ class SlowStartWeapon(FoundationTech.TechDef):
 									self.setChildrenSubsystemsChargeTo0(pChild)
 
 				else:
-					print "Slow Start: I do not have beams key, I will assume all phasers have Slow Start ability"
+					#print "Slow Start: I do not have beams key, I will assume all phasers have Slow Start ability"
 					phasers = pShip.GetPhaserSystem()
 					self.setChildrenSubsystemsChargeTo0(phasers)
 
@@ -105,13 +110,13 @@ class SlowStartWeapon(FoundationTech.TechDef):
 
 				if len(pInstance.__dict__['Slow Start']["Pulses"]) > 0:
 
-					print "Found things, now to see"
+					#print "Found things, now to see"
 					subsystemsOptions = pInstance.__dict__['Slow Start']["Pulses"]	
 
 					pWeaponSystem1 = pShip.GetPulseWeaponSystem()
 
 					if pWeaponSystem1:
-						print "I have pulses to update"
+						#print "I have pulses to update"
 
 						iChildren = pWeaponSystem1.GetNumChildSubsystems()
 						if iChildren > 0:
@@ -122,7 +127,7 @@ class SlowStartWeapon(FoundationTech.TechDef):
 									self.setChildrenSubsystemsChargeTo0(pChild)
 
 				else:
-					print "Slow Start: I do not have beams key, I will assume all pulses have Slow Start ability"
+					#print "Slow Start: I do not have beams key, I will assume all pulses have Slow Start ability"
 					pulses = pShip.GetPulseWeaponSystem()
 					self.setChildrenSubsystemsChargeTo0(pulses)
 
@@ -140,7 +145,7 @@ class SlowStartWeapon(FoundationTech.TechDef):
 		pShip = App.ShipClass_Cast(App.TGObject_GetTGObjectPtr(pInstance.pShipID))
 		if pShip != None:
 			if not pInstance.__dict__.has_key("Slow Start"):
-				print "Slow Start: cancelling, ship does not have Slow Start equipped..."
+				#print "Slow Start: cancelling, ship does not have Slow Start equipped..."
 				return
 
 			dMasterDict = pInstance.__dict__['Slow Start']
