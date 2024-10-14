@@ -17,7 +17,7 @@ necessaryToUpdate = 0
 try:
 	from ftb.Tech import AblativeArmour
 	if hasattr(AblativeArmour,"AblativeArmourVersion"):
-		if AblativeArmour.PowerDrainBeamVersion == 1.0:
+		if AblativeArmour.AblativeArmourVersion == 1.0:
 			necessaryToUpdate = 1
 			print "fixing your AblativeArmour.py 1.0 lack of regeneration"
 		else :
