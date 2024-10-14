@@ -1,4 +1,6 @@
 == Changelog ==
+1.1.5 - Bug fixing:
+   * Updated FIX-AblativeArmour1dot0.py to fix a small typo that currenctly did not affect any script, but could in the far future.
 1.1.4 - Misc. changes:
    * Updated Simulated Point Defence from 0.91 to 0.92 - this will not make the ship target projectiles that have same parent and target ID (update for compatibility with the SG Drone weaponry from CanonicalAlteranTechnologies).
 1.1.3 - Potential bug fixing
@@ -18,7 +20,7 @@
  * Upgraded Simulated Point Defence from 0.6 to 0.8, now a lot of the weird behaviour happening before has been fixed.
 1.0.2 - Bug fixing
  * Fixed Simulated Point Defence TypeError sequence issue - it didn't really cause any problems but it was flagged on the console and would have caused problems if the sequence had multiple actions.
-1.0.1 - Anotehr balance update
+1.0.1 - Another balance update
  * Severely nerfed the shields and armour.
 1.0 - Official Mod Release
  * Fix on Gravitic Lance

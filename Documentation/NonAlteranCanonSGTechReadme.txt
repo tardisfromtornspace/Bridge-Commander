@@ -1,4 +1,6 @@
 == Changelog ==
+1.0.7 - bug fixes:
+   * Updated FIX-AblativeArmour1dot0.py to fix a small typo that currenctly did not affect any script, but could in the far future.
 1.0.6 - bug fixes:
 * Upgraded SGAnubisSuperWeaponRay to 0.21, hopefully fixing a weird outlier-case of throwing a console error when firing at a friendly while such friendly is warping away.
 1.0.5 - bug fixes:
