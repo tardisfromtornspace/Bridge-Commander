@@ -1,13 +1,11 @@
-
-TO-DO UPDATE
-
 == Changelog ==
+0.2 - Added UndyingComeback tech, plus indicating now that it is very recommended to have the "FIX-AblativeArmour1dot0.py" 0.2 version from 16th October 2024 or later.
 0.1 - first unofficial showcase of this mod, for feedback
 
 == What does this mod do ==
 This mod adds a Peacekeeper Command Leviathan/Systems Commonwealth Glorious Heritage class hybrid, but buffed to eleven to be akin to a Godship and filled to the brim with lots of technologies, needed as dependencies.
 
-This mod also includes an updated, fixed and expanded ftb/Tech/SolidProjectiles, finally allowing the script to work without causing crashes later on and without overflowing the map with permanent ghost ships; and an alternate SlowStart technology created by Alex SL Gato (the tech was created before the modder knew BANBURY had already made a similar tech years ago), as well as three prototype torpedoes using this tech. All of them have their own instructions inside the files to ensure people can use those tecs easily.
+This mod also includes an updated, fixed and expanded ftb/Tech/SolidProjectiles, finally allowing the script to work without causing crashes later on and without overflowing the map with permanent ghost ships; an alternate SlowStart technology created by Alex SL Gato (the tech was created before the modder knew BANBURY had already made a similar tech years ago), three prototype torpedoes using this tech and a undead tech. All of them have their own instructions inside the files to ensure people can use those techs easily.
 
 Additionally, the Milkshape 3D file for the model has been added in case people want to improve it later on.
 
@@ -53,8 +51,6 @@ For the hybrid ship to work fully, you must have had these mods installed alread
 * 𝕟𝕒𝕣𝕣𝕠𝕨𝕔𝕨𝕪𝕗𝕖 aka Hexagonal_Nexul for the transphasic torpedo sounds and .tga.
 * Grey da Derg#2305, Grim455#4905 aka THE SCI-FI KING, HexagonalNexul and MSR1701 for helping with noticing bugs and their cause, and for being inquisitive and finding out possible ways to tweak the hardpoints and techs and models.
 * Alex SL Gato (aka CharaToLoki) for any new code or model implemented, fixed or modified (including all the monkey patches and the icon), plus the original fusion idea I had, based on a Spore Andromeda-Talyn fusion (image provided on Documentation/AndromedaTalynOriginalSporeIdea.png), and the Spear model.
-TO-DO UPDATE
-
 
 Fulfilling both the SDK and LGPL licenses:
 THIS MOD IS NOT SUPPORTED BY ACTIVISION
@@ -65,5 +61,12 @@ PointDefence.py (apparently under BSD license so despite the things I make have 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 == Bugs ==
-* None found. Don't forget to check the scripts, as those may or may not have additional instructions!
-* TO-DO UPDATE
+* While no truly disruptive bugs have been found, some minor ones may be mentioned inside the in-scripts documentation, that way it is easier to keep the buglist updated. However, for the first release and for the sake of full transparency, the buglist was as follows:
+Known Bugs for SolidProjectiles (ordered by priority):
+- 1. [FIXED] With sCollide set to 1 with original functions enabled, ships could in fact crash the game if the player tried to end the simulation if and only if one of those torpedo-manned ships was still active. In pro of cautiousness and seeing how mode 2 worked the same without any of these issues, mode 1 was disabled, so none of those issues can happen.
+- 2. Solid projectiles while at warp set cannot hit fellow ships during warp (as, the projectile does not collide with the targets and just passes through). No other effects. Torps keep working correctly outside warp as intended.
+- 3. Even when tangible, ONLY phasers can hit the solid projectile vessels, no projectiles. 
+- 4. Trying to tractor a torpedo ship may cause it to teleport.
+- 5. Due to the nature of Warp mods (with Warp being a common set for all warp travels in general), if a ship enters Warp from system A to B, fires torpedoes while on the Warp set, leaves Warp and then rapidly enters Warp again, they may still see temporary previous solid projectiles.
+- 6. While killing a torpedo ship causes no real issues, killing one of them with a phaser causes the vessel explosion to teleport.
+- 7. Successfully firing on the slipstream or slipstream-like FTL sets, then leaving those sets in the programmed manner will cause the solid projectile to go with you to the end set, but without moving at all. Projectile vessels still despawn properly.

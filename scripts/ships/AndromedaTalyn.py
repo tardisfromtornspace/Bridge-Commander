@@ -9,7 +9,9 @@ def GetShipStats():
 		"Name": "AndromedaTalyn",
 		"HardpointFile": "AndromedaTalyn",
 		"Species": Multiplayer.SpeciesToShip.SOVEREIGN,
-		"SpecularCoef": 0.5
+		"SpecularCoef": 0.5,
+		"DamageRadMod" : 0.15,
+		"DamageStrMod" : 0.0666
 	 }
 	return kShipStats
 
@@ -22,9 +24,9 @@ def LoadModel(bPreLoad = 0):
 		# Surface Damage Res, Internal Damage Res, Burn Value, Hole Value,
 		# Search String for Glow, Search string for Specular, Suffix for specular
 		pLODModel = App.g_kLODModelManager.Create(pStats["Name"])
-		pLODModel.AddLOD(pStats["FilenameHigh"], 10, 200.0, 15.0, 15.0, 400, 900, "_glow", None, None)
-		pLODModel.AddLOD(pStats["FilenameMed"],  10, 400.0, 15.0, 15.0, 400, 900, "_glow", None, None)
-		pLODModel.AddLOD(pStats["FilenameLow"],  10, 800.0, 15.0, 30.0, 400, 900, "_glow", None, None)
+		pLODModel.AddLOD(pStats["FilenameHigh"], 10, 200.0, 15.0, 15.0, 400, 9000000, "_glow", None, None)
+		pLODModel.AddLOD(pStats["FilenameMed"],  10, 400.0, 15.0, 15.0, 400, 9000000, "_glow", None, None)
+		pLODModel.AddLOD(pStats["FilenameLow"],  10, 800.0, 15.0, 30.0, 400, 9000000, "_glow", None, None)
 
 #		kDebugObj = App.CPyDebug()
 		if (bPreLoad == 0):

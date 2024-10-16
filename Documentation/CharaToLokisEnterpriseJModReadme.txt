@@ -1,4 +1,8 @@
 == Changelog ==
+1.1.7 - Bug fixing:
+   * Updated FIX-AblativeArmour1dot0.py to correct typo in 0.2.
+1.1.6 - Bug fixing:
+   * Updated FIX-AblativeArmour1dot0.py to 0.2 to fix a notable issue the original Ablative Armour had regarding singletons making the armour shared between the same ship type.
 1.1.5 - Bug fixing:
    * Updated FIX-AblativeArmour1dot0.py to fix a small typo that currenctly did not affect any script, but could in the far future.
 1.1.4 - Misc. changes:

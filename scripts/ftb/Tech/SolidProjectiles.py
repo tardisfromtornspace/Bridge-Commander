@@ -1,24 +1,24 @@
 """
 #         SolidProjectiles
-#         10th October 2024
+#         15th October 2024
 #         Modification by Alex SL Gato, Greystar and JohnKuhns777 of ftb/Tech/SolidProjectiles.py, most likely by FoundationTechnologies team
 #         Also based slightly on Turrets script by Alex SL Gato.
 #################################################################################################################
-# This tech update gives a torpedo or disruptor projectile the ability to fire a ship alongside it. Due to how base FoundationTech does not have a proper OnFire for projectiles fired from Pulse Weapon systems, the torpedo or disrupter needs to be fired from a Torpedo Launcher to work.
+# This tech update gives a torpedo or disruptor projectile the ability to fire a ship alongside it.
+# Due to how base FoundationTech does not have a proper OnFire for projectiles fired from Pulse Weapon systems, meaning the torpedo or disrupter needed to be fired from a Torpedo Launcher to work, and only would work while uncloaked; I've added a secondary broadcast listener that will also make torpedoes with a OnFire, a OnFire2 and a function called "IwannaBeWithPulsesToo" which returns 1 work as pulses and while cloaked.
 # The update to the original was made so the technology actually works in a cleaner manner, in order not to leave random flying ships floating invisible around the map and to fix an error with a casting.
 # HOW-TO-ADD:
 # At the bottom of your torpedo projectile file add this (Between the ### and ###), replacing the fields with proper values.
-# If you want to combine multiple projectiel technologies that use FoundationTech.dOnFires and FoundationTech.dYields, then create a custom function inside the projectile file that calls the aforementioned technologies.
+# If you want to combine multiple projectile technologies that use FoundationTech.dOnFires and FoundationTech.dYields, then create a custom function inside the projectile file that calls the aforementioned technologies.
 # Note that if a projectile has a torpedo model, the torpedo ship will not orient itself, but if the ship has a disruptor model, it will.
 # Fields:
-# - "sModel": literally the ship from scripts/Ships folder. That is, if we wanted a scripts/ships/ambassador ship to be deployed with the torpedo, then we make it "sModel" : "ambassador". Recommended to make the ship one without any warp engines or elements of the sort to avoid possible conflicts with certain warp or alternate FTL scripts.
+# - "sModel": literally the ship from scripts/Ships folder. That is, if we wanted a scripts/ships/ambassador ship to be deployed with the torpedo, then we make it "sModel" : "ambassador". Recommended to make the ship one without any warp engines or elements of the sort to avoid possible conflicts with certain warp or alternate FTL scripts (mostly with Slipstream-like FTLs, which would temporarily move the projectile vessel to the new set but without moving).
 # - "sScale": changes the model's size with respect to the original.
 # - "sShield": value of 1 means shields will be in whatever state they are normally set when a non-player ship is added (which, in most cases, means shields up), value of 0 means shields down, value of 2 will guarantee shields. Default is 1.
 # - "sCollide": represents status of collisions. 0 means it's like a ghost for weapons and collisions. -1 (or lesser) ensures it's like a ghost, removing the torpedo ship from the proximity manager fully. 1, if enabled, will attempt to keep some degree of tangibility, so weapons cannot pass through, but ships can. 2 will attempt to keep tangibility and collidability too but avoiding the parent ship colliding (in practice though, it is nearly identical to 1, without any of the potential glitches, so mode 1 is currently disabled). Any other positive or disabled value will make the ship fully collidable, which is totally NOT recommended. Please consider any configuration that restores tangibility will make the AI freak out for having incoming ships trying to collide with them. Default is 0.
-# - "sHideProj": if you want the projectile whose torpedo ship is attached to visible (1) or not (0). Default is 0.
+# - "sHideProj": if you want the projectile whose torpedo ship is attached to visible (0) or not (1). Please notice that this will also make the solid projectile vessel invisible! Default is 0.
 # - "sTargetable": if you want the vessel attached to the torpedo to be targetable by players (1) or not (0). Default is 1.
-# TO-DO OPTION TO MAKE THE TORPEDO INVISIBLE!!! SetHidden
-# - "sAI": imagine your torpedo vessel firing back. This is a dictionary with some fields:
+# - "sAI": imagine your torpedo vessel firing back. If you need to do a MIRV torpedo attack with solid projectiles and need to keep those torps solid, you will probably need to use a ship-solid_torp_with_AI-solid_torp strategy. "sAI" is a dictionary with some fields:
 # -- "AI": here you must include a CreateAI function to add an AI to make the ship act. Default is CreateAI from this file. Custom AIs need to be tailored so "def CreateAI" function has two fields, pShip and whoIattack, respectively.
 # -- "Side": here you either indicate if you want your AI to be "Friendly", "Enemy", "Neutral" or "Tractor" compared with parent ship. Default is tractor group.
 # -- "Team": here you either indicate if you want your ship to be on the "Friendly", "Enemy", "Neutral" or "Tractor" groups compared with parent ship. Default is tractor group.
@@ -46,7 +46,8 @@ Known Bugs (ordered by priority):
 - 3. Even when tangible, ONLY phasers can hit, no projectiles. 
 - 4. Trying to tractor a torpedo ship may cause it to teleport.
 - 5. Due to the nature of Warp mods (with Warp being a common set for all warp travels in general), if a ship enters Warp from system A to B, fires torpedoes while on the Warp set, leaves Warp and then rapidly enters Warp again, they may still see temporary previous solid projectiles.
-- 6. While killing a torpedo ship causes no real issues, killing one of them with a phaser causes the vessel to teleport as a temporary dying ghost for a millisecond.
+- 6. While killing a torpedo ship causes no real issues, killing one of them with a phaser causes the vessel explosion to teleport.
+- 7. Successfully firing on the slipstream or slipstream-like FTL sets, then leaving those sets in the programmed manner will cause the solid projectile to go with you to the end set, but without moving at all. Projectile vessels still despawn properly. 
 """
 #################################################################################################################
 from bcdebug import debug
@@ -59,7 +60,7 @@ import traceback
 
 #################################################################################################################
 MODINFO = { "Author": "\"Alex SL Gato, Greystar, JohnKuhns777 and likely the ftb Team\" andromedavirgoa@gmail.com",
-	    "Version": "0.2",
+	    "Version": "0.3",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -76,7 +77,7 @@ dShipsTorp = {} # Reverse dict for a thing
 
 #Special AI for ship
 
-def CreateAI(pShip, whoIattack): # We need a tailored function for us TO-DO
+def CreateAI(pShip, whoIattack): # We need a tailored function for us
 	#########################################
 	# Creating CompoundAI StarbaseAttack at (194, 57)
 	debug(__name__ + ", CreateAI")
@@ -109,7 +110,6 @@ def CreateAI(pShip, whoIattack): # We need a tailored function for us TO-DO
 	#########################################
 	return pWait
 
-# TO-DO CREATE AL ALTERNATIVE CLASS CALLED HERE THAT TAKES CARE OF ACTUAL THINGS WHIEL THE TORPS TAKE CARE OF ANOTHER
 class AuxInitiater(FoundationTech.TechDef):
 	def __init__(self, name, dict = None):
 		debug(__name__ + ", __init__")
@@ -121,7 +121,10 @@ class AuxInitiater(FoundationTech.TechDef):
 		App.g_kEventManager.AddBroadcastPythonMethodHandler(TIME_TO_DELETE_TORP, self.pEventHandler, "RemoveTorp")
 		App.g_kEventManager.RemoveBroadcastHandler(App.ET_OBJECT_EXPLODING, self.pEventHandler, "RemoveTorp2")
 		App.g_kEventManager.AddBroadcastPythonMethodHandler(App.ET_OBJECT_EXPLODING, self.pEventHandler, "RemoveTorp2")
-		App.g_kEventManager.RemoveBroadcastHandler(App.ET_TORPEDO_EXITED_SET, self.pEventHandler, "RemoveTorp3") # TO-DO CHECK THIS ONE MAYBE?
+
+		App.g_kEventManager.RemoveBroadcastHandler(App.ET_TORPEDO_ENTERED_SET, self.pEventHandler, "TorpedoEnteredSet")
+		App.g_kEventManager.AddBroadcastPythonMethodHandler(App.ET_TORPEDO_ENTERED_SET, self.pEventHandler, "TorpedoEnteredSet")
+		App.g_kEventManager.RemoveBroadcastHandler(App.ET_TORPEDO_EXITED_SET, self.pEventHandler, "RemoveTorp3") 
 		App.g_kEventManager.AddBroadcastPythonMethodHandler(App.ET_TORPEDO_EXITED_SET, self.pEventHandler, "RemoveTorp3")
 
 	def CreateTimer(self, pEvent, pTorp, pTorpID, delay = 0.0):
@@ -184,9 +187,6 @@ class AuxInitiater(FoundationTech.TechDef):
 				pTorpShipA.GetShields().TurnOff()
 			elif sShield == 2:
 				pTorpShipA.GetShields().TurnOn()
-
-		#TO-DO ADD AI OPTIONS?
-		#pTorpShipA.ClearAI() #.SetAI(StarbaseNeutralAI.CreateAI(pShip))
 
 		pShip = App.ShipClass_GetObjectByID(None, pTorp.GetParentID())
 		if sCollide <= -1:
@@ -257,7 +257,6 @@ class AuxInitiater(FoundationTech.TechDef):
 					parentTeam = pTractors
 					parentAlignment = "pTractors"
 
-			# TO-DO AI HERE
 			if sAI != None and sAI.has_key("AI"):
 				if sAI.has_key("Team"):
 					team = sAI["Team"]
@@ -336,6 +335,21 @@ class AuxInitiater(FoundationTech.TechDef):
 		if pTorpID:
 			self.RemoveTorpAux(pEvent, pTorpID)
 
+	def TorpedoEnteredSet(self, pEvent):
+		debug(__name__ + ", TorpedoEnteredSet")
+		pTorp = App.Torpedo_Cast(pEvent.GetDestination())
+		pTorpID = pTorp.GetObjID()
+		if pTorpID:
+			try:
+				oFire = FoundationTech.dOnFires[pTorp.GetModuleName()]
+				if oFire:
+					if hasattr(oFire, "IwannaBeWithPulsesToo") and oFire.IwannaBeWithPulsesToo() == 1 and hasattr(oFire, "OnFire2"):
+						global dTorpShips
+						if (not dTorpShips.has_key(pTorpID)): # and dTorpShips[pTorpID] != App.NULL_ID
+							oFire.OnFire2(pEvent, pTorp)
+			except:
+				pass
+
 	def RemoveTorpAux(self, pEvent, pTorpID):
 		debug(__name__ + ", RemoveTorpAux")
 		global dTorpShips, dShipsTorp
@@ -395,10 +409,14 @@ class Rocket(FoundationTech.TechDef):
 
 		#loadspacehelper.PreloadShip(self.sModel, 6)
 
+	def IwannaBeWithPulsesToo(self):
+		return 1
+
 	def OnFire(self, pEvent, pTorp):
 		debug(__name__ + ", OnFire")
 		#print 'SolidTorpedoTorpedo.OnFire'
-
+		return
+		"""
 		pTorpID = pTorp.GetObjID()
 		if not pTorpID:
 			return
@@ -414,11 +432,12 @@ class Rocket(FoundationTech.TechDef):
 				self.sShield = 1.0
 			if not hasattr(self, "sCollide") or self.sCollide < -1:
 				self.sCollide = 0
-			if not hasattr(self, "sHideProj") or self.sHideProj <= 0:
+			if not hasattr(self, "sHideProj") or self.sHideProj <= 0.0:
 				self.sHideProj = 0
 			if self.sHideProj > 1:
 				self.sHideProj = 1
 			self.sHideProj = round(self.sHideProj)
+			print "self.sHideProj= ", self.sHideProj
 
 			if not hasattr(self, "sTargetable") or self.sTargetable > 1:
 				self.sTargetable = 1
@@ -448,8 +467,69 @@ class Rocket(FoundationTech.TechDef):
 			pTorp.AttachObject(pTorpShipA)
 			pTorp.SetHidden(self.sHideProj)
 			pTorp.UpdateNodeOnly()
-			#pTorpShipA.SetDeleteMe(1)
-			#pSet.AddObjectToSet(pTorpShipA, pcName)
+
+		except:
+			print "Creating ship failed somehow..."
+			traceback.print_exc()
+		"""
+
+	def OnFire2(self, pEvent, pTorp):
+		debug(__name__ + ", OnFire")
+		#print 'SolidTorpedoTorpedo.OnFire'
+
+		pTorpID = pTorp.GetObjID()
+		if not pTorpID:
+			return
+		try:
+			"""
+			delay = pTorp.GetLifetime() - 0.25
+			if delay < 0.0:
+				delay = 0.0
+			pTimer = auxIniti.CreateTimer(pEvent, pTorp, pTorpID, delay)
+			"""
+			pTimer = None
+
+			if not hasattr(self, "sScale") or self.sScale <= 0.0:
+				self.sScale = 1.0
+			if not hasattr(self, "sShield") or self.sShield <= 0.0:
+				self.sShield = 1.0
+			if not hasattr(self, "sCollide") or self.sCollide < -1:
+				self.sCollide = 0
+			if not hasattr(self, "sHideProj") or self.sHideProj <= 0.0:
+				self.sHideProj = 0
+			if self.sHideProj > 1:
+				self.sHideProj = 1
+			self.sHideProj = round(self.sHideProj)
+			print "self.sHideProj= ", self.sHideProj
+
+			if not hasattr(self, "sTargetable") or self.sTargetable > 1:
+				self.sTargetable = 1
+			if self.sTargetable <= 0:
+				self.sTargetable = 0
+			self.sTargetable = round(self.sTargetable)
+
+			if not hasattr(self, "sAI"):
+				self.sAI = None
+			elif self.sAI != None: # So it has an AI
+				if not self.sAI.has_key("AI"):
+					self.sAI["AI"] = None
+				if not self.sAI.has_key("Side"):
+					self.sAI["Side"] = "Tractor"
+				if not self.sAI.has_key("Team"):
+					self.sAI["Team"] = "Tractor"
+				#"sAI": {"AI": None, "Side": None, "Team": None}
+
+			pTorpShipA = auxIniti.CreateShip(pEvent, pTorp, pTorpID, self.sModel, self.sScale, self.sShield, self.sCollide, self.sHideProj, self.sTargetable, self.sAI)
+
+			global dTorpShips, dShipsTorp
+
+			pTorpShipID = pTorpShipA.GetObjID()
+			dTorpShips[pTorpID] = [pTorpShipID, pTimer]
+			dShipsTorp[pTorpShipID] = pTorpID
+
+			pTorp.AttachObject(pTorpShipA)
+			pTorp.SetHidden(self.sHideProj)
+			pTorp.UpdateNodeOnly()
 
 		except:
 			print "Creating ship failed somehow..."
@@ -457,7 +537,8 @@ class Rocket(FoundationTech.TechDef):
 
 	def OnYield(self, pShip, pInstance, pEvent, pTorp):
 		debug(__name__ + ", OnYield")
-
+		return
+		"""
 		pTorpID = pTorp.GetObjID()
 		pTorp = App.Torpedo_GetObjectByID(None, pTorpID)
 		if not pTorp:
@@ -488,7 +569,7 @@ class Rocket(FoundationTech.TechDef):
 			traceback.print_exc()
 
 		del dTorpShips[pTorpID]
-
+		"""
 
 def DeleteObjectFromSet(pSet, sObjectName):
         if not MissionLib.GetShip(sObjectName):

@@ -76,6 +76,7 @@ Foundation.ShipDef.AndromedaTalyn.dTechs = {
 	"TachyonBeam": { "Time": 12.0, "TimeEffect": 2.0, "Immune": 1},
 	"Tachyon Sensors": 0.1,
 	"Transphasic Torpedo Immune": 1,
+	"Undying Comeback": {"Damage Factor": 1.0, "Model": "AndromedaTalyn", "Boost": 25, "Energy Boost": 25.0, "Shield Boost": 25.0, "Weapon Boost": 25.0},
 	'Vree Shields': 100,
 }
 Foundation.ShipDef.AndromedaTalyn.sBridge = 'GalaxyBridge'
