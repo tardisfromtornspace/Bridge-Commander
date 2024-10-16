@@ -21,16 +21,17 @@
 # - "Weapon Boost": how much shield boost after undying. Default is 1.0x (no extra).
 # - "LoadSound": when the ship is entering Undying phase, what sound would you like to play. Set to -1 to be none. Default is the one stated on the "defaultLoadSound" global variable below.
 # - "Sound": when the ship has finally entered undying phase, what sound would you like to play. Set to -1 to be none. Default is the one stated on the "defaultSound" global variable below.
+# - "TimeToUndie": the time, in seconds, between beginning to undie and finally reaching Undying phase. Default is 40.5 seconds.
 """
 Foundation.ShipDef.Ambassador.dTechs = {
-	"Undying Comeback": {"Damage Factor": 1.0, "Model": "nameoftheshipfile", "Boost": 25, "Energy Boost": 25.0, "Shield Boost": 25.0, "Weapon Boost": 25.0, "LoadSound": -1, "Sound": -1},
+	"Undying Comeback": {"Damage Factor": 1.0, "Model": "nameoftheshipfile", "Boost": 25, "Energy Boost": 25.0, "Shield Boost": 25.0, "Weapon Boost": 25.0, "LoadSound": -1, "Sound": -1, "TimeToUndie": 40.5},
 }
 """
 #
 #################################################################################################################
 #
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.01",
+	    "Version": "0.02",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -65,7 +66,8 @@ ET_CRITICAL_SYSTEM_AT_100 = App.UtopiaModule_GetNextEventType()
 g_dOverrideAIs = {}
 
 defaultLoadSound = "sfx/Music/ButTheUndertaleEarthRefusedToDie.wav"
-defaultSound = "sfx/Music"
+defaultSound = "sfx/Music/BattleAgainstATrueHeroPower.wav"
+defaultTimeToUndie = 39.5 # In seconds
 
 #
 #################################################################################################################
@@ -275,7 +277,7 @@ def OverrideAIMid(pAction, idShip, sAIModule, lAICreateArgs, dAICreateKeywords):
 	# Ship has no building AI's.  We can safely replace its AI.
 	# Create the new AI...
 	pAIModule = __import__(sAIModule)
-	pNewAI = apply(getattr(pAIModule, "CreateAI"), lAICreateArgs, dAICreateKeywords) # TO-DO MAYBE THIS SHOULD HAVE PSHIP HERE?
+	pNewAI = apply(getattr(pAIModule, "CreateAI"), lAICreateArgs, dAICreateKeywords)
 	if pNewAI:
 		OverrideAIInternal(pShip, pNewAI)
 	return 0
@@ -434,8 +436,6 @@ def TransformIntoUndyingPhaseII(pAction, pShipID, musicToPlay):
 
 					#MissionLib.ShowSubsystems(1) #On a dead ship this does not work :/
 
-					StopOverridingAI(pShip)
-
 					#pShip.ClearAI()
 					pShip.UpdateNodeOnly()
 					if toChangeOntoUndyingFully > 0:
@@ -449,6 +449,14 @@ def TransformIntoUndyingPhaseII(pAction, pShipID, musicToPlay):
 							except:
 								print "Error when leaving cutscene"
 								traceback.print_exc()
+
+						else:
+							StopOverridingAI(pShip)
+							#oldAI = pShip.GetAI()
+							#if oldAI:
+							#	oldAI.Reset()
+							
+
 						try:
 							pSequence = App.TGSequence_Create()
 							pAction = App.TGScriptAction_Create(__name__, "PlayButTheEarthRefusedToDie", pShipID, 2, musicToPlay)
@@ -469,6 +477,14 @@ def TransformIntoUndyingPhaseI(pShip, pInstance, pInstanceDict, pHull):
 		pInstanceDict['Undying Comeback state'] = 0
 	if pInstanceDict['Undying Comeback state'] <= 0:
 		pInstanceDict['Undying Comeback state'] = 0.5
+
+		oldAI = pShip.GetAI()
+					
+		pPlayer	= MissionLib.GetPlayer()
+		if pShip.GetObjID() != pPlayer.GetObjID() and not MPIsPlayerShip(pShip):
+			OverrideAI(pShip, "AI.Player.Stay", pShip)
+
+
 		pShipID = pInstance.pShipID
 		if not pShipID:
 			pShipID = pShip.GetObjID()
@@ -516,7 +532,11 @@ def TransformIntoUndyingPhaseIa(pAction, pShipID):
 								shouldIcontinue = 0
 
 				if shouldIcontinue == 1:
-					global defaultLoadSound, defaultSound
+					global defaultLoadSound, defaultSound, defaultTimeToUndie
+
+					timeForUndeath = defaultTimeToUndie
+					if pInstanceDict['Undying Comeback'].has_key("TimeToUndie") and pInstanceDict['Undying Comeback']["TimeToUndie"] >= 0.0:
+						timeForUndeath = pInstanceDict['Undying Comeback']["TimeToUndie"]
 
 					musicForLoading = defaultLoadSound
 					if pInstanceDict['Undying Comeback'].has_key("LoadSound"):
@@ -535,7 +555,7 @@ def TransformIntoUndyingPhaseIa(pAction, pShipID):
 							pAction = App.TGScriptAction_Create(__name__, "PlayButTheEarthRefusedToDie", pShipID, 1, musicForLoading)
 							pSequence.AddAction(pAction, None, 0)
 							pAction = App.TGScriptAction_Create(__name__, "TransformIntoUndyingPhaseII", pShipID, musicForUndying)
-							pSequence.AddAction(pAction, None, 2.5)
+							pSequence.AddAction(pAction, None, timeForUndeath)
 							pSequence.Play()
 						except:
 							print "Error on Undying Sequence"
@@ -554,13 +574,6 @@ def newDeathSeq(*args, **kwargs):
 			if temppShipID:
 				pShip = App.ShipClass_GetObjectByID(None, temppShipID)
 				if pShip:
-
-					oldAI = pShip.GetAI()
-					
-					pPlayer	= MissionLib.GetPlayer()
-					if pShip.GetObjID() != pPlayer.GetObjID() and not MPIsPlayerShip(pShip):
-						OverrideAI(pShip, "AI.Player.Stay", pShip)
-
 					pInstance = findShipInstance(pShip)
 					if pInstance:
 						pInstanceDict = pInstance.__dict__
@@ -667,7 +680,6 @@ def SubDamage(pObject, pEvent):
 					if pHull and not undyneComebackState <= 0.5:
 						hull_max=pHull.GetMaxCondition()
 						hull_cond=pHull.GetCondition()
-						pInstanceDict['Undying Comeback Cond']
 						if pInstanceDict.has_key("Undying Comeback I") and pInstanceDict["Undying Comeback I"].has_key("SystemsToCheck") and pInstanceDict["Undying Comeback I"]["SystemsToCheck"].has_key(pHull.GetObjID()):
 							if pInstanceDict["Undying Comeback I"]["SystemsToCheck"][pHull.GetObjID()].has_key("Current"):
 								currentOldStatus = pInstanceDict["Undying Comeback I"]["SystemsToCheck"][pHull.GetObjID()]["Current"]
@@ -724,14 +736,14 @@ try:
 				if pHull:
 					absDamage = abs(pEvent.GetDamage())
 					factor = 1.0
-					if pInstanceDict['Undying Comeback'].has_key("Damage Factor"): # TO-DO ADD TWO, ONE TAHT STORES THE MAX DAMAGE AND ANOTHER THAT STORES THE LAST SHOT
+					if pInstanceDict['Undying Comeback'].has_key("Damage Factor"):
 						factor = pInstanceDict['Undying Comeback']["Damage Factor"]
 					if pHull.GetMaxCondition() * factor < absDamage:
 						if pInstanceDict.has_key('Undying Comeback damage'):
 							if not pInstanceDict.has_key('Undying Comeback state'):
 								pInstanceDict['Undying Comeback state'] = 0
 							#None or 0 = Pre-undying, 1 = transforming, 2 = post-undying
-							if pInstanceDict['Undying Comeback state'] <= 0.5: # TO-DO VERIFY WHY IS IT NOT WORKING
+							if pInstanceDict['Undying Comeback state'] <= 0.5:
 								if absDamage > pInstanceDict['Undying Comeback damage']:
 									pInstanceDict['Undying Comeback damage'] = absDamage
 								pInstanceDict['Undying Comeback last hit'] = absDamage
@@ -749,31 +761,41 @@ try:
 			pShip = pSubsystem.GetParentShip()
 			if pShip:
 				pInstance = findShipInstance(pShip)
-				if pInstance and pInstance.__dict__.has_key("Undying Comeback") and pInstance.__dict__.has_key("Undying Comeback I") and pInstance.__dict__["Undying Comeback I"].has_key("SystemsToCheck"):
-					myfFraction = 1.1 # Impossible to reach, ergo a good default value
-					if pInstance.__dict__["Undying Comeback I"]["SystemsToCheck"].has_key(pSubsystem.GetObjID()) and pInstance.__dict__["Undying Comeback I"]["SystemsToCheck"][pSubsystem.GetObjID()].has_key("Fraction"):
-						myfFraction = pInstance.__dict__["Undying Comeback I"]["SystemsToCheck"][pSubsystem.GetObjID()]["Fraction"]
+				if pInstance:
+					pInstanceDict = pInstance.__dict__
+					if pInstanceDict.has_key("Undying Comeback") and pInstanceDict.has_key("Undying Comeback I") and pInstanceDict["Undying Comeback I"].has_key("SystemsToCheck"):
+						myfFraction = 1.1 # Impossible to reach, ergo a good default value
+						if pInstanceDict["Undying Comeback I"]["SystemsToCheck"].has_key(pSubsystem.GetObjID()) and pInstanceDict["Undying Comeback I"]["SystemsToCheck"][pSubsystem.GetObjID()].has_key("Fraction"):
+							myfFraction = pInstanceDict["Undying Comeback I"]["SystemsToCheck"][pSubsystem.GetObjID()]["Fraction"]
 					
-					if fFraction >= myfFraction:
-						pInstance.__dict__["Undying Comeback I"]["SystemsToCheck"][pSubsystem.GetObjID()]["Complies"] = 1
-					else:
-						pInstance.__dict__["Undying Comeback I"]["SystemsToCheck"][pSubsystem.GetObjID()]["Complies"] = 0
+						if fFraction >= myfFraction:
+							pInstanceDict["Undying Comeback I"]["SystemsToCheck"][pSubsystem.GetObjID()]["Complies"] = 1
+							pHull = pShip.GetHull()
+							if pHull.GetObjID() == pSubsystem.GetObjID():
+								hull_max=pHull.GetMaxCondition()
+								if pInstanceDict["Undying Comeback I"]["SystemsToCheck"].has_key(pHull.GetObjID()):
+									if pInstanceDict["Undying Comeback I"]["SystemsToCheck"][pHull.GetObjID()].has_key("Current"):
+										pInstanceDict["Undying Comeback I"]["SystemsToCheck"][pHull.GetObjID()]["Current"] = fFraction * hull_max
+									if pInstanceDict["Undying Comeback I"]["SystemsToCheck"][pHull.GetObjID()].has_key("Old"):
+										pInstanceDict["Undying Comeback I"]["SystemsToCheck"][pHull.GetObjID()]["Old"] = fFraction * hull_max						
+						else:
+							pInstanceDict["Undying Comeback I"]["SystemsToCheck"][pSubsystem.GetObjID()]["Complies"] = 0
 
-					totalComply = pInstance.__dict__["Undying Comeback I"]["SystemsToCheck"][pSubsystem.GetObjID()]["Complies"]
-					for subSysID in pInstance.__dict__["Undying Comeback I"]["SystemsToCheck"].keys():
-						if pInstance.__dict__["Undying Comeback I"]["SystemsToCheck"][subSysID]["Complies"] == 0:
-							totalComply = 0
-							break
+						totalComply = pInstanceDict["Undying Comeback I"]["SystemsToCheck"][pSubsystem.GetObjID()]["Complies"]
+						for subSysID in pInstanceDict["Undying Comeback I"]["SystemsToCheck"].keys():
+							if pInstanceDict["Undying Comeback I"]["SystemsToCheck"][subSysID]["Complies"] == 0:
+								totalComply = 0
+								break
 
-					if totalComply == 1:
-						try:
-							if pInstanceDict.has_key('Undying Comeback last hit'):
-								pInstanceDict['Undying Comeback last hit'] = None
-						except:
-							pass
+						if totalComply == 1:
+							try:
+								if pInstanceDict.has_key('Undying Comeback last hit'):
+									pInstanceDict['Undying Comeback last hit'] = None
+							except:
+								pass
 
 
-		def Attach(self, pInstance): # TO-DO ADD PARAMETERS IF NECESSARY
+		def Attach(self, pInstance):
 			pInstance.lTechs.append(self)
 			pInstance.lTorpDefense.append(self)
 			pInstance.lPulseDefense.append(self)
@@ -838,7 +860,6 @@ try:
 			pInstance.lBeamDefense.remove(self)
 			if pInstance:
 				pInstanceDict = pInstance.__dict__
-				# TO-DO ADD CLEANUP FOR NEW AUX LIST
 				try:
 					if pInstanceDict.has_key('Undying Comeback damage'):
 						del pInstanceDict['Undying Comeback damage']

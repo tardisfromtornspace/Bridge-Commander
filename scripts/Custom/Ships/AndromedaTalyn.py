@@ -40,11 +40,6 @@ SubMenu = "CharaToLokis"
 Foundation.ShipDef.AndromedaTalyn = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
 Foundation.ShipDef.AndromedaTalyn.dTechs = {
 	'Ablative Armour': [220000, "Armour"],
-	"Undying Comeback": {"Damage Factor": 1.0, "Model": "AndromedaTalyn", "Boost": 25, "Energy Boost": 25.0, "Shield Boost": 25.0, "Weapon Boost": 25.0},
-}
-"""
-Foundation.ShipDef.AndromedaTalyn.dTechs = {
-	'Ablative Armour': [220000, "Armour"],
 	'Alteran ZPM Shields': { "Strength": 1 },
 	'Automated Destroyed System Repair': {"Time": 5.0},
 	"AutoTargeting": { "Pulse": [3, 1] },
@@ -84,7 +79,6 @@ Foundation.ShipDef.AndromedaTalyn.dTechs = {
 	"Undying Comeback": {"Damage Factor": 1.0, "Model": "AndromedaTalyn", "Boost": 25, "Energy Boost": 25.0, "Shield Boost": 25.0, "Weapon Boost": 25.0},
 	'Vree Shields': 100,
 }
-"""
 Foundation.ShipDef.AndromedaTalyn.sBridge = 'GalaxyBridge'
 Foundation.ShipDef.AndromedaTalyn.fMaxWarp = 9.99 + 0.01
 Foundation.ShipDef.AndromedaTalyn.fWarpEntryDelayTime = 0.5
@@ -99,7 +93,7 @@ Foundation.ShipDef.AndromedaTalyn.bPlanetKiller = 1
 #
 # Otherwise, uncomment this and type something in:
 
-Foundation.ShipDef.AndromedaTalyn.desc = "Originally a Peacekeeper Command Leviathan-Systems Commonwealth Glorious Heritage class hybrid of unknown origin, this vessel has harnessed some mysterious technologies and received consideable upgrades during its voyages."
+Foundation.ShipDef.AndromedaTalyn.desc = "Originally a Peacekeeper Command Leviathan-Systems Commonwealth Glorious Heritage class hybrid of unknown origin, the first ship of its type, the 'Spear of Justice', has harnessed multitude of mysterious technologies and received consideable upgrades during its voyages. Powered by Determination, be careful about this ship, for it can potentially adapt to most combat situations."
 
 #                                                                                     #
 #######################################################################################
