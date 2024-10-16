@@ -37,7 +37,12 @@ SubMenu = "CharaToLokis"
 # automatically generated the proper ShipDef Line for you.                            #
 #
 
-Foundation.ShipDef.AndromedaTalyn = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu }) 
+Foundation.ShipDef.AndromedaTalyn = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
+Foundation.ShipDef.AndromedaTalyn.dTechs = {
+	'Ablative Armour': [220000, "Armour"],
+	"Undying Comeback": {"Damage Factor": 1.0, "Model": "AndromedaTalyn", "Boost": 25, "Energy Boost": 25.0, "Shield Boost": 25.0, "Weapon Boost": 25.0},
+}
+"""
 Foundation.ShipDef.AndromedaTalyn.dTechs = {
 	'Ablative Armour': [220000, "Armour"],
 	'Alteran ZPM Shields': { "Strength": 1 },
@@ -79,6 +84,7 @@ Foundation.ShipDef.AndromedaTalyn.dTechs = {
 	"Undying Comeback": {"Damage Factor": 1.0, "Model": "AndromedaTalyn", "Boost": 25, "Energy Boost": 25.0, "Shield Boost": 25.0, "Weapon Boost": 25.0},
 	'Vree Shields': 100,
 }
+"""
 Foundation.ShipDef.AndromedaTalyn.sBridge = 'GalaxyBridge'
 Foundation.ShipDef.AndromedaTalyn.fMaxWarp = 9.99 + 0.01
 Foundation.ShipDef.AndromedaTalyn.fWarpEntryDelayTime = 0.5

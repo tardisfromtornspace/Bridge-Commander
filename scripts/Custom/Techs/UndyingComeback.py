@@ -3,7 +3,7 @@
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
 #         UndyingComeback.py by Alex SL Gato
 #         15th October 2024
-#         Based on AdvArmorTechThree by Alex SL Gato derived from a KM and ftb team file, B5Defenses (based on Shields.py by the Foundation Technologies team), loadspacehelper (Dasher, BANBURY and other ftb people) and SlipstreamModule (by USS Sovereign).
+#         Based on AdvArmorTechThree by Alex SL Gato derived from a KM and ftb team file, B5Defenses (based on Shields.py by the Foundation Technologies team), loadspacehelper (Dasher, BANBURY and other ftb people), SlipstreamModule (by USS Sovereign) and HelmMenuHandlers by the stbc team Totally Games (also partially based on Defiant's FleetUtils).
 #################################################################################################################
 #
 # TODO: 1. Create Read Me
@@ -19,9 +19,11 @@
 # - "Energy Boost": how much energy boost after undying. Default is 25.0x.
 # - "Shield Boost": how much shield boost after undying. Default is 25.0x.
 # - "Weapon Boost": how much shield boost after undying. Default is 1.0x (no extra).
+# - "LoadSound": when the ship is entering Undying phase, what sound would you like to play. Set to -1 to be none. Default is the one stated on the "defaultLoadSound" global variable below.
+# - "Sound": when the ship has finally entered undying phase, what sound would you like to play. Set to -1 to be none. Default is the one stated on the "defaultSound" global variable below.
 """
 Foundation.ShipDef.Ambassador.dTechs = {
-	"Undying Comeback": {"Damage Factor": 1.0, "Model": "nameoftheshipfile", "Boost": 25, "Energy Boost": 25.0, "Shield Boost": 25.0, "Weapon Boost": 25.0},
+	"Undying Comeback": {"Damage Factor": 1.0, "Model": "nameoftheshipfile", "Boost": 25, "Energy Boost": 25.0, "Shield Boost": 25.0, "Weapon Boost": 25.0, "LoadSound": -1, "Sound": -1},
 }
 """
 #
@@ -60,32 +62,118 @@ DEFAULT_WEAPON_BOOST = 1.0
 
 ET_CRITICAL_SYSTEM_AT_100 = App.UtopiaModule_GetNextEventType()
 
+g_dOverrideAIs = {}
+
+defaultLoadSound = "sfx/Music/ButTheUndertaleEarthRefusedToDie.wav"
+defaultSound = "sfx/Music"
+
 #
 #################################################################################################################
 #
 
+# Multiplayer stuff
+def MPIsPlayerShip(pShip):
+	return App.g_kUtopiaModule.IsMultiplayer() and pShip.GetNetPlayerID() >= 0
+
+def MPSentReplaceModelMessage(pShip, sNewShipScript):
+	# Setup the stream.
+	# Allocate a local buffer stream.
+	kStream = App.TGBufferStream()
+	# Open the buffer stream with a 256 byte buffer.
+	kStream.OpenBuffer(256)
+	# Write relevant data to the stream.
+	# First write message type.
+	kStream.WriteChar(chr(REPLACE_MODEL_MSG))
+
+	try:
+		from Multiplayer.Episode.Mission4.Mission4 import dReplaceModel
+		dReplaceModel[pShip.GetObjID()] = sNewShipScript
+	except ImportError:
+		pass
+
+	# send Message
+	kStream.WriteInt(pShip.GetObjID())
+	iLen = len(sNewShipScript)
+	kStream.WriteShort(iLen)
+	kStream.Write(sNewShipScript, iLen)
+
+	pMessage = App.TGMessage_Create()
+	# Yes, this is a guaranteed packet
+	pMessage.SetGuaranteed(1)
+	# Okay, now set the data from the buffer stream to the message
+	pMessage.SetDataFromStream(kStream)
+	# Send the message to everybody but me.  Use the NoMe group, which
+	# is set up by the multiplayer game.
+	# TODO: Send it to asking client only
+	pNetwork = App.g_kUtopiaModule.GetNetwork()
+	if not App.IsNull(pNetwork):
+		if App.g_kUtopiaModule.IsHost():
+			pNetwork.SendTGMessageToGroup("NoMe", pMessage)
+		else:
+			pNetwork.SendTGMessage(pNetwork.GetHostID(), pMessage)
+	# We're done.  Close the buffer.
+	kStream.CloseBuffer()
+
+
+def mp_send_settargetable(iShipID, iMode):
+	# Setup the stream.
+	# Allocate a local buffer stream.
+	kStream = App.TGBufferStream()
+	# Open the buffer stream with a 256 byte buffer.
+	kStream.OpenBuffer(256)
+	# Write relevant data to the stream.
+	# First write message type.
+	kStream.WriteChar(chr(SET_TARGETABLE_MSG))
+
+	# send Message
+	kStream.WriteInt(iShipID)
+	kStream.WriteInt(iMode)
+
+	pMessage = App.TGMessage_Create()
+	# Yes, this is a guaranteed packet
+	pMessage.SetGuaranteed(1)
+	# Okay, now set the data from the buffer stream to the message
+	pMessage.SetDataFromStream(kStream)
+	# Send the message to everybody but me.  Use the NoMe group, which
+	# is set up by the multiplayer game.
+	# TODO: Send it to asking client only
+	pNetwork = App.g_kUtopiaModule.GetNetwork()
+	if not App.IsNull(pNetwork):
+		if App.g_kUtopiaModule.IsHost():
+			pNetwork.SendTGMessageToGroup("NoMe", pMessage)
+		else:
+			pNetwork.SendTGMessage(pNetwork.GetHostID(), pMessage)
+	# We're done.  Close the buffer.
+	kStream.CloseBuffer()
+
+#############
+
 def findShipInstance(pShip):
-        debug(__name__ + ", findShipInstance")
-        pInstance = None
-        try:
-            if not pShip:
-                return pInstance
-            if FoundationTech.dShips.has_key(pShip.GetName()):
-                pInstance = FoundationTech.dShips[pShip.GetName()]
-        except:
-            pass
+	debug(__name__ + ", findShipInstance")
+	pInstance = None
+	try:
+		if not pShip:
+			return pInstance
+		if FoundationTech.dShips.has_key(pShip.GetName()):
+			pInstance = FoundationTech.dShips[pShip.GetName()]
+	except:
+		pass
 
-        return pInstance
+	return pInstance
 
-# In a multithreaded game we would really need to add Semaphores and similar to these state variables, but after contacting other modders I've been told several times that despite everything, the game is single-threaded so these extremely sloppy variables would do the trick nicely
+# In a multithreaded game we would really need to add Semaphores and similar to these state variables, but after contacting other modders I've been told several times that despite everything, the game is both single-threaded and performs a function fully before switching to another so these extremely sloppy variables would do the trick nicely
 
-def PlayButTheEarthRefusedToDie(pAction):
-	#TO-DO ADD CONSTANT CHECKS SO IT DOES NOT DO WEIRD THINGS IF THE GAME ENDS, F.EX. BEGIN WITH CHECKING FROM THE BEGINNING THE PSHIP TO PISNTANCE AND EVERYTHING
-        #pEnterSound = App.TGSound_Create("sfx/ButTheUndertaleEarthRefusedToDie.wav", "ButTheUndertaleEarthRefusedToDie", 0)
-        #pEnterSound.SetSFX(0) 
-        #pEnterSound.SetInterface(1)
-
-	#App.g_kSoundManager.PlaySound("ButTheUndertaleEarthRefusedToDie")
+def PlayButTheEarthRefusedToDie(pAction, pShipID, phase, soundMusic, volume=0):
+	if soundMusic != -1 and str(soundMusic) != "-1":
+		try:
+			soundName = "ButTheEarthRefusedToDie" + str(pShipID) + str(phase)
+			pEnterSound = App.TGSound_Create(soundMusic, soundName, volume)
+			pEnterSound.SetSFX(0) 
+			pEnterSound.SetInterface(1)
+			App.g_kSoundManager.PlaySound(soundName)
+		except:
+			print "Missing sound or other error while playing Undying load sound:"
+			traceback.print_exc()
 	return 0
 
 def BoostSubsystem(pSubsystem, boost, weaponBoost, shieldboost, energyboost, lethalDamageWas, ratioDmgVsHealth, pHullMax, pInstanceDict, pSubName):
@@ -94,7 +182,8 @@ def BoostSubsystem(pSubsystem, boost, weaponBoost, shieldboost, energyboost, let
 	pSubsystemProperty = pSubsystem.GetProperty()
 	pSubsystemProperty.SetMaxCondition(pSubsystemMax)
 	pSubsystem.SetCondition(pSubsystemMax)
-	pSubsystemProperty.SetDisabledPercentage(0.001)
+	if pSubsystemProperty.GetDisabledPercentage() > 0.001:
+		pSubsystemProperty.SetDisabledPercentage(0.001)
 
 	# If it's one of KM default Ablative Armours, we need to nudge it a bit
 	if pSubName and pSubName == pSubsystem.GetName():
@@ -104,6 +193,7 @@ def BoostSubsystem(pSubsystem, boost, weaponBoost, shieldboost, energyboost, let
 				pInstanceDict['Ablative Armour L'][0] = pSubsystemMax
 			else:
 				pInstanceDict['Ablative Armour L'] = pSubsystemMax
+			pSubsystemProperty.SetRepairComplexity(pSubsystemProperty.GetRepairComplexity()/5.0)
 		except:
 			try:
 				# Just in case you don't have the fix
@@ -127,7 +217,7 @@ def BoostSubsystem(pSubsystem, boost, weaponBoost, shieldboost, energyboost, let
 			pWeapon.SetChargeLevel(pCurrentProperty.GetMaxCharge() * weaponBoost)
 			pCurrentProperty.SetMinFiringCharge(pEWProperty.GetMinFiringCharge() * weaponBoost)
 			pCurrentProperty.SetRechargeRate(pEWProperty.GetRechargeRate() * weaponBoost)
-                        
+			
 	# If it's a shield, we should adjust the shield values.
 	if (pSubsystem.IsTypeOf(App.CT_SHIELD_SUBSYSTEM)):
 		pShields = App.ShieldClass_Cast(pSubsystem)
@@ -159,7 +249,95 @@ def BoostSubsystem(pSubsystem, boost, weaponBoost, shieldboost, energyboost, let
 			pESubsystem.SetMainBatteryPower(pESubsystem.GetMainBatteryPower())
 			pESubsystem.SetBackupBatteryPower(pESubsystem.GetMainBatteryLimit())
 
-def TransformIntoUndyingPhaseII(pAction, pShipID):
+
+def OverrideAI(pShip, sAIModule, *lAICreateArgs, **dAICreateKeywords):
+	# Try to override the AI.
+	pSequence = App.TGSequence_Create()
+	pSequence.AppendAction(App.TGScriptAction_Create(__name__, "OverrideAIMid", pShip.GetObjID(), sAIModule, lAICreateArgs, dAICreateKeywords))
+	pSequence.Play()
+	return 0
+
+def OverrideAIMid(pAction, idShip, sAIModule, lAICreateArgs, dAICreateKeywords):
+	debug(__name__ + ", OverrideAIMid")
+	pShip = App.ShipClass_GetObjectByID(None, idShip)
+	if not pShip:
+		return 0
+
+	# Check if the ship has building AI's.
+	if pShip.HasBuildingAIs():
+		# Can't override AI just yet...  Try again in a little while.
+		#debug("Can't override AI yet.  Delaying attempt...")
+		pSeq = App.TGSequence_Create()
+		pSeq.AppendAction( App.TGScriptAction_Create(__name__, "OverrideAIMid", idShip, sAIModule, lAICreateArgs, dAICreateKeywords), 0.5 )
+		pSeq.Play()
+		return 0
+
+	# Ship has no building AI's.  We can safely replace its AI.
+	# Create the new AI...
+	pAIModule = __import__(sAIModule)
+	pNewAI = apply(getattr(pAIModule, "CreateAI"), lAICreateArgs, dAICreateKeywords) # TO-DO MAYBE THIS SHOULD HAVE PSHIP HERE?
+	if pNewAI:
+		OverrideAIInternal(pShip, pNewAI)
+	return 0
+
+def OverrideAIInternal(pShip, pNewAI):
+	# Check for an old AI.
+	debug(__name__ + ", OverrideAIInternal")
+	global g_dOverrideAIs
+	pOldAI = pShip.GetAI()
+	pOverrideAI = None
+	if pOldAI:
+		if g_dOverrideAIs.has_key(pShip.GetObjID()):
+			# Already have an override AI for this ship.  Check if
+			# that AI is still in place.
+			pOverrideAI = App.ArtificialIntelligence_GetAIByID(g_dOverrideAIs[pShip.GetObjID()])
+			if (not pOverrideAI)  or  (pOverrideAI.GetID() != pOldAI.GetID()):
+				# It's not in place.  Gotta make a new one.
+				pOverrideAI = None
+			else:
+				# It's still in place.  Remove whatever was in
+				# the priority 1 slot (whatever the player told
+				# this ship to do before).
+				pOverrideAI.RemoveAIByPriority(1)
+
+	if not pOverrideAI:
+		# Make a new Override AI.
+		pOverrideAI = App.PriorityListAI_Create(pShip, "FleetCommandOverrideAI")
+		pOverrideAI.SetInterruptable(1)
+
+		# Second AI in the list is the current AI.
+		if pOldAI:
+			pOverrideAI.AddAI(pOldAI, 2)
+
+	# First AI in the list is the AI to override the old one.
+	pOverrideAI.AddAI(pNewAI, 1)
+
+	# Replace the ship's AI with the override AI.  The 0 here
+	# tells the game not to delete the old AI.
+	pShip.ClearAI(0, pOldAI)
+	pShip.SetAI(pOverrideAI)
+
+	# Save info about this override AI.
+	g_dOverrideAIs[pShip.GetObjID()] = pOverrideAI.GetID()
+
+def StopOverridingAI(pShip):
+	debug(__name__ + ", StopOverridingAI")
+	global g_dOverrideAIs
+	pOldAI = pShip.GetAI()
+	pOverrideAI = None
+	if pOldAI:
+		if g_dOverrideAIs.has_key(pShip.GetObjID()):
+			# Have an override AI for this ship.  Check if
+			# that AI is still in place.
+			pOverrideAI = App.ArtificialIntelligence_GetAIByID(g_dOverrideAIs[pShip.GetObjID()])
+			if pOverrideAI  and  (pOverrideAI.GetID() == pOldAI.GetID()):
+				# It's still in place.  Remove whatever was in
+				# the priority 1 slot (whatever the player told
+				# this ship to do before).
+				pOverrideAI.RemoveAIByPriority(1)
+	return 0
+
+def TransformIntoUndyingPhaseII(pAction, pShipID, musicToPlay):
 	pShip = App.ShipClass_GetObjectByID(None, pShipID)
 	toChangeOntoUndyingFully = 0
 	if pShip:
@@ -182,22 +360,23 @@ def TransformIntoUndyingPhaseII(pAction, pShipID):
 				if not pInstanceDict.has_key('Undying Comeback state'):
 					pInstanceDict['Undying Comeback state'] = 0
 
+				factor = 1.0
+				if pInstanceDict['Undying Comeback'].has_key("Damage Factor"):
+					factor = pInstanceDict['Undying Comeback']["Damage Factor"]
+
+				pHull = pShip.GetHull()
 				if pInstanceDict.has_key('Undying Comeback damage'):
 					undyneComebackDamage = pInstanceDict['Undying Comeback damage']
-					factor = 1.0
-					if pInstanceDict['Undying Comeback'].has_key("Damage Factor"):
-						factor = pInstanceDict['Undying Comeback']["Damage Factor"]
-					if pHull.GetMaxCondition() * factor > undyneComebackDamage:
+					if not pHull or pHull.GetMaxCondition() * factor > undyneComebackDamage:
 						pInstanceDict['Undying Comeback state'] == 2 # We are gonna assume you went undying already
 				else:
 					if pInstanceDict.has_key('Undying Comeback last hit') and pInstanceDict['Undying Comeback last hit'] != None:
 						# We had more attacks before, now to know if the last attack was the culprit
-						if pHull.GetMaxCondition() * factor > pInstanceDict['Undying Comeback last hit'] and pInstanceDict['Undying Comeback last hit'] > 0.0:
+						if not pHull or pHull.GetMaxCondition() * factor > pInstanceDict['Undying Comeback last hit'] and pInstanceDict['Undying Comeback last hit'] > 0.0:
 							pInstanceDict['Undying Comeback state'] == 2 # We are gonna assume you went undying already
 
 				if pInstanceDict['Undying Comeback state'] == 1:
 					undyneComebackState = pInstanceDict['Undying Comeback state']
-					pHull = pShip.GetHull()
 					if pHull:
 						global DEFAULT_BOOST, DEFAULT_WEAPON_BOOST
 
@@ -254,13 +433,32 @@ def TransformIntoUndyingPhaseII(pAction, pShipID):
 						ReplaceModel(pShip, sNewShipScript)
 
 					#MissionLib.ShowSubsystems(1) #On a dead ship this does not work :/
-					pShip.ClearAI()
+
+					StopOverridingAI(pShip)
+
+					#pShip.ClearAI()
 					pShip.UpdateNodeOnly()
 					if toChangeOntoUndyingFully > 0:
 						pInstanceDict['Undying Comeback state'] = 2
+						pPlayer	= MissionLib.GetPlayer()
+						if pShip.GetObjID() == pPlayer.GetObjID() or MPIsPlayerShip(pShip):
+							try:
+								pSequence = App.TGSequence_Create ()
+								pSequence.AppendAction(App.TGScriptAction_Create("MissionLib", "EndCutscene"))
+								pSequence.Play()
+							except:
+								print "Error when leaving cutscene"
+								traceback.print_exc()
+						try:
+							pSequence = App.TGSequence_Create()
+							pAction = App.TGScriptAction_Create(__name__, "PlayButTheEarthRefusedToDie", pShipID, 2, musicToPlay)
+							pSequence.AddAction(pAction, None, 0)
+							pSequence.Play()
+						except:
+							print "Error on Undying second Sequence"
+							traceback.print_exc()
+
 						pShip.SetDeathScript(None)
-						print "YOU WILL HAVE TO TRY A LITTLE HARDER THAN THAT"	
-						# TO-DO NOW ADD HERE BATTLE AGAINST A TRUE HERO
 				else:
 					pShip.SetDeathScript(None)
 					pShip.RunDeathScript()
@@ -270,22 +468,83 @@ def TransformIntoUndyingPhaseI(pShip, pInstance, pInstanceDict, pHull):
 	if not pInstanceDict.has_key('Undying Comeback state'):
 		pInstanceDict['Undying Comeback state'] = 0
 	if pInstanceDict['Undying Comeback state'] <= 0:
-		pInstanceDict['Undying Comeback state'] = 1
-		print "Beginning Undying transformation..."
+		pInstanceDict['Undying Comeback state'] = 0.5
 		pShipID = pInstance.pShipID
 		if not pShipID:
 			pShipID = pShip.GetObjID()
 		if pShipID != App.NULL_ID:
 			try:
 				pSequence = App.TGSequence_Create()
-				pAction = App.TGScriptAction_Create(__name__, "PlayButTheEarthRefusedToDie")
-				pSequence.AddAction(pAction, None, 0)
-				pAction = App.TGScriptAction_Create(__name__, "TransformIntoUndyingPhaseII", pShipID)
+				pAction = App.TGScriptAction_Create(__name__, "TransformIntoUndyingPhaseIa", pShipID)
 				pSequence.AddAction(pAction, None, 1.5)
 				pSequence.Play()
 			except:
 				print "Error on Undying Sequence"
 				traceback.print_exc()
+	return 0
+
+
+def TransformIntoUndyingPhaseIa(pAction, pShipID):
+	pShip = App.ShipClass_GetObjectByID(None, pShipID)
+	toChangeOntoUndyingFully = 0
+	if pShip:
+		pInstance = findShipInstance(pShip)
+		if pInstance and pInstance.__dict__.has_key('Undying Comeback'):
+			# So this ship should consider to be Undying
+			pInstanceDict = pInstance.__dict__
+
+			if not pInstanceDict.has_key('Undying Comeback state'):
+				pInstanceDict['Undying Comeback state'] = 0
+			if pInstanceDict['Undying Comeback state'] <= 0.5:
+				pInstanceDict['Undying Comeback state'] = 1
+				shouldIcontinue = 1
+				factor = 1.0
+				if pInstanceDict['Undying Comeback'].has_key("Damage Factor"):
+					factor = pInstanceDict['Undying Comeback']["Damage Factor"]
+				pHull = pShip.GetHull()
+				if not pHull:
+					shouldIcontinue = 0
+				else:
+					if pInstanceDict.has_key('Undying Comeback damage'):
+						undyneComebackDamage = pInstanceDict['Undying Comeback damage']
+						if pHull.GetMaxCondition() * factor > undyneComebackDamage:
+							shouldIcontinue = 0
+					else:
+						if pInstanceDict.has_key('Undying Comeback last hit') and pInstanceDict['Undying Comeback last hit'] != None:
+							# We had more attacks before, now to know if the last attack was the culprit
+							if pHull.GetMaxCondition() * factor > pInstanceDict['Undying Comeback last hit'] and pInstanceDict['Undying Comeback last hit'] > 0.0:
+								shouldIcontinue = 0
+
+				if shouldIcontinue == 1:
+					global defaultLoadSound, defaultSound
+
+					musicForLoading = defaultLoadSound
+					if pInstanceDict['Undying Comeback'].has_key("LoadSound"):
+						musicForLoading = pInstanceDict['Undying Comeback']["LoadSound"]
+
+					musicForUndying = defaultSound
+					if pInstanceDict['Undying Comeback'].has_key("Sound"):
+						musicForUndying = pInstanceDict['Undying Comeback']["Sound"]
+
+					pShipID = pInstance.pShipID
+					if not pShipID:
+						pShipID = pShip.GetObjID()
+					if pShipID != App.NULL_ID:
+						try:
+							pSequence = App.TGSequence_Create()
+							pAction = App.TGScriptAction_Create(__name__, "PlayButTheEarthRefusedToDie", pShipID, 1, musicForLoading)
+							pSequence.AddAction(pAction, None, 0)
+							pAction = App.TGScriptAction_Create(__name__, "TransformIntoUndyingPhaseII", pShipID, musicForUndying)
+							pSequence.AddAction(pAction, None, 2.5)
+							pSequence.Play()
+						except:
+							print "Error on Undying Sequence"
+							traceback.print_exc()
+				else:
+					#print "I will not die! I will not die! I  w i l l  n o t  d i e ! 'dies'"
+					pShip.SetDeathScript(None)
+					pShip.RunDeathScript()
+	return 0
 
 def newDeathSeq(*args, **kwargs):
 	pShip = None
@@ -295,7 +554,13 @@ def newDeathSeq(*args, **kwargs):
 			if temppShipID:
 				pShip = App.ShipClass_GetObjectByID(None, temppShipID)
 				if pShip:
-					print "so we got a SHIP, YES! ", pShip.GetName(), pShip.GetLifeTime()
+
+					oldAI = pShip.GetAI()
+					
+					pPlayer	= MissionLib.GetPlayer()
+					if pShip.GetObjID() != pPlayer.GetObjID() and not MPIsPlayerShip(pShip):
+						OverrideAI(pShip, "AI.Player.Stay", pShip)
+
 					pInstance = findShipInstance(pShip)
 					if pInstance:
 						pInstanceDict = pInstance.__dict__
@@ -306,19 +571,20 @@ def newDeathSeq(*args, **kwargs):
 							undyneComebackState = pInstanceDict['Undying Comeback state']
 							pHull = pShip.GetHull()
 							if pHull and not undyneComebackState == 2:
+								factor = 1.0
+								if pInstanceDict['Undying Comeback'].has_key("Damage Factor"):
+									factor = pInstanceDict['Undying Comeback']["Damage Factor"]
 								if undyneComebackState <= 0: # Avoid calling 346238523472349 times for undying if under too much pressure
 									if pInstanceDict.has_key('Undying Comeback damage'):
 										undyneComebackDamage = pInstanceDict['Undying Comeback damage']
-										factor = 1.0
-										if pInstanceDict['Undying Comeback'].has_key("Damage Factor"):
-											factor = pInstanceDict['Undying Comeback']["Damage Factor"]
+
 										if pHull.GetMaxCondition() * factor < undyneComebackDamage:
-											print "Time to go Undying"
 											TransformIntoUndyingPhaseI(pShip, pInstance, pInstanceDict, pHull)
 										else:
-											print "I will not die! I will not die! I  w i l l  n o t  d i e ! 'dies'"
-											pShip.SetDeathScript(None)
-											pShip.RunDeathScript()	
+											TransformIntoUndyingPhaseI(pShip, pInstance, pInstanceDict, pHull)
+										#	print "I will not die! I will not die! I  w i l l  n o t  d i e ! 'dies'"
+										#	pShip.SetDeathScript(None)
+										#	pShip.RunDeathScript()	
 											
 									else:
 										if pInstanceDict.has_key('Undying Comeback last hit') and pInstanceDict['Undying Comeback last hit'] != None:
@@ -326,26 +592,26 @@ def newDeathSeq(*args, **kwargs):
 											if pHull.GetMaxCondition() * factor < pInstanceDict['Undying Comeback last hit'] and pInstanceDict['Undying Comeback last hit'] > 0.0:
 												TransformIntoUndyingPhaseI(pShip, pInstance, pInstanceDict, pHull)
 											else:
-												print "I will not die! I will not die! I  w i l l  n o t  d i e ! 'dies'"
-												pShip.SetDeathScript(None)
-												pShip.RunDeathScript()	
+												TransformIntoUndyingPhaseI(pShip, pInstance, pInstanceDict, pHull)
+											#	print "I will not die! I will not die! I  w i l l  n o t  d i e ! 'dies'"
+											#	pShip.SetDeathScript(None)
+											#	pShip.RunDeathScript()	
 										else:
 											# This means the attack was so frigging powerful it killed us before we could do a thing - so yeah, we need to remain undying
-											print "Undying for lack of un-undying proof"
 											TransformIntoUndyingPhaseI(pShip, pInstance, pInstanceDict, pHull)
 							else:
 								# Something's very wrong if you don't have a hull subsystem, or you have already gone Undying and cannot go Undying forever
-								print "I will not die! I will not die! I  w i l l  n o t  d i e ! 'dies'"
+								#print "I will not die! I will not die! I  w i l l  n o t  d i e ! 'dies'"
 								pShip.SetDeathScript(None)
 								pShip.RunDeathScript()	
 						else:
 							# This ship should not be undead
-							print "I will not die! I will not die! I  w i l l  n o t  d i e ! 'dies'"
+							#print "I will not die! I will not die! I  w i l l  n o t  d i e ! 'dies'"
 							pShip.SetDeathScript(None)
 							pShip.RunDeathScript()	
 					else:
 						# This ship should not be undead
-						print "I will not die! I will not die! I  w i l l  n o t  d i e ! 'dies'"
+						#print "I will not die! I will not die! I  w i l l  n o t  d i e ! 'dies'"
 						pShip.SetDeathScript(None)
 						pShip.RunDeathScript()
 
@@ -356,10 +622,10 @@ def ReplaceModel(pShip, sNewShipScript):
 	if not pShip:
 		return 0
 
-        ShipScript = __import__('ships.' + sNewShipScript)
-        ShipScript.LoadModel()
-        kStats = ShipScript.GetShipStats()
-        pShip.SetupModel(kStats['Name'])
+	ShipScript = __import__('ships.' + sNewShipScript)
+	ShipScript.LoadModel()
+	kStats = ShipScript.GetShipStats()
+	pShip.SetupModel(kStats['Name'])
 	if App.g_kUtopiaModule.IsMultiplayer():
 		MPSentReplaceModelMessage(pShip, sNewShipScript)
 
@@ -382,78 +648,48 @@ def ReplaceModel(pShip, sNewShipScript):
 	except:
 		print "You are missing 'Tactical.Projectiles.AutomaticSystemRepairDummy' torpedo on your install, without that a weird black-texture-until-firing-or-fired bug may happen"
 
-# Multiplayer stuff
-def MPSentReplaceModelMessage(pShip, sNewShipScript):
-        # Setup the stream.
-        # Allocate a local buffer stream.
-        kStream = App.TGBufferStream()
-        # Open the buffer stream with a 256 byte buffer.
-        kStream.OpenBuffer(256)
-        # Write relevant data to the stream.
-        # First write message type.
-        kStream.WriteChar(chr(REPLACE_MODEL_MSG))
 
-	try:
-		from Multiplayer.Episode.Mission4.Mission4 import dReplaceModel
-		dReplaceModel[pShip.GetObjID()] = sNewShipScript
-	except ImportError:
-		pass
+def SubDamage(pObject, pEvent):
+	debug(__name__ + ", SubDamage")
+	pShip = App.ShipClass_Cast(pObject)
+	if pShip:
+		pShip = App.ShipClass_GetObjectByID(None, pShip.GetObjID())
+		if pShip:
+			pInstance = findShipInstance(pShip)
+			if pInstance:
+				pInstanceDict = pInstance.__dict__
+				if pInstanceDict.has_key('Undying Comeback'):
+					# So this ship should consider to be Undying
+					pHull = pShip.GetHull()
+					if not pInstanceDict.has_key('Undying Comeback state'):
+						pInstanceDict['Undying Comeback state'] = 0
+					undyneComebackState = pInstanceDict['Undying Comeback state']
+					if pHull and not undyneComebackState <= 0.5:
+						hull_max=pHull.GetMaxCondition()
+						hull_cond=pHull.GetCondition()
+						pInstanceDict['Undying Comeback Cond']
+						if pInstanceDict.has_key("Undying Comeback I") and pInstanceDict["Undying Comeback I"].has_key("SystemsToCheck") and pInstanceDict["Undying Comeback I"]["SystemsToCheck"].has_key(pHull.GetObjID()):
+							if pInstanceDict["Undying Comeback I"]["SystemsToCheck"][pHull.GetObjID()].has_key("Current"):
+								currentOldStatus = pInstanceDict["Undying Comeback I"]["SystemsToCheck"][pHull.GetObjID()]["Current"]
+								if pInstanceDict["Undying Comeback I"]["SystemsToCheck"][pHull.GetObjID()].has_key("Old"):
+									oldOldStatus = pInstanceDict["Undying Comeback I"]["SystemsToCheck"][pHull.GetObjID()]["Old"]
+									if hull_cond != currentOldStatus:
+										finalDamage = currentOldStatus - hull_cond
+										if finalDamage > 0.0: # That means the hull got more damaged than last time
+											factor = 1.0
+											if pInstanceDict['Undying Comeback'].has_key("Damage Factor"):
+												factor = pInstanceDict['Undying Comeback']["Damage Factor"]
 
-	# send Message
-	kStream.WriteInt(pShip.GetObjID())
-	iLen = len(sNewShipScript)
-	kStream.WriteShort(iLen)
-	kStream.Write(sNewShipScript, iLen)
-
-        pMessage = App.TGMessage_Create()
-        # Yes, this is a guaranteed packet
-        pMessage.SetGuaranteed(1)
-        # Okay, now set the data from the buffer stream to the message
-        pMessage.SetDataFromStream(kStream)
-        # Send the message to everybody but me.  Use the NoMe group, which
-        # is set up by the multiplayer game.
-        # TODO: Send it to asking client only
-        pNetwork = App.g_kUtopiaModule.GetNetwork()
-        if not App.IsNull(pNetwork):
-                if App.g_kUtopiaModule.IsHost():
-                        pNetwork.SendTGMessageToGroup("NoMe", pMessage)
-                else:
-                        pNetwork.SendTGMessage(pNetwork.GetHostID(), pMessage)
-        # We're done.  Close the buffer.
-        kStream.CloseBuffer()
-
-
-def mp_send_settargetable(iShipID, iMode):
-        # Setup the stream.
-        # Allocate a local buffer stream.
-        kStream = App.TGBufferStream()
-        # Open the buffer stream with a 256 byte buffer.
-        kStream.OpenBuffer(256)
-        # Write relevant data to the stream.
-        # First write message type.
-        kStream.WriteChar(chr(SET_TARGETABLE_MSG))
-
-	# send Message
-	kStream.WriteInt(iShipID)
-	kStream.WriteInt(iMode)
-
-        pMessage = App.TGMessage_Create()
-        # Yes, this is a guaranteed packet
-        pMessage.SetGuaranteed(1)
-        # Okay, now set the data from the buffer stream to the message
-        pMessage.SetDataFromStream(kStream)
-        # Send the message to everybody but me.  Use the NoMe group, which
-        # is set up by the multiplayer game.
-        # TODO: Send it to asking client only
-        pNetwork = App.g_kUtopiaModule.GetNetwork()
-        if not App.IsNull(pNetwork):
-                if App.g_kUtopiaModule.IsHost():
-                        pNetwork.SendTGMessageToGroup("NoMe", pMessage)
-                else:
-                        pNetwork.SendTGMessage(pNetwork.GetHostID(), pMessage)
-        # We're done.  Close the buffer.
-        kStream.CloseBuffer()
-
+											if (hull_max * factor < finalDamage) or (hull_max <= finalDamage):
+												if not pInstanceDict.has_key('Undying Comeback damage') or (pInstanceDict['Undying Comeback damage'] <= 0.0):
+														pInstanceDict['Undying Comeback damage'] = finalDamage
+												elif pInstanceDict['Undying Comeback damage'] < finalDamage:
+														pInstanceDict['Undying Comeback damage'] = finalDamage
+												
+										
+										pInstanceDict["Undying Comeback I"]["SystemsToCheck"][pHull.GetObjID()]["Old"] = pInstanceDict["Undying Comeback I"]["SystemsToCheck"][pHull.GetObjID()]["Current"]
+										pInstanceDict["Undying Comeback I"]["SystemsToCheck"][pHull.GetObjID()]["Current"] = hull_cond
+	return 0
 
 
 try:
@@ -495,7 +731,7 @@ try:
 							if not pInstanceDict.has_key('Undying Comeback state'):
 								pInstanceDict['Undying Comeback state'] = 0
 							#None or 0 = Pre-undying, 1 = transforming, 2 = post-undying
-							if pInstanceDict['Undying Comeback state'] == 0: # TO-DO VERIFY WHY IS IT NOT WORKING
+							if pInstanceDict['Undying Comeback state'] <= 0.5: # TO-DO VERIFY WHY IS IT NOT WORKING
 								if absDamage > pInstanceDict['Undying Comeback damage']:
 									pInstanceDict['Undying Comeback damage'] = absDamage
 								pInstanceDict['Undying Comeback last hit'] = absDamage
@@ -503,6 +739,8 @@ try:
 								pInstanceDict['Undying Comeback damage'] = absDamage + pInstanceDict['Undying Comeback damage']	
 						else:
 							pInstanceDict['Undying Comeback damage'] = absDamage
+					else:
+						pInstanceDict['Undying Comeback last hit'] = absDamage
 		
 
 		def Test(self, pFloatEvent):
@@ -535,8 +773,6 @@ try:
 							pass
 
 
-			
-
 		def Attach(self, pInstance): # TO-DO ADD PARAMETERS IF NECESSARY
 			pInstance.lTechs.append(self)
 			pInstance.lTorpDefense.append(self)
@@ -544,6 +780,10 @@ try:
 			pInstance.lBeamDefense.append(self)
 			pShip = App.ShipClass_GetObjectByID(None, pInstance.pShipID)
 			if pShip != None:
+
+				pShip.AddPythonFuncHandlerForInstance(App.ET_SUBSYSTEM_DAMAGED, __name__ + ".SubDamage")
+				#import copy
+		
 				oldRunDeathSeq = pShip.RunDeathScript
 				if oldRunDeathSeq != None:
 					pShip.SetDeathScript(__name__ + ".newDeathSeq")
@@ -575,7 +815,10 @@ try:
 							pEvent.SetDestination( self.pEventHandler )
 							pEvent.SetSource( pSubsystem )
 
-							fFraction = (1.0 - (1.0/pSubsystem.GetMaxCondition())) * factor
+							maxCond = pSubsystem.GetMaxCondition()
+							if maxCond <= 0.0:
+								maxCond = 1.0
+							fFraction = (1.0 - (1.0/maxCond)) * factor
 							pWatcher = pSubsystem.GetConditionWatcher()
 							iRangeID = pWatcher.AddRangeCheck( fFraction, App.FloatRangeWatcher.FRW_BOTH, pEvent )
 							if pInstance and pInstance.__dict__.has_key("Undying Comeback"):
@@ -583,7 +826,7 @@ try:
 									pInstance.__dict__["Undying Comeback I"] = {}
 								if not pInstance.__dict__["Undying Comeback I"].has_key("SystemsToCheck"):
 									pInstance.__dict__["Undying Comeback I"]["SystemsToCheck"] = {}
-								pInstance.__dict__["Undying Comeback I"]["SystemsToCheck"][pSubsystem.GetObjID()] = {"Complies": 1, "Fraction": fFraction}
+								pInstance.__dict__["Undying Comeback I"]["SystemsToCheck"][pSubsystem.GetObjID()] = {"Complies": 1, "Fraction": fFraction, "Current": maxCond, "Old": maxCond}
 								pInstance.__dict__["Undying Comeback I"]["SystemsToCheck"][pSubsystem.GetObjID()]["Watcher"] = iRangeID
 
 					pShipList.TGDoneIterating()
@@ -614,6 +857,7 @@ try:
 
 				pShip = App.ShipClass_Cast(App.TGObject_GetTGObjectPtr(pInstance.pShipID))
 				if pShip != None:
+					pShip.RemoveHandlerForInstance(App.ET_SUBSYSTEM_DAMAGED, __name__ + ".SubDamage")
 					pShipSet = pShip.GetPropertySet()
 					pShipList = pShipSet.GetPropertiesByType(App.CT_SUBSYSTEM_PROPERTY)
 					iNumItems = pShipList.TGGetNumItems()

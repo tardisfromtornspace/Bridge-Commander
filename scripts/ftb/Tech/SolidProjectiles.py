@@ -60,7 +60,7 @@ import traceback
 
 #################################################################################################################
 MODINFO = { "Author": "\"Alex SL Gato, Greystar, JohnKuhns777 and likely the ftb Team\" andromedavirgoa@gmail.com",
-	    "Version": "0.3",
+	    "Version": "0.31",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -437,7 +437,6 @@ class Rocket(FoundationTech.TechDef):
 			if self.sHideProj > 1:
 				self.sHideProj = 1
 			self.sHideProj = round(self.sHideProj)
-			print "self.sHideProj= ", self.sHideProj
 
 			if not hasattr(self, "sTargetable") or self.sTargetable > 1:
 				self.sTargetable = 1
@@ -500,7 +499,6 @@ class Rocket(FoundationTech.TechDef):
 			if self.sHideProj > 1:
 				self.sHideProj = 1
 			self.sHideProj = round(self.sHideProj)
-			print "self.sHideProj= ", self.sHideProj
 
 			if not hasattr(self, "sTargetable") or self.sTargetable > 1:
 				self.sTargetable = 1
