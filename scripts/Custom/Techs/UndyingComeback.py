@@ -10,10 +10,10 @@
 #	2. Create a clear guide on how to add this...
 #
 # Start on 2:
-# This tech gives a "second chance" when a ship is dying. Basically the death script is altered for that ship so it can at least partially come back to life, restoring mostly everything except subsystem visibility, with more buffs along the way. Thus "the Undying".
+# This tech gives a "second chance" when a ship is dying from lethal terrible damage. Basically the death script is altered for that ship so it can at least partially come back to life, restoring mostly everything except subsystem visibility, with more buffs along the way. Thus "the Undying".
 # Apart from the obvious dependance on Foundation and FoundationTech, this script needs ftb.Tech.ATPFunctions (normally already present by default on KM) and Tactical.Projectiles.AutomaticSystemRepairDummy (from Automated Destroyed System Repair) to work fully. Also it is extremely recommended to have the Autoload file FIX-AblativeArmour1dot0.py since it fixes an issue with KM white-bar Ablative Armour.
 # In order to add this tech to your ship, add this to your scripts/Custom/Ships/ file, replacing "Ambassador" and "nameoftheshipfile" with the proper abbrev and desired value, respectively.
-# - "Damage Factor": how destructive the attack must be to trigger this second chance. It is a multiplier or fraction of the max hull health, so 0.5 means that any shot at half health will trigger it.
+# - "Damage Factor": how destructive the attack must be to trigger this second chance. It is a multiplier or fraction of the max hull health, so 0.5 means that any shot at half health will trigger it upon death.
 # - "Model": which vessel it will relaod into as a second chance. You can make it reload onto itself again by placing the scripts/ships/ filename between the ", or choose another ship file.
 # - "Boost": overall boost, multiplying how many times more powerful than the killing blast(s) the ship becomes. Default is 25.0x.
 # - "Energy Boost": how much energy boost after undying. Default is 25.0x.
@@ -22,16 +22,24 @@
 # - "LoadSound": when the ship is entering Undying phase, what sound would you like to play. Set to -1 to be none. Default is the one stated on the "defaultLoadSound" global variable below.
 # - "Sound": when the ship has finally entered undying phase, what sound would you like to play. Set to -1 to be none. Default is the one stated on the "defaultSound" global variable below.
 # - "TimeToUndie": the time, in seconds, between beginning to undie and finally reaching Undying phase. Default is 40.5 seconds.
+# - "Lifes": how many extra chances you have. -1 or any other value below that means infinite second chances. 0 and 1 are equivalent on this, only 1 second chance. Any value above that means 1 extra chance per stack (that is, 3 means the ship can undie 3 times). Default is 1.
+# -- Please note that the AI is overriden only once and it is for the first time it dies, meaning a second kill will probably still make the ship move.
+# - "AlternateLoadSound": variant load sound if the ship can undie more than once, sounding from the second death onwards. When not present, value defaults to "LoadSound".
+# - "AlternateSound": variant sound if the ship can undie more than once, sounding from the second death onwards. When not present, value defaults to "Sound".
+# - "TimeToUndie2": you may want the vessel to take more or less to undie after the first time. This value controls that time, in seconds. When not added or below 0.0, it defaults to "TimeToUndie".
 """
 Foundation.ShipDef.Ambassador.dTechs = {
-	"Undying Comeback": {"Damage Factor": 1.0, "Model": "nameoftheshipfile", "Boost": 25, "Energy Boost": 25.0, "Shield Boost": 25.0, "Weapon Boost": 25.0, "LoadSound": -1, "Sound": -1, "TimeToUndie": 40.5},
+	"Undying Comeback": {"Damage Factor": 1.0, "Model": "nameoftheshipfile", "Boost": 25, "Energy Boost": 25.0, "Shield Boost": 25.0, "Weapon Boost": 25.0, "LoadSound": -1, "Sound": -1, "TimeToUndie": 39.5, "Lifes": 1, "AlternateLoadSound": -1, "AlternateSound": -1, "TimeToUndie2": 40.5},
 }
 """
+# NOTES about the programming of this script: In a multithreaded or pseudo-multithreaded game we would really need to add Semaphores/Monitors and similar to these flag variables, but after contacting other senior modders I've been told several times that the game is both single-threaded and performs a function fully before switching to another so these extremely sloppy variables used as flags (that personally, I don't like at all) would do the trick nicely.
+# Despite everything, and considering that a scripts/threading.py module exists, I still suspect some race conditions could happen, specially when it comes to sequences, or if somebody were to add multithreading affecting this script. Thus, the comment below:
+# Future TO-DO as possible improvement - if race conditions that affect this script occur, I would strongly recommend to create a separate class that listens to messages, akin to a Monitor, that has support functions that call other functions for a single ship (particularly TransformIntoUndyingPhaseI and TransformIntoUndyingPhaseIa), in such a way that when calling Attach a new monitor for that ship is created, while the ship exists it keeps a lock for the functions used for a single ship, and when Detach is called that Monitor is destroyed.
 #
 #################################################################################################################
 #
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.02",
+	    "Version": "0.1",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -163,11 +171,9 @@ def findShipInstance(pShip):
 
 	return pInstance
 
-# In a multithreaded game we would really need to add Semaphores and similar to these state variables, but after contacting other modders I've been told several times that despite everything, the game is both single-threaded and performs a function fully before switching to another so these extremely sloppy variables would do the trick nicely
-
 def PlayButTheEarthRefusedToDie(pAction, pShipID, phase, soundMusic, volume=0):
 	if soundMusic != -1 and str(soundMusic) != "-1":
-		try:
+		try: # TO-DO MAKE IT NICER, MUSIC PERHAPS?
 			soundName = "ButTheEarthRefusedToDie" + str(pShipID) + str(phase)
 			pEnterSound = App.TGSound_Create(soundMusic, soundName, volume)
 			pEnterSound.SetSFX(0) 
@@ -180,8 +186,13 @@ def PlayButTheEarthRefusedToDie(pAction, pShipID, phase, soundMusic, volume=0):
 
 def BoostSubsystem(pSubsystem, boost, weaponBoost, shieldboost, energyboost, lethalDamageWas, ratioDmgVsHealth, pHullMax, pInstanceDict, pSubName):
 	# Common to all subsystems, a hitpoint boost
-	pSubsystemMax = pSubsystem.GetMaxCondition() * ratioDmgVsHealth
+	pSubsystemMaxCondition = pSubsystem.GetMaxCondition()
+	if not pSubsystemMaxCondition:
+		return 0
+	pSubsystemMax = pSubsystemMaxCondition * ratioDmgVsHealth
 	pSubsystemProperty = pSubsystem.GetProperty()
+	if not pSubsystemProperty:
+		return 0	
 	pSubsystemProperty.SetMaxCondition(pSubsystemMax)
 	pSubsystem.SetCondition(pSubsystemMax)
 	if pSubsystemProperty.GetDisabledPercentage() > 0.001:
@@ -203,6 +214,7 @@ def BoostSubsystem(pSubsystem, boost, weaponBoost, shieldboost, energyboost, let
 					pInstanceDict['Ablative Armour'][0] = pSubsystemMax
 				else:
 					pInstanceDict['Ablative Armour'] = pSubsystemMax
+				pSubsystemProperty.SetRepairComplexity(pSubsystemProperty.GetRepairComplexity()/5.0)
 			except:
 				pass
 
@@ -244,12 +256,13 @@ def BoostSubsystem(pSubsystem, boost, weaponBoost, shieldboost, energyboost, let
 		pESubsystem = App.PowerSubsystem_Cast(pSubsystem)
 		pESubsystemP = App.PowerProperty_Cast(pSubsystemProperty)
 		if pESubsystem and pESubsystemP:
-			batt_chg=pESubsystem.GetMainBatteryPower()
 			batt_limit=pESubsystem.GetMainBatteryLimit()
-			pESubsystemP.SetMainBatteryLimit(batt_chg * energyboost)
-			pESubsystemP.SetBackupBatteryLimit(batt_limit * energyboost)
-			pESubsystem.SetMainBatteryPower(pESubsystem.GetMainBatteryPower())
-			pESubsystem.SetBackupBatteryPower(pESubsystem.GetMainBatteryLimit())
+			batt_back_limit=pESubsystem.GetBackupBatteryLimit()
+			pESubsystemP.SetMainBatteryLimit(batt_limit * energyboost)
+			pESubsystemP.SetBackupBatteryLimit(batt_back_limit * energyboost)
+			pESubsystem.SetMainBatteryPower(batt_limit * energyboost)
+			pESubsystem.SetBackupBatteryPower(batt_back_limit * energyboost)
+	return 0
 
 
 def OverrideAI(pShip, sAIModule, *lAICreateArgs, **dAICreateKeywords):
@@ -337,6 +350,15 @@ def StopOverridingAI(pShip):
 				# the priority 1 slot (whatever the player told
 				# this ship to do before).
 				pOverrideAI.RemoveAIByPriority(1)
+	return 0
+
+def ResetAI(pAction, pShipID, itIsNotPlayer):
+	if itIsNotPlayer:
+		pShip = App.ShipClass_GetObjectByID(None, pShipID)
+		if pShip:
+			oldAI = pShip.GetAI()
+			if oldAI:
+				oldAI.Reset()
 	return 0
 
 def TransformIntoUndyingPhaseII(pAction, pShipID, musicToPlay):
@@ -432,6 +454,9 @@ def TransformIntoUndyingPhaseII(pAction, pShipID, musicToPlay):
 						sNewShipScript = pShip.GetScript()
 
 					if sNewShipScript != None:
+						pCloak = pShip.GetCloakingSubsystem()
+						if pCloak:
+							pCloak.InstantDecloak()
 						ReplaceModel(pShip, sNewShipScript)
 
 					#MissionLib.ShowSubsystems(1) #On a dead ship this does not work :/
@@ -439,34 +464,89 @@ def TransformIntoUndyingPhaseII(pAction, pShipID, musicToPlay):
 					#pShip.ClearAI()
 					pShip.UpdateNodeOnly()
 					if toChangeOntoUndyingFully > 0:
-						pInstanceDict['Undying Comeback state'] = 2
 						pPlayer	= MissionLib.GetPlayer()
-						if pShip.GetObjID() == pPlayer.GetObjID() or MPIsPlayerShip(pShip):
-							try:
-								pSequence = App.TGSequence_Create ()
-								pSequence.AppendAction(App.TGScriptAction_Create("MissionLib", "EndCutscene"))
-								pSequence.Play()
-							except:
-								print "Error when leaving cutscene"
-								traceback.print_exc()
-
-						else:
+						itIsNotPlayer = pShip.GetObjID() != pPlayer.GetObjID() and not MPIsPlayerShip(pShip)
+						if itIsNotPlayer:
 							StopOverridingAI(pShip)
+							if pInstanceDict.has_key('Undying Comeback AI'):
+								try:
+									del pInstanceDict['Undying Comeback AI']
+								except:
+									pass
 							#oldAI = pShip.GetAI()
 							#if oldAI:
 							#	oldAI.Reset()
-							
-
+						else:
+							try:
+								MissionLib.EndCutscene(pAction, 1.0)
+								#pSequence = App.TGSequence_Create ()
+								#pSequence.AppendAction(App.TGScriptAction_Create("MissionLib", "EndCutscene"))
+								#pSequence.Play()
+							except:
+								print "Error when leaving cutscene"
+								traceback.print_exc()
 						try:
 							pSequence = App.TGSequence_Create()
 							pAction = App.TGScriptAction_Create(__name__, "PlayButTheEarthRefusedToDie", pShipID, 2, musicToPlay)
 							pSequence.AddAction(pAction, None, 0)
+							pAction = App.TGScriptAction_Create(__name__, "ResetAI", pShipID, itIsNotPlayer)
+							pSequence.AddAction(pAction, None, 2.0)
 							pSequence.Play()
 						except:
 							print "Error on Undying second Sequence"
 							traceback.print_exc()
 
+						keepImmune = 1 
+						if pInstanceDict['Undying Comeback'].has_key("Lifes"):
+							repetitions = pInstanceDict['Undying Comeback']["Lifes"]
+							if repetitions == -1:
+								keepImmune = 1
+								if pInstanceDict.has_key('Undying Comeback Lifes'):
+									lifesRemaining = pInstanceDict['Undying Comeback Lifes']
+									lifesRemaining = lifesRemaining -1
+									pInstanceDict['Undying Comeback Lifes'] = lifesRemaining
+							else:
+								if pInstanceDict.has_key('Undying Comeback Lifes'):
+									lifesRemaining = pInstanceDict['Undying Comeback Lifes']
+									#print "Lifes remaining = ", lifesRemaining
+									if lifesRemaining <= -1:
+										keepImmune = 1
+										lifesRemaining = lifesRemaining -1
+										pInstanceDict['Undying Comeback Lifes'] = lifesRemaining
+									elif lifesRemaining < 1:
+										keepImmune = 0
+										pInstanceDict['Undying Comeback Lifes'] = 0
+									else:
+										lifesRemaining = lifesRemaining -1
+										pInstanceDict['Undying Comeback Lifes'] = lifesRemaining
+										if lifesRemaining <= 0:
+											keepImmune = 0
+										else:
+											keepImmune = 1
+								else:
+									keepImmune = 0
+						else:
+							keepImmune = 0
+
+						if keepImmune == 1:
+							pShip.SetDeathScript(__name__ + ".newDeathSeq")
+							try:
+								if pInstanceDict.has_key('Undying Comeback damage'):
+									del pInstanceDict['Undying Comeback damage']
+							except:
+								pass
+							try:
+								if pInstanceDict.has_key('Undying Comeback last hit'):
+									del pInstanceDict['Undying Comeback last hit']
+							except:
+								pass
+							pInstanceDict['Undying Comeback state'] = -1
+						else:
+							pShip.SetDeathScript(None)
+							pInstanceDict['Undying Comeback state'] = 2
+					else:
 						pShip.SetDeathScript(None)
+						pShip.RunDeathScript()
 				else:
 					pShip.SetDeathScript(None)
 					pShip.RunDeathScript()
@@ -477,13 +557,13 @@ def TransformIntoUndyingPhaseI(pShip, pInstance, pInstanceDict, pHull):
 		pInstanceDict['Undying Comeback state'] = 0
 	if pInstanceDict['Undying Comeback state'] <= 0:
 		pInstanceDict['Undying Comeback state'] = 0.5
-
-		oldAI = pShip.GetAI()
 					
 		pPlayer	= MissionLib.GetPlayer()
 		if pShip.GetObjID() != pPlayer.GetObjID() and not MPIsPlayerShip(pShip):
-			OverrideAI(pShip, "AI.Player.Stay", pShip)
-
+			oldAI = pShip.GetAI()
+			if not pInstanceDict.has_key('Undying Comeback AI'):
+				pInstanceDict['Undying Comeback AI'] = oldAI
+				OverrideAI(pShip, "AI.Player.Stay", pShip)
 
 		pShipID = pInstance.pShipID
 		if not pShipID:
@@ -545,6 +625,18 @@ def TransformIntoUndyingPhaseIa(pAction, pShipID):
 					musicForUndying = defaultSound
 					if pInstanceDict['Undying Comeback'].has_key("Sound"):
 						musicForUndying = pInstanceDict['Undying Comeback']["Sound"]
+
+					if pInstanceDict['Undying Comeback'].has_key("Lifes"):
+						maxLifes = pInstanceDict['Undying Comeback']["Lifes"]
+						if pInstanceDict.has_key('Undying Comeback Lifes'):
+							lifesRemaining = pInstanceDict['Undying Comeback Lifes']
+							if lifesRemaining != maxLifes:
+								if pInstanceDict['Undying Comeback'].has_key("TimeToUndie2") and pInstanceDict['Undying Comeback']["TimeToUndie2"] >= 0.0:
+									timeForUndeath = pInstanceDict['Undying Comeback']["TimeToUndie2"]
+								if pInstanceDict['Undying Comeback'].has_key("AlternateLoadSound"):
+									musicForLoading = pInstanceDict['Undying Comeback']["AlternateLoadSound"]
+								if pInstanceDict['Undying Comeback'].has_key("AlternateSound"):
+									musicForUndying = pInstanceDict['Undying Comeback']["AlternateSound"]
 
 					pShipID = pInstance.pShipID
 					if not pShipID:
@@ -742,7 +834,7 @@ try:
 						if pInstanceDict.has_key('Undying Comeback damage'):
 							if not pInstanceDict.has_key('Undying Comeback state'):
 								pInstanceDict['Undying Comeback state'] = 0
-							#None or 0 = Pre-undying, 1 = transforming, 2 = post-undying
+							#None or 0 = Pre-undying, 1 = transforming, 2 = post-undying, -1 = alternate post-undying
 							if pInstanceDict['Undying Comeback state'] <= 0.5:
 								if absDamage > pInstanceDict['Undying Comeback damage']:
 									pInstanceDict['Undying Comeback damage'] = absDamage
@@ -811,6 +903,17 @@ try:
 					pShip.SetDeathScript(__name__ + ".newDeathSeq")
 
 					pInstanceDict = pInstance.__dict__
+
+
+					repetitions = 1.0
+					if pInstanceDict['Undying Comeback'].has_key("Lifes"):
+						repetitions = pInstanceDict['Undying Comeback']["Lifes"]
+					else:
+						pInstanceDict['Undying Comeback']["Lifes"] = repetitions
+
+					if not pInstanceDict.has_key('Undying Comeback Lifes'):
+						pInstanceDict['Undying Comeback Lifes'] = repetitions
+
 					factor = 1.0
 					if pInstanceDict['Undying Comeback'].has_key("Damage Factor"):
 						factor = pInstanceDict['Undying Comeback']["Damage Factor"]
@@ -873,6 +976,17 @@ try:
 				try:
 					if pInstanceDict.has_key('Undying Comeback state'):
 						del pInstanceDict['Undying Comeback state']
+				except:
+					pass
+
+				try:
+					if pInstanceDict.has_key('Undying Comeback Lifes'):
+						del pInstanceDict['Undying Comeback Lifes']
+				except:
+					pass
+
+				try:
+					del pInstanceDict['Undying Comeback AI']
 				except:
 					pass
 
