@@ -772,7 +772,7 @@ class SGOriBeamsWeaponDef(FoundationTech.TechDef):
 
 	def Attach(self, pInstance):
 		pInstance.lTorpDefense.append(self)
-		pInstance.lPulseDefense.insert(self)
+		pInstance.lPulseDefense.append(self)
 
 
 oSGOriBeamsWeaponImmunity = SGOriBeamsWeaponDef('SG Ori Beams Weapon Immune')

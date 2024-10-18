@@ -14,7 +14,7 @@
 # Apart from the obvious dependance on Foundation and FoundationTech, this script needs ftb.Tech.ATPFunctions (normally already present by default on KM) and Tactical.Projectiles.AutomaticSystemRepairDummy (from Automated Destroyed System Repair) to work fully. Also it is extremely recommended to have the Autoload file FIX-AblativeArmour1dot0.py since it fixes an issue with KM white-bar Ablative Armour.
 # In order to add this tech to your ship, add this to your scripts/Custom/Ships/ file, replacing "Ambassador" and "nameoftheshipfile" with the proper abbrev and desired value, respectively.
 # - "Damage Factor": how destructive the attack must be to trigger this second chance. It is a multiplier or fraction of the max hull health, so 0.5 means that any shot at half health will trigger it upon death.
-# - "Model": which vessel it will relaod into as a second chance. You can make it reload onto itself again by placing the scripts/ships/ filename between the ", or choose another ship file.
+# - "Model": which vessel's shape it will relaod into as a second chance. You can make it reload onto itself again by placing the scripts/ships/ filename between the ", or choose another ship file.
 # - "Boost": overall boost, multiplying how many times more powerful than the killing blast(s) the ship becomes. Default is 25.0x.
 # - "Energy Boost": how much energy boost after undying. Default is 25.0x.
 # - "Shield Boost": how much shield boost after undying. Default is 25.0x.
@@ -23,13 +23,14 @@
 # - "Sound": when the ship has finally entered undying phase, what sound would you like to play. Set to -1 to be none. Default is the one stated on the "defaultSound" global variable below.
 # - "TimeToUndie": the time, in seconds, between beginning to undie and finally reaching Undying phase. Default is 40.5 seconds.
 # - "Lifes": how many extra chances you have. -1 or any other value below that means infinite second chances. 0 and 1 are equivalent on this, only 1 second chance. Any value above that means 1 extra chance per stack (that is, 3 means the ship can undie 3 times). Default is 1.
-# -- Please note that the AI is overriden only once and it is for the first time it dies, meaning a second kill will probably still make the ship move.
+# -- Please note that the AI is overriden only once to be still and it is for the first time it dies, meaning a second kill will probably still leave the ship's AI more lively than normal.
+# - "Model": which vessel's shape it will relaod into as a third or more chances. Default is the same value as "Model".
 # - "AlternateLoadSound": variant load sound if the ship can undie more than once, sounding from the second death onwards. When not present, value defaults to "LoadSound".
 # - "AlternateSound": variant sound if the ship can undie more than once, sounding from the second death onwards. When not present, value defaults to "Sound".
 # - "TimeToUndie2": you may want the vessel to take more or less to undie after the first time. This value controls that time, in seconds. When not added or below 0.0, it defaults to "TimeToUndie".
 """
 Foundation.ShipDef.Ambassador.dTechs = {
-	"Undying Comeback": {"Damage Factor": 1.0, "Model": "nameoftheshipfile", "Boost": 25, "Energy Boost": 25.0, "Shield Boost": 25.0, "Weapon Boost": 25.0, "LoadSound": -1, "Sound": -1, "TimeToUndie": 39.5, "Lifes": 1, "AlternateLoadSound": -1, "AlternateSound": -1, "TimeToUndie2": 40.5},
+	"Undying Comeback": {"Damage Factor": 1.0, "Model": "nameoftheshipfile", "Boost": 25, "Energy Boost": 25.0, "Shield Boost": 25.0, "Weapon Boost": 25.0, "LoadSound": -1, "Sound": -1, "TimeToUndie": 39.5, "Lifes": 1, "AlternateModel": "nameoftheshipfile", "AlternateLoadSound": -1, "AlternateSound": -1, "TimeToUndie2": 40.5},
 }
 """
 # NOTES about the programming of this script: In a multithreaded or pseudo-multithreaded game we would really need to add Semaphores/Monitors and similar to these flag variables, but after contacting other senior modders I've been told several times that the game is both single-threaded and performs a function fully before switching to another so these extremely sloppy variables used as flags (that personally, I don't like at all) would do the trick nicely.
@@ -39,7 +40,7 @@ Foundation.ShipDef.Ambassador.dTechs = {
 #################################################################################################################
 #
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.1",
+	    "Version": "0.11",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -447,9 +448,24 @@ def TransformIntoUndyingPhaseII(pAction, pShipID, musicToPlay):
 						pShip.EndGetSubsystemMatch(pIterator)
 
 					# Now refresh the damage:
+					thishasLifes = pInstanceDict['Undying Comeback'].has_key("Lifes")
+					thishasLifesIndividual = pInstanceDict.has_key('Undying Comeback Lifes')
+					repetitions = None
+					lifesRemaining = None
+					differenceLifes = None
+
 					sNewShipScript = None
 					if pInstanceDict['Undying Comeback'].has_key('Model') and pInstanceDict['Undying Comeback']['Model'] != "" and pInstanceDict['Undying Comeback']['Model'] != "__init__":
-						sNewShipScript = pInstanceDict['Undying Comeback']['Model']
+						if thishasLifes and thishasLifesIndividual:
+							repetitions = pInstanceDict['Undying Comeback']["Lifes"]
+							lifesRemaining = pInstanceDict['Undying Comeback Lifes']
+							differenceLifes = (repetitions != lifesRemaining)
+							if differenceLifes and pInstanceDict['Undying Comeback'].has_key('AlternateModel') and pInstanceDict['Undying Comeback']['AlternateModel'] != "" and pInstanceDict['Undying Comeback']['AlternateModel'] != "__init__":
+								sNewShipScript = pInstanceDict['Undying Comeback']['AlternateModel']
+							else:
+								sNewShipScript = pInstanceDict['Undying Comeback']['Model']
+						else:
+							sNewShipScript = pInstanceDict['Undying Comeback']['Model']
 					else:
 						sNewShipScript = pShip.GetScript()
 
@@ -497,17 +513,20 @@ def TransformIntoUndyingPhaseII(pAction, pShipID, musicToPlay):
 							traceback.print_exc()
 
 						keepImmune = 1 
-						if pInstanceDict['Undying Comeback'].has_key("Lifes"):
-							repetitions = pInstanceDict['Undying Comeback']["Lifes"]
+						if thishasLifes:
+							if repetitions == None:
+								repetitions = pInstanceDict['Undying Comeback']["Lifes"]
 							if repetitions == -1:
 								keepImmune = 1
-								if pInstanceDict.has_key('Undying Comeback Lifes'):
-									lifesRemaining = pInstanceDict['Undying Comeback Lifes']
+								if thishasLifesIndividual:
+									if lifesRemaining == None:
+										lifesRemaining = pInstanceDict['Undying Comeback Lifes']
 									lifesRemaining = lifesRemaining -1
 									pInstanceDict['Undying Comeback Lifes'] = lifesRemaining
 							else:
-								if pInstanceDict.has_key('Undying Comeback Lifes'):
-									lifesRemaining = pInstanceDict['Undying Comeback Lifes']
+								if thishasLifesIndividual:
+									if lifesRemaining == None:
+										lifesRemaining = pInstanceDict['Undying Comeback Lifes']
 									#print "Lifes remaining = ", lifesRemaining
 									if lifesRemaining <= -1:
 										keepImmune = 1

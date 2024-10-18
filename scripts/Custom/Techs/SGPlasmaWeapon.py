@@ -180,7 +180,7 @@ import nt
 import string
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-            "Version": "0.95",
+            "Version": "0.96",
             "License": "LGPL",
             "Description": "Read the small title above for more info"
             }
@@ -686,7 +686,7 @@ class SGPlasmaWeaponDef(FoundationTech.TechDef):
 
 	def Attach(self, pInstance):
 		pInstance.lTorpDefense.append(self)
-		pInstance.lPulseDefense.insert(self)
+		pInstance.lPulseDefense.append(self)
 
 
 oSGPlasmaWeaponImmunity = SGPlasmaWeaponDef('SG Plasma Weapon Immune')

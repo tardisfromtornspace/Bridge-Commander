@@ -120,7 +120,7 @@ import nt
 import string
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-            "Version": "0.94",
+            "Version": "0.95",
             "License": "LGPL",
             "Description": "Read the small title above for more info"
             }
@@ -772,7 +772,7 @@ class SGAsgardBeamsWeaponDef(FoundationTech.TechDef):
 
 	def Attach(self, pInstance):
 		pInstance.lTorpDefense.append(self)
-		pInstance.lPulseDefense.insert(self)
+		pInstance.lPulseDefense.append(self)
 
 
 oSGAsgardBeamsWeaponImmunity = SGAsgardBeamsWeaponDef('SG Asgard Beams Weapon Immune')

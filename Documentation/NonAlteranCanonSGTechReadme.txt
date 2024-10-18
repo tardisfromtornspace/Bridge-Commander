@@ -1,4 +1,6 @@
 == Changelog ==
+1.1.0 - bug fixes:
+   * Updated SGAsgardBeamWeapon, SGOriBeamWeapon, SGIonWeapon and SGPlasmaWeapon to fix a conflict issue with AdvArmorTechThree that was causing ships with their immunities to lose energy armour.
 1.0.9 - bug fixes:
    * Updated FIX-AblativeArmour1dot0.py to correct typo in 0.2.
 1.0.8 - bug fixes:
