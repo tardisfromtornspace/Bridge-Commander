@@ -1,4 +1,5 @@
 == Changelog ==
+0.31 - Nerfed AndromedaTalyn's Gravitic Lance damage, both to make it more balanced and to avoid possible infinite-escalation loops.
 0.3 - Upgraded UndyingComeback tech to 0.1, fixing a few bugs.
 0.2 - Added UndyingComeback tech, plus indicating now that it is very recommended to have the "FIX-AblativeArmour1dot0.py" 0.2 version from 16th October 2024 or later.
 0.1 - first unofficial showcase of this mod, for feedback
