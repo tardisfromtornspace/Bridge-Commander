@@ -1,4 +1,8 @@
 == Changelog ==
+1.1.9 - Bug fixing:
+   * Updated Gravitic Lance to 1.3 to correct a small issue with a sequence.
+1.1.8 - Bug fixing:
+   * Updated Gravitic Lance to 1.2 to correct small issue with a sequence.
 1.1.7 - Bug fixing:
    * Updated FIX-AblativeArmour1dot0.py to correct typo in 0.2.
 1.1.6 - Bug fixing:

@@ -1,7 +1,7 @@
 #################################################################################################################
 #         GraviticLance by Alex SL Gato
-#         Version 1.1
-#         28th July 2023
+#         Version 1.3
+#         19th October 2024
 #         Based on FiveSecsGodPhaser by USS Frontier, scripts/ftb/Tech/TachyonProjectile by the FoundationTechnologies team, and scripts/ftb/Tech/FedAblativeArmour by the FoundationTechnologies team
 #                          
 #################################################################################################################
@@ -25,7 +25,15 @@ Foundation.ShipDef.Sovereign.dTechs = {
 def IsGraviticLanceImmune():
 	return 1
 """
-#######################################################################
+#################################################################################################################
+#
+MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
+	    "Version": "1.3",
+	    "License": "LGPL",
+	    "Description": "Read the small title above for more info"
+	    }
+#
+#################################################################################################################
 import App
 import FoundationTech
 from ftb.Tech.ATPFunctions import *
@@ -323,7 +331,6 @@ class GraviticLance(FoundationTech.TechDef):
 		if not pInstance.__dict__['GraviticLance']["TimeEffect"] or pInstance.__dict__['GraviticLance']["TimeEffect"] <= 0.0:
 			pInstance.__dict__['GraviticLance']["TimeEffect"] = 5.0 # seconds
 		iTime = pInstance.__dict__['GraviticLance']["TimeEffect"]
-
 		while(iTime >= 0):
 			pAction	= App.TGScriptAction_Create(__name__, "Update", self, pShip.GetObjID(), iPower)
 			pSeq.AppendAction(pAction, 0.1)
