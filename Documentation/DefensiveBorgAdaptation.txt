@@ -1,4 +1,6 @@
 == Changelog ==
+1.9.6 - Automated Destroyed System Repair 0.54
+- Fixing an issue with a missing subsystem on outlier cases.
 1.9.5 - Automated Destroyed System Repair 0.53
 - Fixing an issue with a missing timer checkup on very outlier cases.
 1.9.4 - Borg Adaptation script 1.34

@@ -1,4 +1,7 @@
 ==Changelog==
+1.2.7 -
+   Bug Fixes:
+   * Updated Automated Destroyed System Repair from 0.53 to 0.54, fixing an issue with a missing subsystem on outlier cases.
 1.2.6 -
    Bug Fixes:
    * Updated Automated Destroyed System Repair from 0.52 to 0.53, fixing an issue with a missing timer checkup on very outlier cases.

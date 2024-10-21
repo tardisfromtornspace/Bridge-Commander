@@ -1,7 +1,6 @@
 #################################################################################################################
 #         TachyonBeam by Alex SL Gato
-#         Version 1.1.5
-#         20th July 2023
+#         21st October 2024
 #         Based on FiveSecsGodPhaser by USS Frontier, scripts/ftb/Tech/TachyonProjectile by the FoundationTechnologies team, and scripts/ftb/Tech/FedAblativeArmour by the FoundationTechnologies team
 #                          
 #################################################################################################################
@@ -24,7 +23,15 @@ Foundation.ShipDef.Sovereign.dTechs = {
 def IsTachyonImmune():
 	return 1
 """
-#######################################################################
+#################################################################################################################
+#
+MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
+	    "Version": "1.2",
+	    "License": "LGPL",
+	    "Description": "Read the small title above for more info"
+	    }
+#
+#################################################################################################################
 import App
 import FoundationTech
 from ftb.Tech.ATPFunctions import *
@@ -300,7 +307,7 @@ class TachyonBeam(FoundationTech.TechDef):
 			pEvent.SetDestination(pMission)
 			pEvent.SetString(pShip.GetName()+">|<"+sTargetName)
 			pTimer = App.TGTimer_Create()
-			if not pInstance.__dict__['TachyonBeam']["Time"] or pInstance.__dict__['TachyonBeam']["Time"] <= 0.0:
+			if not pInstance.__dict__['TachyonBeam'].has_key("Time") or pInstance.__dict__['TachyonBeam']["Time"] <= 0.0:
 				pInstance.__dict__['TachyonBeam']["Time"] = 5.0
 			pTimer.SetTimerStart( App.g_kUtopiaModule.GetGameTime()+pInstance.__dict__['TachyonBeam']["Time"] )
 			pTimer.SetDelay(0)

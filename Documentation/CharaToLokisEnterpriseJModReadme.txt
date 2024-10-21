@@ -1,4 +1,6 @@
 == Changelog ==
+1.2.0 - Bug fixing:
+   * Updated Gravitic Lance to 1.4 to correct a small issue with a timer.
 1.1.9 - Bug fixing:
    * Updated Gravitic Lance to 1.3 to correct a small issue with a sequence.
 1.1.8 - Bug fixing:

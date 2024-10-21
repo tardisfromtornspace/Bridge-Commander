@@ -1,6 +1,6 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
-# 16th March 2024, by Alex SL Gato (CharaToLoki), partially based on the Shield.py script by the Foundation Technologies team and Dasher42's Foundation script, and the FedAblativeArmor.py found in scripts/ftb/Tech in KM 2011.10
+# 21st October 2024, by Alex SL Gato (CharaToLoki), partially based on the Shield.py script by the Foundation Technologies team and Dasher42's Foundation script, and the FedAblativeArmor.py found in scripts/ftb/Tech in KM 2011.10
 # Also based on Conditions.ConditionSystemBelow, probably from the original STBC Team and Activision
 # TODO: 1. Create Read Me
 #	2. Create a clear guide on how to add this...
@@ -22,7 +22,7 @@ Foundation.ShipDef.LowCube.dTechs = {
 """
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.52",
+	    "Version": "0.54",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -143,6 +143,13 @@ class AutomatedDestroyedSystemRepairDef(FoundationTech.TechDef):
 	def Test(self, pFloatEvent):
 		fFraction = pFloatEvent.GetFloat()
 		pSubsystem = App.ShipSubsystem_Cast(pFloatEvent.GetSource())
+		if not pSubsystem:
+			try:
+				self.pEventHandler.CallNextHandler(pFloatEvent)
+			except:
+				pass
+			return 0
+
 		pShip = pSubsystem.GetParentShip()
 		if pShip:
 			pInstance = findShipInstance(pShip)
@@ -222,10 +229,10 @@ class AutomatedDestroyedSystemRepairDef(FoundationTech.TechDef):
 
 	def UnDestroySystemDelay(self, pEvent):
 		pSubsystemToRepair = App.ShipSubsystem_Cast(pEvent.GetSource())
-
-		pShip = pSubsystemToRepair.GetParentShip()
-		if pShip:
-			self.UnDestroySystemDelay2(pShip, pEvent)
+		if pSubsystemToRepair:
+			pShip = pSubsystemToRepair.GetParentShip()
+			if pShip:
+				self.UnDestroySystemDelay2(pShip, pEvent)
 		return 0
 
 	def UnDestroySystemDelay2(self, pObject, pEvent):
@@ -282,16 +289,19 @@ class AutomatedDestroyedSystemRepairDef(FoundationTech.TechDef):
 	def UnDestroySystem(self, pEvent):
 
 		pSubsystemToRepair = App.ShipSubsystem_Cast(pEvent.GetSource())
-		pShip = pSubsystemToRepair.GetParentShip()
-		if pShip:
-			pInstance = findShipInstance(pShip)
-			if pInstance and pInstance.__dict__.has_key("Automated Destroyed System Repair"):
-				UnDestroySystem(pShip, pEvent)
+		if pSubsystemToRepair:
+			pShip = pSubsystemToRepair.GetParentShip()
+			if pShip:
+				pInstance = findShipInstance(pShip)
+				if pInstance and pInstance.__dict__.has_key("Automated Destroyed System Repair"):
+					UnDestroySystem(pShip, pEvent)
 
-
-		thisEventType = pEvent.GetEventType()
-		#pShip.RemoveHandlerForInstance(thisEventType, __name__ + ".unDestroySystem")
-		App.g_kEventManager.RemoveBroadcastHandler(thisEventType, self.pEventHandler, "UnDestroySystem")
+		try:
+			thisEventType = pEvent.GetEventType()
+			#pShip.RemoveHandlerForInstance(thisEventType, __name__ + ".unDestroySystem")
+			App.g_kEventManager.RemoveBroadcastHandler(thisEventType, self.pEventHandler, "UnDestroySystem")
+		except:
+			pass
 
 		return 0
 

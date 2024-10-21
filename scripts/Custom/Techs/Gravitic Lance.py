@@ -28,7 +28,7 @@ def IsGraviticLanceImmune():
 #################################################################################################################
 #
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "1.3",
+	    "Version": "1.4",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -198,7 +198,7 @@ class GraviticLance(FoundationTech.TechDef):
 			pEvent.SetDestination(pMission)
 			pEvent.SetString(pShip.GetName()+">|<"+sTargetName)
 			pTimer = App.TGTimer_Create()
-			if not pInstance.__dict__['GraviticLance']["Time"] or pInstance.__dict__['GraviticLance']["Time"] <= 0.0:
+			if not pInstance.__dict__['GraviticLance'].has_key("Time") or pInstance.__dict__['GraviticLance']["Time"] <= 0.0:
 				pInstance.__dict__['GraviticLance']["Time"] = 0.25
 			pTimer.SetTimerStart( App.g_kUtopiaModule.GetGameTime()+pInstance.__dict__['GraviticLance']["Time"] )
 			pTimer.SetDelay(0)
