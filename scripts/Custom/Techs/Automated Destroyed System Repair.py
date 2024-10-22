@@ -22,7 +22,7 @@ Foundation.ShipDef.LowCube.dTechs = {
 """
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.54",
+	    "Version": "0.55",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -171,8 +171,8 @@ class AutomatedDestroyedSystemRepairDef(FoundationTech.TechDef):
 
 				if totalComply == 1:
 					notfast = 1
-					if pInstance.__dict__["Automated Destroyed System Repair I"].has_key("DoNotInterfere"):
-						notfast = pInstance.__dict__["Automated Destroyed System Repair I"]["DoNotInterfere"]
+					if pInstance.__dict__["Automated Destroyed System Repair"].has_key("DoNotInterfere"):
+						notfast = pInstance.__dict__["Automated Destroyed System Repair"]["DoNotInterfere"]
 					RefreshVisibleDamage(pShip, notfast)
 
 			#else:

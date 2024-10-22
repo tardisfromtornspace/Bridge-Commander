@@ -1,4 +1,7 @@
 ==Changelog==
+1.2.8 -
+   Bug Fixes:
+   * Updated Automated Destroyed System Repair from 0.54 to 0.55, fixing a typo with DoNotInterfere configuration.
 1.2.7 -
    Bug Fixes:
    * Updated Automated Destroyed System Repair from 0.53 to 0.54, fixing an issue with a missing subsystem on outlier cases.
