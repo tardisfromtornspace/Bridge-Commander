@@ -45,7 +45,7 @@ def GetLifetime():
         return 1500
 
 def GetLaunchSpeed():
-	return(500)
+	return(50)
 
 def GetLaunchSound():
 	return("")
@@ -54,7 +54,7 @@ def GetPowerCost():
         return (10.0)
 
 def GetName():
-	return("")
+	return("Thirdspace Telepathic Control")
 
 def GetDamage():
 	return 0.00001
@@ -174,19 +174,18 @@ def SwapTeam(pAction, pShip, pGroup):
         pGroup.AddName(pShip.GetName())
         return 0
 
-sYieldName = ''
+import traceback
 try:
     import FoundationTech
     import ftb.Tech.TimedTorpedoes
     oFire = ftb.Tech.TimedTorpedoes.MIRVMultiTargetTorpedo(
         'MIRVMultiTargetTorpedo', {
         'spreadNumber': 3,
-        'spreadDensity': 6.5,
+        'spreadDensity': 358.0,
         'warheadModule': "Tactical.Projectiles.B5ThirdspaceTeleAttack",
         'shellLive': 0,
     })
     FoundationTech.dOnFires[__name__] = oFire
-    oYield = FoundationTech.oTechs[sYieldName]
-    FoundationTech.dYields[__name__] = oYield
 except:
-    pass
+    print "Something went wrong with TimedTorpedoes"
+    traceback.print_exc()

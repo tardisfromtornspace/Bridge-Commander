@@ -54,7 +54,7 @@ def GetPowerCost():
         return (10.0)
 
 def GetName():
-	return("")
+	return("Thirdspace Telepathic Control")
 
 def GetDamage():
 	return 0.00001

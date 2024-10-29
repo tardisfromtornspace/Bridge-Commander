@@ -1,4 +1,8 @@
 ==Changelog==
+1.2.9 -
+   Fixes:
+   * Updated Thirdspace Capital Ship to have multi-targeting and a faster-recharge Lightbringer.
+   * Updated B5ThirdspaceTeleAttack projectiles to indicate name and make the multi-attack more effective.
 1.2.8 -
    Bug Fixes:
    * Updated Automated Destroyed System Repair from 0.54 to 0.55, fixing a typo with DoNotInterfere configuration.
