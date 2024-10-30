@@ -87,6 +87,7 @@ def CheckAi(pObject, pEvent):
 	global pMvamShips, snkMvamModules, intShipSepTally, intTimerRunning
 
 	#grab the player and the set the player is in. make sure all these items still exist
+	pSet = None
 	try:
 		pGame = App.Game_GetCurrentGame()
 		pPlayer = pGame.GetPlayer()
