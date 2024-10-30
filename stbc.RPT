@@ -5243,3 +5243,27 @@ Address   Frame
 //=====================================================
 Current Time: Wed Oct 30 14:25:27 2024
 Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Wed Oct 30 18:45:01 2024
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  88001B00 00:00000000 
+
+Registers:
+EAX:0EC89A54
+EBX:3D000000
+ECX:11589600
+EDX:3D1CDEA8
+ESI:11C00230
+EDI:3CEDC7FC
+CS:EIP:0023:88001B00
+SS:ESP:002B:0019FC04  EBP:00000007
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010206
+
+Application Timestamp: Thu Jan 01 01:00:00 1970
+Doing stack walk
+
+Call stack:
+Address   Frame
+88001B00  0019FC00  0000:00000000  (No symbol info found)
+

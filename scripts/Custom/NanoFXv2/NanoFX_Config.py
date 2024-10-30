@@ -4,7 +4,7 @@ FALSE = 0
 bFX_Enabled = 1
 ###
 bFX_ExpSparkFXLevel = 4
-bFX_DamageSparkFXLevel = 1
+bFX_DamageSparkFXLevel = 3
 bFX_DamageSparkFXDuration = 60.0
 bFX_ParticleControl = 20
 ###
@@ -39,5 +39,5 @@ sFX_PlasmaFX = "On"
 ###[WarpFX Settings]###
 wFX_Enabled = 1
 ###
-wFX_MaxRandomDistance = 30
+wFX_MaxRandomDistance = 20
 ###

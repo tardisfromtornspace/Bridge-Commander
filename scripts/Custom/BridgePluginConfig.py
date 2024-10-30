@@ -2,8 +2,10 @@
 # Edit on own accord!
 
 config = {
-"""Disable WalkFX Sitdown Manager""": 0,
 """Debug Mode""": 1,
-"""Disable Extra Models""": 0,
+"""Space Muted2""": 0,
 """Disable Animated Maps""": 0,
+"""Hull Impact""": 0,
+"""Disable Extra Models""": 0,
+"""Disable WalkFX Sitdown Manager""": 0,
 }

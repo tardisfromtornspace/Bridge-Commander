@@ -10,11 +10,11 @@ class LoggerConfig:
 	LogTWS = 0
 	LogRDF = 0
 class Starstreaks:
-	MaxPulseUpdate = 4.0095705986
-	StreaksPerPulse = 45.597202301
-	StreakDuration = 13.0
-	ForwardProject = 50.0
-	SizeMultiplier = 2.6419365406
+	MaxPulseUpdate = 1.69486713409
+	StreaksPerPulse = 63.3053016663
+	StreakDuration = 14.4568691254
+	ForwardProject = 83.4993438721
+	SizeMultiplier = 1.71271824837
 class RandomDefenceForce:
 	UseRDF = 1
 	AffectAI = 1
@@ -25,14 +25,14 @@ class RandomDefenceForce:
 	CloakCounts = 1
 	UseDefence = 1
 	MinNumShips = 2.0
-	MaxNumShips = 4.0
-	MinReinShips = 2.0
-	MaxReinShips = 4.0
-	NumOfReins = 3.0
-	MinTimeToEnter = 10.0
-	MaxTimeToEnter = 30.0
-	MinTimeToRein = 20.0
-	MaxTimeToRein = 40.0
+	MaxNumShips = 10.0
+	MinReinShips = 3.7999997139
+	MaxReinShips = 10.0
+	NumOfReins = 4.19999980927
+	MinTimeToEnter = 5.86577415466
+	MaxTimeToEnter = 32.5
+	MinTimeToRein = 17.0
+	MaxTimeToRein = 57.0
 	IncludeGodShips = 1
 	IncludeEscorts = 1
 class WarSimulator:
