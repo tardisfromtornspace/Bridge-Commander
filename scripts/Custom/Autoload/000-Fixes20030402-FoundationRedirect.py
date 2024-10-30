@@ -1,4 +1,3 @@
-from bcdebug import debug
 # Foundation Triggers Extension 20030305 for Bridge Commander
 # Written March 5, 2003 by Daniel B. Rollings AKA Dasher42, all rights reserved.
 
@@ -9,8 +8,8 @@ import Actions.EffectScriptActions ### Tisk tisk Dash, STOP Forgetting to import
 import App
 import MissionLib
 
-#Foundation.TriggerDef.ET_FND_CREATE_SHIP = App.UtopiaModule_GetNextEventType()
-#Foundation.TriggerDef.ET_FND_CREATE_PLAYER_SHIP = App.UtopiaModule_GetNextEventType()
+Foundation.TriggerDef.ET_FND_CREATE_SHIP = App.UtopiaModule_GetNextEventType()
+Foundation.TriggerDef.ET_FND_CREATE_PLAYER_SHIP = App.UtopiaModule_GetNextEventType()
 bInitialized = 0
 
 if int(Foundation.version[0:8]) < 20030402:
@@ -20,15 +19,9 @@ if int(Foundation.version[0:8]) < 20030402:
 
 	def PreloadShip(sModelName, iNumToLoad = 0):
 		# Mark the model for preloading.
-                
-		debug(__name__ + ", PreloadShip")
 		pMod = Foundation.FolderManager('ship', sModelName)
 		# pMod = __import__("ships.%s" % sModelName)
-                try:
-		        pMod.PreLoadModel()
-                except:
-                        print("MISSING SHIP:", sModelName)
-			return
+		pMod.PreLoadModel()
 
 		# Before the mission is initialized, we'll want to create a
 		# bunch of these ships.
@@ -43,12 +36,9 @@ if int(Foundation.version[0:8]) < 20030402:
 
 
 	def AdjustShipForDifficulty(pShip, pcHardpointFile):
-		debug(__name__ + ", AdjustShipForDifficulty")
 		if (pShip == None):
 			return
 		if (pcHardpointFile == None):
-			return
-		elif ord(pcHardpointFile[0]) == 1:
 			return
 
 		fOFactor = App.Game_GetOffensiveDifficultyMultiplier()
@@ -67,7 +57,7 @@ if int(Foundation.version[0:8]) < 20030402:
 	#		debug("Tried to load hardpoint file ships.Hardpoints." + pcHardpointFile + " and failed miserably")
 		# 	return
 
-		reload(mod)
+		reload (mod)
 		mod.LoadPropertySet(pNewSet)
 
 		# Modify all subsystem strengths.
@@ -95,7 +85,6 @@ if int(Foundation.version[0:8]) < 20030402:
 
 
 	def CreateShip(pcScript, pSet, pcIdentifier, pcLocationName, iWarpFlash = 0, bGrabPreloaded = 1, shipDef = None):
-		debug(__name__ + ", CreateShip")
 		import App
 		# Creates a new ship
 
@@ -114,12 +103,7 @@ if int(Foundation.version[0:8]) < 20030402:
 
 			pModule = Foundation.FolderManager('ship', pcScript)
 
-                        try:
-			        pModule.LoadModel ()
-                        except:
-                                print("MISSING SHIP:", pcScript)
-                                debug("MISSING SHIP: %s" % pcScript)
-				return
+			pModule.LoadModel ()
 			kStats = pModule.GetShipStats ()
 
 			pShip = App.ShipClass_Create( kStats['Name'] )
@@ -139,8 +123,6 @@ if int(Foundation.version[0:8]) < 20030402:
 			# Load hardpoints.
 			mod = Foundation.FolderManager('hp', kStats['HardpointFile'])
 			App.g_kModelPropertyManager.ClearLocalTemplates()
-			if mod is None:
-				return
 			reload(mod)
 			mod.LoadPropertySet(pPropertySet)
 
@@ -212,7 +194,6 @@ if int(Foundation.version[0:8]) < 20030402:
 
 
 	def CreatePlayerShip(sShipClass, pSet, pcName, sWaypoint, bUnloadShip = 0):
-		debug(__name__ + ", CreatePlayerShip")
 		import App
 		import loadspacehelper
 		pGame = App.Game_GetCurrentGame()
@@ -311,7 +292,6 @@ if int(Foundation.version[0:8]) < 20030402:
 
 	class RedirectMutatorDef(Foundation.MutatorDef):
 		def __init__(self, name = None):
-			debug(__name__ + ", RedirectMutatorDef.__init__")
 			Foundation.MutatorDef.__init__(self, name)
 
 			self.bInitialized = 0
@@ -321,7 +301,6 @@ if int(Foundation.version[0:8]) < 20030402:
 			}
 
 		def __call__(self, type, key):
-			debug(__name__ + ", RedirectMutatorDef.__call__")
 			if self.folders.has_key(type):
 				for i in self.folders[type]:
 					try:
@@ -329,33 +308,25 @@ if int(Foundation.version[0:8]) < 20030402:
 						mod = __import__(i + key)
 						# print mod
 						if mod is not None:
-							debug(__name__ + ", RedirectMutatorDef.__call__ %s return" % (i + key))
 							return mod
 					except ImportError:
 						pass
-					except NameError:
-						print "Bad ship (Name)", i+key
 
-			print "Bad ship", type, key
-			debug(__name__ + ", RedirectMutatorDef.__call__ Done")
 			return None
 
 		def Add(self, type, folder):
-			debug(__name__ + ", RedirectMutatorDef.Add")
 			if self.folders.has_key(type):
 				self.folders[type].insert(0, folder)
 			else:
 				self.folders[type] = [ folder ]
 
 		def Remove(self, type, folder):
-			debug(__name__ + ", RedirectMutatorDef.Remove")
 			try:
 				self.folders[type].remove(folder)
 			except:
 				pass
 
 		def Initialize(self):
-			debug(__name__ + ", RedirectMutatorDef.Initialize")
 			if not bInitialized:
 				import loadspacehelper
 				loadspacehelper.lCreateShipExtras = []
@@ -375,23 +346,16 @@ if int(Foundation.version[0:8]) < 20030402:
 	class FolderDef(Foundation.OverrideDef):
 
 		def __init__(self, type, folder, dict = {}):
-			debug(__name__ + ", FolderDef.__init__")
 			Foundation.OverrideDef.__init__(self, type + folder + 'Folder', None, None, dict)
 			self.type = type
 			self.folder = folder
 
 		def Activate(self):
-			debug(__name__ + ", Activate")
-			pGame = App.Game_GetCurrentGame()
-			# don't start in SP
-			if not pGame or pGame.GetScript() == "Maelstrom.Maelstrom":
-				return
 			f = Foundation.FolderManager
 			f.Initialize()
 			f.Add(self.type, self.folder)
 
 		def Deactivate(self):
-			debug(__name__ + ", Deactivate")
 			Foundation.FolderManager.Remove(self.type, self.folder)
 
 
