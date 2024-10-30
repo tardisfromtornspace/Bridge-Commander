@@ -56,7 +56,15 @@ def NanoViewScreenZoom(pCamera):
 ## Fixes the warp camera
 ###############################################################################
 def NanoFixWarpCam(pAction, sSetName, sCameraName):
-	pSet = App.g_kSetManager.GetSet(sSetName)
+	try:
+		pSet = App.g_kSetManager.GetSet(sSetName)
+	except:
+		try:
+			import App
+			pSet = App.g_kSetManager.GetSet(sSetName)
+		except:
+			pSet == None
+		
 
 	if pSet == None:
 		return 0

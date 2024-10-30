@@ -1,12 +1,11 @@
 # Foundation Triggers Extension 20030305 for Bridge Commander
 # Written March 5, 2003 by Daniel B. Rollings AKA Dasher42, all rights reserved.
 
-
+import App
+import MissionLib
 import Foundation
 import Actions.EffectScriptActions ### Tisk tisk Dash, STOP Forgetting to import modules :P ###
 								   # Baby why you gotta make me hitchoo?! ;)  -Dash
-import App
-import MissionLib
 
 Foundation.TriggerDef.ET_FND_CREATE_SHIP = App.UtopiaModule_GetNextEventType()
 Foundation.TriggerDef.ET_FND_CREATE_PLAYER_SHIP = App.UtopiaModule_GetNextEventType()
@@ -15,12 +14,21 @@ bInitialized = 0
 if int(Foundation.version[0:8]) < 20030402:
 	print 'Outdated Foundation, installing FolderManager'
 
-
-
 	def PreloadShip(sModelName, iNumToLoad = 0):
 		# Mark the model for preloading.
 		pMod = Foundation.FolderManager('ship', sModelName)
 		# pMod = __import__("ships.%s" % sModelName)
+                try:
+			if pMod:
+		        	pMod.PreLoadModel()
+			else:
+				if sModelName == None:
+					sModelName == "whose sModelName was None"
+				print("MISSING SHIP:", sModelName)
+				return
+                except:
+                        print("MISSING SHIP:", sModelName)
+			return
 		pMod.PreLoadModel()
 
 		# Before the mission is initialized, we'll want to create a
@@ -103,7 +111,12 @@ if int(Foundation.version[0:8]) < 20030402:
 
 			pModule = Foundation.FolderManager('ship', pcScript)
 
-			pModule.LoadModel ()
+			try:
+				pModule.LoadModel ()
+			except:
+				print("MISSING SHIP:", pcScript)
+				debug("MISSING SHIP: %s" % pcScript)
+				return pShip # None
 			kStats = pModule.GetShipStats ()
 
 			pShip = App.ShipClass_Create( kStats['Name'] )
@@ -123,6 +136,8 @@ if int(Foundation.version[0:8]) < 20030402:
 			# Load hardpoints.
 			mod = Foundation.FolderManager('hp', kStats['HardpointFile'])
 			App.g_kModelPropertyManager.ClearLocalTemplates()
+			if mod is None:
+				return None
 			reload(mod)
 			mod.LoadPropertySet(pPropertySet)
 
@@ -248,16 +263,16 @@ if int(Foundation.version[0:8]) < 20030402:
 				pGame.SetPlayer(pPlayer)
 				#
 				# If a federation ship, give it a default NCC
-				if (sShipClass == "Sovereign"):
-					pPlayer.ReplaceTexture("Data/Models/Ships/Sovereign/Sovereign_glow.tga", "ID")
-				elif (sShipClass == "Galaxy"):
-					pPlayer.ReplaceTexture("Data/Models/SharedTextures/FedShips/Dauntless_glow.tga", "ID")
-				elif (sShipClass == "Nebula"):
-					pPlayer.ReplaceTexture("Data/Models/SharedTextures/FedShips/Berkeley_glow.tga", "ID")
-				elif (sShipClass == "Akira"):
-					pPlayer.ReplaceTexture("Data/Models/Ships/Akira/Geronimo_glow.tga", "ID")
-				elif (sShipClass == "Ambassador"):
-					pPlayer.ReplaceTexture("Data/Models/Ships/Ambassador/Zhukov_glow.tga", "ID")
+				if (sShipClass == "Sovereign") or (sShipClass == "sovereign"):
+					pPlayer.ReplaceTexture("Data/Models/Ships/Sovereign/SovereignID_Glow.tga", "ID")
+				elif (sShipClass == "Galaxy") or (sShipClass == "galaxy"):
+					pPlayer.ReplaceTexture("Data/Models/SharedTextures/FedShips/Dauntless.tga", "ID")
+				elif (sShipClass == "Nebula") or (sShipClass == "nebula"):
+					pPlayer.ReplaceTexture("Data/Models/SharedTextures/FedShips/Berkeley.tga", "ID")
+				elif (sShipClass == "Akira") or (sShipClass == "akira"):
+					pPlayer.ReplaceTexture("Data/Models/Ships/Akira/Geronimo.tga", "ID")
+				elif (sShipClass == "Ambassador") or (sShipClass == "ambassador"):
+					pPlayer.ReplaceTexture("Data/Models/Ships/Ambassador/Zhukov.tga", "ID")
 
 				# Set the variable for the player's hardpoint file, so we can use
 				# it later if the difficulty level is changed.
@@ -311,6 +326,8 @@ if int(Foundation.version[0:8]) < 20030402:
 							return mod
 					except ImportError:
 						pass
+					except NameError:
+						print "Bad ship (Name)", i+key
 
 			return None
 

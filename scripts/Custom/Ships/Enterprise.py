@@ -31,3 +31,10 @@ if playerMenuGroup:     Foundation.ShipDef.Enterprise.RegisterQBPlayerShipMenu(p
 if Foundation.shipList._keyList.has_key(longName):
       Foundation.ShipDef.__dict__[longName].friendlyDetails[2] = Foundation.shipList[longName].friendlyDetails[2]
       Foundation.ShipDef.__dict__[longName].enemyDetails[2] = Foundation.shipList[longName].enemyDetails[2]
+
+
+def USSEnterpriseEIDSwap(self):
+       retval = {"Textures": [["Ent-E-dishtopbottomID_glow.tga", "Data/Models/Ships/Sovereign/Enterprise.tga"]]}
+       return retval
+
+Foundation.ShipDef.Enterprise.__dict__['SDT Entry'] = USSEnterpriseEIDSwap

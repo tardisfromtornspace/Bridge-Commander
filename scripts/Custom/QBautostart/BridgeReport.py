@@ -33,7 +33,7 @@ def SaySomething(pCharacter):
 
 
 def NothingToAdd(pObject, pEvent):
-	debug(__name__ + ", NothingToAdd")
+	debug(str(__name__) + ", NothingToAdd")
 	# First, see if we should work with the thing that sent the event
 	pCharacter = App.CharacterClass_Cast(pObject)
 	if not (pCharacter):
@@ -93,9 +93,10 @@ class SayTimer:
 		iLowestTime = 60
 		for sName in dNameToType.values():
 			pCharacter = App.CharacterClass_GetObject(pBridge, sName)
-			iLast = App.g_kUtopiaModule.GetGameTime() - pCharacter.GetLastTalkTime()
-			if iLast < iLowestTime:
-				iLowestTime = iLast
+			if pCharacter:
+				iLast = App.g_kUtopiaModule.GetGameTime() - pCharacter.GetLastTalkTime()
+				if iLast < iLowestTime:
+					iLowestTime = iLast
 		if iLowestTime > 30: # after > 30 seconds ago
 			# Time to talk again
 			l = dNameToType.values()
