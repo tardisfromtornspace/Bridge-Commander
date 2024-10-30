@@ -82,7 +82,8 @@ This mod attempts to fix some Stargate pack balance inconsistencies by adding ap
 All of these must be installed before installing this mod, in this order:
 * Foundation + Kobayashi Maru (KM has Foundation already installed - the most recent, the better, preferably 2011.10 or latter)
 * Stargate pack 3.0 or 4.0 https://www.gamefront.com/games/bridge-commander/file/stargate-ship-pack-dave975-and-dkealt
-** If you want to install the Stargate multiplayer patch (for 3.0, https://www.gamefront.com/games/bridge-commander/file/sg-pack-3-0-multiplayer-patch, install the KM version of it, not the other), do it immediately after installing this one
+** If you want to install the Stargate multiplayer patch (for 3.0, https://www.gamefront.com/games/bridge-commander/file/sg-pack-3-0-multiplayer-patch, install the KM version of it, not the other), do it immediately after installing this one.
+** IMPORTANT NOTE: BEFORE YOU INSTALL ANY OF THE FOLLOWING MODS, MAKE SURE YOU HAVE A PROPER BACKUP OF THE CORRECT 000-Utilities-GetFileNames-20030402.py and 000-Fixes20030402-FoundationRedirect.py from Kobayashi Maru 2011.10 (located on scripts/Custom/Autoload folder) since for some reason the people who released it added a faulty/incomplete version of them. If you already have the proper versions, once you have finished installing the last of the mods mentioned here, you just need to overwrite the faulty files with the correct KM 2011.10 version, or with alternate fix-ups I have (contact me for those fix-ups, since only a few installs, including mine, required those to have a non-buggy SP Campaign and QB).
 * Ancient City mod https://www.gamefront.com/games/bridge-commander/file/ancient-city-atlantis-pack-0-9
 * Wraith Cruiser https://www.gamefront.com/games/bridge-commander/file/wraith-cruiser-1-1
 * Wraith Hive https://www.gamefront.com/games/bridge-commander/file/wraith-hive-ship, then https://www.gamefront.com/games/bridge-commander/file/wraith-hive-ship-mvam-darts
@@ -105,6 +106,7 @@ Also please note that if you download the multiplayer patch AFTER installing thi
 * Everyone involved in Foundation - without you this would have been a real pain to do (please read the separate Foundation.txt license) - Banbury, Dasher42, DigitalFriend, MLeo, Nanobyte and Sleight42, among others
 * Everyone involved in KM - specifically those involved in the creation of armour and Shields.py (FoundationTechnologies) and the AdvArmorTech.py - Apollo from ATP Technologies as well.
 * Dasher42 and USS Sovereign, not only for the above but for some feedback.
+*** USS Sovereign again for leading me to a conversation that made me realize the original Stargate packs had a fault with a few incomplete or faulty autoload files.
 * Those involved with the Stargate Pack 4.0 and other Stargate packs for STBC:
 ** https://www.gamefront.com/games/bridge-commander/file/stargate-ship-pack-dave975-and-dkealt, https://www.gamefront.com/games/bridge-commander/file/wraith-hive-ship and https://www.gamefront.com/games/bridge-commander/file/sg-pack-3-0-multiplayer-patch by Dave975 and DKealt, among others mentioned on their readmes, and LJ.
 ** https://www.gamefront.com/games/bridge-commander/file/ancient-city-atlantis-pack-0-9: abt, limey, cliperkins, jb and dave (models) and icons (http://www.lostmindsinc.com/index.php?page=races)
