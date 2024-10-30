@@ -158,7 +158,7 @@ Torpedoes.SetMaxTorpedoes(0, 35)
 Torpedoes.SetTorpedoScript(0, "Tactical.Projectiles.Transphasic")
 Torpedoes.SetMaxTorpedoes(1, 150)
 Torpedoes.SetTorpedoScript(1, "Tactical.Projectiles.DiamondsPhotonTorpedo")
-Torpedoes.SetNumAmmoTypes(3)
+Torpedoes.SetNumAmmoTypes(2)
 App.g_kModelPropertyManager.RegisterLocalTemplate(Torpedoes)
 #################################################
 PortImpulse = App.EngineProperty_Create("Port Impulse")

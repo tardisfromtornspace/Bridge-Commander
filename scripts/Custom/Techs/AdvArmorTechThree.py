@@ -8,7 +8,7 @@ import math
 from bcdebug import debug
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-            "Version": "1.8",
+            "Version": "1.81",
             "License": "LGPL",
             "Description": "Read info below for better understanding"
             }
@@ -326,6 +326,8 @@ def AdvArmorPlayer(): # For player
 	global pShipp
 	armor_ratio=0.0
 	pShip=MissionLib.GetPlayer()
+	if not pShip:
+		return
 	pShip = App.ShipClass_GetObjectByID(None, pShip.GetObjID())
 	if not pShip:
 		return
@@ -396,6 +398,8 @@ def AdvArmor(pShip): # for AI
 	global sOriginalShipScript
 	global pShipp
 	armor_ratio=0.0
+	if not pShip:
+		return
 	pShip = App.ShipClass_GetObjectByID(None, pShip.GetObjID())
 	if not pShip:
 		return
@@ -456,6 +460,8 @@ def AdvArmor(pShip): # for AI
 
 def GetAdvArmor(pShip):
 	pAdvArmor=0
+	if not pShip:
+		return
 	pShip = App.ShipClass_GetObjectByID(None, pShip.GetObjID())
 	if not pShip:
 		return pAdvArmor
@@ -493,6 +499,8 @@ def AdvArmorTogglePlayer(pObject, pEvent):
 	global sNewShipScript
 	global sOriginalShipScript
 	pShip=MissionLib.GetPlayer()
+	if not pShip:
+		return
 	pShip = App.ShipClass_GetObjectByID(None, pShip.GetObjID())
 	if not pShip:
 		return

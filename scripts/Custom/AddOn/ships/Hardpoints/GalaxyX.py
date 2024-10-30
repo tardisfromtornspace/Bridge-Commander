@@ -833,7 +833,7 @@ Torpedoes.SetTorpedoScript(0, "Tactical.Projectiles.PhotonTorpedo")
 Torpedoes.SetMaxTorpedoes(1, 3000)
 Torpedoes.SetTorpedoScript(1, "Tactical.Projectiles.Quantum01")
 Torpedoes.SetMaxTorpedoes(2, 300)
-Torpedoes.SetTorpedoScript(3, "Tactical.Projectiles.Transphasic")
+Torpedoes.SetTorpedoScript(2, "Tactical.Projectiles.Transphasic")
 Torpedoes.SetNumAmmoTypes(3)
 App.g_kModelPropertyManager.RegisterLocalTemplate(Torpedoes)
 #################################################

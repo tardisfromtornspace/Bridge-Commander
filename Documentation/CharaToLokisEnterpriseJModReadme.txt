@@ -1,4 +1,6 @@
 == Changelog ==
+1.2.1 - Bug fixing:
+   * Updated AdvArmortechThree to 1.81 to make it check things a bit better.
 1.2.0 - Bug fixing:
    * Updated Gravitic Lance to 1.4 to correct a small issue with a timer.
 1.1.9 - Bug fixing:

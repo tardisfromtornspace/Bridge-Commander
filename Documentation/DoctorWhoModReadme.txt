@@ -1,4 +1,6 @@
 == Changelog ==
+1.1.15 - bug fixes:
+   * Updated AdvArmorTechThree to 1.81, which checks things a bit better.
 1.1.14 - bug fixes:
    * Updated FIX-AblativeArmour1dot0.py to correct typo in 0.2.
 1.1.13 - bug fixes:

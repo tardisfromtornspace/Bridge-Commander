@@ -504,7 +504,7 @@ Torpedoes.SetMaxTorpedoes(0, 5)
 Torpedoes.SetTorpedoScript(0, "Tactical.Projectiles.Transphasic")
 Torpedoes.SetMaxTorpedoes(1, 30)
 Torpedoes.SetTorpedoScript(1, "Tactical.Projectiles.ShuttlePhoton")
-Torpedoes.SetNumAmmoTypes(3)
+Torpedoes.SetNumAmmoTypes(2)
 App.g_kModelPropertyManager.RegisterLocalTemplate(Torpedoes)
 #################################################
 Cannons = App.WeaponSystemProperty_Create("Cannons")

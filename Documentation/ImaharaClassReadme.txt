@@ -1,4 +1,6 @@
 == Changelog ==
+1.0.9
+* Updated AdvArmourTechThree from 1.8 to 1.81, 1.81 checks things a bit better.
 1.0.8
 * Updated AdvArmourTechThree from 1.7 to 1.8, 1.8 is a tiny bit slower but it is far better for some KM installs where for some reason 1.7 might crash. If 1.7 did not crash for you, use the 1.7 script from previous versions instead.
 1.0.7
