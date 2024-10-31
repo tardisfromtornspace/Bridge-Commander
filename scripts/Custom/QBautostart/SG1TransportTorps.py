@@ -114,6 +114,9 @@ def ShipCheck(pObject, pEvent):
         elif (GetShipType(pPlayer) == "X303RefitUpgrade"):
                     BuildMenu()
 
+        elif (GetShipType(pPlayer) == "X303Upgrade"):
+                    BuildMenu()
+
         else:
                     return
 # define buttons

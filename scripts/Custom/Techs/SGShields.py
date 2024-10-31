@@ -145,7 +145,7 @@ import FoundationTech
 from ftb.Tech.ATPFunctions import *
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-            "Version": "0.6",
+            "Version": "0.61",
             "License": "LGPL",
             "Description": "Read the small title above for more info"
             }
@@ -1640,8 +1640,13 @@ try:
 									forcedBleedthrough = forcedBleedthrough + 1
 
 			else:
-				attackerID = pEvent.GetFiringObject().GetObjID()
-				pWeaponFired = App.Weapon_Cast(pEvent.GetSource())
+				attackerShip = pEvent.GetFiringObject()
+				if attackerShip:
+					attackerID = attackerShip.GetObjID()
+				pWeaponFired = None
+				pEventSource = pEvent.GetSource()
+				if pEventSource:
+					pWeaponFired = App.Weapon_Cast(pEventSource)
 				if pWeaponFired:
 
 					pVec = NiPoint3ToTGPoint3(pEvent.GetWorldHitPoint())
@@ -1679,7 +1684,7 @@ try:
 									forcedBleedthroughMultiplier = (forcedBleedthroughMultiplier * 2.0 + vulnerableBeamsToSGShields[key]["GuaranteedBleedthrough"]) / 2.0
 									forcedBleedthrough = forcedBleedthrough + 1
 		
-			if raceShieldTech == "Asgard" or raceShieldTech == "Ori": # POINT 10. Maybe check if we need to verify if the hull was hit, to avoid some shield facets regenerating when they shouldn't.
+			if raceShieldTech == "Asgard" or raceShieldTech == "Ori" or raceShieldTech == "Asgard - Go'auld Hybrid": # POINT 10. Maybe check if we need to verify if the hull was hit, to avoid some shield facets regenerating when they shouldn't.
 				negateRegeneration = -1.0
 
 				specialmultiplier = 1.0
@@ -1699,13 +1704,12 @@ try:
 					multFactor = multFactor * specialmultiplier
 
 
-				if oYield and hasattr(oYield, "IsSGPlasmaWeaponYield") and oYield.IsSGPlasmaWeaponYield() != 0: # Some support to POINT 10 when it comes to SG Plasma weapons
+				if oYield and ((hasattr(oYield, "IsSGPlasmaWeaponYield") and oYield.IsSGPlasmaWeaponYield() != 0) or (hasattr(oYield, "IsSGRailgunWeaponYield") and oYield.IsSGRailgunWeaponYield() != 0)): # Some support to POINT 10 when it comes to SG Plasma weapons and railguns
 					if pTorp:
 						mod = pTorp.GetModuleName()
 						importedTorpInfo = __import__(mod)
 						if hasattr(importedTorpInfo, "ShieldDmgMultiplier"):
 							multFactor = multFactor * importedTorpInfo.ShieldDmgMultiplier()
-
 
 			#shieldsArePierced, nearestPoint = shieldInGoodCondition(pShip, kPoint, shieldPiercedThreshold, 2, None)
 			shieldsArePierced, nearestPoint = shieldInGoodCondition(pShip, kPoint, shieldPiercedThreshold, 0, None)

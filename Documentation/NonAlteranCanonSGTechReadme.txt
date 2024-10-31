@@ -1,4 +1,7 @@
 == Changelog ==
+1.1.1 - bug fixes:
+   * Fixed a typo on the original SG Transport Nukes script which was not allowing the Prometheous Upgrade to transport nukes.
+   * Updated SGShields to 0.61, now they are a bit more robust.
 1.1.0 - bug fixes:
    * Updated SGAsgardBeamWeapon, SGOriBeamWeapon, SGIonWeapon and SGPlasmaWeapon to fix a conflict issue with AdvArmorTechThree that was causing ships with their immunities to lose energy armour.
 1.0.9 - bug fixes:

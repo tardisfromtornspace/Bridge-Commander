@@ -1,4 +1,4 @@
-##### Bridge Commander Exit Log: 30 Oct 2024 20:18:24#####
+##### Bridge Commander Exit Log: 31 Oct 2024 03:05:52#####
 
 Outdated Foundation, updating functions
 Outdated Foundation, installing FolderManager
@@ -22,8 +22,80 @@ DS9FX: Game Crash Fix Active...
 Fixing Jaggies
 
 
+AttributeError: PreLoadAssets
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+AdvArmorTech: this mod got moved to scripts/Custom/Techs/AdvArmorTechThree.py
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+Jumpspace: Quick Battle is running... Mod is starting up...
+TimeVortex: Quick Battle is running... Mod is starting up...
+Warpspace: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
 
 
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+
+
+
+
+
+
+Setting splash damage for Death Glider-3 to (23.233696, 0.464674)
+Setting splash damage for Pyramid Ship-1 to (5187.209961, 103.744202)
+
+
+Setting splash damage for Death Glider-5 to (23.233696, 0.464674)
+Setting splash damage for Death Glider-7 to (23.233696, 0.464674)
+Setting splash damage for Death Glider-2 to (23.233696, 0.464674)
+Setting splash damage for Death Glider-4 to (23.233696, 0.464674)
+
+
+Setting splash damage for Death Glider-6 to (23.233696, 0.464674)
+
+
+Setting Stock System Planets Random Density.
+
+# DS9FX has...
+
+# taken a console dump
+data/TGL/Maelstrom/Episode 2/E2M1.tgl E2M1KiskaCom2
+Setting splash damage for F3025 to (37.500000, 0.750000)
+Trying to clean memory
+data/TGL/Maelstrom/Episode 8/E8M2.tgl E8M2Aftermath5
+Setting splash damage for F3023 to (37.500000, 0.750000)
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 31 Oct 2024 03:05:52#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Updating your AblativeArmour.py <= 1.0 to regenerate
+Fixing your old DS9FX version
+Updated FoundationTech.ShipInstance Detach-related fixes
+Updating your TractorBeams.py <= 1.0 system mismatch
+Hopping Torp ready
+Gravity FX has been loaded.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+Jumpspace Drive 20070905 Initializing...
+TimeVortex Drive 20070905 Initializing...
+Warpspace Drive 20070905 Initializing...
+DS9FX Initializing...
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
 
 
 AttributeError: PreLoadAssets
@@ -41,44 +113,270 @@ Trying to clean memory
 
 
 
+added activation event for re-intergration sequence
 Setting Stock System Planets Random Density.
 DS9FX: Active and Operational...
 
 
 
 
-PlasmaFX Communicating with Targetable Plasma Streams...
-...Sucess
-Setting splash damage for Plasma Stream Firepoint0_t to (562.500000, 11.250000)
-Setting splash damage for EFP Firepoint0_t to (187.500000, 3.750000)
 
 
-Setting splash damage for Hirogen Hunter-4 to (1441.075073, 28.821501)
-killing the player class instance
 
 
-Return Shuttles Warning: Tractor System not in Docking Mode
-Setting splash damage for Hirogen Hunter-1 to (1558.176636, 31.163532)
-Return Shuttles Warning: Tractor System not in Docking Mode
-Setting splash damage for Hirogen Hunter-2 to (490.230225, 9.804605)
+Setting splash damage for Death Glider-3 to (23.233696, 0.464674)
+Setting splash damage for Pyramid Ship-1 to (5187.209961, 103.744202)
+
+
+Setting splash damage for Death Glider-5 to (23.233696, 0.464674)
+Setting splash damage for Death Glider-7 to (23.233696, 0.464674)
+Setting splash damage for Death Glider-2 to (23.233696, 0.464674)
+Setting splash damage for Death Glider-4 to (23.233696, 0.464674)
+
+
+Setting splash damage for Death Glider-6 to (23.233696, 0.464674)
+
+
+Setting Stock System Planets Random Density.
+
+# DS9FX has...
+
+# taken a console dump
+data/TGL/Maelstrom/Episode 2/E2M1.tgl E2M1KiskaCom2
+Setting splash damage for F3025 to (37.500000, 0.750000)
 Trying to clean memory
-Return Shuttles Warning: Tractor System not in Docking Mode
-Setting splash damage for Hirogen Hunter-3 to (527.623291, 10.552465)
-data/TGL/Maelstrom/Episode 2/E2M6.tgl E2M6Briefing4
-Return Shuttles Warning: Tractor System not in Docking Mode
-Setting splash damage for Hirogen Hunter-5 to (471.852783, 9.437056)
+data/TGL/Maelstrom/Episode 8/E8M2.tgl E8M2Aftermath5
+Setting splash damage for F3023 to (37.500000, 0.750000)
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 31 Oct 2024 03:25:04#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Updating your AblativeArmour.py <= 1.0 to regenerate
+Fixing your old DS9FX version
+Updated FoundationTech.ShipInstance Detach-related fixes
+Updating your TractorBeams.py <= 1.0 system mismatch
+Hopping Torp ready
+Gravity FX has been loaded.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+Jumpspace Drive 20070905 Initializing...
+TimeVortex Drive 20070905 Initializing...
+Warpspace Drive 20070905 Initializing...
+DS9FX Initializing...
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+AttributeError: PreLoadAssets
+added activation event for re-intergration sequence
 Setting Stock System Planets Random Density.
-DS9FX: Active and Operational...
-
-
-
-
-Setting Stock System Planets Random Density.
+AdvArmorTech: this mod got moved to scripts/Custom/Techs/AdvArmorTechThree.py
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+Jumpspace: Quick Battle is running... Mod is starting up...
+TimeVortex: Quick Battle is running... Mod is starting up...
+Warpspace: Quick Battle is running... Mod is starting up...
 DS9FX: Active and Operational...
 Trying to clean memory
-Setting splash damage for Neptune Class-1 to (1561.436890, 31.228737)
 
 
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+
+# DS9FX has...
+
+# taken a console dump
+Setting splash damage for Death Glider-6 to (37.500000, 0.750000)
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 31 Oct 2024 03:25:04#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Updating your AblativeArmour.py <= 1.0 to regenerate
+Fixing your old DS9FX version
+Updated FoundationTech.ShipInstance Detach-related fixes
+Updating your TractorBeams.py <= 1.0 system mismatch
+Hopping Torp ready
+Gravity FX has been loaded.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+Jumpspace Drive 20070905 Initializing...
+TimeVortex Drive 20070905 Initializing...
+Warpspace Drive 20070905 Initializing...
+DS9FX Initializing...
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+AttributeError: PreLoadAssets
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+AdvArmorTech: this mod got moved to scripts/Custom/Techs/AdvArmorTechThree.py
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+Jumpspace: Quick Battle is running... Mod is starting up...
+TimeVortex: Quick Battle is running... Mod is starting up...
+Warpspace: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+
+# DS9FX has...
+
+# taken a console dump
+Setting splash damage for Death Glider-6 to (37.500000, 0.750000)
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 31 Oct 2024 03:31:28#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Updating your AblativeArmour.py <= 1.0 to regenerate
+Fixing your old DS9FX version
+Updated FoundationTech.ShipInstance Detach-related fixes
+Updating your TractorBeams.py <= 1.0 system mismatch
+Hopping Torp ready
+Gravity FX has been loaded.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+Jumpspace Drive 20070905 Initializing...
+TimeVortex Drive 20070905 Initializing...
+Warpspace Drive 20070905 Initializing...
+DS9FX Initializing...
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+AttributeError: PreLoadAssets
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+AdvArmorTech: this mod got moved to scripts/Custom/Techs/AdvArmorTechThree.py
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+Jumpspace: Quick Battle is running... Mod is starting up...
+TimeVortex: Quick Battle is running... Mod is starting up...
+Warpspace: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+data/TGL/Maelstrom/Episode 6/E6M4.tgl E6M4Communicate5-3
+
+# DS9FX has...
+
+# taken a console dump
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 31 Oct 2024 03:31:28#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Updating your AblativeArmour.py <= 1.0 to regenerate
+Fixing your old DS9FX version
+Updated FoundationTech.ShipInstance Detach-related fixes
+Updating your TractorBeams.py <= 1.0 system mismatch
+Hopping Torp ready
+Gravity FX has been loaded.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+Jumpspace Drive 20070905 Initializing...
+TimeVortex Drive 20070905 Initializing...
+Warpspace Drive 20070905 Initializing...
+DS9FX Initializing...
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+AttributeError: PreLoadAssets
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+AdvArmorTech: this mod got moved to scripts/Custom/Techs/AdvArmorTechThree.py
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+Jumpspace: Quick Battle is running... Mod is starting up...
+TimeVortex: Quick Battle is running... Mod is starting up...
+Warpspace: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+data/TGL/Maelstrom/Episode 6/E6M4.tgl E6M4Communicate5-3
+
+# DS9FX has...
+
+# taken a console dump
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+added activation event for re-intergration sequence
 Setting Stock System Planets Random Density.
 DS9FX: Active and Operational...
 
@@ -88,7 +386,7 @@ DS9FX: Active and Operational...
 
 
 ##### End Of The Log #####
-##### Bridge Commander Exit Log: 30 Oct 2024 20:18:24#####
+##### Bridge Commander Exit Log: 31 Oct 2024 03:35:44#####
 
 Outdated Foundation, updating functions
 Outdated Foundation, installing FolderManager
@@ -112,8 +410,65 @@ DS9FX: Game Crash Fix Active...
 Fixing Jaggies
 
 
+AttributeError: PreLoadAssets
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+AdvArmorTech: this mod got moved to scripts/Custom/Techs/AdvArmorTechThree.py
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+Jumpspace: Quick Battle is running... Mod is starting up...
+TimeVortex: Quick Battle is running... Mod is starting up...
+Warpspace: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
 
 
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+# DS9FX has...
+
+# taken a console dump
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 31 Oct 2024 03:35:44#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Updating your AblativeArmour.py <= 1.0 to regenerate
+Fixing your old DS9FX version
+Updated FoundationTech.ShipInstance Detach-related fixes
+Updating your TractorBeams.py <= 1.0 system mismatch
+Hopping Torp ready
+Gravity FX has been loaded.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+Jumpspace Drive 20070905 Initializing...
+TimeVortex Drive 20070905 Initializing...
+Warpspace Drive 20070905 Initializing...
+DS9FX Initializing...
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
 
 
 AttributeError: PreLoadAssets
@@ -131,50 +486,258 @@ Trying to clean memory
 
 
 
-Setting Stock System Planets Random Density.
-DS9FX: Active and Operational...
-
-
-
-
-PlasmaFX Communicating with Targetable Plasma Streams...
-...Sucess
-Setting splash damage for Plasma Stream Firepoint0_t to (562.500000, 11.250000)
-Setting splash damage for EFP Firepoint0_t to (187.500000, 3.750000)
-
-
-Setting splash damage for Hirogen Hunter-4 to (1441.075073, 28.821501)
-killing the player class instance
-
-
-Return Shuttles Warning: Tractor System not in Docking Mode
-Setting splash damage for Hirogen Hunter-1 to (1558.176636, 31.163532)
-Return Shuttles Warning: Tractor System not in Docking Mode
-Setting splash damage for Hirogen Hunter-2 to (490.230225, 9.804605)
-Trying to clean memory
-Return Shuttles Warning: Tractor System not in Docking Mode
-Setting splash damage for Hirogen Hunter-3 to (527.623291, 10.552465)
-data/TGL/Maelstrom/Episode 2/E2M6.tgl E2M6Briefing4
-Return Shuttles Warning: Tractor System not in Docking Mode
-Setting splash damage for Hirogen Hunter-5 to (471.852783, 9.437056)
-Setting Stock System Planets Random Density.
-DS9FX: Active and Operational...
-
-
-
-
-Setting Stock System Planets Random Density.
-DS9FX: Active and Operational...
-Trying to clean memory
-Setting splash damage for Neptune Class-1 to (1561.436890, 31.228737)
-
-
+added activation event for re-intergration sequence
 Setting Stock System Planets Random Density.
 DS9FX: Active and Operational...
 
 # DS9FX has...
 
 # taken a console dump
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 31 Oct 2024 03:44:16#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Updating your AblativeArmour.py <= 1.0 to regenerate
+Fixing your old DS9FX version
+Updated FoundationTech.ShipInstance Detach-related fixes
+Updating your TractorBeams.py <= 1.0 system mismatch
+Hopping Torp ready
+Gravity FX has been loaded.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+Jumpspace Drive 20070905 Initializing...
+TimeVortex Drive 20070905 Initializing...
+Warpspace Drive 20070905 Initializing...
+DS9FX Initializing...
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+AttributeError: PreLoadAssets
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+AdvArmorTech: this mod got moved to scripts/Custom/Techs/AdvArmorTechThree.py
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+Jumpspace: Quick Battle is running... Mod is starting up...
+TimeVortex: Quick Battle is running... Mod is starting up...
+Warpspace: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+# DS9FX has...
+
+# taken a console dump
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+data/TGL/Maelstrom/Episode 4/E4M4.tgl E4M4FelixHail1
+Setting splash damage for Death Glider-5 to (37.500000, 0.750000)
+Setting splash damage for Death Glider-4 to (21.195652, 0.423913)
+Setting splash damage for Death Glider-3 to (37.500000, 0.750000)
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 31 Oct 2024 03:44:16#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Updating your AblativeArmour.py <= 1.0 to regenerate
+Fixing your old DS9FX version
+Updated FoundationTech.ShipInstance Detach-related fixes
+Updating your TractorBeams.py <= 1.0 system mismatch
+Hopping Torp ready
+Gravity FX has been loaded.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+Jumpspace Drive 20070905 Initializing...
+TimeVortex Drive 20070905 Initializing...
+Warpspace Drive 20070905 Initializing...
+DS9FX Initializing...
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+AttributeError: PreLoadAssets
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+AdvArmorTech: this mod got moved to scripts/Custom/Techs/AdvArmorTechThree.py
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+Jumpspace: Quick Battle is running... Mod is starting up...
+TimeVortex: Quick Battle is running... Mod is starting up...
+Warpspace: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+# DS9FX has...
+
+# taken a console dump
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+data/TGL/Maelstrom/Episode 4/E4M4.tgl E4M4FelixHail1
+Setting splash damage for Death Glider-5 to (37.500000, 0.750000)
+Setting splash damage for Death Glider-4 to (21.195652, 0.423913)
+Setting splash damage for Death Glider-3 to (37.500000, 0.750000)
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 31 Oct 2024 03:46:24#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Updating your AblativeArmour.py <= 1.0 to regenerate
+Fixing your old DS9FX version
+Updated FoundationTech.ShipInstance Detach-related fixes
+Updating your TractorBeams.py <= 1.0 system mismatch
+Hopping Torp ready
+Gravity FX has been loaded.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+Jumpspace Drive 20070905 Initializing...
+TimeVortex Drive 20070905 Initializing...
+Warpspace Drive 20070905 Initializing...
+DS9FX Initializing...
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+AttributeError: PreLoadAssets
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+AdvArmorTech: this mod got moved to scripts/Custom/Techs/AdvArmorTechThree.py
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+Jumpspace: Quick Battle is running... Mod is starting up...
+TimeVortex: Quick Battle is running... Mod is starting up...
+Warpspace: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+# DS9FX has...
+
+# taken a console dump
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting splash damage for Death Glider-1 to (37.500000, 0.750000)
+Setting splash damage for Death Glider-3 to (37.500000, 0.750000)
+Setting splash damage for Death Glider-4 to (37.500000, 0.750000)
+Setting splash damage for Death Glider-5 to (29.347824, 0.586957)
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 31 Oct 2024 03:46:24#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Updating your AblativeArmour.py <= 1.0 to regenerate
+Fixing your old DS9FX version
+Updated FoundationTech.ShipInstance Detach-related fixes
+Updating your TractorBeams.py <= 1.0 system mismatch
+Hopping Torp ready
+Gravity FX has been loaded.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+Jumpspace Drive 20070905 Initializing...
+TimeVortex Drive 20070905 Initializing...
+Warpspace Drive 20070905 Initializing...
+DS9FX Initializing...
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+AttributeError: PreLoadAssets
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+AdvArmorTech: this mod got moved to scripts/Custom/Techs/AdvArmorTechThree.py
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+Jumpspace: Quick Battle is running... Mod is starting up...
+TimeVortex: Quick Battle is running... Mod is starting up...
+Warpspace: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+# DS9FX has...
+
+# taken a console dump
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting splash damage for Death Glider-1 to (37.500000, 0.750000)
+Setting splash damage for Death Glider-3 to (37.500000, 0.750000)
+Setting splash damage for Death Glider-4 to (37.500000, 0.750000)
+Setting splash damage for Death Glider-5 to (29.347824, 0.586957)
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 31 Oct 2024 04:14:08#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Updating your AblativeArmour.py <= 1.0 to regenerate
+Fixing your old DS9FX version
+Updated FoundationTech.ShipInstance Detach-related fixes
+Updating your TractorBeams.py <= 1.0 system mismatch
+Hopping Torp ready
+Gravity FX has been loaded.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+Jumpspace Drive 20070905 Initializing...
+TimeVortex Drive 20070905 Initializing...
+Warpspace Drive 20070905 Initializing...
+DS9FX Initializing...
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
 
 # DS9FX has...
 
