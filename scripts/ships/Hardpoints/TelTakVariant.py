@@ -106,7 +106,7 @@ TelTakVariant = App.ShipProperty_Create("TelTak Variant")
 
 TelTakVariant.SetGenus(1)
 TelTakVariant.SetSpecies(797)
-TelTakVariant.SetMass(10000.000000)
+TelTakVariant.SetMass(500.000000)
 TelTakVariant.SetRotationalInertia(2000.000000)
 TelTakVariant.SetShipName("TelTakVariant")
 TelTakVariant.SetModelFilename("data/Models/Ships/TelTak/TelTakVariant.nif")
