@@ -66,7 +66,8 @@ def Restart():
 	autogetenabled = 0
 	defaultscript = None
 	defaultslot = None
-	pwindowButton.SetDisabled()
+	if pwindowButton:
+		pwindowButton.SetDisabled()
 	firstcheck()
 
 def TimerLoop(pObject, pEvent):
@@ -107,8 +108,10 @@ def TimerLoop(pObject, pEvent):
 		WriteShipSetup("player_" + string.split(pPlayer.GetScript(),".")[1], Torps)
 	Torps = None
 
-def NewPlayerShip(pPlayer):
+def NewPlayerShip(pPlayer=None):
 	global Storage
+	if not pPlayer:
+		pPlayer = MissionLib.GetPlayer()
 	Storage = LoadShipSetup("player_" + string.split(pPlayer.GetScript(),".")[1])
 	Storage = Clean(Storage)
 
@@ -118,6 +121,8 @@ def testgetabillity():
 	if not pTargetShip:
 		return 0
 	pPlayer = MissionLib.GetPlayer()
+	if not pPlayer:
+		return
 	if pPlayer.IsCloaked():
 		Felixsay("cloaked")
 		return 0
@@ -149,7 +154,7 @@ def testgetabillity():
 		return 1
 
 def checkaffliction(pTargetShip):
-	debug(__name__ + ", firstcheck")
+	debug(__name__ + ", checkaffliction")
         pGame = App.Game_GetCurrentGame()
         pEpisode = pGame.GetCurrentEpisode()
         pMission = pEpisode.GetCurrentMission()
@@ -172,7 +177,11 @@ def firstcheck():
 	if not pPlayer:
 		return
 	pTorpedoSystem = pPlayer.GetTorpedoSystem()
+	if not pTorpedoSystem:
+		return	
 	iNumTypes = pTorpedoSystem.GetNumAmmoTypes()
+	if not iNumTypes:
+		return
 	pTorpedoType = pTorpedoSystem.GetAmmoType(iNumTypes -1)
 	pTorpedoTypeName = pTorpedoType.GetAmmoName()
 	pTorpedoTypeScript = pTorpedoType.GetTorpedoScript()
@@ -318,12 +327,17 @@ def autoget():
 	debug(__name__ + ", autoget")
 ##########################################################################################################################
 #Beta version: autoget sometimes crashes the game so i've disabled it for now:
-	return
+#	return
 ##########################################################################################################################
 	global pTargetShip
 	try:
 		pPlayer = MissionLib.GetPlayer()
+		if not pPlayer:
+	 		return
 		pTargetShip = App.ShipClass_Cast(pPlayer.GetTarget())
+		if not pTargetShip:
+	 		return
+		pTargetShip = App.ShipClass_GetObjectByID(None, pTargetShip.GetObjID())
 		if not pTargetShip:
 	 		return
 		tTorpedoSystem = pTargetShip.GetTorpedoSystem()
@@ -347,7 +361,14 @@ def scanstarbase():
 	debug(__name__ + ", scanstarbase")
 	global pDetailsWindow, pTTPane, pDetailsWindow, StarbaseStore
 	pPlayer = MissionLib.GetPlayer()
+	if not pPlayer:
+		return
 	pTarget = App.ShipClass_Cast(pPlayer.GetTarget())
+	if not pTarget:
+	 	return
+	pTarget = App.ShipClass_GetObjectByID(None, pTarget.GetObjID())
+	if not pTarget:
+	 	return
 	TargetName = pTarget.GetName()
 	line = 1
 	LoadSetup(TargetName)
@@ -379,6 +400,8 @@ def ScanTarget(pObject, pEvent):
 	debug(__name__ + ", ScanTarget")
 	global pDetailsWindow, pTTPane, pTargetShip
 	pPlayer = MissionLib.GetPlayer()
+	if not pPlayer:
+		return
 	line = 1
 	pGame = App.Game_GetCurrentGame()
 	pEpisode = pGame.GetCurrentEpisode()
@@ -395,12 +418,13 @@ def ScanTarget(pObject, pEvent):
 	pTargetShip = App.ShipClass_Cast(pPlayer.GetTarget())
 	if not pTargetShip:
  		return
+	pTargetShip = App.ShipClass_GetObjectByID(None, pTargetShip.GetObjID())
+	if not pTargetShip:
+	 	return
 	
 	if pTargetShip.GetShipProperty().IsStationary() and checkaffliction(pTargetShip) == 'friendly':
 		scanstarbase()
 		return
-
-
 
 	tTorpedoSystem = pTargetShip.GetTorpedoSystem()
 	if (tTorpedoSystem):
@@ -511,20 +535,21 @@ def ScanMe(pObject, pEvent):
 	pPTPane = App.TGPane_Create(2.0, 2.0)
 	pDetailsWindow.AddChild(pPTPane, 0, 0)
 
-	#getting My TorpedoSystem
-	pTorpedoSystem = pPlayer.GetTorpedoSystem()
-	if (pTorpedoSystem):
- 		iNumTypes = pTorpedoSystem.GetNumAmmoTypes()
- 		for iType in range(iNumTypes):
-			pTorpedoType = pTorpedoSystem.GetAmmoType(iType)
-			pTorpedoTypeName = pTorpedoType.GetAmmoName()
-			pTorpedoTypeScript = pTorpedoType.GetTorpedoScript()
-			pTorpedoTypeAvailable = pTorpedoSystem.GetNumAvailableTorpsToType(iType)
-			pTorpedoTypeMaxAvailable = pTorpedoType.GetMaxTorpedoes()
-			text = pTorpedoTypeName
-			text = text + " :  " + str(pTorpedoTypeAvailable) + "/" + str(pTorpedoTypeMaxAvailable)
-			CreatePlayerTorpButton(line, text)
-			line = line + 1
+	if pPlayer:
+		#getting My TorpedoSystem
+		pTorpedoSystem = pPlayer.GetTorpedoSystem()
+		if (pTorpedoSystem):
+ 			iNumTypes = pTorpedoSystem.GetNumAmmoTypes()
+ 			for iType in range(iNumTypes):
+				pTorpedoType = pTorpedoSystem.GetAmmoType(iType)
+				pTorpedoTypeName = pTorpedoType.GetAmmoName()
+				pTorpedoTypeScript = pTorpedoType.GetTorpedoScript()
+				pTorpedoTypeAvailable = pTorpedoSystem.GetNumAvailableTorpsToType(iType)
+				pTorpedoTypeMaxAvailable = pTorpedoType.GetMaxTorpedoes()
+				text = pTorpedoTypeName
+				text = text + " :  " + str(pTorpedoTypeAvailable) + "/" + str(pTorpedoTypeMaxAvailable)
+				CreatePlayerTorpButton(line, text)
+				line = line + 1
 	ScanStore()
 
 def GetStarbaseTorps(pObject, pEvent):
@@ -533,6 +558,9 @@ def GetStarbaseTorps(pObject, pEvent):
 	getcount = 0
 	if not pTargetShip:
  		return
+	pTargetShip = App.ShipClass_GetObjectByID(None, pTargetShip.GetObjID())
+	if not pTargetShip:
+	 	return
 	if (Distance(pTargetShip) > 300):
 		return
 
@@ -575,6 +603,9 @@ def GetTorps(pObject, pEvent):
 	getcount = 0
 	if not pTargetShip:
  		return
+	pTargetShip = App.ShipClass_GetObjectByID(None, pTargetShip.GetObjID())
+	if not pTargetShip:
+	 	return
 	if testgetabillity() == 0:
 		return
 	try:
@@ -597,6 +628,9 @@ def GetTorpsEV(pObject, pEvent):
 	getcount = 0
 	if not pTargetShip:
  		return
+	pTargetShip = App.ShipClass_GetObjectByID(None, pTargetShip.GetObjID())
+	if not pTargetShip:
+	 	return
 	testgetabillityresult = testgetabillity()
 	if testgetabillityresult == 0:
 		return
@@ -658,6 +692,9 @@ def Transfer(slot):
 	getcount = 0
 	if not pTargetShip:
  		return
+	pTargetShip = App.ShipClass_GetObjectByID(None, pTargetShip.GetObjID())
+	if not pTargetShip:
+	 	return
 	if (Distance(pTargetShip) > 300):
 		return
 
@@ -699,8 +736,11 @@ def UseTorps(pObject, pEvent):
         #    pInfoPane = None
 	slot = pEvent.GetInt()
 	pPlayer = MissionLib.GetPlayer()
+	if not pPlayer:
+	 	return
 	if pTargetShip:
-		if pTargetShip.GetShipProperty().IsStationary():
+		pTargetShip = App.ShipClass_GetObjectByID(None, pTargetShip.GetObjID())
+		if pTargetShip and pTargetShip.GetShipProperty().IsStationary():
 			if TransferEnabled == 1:
 				Transfer(slot)				
 				return
@@ -746,13 +786,15 @@ def Clean(Store):
 			pTorpedoTypeName = Store[(i * 3) + 1]
 			pTorpedoTypeScript = Store[i * 3]
 			pTorpedoTypeAvailable = int(Store[(i * 3) + 2])
-			currscr = MissionLib.GetPlayer().GetTorpedoSystem().GetAmmoType(MissionLib.GetPlayer().GetTorpedoSystem().GetNumAmmoTypes()-1).GetTorpedoScript()
-			if pTorpedoTypeAvailable > 0:
-				if not pTorpedoTypeScript in Done:
-					if not pTorpedoTypeScript == currscr:
-						Torp = [pTorpedoTypeScript, pTorpedoTypeName, pTorpedoTypeAvailable]
-						Torps[len(Torps) : len(Torps)] = Torp
-						Done[len(Done) : len(Done)] = [pTorpedoTypeScript]
+			pPlayer = MissionLib.GetPlayer()
+			if pPlayer:
+				currscr = pPlayer.GetTorpedoSystem().GetAmmoType(pPlayer.GetTorpedoSystem().GetNumAmmoTypes()-1).GetTorpedoScript()
+				if pTorpedoTypeAvailable > 0:
+					if not pTorpedoTypeScript in Done:
+						if not pTorpedoTypeScript == currscr:
+							Torp = [pTorpedoTypeScript, pTorpedoTypeName, pTorpedoTypeAvailable]
+							Torps[len(Torps) : len(Torps)] = Torp
+							Done[len(Done) : len(Done)] = [pTorpedoTypeScript]
 	
 	Done = None
 	Torp = None
@@ -766,7 +808,7 @@ def DoNothing(pObject, pEvent):
 def ScanStore():
 	debug(__name__ + ", ScanStore")
 	global pDetailsWindow, pSTPane, pDetailsWindowWin
-	pPlayer = MissionLib.GetPlayer()
+	#pPlayer = MissionLib.GetPlayer()
 	line = 1
 	slot = 0
 

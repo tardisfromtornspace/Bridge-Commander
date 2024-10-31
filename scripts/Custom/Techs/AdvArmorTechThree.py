@@ -1,14 +1,16 @@
 import App
+import Foundation
 import FoundationTech
 import MissionLib
 import loadspacehelper
 import Bridge.BridgeUtils
 import Lib.LibEngineering
 import math
+import traceback
 from bcdebug import debug
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-            "Version": "1.81",
+            "Version": "1.82",
             "License": "LGPL",
             "Description": "Read info below for better understanding"
             }
@@ -86,7 +88,28 @@ LastShipType = "nonArmored"
 
 # This class does control the attach and detach of the Models
 class AdvArmorTechTwoDef(FoundationTech.TechDef):
-	
+	def __init__(self, name):
+		debug(__name__ + ", Initiated Reality Bomb counter")
+		FoundationTech.TechDef.__init__(self, name)
+		self.pEventHandler = App.TGPythonInstanceWrapper()
+		self.pEventHandler.SetPyWrapper(self)
+		App.g_kEventManager.RemoveBroadcastHandler(Foundation.TriggerDef.ET_FND_CREATE_PLAYER_SHIP, self.pEventHandler, "PlayerRespawned")
+		App.g_kEventManager.AddBroadcastPythonMethodHandler(Foundation.TriggerDef.ET_FND_CREATE_PLAYER_SHIP, self.pEventHandler, "PlayerRespawned")
+
+	def PlayerRespawned(self, pEvent):
+		pPlayer = MissionLib.GetPlayer()
+		if pPlayer:
+			pInstance = findShipInstance(pPlayer)
+			if not pInstance.__dict__.has_key("Adv Armor Tech"):
+				try:
+					self.DeleteMenuButton("Tactical", "Adv Plating Offline")
+				except:
+					pass
+				try:
+					self.DeleteMenuButton("Tactical", "Adv Plating Online")
+				except:
+					pass
+
 	# called by FoundationTech when a ship is created
         def AttachShip(self, pShip, pInstance):
                 debug(__name__ + ", AttachShip")
@@ -134,17 +157,38 @@ class AdvArmorTechTwoDef(FoundationTech.TechDef):
 				if not self.bAddedWarpListener.has_key(repr(pShip)):
 					if LastShipType == "nonArmored":
 						#print ("Ok the previous was not armored")
-						ArmorButton = Lib.LibEngineering.CreateMenuButton("Plating Offline", "Tactical", __name__ + ".AdvArmorTogglePlayer")
+						ArmorButton = Lib.LibEngineering.CreateMenuButton("Adv Plating Offline", "Tactical", __name__ + ".AdvArmorTogglePlayer")
 					else:
 						#print ("Ok the previous WAS armored, attempting to get the past button")
 						try:
-							theMenu = Libs.LibEngineering.GetBridgeMenu("Tactical")
-							ArmorButton = Libs.LibEngineering.GetButton("Plating Offline", theMenu)
+							theMenu = Lib.LibEngineering.GetBridgeMenu("Tactical")
+							ArmorButton = Lib.LibEngineering.GetButton("Adv Plating Offline", theMenu)
+							#print "Grabbed online button"
+							if not ArmorButton:
+								try:
+									self.DeleteMenuButton("Tactical", "Adv Plating Online")
+								except:
+									pass
+								try:
+									self.DeleteMenuButton("Tactical", "Adv Plating Offline")
+								except:
+									pass
+								ArmorButton = Lib.LibEngineering.CreateMenuButton("Adv Plating Offline", "Tactical", __name__ + ".AdvArmorTogglePlayer")
 						except:
 							try:
-								theMenu = Libs.LibEngineering.GetBridgeMenu("Tactical")
-								ArmorButton = Libs.LibEngineering.GetButton("Plating Online", theMenu)
-								#DeleteMenuButton("Tactical", "Plating Online")
+								theMenu = Lib.LibEngineering.GetBridgeMenu("Tactical")
+								ArmorButton = Lib.LibEngineering.GetButton("Adv Plating Online", theMenu)
+								#print "Grabbed offline button"
+								if not ArmorButton:
+									try:
+										self.DeleteMenuButton("Tactical", "Adv Plating Online")
+									except:
+										pass
+									try:
+										self.DeleteMenuButton("Tactical", "Adv Plating Offline")
+									except:
+										pass
+									ArmorButton = Lib.LibEngineering.CreateMenuButton("Adv Plating Offline", "Tactical", __name__ + ".AdvArmorTogglePlayer")
 							except:
 								print("No armor button to grab, huh")
 					try:
@@ -179,7 +223,8 @@ class AdvArmorTechTwoDef(FoundationTech.TechDef):
 			
 			print("SUCCESS while attaching advarmortechthree")
 		except:
-			print("ERROR while attaching advarmortechthree")                
+			print("ERROR while attaching advarmortechthree")
+			traceback.print_exc()              
 
 	# Called by FoundationTech when a Ship is removed from set (eg destruction)
         def DetachShip(self, iShipID, pInstance):
@@ -188,31 +233,58 @@ class AdvArmorTechTwoDef(FoundationTech.TechDef):
                 pShip = App.ShipClass_GetObjectByID(None, iShipID)
                 if pShip:
 			# remove the listeners
-			#print("Have to detach advarmortechtwo")
+			#print("Have to detach advarmortechthree")
 			pPlayer = MissionLib.GetPlayer()
 			if (repr(pShip) == repr(pPlayer)):
 				try:
-					DeleteMenuButton("Tactical", "Plating Offline")
+					self.DeleteMenuButton("Tactical", "Adv Plating Offline")
 				except:
-					try:
-						DeleteMenuButton("Tactical", "Plating Online")
-					except:
-						print("No armor button to delete, huh")
+					pass
+				try:
+					self.DeleteMenuButton("Tactical", "Adv Plating Online")
+				except:
+					pass
 				pShip.RemoveHandlerForInstance(App.ET_SUBSYSTEM_DAMAGED, __name__ + ".SubDamagePlayer")
 			else:
 				pShip.RemoveHandlerForInstance(App.ET_SUBSYSTEM_STATE_CHANGED, __name__ + ".SubsystemStateChanged")
 				pShip.RemoveHandlerForInstance(App.ET_SUBSYSTEM_DAMAGED, __name__ + ".SubDamage")
 			if self.bAddedWarpListener.has_key(repr(pShip)):
-				del self.bAddedWarpListener[repr(pShip)]
-				del AdvArmorRecord[repr(pShip)]
-				del vd_rad_mod[repr(pShip)]
-				del vd_str_mod[repr(pShip)]
-				del pShipp[repr(pShip)]
+				try:
+					del self.bAddedWarpListener[repr(pShip)]
+				except:
+					pass
+				try:
+					del AdvArmorRecord[repr(pShip)]
+				except:
+					pass
+				try:
+					del vd_rad_mod[repr(pShip)]
+				except:
+					pass
+				try:
+					del vd_str_mod[repr(pShip)]
+				except:
+					pass
+				try:
+					del pShipp[repr(pShip)]
+				except:
+					pass
+
+        #def Detach(self, pInstance):
+        #        debug(__name__ + ", Detach")
+	#	self.DetachShip(pInstance.pShipID, pInstance)
+	#	pInstance.lTechs.remove(self)
 
 	# Deletes a button. From BCS:TNG's mod
-	def DeleteMenuButton(sMenuName, sButtonName, sSubMenuName = None):
+	def DeleteMenuButton(self, sMenuName, sButtonName, sSubMenuName = None):
 		debug(__name__ + ", DeleteMenuButton")
-		pMenu   = GetBridgeMenu(sMenuName)
+		try:
+			pMenu   = self.GetBridgeMenu(sMenuName)
+		except:
+			traceback.print_exc()
+			pMenu = None
+		if not pMenu:
+			pMenu   = Lib.LibEngineering.GetBridgeMenu(sMenuName)
 		pButton = pMenu.GetButton(sButtonName)
 		if sSubMenuName != None:
 			pMenu = pMenu.GetSubmenu(sSubMenuName)
@@ -222,7 +294,7 @@ class AdvArmorTechTwoDef(FoundationTech.TechDef):
 
 
 	# From ATP_GUIUtils:
-	def GetBridgeMenu(menuName):
+	def GetBridgeMenu(self, menuName):
 		debug(__name__ + ", GetBridgeMenu")
 		pTactCtrlWindow = App.TacticalControlWindow_GetTacticalControlWindow()
 		pDatabase = App.g_kLocalizationManager.Load("data/TGL/Bridge Menus.tgl")
@@ -249,6 +321,19 @@ class AdvArmorTechTwoDef(FoundationTech.TechDef):
                 pObject.CallNextHandler(pEvent)
                 
 oAdvArmorTechTwo = AdvArmorTechTwoDef("Adv Armor Tech")
+
+def findShipInstance(pShip):
+	debug(__name__ + ", findShipInstance")
+	pInstance = None
+	try:
+		if not pShip:
+			return pInstance
+		if FoundationTech.dShips.has_key(pShip.GetName()):
+			pInstance = FoundationTech.dShips[pShip.GetName()]
+	except:
+		pass
+
+	return pInstance
 
 def SubsystemStateChanged(pObject, pEvent):
 	debug(__name__ + ", SubsystemStateChanged")
@@ -348,13 +433,13 @@ def AdvArmorPlayer(): # For player
 
 	BtnName=App.TGString()
 	ArmorButton.GetName(BtnName)
-	if (BtnName.Compare(App.TGString("Plating Online"),1)):
+	if (BtnName.Compare(App.TGString("Adv Plating Online"),1)):
 		return
 
 	batt_chg=pPower.GetMainBatteryPower()
 	batt_limit=pPower.GetMainBatteryLimit()
 	if (batt_chg<=(batt_limit*.05)):
-		ArmorButton.SetName(App.TGString("Plating Offline"))
+		ArmorButton.SetName(App.TGString("Adv Plating Offline"))
 		if (not sOriginalShipScript[repr(pShip)] == None):
 			ReplaceModel(pShip, sOriginalShipScript[repr(pShip)])
 		if (AdvArmorRecord[repr(pShip)]):
@@ -376,7 +461,7 @@ def AdvArmorPlayer(): # For player
 	else:
 		pHull.SetCondition(hull_cond+armor_pwr)
 		armor_pwr=0
-		ArmorButton.SetName(App.TGString("Plating Offline"))
+		ArmorButton.SetName(App.TGString("Adv Plating Offline"))
 		if (AdvArmorRecord[repr(pShip)]):
 			MissionLib.ShowSubsystems(AdvArmorRecord[repr(pShip)])
 			AdvArmorRecord[repr(pShip)]=0		
@@ -553,8 +638,8 @@ def AdvArmorTogglePlayer(pObject, pEvent):
 	BtnName=App.TGString()
 	ArmorButton.GetName(BtnName)
 
-	if not (BtnName.Compare(App.TGString("Plating Online"),1)):
-		ArmorButton.SetName(App.TGString("Plating Offline"))
+	if not (BtnName.Compare(App.TGString("Adv Plating Online"),1)):
+		ArmorButton.SetName(App.TGString("Adv Plating Offline"))
 		conditionA = AdvArmorRecord[repr(pShip)]
 		if (conditionA):
 			MissionLib.ShowSubsystems(AdvArmorRecord[repr(pShip)])
@@ -565,7 +650,7 @@ def AdvArmorTogglePlayer(pObject, pEvent):
 			pShip.SetVisibleDamageStrengthModifier(vd_str_mod[repr(pShip)])
 			pShip.SetInvincible(0)
 	else:
-		ArmorButton.SetName(App.TGString("Plating Online"))
+		ArmorButton.SetName(App.TGString("Adv Plating Online"))
 		AdvArmorRecord[repr(pShip)]=MissionLib.HideSubsystems(pShip)
 		pShip.SetInvincible(1)
 		pShip.SetVisibleDamageRadiusModifier(0.0)
@@ -707,7 +792,7 @@ def AdvArmorTogglePlayerFirst(armourActive):
 
 	
 	if not (armourActive):
-		ArmorButton.SetName(App.TGString("Plating Offline"))
+		ArmorButton.SetName(App.TGString("Adv Plating Offline"))
 		try:
 			MissionLib.ShowSubsystems(AdvArmorRecord[repr(pShip)])
 		except:
@@ -719,7 +804,7 @@ def AdvArmorTogglePlayerFirst(armourActive):
 		pShip.SetVisibleDamageStrengthModifier(vd_str_mod[repr(pShip)])
 		pShip.SetInvincible(0)
 	else:
-		ArmorButton.SetName(App.TGString("Plating Online"))
+		ArmorButton.SetName(App.TGString("Adv Plating Online"))
 		AdvArmorRecord[repr(pShip)]=MissionLib.HideSubsystems(pShip)
 		pShip.SetInvincible(1)
 		pShip.SetVisibleDamageRadiusModifier(0.0)
@@ -815,7 +900,7 @@ def Restart():
 	pMission = pEpisode.GetCurrentMission()
 	pPlayer=MissionLib.GetPlayer()
 	if (pShipp == repr(pPlayer)):
-		ArmorButton.SetName(App.TGString("Plating Offline"))
+		ArmorButton.SetName(App.TGString("Adv Plating Offline"))
 	return
 
 def MPSentReplaceModelMessage(pShip, sNewShipScript):
