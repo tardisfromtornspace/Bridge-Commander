@@ -1,4 +1,6 @@
 == Changelog ==
+1.0.10
+* Updated AdvArmourTechThree from 1.81 to 1.82, fixing certain issues where the buttons were not disappearing accordingly.
 1.0.9
 * Updated AdvArmourTechThree from 1.8 to 1.81, 1.81 checks things a bit better.
 1.0.8
