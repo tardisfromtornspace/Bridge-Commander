@@ -24,7 +24,7 @@ MartinsShip = App.ShipProperty_Create("MartinsShip")
 
 MartinsShip.SetGenus(1)
 MartinsShip.SetSpecies(763)
-MartinsShip.SetMass(30000.000000)
+MartinsShip.SetMass(14000.000000)
 MartinsShip.SetRotationalInertia(300.000000)
 MartinsShip.SetShipName("MartinsShip")
 MartinsShip.SetModelFilename("data/Models/Ships/MartinLloydsShip/MartinsShip.nif")
