@@ -40,7 +40,7 @@ Foundation.ShipDef.Ambassador.dTechs = {
 # ** if "RaceShieldTech" : "Anubis Go'auld" no advantages are added here... but some optional fields may require for this key to have this value to act. Additionally, it makes the shields shrug off the Tollan Ion Cannon and makes Beliskner-grade Ion Weapons ineffective, and adds a very slight resistance to other Ion Cannons and SG Plasma ones.
 # ** if "RaceShieldTech" : "Asgard": several perks are added, they are more advanced, have reduced shield damage collision and when a too-low yield weapon is fired at them (lower than their shield facet regeneration, that is), the shield will regenerate as if no weapon had been fired (POINT 10)
 # ** if "RaceShieldTech": "Alteran", "RaceShieldTech": "Lantean", "RaceShieldTech": "Lantian" or "RaceShieldTech": "Asuran": no advantages are added here... but other related scripts may use them #### TO-DO Update if changed ####
-# ** if "RaceShieldTech": "Replicator": no advantages are added here... but other related scripts, like the Replicator Adaptation script, may use them. #### TO-DO Update if changed ####
+# ** if "RaceShieldTech": "Replicator": originally no advantages were added here, but considering all the actual Replicator vessels had assimilated Asgard knowledge, they have some of its perks, mainly the shield regenerating too-low-yield damage. Additionally, other related scripts, like the Replicator Adaptation script, may use them. #### TO-DO Update if changed ####
 # ** if "RaceShieldTech" : "Ori": several perks are added, included severely reduced shield damage collisions and when a too-low yield weapon is fired at them (lower than a few times their shield facet regeneration) their shields will absorb the energy to recover faster, instead of taking any shield damage.
 # ** Other values like "Tau'ri", "Hebridan", "Grace", "Martin Lloyds People" or "None" currently do not do anything beyond default behaviour.
 # *** Currently, as of time of release, "Tau'ri" is unused too, at least for shields, with Tau'ri vessels having either this field set to "Go'auld", "Asgard" or "None". #### TO-DO Update if changed ####
@@ -145,7 +145,7 @@ import FoundationTech
 from ftb.Tech.ATPFunctions import *
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-            "Version": "0.61",
+            "Version": "0.62",
             "License": "LGPL",
             "Description": "Read the small title above for more info"
             }
@@ -1684,7 +1684,7 @@ try:
 									forcedBleedthroughMultiplier = (forcedBleedthroughMultiplier * 2.0 + vulnerableBeamsToSGShields[key]["GuaranteedBleedthrough"]) / 2.0
 									forcedBleedthrough = forcedBleedthrough + 1
 		
-			if raceShieldTech == "Asgard" or raceShieldTech == "Ori" or raceShieldTech == "Asgard - Go'auld Hybrid": # POINT 10. Maybe check if we need to verify if the hull was hit, to avoid some shield facets regenerating when they shouldn't.
+			if raceShieldTech == "Asgard" or raceShieldTech == "Ori" or raceShieldTech == "Asgard - Go'auld Hybrid" or raceShieldTech == "Replicator": # POINT 10. Maybe check if we need to verify if the hull was hit, to avoid some shield facets regenerating when they shouldn't.
 				negateRegeneration = -1.0
 
 				specialmultiplier = 1.0

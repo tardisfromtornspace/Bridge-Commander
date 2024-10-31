@@ -1,4 +1,9 @@
 == Changelog ==
+1.1.2 - updates:
+   * Fixed an oversight where Replciator Beliskner did not have the Ion Weapon ammo amount properly updated.
+   * Added simulated point defense, pulse-style, to the Grace Ship and Grace Ship 2.
+   * Updated SGShields to 0.62. I've been told a reasonable argument about how replicators, having some Asgard shield knowledge assimilated, should be able to benefit from some of the benefits Asgard shielding has, apart from the shield adaptation. I agree. Thus, 0.62 allows vessels with Replicator shields to have the too-low-yield-regeneration perk.
+   * Updated Stargate Ship TGLs to reflect these mod new changes.
 1.1.1 - bug fixes:
    * Fixed a typo on the original SG Transport Nukes script which was not allowing the Prometheous Upgrade to transport nukes.
    * Updated SGShields to 0.61, now they are a bit more robust.

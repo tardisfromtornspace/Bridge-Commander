@@ -38,7 +38,8 @@ credits = {
 #                                                                                     #
 Foundation.ShipDef.GraceShip = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
 Foundation.ShipDef.GraceShip.dTechs = {
-	'SG Shields': { "RaceShieldTech": "Grace" }
+	'SG Shields': { "RaceShieldTech": "Grace" },
+	'Simulated Point Defence' : { "Distance": 60.0, "InnerDistance": 12.0, "Effectiveness": 0.99, "LimitTurn": 8.5, "LimitSpeed": 250, "LimitDamage": "-600", "Period": 8.0, "MaxNumberTorps": 2, "Pulse": {"Priority": 1}},
 }
 #                                                                                     #
 #######################################################################################
