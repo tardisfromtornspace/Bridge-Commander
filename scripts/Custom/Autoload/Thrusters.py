@@ -2,7 +2,9 @@ import App
 import Foundation
 import MissionLib
 
-# Author: Admiral_Ames
+import Lib.LibEngineering
+
+# Author: Admiral_Ames # Modified by CharaToLoki
 # Email: admiral_ames@sfhq.net
 # Website: http://www.sfhq.net
 # Legal: Please do not redistribute this script without my permission
@@ -164,10 +166,47 @@ def PrepareThrusters():
 	pMission = pEpisode.GetCurrentMission()
 	pPlayer = pGame.GetPlayer()
 	g_pPlayer = pPlayer
-        if pPlayer:
-	        pSet = pPlayer.GetContainingSet()
-	        App.g_kEventManager.AddBroadcastPythonFuncHandler(App.ET_INPUT_SET_IMPULSE, pMission, __name__ + ".SetImpulse" )
-	        CreateMenu()
+	if pPlayer:
+		pSet = pPlayer.GetContainingSet()
+	        # CharaToLoki's modification - checks if Thrusters already exist
+		theMenu = Lib.LibEngineering.GetBridgeMenu("Helm")
+		ArmorButton = None
+		if theMenu:
+			ArmorButton = Lib.LibEngineering.GetButton("Thrusters", theMenu)
+		if ArmorButton:
+			try:
+				DeleteMenuButton("Helm", "1/8 Thrusters", "Thrusters")
+			except:
+				pass
+			try:
+				DeleteMenuButton("Helm", "1/4 Thrusters", "Thrusters")
+			except:
+				pass
+			try:
+				DeleteMenuButton("Helm", "1/2 Thrusters", "Thrusters")
+			except:
+				pass
+			try:
+				DeleteMenuButton("Helm", "3/4 Thrusters", "Thrusters")
+			except:
+				pass
+			try:
+				DeleteMenuButton("Helm", "Full Thrusters", "Thrusters")
+			except:
+				pass
+			try:
+				DeleteMenuButton("Helm", "Thrusters")
+			except:
+				pass
+			
+			try:
+				App.g_kEventManager.RemoveBroadcastHandler(App.ET_INPUT_SET_IMPULSE, pMission, __name__ + ".SetImpulse" )
+			except:
+				pass
+
+		App.g_kEventManager.AddBroadcastPythonFuncHandler(App.ET_INPUT_SET_IMPULSE, pMission, __name__ + ".SetImpulse" )
+		CreateMenu()
+			
 
 	return 0
 
@@ -238,3 +277,20 @@ def GetBridgeMenu(Person):
         pMenu = pTacticalControlWindow.FindMenu(pDatabase.GetString(Person))
         App.g_kLocalizationManager.Unload(pDatabase)
         return pMenu
+
+# Deletes a button. From BCS:TNG's mod
+def DeleteMenuButton(sMenuName, sButtonName, sSubMenuName = None):
+	try:
+		pMenu   = self.GetBridgeMenu(sMenuName)
+	except:
+		traceback.print_exc()
+		pMenu = None
+	if not pMenu:
+		pMenu   = Lib.LibEngineering.GetBridgeMenu(sMenuName)
+	pButton = pMenu.GetButton(sButtonName)
+	if sSubMenuName != None:
+		pMenu = pMenu.GetSubmenu(sSubMenuName)
+		pButton = pMenu.GetButton(sButtonName)
+
+	if pMenu:
+		pMenu.DeleteChild(pButton)

@@ -26,7 +26,18 @@ bZeissAlive				= 0
 
 g_idPlayer				= App.NULL_ID
 
-
+###############################################################################
+#	PreLoadAssets()
+#	
+#	This is called once, at the beginning of the mission before Initialize()
+#	to allow us to add models to be pre loaded
+#	
+#	Args:	pMission	- the Mission object
+#	
+#	Return:	none
+###############################################################################
+def PreLoadAssets(pMission):
+	return
 #
 # Initialize() function
 #
