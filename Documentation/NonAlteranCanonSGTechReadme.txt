@@ -1,7 +1,7 @@
 == Changelog ==
 1.1.2 - updates:
    * Fixed an oversight where Replicator Beliskner did not have the Ion Weapon ammo amount properly updated.
-   * Fixed an oversight where TelTakVariant did not have the mass properly updated.
+   * Fixed an oversight where TelTakVariant and ModifiedTelTak did not have the mass (and shield too for the latter) properly updated.
    * Fixed an oversight where MartinsShip and MartinLloyd's Ship did not have the mass properly updated.
    * Added simulated point defense, pulse-style, to the Grace Ship and Grace Ship 2.
    * Updated SGShields to 0.62. I've been told a reasonable argument about how replicators, having some Asgard shield knowledge assimilated, should be able to benefit from some of the benefits Asgard shielding has, apart from the shield adaptation. I agree. Thus, 0.62 allows vessels with Replicator shields to have the too-low-yield-regeneration perk.
