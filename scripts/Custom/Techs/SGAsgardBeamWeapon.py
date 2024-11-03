@@ -29,7 +29,7 @@ Foundation.ShipDef.Ambassador.dTechs = {
 # "2" means both shield and hull immunity
 """
 Foundation.ShipDef.Ambassador.dTechs = {
-	"SG AsgardBeams Weapon Immune": 1
+	"SG Asgard Beams Weapon Immune": 1
 }
 """
 # Regarding subTechs

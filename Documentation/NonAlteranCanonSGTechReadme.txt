@@ -1,4 +1,6 @@
 == Changelog ==
+1.1.3 - updates:
+   * Fixed two typos in the Ori and Asgard beam manual.
 1.1.2 - updates:
    * Fixed an oversight where Replicator Beliskner did not have the Ion Weapon ammo amount properly updated.
    * Fixed an oversight where TelTakVariant and ModifiedTelTak did not have the mass (and shield too for the latter) properly updated.
