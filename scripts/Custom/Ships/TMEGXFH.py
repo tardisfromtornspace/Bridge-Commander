@@ -14,7 +14,6 @@ species = App.SPECIES_GALAXY
 menuGroup = "The Face of Fear"
 playerMenuGroup = "The Face of Fear"
 
-import traceback
 try:
 	import Custom.Autoload.RaceTMEGXFH
 	Foundation.ShipDef.TMEGXFH = Foundation.TMEGXFHShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile })
