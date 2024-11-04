@@ -798,7 +798,10 @@ def VentMiniPlasma(pWarpChild = None, pShip = None):
     #vEmitPos      = pShip.GetWorldForwardTG()
     #vEmitDir      = pShip.GetWorldUpTG()
     debug(__name__ + ", VentMiniPlasma")
-    pSet          = pShip.GetContainingSet()
+    if not pShip:
+        return
+    pShip = App.ShipClass_GetObjectByID(None, pShipID)
+    #pSet          = pShip.GetContainingSet()
     pAttachTo     = pShip.GetNode() #pSet.GetEffectRoot()
     pEmitFrom     = App.TGModelUtils_CastNodeToAVObject(pShip.GetNode())
     fPlasmaColor  = Custom.NanoFXv2.NanoFX_Lib.GetOverrideColor(pShip, "PlasmaFX")
@@ -813,28 +816,36 @@ def VentMiniPlasma(pWarpChild = None, pShip = None):
             ### Get X
             c = App.g_kSystemWrapper.GetRandomNumber(180) + 1 /180
             if c > 1:
-                c = -1
+                #c = 1
+                x = 4 #c * 4
+                x = -App.g_kSystemWrapper.GetRandomNumber(x + 1)
             else:
-                c = 1
-            x = c * 4
-            x = App.g_kSystemWrapper.GetRandomNumber(x + 1)
+                #c = 1
+                x = 4 #c * 4
+                x = App.g_kSystemWrapper.GetRandomNumber(x + 1)
+            
             
             # Get Y
             c = App.g_kSystemWrapper.GetRandomNumber(180) + 1 /180
             if c > 1:
-                c = -1
+                #c = 1
+                y = 4 #c * 4
+                y = -App.g_kSystemWrapper.GetRandomNumber(y + 1)
             else:
-                c = 1
-            y = c * 4
-            y = App.g_kSystemWrapper.GetRandomNumber(y + 1)
-            ### Get X
+                #c = 1
+                y = 4 #c * 4
+                y = App.g_kSystemWrapper.GetRandomNumber(y + 1)
+
+            ### Get Z
             c = App.g_kSystemWrapper.GetRandomNumber(180) + 1 /180
             if c > 1:
-                c = -1
+                #c = 1
+                z = 4 #c * 4
+                z = -App.g_kSystemWrapper.GetRandomNumber(z + 1)
             else:
-                c = 1
-            z = c * 4
-            z = App.g_kSystemWrapper.GetRandomNumber(z + 1)
+                #c = 1
+                z = 4 #c * 4
+                z = App.g_kSystemWrapper.GetRandomNumber(z + 1)
 
             ###
 

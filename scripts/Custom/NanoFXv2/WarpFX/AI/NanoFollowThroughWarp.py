@@ -120,6 +120,8 @@ class NanoFollowThroughWarp(NanoWarp.NanoWarp):
 			try:
 				pTargetShip = App.ShipClass_Cast(pObject)
 				pWarpSystem = pTargetShip.GetWarpEngineSubsystem()
+				if not pWarpSystem:
+					return 0
 				pWarpSequence = App.WarpSequence_Cast( pWarpSystem.GetWarpSequence() )
 
 				pSet = pWarpSequence.GetDestinationSet()
@@ -141,7 +143,9 @@ class NanoFollowThroughWarp(NanoWarp.NanoWarp):
 		# If it doesn't, get the info from the current location of the ship.
 		pTargetShip = App.ShipClass_Cast(pObject)
 		pWarpSystem = pTargetShip.GetWarpEngineSubsystem()
-		pWarpSequence = App.WarpSequence_Cast( pWarpSystem.GetWarpSequence() )
+		pWarpSequence = None
+		if pWarpSystem:
+			pWarpSequence = App.WarpSequence_Cast( pWarpSystem.GetWarpSequence() )
 		NoPlacementException = "No destination placement info"
 		try:
 			if not pWarpSequence:
