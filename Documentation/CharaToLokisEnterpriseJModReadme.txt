@@ -1,4 +1,8 @@
 == Changelog ==
+1.2.4 - Bug fixing:
+   * Updated GraviticLance to 1.51, fixing a typo.
+1.2.3 - Bug fixing:
+   * Updated GraviticLance to 1.5, fixing a typo.
 1.2.2 - Bug fixing:
    * Updated AdvArmortechThree to 1.82 fix a possible missing button issue.
 1.2.1 - Bug fixing:

@@ -1,6 +1,6 @@
 #################################################################################################################
 #         GraviticLance by Alex SL Gato
-#         Version 1.3
+#         Version 1.51
 #         19th October 2024
 #         Based on FiveSecsGodPhaser by USS Frontier, scripts/ftb/Tech/TachyonProjectile by the FoundationTechnologies team, and scripts/ftb/Tech/FedAblativeArmour by the FoundationTechnologies team
 #                          
@@ -28,7 +28,7 @@ def IsGraviticLanceImmune():
 #################################################################################################################
 #
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "1.4",
+	    "Version": "1.51",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -321,14 +321,14 @@ class GraviticLance(FoundationTech.TechDef):
 			return
 
 
-		if not pInstance.__dict__['GraviticLance']["RadDepletionStrength"]:
+		if not pInstance.__dict__['GraviticLance'].has_key("RadDepletionStrength"):
 			pInstance.__dict__['GraviticLance']["RadDepletionStrength"] = 100.0 # energy
 		iPower = pInstance.__dict__['GraviticLance']["RadDepletionStrength"]
 
 		pSeq = App.TGSequence_Create()
 		#print "depleting energy"
 
-		if not pInstance.__dict__['GraviticLance']["TimeEffect"] or pInstance.__dict__['GraviticLance']["TimeEffect"] <= 0.0:
+		if not pInstance.__dict__['GraviticLance'].has_key("TimeEffect") or pInstance.__dict__['GraviticLance']["TimeEffect"] <= 0.0:
 			pInstance.__dict__['GraviticLance']["TimeEffect"] = 5.0 # seconds
 		iTime = pInstance.__dict__['GraviticLance']["TimeEffect"]
 		while(iTime >= 0):
