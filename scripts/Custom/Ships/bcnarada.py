@@ -5,7 +5,7 @@
 
 import App
 import Foundation
-import BaznaradaShipDef
+import traceback
 
 
 abbrev = 'bcnarada'
@@ -17,9 +17,26 @@ species = App.SPECIES_GALAXY
 menuGroup = 'Romulan Ships'
 playerMenuGroup = 'Romulan Ships'
 
+worked = 0
+try:
+	import Custom.Autoload.RaceBaznarada
+	Foundation.ShipDef.bcnarada = Foundation.BaznaradaShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile })
+	worked = 1
+except:
+	worked = 0
+	print "Error while loading a race"
+	Foundation.ShipDef.bcnarada = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile})
+	traceback.print_exc()
 
-Foundation.ShipDef.bcnarada = BaznaradaShipDef.BaznaradaShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile })
+if worked == 1:
+	Foundation.ShipDef.bcnarada.OverrideWarpFXColor = Foundation.ShipDef.bcnarada.OverrideWarpFXColor
+	Foundation.ShipDef.bcnarada.OverridePlasmaFXColor = Foundation.ShipDef.bcnarada.OverridePlasmaFXColor
 
+Foundation.ShipDef.bcnarada.dTechs = {
+	'Breen Drainer Immune': 1,
+	'Borg Adaptation': 0.1,
+	'Automated Destroyed System Repair': {"Time": 300.0}
+}
 
 # Foundation.ShipDef.bcnarada.fMaxWarp
 # Foundation.ShipDef.bcnarada.fCruiseWarp

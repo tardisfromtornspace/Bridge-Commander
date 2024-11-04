@@ -21,28 +21,28 @@ import App
 ###############################################################################
 def Create(pTorp):
 	kCoreColor = App.TGColorA()
-	kCoreColor.SetRGBA(222.0 / 255.0, 255.0 / 255.0, 253.0 / 255.0, 1.000000)
+	kCoreColor.SetRGBA(222.0 / 255.0, 222.0 / 255.0, 253.0 / 255.0, 1.000000)
 	kGlowColor = App.TGColorA()
 	kGlowColor.SetRGBA(61.0 / 255.0, 98.0 / 255.0, 239.0 / 255.0, 1.000000)	
 
 	pTorp.CreateTorpedoModel(
 					"data/Textures/Tactical/naradaCore.tga",
 					kCoreColor, 
-					0.1,
-					0.25, 	 
+					0.4,
+					1.2, 	 
 					"data/Textures/Tactical/naradaGlow.tga", 
 					kGlowColor,
-					0.1,	
-					0.1,	 
-					0.1,	
+					0.3,	
+					0.3,	 
+					0.3,	
 					"data/Textures/Tactical/naradaFlares.tga",
 					kGlowColor,										
-					4,		
-					0.1,		
-					0.2)
+					8,		
+					0.3,		
+					0.5)
 
 	pTorp.SetDamage( GetDamage() )
-	pTorp.SetDamageRadiusFactor(0.11)
+	pTorp.SetDamageRadiusFactor(0.14)
 	pTorp.SetGuidanceLifetime( GetGuidanceLifetime() )
 	pTorp.SetMaxAngularAccel( GetMaxAngularAccel() )
 
@@ -63,13 +63,29 @@ def GetPowerCost():
 	return(30.0)
 
 def GetName():
-	return("Photon")
+	return("Narada MIRV Photon")
 
 def GetDamage():
-	return 250.0
+	return 650.0
 
 def GetGuidanceLifetime():
 	return 5.5
 
 def GetMaxAngularAccel():
 	return 0.55
+
+import traceback
+try:
+    import FoundationTech
+    import ftb.Tech.TimedTorpedoes
+    oFire = ftb.Tech.TimedTorpedoes.MIRVMultiTargetTorpedo(
+        'MIRVMultiTargetTorpedo', {
+        'spreadNumber': 10,
+        'spreadDensity': 358.0,
+        'warheadModule': "Tactical.Projectiles.naradaPhoton",
+        'shellLive': 1,
+    })
+    FoundationTech.dOnFires[__name__] = oFire
+except:
+    print "Something went wrong with TimedTorpedoes"
+    traceback.print_exc()

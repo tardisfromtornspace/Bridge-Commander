@@ -9,7 +9,11 @@ def GetShipStats():
 		"FilenameLow": "data/Models/ships/bcnarada/bcnarada.nif",
 		"Name": "Baz1701 Narada",
 		"HardpointFile": "bcnarada",
-		"Species": Multiplayer.SpeciesToShip.AMBASSADOR
+		"Species": Multiplayer.SpeciesToShip.AMBASSADOR,
+		"DamageRadMod" : 0.5,
+		"DamageStrMod" : 0.9,
+		"SpecularCoef": 0.55,
+		"GlowCoef": 2.55,
 	}
 	return kShipStats
 
@@ -22,9 +26,9 @@ def LoadModel(bPreLoad = 0):
 		# Surface Damage Res, Internal Damage Res, Burn Value, Hole Value,
 		# Search String for Glow, Search string for Specular, Suffix for specular
 		pLODModel = App.g_kLODModelManager.Create(pStats["Name"])
-		pLODModel.AddLOD(pStats["FilenameHigh"], 10, 200.0, 15.0, 15.0, 400, 900, "_glow", None, "_spec")
-		pLODModel.AddLOD(pStats["FilenameMed"],  10, 400.0, 15.0, 15.0, 400, 900, "_glow", None, "_spec")
-		pLODModel.AddLOD(pStats["FilenameLow"],  10, 800.0, 15.0, 30.0, 400, 900, "_glow", None, None)
+		pLODModel.AddLOD(pStats["FilenameHigh"], 10, 400.0, 15.0, 15.0, 900, 1200, "_glow", None, "_spec")
+		pLODModel.AddLOD(pStats["FilenameMed"],  10, 800.0, 15.0, 15.0, 900, 1200, "_glow", None, "_spec")
+		pLODModel.AddLOD(pStats["FilenameLow"],  10, 1600.0, 15.0, 30.0, 900, 1200, "_glow", None, None)
 
 #		kDebugObj = App.CPyDebug()
 		if (bPreLoad == 0):

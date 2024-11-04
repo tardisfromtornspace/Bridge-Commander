@@ -198,17 +198,20 @@ def EngageWarpSeq(pWarpSeq, pWarpSet, pPlayer, pShip):
 		### Clear the player's target ###
 		TacticalInterfaceHandlers.ClearTarget(None, None)
 		###
-		pSequence = DestinationCutscene(pWarpSeq, pShip)	
-		pWarpSeq.AddActionDuringWarp(pSequence, 1.2)
+		pSequence = DestinationCutscene(pWarpSeq, pShip)
+		if pSequence != None:	
+			pWarpSeq.AddActionDuringWarp(pSequence, 1.2)
 		pWarpSeq.AddAction(App.TGScriptAction_Create("MissionLib", "StartCutscene"), pPreWarp)
 	else:
 		pSequence = DoingNothingSequence(pWarpSeq, pShip)
-		pWarpSeq.AddActionDuringWarp(pSequence, 1.2)
+		if pSequence != None:
+			pWarpSeq.AddActionDuringWarp(pSequence, 1.2)
 	### If Ship has Moving Nacelles (Voyager) move them
 	try:
 		from Custom.AdvancedTechnologies.Data import ATP_Lib
 		pMoveNacellesAction = App.TGScriptAction_Create("Custom.AdvancedTechnologies.Data.ATP_Lib", "ForceNacelles", pShip, "Up")
-		pWarpSeq.AddAction(pMoveNacellesAction, pPreWarp, fEntryDelayTime - 2.8)
+		if pMoveNacellesAction != None:
+			pWarpSeq.AddAction(pMoveNacellesAction, pPreWarp, fEntryDelayTime - 2.8)
 	except:
 		ERROR = "No ATP3"
 	###		
@@ -218,11 +221,14 @@ def EngageWarpSeq(pWarpSeq, pWarpSet, pPlayer, pShip):
 		pWarpSoundAction1 = App.TGSoundAction_Create(sRace + "EnterWarp")
 		pWarpSoundAction1.SetNode(pWarpSet.GetEffectRoot())
 		### Force Full Impulse ###
-		pWarpSeq.AddAction(App.TGScriptAction_Create(__name__, "SetShipImpulse", pShip, 1.000000, TRUE), pPreWarp)
+		auxHelpAction = App.TGScriptAction_Create(__name__, "SetShipImpulse", pShip, 1.000000, TRUE)
+		if auxHelpAction != None:
+			pWarpSeq.AddAction(auxHelpAction, pPreWarp)
 		fCount = 0.0
 		while (fCount < fEntryDelayTime):
 			pCoastAction = App.TGScriptAction_Create("Actions.ShipScriptActions", "SetImpulse", pShip.GetObjID(), 1.0)
-			pWarpSeq.AddAction(pCoastAction, pPreWarp, fCount)
+			if pCoastAction != None:
+				pWarpSeq.AddAction(pCoastAction, pPreWarp, fCount)
 			fCount = fCount + 0.1
 	###
 	else:
@@ -231,25 +237,34 @@ def EngageWarpSeq(pWarpSeq, pWarpSet, pPlayer, pShip):
 			pWarpSoundAction1.SetNode(pShip.GetNode())
 
 	###
-	pWarpSeq.AddAction(pWarpSoundAction1, pPreWarp, fEntryDelayTime - 2.8)
-	pWarpSeq.AddAction(CreateNacelleFlashSeq(pShip, pShip.GetRadius()), pPreWarp, fEntryDelayTime - 0.9)
+	if pWarpSoundAction1 != None:
+		pWarpSeq.AddAction(pWarpSoundAction1, pPreWarp, fEntryDelayTime - 2.8)
+	auxiliarNacelleFlashSeq = CreateNacelleFlashSeq(pShip, pShip.GetRadius())
+	if auxiliarNacelleFlashSeq != None:
+		pWarpSeq.AddAction(auxiliarNacelleFlashSeq, pPreWarp, fEntryDelayTime - 0.9)
 	###	
 	### Begin Warping at the Delay Time ###
 	#pWarpSeq.AppendAction(App.TGScriptAction_Create(__name__, "CheckShipStillAbleToWarpAction", pShip))
-	pWarpSeq.AddAction(pWarpBeginAction, pPreWarp, fEntryDelayTime)
+	if pWarpBeginAction != None:
+		pWarpSeq.AddAction(pWarpBeginAction, pPreWarp, fEntryDelayTime)
 	###
 	### Move the ship ###
-	pWarpSeq.AddAction(pWarpEndAction, pWarpBeginAction, App.WarpEngineSubsystem_GetWarpEffectTime() / 4.0)
+	if pWarpEndAction != None:
+		pWarpSeq.AddAction(pWarpEndAction, pWarpBeginAction, App.WarpEngineSubsystem_GetWarpEffectTime() / 4.0)
 	###
 	### Create the warp flash ###
 	pFlashAction1 = App.TGScriptAction_Create("Actions.EffectScriptActions", "WarpFlash", pShip.GetObjID())
-	pWarpSeq.AddAction(pFlashAction1, pWarpEndAction, App.WarpEngineSubsystem_GetWarpEffectTime() / 4.0)
+	if pFlashAction1 != None:
+		pWarpSeq.AddAction(pFlashAction1, pWarpEndAction, App.WarpEngineSubsystem_GetWarpEffectTime() / 4.0)
 	###
 	### Hide the ship ###
-	pWarpSeq.AppendAction(App.TGScriptAction_Create(__name__, "HideShip", pShip.GetObjID(), TRUE))
+	anAuxHideAction = App.TGScriptAction_Create(__name__, "HideShip", pShip.GetObjID(), TRUE)
+	if anAuxHideAction != None:
+		pWarpSeq.AppendAction(anAuxHideAction)
 	###
 	### Place the ship in the warp set, shortly after WarpFlash ###
-	pWarpSeq.AddAction(pMoveAction1, pFlashAction1, 0.1)
+	if pMoveAction1 != None:
+		pWarpSeq.AddAction(pMoveAction1, pFlashAction1, 0.1)
 	###
 	if App.g_kUtopiaModule.IsMultiplayer() and App.g_kUtopiaModule.IsHost():
 		pGame = App.Game_GetCurrentGame()
