@@ -1,4 +1,5 @@
 == Changelog ==
+1.0 - Official Mod release
 0.3.2 - Upgraded UndyingComeback tech to 0.11, adding alternate model support.
 0.3.1 - Nerfed AndromedaTalyn's Gravitic Lance damage, both to make it more balanced and to avoid possible infinite-escalation loops.
 0.3 - Upgraded UndyingComeback tech to 0.1, fixing a few bugs.
@@ -69,7 +70,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 Known Bugs for SolidProjectiles (ordered by priority):
 - 1. [FIXED] With sCollide set to 1 with original functions enabled, ships could in fact crash the game if the player tried to end the simulation if and only if one of those torpedo-manned ships was still active. In pro of cautiousness and seeing how mode 2 worked the same without any of these issues, mode 1 was disabled, so none of those issues can happen.
 - 2. Solid projectiles while at warp set cannot hit fellow ships during warp (as, the projectile does not collide with the targets and just passes through). No other effects. Torps keep working correctly outside warp as intended.
-- 3. Even when tangible, ONLY phasers can hit the solid projectile vessels, no projectiles. 
+- 3. Even when semi-tangible, ONLY phasers can hit the solid projectile vessels, no projectiles. 
 - 4. Trying to tractor a torpedo ship may cause it to teleport.
 - 5. Due to the nature of Warp mods (with Warp being a common set for all warp travels in general), if a ship enters Warp from system A to B, fires torpedoes while on the Warp set, leaves Warp and then rapidly enters Warp again, they may still see temporary previous solid projectiles.
 - 6. While killing a torpedo ship causes no real issues, killing one of them with a phaser causes the vessel explosion to teleport.
