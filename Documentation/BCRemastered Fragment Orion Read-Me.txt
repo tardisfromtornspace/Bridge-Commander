@@ -1,0 +1,55 @@
+NOTE: Please notice only a fragment of this Remastered mod has been included on this KM install - only the Orville
+
+***Bridge Commander Remastered: Orion Alpha Release***
+
+*Highlights*
+60+ New TNG/PIC Ships Added and Balanced to Remastered Standards
+128 New TMP Era Ships Added and Balanced to Remastered Standards
+All New Ships Added to Multiplayer
+New "Super Battleship" Class Headlining With The Odyssey Class USS Enterprise-F
+Star Bases and Freighters For All Races (Breen and Dominion Use Cardassian)
+Customizable "Wave Defense" and "Starbase Assault" Game Mode
+Many New Multiplayer Modes
+
+
+*Install Instructions*
+1. Install Remastered 1.2 Official First, make sure to follow its own set of install instructions. Recommend a clean install without other mods.
+2. Copy these files into the directory and overwrite all files
+3. [Optional] - Disable Stock Ships Mutator in the Main Menu (Stock Ship Entries will be duplicated)
+
+*Era Switcher*
+There is an included Batch File that is used to switch Eras for Multiplayer, you do not need to use this for Single Player Quick Battle. If you are having trouble getting it to run correctly, you might need to give "Everyone" folder permissions to your BC install folder.
+
+This is required because there is currently a 128 ship limit in Multiplayer (the list of 128 different ships, not 128 ships active at the same time), it is possible in the future we might look into getting around this.
+
+For now, I HIGHLY RECOMMEND that anyone hosting Multiplayer matches to put the Era in the game name and all the players switch to the correct mode before joining.
+
+
+*Wave Defense*
+By default, Wave Defense uses the full roster of ships and the Fed Starbase. The Wave Defense scripts have been setup to read variables from a separate script file to limit the scope of the matches. This file is located in "Scripts\OrionConfig.py". It is suggested to use an advanced Notepad Editor like Notepad++ to edit this file. The options are described as comments in this file.
+*Starbase Assault*
+
+The Starbase Assault Scripts are setup similar to Wave Defense where the Starbase is configured in a separate script, which is located in "Scripts\OrionConfig.py"
+
+
+Message Denacity either on the Classic Star Trek Gaming Discord or STBC:REP and Chill Discord (or DM) For Any Assistance Needed
+
+https://discord.gg/TjySerhkCM
+
+
+***Credits***
+Denacity - Ship Balancing, Adding Ships To Multiplayer, Extra Wave Defense Scripting
+Dasher42 - Foundation
+VonFrank - General Assistance and for Remastered 1.2 itself, Original Wave Defense Scenario
+Elijah - General Assistance, Model Resizing
+ThatGuyBrian - Assistance With Model Porting
+Hexagonal_ Nexul - New Model Work
+Greystar STBC - New Model Work
+CasvalRel - New Model Work
+MSR1701 - PR Work and General Help
+Whiskers - Testing
+Kirb - Testing
+https://www.thelcars.com/ - LCARS Templates For Promotional Images
+
+***ALL ORIGINAL SHIP CREDIT READ-ME'S ARE LOCATED IN "Ship Credits" - REFERENCE THIS FOLDER FOR SHIP CREDIT INFO***
+
