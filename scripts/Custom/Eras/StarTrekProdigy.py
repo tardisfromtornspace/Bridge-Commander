@@ -17,30 +17,30 @@ RaceInfo = {
 	},
 	"Breen": {
 		"myEnemys": ["Cardassian", "Klingon", "Kessok", "Federation", "Romulan", "Borg", "8472"],
-		"myEnemys": ["Ferengi", "Dominion", "Sona"],
+		"myFriendlys": ["Ferengi", "Dominion", "Sona"],
 		"peaceVal": 0.35,
 	},
 	"Cardassian": {
 		"myEnemys": ["Borg", "Sona", ],
-		"myEnemys": ["Kessok", "Ferengi", ],
+		"myFriendlys": ["Kessok", "Ferengi", ],
 		"peaceVal": 0.5,
 	},
 	"Dominion": {
 		"myEnemys": ["Borg", "8472", ],
-		"myEnemys": ["Breen", "Ferengi", "Sona", ],
+		"myFriendlys": ["Breen", "Ferengi", "Sona", ],
 		"peaceVal": 0.48,
 	},
 	"Federation": {
 		"myEnemys": ["Borg", ],
-		"myEnemys": ["Kessok", "Klingon", "Romulan", "Ferengi", "Sona", ],
+		"myFriendlys": ["Kessok", "Klingon", "Romulan", "Ferengi", "Sona", ],
 		"peaceVal": 0.91,
 	},
 	"Ferengi": {
-		"myEnemys": ["Federation", ],
+		"myFriendlys": ["Federation", ],
 		"peaceVal": 0.91,
 	},
 	"Kessok": {
-		"myEnemys": ["Federation", ],
+		"myFriendlys": ["Federation", ],
 	},
 	"Vau N'Akat": {
 		"myEnemys": ["Federation", ],
@@ -48,12 +48,12 @@ RaceInfo = {
 	},
 	"Romulan": {
 		"myEnemys": ["Borg", "Breen", "8472", ],
-		"myEnemys": ["Federation", "Ferengi", ],
+		"myFriendlys": ["Federation", "Ferengi", ],
 		"peaceVal": 0.41,
 	},
 	"Sona": {
 		"myEnemys": [],
-		"myEnemys": ["Federation", "Dominion", ],
+		"myFriendlys": ["Federation", "Dominion", ],
 		"peaceVal": 0.92,
 	},
 }
