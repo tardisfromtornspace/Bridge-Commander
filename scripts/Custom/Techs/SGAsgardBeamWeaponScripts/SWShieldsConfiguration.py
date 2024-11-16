@@ -1,7 +1,7 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
 # 18th August 2024, by Alex SL Gato (CharaToLoki)
-# Version: 1.0
+# Version: 1.1
 # Meant to be used alongside the SGAsgardBeamWeapon Technology (located at scripts/Custom/Techs), this file must be under scripts/Custom/Techs/SGAsgardBeamWeaponScripts
 # As these are Sub-techs with some leeway, their manuals must be explained here:
 ##################################
@@ -105,8 +105,8 @@ def interactionHullBehaviour(attackerID, pAttacker, pAttackerInstance, pAttacker
 		# We reduce the damage... but your power plant gets damaged! Be careful or too many Ions may make you explode!
 		pPower = pTarget.GetPowerSubsystem()
 		if pPower:
-			myDamage = -hullDamageMultiplier * (1 - IonSWHullDamageMultiplier) * pTorp.GetDamage()
-			print "myDamage = ", myDamage
+			myDamage = -hullDamageMultiplier * (1 - IonSWHullDamageMultiplier) * pEvent.GetDamage()
+			#print "myDamage = ", myDamage
 			myStatus = pPower.GetCondition() + myDamage
   			if (myStatus) < 0.1:
 				myStatus = 0.1
@@ -116,7 +116,6 @@ def interactionHullBehaviour(attackerID, pAttacker, pAttackerInstance, pAttacker
 			pPower.SetCondition(myStatus)
 
 		hullDamageMultiplier = hullDamageMultiplier * IonSWHullDamageMultiplier
-		negateRegeneration = negateRegeneration + 1
 
 	return hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, wasChanged
 

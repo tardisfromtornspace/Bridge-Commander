@@ -1,7 +1,7 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
 # 20th August 2024, by Alex SL Gato (CharaToLoki)
-# Version: 1.0
+# Version: 1.1
 # Meant to be used alongside the SGPlasmaWeapon Technology (located at scripts/Custom/Techs), this file must be under scripts/Custom/Techs/SGPlasmaWeaponScripts
 # As these are Sub-techs with some leeway, their manuals must be explained here:
 ##################################
@@ -99,10 +99,11 @@ def interactionShieldBehaviour(pShip, sScript, sShipScript, pInstance, pEvent, p
 
 		shieldDamageMultiplier = shieldDamageMultiplier * PlasmaSWShieldDamageMultiplier
 
+		pPower = pShip.GetPowerSubsystem()
 		if pPower:
-			print "SW POWER DAMAGE"
+			#print "SW POWER DAMAGE"
 			myDamage = -hullDamageMultiplier * (1 - PlasmaSWHullDamageMultiplier) * pTorp.GetDamage()
-			print "myDamage = ", myDamage
+			#print "myDamage = ", myDamage
 			myStatus = pPower.GetCondition() + myDamage
   			if (myStatus) < 0.1:
 				myStatus = 0.1
@@ -124,7 +125,7 @@ def interactionHullBehaviour(pShip, sScript, sShipScript, pInstance, pEvent, pTo
 		pPower = pShip.GetPowerSubsystem()
 		if pPower:
 			myDamage = -hullDamageMultiplier * (1 - PlasmaSWHullDamageMultiplier) * pTorp.GetDamage() * PlasmaSWHullDamageMultiplierBoost
-			print "myDamage = ", myDamage
+			#print "myDamage = ", myDamage
 			myStatus = pPower.GetCondition() + myDamage
   			if (myStatus) < 0.1:
 				myStatus = 0.1

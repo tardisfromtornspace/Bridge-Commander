@@ -1,4 +1,6 @@
 == Changelog ==
+1.1.4 - bug fixes:
+   * Fixed three typos in the Ori, Asgard and Ion beam local configurations.
 1.1.3 - updates:
    * Fixed two typos in the Ori and Asgard beam manual.
 1.1.2 - updates:
