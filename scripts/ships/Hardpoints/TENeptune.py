@@ -8,7 +8,7 @@ import GlobalPropertyTemplates
 #################################################
 Hull = App.HullProperty_Create("Hull")
 
-Hull.SetMaxCondition(2500.000000)
+Hull.SetMaxCondition(1250.000000)
 Hull.SetCritical(1)
 Hull.SetTargetable(1)
 Hull.SetPrimary(1)
@@ -37,7 +37,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(SensorArray)
 #################################################
 ReactorCore = App.PowerProperty_Create("Reactor Core")
 
-ReactorCore.SetMaxCondition(300.000000)
+ReactorCore.SetMaxCondition(330.000000)
 ReactorCore.SetCritical(1)
 ReactorCore.SetTargetable(1)
 ReactorCore.SetPrimary(1)
@@ -55,7 +55,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(ReactorCore)
 #################################################
 ImpulseEngines = App.ImpulseEngineProperty_Create("Impulse Engines")
 
-ImpulseEngines.SetMaxCondition(2000.000000)
+ImpulseEngines.SetMaxCondition(1000.000000)
 ImpulseEngines.SetCritical(0)
 ImpulseEngines.SetTargetable(0)
 ImpulseEngines.SetPrimary(1)
@@ -74,7 +74,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(ImpulseEngines)
 #################################################
 WarpEngines = App.WarpEngineProperty_Create("Warp Engines")
 
-WarpEngines.SetMaxCondition(3000.000000)
+WarpEngines.SetMaxCondition(999.000000)
 WarpEngines.SetCritical(0)
 WarpEngines.SetTargetable(0)
 WarpEngines.SetPrimary(1)
@@ -88,7 +88,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(WarpEngines)
 #################################################
 DamageControl = App.RepairSubsystemProperty_Create("Damage Control")
 
-DamageControl.SetMaxCondition(5000.000000)
+DamageControl.SetMaxCondition(1000.000000)
 DamageControl.SetCritical(0)
 DamageControl.SetTargetable(0)
 DamageControl.SetPrimary(1)
@@ -215,7 +215,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(Bridge)
 #################################################
 HullPolarizer = App.ShieldProperty_Create("Hull Polarizer")
 
-HullPolarizer.SetMaxCondition(2000.000000)
+HullPolarizer.SetMaxCondition(1000.000000)
 HullPolarizer.SetCritical(0)
 HullPolarizer.SetTargetable(1)
 HullPolarizer.SetPrimary(1)
@@ -301,7 +301,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(PortImpulse)
 #################################################
 TorpedoLaunchBay = App.TorpedoSystemProperty_Create("Torpedo Launch Bay")
 
-TorpedoLaunchBay.SetMaxCondition(1500.000000)
+TorpedoLaunchBay.SetMaxCondition(500.000000)
 TorpedoLaunchBay.SetCritical(0)
 TorpedoLaunchBay.SetTargetable(0)
 TorpedoLaunchBay.SetPrimary(1)
@@ -432,7 +432,7 @@ EIntrepid = App.ShipProperty_Create("EIntrepid")
 
 EIntrepid.SetGenus(1)
 EIntrepid.SetSpecies(105)
-EIntrepid.SetMass(250.000000)
+EIntrepid.SetMass(4500.000000)
 EIntrepid.SetRotationalInertia(1000.000000)
 EIntrepid.SetShipName("TENeptune")
 EIntrepid.SetModelFilename("data/Models/Ships/TEIntrepid.nif")

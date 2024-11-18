@@ -1,4 +1,10 @@
 ==Changelog==
+1.2.11 -
+   Fixes:
+   * Updated Hull Polarizer to 1.31, fixing a small issue where a polarized plate could sometimes take twice the damage.
+1.2.10 -
+   Fixes:
+   * Updated Hull Polarizer to 1.3, fixing a small inefficiency.
 1.2.9 -
    Fixes:
    * Updated Thirdspace Capital Ship to have multi-targeting and a faster-recharge Lightbringer.

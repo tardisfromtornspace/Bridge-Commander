@@ -1,6 +1,6 @@
 # THIS MOD IS NOT SUPPORTED BY ACTIVISION
 # HullPolarizer.py
-# Version 1.2
+# Version 1.31
 # By Alex SL Gato
 # Based on FedAblativeArmour.py and AblativeArmour.py made by the FoundationTechnologies team (specifically, but not only, MLeo) and scripts/Custom/DS9FX/DS9FXLifeSupport/HandleShields.py by USS Sovereign
 from bcdebug import debug
@@ -10,7 +10,7 @@ import Foundation
 
 MODINFO = {
 		"Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-		"Version": "1.2",
+		"Version": "1.31",
 		"License": "LGPL",
 		"Description": "Read the small title above for more info"
 	}
@@ -79,47 +79,53 @@ class PolarizedHullPlatingDef(FoundationTech.TechDef):
 		for pPlate in lArmors:
 			vDifference = NiPoint3ToTGPoint3(pPlate.GetPosition())
 			vDifference.Subtract(kPoint)
-			
+
 			# if fRadius + pPlate.GetRadius() > vDifference.Length() and pPlate.GetConditionPercentage() > fHighestCondition:
 			# Yeah I know this is oversimplified, but it has been made as if all the polarized platings can work from a range
 			if pPlate.GetConditionPercentage() > fHighestCondition and not pPlate.IsDisabled():
 				pProtectingPlate = pPlate
 				fHighestCondition = pProtectingPlate.GetConditionPercentage()
-				if fRadius + pPlate.GetRadius() > vDifference.Length():
+				if fRadius + pPlate.GetRadius() >= vDifference.Length() and pPlate.IsTargetable():
 					bPlateAtRange = 1
 				else:
 					bPlateAtRange = 0
 		
-		if not pProtectingPlate:
-			# no plate, but still record the current damage - we could need it later
+		if pProtectingPlate == None or not pProtectingPlate:
+			# no plate or no actual damage, but still record the current damage - we could need it later
 			pShipModule=__import__(pShip.GetScript())
-			try:
-				kShipStats = pShipModule.GetShipStats()
-				if kShipStats.has_key('DamageRadMod'):
-					pShip.SetVisibleDamageRadiusModifier(kShipStats['DamageRadMod'])
-				else:
+			if fDamage > 0.0:
+				try:
+					kShipStats = pShipModule.GetShipStats()
+					if kShipStats.has_key('DamageRadMod'):
+						pShip.SetVisibleDamageRadiusModifier(kShipStats['DamageRadMod'])
+					else:
+						pShip.SetVisibleDamageRadiusModifier(1.0)
+					if kShipStats.has_key('DamageStrMod'):
+						pShip.SetVisibleDamageStrengthModifier(kShipStats['DamageStrMod'])
+					else:
+						pShip.SetVisibleDamageStrengthModifier(1.0)
+				except:
 					pShip.SetVisibleDamageRadiusModifier(1.0)
-				if kShipStats.has_key('DamageStrMod'):
-					pShip.SetVisibleDamageStrengthModifier(kShipStats['DamageStrMod'])
-				else:
 					pShip.SetVisibleDamageStrengthModifier(1.0)
-			except:
-				pShip.SetVisibleDamageRadiusModifier(1.0)
-				pShip.SetVisibleDamageStrengthModifier(1.0)
 
 			for pSystem in lSystems:
 				dOldConditions[pSystem.GetName()] = pSystem.GetConditionPercentage()
-			return
 
 		pShields = pShip.GetShields()
 		energyCommited = 1.0
 		if pShields:
 			energyCommited = pShields.GetPowerPercentageWanted()
 
-		damageRadiVal = 1 - 0.85 * pProtectingPlate.GetConditionPercentage() * energyCommited
+		platingEffect = 1.0
+		try:
+			platingEffect = pProtectingPlate.GetConditionPercentage() * energyCommited
+		except:
+			return
+
+		damageRadiVal = 1 - 0.85 * platingEffect
 		if damageRadiVal < 0.0:
 			damageRadiVal = 0
-		damageStreVal = 1 - 0.75 * pProtectingPlate.GetConditionPercentage() * energyCommited
+		damageStreVal = 1 - 0.75 * platingEffect
 		if damageStreVal < 0.0:
 			damageStreVal = 0
 
@@ -130,21 +136,25 @@ class PolarizedHullPlatingDef(FoundationTech.TechDef):
 		if not pEvent.IsHullHit():
 			return
 
+		if fDamage <= 0.0: # If it heals us or does nothing, do not prevent the hull polarizer from healing, just store damage values
+			for pSystem in lSystems:
+				dOldConditions[pSystem.GetName()] = pSystem.GetConditionPercentage()
+			return
+
 		# get affected systems
 		lAffectedSystems = []
 		kProtectingPlatePos = NiPoint3ToTGPoint3(pProtectingPlate.GetPosition())
 		for pSystem in lSystems:
-			vDifference = NiPoint3ToTGPoint3(pSystem.GetPosition())
-			vDifference.Subtract(kPoint)
-			# vDifference.Subtract(kProtectingPlatePos)
+			if pSystem.IsTargetable():
+				vDifference = NiPoint3ToTGPoint3(pSystem.GetPosition())
+				vDifference.Subtract(kPoint)
+				# vDifference.Subtract(kProtectingPlatePos)
 
-			# if pProtectingPlate.GetRadius() + pSystem.GetRadius() > vDifference.Length():
-			if fRadius + pSystem.GetRadius() > vDifference.Length():
-				lAffectedSystems.append(pSystem)
-		
-		# remove visible damage if our plate is still intact
-		#if not pProtectingPlate.IsDisabled():
-		#	pShip.RemoveVisibleDamage()
+				# if pProtectingPlate.GetRadius() + pSystem.GetRadius() > vDifference.Length():
+				if fRadius + pSystem.GetRadius() >= vDifference.Length():
+					lAffectedSystems.append(pSystem)
+				else:
+					dOldConditions[pSystem.GetName()] = pSystem.GetConditionPercentage()
 		
 		# calculate the damage per radius
 		#fOffSet = 1 + fRadius
@@ -160,10 +170,12 @@ class PolarizedHullPlatingDef(FoundationTech.TechDef):
 			polarizerEffectiveness = 1.0
 
 		dOldConditions[pProtectingPlate.GetName()] = pProtectingPlate.GetConditionPercentage()
-		#if not dOldConditions.has_key(pProtectingPlate.GetName()):
-		#	dOldConditions[pProtectingPlate.GetName()] = 1.0
-		#if dOldConditions[pProtectingPlate.GetName()] < pProtectingPlate.GetConditionPercentage():
-		#	dOldConditions[pProtectingPlate.GetName()] = pProtectingPlate.GetConditionPercentage()
+
+		inversePlateCondition = 1-pProtectingPlate.GetConditionPercentage()
+		lenTotalAffectedSystems = bPlateAtRange + len(lAffectedSystems)
+		genericDamageReduction = 0
+		if lenTotalAffectedSystems > 0:
+			genericDamageReduction = 1.5 * inversePlateCondition * polarizerEffectiveness * fAllocatedFactor / lenTotalAffectedSystems
 
 		for pSystem in lAffectedSystems:
 			if not dOldConditions.has_key(pSystem.GetName()):
@@ -173,22 +185,27 @@ class PolarizedHullPlatingDef(FoundationTech.TechDef):
 				dOldConditions[pSystem.GetName()] = pSystem.GetConditionPercentage()
 					
 			fOldCondition = dOldConditions[pSystem.GetName()]
-			if not pProtectingPlate.IsDisabled() and not pSystem.GetName() == pProtectingPlate.GetName():
-				fDiff = 1 - fOldCondition + fDamage / pSystem.GetMaxCondition()
-				# some of these calcs could be done outside the loop
-				fNewCondition = fOldCondition - 1.5 * fDiff * (1-pProtectingPlate.GetConditionPercentage()) * polarizerEffectiveness * fAllocatedFactor / (1 + len(lAffectedSystems))
-			#else:
-			#	fDiff = 1 - fOldCondition + fDamage / pSystem.GetMaxCondition()
-			#	# some of these calcs could be done outside the loop
-			#	fNewCondition = fOldCondition - 1.5 * fDiff * fAllocatedFactor / (1 + len(lAffectedSystems))
-			pSystem.SetConditionPercentage(fNewCondition)
-			dOldConditions[pSystem.GetName()] = fNewCondition
+			if fOldCondition > 0.0:
+				if not pProtectingPlate.IsDisabled() and not pSystem.GetName() == pProtectingPlate.GetName():
+					fDiff = 1 - fOldCondition + (fDamage / pSystem.GetMaxCondition()) # Percentage of total health damaged before + percentage of the new damage = current
+					# some of these calcs could be done outside the loop
+					fNewCondition = fOldCondition - (fDiff * genericDamageReduction)
 
-		if bPlateAtRange == 0:
+					if fNewCondition > (fOldCondition + (fDamage / pSystem.GetMaxCondition())):
+						fNewCondition = fOldCondition
+					if fNewCondition > 1.0:
+						fNewCondition = 1.0
+				elif pProtectingPlate.IsDisabled():
+					fNewCondition = pSystem.GetConditionPercentage()
+
+				pSystem.SetConditionPercentage(fNewCondition)
+				dOldConditions[pSystem.GetName()] = fNewCondition
+
+		if bPlateAtRange == 0 and len(lAffectedSystems) > 0:
 			fOldCondition2 = dOldConditions[pProtectingPlate.GetName()]
 			#fDiff2 = 1 - fOldCondition2 + fDamage / pProtectingPlate.GetMaxCondition()
 			fDiff2 = fDamage / pProtectingPlate.GetMaxCondition()
-			fNewCondition2 = fOldCondition2 - 0.5 * fDiff2 / (len(lAffectedSystems) + 1)
+			fNewCondition2 = fOldCondition2 - fDiff2 / (len(lAffectedSystems) + 1)
 			
 			pProtectingPlate.SetConditionPercentage(fNewCondition2)
 			dOldConditions[pProtectingPlate.GetName()] = fNewCondition2
@@ -235,20 +252,20 @@ class PolarizedHullPlatingDef(FoundationTech.TechDef):
 		pInstance.lPulseDefense.remove(self)
 		pInstance.lBeamDefense.remove(self)
 
-	def GetSystemName(self):
+	def GetSystemName(self, *args):
 		debug(__name__ + ", GetSystemName")
 		return "Polarized Hull Plating"
 
-	def GetSystemPointer(self):
+	def GetSystemPointer(self, *args):
 		debug(__name__ + ", GetSystemPointer")
 		return 'pArmour'
 
-	def GetFillColor(self):
+	def GetFillColor(self, *args):
 		debug(__name__ + ", GetFillColor")
 		global kFillColor
 		return kFillColor
 		
-	def GetEmptyColor(self):
+	def GetEmptyColor(self, *args):
 		debug(__name__ + ", GetEmptyColor")
 		global kEmptyColor
 		return kEmptyColor

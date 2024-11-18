@@ -8,7 +8,7 @@ import GlobalPropertyTemplates
 #################################################
 Hull = App.HullProperty_Create("Hull")
 
-Hull.SetMaxCondition(4000.000000)
+Hull.SetMaxCondition(1200.000000)
 Hull.SetCritical(1)
 Hull.SetTargetable(1)
 Hull.SetPrimary(1)
@@ -21,7 +21,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(Hull)
 #################################################
 SensorArray = App.SensorProperty_Create("Sensor Array")
 
-SensorArray.SetMaxCondition(2500.000000)
+SensorArray.SetMaxCondition(832.500000)
 SensorArray.SetCritical(0)
 SensorArray.SetTargetable(1)
 SensorArray.SetPrimary(1)
@@ -37,7 +37,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(SensorArray)
 #################################################
 WarpReactorCore = App.PowerProperty_Create("Warp Reactor Core")
 
-WarpReactorCore.SetMaxCondition(3500.000000)
+WarpReactorCore.SetMaxCondition(999.500000)
 WarpReactorCore.SetCritical(1)
 WarpReactorCore.SetTargetable(1)
 WarpReactorCore.SetPrimary(1)
@@ -55,7 +55,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(WarpReactorCore)
 #################################################
 ImpulseEngines = App.ImpulseEngineProperty_Create("Impulse Engines")
 
-ImpulseEngines.SetMaxCondition(2000.000000)
+ImpulseEngines.SetMaxCondition(666.900000)
 ImpulseEngines.SetCritical(0)
 ImpulseEngines.SetTargetable(0)
 ImpulseEngines.SetPrimary(1)
@@ -74,7 +74,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(ImpulseEngines)
 #################################################
 WarpEngines = App.WarpEngineProperty_Create("Warp Engines")
 
-WarpEngines.SetMaxCondition(3000.000000)
+WarpEngines.SetMaxCondition(1000.900000)
 WarpEngines.SetCritical(0)
 WarpEngines.SetTargetable(0)
 WarpEngines.SetPrimary(1)
@@ -88,7 +88,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(WarpEngines)
 #################################################
 Engineering = App.RepairSubsystemProperty_Create("Engineering")
 
-Engineering.SetMaxCondition(5000.000000)
+Engineering.SetMaxCondition(1000.900000)
 Engineering.SetCritical(0)
 Engineering.SetTargetable(0)
 Engineering.SetPrimary(1)
@@ -98,7 +98,7 @@ Engineering.SetRepairComplexity(4.000000)
 Engineering.SetDisabledPercentage(0.100000)
 Engineering.SetRadius(0.050000)
 Engineering.SetNormalPowerPerSecond(1.000000)
-Engineering.SetMaxRepairPoints(23.000000)
+Engineering.SetMaxRepairPoints(8.000000)
 Engineering.SetNumRepairTeams(2)
 App.g_kModelPropertyManager.RegisterLocalTemplate(Engineering)
 #################################################
@@ -202,7 +202,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(FirstPersonCamera)
 #################################################
 Bridge = App.HullProperty_Create("Bridge")
 
-Bridge.SetMaxCondition(3000.000000)
+Bridge.SetMaxCondition(1000.900000)
 Bridge.SetCritical(1)
 Bridge.SetTargetable(1)
 Bridge.SetPrimary(0)
@@ -245,7 +245,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(ShieldGenerator)
 #################################################
 PortWarp = App.EngineProperty_Create("Port Warp")
 
-PortWarp.SetMaxCondition(1450.000000)
+PortWarp.SetMaxCondition(483.400000)
 PortWarp.SetCritical(0)
 PortWarp.SetTargetable(1)
 PortWarp.SetPrimary(1)
@@ -259,7 +259,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(PortWarp)
 #################################################
 StarWarp = App.EngineProperty_Create("Star Warp")
 
-StarWarp.SetMaxCondition(1450.000000)
+StarWarp.SetMaxCondition(483.400000)
 StarWarp.SetCritical(0)
 StarWarp.SetTargetable(1)
 StarWarp.SetPrimary(1)
@@ -329,7 +329,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(BackupEngines2)
 #################################################
 TorpedoLaunchBay = App.TorpedoSystemProperty_Create("Torpedo Launch Bay")
 
-TorpedoLaunchBay.SetMaxCondition(2000.000000)
+TorpedoLaunchBay.SetMaxCondition(666.900000)
 TorpedoLaunchBay.SetCritical(0)
 TorpedoLaunchBay.SetTargetable(1)
 TorpedoLaunchBay.SetPrimary(1)
@@ -532,7 +532,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(AftTorp2)
 #################################################
 PhaseCannonArray = App.WeaponSystemProperty_Create("Phase Cannon Array ")
 
-PhaseCannonArray.SetMaxCondition(1500.000000)
+PhaseCannonArray.SetMaxCondition(500.400000)
 PhaseCannonArray.SetCritical(0)
 PhaseCannonArray.SetTargetable(0)
 PhaseCannonArray.SetPrimary(1)
@@ -552,7 +552,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(PhaseCannonArray)
 #################################################
 PhaseCannon1 = App.PhaserProperty_Create("Phase Cannon 1")
 
-PhaseCannon1.SetMaxCondition(1000.000000)
+PhaseCannon1.SetMaxCondition(334.400000)
 PhaseCannon1.SetCritical(0)
 PhaseCannon1.SetTargetable(1)
 PhaseCannon1.SetPrimary(1)
@@ -615,7 +615,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(PhaseCannon1)
 #################################################
 PhaseCannon2 = App.PhaserProperty_Create("Phase Cannon 2")
 
-PhaseCannon2.SetMaxCondition(1000.000000)
+PhaseCannon2.SetMaxCondition(334.400000)
 PhaseCannon2.SetCritical(0)
 PhaseCannon2.SetTargetable(1)
 PhaseCannon2.SetPrimary(1)
@@ -678,7 +678,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(PhaseCannon2)
 #################################################
 PhaseDisrupers = App.WeaponSystemProperty_Create("Phase Disrupers")
 
-PhaseDisrupers.SetMaxCondition(1500.000000)
+PhaseDisrupers.SetMaxCondition(500.400000)
 PhaseDisrupers.SetCritical(0)
 PhaseDisrupers.SetTargetable(1)
 PhaseDisrupers.SetPrimary(1)
@@ -888,7 +888,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(DecoyLauncher)
 #################################################
 MainHangar1 = App.HullProperty_Create("Main Hangar 1")
 
-MainHangar1.SetMaxCondition(800.000000)
+MainHangar1.SetMaxCondition(400.000000)
 MainHangar1.SetCritical(0)
 MainHangar1.SetTargetable(1)
 MainHangar1.SetPrimary(0)
@@ -901,7 +901,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(MainHangar1)
 #################################################
 MainHangar2 = App.HullProperty_Create("Main Hangar 2")
 
-MainHangar2.SetMaxCondition(800.000000)
+MainHangar2.SetMaxCondition(400.000000)
 MainHangar2.SetCritical(0)
 MainHangar2.SetTargetable(1)
 MainHangar2.SetPrimary(0)
@@ -914,7 +914,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(MainHangar2)
 #################################################
 ShuttleDropBay1 = App.HullProperty_Create("Shuttle Drop Bay 1")
 
-ShuttleDropBay1.SetMaxCondition(950.000000)
+ShuttleDropBay1.SetMaxCondition(450.000000)
 ShuttleDropBay1.SetCritical(0)
 ShuttleDropBay1.SetTargetable(1)
 ShuttleDropBay1.SetPrimary(0)
@@ -927,7 +927,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(ShuttleDropBay1)
 #################################################
 ShuttleDropBay2 = App.HullProperty_Create("Shuttle Drop Bay 2")
 
-ShuttleDropBay2.SetMaxCondition(950.000000)
+ShuttleDropBay2.SetMaxCondition(450.000000)
 ShuttleDropBay2.SetCritical(0)
 ShuttleDropBay2.SetTargetable(1)
 ShuttleDropBay2.SetPrimary(0)
@@ -942,8 +942,8 @@ NX01Enterprise = App.ShipProperty_Create("NX01 Enterprise")
 
 NX01Enterprise.SetGenus(1)
 NX01Enterprise.SetSpecies(104)
-NX01Enterprise.SetMass(51.000000)
-NX01Enterprise.SetRotationalInertia(1000.000000)
+NX01Enterprise.SetMass(5200.000000)
+NX01Enterprise.SetRotationalInertia(334.400000)
 NX01Enterprise.SetShipName("NX01Enterprise")
 NX01Enterprise.SetModelFilename("data/Models/Ships/NX01-Enterprise/nx01.nif")
 NX01Enterprise.SetDamageResolution(10.000000)
@@ -1083,7 +1083,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(AntimatterPods)
 #################################################
 TractorSystem = App.WeaponSystemProperty_Create("Tractor System")
 
-TractorSystem.SetMaxCondition(1000.000000)
+TractorSystem.SetMaxCondition(334.400000)
 TractorSystem.SetCritical(0)
 TractorSystem.SetTargetable(0)
 TractorSystem.SetPrimary(1)
@@ -1355,7 +1355,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(Engineer4static)
 #################################################
 PhaseCanonDorsal1 = App.PhaserProperty_Create("Phase Canon Dorsal 1")
 
-PhaseCanonDorsal1.SetMaxCondition(1000.000000)
+PhaseCanonDorsal1.SetMaxCondition(334.400000)
 PhaseCanonDorsal1.SetCritical(0)
 PhaseCanonDorsal1.SetTargetable(1)
 PhaseCanonDorsal1.SetPrimary(1)
@@ -1418,7 +1418,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(PhaseCanonDorsal1)
 #################################################
 PhaseCanonDorsal2 = App.PhaserProperty_Create("Phase Canon Dorsal 2")
 
-PhaseCanonDorsal2.SetMaxCondition(1000.000000)
+PhaseCanonDorsal2.SetMaxCondition(334.400000)
 PhaseCanonDorsal2.SetCritical(0)
 PhaseCanonDorsal2.SetTargetable(1)
 PhaseCanonDorsal2.SetPrimary(1)
@@ -1481,7 +1481,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(PhaseCanonDorsal2)
 #################################################
 PhaseCanonVentral1 = App.PhaserProperty_Create("Phase Canon Ventral 1")
 
-PhaseCanonVentral1.SetMaxCondition(1000.000000)
+PhaseCanonVentral1.SetMaxCondition(334.400000)
 PhaseCanonVentral1.SetCritical(0)
 PhaseCanonVentral1.SetTargetable(1)
 PhaseCanonVentral1.SetPrimary(1)
@@ -1544,7 +1544,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(PhaseCanonVentral1)
 #################################################
 PhaseCanonVentral2 = App.PhaserProperty_Create("Phase Canon Ventral 2")
 
-PhaseCanonVentral2.SetMaxCondition(1000.000000)
+PhaseCanonVentral2.SetMaxCondition(334.400000)
 PhaseCanonVentral2.SetCritical(0)
 PhaseCanonVentral2.SetTargetable(1)
 PhaseCanonVentral2.SetPrimary(1)
@@ -1620,7 +1620,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(AblativeArmour)
 #################################################
 PhaseCannon3 = App.PhaserProperty_Create("Phase Cannon 3")
 
-PhaseCannon3.SetMaxCondition(1000.000000)
+PhaseCannon3.SetMaxCondition(334.400000)
 PhaseCannon3.SetCritical(0)
 PhaseCannon3.SetTargetable(1)
 PhaseCannon3.SetPrimary(1)
@@ -1683,7 +1683,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(PhaseCannon3)
 #################################################
 PhaseCannon4 = App.PhaserProperty_Create("Phase Cannon 4")
 
-PhaseCannon4.SetMaxCondition(1000.000000)
+PhaseCannon4.SetMaxCondition(334.400000)
 PhaseCannon4.SetCritical(0)
 PhaseCannon4.SetTargetable(1)
 PhaseCannon4.SetPrimary(1)
@@ -1746,7 +1746,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(PhaseCannon4)
 #################################################
 PhaseCannon5 = App.PhaserProperty_Create("Phase Cannon 5")
 
-PhaseCannon5.SetMaxCondition(1000.000000)
+PhaseCannon5.SetMaxCondition(334.400000)
 PhaseCannon5.SetCritical(0)
 PhaseCannon5.SetTargetable(1)
 PhaseCannon5.SetPrimary(1)
@@ -1809,7 +1809,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(PhaseCannon5)
 #################################################
 PhaseCannon6 = App.PhaserProperty_Create("Phase Cannon 6")
 
-PhaseCannon6.SetMaxCondition(1000.000000)
+PhaseCannon6.SetMaxCondition(334.400000)
 PhaseCannon6.SetCritical(0)
 PhaseCannon6.SetTargetable(1)
 PhaseCannon6.SetPrimary(1)
@@ -2223,7 +2223,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(CloakingDevice)
 #################################################
 TractorEmitter = App.TractorBeamProperty_Create("Tractor Emitter")
 
-TractorEmitter.SetMaxCondition(1500.000000)
+TractorEmitter.SetMaxCondition(500.400000)
 TractorEmitter.SetCritical(0)
 TractorEmitter.SetTargetable(1)
 TractorEmitter.SetPrimary(1)
