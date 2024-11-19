@@ -138,6 +138,20 @@ WarpEngines.SetRadius(0.015000)
 WarpEngines.SetNormalPowerPerSecond(0.000000)
 App.g_kModelPropertyManager.RegisterLocalTemplate(WarpEngines)
 #################################################
+ProtoCore = App.WarpEngineProperty_Create("Proto-Core")
+
+ProtoCore.SetMaxCondition(6000.000000)
+ProtoCore.SetCritical(1)
+ProtoCore.SetTargetable(1)
+ProtoCore.SetPrimary(0)
+ProtoCore.SetPosition(0.000000, 0.010000, -0.015000)
+ProtoCore.SetPosition2D(126.000000, 50.000000)
+ProtoCore.SetRepairComplexity(1.000000)
+ProtoCore.SetDisabledPercentage(0.500000)
+ProtoCore.SetRadius(0.015000)
+ProtoCore.SetNormalPowerPerSecond(50.000000)
+App.g_kModelPropertyManager.RegisterLocalTemplate(ProtoCore)
+#################################################
 Torpedoes = App.TorpedoSystemProperty_Create("Torpedoes")
 
 Torpedoes.SetMaxCondition(1500.000000)
@@ -202,6 +216,20 @@ StarWarp.SetDisabledPercentage(0.500000)
 StarWarp.SetRadius(0.045000)
 StarWarp.SetEngineType(StarWarp.EP_WARP)
 App.g_kModelPropertyManager.RegisterLocalTemplate(StarWarp)
+#################################################
+ProtoWarpNacelle = App.EngineProperty_Create("Proto Warp Nacelle")
+
+ProtoWarpNacelle.SetMaxCondition(3000.000000)
+ProtoWarpNacelle.SetCritical(0)
+ProtoWarpNacelle.SetTargetable(1)
+ProtoWarpNacelle.SetPrimary(1)
+ProtoWarpNacelle.SetPosition(0.000000, 0.000000, 0.075000)
+ProtoWarpNacelle.SetPosition2D(135.000000, 33.000000)
+ProtoWarpNacelle.SetRepairComplexity(1.000000)
+ProtoWarpNacelle.SetDisabledPercentage(0.500000)
+ProtoWarpNacelle.SetRadius(0.045000)
+ProtoWarpNacelle.SetEngineType(StarWarp.EP_WARP)
+App.g_kModelPropertyManager.RegisterLocalTemplate(ProtoWarpNacelle)
 #################################################
 Engineering = App.RepairSubsystemProperty_Create("Engineering")
 
@@ -1231,6 +1259,9 @@ def LoadPropertySet(pObj):
 	prop = App.g_kModelPropertyManager.FindByName("Warp Engines", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
+	prop = App.g_kModelPropertyManager.FindByName("Proto-Core", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	if (prop != None):
+		pObj.AddToSet("Scene Root", prop)
 	prop = App.g_kModelPropertyManager.FindByName("Torpedoes", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
@@ -1241,6 +1272,9 @@ def LoadPropertySet(pObj):
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
 	prop = App.g_kModelPropertyManager.FindByName("Star Warp", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	if (prop != None):
+		pObj.AddToSet("Scene Root", prop)
+	prop = App.g_kModelPropertyManager.FindByName("Proto Warp Nacelle", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
 	prop = App.g_kModelPropertyManager.FindByName("Engineering", App.TGModelPropertyManager.LOCAL_TEMPLATES)

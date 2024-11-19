@@ -4,6 +4,7 @@
 
 import App
 import Foundation
+import traceback
 
 
 abbrev = "USSProtostar"
@@ -14,8 +15,20 @@ species = App.SPECIES_GALAXY
 menuGroup = "Fed Ships"
 playerMenuGroup = "Fed Ships"
 SubMenu = 'Protostar Class'
-# TO-DO ADD AN ALTERNATE RACE TO ADD THE PRODIGY INTRO MUSIC
-Foundation.ShipDef.USSProtostar = Foundation.FedShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
+
+isRaceLoaded = 0 # A value that verifies things for later
+try:
+	import Custom.Autoload.RaceFedProdigy
+	Foundation.ShipDef.USSProtostar = Foundation.FedProdigyShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
+	#import Custom.Autoload.RaceCosmosASTO
+	#Foundation.ShipDef.USSProtostar = Foundation.CosmosASTOShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
+	isRaceLoaded = 1
+except:
+	print "Error while loading a race"
+	isRaceLoaded = 0
+	Foundation.ShipDef.USSProtostar = Foundation.FedShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
+	traceback.print_exc()
+
 
 """
 # Let's do some calculations:
@@ -38,12 +51,66 @@ Foundation.ShipDef.USSProtostar = Foundation.FedShipDef(abbrev, species, { 'name
 # If the in-game scale is not changed, then the Protostar having warp 10 or warp 15 would not matter. For game purposes the proto-warp version would still need to have a transwarp warp factor.
 # If the in-game scale is changed to allow beyond warp 10 values without automatically jumping to 10^50, it would keep all other warp values others used without changing their warp speed times (specially for those mods where the TOS warp factor scale was used) and then warp 15.13829 would fit best, even if canonically that would make you travel back in time. For game purposes the proto-warp version would still need to have a transwarp warp factor.
 # If the in-game scale is appropiately corrected to support corect near-warp-10 scale tending towards infinity, it would allow all ships to behave more canonically, and without really needing to change the warp scale, it would be more likely for the USS Protostar to have a Warp factor of 9.99 or slightly higher, while some high-warp vessels would need to have their warp factors modified.
+# OR, on this case, we can resort to GalaxyCharts and just create an alternative warp method which multiplies regular warp factor by 420480.
 """
 
 Foundation.ShipDef.USSProtostar.fMaxWarp = 9.97 + 0.0001
 Foundation.ShipDef.USSProtostar.fCruiseWarp = 9.96 + 0.0001
 
-Foundation.ShipDef.USSProtostar.dTechs = {'Polarized Hull Plating': {"Plates": ["Hull"]}} # TO-DO ADD SUBMODELS FOR THE OTHER VERSION
+Foundation.ShipDef.USSProtostar.dTechs = {
+	"Polarized Hull Plating": {"Plates": ["Hull"]},
+	"Proto-Warp": {
+		"Setup": {
+			"Nacelles": ["Proto Warp Nacelle"],
+			"Core": ["Proto-Core"],
+			"Body": "VasKholhr_Body",
+			"NormalModel":          shipFile,
+			"WarpModel":          "VasKholhr_WingUp",
+			"Proto-WarpModel":          "VasKholhr_WingUp",
+			"AttackModel":          "VasKholhr_WingDown",
+			"Hardpoints":       {
+				"Proto Warp Nacelle":  [0.000000, 0.000000, 0.075000],
+			},
+
+			"AttackHardpoints":       {
+				"Proto Warp Nacelle":  [0.000000, -0.250000, 2.075000],
+			},
+			"WarpHardpoints":       {
+				"Proto Warp Nacelle":  [0.000000, -0.250000, -2.075000],
+			},
+			"ProtoWarpHardpoints":       {
+				"Proto Warp Nacelle":  [0.000000, -1.000000, -2.075000],
+			},
+		},
+
+		"Port Wing":     ["VasKholhr_Portwing", {
+			"Position":             [0, 0, 0],
+			"Rotation":             [0, 0, 0], # normal Rotation used if not Red Alert and if not Warp
+			"AttackRotation":         [0, -0.6, 0],
+			"AttackDuration":         200.0, # Value is 1/100 of a second
+			"AttackPosition":         [0, 0, 0.03],
+			"WarpRotation":       [0, 0.349, 0],
+			"WarpPosition":       [0, 0, 0.02],
+			"WarpDuration":       150.0,
+			"Proto-WarpRotation":       [0, 0.349, 0],
+			"Proto-WarpPosition":       [0, 0, 0.02],
+			"Proto-WarpDuration":       150.0,
+			},
+		],
+        
+		"Starboard Wing":     ["VasKholhr_Starboardwing", {
+			"Position":             [0, 0, 0],
+			"Rotation":             [0, 0, 0],
+			"AttackRotation":         [0, 0.6, 0],
+			"AttackDuration":         200.0, # Value is 1/100 of a second
+			"AttackPosition":         [0, 0, 0.03],
+			"Proto-WarpRotation":       [0, -0.349, 0],
+			"Proto-WarpPosition":       [0, 0, 0.02],
+			"Proto-WarpDuration":       150.0,
+			},
+		],
+	},
+} # TO-DO ADD SUBMODELS
 
 Foundation.ShipDef.USSProtostar.desc = "The Protostar-class was a small starship class launched by Starfleet during the late 24th century that was later approved for full production in 2384 after the destruction of the prototype and namesake vessel, the USS Protostar. Unlike other Starfleet ships, the Protostar class had its navigational deflector mounted on the underside of the saucer instead of the engineering hull, which instead has a large loading ramp for entrance into the vessel. When it was developed, the Protostar class was the fastest ship in Starfleet. The class featured two distinct warp drive modes, one was a conventional warp drive capable of warp 9.97 and powered by twin warp cores, while the other was a more energy-intensive gravimetric protostar containment, which was powered by a protostar and allowed it to travel in a second warp drive mode considerably faster than conventional warp speed, crossing over four thousand light years in a matter of minutes, a journey that would originally take four years at maximum warp, but which would require rapid energy regeneration protocols after at least 2 uses.\nThe USS Protostar (NX-76884) was a Protostar-class Federation starship launched in 2382. The Protostar was launched from the San Francisco Fleet Yards on Stardate 59749.1 under the command of Captain Chakotay for a return mission to the Delta Quadrant undertaken in the years after the return of the USS Voyager. "
 
