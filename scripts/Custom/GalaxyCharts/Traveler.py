@@ -29,6 +29,8 @@ import Custom.GravityFX.Logger
 import Bridge.HelmMenuHandlers
 from GalacticWarSimulator import WarSimulator, FleetManager, WSShip
 
+import traceback
+
 ################
 # Global Variables
 #####
@@ -988,7 +990,9 @@ class Travel:
 			return 1
 		except:
 			self._LogError("Travel")
+			traceback.print_exc()
 			return "ERROR! Something bad has happened..."
+
 	def IsTravelling(self):
 		debug(__name__ + ", IsTravelling")
 		if self.Started == 1 or self.SeqStat == self.ENGAGING:

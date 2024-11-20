@@ -4,13 +4,13 @@ import traceback
 # prototype custom travelling method plugin script, by USS Frontier (Enhanced Warp, original) and then modified by Alex SL Gato for Proto-Warp
 # 19th November 2024
 
-# NOTE: all functions/methods and attributes defined here (in this prototype example plugin, ProtoWarp) are required to be in the plugin, with the exclusion of MODINFO which is there just to verify versioning.
+# NOTE: all functions/methods and attributes defined here (in this prototype example plugin, ProtoWarp) are required to be in the plugin, with the exclusion of MODINFO which is there just to verify versioning, and AlternateSubModelsFTL section, which are exclusively used for alternate SubModels for FTL which is a separate mod.
 
 #
 #################################################################################################################
 #
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.11",
+	    "Version": "0.3",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -26,7 +26,7 @@ MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
 ########
 # name of this travelling method 
 ########
-sName = "Proto Warp"
+sName = "Proto-Warp"
 
 ########
 # if this travelling method is ship based. Warp for example is ship based, that means that any ship equipped with it can
@@ -112,7 +112,6 @@ fLaunchRadius = 0.0
 ########
 iRestrictionFlag = 0
 
-
 ###########################################
 ###########################################
 ####       TRAVELER METHODS
@@ -125,7 +124,42 @@ import string
 import Foundation
 import FoundationTech
 
-########
+#######################################
+####   ALTERNATESUBMODELFTL METHODS
+#######################################
+
+ENGAGING_ALTERNATEFTLSUBMODEL = App.UtopiaModule_GetNextEventType() # For when we are immediately about to fly with this FTL method
+DISENGAGING_ALTERNATEFTLSUBMODEL = App.UtopiaModule_GetNextEventType() # For when we are immediately about to stop flying with this FTL method
+# Due to AlternateSubModelFTL implementation, only 1 function can cover 1 event, no multiple functions can cover the same event directly. While on regular implementation of these SubModel FTL method that limits nothing, if you want multiple functions to respond, you must create a parent function of sorts that calls all the other functions you want, or create some sort of alternate listener inside some function.
+
+# Because we could end on an endless loop, the imports must be done inside the functions, else the game will not recognize any attribute or function beyond that
+# Reason I'm doing this function pass beyond just passing input parameters to the common function is to allow other TravellingMethod modders more flexibility
+# from Custom.Techs.AlternateSubModelFTL import StartingProtoWarp, ExitSetProto
+
+def KindOfMove(): 
+	return "Proto-Warp" # Modify this with the name you are gonna use for the AlternateSubModelFTL
+
+def StartingFTLAlternateSubModel(pObject, pEvent, techP, move): # What actions does AlternateSubModelFTL need to do when entering this FTL method
+	if move == None:
+		move = KindOfMove()
+
+	from Custom.Techs.AlternateSubModelFTL import StartingProtoWarp
+	StartingProtoWarp(pObject, pEvent, techP, move)
+
+def AlternateFTLActionEnteringWarp(): # Linking eType with the function
+	return ENGAGING_ALTERNATEFTLSUBMODEL, StartingFTLAlternateSubModel
+
+def ExitSetFTLAlternateSubModel(pObject, pEvent, techP, move): # What actions does AlternateSubModelFTL need to do when exiting this FTL method
+	if move == None:
+		move = KindOfMove()
+
+	from Custom.Techs.AlternateSubModelFTL import ExitSetProto
+	ExitSetProto(pObject, pEvent, techP, move)
+
+def AlternateFTLActionExitWarp(): # Linking eType with the function
+	return DISENGAGING_ALTERNATEFTLSUBMODEL, ExitSetFTLAlternateSubModel
+
+#######################################
 # "IsShipEquipped" Method to check if the ship is equipped with this travelling method.
 # Must return 1 if it has it, 0 if it does not.
 # NOTE: this function is not used as a method of the Travel class as are the other functions here.
@@ -150,7 +184,9 @@ def IsShipEquipped(pShip):
 		pInstance = findShipInstance(pShip)
 		if not pInstance:
 			return 0
-		elif pInstance.__dict__.has_key("Proto-Warp"): # You need to add a foundation technology to this vessel
+
+		pInstanceDict = pInstance.__dict__
+		if pInstanceDict.has_key("Alternate-Warp-FTL") and pInstanceDict["Alternate-Warp-FTL"].has_key("Setup") and pInstanceDict["Alternate-Warp-FTL"]["Setup"].has_key("Proto-Warp"): # You need to add a foundation technology to this vessel "AlternateSubModelFTL"
 			return 1
 		else:
 			return 0
@@ -174,13 +210,12 @@ def ProtoWarpBasicConfigInfo(pShip):
 	specificNacelleHPList = None 
 	specificCoreHPList = None
 	if pInstance:
-		pInstancedict = pInstance.__dict__ #TO-DO CREATE A TECH FOR PROTO-WARP - UPON ATTACHING WILL CALL SAME THINGS AS IN-SYSTEM-WARP TO HAVE THE PROPER WARP
-
-		if pInstancedict.has_key("Proto-Warp") and pInstancedict["Proto-Warp"].has_key("Setup"):
-			if pInstancedict["Proto-Warp"]["Setup"].has_key("Nacelles"): # Use: if the tech has this field, use it. Must be a list. "[]" would mean that this field is skipped during checks.
-				specificNacelleHPList = pInstancedict["Proto-Warp"]["Setup"]["Nacelles"]
-			if pInstancedict["Proto-Warp"].has_key("Core"): # Use: if the tech has this field, use it. Must be a list. "[]" would mean that this field is skipped during checks.
-				specificCoreHPList = pInstancedict["Proto-Warp"]["Setup"]["Core"]
+		pInstancedict = pInstance.__dict__ 
+		if pInstanceDict.has_key("Alternate-Warp-FTL") and pInstanceDict["Alternate-Warp-FTL"].has_key("Setup") and pInstanceDict["Alternate-Warp-FTL"]["Setup"].has_key("Proto-Warp"):
+			if pInstancedict["Alternate-Warp-FTL"]["Setup"]["Proto-Warp"].has_key("Nacelles"): # Use: if the tech has this field, use it. Must be a list. "[]" would mean that this field is skipped during checks.
+				specificNacelleHPList = pInstancedict["Alternate-Warp-FTL"]["Setup"]["Proto-Warp"]["Nacelles"]
+			if pInstancedict["Alternate-Warp-FTL"]["Setup"]["Proto-Warp"].has_key("Core"): # Use: if the tech has this field, use it. Must be a list. "[]" would mean that this field is skipped during checks.
+				specificCoreHPList = pInstancedict["Alternate-Warp-FTL"]["Setup"]["Proto-Warp"]["Core"]
 
 	hardpointProtoNames, hardpointProtoBlacklist = AuxProtoElementNames()
 
@@ -280,7 +315,7 @@ def CanTravel(self):
 				MissionLib.QueueActionToPlay(App.CharacterAction_Create(pXO, App.CharacterAction.AT_SAY_LINE, "EngineeringNeedPowerToEngines", None, 1))
 		return "Impulse Engines offline"
 
-	pInstance, pInstancedict, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist = ProtoWarpBasicConfigInfo(pShip) #TO-DO CREATE A TECH FOR PROTO-WARP - UPON ATTACHING WILL CALL SAME THINGS AS IN-SYSTEM-WARP TO HAVE THE PROPER WARP
+	pInstance, pInstancedict, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist = ProtoWarpBasicConfigInfo(pShip)
 
 	pWarpEngines = pShip.GetWarpEngineSubsystem()
 	if pWarpEngines:
@@ -552,7 +587,7 @@ def GetEngageDirection(self):
 ########
 def PreEngageStuff(self):
 	debug(__name__ + ", PreEngageStuff")
-	#TO-DO UPDATE, WE WILL LOOK FOR PROTO-WARP TECH, WHICH WILL INHERIT FROM SUBMODELS, THEN WE CALL ITS EVENT
+
 	return
 
 ########
@@ -561,7 +596,7 @@ def PreEngageStuff(self):
 ########
 def PreExitStuff(self):
 	debug(__name__ + ", PreExitStuff")
-	#TO-DO UPDATE
+	
 	return
 
 ########
@@ -765,6 +800,7 @@ def SetupSequence(self):
 	# 1º: the engaging travel sequence  (plays once, when the ship enters the travel)
 	# 2º: the during travel sequence    (plays repeatedly, while the ship is travelling)
 	# 3º: the exiting travel sequence   (plays once, when the ship exits travel)
+	# TO-DO Make the Protowarp sequence
 
 	# Note that each one of them can be None, if you don't want to have that sequence in your travel method.
 
@@ -777,14 +813,26 @@ def SetupSequence(self):
 ########
 def GetStartTravelEvents(self):
 	debug(__name__ + ", GetStartTravelEvents")
+
 	pEvent = App.TGEvent_Create()
 	sOriAdress = pEvent.this
 	sOriAdress = sOriAdress[0:len(sOriAdress)-7]
 	sAdress = sOriAdress+"WarpEvent"
 	pSWNEvent = App.WarpEvent(sAdress)
-	pSWNEvent.SetEventType(App.ET_START_WARP_NOTIFY )
+	pSWNEvent.SetEventType(ENGAGING_ALTERNATEFTLSUBMODEL)
 	pSWNEvent.SetDestination(self.Ship)
-	return [ pSWNEvent ]
+
+	# You need to perform these for each event you want, else you get ctd (crash-to-desktop)
+	pEvent2e = App.TGEvent_Create()
+	sOriAdress2e = pEvent2e.this
+	sOriAdress2e = sOriAdress2e[0:len(sOriAdress2e)-7]
+	sAdress2e = sOriAdress2e+"WarpEvent"
+
+	pSWNEvent2 = App.WarpEvent(sAdress2e)
+	pSWNEvent2.SetEventType(App.ET_START_WARP_NOTIFY)
+	pSWNEvent2.SetDestination(self.Ship)
+
+	return [ pSWNEvent, pSWNEvent2 ]
 
 ########
 # Method to return "exiting travel" events, much like those EXITED_SET or EXITED_WARP events.
@@ -796,7 +844,13 @@ def GetExitedTravelEvents(self):
 	pEvent.SetEventType(App.ET_EXITED_SET)
 	pEvent.SetDestination(self.Ship)
 	pEvent.SetString("warp")
-	return [ pEvent ]
+
+	pEvent2 = App.TGStringEvent_Create()
+	pEvent2.SetEventType(DISENGAGING_ALTERNATEFTLSUBMODEL)
+	pEvent2.SetDestination(self.Ship)
+	pEvent2.SetString("warp")
+
+	return [ pEvent, pEvent2 ]
 
 ########
 # Method to return the travel set to use.

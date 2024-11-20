@@ -59,10 +59,9 @@ Foundation.ShipDef.USSProtostar.fCruiseWarp = 9.96 + 0.0001
 
 Foundation.ShipDef.USSProtostar.dTechs = {
 	"Polarized Hull Plating": {"Plates": ["Hull"]},
-	"Proto-Warp": {
+	"Alternate-Warp-FTL": {
 		"Setup": {
-			"Nacelles": ["Proto Warp Nacelle"],
-			"Core": ["Proto-Core"],
+			"Proto-Warp": {	"Nacelles": ["Proto Warp Nacelle"], "Core": ["Proto-Core"], },
 			"Body": "VasKholhr_Body",
 			"NormalModel":          shipFile,
 			"WarpModel":          "VasKholhr_WingUp",
@@ -75,9 +74,9 @@ Foundation.ShipDef.USSProtostar.dTechs = {
 			"AttackHardpoints":       {
 				"Proto Warp Nacelle":  [0.000000, -0.250000, 2.075000],
 			},
-			"WarpHardpoints":       {
-				"Proto Warp Nacelle":  [0.000000, -0.250000, -2.075000],
-			},
+			#"WarpHardpoints":       {
+			#	"Proto Warp Nacelle":  [0.000000, -0.250000, -2.075000],
+			#},
 			"ProtoWarpHardpoints":       {
 				"Proto Warp Nacelle":  [0.000000, -1.000000, -2.075000],
 			},
@@ -89,9 +88,9 @@ Foundation.ShipDef.USSProtostar.dTechs = {
 			"AttackRotation":         [0, -0.6, 0],
 			"AttackDuration":         200.0, # Value is 1/100 of a second
 			"AttackPosition":         [0, 0, 0.03],
-			"WarpRotation":       [0, 0.349, 0],
-			"WarpPosition":       [0, 0, 0.02],
-			"WarpDuration":       150.0,
+			#"WarpRotation":       [0, 0.349, 0],
+			#"WarpPosition":       [0, 0, 0.02],
+			#"WarpDuration":       150.0,
 			"Proto-WarpRotation":       [0, 0.349, 0],
 			"Proto-WarpPosition":       [0, 0, 0.02],
 			"Proto-WarpDuration":       150.0,
@@ -104,9 +103,9 @@ Foundation.ShipDef.USSProtostar.dTechs = {
 			"AttackRotation":         [0, 0.6, 0],
 			"AttackDuration":         200.0, # Value is 1/100 of a second
 			"AttackPosition":         [0, 0, 0.03],
-			"WarpRotation":       [0, -0.349, 0],
-			"WarpPosition":       [0, 0, 0.02],
-			"WarpDuration":       150.0,
+			#"WarpRotation":       [0, -0.349, 0],
+			#"WarpPosition":       [0, 0, 0.02],
+			#"WarpDuration":       150.0,
 			"Proto-WarpRotation":       [0, -0.349, 0],
 			"Proto-WarpPosition":       [0, 0, 0.02],
 			"Proto-WarpDuration":       150.0,

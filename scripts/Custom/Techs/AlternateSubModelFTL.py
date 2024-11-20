@@ -1,22 +1,24 @@
-from bcdebug import debug
 import App
+from bcdebug import debug
 import FoundationTech
 import loadspacehelper
 import math
 import MissionLib
+import nt
 import string
 from SubModels import *
+import traceback
 
 # This class inherits from Defiant's SubModels script - as such, it depends on it.
 # TO-DO FIRST BEFORE PERFORMING THE THING BELOW, FIX THE BUGS THAT WERE NOT THERE BEFORE
+# TO-DO TEMPORARILY MODIFY THE CRASHFIXER SO ECH FUNCTION THROWS WHAT TYPE OF CRASH WAS AVOIDED, TO KNOW BETTER WHAT WAS WRONG
 #TO-DO UPDATE, ALSO UPDATE THE SAMPLE SETUP TO HAVE TABS AND BE MORE CLEAR
-# TO-DO ALSO ADD VERSIONING
 # TO-DO Try to make this work with broadcast handlers and then you just push them onto the __init__ - something similar to how you extend things with SGShields and such
 #
 #################################################################################################################
 #
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.13",
+	    "Version": "0.2",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -31,9 +33,9 @@ MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
 """
 
 Sample Setup:
-# TO-DO MODIFY THINGS SO IT CHECKS "Alternate-Warp" and from there "Proto-Warp" : {"Nacelles": [], "Core": []}
+# TO-DO MODIFY THINGS SO IT CHECKS "Alternate-Warp-FTL" and from there "Proto-Warp" : {"Nacelles": [], "Core": []}
 #
-Foundation.ShipDef.VasKholhr.dTechs = { "Proto-Warp": {
+Foundation.ShipDef.VasKholhr.dTechs = { "Alternate-Warp-FTL": {
 	"Setup":	{
 		"Body":	"VasKholhr_Body",
 		"NormalModel": shipFile,
@@ -87,8 +89,7 @@ REMOVE_POINTER_FROM_SET = 190
 NO_COLLISION_MESSAGE = 192
 REPLACE_MODEL_MSG = 208
 SET_TARGETABLE_MSG = 209
-ENGAGING_PROTO_WARP = App.UtopiaModule_GetNextEventType() # TO-DO ACTUALLY IT WOULD BE A GOOD IDEA TO MOVE THIS TO ITS RESPECTIVE TRAVELLINGMETHODS
-DISENGAGING_PROTO_WARP = App.UtopiaModule_GetNextEventType() # TO-DO ACTUALLY IT WOULD BE A GOOD IDEA TO MOVE THIS TO ITS RESPECTIVE TRAVELLINGMETHODS
+
 # TO-DO Ok so idea would be, first we skim through all the TravellingMethods folder
 # If we find certain functions (a function that would return a proper function and its eType), we store them
 # StartingProtoWarp(pObject, pEvent, techP, move=oProtoWarp.MySubPositionPointer()):
@@ -106,13 +107,134 @@ DISENGAGING_PROTO_WARP = App.UtopiaModule_GetNextEventType() # TO-DO ACTUALLY IT
 
 # Because SubModels is ridiculously hard to make children without having to re-do all the functions, I've made this, so now you can just re-do the attach/detach
 
-# After getting a horrible headache trying to get certain functions inside the class, I've decided to just tell here, if you want a child of this version, you are gonna need to also replace this function, and probably replace other functions related with this one
+eTypeDict = {} #"eType": function
+
+_g_dExcludeSomePlugins = {
+	# Some random plugins that I don't want to risk people attempting to load using this tech
+	"000-Fixes20030217": 1,
+	"000-Fixes20030221": 1,
+	"000-Fixes20030305-FoundationTriggers": 1,
+	"000-Fixes20030402-FoundationRedirect": 1,
+	"000-Fixes20040627-ShipSubListV3Foundation": 1,
+	"000-Fixes20040715": 1,
+	"000-Fixes20230424-ShipSubListV4_7Foundation": 1,
+	"000-Utilities-Debug-20040328": 1,
+	"000-Utilities-FoundationMusic-20030410": 1,
+	"000-Utilities-GetFileNames-20030402": 1,
+	"000-Utilities-GetFolderNames-20040326": 1,
+}
+
+def findShipInstance(pShip):
+	pInstance = None
+	try:
+		pInstance = FoundationTech.dShips[pShip.GetName()]
+		if pInstance == None:
+			print "After looking, no tech pInstance for ship:", pShip.GetName(), "How odd..."
+		
+	except:
+		pass
+
+	return pInstance
+
+def findscriptsShipsField(pShip, thingToFind):
+	thingFound = None
+	pShipModule=__import__(pShip.GetScript())
+	information = pShipModule.GetShipStats()
+	if information != None and information.has_key(thingToFind):
+		thingFound = information[thingToFind]
+	return thingFound
+
+# Set the parts for ProtoWarp state 
+def StartingProtoWarp(pObject, pEvent, techP, move):
+	debug(__name__ + ", StartingProtoWarp")
+	StartingWarpCommon(pObject, pEvent, techP, move)
+
+def ExitSetProto(pObject, pEvent, techType, move):
+	debug(__name__ + ", ExitSet")
+	pShip   = App.ShipClass_Cast(pEvent.GetDestination())
+	sSetName = pEvent.GetCString()
+	# if the system we come from is the warp system, then we exitwarp, right?
+	if sSetName == "warp":
+		# call ExitingProtoWarp in a few seconds
+		pSeq = App.TGSequence_Create()
+		pSeq.AppendAction(App.TGScriptAction_Create(__name__, "ExitingProtoWarp", pShip, techType, move), 4.0)
+		pSeq.Play()
+		
+	pObject.CallNextHandler(pEvent)
+	return 0
+
+# Based on LoadExtraPlugins by Dasher42, but heavily modified so it only imports a few things
+def LoadExtraLimitedPlugins(dExcludePlugins=_g_dExcludeSomePlugins):
+	import string
+	global vulnerableProjToSGShields, vulnerableBeamsToSGShields, defaultDummyNothing
+
+	dir="scripts\\Custom\\TravellingMethods" # I want to limit any vulnerability as much as I can while keeping functionality
+	try:
+		list = nt.listdir(dir)
+		if not list:
+			print "ERROR: Missing scripts/Custom/TravellingMethods folder for AlternateSubModelFTL technology"
+			return
+	except:
+		print "ERROR: Missing scripts/Custom/TravellingMethods folder for AlternateSubModelFTL technology, or other error:"
+		traceback.print_exc()
+		return		
+
+	list.sort()
+
+	dotPrefix = string.join(string.split(dir, "\\")[1:], ".") + "."
+
+	filesChecked = {} 
+	for plugin in list:
+		s = string.split(plugin, ".")
+		if len(s) <= 1:
+			continue
+	
+		# Indexing by -1 lets us be sure we're grabbing the extension. -Dasher42
+		extension = s[-1]
+		fileName = string.join(s[:-1], ".")
+
+		# We don't want to accidentally load wrong things
+		if (extension == "py") and not fileName == "__init__": # I am not allowing people to just use the .pyc directly, I don't want people to not include source scripts - Alex SL Gato
+			#print "AlternateSubModelFTL  script is reviewing " + fileName + " of dir " + dir
+			if dExcludePlugins.has_key(fileName):
+				debug(__name__ + ": Ignoring plugin" + fileName)
+				continue
+
+			try:
+				if not filesChecked.has_key(fileName):
+					filesChecked[fileName] = 1
+					myGoodPlugin = dotPrefix + fileName
+
+					try:
+						banana = __import__(myGoodPlugin, globals(), locals(), ["AlternateFTLActionEnteringWarp", "AlternateFTLActionExitWarp"])
+					except:
+						banana = __import__(myGoodPlugin, globals(), locals())
+
+					global eTypeDict
+					if hasattr(banana, "AlternateFTLActionEnteringWarp"):
+
+						eType, functionEnteringWarp = banana.AlternateFTLActionEnteringWarp() # Must be a regular function that only returns a type and function
+						print eType, functionEnteringWarp
+						if eType and not eTypeDict.has_key(eType):
+							eTypeDict[eType] = functionEnteringWarp
+
+					if hasattr(banana, "AlternateFTLActionExitWarp"):
+						eType2, functionExitWarp = banana.AlternateFTLActionExitWarp() # Must be a regular function that only returns a type and function
+						if eType2 and not eTypeDict.has_key(eType2):
+							eTypeDict[eType2] = functionExitWarp
+			except:
+				print "someone attempted to add more than they should to the SG Shields script"
+				traceback.print_exc()
+
+LoadExtraLimitedPlugins()
+
+#TO-DO UPDATE FROM HERE
 
 # This class controls the attach and detach of the Models
 class ProtoWarp(SubModels):
 	#className = "Proto-Warp"
 	#classSub = "Proto-Warp"
-	"""
+
 	def __init__(self, name):
 		debug(__name__ + ", Initiated")
 		FoundationTech.TechDef.__init__(self, name)
@@ -120,9 +242,33 @@ class ProtoWarp(SubModels):
 		self.pEventHandler.SetPyWrapper(self)
 		# TO-DO ACTUALLY DO NOT ADD THIS FOR WARP DRIVE AND EXITSET, USE NORMAL ONES FOR THAT, AND FTL BROADCASTS FOR OTHERS :)
 		# TO-DO ACTUALLY TEST THIS! Make it so they import the proper config!!!
-		App.g_kEventManager.RemoveBroadcastHandler(ENGAGING_PROTO_WARP, self.pEventHandler, "StartingWarpLocal")
-		App.g_kEventManager.AddBroadcastPythonMethodHandler(DISENGAGING_PROTO_WARP, self.pEventHandler, "StartingWarpLocal")
-	"""
+		global eTypeDict
+		for eType in eTypeDict.keys():
+			App.g_kEventManager.RemoveBroadcastHandler(eType, self.pEventHandler, "FTLFunctionHandler")
+			App.g_kEventManager.AddBroadcastPythonMethodHandler(eType, self.pEventHandler, "FTLFunctionHandler")
+
+	def FTLFunctionHandler(self, pEvent):
+		if not pEvent or pEvent == None:
+			return 0
+		eType = pEvent.GetEventType()
+		if eType:
+			pShip = pEvent.GetDestination()
+			if pShip:
+				pShip = App.ShipClass_Cast(pEvent.GetDestination())
+				if pShip:
+					iShipID = pShip.GetObjID()
+					if iShipID and iShipID != App.NULL_ID:
+						pShip = App.ShipClass_GetObjectByID(None, iShipID)
+						if pShip:
+							# TO-DO COMMENT THIS LINE
+							print "And the ship still exists, calling function:"
+							global eTypeDict
+							try:
+								eTypeDict[eType](pShip, pEvent, self, None)
+							except:
+								print "Error while performing custom FTL Warp:"
+								traceback.print_exc()
+
 	def MySystemPointer(self): # Name of the tech, for the dictionary
 		return self.name
 
@@ -209,19 +355,20 @@ class ProtoWarp(SubModels):
 
 		self.PerformPostAttachLoopActions(pShip, AlertListener)
 
+	# TO-DO REMOVE DRIED LAVA
 	def AddbAddedFTLSituationListener(self):
 		self.bAddedWarpListener = {} # these variables will make sure we add our event handlers only once
-		self.bAddedProtoWarpListener = {}
+		#self.bAddedProtoWarpListener = {}
 		self.bAddedAlertListener = {}
 
 	def Add_FTLAndSituationMethods(self, dOptions, pShip, pInstanceDict, AlertListener):
-		self.Add_ProtoWarpMethods(pShip, dOptions, pInstanceDict)
+		#self.Add_ProtoWarpMethods(pShip, dOptions, pInstanceDict)
 		self.Add_WarpMethods(pShip, dOptions)
 		AlertListener = self.Add_AttackMethods(pShip, dOptions, AlertListener, pInstanceDict)
 		return AlertListener
 
 	def Remove_FTLAndSituationMethods(self, pShip):
-		self.Remove_ProtoWarpMethods(pShip)
+		#self.Remove_ProtoWarpMethods(pShip)
 		self.Remove_WarpMethods(pShip)
 		self.Remove_AttackMethods(pShip)
 
@@ -241,9 +388,6 @@ class ProtoWarp(SubModels):
 				del self.bAddedAlertListener[pShip.GetName()]
 			except:
 				pass
-
-	def StartingWarpE(self, pObject, pEvent):
-		print "TEST 2 LOCAL VERSION 2"
 
 	def Add_WarpMethods(self, pShip, dOptions):
 		if not self.bAddedWarpListener.has_key(pShip.GetName()) and (dOptions.has_key("WarpRotation") or dOptions.has_key("WarpPosition")):
@@ -376,18 +520,6 @@ class ProtoWarp(SubModels):
 					MultiPlayerEnableCollisionWith(pSubShip, pSubShip2, 0)
 			
 			pShip.AttachObject(pSubShip)
-
-def findShipInstance(pShip):
-	pInstance = None
-	try:
-		pInstance = FoundationTech.dShips[pShip.GetName()]
-		if pInstance == None:
-			print "After looking, no tech pInstance for ship:", pShip.GetName(), "How odd..."
-		
-	except:
-		pass
-
-	return pInstance
 
 oProtoWarp = ProtoWarp("Proto-Warp")
 
@@ -556,7 +688,7 @@ def ExitSetWarp(pObject, pEvent, techType = oProtoWarp, move="Warp"):
 	pInstanceDict = pInstance.__dict__
 	if pInstanceDict and pInstanceDict.has_key("Warp Overriden"):
 		if move == "Warp":
-	 		if pInstanceDict["Warp Overriden"] > 0:
+			if pInstanceDict["Warp Overriden"] > 0:
 				if pObject:
 					pObject.CallNextHandler(pEvent)
 				return 0
@@ -564,10 +696,11 @@ def ExitSetWarp(pObject, pEvent, techType = oProtoWarp, move="Warp"):
 	ExitSetProto(pObject, pEvent, techType, move)
 	return 0
 
-def ExitSetProto(pObject, pEvent, techType = oProtoWarp, move=oProtoWarp.MySubPositionPointer()):
+def ExitSetProto(pObject, pEvent, techType, move):
 	debug(__name__ + ", ExitSet")
 	pShip   = App.ShipClass_Cast(pEvent.GetDestination())
-	sSetName = pEvent.GetCString()
+	sSetName = pEvent.GetCString() # It is a TGStringEvent
+
 	# if the system we come from is the warp system, then we exitwarp, right?
 	if sSetName == "warp":
 		# call ExitingProtoWarp in a few seconds
@@ -742,18 +875,17 @@ def PartsForWeaponProtoState(pShip, techP):
 # Set the parts for Warp state
 def StartingWarpE(pObject, pEvent, techP = oProtoWarp, move="Warp"):
 	debug(__name__ + ", StartingWarpE")
-	print "Ok so at least I received that"
 	# Slight delay, as it is likely the special FTL methods have not yet managed to alter things to prevent entering warp
-        pSeq = App.TGSequence_Create()
-        pSeq.AppendAction(App.TGScriptAction_Create(__name__, "StartingWarpCommonNoDelay", pObject, pEvent, techP, move), 0.3)
-        pSeq.Play()
+	pSeq = App.TGSequence_Create()
+	pSeq.AppendAction(App.TGScriptAction_Create(__name__, "StartingWarpCommonNoDelay", pObject, pEvent, techP, move), 0.3)
+	pSeq.Play()
 
 def StartingWarpCommonNoDelay(pAction, pObject, pEvent, techP, move):
 	StartingWarpCommon(pObject, pEvent, techP, move)
 	return 0
 
 # Set the parts for ProtoWarp state 
-def StartingProtoWarp(pObject, pEvent, techP = oProtoWarp, move=oProtoWarp.MySubPositionPointer()):
+def StartingProtoWarp(pObject, pEvent, techP, move):
 	debug(__name__ + ", StartingProtoWarp")
 	StartingWarpCommon(pObject, pEvent, techP, move)
 
@@ -775,22 +907,22 @@ def StartingWarpCommon(pObject, pEvent, techP, subPosition="Warp"):
 		return 0
 
 	if App.g_kUtopiaModule.IsMultiplayer() and not App.g_kUtopiaModule.IsHost():
-		pObject.CallNextHandler(pEvent)
+		#pObject.CallNextHandler(pEvent)
 		return 0
 
 	pInstance = findShipInstance(pShip)
 	if not pInstance:
-		pObject.CallNextHandler(pEvent)
+		#pObject.CallNextHandler(pEvent)
 		return 0
 
 	pInstanceDict = pInstance.__dict__
 	if pInstanceDict and pInstanceDict.has_key("Warp Overriden"):
 		if subPosition == "Warp":
-	 		if pInstanceDict["Warp Overriden"] > 0:
-				pObject.CallNextHandler(pEvent)
+			if pInstanceDict["Warp Overriden"] > 0:
+				#pObject.CallNextHandler(pEvent)
 				return 0	
 		else: # Any other FTL method, we have priority!!!
-	 		if pInstanceDict["Warp Overriden"] <= 0:
+			if pInstanceDict["Warp Overriden"] <= 0:
 				pInstanceDict["Warp Overriden"] = 1	
 
 	iLongestTime = 0.0

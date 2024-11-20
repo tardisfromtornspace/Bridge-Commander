@@ -124,3 +124,402 @@ Setting Stock System Planets Random Density.
 
 
 ##### End Of The Log #####
+##### Bridge Commander Exit Log: 20 Nov 2024 11:40:00#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+AlternateSubModelFTL  script is reviewing EnhancedWarp of dir scripts\Custom\TravellingMethods
+File checked
+banana import successfull
+Has attr 2.1
+AlternateSubModelFTL  script is reviewing NormalWarp of dir scripts\Custom\TravellingMethods
+File checked
+banana import successfull
+Has attr 2.1
+AlternateSubModelFTL  script is reviewing ProtoWarp of dir scripts\Custom\TravellingMethods
+File checked
+banana import successfull
+Has attr 1.1
+{}
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+Fixing your old DS9FX version
+Updated FoundationTech.ShipInstance Detach-related fixes
+Updating your TractorBeams.py <= 1.0 system mismatch
+Hopping Torp ready
+SG Hopping Torp ready
+Gravity FX has been loaded.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+Jumpspace Drive 20070905 Initializing...
+TimeVortex Drive 20070905 Initializing...
+Warpspace Drive 20070905 Initializing...
+DS9FX Initializing...
+Detected new mod, restoring Keyboard Binding..
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 20 Nov 2024 13:03:12#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+Fixing your old DS9FX version
+Updated FoundationTech.ShipInstance Detach-related fixes
+Updating your TractorBeams.py <= 1.0 system mismatch
+AlternateSubModelFTL  script is reviewing EnhancedWarp of dir scripts\Custom\TravellingMethods
+File checked
+banana import successfull
+Has attr 2.1
+AlternateSubModelFTL  script is reviewing NormalWarp of dir scripts\Custom\TravellingMethods
+File checked
+banana import successfull
+Has attr 2.1
+AlternateSubModelFTL  script is reviewing ProtoWarp of dir scripts\Custom\TravellingMethods
+File checked
+banana import successfull
+Has attr 1.1
+Has attr 2.1
+Has attr 1
+8393105 <function StartingFTLAlternateSubModel at e57b1dc>
+Has attr 2
+{8393106: <function ExitSetFTLAlternateSubModel at e57b85c>, 8393105: <function StartingFTLAlternateSubModel at e57b1dc>}
+Hopping Torp ready
+SG Hopping Torp ready
+Gravity FX has been loaded.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+Jumpspace Drive 20070905 Initializing...
+TimeVortex Drive 20070905 Initializing...
+Warpspace Drive 20070905 Initializing...
+DS9FX Initializing...
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+Jumpspace: Quick Battle is running... Mod is starting up...
+TimeVortex: Quick Battle is running... Mod is starting up...
+Warpspace: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+Setting Stock System Planets Random Density.
+Ship Player with ProtoWarp support added
+DS9FX: Active and Operational...
+
+
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 1a9a9584> ignored
+Ok so at least I received that
+<C TGEvent instance at _3cd04bf0_p_TGEvent> <C TGObject instance at _95e960_p_TGObject> <C TGEventHandlerObject instance at _9_p_TGEventHandlerObject>
+Traceback (innermost last):
+  File ".\Scripts\Custom\Techs\AlternateSubModelFTL.py", line 932, in StartingWarpCommon
+  File ".\Scripts\App.py", line 10241, in TGObject_GetTGObjectPtr
+AttributeError: __int__
+Moving Error: Move no longer active
+Moving Error: Move no longer active
+None <C TGEventHandlerObject instance at _1a380588_p_TGEventHandlerObject>
+Setting Stock System Planets Random Density.
+None <C TGEventHandlerObject instance at _1a380588_p_TGEventHandlerObject>
+Setting Stock System Planets Random Density.
+None <C TGEventHandlerObject instance at _1a380588_p_TGEventHandlerObject>
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 20 Nov 2024 13:03:12#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+Fixing your old DS9FX version
+Updated FoundationTech.ShipInstance Detach-related fixes
+Updating your TractorBeams.py <= 1.0 system mismatch
+AlternateSubModelFTL  script is reviewing EnhancedWarp of dir scripts\Custom\TravellingMethods
+File checked
+banana import successfull
+Has attr 2.1
+AlternateSubModelFTL  script is reviewing NormalWarp of dir scripts\Custom\TravellingMethods
+File checked
+banana import successfull
+Has attr 2.1
+AlternateSubModelFTL  script is reviewing ProtoWarp of dir scripts\Custom\TravellingMethods
+File checked
+banana import successfull
+Has attr 1.1
+Has attr 2.1
+Has attr 1
+8393105 <function StartingFTLAlternateSubModel at e57b1dc>
+Has attr 2
+{8393106: <function ExitSetFTLAlternateSubModel at e57b85c>, 8393105: <function StartingFTLAlternateSubModel at e57b1dc>}
+Hopping Torp ready
+SG Hopping Torp ready
+Gravity FX has been loaded.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+Jumpspace Drive 20070905 Initializing...
+TimeVortex Drive 20070905 Initializing...
+Warpspace Drive 20070905 Initializing...
+DS9FX Initializing...
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+Jumpspace: Quick Battle is running... Mod is starting up...
+TimeVortex: Quick Battle is running... Mod is starting up...
+Warpspace: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+Setting Stock System Planets Random Density.
+Ship Player with ProtoWarp support added
+DS9FX: Active and Operational...
+
+
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 1a9a9584> ignored
+Ok so at least I received that
+<C TGEvent instance at _3cd04bf0_p_TGEvent> <C TGObject instance at _95e960_p_TGObject> <C TGEventHandlerObject instance at _9_p_TGEventHandlerObject>
+Traceback (innermost last):
+  File ".\Scripts\Custom\Techs\AlternateSubModelFTL.py", line 932, in StartingWarpCommon
+  File ".\Scripts\App.py", line 10241, in TGObject_GetTGObjectPtr
+AttributeError: __int__
+Moving Error: Move no longer active
+Moving Error: Move no longer active
+None <C TGEventHandlerObject instance at _1a380588_p_TGEventHandlerObject>
+Setting Stock System Planets Random Density.
+None <C TGEventHandlerObject instance at _1a380588_p_TGEventHandlerObject>
+Setting Stock System Planets Random Density.
+None <C TGEventHandlerObject instance at _1a380588_p_TGEventHandlerObject>
+
+# DS9FX has...
+
+# taken a console dump
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 20 Nov 2024 16:21:36#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+Fixing your old DS9FX version
+Updated FoundationTech.ShipInstance Detach-related fixes
+Updating your TractorBeams.py <= 1.0 system mismatch
+AlternateSubModelFTL  script is reviewing EnhancedWarp of dir scripts\Custom\TravellingMethods
+File checked
+banana import successfull
+Has attr 2.1
+AlternateSubModelFTL  script is reviewing NormalWarp of dir scripts\Custom\TravellingMethods
+File checked
+banana import successfull
+Has attr 2.1
+AlternateSubModelFTL  script is reviewing ProtoWarp of dir scripts\Custom\TravellingMethods
+File checked
+banana import successfull
+Has attr 1.1
+Has attr 2.1
+Has attr 1
+8393105 <function StartingFTLAlternateSubModel at e70438c>
+Has attr 2
+{8393106: <function ExitSetFTLAlternateSubModel at e704a0c>, 8393105: <function StartingFTLAlternateSubModel at e70438c>}
+Hopping Torp ready
+SG Hopping Torp ready
+Gravity FX has been loaded.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+Jumpspace Drive 20070905 Initializing...
+TimeVortex Drive 20070905 Initializing...
+Warpspace Drive 20070905 Initializing...
+DS9FX Initializing...
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+Jumpspace: Quick Battle is running... Mod is starting up...
+TimeVortex: Quick Battle is running... Mod is starting up...
+Warpspace: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+
+
+Setting Stock System Planets Random Density.
+Ship Player with ProtoWarp support added
+DS9FX: Active and Operational...
+
+
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 1aa346d0> ignored
+Setting Stock System Planets Random Density.
+Setting Stock System Planets Random Density.
+
+
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 1aa3075c> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 1aa34cdc> ignored
+Event called
+Event is not None
+eType is  8393105
+pEvent has Destination
+pEvent Destination seems like a ship
+Yeah it is a ship
+And the ship still exists, calling function:
+<C TGEvent instance at _23f07250_p_TGEvent> None <C TGEventHandlerObject instance at _1a1752c0_p_TGEventHandlerObject>
+Setting Stock System Planets Random Density.
+Setting Stock System Planets Random Density.
+Event called
+Event is not None
+eType is  8393106
+pEvent has Destination
+pEvent Destination seems like a ship
+Yeah it is a ship
+And the ship still exists, calling function:
+None <C TGEventHandlerObject instance at _1a1752c0_p_TGEventHandlerObject>
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 20 Nov 2024 16:21:36#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+Fixing your old DS9FX version
+Updated FoundationTech.ShipInstance Detach-related fixes
+Updating your TractorBeams.py <= 1.0 system mismatch
+AlternateSubModelFTL  script is reviewing EnhancedWarp of dir scripts\Custom\TravellingMethods
+File checked
+banana import successfull
+Has attr 2.1
+AlternateSubModelFTL  script is reviewing NormalWarp of dir scripts\Custom\TravellingMethods
+File checked
+banana import successfull
+Has attr 2.1
+AlternateSubModelFTL  script is reviewing ProtoWarp of dir scripts\Custom\TravellingMethods
+File checked
+banana import successfull
+Has attr 1.1
+Has attr 2.1
+Has attr 1
+8393105 <function StartingFTLAlternateSubModel at e70438c>
+Has attr 2
+{8393106: <function ExitSetFTLAlternateSubModel at e704a0c>, 8393105: <function StartingFTLAlternateSubModel at e70438c>}
+Hopping Torp ready
+SG Hopping Torp ready
+Gravity FX has been loaded.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+Jumpspace Drive 20070905 Initializing...
+TimeVortex Drive 20070905 Initializing...
+Warpspace Drive 20070905 Initializing...
+DS9FX Initializing...
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+Jumpspace: Quick Battle is running... Mod is starting up...
+TimeVortex: Quick Battle is running... Mod is starting up...
+Warpspace: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+
+
+Setting Stock System Planets Random Density.
+Ship Player with ProtoWarp support added
+DS9FX: Active and Operational...
+
+
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 1aa346d0> ignored
+Setting Stock System Planets Random Density.
+Setting Stock System Planets Random Density.
+
+
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 1aa3075c> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 1aa34cdc> ignored
+Event called
+Event is not None
+eType is  8393105
+pEvent has Destination
+pEvent Destination seems like a ship
+Yeah it is a ship
+And the ship still exists, calling function:
+<C TGEvent instance at _23f07250_p_TGEvent> None <C TGEventHandlerObject instance at _1a1752c0_p_TGEventHandlerObject>
+Setting Stock System Planets Random Density.
+Setting Stock System Planets Random Density.
+Event called
+Event is not None
+eType is  8393106
+pEvent has Destination
+pEvent Destination seems like a ship
+Yeah it is a ship
+And the ship still exists, calling function:
+None <C TGEventHandlerObject instance at _1a1752c0_p_TGEventHandlerObject>
+
+# DS9FX has...
+
+# taken a console dump
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
