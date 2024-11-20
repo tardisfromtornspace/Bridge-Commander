@@ -77,7 +77,7 @@ Foundation.ShipDef.USSProtostar.dTechs = {
 			#"WarpHardpoints":       {
 			#	"Proto Warp Nacelle":  [0.000000, -0.250000, -2.075000],
 			#},
-			"ProtoWarpHardpoints":       {
+			"Proto-WarpHardpoints":       {
 				"Proto Warp Nacelle":  [0.000000, -1.000000, -2.075000],
 			},
 		},
@@ -91,8 +91,8 @@ Foundation.ShipDef.USSProtostar.dTechs = {
 			#"WarpRotation":       [0, 0.349, 0],
 			#"WarpPosition":       [0, 0, 0.02],
 			#"WarpDuration":       150.0,
-			"Proto-WarpRotation":       [0, 0.349, 0],
-			"Proto-WarpPosition":       [0, 0, 0.02],
+			"Proto-WarpRotation":       [0, 0.749, 0],
+			"Proto-WarpPosition":       [0, 0, 0.12],
 			"Proto-WarpDuration":       150.0,
 			},
 		],
@@ -106,13 +106,13 @@ Foundation.ShipDef.USSProtostar.dTechs = {
 			#"WarpRotation":       [0, -0.349, 0],
 			#"WarpPosition":       [0, 0, 0.02],
 			#"WarpDuration":       150.0,
-			"Proto-WarpRotation":       [0, -0.349, 0],
-			"Proto-WarpPosition":       [0, 0, 0.02],
+			"Proto-WarpRotation":       [0, -0.749, 0],
+			"Proto-WarpPosition":       [0, 0, 0.12],
 			"Proto-WarpDuration":       150.0,
 			},
 		],
 	},
-} # TO-DO ADD SUBMODELS
+}
 
 Foundation.ShipDef.USSProtostar.desc = "The Protostar-class was a small starship class launched by Starfleet during the late 24th century that was later approved for full production in 2384 after the destruction of the prototype and namesake vessel, the USS Protostar. Unlike other Starfleet ships, the Protostar class had its navigational deflector mounted on the underside of the saucer instead of the engineering hull, which instead has a large loading ramp for entrance into the vessel. When it was developed, the Protostar class was the fastest ship in Starfleet. The class featured two distinct warp drive modes, one was a conventional warp drive capable of warp 9.97 and powered by twin warp cores, while the other was a more energy-intensive gravimetric protostar containment, which was powered by a protostar and allowed it to travel in a second warp drive mode considerably faster than conventional warp speed, crossing over four thousand light years in a matter of minutes, a journey that would originally take four years at maximum warp, but which would require rapid energy regeneration protocols after at least 2 uses.\nThe USS Protostar (NX-76884) was a Protostar-class Federation starship launched in 2382. The Protostar was launched from the San Francisco Fleet Yards on Stardate 59749.1 under the command of Captain Chakotay for a return mission to the Delta Quadrant undertaken in the years after the return of the USS Voyager. "
 

@@ -100,7 +100,7 @@ def DamageableObject_Cast(pObject):
 	pObject = App.ObjectClass_GetObjectByID(None, pObject.GetObjID())
 	if pObject:
 		return DamageableObject_CastOrig(pObject)
-	print "Crash avoided; Please fix %s"  % (sys._getframe(1).f_code.co_name)
+	print "DamageableObject_Cast Crash avoided; Please fix %s"  % (sys._getframe(1).f_code.co_name)
 
 
 def DisableGlowAlphaMaps(pObject):
@@ -108,7 +108,7 @@ def DisableGlowAlphaMaps(pObject):
 	pObject = App.DamageableObject_GetObjectByID(None, pObject.GetObjID())
 	if pObject and not pObject.IsDead():
 		return DisableGlowAlphaMapsOrig(pObject)
-	print "Crash avoided; Please fix %s"  % (sys._getframe(1).f_code.co_name)
+	print "DisableGlowAlphaMaps Crash avoided; Please fix %s"  % (sys._getframe(1).f_code.co_name)
 
 
 def GetRandomPointOnModel(pObject):
@@ -126,13 +126,13 @@ def GetRandomPointOnModel(pObject):
 	pObject = App.ObjectClass_GetObjectByID(None, pObject.GetObjID())
 	if pObject:
 		return GetRandomPointOnModelOrig(pObject)
-	#print "Crash avoided; Please fix %s"  % (sys._getframe(1).f_code.co_name)
+	#print "GetRandomPointOnModel Crash avoided; Please fix %s"  % (sys._getframe(1).f_code.co_name)
 
 
 def GetLocalRandomPointAndNormalOnModel(pObject):
 	debug(__name__ + ", GetLocalRandomPointAndNormalOnModel")
 	print "Broken function GetLocalRandomPointAndNormalOnModel: Don't use it!"
-	print "Crash avoided; Please fix %s"  % (sys._getframe(1).f_code.co_name)
+	print "GetLocalRandomPointAndNormalOnModel Crash avoided; Please fix %s"  % (sys._getframe(1).f_code.co_name)
 	return
 
 
@@ -140,7 +140,7 @@ def GetRandomNumber(i):
 	debug(__name__ + ", GetRandomNumber")
 	if i > 0:
 		return GetRandomNumberOrig(i)
-	print "Crash avoided; Please fix %s"  % (sys._getframe(1).f_code.co_name)
+	print "GetRandomNumber Crash avoided; Please fix %s"  % (sys._getframe(1).f_code.co_name)
 	return 0
 
 
@@ -158,7 +158,7 @@ def TurnOff(pSubsystem):
 	pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), pShip.GetObjID())
 	if pShip:
 		return TurnOffOrig(pSubsystem)
-	print "Crash avoided; Please fix %s"  % (sys._getframe(1).f_code.co_name)
+	print "TurnOff Crash avoided; Please fix %s"  % (sys._getframe(1).f_code.co_name)
 
 
 def TurnOn(pSubsystem):
@@ -167,7 +167,7 @@ def TurnOn(pSubsystem):
 	pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), pShip.GetObjID())
 	if pShip:
 		return TurnOnOrig(pSubsystem)
-	print "Crash avoided; Please fix %s"  % (sys._getframe(1).f_code.co_name)
+	print "TurnOn Crash avoided; Please fix %s"  % (sys._getframe(1).f_code.co_name)
 
 
 def Turn(pSubsystem, bTurn):
@@ -176,28 +176,28 @@ def Turn(pSubsystem, bTurn):
 	pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), pShip.GetObjID())
 	if pShip:
 		return TurnOrig(pSubsystem, bTurn)
-	print "Crash avoided; Please fix %s"  % (sys._getframe(1).f_code.co_name)
+	print "Turn Crash avoided; Please fix %s"  % (sys._getframe(1).f_code.co_name)
 
 
 def SetGlowMapsEnabled(self, bSet):
 	debug(__name__ + ", SetGlowMapsEnabled")
 	if App.g_kLODModelManager.GetDropLODLevel() == 0:
 		return SetGlowMapsEnabledOrig(self, bSet)
-	print "Crash avoided; Please fix %s"  % (sys._getframe(1).f_code.co_name)
+	print "SetGlowMapsEnabled Crash avoided; Please fix %s"  % (sys._getframe(1).f_code.co_name)
 
 
 def AddAction(self, pAction1, pAction2 = App.TGAction_CreateNull(), ftime=0.0):
 	debug(__name__ + ", AddAction")
 	if pAction1:
 		return AddActionOrig(self, pAction1, pAction2, ftime)
-	print "Crash avoided; Please fix %s"  % (sys._getframe(1).f_code.co_name)
+	print "AddAction Crash avoided; Please fix %s"  % (sys._getframe(1).f_code.co_name)
 
 
 def SequenceAbort(pSequence):
 	debug(__name__ + ", SequenceAbort")
 	if pSequence.IsPlaying():
 		SequenceAbortOrig(pSequence)
-	print "Crash avoided; Please fix %s"  % (sys._getframe(1).f_code.co_name)
+	print "SequenceAbort Crash avoided; Please fix %s"  % (sys._getframe(1).f_code.co_name)
 
 
 def DeleteObjectFromSet(pSet, sName):
@@ -210,7 +210,7 @@ def CodeConditionSetStatus(pCondition, bStatus):
 	pCondition = App.ConditionScript_Cast(App.TGObject_GetTGObjectPtr(pCondition.GetObjID()))
 	if pCondition:
 		return CodeConditionSetStatusOrig(pCondition, bStatus)
-	print "Crash avoided; Please fix %s"  % (sys._getframe(1).f_code.co_name)
+	print "CodeConditionSetStatus Crash avoided; Please fix %s"  % (sys._getframe(1).f_code.co_name)
 
 
 #class cPickle_Pickler(pickle.Pickler):

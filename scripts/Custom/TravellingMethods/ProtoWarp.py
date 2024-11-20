@@ -1,12 +1,84 @@
-from bcdebug import debug
-import traceback
+# THIS FILE IS NOT SUPPORTED BY ACTIVISION
+# THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
 # ProtoWarp.py
 # prototype custom travelling method plugin script, by USS Frontier (Enhanced Warp, original) and then modified by Alex SL Gato for Proto-Warp
 # 19th November 2024
+#################################################################################################################
+##########	MANUAL
+#################################################################################################################
+# NOTE: all functions/methods and attributes defined here (in this prototype example plugin, ProtoWarp) are required to be in the plugin, with the exclusion of:
+# ------ MODINFO, which is there just to verify versioning.
+# ------ ALTERNATESUBMODELFTL METHODS subsection, which are exclusively used for alternate SubModels for FTL which is a separate but linked mod, or to import needed modules.
+# ------ Auxiliar functions: "AuxProtoElementNames", "findShipInstance", "ProtoWarpBasicConfigInfo" and "ProtoWarpDisabledCalculations".
+# === How-To-Add ===
+# This Travelling Method is Ship-based, on this case it needs of Foundation and FoundationTech to verify if the ship is equipped with it.
+# This FTL method check is stored inside an "Alternate-Warp-FTL" dictionary, which is a script that should be located at scripts/Custom/Techs/AlternateSubModelFTL.py. While this sub-tech can work totally fine without such module installed, it is recommended to have it.
+# On this case, due to that, only the lines marked with "# (#)" are needed for Proto-Warp to work, but the final parent technology may require more:
+# "Proto-Warp": is the name of the key. This is the bare minimum for the technology to work
+# "Nacelles": is the name of a key whose value indicates a list of which warp engine property children (nacelles) are part of the Proto-Warp system. If all are disabled/destroyed, Proto-Warp will not engage. If this field does not exist, it will check all warp hardpoints containing "protowarp", "proto warp" or "proto-warp" (case-insensitive). Leave as "Nacelles": [] to make it skip this disabled check.
+# "Core": is the name of a key whose value indicates a list of which hardpoint properties (not nacelles) are part of the Proto-Warp system. If all are disabled/destroyed, Proto-Warp will not engage either. If this field does not exist or "Core": [] this check will be skipped.
+"""
+#Sample Setup: replace "USSProtostar" for the appropiate abbrev. Also remove "# (#)"
+Foundation.ShipDef.USSProtostar.dTechs = { # (#)
+	"Alternate-Warp-FTL": { # (#)
+		"Setup": { # (#)
+			"Proto-Warp": {	"Nacelles": ["Proto Warp Nacelle"], "Core": ["Proto-Core"], }, # (#)
+			"Body": "VasKholhr_Body",
+			"NormalModel":          shipFile,
+			"WarpModel":          "VasKholhr_WingUp",
+			"Proto-WarpModel":          "VasKholhr_WingUp",
+			"AttackModel":          "VasKholhr_WingDown",
+			"Hardpoints":       {
+				"Proto Warp Nacelle":  [0.000000, 0.000000, 0.075000],
+			},
 
-# NOTE: all functions/methods and attributes defined here (in this prototype example plugin, ProtoWarp) are required to be in the plugin, with the exclusion of MODINFO which is there just to verify versioning, and AlternateSubModelsFTL section, which are exclusively used for alternate SubModels for FTL which is a separate mod.
+			"AttackHardpoints":       {
+				"Proto Warp Nacelle":  [0.000000, -0.250000, 2.075000],
+			},
+			"WarpHardpoints":       {
+				"Proto Warp Nacelle":  [0.000000, -0.250000, -2.075000],
+			},
+			"Proto-WarpHardpoints":       {
+				"Proto Warp Nacelle":  [0.000000, -1.000000, -2.075000],
+			},
+		}, # (#)
 
+		"Port Wing":     ["VasKholhr_Portwing", {
+			"Position":             [0, 0, 0],
+			"Rotation":             [0, 0, 0], # normal Rotation used if not Red Alert and if not Warp
+			"AttackRotation":         [0, -0.6, 0],
+			"AttackDuration":         200.0, # Value is 1/100 of a second
+			"AttackPosition":         [0, 0, 0.03],
+			"WarpRotation":       [0, 0.349, 0],
+			"WarpPosition":       [0, 0, 0.02],
+			"WarpDuration":       150.0,
+			"Proto-WarpRotation":       [0, 0.749, 0],
+			"Proto-WarpPosition":       [0, 0, 0.05],
+			"Proto-WarpDuration":       150.0,
+			},
+		],
+        
+		"Starboard Wing":     ["VasKholhr_Starboardwing", {
+			"Position":             [0, 0, 0],
+			"Rotation":             [0, 0, 0],
+			"AttackRotation":         [0, 0.6, 0],
+			"AttackDuration":         200.0, # Value is 1/100 of a second
+			"AttackPosition":         [0, 0, 0.03],
+			"WarpRotation":       [0, -0.349, 0],
+			"WarpPosition":       [0, 0, 0.02],
+			"WarpDuration":       150.0,
+			"Proto-WarpRotation":       [0, -0.749, 0],
+			"Proto-WarpPosition":       [0, 0, 0.05],
+			"Proto-WarpDuration":       150.0,
+			},
+		],
+	}, # (#)
+} # (#)
+"""
 #
+#################################################################################################################
+##########	END OF MANUAL
+#################################################################################################################
 #################################################################################################################
 #
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
@@ -17,6 +89,7 @@ MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
 #
 #################################################################################################################
 #
+from bcdebug import debug
 
 #######################################
 #######################################

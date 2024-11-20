@@ -1,19 +1,682 @@
-import App
-from bcdebug import debug
-import FoundationTech
-import loadspacehelper
-import math
-import MissionLib
-import nt
-import string
-from SubModels import *
-import traceback
+# THIS FILE IS NOT SUPPORTED BY ACTIVISION
+# THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
+# 20th September 2024, by Alex SL Gato (CharaToLoki)
+#         Based on Defiant's SubModels script (from which it inherits the classes, so in fact SubModels is a dependency) and BorgAdaptation.py by Alex SL Gato, which were based on the Foundation import function by Dasher
+#         Also based on ATPFunctions by Apollo.
+#################################################################################################################
+# A modification of a modification, last modification by Alex SL Gato (CharaToLoki)
+##################################################################################################################################################################################################################################
+##################################################################################################################################################################################################################################
+##########	MANUAL
+##################################################################################################################################################################################################################################
+##################################################################################################################################################################################################################################
+# === INTRODUCTION ===
+# The purpose of this plugin is to provide extended globalized actions for alternate TravellingMethods, providing them with the option to modify the model, like SubModels, but a bit less "broken"; as well as supporting SubModels Warp and Attack support.
+# NOTE: This will not affect pre-existing TravellingMethods, a ship could have those and not use this tech at all.
+# ATTENTION: This script has two classes "ProtoWarp" and "MovingEventUpdated" which inherit from Defiant's SubModels "SubModel" and "MovingEvent" classes, and also uses certain functions from that script - as such, it depends on it and that script being on scripts/Custom/Techs folder.
+# WARNING: Also because they inherit from that class and use the same individual subList parameter, it is NOT RECOMMENDED to call SubModels and this technology on the same ship.
+# ATTENTION: The script is also dependant on scripts/Custom/TravellingMethods and on GalaxyCharts to verify sub-technology and FTL availability. With those options turned off, the usefulness of this script is reduced to a cleaner customized SubModels.
+# === HOW-TO-USE a pre-existing FTL TravellingMethods that supports this tech ===
+# Below there's a sample setup. Those familiarized with SubModels script will notice the script is basically identical, but with a twist, presenting extra elements related with the TravellingMethods files that support this file.
+#
+# On this case, we have a TravellingMethods file called ProtoWarp which is called inside as "Proto-Warp" (explanaton on how to add these are mentioned after the Sample Setup).
+#
+# For clarity, we will use the symbols:
+# - "(*)"                - to determine something which is arbitrary to the TravellingMethods FTL sub-tech.
+# - "(-)"                - to something that is optional but necessary to perform the function they indicate, or not globally necessary but still needed for a set of functions.
+# - "(0)"                - to something that is optional but does nothing else that add a nice touch, since no other functions would be affected if they were skipped, for the most part.
+# - "(#)"                - something that is always needed, or may always be needed if you need any figment of functionality outside of calling a literal empty version of the function.
+# - "<insert_name_here>" - basically a generalization example for any other TravellingMethod. On this case in particular, <insert_name_here> = "Proto-Warp". Unless told otherwise, this generalization implies you can have as many of that field as you want, as long as <insert_name_here> is different for each one, allowing multiple TravellingMethods subModels support.
+# - "c.s."               - "case-sensitive". That is, it will notice it is different if you type like this, LIKE THIS, LiKe ThIs and so on.
+# - "<s-s>"              - "It uses the name of the ship File located at scripts/ships"
+# - "<k:v>"              - key - value format. On python, key: value. Unless key or value is a variable, you need to ensure they are between "" to indicate they are strings. "key like this" : "value like that". Also it's c.s.
+#
+# (#) On the "Setup" section, people will notice:
+# -- (*) A ""Proto-Warp": {"Nacelles": ["Proto Warp Nacelle"], "Core": ["Proto-Core"], }," line, This can vary wildly between TravellingMethods, some may not even require a similar line, so check each one's readme (if they have it) to get more information on its SubTech. However for those modders that use this tech to validate if the ship is equipped or not, please do so somewhere inside the "Setup" field. On this case in particular, this line is simply arbitrarily defined here so the ProtoWarp TravellingMethods script, which uses this tech to verify the ship is equipped with it, can determine the ship has or does not have this tech. 
+# -- (#) "Body" is a key whose value stores the model used during transformations. <s-s> <k:v> c.s.
+# -- (#) "NormalModel" is a key whose value stores the model used when no red alert nor special warp or FTL method with this tech support happen. <s-s> <k:v> c.s.
+# -- (-) "WarpModel" is a key whose value stores the model used when the ship uses warp, and no other FTL SubModel Warp Events are called. <s-s> <k:v> c.s.
+# --------- Please note that while being (-), it pretty much is (#) if you added certain attack-related fields which are outside of "Setup".
+# -- (-) "AttackModel" is a key whose value stores the model used when the ship is at red alert. <s-s> <k:v> c.s.
+# --------- Please note that while being (-), it pretty much is (#) if you added certain warp-related fields which are outside of "Setup".
+# -- (-) "<insert_name_here>Model" is a key whose value stores the model used when the ship uses <insert_name_here>, and will supersede the warp-related options. <k:v> <s-s> c.s.
+# --------- Please note that while being (-), it pretty much is (#) if you added certain <insert_name_here>-related fields which are outside of "Setup".
+# -- (0) "Hardpoints": a dictionary which stores inside all subsystem property names in <k:v> format which would move after a transformation, regarding normal positions (including yellow alert).
+# --------- On this case, each dictionary entry would be "Subsystem name" : [x, y, z]
+# -- (0) "AttackHardpoints": a dictionary which stores inside all subsystem property names in <k:v> format which would move after a transformation, regarding red alert positions.
+# --------- On this case, each dictionary entry would be "Subsystem name" : [x, y, z]
+# -- (0) "WarpHardpoints": a dictionary which stores inside all subsystem property names in <k:v> format which would move after a transformation, regarding normal warp positions.
+# --------- On this case, each dictionary entry would be "Subsystem name" : [x, y, z]
+# -- (0) "<insert_name_here>Hardpoints": a dictionary which stores inside all subsystem property names in <k:v> format which would move after a transformation, regarding <insert_name_here> positions.
+# --------- On this case, each dictionary entry would be "Subsystem name" : [x, y, z]
+# (-) After that, there's a section for each non-main-body piece, in <k:v> format, with "k" being the inner name the piece will receive, and v a list of structure: ["A", D]
+# --------- (#) "A" is the first value of the list, it is the ship model used for that particular piece during any transformation. <s-s> c.s.
+# --------- (-) "D" is a dictionary containing positions and rotations for each situation. c.s.
+# ---------------- (0) "<insert_name_here>Position": a dictionary entry which stores inside the movement in <k:v> format which the piece would move to during an <insert_name_here> transformation. On this example, "<insert_name_here>" could be nothing (thus "Position", for default), "Attack" (for red alert), "Warp" (for regular warp) or "Proto-Warp" (for Proto-Warp).
+# ----------------------- Movement value is on [x, y, z]
+# ---------------- (0) "<insert_name_here>Rotation": a dictionary entry which stores inside the rotation in <k:v> format which the piece would move to during an <insert_name_here> transformation. On this example, "<insert_name_here>" could be nothing (thus "Rotation", for default), "Attack" (for red alert), "Warp" (for regular warp) or "Proto-Warp" (for Proto-Warp).
+# ----------------------- Rotation value is on [x, y, z] axis of rotation
+"""
+#Sample Setup: replace "USSProtostar" for the appropiate abbrev
+Foundation.ShipDef.USSProtostar.dTechs = {
+	"Alternate-Warp-FTL": {
+		"Setup": {
+			"Proto-Warp": {	"Nacelles": ["Proto Warp Nacelle"], "Core": ["Proto-Core"], },
+			"Body": "VasKholhr_Body",
+			"NormalModel":          shipFile,
+			"WarpModel":          "VasKholhr_WingUp",
+			"Proto-WarpModel":          "VasKholhr_WingUp",
+			"AttackModel":          "VasKholhr_WingDown",
+			"Hardpoints":       {
+				"Proto Warp Nacelle":  [0.000000, 0.000000, 0.075000],
+			},
 
-# This class inherits from Defiant's SubModels script - as such, it depends on it.
-# TO-DO FIRST BEFORE PERFORMING THE THING BELOW, FIX THE BUGS THAT WERE NOT THERE BEFORE
-# TO-DO TEMPORARILY MODIFY THE CRASHFIXER SO ECH FUNCTION THROWS WHAT TYPE OF CRASH WAS AVOIDED, TO KNOW BETTER WHAT WAS WRONG
-#TO-DO UPDATE, ALSO UPDATE THE SAMPLE SETUP TO HAVE TABS AND BE MORE CLEAR
-# TO-DO Try to make this work with broadcast handlers and then you just push them onto the __init__ - something similar to how you extend things with SGShields and such
+			"AttackHardpoints":       {
+				"Proto Warp Nacelle":  [0.000000, -0.250000, 2.075000],
+			},
+			"WarpHardpoints":       {
+				"Proto Warp Nacelle":  [0.000000, -0.250000, -2.075000],
+			},
+			"Proto-WarpHardpoints":       {
+				"Proto Warp Nacelle":  [0.000000, -1.000000, -2.075000],
+			},
+		},
+
+		"Port Wing":     ["VasKholhr_Portwing", {
+			"Position":             [0, 0, 0],
+			"Rotation":             [0, 0, 0], # normal Rotation used if not Red Alert and if not Warp
+			"AttackRotation":         [0, -0.6, 0],
+			"AttackDuration":         200.0, # Value is 1/100 of a second
+			"AttackPosition":         [0, 0, 0.03],
+			"WarpRotation":       [0, 0.349, 0],
+			"WarpPosition":       [0, 0, 0.02],
+			"WarpDuration":       150.0,
+			"Proto-WarpRotation":       [0, 0.749, 0],
+			"Proto-WarpPosition":       [0, 0, 0.05],
+			"Proto-WarpDuration":       150.0,
+			},
+		],
+        
+		"Starboard Wing":     ["VasKholhr_Starboardwing", {
+			"Position":             [0, 0, 0],
+			"Rotation":             [0, 0, 0],
+			"AttackRotation":         [0, 0.6, 0],
+			"AttackDuration":         200.0, # Value is 1/100 of a second
+			"AttackPosition":         [0, 0, 0.03],
+			"WarpRotation":       [0, -0.349, 0],
+			"WarpPosition":       [0, 0, 0.02],
+			"WarpDuration":       150.0,
+			"Proto-WarpRotation":       [0, -0.749, 0],
+			"Proto-WarpPosition":       [0, 0, 0.05],
+			"Proto-WarpDuration":       150.0,
+			},
+		],
+	},
+}
+"""
+#
+# === HOW TO CREATE a compatible FTL TravellingMethods that supports this tech ===
+# On this, we lean on GalaxyCharts since the file was originally meant to be for that.
+# STEP 1. Create a proper GalaxyCharts TravellingMethod file, or modify a pre-existing one for your needs.
+# STEP 2. The bare minimum to add would be the following:
+"""
+####### NOTE: From here to the next "NOTE" goes after the import statements of TRAVELER METHODS: #######
+# These four lines should be uncommented only if they are missing. Please note that "from bcdebug import debug" may already be present at the very beginning of the file
+#import App
+#from bcdebug import debug
+#import math
+#import MissionLib
+#import string
+
+# These lines below are only used if needed (f.ex. because an auxiliar method uses them). Feel free to add more if needed for custom plugins.
+import Foundation
+import FoundationTech
+#import traceback
+ 
+#######################################
+####   ALTERNATESUBMODELFTL METHODS
+#######################################
+
+ENGAGING_ALTERNATEFTLSUBMODEL = App.UtopiaModule_GetNextEventType() # For when we are immediately about to fly with this FTL method
+DISENGAGING_ALTERNATEFTLSUBMODEL = App.UtopiaModule_GetNextEventType() # For when we are immediately about to stop flying with this FTL method
+# Due to AlternateSubModelFTL implementation, only 1 function can cover 1 event, no multiple functions can cover the same event directly. While on regular implementation of these SubModel FTL method that limits nothing, if you want multiple functions to respond, you must create a parent function of sorts that calls all the other functions you want, or create some sort of alternate listener inside some function.
+
+# Because we could end on an endless loop, the imports must be done inside the functions, else the game will not recognize any attribute or function beyond that
+# Reason I'm doing this function pass beyond just passing input parameters to the common function is to allow other TravellingMethod modders more flexibility
+# from Custom.Techs.AlternateSubModelFTL import StartingProtoWarp, ExitSetProto
+
+def KindOfMove(): 
+	return "Proto-Warp" # Modify this with the name you are gonna use for the AlternateSubModelFTL
+
+def StartingFTLAlternateSubModel(pObject, pEvent, techP, move): # What actions does AlternateSubModelFTL need to do when entering this FTL method
+	if move == None:
+		move = KindOfMove()
+
+	from Custom.Techs.AlternateSubModelFTL import StartingProtoWarp
+	StartingProtoWarp(pObject, pEvent, techP, move)
+
+def AlternateFTLActionEnteringWarp(): # Linking eType with the function
+	return ENGAGING_ALTERNATEFTLSUBMODEL, StartingFTLAlternateSubModel
+
+def ExitSetFTLAlternateSubModel(pObject, pEvent, techP, move): # What actions does AlternateSubModelFTL need to do when exiting this FTL method
+	if move == None:
+		move = KindOfMove()
+
+	from Custom.Techs.AlternateSubModelFTL import ExitSetProto
+	ExitSetProto(pObject, pEvent, techP, move)
+
+def AlternateFTLActionExitWarp(): # Linking eType with the function
+	return DISENGAGING_ALTERNATEFTLSUBMODEL, ExitSetFTLAlternateSubModel
+
+####### NOTE: From here to the next "NOTE" would replace the original "GetStartTravelEvents" and "GetExitedTravelEvents". On this case, we have left it so both our custom event and the warp-related events are called, to prove it is easy to add multiple events #######
+########
+# Method to return "starting travel" events, much like those START_WARP events.
+# must return a list with the events, possibly none (empty list)
+########
+def GetStartTravelEvents(self):
+	debug(__name__ + ", GetStartTravelEvents")
+
+	pEvent = App.TGEvent_Create()
+	sOriAdress = pEvent.this
+	sOriAdress = sOriAdress[0:len(sOriAdress)-7]
+	sAdress = sOriAdress+"WarpEvent"
+	pSWNEvent = App.WarpEvent(sAdress)
+	pSWNEvent.SetEventType(ENGAGING_ALTERNATEFTLSUBMODEL)
+	pSWNEvent.SetDestination(self.Ship)
+
+	# You need to perform these for each event you want, else you get ctd (crash-to-desktop)
+	pEvent2e = App.TGEvent_Create()
+	sOriAdress2e = pEvent2e.this
+	sOriAdress2e = sOriAdress2e[0:len(sOriAdress2e)-7]
+	sAdress2e = sOriAdress2e+"WarpEvent"
+
+	pSWNEvent2 = App.WarpEvent(sAdress2e)
+	pSWNEvent2.SetEventType(App.ET_START_WARP_NOTIFY)
+	pSWNEvent2.SetDestination(self.Ship)
+
+	return [ pSWNEvent, pSWNEvent2 ]
+
+########
+# Method to return "exiting travel" events, much like those EXITED_SET or EXITED_WARP events.
+# must return a list with the events, possibly none (empty list)
+########
+def GetExitedTravelEvents(self):
+	debug(__name__ + ", GetExitedTravelEvents")
+	pEvent = App.TGStringEvent_Create()
+	pEvent.SetEventType(App.ET_EXITED_SET)
+	pEvent.SetDestination(self.Ship)
+	pEvent.SetString("warp")
+
+	pEvent2 = App.TGStringEvent_Create()
+	pEvent2.SetEventType(DISENGAGING_ALTERNATEFTLSUBMODEL)
+	pEvent2.SetDestination(self.Ship)
+	pEvent2.SetString("warp")
+
+	return [ pEvent, pEvent2 ]
+
+
+
+"""
+# STEP 3. Once we added that, we make sure we have a manual of sorts at the beginning of the file and we add those peculiarities, since certain quirks may make it need special things to be activated. Any other quirk we add to make the tech behave more like we want, would probably need to be mentioned in some way so any future user could have an easier way adding it.
+# -- On our example, on the case of Proto-Warp, derived from Enhanced Warp, we wanted the tech to be only equipped on a certain FoundationTech dictionary, so we added/modified the following:
+"""
+#######################################
+# "IsShipEquipped" Method to check if the ship is equipped with this travelling method.
+# Must return 1 if it has it, 0 if it does not.
+# NOTE: this function is not used as a method of the Travel class as are the other functions here.
+#       this is actually used just like a helper for the Travel Manager.
+########
+def findShipInstance(pShip):
+	debug(__name__ + ", findShipInstance")
+	pInstance = None
+	try:
+		if not pShip:
+			return pInstance
+		if FoundationTech.dShips.has_key(pShip.GetName()):
+			pInstance = FoundationTech.dShips[pShip.GetName()]
+	except:
+		pass
+	return pInstance
+
+def IsShipEquipped(pShip):
+	debug(__name__ + ", IsShipEquipped")
+	pWarpEngines = pShip.GetWarpEngineSubsystem()
+	if pWarpEngines:
+		pInstance = findShipInstance(pShip)
+		if not pInstance:
+			return 0
+
+		pInstanceDict = pInstance.__dict__
+		if pInstanceDict.has_key("Alternate-Warp-FTL") and pInstanceDict["Alternate-Warp-FTL"].has_key("Setup") and pInstanceDict["Alternate-Warp-FTL"]["Setup"].has_key("Proto-Warp"): # You need to add a foundation technology to this vessel "AlternateSubModelFTL"
+			return 1
+		else:
+			return 0
+	else:
+		return 0
+
+
+########
+# "CanTravel" Method to check if the ship can travel.
+# Must return 1 if it can, otherwise return a string(reason why the ship couldn't travel)
+########
+# This is just an auxiliar function I made for this
+def AuxProtoElementNames(*args):
+	# Returns hardpoint property name fragments that indicate are part of the proto-warp system, and blacklists
+	return ["protowarp", "proto warp", "proto-warp"], ["not a protowarp", "not a proto warp", "not a proto-warp", " not protowarp", " not proto warp", " not proto-warp"]
+
+# This is just another auxiliar function I made for this
+def ProtoWarpBasicConfigInfo(pShip):
+	pInstance = findShipInstance(pShip) # On this case, IsShipEquipped(pShip) already checked this for us - HOWEVER do not forget to check if you modify the script
+	pInstancedict = None
+	specificNacelleHPList = None 
+	specificCoreHPList = None
+	if pInstance:
+		pInstancedict = pInstance.__dict__ 
+		if pInstanceDict.has_key("Alternate-Warp-FTL") and pInstanceDict["Alternate-Warp-FTL"].has_key("Setup") and pInstanceDict["Alternate-Warp-FTL"]["Setup"].has_key("Proto-Warp"):
+			if pInstancedict["Alternate-Warp-FTL"]["Setup"]["Proto-Warp"].has_key("Nacelles"): # Use: if the tech has this field, use it. Must be a list. "[]" would mean that this field is skipped during checks.
+				specificNacelleHPList = pInstancedict["Alternate-Warp-FTL"]["Setup"]["Proto-Warp"]["Nacelles"]
+			if pInstancedict["Alternate-Warp-FTL"]["Setup"]["Proto-Warp"].has_key("Core"): # Use: if the tech has this field, use it. Must be a list. "[]" would mean that this field is skipped during checks.
+				specificCoreHPList = pInstancedict["Alternate-Warp-FTL"]["Setup"]["Proto-Warp"]["Core"]
+
+	hardpointProtoNames, hardpointProtoBlacklist = AuxProtoElementNames()
+
+	return pInstance, pInstancedict, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist
+
+# This is just another auxiliar function I made for this
+def ProtoWarpDisabledCalculations(type, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, pSubsystem, pShip):
+	totalProtoWarpEngines = 0
+	onlineProtoWarpEngines = 0
+	if type == "Nacelle":
+		for i in range(pSubsystem.GetNumChildSubsystems()):
+			pChild = pSubsystem.GetChildSubsystem(i)
+			if pChild:
+				if hasattr(pChild, "GetName") and pChild.GetName() != None:
+					pChildName = pChild.GetName()
+					found = 0
+					blacklisted = 0
+					if specificNacelleHPList == None:				
+						pchildnamelower = string.lower(pChildName)
+						for item in hardpointProtoNames:
+							foundThis = string.find(pchildnamelower, item) + 1
+							if foundThis > 0:
+								found = 1
+								break
+						for item in hardpointProtoBlacklist:
+							foundThis = string.find(pchildnamelower, item) + 1
+							if foundThis > 0:
+								blacklisted = 1
+								break
+					else:
+						found = (pChildName in specificNacelleHPList)
+
+					if found and not blacklisted:
+						totalProtoWarpEngines = totalProtoWarpEngines + 1
+						if pChild.GetCondition() > 0.0 and not pChild.IsDisabled():
+							onlineProtoWarpEngines = onlineProtoWarpEngines + 1
+	elif type == "Core":
+		pShipSet = pShip.GetPropertySet()
+		pShipList = pShipSet.GetPropertiesByType(App.CT_SUBSYSTEM_PROPERTY)
+		iNumItems = pShipList.TGGetNumItems()
+
+		pShipList.TGBeginIteration()
+		for i in range(iNumItems):
+			pShipProperty = App.SubsystemProperty_Cast(pShipList.TGGetNext().GetProperty())
+			if pShipProperty:
+				pSubsystema = pShip.GetSubsystemByProperty(pShipProperty)
+				if pSubsystema and pSubsystema != None:
+					if hasattr(pSubsystema, "GetName") and pSubsystema.GetName() != None:
+						pSubsystemName = pSubsystema.GetName()
+						found = (pSubsystemName in specificCoreHPList)
+
+						if found:
+							totalProtoWarpEngines = totalProtoWarpEngines + 1
+							if pSubsystema.GetCondition() > 0.0 and not pSubsystema.IsDisabled():
+								onlineProtoWarpEngines = onlineProtoWarpEngines + 1
+
+		pShipList.TGDoneIterating()
+		pShipList.TGDestroy()
+
+	return totalProtoWarpEngines, onlineProtoWarpEngines
+
+def CanTravel(self):
+	debug(__name__ + ", CanTravel")
+	pShip = self.GetShip()
+	pPlayer = App.Game_GetCurrentPlayer()
+	bIsPlayer = 0
+	if pPlayer and pShip.GetObjID() == pPlayer.GetObjID():
+		bIsPlayer = 1
+	pHelm = App.CharacterClass_GetObject(App.g_kSetManager.GetSet("bridge"), "Helm")
+
+	isEquipped = IsShipEquipped(pShip)
+	if not isEquipped:
+		if bIsPlayer == 1:
+			if pHelm:
+				App.CharacterAction_Create(pHelm, App.CharacterAction.AT_SAY_LINE, "BrexNothingToAdd7", None, 1).Play() # Brex speaking through Kiska, ventriloquism
+			else:
+				# No character, display subtitle only.
+				pDatabase = App.g_kLocalizationManager.Load ("data/TGL/Bridge Crew General.tgl")
+				if pDatabase:
+					pSequence = App.TGSequence_Create ()
+					pSubtitleAction = App.SubtitleAction_Create (pDatabase, "BrexNothingToAdd7") #CantWarp5
+					pSubtitleAction.SetDuration (3.0)
+					pSequence.AddAction (pSubtitleAction)
+					pSequence.Play ()
+					App.g_kLocalizationManager.Unload (pDatabase)
+		return "This ship is not equipped with Proto-Warp"
+
+	pImpulseEngines = pShip.GetImpulseEngineSubsystem()
+	if not pImpulseEngines:
+		return "No Impulse Engines"
+
+	if (pImpulseEngines.GetPowerPercentageWanted() == 0.0):
+		# Ship is trying to warp with their engines off.
+		if bIsPlayer == 1:
+			pXO = App.CharacterClass_GetObject(App.g_kSetManager.GetSet("bridge"), "XO")
+			if pXO:
+				MissionLib.QueueActionToPlay(App.CharacterAction_Create(pXO, App.CharacterAction.AT_SAY_LINE, "EngineeringNeedPowerToEngines", None, 1))
+		return "Impulse Engines offline"
+
+	pInstance, pInstancedict, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist = ProtoWarpBasicConfigInfo(pShip)
+
+	pWarpEngines = pShip.GetWarpEngineSubsystem()
+	if pWarpEngines:
+		if pWarpEngines.IsDisabled():
+			if bIsPlayer == 1:
+				if pHelm:
+					App.CharacterAction_Create(pHelm, App.CharacterAction.AT_SAY_LINE, "CantWarp1", None, 1).Play()
+				else:
+					# No character, display subtitle only.
+					pDatabase = App.g_kLocalizationManager.Load ("data/TGL/Bridge Crew General.tgl")
+					if pDatabase:
+						pSequence = App.TGSequence_Create ()
+						pSubtitleAction = App.SubtitleAction_Create (pDatabase, "CantWarp1")
+						pSubtitleAction.SetDuration (3.0)
+						pSequence.AddAction (pSubtitleAction)
+						pSequence.Play ()
+						App.g_kLocalizationManager.Unload (pDatabase)
+			return "Warp Engines disabled"
+		elif specificNacelleHPList == None or (specificNacelleHPList != None and len(specificNacelleHPList) > 0):
+			totalProtoWarpEngines, onlineProtoWarpEngines = ProtoWarpDisabledCalculations("Nacelle", specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, pWarpEngines, pShip)
+
+			if totalProtoWarpEngines <= 0 or onlineProtoWarpEngines <= 0:
+				if bIsPlayer == 1:
+					if pHelm:
+						App.CharacterAction_Create(pHelm, App.CharacterAction.AT_SAY_LINE, "CantWarp1", None, 1).Play()
+					else:
+						# No character, display subtitle only.
+						pDatabase = App.g_kLocalizationManager.Load ("data/TGL/Bridge Crew General.tgl")
+						if pDatabase:
+							pSequence = App.TGSequence_Create ()
+							pSubtitleAction = App.SubtitleAction_Create (pDatabase, "CantWarp1")
+							pSubtitleAction.SetDuration (3.0)
+							pSequence.AddAction (pSubtitleAction)
+							pSequence.Play ()
+							App.g_kLocalizationManager.Unload (pDatabase)
+
+				return "Proto-Warp Engines disabled"
+		
+		if not pWarpEngines.IsOn():
+			if bIsPlayer == 1:
+				if pHelm:
+					App.CharacterAction_Create(pHelm, App.CharacterAction.AT_SAY_LINE, "CantWarp5", None, 1).Play()
+				else:
+					# No character, display subtitle only.
+					pDatabase = App.g_kLocalizationManager.Load("data/TGL/Bridge Crew General.tgl")
+					if pDatabase:
+						pSequence = App.TGSequence_Create()
+						pSubtitleAction = App.SubtitleAction_Create(pDatabase, "CantWarp5")
+						pSubtitleAction.SetDuration(3.0)
+						pSequence.AddAction(pSubtitleAction)
+						pSequence.Play()
+						App.g_kLocalizationManager.Unload(pDatabase)
+			return "Warp or Proto-Warp Engines offline"
+	else:
+		return "No Warp Engines"
+
+	if specificCoreHPList != None and len(specificCoreHPList) > 0:
+		totalProtoWarpCores, onlineProtoWarpCores = ProtoWarpDisabledCalculations("Core", specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, pWarpEngines, pShip)
+
+		if totalProtoWarpCores <= 0 or onlineProtoWarpCores <= 0:
+			if bIsPlayer == 1:
+				if pHelm:
+					App.CharacterAction_Create(pHelm, App.CharacterAction.AT_SAY_LINE, "CantWarp1", None, 1).Play()
+				else:
+					# No character, display subtitle only.
+					pDatabase = App.g_kLocalizationManager.Load ("data/TGL/Bridge Crew General.tgl")
+					if pDatabase:
+						pSequence = App.TGSequence_Create ()
+						pSubtitleAction = App.SubtitleAction_Create (pDatabase, "CantWarp1")
+						pSubtitleAction.SetDuration (3.0)
+						pSequence.AddAction (pSubtitleAction)
+						pSequence.Play ()
+						App.g_kLocalizationManager.Unload (pDatabase)
+			return "All proto-cores are disabled"
+
+	pSet = pShip.GetContainingSet()
+	#pNebula = pSet.GetNebula()
+	#if pNebula:
+	#	if pNebula.IsObjectInNebula(pShip):
+	#		if bIsPlayer == 1:
+	#			if pHelm:
+	#				App.CharacterAction_Create(pHelm, App.CharacterAction.AT_SAY_LINE, "CantWarp2", None, 1).Play()
+	#			else:
+	#				# No character, display subtitle only.
+	#				pDatabase = App.g_kLocalizationManager.Load("data/TGL/Bridge Crew General.tgl")
+	#				if pDatabase:
+	#					pSequence = App.TGSequence_Create()
+	#					pSubtitleAction = App.SubtitleAction_Create(pDatabase, "CantWarp2")
+	#					pSubtitleAction.SetDuration(3.0)
+	#					pSequence.AddAction(pSubtitleAction)
+	#					pSequence.Play()
+	#					App.g_kLocalizationManager.Unload(pDatabase)
+	#		return "Inside Nebula"
+
+	# See if we are in an asteroid field
+	AsteroidFields = pSet.GetClassObjectList(App.CT_ASTEROID_FIELD)
+	for i in AsteroidFields:
+		pField = App.AsteroidField_Cast(i)
+		if pField:
+			if pField.IsShipInside(pShip):
+				if bIsPlayer == 1:
+					if pHelm:
+						App.CharacterAction_Create(pHelm, App.CharacterAction.AT_SAY_LINE, "CantWarp4", None, 1).Play()
+					else:
+						# No character, display subtitle only.
+						pDatabase = App.g_kLocalizationManager.Load ("data/TGL/Bridge Crew General.tgl")
+						if pDatabase:
+							pSequence = App.TGSequence_Create ()
+							pSubtitleAction = App.SubtitleAction_Create (pDatabase, "CantWarp4")
+							pSubtitleAction.SetDuration (3.0)
+							pSequence.AddAction (pSubtitleAction)
+							pSequence.Play ()
+							App.g_kLocalizationManager.Unload (pDatabase)
+				return "Inside Asteroid Field"
+					
+	pStarbase12Set = App.g_kSetManager.GetSet("Starbase12")
+	if pStarbase12Set:
+		if pShip.GetContainingSet():
+			if pStarbase12Set.GetObjID() == pShip.GetContainingSet().GetObjID():
+				pStarbase12 = App.ShipClass_GetObject(pStarbase12Set, "Starbase 12")
+				if pStarbase12:
+					import AI.Compound.DockWithStarbase
+					if AI.Compound.DockWithStarbase.IsInViewOfInsidePoints(pShip, pStarbase12):
+						if bIsPlayer == 1:
+							if pHelm:
+								App.CharacterAction_Create(pHelm, App.CharacterAction.AT_SAY_LINE, "CantWarp3", None, 1).Play()
+							else:
+								# No character, display subtitle only.
+								pDatabase = App.g_kLocalizationManager.Load("data/TGL/Bridge Crew General.tgl")
+								if pDatabase:
+									pSequence = App.TGSequence_Create()
+									pSubtitleAction = App.SubtitleAction_Create(pDatabase, "CantWarp3")
+									pSubtitleAction.SetDuration(3.0)
+									pSequence.AddAction(pSubtitleAction)
+									pSequence.Play()
+									App.g_kLocalizationManager.Unload(pDatabase)
+						return "Inside Starbase12"
+	return 1
+
+########
+# Method to check if the ship can continue travelling (she's travelling, yeah)
+# must return 1 if she can, 0 if she can't travel anymore (thus will forcibly drop out).
+########
+def CanContinueTravelling(self):
+	debug(__name__ + ", CanContinueTravelling")
+	pShip = self.GetShip()
+	pPlayer = App.Game_GetCurrentPlayer()
+	bIsPlayer = 0
+	if pPlayer and pShip.GetObjID() == pPlayer.GetObjID():
+		bIsPlayer = 1
+	pWarpEngines = pShip.GetWarpEngineSubsystem()
+	bStatus = 1
+	if pWarpEngines != None:
+		if pWarpEngines.IsDisabled() == 1:
+			if bIsPlayer == 1:
+				pSequence = App.TGSequence_Create ()
+				pSubtitleAction = App.SubtitleAction_CreateC("Brex: Warp engines are disabled sir, we are dropping out of warp.")
+				pSubtitleAction.SetDuration(3.0)
+				pSequence.AddAction(pSubtitleAction)
+				pSequence.Play()
+			bStatus = 0
+
+		elif pWarpEngines.IsOn() == 0:
+			if bIsPlayer == 1:
+				pSequence = App.TGSequence_Create ()
+				pSubtitleAction = App.SubtitleAction_CreateC("Brex: Warp engines are offline sir, we are dropping out of warp.")
+				pSubtitleAction.SetDuration(3.0)
+				pSequence.AddAction(pSubtitleAction)
+				pSequence.Play()
+			bStatus = 0
+
+		if bStatus > 0:
+			isEquipped = IsShipEquipped(pShip)
+			if not isEquipped:
+				if bIsPlayer == 1:
+					pSequence = App.TGSequence_Create ()
+					pSubtitleAction = App.SubtitleAction_CreateC("Brex: We don't have proto-warp sir, we are dropping out of it.")
+					pSubtitleAction.SetDuration(3.0)
+					pSequence.AddAction(pSubtitleAction)
+					pSequence.Play()
+				bStatus = 0
+			else:
+				pInstance, pInstancedict, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist = ProtoWarpBasicConfigInfo(pShip)
+				if pInstance and pInstancedict:
+					totalProtoWarpCores, onlineProtoWarpCores = ProtoWarpDisabledCalculations("Core", specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, pWarpEngines, pShip)
+					if totalProtoWarpCores > 0 and onlineProtoWarpCores <= 0:
+						if bIsPlayer == 1:
+							pSequence = App.TGSequence_Create ()
+							pSubtitleAction = App.SubtitleAction_CreateC("Brex: All Proto-Warp cores are offline or disabled sir, we are dropping out of proto-warp.")
+							pSubtitleAction.SetDuration(3.0)
+							pSequence.AddAction(pSubtitleAction)
+							pSequence.Play()
+						bStatus = 0
+					elif (specificNacelleHPList == None or (specificNacelleHPList != None and len(specificNacelleHPList) > 0)):
+						totalProtoWarpEngines, onlineProtoWarpEngines = ProtoWarpDisabledCalculations("Nacelle", specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, pWarpEngines, pShip)
+						if totalProtoWarpEngines > 0 and onlineProtoWarpEngines <= 0:
+							if bIsPlayer == 1:
+								pSequence = App.TGSequence_Create ()
+								pSubtitleAction = App.SubtitleAction_CreateC("Brex: All Proto-Warp nacelles are offline or disabled sir, we are dropping out of proto-warp.")
+								pSubtitleAction.SetDuration(3.0)
+								pSequence.AddAction(pSubtitleAction)
+								pSequence.Play()
+							bStatus = 0
+				else:
+					bStatus = 0
+	else:
+		bStatus = 0
+	return bStatus
+"""
+# ------ Thus, the manual for Proto-Warp should look more or less like the following and before the from bcdebug import debug line:
+
+# THIS FILE IS NOT SUPPORTED BY ACTIVISION
+# THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
+# ProtoWarp.py
+# prototype custom travelling method plugin script, by USS Frontier (Enhanced Warp, original) and then modified by Alex SL Gato for Proto-Warp
+# 19th November 2024
+#################################################################################################################
+##########	MANUAL
+#################################################################################################################
+# NOTE: all functions/methods and attributes defined here (in this prototype example plugin, ProtoWarp) are required to be in the plugin, with the exclusion of:
+# ------ MODINFO, which is there just to verify versioning.
+# ------ ALTERNATESUBMODELFTL METHODS subsection, which are exclusively used for alternate SubModels for FTL which is a separate but linked mod, or to import needed modules.
+# ------ Auxiliar functions: "AuxProtoElementNames", "findShipInstance", "ProtoWarpBasicConfigInfo" and "ProtoWarpDisabledCalculations".
+# === How-To-Add ===
+# This Travelling Method is Ship-based, on this case it needs of Foundation and FoundationTech to verify if the ship is equipped with it.
+# This FTL method check is stored inside an "Alternate-Warp-FTL" dictionary, which is a script that should be located at scripts/Custom/Techs/AlternateSubModelFTL.py. While this sub-tech can work totally fine without such module installed, it is recommended to have it.
+# On this case, due to that, only the lines marked with "# (#)" are needed for Proto-Warp to work, but the final parent technology may require more:
+# "Proto-Warp": is the name of the key. This is the bare minimum for the technology to work
+# "Nacelles": is the name of a key whose value indicates a list of which warp engine property children (nacelles) are part of the Proto-Warp system. If all are disabled/destroyed, Proto-Warp will not engage. If this field does not exist, it will check all warp hardpoints containing "protowarp", "proto warp" or "proto-warp" (case-insensitive). Leave as "Nacelles": [] to make it skip this disabled check.
+# "Core": is the name of a key whose value indicates a list of which hardpoint properties (not nacelles) are part of the Proto-Warp system. If all are disabled/destroyed, Proto-Warp will not engage either. If this field does not exist or "Core": [] this check will be skipped.
+"""
+#Sample Setup: replace "USSProtostar" for the appropiate abbrev. Also remove "# (#)"
+Foundation.ShipDef.USSProtostar.dTechs = { # (#)
+	"Alternate-Warp-FTL": { # (#)
+		"Setup": { # (#)
+			"Proto-Warp": {	"Nacelles": ["Proto Warp Nacelle"], "Core": ["Proto-Core"], }, # (#)
+			"Body": "VasKholhr_Body",
+			"NormalModel":          shipFile,
+			"WarpModel":          "VasKholhr_WingUp",
+			"Proto-WarpModel":          "VasKholhr_WingUp",
+			"AttackModel":          "VasKholhr_WingDown",
+			"Hardpoints":       {
+				"Proto Warp Nacelle":  [0.000000, 0.000000, 0.075000],
+			},
+
+			"AttackHardpoints":       {
+				"Proto Warp Nacelle":  [0.000000, -0.250000, 2.075000],
+			},
+			"WarpHardpoints":       {
+				"Proto Warp Nacelle":  [0.000000, -0.250000, -2.075000],
+			},
+			"Proto-WarpHardpoints":       {
+				"Proto Warp Nacelle":  [0.000000, -1.000000, -2.075000],
+			},
+		}, # (#)
+
+		"Port Wing":     ["VasKholhr_Portwing", {
+			"Position":             [0, 0, 0],
+			"Rotation":             [0, 0, 0], # normal Rotation used if not Red Alert and if not Warp
+			"AttackRotation":         [0, -0.6, 0],
+			"AttackDuration":         200.0, # Value is 1/100 of a second
+			"AttackPosition":         [0, 0, 0.03],
+			"WarpRotation":       [0, 0.349, 0],
+			"WarpPosition":       [0, 0, 0.02],
+			"WarpDuration":       150.0,
+			"Proto-WarpRotation":       [0, 0.749, 0],
+			"Proto-WarpPosition":       [0, 0, 0.05],
+			"Proto-WarpDuration":       150.0,
+			},
+		],
+        
+		"Starboard Wing":     ["VasKholhr_Starboardwing", {
+			"Position":             [0, 0, 0],
+			"Rotation":             [0, 0, 0],
+			"AttackRotation":         [0, 0.6, 0],
+			"AttackDuration":         200.0, # Value is 1/100 of a second
+			"AttackPosition":         [0, 0, 0.03],
+			"WarpRotation":       [0, -0.349, 0],
+			"WarpPosition":       [0, 0, 0.02],
+			"WarpDuration":       150.0,
+			"Proto-WarpRotation":       [0, -0.749, 0],
+			"Proto-WarpPosition":       [0, 0, 0.05],
+			"Proto-WarpDuration":       150.0,
+			},
+		],
+	}, # (#)
+} # (#)
+"""
+#
+#################################################################################################################
+##########	END OF MANUAL
+#################################################################################################################
+#################################################################################################################
+
+# TO-DO COMPLETE MANUAL(S)
+##################################################################################################################################################################################################################################
+##################################################################################################################################################################################################################################
+##########	END OF MANUAL
+##################################################################################################################################################################################################################################
+##################################################################################################################################################################################################################################
 #
 #################################################################################################################
 #
@@ -26,88 +689,29 @@ MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
 #################################################################################################################
 #
 
-# TO-DO It is NOT RECOMMENDED to combine the parent SubModels class with STProdigyProtoWarp class and possible children since sublists are shared.
+import App
+from bcdebug import debug
+import FoundationTech
+import loadspacehelper
+import math
+import MissionLib
+import nt
+import string
+from SubModels import *
+import traceback
 
 
+# TO-DO FIRST BEFORE PERFORMING THE THING BELOW, FIX THE BUGS THAT WERE NOT THERE BEFORE
 
-"""
-
-Sample Setup:
-# TO-DO MODIFY THINGS SO IT CHECKS "Alternate-Warp-FTL" and from there "Proto-Warp" : {"Nacelles": [], "Core": []}
-#
-Foundation.ShipDef.VasKholhr.dTechs = { "Alternate-Warp-FTL": {
-	"Setup":	{
-		"Body":	"VasKholhr_Body",
-		"NormalModel": shipFile,
-		"WarpModel": "VasKholhr_WingUp",
-		"ProtoWarpModel":	  "VasKholhr_WingUp",
-		"AttackModel":	  "VasKholhr_WingDown",
-		"Hardpoints":       {
-			"Port Cannon":  [-0.677745, 0.514529, -0.229285],
-			"Star Cannon":  [0.663027, 0.511252, -0.240265],
-			"Port Cannon 1":  [-0.323324, 0.240263, -0.115398],
-			"Star Cannon 1":  [0.319566, 0.242142, -0.11861],
-		},
-		"AttackHardpoints":       {
-			"Port Cannon":  [-0.503543, 0.524792, -0.47761],
-			"Star Cannon":  [0.486256, 0.527008, -0.483889],
-			"Port Cannon 1":  [-0.244469, 0.228191, -0.19762],
-			"Star Cannon 1":  [0.243789, 0.243208, -0.201933],
-		},
-	},
-		
-	"Port Wing":     ["VasKholhr_Portwing", {
-		"Position":	     [0, 0, 0],
-		"Rotation":	     [0, 0, 0], # normal Rotation used if not Red Alert and if not Warp
-		"AttackRotation":	 [0, -0.6, 0],
-		"AttackDuration":	 200.0, # Value is 1/100 of a second
-		"AttackPosition":	 [0, 0, 0.03],
-		"WarpRotation":       [0, 0.349, 0],
-		"WarpPosition":       [0, 0, 0.02],
-		"WarpDuration":       150.0,
-		}
-	],
-	
-	"Starboard Wing":     ["VasKholhr_Starboardwing", {
-		"Position":	     [0, 0, 0],
-		"Rotation":	     [0, 0, 0],
-		"AttackRotation":	 [0, 0.6, 0],
-		"AttackDuration":	 200.0, # Value is 1/100 of a second
-		"AttackPosition":	 [0, 0, 0.03],
-		"WarpRotation":       [0, -0.349, 0],
-		"WarpPosition":       [0, 0, 0.02],
-		"WarpDuration":       150.0,
-		}
-	],
-}}
-
-
-
-"""
 
 REMOVE_POINTER_FROM_SET = 190
 NO_COLLISION_MESSAGE = 192
 REPLACE_MODEL_MSG = 208
 SET_TARGETABLE_MSG = 209
 
-# TO-DO Ok so idea would be, first we skim through all the TravellingMethods folder
-# If we find certain functions (a function that would return a proper function and its eType), we store them
-# StartingProtoWarp(pObject, pEvent, techP, move=oProtoWarp.MySubPositionPointer()):
-# eTypeDict = {"eType": function}
-## for eType in eTypeDict.keys():
-## 	App.g_kEventManager.RemoveBroadcastHandler(eType, self.pEventHandler, "FTLFunctionHandler")
-##	App.g_kEventManager.AddBroadcastPythonMethodHandler(eType, self.pEventHandler, "FTLFunctionHandler")
-##
-## def FTLFunctionHandler(self, pEvent, AND WHATEVER IS NEEDED HERE)
-##	eType = pEvent.GetEventType()
-##	pShip = pEvent.GetDestination() # stub, obviously fix it
-##	eTypeDict[eType](self, pShip, pEvent, AND WHATEVER IS NEEDED HERE) # Best of this is that we would not need to check special techs or anything of the sort
-##      # BTW self would be "techP"
-## Do not worry about actual FTL speeds, that is what the other script works in
+# Because SubModels is ridiculously hard to make children without having to re-do all the functions, I've made this, so now you can just follow
 
-# Because SubModels is ridiculously hard to make children without having to re-do all the functions, I've made this, so now you can just re-do the attach/detach
-
-eTypeDict = {} #"eType": function
+eTypeDict = {}
 
 _g_dExcludeSomePlugins = {
 	# Some random plugins that I don't want to risk people attempting to load using this tech
@@ -521,7 +1125,7 @@ class ProtoWarp(SubModels):
 			
 			pShip.AttachObject(pSubShip)
 
-oProtoWarp = ProtoWarp("Proto-Warp")
+oProtoWarp = ProtoWarp("Alternate-Warp-FTL")
 
 # The class does the moving of the parts
 # with every move the part continues to move
@@ -570,7 +1174,7 @@ class MovingEventUpdated(MovingEvent):
 		return 0
 
 """
-#TO-DO DELETE... or improve to check things are not going awry, that is the question...
+#FUTURE TO-DO: DELETE... or improve to check things are not going awry, that is the question...
 def IncCurrentMoveID(pShip, pInstance):
 	debug(__name__ + ", IncCurrentMoveID")
 	for item in pInstance.OptionsList:
