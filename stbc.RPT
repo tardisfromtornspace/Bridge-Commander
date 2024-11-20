@@ -5802,3 +5802,95 @@ Call stack:
 Address   Frame
 00776D56  0019FBEC  0001:00375D56 C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
 
+//=====================================================
+Current Time: Wed Nov 20 00:26:38 2024
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  006E0C34 01:002DFC34 C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+Registers:
+EAX:90909090
+EBX:00740072
+ECX:90909090
+EDX:3CF3DC48
+ESI:90909090
+EDI:005C8390
+CS:EIP:0023:006E0C34
+SS:ESP:002B:0019F970  EBP:00000000
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010286
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+
+//=====================================================
+Current Time: Wed Nov 20 00:45:08 2024
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  006E0C34 01:002DFC34 C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+Registers:
+EAX:90909090
+EBX:00740072
+ECX:90909090
+EDX:3ACACCB0
+ESI:90909090
+EDI:005C8390
+CS:EIP:0023:006E0C34
+SS:ESP:002B:0019F970  EBP:00000000
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010286
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+
+//=====================================================
+Current Time: Wed Nov 20 00:58:17 2024
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  006E0C34 01:002DFC34 C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+Registers:
+EAX:90909090
+EBX:00740072
+ECX:90909090
+EDX:242AAF70
+ESI:90909090
+EDI:005C8390
+CS:EIP:0023:006E0C34
+SS:ESP:002B:0019F970  EBP:00000000
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010286
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+
+//=====================================================
+Current Time: Wed Nov 20 01:22:28 2024
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  006E0C34 01:002DFC34 C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+Registers:
+EAX:90909090
+EBX:00740072
+ECX:90909090
+EDX:2430D3E0
+ESI:90909090
+EDI:005C8390
+CS:EIP:0023:006E0C34
+SS:ESP:002B:0019F970  EBP:00000000
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010286
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+

@@ -104,6 +104,9 @@ Foundation.ShipDef.USSProtostar.dTechs = {
 			"AttackRotation":         [0, 0.6, 0],
 			"AttackDuration":         200.0, # Value is 1/100 of a second
 			"AttackPosition":         [0, 0, 0.03],
+			"WarpRotation":       [0, -0.349, 0],
+			"WarpPosition":       [0, 0, 0.02],
+			"WarpDuration":       150.0,
 			"Proto-WarpRotation":       [0, -0.349, 0],
 			"Proto-WarpPosition":       [0, 0, 0.02],
 			"Proto-WarpDuration":       150.0,

@@ -8,6 +8,7 @@ import string
 from SubModels import *
 
 # This class inherits from Defiant's SubModels script - as such, it depends on it.
+# TO-DO FIRST BEFORE PERFORMING THE THING BELOW, FIX THE BUGS THAT WERE NOT THERE BEFORE
 #TO-DO UPDATE, ALSO UPDATE THE SAMPLE SETUP TO HAVE TABS AND BE MORE CLEAR
 # TO-DO ALSO ADD VERSIONING
 # TO-DO Try to make this work with broadcast handlers and then you just push them onto the __init__ - something similar to how you extend things with SGShields and such
@@ -15,7 +16,7 @@ from SubModels import *
 #################################################################################################################
 #
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.11",
+	    "Version": "0.13",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -86,9 +87,22 @@ REMOVE_POINTER_FROM_SET = 190
 NO_COLLISION_MESSAGE = 192
 REPLACE_MODEL_MSG = 208
 SET_TARGETABLE_MSG = 209
-ENGAGING_PROTO_WARP = App.UtopiaModule_GetNextEventType()
-DISENGAGING_PROTO_WARP = App.UtopiaModule_GetNextEventType()
-WARP_WAIT_END = App.UtopiaModule_GetNextEventType()
+ENGAGING_PROTO_WARP = App.UtopiaModule_GetNextEventType() # TO-DO ACTUALLY IT WOULD BE A GOOD IDEA TO MOVE THIS TO ITS RESPECTIVE TRAVELLINGMETHODS
+DISENGAGING_PROTO_WARP = App.UtopiaModule_GetNextEventType() # TO-DO ACTUALLY IT WOULD BE A GOOD IDEA TO MOVE THIS TO ITS RESPECTIVE TRAVELLINGMETHODS
+# TO-DO Ok so idea would be, first we skim through all the TravellingMethods folder
+# If we find certain functions (a function that would return a proper function and its eType), we store them
+# StartingProtoWarp(pObject, pEvent, techP, move=oProtoWarp.MySubPositionPointer()):
+# eTypeDict = {"eType": function}
+## for eType in eTypeDict.keys():
+## 	App.g_kEventManager.RemoveBroadcastHandler(eType, self.pEventHandler, "FTLFunctionHandler")
+##	App.g_kEventManager.AddBroadcastPythonMethodHandler(eType, self.pEventHandler, "FTLFunctionHandler")
+##
+## def FTLFunctionHandler(self, pEvent, AND WHATEVER IS NEEDED HERE)
+##	eType = pEvent.GetEventType()
+##	pShip = pEvent.GetDestination() # stub, obviously fix it
+##	eTypeDict[eType](self, pShip, pEvent, AND WHATEVER IS NEEDED HERE) # Best of this is that we would not need to check special techs or anything of the sort
+##      # BTW self would be "techP"
+## Do not worry about actual FTL speeds, that is what the other script works in
 
 # Because SubModels is ridiculously hard to make children without having to re-do all the functions, I've made this, so now you can just re-do the attach/detach
 
@@ -191,7 +205,7 @@ class ProtoWarp(SubModels):
 			dOptions["currentRotation"][pShip.GetName()] = dOptions["Rotation"] # set current Rotation
 			
 			# event listener
-			AlertListener = self.Add_FTLAndSituationMethods(dOptions, pShip, AlertListener)
+			AlertListener = self.Add_FTLAndSituationMethods(dOptions, pShip, pInstanceDict, AlertListener)
 
 		self.PerformPostAttachLoopActions(pShip, AlertListener)
 
@@ -200,10 +214,10 @@ class ProtoWarp(SubModels):
 		self.bAddedProtoWarpListener = {}
 		self.bAddedAlertListener = {}
 
-	def Add_FTLAndSituationMethods(self, dOptions, pShip, pInstanceDict):
+	def Add_FTLAndSituationMethods(self, dOptions, pShip, pInstanceDict, AlertListener):
 		self.Add_ProtoWarpMethods(pShip, dOptions, pInstanceDict)
 		self.Add_WarpMethods(pShip, dOptions)
-		AlertListener = self.Add_AttackMethods(pShip, dOptions, AlertListener)
+		AlertListener = self.Add_AttackMethods(pShip, dOptions, AlertListener, pInstanceDict)
 		return AlertListener
 
 	def Remove_FTLAndSituationMethods(self, pShip):
@@ -234,7 +248,7 @@ class ProtoWarp(SubModels):
 	def Add_WarpMethods(self, pShip, dOptions):
 		if not self.bAddedWarpListener.has_key(pShip.GetName()) and (dOptions.has_key("WarpRotation") or dOptions.has_key("WarpPosition")):
 			pShip.AddPythonFuncHandlerForInstance(App.ET_START_WARP, __name__ + ".StartingWarpE")
-			#pShip.AddPythonFuncHandlerForInstance(App.ET_START_WARP_NOTIFY, __name__ + ".StartingWarpES")
+			pShip.AddPythonFuncHandlerForInstance(App.ET_START_WARP_NOTIFY, __name__ + ".StartingWarpE")
 			# ET_EXITED_WARP handler doesn't seem to work, so use ET_EXITED_SET instead
 			pShip.AddPythonFuncHandlerForInstance(App.ET_EXITED_SET, __name__ + ".ExitSetWarp")
 			self.bAddedWarpListener[pShip.GetName()] = 1
@@ -265,7 +279,7 @@ class ProtoWarp(SubModels):
 	def PerformPostAttachLoopActions(self, pShip, AlertListener):
 		# Make sure the Ship is correctly set because we don't get the first ET_SUBSYSTEM_STATE_CHANGED event for Ai ships
 		if AlertListener:
-			PartsForWeaponProtoState(pShip, self.MySystemPointer())
+			PartsForWeaponProtoState(pShip, self)
 
 	# Called by FoundationTech when a Ship is removed from set (eg destruction)
 	def DetachShip(self, iShipID, pInstance):
@@ -376,24 +390,6 @@ def findShipInstance(pShip):
 	return pInstance
 
 oProtoWarp = ProtoWarp("Proto-Warp")
-
-# possible fix
-# TO-DO THIGNS BELOW HERE ARE TEST 
-#StartingWarpES = ProtoWarp.StartingWarpE # the function is still unbound
-"""
-#from builtins import classmethod 
-#from __builtin__ import classmethod
-
-import traceback
-try:
-	from __builtin__ import classmethod
-	#from __builtin__ import classmethod	
-	StartingWarpES = classmethod(ProtoWarp.StartingWarpE)
-except:
-	print "Error"
-	traceback.print_exc()
-"""
-# TO-DO THINGS ABOVE HERE ARE TEST
 
 # The class does the moving of the parts
 # with every move the part continues to move
@@ -745,18 +741,24 @@ def PartsForWeaponProtoState(pShip, techP):
 
 # Set the parts for Warp state
 def StartingWarpE(pObject, pEvent, techP = oProtoWarp, move="Warp"):
+	debug(__name__ + ", StartingWarpE")
+	print "Ok so at least I received that"
 	# Slight delay, as it is likely the special FTL methods have not yet managed to alter things to prevent entering warp
         pSeq = App.TGSequence_Create()
-        pSeq.AppendAction(App.TGScriptAction_Create(__name__, "StartingWarpCommon", pObject, pEvent, techP, move), 0.5)
+        pSeq.AppendAction(App.TGScriptAction_Create(__name__, "StartingWarpCommonNoDelay", pObject, pEvent, techP, move), 0.3)
         pSeq.Play()
+
+def StartingWarpCommonNoDelay(pAction, pObject, pEvent, techP, move):
+	StartingWarpCommon(pObject, pEvent, techP, move)
+	return 0
 
 # Set the parts for ProtoWarp state 
 def StartingProtoWarp(pObject, pEvent, techP = oProtoWarp, move=oProtoWarp.MySubPositionPointer()):
+	debug(__name__ + ", StartingProtoWarp")
 	StartingWarpCommon(pObject, pEvent, techP, move)
 
-def StartingWarpCommon(pObject, pEvent, techP, subPosition=oProtoWarp.MySubPositionPointer()):
-	debug(__name__ + ", StartingProtoWarp")
-	
+def StartingWarpCommon(pObject, pEvent, techP, subPosition="Warp"):
+	debug(__name__ + ", StartingWarpCommon")
 	if not pObject or not pEvent:
 		return 0
 
@@ -768,7 +770,7 @@ def StartingWarpCommon(pObject, pEvent, techP, subPosition=oProtoWarp.MySubPosit
 	if not pShipID:
 		return 0
 
-	pShip = App.ShipClass_GetObjectByID(None, pShip.GetObjID())
+	pShip = App.ShipClass_GetObjectByID(None, pShipID)
 	if not pShip:
 		return 0
 
@@ -780,12 +782,13 @@ def StartingWarpCommon(pObject, pEvent, techP, subPosition=oProtoWarp.MySubPosit
 	if not pInstance:
 		pObject.CallNextHandler(pEvent)
 		return 0
+
 	pInstanceDict = pInstance.__dict__
 	if pInstanceDict and pInstanceDict.has_key("Warp Overriden"):
 		if subPosition == "Warp":
 	 		if pInstanceDict["Warp Overriden"] > 0:
 				pObject.CallNextHandler(pEvent)
-				return		
+				return 0	
 		else: # Any other FTL method, we have priority!!!
 	 		if pInstanceDict["Warp Overriden"] <= 0:
 				pInstanceDict["Warp Overriden"] = 1	
@@ -793,15 +796,18 @@ def StartingWarpCommon(pObject, pEvent, techP, subPosition=oProtoWarp.MySubPosit
 	iLongestTime = 0.0
 	IncCurrentMoveID(pShip, pInstance)
 	dHardpoints = {}
-	
+
 	# first replace the Models
 	PrepareShipForProtoMove(pShip, pInstance, techP)
-	
+	subPositionHardpoints = str(subPosition) + "Hardpoints"
+	subPositionDuration = str(subPosition) + "Duration"
+	subPositionRotation = str(subPosition) + "Rotation"
+	subPositionPosition = str(subPosition) + "Position"
 	for item in pInstance.OptionsList:
 		# setup is not a submodel
 		if item[0] == "Setup":
-			if item[1].has_key(str(subPosition) + "Hardpoints"):
-				dHardpoints = item[1][str(subPosition) + "Hardpoints"]
+			if item[1].has_key(subPositionHardpoints):
+				dHardpoints = item[1][subPositionHardpoints]
 			continue
 	
 		# set the id for this move
@@ -809,20 +815,21 @@ def StartingWarpCommon(pObject, pEvent, techP, subPosition=oProtoWarp.MySubPosit
 		item[1]["curMovID"][pShip.GetName()] = iThisMovID
 	
 		fDuration = 200.0
-		if item[1].has_key(str(subPosition) + "Duration"):
-			fDuration = item[1][str(subPosition) + "Duration"]
+		
+		if item[1].has_key(subPositionDuration):
+			fDuration = item[1][subPositionDuration]
 		    
 		# Rotation
 		lStartingRotation = item[1]["currentRotation"][pShip.GetName()]
 		lStoppingRotation = lStartingRotation
-		if item[1].has_key(str(subPosition) + "Rotation"):
-			lStoppingRotation = item[1][str(subPosition) + "Rotation"]
+		if item[1].has_key(subPositionRotation):
+			lStoppingRotation = item[1][subPositionRotation]
 		
 		# Translation
 		lStartingTranslation = item[1]["currentPosition"][pShip.GetName()]
 		lStoppingTranslation = lStartingTranslation
-		if item[1].has_key(str(subPosition) + "Position"):
-			lStoppingTranslation = item[1][str(subPosition) + "Position"]
+		if item[1].has_key(subPositionPosition):
+			lStoppingTranslation = item[1][subPositionPosition]
 	
 		iTime = 0.0
 		iTimeNeededTotal = 0.0
@@ -851,7 +858,7 @@ def StartingWarpCommon(pObject, pEvent, techP, subPosition=oProtoWarp.MySubPosit
 	pSeq.AppendAction(App.TGScriptAction_Create(__name__, "ProtoWarpStartMoveFinishAction", pShip, pInstance, GetCurrentMoveID(pShip, pInstance), techP, subPosition), 2.0)
 	pSeq.Play()
 
-	pObject.CallNextHandler(pEvent)	
+	return 0
 
 def ExitingProtoWarp(pAction, pShip, techP, subPosition):
 	debug(__name__ + ", ExitingProtoWarp")
