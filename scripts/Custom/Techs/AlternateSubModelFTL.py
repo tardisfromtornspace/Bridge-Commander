@@ -29,7 +29,7 @@
 # - "<insert_name_here>" - basically a generalization example for any other TravellingMethod. On this case in particular, <insert_name_here> = "Proto-Warp". Unless told otherwise, this generalization implies you can have as many of that field as you want, as long as <insert_name_here> is different for each one, allowing multiple TravellingMethods subModels support.
 # - "c.s."               - "case-sensitive". That is, it will notice it is different if you type like this, LIKE THIS, LiKe ThIs and so on.
 # - "<s-s>"              - "It uses the name of the ship File located at scripts/ships"
-# - "<k:v>"              - key - value format. On python, key: value. Unless key or value is a variable, you need to ensure they are between "" to indicate they are strings. "key like this" : "value like that". Also it's c.s.
+# - "<k:v>"              - key - value format. On python, key: value. Unless key or value is a variable (or value is not an integer), you need to ensure they are between "" to indicate they are strings. "key like this" : "value like that". Also it's c.s.
 #
 # (#) On the "Setup" section, people will notice:
 # -- (*) A ""Proto-Warp": {"Nacelles": ["Proto Warp Nacelle"], "Core": ["Proto-Core"], }," line, This can vary wildly between TravellingMethods, some may not even require a similar line, so check each one's readme (if they have it) to get more information on its SubTech. However for those modders that use this tech to validate if the ship is equipped or not, please do so somewhere inside the "Setup" field. On this case in particular, this line is simply arbitrarily defined here so the ProtoWarp TravellingMethods script, which uses this tech to verify the ship is equipped with it, can determine the ship has or does not have this tech. 
@@ -41,6 +41,10 @@
 # --------- Please note that while being (-), it pretty much is (#) if you added certain warp-related fields which are outside of "Setup".
 # -- (-) "<insert_name_here>Model" is a key whose value stores the model used when the ship uses <insert_name_here>, and will supersede the warp-related options. <k:v> <s-s> c.s.
 # --------- Please note that while being (-), it pretty much is (#) if you added certain <insert_name_here>-related fields which are outside of "Setup".
+# -- (0) "BodySetScale": indicates the model size multiplier during a transformation. Do not include to have default 1.0 (regular scale). <k:v>
+# -- (0) "NormalSetScale": indicates the model size multiplier during normal conditions. Do not include to have default 1.0 (regular scale). <k:v>
+# -- (0) "AttackSetScale": indicates the model size multiplier during red alert. Do not include to have default 1.0 (regular scale). <k:v>
+# -- (0) "<insert_name_here>SetScale": indicates the model size multiplier during <insert_name_here> (f.ex. during Warp, during Proto-Warp). Do not include to have default 1.0 (regular scale). <k:v>
 # -- (0) "Hardpoints": a dictionary which stores inside all subsystem property names in <k:v> format which would move after a transformation, regarding normal positions (including yellow alert).
 # --------- On this case, each dictionary entry would be "Subsystem name" : [x, y, z]
 # -- (0) "AttackHardpoints": a dictionary which stores inside all subsystem property names in <k:v> format which would move after a transformation, regarding red alert positions.
@@ -56,6 +60,7 @@
 # ----------------------- Movement value is on [x, y, z]
 # ---------------- (0) "<insert_name_here>Rotation": a dictionary entry which stores inside the rotation in <k:v> format which the piece would move to during an <insert_name_here> transformation. On this example, "<insert_name_here>" could be nothing (thus "Rotation", for default), "Attack" (for red alert), "Warp" (for regular warp) or "Proto-Warp" (for Proto-Warp).
 # ----------------------- Rotation value is on [x, y, z] axis of rotation
+# ---------------- (0) "SetScale": indicates the model size of a subpart. Do not include to have same behaviour as SubModels (regular scale but if the part has a too-extreme rotation (like, at least 90 degrees) it will suffer an asintotic process where it suddenly becomes small and then extremely big and inverted). <k:v>
 """
 #Sample Setup: replace "USSProtostar" for the appropiate abbrev
 Foundation.ShipDef.USSProtostar.dTechs = {
@@ -67,6 +72,11 @@ Foundation.ShipDef.USSProtostar.dTechs = {
 			"WarpModel":          "VasKholhr_WingUp",
 			"Proto-WarpModel":          "VasKholhr_WingUp",
 			"AttackModel":          "VasKholhr_WingDown",
+			"BodySetScale": 1.0,
+			"NormalSetScale": 1.0,
+			"WarpSetScale": 1.0,
+			"Proto-WarpSetScale": 1.0,
+			"AttackSetScale": 1.0,
 			"Hardpoints":       {
 				"Proto Warp Nacelle":  [0.000000, 0.000000, 0.075000],
 			},
@@ -83,6 +93,7 @@ Foundation.ShipDef.USSProtostar.dTechs = {
 		},
 
 		"Port Wing":     ["VasKholhr_Portwing", {
+			"SetScale": 1.0,
 			"Position":             [0, 0, 0],
 			"Rotation":             [0, 0, 0], # normal Rotation used if not Red Alert and if not Warp
 			"AttackRotation":         [0, -0.6, 0],
@@ -98,6 +109,7 @@ Foundation.ShipDef.USSProtostar.dTechs = {
 		],
         
 		"Starboard Wing":     ["VasKholhr_Starboardwing", {
+			"SetScale": 1.0,
 			"Position":             [0, 0, 0],
 			"Rotation":             [0, 0, 0],
 			"AttackRotation":         [0, 0.6, 0],
@@ -618,6 +630,11 @@ Foundation.ShipDef.USSProtostar.dTechs = { # (#)
 			"WarpModel":          "VasKholhr_WingUp",
 			"Proto-WarpModel":          "VasKholhr_WingUp",
 			"AttackModel":          "VasKholhr_WingDown",
+			"BodySetScale": 1.0,
+			"NormalSetScale": 1.0,
+			"WarpSetScale": 1.0,
+			"Proto-WarpSetScale": 1.0,
+			"AttackSetScale": 1.0,
 			"Hardpoints":       {
 				"Proto Warp Nacelle":  [0.000000, 0.000000, 0.075000],
 			},
@@ -634,6 +651,7 @@ Foundation.ShipDef.USSProtostar.dTechs = { # (#)
 		}, # (#)
 
 		"Port Wing":     ["VasKholhr_Portwing", {
+			"SetScale": 1.0,
 			"Position":             [0, 0, 0],
 			"Rotation":             [0, 0, 0], # normal Rotation used if not Red Alert and if not Warp
 			"AttackRotation":         [0, -0.6, 0],
@@ -649,6 +667,7 @@ Foundation.ShipDef.USSProtostar.dTechs = { # (#)
 		],
         
 		"Starboard Wing":     ["VasKholhr_Starboardwing", {
+			"SetScale": 1.0,
 			"Position":             [0, 0, 0],
 			"Rotation":             [0, 0, 0],
 			"AttackRotation":         [0, 0.6, 0],
@@ -671,7 +690,6 @@ Foundation.ShipDef.USSProtostar.dTechs = { # (#)
 #################################################################################################################
 #################################################################################################################
 
-# TO-DO COMPLETE MANUAL(S)
 ##################################################################################################################################################################################################################################
 ##################################################################################################################################################################################################################################
 ##########	END OF MANUAL
@@ -699,10 +717,6 @@ import nt
 import string
 from SubModels import *
 import traceback
-
-
-# TO-DO FIRST BEFORE PERFORMING THE THING BELOW, FIX THE BUGS THAT WERE NOT THERE BEFORE
-
 
 REMOVE_POINTER_FROM_SET = 190
 NO_COLLISION_MESSAGE = 192
@@ -818,7 +832,7 @@ def LoadExtraLimitedPlugins(dExcludePlugins=_g_dExcludeSomePlugins):
 					if hasattr(banana, "AlternateFTLActionEnteringWarp"):
 
 						eType, functionEnteringWarp = banana.AlternateFTLActionEnteringWarp() # Must be a regular function that only returns a type and function
-						print eType, functionEnteringWarp
+						#print eType, functionEnteringWarp
 						if eType and not eTypeDict.has_key(eType):
 							eTypeDict[eType] = functionEnteringWarp
 
@@ -836,9 +850,7 @@ LoadExtraLimitedPlugins()
 
 # This class controls the attach and detach of the Models
 class ProtoWarp(SubModels):
-	#className = "Proto-Warp"
-	#classSub = "Proto-Warp"
-
+	# TO-DO ADD SOMEWHERE LIKE PROTOMOVE IF THE SHIP CHANGES MODEL WE RE-CLOAK
 	def __init__(self, name):
 		debug(__name__ + ", Initiated")
 		FoundationTech.TechDef.__init__(self, name)
@@ -895,7 +907,8 @@ class ProtoWarp(SubModels):
 		debug(__name__ + ", AttachShip")
 		print "Ship %s with ProtoWarp support added" % pShip.GetName()
 
-		sNamePrefix = pShip.GetName() + "_"
+		pShipID = pShip.GetObjID()
+		sNamePrefix = str(pShipID) + "_"
 		pInstanceDict = pInstance.__dict__
 		pInstanceDict["OptionsList"] = [] # save options to this list, so we can access them later
 
@@ -916,44 +929,52 @@ class ProtoWarp(SubModels):
 			#we have to remember, like alert state
 			if sNameSuffix == "Setup":
 				dOptions = ModelList[sNameSuffix]
-				# we start with green alert
-				if not dOptions.has_key("AlertLevel"):
-					dOptions["AlertLevel"] = {}
-				if not dOptions.has_key("GenMoveID"):
-					dOptions["GenMoveID"] = {}
-				dOptions["AlertLevel"][pShip.GetName()] = 0
-				dOptions["GenMoveID"][pShip.GetName()] = 0
-				pInstance.OptionsList.append("Setup", dOptions)
+
+				dOptions1 = {}
+
+				dOptions["AlertLevel"] = 0
+				dOptions["GenMoveID"] = 0
+
+                                for key in dOptions.keys():
+                                    dOptions1[key] = dOptions[key]
+
+				pInstance.OptionsList.append("Setup", dOptions1)
 				continue # nothing more todo here
+
 			#
-			# the following stuff is only for the objects that moves
+			# the following stuff is only for the objects that move
 			
 			if len(ModelList[sNameSuffix]) > 1:
 				dOptions = ModelList[sNameSuffix][1]
 			sFile = ModelList[sNameSuffix][0]
 			loadspacehelper.PreloadShip(sFile, 1)
 			
+
 			# save the shipfile for later use
-			dOptions["sShipFile"] = sFile
-			
+			dofShip = [None, None]
+			dofShip[0] = sNameSuffix
+                        
+			# save the shipfile for later use, this would be on "item[1]"
+			dOptions2 = {}
+			dOptions2["sShipFile"] = sFile
+                        
 			# set current rotation/position values
-			if not dOptions.has_key("currentRotation"):
-				dOptions["currentRotation"] = {}
-			if not dOptions.has_key("currentPosition"):
-				dOptions["currentPosition"] = {}
-			if not dOptions.has_key("curMovID"):
-				dOptions["curMovID"] = {}
-			dOptions["currentRotation"][pShip.GetName()] = [0, 0, 0] # those two lists are updated with every move
-			dOptions["currentPosition"][pShip.GetName()] = [0, 0, 0]
-			dOptions["curMovID"][pShip.GetName()] = 0
 			if not dOptions.has_key("Position"):
 				dOptions["Position"] = [0, 0, 0]
-			dOptions["currentPosition"][pShip.GetName()] = dOptions["Position"] # set current Position
-			
+			dOptions2["currentPosition"] = dOptions["Position"]
+
 			if not dOptions.has_key("Rotation"):
 				dOptions["Rotation"] = [0, 0, 0]
-			dOptions["currentRotation"][pShip.GetName()] = dOptions["Rotation"] # set current Rotation
-			
+			dOptions2["currentRotation"] = dOptions["Rotation"]
+
+			dOptions2["curMovID"] = 0
+
+			for key in dOptions.keys():
+				dOptions2[key] = dOptions[key]
+
+			dofShip[1] = dOptions2
+			pInstance.OptionsList.append(dofShip)
+
 			# event listener
 			AlertListener = self.Add_FTLAndSituationMethods(dOptions, pShip, pInstanceDict, AlertListener)
 
@@ -962,65 +983,60 @@ class ProtoWarp(SubModels):
 	# TO-DO REMOVE DRIED LAVA
 	def AddbAddedFTLSituationListener(self):
 		self.bAddedWarpListener = {} # these variables will make sure we add our event handlers only once
-		#self.bAddedProtoWarpListener = {}
 		self.bAddedAlertListener = {}
 
 	def Add_FTLAndSituationMethods(self, dOptions, pShip, pInstanceDict, AlertListener):
-		#self.Add_ProtoWarpMethods(pShip, dOptions, pInstanceDict)
+		self.Add_CloakMethods(pShip)
 		self.Add_WarpMethods(pShip, dOptions)
 		AlertListener = self.Add_AttackMethods(pShip, dOptions, AlertListener, pInstanceDict)
 		return AlertListener
 
 	def Remove_FTLAndSituationMethods(self, pShip):
-		#self.Remove_ProtoWarpMethods(pShip)
+
+		self.Remove_CloakMethods(pShip)
 		self.Remove_WarpMethods(pShip)
 		self.Remove_AttackMethods(pShip)
 
+	def Add_CloakMethods(self, pShip):
+		self.Remove_CloakMethods(pShip)
+		pShip.AddPythonFuncHandlerForInstance(App.ET_CLOAK_BEGINNING, __name__ + ".CloakHandler")
+		pShip.AddPythonFuncHandlerForInstance(App.ET_DECLOAK_BEGINNING, __name__ + ".DecloakHandler")
+
+	def Remove_CloakMethods(self, pShip):
+		pShip.RemoveHandlerForInstance(App.ET_CLOAK_BEGINNING, __name__ + ".CloakHandler")
+		pShip.RemoveHandlerForInstance(App.ET_DECLOAK_BEGINNING, __name__ + ".DecloakHandler")	
+
 	def Add_AttackMethods(self, pShip, dOptions, AlertListener, pInstanceDict):
-		if not self.bAddedAlertListener.has_key(pShip.GetName()) and (dOptions.has_key("AttackRotation") or dOptions.has_key("AttackPosition")):
+		if not self.bAddedAlertListener.has_key(pShip.GetObjID()) and (dOptions.has_key("AttackRotation") or dOptions.has_key("AttackPosition")):
 			pShip.AddPythonFuncHandlerForInstance(App.ET_SET_ALERT_LEVEL, __name__ + ".AlertProtoStateChanged")
 			# Alert change handler doesn't work for AI ships, so use subsystem changed instead
 			pShip.AddPythonFuncHandlerForInstance(App.ET_SUBSYSTEM_STATE_CHANGED, __name__ + ".SubsystemStateProtoChanged")
-			self.bAddedAlertListener[pShip.GetName()] = 1 
+			self.bAddedAlertListener[pShip.GetObjID()] = 1 
 			AlertListener = 1
 		return AlertListener
 	def Remove_AttackMethods(self, pShip):
-		if self.bAddedAlertListener.has_key(pShip.GetName()):
+		if self.bAddedAlertListener.has_key(pShip.GetObjID()):
 			pShip.RemoveHandlerForInstance(App.ET_SUBSYSTEM_STATE_CHANGED, __name__ + ".SubsystemStateProtoChanged")
 			pShip.RemoveHandlerForInstance(App.ET_SET_ALERT_LEVEL, __name__ + ".AlertProtoStateChanged")
 			try:
-				del self.bAddedAlertListener[pShip.GetName()]
+				del self.bAddedAlertListener[pShip.GetObjID()]
 			except:
 				pass
 
 	def Add_WarpMethods(self, pShip, dOptions):
-		if not self.bAddedWarpListener.has_key(pShip.GetName()) and (dOptions.has_key("WarpRotation") or dOptions.has_key("WarpPosition")):
+		if not self.bAddedWarpListener.has_key(pShip.GetObjID()) and (dOptions.has_key("WarpRotation") or dOptions.has_key("WarpPosition")):
 			pShip.AddPythonFuncHandlerForInstance(App.ET_START_WARP, __name__ + ".StartingWarpE")
 			pShip.AddPythonFuncHandlerForInstance(App.ET_START_WARP_NOTIFY, __name__ + ".StartingWarpE")
 			# ET_EXITED_WARP handler doesn't seem to work, so use ET_EXITED_SET instead
 			pShip.AddPythonFuncHandlerForInstance(App.ET_EXITED_SET, __name__ + ".ExitSetWarp")
-			self.bAddedWarpListener[pShip.GetName()] = 1
+			self.bAddedWarpListener[pShip.GetObjID()] = 1
 	def Remove_WarpMethods(self, pShip):
-		if self.bAddedWarpListener.has_key(pShip.GetName()):
+		if self.bAddedWarpListener.has_key(pShip.GetObjID()):
 			pShip.RemoveHandlerForInstance(App.ET_START_WARP, __name__ + ".StartingWarpE") # TO-DO ADJUST TO ADD MISSING STARTING WARP AND ENDING WARP THINGS
 			pShip.RemoveHandlerForInstance(App.ET_START_WARP_NOTIFY, __name__ + ".StartingWarpE")
 			pShip.RemoveHandlerForInstance(App.ET_EXITED_SET, __name__ + ".ExitSetWarp")
 			try:
-				del self.bAddedWarpListener[pShip.GetName()]
-			except:
-				pass
-
-	def Add_ProtoWarpMethods(self, pShip, dOptions, pInstanceDict):
-		if not self.bAddedProtoWarpListener.has_key(pShip.GetName()) and (dOptions.has_key("ProtoWarpRotation") or dOptions.has_key("ProtoWarpPosition")):
-			pShip.AddPythonFuncHandlerForInstance(ENGAGING_PROTO_WARP, __name__ + ".StartingProtoWarp")
-			pShip.AddPythonFuncHandlerForInstance(DISENGAGING_PROTO_WARP, __name__ + ".ExitSetProto")
-			self.bAddedProtoWarpListener[pShip.GetName()] = 1 # 1 = Not protowarping, 2 = protowarping - warp sequence verifies its own warp sequence is not suppressed.
-	def Remove_ProtoWarpMethods(self, pShip, pInstanceDict):
-		if self.bAddedProtoWarpListener.has_key(pShip.GetName()): # TO-DO UPDATE IF NECESSARY REMOVING THESE AND ONLY USING BROADCAST HANDLER?
-			pShip.RemoveHandlerForInstance(ENGAGING_PROTO_WARP, __name__ + ".StartingProtoWarp")
-			pShip.RemoveHandlerForInstance(DISENGAGING_PROTO_WARP, __name__ + ".ExitSetProto")
-			try:
-				del self.bAddedProtoWarpListener[pShip.GetName()]
+				del self.bAddedWarpListener[pShip.GetObjID()]
 			except:
 				pass
 
@@ -1041,10 +1057,17 @@ class ProtoWarp(SubModels):
 			if hasattr(pInstance, "OptionsList"):
 				for item in pInstance.OptionsList:
 					if item[0] == "Setup":
-						del item[1]["AlertLevel"][pShip.GetName()]
+						if item[1].has_key("AlertLevel"):
+							del item[1]["AlertLevel"]
+						if item[1].has_key("GenMoveID"):
+							del item[1]["GenMoveID"]
 					else:
-						del item[1]["currentRotation"][pShip.GetName()]
-						del item[1]["currentPosition"][pShip.GetName()]
+						if item[1].has_key("currentPosition"):
+							del item[1]["currentPosition"]
+						if item[1].has_key("currentRotation"):
+							del item[1]["currentRotation"]
+						if item[1].has_key("curMovID"):
+							del item[1]["curMovID"]
 
 			pInstanceDict = pInstance.__dict__
 			if pInstanceDict and pInstanceDict.has_key("Warp Overriden"):
@@ -1054,6 +1077,18 @@ class ProtoWarp(SubModels):
 					pass
 				
 		if hasattr(pInstance, "SubModelList"):
+			for pSubShip in pInstance.SubModelList:
+				try:
+					pSubShip = App.ShipClass_GetObjectByID(None, pSubShip.GetObjID())
+					if pSubShip:
+						pSet = pSubShip.GetContainingSet()
+						pSubName = pSubShip.GetName()
+						if pSet and pSubName != None:
+							DeleteObjectFromSet(pSet, pSubName)
+				except:
+					print "Error while calling AlternateSubModelFTL DetachShip SubModelList"
+					traceback.print_exc()
+
 			del pInstance.SubModelList
 
 	# Attaches the SubParts to the Body Model
@@ -1063,8 +1098,17 @@ class ProtoWarp(SubModels):
 		pSet = pShip.GetContainingSet()
 		pInstance.__dict__["SubModelList"] = []
 		ModelList = pInstance.__dict__[self.MySystemPointer()]
-		sNamePrefix = pShip.GetName() + "_"
+
+		pShipID = pShip.GetObjID()
+		sNamePrefix = str(pShipID) + "_"
 		SubModelList = pInstance.SubModelList
+
+                pCloak = pShip.GetCloakingSubsystem()
+                shipIsCloaking = 0
+                shipIsDecloaking = 0
+		if pCloak:
+			shipIsCloaking = pCloak.IsCloaking() or pCloak.IsCloaked() 
+			shipIsDecloaking = pCloak.IsDecloaking() or not pCloak.IsCloaked()
 
 		# iteeeerate over every SubModel
 		for sNameSuffix in ModelList.keys():
@@ -1079,28 +1123,60 @@ class ProtoWarp(SubModels):
 			if not pSubShip:
 				pSubShip = loadspacehelper.CreateShip(sFile, pSet, sShipName, "")
 			SubModelList.append(pSubShip)
-			if len(ModelList[sNameSuffix]) > 1:
-				dOptions = ModelList[sNameSuffix][1]
-
-			# set current positions
-			pSubShip.SetTranslateXYZ(dOptions["currentPosition"][pShip.GetName()][0],dOptions["currentPosition"][pShip.GetName()][1],dOptions["currentPosition"][pShip.GetName()][2])
-			iNorm = math.sqrt(dOptions["currentRotation"][pShip.GetName()][0] ** 2 + dOptions["currentRotation"][pShip.GetName()][1] ** 2 + dOptions["currentRotation"][pShip.GetName()][2] ** 2)
-			pSubShip.SetAngleAxisRotation(1.0,dOptions["currentRotation"][pShip.GetName()][0],dOptions["currentRotation"][pShip.GetName()][1],dOptions["currentRotation"][pShip.GetName()][2])
-			pSubShip.SetScale(-iNorm + 1.85)
-			pSubShip.UpdateNodeOnly()
 
 			# save the options list
 			iSaveDone = 0
+
+			dOptions = {} 
 			# this is here to check if we already have the entry
 			for lList in pInstance.OptionsList:
 				if lList[0] != "Setup":
 					if lList[1]["sShipFile"] == sFile:
 						lList[0] = pSubShip
 						iSaveDone = 1
+						dOptions = lList[1]
 						break
+
+			#print iSaveDone, dOptions
 			
 			if not iSaveDone:
-				pInstance.OptionsList.append([pSubShip, dOptions])
+     				if len(ModelList[sNameSuffix]) > 1:
+     					dOptionsSingle = ModelList[sNameSuffix][1]
+				loadspacehelper.PreloadShip(sFile, 1)
+
+				# save the shipfile for later use, this would be on "item[1]"
+				dOptions2 = {}
+				dOptions2["sShipFile"] = sFile
+                        
+				# set current rotation/position values
+				if not dOptionsSingle.has_key("Position"):
+					dOptionsSingle["Position"] = [0, 0, 0]
+				dOptions2["currentPosition"] = dOptionsSingle["Position"]
+
+				if not dOptionsSingle.has_key("Rotation"):
+					dOptionsSingle["Rotation"] = [0, 0, 0]
+				dOptions2["currentRotation"] = dOptionsSingle["Rotation"]
+
+				dOptions2["curMovID"] = 0
+
+				for key in dOptionsSingle.keys():
+					dOptions2[key] = dOptionsSingle[key]
+
+				pInstance.OptionsList.append([pSubShip, dOptions2])
+				dOptions = dOptions2
+
+			# set current positions
+			pSubShip.SetTranslateXYZ(dOptions["currentPosition"][0],dOptions["currentPosition"][1],dOptions["currentPosition"][2])
+			pSubShip.SetAngleAxisRotation(1.0,dOptions["currentRotation"][0],dOptions["currentRotation"][1],dOptions["currentRotation"][2])
+
+			if dOptions.has_key("SetScale") and dOptions["SetScale"] != 0.0:
+				pSubShip.SetScale(dOptions["SetScale"])
+			else:
+				iNorm = math.sqrt(dOptions["currentRotation"][0] ** 2 + dOptions["currentRotation"][1] ** 2 + dOptions["currentRotation"][2] ** 2)
+				pSubShip.SetScale(-iNorm + 1.85)
+			pSubShip.UpdateNodeOnly()
+
+
 			
 			pSubShip.SetUsePhysics(0)
 			pSubShip.SetTargetable(0)
@@ -1125,33 +1201,168 @@ class ProtoWarp(SubModels):
 			
 			pShip.AttachObject(pSubShip)
 
+			if pCloak:
+				pSubShipID = pSubShip.GetObjID()
+				if shipIsCloaking:
+					CloakShip(pSubShipID, -1)
+				elif shipIsDecloaking:
+					CloakShip(pSubShipID, 1)
+
+	# check if parts are attached
+	def ArePartsAttached(self, pShip, pInstance):
+		debug(__name__ + ", ArePartsAttached")
+		if hasattr(pInstance, "SubModelList"):
+			return 1
+		return 0
+
+	# Detaches the parts
+	def DetachParts(self, pShip, pInstance):
+		debug(__name__ + ", DetachParts")
+		if hasattr(pInstance, "SubModelList"):
+			for pSubShip in pInstance.SubModelList:
+				pSet = pSubShip.GetContainingSet()
+				pShip.DetachObject(pSubShip)
+				DeleteObjectFromSet(pSet, pSubShip.GetName())
+			del pInstance.SubModelList
+
 oProtoWarp = ProtoWarp("Alternate-Warp-FTL")
 
 # The class does the moving of the parts
 # with every move the part continues to move
 class MovingEventUpdated(MovingEvent):
+        # prepare fore move...
+        def __init__(self, pShip, item, fDuration, lStartingRotation, lStoppingRotation, lStartingTranslation, lStoppingTranslation, dHardpoints):
+                debug(__name__ + ", __init__")
+		"""
+		#TO-DO UPDATE THIS?
+		try:
+			if pShip:
+				ppShipID = pShip.GetObjID()
+				if ppShipID:
+					pShip = App.ShipClass_GetObjectByID(None, ppShipID)
+		except:
+			pShip = None
+
+                if not pShip:
+                        #print "Moving Error: Lost MAIN part"
+			self.wentWrong = 1
+                        return
+
+                if not item or not len(item) > 1:
+			self.wentWrong = 2
+                        return
+
+                item0 = App.ShipClass_GetObjectByID(None, item[0].GetObjID())
+                if not item0:
+                        #print "Moving Error: Lost nacelle part"
+			self.wentWrong = 3
+                        return
+		"""
+
+                self.iNacelleID = item[0].GetObjID()
+		self.iShipID = pShip.GetObjID()
+                self.iThisMovID = item[1]["curMovID"]
+                self.dOptionsList = item[1]
+                self.pShip = pShip
+			
+		fDurationMul = 0.95 # make us a little bit faster to avoid bad timing
+	
+                # rotation values
+                self.iCurRotX = lStartingRotation[0]
+                self.iCurRotY = lStartingRotation[1]
+                self.iCurRotZ = lStartingRotation[2]
+		if fDuration > 0:
+			self.iRotStepX = (lStoppingRotation[0] - lStartingRotation[0]) / (fDuration * fDurationMul)
+			self.iRotStepY = (lStoppingRotation[1] - lStartingRotation[1]) / (fDuration * fDurationMul)
+			self.iRotStepZ = (lStoppingRotation[2] - lStartingRotation[2]) / (fDuration * fDurationMul)
+		else:
+			self.iRotStepX = (lStoppingRotation[0] - lStartingRotation[0])
+			self.iRotStepY = (lStoppingRotation[1] - lStartingRotation[1])
+			self.iRotStepZ = (lStoppingRotation[2] - lStartingRotation[2])
+                
+                # translation values
+                self.iCurTransX = lStartingTranslation[0]
+                self.iCurTransY = lStartingTranslation[1]
+                self.iCurTransZ = lStartingTranslation[2]
+		if fDuration > 0:
+			self.iTransStepX = (lStoppingTranslation[0] - lStartingTranslation[0]) / (fDuration * fDurationMul)
+			self.iTransStepY = (lStoppingTranslation[1] - lStartingTranslation[1]) / (fDuration * fDurationMul)
+			self.iTransStepZ = (lStoppingTranslation[2] - lStartingTranslation[2]) / (fDuration * fDurationMul)
+		else:
+			self.iTransStepX = (lStoppingTranslation[0] - lStartingTranslation[0])
+			self.iTransStepY = (lStoppingTranslation[1] - lStartingTranslation[1])
+			self.iTransStepZ = (lStoppingTranslation[2] - lStartingTranslation[2])
+		
+		self.dStopHardpoints = dHardpoints
+		self.dStartHardpoints = {}
+		self.dCurHPs = {}
+		for sHP in self.dStopHardpoints.keys():
+			lPos = None
+			pHP = MissionLib.GetSubsystemByName(pShip, sHP)
+			pPOP = GetPositionOrientationPropertyByName(pShip, sHP)
+			if pHP:
+				NiPoint3 = pHP.GetPosition()
+				lPos = [NiPoint3.x, NiPoint3.y, NiPoint3.z]
+			elif pPOP:
+				TGPoint3 = pPOP.GetPosition()
+				lPos = [TGPoint3.x, TGPoint3.y, TGPoint3.z]
+			else:
+				print "Submodel Error: Unable to find Hardpoint %s" % sHP
+			if lPos:
+				self.dStartHardpoints[sHP] = lPos
+				self.dCurHPs[sHP] = lPos
+
+		self.dHPSteps = {}
+		for sHP in self.dStartHardpoints.keys():
+			self.dHPSteps[sHP] = [0, 0, 0]
+			
+			if fDuration > 0:
+				self.dHPSteps[sHP][0] = (self.dStopHardpoints[sHP][0] - self.dStartHardpoints[sHP][0]) / (fDuration * fDurationMul)
+				self.dHPSteps[sHP][1] = (self.dStopHardpoints[sHP][1] - self.dStartHardpoints[sHP][1]) / (fDuration * fDurationMul)
+				self.dHPSteps[sHP][2] = (self.dStopHardpoints[sHP][2] - self.dStartHardpoints[sHP][2]) / (fDuration * fDurationMul)
+			else:
+				self.dHPSteps[sHP][0] = (self.dStopHardpoints[sHP][0] - self.dStartHardpoints[sHP][0])
+				self.dHPSteps[sHP][1] = (self.dStopHardpoints[sHP][1] - self.dStartHardpoints[sHP][1])
+				self.dHPSteps[sHP][2] = (self.dStopHardpoints[sHP][2] - self.dStartHardpoints[sHP][2])
+
+		if self.dOptionsList.has_key("SetScale") and self.dOptionsList["SetScale"] != 0.0:
+			item[0].SetScale(self.dOptionsList["SetScale"])
+		else:
+			iNorm = math.sqrt(self.iCurRotX ** 2 + self.iCurRotY ** 2 + self.iCurRotZ ** 2)
+			item[0].SetScale(-iNorm + 1.85)
+
+		self.wentWrong = 0
+
 	# move!
 	def __call__(self):
 		# if the move ID doesn't match then this move is outdated
 		debug(__name__ + ", __call__")
-		if self.iThisMovID != self.dOptionsList["curMovID"][self.pShip.GetName()]:
-			print "Moving Error: Move no longer active"
-			return 1
-		
 		# this makes sure the game does not crash when trying to access a deleted element
+
+
+                pShip = App.ShipClass_GetObjectByID(None, self.iShipID)
+                if not pShip:
+                        #print "Moving Error: Lost MAIN part"
+                        return 0
+
+                if not hasattr(self, "iNacelleID"):
+                        return 0
+
 		pNacelle = App.ShipClass_GetObjectByID(None, self.iNacelleID)
 		if not pNacelle:
 			#print "Moving Error: Lost part"
 			return 0
-			
+
+                if (not self.dOptionsList.has_key("curMovID")) or self.iThisMovID != self.dOptionsList["curMovID"]:
+                        print "Moving Error: Move no longer active"
+                        return 1
+
 		# set new Rotation values
 		self.iCurRotX = self.iCurRotX + self.iRotStepX
 		self.iCurRotY = self.iCurRotY + self.iRotStepY
 		self.iCurRotZ = self.iCurRotZ + self.iRotStepZ
-		iNorm = math.sqrt(self.iCurRotX ** 2 + self.iCurRotY ** 2 + self.iCurRotZ ** 2)
 		# set Rotation
 		pNacelle.SetAngleAxisRotation(1.0, self.iCurRotX, self.iCurRotY, self.iCurRotZ)
-		#pNacelle.SetScale(-iNorm + 1.85) # TO-DO CHECK IF THE SCALE DOES NOT GO BONKERS WITH THIS
 
 		# set new Translation values
 		self.iCurTransX = self.iCurTransX + self.iTransStepX
@@ -1159,46 +1370,127 @@ class MovingEventUpdated(MovingEvent):
 		self.iCurTransZ = self.iCurTransZ + self.iTransStepZ
 		# set Translation
 		pNacelle.SetTranslateXYZ(self.iCurTransX, self.iCurTransY, self.iCurTransZ)
+
+		if self.dOptionsList.has_key("SetScale") and self.dOptionsList["SetScale"] != 0.0:
+			# TO-DO MAYBE USE THE SAME SYSTEM YOU USED FOR TURRETS?
+			pNacelle.SetScale(self.dOptionsList["SetScale"])
+		else:
+			iNorm = math.sqrt(self.iCurRotX ** 2 + self.iCurRotY ** 2 + self.iCurRotZ ** 2)
+			pNacelle.SetScale(-iNorm + 1.85)
 		
-		self.dOptionsList["currentRotation"][self.pShip.GetName()] = [self.iCurRotX, self.iCurRotY, self.iCurRotZ]
-		self.dOptionsList["currentPosition"][self.pShip.GetName()] = [self.iCurTransX, self.iCurTransY, self.iCurTransZ]
+		self.dOptionsList["currentRotation"] = [self.iCurRotX, self.iCurRotY, self.iCurRotZ]
+		self.dOptionsList["currentPosition"] = [self.iCurTransX, self.iCurTransY, self.iCurTransZ]
 		
 		# Hardpoints
-		for sHP in self.dCurHPs.keys():
-			self.dCurHPs[sHP][0] = self.dCurHPs[sHP][0] + self.dHPSteps[sHP][0]
-			self.dCurHPs[sHP][1] = self.dCurHPs[sHP][1] + self.dHPSteps[sHP][1]
-			self.dCurHPs[sHP][2] = self.dCurHPs[sHP][2] + self.dHPSteps[sHP][2]
-			UpdateHardpointPositionsTo(self.pShip, sHP, self.dCurHPs[sHP])
+		if self.dCurHPs != None:
+			for sHP in self.dCurHPs.keys():
+				self.dCurHPs[sHP][0] = self.dCurHPs[sHP][0] + self.dHPSteps[sHP][0]
+				self.dCurHPs[sHP][1] = self.dCurHPs[sHP][1] + self.dHPSteps[sHP][1]
+				self.dCurHPs[sHP][2] = self.dCurHPs[sHP][2] + self.dHPSteps[sHP][2]
+				UpdateHardpointPositionsTo(self.pShip, sHP, self.dCurHPs[sHP])
 		
 		pNacelle.UpdateNodeOnly()
 		return 0
 
-"""
-#FUTURE TO-DO: DELETE... or improve to check things are not going awry, that is the question...
-def IncCurrentMoveID(pShip, pInstance):
-	debug(__name__ + ", IncCurrentMoveID")
+def IncCurrentMoveIDUpdated(pShip, pInstance):
+	debug(__name__ + ", IncCurrentMoveIDUpdated")
+	#TO-DO UPDATE WITH CHECKS LIKE TURRETS?
 	for item in pInstance.OptionsList:
 		if item[0] == "Setup":
-			item[1]["GenMoveID"][pShip.GetName()] = item[1]["GenMoveID"][pShip.GetName()] + 1
+			item[1]["GenMoveID"] = item[1]["GenMoveID"] + 1
 
 
-def GetCurrentMoveID(pShip, pInstance):
-	debug(__name__ + ", GetCurrentMoveID")
+def GetCurrentMoveIDUpdated(pShip, pInstance):
+	debug(__name__ + ", GetCurrentMoveIDUpdated")
 	iGenMoveID = 0
 	
 	for item in pInstance.OptionsList:
 		if item[0] == "Setup":
-			iGenMoveID = item[1]["GenMoveID"][pShip.GetName()]
+			iGenMoveID = item[1]["GenMoveID"]
 	return iGenMoveID
 			
 
-def MoveFinishMatchId(pShip, pInstance, iThisMovID):
-	debug(__name__ + ", MoveFinishMatchId")
-	if GetCurrentMoveID(pShip, pInstance) == iThisMovID:
+def MoveFinishMatchIDUpdated(pShip, pInstance, iThisMovID):
+	debug(__name__ + ", MoveFinishMatchIDUpdated")
+	if GetCurrentMoveIDUpdated(pShip, pInstance) == iThisMovID:
 		return 1
 	return 0
-	
-"""	
+
+def CloakShip(pNacelleID, decloak=0):
+    debug(__name__ + ", CloakShip")
+    pNacelle = App.ShipClass_GetObjectByID(None, pNacelleID)
+    if not pNacelle:
+        #print "Moving Error: Lost part"
+        return 0
+
+    pCloak = pNacelle.GetCloakingSubsystem()
+    if pCloak:
+        if decloak == 0:
+            pCloak.StartCloaking()
+        elif decloak == 1:
+            pCloak.InstantDecloak()
+        elif decloak == -1:
+            pCloak.InstantCloak()
+
+
+def CloakHandler(pObject, pEvent):
+        debug(__name__ + ", CloakHandler")
+        pInstance = findShipInstance(pObject)
+
+        pShip = App.ShipClass_GetObjectByID(None, pInstance.pShipID)
+
+        iType = pShip.GetAlertLevel()
+        iLongestTime = 0.0
+        dHardpoints = {}
+        
+        # check if ship still exits
+        pShip = App.ShipClass_GetObjectByID(None, pShip.GetObjID())
+        if not pShip:
+                return
+
+        # iterate over every Turret
+        pCloak = pShip.GetCloakingSubsystem()
+        if pCloak and hasattr(pInstance, "SubModelList"):
+            shipIsCloaking = pCloak.IsCloaking()
+            shipIsDecloaking = pCloak.IsDecloaking()
+            for pSubShip in pInstance.TurretList:
+                        pSubShipID = pSubShip.GetObjID()
+                        if shipIsCloaking:
+                            CloakShip(pSubShipID, 0)
+                        elif shipIsDecloaking:
+                            CloakShip(pSubShipID, 1)
+
+        pObject.CallNextHandler(pEvent)
+
+def DecloakHandler(pObject, pEvent):
+        debug(__name__ + ", DecloakHandler")
+        pInstance = findShipInstance(pObject)
+
+        pShip = App.ShipClass_GetObjectByID(None, pInstance.pShipID)
+
+        iType = pShip.GetAlertLevel()
+        iLongestTime = 0.0
+        dHardpoints = {}
+        
+        # check if ship still exits
+        pShip = App.ShipClass_GetObjectByID(None, pShip.GetObjID())
+        if not pShip:
+                return
+
+        # iterate over every Turret
+        pCloak = pShip.GetCloakingSubsystem()
+        if pCloak and hasattr(pInstance, "SubModelList"):
+            shipIsCloaking = pCloak.IsCloaking()
+            shipIsDecloaking = pCloak.IsDecloaking()
+            for pSubShip in pInstance.TurretList:
+                        pSubShipID = pSubShip.GetObjID()
+                        if shipIsCloaking:
+                            CloakShip(pSubShipID, 0)
+                        elif shipIsDecloaking:
+                            CloakShip(pSubShipID, 1)
+
+        pObject.CallNextHandler(pEvent)
+
 
 # calls the MovingEventUpdated class and returns its return value
 def MovingActionUpdated(pAction, oMovingEventUpdated):
@@ -1217,6 +1509,7 @@ def AlertProtoStateChanged(pObject, pEvent, techP = oProtoWarp):
 				pSeq = App.TGSequence_Create()
 				pSeq.AppendAction(App.TGScriptAction_Create(__name__, "AlertProtoStateChangedAction", pShip, techP), 0.1)
 				pSeq.Play()
+	return 0
 
 
 def AlertProtoStateChangedAction(pAction, pShip, techP = oProtoWarp):
@@ -1236,7 +1529,8 @@ def SubsystemStateProtoChanged(pObject, pEvent, techP = oProtoWarp):
 		# set wings for this alert state
 		PartsForWeaponProtoState(pShip, techP)
 		
-	pObject.CallNextHandler(pEvent)       
+	pObject.CallNextHandler(pEvent)
+	return 0      
 
 # Prepares a ship to move: Replaces the current Model with the move Model and attaches its sub Models
 def PrepareShipForProtoMove(pShip, pInstance, techType=oProtoWarp):
@@ -1245,6 +1539,33 @@ def PrepareShipForProtoMove(pShip, pInstance, techType=oProtoWarp):
 		techName = techType.MySystemPointer()
 		ReplaceModel(pShip, pInstance.__dict__[techName]["Setup"]["Body"])
 		techType.AttachParts(pShip, pInstance)
+		scaleFactor = 1.0
+		if pInstance.__dict__[techName]["Setup"].has_key("BodySetScale") and pInstance.__dict__[techName]["Setup"]["BodySetScale"] != 0.0:
+			scaleFactor = pInstance.__dict__[techName]["Setup"]["BodySetScale"]
+		pShip.SetScale(scaleFactor)
+
+	checkingReCloak(pShip)
+	return 0
+
+def checkingReCloak(pShip):
+	try:
+		pShipID = pShip.GetObjID()
+		if pShipID:
+			pShip = App.ShipClass_GetObjectByID(None, pShipID)
+		if pShip:
+			pCloak = pShip.GetCloakingSubsystem()
+			if pCloak:
+				shipIsCloaking = pCloak.IsCloaking() or pCloak.IsCloaked() 
+				shipIsDecloaking = pCloak.IsDecloaking() or not pCloak.IsCloaked()
+				if shipIsCloaking:
+					CloakShip(pShipID, -1)
+				#elif shipIsDecloaking:
+				#	CloakShip(pShipID, 1)
+
+	except:
+		traceback.print_exc()
+
+	return 0
 
 
 # called after the Alert move action
@@ -1253,16 +1574,27 @@ def AlertMoveFinishProtoAction(pAction, pShip, pInstance, iThisMovID, techType =
 	
 	# Don't switch Models back when the ID does not match
 	debug(__name__ + ", AlertMoveFinishProtoAction")
-	if not MoveFinishMatchId(pShip, pInstance, iThisMovID):
-		return 1
-	techType.DetachParts(pShip, pInstance)
+	if not MoveFinishMatchIDUpdated(pShip, pInstance, iThisMovID):
+		return 0
+	try:
+		techType.DetachParts(pShip, pInstance)
+	except:
+		pass
+
 	techName = techType.MySystemPointer()
+	scaleFactor = 1.0
 	if pShip.GetAlertLevel() == 2:
 		sNewShipScript = pInstance.__dict__[techName]["Setup"]["AttackModel"]
+		if pInstance.__dict__[techName]["Setup"].has_key("AttackSetScale") and pInstance.__dict__[techName]["Setup"]["AttackSetScale"] != 0.0:
+			scaleFactor = pInstance.__dict__[techName]["Setup"]["AttackSetScale"]
 	else:
 		sNewShipScript = pInstance.__dict__[techName]["Setup"]["NormalModel"]
+		if pInstance.__dict__[techName]["Setup"].has_key("NormalSetScale") and pInstance.__dict__[techName]["Setup"]["NormalSetScale"] != 0.0:
+			scaleFactor = pInstance.__dict__[techName]["Setup"]["NormalSetScale"]
 	ReplaceModel(pShip, sNewShipScript)
-	
+	pShip.SetScale(scaleFactor)
+	checkingReCloak(pShip)
+
 	return 0
 
 ### Up to here were the things for Attack - warp is better.
@@ -1320,13 +1652,19 @@ def ExitSetProto(pObject, pEvent, techType, move):
 def ProtoWarpStartMoveFinishAction(pAction, pShip, pInstance, iThisMovID, techP=oProtoWarp, move=oProtoWarp.MySubPositionPointer()):
 	# Don't switch Models back when the ID does not match
 	debug(__name__ + ", ProtoWarpStartMoveFinishAction")
-	if not MoveFinishMatchId(pShip, pInstance, iThisMovID):
-		return 1
+	if not MoveFinishMatchIDUpdated(pShip, pInstance, iThisMovID):
+		return 0
 		
 	techP.DetachParts(pShip, pInstance)
 	techName = techP.MySystemPointer()
 	sNewShipScript = pInstance.__dict__[techName]["Setup"][str(move) + "Model"]
+	scaleFactor = 1.0
+	if pInstance.__dict__[techName]["Setup"].has_key(str(move) + "SetScale") and pInstance.__dict__[techName]["Setup"][str(move) + "SetScale"] != 0.0:
+		scaleFactor = pInstance.__dict__[techName]["Setup"][str(move) + "SetScale"]
 	ReplaceModel(pShip, sNewShipScript)
+	pShip.SetScale(scaleFactor)
+
+	checkingReCloak(pShip)
 	return 0
 
 
@@ -1335,18 +1673,25 @@ def ProtoWarpStartMoveFinishAction(pAction, pShip, pInstance, iThisMovID, techP=
 def ProtoWarpExitMoveFinishAction(pAction, pShip, pInstance, iThisMovID, techP=oProtoWarp, move=oProtoWarp.MySubPositionPointer()):
 	# Don't switch Models back when the ID does not match
 	debug(__name__ + ", ProtoWarpExitMoveFinishAction")
-	if not MoveFinishMatchId(pShip, pInstance, iThisMovID):
+	if not MoveFinishMatchIDUpdated(pShip, pInstance, iThisMovID):
 		if move != "Warp":
 			RestoreWarpOverriden(pShip, pInstance)
-		return 1
+		return 0
 		
 	techP.DetachParts(pShip, pInstance)
 	techName = techP.MySystemPointer()
 	if pInstance.__dict__[techName]["Setup"].has_key("AttackModel") and pShip.GetAlertLevel() == 2:
 		sNewShipScript = pInstance.__dict__[techName]["Setup"]["AttackModel"]
+		if pInstance.__dict__[techName]["Setup"].has_key("AttackSetScale") and pInstance.__dict__[techName]["Setup"]["AttackSetScale"] != 0.0:
+			scaleFactor = pInstance.__dict__[techName]["Setup"]["AttackSetScale"]
 	else:
 		sNewShipScript = pInstance.__dict__[techName]["Setup"]["NormalModel"]
+		if pInstance.__dict__[techName]["Setup"].has_key("NormalSetScale") and pInstance.__dict__[techName]["Setup"]["NormalSetScale"] != 0.0:
+			scaleFactor = pInstance.__dict__[techName]["Setup"]["NormalSetScale"]
+
 	ReplaceModel(pShip, sNewShipScript)
+	pShip.SetScale(scaleFactor)
+	checkingReCloak(pShip)
 
 	if move != "Warp":
 		RestoreWarpOverriden(pShip, pInstance)
@@ -1377,6 +1722,14 @@ def RestoreWarpOverriden(pShip, pInstance):
 			pInstanceDict["Warp Overriden"] = 0
 	return 0
 
+# called after a move, sets the current Rotation/Translation values to the final ones
+def UpdateStateProto(pAction, pShip, item, lStoppingRotation, lStoppingTranslation):
+        debug(__name__ + ", UpdateStateProto")
+        item[1]["currentRotation"] = lStoppingRotation
+        item[1]["currentPosition"] = lStoppingTranslation
+        item[1]["curMovID"] = 0
+        return 0
+
 # Set the parts to the correct alert state
 def PartsForWeaponProtoState(pShip, techP):	
 	debug(__name__ + ", PartsForWeaponProtoState")
@@ -1384,7 +1737,7 @@ def PartsForWeaponProtoState(pShip, techP):
 	if App.g_kUtopiaModule.IsMultiplayer() and not App.g_kUtopiaModule.IsHost():
 		return 0
 	
-	pInstance = FoundationTech.dShips[pShip.GetName()]
+	pInstance = findShipInstance(pShip)
 	iType = pShip.GetAlertLevel()
 	iLongestTime = 0.0
 	dHardpoints = {}
@@ -1401,11 +1754,11 @@ def PartsForWeaponProtoState(pShip, techP):
 			break
 	
 	# check if the alert state has really chanced since the last time
-	if dGenShipDict["AlertLevel"][pShip.GetName()] == iType:
+	if dGenShipDict["AlertLevel"] == iType:
 		return 0
 	# update alert state
-	dGenShipDict["AlertLevel"][pShip.GetName()] = iType
-	IncCurrentMoveID(pShip, pInstance)
+	dGenShipDict["AlertLevel"] = iType
+	IncCurrentMoveIDUpdated(pShip, pInstance)
 	
 	# start with replacing the Models
 	PrepareShipForProtoMove(pShip, pInstance, techP)
@@ -1424,24 +1777,23 @@ def PartsForWeaponProtoState(pShip, techP):
 			continue
 	
 		# set the id for this move
-		iThisMovID = item[1]["curMovID"][pShip.GetName()] + 1
-		item[1]["curMovID"][pShip.GetName()] = iThisMovID
+		iThisMovID = item[1]["curMovID"] + 1
+		item[1]["curMovID"] = iThisMovID
 	
 		fDuration = 200.0
 		if item[1].has_key("AttackDuration"):
 			fDuration = item[1]["AttackDuration"]
 		    
 		# Rotation
-		lStartingRotation = item[1]["currentRotation"][pShip.GetName()]
+		lStartingRotation = item[1]["currentRotation"]
 		lStoppingRotation = lStartingRotation
 		if item[1].has_key("AttackRotation") and iType == 2:
 			lStoppingRotation = item[1]["AttackRotation"]
 		else:
 			lStoppingRotation = item[1]["Rotation"]
 		
-		
 		# Translation
-		lStartingTranslation = item[1]["currentPosition"][pShip.GetName()]
+		lStartingTranslation = item[1]["currentPosition"]
 		lStoppingTranslation = lStartingTranslation
 		if item[1].has_key("AttackPosition") and iType == 2:
 			lStoppingTranslation = item[1]["AttackPosition"]
@@ -1451,6 +1803,10 @@ def PartsForWeaponProtoState(pShip, techP):
 		iTime = 0.0
 		iTimeNeededTotal = 0.0
 		oMovingEventUpdated = MovingEventUpdated(pShip, item, fDuration, lStartingRotation, lStoppingRotation, lStartingTranslation, lStoppingTranslation, dHardpoints)
+		#if not hasattr(oMovingEventUpdated, "wentWrong") or oMovingEventUpdated.wentWrong == 2:
+		#	# Something went wrong, better do not add a sequence for this
+		#	continue
+
 		pSeq = App.TGSequence_Create()
 		
 		# do the move
@@ -1462,7 +1818,7 @@ def PartsForWeaponProtoState(pShip, techP):
 			pSeq.AppendAction(App.TGScriptAction_Create(__name__, "MovingActionUpdated", oMovingEventUpdated), iWait)
 			iTimeNeededTotal = iTimeNeededTotal + iWait
 			iTime = iTime + 1
-		pSeq.AppendAction(App.TGScriptAction_Create(__name__, "UpdateState", pShip, item, lStoppingRotation, lStoppingTranslation))
+		pSeq.AppendAction(App.TGScriptAction_Create(__name__, "UpdateStateProto", pShip, item, lStoppingRotation, lStoppingTranslation))
 		pSeq.Play()
 		
 		# iLongestTime is for the part that needs the longest time...
@@ -1472,7 +1828,7 @@ def PartsForWeaponProtoState(pShip, techP):
 	# finally detach
 	pSeq = App.TGSequence_Create()
 	pSeq.AppendAction(App.TGScriptAction_Create(__name__, "UpdateHardpointPositions", pShip, dHardpoints), iLongestTime)
-	pSeq.AppendAction(App.TGScriptAction_Create(__name__, "AlertMoveFinishProtoAction", pShip, pInstance, GetCurrentMoveID(pShip, pInstance), techP), 2.0)
+	pSeq.AppendAction(App.TGScriptAction_Create(__name__, "AlertMoveFinishProtoAction", pShip, pInstance, GetCurrentMoveIDUpdated(pShip, pInstance), techP), 2.0)
 	pSeq.Play()
 
 
@@ -1483,6 +1839,7 @@ def StartingWarpE(pObject, pEvent, techP = oProtoWarp, move="Warp"):
 	pSeq = App.TGSequence_Create()
 	pSeq.AppendAction(App.TGScriptAction_Create(__name__, "StartingWarpCommonNoDelay", pObject, pEvent, techP, move), 0.3)
 	pSeq.Play()
+	return 0
 
 def StartingWarpCommonNoDelay(pAction, pObject, pEvent, techP, move):
 	StartingWarpCommon(pObject, pEvent, techP, move)
@@ -1492,6 +1849,7 @@ def StartingWarpCommonNoDelay(pAction, pObject, pEvent, techP, move):
 def StartingProtoWarp(pObject, pEvent, techP, move):
 	debug(__name__ + ", StartingProtoWarp")
 	StartingWarpCommon(pObject, pEvent, techP, move)
+	return 0
 
 def StartingWarpCommon(pObject, pEvent, techP, subPosition="Warp"):
 	debug(__name__ + ", StartingWarpCommon")
@@ -1530,7 +1888,7 @@ def StartingWarpCommon(pObject, pEvent, techP, subPosition="Warp"):
 				pInstanceDict["Warp Overriden"] = 1	
 
 	iLongestTime = 0.0
-	IncCurrentMoveID(pShip, pInstance)
+	IncCurrentMoveIDUpdated(pShip, pInstance)
 	dHardpoints = {}
 
 	# first replace the Models
@@ -1547,8 +1905,8 @@ def StartingWarpCommon(pObject, pEvent, techP, subPosition="Warp"):
 			continue
 	
 		# set the id for this move
-		iThisMovID = item[1]["curMovID"][pShip.GetName()] + 1
-		item[1]["curMovID"][pShip.GetName()] = iThisMovID
+		iThisMovID = item[1]["curMovID"] + 1
+		item[1]["curMovID"] = iThisMovID
 	
 		fDuration = 200.0
 		
@@ -1556,13 +1914,13 @@ def StartingWarpCommon(pObject, pEvent, techP, subPosition="Warp"):
 			fDuration = item[1][subPositionDuration]
 		    
 		# Rotation
-		lStartingRotation = item[1]["currentRotation"][pShip.GetName()]
+		lStartingRotation = item[1]["currentRotation"]
 		lStoppingRotation = lStartingRotation
 		if item[1].has_key(subPositionRotation):
 			lStoppingRotation = item[1][subPositionRotation]
 		
 		# Translation
-		lStartingTranslation = item[1]["currentPosition"][pShip.GetName()]
+		lStartingTranslation = item[1]["currentPosition"]
 		lStoppingTranslation = lStartingTranslation
 		if item[1].has_key(subPositionPosition):
 			lStoppingTranslation = item[1][subPositionPosition]
@@ -1570,6 +1928,9 @@ def StartingWarpCommon(pObject, pEvent, techP, subPosition="Warp"):
 		iTime = 0.0
 		iTimeNeededTotal = 0.0
 		oMovingEventUpdated = MovingEventUpdated(pShip, item, fDuration, lStartingRotation, lStoppingRotation, lStartingTranslation, lStoppingTranslation, {})
+		if not hasattr(oMovingEventUpdated, "wentWrong") or oMovingEventUpdated.wentWrong == 2:
+			# Something went wrong, better do not add a sequence for this
+			continue
 		pSeq = App.TGSequence_Create()
 		
 		# do the move
@@ -1581,7 +1942,7 @@ def StartingWarpCommon(pObject, pEvent, techP, subPosition="Warp"):
 			pSeq.AppendAction(App.TGScriptAction_Create(__name__, "MovingActionUpdated", oMovingEventUpdated), iWait)
 			iTimeNeededTotal = iTimeNeededTotal + iWait
 			iTime = iTime + 1
-		pSeq.AppendAction(App.TGScriptAction_Create(__name__, "UpdateState", pShip, item, lStoppingRotation, lStoppingTranslation))
+		pSeq.AppendAction(App.TGScriptAction_Create(__name__, "UpdateStateProto", pShip, item, lStoppingRotation, lStoppingTranslation))
 		pSeq.Play()
 		
 		# iLongestTime is for the part that needs the longest time...
@@ -1591,7 +1952,7 @@ def StartingWarpCommon(pObject, pEvent, techP, subPosition="Warp"):
 	# finally detach
 	pSeq = App.TGSequence_Create()
 	pSeq.AppendAction(App.TGScriptAction_Create(__name__, "UpdateHardpointPositions", pShip, dHardpoints), iLongestTime)
-	pSeq.AppendAction(App.TGScriptAction_Create(__name__, "ProtoWarpStartMoveFinishAction", pShip, pInstance, GetCurrentMoveID(pShip, pInstance), techP, subPosition), 2.0)
+	pSeq.AppendAction(App.TGScriptAction_Create(__name__, "ProtoWarpStartMoveFinishAction", pShip, pInstance, GetCurrentMoveIDUpdated(pShip, pInstance), techP, subPosition), 2.0)
 	pSeq.Play()
 
 	return 0
@@ -1603,9 +1964,9 @@ def ExitingProtoWarp(pAction, pShip, techP, subPosition):
 		debug(__name__ + ", ExitingProtoWarp Return not host")
 		return 0
 	
-	pInstance = FoundationTech.dShips[pShip.GetName()]
+	pInstance = findShipInstance(pShip)
 	iLongestTime = 0.0
-	IncCurrentMoveID(pShip, pInstance)
+	IncCurrentMoveIDUpdated(pShip, pInstance)
 	dHardpoints = {}
 	
 	# first replace the Models
@@ -1620,15 +1981,15 @@ def ExitingProtoWarp(pAction, pShip, techP, subPosition):
 			continue
 	
 		# set the id for this move
-		iThisMovID = item[1]["curMovID"][pShip.GetName()] + 1
-		item[1]["curMovID"][pShip.GetName()] = iThisMovID
+		iThisMovID = item[1]["curMovID"] + 1
+		item[1]["curMovID"] = iThisMovID
 	
 		fDuration = 200.0
 		if item[1].has_key(str(subPosition) + "Duration"):
 			fDuration = item[1][str(subPosition) + "Duration"]
 		    
 		# Rotation
-		lStartingRotation = item[1]["currentRotation"][pShip.GetName()]
+		lStartingRotation = item[1]["currentRotation"]
 		lStoppingRotation = lStartingRotation
 		if item[1].has_key("AttackRotation") and pShip.GetAlertLevel() == 2:
 				lStoppingRotation = item[1]["AttackRotation"]
@@ -1636,7 +1997,7 @@ def ExitingProtoWarp(pAction, pShip, techP, subPosition):
 			lStoppingRotation = item[1]["Rotation"]
 		
 		# Translation
-		lStartingTranslation = item[1]["currentPosition"][pShip.GetName()]
+		lStartingTranslation = item[1]["currentPosition"]
 		lStoppingTranslation = lStartingTranslation
 		if item[1].has_key("AttackPosition") and pShip.GetAlertLevel() == 2:
 				lStoppingTranslation = item[1]["AttackPosition"]
@@ -1646,6 +2007,9 @@ def ExitingProtoWarp(pAction, pShip, techP, subPosition):
 		iTime = 0.0
 		iTimeNeededTotal = 0.0
 		oMovingEventUpdated = MovingEventUpdated(pShip, item, fDuration, lStartingRotation, lStoppingRotation, lStartingTranslation, lStoppingTranslation, dHardpoints)
+		if not hasattr(oMovingEventUpdated, "wentWrong") or oMovingEventUpdated.wentWrong == 2:
+			# Something went wrong, better do not add a sequence for this
+			continue
 		pSeq = App.TGSequence_Create()
 		
 		# do the move
@@ -1657,7 +2021,7 @@ def ExitingProtoWarp(pAction, pShip, techP, subPosition):
 			pSeq.AppendAction(App.TGScriptAction_Create(__name__, "MovingActionUpdated", oMovingEventUpdated), iWait)
 			iTimeNeededTotal = iTimeNeededTotal + iWait
 			iTime = iTime + 1
-		pSeq.AppendAction(App.TGScriptAction_Create(__name__, "UpdateState", pShip, item, lStoppingRotation, lStoppingTranslation))
+		pSeq.AppendAction(App.TGScriptAction_Create(__name__, "UpdateStateProto", pShip, item, lStoppingRotation, lStoppingTranslation))
 		pSeq.Play()
 		
 		# iLongestTime is for the part that needs the longest time...
@@ -1667,7 +2031,7 @@ def ExitingProtoWarp(pAction, pShip, techP, subPosition):
 	# finally detach
 	pSeq = App.TGSequence_Create()
 	pSeq.AppendAction(App.TGScriptAction_Create(__name__, "UpdateHardpointPositions", pShip, dHardpoints), iLongestTime)
-	pSeq.AppendAction(App.TGScriptAction_Create(__name__, "ProtoWarpExitMoveFinishAction", pShip, pInstance, GetCurrentMoveID(pShip, pInstance), techP, subPosition), 2.0)
+	pSeq.AppendAction(App.TGScriptAction_Create(__name__, "ProtoWarpExitMoveFinishAction", pShip, pInstance, GetCurrentMoveIDUpdated(pShip, pInstance), techP, subPosition), 2.0)
 	pSeq.Play()
 	
 	return 0

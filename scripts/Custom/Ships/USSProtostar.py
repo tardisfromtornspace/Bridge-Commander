@@ -67,6 +67,11 @@ Foundation.ShipDef.USSProtostar.dTechs = {
 			"WarpModel":          "VasKholhr_WingUp",
 			"Proto-WarpModel":          "VasKholhr_WingUp",
 			"AttackModel":          "VasKholhr_WingDown",
+			"BodySetScale": 1.0,
+			"NormalSetScale": 1.0,
+			"WarpSetScale": 1.0,
+			"Proto-WarpSetScale": 1.0,
+			"AttackSetScale": 1.0,
 			"Hardpoints":       {
 				"Proto Warp Nacelle":  [0.000000, 0.000000, 0.075000],
 			},
@@ -83,9 +88,10 @@ Foundation.ShipDef.USSProtostar.dTechs = {
 		},
 
 		"Port Wing":     ["VasKholhr_Portwing", {
+			"SetScale": 1.85,
 			"Position":             [0, 0, 0],
 			"Rotation":             [0, 0, 0], # normal Rotation used if not Red Alert and if not Warp
-			"AttackRotation":         [0, -0.6, 0],
+			"AttackRotation":         [0, -15.6, 0],
 			"AttackDuration":         200.0, # Value is 1/100 of a second
 			"AttackPosition":         [0, 0, 0.03],
 			#"WarpRotation":       [0, 0.349, 0],

@@ -28,6 +28,11 @@ Foundation.ShipDef.USSProtostar.dTechs = { # (#)
 			"WarpModel":          "VasKholhr_WingUp",
 			"Proto-WarpModel":          "VasKholhr_WingUp",
 			"AttackModel":          "VasKholhr_WingDown",
+			"BodySetScale": 1.0,
+			"NormalSetScale": 1.0,
+			"WarpSetScale": 1.0,
+			"Proto-WarpSetScale": 1.0,
+			"AttackSetScale": 1.0,
 			"Hardpoints":       {
 				"Proto Warp Nacelle":  [0.000000, 0.000000, 0.075000],
 			},
@@ -44,6 +49,7 @@ Foundation.ShipDef.USSProtostar.dTechs = { # (#)
 		}, # (#)
 
 		"Port Wing":     ["VasKholhr_Portwing", {
+			"SetScale": 1.0
 			"Position":             [0, 0, 0],
 			"Rotation":             [0, 0, 0], # normal Rotation used if not Red Alert and if not Warp
 			"AttackRotation":         [0, -0.6, 0],
@@ -59,6 +65,7 @@ Foundation.ShipDef.USSProtostar.dTechs = { # (#)
 		],
         
 		"Starboard Wing":     ["VasKholhr_Starboardwing", {
+			"SetScale": 1.0
 			"Position":             [0, 0, 0],
 			"Rotation":             [0, 0, 0],
 			"AttackRotation":         [0, 0.6, 0],
@@ -284,7 +291,7 @@ def ProtoWarpBasicConfigInfo(pShip):
 	specificCoreHPList = None
 	if pInstance:
 		pInstancedict = pInstance.__dict__ 
-		if pInstanceDict.has_key("Alternate-Warp-FTL") and pInstanceDict["Alternate-Warp-FTL"].has_key("Setup") and pInstanceDict["Alternate-Warp-FTL"]["Setup"].has_key("Proto-Warp"):
+		if pInstancedict.has_key("Alternate-Warp-FTL") and pInstancedict["Alternate-Warp-FTL"].has_key("Setup") and pInstancedict["Alternate-Warp-FTL"]["Setup"].has_key("Proto-Warp"):
 			if pInstancedict["Alternate-Warp-FTL"]["Setup"]["Proto-Warp"].has_key("Nacelles"): # Use: if the tech has this field, use it. Must be a list. "[]" would mean that this field is skipped during checks.
 				specificNacelleHPList = pInstancedict["Alternate-Warp-FTL"]["Setup"]["Proto-Warp"]["Nacelles"]
 			if pInstancedict["Alternate-Warp-FTL"]["Setup"]["Proto-Warp"].has_key("Core"): # Use: if the tech has this field, use it. Must be a list. "[]" would mean that this field is skipped during checks.
