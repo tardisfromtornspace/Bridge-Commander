@@ -62,61 +62,75 @@ Foundation.ShipDef.USSProtostar.dTechs = {
 	"Alternate-Warp-FTL": {
 		"Setup": {
 			"Proto-Warp": {	"Nacelles": ["Proto Warp Nacelle"], "Core": ["Proto-Core"], },
-			"Body": "VasKholhr_WingUp", #"VasKholhr_Body",
+			"Body": "VasKholhr_Body",
 			"NormalModel":          shipFile,
-			"WarpModel":          "VasKholhr_WingUp",
+			"WarpModel":          shipFile,
 			"Proto-WarpModel":          "VasKholhr_WingUp",
-			"AttackModel":          "VasKholhr_WingDown",
+			#"AttackModel":          "VasKholhr_WingDown",
 			"BodySetScale": 1.0,
 			"NormalSetScale": 1.0,
-			"WarpSetScale": 1.0,
+			#"WarpSetScale": 1.0,
 			"Proto-WarpSetScale": 1.0,
-			"AttackSetScale": 1.0,
+			#"AttackSetScale": 1.0,
 			"Hardpoints":       {
 				"Proto Warp Nacelle":  [0.000000, 0.000000, 0.075000],
 			},
 
-			"AttackHardpoints":       {
-				"Proto Warp Nacelle":  [0.000000, -0.250000, 2.075000],
-			},
-			#"WarpHardpoints":       {
-			#	"Proto Warp Nacelle":  [0.000000, -0.250000, -2.075000],
+			#"AttackHardpoints":       {
+			#	"Proto Warp Nacelle":  [0.000000, -0.250000, 2.075000],
 			#},
+			"WarpHardpoints":       {
+				"Proto Warp Nacelle":  [0.000000, -0.250000, -2.075000],
+			},
 			"Proto-WarpHardpoints":       {
 				"Proto Warp Nacelle":  [0.000000, -1.000000, -2.075000],
 			},
 		},
 
-		"Port Wing":     ["Hideki", {
-			"Experimental": 1,
+		"Port Wing":     ["USSProtostarPN", {
+			"Experimental": 0,
 			"SetScale": 1.0,
 			"Position":             [0, 0, 0],
 			"Rotation":             [0, 0, 0], # normal Rotation used if not Red Alert and if not Warp
-			"AttackRotation":         [0, -0.6, 0],
-			"AttackDuration":         200.0, # Value is 1/100 of a second
-			"AttackPosition":         [0, 0, 0.03],
-			#"WarpRotation":       [0, 0.349, 0],
-			#"WarpPosition":       [0, 0, 0.02],
+			#"AttackRotation":         [0, -0.6, 0],
+			#"AttackDuration":         200.0, # Value is 1/100 of a second
+			#"AttackPosition":         [0, 0, 0.03],
+			#"WarpRotation":       [0, 0, 0],
+			#"WarpPosition":       [0, 0, 0.001],
 			#"WarpDuration":       150.0,
-			"Proto-WarpRotation":       [0, 0.749, 0],
-			"Proto-WarpPosition":       [0, 0, 0.12],
+			"Proto-WarpRotation":       [0, -0.3, 0],
+			"Proto-WarpPosition":       [0, 0, -0.01],
 			"Proto-WarpDuration":       150.0,
 			},
 		],
         
-		"Starboard Wing":     ["VasKholhr_Starboardwing", {
+		"Starboard Wing":     ["USSProtostarSN", {
 			"Experimental": 0,
+			"SetScale": 1.0,
 			"Position":             [0, 0, 0],
 			"Rotation":             [0, 0, 0],
-			"AttackRotation":         [0, 0.6, 0],
-			"AttackDuration":         200.0, # Value is 1/100 of a second
-			"AttackPosition":         [0, 0, 0.03],
-			#"WarpRotation":       [0, -0.349, 0],
-			#"WarpPosition":       [0, 0, 0.02],
+			#"AttackRotation":         [0, 0.6, 0],
+			#"AttackDuration":         200.0, # Value is 1/100 of a second
+			#"AttackPosition":         [0, 0, 0.03],
+			#"WarpRotation":       [0, 0, 0],
+			#"WarpPosition":       [0, 0, 0.001],
 			#"WarpDuration":       150.0,
-			"Proto-WarpRotation":       [0, -0.749, 0],
-			"Proto-WarpPosition":       [0, 0, 0.12],
+			"Proto-WarpRotation":       [0, 0.3, 0],
+			"Proto-WarpPosition":       [0, 0, -0.01],
 			"Proto-WarpDuration":       150.0,
+			},
+		],
+		"Central_Nacelle":     ["USSProtostarCN", {
+			"Experimental": 0,
+			"SetScale": 1.0,
+			"Position":             [0, 0, 0],
+			"Rotation":             [0, 0, 0],
+			#"WarpRotation":       [0, 0, 0],
+			#"WarpPosition":       [0, -0.01, 0],
+			#"WarpDuration":       150.0,
+			"Proto-WarpRotation":       [0, 0, 0],
+			"Proto-WarpPosition":       [0, -1.0, -0.05],
+			"Proto-WarpDuration":       250.0,
 			},
 		],
 	},

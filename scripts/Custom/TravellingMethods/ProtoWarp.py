@@ -880,7 +880,7 @@ def SetupSequence(self):
 	# 1º: the engaging travel sequence  (plays once, when the ship enters the travel)
 	# 2º: the during travel sequence    (plays repeatedly, while the ship is travelling)
 	# 3º: the exiting travel sequence   (plays once, when the ship exits travel)
-	# TO-DO Make the Protowarp sequence
+	# TO-DO Make the Protowarp sequence?
 
 	# Note that each one of them can be None, if you don't want to have that sequence in your travel method.
 

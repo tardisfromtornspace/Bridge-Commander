@@ -16,7 +16,7 @@
 # NOTE: This will not affect pre-existing TravellingMethods, a ship could have those and not use this tech at all.
 # ATTENTION: This script has two classes "ProtoWarp" and "MovingEventUpdated" which inherit from Defiant's SubModels "SubModel" and "MovingEvent" classes, and also uses certain functions from that script - as such, it depends on it and that script being on scripts/Custom/Techs folder.
 # WARNING: Also because they inherit from that class and use the same individual subList parameter, it is NOT RECOMMENDED to call SubModels and this technology on the same ship.
-# ATTENTION: The script is also dependant on scripts/Custom/TravellingMethods and on GalaxyCharts to verify sub-technology and FTL availability. With those options turned off, the usefulness of this script is reduced to a cleaner customized SubModels.
+# ATTENTION: The script is also dependant on scripts/Custom/TravellingMethods and on GalaxyCharts to verify sub-technology and FTL availability. With those options turned off, the usefulness of this script is reduced to a cleaner customizable SubModels.
 # === HOW-TO-USE a pre-existing FTL TravellingMethods that supports this tech ===
 # Below there's a sample setup. Those familiarized with SubModels script will notice the script is basically identical, but with a twist, presenting extra elements related with the TravellingMethods files that support this file.
 #
@@ -65,6 +65,8 @@
 # ---------------- (0) "Experimental": a dictionary entry which establishes if the ship uses experimental rotation or not. "Experimental": 0 or entry not added implies it uses the legacy submodels style of rotation.
 # ------------------------ Legacy rotations are better for backwards-compatibility and may have less drifting issues, but only work for a particular quadrant of rotation ( -90, 90 ) degrees and are best for ( -45 degrees, 45 degrees) amplitude. They share the same issues SubModels rotations have.
 # ------------------------ Experimental rotations are best suited if the ship requires to rotate more than that quadrant, but may also have their own range of issues.
+#
+# NOTE: In order to prevent some in-game engine shenanigans, it is recommended that ALL positions for each situation used are different, even if slightly, to prevent some cases of parts just floating if the beginning and end position were the same.
 """
 #Sample Setup: replace "USSProtostar" for the appropiate abbrev
 Foundation.ShipDef.USSProtostar.dTechs = {
@@ -1830,7 +1832,6 @@ def UpdateStateProto(pAction, pShip, item, lStoppingRotation, lStoppingTranslati
         debug(__name__ + ", UpdateStateProto")
         item[1]["currentRotation"] = lStoppingRotation
         item[1]["currentPosition"] = lStoppingTranslation
-	print "lStoppingRotation", lStoppingRotation, "lStoppingTranslation", lStoppingTranslation
         item[1]["curMovID"] = 0
         return 0
 
