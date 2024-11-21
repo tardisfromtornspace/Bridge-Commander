@@ -74,16 +74,20 @@ Foundation.ShipDef.USSProtostar.dTechs = {
 			#"AttackSetScale": 1.0,
 			"Hardpoints":       {
 				"Proto Warp Nacelle":  [0.000000, 0.000000, 0.075000],
+				"Port Warp": [-0.270000, -0.250000, 0.075000],
+				"Star Warp": [-0.270000, -0.250000, 0.075000],
 			},
 
 			#"AttackHardpoints":       {
 			#	"Proto Warp Nacelle":  [0.000000, -0.250000, 2.075000],
 			#},
-			"WarpHardpoints":       {
-				"Proto Warp Nacelle":  [0.000000, -0.250000, -2.075000],
-			},
+			#"WarpHardpoints":       {
+			#	"Proto Warp Nacelle":  [0.000000, -0.250000, -2.075000],
+			#},
 			"Proto-WarpHardpoints":       {
 				"Proto Warp Nacelle":  [0.000000, -1.000000, -2.075000],
+				"Port Warp": [-0.300000, -0.250000, 0.005000],
+				"Star Warp": [-0.300000, -0.250000, 0.005000],
 			},
 		},
 

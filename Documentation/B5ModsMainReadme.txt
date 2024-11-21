@@ -1,4 +1,7 @@
 ==Changelog==
+1.2.12 -
+   Fixes:
+   * Updated Turrets script to 0.9992, fixing a same-file turret issue and covering an additional cloak situation.
 1.2.11 -
    Fixes:
    * Updated Hull Polarizer to 1.31, fixing a small issue where a polarized plate could sometimes take twice the damage.

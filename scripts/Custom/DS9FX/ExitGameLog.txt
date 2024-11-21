@@ -1464,3 +1464,307 @@ Moving Error: Move no longer active
 
 
 ##### End Of The Log #####
+##### Bridge Commander Exit Log: 22 Nov 2024 00:04:32#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+Fixing your old DS9FX version
+Updated FoundationTech.ShipInstance Detach-related fixes
+Updating your TractorBeams.py <= 1.0 system mismatch
+Hopping Torp ready
+SG Hopping Torp ready
+Gravity FX has been loaded.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+Jumpspace Drive 20070905 Initializing...
+TimeVortex Drive 20070905 Initializing...
+Warpspace Drive 20070905 Initializing...
+DS9FX Initializing...
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+Jumpspace: Quick Battle is running... Mod is starting up...
+TimeVortex: Quick Battle is running... Mod is starting up...
+Warpspace: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+
+
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+Setting splash damage for B5RaiderBattlewagonHalfFull 5 to (23.750000, 0.475000)
+data/TGL/Maelstrom/Episode 6/E6M3.tgl E6M3Communicate1
+Setting splash damage for B5RaiderBattlewagonHalfFull 1 to (248.750000, 4.975000)
+Setting splash damage for B5RaiderBattlewagonHalfFull 3 to (248.750000, 4.975000)
+Setting splash damage for B5RaiderBattlewagonHalfFull 2 to (58.763649, 1.175273)
+
+# DS9FX has...
+
+# taken a console dump
+Setting splash damage for B5RaiderBattlewagonHalfFull 4 to (9.456469, 0.189129)
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+data/TGL/Maelstrom/Episode 7/E7M6.tgl E7M6L022f
+Simulated Point Defence: cancelling, no FTech Ship Instance obj
+Simulated Point Defence: cancelling, no FTech Ship Instance obj
+Trying to clean memory
+Setting splash damage for Total PointDefence Firepoint Hyperion Class-3 C Torpedo instance at _44a4ff28_p_Torpedo to (3.750000, 0.075000)
+Setting splash damage for Total PointDefence Firepoint Hyperion Class-7 C Torpedo instance at _3c1cda08_p_Torpedo to (3.750000, 0.075000)
+Setting splash damage for Minotaur Battlecruiser-8 to (831.250000, 16.625000)
+Setting splash damage for Minotaur Battlecruiser-12 to (436.150604, 8.723012)
+Creating WarpSequence:  Ship = Minotaur Battlecruiser-12  // To Set = None  // Placement Name = None
+Setting splash damage for Total PointDefence Firepoint Hyperion Class-6 C Torpedo instance at _24ab45a8_p_Torpedo to (3.750000, 0.075000)
+Setting splash damage for Minotaur Battlecruiser-13 to (463.068207, 9.261364)
+Setting splash damage for Minotaur Battlecruiser-9 to (748.522705, 14.970454)
+Creating WarpSequence:  Ship = Minotaur Battlecruiser-13  // To Set = None  // Placement Name = None
+Creating WarpSequence:  Ship = Minotaur Battlecruiser-11  // To Set = None  // Placement Name = None
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 48935fb4> ignored
+Error in FoundationTech.DetachTechs:
+Traceback (innermost last):
+  File ".\Scripts\Custom\Autoload\FIX-FoundationTech20050703ShipInstanceDetach.py", line 61, in NewDetachTechs
+  File ".\Scripts\Custom\Techs\AutoTargeting.py", line 75, in Detach
+  File ".\Scripts\Custom\Techs\AutoTargeting.py", line 139, in Close
+AttributeError: 'None' object has no attribute 'GetObjID'
+Setting splash damage for Minotaur Battlecruiser-11 to (347.454437, 6.949089)
+Traceback (innermost last):
+  File ".\Scripts\Custom\QBautostart\Abandon Ship.py", line 459, in EmergAbandon
+    StartAbandonShip(pShip)
+  File ".\Scripts\Custom\QBautostart\Abandon Ship.py", line 119, in StartAbandonShip
+    pSet = pPlayer.GetContainingSet()
+AttributeError: 'None' object has no attribute 'GetContainingSet'
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 22 Nov 2024 00:04:32#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+Fixing your old DS9FX version
+Updated FoundationTech.ShipInstance Detach-related fixes
+Updating your TractorBeams.py <= 1.0 system mismatch
+Hopping Torp ready
+SG Hopping Torp ready
+Gravity FX has been loaded.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+Jumpspace Drive 20070905 Initializing...
+TimeVortex Drive 20070905 Initializing...
+Warpspace Drive 20070905 Initializing...
+DS9FX Initializing...
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+Jumpspace: Quick Battle is running... Mod is starting up...
+TimeVortex: Quick Battle is running... Mod is starting up...
+Warpspace: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+
+
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+Setting splash damage for B5RaiderBattlewagonHalfFull 5 to (23.750000, 0.475000)
+data/TGL/Maelstrom/Episode 6/E6M3.tgl E6M3Communicate1
+Setting splash damage for B5RaiderBattlewagonHalfFull 1 to (248.750000, 4.975000)
+Setting splash damage for B5RaiderBattlewagonHalfFull 3 to (248.750000, 4.975000)
+Setting splash damage for B5RaiderBattlewagonHalfFull 2 to (58.763649, 1.175273)
+
+# DS9FX has...
+
+# taken a console dump
+Setting splash damage for B5RaiderBattlewagonHalfFull 4 to (9.456469, 0.189129)
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+data/TGL/Maelstrom/Episode 7/E7M6.tgl E7M6L022f
+Simulated Point Defence: cancelling, no FTech Ship Instance obj
+Simulated Point Defence: cancelling, no FTech Ship Instance obj
+Trying to clean memory
+Setting splash damage for Total PointDefence Firepoint Hyperion Class-3 C Torpedo instance at _44a4ff28_p_Torpedo to (3.750000, 0.075000)
+Setting splash damage for Total PointDefence Firepoint Hyperion Class-7 C Torpedo instance at _3c1cda08_p_Torpedo to (3.750000, 0.075000)
+Setting splash damage for Minotaur Battlecruiser-8 to (831.250000, 16.625000)
+Setting splash damage for Minotaur Battlecruiser-12 to (436.150604, 8.723012)
+Creating WarpSequence:  Ship = Minotaur Battlecruiser-12  // To Set = None  // Placement Name = None
+Setting splash damage for Total PointDefence Firepoint Hyperion Class-6 C Torpedo instance at _24ab45a8_p_Torpedo to (3.750000, 0.075000)
+Setting splash damage for Minotaur Battlecruiser-13 to (463.068207, 9.261364)
+Setting splash damage for Minotaur Battlecruiser-9 to (748.522705, 14.970454)
+Creating WarpSequence:  Ship = Minotaur Battlecruiser-13  // To Set = None  // Placement Name = None
+Creating WarpSequence:  Ship = Minotaur Battlecruiser-11  // To Set = None  // Placement Name = None
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 48935fb4> ignored
+Error in FoundationTech.DetachTechs:
+Traceback (innermost last):
+  File ".\Scripts\Custom\Autoload\FIX-FoundationTech20050703ShipInstanceDetach.py", line 61, in NewDetachTechs
+  File ".\Scripts\Custom\Techs\AutoTargeting.py", line 75, in Detach
+  File ".\Scripts\Custom\Techs\AutoTargeting.py", line 139, in Close
+AttributeError: 'None' object has no attribute 'GetObjID'
+Setting splash damage for Minotaur Battlecruiser-11 to (347.454437, 6.949089)
+Traceback (innermost last):
+  File ".\Scripts\Custom\QBautostart\Abandon Ship.py", line 459, in EmergAbandon
+    StartAbandonShip(pShip)
+  File ".\Scripts\Custom\QBautostart\Abandon Ship.py", line 119, in StartAbandonShip
+    pSet = pPlayer.GetContainingSet()
+AttributeError: 'None' object has no attribute 'GetContainingSet'
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 22 Nov 2024 00:42:56#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+Fixing your old DS9FX version
+Updated FoundationTech.ShipInstance Detach-related fixes
+Updating your TractorBeams.py <= 1.0 system mismatch
+Hopping Torp ready
+SG Hopping Torp ready
+Gravity FX has been loaded.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+Jumpspace Drive 20070905 Initializing...
+TimeVortex Drive 20070905 Initializing...
+Warpspace Drive 20070905 Initializing...
+DS9FX Initializing...
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+Jumpspace: Quick Battle is running... Mod is starting up...
+TimeVortex: Quick Battle is running... Mod is starting up...
+Warpspace: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+
+
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+# DS9FX has...
+
+# taken a console dump
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 1a78975c> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 1a789784> ignored
+Setting Stock System Planets Random Density.
+Setting Stock System Planets Random Density.
+Moving Error: Move no longer active
+Moving Error: Move no longer active
+Moving Error: Move no longer active
+Moving Error: Move no longer active
+data/TGL/Maelstrom/Episode 7/E7M1.tgl E7M1SaalekComing4
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 22 Nov 2024 00:42:56#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+Fixing your old DS9FX version
+Updated FoundationTech.ShipInstance Detach-related fixes
+Updating your TractorBeams.py <= 1.0 system mismatch
+Hopping Torp ready
+SG Hopping Torp ready
+Gravity FX has been loaded.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+Jumpspace Drive 20070905 Initializing...
+TimeVortex Drive 20070905 Initializing...
+Warpspace Drive 20070905 Initializing...
+DS9FX Initializing...
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+Jumpspace: Quick Battle is running... Mod is starting up...
+TimeVortex: Quick Battle is running... Mod is starting up...
+Warpspace: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+
+
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+# DS9FX has...
+
+# taken a console dump
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 1a78975c> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 1a789784> ignored
+Setting Stock System Planets Random Density.
+Setting Stock System Planets Random Density.
+Moving Error: Move no longer active
+Moving Error: Move no longer active
+Moving Error: Move no longer active
+Moving Error: Move no longer active
+data/TGL/Maelstrom/Episode 7/E7M1.tgl E7M1SaalekComing4
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####

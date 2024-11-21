@@ -1,4 +1,37 @@
-ThatGuyBrian - Model Conversion
-Hexagonal_ Nexul - Hardpointing/Sounds/Scripting
+== Changelog ==
+0.1 - First unofficial release, for testing
 
-(No Read-Me Provided)
+== What does this mod do ==
+This mod adds a USS Protostar and USS Prodigy from Star Trek Prodigy, alongside with certain technologies for Proto-Warp and a SubModels-derivated file that supports other FTL methods and mobility fix improvements. All of them have their own detailed instruction manuals inside the files to ensure people can use those techs easily.
+
+== Dependencies ==
+All of these must be installed before installing this mod, in this order:
+* Foundation + Kobayashi Maru (KM has Foundation already installed - the most recent version of KM, the better).
+* GalaxyCharts (KM has this mod already installed. Required for ProtoWarp TravellingMethod and any method you may want derived from that).
+* All the dependencies for this mod + the mod: https://www.gamefront.com/games/bridge-commander/file/stbc-babylon-5-mod
+** From here, HullPolarizer is the most used, but also the file "FIX-FoundationTech20050703ShipInstanceDetach.py", which solves problems related with iterating lTechs when detaching and removing from such FoundationTech list.
+
+== Credits ==
+* Everyone involved in Foundation - without you this would have been a real pain to do (please read the separate Foundation.txt license) - Banbury, Dasher42, DigitalFriend, MLeo, Nanobyte and Sleight42, among others.
+* Everyone involved in KM - specifically those involved in the creation of armour and Shields.py (FoundationTechnologies) the AdvArmorTech.py, FiveSecsGodPhaser.py, TractorBeams.py - Apollo from ATP Technologies as well.
+* Dasher42 for reminding me of licensing.
+* USS Sovereign for some DS9FX advice regarding timers, and inspired in one of DS9FX Pulsar files for improved rotations.
+* USS Frontier for GalaxyCharts.
+* Defiant for some scripts that drew inspiration, particularly the original SubModels.
+* That Guy... Brian (ThatGuyBrian) - for Model Conversion of the original Protostar model used, and for telling me to install Nifskope, that tool has proven to be very useful to me.
+* Grey da Derg#2305 aka Greystar, and 𝕟𝕒𝕣𝕣𝕠𝕨𝕔𝕨𝕪𝕗𝕖 aka Hexagonal_Nexul for the original Hardpointing/Sounds/Scripting from BC Remastered Orion (from which this ship was taken from) and an updated version.
+* Everyone else from the other mods I mentioned, which have their own readmes crediting them - please feel free to contact me (tardis#2540 on Discord, CharaToLoki on Gamefront) to correct any potential issues, thank you.
+* Michael Giachinno for the ST Prodigy Intro music.
+* Tools used: Milkshape 3D and FreeCAD for extensive modifications and adjustments to the original Andromeda Model, Nifskope to validate the textures, GIMP to modify and create textures and icons, Model Property Editor to iron.out a few hardpoint issues, Audacity to fix some sounds.
+* Grey da Derg#2305, Grim455#4905 aka THE SCI-FI KING, HexagonalNexul and MSR1701 for helping with noticing bugs and their cause, and for being inquisitive and finding out possible ways to tweak the hardpoints and techs and models.
+* Alex SL Gato (aka CharaToLoki) for any new code or model implemented, fixed or modified (including all the monkey patches and the icon), plus the original fusion idea I had, based on a Spore Andromeda-Talyn fusion (image provided on Documentation/AndromedaTalynOriginalSporeIdea.png), and the Spear model.
+
+Fulfilling both the SDK and LGPL licenses:
+THIS MOD IS NOT SUPPORTED BY ACTIVISION
+
+This mod falls under the GNU LESSER GENERAL PUBLIC LICENSE Version 3, 29 June 2007, both from any derivative or original work done to the mod. Everyone is permitted to copy and distribute verbatim copies of this mod. As per the LPGL license, everything in this mod is open for everybody to use, read and modify. Just do not forget to credit everyone involved and follow the LGPL license so derivatives of this code remain LGPL.
+
+PointDefence.py (apparently under BSD license so despite the things I make have NO merchantibility and this mod MUST NOT be sold, only freely given and shared, I need to copy this line down here): 
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+== Bugs ==

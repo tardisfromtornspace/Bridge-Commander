@@ -145,7 +145,7 @@ import MissionLib
 
 #################################################################################################################
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.9991",
+	    "Version": "0.9992",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -566,12 +566,20 @@ class Turrets(FoundationTech.TechDef):
                         dOptions = None
                         # this is here to check if we already have the entry
                         for lList in pInstance.OptionsList:
-                                if lList[0] != "Setup":
-                                        if lList[1]["sShipFile"] == sFile:
-                                                lList[0] = pSubShip
-                                                iSaveDone = 1
-                                                dOptions = lList[1]
-                                                break
+				if lList[0] != "Setup":
+					proceed = 0
+					if lList[0] == sNameSuffix:
+						proceed = 1
+					else:
+						if (lList[0] != None):
+							if hasattr(lList[0], "GetObjID") and (lList[0].GetName() == pSubShip.GetName()):
+								proceed = 1
+
+					if proceed > 0 and lList[1]["sShipFile"] == sFile:
+						lList[0] = pSubShip
+						iSaveDone = 1
+						dOptions = lList[1]
+						break
                         
                         if not iSaveDone: #TO-DO THEN RE-CREATE THE THINGS DONE IN ATTACHSHIP
                             if len(ModelList[sNameSuffix]) > 1:
@@ -1207,6 +1215,25 @@ def ReplaceModel(pShip, sNewShipScript):
         if App.g_kUtopiaModule.IsMultiplayer():
                 MPSentReplaceModelMessage(pShip, sNewShipScript)
 
+def checkingReCloak(pShip):
+	try:
+		pShipID = pShip.GetObjID()
+		if pShipID:
+			pShip = App.ShipClass_GetObjectByID(None, pShipID)
+		if pShip:
+			pCloak = pShip.GetCloakingSubsystem()
+			if pCloak:
+				shipIsCloaking = pCloak.IsCloaking() or pCloak.IsCloaked() 
+				shipIsDecloaking = pCloak.IsDecloaking() or not pCloak.IsCloaked()
+				if shipIsCloaking:
+					CloakShip(pShipID, -1)
+				#elif shipIsDecloaking:
+				#	CloakShip(pShipID, 1)
+
+	except:
+		traceback.print_exc()
+
+	return 0
 
 # Prepares a ship to move: Replaces the current Model with the move Model and attaches its sub Models
 def PrepareShipForMove(pShip, pInstance):
@@ -1214,6 +1241,8 @@ def PrepareShipForMove(pShip, pInstance):
         if not oTurrets.ArePartsAttached(pShip, pInstance):
                 ReplaceModel(pShip, pInstance.__dict__["Turret"]["Setup"]["Body"])
                 oTurrets.AttachParts(pShip, pInstance)
+
+                checkingReCloak(pShip)
 
 
 def IncCurrentMoveID(pShip, pInstance):
@@ -1862,6 +1891,7 @@ def AlertMoveFinishTemporarilyAction(pAction, pShip, pInstance, iThisMovID, iTyp
 
         # For some reason this line below leads to the ship getting dark until you fire
         #ReplaceModel(pShip, sNewShipScript)
+        #checkingReCloak(pShip)
 
         return 0
 
@@ -1904,6 +1934,7 @@ def WarpStartMoveFinishAction(pAction, pShip, pInstance, iThisMovID):
 
         # For some reason this line below leads to the ship getting dark until you fire
         #ReplaceModel(pShip, sNewShipScript)
+        checkingReCloak(pShip)
         """
         return 0
 
@@ -1946,6 +1977,7 @@ def WarpExitMoveFinishAction(pAction, pShip, pInstance, iThisMovID):
                 #    oTurrets.SetBattleTurretListenerTo(pShip, -1) # Not combat mode
                 #oTurrets.DetachParts(pShip, pInstance) # we hide turrets when not in alert mode, else we keep them
         #ReplaceModel(pShip, sNewShipScript)
+        #checkingReCloak(pShip)
         return 0
         
 

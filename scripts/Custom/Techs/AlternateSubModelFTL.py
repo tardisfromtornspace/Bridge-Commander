@@ -1143,11 +1143,20 @@ class ProtoWarp(SubModels):
 			# this is here to check if we already have the entry
 			for lList in pInstance.OptionsList:
 				if lList[0] != "Setup":
-					if lList[1]["sShipFile"] == sFile:
+					proceed = 0
+					if lList[0] == sNameSuffix:
+						proceed = 1
+					else:
+						if (lList[0] != None):
+							if hasattr(lList[0], "GetObjID") and (lList[0].GetName() == pSubShip.GetName()):
+								proceed = 1
+
+					if proceed > 0 and lList[1]["sShipFile"] == sFile:
 						lList[0] = pSubShip
 						iSaveDone = 1
 						dOptions = lList[1]
 						break
+					
 
 			#print iSaveDone, dOptions
 			
@@ -1155,6 +1164,7 @@ class ProtoWarp(SubModels):
 				print "AlternateSubModelFTL: rebuilding options"
      				if len(ModelList[sNameSuffix]) > 1:
      					dOptionsSingle = ModelList[sNameSuffix][1]
+
 				loadspacehelper.PreloadShip(sFile, 1)
 
 				# save the shipfile for later use, this would be on "item[1]"
@@ -1177,6 +1187,7 @@ class ProtoWarp(SubModels):
 
 				pInstance.OptionsList.append([pSubShip, dOptions2])
 				dOptions = dOptions2
+
 
 			# set current positions
 			pSubShip.SetTranslateXYZ(dOptions["currentPosition"][0],dOptions["currentPosition"][1],dOptions["currentPosition"][2])
