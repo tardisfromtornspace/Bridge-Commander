@@ -1,8 +1,9 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
+# AlternateSubModelFTL.py
 # 20th September 2024, by Alex SL Gato (CharaToLoki)
 #         Based on Defiant's SubModels script (from which it inherits the classes, so in fact SubModels is a dependency) and BorgAdaptation.py by Alex SL Gato, which were based on the Foundation import function by Dasher
-#         Also based on ATPFunctions by Apollo.
+#         Also based on ATPFunctions by Apollo and slightly on DS9FXPulsarManager by USS Sovereign.
 #################################################################################################################
 # A modification of a modification, last modification by Alex SL Gato (CharaToLoki)
 ##################################################################################################################################################################################################################################
@@ -28,8 +29,8 @@
 # - "(#)"                - something that is always needed, or may always be needed if you need any figment of functionality outside of calling a literal empty version of the function.
 # - "<insert_name_here>" - basically a generalization example for any other TravellingMethod. On this case in particular, <insert_name_here> = "Proto-Warp". Unless told otherwise, this generalization implies you can have as many of that field as you want, as long as <insert_name_here> is different for each one, allowing multiple TravellingMethods subModels support.
 # - "c.s."               - "case-sensitive". That is, it will notice it is different if you type like this, LIKE THIS, LiKe ThIs and so on.
-# - "<s-s>"              - "It uses the name of the ship File located at scripts/ships"
-# - "<k:v>"              - key - value format. On python, key: value. Unless key or value is a variable (or value is not an integer), you need to ensure they are between "" to indicate they are strings. "key like this" : "value like that". Also it's c.s.
+# - "<s-s>"              - "It uses the name of the ship File located at scripts/ships". Having a dummy ship with the smallest hardpoint possible should be the best. Also if the model is not a 300k vert creation. Please, for the sake of slow computers, try to follow this recommendation.
+# - "<k:v>"              - key - value format. On python, key: value. Unless key or value are variables (or value is not an integer), you need to ensure they are between "" to indicate they are strings. Also it's c.s. "key like this" : "value like that", "unless the value for the key is a number like": 10 
 #
 # (#) On the "Setup" section, people will notice:
 # -- (*) A ""Proto-Warp": {"Nacelles": ["Proto Warp Nacelle"], "Core": ["Proto-Core"], }," line, This can vary wildly between TravellingMethods, some may not even require a similar line, so check each one's readme (if they have it) to get more information on its SubTech. However for those modders that use this tech to validate if the ship is equipped or not, please do so somewhere inside the "Setup" field. On this case in particular, this line is simply arbitrarily defined here so the ProtoWarp TravellingMethods script, which uses this tech to verify the ship is equipped with it, can determine the ship has or does not have this tech. 
@@ -61,6 +62,9 @@
 # ---------------- (0) "<insert_name_here>Rotation": a dictionary entry which stores inside the rotation in <k:v> format which the piece would move to during an <insert_name_here> transformation. On this example, "<insert_name_here>" could be nothing (thus "Rotation", for default), "Attack" (for red alert), "Warp" (for regular warp) or "Proto-Warp" (for Proto-Warp).
 # ----------------------- Rotation value is on [x, y, z] axis of rotation
 # ---------------- (0) "SetScale": indicates the model size of a subpart. Do not include to have same behaviour as SubModels (regular scale but if the part has a too-extreme rotation (like, at least 90 degrees) it will suffer an asintotic process where it suddenly becomes small and then extremely big and inverted). <k:v>
+# ---------------- (0) "Experimental": a dictionary entry which establishes if the ship uses experimental rotation or not. "Experimental": 0 or entry not added implies it uses the legacy submodels style of rotation.
+# ------------------------ Legacy rotations are better for backwards-compatibility and may have less drifting issues, but only work for a particular quadrant of rotation ( -90, 90 ) degrees and are best for ( -45 degrees, 45 degrees) amplitude. They share the same issues SubModels rotations have.
+# ------------------------ Experimental rotations are best suited if the ship requires to rotate more than that quadrant, but may also have their own range of issues.
 """
 #Sample Setup: replace "USSProtostar" for the appropiate abbrev
 Foundation.ShipDef.USSProtostar.dTechs = {
@@ -93,6 +97,7 @@ Foundation.ShipDef.USSProtostar.dTechs = {
 		},
 
 		"Port Wing":     ["VasKholhr_Portwing", {
+			"Experimental": 0,
 			"SetScale": 1.0,
 			"Position":             [0, 0, 0],
 			"Rotation":             [0, 0, 0], # normal Rotation used if not Red Alert and if not Warp
@@ -109,6 +114,7 @@ Foundation.ShipDef.USSProtostar.dTechs = {
 		],
         
 		"Starboard Wing":     ["VasKholhr_Starboardwing", {
+			"Experimental": 0,
 			"SetScale": 1.0,
 			"Position":             [0, 0, 0],
 			"Rotation":             [0, 0, 0],
@@ -699,7 +705,7 @@ Foundation.ShipDef.USSProtostar.dTechs = { # (#)
 #################################################################################################################
 #
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.2",
+	    "Version": "0.4",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -741,6 +747,18 @@ _g_dExcludeSomePlugins = {
 	"000-Utilities-GetFileNames-20030402": 1,
 	"000-Utilities-GetFolderNames-20040326": 1,
 }
+
+	# based on the FedAblativeArmour.py script, a fragment probably imported from ATP Functions by Apollo
+def NiPoint3ToTGPoint3(p, factor = 1.0):
+	debug(__name__ + ", NiPoint3ToTGPoint3")
+	kPoint = App.TGPoint3()
+	kPoint.SetXYZ(p.x * factor, p.y * factor, p.z * factor)
+	return kPoint
+
+def TGPoint3ToNiPoint3(p, factor=1.0):
+	debug(__name__ + ", TGPoint3ToNiPoint3")
+	kPoint = App.NiPoint3(p.x * factor, p.y * factor, p.z * factor)
+	return kPoint
 
 def findShipInstance(pShip):
 	pInstance = None
@@ -846,18 +864,14 @@ def LoadExtraLimitedPlugins(dExcludePlugins=_g_dExcludeSomePlugins):
 
 LoadExtraLimitedPlugins()
 
-#TO-DO UPDATE FROM HERE
-
 # This class controls the attach and detach of the Models
 class ProtoWarp(SubModels):
-	# TO-DO ADD SOMEWHERE LIKE PROTOMOVE IF THE SHIP CHANGES MODEL WE RE-CLOAK
 	def __init__(self, name):
 		debug(__name__ + ", Initiated")
 		FoundationTech.TechDef.__init__(self, name)
 		self.pEventHandler = App.TGPythonInstanceWrapper()
 		self.pEventHandler.SetPyWrapper(self)
-		# TO-DO ACTUALLY DO NOT ADD THIS FOR WARP DRIVE AND EXITSET, USE NORMAL ONES FOR THAT, AND FTL BROADCASTS FOR OTHERS :)
-		# TO-DO ACTUALLY TEST THIS! Make it so they import the proper config!!!
+		# DO NOT ADD GLOBAL BROADCASTS FOR REGULAR WARP DRIVE-RELATED CALLS, USE LOCAL SHIP HANDLERS
 		global eTypeDict
 		for eType in eTypeDict.keys():
 			App.g_kEventManager.RemoveBroadcastHandler(eType, self.pEventHandler, "FTLFunctionHandler")
@@ -876,8 +890,6 @@ class ProtoWarp(SubModels):
 					if iShipID and iShipID != App.NULL_ID:
 						pShip = App.ShipClass_GetObjectByID(None, iShipID)
 						if pShip:
-							# TO-DO COMMENT THIS LINE
-							print "And the ship still exists, calling function:"
 							global eTypeDict
 							try:
 								eTypeDict[eType](pShip, pEvent, self, None)
@@ -905,7 +917,7 @@ class ProtoWarp(SubModels):
 	# Prepares the ship for moving its sub parts
 	def AttachShip(self, pShip, pInstance):
 		debug(__name__ + ", AttachShip")
-		print "Ship %s with ProtoWarp support added" % pShip.GetName()
+		print "Ship %s with Alternative Warp FTL SubModel support added" % pShip.GetName()
 
 		pShipID = pShip.GetObjID()
 		sNamePrefix = str(pShipID) + "_"
@@ -939,7 +951,7 @@ class ProtoWarp(SubModels):
                                     dOptions1[key] = dOptions[key]
 
 				pInstance.OptionsList.append("Setup", dOptions1)
-				continue # nothing more todo here
+				continue # nothing more to do here
 
 			#
 			# the following stuff is only for the objects that move
@@ -980,7 +992,6 @@ class ProtoWarp(SubModels):
 
 		self.PerformPostAttachLoopActions(pShip, AlertListener)
 
-	# TO-DO REMOVE DRIED LAVA
 	def AddbAddedFTLSituationListener(self):
 		self.bAddedWarpListener = {} # these variables will make sure we add our event handlers only once
 		self.bAddedAlertListener = {}
@@ -992,7 +1003,6 @@ class ProtoWarp(SubModels):
 		return AlertListener
 
 	def Remove_FTLAndSituationMethods(self, pShip):
-
 		self.Remove_CloakMethods(pShip)
 		self.Remove_WarpMethods(pShip)
 		self.Remove_AttackMethods(pShip)
@@ -1032,7 +1042,7 @@ class ProtoWarp(SubModels):
 			self.bAddedWarpListener[pShip.GetObjID()] = 1
 	def Remove_WarpMethods(self, pShip):
 		if self.bAddedWarpListener.has_key(pShip.GetObjID()):
-			pShip.RemoveHandlerForInstance(App.ET_START_WARP, __name__ + ".StartingWarpE") # TO-DO ADJUST TO ADD MISSING STARTING WARP AND ENDING WARP THINGS
+			pShip.RemoveHandlerForInstance(App.ET_START_WARP, __name__ + ".StartingWarpE")
 			pShip.RemoveHandlerForInstance(App.ET_START_WARP_NOTIFY, __name__ + ".StartingWarpE")
 			pShip.RemoveHandlerForInstance(App.ET_EXITED_SET, __name__ + ".ExitSetWarp")
 			try:
@@ -1052,7 +1062,7 @@ class ProtoWarp(SubModels):
 		pShip = App.ShipClass_GetObjectByID(None, iShipID)
 		if pShip:
 			# remove the listeners
-			self.Remove_FTLAndSituationMethods(pShip) # TO-DO MAKE IT SO ONLY THE WARP LISTENERS ARE HERE
+			self.Remove_FTLAndSituationMethods(pShip)
 			
 			if hasattr(pInstance, "OptionsList"):
 				for item in pInstance.OptionsList:
@@ -1121,7 +1131,7 @@ class ProtoWarp(SubModels):
 			# check if the ship does exist first, before create it
 			pSubShip = MissionLib.GetShip(sShipName)
 			if not pSubShip:
-				pSubShip = loadspacehelper.CreateShip(sFile, pSet, sShipName, "")
+				pSubShip = loadspacehelper.CreateShip(sFile, pSet, sShipName, "", 0, 1)
 			SubModelList.append(pSubShip)
 
 			# save the options list
@@ -1140,6 +1150,7 @@ class ProtoWarp(SubModels):
 			#print iSaveDone, dOptions
 			
 			if not iSaveDone:
+				print "AlternateSubModelFTL: rebuilding options"
      				if len(ModelList[sNameSuffix]) > 1:
      					dOptionsSingle = ModelList[sNameSuffix][1]
 				loadspacehelper.PreloadShip(sFile, 1)
@@ -1167,13 +1178,20 @@ class ProtoWarp(SubModels):
 
 			# set current positions
 			pSubShip.SetTranslateXYZ(dOptions["currentPosition"][0],dOptions["currentPosition"][1],dOptions["currentPosition"][2])
-			pSubShip.SetAngleAxisRotation(1.0,dOptions["currentRotation"][0],dOptions["currentRotation"][1],dOptions["currentRotation"][2])
 
+			scaleFactor = 1.0
 			if dOptions.has_key("SetScale") and dOptions["SetScale"] != 0.0:
-				pSubShip.SetScale(dOptions["SetScale"])
-			else:
+				scaleFactor = dOptions["SetScale"]
+
+			if not (dOptions.has_key("Experimental") and dOptions["Experimental"] != 0.0):
+				pSubShip.SetAngleAxisRotation(1.0, dOptions["currentRotation"][0], dOptions["currentRotation"][1], dOptions["currentRotation"][2])
 				iNorm = math.sqrt(dOptions["currentRotation"][0] ** 2 + dOptions["currentRotation"][1] ** 2 + dOptions["currentRotation"][2] ** 2)
-				pSubShip.SetScale(-iNorm + 1.85)
+				pSubShip.SetScale((-iNorm + 1.85) * scaleFactor)
+			else:
+				# Since attempting to make the non-legacy version have the proper initial rotation when added just causes the experimental rotation system to get very wonky rotations no matter the type of fixes I do, we are going to temporarily let the experimental rotation handle that while we hide the ship.
+				pSubShip.SetScale(scaleFactor)
+				pSubShip.SetHidden(1)
+
 			pSubShip.UpdateNodeOnly()
 
 
@@ -1233,31 +1251,6 @@ class MovingEventUpdated(MovingEvent):
         # prepare fore move...
         def __init__(self, pShip, item, fDuration, lStartingRotation, lStoppingRotation, lStartingTranslation, lStoppingTranslation, dHardpoints):
                 debug(__name__ + ", __init__")
-		"""
-		#TO-DO UPDATE THIS?
-		try:
-			if pShip:
-				ppShipID = pShip.GetObjID()
-				if ppShipID:
-					pShip = App.ShipClass_GetObjectByID(None, ppShipID)
-		except:
-			pShip = None
-
-                if not pShip:
-                        #print "Moving Error: Lost MAIN part"
-			self.wentWrong = 1
-                        return
-
-                if not item or not len(item) > 1:
-			self.wentWrong = 2
-                        return
-
-                item0 = App.ShipClass_GetObjectByID(None, item[0].GetObjID())
-                if not item0:
-                        #print "Moving Error: Lost nacelle part"
-			self.wentWrong = 3
-                        return
-		"""
 
                 self.iNacelleID = item[0].GetObjID()
 		self.iShipID = pShip.GetObjID()
@@ -1265,16 +1258,16 @@ class MovingEventUpdated(MovingEvent):
                 self.dOptionsList = item[1]
                 self.pShip = pShip
 			
-		fDurationMul = 0.95 # make us a little bit faster to avoid bad timing
+		self.fDurationMul = 0.94 # make us a little bit faster to avoid bad timing
 	
                 # rotation values
                 self.iCurRotX = lStartingRotation[0]
                 self.iCurRotY = lStartingRotation[1]
                 self.iCurRotZ = lStartingRotation[2]
 		if fDuration > 0:
-			self.iRotStepX = (lStoppingRotation[0] - lStartingRotation[0]) / (fDuration * fDurationMul)
-			self.iRotStepY = (lStoppingRotation[1] - lStartingRotation[1]) / (fDuration * fDurationMul)
-			self.iRotStepZ = (lStoppingRotation[2] - lStartingRotation[2]) / (fDuration * fDurationMul)
+			self.iRotStepX = (lStoppingRotation[0] - lStartingRotation[0]) / (fDuration * self.fDurationMul)
+			self.iRotStepY = (lStoppingRotation[1] - lStartingRotation[1]) / (fDuration * self.fDurationMul)
+			self.iRotStepZ = (lStoppingRotation[2] - lStartingRotation[2]) / (fDuration * self.fDurationMul)
 		else:
 			self.iRotStepX = (lStoppingRotation[0] - lStartingRotation[0])
 			self.iRotStepY = (lStoppingRotation[1] - lStartingRotation[1])
@@ -1285,9 +1278,9 @@ class MovingEventUpdated(MovingEvent):
                 self.iCurTransY = lStartingTranslation[1]
                 self.iCurTransZ = lStartingTranslation[2]
 		if fDuration > 0:
-			self.iTransStepX = (lStoppingTranslation[0] - lStartingTranslation[0]) / (fDuration * fDurationMul)
-			self.iTransStepY = (lStoppingTranslation[1] - lStartingTranslation[1]) / (fDuration * fDurationMul)
-			self.iTransStepZ = (lStoppingTranslation[2] - lStartingTranslation[2]) / (fDuration * fDurationMul)
+			self.iTransStepX = (lStoppingTranslation[0] - lStartingTranslation[0]) / (fDuration * self.fDurationMul)
+			self.iTransStepY = (lStoppingTranslation[1] - lStartingTranslation[1]) / (fDuration * self.fDurationMul)
+			self.iTransStepZ = (lStoppingTranslation[2] - lStartingTranslation[2]) / (fDuration * self.fDurationMul)
 		else:
 			self.iTransStepX = (lStoppingTranslation[0] - lStartingTranslation[0])
 			self.iTransStepY = (lStoppingTranslation[1] - lStartingTranslation[1])
@@ -1317,19 +1310,37 @@ class MovingEventUpdated(MovingEvent):
 			self.dHPSteps[sHP] = [0, 0, 0]
 			
 			if fDuration > 0:
-				self.dHPSteps[sHP][0] = (self.dStopHardpoints[sHP][0] - self.dStartHardpoints[sHP][0]) / (fDuration * fDurationMul)
-				self.dHPSteps[sHP][1] = (self.dStopHardpoints[sHP][1] - self.dStartHardpoints[sHP][1]) / (fDuration * fDurationMul)
-				self.dHPSteps[sHP][2] = (self.dStopHardpoints[sHP][2] - self.dStartHardpoints[sHP][2]) / (fDuration * fDurationMul)
+				self.dHPSteps[sHP][0] = (self.dStopHardpoints[sHP][0] - self.dStartHardpoints[sHP][0]) / (fDuration * self.fDurationMul)
+				self.dHPSteps[sHP][1] = (self.dStopHardpoints[sHP][1] - self.dStartHardpoints[sHP][1]) / (fDuration * self.fDurationMul)
+				self.dHPSteps[sHP][2] = (self.dStopHardpoints[sHP][2] - self.dStartHardpoints[sHP][2]) / (fDuration * self.fDurationMul)
 			else:
 				self.dHPSteps[sHP][0] = (self.dStopHardpoints[sHP][0] - self.dStartHardpoints[sHP][0])
 				self.dHPSteps[sHP][1] = (self.dStopHardpoints[sHP][1] - self.dStartHardpoints[sHP][1])
 				self.dHPSteps[sHP][2] = (self.dStopHardpoints[sHP][2] - self.dStartHardpoints[sHP][2])
 
-		if self.dOptionsList.has_key("SetScale") and self.dOptionsList["SetScale"] != 0.0:
-			item[0].SetScale(self.dOptionsList["SetScale"])
-		else:
-			iNorm = math.sqrt(self.iCurRotX ** 2 + self.iCurRotY ** 2 + self.iCurRotZ ** 2)
-			item[0].SetScale(-iNorm + 1.85)
+		self.firstTime = 1
+		if self.dOptionsList.has_key("Experimental") and self.dOptionsList["Experimental"] != 0.0:
+			# Since the thing below causes the system to get wonky rotations, I'm gonna do a move called hiding the ship until it's properly moved.
+			item[0].SetHidden(1)
+			"""
+			pNacelle = App.ShipClass_GetObjectByID(None, self.iNacelleID)
+			if pNacelle:
+				# Future TO-DO: CHECK WHY WHEN USED ON CALL, NO ISSUES HAPPEN, BUT WHEN IT'S USED ON HERE OR ATTACHPARTS, ISSUES HAPPEN
+				# set new Rotation values
+				self.iCurRotX = self.iCurRotX + self.iRotStepX
+				self.iCurRotY = self.iCurRotY + self.iRotStepY
+				self.iCurRotZ = self.iCurRotZ + self.iRotStepZ
+
+				# set new Translation values
+				self.iCurTransX = self.iCurTransX + self.iTransStepX
+				self.iCurTransY = self.iCurTransY + self.iTransStepY
+				self.iCurTransZ = self.iCurTransZ + self.iTransStepZ
+				# set Translation
+				pNacelle.SetTranslateXYZ(self.iCurTransX, self.iCurTransY, self.iCurTransZ)
+
+				# set Experimental rotation and re-scaling
+				self.firstTime = performRotationAndScaleAdjust(pShip, pNacelle, self.dOptionsList, self.iCurRotX, self.iCurRotY, self.iCurRotZ, self.iCurRotX, self.iCurRotY, self.iCurRotZ, self.firstTime)
+			"""
 
 		self.wentWrong = 0
 
@@ -1338,7 +1349,6 @@ class MovingEventUpdated(MovingEvent):
 		# if the move ID doesn't match then this move is outdated
 		debug(__name__ + ", __call__")
 		# this makes sure the game does not crash when trying to access a deleted element
-
 
                 pShip = App.ShipClass_GetObjectByID(None, self.iShipID)
                 if not pShip:
@@ -1352,7 +1362,7 @@ class MovingEventUpdated(MovingEvent):
 		if not pNacelle:
 			#print "Moving Error: Lost part"
 			return 0
-
+		
                 if (not self.dOptionsList.has_key("curMovID")) or self.iThisMovID != self.dOptionsList["curMovID"]:
                         print "Moving Error: Move no longer active"
                         return 1
@@ -1362,7 +1372,7 @@ class MovingEventUpdated(MovingEvent):
 		self.iCurRotY = self.iCurRotY + self.iRotStepY
 		self.iCurRotZ = self.iCurRotZ + self.iRotStepZ
 		# set Rotation
-		pNacelle.SetAngleAxisRotation(1.0, self.iCurRotX, self.iCurRotY, self.iCurRotZ)
+		self.firstTime = performRotationAndScaleAdjust(pShip, pNacelle, self.dOptionsList, self.iCurRotX, self.iCurRotY, self.iCurRotZ, self.iRotStepX, self.iRotStepY, self.iRotStepZ, self.firstTime)
 
 		# set new Translation values
 		self.iCurTransX = self.iCurTransX + self.iTransStepX
@@ -1371,12 +1381,7 @@ class MovingEventUpdated(MovingEvent):
 		# set Translation
 		pNacelle.SetTranslateXYZ(self.iCurTransX, self.iCurTransY, self.iCurTransZ)
 
-		if self.dOptionsList.has_key("SetScale") and self.dOptionsList["SetScale"] != 0.0:
-			# TO-DO MAYBE USE THE SAME SYSTEM YOU USED FOR TURRETS?
-			pNacelle.SetScale(self.dOptionsList["SetScale"])
-		else:
-			iNorm = math.sqrt(self.iCurRotX ** 2 + self.iCurRotY ** 2 + self.iCurRotZ ** 2)
-			pNacelle.SetScale(-iNorm + 1.85)
+
 		
 		self.dOptionsList["currentRotation"] = [self.iCurRotX, self.iCurRotY, self.iCurRotZ]
 		self.dOptionsList["currentPosition"] = [self.iCurTransX, self.iCurTransY, self.iCurTransZ]
@@ -1392,28 +1397,126 @@ class MovingEventUpdated(MovingEvent):
 		pNacelle.UpdateNodeOnly()
 		return 0
 
+
+def performRotationAndScaleAdjust(pShip, pNacelle, dOptionsList, iCurRotX, iCurRotY, iCurRotZ, iRotStepX, iRotStepY, iRotStepZ, firstTime, iWait = 2.0): # iWait is to compensate steps
+
+	scaleFactor = 1.0
+	if dOptionsList.has_key("SetScale") and dOptionsList["SetScale"] != 0.0:
+		scaleFactor = dOptionsList["SetScale"]
+
+	if dOptionsList.has_key("Experimental") and dOptionsList["Experimental"] != 0.0:
+
+		# Since we have issues with "pNacelle.SetAngleAxisRotation(1.0, iCurRotX, iCurRotY, iCurRotZ)" only working for one quadrant, and with "pNacelle.SetMatrixRotation(rotationMatrix)" suffering the same problem, we need to find another way.
+		# On this case, "pNacelle.Rotate(rotationMatrix)" is an ideal option, but for that to work we need to perform some calculations.
+		# First, we need to know the rotation per-tick, fortunately we already know, it's the iStepRot!
+		# Alongside knowing this, we can use that to simplify our calculus, just using infinitesimal rotation matrixes, which have several advantages, among them that are mostly commutative with each other.
+		"""
+			    (    1            -iRotStepZ       iRotStepY )
+			A = ( iRotStepZ           1           -iRotStepX )
+			    (-iRotStepY        iRotStepX           1     )
+
+		"""
+		# BUT WAIT, in-game Rotation considers matrixes with global World coordinates, not pShip individual coordinates - we need to transform these parameters to global World ones.
+		# We know that the Y axis angle is iRotStepY... but how is that in global? We need to know the general rotation we are interested in - since these nacelles are attached to the ship, it's the parent's ship rotation!
+
+		parentShipRotation = pShip.GetWorldRotation()
+
+		baseXrotationAngle = App.TGPoint3()
+		baseXrotationAngle.SetXYZ(iRotStepX * iWait, 0.0, 0.0)
+
+		vGlobalDirX = App.TGPoint3()
+		vGlobalDirX.Set(baseXrotationAngle)
+		vGlobalDirX.MultMatrixLeft(parentShipRotation)
+
+		if firstTime > 0:
+			iRotStepX = iCurRotX + iRotStepX
+			iRotStepY = iCurRotY + iRotStepY
+			iRotStepZ = iCurRotZ + iRotStepZ
+
+		baseYrotationAngle = App.TGPoint3()
+		baseYrotationAngle.SetXYZ(0.0, iRotStepY * iWait, 0.0)
+
+		vGlobalDirY = App.TGPoint3()
+		vGlobalDirY.Set(baseYrotationAngle)
+		vGlobalDirY.MultMatrixLeft(parentShipRotation)
+
+		baseZrotationAngle = App.TGPoint3()
+		baseZrotationAngle.SetXYZ(0.0, 0.0, iRotStepZ * iWait)
+
+		vGlobalDirZ = App.TGPoint3()
+		vGlobalDirZ.Set(baseZrotationAngle)
+		vGlobalDirZ.MultMatrixLeft(parentShipRotation)
+
+		vGlobalFinalAngles = App.TGPoint3()
+		vGlobalFinalAngles.SetXYZ(vGlobalDirX.x + vGlobalDirY.x + vGlobalDirZ.x , vGlobalDirX.y + vGlobalDirY.y + vGlobalDirZ.y, vGlobalDirX.z + vGlobalDirY.z + vGlobalDirZ.z)
+
+		firstCol = App.TGPoint3()
+		firstCol.SetXYZ(1.0 , -vGlobalFinalAngles.z, vGlobalFinalAngles.y)
+		secondCol = App.TGPoint3()
+		secondCol.SetXYZ(vGlobalFinalAngles.z , 1.0, -vGlobalFinalAngles.x)
+		thirdCol = App.TGPoint3()
+		thirdCol.SetXYZ(-vGlobalFinalAngles.y , vGlobalFinalAngles.x, 1.0)
+
+		kRot = App.TGMatrix3()
+		kRot.SetCol(0, firstCol)
+		kRot.SetCol(1, secondCol)
+		kRot.SetCol(2, thirdCol)
+
+		pNacelle.Rotate(kRot)
+		pNacelle.SetScale(scaleFactor)
+
+		if firstTime > 0:
+			pNacelle.SetHidden(0)
+
+	else:
+		pNacelle.SetAngleAxisRotation(1.0, iCurRotX, iCurRotY, iCurRotZ)
+		iNorm = math.sqrt(iCurRotX ** 2 + iCurRotY ** 2 + iCurRotZ ** 2)
+		pNacelle.SetScale((-iNorm + 1.85) * scaleFactor)
+
+
+	return 0
+
+
+def MatrixMult(kFwd, kNewUp):
+	debug(__name__ + ", MatrixMult")
+	vAuxVx = kFwd.y * kNewUp.z - kNewUp.y * kFwd.z
+	vAuxVy = kNewUp.x * kFwd.z - kFwd.x * kNewUp.z
+	vAuxVz = kFwd.x * kNewUp.y - kNewUp.x * kFwd.y
+	return vAuxVx, vAuxVy, vAuxVz
+
+def MatrixDet(matrix):
+	debug(__name__ + ", MatrixDet")
+	secondRow = {"x": matrix[3], "y": matrix[4], "z": matrix[5]}
+	ThirdRow = {"x": matrix[3], "y": matrix[4], "z": matrix[5]}
+	vAuxVx, vAuxVy, vAuxVz = MatrixMult(secondRow, ThirdRow)
+	return vAuxVx * matrix[0] + vAuxVy * matrix[1] + vAuxVz * matrix[2]
+
+
 def IncCurrentMoveIDUpdated(pShip, pInstance):
 	debug(__name__ + ", IncCurrentMoveIDUpdated")
-	#TO-DO UPDATE WITH CHECKS LIKE TURRETS?
-	for item in pInstance.OptionsList:
-		if item[0] == "Setup":
-			item[1]["GenMoveID"] = item[1]["GenMoveID"] + 1
+	if hasattr(pInstance, "OptionsList"):
+		for item in pInstance.OptionsList:
+			if item[0] == "Setup":
+				item[1]["GenMoveID"] = item[1]["GenMoveID"] + 1
 
 
 def GetCurrentMoveIDUpdated(pShip, pInstance):
 	debug(__name__ + ", GetCurrentMoveIDUpdated")
 	iGenMoveID = 0
-	
-	for item in pInstance.OptionsList:
-		if item[0] == "Setup":
-			iGenMoveID = item[1]["GenMoveID"]
+	if hasattr(pInstance, "OptionsList"):	
+		for item in pInstance.OptionsList:
+			if item[0] == "Setup":
+				iGenMoveID = item[1]["GenMoveID"]
 	return iGenMoveID
 			
 
 def MoveFinishMatchIDUpdated(pShip, pInstance, iThisMovID):
 	debug(__name__ + ", MoveFinishMatchIDUpdated")
-	if GetCurrentMoveIDUpdated(pShip, pInstance) == iThisMovID:
-		return 1
+	try:
+		if GetCurrentMoveIDUpdated(pShip, pInstance) == iThisMovID:
+			return 1
+	except:
+		return 0
 	return 0
 
 def CloakShip(pNacelleID, decloak=0):
@@ -1727,8 +1830,21 @@ def UpdateStateProto(pAction, pShip, item, lStoppingRotation, lStoppingTranslati
         debug(__name__ + ", UpdateStateProto")
         item[1]["currentRotation"] = lStoppingRotation
         item[1]["currentPosition"] = lStoppingTranslation
+	print "lStoppingRotation", lStoppingRotation, "lStoppingTranslation", lStoppingTranslation
         item[1]["curMovID"] = 0
         return 0
+
+def UpdateHardpointPositionsE(pAction, pShip, dHardpoints, iThisMovID):
+        debug(__name__ + ", UpdateHardpointPositionsE")
+
+	pInstance = findShipInstance(pShip)
+	if not pInstance or not MoveFinishMatchIDUpdated(pShip, pInstance, iThisMovID):
+		return 0
+
+	for sHP in dHardpoints.keys():
+		UpdateHardpointPositionsTo(pShip, sHP, dHardpoints[sHP])
+	return 0
+
 
 # Set the parts to the correct alert state
 def PartsForWeaponProtoState(pShip, techP):	
@@ -1812,7 +1928,7 @@ def PartsForWeaponProtoState(pShip, techP):
 		# do the move
 		while(iTime < fDuration):
 			if iTime == 0.0:
-				iWait = 0.5 # we wait for the first run
+				iWait = 0.1 # we wait for the first run
 			else:
 				iWait = 0.01 # normal step
 			pSeq.AppendAction(App.TGScriptAction_Create(__name__, "MovingActionUpdated", oMovingEventUpdated), iWait)
@@ -1826,9 +1942,11 @@ def PartsForWeaponProtoState(pShip, techP):
 			iLongestTime = iTimeNeededTotal
 		
 	# finally detach
+	thisMoveCurrentID = GetCurrentMoveIDUpdated(pShip, pInstance)
+
 	pSeq = App.TGSequence_Create()
-	pSeq.AppendAction(App.TGScriptAction_Create(__name__, "UpdateHardpointPositions", pShip, dHardpoints), iLongestTime)
-	pSeq.AppendAction(App.TGScriptAction_Create(__name__, "AlertMoveFinishProtoAction", pShip, pInstance, GetCurrentMoveIDUpdated(pShip, pInstance), techP), 2.0)
+	pSeq.AppendAction(App.TGScriptAction_Create(__name__, "UpdateHardpointPositionsE", pShip, dHardpoints, thisMoveCurrentID), iLongestTime)
+	pSeq.AppendAction(App.TGScriptAction_Create(__name__, "AlertMoveFinishProtoAction", pShip, pInstance, thisMoveCurrentID, techP), 2.0)
 	pSeq.Play()
 
 
@@ -1936,7 +2054,7 @@ def StartingWarpCommon(pObject, pEvent, techP, subPosition="Warp"):
 		# do the move
 		while(iTime < fDuration):
 			if iTime == 0.0:
-				iWait = 0.5 # we wait for the first run
+				iWait = 0.1 # we wait for the first run
 			else:
 				iWait = 0.01 # normal step
 			pSeq.AppendAction(App.TGScriptAction_Create(__name__, "MovingActionUpdated", oMovingEventUpdated), iWait)
@@ -1950,9 +2068,11 @@ def StartingWarpCommon(pObject, pEvent, techP, subPosition="Warp"):
 			iLongestTime = iTimeNeededTotal
 		
 	# finally detach
+	thisMoveCurrentID = GetCurrentMoveIDUpdated(pShip, pInstance)
+
 	pSeq = App.TGSequence_Create()
-	pSeq.AppendAction(App.TGScriptAction_Create(__name__, "UpdateHardpointPositions", pShip, dHardpoints), iLongestTime)
-	pSeq.AppendAction(App.TGScriptAction_Create(__name__, "ProtoWarpStartMoveFinishAction", pShip, pInstance, GetCurrentMoveIDUpdated(pShip, pInstance), techP, subPosition), 2.0)
+	pSeq.AppendAction(App.TGScriptAction_Create(__name__, "UpdateHardpointPositionsE", pShip, dHardpoints, thisMoveCurrentID), iLongestTime)
+	pSeq.AppendAction(App.TGScriptAction_Create(__name__, "ProtoWarpStartMoveFinishAction", pShip, pInstance, thisMoveCurrentID, techP, subPosition), 2.0)
 	pSeq.Play()
 
 	return 0
@@ -2015,7 +2135,7 @@ def ExitingProtoWarp(pAction, pShip, techP, subPosition):
 		# do the move
 		while(iTime < fDuration):
 			if iTime == 0.0:
-				iWait = 0.5 # we wait for the first run
+				iWait = 0.1 # we wait for the first run
 			else:
 				iWait = 0.01 # normal step
 			pSeq.AppendAction(App.TGScriptAction_Create(__name__, "MovingActionUpdated", oMovingEventUpdated), iWait)
@@ -2029,9 +2149,10 @@ def ExitingProtoWarp(pAction, pShip, techP, subPosition):
 			iLongestTime = iTimeNeededTotal
 		
 	# finally detach
+	thisMoveCurrentID = GetCurrentMoveIDUpdated(pShip, pInstance)
 	pSeq = App.TGSequence_Create()
-	pSeq.AppendAction(App.TGScriptAction_Create(__name__, "UpdateHardpointPositions", pShip, dHardpoints), iLongestTime)
-	pSeq.AppendAction(App.TGScriptAction_Create(__name__, "ProtoWarpExitMoveFinishAction", pShip, pInstance, GetCurrentMoveIDUpdated(pShip, pInstance), techP, subPosition), 2.0)
+	pSeq.AppendAction(App.TGScriptAction_Create(__name__, "UpdateHardpointPositionsE", pShip, dHardpoints, thisMoveCurrentID), iLongestTime)
+	pSeq.AppendAction(App.TGScriptAction_Create(__name__, "ProtoWarpExitMoveFinishAction", pShip, pInstance, thisMoveCurrentID, techP, subPosition), 2.0)
 	pSeq.Play()
 	
 	return 0

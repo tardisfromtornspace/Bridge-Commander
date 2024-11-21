@@ -62,7 +62,7 @@ Foundation.ShipDef.USSProtostar.dTechs = {
 	"Alternate-Warp-FTL": {
 		"Setup": {
 			"Proto-Warp": {	"Nacelles": ["Proto Warp Nacelle"], "Core": ["Proto-Core"], },
-			"Body": "VasKholhr_Body",
+			"Body": "VasKholhr_WingUp", #"VasKholhr_Body",
 			"NormalModel":          shipFile,
 			"WarpModel":          "VasKholhr_WingUp",
 			"Proto-WarpModel":          "VasKholhr_WingUp",
@@ -87,11 +87,12 @@ Foundation.ShipDef.USSProtostar.dTechs = {
 			},
 		},
 
-		"Port Wing":     ["VasKholhr_Portwing", {
-			"SetScale": 1.85,
+		"Port Wing":     ["Hideki", {
+			"Experimental": 1,
+			"SetScale": 1.0,
 			"Position":             [0, 0, 0],
 			"Rotation":             [0, 0, 0], # normal Rotation used if not Red Alert and if not Warp
-			"AttackRotation":         [0, -15.6, 0],
+			"AttackRotation":         [0, -0.6, 0],
 			"AttackDuration":         200.0, # Value is 1/100 of a second
 			"AttackPosition":         [0, 0, 0.03],
 			#"WarpRotation":       [0, 0.349, 0],
@@ -104,6 +105,7 @@ Foundation.ShipDef.USSProtostar.dTechs = {
 		],
         
 		"Starboard Wing":     ["VasKholhr_Starboardwing", {
+			"Experimental": 0,
 			"Position":             [0, 0, 0],
 			"Rotation":             [0, 0, 0],
 			"AttackRotation":         [0, 0.6, 0],

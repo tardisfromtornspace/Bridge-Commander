@@ -1,4 +1,4 @@
-##### Bridge Commander Exit Log: 20 Nov 2024 01:08:32#####
+##### Bridge Commander Exit Log: 21 Nov 2024 19:12:16#####
 
 Outdated Foundation, updating functions
 Outdated Foundation, installing FolderManager
@@ -38,28 +38,34 @@ Trying to clean memory
 
 
 Setting Stock System Planets Random Density.
-Ship Player with ProtoWarp support added
+Ship Player with Alternative Warp FTL SubModel support added
 DS9FX: Active and Operational...
-
-
-Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 1a9e37f0> ignored
-Ok so at least I received that
-Ok so at least I reached Starting Protowarp
-Ok so at least I reached beyond reach warp common
-
-
-Setting Stock System Planets Random Density.
-Setting Stock System Planets Random Density.
 
 
 
 # DS9FX has...
 
 # taken a console dump
+lStoppingRotation [0, 0, 0] lStoppingTranslation [0, 0, 0.03]
+lStoppingRotation [0, 0.6, 0] lStoppingTranslation [0, 0, 0.03]
+Moving Error: Move no longer active
+Moving Error: Move no longer active
+SequenceAbort Crash avoided; Please fix DeleteQueuedActions
+Moving Error: Move no longer active
+Moving Error: Move no longer active
+Moving Error: Move no longer active
+Moving Error: Move no longer active
+SequenceAbort Crash avoided; Please fix DeleteQueuedActions
+Moving Error: Move no longer active
+Moving Error: Move no longer active
+lStoppingRotation [0, -0.6, 0] lStoppingTranslation [0, 0, 0]
+lStoppingRotation [0, 0, 0] lStoppingTranslation [0, 0, 0]
+Moving Error: Move no longer active
+Moving Error: Move no longer active
 
 
 ##### End Of The Log #####
-##### Bridge Commander Exit Log: 20 Nov 2024 01:08:32#####
+##### Bridge Commander Exit Log: 21 Nov 2024 19:12:16#####
 
 Outdated Foundation, updating functions
 Outdated Foundation, installing FolderManager
@@ -99,1753 +105,28 @@ Trying to clean memory
 
 
 Setting Stock System Planets Random Density.
-Ship Player with ProtoWarp support added
+Ship Player with Alternative Warp FTL SubModel support added
 DS9FX: Active and Operational...
-
-
-Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 1a9e37f0> ignored
-Ok so at least I received that
-Ok so at least I reached Starting Protowarp
-Ok so at least I reached beyond reach warp common
-
-
-Setting Stock System Planets Random Density.
-Setting Stock System Planets Random Density.
 
 
 
 # DS9FX has...
 
 # taken a console dump
-
-# DS9FX has...
-
-# taken a console dump
-
-
-##### End Of The Log #####
-##### Bridge Commander Exit Log: 20 Nov 2024 11:40:00#####
-
-Outdated Foundation, updating functions
-Outdated Foundation, installing FolderManager
-Repairing ship description outputs...
-Foundation Tech loaded
-AlternateSubModelFTL  script is reviewing EnhancedWarp of dir scripts\Custom\TravellingMethods
-File checked
-banana import successfull
-Has attr 2.1
-AlternateSubModelFTL  script is reviewing NormalWarp of dir scripts\Custom\TravellingMethods
-File checked
-banana import successfull
-Has attr 2.1
-AlternateSubModelFTL  script is reviewing ProtoWarp of dir scripts\Custom\TravellingMethods
-File checked
-banana import successfull
-Has attr 1.1
-{}
-Galaxy Charts v1.5 is online
-Updating your AblativeArmour.py <= 1.0 to regenerate
-Fixing your old DS9FX version
-Updated FoundationTech.ShipInstance Detach-related fixes
-Updating your TractorBeams.py <= 1.0 system mismatch
-Hopping Torp ready
-SG Hopping Torp ready
-Gravity FX has been loaded.
-Tweaking NanoFX v2 explosions (version 20240829)
-Stargate Hyperdrive Drive Initializing...
-Slipstream Drive 20070905 Initializing...
-Fixing\Enhancing USS Sovereign's mods...
-Jumpspace Drive 20070905 Initializing...
-TimeVortex Drive 20070905 Initializing...
-Warpspace Drive 20070905 Initializing...
-DS9FX Initializing...
-Detected new mod, restoring Keyboard Binding..
-DS9FX: Game Crash Fix Active...
-Fixing Jaggies
-
-# DS9FX has...
-
-# taken a console dump
-
-
-##### End Of The Log #####
-##### Bridge Commander Exit Log: 20 Nov 2024 13:03:12#####
-
-Outdated Foundation, updating functions
-Outdated Foundation, installing FolderManager
-Repairing ship description outputs...
-Foundation Tech loaded
-Galaxy Charts v1.5 is online
-Updating your AblativeArmour.py <= 1.0 to regenerate
-Fixing your old DS9FX version
-Updated FoundationTech.ShipInstance Detach-related fixes
-Updating your TractorBeams.py <= 1.0 system mismatch
-AlternateSubModelFTL  script is reviewing EnhancedWarp of dir scripts\Custom\TravellingMethods
-File checked
-banana import successfull
-Has attr 2.1
-AlternateSubModelFTL  script is reviewing NormalWarp of dir scripts\Custom\TravellingMethods
-File checked
-banana import successfull
-Has attr 2.1
-AlternateSubModelFTL  script is reviewing ProtoWarp of dir scripts\Custom\TravellingMethods
-File checked
-banana import successfull
-Has attr 1.1
-Has attr 2.1
-Has attr 1
-8393105 <function StartingFTLAlternateSubModel at e57b1dc>
-Has attr 2
-{8393106: <function ExitSetFTLAlternateSubModel at e57b85c>, 8393105: <function StartingFTLAlternateSubModel at e57b1dc>}
-Hopping Torp ready
-SG Hopping Torp ready
-Gravity FX has been loaded.
-Tweaking NanoFX v2 explosions (version 20240829)
-Stargate Hyperdrive Drive Initializing...
-Slipstream Drive 20070905 Initializing...
-Fixing\Enhancing USS Sovereign's mods...
-Jumpspace Drive 20070905 Initializing...
-TimeVortex Drive 20070905 Initializing...
-Warpspace Drive 20070905 Initializing...
-DS9FX Initializing...
-DS9FX: Game Crash Fix Active...
-Fixing Jaggies
-
-
-added activation event for re-intergration sequence
-Setting Stock System Planets Random Density.
-Hyperdrive: Quick Battle is running... Mod is starting up...
-Slipstream: Quick Battle is running... Mod is starting up...
-Jumpspace: Quick Battle is running... Mod is starting up...
-TimeVortex: Quick Battle is running... Mod is starting up...
-Warpspace: Quick Battle is running... Mod is starting up...
-DS9FX: Active and Operational...
-Trying to clean memory
-
-
-Setting Stock System Planets Random Density.
-Ship Player with ProtoWarp support added
-DS9FX: Active and Operational...
-
-
-Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 1a9a9584> ignored
-Ok so at least I received that
-<C TGEvent instance at _3cd04bf0_p_TGEvent> <C TGObject instance at _95e960_p_TGObject> <C TGEventHandlerObject instance at _9_p_TGEventHandlerObject>
-Traceback (innermost last):
-  File ".\Scripts\Custom\Techs\AlternateSubModelFTL.py", line 932, in StartingWarpCommon
-  File ".\Scripts\App.py", line 10241, in TGObject_GetTGObjectPtr
-AttributeError: __int__
+lStoppingRotation [0, 0, 0] lStoppingTranslation [0, 0, 0.03]
+lStoppingRotation [0, 0.6, 0] lStoppingTranslation [0, 0, 0.03]
 Moving Error: Move no longer active
 Moving Error: Move no longer active
-None <C TGEventHandlerObject instance at _1a380588_p_TGEventHandlerObject>
-Setting Stock System Planets Random Density.
-None <C TGEventHandlerObject instance at _1a380588_p_TGEventHandlerObject>
-Setting Stock System Planets Random Density.
-None <C TGEventHandlerObject instance at _1a380588_p_TGEventHandlerObject>
-
-# DS9FX has...
-
-# taken a console dump
-
-
-##### End Of The Log #####
-##### Bridge Commander Exit Log: 20 Nov 2024 13:03:12#####
-
-Outdated Foundation, updating functions
-Outdated Foundation, installing FolderManager
-Repairing ship description outputs...
-Foundation Tech loaded
-Galaxy Charts v1.5 is online
-Updating your AblativeArmour.py <= 1.0 to regenerate
-Fixing your old DS9FX version
-Updated FoundationTech.ShipInstance Detach-related fixes
-Updating your TractorBeams.py <= 1.0 system mismatch
-AlternateSubModelFTL  script is reviewing EnhancedWarp of dir scripts\Custom\TravellingMethods
-File checked
-banana import successfull
-Has attr 2.1
-AlternateSubModelFTL  script is reviewing NormalWarp of dir scripts\Custom\TravellingMethods
-File checked
-banana import successfull
-Has attr 2.1
-AlternateSubModelFTL  script is reviewing ProtoWarp of dir scripts\Custom\TravellingMethods
-File checked
-banana import successfull
-Has attr 1.1
-Has attr 2.1
-Has attr 1
-8393105 <function StartingFTLAlternateSubModel at e57b1dc>
-Has attr 2
-{8393106: <function ExitSetFTLAlternateSubModel at e57b85c>, 8393105: <function StartingFTLAlternateSubModel at e57b1dc>}
-Hopping Torp ready
-SG Hopping Torp ready
-Gravity FX has been loaded.
-Tweaking NanoFX v2 explosions (version 20240829)
-Stargate Hyperdrive Drive Initializing...
-Slipstream Drive 20070905 Initializing...
-Fixing\Enhancing USS Sovereign's mods...
-Jumpspace Drive 20070905 Initializing...
-TimeVortex Drive 20070905 Initializing...
-Warpspace Drive 20070905 Initializing...
-DS9FX Initializing...
-DS9FX: Game Crash Fix Active...
-Fixing Jaggies
-
-
-added activation event for re-intergration sequence
-Setting Stock System Planets Random Density.
-Hyperdrive: Quick Battle is running... Mod is starting up...
-Slipstream: Quick Battle is running... Mod is starting up...
-Jumpspace: Quick Battle is running... Mod is starting up...
-TimeVortex: Quick Battle is running... Mod is starting up...
-Warpspace: Quick Battle is running... Mod is starting up...
-DS9FX: Active and Operational...
-Trying to clean memory
-
-
-Setting Stock System Planets Random Density.
-Ship Player with ProtoWarp support added
-DS9FX: Active and Operational...
-
-
-Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 1a9a9584> ignored
-Ok so at least I received that
-<C TGEvent instance at _3cd04bf0_p_TGEvent> <C TGObject instance at _95e960_p_TGObject> <C TGEventHandlerObject instance at _9_p_TGEventHandlerObject>
-Traceback (innermost last):
-  File ".\Scripts\Custom\Techs\AlternateSubModelFTL.py", line 932, in StartingWarpCommon
-  File ".\Scripts\App.py", line 10241, in TGObject_GetTGObjectPtr
-AttributeError: __int__
+SequenceAbort Crash avoided; Please fix DeleteQueuedActions
 Moving Error: Move no longer active
 Moving Error: Move no longer active
-None <C TGEventHandlerObject instance at _1a380588_p_TGEventHandlerObject>
-Setting Stock System Planets Random Density.
-None <C TGEventHandlerObject instance at _1a380588_p_TGEventHandlerObject>
-Setting Stock System Planets Random Density.
-None <C TGEventHandlerObject instance at _1a380588_p_TGEventHandlerObject>
-
-# DS9FX has...
-
-# taken a console dump
-
-# DS9FX has...
-
-# taken a console dump
-
-
-##### End Of The Log #####
-##### Bridge Commander Exit Log: 20 Nov 2024 16:21:36#####
-
-Outdated Foundation, updating functions
-Outdated Foundation, installing FolderManager
-Repairing ship description outputs...
-Foundation Tech loaded
-Galaxy Charts v1.5 is online
-Updating your AblativeArmour.py <= 1.0 to regenerate
-Fixing your old DS9FX version
-Updated FoundationTech.ShipInstance Detach-related fixes
-Updating your TractorBeams.py <= 1.0 system mismatch
-AlternateSubModelFTL  script is reviewing EnhancedWarp of dir scripts\Custom\TravellingMethods
-File checked
-banana import successfull
-Has attr 2.1
-AlternateSubModelFTL  script is reviewing NormalWarp of dir scripts\Custom\TravellingMethods
-File checked
-banana import successfull
-Has attr 2.1
-AlternateSubModelFTL  script is reviewing ProtoWarp of dir scripts\Custom\TravellingMethods
-File checked
-banana import successfull
-Has attr 1.1
-Has attr 2.1
-Has attr 1
-8393105 <function StartingFTLAlternateSubModel at e70438c>
-Has attr 2
-{8393106: <function ExitSetFTLAlternateSubModel at e704a0c>, 8393105: <function StartingFTLAlternateSubModel at e70438c>}
-Hopping Torp ready
-SG Hopping Torp ready
-Gravity FX has been loaded.
-Tweaking NanoFX v2 explosions (version 20240829)
-Stargate Hyperdrive Drive Initializing...
-Slipstream Drive 20070905 Initializing...
-Fixing\Enhancing USS Sovereign's mods...
-Jumpspace Drive 20070905 Initializing...
-TimeVortex Drive 20070905 Initializing...
-Warpspace Drive 20070905 Initializing...
-DS9FX Initializing...
-DS9FX: Game Crash Fix Active...
-Fixing Jaggies
-
-
-added activation event for re-intergration sequence
-Setting Stock System Planets Random Density.
-Hyperdrive: Quick Battle is running... Mod is starting up...
-Slipstream: Quick Battle is running... Mod is starting up...
-Jumpspace: Quick Battle is running... Mod is starting up...
-TimeVortex: Quick Battle is running... Mod is starting up...
-Warpspace: Quick Battle is running... Mod is starting up...
-DS9FX: Active and Operational...
-Trying to clean memory
-
-
-
-
-Setting Stock System Planets Random Density.
-Ship Player with ProtoWarp support added
-DS9FX: Active and Operational...
-
-
-Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 1aa346d0> ignored
-Setting Stock System Planets Random Density.
-Setting Stock System Planets Random Density.
-
-
-Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 1aa3075c> ignored
-Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 1aa34cdc> ignored
-Event called
-Event is not None
-eType is  8393105
-pEvent has Destination
-pEvent Destination seems like a ship
-Yeah it is a ship
-And the ship still exists, calling function:
-<C TGEvent instance at _23f07250_p_TGEvent> None <C TGEventHandlerObject instance at _1a1752c0_p_TGEventHandlerObject>
-Setting Stock System Planets Random Density.
-Setting Stock System Planets Random Density.
-Event called
-Event is not None
-eType is  8393106
-pEvent has Destination
-pEvent Destination seems like a ship
-Yeah it is a ship
-And the ship still exists, calling function:
-None <C TGEventHandlerObject instance at _1a1752c0_p_TGEventHandlerObject>
-
-# DS9FX has...
-
-# taken a console dump
-
-
-##### End Of The Log #####
-##### Bridge Commander Exit Log: 20 Nov 2024 16:21:36#####
-
-Outdated Foundation, updating functions
-Outdated Foundation, installing FolderManager
-Repairing ship description outputs...
-Foundation Tech loaded
-Galaxy Charts v1.5 is online
-Updating your AblativeArmour.py <= 1.0 to regenerate
-Fixing your old DS9FX version
-Updated FoundationTech.ShipInstance Detach-related fixes
-Updating your TractorBeams.py <= 1.0 system mismatch
-AlternateSubModelFTL  script is reviewing EnhancedWarp of dir scripts\Custom\TravellingMethods
-File checked
-banana import successfull
-Has attr 2.1
-AlternateSubModelFTL  script is reviewing NormalWarp of dir scripts\Custom\TravellingMethods
-File checked
-banana import successfull
-Has attr 2.1
-AlternateSubModelFTL  script is reviewing ProtoWarp of dir scripts\Custom\TravellingMethods
-File checked
-banana import successfull
-Has attr 1.1
-Has attr 2.1
-Has attr 1
-8393105 <function StartingFTLAlternateSubModel at e70438c>
-Has attr 2
-{8393106: <function ExitSetFTLAlternateSubModel at e704a0c>, 8393105: <function StartingFTLAlternateSubModel at e70438c>}
-Hopping Torp ready
-SG Hopping Torp ready
-Gravity FX has been loaded.
-Tweaking NanoFX v2 explosions (version 20240829)
-Stargate Hyperdrive Drive Initializing...
-Slipstream Drive 20070905 Initializing...
-Fixing\Enhancing USS Sovereign's mods...
-Jumpspace Drive 20070905 Initializing...
-TimeVortex Drive 20070905 Initializing...
-Warpspace Drive 20070905 Initializing...
-DS9FX Initializing...
-DS9FX: Game Crash Fix Active...
-Fixing Jaggies
-
-
-added activation event for re-intergration sequence
-Setting Stock System Planets Random Density.
-Hyperdrive: Quick Battle is running... Mod is starting up...
-Slipstream: Quick Battle is running... Mod is starting up...
-Jumpspace: Quick Battle is running... Mod is starting up...
-TimeVortex: Quick Battle is running... Mod is starting up...
-Warpspace: Quick Battle is running... Mod is starting up...
-DS9FX: Active and Operational...
-Trying to clean memory
-
-
-
-
-Setting Stock System Planets Random Density.
-Ship Player with ProtoWarp support added
-DS9FX: Active and Operational...
-
-
-Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 1aa346d0> ignored
-Setting Stock System Planets Random Density.
-Setting Stock System Planets Random Density.
-
-
-Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 1aa3075c> ignored
-Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 1aa34cdc> ignored
-Event called
-Event is not None
-eType is  8393105
-pEvent has Destination
-pEvent Destination seems like a ship
-Yeah it is a ship
-And the ship still exists, calling function:
-<C TGEvent instance at _23f07250_p_TGEvent> None <C TGEventHandlerObject instance at _1a1752c0_p_TGEventHandlerObject>
-Setting Stock System Planets Random Density.
-Setting Stock System Planets Random Density.
-Event called
-Event is not None
-eType is  8393106
-pEvent has Destination
-pEvent Destination seems like a ship
-Yeah it is a ship
-And the ship still exists, calling function:
-None <C TGEventHandlerObject instance at _1a1752c0_p_TGEventHandlerObject>
-
-# DS9FX has...
-
-# taken a console dump
-
-# DS9FX has...
-
-# taken a console dump
-
-
-##### End Of The Log #####
-##### Bridge Commander Exit Log: 20 Nov 2024 20:29:04#####
-
-Outdated Foundation, updating functions
-Outdated Foundation, installing FolderManager
-Repairing ship description outputs...
-Foundation Tech loaded
-Galaxy Charts v1.5 is online
-Updating your AblativeArmour.py <= 1.0 to regenerate
-Fixing your old DS9FX version
-Updated FoundationTech.ShipInstance Detach-related fixes
-Updating your TractorBeams.py <= 1.0 system mismatch
-8393105 <function StartingFTLAlternateSubModel at e672d64>
-Hopping Torp ready
-SG Hopping Torp ready
-Gravity FX has been loaded.
-Tweaking NanoFX v2 explosions (version 20240829)
-Stargate Hyperdrive Drive Initializing...
-Slipstream Drive 20070905 Initializing...
-Fixing\Enhancing USS Sovereign's mods...
-Jumpspace Drive 20070905 Initializing...
-TimeVortex Drive 20070905 Initializing...
-Warpspace Drive 20070905 Initializing...
-DS9FX Initializing...
-DS9FX: Game Crash Fix Active...
-Fixing Jaggies
-
-# DS9FX has...
-
-# taken a console dump
-
-
-##### End Of The Log #####
-##### Bridge Commander Exit Log: 20 Nov 2024 22:30:40#####
-
-Outdated Foundation, updating functions
-Outdated Foundation, installing FolderManager
-Repairing ship description outputs...
-Foundation Tech loaded
-Galaxy Charts v1.5 is online
-Updating your AblativeArmour.py <= 1.0 to regenerate
-Fixing your old DS9FX version
-Updated FoundationTech.ShipInstance Detach-related fixes
-Updating your TractorBeams.py <= 1.0 system mismatch
-8393105 <function StartingFTLAlternateSubModel at e607de4>
-Hopping Torp ready
-SG Hopping Torp ready
-Gravity FX has been loaded.
-Tweaking NanoFX v2 explosions (version 20240829)
-Stargate Hyperdrive Drive Initializing...
-Slipstream Drive 20070905 Initializing...
-Fixing\Enhancing USS Sovereign's mods...
-Jumpspace Drive 20070905 Initializing...
-TimeVortex Drive 20070905 Initializing...
-Warpspace Drive 20070905 Initializing...
-DS9FX Initializing...
-DS9FX: Game Crash Fix Active...
-Fixing Jaggies
-
-
-added activation event for re-intergration sequence
-Setting Stock System Planets Random Density.
-Hyperdrive: Quick Battle is running... Mod is starting up...
-Slipstream: Quick Battle is running... Mod is starting up...
-Jumpspace: Quick Battle is running... Mod is starting up...
-TimeVortex: Quick Battle is running... Mod is starting up...
-Warpspace: Quick Battle is running... Mod is starting up...
-DS9FX: Active and Operational...
-Trying to clean memory
-Setting Stock System Planets Random Density.
-Ship Player with ProtoWarp support added
-DS9FX: Active and Operational...
-
-
 Moving Error: Move no longer active
 Moving Error: Move no longer active
+SequenceAbort Crash avoided; Please fix DeleteQueuedActions
 Moving Error: Move no longer active
 Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-
-
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-
-
-
-# DS9FX has...
-
-# taken a console dump
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-
-
-##### End Of The Log #####
-##### Bridge Commander Exit Log: 20 Nov 2024 22:30:40#####
-
-Outdated Foundation, updating functions
-Outdated Foundation, installing FolderManager
-Repairing ship description outputs...
-Foundation Tech loaded
-Galaxy Charts v1.5 is online
-Updating your AblativeArmour.py <= 1.0 to regenerate
-Fixing your old DS9FX version
-Updated FoundationTech.ShipInstance Detach-related fixes
-Updating your TractorBeams.py <= 1.0 system mismatch
-8393105 <function StartingFTLAlternateSubModel at e607de4>
-Hopping Torp ready
-SG Hopping Torp ready
-Gravity FX has been loaded.
-Tweaking NanoFX v2 explosions (version 20240829)
-Stargate Hyperdrive Drive Initializing...
-Slipstream Drive 20070905 Initializing...
-Fixing\Enhancing USS Sovereign's mods...
-Jumpspace Drive 20070905 Initializing...
-TimeVortex Drive 20070905 Initializing...
-Warpspace Drive 20070905 Initializing...
-DS9FX Initializing...
-DS9FX: Game Crash Fix Active...
-Fixing Jaggies
-
-
-added activation event for re-intergration sequence
-Setting Stock System Planets Random Density.
-Hyperdrive: Quick Battle is running... Mod is starting up...
-Slipstream: Quick Battle is running... Mod is starting up...
-Jumpspace: Quick Battle is running... Mod is starting up...
-TimeVortex: Quick Battle is running... Mod is starting up...
-Warpspace: Quick Battle is running... Mod is starting up...
-DS9FX: Active and Operational...
-Trying to clean memory
-Setting Stock System Planets Random Density.
-Ship Player with ProtoWarp support added
-DS9FX: Active and Operational...
-
-
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-
-
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-
-
-
-# DS9FX has...
-
-# taken a console dump
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
-Moving Error: Move no longer active
+lStoppingRotation [0, -0.6, 0] lStoppingTranslation [0, 0, 0]
+lStoppingRotation [0, 0, 0] lStoppingTranslation [0, 0, 0]
 Moving Error: Move no longer active
 Moving Error: Move no longer active
 
@@ -1855,7 +136,7 @@ Moving Error: Move no longer active
 
 
 ##### End Of The Log #####
-##### Bridge Commander Exit Log: 21 Nov 2024 01:42:40#####
+##### Bridge Commander Exit Log: 21 Nov 2024 19:20:48#####
 
 Outdated Foundation, updating functions
 Outdated Foundation, installing FolderManager
@@ -1895,38 +176,684 @@ Trying to clean memory
 
 
 Setting Stock System Planets Random Density.
-Ship Player with ProtoWarp support added
+Ship Player with Alternative Warp FTL SubModel support added
+Ship USS Protostar-1 with Alternative Warp FTL SubModel support added
 DS9FX: Active and Operational...
 
 
 
 
+lStoppingRotation [0, -0.6, 0] lStoppingTranslation [0, 0, 0.03]
+lStoppingRotation [0, 0.6, 0] lStoppingTranslation [0, 0, 0.03]
+Moving Error: Move no longer active
+Moving Error: Move no longer active
+
+# DS9FX has...
+
+# taken a console dump
+Moving Error: Move no longer active
+Moving Error: Move no longer active
+Moving Error: Move no longer active
+Moving Error: Move no longer active
+lStoppingRotation [0, 0, 0] lStoppingTranslation [0, 0, 0]
+lStoppingRotation [0, 0, 0] lStoppingTranslation [0, 0, 0]
+SequenceAbort Crash avoided; Please fix DeleteQueuedActions
+Moving Error: Move no longer active
+Moving Error: Move no longer active
+lStoppingRotation [0, 0, 0] lStoppingTranslation [0, 0, 0]
+lStoppingRotation [0, 0, 0] lStoppingTranslation [0, 0, 0]
+SequenceAbort Crash avoided; Please fix DeleteQueuedActions
+Moving Error: Move no longer active
+Moving Error: Move no longer active
+lStoppingRotation [0, 0, 0] lStoppingTranslation [0, 0, 0]
+lStoppingRotation [0, 0, 0] lStoppingTranslation [0, 0, 0]
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 21 Nov 2024 19:20:48#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+Fixing your old DS9FX version
+Updated FoundationTech.ShipInstance Detach-related fixes
+Updating your TractorBeams.py <= 1.0 system mismatch
+Hopping Torp ready
+SG Hopping Torp ready
+Gravity FX has been loaded.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+Jumpspace Drive 20070905 Initializing...
+TimeVortex Drive 20070905 Initializing...
+Warpspace Drive 20070905 Initializing...
+DS9FX Initializing...
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+Jumpspace: Quick Battle is running... Mod is starting up...
+TimeVortex: Quick Battle is running... Mod is starting up...
+Warpspace: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+
+
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Ship USS Protostar-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+
+
+lStoppingRotation [0, -0.6, 0] lStoppingTranslation [0, 0, 0.03]
+lStoppingRotation [0, 0.6, 0] lStoppingTranslation [0, 0, 0.03]
+Moving Error: Move no longer active
+Moving Error: Move no longer active
+
+# DS9FX has...
+
+# taken a console dump
+Moving Error: Move no longer active
+Moving Error: Move no longer active
+Moving Error: Move no longer active
+Moving Error: Move no longer active
+lStoppingRotation [0, 0, 0] lStoppingTranslation [0, 0, 0]
+lStoppingRotation [0, 0, 0] lStoppingTranslation [0, 0, 0]
+SequenceAbort Crash avoided; Please fix DeleteQueuedActions
+Moving Error: Move no longer active
+Moving Error: Move no longer active
+lStoppingRotation [0, 0, 0] lStoppingTranslation [0, 0, 0]
+lStoppingRotation [0, 0, 0] lStoppingTranslation [0, 0, 0]
+SequenceAbort Crash avoided; Please fix DeleteQueuedActions
+Moving Error: Move no longer active
+Moving Error: Move no longer active
+lStoppingRotation [0, 0, 0] lStoppingTranslation [0, 0, 0]
+lStoppingRotation [0, 0, 0] lStoppingTranslation [0, 0, 0]
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 21 Nov 2024 19:29:20#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+Fixing your old DS9FX version
+Updated FoundationTech.ShipInstance Detach-related fixes
+Updating your TractorBeams.py <= 1.0 system mismatch
+Hopping Torp ready
+SG Hopping Torp ready
+Gravity FX has been loaded.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+Jumpspace Drive 20070905 Initializing...
+TimeVortex Drive 20070905 Initializing...
+Warpspace Drive 20070905 Initializing...
+DS9FX Initializing...
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+Jumpspace: Quick Battle is running... Mod is starting up...
+TimeVortex: Quick Battle is running... Mod is starting up...
+Warpspace: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+
+
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+SequenceAbort Crash avoided; Please fix DeleteQueuedActions
+Moving Error: Move no longer active
+Moving Error: Move no longer active
 Moving Error: Move no longer active
 Moving Error: Move no longer active
 
 
+lStoppingRotation [0, -0.6, 0] lStoppingTranslation [0, 0, 0.03]
+lStoppingRotation [0, 0.6, 0] lStoppingTranslation [0, 0, 0.03]
 
 
 
 
+lStoppingRotation [0, 0, 0] lStoppingTranslation [0, 0, 0]
+lStoppingRotation [0, 0, 0] lStoppingTranslation [0, 0, 0]
+Moving Error: Move no longer active
+Moving Error: Move no longer active
+
+# DS9FX has...
+
+# taken a console dump
+Moving Error: Move no longer active
+Moving Error: Move no longer active
+SequenceAbort Crash avoided; Please fix DeleteQueuedActions
+Moving Error: Move no longer active
+Moving Error: Move no longer active
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 21 Nov 2024 19:29:20#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+Fixing your old DS9FX version
+Updated FoundationTech.ShipInstance Detach-related fixes
+Updating your TractorBeams.py <= 1.0 system mismatch
+Hopping Torp ready
+SG Hopping Torp ready
+Gravity FX has been loaded.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+Jumpspace Drive 20070905 Initializing...
+TimeVortex Drive 20070905 Initializing...
+Warpspace Drive 20070905 Initializing...
+DS9FX Initializing...
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+Jumpspace: Quick Battle is running... Mod is starting up...
+TimeVortex: Quick Battle is running... Mod is starting up...
+Warpspace: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
 
 
 
 
-Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 3af9d908> ignored
-Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 13252848> ignored
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+SequenceAbort Crash avoided; Please fix DeleteQueuedActions
+Moving Error: Move no longer active
+Moving Error: Move no longer active
+Moving Error: Move no longer active
+Moving Error: Move no longer active
+
+
+lStoppingRotation [0, -0.6, 0] lStoppingTranslation [0, 0, 0.03]
+lStoppingRotation [0, 0.6, 0] lStoppingTranslation [0, 0, 0.03]
+
+
+
+
+lStoppingRotation [0, 0, 0] lStoppingTranslation [0, 0, 0]
+lStoppingRotation [0, 0, 0] lStoppingTranslation [0, 0, 0]
+Moving Error: Move no longer active
+Moving Error: Move no longer active
+
+# DS9FX has...
+
+# taken a console dump
+Moving Error: Move no longer active
+Moving Error: Move no longer active
+SequenceAbort Crash avoided; Please fix DeleteQueuedActions
+Moving Error: Move no longer active
+Moving Error: Move no longer active
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 21 Nov 2024 19:33:36#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+Fixing your old DS9FX version
+Updated FoundationTech.ShipInstance Detach-related fixes
+Updating your TractorBeams.py <= 1.0 system mismatch
+Hopping Torp ready
+SG Hopping Torp ready
+Gravity FX has been loaded.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+Jumpspace Drive 20070905 Initializing...
+TimeVortex Drive 20070905 Initializing...
+Warpspace Drive 20070905 Initializing...
+DS9FX Initializing...
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+Jumpspace: Quick Battle is running... Mod is starting up...
+TimeVortex: Quick Battle is running... Mod is starting up...
+Warpspace: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+
+
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Moving Error: Move no longer active
+Moving Error: Move no longer active
+
+# DS9FX has...
+
+# taken a console dump
+Moving Error: Move no longer active
+Moving Error: Move no longer active
+lStoppingRotation [0, -0.6, 0] lStoppingTranslation [0, 0, 0.03]
+lStoppingRotation [0, 0.6, 0] lStoppingTranslation [0, 0, 0.03]
+lStoppingRotation [0, 0, 0] lStoppingTranslation [0, 0, 0]
+lStoppingRotation [0, 0, 0] lStoppingTranslation [0, 0, 0]
+lStoppingRotation [0, -0.6, 0] lStoppingTranslation [0, 0, 0.03]
+lStoppingRotation [0, 0.6, 0] lStoppingTranslation [0, 0, 0.03]
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 21 Nov 2024 19:33:36#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+Fixing your old DS9FX version
+Updated FoundationTech.ShipInstance Detach-related fixes
+Updating your TractorBeams.py <= 1.0 system mismatch
+Hopping Torp ready
+SG Hopping Torp ready
+Gravity FX has been loaded.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+Jumpspace Drive 20070905 Initializing...
+TimeVortex Drive 20070905 Initializing...
+Warpspace Drive 20070905 Initializing...
+DS9FX Initializing...
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+Jumpspace: Quick Battle is running... Mod is starting up...
+TimeVortex: Quick Battle is running... Mod is starting up...
+Warpspace: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+
+
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Moving Error: Move no longer active
+Moving Error: Move no longer active
+
+# DS9FX has...
+
+# taken a console dump
+Moving Error: Move no longer active
+Moving Error: Move no longer active
+lStoppingRotation [0, -0.6, 0] lStoppingTranslation [0, 0, 0.03]
+lStoppingRotation [0, 0.6, 0] lStoppingTranslation [0, 0, 0.03]
+lStoppingRotation [0, 0, 0] lStoppingTranslation [0, 0, 0]
+lStoppingRotation [0, 0, 0] lStoppingTranslation [0, 0, 0]
+lStoppingRotation [0, -0.6, 0] lStoppingTranslation [0, 0, 0.03]
+lStoppingRotation [0, 0.6, 0] lStoppingTranslation [0, 0, 0.03]
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 21 Nov 2024 19:40:00#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+Fixing your old DS9FX version
+Updated FoundationTech.ShipInstance Detach-related fixes
+Updating your TractorBeams.py <= 1.0 system mismatch
+Hopping Torp ready
+SG Hopping Torp ready
+Gravity FX has been loaded.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+Jumpspace Drive 20070905 Initializing...
+TimeVortex Drive 20070905 Initializing...
+Warpspace Drive 20070905 Initializing...
+DS9FX Initializing...
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+Jumpspace: Quick Battle is running... Mod is starting up...
+TimeVortex: Quick Battle is running... Mod is starting up...
+Warpspace: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+
+# DS9FX has...
+
+# taken a console dump
+Moving Error: Move no longer active
+Moving Error: Move no longer active
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 21 Nov 2024 19:40:00#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+Fixing your old DS9FX version
+Updated FoundationTech.ShipInstance Detach-related fixes
+Updating your TractorBeams.py <= 1.0 system mismatch
+Hopping Torp ready
+SG Hopping Torp ready
+Gravity FX has been loaded.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+Jumpspace Drive 20070905 Initializing...
+TimeVortex Drive 20070905 Initializing...
+Warpspace Drive 20070905 Initializing...
+DS9FX Initializing...
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+Jumpspace: Quick Battle is running... Mod is starting up...
+TimeVortex: Quick Battle is running... Mod is starting up...
+Warpspace: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+
+# DS9FX has...
+
+# taken a console dump
+Moving Error: Move no longer active
+Moving Error: Move no longer active
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 21 Nov 2024 19:42:08#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+Fixing your old DS9FX version
+Updated FoundationTech.ShipInstance Detach-related fixes
+Updating your TractorBeams.py <= 1.0 system mismatch
+Hopping Torp ready
+SG Hopping Torp ready
+Gravity FX has been loaded.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+Jumpspace Drive 20070905 Initializing...
+TimeVortex Drive 20070905 Initializing...
+Warpspace Drive 20070905 Initializing...
+DS9FX Initializing...
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+Jumpspace: Quick Battle is running... Mod is starting up...
+TimeVortex: Quick Battle is running... Mod is starting up...
+Warpspace: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+\
+  File "<string>", line 1
+    \
+    ^
+SyntaxError: invalid token
+
+
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+Moving Error: Move no longer active
+Moving Error: Move no longer active
+Moving Error: Move no longer active
+Moving Error: Move no longer active
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 21 Nov 2024 19:42:08#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+Fixing your old DS9FX version
+Updated FoundationTech.ShipInstance Detach-related fixes
+Updating your TractorBeams.py <= 1.0 system mismatch
+Hopping Torp ready
+SG Hopping Torp ready
+Gravity FX has been loaded.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+Jumpspace Drive 20070905 Initializing...
+TimeVortex Drive 20070905 Initializing...
+Warpspace Drive 20070905 Initializing...
+DS9FX Initializing...
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+Jumpspace: Quick Battle is running... Mod is starting up...
+TimeVortex: Quick Battle is running... Mod is starting up...
+Warpspace: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+\
+  File "<string>", line 1
+    \
+    ^
+SyntaxError: invalid token
+
+
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+Moving Error: Move no longer active
+Moving Error: Move no longer active
+Moving Error: Move no longer active
+Moving Error: Move no longer active
+
+# DS9FX has...
+
+# taken a console dump
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 21 Nov 2024 20:29:04#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+Fixing your old DS9FX version
+Updated FoundationTech.ShipInstance Detach-related fixes
+Updating your TractorBeams.py <= 1.0 system mismatch
+Hopping Torp ready
+SG Hopping Torp ready
+Gravity FX has been loaded.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+Jumpspace Drive 20070905 Initializing...
+TimeVortex Drive 20070905 Initializing...
+Warpspace Drive 20070905 Initializing...
+DS9FX Initializing...
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+Jumpspace: Quick Battle is running... Mod is starting up...
+TimeVortex: Quick Battle is running... Mod is starting up...
+Warpspace: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+
+
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+# DS9FX has...
+
+# taken a console dump
+Shuttle Launching Error: ship 58192_Port Wing has no Shuttle launching points
+SequenceAbort Crash avoided; Please fix DeleteQueuedActions
+Moving Error: Move no longer active
+Moving Error: Move no longer active
+lStoppingRotation [0, 0, 0] lStoppingTranslation [0, 0, 0]
+lStoppingRotation [0, 0, 0] lStoppingTranslation [0, 0, 0]
+lStoppingRotation [0, -0.6, 0] lStoppingTranslation [0, 0, 0.03]
+lStoppingRotation [0, 0.6, 0] lStoppingTranslation [0, 0, 0.03]
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 3d130d34> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 3d12dad0> ignored
 And the ship still exists, calling function:
 Setting Stock System Planets Random Density.
 Setting Stock System Planets Random Density.
 And the ship still exists, calling function:
-
-# DS9FX has...
-
-# taken a console dump
+lStoppingRotation [0, 0.749, 0] lStoppingTranslation [0, 0, 0.12]
+lStoppingRotation [0, -0.749, 0] lStoppingTranslation [0, 0, 0.12]
 
 
 ##### End Of The Log #####
-##### Bridge Commander Exit Log: 21 Nov 2024 01:42:40#####
+##### Bridge Commander Exit Log: 21 Nov 2024 20:29:04#####
 
 Outdated Foundation, updating functions
 Outdated Foundation, installing FolderManager
@@ -1966,7 +893,76 @@ Trying to clean memory
 
 
 Setting Stock System Planets Random Density.
-Ship Player with ProtoWarp support added
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+# DS9FX has...
+
+# taken a console dump
+Shuttle Launching Error: ship 58192_Port Wing has no Shuttle launching points
+SequenceAbort Crash avoided; Please fix DeleteQueuedActions
+Moving Error: Move no longer active
+Moving Error: Move no longer active
+lStoppingRotation [0, 0, 0] lStoppingTranslation [0, 0, 0]
+lStoppingRotation [0, 0, 0] lStoppingTranslation [0, 0, 0]
+lStoppingRotation [0, -0.6, 0] lStoppingTranslation [0, 0, 0.03]
+lStoppingRotation [0, 0.6, 0] lStoppingTranslation [0, 0, 0.03]
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 3d130d34> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 3d12dad0> ignored
+And the ship still exists, calling function:
+Setting Stock System Planets Random Density.
+Setting Stock System Planets Random Density.
+And the ship still exists, calling function:
+lStoppingRotation [0, 0.749, 0] lStoppingTranslation [0, 0, 0.12]
+lStoppingRotation [0, -0.749, 0] lStoppingTranslation [0, 0, 0.12]
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 21 Nov 2024 21:03:12#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+Fixing your old DS9FX version
+Updated FoundationTech.ShipInstance Detach-related fixes
+Updating your TractorBeams.py <= 1.0 system mismatch
+Hopping Torp ready
+SG Hopping Torp ready
+Gravity FX has been loaded.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+Jumpspace Drive 20070905 Initializing...
+TimeVortex Drive 20070905 Initializing...
+Warpspace Drive 20070905 Initializing...
+DS9FX Initializing...
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+Jumpspace: Quick Battle is running... Mod is starting up...
+TimeVortex: Quick Battle is running... Mod is starting up...
+Warpspace: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+
+
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
 DS9FX: Active and Operational...
 
 
@@ -1974,132 +970,37 @@ DS9FX: Active and Operational...
 
 Moving Error: Move no longer active
 Moving Error: Move no longer active
+lStoppingRotation [0, 0, 0] lStoppingTranslation [0, 0, 0]
+lStoppingRotation [0, 0, 0] lStoppingTranslation [0, 0, 0]
 
 
 
 
-
-
-
-
-
-
-Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 3af9d908> ignored
-Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 13252848> ignored
-And the ship still exists, calling function:
+lStoppingRotation [0, -0.6, 0] lStoppingTranslation [0, 0, 0.03]
+lStoppingRotation [0, 0.6, 0] lStoppingTranslation [0, 0, 0.03]
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 1a87e0e4> ignored
 Setting Stock System Planets Random Density.
+
+
 Setting Stock System Planets Random Density.
-And the ship still exists, calling function:
 
 # DS9FX has...
 
 # taken a console dump
-
-# DS9FX has...
-
-# taken a console dump
+lStoppingRotation [0, 0, 0] lStoppingTranslation [0, 0, 0]
+lStoppingRotation [0, 0, 0] lStoppingTranslation [0, 0, 0]
+lStoppingRotation [0, -0.6, 0] lStoppingTranslation [0, 0, 0.03]
+lStoppingRotation [0, 0.6, 0] lStoppingTranslation [0, 0, 0.03]
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 121a6c68> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 3c76e464> ignored
+Setting Stock System Planets Random Density.
+Setting Stock System Planets Random Density.
+lStoppingRotation [0, 0.749, 0] lStoppingTranslation [0, 0, 0.12]
+lStoppingRotation [0, -0.749, 0] lStoppingTranslation [0, 0, 0.12]
 
 
 ##### End Of The Log #####
-##### Bridge Commander Exit Log: 21 Nov 2024 01:57:36#####
-
-Outdated Foundation, updating functions
-Outdated Foundation, installing FolderManager
-Repairing ship description outputs...
-Foundation Tech loaded
-Galaxy Charts v1.5 is online
-Updating your AblativeArmour.py <= 1.0 to regenerate
-Fixing your old DS9FX version
-Updated FoundationTech.ShipInstance Detach-related fixes
-Updating your TractorBeams.py <= 1.0 system mismatch
-Hopping Torp ready
-SG Hopping Torp ready
-Gravity FX has been loaded.
-Tweaking NanoFX v2 explosions (version 20240829)
-Stargate Hyperdrive Drive Initializing...
-Slipstream Drive 20070905 Initializing...
-Fixing\Enhancing USS Sovereign's mods...
-Jumpspace Drive 20070905 Initializing...
-TimeVortex Drive 20070905 Initializing...
-Warpspace Drive 20070905 Initializing...
-DS9FX Initializing...
-DS9FX: Game Crash Fix Active...
-Fixing Jaggies
-
-
-added activation event for re-intergration sequence
-Setting Stock System Planets Random Density.
-Hyperdrive: Quick Battle is running... Mod is starting up...
-Slipstream: Quick Battle is running... Mod is starting up...
-Jumpspace: Quick Battle is running... Mod is starting up...
-TimeVortex: Quick Battle is running... Mod is starting up...
-Warpspace: Quick Battle is running... Mod is starting up...
-DS9FX: Active and Operational...
-Trying to clean memory
-
-
-Setting Stock System Planets Random Density.
-Ship Player with ProtoWarp support added
-DS9FX: Active and Operational...
-
-# DS9FX has...
-
-# taken a console dump
-
-
-##### End Of The Log #####
-##### Bridge Commander Exit Log: 21 Nov 2024 01:57:36#####
-
-Outdated Foundation, updating functions
-Outdated Foundation, installing FolderManager
-Repairing ship description outputs...
-Foundation Tech loaded
-Galaxy Charts v1.5 is online
-Updating your AblativeArmour.py <= 1.0 to regenerate
-Fixing your old DS9FX version
-Updated FoundationTech.ShipInstance Detach-related fixes
-Updating your TractorBeams.py <= 1.0 system mismatch
-Hopping Torp ready
-SG Hopping Torp ready
-Gravity FX has been loaded.
-Tweaking NanoFX v2 explosions (version 20240829)
-Stargate Hyperdrive Drive Initializing...
-Slipstream Drive 20070905 Initializing...
-Fixing\Enhancing USS Sovereign's mods...
-Jumpspace Drive 20070905 Initializing...
-TimeVortex Drive 20070905 Initializing...
-Warpspace Drive 20070905 Initializing...
-DS9FX Initializing...
-DS9FX: Game Crash Fix Active...
-Fixing Jaggies
-
-
-added activation event for re-intergration sequence
-Setting Stock System Planets Random Density.
-Hyperdrive: Quick Battle is running... Mod is starting up...
-Slipstream: Quick Battle is running... Mod is starting up...
-Jumpspace: Quick Battle is running... Mod is starting up...
-TimeVortex: Quick Battle is running... Mod is starting up...
-Warpspace: Quick Battle is running... Mod is starting up...
-DS9FX: Active and Operational...
-Trying to clean memory
-
-
-Setting Stock System Planets Random Density.
-Ship Player with ProtoWarp support added
-DS9FX: Active and Operational...
-
-# DS9FX has...
-
-# taken a console dump
-
-# DS9FX has...
-
-# taken a console dump
-
-
-##### End Of The Log #####
-##### Bridge Commander Exit Log: 21 Nov 2024 01:59:44#####
+##### Bridge Commander Exit Log: 21 Nov 2024 21:03:12#####
 
 Outdated Foundation, updating functions
 Outdated Foundation, installing FolderManager
@@ -2139,8 +1040,41 @@ Trying to clean memory
 
 
 Setting Stock System Planets Random Density.
-Ship Player with ProtoWarp support added
+Ship Player with Alternative Warp FTL SubModel support added
 DS9FX: Active and Operational...
+
+
+
+
+Moving Error: Move no longer active
+Moving Error: Move no longer active
+lStoppingRotation [0, 0, 0] lStoppingTranslation [0, 0, 0]
+lStoppingRotation [0, 0, 0] lStoppingTranslation [0, 0, 0]
+
+
+
+
+lStoppingRotation [0, -0.6, 0] lStoppingTranslation [0, 0, 0.03]
+lStoppingRotation [0, 0.6, 0] lStoppingTranslation [0, 0, 0.03]
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 1a87e0e4> ignored
+Setting Stock System Planets Random Density.
+
+
+Setting Stock System Planets Random Density.
+
+# DS9FX has...
+
+# taken a console dump
+lStoppingRotation [0, 0, 0] lStoppingTranslation [0, 0, 0]
+lStoppingRotation [0, 0, 0] lStoppingTranslation [0, 0, 0]
+lStoppingRotation [0, -0.6, 0] lStoppingTranslation [0, 0, 0.03]
+lStoppingRotation [0, 0.6, 0] lStoppingTranslation [0, 0, 0.03]
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 121a6c68> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 3c76e464> ignored
+Setting Stock System Planets Random Density.
+Setting Stock System Planets Random Density.
+lStoppingRotation [0, 0.749, 0] lStoppingTranslation [0, 0, 0.12]
+lStoppingRotation [0, -0.749, 0] lStoppingTranslation [0, 0, 0.12]
 
 # DS9FX has...
 
@@ -2148,7 +1082,7 @@ DS9FX: Active and Operational...
 
 
 ##### End Of The Log #####
-##### Bridge Commander Exit Log: 21 Nov 2024 01:59:44#####
+##### Bridge Commander Exit Log: 21 Nov 2024 21:13:52#####
 
 Outdated Foundation, updating functions
 Outdated Foundation, installing FolderManager
@@ -2188,12 +1122,81 @@ Trying to clean memory
 
 
 Setting Stock System Planets Random Density.
-Ship Player with ProtoWarp support added
+Ship Player with Alternative Warp FTL SubModel support added
 DS9FX: Active and Operational...
+
+
 
 # DS9FX has...
 
 # taken a console dump
+lStoppingRotation [0, -0.6, 0] lStoppingTranslation [0, 0, 0.03]
+lStoppingRotation [0, 0.6, 0] lStoppingTranslation [0, 0, 0.03]
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 12f7e72c> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 12f8d14c> ignored
+Setting Stock System Planets Random Density.
+Setting Stock System Planets Random Density.
+lStoppingRotation [0, 0.749, 0] lStoppingTranslation [0, 0, 0.12]
+lStoppingRotation [0, -0.749, 0] lStoppingTranslation [0, 0, 0.12]
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 21 Nov 2024 21:13:52#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+Fixing your old DS9FX version
+Updated FoundationTech.ShipInstance Detach-related fixes
+Updating your TractorBeams.py <= 1.0 system mismatch
+Hopping Torp ready
+SG Hopping Torp ready
+Gravity FX has been loaded.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+Jumpspace Drive 20070905 Initializing...
+TimeVortex Drive 20070905 Initializing...
+Warpspace Drive 20070905 Initializing...
+DS9FX Initializing...
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+Jumpspace: Quick Battle is running... Mod is starting up...
+TimeVortex: Quick Battle is running... Mod is starting up...
+Warpspace: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+
+
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+
+# DS9FX has...
+
+# taken a console dump
+lStoppingRotation [0, -0.6, 0] lStoppingTranslation [0, 0, 0.03]
+lStoppingRotation [0, 0.6, 0] lStoppingTranslation [0, 0, 0.03]
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 12f7e72c> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 12f8d14c> ignored
+Setting Stock System Planets Random Density.
+Setting Stock System Planets Random Density.
+lStoppingRotation [0, 0.749, 0] lStoppingTranslation [0, 0, 0.12]
+lStoppingRotation [0, -0.749, 0] lStoppingTranslation [0, 0, 0.12]
 
 # DS9FX has...
 
