@@ -1566,10 +1566,10 @@ def CloakHandler(pObject, pEvent):
 
         # iterate over every Turret
         pCloak = pShip.GetCloakingSubsystem()
-        if pCloak and hasattr(pInstance, "SubModelList"):
+        if pCloak and hasattr(pInstance, "SubModelList"): # Needs to be changed on other things
             shipIsCloaking = pCloak.IsCloaking()
             shipIsDecloaking = pCloak.IsDecloaking()
-            for pSubShip in pInstance.TurretList:
+            for pSubShip in pInstance.SubModelList:
                         pSubShipID = pSubShip.GetObjID()
                         if shipIsCloaking:
                             CloakShip(pSubShipID, 0)
@@ -1595,10 +1595,10 @@ def DecloakHandler(pObject, pEvent):
 
         # iterate over every Turret
         pCloak = pShip.GetCloakingSubsystem()
-        if pCloak and hasattr(pInstance, "SubModelList"):
+        if pCloak and hasattr(pInstance, "SubModelList"): # Needs to be changed on other things
             shipIsCloaking = pCloak.IsCloaking()
             shipIsDecloaking = pCloak.IsDecloaking()
-            for pSubShip in pInstance.TurretList:
+            for pSubShip in pInstance.SubModelList:
                         pSubShipID = pSubShip.GetObjID()
                         if shipIsCloaking:
                             CloakShip(pSubShipID, 0)
