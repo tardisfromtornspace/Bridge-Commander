@@ -1,4 +1,5 @@
 == Changelog ==
+0.4.7 - Defensive Matrix 0.57.
 0.4.8 - Thanks to Greystar, the Defensive Matrix is now translucid.
 0.4.7 - Defensive Matrix 0.56.
 0.4.6 - Defensive Matrix 0.55.

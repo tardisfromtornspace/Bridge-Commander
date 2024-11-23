@@ -49,7 +49,7 @@ import traceback
 
 #################################################################################################################
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.56",
+	    "Version": "0.57",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -278,7 +278,8 @@ class DefensiveMatrix(FoundationTech.TechDef):
 
 		instanceDict = pInstance.__dict__
 
-		pInstance.StarcraftDefensiveMatrixShield = []
+		if not hasattr(pInstance, "StarcraftDefensiveMatrixShield"):
+			pInstance.StarcraftDefensiveMatrixShield = []
 		DMList = pInstance.StarcraftDefensiveMatrixShield
 
 		sNamePrefix = "DM" + str(pShip.GetObjID()) + "_"
@@ -295,7 +296,17 @@ class DefensiveMatrix(FoundationTech.TechDef):
 		pSubShip = MissionLib.GetShip(sShipName)
 
 		if not pSubShip:
-			pSubShip = loadspacehelper.CreateShip(sFile, pSet, sShipName, "")
+			for potpShip in DMList:
+				if potpShip and hasattr(potpShip, "GetObjID"):
+					piMatrix = App.ShipClass_GetObjectByID(None, lList[0].GetObjID())
+					if piMatrix and potpShip.GetName() == sShipName:
+						pSubShip = piMatrix
+			if not pSubShip:
+				pSubShip = loadspacehelper.CreateShip(sFile, pSet, sShipName, "")
+
+		if not pSubShip:
+			print "StarcraftDefensiveMatrix: could not find the model/ship. Skipping visuals..."
+			return
 		DMList.append(pSubShip)
 
 		global defaultMatrixScale

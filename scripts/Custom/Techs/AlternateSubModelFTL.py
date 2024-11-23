@@ -1,7 +1,7 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
 # AlternateSubModelFTL.py
-# 20th September 2024, by Alex SL Gato (CharaToLoki)
+# 22nd September 2024, by Alex SL Gato (CharaToLoki)
 #         Based on Defiant's SubModels script (from which it inherits the classes, so in fact SubModels is a dependency) and BorgAdaptation.py by Alex SL Gato, which were based on the Foundation import function by Dasher
 #         Also based on ATPFunctions by Apollo and slightly on DS9FXPulsarManager by USS Sovereign.
 #################################################################################################################
@@ -30,7 +30,8 @@
 # - "<insert_name_here>" - basically a generalization example for any other TravellingMethod. On this case in particular, <insert_name_here> = "Proto-Warp". Unless told otherwise, this generalization implies you can have as many of that field as you want, as long as <insert_name_here> is different for each one, allowing multiple TravellingMethods subModels support.
 # - "c.s."               - "case-sensitive". That is, it will notice it is different if you type like this, LIKE THIS, LiKe ThIs and so on.
 # - "<s-s>"              - "It uses the name of the ship File located at scripts/ships". Having a dummy ship with the smallest hardpoint possible should be the best. Also if the model is not a 300k vert creation. Please, for the sake of slow computers, try to follow this recommendation.
-# - "<k:v>"              - key - value format. On python, key: value. Unless key or value are variables (or value is not an integer), you need to ensure they are between "" to indicate they are strings. Also it's c.s. "key like this" : "value like that", "unless the value for the key is a number like": 10 
+# - "<k:v>"              - key - value format. On python, key: value. Unless key or value are variables (or value is not an integer), you need to ensure they are between "" to indicate they are strings. Also it's c.s. "key like this" : "value like that", "unless the value for the key is a number like": 10
+# - "~r.c~"              - rapid-change between status or situations, most often before all the pieces have managed to move/rotate fully and the transformation was ongoing f.ex. a ship with normal position and attack position constantly switching from red alert to green alert every second.
 #
 # (#) On the "Setup" section, people will notice:
 # -- (*) A ""Proto-Warp": {"Nacelles": ["Proto Warp Nacelle"], "Core": ["Proto-Core"], }," line, This can vary wildly between TravellingMethods, some may not even require a similar line, so check each one's readme (if they have it) to get more information on its SubTech. However for those modders that use this tech to validate if the ship is equipped or not, please do so somewhere inside the "Setup" field. On this case in particular, this line is simply arbitrarily defined here so the ProtoWarp TravellingMethods script, which uses this tech to verify the ship is equipped with it, can determine the ship has or does not have this tech. 
@@ -63,8 +64,8 @@
 # ----------------------- Rotation value is on [x, y, z] axis of rotation
 # ---------------- (0) "SetScale": indicates the model size of a subpart. Do not include to have same behaviour as SubModels (regular scale but if the part has a too-extreme rotation (like, at least 90 degrees) it will suffer an asintotic process where it suddenly becomes small and then extremely big and inverted). <k:v>
 # ---------------- (0) "Experimental": a dictionary entry which establishes if the ship uses experimental rotation or not. "Experimental": 0 or entry not added implies it uses the legacy submodels style of rotation.
-# ------------------------ Legacy rotations are better for backwards-compatibility and may have less drifting issues, but only work for a particular quadrant of rotation ( -90, 90 ) degrees and are best for ( -45 degrees, 45 degrees) amplitude. They share the same issues SubModels rotations have.
-# ------------------------ Experimental rotations are best suited if the ship requires to rotate more than that quadrant, but may also have their own range of issues.
+# ------------------------ Legacy rotations are better for backwards-compatibility and have little to none drifting issues, but only work for a particular quadrant of rotation ( -90, 90 ) degrees and are best for ( -45 degrees, 45 degrees) amplitude. They share most of the issues SubModels rotations have (including that beyond the optimal movement range the subparts will suffer an unwanted size change, more prominent the more we approach to the quadrant limit), except that they are more optimized and thus will not suffer accidental drifting nor will cause memory issues.
+# ------------------------ Experimental rotations are best suited if the ship requires to rotate beyond the amplitude legacy provides, but are a bit uglier at the start, require to use a tiny bit more of memory and suffer from ~r.c~ rotation drift due to float number innacuracies. Experimental rotation degrees are aproximately 1:1 with legacy rotations of the same quadrant, but some slight differences may arise due to slight implementation differences and the legacy quadrant limit.
 #
 # NOTE: In order to prevent some in-game engine shenanigans, it is recommended that ALL positions for each situation used are different, even if slightly, to prevent some cases of parts just floating if the beginning and end position were the same.
 """
@@ -707,7 +708,7 @@ Foundation.ShipDef.USSProtostar.dTechs = { # (#)
 #################################################################################################################
 #
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.4",
+	    "Version": "0.6",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -924,7 +925,7 @@ class ProtoWarp(SubModels):
 		pShipID = pShip.GetObjID()
 		sNamePrefix = str(pShipID) + "_"
 		pInstanceDict = pInstance.__dict__
-		pInstanceDict["OptionsList"] = [] # save options to this list, so we can access them later
+		pInstanceDict["AlternateFTLSubModelOptionsList"] = [] # save options to this list, so we can access them later
 
 		self.AddbAddedFTLSituationListener()
 
@@ -949,10 +950,10 @@ class ProtoWarp(SubModels):
 				dOptions["AlertLevel"] = 0
 				dOptions["GenMoveID"] = 0
 
-                                for key in dOptions.keys():
-                                    dOptions1[key] = dOptions[key]
+				for key in dOptions.keys():
+					dOptions1[key] = dOptions[key]
 
-				pInstance.OptionsList.append("Setup", dOptions1)
+				pInstance.AlternateFTLSubModelOptionsList.append("Setup", dOptions1)
 				continue # nothing more to do here
 
 			#
@@ -987,7 +988,7 @@ class ProtoWarp(SubModels):
 				dOptions2[key] = dOptions[key]
 
 			dofShip[1] = dOptions2
-			pInstance.OptionsList.append(dofShip)
+			pInstance.AlternateFTLSubModelOptionsList.append(dofShip)
 
 			# event listener
 			AlertListener = self.Add_FTLAndSituationMethods(dOptions, pShip, pInstanceDict, AlertListener)
@@ -1066,8 +1067,8 @@ class ProtoWarp(SubModels):
 			# remove the listeners
 			self.Remove_FTLAndSituationMethods(pShip)
 			
-			if hasattr(pInstance, "OptionsList"):
-				for item in pInstance.OptionsList:
+			if hasattr(pInstance, "AlternateFTLSubModelOptionsList"):
+				for item in pInstance.AlternateFTLSubModelOptionsList:
 					if item[0] == "Setup":
 						if item[1].has_key("AlertLevel"):
 							del item[1]["AlertLevel"]
@@ -1088,8 +1089,8 @@ class ProtoWarp(SubModels):
 				except:
 					pass
 				
-		if hasattr(pInstance, "SubModelList"):
-			for pSubShip in pInstance.SubModelList:
+		if hasattr(pInstance, "SubModelFTLList"):
+			for pSubShip in pInstance.SubModelFTLList:
 				try:
 					pSubShip = App.ShipClass_GetObjectByID(None, pSubShip.GetObjID())
 					if pSubShip:
@@ -1098,26 +1099,37 @@ class ProtoWarp(SubModels):
 						if pSet and pSubName != None:
 							DeleteObjectFromSet(pSet, pSubName)
 				except:
-					print "Error while calling AlternateSubModelFTL DetachShip SubModelList"
+					print "Error while calling AlternateSubModelFTL DetachShip SubModelFTLList"
 					traceback.print_exc()
 
-			del pInstance.SubModelList
+			del pInstance.SubModelFTLList
+
+		if hasattr(pInstance, "SubModelFTLListFirstTime"):
+			del pInstance.SubModelFTLListFirstTime
 
 	# Attaches the SubParts to the Body Model
 	# Detach is inherited from SubModels
 	def AttachParts(self, pShip, pInstance):
 		debug(__name__ + ", AttachParts")
+
 		pSet = pShip.GetContainingSet()
-		pInstance.__dict__["SubModelList"] = []
-		ModelList = pInstance.__dict__[self.MySystemPointer()]
+		if not pSet:
+			print "AlternateSubModelFTL: Sorry, unable to add Attach Parts because there's no Containing Set."
+
+		pInstanceDict = pInstance.__dict__
+		if not pInstanceDict.has_key("SubModelFTLList"):
+			pInstanceDict["SubModelFTLList"] = []
+
+		ModelList = pInstanceDict[self.MySystemPointer()]
 
 		pShipID = pShip.GetObjID()
 		sNamePrefix = str(pShipID) + "_"
-		SubModelList = pInstance.SubModelList
+		SubModelFTLList = pInstance.SubModelFTLList
 
-                pCloak = pShip.GetCloakingSubsystem()
-                shipIsCloaking = 0
-                shipIsDecloaking = 0
+		myFirstTime = not hasattr(pInstance, "SubModelFTLListFirstTime") # Weird fix for parts dropping, interesting
+		pCloak = pShip.GetCloakingSubsystem()
+		shipIsCloaking = 0
+		shipIsDecloaking = 0
 		if pCloak:
 			shipIsCloaking = pCloak.IsCloaking() or pCloak.IsCloaked() 
 			shipIsDecloaking = pCloak.IsDecloaking() or not pCloak.IsCloaked()
@@ -1132,26 +1144,49 @@ class ProtoWarp(SubModels):
 			
 			# check if the ship does exist first, before create it
 			pSubShip = MissionLib.GetShip(sShipName)
-			if not pSubShip:
-				pSubShip = loadspacehelper.CreateShip(sFile, pSet, sShipName, "", 0, 1)
-			SubModelList.append(pSubShip)
+
 
 			# save the options list
 			iSaveDone = 0
 
 			dOptions = {} 
 			# this is here to check if we already have the entry
-			for lList in pInstance.OptionsList:
+			for lList in pInstance.AlternateFTLSubModelOptionsList:
 				if lList[0] != "Setup":
 					proceed = 0
 					if lList[0] == sNameSuffix:
 						proceed = 1
 					else:
 						if (lList[0] != None):
-							if hasattr(lList[0], "GetObjID") and (lList[0].GetName() == pSubShip.GetName()):
+							if hasattr(lList[0], "GetObjID") and (lList[0].GetName() == sShipName):
+								piNacelle = App.ShipClass_GetObjectByID(None, lList[0].GetObjID())
+								if piNacelle:
+									# The non-experimental performs an angleaxis rotation thatdoes not really affect a ship's position nor rotation when attached, it is best to keep it
+									# The experimental suffers from drifts so it is best if we just use a fresh start
+									if not pSubShip:
+										if not (lList[1].has_key("Experimental") and lList[1]["Experimental"] != 0.0):
+											pSubShip = piNacelle
+										else:
+											# FUTURE TO-DO check if you can just perform the same trick as with non-experimental, then re-orient things to fix issues
+											#pSubShip = piNacelle
+											poSubSet = None
+											poSubSet = piNacelle.GetContainingSet()
+											if poSubSet:
+												DeleteObjectFromSet(poSubSet, sShipName)
+											piNacelle.SetDeleteMe(1)
+
 								proceed = 1
 
 					if proceed > 0 and lList[1]["sShipFile"] == sFile:
+						if not pSubShip:
+							pSubShip = None
+							if lList[1].has_key("Experimental") and lList[1]["Experimental"] != 0.0:
+								pSubShip = loadspacehelper.CreateShip(sFile, pSet, sShipName, "", 0, 1)
+							else:
+								pSubShip = loadspacehelper.CreateShip(sFile, pSet, sShipName, "", 0, 1)
+							if not pSubShip:
+								print "AlternateSubModelFTL: Sorry, unable to add ship of sFile = ", sFile, " . It is likely that such file with that exact name does not exist, and that will cause issues."
+
 						lList[0] = pSubShip
 						iSaveDone = 1
 						dOptions = lList[1]
@@ -1161,9 +1196,9 @@ class ProtoWarp(SubModels):
 			#print iSaveDone, dOptions
 			
 			if not iSaveDone:
-				print "AlternateSubModelFTL: rebuilding options"
-     				if len(ModelList[sNameSuffix]) > 1:
-     					dOptionsSingle = ModelList[sNameSuffix][1]
+				print "AlternateSubModelFTL: rebuilding options for ", sNameSuffix, ". This should not happen and it's only here if something went wrong..."
+				if len(ModelList[sNameSuffix]) > 1:
+					dOptionsSingle = ModelList[sNameSuffix][1]
 
 				loadspacehelper.PreloadShip(sFile, 1)
 
@@ -1185,9 +1220,13 @@ class ProtoWarp(SubModels):
 				for key in dOptionsSingle.keys():
 					dOptions2[key] = dOptionsSingle[key]
 
-				pInstance.OptionsList.append([pSubShip, dOptions2])
+				pInstance.AlternateFTLSubModelOptionsList.append([pSubShip, dOptions2])
 				dOptions = dOptions2
 
+			if pSubShip == None:
+				print "AlternateSubModelFTL: Error - missing SubShip during AttachParts "
+				continue
+			SubModelFTLList.append(pSubShip)
 
 			# set current positions
 			pSubShip.SetTranslateXYZ(dOptions["currentPosition"][0],dOptions["currentPosition"][1],dOptions["currentPosition"][2])
@@ -1196,7 +1235,36 @@ class ProtoWarp(SubModels):
 			if dOptions.has_key("SetScale") and dOptions["SetScale"] != 0.0:
 				scaleFactor = dOptions["SetScale"]
 
+			pSubShip.SetUsePhysics(0)
+			pSubShip.SetTargetable(0)
+			mp_send_settargetable(pSubShip.GetObjID(), 0)
+			pSubShip.SetInvincible(1)
+			pSubShip.SetHurtable(0)
+			#pSubShip.GetShipProperty().SetMass(1.0e+25)
+			#pSubShip.GetShipProperty().SetRotationalInertia(1.0e+25)
+			# Experimental-rotation nacelles cannot support the remove-from-set drifting-fix method without causing the main body vessel to beceome extremely dark, so we use the easier-to-implement but slightly less effective method of making that ship Stationary
+			if (dOptions.has_key("Experimental") and dOptions["Experimental"] != 0.0):
+				pSubShip.GetShipProperty().SetStationary(1)
+			pSubShip.SetHailable(0)
+			if pSubShip.GetShields():
+				pSubShip.GetShields().TurnOff()
+	    
+			pShip.EnableCollisionsWith(pSubShip, 0)
+			pSubShip.EnableCollisionsWith(pShip, 0)
+			MultiPlayerEnableCollisionWith(pShip, pSubShip, 0)
+			for pSubShip2 in SubModelFTLList:
+				if pSubShip.GetObjID() != pSubShip2.GetObjID():
+					pSubShip.EnableCollisionsWith(pSubShip2, 0)
+					pSubShip2.EnableCollisionsWith(pSubShip, 0)
+					MultiPlayerEnableCollisionWith(pSubShip, pSubShip2, 0)
+
 			if not (dOptions.has_key("Experimental") and dOptions["Experimental"] != 0.0):
+				if myFirstTime: # If we don't do this the first time, we get inertia issues
+					pMyMiniSet = pSubShip.GetContainingSet()
+					pShip.DetachObject(pSubShip)
+					if pMyMiniSet:
+						DeleteObjectFromSet(pMyMiniSet, pSubShip.GetName())
+					DeleteObjectFromSet(pSet, pSubShip.GetName())
 				pSubShip.SetAngleAxisRotation(1.0, dOptions["currentRotation"][0], dOptions["currentRotation"][1], dOptions["currentRotation"][2])
 				iNorm = math.sqrt(dOptions["currentRotation"][0] ** 2 + dOptions["currentRotation"][1] ** 2 + dOptions["currentRotation"][2] ** 2)
 				pSubShip.SetScale((-iNorm + 1.85) * scaleFactor)
@@ -1205,32 +1273,15 @@ class ProtoWarp(SubModels):
 				pSubShip.SetScale(scaleFactor)
 				pSubShip.SetHidden(1)
 
+			# set current positions
+			pSubShip.SetTranslateXYZ(dOptions["currentPosition"][0],dOptions["currentPosition"][1],dOptions["currentPosition"][2])
+
 			pSubShip.UpdateNodeOnly()
 
-
-			
-			pSubShip.SetUsePhysics(0)
-			pSubShip.SetTargetable(0)
-			mp_send_settargetable(pSubShip.GetObjID(), 0)
-			pSubShip.SetInvincible(1)
-			pSubShip.SetHurtable(0)
-			#pSubShip.GetShipProperty().SetMass(1.0e+25)
-			#pSubShip.GetShipProperty().SetRotationalInertia(1.0e+25)
-			#pSubShip.GetShipProperty().SetStationary(1)
-			pSubShip.SetHailable(0)
-			if pSubShip.GetShields():
-				pSubShip.GetShields().TurnOff()
-	    
-			pShip.EnableCollisionsWith(pSubShip, 0)
-			pSubShip.EnableCollisionsWith(pShip, 0)
-			MultiPlayerEnableCollisionWith(pShip, pSubShip, 0)
-			for pSubShip2 in SubModelList:
-				if pSubShip.GetObjID() != pSubShip2.GetObjID():
-					pSubShip.EnableCollisionsWith(pSubShip2, 0)
-					pSubShip2.EnableCollisionsWith(pSubShip, 0)
-					MultiPlayerEnableCollisionWith(pSubShip, pSubShip2, 0)
-			
 			pShip.AttachObject(pSubShip)
+			pShip.UpdateNodeOnly()
+
+
 
 			if pCloak:
 				pSubShipID = pSubShip.GetObjID()
@@ -1239,44 +1290,65 @@ class ProtoWarp(SubModels):
 				elif shipIsDecloaking:
 					CloakShip(pSubShipID, 1)
 
+		if myFirstTime: # It's a dumb fix, but it works
+			pInstance.SubModelFTLListFirstTime = 1
+
 	# check if parts are attached
 	def ArePartsAttached(self, pShip, pInstance):
 		debug(__name__ + ", ArePartsAttached")
-		if hasattr(pInstance, "SubModelList"):
+		if hasattr(pInstance, "SubModelFTLList"):
 			return 1
 		return 0
 
 	# Detaches the parts
 	def DetachParts(self, pShip, pInstance):
 		debug(__name__ + ", DetachParts")
-		if hasattr(pInstance, "SubModelList"):
-			for pSubShip in pInstance.SubModelList:
+		if hasattr(pInstance, "SubModelFTLList"):
+			for pSubShip in pInstance.SubModelFTLList:
 				pSet = pSubShip.GetContainingSet()
 				pShip.DetachObject(pSubShip)
 				DeleteObjectFromSet(pSet, pSubShip.GetName())
-			del pInstance.SubModelList
+			del pInstance.SubModelFTLList
 
 oProtoWarp = ProtoWarp("Alternate-Warp-FTL")
 
 # The class does the moving of the parts
 # with every move the part continues to move
 class MovingEventUpdated(MovingEvent):
-        # prepare fore move...
-        def __init__(self, pShip, item, fDuration, lStartingRotation, lStoppingRotation, lStartingTranslation, lStoppingTranslation, dHardpoints):
-                debug(__name__ + ", __init__")
+	# prepare fore move...
+	def __init__(self, pShip, item, fDuration, lStartingRotation, lStoppingRotation, lStartingTranslation, lStoppingTranslation, dHardpoints):
+		debug(__name__ + ", __init__")
 
-                self.iNacelleID = item[0].GetObjID()
+		self.iNacelleID = item[0].GetObjID()
 		self.iShipID = pShip.GetObjID()
-                self.iThisMovID = item[1]["curMovID"]
-                self.dOptionsList = item[1]
-                self.pShip = pShip
+		self.iThisMovID = item[1]["curMovID"]
+		self.dAlternateFTLSubModelOptionsList = item[1]
+		self.pShip = pShip
 			
-		self.fDurationMul = 0.94 # make us a little bit faster to avoid bad timing
+		self.fDurationMul = 0.95 # make us a little bit faster to avoid bad timing
 	
-                # rotation values
-                self.iCurRotX = lStartingRotation[0]
-                self.iCurRotY = lStartingRotation[1]
-                self.iCurRotZ = lStartingRotation[2]
+		# rotation values
+
+		self.iSCurRotX = 0.0
+		self.iSCurRotY = 0.0
+		self.iSCurRotZ = 0.0
+
+		if self.dAlternateFTLSubModelOptionsList.has_key("Experimental") and self.dAlternateFTLSubModelOptionsList["Experimental"] != 0.0:
+			# Since the thing below causes the system to get wonky rotations, I'm gonna do a move called hiding the ship until it's properly moved.
+			if not self.dAlternateFTLSubModelOptionsList.has_key("SupposedRotation") or self.dAlternateFTLSubModelOptionsList["SupposedRotation"] == None: # REMOVED WHEN PERFORMING THE UPDATESTATEPROTO
+				self.dAlternateFTLSubModelOptionsList["SupposedRotation"] = [None, None, None]
+				self.dAlternateFTLSubModelOptionsList["SupposedRotation"][0] = lStartingRotation[0]
+				self.dAlternateFTLSubModelOptionsList["SupposedRotation"][1] = lStartingRotation[1]
+				self.dAlternateFTLSubModelOptionsList["SupposedRotation"][2] = lStartingRotation[2]
+			else:
+				self.iSCurRotX = -self.dAlternateFTLSubModelOptionsList["SupposedRotation"][0]
+				self.iSCurRotY = -self.dAlternateFTLSubModelOptionsList["SupposedRotation"][1]
+				self.iSCurRotZ = -self.dAlternateFTLSubModelOptionsList["SupposedRotation"][2]
+
+		self.iCurRotX = lStartingRotation[0] + self.iSCurRotX
+		self.iCurRotY = lStartingRotation[1] + self.iSCurRotY
+		self.iCurRotZ = lStartingRotation[2] + self.iSCurRotZ
+
 		if fDuration > 0:
 			self.iRotStepX = (lStoppingRotation[0] - lStartingRotation[0]) / (fDuration * self.fDurationMul)
 			self.iRotStepY = (lStoppingRotation[1] - lStartingRotation[1]) / (fDuration * self.fDurationMul)
@@ -1285,11 +1357,11 @@ class MovingEventUpdated(MovingEvent):
 			self.iRotStepX = (lStoppingRotation[0] - lStartingRotation[0])
 			self.iRotStepY = (lStoppingRotation[1] - lStartingRotation[1])
 			self.iRotStepZ = (lStoppingRotation[2] - lStartingRotation[2])
-                
-                # translation values
-                self.iCurTransX = lStartingTranslation[0]
-                self.iCurTransY = lStartingTranslation[1]
-                self.iCurTransZ = lStartingTranslation[2]
+		
+		# translation values
+		self.iCurTransX = lStartingTranslation[0]
+		self.iCurTransY = lStartingTranslation[1]
+		self.iCurTransZ = lStartingTranslation[2]
 		if fDuration > 0:
 			self.iTransStepX = (lStoppingTranslation[0] - lStartingTranslation[0]) / (fDuration * self.fDurationMul)
 			self.iTransStepY = (lStoppingTranslation[1] - lStartingTranslation[1]) / (fDuration * self.fDurationMul)
@@ -1313,7 +1385,7 @@ class MovingEventUpdated(MovingEvent):
 				TGPoint3 = pPOP.GetPosition()
 				lPos = [TGPoint3.x, TGPoint3.y, TGPoint3.z]
 			else:
-				print "Submodel Error: Unable to find Hardpoint %s" % sHP
+				print "AlternateSubModelFTL Error: Unable to find Hardpoint %s" % sHP
 			if lPos:
 				self.dStartHardpoints[sHP] = lPos
 				self.dCurHPs[sHP] = lPos
@@ -1332,28 +1404,6 @@ class MovingEventUpdated(MovingEvent):
 				self.dHPSteps[sHP][2] = (self.dStopHardpoints[sHP][2] - self.dStartHardpoints[sHP][2])
 
 		self.firstTime = 1
-		if self.dOptionsList.has_key("Experimental") and self.dOptionsList["Experimental"] != 0.0:
-			# Since the thing below causes the system to get wonky rotations, I'm gonna do a move called hiding the ship until it's properly moved.
-			item[0].SetHidden(1)
-			"""
-			pNacelle = App.ShipClass_GetObjectByID(None, self.iNacelleID)
-			if pNacelle:
-				# Future TO-DO: CHECK WHY WHEN USED ON CALL, NO ISSUES HAPPEN, BUT WHEN IT'S USED ON HERE OR ATTACHPARTS, ISSUES HAPPEN
-				# set new Rotation values
-				self.iCurRotX = self.iCurRotX + self.iRotStepX
-				self.iCurRotY = self.iCurRotY + self.iRotStepY
-				self.iCurRotZ = self.iCurRotZ + self.iRotStepZ
-
-				# set new Translation values
-				self.iCurTransX = self.iCurTransX + self.iTransStepX
-				self.iCurTransY = self.iCurTransY + self.iTransStepY
-				self.iCurTransZ = self.iCurTransZ + self.iTransStepZ
-				# set Translation
-				pNacelle.SetTranslateXYZ(self.iCurTransX, self.iCurTransY, self.iCurTransZ)
-
-				# set Experimental rotation and re-scaling
-				self.firstTime = performRotationAndScaleAdjust(pShip, pNacelle, self.dOptionsList, self.iCurRotX, self.iCurRotY, self.iCurRotZ, self.iCurRotX, self.iCurRotY, self.iCurRotZ, self.firstTime)
-			"""
 
 		self.wentWrong = 0
 
@@ -1363,29 +1413,23 @@ class MovingEventUpdated(MovingEvent):
 		debug(__name__ + ", __call__")
 		# this makes sure the game does not crash when trying to access a deleted element
 
-                pShip = App.ShipClass_GetObjectByID(None, self.iShipID)
-                if not pShip:
-                        #print "Moving Error: Lost MAIN part"
-                        return 0
+		pShip = App.ShipClass_GetObjectByID(None, self.iShipID)
+		if not pShip:
+			print "AlternateSubModelFTL Moving Error: Lost MAIN part"
+			return 0
 
-                if not hasattr(self, "iNacelleID"):
-                        return 0
+		if not hasattr(self, "iNacelleID"):
+			print "AlternateSubModelFTL Moving Error: Lost our own iNacelleID"
+			return 0
 
 		pNacelle = App.ShipClass_GetObjectByID(None, self.iNacelleID)
 		if not pNacelle:
-			#print "Moving Error: Lost part"
+			print "AlternateSubModelFTL Moving Error: Lost part"
 			return 0
 		
-                if (not self.dOptionsList.has_key("curMovID")) or self.iThisMovID != self.dOptionsList["curMovID"]:
-                        print "Moving Error: Move no longer active"
-                        return 1
-
-		# set new Rotation values
-		self.iCurRotX = self.iCurRotX + self.iRotStepX
-		self.iCurRotY = self.iCurRotY + self.iRotStepY
-		self.iCurRotZ = self.iCurRotZ + self.iRotStepZ
-		# set Rotation
-		self.firstTime = performRotationAndScaleAdjust(pShip, pNacelle, self.dOptionsList, self.iCurRotX, self.iCurRotY, self.iCurRotZ, self.iRotStepX, self.iRotStepY, self.iRotStepZ, self.firstTime)
+		if (not self.dAlternateFTLSubModelOptionsList.has_key("curMovID")) or self.iThisMovID != self.dAlternateFTLSubModelOptionsList["curMovID"]:
+			print "AlternateSubModelFTL Move no longer active."
+			return 1
 
 		# set new Translation values
 		self.iCurTransX = self.iCurTransX + self.iTransStepX
@@ -1393,11 +1437,33 @@ class MovingEventUpdated(MovingEvent):
 		self.iCurTransZ = self.iCurTransZ + self.iTransStepZ
 		# set Translation
 		pNacelle.SetTranslateXYZ(self.iCurTransX, self.iCurTransY, self.iCurTransZ)
+		pNacelle.UpdateNodeOnly()
 
+		# set new Rotation values
+		self.iCurRotX = self.iCurRotX + self.iRotStepX
+		self.iCurRotY = self.iCurRotY + self.iRotStepY
+		self.iCurRotZ = self.iCurRotZ + self.iRotStepZ
+		# set Rotation
 
-		
-		self.dOptionsList["currentRotation"] = [self.iCurRotX, self.iCurRotY, self.iCurRotZ]
-		self.dOptionsList["currentPosition"] = [self.iCurTransX, self.iCurTransY, self.iCurTransZ]
+		aux = 0
+		if hasattr(self, "firstTime"):
+			aux = self.firstTime
+
+		self.firstTime = performRotationAndScaleAdjust(pShip, pNacelle, self.dAlternateFTLSubModelOptionsList, self.iCurRotX, self.iCurRotY, self.iCurRotZ, self.iRotStepX, self.iRotStepY, self.iRotStepZ, aux)
+
+		pNacelle.UpdateNodeOnly()
+
+		if self.dAlternateFTLSubModelOptionsList.has_key("Experimental") and self.dAlternateFTLSubModelOptionsList["Experimental"] != 0.0:
+			if self.dAlternateFTLSubModelOptionsList.has_key("SupposedRotation") and self.dAlternateFTLSubModelOptionsList["SupposedRotation"] != None: # REMOVED WHEN PERFORMING THE UPDATESTATEPROTO
+				self.iSCurRotX = self.dAlternateFTLSubModelOptionsList["SupposedRotation"][0] = self.iCurRotX
+				self.iSCurRotY = self.dAlternateFTLSubModelOptionsList["SupposedRotation"][1] = self.iCurRotY
+				self.iSCurRotZ = self.dAlternateFTLSubModelOptionsList["SupposedRotation"][2] = self.iCurRotZ
+
+		if self.dAlternateFTLSubModelOptionsList.has_key("currentRotation"):
+			self.dAlternateFTLSubModelOptionsList["currentRotation"] = [self.iCurRotX, self.iCurRotY, self.iCurRotZ]
+
+		if self.dAlternateFTLSubModelOptionsList.has_key("currentPosition"):
+			self.dAlternateFTLSubModelOptionsList["currentPosition"] = [self.iCurTransX, self.iCurTransY, self.iCurTransZ]
 		
 		# Hardpoints
 		if self.dCurHPs != None:
@@ -1409,7 +1475,7 @@ class MovingEventUpdated(MovingEvent):
 		
 		pNacelle.UpdateNodeOnly()
 		return 0
-
+		
 
 def performRotationAndScaleAdjust(pShip, pNacelle, dOptionsList, iCurRotX, iCurRotY, iCurRotZ, iRotStepX, iRotStepY, iRotStepZ, firstTime, iWait = 2.0): # iWait is to compensate steps
 
@@ -1446,39 +1512,46 @@ def performRotationAndScaleAdjust(pShip, pNacelle, dOptionsList, iCurRotX, iCurR
 			iRotStepY = iCurRotY + iRotStepY
 			iRotStepZ = iCurRotZ + iRotStepZ
 
-		baseYrotationAngle = App.TGPoint3()
-		baseYrotationAngle.SetXYZ(0.0, iRotStepY * iWait, 0.0)
+		if iRotStepX != 0.0 or iRotStepY != 0.0 or iRotStepZ != 0.0:
+			vGlobalFinalAngles = App.TGPoint3()
+			baseYrotationAngle = App.TGPoint3()
+			baseYrotationAngle.SetXYZ(0.0, iRotStepY * iWait, 0.0)
 
-		vGlobalDirY = App.TGPoint3()
-		vGlobalDirY.Set(baseYrotationAngle)
-		vGlobalDirY.MultMatrixLeft(parentShipRotation)
+			vGlobalDirY = App.TGPoint3()
+			vGlobalDirY.Set(baseYrotationAngle)
+			vGlobalDirY.MultMatrixLeft(parentShipRotation)
 
-		baseZrotationAngle = App.TGPoint3()
-		baseZrotationAngle.SetXYZ(0.0, 0.0, iRotStepZ * iWait)
+			baseZrotationAngle = App.TGPoint3()
+			baseZrotationAngle.SetXYZ(0.0, 0.0, iRotStepZ * iWait)
 
-		vGlobalDirZ = App.TGPoint3()
-		vGlobalDirZ.Set(baseZrotationAngle)
-		vGlobalDirZ.MultMatrixLeft(parentShipRotation)
+			vGlobalDirZ = App.TGPoint3()
+			vGlobalDirZ.Set(baseZrotationAngle)
+			vGlobalDirZ.MultMatrixLeft(parentShipRotation)
 
-		vGlobalFinalAngles = App.TGPoint3()
-		vGlobalFinalAngles.SetXYZ(vGlobalDirX.x + vGlobalDirY.x + vGlobalDirZ.x , vGlobalDirX.y + vGlobalDirY.y + vGlobalDirZ.y, vGlobalDirX.z + vGlobalDirY.z + vGlobalDirZ.z)
+			vGlobalFinalAngles = App.TGPoint3()
+			vGlobalFinalAngles.SetXYZ(vGlobalDirX.x + vGlobalDirY.x + vGlobalDirZ.x , vGlobalDirX.y + vGlobalDirY.y + vGlobalDirZ.y, vGlobalDirX.z + vGlobalDirY.z + vGlobalDirZ.z)
+			
+			firstCol = App.TGPoint3()
+			firstCol.SetXYZ(1.0 , -vGlobalFinalAngles.z, vGlobalFinalAngles.y)
+			secondCol = App.TGPoint3()
+			secondCol.SetXYZ(vGlobalFinalAngles.z , 1.0, -vGlobalFinalAngles.x)
+			thirdCol = App.TGPoint3()
+			thirdCol.SetXYZ(-vGlobalFinalAngles.y , vGlobalFinalAngles.x, 1.0)
 
-		firstCol = App.TGPoint3()
-		firstCol.SetXYZ(1.0 , -vGlobalFinalAngles.z, vGlobalFinalAngles.y)
-		secondCol = App.TGPoint3()
-		secondCol.SetXYZ(vGlobalFinalAngles.z , 1.0, -vGlobalFinalAngles.x)
-		thirdCol = App.TGPoint3()
-		thirdCol.SetXYZ(-vGlobalFinalAngles.y , vGlobalFinalAngles.x, 1.0)
+			kRot = App.TGMatrix3()
+			kRot.SetCol(0, firstCol)
+			kRot.SetCol(1, secondCol)
+			kRot.SetCol(2, thirdCol)
 
-		kRot = App.TGMatrix3()
-		kRot.SetCol(0, firstCol)
-		kRot.SetCol(1, secondCol)
-		kRot.SetCol(2, thirdCol)
+			pNacelle.Rotate(kRot)
 
-		pNacelle.Rotate(kRot)
+
+		#else:
+		#	print "NO ROTATION YIPEE"
+
 		pNacelle.SetScale(scaleFactor)
 
-		if firstTime > 0:
+		if firstTime != 0:
 			pNacelle.SetHidden(0)
 
 	else:
@@ -1507,8 +1580,8 @@ def MatrixDet(matrix):
 
 def IncCurrentMoveIDUpdated(pShip, pInstance):
 	debug(__name__ + ", IncCurrentMoveIDUpdated")
-	if hasattr(pInstance, "OptionsList"):
-		for item in pInstance.OptionsList:
+	if hasattr(pInstance, "AlternateFTLSubModelOptionsList"):
+		for item in pInstance.AlternateFTLSubModelOptionsList:
 			if item[0] == "Setup":
 				item[1]["GenMoveID"] = item[1]["GenMoveID"] + 1
 
@@ -1516,8 +1589,8 @@ def IncCurrentMoveIDUpdated(pShip, pInstance):
 def GetCurrentMoveIDUpdated(pShip, pInstance):
 	debug(__name__ + ", GetCurrentMoveIDUpdated")
 	iGenMoveID = 0
-	if hasattr(pInstance, "OptionsList"):	
-		for item in pInstance.OptionsList:
+	if hasattr(pInstance, "AlternateFTLSubModelOptionsList"):	
+		for item in pInstance.AlternateFTLSubModelOptionsList:
 			if item[0] == "Setup":
 				iGenMoveID = item[1]["GenMoveID"]
 	return iGenMoveID
@@ -1528,90 +1601,99 @@ def MoveFinishMatchIDUpdated(pShip, pInstance, iThisMovID):
 	try:
 		if GetCurrentMoveIDUpdated(pShip, pInstance) == iThisMovID:
 			return 1
+		else:
+			return 0
 	except:
 		return 0
-	return 0
 
 def CloakShip(pNacelleID, decloak=0):
-    debug(__name__ + ", CloakShip")
-    pNacelle = App.ShipClass_GetObjectByID(None, pNacelleID)
-    if not pNacelle:
-        #print "Moving Error: Lost part"
-        return 0
+	debug(__name__ + ", CloakShip")
+	pNacelle = App.ShipClass_GetObjectByID(None, pNacelleID)
+	if not pNacelle:
+		#print "Moving Error: Lost part"
+		return 0
 
-    pCloak = pNacelle.GetCloakingSubsystem()
-    if pCloak:
-        if decloak == 0:
-            pCloak.StartCloaking()
-        elif decloak == 1:
-            pCloak.InstantDecloak()
-        elif decloak == -1:
-            pCloak.InstantCloak()
+	pCloak = pNacelle.GetCloakingSubsystem()
+	if pCloak:
+		if decloak == 0:
+			pCloak.StartCloaking()
+		elif decloak == 1:
+			pCloak.InstantDecloak()
+		elif decloak == -1:
+			pCloak.InstantCloak()
 
 
 def CloakHandler(pObject, pEvent):
-        debug(__name__ + ", CloakHandler")
-        pInstance = findShipInstance(pObject)
+	debug(__name__ + ", CloakHandler")
+	pInstance = findShipInstance(pObject)
 
-        pShip = App.ShipClass_GetObjectByID(None, pInstance.pShipID)
+	pShip = App.ShipClass_GetObjectByID(None, pInstance.pShipID)
 
-        iType = pShip.GetAlertLevel()
-        iLongestTime = 0.0
-        dHardpoints = {}
-        
-        # check if ship still exits
-        pShip = App.ShipClass_GetObjectByID(None, pShip.GetObjID())
-        if not pShip:
-                return
+	iType = pShip.GetAlertLevel()
+	iLongestTime = 0.0
+	dHardpoints = {}
+	
+	# check if ship still exits
+	pShip = App.ShipClass_GetObjectByID(None, pShip.GetObjID())
+	if not pShip:
+		return
 
-        # iterate over every Turret
-        pCloak = pShip.GetCloakingSubsystem()
-        if pCloak and hasattr(pInstance, "SubModelList"): # Needs to be changed on other things
-            shipIsCloaking = pCloak.IsCloaking()
-            shipIsDecloaking = pCloak.IsDecloaking()
-            for pSubShip in pInstance.SubModelList:
-                        pSubShipID = pSubShip.GetObjID()
-                        if shipIsCloaking:
-                            CloakShip(pSubShipID, 0)
-                        elif shipIsDecloaking:
-                            CloakShip(pSubShipID, 1)
+	# iterate over every Turret
+	pCloak = pShip.GetCloakingSubsystem()
+	if pCloak and hasattr(pInstance, "SubModelFTLList"): # Needs to be changed on other things
+		shipIsCloaking = pCloak.IsCloaking()
+		shipIsDecloaking = pCloak.IsDecloaking()
+		for pSubShip in pInstance.SubModelFTLList:
+			pSubShipID = pSubShip.GetObjID()
+			if shipIsCloaking:
+				CloakShip(pSubShipID, 0)
+			elif shipIsDecloaking:
+				CloakShip(pSubShipID, 1)
 
-        pObject.CallNextHandler(pEvent)
+	pObject.CallNextHandler(pEvent)
 
 def DecloakHandler(pObject, pEvent):
-        debug(__name__ + ", DecloakHandler")
-        pInstance = findShipInstance(pObject)
+	debug(__name__ + ", DecloakHandler")
+	pInstance = findShipInstance(pObject)
 
-        pShip = App.ShipClass_GetObjectByID(None, pInstance.pShipID)
+	pShip = App.ShipClass_GetObjectByID(None, pInstance.pShipID)
 
-        iType = pShip.GetAlertLevel()
-        iLongestTime = 0.0
-        dHardpoints = {}
-        
-        # check if ship still exits
-        pShip = App.ShipClass_GetObjectByID(None, pShip.GetObjID())
-        if not pShip:
-                return
+	iType = pShip.GetAlertLevel()
+	iLongestTime = 0.0
+	dHardpoints = {}
+	
+	# check if ship still exits
+	pShip = App.ShipClass_GetObjectByID(None, pShip.GetObjID())
+	if not pShip:
+		return
 
-        # iterate over every Turret
-        pCloak = pShip.GetCloakingSubsystem()
-        if pCloak and hasattr(pInstance, "SubModelList"): # Needs to be changed on other things
-            shipIsCloaking = pCloak.IsCloaking()
-            shipIsDecloaking = pCloak.IsDecloaking()
-            for pSubShip in pInstance.SubModelList:
-                        pSubShipID = pSubShip.GetObjID()
-                        if shipIsCloaking:
-                            CloakShip(pSubShipID, 0)
-                        elif shipIsDecloaking:
-                            CloakShip(pSubShipID, 1)
+	# iterate over every Turret
+	pCloak = pShip.GetCloakingSubsystem()
+	if pCloak and hasattr(pInstance, "SubModelFTLList"): # Needs to be changed on other things
+		shipIsCloaking = pCloak.IsCloaking()
+		shipIsDecloaking = pCloak.IsDecloaking()
+		for pSubShip in pInstance.SubModelFTLList:
+			pSubShipID = pSubShip.GetObjID()
+			if shipIsCloaking:
+				CloakShip(pSubShipID, 0)
+			elif shipIsDecloaking:
+				CloakShip(pSubShipID, 1)
 
-        pObject.CallNextHandler(pEvent)
+	pObject.CallNextHandler(pEvent)
 
 
 # calls the MovingEventUpdated class and returns its return value
 def MovingActionUpdated(pAction, oMovingEventUpdated):
 	debug(__name__ + ", MovingActionUpdated")
-	return oMovingEventUpdated()
+	value = 0
+	try:
+		oMovingEventUpdated()
+	except:
+		print "AlternateSubModelFTL: Something went wrong with MovingActionUpdated"
+		value = 0
+		traceback.print_exc()
+
+	return value
 
 def AlertProtoStateChanged(pObject, pEvent, techP = oProtoWarp):
 	debug(__name__ + ", AlertProtoStateChanged")
@@ -1686,16 +1768,23 @@ def checkingReCloak(pShip):
 
 # called after the Alert move action
 # Remove the attached parts and use the attack or normal model now
+def JointAlertMoveFinishProtoAction(pAction, pShip, pInstance, dHardpoints, iThisMovID, techType = oProtoWarp):
+	UpdateHardpointPositionsE(pAction, pShip, dHardpoints, iThisMovID)
+	AlertMoveFinishProtoAction(pAction, pShip, pInstance, iThisMovID, techType)
+	return 0
+
+
 def AlertMoveFinishProtoAction(pAction, pShip, pInstance, iThisMovID, techType = oProtoWarp):
 	
 	# Don't switch Models back when the ID does not match
 	debug(__name__ + ", AlertMoveFinishProtoAction")
 	if not MoveFinishMatchIDUpdated(pShip, pInstance, iThisMovID):
+		print "AlternateSubModelFTL: AlertMoveFinishProtoAction: the IDs do not match"
 		return 0
 	try:
 		techType.DetachParts(pShip, pInstance)
 	except:
-		pass
+		traceback.print_exc()
 
 	techName = techType.MySystemPointer()
 	scaleFactor = 1.0
@@ -1769,6 +1858,7 @@ def ProtoWarpStartMoveFinishAction(pAction, pShip, pInstance, iThisMovID, techP=
 	# Don't switch Models back when the ID does not match
 	debug(__name__ + ", ProtoWarpStartMoveFinishAction")
 	if not MoveFinishMatchIDUpdated(pShip, pInstance, iThisMovID):
+		print "AlternateSubModelFTL: ProtoWarpStartMoveFinishAction: the IDs do not match"
 		return 0
 		
 	techP.DetachParts(pShip, pInstance)
@@ -1790,6 +1880,7 @@ def ProtoWarpExitMoveFinishAction(pAction, pShip, pInstance, iThisMovID, techP=o
 	# Don't switch Models back when the ID does not match
 	debug(__name__ + ", ProtoWarpExitMoveFinishAction")
 	if not MoveFinishMatchIDUpdated(pShip, pInstance, iThisMovID):
+		print "AlternateSubModelFTL: ProtoWarpExitMoveFinishAction: the IDs do not match"
 		if move != "Warp":
 			RestoreWarpOverriden(pShip, pInstance)
 		return 0
@@ -1839,15 +1930,31 @@ def RestoreWarpOverriden(pShip, pInstance):
 	return 0
 
 # called after a move, sets the current Rotation/Translation values to the final ones
-def UpdateStateProto(pAction, pShip, item, lStoppingRotation, lStoppingTranslation):
-        debug(__name__ + ", UpdateStateProto")
-        item[1]["currentRotation"] = lStoppingRotation
-        item[1]["currentPosition"] = lStoppingTranslation
-        item[1]["curMovID"] = 0
-        return 0
+def UpdateStateProto(pAction, pShip, item, lStoppingRotation, lStoppingTranslation, iThisMovID):
+	debug(__name__ + ", UpdateStateProto")
+	if item == None or not item or not item[1] or item[1] == None:
+		print "AlternateSubModelFTL: no item return from UpdateStateProto"
+		return 0
+
+	pInstance = findShipInstance(pShip)
+	if not pInstance or not MoveFinishMatchIDUpdated(pShip, pInstance, iThisMovID):
+		print "AlternateSubModelFTL: Called mismatching return from UpdateStateProto"
+		return 0
+
+	if item[1].has_key("currentRotation"):
+		item[1]["currentRotation"] = lStoppingRotation
+	if item[1].has_key("currentPosition"):
+		item[1]["currentPosition"] = lStoppingTranslation
+	if item[1].has_key("curMovID"):
+		item[1]["curMovID"] = 0
+
+	if item[1].has_key("SupposedRotation") and item[1]["SupposedRotation"] != None:
+		item[1]["SupposedRotation"] = None
+
+	return 0
 
 def UpdateHardpointPositionsE(pAction, pShip, dHardpoints, iThisMovID):
-        debug(__name__ + ", UpdateHardpointPositionsE")
+	debug(__name__ + ", UpdateHardpointPositionsE")
 
 	pInstance = findShipInstance(pShip)
 	if not pInstance or not MoveFinishMatchIDUpdated(pShip, pInstance, iThisMovID):
@@ -1868,6 +1975,8 @@ def PartsForWeaponProtoState(pShip, techP):
 	pInstance = findShipInstance(pShip)
 	iType = pShip.GetAlertLevel()
 	iLongestTime = 0.0
+	iGracePeriodTime = 2.0
+
 	dHardpoints = {}
 	
 	# check if ship still exits
@@ -1876,7 +1985,7 @@ def PartsForWeaponProtoState(pShip, techP):
 		return 0
 	
 	# try to get the last alert level
-	for item in pInstance.OptionsList:
+	for item in pInstance.AlternateFTLSubModelOptionsList:
 		if item[0] == "Setup":
 			dGenShipDict = item[1]
 			break
@@ -1887,12 +1996,13 @@ def PartsForWeaponProtoState(pShip, techP):
 	# update alert state
 	dGenShipDict["AlertLevel"] = iType
 	IncCurrentMoveIDUpdated(pShip, pInstance)
-	
+	thisMoveCurrentID = GetCurrentMoveIDUpdated(pShip, pInstance)
+
 	# start with replacing the Models
 	PrepareShipForProtoMove(pShip, pInstance, techP)
 	
 	# iterate over every submodel
-	for item in pInstance.OptionsList:
+	for item in pInstance.AlternateFTLSubModelOptionsList:
 		if item[0] == "Setup":
 			# attack or cruise modus?
 			dHardpoints = {}
@@ -1903,12 +2013,17 @@ def PartsForWeaponProtoState(pShip, techP):
 			
 			# setup is not a submodel
 			continue
+
+		if item[0] == None or not hasattr(item[0], "GetObjID"):
+			print "AlternateSubModelFTL: nacelle ship missing. Aborting for this nacelle..."
+			# The submodel is missing, for example because the ship file is missing.
+			continue
 	
 		# set the id for this move
 		iThisMovID = item[1]["curMovID"] + 1
 		item[1]["curMovID"] = iThisMovID
 	
-		fDuration = 200.0
+		fDuration = 200.0 # In centiseconds (2 seconds)
 		if item[1].has_key("AttackDuration"):
 			fDuration = item[1]["AttackDuration"]
 		    
@@ -1931,34 +2046,42 @@ def PartsForWeaponProtoState(pShip, techP):
 		iTime = 0.0
 		iTimeNeededTotal = 0.0
 		oMovingEventUpdated = MovingEventUpdated(pShip, item, fDuration, lStartingRotation, lStoppingRotation, lStartingTranslation, lStoppingTranslation, dHardpoints)
-		#if not hasattr(oMovingEventUpdated, "wentWrong") or oMovingEventUpdated.wentWrong == 2:
-		#	# Something went wrong, better do not add a sequence for this
-		#	continue
+		if not hasattr(oMovingEventUpdated, "wentWrong") or oMovingEventUpdated.wentWrong != 0:
+			print "AlternateSubModelFTL: oMovingEventUpdated found an issue while initializing - skipping"
+			continue
 
 		pSeq = App.TGSequence_Create()
 		
 		# do the move
-		while(iTime < fDuration):
+		initialWait = 0.1 # In seconds (so 10 centiseconds)
+		while(iTime < (fDuration + initialWait)):
 			if iTime == 0.0:
-				iWait = 0.1 # we wait for the first run
+				iWait = initialWait # we wait for the first run
 			else:
 				iWait = 0.01 # normal step
-			pSeq.AppendAction(App.TGScriptAction_Create(__name__, "MovingActionUpdated", oMovingEventUpdated), iWait)
+			theScriptToPerform = App.TGScriptAction_Create(__name__, "MovingActionUpdated", oMovingEventUpdated)
+			if theScriptToPerform != None:
+				pSeq.AppendAction(theScriptToPerform, iWait)
+			else:
+				print "AlternateSubModelFTL: failed to create script action for PartsForWeaponProtoState ", iTimeNeededTotal, iTime, iWait
 			iTimeNeededTotal = iTimeNeededTotal + iWait
-			iTime = iTime + 1
-		pSeq.AppendAction(App.TGScriptAction_Create(__name__, "UpdateStateProto", pShip, item, lStoppingRotation, lStoppingTranslation))
-		pSeq.Play()
-		
+			iTime = iTime + round(iWait * 100.0) # + 1 seemed like the wrong thing to add
+
+		finalLocalScriptAct = App.TGScriptAction_Create(__name__, "UpdateStateProto", pShip, item, lStoppingRotation, lStoppingTranslation, thisMoveCurrentID)
+		if finalLocalScriptAct:
+			pSeq.AppendAction(finalLocalScriptAct, 0.01)
+			pSeq.Play()
+		else:
+			print "AlternateSubModelFTL: Error while trying to perform final local action"
+
 		# iLongestTime is for the part that needs the longest time...
 		if iTimeNeededTotal > iLongestTime:
-			iLongestTime = iTimeNeededTotal
+			iLongestTime = round(iTimeNeededTotal, 2)
 		
 	# finally detach
-	thisMoveCurrentID = GetCurrentMoveIDUpdated(pShip, pInstance)
 
 	pSeq = App.TGSequence_Create()
-	pSeq.AppendAction(App.TGScriptAction_Create(__name__, "UpdateHardpointPositionsE", pShip, dHardpoints, thisMoveCurrentID), iLongestTime)
-	pSeq.AppendAction(App.TGScriptAction_Create(__name__, "AlertMoveFinishProtoAction", pShip, pInstance, thisMoveCurrentID, techP), 2.0)
+	pSeq.AppendAction(App.TGScriptAction_Create(__name__, "JointAlertMoveFinishProtoAction", pShip, pInstance, dHardpoints, thisMoveCurrentID), iLongestTime + iGracePeriodTime + 0.01)
 	pSeq.Play()
 
 
@@ -2018,7 +2141,10 @@ def StartingWarpCommon(pObject, pEvent, techP, subPosition="Warp"):
 				pInstanceDict["Warp Overriden"] = 1	
 
 	iLongestTime = 0.0
+	iGracePeriodTime = 1.201 #1.11 #2.0
+	iGracePeriodTime2 = 0.0
 	IncCurrentMoveIDUpdated(pShip, pInstance)
+	thisMoveCurrentID = GetCurrentMoveIDUpdated(pShip, pInstance)
 	dHardpoints = {}
 
 	# first replace the Models
@@ -2027,13 +2153,18 @@ def StartingWarpCommon(pObject, pEvent, techP, subPosition="Warp"):
 	subPositionDuration = str(subPosition) + "Duration"
 	subPositionRotation = str(subPosition) + "Rotation"
 	subPositionPosition = str(subPosition) + "Position"
-	for item in pInstance.OptionsList:
+	for item in pInstance.AlternateFTLSubModelOptionsList:
 		# setup is not a submodel
 		if item[0] == "Setup":
 			if item[1].has_key(subPositionHardpoints):
 				dHardpoints = item[1][subPositionHardpoints]
 			continue
-	
+
+		if item[0] == None or not hasattr(item[0], "GetObjID"):
+			print "AlternateSubModelFTL: nacelle ship missing. Aborting for this type..."
+			# The submodel is missing, for example because the ship file is missing.
+			continue
+
 		# set the id for this move
 		iThisMovID = item[1]["curMovID"] + 1
 		item[1]["curMovID"] = iThisMovID
@@ -2058,32 +2189,42 @@ def StartingWarpCommon(pObject, pEvent, techP, subPosition="Warp"):
 		iTime = 0.0
 		iTimeNeededTotal = 0.0
 		oMovingEventUpdated = MovingEventUpdated(pShip, item, fDuration, lStartingRotation, lStoppingRotation, lStartingTranslation, lStoppingTranslation, {})
-		if not hasattr(oMovingEventUpdated, "wentWrong") or oMovingEventUpdated.wentWrong == 2:
-			# Something went wrong, better do not add a sequence for this
+		if not hasattr(oMovingEventUpdated, "wentWrong") or oMovingEventUpdated.wentWrong != 0:
+			print "AlternateSubModelFTL: oMovingEventUpdated found an issue while initializing - skipping"
 			continue
+
 		pSeq = App.TGSequence_Create()
-		
+
+
 		# do the move
-		while(iTime < fDuration):
+		initialWait = 0.1 # In seconds (so 10 centiseconds)
+		while(iTime < (fDuration + initialWait)):
 			if iTime == 0.0:
-				iWait = 0.1 # we wait for the first run
+				iWait = initialWait # we wait for the first run
 			else:
 				iWait = 0.01 # normal step
-			pSeq.AppendAction(App.TGScriptAction_Create(__name__, "MovingActionUpdated", oMovingEventUpdated), iWait)
+			theScriptToPerform = App.TGScriptAction_Create(__name__, "MovingActionUpdated", oMovingEventUpdated)
+			if theScriptToPerform != None:
+				pSeq.AppendAction(theScriptToPerform, iWait)
+			else:
+				print "AlternateSubModelFTL: failed to create script action for PartsForWeaponProtoState ", iTimeNeededTotal, iTime, iWait
 			iTimeNeededTotal = iTimeNeededTotal + iWait
-			iTime = iTime + 1
-		pSeq.AppendAction(App.TGScriptAction_Create(__name__, "UpdateStateProto", pShip, item, lStoppingRotation, lStoppingTranslation))
-		pSeq.Play()
-		
+			iTime = iTime + round(iWait * 100.0) # + 1 seemed like the wrong thing to add
+
+		finalLocalScriptAct = App.TGScriptAction_Create(__name__, "UpdateStateProto", pShip, item, lStoppingRotation, lStoppingTranslation, thisMoveCurrentID)
+		if finalLocalScriptAct:
+			pSeq.AppendAction(finalLocalScriptAct, 0.01)
+			pSeq.Play()
+		else:
+			print "AlternateSubModelFTL: Error while trying to perform final local action"
+
 		# iLongestTime is for the part that needs the longest time...
 		if iTimeNeededTotal > iLongestTime:
-			iLongestTime = iTimeNeededTotal
+			iLongestTime = round(iTimeNeededTotal, 2)
 		
 	# finally detach
-	thisMoveCurrentID = GetCurrentMoveIDUpdated(pShip, pInstance)
-
 	pSeq = App.TGSequence_Create()
-	pSeq.AppendAction(App.TGScriptAction_Create(__name__, "UpdateHardpointPositionsE", pShip, dHardpoints, thisMoveCurrentID), iLongestTime)
+	pSeq.AppendAction(App.TGScriptAction_Create(__name__, "UpdateHardpointPositionsE", pShip, dHardpoints, thisMoveCurrentID), iLongestTime + 0.01)
 	pSeq.AppendAction(App.TGScriptAction_Create(__name__, "ProtoWarpStartMoveFinishAction", pShip, pInstance, thisMoveCurrentID, techP, subPosition), 2.0)
 	pSeq.Play()
 
@@ -2098,20 +2239,28 @@ def ExitingProtoWarp(pAction, pShip, techP, subPosition):
 	
 	pInstance = findShipInstance(pShip)
 	iLongestTime = 0.0
+	iGracePeriodTime = 1.201 #1.11 #2.0
+	iGracePeriodTime2 = 0.0
 	IncCurrentMoveIDUpdated(pShip, pInstance)
+	thisMoveCurrentID = GetCurrentMoveIDUpdated(pShip, pInstance)
 	dHardpoints = {}
 	
 	# first replace the Models
 	PrepareShipForProtoMove(pShip, pInstance, techP)
 	
-	for item in pInstance.OptionsList:
+	for item in pInstance.AlternateFTLSubModelOptionsList:
 		# setup is not a submodel
 		if item[0] == "Setup":
 			dHardpoints = {}
 			if item[1].has_key(str(subPosition) + "Hardpoints"):
 				dHardpoints = item[1][str(subPosition) + "Hardpoints"]
 			continue
-	
+
+		if item[0] == None or not hasattr(item[0], "GetObjID"):
+			print "AlternateSubModelFTL: nacelle ship missing. Aborting for this type..."
+			# The submodel is missing, for example because the ship file is missing.
+			continue
+
 		# set the id for this move
 		iThisMovID = item[1]["curMovID"] + 1
 		item[1]["curMovID"] = iThisMovID
@@ -2139,32 +2288,87 @@ def ExitingProtoWarp(pAction, pShip, techP, subPosition):
 		iTime = 0.0
 		iTimeNeededTotal = 0.0
 		oMovingEventUpdated = MovingEventUpdated(pShip, item, fDuration, lStartingRotation, lStoppingRotation, lStartingTranslation, lStoppingTranslation, dHardpoints)
-		if not hasattr(oMovingEventUpdated, "wentWrong") or oMovingEventUpdated.wentWrong == 2:
-			# Something went wrong, better do not add a sequence for this
+		if not hasattr(oMovingEventUpdated, "wentWrong") or oMovingEventUpdated.wentWrong != 0:
+			print "AlternateSubModelFTL: oMovingEventUpdated found an issue while initializing - skipping"
 			continue
+
 		pSeq = App.TGSequence_Create()
 		
 		# do the move
-		while(iTime < fDuration):
+		initialWait = 0.1 # In seconds (so 10 centiseconds)
+		while(iTime < (fDuration + initialWait)):
 			if iTime == 0.0:
-				iWait = 0.1 # we wait for the first run
+				iWait = initialWait # we wait for the first run
 			else:
 				iWait = 0.01 # normal step
-			pSeq.AppendAction(App.TGScriptAction_Create(__name__, "MovingActionUpdated", oMovingEventUpdated), iWait)
+			theScriptToPerform = App.TGScriptAction_Create(__name__, "MovingActionUpdated", oMovingEventUpdated)
+			if theScriptToPerform != None:
+				pSeq.AppendAction(theScriptToPerform, iWait)
+			else:
+				print "AlternateSubModelFTL: failed to create script action for PartsForWeaponProtoState ", iTimeNeededTotal, iTime, iWait
 			iTimeNeededTotal = iTimeNeededTotal + iWait
-			iTime = iTime + 1
-		pSeq.AppendAction(App.TGScriptAction_Create(__name__, "UpdateStateProto", pShip, item, lStoppingRotation, lStoppingTranslation))
-		pSeq.Play()
-		
+			iTime = iTime + round(iWait * 100.0) # + 1 seemed like the wrong thing to add
+
+		finalLocalScriptAct = App.TGScriptAction_Create(__name__, "UpdateStateProto", pShip, item, lStoppingRotation, lStoppingTranslation, thisMoveCurrentID)
+		if finalLocalScriptAct:
+			pSeq.AppendAction(finalLocalScriptAct, 0.01)
+			pSeq.Play()
+		else:
+			print "AlternateSubModelFTL: Error while trying to perform final local action"
+
 		# iLongestTime is for the part that needs the longest time...
 		if iTimeNeededTotal > iLongestTime:
-			iLongestTime = iTimeNeededTotal
+			iLongestTime = round(iTimeNeededTotal, 2)
 		
 	# finally detach
-	thisMoveCurrentID = GetCurrentMoveIDUpdated(pShip, pInstance)
 	pSeq = App.TGSequence_Create()
-	pSeq.AppendAction(App.TGScriptAction_Create(__name__, "UpdateHardpointPositionsE", pShip, dHardpoints, thisMoveCurrentID), iLongestTime)
+	pSeq.AppendAction(App.TGScriptAction_Create(__name__, "UpdateHardpointPositionsE", pShip, dHardpoints, thisMoveCurrentID), iLongestTime + 0.01)
 	pSeq.AppendAction(App.TGScriptAction_Create(__name__, "ProtoWarpExitMoveFinishAction", pShip, pInstance, thisMoveCurrentID, techP, subPosition), 2.0)
 	pSeq.Play()
 	
 	return 0
+"""
+def DeleteObjectFromSet(pSet, sObjectName):
+	if not MissionLib.GetShip(sObjectName):
+		return
+
+	#pSet.DeleteObjectFromSet(sObjectName)
+	pSet.RemoveObjectFromSet(sObjectName)
+	
+	# send clients to remove this object
+	if App.g_kUtopiaModule.IsMultiplayer():
+		# Now send a message to everybody else that the score was updated.
+		# allocate the message.
+		pMessage = App.TGMessage_Create()
+		pMessage.SetGuaranteed(1)		# Yes, this is a guaranteed packet
+
+		# Setup the stream.
+		kStream = App.TGBufferStream()		# Allocate a local buffer stream.
+		kStream.OpenBuffer(256)				# Open the buffer stream with a 256 byte buffer.
+	
+		# Write relevant data to the stream.
+		# First write message type.
+		kStream.WriteChar(chr(REMOVE_POINTER_FROM_SET))
+
+		# Write the name of killed ship
+		for i in range(len(sObjectName)):
+			kStream.WriteChar(sObjectName[i])
+		# set the last char:
+		kStream.WriteChar('\0')
+
+		# Okay, now set the data from the buffer stream to the message
+		pMessage.SetDataFromStream(kStream)
+
+		# Send the message to everybody but me.  Use the NoMe group, which
+		# is set up by the multiplayer game.
+		pNetwork = App.g_kUtopiaModule.GetNetwork()
+		if not App.IsNull(pNetwork):
+			if App.g_kUtopiaModule.IsHost():
+				pNetwork.SendTGMessageToGroup("NoMe", pMessage)
+			else:
+				pNetwork.SendTGMessage(pNetwork.GetHostID(), pMessage)
+
+		# We're done.  Close the buffer.
+		kStream.CloseBuffer()
+	return 0
+"""
