@@ -1719,13 +1719,33 @@ def AlertProtoStateChangedAction(pAction, pShip, techP = oProtoWarp):
 # cause this is possible also an alert event
 def SubsystemStateProtoChanged(pObject, pEvent, techP = oProtoWarp):
 	debug(__name__ + ", SubsystemStateProtoChanged")
-	pShip = App.ShipClass_Cast(pObject)
+
+	pShip = App.ShipClass_GetObjectByID(None, pObject.GetObjID())
 	pSubsystem = pEvent.GetSource()
 
 	# if the subsystem that changes its power is a weapon
-	if pSubsystem.IsTypeOf(App.CT_WEAPON_SYSTEM):
-		# set wings for this alert state
-		PartsForWeaponProtoState(pShip, techP)
+	if not pSubsystem:
+		pObject.CallNextHandler(pEvent)
+		return 0
+
+	if hasattr(pEvent, "GetBool"):
+		wpnActiveState = pEvent.GetBool()
+
+		if pSubsystem.IsTypeOf(App.CT_WEAPON_SYSTEM):
+			# set turrets for this alert state
+			PartsForWeaponProtoState(pShip, techP)
+		"""
+		else:
+			try:
+				pParent = pSubsystem.GetParentSubsystem()
+				if pParent and (pParent.IsTypeOf(App.CT_WEAPON_SYSTEM) or pParent.IsTypeOf(App.CT_PHASER_SYSTEM) or pSubsystem.IsTypeOf(App.CT_PULSE_WEAPON_SYSTEM) or pSubsystem.IsTypeOf(App.CT_TORPEDO_SYSTEM)):
+					PartsForWeaponProtoState(pShip, techP)
+			except:
+				pass
+		"""
+
+		pObject.CallNextHandler(pEvent)
+		return
 		
 	pObject.CallNextHandler(pEvent)
 	return 0      
