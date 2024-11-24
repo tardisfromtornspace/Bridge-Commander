@@ -14,9 +14,9 @@
 # === INTRODUCTION ===
 # The purpose of this plugin is to provide extended globalized actions for alternate TravellingMethods, providing them with the option to modify the model, like SubModels, but a bit less "broken"; as well as supporting SubModels Warp and Attack support.
 # NOTE: This will not affect pre-existing TravellingMethods, a ship could have those and not use this tech at all.
-# ATTENTION: This script has two classes "ProtoWarp" and "MovingEventUpdated" which inherit from Defiant's SubModels "SubModel" and "MovingEvent" classes, and also uses certain functions from that script - as such, it depends on it and that script being on scripts/Custom/Techs folder.
-# WARNING: Also because they inherit from that class and use the same individual subList parameter, it is NOT RECOMMENDED to call SubModels and this technology on the same ship.
-# ATTENTION: The script is also dependant on scripts/Custom/TravellingMethods and on GalaxyCharts to verify sub-technology and FTL availability. With those options turned off, the usefulness of this script is reduced to a cleaner customizable SubModels.
+# INFO: While originally this script had two classes "ProtoWarp" and "MovingEventUpdated" which inherited from Defiant's SubModels "SubModel" and "MovingEvent" classes, and also used certain functions from that script, current version doesn't, so no issues should arise from combining both on the same ship. However, due to this script being a better replacement, it is suggested to just use AlternateSubmodelFTL instead.
+# ATTENTION: The script is dependant on scripts/Custom/TravellingMethods and on GalaxyCharts to verify sub-technology and FTL availability. With those options turned off, the usefulness of this script is reduced to a cleaner customizable SubModels.
+# ATTENTION: The script is also dependant on ftb.Tech.ATPFunctions
 # === HOW-TO-USE a pre-existing FTL TravellingMethods that supports this tech ===
 # Below there's a sample setup. Those familiarized with SubModels script will notice the script is basically identical, but with a twist, presenting extra elements related with the TravellingMethods files that support this file.
 #
@@ -707,7 +707,7 @@ Foundation.ShipDef.USSProtostar.dTechs = { # (#)
 #################################################################################################################
 #
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.64",
+	    "Version": "0.7",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -723,7 +723,7 @@ import math
 import MissionLib
 import nt
 import string
-from SubModels import *
+#from SubModels import *
 from threading import Semaphore
 import traceback
 
@@ -802,6 +802,193 @@ def ExitSetProto(pObject, pEvent, techType, move):
 	pObject.CallNextHandler(pEvent)
 	return 0
 
+# Replaces the Model of pShip
+def ReplaceModel(pShip, sNewShipScript):
+	debug(__name__ + ", ReplaceModel")
+	
+	pShip = App.ShipClass_GetObjectByID(None, pShip.GetObjID())
+	if not pShip:
+		return
+	
+	ShipScript = __import__('ships.' + sNewShipScript)
+	ShipScript.LoadModel()
+	kStats = ShipScript.GetShipStats()
+	pShip.SetupModel(kStats['Name'])
+	if App.g_kUtopiaModule.IsMultiplayer():
+		MPSentReplaceModelMessage(pShip, sNewShipScript)
+
+def ReplaceModelBlackLightsFix(pShip):
+	# Because hiding and unhiding the ship does not seem to do the job of fixing the weird lack of lights, but something like this dumb thing below does :/
+	from ftb.Tech.ATPFunctions import *
+
+	point = pShip.GetWorldLocation()
+	pHitPoint = App.TGPoint3()
+	pHitPoint.SetXYZ(point.x, point.y, point.z)
+
+	pVec = pShip.GetVelocityTG()
+	pVec.Scale(0.001)
+	pHitPoint.Add(pVec)
+
+	mod = "Tactical.Projectiles.AutomaticSystemRepairDummy" 
+	try:
+		pTempTorp = FireTorpFromPointWithVector(pHitPoint, pVec, mod, pShip.GetObjID(), pShip.GetObjID(), __import__(mod).GetLaunchSpeed())
+		if pTempTorp:
+			pTempTorp.SetHidden(1)
+			pTempTorp.SetLifetime(0.0)
+	except:
+		print "You are missing 'Tactical.Projectiles.AutomaticSystemRepairDummy' torpedo on your install, without that a weird black-texture-until-firing-or-fired bug may happen"
+		traceback.print_exc()
+
+def DeleteObjectFromSet(pSet, sObjectName):
+	if not MissionLib.GetShip(sObjectName):
+		return
+	pSet.DeleteObjectFromSet(sObjectName)
+	
+	# send clients to remove this object
+	if App.g_kUtopiaModule.IsMultiplayer():
+		# Now send a message to everybody else that the score was updated.
+		# allocate the message.
+		pMessage = App.TGMessage_Create()
+		pMessage.SetGuaranteed(1)		# Yes, this is a guaranteed packet
+			
+		# Setup the stream.
+		kStream = App.TGBufferStream()		# Allocate a local buffer stream.
+		kStream.OpenBuffer(256)				# Open the buffer stream with a 256 byte buffer.
+	
+		# Write relevant data to the stream.
+		# First write message type.
+		kStream.WriteChar(chr(REMOVE_POINTER_FROM_SET))
+
+		# Write the name of killed ship
+		for i in range(len(sObjectName)):
+			kStream.WriteChar(sObjectName[i])
+		# set the last char:
+		kStream.WriteChar('\0')
+
+		# Okay, now set the data from the buffer stream to the message
+		pMessage.SetDataFromStream(kStream)
+
+		# Send the message to everybody but me.  Use the NoMe group, which
+		# is set up by the multiplayer game.
+		pNetwork = App.g_kUtopiaModule.GetNetwork()
+		if not App.IsNull(pNetwork):
+			if App.g_kUtopiaModule.IsHost():
+				pNetwork.SendTGMessageToGroup("NoMe", pMessage)
+			else:
+				pNetwork.SendTGMessage(pNetwork.GetHostID(), pMessage)
+
+		# We're done.  Close the buffer.
+		kStream.CloseBuffer()
+	return 0
+
+
+def MultiPlayerEnableCollisionWith(pObject1, pObject2, CollisionOnOff):
+	# Setup the stream.
+	# Allocate a local buffer stream.
+	debug(__name__ + ", MultiPlayerEnableCollisionWith")
+	kStream = App.TGBufferStream()
+	# Open the buffer stream with a 256 byte buffer.
+	kStream.OpenBuffer(256)
+	# Write relevant data to the stream.
+	# First write message type.
+	kStream.WriteChar(chr(NO_COLLISION_MESSAGE))
+	
+	# send Message
+	kStream.WriteInt(pObject1.GetObjID())
+	kStream.WriteInt(pObject2.GetObjID())
+	kStream.WriteInt(CollisionOnOff)
+
+	pMessage = App.TGMessage_Create()
+	# Yes, this is a guaranteed packet
+	pMessage.SetGuaranteed(1)
+	# Okay, now set the data from the buffer stream to the message
+	pMessage.SetDataFromStream(kStream)
+	# Send the message to everybody but me.  Use the NoMe group, which
+	# is set up by the multiplayer game.
+	# TODO: Send it to asking client only
+	pNetwork = App.g_kUtopiaModule.GetNetwork()
+	if not App.IsNull(pNetwork):
+		if App.g_kUtopiaModule.IsHost():
+			pNetwork.SendTGMessageToGroup("NoMe", pMessage)
+		else:
+			pNetwork.SendTGMessage(pNetwork.GetHostID(), pMessage)
+	# We're done.  Close the buffer.
+	kStream.CloseBuffer()
+
+
+def MPSentReplaceModelMessage(pShip, sNewShipScript):
+	# Setup the stream.
+	# Allocate a local buffer stream.
+	debug(__name__ + ", MPSentReplaceModelMessage")
+	kStream = App.TGBufferStream()
+	# Open the buffer stream with a 256 byte buffer.
+	kStream.OpenBuffer(256)
+	# Write relevant data to the stream.
+	# First write message type.
+	kStream.WriteChar(chr(REPLACE_MODEL_MSG))
+
+	try:
+		from Multiplayer.Episode.Mission4.Mission4 import dReplaceModel
+		dReplaceModel[pShip.GetObjID()] = sNewShipScript
+	except ImportError:
+		pass
+
+	# send Message
+	kStream.WriteInt(pShip.GetObjID())
+	iLen = len(sNewShipScript)
+	kStream.WriteShort(iLen)
+	kStream.Write(sNewShipScript, iLen)
+
+	pMessage = App.TGMessage_Create()
+	# Yes, this is a guaranteed packet
+	pMessage.SetGuaranteed(1)
+	# Okay, now set the data from the buffer stream to the message
+	pMessage.SetDataFromStream(kStream)
+	# Send the message to everybody but me.  Use the NoMe group, which
+	# is set up by the multiplayer game.
+	# TODO: Send it to asking client only
+	pNetwork = App.g_kUtopiaModule.GetNetwork()
+	if not App.IsNull(pNetwork):
+		if App.g_kUtopiaModule.IsHost():
+			pNetwork.SendTGMessageToGroup("NoMe", pMessage)
+		else:
+			pNetwork.SendTGMessage(pNetwork.GetHostID(), pMessage)
+	# We're done.  Close the buffer.
+	kStream.CloseBuffer()
+
+
+def mp_send_settargetable(iShipID, iMode):
+	# Setup the stream.
+	# Allocate a local buffer stream.
+	debug(__name__ + ", mp_send_settargetable")
+	kStream = App.TGBufferStream()
+	# Open the buffer stream with a 256 byte buffer.
+	kStream.OpenBuffer(256)
+	# Write relevant data to the stream.
+	# First write message type.
+	kStream.WriteChar(chr(SET_TARGETABLE_MSG))
+
+	# send Message
+	kStream.WriteInt(iShipID)
+	kStream.WriteInt(iMode)
+
+	pMessage = App.TGMessage_Create()
+	# Yes, this is a guaranteed packet
+	pMessage.SetGuaranteed(1)
+	# Okay, now set the data from the buffer stream to the message
+	pMessage.SetDataFromStream(kStream)
+	# Send the message to everybody but me.  Use the NoMe group, which
+	# is set up by the multiplayer game.
+	# TODO: Send it to asking client only
+	pNetwork = App.g_kUtopiaModule.GetNetwork()
+	if not App.IsNull(pNetwork):
+		if App.g_kUtopiaModule.IsHost():
+			pNetwork.SendTGMessageToGroup("NoMe", pMessage)
+		else:
+			pNetwork.SendTGMessage(pNetwork.GetHostID(), pMessage)
+	# We're done.  Close the buffer.
+	kStream.CloseBuffer()
+
 # Based on LoadExtraPlugins by Dasher42, but heavily modified so it only imports a few things
 def LoadExtraLimitedPlugins(dExcludePlugins=_g_dExcludeSomePlugins):
 	import string
@@ -868,7 +1055,8 @@ def LoadExtraLimitedPlugins(dExcludePlugins=_g_dExcludeSomePlugins):
 LoadExtraLimitedPlugins()
 
 # This class controls the attach and detach of the Models
-class ProtoWarp(SubModels):
+#class ProtoWarp(SubModels):
+class ProtoWarp(FoundationTech.TechDef):
 	def __init__(self, name):
 		debug(__name__ + ", Initiated")
 		FoundationTech.TechDef.__init__(self, name)
@@ -968,11 +1156,11 @@ class ProtoWarp(SubModels):
 			# save the shipfile for later use
 			dofShip = [None, None]
 			dofShip[0] = sNameSuffix
-                        
+			
 			# save the shipfile for later use, this would be on "item[1]"
 			dOptions2 = {}
 			dOptions2["sShipFile"] = sFile
-                        
+			
 			# set current rotation/position values
 			if not dOptions.has_key("Position"):
 				dOptions["Position"] = [0, 0, 0]
@@ -1084,12 +1272,16 @@ class ProtoWarp(SubModels):
 						if item[1].has_key("curMovID"):
 							del item[1]["curMovID"]
 
-			pInstanceDict = pInstance.__dict__
-			if pInstanceDict and pInstanceDict.has_key("Warp Overriden"):
+		pInstanceDict = pInstance.__dict__
+		if pInstanceDict:
+			if pInstanceDict.has_key("Warp Overriden"):
 				try:
 					pInstanceDict["Warp Overriden"] = None
 				except:
 					pass
+			
+		if hasattr(pInstance, "HasExperimentalRotationParts"):
+			del pInstance.HasExperimentalRotationParts
 				
 		if hasattr(pInstance, "SubModelFTLList"):
 			for pSubShip in pInstance.SubModelFTLList:
@@ -1136,6 +1328,7 @@ class ProtoWarp(SubModels):
 			shipIsCloaking = pCloak.IsCloaking() or pCloak.IsCloaked() 
 			shipIsDecloaking = pCloak.IsDecloaking() or not pCloak.IsCloaked()
 
+		experimentalParts = 0
 		# iteeeerate over every SubModel
 		for sNameSuffix in ModelList.keys():
 			if sNameSuffix == "Setup":
@@ -1169,7 +1362,9 @@ class ProtoWarp(SubModels):
 										if not (lList[1].has_key("Experimental") and lList[1]["Experimental"] != 0.0):
 											pSubShip = piNacelle
 										else:
+											experimentalParts = experimentalParts + 1
 											# FUTURE TO-DO check if you can just perform the same trick as with non-experimental, then re-orient things to fix issues
+											# Apparently re-using the ship from above may cause a lights-out bug
 											#pSubShip = piNacelle
 											poSubSet = None
 											poSubSet = piNacelle.GetContainingSet()
@@ -1207,7 +1402,7 @@ class ProtoWarp(SubModels):
 				# save the shipfile for later use, this would be on "item[1]"
 				dOptions2 = {}
 				dOptions2["sShipFile"] = sFile
-                        
+			
 				# set current rotation/position values
 				if not dOptionsSingle.has_key("Position"):
 					dOptionsSingle["Position"] = [0, 0, 0]
@@ -1244,9 +1439,10 @@ class ProtoWarp(SubModels):
 			pSubShip.SetHurtable(0)
 			#pSubShip.GetShipProperty().SetMass(1.0e+25)
 			#pSubShip.GetShipProperty().SetRotationalInertia(1.0e+25)
-			# Experimental-rotation nacelles cannot support the remove-from-set drifting-fix method without causing the main body vessel to beceome extremely dark, so we use the easier-to-implement but slightly less effective method of making that ship Stationary
-			if (dOptions.has_key("Experimental") and dOptions["Experimental"] != 0.0):
-				pSubShip.GetShipProperty().SetStationary(1)
+			# Experimental-rotation nacelles cannot support the remove-from-set drifting-fix method without causing the main body vessel to become extremely dark, so we use the easier-to-implement but slightly less effective method of making that ship Stationary
+			pSubShip.GetShipProperty().SetStationary(1)
+			#if (dOptions.has_key("Experimental") and dOptions["Experimental"] != 0.0):
+			#	pSubShip.GetShipProperty().SetStationary(1)
 			pSubShip.SetHailable(0)
 			if pSubShip.GetShields():
 				pSubShip.GetShields().TurnOff()
@@ -1295,6 +1491,7 @@ class ProtoWarp(SubModels):
 
 		if myFirstTime: # It's a dumb fix, but it works
 			pInstance.SubModelFTLListFirstTime = 1
+			pInstance.HasExperimentalRotationParts = experimentalParts
 
 	# check if parts are attached
 	def ArePartsAttached(self, pShip, pInstance):
@@ -1317,7 +1514,8 @@ oProtoWarp = ProtoWarp("Alternate-Warp-FTL")
 
 # The class does the moving of the parts
 # with every move the part continues to move
-class MovingEventUpdated(MovingEvent):
+#class MovingEventUpdated(MovingEvent):
+class MovingEventUpdated:
 	# prepare fore move...
 	def __init__(self, pShip, item, fDuration, lStartingRotation, lStoppingRotation, lStartingTranslation, lStoppingTranslation, dHardpoints):
 		debug(__name__ + ", __init__")
@@ -1745,7 +1943,7 @@ def SubsystemStateProtoChanged(pObject, pEvent, techP = oProtoWarp):
 		return
 		
 	pObject.CallNextHandler(pEvent)
-	return 0      
+	return 0 
 
 # Prepares a ship to move: Replaces the current Model with the move Model and attaches its sub Models
 def PrepareShipForProtoMove(pShip, pInstance, techType=oProtoWarp):
@@ -1753,6 +1951,8 @@ def PrepareShipForProtoMove(pShip, pInstance, techType=oProtoWarp):
 	if not techType.ArePartsAttached(pShip, pInstance):
 		techName = techType.MySystemPointer()
 		ReplaceModel(pShip, pInstance.__dict__[techName]["Setup"]["Body"])
+		if not hasattr(pInstance, "HasExperimentalRotationParts") or pInstance.HasExperimentalRotationParts <= 0:
+			ReplaceModelBlackLightsFix(pShip)
 		techType.AttachParts(pShip, pInstance)
 		scaleFactor = 1.0
 		if pInstance.__dict__[techName]["Setup"].has_key("BodySetScale") and pInstance.__dict__[techName]["Setup"]["BodySetScale"] != 0.0:
@@ -1814,6 +2014,8 @@ def AlertMoveFinishProtoAction(pAction, pShip, pInstance, iThisMovID, techType =
 		if pInstance.__dict__[techName]["Setup"].has_key("NormalSetScale") and pInstance.__dict__[techName]["Setup"]["NormalSetScale"] != 0.0:
 			scaleFactor = pInstance.__dict__[techName]["Setup"]["NormalSetScale"]
 	ReplaceModel(pShip, sNewShipScript)
+	if not hasattr(pInstance, "HasExperimentalRotationParts") or pInstance.HasExperimentalRotationParts <= 0:
+		ReplaceModelBlackLightsFix(pShip)
 	pShip.SetScale(scaleFactor)
 	checkingReCloak(pShip)
 
@@ -1885,6 +2087,8 @@ def ProtoWarpStartMoveFinishAction(pAction, pShip, pInstance, iThisMovID, techP=
 	if pInstance.__dict__[techName]["Setup"].has_key(str(move) + "SetScale") and pInstance.__dict__[techName]["Setup"][str(move) + "SetScale"] != 0.0:
 		scaleFactor = pInstance.__dict__[techName]["Setup"][str(move) + "SetScale"]
 	ReplaceModel(pShip, sNewShipScript)
+	if not hasattr(pInstance, "HasExperimentalRotationParts") or pInstance.HasExperimentalRotationParts <= 0:
+		ReplaceModelBlackLightsFix(pShip)
 	pShip.SetScale(scaleFactor)
 
 	checkingReCloak(pShip)
@@ -1916,6 +2120,8 @@ def ProtoWarpExitMoveFinishAction(pAction, pShip, pInstance, iThisMovID, techP=o
 			scaleFactor = pInstance.__dict__[techName]["Setup"]["NormalSetScale"]
 
 	ReplaceModel(pShip, sNewShipScript)
+	if not hasattr(pInstance, "HasExperimentalRotationParts") or pInstance.HasExperimentalRotationParts <= 0:
+		ReplaceModelBlackLightsFix(pShip)
 	pShip.SetScale(scaleFactor)
 	checkingReCloak(pShip)
 
@@ -1970,6 +2176,43 @@ def UpdateStateProto(pAction, pShip, item, lStoppingRotation, lStoppingTranslati
 		del item[1]["MySemaphore"]
 
 	return 0
+
+def GetPositionOrientationPropertyByName(pShip, pcSubsystemName):
+	debug(__name__ + ", GetPositionOrientationPropertyByName")
+	pPropSet = pShip.GetPropertySet()
+	pInstanceList = pPropSet.GetPropertiesByType(App.CT_POSITION_ORIENTATION_PROPERTY)
+
+	pInstanceList.TGBeginIteration()
+	iNumItems = pInstanceList.TGGetNumItems()
+
+	for i in range(iNumItems):
+		pInstance = pInstanceList.TGGetNext()
+		pProperty = App.PositionOrientationProperty_Cast(pInstance.GetProperty())
+		
+		if pProperty.GetName().GetCString() == pcSubsystemName:
+			return pProperty
+
+	pInstanceList.TGDoneIterating()
+	pInstanceList.TGDestroy()
+	
+	return None
+
+
+def UpdateHardpointPositionsTo(pShip, sHP, lPos):
+	debug(__name__ + ", UpdateHardpointPositionsTo")
+
+	pHP = MissionLib.GetSubsystemByName(pShip, sHP)
+	pPOP = GetPositionOrientationPropertyByName(pShip, sHP)
+	if pHP:
+		pHPprob = pHP.GetProperty()
+		pHPprob.SetPosition(lPos[0], lPos[1], lPos[2])
+	elif pPOP:
+		pPosition = App.TGPoint3()
+		pPosition.SetXYZ(lPos[0], lPos[1], lPos[2])
+		pPOP.SetPosition(pPosition)
+	else:
+		print "Submodel Error: Unable to find Hardpoint %s" % sHP
+	pShip.UpdateNodeOnly()
 
 def UpdateHardpointPositionsE(pAction, pShip, dHardpoints, iThisMovID):
 	debug(__name__ + ", UpdateHardpointPositionsE")
@@ -2345,48 +2588,3 @@ def ExitingProtoWarp(pAction, pShip, techP, subPosition):
 	pSeq.Play()
 	
 	return 0
-"""
-def DeleteObjectFromSet(pSet, sObjectName):
-	if not MissionLib.GetShip(sObjectName):
-		return
-
-	#pSet.DeleteObjectFromSet(sObjectName)
-	pSet.RemoveObjectFromSet(sObjectName)
-	
-	# send clients to remove this object
-	if App.g_kUtopiaModule.IsMultiplayer():
-		# Now send a message to everybody else that the score was updated.
-		# allocate the message.
-		pMessage = App.TGMessage_Create()
-		pMessage.SetGuaranteed(1)		# Yes, this is a guaranteed packet
-
-		# Setup the stream.
-		kStream = App.TGBufferStream()		# Allocate a local buffer stream.
-		kStream.OpenBuffer(256)				# Open the buffer stream with a 256 byte buffer.
-	
-		# Write relevant data to the stream.
-		# First write message type.
-		kStream.WriteChar(chr(REMOVE_POINTER_FROM_SET))
-
-		# Write the name of killed ship
-		for i in range(len(sObjectName)):
-			kStream.WriteChar(sObjectName[i])
-		# set the last char:
-		kStream.WriteChar('\0')
-
-		# Okay, now set the data from the buffer stream to the message
-		pMessage.SetDataFromStream(kStream)
-
-		# Send the message to everybody but me.  Use the NoMe group, which
-		# is set up by the multiplayer game.
-		pNetwork = App.g_kUtopiaModule.GetNetwork()
-		if not App.IsNull(pNetwork):
-			if App.g_kUtopiaModule.IsHost():
-				pNetwork.SendTGMessageToGroup("NoMe", pMessage)
-			else:
-				pNetwork.SendTGMessage(pNetwork.GetHostID(), pMessage)
-
-		# We're done.  Close the buffer.
-		kStream.CloseBuffer()
-	return 0
-"""

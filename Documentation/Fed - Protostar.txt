@@ -1,4 +1,5 @@
 == Changelog ==
+0.3 - Updated AlternateSubModelFTL to 0.7, finally making the tech independent from SubModels as well as fixing a weird non-experimental lights bug.
 0.2 - Updated AlternateSubModelFTL to 0.64, fixed the rapid-change drifting for the most part, also now Experimental is no longer ugly at the beginning.
 0.1 - First unofficial release, for testing
 

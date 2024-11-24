@@ -1,4 +1,7 @@
 ==Changelog==
+1.2.14 -
+   Fixes:
+   * Updated AutomaticDestroyedSystemRepairDummy so the dummy name does not trigger some defence scripts.
 1.2.13 -
    Fixes:
    * Updated Turrets script to 0.9993, making turret fetching more efficient, it should impact computers even less. Also made the Body parameter optional, so if the parameter is not there, no main body model replacement is done.

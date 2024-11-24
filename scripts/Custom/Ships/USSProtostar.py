@@ -66,14 +66,13 @@ Foundation.ShipDef.USSProtostar.fCruiseWarp = 9.96 + 0.0001
 **** starboard nacelle (without pylon) - moves Z downward
 **** port pylon (also includes a part of the lower hull) rotates Y axis to below its normal position.
 **** star pylon (also includes a part of the lower hull) rotates Y axis to below its normal position.
-**** then the body bifurcates into two pieces that open up (move on the X axis) to allow the central pylon to move:
-***** bodyStar.
-***** bodyPort.
+**** then the body uuper part and lower part bifurcates into four pieces that rotate and then move on the X and Y axis to hide themselves to allow the central pylon to move
+***** The two lower ones jsut move on the Y axis forward
 **** central pylon (maybe also contains proto-core) - moves on the X axis backwards. By default it is stored on the limit between dish and body.
 **** central pylon upper part (which covers the grey middle central upper area between dish and body) - moves on X backwards and Z up.
 **** central pylon lower part (which covers the grey middle central lower area between dish and body) - moves on X backwards and Z down.
-**** port dish coverage, a triangle that covers some of the area the port pylon left behind - moves on Y axis backwards and X to port.
-**** star dish coverage, a triangle that covers some of the area the star pylon left behind - moves on Y axis backwards and X to star.
+**** port dish coverage, covers some of the area the port pylon left behind - moves on Y axis backwards and X to port.
+**** star dish coverage, covers some of the area the star pylon left behind - moves on Y axis backwards and X to star.
 ** Update Protostar's Custom ships file so it moves the hardpoints to a correct spot (use the ModelPropertyEditor for this)
 """
 

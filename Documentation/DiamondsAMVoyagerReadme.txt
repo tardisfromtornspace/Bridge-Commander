@@ -1,6 +1,7 @@
 This mod was changed by narrowcwyfe and Alex SL Gato.
 
 ===Changelog===
+0.9.13 - Updated AutomaticDestroyedSystemRepairDummy to prevent some defence scripts from targeting it.
 0.9.12 - Updated AdvArmourTechThree from 1.81 to 1.82, fixing any weird cases of the button remaining when it shouldn't.
 0.9.11 - Updated AdvArmourTechThree from 1.7 to 1.81. 1.81 just verifies things a bit better.
 0.9.10 - Updated AdvArmourTechThree from 1.7 to 1.8, 1.8 is a tiny bit slower but it is far better for some KM installs where for some reason 1.7 might crash. If 1.7 did not crash for you, use the 1.7 script from previous versions

@@ -1,4 +1,6 @@
 == Changelog ==
+1.2.5 - Fixing:
+   * Updated AutomaticDestroyedSystemRepairDummy so the dummy name does not trigger some defence scripts.
 1.2.4 - Bug fixing:
    * Updated GraviticLance to 1.51, fixing a typo.
 1.2.3 - Bug fixing:

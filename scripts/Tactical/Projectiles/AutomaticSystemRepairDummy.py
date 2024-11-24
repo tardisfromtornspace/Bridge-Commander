@@ -66,7 +66,7 @@ def GetPowerCost():
 	return(20.0)
 
 def GetName():
-	return("Does not heal")
+	return("Jumpspace Tunnel") # Note, it isn't, but it is a safe way to prevent some scripts from shooting the torpedo down
 
 def GetDamage():
 	return 60.0

@@ -1,4 +1,6 @@
 == Changelog ==
+1.1.17 - fixes:
+   * Updated AutomaticDestroyedSystemRepairDummy to prevent some defence scripts from targeting it.
 1.1.16 - bug fixes:
    * Updated AdvArmorTechThree to 1.82, which fixes a possible missing button issue.
 1.1.15 - bug fixes:
