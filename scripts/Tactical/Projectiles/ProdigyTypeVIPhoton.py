@@ -22,30 +22,30 @@ import App
 def Create(pTorp):
 
 	kGlowColor = App.TGColorA()
-	kGlowColor.SetRGBA(255.0 / 255.0, 55.0 / 255.0, 55.0 / 255.0, 1.000000)	
+	kGlowColor.SetRGBA(240.0 / 255.0, 29.0 / 255.0, 20.0 / 255.0, 1.000000)	
 	kCoreColor = App.TGColorA()
-	kCoreColor.SetRGBA(255.0 / 255.0, 220.0 / 255.0, 220.0 / 255.0, 1.000000)
+	kCoreColor.SetRGBA(248.0 / 255.0, 223.0 / 255.0, 223.0 / 255.0, 1.000000)
 
 	# Params are:
 
 	pTorp.CreateTorpedoModel(
 					"data/Textures/Tactical/TorpedoCore.tga",
 					kCoreColor, 
-					0.2,
-					1.2,	 
+					0.1,
+					3.0,	 
 					"data/Textures/Tactical/TorpedoGlow.tga", 
 					kGlowColor,
-					4.0,	
-					0.4,	 
-					0.4,	
-					"data/Textures/Tactical/TorpedoFlares.tga",
+					7.0,	
+					0.8,	 
+					0.96,	
+					"data/Textures/Tactical/WC_photontorpFlares.tga",
 					kGlowColor,										
-					25,		
-					0.12,		
-					0.12)
+					18,		
+					0.3,		
+					0.1)
 
 	pTorp.SetDamage( GetDamage() )
-	pTorp.SetDamageRadiusFactor(0.1)
+	pTorp.SetDamageRadiusFactor(0.15)
 	pTorp.SetGuidanceLifetime( GetGuidanceLifetime() )
 	pTorp.SetMaxAngularAccel( GetMaxAngularAccel() )
 
@@ -60,7 +60,7 @@ def GetLaunchSpeed():
 	return(100.0)
 
 def GetLaunchSound():
-	return("FedPulsePhoton")
+	return("ProtostarFedPhoton1")
 
 def GetPowerCost():
 	return(20.0)

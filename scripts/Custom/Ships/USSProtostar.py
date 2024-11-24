@@ -57,6 +57,26 @@ except:
 Foundation.ShipDef.USSProtostar.fMaxWarp = 9.97 + 0.0001
 Foundation.ShipDef.USSProtostar.fCruiseWarp = 9.96 + 0.0001
 
+"""
+* TO-DOs:
+** Create models for the Protowarp version and the Submodels for the parts (also check if the ported model has those parts).
+*** You need several models (update Custom ships file accordingly):
+**** Final Protowarp model.
+**** port nacelle (without pylon) - moves Z downward
+**** starboard nacelle (without pylon) - moves Z downward
+**** port pylon (also includes a part of the lower hull) rotates Y axis to below its normal position.
+**** star pylon (also includes a part of the lower hull) rotates Y axis to below its normal position.
+**** then the body bifurcates into two pieces that open up (move on the X axis) to allow the central pylon to move:
+***** bodyStar.
+***** bodyPort.
+**** central pylon (maybe also contains proto-core) - moves on the X axis backwards. By default it is stored on the limit between dish and body.
+**** central pylon upper part (which covers the grey middle central upper area between dish and body) - moves on X backwards and Z up.
+**** central pylon lower part (which covers the grey middle central lower area between dish and body) - moves on X backwards and Z down.
+**** port dish coverage, a triangle that covers some of the area the port pylon left behind - moves on Y axis backwards and X to port.
+**** star dish coverage, a triangle that covers some of the area the star pylon left behind - moves on Y axis backwards and X to star.
+** Update Protostar's Custom ships file so it moves the hardpoints to a correct spot (use the ModelPropertyEditor for this)
+"""
+
 Foundation.ShipDef.USSProtostar.dTechs = {
 	"Polarized Hull Plating": {"Plates": ["Hull"]},
 	"Alternate-Warp-FTL": {
@@ -140,7 +160,7 @@ Foundation.ShipDef.USSProtostar.dTechs = {
 	},
 }
 
-Foundation.ShipDef.USSProtostar.desc = "The Protostar-class was a small starship class launched by Starfleet during the late 24th century that was later approved for full production in 2384 after the destruction of the prototype and namesake vessel, the USS Protostar. Unlike other Starfleet ships, the Protostar class had its navigational deflector mounted on the underside of the saucer instead of the engineering hull, which instead has a large loading ramp for entrance into the vessel. When it was developed, the Protostar class was the fastest ship in Starfleet. The class featured two distinct warp drive modes, one was a conventional warp drive capable of warp 9.97 and powered by twin warp cores, while the other was a more energy-intensive gravimetric protostar containment, which was powered by a protostar and allowed it to travel in a second warp drive mode considerably faster than conventional warp speed, crossing over four thousand light years in a matter of minutes, a journey that would originally take four years at maximum warp, but which would require rapid energy regeneration protocols after at least 2 uses.\nThe USS Protostar (NX-76884) was a Protostar-class Federation starship launched in 2382. The Protostar was launched from the San Francisco Fleet Yards on Stardate 59749.1 under the command of Captain Chakotay for a return mission to the Delta Quadrant undertaken in the years after the return of the USS Voyager. "
+Foundation.ShipDef.USSProtostar.desc = "The USS Protostar (NX-76884) was the first Protostar-class Federation starship launched in 2382. The Protostar was launched from the San Francisco Fleet Yards on Stardate 59749.1 under the command of Captain Chakotay for a return mission to the Delta Quadrant undertaken in the years after the return of the USS Voyager.\nThe Protostar-class was a small starship class launched by Starfleet during the late 24th century that was later approved for full production in 2384.\nWhen it was developed, the Protostar class was the fastest ship in Starfleet, due to its main feature: two distinct warp drive modes, one, a conventional warp drive capable of warp 9.97 and powered by twin warp cores; the other, a more energy-intensive gravimetric protostar containment, which was powered by a protostar and allowed considerably faster travel speed than conventional warp speed. Such was proto-warp, that it could cross over four thousand light years, a journey that would have taken 4 years at conventional maximum warp 9.97, in a matter of minutes. Due to the proto-core's energy requirements, rapid energy regeneration protocols were needed to be performed after at least 2 consecutive proto-warp uses.\nUnlike other Starfleet ships, the Protostar class had its navigational deflector mounted on the underside of the saucer instead of the engineering hull, which instead has a large loading ramp for entrance into the vessel. Also an oddity amongst Federation vessels of the time, is that the ship was equipped with polarized hull plating as part of its main defences.\nTactical-wise, its shields are not the best, but it is fast and nimble and carries an acceptable weapons array."
 
 
 if menuGroup:           Foundation.ShipDef.USSProtostar.RegisterQBShipMenu(menuGroup)
