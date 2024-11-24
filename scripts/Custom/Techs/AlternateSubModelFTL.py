@@ -1,7 +1,7 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
 # AlternateSubModelFTL.py
-# 22nd September 2024, by Alex SL Gato (CharaToLoki)
+# 24th September 2024, by Alex SL Gato (CharaToLoki)
 #         Based on Defiant's SubModels script (from which it inherits the classes, so in fact SubModels is a dependency) and BorgAdaptation.py by Alex SL Gato, which were based on the Foundation import function by Dasher
 #         Also based on ATPFunctions by Apollo and slightly on DS9FXPulsarManager by USS Sovereign.
 #################################################################################################################
@@ -67,7 +67,6 @@
 # ------------------------ Legacy rotations are better for backwards-compatibility and have little to none drifting issues, but only work for a particular quadrant of rotation ( -90, 90 ) degrees and are best for ( -45 degrees, 45 degrees) amplitude. They share most of the issues SubModels rotations have (including that beyond the optimal movement range the subparts will suffer an unwanted size change, more prominent the more we approach to the quadrant limit), except that they are more optimized and thus will not suffer accidental drifting nor will cause memory issues.
 # ------------------------ Experimental rotations are best suited if the ship requires to rotate beyond the amplitude legacy provides, but are a bit uglier at the start, require to use a tiny bit more of memory and suffer from ~r.c~ rotation drift due to float number innacuracies. Experimental rotation degrees are aproximately 1:1 with legacy rotations of the same quadrant, but some slight differences may arise due to slight implementation differences and the legacy quadrant limit.
 #
-# NOTE: In order to prevent some in-game engine shenanigans, it is recommended that ALL positions for each situation used are different, even if slightly, to prevent some cases of parts just floating if the beginning and end position were the same.
 """
 #Sample Setup: replace "USSProtostar" for the appropiate abbrev
 Foundation.ShipDef.USSProtostar.dTechs = {
@@ -708,7 +707,7 @@ Foundation.ShipDef.USSProtostar.dTechs = { # (#)
 #################################################################################################################
 #
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.6",
+	    "Version": "0.61",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
