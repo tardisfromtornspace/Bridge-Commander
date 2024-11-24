@@ -65,7 +65,7 @@
 # ---------------- (0) "SetScale": indicates the model size of a subpart. Do not include to have same behaviour as SubModels (regular scale but if the part has a too-extreme rotation (like, at least 90 degrees) it will suffer an asintotic process where it suddenly becomes small and then extremely big and inverted). <k:v>
 # ---------------- (0) "Experimental": a dictionary entry which establishes if the ship uses experimental rotation or not. "Experimental": 0 or entry not added implies it uses the legacy submodels style of rotation.
 # ------------------------ Legacy rotations are better for backwards-compatibility and have little to none drifting issues, but only work for a particular quadrant of rotation ( -90, 90 ) degrees and are best for ( -45 degrees, 45 degrees) amplitude. They share most of the issues SubModels rotations have (including that beyond the optimal movement range the subparts will suffer an unwanted size change, more prominent the more we approach to the quadrant limit), except that they are more optimized and thus will not suffer accidental drifting nor will cause memory issues.
-# ------------------------ Experimental rotations are best suited if the ship requires to rotate beyond the amplitude legacy provides, but are a bit uglier at the start, require to use a tiny bit more of memory and suffer from ~r.c~ rotation drift due to float number innacuracies. Experimental rotation degrees are aproximately 1:1 with legacy rotations of the same quadrant, but some slight differences may arise due to slight implementation differences and the legacy quadrant limit.
+# ------------------------ Experimental rotations are best suited if the ship requires to rotate beyond the amplitude legacy provides, but require to use a tiny bit more of memory and suffer from an extremely slight ~r.c~ rotation drift due to float number innacuracies. Experimental rotation degrees are aproximately 1:1 with legacy rotations of the same quadrant, but some slight differences may arise due to slight implementation differences and the legacy quadrant limit.
 #
 """
 #Sample Setup: replace "USSProtostar" for the appropiate abbrev
@@ -707,7 +707,7 @@ Foundation.ShipDef.USSProtostar.dTechs = { # (#)
 #################################################################################################################
 #
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.61",
+	    "Version": "0.64",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -724,6 +724,7 @@ import MissionLib
 import nt
 import string
 from SubModels import *
+from threading import Semaphore
 import traceback
 
 REMOVE_POINTER_FROM_SET = 190
@@ -861,7 +862,7 @@ def LoadExtraLimitedPlugins(dExcludePlugins=_g_dExcludeSomePlugins):
 						if eType2 and not eTypeDict.has_key(eType2):
 							eTypeDict[eType2] = functionExitWarp
 			except:
-				print "someone attempted to add more than they should to the SG Shields script"
+				print "someone attempted to add more than they should to the AlternateSubModelFTL script"
 				traceback.print_exc()
 
 LoadExtraLimitedPlugins()
@@ -1024,7 +1025,7 @@ class ProtoWarp(SubModels):
 			# Alert change handler doesn't work for AI ships, so use subsystem changed instead
 			pShip.AddPythonFuncHandlerForInstance(App.ET_SUBSYSTEM_STATE_CHANGED, __name__ + ".SubsystemStateProtoChanged")
 			self.bAddedAlertListener[pShip.GetObjID()] = 1 
-			AlertListener = 1
+			AlertListener = AlertListener + 1
 		return AlertListener
 	def Remove_AttackMethods(self, pShip):
 		if self.bAddedAlertListener.has_key(pShip.GetObjID()):
@@ -1054,7 +1055,7 @@ class ProtoWarp(SubModels):
 
 	def PerformPostAttachLoopActions(self, pShip, AlertListener):
 		# Make sure the Ship is correctly set because we don't get the first ET_SUBSYSTEM_STATE_CHANGED event for Ai ships
-		if AlertListener:
+		if AlertListener > 0:
 			PartsForWeaponProtoState(pShip, self)
 
 	# Called by FoundationTech when a Ship is removed from set (eg destruction)
@@ -1078,6 +1079,8 @@ class ProtoWarp(SubModels):
 							del item[1]["currentPosition"]
 						if item[1].has_key("currentRotation"):
 							del item[1]["currentRotation"]
+						if item[1].has_key("MySemaphore"):
+							del item[1]["MySemaphore"]
 						if item[1].has_key("curMovID"):
 							del item[1]["curMovID"]
 
@@ -1267,10 +1270,10 @@ class ProtoWarp(SubModels):
 				pSubShip.SetAngleAxisRotation(1.0, dOptions["currentRotation"][0], dOptions["currentRotation"][1], dOptions["currentRotation"][2])
 				iNorm = math.sqrt(dOptions["currentRotation"][0] ** 2 + dOptions["currentRotation"][1] ** 2 + dOptions["currentRotation"][2] ** 2)
 				pSubShip.SetScale((-iNorm + 1.85) * scaleFactor)
-			else:
-				# Since attempting to make the non-legacy version have the proper initial rotation when added just causes the experimental rotation system to get very wonky rotations no matter the type of fixes I do, we are going to temporarily let the experimental rotation handle that while we hide the ship.
-				pSubShip.SetScale(scaleFactor)
-				pSubShip.SetHidden(1)
+			#else:
+			#	# Since attempting to make the non-legacy version have the proper initial rotation when added just causes the experimental rotation system to get very wonky rotations no matter the type of fixes I do, we are going to temporarily let the experimental rotation handle that while we hide the ship.
+			#	pSubShip.SetScale(scaleFactor)
+			#	pSubShip.SetHidden(1)
 
 			# set current positions
 			pSubShip.SetTranslateXYZ(dOptions["currentPosition"][0],dOptions["currentPosition"][1],dOptions["currentPosition"][2])
@@ -1280,7 +1283,8 @@ class ProtoWarp(SubModels):
 			pShip.AttachObject(pSubShip)
 			pShip.UpdateNodeOnly()
 
-
+			if (dOptions.has_key("Experimental") and dOptions["Experimental"] != 0.0):
+				performRotationAndScaleAdjust(pShip, pSubShip, dOptions, dOptions["currentRotation"][0], dOptions["currentRotation"][1], dOptions["currentRotation"][2], 0, 0, 0, 1)
 
 			if pCloak:
 				pSubShipID = pSubShip.GetObjID()
@@ -1324,7 +1328,7 @@ class MovingEventUpdated(MovingEvent):
 		self.dAlternateFTLSubModelOptionsList = item[1]
 		self.pShip = pShip
 			
-		self.fDurationMul = 0.95 # make us a little bit faster to avoid bad timing
+		self.fDurationMul = 1.0 #(1 - 0.03125) # 0.95 # make us a little bit faster to avoid bad timing
 	
 		# rotation values
 
@@ -1332,17 +1336,13 @@ class MovingEventUpdated(MovingEvent):
 		self.iSCurRotY = 0.0
 		self.iSCurRotZ = 0.0
 
+		self.experimentalFactor = 1.0
+
 		if self.dAlternateFTLSubModelOptionsList.has_key("Experimental") and self.dAlternateFTLSubModelOptionsList["Experimental"] != 0.0:
-			# Since the thing below causes the system to get wonky rotations, I'm gonna do a move called hiding the ship until it's properly moved.
-			if not self.dAlternateFTLSubModelOptionsList.has_key("SupposedRotation") or self.dAlternateFTLSubModelOptionsList["SupposedRotation"] == None: # REMOVED WHEN PERFORMING THE UPDATESTATEPROTO
-				self.dAlternateFTLSubModelOptionsList["SupposedRotation"] = [None, None, None]
-				self.dAlternateFTLSubModelOptionsList["SupposedRotation"][0] = lStartingRotation[0]
-				self.dAlternateFTLSubModelOptionsList["SupposedRotation"][1] = lStartingRotation[1]
-				self.dAlternateFTLSubModelOptionsList["SupposedRotation"][2] = lStartingRotation[2]
-			else:
-				self.iSCurRotX = -self.dAlternateFTLSubModelOptionsList["SupposedRotation"][0]
-				self.iSCurRotY = -self.dAlternateFTLSubModelOptionsList["SupposedRotation"][1]
-				self.iSCurRotZ = -self.dAlternateFTLSubModelOptionsList["SupposedRotation"][2]
+			self.experimentalFactor = 1.5
+
+			if not self.dAlternateFTLSubModelOptionsList.has_key("MySemaphore"): # We already have some drifts, better to ensure the sequences done are atomic just in case.
+				self.dAlternateFTLSubModelOptionsList["MySemaphore"] = Semaphore()
 
 		self.iCurRotX = lStartingRotation[0] + self.iSCurRotX
 		self.iCurRotY = lStartingRotation[1] + self.iSCurRotY
@@ -1402,8 +1402,7 @@ class MovingEventUpdated(MovingEvent):
 				self.dHPSteps[sHP][1] = (self.dStopHardpoints[sHP][1] - self.dStartHardpoints[sHP][1])
 				self.dHPSteps[sHP][2] = (self.dStopHardpoints[sHP][2] - self.dStartHardpoints[sHP][2])
 
-		self.firstTime = 1
-
+		self.firstTime = 0
 		self.wentWrong = 0
 
 	# move!
@@ -1427,8 +1426,11 @@ class MovingEventUpdated(MovingEvent):
 			return 0
 		
 		if (not self.dAlternateFTLSubModelOptionsList.has_key("curMovID")) or self.iThisMovID != self.dAlternateFTLSubModelOptionsList["curMovID"]:
-			print "AlternateSubModelFTL Move no longer active."
+			#print "AlternateSubModelFTL Move no longer active."
 			return 1
+
+		if self.dAlternateFTLSubModelOptionsList.has_key("MySemaphore"):
+			self.dAlternateFTLSubModelOptionsList["MySemaphore"].acquire()
 
 		# set new Translation values
 		self.iCurTransX = self.iCurTransX + self.iTransStepX
@@ -1452,12 +1454,6 @@ class MovingEventUpdated(MovingEvent):
 
 		pNacelle.UpdateNodeOnly()
 
-		if self.dAlternateFTLSubModelOptionsList.has_key("Experimental") and self.dAlternateFTLSubModelOptionsList["Experimental"] != 0.0:
-			if self.dAlternateFTLSubModelOptionsList.has_key("SupposedRotation") and self.dAlternateFTLSubModelOptionsList["SupposedRotation"] != None: # REMOVED WHEN PERFORMING THE UPDATESTATEPROTO
-				self.iSCurRotX = self.dAlternateFTLSubModelOptionsList["SupposedRotation"][0] = self.iCurRotX
-				self.iSCurRotY = self.dAlternateFTLSubModelOptionsList["SupposedRotation"][1] = self.iCurRotY
-				self.iSCurRotZ = self.dAlternateFTLSubModelOptionsList["SupposedRotation"][2] = self.iCurRotZ
-
 		if self.dAlternateFTLSubModelOptionsList.has_key("currentRotation"):
 			self.dAlternateFTLSubModelOptionsList["currentRotation"] = [self.iCurRotX, self.iCurRotY, self.iCurRotZ]
 
@@ -1473,10 +1469,14 @@ class MovingEventUpdated(MovingEvent):
 				UpdateHardpointPositionsTo(self.pShip, sHP, self.dCurHPs[sHP])
 		
 		pNacelle.UpdateNodeOnly()
+
+		if self.dAlternateFTLSubModelOptionsList.has_key("MySemaphore"):
+			self.dAlternateFTLSubModelOptionsList["MySemaphore"].release()
+
 		return 0
 		
 
-def performRotationAndScaleAdjust(pShip, pNacelle, dOptionsList, iCurRotX, iCurRotY, iCurRotZ, iRotStepX, iRotStepY, iRotStepZ, firstTime, iWait = 2.0): # iWait is to compensate steps
+def performRotationAndScaleAdjust(pShip, pNacelle, dOptionsList, iCurRotX, iCurRotY, iCurRotZ, iRotStepX, iRotStepY, iRotStepZ, firstTime, iWait = 1.5): # iWait = 1.5 # iWait = 2.0 is to compensate steps
 
 	scaleFactor = 1.0
 	if dOptionsList.has_key("SetScale") and dOptionsList["SetScale"] != 0.0:
@@ -1544,10 +1544,6 @@ def performRotationAndScaleAdjust(pShip, pNacelle, dOptionsList, iCurRotX, iCurR
 
 			pNacelle.Rotate(kRot)
 
-
-		#else:
-		#	print "NO ROTATION YIPEE"
-
 		pNacelle.SetScale(scaleFactor)
 
 		if firstTime != 0:
@@ -1561,6 +1557,8 @@ def performRotationAndScaleAdjust(pShip, pNacelle, dOptionsList, iCurRotX, iCurR
 
 	return 0
 
+def FloatNearlyEquals(n1, n2, tolerance=0.0078125):
+	return (math.abs(n1 - n2) < tolerance)
 
 def MatrixMult(kFwd, kNewUp):
 	debug(__name__ + ", MatrixMult")
@@ -1798,7 +1796,7 @@ def AlertMoveFinishProtoAction(pAction, pShip, pInstance, iThisMovID, techType =
 	# Don't switch Models back when the ID does not match
 	debug(__name__ + ", AlertMoveFinishProtoAction")
 	if not MoveFinishMatchIDUpdated(pShip, pInstance, iThisMovID):
-		print "AlternateSubModelFTL: AlertMoveFinishProtoAction: the IDs do not match"
+		#print "AlternateSubModelFTL: AlertMoveFinishProtoAction: the IDs do not match"
 		return 0
 	try:
 		techType.DetachParts(pShip, pInstance)
@@ -1807,7 +1805,7 @@ def AlertMoveFinishProtoAction(pAction, pShip, pInstance, iThisMovID, techType =
 
 	techName = techType.MySystemPointer()
 	scaleFactor = 1.0
-	if pShip.GetAlertLevel() == 2:
+	if pInstance.__dict__[techName]["Setup"].has_key("AttackModel") and pShip.GetAlertLevel() == 2:
 		sNewShipScript = pInstance.__dict__[techName]["Setup"]["AttackModel"]
 		if pInstance.__dict__[techName]["Setup"].has_key("AttackSetScale") and pInstance.__dict__[techName]["Setup"]["AttackSetScale"] != 0.0:
 			scaleFactor = pInstance.__dict__[techName]["Setup"]["AttackSetScale"]
@@ -1877,7 +1875,7 @@ def ProtoWarpStartMoveFinishAction(pAction, pShip, pInstance, iThisMovID, techP=
 	# Don't switch Models back when the ID does not match
 	debug(__name__ + ", ProtoWarpStartMoveFinishAction")
 	if not MoveFinishMatchIDUpdated(pShip, pInstance, iThisMovID):
-		print "AlternateSubModelFTL: ProtoWarpStartMoveFinishAction: the IDs do not match"
+		#print "AlternateSubModelFTL: ProtoWarpStartMoveFinishAction: the IDs do not match"
 		return 0
 		
 	techP.DetachParts(pShip, pInstance)
@@ -1899,13 +1897,15 @@ def ProtoWarpExitMoveFinishAction(pAction, pShip, pInstance, iThisMovID, techP=o
 	# Don't switch Models back when the ID does not match
 	debug(__name__ + ", ProtoWarpExitMoveFinishAction")
 	if not MoveFinishMatchIDUpdated(pShip, pInstance, iThisMovID):
-		print "AlternateSubModelFTL: ProtoWarpExitMoveFinishAction: the IDs do not match"
+		#print "AlternateSubModelFTL: ProtoWarpExitMoveFinishAction: the IDs do not match"
 		if move != "Warp":
 			RestoreWarpOverriden(pShip, pInstance)
 		return 0
 		
 	techP.DetachParts(pShip, pInstance)
 	techName = techP.MySystemPointer()
+
+	scaleFactor = 1.0
 	if pInstance.__dict__[techName]["Setup"].has_key("AttackModel") and pShip.GetAlertLevel() == 2:
 		sNewShipScript = pInstance.__dict__[techName]["Setup"]["AttackModel"]
 		if pInstance.__dict__[techName]["Setup"].has_key("AttackSetScale") and pInstance.__dict__[techName]["Setup"]["AttackSetScale"] != 0.0:
@@ -1957,7 +1957,7 @@ def UpdateStateProto(pAction, pShip, item, lStoppingRotation, lStoppingTranslati
 
 	pInstance = findShipInstance(pShip)
 	if not pInstance or not MoveFinishMatchIDUpdated(pShip, pInstance, iThisMovID):
-		print "AlternateSubModelFTL: Called mismatching return from UpdateStateProto"
+		#print "AlternateSubModelFTL: Called mismatching return from UpdateStateProto"
 		return 0
 
 	if item[1].has_key("currentRotation"):
@@ -1966,9 +1966,8 @@ def UpdateStateProto(pAction, pShip, item, lStoppingRotation, lStoppingTranslati
 		item[1]["currentPosition"] = lStoppingTranslation
 	if item[1].has_key("curMovID"):
 		item[1]["curMovID"] = 0
-
-	if item[1].has_key("SupposedRotation") and item[1]["SupposedRotation"] != None:
-		item[1]["SupposedRotation"] = None
+	if item[1].has_key("MySemaphore"):
+		del item[1]["MySemaphore"]
 
 	return 0
 
@@ -2084,7 +2083,7 @@ def PartsForWeaponProtoState(pShip, techP):
 			else:
 				print "AlternateSubModelFTL: failed to create script action for PartsForWeaponProtoState ", iTimeNeededTotal, iTime, iWait
 			iTimeNeededTotal = iTimeNeededTotal + iWait
-			iTime = iTime + round(iWait * 100.0) # + 1 seemed like the wrong thing to add
+			iTime = iTime + round(iWait * 100.0)
 
 		finalLocalScriptAct = App.TGScriptAction_Create(__name__, "UpdateStateProto", pShip, item, lStoppingRotation, lStoppingTranslation, thisMoveCurrentID)
 		if finalLocalScriptAct:
