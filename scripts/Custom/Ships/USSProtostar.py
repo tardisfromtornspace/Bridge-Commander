@@ -66,14 +66,18 @@ Foundation.ShipDef.USSProtostar.fCruiseWarp = 9.96 + 0.0001
 **** starboard nacelle (without pylon) - moves Z downward
 **** port pylon (also includes a part of the lower hull) rotates Y axis to below its normal position.
 **** star pylon (also includes a part of the lower hull) rotates Y axis to below its normal position.
-**** then the body uuper part and lower part bifurcates into four pieces that rotate and then move on the X and Y axis to hide themselves to allow the central pylon to move
-***** The two lower ones jsut move on the Y axis forward
 **** central pylon (maybe also contains proto-core) - moves on the X axis backwards. By default it is stored on the limit between dish and body.
 **** central pylon upper part (which covers the grey middle central upper area between dish and body) - moves on X backwards and Z up.
 **** central pylon lower part (which covers the grey middle central lower area between dish and body) - moves on X backwards and Z down.
+**** central pylon upper part 2 (which covers the grey middle central upper area between dish and body) - moves on X backwards and Z up.
+**** central pylon lower part 2 (which covers the grey middle central lower area between dish and body) - moves on X backwards and Z down.
+**** then the body upper part and lower part bifurcates into six pieces that rotate and then move on the X and Y axis to hide themselves to allow the central pylon to move
+***** the two upper ones rotate on the Y axis.
+***** the two middle ones open on the X axis.
+***** The two lower ones just move on the Y axis forward.
 **** port dish coverage, covers some of the area the port pylon left behind - moves on Y axis backwards and X to port.
 **** star dish coverage, covers some of the area the star pylon left behind - moves on Y axis backwards and X to star.
-** Update Protostar's Custom ships file so it moves the hardpoints to a correct spot (use the ModelPropertyEditor for this)
+* Update Protostar's Custom ships file so it moves the hardpoints to a correct spot, including the Proto-Core (use the ModelPropertyEditor for this)
 """
 
 Foundation.ShipDef.USSProtostar.dTechs = {
@@ -110,7 +114,7 @@ Foundation.ShipDef.USSProtostar.dTechs = {
 			},
 		},
 
-		"Port Wing":     ["USSProtostarPN", {
+		"Port Pylon":     ["USSProtostarPN", {
 			"Experimental": 0,
 			"SetScale": 1.0,
 			"Position":             [0, 0, 0],
@@ -127,7 +131,7 @@ Foundation.ShipDef.USSProtostar.dTechs = {
 			},
 		],
         
-		"Starboard Wing":     ["USSProtostarSN", {
+		"Starboard Pylon":     ["USSProtostarSN", {
 			"Experimental": 0,
 			"SetScale": 1.0,
 			"Position":             [0, 0, 0],
@@ -143,7 +147,40 @@ Foundation.ShipDef.USSProtostar.dTechs = {
 			"Proto-WarpDuration":       150.0,
 			},
 		],
-		"Central_Nacelle":     ["USSProtostarCN", {
+		"Port Nacelle":     ["USSProtostarPN", {
+			"Experimental": 0,
+			"SetScale": 1.0,
+			"Position":             [0, 0, 0],
+			"Rotation":             [0, 0, 0], # normal Rotation used if not Red Alert and if not Warp
+			#"AttackRotation":         [0, -0.6, 0],
+			#"AttackDuration":         200.0, # Value is 1/100 of a second
+			#"AttackPosition":         [0, 0, 0.03],
+			#"WarpRotation":       [0, 0, 0],
+			#"WarpPosition":       [0, 0, 0.001],
+			#"WarpDuration":       150.0,
+			"Proto-WarpRotation":       [0, 0, 0],
+			"Proto-WarpPosition":       [0, 0, -0.2],
+			"Proto-WarpDuration":       150.0,
+			},
+		],
+        
+		"Starboard Nacelle":     ["USSProtostarSN", {
+			"Experimental": 0,
+			"SetScale": 1.0,
+			"Position":             [0, 0, 0],
+			"Rotation":             [0, 0, 0],
+			#"AttackRotation":         [0, 0.6, 0],
+			#"AttackDuration":         200.0, # Value is 1/100 of a second
+			#"AttackPosition":         [0, 0, 0.03],
+			#"WarpRotation":       [0, 0, 0],
+			#"WarpPosition":       [0, 0, 0.001],
+			#"WarpDuration":       150.0,
+			"Proto-WarpRotation":       [0, 0, 0],
+			"Proto-WarpPosition":       [0, 0, -0.2],
+			"Proto-WarpDuration":       150.0,
+			},
+		],
+		"Central Nacelle":     ["USSProtostarCN", {
 			"Experimental": 0,
 			"SetScale": 1.0,
 			"Position":             [0, 0, 0],
@@ -153,6 +190,162 @@ Foundation.ShipDef.USSProtostar.dTechs = {
 			#"WarpDuration":       150.0,
 			"Proto-WarpRotation":       [0, 0, 0],
 			"Proto-WarpPosition":       [0, -1.0, -0.05],
+			"Proto-WarpDuration":       250.0,
+			},
+		],
+		"Central NacelleU":     ["USSProtostarCN", {
+			"Experimental": 0,
+			"SetScale": 1.0,
+			"Position":             [0, 0, 0],
+			"Rotation":             [0, 0, 0],
+			#"WarpRotation":       [0, 0, 0],
+			#"WarpPosition":       [0, -0.01, 0],
+			#"WarpDuration":       150.0,
+			"Proto-WarpRotation":       [0, 0, 0],
+			"Proto-WarpPosition":       [0, -1.0, 0.15],
+			"Proto-WarpDuration":       250.0,
+			},
+		],
+		"Central NacelleD":     ["USSProtostarCN", {
+			"Experimental": 0,
+			"SetScale": 1.0,
+			"Position":             [0, 0, 0],
+			"Rotation":             [0, 0, 0],
+			#"WarpRotation":       [0, 0, 0],
+			#"WarpPosition":       [0, -0.01, 0],
+			#"WarpDuration":       150.0,
+			"Proto-WarpRotation":       [0, 0, 0],
+			"Proto-WarpPosition":       [0, -1.0, -0.15],
+			"Proto-WarpDuration":       250.0,
+			},
+		],
+		"Central NacelleU1":     ["USSProtostarCN", {
+			"Experimental": 0,
+			"SetScale": 1.0,
+			"Position":             [0, 0, 0],
+			"Rotation":             [0, 0, 0],
+			#"WarpRotation":       [0, 0, 0],
+			#"WarpPosition":       [0, -0.01, 0],
+			#"WarpDuration":       150.0,
+			"Proto-WarpRotation":       [0, 0, 0],
+			"Proto-WarpPosition":       [0, -1.0, 0.05],
+			"Proto-WarpDuration":       250.0,
+			},
+		],
+		"Central NacelleD1":     ["USSProtostarCN", {
+			"Experimental": 0,
+			"SetScale": 1.0,
+			"Position":             [0, 0, 0],
+			"Rotation":             [0, 0, 0],
+			#"WarpRotation":       [0, 0, 0],
+			#"WarpPosition":       [0, -0.01, 0],
+			#"WarpDuration":       150.0,
+			"Proto-WarpRotation":       [0, 0, 0],
+			"Proto-WarpPosition":       [0, -1.0, -0.05],
+			"Proto-WarpDuration":       250.0,
+			},
+		],
+		"Starboard Central Body":     ["USSProtostarCN", {
+			"Experimental": 0,
+			"SetScale": 1.0,
+			"Position":             [0, 0, 0],
+			"Rotation":             [0, 0, 0],
+			#"WarpRotation":       [0, 0, 0],
+			#"WarpPosition":       [0, -0.01, 0],
+			#"WarpDuration":       150.0,
+			"Proto-WarpRotation":       [0, 0, 0],
+			"Proto-WarpPosition":       [-0.5, 0.0, 0],
+			"Proto-WarpDuration":       150.0,
+			},
+		],
+		"S Central Body U":     ["USSProtostarCN", {
+			"Experimental": 1,
+			"SetScale": 1.0,
+			"Position":             [0, 0, 0],
+			"Rotation":             [0, 0, 0],
+			#"WarpRotation":       [0, 0, 0],
+			#"WarpPosition":       [0, -0.01, 0],
+			#"WarpDuration":       150.0,
+			"Proto-WarpRotation":       [0, -0.7, 0],
+			"Proto-WarpPosition":       [-0.5, 0.0, 0],
+			"Proto-WarpDuration":       150.0,
+			},
+		],
+		"S Central Body D":     ["USSProtostarCN", {
+			"Experimental": 0,
+			"SetScale": 1.0,
+			"Position":             [0, 0, 0],
+			"Rotation":             [0, 0, 0],
+			#"WarpRotation":       [0, 0, 0],
+			#"WarpPosition":       [0, -0.01, 0],
+			#"WarpDuration":       150.0,
+			"Proto-WarpRotation":       [0, 0, 0],
+			"Proto-WarpPosition":       [-0.5, 0.3, -0.1],
+			"Proto-WarpDuration":       150.0,
+			},
+		],
+		"Port Central Body":     ["USSProtostarCN", {
+			"Experimental": 0,
+			"SetScale": 1.0,
+			"Position":             [0, 0, 0],
+			"Rotation":             [0, 0, 0],
+			#"WarpRotation":       [0, 0, 0],
+			#"WarpPosition":       [0, -0.01, 0],
+			#"WarpDuration":       150.0,
+			"Proto-WarpRotation":       [0, 0, 0],
+			"Proto-WarpPosition":       [0.5, 0.0, 0],
+			"Proto-WarpDuration":       150.0,
+			},
+		],
+		"P Central Body U":     ["USSProtostarCN", {
+			"Experimental": 1,
+			"SetScale": 1.0,
+			"Position":             [0, 0, 0],
+			"Rotation":             [0, 0, 0],
+			#"WarpRotation":       [0, 0, 0],
+			#"WarpPosition":       [0, -0.01, 0],
+			#"WarpDuration":       150.0,
+			"Proto-WarpRotation":       [0, 0.7, 0],
+			"Proto-WarpPosition":       [0.5, 0.0, 0],
+			"Proto-WarpDuration":       150.0,
+			},
+		],
+		"P Central Body D":     ["USSProtostarCN", {
+			"Experimental": 0,
+			"SetScale": 1.0,
+			"Position":             [0, 0, 0],
+			"Rotation":             [0, 0, 0],
+			#"WarpRotation":       [0, 0, 0],
+			#"WarpPosition":       [0, -0.01, 0],
+			#"WarpDuration":       150.0,
+			"Proto-WarpRotation":       [0, 0.7, 0],
+			"Proto-WarpPosition":       [0.5, 0.3, -0.1],
+			"Proto-WarpDuration":       150.0,
+			},
+		],
+		"S Dish Cover":     ["USSProtostarCN", {
+			"Experimental": 0,
+			"SetScale": 1.0,
+			"Position":             [0, 0, 0],
+			"Rotation":             [0, 0, 0],
+			#"WarpRotation":       [0, 0, 0],
+			#"WarpPosition":       [0, -0.01, 0],
+			#"WarpDuration":       150.0,
+			"Proto-WarpRotation":       [0, 0, 0],
+			"Proto-WarpPosition":       [-0.5, -0.3, 0],
+			"Proto-WarpDuration":       250.0,
+			},
+		],
+		"P Dish Cover":     ["USSProtostarCN", {
+			"Experimental": 0,
+			"SetScale": 1.0,
+			"Position":             [0, 0, 0],
+			"Rotation":             [0, 0, 0],
+			#"WarpRotation":       [0, 0, 0],
+			#"WarpPosition":       [0, -0.01, 0],
+			#"WarpDuration":       150.0,
+			"Proto-WarpRotation":       [0, 0, 0],
+			"Proto-WarpPosition":       [0.5, -0.3, 0],
 			"Proto-WarpDuration":       250.0,
 			},
 		],

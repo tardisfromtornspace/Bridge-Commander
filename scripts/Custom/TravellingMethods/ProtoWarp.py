@@ -9,7 +9,7 @@
 # NOTE: all functions/methods and attributes defined here (in this prototype example plugin, ProtoWarp) are required to be in the plugin, with the exclusion of:
 # ------ MODINFO, which is there just to verify versioning.
 # ------ ALTERNATESUBMODELFTL METHODS subsection, which are exclusively used for alternate SubModels for FTL which is a separate but linked mod, or to import needed modules.
-# ------ Auxiliar functions: "AuxProtoElementNames", "findShipInstance", "ProtoWarpBasicConfigInfo" and "ProtoWarpDisabledCalculations".
+# ------ Auxiliar functions: "AuxProtoElementNames", "findShipInstance", "PlayProtoWarpSound", "ProtoWarpBasicConfigInfo" and "ProtoWarpDisabledCalculations".
 # === How-To-Add ===
 # This Travelling Method is Ship-based, on this case it needs of Foundation and FoundationTech to verify if the ship is equipped with it.
 # This FTL method check is stored inside an "Alternate-Warp-FTL" dictionary, which is a script that should be located at scripts/Custom/Techs/AlternateSubModelFTL.py. While this sub-tech can work totally fine without such module installed, it is recommended to have it.
@@ -89,7 +89,7 @@ Foundation.ShipDef.USSProtostar.dTechs = { # (#)
 #################################################################################################################
 #
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.3",
+	    "Version": "0.31",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -198,15 +198,18 @@ iRestrictionFlag = 0
 ###########################################
 ###########################################
 import App
+import Custom.GravityFX.GravityFXlib
+import Foundation
+import FoundationTech
 import MissionLib
 import math
 import string
-import Foundation
-import FoundationTech
+import traceback
 
 #######################################
 ####   ALTERNATESUBMODELFTL METHODS
 #######################################
+
 
 ENGAGING_ALTERNATEFTLSUBMODEL = App.UtopiaModule_GetNextEventType() # For when we are immediately about to fly with this FTL method
 DISENGAGING_ALTERNATEFTLSUBMODEL = App.UtopiaModule_GetNextEventType() # For when we are immediately about to stop flying with this FTL method
@@ -685,6 +688,44 @@ def PreExitStuff(self):
 # 2º during travel sequence
 # 3º exiting travel sequence
 ########
+# Anther aux function I made
+def PlayProtoWarpSound(pAction, pWS, sType, sRace):
+	debug(__name__ + ", PlayWarpSound")
+	pShip = pWS.GetShip()
+	pPlayer = App.Game_GetCurrentPlayer()
+	if pShip == None or pPlayer == None:
+		return 0
+
+	pSet = pShip.GetContainingSet()
+	pPlaSet = pPlayer.GetContainingSet()
+	if pSet == None or pPlaSet == None:
+		return 0
+
+	if pSet.GetRegionModule() == pPlaSet.GetRegionModule():
+		try:
+			import Custom.NanoFXv2.WarpFX.WarpFX
+			if sRace == "":
+				sRace = "Default"
+			if sType == "Enter Warp":
+				sType = "EnterProtoWarp"
+			#elif sType == "Exit Warp":
+			#	sType = "ExitProtoWarp"
+			else:
+				sType = ""
+			if sType != "":
+				sFile = "sfx\\ProtoWarp\\"+sRace+"\\"+sRace+sType+".wav"
+				Custom.GravityFX.GravityFXlib.PlaySound(sFile, sRace+" "+sType+" Sound")
+		except:
+			try:
+				sRace = "Default"
+				if sType == "Enter Warp":
+					sFile = "sfx\\ProtoWarp\\"+sRace+"\\"+sRace+sType+".wav"
+					Custom.GravityFX.GravityFXlib.PlaySound(sFile, sRace+" "+sType+" Sound")
+			except:
+				print "ProtoWarp TravellingMethod: error while calling PlayProtoWarpSound:"
+				traceback.print_exc()
+	return 0
+
 def SetupSequence(self):
 	# you can use this function as an example on how to create your own '.SetupSequence(self)' method for your
 	# custom travelling method.
@@ -752,11 +793,14 @@ def SetupSequence(self):
 		sRace = ""
 	
 	if (pPlayer != None) and (pShip.GetObjID() == pPlayer.GetObjID()):
-		fEntryDelayTime = fEntryDelayTime + 1.0
+		fEntryDelayTime = fEntryDelayTime + 5.0 # + 1.0
 
 		# Force a noninteractive cinematic view in space..
 		pCinematicStart = App.TGScriptAction_Create("Actions.CameraScriptActions", "StartCinematicMode", 0)
 		pEngageWarpSeq.AddAction(pCinematicStart, None)
+
+		pWarpSoundAction0 = App.TGScriptAction_Create(__name__, "PlayProtoWarpSound", pWS, "Enter Warp", sRace)
+		pEngageWarpSeq.AddAction(pWarpSoundAction0, None, 0)
 
 		pDisallowInput = App.TGScriptAction_Create("MissionLib", "RemoveControl")
 		pEngageWarpSeq.AddAction(pDisallowInput, pCinematicStart)
@@ -764,7 +808,7 @@ def SetupSequence(self):
 	pWarpSoundAction1 = App.TGScriptAction_Create(sCustomActionsScript, "PlayWarpSound", pWS, "Enter Warp", sRace)
 	pEngageWarpSeq.AddAction(pWarpSoundAction1, None, fEntryDelayTime + 0.2)
 	
-	pBoostAction = App.TGScriptAction_Create(sCustomActionsScript, "BoostShipSpeed", pShip.GetObjID(), 1, 100.0)
+	pBoostAction = App.TGScriptAction_Create(sCustomActionsScript, "BoostShipSpeed", pShip.GetObjID(), 1, 400.0)
 	pEngageWarpSeq.AddAction(pBoostAction, pWarpSoundAction1, 0.7)
 
 	try:
@@ -880,7 +924,7 @@ def SetupSequence(self):
 	# 1º: the engaging travel sequence  (plays once, when the ship enters the travel)
 	# 2º: the during travel sequence    (plays repeatedly, while the ship is travelling)
 	# 3º: the exiting travel sequence   (plays once, when the ship exits travel)
-	# TO-DO Make the Protowarp sequence?
+	# TO-DO Maybe Make the Protowarp sequence for while travelling? Depends, sometimes we see the V-shaped trail, but others we don't.
 
 	# Note that each one of them can be None, if you don't want to have that sequence in your travel method.
 
