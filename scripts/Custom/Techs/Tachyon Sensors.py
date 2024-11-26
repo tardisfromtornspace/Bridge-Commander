@@ -74,7 +74,7 @@ def distance(pScannerShip, pScannedShip, pScannerInstanceDict, pScannedInstanceD
 """
 
 MODINFO = { "Author": "\"Defiant\" erik@vontaene.de (original), \"Alex SL Gato\" andromedavirgoa@gmail.com (modified)",
-	    "Version": "0.2",
+	    "Version": "0.21",
 	    "License": "LGPL & BSD",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -204,7 +204,7 @@ def isFirepoint(pShip):
 
 def DeleteFirePoint(pAction, myFirePointName):
 	debug(__name__ + ", DeleteFirePoint")
-	pFirepoint = MissionLib.GetShip(myFirePointName)
+	pFirepoint = MissionLib.GetShip(myFirePointName, None, 1)
 	if pFirepoint:
 		pSet = pFirepoint.GetContainingSet()
 		if pSet:
@@ -291,7 +291,7 @@ def CreateScanFirepoint(pShip, pScannerShip):
 			if pTractors and pTractors.IsNameInGroup(pScannerShip.GetName()):
 				sameGroup = 1
                 
-		pFirePoint = MissionLib.GetShip(myFirePointName)
+		pFirePoint = MissionLib.GetShip(myFirePointName, None, 1)
 		FirePointCoord = None
                 
 		# if it does not exist we have to create it first
@@ -325,7 +325,7 @@ def CreateScanFirepoint(pShip, pScannerShip):
 
 			pFirePoint.UpdateNodeOnly()
 
-		pFirePoint = MissionLib.GetShip(myFirePointName)
+		pFirePoint = MissionLib.GetShip(myFirePointName, None, 1)
                 
 		# reposition
 		fRadius = pShip.GetHull().GetRadius() + 1

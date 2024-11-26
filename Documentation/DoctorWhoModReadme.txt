@@ -1,4 +1,6 @@
 == Changelog ==
+1.1.18 - fixes:
+   * Updated SimulatedPointDefence to prevent some MissionLib configs from preventing a proper cleanup.
 1.1.17 - fixes:
    * Updated AutomaticDestroyedSystemRepairDummy to prevent some defence scripts from targeting it.
 1.1.16 - bug fixes:

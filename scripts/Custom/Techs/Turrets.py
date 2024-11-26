@@ -145,7 +145,7 @@ import MissionLib
 
 #################################################################################################################
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.9993",
+	    "Version": "0.9994",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -564,7 +564,7 @@ class Turrets(FoundationTech.TechDef):
                                 else: # it is a string
                                         sNameSuffix = lList[0]
                                         sShipName = sNamePrefix + sNameSuffix
-                                        pSubShip = MissionLib.GetShip(sShipName)
+                                        pSubShip = MissionLib.GetShip(sShipName, None, 1)
                                         if len(lList) > 1 and lList[1].has_key("sShipFile"):
                                                 sFile = lList[1]["sShipFile"]
                                         if not pSubShip and sFile != None:
@@ -646,7 +646,7 @@ class Turrets(FoundationTech.TechDef):
                         sShipName = sNamePrefix + sNameSuffix
                         
                         # check if the ship does exist first, before create it
-                        pSubShip = MissionLib.GetShip(sShipName)
+                        pSubShip = MissionLib.GetShip(sShipName, None, 1)
 
 
                         # save the options list
@@ -2571,7 +2571,7 @@ def ExitingWarp(pAction, pShip):
 
 
 def DeleteObjectFromSet(pSet, sObjectName):
-        if not MissionLib.GetShip(sObjectName):
+        if not MissionLib.GetShip(sObjectName, None, 1):
                 return
         pSet.DeleteObjectFromSet(sObjectName)
         

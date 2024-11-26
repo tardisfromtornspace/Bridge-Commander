@@ -1,5 +1,7 @@
 This mod is a modification on an older mod I could not remember. The older mod had mostly normal technologies, moved by warp drive and had an energy shield. This change intends to make it more canon
 == Changelog ==
+1.1.5 - Misc. changes & Potential Bug Fixing:
+   * Updated Simulated Point Defense so one of its configurations works regardless of MissionLib custom settings.
 1.1.4 - Misc. changes & Bug Fixing:
    * Updated all Slipfighter Custom/Ships files so they are under a SubSubMenu.
    * Fixed an error on the original hardpoint that was preventing the Andromeda and other variant ships from actually using their torpedo launchers at max.

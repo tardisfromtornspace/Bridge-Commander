@@ -41,7 +41,7 @@ from bcdebug import debug
 import traceback
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-            "Version": "0.93",
+            "Version": "0.94",
             "License": "LGPL",
             "Description": "Read the small title above for more info"
             }
@@ -629,7 +629,7 @@ try:
 					global dictFirePointToTorp
 					
 					donotneedtospamattack = 0
-					pFirePoint = MissionLib.GetShip(sThisFirePointName)
+					pFirePoint = MissionLib.GetShip(sThisFirePointName, None, 1)
 					# if it does not exist we have to create it first
 					if not pFirePoint:
 						pFirePoint = loadspacehelper.CreateShip("BigFirepoint", pSet, sThisFirePointName, None)
@@ -811,7 +811,7 @@ try:
 		debug(__name__ + ", DeleteFirePoint")
 		global dictFirePointToTorp
 		#print "deleting firepoint"
-		pFirepoint = MissionLib.GetShip(sThisFirePointName)
+		pFirepoint = MissionLib.GetShip(sThisFirePointName, None, 1)
 		if not pFirepoint:
 			return 0
 

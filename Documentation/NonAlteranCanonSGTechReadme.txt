@@ -1,4 +1,6 @@
 == Changelog ==
+1.1.5 - bug fixes:
+   * Updated SGAnubisSuperWeaponRay so its Delete works regardless of MissionLib configuration.
 1.1.4 - bug fixes:
    * Fixed three typos in the Ori, Asgard and Ion beam local configurations.
 1.1.3 - updates:

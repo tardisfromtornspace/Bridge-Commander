@@ -1,4 +1,6 @@
 == Changelog ==
+1.2.6 - Fixing:
+   * Updated SimulatedPointDefence to prevent some MissionLib configs from preventing a proper cleanup.
 1.2.5 - Fixing:
    * Updated AutomaticDestroyedSystemRepairDummy so the dummy name does not trigger some defence scripts.
 1.2.4 - Bug fixing:

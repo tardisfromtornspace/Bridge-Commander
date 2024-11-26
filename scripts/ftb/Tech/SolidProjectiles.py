@@ -60,7 +60,7 @@ import traceback
 
 #################################################################################################################
 MODINFO = { "Author": "\"Alex SL Gato, Greystar, JohnKuhns777 and likely the ftb Team\" andromedavirgoa@gmail.com",
-	    "Version": "0.31",
+	    "Version": "0.32",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -570,7 +570,7 @@ class Rocket(FoundationTech.TechDef):
 		"""
 
 def DeleteObjectFromSet(pSet, sObjectName):
-        if not MissionLib.GetShip(sObjectName):
+        if not MissionLib.GetShip(sObjectName, None, 1):
                 return
 
         #pSet.DeleteObjectFromSet(sObjectName)

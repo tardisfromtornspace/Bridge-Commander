@@ -1,6 +1,6 @@
 """
 #         AnubisSuperWeaponRay
-#         13th October 2024
+#         26th November 2024
 #         Based on Turrets script, which was strongly based on SubModels.py by USS Defiant and their team, and AutoTargeting.py by USS Frontier... even if the final product of this file lacks prety much any of the features from SubModels or AutoTargeting
 #################################################################################################################
 # This technology makes your beams "jump" between targetted ships in range, like with Anubis Superweapon on Stargate, hence the name.
@@ -532,7 +532,7 @@ def lookandUpdateSiblingTPhasers(wpnSystem, pShip, pTurret, pTarget=None, discha
 					parentSiblingBank.SetMaxCharge(abs(parentSiblingBank.GetMaxCharge()))
 
 def DeleteObjectFromSet(pSet, sObjectName):
-        if not MissionLib.GetShip(sObjectName):
+        if not MissionLib.GetShip(sObjectName, None, 1):
                 return
         pSet.DeleteObjectFromSet(sObjectName)
         

@@ -293,7 +293,7 @@ class DefensiveMatrix(FoundationTech.TechDef):
 
 		sShipName = sNamePrefix + "DM"
 
-		pSubShip = MissionLib.GetShip(sShipName)
+		pSubShip = MissionLib.GetShip(sShipName, None, 1)
 
 		if not pSubShip:
 			for potpShip in DMList:
@@ -542,7 +542,7 @@ def SubsystemStateChanged(pObject, pEvent):
 
 # From Turrets.py, and SubModels.py
 def DeleteObjectFromSet(pSet, sObjectName):
-        if not MissionLib.GetShip(sObjectName):
+        if not MissionLib.GetShip(sObjectName, None, 1):
                 return
         pSet.DeleteObjectFromSet(sObjectName)
         

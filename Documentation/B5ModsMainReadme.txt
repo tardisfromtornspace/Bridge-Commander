@@ -1,4 +1,7 @@
 ==Changelog==
+1.2.15 -
+   Fixes:
+   * Updated TachyonSensors, Turrets and SimulatedPointDefence so its configurations work regardless of MissionLib settings.
 1.2.14 -
    Fixes:
    * Updated AutomaticDestroyedSystemRepairDummy so the dummy name does not trigger some defence scripts.
