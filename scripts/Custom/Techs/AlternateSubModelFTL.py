@@ -707,7 +707,7 @@ Foundation.ShipDef.USSProtostar.dTechs = { # (#)
 #################################################################################################################
 #
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.7",
+	    "Version": "0.71",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -840,7 +840,7 @@ def ReplaceModelBlackLightsFix(pShip):
 		traceback.print_exc()
 
 def DeleteObjectFromSet(pSet, sObjectName):
-	if not MissionLib.GetShip(sObjectName):
+	if not MissionLib.GetShip(sObjectName, None, bAnySet = 1):
 		return
 	pSet.DeleteObjectFromSet(sObjectName)
 	
@@ -1338,7 +1338,7 @@ class ProtoWarp(FoundationTech.TechDef):
 			sShipName = sNamePrefix + sNameSuffix
 			
 			# check if the ship does exist first, before create it
-			pSubShip = MissionLib.GetShip(sShipName)
+			pSubShip = MissionLib.GetShip(sShipName, None, bAnySet = 1)
 
 
 			# save the options list

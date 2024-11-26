@@ -1,7 +1,9 @@
 == Changelog ==
-0.32 - Updates:
+0.3.3 - Updates:
+  * Updated AlternateSubModelFTL to 0.71, fixing a potential issue related with different MissionLib files.
+0.3.2 - Updates:
   * Updated scripts/Custom/Ships file to provide the full list of parts also in-game, pending of model repalcement and position/rotation adjustment.
-0.31 - Updates:
+0.3.1 - Updates:
   * Updated ProtoWarp TravellingMethod to 0.31, providing starting sound.
   * Updated scripts/Custom/Ships file to provide a more extensive list on what moves on the Protostar (as a list to help Greystar with models).
 0.3 - Updated AlternateSubModelFTL to 0.7, finally making the tech independent from SubModels as well as fixing a weird non-experimental lights bug.
