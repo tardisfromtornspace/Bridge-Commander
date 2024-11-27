@@ -1,0 +1,61 @@
+#This is the dump of the LogCreator: <Federation 1st Fleet Logger LogCreator_5Kz624JuklU8>
+#This log file was created on: 13:27:43.875 of 27/November/2024, Wednesday
+########################################
+## -------------------- ##
+####################
+#######>>>13:27:43.875 of 27/November/2024, Wednesday
+#>>>Ship Fleet created, Logger Initialized.
+#>>>SELF = <Federation 1st Fleet_nT817P23g88w>
+#>>>Ship added to the fleet: Player  (SlotsUsed:19)
+#>>>Lead Ship updated to: Player
+## -------------------- ##
+####################
+#######>>>13:28:26.824 of 27/November/2024, Wednesday
+#>>>Ship added to the fleet: Suratak  (SlotsUsed:18)
+#>>>Lead Ship updated to: Player
+#>>>Ship added to the fleet: T'sassan  (SlotsUsed:17)
+#>>>Lead Ship updated to: Player
+#>>>Ship added to the fleet: USS Lightbringer  (SlotsUsed:16)
+#>>>Lead Ship updated to: Player
+#>>>Ship added to the fleet: T'varian  (SlotsUsed:15)
+#>>>Lead Ship updated to: Player
+#>>>Ship added to the fleet: USS Assassin  (SlotsUsed:14)
+#>>>Lead Ship updated to: Player
+## -------------------- ##
+####################
+#######>>>13:28:31.292 of 27/November/2024, Wednesday
+#>>>WarAI_Suratak: is proceeding to intercept the lead ship.
+## -------------------- ##
+####################
+#######>>>13:28:31.410 of 27/November/2024, Wednesday
+#>>>WarAI_USS Lightbringer: is attacking, concentrating fire.
+#>>>WarAI_T'varian: is attacking, concentrating fire.
+#>>>WarAI_USS Assassin: is attacking, concentrating fire.
+## -------------------- ##
+####################
+#######>>>13:28:32.918 of 27/November/2024, Wednesday
+#>>>WarAI_T'sassan: is attacking, concentrating fire.
+## -------------------- ##
+####################
+#######>>>13:28:36.658 of 27/November/2024, Wednesday
+#>>>WarAI_Suratak: has stopped intercepting the lead ship...
+#>>>WarAI_Suratak: is attacking, concentrating fire.
+## -------------------- ##
+####################
+#######>>>13:28:49.792 of 27/November/2024, Wednesday
+#>>>Ship removed from the fleet: Player  (SlotsUsed:15)
+#>>>Lead Ship updated to: T'varian
+#>>>WarAI_T'varian: has stopped concentrating fire.
+#>>>WarAI_T'varian: lead is Initiating attack procedures.
+## -------------------- ##
+####################
+#######>>>13:28:55.458 of 27/November/2024, Wednesday
+#>>>WarAI_Suratak: has stopped concentrating fire.
+#>>>WarAI_T'sassan: has stopped concentrating fire.
+#>>>WarAI_USS Lightbringer: has stopped concentrating fire.
+#>>>WarAI_T'varian: lead is Cancelling attack procedure.
+#>>>WarAI_USS Assassin: has stopped concentrating fire.
+########################################
+# 13:30:2.941 of 27/November/2024, Wednesday
+#Ending of log dump - User is quiting the game
+########################################

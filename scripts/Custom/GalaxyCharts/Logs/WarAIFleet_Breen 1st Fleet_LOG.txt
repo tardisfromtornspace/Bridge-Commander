@@ -1,0 +1,45 @@
+#This is the dump of the LogCreator: <Breen 1st Fleet Logger LogCreator_f2e3155Cv832>
+#This log file was created on: 13:28:26.824 of 27/November/2024, Wednesday
+########################################
+## -------------------- ##
+####################
+#######>>>13:28:26.824 of 27/November/2024, Wednesday
+#>>>Ship Fleet created, Logger Initialized.
+#>>>SELF = <Breen 1st Fleet_2fpT5509r5ss>
+#>>>Ship added to the fleet: Breen CA-1  (SlotsUsed:19)
+#>>>Lead Ship updated to: Breen CA-1
+## -------------------- ##
+####################
+#######>>>13:28:31.159 of 27/November/2024, Wednesday
+#>>>WarAI_Breen CA-1: lead is Initiating attack procedures.
+## -------------------- ##
+####################
+#######>>>13:28:55.458 of 27/November/2024, Wednesday
+#>>>WarAI_Breen CA-1: lead is Cancelling attack procedure.
+## -------------------- ##
+####################
+#######>>>13:29:0.876 of 27/November/2024, Wednesday
+#>>>Ship added to the fleet: Ferengishuttle RDF 1  (SlotsUsed:18)
+#>>>Lead Ship updated to: Breen CA-1
+## -------------------- ##
+####################
+#######>>>13:29:4.158 of 27/November/2024, Wednesday
+#>>>WarAI_Breen CA-1: lead is Initiating attack procedures.
+## -------------------- ##
+####################
+#######>>>13:29:4.492 of 27/November/2024, Wednesday
+#>>>WarAI_Ferengishuttle RDF 1: is proceeding to intercept the lead ship.
+## -------------------- ##
+####################
+#######>>>13:29:8.291 of 27/November/2024, Wednesday
+#>>>WarAI_Ferengishuttle RDF 1: has stopped intercepting the lead ship...
+#>>>WarAI_Ferengishuttle RDF 1: is attacking, concentrating fire.
+########################################
+# 13:30:2.941 of 27/November/2024, Wednesday
+#Ending of log dump - User is quiting the game
+########################################
+## -------------------- ##
+####################
+#######>>>13:30:2.941 of 27/November/2024, Wednesday
+#>>>WarAI_Ferengishuttle RDF 1: has stopped concentrating fire.
+#>>>WarAI_Breen CA-1: lead is Cancelling attack procedure.
