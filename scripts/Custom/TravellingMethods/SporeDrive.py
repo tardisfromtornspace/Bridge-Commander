@@ -836,6 +836,7 @@ def SetupSequence(self):
 	#pEngageWarpSeq.AddAction(pWarpSoundAction0, None, 0)
 	# Create the warp flash.
 	# TO-DO Replace with a spore-drive flash
+	# TO-DO MAYBE ALSO MAKE THE MAIN PART ROTATE
 	pFlashAction1 = App.TGScriptAction_Create("Actions.EffectScriptActions", "WarpFlash", pShip.GetObjID())
 	pEngageWarpSeq.AddAction(pFlashAction1, None, fTimeToFlash)
 
