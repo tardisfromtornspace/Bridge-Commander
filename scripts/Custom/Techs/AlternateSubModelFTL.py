@@ -66,6 +66,7 @@
 # ---------------- (0) "Experimental": a dictionary entry which establishes if the ship uses experimental rotation or not. "Experimental": 0 or entry not added implies it uses the legacy submodels style of rotation.
 # ------------------------ Legacy rotations are better for backwards-compatibility and have little to none drifting issues, but only work for a particular quadrant of rotation ( -90, 90 ) degrees and are best for ( -45 degrees, 45 degrees) amplitude. They share most of the issues SubModels rotations have (including that beyond the optimal movement range the subparts will suffer an unwanted size change, more prominent the more we approach to the quadrant limit), except that they are more optimized and thus will not suffer accidental drifting nor will cause memory issues.
 # ------------------------ Experimental rotations are best suited if the ship requires to rotate beyond the amplitude legacy provides, but require to use a tiny bit more of memory and suffer from an extremely slight ~r.c~ rotation drift due to float number innacuracies. Experimental rotation degrees are aproximately 1:1 with legacy rotations of the same quadrant, but some slight differences may arise due to slight implementation differences and the legacy quadrant limit.
+# ---------------- (0) "ResetToPrevious": a dictionary entry whose only purpose is to indicate, when value 1, that a nacelle's position should always return to the pre-FTL position after performing the FTL entry transformation, or the supposed initial FTL positions after exiting FTL - only recommended to be used for asymmetric movement methods, where only the startup or end movement sequences happen (f.ex. Spore Displacement Drive, where the only movement done is at the beginning).
 #
 """
 #Sample Setup: replace "USSProtostar" for the appropiate abbrev
@@ -101,6 +102,7 @@ Foundation.ShipDef.USSProtostar.dTechs = {
 		"Port Wing":     ["VasKholhr_Portwing", {
 			"Experimental": 0,
 			"SetScale": 1.0,
+			"ResetToPrevious": 0,
 			"Position":             [0, 0, 0],
 			"Rotation":             [0, 0, 0], # normal Rotation used if not Red Alert and if not Warp
 			"AttackRotation":         [0, -0.6, 0],
@@ -118,6 +120,7 @@ Foundation.ShipDef.USSProtostar.dTechs = {
 		"Starboard Wing":     ["VasKholhr_Starboardwing", {
 			"Experimental": 0,
 			"SetScale": 1.0,
+			"ResetToPrevious": 0, # TO-DO CLARIFY
 			"Position":             [0, 0, 0],
 			"Rotation":             [0, 0, 0],
 			"AttackRotation":         [0, 0.6, 0],
@@ -707,7 +710,7 @@ Foundation.ShipDef.USSProtostar.dTechs = { # (#)
 #################################################################################################################
 #
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.71",
+	    "Version": "0.73",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -2338,8 +2341,13 @@ def PartsForWeaponProtoState(pShip, techP):
 		# iLongestTime is for the part that needs the longest time...
 		if iTimeNeededTotal > iLongestTime:
 			iLongestTime = round(iTimeNeededTotal, 2)
+
+		## iLongestTime is for the part that needs the longest time...
+		#if fDuration + initialWait > iLongestTime:
+		#	iLongestTime = fDuration + initialWait #round(iTimeNeededTotal, 2)
 		
 	# finally detach
+	#iLongestTime = iLongestTime/100.0
 
 	pSeq = App.TGSequence_Create()
 	pSeq.AppendAction(App.TGScriptAction_Create(__name__, "JointAlertMoveFinishProtoAction", pShip, pInstance, dHardpoints, thisMoveCurrentID), iLongestTime + iGracePeriodTime + 0.01)
@@ -2402,8 +2410,7 @@ def StartingWarpCommon(pObject, pEvent, techP, subPosition="Warp"):
 				pInstanceDict["Warp Overriden"] = 1	
 
 	iLongestTime = 0.0
-	iGracePeriodTime = 1.201 #1.11 #2.0
-	iGracePeriodTime2 = 0.0
+	iGracePeriodTime = 2.0
 	IncCurrentMoveIDUpdated(pShip, pInstance)
 	thisMoveCurrentID = GetCurrentMoveIDUpdated(pShip, pInstance)
 	dHardpoints = {}
@@ -2472,20 +2479,29 @@ def StartingWarpCommon(pObject, pEvent, techP, subPosition="Warp"):
 			iTimeNeededTotal = iTimeNeededTotal + iWait
 			iTime = iTime + round(iWait * 100.0) # + 1 seemed like the wrong thing to add
 
-		finalLocalScriptAct = App.TGScriptAction_Create(__name__, "UpdateStateProto", pShip, item, lStoppingRotation, lStoppingTranslation, thisMoveCurrentID)
+		finalLocalScriptAct = None
+
+		if item[1].has_key("ResetToPrevious") and item[1]["ResetToPrevious"] == 1:
+			finalLocalScriptAct = App.TGScriptAction_Create(__name__, "UpdateStateProto", pShip, item, lStartingRotation, lStartingTranslation, thisMoveCurrentID)
+		else:
+			finalLocalScriptAct = App.TGScriptAction_Create(__name__, "UpdateStateProto", pShip, item, lStoppingRotation, lStoppingTranslation, thisMoveCurrentID)
+
 		if finalLocalScriptAct:
 			pSeq.AppendAction(finalLocalScriptAct, 0.01)
 			pSeq.Play()
 		else:
 			print "AlternateSubModelFTL: Error while trying to perform final local action"
 
-		# iLongestTime is for the part that needs the longest time...
+		## iLongestTime is for the part that needs the longest time...
 		if iTimeNeededTotal > iLongestTime:
 			iLongestTime = round(iTimeNeededTotal, 2)
+		#if fDuration + initialWait > iLongestTime:
+		#	iLongestTime = fDuration + initialWait #round(iTimeNeededTotal, 2)
 		
 	# finally detach
+	#iLongestTime = iLongestTime/100.0
 	pSeq = App.TGSequence_Create()
-	pSeq.AppendAction(App.TGScriptAction_Create(__name__, "UpdateHardpointPositionsE", pShip, dHardpoints, thisMoveCurrentID), iLongestTime + 0.01)
+	pSeq.AppendAction(App.TGScriptAction_Create(__name__, "UpdateHardpointPositionsE", pShip, dHardpoints, thisMoveCurrentID), iLongestTime + iGracePeriodTime + 0.01)
 	pSeq.AppendAction(App.TGScriptAction_Create(__name__, "ProtoWarpStartMoveFinishAction", pShip, pInstance, thisMoveCurrentID, techP, subPosition), 2.0)
 	pSeq.Play()
 
@@ -2500,21 +2516,24 @@ def ExitingProtoWarp(pAction, pShip, techP, subPosition):
 	
 	pInstance = findShipInstance(pShip)
 	iLongestTime = 0.0
-	iGracePeriodTime = 1.201 #1.11 #2.0
-	iGracePeriodTime2 = 0.0
+	iGracePeriodTime = 2.0
 	IncCurrentMoveIDUpdated(pShip, pInstance)
 	thisMoveCurrentID = GetCurrentMoveIDUpdated(pShip, pInstance)
 	dHardpoints = {}
 	
 	# first replace the Models
 	PrepareShipForProtoMove(pShip, pInstance, techP)
-	
+	subPositionHardpoints = str(subPosition) + "Hardpoints"
+	subPositionDuration = str(subPosition) + "Duration"
+	subPositionRotation = str(subPosition) + "Rotation"
+	subPositionPosition = str(subPosition) + "Position"
+
 	for item in pInstance.AlternateFTLSubModelOptionsList:
 		# setup is not a submodel
 		if item[0] == "Setup":
 			dHardpoints = {}
-			if item[1].has_key(str(subPosition) + "Hardpoints"):
-				dHardpoints = item[1][str(subPosition) + "Hardpoints"]
+			if item[1].has_key(subPositionHardpoints):
+				dHardpoints = item[1][subPositionHardpoints]
 			continue
 
 		if item[0] == None or not hasattr(item[0], "GetObjID"):
@@ -2527,8 +2546,8 @@ def ExitingProtoWarp(pAction, pShip, techP, subPosition):
 		item[1]["curMovID"] = iThisMovID
 	
 		fDuration = 200.0
-		if item[1].has_key(str(subPosition) + "Duration"):
-			fDuration = item[1][str(subPosition) + "Duration"]
+		if item[1].has_key(subPositionDuration):
+			fDuration = item[1][subPositionDuration]
 		    
 		# Rotation
 		lStartingRotation = item[1]["currentRotation"]
@@ -2542,9 +2561,16 @@ def ExitingProtoWarp(pAction, pShip, techP, subPosition):
 		lStartingTranslation = item[1]["currentPosition"]
 		lStoppingTranslation = lStartingTranslation
 		if item[1].has_key("AttackPosition") and pShip.GetAlertLevel() == 2:
-				lStoppingTranslation = item[1]["AttackPosition"]
+			lStoppingTranslation = item[1]["AttackPosition"]
 		else:
 			lStoppingTranslation = item[1]["Position"]
+
+
+		if item[1].has_key("ResetToPrevious") and item[1]["ResetToPrevious"] == 1:
+			if item[1].has_key(subPositionRotation):
+				lStartingRotation = item[1][subPositionRotation]
+			if item[1].has_key(subPositionPosition):
+				lStartingTranslation = item[1][subPositionPosition]
 	
 		iTime = 0.0
 		iTimeNeededTotal = 0.0
@@ -2571,6 +2597,7 @@ def ExitingProtoWarp(pAction, pShip, techP, subPosition):
 			iTime = iTime + round(iWait * 100.0) # + 1 seemed like the wrong thing to add
 
 		finalLocalScriptAct = App.TGScriptAction_Create(__name__, "UpdateStateProto", pShip, item, lStoppingRotation, lStoppingTranslation, thisMoveCurrentID)
+
 		if finalLocalScriptAct:
 			pSeq.AppendAction(finalLocalScriptAct, 0.01)
 			pSeq.Play()
@@ -2581,9 +2608,14 @@ def ExitingProtoWarp(pAction, pShip, techP, subPosition):
 		if iTimeNeededTotal > iLongestTime:
 			iLongestTime = round(iTimeNeededTotal, 2)
 		
+		## iLongestTime is for the part that needs the longest time...
+		#if fDuration + initialWait > iLongestTime:
+		#	iLongestTime = fDuration + initialWait #round(iTimeNeededTotal, 2)
+		
 	# finally detach
+	#iLongestTime = iLongestTime/100.0
 	pSeq = App.TGSequence_Create()
-	pSeq.AppendAction(App.TGScriptAction_Create(__name__, "UpdateHardpointPositionsE", pShip, dHardpoints, thisMoveCurrentID), iLongestTime + 0.01)
+	pSeq.AppendAction(App.TGScriptAction_Create(__name__, "UpdateHardpointPositionsE", pShip, dHardpoints, thisMoveCurrentID), iLongestTime + iGracePeriodTime + 0.01)
 	pSeq.AppendAction(App.TGScriptAction_Create(__name__, "ProtoWarpExitMoveFinishAction", pShip, pInstance, thisMoveCurrentID, techP, subPosition), 2.0)
 	pSeq.Play()
 	

@@ -32,19 +32,21 @@ Foundation.ShipDef.crossfield.dTechs = {
 		"copy1":     ["crossfieldSporeCopy", {
 			"Experimental": 1,
 			"SetScale": 1.0,
+			"ResetToPrevious": 1,
 			"Position":             [0, 0, 0],
 			"Rotation":             [0, 0, 0], # normal Rotation used if not Red Alert and if not Warp
-			"Spore-DriveRotation":       [0, -4, 0],
+			"Spore-DriveRotation":       [0, 4.0, 0],
 			"Spore-DrivePosition":       [0, 0, 0],
-			"Spore-DriveDuration":       150.0,
+			"Spore-DriveDuration":       200.0,
 			},
 		],
 		"copy2":     ["crossfieldSporeCopy", {
 			"Experimental": 1,
 			"SetScale": 1.0,
+			"ResetToPrevious": 1,
 			"Position":             [0, 0, 0],
 			"Rotation":             [0, 0, 0], # normal Rotation used if not Red Alert and if not Warp
-			"Spore-DriveRotation":       [0, -8, 0],
+			"Spore-DriveRotation":       [0, 6.0, 0],
 			"Spore-DrivePosition":       [0, 0, 0],
 			"Spore-DriveDuration":       200.0,
 			},
@@ -52,21 +54,23 @@ Foundation.ShipDef.crossfield.dTechs = {
 		"copy3":     ["crossfieldSporeCopy", {
 			"Experimental": 1,
 			"SetScale": 1.0,
+			"ResetToPrevious": 1,
 			"Position":             [0, 0, 0],
 			"Rotation":             [0, 0, 0], # normal Rotation used if not Red Alert and if not Warp
-			"Spore-DriveRotation":       [0, -12, 0],
+			"Spore-DriveRotation":       [0, 8.0, 0],
 			"Spore-DrivePosition":       [0, 0, 0],
-			"Spore-DriveDuration":       250.0,
+			"Spore-DriveDuration":       200.0,
 			},
 		],
 		"copy4":     ["crossfieldSporeCopy", {
 			"Experimental": 1,
 			"SetScale": 1.0,
+			"ResetToPrevious": 1,
 			"Position":             [0, 0, 0],
 			"Rotation":             [0, 0, 0], # normal Rotation used if not Red Alert and if not Warp
-			"Spore-DriveRotation":       [0, -16, 0],
+			"Spore-DriveRotation":       [0, 10.0, 0],
 			"Spore-DrivePosition":       [0, 0, 0],
-			"Spore-DriveDuration":       300.0,
+			"Spore-DriveDuration":       200.0,
 			},
 		],
 	},

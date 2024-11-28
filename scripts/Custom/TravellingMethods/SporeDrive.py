@@ -9,7 +9,7 @@
 # NOTE: all functions/methods and attributes defined here (in this prototype example plugin, SporeDrive) are required to be in the plugin, with the exclusion of:
 # ------ MODINFO, which is there just to verify versioning.
 # ------ ALTERNATESUBMODELFTL METHODS subsection, which are exclusively used for alternate SubModels for FTL which is a separate but linked mod, or to import needed modules.
-# ------ Auxiliar functions: "AuxProtoElementNames", "findShipInstance", "PlaySporeDriveSound", "SporeDriveBasicConfigInfo" and "SporeDriveDisabledCalculations".
+# ------ Auxiliar functions: "AuxProtoElementNames", "CustomBoostShipSpeed", "findShipInstance", "MainPartRotation", "PlaySporeDriveSound", "SporeDriveBasicConfigInfo" and "SporeDriveDisabledCalculations".
 # === How-To-Add ===
 # This Travelling Method is Ship-based, on this case it needs of Foundation and FoundationTech to verify if the ship is equipped with it.
 # This FTL method check is stored inside an "Alternate-Warp-FTL" dictionary, which is a script that should be located at scripts/Custom/Techs/AlternateSubModelFTL.py. While this sub-tech can work totally fine without such module installed, it is recommended to have it.
@@ -17,13 +17,14 @@
 # "Spore-Drive": is the name of the key. This is the bare minimum for the technology to work
 # "Nacelles": is the name of a key whose value indicates a list of which warp engine property children (nacelles) are part of the Spore-Drive system. If all are disabled/destroyed, Spore-Drive will not engage. If this field does not exist, it will check all warp hardpoints containing "SporeDrive", "spore drive" or "spore-drive" (case-insensitive). Leave as "Nacelles": [] to make it skip this disabled check.
 # "Core": is the name of a key whose value indicates a list of which hardpoint properties (not nacelles) are part of the Spore-Drive system. If all are disabled/destroyed, Spore-Drive will not engage either. If this field does not exist or "Core": [] this check will be skipped.
-# "Rotation": TO-DO
+# "NormalRotation", "EndRotation" and "Time": Indicates in what way the main body rotates while performing the FTL Spore Drive Action, from the "normal" rotation position, to the "end" rotation position, in "Time" centiseconds. Leave them blank to use a default [0, 0, 0] and [0, 4.19, 0] in 2 seconds. In both rotation cases, the fields are the X, Y and Z axis.
+# "ExitDirection": when the ship drops out of this FTL method, in what direction it moves. Do not include to call default "Down".
 """
 #Sample Setup: replace "USSProtostar" for the appropiate abbrev. Also remove "# (#)"
 Foundation.ShipDef.USSProtostar.dTechs = { # (#)
 	"Alternate-Warp-FTL": { # (#)
 		"Setup": { # (#)
-			"Spore-Drive": {	"Nacelles": ["Proto Warp Nacelle"], "Core": ["Proto-Core"], }, # (#)
+			"Spore-Drive": {	"Nacelles": ["Proto Warp Nacelle"], "Core": ["Proto-Core"], "NormalRotation": [0, 0, 0], "EndRotation" : [0, 4.19, 0], "Time": 200, "ExitDirection": "Down"}, # (#)
 			"Body": "VasKholhr_Body",
 			"NormalModel":          shipFile,
 			"WarpModel":          "VasKholhr_WingUp",
@@ -293,6 +294,9 @@ def SporeDriveBasicConfigInfo(pShip):
 	pInstancedict = None
 	specificNacelleHPList = None 
 	specificCoreHPList = None
+	normalRot = None
+	endRot = None
+	exitDir = None
 	if pInstance:
 		pInstancedict = pInstance.__dict__ 
 		if pInstancedict.has_key("Alternate-Warp-FTL") and pInstancedict["Alternate-Warp-FTL"].has_key("Setup") and pInstancedict["Alternate-Warp-FTL"]["Setup"].has_key("Spore-Drive"):
@@ -301,9 +305,16 @@ def SporeDriveBasicConfigInfo(pShip):
 			if pInstancedict["Alternate-Warp-FTL"]["Setup"]["Spore-Drive"].has_key("Core"): # Use: if the tech has this field, use it. Must be a list. "[]" would mean that this field is skipped during checks.
 				specificCoreHPList = pInstancedict["Alternate-Warp-FTL"]["Setup"]["Spore-Drive"]["Core"]
 
+			if pInstancedict["Alternate-Warp-FTL"]["Setup"]["Spore-Drive"].has_key("NormalRotation"): # Use: if the tech has this field, use it. Must be a list. "[]" would mean that this field is skipped during checks.
+				normalRot = pInstancedict["Alternate-Warp-FTL"]["Setup"]["Spore-Drive"]["NormalRotation"]
+			if pInstancedict["Alternate-Warp-FTL"]["Setup"]["Spore-Drive"].has_key("EndRotation"): # Use: if the tech has this field, use it. Must be a list. "[]" would mean that this field is skipped during checks.
+				endRot = pInstancedict["Alternate-Warp-FTL"]["Setup"]["Spore-Drive"]["EndRotation"]
+			if pInstancedict["Alternate-Warp-FTL"]["Setup"]["Spore-Drive"].has_key("ExitDirection"): # Use: if the tech has this field, use it. Must be a list. "[]" would mean that this field is skipped during checks.
+				exitDir = pInstancedict["Alternate-Warp-FTL"]["Setup"]["Spore-Drive"]["ExitDirection"]
+
 	hardpointProtoNames, hardpointProtoBlacklist = AuxProtoElementNames()
 
-	return pInstance, pInstancedict, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist
+	return pInstance, pInstancedict, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, normalRot, endRot, exitDir
 
 # This is just another auxiliar function I made for this
 def SporeDriveDisabledCalculations(type, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, pSubsystem, pShip):
@@ -387,38 +398,23 @@ def CanTravel(self):
 					App.g_kLocalizationManager.Unload (pDatabase)
 		return "This ship is not equipped with Spore-Drive"
 
-	pImpulseEngines = pShip.GetImpulseEngineSubsystem()
-	if not pImpulseEngines:
-		return "No Impulse Engines"
+	#pImpulseEngines = pShip.GetImpulseEngineSubsystem()
+	#if not pImpulseEngines:
+	#	return "No Impulse Engines"
 
-	if (pImpulseEngines.GetPowerPercentageWanted() == 0.0):
-		# Ship is trying to warp with their engines off.
-		if bIsPlayer == 1:
-			pXO = App.CharacterClass_GetObject(App.g_kSetManager.GetSet("bridge"), "XO")
-			if pXO:
-				MissionLib.QueueActionToPlay(App.CharacterAction_Create(pXO, App.CharacterAction.AT_SAY_LINE, "EngineeringNeedPowerToEngines", None, 1))
-		return "Impulse Engines offline"
+	#if (pImpulseEngines.GetPowerPercentageWanted() == 0.0):
+	#	# Ship is trying to warp with their engines off.
+	#	if bIsPlayer == 1:
+	#		pXO = App.CharacterClass_GetObject(App.g_kSetManager.GetSet("bridge"), "XO")
+	#		if pXO:
+	#			MissionLib.QueueActionToPlay(App.CharacterAction_Create(pXO, App.CharacterAction.AT_SAY_LINE, "EngineeringNeedPowerToEngines", None, 1))
+	#	return "Impulse Engines offline"
 
-	pInstance, pInstancedict, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist = SporeDriveBasicConfigInfo(pShip)
+	pInstance, pInstancedict, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, _ , _ , _ = SporeDriveBasicConfigInfo(pShip)
 
 	pWarpEngines = pShip.GetWarpEngineSubsystem()
-	if pWarpEngines:
-		if pWarpEngines.IsDisabled():
-			if bIsPlayer == 1:
-				if pHelm:
-					App.CharacterAction_Create(pHelm, App.CharacterAction.AT_SAY_LINE, "CantWarp1", None, 1).Play()
-				else:
-					# No character, display subtitle only.
-					pDatabase = App.g_kLocalizationManager.Load ("data/TGL/Bridge Crew General.tgl")
-					if pDatabase:
-						pSequence = App.TGSequence_Create ()
-						pSubtitleAction = App.SubtitleAction_Create (pDatabase, "CantWarp1")
-						pSubtitleAction.SetDuration (3.0)
-						pSequence.AddAction (pSubtitleAction)
-						pSequence.Play ()
-						App.g_kLocalizationManager.Unload (pDatabase)
-			return "Warp Engines disabled"
-		if specificNacelleHPList == None or (specificNacelleHPList != None and len(specificNacelleHPList) > 0):
+	if specificNacelleHPList == None or (specificNacelleHPList != None and len(specificNacelleHPList) > 0):
+		if pWarpEngines:
 			totalSporeDriveEngines, onlineSporeDriveEngines = SporeDriveDisabledCalculations("Nacelle", specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, pWarpEngines, pShip)
 
 			if totalSporeDriveEngines <= 0 or onlineSporeDriveEngines <= 0:
@@ -438,23 +434,23 @@ def CanTravel(self):
 
 				return "Spore-Drive Engines disabled"
 		
-		if not pWarpEngines.IsOn():
-			if bIsPlayer == 1:
-				if pHelm:
-					App.CharacterAction_Create(pHelm, App.CharacterAction.AT_SAY_LINE, "CantWarp5", None, 1).Play()
-				else:
-					# No character, display subtitle only.
-					pDatabase = App.g_kLocalizationManager.Load("data/TGL/Bridge Crew General.tgl")
-					if pDatabase:
-						pSequence = App.TGSequence_Create()
-						pSubtitleAction = App.SubtitleAction_Create(pDatabase, "CantWarp5")
-						pSubtitleAction.SetDuration(3.0)
-						pSequence.AddAction(pSubtitleAction)
-						pSequence.Play()
-						App.g_kLocalizationManager.Unload(pDatabase)
-			return "Warp or Spore-Drive Engines offline"
-	else:
-		return "No Warp Engines"
+			if not pWarpEngines.IsOn():
+				if bIsPlayer == 1:
+					if pHelm:
+						App.CharacterAction_Create(pHelm, App.CharacterAction.AT_SAY_LINE, "CantWarp5", None, 1).Play()
+					else:
+						# No character, display subtitle only.
+						pDatabase = App.g_kLocalizationManager.Load("data/TGL/Bridge Crew General.tgl")
+						if pDatabase:
+							pSequence = App.TGSequence_Create()
+							pSubtitleAction = App.SubtitleAction_Create(pDatabase, "CantWarp5")
+							pSubtitleAction.SetDuration(3.0)
+							pSequence.AddAction(pSubtitleAction)
+							pSequence.Play()
+							App.g_kLocalizationManager.Unload(pDatabase)
+				return "Spore-Drive Engines offline"
+		else:
+			return "Spore-Drive Engines non-existant"
 
 	if specificCoreHPList != None and len(specificCoreHPList) > 0:
 		totalSporeDriveCores, onlineSporeDriveCores = SporeDriveDisabledCalculations("Core", specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, pWarpEngines, pShip)
@@ -495,48 +491,48 @@ def CanTravel(self):
 	#		return "Inside Nebula"
 
 	# See if we are in an asteroid field
-	AsteroidFields = pSet.GetClassObjectList(App.CT_ASTEROID_FIELD)
-	for i in AsteroidFields:
-		pField = App.AsteroidField_Cast(i)
-		if pField:
-			if pField.IsShipInside(pShip):
-				if bIsPlayer == 1:
-					if pHelm:
-						App.CharacterAction_Create(pHelm, App.CharacterAction.AT_SAY_LINE, "CantWarp4", None, 1).Play()
-					else:
-						# No character, display subtitle only.
-						pDatabase = App.g_kLocalizationManager.Load ("data/TGL/Bridge Crew General.tgl")
-						if pDatabase:
-							pSequence = App.TGSequence_Create ()
-							pSubtitleAction = App.SubtitleAction_Create (pDatabase, "CantWarp4")
-							pSubtitleAction.SetDuration (3.0)
-							pSequence.AddAction (pSubtitleAction)
-							pSequence.Play ()
-							App.g_kLocalizationManager.Unload (pDatabase)
-				return "Inside Asteroid Field"
+	#AsteroidFields = pSet.GetClassObjectList(App.CT_ASTEROID_FIELD)
+	#for i in AsteroidFields:
+	#	pField = App.AsteroidField_Cast(i)
+	#	if pField:
+	#		if pField.IsShipInside(pShip):
+	#			if bIsPlayer == 1:
+	#				if pHelm:
+	#					App.CharacterAction_Create(pHelm, App.CharacterAction.AT_SAY_LINE, "CantWarp4", None, 1).Play()
+	#				else:
+	#					# No character, display subtitle only.
+	#					pDatabase = App.g_kLocalizationManager.Load ("data/TGL/Bridge Crew General.tgl")
+	#					if pDatabase:
+	#						pSequence = App.TGSequence_Create ()
+	#						pSubtitleAction = App.SubtitleAction_Create (pDatabase, "CantWarp4")
+	#						pSubtitleAction.SetDuration (3.0)
+	#						pSequence.AddAction (pSubtitleAction)
+	#						pSequence.Play ()
+	#						App.g_kLocalizationManager.Unload (pDatabase)
+	#			return "Inside Asteroid Field"
 					
-	pStarbase12Set = App.g_kSetManager.GetSet("Starbase12")
-	if pStarbase12Set:
-		if pShip.GetContainingSet():
-			if pStarbase12Set.GetObjID() == pShip.GetContainingSet().GetObjID():
-				pStarbase12 = App.ShipClass_GetObject(pStarbase12Set, "Starbase 12")
-				if pStarbase12:
-					import AI.Compound.DockWithStarbase
-					if AI.Compound.DockWithStarbase.IsInViewOfInsidePoints(pShip, pStarbase12):
-						if bIsPlayer == 1:
-							if pHelm:
-								App.CharacterAction_Create(pHelm, App.CharacterAction.AT_SAY_LINE, "CantWarp3", None, 1).Play()
-							else:
-								# No character, display subtitle only.
-								pDatabase = App.g_kLocalizationManager.Load("data/TGL/Bridge Crew General.tgl")
-								if pDatabase:
-									pSequence = App.TGSequence_Create()
-									pSubtitleAction = App.SubtitleAction_Create(pDatabase, "CantWarp3")
-									pSubtitleAction.SetDuration(3.0)
-									pSequence.AddAction(pSubtitleAction)
-									pSequence.Play()
-									App.g_kLocalizationManager.Unload(pDatabase)
-						return "Inside Starbase12"
+	#pStarbase12Set = App.g_kSetManager.GetSet("Starbase12")
+	#if pStarbase12Set:
+	#	if pShip.GetContainingSet():
+	#		if pStarbase12Set.GetObjID() == pShip.GetContainingSet().GetObjID():
+	#			pStarbase12 = App.ShipClass_GetObject(pStarbase12Set, "Starbase 12")
+	#			if pStarbase12:
+	#				import AI.Compound.DockWithStarbase
+	#				if AI.Compound.DockWithStarbase.IsInViewOfInsidePoints(pShip, pStarbase12):
+	#					if bIsPlayer == 1:
+	#						if pHelm:
+	#							App.CharacterAction_Create(pHelm, App.CharacterAction.AT_SAY_LINE, "CantWarp3", None, 1).Play()
+	#						else:
+	#							# No character, display subtitle only.
+	#							pDatabase = App.g_kLocalizationManager.Load("data/TGL/Bridge Crew General.tgl")
+	#							if pDatabase:
+	#								pSequence = App.TGSequence_Create()
+	#								pSubtitleAction = App.SubtitleAction_Create(pDatabase, "CantWarp3")
+	#								pSubtitleAction.SetDuration(3.0)
+	#								pSequence.AddAction(pSubtitleAction)
+	#								pSequence.Play()
+	#								App.g_kLocalizationManager.Unload(pDatabase)
+	#					return "Inside Starbase12"
 	return 1
 
 ########
@@ -552,61 +548,44 @@ def CanContinueTravelling(self):
 		bIsPlayer = 1
 	pWarpEngines = pShip.GetWarpEngineSubsystem()
 	bStatus = 1
-	if pWarpEngines != None:
-		if pWarpEngines.IsDisabled() == 1:
-			if bIsPlayer == 1:
-				pSequence = App.TGSequence_Create ()
-				pSubtitleAction = App.SubtitleAction_CreateC("Brex: Warp engines are disabled sir, we are dropping out of warp.")
-				pSubtitleAction.SetDuration(3.0)
-				pSequence.AddAction(pSubtitleAction)
-				pSequence.Play()
-			bStatus = 0
 
-		elif pWarpEngines.IsOn() == 0:
-			if bIsPlayer == 1:
-				pSequence = App.TGSequence_Create ()
-				pSubtitleAction = App.SubtitleAction_CreateC("Brex: Warp engines are offline sir, we are dropping out of warp.")
-				pSubtitleAction.SetDuration(3.0)
-				pSequence.AddAction(pSubtitleAction)
-				pSequence.Play()
-			bStatus = 0
-
-		if bStatus > 0:
-			isEquipped = IsShipEquipped(pShip)
-			if not isEquipped:
+	isEquipped = IsShipEquipped(pShip)
+	if not isEquipped:
+		if bIsPlayer == 1:
+			pSequence = App.TGSequence_Create ()
+			pSubtitleAction = App.SubtitleAction_CreateC("Brex: We don't have Spore-Drive sir, we are dropping out of it.")
+			pSubtitleAction.SetDuration(3.0)
+			pSequence.AddAction(pSubtitleAction)
+			pSequence.Play()
+		bStatus = 0
+	else:
+		pInstance, pInstancedict, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, _ , _ , _ = SporeDriveBasicConfigInfo(pShip)
+		if pInstance and pInstancedict:
+			totalSporeDriveCores, onlineSporeDriveCores = SporeDriveDisabledCalculations("Core", specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, pWarpEngines, pShip)
+			if totalSporeDriveCores > 0 and onlineSporeDriveCores <= 0:
 				if bIsPlayer == 1:
 					pSequence = App.TGSequence_Create ()
-					pSubtitleAction = App.SubtitleAction_CreateC("Brex: We don't have Spore-Drive sir, we are dropping out of it.")
+					pSubtitleAction = App.SubtitleAction_CreateC("Brex: All Spore-Drive cores are offline or disabled sir, we are dropping out of Spore-Drive.")
 					pSubtitleAction.SetDuration(3.0)
 					pSequence.AddAction(pSubtitleAction)
 					pSequence.Play()
 				bStatus = 0
-			else:
-				pInstance, pInstancedict, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist = SporeDriveBasicConfigInfo(pShip)
-				if pInstance and pInstancedict:
-					totalSporeDriveCores, onlineSporeDriveCores = SporeDriveDisabledCalculations("Core", specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, pWarpEngines, pShip)
-					if totalSporeDriveCores > 0 and onlineSporeDriveCores <= 0:
-						if bIsPlayer == 1:
-							pSequence = App.TGSequence_Create ()
-							pSubtitleAction = App.SubtitleAction_CreateC("Brex: All Spore-Drive cores are offline or disabled sir, we are dropping out of Spore-Drive.")
-							pSubtitleAction.SetDuration(3.0)
-							pSequence.AddAction(pSubtitleAction)
-							pSequence.Play()
-						bStatus = 0
-					elif (specificNacelleHPList == None or (specificNacelleHPList != None and len(specificNacelleHPList) > 0)):
-						totalSporeDriveEngines, onlineSporeDriveEngines = SporeDriveDisabledCalculations("Nacelle", specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, pWarpEngines, pShip)
-						if totalSporeDriveEngines > 0 and onlineSporeDriveEngines <= 0:
-							if bIsPlayer == 1:
-								pSequence = App.TGSequence_Create ()
-								pSubtitleAction = App.SubtitleAction_CreateC("Brex: All Spore-Drive nacelles are offline or disabled sir, we are dropping out of Spore-Drive.")
-								pSubtitleAction.SetDuration(3.0)
-								pSequence.AddAction(pSubtitleAction)
-								pSequence.Play()
-							bStatus = 0
-				else:
+			elif (specificNacelleHPList == None or (specificNacelleHPList != None and len(specificNacelleHPList) > 0)):
+				totalSporeDriveEngines = 0
+				onlineSporeDriveEngines = 0
+				if pWarpEngines != None:
+					totalSporeDriveEngines, onlineSporeDriveEngines = SporeDriveDisabledCalculations("Nacelle", specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, pWarpEngines, pShip)
+				if pWarpEngines == None or (totalSporeDriveEngines > 0 and onlineSporeDriveEngines <= 0):
+					if bIsPlayer == 1:
+						pSequence = App.TGSequence_Create ()
+						pSubtitleAction = App.SubtitleAction_CreateC("Brex: All Spore-Drive nacelles are offline or disabled sir, we are dropping out of Spore-Drive.")
+						pSubtitleAction.SetDuration(3.0)
+						pSequence.AddAction(pSubtitleAction)
+						pSequence.Play()
 					bStatus = 0
-	else:
-		bStatus = 0
+		else:
+			bStatus = 0
+
 	return bStatus
 
 ########
@@ -617,6 +596,7 @@ def CanContinueTravelling(self):
 # [TGPoint3, TGPoint3]  -> a list of direction vectors ( [forward, up] )  to turn and align towards.
 ########
 def GetEngageDirection(self):
+	"""
 	# Get all the objects along the line that we'll
 	# be warping through.
 	debug(__name__ + ", GetEngageDirection")
@@ -662,6 +642,7 @@ def GetEngageDirection(self):
 	if vBetterDirection:
 		# Return the better direction to turn to, the Travel will take care of the rest.
 		return vBetterDirection
+	"""
 	return None
 
 ########
@@ -697,6 +678,8 @@ def PlaySporeDriveSound(pAction, pWS, sType, sRace):
 	if pShip == None or pPlayer == None:
 		return 0
 
+						
+
 	pSet = pShip.GetContainingSet()
 	pPlaSet = pPlayer.GetContainingSet()
 	if pSet == None or pPlaSet == None:
@@ -709,8 +692,8 @@ def PlaySporeDriveSound(pAction, pWS, sType, sRace):
 				sRace = "Default"
 			if sType == "Enter Warp":
 				sType = "EnterSporeDrive"
-			#elif sType == "Exit Warp":
-			#	sType = "ExitSporeDrive"
+			elif sType == "Exit Warp":
+				sType = "ExitSporeDrive"
 			else:
 				sType = ""
 			if sType != "":
@@ -726,6 +709,7 @@ def PlaySporeDriveSound(pAction, pWS, sType, sRace):
 				print "SporeDrive TravellingMethod: error while calling PlaySporeDriveSound:"
 				traceback.print_exc()
 	return 0
+
 def MainPartRotation(pAction, pWS, sRace, back):
 	
 	pShip = pWS.GetShip()
@@ -739,7 +723,7 @@ def MainPartRotation(pAction, pWS, sRace, back):
 					pInstancedict["Alternate-Warp-FTL"]["Setup"]["Spore-Drive"]["NormalRotation"] = [0, 0, 0]
 				specificBeginningRotation = pInstancedict["Alternate-Warp-FTL"]["Setup"]["Spore-Drive"]["NormalRotation"]
 				if not pInstancedict["Alternate-Warp-FTL"]["Setup"]["Spore-Drive"].has_key("EndRotation"):
-					pInstancedict["Alternate-Warp-FTL"]["Setup"]["Spore-Drive"]["EndRotation"] = [0, -4, 0]
+					pInstancedict["Alternate-Warp-FTL"]["Setup"]["Spore-Drive"]["EndRotation"] = [0, 4.19, 0]
 				specificEndRotation = pInstancedict["Alternate-Warp-FTL"]["Setup"]["Spore-Drive"]["EndRotation"]
 				if not pInstancedict["Alternate-Warp-FTL"]["Setup"]["Spore-Drive"].has_key("Time"):
 					pInstancedict["Alternate-Warp-FTL"]["Setup"]["Spore-Drive"]["Time"] = 200 # in centi-seconds
@@ -764,7 +748,36 @@ def MainPartRotation(pAction, pWS, sRace, back):
 				performRotationAndScaleAdjust(pShip, pShip, dOptionsList, 0, 0, 0, iRotStepX, iRotStepY, iRotStepZ, 0)
 	return 0
 
-# TO-DO ALSO UPDATE THE FUNCTION THAT CHECKS IF THERE ARE THINGS NEARBY TAHT PREVENTS US WARPING
+
+def CustomBoostShipSpeed(pAction, sCustomActionsScript, ShipID, bBoost, fBoostScale, vDir):
+
+	pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), ShipID)
+	if pShip:
+		vDirec = None
+		if vDir != None and vDir != "Fwd" and vDir != "Forward":
+			if vDir == "Back":
+				vDirec = pShip.GetWorldBackwardTG()
+			elif vDir == "Up":
+				vDirec = pShip.GetWorldUpTG()
+			elif vDir == "Down":
+				vDirec = pShip.GetWorldDownTG()
+			elif vDir == "Right":
+				vDirec = pShip.GetWorldRightTG()
+			elif vDir == "Left":
+				vDirec = pShip.GetWorldLeftTG()
+
+		if sCustomActionsScript != None:
+			try:
+				banana = __import__(sCustomActionsScript, globals(), locals(), ["BoostShipSpeed"])
+			except:
+				banana = __import__(sCustomActionsScript, globals(), locals())
+
+			if banana and hasattr(banana, "BoostShipSpeed"):
+				banana.BoostShipSpeed(pAction, ShipID, bBoost, fBoostScale, vDirec)
+
+	return 0
+
+
 def SetupSequence(self):
 	# you can use this function as an example on how to create your own '.SetupSequence(self)' method for your
 	# custom travelling method.
@@ -797,6 +810,12 @@ def SetupSequence(self):
 
 	if (pShip == None):
 		return
+
+	pInstance = findShipInstance(pShip)
+	
+	_, _, _, _, _, _, _ , _ , myExitDirection = SporeDriveBasicConfigInfo(pShip)
+	if myExitDirection == None or myExitDirection == "":
+		myExitDirection = "Down"
 
 	# Get the destination set name from the module name, if applicable.
 	pcDest = None
@@ -839,6 +858,7 @@ def SetupSequence(self):
 		pEngageWarpSeq.AddAction(pCinematicStart, None)
 
 		pDisallowInput = App.TGScriptAction_Create("MissionLib", "RemoveControl")
+		#pEngageWarpSeq.AddAction(pDisallowInput, None)
 		pEngageWarpSeq.AddAction(pDisallowInput, pCinematicStart)
 
 	#pWarpSoundAction1 = App.TGScriptAction_Create(sCustomActionsScript, "PlayWarpSound", pWS, "Enter Warp", sRace)
@@ -860,7 +880,7 @@ def SetupSequence(self):
 
 	fCount = 0.0
 	while fCount < fTimeToFlash:
-		pRotateVessel = App.TGScriptAction_Create(__name__, "MainPartRotation", pWS, sRace, 0) # TO-DO ALSO ADD AN UPDATE POSITIONS THING FOR EXIT SEQUENCE
+		pRotateVessel = App.TGScriptAction_Create(__name__, "MainPartRotation", pWS, sRace, 0)
 		if pRotateVessel:
 			pEngageWarpSeq.AddAction(pRotateVessel, None, fCount)
 		if pWS.Travel.bTractorStat == 1:
@@ -924,11 +944,11 @@ def SetupSequence(self):
 
 		# Create the warp flash.
 		pFlashAction2 = App.TGScriptAction_Create("Actions.EffectScriptActions", "WarpFlash", pShip.GetObjID())
-		pExitWarpSeq.AddAction(pFlashAction2, pHideShip, 0.1)
+		pExitWarpSeq.AddAction(pFlashAction2, pHideShip, 0.7)
 
 		# Un-Hide the ship
 		pUnHideShip = App.TGScriptAction_Create(sCustomActionsScript, "HideShip", pShip.GetObjID(), 0)
-		pExitWarpSeq.AddAction(pUnHideShip, pFlashAction2, 0.1)
+		pExitWarpSeq.AddAction(pUnHideShip, pFlashAction2, 0.01)
 
 		# Un-hide the Towee, plus if it exists, also set up the maintain chain
 		## REMEMBER: any changes in the time of this sequence will also require a re-check of this part, to make sure
@@ -946,25 +966,29 @@ def SetupSequence(self):
 					break
 
 		# Give it a little boost
-		pBoostAction = App.TGScriptAction_Create(sCustomActionsScript, "BoostShipSpeed", pShip.GetObjID(), 1, 1.0)
-		pExitWarpSeq.AddAction(pBoostAction, pUnHideShip, 0.01)
+		#pBoostAction = App.TGScriptAction_Create(sCustomActionsScript, "BoostShipSpeed", pShip.GetObjID(), 1, 50.0)
+		#pExitWarpSeq.AddAction(pBoostAction, pUnHideShip, 0.01)
+
+		pBoostAction = App.TGScriptAction_Create(__name__, "CustomBoostShipSpeed", sCustomActionsScript, pShip.GetObjID(), 1, 300.0, myExitDirection)
+		pExitWarpSeq.AddAction(pBoostAction, pUnHideShip)
 
 		# TO-DO Replace with a spore-drive flash and sound
+		# TO-DO ALSO ADD AN UPDATE POSITIONS THING FOR EXIT SEQUENCE, so that sequence is not called?
 		# Play the vushhhhh of exiting warp
 		#pWarpSoundAction2 = App.TGScriptAction_Create(sCustomActionsScript, "PlayWarpSound", pWS, "Exit Warp", sRace)
 		pWarpSoundAction2 = App.TGScriptAction_Create(__name__, "PlaySporeDriveSound", pWS, "Exit Warp", sRace)
 		pExitWarpSeq.AddAction(pWarpSoundAction2, pBoostAction)
 	
 		# Make the ship return to normal speed.
-		pUnBoostAction = App.TGScriptAction_Create(sCustomActionsScript, "BoostShipSpeed", pShip.GetObjID(), 0, 1.0)
-		pExitWarpSeq.AddAction(pUnBoostAction, pWarpSoundAction2, 0.01)
+		pUnBoostAction = App.TGScriptAction_Create(sCustomActionsScript, "BoostShipSpeed", pShip.GetObjID(), -1, 1.0)
+		pExitWarpSeq.AddAction(pUnBoostAction, pWarpSoundAction2, 2.0)
 
 		# And finally finish the exit sequence
 		# actually, just put up a empty action, the Traveler system automatically puts his exit sequence action at the
 		# end of the sequence, and his exit action is necessary. However I want it to trigger at the right time, and doing
 		# this, i'll achieve that.
 		pExitWarpSeqEND = App.TGScriptAction_Create(sCustomActionsScript, "NoAction")
-		pExitWarpSeq.AddAction(pExitWarpSeqEND, pUnBoostAction, 0.01)
+		pExitWarpSeq.AddAction(pExitWarpSeqEND, pUnBoostAction, 1.5)
 
 	###########################################################################################
 	# end of the not-required stuff that sets up my sequences
@@ -1019,12 +1043,12 @@ def GetExitedTravelEvents(self):
 	pEvent.SetDestination(self.Ship)
 	pEvent.SetString("warp")
 
-	pEvent2 = App.TGStringEvent_Create()
-	pEvent2.SetEventType(DISENGAGING_ALTERNATEFTLSUBMODEL)
-	pEvent2.SetDestination(self.Ship)
-	pEvent2.SetString("warp")
+	#pEvent2 = App.TGStringEvent_Create()
+	#pEvent2.SetEventType(DISENGAGING_ALTERNATEFTLSUBMODEL)
+	#pEvent2.SetDestination(self.Ship)
+	#pEvent2.SetString("warp")
 
-	return [ pEvent, pEvent2 ]
+	return [ pEvent ] #, pEvent2 
 
 ########
 # Method to return the travel set to use.
