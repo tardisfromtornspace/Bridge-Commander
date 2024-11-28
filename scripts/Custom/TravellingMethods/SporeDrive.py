@@ -854,16 +854,15 @@ def SetupSequence(self):
 		fEntryDelayTime = fEntryDelayTime + 1.0
 
 		# Force a noninteractive cinematic view in space..
-		pCinematicStart = App.TGScriptAction_Create("Actions.CameraScriptActions", "StartCinematicMode", 0) # TO-DO LOOK FOR A BETTER CMAERA MODE SO THE SPIN DOES NOT GO CRAZY - CHECK ALTERNATE F9 CAMERA MODES
+		pCinematicStart = App.TGScriptAction_Create("Actions.CameraScriptActions", "StartCinematicMode", 0)
 		pEngageWarpSeq.AddAction(pCinematicStart, None)
 
 		pDisallowInput = App.TGScriptAction_Create("MissionLib", "RemoveControl")
 		#pEngageWarpSeq.AddAction(pDisallowInput, None)
 		pEngageWarpSeq.AddAction(pDisallowInput, pCinematicStart)
 
-	#pWarpSoundAction1 = App.TGScriptAction_Create(sCustomActionsScript, "PlayWarpSound", pWS, "Enter Warp", sRace)
 	pWarpSoundAction1 = App.TGScriptAction_Create(__name__, "PlaySporeDriveSound", pWS, "Enter Warp", sRace)
-	pEngageWarpSeq.AddAction(pWarpSoundAction1, None, 0.01) #fEntryDelayTime + 0.2)
+	pEngageWarpSeq.AddAction(pWarpSoundAction1, None, 0.01)
 	
 	pBoostAction = App.TGScriptAction_Create(sCustomActionsScript, "BoostShipSpeed", pShip.GetObjID(), 1, 1.0)
 	pEngageWarpSeq.AddAction(pBoostAction, pWarpSoundAction1, 0.01)
@@ -893,12 +892,9 @@ def SetupSequence(self):
 
 	# TO-DO Create also a USS Sovereign Slipstream drive based on this, using this sequence and extracting the engage and disengage events
 	# TO-DO Maybe create two ship clone copies?
-	# TO-DO Create flash sound
-	#pWarpSoundAction0 = App.TGScriptAction_Create(__name__, "PlaySporeDriveSound", pWS, "Enter Warp", sRace)
-	#pEngageWarpSeq.AddAction(pWarpSoundAction0, None, 0)
+	# TO-DO Create flash
 	# Create the warp flash.
 	# TO-DO Replace with a spore-drive flash
-	# TO-DO MAYBE ALSO MAKE THE MAIN PART ROTATE
 	pFlashAction1 = App.TGScriptAction_Create("Actions.EffectScriptActions", "WarpFlash", pShip.GetObjID())
 	pEngageWarpSeq.AddAction(pFlashAction1, None, fTimeToFlash)
 
@@ -972,8 +968,7 @@ def SetupSequence(self):
 		pBoostAction = App.TGScriptAction_Create(__name__, "CustomBoostShipSpeed", sCustomActionsScript, pShip.GetObjID(), 1, 300.0, myExitDirection)
 		pExitWarpSeq.AddAction(pBoostAction, pUnHideShip)
 
-		# TO-DO Replace with a spore-drive flash and sound
-		# TO-DO ALSO ADD AN UPDATE POSITIONS THING FOR EXIT SEQUENCE, so that sequence is not called?
+		# TO-DO Replace with a spore-drive flash
 		# Play the vushhhhh of exiting warp
 		#pWarpSoundAction2 = App.TGScriptAction_Create(sCustomActionsScript, "PlayWarpSound", pWS, "Exit Warp", sRace)
 		pWarpSoundAction2 = App.TGScriptAction_Create(__name__, "PlaySporeDriveSound", pWS, "Exit Warp", sRace)

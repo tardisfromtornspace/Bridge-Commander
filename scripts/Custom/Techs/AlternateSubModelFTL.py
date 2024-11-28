@@ -710,7 +710,7 @@ Foundation.ShipDef.USSProtostar.dTechs = { # (#)
 #################################################################################################################
 #
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.73",
+	    "Version": "0.74",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -2318,7 +2318,7 @@ def PartsForWeaponProtoState(pShip, techP):
 		
 		# do the move
 		initialWait = 0.1 # In seconds (so 10 centiseconds)
-		while(iTime < (fDuration + initialWait)):
+		while(iTime <= (fDuration + initialWait)):
 			if iTime == 0.0:
 				iWait = initialWait # we wait for the first run
 			else:
@@ -2466,7 +2466,7 @@ def StartingWarpCommon(pObject, pEvent, techP, subPosition="Warp"):
 
 		# do the move
 		initialWait = 0.1 # In seconds (so 10 centiseconds)
-		while(iTime < (fDuration + initialWait)):
+		while(iTime <= (fDuration + initialWait)):
 			if iTime == 0.0:
 				iWait = initialWait # we wait for the first run
 			else:
@@ -2583,7 +2583,7 @@ def ExitingProtoWarp(pAction, pShip, techP, subPosition):
 		
 		# do the move
 		initialWait = 0.1 # In seconds (so 10 centiseconds)
-		while(iTime < (fDuration + initialWait)):
+		while(iTime <= (fDuration + initialWait)):
 			if iTime == 0.0:
 				iWait = initialWait # we wait for the first run
 			else:
