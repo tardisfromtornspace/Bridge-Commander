@@ -1,4 +1,7 @@
 == Changelog ==
+0.3.4 - Updates:
+  * Added a fragment of the Spore Drive - still missing proper flash textures and in-system interception!
+  * Updated Documentation to fill these gaps.
 0.3.3 - Updates:
   * Updated AlternateSubModelFTL to 0.71, fixing a potential issue related with different MissionLib files.
 0.3.2 - Updates:
@@ -11,7 +14,7 @@
 0.1 - First unofficial release, for testing
 
 == What does this mod do ==
-This mod adds a USS Protostar and USS Prodigy from Star Trek Prodigy, alongside with certain technologies for Proto-Warp and a SubModels-derivated file that supports other FTL methods and mobility fix improvements. All of them have their own detailed instruction manuals inside the files to ensure people can use those techs easily.
+This mod adds a USS Protostar and USS Prodigy from Star Trek Prodigy, alongside with certain technologies for Proto-Warp and a SubModels-derivated file that supports other FTL methods and mobility fix improvements. Additionally, a modified USS Discovery (Crossfield Class) with Spore drive has been added. All of them have their own detailed instruction manuals inside the files to ensure people can use those techs easily.
 
 == Dependencies ==
 All of these must be installed before installing this mod, in this order:
@@ -19,6 +22,7 @@ All of these must be installed before installing this mod, in this order:
 * GalaxyCharts (KM has this mod already installed. Required for ProtoWarp TravellingMethod and any method you may want derived from that).
 * All the dependencies for this mod + the mod: https://www.gamefront.com/games/bridge-commander/file/stbc-babylon-5-mod
 ** From here, HullPolarizer is the most used, but also the file "FIX-FoundationTech20050703ShipInstanceDetach.py", which solves problems related with iterating lTechs when detaching and removing from such FoundationTech list.
+* This mod, for the ST:Discovery original Crossfield class: https://www.gamefront.com/games/bridge-commander/file/crossfield-class
 
 == Credits ==
 * Everyone involved in Foundation - without you this would have been a real pain to do (please read the separate Foundation.txt license) - Banbury, Dasher42, DigitalFriend, MLeo, Nanobyte and Sleight42, among others.
@@ -26,10 +30,13 @@ All of these must be installed before installing this mod, in this order:
 * Dasher42 for reminding me of licensing.
 * USS Sovereign for some DS9FX advice regarding timers, and inspired in one of DS9FX Pulsar files for improved rotations.
 * USS Frontier for GalaxyCharts.
-* Defiant for some scripts that drew inspiration, particularly the original SubModels.
-* That Guy... Brian (ThatGuyBrian) - for Model Conversion of the original Protostar model used, and for telling me to install Nifskope, that tool has proven to be very useful to me.
-** Model extracted from Star Trek Prodigy: Supernova. https://drive.google.com/file/d/1BMaT2_i5KBIqZ5Am1Hr4vK-81yZQ9GsE/view
+* Defiant for some scripts that drew inspiration (or were practically used as a base), particularly the original SubModels.
+* WileyCoyote (michaelwileyart@gmail.com) for the Crossfield Phaser sounds (already mentioned of the Crossfield's separate readme).
+* That Guy... Brian (ThatGuyBrian, trekker12@hotmail.com) - for Model Conversion of the original Protostar and Crossfield models (already mentioned on the Crossfield's separate readme), the Crossfield original HP (already mentioned on the Crossfield's separate readme), and for telling me to install Nifskope, that tool has proven to be very useful to me.
+** Prodigy model extracted from Star Trek Prodigy: Supernova. https://drive.google.com/file/d/1BMaT2_i5KBIqZ5Am1Hr4vK-81yZQ9GsE/view
+** Original Crossfield model (from the aforementioned https://www.gamefront.com/games/bridge-commander/file/crossfield-class) ported from Star Trek: Adversaries (https://store.steampowered.com/app/815040/Star_Trek_Adversaries/)
 * Grey da Derg#2305 aka Greystar, and 𝕟𝕒𝕣𝕣𝕠𝕨𝕔𝕨𝕪𝕗𝕖 aka Hexagonal_Nexul for the original Hardpointing/Sounds/Scripting from BC Remastered Orion (from which this ship was taken from) and an updated version.
+* Original ST:Discovery torpedoes by Zambie Zan, alexandre.marques@gmail.com (already mentioned on the Crossfield's separate readme).
 * Everyone else from the other mods I mentioned, which have their own readmes crediting them - please feel free to contact me (tardis#2540 on Discord, CharaToLoki on Gamefront) to correct any potential issues, thank you.
 * Michael Giachinno for the ST Prodigy Intro music.
 * Bonnie Gordon for the Protostar computer voice.
