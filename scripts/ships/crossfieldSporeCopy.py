@@ -6,7 +6,7 @@ def GetShipStats():
 		"FilenameHigh": "data/Models/Ships/Crossfield/crossfield.nif",
 		"FilenameMed": "data/Models/Ships/Crossfield/crossfield.nif",
 		"FilenameLow": "data/Models/Ships/Crossfield/crossfield.nif",
-		"Name": "USSProtostarPP",
+		"Name": "crossfieldSporeCopy",
 		"HardpointFile": "USSProtostarDummy",
 		"Species": Multiplayer.SpeciesToShip.GALOR
 		 }

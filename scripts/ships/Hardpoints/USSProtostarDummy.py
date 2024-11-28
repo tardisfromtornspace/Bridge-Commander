@@ -99,7 +99,7 @@ ImpulseEngines.SetMaxAccel(2.000000)
 ImpulseEngines.SetMaxAngularAccel(0.750000)
 ImpulseEngines.SetMaxAngularVelocity(0.750000)
 ImpulseEngines.SetMaxSpeed(8.000000)
-ImpulseEngines.SetEngineSound("Cardassian Engines")
+ImpulseEngines.SetEngineSound("")
 App.g_kModelPropertyManager.RegisterLocalTemplate(ImpulseEngines)
 #################################################
 WarpEngines = App.WarpEngineProperty_Create("Warp Engines")

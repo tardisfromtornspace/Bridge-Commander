@@ -17,6 +17,7 @@
 # "Spore-Drive": is the name of the key. This is the bare minimum for the technology to work
 # "Nacelles": is the name of a key whose value indicates a list of which warp engine property children (nacelles) are part of the Spore-Drive system. If all are disabled/destroyed, Spore-Drive will not engage. If this field does not exist, it will check all warp hardpoints containing "SporeDrive", "spore drive" or "spore-drive" (case-insensitive). Leave as "Nacelles": [] to make it skip this disabled check.
 # "Core": is the name of a key whose value indicates a list of which hardpoint properties (not nacelles) are part of the Spore-Drive system. If all are disabled/destroyed, Spore-Drive will not engage either. If this field does not exist or "Core": [] this check will be skipped.
+# "Rotation": TO-DO
 """
 #Sample Setup: replace "USSProtostar" for the appropiate abbrev. Also remove "# (#)"
 Foundation.ShipDef.USSProtostar.dTechs = { # (#)
@@ -718,14 +719,52 @@ def PlaySporeDriveSound(pAction, pWS, sType, sRace):
 		except:
 			try:
 				sRace = "Default"
-				if sType == "Enter Warp":
+				if sType != "":
 					sFile = "sfx\\SporeDrive\\"+sRace+"\\"+sRace+sType+".wav"
 					Custom.GravityFX.GravityFXlib.PlaySound(sFile, sRace+" "+sType+" Sound")
 			except:
 				print "SporeDrive TravellingMethod: error while calling PlaySporeDriveSound:"
 				traceback.print_exc()
 	return 0
+def MainPartRotation(pAction, pWS, sRace, back):
+	
+	pShip = pWS.GetShip()
+	if pShip:
+		pInstance = findShipInstance(pShip) # On this case, IsShipEquipped(pShip) already checked this for us - HOWEVER do not forget to check if you modify the script
+		pInstancedict = None
+		if pInstance:
+			pInstancedict = pInstance.__dict__ 
+			if pInstancedict.has_key("Alternate-Warp-FTL") and pInstancedict["Alternate-Warp-FTL"].has_key("Setup") and pInstancedict["Alternate-Warp-FTL"]["Setup"].has_key("Spore-Drive"):
+				if not pInstancedict["Alternate-Warp-FTL"]["Setup"]["Spore-Drive"].has_key("NormalRotation"):
+					pInstancedict["Alternate-Warp-FTL"]["Setup"]["Spore-Drive"]["NormalRotation"] = [0, 0, 0]
+				specificBeginningRotation = pInstancedict["Alternate-Warp-FTL"]["Setup"]["Spore-Drive"]["NormalRotation"]
+				if not pInstancedict["Alternate-Warp-FTL"]["Setup"]["Spore-Drive"].has_key("EndRotation"):
+					pInstancedict["Alternate-Warp-FTL"]["Setup"]["Spore-Drive"]["EndRotation"] = [0, -4, 0]
+				specificEndRotation = pInstancedict["Alternate-Warp-FTL"]["Setup"]["Spore-Drive"]["EndRotation"]
+				if not pInstancedict["Alternate-Warp-FTL"]["Setup"]["Spore-Drive"].has_key("Time"):
+					pInstancedict["Alternate-Warp-FTL"]["Setup"]["Spore-Drive"]["Time"] = 200 # in centi-seconds
+				myTime = pInstancedict["Alternate-Warp-FTL"]["Setup"]["Spore-Drive"]["Time"]
+				
+				dOptionsList = { "Experimental": 1}
 
+				iRotStepX =  0
+				iRotStepY =  0
+				iRotStepY =  0
+
+				if myTime != 0:
+					iRotStepX =  (specificEndRotation[0] - specificBeginningRotation[0])/(myTime)
+					iRotStepY =  (specificEndRotation[1] - specificBeginningRotation[1])/(myTime)
+					iRotStepZ =  (specificEndRotation[2] - specificBeginningRotation[2])/(myTime)
+				if back != 0:
+					iRotStepX = - iRotStepX
+					iRotStepY = - iRotStepY
+					iRotStepZ = - iRotStepZ
+
+				from Custom.Techs.AlternateSubModelFTL import performRotationAndScaleAdjust
+				performRotationAndScaleAdjust(pShip, pShip, dOptionsList, 0, 0, 0, iRotStepX, iRotStepY, iRotStepZ, 0)
+	return 0
+
+# TO-DO ALSO UPDATE THE FUNCTION THAT CHECKS IF THERE ARE THINGS NEARBY TAHT PREVENTS US WARPING
 def SetupSequence(self):
 	# you can use this function as an example on how to create your own '.SetupSequence(self)' method for your
 	# custom travelling method.
@@ -796,20 +835,18 @@ def SetupSequence(self):
 		fEntryDelayTime = fEntryDelayTime + 1.0
 
 		# Force a noninteractive cinematic view in space..
-		pCinematicStart = App.TGScriptAction_Create("Actions.CameraScriptActions", "StartCinematicMode", 0)
+		pCinematicStart = App.TGScriptAction_Create("Actions.CameraScriptActions", "StartCinematicMode", 0) # TO-DO LOOK FOR A BETTER CMAERA MODE SO THE SPIN DOES NOT GO CRAZY - CHECK ALTERNATE F9 CAMERA MODES
 		pEngageWarpSeq.AddAction(pCinematicStart, None)
-
-		#pWarpSoundAction0 = App.TGScriptAction_Create(__name__, "PlayProtoWarpSound", pWS, "Enter Warp", sRace)
-		#pEngageWarpSeq.AddAction(pWarpSoundAction0, None, 0)
 
 		pDisallowInput = App.TGScriptAction_Create("MissionLib", "RemoveControl")
 		pEngageWarpSeq.AddAction(pDisallowInput, pCinematicStart)
 
-	pWarpSoundAction1 = App.TGScriptAction_Create(sCustomActionsScript, "PlayWarpSound", pWS, "Enter Warp", sRace)
-	pEngageWarpSeq.AddAction(pWarpSoundAction1, None, fEntryDelayTime + 0.2)
+	#pWarpSoundAction1 = App.TGScriptAction_Create(sCustomActionsScript, "PlayWarpSound", pWS, "Enter Warp", sRace)
+	pWarpSoundAction1 = App.TGScriptAction_Create(__name__, "PlaySporeDriveSound", pWS, "Enter Warp", sRace)
+	pEngageWarpSeq.AddAction(pWarpSoundAction1, None, 0.01) #fEntryDelayTime + 0.2)
 	
 	pBoostAction = App.TGScriptAction_Create(sCustomActionsScript, "BoostShipSpeed", pShip.GetObjID(), 1, 1.0)
-	pEngageWarpSeq.AddAction(pBoostAction, pWarpSoundAction1, 0.7)
+	pEngageWarpSeq.AddAction(pBoostAction, pWarpSoundAction1, 0.01)
 
 	try:
 		import Custom.NanoFXv2.WarpFX.WarpFX
@@ -819,15 +856,20 @@ def SetupSequence(self):
 	except:
 		pass
 
-	fTimeToFlash = (fEntryDelayTime*2) + (2*(App.WarpEngineSubsystem_GetWarpEffectTime()/2.0))
-	if pWS.Travel.bTractorStat == 1:
-		fCount = 0.0
-		while fCount < fTimeToFlash:
+	fTimeToFlash = (fEntryDelayTime) + (2*(App.WarpEngineSubsystem_GetWarpEffectTime()/2.0))
+
+	fCount = 0.0
+	while fCount < fTimeToFlash:
+		pRotateVessel = App.TGScriptAction_Create(__name__, "MainPartRotation", pWS, sRace, 0) # TO-DO ALSO ADD AN UPDATE POSITIONS THING FOR EXIT SEQUENCE
+		if pRotateVessel:
+			pEngageWarpSeq.AddAction(pRotateVessel, None, fCount)
+		if pWS.Travel.bTractorStat == 1:
 			pMaintainTowingAction = App.TGScriptAction_Create(sCustomActionsScript, "MaintainTowingAction", pWS)
 			pEngageWarpSeq.AddAction(pMaintainTowingAction, None, fCount)
-			fCount = fCount + 0.01
-			if fCount >= fTimeToFlash:
-				break
+
+		fCount = fCount + 0.01
+		if fCount >= fTimeToFlash:
+			break
 
 	# TO-DO Create also a USS Sovereign Slipstream drive based on this, using this sequence and extracting the engage and disengage events
 	# TO-DO Maybe create two ship clone copies?
@@ -909,7 +951,8 @@ def SetupSequence(self):
 
 		# TO-DO Replace with a spore-drive flash and sound
 		# Play the vushhhhh of exiting warp
-		pWarpSoundAction2 = App.TGScriptAction_Create(sCustomActionsScript, "PlayWarpSound", pWS, "Exit Warp", sRace)
+		#pWarpSoundAction2 = App.TGScriptAction_Create(sCustomActionsScript, "PlayWarpSound", pWS, "Exit Warp", sRace)
+		pWarpSoundAction2 = App.TGScriptAction_Create(__name__, "PlaySporeDriveSound", pWS, "Exit Warp", sRace)
 		pExitWarpSeq.AddAction(pWarpSoundAction2, pBoostAction)
 	
 		# Make the ship return to normal speed.
