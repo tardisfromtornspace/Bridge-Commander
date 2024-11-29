@@ -1,4 +1,7 @@
 == Changelog ==
+0.3.5 - Updates:
+  * Updated AlternateSubModelFTL to 0.75 to support the option to only perform entry or exit FTL sequences for each part and FTL method individually.
+  * Updated SporeDrive to 0.15 to cover the new update to AlternateSubModelFTL.
 0.3.4 - Updates:
   * Added a fragment of the Spore Drive - still missing proper flash textures and in-system interception!
   * Updated Documentation to fill these gaps.

@@ -65,9 +65,11 @@
 # ---------------- (0) "SetScale": indicates the model size of a subpart. Do not include to have same behaviour as SubModels (regular scale but if the part has a too-extreme rotation (like, at least 90 degrees) it will suffer an asintotic process where it suddenly becomes small and then extremely big and inverted). <k:v>
 # ---------------- (0) "Experimental": a dictionary entry which establishes if the ship uses experimental rotation or not. "Experimental": 0 or entry not added implies it uses the legacy submodels style of rotation.
 # ------------------------ Legacy rotations are better for backwards-compatibility and have little to none drifting issues, but only work for a particular quadrant of rotation ( -90, 90 ) degrees and are best for ( -45 degrees, 45 degrees) amplitude. They share most of the issues SubModels rotations have (including that beyond the optimal movement range the subparts will suffer an unwanted size change, more prominent the more we approach to the quadrant limit), except that they are more optimized and thus will not suffer accidental drifting nor will cause memory issues.
-# ------------------------ Experimental rotations are best suited if the ship requires to rotate beyond the amplitude legacy provides, but require to use a tiny bit more of memory and suffer from an extremely slight ~r.c~ rotation drift due to float number innacuracies. Experimental rotation degrees are aproximately 1:1 with legacy rotations of the same quadrant, but some slight differences may arise due to slight implementation differences and the legacy quadrant limit.
+# ------------------------ Experimental rotations are best suited if the ship requires to rotate beyond the amplitude legacy provides, but require to use a tiny bit more of memory and suffer from an extremely slight ~r.c~ rotation drift due to float number innacuracies. Experimental rotation degrees are aproximately 1:1 with legacy rotations of the same quadrant, but some slight differences may arise due to slight implementation differences and the legacy quadrant limit. Please notice that because this script was made with backwards compatibility with SubModels, some of the quirks related with SubModels regarding time needed to rotate and angles covered still affect legacy and experimental angles.
 # ---------------- (0) "ResetToPrevious": a dictionary entry whose only purpose is to indicate, when value 1, that a nacelle's position should always return to the pre-FTL position after performing the FTL entry transformation, or the supposed initial FTL positions after exiting FTL - only recommended to be used for asymmetric movement methods, where only the startup or end movement sequences happen (f.ex. Spore Displacement Drive, where the only movement done is at the beginning).
-#
+# ---------------- (0) "Ignore<insert_name_here>Entry": if this value is set to 1, that piece will not rotate nor move when the FTL Entry event for <insert_name_here> happens. Useful for when a ship has some pieces that require to do only a part of the action while others need both entry and exit.
+# ---------------- (0) "Ignore<insert_name_here>Exit": if this value is set to 1, that piece will not rotate nor move when the FTL Exit event for <insert_name_here> happens. Useful for when a ship has some pieces that require to do only a part of the action while others need both entry and exit (f.ex. a 32nd Century Crossfield may need to have the main body parts ignore the exit revert sequence, but still needs to have two of its nacelles re-attach and float when engaging and disengaging Spore Drive - this could be alternatively done in other ways too but this option brings more flexibility).
+# 
 """
 #Sample Setup: replace "USSProtostar" for the appropiate abbrev
 Foundation.ShipDef.USSProtostar.dTechs = {
@@ -103,6 +105,8 @@ Foundation.ShipDef.USSProtostar.dTechs = {
 			"Experimental": 0,
 			"SetScale": 1.0,
 			"ResetToPrevious": 0,
+			"IgnoreProto-WarpEntry": 0,
+			"IgnoreProto-WarpExit": 0,
 			"Position":             [0, 0, 0],
 			"Rotation":             [0, 0, 0], # normal Rotation used if not Red Alert and if not Warp
 			"AttackRotation":         [0, -0.6, 0],
@@ -120,7 +124,9 @@ Foundation.ShipDef.USSProtostar.dTechs = {
 		"Starboard Wing":     ["VasKholhr_Starboardwing", {
 			"Experimental": 0,
 			"SetScale": 1.0,
-			"ResetToPrevious": 0, # TO-DO CLARIFY
+			"ResetToPrevious": 0,
+			"IgnoreProto-WarpEntry": 0,
+			"IgnoreProto-WarpExit": 0,
 			"Position":             [0, 0, 0],
 			"Rotation":             [0, 0, 0],
 			"AttackRotation":         [0, 0.6, 0],
@@ -710,7 +716,7 @@ Foundation.ShipDef.USSProtostar.dTechs = { # (#)
 #################################################################################################################
 #
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.74",
+	    "Version": "0.75",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -2282,7 +2288,7 @@ def PartsForWeaponProtoState(pShip, techP):
 			print "AlternateSubModelFTL: nacelle ship missing. Aborting for this nacelle..."
 			# The submodel is missing, for example because the ship file is missing.
 			continue
-	
+
 		# set the id for this move
 		iThisMovID = item[1]["curMovID"] + 1
 		item[1]["curMovID"] = iThisMovID
@@ -2421,6 +2427,7 @@ def StartingWarpCommon(pObject, pEvent, techP, subPosition="Warp"):
 	subPositionDuration = str(subPosition) + "Duration"
 	subPositionRotation = str(subPosition) + "Rotation"
 	subPositionPosition = str(subPosition) + "Position"
+	subPositionIg = "Ignore" + str(subPosition) + "Entry"
 	for item in pInstance.AlternateFTLSubModelOptionsList:
 		# setup is not a submodel
 		if item[0] == "Setup":
@@ -2431,6 +2438,9 @@ def StartingWarpCommon(pObject, pEvent, techP, subPosition="Warp"):
 		if item[0] == None or not hasattr(item[0], "GetObjID"):
 			print "AlternateSubModelFTL: nacelle ship missing. Aborting for this type..."
 			# The submodel is missing, for example because the ship file is missing.
+			continue
+
+		if item[1].has_key(subPositionIg) and item[1][subPositionIg] == 1:
 			continue
 
 		# set the id for this move
@@ -2527,6 +2537,7 @@ def ExitingProtoWarp(pAction, pShip, techP, subPosition):
 	subPositionDuration = str(subPosition) + "Duration"
 	subPositionRotation = str(subPosition) + "Rotation"
 	subPositionPosition = str(subPosition) + "Position"
+	subPositionIg = "Ignore" + str(subPosition) + "Exit"
 
 	for item in pInstance.AlternateFTLSubModelOptionsList:
 		# setup is not a submodel
@@ -2539,6 +2550,9 @@ def ExitingProtoWarp(pAction, pShip, techP, subPosition):
 		if item[0] == None or not hasattr(item[0], "GetObjID"):
 			print "AlternateSubModelFTL: nacelle ship missing. Aborting for this type..."
 			# The submodel is missing, for example because the ship file is missing.
+			continue
+
+		if item[1].has_key(subPositionIg) and item[1][subPositionIg] == 1:
 			continue
 
 		# set the id for this move

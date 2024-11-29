@@ -91,7 +91,7 @@ Foundation.ShipDef.USSProtostar.dTechs = { # (#)
 #################################################################################################################
 #
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.1",
+	    "Version": "0.15",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -1038,12 +1038,12 @@ def GetExitedTravelEvents(self):
 	pEvent.SetDestination(self.Ship)
 	pEvent.SetString("warp")
 
-	#pEvent2 = App.TGStringEvent_Create()
-	#pEvent2.SetEventType(DISENGAGING_ALTERNATEFTLSUBMODEL)
-	#pEvent2.SetDestination(self.Ship)
-	#pEvent2.SetString("warp")
+	pEvent2 = App.TGStringEvent_Create()
+	pEvent2.SetEventType(DISENGAGING_ALTERNATEFTLSUBMODEL)
+	pEvent2.SetDestination(self.Ship)
+	pEvent2.SetString("warp")
 
-	return [ pEvent ] #, pEvent2 
+	return [ pEvent, pEvent2 ]
 
 ########
 # Method to return the travel set to use.

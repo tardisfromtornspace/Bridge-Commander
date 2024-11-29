@@ -33,6 +33,7 @@ Foundation.ShipDef.crossfield.dTechs = {
 			"Experimental": 1,
 			"SetScale": 1.0,
 			"ResetToPrevious": 1,
+			"IgnoreSpore-DriveExit": 1,
 			"Position":             [0, 0, 0],
 			"Rotation":             [0, 0, 0], # normal Rotation used if not Red Alert and if not Warp
 			"Spore-DriveRotation":       [0, 3.14 * 2 * 14.95/16.0, 0],
@@ -44,6 +45,7 @@ Foundation.ShipDef.crossfield.dTechs = {
 			"Experimental": 1,
 			"SetScale": 1.0,
 			"ResetToPrevious": 1,
+			"IgnoreSpore-DriveExit": 1,
 			"Position":             [0, 0, 0],
 			"Rotation":             [0, 0, 0], # normal Rotation used if not Red Alert and if not Warp
 			"Spore-DriveRotation":       [0, 3.14 * 2 * 13.5/16.0, 0],
@@ -55,6 +57,7 @@ Foundation.ShipDef.crossfield.dTechs = {
 			"Experimental": 1,
 			"SetScale": 1.0,
 			"ResetToPrevious": 1,
+			"IgnoreSpore-DriveExit": 1,
 			"Position":             [0, 0, 0],
 			"Rotation":             [0, 0, 0], # normal Rotation used if not Red Alert and if not Warp
 			"Spore-DriveRotation":       [0, 3.14 * 2 * 12.8/16.0, 0],
@@ -66,6 +69,7 @@ Foundation.ShipDef.crossfield.dTechs = {
 			"Experimental": 1,
 			"SetScale": 1.0,
 			"ResetToPrevious": 1,
+			"IgnoreSpore-DriveExit": 1,
 			"Position":             [0, 0, 0],
 			"Rotation":             [0, 0, 0], # normal Rotation used if not Red Alert and if not Warp
 			"Spore-DriveRotation":       [0, 3.14 * 2 * 12.37/16.0, 0],
