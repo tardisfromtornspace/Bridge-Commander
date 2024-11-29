@@ -20,7 +20,7 @@ Foundation.ShipDef.crossfield.desc = "The Crossfield class was a type of Federat
 Foundation.ShipDef.crossfield.dTechs = {
 	"Alternate-Warp-FTL": {
 		"Setup": {
-			"Spore-Drive": {	"Nacelles": [], "Core": ["Spore-Drive Chamber"], },
+			"Spore-Drive": {	"Nacelles": [], "Core": ["Spore-Drive Chamber"], "NormalRotation": [0, 0, 0], "EndRotation" : [0, 4.19, 0], "Time": 200, "ExitDirection": "Down",}, # "Time": 360 worked for 60 seconds max
 			"Body": shipFile,
 			"NormalModel":          shipFile,
 			"Spore-DriveModel":          shipFile,
@@ -36,9 +36,9 @@ Foundation.ShipDef.crossfield.dTechs = {
 			"IgnoreSpore-DriveExit": 1,
 			"Position":             [0, 0, 0],
 			"Rotation":             [0, 0, 0], # normal Rotation used if not Red Alert and if not Warp
-			"Spore-DriveRotation":       [0, 3.14 * 2 * 14.95/16.0, 0],
+			"Spore-DriveRotation":       [0, App.PI * 2 / 1.5 * 253.0/256, 0],
 			"Spore-DrivePosition":       [0, 0, 0],
-			"Spore-DriveDuration":       30.0,
+			"Spore-DriveDuration":       15.0,
 			},
 		],
 		"copy2":     ["crossfieldSporeCopy", {
@@ -48,9 +48,9 @@ Foundation.ShipDef.crossfield.dTechs = {
 			"IgnoreSpore-DriveExit": 1,
 			"Position":             [0, 0, 0],
 			"Rotation":             [0, 0, 0], # normal Rotation used if not Red Alert and if not Warp
-			"Spore-DriveRotation":       [0, 3.14 * 2 * 13.5/16.0, 0],
+			"Spore-DriveRotation":       [0, App.PI * 2 / 1.5 * 252.0/256, 0],
 			"Spore-DrivePosition":       [0, 0, 0],
-			"Spore-DriveDuration":       40.0,
+			"Spore-DriveDuration":       20.0,
 			},
 		],
 		"copy3":     ["crossfieldSporeCopy", {
@@ -60,9 +60,9 @@ Foundation.ShipDef.crossfield.dTechs = {
 			"IgnoreSpore-DriveExit": 1,
 			"Position":             [0, 0, 0],
 			"Rotation":             [0, 0, 0], # normal Rotation used if not Red Alert and if not Warp
-			"Spore-DriveRotation":       [0, 3.14 * 2 * 12.8/16.0, 0],
+			"Spore-DriveRotation":       [0, App.PI * 2 / 1.5 * 241.0/256, 0],
 			"Spore-DrivePosition":       [0, 0, 0],
-			"Spore-DriveDuration":       50.0,
+			"Spore-DriveDuration":       25.0,
 			},
 		],
 		"copy4":     ["crossfieldSporeCopy", {
@@ -72,9 +72,9 @@ Foundation.ShipDef.crossfield.dTechs = {
 			"IgnoreSpore-DriveExit": 1,
 			"Position":             [0, 0, 0],
 			"Rotation":             [0, 0, 0], # normal Rotation used if not Red Alert and if not Warp
-			"Spore-DriveRotation":       [0, 3.14 * 2 * 12.37/16.0, 0],
+			"Spore-DriveRotation":       [0, App.PI * 2 / 1.5 * 121.0/128, 0],
 			"Spore-DrivePosition":       [0, 0, 0],
-			"Spore-DriveDuration":       60.0,
+			"Spore-DriveDuration":       30.0,
 			},
 		],
 	},

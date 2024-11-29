@@ -9,7 +9,7 @@
 # NOTE: all functions/methods and attributes defined here (in this prototype example plugin, SporeDrive) are required to be in the plugin, with the exclusion of:
 # ------ MODINFO, which is there just to verify versioning.
 # ------ ALTERNATESUBMODELFTL METHODS subsection, which are exclusively used for alternate SubModels for FTL which is a separate but linked mod, or to import needed modules.
-# ------ Auxiliar functions: "AuxProtoElementNames", "CustomBoostShipSpeed", "findShipInstance", "MainPartRotation", "PlaySporeDriveSound", "SporeDriveBasicConfigInfo" and "SporeDriveDisabledCalculations".
+# ------ Auxiliar functions: "AuxProtoElementNames", "CustomBoostShipSpeed", "findShipInstance", "MainPartRotation", "PlacementOffsetOrbitWatch", "PlaySporeDriveSound", "SporeDriveBasicConfigInfo" and "SporeDriveDisabledCalculations".
 # === How-To-Add ===
 # This Travelling Method is Ship-based, on this case it needs of Foundation and FoundationTech to verify if the ship is equipped with it.
 # This FTL method check is stored inside an "Alternate-Warp-FTL" dictionary, which is a script that should be located at scripts/Custom/Techs/AlternateSubModelFTL.py. While this sub-tech can work totally fine without such module installed, it is recommended to have it.
@@ -17,14 +17,15 @@
 # "Spore-Drive": is the name of the key. This is the bare minimum for the technology to work
 # "Nacelles": is the name of a key whose value indicates a list of which warp engine property children (nacelles) are part of the Spore-Drive system. If all are disabled/destroyed, Spore-Drive will not engage. If this field does not exist, it will check all warp hardpoints containing "SporeDrive", "spore drive" or "spore-drive" (case-insensitive). Leave as "Nacelles": [] to make it skip this disabled check.
 # "Core": is the name of a key whose value indicates a list of which hardpoint properties (not nacelles) are part of the Spore-Drive system. If all are disabled/destroyed, Spore-Drive will not engage either. If this field does not exist or "Core": [] this check will be skipped.
-# "NormalRotation", "EndRotation" and "Time": Indicates in what way the main body rotates while performing the FTL Spore Drive Action, from the "normal" rotation position, to the "end" rotation position, in "Time" centiseconds. Leave them blank to use a default [0, 0, 0] and [0, 4.19, 0] in 2 seconds. In both rotation cases, the fields are the X, Y and Z axis.
+# "NormalRotation", "EndRotation" and "Time": Indicates in what way the main body rotates while performing the FTL Spore Drive Action, from the "normal" rotation position, to the "end" rotation position, in "Time" centiseconds. Leave them blank to use a default [0, 0, 0] and [0, 4.19, 0] in 2 seconds. In both rotation cases, the fields are the X, Y and Z axis. Please note that "Time" will also affect how soon the final entry flash happens.
 # "ExitDirection": when the ship drops out of this FTL method, in what direction it moves. Do not include to call default "Down".
+# "CamDistance": when the ship enters Spore Drive, how far is the camera from the vessel. Default is 25.
 """
 #Sample Setup: replace "USSProtostar" for the appropiate abbrev. Also remove "# (#)"
 Foundation.ShipDef.USSProtostar.dTechs = { # (#)
 	"Alternate-Warp-FTL": { # (#)
 		"Setup": { # (#)
-			"Spore-Drive": {	"Nacelles": ["Proto Warp Nacelle"], "Core": ["Proto-Core"], "NormalRotation": [0, 0, 0], "EndRotation" : [0, 4.19, 0], "Time": 200, "ExitDirection": "Down"}, # (#)
+			"Spore-Drive": {	"Nacelles": ["Proto Warp Nacelle"], "Core": ["Proto-Core"], "NormalRotation": [0, 0, 0], "EndRotation" : [0, 4.19, 0], "Time": 200, "ExitDirection": "Down", "CamDistance": 25,}, # (#)
 			"Body": "VasKholhr_Body",
 			"NormalModel":          shipFile,
 			"WarpModel":          "VasKholhr_WingUp",
@@ -91,7 +92,7 @@ Foundation.ShipDef.USSProtostar.dTechs = { # (#)
 #################################################################################################################
 #
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.15",
+	    "Version": "0.16",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -126,7 +127,7 @@ bIsShipBased = 1
 ########
 # if this travelling method can be used to tow ships.
 ########
-bCanTowShips = 0
+bCanTowShips = 1
 
 ########
 # path and file name to engine degradation sound alert
@@ -200,6 +201,7 @@ iRestrictionFlag = 0
 ###########################################
 ###########################################
 import App
+import Camera
 import Custom.GravityFX.GravityFXlib
 import Foundation
 import FoundationTech
@@ -211,7 +213,7 @@ import traceback
 #######################################
 ####   ALTERNATESUBMODELFTL METHODS
 #######################################
-
+# NOTE: on this file several of the imports have been moved above for better understanding
 
 ENGAGING_ALTERNATEFTLSUBMODEL = App.UtopiaModule_GetNextEventType() # For when we are immediately about to fly with this FTL method
 DISENGAGING_ALTERNATEFTLSUBMODEL = App.UtopiaModule_GetNextEventType() # For when we are immediately about to stop flying with this FTL method
@@ -297,6 +299,8 @@ def SporeDriveBasicConfigInfo(pShip):
 	normalRot = None
 	endRot = None
 	exitDir = None
+	myTime = 200.0
+	myDistance = 25
 	if pInstance:
 		pInstancedict = pInstance.__dict__ 
 		if pInstancedict.has_key("Alternate-Warp-FTL") and pInstancedict["Alternate-Warp-FTL"].has_key("Setup") and pInstancedict["Alternate-Warp-FTL"]["Setup"].has_key("Spore-Drive"):
@@ -305,16 +309,20 @@ def SporeDriveBasicConfigInfo(pShip):
 			if pInstancedict["Alternate-Warp-FTL"]["Setup"]["Spore-Drive"].has_key("Core"): # Use: if the tech has this field, use it. Must be a list. "[]" would mean that this field is skipped during checks.
 				specificCoreHPList = pInstancedict["Alternate-Warp-FTL"]["Setup"]["Spore-Drive"]["Core"]
 
-			if pInstancedict["Alternate-Warp-FTL"]["Setup"]["Spore-Drive"].has_key("NormalRotation"): # Use: if the tech has this field, use it. Must be a list. "[]" would mean that this field is skipped during checks.
+			if pInstancedict["Alternate-Warp-FTL"]["Setup"]["Spore-Drive"].has_key("NormalRotation"):
 				normalRot = pInstancedict["Alternate-Warp-FTL"]["Setup"]["Spore-Drive"]["NormalRotation"]
-			if pInstancedict["Alternate-Warp-FTL"]["Setup"]["Spore-Drive"].has_key("EndRotation"): # Use: if the tech has this field, use it. Must be a list. "[]" would mean that this field is skipped during checks.
+			if pInstancedict["Alternate-Warp-FTL"]["Setup"]["Spore-Drive"].has_key("EndRotation"):
 				endRot = pInstancedict["Alternate-Warp-FTL"]["Setup"]["Spore-Drive"]["EndRotation"]
-			if pInstancedict["Alternate-Warp-FTL"]["Setup"]["Spore-Drive"].has_key("ExitDirection"): # Use: if the tech has this field, use it. Must be a list. "[]" would mean that this field is skipped during checks.
+			if pInstancedict["Alternate-Warp-FTL"]["Setup"]["Spore-Drive"].has_key("ExitDirection"):
 				exitDir = pInstancedict["Alternate-Warp-FTL"]["Setup"]["Spore-Drive"]["ExitDirection"]
+			if pInstancedict["Alternate-Warp-FTL"]["Setup"]["Spore-Drive"].has_key("Time"):
+				myTime = pInstancedict["Alternate-Warp-FTL"]["Setup"]["Spore-Drive"]["Time"]
+			if pInstancedict["Alternate-Warp-FTL"]["Setup"]["Spore-Drive"].has_key("CamDistance"): # Use: if the tech has this field, use it. Must be a list. "[]" would mean that this field is skipped during checks.
+				myDistance = pInstancedict["Alternate-Warp-FTL"]["Setup"]["Spore-Drive"]["CamDistance"]
 
 	hardpointProtoNames, hardpointProtoBlacklist = AuxProtoElementNames()
 
-	return pInstance, pInstancedict, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, normalRot, endRot, exitDir
+	return pInstance, pInstancedict, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, normalRot, endRot, exitDir, myTime, myDistance
 
 # This is just another auxiliar function I made for this
 def SporeDriveDisabledCalculations(type, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, pSubsystem, pShip):
@@ -410,7 +418,7 @@ def CanTravel(self):
 	#			MissionLib.QueueActionToPlay(App.CharacterAction_Create(pXO, App.CharacterAction.AT_SAY_LINE, "EngineeringNeedPowerToEngines", None, 1))
 	#	return "Impulse Engines offline"
 
-	pInstance, pInstancedict, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, _ , _ , _ = SporeDriveBasicConfigInfo(pShip)
+	pInstance, pInstancedict, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, _ , _ , _ , _ , _ = SporeDriveBasicConfigInfo(pShip)
 
 	pWarpEngines = pShip.GetWarpEngineSubsystem()
 	if specificNacelleHPList == None or (specificNacelleHPList != None and len(specificNacelleHPList) > 0):
@@ -559,7 +567,7 @@ def CanContinueTravelling(self):
 			pSequence.Play()
 		bStatus = 0
 	else:
-		pInstance, pInstancedict, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, _ , _ , _ = SporeDriveBasicConfigInfo(pShip)
+		pInstance, pInstancedict, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, _ , _ , _ , _ , _ = SporeDriveBasicConfigInfo(pShip)
 		if pInstance and pInstancedict:
 			totalSporeDriveCores, onlineSporeDriveCores = SporeDriveDisabledCalculations("Core", specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, pWarpEngines, pShip)
 			if totalSporeDriveCores > 0 and onlineSporeDriveCores <= 0:
@@ -777,6 +785,18 @@ def CustomBoostShipSpeed(pAction, sCustomActionsScript, ShipID, bBoost, fBoostSc
 
 	return 0
 
+# aux function
+def PlacementOffsetOrbitWatch(pAction, pCamera, distance, sMode = "FreeOrbit"):
+	debug(__name__ + ", PlacementOffsetOrbitWatch")
+	if pCamera:
+		Camera.NewMode(pCamera, sMode, 0, 1, [("MinimumDistance", distance * 0.5), ("Distance", distance), ("MaximumDistance", distance * 1.5)], 1) # From CameraModes.py
+		pCamera.Update(App.g_kUtopiaModule.GetGameTime())
+
+
+	return 0
+
+# TO-DO ADD ZOOM
+#def PerformZoom(pAction, zoom = 1.0):
 
 def SetupSequence(self):
 	# you can use this function as an example on how to create your own '.SetupSequence(self)' method for your
@@ -813,7 +833,7 @@ def SetupSequence(self):
 
 	pInstance = findShipInstance(pShip)
 	
-	_, _, _, _, _, _, _ , _ , myExitDirection = SporeDriveBasicConfigInfo(pShip)
+	_, _, _, _, _, _, _ , _ , myExitDirection, myTime, myDistance = SporeDriveBasicConfigInfo(pShip)
 	if myExitDirection == None or myExitDirection == "":
 		myExitDirection = "Down"
 
@@ -849,9 +869,16 @@ def SetupSequence(self):
 		pWS.Logger.LogString("Got species of ship from NanoFXv2")
 	except:
 		sRace = ""
-	
+
+	extraSoundTime = 0.01
 	if (pPlayer != None) and (pShip.GetObjID() == pPlayer.GetObjID()):
 		fEntryDelayTime = fEntryDelayTime + 1.0
+		extraSoundTime = 0.25
+		pPlayerSet = pShip.GetContainingSet()
+		myCamera = Camera.GetPlayerCamera()
+
+		#myCamera = pSet.GetActiveCamera()
+		#pMode = pCamera.GetNamedCameraMode("FreeOrbit")
 
 		# Force a noninteractive cinematic view in space..
 		pCinematicStart = App.TGScriptAction_Create("Actions.CameraScriptActions", "StartCinematicMode", 0)
@@ -861,27 +888,32 @@ def SetupSequence(self):
 		#pEngageWarpSeq.AddAction(pDisallowInput, None)
 		pEngageWarpSeq.AddAction(pDisallowInput, pCinematicStart)
 
+		pCameraAction0 = App.TGScriptAction_Create(__name__, "PlacementOffsetOrbitWatch", myCamera, myDistance, "FreeOrbit") # TO-DO Look for a zoom option
+		pEngageWarpSeq.AddAction(pCameraAction0, pDisallowInput)
+
+
 	pWarpSoundAction1 = App.TGScriptAction_Create(__name__, "PlaySporeDriveSound", pWS, "Enter Warp", sRace)
-	pEngageWarpSeq.AddAction(pWarpSoundAction1, None, 0.01)
+	pEngageWarpSeq.AddAction(pWarpSoundAction1, None, extraSoundTime)
 	
 	pBoostAction = App.TGScriptAction_Create(sCustomActionsScript, "BoostShipSpeed", pShip.GetObjID(), 1, 1.0)
 	pEngageWarpSeq.AddAction(pBoostAction, pWarpSoundAction1, 0.01)
 
-	try:
-		import Custom.NanoFXv2.WarpFX.WarpFX
-		pNacelleFlash = Custom.NanoFXv2.WarpFX.WarpFX.CreateNacelleFlashSeq(pShip, pShip.GetRadius())
-		pEngageWarpSeq.AddAction(pNacelleFlash, pWarpSoundAction1)
-		pWS.Logger.LogString("Using Nacelle Flash Sequence from NanoFXv2")
-	except:
-		pass
+	#try:
+	#	import Custom.NanoFXv2.WarpFX.WarpFX
+	#	pNacelleFlash = Custom.NanoFXv2.WarpFX.WarpFX.CreateNacelleFlashSeq(pShip, pShip.GetRadius())
+	#	pEngageWarpSeq.AddAction(pNacelleFlash, pWarpSoundAction1)
+	#	pWS.Logger.LogString("Using Nacelle Flash Sequence from NanoFXv2")
+	#except:
+	#	pass
 
 	fTimeToFlash = (fEntryDelayTime) + (2*(App.WarpEngineSubsystem_GetWarpEffectTime()/2.0))
 
 	fCount = 0.0
-	while fCount < fTimeToFlash:
-		pRotateVessel = App.TGScriptAction_Create(__name__, "MainPartRotation", pWS, sRace, 0)
-		if pRotateVessel:
-			pEngageWarpSeq.AddAction(pRotateVessel, None, fCount)
+	while fCount < fTimeToFlash and (fCount * 100) <= myTime:
+		if (fCount * 100) <= myTime:
+			pRotateVessel = App.TGScriptAction_Create(__name__, "MainPartRotation", pWS, sRace, 0)
+			if pRotateVessel:
+				pEngageWarpSeq.AddAction(pRotateVessel, None, fCount)
 		if pWS.Travel.bTractorStat == 1:
 			pMaintainTowingAction = App.TGScriptAction_Create(sCustomActionsScript, "MaintainTowingAction", pWS)
 			pEngageWarpSeq.AddAction(pMaintainTowingAction, None, fCount)
@@ -890,9 +922,11 @@ def SetupSequence(self):
 		if fCount >= fTimeToFlash:
 			break
 
+	if fCount != fTimeToFlash:
+		fTimeToFlash = fCount + 0.25
+
 	# TO-DO Create also a USS Sovereign Slipstream drive based on this, using this sequence and extracting the engage and disengage events
 	# TO-DO Maybe create two ship clone copies?
-	# TO-DO Create flash
 	# Create the warp flash.
 	# TO-DO Replace with a spore-drive flash
 	pFlashAction1 = App.TGScriptAction_Create("Actions.EffectScriptActions", "WarpFlash", pShip.GetObjID())
@@ -902,7 +936,7 @@ def SetupSequence(self):
 	pHideShip = App.TGScriptAction_Create(sCustomActionsScript, "HideShip", pShip.GetObjID(), 1)
 	pEngageWarpSeq.AddAction(pHideShip, pFlashAction1)
 
-	pUnBoostAction = App.TGScriptAction_Create(sCustomActionsScript, "BoostShipSpeed", pShip.GetObjID(), 0, 1.0)
+	pUnBoostAction = App.TGScriptAction_Create(sCustomActionsScript, "BoostShipSpeed", pShip.GetObjID(), 0, 0.0)
 	pEngageWarpSeq.AddAction(pUnBoostAction, pHideShip)
 	
 	pCheckTowing = App.TGScriptAction_Create(sCustomActionsScript, "EngageSeqTractorCheck", pWS)
@@ -962,15 +996,11 @@ def SetupSequence(self):
 					break
 
 		# Give it a little boost
-		#pBoostAction = App.TGScriptAction_Create(sCustomActionsScript, "BoostShipSpeed", pShip.GetObjID(), 1, 50.0)
-		#pExitWarpSeq.AddAction(pBoostAction, pUnHideShip, 0.01)
-
 		pBoostAction = App.TGScriptAction_Create(__name__, "CustomBoostShipSpeed", sCustomActionsScript, pShip.GetObjID(), 1, 300.0, myExitDirection)
 		pExitWarpSeq.AddAction(pBoostAction, pUnHideShip)
 
-		# TO-DO Replace with a spore-drive flash
+		# TO-DO Replace with a spore-drive flash?
 		# Play the vushhhhh of exiting warp
-		#pWarpSoundAction2 = App.TGScriptAction_Create(sCustomActionsScript, "PlayWarpSound", pWS, "Exit Warp", sRace)
 		pWarpSoundAction2 = App.TGScriptAction_Create(__name__, "PlaySporeDriveSound", pWS, "Exit Warp", sRace)
 		pExitWarpSeq.AddAction(pWarpSoundAction2, pBoostAction)
 	
@@ -998,7 +1028,6 @@ def SetupSequence(self):
 	# Note that each one of them can be None, if you don't want to have that sequence in your travel method.
 
 	return [pEngageWarpSeq, None, pExitWarpSeq]
-
 
 ########
 # Method to return "starting travel" events, much like those START_WARP events.

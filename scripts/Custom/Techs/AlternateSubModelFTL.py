@@ -716,7 +716,7 @@ Foundation.ShipDef.USSProtostar.dTechs = { # (#)
 #################################################################################################################
 #
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.75",
+	    "Version": "0.76",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -2324,7 +2324,7 @@ def PartsForWeaponProtoState(pShip, techP):
 		
 		# do the move
 		initialWait = 0.1 # In seconds (so 10 centiseconds)
-		while(iTime <= (fDuration + initialWait)):
+		while(iTime * 100 <= (fDuration + (initialWait * 100))):
 			if iTime == 0.0:
 				iWait = initialWait # we wait for the first run
 			else:
@@ -2335,7 +2335,7 @@ def PartsForWeaponProtoState(pShip, techP):
 			else:
 				print "AlternateSubModelFTL: failed to create script action for PartsForWeaponProtoState ", iTimeNeededTotal, iTime, iWait
 			iTimeNeededTotal = iTimeNeededTotal + iWait
-			iTime = iTime + round(iWait * 100.0)
+			iTime = iTime + iWait
 
 		finalLocalScriptAct = App.TGScriptAction_Create(__name__, "UpdateStateProto", pShip, item, lStoppingRotation, lStoppingTranslation, thisMoveCurrentID)
 		if finalLocalScriptAct:
@@ -2466,7 +2466,7 @@ def StartingWarpCommon(pObject, pEvent, techP, subPosition="Warp"):
 	
 		iTime = 0.0
 		iTimeNeededTotal = 0.0
-		oMovingEventUpdated = MovingEventUpdated(pShip, item, fDuration, lStartingRotation, lStoppingRotation, lStartingTranslation, lStoppingTranslation, {})
+		oMovingEventUpdated = MovingEventUpdated(pShip, item, fDuration, lStartingRotation, lStoppingRotation, lStartingTranslation, lStoppingTranslation, dHardpoints)
 		if not hasattr(oMovingEventUpdated, "wentWrong") or oMovingEventUpdated.wentWrong != 0:
 			print "AlternateSubModelFTL: oMovingEventUpdated found an issue while initializing - skipping"
 			continue
@@ -2476,7 +2476,7 @@ def StartingWarpCommon(pObject, pEvent, techP, subPosition="Warp"):
 
 		# do the move
 		initialWait = 0.1 # In seconds (so 10 centiseconds)
-		while(iTime <= (fDuration + initialWait)):
+		while(iTime * 100 <= (fDuration + (initialWait * 100))):
 			if iTime == 0.0:
 				iWait = initialWait # we wait for the first run
 			else:
@@ -2487,7 +2487,7 @@ def StartingWarpCommon(pObject, pEvent, techP, subPosition="Warp"):
 			else:
 				print "AlternateSubModelFTL: failed to create script action for PartsForWeaponProtoState ", iTimeNeededTotal, iTime, iWait
 			iTimeNeededTotal = iTimeNeededTotal + iWait
-			iTime = iTime + round(iWait * 100.0) # + 1 seemed like the wrong thing to add
+			iTime = iTime + iWait
 
 		finalLocalScriptAct = None
 
@@ -2523,7 +2523,8 @@ def ExitingProtoWarp(pAction, pShip, techP, subPosition):
 	if App.g_kUtopiaModule.IsMultiplayer() and not App.g_kUtopiaModule.IsHost():
 		debug(__name__ + ", ExitingProtoWarp Return not host")
 		return 0
-	
+
+	iType = pShip.GetAlertLevel()
 	pInstance = findShipInstance(pShip)
 	iLongestTime = 0.0
 	iGracePeriodTime = 2.0
@@ -2543,8 +2544,10 @@ def ExitingProtoWarp(pAction, pShip, techP, subPosition):
 		# setup is not a submodel
 		if item[0] == "Setup":
 			dHardpoints = {}
-			if item[1].has_key(subPositionHardpoints):
-				dHardpoints = item[1][subPositionHardpoints]
+			if iType == 2 and item[1].has_key("AttackHardpoints"):
+				dHardpoints = item[1]["AttackHardpoints"]
+			elif iType != 2 and item[1].has_key("Hardpoints"):
+				dHardpoints = item[1]["Hardpoints"]
 			continue
 
 		if item[0] == None or not hasattr(item[0], "GetObjID"):
@@ -2597,7 +2600,8 @@ def ExitingProtoWarp(pAction, pShip, techP, subPosition):
 		
 		# do the move
 		initialWait = 0.1 # In seconds (so 10 centiseconds)
-		while(iTime <= (fDuration + initialWait)):
+
+		while(iTime * 100 <= (fDuration + (initialWait * 100))):
 			if iTime == 0.0:
 				iWait = initialWait # we wait for the first run
 			else:
@@ -2608,7 +2612,7 @@ def ExitingProtoWarp(pAction, pShip, techP, subPosition):
 			else:
 				print "AlternateSubModelFTL: failed to create script action for PartsForWeaponProtoState ", iTimeNeededTotal, iTime, iWait
 			iTimeNeededTotal = iTimeNeededTotal + iWait
-			iTime = iTime + round(iWait * 100.0) # + 1 seemed like the wrong thing to add
+			iTime = iTime + iWait
 
 		finalLocalScriptAct = App.TGScriptAction_Create(__name__, "UpdateStateProto", pShip, item, lStoppingRotation, lStoppingTranslation, thisMoveCurrentID)
 

@@ -1,4 +1,8 @@
 == Changelog ==
+0.3.6 - Updates:
+  * Updated AlternateSubModelFTL to 0.76 to fix a bug with hardpoints not returning to normal after FTL.
+  * Updated USSProtostar and USS Discovery hardpoints so all properties now have a proper 2DPosition.
+  * Updated SporeDrive to 0.16 to fix the camera rotating issue and made it so people can tow ships.
 0.3.5 - Updates:
   * Updated AlternateSubModelFTL to 0.75 to support the option to only perform entry or exit FTL sequences for each part and FTL method individually.
   * Updated SporeDrive to 0.15 to cover the new update to AlternateSubModelFTL.
