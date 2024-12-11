@@ -1,4 +1,10 @@
 == Changelog ==
+0.4.1 - Updates:
+  * Updated SporeDrive to 0.2 to allow ISI to have a customizable chance to uncloak nearby vessels without phase cloak.
+0.4 - Updates:
+  * Updated AlternateSubModelFTL to 0.8 to give the script intra-system-intercept (ISI) support.
+  * Updated SporeDrive to 0.19 to cover ISI support.
+  * Updated readmes to cover use-conditions for the script, per USS Sovereign's request (and necessary condition for use).
 0.3.6 - Updates:
   * Updated AlternateSubModelFTL to 0.76 to fix a bug with hardpoints not returning to normal after FTL.
   * Updated USSProtostar and USS Discovery hardpoints so all properties now have a proper 2DPosition.
@@ -21,7 +27,7 @@
 0.1 - First unofficial release, for testing
 
 == What does this mod do ==
-This mod adds a USS Protostar and USS Prodigy from Star Trek Prodigy, alongside with certain technologies for Proto-Warp and a SubModels-derivated file that supports other FTL methods and mobility fix improvements. Additionally, a modified USS Discovery (Crossfield Class) with Spore drive has been added. All of them have their own detailed instruction manuals inside the files to ensure people can use those techs easily.
+This mod adds a USS Protostar and USS Prodigy from Star Trek Prodigy, alongside with certain technologies for Proto-Warp and a SubModels-derivated file that supports other FTL methods and mobility fix and intra-system intercept (ISI) improvements. Additionally, a modified USS Discovery (Crossfield Class) with Spore drive has been added. All of them have their own detailed instruction manuals inside the files to ensure people can use those techs easily.
 
 == Dependencies ==
 All of these must be installed before installing this mod, in this order:
@@ -35,7 +41,7 @@ All of these must be installed before installing this mod, in this order:
 * Everyone involved in Foundation - without you this would have been a real pain to do (please read the separate Foundation.txt license) - Banbury, Dasher42, DigitalFriend, MLeo, Nanobyte and Sleight42, among others.
 * Everyone involved in KM - specifically those involved in the creation of armour and Shields.py (FoundationTechnologies) the AdvArmorTech.py, FiveSecsGodPhaser.py, TractorBeams.py - Apollo from ATP Technologies as well.
 * Dasher42 for reminding me of licensing.
-* USS Sovereign for some DS9FX advice regarding timers, and inspired in one of DS9FX Pulsar files for improved rotations.
+* USS Sovereign for some DS9FX advice regarding timers, inspired in one of DS9FX Pulsar files for improved rotations, AND MOST IMPORTANTLY, for giving me permission to adopt fragments of his Slipstream Module for Intra-System-Intercept. Those sections, while still modified to be adjusted to the script, still fall under "All Rights Reserved" so you cannot modify or repacakge them without USS Sovereign's permission!
 * USS Frontier for GalaxyCharts.
 * Defiant for some scripts that drew inspiration (or were practically used as a base), particularly the original SubModels.
 * WileyCoyote (michaelwileyart@gmail.com) for the Crossfield Phaser sounds (already mentioned of the Crossfield's separate readme).
@@ -58,5 +64,13 @@ This mod falls under the GNU LESSER GENERAL PUBLIC LICENSE Version 3, 29 June 20
 
 PointDefence.py (apparently under BSD license so despite the things I make have NO merchantibility and this mod MUST NOT be sold, only freely given and shared, I need to copy this line down here): 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+Fulfilling USS Sovereign's conditions:
+
+All sections based on USS Sovereign's Slipstream module fall under All Rights Reserved. Do not modify or repackage those sections of the mod without extreme permission from the authors:
+---- USS Sovereign condition: that this mod is intended to be released for KM and not for REP, RE nor REM-related mods.
+---- Alex SL Gato condition: does not mind as long as USS Sovereign and he are being credited and both Mario and himself's conditions are covered.
+
+Those sections are left clear with two text banners, from "BEGINNING OF USS SOVEREIGN'S LIMITED PERMISSION AREA" to "END OF USS SOVEREIGN'S LIMITED PERMISSION AREA", to ensure people do not accidentally copy those sections.
 
 == Bugs ==

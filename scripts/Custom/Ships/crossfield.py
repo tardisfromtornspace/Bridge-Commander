@@ -20,7 +20,7 @@ Foundation.ShipDef.crossfield.desc = "The Crossfield class was a type of Federat
 Foundation.ShipDef.crossfield.dTechs = {
 	"Alternate-Warp-FTL": {
 		"Setup": {
-			"Spore-Drive": {	"Nacelles": [], "Core": ["Spore-Drive Chamber"], "NormalRotation": [0, 0, 0], "EndRotation" : [0, 4.19, 0], "Time": 200, "ExitDirection": "Down",}, # "Time": 360 worked for 60 seconds max
+			"Spore-Drive": {	"Nacelles": [], "Core": ["Spore-Drive Chamber"], "NormalRotation": [0, 0, 0], "EndRotation" : [0, 4.19, 0], "Time": 200, "ExitDirection": "Down",  "UncloakDistance": 25, "UncloakChance": 20,},
 			"Body": shipFile,
 			"NormalModel":          shipFile,
 			"Spore-DriveModel":          shipFile,

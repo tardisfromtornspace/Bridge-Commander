@@ -1,8 +1,8 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
 # SporeDrive.py
-# prototype custom travelling method plugin script, by USS Frontier (Enhanced Warp, original) and then modified by Alex SL Gato for Proto-Warp
-# 19th November 2024
+# prototype custom travelling method plugin script, by USS Frontier (Enhanced Warp, original) and then modified by Alex SL Gato for Spore Drive
+# 11th December 2024
 #################################################################################################################
 ##########	MANUAL
 #################################################################################################################
@@ -10,6 +10,8 @@
 # ------ MODINFO, which is there just to verify versioning.
 # ------ ALTERNATESUBMODELFTL METHODS subsection, which are exclusively used for alternate SubModels for FTL which is a separate but linked mod, or to import needed modules.
 # ------ Auxiliar functions: "AuxProtoElementNames", "CustomBoostShipSpeed", "findShipInstance", "MainPartRotation", "PlacementOffsetOrbitWatch", "PlaySporeDriveSound", "SporeDriveBasicConfigInfo" and "SporeDriveDisabledCalculations".
+# ------ Auxiliar functions for intra-system intercept (ISI) support, which as a result of being a common-made function between default GalaxyCharts functions/methods, regular AlternateSubModelFTL and ISI, while not required to be on the plugin, some of their contents are actually required if they are not there: "CanTravelShip", "EngageSeqTractorCheckI", "GetEngageDirectionC", "GetEngageDirectionISI", "GetExitedTravelEventsI", "GetStartTravelEventsI", "MainPartRotationI", "PlaySporeDriveSoundI", "MaintainTowingActionI", "removeTractorISITowInfo", "SetupSequenceISI", "SetupTowingI"
+# NOTE 2: This version of SporeDrive also has Intra-System Intercept functions, meaning a SubMenu appears on the Helm menu to allow for a slipstream-like intercept. For more info on this, see the Manual for AlternateSubModelFTL and the comments on this file.
 # === How-To-Add ===
 # This Travelling Method is Ship-based, on this case it needs of Foundation and FoundationTech to verify if the ship is equipped with it.
 # This FTL method check is stored inside an "Alternate-Warp-FTL" dictionary, which is a script that should be located at scripts/Custom/Techs/AlternateSubModelFTL.py. While this sub-tech can work totally fine without such module installed, it is recommended to have it.
@@ -20,12 +22,14 @@
 # "NormalRotation", "EndRotation" and "Time": Indicates in what way the main body rotates while performing the FTL Spore Drive Action, from the "normal" rotation position, to the "end" rotation position, in "Time" centiseconds. Leave them blank to use a default [0, 0, 0] and [0, 4.19, 0] in 2 seconds. In both rotation cases, the fields are the X, Y and Z axis. Please note that "Time" will also affect how soon the final entry flash happens.
 # "ExitDirection": when the ship drops out of this FTL method, in what direction it moves. Do not include to call default "Down".
 # "CamDistance": when the ship enters Spore Drive, how far is the camera from the vessel. Default is 25.
+# "UncloakDistance": when the ship ends an ISI, radius around it where cloaked ships can be decloaked, in kilometers. Negative values are ignored. Default is 25 km.
+# "UncloakChance": when the ship ends an ISI, chance that a ship inside the cloak disruption AOE actually decloaks, with the value being in percentage. Default is 25, that is 25% chance of being uncloaked.
 """
 #Sample Setup: replace "USSProtostar" for the appropiate abbrev. Also remove "# (#)"
 Foundation.ShipDef.USSProtostar.dTechs = { # (#)
 	"Alternate-Warp-FTL": { # (#)
 		"Setup": { # (#)
-			"Spore-Drive": {	"Nacelles": ["Proto Warp Nacelle"], "Core": ["Proto-Core"], "NormalRotation": [0, 0, 0], "EndRotation" : [0, 4.19, 0], "Time": 200, "ExitDirection": "Down", "CamDistance": 25,}, # (#)
+			"Spore-Drive": {	"Nacelles": ["Proto Warp Nacelle"], "Core": ["Proto-Core"], "NormalRotation": [0, 0, 0], "EndRotation" : [0, 4.19, 0], "Time": 200, "ExitDirection": "Down", "CamDistance": 25, "UncloakDistance": 25, "UncloakChance": 25,}, # (#)
 			"Body": "VasKholhr_Body",
 			"NormalModel":          shipFile,
 			"WarpModel":          "VasKholhr_WingUp",
@@ -92,7 +96,7 @@ Foundation.ShipDef.USSProtostar.dTechs = { # (#)
 #################################################################################################################
 #
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.16",
+	    "Version": "0.2",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -246,6 +250,21 @@ def ExitSetFTLAlternateSubModel(pObject, pEvent, techP, move): # What actions do
 def AlternateFTLActionExitWarp(): # Linking eType with the function
 	return DISENGAGING_ALTERNATEFTLSUBMODEL, ExitSetFTLAlternateSubModel
 
+def InSystemIntercept():
+	propulsionType = sName # The name for its subMenu option
+	eEntryEvent = GetStartTravelEventsI
+	eExitEvent = GetExitedTravelEventsI
+	eSequenceFunction = SetupSequenceISI # Important NOTE - This sequence is gonna be a modification of the normal sequences for changing systems. Since intra-system does not call pre-engage nor post-engage functions on its own (only the entry and exit events), if you have an actual pre-engage and post-engage function that is not just a mere "return", you may want to adjust your sequence to call them instead at the appropiate time.
+	isEquipped = IsShipEquipped
+	eCanTravel = CanTravelShip
+	awayNavPointDistance = awayNavPointDistanceCalc # This is a custom multiplier value, used for checking when a ship is too close to a planet or ship. A higher value means that it will allow closer ISI, while a lower value will make that ISI inner proximity limit be further. Negative values are set to 0.
+	engageDirection = GetEngageDirectionISI
+
+	return propulsionType, eEntryEvent, eExitEvent, eSequenceFunction, isEquipped, eCanTravel, awayNavPointDistance, engageDirection
+
+def awayNavPointDistanceCalc(pShipID=None):
+	return 1.0
+
 #######################################
 # "IsShipEquipped" Method to check if the ship is equipped with this travelling method.
 # Must return 1 if it has it, 0 if it does not.
@@ -380,9 +399,13 @@ def SporeDriveDisabledCalculations(type, specificNacelleHPList, specificCoreHPLi
 
 	return totalSporeDriveEngines, onlineSporeDriveEngines
 
-def CanTravel(self):
+def CanTravel(self): # NOTE: Requires CanTravelShip
 	debug(__name__ + ", CanTravel")
-	pShip = self.GetShip()
+	return CanTravelShip(self.GetShip())
+
+# Auxiliar ISI function
+def CanTravelShip(pShip):
+	debug(__name__ + ", CanTravelShip")
 	pPlayer = App.Game_GetCurrentPlayer()
 	bIsPlayer = 0
 	if pPlayer and pShip.GetObjID() == pPlayer.GetObjID():
@@ -603,23 +626,56 @@ def CanContinueTravelling(self):
 # TGPoint3  -> the direction vector to turn towards.
 # [TGPoint3, TGPoint3]  -> a list of direction vectors ( [forward, up] )  to turn and align towards.
 ########
-def GetEngageDirection(self):
+def GetEngageDirection(self): # NOTE: Requires GetEngageDirectionC
+	debug(__name__ + ", GetEngageDirection")
+	return GetEngageDirectionC(self, None)
+
+# Aux. ISI function.
+def GetEngageDirectionISI(pPlayerID): # NOTE: Requires GetEngageDirectionC
+	debug(__name__ + ", GetEngageDirectionISI")
+	return GetEngageDirectionC(None, pPlayerID)
+
+def GetEngageDirectionC(mySelf, pPlayerID = None):
 	"""
 	# Get all the objects along the line that we'll
 	# be warping through.
-	debug(__name__ + ", GetEngageDirection")
+	debug(__name__ + ", GetEngageDirectionC")
 	fRayLength = 4000.0
-	vOrigin = self.Ship.GetWorldLocation()
-	vEnd = self.Ship.GetWorldForwardTG()
+
+	vOrigin = None
+	vEnd = None
+
+	pPlayer = None
+	if mySelf != None:
+		vOrigin = mySelf.Ship.GetWorldLocation()
+		vEnd = mySelf.Ship.GetWorldForwardTG() # REMEMBER, this forward and stuff needs to be changed to other directions if your drive moves that way!
+	elif pPlayerID != None:
+		pPlayer = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), pPlayerID)
+		if pPlayer:
+			vOrigin = pPlayer.GetWorldLocation()
+			vEnd = pPlayer.GetWorldForwardTG() # REMEMBER, this forward and stuff needs to be changed to other directions if your drive moves that way!
+		else:
+			return None
+	else:
+		return None
+
 	vEnd.Scale(fRayLength)
 	vEnd.Add(vOrigin)
 	
-	lsObstacles = self.GetWarpObstacles(vOrigin, vEnd)
+	lsObstacles = None
+	if pPlayer == None:
+		lsObstacles = mySelf.GetWarpObstacles(vOrigin, vEnd)
+	else:
+		lsObstacles = MissionLib.GrabWarpObstaclesFromSet(vOrigin, vEnd, pPlayer.GetContainingSet(), pPlayer.GetRadius(), 1, pPlayer.GetObjID())
+
 	# If we have no obstacles in the way, we're good.
 	if len(lsObstacles) == 0:
 		vZero = App.TGPoint3()
 		vZero.SetXYZ(0, 0, 0)
-		self.Ship.SetTargetAngularVelocityDirect(vZero)
+		if mySelf != None:
+			mySelf.Ship.SetTargetAngularVelocityDirect(vZero)
+		else:
+			pPlayer.SetTargetAngularVelocityDirect(vZero)
 		return None
 
 	vBetterDirection = None
@@ -633,7 +689,13 @@ def GetEngageDirection(self):
 
 			# Bias it toward our Forward direction.
 			vRay.Scale(1.5)
-			vRay.Add(self.Ship.GetWorldForwardTG())
+			myForward = None
+			if pPlayer == None:
+				myForward = mySelf.Ship.GetWorldForwardTG() # REMEMBER, this forward and stuff needs to be changed to other directions if your drive moves that way!
+			else:
+				myForward = pPlayer.GetWorldForwardTG() # REMEMBER, this forward and stuff needs to be changed to other directions if your drive moves that way!
+
+			vRay.Add(myForward)
 			vRay.Unitize()
 
 			vEnd = App.TGPoint3()
@@ -641,7 +703,13 @@ def GetEngageDirection(self):
 			vEnd.Scale(fRayLength)
 
 			vEnd.Add(vOrigin)
-			lsObstacles = self.GetWarpObstacles(vOrigin, vEnd)
+
+			lsObstacles = None
+			if mySelf != None:
+				lsObstacles = mySelf.GetWarpObstacles(vOrigin, vEnd)
+			else:
+				lsObstacles = MissionLib.GrabWarpObstaclesFromSet(vOrigin, vEnd, pPlayer.GetContainingSet(), pPlayer.GetRadius(), 1, pPlayer.GetObjID())
+
 			if not lsObstacles:
 				# Found a good direction.
 				vBetterDirection = vRay
@@ -678,15 +746,20 @@ def PreExitStuff(self):
 # 2º during travel sequence
 # 3º exiting travel sequence
 ########
-# Anther aux function I made
+# Another aux function I made
 def PlaySporeDriveSound(pAction, pWS, sType, sRace):
-	debug(__name__ + ", PlayWarpSound")
+	debug(__name__ + ", PlaySporeDriveSound")
+
 	pShip = pWS.GetShip()
+	return PlaySporeDriveSoundI(pAction, pShip, sType, sRace)
+
+# Aux. ISI function
+def PlaySporeDriveSoundI(pAction, pShip, sType, sRace):
+	debug(__name__ + ", PlaySporeDriveSoundI")
+
 	pPlayer = App.Game_GetCurrentPlayer()
 	if pShip == None or pPlayer == None:
-		return 0
-
-						
+		return 0					
 
 	pSet = pShip.GetContainingSet()
 	pPlaSet = pPlayer.GetContainingSet()
@@ -718,9 +791,15 @@ def PlaySporeDriveSound(pAction, pWS, sType, sRace):
 				traceback.print_exc()
 	return 0
 
+# Another aux function I made
 def MainPartRotation(pAction, pWS, sRace, back):
-	
+	debug(__name__ + ", MainPartRotation")	
 	pShip = pWS.GetShip()
+	return MainPartRotationI(pAction, pShip, sRace, back)
+
+# Aux. ISI function
+def MainPartRotationI(pAction, pShip, sRace, back):
+	debug(__name__ + ", MainPartRotationI")
 	if pShip:
 		pInstance = findShipInstance(pShip) # On this case, IsShipEquipped(pShip) already checked this for us - HOWEVER do not forget to check if you modify the script
 		pInstancedict = None
@@ -756,7 +835,7 @@ def MainPartRotation(pAction, pWS, sRace, back):
 				performRotationAndScaleAdjust(pShip, pShip, dOptionsList, 0, 0, 0, iRotStepX, iRotStepY, iRotStepZ, 0)
 	return 0
 
-
+# Another aux function I made
 def CustomBoostShipSpeed(pAction, sCustomActionsScript, ShipID, bBoost, fBoostScale, vDir):
 
 	pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), ShipID)
@@ -785,18 +864,490 @@ def CustomBoostShipSpeed(pAction, sCustomActionsScript, ShipID, bBoost, fBoostSc
 
 	return 0
 
-# aux function
+# Another aux function I made
 def PlacementOffsetOrbitWatch(pAction, pCamera, distance, sMode = "FreeOrbit"):
 	debug(__name__ + ", PlacementOffsetOrbitWatch")
 	if pCamera:
 		Camera.NewMode(pCamera, sMode, 0, 1, [("MinimumDistance", distance * 0.5), ("Distance", distance), ("MaximumDistance", distance * 1.5)], 1) # From CameraModes.py
 		pCamera.Update(App.g_kUtopiaModule.GetGameTime())
 
+	return 0
+
+# Aux. ISI function
+def removeTractorISITowInfo(pShipID, pInstance=None):
+	debug(__name__ + ", removeTractorISITowInfo")
+	if pInstance == None:
+		pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), pShipID)
+		if not pShip:
+			return 0
+
+		pInstance = findShipInstance(pShip)
+		
+	if pInstance:
+		try:
+			if hasattr(pInstance, "SporeDriveISIvTowPosition"):
+				del pInstance.SporeDriveISIvTowPosition
+		except:
+			print "SporeDrive: Error while calling removeTractorISITowInfo"
+			traceback.print_exc()
+		try:
+			if hasattr(pInstance, "SporeDriveISITowee"):
+				del pInstance.SporeDriveISITowee
+		except:
+			print "SporeDrive: Error while calling removeTractorISITowInfo"
+			traceback.print_exc()
+		try:
+			if hasattr(pInstance, "SporeDriveISIbTractorStat"):
+				del pInstance.SporeDriveISIbTractorStat
+		except:
+			print "SporeDrive: Error while calling removeTractorISITowInfo"
+			traceback.print_exc()
 
 	return 0
 
-# TO-DO ADD ZOOM
-#def PerformZoom(pAction, zoom = 1.0):
+# Aux. ISI function
+def SetupTowingI(ShipID):
+	debug(__name__ + ", SetupTowingI")
+	try:
+		if bCanTowShips != 1:
+			return 0
+
+		pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), ShipID)
+		if not pShip:
+			return 0
+
+		pInstance = findShipInstance(pShip)
+		if not pInstance:
+			return 0
+
+		# Figure out if we're towing a ship right now.
+		pTractor = pShip.GetTractorBeamSystem()
+		if (not pTractor)  or  (not pTractor.IsOn())  or  (pTractor.IsDisabled()):
+			return 0
+
+		# Tractor beam mode needs to be set to Tow, and must be firing.
+		if (pTractor.GetMode() != App.TractorBeamSystem.TBS_TOW)  or  (not pTractor.IsFiring()):
+			return 0
+
+		# ***FIXME: We're assuming that, just because we're firing, we're
+		# hitting the right target.
+		# I didn't found this "GetTargetList" method on App, but somehow it works...
+		try:
+			pTarget = pTractor.GetTargetList()[0]
+			if not pTarget:
+				return 0
+		except IndexError:
+			# probably for some reason the tractor didn't had a target, return
+			return 0
+
+		if pTarget.GetWorldLocation() == None:
+			return 0
+
+		pInstance.SporeDriveISIvTowPosition = pTarget.GetWorldLocation()
+		pInstance.SporeDriveISIvTowPosition.Subtract( pShip.GetWorldLocation() )
+		pInstance.SporeDriveISIvTowPosition.MultMatrixLeft( pShip.GetWorldRotation().Transpose() )
+
+		pInstance.SporeDriveISITowee = pTarget.GetObjID()
+
+		pInstance.SporeDriveISIbTractorStat = 1
+
+	except:
+		print "SporeDrive: Error while calling SetupTowingI"
+		traceback.print_exc()
+
+	return 0
+
+# Aux. ISI function
+def MaintainTowingActionI(pAction, pShipID):
+	debug(__name__ + ", MaintainTowingActionI")
+	pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), pShipID)
+	if not pShip:
+		return 0
+
+	pInstance = findShipInstance(pShip)
+	if not pInstance:
+		return 0
+	try:
+		if hasattr(pInstance, "SporeDriveISIbTractorStat") and pInstance.SporeDriveISIbTractorStat == 1:
+			pTractor = pShip.GetTractorBeamSystem()
+			if pTractor == None:
+				# ship has no tractor beam... what in the blazes?!?
+				return 0
+			elif pTractor.IsDisabled() == 1:
+				### self tractors are disabled... for now, better bail out...
+				return 0
+			if pTractor.IsOn() == 0:
+				pTractor.TurnOn()
+				if pTractor.IsOn() == 0:
+					### couldn't set the tractors on for some reason... for now, better bail out...
+					return 0
+			if pTractor.GetMode() != App.TractorBeamSystem.TBS_TOW:
+				# the tractor beam system mode was changed, so set it back to tow to make sure that
+				# no problems will occur, and the process of towing a ship thru travel goes smoothly
+				pTractor.SetMode(App.TractorBeamSystem.TBS_TOW)
+
+			if not hasattr(pInstance, "SporeDriveISITowee"):
+				return 0
+
+			targetID = pInstance.SporeDriveISITowee
+			pTempTargetAux = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), targetID)
+			if not pTempTargetAux:
+				return 0
+
+			# Update/Maintain the towee's position and speed with the tower.
+			vPosition = App.TGPoint3()
+			vPosition.Set( pInstance.SporeDriveISIvTowPosition )
+			vPosition.MultMatrixLeft( pShip.GetWorldRotation() )
+			vPosition.Add( pShip.GetWorldLocation() )
+			pTempTargetAux.SetTranslate(vPosition)
+			# Set it to match velocities.
+			pTempTargetAux.SetVelocity( pShip.GetVelocityTG() )
+			pTempTargetAux.UpdateNodeOnly()
+
+			vOffset = App.TGPoint3()
+			vOffset.SetXYZ(0, 0, 0)
+			if pTractor.IsFiring():
+				try:
+					pTarget = pTractor.GetTargetList()[0]
+				except IndexError:
+					return 0
+
+				if pTarget == None:
+					# self is tractoring target None, so resume tractoring on the Towee
+					pTractor.StartFiring(pTempTargetAux, vOffset)
+				else:
+					if pTarget.GetObjID() != targetID:
+						# self is tractoring another ship...
+						### for now, it's better to resume towing the Towee, we'll think what we can do
+						### when this happens later.
+						pTractor.StartFiring(pTempTargetAux, vOffset)
+			else:
+				# self isn't tractoring anymore, so resume tractoring on the Towee
+				pTractor.StartFiring(pTempTargetAux, vOffset)
+	except:
+		print "SporeDrive: Error while calling MaintainTowingActionI"
+		traceback.print_exc()
+
+	return 0
+
+# Aux. ISI function
+def EngageSeqTractorCheckI(pAction, pShipID):
+	debug(__name__ + ", EngageSeqTractorCheckI")
+
+	pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), pShipID)
+	if not pShip:
+		return 0
+
+	pInstance = findShipInstance(pShip)
+	if not pInstance:
+		return 0
+
+	if hasattr(pInstance, "SporeDriveISIbTractorStat") and pInstance.SporeDriveISIbTractorStat == 1 and hasattr(pInstance, "SporeDriveISITowee") and pInstance.SporeDriveISITowee != None:
+		# hide the towee
+
+		pToweeShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), pInstance.SporeDriveISITowee)
+		if pToweeShip:
+			pToweeShip.SetHidden(1)
+
+		# and then shut down the tractors. you don't wanna see a tractor beam going out of nowhere grabbing a ship
+		pTractors = pShip.GetTractorBeamSystem()
+		# I know that for this part to happen the ship that is travelling has to have an tractor beam system. Still, knowing STBC like we do, it's best to do this check again, to be sure and prevent any problems.
+		if pTractors != None:
+			pTractors.StopFiring()
+
+		if pToweeShip:
+			vZero = App.TGPoint3()
+			vZero.SetXYZ(0,0,0)
+			pToweeShip.SetVelocity(vZero)
+			pToweeShip.SetAcceleration(vZero)
+			pToweeShip.UpdateNodeOnly()
+	return 0
+
+# An auxiliar function
+def checkISINearbyRecloaking(pAction, pShipID):
+	if pShipID != None:
+		pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), pShipID)
+		if pShip:
+			pSet = pShip.GetContainingSet()
+			if not pSet:
+				return 0
+
+			pInstance = findShipInstance(pShip)
+			if not pInstance:
+				return 0
+
+			pProx = pSet.GetProximityManager()
+			if not pProx:
+				return 0
+
+			iRange = 25
+			iChance = 25
+			ticksPerKilometer = 225/40.0 # 225 is approximately 40 km, so 225/40 is the number of ticks per kilometer
+
+			pInstancedict = pInstance.__dict__
+			if pInstancedict.has_key("Alternate-Warp-FTL") and pInstancedict["Alternate-Warp-FTL"].has_key("Setup") and pInstancedict["Alternate-Warp-FTL"]["Setup"].has_key("Spore-Drive"):
+				if pInstancedict["Alternate-Warp-FTL"]["Setup"]["Spore-Drive"].has_key("UncloakDistance") and pInstancedict["Alternate-Warp-FTL"]["Setup"]["Spore-Drive"]["UncloakDistance"] >= 0:
+					iRange = pInstancedict["Alternate-Warp-FTL"]["Setup"]["Spore-Drive"]["UncloakDistance"]
+				if pInstancedict["Alternate-Warp-FTL"]["Setup"]["Spore-Drive"].has_key("UncloakChance"):
+					iChance = pInstancedict["Alternate-Warp-FTL"]["Setup"]["Spore-Drive"]["UncloakChance"]
+
+			kIter = pProx.GetNearObjects(pShip.GetWorldLocation(), iRange * ticksPerKilometer, 1) 
+			while 1:
+				pObject = pProx.GetNextObject(kIter)
+				if not pObject:
+					break
+
+				vibechecker = 0
+				if not pObject.GetName() == pShip.GetName():
+					if pObject.IsTypeOf(App.CT_SHIP):
+						pkShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), pObject.GetObjID())
+						if pkShip and (App.g_kSystemWrapper.GetRandomNumber(100) <= iChance):
+							pCloak = pkShip.GetCloakingSubsystem()
+							if pCloak:
+								pkInstance = findShipInstance(pkShip)
+								if not pkInstance:
+									pCloak.InstantDecloak()
+								else:
+									pkInstanceDict = pkInstance.__dict__
+									if not (pkInstanceDict.has_key("Phase Cloak") or pkInstanceDict.has_key("Phased Cloak")):
+										pCloak.InstantDecloak()
+			pProx.EndObjectIteration(kIter)
+	return 0
+
+# ISI function
+def SetupSequenceISI(pShip=None):
+	# you can use this function as an example on how to create your own 'SetupSequenceISI(self)' method for AlternateSubModelFTL
+	# While it has to basically mirror the '.SetupSequence(self)' method below (albeit you could create totally different sequences if you want), it needs to remove any unecessary code that references to self or changing systems.
+	# Also this intraSystem intercept does not automatically call PreEngage nor PostEngage functions, if you really need to call those, you would need to call them by yourself, and adapted to also not include references to self.
+	# something of the style of "DoPreEngageStuffISI()" or something.
+	debug(__name__ + ", SetupSequence")
+	
+	sCustomActionsScript = "Custom.GalaxyCharts.WarpSequence_Override"
+	
+	try:
+		from Custom.QBautostart.Libs.LibWarp import GetEntryDelayTime
+		fEntryDelayTime = GetEntryDelayTime()
+	except:
+		fEntryDelayTime = 1.0
+
+	pPlayer = App.Game_GetCurrentPlayer()
+
+	if (pShip == None):
+		pShip = pPlayer
+
+	if (pShip == None):
+		return
+
+	SetupTowingI(pShip.GetObjID())
+
+	pInstance = findShipInstance(pShip)
+	_, _, _, _, _, _, _ , _ , myExitDirection, myTime, myDistance = SporeDriveBasicConfigInfo(pShip)
+
+	if myExitDirection == None or myExitDirection == "":
+		myExitDirection = "Down"
+
+	hasTractorReady = hasattr(pInstance, "SporeDriveISIbTractorStat") and (pInstance.SporeDriveISIbTractorStat == 1)
+
+	pPlayerSet = pShip.GetContainingSet()
+	sSet = ""
+	if pPlayerSet != None:
+		sSet = pPlayerSet.GetName()
+
+	# Get the destination set name from the module name, if applicable.
+	pcDest = None
+	pcDestModule = pPlayerSet.GetRegionModule()
+	if (pcDestModule != None):
+		pcDest = pcDestModule[string.rfind(pcDestModule, ".") + 1:]
+		if (pcDest == None):
+			pcDest = pcDestModule
+
+	pEngageWarpSeq = App.TGSequence_Create()
+	#pDuringWarpSeq = App.TGSequence_Create() ## This is unused
+	pExitWarpSeq = App.TGSequence_Create()
+
+	# Keep track of which action is the final action in the warp sequence,
+	# so we can attach the m_pPostWarp sequence to the end.  By default,
+	# pMoveAction2 is the final action...
+	pFinalAction = None
+	pWarpSoundAction1 = None
+
+	try:
+		import Custom.NanoFXv2.NanoFX_Lib
+		sRace = Custom.NanoFXv2.NanoFX_Lib.GetSpeciesName(pShip)
+	except:
+		sRace = ""
+
+	extraSoundTime = 0.01
+
+
+	if (pPlayer != None) and (pShip.GetObjID() == pPlayer.GetObjID()):
+		fEntryDelayTime = fEntryDelayTime + 1.0
+		extraSoundTime = 0.25
+		
+		myCamera = Camera.GetPlayerCamera()
+
+		# Force a noninteractive cinematic view in space..
+		pCinematicStart = App.TGScriptAction_Create("Actions.CameraScriptActions", "StartCinematicMode", 0)
+		pEngageWarpSeq.AddAction(pCinematicStart, None)
+
+		pDisallowInput = App.TGScriptAction_Create("MissionLib", "RemoveControl")
+		#pEngageWarpSeq.AddAction(pDisallowInput, None)
+		pEngageWarpSeq.AddAction(pDisallowInput, pCinematicStart)
+
+		pCameraAction0 = App.TGScriptAction_Create(__name__, "PlacementOffsetOrbitWatch", myCamera, myDistance, "FreeOrbit")
+		pEngageWarpSeq.AddAction(pCameraAction0, pDisallowInput)
+
+
+	pWarpSoundAction1 = App.TGScriptAction_Create(__name__, "PlaySporeDriveSoundI", pShip, "Enter Warp", sRace)
+	pEngageWarpSeq.AddAction(pWarpSoundAction1, None, extraSoundTime)
+	
+	pBoostAction = App.TGScriptAction_Create(sCustomActionsScript, "BoostShipSpeed", pShip.GetObjID(), 1, 1.0)
+	pEngageWarpSeq.AddAction(pBoostAction, pWarpSoundAction1, 0.01)
+
+	#try:
+	#	import Custom.NanoFXv2.WarpFX.WarpFX
+	#	pNacelleFlash = Custom.NanoFXv2.WarpFX.WarpFX.CreateNacelleFlashSeq(pShip, pShip.GetRadius())
+	#	pEngageWarpSeq.AddAction(pNacelleFlash, pWarpSoundAction1)
+	#except:
+	#	pass
+
+	fTimeToFlash = (fEntryDelayTime) + (2*(App.WarpEngineSubsystem_GetWarpEffectTime()/2.0))
+
+	fCount = 0.0
+	while fCount < fTimeToFlash and (fCount * 100) <= myTime:
+		if (fCount * 100) <= myTime:
+			pRotateVessel = App.TGScriptAction_Create(__name__, "MainPartRotationI", pShip, sRace, 0)
+			if pRotateVessel:
+				pEngageWarpSeq.AddAction(pRotateVessel, None, fCount)
+		if hasTractorReady == 1:
+			pMaintainTowingAction = App.TGScriptAction_Create(__name__, "MaintainTowingActionI", pShip.GetObjID())
+			pEngageWarpSeq.AddAction(pMaintainTowingAction, None, fCount)
+
+		fCount = fCount + 0.01
+		if fCount >= fTimeToFlash:
+			break
+
+	if fCount != fTimeToFlash:
+		fTimeToFlash = fCount + 0.25
+
+	# TO-DO Maybe create two ship clone copies?
+	# Create the warp flash.
+	# TO-DO Replace with a spore-drive flash
+	pFlashAction1 = App.TGScriptAction_Create("Actions.EffectScriptActions", "WarpFlash", pShip.GetObjID())
+	pEngageWarpSeq.AddAction(pFlashAction1, None, fTimeToFlash)
+
+	# Hide the ship.
+	pHideShip = App.TGScriptAction_Create(sCustomActionsScript, "HideShip", pShip.GetObjID(), 1)
+	pEngageWarpSeq.AddAction(pHideShip, pFlashAction1)
+
+	pUnBoostAction = App.TGScriptAction_Create(sCustomActionsScript, "BoostShipSpeed", pShip.GetObjID(), 0, 0.0)
+	pEngageWarpSeq.AddAction(pUnBoostAction, pHideShip)
+	
+	pCheckTowing = App.TGScriptAction_Create(__name__, "EngageSeqTractorCheckI", pShip.GetObjID())
+	pEngageWarpSeq.AddAction(pCheckTowing, pHideShip)	
+
+	pEnWarpSeqEND = App.TGScriptAction_Create(sCustomActionsScript, "NoAction")
+	pEngageWarpSeq.AddAction(pEnWarpSeqEND, pUnBoostAction, 2.5)
+
+	############### exiting begins ########
+
+	if (pPlayer != None) and (pShip.GetObjID() == pPlayer.GetObjID()):
+		# Force a noninteractive cinematic view in space..
+		pCinematicStart = App.TGScriptAction_Create("Actions.CameraScriptActions", "StartCinematicMode", 0)
+		pExitWarpSeq.AddAction(pCinematicStart, None)
+
+		pDisallowInput = App.TGScriptAction_Create("MissionLib", "RemoveControl")
+		pExitWarpSeq.AddAction(pDisallowInput, pCinematicStart)
+
+		# Add actions to move the camera in the destination set to watch the placement,
+		# so we can watch the ship come in.
+		# Initial position is reverse chasing the placement the ship arrives at.
+		pCameraAction4 = App.TGScriptAction_Create("Actions.CameraScriptActions", "DropAndWatch", pcDest, pPlayer.GetName())
+		pExitWarpSeq.AddAction(pCameraAction4, pDisallowInput)
+	
+	# Hide the ship.
+	pHideShip = App.TGScriptAction_Create(sCustomActionsScript, "HideShip", pShip.GetObjID(), 1)
+	pExitWarpSeq.AddAction(pHideShip, None)
+
+	# Check for towee
+	if hasTractorReady == 1:
+		pHideTowee = App.TGScriptAction_Create(sCustomActionsScript, "HideShip", pInstance.SporeDriveISITowee, 1)
+		pExitWarpSeq.AddAction(pHideTowee, pHideShip)
+
+	# Create the warp flash.
+	pFlashAction2 = App.TGScriptAction_Create("Actions.EffectScriptActions", "WarpFlash", pShip.GetObjID())
+	pExitWarpSeq.AddAction(pFlashAction2, pHideShip, 0.7)
+
+	# Un-Hide the ship
+	pUnHideShip = App.TGScriptAction_Create(sCustomActionsScript, "HideShip", pShip.GetObjID(), 0)
+	pExitWarpSeq.AddAction(pUnHideShip, pFlashAction2, 0.01)
+
+	# Un-hide the Towee, plus if it exists, also set up the maintain chain
+	## REMEMBER: any changes in the time of this sequence will also require a re-check of this part, to make sure
+	##           we're making the right amount of MaintainTowing actions.
+	if hasTractorReady == 1:
+		pUnHideTowee = App.TGScriptAction_Create(sCustomActionsScript, "HideShip", pInstance.SporeDriveISITowee, 0)
+		pExitWarpSeq.AddAction(pUnHideTowee, pUnHideShip)
+		fCount = 0.0
+		while fCount < 3.6:
+			pMaintainTowingAction = App.TGScriptAction_Create(__name__, "MaintainTowingActionI", pShip.GetObjID())
+			pExitWarpSeq.AddAction(pMaintainTowingAction, pUnHideTowee, fCount)
+			fCount = fCount + 0.01
+			if fCount >= 3.6:
+				break
+		pEMaintainTowingAction = App.TGScriptAction_Create(__name__, "removeTractorISITowInfo", pShip.GetObjID())
+		pExitWarpSeq.AddAction(pEMaintainTowingAction, pUnHideTowee, fCount + 0.3)
+
+	# Give it a little boost
+	pBoostAction = App.TGScriptAction_Create(__name__, "CustomBoostShipSpeed", sCustomActionsScript, pShip.GetObjID(), 1, 300.0, myExitDirection)
+	pExitWarpSeq.AddAction(pBoostAction, pUnHideShip)
+
+	# TO-DO Replace with a spore-drive flash?
+	# Play the vushhhhh of exiting warp
+	pWarpSoundAction2 = App.TGScriptAction_Create(__name__, "PlaySporeDriveSoundI", pShip, "Exit Warp", sRace)
+	pExitWarpSeq.AddAction(pWarpSoundAction2, pBoostAction)
+	
+	# Make the ship return to normal speed.
+	pUnBoostAction = App.TGScriptAction_Create(sCustomActionsScript, "BoostShipSpeed", pShip.GetObjID(), -1, 1.0)
+	pExitWarpSeq.AddAction(pUnBoostAction, pWarpSoundAction2, 1.2)
+
+	# IMPORTANT: These three actions below are an extra added for intra-system intercept since we need to ensure the cutscene really ends and control is returned to the player.
+	# This could be handled on the main AlternateSubModelFTL script but I'm leaving it here to allow better customization
+
+	pActionCSE0 = App.TGScriptAction_Create("MissionLib", "ReturnControl")
+	pExitWarpSeq.AddAction(pActionCSE0, pUnBoostAction, 0.5)
+	pActionCSE1 = App.TGScriptAction_Create("Actions.CameraScriptActions", "CutsceneCameraEnd", sSet)
+	pExitWarpSeq.AddAction(pActionCSE1, pUnBoostAction, 0.1)
+	pActionCSE2 = App.TGScriptAction_Create("MissionLib", "EndCutscene")
+	pExitWarpSeq.AddAction(pActionCSE2, pUnBoostAction, 0.1)
+
+	# This is just a tiny extra, this vessel can uncloak nerby vessels which don't use a phased cloak
+
+	pActionCSE3 = App.TGScriptAction_Create(__name__, "checkISINearbyRecloaking", pShip.GetObjID())
+	pExitWarpSeq.AddAction(pActionCSE3, pUnBoostAction, 0.2)
+
+
+	# And finally finish the exit sequence
+	# actually, just put up a empty action, the Traveler system automatically puts his exit sequence action at the
+	# end of the sequence, and his exit action is necessary. However I want it to trigger at the right time, and doing
+	# this, i'll achieve that.
+	pExitWarpSeqEND = App.TGScriptAction_Create(sCustomActionsScript, "NoAction")
+	pExitWarpSeq.AddAction(pExitWarpSeqEND, pUnBoostAction, 1.5)
+
+	###########################################################################################
+	# end of the not-required stuff that sets up my sequences
+	###########################################################################################
+
+	# Now the following part, the return statement is VERY important.
+	# it must return a list of 3 values, from beggining to end, they must be:
+	# 1º: the engaging travel sequence  (plays once, when the ship enters the travel)
+	# 2º: the time between engaging and exiting sequences
+	# 3º: the exiting travel sequence   (plays once, when the ship exits travel)
+
+	# Note that each one of them can be None, if you don't want to have that sequence in your travel method.
+
+	return [pEngageWarpSeq, fTimeToFlash + 2.5, pExitWarpSeq]
+
 
 def SetupSequence(self):
 	# you can use this function as an example on how to create your own '.SetupSequence(self)' method for your
@@ -888,7 +1439,7 @@ def SetupSequence(self):
 		#pEngageWarpSeq.AddAction(pDisallowInput, None)
 		pEngageWarpSeq.AddAction(pDisallowInput, pCinematicStart)
 
-		pCameraAction0 = App.TGScriptAction_Create(__name__, "PlacementOffsetOrbitWatch", myCamera, myDistance, "FreeOrbit") # TO-DO Look for a zoom option
+		pCameraAction0 = App.TGScriptAction_Create(__name__, "PlacementOffsetOrbitWatch", myCamera, myDistance, "FreeOrbit")
 		pEngageWarpSeq.AddAction(pCameraAction0, pDisallowInput)
 
 
@@ -925,7 +1476,6 @@ def SetupSequence(self):
 	if fCount != fTimeToFlash:
 		fTimeToFlash = fCount + 0.25
 
-	# TO-DO Create also a USS Sovereign Slipstream drive based on this, using this sequence and extracting the engage and disengage events
 	# TO-DO Maybe create two ship clone copies?
 	# Create the warp flash.
 	# TO-DO Replace with a spore-drive flash
@@ -1035,6 +1585,11 @@ def SetupSequence(self):
 ########
 def GetStartTravelEvents(self):
 	debug(__name__ + ", GetStartTravelEvents")
+	return GetStartTravelEventsI(self.Ship)
+
+# Aux. ISI function
+def GetStartTravelEventsI(pShip):
+	debug(__name__ + ", GetStartTravelEventsI")
 
 	pEvent = App.TGEvent_Create()
 	sOriAdress = pEvent.this
@@ -1042,7 +1597,7 @@ def GetStartTravelEvents(self):
 	sAdress = sOriAdress+"WarpEvent"
 	pSWNEvent = App.WarpEvent(sAdress)
 	pSWNEvent.SetEventType(ENGAGING_ALTERNATEFTLSUBMODEL)
-	pSWNEvent.SetDestination(self.Ship)
+	pSWNEvent.SetDestination(pShip)
 
 	# You need to perform these for each event you want, else you get ctd (crash-to-desktop)
 	pEvent2e = App.TGEvent_Create()
@@ -1052,7 +1607,7 @@ def GetStartTravelEvents(self):
 
 	pSWNEvent2 = App.WarpEvent(sAdress2e)
 	pSWNEvent2.SetEventType(App.ET_START_WARP_NOTIFY)
-	pSWNEvent2.SetDestination(self.Ship)
+	pSWNEvent2.SetDestination(pShip)
 
 	return [ pSWNEvent, pSWNEvent2 ]
 
@@ -1062,14 +1617,19 @@ def GetStartTravelEvents(self):
 ########
 def GetExitedTravelEvents(self):
 	debug(__name__ + ", GetExitedTravelEvents")
+	return GetExitedTravelEventsI(self.Ship)
+
+# Aux. ISI function
+def GetExitedTravelEventsI(pShip):
+	debug(__name__ + ", GetExitedTravelEventsI")
 	pEvent = App.TGStringEvent_Create()
 	pEvent.SetEventType(App.ET_EXITED_SET)
-	pEvent.SetDestination(self.Ship)
+	pEvent.SetDestination(pShip)
 	pEvent.SetString("warp")
 
 	pEvent2 = App.TGStringEvent_Create()
 	pEvent2.SetEventType(DISENGAGING_ALTERNATEFTLSUBMODEL)
-	pEvent2.SetDestination(self.Ship)
+	pEvent2.SetDestination(pShip)
 	pEvent2.SetString("warp")
 
 	return [ pEvent, pEvent2 ]

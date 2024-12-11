@@ -1,9 +1,14 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
 # AlternateSubModelFTL.py
-# 24th September 2024, by Alex SL Gato (CharaToLoki)
+# 11th December 2024, by Alex SL Gato (CharaToLoki)
 #         Based on Defiant's SubModels script (from which it inherits the classes, so in fact SubModels is a dependency) and BorgAdaptation.py by Alex SL Gato, which were based on the Foundation import function by Dasher
 #         Also based on ATPFunctions by Apollo and slightly on DS9FXPulsarManager by USS Sovereign.
+#         Also some sections based on the Slisptream module by Mario aka USS Sovereign, modified by Alex SL Gato with explicit permission from Mario to adapt his code to this script.
+# IMPORTANT NOTE:
+#  - All sections based on USS Sovereign's Slipstream module fall under the All Rights Reserved section. Those sections are left clear with two text banners, from "BEGINNING OF USS SOVEREIGN'S LIMITED PERMISSION AREA" to "END OF USS SOVEREIGN'S LIMITED PERMISSION AREA". Do not modify or repackage those sections of the mod without extreme permission from the authors:
+#  ---- USS Sovereign condition: that this mod is intended to be released for KM and not for REP, RE nor REM-related mods.
+#  ---- Alex SL Gato condition: does not mind as long as USS Sovereign and he are being credited and both Mario and himself's conditions are covered.
 #################################################################################################################
 # A modification of a modification, last modification by Alex SL Gato (CharaToLoki)
 ##################################################################################################################################################################################################################################
@@ -12,7 +17,7 @@
 ##################################################################################################################################################################################################################################
 ##################################################################################################################################################################################################################################
 # === INTRODUCTION ===
-# The purpose of this plugin is to provide extended globalized actions for alternate TravellingMethods, providing them with the option to modify the model, like SubModels, but a bit less "broken"; as well as supporting SubModels Warp and Attack support.
+# The purpose of this plugin is to provide extended globalized actions for alternate TravellingMethods, providing them with the option to modify the model, like SubModels, but a bit less "broken"; as well as supporting SubModels Warp and Attack support, and a limited intra-system-intercept for each of those methods.
 # NOTE: This will not affect pre-existing TravellingMethods, a ship could have those and not use this tech at all.
 # INFO: While originally this script had two classes "ProtoWarp" and "MovingEventUpdated" which inherited from Defiant's SubModels "SubModel" and "MovingEvent" classes, and also used certain functions from that script, current version doesn't, so no issues should arise from combining both on the same ship. However, due to this script being a better replacement, it is suggested to just use AlternateSubmodelFTL instead.
 # ATTENTION: The script is dependant on scripts/Custom/TravellingMethods and on GalaxyCharts to verify sub-technology and FTL availability. With those options turned off, the usefulness of this script is reduced to a cleaner customizable SubModels.
@@ -34,7 +39,7 @@
 # - "~r.c~"              - rapid-change between status or situations, most often before all the pieces have managed to move/rotate fully and the transformation was ongoing f.ex. a ship with normal position and attack position constantly switching from red alert to green alert every second.
 #
 # (#) On the "Setup" section, people will notice:
-# -- (*) A ""Proto-Warp": {"Nacelles": ["Proto Warp Nacelle"], "Core": ["Proto-Core"], }," line, This can vary wildly between TravellingMethods, some may not even require a similar line, so check each one's readme (if they have it) to get more information on its SubTech. However for those modders that use this tech to validate if the ship is equipped or not, please do so somewhere inside the "Setup" field. On this case in particular, this line is simply arbitrarily defined here so the ProtoWarp TravellingMethods script, which uses this tech to verify the ship is equipped with it, can determine the ship has or does not have this tech. 
+# -- (*) A ""Proto-Warp": {"Nacelles": ["Proto Warp Nacelle"], "Core": ["Proto-Core"], }," line, This can vary wildly between TravellingMethods, some may not even require a similar line, so check each one's readme (if they have it) to get more information on its SubTech. However for those modders that use this tech to validate if the ship is equipped or not, please do so somewhere inside the "Setup" field. On this case in particular, this line is simply arbitrarily defined here so the ProtoWarp TravellingMethods script, which uses this tech to verify the ship is equipped with it, can determine the ship has or does not have this tech. This kind of line is what can also be used for indentifying if a ship has Intra-System Intercept.
 # -- (#) "Body" is a key whose value stores the model used during transformations. <s-s> <k:v> c.s.
 # -- (#) "NormalModel" is a key whose value stores the model used when no red alert nor special warp or FTL method with this tech support happen. <s-s> <k:v> c.s.
 # -- (-) "WarpModel" is a key whose value stores the model used when the ship uses warp, and no other FTL SubModel Warp Events are called. <s-s> <k:v> c.s.
@@ -144,7 +149,24 @@ Foundation.ShipDef.USSProtostar.dTechs = {
 }
 """
 #
+# === HOW-TO-USE a pre-existing FTL TravellingMethods Intra-System Intercept ===
+#
+# When a ship is equipped with at least 1 type of alternate FTL that has the required InSystemIntercept() (ISI) function, if the player plays as that ship, a new entry called "Alt. intrasystem Intercept" (or whatever name the "MainHelmMenuName" variable has stored) will appear on top of the "Helm" ("Kiska" on stock bridges) Menu. When the player ship is no longer equipped with the drive, this sub-menu will disappear.
+# Structure of the Menu:
+# o "Alt. intrasystem Intercept"
+# oooo "Intercept Methods": this entry is actually a bullet-list subMenu, indicating which FTL Methods that support ISI are equipped on this ship. Upon clicking on one of its subMenu options, it will attempt to move the ship to the desired intercept location, which is the ship, planet or navpoint the player has selected at the moment. This may not always succeed, as each button is linked to a set of filters.
+# ooooooo "Method1": actually it is the name the InSystemIntercept() the TravellingMethod provides.
+# ooooooo "Method2": more than 1 method to intercept can be selected.
+# ooooooo "MethodN": please notice that due to implementation, two or more buttons could have the same name, but this is not recommended.
+# oooo "Initiate Navpoint Mode"/"Stop Navpoint Mode": a common toggleable button, it will spawn a "navpoint" ship for interception when the player does not want to use other ships, planets or nav-points as objectives to intercept. Click again to remove the navpoint.
+# The filters that each Intercept Method button has are the following:
+# - No-target filter: if the intercept location is not a ship or a planet, the respective button name will temporarily change name to "NO TARGET".
+# - Safety distance feature: if the intercept target is too close to the ship, the respective button name will temporarily change name to "TOO CLOSE".
+# - Local FTL restrictions: before engaging, this plugin also checks the CanTravel equivalent function provided by InSystemIntercept() function. If it does not meet the requirements, it will not engage and the button will temporarily change to "CANNOT". Additionally, the local function may drop certain subtitles and phrases to hint at what is preventing the ship from using ISI at the moment.
+# - Local FTL 'GoodAim' functions: once we know we can engage, the plugin will look for a good position to perform the intercept, according to the function provided by InSystemIntercept() function. Once we have reached this stage the ISI will happen, but will be delayed the time needed to aim for a good position.
+#
 # === HOW TO CREATE a compatible FTL TravellingMethods that supports this tech ===
+#
 # On this, we lean on GalaxyCharts since the file was originally meant to be for that.
 # STEP 1. Create a proper GalaxyCharts TravellingMethod file, or modify a pre-existing one for your needs.
 # STEP 2. The bare minimum to add would be the following:
@@ -706,7 +728,768 @@ Foundation.ShipDef.USSProtostar.dTechs = { # (#)
 ##########	END OF MANUAL
 #################################################################################################################
 #################################################################################################################
+#
+# === HOW TO CREATE a compatible FTL TravellingMethods that supports ISI ===
+# ISI (Intra-System-Intercept) is a feature that extends the point above one step further. As such, you need to follow the steps above, but adding the following (alongside an explanation on the user manual about how that TravellingMethod supports ISI and the extra auxiliar functions that are not needed for GalaxyCharts):
+"""
 
+####### Inside the ALTERNATESUBMODELFTL METHODS section: #######
+def InSystemIntercept():
+	propulsionType = sName # The name for its subMenu option - could be the same as the one on TravellingMethod, could be different... or it could even clash with another name - albeit that is not recommended.
+	eEntryEvent = GetStartTravelEventsI # The events called during the beginning of the ISI sequence. Events like App.ET_START_WARP_NOTIFY are ignored.
+	eExitEvent = GetExitedTravelEventsI # The events called after the diplacement of the ISI sequence. Events like App.ET_EXITED_SET are ignored.
+	eSequenceFunction = SetupSequenceISI # This should return three values, the before-displacement sequence, the time in-between, and the post-displacement sequence. The sequences are a modification of the normal sequences for changing systems.
+	# Important NOTE: Since intra-system does not call pre-engage nor post-engage functions on its own (only the entry and exit events), if you have an actual pre-engage and post-engage function that is not just a mere "return", you may want to adjust your sequence to call them instead at the appropiate time.
+	isEquipped = IsShipEquipped # Function for knowing if the ship is equipped with ISI for this TravellingMethod.
+	eCanTravel = CanTravelShip # Function for knowing if the ship equipped with ISI for this TravellingMethod, can actually use it for ISI.
+	awayNavPointDistance = awayNavPointDistanceCal # This is a custom multiplier value, used for checking when a ship is too close to a planet or ship. A higher value means that it will allow closer ISI, while a lower value will make that ISI inner proximity limit be further. Negative values are set to 0.
+	engageDirection = GetEngageDirectionISI # The function used for knowing if the ship is aiming at a good position before engaging. If it returns none it means the ship is correctly aimed, else the function provided should give a better course. AlternateSubModelFTL would orient the ship to that direction.
+
+	return propulsionType, eEntryEvent, eExitEvent, eSequenceFunction, isEquipped, eCanTravel, awayNavPointDistance, engageDirection
+
+"""
+# As you may have noticed, the function above calls to some functions/attributes not mentioned before. This is because these functions/attributes are indeed custom and could be unique to each TravellingMethod, with the only common feature that, unlike the equivalents for normalFTL travel, they must get rid of any call to "self" and accept, if necessary, a pShip. Example from these is below, done in another script for Spore Drive, where:
+# - propulsionType = sName # sName being the sName = "Spore Drive" atribute.
+# - eEntryEvent = GetStartTravelEventsI # With GetStartTravelEventsI being a modified function from GetStartTravelEvents, with both being modified below to use less space and make changes easier:
+"""
+def GetStartTravelEvents(self):
+	debug(__name__ + ", GetStartTravelEvents")
+	return GetStartTravelEventsI(self.Ship)
+
+# Aux. ISI function
+def GetStartTravelEventsI(pShip):
+	debug(__name__ + ", GetStartTravelEventsI")
+
+	pEvent = App.TGEvent_Create()
+	sOriAdress = pEvent.this
+	sOriAdress = sOriAdress[0:len(sOriAdress)-7]
+	sAdress = sOriAdress+"WarpEvent"
+	pSWNEvent = App.WarpEvent(sAdress)
+	pSWNEvent.SetEventType(ENGAGING_ALTERNATEFTLSUBMODEL)
+	pSWNEvent.SetDestination(pShip)
+
+	# You need to perform these for each event you want, else you get ctd (crash-to-desktop)
+	pEvent2e = App.TGEvent_Create()
+	sOriAdress2e = pEvent2e.this
+	sOriAdress2e = sOriAdress2e[0:len(sOriAdress2e)-7]
+	sAdress2e = sOriAdress2e+"WarpEvent"
+
+	pSWNEvent2 = App.WarpEvent(sAdress2e)
+	pSWNEvent2.SetEventType(App.ET_START_WARP_NOTIFY)
+	pSWNEvent2.SetDestination(pShip)
+
+	return [ pSWNEvent, pSWNEvent2 ]
+"""
+# - eExitEvent = GetExitedTravelEventsI # With GetExitedTravelEventsI being a modified function from GetExitedTravelEvents, with both being modified below to use less space and make changes easier:
+"""
+def GetExitedTravelEvents(self):
+	debug(__name__ + ", GetExitedTravelEvents")
+	return GetExitedTravelEventsI(self.Ship)
+
+# Aux. ISI function
+def GetExitedTravelEventsI(pShip):
+	debug(__name__ + ", GetExitedTravelEventsI")
+	pEvent = App.TGStringEvent_Create()
+	pEvent.SetEventType(App.ET_EXITED_SET)
+	pEvent.SetDestination(pShip)
+	pEvent.SetString("warp")
+
+	pEvent2 = App.TGStringEvent_Create()
+	pEvent2.SetEventType(DISENGAGING_ALTERNATEFTLSUBMODEL)
+	pEvent2.SetDestination(pShip)
+	pEvent2.SetString("warp")
+
+	return [ pEvent, pEvent2 ]
+"""
+# - eSequenceFunction = SetupSequenceISI # With SetupSequenceISI being a totally separate SetupSequence (extra additional functions from this custom one are not shown, with the exception of some useful handlers to support ISI dragging another ship with a tractor beam):
+"""
+# Aux. ISI function
+def removeTractorISITowInfo(pShipID, pInstance=None):
+	debug(__name__ + ", removeTractorISITowInfo")
+	if pInstance == None:
+		pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), pShipID)
+		if not pShip:
+			return 0
+
+		pInstance = findShipInstance(pShip)
+		
+	if pInstance:
+		try:
+			if hasattr(pInstance, "SporeDriveISIvTowPosition"):
+				del pInstance.SporeDriveISIvTowPosition
+		except:
+			print "SporeDrive: Error while calling removeTractorISITowInfo"
+			traceback.print_exc()
+		try:
+			if hasattr(pInstance, "SporeDriveISITowee"):
+				del pInstance.SporeDriveISITowee
+		except:
+			print "SporeDrive: Error while calling removeTractorISITowInfo"
+			traceback.print_exc()
+		try:
+			if hasattr(pInstance, "SporeDriveISIbTractorStat"):
+				del pInstance.SporeDriveISIbTractorStat
+		except:
+			print "SporeDrive: Error while calling removeTractorISITowInfo"
+			traceback.print_exc()
+
+	return 0
+
+# Aux. ISI function
+def SetupTowingI(ShipID):
+	debug(__name__ + ", SetupTowing")
+	try:
+		if bCanTowShips != 1:
+			return 0
+
+		pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), ShipID)
+		if not pShip:
+			return 0
+
+		pInstance = findShipInstance(pShip)
+		if not pInstance:
+			return 0
+
+		# Figure out if we're towing a ship right now.
+		pTractor = pShip.GetTractorBeamSystem()
+		if (not pTractor)  or  (not pTractor.IsOn())  or  (pTractor.IsDisabled()):
+			return 0
+
+		# Tractor beam mode needs to be set to Tow, and must be firing.
+		if (pTractor.GetMode() != App.TractorBeamSystem.TBS_TOW)  or  (not pTractor.IsFiring()):
+			return 0
+
+		# ***FIXME: We're assuming that, just because we're firing, we're
+		# hitting the right target.
+		# I didn't found this "GetTargetList" method on App, but somehow it works...
+		try:
+			pTarget = pTractor.GetTargetList()[0]
+			if not pTarget:
+				return 0
+		except IndexError:
+			# probably for some reason the tractor didn't had a target, return
+			return 0
+
+		if pTarget.GetWorldLocation() == None:
+			return 0
+
+		pInstance.SporeDriveISIvTowPosition = pTarget.GetWorldLocation()
+		pInstance.SporeDriveISIvTowPosition.Subtract( pShip.GetWorldLocation() )
+		pInstance.SporeDriveISIvTowPosition.MultMatrixLeft( pShip.GetWorldRotation().Transpose() )
+
+		pInstance.SporeDriveISITowee = pTarget.GetObjID()
+
+		pInstance.SporeDriveISIbTractorStat = 1
+
+	except:
+		print "SporeDrive: Error while calling SetupTowingI"
+		traceback.print_exc()
+
+	return 0
+
+# Aux. ISI function
+def MaintainTowingActionI(pAction, pShipID):
+	debug(__name__ + ", MaintainTowingActionI")
+	pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), pShipID)
+	if not pShip:
+		return 0
+
+	pInstance = findShipInstance(pShip)
+	if not pInstance:
+		return 0
+	try:
+		if hasattr(pInstance, "SporeDriveISIbTractorStat") and pInstance.SporeDriveISIbTractorStat == 1:
+			pTractor = pShip.GetTractorBeamSystem()
+			if pTractor == None:
+				# ship has no tractor beam... what in the blazes?!?
+				return 0
+			elif pTractor.IsDisabled() == 1:
+				### self tractors are disabled... for now, better bail out...
+				return 0
+			if pTractor.IsOn() == 0:
+				pTractor.TurnOn()
+				if pTractor.IsOn() == 0:
+					### couldn't set the tractors on for some reason... for now, better bail out...
+					return 0
+			if pTractor.GetMode() != App.TractorBeamSystem.TBS_TOW:
+				# the tractor beam system mode was changed, so set it back to tow to make sure that
+				# no problems will occur, and the process of towing a ship thru travel goes smoothly
+				pTractor.SetMode(App.TractorBeamSystem.TBS_TOW)
+
+			if not hasattr(pInstance, "SporeDriveISITowee"):
+				return 0
+
+			targetID = pInstance.SporeDriveISITowee
+			pTempTargetAux = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), targetID)
+			if not pTempTargetAux:
+				return 0
+
+			# Update/Maintain the towee's position and speed with the tower.
+			vPosition = App.TGPoint3()
+			vPosition.Set( pInstance.SporeDriveISIvTowPosition )
+			vPosition.MultMatrixLeft( pShip.GetWorldRotation() )
+			vPosition.Add( pShip.GetWorldLocation() )
+			pTempTargetAux.SetTranslate(vPosition)
+			# Set it to match velocities.
+			pTempTargetAux.SetVelocity( pShip.GetVelocityTG() )
+			pTempTargetAux.UpdateNodeOnly()
+
+			vOffset = App.TGPoint3()
+			vOffset.SetXYZ(0, 0, 0)
+			if pTractor.IsFiring():
+				try:
+					pTarget = pTractor.GetTargetList()[0]
+				except IndexError:
+					return 0
+
+				if pTarget == None:
+					# self is tractoring target None, so resume tractoring on the Towee
+					pTractor.StartFiring(pTempTargetAux, vOffset)
+				else:
+					if pTarget.GetObjID() != targetID:
+						# self is tractoring another ship...
+						### for now, it's better to resume towing the Towee, we'll think what we can do
+						### when this happens later.
+						pTractor.StartFiring(pTempTargetAux, vOffset)
+			else:
+				# self isn't tractoring anymore, so resume tractoring on the Towee
+				pTractor.StartFiring(pTempTargetAux, vOffset)
+	except:
+		print "SporeDrive: Error while calling MaintainTowingActionI"
+		traceback.print_exc()
+
+	return 0
+
+# Aux. ISI function
+def EngageSeqTractorCheckI(pAction, pShipID):
+	debug(__name__ + ", EngageSeqTractorCheckI")
+
+	pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), pShipID)
+	if not pShip:
+		return 0
+
+	pInstance = findShipInstance(pShip)
+	if not pInstance:
+		return 0
+
+	if hasattr(pInstance, "SporeDriveISIbTractorStat") and pInstance.SporeDriveISIbTractorStat == 1 and hasattr(pInstance, "SporeDriveISITowee") and pInstance.SporeDriveISITowee != None:
+		# hide the towee
+
+		pToweeShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), pInstance.SporeDriveISITowee)
+		if pToweeShip:
+			pToweeShip.SetHidden(1)
+
+		# and then shut down the tractors. you don't wanna see a tractor beam going out of nowhere grabbing a ship
+		pTractors = pShip.GetTractorBeamSystem()
+		# I know that for this part to happen the ship that is travelling has to have an tractor beam system. Still, knowing STBC like we do, it's best to do this check again, to be sure and prevent any problems.
+		if pTractors != None:
+			pTractors.StopFiring()
+
+		if pToweeShip:
+			vZero = App.TGPoint3()
+			vZero.SetXYZ(0,0,0)
+			pToweeShip.SetVelocity(vZero)
+			pToweeShip.SetAcceleration(vZero)
+			pToweeShip.UpdateNodeOnly()
+	return 0
+
+def SetupSequenceISI(pShip=None):
+	# you can use this function as an example on how to create your own 'SetupSequenceISI(self)' method for AlternateSubModelFTL
+	# While it has to basically mirror the '.SetupSequence(self)' method below (albeit you could create totally different sequences if you want), it needs to remove any unecessary code that references to self or changing systems.
+	# Also this intraSystem intercept does not automatically call PreEngage nor PostEngage functions, if you really need to call those, you would need to call them by yourself, and adapted to also not include references to self.
+	# something of the style of "DoPreEngageStuffISI()" or something.
+	debug(__name__ + ", SetupSequence")
+	
+	sCustomActionsScript = "Custom.GalaxyCharts.WarpSequence_Override"
+	
+	try:
+		from Custom.QBautostart.Libs.LibWarp import GetEntryDelayTime
+		fEntryDelayTime = GetEntryDelayTime()
+	except:
+		fEntryDelayTime = 1.0
+
+	pPlayer = App.Game_GetCurrentPlayer()
+
+	if (pShip == None):
+		pShip = pPlayer
+
+	if (pShip == None):
+		return
+
+	SetupTowingI(pShip.GetObjID())
+
+	pInstance = findShipInstance(pShip)
+	_, _, _, _, _, _, _ , _ , myExitDirection, myTime, myDistance = SporeDriveBasicConfigInfo(pShip)
+
+	if myExitDirection == None or myExitDirection == "":
+		myExitDirection = "Down"
+
+	hasTractorReady = hasattr(pInstance, "SporeDriveISIbTractorStat") and (pInstance.SporeDriveISIbTractorStat == 1)
+
+	pPlayerSet = pShip.GetContainingSet()
+	sSet = ""
+	if pPlayerSet != None:
+		sSet = pPlayerSet.GetName()
+
+	# Get the destination set name from the module name, if applicable.
+	pcDest = None
+	pcDestModule = pPlayerSet.GetRegionModule()
+	if (pcDestModule != None):
+		pcDest = pcDestModule[string.rfind(pcDestModule, ".") + 1:]
+		if (pcDest == None):
+			pcDest = pcDestModule
+
+	pEngageWarpSeq = App.TGSequence_Create()
+	#pDuringWarpSeq = App.TGSequence_Create() ## This is unused
+	pExitWarpSeq = App.TGSequence_Create()
+
+	# Keep track of which action is the final action in the warp sequence,
+	# so we can attach the m_pPostWarp sequence to the end.  By default,
+	# pMoveAction2 is the final action...
+	pFinalAction = None
+	pWarpSoundAction1 = None
+
+	try:
+		import Custom.NanoFXv2.NanoFX_Lib
+		sRace = Custom.NanoFXv2.NanoFX_Lib.GetSpeciesName(pShip)
+	except:
+		sRace = ""
+
+	extraSoundTime = 0.01
+
+
+	if (pPlayer != None) and (pShip.GetObjID() == pPlayer.GetObjID()):
+		fEntryDelayTime = fEntryDelayTime + 1.0
+		extraSoundTime = 0.25
+		
+		myCamera = Camera.GetPlayerCamera()
+
+		# Force a noninteractive cinematic view in space..
+		pCinematicStart = App.TGScriptAction_Create("Actions.CameraScriptActions", "StartCinematicMode", 0)
+		pEngageWarpSeq.AddAction(pCinematicStart, None)
+
+		pDisallowInput = App.TGScriptAction_Create("MissionLib", "RemoveControl")
+		#pEngageWarpSeq.AddAction(pDisallowInput, None)
+		pEngageWarpSeq.AddAction(pDisallowInput, pCinematicStart)
+
+		pCameraAction0 = App.TGScriptAction_Create(__name__, "PlacementOffsetOrbitWatch", myCamera, myDistance, "FreeOrbit")
+		pEngageWarpSeq.AddAction(pCameraAction0, pDisallowInput)
+
+
+	pWarpSoundAction1 = App.TGScriptAction_Create(__name__, "PlaySporeDriveSoundI", pShip, "Enter Warp", sRace)
+	pEngageWarpSeq.AddAction(pWarpSoundAction1, None, extraSoundTime)
+	
+	pBoostAction = App.TGScriptAction_Create(sCustomActionsScript, "BoostShipSpeed", pShip.GetObjID(), 1, 1.0)
+	pEngageWarpSeq.AddAction(pBoostAction, pWarpSoundAction1, 0.01)
+
+	#try:
+	#	import Custom.NanoFXv2.WarpFX.WarpFX
+	#	pNacelleFlash = Custom.NanoFXv2.WarpFX.WarpFX.CreateNacelleFlashSeq(pShip, pShip.GetRadius())
+	#	pEngageWarpSeq.AddAction(pNacelleFlash, pWarpSoundAction1)
+	#except:
+	#	pass
+
+	fTimeToFlash = (fEntryDelayTime) + (2*(App.WarpEngineSubsystem_GetWarpEffectTime()/2.0))
+
+	fCount = 0.0
+	while fCount < fTimeToFlash and (fCount * 100) <= myTime:
+		if (fCount * 100) <= myTime:
+			pRotateVessel = App.TGScriptAction_Create(__name__, "MainPartRotationI", pShip, sRace, 0)
+			if pRotateVessel:
+				pEngageWarpSeq.AddAction(pRotateVessel, None, fCount)
+		if hasTractorReady == 1:
+			pMaintainTowingAction = App.TGScriptAction_Create(__name__, "MaintainTowingActionI", pShip.GetObjID())
+			pEngageWarpSeq.AddAction(pMaintainTowingAction, None, fCount)
+
+		fCount = fCount + 0.01
+		if fCount >= fTimeToFlash:
+			break
+
+	if fCount != fTimeToFlash:
+		fTimeToFlash = fCount + 0.25
+
+	# Create the warp flash.
+	pFlashAction1 = App.TGScriptAction_Create("Actions.EffectScriptActions", "WarpFlash", pShip.GetObjID())
+	pEngageWarpSeq.AddAction(pFlashAction1, None, fTimeToFlash)
+
+	# Hide the ship.
+	pHideShip = App.TGScriptAction_Create(sCustomActionsScript, "HideShip", pShip.GetObjID(), 1)
+	pEngageWarpSeq.AddAction(pHideShip, pFlashAction1)
+
+	pUnBoostAction = App.TGScriptAction_Create(sCustomActionsScript, "BoostShipSpeed", pShip.GetObjID(), 0, 0.0)
+	pEngageWarpSeq.AddAction(pUnBoostAction, pHideShip)
+	
+	pCheckTowing = App.TGScriptAction_Create(__name__, "EngageSeqTractorCheckI", pShip.GetObjID())
+	pEngageWarpSeq.AddAction(pCheckTowing, pHideShip)	
+
+	pEnWarpSeqEND = App.TGScriptAction_Create(sCustomActionsScript, "NoAction")
+	pEngageWarpSeq.AddAction(pEnWarpSeqEND, pUnBoostAction, 2.5)
+
+	############### exiting begins ########
+
+	if (pPlayer != None) and (pShip.GetObjID() == pPlayer.GetObjID()):
+		# Force a noninteractive cinematic view in space..
+		pCinematicStart = App.TGScriptAction_Create("Actions.CameraScriptActions", "StartCinematicMode", 0)
+		pExitWarpSeq.AddAction(pCinematicStart, None)
+
+		pDisallowInput = App.TGScriptAction_Create("MissionLib", "RemoveControl")
+		pExitWarpSeq.AddAction(pDisallowInput, pCinematicStart)
+
+		# Add actions to move the camera in the destination set to watch the placement,
+		# so we can watch the ship come in.
+		# Initial position is reverse chasing the placement the ship arrives at.
+		pCameraAction4 = App.TGScriptAction_Create("Actions.CameraScriptActions", "DropAndWatch", pcDest, pPlayer.GetName())
+		pExitWarpSeq.AddAction(pCameraAction4, pDisallowInput)
+	
+	# Hide the ship.
+	pHideShip = App.TGScriptAction_Create(sCustomActionsScript, "HideShip", pShip.GetObjID(), 1)
+	pExitWarpSeq.AddAction(pHideShip, None)
+
+	# Check for towee
+	if hasTractorReady == 1:
+		pHideTowee = App.TGScriptAction_Create(sCustomActionsScript, "HideShip", pInstance.SporeDriveISITowee, 1)
+		pExitWarpSeq.AddAction(pHideTowee, pHideShip)
+
+	# Create the warp flash.
+	pFlashAction2 = App.TGScriptAction_Create("Actions.EffectScriptActions", "WarpFlash", pShip.GetObjID())
+	pExitWarpSeq.AddAction(pFlashAction2, pHideShip, 0.7)
+
+	# Un-Hide the ship
+	pUnHideShip = App.TGScriptAction_Create(sCustomActionsScript, "HideShip", pShip.GetObjID(), 0)
+	pExitWarpSeq.AddAction(pUnHideShip, pFlashAction2, 0.01)
+
+	# Un-hide the Towee, plus if it exists, also set up the maintain chain
+	## REMEMBER: any changes in the time of this sequence will also require a re-check of this part, to make sure
+	##           we're making the right amount of MaintainTowing actions.
+	if hasTractorReady == 1:
+		pUnHideTowee = App.TGScriptAction_Create(sCustomActionsScript, "HideShip", pInstance.SporeDriveISITowee, 0)
+		pExitWarpSeq.AddAction(pUnHideTowee, pUnHideShip)
+		fCount = 0.0
+		while fCount < 3.6:
+			pMaintainTowingAction = App.TGScriptAction_Create(__name__, "MaintainTowingActionI", pShip.GetObjID())
+			pExitWarpSeq.AddAction(pMaintainTowingAction, pUnHideTowee, fCount)
+			fCount = fCount + 0.01
+			if fCount >= 3.6:
+				break
+		pEMaintainTowingAction = App.TGScriptAction_Create(__name__, "removeTractorISITowInfo", pShip.GetObjID())
+		pExitWarpSeq.AddAction(pEMaintainTowingAction, pUnHideTowee, fCount + 0.3)
+
+	# Give it a little boost
+	pBoostAction = App.TGScriptAction_Create(__name__, "CustomBoostShipSpeed", sCustomActionsScript, pShip.GetObjID(), 1, 300.0, myExitDirection)
+	pExitWarpSeq.AddAction(pBoostAction, pUnHideShip)
+
+	# Play the vushhhhh of exiting warp
+	pWarpSoundAction2 = App.TGScriptAction_Create(__name__, "PlaySporeDriveSoundI", pShip, "Exit Warp", sRace)
+	pExitWarpSeq.AddAction(pWarpSoundAction2, pBoostAction)
+	
+	# Make the ship return to normal speed.
+	pUnBoostAction = App.TGScriptAction_Create(sCustomActionsScript, "BoostShipSpeed", pShip.GetObjID(), -1, 1.0)
+	pExitWarpSeq.AddAction(pUnBoostAction, pWarpSoundAction2, 2.0)
+
+	# IMPORTANT: These three actions below are an extra added for intra-system intercept since we need to ensure the cutscene really ends and control is returned to the player.
+	# This could be handled on the main AlternateSubModelFTL script but I'm leaving it here to allow better customization
+
+	pActionCSE0 = App.TGScriptAction_Create("MissionLib", "ReturnControl")
+	pExitWarpSeq.AddAction(pActionCSE0, pUnBoostAction, 0.5)
+	pActionCSE1 = App.TGScriptAction_Create("Actions.CameraScriptActions", "CutsceneCameraEnd", sSet)
+	pExitWarpSeq.AddAction(pActionCSE1, pUnBoostAction, 0.1)
+	pActionCSE2 = App.TGScriptAction_Create("MissionLib", "EndCutscene")
+	pExitWarpSeq.AddAction(pActionCSE2, pUnBoostAction, 0.1)
+
+	# And finally finish the exit sequence
+	# actually, just put up a empty action, the Traveler system automatically puts his exit sequence action at the
+	# end of the sequence, and his exit action is necessary. However I want it to trigger at the right time, and doing
+	# this, i'll achieve that.
+	pExitWarpSeqEND = App.TGScriptAction_Create(sCustomActionsScript, "NoAction")
+	pExitWarpSeq.AddAction(pExitWarpSeqEND, pUnBoostAction, 1.5)
+
+	###########################################################################################
+	# end of the not-required stuff that sets up my sequences
+	###########################################################################################
+
+	# Now the following part, the return statement is VERY important.
+	# it must return a list of 3 values, from beggining to end, they must be:
+	# 1º: the engaging travel sequence  (plays once, when the ship enters the travel)
+	# 2º: the time between engaging and exiting sequences
+	# 3º: the exiting travel sequence   (plays once, when the ship exits travel)
+
+	# Note that each one of them can be None, if you don't want to have that sequence in your travel method.
+
+	return [pEngageWarpSeq, fTimeToFlash + 2.5, pExitWarpSeq]
+"""
+# - isEquipped = IsShipEquipped # With IsShipEquipped being the exact same auxiliar IsShipEquipped the TravellingMethod had and which did not require extra modifications.
+# - eCanTravel = CanTravelShip # CanTravelShip being a modified CanTravel to support the lack of "self", with both being modified below to use less space and make changes easier:
+"""
+def CanTravel(self):
+	debug(__name__ + ", CanTravel")
+	return CanTravelShip(self.GetShip())
+
+# Auxiliar ISI function
+def CanTravelShip(pShip):
+	debug(__name__ + ", CanTravelShip")
+	pPlayer = App.Game_GetCurrentPlayer()
+	bIsPlayer = 0
+	if pPlayer and pShip.GetObjID() == pPlayer.GetObjID():
+		bIsPlayer = 1
+	pHelm = App.CharacterClass_GetObject(App.g_kSetManager.GetSet("bridge"), "Helm")
+
+	isEquipped = IsShipEquipped(pShip)
+	if not isEquipped:
+		if bIsPlayer == 1:
+			if pHelm:
+				App.CharacterAction_Create(pHelm, App.CharacterAction.AT_SAY_LINE, "BrexNothingToAdd7", None, 1).Play() # Brex speaking through Kiska, ventriloquism
+			else:
+				# No character, display subtitle only.
+				pDatabase = App.g_kLocalizationManager.Load ("data/TGL/Bridge Crew General.tgl")
+				if pDatabase:
+					pSequence = App.TGSequence_Create ()
+					pSubtitleAction = App.SubtitleAction_Create (pDatabase, "BrexNothingToAdd7") #CantWarp5
+					pSubtitleAction.SetDuration (3.0)
+					pSequence.AddAction (pSubtitleAction)
+					pSequence.Play ()
+					App.g_kLocalizationManager.Unload (pDatabase)
+		return "This ship is not equipped with Spore-Drive"
+
+	#pImpulseEngines = pShip.GetImpulseEngineSubsystem()
+	#if not pImpulseEngines:
+	#	return "No Impulse Engines"
+
+	#if (pImpulseEngines.GetPowerPercentageWanted() == 0.0):
+	#	# Ship is trying to warp with their engines off.
+	#	if bIsPlayer == 1:
+	#		pXO = App.CharacterClass_GetObject(App.g_kSetManager.GetSet("bridge"), "XO")
+	#		if pXO:
+	#			MissionLib.QueueActionToPlay(App.CharacterAction_Create(pXO, App.CharacterAction.AT_SAY_LINE, "EngineeringNeedPowerToEngines", None, 1))
+	#	return "Impulse Engines offline"
+
+	pInstance, pInstancedict, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, _ , _ , _ , _ , _ = SporeDriveBasicConfigInfo(pShip)
+
+	pWarpEngines = pShip.GetWarpEngineSubsystem()
+	if specificNacelleHPList == None or (specificNacelleHPList != None and len(specificNacelleHPList) > 0):
+		if pWarpEngines:
+			totalSporeDriveEngines, onlineSporeDriveEngines = SporeDriveDisabledCalculations("Nacelle", specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, pWarpEngines, pShip)
+
+			if totalSporeDriveEngines <= 0 or onlineSporeDriveEngines <= 0:
+				if bIsPlayer == 1:
+					if pHelm:
+						App.CharacterAction_Create(pHelm, App.CharacterAction.AT_SAY_LINE, "CantWarp1", None, 1).Play()
+					else:
+						# No character, display subtitle only.
+						pDatabase = App.g_kLocalizationManager.Load ("data/TGL/Bridge Crew General.tgl")
+						if pDatabase:
+							pSequence = App.TGSequence_Create ()
+							pSubtitleAction = App.SubtitleAction_Create (pDatabase, "CantWarp1")
+							pSubtitleAction.SetDuration (3.0)
+							pSequence.AddAction (pSubtitleAction)
+							pSequence.Play ()
+							App.g_kLocalizationManager.Unload (pDatabase)
+
+				return "Spore-Drive Engines disabled"
+		
+			if not pWarpEngines.IsOn():
+				if bIsPlayer == 1:
+					if pHelm:
+						App.CharacterAction_Create(pHelm, App.CharacterAction.AT_SAY_LINE, "CantWarp5", None, 1).Play()
+					else:
+						# No character, display subtitle only.
+						pDatabase = App.g_kLocalizationManager.Load("data/TGL/Bridge Crew General.tgl")
+						if pDatabase:
+							pSequence = App.TGSequence_Create()
+							pSubtitleAction = App.SubtitleAction_Create(pDatabase, "CantWarp5")
+							pSubtitleAction.SetDuration(3.0)
+							pSequence.AddAction(pSubtitleAction)
+							pSequence.Play()
+							App.g_kLocalizationManager.Unload(pDatabase)
+				return "Spore-Drive Engines offline"
+		else:
+			return "Spore-Drive Engines non-existant"
+
+	if specificCoreHPList != None and len(specificCoreHPList) > 0:
+		totalSporeDriveCores, onlineSporeDriveCores = SporeDriveDisabledCalculations("Core", specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, pWarpEngines, pShip)
+
+		if totalSporeDriveCores <= 0 or onlineSporeDriveCores <= 0:
+			if bIsPlayer == 1:
+				if pHelm:
+					App.CharacterAction_Create(pHelm, App.CharacterAction.AT_SAY_LINE, "CantWarp1", None, 1).Play()
+				else:
+					# No character, display subtitle only.
+					pDatabase = App.g_kLocalizationManager.Load ("data/TGL/Bridge Crew General.tgl")
+					if pDatabase:
+						pSequence = App.TGSequence_Create ()
+						pSubtitleAction = App.SubtitleAction_Create (pDatabase, "CantWarp1")
+						pSubtitleAction.SetDuration (3.0)
+						pSequence.AddAction (pSubtitleAction)
+						pSequence.Play ()
+						App.g_kLocalizationManager.Unload (pDatabase)
+			return "All proto-cores are disabled"
+
+	pSet = pShip.GetContainingSet()
+	#pNebula = pSet.GetNebula()
+	#if pNebula:
+	#	if pNebula.IsObjectInNebula(pShip):
+	#		if bIsPlayer == 1:
+	#			if pHelm:
+	#				App.CharacterAction_Create(pHelm, App.CharacterAction.AT_SAY_LINE, "CantWarp2", None, 1).Play()
+	#			else:
+	#				# No character, display subtitle only.
+	#				pDatabase = App.g_kLocalizationManager.Load("data/TGL/Bridge Crew General.tgl")
+	#				if pDatabase:
+	#					pSequence = App.TGSequence_Create()
+	#					pSubtitleAction = App.SubtitleAction_Create(pDatabase, "CantWarp2")
+	#					pSubtitleAction.SetDuration(3.0)
+	#					pSequence.AddAction(pSubtitleAction)
+	#					pSequence.Play()
+	#					App.g_kLocalizationManager.Unload(pDatabase)
+	#		return "Inside Nebula"
+
+	# See if we are in an asteroid field
+	#AsteroidFields = pSet.GetClassObjectList(App.CT_ASTEROID_FIELD)
+	#for i in AsteroidFields:
+	#	pField = App.AsteroidField_Cast(i)
+	#	if pField:
+	#		if pField.IsShipInside(pShip):
+	#			if bIsPlayer == 1:
+	#				if pHelm:
+	#					App.CharacterAction_Create(pHelm, App.CharacterAction.AT_SAY_LINE, "CantWarp4", None, 1).Play()
+	#				else:
+	#					# No character, display subtitle only.
+	#					pDatabase = App.g_kLocalizationManager.Load ("data/TGL/Bridge Crew General.tgl")
+	#					if pDatabase:
+	#						pSequence = App.TGSequence_Create ()
+	#						pSubtitleAction = App.SubtitleAction_Create (pDatabase, "CantWarp4")
+	#						pSubtitleAction.SetDuration (3.0)
+	#						pSequence.AddAction (pSubtitleAction)
+	#						pSequence.Play ()
+	#						App.g_kLocalizationManager.Unload (pDatabase)
+	#			return "Inside Asteroid Field"
+					
+	#pStarbase12Set = App.g_kSetManager.GetSet("Starbase12")
+	#if pStarbase12Set:
+	#	if pShip.GetContainingSet():
+	#		if pStarbase12Set.GetObjID() == pShip.GetContainingSet().GetObjID():
+	#			pStarbase12 = App.ShipClass_GetObject(pStarbase12Set, "Starbase 12")
+	#			if pStarbase12:
+	#				import AI.Compound.DockWithStarbase
+	#				if AI.Compound.DockWithStarbase.IsInViewOfInsidePoints(pShip, pStarbase12):
+	#					if bIsPlayer == 1:
+	#						if pHelm:
+	#							App.CharacterAction_Create(pHelm, App.CharacterAction.AT_SAY_LINE, "CantWarp3", None, 1).Play()
+	#						else:
+	#							# No character, display subtitle only.
+	#							pDatabase = App.g_kLocalizationManager.Load("data/TGL/Bridge Crew General.tgl")
+	#							if pDatabase:
+	#								pSequence = App.TGSequence_Create()
+	#								pSubtitleAction = App.SubtitleAction_Create(pDatabase, "CantWarp3")
+	#								pSubtitleAction.SetDuration(3.0)
+	#								pSequence.AddAction(pSubtitleAction)
+	#								pSequence.Play()
+	#								App.g_kLocalizationManager.Unload(pDatabase)
+	#					return "Inside Starbase12"
+	return 1
+
+"""
+# - awayNavPointDistance = awayNavPointDistanceCal # With awayNavPointDistanceCal being a simple function located immediately below InSystemIntercept that may accept a pShipID as a parameter and returns 1.0 multiplier:
+"""
+def awayNavPointDistanceCalc(pShipID=None):
+	return 1.0
+"""
+# - engageDirection = GetEngageDirectionISI # With GetEngageDirectionISI being a modified GetEngageDirection, with both being modified below to use less space and make changes easier (with a hypothethical that we needed a modified course, something which Spore Drive actually does not, just returning None on 'GetEngageDirectionC'): 
+"""
+def GetEngageDirection(self): # NOTE: Requires GetEngageDirectionC
+	debug(__name__ + ", GetEngageDirection")
+	return GetEngageDirectionC(self, None)
+
+# Aux. ISI function.
+def GetEngageDirectionISI(pPlayerID): # NOTE: Requires GetEngageDirectionC
+	debug(__name__ + ", GetEngageDirectionISI")
+	return GetEngageDirectionC(None, pPlayerID)
+
+def GetEngageDirectionC(mySelf, pPlayerID = None):
+	# Get all the objects along the line that we'll
+	# be warping through.
+	debug(__name__ + ", GetEngageDirectionC")
+	fRayLength = 4000.0
+
+	vOrigin = None
+	vEnd = None
+
+	pPlayer = None
+	if mySelf != None:
+		vOrigin = mySelf.Ship.GetWorldLocation()
+		vEnd = mySelf.Ship.GetWorldForwardTG() # REMEMBER, this forward and stuff needs to be changed to other directions if your drive moves that way!
+	elif pPlayerID != None:
+		pPlayer = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), pPlayerID)
+		if pPlayer:
+			vOrigin = pPlayer.GetWorldLocation()
+			vEnd = pPlayer.GetWorldForwardTG() # REMEMBER, this forward and stuff needs to be changed to other directions if your drive moves that way!
+		else:
+			return None
+	else:
+		return None
+
+	vEnd.Scale(fRayLength)
+	vEnd.Add(vOrigin)
+	
+	lsObstacles = None
+	if pPlayer == None:
+		lsObstacles = mySelf.GetWarpObstacles(vOrigin, vEnd)
+	else:
+		lsObstacles = MissionLib.GrabWarpObstaclesFromSet(vOrigin, vEnd, pPlayer.GetContainingSet(), pPlayer.GetRadius(), 1, pPlayer.GetObjID())
+
+	# If we have no obstacles in the way, we're good.
+	if len(lsObstacles) == 0:
+		vZero = App.TGPoint3()
+		vZero.SetXYZ(0, 0, 0)
+		if mySelf != None:
+			mySelf.Ship.SetTargetAngularVelocityDirect(vZero)
+		else:
+			pPlayer.SetTargetAngularVelocityDirect(vZero)
+		return None
+
+	vBetterDirection = None
+	# We've got obstacles in the way.
+	if not vBetterDirection:
+		# Cast a few rays
+		# and try to find a good direction to go.  If we don't
+		# find a good direction, that's bad...
+		for iRayCount in range(50):
+			vRay = App.TGPoint3_GetRandomUnitVector()
+
+			# Bias it toward our Forward direction.
+			vRay.Scale(1.5)
+			myForward = None
+			if pPlayer == None:
+				myForward = mySelf.Ship.GetWorldForwardTG() # REMEMBER, this forward and stuff needs to be changed to other directions if your drive moves that way!
+			else:
+				myForward = pPlayer.GetWorldForwardTG() # REMEMBER, this forward and stuff needs to be changed to other directions if your drive moves that way!
+
+			vRay.Add(myForward)
+			vRay.Unitize()
+
+			vEnd = App.TGPoint3()
+			vEnd.Set(vRay)
+			vEnd.Scale(fRayLength)
+
+			vEnd.Add(vOrigin)
+
+			lsObstacles = None
+			if mySelf != None:
+				lsObstacles = mySelf.GetWarpObstacles(vOrigin, vEnd)
+			else:
+				lsObstacles = MissionLib.GrabWarpObstaclesFromSet(vOrigin, vEnd, pPlayer.GetContainingSet(), pPlayer.GetRadius(), 1, pPlayer.GetObjID())
+
+			if not lsObstacles:
+				# Found a good direction.
+				vBetterDirection = vRay
+				break
+
+	if vBetterDirection:
+		# Return the better direction to turn to, the Travel will take care of the rest.
+		return vBetterDirection
+
+	return None
+"""
+# 
 ##################################################################################################################################################################################################################################
 ##################################################################################################################################################################################################################################
 ##########	END OF MANUAL
@@ -716,7 +1499,7 @@ Foundation.ShipDef.USSProtostar.dTechs = { # (#)
 #################################################################################################################
 #
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.76",
+	    "Version": "0.8",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -726,6 +1509,7 @@ MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
 
 import App
 from bcdebug import debug
+import Foundation
 import FoundationTech
 import loadspacehelper
 import math
@@ -741,9 +1525,14 @@ NO_COLLISION_MESSAGE = 192
 REPLACE_MODEL_MSG = 208
 SET_TARGETABLE_MSG = 209
 
-# Because SubModels is ridiculously hard to make children without having to re-do all the functions, I've made this, so now you can just follow
+navDist = 1500 # Default distance for in-system intercept navpoints
 
+# Because SubModels is ridiculously hard to make children without having to re-do all the functions, I've made this, so now you can just follow
 eTypeDict = {}
+
+# For in-system intercept
+eInSystemIntercept = {}
+eEquippedInSystemIntercept = {}
 
 _g_dExcludeSomePlugins = {
 	# Some random plugins that I don't want to risk people attempting to load using this tech
@@ -1057,11 +1846,724 @@ def LoadExtraLimitedPlugins(dExcludePlugins=_g_dExcludeSomePlugins):
 						eType2, functionExitWarp = banana.AlternateFTLActionExitWarp() # Must be a regular function that only returns a type and function
 						if eType2 and not eTypeDict.has_key(eType2):
 							eTypeDict[eType2] = functionExitWarp
+
+					if hasattr(banana, "InSystemIntercept"):
+						propulsionType, eEntryEvent, eExitEvent, eSequenceFunction, isEquipped, eCanTravel, awayNavPointDistance, engageDirection = banana.InSystemIntercept()
+						if propulsionType and not eInSystemIntercept.has_key(myGoodPlugin):
+							eInSystemIntercept[myGoodPlugin] = {}
+							eInSystemIntercept[myGoodPlugin]["PropulsionType"] = propulsionType # Name used for the menu
+							eInSystemIntercept[myGoodPlugin]["EntryEvent"] = eEntryEvent
+							eInSystemIntercept[myGoodPlugin]["ExitEvent"] = eExitEvent
+							eInSystemIntercept[myGoodPlugin]["Sequences"] = eSequenceFunction
+							eInSystemIntercept[myGoodPlugin]["IsEquipped"] = isEquipped
+							eInSystemIntercept[myGoodPlugin]["CanTravel"] = eCanTravel
+							eInSystemIntercept[myGoodPlugin]["EngageDirectionF"] = engageDirection
+							eInSystemIntercept[myGoodPlugin]["AwayNavPointDistance"] = awayNavPointDistance
+
 			except:
 				print "someone attempted to add more than they should to the AlternateSubModelFTL script"
 				traceback.print_exc()
 
 LoadExtraLimitedPlugins()
+
+#### BEGINNING OF USS SOVEREIGN'S LIMITED PERMISSION AREA ####
+# Button properties
+
+#bButton = None
+bMenu = None
+bNavPointButton = None
+bInterceptMenu = None
+pButtonCondition = 1
+
+pPane = None
+pPaneID = None
+pWasCloaked = 0
+
+MainHelmMenuName = "Alt. intrasystem Intercept"
+HelmButtonIniNavP = "Initiate Navpoint Mode"
+HelmSubMName = "Intercept Methods"
+
+fDirectionTimeThreshold = 0.2
+
+NormalColor = App.TGColorA() 
+NormalColor.SetRGBA(0.8, 0.6, 0.8, 1.0)
+HighlightedColor = App.TGColorA() 
+HighlightedColor.SetRGBA(0.92, 0.76, 0.92, 1.0)
+NormalColor2 = App.TGColorA() 
+NormalColor2.SetRGBA(0.5, 0.5, 1.0, 1.0)
+HighlightedColor2 = App.TGColorA() 
+HighlightedColor2.SetRGBA(0.61, 0.61, 1.0, 1.0)
+DisabledColor = App.TGColorA() 
+DisabledColor.SetRGBA(0.25, 0.25, 0.25, 1.0)
+
+NavPName = "Alternate FTL intrasystem Nav"
+
+# From ATP_GUIUtils -- From The Notes Of USS SOVEREIGN: Very useful.
+def GetBridgeMenu(menuName):
+	pTactCtrlWindow = App.TacticalControlWindow_GetTacticalControlWindow()
+	pDatabase = App.g_kLocalizationManager.Load("data/TGL/Bridge Menus.tgl")
+	if(pDatabase is None):
+		return
+	App.g_kLocalizationManager.Unload(pDatabase)
+	return pTactCtrlWindow.FindMenu(pDatabase.GetString(menuName))
+
+# From one of the released DS9FXMenuLib, or at least, the one on slipstream, since for some reason the one there had different functions than the one on DS9FX or TravellingMethods and some of those functions were not there.
+# Makes a submenu for a given bridge menu, modified to add support for InsertChild()
+def CreateMenu(sNewMenuName, sBridgeMenuName, bAdditional = 0, bPosition = 0):
+	pMenu = GetBridgeMenu(sBridgeMenuName)
+	pNewMenu = App.STMenu_Create(sNewMenuName)
+       	
+	if bAdditional == 1:
+		pMenu.AddChild(pNewMenu)
+	elif bAdditional == 2:
+		pMenu.InsertChild(bPosition, pNewMenu)     
+	else:
+		pMenu.PrependChild(pNewMenu)
+
+	return pNewMenu
+
+# Removes a menu button
+def RemoveMenu(name=MainHelmMenuName):
+	#global bButton
+	pBridge = App.g_kSetManager.GetSet("bridge")
+	pHelm = App.CharacterClass_GetObject(pBridge, "Helm")
+	pMenu = pHelm.GetMenu()
+	if (pMenu != None):
+		pButton = pMenu.GetSubmenu(name)
+		if (pButton != None):
+			pMenu.DeleteChild(pButton)
+			#bButton = None
+	return 0
+
+def initRemoveInSystemNavpoint(pPlayer=None, pSet=None):
+	if pPlayer == None:
+		pPlayer = MissionLib.GetPlayer()
+	if pPlayer:
+		if pSet == None:
+			pSet = pPlayer.GetContainingSet()
+		if pSet:
+			# Navpoint exists?
+			try:
+				pSet.DeleteObjectFromSet(NavPName)
+			except:
+				pass
+			return pPlayer, pSet
+		else:
+			return pPlayer, None
+	else:
+		return None, None
+
+# Mostly from Defiant's LibEngineering, but modified to work with a string event.
+def CreateBridgeMenuButton(sButtonName, sMenuName, Function, bToButton = None, EventStr = ""):
+	pMenu = GetBridgeMenu(sMenuName)
+	
+	ET_EVENT = App.Mission_GetNextEventType()
+
+	pMenu.AddPythonFuncHandlerForInstance(ET_EVENT, Function)
+
+	pEvent = App.TGStringEvent_Create()
+	pEvent.SetEventType(ET_EVENT)
+	pEvent.SetDestination(pMenu)
+	pEvent.SetString(str(EventStr))
+	pButton = App.STButton_CreateW(App.TGString(sButtonName), pEvent)
+    
+	if not bToButton:
+		pMenu.PrependChild(pButton)
+	else:
+		bToButton.PrependChild(pButton)
+
+	return pButton
+
+# Mostly from Defiant's LibEngineering, but modified so it works with standalone buttons.
+def CreateButton(sButtonName, sMenuName, Function, sToButton = None, EventInt = 0):        
+        pMenu = GetBridgeMenu(sMenuName)
+
+        if sToButton:
+                sToButton = pMenu.GetSubmenu(sToButton)
+        
+        ET_EVENT = App.Mission_GetNextEventType()
+
+        pMenu.AddPythonFuncHandlerForInstance(ET_EVENT, Function)
+
+        pEvent = App.TGIntEvent_Create()
+        pEvent.SetEventType(ET_EVENT)
+        pEvent.SetDestination(pMenu)
+        pEvent.SetInt(EventInt)
+        pButton = App.STButton_CreateW(App.TGString(sButtonName), pEvent)
+    
+        if not sToButton:
+                pMenu.PrependChild(pButton)
+        else:
+                sToButton.PrependChild(pButton)
+
+        return pButton
+
+def initAddMainMenuPart():
+	bMenu = CreateMenu(MainHelmMenuName, "Helm", 2, 0)
+	bNavPointButton = CreateButton(HelmButtonIniNavP, "Helm", __name__ + ".SlipstreamNavpoint", MainHelmMenuName)
+	bInterceptMenu = App.STMenu_CreateW(App.TGString(HelmSubMName))
+	bMenu.PrependChild(bInterceptMenu)
+	#bNavPointButton = CreateBridgeMenuButton(HelmButtonIniNavP, "Helm", __name__ + ".SlipstreamNavpoint", bMenu)
+	return bMenu, bNavPointButton, bInterceptMenu
+
+def initAddMainMenuSubFTLPart(bInterceptMenu, name, dictName):
+	bInterceptButton = None
+	if name != None:
+		bInterceptButton = CreateBridgeMenuButton(str(name), "Helm", __name__ + ".SlipstreamInterceptStats", bInterceptMenu, dictName)
+
+	return bInterceptButton
+
+def RemoveMouseHandler(pMission = None):
+	if pMission == None:
+		pGame = App.Game_GetCurrentGame()
+		if pGame:
+			pEpisode = pGame.GetCurrentEpisode()
+			if pEpisode:
+				pMission = pEpisode.GetCurrentMission()
+	try:
+		if pMission:
+			App.g_kEventManager.RemoveBroadcastHandler(App.ET_MOUSE, pMission, __name__ + ".MoveNavpoint")
+	except:
+		print "Error while removing Mouse Handler:"
+		traceback.print_exc()
+	return 0
+
+def AddMouseHandler(pMission = None):
+	if pMission == None:
+		pGame = App.Game_GetCurrentGame()
+		if pGame:
+			pEpisode = pGame.GetCurrentEpisode()
+			if pEpisode:
+				pMission = pEpisode.GetCurrentMission()
+
+	try:
+		if pMission:
+			App.g_kEventManager.AddBroadcastPythonFuncHandler(App.ET_MOUSE, pMission, __name__ + ".MoveNavpoint")
+	except:
+		print "Error while adding Mouse Handler:"
+		traceback.print_exc()
+	return 0
+
+# Delete navpoint when exiting
+def delnavpoint():
+	global pButtonCondition, bNavPointButton
+        
+	#if not pSupported == 1:
+	#    return 0
+            
+	# Navpoint deleted
+	initRemoveInSystemNavpoint()
+            
+	# Handler deactivated
+	RemoveMouseHandler()
+            
+	# No need to trigger this function more than necessary
+	if not pButtonCondition == 1:
+		# Change button stats and delete the navpoint
+		pButtonCondition = 1
+		if hasattr(bNavPointButton, 'SetName'):
+			bNavPointButton.SetName(App.TGString("Initiate Navpoint Mode"))
+	return 0
+
+# Disable button
+def disablebutton(bButton=None):
+	delnavpoint()
+
+	if bButton is None:
+		return
+	if hasattr(bButton, 'SetDisabled'):
+		if bButton.IsEnabled():
+			bButton.SetDisabled()
+
+def quitting():
+	global pPane
+	RemoveMouseHandler()
+
+	if not pPane == None:
+		# Let's not cause any crashes
+		pTCW = App.TacticalControlWindow_GetTacticalControlWindow()
+		try:
+			# Just destroy the window, we don't need it anymore.
+			App.g_kFocusManager.RemoveAllObjectsUnder(pPane)
+
+			pTCW.DeleteChild(pPane)
+
+			pPane = None
+                    
+		except:
+			pass
+
+	return 0
+
+# Create a navpoint
+def SlipstreamNavpoint(pObject, pEvent):
+        global pButtonCondition, bNavPointButton, dist
+
+        # Reset dist
+        dist = navDist
+        
+        if pButtonCondition == 1:
+            global NavPName
+            # Button stats changed and name
+            pButtonCondition = 0
+            bNavPointButton.SetName(App.TGString("Stop Navpoint Mode"))
+            
+            # Create the navpoint
+            pPlayer = MissionLib.GetPlayer()
+            pSet = pPlayer.GetContainingSet()
+            pLoc = pPlayer.GetWorldLocation()
+            strNav = NavPName
+            pNav = loadspacehelper.CreateShip("Distortion", pSet, strNav, None)
+
+            fNav = MissionLib.GetShip(strNav, pSet) 
+            fNav.SetTranslateXYZ(pLoc.GetX() + 150, pLoc.GetY() + 150, pLoc.GetZ())
+            fNav.UpdateNodeOnly()
+            fNav.SetHidden(1)
+            fNav.SetInvincible(1)
+            fNav.SetHurtable(0)
+
+            # Remove the nav point from the proximity manager
+            ProximityManager = pSet.GetProximityManager()
+            ProximityManager.RemoveObject(fNav)
+            
+            # Setup a handler
+            AddMouseHandler()
+
+        else:
+            # Change button stats and delete the navpoint
+            pButtonCondition = 1
+            bNavPointButton.SetName(App.TGString("Initiate Navpoint Mode"))
+            
+            # Navpoint deleted
+            initRemoveInSystemNavpoint()
+            
+            # Handler deactivated
+            RemoveMouseHandler()
+
+
+# Move the navpoint by converting mouse xy to 3d xyz
+def MoveNavpoint(pObject, pEvent):
+	global dist
+
+	# Has attr?
+	if not hasattr(pEvent, 'GetButtonNum') and hasattr(pEvent, 'GetFlags'):
+		return
+
+	# Tactical mode?
+	if not App.TopWindow_GetTopWindow().IsTacticalVisible():
+		return
+
+	# Grab mouse button number and flag
+	eButton = pEvent.GetButtonNum()
+	eFlag = pEvent.GetFlags()
+	
+	if eButton == 2048 and eFlag == 2816:
+		pass
+
+	elif eButton == 4096 and eFlag == 4864:
+		dist = dist + 1000
+		if dist > 11500:
+			dist = 1500
+
+	else:
+		return
+
+	# Admiral Ames was a very smart guy!
+	eX = pEvent.GetX() * (dist) - (dist/2)
+	eY = pEvent.GetY() * (-dist) + (dist/2)
+
+	# Grab some values
+	pPlayer = MissionLib.GetPlayer()
+	pSet = pPlayer.GetContainingSet()
+	pLoc = pPlayer.GetWorldLocation()
+	pGame = App.Game_GetCurrentGame()
+	pCamera = pGame.GetPlayerCamera()
+	pFwdCam = pCamera.GetWorldForwardTG()
+	pUpCam = pCamera.GetWorldUpTG()
+	pRightCam = pCamera.GetWorldRightTG()
+
+	# Calculate the xyz's
+	cordX = dist * pFwdCam.GetX() + eX * pRightCam.GetX() + eY * pUpCam.GetX()
+	cordY = dist * pFwdCam.GetY() + eX * pRightCam.GetY() + eY * pUpCam.GetY()
+	cordZ = dist * pFwdCam.GetZ() + eX * pRightCam.GetZ() + eY * pUpCam.GetZ()
+
+	# Translate the navpoint finally
+	global NavPName
+	fNav = MissionLib.GetShip(NavPName, pSet) 
+	fNav.SetTranslateXYZ(pLoc.GetX() + cordX, pLoc.GetY() + cordY, pLoc.GetZ() + cordZ)
+	fNav.UpdateNodeOnly()
+
+def SlipstreamInterceptStats(pObject, pEvent):
+	#Well this is different to how Mario's Slipstream operates, we just check the apporpiate functions
+
+	if not pEvent or not hasattr(pEvent, "GetCString"):
+		print "AlternateSubModelFTL: Warning, SlipstreamInterceptStats cannot find a string event"
+		return
+
+	myGoodPlugin = pEvent.GetCString()
+
+	global eInSystemIntercept, eEquippedInSystemIntercept
+
+	if eEquippedInSystemIntercept.has_key(myGoodPlugin):
+		pPlayer =  MissionLib.GetPlayer()
+		if pPlayer:
+			iIsEquipped = eInSystemIntercept[myGoodPlugin]["IsEquipped"](pPlayer)
+			if iIsEquipped > 0:
+				canTravel = eEquippedInSystemIntercept[myGoodPlugin]["CanTravel"](pPlayer)
+				if canTravel == 1:
+					InterceptTargetCheck(myGoodPlugin)
+				else:
+					mybInterceptButton = None
+					if eEquippedInSystemIntercept[myGoodPlugin].has_key("bInterceptButton"):
+						mybInterceptButton = eEquippedInSystemIntercept[myGoodPlugin]["bInterceptButton"]
+
+					if mybInterceptButton != None:
+						mybInterceptButton.SetName(App.TGString("CANNOT"))
+						pSequence = App.TGSequence_Create()
+						pAction = App.TGScriptAction_Create(__name__, "ResetButtonString", mybInterceptButton, myGoodPlugin)
+						pSequence.AddAction(pAction, None, 1)
+						pSequence.Play()
+
+					pSequence2 = App.TGSequence_Create ()
+					pSubtitleAction = App.SubtitleAction_CreateC("Computer: " + str(canTravel))
+					pSubtitleAction.SetDuration(3.0)
+					pSequence2.AddAction(pSubtitleAction)
+					pSequence2.Play()
+
+					print canTravel
+	else:
+		print "AlternateSubModelFTL: Warning, SlipstreamInterceptStats cannot find the equipped plugin"
+		return
+
+
+# Are we targetting something?!
+def InterceptTargetCheck(myGoodPlugin):
+	global eEquippedInSystemIntercept
+
+	mybInterceptButton = None
+	if eEquippedInSystemIntercept.has_key(myGoodPlugin) and eEquippedInSystemIntercept[myGoodPlugin].has_key("bInterceptButton"):
+		mybInterceptButton = eEquippedInSystemIntercept[myGoodPlugin]["bInterceptButton"]
+
+	if mybInterceptButton != None:
+		pPlayer = MissionLib.GetPlayer()
+		pTargetShip = App.ShipClass_Cast(pPlayer.GetTarget())
+		pTargetPlanet = App.Planet_Cast(pPlayer.GetTarget())
+
+		customMult = 1.0
+		if eInSystemIntercept[myGoodPlugin].has_key("AwayNavPointDistance"):
+			customMult = eInSystemIntercept[myGoodPlugin]["AwayNavPointDistance"](pPlayer.GetObjID())
+
+		if customMult < 0:
+			customMult = 0.0
+
+		if pTargetPlanet:
+			if not DistanceCheck(pTargetPlanet) >= 400 * customMult:
+				mybInterceptButton.SetName(App.TGString("TOO CLOSE"))
+				pSequence = App.TGSequence_Create()
+				pAction = App.TGScriptAction_Create(__name__, "ResetButtonString", mybInterceptButton, myGoodPlugin)
+				pSequence.AddAction(pAction, None, 1)
+				pSequence.Play()
+				# print 'AlternateSubModelFTL ISI: Planet is too close...'
+				return
+            
+			InterceptTarget(pTargetPlanet, 1, myGoodPlugin)
+
+		elif pTargetShip:
+			if not DistanceCheck(pTargetShip) >= 250 * customMult:
+				mybInterceptButton.SetName(App.TGString("TOO CLOSE"))
+				pSequence = App.TGSequence_Create()
+				pAction = App.TGScriptAction_Create(__name__, "ResetButtonString", mybInterceptButton, myGoodPlugin)
+				pSequence.AddAction(pAction, None, 1)
+				pSequence.Play()
+				# print 'AlternateSubModelFTL ISI: Ship is too close...'
+				return
+            
+			InterceptTarget(pTargetShip, 0, myGoodPlugin)
+
+		else:
+			mybInterceptButton.SetName(App.TGString("NO TARGET"))
+			pSequence = App.TGSequence_Create()
+			pAction = App.TGScriptAction_Create(__name__, "ResetButtonString", mybInterceptButton, myGoodPlugin)
+			pSequence.AddAction(pAction, None, 1)
+			pSequence.Play()
+			# print 'AlternateSubModelFTL ISI: No target...'
+			return
+
+	else:
+		print "AlternateSubModelFTL: Error, InterceptTargetCheck cannot find the equipped button or plugin"
+
+# Reset button string warning
+def ResetButtonString(pAction, pButton, myGoodPlugin):
+	try:
+		if eEquippedInSystemIntercept.has_key(myGoodPlugin):
+			myName = eEquippedInSystemIntercept[myGoodPlugin]["PropulsionType"]
+			if myName == None:
+				print "AlternateSubModelFTL: ERR.: missing PropulsionType Name for plugin: '", myGoodPlugin, "'"
+				myName = myGoodPlugin
+			pButton.SetName(App.TGString(myName))
+		else:
+			print "AlternateSubModelFTL: ERR.: missing plugin name: '", myGoodPlugin, "' in equipped dictionary"
+	except:
+		pass
+
+	return 0
+
+# Checks distance between the player and the given object
+def DistanceCheck(pObject):
+	pPlayer = App.Game_GetCurrentGame().GetPlayer()
+	vDifference = pObject.GetWorldLocation()
+	vDifference.Subtract(pPlayer.GetWorldLocation())
+
+	return vDifference.Length()
+
+def InterceptTarget(pTarget, IsPlanet, myGoodPlugin):
+        global pWasCloaked
+        
+        # Grab values and start the prescripted sequence
+        pPlayer = App.Game_GetCurrentPlayer()    
+        pSequence = App.TGSequence_Create ()
+        pSequence.AddAction(App.TGScriptAction_Create(__name__, "PositionPlayerIntercept", pTarget, IsPlanet, myGoodPlugin))
+        pSequence.Play()
+
+        # I have to grab the player over here and see if he's actually cloaked
+        pWasCloaked = 0
+        if pPlayer.IsCloaked():
+            pWasCloaked = 1
+            #pCloak = pPlayer.GetCloakingSubsystem()
+            #if pCloak:
+            #    pCloak.InstantDecloak()
+
+# Redirect function
+def PositionPlayerIntercept(pAction, pTarget, IsPlanet, myGoodPlugin):
+        # Start the supplimentary function
+        AdditionalPosAndCheckIntercept(None, pTarget, IsPlanet, myGoodPlugin)
+
+        return 0
+
+def callPlayerEventsForInSystem(pAction, myGoodPlugin, pPlayer=None, keyToLook="EntryEvent", eventsToOverlook=[App.ET_START_WARP_NOTIFY]):
+	if not pPlayer:
+		pPlayer = MissionLib.GetPlayer()
+
+	if eInSystemIntercept.has_key(myGoodPlugin) and eInSystemIntercept[myGoodPlugin].has_key(keyToLook):
+		try:
+			for penEvent in eInSystemIntercept[myGoodPlugin][keyToLook](pPlayer):
+				if hasattr(penEvent, "GetEventType") and not penEvent.GetEventType() in eventsToOverlook:
+					App.g_kEventManager.AddEvent(penEvent)
+		except:
+			print "AlternateSubModelFTL: Error while calling local function callPlayerEventsForInSystem:"
+			traceback.print_exc()
+	return 0
+
+def orderSeqPlay(pAction, mySequ):
+	if mySequ != None:
+		try:
+			mySequ.Play()
+		except:
+			print "AlternateSubModelFTL: Error while playing a sequence in orderSeqPlay:"
+			traceback.print_exc()
+			
+	return 0
+
+# Returns a random number
+def GetRandomRate(Max, Number):
+	if Max <= 0:
+		Max = 1
+	return App.g_kSystemWrapper.GetRandomNumber(Max) + Number
+
+# Reset navpoints after in system jump
+def ResetNavpoints():
+	global pButtonCondition, bNavPointButton
+	
+	# Change button stats and delete the navpoint
+	pButtonCondition = 1
+	if bNavPointButton != None and hasattr(bNavPointButton, "SetName"):
+		bNavPointButton.SetName(App.TGString("Initiate Navpoint Mode"))
+
+	# Navpoint deleted
+	initRemoveInSystemNavpoint()
+            
+	# Handler deactivated
+	RemoveMouseHandler()
+
+	return 0
+
+# Swap players position
+def SwapPlayerPos(pAction, pTarget, IsPlanet):
+
+	if not pTarget:
+		return 0
+
+	pPlayer = MissionLib.GetPlayer()
+	if not pPlayer:
+		return 0
+	
+	fRadius = 0
+	pTargetX = 0
+	pTargetY = 0
+	pTargetZ = 0
+	RateX = 0
+	RateY = 0
+	RateZ = 0
+	
+	# Target is planet
+	if IsPlanet == 1:
+		fRadius = pTarget.GetAtmosphereRadius() * 3
+
+		pLocation = pTarget.GetWorldLocation()
+		pTargetX = pLocation.GetX()
+		pTargetY = pLocation.GetY()
+		pTargetZ = pLocation.GetZ()
+
+		# Take into account the atmosphere, given the fact that the planet was properly scripted...
+		RateX = GetRandomRate(5, 200)
+		RateY = GetRandomRate(5, 200)
+		RateZ = GetRandomRate(5, 200)		
+
+	# Target can only be a ship
+	else:
+		fRadius = pTarget.GetRadius() * 2
+
+		pLocation = pTarget.GetWorldLocation()
+		pTargetX = pLocation.GetX()   
+		pTargetY = pLocation.GetY()
+		pTargetZ = pLocation.GetZ()
+
+		# Luckily ships don't have atmospheres
+		RateX = GetRandomRate(5, 50)
+		RateY = GetRandomRate(5, 50)
+		RateZ = GetRandomRate(5, 50)
+
+	pXCoord = pTargetX + RateX + fRadius
+	pYCoord = pTargetY + RateY + fRadius
+	pZCoord = pTargetZ + RateZ + fRadius
+
+	pPlayer.SetTranslateXYZ(pXCoord, pYCoord, pZCoord)
+	pPlayer.UpdateNodeOnly() 
+
+	# Update proximity manager info for player
+	pSet = pPlayer.GetContainingSet()
+	if pSet:
+		ProximityManager = pSet.GetProximityManager() 
+		if (ProximityManager):
+			try:
+				ProximityManager.UpdateObject(pPlayer)
+			except:
+				print "AlternateSubModelFTL: SwapPlayerPos: Error while updating ProximityManager info for pPlayer:"
+				traceback.print_exc()	
+
+	# Kill the navpoint mode
+	ResetNavpoints()
+			
+	return 0
+
+def checkISIRecloaking():
+	global pWasCloaked
+	pPlayer = MissionLib.GetPlayer()
+	if pWasCloaked == 1:
+		pCloak = pPlayer.GetCloakingSubsystem()
+		if pCloak:
+			pCloak.InstantDecloak()
+			pCloak.InstantCloak()
+	return 0
+
+def resetArrivingNone(myGoodPlugin):
+	global eEquippedInSystemIntercept
+	if myGoodPlugin != None and eEquippedInSystemIntercept != None and eEquippedInSystemIntercept.has_key(myGoodPlugin) and eEquippedInSystemIntercept[myGoodPlugin].has_key("ArrivingAt"):
+		eEquippedInSystemIntercept[myGoodPlugin]["ArrivingAt"] = 0
+	return 0
+
+def BackToNormal(pAction, myGoodPlugin):
+	global pDefault, pWasCloaked
+
+	# Restore things back to normal
+	pGame = App.Game_GetCurrentGame()
+	pGame.SetGodMode(0)
+	# Collision settings
+	App.ProximityManager_SetPlayerCollisionsEnabled(pDefault)
+
+	checkISIRecloaking()
+	resetArrivingNone(myGoodPlugin)
+        
+        return 0
+
+# Do the additional sweep to aid the position spin
+def AdditionalPosAndCheckIntercept(pAction, pTarget, IsPlanet, myGoodPlugin):
+	global pDefault
+    
+	# Positioning function
+
+	sAim = None
+	pPlayer = MissionLib.GetPlayer()
+
+	if eEquippedInSystemIntercept.has_key(myGoodPlugin) and eInSystemIntercept[myGoodPlugin].has_key("EngageDirectionF"):
+		try:
+			sAim = eInSystemIntercept[myGoodPlugin]["EngageDirectionF"](pPlayer.GetObjID())
+		except:
+			print "AlternateSubModelFTL: Error while calling local function during AdditionalPosAndCheckIntercept:"
+			traceback.print_exc()
+
+		if sAim:
+			fTime = pPlayer.TurnTowardDirection(sAim)
+			# Not quite there yet?
+			if fTime < fDirectionTimeThreshold:
+				sAim = None
+	# Good Aim
+	if sAim == None:	       
+		# Who the hell knows, something still might go wrong. Better be safe then sorry!
+		pGame = App.Game_GetCurrentGame()
+		pGame.SetGodMode(1)
+		# Collision settings
+		pDefault = App.ProximityManager_GetPlayerCollisionsEnabled()
+		App.ProximityManager_SetPlayerCollisionsEnabled(0)
+
+		# Grab player and set
+		pSet = pPlayer.GetContainingSet()
+
+		# Since there is a lot of customization, we need to make sure that things cannot go wrong if something on the customization went wrong.
+		preEngSeq = None
+		postEngSeq = None
+		timeBetw = 1.0
+		if eInSystemIntercept[myGoodPlugin].has_key("Sequences"):
+			preEngSeq, timeBetw , postEngSeq = eInSystemIntercept[myGoodPlugin]["Sequences"](pPlayer)
+
+		if preEngSeq == None:
+			preEngSeq = App.TGSequence_Create()
+			
+		pSubAction = App.TGScriptAction_Create(__name__, "callPlayerEventsForInSystem", myGoodPlugin, pPlayer, "EntryEvent", [App.ET_START_WARP_NOTIFY])
+		if pSubAction:
+			preEngSeq.AddAction(pSubAction, None, 0)
+
+		pActionChg = App.TGScriptAction_Create(__name__, "SwapPlayerPos", pTarget, IsPlanet)
+		preEngSeq.AppendAction(pActionChg, timeBetw)
+
+		pPostAction = App.TGScriptAction_Create(__name__, "callPlayerEventsForInSystem", myGoodPlugin, pPlayer, "ExitEvent", [App.ET_EXITED_SET])
+		if pPostAction:
+			preEngSeq.AddAction(pPostAction, pActionChg, 0.5)
+		if postEngSeq != None:
+			pClosureAction = App.TGScriptAction_Create(__name__, "orderSeqPlay", postEngSeq)
+			if pClosureAction:
+				preEngSeq.AppendAction(pClosureAction)
+
+		pFinalAction = App.TGScriptAction_Create(__name__, "BackToNormal", myGoodPlugin)
+		if pFinalAction != None:
+			preEngSeq.AppendAction(pFinalAction)
+
+
+		preEngSeq.Play()
+
+	# Bad Aim, repeat process
+	else:
+		# Use sequence counter
+		pSequence = App.TGSequence_Create()
+		pAction = App.TGScriptAction_Create(__name__, "AdditionalPosAndCheckIntercept", pTarget, IsPlanet, myGoodPlugin)
+		pSequence.AddAction(pAction, None, 1)
+		pSequence.Play()
+
+	return 0
+
+#### END OF USS SOVEREIGN'S LIMITED PERMISSION AREA ####
+
+
 
 # This class controls the attach and detach of the Models
 #class ProtoWarp(SubModels):
@@ -1076,6 +2578,154 @@ class ProtoWarp(FoundationTech.TechDef):
 		for eType in eTypeDict.keys():
 			App.g_kEventManager.RemoveBroadcastHandler(eType, self.pEventHandler, "FTLFunctionHandler")
 			App.g_kEventManager.AddBroadcastPythonMethodHandler(eType, self.pEventHandler, "FTLFunctionHandler")
+
+
+	#### BEGINNING OF USS SOVEREIGN'S LIMITED PERMISSION AREA ####
+		# the following listeners are part of an adapted Slipstream script by Mario aka USS Sovereign, and modified by Alex SL Gato with explicit permission from Mario, 
+		# with the condition that this mod is intended to be released for KM. Do not modify them or this part of the mod without the conditions stated at the beginning of the file!
+
+		# OK first we apply the .init() equivalents that zzzSlipstreamModule would have done
+		App.g_kEventManager.RemoveBroadcastHandler(Foundation.TriggerDef.ET_FND_CREATE_PLAYER_SHIP, self.pEventHandler, "InSystemFTLFunctionHandler")
+
+		App.g_kEventManager.AddBroadcastPythonMethodHandler(Foundation.TriggerDef.ET_FND_CREATE_PLAYER_SHIP, self.pEventHandler, "InSystemFTLFunctionHandler")
+		App.g_kEventManager.RemoveBroadcastHandler(App.ET_SET_PLAYER, self.pEventHandler, "InSystemFTLFunctionHandler") # For teleporting events
+		App.g_kEventManager.AddBroadcastPythonMethodHandler(App.ET_SET_PLAYER, self.pEventHandler, "InSystemFTLFunctionHandler")
+
+		# This would be the equivalent to a pruned .handlers()
+		App.g_kEventManager.RemoveBroadcastHandler(App.ET_MISSION_START, self.pEventHandler, "InSystemFTLMissionStart")
+		App.g_kEventManager.AddBroadcastPythonMethodHandler(App.ET_MISSION_START, self.pEventHandler, "InSystemFTLMissionStart")
+
+		# This would be the equivalent to a pruned .disablebutton()
+		App.g_kEventManager.RemoveBroadcastHandler(App.ET_ENTERED_SET, self.pEventHandler, "InSystemFTLDisableButton")
+		App.g_kEventManager.AddBroadcastPythonMethodHandler(App.ET_ENTERED_SET, self.pEventHandler, "InSystemFTLDisableButton")
+
+		# This would be the equivalent to a pruned .deletenavpoint()
+		App.g_kEventManager.RemoveBroadcastHandler(App.ET_EXITED_SET, self.pEventHandler, "InSystemFTLDelNavpoint")
+		App.g_kEventManager.AddBroadcastPythonMethodHandler(App.ET_EXITED_SET, self.pEventHandler, "InSystemFTLDelNavpoint")
+
+		# This would be the equivalent to a pruned .quitting()
+		App.g_kEventManager.RemoveBroadcastHandler(App.ET_QUIT, self.pEventHandler, "InSystemFTLQuitting")
+		App.g_kEventManager.AddBroadcastPythonMethodHandler(App.ET_QUIT, self.pEventHandler, "InSystemFTLQuitting")
+		
+	def InSystemFTLQuitting(self, pEvent):
+		debug(__name__ + ", InSystemFTLQuitting")
+		# For all in-system-intercepts, clear everything
+		quitting()
+		return 0
+
+	def InSystemFTLDelNavpoint(self, pEvent):
+		debug(__name__ + ", InSystemFTLDelNavpoint")
+		delnavpoint()
+		return 0
+
+	def InSystemFTLDisableButton(self, pEvent):
+		debug(__name__ + ", InSystemFTLDisableButton")
+		# Call the function(s) only if the player is the one triggering it
+		pShip = App.ShipClass_Cast(pEvent.GetDestination())
+		if pShip is None:
+			return 0
+
+		pShipID = pShip.GetObjID()
+		if not pShipID:
+			return 0
+
+		pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), pShipID)
+		if pShip is None:
+			return 0
+		
+		pPlayer = MissionLib.GetPlayer()
+		if pPlayer is None:
+			return 0
+
+		if pShip.GetObjID() == pPlayer.GetObjID():
+			global eEquippedInSystemIntercept
+			areWeIntercepting = 0
+
+			RemoveMouseHandler()
+			for method in eEquippedInSystemIntercept.keys():
+				if areWeIntercepting == 0 and eEquippedInSystemIntercept[method].has_key("ArrivingAt") and eEquippedInSystemIntercept[method]["ArrivingAt"] == 1:
+					areWeIntercepting = 1
+
+			if areWeIntercepting == 1:
+				try:
+					import Bridge.HelmMenuHandlers
+					Bridge.HelmMenuHandlers.g_bShowEnteringBanner = 0
+				except:
+					print "Error while calling InSystemFTLDisableButton"
+					traceback.print_exc()
+			disablebutton()
+		else:
+			return 0
+
+
+		#eEquippedInSystemIntercept
+		return 0	
+	
+	def InSystemFTLMissionStart(self, pEvent):
+		debug(__name__ + ", InSystemFTLMissionStart")
+		# On Mario's original version, this function also checked if the game was QB or a custom version of it or not and a course-set listener. On our case, we just need to initiate it as normal.
+		self.InSystemFTLFunctionHandler(pEvent)
+		return 0	
+
+	def InSystemFTLFunctionHandler(self, pEvent):
+		debug(__name__ + ", InSystemFTLFunctionHandler")
+		global bMenu, bNavPointButton, bInterceptMenu, pButtonCondition
+
+		RemoveMenu()
+		RemoveMouseHandler()
+
+		pPlayer, pSet = initRemoveInSystemNavpoint()
+		if not pPlayer:
+			return 0
+
+		pButtonCondition = 1
+		numEq = 0
+
+		for myGoodPlugin in eInSystemIntercept.keys():
+			iIsEquipped = eInSystemIntercept[myGoodPlugin]["IsEquipped"](pPlayer)
+			if iIsEquipped:
+				eEquippedInSystemIntercept[myGoodPlugin] = eInSystemIntercept[myGoodPlugin]
+				eEquippedInSystemIntercept[myGoodPlugin]["ArrivingAt"] = 0
+				numEq = numEq + 1
+			else:
+				try:
+					if eEquippedInSystemIntercept.has_key(myGoodPlugin):
+						del eEquippedInSystemIntercept[myGoodPlugin]
+				except:
+					print "AlternateSubModelFTL: Error while unequipping in InSystemFTLFunctionHandler:"
+					traceback.print_exc()
+
+		if numEq > 0:
+			global NormalColor, HighlightedColor, NormalColor2, HighlightedColor2, DisabledColor
+
+			bMenu, bNavPointButton, bInterceptMenu = initAddMainMenuPart()
+
+			if bMenu != None and bNavPointButton != None and bInterceptMenu != None:
+				bNavPointButton.SetUseUIHeight(0)
+				bNavPointButton.SetNormalColor(NormalColor2)
+				bNavPointButton.SetHighlightedColor(HighlightedColor2)
+				bNavPointButton.SetSelectedColor(NormalColor2)
+				bNavPointButton.SetDisabledColor(DisabledColor)
+				bNavPointButton.SetColorBasedOnFlags()
+
+				for myGoodPlugin in eEquippedInSystemIntercept.keys():
+					myName = eEquippedInSystemIntercept[myGoodPlugin]["PropulsionType"]
+					if myName == None:
+						print "AlternateSubModelFTL: ERR.: missing PropulsionType Name for plugin: '", myGoodPlugin, "'"
+						myName = myGoodPlugin
+					bInterceptButton = initAddMainMenuSubFTLPart(bInterceptMenu, myName, myGoodPlugin)
+					if bInterceptButton != None:
+						bInterceptButton.SetUseUIHeight(0)
+						bInterceptButton.SetNormalColor(NormalColor2)
+						bInterceptButton.SetHighlightedColor(HighlightedColor2)
+						bInterceptButton.SetSelectedColor(NormalColor2)
+						bInterceptButton.SetDisabledColor(DisabledColor)
+						bInterceptButton.SetColorBasedOnFlags()
+
+					eEquippedInSystemIntercept[myGoodPlugin]["bInterceptButton"] = bInterceptButton			
+		return 0
+
+	#### END OF USS SOVEREIGN'S LIMITED PERMISSION AREA ####
 
 	def FTLFunctionHandler(self, pEvent):
 		if not pEvent or pEvent == None:
