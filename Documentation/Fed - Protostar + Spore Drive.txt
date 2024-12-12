@@ -1,4 +1,8 @@
 == Changelog ==
+0.4.5 - Updates:
+  * Removed the Updated NormalWarp and EnhancedWarp, which I did not know were All Rights Reserved and could not be modified directly.
+  * Created scripts/Custom/Autoload/FIX-GCNormalWarpAndEnhancedWarp.py, which fixes NormalWarp and EnhancedWarp via monkey patching, preventing a license violation.
+  * Giving extra credit to USS Sovereign for helping me notice the legal issue above and how to fix it.
 0.4.4 - Updates:
   * Updated NormalWarp and EnhancedWarp to version 20241212 to fix camera issues and support warp stretchiness again when using GC.
   * Updated SporeDrive to 0.3 to grant better speeds.
@@ -62,6 +66,7 @@ All of these must be installed before installing this mod, in this order:
 * Everyone involved in KM - specifically those involved in the creation of armour and Shields.py (FoundationTechnologies) the AdvArmorTech.py, FiveSecsGodPhaser.py, TractorBeams.py - Apollo from ATP Technologies as well.
 * Dasher42 for reminding me of licensing.
 * USS Sovereign for some DS9FX advice regarding timers, inspired in one of DS9FX Pulsar files for improved rotations, AND MOST IMPORTANTLY, for giving me permission to adopt fragments of his Slipstream Module for Intra-System-Intercept. Those sections, while still modified to be adjusted to the script, still fall under "All Rights Reserved" so you cannot modify or repacakge them without USS Sovereign's permission!
+** Again USS Sovereign for helping me notice NormalWarp and EnhancedWarp were All Rights Reserved and could not be modified directly without violating such license, helping me from suffering a legal headache.
 * USS Frontier for GalaxyCharts.
 * Defiant for some scripts that drew inspiration (or were practically used as a base), particularly the original SubModels.
 * WileyCoyote (michaelwileyart@gmail.com) for the Crossfield Phaser sounds (already mentioned of the Crossfield's separate readme).
