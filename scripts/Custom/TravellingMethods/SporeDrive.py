@@ -1177,12 +1177,12 @@ def SetupSequenceISI(pShip=None):
 	except:
 		sRace = ""
 
-	extraSoundTime = 0.01
+	extraSoundTime = 0.0
 
 
 	if (pPlayer != None) and (pShip.GetObjID() == pPlayer.GetObjID()):
 		fEntryDelayTime = fEntryDelayTime + 1.0
-		extraSoundTime = 0.25
+		extraSoundTime = 0.01
 		
 		myCamera = Camera.GetPlayerCamera()
 
