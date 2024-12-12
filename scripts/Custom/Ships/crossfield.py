@@ -17,6 +17,8 @@ Foundation.ShipDef.crossfield = Foundation.FedShipDef(abbrev, species, { 'name':
 
 Foundation.ShipDef.crossfield.desc = "The Crossfield class was a type of Federation starship in service during the mid-23rd century. Consisting of a modular saucer section, a wide secondary hull, and two elongated nacelles, these odd design choices were put into place to facilitate an experimental method of travel involving mycelial spores."
 
+Foundation.ShipDef.crossfield.fMaxWarp = 7.0 + 0.0001
+Foundation.ShipDef.crossfield.fCruiseWarp = 6.95 + 0.0001
 Foundation.ShipDef.crossfield.dTechs = {
 	"Alternate-Warp-FTL": {
 		"Setup": {

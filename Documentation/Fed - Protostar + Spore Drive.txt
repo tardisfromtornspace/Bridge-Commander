@@ -1,4 +1,8 @@
 == Changelog ==
+0.4.4 - Updates:
+  * Updated NormalWarp and EnhancedWarp to version 20241212 to fix camera issues and support warp stretchiness again when using GC.
+  * Updated SporeDrive to 0.3 to grant better speeds.
+  * Updated Crossfield Custom/Ships file to cap warp speed at warp 7.0 like a very-early TOS vessel.
 0.4.3 - Updates:
   * Updated Crossfield, SporeDrive and Spore Drive sounds to be a bit faster.
 0.4.2 - Updates:
@@ -31,7 +35,19 @@
 0.1 - First unofficial release, for testing
 
 == What does this mod do ==
-This mod adds a USS Protostar and USS Prodigy from Star Trek Prodigy, alongside with certain technologies for Proto-Warp and a SubModels-derivated file that supports other FTL methods and mobility fix and intra-system intercept (ISI) improvements. Additionally, a modified USS Discovery (Crossfield Class) with Spore drive has been added. All of them have their own detailed instruction manuals inside the files to ensure people can use those techs easily.
+This mod adds the following updates and fixes:
+* A new SubModels-derivated file that supports other FTL methods (from GalaxyCharts) and mobility fix and intra-system intercept (ISI) improvements.
+* Proto-Warp Travelling Method.
+** An USS Protostar from Star Trek Prodigy equipped with this drive (TO-DO W.I.P.).
+** An USS Prodigy from Star Trek Prodigy equipped with this drive (TO-DO not yet added).
+* Spore-Drive Travelling Method with ISI.
+** A modified USS Discovery (Crossfield Class) equipped with Spore drive.
+* Fixed NormalWarp and EnhancedWarp travelling methods:
+** Now they support the ship stretching when it goes in an out of warp!
+** The camera no longer gets a stroke when a ship is warping in or out, switching to several places and then having the warp flash on our face! Now they behave properly!
+** Small allowance for max warp 10.0 as some vessels might allow that speed factor with regular warp methods.
+
+All of the technologies have their own detailed instruction manuals inside the files to ensure people can use those techs easily.
 
 == Dependencies ==
 All of these must be installed before installing this mod, in this order:

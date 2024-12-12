@@ -96,7 +96,7 @@ Foundation.ShipDef.USSProtostar.dTechs = { # (#)
 #################################################################################################################
 #
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.2",
+	    "Version": "0.3",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -1671,9 +1671,13 @@ def ConvertSpeedAmount(fSpeed):
 	elif fSpeed > 9.6:
 		fFacA = 2.8700              ##### Do Not Change These Values #####
 		fFacB = 5.9645              ##### Do Not Change These Values #####
-	elif fSpeed <= 9.6:
+	elif fSpeed >= 5.0: # This was fSpeed <= 9.6
 		fFacA = 3.0                 ##### Do Not Change These Values #####
 		fFacB = 3.0                 ##### Do Not Change These Values #####
+		fSpeed = 9.6 # I modified this, so Spore Drive can go far without those, and only if you want to go slow on purpose, you go slow
+	elif fSpeed < 5.0:
+		fFacA = 3.0                 ##### Do Not Change These Values #####
+		fFacB = 3.0                 ##### Do Not Change These Values #####	
 
 	speed = (math.pow(fSpeed, (10.0/fFacA)) + math.pow((10.0-fSpeed), (-11.0/fFacB)))
 	return speed*420480*420480

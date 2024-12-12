@@ -1,3 +1,37 @@
+# THIS FILE IS NOT SUPPORTED BY ACTIVISION
+# THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
+# NormalWarp.py
+# prototype custom travelling method plugin script, by USS Frontier (Normal Warp, original) and then modified by Alex SL Gato
+# 12th December 2024
+#################################################################################################################
+##########	MANUAL
+#################################################################################################################
+# NOTE: all functions/methods and attributes defined here (in this prototype example plugin, NormalWarp) are required to be in the plugin, with the exclusion of:
+# ------ MODINFO, which is there just to verify versioning.
+# ------ import Camera statement
+# ------ Auxiliar functions: "setTheStretchyState", "theStagesOfGrief", "WatchPlayerShipLeave".
+# === How-To-Add ===
+# This Travelling Method is Ship-based, on this case it just checks if your ship was Warp Drive to use. It is the default, with default speeds.
+# === Changes over old Normal Warp ===
+# All changes done have been to fix bugs and enhance the experience. The areas declared as "extras" highlight what changes were made on pre-existing functions.
+# - Set upper Warp limit to warp 10.0 - this pretty much does nothing except ensure that ships with warp 9.99 can actually choose warp 9.99 with the GalaxyCharts slidebar, and also allows transwarp speed if necessary.
+# - Normal Warp for GC has the stretchy-effect back!
+# - Fixed the camera jumping over the place to catch the player ship, to then have the warp flash band at 2 centimeters from your face.
+#
+#################################################################################################################
+##########	END OF MANUAL
+#################################################################################################################
+#################################################################################################################
+#
+MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
+	    "Version": "20241212",
+	    "License": "LGPL",
+	    "Description": "Read the small title above for more info"
+	    }
+#
+#################################################################################################################
+#
+
 from bcdebug import debug
 # prototype custom travelling method plugin script, by USS Frontier
 
@@ -79,7 +113,7 @@ bCanTriggerRDF = 1
 # It's an arbitrary scale/range. The actual conversion to a exact speed unit (km/h) is done in the method ConvertSpeedAmount located below.
 ########
 fMinimumSpeed = 1.0
-fMaximumSpeed = 9.99
+fMaximumSpeed = 10.0
 
 ########
 # A float, representing the radius (in kilometers) from a launch coordinate which a ship can be able to activate this non-ship-based travelling method
@@ -104,6 +138,8 @@ iRestrictionFlag = 0
 ###########################################
 ###########################################
 import App
+# This Camera was an extra added for better cameras during Warp
+import Camera
 import string
 import MissionLib
 import math
@@ -360,6 +396,74 @@ def PreExitStuff(self):
 # 2º during travel sequence
 # 3º exiting travel sequence
 ########
+# Aux. Restoring the stretchy feature
+def setTheStretchyState(pAction, pShipID, state):
+	# STATES ARE:
+	# App.WarpEngineSubsystem.WES_NOT_WARPING
+	# App.WarpEngineSubsystem.WES_WARP_INITIATED, <- Gives front stretchy part
+	# App.WarpEngineSubsystem.WES_WARP_BEGINNING, <- Speed boost
+	# App.WarpEngineSubsystem.WES_WARP_ENDING,    <- Makes the camera freeze while warping out
+	# App.WarpEngineSubsystem.WES_WARPING,        <- Makes the camera freeze while warping out
+	# App.WarpEngineSubsystem.WES_DEWARP_INITIATED, <- Gives a stretchy part
+	# App.WarpEngineSubsystem.WES_DEWARP_BEGINNING, <- Makes the camera freeze while warping out
+	# App.WarpEngineSubsystem.WES_DEWARP_ENDING,  <- removes the stretchy part for behind, but keeps crazy speed
+
+	pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), pShipID)
+	if pShip:
+		pWarpEngines = pShip.GetWarpEngineSubsystem()
+		if pWarpEngines and pWarpEngines.GetWarpState() != state:
+			# Turns out that setting the warp engine state is for those warp effects, like really fast and stretched ships... Since GC disables them I will re-enable them for now.
+			pWarpEngines.TransitionToState(state)
+			pWarpEngines.SetWarpState(state)
+
+	return 0
+
+# Aux. Restoring the stretchy feature
+def theStagesOfGrief(pAction, pShipID, deWarp = 0):
+	# So the vessel can change things
+	if deWarp == 0:
+		setTheStretchyState(pAction, pShipID, App.WarpEngineSubsystem.WES_WARP_BEGINNING)
+		setTheStretchyState(pAction, pShipID, App.WarpEngineSubsystem.WES_WARP_ENDING)
+		setTheStretchyState(pAction, pShipID, App.WarpEngineSubsystem.WES_WARPING)
+		setTheStretchyState(pAction, pShipID, App.WarpEngineSubsystem.WES_DEWARP_INITIATED)
+	setTheStretchyState(pAction, pShipID, App.WarpEngineSubsystem.WES_DEWARP_BEGINNING)
+	setTheStretchyState(pAction, pShipID, App.WarpEngineSubsystem.WES_DEWARP_ENDING)
+	setTheStretchyState(pAction, pShipID, App.WarpEngineSubsystem.WES_NOT_WARPING)
+	return 0
+
+# Aux. for a better camera
+# A modified Actions.CameraScriptActions function.
+def WatchPlayerShipLeave(pAction, sSet, sObjectName):
+	debug(__name__ + ", WatchPlayerShipLeave")
+	pSet = App.g_kSetManager.GetSet(sSet)
+
+	if not pSet:
+		return 0
+
+	pCamera = Camera.GetPlayerCamera()
+
+	if not pCamera:
+		return 0
+
+	pAction = App.TGScriptAction_Create("Actions.CameraScriptActions", "DropAndWatch", sSet, sObjectName, 1, 0)
+	pAction.Play()
+
+	pMode = pCamera.GetCurrentCameraMode()
+	if not pMode:
+		return 0
+
+	pMode.SetAttrFloat("AwayDistance", -1.0)
+	pMode.SetAttrFloat("ForwardOffset", -7.0)
+	pMode.SetAttrFloat("SideOffset", -7.0)
+	pMode.SetAttrFloat("RangeAngle1", -360.0)
+	pMode.SetAttrFloat("RangeAngle2", 360.0)
+	pMode.SetAttrFloat("RangeAngle3", -360.0)
+	pMode.SetAttrFloat("RangeAngle4", 360.0)
+	pMode.SetAttrFloat("AwayDistance", 100000.0)
+	pMode.Update()
+
+	return 0
+
 def SetupSequence(self):
 	# you can use this function as an example on how to create your own '.SetupSequence(self)' method for your
 	# custom travelling method.
@@ -436,11 +540,31 @@ def SetupSequence(self):
 		pDisallowInput = App.TGScriptAction_Create("MissionLib", "RemoveControl")
 		pEngageWarpSeq.AddAction(pDisallowInput, pCinematicStart)
 
+		# AN EXTRA I HAD TO ADD BECAUSE REALLY WHY WAS THIS NOT ADDED?
+		# Maybe for other FTL methods it could be unecessary but for warp having the camera constantly swapping and then having the warp flash at 2 cm from your face is not good!
+		pcOrig = None
+		pcOrigModule = pWS.GetDestination()
+		if (pcOrigModule != None):
+			pcOrig = pcOrigModule[string.rfind(pcOrigModule, ".") + 1:]
+			if (pcOrig == None):
+				pcOrig = pcOrigModule
+		if pcOrig != None:
+			pWatchShipLeave = App.TGScriptAction_Create(__name__, "WatchPlayerShipLeave", pcOrig, pShip.GetName())
+			if pWatchShipLeave != None:
+				pEngageWarpSeq.AddAction(pWatchShipLeave, pCinematicStart)
+		# END OF THE EXTRA
+
+
 	pWarpSoundAction1 = App.TGScriptAction_Create(sCustomActionsScript, "PlayWarpSound", pWS, "Enter Warp", sRace)
 	pEngageWarpSeq.AddAction(pWarpSoundAction1, None, fEntryDelayTime + 0.2)
 	
-	pBoostAction = App.TGScriptAction_Create(sCustomActionsScript, "BoostShipSpeed", pShip.GetObjID(), 1, 100.0)
+	pBoostAction = App.TGScriptAction_Create(sCustomActionsScript, "BoostShipSpeed", pShip.GetObjID(), 1, 300.0)
 	pEngageWarpSeq.AddAction(pBoostAction, pWarpSoundAction1, 0.7)
+
+	# THIS WAS AN EXTRA ADDED TO RESTORE WARP STRETCHINESS
+	pStretchAction = App.TGScriptAction_Create(__name__, "setTheStretchyState", pShip.GetObjID(), App.WarpEngineSubsystem.WES_WARP_INITIATED)
+	pEngageWarpSeq.AddAction(pStretchAction, pWarpSoundAction1, 0.7)
+	# END OF THE EXTRA
 
 	try:
 		import Custom.NanoFXv2.WarpFX.WarpFX
@@ -468,11 +592,16 @@ def SetupSequence(self):
 	pHideShip = App.TGScriptAction_Create(sCustomActionsScript, "HideShip", pShip.GetObjID(), 1)
 	pEngageWarpSeq.AddAction(pHideShip, pFlashAction1)
 
+	# THIS WAS AN EXTRA ADDED TO RESTORE WARP STRETCHINESS
+	pStretchStop0Action = App.TGScriptAction_Create(__name__, "theStagesOfGrief", pShip.GetObjID())
+	pEngageWarpSeq.AddAction(pStretchStop0Action, pHideShip)
+	# END OF THE EXTRA
+
 	pUnBoostAction = App.TGScriptAction_Create(sCustomActionsScript, "BoostShipSpeed", pShip.GetObjID(), 0, 1.0)
 	pEngageWarpSeq.AddAction(pUnBoostAction, pHideShip)
 	
 	pCheckTowing = App.TGScriptAction_Create(sCustomActionsScript, "EngageSeqTractorCheck", pWS)
-	pEngageWarpSeq.AddAction(pCheckTowing, pHideShip)	
+	pEngageWarpSeq.AddAction(pCheckTowing, pHideShip)
 
 	pEnWarpSeqEND = App.TGScriptAction_Create(sCustomActionsScript, "NoAction")
 	pEngageWarpSeq.AddAction(pEnWarpSeqEND, pUnBoostAction, 2.5)
@@ -508,6 +637,11 @@ def SetupSequence(self):
 		pFlashAction2 = App.TGScriptAction_Create("Actions.EffectScriptActions", "WarpFlash", pShip.GetObjID())
 		pExitWarpSeq.AddAction(pFlashAction2, pHideShip, 0.7)
 
+		# THIS WAS AN EXTRA ADDED TO RESTORE WARP STRETCHINESS
+		pStretchEAction = App.TGScriptAction_Create(__name__, "setTheStretchyState", pShip.GetObjID(), App.WarpEngineSubsystem.WES_DEWARP_INITIATED)
+		pExitWarpSeq.AddAction(pStretchEAction, pFlashAction2)
+		# END OF THE EXTRA
+
 		# Un-Hide the ship
 		pUnHideShip = App.TGScriptAction_Create(sCustomActionsScript, "HideShip", pShip.GetObjID(), 0)
 		pExitWarpSeq.AddAction(pUnHideShip, pFlashAction2, 0.2)
@@ -539,12 +673,18 @@ def SetupSequence(self):
 		pUnBoostAction = App.TGScriptAction_Create(sCustomActionsScript, "BoostShipSpeed", pShip.GetObjID(), 0, 1.0)
 		pExitWarpSeq.AddAction(pUnBoostAction, pWarpSoundAction2, 2.0)
 
+		# THIS WAS AN EXTRA ADDED TO RESTORE WARP STRETCHINESS
+		pStretchStopE0Action = App.TGScriptAction_Create(__name__, "theStagesOfGrief", pShip.GetObjID(), 1)
+		pExitWarpSeq.AddAction(pStretchStopE0Action, pUnBoostAction, 0.01)
+		# END OF THE EXTRA
+
 		# And finally finish the exit sequence
 		# actually, just put up a empty action, the Traveler system automatically puts his exit sequence action at the
 		# end of the sequence, and his exit action is necessary. However I want it to trigger at the right time, and doing
 		# this, i'll achieve that.
 		pExitWarpSeqEND = App.TGScriptAction_Create(sCustomActionsScript, "NoAction")
 		pExitWarpSeq.AddAction(pExitWarpSeqEND, pUnBoostAction, 1.5)
+
 
 	###########################################################################################
 	# end of the not-required stuff that sets up my sequences
