@@ -1,7 +1,7 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
 # AlternateSubModelFTL.py
-# 11th December 2024, by Alex SL Gato (CharaToLoki)
+# 12th December 2024, by Alex SL Gato (CharaToLoki)
 #         Based on Defiant's SubModels script (from which it inherits the classes, so in fact SubModels is a dependency) and BorgAdaptation.py by Alex SL Gato, which were based on the Foundation import function by Dasher
 #         Also based on ATPFunctions by Apollo and slightly on DS9FXPulsarManager by USS Sovereign.
 #         Also some sections based on the Slisptream module by Mario aka USS Sovereign, modified by Alex SL Gato with explicit permission from Mario to adapt his code to this script.
@@ -162,7 +162,7 @@ Foundation.ShipDef.USSProtostar.dTechs = {
 # The filters that each Intercept Method button has are the following:
 # - No-target filter: if the intercept location is not a ship or a planet, the respective button name will temporarily change name to "NO TARGET".
 # - Safety distance feature: if the intercept target is too close to the ship, the respective button name will temporarily change name to "TOO CLOSE".
-# - Local FTL restrictions: before engaging, this plugin also checks the CanTravel equivalent function provided by InSystemIntercept() function. If it does not meet the requirements, it will not engage and the button will temporarily change to "CANNOT". Additionally, the local function may drop certain subtitles and phrases to hint at what is preventing the ship from using ISI at the moment.
+# - Local FTL restrictions: before engaging, this plugin also checks the CanTravel equivalent function provided by InSystemIntercept() function. If it does not meet the requirements, it will not engage and the button will temporarily change to "CANNOT DO". Additionally, the local function may drop certain subtitles and phrases to hint at what is preventing the ship from using ISI at the moment.
 # - Local FTL 'GoodAim' functions: once we know we can engage, the plugin will look for a good position to perform the intercept, according to the function provided by InSystemIntercept() function. Once we have reached this stage the ISI will happen, but will be delayed the time needed to aim for a good position.
 #
 # === HOW TO CREATE a compatible FTL TravellingMethods that supports this tech ===
@@ -1499,7 +1499,7 @@ def GetEngageDirectionC(mySelf, pPlayerID = None):
 #################################################################################################################
 #
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.8",
+	    "Version": "0.81",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -2218,7 +2218,7 @@ def SlipstreamInterceptStats(pObject, pEvent):
 						mybInterceptButton = eEquippedInSystemIntercept[myGoodPlugin]["bInterceptButton"]
 
 					if mybInterceptButton != None:
-						mybInterceptButton.SetName(App.TGString("CANNOT"))
+						mybInterceptButton.SetName(App.TGString("CANNOT DO"))
 						pSequence = App.TGSequence_Create()
 						pAction = App.TGScriptAction_Create(__name__, "ResetButtonString", mybInterceptButton, myGoodPlugin)
 						pSequence.AddAction(pAction, None, 1)

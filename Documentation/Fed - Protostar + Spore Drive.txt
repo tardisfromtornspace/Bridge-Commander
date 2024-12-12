@@ -1,4 +1,6 @@
 == Changelog ==
+0.4.2 - Updates:
+  * Updated AlternateSubModelFTL to 0.81 to so when a ship cannot move, it says "CANNOT DO" instead of just "CANNOT".
 0.4.1 - Updates:
   * Updated SporeDrive to 0.2 to allow ISI to have a customizable chance to uncloak nearby vessels without phase cloak.
 0.4 - Updates:
