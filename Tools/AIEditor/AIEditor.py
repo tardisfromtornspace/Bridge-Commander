@@ -2945,7 +2945,11 @@ class CompoundAIConfigurationDialog(ConfigurationDialog):
 
 	class OnOffConfig(FlagConfig):
 		def __init__(self, pParent, pConfigDialog, pAI, lSettings, **kw):
-			apply(CompoundAIConfigurationDialog.FlagConfig.__init__, (self, pParent, pConfigDialog, pAI, lSettings), kw)
+			try:
+				apply(CompoundAIConfigurationDialog.FlagConfig.__init__, (self, pParent, pConfigDialog, pAI, lSettings), kw)
+			except:
+				from apply import apply
+				apply(CompoundAIConfigurationDialog.FlagConfig.__init__, (self, pParent, pConfigDialog, pAI, lSettings), kw)
 			self.bOnOff = IntVar()
 
 			self.pOnRadio = Radiobutton(self, text="On", variable=self.bOnOff, value = 1)
@@ -3322,6 +3326,11 @@ class CompoundAIConfigurationDialog(ConfigurationDialog):
 			try:
 				apply(pFlagConfig.SetColors, dKeyColors[pFlagConfig.GetName()])
 			except KeyError: pass
+			except:
+				try:
+					from apply import apply
+					apply(pFlagConfig.SetColors, dKeyColors[pFlagConfig.GetName()])
+				except KeyError: pass
 
 	def AddFlags(self, pFrame, lFlags):
 		bHeaderSet = 0
