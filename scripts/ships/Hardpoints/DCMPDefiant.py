@@ -992,7 +992,7 @@ Defiant = App.ShipProperty_Create("Defiant")
 
 Defiant.SetGenus(1)
 Defiant.SetSpecies(105)
-Defiant.SetMass(70.000000)
+Defiant.SetMass(5000.000000)
 Defiant.SetRotationalInertia(150.000000)
 Defiant.SetShipName("Defiant")
 Defiant.SetModelFilename("data/Models/Ships/shuttle.nif")
