@@ -148,5 +148,9 @@ class ConfigurationDialog(Toplevel):
 
 		self.destroy()
 
+	def __del__(self):
+		# Cleanup.
+		self.destroy()
+
 
 
