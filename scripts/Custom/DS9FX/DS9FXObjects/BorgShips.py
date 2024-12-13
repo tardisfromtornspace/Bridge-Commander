@@ -26,7 +26,13 @@ def BorgShipCheck(pObject, pEvent):
     pShID = pShip.GetObjID()
     if not pShID:
         return 0
-    
+
+    # TO-DO IF THIS WORKS ADD IT AS A MONKEY PATCH
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), pShID)
+    if not pShip:
+        return 0
+    # TO-DO END SECTION ADDED
+
     if pPlID == pShID:
         return 0
     
@@ -66,6 +72,17 @@ def Delay(pObject, pEvent):
         lToRemove.append(k)
         if not pShip:
             continue
+
+        # TO-DO IF THIS WORKS ADD IT AS A MONKEY PATCH
+        pShID = pShip.GetObjID()
+        if not pShID:
+            continue
+
+        pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), pShID)
+        if not pShip:
+            continue
+        # TO-DO END SECTION ADDED
+
         if iOpt == 1:
             from Custom.DS9FX.DS9FXAILib import DS9FXBorgAI
             pShip.SetAI(DS9FXBorgAI.CreateAI(pShip, "Enemy"))
