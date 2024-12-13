@@ -7,7 +7,7 @@
 # Below we have what NormalWarp would look like, then we add the replacement functions on a "monkey patch" section:
 # NormalWarp.py
 # prototype custom travelling method plugin script, by USS Frontier (Normal Warp, original) and then modified by Alex SL Gato
-# 12th December 2024
+# 13th December 2024
 #################################################################################################################
 ##########	MANUAL
 #################################################################################################################
@@ -29,7 +29,7 @@
 #################################################################################################################
 #
 MODINFO = { "Author": "\"USS Frontier\" (original) and \"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "20241212",
+	    "Version": "20241213",
 	    "License": "All Rights Reserved to USS Frontier, LGPL from Alex SL Gato changes",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -899,8 +899,6 @@ def FindIfNecessaryToUpdate():
 				continue
 
 			try:
-				print "TEST"
-				
 				if not filesChecked.has_key(fileName):
 					filesChecked[fileName] = 1
 					myGoodPlugin = dotPrefix + fileName
@@ -920,11 +918,9 @@ def FindIfNecessaryToUpdate():
 						if myContinueS == 1:
 							needsPatching = needsPatching + 1
 							if hasattr(banana, "fMaximumSpeed"):
-								print "Patching fMaximumSpeed"
 								banana.fMaximumSpeed = fMaximumSpeed
 					
 							if hasattr(banana, "SetupSequence"):
-								print "Patching SetupSequence"
 								banana.SetupSequence = SetupSequence
 			except:
 				print "FIX-GCNormalWarpAndEnhancedWarp ERROR:"
