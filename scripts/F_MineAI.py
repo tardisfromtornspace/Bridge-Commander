@@ -8,8 +8,8 @@ class MineDef(ShipDef):
 		dict['race'] = Federation
 		ShipDef.__init__(self, abbrev, species, dict)
 
-	def StrFriendlyAI(self):
+	def StrFriendlyAI(self, *args):
 		return 'MineFriendlyAttack'
 
-	def StrEnemyAI(self):
+	def StrEnemyAI(self, *args):
 		return 'MineAttack'

@@ -19,11 +19,21 @@ def ObjectCloaking(pObject, pEvent):
 	pPlayerSet = pPlayer.GetContainingSet()
 
 	pShip = App.ShipClass_Cast(pEvent.GetDestination())
-	print("Creating Sound SFX for Ship")
+
+	if not pShip:
+		return
+
+	pShipID = pShip.GetObjID()
+	if not pShipID:
+		return
+
+	pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), pShipID)
+	if not pShip:
+		return
 
 	pShipSet = pShip.GetContainingSet()
 
-	if(pPlayerSet.GetName() == pShipSet.GetName()):		
+	if pShipSet and pPlayerSet and (pPlayerSet.GetName() == pShipSet.GetName()):		
 		if pShip.GetScript():
 			sShip = string.split(pShip.GetScript(), '.')[-1]
 			if Foundation.shipList.has_key(sShip):
@@ -64,11 +74,20 @@ def ObjectDeCloaking(pObject, pEvent):
 	pPlayerSet = pPlayer.GetContainingSet()
 
 	pShip = App.ShipClass_Cast(pEvent.GetDestination())
-	print("Creating Sound SFX for Ship")
+	if not pShip:
+		return
+
+	pShipID = pShip.GetObjID()
+	if not pShipID:
+		return
+
+	pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), pShipID)
+	if not pShip:
+		return
 
 	pShipSet = pShip.GetContainingSet()
 
-	if(pPlayerSet.GetName() == pShipSet.GetName()):	
+	if pShipSet and pPlayerSet and (pPlayerSet.GetName() == pShipSet.GetName()):	
 		if pShip.GetScript():
 			sShip = string.split(pShip.GetScript(), '.')[-1]
 			if Foundation.shipList.has_key(sShip):

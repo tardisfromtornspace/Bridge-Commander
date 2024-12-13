@@ -9,14 +9,14 @@ class FedAttackLightCruiserAI(ShipDef):
 		dict['race'] = Federation
 		ShipDef.__init__(self, abbrev, species, dict)
 
-	def StrFriendlyAI(self):
+	def StrFriendlyAI(self, *args):
 		debug(__name__ + ", StrFriendlyAI")
 		return 'FedAttackLightCruiserFriendlyAI'
 
-	def StrEnemyAI(self):
+	def StrEnemyAI(self, *args):
 		debug(__name__ + ", StrEnemyAI")
 		return 'FedAttackLightCruiserAI'
 
-	def GetAttackModule(self):
+	def GetAttackModule(self, *args):
 		debug(__name__ + ", GetAttackModule")
 		return 'FedAttackLightCruiserAI'

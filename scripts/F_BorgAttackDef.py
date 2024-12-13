@@ -8,8 +8,8 @@ class BorgAttackDef(ShipDef):
 		dict['race'] = Borg
 		ShipDef.__init__(self, abbrev, species, dict)
 
-        def StrFriendlyAI(self):
+        def StrFriendlyAI(self, *args):
                 return 'BorgAttackFriendlyAI'
 
-        def StrEnemyAI(self):
+        def StrEnemyAI(self, *args):
                 return 'BorgAttackAI'

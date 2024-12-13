@@ -9,9 +9,9 @@ class FedAttackFighterAI(ShipDef,):
         ShipDef.__init__(self, abbrev, species, dict)
 
 
-    def StrFriendlyAI(self):
+    def StrFriendlyAI(self, *args):
         return 'FedAttackFighterFriendlyAI'
 
 
-    def StrEnemyAI(self):
+    def StrEnemyAI(self, *args):
         return 'FedAttackFighterAI'

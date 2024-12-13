@@ -3,7 +3,8 @@ import MissionLib
 from Libs.LibQBautostart import *
 
 MODINFO = {     "Author": "\"Defiant\" erik@bckobayashimaru.de",
-                "needBridge": 0
+                "needBridge": 0,
+                "Version": "20241213"		
             }
 
 lSounds = [
@@ -32,6 +33,15 @@ def ObjectCreatedHandler(pObject, pEvent):
 	
 	pPlayer = MissionLib.GetPlayer()
 	pShip = App.ShipClass_Cast(pEvent.GetDestination())
+	if not pShip:
+		return
+
+	pShipID = pShip.GetObjID()
+	if not pShipID:
+		return
+
+	pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), pShipID)
+
 	if pShip and pPlayer and pShip.GetContainingSet() and pPlayer.GetContainingSet() and pShip.GetContainingSet().GetName() == pPlayer.GetContainingSet().GetName() and GetRaceFromShip(pShip):
 		sRace = GetRaceFromShip(pShip)
 		if sRace == "Borg" and len(lSounds) > 0 and not lock:

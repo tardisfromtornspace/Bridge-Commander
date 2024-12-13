@@ -7,5 +7,5 @@ class DomRamAI(ShipDef):
 	def __init__(self, abbrev, species, dict):
 		dict['race'] = Dominion
 		ShipDef.__init__(self, abbrev, species, dict)
-        def StrEnemyAI(self):
+        def StrEnemyAI(self, *args):
                 return "DomRamAI"
