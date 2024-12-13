@@ -2366,7 +2366,7 @@ class SequenceAIEntity(AIEntityWithSequenceBlock):
 					try:
 						iValue = string.atoi( match.group(2) )
 					except:
-						iValue = match.group(2).atoi()
+						iValue = int(match.group(2))
 					pSetFunc(iValue)
 
 		self.LoadSequenceBlock(lsCreationText)
