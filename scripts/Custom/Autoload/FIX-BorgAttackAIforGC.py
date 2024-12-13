@@ -1,14 +1,14 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
-# THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
 # 13th December 2024
-# The 'Borg AI Final' was one AI jayce (aka Resistance Is Futile) made on 2008 for Borg vessels, bringing a lot of functionality to those vessels.
+# The 'Borg AI Final' was one AI jayce (aka Resistance Is Futile) modified at least until 2008 from an unknown author for Borg vessels, bringing a lot of functionality to those vessels. Inside the BorgAttack file and its readme it explicity says **Do Not Modify The Borg AI Final*
 # However, this AI presents one weird glitch when combined with GalaxyCharts which makes the game crash immediately if a ship travelled two systems while one Borg vessel was chasing them.
-# I am not sure if it is "All Rights Reserved", but on the BorgAttack file it explicity says **Do Not Modify The Borg AI Final**, so just in case I will treat it as an All Rights Reserved as well, and in order to fix this conflict, I will make this Autoload file "FIX-BorgAttackAIforGC", made by myself as a derivative work and with the help of the AIEditor Tool, so the original file is unmodified.
+# So just in case, in order to fix this conflict, I made this Autoload file "FIX-BorgAttackAIforGC", which qualifies under fair use with original dependency, with the purpose to keep the original file unmodified.
+# The only areas I MIGHT even declare as even slightly mine (Alex SL Gato) are the areas labeled as "OVERRIDES", two lines "EXTRA ADDED" on CreateAI, the changes done to "MODINFO" if just to keep track of any changes done with a glance for other modders, as well as the changes done to BuilderCreate3 and BuilderCreate3 with the help of the AIEditor Tool
 # The functions we need to modify are fragments of CreateAI, plus BuilderCreate3 and BuilderCreate4.
 #
-MODINFO = { "Author": "\"jayce\" (original) and \"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "20241213",
-	    "License": "All Rights Reserved to jayce, LGPL from Alex SL Gato changes, SDK for the rest",
+MODINFO = { "Author": "Unknown (original), \"jayce\" (Final), Alex SL Gato (small autoload fixes)",
+	    "Version": "20241214",
+	    "License": "Original Dependency",
 	    "Description": "Read the small title above for more info"
 	    }
 #
@@ -67,17 +67,17 @@ def CreateAI(pShip, *lpTargets, **dKeywords):
 	pBuilderAI.AddAIBlock("2sec_InAttackPowerReserve", "BuilderCreate2")
 	pBuilderAI.AddDependency("2sec_InAttackPowerReserve", "AttackFriends")
 
-	pBuilderAI.AddAIBlock("FollowThroughWarp", "BuilderCreate3")                          #### TAGGED 2
-	pBuilderAI.AddDependencyObject("FollowThroughWarp", "sInitialTarget", sInitialTarget) #### TAGGED 2
+	pBuilderAI.AddAIBlock("FollowThroughWarp", "BuilderCreate3")
+	pBuilderAI.AddDependencyObject("FollowThroughWarp", "sInitialTarget", sInitialTarget)
 
-	pBuilderAI.AddDependencyObject("FollowThroughWarp", "dKeywords", dKeywords)           #### TAGGED 2 EXTRA ADDED TO-DO
+	pBuilderAI.AddDependencyObject("FollowThroughWarp", "dKeywords", dKeywords)           #### TAGGED 2 EXTRA LINE ADDED
 
-	pBuilderAI.AddAIBlock("TargetWarpingAway", "BuilderCreate4")                          #### TAGGED 1
-	pBuilderAI.AddDependencyObject("TargetWarpingAway", "sInitialTarget", sInitialTarget) #### TAGGED 1
+	pBuilderAI.AddAIBlock("TargetWarpingAway", "BuilderCreate4")
+	pBuilderAI.AddDependencyObject("TargetWarpingAway", "sInitialTarget", sInitialTarget) 
 
-	pBuilderAI.AddDependencyObject("TargetWarpingAway", "dKeywords", dKeywords)           #### TAGGED 1 EXTRA ADDED TO-DO
+	pBuilderAI.AddDependencyObject("TargetWarpingAway", "dKeywords", dKeywords)           #### TAGGED 1 EXTRA LINE ADDED
 
-	pBuilderAI.AddDependency("TargetWarpingAway", "FollowThroughWarp")                    #### TAGGED 1
+	pBuilderAI.AddDependency("TargetWarpingAway", "FollowThroughWarp")
 	pBuilderAI.AddAIBlock("Intercept", "BuilderCreate5")
 	pBuilderAI.AddDependencyObject("Intercept", "sInitialTarget", sInitialTarget)
 	pBuilderAI.AddAIBlock("TargetTooFar", "BuilderCreate6")
@@ -86,7 +86,7 @@ def CreateAI(pShip, *lpTargets, **dKeywords):
 	pBuilderAI.AddAIBlock("MoveIn", "BuilderCreate7")
 	pBuilderAI.AddDependencyObject("MoveIn", "sInitialTarget", sInitialTarget)
 	pBuilderAI.AddAIBlock("Sequence_2", "BuilderCreate8")
-	pBuilderAI.AddDependency("Sequence_2", "TargetWarpingAway")                           #### TAGGED 1
+	pBuilderAI.AddDependency("Sequence_2", "TargetWarpingAway")
 	pBuilderAI.AddDependency("Sequence_2", "TargetTooFar")
 	pBuilderAI.AddDependency("Sequence_2", "MoveIn")
 	pBuilderAI.AddAIBlock("SelectTarget", "BuilderCreate9")
@@ -153,7 +153,7 @@ def BuilderCreate2(pShip, pAttackFriends):
 	return p2sec_InAttackPowerReserve  # Builder Return
 	########## AI Builder End ##########
 	######### AI Builder Begin #########
-def BuilderCreate3(pShip, sInitialTarget, dKeywords):
+def BuilderCreate3(pShip, sInitialTarget, dKeywords={}):
 	########## AI Builder End ##########
 
 	#########################################
@@ -163,8 +163,7 @@ def BuilderCreate3(pShip, sInitialTarget, dKeywords):
 	pFollowThroughWarp = AI.Compound.FollowThroughWarp.CreateAI(pShip, sInitialTarget, Keywords = dKeywords, FollowToSB12 = 1, FollowThroughMissions = 1)
 	# Done creating CompoundAI FollowThroughWarp
 	#########################################
-
-	# TO-DO BELOW ORIGINAL, ABOVE MODIFIED
+	# BELOW ORIGINAL, ABOVE MODIFIED
 #	#########################################
 #	# Creating PlainAI FollowThroughWarp at (313, 399)
 #	debug(__name__ + ", BuilderCreate3")
@@ -176,14 +175,11 @@ def BuilderCreate3(pShip, sInitialTarget, dKeywords):
 #	# Done creating PlainAI FollowThroughWarp
 #	#########################################
 
-
-
-
 	######### AI Builder Begin #########
 	return pFollowThroughWarp  # Builder Return
 	########## AI Builder End ##########
 	######### AI Builder Begin #########
-def BuilderCreate4(pShip, pFollowThroughWarp, sInitialTarget, dKeywords):
+def BuilderCreate4(pShip, pFollowThroughWarp, sInitialTarget, dKeywords={}):
 	########## AI Builder End ##########
 
 	#########################################
@@ -211,8 +207,7 @@ def BuilderCreate4(pShip, pFollowThroughWarp, sInitialTarget, dKeywords):
 	pTargetWarpingAway.SetEvaluationFunction(EvalFunc)
 	# Done creating ConditionalAI TargetWarpingAway
 	#########################################
-
-	# TO-DO BELOW ORIGINAL, ABOVE MODIFIED
+	# BELOW ORIGINAL, ABOVE MODIFIED
 #	#########################################
 #	# Creating ConditionalAI TargetWarpingAway at (313, 365)
 #	## Conditions:
@@ -462,7 +457,7 @@ def BuilderCreate14(pShip, pPowerManagement):
 	########## AI Builder End ##########
 
 #################################################################################################################
-##########	MONKEY PATCH
+##########	OVERRIDES
 #################################################################################################################
 import nt
 import string
@@ -510,5 +505,5 @@ else:
 	print "FIX-BorgAttackAIforGC: Skipping..."
 
 #################################################################################################################
-##########	END OF MONKEY PATCH
+##########	END OF OVERRIDES
 #################################################################################################################
