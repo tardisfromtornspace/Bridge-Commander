@@ -3264,7 +3264,10 @@ class CompoundAIConfigurationDialog(ConfigurationDialog):
 				match = pFlagMatch.match(mierdaux)
 				if match:
 					sFlag, sSettings = match.group(1, 2)
-					lSettings = string.split(sSettings, " ")
+					try:
+						lSettings = string.split(sSettings, " ")
+					except:
+						lSettings = sSettings.split(" ")
 
 					# If this flag should only be available with Advanced features
 					# and advanced features aren't available, skip it.
