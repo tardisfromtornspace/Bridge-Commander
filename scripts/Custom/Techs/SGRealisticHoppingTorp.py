@@ -280,4 +280,4 @@ oSGRealisticHoppingTorp = SGRealisticHoppingTorpedo("SG Hopping Torpedo")
 # Should be commented out on release...
 # oSGRealisticHoppingTorp.AddTorpedo("Tactical.Projectiles.Drones", 0.75)
 
-print "SG Hopping Torp ready"
+#print "SG Hopping Torp ready"

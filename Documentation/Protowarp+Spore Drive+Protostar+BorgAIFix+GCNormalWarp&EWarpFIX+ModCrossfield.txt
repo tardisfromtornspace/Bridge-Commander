@@ -1,4 +1,6 @@
 == Changelog ==
+0.4.6 - Updates:
+  * Created scripts/Custom/Autoload/FIX-GCNormalWarpAndEnhancedWarp.py version 20241213 that fixes a pre-existing glitch that caused a crash-to-desktop for KM's BorgAttack AI during GalaxyCharts travels.
 0.4.5 - Updates:
   * Removed the Updated NormalWarp and EnhancedWarp, which I did not know were All Rights Reserved and could not be modified directly.
   * Created scripts/Custom/Autoload/FIX-GCNormalWarpAndEnhancedWarp.py, which fixes NormalWarp and EnhancedWarp via monkey patching, preventing a license violation.
@@ -69,6 +71,7 @@ All of these must be installed before installing this mod, in this order:
 ** Again USS Sovereign for helping me notice NormalWarp and EnhancedWarp were All Rights Reserved by USS Frontier and could not be modified directly without violating such license, helping me from suffering a legal headache.
 * USS Frontier for GalaxyCharts.
 * Defiant for some scripts that drew inspiration (or were practically used as a base), particularly the original SubModels.
+* jayce AKA Resistance Is Futile for the original BorgAttack.py which I patched to support GC and no GC without issue.
 * WileyCoyote (michaelwileyart@gmail.com) for the Crossfield Phaser sounds (already mentioned of the Crossfield's separate readme).
 * That Guy... Brian (ThatGuyBrian, trekker12@hotmail.com) - for Model Conversion of the original Protostar and Crossfield models (already mentioned on the Crossfield's separate readme), the Crossfield original HP (already mentioned on the Crossfield's separate readme), and for telling me to install Nifskope, that tool has proven to be very useful to me.
 ** Prodigy model extracted from Star Trek Prodigy: Supernova. https://drive.google.com/file/d/1BMaT2_i5KBIqZ5Am1Hr4vK-81yZQ9GsE/view

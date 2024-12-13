@@ -106,4 +106,4 @@ oHoppingTorp = HoppingTorpedo("Hopping Torpedo")
 # Should be commented out on release...
 # oHoppingTorp.AddTorpedo("Tactical.Projectiles.PhasedPlasma")
 
-print "Hopping Torp ready"
+#print "Hopping Torp ready"

@@ -521,7 +521,7 @@ BorgDiamond = App.ShipProperty_Create("Borg Diamond")
 
 BorgDiamond.SetGenus(1)
 BorgDiamond.SetSpecies(720)
-BorgDiamond.SetMass(200.000000)
+BorgDiamond.SetMass(20000.000000)
 BorgDiamond.SetRotationalInertia(8000.000000)
 BorgDiamond.SetShipName("BorgDiamond")
 BorgDiamond.SetModelFilename("data/Models/Ships/BorgDiamond.nif")
