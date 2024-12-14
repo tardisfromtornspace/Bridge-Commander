@@ -15,7 +15,12 @@ MODINFO = { "Author": "Unknown (original), \"jayce\" (Final), Alex SL Gato (smal
 #
 #################################################################################################################
 #
-
+import App
+from bcdebug import debug
+import Foundation
+import nt
+import string
+import traceback
 ##########################################################################
 ## Borg AI Final - 10 July 2008                                         ##
 ## By: jayce AKA Resistance Is Futile                                   ##
@@ -459,12 +464,6 @@ def BuilderCreate14(pShip, pPowerManagement):
 #################################################################################################################
 ##########	OVERRIDES
 #################################################################################################################
-import App
-from bcdebug import debug
-import Foundation
-import nt
-import string
-import traceback
 
 milkyWay = "Custom.Autoload.LoadGalaxyCharts"
 resistanceIsFutile = "AI.Compound.BorgAttack"
