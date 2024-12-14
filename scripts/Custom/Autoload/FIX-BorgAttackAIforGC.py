@@ -2,7 +2,7 @@
 # 14th December 2024
 # The 'Borg AI Final' was one AI jayce (aka Resistance Is Futile) modified at least until 2008 from an unknown author for Borg vessels, bringing a lot of functionality to those vessels. Inside the BorgAttack file and its readme it explicity says **Do Not Modify The Borg AI Final*
 # However, this AI presents one weird glitch when combined with GalaxyCharts which makes the game crash immediately if a ship travelled two systems while one Borg vessel was chasing them.
-# THIS IS A PATCH to fix this conflict, a patch which qualifies under fair use with original dependency, with the purpose to keep the original file unmodified.
+# THIS IS an Autoload PATCH to fix this conflict, a patch which qualifies under fair use with original dependency, with the purpose to keep the original file unmodified.
 # The only areas I MIGHT even declare as even slightly mine (Alex SL Gato's) are the areas labeled as "OVERRIDES", two lines "EXTRA ADDED" on CreateAI, the changes done to "MODINFO" if just to keep track of any changes done with a glance for other modders, as well as the changes done to BuilderCreate3 and BuilderCreate4 with the help of the AIEditor Tool
 #
 #################################################################################################################
