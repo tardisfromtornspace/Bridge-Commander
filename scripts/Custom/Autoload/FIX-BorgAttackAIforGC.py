@@ -28,7 +28,7 @@ import traceback
 #################################################################################################################
 
 CURRENTVERSION = "20241214"
-FORCEUPDATE = 1 # If 1, this value will force a pre-existing scripts/AI/Compound/BorgAttack to be overriden 
+FORCEUPDATE = 0 # If 1, this value will force a pre-existing scripts/AI/Compound/BorgAttack to be overriden 
 milkyWay = "Custom.Autoload.LoadGalaxyCharts"
 resistanceIsFutile = "AI.Compound.BorgAttack"
 sResistanceIsFutile = "scripts\\AI\\Compound\\BorgAttack.py"
@@ -778,5 +778,3 @@ if myContinueU == -1:
 		print "FIX-BorgAttackAIforGC has overriden the preexisting BorgAttack AI. If you don't want so, please remove scipts/Custom/Autoload/FIX-BorgAttackAIforGC or set FORCEUPDATE to 0. Please note that FORCEUPDATE automatically sets to 1 if your BorgAttack AI was already broken"
 		BorgAttack.CreateAI = CreateAI
 		BorgAttack.VERSION = CURRENTVERSION
-	else:
-		print "MEHHHHHHHHHHHHHH"
