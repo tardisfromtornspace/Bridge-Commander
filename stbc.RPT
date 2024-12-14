@@ -7044,3 +7044,164 @@ Call stack:
 Address   Frame
 006DA326  0019FCA0  0001:002D9326 C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
 
+//=====================================================
+Current Time: Sat Dec 14 16:21:28 2024
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  0059D72C 01:0019C72C C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+Registers:
+EAX:00000000
+EBX:27C520D8
+ECX:00000000
+EDX:02BB7978
+ESI:00000000
+EDI:2E32C234
+CS:EIP:0023:0059D72C
+SS:ESP:002B:0019F87C  EBP:00000014
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010202
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+0059D72C  0019F898  0001:0019C72C C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+//=====================================================
+Current Time: Sat Dec 14 16:30:23 2024
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  0059D72C 01:0019C72C C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+Registers:
+EAX:00000000
+EBX:27C42AEC
+ECX:00000000
+EDX:02B37978
+ESI:00000000
+EDI:2E2DAEAC
+CS:EIP:0023:0059D72C
+SS:ESP:002B:0019F87C  EBP:00000014
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010202
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+0059D72C  0019F898  0001:0019C72C C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+//=====================================================
+Current Time: Sat Dec 14 16:31:26 2024
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  0059D72C 01:0019C72C C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+Registers:
+EAX:00000000
+EBX:27CA96DC
+ECX:00000000
+EDX:02BB7B98
+ESI:00000000
+EDI:2E38D4F4
+CS:EIP:0023:0059D72C
+SS:ESP:002B:0019F87C  EBP:00000014
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010202
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+0059D72C  0019F898  0001:0019C72C C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+//=====================================================
+Current Time: Sat Dec 14 16:32:31 2024
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  0059D72C 01:0019C72C C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+Registers:
+EAX:00000000
+EBX:29BEA610
+ECX:00000000
+EDX:02AE7978
+ESI:00000000
+EDI:306CEC6C
+CS:EIP:0023:0059D72C
+SS:ESP:002B:0019F87C  EBP:00000014
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010202
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+0059D72C  0019F888  0001:0019C72C C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+//=====================================================
+Current Time: Sat Dec 14 16:33:57 2024
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  0059D72C 01:0019C72C C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+Registers:
+EAX:00000000
+EBX:27C8BC08
+ECX:00000000
+EDX:02C37B98
+ESI:00000000
+EDI:2E372A34
+CS:EIP:0023:0059D72C
+SS:ESP:002B:0019F87C  EBP:00000014
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010202
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+0059D72C  0019F898  0001:0019C72C C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+//=====================================================
+Current Time: Sat Dec 14 19:57:48 2024
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  005EE328 01:001ED328 C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+Registers:
+EAX:0019F72C
+EBX:2E2DBA74
+ECX:00000000
+EDX:0095DD20
+ESI:2E2DBA74
+EDI:005EE2A0
+CS:EIP:0023:005EE328
+SS:ESP:002B:0019F72C  EBP:00000000
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010212
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+
+//=====================================================
+Current Time: Sat Dec 14 20:29:03 2024
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  00717874 01:00316874 C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+Registers:
+EAX:00000000
+EBX:00000000
+ECX:00000000
+EDX:00000008
+ESI:00400000
+EDI:00000400
+CS:EIP:0023:00717874
+SS:ESP:002B:0019F634  EBP:00000002
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+Couldn't load module
+

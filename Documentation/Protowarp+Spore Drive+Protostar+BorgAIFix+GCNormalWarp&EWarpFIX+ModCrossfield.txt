@@ -1,4 +1,6 @@
 == Changelog ==
+0.4.7 - Updates:
+  * Updated scripts/Custom/Autoload/FIX-GCNormalWarpAndEnhancedWarp.py to version 20241214 to reduce as much as possible any legal issues.
 0.4.6 - Updates:
   * Created scripts/Custom/Autoload/FIX-GCNormalWarpAndEnhancedWarp.py version 20241213 that fixes a pre-existing glitch that caused a crash-to-desktop for KM's BorgAttack AI during GalaxyCharts travels.
 0.4.5 - Updates:
@@ -52,7 +54,9 @@ This mod adds the following updates and fixes:
 ** Now they support the ship stretching when it goes in an out of warp!
 ** The camera no longer gets a stroke when a ship is warping in or out, switching to several places and then having the warp flash on our face! Now they behave properly!
 ** Small allowance for max warp 10.0 as some vessels might allow that speed factor with regular warp methods.
-
+* IMPORTANT: PATCH For BorgAttack AI version "Borg AI Final - 10 July 2008", present in KM 2011.10, while using GalaxyCharts with the Warp AI fix (also present in KM), so when GC is OFF, it uses the totally unmodified BorgAttack, but while GC is on, it can use BorgAttack Warp sections without causing a crash-to-desktop after a vessel with BorgAttack follows the player after two Warp jumps.
+** This PATCH is on Autoload, and it is the only patch done on this mod to this AI, done under fair use and falling under the same license as the BorgAttack file, and does not release a modified BorgAttack file named BorgAttack.py, so in case of any problems are found with this patch, the file "FIX-BorgAttackAIforGC.py" can be safely removed without causing any changes to the BorgAttack.pyc your install may have.
+** scripts/AI/Compound with BasicAttack.py, BasicAtatck.pyc and BorgAttack.pyc are also added here to follow the Borg AI doc (doc/Borg AI/BORG AI FINAL - README.txt) as best as possible while distributing this fix.
 All of the technologies have their own detailed instruction manuals inside the files to ensure people can use those techs easily.
 
 == Dependencies ==
@@ -62,6 +66,13 @@ All of these must be installed before installing this mod, in this order:
 * All the dependencies for this mod + the mod: https://www.gamefront.com/games/bridge-commander/file/stbc-babylon-5-mod
 ** From here, HullPolarizer is the most used, but also the file "FIX-FoundationTech20050703ShipInstanceDetach.py", which solves problems related with iterating lTechs when detaching and removing from such FoundationTech list.
 * This mod, for the ST:Discovery original Crossfield class: https://www.gamefront.com/games/bridge-commander/file/crossfield-class
+
+IMPORTANT INSTALL INSTRUCTIONS: Do not copy-paste this mod's scripts/AI folder right away, first move this mod's scripts/AI folder somewhere else. You only have to install it if the following steps require so. The provided AI scripts scripts/AI/Compound/BasicAttack and BorgAttack scripts can also be found at BCC KM 2011.10 download site (https://www.bc-central.net/forums/index.php?action=downloads;sa=view;down=33).
+
+1. Check that on scripts/AI/Compound folder you already have a BasicAttack.py, BasicAttack.pyc, BorgAttack.py and BorgAttack.pyc, and BorgAttack.py contents on the first lines have a banner saying 'Borg AI Final - 10 July 2008' 'By: jayce AKA Resistance Is Futile' and then more text explaining how it is the latest version and thus that file should not be modified. If that does not appear, you will have to install the AI provided (something which, at least on a normal KM install 2011.10, unless modified, should not happen since this BorgAttack AI is technically added as a given).
+
+2. Enter your KM game and activate automatic test mode (or your way to view the game's console), then install the rest of the folders from this mod normally. The console will send a message about "FIX-BorgAttackAIforGC", if it says "Your install's BorgAttack AI is not the final version to patch. Skipping...", "Missing BorgAttack AI to patch. Skipping..." or "FIX-BorgAttackAIforGC: just found out that your BorgAttack AI does not have a CreateAI function... this will be patched." that means you don't have the correct BorgAttack script and then you WILL need to install the AI too, but not before removing BorgAttack.py and BorgAttack.pyc from your install's scripts/AI/Compund folder, and verifying the scripts/AI/Compund/BasicAttack.py you have is the same as AI/Compund/BasicAttack.py this mod has (who knows, you could have modified your BasicAttack.py and still be a modified version of a valid one - it would not be the first time I've seen modified BasicAttack.py that work with the latest BorgAttack AI but which were modified to warp faster or not miss torpedoes...)
+** The provided AI scripts scripts/AI/Compound/BasicAttack and BorgAttack scripts can also be found at BCC KM 2011.10 download site https://www.bc-central.net/forums/index.php?action=downloads;sa=view;down=33
 
 == Credits ==
 * Everyone involved in Foundation - without you this would have been a real pain to do (please read the separate Foundation.txt license) - Banbury, Dasher42, DigitalFriend, MLeo, Nanobyte and Sleight42, among others.
@@ -100,5 +111,15 @@ All sections based on USS Sovereign's Slipstream module fall under All Rights Re
 ---- Alex SL Gato condition: does not mind as long as USS Sovereign and he are being credited and both Mario and himself's conditions are covered.
 
 Those sections are left clear with two text banners, from "BEGINNING OF USS SOVEREIGN'S LIMITED PERMISSION AREA" to "END OF USS SOVEREIGN'S LIMITED PERMISSION AREA", to ensure people do not accidentally copy those sections.
+
+Fulfilling the BorgAttack conditions as best as possible (the following goes for BasicAttack and BorgAttack only):
+
+*NOTE* This AI can replace the current Borg AI found in use in KM1.0
+
+The python files included have been created by jayce and some assistance from Defiant with the exception of the BasicAttack AI.
+The original author or modifier of this file is unknown for me (jayce) to give the proper credits. Aparently, it is necessary in order to use the BorgAttack AI in Quickbattle. It was obtain undoubtedly in one of the very many downloads of Borg vessels that I (jayce) have acquired over the the years, with most new downloads replacing the older one. The BasicAttack.py AI file was not altered in any way, so if the author sees their handywork, please contact me and claim it.
+
+If you distribute this AI with another mod, make every attempt to list this AI version clearly in your readme file so that people can know that it's safe to override if they want to. If you distribute this AI with another mod, it must contain the entire AI and not just parts of it. Meaning if you distribute the Borg AI, it needs to contain both the BorgAttack.pyc and the BasicAttack.py together with the mod. I absolutely do not want to see any BorgAttack.py files from this AI distributed with any other mods. Period. The last thing I want to hear is how someone's AI is not working right because of an altered (.py) file. There is a reason why this AI is being released in (.pyc) form.
+
 
 == Bugs ==

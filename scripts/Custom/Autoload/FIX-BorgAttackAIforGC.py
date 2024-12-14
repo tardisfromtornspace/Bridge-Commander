@@ -3,6 +3,7 @@
 # The 'Borg AI Final' was one AI jayce (aka Resistance Is Futile) modified at least until 2008 from an unknown author for Borg vessels, bringing a lot of functionality to those vessels. Inside the BorgAttack file and its readme it explicity says **Do Not Modify The Borg AI Final*
 # However, this AI presents one weird glitch when combined with GalaxyCharts which makes the game crash immediately if a ship travelled two systems while one Borg vessel was chasing them.
 # THIS IS an Autoload PATCH to fix this conflict, a patch which qualifies under fair use with original dependency, with the purpose to keep the original file unmodified.
+# This patch works partially through Foundation's OverrideDef System and through wrappers and it is tied to GalaxyCharts's mutator being enabled, meaning that a mod without GC or with GC being disabled will make absolutely NO difference on the BorgAttack AI.
 # The only areas I MIGHT even declare as even slightly mine (Alex SL Gato's) are the areas labeled as "OVERRIDES", two lines "EXTRA ADDED" on CreateAI, the changes done to "MODINFO" if just to keep track of any changes done with a glance for other modders, as well as the changes done to BuilderCreate3 and BuilderCreate4 with the help of the AIEditor Tool
 #
 #################################################################################################################
@@ -21,6 +22,317 @@ import Foundation
 import nt
 import string
 import traceback
+
+#################################################################################################################
+##########	OVERRIDES
+#################################################################################################################
+
+CURRENTVERSION = "20241214"
+FORCEUPDATE = 1 # If 1, this value will force a pre-existing scripts/AI/Compound/BorgAttack to be overriden 
+milkyWay = "Custom.Autoload.LoadGalaxyCharts"
+resistanceIsFutile = "AI.Compound.BorgAttack"
+sResistanceIsFutile = "scripts\\AI\\Compound\\BorgAttack.py"
+
+myContinueS = 0
+myContinueR = 0
+myContinueU = 0
+mode = None
+pear = None
+
+CreateAI = None
+
+attributesBorgAttackHas = {
+	#First these which we have exact values
+	'__doc__': "None",
+	'__name__': '\'AI.Compound.BorgAttack\'',
+	'__file__': "'.\\\\Scripts\\\\AI\\\\Compound\\\\BorgAttack.pyc'",
+	'App': "<module 'App' from '.\Scripts\App.pyc'>",
+	# Then those we must ignore
+	'__builtins__': {"best to ignore": "yes"},
+	
+	# Then those which indicate they are a function
+	'debug': "<function debug at ",
+	#And finally those which are called on the function proper
+	'CreateAI': "<function CreateAI at ",
+	'BuilderCreate1': "<function BuilderCreate1 at ",
+	'BuilderCreate2': "<function BuilderCreate2 at ",
+	'BuilderCreate3': "<function BuilderCreate3 at ",
+	'BuilderCreate4': "<function BuilderCreate4 at ",
+	'BuilderCreate5': "<function BuilderCreate5 at ",
+	'BuilderCreate6': "<function BuilderCreate6 at ",
+	'BuilderCreate7': "<function BuilderCreate7 at ",
+	'BuilderCreate8': "<function BuilderCreate8 at ",
+	'BuilderCreate9': "<function BuilderCreate9 at ",
+	'BuilderCreate10': "<function BuilderCreate10 at ",
+	'BuilderCreate11': "<function BuilderCreate11 at ",
+	'BuilderCreate12': "<function BuilderCreate12 at ",
+	'BuilderCreate13': "<function BuilderCreate13 at ",
+	'BuilderCreate14': "<function BuilderCreate14 at ",
+}
+
+attributesThatBorgAttackHas = ["CreateAI", "BuilderCreate1", "BuilderCreate2", "BuilderCreate3", "BuilderCreate4", "BuilderCreate5", "BuilderCreate6", "BuilderCreate7", "BuilderCreate8", "BuilderCreate9", "BuilderCreate10", "BuilderCreate11", "BuilderCreate12", "BuilderCreate13", "BuilderCreate14"]
+def ModuleHasBorgAttackFinal2008Attributes(pear):
+	debug(__name__ + ", ModuleHasBorgAttackFinal2008Attributes")
+	hasAllAttributes = 0
+	if pear == None:
+		return hasAllAttributes
+
+	pearDict = pear.__dict__
+	if not pearDict:
+		return hasAllAttributes
+
+	pearKeys = pearDict.keys()
+	
+	missingAttribs = 0
+	for attrib in attributesBorgAttackHas.keys():
+		if not attrib in pearKeys:
+			missingAttribs = missingAttribs + 1
+			if attrib == 'CreateAI': # This means that whatever version of BorgAttack AI exists, it is broken
+				print "FIX-BorgAttackAIforGC: just found out that your BorgAttack AI does not have a CreateAI function... this will be patched."
+				FORCEUPDATE = 1
+	
+	if missingAttribs > 0:
+		return hasAllAttributes
+
+	validAttribs = 0
+	invalidAttribs = 0
+	numberAttribs = 0
+	for key in pearDict.keys():
+		#try:
+			numberAttribs = numberAttribs + 1
+			if key == '__builtins__':
+				if type(pearDict[key]) == type({}):
+					validAttribs = validAttribs + 1
+				else:
+					invalidAttribs = invalidAttribs + 1
+				continue
+			if not key in attributesBorgAttackHas.keys():
+				if key == "VERSION":
+					if hasattr(pear, "VERSION") and pear.VERSION >= CURRENTVERSION:
+						validAttribs = validAttribs + 1
+					else:
+						invalidAttribs = invalidAttribs + 1
+				else:
+					invalidAttribs = invalidAttribs + 1
+			else:
+				myPartialRepr = attributesBorgAttackHas[key]
+				myRepr = repr(pearDict[key])
+				position = string.find(myRepr, myPartialRepr)
+				if position != 0: # Either not found, or whatever was found is outside
+					invalidAttribs = invalidAttribs + 1
+				else:
+					validAttribs = validAttribs + 1
+		#except:
+		#	print "FIX-BorgAttackAIforGC: Error while calling ModuleHasBorgAttackFinal2008Attributes:"
+		#	traceback.print_exc()
+
+	hasAllAttributes = (validAttribs == numberAttribs and invalidAttribs == 0)
+	return hasAllAttributes
+
+try:
+	banana = __import__(milkyWay, globals(), locals(), ["mode"])
+	myContinueS = 1
+except:
+	myContinueS = 0
+	print "FIX-BorgAttackAIforGC: Missing scripts.", milkyWay
+
+if myContinueS == 1:
+	if hasattr(banana, "mode"):
+		mode = banana.mode
+		try:
+			pear = __import__(resistanceIsFutile, globals(), locals(), ["CreateAI", "BuilderCreate3", "BuilderCreate4"])
+			myContinueR = 1
+		except:
+			myContinueR = 0
+			print "FIX-BorgAttackAIforGC: Missing scripts.", resistanceIsFutile
+
+		if myContinueR == 1:
+			if hasattr(banana, "MethodOverrideDef"):
+
+				if ModuleHasBorgAttackFinal2008Attributes(pear): # This is to ensure your Borg AI is the final BorgAttack version, so we don't accidentally break your AI with this
+					myContinueU = 1
+					# This is the code I used before, it is safer since it updated yes or yes the BorgAttack AI someone had to the BorgAttack Final 2008 version by jayce, but it could possibly send us to a legal issue
+					# Since I had to manually create a BorgAttack.py copy
+					#Foundation.OverrideDef('zzzGCBorgCreate_AI', 'AI.Compound.BorgAttack.CreateAI', __name__ +'.CreateAI', dict = { 'modes': [ mode ] } )
+					#Foundation.OverrideDef('zzzGCBorgBC3_AI', 'AI.Compound.BorgAttack.BuilderCreate3', __name__ +'.BuilderCreate3', dict = { 'modes': [ mode ] } )
+					#Foundation.OverrideDef('zzzGCBorgBC4_AI', 'AI.Compound.BorgAttack.BuilderCreate4', __name__ +'.BuilderCreate4', dict = { 'modes': [ mode ] } )
+				else:
+					myContinueU = -1
+					print "FIX-BorgAttackAIforGC: Your install's BorgAttack AI is not the final version to patch. Updating Instead"
+
+		else:
+			print "FIX-BorgAttackAIforGC: Missing BorgAttack AI to patch. Skipping..."
+	else:
+		print "FIX-BorgAttackAIforGC: Error, Missing mode for LoadGalaxyCharts"
+else:
+	print "FIX-BorgAttackAIforGC: Skipping..."
+
+#################################################################################################################
+
+oldBuilderCreate3 = None
+oldBuilderCreate4 = None
+oldCreateAI = None
+
+#These two functions below are here just as a possible backup in case somebody grabbed an outdated version of BorgAttack.py
+	######### AI Builder Begin #########
+def BuilderCreate3Old(pShip, sInitialTarget, dKeywords={}):
+	########## AI Builder End ##########
+	#########################################
+	# Creating PlainAI FollowThroughWarp at (313, 399)
+	debug(__name__ + ", BuilderCreate3")
+	pFollowThroughWarp = App.PlainAI_Create(pShip, "FollowThroughWarp")
+	pFollowThroughWarp.SetScriptModule("FollowThroughWarp")
+	pFollowThroughWarp.SetInterruptable(1)
+	pScript = pFollowThroughWarp.GetScriptInstance()
+	pScript.SetFollowObjectName(sInitialTarget)
+	# Done creating PlainAI FollowThroughWarp
+	#########################################
+	######### AI Builder Begin #########
+	return pFollowThroughWarp  # Builder Return
+	########## AI Builder End ##########
+
+
+	######### AI Builder Begin #########
+def BuilderCreate4Old(pShip, pFollowThroughWarp, sInitialTarget, dKeywords={}):
+	########## AI Builder End ##########
+
+	#########################################
+	# Creating ConditionalAI TargetWarpingAway at (313, 365)
+	## Conditions:
+	#### Condition Warp
+	debug(__name__ + ", BuilderCreate4")
+	pWarp = App.ConditionScript_Create("Conditions.ConditionWarpingToSet", "ConditionWarpingToSet", sInitialTarget)
+	## Evaluation function:
+	def EvalFunc(bWarp):
+		debug(__name__ + ", EvalFunc")
+		ACTIVE = App.ArtificialIntelligence.US_ACTIVE
+		DORMANT = App.ArtificialIntelligence.US_DORMANT
+		DONE = App.ArtificialIntelligence.US_DONE
+		if bWarp:
+			return ACTIVE
+		return DONE
+	## The ConditionalAI:
+	pTargetWarpingAway = App.ConditionalAI_Create(pShip, "TargetWarpingAway")
+	pTargetWarpingAway.SetInterruptable(0)
+	pTargetWarpingAway.SetContainedAI(pFollowThroughWarp)
+	pTargetWarpingAway.AddCondition(pWarp)
+	pTargetWarpingAway.SetEvaluationFunction(EvalFunc)
+	# Done creating ConditionalAI TargetWarpingAway
+	#########################################
+	######### AI Builder Begin #########
+	return pTargetWarpingAway  # Builder Return
+	########## AI Builder End ##########
+
+if myContinueU == 1: # If all goes well and the script is correct, then we just need to do this, else we default to the functions in what would have been correct
+	from AI.Compound import BorgAttack
+	oldBuilderCreate3 = BorgAttack.BuilderCreate3
+	oldBuilderCreate4 = BorgAttack.BuilderCreate4
+	oldCreateAI = BorgAttack.CreateAI
+else:
+	oldBuilderCreate3 = BuilderCreate3Old
+	oldBuilderCreate4 = BuilderCreate4Old	
+
+def BuilderCreate3(pShip, sInitialTarget, dKeywords={}): # Call to original
+	debug(__name__ + ", BuilderCreate3")
+	if mode == None or not (hasattr(mode, "IsEnabled") and mode.IsEnabled()):
+		return oldBuilderCreate3(pShip, sInitialTarget)
+	else:
+		return BuilderCreate3GC(pShip, sInitialTarget, dKeywords)
+
+def BuilderCreate3GC(pShip, sInitialTarget, dKeywords={}):  # Call to modified during GC
+	#########################################
+	# Creating CompoundAI FollowThroughWarp at (313, 399)
+	debug(__name__ + ", BuilderCreate3GC")
+	import AI.Compound.FollowThroughWarp
+	pFollowThroughWarp = AI.Compound.FollowThroughWarp.CreateAI(pShip, sInitialTarget, Keywords = dKeywords, FollowToSB12 = 1, FollowThroughMissions = 1)
+	# Done creating CompoundAI FollowThroughWarp
+	#########################################
+
+	return pFollowThroughWarp  # Builder Return
+
+def BuilderCreate4(pShip, pFollowThroughWarp, sInitialTarget, dKeywords={}): # Call to original
+	debug(__name__ + ", BuilderCreate4")
+	if mode == None or not (hasattr(mode, "IsEnabled") and mode.IsEnabled()):
+		return oldBuilderCreate4(pShip, pFollowThroughWarp, sInitialTarget)
+	else:
+		return BuilderCreate4GC(pShip, pFollowThroughWarp, sInitialTarget, dKeywords)
+
+def BuilderCreate4GC(pShip, pFollowThroughWarp, sInitialTarget, dKeywords={}):  # Call to modified during GC
+	#########################################
+	# Creating ConditionalAI TargetWarpingAway at (313, 365)
+	## Conditions:
+	#### Condition FlagSet
+	debug(__name__ + ", BuilderCreate4GC")
+	pFlagSet = App.ConditionScript_Create("Conditions.ConditionFlagSet", "ConditionFlagSet", "FollowTargetThroughWarp", dKeywords)
+	#### Condition WarpingToSet
+	pWarpingToSet = App.ConditionScript_Create("Conditions.ConditionWarpingToSet", "ConditionWarpingToSet", sInitialTarget)
+	## Evaluation function:
+	def EvalFunc(bFlagSet, bWarpingToSet):
+		ACTIVE = App.ArtificialIntelligence.US_ACTIVE
+		DORMANT = App.ArtificialIntelligence.US_DORMANT
+		DONE = App.ArtificialIntelligence.US_DONE
+		if bFlagSet and  bWarpingToSet:
+			return ACTIVE
+		return DONE
+	## The ConditionalAI:
+	pTargetWarpingAway = App.ConditionalAI_Create(pShip, "TargetWarpingAway")
+	pTargetWarpingAway.SetInterruptable(0)
+	pTargetWarpingAway.SetContainedAI(pFollowThroughWarp)
+	pTargetWarpingAway.AddCondition(pFlagSet)
+	pTargetWarpingAway.AddCondition(pWarpingToSet)
+	pTargetWarpingAway.SetEvaluationFunction(EvalFunc)
+	# Done creating ConditionalAI TargetWarpingAway
+	#########################################
+
+	return pTargetWarpingAway  # Builder Return
+
+def NewCreateAI(pShip, *lpTargets, **dKeywords):
+	debug(__name__ + ", NewCreateAI")
+	pBuilderAI = apply(oldCreateAI, (pShip, ) + lpTargets, dKeywords)
+	if pBuilderAI:
+		if not mode == None and hasattr(mode, "IsEnabled") and mode.IsEnabled():
+			pBuilderAI.AddDependencyObject("FollowThroughWarp", "dKeywords", dKeywords)           #### TAGGED 2 EXTRA LINE ADDED
+			pBuilderAI.AddDependencyObject("TargetWarpingAway", "dKeywords", dKeywords)           #### TAGGED 1 EXTRA LINE ADDED
+		return pBuilderAI
+	else:
+		print "FIX-BorgAttackAIforGC: ERROR WHILE Creating default BorgAttack AI"
+		return oldCreateAI(pShip)
+
+def CreateAIGC(pShip, *lpTargets, **dKeywords):
+	debug(__name__ + ", CreateAIGC")
+	pBuilderAI = apply(oldCreateAI, (pShip, ) + lpTargets, dKeywords)
+	if pBuilderAI:
+		if not mode == None and hasattr(mode, "IsEnabled") and mode.IsEnabled():
+			pBuilderAI.AddDependencyObject("FollowThroughWarp", "dKeywords", dKeywords)           #### TAGGED 2 EXTRA LINE ADDED
+			pBuilderAI.AddDependencyObject("TargetWarpingAway", "dKeywords", dKeywords)           #### TAGGED 1 EXTRA LINE ADDED
+		return pBuilderAI
+	else:
+		print "FIX-BorgAttackAIforGC: ERROR WHILE Creating default BorgAttack AI"
+		return oldCreateAI(pShip)
+
+# I could totally just make it link to CreateAIGC and done, but in order not to get legal problems...
+
+if myContinueU == 1:
+	BorgAttack.BuilderCreate3 = BuilderCreate3
+	#Foundation.OverrideDef('zzzGCBorgBC3_AI', __name__ +'.BuilderCreate3', __name__ +'.BuilderCreate3GC', dict = { 'modes': [ mode ] } )
+
+	BorgAttack.BuilderCreate4 = BuilderCreate4
+	#Foundation.OverrideDef('zzzGCBorgBC4_AI', __name__ +'.BuilderCreate4', __name__ +'.BuilderCreate4GC', dict = { 'modes': [ mode ] } )
+
+	BorgAttack.CreateAI = NewCreateAI
+	#Foundation.OverrideDef('zzzGCBorgCreate_AI', __name__ +'.NewCreateAI', __name__ +'.CreateAIGC', dict = { 'modes': [ mode ] } )
+
+	# Adding Versioning because it is a real hadache to verify that the script we overrode was in fact the BorgAttack.pyc with the Borg Attack AI Final '10 July 2008' when according to its readme it should not have a .py stored there and it is just a .pyc without any actual unique attributes to extract info from
+
+	BorgAttack.VERSION = CURRENTVERSION
+	print "FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC."
+
+#################################################################################################################
+##########	END OF OVERRIDES
+#################################################################################################################
+
+# And now, this below is just in case our script detected something extremely wrong with the AI - just sets the BorgAttack to the final version by jayce - setting it to the final version if the BorgAttack script on the install is not the final version should not be an issue, shouldn't it?
+
 ##########################################################################
 ## Borg AI Final - 10 July 2008                                         ##
 ## By: jayce AKA Resistance Is Futile                                   ##
@@ -157,93 +469,91 @@ def BuilderCreate2(pShip, pAttackFriends):
 	######### AI Builder Begin #########
 	return p2sec_InAttackPowerReserve  # Builder Return
 	########## AI Builder End ##########
-	######### AI Builder Begin #########
-def BuilderCreate3(pShip, sInitialTarget, dKeywords={}):
-	########## AI Builder End ##########
 
-	#########################################
-	# Creating CompoundAI FollowThroughWarp at (313, 399)
-	debug(__name__ + ", BuilderCreate3")
-	import AI.Compound.FollowThroughWarp
-	pFollowThroughWarp = AI.Compound.FollowThroughWarp.CreateAI(pShip, sInitialTarget, Keywords = dKeywords, FollowToSB12 = 1, FollowThroughMissions = 1)
-	# Done creating CompoundAI FollowThroughWarp
-	#########################################
-	# BELOW ORIGINAL, ABOVE MODIFIED
+#	######### AI Builder Begin #########
+#def BuilderCreate3(pShip, sInitialTarget, dKeywords={}):
+#	########## AI Builder End ##########
+#
 #	#########################################
-#	# Creating PlainAI FollowThroughWarp at (313, 399)
+#	# Creating CompoundAI FollowThroughWarp at (313, 399)
 #	debug(__name__ + ", BuilderCreate3")
-#	pFollowThroughWarp = App.PlainAI_Create(pShip, "FollowThroughWarp")
-#	pFollowThroughWarp.SetScriptModule("FollowThroughWarp")
-#	pFollowThroughWarp.SetInterruptable(1)
-#	pScript = pFollowThroughWarp.GetScriptInstance()
-#	pScript.SetFollowObjectName(sInitialTarget)
-#	# Done creating PlainAI FollowThroughWarp
+#	import AI.Compound.FollowThroughWarp
+#	pFollowThroughWarp = AI.Compound.FollowThroughWarp.CreateAI(pShip, sInitialTarget, Keywords = dKeywords, FollowToSB12 = 1, FollowThroughMissions = 1)
+#	# Done creating CompoundAI FollowThroughWarp
 #	#########################################
-
-	######### AI Builder Begin #########
-	return pFollowThroughWarp  # Builder Return
-	########## AI Builder End ##########
-	######### AI Builder Begin #########
-def BuilderCreate4(pShip, pFollowThroughWarp, sInitialTarget, dKeywords={}):
-	########## AI Builder End ##########
-
-	#########################################
-	# Creating ConditionalAI TargetWarpingAway at (313, 365)
-	## Conditions:
-	#### Condition FlagSet
-	debug(__name__ + ", BuilderCreate4")
-	pFlagSet = App.ConditionScript_Create("Conditions.ConditionFlagSet", "ConditionFlagSet", "FollowTargetThroughWarp", dKeywords)
-	#### Condition WarpingToSet
-	pWarpingToSet = App.ConditionScript_Create("Conditions.ConditionWarpingToSet", "ConditionWarpingToSet", sInitialTarget)
-	## Evaluation function:
-	def EvalFunc(bFlagSet, bWarpingToSet):
-		ACTIVE = App.ArtificialIntelligence.US_ACTIVE
-		DORMANT = App.ArtificialIntelligence.US_DORMANT
-		DONE = App.ArtificialIntelligence.US_DONE
-		if bFlagSet and  bWarpingToSet:
-			return ACTIVE
-		return DONE
-	## The ConditionalAI:
-	pTargetWarpingAway = App.ConditionalAI_Create(pShip, "TargetWarpingAway")
-	pTargetWarpingAway.SetInterruptable(0)
-	pTargetWarpingAway.SetContainedAI(pFollowThroughWarp)
-	pTargetWarpingAway.AddCondition(pFlagSet)
-	pTargetWarpingAway.AddCondition(pWarpingToSet)
-	pTargetWarpingAway.SetEvaluationFunction(EvalFunc)
-	# Done creating ConditionalAI TargetWarpingAway
-	#########################################
-	# BELOW ORIGINAL, ABOVE MODIFIED
+#	# BELOW ORIGINAL, ABOVE MODIFIED
+##	#########################################
+##	# Creating PlainAI FollowThroughWarp at (313, 399)
+##	debug(__name__ + ", BuilderCreate3")
+##	pFollowThroughWarp = App.PlainAI_Create(pShip, "FollowThroughWarp")
+##	pFollowThroughWarp.SetScriptModule("FollowThroughWarp")
+##	pFollowThroughWarp.SetInterruptable(1)
+##	pScript = pFollowThroughWarp.GetScriptInstance()
+##	pScript.SetFollowObjectName(sInitialTarget)
+##	# Done creating PlainAI FollowThroughWarp
+##	#########################################
+#
+#	######### AI Builder Begin #########
+#	return pFollowThroughWarp  # Builder Return
+#	########## AI Builder End ##########
+#	######### AI Builder Begin #########
+#def BuilderCreate4(pShip, pFollowThroughWarp, sInitialTarget, dKeywords={}):
+#	########## AI Builder End ##########
+#
 #	#########################################
 #	# Creating ConditionalAI TargetWarpingAway at (313, 365)
 #	## Conditions:
-#	#### Condition Warp
+#	#### Condition FlagSet
 #	debug(__name__ + ", BuilderCreate4")
-#	pWarp = App.ConditionScript_Create("Conditions.ConditionWarpingToSet", "ConditionWarpingToSet", sInitialTarget)
+#	pFlagSet = App.ConditionScript_Create("Conditions.ConditionFlagSet", "ConditionFlagSet", "FollowTargetThroughWarp", dKeywords)
+#	#### Condition WarpingToSet
+#	pWarpingToSet = App.ConditionScript_Create("Conditions.ConditionWarpingToSet", "ConditionWarpingToSet", sInitialTarget)
 #	## Evaluation function:
-#	def EvalFunc(bWarp):
-#		debug(__name__ + ", EvalFunc")
+#	def EvalFunc(bFlagSet, bWarpingToSet):
 #		ACTIVE = App.ArtificialIntelligence.US_ACTIVE
 #		DORMANT = App.ArtificialIntelligence.US_DORMANT
 #		DONE = App.ArtificialIntelligence.US_DONE
-#		if bWarp:
+#		if bFlagSet and  bWarpingToSet:
 #			return ACTIVE
 #		return DONE
 #	## The ConditionalAI:
 #	pTargetWarpingAway = App.ConditionalAI_Create(pShip, "TargetWarpingAway")
 #	pTargetWarpingAway.SetInterruptable(0)
 #	pTargetWarpingAway.SetContainedAI(pFollowThroughWarp)
-#	pTargetWarpingAway.AddCondition(pWarp)
+#	pTargetWarpingAway.AddCondition(pFlagSet)
+#	pTargetWarpingAway.AddCondition(pWarpingToSet)
 #	pTargetWarpingAway.SetEvaluationFunction(EvalFunc)
 #	# Done creating ConditionalAI TargetWarpingAway
 #	#########################################
+#	# BELOW ORIGINAL, ABOVE MODIFIED
+##	#########################################
+##	# Creating ConditionalAI TargetWarpingAway at (313, 365)
+##	## Conditions:
+##	#### Condition Warp
+##	debug(__name__ + ", BuilderCreate4")
+##	pWarp = App.ConditionScript_Create("Conditions.ConditionWarpingToSet", "ConditionWarpingToSet", sInitialTarget)
+##	## Evaluation function:
+##	def EvalFunc(bWarp):
+##		debug(__name__ + ", EvalFunc")
+##		ACTIVE = App.ArtificialIntelligence.US_ACTIVE
+##		DORMANT = App.ArtificialIntelligence.US_DORMANT
+##		DONE = App.ArtificialIntelligence.US_DONE
+##		if bWarp:
+##			return ACTIVE
+##		return DONE
+##	## The ConditionalAI:
+##	pTargetWarpingAway = App.ConditionalAI_Create(pShip, "TargetWarpingAway")
+##	pTargetWarpingAway.SetInterruptable(0)
+##	pTargetWarpingAway.SetContainedAI(pFollowThroughWarp)
+##	pTargetWarpingAway.AddCondition(pWarp)
+##	pTargetWarpingAway.SetEvaluationFunction(EvalFunc)
+##	# Done creating ConditionalAI TargetWarpingAway
+##	#########################################
+#
+#	######### AI Builder Begin #########
+#	return pTargetWarpingAway  # Builder Return
+#	########## AI Builder End ##########
 
-
-
-
-
-	######### AI Builder Begin #########
-	return pTargetWarpingAway  # Builder Return
-	########## AI Builder End ##########
 	######### AI Builder Begin #########
 def BuilderCreate5(pShip, sInitialTarget):
 	########## AI Builder End ##########
@@ -461,54 +771,12 @@ def BuilderCreate14(pShip, pPowerManagement):
 	return pAlertLevel  # Builder Return
 	########## AI Builder End ##########
 
-#################################################################################################################
-##########	OVERRIDES
-#################################################################################################################
 
-milkyWay = "Custom.Autoload.LoadGalaxyCharts"
-resistanceIsFutile = "AI.Compound.BorgAttack"
-
-myContinueS = 0
-myContinueR = 0
-myContinueU = 0
-mode = None
-pear = None
-try:
-	banana = __import__(milkyWay, globals(), locals(), ["mode"])
-	myContinueS = 1
-except:
-	myContinueS = 0
-	print "FIX-BorgAttackAIforGC: Missing scripts.", milkyWay
-
-if myContinueS == 1:
-	if hasattr(banana, "mode"):
-		mode = banana.mode
-		myContinueR = 0
-		try:
-			pear = __import__(resistanceIsFutile, globals(), locals(), ["CreateAI", "BuilderCreate3", "BuilderCreate4"])
-			myContinueR = 1
-		except:
-			myContinueR = 0
-			print "FIX-BorgAttackAIforGC: Missing scripts.", resistanceIsFutile
-
-		if myContinueR == 1:
-			if hasattr(banana, "MethodOverrideDef"):
-				myContinueU = 1
-				print "FIX-BorgAttackAIforGC: Patching BorgAttack AI for GC..."
-				if hasattr(pear, "CreateAI"):
-					Foundation.OverrideDef('zzzGCBorgCreate_AI', 'AI.Compound.BorgAttack.CreateAI', __name__ +'.CreateAI', dict = { 'modes': [ mode ] } )
-				if hasattr(pear, "BuilderCreate3"):
-					Foundation.OverrideDef('zzzGCBorgBC3_AI', 'AI.Compound.BorgAttack.BuilderCreate3', __name__ +'.BuilderCreate3', dict = { 'modes': [ mode ] } )
-				if hasattr(pear, "BuilderCreate4"):
-					Foundation.OverrideDef('zzzGCBorgBC4_AI', 'AI.Compound.BorgAttack.BuilderCreate4', __name__ +'.BuilderCreate4', dict = { 'modes': [ mode ] } )
-
-		else:
-			print "FIX-BorgAttackAIforGC: Missing BorgAttack AI to patch. Skipping..."
+# THE OVERRIDE
+if myContinueU == -1:
+	if FORCEUPDATE and CreateAI != None:
+		print "FIX-BorgAttackAIforGC has overriden the preexisting BorgAttack AI. If you don't want so, please remove scipts/Custom/Autoload/FIX-BorgAttackAIforGC or set FORCEUPDATE to 0. Please note that FORCEUPDATE automatically sets to 1 if your BorgAttack AI was already broken"
+		BorgAttack.CreateAI = CreateAI
+		BorgAttack.VERSION = CURRENTVERSION
 	else:
-		print "FIX-BorgAttackAIforGC: Error, Missing mode for LoadGalaxyCharts"
-else:
-	print "FIX-BorgAttackAIforGC: Skipping..."
-
-#################################################################################################################
-##########	END OF OVERRIDES
-#################################################################################################################
+		print "MEHHHHHHHHHHHHHH"
