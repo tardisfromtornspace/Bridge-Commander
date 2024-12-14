@@ -1,12 +1,13 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
-# 13th December 2024
+# 14th December 2024
 # The 'Borg AI Final' was one AI jayce (aka Resistance Is Futile) modified at least until 2008 from an unknown author for Borg vessels, bringing a lot of functionality to those vessels. Inside the BorgAttack file and its readme it explicity says **Do Not Modify The Borg AI Final*
 # However, this AI presents one weird glitch when combined with GalaxyCharts which makes the game crash immediately if a ship travelled two systems while one Borg vessel was chasing them.
-# So just in case, in order to fix this conflict, I made this Autoload file "FIX-BorgAttackAIforGC", which qualifies under fair use with original dependency, with the purpose to keep the original file unmodified.
-# The only areas I MIGHT even declare as even slightly mine (Alex SL Gato) are the areas labeled as "OVERRIDES", two lines "EXTRA ADDED" on CreateAI, the changes done to "MODINFO" if just to keep track of any changes done with a glance for other modders, as well as the changes done to BuilderCreate3 and BuilderCreate3 with the help of the AIEditor Tool
-# The functions we need to modify are fragments of CreateAI, plus BuilderCreate3 and BuilderCreate4.
+# THIS IS A PATCH to fix this conflict, a patch which qualifies under fair use with original dependency, with the purpose to keep the original file unmodified.
+# The only areas I MIGHT even declare as even slightly mine (Alex SL Gato's) are the areas labeled as "OVERRIDES", two lines "EXTRA ADDED" on CreateAI, the changes done to "MODINFO" if just to keep track of any changes done with a glance for other modders, as well as the changes done to BuilderCreate3 and BuilderCreate4 with the help of the AIEditor Tool
 #
-MODINFO = { "Author": "Unknown (original), \"jayce\" (Final), Alex SL Gato (small autoload fixes)",
+#################################################################################################################
+#
+MODINFO = { "Author": "Unknown (original), \"jayce\" (Final), Alex SL Gato (small patch for GC)",
 	    "Version": "20241214",
 	    "License": "Original Dependency",
 	    "Description": "Read the small title above for more info"
@@ -41,8 +42,7 @@ MODINFO = { "Author": "Unknown (original), \"jayce\" (Final), Alex SL Gato (smal
 ##  Modify at your own risk.
 ##  Or run MakeBuilderAI(filename, 1) to remove the BuilderAI code.
 	########## AI Builder End ##########
-import App
-from bcdebug import debug
+
 
 def CreateAI(pShip, *lpTargets, **dKeywords):
 	# Make a group for all the targets...
@@ -459,16 +459,21 @@ def BuilderCreate14(pShip, pPowerManagement):
 #################################################################################################################
 ##########	OVERRIDES
 #################################################################################################################
+import App
+from bcdebug import debug
+import Foundation
 import nt
 import string
 import traceback
-import Foundation
 
 milkyWay = "Custom.Autoload.LoadGalaxyCharts"
 resistanceIsFutile = "AI.Compound.BorgAttack"
-#pathOfMethodOverride = "Custom.GalaxyCharts.GalaxyLIB"
 
 myContinueS = 0
+myContinueR = 0
+myContinueU = 0
+mode = None
+pear = None
 try:
 	banana = __import__(milkyWay, globals(), locals(), ["mode"])
 	myContinueS = 1
@@ -489,6 +494,7 @@ if myContinueS == 1:
 
 		if myContinueR == 1:
 			if hasattr(banana, "MethodOverrideDef"):
+				myContinueU = 1
 				print "FIX-BorgAttackAIforGC: Patching BorgAttack AI for GC..."
 				if hasattr(pear, "CreateAI"):
 					Foundation.OverrideDef('zzzGCBorgCreate_AI', 'AI.Compound.BorgAttack.CreateAI', __name__ +'.CreateAI', dict = { 'modes': [ mode ] } )
