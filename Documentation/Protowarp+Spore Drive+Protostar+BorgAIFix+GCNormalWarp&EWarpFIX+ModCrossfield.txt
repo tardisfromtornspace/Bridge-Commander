@@ -1,4 +1,6 @@
 == Changelog ==
+0.4.8 - Updates:
+  * Updated AlternateSubModelFTL to version 0.82 to support vessels which do not have any models to replace.
 0.4.7 - Updates:
   * Updated scripts/Custom/Autoload/FIX-GCNormalWarpAndEnhancedWarp.py to version 20241214 to reduce as much as possible any legal issues.
 0.4.6 - Updates:
@@ -63,9 +65,12 @@ All of the technologies have their own detailed instruction manuals inside the f
 All of these must be installed before installing this mod, in this order:
 * Foundation + Kobayashi Maru (KM has Foundation already installed - the most recent version of KM, the better).
 * GalaxyCharts (KM has this mod already installed. Required for ProtoWarp TravellingMethod and any method you may want derived from that).
+* This mod, for the ST:Discovery original Crossfield class: https://www.gamefront.com/games/bridge-commander/file/crossfield-class
+* This mod, for the SSV Normandy https://www.gamefront.com/games/bridge-commander/file/normandy-sr-1
+* This mod, for the SR2 Normandy and ME3 Normandy https://www.gamefront.com/games/bridge-commander/file/normandy-sr-2
 * All the dependencies for this mod + the mod: https://www.gamefront.com/games/bridge-commander/file/stbc-babylon-5-mod
 ** From here, HullPolarizer is the most used, but also the file "FIX-FoundationTech20050703ShipInstanceDetach.py", which solves problems related with iterating lTechs when detaching and removing from such FoundationTech list.
-* This mod, for the ST:Discovery original Crossfield class: https://www.gamefront.com/games/bridge-commander/file/crossfield-class
+
 
 IMPORTANT INSTALL INSTRUCTIONS: Do not copy-paste this mod's scripts/AI folder right away, first move this mod's scripts/AI folder somewhere else. You only have to install it if the following steps require so. The provided AI scripts scripts/AI/Compound/BasicAttack and BorgAttack scripts can also be found at BCC KM 2011.10 download site (https://www.bc-central.net/forums/index.php?action=downloads;sa=view;down=33).
 

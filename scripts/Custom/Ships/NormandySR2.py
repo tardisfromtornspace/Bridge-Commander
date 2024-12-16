@@ -1,0 +1,58 @@
+#####  Created by:
+#####  Bridge Commander Universal Tool
+
+
+import App
+import Foundation
+
+
+abbrev = "NormandySR2"
+iconName = "NormandySR2"
+longName = "Normandy SR-2"
+shipFile = "NormandySR2"
+species = App.SPECIES_GALAXY
+menuGroup = "Mass Effect Ships"
+playerMenuGroup = "Mass Effect Ships"
+SubMenu = "Cerberus"
+
+worked = 0
+try:
+	import Custom.Autoload.RaceMESystemsAlliance
+	Foundation.ShipDef.NormandySR2 = Foundation.MESystemsAllianceShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
+	worked = 1
+except:
+	worked = 0
+	print "Error while loading a race"
+	Foundation.ShipDef.NormandySR2 = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
+	traceback.print_exc()
+
+if worked == 1:
+	Foundation.ShipDef.NormandySR2.OverrideWarpFXColor = Foundation.ShipDef.NormandySR2.OverrideWarpFXColor
+	Foundation.ShipDef.NormandySR2.OverridePlasmaFXColor = Foundation.ShipDef.NormandySR2.OverridePlasmaFXColor
+
+Foundation.ShipDef.NormandySR2.fMaxWarp = 9.89 + 0.0001
+Foundation.ShipDef.NormandySR2.fCruiseWarp = 8.6 + 0.0001
+Foundation.ShipDef.NormandySR2.fCrew = 32
+
+Foundation.ShipDef.NormandySR2.dTechs = {
+	"Alternate-Warp-FTL": {
+		"Setup": {
+			"Mass Effect FTL": {	"Nacelles": ["Port Mass Effect Engine", "Star Mass Effect Engine"], "Core": ["Element Zero Core"], "Enter FTL Density": 25, "Mid FTL Density": 10, "Exit FTL Density": 25, "Spark Size": 0.10, },
+		},
+	},
+	'Fed Ablative Armor': { "Plates": ["Aft Silaris Armor", "Forward Silaris Armor", "Left Silaris Armor", "Right Silaris Armor", "Silaris Armor" ]},
+	"ME IES Stealth System": 1,
+	"ME Shields": { "FacetFactor" : 1 },
+	"ME Thanix Cannon": {"HullDmgMultiplier": 1.0, "ShieldDmgMultiplier": 1.0, "Beams": ["Thanix Cannons"], },
+}
+
+Foundation.ShipDef.NormandySR2.desc = "The Normandy SR-2 is a starship that appears in Mass Effect 2, serving as the \"successor\" to the SR-1. The Illusive Man had Cerberus build the SR-2 for the newly revived Commander Shepard\'s team to aid them in their mission to stop the Collectors\' galaxy-wide campaign of human abductions. This ship is the headquarters of the Lazarus Cell. \n\nArmaments :\n- 2x Javelin Disruptor Torpedoes tubes \n- 2x Pulse cannons\n- 2x GARDIAN point-defense lasers\n\nDefenses :\n- CBT Multicore Shielding\n- Silaris Heavy Ship Armor\n\nPropulsion & Power :\n- Tantalus Drive Core\n- Fusion Plant\n- Antiproton Thrusters"
+
+
+if menuGroup:           Foundation.ShipDef.NormandySR2.RegisterQBShipMenu(menuGroup)
+if playerMenuGroup:     Foundation.ShipDef.NormandySR2.RegisterQBPlayerShipMenu(playerMenuGroup)
+
+
+if Foundation.shipList._keyList.has_key(longName):
+      Foundation.ShipDef.__dict__[longName].friendlyDetails[2] = Foundation.shipList[longName].friendlyDetails[2]
+      Foundation.ShipDef.__dict__[longName].enemyDetails[2] = Foundation.shipList[longName].enemyDetails[2]

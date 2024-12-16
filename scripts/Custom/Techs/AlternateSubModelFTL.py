@@ -1,7 +1,7 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
 # AlternateSubModelFTL.py
-# 12th December 2024, by Alex SL Gato (CharaToLoki)
+# 16th December 2024, by Alex SL Gato (CharaToLoki)
 #         Based on Defiant's SubModels script (from which it inherits the classes, so in fact SubModels is a dependency) and BorgAdaptation.py by Alex SL Gato, which were based on the Foundation import function by Dasher
 #         Also based on ATPFunctions by Apollo and slightly on DS9FXPulsarManager by USS Sovereign.
 #         Also some sections based on the Slisptream module by Mario aka USS Sovereign, modified by Alex SL Gato with explicit permission from Mario to adapt his code to this script.
@@ -1499,7 +1499,7 @@ def GetEngageDirectionC(mySelf, pPlayerID = None):
 #################################################################################################################
 #
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.81",
+	    "Version": "0.82",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -3609,7 +3609,8 @@ def PrepareShipForProtoMove(pShip, pInstance, techType=oProtoWarp):
 	debug(__name__ + ", PrepareShipForProtoMove")
 	if not techType.ArePartsAttached(pShip, pInstance):
 		techName = techType.MySystemPointer()
-		ReplaceModel(pShip, pInstance.__dict__[techName]["Setup"]["Body"])
+		if pInstance.__dict__[techName]["Setup"].has_key("Body"):
+			ReplaceModel(pShip, pInstance.__dict__[techName]["Setup"]["Body"])
 		if not hasattr(pInstance, "HasExperimentalRotationParts") or pInstance.HasExperimentalRotationParts <= 0:
 			ReplaceModelBlackLightsFix(pShip)
 		techType.AttachParts(pShip, pInstance)
@@ -3664,15 +3665,20 @@ def AlertMoveFinishProtoAction(pAction, pShip, pInstance, iThisMovID, techType =
 
 	techName = techType.MySystemPointer()
 	scaleFactor = 1.0
+	sNewShipScript = None
 	if pInstance.__dict__[techName]["Setup"].has_key("AttackModel") and pShip.GetAlertLevel() == 2:
-		sNewShipScript = pInstance.__dict__[techName]["Setup"]["AttackModel"]
+		if pInstance.__dict__[techName]["Setup"].has_key("AttackModel"):
+			sNewShipScript = pInstance.__dict__[techName]["Setup"]["AttackModel"]
 		if pInstance.__dict__[techName]["Setup"].has_key("AttackSetScale") and pInstance.__dict__[techName]["Setup"]["AttackSetScale"] != 0.0:
 			scaleFactor = pInstance.__dict__[techName]["Setup"]["AttackSetScale"]
 	else:
-		sNewShipScript = pInstance.__dict__[techName]["Setup"]["NormalModel"]
+		if pInstance.__dict__[techName]["Setup"].has_key("NormalModel"):
+			sNewShipScript = pInstance.__dict__[techName]["Setup"]["NormalModel"]
 		if pInstance.__dict__[techName]["Setup"].has_key("NormalSetScale") and pInstance.__dict__[techName]["Setup"]["NormalSetScale"] != 0.0:
 			scaleFactor = pInstance.__dict__[techName]["Setup"]["NormalSetScale"]
-	ReplaceModel(pShip, sNewShipScript)
+
+	if sNewShipScript != None:
+		ReplaceModel(pShip, sNewShipScript)
 	if not hasattr(pInstance, "HasExperimentalRotationParts") or pInstance.HasExperimentalRotationParts <= 0:
 		ReplaceModelBlackLightsFix(pShip)
 	pShip.SetScale(scaleFactor)
@@ -3741,11 +3747,14 @@ def ProtoWarpStartMoveFinishAction(pAction, pShip, pInstance, iThisMovID, techP=
 		
 	techP.DetachParts(pShip, pInstance)
 	techName = techP.MySystemPointer()
-	sNewShipScript = pInstance.__dict__[techName]["Setup"][str(move) + "Model"]
+	sNewShipScript = None
+	if pInstance.__dict__[techName]["Setup"].has_key(str(move) + "Model"):
+		sNewShipScript = pInstance.__dict__[techName]["Setup"][str(move) + "Model"]
 	scaleFactor = 1.0
 	if pInstance.__dict__[techName]["Setup"].has_key(str(move) + "SetScale") and pInstance.__dict__[techName]["Setup"][str(move) + "SetScale"] != 0.0:
 		scaleFactor = pInstance.__dict__[techName]["Setup"][str(move) + "SetScale"]
-	ReplaceModel(pShip, sNewShipScript)
+	if sNewShipScript != None:
+		ReplaceModel(pShip, sNewShipScript)
 	if not hasattr(pInstance, "HasExperimentalRotationParts") or pInstance.HasExperimentalRotationParts <= 0:
 		ReplaceModelBlackLightsFix(pShip)
 	pShip.SetScale(scaleFactor)
@@ -3769,16 +3778,21 @@ def ProtoWarpExitMoveFinishAction(pAction, pShip, pInstance, iThisMovID, techP=o
 	techName = techP.MySystemPointer()
 
 	scaleFactor = 1.0
+	sNewShipScript = None
 	if pInstance.__dict__[techName]["Setup"].has_key("AttackModel") and pShip.GetAlertLevel() == 2:
-		sNewShipScript = pInstance.__dict__[techName]["Setup"]["AttackModel"]
+		if pInstance.__dict__[techName]["Setup"].has_key("AttackModel"):
+			sNewShipScript = pInstance.__dict__[techName]["Setup"]["AttackModel"]
 		if pInstance.__dict__[techName]["Setup"].has_key("AttackSetScale") and pInstance.__dict__[techName]["Setup"]["AttackSetScale"] != 0.0:
 			scaleFactor = pInstance.__dict__[techName]["Setup"]["AttackSetScale"]
 	else:
-		sNewShipScript = pInstance.__dict__[techName]["Setup"]["NormalModel"]
+		if pInstance.__dict__[techName]["Setup"].has_key("NormalModel"):
+			sNewShipScript = pInstance.__dict__[techName]["Setup"]["NormalModel"]
 		if pInstance.__dict__[techName]["Setup"].has_key("NormalSetScale") and pInstance.__dict__[techName]["Setup"]["NormalSetScale"] != 0.0:
 			scaleFactor = pInstance.__dict__[techName]["Setup"]["NormalSetScale"]
 
-	ReplaceModel(pShip, sNewShipScript)
+	if sNewShipScript != None:
+		ReplaceModel(pShip, sNewShipScript)
+
 	if not hasattr(pInstance, "HasExperimentalRotationParts") or pInstance.HasExperimentalRotationParts <= 0:
 		ReplaceModelBlackLightsFix(pShip)
 	pShip.SetScale(scaleFactor)
