@@ -1224,14 +1224,14 @@ def GetTravelSetToUse(self):
 def ConvertSpeedAmount(fSpeed):
 	debug(__name__ + ", ConvertSpeedAmount")
 	if fSpeed >= 9.999:
-		fFacA = 2.88                ##### Do Not Change These Values #####
-		fFacB = 8.312               ##### Do Not Change These Values #####
+		fFacA = 2.88 / 6.0              ##### Do Not Change These Values #####
+		fFacB = 8.312            ##### Do Not Change These Values #####
 	elif fSpeed > 9.99:
-		fFacA = 2.88                ##### Do Not Change These Values #####
-		fFacB = 7.512               ##### Do Not Change These Values #####
+		fFacA = 2.88 / 5.0              ##### Do Not Change These Values #####
+		fFacB = 7.512            ##### Do Not Change These Values #####
 	elif fSpeed > 9.6:
-		fFacA = 2.8700              ##### Do Not Change These Values #####
-		fFacB = 5.9645              ##### Do Not Change These Values #####
+		fFacA = 2.8700 / 4.0             ##### Do Not Change These Values #####
+		fFacB = 5.9645             ##### Do Not Change These Values #####
 	elif fSpeed <= 9.6:
 		fFacA = 3.0                 ##### Do Not Change These Values #####
 		fFacB = 3.0                 ##### Do Not Change These Values #####

@@ -30,7 +30,7 @@ if worked == 1:
 	Foundation.ShipDef.normandySR1.OverrideWarpFXColor = Foundation.ShipDef.normandySR1.OverrideWarpFXColor
 	Foundation.ShipDef.normandySR1.OverridePlasmaFXColor = Foundation.ShipDef.normandySR1.OverridePlasmaFXColor
 
-Foundation.ShipDef.normandySR1.fMaxWarp = 9.99 + 0.0001
+Foundation.ShipDef.normandySR1.fMaxWarp = 9.0 + 0.0001
 Foundation.ShipDef.normandySR1.fCruiseWarp = 9 + 0.0001
 Foundation.ShipDef.normandySR1.fCrew = 55
 
