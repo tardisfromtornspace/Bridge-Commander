@@ -1,7 +1,7 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
-# 26th August 2024, by Alex SL Gato (CharaToLoki)
-# Version: 1.0
+# 17th December 2024, by Alex SL Gato (CharaToLoki)
+# Version: 1.1
 # Meant to be used alongside the SGShields Technology (located at scripts/Custom/Techs), this file must be under scripts/Custom/Techs/SGShieldScripts
 # As these are Sub-techs with some leeway, their manuals must be explained here:
 ##################################
@@ -17,7 +17,7 @@ import traceback
 # On this case, we want to add the equivalent to this:
 #{"ProjectileName": {"GuaranteedBleedthrough": 0.1, "WhitelistFilename": ["Quantum", "QuantumTorpedo"], "BlacklistName": ["not a quantum", "not quantum", "no quantum", "anti-quantum", "antiquantum", "quantumania"], "BlacklistFilename": ["AntiQuantum", "Quantumania"]}
 
-ProjectileName = "Quantum"
+ProjectileName = "quantum"
 ProjectileGuaranteedBleedthrough = 0.1
 ProjectileWhitelistFilename = ["Quantum", "QuantumTorpedo"]  # Case-sensitive
 ProjectileBlacklistName = ["not a quantum", "not quantum", "no quantum", "anti-quantum", "antiquantum", "quantumania"]  # Case-insensitive

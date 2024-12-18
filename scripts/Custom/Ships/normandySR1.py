@@ -41,7 +41,8 @@ Foundation.ShipDef.normandySR1.dTechs = {
 		},
 	},
 	"ME IES Stealth System": 1,
-	"ME Shields": { "FacetFactor" : 1 },
+	"ME Shields": { "CollisionBlock": 0, "BypassMultiplier": 1, "FacetFactor": 1, "FacetRegeneration": 1, "MinimumSpeedTrigger": 5, "MaximumSpeedTrigger": 150, "ShieldScaleMultiplier": 0.2, "AtmosphericNerf": -1},
+	"Systems Changed With GC On": {"Message": {"Content": "This vessel has warp-drives disabled on GC. Please use its Mass Effect Drive instead.", "Time": 4.0}, "Hardpoints": {"Mass Effect Engines": 1.15,},},
 }
 
 Foundation.ShipDef.normandySR1.desc = "The SSV Normandy SR-1 (Systems Alliance Space Vehicle Stealth Reconnaissance 1) is a Systems Alliance starship. She is a prototype \"deep scout\" frigate, first of the eponymous Normandy class, co-developed by the Alliance and the Turian Hierarchy with the sponsorship of the Citadel Council. She is optimized for solo reconnaissance missions deep within unstable regions, using state-of-the-art stealth technology powered by an experimental drive core.\nCommissioned in 2183, the Normandy was initially captained by David Anderson, however, she was handed over to Commander Shepard when the commander became the first human Spectre, serving as Shepard\'s main source of transportation and base of operations.\n\n"

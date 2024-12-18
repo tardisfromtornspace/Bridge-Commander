@@ -42,8 +42,9 @@ Foundation.ShipDef.NormandySR2.dTechs = {
 	},
 	'Fed Ablative Armor': { "Plates": ["Aft Silaris Armor", "Forward Silaris Armor", "Left Silaris Armor", "Right Silaris Armor", "Silaris Armor" ]},
 	"ME IES Stealth System": 1,
-	"ME Shields": { "FacetFactor" : 1 },
+	"ME Shields": { "CollisionBlock": 0, "BypassMultiplier": 1, "FacetFactor": 1, "FacetRegeneration": 1, "MinimumSpeedTrigger": 5, "MaximumSpeedTrigger": -150, "ShieldScaleMultiplier": 0.2, "AtmosphericNerf": -1, },
 	"ME Thanix Cannon": {"HullDmgMultiplier": 1.0, "ShieldDmgMultiplier": 1.0, "Beams": ["Thanix Cannons"], },
+	"Systems Changed With GC On": {"Message": {"Content": "This vessel has warp-drives disabled on GC. Please use its Mass Effect Drive instead.", "Time": 4.0}, "Hardpoints": {"Mass Effect Engines": 1.15,},},
 }
 
 Foundation.ShipDef.NormandySR2.desc = "The Normandy SR-2 is a starship that appears in Mass Effect 2, serving as the \"successor\" to the SR-1. The Illusive Man had Cerberus build the SR-2 for the newly revived Commander Shepard\'s team to aid them in their mission to stop the Collectors\' galaxy-wide campaign of human abductions. This ship is the headquarters of the Lazarus Cell. \n\nArmaments :\n- 2x Javelin Disruptor Torpedoes tubes \n- 2x Pulse cannons\n- 2x GARDIAN point-defense lasers\n\nDefenses :\n- CBT Multicore Shielding\n- Silaris Heavy Ship Armor\n\nPropulsion & Power :\n- Tantalus Drive Core\n- Fusion Plant\n- Antiproton Thrusters"
