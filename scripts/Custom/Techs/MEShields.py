@@ -1744,7 +1744,7 @@ try:
 					
 						for key in vulnerableProjToMEShields.keys():
 							racesImmune = vulnerableProjToMEShields[key]["RacesImmune"]
-							if raceShieldTech in racesImmune:
+							if raceShieldTech in racesImmune or (("Cyclonic" in racesImmune or "Reaper" in racesImmune) and maxSt < 0.0):
 								continue
 							foundThis = 0
 							isinWhitelistFilename =  0

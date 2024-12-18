@@ -42,7 +42,7 @@ def Create(pTorp):
 	return(0)
 
 def GetLaunchSpeed():
-	return(96.0)
+	return(50.0)
 
 def GetLaunchSound():
 	return("JavelinTorpedo")
@@ -54,22 +54,22 @@ def GetName():
 	return("Mass Effect Javelin")
 
 def GetDamage():
-	return 600.0
+	return 450.0
 
 def GetGuidanceLifetime():
-	return 20.0
+	return 6.0
 
 def GetMaxAngularAccel():
-	return 0.12
+	return 0.15
 
 def GetLifetime():
 	return 8.0
 
 def HullDmgMultiplier():
-	return 3
+	return 4
 
 def ShieldDmgMultiplier():
-	return 3.25
+	return 4.4
 
 try:
 	modMERailgunWeaponTorp = __import__("Custom.Techs.MERailgunWeapon")

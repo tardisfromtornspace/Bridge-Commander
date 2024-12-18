@@ -185,7 +185,7 @@ lImmuneMERailgunWeaponShips = []
 # For every other ship (because since STBC is a ST game, the shields in-game behave more like ST shields, specifically simplified 24th century Post-Dominion War Federation ones, so we must take them as a base), excluding the examples mentioned below, this weapon causes a shield drain in one shield facet. If the hull is hit, it will deal X times the damage the normal projectile does.
 RailgunGenericShieldDamageMultiplier = 1 # one from the normal shot, another from us
 
-SlowDownRatio = 3.0/70.0 # This is an auxiliar value, it helps us for when a ship is too small, to prevent a torpedo from just teleporting to the other side
+SlowDownRatio = 9.0/70.0 # This is an auxiliar value, it helps us for when a ship is too small, to prevent a torpedo from just teleporting to the other side
 
 # "variableNames" is a global dictionary, filled automatically by the files in scripts/Custom/Techs/MERailgunWeaponScripts 
 # the purpose of this list is to append dicts f.ex. {"legacyImmunity": alist, "interactionHullBehaviour": functionObtained, "interactionShieldBehaviour": anotherfunctionObtained}
@@ -492,7 +492,7 @@ try:
 
 			pHitPoint = ConvertPointNiToTG(pTorp.GetWorldLocation())
 			pVec = pTorp.GetVelocityTG()
-			pVec.Scale(0.0001)
+			pVec.Scale(0.001)
 
 			global RailgunHullDamageMultiplier, RailgunGenericShieldDamageMultiplier, defenceGridMultiplier, hullPolarizerMultiplier, shadowDispersiveHullMultiplier
 			hullDamageMultiplier = 1.0
@@ -626,17 +626,17 @@ try:
 					mod = self.SubTorp
 
 				launchSpeed = __import__(mod).GetLaunchSpeed()
-				considerspeeddebuff = launchSpeed/(1.0 * pShip.GetRadius())
+				considerspeeddebuff = (1.0 * pShip.GetRadius())/(launchSpeed + 0.000001)
 				shipNeeded = None
 				theHitPoint = pHitPoint
 				if considerspeeddebuff <= SlowDownRatio:
-					NewScale =  considerspeeddebuff / (1000000.0 * SlowDownRatio)
+					NewScale =  considerspeeddebuff / (8 * SlowDownRatio)
 					pVec.Scale((0.001 * NewScale))
 					#launchSpeed = launchSpeed /  (100.0 * SlowDownRatio)
 					shipNeeded = pShip
 					theHitPoint = pTorp.GetWorldLocation()
 
-				pHitPoint.Add(pVec)
+				theHitPoint.Add(pVec)
 
 				pTempTorp = FireTorpFromPointWithVectorAndNetType(theHitPoint, pVec, mod, pTorp.GetTargetID(), attackerID, launchSpeed, torpsNetTypeThatCanPhase, fDamage, pTorp.GetDamageRadiusFactor(), 0, shipNeeded)
 				if pTempTorp and hasattr(pTempTorp, "SetLifetime"):
