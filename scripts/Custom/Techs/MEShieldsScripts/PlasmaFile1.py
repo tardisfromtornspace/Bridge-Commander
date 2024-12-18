@@ -6,7 +6,7 @@
 # As these are Sub-techs with some leeway, their manuals must be explained here:
 ##################################
 # SPECIFIC SUB-TECH MANUAL:
-# This file adds Quantum torpedoes to the list of guaranteed bleedthrough to ME Shields, according to MEShields in-script documentation. Due to the parent script implementation, we could add multiple files that add elements, and repeated elements on the lists will not be repeatedly included on the parent script
+# This file adds Plasma to the list of guaranteed bleedthrough to ME Shields (they may overload the shields), according to MEShields in-script documentation. Due to the parent script implementation, we could add multiple files that add elements, and repeated elements on the lists will not be repeatedly included on the parent script
 
 # NOTE: Imports and additional functions may be necessary here as well, depending on how creative the sub-tech becomes
 import App
@@ -19,7 +19,7 @@ import traceback
 
 ProjectileName = "plasma"
 ProjectileGuaranteedBleedthrough = 0.5
-ProjectileWhitelistFilename = ["Plasma", "PlasmaCannon"]  # Case-sensitive
+ProjectileWhitelistFilename = ["Plasma", "PlasmaCannon", "SGAsgardBeamDummy", "SGOriBeamDummy", "OriPulse", "sgstaff", "sgstaff2", "sgstaff3", "sgstaff4", "sgstaff5", "sgstaff6", "sgstaff7", "sgstaff8", "sgstaff9"]  # Case-sensitive
 ProjectileBlacklistName = ["not a plasma", " not plasma", " no plasma", " anti-plasma", "antilplasma", "plasmatic", "cataplasma",]  # Case-insensitive
 ProjectileBlacklistFilename = ["AntiPlasma", "NotAPlasma", ]  # Case-sensitive
 #ProjRacesImmune = ["Reaper"]

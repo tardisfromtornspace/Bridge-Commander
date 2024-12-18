@@ -6,7 +6,7 @@
 # As these are Sub-techs with some leeway, their manuals must be explained here:
 ##################################
 # SPECIFIC SUB-TECH MANUAL:
-# This file adds Quantum torpedoes to the list of guaranteed bleedthrough to ME Shields, according to MEShields in-script documentation. Due to the parent script implementation, we could add multiple files that add elements, and repeated elements on the lists will not be repeatedly included on the parent script
+# This file adds Lasers (which ME barriers excluding reapers cannot even block partially) to the list of guaranteed bleedthrough to ME Shields, according to MEShields in-script documentation. Due to the parent script implementation, we could add multiple files that add elements, and repeated elements on the lists will not be repeatedly included on the parent script
 
 # NOTE: Imports and additional functions may be necessary here as well, depending on how creative the sub-tech becomes
 import App

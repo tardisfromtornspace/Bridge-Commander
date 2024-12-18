@@ -41,7 +41,7 @@ Foundation.ShipDef.normandySR1.dTechs = {
 		},
 	},
 	"ME IES Stealth System": 1,
-	"ME Shields": { "CollisionBlock": 0, "BypassMultiplier": 1, "FacetFactor": 1, "FacetRegeneration": 1, "MinimumSpeedTrigger": 5, "MaximumSpeedTrigger": 150, "ShieldScaleMultiplier": 0.2, "AtmosphericNerf": -1},
+	"ME Shields": { "CollisionBlock": 0, "BypassMultiplier": 1, "FacetFactor": 0, "FacetRegeneration": 1, "MinimumSpeedTrigger": 5, "MaximumSpeedTrigger": 150, "ShieldScaleMultiplier": 0.2, "AtmosphericNerf": -1},
 	"Systems Changed With GC On": {"Message": {"Content": "This vessel has warp-drives disabled on GC. Please use its Mass Effect Drive instead.", "Time": 4.0}, "Hardpoints": {"Mass Effect Engines": 1.15,},},
 }
 

@@ -42,7 +42,7 @@ def Create(pTorp):
 	return(0)
 
 def GetLaunchSpeed():
-	return(86.0)
+	return(96.0)
 
 def GetLaunchSound():
 	return("JavelinTorpedo")
@@ -51,16 +51,29 @@ def GetPowerCost():
 	return(10.0)
 
 def GetName():
-	return("Javelin")
+	return("Mass Effect Javelin")
 
 def GetDamage():
-	return 1800.0
+	return 600.0
 
 def GetGuidanceLifetime():
 	return 20.0
 
 def GetMaxAngularAccel():
-	return 0.05
+	return 0.12
 
 def GetLifetime():
 	return 8.0
+
+def HullDmgMultiplier():
+	return 3
+
+def ShieldDmgMultiplier():
+	return 3.25
+
+try:
+	modMERailgunWeaponTorp = __import__("Custom.Techs.MERailgunWeapon")
+	if(modMERailgunWeaponTorp):
+		modMERailgunWeaponTorp.oMERailgunWeaponTorp.AddTorpedo(__name__)
+except:
+	print "MERailgunWeapon projectile script not installed, or you are missing Foundation Tech"

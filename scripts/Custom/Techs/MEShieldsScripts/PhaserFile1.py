@@ -6,7 +6,7 @@
 # As these are Sub-techs with some leeway, their manuals must be explained here:
 ##################################
 # SPECIFIC SUB-TECH MANUAL:
-# This file adds Quantum torpedoes to the list of guaranteed bleedthrough to ME Shields, according to MEShields in-script documentation. Due to the parent script implementation, we could add multiple files that add elements, and repeated elements on the lists will not be repeatedly included on the parent script
+# This file adds Phasers to the list of guaranteed bleedthrough to ME Shields (according to the info aout particle beam weapons from collectors "Being a particle beam weapon, it ignores kinetic barriers,"), according to MEShields in-script documentation. Due to the parent script implementation, we could add multiple files that add elements, and repeated elements on the lists will not be repeatedly included on the parent script.
 
 # NOTE: Imports and additional functions may be necessary here as well, depending on how creative the sub-tech becomes
 import App
@@ -18,7 +18,7 @@ import traceback
 #{"ProjectileName": {"GuaranteedBleedthrough": 0.1, "WhitelistFilename": ["Quantum", "QuantumTorpedo"], "BlacklistName": ["not a quantum", "not quantum", "no quantum", "anti-quantum", "antiquantum", "quantumania"], "BlacklistFilename": ["AntiQuantum", "Quantumania"]}
 
 ProjectileName = "phaser"
-ProjectileGuaranteedBleedthrough = 0.7
+ProjectileGuaranteedBleedthrough = 0.8
 ProjectileWhitelistFilename = ["Phaser", "PulsePhaser"]  # Case-sensitive
 ProjectileBlacklistName = ["not a phaser", "not phaser", "no phaser", ]  # Case-insensitive
 ProjectileBlacklistFilename = []  # Case-sensitive
@@ -27,7 +27,7 @@ ProjectileBlacklistFilename = []  # Case-sensitive
 # Below here we have an example for beams
 # {"BeamName": {"GuaranteedBleedthrough": 0.05, "WhitelistHardname": ["Ventral Phaser 1"], "BlacklistName": ["not a phaser", "notphaser", "laser", "nophaser"]}
 BeamName = "phaser"
-BeamGuaranteedBleedthrough = 0.7
+BeamGuaranteedBleedthrough = 0.8
 BeamWhitelistHardname = ["Phaser Bank 1", "Phaser Bank 2", "Phaser Beam", "Lance phaser"]
 BeamBlacklistName = ["not a phaser", "not phaser", "no phaser",]
 #BeamRacesImmune = ["Reaper"]

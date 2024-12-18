@@ -2,7 +2,7 @@
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
 # 17th December 2024, by Alex SL Gato (CharaToLoki)
 # Version: 1.0
-# Meant to be used alongside the SGShields Technology (located at scripts/Custom/Techs), this file must be under scripts/Custom/Techs/SGShieldScripts
+# Meant to be used alongside the SGShields Technology (located at scripts/Custom/Techs), this file must be under scripts/Custom/Techs/SGShieldsScripts
 # As these are Sub-techs with some leeway, their manuals must be explained here:
 ##################################
 # SPECIFIC SUB-TECH MANUAL:

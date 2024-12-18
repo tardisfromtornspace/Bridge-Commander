@@ -1,7 +1,7 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
 # MEIESStealthSystem.py
-# 17th December 2024, by Alex SL Gato (CharaToLoki)
+# 18th December 2024, by Alex SL Gato (CharaToLoki)
 #         Partially based on PhaseCloak by MLeo Daalder, which was based on Apollo's Phase Cloak.
 #
 # Requirements:
@@ -23,7 +23,7 @@ Foundation.ShipDef.USSProtostar.dTechs = {
 """
 #################################################################################################################
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.2",
+	    "Version": "0.3",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -55,7 +55,7 @@ class MEIESStealth(FoundationTech.TechDef):
 		# Now, decloak for a sec or 2...
 		#	Depends on the setting in the Phase Cloak tuple...
 		pInstance.Disable(pShip, pCloak, pInstance.__dict__["ME IES Stealth System"])
-		DecloakHandler(pShip, pEvent, 1)
+		StateMachine(pShip, pEvent, 1)
 
 	def Attach(self, pInstance):
 		debug(__name__ + ", Attach")
@@ -154,27 +154,22 @@ def grabTeamsQB(pShipID, encloak=0):
 			if pFriendlies and pFriendlies.IsNameInGroup(pcName):
 				myGroup = pFriendlies
 				chose1 = "F"
-			if pFriendlies:
 				pFriendlies.RemoveName(pcName)
 			if pEnemies and pEnemies.IsNameInGroup(pcName):
 				myGroup = pEnemies
 				chose1 = "E"
-			if pEnemies:
 				pEnemies.RemoveName(pcName)
 			if pNeutrals and pNeutrals.IsNameInGroup(pcName):
 				myGroup = pNeutrals
 				chose1 = "N"
-				careful = 1
-			if pNeutrals:
 				pNeutrals.RemoveName(pcName)
 			if pNeutrals2 and pNeutrals2.IsNameInGroup(pcName):
 				myGroup = pNeutrals2
-			if pNeutrals2:
 				pNeutrals2.RemoveName(pcName)
 			if pTractors and pTractors.IsNameInGroup(pcName):
 				myGroup = pTractors
 				careful = 1
-			if pTractors:
+				print "careful"
 				pTractors.RemoveName(pcName)
 
 			if careful == 0 or not hasattr(pInstance, "MEIESStealthSystemGroup"):
@@ -190,6 +185,11 @@ def grabTeamsQB(pShipID, encloak=0):
 					#	if pNeutrals and not pNeutrals.IsNameInGroup(pcName):
 					#		pNeutrals.AddName(pcName)
 
+			elif careful == 1 and hasattr(pInstance, "MEIESStealthSystemGroup"):
+				if hasattr(pInstance.MEIESStealthSystemGroup, "IsNameInGroup") and not pInstance.MEIESStealthSystemGroup.IsNameInGroup(pcName):
+					pInstance.MEIESStealthSystemGroup.AddName(pcName)
+					myGroup = "ERROR"
+
 		else:
 			if hasattr(pInstance, "MEIESStealthSystemGroup"):
 				if pTractors and pTractors.IsNameInGroup(pcName):
@@ -202,67 +202,51 @@ def grabTeamsQB(pShipID, encloak=0):
 	return myGroup
 
 def WeaponFired(pObject, pEvent):
-	return DecloakHandler(pObject, pEvent, 1)
+	myState = StateMachine(pObject, pEvent, 1)
+	return 0
 
 def CloakHandler(pObject, pEvent):
-	if not pObject or not hasattr(pObject, "GetObjID"):
-		return None
+	myState, pShip = StateMachine(pObject, pEvent, 0)
 
-	pShipID = pObject.GetObjID()
-	if not pShipID:
-		return None
-
-	pShip = App.ShipClass_GetObjectByID(None, pShipID)
-	if not pShip:
-		return None
-
-	pInstance = findShipInstance(pShip)
-	if not pInstance:
-		return None
-
-	if not hasattr(pInstance, "MEIESStealthSystemCount"):
-		pInstance.MEIESStealthSystemCount = 0
-
-	if pInstance.MEIESStealthSystemCount == 1:
-		myTeam = grabTeamsQB(pShipID, 1)
-
-	elif pInstance.MEIESStealthSystemCount == 3:
-		myTeam = grabTeamsQB(pShipID, 0)
-
-	myCase = (pInstance.MEIESStealthSystemCount % 2 == 0)
-	# Ok so, first time, we cloak, we are really cloaking, the second is product of us decloaking so we cannot do that
-	pInstance.MEIESStealthSystemCount = (pInstance.MEIESStealthSystemCount + 1) % 4 # mod 4, so only 0, 1, 2 and 3
-
-	pShip.UpdateNodeOnly()
-
-	if myCase:
+	if myState != None and pShip != None and (myState == 0 or myState == 2):
 		pCloak = pShip.GetCloakingSubsystem()
 		if pCloak:
-			pCloak.StopCloaking()
+			shipIsCloaking = pCloak.IsCloaking() or pCloak.IsCloaked()
+			if shipIsCloaking:
+				pCloak.StopCloaking()
 
-	return None
 	#pObject.CallNextHandler(pEvent)
+	return None
 
 def DecloakHandler(pObject, pEvent, fromDamage=0):
+	StateMachine(pObject, pEvent, fromDamage)
+	#pObject.CallNextHandler(pEvent)
+	return None
+
+
+def StateMachine(pObject, pEvent, fromDamage=0):
+	currentState = None
 	if not pObject or not hasattr(pObject, "GetObjID"):
-		return None
+		return currentState, None
 
 	pShipID = pObject.GetObjID()
 	if not pShipID:
-		return None
+		return currentState, None
 
 	pShip = App.ShipClass_GetObjectByID(None, pShipID)
 	if not pShip:
-		return None
+		return currentState, None
 
 	pInstance = findShipInstance(pShip)
 	if not pInstance:
-		pObject.CallNextHandler(pEvent)
-		return None
+		return currentState, pShip
+
+	myTeam = None
 	if fromDamage == 0:
 		if not hasattr(pInstance, "MEIESStealthSystemCount"):
-			pInstance.MEIESStealthSystemCount = 1
+			pInstance.MEIESStealthSystemCount = 0
 
+		currentState = pInstance.MEIESStealthSystemCount
 		if pInstance.MEIESStealthSystemCount == 1:
 			myTeam = grabTeamsQB(pShipID, 1)
 
@@ -273,9 +257,16 @@ def DecloakHandler(pObject, pEvent, fromDamage=0):
 		pInstance.MEIESStealthSystemCount = (pInstance.MEIESStealthSystemCount + 1) % 4 # mod 4, so only 0, 1, 2 and 3
 
 	else:
+		currentState = 3
+		pInstance.MEIESStealthSystemCount = 0
+		myTeam = grabTeamsQB(pShipID, 0)
+
+	if myTeam == "ERROR":
+		currentState = 0
 		pInstance.MEIESStealthSystemCount = 0
 		myTeam = grabTeamsQB(pShipID, 0)
 
 	pShip.UpdateNodeOnly()
-	
-	#pObject.CallNextHandler(pEvent)
+
+	return currentState, pShip
+

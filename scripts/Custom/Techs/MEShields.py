@@ -2017,8 +2017,6 @@ try:
 
 					if theSame == 0 and (pTorp or myDamage > 0.1): # If a phaser or torp deals less than certain damage, don't bother - this is both a strategy to produce less torps, and a way to avoid "floaty ghost torps"
 						#pTempTorp = FireTorpFromPointWithVectorAndNetType(theHitPoint, pVec, mod, pShip.GetObjID(), attackerID, launchSpeed, torpsNetTypeThatCanPhase, myDamage, myRadius, 1, shipNeeded)
-						#TO-DO CHECK IF THIS WORKS
-						print "isHidden", "isHidden"
 						pTempTorp = FireTorpFromPointWithVectorAndNetType(theHitPoint, pVec, mod, pShip.GetObjID(), attackerID, launchSpeed, torpsNetTypeThatCanPhase, myDamage, myRadius, isHidden, shipNeeded, theOffset)
 						pTempTorp.SetLifetime(15.0)
 						pTempTorp.UpdateNodeOnly()

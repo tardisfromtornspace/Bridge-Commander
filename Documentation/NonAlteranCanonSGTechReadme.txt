@@ -1,4 +1,6 @@
 == Changelog ==
+1.1.6 - bug fixes:
+   * Updated SGPlasmaWeapon and SGRailgunWeapon to fix a bug regarding counters.
 1.1.5 - bug fixes:
    * Updated SGAnubisSuperWeaponRay so its Delete works regardless of MissionLib configuration.
 1.1.4 - bug fixes:

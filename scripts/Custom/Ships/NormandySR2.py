@@ -42,7 +42,7 @@ Foundation.ShipDef.NormandySR2.dTechs = {
 	},
 	'Fed Ablative Armor': { "Plates": ["Aft Silaris Armor", "Forward Silaris Armor", "Left Silaris Armor", "Right Silaris Armor", "Silaris Armor" ]},
 	"ME IES Stealth System": 1,
-	"ME Shields": { "CollisionBlock": 0, "BypassMultiplier": 1, "FacetFactor": 1, "FacetRegeneration": 1, "MinimumSpeedTrigger": 5, "MaximumSpeedTrigger": -150, "ShieldScaleMultiplier": 0.2, "AtmosphericNerf": -1, },
+	"ME Shields": { "CollisionBlock": 0, "BypassMultiplier": 1, "FacetFactor": 0, "FacetRegeneration": 1, "MinimumSpeedTrigger": 5, "MaximumSpeedTrigger": -150, "ShieldScaleMultiplier": 0.2, "AtmosphericNerf": -1, },
 	"ME Thanix Cannon": {"HullDmgMultiplier": 1.0, "ShieldDmgMultiplier": 1.0, "Beams": ["Thanix Cannons"], },
 	"Systems Changed With GC On": {"Message": {"Content": "This vessel has warp-drives disabled on GC. Please use its Mass Effect Drive instead.", "Time": 4.0}, "Hardpoints": {"Mass Effect Engines": 1.15,},},
 }

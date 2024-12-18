@@ -54,7 +54,7 @@ def GetName():
 	return("Normandy Cannon")
 
 def GetDamage():
-	return 65.0
+	return 33.0
 
 def GetGuidanceLifetime():
 	return 0.0
@@ -64,3 +64,16 @@ def GetMaxAngularAccel():
 
 def GetLifetime():
 	return 8.0
+
+def HullDmgMultiplier():
+	return 3
+
+def ShieldDmgMultiplier():
+	return 3
+
+try:
+	modMERailgunWeaponTorp = __import__("Custom.Techs.MERailgunWeapon")
+	if(modMERailgunWeaponTorp):
+		modMERailgunWeaponTorp.oMERailgunWeaponTorp.AddTorpedo(__name__)
+except:
+	print "MERailgunWeapon projectile script not installed, or you are missing Foundation Tech"

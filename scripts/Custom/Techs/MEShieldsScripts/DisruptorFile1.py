@@ -6,7 +6,7 @@
 # As these are Sub-techs with some leeway, their manuals must be explained here:
 ##################################
 # SPECIFIC SUB-TECH MANUAL:
-# This file adds Quantum torpedoes to the list of guaranteed bleedthrough to ME Shields, according to MEShields in-script documentation. Due to the parent script implementation, we could add multiple files that add elements, and repeated elements on the lists will not be repeatedly included on the parent script
+# This file adds disruptors to the list of guaranteed bleedthrough to ME Shields, according to MEShields in-script documentation. Due to the parent script implementation, we could add multiple files that add elements, and repeated elements on the lists will not be repeatedly included on the parent script
 
 # NOTE: Imports and additional functions may be necessary here as well, depending on how creative the sub-tech becomes
 import App
@@ -20,7 +20,7 @@ import traceback
 ProjectileName = "disruptor"
 ProjectileGuaranteedBleedthrough = 0.15
 ProjectileWhitelistFilename = ["Disruptor", "KlingonDisruptor"]  # Case-sensitive
-ProjectileBlacklistName = ["javelin disruptor", "me disruptor", "mass effect javelin", "mass effect", "antidisruptor", " no disruptor",]  # Case-insensitive
+ProjectileBlacklistName = ["javelin disruptor", "me disruptor", "mass effect javelin", "mass effect", "antidisruptor", " no disruptor", "brain disruptor", "emp disruptor", "electric disruptor","disruptor wave",]  # Case-insensitive
 ProjectileBlacklistFilename = ["AntiDisruptor", "NotADisruptor", ]  # Case-sensitive
 #ProjRacesImmune = ["Reaper"]
 
@@ -29,5 +29,5 @@ ProjectileBlacklistFilename = ["AntiDisruptor", "NotADisruptor", ]  # Case-sensi
 BeamName = "disruptor beam"
 BeamGuaranteedBleedthrough = 0.15
 BeamWhitelistHardname = ["Klingon Disruptor", "Romulan Disruptor"]
-BeamBlacklistName = ["javelin disruptor", "me disruptor", "mass effect javelin", "mass effect", "antidisruptor", " no disruptor",]
+BeamBlacklistName = ["javelin disruptor", "me disruptor", "mass effect javelin", "mass effect", "antidisruptor", " no disruptor", "brain disruptor", "emp disruptor", "electric disruptor","disruptor wave",]
 #BeamRacesImmune = ["Reaper"]

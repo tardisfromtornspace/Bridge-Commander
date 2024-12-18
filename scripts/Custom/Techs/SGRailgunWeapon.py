@@ -1,6 +1,6 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
-# 4th September 2024, by Alex SL Gato (CharaToLoki)
+# 18th December 2024, by Alex SL Gato (CharaToLoki)
 #         Based on SGIonAdaptation.py, BorgAdaptation.py and PhasedTorp.py by Alex SL Gato, which were based on the Foundation import function by Dasher; the Shield.py scripts and KM Armour scripts and FoundationTechnologies team's PhasedTorp.py
 #         Also based on ATPFunctions by Apollo.
 #################################################################################################################
@@ -180,7 +180,7 @@ import nt
 import string
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-            "Version": "0.96",
+            "Version": "0.97",
             "License": "LGPL",
             "Description": "Read the small title above for more info"
             }
@@ -547,8 +547,11 @@ try:
 						wasHullChanged = wasHullChanged3
 
 				if wasHullChanged <= 0: # If no changes were made, default damage for ST hulls
-					if hasattr(pTorp, "HullDmgMultiplier"): # If this torp has a special global multiplier, then we use it
-						hullDamageMultiplier = pTorp.HullDmgMultiplier() - 1
+					mod = pTorp.GetModuleName()
+					importedTorpInfo = __import__(mod)
+
+					if hasattr(importedTorpInfo, "HullDmgMultiplier"): # If this torp has a special global multiplier, then we use it
+						hullDamageMultiplier = importedTorpInfo.HullDmgMultiplier() - 1
 					else:
 						hullDamageMultiplier = RailgunHullDamageMultiplier -1 # This represents the extra damage, so if something deals 2 times the damage to a shield facet or the hull, we only add that extra damage once, as the first time was already added normally.
 
