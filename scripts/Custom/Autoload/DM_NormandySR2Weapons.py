@@ -8,5 +8,7 @@ import Foundation
 
 Foundation.SoundDef("sfx/Weapons/GARDIAN_a.wav", "GARDIAN Start", 1)
 Foundation.SoundDef("sfx/Weapons/GARDIAN_b.wav", "GARDIAN Loop", 1)
+Foundation.SoundDef("sfx/Weapons/METhanixCannon_Start.wav", "METhanixCannon Start", 1)
+Foundation.SoundDef("sfx/Weapons/METhanixCannon_Loop.wav", "METhanixCannon Loop", 1)
 Foundation.SoundDef("sfx/Weapons/DM_JavelinTorpedo.wav", "JavelinTorpedo", 1)
 Foundation.SoundDef("sfx/Weapons/DM_NormandyCannon.wav", "NormandyCannon", 1)
