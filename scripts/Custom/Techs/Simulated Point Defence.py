@@ -345,6 +345,7 @@ try:
 			debug(__name__ + ", shootThemDown")
 			if len(lTorpTargets) == 0:
 				return 0
+			print "detected torpedoes"
 			torpsFiredDown = 0
 
 			global defaultEffectiveness, defaultLimitSpeed, defaultMaxNumberTorps
@@ -495,13 +496,14 @@ try:
 			for kTorp in lTorpTargets:
 				pTorp = App.Torpedo_GetObjectByID(None, kTorp)
 				if not pTorp:
-					#print "No torp?"
+					print "No torp?"
 					continue
 
 				thisTorpDamage = pTorp.GetDamage()
 				thisTorpSpeed = pTorp.GetLaunchSpeed()
 
 				if thisTorpSpeed > dictLimitSpeed:
+					print "torp too fast we skip"
 					continue
 
 				thisTorpTurn = pTorp.GetMaxAngularAccel()
@@ -509,10 +511,10 @@ try:
 				isLeTorpBreenDrain = 0
 				leRicochetChance = 1
 
-				#print "The torp has the damage, speed, turn and lifetime shown here: ", thisTorpDamage, thisTorpSpeed, thisTorpTurn, thisTorpGuideLife
+				print "The torp has the damage, speed, turn and lifetime shown here: ", thisTorpDamage, thisTorpSpeed, thisTorpTurn, thisTorpGuideLife
 				if hasattr(pTorp, "GetModuleName") and not pTorp.GetModuleName() == None:
 					
-					#print "There is a torp module, the module name is ", pTorp.GetModuleName()
+					print "There is a torp module, the module name is ", pTorp.GetModuleName()
 					leTorpExtraInfo = __import__(pTorp.GetModuleName(), globals(), locals())
 					if hasattr(leTorpExtraInfo, "GetName"):
 						theTorpName = leTorpExtraInfo.GetName()
@@ -526,7 +528,7 @@ try:
 							if sTorpScriptName == "BreenDrainer" or sTorpScriptName == "BreenDrain" or sTorpScriptName == "Breen Drainer":
 								isLeTorpBreenDrain = 1
 						if theTorpName == "Jumpspace Tunnel" or theTorpName == "Vorlon Weapon":
-							#print "We cannot just shoot an interdimensional vortex on the face and with that make it collapse!"
+							print "We cannot just shoot an interdimensional vortex on the face and with that make it collapse!"
 							continue
 						if theTorpName == "Breen Drainer" or theTorpName == "Breen Drain" or theTorpName == "Breen Drainer" or theTorpName == "Jumpspace Disruptor":
 							isLeTorpBreenDrain = 1
@@ -540,7 +542,7 @@ try:
 							isLeTorpBreenDrain = 1
 
 					if hasattr(leTorpExtraInfo, "RicochetChance"):
-						#print "hey, this has ricochet chance and may evade our defense at the last moment", leTorpExtraInfo.RicochetChance()
+						print "hey, this has ricochet chance and may evade our defense at the last moment", leTorpExtraInfo.RicochetChance()
 						leRicochetChance = 1.2 - leTorpExtraInfo.RicochetChance()
 						if leRicochetChance < 0.0:
 							leRicochetChance = 0
@@ -550,30 +552,35 @@ try:
 				turnSpeedEffectiveness = 1
 				if hasLimitTurn:
 					if divider == 0: # Target pulses only
+						print "target pulses only"
 						if self.isAPulse(thisTorpGuideLife, thisTorpTurn):
 							turnSpeedEffectiveness = 1
 						else:
+							print "not a pulse, we skip"
 							continue
 					else:
 						temporaryGuide = 2.0
 						if thisTorpGuideLife < 2:
 							temporaryGuide = thisTorpGuideLife
 						if divider > 0:
-							#print "divider is greater than 0, we target all objectives. Now, thisTorpTurn*temporaryGuide/divider is ", thisTorpTurn, temporaryGuide, divider, thisTorpTurn*temporaryGuide/divider
+							print "divider is greater than 0, we target all objectives. Now, thisTorpTurn*temporaryGuide/divider is ", thisTorpTurn, temporaryGuide, divider, thisTorpTurn*temporaryGuide/divider
 							turnSpeedEffectiveness = (1 - thisTorpTurn*temporaryGuide/divider)
 						else: # Target torps only
 							if self.isAPulse(thisTorpGuideLife, thisTorpTurn):
+								print "is a pulse, we skip"
 								continue
 							else:
 								turnSpeedEffectiveness = (1 + thisTorpTurn*temporaryGuide/divider)
 						if turnSpeedEffectiveness < 0:
 							turnSpeedEffectiveness = 0
+						print "turnSpeedEffectiveness ", turnSpeedEffectiveness
 
 				linearSpeedEffectiveness = 1
 				if dictLimitSpeed == 0:
 					if thisTorpSpeed == 0:
 						linearSpeedEffectiveness = 1
 					else:
+						print "Continue because dictlimitspeed is 0 and our torp speed is not 0"
 						continue
 				else:
 					linearSpeedEffectiveness = -0.5 * (3 ** (1/3)) * -((-(thisTorpSpeed - dictLimitSpeed)) ** (1.0/3.0) )
@@ -581,6 +588,8 @@ try:
 						linearSpeedEffectiveness = 1.0
 					if linearSpeedEffectiveness < 0.0:
 						linearSpeedEffectiveness = 0.0
+
+				print "linearSpeedEffectiveness ", linearSpeedEffectiveness
 
 				damageEffectivenness = 1
 				if hasLimitDamage:
@@ -601,15 +610,16 @@ try:
 				if damageEffectivenness < 0.0:
 					damageEffectivenness = 0.0
 
+				print "damageEffectivenness ", damageEffectivenness
 				extraFactor = 1
 				if isLeTorpBreenDrain:
 					extraFactor = 0.1
 
 				finalChance = effectiveness * extraFactor * energyCommited * leRicochetChance * turnSpeedEffectiveness * linearSpeedEffectiveness * damageEffectivenness
 
-				#print "finalChance", finalChance, " = effectiveness", effectiveness, " * extraFactor", extraFactor, " * energyCommited", energyCommited, " * leRicochetChance", leRicochetChance, " * turnSpeedEffectiveness", turnSpeedEffectiveness, " * linearSpeedEffectiveness", linearSpeedEffectiveness, " * damageEffectivenness", damageEffectivenness 
+				print "finalChance", finalChance, " = effectiveness", effectiveness, " * extraFactor", extraFactor, " * energyCommited", energyCommited, " * leRicochetChance", leRicochetChance, " * turnSpeedEffectiveness", turnSpeedEffectiveness, " * linearSpeedEffectiveness", linearSpeedEffectiveness, " * damageEffectivenness", damageEffectivenness 
 				if preferredWeapon == "Tractor" or preferredWeapon == "Phaser" or App.g_kSystemWrapper.GetRandomNumber(100) <= 100 * finalChance:
-					#print "This torp must be destroyed"
+					print "This torp must be destroyed"
 					if torpsFiredDown >= maxTorpsPerTurn:
 						torpsFiredDown = 0
 						return

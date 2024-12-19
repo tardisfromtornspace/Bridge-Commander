@@ -1,4 +1,8 @@
 == Changelog ==
+0.5.1 - Updates:
+  * Added properly-adjusted Turian frigate and fighter.
+  * Refined the use of Simulated Point Defence for the GARDIAN system.
+  * Completed readme to fully localize where each thing came from.
 0.5 - Updates:
   * Added Realistic Mass Effect technology and ships for the Normandy SR-1 and Cerberus and Alliance Normandy SR-2.
 0.4.8 - Updates:
@@ -67,12 +71,15 @@ All of the technologies have their own detailed instruction manuals inside the f
 All of these must be installed before installing this mod, in this order:
 * Foundation + Kobayashi Maru (KM has Foundation already installed - the most recent version of KM, the better).
 * GalaxyCharts (KM has this mod already installed. Required for ProtoWarp TravellingMethod and any method you may want derived from that).
+* NanoFX 2.0 beta (KM already has this installed)
+** Depending on the version of KM, you may require GalaxyCharts' Warp AI fix as well: https://www.gamefront.com/games/bridge-commander/file/galaxy-charts-warp-ai-fix/
 * This mod, for the ST:Discovery original Crossfield class: https://www.gamefront.com/games/bridge-commander/file/crossfield-class
 * This mod, for the SSV Normandy https://www.gamefront.com/games/bridge-commander/file/normandy-sr-1
 * This mod, for the SR2 Normandy and ME3 Normandy https://www.gamefront.com/games/bridge-commander/file/normandy-sr-2
+* This mod, for the Turian vessels https://www.gamefront.com/games/bridge-commander/file/turian-frigate
 * All the dependencies for this mod + the mod: https://www.gamefront.com/games/bridge-commander/file/stbc-babylon-5-mod
 ** From here, HullPolarizer is the most used, but also the file "FIX-FoundationTech20050703ShipInstanceDetach.py", which solves problems related with iterating lTechs when detaching and removing from such FoundationTech list.
-
+* This mod, for the projectile ExtraCollisionDamageDummy and certain NanoFX 2.0 Beta fixes implemented there: https://www.gamefront.com/games/bridge-commander/file/sg1-sga-and-sgu-generic-overhaul-mod
 
 IMPORTANT INSTALL INSTRUCTIONS: Do not copy-paste this mod's scripts/AI folder right away, first move this mod's scripts/AI folder somewhere else. You only have to install it if the following steps require so. The provided AI scripts scripts/AI/Compound/BasicAttack and BorgAttack scripts can also be found at BCC KM 2011.10 download site (https://www.bc-central.net/forums/index.php?action=downloads;sa=view;down=33).
 
@@ -88,9 +95,9 @@ IMPORTANT INSTALL INSTRUCTIONS: Do not copy-paste this mod's scripts/AI folder r
 * USS Sovereign for some DS9FX advice regarding timers, inspired in one of DS9FX Pulsar files for improved rotations, AND MOST IMPORTANTLY, for giving me permission to adopt fragments of his Slipstream Module for Intra-System-Intercept. Those sections, while still modified to be adjusted to the script, still fall under "All Rights Reserved" so you cannot modify or repacakge them without USS Sovereign's permission!
 ** Again USS Sovereign for helping me notice NormalWarp and EnhancedWarp were All Rights Reserved by USS Frontier and could not be modified directly without violating such license, helping me from suffering a legal headache.
 * USS Frontier for GalaxyCharts.
-* The authors of https://www.gamefront.com/games/bridge-commander/file/normandy-sr-1 and https://www.gamefront.com/games/bridge-commander/file/normandy-sr-2, whose READMES have also been included on this mod and which seem to only fall under teh SDK license (their contact is 1701abcde@gmail.com or PM them at http://www.bc-central.com/forums if there's any issue).
+* The authors of https://www.gamefront.com/games/bridge-commander/file/normandy-sr-1, https://www.gamefront.com/games/bridge-commander/file/normandy-sr-2 and https://www.gamefront.com/games/bridge-commander/file/turian-frigate (apparently Bones) for the original Normandy SR-1, SR-2 (Alliance and Cerberus), and the Turian fighter and Turian Frigate, whose READMES have also been included on this mod and which seem to only fall under teh SDK license (their contact is 1701abcde@gmail.com or PM them at http://www.bc-central.com/forums if there's any issue).
 ** Excerpt from both readmes (in case something happens and they are lost):
-*** Bioware: Mass Effect 1&2&3 ; Normandy SR1 and SR2 Mesh
+*** Bioware: Mass Effect 1&2&3 ; Normandy SR1 and SR2 Mesh and Turian Fighter and Frigate.
 *** Activision/Totally Games: For Bridge Commander
 *** Paramount and Gene Roddenberry: For Star Trek
 *** dr_mccoy 11/Bones: Model conversion, new textures for Alliance version
@@ -103,7 +110,10 @@ IMPORTANT INSTALL INSTRUCTIONS: Do not copy-paste this mod's scripts/AI folder r
 * That Guy... Brian (ThatGuyBrian, trekker12@hotmail.com) - for Model Conversion of the original Protostar and Crossfield models (already mentioned on the Crossfield's separate readme), the Crossfield original HP (already mentioned on the Crossfield's separate readme), and for telling me to install Nifskope, that tool has proven to be very useful to me.
 ** Prodigy model extracted from Star Trek Prodigy: Supernova. https://drive.google.com/file/d/1BMaT2_i5KBIqZ5Am1Hr4vK-81yZQ9GsE/view
 ** Original Crossfield model (from the aforementioned https://www.gamefront.com/games/bridge-commander/file/crossfield-class) ported from Star Trek: Adversaries (https://store.steampowered.com/app/815040/Star_Trek_Adversaries/)
-* Grey da Derg#2305 aka Greystar, and 𝕟𝕒𝕣𝕣𝕠𝕨𝕔𝕨𝕪𝕗𝕖 aka Hexagonal_Nexul for the original Hardpointing/Sounds/Scripting from BC Remastered Orion (from which this ship was taken from) and an updated version.
+* Mass Effect FTL sounds and Mass Accelerator sounds from ME3 final space battle, taken from Gamer's Little Playground's channel https://www.youtube.com/watch?v=iEoBsKALnxE
+* Thanix cannon sounds: from N7Reinas's channel https://www.youtube.com/watch?v=hByyA01r0dA recording of ME2
+* Original Electric Explosion effect, modified for the Eezo field, taken from VonFrank's work in BC:Remastered.
+* Grey da Derg#2305 aka Greystar, and 𝕟𝕒𝕣𝕣𝕠𝕨𝕔𝕨𝕪𝕗𝕖 aka Hexagonal_Nexul for the original Hardpointing/Sounds/Scripting from BC Remastered Orion (from which the Protostar ship was taken from) and an updated version.
 * Original ST:Discovery torpedoes by Zambie Zan, alexandre.marques@gmail.com (already mentioned on the Crossfield's separate readme).
 * Everyone else from the other mods I mentioned, which have their own readmes crediting them - please feel free to contact me (tardis#2540 on Discord, CharaToLoki on Gamefront) to correct any potential issues, thank you.
 * Michael Giachinno for the ST Prodigy Intro music.

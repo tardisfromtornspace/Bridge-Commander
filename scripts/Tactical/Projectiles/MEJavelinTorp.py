@@ -42,7 +42,7 @@ def Create(pTorp):
 	return(0)
 
 def GetLaunchSpeed():
-	return(50.0)
+	return(45.0)
 
 def GetLaunchSound():
 	return("JavelinTorpedo")
@@ -60,10 +60,10 @@ def GetGuidanceLifetime():
 	return 6.0
 
 def GetMaxAngularAccel():
-	return 0.15
+	return 0.12
 
 def GetLifetime():
-	return 8.0
+	return 20.0
 
 def HullDmgMultiplier():
 	return 4
