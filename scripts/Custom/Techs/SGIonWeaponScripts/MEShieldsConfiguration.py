@@ -1,6 +1,6 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
-# 18th December 2024, by Alex SL Gato (CharaToLoki)
+# 19th December 2024, by Alex SL Gato (CharaToLoki)
 # Version: 1.1
 # Meant to be used alongside the SGIonWeapon Technology (located at scripts/Custom/Techs), this file must be under scripts/Custom/Techs/SGIonWeaponScripts
 # As these are Sub-techs with some leeway, their manuals must be explained here:
@@ -20,7 +20,7 @@ import FoundationTech
 
 import string
 
-IonMEShieldDamageMultiplier = 4.0
+IonMEShieldDamageMultiplier = 10.0
 IonMEHullDamageMultiplier = 1.0
 IonMEElectricChargeHullDamageMultiplier = 0.1
 

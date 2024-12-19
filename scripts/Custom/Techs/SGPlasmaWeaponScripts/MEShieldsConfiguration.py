@@ -20,7 +20,7 @@ import FoundationTech
 
 import string
 
-PlasmaMEShieldDamageMultiplier = 8.0
+PlasmaMEShieldDamageMultiplier = 12.0
 PlasmaMEHullDamageMultiplierBoost = 1.0
 PlasmaMEHullDamageMultiplier = 0.9
 
@@ -32,6 +32,11 @@ def interactionShieldBehaviour(pShip, sScript, sShipScript, pInstance, pEvent, p
 		wasChanged = wasChanged + 1
 		shouldDealAllFacetDamage = shouldDealAllFacetDamage + 1
 		considerPiercing = considerPiercing + 1
+
+		mod = pTorp.GetModuleName()
+		importedTorpInfo = __import__(mod)
+		if hasattr(importedTorpInfo, "ShieldDmgMultiplier"): # If this torp has a special global multiplier, then we use it
+			shieldDamageMultiplier = shieldDamageMultiplier * importedTorpInfo.ShieldDmgMultiplier()
 
 		shieldDamageMultiplier = shieldDamageMultiplier * PlasmaMEShieldDamageMultiplier
 

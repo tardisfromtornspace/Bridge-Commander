@@ -1473,3 +1473,481 @@ DS9FX: Active and Operational...
 
 
 ##### End Of The Log #####
+##### Bridge Commander Exit Log: 19 Dec 2024 00:53:36#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+Jumpspace Drive 20070905 Initializing...
+TimeVortex Drive 20070905 Initializing...
+Warpspace Drive 20070905 Initializing...
+DS9FX Initializing...
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+# DS9FX has...
+
+# taken a console dump
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+Jumpspace: Quick Battle is running... Mod is starting up...
+TimeVortex: Quick Battle is running... Mod is starting up...
+Warpspace: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Ship SSV Normandy SR1-2 with Alternative Warp FTL SubModel support added
+Ship SSV Normandy SR1-3 with Alternative Warp FTL SubModel support added
+Ship SSV Normandy SR1-4 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2f0105e0_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _4085e770_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2f00dbc0_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-4 C Torpedo instance at _4085ebc0_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-4 C Torpedo instance at _4085e8e0_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2f0105e0_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _40855be8_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-2 C Torpedo instance at _2efcd470_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-2 C Torpedo instance at _40855ec8_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _4085e770_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-3 C Torpedo instance at _40855a78_p_Torpedo to (70.312500, 1.406250)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _40855d58_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-3 C Torpedo instance at _408561a8_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-2 C Torpedo instance at _40856038_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _40856488_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2efcd750_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-2 C Torpedo instance at _2f00dd30_p_Torpedo to (70.312500, 1.406250)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-4 C Torpedo instance at _40856488_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-4 C Torpedo instance at _40856038_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _408561a8_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _4085e770_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-4 C Torpedo instance at _2efcd8c0_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2efcdba0_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _40856488_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _40856038_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _40855ec8_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _4085ea50_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-4 C Torpedo instance at _2f00dbc0_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-4 C Torpedo instance at _40855d58_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _40855be8_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _40855ec8_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _4085e770_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2efcd8c0_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _4085e8e0_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _4085ea50_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _408561a8_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _408561a8_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _408561a8_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _4085e8e0_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-4 C Torpedo instance at _2efcd750_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _4085e8e0_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _408561a8_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-4 C Torpedo instance at _2efcdd10_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2efcde80_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2efcd470_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-4 C Torpedo instance at _2efcd750_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2efcd470_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2efcdd10_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-4 C Torpedo instance at _2efcd5e0_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _40856038_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _4085ea50_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2efcdd10_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2efcd750_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2efcd5e0_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _40855a78_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _40856038_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _4085ea50_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-2 C Torpedo instance at _40856038_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2efcdd10_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-3 C Torpedo instance at _2efcde80_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-3 C Torpedo instance at _2efcd750_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-4 C Torpedo instance at _4085ebc0_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-4 C Torpedo instance at _2f00dd30_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-3 C Torpedo instance at _4085ebc0_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _4085ebc0_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-3 C Torpedo instance at _4085ebc0_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-2 C Torpedo instance at _2efcd470_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2efcd5e0_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-3 C Torpedo instance at _2efcd5e0_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-2 C Torpedo instance at _2f00dd30_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2efcd470_p_Torpedo to (70.312500, 1.406250)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _4085e8e0_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-3 C Torpedo instance at _40856318_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-3 C Torpedo instance at _40855a78_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2f010470_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2efcd5e0_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-3 C Torpedo instance at _2f010470_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-2 C Torpedo instance at _40856318_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2f010470_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-3 C Torpedo instance at _40856038_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2efcdd10_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-2 C Torpedo instance at _4085e770_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-3 C Torpedo instance at _40855a78_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _4085e770_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-3 C Torpedo instance at _2efcd8c0_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-4 C Torpedo instance at _40855a78_p_Torpedo to (7.500000, 0.150000)
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Ship SSV Normandy SR1-1 with Alternative Warp FTL SubModel support added
+Ship SSV Normandy SR1-2 with Alternative Warp FTL SubModel support added
+Ship SSV Normandy SR1-3 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting splash damage for SSV Normandy SR1-1 to (164.122803, 3.282456)
+Simulated Point Defence: cancelling, error in try found...
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 19 Dec 2024 00:53:36#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+Jumpspace Drive 20070905 Initializing...
+TimeVortex Drive 20070905 Initializing...
+Warpspace Drive 20070905 Initializing...
+DS9FX Initializing...
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+# DS9FX has...
+
+# taken a console dump
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+Jumpspace: Quick Battle is running... Mod is starting up...
+TimeVortex: Quick Battle is running... Mod is starting up...
+Warpspace: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Ship SSV Normandy SR1-2 with Alternative Warp FTL SubModel support added
+Ship SSV Normandy SR1-3 with Alternative Warp FTL SubModel support added
+Ship SSV Normandy SR1-4 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2f0105e0_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _4085e770_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2f00dbc0_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-4 C Torpedo instance at _4085ebc0_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-4 C Torpedo instance at _4085e8e0_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2f0105e0_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _40855be8_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-2 C Torpedo instance at _2efcd470_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-2 C Torpedo instance at _40855ec8_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _4085e770_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-3 C Torpedo instance at _40855a78_p_Torpedo to (70.312500, 1.406250)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _40855d58_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-3 C Torpedo instance at _408561a8_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-2 C Torpedo instance at _40856038_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _40856488_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2efcd750_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-2 C Torpedo instance at _2f00dd30_p_Torpedo to (70.312500, 1.406250)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-4 C Torpedo instance at _40856488_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-4 C Torpedo instance at _40856038_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _408561a8_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _4085e770_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-4 C Torpedo instance at _2efcd8c0_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2efcdba0_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _40856488_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _40856038_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _40855ec8_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _4085ea50_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-4 C Torpedo instance at _2f00dbc0_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-4 C Torpedo instance at _40855d58_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _40855be8_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _40855ec8_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _4085e770_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2efcd8c0_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _4085e8e0_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _4085ea50_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _408561a8_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _408561a8_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _408561a8_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _4085e8e0_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-4 C Torpedo instance at _2efcd750_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _4085e8e0_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _408561a8_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-4 C Torpedo instance at _2efcdd10_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2efcde80_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2efcd470_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-4 C Torpedo instance at _2efcd750_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2efcd470_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2efcdd10_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-4 C Torpedo instance at _2efcd5e0_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _40856038_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _4085ea50_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2efcdd10_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2efcd750_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2efcd5e0_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _40855a78_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _40856038_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _4085ea50_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-2 C Torpedo instance at _40856038_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2efcdd10_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-3 C Torpedo instance at _2efcde80_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-3 C Torpedo instance at _2efcd750_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-4 C Torpedo instance at _4085ebc0_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-4 C Torpedo instance at _2f00dd30_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-3 C Torpedo instance at _4085ebc0_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _4085ebc0_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-3 C Torpedo instance at _4085ebc0_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-2 C Torpedo instance at _2efcd470_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2efcd5e0_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-3 C Torpedo instance at _2efcd5e0_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-2 C Torpedo instance at _2f00dd30_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2efcd470_p_Torpedo to (70.312500, 1.406250)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _4085e8e0_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-3 C Torpedo instance at _40856318_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-3 C Torpedo instance at _40855a78_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2f010470_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2efcd5e0_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-3 C Torpedo instance at _2f010470_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-2 C Torpedo instance at _40856318_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2f010470_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-3 C Torpedo instance at _40856038_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2efcdd10_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-2 C Torpedo instance at _4085e770_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-3 C Torpedo instance at _40855a78_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _4085e770_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-3 C Torpedo instance at _2efcd8c0_p_Torpedo to (7.500000, 0.150000)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-4 C Torpedo instance at _40855a78_p_Torpedo to (7.500000, 0.150000)
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Ship SSV Normandy SR1-1 with Alternative Warp FTL SubModel support added
+Ship SSV Normandy SR1-2 with Alternative Warp FTL SubModel support added
+Ship SSV Normandy SR1-3 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting splash damage for SSV Normandy SR1-1 to (164.122803, 3.282456)
+Simulated Point Defence: cancelling, error in try found...
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 19 Dec 2024 00:57:52#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+Jumpspace Drive 20070905 Initializing...
+TimeVortex Drive 20070905 Initializing...
+Warpspace Drive 20070905 Initializing...
+DS9FX Initializing...
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+Jumpspace: Quick Battle is running... Mod is starting up...
+TimeVortex: Quick Battle is running... Mod is starting up...
+Warpspace: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+
+
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+# DS9FX has...
+
+# taken a console dump
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2ee94028_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2ee93eb8_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _42f2ff08_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2ee94770_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2ee94028_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _42f2fd98_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _42f2fc28_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _42f2ff08_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2ee94028_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _42f2fd98_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _42f2ff08_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2ee948e0_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _42f2fc28_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _42f2fab8_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2ee94028_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _42f2fc28_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _42f2ff08_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2ee94770_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2ee948e0_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2ee94770_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _42f2fd98_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _42f2ff08_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2ee948e0_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _42f2fd98_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _42f2fab8_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _42f2ff08_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2ee94770_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2ee948e0_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _42f2fc28_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _42f2fab8_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2ee948e0_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _42f2ff08_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2ee94028_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2ee948e0_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _42f2fab8_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _42f2ff08_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _42f2fd98_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2ee94028_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2ee94770_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _42f2ff08_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2ee93eb8_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2ee94028_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _42f2fab8_p_Torpedo to (26.999998, 0.540000)
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 19 Dec 2024 00:57:52#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+Jumpspace Drive 20070905 Initializing...
+TimeVortex Drive 20070905 Initializing...
+Warpspace Drive 20070905 Initializing...
+DS9FX Initializing...
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+Jumpspace: Quick Battle is running... Mod is starting up...
+TimeVortex: Quick Battle is running... Mod is starting up...
+Warpspace: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+
+
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+# DS9FX has...
+
+# taken a console dump
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2ee94028_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2ee93eb8_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _42f2ff08_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2ee94770_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2ee94028_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _42f2fd98_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _42f2fc28_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _42f2ff08_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2ee94028_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _42f2fd98_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _42f2ff08_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2ee948e0_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _42f2fc28_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _42f2fab8_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2ee94028_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _42f2fc28_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _42f2ff08_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2ee94770_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2ee948e0_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2ee94770_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _42f2fd98_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _42f2ff08_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2ee948e0_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _42f2fd98_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _42f2fab8_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _42f2ff08_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2ee94770_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2ee948e0_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _42f2fc28_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _42f2fab8_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2ee948e0_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _42f2ff08_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2ee94028_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2ee948e0_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _42f2fab8_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _42f2ff08_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _42f2fd98_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2ee94028_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2ee94770_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _42f2ff08_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2ee93eb8_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2ee94028_p_Torpedo to (26.999998, 0.540000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _42f2fab8_p_Torpedo to (26.999998, 0.540000)
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####

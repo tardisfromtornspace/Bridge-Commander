@@ -18,7 +18,7 @@ import traceback
 #{"ProjectileName": {"GuaranteedBleedthrough": 0.1, "WhitelistFilename": ["Quantum", "QuantumTorpedo"], "BlacklistName": ["not a quantum", "not quantum", "no quantum", "anti-quantum", "antiquantum", "quantumania"], "BlacklistFilename": ["AntiQuantum", "Quantumania"]}
 
 ProjectileName = "mass effect javelin"
-ProjectileGuaranteedBleedthrough = 0.5
+ProjectileGuaranteedBleedthrough = 0.3
 ProjectileWhitelistFilename = ["MEJavelinTorp"]  # Case-sensitive
 ProjectileBlacklistName = ["not a mass effect", "not a mass-effect", "not a masseffect", " not mass effect", " not masseffect", " not mass-effect", " no mass effect", " no masseffect", " no mass-effect", "anti-mass effect", "anti-mass-effect", "antimasseffect"]  # Case-insensitive
 ProjectileBlacklistFilename = ["Javelin"]  # Case-sensitive
@@ -27,7 +27,7 @@ ProjectileBlacklistFilename = ["Javelin"]  # Case-sensitive
 # Below here we have an example for phasers - something which btw I totally do not think can penetrate SG Shields, it's just an example I used for testing bleedthrough and which I leave here in case somebody wants to add on another file a certain type of beam to bypass SG Shields
 # {"BeamName": {"GuaranteedBleedthrough": 0.05, "WhitelistHardname": ["Ventral Phaser 1"], "BlacklistName": ["not a phaser", "notphaser", "laser", "nophaser"]}
 #BeamName = "Phaser"
-#BeamGuaranteedBleedthrough = 0.05
+#BeamGuaranteedBleedthrough = 0.3
 #BeamWhitelistHardname = ["Ventral Phaser 1"]
 #BeamBlacklistName = ["not a phaser", "notphaser", "laser", "nophaser"]
 #BeamRacesImmune = ["Ori"]
