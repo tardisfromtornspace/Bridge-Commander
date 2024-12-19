@@ -95,7 +95,7 @@ Foundation.ShipDef.USSProtostar.dTechs = { # (#)
 #################################################################################################################
 #
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.31",
+	    "Version": "0.32",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -728,21 +728,30 @@ def PlayMassEffectFTLSound(pAction, pWS, sType, sRace):
 			import Custom.NanoFXv2.WarpFX.WarpFX
 			if sRace == "":
 				sRace = "Default"
+			siType = ""
 			if sType == "Enter Warp":
-				sType = "EnterMassEffectFTL"
+				siType = "EnterMassEffectFTL"
 			elif sType == "Exit Warp":
-				sType = "ExitMassEffectFTL"
+				siType = "ExitMassEffectFTL"
 			else:
-				sType = ""
-			if sType != "":
-				sFile = "sfx\\MassEffectFTL\\"+sRace+"\\"+sRace+sType+".wav"
-				Custom.GravityFX.GravityFXlib.PlaySound(sFile, sRace+" "+sType+" Sound")
+				siType = ""
+			if siType != "":
+				sFile = "sfx\\MassEffectFTL\\"+sRace+"\\"+sRace+siType+".wav"
+				Custom.GravityFX.GravityFXlib.PlaySound(sFile, sRace+" "+siType+" Sound")
 		except:
 			try:
 				sRace = "Default"
+				siType = ""
 				if sType == "Enter Warp":
-					sFile = "sfx\\MassEffectFTL\\"+sRace+"\\"+sRace+sType+".wav"
-					Custom.GravityFX.GravityFXlib.PlaySound(sFile, sRace+" "+sType+" Sound")
+					siType = "EnterMassEffectFTL"
+				elif sType == "Exit Warp":
+					siType = "ExitMassEffectFTL"
+				else:
+					siType = ""
+
+				if siType != "":
+					sFile = "sfx\\MassEffectFTL\\"+sRace+"\\"+sRace+siType+".wav"
+					Custom.GravityFX.GravityFXlib.PlaySound(sFile, sRace+" "+siType+" Sound")
 			except:
 				print "MassEffectFTL TravellingMethod: error while calling PlayMassEffectFTLSound:"
 				traceback.print_exc()

@@ -1,4 +1,6 @@
 == Changelog ==
+0.5.2 - Fixes:
+  * Updated ProtoWarp, SporeDrive and MassEffect FTL to 0.32, fixing a sound issue.
 0.5.1 - Updates:
   * Added properly-adjusted Turian frigate and fighter.
   * Refined the use of Simulated Point Defence for the GARDIAN system.

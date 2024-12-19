@@ -97,7 +97,7 @@ Foundation.ShipDef.USSProtostar.dTechs = { # (#)
 #################################################################################################################
 #
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.3",
+	    "Version": "0.32",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -770,23 +770,31 @@ def PlaySporeDriveSoundI(pAction, pShip, sType, sRace):
 	if pSet.GetRegionModule() == pPlaSet.GetRegionModule():
 		try:
 			import Custom.NanoFXv2.WarpFX.WarpFX
+			siType = ""
 			if sRace == "":
 				sRace = "Default"
 			if sType == "Enter Warp":
-				sType = "EnterSporeDrive"
+				siType = "EnterSporeDrive"
 			elif sType == "Exit Warp":
-				sType = "ExitSporeDrive"
+				siType = "ExitSporeDrive"
 			else:
-				sType = ""
-			if sType != "":
-				sFile = "sfx\\SporeDrive\\"+sRace+"\\"+sRace+sType+".wav"
-				Custom.GravityFX.GravityFXlib.PlaySound(sFile, sRace+" "+sType+" Sound")
+				siType = ""
+			if siType != "":
+				sFile = "sfx\\SporeDrive\\"+sRace+"\\"+sRace+siType+".wav"
+				Custom.GravityFX.GravityFXlib.PlaySound(sFile, sRace+" "+siType+" Sound")
 		except:
 			try:
 				sRace = "Default"
-				if sType != "":
-					sFile = "sfx\\SporeDrive\\"+sRace+"\\"+sRace+sType+".wav"
-					Custom.GravityFX.GravityFXlib.PlaySound(sFile, sRace+" "+sType+" Sound")
+				siType = ""
+				if sType == "Enter Warp":
+					siType = "EnterSporeDrive"
+				elif sType == "Exit Warp":
+					siType = "ExitSporeDrive"
+				else:
+					siType = ""
+				if siType != "":
+					sFile = "sfx\\SporeDrive\\"+sRace+"\\"+sRace+siType+".wav"
+					Custom.GravityFX.GravityFXlib.PlaySound(sFile, sRace+" "+siType+" Sound")
 			except:
 				print "SporeDrive TravellingMethod: error while calling PlaySporeDriveSound:"
 				traceback.print_exc()
