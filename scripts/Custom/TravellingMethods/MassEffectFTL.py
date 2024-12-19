@@ -493,7 +493,7 @@ def CanTravel(self):
 						pSequence.AddAction (pSubtitleAction)
 						pSequence.Play ()
 						App.g_kLocalizationManager.Unload (pDatabase)
-			return "All proto-cores are disabled"
+			return "All Mass Effect cores are disabled"
 
 	pSet = pShip.GetContainingSet()
 	#pNebula = pSet.GetNebula()
