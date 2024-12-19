@@ -87,7 +87,7 @@ lSWVulnerableLegacyList = (
                 )
 
 
-def interactionShieldBehaviour(attackerID, pAttacker, pAttackerInstance, pAttackerInstanceDict, targetID, pTarget, pTargetInstance, pTargetInstanceDict, sScript, sShipScript, pEvent, hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, wasChanged):
+def interactionShieldBehaviour(attackerID, pAttacker, pAttackerInstance, pAttackerInstanceDict, targetID, pTarget, pTargetInstance, pTargetInstanceDict, sScript, sShipScript, pEvent, hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, wasChanged, considerDisabledShieldPass):
 	global lSWVulnerableLegacyList
 	if (pTargetInstance and pTargetInstanceDict.has_key("SW Shields")) or sShipScript in lSWVulnerableLegacyList:
 		wasChanged = wasChanged + 1
@@ -97,9 +97,9 @@ def interactionShieldBehaviour(attackerID, pAttacker, pAttackerInstance, pAttack
 			
 
 
-	return hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, wasChanged
+	return hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, wasChanged, considerDisabledShieldPass
 
-def interactionHullBehaviour(attackerID, pAttacker, pAttackerInstance, pAttackerInstanceDict, targetID, pTarget, pTargetInstance, pTargetInstanceDict, sScript, sShipScript, pEvent, hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, wasChanged):
+def interactionHullBehaviour(attackerID, pAttacker, pAttackerInstance, pAttackerInstanceDict, targetID, pTarget, pTargetInstance, pTargetInstanceDict, sScript, sShipScript, pEvent, hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, wasChanged, considerDisabledShieldPass):
 	global lSWVulnerableLegacyList
 	if (pTargetInstance and pTargetInstanceDict.has_key("SW Shields")) or sShipScript in lSWVulnerableLegacyList: # SW shields are extremely weak to Ion Weapons, they are used to knock them out, albeit not destroy them
 		wasChanged = wasChanged + 1
@@ -107,5 +107,5 @@ def interactionHullBehaviour(attackerID, pAttacker, pAttackerInstance, pAttacker
 		global ThanixSWHullDamageMultiplier
 		hullDamageMultiplier = hullDamageMultiplier * ThanixSWHullDamageMultiplier
 
-	return hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, wasChanged
+	return hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, wasChanged, considerDisabledShieldPass
 

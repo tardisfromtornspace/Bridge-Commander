@@ -27,7 +27,7 @@ xReaperHullResistMultiplier = 0.25
 xReaperShieldResistMultiplier = (1.0/4.0)
 
 ##### This function below is used for shield behaviour towards this weapon (when the hull has not been hit)
-def interactionShieldBehaviour(attackerID, pAttacker, pAttackerInstance, pAttackerInstanceDict, targetID, pTarget, pTargetInstance, pTargetInstanceDict, sScript, sShipScript, pEvent, hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, wasChanged):
+def interactionShieldBehaviour(attackerID, pAttacker, pAttackerInstance, pAttackerInstanceDict, targetID, pTarget, pTargetInstance, pTargetInstanceDict, sScript, sShipScript, pEvent, hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, wasChanged, considerDisabledShieldPass):
 	if pTargetInstance and pTargetInstanceDict.has_key("ME Shields"):
 		wasChanged = wasChanged + 1
 		if pTargetInstanceDict["ME Shields"].has_key("RaceShieldTech"):
@@ -35,11 +35,15 @@ def interactionShieldBehaviour(attackerID, pAttacker, pAttackerInstance, pAttack
 			if RaceShieldTech == "Reaper": # Resistances
 				global xReaperShieldResistMultiplier
 				shieldDamageMultiplier = shieldDamageMultiplier * xReaperShieldResistMultiplier
+			else:
+				considerDisabledShieldPass = considerDisabledShieldPass + 1
+		else:
+			considerDisabledShieldPass = considerDisabledShieldPass + 1
 
-	return hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, wasChanged
+	return hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, wasChanged, considerDisabledShieldPass
 
 ##### This function below is used for hull behaviour towards this weapon (when the hull has been hit)
-def interactionHullBehaviour(attackerID, pAttacker, pAttackerInstance, pAttackerInstanceDict, targetID, pTarget, pTargetInstance, pTargetInstanceDict, sScript, sShipScript, pEvent, hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, wasChanged):
+def interactionHullBehaviour(attackerID, pAttacker, pAttackerInstance, pAttackerInstanceDict, targetID, pTarget, pTargetInstance, pTargetInstanceDict, sScript, sShipScript, pEvent, hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, wasChanged, considerDisabledShieldPass):
 	if pTargetInstance and pTargetInstanceDict.has_key("ME Shields"):
 		RaceShieldTech = None
 		if pTargetInstanceDict["ME Shields"].has_key("RaceHullTech"): # We will assume shields and hull tech races are the same unless we say otherwise, for simplicity to not add too many fields.
@@ -54,4 +58,4 @@ def interactionHullBehaviour(attackerID, pAttacker, pAttackerInstance, pAttacker
 			if pTargetInstanceDict["ME Shields"].has_key("Reaper Dampening"):
 				hullDamageMultiplier = hullDamageMultiplier * pTargetInstanceDict["ME Shields"]["Reaper Dampening"]
 
-	return hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, wasChanged
+	return hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, wasChanged, considerDisabledShieldPass

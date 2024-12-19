@@ -26,7 +26,7 @@ xDefaultShieldResistMultiplier = 0.035
 xAsgardShieldResistMultiplier = (1.0/2.0)
 
 ##### This function below is used for shield behaviour towards this weapon (when the hull has not been hit)
-def interactionShieldBehaviour(attackerID, pAttacker, pAttackerInstance, pAttackerInstanceDict, targetID, pTarget, pTargetInstance, pTargetInstanceDict, sScript, sShipScript, pEvent, hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, wasChanged):
+def interactionShieldBehaviour(attackerID, pAttacker, pAttackerInstance, pAttackerInstanceDict, targetID, pTarget, pTargetInstance, pTargetInstanceDict, sScript, sShipScript, pEvent, hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, wasChanged, considerDisabledShieldPass):
 	if pTargetInstance and pTargetInstanceDict.has_key("SG Shields"):
 		wasChanged = wasChanged + 1
 		if pTargetInstanceDict["SG Shields"].has_key("RaceShieldTech"):
@@ -37,10 +37,10 @@ def interactionShieldBehaviour(attackerID, pAttacker, pAttackerInstance, pAttack
 
 		shieldDamageMultiplier = shieldDamageMultiplier * xDefaultShieldResistMultiplier
 
-	return hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, wasChanged
+	return hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, wasChanged, considerDisabledShieldPass
 
 ##### This function below is used for hull behaviour towards this weapon (when the hull has been hit)
-def interactionHullBehaviour(attackerID, pAttacker, pAttackerInstance, pAttackerInstanceDict, targetID, pTarget, pTargetInstance, pTargetInstanceDict, sScript, sShipScript, pEvent, hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, wasChanged):
+def interactionHullBehaviour(attackerID, pAttacker, pAttackerInstance, pAttackerInstanceDict, targetID, pTarget, pTargetInstance, pTargetInstanceDict, sScript, sShipScript, pEvent, hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, wasChanged, considerDisabledShieldPass):
 	if pTargetInstance and pTargetInstanceDict.has_key("SG Shields"): # Own turf, SG Ion Weapons are meant to deal additional damage to weak Naquadah and some Neutronium hulls... and Replicator hulls
 		RaceShieldTech = None
 		if pTargetInstanceDict["SG Shields"].has_key("RaceHullTech"): # We will assume shields and hull tech races are the same unless we say otherwise, for simplicity to not add too many fields.
@@ -55,5 +55,5 @@ def interactionHullBehaviour(attackerID, pAttacker, pAttackerInstance, pAttacker
 			if pTargetInstanceDict["SG Shields"].has_key("Wraith Dampening"):
 				hullDamageMultiplier = hullDamageMultiplier * pTargetInstanceDict["SG Shields"]["Wraith Dampening"]
 
-	return hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, wasChanged
+	return hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, wasChanged, considerDisabledShieldPass
 

@@ -1,4 +1,6 @@
 == Changelog ==
+0.5 - Updates:
+  * Added Realistic Mass Effect technology and ships for the Normandy SR-1 and Cerberus and Alliance Normandy SR-2.
 0.4.8 - Updates:
   * Updated AlternateSubModelFTL to version 0.82 to support vessels which do not have any models to replace.
 0.4.7 - Updates:
@@ -86,9 +88,18 @@ IMPORTANT INSTALL INSTRUCTIONS: Do not copy-paste this mod's scripts/AI folder r
 * USS Sovereign for some DS9FX advice regarding timers, inspired in one of DS9FX Pulsar files for improved rotations, AND MOST IMPORTANTLY, for giving me permission to adopt fragments of his Slipstream Module for Intra-System-Intercept. Those sections, while still modified to be adjusted to the script, still fall under "All Rights Reserved" so you cannot modify or repacakge them without USS Sovereign's permission!
 ** Again USS Sovereign for helping me notice NormalWarp and EnhancedWarp were All Rights Reserved by USS Frontier and could not be modified directly without violating such license, helping me from suffering a legal headache.
 * USS Frontier for GalaxyCharts.
+* The authors of https://www.gamefront.com/games/bridge-commander/file/normandy-sr-1 and https://www.gamefront.com/games/bridge-commander/file/normandy-sr-2, whose READMES have also been included on this mod and which seem to only fall under teh SDK license (their contact is 1701abcde@gmail.com or PM them at http://www.bc-central.com/forums if there's any issue).
+** Excerpt from both readmes (in case something happens and they are lost):
+*** Bioware: Mass Effect 1&2&3 ; Normandy SR1 and SR2 Mesh
+*** Activision/Totally Games: For Bridge Commander
+*** Paramount and Gene Roddenberry: For Star Trek
+*** dr_mccoy 11/Bones: Model conversion, new textures for Alliance version
+*** BETA TESTERS for original sr1 and sr2 mods: TiqHud, Killallewoks, FarShot and Shadowknight1
+*** SPECIAL THANKS TO BRIDGE COMMANDER CENTRAL COMMUNITY AND BETA TESTERS FOR ALL FEEDBACK AND SUPPORT.
 * Defiant for some scripts that drew inspiration (or were practically used as a base), particularly the original SubModels.
 * jayce AKA Resistance Is Futile for the original BorgAttack.py which I patched to support GC and no GC without issue.
 * WileyCoyote (michaelwileyart@gmail.com) for the Crossfield Phaser sounds (already mentioned of the Crossfield's separate readme).
+* BCC Community for feedback.
 * That Guy... Brian (ThatGuyBrian, trekker12@hotmail.com) - for Model Conversion of the original Protostar and Crossfield models (already mentioned on the Crossfield's separate readme), the Crossfield original HP (already mentioned on the Crossfield's separate readme), and for telling me to install Nifskope, that tool has proven to be very useful to me.
 ** Prodigy model extracted from Star Trek Prodigy: Supernova. https://drive.google.com/file/d/1BMaT2_i5KBIqZ5Am1Hr4vK-81yZQ9GsE/view
 ** Original Crossfield model (from the aforementioned https://www.gamefront.com/games/bridge-commander/file/crossfield-class) ported from Star Trek: Adversaries (https://store.steampowered.com/app/815040/Star_Trek_Adversaries/)

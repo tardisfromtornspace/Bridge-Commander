@@ -56,7 +56,7 @@ lB5ResistantLegacyList = (
                 )
 
 
-def interactionShieldBehaviour(attackerID, pAttacker, pAttackerInstance, pAttackerInstanceDict, targetID, pTarget, pTargetInstance, pTargetInstanceDict, sScript, sShipScript, pEvent, hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, wasChanged):
+def interactionShieldBehaviour(attackerID, pAttacker, pAttackerInstance, pAttackerInstanceDict, targetID, pTarget, pTargetInstance, pTargetInstanceDict, sScript, sShipScript, pEvent, hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, wasChanged, considerDisabledShieldPass):
 	global METhanixB5LegacyShieldDamageMultiplier
 	if pTargetInstance:
 		if pTargetInstanceDict.has_key('Defense Grid') or pTargetInstanceDict.has_key('Gravimetric Defense'):
@@ -91,9 +91,9 @@ def interactionShieldBehaviour(attackerID, pAttacker, pAttackerInstance, pAttack
 		wasChanged = wasChanged + 1
 		shouldPassThrough = shouldPassThrough + 1
 
-	return hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, wasChanged
+	return hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, wasChanged, considerDisabledShieldPass
 
-def interactionHullBehaviour(attackerID, pAttacker, pAttackerInstance, pAttackerInstanceDict, targetID, pTarget, pTargetInstance, pTargetInstanceDict, sScript, sShipScript, pEvent, hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, wasChanged):
+def interactionHullBehaviour(attackerID, pAttacker, pAttackerInstance, pAttackerInstanceDict, targetID, pTarget, pTargetInstance, pTargetInstanceDict, sScript, sShipScript, pEvent, hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, wasChanged, considerDisabledShieldPass):
 	global defenceGridMultiplier, hullPolarizerMultiplier, shadowDispersiveHullMultiplier, shadowDispersiveHullMin, METhanixB5LegacyHullDamageMultiplier
 	if pTargetInstance:
 		#INTERACTION Defence Grid reduces hull damage a tiiiiiny bit
@@ -124,5 +124,5 @@ def interactionHullBehaviour(attackerID, pAttacker, pAttackerInstance, pAttacker
 		wasChanged = wasChanged + 1
 		hullDamageMultiplier = hullDamageMultiplier * METhanixB5LegacyHullDamageMultiplier
 
-	return hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, wasChanged
+	return hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, wasChanged, considerDisabledShieldPass
 

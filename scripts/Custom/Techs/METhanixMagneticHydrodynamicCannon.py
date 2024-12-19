@@ -5,7 +5,6 @@
 #         Also based on ATPFunctions by Apollo.
 #################################################################################################################
 #
-# TO-DO UPDATE
 # This tech makes ships gain Asgard Beam tech, which will make the same damage from phasers regardless of distance. It still makes beam yields variable to 3 damage-dealing status with the phaser level slider or button: full-power (100%), half-power (>= 50%) and fraction power (<50%). This technology came to mind to properly fix that issue that made the battles on STBC with the Asgard beams either too overpowered when at very close range, or extremely underpowered everywhere else.
 # No add it, just add to your Custom/Ships/shipFileName.py this:
 """
@@ -36,6 +35,7 @@ Foundation.ShipDef.Ambassador.dTechs = {
 ## "shieldDamageMultiplier", multiplies the base damage of the torpedo if it hits the shield. While you could totally overwrite the value a previous function did, it is polite to not ignore all values. On the case of shield the functions must make sure the values are multiplied between each other (so if you make it 0.8 times something, then 2.0 times, it wil be 0.8 * 2.0 = 1.6). Careful with negative values, since they may counteract each other if an even amount of functions apply them.
 ## "shouldPassThrough", values greater than 1 means that this script will create a torpedo replica capable of bypassing the shields. Should be stacked with sums. Negative values are allowed.
 ## "wasChanged": if this value is lesser than 0, it will perform the default effect (torpedo where "shouldPassThrough" = 0 and shield damage is halved from the generic in some regards). When some script changes things it is recommended to stack "1" to this value, unless you want a default behaviour with modified "shieldDamageMultiplier"
+## "considerDisabledShieldPass": if this value is greater than 1, damage done to the shields will be maximum regardless of power percentage wanted - useful for when a weapon deals less damage against the hull at lesser power but still punches the shields with same intensity.
 ##
 # If you want an new specific subTech that modifies part of the ME Thanix Effect, you can do it by adding a file under the scripts\Custom\Techs\METhanixScripts directory; if possible with a reasonable name related to the Technology(ies) it covers. 
 # For example, if the special sub-tech is called "ME Shields" you can call the file "MEShieldsConfiguration.py"; Sometimes certain sub-techs may go together on the same function of a file because being related or being sub-components.
@@ -70,7 +70,7 @@ xReaperHullResistMultiplier = 0.25
 xReaperShieldResistMultiplier = (1.0/4.0)
 
 ##### This function below is used for shield behaviour towards this weapon (when the hull has not been hit)
-def interactionShieldBehaviour(attackerID, pAttacker, pAttackerInstance, pAttackerInstanceDict, targetID, pTarget, pTargetInstance, pTargetInstanceDict, sScript, sShipScript, pEvent, hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, wasChanged):
+def interactionShieldBehaviour(attackerID, pAttacker, pAttackerInstance, pAttackerInstanceDict, targetID, pTarget, pTargetInstance, pTargetInstanceDict, sScript, sShipScript, pEvent, hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, wasChanged, considerDisabledShieldPass):
 	if pTargetInstance and pTargetInstanceDict.has_key("ME Shields"):
 		wasChanged = wasChanged + 1
 		if pTargetInstanceDict["ME Shields"].has_key("RaceShieldTech"):
@@ -78,11 +78,15 @@ def interactionShieldBehaviour(attackerID, pAttacker, pAttackerInstance, pAttack
 			if RaceShieldTech == "Reaper": # Resistances
 				global xReaperShieldResistMultiplier
 				shieldDamageMultiplier = shieldDamageMultiplier * xReaperShieldResistMultiplier
+			else:
+				considerDisabledShieldPass = considerDisabledShieldPass + 1
+		else:
+			considerDisabledShieldPass = considerDisabledShieldPass + 1
 
-	return hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, wasChanged
+	return hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, wasChanged, considerDisabledShieldPass
 
 ##### This function below is used for hull behaviour towards this weapon (when the hull has been hit)
-def interactionHullBehaviour(attackerID, pAttacker, pAttackerInstance, pAttackerInstanceDict, targetID, pTarget, pTargetInstance, pTargetInstanceDict, sScript, sShipScript, pEvent, hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, wasChanged):
+def interactionHullBehaviour(attackerID, pAttacker, pAttackerInstance, pAttackerInstanceDict, targetID, pTarget, pTargetInstance, pTargetInstanceDict, sScript, sShipScript, pEvent, hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, wasChanged, considerDisabledShieldPass):
 	if pTargetInstance and pTargetInstanceDict.has_key("ME Shields"):
 		RaceShieldTech = None
 		if pTargetInstanceDict["ME Shields"].has_key("RaceHullTech"): # We will assume shields and hull tech races are the same unless we say otherwise, for simplicity to not add too many fields.
@@ -97,7 +101,7 @@ def interactionHullBehaviour(attackerID, pAttacker, pAttackerInstance, pAttacker
 			if pTargetInstanceDict["ME Shields"].has_key("Reaper Dampening"):
 				hullDamageMultiplier = hullDamageMultiplier * pTargetInstanceDict["ME Shields"]["Reaper Dampening"]
 
-	return hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, wasChanged
+	return hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, wasChanged, considerDisabledShieldPass
 
 """
 
@@ -543,7 +547,7 @@ try:
 				hullDamageMultiplier = baseHullMultiplier
 				shieldDamageMultiplier = baseShieldMultiplier
 				shouldPassThrough = 0
-
+				considerDisabledShieldPass = 0
 				wasHullChanged = 0
 
 				for item in variableNames.keys():
@@ -552,13 +556,15 @@ try:
 						shieldDamageMultiplier3 = 0
 						shouldPassThrough3 = 0
 						wasHullChanged3 = 0
+						considerDisabledShieldPass3 = 0
 						try:
-							hullDamageMultiplier3, shieldDamageMultiplier3, shouldPassThrough3, wasHullChanged3 = variableNames[item]["interactionHullBehaviour"](attackerID, pAttacker, pAttackerInstance, pAttackerInstanceDict, targetID, pTarget, pTargetInstance, pTargetInstanceDict, sScript, sShipScript, pEvent, hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, wasHullChanged)
+							hullDamageMultiplier3, shieldDamageMultiplier3, shouldPassThrough3, wasHullChanged3, considerDisabledShieldPass3 = variableNames[item]["interactionHullBehaviour"](attackerID, pAttacker, pAttackerInstance, pAttackerInstanceDict, targetID, pTarget, pTargetInstance, pTargetInstanceDict, sScript, sShipScript, pEvent, hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, wasHullChanged, considerDisabledShieldPass)
 						except:
 							hullDamageMultiplier3 = hullDamageMultiplier
 							shieldDamageMultiplier3 = shieldDamageMultiplier
 							shouldPassThrough3 = shouldPassThrough
 							wasHullChanged3 = wasHullChanged
+							considerDisabledShieldPass3 = considerDisabledShieldPass
 							print "Some METhanixMagneticHydrodynamicCannon hull subtech suffered an error"
 							traceback.print_exc()
 
@@ -566,6 +572,7 @@ try:
 						shieldDamageMultiplier = shieldDamageMultiplier3
 						shouldPassThrough = shouldPassThrough3
 						wasHullChanged = wasHullChanged3
+						considerDisabledShieldPass = considerDisabledShieldPass3
 
 				if wasHullChanged > 0:
 					baseHullMultiplier = hullDamageMultiplier
@@ -577,14 +584,16 @@ try:
 							hullDamageMultiplier2 = 0
 							shieldDamageMultiplier2 = 0
 							shouldPassThrough2 = 0
-							wasShieldChanged2 = 0			
-							hullDamageMultiplier2, shieldDamageMultiplier2, shouldPassThrough2, wasShieldChanged2 = variableNames[item]["interactionShieldBehaviour"](attackerID, pAttacker, pAttackerInstance, pAttackerInstanceDict, targetID, pTarget, pTargetInstance, pTargetInstanceDict, sScript, sShipScript, pEvent, hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, wasShieldChanged)
+							wasShieldChanged2 = 0
+							considerDisabledShieldPass2 = 0		
+							hullDamageMultiplier2, shieldDamageMultiplier2, shouldPassThrough2, wasShieldChanged2, considerDisabledShieldPass2 = variableNames[item]["interactionShieldBehaviour"](attackerID, pAttacker, pAttackerInstance, pAttackerInstanceDict, targetID, pTarget, pTargetInstance, pTargetInstanceDict, sScript, sShipScript, pEvent, hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, wasShieldChanged, considerDisabledShieldPass)
 
 						except:
 							hullDamageMultiplier2 = hullDamageMultiplier
 							shieldDamageMultiplier2 = shieldDamageMultiplier
 							shouldPassThrough2 = shouldPassThrough
 							wasShieldChanged2 = wasShieldChanged
+							considerDisabledShieldPass2 = considerDisabledShieldPass
 							print "Some METhanixMagneticHydrodynamicCannon shield subtech suffered an error"
 							traceback.print_exc()
 
@@ -592,6 +601,7 @@ try:
 						shieldDamageMultiplier = shieldDamageMultiplier2
 						shouldPassThrough = shouldPassThrough2
 						wasShieldChanged = wasShieldChanged2
+						considerDisabledShieldPass = considerDisabledShieldPass2
 
 				if wasShieldChanged <= 0:
 					# normal shields
@@ -694,7 +704,12 @@ try:
 					leNetType = Multiplayer.SpeciesToTorp.DISRUPTOR
 
 					torpVSHullDamage = thePowerPercentageWanted * baseTorpDamage * baseHullMultiplier
-					torpVSShieldDamage = thePowerPercentageWanted * baseTorpDamage * baseShieldMultiplier
+
+					powervsShield = thePowerPercentageWanted
+					if considerDisabledShieldPass > 0:
+						powervsShield = 1.0
+
+					torpVSShieldDamage = powervsShield * baseTorpDamage * baseShieldMultiplier
 					shouldDoHull, currentShieldlvl = self.shieldIsLesserThan(pTarget, kPoint, torpVSShieldDamage, 0.25, 0, 0)
 					
 					if shouldPassThrough > 0:
