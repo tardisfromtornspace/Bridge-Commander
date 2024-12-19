@@ -589,7 +589,6 @@ try:
 						wasShieldChanged2 = wasShieldChanged
 						print "Some MERailgunWeapon shield subtech suffered an error"
 						traceback.print_exc()
-
 					hullDamageMultiplier = hullDamageMultiplier2
 					shieldDamageMultiplier = shieldDamageMultiplier2
 					shouldPassThrough = shouldPassThrough2

@@ -31,14 +31,14 @@ Foundation.ShipDef.Ambassador.dTechs = {
 # * "FacetFactor": with a numeric value (f.ex. "FacetFactor" : 2), indicates how many times is the shield facet calculation multiplied when a too-low yield weapon is fired at them, so the shield will regenerate as if no weapon had been fired. This is for certain shields that could potentially shrug off lower-yields no matter the number. Default is 0 (disabled).
 # * "FacetRegeneration": with a numeric value, indicates how many times it regenerates the damage when the FacetFactor condition is triggered. Default is 1 because normally there are no ME Shields which recover shield strength directly from impact.
 # * "MinimumSpeedTrigger": with a numeric factor, indicates if a projectile weapon has to pass through if its speed is below a certain threshold. Default is 5. (that is, projectile speed 5 on the projectile file). Below this speed the bypass is full. A value below 0 means there's no lower threshold.
-# * "MaximumSpeedTrigger": with a numeric factor, indicates if a projectile weapon has to pass through if its speed is above a certain threshold. Default is 100. (that is, projectile speed 100 on the projectile file). Above that threshold, damage will begin to pass through. A value below 0 means there's no upper threshold, unless the shield emmiter is damaged beyond its disabledPercentage + 0.1, when it will actually use the absolute value of the negative number as max speed threshold.
+# * "MaximumSpeedTrigger": with a numeric factor, indicates if a projectile weapon has to pass through if its speed is above a certain threshold. Default is 260. (that is, projectile speed 100 on the projectile file). Above that threshold, damage will begin to pass through. A value below 0 means there's no upper threshold, unless the shield emmiter is damaged beyond its disabledPercentage + 0.1, when it will actually use the absolute value of the negative number as max speed threshold.
 # * "AtmosphericNerf": Default is -1 (no change). If set to 1, being too close to a planetary atmosphere will temporarily reduce the shields to 40%.
 # * "ShieldScaleMultiplier": When a ship is hit by a projectile or beam that should partially or totally pass through the shield, a new auxiliar torpedo is generated, spawned approximately where its parent torpedo collided. This value merely exists as a way to deal with ships with strange shapes being hit by a weapon that bypasses their shields, to multiply the regular torp-spawn scaling so it is guaranteed that the bypassing projectile manages to get past the shield, but does not pass over the entire ship. A greater value will make it spawn further from the shield collision point while a smaller value will make it spawn closer to the area. Default is 1.0.
  # * "IsHidden": developer feature, if 1, makes the projectiles used for the above visible, to help people get where something's going wrong or needs some polish or scale adjust factor. Default is 0 (keep hidden).
 # "RaceShieldTech": indicates the type of shield your vessel has - it is basically a fast-configuration option which will fill the previous values (when not added) with specific settings. Currently these options are stored inside scripts/Custom/Techs/MEShieldScripts, on one or another file. A Race might also deterine a ship's immunity towards some types of weapons as well, which is useful for when a ship is immune to one kind of wepaon but still vulnerable to others.
-# if "RaceShieldTech" : "Common", then "CollisionBlock": 0, "BypassMultiplier": 1, "FacetFactor": 0, "FacetRegeneration": 0, "MinimumSpeedTrigger": 5, "MaximumSpeedTrigger": 100, "AtmosphericNerf": -1
-# if "RaceShieldTech" : "Cyclonic", then "CollisionBlock": 0, "BypassMultiplier": 1, "FacetFactor": 0, "FacetRegeneration": 0, "MinimumSpeedTrigger": 5, "MaximumSpeedTrigger": -100, "AtmosphericNerf": -1
-# if "RaceShieldTech" : "Reaper", then "CollisionBlock": 2, "BypassMultiplier": 0.5, "FacetFactor": 3, "FacetRegeneration": 1, "MinimumSpeedTrigger": -1, "MaximumSpeedTrigger": -255, "AtmosphericNerf": -1
+# if "RaceShieldTech" : "Common", then "CollisionBlock": 0, "BypassMultiplier": 1, "FacetFactor": 0, "FacetRegeneration": 0, "MinimumSpeedTrigger": 5, "MaximumSpeedTrigger": 260, "AtmosphericNerf": -1
+# if "RaceShieldTech" : "Cyclonic", then "CollisionBlock": 0, "BypassMultiplier": 1, "FacetFactor": 0, "FacetRegeneration": 0, "MinimumSpeedTrigger": 5, "MaximumSpeedTrigger": -260, "AtmosphericNerf": -1
+# if "RaceShieldTech" : "Reaper", then "CollisionBlock": 2, "BypassMultiplier": 0.5, "FacetFactor": 3, "FacetRegeneration": 1, "MinimumSpeedTrigger": -1, "MaximumSpeedTrigger": -512, "AtmosphericNerf": -1
 #
 # === Basic global configuration ===
 # Inside the list of Subscripts, located at scripts/Custom/Techs/MEShieldScripts, there's a particular file , "BasicMEShieldsConfiguration", which allows to modify some global parameters of the script without modifying the main file itself, thus bringing less problems of multiple variants of the main file. Below is an example with all parameters being in use.
@@ -76,7 +76,7 @@ RaceShieldTechGlobalConfig = {
 	"FacetFactor": 0,
 	"FacetRegeneration": 0,
 	"MinimumSpeedTrigger": 5,
-	"MaximumSpeedTrigger": 100,
+	"MaximumSpeedTrigger": 260,
 	"AtmosphericNerf": -1,
 }
 '''
@@ -104,7 +104,7 @@ RaceShieldTechGlobalConfig = {
 	"FacetFactor": 3,
 	"FacetRegeneration": 1,
 	"MinimumSpeedTrigger": -1,
-	"MaximumSpeedTrigger": -255,
+	"MaximumSpeedTrigger": -512,
 	"AtmosphericNerf": -1,
 }
 '''
@@ -1538,19 +1538,19 @@ try:
 				if race == None  or not race in raceShieldGlobalConfigs.keys():
 					race = "Default"
 
-				if not instanceDict["ME Shields"].has_key("CollisionBlock") and raceShieldGlobalConfigs[race].has_key("CollisionBlock"):
+				if (not instanceDict["ME Shields"].has_key("CollisionBlock")) and raceShieldGlobalConfigs[race].has_key("CollisionBlock"):
 					instanceDict["ME Shields"]["CollisionBlock"] = raceShieldGlobalConfigs[race]["CollisionBlock"]
-				if not instanceDict["ME Shields"].has_key("BypassMultiplier") and raceShieldGlobalConfigs[race].has_key("BypassMultiplier"):
+				if (not instanceDict["ME Shields"].has_key("BypassMultiplier")) and raceShieldGlobalConfigs[race].has_key("BypassMultiplier"):
 					instanceDict["ME Shields"]["BypassMultiplier"] = raceShieldGlobalConfigs[race]["BypassMultiplier"]
-				if not instanceDict["ME Shields"].has_key("FacetFactor") and raceShieldGlobalConfigs[race].has_key("FacetFactor"):
+				if (not instanceDict["ME Shields"].has_key("FacetFactor")) and raceShieldGlobalConfigs[race].has_key("FacetFactor"):
 					instanceDict["ME Shields"]["FacetFactor"] = raceShieldGlobalConfigs[race]["FacetFactor"]
-				if not instanceDict["ME Shields"].has_key("FacetRegeneration") and raceShieldGlobalConfigs[race].has_key("FacetRegeneration"):
+				if (not instanceDict["ME Shields"].has_key("FacetRegeneration")) and raceShieldGlobalConfigs[race].has_key("FacetRegeneration"):
 					instanceDict["ME Shields"]["FacetRegeneration"] = raceShieldGlobalConfigs[race]["FacetRegeneration"]
-				if not instanceDict["ME Shields"].has_key("MinimumSpeedTrigger") and raceShieldGlobalConfigs[race].has_key("MinimumSpeedTrigger"):
+				if (not instanceDict["ME Shields"].has_key("MinimumSpeedTrigger")) and raceShieldGlobalConfigs[race].has_key("MinimumSpeedTrigger"):
 					instanceDict["ME Shields"]["MinimumSpeedTrigger"] = raceShieldGlobalConfigs[race]["MinimumSpeedTrigger"]
-				if not instanceDict["ME Shields"].has_key("MaximumSpeedTrigger") and raceShieldGlobalConfigs[race].has_key("MaximumSpeedTrigger"):
+				if (not instanceDict["ME Shields"].has_key("MaximumSpeedTrigger")) and raceShieldGlobalConfigs[race].has_key("MaximumSpeedTrigger"):
 					instanceDict["ME Shields"]["MaximumSpeedTrigger"] = raceShieldGlobalConfigs[race]["MaximumSpeedTrigger"]
-				if not instanceDict["ME Shields"].has_key("AtmosphericNerf") and raceShieldGlobalConfigs[race].has_key("AtmosphericNerf"):
+				if (not instanceDict["ME Shields"].has_key("AtmosphericNerf")) and raceShieldGlobalConfigs[race].has_key("AtmosphericNerf"):
 					instanceDict["ME Shields"]["AtmosphericNerf"] = raceShieldGlobalConfigs[race]["AtmosphericNerf"]
 
 				if instanceDict["ME Shields"]["AtmosphericNerf"] == 1:
@@ -1658,7 +1658,7 @@ try:
 			sfacetRegen = 1.0
 			sScaleFMult = 1.0
 			minSt = 5.0
-			maxSt = 150.0
+			maxSt = 260.0
 			atmosNerf = -1
 			isHidden = 1
 

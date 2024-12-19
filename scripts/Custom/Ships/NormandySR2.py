@@ -43,9 +43,9 @@ Foundation.ShipDef.NormandySR2.dTechs = {
 	"AutoTargeting": { "Phaser": [2, 1] },
 	'Fed Ablative Armor': { "Plates": ["Aft Silaris Armor", "Forward Silaris Armor", "Left Silaris Armor", "Right Silaris Armor", "Silaris Armor" ]},
 	"ME IES Stealth System": 1,
-	"ME Shields": { "CollisionBlock": 0, "BypassMultiplier": 1, "FacetFactor": 0, "FacetRegeneration": 1, "MinimumSpeedTrigger": 5, "MaximumSpeedTrigger": -150, "ShieldScaleMultiplier": 0.2, "AtmosphericNerf": -1, },
+	"ME Shields": { "CollisionBlock": 0, "BypassMultiplier": 1, "FacetFactor": 0, "FacetRegeneration": 1, "MinimumSpeedTrigger": 5, "MaximumSpeedTrigger": -270, "ShieldScaleMultiplier": 0.2, "AtmosphericNerf": -1, },
 	"ME Thanix Cannon": {"HullDmgMultiplier": 1.0, "ShieldDmgMultiplier": 1.0, "Beams": ["Thanix Cannons"], },
-	'Simulated Point Defence' : { "Distance": 75.0, "InnerDistance": 2.0, "Effectiveness": 0.998, "LimitTurn": 0.18, "LimitSpeed": 55, "LimitDamage": "-400", "Period": 0.8, "MaxNumberTorps": 2, }, #"Phaser": {"Priority": 1} could be used, but no idea how many actual GARDIAN lasers the Normandy has and for this to work efficiently with Phaser option set, we would need quite a few lasers with more accuracy - plus "GARDIAN lasers typically operate in infrared frequencies [...] Salarians use near-UV and Geth use UV", so for an Alliance ship they would not be visible - better for us!"
+	'Simulated Point Defence' : { "Distance": 75.0, "InnerDistance": 2.0, "Effectiveness": 0.998, "LimitTurn": 0.16, "LimitSpeed": 55, "LimitDamage": "-400", "Period": 0.8, "MaxNumberTorps": 2, }, #"Phaser": {"Priority": 1} could be used, but no idea how many actual GARDIAN lasers the Normandy has and for this to work efficiently with Phaser option set, we would need quite a few lasers with more accuracy - plus "GARDIAN lasers typically operate in infrared frequencies [...] Salarians use near-UV and Geth use UV", so for an Alliance ship they would not be visible - better for us!"
 	"Systems Changed With GC On": {"Message": {"Content": "This vessel has warp-drives disabled on GC. Please use its Mass Effect Drive instead.", "Time": 4.0}, "Hardpoints": {"Mass Effect Engines": 1.15,},},
 }
 

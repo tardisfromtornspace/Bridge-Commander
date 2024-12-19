@@ -20,7 +20,7 @@ import FoundationTech
 
 import string
 
-IonMEShieldDamageMultiplier = 10.0
+IonMEShieldDamageMultiplier = 20.0
 IonMEHullDamageMultiplier = 1.0
 IonMEElectricChargeHullDamageMultiplier = 0.1
 

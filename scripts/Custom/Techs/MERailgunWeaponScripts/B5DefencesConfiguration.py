@@ -72,7 +72,7 @@ def interactionShieldBehaviour(pShip, sScript, sShipScript, pInstance, pEvent, p
 			shouldPassThrough = shouldPassThrough + 1
 			considerPiercing = considerPiercing + 1
 
-		elif pInstancedict.has_key("Vree Shields"): # Vree/Abbai/Shinindrea shields work very differently, in fact Abbai shields work in a simialr fashion to a gravity field, slowing matter to a halt
+		elif pInstancedict.has_key("Vree Shields"): # Vree/Abbai/Shinindrea shields work very differently, in fact Abbai shields work in a similar fashion to a gravity field, slowing matter to a halt
 			changed = 1
 			wasChanged = wasChanged + 1
 			shieldDamageMultiplier = shieldDamageMultiplier + 0

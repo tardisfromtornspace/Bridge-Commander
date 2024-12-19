@@ -21,7 +21,7 @@ import FoundationTech
 import string
 
 PlasmaMEShieldDamageMultiplier = 12.0
-PlasmaMEHullDamageMultiplierBoost = 1.0
+PlasmaMEHullDamageMultiplierBoost = 4.0
 PlasmaMEHullDamageMultiplier = 0.9
 
 
@@ -60,10 +60,19 @@ def interactionHullBehaviour(pShip, sScript, sShipScript, pInstance, pEvent, pTo
 		wasChanged = wasChanged + 1
 
 		global PlasmaMEHullDamageMultiplier, PlasmaMEHullDamageMultiplierBoost
+
+		mod = pTorp.GetModuleName()
+		importedTorpInfo = __import__(mod)
+		myHullMult = PlasmaMEHullDamageMultiplierBoost
+		if hasattr(importedTorpInfo, "HullDmgMultiplier"): # If this torp has a special global multiplier, then we use it
+			myHullMult = importedTorpInfo.HullDmgMultiplier()
+
+		hullDamageMultiplier = hullDamageMultiplier * PlasmaMEHullDamageMultiplier * myHullMult
+
 		# We reduce the damage... but your power plant gets damaged! Be careful!
 		pPower = pShip.GetPowerSubsystem()
 		if pPower:
-			myDamage = -hullDamageMultiplier * (1 - PlasmaMEHullDamageMultiplier) * pTorp.GetDamage() * PlasmaMEHullDamageMultiplierBoost
+			myDamage = -hullDamageMultiplier * (1 - PlasmaMEHullDamageMultiplier) * pTorp.GetDamage() * myHullMult
 			#print "myDamage = ", myDamage
 			myStatus = pPower.GetCondition() + myDamage
   			if (myStatus) < 0.1:
@@ -75,7 +84,7 @@ def interactionHullBehaviour(pShip, sScript, sShipScript, pInstance, pEvent, pTo
 
 		pPower = pShip.GetWarpEngineSubsystem()
 		if pPower:
-			myDamage = -hullDamageMultiplier * (1 - PlasmaMEHullDamageMultiplier) * pTorp.GetDamage() * PlasmaMEHullDamageMultiplierBoost
+			myDamage = -hullDamageMultiplier * (1 - PlasmaMEHullDamageMultiplier) * pTorp.GetDamage() * myHullMult
 			#print "myDamage = ", myDamage
 			myStatus = pPower.GetCondition() + myDamage
   			if (myStatus) < 0.1:
@@ -87,7 +96,7 @@ def interactionHullBehaviour(pShip, sScript, sShipScript, pInstance, pEvent, pTo
 
 		pPower = pShip.GetShields()
 		if pPower:
-			myDamage = -hullDamageMultiplier * (1 - PlasmaMEHullDamageMultiplier) * pTorp.GetDamage() * PlasmaMEHullDamageMultiplierBoost
+			myDamage = -hullDamageMultiplier * (1 - PlasmaMEHullDamageMultiplier) * pTorp.GetDamage() * myHullMult
 			#print "myDamage = ", myDamage
 			myStatus = pPower.GetCondition() + myDamage
   			if (myStatus) < 0.1:
@@ -99,7 +108,7 @@ def interactionHullBehaviour(pShip, sScript, sShipScript, pInstance, pEvent, pTo
 
 		pPower = pShip.GetCloakingSubsystem()
 		if pPower:
-			myDamage = -hullDamageMultiplier * (1 - PlasmaMEHullDamageMultiplier) * pTorp.GetDamage() * PlasmaMEHullDamageMultiplierBoost
+			myDamage = -hullDamageMultiplier * (1 - PlasmaMEHullDamageMultiplier) * pTorp.GetDamage() * myHullMult
 			#print "myDamage = ", myDamage
 			myStatus = pPower.GetCondition() + myDamage
   			if (myStatus) < 0.1:
@@ -108,8 +117,6 @@ def interactionHullBehaviour(pShip, sScript, sShipScript, pInstance, pEvent, pTo
 				myStatus = pPower.GetMaxCondition()
 
 			pPower.SetCondition(myStatus)
-
-		hullDamageMultiplier = hullDamageMultiplier * PlasmaMEHullDamageMultiplier * PlasmaMEHullDamageMultiplierBoost
 
 	return hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, considerPiercing, shouldDealAllFacetDamage, wasChanged
 

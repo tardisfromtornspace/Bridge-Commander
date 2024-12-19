@@ -20,6 +20,6 @@ RaceShieldTechGlobalConfig = {
 	"FacetFactor": 0,
 	"FacetRegeneration": 0,
 	"MinimumSpeedTrigger": 5,
-	"MaximumSpeedTrigger": -100,
+	"MaximumSpeedTrigger": -260,
 	"AtmosphericNerf": -1,
 }

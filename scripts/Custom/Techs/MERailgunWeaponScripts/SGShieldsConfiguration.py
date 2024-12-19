@@ -25,7 +25,7 @@ import string
 
 RailgunSGVulnerableShields = [] # No actual SG vessel is vulnerable to ME railguns in the way the Go'auld were to Tollan or Asgard Ion ones. Just leaving this here in case someone randomly wants to add that for a fanmade ship or something
 # However some weapons like the Mass Effect Javelin could leave some bleedthrough - but that is handled on another file since it is not a full bleedthrough.
-RailgunSGShieldDamageMultiplier = 0.6
+RailgunSGShieldDamageMultiplier = 0.5
 RailgunSGHullDamageMultiplier = 2
 
 ## Some SG-related resistances - unless there's a new Stargate franchise adding more races and spaceship combat, these should do the job
