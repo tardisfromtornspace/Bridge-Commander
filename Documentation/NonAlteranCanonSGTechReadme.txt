@@ -1,6 +1,10 @@
 == Changelog ==
-1.1.6 - bug fixes:
+1.1.6 - updates:
    * Updated SGPlasmaWeapon and SGRailgunWeapon to fix a bug regarding counters.
+   * Added Odyssey Refit with canon sounds and beam colours - thank you Hexagonal_Nexul for this!
+   * Also added Apollo Refit and Daedalus Refit - while both are equipped with Asgard Beam Technology, their beams aesthethic-wise are different:
+     - The Apollo uses the old beam sounds, old beam colors and old beam aesthethics and textures.
+     - The Daedalus Refit uses the old beam colors and aesthethics but with the new AsgardBeam texture (thank you Hexagonal_Nexul) and use SGA sounds (thank you TenScape for the sounds).
 1.1.5 - bug fixes:
    * Updated SGAnubisSuperWeaponRay so its Delete works regardless of MissionLib configuration.
 1.1.4 - bug fixes:
@@ -133,8 +137,11 @@ Also please note that if you download the multiplayer patch AFTER installing thi
 ** SGU Destiny and Ancient Shuttle https://www.gamefront.com/games/bridge-commander/file/sgu-destiny-with-ancient-shuttle
 ** Superhive mod uploaded by xxDABTxx https://www.gamefront.com/games/bridge-commander/file/super-hive
 * .truncatedcake0161 for feedback on the Discord about power tweaks.
+* Hexagonal_Nexul for the modified sounds and beam colors of the Asgard Beams from the Season 10 of Stargate + a new railgun sound for the Odyssey Refit.
+* TenScape for the SGA Asgard Beam sound from SGA.
 * Grey da Derg#2305 for helping with noticing bugs and their cause and finding out possible ways to tweak the hardpoints and techs.
 * Alex SL Gato (aka CharaToLoki) for any new code implemented or modified - specifically the heavy modifications to the Ion and Plasma projectiles, the buffs to the Asgard Hardpoints and modifications to the Ha'tak, X301, F302, Death Glider and Needle Threader hardpoints.
+** Special tools used: Audacity for cleaning up the Asgard Beam sounds.
 
 Fulfilling both the SDK and LGPL licenses:
 THIS MOD IS NOT SUPPORTED BY ACTIVISION
