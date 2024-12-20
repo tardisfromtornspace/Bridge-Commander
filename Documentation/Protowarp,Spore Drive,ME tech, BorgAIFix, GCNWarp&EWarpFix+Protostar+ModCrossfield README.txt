@@ -1,4 +1,7 @@
 == Changelog ==
+0.5.3 - Fixes:
+  * Updated MEShields to manually cover an edge-case where a torpedo hitting behind a shield is impossible.
+  * Updated Turian Frigate hardpoints so they do not repair so fast.
 0.5.2 - Fixes:
   * Updated ProtoWarp, SporeDrive and MassEffect FTL to 0.32, fixing a sound issue.
 0.5.1 - Updates:

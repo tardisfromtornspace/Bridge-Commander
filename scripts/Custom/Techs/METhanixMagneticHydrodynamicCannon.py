@@ -5,7 +5,7 @@
 #         Also based on ATPFunctions by Apollo.
 #################################################################################################################
 #
-# This tech makes ships gain Asgard Beam tech, which will make the same damage from phasers regardless of distance. It still makes beam yields variable to 3 damage-dealing status with the phaser level slider or button: full-power (100%), half-power (>= 50%) and fraction power (<50%). This technology came to mind to properly fix that issue that made the battles on STBC with the Asgard beams either too overpowered when at very close range, or extremely underpowered everywhere else.
+# This tech makes ships gain ME Thanix Cannon tech, which will make the same damage from phasers regardless of distance. It still makes beam yields variable to 3 damage-dealing status with the phaser level slider or button: full-power (100%), half-power (>= 50%) and fraction power (<50%). This technology came to mind to properly fix that issue that made the battles on STBC with the Thanix cannons either too overpowered when at very close range, or extremely underpowered everywhere else.
 # No add it, just add to your Custom/Ships/shipFileName.py this:
 """
 Foundation.ShipDef.Ambassador.dTechs = {
@@ -64,7 +64,7 @@ import FoundationTech
 
 import string
 
-# SG-related info
+# ME-related info
 
 xReaperHullResistMultiplier = 0.25
 xReaperShieldResistMultiplier = (1.0/4.0)

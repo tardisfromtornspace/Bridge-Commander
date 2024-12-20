@@ -2020,6 +2020,56 @@ try:
 						pTempTorp = FireTorpFromPointWithVectorAndNetType(theHitPoint, pVec, mod, pShip.GetObjID(), attackerID, launchSpeed, torpsNetTypeThatCanPhase, myDamage, myRadius, isHidden, shipNeeded, theOffset)
 						pTempTorp.SetLifetime(15.0)
 						pTempTorp.UpdateNodeOnly()
+						if pShip.GetRadius() < 0.15:
+							# Perform damage manually as well
+							myHull = pShip.GetHull()
+							if myHull:
+								global torpCountersForInstance
+
+								pEvent1 = TGFakeWeaponHitEvent_Create() # This gives us a pointer, it has no arguments, but it is our "fake" event
+								pEventSource = pTorp
+								pEventDestination = pShip
+
+								pEvent1.SetSource(pEventSource)
+								pEvent1.SetDestination(pEventDestination)
+								pEvent1.SetEventType(App.ET_WEAPON_HIT)
+
+								pAttacker = App.ShipClass_GetObjectByID(None, attackerID)
+								pEvent1.SetFiringObject(pAttacker)
+								pEvent1.SetTargetObject(pShip)
+
+								myHullPos = NiPoint3ToTGPoint3(myHull.GetPosition())
+
+								pEvent1.SetObjectHitPoint(myHullPos)
+
+								pShipPositionV = pShip.GetWorldLocation()
+								pShipPositionVI = TGPoint3ToNiPoint3(pShipPositionV, -1.0)
+								pShipNode = pShip.GetNiObject()
+
+								pEvent1.SetObjectHitNormal(pShipPositionVI) 
+								pEvent1.SetWorldHitPoint(myHullPos)
+								pShipPositionVW = TGPoint3ToNiPoint3(App.TGModelUtils_LocalToWorldUnitVector(pShipNode, pShipPositionVI), 1.0)
+								pEvent1.SetWorldHitNormal(pShipPositionVW)
+
+								eCondition = 1.0
+								if myHull:
+									eCondition = myHull.GetConditionPercentage()
+								pEvent1.SetCondition(eCondition)
+
+								valPlus = torpCountersForInstance + 1
+
+								pEvent1.SetWeaponInstanceID(valPlus) # Not needed... at least, I am not aware of any scripts handling it for torpedo defense
+
+								pEvent1.SetRadius(myRadius)
+								pEvent1.SetDamage(myDamage)
+								pEvent1.SetHullHit(1)
+								pEvent1.SetFiringPlayerID(0)
+
+								affectedSys, nonTargetSys = FindAllAffectedSystems(pShip, myHullPos, myRadius)
+								AdjustListedSubsystems(pShip, affectedSys, nonTargetSys, -myDamage, len(affectedSys) + 1, 1)
+
+								# Fourth part, finally using the pEvent for something! This is also so more armours can work with these collisions, and not only one or two.
+								pInstance.DefendVSTorp(pShip, pEvent1, pTempTorp)
 
 			if oYield and hasattr(oYield, "IsPhasedPolaronYield") and oYield.IsPhasedPolaronYield() != 0 and pInstance and pInstance.__dict__.has_key('ME Shields'): # POINT 6.
 				return 1
