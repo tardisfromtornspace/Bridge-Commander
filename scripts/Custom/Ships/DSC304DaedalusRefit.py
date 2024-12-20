@@ -9,10 +9,10 @@ import App
 #                                                                                     #
 #######################################################################################
 #                                                                                     #
-abbrev = 'DSC304OdysseyRefit'
+abbrev = 'DSC304DaedalusRefit'
 iconName = 'DSC304'
-longName = 'Odyssey (Refit)'
-shipFile = 'DSC304OdysseyRefit' 
+longName = 'Daedalus (Refit)'
+shipFile = 'DSC304DaedalusRefit' 
 menuGroup = 'Stargate Ships'
 playerMenuGroup = 'Stargate Ships'
 species = 754
@@ -24,7 +24,7 @@ SubMenu = ["Human (Tau'ri) Ships", "DSC-304"]
 # have use later on for updates and such.                                             #
 #                                                                                     #
 credits = {
-	'modName': 'DSC304OdysseyRefit',
+	'modName': 'DSC304DaedalusRefit',
 	'author': '',
 	'version': '1.0',
 	'sources': [ 'http://' ],
@@ -36,28 +36,28 @@ credits = {
 # This is the ShipDef that adds the Ship to the game... BC-Mod Packager has           #
 # automatically generated the proper ShipDef Line for you.                            #
 #                                                                                     #
-Foundation.ShipDef.DSC304OdysseyRefit = Foundation.FedShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
-Foundation.ShipDef.DSC304OdysseyRefit.dTechs = {
+Foundation.ShipDef.DSC304DaedalusRefit = Foundation.FedShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
+Foundation.ShipDef.DSC304DaedalusRefit.dTechs = {
 	"AutoTargeting": { "Pulse": [3, 1] },
-	"SG Asgard Beams Weapon": {"HullDmgMultiplier": 1.0, "ShieldDmgMultiplier": 1.0, "FacetFactor": 2.0},
+	"SG Asgard Beams Weapon": {"HullDmgMultiplier": 1.0, "ShieldDmgMultiplier": 1.0},
 	'SG Shields': { "RaceShieldTech": "Asgard", "RaceHullTech": "Tau'ri" }
 }
 #                                                                                     #
 #######################################################################################
 #                                                                                     #
 # Uncomment these if you have TGL  
-Foundation.ShipDef.DSC304OdysseyRefit.hasTGLName = 1
-Foundation.ShipDef.DSC304OdysseyRefit.hasTGLDesc = 1
+#Foundation.ShipDef.DSC304DaedalusRefit.hasTGLName = 1
+#Foundation.ShipDef.DSC304DaedalusRefit.hasTGLDesc = 1
 #
 # Otherwise, uncomment this and type something in:
-#Foundation.ShipDef.DSC304OdysseyRefit.desc = 'No Description Available'
+Foundation.ShipDef.DSC304DaedalusRefit.desc = "Description: The Daedalus, as well as the other BC-304s, received a small refit to equip better shields and Asgard Beam weapons before the time of the Battle of Asuras. After the Asurans started attacking human worlds as a tactic in their war with the Wraith, the Daedalus and the Apollo are both sent to Atlantis to use the tracking system Atlantis has recently received capable of tracking all of the Asuran Aurora-class battleships and their new Asgard plasma beam weapons to stop the Asurans once and for all.\n\nWeapons: 32 Rail Guns, 22 Missile Batteries (carrying 100 Mark 8 nuclear warheads)), 12 Energy Beam Weapons.\n\nShield Rating: 35,000 Asgard Shielding\n\nHull Rating: 17,500\n\nTactics:"
 #                                                                                     #
 #######################################################################################
 #                                                                                     #
 # These register the ship with the QuickBattle menus.  Don't touch them!!!            #
 #                                                                                     #
-if menuGroup:           Foundation.ShipDef.DSC304OdysseyRefit.RegisterQBShipMenu(menuGroup)
-if playerMenuGroup:     Foundation.ShipDef.DSC304OdysseyRefit.RegisterQBPlayerShipMenu(playerMenuGroup)
+if menuGroup:           Foundation.ShipDef.DSC304DaedalusRefit.RegisterQBShipMenu(menuGroup)
+if playerMenuGroup:     Foundation.ShipDef.DSC304DaedalusRefit.RegisterQBPlayerShipMenu(playerMenuGroup)
 
 if Foundation.shipList._keyList.has_key(longName):
      Foundation.ShipDef.__dict__[longName].friendlyDetails[2] = Foundation.shipList[longName].friendlyDetails[2]
