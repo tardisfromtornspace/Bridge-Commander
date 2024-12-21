@@ -1,4 +1,7 @@
 ==Changelog==
+1.2.16 -
+   Updates:
+   * Updated FoolTargeting to 0.4 to support new modes of target miss.
 1.2.15 -
    Fixes:
    * Updated TachyonSensors, Turrets and SimulatedPointDefence so its configurations work regardless of MissionLib settings.

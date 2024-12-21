@@ -7541,3 +7541,44 @@ Doing stack walk
 Call stack:
 Address   Frame
 
+//=====================================================
+Current Time: Sat Dec 21 01:08:54 2024
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  3F800000 00:00000000 
+
+Registers:
+EAX:745FB280
+EBX:55784D6C
+ECX:297D6E00
+EDX:025270CC
+ESI:297D6E00
+EDI:0060D370
+CS:EIP:0023:3F800000
+SS:ESP:002B:0019F934  EBP:00000000
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010206
+Couldn't load module
+
+//=====================================================
+Current Time: Sat Dec 21 16:42:01 2024
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  0056C802 01:0016B802 C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+Registers:
+EAX:0019F798
+EBX:2E305684
+ECX:0019F780
+EDX:0019F7A4
+ESI:00000000
+EDI:26FC4240
+CS:EIP:0023:0056C802
+SS:ESP:002B:0019F770  EBP:00000000
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010206
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+

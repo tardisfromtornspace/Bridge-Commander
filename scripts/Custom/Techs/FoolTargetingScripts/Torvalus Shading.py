@@ -9,7 +9,7 @@
 # This tech adds a miss to the values if the attacker's sensor range is below a threshold. Affects both phasers and torps/pulses
 # How-to-use:
 # just add to your Custom/Ships/shipFileName.py this:
-# NOTE: replace "Ambassador" with the abbrev - note the number indicates how fast it learns, make it 0 so it never helps into learning and negative values so it instead makes it more difficult for others to adapt :P
+# NOTE: replace "Ambassador" with the abbrev
 # Special fields:
 # - "Distance": minimum distance for the effect to start reducing... until reching 0. For torps, it's the minimum distance between being accurate and missing. Default is 30 km.
 # - "Sensor": at this value or below, the attacker will have its attacks scrambled. Default is 100.

@@ -39,6 +39,14 @@ credits = {
 Foundation.ShipDef.DSC304DaedalusRefit = Foundation.FedShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
 Foundation.ShipDef.DSC304DaedalusRefit.dTechs = {
 	"AutoTargeting": { "Pulse": [3, 1] },
+	"Fool Targeting": {
+		"Slow Beam Simulation": {
+			"Distance Threshold": 40.0,
+			"Speed Threshold": 2,
+			"Distance Multiplier": 6.0,
+			"Speed Multiplier": 8.0,
+		}  
+	},
 	"SG Asgard Beams Weapon": {"HullDmgMultiplier": 1.0, "ShieldDmgMultiplier": 1.0},
 	'SG Shields': { "RaceShieldTech": "Asgard", "RaceHullTech": "Tau'ri" }
 }

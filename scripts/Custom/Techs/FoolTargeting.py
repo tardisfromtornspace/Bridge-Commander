@@ -2,8 +2,8 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
 #         FoolTargeting.py by Alex SL Gato
-#         Version 0.3
-#         22nd April 2024
+#         Version 0.4
+#         21st December 2024
 #         Based on BorgAdaptation.py by Alex SL Gato, which was based on the Shield.py script by the Foundation Technologies team and Dasher42's FoundationTech script.
 #         Also based on ATPFunctions by Apollo and Sneaker's Innacurate Phaser mod.
 #################################################################################################################
@@ -46,6 +46,9 @@ Foundation.ShipDef.Ambassador.dTechs = {
 # If you want an new specific subTech that modifies part of the accuracy, you can do it by adding a file under the scripts\Custom\Techs\FoolTargetingScripts directory; named like the Technology. For example, if the special sub-tech
 # is called "Minbari Stealth" you can call the file "Minbari Stealth.py";
 # Below there's an example used for the aforementioned Minbari Stealth, at least the 1.0 version, but with some parts commented so as to not trigger commentary issues - those sections have replaced the triple " with ####@@@
+# From version 0.4 onwards, subTechs can also return a dictionary for fMiss to not only modify a fMiss factor, but where that fMiss is gonna be located:
+# * If a dictionary, the key "fMiss" will store the actual fMiss value, while the key "kNewLocation" will store the fMiss vector to use as direction of the miss - if the latter is not added, the targeting goes for a random unit vector.
+# On both cases, if the "kNewLocation" is not added, it will use the normal random unit vector, as usual. Please notice that while this vector can also be used to assign magnitude of miss, that is fMiss's job and any changes done to the "kNewLocation" are not directly stackable!
 """
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
@@ -58,7 +61,7 @@ Foundation.ShipDef.Ambassador.dTechs = {
 # This tech adds a miss to the values if the attacker's sensor range is below a threshold. Affects both phasers and torps/pulses
 # How-to-use:
 # just add to your Custom/Ships/shipFileName.py this:
-# NOTE: replace "Ambassador" with the abbrev - note the number indicates how fast it learns, make it 0 so it never helps into learning and negative values so it instead makes it more difficult for others to adapt :P
+# NOTE: replace "Ambassador" with the abbrev
 # Special fields:
 # - "Sensor": at this value or below, the attacker will have its attacks scrambled. Default is 100.
 # - "Miss": this value will indicate by how much they will miss. Default is 2.0
@@ -115,6 +118,7 @@ def commonFunction(techName, pInstanceFool, fMiss, pShip, pAttackerInstance, pTa
 	return fMiss + fMissExtra
 
 ###### One or both of these two following functions must always exist for the parent script to take into account their innacuracy. Both must return fMiss, with fMiss finally being the accumulated values for all subTechs ######
+# if instead of being called "beamCondition" it is called "beamAttackerOnlyCondition", it will be used exclusively from the attacker's instance standpoint - this uses a slightly modified logic where pInstanceFool is the attacker's not the defender's
 def beamCondition(techName, pInstanceFool, fMiss, pShip, pAttackerInstance, pTarget, pDefenderInstance, fSensorRange, fAngleDiff, fObjectDistance): # Establishes a random factor - values must be >= 0. The greater the value, the more range can happen between sessions.
 	debug(__name__ + ", beamCondition")
 	#print "Minbari stealth beam function called"
@@ -142,7 +146,7 @@ def pulseTCondition(techName, pInstanceFool, fMiss, pAttackerShip, pAttackerInst
 """
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.2",
+	    "Version": "0.4",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -170,8 +174,10 @@ oldInnacurateFire = FoundationTech.InaccurateFire # The old function we have for
 # the "name" field indicates which sub-tech is being used to fool or improve the accuracy.
 # the "beamcondition" will have a function that will be called to calculate the new innacurate fire for phasers, those functions will stack.
 # the "pulsetcondition" will try to do the same, but for torpedoes and pulses.
+# "attackerOnly" is reserved ONLY for things the attacker can do - this is often reserved to beams only, as torpedoes can be handled pretty much in every other way via guidanceLifetime or any other projectile stats.
 
-variableNames = {} 
+variableNames = {}
+attackerOnly = {}
 
 if int(Foundation.version[0:8]) < 20231231: # we are gonna assume the 2023 version and previous versions lack this
 	necessaryToUpdate = 1
@@ -272,12 +278,15 @@ def LoadExtraLimitedPlugins(dExcludePlugins=_g_dExcludeBorgPlugins):
 						variableNames[fileName] =  {}
 						variableNames[fileName]["beamCondition"] = banana.beamCondition
 
+					if hasattr(banana, "beamAttackerOnlyCondition"):
+						attackerOnly[fileName] =  {}
+						attackerOnly[fileName]["beamCondition"] = banana.beamAttackerOnlyCondition
+
 					if hasattr(banana, "pulseTCondition"):
 						if not variableNames.has_key(fileName):
 							variableNames[fileName] =  {}
 						variableNames[fileName]["pulseTCondition"] = banana.pulseTCondition
 
-					
 					#print "Fool Targeting reviewing of this subtech is a success"
 			except:
 				print "someone attempted to add more than they should to the Fool Targeting script"
@@ -338,9 +347,32 @@ def newInaccurateFire(pShip, pSystem, pTarget):
 		# For those modders that want to add an ECCM for an ECM, remember it can be done in many ways, among them using things like SensorRange, customized options and even the Attacker's pInstance (so you can add ECCMs to those)
 		pAttackerInstance = findShipInstance(pShip)
 		pDefenderInstance = findShipInstance(pTarget)
-		if pAttackerInstance and pAttackerInstance.__dict__.has_key("Fool Targeting") and pAttackerInstance.__dict__["Fool Targeting"].has_key("Accurate"): # This ship just cannot miss from regular innacurate fire things
-			#print("Attacker has Fool Targeting Accuracy subTech")
-			fMiss = fMiss * pAttackerInstance.__dict__["Fool Targeting"]["Accurate"]
+
+		kNewLocation = App.TGPoint3_GetRandomUnitVector()
+		if pAttackerInstance:
+			pAttackerInstanceDict = pAttackerInstance.__dict__
+			if pAttackerInstanceDict.has_key("Fool Targeting"):
+				if pAttackerInstance.__dict__["Fool Targeting"].has_key("Accurate"): # This ship just cannot miss from regular innacurate fire things
+					#print("Attacker has Fool Targeting Accuracy subTech")
+					fMiss = fMiss * pAttackerInstance.__dict__["Fool Targeting"]["Accurate"]
+
+				pInstanceFool = pAttackerInstanceDict["Fool Targeting"]
+				for techName in attackerOnly.keys():
+					if pInstanceFool.has_key(techName) and attackerOnly[techName].has_key("beamCondition"):
+						try:
+							#ok, it's a miss (or not), let's modifiy the Miss value so it is guaranteed to miss
+							fMiss2 = attackerOnly[techName]["beamCondition"](techName, pInstanceFool, fMiss, pShip, pAttackerInstance, pTarget, pDefenderInstance, fSensorRange, fAngleDiff, fObjectDistance) # More liberty for a new tech to add incremental fMiss or totally ignore the other fMiss
+
+							if type(fMiss2)==type({}):
+								if fMiss2.has_key("kNewLocation"):
+									kNewLocation = fMiss2["kNewLocation"]
+								if fMiss2.has_key("fMiss"):
+									fMiss = float(fMiss2["fMiss"])
+							else:
+								fMiss = fMiss2
+						except:
+							print("Error while reviewing a Fool Targeting tech beam attack function")
+							traceback.print_exc()
 
 		if pDefenderInstance:
 			pInstanceDict = pDefenderInstance.__dict__ # Because all techs use this __dict__ thing to fetch their keys, sorry for the hacky code USS Sovereign
@@ -352,11 +384,18 @@ def newInaccurateFire(pShip, pSystem, pTarget):
 					if pInstanceFool.has_key(techName) and variableNames[techName].has_key("beamCondition"):
 						try:
 							#ok, it's a miss (or not), let's modifiy the Miss value so it is guaranteed to miss
-							fMiss = variableNames[techName]["beamCondition"](techName, pInstanceFool, fMiss, pShip, pAttackerInstance, pTarget, pDefenderInstance, fSensorRange, fAngleDiff, fObjectDistance) # More liberty for a new tech to add incremental fMiss or totally ignore the other fMiss
+							fMiss2 = variableNames[techName]["beamCondition"](techName, pInstanceFool, fMiss, pShip, pAttackerInstance, pTarget, pDefenderInstance, fSensorRange, fAngleDiff, fObjectDistance) # More liberty for a new tech to add incremental fMiss or totally ignore the other fMiss
+
+							if type(fMiss2)==type({}): #fMiss2type is dictionary:
+								if fMiss2.has_key("kNewLocation"):
+									kNewLocation = fMiss2["kNewLocation"]
+								if fMiss2.has_key("fMiss"):
+									fMiss = float(fMiss2["fMiss"])
+							else:
+								fMiss = fMiss2
 						except:
-							print "Error while reviewing a Fool Targeting tech beam function"
-							traceback.print_exc()
-						
+							print("Error while reviewing a Fool Targeting tech beam function")
+							traceback.print_exc()						
 
 		if fMiss > 2.0:
 			fMiss = 2.0 + fMiss / 100.0
@@ -372,8 +411,6 @@ def newInaccurateFire(pShip, pSystem, pTarget):
 			pSystem.SetForceUpdate(1) # update and fire immediately
 
 		else:
-
-			kNewLocation = App.TGPoint3_GetRandomUnitVector()
 			# fMinDistance = 0.0
 			# fDistance = fMinDistance + (fMaxDistance - fMinDistance) * fMiss
 
@@ -415,7 +452,6 @@ class FoolTargetingDef(FoundationTech.TechDef):
 		#pInstance.lBeamDefense.insert(0, self)
 		#print 'Attaching Fool Targeting to', pInstance, pInstance.__dict__
 		global necessaryToUpdate, totalShips, oldInnacurateFire
-		#TO-DO remove oldfunction from here once fully fixed
 
 		if totalShips <= 0: # First time, we set it to 1 and do the InnacurateFire change
 			totalShips = 1
