@@ -1,4 +1,6 @@
 == Changelog ==
+1.1.8 - updates:
+   * Made SGA and S10 Asgard Beam sound 15% and 50% softer.
 1.1.7 - updates:
    * Hexagonal_nexul pointed to me how Asgard Beams would be less effective at a far-enough distance due to their slow speed. While his suggestion of nerfing the damage does not exactly meet with the canon standards, he has a very valid point due to how SG Asgard beams on the series actually take a bit of time to reach a target (even if it's far faster and precise than an Ori Beam). Thus, while damage has not been changed, a new FoolTargeting-based subTech has been made that increases the miss ratio when a target is far enough and accelerates far enough, and alters the miss vector so instead of being random it is towards where the target would have been predicted, simulating in a more faithful way that a ship accelerating fast enough in a way that is not directly at a target could dodge a beam, without sacrificing firepower and without making static targets like stations (or an Ori ship not moving) unreasonably more tough than normal.
    * Modified the Asgard Beam BC-304s so they have that Slow Beam Simulation subTech.
