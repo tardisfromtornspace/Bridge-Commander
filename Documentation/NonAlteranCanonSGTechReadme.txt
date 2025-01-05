@@ -1,4 +1,6 @@
 == Changelog ==
+1.1.9 - fixes:
+   * Updated SG Transport Nukes script again to include the new Apollo and Daedalus Refit, as well as a future Sun Tzu.
 1.1.8 - updates:
    * Made SGA and S10 Asgard Beam sound 15% and 50% softer.
 1.1.7 - updates:

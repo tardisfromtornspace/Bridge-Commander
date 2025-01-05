@@ -72,6 +72,12 @@ def ShipCheck(pObject, pEvent):
         elif (GetShipType(pPlayer) == "DSC304Daedalus"):
                     BuildMenu()
 
+        elif (GetShipType(pPlayer) == "DSC304DaedalusRefit"):
+                    BuildMenu()
+
+        elif (GetShipType(pPlayer) == "DSC304DaedalusRefitS"):
+                    BuildMenu()
+
         elif (GetShipType(pPlayer) == "Korolev"):
                     BuildMenu()
 
@@ -100,6 +106,21 @@ def ShipCheck(pObject, pEvent):
                     BuildMenu()
 
         elif (GetShipType(pPlayer) == "DSC304Apollo"):
+                    BuildMenu()
+
+        elif (GetShipType(pPlayer) == "DSC304ApolloRefit"):
+                    BuildMenu()
+
+        elif (GetShipType(pPlayer) == "DSC304ApolloRefitS"):
+                    BuildMenu()
+
+        elif (GetShipType(pPlayer) == "DSC304SunTzu"):
+                    BuildMenu()
+
+        elif (GetShipType(pPlayer) == "DSC304SunTzuRefit"):
+                    BuildMenu()
+
+        elif (GetShipType(pPlayer) == "DSC304SunTzuRefitS"):
                     BuildMenu()
 
         elif (GetShipType(pPlayer) == "PrometheusRefit"):
