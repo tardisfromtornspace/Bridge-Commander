@@ -3,8 +3,8 @@ import Multiplayer.SpeciesToShip
 
 def GetShipStats():
 	kShipStats = {
-		"FilenameHigh": "data/Models/Ships/Protostar/Protostar.nif",
-		"FilenameMed": "data/Models/Ships/Protostar/Protostar.nif",
+		"FilenameHigh": "data/Models/Ships/ProtostarOLD/Protostar.nif",
+		"FilenameMed": "data/Models/Ships/ProtostarOLD/Protostar.nif",
 		"FilenameLow": "data/Models/Ships/Protostar/Protostar.nif",
 		"Name": "USS Protostar",
 		"HardpointFile": "USSProtostar",
@@ -23,7 +23,7 @@ def LoadModel(bPreLoad = 0):
 		pLODModel = App.g_kLODModelManager.Create(pStats["Name"])
 		pLODModel.AddLOD(pStats["FilenameHigh"], 10, 400.0, 15.0, 15.0, 600, 1000, "_glow", None, "_specular")
 		pLODModel.AddLOD(pStats["FilenameMed"],  10, 800.0, 15.0, 15.0, 600, 1000, "_glow", None, "_specular")
-		pLODModel.AddLOD(pStats["FilenameLow"],  10, 1600.0, 15.0, 30.0, 600, 1000, "_glow", None, None)
+		pLODModel.AddLOD(pStats["FilenameLow"],  10, 2400.0, 0.0, 0.0, 0, 0, "_glow", None, "_specular")
 
 #		kDebugObj = App.CPyDebug()
 		if (bPreLoad == 0):

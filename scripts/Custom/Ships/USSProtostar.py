@@ -85,11 +85,11 @@ Foundation.ShipDef.USSProtostar.dTechs = {
 	"Alternate-Warp-FTL": {
 		"Setup": {
 			"Proto-Warp": {	"Nacelles": ["Proto Warp Nacelle"], "Core": ["Proto-Core"], },
-			"Body": "VasKholhr_Body",
+			"Body": shipFile, #"USSProtostarBody",  
 			"NormalModel":          shipFile,
 			"WarpModel":          shipFile,
-			"Proto-WarpModel":          "VasKholhr_WingUp",
-			#"AttackModel":          "VasKholhr_WingDown",
+			"Proto-WarpModel":          shipFile, #"USSProtostarProtoWarp",
+			"AttackModel":          shipFile, # TO-DO COMMENT AND FIX THE OTHERS
 			"BodySetScale": 1.0,
 			"NormalSetScale": 1.0,
 			#"WarpSetScale": 1.0,
@@ -113,8 +113,8 @@ Foundation.ShipDef.USSProtostar.dTechs = {
 				"Star Warp": [-0.300000, -0.250000, 0.005000],
 			},
 		},
-
-		"Port Pylon":     ["USSProtostarPN", {
+		"""
+		"Port Pylon":     ["USSProtostarPP", {
 			"Experimental": 0,
 			"SetScale": 1.0,
 			"Position":             [0, 0, 0],
@@ -131,7 +131,7 @@ Foundation.ShipDef.USSProtostar.dTechs = {
 			},
 		],
         
-		"Starboard Pylon":     ["USSProtostarSN", {
+		"Starboard Pylon":     ["USSProtostarSP", {
 			"Experimental": 0,
 			"SetScale": 1.0,
 			"Position":             [0, 0, 0],
@@ -147,7 +147,8 @@ Foundation.ShipDef.USSProtostar.dTechs = {
 			"Proto-WarpDuration":       150.0,
 			},
 		],
-		"Port Nacelle":     ["USSProtostarPN", {
+
+		"Port PylonP":     ["USSProtostarPDC", { # TO-DO These two parts below are for a model that has some inaccuracies, if we find a better model or make one ourselves, adjust accordingly. Among these, the commented parts below should be addressed, and the two parts immadiately below should be removed/fused with the port and starboard pylons
 			"Experimental": 0,
 			"SetScale": 1.0,
 			"Position":             [0, 0, 0],
@@ -158,13 +159,12 @@ Foundation.ShipDef.USSProtostar.dTechs = {
 			#"WarpRotation":       [0, 0, 0],
 			#"WarpPosition":       [0, 0, 0.001],
 			#"WarpDuration":       150.0,
-			"Proto-WarpRotation":       [0, 0, 0],
-			"Proto-WarpPosition":       [0, 0, -0.2],
+			"Proto-WarpRotation":       [0, -0.3, 0],
+			"Proto-WarpPosition":       [0, 0, -0.01],
 			"Proto-WarpDuration":       150.0,
 			},
 		],
-        
-		"Starboard Nacelle":     ["USSProtostarSN", {
+		"Starboard PylonP":     ["USSProtostarSDC", {
 			"Experimental": 0,
 			"SetScale": 1.0,
 			"Position":             [0, 0, 0],
@@ -175,50 +175,124 @@ Foundation.ShipDef.USSProtostar.dTechs = {
 			#"WarpRotation":       [0, 0, 0],
 			#"WarpPosition":       [0, 0, 0.001],
 			#"WarpDuration":       150.0,
-			"Proto-WarpRotation":       [0, 0, 0],
-			"Proto-WarpPosition":       [0, 0, -0.2],
+			"Proto-WarpRotation":       [0, 0.3, 0],
+			"Proto-WarpPosition":       [0, 0, -0.01],
 			"Proto-WarpDuration":       150.0,
 			},
 		],
+		"""
+		"Port Nacelle":     ["USSProtostarPN", {
+			"Experimental": 0,
+			"SetScale": 1.0,
+			"Position":             [0.265, -0.36, 0.075],
+			"Rotation":             [0, 0, 0], # normal Rotation used if not Red Alert and if not Warp
+			#"AttackRotation":         [0, -0.6, 0.5],
+			#"AttackDuration":         200.0, # Value is 1/100 of a second
+			"AttackPosition":       [0.265, -0.36, -0.1],
+			#"WarpRotation":       [0, 0, 0],
+			#"WarpPosition":       [0, 0, 0.001],
+			#"WarpDuration":       150.0,
+			"Proto-WarpRotation":       [0, 0, 0],
+			"Proto-WarpPosition":       [0.265, -0.36, -0.1],
+			"Proto-WarpDuration":       150.0,
+			},
+		],
+		"Starboard Nacelle":     ["USSProtostarSN", {
+			"Experimental": 0,
+			"SetScale": 1.0,
+			"Position":             [-0.265, -0.36, 0.075],
+			"Rotation":             [0, 0, 0],
+			#"AttackRotation":         [0, 0.6, 0.1],
+			#"AttackDuration":         200.0, # Value is 1/100 of a second
+			"AttackPosition":       [-0.265, -0.36, -0.1],
+			#"WarpRotation":       [0, 0, 0],
+			#"WarpPosition":       [0, 0, 0.001],
+			#"WarpDuration":       150.0,
+			"Proto-WarpRotation":       [0, 0, 0],
+			"Proto-WarpPosition":       [-0.265, -0.36, -0.1],
+			"Proto-WarpDuration":       150.0,
+			},
+		],
+
+
+		"Central NacelleU":     ["USSProtostarCNU", {
+			"Experimental": 0,
+			"SetScale": 1.0,
+			"Position":             [0, -0.078, -0.022],
+			"Rotation":             [0, 0, 0],
+			"AttackPosition":       [0, -0.34, 0.012],
+			#"WarpRotation":       [0, 0, 0],
+			#"WarpPosition":       [0, -0.01, 0],
+			#"WarpDuration":       150.0,
+			"Proto-WarpRotation":       [0, 0, 0],
+			"Proto-WarpPosition":       [0, -0.34, 0.012],
+			"Proto-WarpDuration":       250.0,
+			},
+		],
+		"Central NacelleD":     ["USSProtostarCND", {
+			"Experimental": 0,
+			"SetScale": 1.0,
+			"Position":             [0, -0.078, -0.042],
+			"Rotation":             [0, 0, 0],
+			"AttackPosition":       [0, -0.34, -0.07],
+			#"WarpRotation":       [0, 0, 0],
+			#"WarpPosition":       [0, -0.01, 0],
+			#"WarpDuration":       150.0,
+			"Proto-WarpRotation":       [0, 0, 0],
+			"Proto-WarpPosition":       [0, -0.34, -0.07],
+			"Proto-WarpDuration":       300.0,
+			},
+		],
+
+		
 		"Central Nacelle":     ["USSProtostarCN", {
 			"Experimental": 0,
 			"SetScale": 1.0,
-			"Position":             [0, 0, 0],
+			"Position":             [0, 0.052, -0.02],
 			"Rotation":             [0, 0, 0],
+			"AttackPosition":       [0, -0.1, -0.02],
 			#"WarpRotation":       [0, 0, 0],
 			#"WarpPosition":       [0, -0.01, 0],
 			#"WarpDuration":       150.0,
 			"Proto-WarpRotation":       [0, 0, 0],
-			"Proto-WarpPosition":       [0, -1.0, -0.05],
+			"Proto-WarpPosition":       [0, -0.1, -0.02],
 			"Proto-WarpDuration":       250.0,
 			},
 		],
-		"Central NacelleU":     ["USSProtostarCN", {
+
+		"Starboard Central Body":     ["USSProtostarSD", {
 			"Experimental": 0,
 			"SetScale": 1.0,
-			"Position":             [0, 0, 0],
+			"Position":             [-0.025, -0.16, -0.015],
 			"Rotation":             [0, 0, 0],
+			"AttackPosition":       [-0.08, -0.15, -0.015],
 			#"WarpRotation":       [0, 0, 0],
 			#"WarpPosition":       [0, -0.01, 0],
 			#"WarpDuration":       150.0,
 			"Proto-WarpRotation":       [0, 0, 0],
-			"Proto-WarpPosition":       [0, -1.0, 0.15],
-			"Proto-WarpDuration":       250.0,
+			"Proto-WarpPosition":       [-0.10, -0.15, -0.015],
+			"Proto-WarpDuration":       150.0,
 			},
 		],
-		"Central NacelleD":     ["USSProtostarCN", {
+		"Port Central Body":     ["USSProtostarPD", {
 			"Experimental": 0,
 			"SetScale": 1.0,
-			"Position":             [0, 0, 0],
+			"Position":             [0.025, -0.16, -0.015],
 			"Rotation":             [0, 0, 0],
+			"AttackPosition":       [0.08, -0.15, -0.015],
 			#"WarpRotation":       [0, 0, 0],
 			#"WarpPosition":       [0, -0.01, 0],
 			#"WarpDuration":       150.0,
 			"Proto-WarpRotation":       [0, 0, 0],
-			"Proto-WarpPosition":       [0, -1.0, -0.15],
-			"Proto-WarpDuration":       250.0,
+			"Proto-WarpPosition":       [0.08, -0.15, -0.015],
+			"Proto-WarpDuration":       150.0,
 			},
 		],
+	},
+}
+
+"""
+		# Central NacelleD and Central NacelleU are accompanied by these rotating parts, which can be simulated by the parts themselves being partly hidden by the main protowarp core part.
 		"Central NacelleU1":     ["USSProtostarCN", {
 			"Experimental": 0,
 			"SetScale": 1.0,
@@ -245,20 +319,9 @@ Foundation.ShipDef.USSProtostar.dTechs = {
 			"Proto-WarpDuration":       250.0,
 			},
 		],
-		"Starboard Central Body":     ["USSProtostarCN", {
-			"Experimental": 0,
-			"SetScale": 1.0,
-			"Position":             [0, 0, 0],
-			"Rotation":             [0, 0, 0],
-			#"WarpRotation":       [0, 0, 0],
-			#"WarpPosition":       [0, -0.01, 0],
-			#"WarpDuration":       150.0,
-			"Proto-WarpRotation":       [0, 0, 0],
-			"Proto-WarpPosition":       [-0.5, 0.0, 0],
-			"Proto-WarpDuration":       150.0,
-			},
-		],
-		"S Central Body U":     ["USSProtostarCN", {
+
+		# Four plates that cover the protocore up and down when inactive, they fold upwards (downwards for the "D" parts) when engaging protowarp
+		"S Central Body U":     ["USSProtostarSD", {
 			"Experimental": 1,
 			"SetScale": 1.0,
 			"Position":             [0, 0, 0],
@@ -284,20 +347,7 @@ Foundation.ShipDef.USSProtostar.dTechs = {
 			"Proto-WarpDuration":       150.0,
 			},
 		],
-		"Port Central Body":     ["USSProtostarCN", {
-			"Experimental": 0,
-			"SetScale": 1.0,
-			"Position":             [0, 0, 0],
-			"Rotation":             [0, 0, 0],
-			#"WarpRotation":       [0, 0, 0],
-			#"WarpPosition":       [0, -0.01, 0],
-			#"WarpDuration":       150.0,
-			"Proto-WarpRotation":       [0, 0, 0],
-			"Proto-WarpPosition":       [0.5, 0.0, 0],
-			"Proto-WarpDuration":       150.0,
-			},
-		],
-		"P Central Body U":     ["USSProtostarCN", {
+		"P Central Body U":     ["USSProtostarPD", {
 			"Experimental": 1,
 			"SetScale": 1.0,
 			"Position":             [0, 0, 0],
@@ -323,7 +373,9 @@ Foundation.ShipDef.USSProtostar.dTechs = {
 			"Proto-WarpDuration":       150.0,
 			},
 		],
-		"S Dish Cover":     ["USSProtostarCN", {
+
+		# These parts cover a hole on the model
+		"S Dish Cover":     ["USSProtostarSDC", {
 			"Experimental": 0,
 			"SetScale": 1.0,
 			"Position":             [0, 0, 0],
@@ -336,7 +388,7 @@ Foundation.ShipDef.USSProtostar.dTechs = {
 			"Proto-WarpDuration":       250.0,
 			},
 		],
-		"P Dish Cover":     ["USSProtostarCN", {
+		"P Dish Cover":     ["USSProtostarPDC", {
 			"Experimental": 0,
 			"SetScale": 1.0,
 			"Position":             [0, 0, 0],
@@ -349,8 +401,8 @@ Foundation.ShipDef.USSProtostar.dTechs = {
 			"Proto-WarpDuration":       250.0,
 			},
 		],
-	},
-}
+
+"""
 
 Foundation.ShipDef.USSProtostar.desc = "The USS Protostar (NX-76884) was the first Protostar-class Federation starship launched in 2382. The Protostar was launched from the San Francisco Fleet Yards on Stardate 59749.1 under the command of Captain Chakotay for a return mission to the Delta Quadrant undertaken in the years after the return of the USS Voyager.\nThe Protostar-class was a small starship class launched by Starfleet during the late 24th century that was later approved for full production in 2384.\nWhen it was developed, the Protostar class was the fastest ship in Starfleet, due to its main feature: two distinct warp drive modes, one, a conventional warp drive capable of warp 9.97 and powered by twin warp cores; the other, a more energy-intensive gravimetric protostar containment, which was powered by a protostar and allowed considerably faster travel speed than conventional warp speed. Such was proto-warp, that it could cross over four thousand light years, a journey that would have taken 4 years at conventional maximum warp 9.97, in a matter of minutes. Due to the proto-core's energy requirements, rapid energy regeneration protocols were needed to be performed after at least 2 consecutive proto-warp uses.\nUnlike other Starfleet ships, the Protostar class had its navigational deflector mounted on the underside of the saucer instead of the engineering hull, which instead has a large loading ramp for entrance into the vessel. Also an oddity amongst Federation vessels of the time, is that the ship was equipped with polarized hull plating as part of its main defences.\nTactical-wise, its shields are not the best, but it is fast and nimble and carries an acceptable weapons array."
 
