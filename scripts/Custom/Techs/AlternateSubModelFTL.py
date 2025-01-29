@@ -48,10 +48,10 @@
 # --------- Please note that while being (-), it pretty much is (#) if you added certain warp-related fields which are outside of "Setup".
 # -- (-) "<insert_name_here>Model" is a key whose value stores the model used when the ship uses <insert_name_here>, and will supersede the warp-related options. <k:v> <s-s> c.s.
 # --------- Please note that while being (-), it pretty much is (#) if you added certain <insert_name_here>-related fields which are outside of "Setup".
-# -- (0) "BodySetScale": indicates the model size multiplier during a transformation. Do not include to have default 1.0 (regular scale). <k:v>
-# -- (0) "NormalSetScale": indicates the model size multiplier during normal conditions. Do not include to have default 1.0 (regular scale). <k:v>
-# -- (0) "AttackSetScale": indicates the model size multiplier during red alert. Do not include to have default 1.0 (regular scale). <k:v>
-# -- (0) "<insert_name_here>SetScale": indicates the model size multiplier during <insert_name_here> (f.ex. during Warp, during Proto-Warp). Do not include to have default 1.0 (regular scale). <k:v>
+# -- (0) "BodySetScale": indicates the model size multiplier during a transformation. Affects ALL attached part scales as well. Do not include to have default 1.0 (regular scale). <k:v>
+# -- (0) "NormalSetScale": indicates the model size multiplier during normal conditions. Affects ALL attached part scales as well. Do not include to have default 1.0 (regular scale). <k:v>
+# -- (0) "AttackSetScale": indicates the model size multiplier during red alert. Affects ALL attached part scales as well. Do not include to have default 1.0 (regular scale). <k:v>
+# -- (0) "<insert_name_here>SetScale": indicates the model size multiplier during <insert_name_here> (f.ex. during Warp, during Proto-Warp). Affects ALL attached part scales as well. Do not include to have default 1.0 (regular scale). <k:v>
 # -- (0) "Hardpoints": a dictionary which stores inside all subsystem property names in <k:v> format which would move after a transformation, regarding normal positions (including yellow alert).
 # --------- On this case, each dictionary entry would be "Subsystem name" : [x, y, z]
 # -- (0) "AttackHardpoints": a dictionary which stores inside all subsystem property names in <k:v> format which would move after a transformation, regarding red alert positions.
@@ -62,11 +62,14 @@
 # --------- On this case, each dictionary entry would be "Subsystem name" : [x, y, z]
 # (-) After that, there's a section for each non-main-body piece, in <k:v> format, with "k" being the inner name the piece will receive, and v a list of structure: ["A", D]
 # --------- (#) "A" is the first value of the list, it is the ship model used for that particular piece during any transformation. <s-s> c.s.
-# --------- (-) "D" is a dictionary containing positions and rotations for each situation. c.s.
+# --------- (-) "D" is a dictionary containing positions, rotations and miscelllaneous information for each situation. c.s.
 # ---------------- (0) "<insert_name_here>Position": a dictionary entry which stores inside the movement in <k:v> format which the piece would move to during an <insert_name_here> transformation. On this example, "<insert_name_here>" could be nothing (thus "Position", for default), "Attack" (for red alert), "Warp" (for regular warp) or "Proto-Warp" (for Proto-Warp).
-# ----------------------- Movement value is on [x, y, z]
+# ----------------------- Movement value is on [x, y, z].
 # ---------------- (0) "<insert_name_here>Rotation": a dictionary entry which stores inside the rotation in <k:v> format which the piece would move to during an <insert_name_here> transformation. On this example, "<insert_name_here>" could be nothing (thus "Rotation", for default), "Attack" (for red alert), "Warp" (for regular warp) or "Proto-Warp" (for Proto-Warp).
-# ----------------------- Rotation value is on [x, y, z] axis of rotation
+# ----------------------- Rotation value is on [x, y, z] axis of rotation.
+# ---------------- (0) "<insert_name_here>Duration": a dictionary entry which stores inside the time, in <k:v> format and in centiseconds, that a <insert_name_here> transformation lasts. On this example, "<insert_name_here>" should not be empty, so "Attack" for red alert, "Warp" for regular warp or "Proto-Warp" for Proto-Warp.
+# ---------------- (0) "<insert_name_here>DelayEntry": a dictionary entry which stores inside the time, in <k:v> format and in seconds, that a <insert_name_here> beginning transformation (f.ex. from normal to attack) waits before actually moving or rotating. Default and minimum is 0, which is added to the default 0.1 normal wait. On this example, "<insert_name_here>" should not be empty, so "Attack" for red alert, "Warp" for regular warp or "Proto-Warp" for Proto-Warp.
+# ---------------- (0) "<insert_name_here>DelayExit": a dictionary entry which stores inside the time, in <k:v> format and in seconds, that a <insert_name_here> exit transformation (f.ex. from attack to normal) waits before actually moving or rotating. Default and minimum value is 0, which is added to the default 0.1 normal wait. On this example, "<insert_name_here>" should not be empty, so "Attack" for red alert, "Warp" for regular warp or "Proto-Warp" for Proto-Warp.
 # ---------------- (0) "SetScale": indicates the model size of a subpart. Do not include to have same behaviour as SubModels (regular scale but if the part has a too-extreme rotation (like, at least 90 degrees) it will suffer an asintotic process where it suddenly becomes small and then extremely big and inverted). <k:v>
 # ---------------- (0) "Experimental": a dictionary entry which establishes if the ship uses experimental rotation or not. "Experimental": 0 or entry not added implies it uses the legacy submodels style of rotation.
 # ------------------------ Legacy rotations are better for backwards-compatibility and have little to none drifting issues, but only work for a particular quadrant of rotation ( -90, 90 ) degrees and are best for ( -45 degrees, 45 degrees) amplitude. They share most of the issues SubModels rotations have (including that beyond the optimal movement range the subparts will suffer an unwanted size change, more prominent the more we approach to the quadrant limit), except that they are more optimized and thus will not suffer accidental drifting nor will cause memory issues.
@@ -123,6 +126,7 @@ Foundation.ShipDef.USSProtostar.dTechs = {
 			"Proto-WarpRotation":       [0, 0.749, 0],
 			"Proto-WarpPosition":       [0, 0, 0.05],
 			"Proto-WarpDuration":       150.0,
+			"Proto-WarpDelayEntry":       0.15,
 			},
 		],
         
@@ -143,6 +147,7 @@ Foundation.ShipDef.USSProtostar.dTechs = {
 			"Proto-WarpRotation":       [0, -0.749, 0],
 			"Proto-WarpPosition":       [0, 0, 0.05],
 			"Proto-WarpDuration":       150.0,
+			"Proto-WarpDelayExit":       0.15,
 			},
 		],
 	},
@@ -1499,7 +1504,7 @@ def GetEngageDirectionC(mySelf, pPlayerID = None):
 #################################################################################################################
 #
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.82",
+	    "Version": "0.83",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -3924,7 +3929,7 @@ def PartsForWeaponProtoState(pShip, techP):
 			dGenShipDict = item[1]
 			break
 	
-	# check if the alert state has really chanced since the last time
+	# check if the alert state has really changed since the last time
 	if dGenShipDict["AlertLevel"] == iType:
 		return 0
 	# update alert state
@@ -3960,7 +3965,13 @@ def PartsForWeaponProtoState(pShip, techP):
 		fDuration = 200.0 # In centiseconds (2 seconds)
 		if item[1].has_key("AttackDuration"):
 			fDuration = item[1]["AttackDuration"]
-		    
+
+		initialWait = 0.1 # In seconds (so 10 centiseconds)
+		if iType == 2 and item[1].has_key("AttackDelayEntry") and item[1]["AttackDelayEntry"] > 0:
+			initialWait = initialWait + item[1]["AttackDelayEntry"]
+		elif iType != 2 and item[1].has_key("AttackDelayExit") and item[1]["AttackDelayExit"] > 0:
+			initialWait = initialWait + item[1]["AttackDelayExit"]
+		
 		# Rotation
 		lStartingRotation = item[1]["currentRotation"]
 		lStoppingRotation = lStartingRotation
@@ -3987,7 +3998,7 @@ def PartsForWeaponProtoState(pShip, techP):
 		pSeq = App.TGSequence_Create()
 		
 		# do the move
-		initialWait = 0.1 # In seconds (so 10 centiseconds)
+		
 		while(iTime * 100 <= (fDuration + (initialWait * 100))):
 			if iTime == 0.0:
 				iWait = initialWait # we wait for the first run
@@ -4092,6 +4103,7 @@ def StartingWarpCommon(pObject, pEvent, techP, subPosition="Warp"):
 	subPositionRotation = str(subPosition) + "Rotation"
 	subPositionPosition = str(subPosition) + "Position"
 	subPositionIg = "Ignore" + str(subPosition) + "Entry"
+	subPositionDelay = str(subPosition) + "DelayEntry"
 	for item in pInstance.AlternateFTLSubModelOptionsList:
 		# setup is not a submodel
 		if item[0] == "Setup":
@@ -4115,6 +4127,10 @@ def StartingWarpCommon(pObject, pEvent, techP, subPosition="Warp"):
 		
 		if item[1].has_key(subPositionDuration):
 			fDuration = item[1][subPositionDuration]
+
+		initialWait = 0.1 # In seconds (so 10 centiseconds)
+		if item[1].has_key(subPositionDelay) and item[1][subPositionDelay] > 0:
+			initialWait = initialWait + item[1][subPositionDelay]
 		    
 		# Rotation
 		lStartingRotation = item[1]["currentRotation"]
@@ -4139,7 +4155,6 @@ def StartingWarpCommon(pObject, pEvent, techP, subPosition="Warp"):
 
 
 		# do the move
-		initialWait = 0.1 # In seconds (so 10 centiseconds)
 		while(iTime * 100 <= (fDuration + (initialWait * 100))):
 			if iTime == 0.0:
 				iWait = initialWait # we wait for the first run
@@ -4203,6 +4218,7 @@ def ExitingProtoWarp(pAction, pShip, techP, subPosition):
 	subPositionRotation = str(subPosition) + "Rotation"
 	subPositionPosition = str(subPosition) + "Position"
 	subPositionIg = "Ignore" + str(subPosition) + "Exit"
+	subPositionDelay = str(subPosition) + "DelayExit"
 
 	for item in pInstance.AlternateFTLSubModelOptionsList:
 		# setup is not a submodel
@@ -4229,7 +4245,11 @@ def ExitingProtoWarp(pAction, pShip, techP, subPosition):
 		fDuration = 200.0
 		if item[1].has_key(subPositionDuration):
 			fDuration = item[1][subPositionDuration]
-		    
+		
+		initialWait = 0.1 # In seconds (so 10 centiseconds)
+		if item[1].has_key(subPositionDelay) and item[1][subPositionDelay] > 0:
+			initialWait = initialWait + item[1][subPositionDelay]
+    
 		# Rotation
 		lStartingRotation = item[1]["currentRotation"]
 		lStoppingRotation = lStartingRotation
@@ -4263,8 +4283,6 @@ def ExitingProtoWarp(pAction, pShip, techP, subPosition):
 		pSeq = App.TGSequence_Create()
 		
 		# do the move
-		initialWait = 0.1 # In seconds (so 10 centiseconds)
-
 		while(iTime * 100 <= (fDuration + (initialWait * 100))):
 			if iTime == 0.0:
 				iWait = initialWait # we wait for the first run

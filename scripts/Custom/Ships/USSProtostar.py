@@ -227,6 +227,7 @@ Foundation.ShipDef.USSProtostar.dTechs = {
 			"Proto-WarpRotation":       [0, 0, 0],
 			"Proto-WarpPosition":       [0, -0.34, 0.012],
 			"Proto-WarpDuration":       250.0,
+			"Proto-WarpDelayEntry":       0.15,
 			},
 		],
 		"Central NacelleD":     ["USSProtostarCND", {
@@ -241,6 +242,7 @@ Foundation.ShipDef.USSProtostar.dTechs = {
 			"Proto-WarpRotation":       [0, 0, 0],
 			"Proto-WarpPosition":       [0, -0.34, -0.07],
 			"Proto-WarpDuration":       300.0,
+			"Proto-WarpDelayEntry":       0.15,
 			},
 		],
 
@@ -257,6 +259,7 @@ Foundation.ShipDef.USSProtostar.dTechs = {
 			"Proto-WarpRotation":       [0, 0, 0],
 			"Proto-WarpPosition":       [0, -0.1, -0.02],
 			"Proto-WarpDuration":       250.0,
+			"Proto-WarpDelayEntry":       0.15,
 			},
 		],
 
@@ -272,6 +275,7 @@ Foundation.ShipDef.USSProtostar.dTechs = {
 			"Proto-WarpRotation":       [0, 0, 0],
 			"Proto-WarpPosition":       [-0.10, -0.15, -0.015],
 			"Proto-WarpDuration":       150.0,
+			"Proto-WarpDelayExit":       0.25,
 			},
 		],
 		"Port Central Body":     ["USSProtostarPD", {
@@ -286,6 +290,7 @@ Foundation.ShipDef.USSProtostar.dTechs = {
 			"Proto-WarpRotation":       [0, 0, 0],
 			"Proto-WarpPosition":       [0.08, -0.15, -0.015],
 			"Proto-WarpDuration":       150.0,
+			"Proto-WarpDelayExit":       0.25,
 			},
 		],
 	},

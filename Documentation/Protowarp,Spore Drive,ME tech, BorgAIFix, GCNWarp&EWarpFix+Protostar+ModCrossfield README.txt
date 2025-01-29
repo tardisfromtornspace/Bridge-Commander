@@ -1,4 +1,8 @@
 == Changelog ==
+0.5.4 - Updates:
+  * Updated AlternateSubModelFTL to version 0.83 to support custom exit and entry delay subPart times.
+  * Updated USS Protostar Custom script to include this new update.
+  * Partially updated Protostar Model with Greystar's additions, still a W.I.P.
 0.5.3 - Fixes:
   * Updated MEShields to manually cover an edge-case where a torpedo hitting behind a shield is impossible.
   * Updated Turian Frigate hardpoints so they do not repair so fast.
