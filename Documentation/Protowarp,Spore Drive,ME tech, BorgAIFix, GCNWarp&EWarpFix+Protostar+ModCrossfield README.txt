@@ -1,8 +1,10 @@
 == Changelog ==
+0.5.5 - Updates:
+  * Updated this readme properly to credit all the authors behind the High-End Protostar model.
 0.5.4 - Updates:
   * Updated AlternateSubModelFTL to version 0.83 to support custom exit and entry delay subPart times.
   * Updated USS Protostar Custom script to include this new update.
-  * Partially updated Protostar Model with Greystar's additions, still a W.I.P.
+  * Partially updated Protostar Model with Greystar's additions, made by LoganRolphh on sketchfab, still a W.I.P.
 0.5.3 - Fixes:
   * Updated MEShields to manually cover an edge-case where a torpedo hitting behind a shield is impossible.
   * Updated Turian Frigate hardpoints so they do not repair so fast.
@@ -117,8 +119,10 @@ IMPORTANT INSTALL INSTRUCTIONS: Do not copy-paste this mod's scripts/AI folder r
 * WileyCoyote (michaelwileyart@gmail.com) for the Crossfield Phaser sounds (already mentioned of the Crossfield's separate readme).
 * BCC Community for feedback.
 * That Guy... Brian (ThatGuyBrian, trekker12@hotmail.com) - for Model Conversion of the original Protostar and Crossfield models (already mentioned on the Crossfield's separate readme), the Crossfield original HP (already mentioned on the Crossfield's separate readme), and for telling me to install Nifskope, that tool has proven to be very useful to me.
-** Prodigy model extracted from Star Trek Prodigy: Supernova. https://drive.google.com/file/d/1BMaT2_i5KBIqZ5Am1Hr4vK-81yZQ9GsE/view
+** Original Prodigy model extracted from Star Trek Prodigy: Supernova. https://drive.google.com/file/d/1BMaT2_i5KBIqZ5Am1Hr4vK-81yZQ9GsE/view
 ** Original Crossfield model (from the aforementioned https://www.gamefront.com/games/bridge-commander/file/crossfield-class) ported from Star Trek: Adversaries (https://store.steampowered.com/app/815040/Star_Trek_Adversaries/)
+* Grey da Derg#2305 aka Greystar for Model Conversion of the High-End Protostar model and adjustments.
+** High-end USS Protostar Model made by LoganRolphh on sketchfab, falls under Creative Commons - Attribution https://sketchfab.com/3d-models/star-trek-prodigy-protostar-class-93efdd42825b410a88e77ed8e4119ff8
 * Mass Effect FTL sounds and Mass Accelerator sounds from ME3 final space battle, taken from Gamer's Little Playground's channel https://www.youtube.com/watch?v=iEoBsKALnxE
 * Thanix cannon sounds: from N7Reinas's channel https://www.youtube.com/watch?v=hByyA01r0dA recording of ME2
 * Original Electric Explosion effect, modified for the Eezo field, taken from VonFrank's work in BC:Remastered.
