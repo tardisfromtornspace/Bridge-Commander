@@ -65,7 +65,7 @@ RegenerativeArmor.SetShieldChargePerSecond(RegenerativeArmor.LEFT_SHIELDS, 10000
 RegenerativeArmor.SetShieldChargePerSecond(RegenerativeArmor.RIGHT_SHIELDS, 10000.000000)
 App.g_kModelPropertyManager.RegisterLocalTemplate(RegenerativeArmor)
 #################################################
-Hull = App.HullProperty_Create("Hull")
+Hull = App.HullProperty_Create("Main Hull")
 
 Hull.SetMaxCondition(30000.000000)
 Hull.SetCritical(1)
@@ -1292,7 +1292,7 @@ def LoadPropertySet(pObj):
 	prop = App.g_kModelPropertyManager.FindByName("SuperHive Ship", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
-	prop = App.g_kModelPropertyManager.FindByName("Hull", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	prop = App.g_kModelPropertyManager.FindByName("Main Hull", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
 	prop = App.g_kModelPropertyManager.FindByName("Bridge", App.TGModelPropertyManager.LOCAL_TEMPLATES)

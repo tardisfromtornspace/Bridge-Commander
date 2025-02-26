@@ -65,7 +65,7 @@ ShieldGenerator.SetShieldChargePerSecond(ShieldGenerator.LEFT_SHIELDS, 100.00000
 ShieldGenerator.SetShieldChargePerSecond(ShieldGenerator.RIGHT_SHIELDS, 100.000000)
 App.g_kModelPropertyManager.RegisterLocalTemplate(ShieldGenerator)
 #################################################
-Hull = App.HullProperty_Create("Hull")
+Hull = App.HullProperty_Create("Main Hull")
 
 Hull.SetMaxCondition(19000.000000)
 Hull.SetCritical(1)
@@ -1292,7 +1292,7 @@ def LoadPropertySet(pObj):
 	prop = App.g_kModelPropertyManager.FindByName("Hive Ship", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
-	prop = App.g_kModelPropertyManager.FindByName("Hull", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	prop = App.g_kModelPropertyManager.FindByName("Main Hull", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
 	prop = App.g_kModelPropertyManager.FindByName("Bridge", App.TGModelPropertyManager.LOCAL_TEMPLATES)
