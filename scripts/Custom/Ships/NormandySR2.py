@@ -4,7 +4,7 @@
 
 import App
 import Foundation
-
+import traceback
 
 abbrev = "NormandySR2"
 iconName = "NormandySR2"
