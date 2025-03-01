@@ -1,9 +1,21 @@
-# Hull integrity
-
-# by Sov
-# Slightly tweaked by Alex SL Gato
-
+# THIS FILE IS NOT SUPPORTED BY ACTIVISION
+# THIS FILE IS UNDER THE LGPL LICENSE AS WELL
+# HullIntegrity.py
+# 1st March 2025, by USS Sovereign, and tweaked by Noat and Alex SL Gato (CharaToLoki)
+#         Inspired by the Shield Percentages mod by Defiant. It was originally made pre-2010 with the goal of showing lots of accessibility options, such as for colorblind people.
+#
 # Modify, redistribute to your liking. Just remember to give credit where due.
+#################################################################################################################
+#
+MODINFO = { "Author": "\"USS Sovereign\" (mario0085), Noat (noatblok),\"Alex SL Gato\" (andromedavirgoa@gmail.com)",
+	    "Version": "0.12",
+	    "License": "LGPL",
+	    "Description": "Read the small title above for more info"
+	    }
+#
+#################################################################################################################
+#
+
 sPath = "Custom.UnifiedMainMenu.ConfigModules.Options.SavedConfigs.AccessibilityConfigVals"
 sCPath = "Custom.UnifiedMainMenu.ConfigModules.Options.AccessibilityConfig"
 
@@ -51,8 +63,71 @@ def CheckAndRefreshModule(variableList, pMyModule, theWay, issue=0): # Used when
 				print theWay, " on cache has no ", variable, " attribute."
 				issue = issue + 1
 
+def RefreshConfig(pObject, pEvent):
+	print "Saved mid-game, refreshing configuration..."
+	CheckAndRefreshModule(globalVarList, pModule, sPath, 0)
+	global pText, firstTime
+
+	if pModule == None:
+		return
+
+	# Grab health gauge
+	pTCW = App.TacticalControlWindow_GetTacticalControlWindow()
+	if not pTCW:
+		return
+	pDisplay = pTCW.GetShipDisplay()
+	if not pDisplay:
+		return
+
+	global pHealth, firstTime
+	
+	if not pHealth:
+		pHealth = pDisplay.GetHealthGauge()
+
+	if not pHealth:
+		return
+
+	firstTime = 1
+	# This line hides the health gauge which is replaced by the percentage text
+	if globalVarList["ShowBar"] == 0:
+		pHealth.SetNotVisible(0)
+	else:
+		pHealth.SetVisible(0)
+
+	if globalVarList["ShowPercent"] or globalVarList["ShowFraction"]:
+		wasNone = 0
+		if pText == None:
+			pText = App.TGParagraph_Create("Hull :          100%", 1.0, None, globalVarList["sFont"], globalVarList["FontSize"])
+			wasNone = 1
+		else:
+			pText.SetFontGroup(App.g_kFontManager.GetFontGroup(globalVarList["sFont"], globalVarList["FontSize"]))
+
+		if globalVarList["ShowFraction"]:
+			howRight = 0
+		else:
+			howRight = pHealth.GetRight() * 0.8 - pText.GetWidth()
+
+		if wasNone != 0:
+			pDisplay.AddChild(pText, howRight, pHealth.GetBottom())
+
+	else:
+		if pText != None: # "Hiding" in a way...
+			pText.SetString("")
+		pDisplay.SetFixedSize(pOriginalWidth, pOriginalHeight)
+		pHealth.Resize(pDisplay.GetMaximumInteriorWidth(), pHealth.GetHeight(), 0)
+
+
+	pDisplay.InteriorChangedSize()
+	#pDisplay.Layout()
+	pObject.AddHandler() #shipSwapChecker.AddHandler()
+
+	global pTimer
+	if not pTimer:
+		pTimer = Watcher()
+
+
+
 def ShipCheck(pObject, pEvent):
-	print "Called reinit"
 	global firstTime
 	firstTime = 1
 
@@ -61,13 +136,11 @@ class ShipSwapCheckClass:
 		self.name = name
 		self.pEventHandler = App.TGPythonInstanceWrapper()
 		self.pEventHandler.SetPyWrapper(self)
-		#self.AddHandler()
+		self.AddSHandler()
 
-	def ShipCheck(self, pEvent): # Somehow I cannot call this function...
-		print "Called reinit"
+	def ShipCheck(self, pEvent): # Somehow I cannot call this function... but the global one I pretty much can...
 		global firstTime
 		firstTime = 1
-		return 0
 
 	def AddHandler(self):
 		self.RemoveHandler()
@@ -75,6 +148,15 @@ class ShipSwapCheckClass:
 
 	def RemoveHandler(self):
 		App.g_kEventManager.RemoveBroadcastHandler(App.ET_SET_PLAYER, self.pEventHandler, __name__ + ".ShipCheck")
+
+	def AddSHandler(self):
+		if pConfigModule != None and hasattr(pConfigModule, "ET_SAVED_CONFIG") and pConfigModule.ET_SAVED_CONFIG != None:
+			App.g_kEventManager.RemoveBroadcastHandler(pConfigModule.ET_SAVED_CONFIG, self.pEventHandler, __name__ + ".RefreshConfig")
+			App.g_kEventManager.AddBroadcastPythonFuncHandler(pConfigModule.ET_SAVED_CONFIG, self.pEventHandler, __name__ + ".RefreshConfig")
+
+	def RemoveSHandler(self):
+		if pConfigModule != None and hasattr(pConfigModule, "ET_SAVED_CONFIG") and pConfigModule.ET_SAVED_CONFIG != None:
+			App.g_kEventManager.RemoveBroadcastHandler(pConfigModule.ET_SAVED_CONFIG, self.pEventHandler, __name__ + ".RefreshConfig")
 
 
 shipSwapChecker = ShipSwapCheckClass("Ship Swap checker")
@@ -119,7 +201,7 @@ def init():
 	if not pText:
 		return
 
-	print(pHealth.GetPosition) # Sov had this
+	#print(pHealth.GetPosition) # Sov had this
 
 	if globalVarList["ShowFraction"]:
 		howRight = 0
@@ -134,7 +216,7 @@ def init():
 	#	newWidth = pText.GetWidth() * 1.05 #pOriginalWidth + pText.GetWidth()/2.0
 	#pDisplay.SetFixedSize(newWidth, (pOriginalHeight + pText.GetHeight()))
 	#pHealth.Resize(pDisplay.GetMaximumInteriorWidth(), pHealth.GetHeight(), 0)
-	pDisplay.InteriorChangedSize()	
+	pDisplay.InteriorChangedSize()
 
         # When you change a player ship then initiate the script
 	shipSwapChecker.AddHandler()
@@ -148,6 +230,8 @@ def exit():
 	pText = None
 	pHealth = None
 	pTimer = None
+
+	shipSwapChecker.RemoveSHandler()
 	shipSwapChecker.RemoveHandler()
 
 class Watcher:
@@ -165,103 +249,106 @@ class Watcher:
 		self.pTimer.SetDelay(1)
 		self.pTimer.SetPriority(App.TimeSliceProcess.LOW)
 	def Update(self, fTime):
-		# TEST AREA - WHY? BECAUSE OF TELEPORTERS, THAT'S WHY
-		# Grab health gauge
-		#pTCW = App.TacticalControlWindow_GetTacticalControlWindow()
-		#if not pTCW:
-		#	return
-		#pDisplay = pTCW.GetShipDisplay()
-		#if not pDisplay:
-		#	return
-		# END OF TEST AREA
 
 		pPlayer = MissionLib.GetPlayer()
 		if not pPlayer:
 			return
 
 		global pText
-		if not pText: # I'm sure this would need to change
-			return
+		if pText != None:
 
-		pHull = pPlayer.GetHull()
+			pHull = pPlayer.GetHull()
 
-		if not pHull or not hasattr(pHull, "GetMaxCondition"):
-			return
+			if not pHull or not hasattr(pHull, "GetMaxCondition"):
+				return
 
-		self.fHullCurr = pHull.GetCondition()
-		self.fHullMax = pHull.GetMaxCondition()
-		if not self.fHullCurr or not self.fHullMax or self.fHullMax == 0.0:
-			return
+			self.fHullCurr = pHull.GetCondition()
+			self.fHullMax = pHull.GetMaxCondition()
+			if not self.fHullCurr or not self.fHullMax or self.fHullMax == 0.0:
+				pText.SetString("Hull : N/A")
+				return
 
-		self.iExact = self.fHullCurr/self.fHullMax
-		self.iCon = int(self.iExact * 100)
+			self.iExact = self.fHullCurr/self.fHullMax
+			self.iCon = int(self.iExact * 100)
 		
-		infoString = ""
+			infoString = ""
 		
-		if globalVarList["ShowPercent"]:
-			auxPercString = ""
-			if globalVarList["NumberDecimals"] > 0:
-				self.iDec = string.zfill(int(self.iExact * 100 * (10**globalVarList["NumberDecimals"])) - int(self.iCon * (10**globalVarList["NumberDecimals"])), globalVarList["NumberDecimals"])
-				auxPercString = auxPercString + str(globalVarList["RadixNotation"]) + str(self.iDec) 
-			infoString = infoString + str(self.iCon) + auxPercString + "%"
-			if not globalVarList["ShowFraction"]:
-				infoString = "          " + infoString
-			else:
-				infoString = " " + infoString
-		if globalVarList["ShowFraction"]:
-			if self.fHullMax <= 1.0:
-				signifDec = 6
-			else:
-				signifDec = globalVarList["NumberDecimals"]
-
-			currHullAprox = int(self.fHullCurr) 
-			maxHullAprox = int(self.fHullMax) 
-
-			if signifDec >= 1:
-				try:
-					currHullDecAprox = string.zfill(int(self.fHullCurr * (10**signifDec))  - (currHullAprox * (10**signifDec)), signifDec)
-				except:
-					currHullDecAprox = ">=2^64"
-				try:
-					maxHullDecAprox = string.zfill(int(self.fHullMax * (10**signifDec))  - (maxHullAprox * (10**signifDec)), signifDec)
-				except:
-					maxHullDecAprox = ">=2^64"
-
-				sCurrHull = str(currHullAprox) + str(globalVarList["RadixNotation"]) + str(currHullDecAprox)
-				sMaxHull = str(maxHullAprox) + str(globalVarList["RadixNotation"]) + str(maxHullDecAprox)
-			else:
-				sCurrHull = str(currHullAprox)
-				sMaxHull = str(maxHullAprox)
-
-
-			auxString = str(sCurrHull) + "/" + str(sMaxHull)
 			if globalVarList["ShowPercent"]:
-				auxString = "(" + auxString + ")"
-			infoString = infoString + " " + auxString
-		
-		pText.SetString("Hull :" + infoString)
+				auxPercString = ""
+				if globalVarList["NumberDecimals"] > 0:
+					self.iDec = string.zfill(int(self.iExact * 100 * (10**globalVarList["NumberDecimals"])) - int(self.iCon * (10**globalVarList["NumberDecimals"])), globalVarList["NumberDecimals"])
+					auxPercString = auxPercString + str(globalVarList["RadixNotation"]) + str(self.iDec) 
+				infoString = infoString + str(self.iCon) + auxPercString + "%"
+				if not globalVarList["ShowFraction"]:
+					infoString = "          " + infoString
+				else:
+					infoString = " " + infoString
+			if globalVarList["ShowFraction"]:
+				if self.fHullMax <= 1.0:
+					signifDec = 6
+				else:
+					signifDec = globalVarList["NumberDecimals"]
+
+				currHullAprox = int(self.fHullCurr) 
+				maxHullAprox = int(self.fHullMax) 
+
+				if signifDec >= 1:
+					try:
+						currHullDecAprox = string.zfill(int(int(self.fHullCurr * (10**signifDec))  - (currHullAprox * (10**signifDec))), signifDec)
+					except:
+						# Floats of the scale that cause problems, over 2^64, are likely to lose precision anyways. So hm, just place 0, or this calculation?
+						currHullDecAprox = str(self.fHullCurr%1.0)[2:(2+signifDec)]
+					try:
+						maxHullDecAprox = string.zfill(int(int(self.fHullMax * (10**signifDec))  - (maxHullAprox * (10**signifDec))), signifDec)
+					except:
+						maxHullDecAprox = str(self.fHullMax%1.0)[2:(2+signifDec)]
+
+					sCurrHull = str(currHullAprox) + str(globalVarList["RadixNotation"]) + str(currHullDecAprox)
+					sMaxHull = str(maxHullAprox) + str(globalVarList["RadixNotation"]) + str(maxHullDecAprox)
+				else:
+					sCurrHull = str(currHullAprox)
+					sMaxHull = str(maxHullAprox)
+
+
+				auxString = str(sCurrHull) + "/" + str(sMaxHull)
+				if globalVarList["ShowPercent"]:
+					auxString = "(" + auxString + ")"
+				infoString = infoString + " " + auxString
+
+			if globalVarList["ShowFraction"] or globalVarList["ShowPercent"]:			
+				pText.SetString("Hull :" + infoString)
 
 		global pHealth
-		#pHealth = pDisplay.GetHealthGauge()
+
+		if not pHealth:
+			pHealth = pDisplay.GetHealthGauge()
+			return
+
 		if not pHealth:
 			return
+
 		if pHealth.IsVisible() and globalVarList["ShowBar"] == 0:
 			pHealth.SetNotVisible(0)
+		elif not pHealth.IsVisible() and globalVarList["ShowBar"] == 1:
+			pHealth.SetVisible(0)
 
 		global firstTime
 		if firstTime > 0:
-			print "called re-size"
 			pTCW = App.TacticalControlWindow_GetTacticalControlWindow()
 			if not pTCW:
 				return
 			pDisplay = pTCW.GetShipDisplay()
 			if not pDisplay:
 				return
-			print "re-size commencing..."
 			firstTime = 0
 			newWidth = pOriginalWidth
-			if (1.05 * pText.GetWidth()) > newWidth:
-				newWidth = pText.GetWidth() * 1.05 #pOriginalWidth + pText.GetWidth()/2.0
-			pDisplay.SetFixedSize(newWidth, (pOriginalHeight + pText.GetHeight()))
+			extraHeight = 0
+			if (globalVarList["ShowFraction"] or globalVarList["ShowPercent"]) and pText != None:
+				if (1.05 * pText.GetWidth()) > newWidth:
+					newWidth = pText.GetWidth() * 1.05
+				extraHeight = pText.GetHeight()
+
+			pDisplay.SetFixedSize(newWidth, (pOriginalHeight + extraHeight))
 			pHealth.Resize(pDisplay.GetMaximumInteriorWidth(), pHealth.GetHeight(), 0)
-			pDisplay.InteriorChangedSize()	
+			pDisplay.InteriorChangedSize()
+			#pDisplay.Layout()
