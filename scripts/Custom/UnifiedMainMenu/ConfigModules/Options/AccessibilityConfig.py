@@ -1,15 +1,17 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL LICENSE AS WELL
 # AccesibilityConfig.py
-# 1st March 2025, by USS Sovereign, and tweaked by Noat and Alex SL Gato (CharaToLoki)
+# 2nd March 2025, by USS Sovereign, and tweaked by Noat and Alex SL Gato (CharaToLoki)
 #         Inspired by the Shield Percentages mod by Defiant. It was originally made pre-2010 with the goal of showing lots of accessibility options, such as for colorblind people.
 #
 # Modify, redistribute to your liking. Just remember to give credit where due.
 #################################################################################################################
-# This file also has the option to import a font list from files located at the "extraConfigPath" indicated below. From there people can add fonts - but remember, before adding a new font to this script:
+# 0.13 Update: if your install has the "scripts/FontExtension.py" script (which extends the TGFontManager class with functions which track and return font list and default font), now it will fetch Fonts automatically and will ignore manual additions. However, the script still supports 0.12 ("Legacy") manual additions, which the script will fall back to in case of Sovereign's file (or equivalent) not being present.
+# This latter method consists on manually importing a font list from files located at the "extraConfigPath" indicated below. From there people can add fonts.
+# But remember, before adding a new font to this script (or to all scripts, also applies for >= 0.13):
 # 1. The font file must exist beforehand. For new fonts, a new proper file (like those font files at script/Icons) must have already been created first.
 # 2. That font must have been registered to the App.g_kFontManager, in a not disimilar way to the line used on scripts/Icons/FontsAndIcons.py: "App.g_kFontManager.RegisterFont("Crillee", 5, "Crillee5", "LoadCrillee5")" (first parameter being the font name, second font size, third the actual file located at scripts/Icons/ and finally the function inside that file that actually takes care of loading the new font for that size).
-# Below, we have an example used for listing the Default fonts that a regular BC Install has into our AccesibiltiyConfig script, on a file called DefaultFonts.py:
+# Below, we have a legacy example file used for listing the Default fonts that a regular BC Install has into our AccesibiltiyConfig script, on a file called DefaultFonts.py:
 """
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL LICENSE AS WELL
@@ -29,7 +31,7 @@ dFont = {
 """
 #
 MODINFO = { "Author": "\"USS Sovereign\" (mario0085), Noat (noatblok),\"Alex SL Gato\" (andromedavirgoa@gmail.com)",
-	    "Version": "0.12",
+	    "Version": "0.13",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -238,16 +240,49 @@ def LoadExtraLimitedPlugins(dir,dExcludePlugins=_g_dExcludeSomePlugins):
 				print "someone attempted to add more than they should to the AlternateSubModelFTL script"
 				traceback.print_exc()
 
-LoadExtraLimitedPlugins(extraConfigPath)
-
 defaultFont = "Crillee"
 defaultSize = 5
+
+isTGFontManagerEPresent = hasattr(App.g_kFontManager, "GetFontList")
+if isTGFontManagerEPresent: # Support for Mario's FontManager extension
+	
+	fonts = App.g_kFontManager.GetFontList()
+	if not fonts or len(fonts) < 1:
+		print "AccesibilityConfig: No Fonts detected using a FontManager's extension. Defaulting to Legacy extra menu support..."
+		LoadExtraLimitedPlugins(extraConfigPath)
+	else:
+		print "AccesibilityConfig: Using Sovereign's FontManager Extension"
+		fontA = App.g_kFontManager.GetDefaultEFont()
+		if fontA != None:
+			defaultFont = fontA.name
+			defaultSize = fontA.size
+
+		for fontI in fonts:
+			l = []
+			if dFont.has_key(fontI.name):
+				l = dFont[fontI.name]
+			else:
+				dFont[fontI.name] = l
+			l.append(fontI.size)
+else:
+	print "AccesibilityConfig: Using Legacy extra menu support"
+	LoadExtraLimitedPlugins(extraConfigPath)
+
 listedFonts = list(dFont.keys())
 listedFonts.sort()
-if not defaultFont in dFont.keys():
-	defaultFont = listedFonts[0]
-if not defaultSize in dFont[defaultFont]:
-	defaultSize = dFont[defaultFont][0]
+
+if dFont == None or len(dFont) <= 0:
+	if isTGFontManagerEPresent:
+		print "ERROR: No Fonts detected for AccesibilityConfig. This likely means that somehow, the game lacks important files at scripts/Icons, or that important Files that register fonts for the game are missing or modified to such a extent that no fonts are registered. Please read more at ", __name__, " for more information."
+	else:
+		print "WARNING: No Fonts detected for AccesibilityConfig. If using Legacy menu support, please make sure that a file on ", extraConfigPath, "exists with the example content located between the 3 '\"' seen at ", __name__
+	
+else:
+	if not defaultFont in dFont.keys():
+		defaultFont = listedFonts[0]
+	if not defaultSize in dFont[defaultFont]:
+		defaultSize = dFont[defaultFont][0]
+
 
 dConfig["ShowPercent"], issues = SafeConfigStatement("ShowPercent", pModule, 0, issues)
 dConfig["ShowBar"], issues = SafeConfigStatement("ShowBar", pModule, 1, issues)
@@ -256,7 +291,7 @@ dConfig["ShowFraction"], issues = SafeConfigStatement("ShowFraction", pModule, 0
 dConfig["NumberDecimals"], issues = SafeConfigStatement("NumberDecimals", pModule, 0, issues)
 dConfig["RadixNotation"], issues = SafeConfigStatement("RadixNotation", pModule, ".", issues)
 
-dConfig["sFont"], issues = SafeConfigStatement("sFont", pModule, "Crillee", issues)
+dConfig["sFont"], issues = SafeConfigStatement("sFont", pModule, defaultFont, issues)
 dConfig["FontSize"], issues = SafeConfigStatement("FontSize", pModule, defaultSize, issues)
 
 pFontSubMenu = None

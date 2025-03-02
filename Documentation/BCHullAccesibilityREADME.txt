@@ -1,4 +1,5 @@
 == Changelog ==
+0.13 - Added support for certain possible BCMM dynamic font list creation from a TGFontManager extension, and corrected slight issues with the BCMM FontExtension.py example file from Mario's branch during commit 38eab561eb7c8afca0395a98a24dbda9d1314d68.
 0.12 - Made fonts work via import of a new file so people can add or remove fonts without modifying the primary file, also made it nicer regarding menus (i.e. fonts are now ordered alphabetically) and saves while QB was running. Now when saving the Save Config button will properly indicate that you saved your configuration or if there are unsaved changes.
 0.1 - First release after a few updates, some ideas still need to be expanded
 Pre 0.1 - USS Sovereign and Noat's version (just labeling it as 0.1 because I did not see versioning on the files I was given)
