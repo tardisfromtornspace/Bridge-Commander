@@ -6,7 +6,7 @@
 #
 # Modify, redistribute to your liking. Just remember to give credit where due.
 #################################################################################################################
-# 0.13 Update: if your install has the "scripts/FontExtension.py" script (which extends the TGFontManager class with functions which track and return font list and default font), now it will fetch Fonts automatically and will ignore manual additions. However, the script still supports 0.12 ("Legacy") manual additions, which the script will fall back to in case of Sovereign's file (or equivalent) not being present.
+# 0.13 Update: if your install has the "scripts/FontExtension.py" script (which extends the TGFontManager class with functions which track and return font list and default font) called at the very beginning, now it will fetch Fonts automatically and will ignore manual additions. However, the script still supports 0.12 ("Legacy") manual additions, which the script will fall back to in case of Sovereign's file (or equivalent) not being present.
 # This latter method consists on manually importing a font list from files located at the "extraConfigPath" indicated below. From there people can add fonts.
 # But remember, before adding a new font to this script (or to all scripts, also applies for >= 0.13):
 # 1. The font file must exist beforehand. For new fonts, a new proper file (like those font files at script/Icons) must have already been created first.
