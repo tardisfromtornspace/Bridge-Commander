@@ -8,7 +8,7 @@
 #################################################################################################################
 #
 MODINFO = { "Author": "\"USS Sovereign\" (mario0085), Noat (noatblok),\"Alex SL Gato\" (andromedavirgoa@gmail.com)",
-	    "Version": "0.12",
+	    "Version": "0.2",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -87,12 +87,24 @@ def RefreshConfig(pObject, pEvent):
 	if not pHealth:
 		return
 
+	kFillColor = App.TGColorA()
+	kFillColor.SetRGBA(App.g_kSubsystemFillColor.r, App.g_kSubsystemFillColor.g, App.g_kSubsystemFillColor.b, App.g_kSubsystemFillColor.a)
+	kEmptyColor = App.TGColorA()
+	kEmptyColor.SetRGBA(App.g_kSubsystemEmptyColor.r, App.g_kSubsystemEmptyColor.g, App.g_kSubsystemEmptyColor.b, App.g_kSubsystemEmptyColor.a)
+
+	pHealth.SetFillColor(kFillColor)
+	pHealth.SetEmptyColor(kEmptyColor)
+
 	firstTime = 1
 	# This line hides the health gauge which is replaced by the percentage text
 	if globalVarList["ShowBar"] == 0:
 		pHealth.SetNotVisible(0)
 	else:
 		pHealth.SetVisible(0)
+
+
+	#kTFillColor = App.TGColorA()
+	#kTFillColor.SetRGBA(App.g_kSTMenuTextColor.r, App.g_kSTMenuTextColor.g, App.g_kSTMenuTextColor.b, App.g_kSTMenuTextColor.a)
 
 	if globalVarList["ShowPercent"] or globalVarList["ShowFraction"]:
 		wasNone = 0
@@ -101,6 +113,7 @@ def RefreshConfig(pObject, pEvent):
 			wasNone = 1
 		else:
 			pText.SetFontGroup(App.g_kFontManager.GetFontGroup(globalVarList["sFont"], globalVarList["FontSize"]))
+			#pText.SetColor(kTFillColor)
 
 		if globalVarList["ShowFraction"]:
 			howRight = 0
@@ -112,6 +125,7 @@ def RefreshConfig(pObject, pEvent):
 
 	else:
 		if pText != None: # "Hiding" in a way...
+			#pText.SetColor(kTFillColor)
 			pText.SetString("")
 		pDisplay.SetFixedSize(pOriginalWidth, pOriginalHeight)
 		pHealth.Resize(pDisplay.GetMaximumInteriorWidth(), pHealth.GetHeight(), 0)
@@ -130,6 +144,7 @@ def RefreshConfig(pObject, pEvent):
 def ShipCheck(pObject, pEvent):
 	global firstTime
 	firstTime = 1
+	#pObject.CallNextHandler(pEvent)
 
 class ShipSwapCheckClass:
 	def __init__(self, name):
@@ -157,7 +172,7 @@ class ShipSwapCheckClass:
 	def RemoveSHandler(self):
 		if pConfigModule != None and hasattr(pConfigModule, "ET_SAVED_CONFIG") and pConfigModule.ET_SAVED_CONFIG != None:
 			App.g_kEventManager.RemoveBroadcastHandler(pConfigModule.ET_SAVED_CONFIG, self.pEventHandler, __name__ + ".RefreshConfig")
-
+		
 
 shipSwapChecker = ShipSwapCheckClass("Ship Swap checker")
 
@@ -187,6 +202,14 @@ def init():
 	if globalVarList["ShowBar"] == 0:
 		pHealth.SetNotVisible(0)
 
+	kFillColor = App.TGColorA()
+	kFillColor.SetRGBA(App.g_kSubsystemFillColor.r, App.g_kSubsystemFillColor.g, App.g_kSubsystemFillColor.b, App.g_kSubsystemFillColor.a)
+	kEmptyColor = App.TGColorA()
+	kEmptyColor.SetRGBA(App.g_kSubsystemEmptyColor.r, App.g_kSubsystemEmptyColor.g, App.g_kSubsystemEmptyColor.b, App.g_kSubsystemEmptyColor.a)
+
+	pHealth.SetFillColor(kFillColor)
+	pHealth.SetEmptyColor(kEmptyColor)	
+
 	global pOriginalWidth, pOriginalHeight
 	pOriginalWidth = pDisplay.GetWidth()
 	pOriginalHeight = pDisplay.GetHeight()
@@ -200,6 +223,10 @@ def init():
 	
 	if not pText:
 		return
+
+	#kTFillColor = App.TGColorA()
+	#kTFillColor.SetRGBA(App.g_kSTMenuTextColor.r, App.g_kSTMenuTextColor.g, App.g_kSTMenuTextColor.b, App.g_kSTMenuTextColor.a)
+	#pText.SetColor(kTFillColor)
 
 	#print(pHealth.GetPosition) # Sov had this
 
@@ -227,12 +254,13 @@ def init():
 
 def exit():
 	global pText, pHealth, pTimer
-	pText = None
-	pHealth = None
-	pTimer = None
 
 	shipSwapChecker.RemoveSHandler()
 	shipSwapChecker.RemoveHandler()
+
+	pText = None
+	pHealth = None
+	pTimer = None
 
 class Watcher:
 	def __init__(self):
@@ -254,9 +282,11 @@ class Watcher:
 		if not pPlayer:
 			return
 
+		if pPlayer.IsDead() or pPlayer.IsDying():
+			return
+
 		global pText
 		if pText != None:
-
 			pHull = pPlayer.GetHull()
 
 			if not pHull or not hasattr(pHull, "GetMaxCondition"):
@@ -297,11 +327,11 @@ class Watcher:
 						currHullDecAprox = string.zfill(int(int(self.fHullCurr * (10**signifDec))  - (currHullAprox * (10**signifDec))), signifDec)
 					except:
 						# Floats of the scale that cause problems, over 2^64, are likely to lose precision anyways. So hm, just place 0, or this calculation?
-						currHullDecAprox = str(self.fHullCurr%1.0)[2:(2+signifDec)]
+						currHullDecAprox = str(self.fHullCurr%1.0)[2:(1+signifDec)]
 					try:
 						maxHullDecAprox = string.zfill(int(int(self.fHullMax * (10**signifDec))  - (maxHullAprox * (10**signifDec))), signifDec)
 					except:
-						maxHullDecAprox = str(self.fHullMax%1.0)[2:(2+signifDec)]
+						maxHullDecAprox = str(self.fHullMax%1.0)[2:(1+signifDec)]
 
 					sCurrHull = str(currHullAprox) + str(globalVarList["RadixNotation"]) + str(currHullDecAprox)
 					sMaxHull = str(maxHullAprox) + str(globalVarList["RadixNotation"]) + str(maxHullDecAprox)
@@ -337,10 +367,26 @@ class Watcher:
 			pTCW = App.TacticalControlWindow_GetTacticalControlWindow()
 			if not pTCW:
 				return
+
 			pDisplay = pTCW.GetShipDisplay()
 			if not pDisplay:
 				return
+
 			firstTime = 0
+
+			kFillColor = App.TGColorA()
+			kFillColor.SetRGBA(App.g_kSubsystemFillColor.r, App.g_kSubsystemFillColor.g, App.g_kSubsystemFillColor.b, App.g_kSubsystemFillColor.a)
+			kEmptyColor = App.TGColorA()
+			kEmptyColor.SetRGBA(App.g_kSubsystemEmptyColor.r, App.g_kSubsystemEmptyColor.g, App.g_kSubsystemEmptyColor.b, App.g_kSubsystemEmptyColor.a)
+
+			pHealth.SetFillColor(kFillColor)
+			pHealth.SetEmptyColor(kEmptyColor)
+
+			#if pText != None:
+			#	kTFillColor = App.TGColorA()
+			#	kTFillColor.SetRGBA(App.g_kSTMenuTextColor.r, App.g_kSTMenuTextColor.g, App.g_kSTMenuTextColor.b, App.g_kSTMenuTextColor.a)
+			#	pText.SetColor(kTFillColor)
+
 			newWidth = pOriginalWidth
 			extraHeight = 0
 			if (globalVarList["ShowFraction"] or globalVarList["ShowPercent"]) and pText != None:
@@ -350,5 +396,6 @@ class Watcher:
 
 			pDisplay.SetFixedSize(newWidth, (pOriginalHeight + extraHeight))
 			pHealth.Resize(pDisplay.GetMaximumInteriorWidth(), pHealth.GetHeight(), 0)
+
 			pDisplay.InteriorChangedSize()
 			#pDisplay.Layout()

@@ -1,8 +1,10 @@
 == Changelog ==
+0.2 - Added Interface color support, improved certain functions (thank you, Sovereign)
 0.13 - Added support for certain possible BCMM dynamic font list creation from a TGFontManager extension, and corrected slight issues with the BCMM FontExtension.py example file from Mario's branch during commit 38eab561eb7c8afca0395a98a24dbda9d1314d68.
 0.12 - Made fonts work via import of a new file so people can add or remove fonts without modifying the primary file, also made it nicer regarding menus (i.e. fonts are now ordered alphabetically) and saves while QB was running. Now when saving the Save Config button will properly indicate that you saved your configuration or if there are unsaved changes.
 0.1 - First release after a few updates, some ideas still need to be expanded
 Pre 0.1 - USS Sovereign and Noat's version (just labeling it as 0.1 because I did not see versioning on the files I was given)
+
 == What does this mod do ==
 The idea of this mod is inspired by the Shield Percentages mod by Defiant. It was originally made pre-2010 with the goal of showing lots of accessibility options, such as for colorblind people.
 The new version also provides the following:
@@ -18,6 +20,115 @@ The new version also provides the following:
     - "Tahoma": 8, 14.
     - "Arial": 8.
     - "Serpentine": 12.
+* Interface colors: allows the user to modify several colors from the UI during QuickBattle. Colors are modified by altering thier red (r), green (g), blue (b) and opacity (a) values (which, as of version 0.2, go on a [0-1] range), or re-set to default by an individual "Reset to default" buttons. New colors can be added as long as they are registered as part of App.py. Currently, the default colors you can modify without any extra scripts are:
+    - "STButton marker colors":
+        - "g_kSTButtonMarkerDefault"
+        - "g_kSTButtonMarkerHighlighted"
+        - "g_kSTButtonMarkerSelected"
+        - "g_kSTButtonCheckmarkOn"
+        - "g_kSTButtonCheckmarkOff"
+    - "Menu colors":
+        - "g_kSTMenuArrowColor":
+        - "g_kSTMenu1NormalBase":
+        - "g_kSTMenu1HighlightedBase":
+        - "g_kSTMenu1Disabled":
+        - "g_kSTMenu1OpenedHighlightedBase":
+        - "g_kSTMenu1Selected":
+        - "g_kSTMenu2NormalBase":
+        - "g_kSTMenu2HighlightedBase":
+        - "g_kSTMenu2Disabled":
+        - "g_kSTMenu2OpenedHighlightedBase":
+        - "g_kSTMenu2Selected":
+        - "g_kSTMenu3NormalBase":
+        - "g_kSTMenu3HighlightedBase":
+        - "g_kSTMenu3Disabled":
+        - "g_kSTMenu3OpenedHighlightedBase":
+        - "g_kSTMenu3Selected":
+        - "g_kSTMenu4NormalBase":
+        - "g_kSTMenu4HighlightedBase":
+        - "g_kSTMenu4Disabled":
+        - "g_kSTMenu4OpenedHighlightedBase":
+        - "g_kSTMenu4Selected":
+        - "g_kSTMenuTextColor":
+        - "g_kSTMenuTextSelectedColor":
+        - "g_kSTMenuTextHighlightColor":
+        - "g_kTextEntryColor":
+        - "g_kTextHighlightColor":
+        - "g_kTextEntryBackgroundColor":
+        - "g_kTextEntryBackgroundHighlightColor":
+
+    - "Tactical Interface Colors":
+        - "g_kTIPhotonReadyColor":
+        - "g_kTIPhotonNotReadyColor":
+
+    - "Radar border highlight color":
+        - "g_kSTRadarBorderHighlighted":
+
+    - "General Interface Colors":
+        - "g_kTitleColor":
+        - "g_kInterfaceBorderColor":
+        - "g_kLeftSeparatorColor":
+
+    - "Radar colors":
+        - "g_kRadarBorder":
+        - "g_kSTRadarIncomingTorpColor":
+        - "g_kRadarFriendlyColor":
+        - "g_kRadarEnemyColor":
+        - "g_kRadarNeutralColor":
+        - "g_kRadarUnknownColor":
+
+    - "Subsystem colors":
+        - "g_kSubsystemFillColor": - Also covered the FoundationTech version for hulls.
+        - "g_kSubsystemEmptyColor": - Also covered the FoundationTech version for hulls.
+        - "g_kSubsystemDisabledColor":
+
+    - "Tactical weapons control header text":
+        - "g_kTacWeaponsCtrlHeaderTextColor":
+
+    - "Damage display colors":
+        - "g_kDamageDisplayDestroyedColor":
+        - "g_kDamageDisplayDamagedColor":
+        - "g_kDamageDisplayDisabledColor":
+
+    - "Main menu colors":
+        - "g_kMainMenuButtonColor":
+        - "g_kMainMenuButtonHighlightedColor":
+        - "g_kMainMenuButtonSelectedColor":
+        - "g_kMainMenuButton1Color":
+        - "g_kMainMenuButton1HighlightedColor":
+        - "g_kMainMenuButton1SelectedColor":
+        - "g_kMainMenuButton2Color":
+        - "g_kMainMenuButton2HighlightedColor":
+        - "g_kMainMenuButton2SelectedColor":
+        - "g_kMainMenuButton3Color":
+        - "g_kMainMenuButton3HighlightedColor":
+        - "g_kMainMenuButton3SelectedColor":
+        - "g_kMainMenuBorderMainColor":
+        - "g_kMainMenuBorderOffColor":
+        - "g_kMainMenuBorderBlock1Color":
+        - "g_kMainMenuBorderTopColor":
+
+    - "Engineering display colors":
+        - "g_kEngineeringShieldsColor":
+        - "g_kEngineeringEnginesColor":
+        - "g_kEngineeringWeaponsColor":
+        - "g_kEngineeringSensorsColor":
+        - "g_kEngineeringCloakColor":
+        - "g_kEngineeringTractorColor":
+        - "g_kEngineeringWarpCoreColor":
+        - "g_kEngineeringMainPowerColor":
+        - "g_kEngineeringBackupPowerColor":
+        - "g_kEngineeringCtrlBkgndLineColor":
+
+    - "QuickBattle and Multiplayer Colors":
+        - "g_kQuickBattleBrightRed"
+        - "g_kMultiplayerBorderBlue"
+        - "g_kMultiplayerBorderPurple"
+        - "g_kMultiplayerStylizedPurple"
+        - "g_kMultiplayerButtonPurple"
+        - "g_kMultiplayerButtonOrange"
+        - "g_kMultiplayerDividerPurple"
+
 * Save Config button: do not forget to clik on this button to apply your changes, else they will not be applied nor saved!
 * More resistance against certain configuration file errors: if the configuration script finds a missing entry on its Saved Config, it will automatically save with the proper parameters.
 

@@ -8,7 +8,7 @@
 # This will be the BCMM way. Trick is it requires early registration; which on BCMM case is done by importing this in FixApp.py file which is already modified on BCMM
 #
 MODINFO = { "Author": "\"USS Sovereign\" (mario0085), Noat (noatblok),\"Alex SL Gato\" (andromedavirgoa@gmail.com)",
-	    "Version": "0.13",
+	    "Version": "0.14",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -74,7 +74,7 @@ def SetDefaultFontOverride(_self, name, size):
 
 
 # noinspection PyUnresolvedReferences
-def GetDefaultEFont(_self):
+def GetDefaultFontInfo(_self):
 	global defaultFont
 	if defaultFont:
 		return Font(defaultFont.name, defaultFont.size, defaultFont.file, defaultFont.loadMethod)
@@ -89,4 +89,4 @@ if applyUpt:
 	App.TGFontManager.GetFontList = NewGetFontList
 
 	# Modified because GetDefaultFont already exists and returns an App.FontGroupPtr, while our new method throws Font and does not inherit from any FontGroup - added a new method to TGFontManager instead - Alex SL Gato
-	App.TGFontManager.GetDefaultEFont = GetDefaultEFont
+	App.TGFontManager.GetDefaultFontInfo = GetDefaultFontInfo

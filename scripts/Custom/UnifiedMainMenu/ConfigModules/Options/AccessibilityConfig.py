@@ -29,9 +29,37 @@ dFont = {
 	"Serpentine": [12],
 }
 """
+# From version 0.2 onwards, we can also modify interface colors at a whim, but may require to abort a mission or to restart to apply fully - exception is menu colors, which may have been already pre-loaded before UMM had a chance to change them and may require a resolution change to apply on the Main Menu.
+# As an addition, now we can also link certain pre-defined App.py interface colors (of those defined in scripts/LoadInterface) with additional files, so if, for example, FoundationTech happens to re-use one of those before we had overrode it and prevents us from changing the Hull Gauge colors, we can apply the new changes to those colors too.
+# Below there's a file example of the above, on a file called DefaultExtraFileChecks.py
+"""
+# THIS FILE IS NOT SUPPORTED BY ACTIVISION
+# THIS FILE IS UNDER THE LGPL LICENSE AS WELL
+# DefaultExtraFileChecks.py
+# 2nd March 2025, by Alex SL Gato (CharaToLoki)
+# Version: 1.0
+# Meant to be used alongside the AccesibilityConfig UMM option (located at scripts/Custom/UnifiedMainMenu/ConfigModules/Options/), this file must be under scripts/Custom/UnifiedMainMenu/ConfigModules/Options/AccesibilityConfigFiles
+##################################
+# This file takes care of listing the variable colors which are modified in other files and used instead of regular colors, like FoundationTech's Hull Gauge tech
+extraVariables = {
+	"g_kSubsystemFillColor" : {"kHullFillColor" : "FoundationTech"}, # Variable which is also defined somewhere - attribute name - path to that file 
+	"g_kSubsystemEmptyColor" : {"kHullEmptyColor" : "FoundationTech"},
+}
+# If we were to add extra App. colors, we can also add the following, as long as those colors exist or are registered on App.py
+#sDefaultColors = { # Colors from App.py
+#	# We could add it to a pre-existing category, like STButton marker colors.
+#	"STButton marker colors" : {
+#		"variableNameGoesHere": [None, []],
+#	},
+#	# Or maybe a new one
+#	"Extended extra configs" : {
+#		"AnotherVariableNameGoesHere": [None, []],
+#	},
+#}
+"""
 #
 MODINFO = { "Author": "\"USS Sovereign\" (mario0085), Noat (noatblok),\"Alex SL Gato\" (andromedavirgoa@gmail.com)",
-	    "Version": "0.13",
+	    "Version": "0.2",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -55,6 +83,10 @@ except:
 
 configPath = "scripts\\Custom\\UnifiedMainMenu\\ConfigModules\\Options\\SavedConfigs\\AccessibilityConfigVals.py"
 extraConfigPath = "scripts\\Custom\\UnifiedMainMenu\\ConfigModules\\Options\\AccesibilityConfigFiles"
+extraVariables = {
+	"g_kSubsystemFillColor" : {"kHullFillColor" : "FoundationTech"}, # Variable which is also defined somewhere - attribute name - path to that file 
+	"g_kSubsystemEmptyColor" : {"kHullEmptyColor" : "FoundationTech"},
+}
 
 ET_SAVED_CONFIG = App.UtopiaModule_GetNextEventType() # You may wonder, ¿why? Because it is actually possible to play a mission and have access to the Customize configurations on the fly as long as the last Configure Window you opened was Customize
 ET_SELECT_BUTTON = App.UtopiaModule_GetNextEventType()
@@ -80,36 +112,7 @@ def ResetButtonString(pAction, pButton, myName):
 
 	return 0
 
-def SaveConfig(pObject, pEvent):
-	file = nt.open(configPath, nt.O_WRONLY | nt.O_TRUNC | nt.O_CREAT | nt.O_BINARY)
-	nt.write(file, "ShowPercent = " + str(dConfig["ShowPercent"]))
-	nt.write(file, "\nShowBar = " + str(dConfig["ShowBar"]))
-	nt.write(file, "\nShowFraction = " + str(dConfig["ShowFraction"]))
-	nt.write(file, "\nNumberDecimals = " + str(dConfig["NumberDecimals"]))
-	nt.write(file, "\nRadixNotation = \"" + str(dConfig["RadixNotation"])+ "\"")
-	nt.write(file, "\nsFont = \"" + str(dConfig["sFont"]) + "\"")
-	nt.write(file, "\nFontSize = " + str(dConfig["FontSize"]))
-	nt.close(file)
-
-	# Because of shenanigans with menu being available during QB on KM, you can sometimes access modify and save configurations mid-game. We may want to notify other related scripts that this has happened!
-	pEvent = App.TGStringEvent_Create()
-	pEvent.SetEventType(ET_SAVED_CONFIG)
-	#pEvent.SetDestination(None)
-	pEvent.SetString("SAVED BC ACCESIBILITY")
-	App.g_kEventManager.AddEvent(pEvent)
-
-	# Just some niceties for people
-	global pSaveButton, canChangeSave
-	currentTime = App.g_kUtopiaModule.GetGameTime()
-	if pSaveButton and (canChangeSave == None or currentTime > canChangeSave):
-		canChangeSave = currentTime + saveMsgDelay + 0.1
-		pSaveButton.SetName(App.TGString("CONFIGURATION SAVED"))
-		pSequence = App.TGSequence_Create()
-		pAction = App.TGScriptAction_Create(__name__, "ResetButtonString", pSaveButton, sSaveButton)
-		pSequence.AddAction(pAction, None, saveMsgDelay)
-		pSequence.Play()
-
-def SafeConfigStatement(variable, pMyModule, default, issue=0):
+def SafeConfigStatement(variable, pMyModule, default, issue=0, lowerLimit=None, upperLimit=None):
 	myVariable = default
 	try:
 		if pMyModule != None and hasattr(pMyModule, variable):
@@ -121,6 +124,13 @@ def SafeConfigStatement(variable, pMyModule, default, issue=0):
 	except:
 		traceback.print_exc()
 		myVariable = default
+		issue = issue + 1
+
+	if lowerLimit != None and myVariable < lowerLimit:
+		myVariable = lowerLimit
+		issue = issue + 1
+	elif upperLimit != None and myVariable > upperLimit:
+		myVariable = upperLimit
 		issue = issue + 1
 
 	return myVariable, issue
@@ -139,11 +149,182 @@ dFont = {
 #	"Serpentine": [12],
 }
 
+sDefaultColors = { # Colors from App.py, called in LoadInterface.py... should we also look for App.globals ?
+	# STButton marker colors.
+	"STButton marker colors" : {
+		"g_kSTButtonMarkerDefault": [None, []],
+		"g_kSTButtonMarkerHighlighted": [None, []],
+		"g_kSTButtonMarkerSelected": [None, []],
+		"g_kSTButtonCheckmarkOn": [None, []],
+		"g_kSTButtonCheckmarkOff": [None, []],
+	},
+	# Menu colors
+	"Menu colors" : {
+		"g_kSTMenuArrowColor": [None, []],
+
+		"g_kSTMenu1NormalBase": [None, []],
+		"g_kSTMenu1HighlightedBase": [None, []],
+		"g_kSTMenu1Disabled": [None, []],
+		"g_kSTMenu1OpenedHighlightedBase": [None, []],
+		"g_kSTMenu1Selected": [None, []],
+
+		"g_kSTMenu2NormalBase": [None, []],
+		"g_kSTMenu2HighlightedBase": [None, []],
+		"g_kSTMenu2Disabled": [None, []],
+		"g_kSTMenu2OpenedHighlightedBase": [None, []],
+		"g_kSTMenu2Selected": [None, []],
+
+		"g_kSTMenu3NormalBase": [None, []],
+		"g_kSTMenu3HighlightedBase": [None, []],
+		"g_kSTMenu3Disabled": [None, []],
+		"g_kSTMenu3OpenedHighlightedBase": [None, []],
+		"g_kSTMenu3Selected": [None, []],
+
+		"g_kSTMenu4NormalBase": [None, []],
+		"g_kSTMenu4HighlightedBase": [None, []],
+		"g_kSTMenu4Disabled": [None, []],
+		"g_kSTMenu4OpenedHighlightedBase": [None, []],
+		"g_kSTMenu4Selected": [None, []],
+
+		"g_kSTMenuTextColor": [None, []],
+		"g_kSTMenuTextSelectedColor": [None, []],
+		"g_kSTMenuTextHighlightColor": [None, []],
+
+		"g_kTextEntryColor": [None, []],
+		"g_kTextHighlightColor": [None, []],
+
+		"g_kTextEntryBackgroundColor": [None, []],
+		"g_kTextEntryBackgroundHighlightColor": [None, []],
+	},
+
+	# Tactical Interface Colors
+	"Tactical Interface Colors" : {
+		"g_kTIPhotonReadyColor": [None, []],
+		"g_kTIPhotonNotReadyColor": [None, []],
+	},
+
+	# Radar border highlight color
+	"Radar border highlight color" : {
+		"g_kSTRadarBorderHighlighted": [None, []],
+	},
+
+	# General Interface Colors
+	"General Interface Colors" : {
+		"g_kTitleColor": [None, []],
+		"g_kInterfaceBorderColor": [None, []],
+		"g_kLeftSeparatorColor": [None, []],
+	},
+
+	# Radar colors
+	"Radar colors" : {
+		"g_kRadarBorder": [None, []],
+		"g_kSTRadarIncomingTorpColor": [None, []],
+		"g_kRadarFriendlyColor": [None, []],
+		"g_kRadarEnemyColor": [None, []],
+		"g_kRadarNeutralColor": [None, []],
+		"g_kRadarUnknownColor": [None, []],
+	},
+
+	# Subsystem colors, used in subsystem menus for fill gauge.
+	"Subsystem colors" : {
+		"g_kSubsystemFillColor": [None, []],
+		"g_kSubsystemEmptyColor": [None, []],
+		"g_kSubsystemDisabledColor": [None, []],
+	},
+
+	# Color used for header text in the tactical weapons control.
+	"Tactical weapons control header text" : {
+		"g_kTacWeaponsCtrlHeaderTextColor": [None, []],
+	},
+
+	# Damage display colors.
+	"Damage display colors" : {
+		"g_kDamageDisplayDestroyedColor": [None, []],
+		"g_kDamageDisplayDamagedColor": [None, []],
+		"g_kDamageDisplayDisabledColor": [None, []],
+	},
+
+	# Main menu colors, which are used elsewhere.
+	"Main menu colors" : {
+		"g_kMainMenuButtonColor": [None, []],
+		"g_kMainMenuButtonHighlightedColor": [None, []],
+		"g_kMainMenuButtonSelectedColor": [None, []],
+
+		"g_kMainMenuButton1Color": [None, []],
+		"g_kMainMenuButton1HighlightedColor": [None, []],
+		"g_kMainMenuButton1SelectedColor": [None, []],
+
+		"g_kMainMenuButton2Color": [None, []],
+		"g_kMainMenuButton2HighlightedColor": [None, []],
+		"g_kMainMenuButton2SelectedColor": [None, []],
+
+		"g_kMainMenuButton3Color": [None, []],
+		"g_kMainMenuButton3HighlightedColor": [None, []],
+		"g_kMainMenuButton3SelectedColor": [None, []],
+
+
+		"g_kMainMenuBorderMainColor": [None, []],
+		"g_kMainMenuBorderOffColor": [None, []],
+		"g_kMainMenuBorderBlock1Color": [None, []],
+		"g_kMainMenuBorderTopColor": [None, []],
+
+	},
+
+
+	# Engineering display colors.
+	"Engineering display colors" : {
+		"g_kEngineeringShieldsColor": [None, []],
+		"g_kEngineeringEnginesColor": [None, []],
+		"g_kEngineeringWeaponsColor": [None, []],
+		"g_kEngineeringSensorsColor": [None, []],
+		"g_kEngineeringCloakColor": [None, []],
+		"g_kEngineeringTractorColor": [None, []],
+
+		"g_kEngineeringWarpCoreColor": [None, []],
+		"g_kEngineeringMainPowerColor": [None, []],
+		"g_kEngineeringBackupPowerColor": [None, []],
+
+		"g_kEngineeringCtrlBkgndLineColor": [None, []],
+
+	},
+
+	# QuickBattle and Multiplayer Colors
+	"QuickBattle and Multiplayer Colors" : {
+		"g_kQuickBattleBrightRed": [None, []],
+		"g_kMultiplayerBorderBlue": [None, []],
+		"g_kMultiplayerBorderPurple": [None, []],
+		"g_kMultiplayerStylizedPurple": [None, []],
+		"g_kMultiplayerButtonPurple": [None, []],
+		"g_kMultiplayerButtonOrange": [None, []],
+
+		"g_kMultiplayerRadioPink": [None, []],
+		"g_kMultiplayerDividerPurple": [None, []],
+	},
+}
+
 _g_dExcludeSomePlugins = {
 	# Some random plugins that I don't want to risk people attempting to load using this tech
 	"__init__": 1,
 }
 
+# The original method was huge and could be simplified
+def FuseTwoLists(l1, l2):
+	
+	def gen_dict(*args):
+		d = {}
+		for k in args:
+			if type(k) == type([]):
+				for item in k:
+					if type(item) == type(1):
+						d[item] = item
+			elif type(k) == type(1):
+				d[item] = item
+
+		return d.keys()
+	result = list(gen_dict(l1, l2))
+	result.sort()
+	return result
+"""
 def FuseTwoLists(auxA, auxB):
 	aux1 = auxA
 	if len(aux1) > 1:
@@ -181,9 +362,10 @@ def FuseTwoLists(auxA, auxB):
 	else:
 		return []
 
+"""
 # Based on LoadExtraPlugins by Dasher42 and MLeo's, but heavily modified so it only imports a few things
-def LoadExtraLimitedPlugins(dir,dExcludePlugins=_g_dExcludeSomePlugins):
-	global dConfig, dRadixNotation, dFont
+def LoadExtraLimitedPlugins(dir,dExcludePlugins=_g_dExcludeSomePlugins, ignore=[]):
+	global dConfig, dRadixNotation, dFont, extraVariables, sDefaultColors
 	if dir == None or dir == "":
 		print "no dir found, calling default"
 		dir="scripts\\Custom\\UnifiedMainMenu\\ConfigModules\\Options\\AccesibilityConfigFiles" # I want to limit any vulnerability as much as I can while keeping functionality
@@ -229,13 +411,43 @@ def LoadExtraLimitedPlugins(dir,dExcludePlugins=_g_dExcludeSomePlugins):
 						banana = None
 						traceback.print_exc()
 
-					if hasattr(banana, "dFont"):
+					if hasattr(banana, "dFont") and not "dFont" in ignore:
 						for key in banana.dFont.keys():
 							if not dFont.has_key(key):
 								dFont[key] = []
 							aux = FuseTwoLists(dFont[key], banana.dFont[key])
 							if len(aux) > 0:
 								dFont[key] = FuseTwoLists(dFont[key], banana.dFont[key])
+
+					if hasattr(banana, "extraVariables") and not "extraVariables" in ignore:
+						for colorName in banana.extraVariables.keys():
+							if type(banana.extraVariables[colorName]) == type({}):
+								for attribToOvr in banana.extraVariables[colorName].keys():
+									djarin = banana.extraVariables[colorName][attribToOvr]
+									if djarin != None and type(djarin) != type([]) and type(djarin) != type({}):
+										if not extraVariables.has_key(colorName):
+											extraVariables[colorName] = {}
+										extraVariables[colorName][attribToOvr] = djarin
+
+					if hasattr(banana, "sDefaultColors") and not "sDefaultColors" in ignore:
+						for category in banana.sDefaultColors.keys():
+							if type(banana.sDefaultColors[category]) == type({}):
+								for colorName in banana.sDefaultColors[category].keys():
+									if type(colorName) == type(""):
+										if not sDefaultColors.has_key(category):
+											sDefaultColors[category] = {}
+										sDefaultColors[category][colorName] = []
+									
+
+						for colorName in banana.extraVariables.keys():
+							if type(banana.extraVariables[colorName]) == type({}):
+								for attribToOvr in banana.extraVariables[colorName].keys():
+									djarin = banana.extraVariables[colorName][attribToOvr]
+									if djarin != None and type(djarin) != type([]) and type(djarin) != type({}):
+										if not extraVariables.has_key(colorName):
+											extraVariables[colorName] = {}
+										extraVariables[colorName][attribToOvr] = djarin
+
 			except:
 				print "someone attempted to add more than they should to the AlternateSubModelFTL script"
 				traceback.print_exc()
@@ -252,7 +464,7 @@ if isTGFontManagerEPresent: # Support for Mario's FontManager extension
 		LoadExtraLimitedPlugins(extraConfigPath)
 	else:
 		print "AccesibilityConfig: Using Sovereign's FontManager Extension"
-		fontA = App.g_kFontManager.GetDefaultEFont()
+		fontA = App.g_kFontManager.GetDefaultFontInfo()
 		if fontA != None:
 			defaultFont = fontA.name
 			defaultSize = fontA.size
@@ -264,6 +476,8 @@ if isTGFontManagerEPresent: # Support for Mario's FontManager extension
 			else:
 				dFont[fontI.name] = l
 			l.append(fontI.size)
+
+		LoadExtraLimitedPlugins(extraConfigPath, ignore=["dFont"])
 else:
 	print "AccesibilityConfig: Using Legacy extra menu support"
 	LoadExtraLimitedPlugins(extraConfigPath)
@@ -284,23 +498,146 @@ else:
 		defaultSize = dFont[defaultFont][0]
 
 
-dConfig["ShowPercent"], issues = SafeConfigStatement("ShowPercent", pModule, 0, issues)
-dConfig["ShowBar"], issues = SafeConfigStatement("ShowBar", pModule, 1, issues)
-dConfig["ShowFraction"], issues = SafeConfigStatement("ShowFraction", pModule, 0, issues)
+dConfig["ShowPercent"], issues = SafeConfigStatement("ShowPercent", pModule, 0, issues, 0, 1)
+dConfig["ShowBar"], issues = SafeConfigStatement("ShowBar", pModule, 1, issues, 0, 1)
+dConfig["ShowFraction"], issues = SafeConfigStatement("ShowFraction", pModule, 0, issues, 0, 1)
 
-dConfig["NumberDecimals"], issues = SafeConfigStatement("NumberDecimals", pModule, 0, issues)
+dConfig["NumberDecimals"], issues = SafeConfigStatement("NumberDecimals", pModule, 0, issues, 0)
 dConfig["RadixNotation"], issues = SafeConfigStatement("RadixNotation", pModule, ".", issues)
 
 dConfig["sFont"], issues = SafeConfigStatement("sFont", pModule, defaultFont, issues)
-dConfig["FontSize"], issues = SafeConfigStatement("FontSize", pModule, defaultSize, issues)
+dConfig["FontSize"], issues = SafeConfigStatement("FontSize", pModule, defaultSize, issues, 0)
 
 pFontSubMenu = None
 sBaseFMenu = "Font Selection: "
 sSeparator = ", size "
 
-# sColor = {"Default": [], } # TO-DO DIFFERENT HEALTH BAR COLORS? ALSO TGParagraph.SetColor:
-# TO-DO MAKE IT SO IT SAVES THE ORIGINAL App colors, and then it temporarily replaces its values.
+def SetupColor(kColor, colorName, fRed, fGreen, fBlue, fAlpha):
+	kColor.r = fRed
+	kColor.g = fGreen
+	kColor.b = fBlue
+	kColor.a = fAlpha
+	return kColor
+
+def GetAppColorFromName(name):
+	kColor = None
+	kColorInfo = []
+	if hasattr(App, name):
+		kColor = getattr(App, name)
+		if kColor != None:
+			kColorInfo = GetColors(kColor)
+	return [kColor, kColorInfo]
+
+def SetAppColorFromName(name):
+	kColor = None
+	kColorInfo = []
+	if hasattr(App, name):
+		kColor = getattr(App, name)
+		if kColor != None:
+			kColor = SetupColor(kColor, name, fRed, fGreen, fBlue, fAlpha)
+			kColorInfo = GetColors(kColor)
+	return [kColor, kColorInfo]
+
+def GetColors(kColor):
+	return [kColor.r, kColor.g, kColor.b, kColor.a]
+
+dConfig["Colors"] = {}
+dConfig["ColorsList"] = {}
+colorsExtraCon = extraVariables.keys()
+
+def ExtrasColorSafety(colorsExtraCons=colorsExtraCon):
+		if colorName in colorsExtraCons:
+			try:
+				for attribToOvr in extraVariables[colorName].keys():
+					try:
+						pathToImport = extraVariables[colorName][attribToOvr]
+						pear = __import__(pathToImport)
+						if pear:
+							if hasattr(pear, attribToOvr):
+								leAttrib = getattr(pear, attribToOvr)
+								if leAttrib != None:
+									SetupColor(leAttrib, colorName, dConfig[colorName + "R COLOR"], dConfig[colorName + "G COLOR"], dConfig[colorName + "B COLOR"], dConfig[colorName + "A COLOR"])
+					except:
+						print "AccesibilityConfig: Error while saving an extra considered color config:"
+						traceback.print_exc()
+				
+			except:
+				print "AccesibilityConfig: Error while saving an extra considered color config:"
+				traceback.print_exc()
+
+for typeC in sDefaultColors.keys():
+	for colorName in sDefaultColors[typeC].keys():
+		sDefaultColors[typeC][colorName] = GetAppColorFromName(colorName)
+
+for typeC in sDefaultColors.keys():
+	for colorName in sDefaultColors[typeC].keys():
+		if sDefaultColors[typeC][colorName] != None and type(sDefaultColors[typeC][colorName]) == type([]) and len(sDefaultColors[typeC][colorName]) >= 2 and sDefaultColors[typeC][colorName][0] != None and type(sDefaultColors[typeC][colorName][1]) == type ([]) and len(sDefaultColors[typeC][colorName][1]) >= 4:
+			if not dConfig["ColorsList"].has_key(typeC):
+				dConfig["ColorsList"][typeC] = {}
+			dConfig["ColorsList"][typeC][colorName] = 1
 	
+			dConfig["Colors"][colorName] = [sDefaultColors[typeC][colorName][1], sDefaultColors[typeC][colorName][0]]
+
+			dConfig[colorName + "R COLOR"], issues = SafeConfigStatement(colorName + "R", pModule, dConfig["Colors"][colorName][0][0], issues, 0, 1)
+			dConfig[colorName + "G COLOR"], issues = SafeConfigStatement(colorName + "G", pModule, dConfig["Colors"][colorName][0][1], issues, 0, 1)
+			dConfig[colorName + "B COLOR"], issues = SafeConfigStatement(colorName + "B", pModule, dConfig["Colors"][colorName][0][2], issues, 0, 1)
+			dConfig[colorName + "A COLOR"], issues = SafeConfigStatement(colorName + "A", pModule, dConfig["Colors"][colorName][0][3], issues, 0, 1)
+
+			SetupColor(dConfig["Colors"][colorName][1], colorName, dConfig[colorName + "R COLOR"], dConfig[colorName + "G COLOR"], dConfig[colorName + "B COLOR"], dConfig[colorName + "A COLOR"])
+			ExtrasColorSafety()
+
+def SaveConfig(pObject, pEvent):
+	file = nt.open(configPath, nt.O_WRONLY | nt.O_TRUNC | nt.O_CREAT | nt.O_BINARY)
+	nt.write(file, "ShowPercent = " + str(dConfig["ShowPercent"]))
+	nt.write(file, "\nShowBar = " + str(dConfig["ShowBar"]))
+	nt.write(file, "\nShowFraction = " + str(dConfig["ShowFraction"]))
+	nt.write(file, "\nNumberDecimals = " + str(dConfig["NumberDecimals"]))
+	nt.write(file, "\nRadixNotation = \"" + str(dConfig["RadixNotation"])+ "\"")
+	nt.write(file, "\nsFont = \"" + str(dConfig["sFont"]) + "\"")
+	nt.write(file, "\nFontSize = " + str(dConfig["FontSize"]))
+
+	global colorsExtraCon
+	colorsExtraCon = extraVariables.keys()
+	for colorName in dConfig["Colors"].keys():
+		nt.write(file, "\n" + str(colorName) + "R = " + str(dConfig[colorName + "R COLOR"]))
+		nt.write(file, "\n" + str(colorName) + "G = " + str(dConfig[colorName + "G COLOR"]))
+		nt.write(file, "\n" + str(colorName) + "B = " + str(dConfig[colorName + "B COLOR"]))
+		nt.write(file, "\n" + str(colorName) + "A = " + str(dConfig[colorName + "A COLOR"]))
+
+		SetupColor(dConfig["Colors"][colorName][1], colorName, dConfig[colorName + "R COLOR"], dConfig[colorName + "G COLOR"], dConfig[colorName + "B COLOR"], dConfig[colorName + "A COLOR"])
+
+		#Extra support for rare cases where somebody already did something with the colors first - i.e. FoundationTech:	
+ 		ExtrasColorSafety(colorsExtraCon)
+
+
+	nt.close(file)
+
+	# Because of shenanigans with menu being available during QB on KM, you can sometimes access modify and save configurations mid-game. We may want to notify other related scripts that this has happened!
+	pEvent = App.TGStringEvent_Create()
+	pEvent.SetEventType(ET_SAVED_CONFIG)
+	#pEvent.SetDestination(None)
+	pEvent.SetString("SAVED BC ACCESIBILITY")
+	App.g_kEventManager.AddEvent(pEvent)
+
+	print "Calling resolution change event..."
+	# TO-DO EXPERIMENTAL
+	pEvent1 = App.TGStringEvent_Create()
+	pEvent1.SetEventType(App.ET_GRAPHICS_RESOLUTION_REVERT)
+	#pEvent1.SetDestination(None)
+	pEvent1.SetString("BC ACCESIBILITY")
+	App.g_kEventManager.AddEvent(pEvent1)
+
+	# Just some niceties for people
+	global pSaveButton, canChangeSave
+	currentTime = App.g_kUtopiaModule.GetGameTime()
+	if pSaveButton and (canChangeSave == None or currentTime > canChangeSave):
+		canChangeSave = currentTime + saveMsgDelay + 0.1
+		pSaveButton.SetName(App.TGString("CONFIGURATION SAVED"))
+		pSequence = App.TGSequence_Create()
+		pAction = App.TGScriptAction_Create(__name__, "ResetButtonString", pSaveButton, sSaveButton)
+		pSequence.AddAction(pAction, None, saveMsgDelay)
+		pSequence.Play()
+
 if issues > 0:
 	print "Re-applying a safe save Accesibility Config"
 	try:
@@ -324,9 +661,10 @@ def CreateMenu(pOptionsPane, pContentPanel, bGameEnded = 0):
 	CreateMultipleChoiceButton("Radix Notation: ", pContentPanel, pOptionsPane, pContentPanel, __name__ + ".SelectNext", "RadixNotation", dRadixNotation, EventInt = 0)
 
 	pFontSubMenu = CreateFontMenu(sBaseFMenu + str(dConfig["sFont"]) + str(sSeparator)+str(dConfig["FontSize"]) , pContentPanel, pOptionsPane, pContentPanel)
-	
+	CreateColorsMenu("Interface colors", pContentPanel, pOptionsPane, pContentPanel)
+
 	global pSaveButton
-	pSaveButton = CreateButton(sSaveButton, pContentPanel, pOptionsPane, pContentPanel, __name__ + ".SaveConfig") # TO-DO MAKE IT SO THE SAVE CONFIG BUTTON CHANGES TO ANOTHER VALUE FOR A FEW SECS
+	pSaveButton = CreateButton(sSaveButton, pContentPanel, pOptionsPane, pContentPanel, __name__ + ".SaveConfig")
 	return App.TGPane_Create(0,0)
 
 def BarToggle(object, event):
@@ -361,29 +699,69 @@ def FractionToggle(object, event):
 		ResetButtonString(None, pSaveButton, sSaveNotSaved)
 
 def HandleKeyboardGoBetween(pObject, pEvent):
+	# Maybe do a cast of the pParent's parent? App.STMenu_Create(sMenuName)
 	pPara = App.TGParagraph_Cast(pEvent.GetDestination())
 	pParent = App.TGPane_Cast(pPara.GetParent())
+
 	pSubPara = App.TGParagraph_Cast(pParent.GetNthChild(2))
 	pString = App.TGString()
 	pSubPara.GetString(pString)
 	pNewVal = App.TGString()
 	pPara.GetString(pNewVal)
-	sNewVal = pNewVal.GetCString()	
+	sNewVal = pNewVal.GetCString()
 	if string.count(sNewVal, ".") > 1:
 		lList = string.split(sNewVal, ".")
 		sNewVal = lList[0] + "." + string.join(lList[1:-1], "")
 		pPara.SetString(sNewVal)
 
 	if pNewVal.GetCString() != None and pNewVal.GetCString() != "":
-		dConfig[pString.GetCString()] = int(pNewVal.GetCString())
-		if pString.GetCString() == "sFont" or pString.GetCString() == "FontSize":
-			UpdateFontSubMenu(0)
+		myParam = pString.GetCString()
+		myReso = 0
+		if len(myParam) > 7:
+			fidgement = myParam[-7:]
+			if fidgement == "R COLOR" or fidgement == "G COLOR" or fidgement == "B COLOR" or fidgement == "A COLOR":
+				myReso = 1
+				
+		if myReso == 0:	
+			dConfig[pString.GetCString()] = int(pNewVal.GetCString())
+			if pString.GetCString() == "sFont" or pString.GetCString() == "FontSize":
+				UpdateFontSubMenu(0)
+		else: # It is a color thing
+			newColor = float(pNewVal.GetCString())
+			if newColor >= 1.0:
+				newColor = 1.0
+			dConfig[pString.GetCString()] = newColor
 
+			mainInfo = pString.GetCString()[:-7]
+
+			pGrandparent = App.STMenu_Cast(pParent.GetConceptualParent()) #App.TGPane_Cast(pParent.GetParent())
+			newContent = ColorMessageFormat(str(mainInfo), dConfig[str(mainInfo + "R COLOR")], dConfig[str(mainInfo + "G COLOR")], dConfig[str(mainInfo + "B COLOR")], dConfig[str(mainInfo + "A COLOR")])
+			
+			UpdateSubMenu(0, pGrandparent, newContent)
+			
 		global pSaveButton
 		if pSaveButton:
 			ResetButtonString(None, pSaveButton, sSaveNotSaved)
 
 	pObject.CallNextHandler(pEvent)
+
+def ColorMessageFormat(colorName, r, g, b, a):
+
+	r255 = 255 * r
+	g255 = 255 * g
+	b255 = 255 * b
+
+	myDecimalR = ""
+	myDecimalG = ""
+	myDecimalB = ""
+	if dConfig["NumberDecimals"] > 0:
+		rN = dConfig["RadixNotation"]
+		myDecimalR = myDecimalR + rN + str(r255%1.0)[2:(1+dConfig["NumberDecimals"])]
+		myDecimalG = myDecimalG + rN + str(g255%1.0)[2:(1+dConfig["NumberDecimals"])]
+		myDecimalB = myDecimalB + rN + str(b255%1.0)[2:(1+dConfig["NumberDecimals"])]
+
+	newContent = str(colorName) + ": (" + str(int(r255)) + myDecimalR + "; " + str(int(g255)) + myDecimalG + "; " + str(int(b255)) + myDecimalB + "; " + str(a) + ")"
+	return newContent
 
 def CreateTextEntryButton(sButtonName, pMenu, pOptionPane, pContentPanel, sVar, sFunction, isChosen = 0, isToggle = 0, EventInt = 0, ET_EVENT = None):
 	pTextField  = CreateTextField(App.TGString(sButtonName), sVar, sFunction)
@@ -615,7 +993,7 @@ def CreateMultipleChoiceButton(sButtonName, pMenu, pOptionsPane, pContentPanel, 
 		
 
 
-def CreateButton(sButtonName, pMenu, pOptionPane, pContentPanel, sFunction, isChosen = 0, isToggle = 0, EventInt = 0, ET_EVENT = None):
+def CreateButton(sButtonName, pMenu, pOptionPane, pContentPanel, sFunction, isChosen = 0, isToggle = 0, EventInt = 0, ET_EVENT = None, myString=None):
 	if ET_EVENT == None:		
 		ET_EVENT = App.UtopiaModule_GetNextEventType()
 
@@ -624,7 +1002,9 @@ def CreateButton(sButtonName, pMenu, pOptionPane, pContentPanel, sFunction, isCh
 	pEvent = App.TGStringEvent_Create()
 	pEvent.SetEventType(ET_EVENT)
 	pEvent.SetDestination(pOptionPane)
-	pEvent.SetString(sButtonName)
+	if myString == None:
+		myString = sButtonName
+	pEvent.SetString(myString)
 
 	pButton = App.STButton_Create(sButtonName, pEvent)
 	pButton.SetChoosable(isToggle)
@@ -635,6 +1015,59 @@ def CreateButton(sButtonName, pMenu, pOptionPane, pContentPanel, sFunction, isCh
 
 	return pButton
 
+def ResetDefaultColors(pObject, pEvent):
+	pObject.CallNextHandler(pEvent)
+	colorName = pEvent.GetCString()
+
+	if colorName != None and colorName != "" and len(colorName) >= 2:
+		global dConfig
+		dConfig[colorName + "R COLOR"] = dConfig["Colors"][colorName][0][0]
+		dConfig[colorName + "G COLOR"] = dConfig["Colors"][colorName][0][1]
+		dConfig[colorName + "B COLOR"] = dConfig["Colors"][colorName][0][2]
+		dConfig[colorName + "A COLOR"] = dConfig["Colors"][colorName][0][3]
+
+		pParent = App.STMenu_Cast(pEvent.GetDestination())
+
+		newContent = ColorMessageFormat(str(colorName), dConfig[str(colorName + "R COLOR")], dConfig[str(colorName + "G COLOR")], dConfig[str(colorName + "B COLOR")], dConfig[str(colorName + "A COLOR")])
+
+		UpdateSubMenu(1, pParent, newContent)
+
+def CreateColorsMenu(sMenuName, pMenu, pOptionsPane, pContentPanel):
+	pSubMenu = App.STMenu_Create(sMenuName)
+	#pSubMenu.AddPythonFuncHandlerForInstance(ET_SELECT_BUTTON, __name__ + ".HandleSelectButton")
+
+	listedTypes = list(dConfig["ColorsList"].keys()) 
+	listedTypes.sort()
+
+	for typeC in listedTypes:
+		listedColors = list(dConfig["ColorsList"][typeC].keys())
+		listedColors.sort()
+		pSubSubMenu = None
+		for colorName in listedColors:
+			if pSubSubMenu == None:
+				pSubSubMenu = App.STMenu_Create(typeC) # What type of parameter
+			if pSubSubMenu != None:
+				colorNameOnM = ColorMessageFormat(str(colorName), dConfig[str(colorName + "R COLOR")], dConfig[str(colorName + "G COLOR")], dConfig[str(colorName + "B COLOR")], dConfig[str(colorName + "A COLOR")])
+				pSubSub3Menu = App.STMenu_Create(colorNameOnM) # Name of the color parameter
+
+				# Now we append 3 r, g, b, a and a reset to default.
+				# TO-DO MAYBE MAKE THESE 4 BELOW A SLIDING BAR?
+				CreateTextEntryButton("r (red): ", pSubSub3Menu, pOptionsPane, pSubSub3Menu, colorName + "R COLOR", __name__ + ".HandleKeyboardGoBetween")
+				CreateTextEntryButton("g (green): ", pSubSub3Menu, pOptionsPane, pSubSub3Menu, colorName + "G COLOR", __name__ + ".HandleKeyboardGoBetween")
+				CreateTextEntryButton("b (blue): ", pSubSub3Menu, pOptionsPane, pSubSub3Menu, colorName + "B COLOR", __name__ + ".HandleKeyboardGoBetween")
+				CreateTextEntryButton("a (opacity): ", pSubSub3Menu, pOptionsPane, pSubSub3Menu, colorName + "A COLOR", __name__ + ".HandleKeyboardGoBetween")
+
+				CreateButton("Reset to default", pSubSub3Menu, pSubSub3Menu, pSubSub3Menu, __name__ + ".ResetDefaultColors", myString=str(colorName))
+				#CreateButton("Reset to default", pSubSub3Menu, pOptionsPane, pSubSub3Menu, __name__ + ".ResetDefaultColors", myString=str(colorName))
+
+				pSubSubMenu.AddChild(pSubSub3Menu)
+
+		if pSubSubMenu != None:
+			pSubMenu.AddChild(pSubSubMenu)
+	
+	pMenu.AddChild(pSubMenu)
+
+	return pSubMenu
 
 def CreateFontMenu(sMenuName, pMenu, pOptionsPane, pContentPanel):
 	pSubMenu = App.STMenu_Create(sMenuName)
@@ -670,11 +1103,21 @@ def HandleSelectButton(pObject, pEvent):
 		dConfig["FontSize"] = s[1]
 		UpdateFontSubMenu(1)
 
-def UpdateFontSubMenu(close=0): 
-	global pFontSubMenu
-	pFontSubMenu.SetName(App.TGString(sBaseFMenu + str(dConfig["sFont"]) + str(sSeparator)+str(dConfig["FontSize"])))
-	if close:
-		pFontSubMenu.Close()
+def UpdateFontSubMenu(close=0, pSTMenu=None):
+	UpdateSubMenu(close, pSTMenu)
+
+def UpdateSubMenu(close=0, pSTMenu=None, newString=""):
+	if pSTMenu == None:
+		global pFontSubMenu
+		if pFontSubMenu:
+			pFontSubMenu.SetName(App.TGString(sBaseFMenu + str(dConfig["sFont"]) + str(sSeparator)+str(dConfig["FontSize"])))
+			if close:
+				pFontSubMenu.Close()
+	else:
+		pSTMenu.SetName(App.TGString(newString))
+
+		if close:
+			pSTMenu.Close()
 
 	global pSaveButton
 	if pSaveButton:
