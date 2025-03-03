@@ -1,7 +1,7 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL LICENSE AS WELL
 # AccesibilityConfig.py
-# 2nd March 2025, by USS Sovereign, and tweaked by Noat and Alex SL Gato (CharaToLoki)
+# 3rd March 2025, by USS Sovereign, and tweaked by Noat and Alex SL Gato (CharaToLoki)
 #         Inspired by the Shield Percentages mod by Defiant. It was originally made pre-2010 with the goal of showing lots of accessibility options, such as for colorblind people.
 #
 # Modify, redistribute to your liking. Just remember to give credit where due.
@@ -59,7 +59,7 @@ extraVariables = {
 """
 #
 MODINFO = { "Author": "\"USS Sovereign\" (mario0085), Noat (noatblok),\"Alex SL Gato\" (andromedavirgoa@gmail.com)",
-	    "Version": "0.2",
+	    "Version": "0.21",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -455,29 +455,80 @@ def LoadExtraLimitedPlugins(dir,dExcludePlugins=_g_dExcludeSomePlugins, ignore=[
 defaultFont = "Crillee"
 defaultSize = 5
 
-isTGFontManagerEPresent = hasattr(App.g_kFontManager, "GetFontList")
+isTGFontManagerEPresent = hasattr(App.g_kFontManager, "GetFontList") and hasattr(App.g_kFontManager, "GetDefaultFontInfo")
+isBCMM = 0
+
 if isTGFontManagerEPresent: # Support for Mario's FontManager extension
-	
+	try:
+		import bcmm_version
+		isBCMM = 1
+	except:
+		print("No BCMM signature file")
+		isBCMM = 0
+	# Ok so, we already know if it's BCMM or not. Now, it may be possible someone backported something from BCMM or made changes similar to BCMM for the same functions
 	fonts = App.g_kFontManager.GetFontList()
-	if not fonts or len(fonts) < 1:
-		print "AccesibilityConfig: No Fonts detected using a FontManager's extension. Defaulting to Legacy extra menu support..."
+	if not fonts or type(fonts) != type([]) or len(fonts) < 1:
+		if isBCMM:
+			print "AccesibilityConfig: ERROR: No Fonts detected using BCMM's FontManager extension. Attempting Legacy extra menu support..."
+		else:
+			print "AccesibilityConfig: ATTENTION: No Fonts detected using a FontManager's extension. Defaulting to Legacy extra menu support..."
+
 		LoadExtraLimitedPlugins(extraConfigPath)
 	else:
-		print "AccesibilityConfig: Using Sovereign's FontManager Extension"
-		fontA = App.g_kFontManager.GetDefaultFontInfo()
-		if fontA != None:
-			defaultFont = fontA.name
-			defaultSize = fontA.size
+		errorFree = 0
+		strikes = 0
+		try:
 
-		for fontI in fonts:
-			l = []
-			if dFont.has_key(fontI.name):
-				l = dFont[fontI.name]
+			fontA = App.g_kFontManager.GetDefaultFontInfo()
+			if fontA != None:
+
+				defaultFontA = None
+				defaultSizeA = None
+				try:
+					if hasattr(fontA, name) and type(fontA.name) == type(""):
+						defaultFontA = str(fontA.name)
+					if hasattr(fontA, size) and type(fontA.size) == type(1):
+						defaultSizeA = int(fontA.size)
+					errorFree = 1
+				except:
+					errorFree = 0
+					traceback.print_exc()
+
+				if errorFree == 1:
+					defaultFont = defaultFontA
+					defaultSize = defaultSizeA
+				else:
+					strikes = strikes + 1
+
+			for fontI in fonts:
+				l = []
+				if not hasattr(fontI, name) or type(fontI.name) != type("") or not hasattr(fontA, size) or type(fontA.size) != type(1):
+					strikes = strikes + 1
+					break
+				if dFont.has_key(fontI.name):
+					l = dFont[fontI.name]
+				else:
+					dFont[fontI.name] = l
+				l.append(fontI.size)
+
+		except:
+			strikes = 1
+			traceback.print_exc()
+
+		if isBCMM:
+			if strikes == 0:
+				print "AccesibilityConfig: Using BCMM's FontManager Extension"
+				LoadExtraLimitedPlugins(extraConfigPath, ignore=["dFont"])
 			else:
-				dFont[fontI.name] = l
-			l.append(fontI.size)
-
-		LoadExtraLimitedPlugins(extraConfigPath, ignore=["dFont"])
+				print "AccesibilityConfig: An error ocurred while using BCMM's FontManager Extension. Attempting Legacy extra menu support..."
+				LoadExtraLimitedPlugins(extraConfigPath)
+		else:
+			if strikes == 0:
+				print "AccesibilityConfig: Using a FontManager Extension"
+				LoadExtraLimitedPlugins(extraConfigPath, ignore=["dFont"])
+			else:
+				print "AccesibilityConfig: A FontManager Extension seems to be present, but is not compatible with this mod. Defaulting to Legacy extra menu support..."
+				LoadExtraLimitedPlugins(extraConfigPath)
 else:
 	print "AccesibilityConfig: Using Legacy extra menu support"
 	LoadExtraLimitedPlugins(extraConfigPath)

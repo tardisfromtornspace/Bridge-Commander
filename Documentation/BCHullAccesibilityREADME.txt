@@ -1,9 +1,17 @@
 == Changelog ==
-0.2 - Added Interface color support, improved certain functions (thank you, Sovereign)
-0.13 - Added support for certain possible BCMM dynamic font list creation from a TGFontManager extension, and corrected slight issues with the BCMM FontExtension.py example file from Mario's branch during commit 38eab561eb7c8afca0395a98a24dbda9d1314d68.
-0.12 - Made fonts work via import of a new file so people can add or remove fonts without modifying the primary file, also made it nicer regarding menus (i.e. fonts are now ordered alphabetically) and saves while QB was running. Now when saving the Save Config button will properly indicate that you saved your configuration or if there are unsaved changes.
-0.1 - First release after a few updates, some ideas still need to be expanded
-Pre 0.1 - USS Sovereign and Noat's version (just labeling it as 0.1 because I did not see versioning on the files I was given)
+0.2.1: 
+    - Added slightly more support for FontExtension, albeit on my install I will not be adding FontExtension per se since in order to work properly it requires to do changes on FixApp that some players may not desire
+    - Removed the FontExtension file from scripts.
+0.2.0:
+    - Added Interface color support, improved certain functions (thank you, Sovereign)
+0.1.3:
+    - Added support for certain possible BCMM dynamic font list creation from a TGFontManager extension, and corrected slight issues with the BCMM FontExtension.py example file from Mario's branch during commit 38eab561eb7c8afca0395a98a24dbda9d1314d68.
+0.1.2:
+    - Made fonts work via import of a new file so people can add or remove fonts without modifying the primary file, also made it nicer regarding menus (i.e. fonts are now ordered alphabetically) and saves while QB was running. Now when saving the Save Config button will properly indicate that you saved your configuration or if there are unsaved changes.
+0.1.0:
+    - First release after a few updates, some ideas still need to be expanded
+Pre 0.1.0:
+    - USS Sovereign and Noat's version (just labeling it as 0.1.0 because I did not see versioning on the files I was given)
 
 == What does this mod do ==
 The idea of this mod is inspired by the Shield Percentages mod by Defiant. It was originally made pre-2010 with the goal of showing lots of accessibility options, such as for colorblind people.
