@@ -1,4 +1,6 @@
 == Changelog ==
+0.3:
+    - Made Hull Gauge text work better for huge and tiny numbers.
 0.2.6:
     - Removed a "import Foundation" statement that was doing nothing on the AccesibilityConfig.py
 0.2.5:

@@ -1724,3 +1724,723 @@ Fixing Jaggies
 
 
 ##### End Of The Log #####
+##### Bridge Commander Exit Log: 04 Mar 2025 00:00:16#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+Jumpspace Drive 20070905 Initializing...
+TimeVortex Drive 20070905 Initializing...
+Warpspace Drive 20070905 Initializing...
+DS9FX Initializing...
+AccesibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+Jumpspace: Quick Battle is running... Mod is starting up...
+TimeVortex: Quick Battle is running... Mod is starting up...
+Warpspace: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+
+
+Shuttle Launching Error: ship Player has no Shuttle launching points
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+data/TGL/Maelstrom/Episode 2/E2M6.tgl E2M6MissionWin14
+Setting Shield  0 to 7.0
+Setting Shield  1 to 7.0
+Setting Shield  2 to 7.0
+Setting Shield  3 to 7.0
+Setting Shield  4 to 7.0
+Setting Shield  5 to 7.0
+Setting Shield  0 to 14.0
+Setting Shield  1 to 14.0
+Setting Shield  2 to 14.0
+Setting Shield  3 to 14.0
+Setting Shield  4 to 14.0
+Setting Shield  5 to 14.0
+Saved mid-game, refreshing configuration...
+Saved mid-game, refreshing configuration...
+Traceback (innermost last):
+  File ".\Scripts\Custom\QBautostart\HullIntegrity.py", line 309, in Update
+    self.iDec = string.zfill(int(self.iExact * 100 * (10**globalVarList["NumberDecimals"])) - int(self.iCon * (10**globalVarList["NumberDecimals"])), globalVarList["NumberDecimals"])
+OverflowError: integer pow()
+
+
+Traceback (innermost last):
+  File ".\Scripts\Custom\QBautostart\HullIntegrity.py", line 309, in Update
+    pExactPart = string.split(str(self.iExact), ".")
+OverflowError: integer pow()
+Traceback (innermost last):
+  File ".\Scripts\Custom\QBautostart\HullIntegrity.py", line 309, in Update
+    pExactPart = string.split(str(self.iExact), ".")
+OverflowError: integer pow()
+Saved mid-game, refreshing configuration...
+
+
+
+# DS9FX has...
+
+# taken a console dump
+data/TGL/Maelstrom/Episode 2/E2M6.tgl E2M6MissionWin16
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 04 Mar 2025 00:00:16#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+Jumpspace Drive 20070905 Initializing...
+TimeVortex Drive 20070905 Initializing...
+Warpspace Drive 20070905 Initializing...
+DS9FX Initializing...
+AccesibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+Jumpspace: Quick Battle is running... Mod is starting up...
+TimeVortex: Quick Battle is running... Mod is starting up...
+Warpspace: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+
+
+Shuttle Launching Error: ship Player has no Shuttle launching points
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+data/TGL/Maelstrom/Episode 2/E2M6.tgl E2M6MissionWin14
+Setting Shield  0 to 7.0
+Setting Shield  1 to 7.0
+Setting Shield  2 to 7.0
+Setting Shield  3 to 7.0
+Setting Shield  4 to 7.0
+Setting Shield  5 to 7.0
+Setting Shield  0 to 14.0
+Setting Shield  1 to 14.0
+Setting Shield  2 to 14.0
+Setting Shield  3 to 14.0
+Setting Shield  4 to 14.0
+Setting Shield  5 to 14.0
+Saved mid-game, refreshing configuration...
+Saved mid-game, refreshing configuration...
+Traceback (innermost last):
+  File ".\Scripts\Custom\QBautostart\HullIntegrity.py", line 309, in Update
+    self.iDec = string.zfill(int(self.iExact * 100 * (10**globalVarList["NumberDecimals"])) - int(self.iCon * (10**globalVarList["NumberDecimals"])), globalVarList["NumberDecimals"])
+OverflowError: integer pow()
+
+
+Traceback (innermost last):
+  File ".\Scripts\Custom\QBautostart\HullIntegrity.py", line 309, in Update
+    pExactPart = string.split(str(self.iExact), ".")
+OverflowError: integer pow()
+Traceback (innermost last):
+  File ".\Scripts\Custom\QBautostart\HullIntegrity.py", line 309, in Update
+    pExactPart = string.split(str(self.iExact), ".")
+OverflowError: integer pow()
+Saved mid-game, refreshing configuration...
+
+
+
+# DS9FX has...
+
+# taken a console dump
+data/TGL/Maelstrom/Episode 2/E2M6.tgl E2M6MissionWin16
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 04 Mar 2025 00:34:24#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+Jumpspace Drive 20070905 Initializing...
+TimeVortex Drive 20070905 Initializing...
+Warpspace Drive 20070905 Initializing...
+DS9FX Initializing...
+AccesibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+Jumpspace: Quick Battle is running... Mod is starting up...
+TimeVortex: Quick Battle is running... Mod is starting up...
+Warpspace: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+
+
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+
+
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+Shuttle Launching Error: ship Player has no Shuttle launching points
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+
+# DS9FX has...
+
+# taken a console dump
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 98 , 0513305664
+auxPercString + str(radNot) + str(iDec) 14707 , 7001953000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 96 , 2053375244
+auxPercString + str(radNot) + str(iDec) 14430 , 8007813000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 96 , 3593444824
+auxPercString + str(radNot) + str(iDec) 14453 , 9013672000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 96 , 5133514404
+auxPercString + str(radNot) + str(iDec) 14477 , 0019531000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 96 , 6673507690
+auxPercString + str(radNot) + str(iDec) 14500 , 1025391000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 96 , 8213577271
+auxPercString + str(radNot) + str(iDec) 14523 , 2031250000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 96 , 9753570557
+auxPercString + str(radNot) + str(iDec) 14546 , 3037109000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 97 , 1293640137
+auxPercString + str(radNot) + str(iDec) 14569 , 4042969000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 97 , 2833633423
+auxPercString + str(radNot) + str(iDec) 14592 , 5048828000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 97 , 4373703003
+auxPercString + str(radNot) + str(iDec) 14615 , 6054688000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 97 , 5913772583
+auxPercString + str(radNot) + str(iDec) 14638 , 7060547000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 97 , 7453765869
+auxPercString + str(radNot) + str(iDec) 14661 , 8066406000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 97 , 8993835449
+auxPercString + str(radNot) + str(iDec) 14684 , 9072266000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 98 , 0533828735
+auxPercString + str(radNot) + str(iDec) 14708 , 0078125000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 98 , 2073898315
+auxPercString + str(radNot) + str(iDec) 14731 , 1083984000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 98 , 3613891602
+auxPercString + str(radNot) + str(iDec) 14754 , 2089844000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 98 , 5153961182
+auxPercString + str(radNot) + str(iDec) 14777 , 3095703000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 98 , 6694030762
+auxPercString + str(radNot) + str(iDec) 14800 , 4101563000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 98 , 8234024048
+auxPercString + str(radNot) + str(iDec) 14823 , 5107422000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 98 , 8610534668
+auxPercString + str(radNot) + str(iDec) 14829 , 1572266000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 99 , 0150527954
+auxPercString + str(radNot) + str(iDec) 14852 , 2578125000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 99 , 1690597534
+auxPercString + str(radNot) + str(iDec) 14875 , 3583984000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 99 , 3230590820
+auxPercString + str(radNot) + str(iDec) 14898 , 4589844000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 99 , 4770660400
+auxPercString + str(radNot) + str(iDec) 14921 , 5595703000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 99 , 6310653687
+auxPercString + str(radNot) + str(iDec) 14944 , 6601563000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 99 , 8364105225
+auxPercString + str(radNot) + str(iDec) 14975 , 4609375000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 99 , 9904098511
+auxPercString + str(radNot) + str(iDec) 14998 , 5615234000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 04 Mar 2025 00:34:24#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+Jumpspace Drive 20070905 Initializing...
+TimeVortex Drive 20070905 Initializing...
+Warpspace Drive 20070905 Initializing...
+DS9FX Initializing...
+AccesibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+Jumpspace: Quick Battle is running... Mod is starting up...
+TimeVortex: Quick Battle is running... Mod is starting up...
+Warpspace: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+
+
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+
+
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 18000 , 0000000000
+Shuttle Launching Error: ship Player has no Shuttle launching points
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+
+# DS9FX has...
+
+# taken a console dump
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 98 , 0513305664
+auxPercString + str(radNot) + str(iDec) 14707 , 7001953000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 96 , 2053375244
+auxPercString + str(radNot) + str(iDec) 14430 , 8007813000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 96 , 3593444824
+auxPercString + str(radNot) + str(iDec) 14453 , 9013672000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 96 , 5133514404
+auxPercString + str(radNot) + str(iDec) 14477 , 0019531000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 96 , 6673507690
+auxPercString + str(radNot) + str(iDec) 14500 , 1025391000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 96 , 8213577271
+auxPercString + str(radNot) + str(iDec) 14523 , 2031250000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 96 , 9753570557
+auxPercString + str(radNot) + str(iDec) 14546 , 3037109000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 97 , 1293640137
+auxPercString + str(radNot) + str(iDec) 14569 , 4042969000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 97 , 2833633423
+auxPercString + str(radNot) + str(iDec) 14592 , 5048828000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 97 , 4373703003
+auxPercString + str(radNot) + str(iDec) 14615 , 6054688000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 97 , 5913772583
+auxPercString + str(radNot) + str(iDec) 14638 , 7060547000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 97 , 7453765869
+auxPercString + str(radNot) + str(iDec) 14661 , 8066406000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 97 , 8993835449
+auxPercString + str(radNot) + str(iDec) 14684 , 9072266000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 98 , 0533828735
+auxPercString + str(radNot) + str(iDec) 14708 , 0078125000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 98 , 2073898315
+auxPercString + str(radNot) + str(iDec) 14731 , 1083984000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 98 , 3613891602
+auxPercString + str(radNot) + str(iDec) 14754 , 2089844000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 98 , 5153961182
+auxPercString + str(radNot) + str(iDec) 14777 , 3095703000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 98 , 6694030762
+auxPercString + str(radNot) + str(iDec) 14800 , 4101563000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 98 , 8234024048
+auxPercString + str(radNot) + str(iDec) 14823 , 5107422000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 98 , 8610534668
+auxPercString + str(radNot) + str(iDec) 14829 , 1572266000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 99 , 0150527954
+auxPercString + str(radNot) + str(iDec) 14852 , 2578125000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 99 , 1690597534
+auxPercString + str(radNot) + str(iDec) 14875 , 3583984000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 99 , 3230590820
+auxPercString + str(radNot) + str(iDec) 14898 , 4589844000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 99 , 4770660400
+auxPercString + str(radNot) + str(iDec) 14921 , 5595703000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 99 , 6310653687
+auxPercString + str(radNot) + str(iDec) 14944 , 6601563000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 99 , 8364105225
+auxPercString + str(radNot) + str(iDec) 14975 , 4609375000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 99 , 9904098511
+auxPercString + str(radNot) + str(iDec) 14998 , 5615234000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 100 , 0000000000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+auxPercString + str(radNot) + str(iDec) 15000 , 0000000000
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####

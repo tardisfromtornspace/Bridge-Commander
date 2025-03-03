@@ -1,14 +1,14 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL LICENSE AS WELL
 # HullIntegrity.py
-# 1st March 2025, by USS Sovereign, and tweaked by Noat and Alex SL Gato (CharaToLoki)
+# 4th March 2025, by USS Sovereign, and tweaked by Noat and Alex SL Gato (CharaToLoki)
 #         Inspired by the Shield Percentages mod by Defiant. It was originally made pre-2010 with the goal of showing lots of accessibility options, such as for colorblind people.
 #
 # Modify, redistribute to your liking. Just remember to give credit where due.
 #################################################################################################################
 #
 MODINFO = { "Author": "\"USS Sovereign\" (mario0085), Noat (noatblok),\"Alex SL Gato\" (andromedavirgoa@gmail.com)",
-	    "Version": "0.2",
+	    "Version": "0.3",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -262,6 +262,30 @@ def exit():
 	pHealth = None
 	pTimer = None
 
+def convertToString(iExact, numDec, radNot):
+	pExactPart = ""
+	auxPercString = ""
+	iDec = "0"
+	pLittlePart = string.split(str(iExact), "e")
+	if len(pLittlePart) > 2:
+		pExactPart = string.split(str(pLittlePart[0]), ".")
+		pFullDec = string.join(pExactPart[:], "")
+		auxPercString = "0"
+		iPowerReverse = abs(int(pLittlePart[1]))
+		iDec = string.zfill(string.zfill(pFullDec, iPowerReverse-1), numDec)[:(numDec+1)] 
+	else:
+		pExactPart = string.split(str(iExact), ".")
+		auxPercString = pExactPart[0]
+		if len (pExactPart) >= 2:
+			currHullRelA = string.ljust(str(pExactPart[1]), numDec)[:(numDec)]
+			iDec = string.replace(currHullRelA, " ", "0")
+		else:
+			iDec = string.zfill(iDec, numDec)
+	if numDec > 0:
+		auxPercString = auxPercString + str(radNot) + str(iDec)
+
+	return auxPercString
+
 class Watcher:
 	def __init__(self):
 		self.pTimer = None
@@ -298,47 +322,28 @@ class Watcher:
 				pText.SetString("Hull : N/A")
 				return
 
-			self.iExact = self.fHullCurr/self.fHullMax
-			self.iCon = int(self.iExact * 100)
+			self.iExact = self.fHullCurr/self.fHullMax * 100
 		
 			infoString = ""
 		
 			if globalVarList["ShowPercent"]:
 				auxPercString = ""
 				if globalVarList["NumberDecimals"] > 0:
-					self.iDec = string.zfill(int(self.iExact * 100 * (10**globalVarList["NumberDecimals"])) - int(self.iCon * (10**globalVarList["NumberDecimals"])), globalVarList["NumberDecimals"])
-					auxPercString = auxPercString + str(globalVarList["RadixNotation"]) + str(self.iDec) 
-				infoString = infoString + str(self.iCon) + auxPercString + "%"
+					auxPercString = convertToString(self.iExact, globalVarList["NumberDecimals"], str(globalVarList["RadixNotation"]))
+
+				infoString = infoString + auxPercString + "%"
 				if not globalVarList["ShowFraction"]:
 					infoString = "          " + infoString
 				else:
 					infoString = " " + infoString
 			if globalVarList["ShowFraction"]:
-				if self.fHullMax <= 1.0:
+				if self.fHullMax <= 1.0 and globalVarList["NumberDecimals"] < 6:
 					signifDec = 6
 				else:
 					signifDec = globalVarList["NumberDecimals"]
 
-				currHullAprox = int(self.fHullCurr) 
-				maxHullAprox = int(self.fHullMax) 
-
-				if signifDec >= 1:
-					try:
-						currHullDecAprox = string.zfill(int(int(self.fHullCurr * (10**signifDec))  - (currHullAprox * (10**signifDec))), signifDec)
-					except:
-						# Floats of the scale that cause problems, over 2^64, are likely to lose precision anyways. So hm, just place 0, or this calculation?
-						currHullDecAprox = str(self.fHullCurr%1.0)[2:(1+signifDec)]
-					try:
-						maxHullDecAprox = string.zfill(int(int(self.fHullMax * (10**signifDec))  - (maxHullAprox * (10**signifDec))), signifDec)
-					except:
-						maxHullDecAprox = str(self.fHullMax%1.0)[2:(1+signifDec)]
-
-					sCurrHull = str(currHullAprox) + str(globalVarList["RadixNotation"]) + str(currHullDecAprox)
-					sMaxHull = str(maxHullAprox) + str(globalVarList["RadixNotation"]) + str(maxHullDecAprox)
-				else:
-					sCurrHull = str(currHullAprox)
-					sMaxHull = str(maxHullAprox)
-
+				sCurrHull = convertToString(self.fHullCurr, signifDec, str(globalVarList["RadixNotation"]))
+				sMaxHull = convertToString(self.fHullMax, signifDec, str(globalVarList["RadixNotation"]))
 
 				auxString = str(sCurrHull) + "/" + str(sMaxHull)
 				if globalVarList["ShowPercent"]:
