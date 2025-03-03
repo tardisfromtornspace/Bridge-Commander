@@ -59,7 +59,7 @@ extraVariables = {
 """
 #
 MODINFO = { "Author": "\"USS Sovereign\" (mario0085), Noat (noatblok),\"Alex SL Gato\" (andromedavirgoa@gmail.com)",
-	    "Version": "0.21",
+	    "Version": "0.22",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -765,7 +765,7 @@ def HandleKeyboardGoBetween(pObject, pEvent):
 		sNewVal = lList[0] + "." + string.join(lList[1:-1], "")
 		pPara.SetString(sNewVal)
 
-	if pNewVal.GetCString() != None and pNewVal.GetCString() != "":
+	if pNewVal.GetCString() != None and pNewVal.GetCString() != "" and pNewVal.GetCString() != "." and pNewVal.GetCString() != ",":
 		myParam = pString.GetCString()
 		myReso = 0
 		if len(myParam) > 7:

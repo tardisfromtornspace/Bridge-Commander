@@ -1,4 +1,6 @@
 == Changelog ==
+0.2.2:
+    - Small fix to inputs
 0.2.1: 
     - Added slightly more support for FontExtension, albeit on my install I will not be adding FontExtension per se since in order to work properly it requires to do changes on FixApp that some players may not desire
     - Removed the FontExtension file from scripts.
