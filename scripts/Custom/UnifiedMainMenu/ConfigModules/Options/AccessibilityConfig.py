@@ -77,7 +77,7 @@ extraVariables = {
 """
 #
 MODINFO = { "Author": "\"USS Sovereign\" (mario0085), Noat (noatblok),\"Alex SL Gato\" (andromedavirgoa@gmail.com)",
-	    "Version": "0.25",
+	    "Version": "0.26",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -86,7 +86,6 @@ MODINFO = { "Author": "\"USS Sovereign\" (mario0085), Noat (noatblok),\"Alex SL 
 #
 
 import App
-import Foundation
 import string
 import nt
 import traceback

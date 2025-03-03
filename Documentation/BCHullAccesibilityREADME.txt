@@ -1,4 +1,6 @@
 == Changelog ==
+0.2.6:
+    - Removed a "import Foundation" statement that was doing nothing on the AccesibilityConfig.py
 0.2.5:
     - Fixes and improvements to text entries so you cannot cause more invalid inputs, and more resistant saves.
     - Added options to reset a color, or return to your last save's color; both individually and for all colors, thanks to two local and two global master buttons.
