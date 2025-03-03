@@ -6,11 +6,29 @@
 #
 # Modify, redistribute to your liking. Just remember to give credit where due.
 #################################################################################################################
-# 0.13 Update: if your install has the "scripts/FontExtension.py" script (which extends the TGFontManager class with functions which track and return font list and default font) called at the very beginning, now it will fetch Fonts automatically and will ignore manual additions. However, the script still supports 0.12 ("Legacy") manual additions, which the script will fall back to in case of Sovereign's file (or equivalent) not being present.
-# This latter method consists on manually importing a font list from files located at the "extraConfigPath" indicated below. From there people can add fonts.
-# But remember, before adding a new font to this script (or to all scripts, also applies for >= 0.13):
+# === Introduction ===
+# As of version 0.2.5 of the mod, this script provides the following:
+# * Save Config button: do not forget to clik on this button to apply your changes, else they will not be applied nor saved, even if you used a master button to reset to default!
+# * More resistance against certain configuration file errors: if the configuration script finds a missing entry or error on its Saved Config, it will automatically save and re-apply with the proper parameters.
+# * Show/Hide main Hull Bar on the player's Ship Display.
+# * Show/Hide text providing information about main Hull's Integrity:
+#     - Show Percentages will make it display a 0-100% text.
+#     - Show Fraction will add a currentHealth/MaxHealth indicator as well to the bar.
+# * Number of decimals: an entry number which provides the option to allow as many decimals as you want, from none to what you may feasibly want, for both percentages and fractions. NOTE: For ships whose max health is below 1.0, 6 decimals will always be shown for fractions.
+# * Radix separator: whether to use lower comma (,), lower dot (.), apostrophe (') or a representation of middle dot (·, in game as || on certain fonts), as the symbol that separates the integer from the fraction/decimal part (i.e. 2,35 ; 2.25, 2'35 or 2||35). Radix separator may be displayed differently according to the font selected.
+# * Font and Size: currently these allow the player to rapidly choose between the fonts and sizes seen on the "dFont" dictionary (see below code), alongside a customizable size entry (read below for more info)
+#     - If your install has the "FontExtension.py" script (which extends the TGFontManager class with functions which track and return font list and default font) called at the very beginning, now it will fetch Fonts automatically and will ignore manual additions. However, the script still supports 0.12 ("Legacy") manual font additions, which the script will fall back to in case of Sovereign's FontExtension file (or equivalent) not being present or having an error (read "How to manually add more fonts" below for more info).
+# * Interface colors: allows the user to modify several colors from the UI, mainly during QuickBattle. Please take into account that interface color changes may require to abort a mission, change menus or to restart to apply fully. These colors are grouped on categories, to facilitate customization. New colors can also be added as long as they are registered as part of App.py (read "How to add more colors" below for more info). Currently, the default colors you can modify without any extra scripts are stored on the sDefaultColors dictionary. Colors can be modified by:
+#     - Altering thier red (r), green (g), blue (b) and opacity (a) values (which, as of version 0.2.5, go on a [0-1] range).
+#     - Individually re-set to default by individual "Reset to default" buttons.
+#     - Restored back to your last save's config by individual "Reset to last save" buttons.
+#     - Collectively reset or restored through two master buttons: "Reset all colors to default" and "Restore all colors to last save", respectively.
+#
+# === How to manually add more fonts ===
+# If your install resorts to Legacy measures, this method will work. It consists on manually importing a font list from files located at the "extraConfigPath" (see code). From there people can add fonts.
+# But remember, before maually adding a new font to this script (or to all scripts, also applies for >= 0.13):
 # 1. The font file must exist beforehand. For new fonts, a new proper file (like those font files at script/Icons) must have already been created first.
-# 2. That font must have been registered to the App.g_kFontManager, in a not disimilar way to the line used on scripts/Icons/FontsAndIcons.py: "App.g_kFontManager.RegisterFont("Crillee", 5, "Crillee5", "LoadCrillee5")" (first parameter being the font name, second font size, third the actual file located at scripts/Icons/ and finally the function inside that file that actually takes care of loading the new font for that size).
+# 2. That font must have been registered to the App.g_kFontManager, in a not disimilar way to the line used on scripts/Icons/FontsAndIcons.py: "App.g_kFontManager.RegisterFont("Crillee", 5, "Crillee5", "LoadCrillee5")" (first parameter being the font name, second font size, third the actual file path, often located at scripts/Icons/, and finally the function inside that file that actually takes care of loading the new font for that size).
 # Below, we have a legacy example file used for listing the Default fonts that a regular BC Install has into our AccesibiltiyConfig script, on a file called DefaultFonts.py:
 """
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
@@ -29,7 +47,7 @@ dFont = {
 	"Serpentine": [12],
 }
 """
-# From version 0.2 onwards, we can also modify interface colors at a whim, but may require to abort a mission or to restart to apply fully - exception is menu colors, which may have been already pre-loaded before UMM had a chance to change them and may require a resolution change to apply on the Main Menu.
+# === How to add more colors ===
 # As an addition, now we can also link certain pre-defined App.py interface colors (of those defined in scripts/LoadInterface) with additional files, so if, for example, FoundationTech happens to re-use one of those before we had overrode it and prevents us from changing the Hull Gauge colors, we can apply the new changes to those colors too.
 # Below there's a file example of the above, on a file called DefaultExtraFileChecks.py
 """
@@ -59,7 +77,7 @@ extraVariables = {
 """
 #
 MODINFO = { "Author": "\"USS Sovereign\" (mario0085), Noat (noatblok),\"Alex SL Gato\" (andromedavirgoa@gmail.com)",
-	    "Version": "0.22",
+	    "Version": "0.25",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -76,8 +94,9 @@ import traceback
 LCARS = __import__(App.GraphicsModeInfo_GetCurrentMode().GetLcarsModule())
 
 pModule = None
+pModPath = "SavedConfigs.AccessibilityConfigVals"
 try:
-	pModule = __import__("SavedConfigs.AccessibilityConfigVals")
+	pModule = __import__(pModPath)
 except:
 	pModule = None
 
@@ -127,9 +146,11 @@ def SafeConfigStatement(variable, pMyModule, default, issue=0, lowerLimit=None, 
 		issue = issue + 1
 
 	if lowerLimit != None and myVariable < lowerLimit:
+		print "Issue found on ", variable, ": too low"
 		myVariable = lowerLimit
 		issue = issue + 1
 	elif upperLimit != None and myVariable > upperLimit:
+		print "Issue found on ", variable, ": too high"
 		myVariable = upperLimit
 		issue = issue + 1
 
@@ -368,14 +389,14 @@ def LoadExtraLimitedPlugins(dir,dExcludePlugins=_g_dExcludeSomePlugins, ignore=[
 	global dConfig, dRadixNotation, dFont, extraVariables, sDefaultColors
 	if dir == None or dir == "":
 		print "no dir found, calling default"
-		dir="scripts\\Custom\\UnifiedMainMenu\\ConfigModules\\Options\\AccesibilityConfigFiles" # I want to limit any vulnerability as much as I can while keeping functionality
+		dir="scripts\\Custom\\UnifiedMainMenu\\ConfigModules\\Options\\AccesibilityConfigFiles"
 	try:
 		list = nt.listdir(dir)
 		if not list:
-			print "ERROR: Missing scripts/Custom/TravellingMethods folder for AlternateSubModelFTL technology"
+			print "ERROR: Missing ", dir, " for ", __name__
 			return
 	except:
-		print "ERROR: Missing scripts/Custom/TravellingMethods folder for AlternateSubModelFTL technology, or other error:"
+		print "ERROR: Missing ", dir, " for ", __name__, ", or other error:"
 		traceback.print_exc()
 		return		
 
@@ -395,7 +416,6 @@ def LoadExtraLimitedPlugins(dir,dExcludePlugins=_g_dExcludeSomePlugins, ignore=[
 
 		# We don't want to accidentally load wrong things
 		if (extension == "py") and not fileName == "__init__": # I am not allowing people to just use the .pyc directly, I don't want people to not include source scripts - Alex SL Gato
-			#print "AlternateSubModelFTL  script is reviewing " + fileName + " of dir " + dir
 			if dExcludePlugins.has_key(fileName):
 				debug(__name__ + ": Ignoring plugin" + fileName)
 				continue
@@ -449,7 +469,7 @@ def LoadExtraLimitedPlugins(dir,dExcludePlugins=_g_dExcludeSomePlugins, ignore=[
 										extraVariables[colorName][attribToOvr] = djarin
 
 			except:
-				print "someone attempted to add more than they should to the AlternateSubModelFTL script"
+				print "someone attempted to add more than they should to the AccesibilityConfig script"
 				traceback.print_exc()
 
 defaultFont = "Crillee"
@@ -463,7 +483,7 @@ if isTGFontManagerEPresent: # Support for Mario's FontManager extension
 		import bcmm_version
 		isBCMM = 1
 	except:
-		print("No BCMM signature file")
+		print "No BCMM signature file"
 		isBCMM = 0
 	# Ok so, we already know if it's BCMM or not. Now, it may be possible someone backported something from BCMM or made changes similar to BCMM for the same functions
 	fonts = App.g_kFontManager.GetFontList()
@@ -637,31 +657,72 @@ for typeC in sDefaultColors.keys():
 			SetupColor(dConfig["Colors"][colorName][1], colorName, dConfig[colorName + "R COLOR"], dConfig[colorName + "G COLOR"], dConfig[colorName + "B COLOR"], dConfig[colorName + "A COLOR"])
 			ExtrasColorSafety()
 
+listedTypes = list(dConfig["ColorsList"].keys()) 
+listedTypes.sort()
+
 def SaveConfig(pObject, pEvent):
-	file = nt.open(configPath, nt.O_WRONLY | nt.O_TRUNC | nt.O_CREAT | nt.O_BINARY)
-	nt.write(file, "ShowPercent = " + str(dConfig["ShowPercent"]))
-	nt.write(file, "\nShowBar = " + str(dConfig["ShowBar"]))
-	nt.write(file, "\nShowFraction = " + str(dConfig["ShowFraction"]))
-	nt.write(file, "\nNumberDecimals = " + str(dConfig["NumberDecimals"]))
-	nt.write(file, "\nRadixNotation = \"" + str(dConfig["RadixNotation"])+ "\"")
-	nt.write(file, "\nsFont = \"" + str(dConfig["sFont"]) + "\"")
-	nt.write(file, "\nFontSize = " + str(dConfig["FontSize"]))
+	try:
+		file = nt.open(configPath, nt.O_WRONLY | nt.O_TRUNC | nt.O_CREAT | nt.O_BINARY)
+		nt.write(file, "ShowPercent = " + str(dConfig["ShowPercent"]))
+		nt.write(file, "\nShowBar = " + str(dConfig["ShowBar"]))
+		nt.write(file, "\nShowFraction = " + str(dConfig["ShowFraction"]))
+		nt.write(file, "\nNumberDecimals = " + str(dConfig["NumberDecimals"]))
+		nt.write(file, "\nRadixNotation = \"" + str(dConfig["RadixNotation"])+ "\"")
+		nt.write(file, "\nsFont = \"" + str(dConfig["sFont"]) + "\"")
+		nt.write(file, "\nFontSize = " + str(dConfig["FontSize"]))
 
-	global colorsExtraCon
-	colorsExtraCon = extraVariables.keys()
-	for colorName in dConfig["Colors"].keys():
-		nt.write(file, "\n" + str(colorName) + "R = " + str(dConfig[colorName + "R COLOR"]))
-		nt.write(file, "\n" + str(colorName) + "G = " + str(dConfig[colorName + "G COLOR"]))
-		nt.write(file, "\n" + str(colorName) + "B = " + str(dConfig[colorName + "B COLOR"]))
-		nt.write(file, "\n" + str(colorName) + "A = " + str(dConfig[colorName + "A COLOR"]))
+		global colorsExtraCon
+		colorsExtraCon = extraVariables.keys()
+		for colorName in dConfig["Colors"].keys():
+			if dConfig[colorName + "R COLOR"] >= 1.0:
+				dConfig[colorName + "R COLOR"] = 1
+			elif dConfig[colorName + "R COLOR"] <= 0.0:
+				dConfig[colorName + "R COLOR"] = 0
+			if dConfig[colorName + "G COLOR"] >= 1.0:
+				dConfig[colorName + "G COLOR"] = 1
+			elif dConfig[colorName + "G COLOR"] <= 0.0:
+				dConfig[colorName + "G COLOR"] = 0
+			if dConfig[colorName + "B COLOR"] >= 1.0:
+				dConfig[colorName + "B COLOR"] = 1
+			elif dConfig[colorName + "B COLOR"] <= 0.0:
+				dConfig[colorName + "B COLOR"] = 0
+			if dConfig[colorName + "A COLOR"] >= 1.0:
+				dConfig[colorName + "A COLOR"] = 1
+			elif dConfig[colorName + "A COLOR"] <= 0.0:
+				dConfig[colorName + "A COLOR"] = 0				
+			nt.write(file, "\n" + str(colorName) + "R = " + str(dConfig[colorName + "R COLOR"]))
+			nt.write(file, "\n" + str(colorName) + "G = " + str(dConfig[colorName + "G COLOR"]))
+			nt.write(file, "\n" + str(colorName) + "B = " + str(dConfig[colorName + "B COLOR"]))
+			nt.write(file, "\n" + str(colorName) + "A = " + str(dConfig[colorName + "A COLOR"]))
 
-		SetupColor(dConfig["Colors"][colorName][1], colorName, dConfig[colorName + "R COLOR"], dConfig[colorName + "G COLOR"], dConfig[colorName + "B COLOR"], dConfig[colorName + "A COLOR"])
+			SetupColor(dConfig["Colors"][colorName][1], colorName, dConfig[colorName + "R COLOR"], dConfig[colorName + "G COLOR"], dConfig[colorName + "B COLOR"], dConfig[colorName + "A COLOR"])
+			#Extra support for rare cases where somebody already did something with the colors first - i.e. FoundationTech:	
+ 			ExtrasColorSafety(colorsExtraCon)
 
-		#Extra support for rare cases where somebody already did something with the colors first - i.e. FoundationTech:	
- 		ExtrasColorSafety(colorsExtraCon)
 
+		nt.close(file)
+	except:
+		print "AccesibilityConfig: ERROR- COULD NOT SAVE - All changes done may have been applied, but will not save."
+		traceback.print_exc()
 
-	nt.close(file)
+		global colorsExtraCon
+		colorsExtraCon = extraVariables.keys()
+		for colorName in dConfig["Colors"].keys():
+			try:
+				SetupColor(dConfig["Colors"][colorName][1], colorName, dConfig[colorName + "R COLOR"], dConfig[colorName + "G COLOR"], dConfig[colorName + "B COLOR"], dConfig[colorName + "A COLOR"])
+ 				ExtrasColorSafety(colorsExtraCon)
+			except:
+				print "AccesibilityConfig: ERROR- COULD NOT APPLY COLOR CHANGES"
+				traceback.print_exc()
+
+	global pModule
+	if pModule != None:
+		reload(pModule)
+	else:
+		try:
+			pModule = __import__(pModPath)
+		except:
+			pModule = None	
 
 	# Because of shenanigans with menu being available during QB on KM, you can sometimes access modify and save configurations mid-game. We may want to notify other related scripts that this has happened!
 	pEvent = App.TGStringEvent_Create()
@@ -670,11 +731,10 @@ def SaveConfig(pObject, pEvent):
 	pEvent.SetString("SAVED BC ACCESIBILITY")
 	App.g_kEventManager.AddEvent(pEvent)
 
-	print "Calling resolution change event..."
 	# TO-DO EXPERIMENTAL
 	pEvent1 = App.TGStringEvent_Create()
 	pEvent1.SetEventType(App.ET_GRAPHICS_RESOLUTION_REVERT)
-	#pEvent1.SetDestination(None)
+	pEvent1.SetDestination(None)
 	pEvent1.SetString("BC ACCESIBILITY")
 	App.g_kEventManager.AddEvent(pEvent1)
 
@@ -708,7 +768,7 @@ def CreateMenu(pOptionsPane, pContentPanel, bGameEnded = 0):
 	CreateButton("Show Health Percent", pContentPanel, pOptionsPane, pContentPanel, __name__ + ".PercentToggle", isChosen=dConfig["ShowPercent"], isToggle=1)
 	CreateButton("Show Health Fraction", pContentPanel, pOptionsPane, pContentPanel, __name__ + ".FractionToggle", isChosen=dConfig["ShowFraction"], isToggle=1)
 
-	CreateTextEntryButton("Number of decimals: ", pContentPanel, pOptionsPane, pContentPanel, "NumberDecimals", __name__ + ".HandleKeyboardGoBetween")
+	CreateTextEntryButton("Number of decimals: ", pContentPanel, pOptionsPane, pContentPanel, "NumberDecimals", __name__ + ".HandleKeyboardGoBetween", extraIgnore = ".")
 	CreateMultipleChoiceButton("Radix Notation: ", pContentPanel, pOptionsPane, pContentPanel, __name__ + ".SelectNext", "RadixNotation", dRadixNotation, EventInt = 0)
 
 	pFontSubMenu = CreateFontMenu(sBaseFMenu + str(dConfig["sFont"]) + str(sSeparator)+str(dConfig["FontSize"]) , pContentPanel, pOptionsPane, pContentPanel)
@@ -764,8 +824,22 @@ def HandleKeyboardGoBetween(pObject, pEvent):
 		lList = string.split(sNewVal, ".")
 		sNewVal = lList[0] + "." + string.join(lList[1:-1], "")
 		pPara.SetString(sNewVal)
+		pNewVal.SetString(sNewVal)
 
-	if pNewVal.GetCString() != None and pNewVal.GetCString() != "" and pNewVal.GetCString() != "." and pNewVal.GetCString() != ",":
+	if string.count(sNewVal, "-") > 1:
+		lList = string.split(sNewVal, ".")
+		sNewVal = string.join(lList[:-2], "")  + "-" + lList[-1]
+		pPara.SetString(sNewVal)
+		pNewVal.SetString(sNewVal)
+
+	valStr = pNewVal.GetCString()
+
+	if valStr == None or valStr == "" or valStr == "." or valStr == "," or valStr == "-" or valStr == " " or len(valStr) == 0:
+		pNewVal.SetString(str(0))
+		valStr = pNewVal.GetCString()
+		pPara.SetString(str(valStr))
+
+	if valStr != None and valStr != "" and valStr != "." and valStr != ",":
 		myParam = pString.GetCString()
 		myReso = 0
 		if len(myParam) > 7:
@@ -773,17 +847,36 @@ def HandleKeyboardGoBetween(pObject, pEvent):
 			if fidgement == "R COLOR" or fidgement == "G COLOR" or fidgement == "B COLOR" or fidgement == "A COLOR":
 				myReso = 1
 				
-		if myReso == 0:	
-			dConfig[pString.GetCString()] = int(pNewVal.GetCString())
+		if myReso == 0:
+			newPrunedVal = valStr
+			if "." in valStr:
+				newPrunedVal = int(round(float(valStr)))
+				
+			dConfig[pString.GetCString()] = int(newPrunedVal)
+
+			UpdateTextEntryButton(pPara, str(dConfig[pString.GetCString()]))
 			if pString.GetCString() == "sFont" or pString.GetCString() == "FontSize":
 				UpdateFontSubMenu(0)
 		else: # It is a color thing
-			newColor = float(pNewVal.GetCString())
+			newColor = 0
+
+			try:
+				newColor = float(valStr)	
+			except:
+				newColor = float(0)
+
 			if newColor >= 1.0:
 				newColor = 1.0
+			elif newColor <= 0.0:
+				newColor = 0.0
+
 			dConfig[pString.GetCString()] = newColor
 
 			mainInfo = pString.GetCString()[:-7]
+
+			pPara.SetString(str(newColor))
+
+			#UpdateTextEntryButton(pPara, str(newColor))
 
 			pGrandparent = App.STMenu_Cast(pParent.GetConceptualParent()) #App.TGPane_Cast(pParent.GetParent())
 			newContent = ColorMessageFormat(str(mainInfo), dConfig[str(mainInfo + "R COLOR")], dConfig[str(mainInfo + "G COLOR")], dConfig[str(mainInfo + "B COLOR")], dConfig[str(mainInfo + "A COLOR")])
@@ -814,12 +907,12 @@ def ColorMessageFormat(colorName, r, g, b, a):
 	newContent = str(colorName) + ": (" + str(int(r255)) + myDecimalR + "; " + str(int(g255)) + myDecimalG + "; " + str(int(b255)) + myDecimalB + "; " + str(a) + ")"
 	return newContent
 
-def CreateTextEntryButton(sButtonName, pMenu, pOptionPane, pContentPanel, sVar, sFunction, isChosen = 0, isToggle = 0, EventInt = 0, ET_EVENT = None):
-	pTextField  = CreateTextField(App.TGString(sButtonName), sVar, sFunction)
+def CreateTextEntryButton(sButtonName, pMenu, pOptionPane, pContentPanel, sVar, sFunction, isChosen = 0, isToggle = 0, EventInt = 0, ET_EVENT = None, extraIgnore = None):
+	pTextField  = CreateTextField(App.TGString(sButtonName), sVar, sFunction, extraIgnore)
 	pMenu.AddChild(pTextField)
 
 # From Custom\UnifiedMainMenu\ConfigModules\Options\Graphics\NanoFX by MLeoDaalder
-def CreateTextField(pName, sVar, sFunction):
+def CreateTextField(pName, sVar, sFunction,extraIgnore=None):
 	pGraphicsMode = App.GraphicsModeInfo_GetCurrentMode()
 	LCARS = __import__(pGraphicsMode.GetLcarsModule())
 	fMaxWidth = LCARS.MAIN_MENU_CONFIGURE_CONTENT_WIDTH - 0.02
@@ -842,7 +935,11 @@ def CreateTextField(pName, sVar, sFunction):
 	pcLCARS = pGraphicsMode.GetLcarsString()
 
 	pTextEntry = App.TGParagraph_Create (str(dConfig[sVar]))
-	pTextEntry.SetIgnoreString("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ*?\t\\/,<>\"|:;\'\n-+()&^%$#@!`~\n\r")
+	
+	ignoreString = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ*?\t\\/,<>\"|:;\'\n-+()&^%$#@!`~\n\r"
+	if extraIgnore != None and type(extraIgnore) == type("") and len(extraIgnore) > 0:
+		ignoreString = ignoreString + extraIgnore
+	pTextEntry.SetIgnoreString(ignoreString)
 
 	pTextEntry.Resize (fMaxWidth - fWidth, pTextEntry.GetHeight (), 0)
 	pTextEntry.SetReadOnly(0)
@@ -866,7 +963,6 @@ def SelectNext(pObject, pEvent, variable=None, sButtonName=None):
 	if pEvent and hasattr(pEvent, "GetCString"):
 		variable = pEvent.GetCString()
 		if variable != None and dConfig[variable] != None:
-			#print "Called SelectNext for variable ", variable
 			global dConfig
 			pButton = pEvent.GetSource()
 			if not pButton:
@@ -1066,30 +1162,136 @@ def CreateButton(sButtonName, pMenu, pOptionPane, pContentPanel, sFunction, isCh
 
 	return pButton
 
-def ResetDefaultColors(pObject, pEvent):
-	pObject.CallNextHandler(pEvent)
-	colorName = pEvent.GetCString()
+def UpdateTextEntryButton(child, newValue):
+	isCorrect = 0
+	childButPane = App.TGPane_Cast(child)
+	if childButPane:
+		childButSTButton = App.STButton_Cast(childButPane)
+		if not childButSTButton: # Which means it is not a STButton:
+			grandson = childButPane.GetFirstChild()
+			while grandson != None:
+				grandsonPar = App.TGParagraph_Cast(grandson)
+				if grandsonPar:
+					pString = App.TGString()
+					grandsonParStr = grandsonPar.GetString(pString)
+					leStr = pString.GetCString()
+					shouldChange = 0
+					if leStr == "" or leStr == "." or leStr == "," or leStr == "-" or (len(leStr) > 0 and (leStr[0] == "." or leStr[0] == ",")):
+						shouldChange = 1
+					else:
+						try:
+							myVal = float(leStr)
+							if myVal != None:
+								shouldChange = 1
+						except:
+							shouldChange = 0
+									
+					if shouldChange == 1:
+						grandsonPar.SetString(str(newValue))
+						isCorrect = isCorrect + 1
+				grandson = childButPane.GetNextChild(grandson)
+
+			if isCorrect >= 2:
+				isCorrect = 1
+
+	return isCorrect
+
+def parentToSonUpdate(pParent, colorName, style="ColorText"):
+	child = pParent.GetFirstChild()
+	found = 0
+	while child != None:
+		myCol = ""
+		if style == "ColorText":
+			# pParent is the color menu button, which has the r, g, b, a and default buttons, in that order
+			if found == 0:
+				myCol = dConfig[colorName + "R COLOR"]
+			elif found == 1:
+				myCol = dConfig[colorName + "G COLOR"]
+			elif found == 2:
+				myCol = dConfig[colorName + "B COLOR"]
+			elif found == 3:
+				myCol = dConfig[colorName + "A COLOR"]
+		
+			isCorrect = UpdateTextEntryButton(child, myCol)
+			found = found + isCorrect
+		child = pParent.GetNextChild(child)
+
+def ResetDefaultColors(pObject, pEvent, colorName=None, pParent=None, reset=1):
+	ResetToLastSave(pObject, pEvent, colorName, pParent, reset)
+
+def ResetToLastSave(pObject, pEvent, colorName=None, pParent=None, reset=0):
+	if pObject:
+		pObject.CallNextHandler(pEvent)
+	if colorName == None:
+		colorName = pEvent.GetCString()
 
 	if colorName != None and colorName != "" and len(colorName) >= 2:
 		global dConfig
-		dConfig[colorName + "R COLOR"] = dConfig["Colors"][colorName][0][0]
-		dConfig[colorName + "G COLOR"] = dConfig["Colors"][colorName][0][1]
-		dConfig[colorName + "B COLOR"] = dConfig["Colors"][colorName][0][2]
-		dConfig[colorName + "A COLOR"] = dConfig["Colors"][colorName][0][3]
+		if reset == 1:
+			dConfig[colorName + "R COLOR"] = dConfig["Colors"][colorName][0][0]
+			dConfig[colorName + "G COLOR"] = dConfig["Colors"][colorName][0][1]
+			dConfig[colorName + "B COLOR"] = dConfig["Colors"][colorName][0][2]
+			dConfig[colorName + "A COLOR"] = dConfig["Colors"][colorName][0][3]
+		else:
+			localIssues = 0
+			dConfig[colorName + "R COLOR"], localIssues = SafeConfigStatement(colorName + "R", pModule, dConfig["Colors"][colorName][0][0], localIssues, 0, 1)
+			dConfig[colorName + "G COLOR"], localIssues = SafeConfigStatement(colorName + "G", pModule, dConfig["Colors"][colorName][0][1], localIssues, 0, 1)
+			dConfig[colorName + "B COLOR"], localIssues = SafeConfigStatement(colorName + "B", pModule, dConfig["Colors"][colorName][0][2], localIssues, 0, 1)
+			dConfig[colorName + "A COLOR"], localIssues = SafeConfigStatement(colorName + "A", pModule, dConfig["Colors"][colorName][0][3], localIssues, 0, 1)
 
-		pParent = App.STMenu_Cast(pEvent.GetDestination())
+			if localIssues > 0: # I mean, normally this should not happen, but better safe than sorry
+				try:
+					SaveConfig(None, None)
+				except:
+					traceback.print_exc()
 
-		newContent = ColorMessageFormat(str(colorName), dConfig[str(colorName + "R COLOR")], dConfig[str(colorName + "G COLOR")], dConfig[str(colorName + "B COLOR")], dConfig[str(colorName + "A COLOR")])
+		if pParent==None:
+			pParent = App.STMenu_Cast(pEvent.GetDestination())
 
-		UpdateSubMenu(1, pParent, newContent)
+		if pParent != None:
+			parentToSonUpdate(pParent, colorName, style="ColorText")
+
+			newContent = ColorMessageFormat(str(colorName), dConfig[str(colorName + "R COLOR")], dConfig[str(colorName + "G COLOR")], dConfig[str(colorName + "B COLOR")], dConfig[str(colorName + "A COLOR")])
+
+			UpdateSubMenu(1, pParent, newContent)
+
+def parentToSonDefaultUpdate(pParent, valueToFind="Reset to default"):
+	child = pParent.GetFirstChild()
+	while child != None:
+		childButPane = App.TGPane_Cast(child)
+		if childButPane:
+			childButSTButton = App.STButton_Cast(childButPane)
+			if not childButSTButton: # Which means it is not a STButton:
+				parentToSonDefaultUpdate(childButPane, valueToFind)
+			else:
+				if hasattr(childButSTButton, "GetName"):
+					childText = App.TGString()
+					childButSTButton.GetName(childText)
+					sChildText = childText.GetCString()
+					if sChildText != None and sChildText != "" and len(sChildText) > 0 and sChildText == valueToFind:
+						childButSTButton.SendActivationEvent()
+
+		child = pParent.GetNextChild(child)
+
+def ResetAllDefaultColors(pObject, pEvent, valueToFind="Reset to default"):
+	ResetAllSavedColors(pObject, pEvent, valueToFind)
+
+def ResetAllSavedColors(pObject, pEvent, valueToFind="Reset to last save"):
+	if pObject:
+		pObject.CallNextHandler(pEvent)
+
+		pPara = App.TGPane_Cast(pEvent.GetDestination())
+		if pPara:
+			pParaID = pPara.GetObjID()
+			pParent = App.STMenu_Cast(pPara.GetConceptualParent())
+			if pParent:
+				parentToSonDefaultUpdate(pParent, valueToFind)
 
 def CreateColorsMenu(sMenuName, pMenu, pOptionsPane, pContentPanel):
 	pSubMenu = App.STMenu_Create(sMenuName)
 	#pSubMenu.AddPythonFuncHandlerForInstance(ET_SELECT_BUTTON, __name__ + ".HandleSelectButton")
 
-	listedTypes = list(dConfig["ColorsList"].keys()) 
-	listedTypes.sort()
-
+	firstButton = 1
 	for typeC in listedTypes:
 		listedColors = list(dConfig["ColorsList"][typeC].keys())
 		listedColors.sort()
@@ -1098,18 +1300,23 @@ def CreateColorsMenu(sMenuName, pMenu, pOptionsPane, pContentPanel):
 			if pSubSubMenu == None:
 				pSubSubMenu = App.STMenu_Create(typeC) # What type of parameter
 			if pSubSubMenu != None:
+				if firstButton == 1:
+					CreateButton("Restore all colors to last save", pSubMenu, pSubMenu, pSubMenu, __name__ + ".ResetAllSavedColors")
+					CreateButton("Reset all colors to default", pSubMenu, pSubMenu, pSubMenu, __name__ + ".ResetAllDefaultColors")
+					firstButton = 0
+
 				colorNameOnM = ColorMessageFormat(str(colorName), dConfig[str(colorName + "R COLOR")], dConfig[str(colorName + "G COLOR")], dConfig[str(colorName + "B COLOR")], dConfig[str(colorName + "A COLOR")])
 				pSubSub3Menu = App.STMenu_Create(colorNameOnM) # Name of the color parameter
 
 				# Now we append 3 r, g, b, a and a reset to default.
-				# TO-DO MAYBE MAKE THESE 4 BELOW A SLIDING BAR?
+				# A potential suggestion, maybe replace these for slide bars. If so, do not forget to make it so the sliders move to new positions.
 				CreateTextEntryButton("r (red): ", pSubSub3Menu, pOptionsPane, pSubSub3Menu, colorName + "R COLOR", __name__ + ".HandleKeyboardGoBetween")
 				CreateTextEntryButton("g (green): ", pSubSub3Menu, pOptionsPane, pSubSub3Menu, colorName + "G COLOR", __name__ + ".HandleKeyboardGoBetween")
 				CreateTextEntryButton("b (blue): ", pSubSub3Menu, pOptionsPane, pSubSub3Menu, colorName + "B COLOR", __name__ + ".HandleKeyboardGoBetween")
 				CreateTextEntryButton("a (opacity): ", pSubSub3Menu, pOptionsPane, pSubSub3Menu, colorName + "A COLOR", __name__ + ".HandleKeyboardGoBetween")
 
 				CreateButton("Reset to default", pSubSub3Menu, pSubSub3Menu, pSubSub3Menu, __name__ + ".ResetDefaultColors", myString=str(colorName))
-				#CreateButton("Reset to default", pSubSub3Menu, pOptionsPane, pSubSub3Menu, __name__ + ".ResetDefaultColors", myString=str(colorName))
+				CreateButton("Reset to last save", pSubSub3Menu, pSubSub3Menu, pSubSub3Menu, __name__ + ".ResetToLastSave", myString=str(colorName))
 
 				pSubSubMenu.AddChild(pSubSub3Menu)
 

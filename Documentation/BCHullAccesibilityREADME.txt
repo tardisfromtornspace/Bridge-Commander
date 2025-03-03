@@ -1,4 +1,7 @@
 == Changelog ==
+0.2.5:
+    - Fixes and improvements to text entries so you cannot cause more invalid inputs, and more resistant saves.
+    - Added options to reset a color, or return to your last save's color; both individually and for all colors, thanks to two local and two global master buttons.
 0.2.2:
     - Small fix to inputs
 0.2.1: 
@@ -18,19 +21,21 @@ Pre 0.1.0:
 == What does this mod do ==
 The idea of this mod is inspired by the Shield Percentages mod by Defiant. It was originally made pre-2010 with the goal of showing lots of accessibility options, such as for colorblind people.
 The new version also provides the following:
+* Save Config button: do not forget to clik on this button to apply your changes, else they will not be applied nor saved, even if you used a master button to reset to default!
+* More resistance against certain configuration file errors: if the configuration script finds a missing entry or error on its Saved Config, it will automatically save and re-apply with the proper parameters.
 * Show/Hide main Hull Bar on the player's Ship Display.
 * Show/Hide text providing information about main Hull's Integrity:
     - Show Percentages will make it display a 0-100% text.
     - Show Fraction will add a currentHealth/MaxHealth indicator as well to the bar.
-* Number of decimals: an entry number which provides the option to allow as many decimals as you want, from none to what you may feasibly want. NOTE: For ships whose max health is below 1.0, 6 decimals will be shown.
-* Radix separator: whether to use lower comma (,), lower dot (.), apostrophe (') or a representation of middle dot (·, in game as ||), as the symbol that separates the integer from the fraction/decimal part (i.e. 2,35 ; 2.25, 2'35 or 2||35).
+* Number of decimals: an entry number which provides the option to allow as many decimals as you want, from none to what you may feasibly want, for both percentages and fractions. NOTE: For ships whose max health is below 1.0, 6 decimals will always be shown for fractions.
+* Radix separator: whether to use lower comma (,), lower dot (.), apostrophe (') or a representation of middle dot (·, in game as || on certain fonts), as the symbol that separates the integer from the fraction/decimal part (i.e. 2,35 ; 2.25, 2'35 or 2||35). Radix separator may be displayed differently according to the font selected.
 * Font and Size: currently these allow the player to choose between the following fonts and sizes, alongside a customizable size entry:
     - "Crillee": sizes 5, 6, 9, 12 and 15.
     - "LCARSText": 5, 6, 9, 12, 15.
     - "Tahoma": 8, 14.
     - "Arial": 8.
     - "Serpentine": 12.
-* Interface colors: allows the user to modify several colors from the UI during QuickBattle. Colors are modified by altering thier red (r), green (g), blue (b) and opacity (a) values (which, as of version 0.2, go on a [0-1] range), or re-set to default by an individual "Reset to default" buttons. New colors can be added as long as they are registered as part of App.py. Currently, the default colors you can modify without any extra scripts are:
+* Interface colors: allows the user to modify several colors from the UI, mainly during QuickBattle. These colors are grouped on categories, to facilitate customization. Colors are modified by altering thier red (r), green (g), blue (b) and opacity (a) values (which, as of version 0.2.5, go on a [0-1] range), or can be re-set to default by an individual "Reset to default" buttons or restored back to your last save's config by individual "Reset to last save" buttons. All colors can be collectively reset and restored through two master buttons: "Reset all colors to default" and "Restore all colors to last save". New colors can also be added as long as they are registered as part of App.py. Currently, the default colors you can modify without any extra scripts are:
     - "STButton marker colors":
         - "g_kSTButtonMarkerDefault"
         - "g_kSTButtonMarkerHighlighted"
@@ -138,9 +143,6 @@ The new version also provides the following:
         - "g_kMultiplayerButtonPurple"
         - "g_kMultiplayerButtonOrange"
         - "g_kMultiplayerDividerPurple"
-
-* Save Config button: do not forget to clik on this button to apply your changes, else they will not be applied nor saved!
-* More resistance against certain configuration file errors: if the configuration script finds a missing entry on its Saved Config, it will automatically save with the proper parameters.
 
 == Requirements: ==
     - QBAutostart.

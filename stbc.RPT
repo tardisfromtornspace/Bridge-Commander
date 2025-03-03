@@ -7885,3 +7885,19 @@ Call stack:
 Address   Frame
 02020202  0019F530  0000:00000000  (No symbol info found)
 
+//=====================================================
+Current Time: Mon Mar 03 14:08:46 2025
+Exception code: C00000FD STACK_OVERFLOW
+Fault address:  77A98A17 01:00077A17 C:\Windows\SYSTEM32\ntdll.dll
+
+Registers:
+EAX:001C012C
+EBX:001C00EC
+ECX:00000001
+EDX:00000001
+ESI:001C016C
+EDI:00000003
+CS:EIP:0023:77A98A17
+SS:ESP:002B:000A3000  EBP:000A301C
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010202
