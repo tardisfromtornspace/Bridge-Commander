@@ -2,8 +2,8 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
 #         DampeningAOEDefensiveField.py by Alex SL Gato
-#         Version 1.0
-#         27th July 2023
+#         Version 1.1
+#         4th March 2025
 #         Based on scripts\Custom\DS9FX\DS9FXPulsarFX\PulsarManager by USS Sovereign, Inversion Beam and Power Drain Beam 1.0 by MLeo Daalder, Apollo, and Dasher; and GraviticLance by Alex SL Gato, which was based on FiveSecsGodPhaser by USS Frontier, scripts/ftb/Tech/Shields by the FoundationTechnologies team, and scripts/ftb/Tech/FedAblativeArmour by the FoundationTechnologies team. Also based on PhaseCloak.py by MLeo, Apollo and Dasher.
 #         Special Thanks to USS Sovereign for telling me better tips to remove the need of a hardpoint-wise made-up axis.
 #                          
@@ -23,7 +23,7 @@ from bcdebug import debug
 import traceback
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-            "Version": "0.4",
+            "Version": "0.45",
             "License": "LGPL",
             "Description": "Read the small title above for more info"
             }
@@ -33,9 +33,6 @@ MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
 # QuickBattleAddon.corboniteReflector() in Apollo's Advanced Technologies.
 
 try:
-
-	pAllShipsWithTheTech = {} # Has the ship, with the pInstances as keys
-
 	class DicohesiveTechVoidDef(FoundationTech.TechDef):
 
 		#def __init__(self, name):
@@ -51,6 +48,10 @@ try:
 
 			if not pShip:
 				return
+
+			if not pInstance.DicohesiveTechShields.has_key("Systems"):
+				pInstance.DicohesiveTechShields["Systems"] = {}
+
 			# position of the impact
 			kPoint = NiPoint3ToTGPoint3(pEvent.GetObjectHitPoint())
 			fRadius = pEvent.GetRadius()
@@ -58,7 +59,7 @@ try:
 
 			pShields = pShip.GetShields()
 			shieldHitBroken = 0
-			if not pShields or pShields.IsDisabled():
+			if not pShields or pShields.IsDisabled() or not pShields.IsOn():
 				shieldHitBroken = 1
 				pShip.SetVisibleDamageRadiusModifier(1.0)
 				pShip.SetVisibleDamageStrengthModifier(1.0)
@@ -68,7 +69,9 @@ try:
 				if didIDie == 1:
 					pShip.RunDeathScript()
 					return
-            
+
+				pIterator = pShip.StartGetSubsystemMatch(App.CT_SHIP_SUBSYSTEM)
+				pSubsystem = pShip.GetNextSubsystemMatch(pIterator)
 				while pSubsystem:
 					didIDie = self.StoreHurt(pInstance, pSubsystem, shieldHitBroken, fDamage, pShip, fRadius, kPoint)
 					if didIDie == 1:
@@ -79,8 +82,6 @@ try:
 				pShip.EndGetSubsystemMatch(pIterator)
 				return
 			pShields.TurnOn()
-			if not pInstance.__dict__['Dicohesive Tech Shields'].has_key("Systems"):
-				pInstance.__dict__['Dicohesive Tech Shields']["Systems"] = {}
 
 			# get the nearest reference
 			pReferenciado = None
@@ -163,12 +164,12 @@ try:
 				pShip.EndGetSubsystemMatch(pIterator)
 
 		def Heal(self, pInstance, pSubsystem):
-			if not pInstance.__dict__['Dicohesive Tech Shields']["Systems"].has_key(pSubsystem.GetName()):
-				pInstance.__dict__['Dicohesive Tech Shields']["Systems"][pSubsystem.GetName()] = pSubsystem.GetMaxCondition()
-			if pSubsystem.GetCondition() > pInstance.__dict__['Dicohesive Tech Shields']["Systems"][pSubsystem.GetName()]:
-				pInstance.__dict__['Dicohesive Tech Shields']["Systems"][pSubsystem.GetName()] = pSubsystem.GetCondition()
+			if not pInstance.DicohesiveTechShields["Systems"].has_key(pSubsystem.GetName()):
+				pInstance.DicohesiveTechShields["Systems"][pSubsystem.GetName()] = pSubsystem.GetMaxCondition()
+			if pSubsystem.GetCondition() > pInstance.DicohesiveTechShields["Systems"][pSubsystem.GetName()]:
+				pInstance.DicohesiveTechShields["Systems"][pSubsystem.GetName()] = pSubsystem.GetCondition()
 
-			pSubsystem.SetCondition(pInstance.__dict__['Dicohesive Tech Shields']["Systems"][pSubsystem.GetName()])
+			pSubsystem.SetCondition(pInstance.DicohesiveTechShields["Systems"][pSubsystem.GetName()])
 			iChildren = pSubsystem.GetNumChildSubsystems()
 			if iChildren > 0:
 				for iIndex in range(iChildren):
@@ -176,7 +177,7 @@ try:
 					self.Heal(pInstance, pChild)
 
 		def StoreHurt(self, pInstance, pSubsystem, shieldHitBroken, fDamage, pShip, fRadius, kPoint, force=0):
-			pInstance.__dict__['Dicohesive Tech Shields']["Systems"][pSubsystem.GetName()] = pSubsystem.GetCondition()
+			pInstance.DicohesiveTechShields["Systems"][pSubsystem.GetName()] = pSubsystem.GetCondition()
 			if shieldHitBroken == 1 and pSubsystem.IsCritical() and pSubsystem.GetCondition() < fDamage:
 				iamarmoredunderneath = pInstance.__dict__.has_key('Adv Armor Tech')
 				vDifference = NiPoint3ToTGPoint3(pSubsystem.GetPosition())
@@ -213,7 +214,6 @@ try:
 			debug(__name__ + ", Attach")
 			pShip = App.ShipClass_Cast(App.TGObject_GetTGObjectPtr(pInstance.pShipID))
 			if pShip != None:
-				global pAllShipsWithTheTech
 
 				#pGame = App.Game_GetCurrentGame()
 				#pEpisode = pGame.GetCurrentEpisode()
@@ -232,8 +232,8 @@ try:
 				#	pShip = pGame.GetPlayer()
 				#	pGame.SetPlayer(pShip)
 
-				dMasterDict = pInstance.__dict__['Dicohesive Tech Shields']
-				pAllShipsWithTheTech[pInstance] = pShip
+
+				pInstance.DicohesiveTechShields = {}
 
 				pShip.SetInvincible(1)
 				pHull=pShip.GetHull()
@@ -263,6 +263,9 @@ try:
 					pShip.RemoveHandlerForInstance(App.ET_CLOAK_COMPLETED, __name__ + ".CloakHandler")
 					pShip.RemoveHandlerForInstance(App.ET_CLOAK_BEGINNING, __name__ + ".CloakHandler")
 					pShip.RemoveHandlerForInstance(App.ET_DECLOAK_BEGINNING, __name__ + ".DecloakHandler")
+
+			if hasattr(pInstance, "DicohesiveTechShields"):
+				del pInstance.DicohesiveTechShields
 
 		# def Activate(self):
 		# 	FoundationTech.oWeaponHit.Start()

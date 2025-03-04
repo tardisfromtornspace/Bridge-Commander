@@ -266,13 +266,27 @@ def convertToString(iExact, numDec, radNot):
 	pExactPart = ""
 	auxPercString = ""
 	iDec = "0"
-	pLittlePart = string.split(str(iExact), "e")
-	if len(pLittlePart) > 2:
+	ipExact = str(repr(iExact))
+	iHugeOrMicro = 0
+	
+	if "e" in ipExact:
+		iHugeOrMicro = 1
+
+	if iHugeOrMicro:
+		pLittlePart = string.split(str(repr(iExact)), "e")
 		pExactPart = string.split(str(pLittlePart[0]), ".")
 		pFullDec = string.join(pExactPart[:], "")
 		auxPercString = "0"
-		iPowerReverse = abs(int(pLittlePart[1]))
-		iDec = string.zfill(string.zfill(pFullDec, iPowerReverse-1), numDec)[:(numDec+1)] 
+		iPowerReverse = int(pLittlePart[1])
+		if iPowerReverse < 0:
+			iDec = string.zfill(string.zfill(pFullDec, len(pFullDec)+abs(iPowerReverse)-1), numDec+1)[:(numDec+1)]
+
+		else:
+			currRelA = string.ljust(pFullDec, abs(iPowerReverse)+1)
+			currRelB = string.replace(currRelA, " ", "0")
+			auxPercString = currRelB[:(iPowerReverse+1)]
+			iDec = string.replace(string.ljust(currRelB[(iPowerReverse+1):], numDec)[:(numDec)], " ", "0")
+			
 	else:
 		pExactPart = string.split(str(iExact), ".")
 		auxPercString = pExactPart[0]
