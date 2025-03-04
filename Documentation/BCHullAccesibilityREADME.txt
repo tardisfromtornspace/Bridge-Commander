@@ -1,4 +1,7 @@
 == Changelog ==
+0.4:
+    - Severel interface improvements, among them the option to make the % and fraction go on the same line or separate ones.
+    - Fixed non-alignment resize bugs that happened when switching to ships or other configs that had noticeably different string lengths.
 0.3:
     - Made Hull Gauge text work better for huge and tiny numbers.
 0.2.6:
@@ -31,6 +34,7 @@ The new version also provides the following:
 * Show/Hide text providing information about main Hull's Integrity:
     - Show Percentages will make it display a 0-100% text.
     - Show Fraction will add a currentHealth/MaxHealth indicator as well to the bar.
+    - Additionally, you can choose if % and fraction go on the same line, or separate lines.
 * Number of decimals: an entry number which provides the option to allow as many decimals as you want, from none to what you may feasibly want, for both percentages and fractions. NOTE: For ships whose max health is below 1.0, 6 decimals will always be shown for fractions.
 * Radix separator: whether to use lower comma (,), lower dot (.), apostrophe (') or a representation of middle dot (·, in game as || on certain fonts), as the symbol that separates the integer from the fraction/decimal part (i.e. 2,35 ; 2.25, 2'35 or 2||35). Radix separator may be displayed differently according to the font selected.
 * Font and Size: currently these allow the player to choose between the following fonts and sizes, alongside a customizable size entry:

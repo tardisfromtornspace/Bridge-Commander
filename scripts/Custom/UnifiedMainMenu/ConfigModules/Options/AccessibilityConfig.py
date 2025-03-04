@@ -14,6 +14,7 @@
 # * Show/Hide text providing information about main Hull's Integrity:
 #     - Show Percentages will make it display a 0-100% text.
 #     - Show Fraction will add a currentHealth/MaxHealth indicator as well to the bar.
+#     - Additionally, you can choose if % and fraction go on the same line, or separate lines.
 # * Number of decimals: an entry number which provides the option to allow as many decimals as you want, from none to what you may feasibly want, for both percentages and fractions. NOTE: For ships whose max health is below 1.0, 6 decimals will always be shown for fractions.
 # * Radix separator: whether to use lower comma (,), lower dot (.), apostrophe (') or a representation of middle dot (·, in game as || on certain fonts), as the symbol that separates the integer from the fraction/decimal part (i.e. 2,35 ; 2.25, 2'35 or 2||35). Radix separator may be displayed differently according to the font selected.
 # * Font and Size: currently these allow the player to rapidly choose between the fonts and sizes seen on the "dFont" dictionary (see below code), alongside a customizable size entry (read below for more info)
@@ -77,7 +78,7 @@ extraVariables = {
 """
 #
 MODINFO = { "Author": "\"USS Sovereign\" (mario0085), Noat (noatblok),\"Alex SL Gato\" (andromedavirgoa@gmail.com)",
-	    "Version": "0.26",
+	    "Version": "0.4",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -571,6 +572,7 @@ else:
 dConfig["ShowPercent"], issues = SafeConfigStatement("ShowPercent", pModule, 0, issues, 0, 1)
 dConfig["ShowBar"], issues = SafeConfigStatement("ShowBar", pModule, 1, issues, 0, 1)
 dConfig["ShowFraction"], issues = SafeConfigStatement("ShowFraction", pModule, 0, issues, 0, 1)
+dConfig["SeparateFraction"], issues = SafeConfigStatement("SeparateFraction", pModule, 0, issues, 0, 1)
 
 dConfig["NumberDecimals"], issues = SafeConfigStatement("NumberDecimals", pModule, 0, issues, 0)
 dConfig["RadixNotation"], issues = SafeConfigStatement("RadixNotation", pModule, ".", issues)
@@ -665,6 +667,7 @@ def SaveConfig(pObject, pEvent):
 		nt.write(file, "ShowPercent = " + str(dConfig["ShowPercent"]))
 		nt.write(file, "\nShowBar = " + str(dConfig["ShowBar"]))
 		nt.write(file, "\nShowFraction = " + str(dConfig["ShowFraction"]))
+		nt.write(file, "\nSeparateFraction = " + str(dConfig["SeparateFraction"]))
 		nt.write(file, "\nNumberDecimals = " + str(dConfig["NumberDecimals"]))
 		nt.write(file, "\nRadixNotation = \"" + str(dConfig["RadixNotation"])+ "\"")
 		nt.write(file, "\nsFont = \"" + str(dConfig["sFont"]) + "\"")
@@ -766,6 +769,7 @@ def CreateMenu(pOptionsPane, pContentPanel, bGameEnded = 0):
 	CreateButton("Show Health Bar", pContentPanel, pOptionsPane, pContentPanel, __name__ + ".BarToggle", isChosen=dConfig["ShowBar"], isToggle=1)
 	CreateButton("Show Health Percent", pContentPanel, pOptionsPane, pContentPanel, __name__ + ".PercentToggle", isChosen=dConfig["ShowPercent"], isToggle=1)
 	CreateButton("Show Health Fraction", pContentPanel, pOptionsPane, pContentPanel, __name__ + ".FractionToggle", isChosen=dConfig["ShowFraction"], isToggle=1)
+	CreateButton("Show Hull HP % and Fraction on different lines", pContentPanel, pOptionsPane, pContentPanel, __name__ + ".FractionSprToggle", isChosen=dConfig["SeparateFraction"], isToggle=1)
 
 	CreateTextEntryButton("Number of decimals: ", pContentPanel, pOptionsPane, pContentPanel, "NumberDecimals", __name__ + ".HandleKeyboardGoBetween", extraIgnore = ".")
 	CreateMultipleChoiceButton("Radix Notation: ", pContentPanel, pOptionsPane, pContentPanel, __name__ + ".SelectNext", "RadixNotation", dRadixNotation, EventInt = 0)
@@ -778,7 +782,6 @@ def CreateMenu(pOptionsPane, pContentPanel, bGameEnded = 0):
 	return App.TGPane_Create(0,0)
 
 def BarToggle(object, event):
-	#global ShowBar
 	global dConfig
 	dConfig["ShowBar"] = not dConfig["ShowBar"]
 	App.STButton_Cast(event.GetSource()).SetChosen(dConfig["ShowBar"]) # Found method to get the button from BridgePlugin.py
@@ -789,7 +792,6 @@ def BarToggle(object, event):
 
 
 def PercentToggle(object, event):
-	#global ShowPercent
 	global dConfig
 	dConfig["ShowPercent"] = not dConfig["ShowPercent"]
 	App.STButton_Cast(event.GetSource()).SetChosen(dConfig["ShowPercent"])
@@ -799,10 +801,18 @@ def PercentToggle(object, event):
 		ResetButtonString(None, pSaveButton, sSaveNotSaved)
 
 def FractionToggle(object, event):
-	#global ShowFraction
 	global dConfig
 	dConfig["ShowFraction"] = not dConfig["ShowFraction"]
 	App.STButton_Cast(event.GetSource()).SetChosen(dConfig["ShowFraction"])
+
+	global pSaveButton
+	if pSaveButton:
+		ResetButtonString(None, pSaveButton, sSaveNotSaved)
+
+def FractionSprToggle(object, event):
+	global dConfig
+	dConfig["SeparateFraction"] = not dConfig["SeparateFraction"]
+	App.STButton_Cast(event.GetSource()).SetChosen(dConfig["SeparateFraction"])
 
 	global pSaveButton
 	if pSaveButton:

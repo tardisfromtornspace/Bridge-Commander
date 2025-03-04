@@ -1,10 +1,11 @@
 ShowPercent = 1
 ShowBar = 1
 ShowFraction = 1
+SeparateFraction = 1
 NumberDecimals = 2
 RadixNotation = ","
 sFont = "Crillee"
-FontSize = 6
+FontSize = 5
 g_kSTMenu1HighlightedBaseR = 0.552941203117
 g_kSTMenu1HighlightedBaseG = 0.745098054409
 g_kSTMenu1HighlightedBaseB = 0.92549020052

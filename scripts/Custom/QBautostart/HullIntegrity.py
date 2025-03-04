@@ -8,7 +8,7 @@
 #################################################################################################################
 #
 MODINFO = { "Author": "\"USS Sovereign\" (mario0085), Noat (noatblok),\"Alex SL Gato\" (andromedavirgoa@gmail.com)",
-	    "Version": "0.3",
+	    "Version": "0.4",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -39,6 +39,7 @@ globalVarList = {
 	"ShowPercent" : 0,
 	"ShowBar" : 1,
 	"ShowFraction" : 0,
+	"SeparateFraction": 0,
 	"NumberDecimals" : 0,
 	"RadixNotation" : ".",
 	"sFont" : "Crillee",
@@ -345,6 +346,43 @@ class Watcher:
 				if globalVarList["NumberDecimals"] > 0:
 					auxPercString = convertToString(self.iExact, globalVarList["NumberDecimals"], str(globalVarList["RadixNotation"]))
 
+				infoString = infoString + auxPercString + "% "
+				if not globalVarList["ShowFraction"]:
+					infoString = ":          " + infoString
+				else:
+					if globalVarList["SeparateFraction"] > 0:
+						infoString = "Integrity : " + infoString
+					else:
+						infoString = ": " + infoString
+
+			if globalVarList["ShowFraction"]:
+				if self.fHullMax <= 1.0 and globalVarList["NumberDecimals"] < 6:
+					signifDec = 6
+				else:
+					signifDec = globalVarList["NumberDecimals"]
+
+				sCurrHull = convertToString(self.fHullCurr, signifDec, str(globalVarList["RadixNotation"]))
+				sMaxHull = convertToString(self.fHullMax, signifDec, str(globalVarList["RadixNotation"]))
+
+				auxString = str(sCurrHull) + "/" + str(sMaxHull)
+				if globalVarList["ShowPercent"]:
+					if globalVarList["SeparateFraction"] > 0:
+						auxString = "\nHull Strength : " + auxString + " "
+					else:
+						auxString = " (" + auxString + ")"
+				else:
+					auxString = ": " + auxString + " "
+				infoString = infoString + "" + auxString
+
+			if globalVarList["ShowFraction"] or globalVarList["ShowPercent"]:			
+				pText.SetString("Hull " + infoString)
+
+			"""
+			if globalVarList["ShowPercent"]:
+				auxPercString = ""
+				if globalVarList["NumberDecimals"] > 0:
+					auxPercString = convertToString(self.iExact, globalVarList["NumberDecimals"], str(globalVarList["RadixNotation"]))
+
 				infoString = infoString + auxPercString + "%"
 				if not globalVarList["ShowFraction"]:
 					infoString = "          " + infoString
@@ -366,6 +404,7 @@ class Watcher:
 
 			if globalVarList["ShowFraction"] or globalVarList["ShowPercent"]:			
 				pText.SetString("Hull :" + infoString)
+			"""
 
 		global pHealth
 
@@ -413,8 +452,42 @@ class Watcher:
 					newWidth = pText.GetWidth() * 1.05
 				extraHeight = pText.GetHeight()
 
+			itsMin = pDisplay.IsMinimized()
+
+			beforeX = 0
+			beforeY = 0
+
+			if itsMin:
+				minimizedPos = App.NiPoint2(0, 0)
+				pDisplay.GetPosition(minimizedPos)
+				beforeX = minimizedPos.x
+				beforeY = minimizedPos.y
+
+				pDisplay.SetNotMinimized(1)
+				
 			pDisplay.SetFixedSize(newWidth, (pOriginalHeight + extraHeight))
 			pHealth.Resize(pDisplay.GetMaximumInteriorWidth(), pHealth.GetHeight(), 0)
 
 			pDisplay.InteriorChangedSize()
-			#pDisplay.Layout()
+
+			pDisplay.Layout()
+
+			pWepCon = pTCW.GetWeaponsControl()
+			if pWepCon:
+				if not itsMin:
+					minimizedPos = App.NiPoint2(0, 0)
+					pDisplay.GetPosition(minimizedPos)		
+					beforeX = minimizedPos.x
+					beforeY = minimizedPos.y
+
+				pDisplay.AlignTo(pWepCon, App.TGUIObject.ALIGN_UL, App.TGUIObject.ALIGN_UR)
+				
+			minimizedPos2 = App.NiPoint2(0, 0)
+			pDisplay.GetPosition(minimizedPos2)		
+			afterX = minimizedPos2.x
+			afterY = minimizedPos2.y
+
+			if itsMin:
+				pDisplay.SetMinimized(1)
+
+			pDisplay.SetPosition(afterX, beforeY, 0)
