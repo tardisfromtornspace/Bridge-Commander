@@ -1,8 +1,11 @@
 == Changelog ==
-0.4:
-    - Severel interface improvements, among them the option to make the % and fraction go on the same line or separate ones.
+0.4.2:
+    - Certain fixes and modifications on AccesibilityConfig and some of its extra files to allow customization to work for whips with AblativeArmour ftb Tech.
+    - Temporarily disabled function that allows players to instantly change the player's own hull gauge colors mid-QB, due to conflicts with other techs that depend on FoundationTech's Gauge. Customization of the Gauge itself has not been modified.
+0.4.0:
+    - Several interface improvements, among them the option to make the % and fraction go on the same line or separate ones.
     - Fixed non-alignment resize bugs that happened when switching to ships or other configs that had noticeably different string lengths.
-0.3:
+0.3.0:
     - Made Hull Gauge text work better for huge and tiny numbers.
 0.2.6:
     - Removed a "import Foundation" statement that was doing nothing on the AccesibilityConfig.py

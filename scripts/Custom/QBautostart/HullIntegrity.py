@@ -8,7 +8,7 @@
 #################################################################################################################
 #
 MODINFO = { "Author": "\"USS Sovereign\" (mario0085), Noat (noatblok),\"Alex SL Gato\" (andromedavirgoa@gmail.com)",
-	    "Version": "0.4",
+	    "Version": "0.42",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -88,13 +88,14 @@ def RefreshConfig(pObject, pEvent):
 	if not pHealth:
 		return
 
-	kFillColor = App.TGColorA()
-	kFillColor.SetRGBA(App.g_kSubsystemFillColor.r, App.g_kSubsystemFillColor.g, App.g_kSubsystemFillColor.b, App.g_kSubsystemFillColor.a)
-	kEmptyColor = App.TGColorA()
-	kEmptyColor.SetRGBA(App.g_kSubsystemEmptyColor.r, App.g_kSubsystemEmptyColor.g, App.g_kSubsystemEmptyColor.b, App.g_kSubsystemEmptyColor.a)
+	# Commented, it may accidentally affect ablativeArmours...
+	#kFillColor = App.TGColorA()
+	#kFillColor.SetRGBA(App.g_kSubsystemFillColor.r, App.g_kSubsystemFillColor.g, App.g_kSubsystemFillColor.b, App.g_kSubsystemFillColor.a)
+	#kEmptyColor = App.TGColorA()
+	#kEmptyColor.SetRGBA(App.g_kSubsystemEmptyColor.r, App.g_kSubsystemEmptyColor.g, App.g_kSubsystemEmptyColor.b, App.g_kSubsystemEmptyColor.a)
 
-	pHealth.SetFillColor(kFillColor)
-	pHealth.SetEmptyColor(kEmptyColor)
+	#pHealth.SetFillColor(kFillColor)
+	#pHealth.SetEmptyColor(kEmptyColor)
 
 	firstTime = 1
 	# This line hides the health gauge which is replaced by the percentage text
@@ -203,13 +204,15 @@ def init():
 	if globalVarList["ShowBar"] == 0:
 		pHealth.SetNotVisible(0)
 
-	kFillColor = App.TGColorA()
-	kFillColor.SetRGBA(App.g_kSubsystemFillColor.r, App.g_kSubsystemFillColor.g, App.g_kSubsystemFillColor.b, App.g_kSubsystemFillColor.a)
-	kEmptyColor = App.TGColorA()
-	kEmptyColor.SetRGBA(App.g_kSubsystemEmptyColor.r, App.g_kSubsystemEmptyColor.g, App.g_kSubsystemEmptyColor.b, App.g_kSubsystemEmptyColor.a)
 
-	pHealth.SetFillColor(kFillColor)
-	pHealth.SetEmptyColor(kEmptyColor)	
+	# Commented, it may accidentally affect ablativeArmours...
+	#kFillColor = App.TGColorA()
+	#kFillColor.SetRGBA(App.g_kSubsystemFillColor.r, App.g_kSubsystemFillColor.g, App.g_kSubsystemFillColor.b, App.g_kSubsystemFillColor.a)
+	#kEmptyColor = App.TGColorA()
+	#kEmptyColor.SetRGBA(App.g_kSubsystemEmptyColor.r, App.g_kSubsystemEmptyColor.g, App.g_kSubsystemEmptyColor.b, App.g_kSubsystemEmptyColor.a)
+
+	#pHealth.SetFillColor(kFillColor)
+	#pHealth.SetEmptyColor(kEmptyColor)	
 
 	global pOriginalWidth, pOriginalHeight
 	pOriginalWidth = pDisplay.GetWidth()
@@ -421,6 +424,7 @@ class Watcher:
 			pHealth.SetVisible(0)
 
 		global firstTime
+
 		if firstTime > 0:
 			pTCW = App.TacticalControlWindow_GetTacticalControlWindow()
 			if not pTCW:
@@ -432,13 +436,14 @@ class Watcher:
 
 			firstTime = 0
 
-			kFillColor = App.TGColorA()
-			kFillColor.SetRGBA(App.g_kSubsystemFillColor.r, App.g_kSubsystemFillColor.g, App.g_kSubsystemFillColor.b, App.g_kSubsystemFillColor.a)
-			kEmptyColor = App.TGColorA()
-			kEmptyColor.SetRGBA(App.g_kSubsystemEmptyColor.r, App.g_kSubsystemEmptyColor.g, App.g_kSubsystemEmptyColor.b, App.g_kSubsystemEmptyColor.a)
+			# Commented, it may accidentally affect ablativeArmours...
+			#kFillColor = App.TGColorA()
+			#kFillColor.SetRGBA(App.g_kSubsystemFillColor.r, App.g_kSubsystemFillColor.g, App.g_kSubsystemFillColor.b, App.g_kSubsystemFillColor.a)
+			#kEmptyColor = App.TGColorA()
+			#kEmptyColor.SetRGBA(App.g_kSubsystemEmptyColor.r, App.g_kSubsystemEmptyColor.g, App.g_kSubsystemEmptyColor.b, App.g_kSubsystemEmptyColor.a)
 
-			pHealth.SetFillColor(kFillColor)
-			pHealth.SetEmptyColor(kEmptyColor)
+			#pHealth.SetFillColor(kFillColor)
+			#pHealth.SetEmptyColor(kEmptyColor)
 
 			#if pText != None:
 			#	kTFillColor = App.TGColorA()

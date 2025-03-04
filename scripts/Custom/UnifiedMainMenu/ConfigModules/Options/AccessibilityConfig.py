@@ -1,7 +1,7 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL LICENSE AS WELL
 # AccesibilityConfig.py
-# 3rd March 2025, by USS Sovereign, and tweaked by Noat and Alex SL Gato (CharaToLoki)
+# 5th March 2025, by USS Sovereign, and tweaked by Noat and Alex SL Gato (CharaToLoki)
 #         Inspired by the Shield Percentages mod by Defiant. It was originally made pre-2010 with the goal of showing lots of accessibility options, such as for colorblind people.
 #
 # Modify, redistribute to your liking. Just remember to give credit where due.
@@ -55,14 +55,14 @@ dFont = {
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL LICENSE AS WELL
 # DefaultExtraFileChecks.py
-# 2nd March 2025, by Alex SL Gato (CharaToLoki)
-# Version: 1.0
+# 5th March 2025, by Alex SL Gato (CharaToLoki)
+# Version: 1.1
 # Meant to be used alongside the AccesibilityConfig UMM option (located at scripts/Custom/UnifiedMainMenu/ConfigModules/Options/), this file must be under scripts/Custom/UnifiedMainMenu/ConfigModules/Options/AccesibilityConfigFiles
 ##################################
 # This file takes care of listing the variable colors which are modified in other files and used instead of regular colors, like FoundationTech's Hull Gauge tech
 extraVariables = {
-	"g_kSubsystemFillColor" : {"kHullFillColor" : "FoundationTech"}, # Variable which is also defined somewhere - attribute name - path to that file 
-	"g_kSubsystemEmptyColor" : {"kHullEmptyColor" : "FoundationTech"},
+	"g_kSubsystemFillColor" : {"kHullFillColor" : ["FoundationTech"], "kEmptyColor": ["ftb.Tech.AblativeArmour", "Custom.Techs.AblativeArmour"]}, # Variable which is also defined somewhere - attribute name - path to that file. Multiple paths can exist, then you make it as a list ["path1", "path2"]
+	"g_kSubsystemEmptyColor" : {"kHullEmptyColor" : ["FoundationTech"]},
 }
 # If we were to add extra App. colors, we can also add the following, as long as those colors exist or are registered on App.py
 #sDefaultColors = { # Colors from App.py
@@ -78,7 +78,7 @@ extraVariables = {
 """
 #
 MODINFO = { "Author": "\"USS Sovereign\" (mario0085), Noat (noatblok),\"Alex SL Gato\" (andromedavirgoa@gmail.com)",
-	    "Version": "0.4",
+	    "Version": "0.42",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -103,8 +103,8 @@ except:
 configPath = "scripts\\Custom\\UnifiedMainMenu\\ConfigModules\\Options\\SavedConfigs\\AccessibilityConfigVals.py"
 extraConfigPath = "scripts\\Custom\\UnifiedMainMenu\\ConfigModules\\Options\\AccesibilityConfigFiles"
 extraVariables = {
-	"g_kSubsystemFillColor" : {"kHullFillColor" : "FoundationTech"}, # Variable which is also defined somewhere - attribute name - path to that file 
-	"g_kSubsystemEmptyColor" : {"kHullEmptyColor" : "FoundationTech"},
+	"g_kSubsystemFillColor" : {"kHullFillColor" : ["FoundationTech"], "kEmptyColor": ["ftb.Tech.AblativeArmour", "Custom.Techs.AblativeArmour"]},
+	"g_kSubsystemEmptyColor" : {"kHullEmptyColor" : ["FoundationTech"]},
 }
 
 ET_SAVED_CONFIG = App.UtopiaModule_GetNextEventType() # You may wonder, ¿why? Because it is actually possible to play a mission and have access to the Customize configurations on the fly as long as the last Configure Window you opened was Customize
@@ -329,20 +329,20 @@ _g_dExcludeSomePlugins = {
 }
 
 # The original method was huge and could be simplified
-def FuseTwoLists(l1, l2):
+def FuseTwoLists(l1, l2, desiredType = 1):
 	
-	def gen_dict(*args):
+	def gen_dict(desiredType=1, *args):
 		d = {}
 		for k in args:
 			if type(k) == type([]):
 				for item in k:
-					if type(item) == type(1):
+					if type(item) == type(desiredType):
 						d[item] = item
-			elif type(k) == type(1):
+			elif type(k) == type(desiredType):
 				d[item] = item
 
 		return d.keys()
-	result = list(gen_dict(l1, l2))
+	result = list(gen_dict(desiredType, l1, l2))
 	result.sort()
 	return result
 """
@@ -444,10 +444,14 @@ def LoadExtraLimitedPlugins(dir,dExcludePlugins=_g_dExcludeSomePlugins, ignore=[
 							if type(banana.extraVariables[colorName]) == type({}):
 								for attribToOvr in banana.extraVariables[colorName].keys():
 									djarin = banana.extraVariables[colorName][attribToOvr]
-									if djarin != None and type(djarin) != type([]) and type(djarin) != type({}):
+									if djarin != None and type(djarin) != type({}):
 										if not extraVariables.has_key(colorName):
 											extraVariables[colorName] = {}
-										extraVariables[colorName][attribToOvr] = djarin
+
+										if not extraVariables[colorName].has_key(attribToOvr):
+											extraVariables[colorName][attribToOvr] = []
+
+										extraVariables[colorName][attribToOvr] = FuseTwoLists(extraVariables[colorName][attribToOvr], djarin, "a")
 
 					if hasattr(banana, "sDefaultColors") and not "sDefaultColors" in ignore:
 						for category in banana.sDefaultColors.keys():
@@ -457,17 +461,6 @@ def LoadExtraLimitedPlugins(dir,dExcludePlugins=_g_dExcludeSomePlugins, ignore=[
 										if not sDefaultColors.has_key(category):
 											sDefaultColors[category] = {}
 										sDefaultColors[category][colorName] = []
-									
-
-						for colorName in banana.extraVariables.keys():
-							if type(banana.extraVariables[colorName]) == type({}):
-								for attribToOvr in banana.extraVariables[colorName].keys():
-									djarin = banana.extraVariables[colorName][attribToOvr]
-									if djarin != None and type(djarin) != type([]) and type(djarin) != type({}):
-										if not extraVariables.has_key(colorName):
-											extraVariables[colorName] = {}
-										extraVariables[colorName][attribToOvr] = djarin
-
 			except:
 				print "someone attempted to add more than they should to the AccesibilityConfig script"
 				traceback.print_exc()
@@ -615,6 +608,7 @@ def GetColors(kColor):
 
 dConfig["Colors"] = {}
 dConfig["ColorsList"] = {}
+
 colorsExtraCon = extraVariables.keys()
 
 def ExtrasColorSafety(colorsExtraCons=colorsExtraCon):
@@ -622,13 +616,20 @@ def ExtrasColorSafety(colorsExtraCons=colorsExtraCon):
 			try:
 				for attribToOvr in extraVariables[colorName].keys():
 					try:
-						pathToImport = extraVariables[colorName][attribToOvr]
-						pear = __import__(pathToImport)
-						if pear:
-							if hasattr(pear, attribToOvr):
-								leAttrib = getattr(pear, attribToOvr)
-								if leAttrib != None:
-									SetupColor(leAttrib, colorName, dConfig[colorName + "R COLOR"], dConfig[colorName + "G COLOR"], dConfig[colorName + "B COLOR"], dConfig[colorName + "A COLOR"])
+						pathsToImport = extraVariables[colorName][attribToOvr]
+						for pathToImport in pathsToImport:
+							pear = None
+							try:
+								pear = __import__(pathToImport)
+							except:
+								pear = None
+							if pear:
+								if hasattr(pear, attribToOvr):
+									leAttrib = getattr(pear, attribToOvr)
+									if leAttrib != None:
+										SetupColor(leAttrib, colorName, dConfig[colorName + "R COLOR"], dConfig[colorName + "G COLOR"], dConfig[colorName + "B COLOR"], dConfig[colorName + "A COLOR"])
+							#else:
+							#	print "AccesibilityConfig INFO:", pathToImport, " not found."
 					except:
 						print "AccesibilityConfig: Error while saving an extra considered color config:"
 						traceback.print_exc()
@@ -752,7 +753,7 @@ def SaveConfig(pObject, pEvent):
 		pSequence.Play()
 
 if issues > 0:
-	print "Re-applying a safe save Accesibility Config"
+	print "Re-applying a safe Accesibility Config save"
 	try:
 		SaveConfig(None, None)
 	except:
