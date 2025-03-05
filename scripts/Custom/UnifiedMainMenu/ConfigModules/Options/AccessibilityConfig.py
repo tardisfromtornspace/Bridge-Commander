@@ -76,9 +76,43 @@ extraVariables = {
 #	},
 #}
 """
+#Another example, where we add a new variable for a new tech called TranscendentalRodiniumArmor which has its own gauge, can be seen here:
+"""
+# THIS FILE IS NOT SUPPORTED BY ACTIVISION
+# THIS FILE IS UNDER THE LGPL LICENSE AS WELL
+# CustomTechsTranscendentalRodiniumArmorExtras.py
+# 5th March 2025, by Alex SL Gato (CharaToLoki)
+# Version: 1.1
+# Meant to be used alongside the AccesibilityConfig UMM option (located at scripts/Custom/UnifiedMainMenu/ConfigModules/Options/), this file must be under scripts/Custom/UnifiedMainMenu/ConfigModules/Options/AccesibilityConfigFiles
+##################################
+# This file takes care of listing the variable colors which are modified in other files and used instead of regular colors, like FoundationTech's Hull Gauge tech
+extraVariables = {
+	"g_kSubsystemFillColor" : {"kEmptyColor": ["Custom.Techs.TranscendentalRodiniumArmor"]},
+	"CustomTechsTranscendentalRodiniumArmorFill" : {"kFillColor": ["Custom.Techs.TranscendentalRodiniumArmor"]},
+}
+# If we were to add extra App. colors, we can also add the following, as long as those colors exist or are registered on App.py
+# If they are not registered on App.py then we register them ourselves!
+import App
+AblativeArmour = None
+try:
+	AblativeArmour = __import__("Custom.Techs.TranscendentalRodiniumArmor")
+except:
+	AblativeArmour = None
+
+if AblativeArmour != None:
+	App.CustomTechsTranscendentalRodiniumArmorFill = AblativeArmour.kFillColor
+
+sDefaultColors = { # Colors from App.py
+	# We could add it to a pre-existing category, like STButton marker colors.
+	# Or maybe a new one
+	"Foundation Technologies' colors" : {
+		"CustomTechsTranscendentalRodiniumArmorFill": [None, []],
+	},
+}
+"""
 #
 MODINFO = { "Author": "\"USS Sovereign\" (mario0085), Noat (noatblok),\"Alex SL Gato\" (andromedavirgoa@gmail.com)",
-	    "Version": "0.42",
+	    "Version": "0.43",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -103,7 +137,7 @@ except:
 configPath = "scripts\\Custom\\UnifiedMainMenu\\ConfigModules\\Options\\SavedConfigs\\AccessibilityConfigVals.py"
 extraConfigPath = "scripts\\Custom\\UnifiedMainMenu\\ConfigModules\\Options\\AccesibilityConfigFiles"
 extraVariables = {
-	"g_kSubsystemFillColor" : {"kHullFillColor" : ["FoundationTech"], "kEmptyColor": ["ftb.Tech.AblativeArmour", "Custom.Techs.AblativeArmour"]},
+	"g_kSubsystemFillColor" : {"kHullFillColor" : ["FoundationTech"]},
 	"g_kSubsystemEmptyColor" : {"kHullEmptyColor" : ["FoundationTech"]},
 }
 

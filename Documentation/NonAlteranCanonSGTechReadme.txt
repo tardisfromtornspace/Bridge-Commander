@@ -1,4 +1,6 @@
 == Changelog ==
+1.1.10 - fixes:
+   * Fixed unrelated health gauge issue.
 1.1.9 - fixes:
    * Updated SG Transport Nukes script again to include the new Apollo and Daedalus Refit, as well as a future Sun Tzu.
 1.1.8 - updates:

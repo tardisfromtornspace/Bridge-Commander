@@ -1,4 +1,6 @@
 == Changelog ==
+1.1.19 - fixes:
+   * Fixed unrelated health gauge bug.
 1.1.18 - fixes:
    * Updated SimulatedPointDefence to prevent some MissionLib configs from preventing a proper cleanup.
 1.1.17 - fixes:

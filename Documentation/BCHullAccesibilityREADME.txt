@@ -1,4 +1,8 @@
 == Changelog ==
+0.5.0:
+    - Added fixes to FoundationTech.GaugeTechDef.DetachShip
+    - Updated FIX-AblativeArmour1dot0 to reflect this in a clean way.
+    - Updated AccesibilityConfig and related configuration files so each one remains on topic (f.ex. creation of a FoundationTech file that takes care of the colros from FoundationTech, another that takes care of ftb.Tech.AblativeArmour colors, etc.) and giving examples of how to add and modify new variables.
 0.4.2:
     - Certain fixes and modifications on AccesibilityConfig and some of its extra files to allow customization to work for whips with AblativeArmour ftb Tech.
     - Temporarily disabled function that allows players to instantly change the player's own hull gauge colors mid-QB, due to conflicts with other techs that depend on FoundationTech's Gauge. Customization of the Gauge itself has not been modified.

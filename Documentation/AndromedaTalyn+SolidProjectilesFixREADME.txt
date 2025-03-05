@@ -1,4 +1,5 @@
 == Changelog ==
+1.0.2 - Fixed hull gauge issues unrelated to this mod.
 1.0.1 - Upgraded  SolidProjectiles to 0.32, ensuring that the functions work regardless of MissionLib settings.
 1.0 - Official Mod release
 0.3.2 - Upgraded UndyingComeback tech to 0.11, adding alternate model support.

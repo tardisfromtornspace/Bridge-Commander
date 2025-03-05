@@ -1,4 +1,6 @@
 == Changelog ==
+1.2.7 - Fixing:
+   * Fixed unrelated health gauge no-swap bug.
 1.2.6 - Fixing:
    * Updated SimulatedPointDefence to prevent some MissionLib configs from preventing a proper cleanup.
 1.2.5 - Fixing:
