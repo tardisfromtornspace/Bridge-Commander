@@ -8,7 +8,7 @@
 #################################################################################################################
 #
 MODINFO = { "Author": "\"USS Sovereign\" (mario0085), Noat (noatblok),\"Alex SL Gato\" (andromedavirgoa@gmail.com)",
-	    "Version": "0.42",
+	    "Version": "0.51",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -412,8 +412,14 @@ class Watcher:
 		global pHealth
 
 		if not pHealth:
+			pTCW = App.TacticalControlWindow_GetTacticalControlWindow()
+			if not pTCW:
+				return
+			pDisplay = pTCW.GetShipDisplay()
+			if not pDisplay:
+				return
+
 			pHealth = pDisplay.GetHealthGauge()
-			return
 
 		if not pHealth:
 			return
@@ -463,11 +469,6 @@ class Watcher:
 			beforeY = 0
 
 			if itsMin:
-				minimizedPos = App.NiPoint2(0, 0)
-				pDisplay.GetPosition(minimizedPos)
-				beforeX = minimizedPos.x
-				beforeY = minimizedPos.y
-
 				pDisplay.SetNotMinimized(1)
 				
 			pDisplay.SetFixedSize(newWidth, (pOriginalHeight + extraHeight))
@@ -479,20 +480,8 @@ class Watcher:
 
 			pWepCon = pTCW.GetWeaponsControl()
 			if pWepCon:
-				if not itsMin:
-					minimizedPos = App.NiPoint2(0, 0)
-					pDisplay.GetPosition(minimizedPos)		
-					beforeX = minimizedPos.x
-					beforeY = minimizedPos.y
-
-				pDisplay.AlignTo(pWepCon, App.TGUIObject.ALIGN_UL, App.TGUIObject.ALIGN_UR)
-				
-			minimizedPos2 = App.NiPoint2(0, 0)
-			pDisplay.GetPosition(minimizedPos2)		
-			afterX = minimizedPos2.x
-			afterY = minimizedPos2.y
-
-			if itsMin:
-				pDisplay.SetMinimized(1)
-
-			pDisplay.SetPosition(afterX, beforeY, 0)
+				if itsMin:
+					pDisplay.SetMinimized(1)
+				pDisplay.AlignTo(pWepCon, App.TGUIObject.ALIGN_BL, App.TGUIObject.ALIGN_BR)
+			elif itsMin:
+				pDisplay.SetMinimized(1)		

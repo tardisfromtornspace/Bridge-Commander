@@ -1,4 +1,6 @@
 == Changelog ==
+0.5.1:
+    - Simplified the align section immensely, allowing for a far less bug-prone alignment between different KM versions.
 0.5.0:
     - Added fixes to FoundationTech.GaugeTechDef.DetachShip
     - Updated FIX-AblativeArmour1dot0 to reflect this in a clean way.
