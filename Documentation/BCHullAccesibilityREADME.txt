@@ -169,7 +169,8 @@ The new version also provides the following:
     - Unified Main Menu (to see configuration options).
 
 == Usage: ==
-    1. Install.
+    1. If you are using KM or BCMM, install all the folders and files except those of the folder called "extra (do not add to install, BCMM-related)", by copy-pasting onto your STBC main folder.
+	1.2 - For BCMM only - go to the folder "extra (do not add to install, BCMM-related)" and inside you will find another scripts folder. Then you install that folder on your install as well.
     2. Configure in UMM. Do not forget to save your configuration!
     3. That's it.
 

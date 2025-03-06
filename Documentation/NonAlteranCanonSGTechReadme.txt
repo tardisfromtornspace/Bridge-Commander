@@ -1,4 +1,6 @@
 == Changelog ==
+1.1.11 - fixes:
+   * Updated the FIX-AblativeArmour1dot0 Autoload script to provide full starbase repair functionality and better armour inheritance.
 1.1.10 - fixes:
    * Fixed unrelated health gauge issue.
 1.1.9 - fixes:
