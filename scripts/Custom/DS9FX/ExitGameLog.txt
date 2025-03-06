@@ -3324,3 +3324,345 @@ Trying to clean memory
 
 
 ##### End Of The Log #####
+##### Bridge Commander Exit Log: 05 Mar 2025 21:52:16#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+Jumpspace Drive 20070905 Initializing...
+TimeVortex Drive 20070905 Initializing...
+Warpspace Drive 20070905 Initializing...
+DS9FX Initializing...
+AccesibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+Jumpspace: Quick Battle is running... Mod is starting up...
+TimeVortex: Quick Battle is running... Mod is starting up...
+Warpspace: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+data/TGL/Maelstrom/Episode 8/E8M2.tgl E8M2Aftermath7
+Trying to clean memory
+Saved mid-game, refreshing configuration...
+Saved mid-game, refreshing configuration...
+Saved mid-game, refreshing configuration...
+Saved mid-game, refreshing configuration...
+
+
+Saved mid-game, refreshing configuration...
+Saved mid-game, refreshing configuration...
+
+
+
+# DS9FX has...
+
+# taken a console dump
+Saved mid-game, refreshing configuration...
+Saved mid-game, refreshing configuration...
+Saved mid-game, refreshing configuration...
+Saved mid-game, refreshing configuration...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Creating WarpSequence:  Ship = USS Enterprise F Canon-2  // To Set = None  // Placement Name = None
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 4d49b4e0> ignored
+Trying to clean memory
+Creating WarpSequence:  Ship = USS Enterprise F Canon-1  // To Set = None  // Placement Name = None
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 5011b49c> ignored
+PlasmaFX Communicating with Targetable Plasma Streams...
+...Sucess
+Setting splash damage for Plasma Stream Firepoint0_t to (562.500000, 11.250000)
+Setting splash damage for EFP Firepoint0_t to (562.500000, 11.250000)
+Setting splash damage for EFP Firepoint1_t to (187.500000, 3.750000)
+Traceback (innermost last):
+  File ".\Scripts\Custom\QBautostart\TargetablePlasmaStreams.py", line 430, in UpdateArray
+    aPlasmaArray[iCount].TrackObject()
+  File ".\Scripts\Custom\QBautostart\TargetablePlasmaStreams.py", line 242, in TrackObject
+    self.IgnitePlasma()                 # We are blowing up
+  File ".\Scripts\Custom\QBautostart\TargetablePlasmaStreams.py", line 333, in IgnitePlasma
+    LargeEngineExplode(self.ParentEmittingObject, self.pEngineToTrack)
+  File ".\Scripts\Custom\QBautostart\TargetablePlasmaStreams.py", line 712, in LargeEngineExplode
+    VentMiniPlasma(qWarpChild, pShip)
+  File ".\Scripts\Custom\QBautostart\TargetablePlasmaStreams.py", line 803, in VentMiniPlasma
+    pShip = App.ShipClass_GetObjectByID(None, pShipID)
+NameError: pShipID
+Setting splash damage for USS Enterprise F Canon-3 to (15937.500000, 318.750000)
+killing the player class instance
+Saved mid-game, refreshing configuration...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 05 Mar 2025 21:52:16#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+Jumpspace Drive 20070905 Initializing...
+TimeVortex Drive 20070905 Initializing...
+Warpspace Drive 20070905 Initializing...
+DS9FX Initializing...
+AccesibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+Jumpspace: Quick Battle is running... Mod is starting up...
+TimeVortex: Quick Battle is running... Mod is starting up...
+Warpspace: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+data/TGL/Maelstrom/Episode 8/E8M2.tgl E8M2Aftermath7
+Trying to clean memory
+Saved mid-game, refreshing configuration...
+Saved mid-game, refreshing configuration...
+Saved mid-game, refreshing configuration...
+Saved mid-game, refreshing configuration...
+
+
+Saved mid-game, refreshing configuration...
+Saved mid-game, refreshing configuration...
+
+
+
+# DS9FX has...
+
+# taken a console dump
+Saved mid-game, refreshing configuration...
+Saved mid-game, refreshing configuration...
+Saved mid-game, refreshing configuration...
+Saved mid-game, refreshing configuration...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Creating WarpSequence:  Ship = USS Enterprise F Canon-2  // To Set = None  // Placement Name = None
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 4d49b4e0> ignored
+Trying to clean memory
+Creating WarpSequence:  Ship = USS Enterprise F Canon-1  // To Set = None  // Placement Name = None
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 5011b49c> ignored
+PlasmaFX Communicating with Targetable Plasma Streams...
+...Sucess
+Setting splash damage for Plasma Stream Firepoint0_t to (562.500000, 11.250000)
+Setting splash damage for EFP Firepoint0_t to (562.500000, 11.250000)
+Setting splash damage for EFP Firepoint1_t to (187.500000, 3.750000)
+Traceback (innermost last):
+  File ".\Scripts\Custom\QBautostart\TargetablePlasmaStreams.py", line 430, in UpdateArray
+    aPlasmaArray[iCount].TrackObject()
+  File ".\Scripts\Custom\QBautostart\TargetablePlasmaStreams.py", line 242, in TrackObject
+    self.IgnitePlasma()                 # We are blowing up
+  File ".\Scripts\Custom\QBautostart\TargetablePlasmaStreams.py", line 333, in IgnitePlasma
+    LargeEngineExplode(self.ParentEmittingObject, self.pEngineToTrack)
+  File ".\Scripts\Custom\QBautostart\TargetablePlasmaStreams.py", line 712, in LargeEngineExplode
+    VentMiniPlasma(qWarpChild, pShip)
+  File ".\Scripts\Custom\QBautostart\TargetablePlasmaStreams.py", line 803, in VentMiniPlasma
+    pShip = App.ShipClass_GetObjectByID(None, pShipID)
+NameError: pShipID
+Setting splash damage for USS Enterprise F Canon-3 to (15937.500000, 318.750000)
+killing the player class instance
+Saved mid-game, refreshing configuration...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Trying to clean memory
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 06 Mar 2025 13:24:32#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+Jumpspace Drive 20070905 Initializing...
+TimeVortex Drive 20070905 Initializing...
+Warpspace Drive 20070905 Initializing...
+DS9FX Initializing...
+AccesibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+Jumpspace: Quick Battle is running... Mod is starting up...
+TimeVortex: Quick Battle is running... Mod is starting up...
+Warpspace: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+
+
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+
+
+
+
+
+
+
+
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Trying to clean memory
+data/TGL/Maelstrom/Episode 8/E8M1.tgl E8M1L155
+
+
+data/TGL/Maelstrom/Episode 7/E7M3.tgl E7M3Follow26
+Ship not inside Starbase - bye
+
+# DS9FX has...
+
+# taken a console dump
+data/TGL/Maelstrom/Episode 2/E2M0.tgl E2M0MiguelCom1
+Trying to clean memory
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 06 Mar 2025 13:24:32#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+Jumpspace Drive 20070905 Initializing...
+TimeVortex Drive 20070905 Initializing...
+Warpspace Drive 20070905 Initializing...
+DS9FX Initializing...
+AccesibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+Jumpspace: Quick Battle is running... Mod is starting up...
+TimeVortex: Quick Battle is running... Mod is starting up...
+Warpspace: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+
+
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+
+
+
+
+
+
+
+
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Trying to clean memory
+data/TGL/Maelstrom/Episode 8/E8M1.tgl E8M1L155
+
+
+data/TGL/Maelstrom/Episode 7/E7M3.tgl E7M3Follow26
+Ship not inside Starbase - bye
+
+# DS9FX has...
+
+# taken a console dump
+data/TGL/Maelstrom/Episode 2/E2M0.tgl E2M0MiguelCom1
+Trying to clean memory
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####

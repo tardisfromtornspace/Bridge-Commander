@@ -1,4 +1,6 @@
 == Changelog ==
+0.5.2:
+    - Updated the FIX-AblativeArmour1dot0 Autoload script to provide full starbase repair functionality and better armour inheritance.
 0.5.1:
     - Simplified the align section immensely, allowing for a far less bug-prone alignment between different KM versions.
 0.5.0:

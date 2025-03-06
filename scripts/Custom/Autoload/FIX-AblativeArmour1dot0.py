@@ -1,14 +1,15 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
-# 5th March 2025
-# VERSION 0.3
+# 6th March 2025
+# VERSION 0.4
 # By Alex SL Gato
 # AblativeArmour.py by Foundation Technologies team and Apollo's Advanced Technologies -> v1.1 fix
 #
 # Changes: 
 # - Currently the armour does not heal at all, meaning that negligible bleedthrough damage through a shield will eventually deplete it. This file aims to fix that, by checking the status of the armour integrity hardpoint first, and then uses the highest of the values.
 # - From Version 0.2 onwards, a singleton issue is fixed - however it might cause issues with other scripts if those already checekd on armour levels.
-# - From Version 0.3 onwars, the armor gauge issue is fixed, as long as the scripts.Custom-Autoload.FIX-FoundationTech20050703HullGaugeDetachShipFix file is present. 
+# - From Version 0.3 onwards, the armor gauge issue is fixed, as long as the scripts.Custom-Autoload.FIX-FoundationTech20050703HullGaugeDetachShipFix file is present.
+# - From Version 0.4 onwards, the fix was updated so now starbases can properly repair the armour part of it, and so classes that inherit from this one can use this patch too.
 
 from bcdebug import debug
 import App
@@ -49,7 +50,7 @@ if necessaryToUpdate and AblativeArmour != None:
 
 	def ReplacementOnDefense(self, pShip, pInstance, oYield, pEvent):
 		debug(__name__ + ", OnDefense")
-		repair = pInstance.__dict__['Ablative Armour L']
+		repair = pInstance.__dict__[self.lName]
 
 		#print 'AblativeDef.OnDefense', pShip.GetName(), repair, pEvent.GetDamage()
 
@@ -61,7 +62,7 @@ if necessaryToUpdate and AblativeArmour != None:
 		myOldHP = pInstance.__dict__[self.GetSystemPointer()]
 			
 		if repair > 0.0:
-			oldRepair = pInstance.__dict__['Ablative Armour L']
+			oldRepair = pInstance.__dict__[self.lName]
 
 			pSubNameO = self.GetSystemName()
 			if str(oldRepair)[0] == "[":
@@ -83,18 +84,18 @@ if necessaryToUpdate and AblativeArmour != None:
 					if temp > repair:
 						oldRepair = repair
 						repair = temp
-					if str(pInstance.__dict__['Ablative Armour L'])[0] == "[":
+					if str(pInstance.__dict__[self.lName])[0] == "[":
 						oldRepair = repair
-						pInstance.__dict__['Ablative Armour L Old'][0] = oldRepair
-						pInstance.__dict__['Ablative Armour L'][0] = repair = repair - pEvent.GetDamage()
+						pInstance.__dict__[self.lNameOld][0] = oldRepair
+						pInstance.__dict__[self.lName][0] = repair = repair - pEvent.GetDamage()
 				
 					else:
 						oldRepair = repair
-						pInstance.__dict__['Ablative Armour L Old'] = oldRepair
-						pInstance.__dict__['Ablative Armour L'] = repair = repair - pEvent.GetDamage()
+						pInstance.__dict__[self.lNameOld] = oldRepair
+						pInstance.__dict__[self.lName] = repair = repair - pEvent.GetDamage()
 
 					pSubsystem.SetCondition(repair)
-					# pSubsystem.SetCondition(pInstance.__dict__['Ablative Armour L'])
+					# pSubsystem.SetCondition(pInstance.__dict__[self.lName])
 				elif pSubsystem.GetCondition() > 0.0 and not pSubsystem.IsDisabled():
 					pSubsystem.SetCondition(pSubsystem.GetMaxCondition())
 					iChildren = pSubsystem.GetNumChildSubsystems()
@@ -110,26 +111,62 @@ if necessaryToUpdate and AblativeArmour != None:
 
 			# Alex SL Gato addition/modification: In case there's no subsystem for some reason, to prevent godmode ships
 			if foundMySubsystem == 0:
-				if str(pInstance.__dict__['Ablative Armour L'])[0] == "[":
+				if str(pInstance.__dict__[self.lName])[0] == "[":
 					oldRepair = repair
-					pInstance.__dict__['Ablative Armour L Old'][0] = oldRepair
-					pInstance.__dict__['Ablative Armour L'][0] = repair = repair - pEvent.GetDamage()
+					pInstance.__dict__[self.lNameOld][0] = oldRepair
+					pInstance.__dict__[self.lName][0] = repair = repair - pEvent.GetDamage()
 				
 				else:
 					oldRepair = repair
-					pInstance.__dict__['Ablative Armour L Old'] = oldRepair
-					pInstance.__dict__['Ablative Armour L'] = repair = repair - pEvent.GetDamage()
+					pInstance.__dict__[self.lNameOld] = oldRepair
+					pInstance.__dict__[self.lName] = repair = repair - pEvent.GetDamage()
 		else:
-			if str(pInstance.__dict__['Ablative Armour L Old'])[0] == "[":
-				pInstance.__dict__['Ablative Armour L Old'][0] = -1
-				pInstance.__dict__['Ablative Armour L'][0] = repair
-			else:
-				pInstance.__dict__['Ablative Armour L Old'] = -1
-				pInstance.__dict__['Ablative Armour L'] = repair
-
-			myOldHP = pInstance.__dict__[self.GetSystemPointer()]
+			#myOldHP = pInstance.__dict__[self.GetSystemPointer()]
 			if myOldHP:
+				if str(pInstance.__dict__[self.lNameOld])[0] == "[":
+					pInstance.__dict__[self.lNameOld][0] = -1
+					pInstance.__dict__[self.lName][0] = repair
+				else:
+					pInstance.__dict__[self.lNameOld] = -1
+					pInstance.__dict__[self.lName] = repair
+
 				pInstance.__dict__[self.GetSystemPointer()].SetCondition(repair)
+				self.auxSys = pInstance.__dict__[self.GetSystemPointer()]
+				self.DetachShip(pShip, pInstance)
+			else:
+				if self.auxSys != None and hasattr(self.auxSys, "GetCondition"):
+					newRepair = self.auxSys.GetCondition()
+					if newRepair > 0.0:
+						if str(pInstance.__dict__[self.lNameOld])[0] == "[":
+							pInstance.__dict__[self.lNameOld][0] = repair
+							pInstance.__dict__[self.lName][0] = newRepair
+						else:
+							pInstance.__dict__[self.lNameOld] = repair
+							pInstance.__dict__[self.lName] = newRepair
+						#self.ReplacementOnDefense(pShip, pInstance, oYield, pEvent)
+						ReplacementOnDefense(self, pShip, pInstance, oYield, pEvent)
+						
+					else:
+						if str(pInstance.__dict__[self.lNameOld])[0] == "[":
+							pInstance.__dict__[self.lNameOld][0] = -1
+							pInstance.__dict__[self.lName][0] = repair
+						else:
+							pInstance.__dict__[self.lNameOld] = -1
+							pInstance.__dict__[self.lName] = repair
+
+						self.DetachShip(pShip, pInstance)	
+				else:
+
+					if str(pInstance.__dict__[self.lNameOld])[0] == "[":
+						pInstance.__dict__[self.lNameOld][0] = -1
+						pInstance.__dict__[self.lName][0] = repair
+					else:
+						pInstance.__dict__[self.lNameOld] = -1
+						pInstance.__dict__[self.lName] = repair
+
+					self.DetachShip(pShip, pInstance)
+					
+
 			"""
 			if self in pInstance.lHealthGauge:
 				print "I am on the health gauges"
@@ -143,7 +180,7 @@ if necessaryToUpdate and AblativeArmour != None:
 			pInstance.__dict__[self.GetSystemPointer()] = None
 			"""
 
-			self.DetachShip(pShip, pInstance)
+			#self.DetachShip(pShip, pInstance)
 			#self.Detach(pInstance)
 
 	AblativeArmour.AblativeDef.OnDefense = ReplacementOnDefense
@@ -156,17 +193,19 @@ if necessaryToUpdate and AblativeArmour != None:
 
 		# Due to singletons, issues could happen
 		pInstanceDict = pInstance.__dict__
-		if not pInstanceDict.has_key("Ablative Armour L"):
-			if str(pInstanceDict['Ablative Armour'])[0] == "[":
-				pInstanceDict['Ablative Armour L'] = [0.0, "Ablative Armour"]
-				pInstanceDict['Ablative Armour L'][0] = pInstance.__dict__['Ablative Armour'][0]
-				pInstanceDict['Ablative Armour L'][1] = pInstance.__dict__['Ablative Armour'][1]
+		self.lName = str(self.name) + " L"
+		self.lNameOld = self.lName + " Old"
+		if not pInstanceDict.has_key(self.lName):
+			if str(pInstanceDict[str(self.name)])[0] == "[":
+				pInstanceDict[self.lName] = [0.0, "Ablative Armour"]
+				pInstanceDict[self.lName][0] = pInstance.__dict__[str(self.name)][0]
+				pInstanceDict[self.lName][1] = pInstance.__dict__[str(self.name)][1]
 
-				pInstanceDict['Ablative Armour L Old'] = [0.0, "Ablative Armour"]
-				pInstanceDict['Ablative Armour L Old'][0] = pInstance.__dict__['Ablative Armour'][0]
-				pInstanceDict['Ablative Armour L Old'][1] = pInstance.__dict__['Ablative Armour'][1]
+				pInstanceDict[self.lNameOld] = [0.0, "Ablative Armour"]
+				pInstanceDict[self.lNameOld][0] = pInstance.__dict__[str(self.name)][0]
+				pInstanceDict[self.lNameOld][1] = pInstance.__dict__[str(self.name)][1]
 			else:
-				pInstanceDict['Ablative Armour L'] = pInstance.__dict__['Ablative Armour']
-				pInstanceDict['Ablative Armour L Old'] = pInstance.__dict__['Ablative Armour']
+				pInstanceDict[self.lName] = pInstance.__dict__[str(self.name)]
+				pInstanceDict[self.lNameOld] = pInstance.__dict__[str(self.name)]
 
 	AblativeArmour.AblativeDef.Attach = ReplacementAttach
