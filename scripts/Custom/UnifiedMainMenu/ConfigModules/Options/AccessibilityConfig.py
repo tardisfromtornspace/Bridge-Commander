@@ -775,6 +775,8 @@ def SaveConfig(pObject, pEvent):
 	pEvent1.SetString("BC ACCESIBILITY")
 	App.g_kEventManager.AddEvent(pEvent1)
 
+	#App.InterfaceModule_DoTheRightThing()
+
 	# Just some niceties for people
 	global pSaveButton, canChangeSave
 	currentTime = App.g_kUtopiaModule.GetGameTime()
