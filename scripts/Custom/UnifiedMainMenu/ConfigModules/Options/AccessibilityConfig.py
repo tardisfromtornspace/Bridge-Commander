@@ -788,6 +788,39 @@ def SaveConfig(pObject, pEvent):
 		pSequence.AddAction(pAction, None, saveMsgDelay)
 		pSequence.Play()
 
+
+"""
+# These lines about mouse customization do not seem to work - a real pity
+sCursorImageIconGroup = "System"
+kIcons = App.g_kIconManager.GetIconGroup(sCursorImageIconGroup)
+if kIcons is None:
+	kIcons = App.g_kIconManager.CreateIconGroup(sCursorImageIconGroup)
+	# Add group to manager.
+	App.g_kIconManager.AddIconGroup(kIcons)
+
+if kIcons is not None:
+	print "CHANGING MOUSE ICON???"
+	# Mouse cursor
+	kTextureHandle = kIcons.LoadIconTexture('Data/Icons/TrekCursor.tga') # 'Data/Icons/MarksCursor.tga' # Maybe replace by 'Data/Icons/TrekCursor.tga'
+	kIcons.SetIconLocation(0, kTextureHandle, 34,  0, 16, 20)
+	kIcons.SetIconLocation(1, kTextureHandle,  0, 34, 20, 24)
+	kIcons.SetIconLocation(2, kTextureHandle,  0,  0, 26, 32)
+	kIcons.SetIconLocation(3, kTextureHandle, 32, 24, 32, 40)
+	kIcons.SetIconLocation(4, kTextureHandle, 74, 7, 38, 48)
+
+	import Icons.SystemIcons
+	App.g_kRootWindow.SetCursorVisible(0)
+	Icons.SystemIcons.SetTrekCursor()
+	App.g_kRootWindow.SetCursorVisible(1)
+	#App.g_kRootWindow.SetMouseCursor(sCursorImageIconGroup, 0 , 1, 1.0)
+	#Icons.SystemIcons.PushTrekCursor()
+	#Icons.SystemIcons.SetTargetCursor()
+	#Icons.SystemIcons.SetCircleCursor()
+	#Icons.SystemIcons.SetTrekCursor()
+	#App.g_kIconManager.Draw()
+"""
+
+
 if issues > 0:
 	print "Re-applying a safe Accesibility Config save"
 	try:
