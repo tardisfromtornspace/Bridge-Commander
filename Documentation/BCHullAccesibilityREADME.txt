@@ -1,4 +1,6 @@
 == Changelog ==
+0.5.4:
+    - Updated path to correctly say Accessibility and not Accesibility - those who installed previous versions need to delete scripts\Custom\UnifiedMainMenu\ConfigModules\Options\AccesibilityConfigFiles since that info is now at scripts\Custom\UnifiedMainMenu\ConfigModules\Options\AccessibilityConfigFiles.
 0.5.3:
     - Updated value files to be more resistant to errors.
     - Added support for GalaxyChart's Galaxy Map GUI.

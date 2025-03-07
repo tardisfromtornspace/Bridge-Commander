@@ -1,14 +1,14 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL LICENSE AS WELL
 # HullIntegrity.py
-# 4th March 2025, by USS Sovereign, and tweaked by Noat and Alex SL Gato (CharaToLoki)
+# 7th March 2025, by USS Sovereign, and tweaked by Noat and Alex SL Gato (CharaToLoki)
 #         Inspired by the Shield Percentages mod by Defiant. It was originally made pre-2010 with the goal of showing lots of accessibility options, such as for colorblind people.
 #
 # Modify, redistribute to your liking. Just remember to give credit where due.
 #################################################################################################################
 #
 MODINFO = { "Author": "\"USS Sovereign\" (mario0085), Noat (noatblok),\"Alex SL Gato\" (andromedavirgoa@gmail.com)",
-	    "Version": "0.51",
+	    "Version": "0.54",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -46,7 +46,7 @@ globalVarList = {
 	"FontSize": 5,
 }
 
-def CheckAndRefreshModule(variableList, pMyModule, theWay, issue=0): # Used when for example you had an incomplete BC Accesibility Config values
+def CheckAndRefreshModule(variableList, pMyModule, theWay, issue=0): # Used when for example you had an incomplete BC Accessibility Config values
 	if not pMyModule:
 		pMyModule = __import__(theWay)
 	elif pMyModule or issue > 0:

@@ -113,7 +113,7 @@ sDefaultColors = { # Colors from App.py
 """
 #
 MODINFO = { "Author": "\"USS Sovereign\" (mario0085), Noat (noatblok),\"Alex SL Gato\" (andromedavirgoa@gmail.com)",
-	    "Version": "0.53",
+	    "Version": "0.54",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -136,7 +136,7 @@ except:
 	pModule = None
 
 configPath = "scripts\\Custom\\UnifiedMainMenu\\ConfigModules\\Options\\SavedConfigs\\AccessibilityConfigVals.py"
-extraConfigPath = "scripts\\Custom\\UnifiedMainMenu\\ConfigModules\\Options\\AccesibilityConfigFiles"
+extraConfigPath = "scripts\\Custom\\UnifiedMainMenu\\ConfigModules\\Options\\AccessibilityConfigFiles"
 extraVariables = {
 	"g_kSubsystemFillColor" : {"kHullFillColor" : ["FoundationTech"]},
 	"g_kSubsystemEmptyColor" : {"kHullEmptyColor" : ["FoundationTech"]},
@@ -160,7 +160,7 @@ def ResetButtonString(pAction, pButton, myName):
 		if pSaveButton and myName != None:
 			pSaveButton.SetName(App.TGString(myName))
 		else:
-			print "AccesibilityConfig.ResetButtonString: ERR.: missing button"
+			print "AccessibilityConfig.ResetButtonString: ERR.: missing button"
 	except:
 		pass
 
@@ -424,7 +424,7 @@ def LoadExtraLimitedPlugins(dir,dExcludePlugins=_g_dExcludeSomePlugins, ignore=[
 	global dConfig, dRadixNotation, dFont, extraVariables, sDefaultColors
 	if dir == None or dir == "":
 		print "no dir found, calling default"
-		dir="scripts\\Custom\\UnifiedMainMenu\\ConfigModules\\Options\\AccesibilityConfigFiles"
+		dir="scripts\\Custom\\UnifiedMainMenu\\ConfigModules\\Options\\AccessibilityConfigFiles"
 	try:
 		list = nt.listdir(dir)
 		if not list:
@@ -497,7 +497,7 @@ def LoadExtraLimitedPlugins(dir,dExcludePlugins=_g_dExcludeSomePlugins, ignore=[
 											sDefaultColors[category] = {}
 										sDefaultColors[category][colorName] = []
 			except:
-				print "someone attempted to add more than they should to the AccesibilityConfig script"
+				print "someone attempted to add more than they should to the AccessibilityConfig script"
 				traceback.print_exc()
 
 defaultFont = "Crillee"
@@ -517,9 +517,9 @@ if isTGFontManagerEPresent: # Support for Mario's FontManager extension
 	fonts = App.g_kFontManager.GetFontList()
 	if not fonts or type(fonts) != type([]) or len(fonts) < 1:
 		if isBCMM:
-			print "AccesibilityConfig: ERROR: No Fonts detected using BCMM's FontManager extension. Attempting Legacy extra menu support..."
+			print "AccessibilityConfig: ERROR: No Fonts detected using BCMM's FontManager extension. Attempting Legacy extra menu support..."
 		else:
-			print "AccesibilityConfig: ATTENTION: No Fonts detected using a FontManager's extension. Defaulting to Legacy extra menu support..."
+			print "AccessibilityConfig: ATTENTION: No Fonts detected using a FontManager's extension. Defaulting to Legacy extra menu support..."
 
 		LoadExtraLimitedPlugins(extraConfigPath)
 	else:
@@ -565,20 +565,20 @@ if isTGFontManagerEPresent: # Support for Mario's FontManager extension
 
 		if isBCMM:
 			if strikes == 0:
-				print "AccesibilityConfig: Using BCMM's FontManager Extension"
+				print "AccessibilityConfig: Using BCMM's FontManager Extension"
 				LoadExtraLimitedPlugins(extraConfigPath, ignore=["dFont"])
 			else:
-				print "AccesibilityConfig: An error ocurred while using BCMM's FontManager Extension. Attempting Legacy extra menu support..."
+				print "AccessibilityConfig: An error ocurred while using BCMM's FontManager Extension. Attempting Legacy extra menu support..."
 				LoadExtraLimitedPlugins(extraConfigPath)
 		else:
 			if strikes == 0:
-				print "AccesibilityConfig: Using a FontManager Extension"
+				print "AccessibilityConfig: Using a FontManager Extension"
 				LoadExtraLimitedPlugins(extraConfigPath, ignore=["dFont"])
 			else:
-				print "AccesibilityConfig: A FontManager Extension seems to be present, but is not compatible with this mod. Defaulting to Legacy extra menu support..."
+				print "AccessibilityConfig: A FontManager Extension seems to be present, but is not compatible with this mod. Defaulting to Legacy extra menu support..."
 				LoadExtraLimitedPlugins(extraConfigPath)
 else:
-	print "AccesibilityConfig: Using Legacy extra menu support"
+	print "AccessibilityConfig: Using Legacy extra menu support"
 	LoadExtraLimitedPlugins(extraConfigPath)
 
 listedFonts = list(dFont.keys())
@@ -586,9 +586,9 @@ listedFonts.sort()
 
 if dFont == None or len(dFont) <= 0:
 	if isTGFontManagerEPresent:
-		print "ERROR: No Fonts detected for AccesibilityConfig. This likely means that somehow, the game lacks important files at scripts/Icons, or that important Files that register fonts for the game are missing or modified to such a extent that no fonts are registered. Please read more at ", __name__, " for more information."
+		print "ERROR: No Fonts detected for AccessibilityConfig. This likely means that somehow, the game lacks important files at scripts/Icons, or that important Files that register fonts for the game are missing or modified to such a extent that no fonts are registered. Please read more at ", __name__, " for more information."
 	else:
-		print "WARNING: No Fonts detected for AccesibilityConfig. If using Legacy menu support, please make sure that a file on ", extraConfigPath, "exists with the example content located between the 3 '\"' seen at ", __name__
+		print "WARNING: No Fonts detected for AccessibilityConfig. If using Legacy menu support, please make sure that a file on ", extraConfigPath, "exists with the example content located between the 3 '\"' seen at ", __name__
 	
 else:
 	if not defaultFont in dFont.keys():
@@ -664,13 +664,13 @@ def ExtrasColorSafety(colorsExtraCons=colorsExtraCon):
 									if leAttrib != None:
 										SetupColor(leAttrib, colorName, dConfig[colorName + "R COLOR"], dConfig[colorName + "G COLOR"], dConfig[colorName + "B COLOR"], dConfig[colorName + "A COLOR"])
 							#else:
-							#	print "AccesibilityConfig INFO:", pathToImport, " not found."
+							#	print "AccessibilityConfig INFO:", pathToImport, " not found."
 					except:
-						print "AccesibilityConfig: Error while saving an extra considered color config:"
+						print "AccessibilityConfig: Error while saving an extra considered color config:"
 						traceback.print_exc()
 				
 			except:
-				print "AccesibilityConfig: Error while saving an extra considered color config:"
+				print "AccessibilityConfig: Error while saving an extra considered color config:"
 				traceback.print_exc()
 
 for typeC in sDefaultColors.keys():
@@ -740,7 +740,7 @@ def SaveConfig(pObject, pEvent):
 
 		nt.close(file)
 	except:
-		print "AccesibilityConfig: ERROR- COULD NOT SAVE - All changes done may have been applied, but will not save."
+		print "AccessibilityConfig: ERROR- COULD NOT SAVE - All changes done may have been applied, but will not save."
 		traceback.print_exc()
 
 		global colorsExtraCon
@@ -750,7 +750,7 @@ def SaveConfig(pObject, pEvent):
 				SetupColor(dConfig["Colors"][colorName][1], colorName, dConfig[colorName + "R COLOR"], dConfig[colorName + "G COLOR"], dConfig[colorName + "B COLOR"], dConfig[colorName + "A COLOR"])
  				ExtrasColorSafety(colorsExtraCon)
 			except:
-				print "AccesibilityConfig: ERROR- COULD NOT APPLY COLOR CHANGES"
+				print "AccessibilityConfig: ERROR- COULD NOT APPLY COLOR CHANGES"
 				traceback.print_exc()
 
 	global pModule
