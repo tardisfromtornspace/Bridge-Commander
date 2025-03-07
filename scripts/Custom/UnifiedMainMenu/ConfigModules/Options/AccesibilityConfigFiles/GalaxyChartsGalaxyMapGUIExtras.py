@@ -1,8 +1,8 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL LICENSE AS WELL
-# ftbAblativeArmourExtras.py
+# GalaxyChartsGalaxyMapGUIExtras.py
 # 7th March 2025, by Alex SL Gato (CharaToLoki)
-# Version: 1.1
+# Version: 1.2
 # Meant to be used alongside the AccesibilityConfig UMM option (located at scripts/Custom/UnifiedMainMenu/ConfigModules/Options/), this file must be under scripts/Custom/UnifiedMainMenu/ConfigModules/Options/AccesibilityConfigFiles
 ##################################
 # This file takes care of listing the variable colors which are modified in other files and used instead of regular colors, like FoundationTech's Hull Gauge tech

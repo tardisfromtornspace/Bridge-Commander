@@ -3975,3 +3975,161 @@ Saved mid-game, refreshing configuration...
 
 
 ##### End Of The Log #####
+##### Bridge Commander Exit Log: 07 Mar 2025 12:22:40#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+Jumpspace Drive 20070905 Initializing...
+TimeVortex Drive 20070905 Initializing...
+Warpspace Drive 20070905 Initializing...
+DS9FX Initializing...
+AccesibilityConfig: Using Legacy extra menu support
+scripts\Custom\UnifiedMainMenu\ConfigModules\Options\SavedConfigs\AccessibilityConfigVals.py  has no  AlternateSubModelFTLHighlightedColorR  attribute. This will be addressed
+scripts\Custom\UnifiedMainMenu\ConfigModules\Options\SavedConfigs\AccessibilityConfigVals.py  has no  AlternateSubModelFTLHighlightedColorG  attribute. This will be addressed
+scripts\Custom\UnifiedMainMenu\ConfigModules\Options\SavedConfigs\AccessibilityConfigVals.py  has no  AlternateSubModelFTLHighlightedColorB  attribute. This will be addressed
+scripts\Custom\UnifiedMainMenu\ConfigModules\Options\SavedConfigs\AccessibilityConfigVals.py  has no  AlternateSubModelFTLHighlightedColorA  attribute. This will be addressed
+scripts\Custom\UnifiedMainMenu\ConfigModules\Options\SavedConfigs\AccessibilityConfigVals.py  has no  AlternateSubModelFTLDisabledColorR  attribute. This will be addressed
+scripts\Custom\UnifiedMainMenu\ConfigModules\Options\SavedConfigs\AccessibilityConfigVals.py  has no  AlternateSubModelFTLDisabledColorG  attribute. This will be addressed
+scripts\Custom\UnifiedMainMenu\ConfigModules\Options\SavedConfigs\AccessibilityConfigVals.py  has no  AlternateSubModelFTLDisabledColorB  attribute. This will be addressed
+scripts\Custom\UnifiedMainMenu\ConfigModules\Options\SavedConfigs\AccessibilityConfigVals.py  has no  AlternateSubModelFTLDisabledColorA  attribute. This will be addressed
+scripts\Custom\UnifiedMainMenu\ConfigModules\Options\SavedConfigs\AccessibilityConfigVals.py  has no  AlternateSubModelFTLNormalColorR  attribute. This will be addressed
+scripts\Custom\UnifiedMainMenu\ConfigModules\Options\SavedConfigs\AccessibilityConfigVals.py  has no  AlternateSubModelFTLNormalColorG  attribute. This will be addressed
+scripts\Custom\UnifiedMainMenu\ConfigModules\Options\SavedConfigs\AccessibilityConfigVals.py  has no  AlternateSubModelFTLNormalColorB  attribute. This will be addressed
+scripts\Custom\UnifiedMainMenu\ConfigModules\Options\SavedConfigs\AccessibilityConfigVals.py  has no  AlternateSubModelFTLNormalColorA  attribute. This will be addressed
+scripts\Custom\UnifiedMainMenu\ConfigModules\Options\SavedConfigs\AccessibilityConfigVals.py  has no  AlternateSubModelFTLHighlightedColor2R  attribute. This will be addressed
+scripts\Custom\UnifiedMainMenu\ConfigModules\Options\SavedConfigs\AccessibilityConfigVals.py  has no  AlternateSubModelFTLHighlightedColor2G  attribute. This will be addressed
+scripts\Custom\UnifiedMainMenu\ConfigModules\Options\SavedConfigs\AccessibilityConfigVals.py  has no  AlternateSubModelFTLHighlightedColor2B  attribute. This will be addressed
+scripts\Custom\UnifiedMainMenu\ConfigModules\Options\SavedConfigs\AccessibilityConfigVals.py  has no  AlternateSubModelFTLHighlightedColor2A  attribute. This will be addressed
+scripts\Custom\UnifiedMainMenu\ConfigModules\Options\SavedConfigs\AccessibilityConfigVals.py  has no  AlternateSubModelFTLNormalColor2R  attribute. This will be addressed
+scripts\Custom\UnifiedMainMenu\ConfigModules\Options\SavedConfigs\AccessibilityConfigVals.py  has no  AlternateSubModelFTLNormalColor2G  attribute. This will be addressed
+scripts\Custom\UnifiedMainMenu\ConfigModules\Options\SavedConfigs\AccessibilityConfigVals.py  has no  AlternateSubModelFTLNormalColor2B  attribute. This will be addressed
+scripts\Custom\UnifiedMainMenu\ConfigModules\Options\SavedConfigs\AccessibilityConfigVals.py  has no  AlternateSubModelFTLNormalColor2A  attribute. This will be addressed
+Re-applying a safe Accesibility Config save
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+Jumpspace: Quick Battle is running... Mod is starting up...
+TimeVortex: Quick Battle is running... Mod is starting up...
+Warpspace: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+data/TGL/Maelstrom/Episode 6/E6M3.tgl E6M3TroopsLand
+Trying to clean memory
+
+# DS9FX has...
+
+# taken a console dump
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 2e4198a8> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 24f5820c> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 2e3ee9d4> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 2e3ef7cc> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 2e3f0010> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 2e3efef8> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 2e3f996c> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 2e3f9854> ignored
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 07 Mar 2025 12:22:40#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+Jumpspace Drive 20070905 Initializing...
+TimeVortex Drive 20070905 Initializing...
+Warpspace Drive 20070905 Initializing...
+DS9FX Initializing...
+AccesibilityConfig: Using Legacy extra menu support
+scripts\Custom\UnifiedMainMenu\ConfigModules\Options\SavedConfigs\AccessibilityConfigVals.py  has no  AlternateSubModelFTLHighlightedColorR  attribute. This will be addressed
+scripts\Custom\UnifiedMainMenu\ConfigModules\Options\SavedConfigs\AccessibilityConfigVals.py  has no  AlternateSubModelFTLHighlightedColorG  attribute. This will be addressed
+scripts\Custom\UnifiedMainMenu\ConfigModules\Options\SavedConfigs\AccessibilityConfigVals.py  has no  AlternateSubModelFTLHighlightedColorB  attribute. This will be addressed
+scripts\Custom\UnifiedMainMenu\ConfigModules\Options\SavedConfigs\AccessibilityConfigVals.py  has no  AlternateSubModelFTLHighlightedColorA  attribute. This will be addressed
+scripts\Custom\UnifiedMainMenu\ConfigModules\Options\SavedConfigs\AccessibilityConfigVals.py  has no  AlternateSubModelFTLDisabledColorR  attribute. This will be addressed
+scripts\Custom\UnifiedMainMenu\ConfigModules\Options\SavedConfigs\AccessibilityConfigVals.py  has no  AlternateSubModelFTLDisabledColorG  attribute. This will be addressed
+scripts\Custom\UnifiedMainMenu\ConfigModules\Options\SavedConfigs\AccessibilityConfigVals.py  has no  AlternateSubModelFTLDisabledColorB  attribute. This will be addressed
+scripts\Custom\UnifiedMainMenu\ConfigModules\Options\SavedConfigs\AccessibilityConfigVals.py  has no  AlternateSubModelFTLDisabledColorA  attribute. This will be addressed
+scripts\Custom\UnifiedMainMenu\ConfigModules\Options\SavedConfigs\AccessibilityConfigVals.py  has no  AlternateSubModelFTLNormalColorR  attribute. This will be addressed
+scripts\Custom\UnifiedMainMenu\ConfigModules\Options\SavedConfigs\AccessibilityConfigVals.py  has no  AlternateSubModelFTLNormalColorG  attribute. This will be addressed
+scripts\Custom\UnifiedMainMenu\ConfigModules\Options\SavedConfigs\AccessibilityConfigVals.py  has no  AlternateSubModelFTLNormalColorB  attribute. This will be addressed
+scripts\Custom\UnifiedMainMenu\ConfigModules\Options\SavedConfigs\AccessibilityConfigVals.py  has no  AlternateSubModelFTLNormalColorA  attribute. This will be addressed
+scripts\Custom\UnifiedMainMenu\ConfigModules\Options\SavedConfigs\AccessibilityConfigVals.py  has no  AlternateSubModelFTLHighlightedColor2R  attribute. This will be addressed
+scripts\Custom\UnifiedMainMenu\ConfigModules\Options\SavedConfigs\AccessibilityConfigVals.py  has no  AlternateSubModelFTLHighlightedColor2G  attribute. This will be addressed
+scripts\Custom\UnifiedMainMenu\ConfigModules\Options\SavedConfigs\AccessibilityConfigVals.py  has no  AlternateSubModelFTLHighlightedColor2B  attribute. This will be addressed
+scripts\Custom\UnifiedMainMenu\ConfigModules\Options\SavedConfigs\AccessibilityConfigVals.py  has no  AlternateSubModelFTLHighlightedColor2A  attribute. This will be addressed
+scripts\Custom\UnifiedMainMenu\ConfigModules\Options\SavedConfigs\AccessibilityConfigVals.py  has no  AlternateSubModelFTLNormalColor2R  attribute. This will be addressed
+scripts\Custom\UnifiedMainMenu\ConfigModules\Options\SavedConfigs\AccessibilityConfigVals.py  has no  AlternateSubModelFTLNormalColor2G  attribute. This will be addressed
+scripts\Custom\UnifiedMainMenu\ConfigModules\Options\SavedConfigs\AccessibilityConfigVals.py  has no  AlternateSubModelFTLNormalColor2B  attribute. This will be addressed
+scripts\Custom\UnifiedMainMenu\ConfigModules\Options\SavedConfigs\AccessibilityConfigVals.py  has no  AlternateSubModelFTLNormalColor2A  attribute. This will be addressed
+Re-applying a safe Accesibility Config save
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+Jumpspace: Quick Battle is running... Mod is starting up...
+TimeVortex: Quick Battle is running... Mod is starting up...
+Warpspace: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+data/TGL/Maelstrom/Episode 6/E6M3.tgl E6M3TroopsLand
+Trying to clean memory
+
+# DS9FX has...
+
+# taken a console dump
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 2e4198a8> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 24f5820c> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 2e3ee9d4> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 2e3ef7cc> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 2e3f0010> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 2e3efef8> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 2e3f996c> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 2e3f9854> ignored
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
