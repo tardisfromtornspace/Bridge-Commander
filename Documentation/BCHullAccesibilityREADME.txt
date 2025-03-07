@@ -1,4 +1,6 @@
 == Changelog ==
+0.5.5:
+    - Added a new DefaultColorsExtras value file to add support to g_kSTButtonMarkerGray, g_kSTButtonColors and g_pConditionColors.
 0.5.4:
     - Updated path to correctly say Accessibility and not Accesibility - those who installed previous versions need to delete scripts\Custom\UnifiedMainMenu\ConfigModules\Options\AccesibilityConfigFiles since that info is now at scripts\Custom\UnifiedMainMenu\ConfigModules\Options\AccessibilityConfigFiles.
 0.5.3:
@@ -46,20 +48,20 @@ The idea of this mod is inspired by the Shield Percentages mod by Defiant. It wa
 The new version also provides the following:
 * Save Config button: do not forget to clik on this button to apply your changes, else they will not be applied nor saved, even if you used a master button to reset to default!
 * More resistance against certain configuration file errors: if the configuration script finds a missing entry or error on its Saved Config, it will automatically save and re-apply with the proper parameters.
-* Show/Hide main Hull Bar on the player's Ship Display.
-* Show/Hide text providing information about main Hull's Integrity:
-    - Show Percentages will make it display a 0-100% text.
-    - Show Fraction will add a currentHealth/MaxHealth indicator as well to the bar.
-    - Additionally, you can choose if % and fraction go on the same line, or separate lines.
-* Number of decimals: an entry number which provides the option to allow as many decimals as you want, from none to what you may feasibly want, for both percentages and fractions. NOTE: For ships whose max health is below 1.0, 6 decimals will always be shown for fractions.
-* Radix separator: whether to use lower comma (,), lower dot (.), apostrophe (') or a representation of middle dot (·, in game as || on certain fonts), as the symbol that separates the integer from the fraction/decimal part (i.e. 2,35 ; 2.25, 2'35 or 2||35). Radix separator may be displayed differently according to the font selected.
+* Show/Hide main Hull Bar toggle button on the player's Ship Display.
+* Show/Hide text providing information about main Hull's Integrity, a toggle button:
+    - Show Percentages toggle button will make it display a 0-100% text.
+    - Show Fraction toggle button will add a currentHealth/MaxHealth indicator as well to the bar.
+    - Additionally, you can choose if % and fraction go on the same line, or separate lines, with another toggle button.
+* Number of decimals text entry button: an entry number which provides the option to allow as many decimals as you want, from none to what you may feasibly want, for both percentages and fractions. NOTE: For ships whose max health is below 1.0, 6 decimals will always be shown for fractions.
+* Radix separator button: whether to use lower comma (,), lower dot (.), apostrophe (') or a representation of middle dot (·, in game as || on certain fonts), as the symbol that separates the integer from the fraction/decimal part (i.e. 2,35 ; 2.25, 2'35 or 2||35). Radix separator may be displayed differently according to the font selected.
 * Font and Size: currently these allow the player to choose between the following fonts and sizes, alongside a customizable size entry:
     - "Crillee": sizes 5, 6, 9, 12 and 15.
     - "LCARSText": 5, 6, 9, 12, 15.
     - "Tahoma": 8, 14.
     - "Arial": 8.
     - "Serpentine": 12.
-* Interface colors: allows the user to modify several colors from the UI, mainly during QuickBattle. These colors are grouped on categories, to facilitate customization. Colors are modified by altering thier red (r), green (g), blue (b) and opacity (a) values (which, as of version 0.2.5, go on a [0-1] range), or can be re-set to default by an individual "Reset to default" buttons or restored back to your last save's config by individual "Reset to last save" buttons. All colors can be collectively reset and restored through two master buttons: "Reset all colors to default" and "Restore all colors to last save". New colors can also be added as long as they are registered as part of App.py. Currently, the default colors you can modify without any extra scripts are:
+* Interface colors menu: allows the user to modify several colors from the UI, mainly during QuickBattle. These colors are grouped on categories, to facilitate customization. Colors are modified by altering thier red (r), green (g), blue (b) and opacity (a) values (which, as of version 0.2.5, go on a [0-1] range), or can be re-set to default by an individual "Reset to default" buttons or restored back to your last save's config by individual "Reset to last save" buttons. All colors can be collectively reset and restored through two master buttons: "Reset all colors to default" and "Restore all colors to last save". New colors can also be added as long as they are registered as part of App.py. Currently, the default colors you can modify without any extra scripts nor files are:
     - "STButton marker colors":
         - "g_kSTButtonMarkerDefault"
         - "g_kSTButtonMarkerHighlighted"
@@ -117,8 +119,8 @@ The new version also provides the following:
         - "g_kRadarUnknownColor":
 
     - "Subsystem colors":
-        - "g_kSubsystemFillColor": - Also covered the FoundationTech version for hulls.
-        - "g_kSubsystemEmptyColor": - Also covered the FoundationTech version for hulls.
+        - "g_kSubsystemFillColor": - Partially if only this script, fully if the extra script-file that covers the FoundationTech version for hulls ("FoundationTechExtras") is present.
+        - "g_kSubsystemEmptyColor": - Partially if only this script, fully if the extra script-file that covers the FoundationTech version for hulls ("FoundationTechExtras") is present.
         - "g_kSubsystemDisabledColor":
 
     - "Tactical weapons control header text":
@@ -167,6 +169,27 @@ The new version also provides the following:
         - "g_kMultiplayerButtonPurple"
         - "g_kMultiplayerButtonOrange"
         - "g_kMultiplayerDividerPurple"
+
+    - There are also more covered colors, using extra value files:
+	* File "DefaultColorsExtras":
+            - For "STButton marker colors": "g_kSTButtonMarkerGray".
+            - For a new "STButton base colors (some)" category: g_kSTButtonColors.
+            - For a new "Other interface colors" category: g_pConditionColors.
+        * File "FoundationTechExtras":
+            - For installs with FoundationTech, covers the cases of health gauge colors for "g_kSubsystemFillColor" and "g_kSubsystemEmptyColor".
+        * File "ftbAblativeArmourExtras":
+            - For a new category "Foundation Technologies' colors":
+                - Covers the "g_kSubsystemFillColor" for empty armor color.
+                - "ftbAblativeArmourFill" for customizable fill armor color.
+        * Most other ".*ArmorExtras" and ".*ArmourExtras" seen on this mod:
+            - Homologues of "ftbAblativeArmourExtras" but for their own armors/armours. Also located at "Foundation Technologies' colors".
+        * File "CustomTechsAlternateSubModelFTLExtras":
+            - For the category "Foundation Technologies' colors", adds menu customization of its intra-system intercept feature.
+        * File "GalaxyChartsGalaxyMapGUIExtras":
+            - For a new category "Galaxy Charts' colors", it provides customization for Galaxy Map GUI colors for systems where the player is located, regions, selected regions, hostile regions and allied regions.
+
+* FoundationTech Gauge fixes - taking care of an issue where FoundationTech.GaugeTechDef.DetachShip could not find its ship's pDisplay even it it existed, which lead to bugs with techs based around that GaugeTech not swapping bars properly.
+* FoundationTech AblativeArmour fix: with the "FIX-AblativeArmour1dot0" Autoload file and the gauge fix above, now the armor can not only repair itself properly, but can be rebuilt properly by any other script (specially starbase docking for repairs) and its functionality restored after those repairs, including when the armor was destroyed and the starbase rebuilt it from scratch.
 
 == Requirements: ==
     - QBAutostart.
