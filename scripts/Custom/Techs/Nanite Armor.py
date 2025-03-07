@@ -1,12 +1,12 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE FOUNDATION LGPL LICENSE AS WELL
 # Nanite Armor.py
-# 5th March 2025, by Alex SL Gato (CharaToLoki), modified from Greystar's (which was likely an ftb AblativeArmour script copy)
+# 6th March 2025, by Greystar adjust colors, fixed by Alex SL Gato (CharaToLoki), modified from Greystar's (which was likely an ftb AblativeArmour script copy)
 # Meant to be used alongside ftb AblativeArmour, in fact, it requires it to work properly
 ##################################
 #
 MODINFO = { "Author": "\"ftb Team\", \"Apollo\", \"Greystar\", \"Alex SL Gato\" (andromedavirgoa@gmail.com)",
-	    "Version": "0.1",
+	    "Version": "0.11",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
