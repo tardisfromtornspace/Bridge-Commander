@@ -1,7 +1,7 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL LICENSE AS WELL
 # AccesibilityConfig.py
-# 5th March 2025, by USS Sovereign, and tweaked by Noat and Alex SL Gato (CharaToLoki)
+# 7th March 2025, by USS Sovereign, and tweaked by Noat and Alex SL Gato (CharaToLoki)
 #         Inspired by the Shield Percentages mod by Defiant. It was originally made pre-2010 with the goal of showing lots of accessibility options, such as for colorblind people.
 #
 # Modify, redistribute to your liking. Just remember to give credit where due.
@@ -81,8 +81,8 @@ extraVariables = {
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL LICENSE AS WELL
 # CustomTechsTranscendentalRodiniumArmorExtras.py
-# 5th March 2025, by Alex SL Gato (CharaToLoki)
-# Version: 1.1
+# 7th March 2025, by Alex SL Gato (CharaToLoki)
+# Version: 1.2
 # Meant to be used alongside the AccesibilityConfig UMM option (located at scripts/Custom/UnifiedMainMenu/ConfigModules/Options/), this file must be under scripts/Custom/UnifiedMainMenu/ConfigModules/Options/AccesibilityConfigFiles
 ##################################
 # This file takes care of listing the variable colors which are modified in other files and used instead of regular colors, like FoundationTech's Hull Gauge tech
@@ -100,7 +100,8 @@ except:
 	AblativeArmour = None
 
 if AblativeArmour != None:
-	App.CustomTechsTranscendentalRodiniumArmorFill = AblativeArmour.kFillColor
+	if hasattr(AblativeArmour, "kFillColor"):
+		App.CustomTechsTranscendentalRodiniumArmorFill = AblativeArmour.kFillColor
 
 sDefaultColors = { # Colors from App.py
 	# We could add it to a pre-existing category, like STButton marker colors.
@@ -112,7 +113,7 @@ sDefaultColors = { # Colors from App.py
 """
 #
 MODINFO = { "Author": "\"USS Sovereign\" (mario0085), Noat (noatblok),\"Alex SL Gato\" (andromedavirgoa@gmail.com)",
-	    "Version": "0.43",
+	    "Version": "0.53",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }

@@ -1,4 +1,7 @@
 == Changelog ==
+0.5.3:
+    - Updated value files to be more resistant to errors.
+    - Added support for GalaxyChart's Galaxy Map GUI.
 0.5.2:
     - Updated the FIX-AblativeArmour1dot0 Autoload script to provide full starbase repair functionality and better armour inheritance.
 0.5.1:
