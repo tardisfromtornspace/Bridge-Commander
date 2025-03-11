@@ -1,4 +1,6 @@
 == Changelog ==
+1.0.0:
+    - Official release of the mod on Gamefront.
 0.5.5:
     - Added a new DefaultColorsExtras value file to add support to g_kSTButtonMarkerGray, g_kSTButtonColors and g_pConditionColors.
 0.5.4:

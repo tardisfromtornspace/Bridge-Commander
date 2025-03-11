@@ -1,7 +1,7 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL LICENSE AS WELL
 # AccesibilityConfig.py
-# 7th March 2025, by USS Sovereign, and tweaked by Noat and Alex SL Gato (CharaToLoki)
+# 11th March 2025, by USS Sovereign, and tweaked by Noat and Alex SL Gato (CharaToLoki)
 #         Inspired by the Shield Percentages mod by Defiant. It was originally made pre-2010 with the goal of showing lots of accessibility options, such as for colorblind people.
 #
 # Modify, redistribute to your liking. Just remember to give credit where due.
@@ -113,7 +113,7 @@ sDefaultColors = { # Colors from App.py
 """
 #
 MODINFO = { "Author": "\"USS Sovereign\" (mario0085), Noat (noatblok),\"Alex SL Gato\" (andromedavirgoa@gmail.com)",
-	    "Version": "0.54",
+	    "Version": "1.0",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -696,6 +696,25 @@ for typeC in sDefaultColors.keys():
 
 listedTypes = list(dConfig["ColorsList"].keys()) 
 listedTypes.sort()
+
+#
+"""
+# A pity, this does not work for controlling colors, either
+dConfig["ForcedButton"], issues = SafeConfigStatement("ForcedButton", pModule, 1, issues, 0, 1) #SafeConfigStatement("ForcedButton", pModule, 0, issues, 0, 1)
+oldFunction = App.STButton.SetColorBasedOnFlags
+def new_function(_self):
+	global dConfig
+	if dConfig == None or not dConfig.has_key("ForcedButton") or dConfig["ForcedButton"] == 0:
+		oldFunction(_self) # Uses old function
+	else:
+		_self.SetNormalColor(dConfig["Colors"]["g_kSTButtonColors"][1])
+		_self.SetSelectedColor(dConfig["Colors"]["g_kSTButtonColors"][1])
+		_self.SetHighlightedColor(dConfig["Colors"]["g_kSTButtonColors"][1])
+		_self.SetDisabledColor(dConfig["Colors"]["g_kSTButtonColors"][1])
+		oldFunction(_self) # Uses old function
+
+App.STButton.SetColorBasedOnFlags = new_function
+"""
 
 def SaveConfig(pObject, pEvent):
 	try:
