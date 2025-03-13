@@ -1,6 +1,6 @@
 #################################################################################################################
 #         TachyonBeam by Alex SL Gato
-#         21st October 2024
+#         13th March 2025
 #         Based on FiveSecsGodPhaser by USS Frontier, scripts/ftb/Tech/TachyonProjectile by the FoundationTechnologies team, and scripts/ftb/Tech/FedAblativeArmour by the FoundationTechnologies team
 #                          
 #################################################################################################################
@@ -26,7 +26,7 @@ def IsTachyonImmune():
 #################################################################################################################
 #
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "1.2",
+	    "Version": "1.3",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -443,7 +443,7 @@ class TachyonBeam(FoundationTech.TechDef):
                         
 		if not App.g_kUtopiaModule.IsMultiplayer() or App.g_kUtopiaModule.IsHost():
 			pSeq = App.TGSequence_Create()
-			if not pInstance.__dict__['TachyonBeam']["TimeEffect"] or pInstance.__dict__['TachyonBeam']["TimeEffect"] <= 0.0:
+			if not pInstance.__dict__['TachyonBeam'].has_key("TimeEffect") or pInstance.__dict__['TachyonBeam']["TimeEffect"] <= 0.0:
 				pInstance.__dict__['TachyonBeam']["TimeEffect"] = 5.0 # seconds
 			iTime = pInstance.__dict__['TachyonBeam']["TimeEffect"]
 			while(iTime >= 0):

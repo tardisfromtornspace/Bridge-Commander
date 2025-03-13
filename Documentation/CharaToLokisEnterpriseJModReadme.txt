@@ -1,4 +1,6 @@
 == Changelog ==
+1.2.9 - Fixing:
+   * Updated Tachyon Beam tech to fix a small error.
 1.2.8 - Fixing:
    * Updated the FIX-AblativeArmour1dot0 Autoload script to provide full starbase repair functionality and better armour inheritance.
 1.2.7 - Fixing:

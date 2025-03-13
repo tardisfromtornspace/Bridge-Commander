@@ -1,4 +1,6 @@
 == Changelog ==
+1.1.12 - fixes:
+   * Fixed small possible issue regarding Tachyon beam tech interference with the unupgraded Beliskner and the Valhalla.
 1.1.11 - fixes:
    * Updated the FIX-AblativeArmour1dot0 Autoload script to provide full starbase repair functionality and better armour inheritance.
 1.1.10 - fixes:
