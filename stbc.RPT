@@ -8316,3 +8316,78 @@ Address   Frame
 //=====================================================
 Current Time: Sun Mar 16 19:15:14 2025
 Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Sun Mar 16 19:33:39 2025
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  00700B05 01:002FFB05 C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+Registers:
+EAX:000357EF
+EBX:0099B010
+ECX:4AC712E8
+EDX:00000001
+ESI:00000000
+EDI:3091F578
+CS:EIP:0023:00700B05
+SS:ESP:002B:0019FC34  EBP:00000000
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010206
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+
+//=====================================================
+Current Time: Sun Mar 16 19:36:33 2025
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Sun Mar 16 19:38:57 2025
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  00700B05 01:002FFB05 C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+Registers:
+EAX:00026773
+EBX:0099B010
+ECX:4B9C9B10
+EDX:00000101
+ESI:00000000
+EDI:30E851B0
+CS:EIP:0023:00700B05
+SS:ESP:002B:0019FC34  EBP:00000000
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010206
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+
+//=====================================================
+Current Time: Sun Mar 16 21:11:14 2025
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  00700B05 01:002FFB05 C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+Registers:
+EAX:000622A9
+EBX:0099B010
+ECX:51E4CEE8
+EDX:00000101
+ESI:00000000
+EDI:525030C0
+CS:EIP:0023:00700B05
+SS:ESP:002B:0019FC34  EBP:00000000
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010206
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+
+//=====================================================
+Current Time: Sun Mar 16 21:34:40 2025
+Exception code: C0000005 ACCESS_VIOLATION

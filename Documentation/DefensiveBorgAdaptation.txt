@@ -1,4 +1,6 @@
 == Changelog ==
+1.9.9 - Automated Destroyed System Repair related fix
+- Changed some of the inner logic to be cleaner and fixed an edge-case with Breen Drainer and certain techs mixing together badly.
 1.9.8 - Automated Destroyed System Repair related fix
 - Changed its dummy torpedo name so it does not cause issues with some defensive torpedo scripts.
 1.9.7 - Automated Destroyed System Repair 0.55

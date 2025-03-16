@@ -1,6 +1,6 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
-# 21st October 2024, by Alex SL Gato (CharaToLoki), partially based on the Shield.py script by the Foundation Technologies team and Dasher42's Foundation script, and the FedAblativeArmor.py found in scripts/ftb/Tech in KM 2011.10
+# 16th March 2024, by Alex SL Gato (CharaToLoki), partially based on the Shield.py script by the Foundation Technologies team and Dasher42's Foundation script, and the FedAblativeArmor.py found in scripts/ftb/Tech in KM 2011.10
 # Also based on Conditions.ConditionSystemBelow, probably from the original STBC Team and Activision
 # TODO: 1. Create Read Me
 #	2. Create a clear guide on how to add this...
@@ -22,7 +22,7 @@ Foundation.ShipDef.LowCube.dTechs = {
 """
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.55",
+	    "Version": "0.6",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -42,14 +42,13 @@ import string
 from bcdebug import debug
 import traceback
 
-vOverflow = 0
-eAllSystemsat100Type = None
-eAllSystemsat100RealType = None
-
 REMOVE_POINTER_FROM_SET = 190
 NO_COLLISION_MESSAGE = 192
 REPLACE_MODEL_MSG = 208
 SET_TARGETABLE_MSG = 209
+
+eAllSystemsat100Type = App.UtopiaModule_GetNextEventType()
+eType = App.UtopiaModule_GetNextEventType()
 
 # based on the FedAblativeArmour.py script, a fragment probably imported from ATP Functions by Apollo
 def NiPoint3ToTGPoint3(p):
@@ -60,16 +59,13 @@ def NiPoint3ToTGPoint3(p):
 def findShipInstance(pShip):
 	pInstance = None
 	try:
-		pInstance = FoundationTech.dShips[pShip.GetName()]
-		if pInstance == None:
-			print "After looking, no tech pInstance for ship:", pShip.GetName(), "How odd..."
-		
+		if not pShip:
+			return pInstance
+		if FoundationTech.dShips.has_key(pShip.GetName()):
+			pInstance = FoundationTech.dShips[pShip.GetName()]
 	except:
 		pass
-		#print "Error while looking for pInstance for Automated Destroyed System Repair:"
-		#traceback.print_exc()
-		
-	#finally:
+
 	return pInstance
 
 def findscriptsShipsField(pShip, thingToFind):
@@ -87,24 +83,30 @@ class AutomatedDestroyedSystemRepairDef(FoundationTech.TechDef):
 		FoundationTech.TechDef.__init__(self, name)
 		self.pEventHandler = App.TGPythonInstanceWrapper()
 		self.pEventHandler.SetPyWrapper(self)
+
 		App.g_kEventManager.RemoveBroadcastHandler(App.ET_SUBSYSTEM_DESTROYED, self.pEventHandler, "UnDestroySystemDelay")
+		App.g_kEventManager.RemoveBroadcastHandler(eAllSystemsat100Type, self.pEventHandler, "Test")
+		App.g_kEventManager.RemoveBroadcastHandler(eType, self.pEventHandler, "UnDestroySystem")
+
 		App.g_kEventManager.AddBroadcastPythonMethodHandler(App.ET_SUBSYSTEM_DESTROYED, self.pEventHandler, "UnDestroySystemDelay")
+		App.g_kEventManager.AddBroadcastPythonMethodHandler(eAllSystemsat100Type, self.pEventHandler, "Test")
+		App.g_kEventManager.AddBroadcastPythonMethodHandler(eType, self.pEventHandler, "UnDestroySystem")
 
 
 	def Attach(self, pInstance):
 
-		global vOverflow, eAllSystemsat100Type, eAllSystemsat100RealType
-		if not vOverflow:
-			pGame = App.Game_GetCurrentGame()
-			pEpisode = pGame.GetCurrentEpisode()
-			pMission = pEpisode.GetCurrentMission()
-			eAllSystemsat100Type = App.Mission_GetNextEventType()
-			eAllSystemsat100RealType = App.Mission_GetNextEventType()
+		global eAllSystemsat100Type
 
 		pShip = App.ShipClass_Cast(App.TGObject_GetTGObjectPtr(pInstance.pShipID))
 		if pShip != None:
 
 			global eAllSystemsat100Type
+
+			pInstanceDict = None
+			pInstanceHasMyKey = 0
+			if pInstance:
+				pInstanceDict = pInstance.__dict__
+				pInstanceHasMyKey = pInstanceDict.has_key("Automated Destroyed System Repair")
 
 			pShipSet = pShip.GetPropertySet()
 			pShipList = pShipSet.GetPropertiesByType(App.CT_SUBSYSTEM_PROPERTY)
@@ -123,22 +125,20 @@ class AutomatedDestroyedSystemRepairDef(FoundationTech.TechDef):
 				fFraction = 1.0 - (1.0/pSubsystem.GetMaxCondition())
 				pWatcher = pSubsystem.GetConditionWatcher()
 				iRangeID = pWatcher.AddRangeCheck( fFraction, App.FloatRangeWatcher.FRW_BOTH, pEvent )
-				if pInstance and pInstance.__dict__.has_key("Automated Destroyed System Repair"):
-					if not pInstance.__dict__.has_key("Automated Destroyed System Repair I"):
-						pInstance.__dict__["Automated Destroyed System Repair I"] = {}
-					if not pInstance.__dict__["Automated Destroyed System Repair I"].has_key("SystemsToCheck"):
-						pInstance.__dict__["Automated Destroyed System Repair I"]["SystemsToCheck"] = {}
-					pInstance.__dict__["Automated Destroyed System Repair I"]["SystemsToCheck"][pSubsystem.GetObjID()] = {"Complies": 1, "Fraction": fFraction}
-					pInstance.__dict__["Automated Destroyed System Repair I"]["SystemsToCheck"][pSubsystem.GetObjID()]["Watcher"] = iRangeID
+				if pInstance:
+					if pInstanceHasMyKey:
+						if not pInstanceDict.has_key("Automated Destroyed System Repair I"):
+							pInstanceDict["Automated Destroyed System Repair I"] = {}
+
+						pInstanceDict["Automated Destroyed System Repair I"][pSubsystem.GetObjID()] = {"Complies": 1, "Fraction": fFraction}
+						pInstanceDict["Automated Destroyed System Repair I"][pSubsystem.GetObjID()]["Watcher"] = iRangeID
 
 			pShipList.TGDoneIterating()
 
-			App.g_kEventManager.AddBroadcastPythonMethodHandler(eAllSystemsat100Type, self.pEventHandler, "Test")
 		else:
 			#print "AutomatedDestroyedSystemRepair Error (at Attach): couldn't acquire ship of id", pInstance.pShipID
 			pass
 		pInstance.lTechs.append(self)
-		#print "AutomatedDestroyedSystemRepair: attached to ship:", pShip.GetName()
 
 	def Test(self, pFloatEvent):
 		fFraction = pFloatEvent.GetFloat()
@@ -151,46 +151,45 @@ class AutomatedDestroyedSystemRepairDef(FoundationTech.TechDef):
 			return 0
 
 		pShip = pSubsystem.GetParentShip()
-		if pShip:
-			pInstance = findShipInstance(pShip)
-			if pInstance and pInstance.__dict__.has_key("Automated Destroyed System Repair") and pInstance.__dict__.has_key("Automated Destroyed System Repair I") and pInstance.__dict__["Automated Destroyed System Repair I"].has_key("SystemsToCheck"):
-				myfFraction = 1.1 # Impossible to reach, ergo a good default value
-				if pInstance.__dict__["Automated Destroyed System Repair I"]["SystemsToCheck"].has_key(pSubsystem.GetObjID()) and pInstance.__dict__["Automated Destroyed System Repair I"]["SystemsToCheck"][pSubsystem.GetObjID()].has_key("Fraction"):
-					myfFraction = pInstance.__dict__["Automated Destroyed System Repair I"]["SystemsToCheck"][pSubsystem.GetObjID()]["Fraction"]
+		if pShip and hasattr(pShip, "GetObjID"):
+			pShip = App.ShipClass_GetObjectByID(None, pShip.GetObjID())
+			if pShip:
+				pInstance = findShipInstance(pShip)
+				if pInstance:
+					pInstanceDict = pInstance.__dict__
+
+					if pInstanceDict.has_key("Automated Destroyed System Repair") and pInstanceDict.has_key("Automated Destroyed System Repair I"):
+						myfFraction = 1.1 # Impossible to reach, ergo a good default value
+						if pInstanceDict["Automated Destroyed System Repair I"].has_key(pSubsystem.GetObjID()) and pInstanceDict["Automated Destroyed System Repair I"][pSubsystem.GetObjID()].has_key("Fraction"):
+							myfFraction = pInstanceDict["Automated Destroyed System Repair I"][pSubsystem.GetObjID()]["Fraction"]
 					
-				if fFraction >= myfFraction:
-					pInstance.__dict__["Automated Destroyed System Repair I"]["SystemsToCheck"][pSubsystem.GetObjID()]["Complies"] = 1
-				else:
-					pInstance.__dict__["Automated Destroyed System Repair I"]["SystemsToCheck"][pSubsystem.GetObjID()]["Complies"] = 0
+						if fFraction >= myfFraction:
+							pInstanceDict["Automated Destroyed System Repair I"][pSubsystem.GetObjID()]["Complies"] = 1
+						else:
+							pInstanceDict["Automated Destroyed System Repair I"][pSubsystem.GetObjID()]["Complies"] = 0
 
-				totalComply = pInstance.__dict__["Automated Destroyed System Repair I"]["SystemsToCheck"][pSubsystem.GetObjID()]["Complies"]
-				for subSysID in pInstance.__dict__["Automated Destroyed System Repair I"]["SystemsToCheck"].keys():
-					if pInstance.__dict__["Automated Destroyed System Repair I"]["SystemsToCheck"][subSysID]["Complies"] == 0:
-						totalComply = 0
-						break
+						totalComply = pInstanceDict["Automated Destroyed System Repair I"][pSubsystem.GetObjID()]["Complies"]
+						for subSysID in pInstanceDict["Automated Destroyed System Repair I"].keys():
+							if pInstanceDict["Automated Destroyed System Repair I"][subSysID]["Complies"] == 0:
+								totalComply = 0
+								break
 
-				if totalComply == 1:
-					notfast = 1
-					if pInstance.__dict__["Automated Destroyed System Repair"].has_key("DoNotInterfere"):
-						notfast = pInstance.__dict__["Automated Destroyed System Repair"]["DoNotInterfere"]
-					RefreshVisibleDamage(pShip, notfast)
+						if totalComply == 1:
+							notfast = 1
+							if pInstanceDict["Automated Destroyed System Repair"].has_key("DoNotInterfere"):
+								notfast = pInstanceDict["Automated Destroyed System Repair"]["DoNotInterfere"]
+							RefreshVisibleDamage(pShip, notfast)
 
-			#else:
-			#	if pInstance and pInstance.__dict__.has_key("Automated Destroyed System Repair"):
-			#		RefreshVisibleDamage(pShip)
+					#else:
+					#	if pInstanceDict.has_key("Automated Destroyed System Repair"):
+					#		RefreshVisibleDamage(pShip)
 
 		self.pEventHandler.CallNextHandler(pFloatEvent)
 		return 0
 
 	def Detach(self, pInstance):
-		global eAllSystemsat100Type
 		pShip = App.ShipClass_Cast(App.TGObject_GetTGObjectPtr(pInstance.pShipID))
 		if pShip != None:
-
-			#pShip.RemoveHandlerForInstance(App.ET_REPAIR_COMPLETED, __name__ + ".CheckTotalStatus")
-			#pHull = pShip.GetHull()
-			#pInstance = findShipInstance(pShip)
-
 			pShipSet = pShip.GetPropertySet()
 			pShipList = pShipSet.GetPropertiesByType(App.CT_SUBSYSTEM_PROPERTY)
 			iNumItems = pShipList.TGGetNumItems()
@@ -202,7 +201,7 @@ class AutomatedDestroyedSystemRepairDef(FoundationTech.TechDef):
 
 				iInfo = None
 				try:
-					iInfo = pInstance.__dict__["Automated Destroyed System Repair I"]["SystemsToCheck"][pSubsystem.GetObjID()]["Watcher"]
+					iInfo = pInstance.__dict__["Automated Destroyed System Repair I"][pSubsystem.GetObjID()]["Watcher"]
 				except:
 					iInfo = None
 
@@ -218,13 +217,35 @@ class AutomatedDestroyedSystemRepairDef(FoundationTech.TechDef):
 				
 			pShipList.TGDoneIterating()
 
-			del pInstance.__dict__["Automated Destroyed System Repair I"]["SystemsToCheck"]
-			del pInstance.__dict__["Automated Destroyed System Repair I"]
+			if pInstance and pInstance.__dict__.has_key("Automated Destroyed System Repair I"):
+				del pInstance.__dict__["Automated Destroyed System Repair I"]
 
 		else:
-			#print "AutomatedDestroyedSystemRepair Error (at Detach): couldn't acquire ship of id", pInstance.pShipID
-			pass
-		pInstance.lTechs.remove(self)
+			if pInstance:
+				pInstanceDict = pInstance.__dict__
+				if pInstanceDict.has_key("Automated Destroyed System Repair I"):
+					for subSysID in pInstanceDict["Automated Destroyed System Repair I"].keys():
+						
+						#iInfo = None
+						#try:
+						#	iInfo = pInstance.__dict__["Automated Destroyed System Repair I"][subSysID]["Watcher"]
+						#except:
+						#	iInfo = None
+
+						#if iInfo is not None:
+						#	pWatcher = pSubsystem.GetConditionWatcher()
+						#	pWatcher.RemoveRangeCheck( iInfo )
+
+						try:
+							App.g_kTimerManager.DeleteTimer(pInstance.__dict__['Automated Destroyed System Repair I'][subSysID]['Timer'].GetObjID())
+						except:
+							pass
+
+					del pInstance.__dict__["Automated Destroyed System Repair I"]
+
+		if pInstance:
+			pInstance.lTechs.remove(self)
+
 		#print "AutomatedDestroyedSystemRepair: detached from ship:", pShip.GetName()
 
 	def UnDestroySystemDelay(self, pEvent):
@@ -256,20 +277,10 @@ class AutomatedDestroyedSystemRepairDef(FoundationTech.TechDef):
 				if not pInstance.__dict__['Automated Destroyed System Repair I'].has_key(destroyedSystemName):
 					pInstance.__dict__['Automated Destroyed System Repair I'][destroyedSystemName] = {}
 
-				if pInstance.__dict__['Automated Destroyed System Repair I'].has_key("Timer"):
+				if pInstance.__dict__['Automated Destroyed System Repair I'][destroyedSystemName].has_key("Timer"):
 					App.g_kTimerManager.DeleteTimer(pInstance.__dict__['Automated Destroyed System Repair I'][destroyedSystemName]['Timer'].GetObjID())
 					del pInstance.__dict__['Automated Destroyed System Repair I'][destroyedSystemName]['Timer']
 
-				pGame = App.Game_GetCurrentGame()
-				pEpisode = pGame.GetCurrentEpisode()
-				pMission = pEpisode.GetCurrentMission()
-				eType = App.Mission_GetNextEventType()
-
-				#pShip.AddPythonFuncHandlerForInstance(eType, __name__ + ".unDestroySystem")
-				#App.g_kEventManager.AddBroadcastPythonMethodHandler(eType, __name__ + ".AutomatedDestroyedSystemRepairDef.pEventHandler", __name__ + ".UnDestroySystem")
-				#App.g_kEventManager.AddBroadcastPythonMethodHandler(eType, pMission, __name__ + ".UnDestroySystem")
-				App.g_kEventManager.AddBroadcastPythonMethodHandler(eType, self.pEventHandler, "UnDestroySystem")
-	
 				pEvent2 = App.TGIntEvent_Create()
 				pEvent2.SetEventType(eType)
 				pEvent2.SetSource(pEvent.GetSource())
@@ -295,13 +306,6 @@ class AutomatedDestroyedSystemRepairDef(FoundationTech.TechDef):
 				pInstance = findShipInstance(pShip)
 				if pInstance and pInstance.__dict__.has_key("Automated Destroyed System Repair"):
 					UnDestroySystem(pShip, pEvent)
-
-		try:
-			thisEventType = pEvent.GetEventType()
-			#pShip.RemoveHandlerForInstance(thisEventType, __name__ + ".unDestroySystem")
-			App.g_kEventManager.RemoveBroadcastHandler(thisEventType, self.pEventHandler, "UnDestroySystem")
-		except:
-			pass
 
 		return 0
 
@@ -338,6 +342,7 @@ def UnDestroySystem(pObject, pEvent):
 
 def RefreshVisibleDamage(pShip, fast=0):
 	pShip = App.ShipClass_GetObjectByID(None, pShip.GetObjID())
+
 	if pShip:
 		if fast == 0:
 			pShip.RemoveVisibleDamage() # this works nicely, but only once
@@ -347,10 +352,14 @@ def RefreshVisibleDamage(pShip, fast=0):
 			ShipScript = __import__(pShip.GetScript())
 			ShipScript.LoadModel()
 			kStats = ShipScript.GetShipStats()
+
+                	if App.g_kLODModelManager.AreGlowMapsEnabled() == 1:
+                        	App.g_kLODModelManager.SetGlowMapsEnabled(0)
+                        	App.g_kLODModelManager.SetGlowMapsEnabled(1)
+
 			pShip.SetupModel(kStats['Name'])
 
 			# Did not find why it gets the ship black until it fires or gets fired upon... so we'll create our own dumb way of fixing that, we create a torpedo at a ridiculous position and force it to fire, and then die
-			#TO-DO if this works, we need to credit them and add dependencies
 			from ftb.Tech.ATPFunctions import *
 
 			point = pShip.GetWorldLocation()
@@ -370,7 +379,6 @@ def RefreshVisibleDamage(pShip, fast=0):
 
 			if App.g_kUtopiaModule.IsMultiplayer():
 				MPSentReplaceModelMessage(pShip, sNewShipScript)
-
 
 	return 0
 

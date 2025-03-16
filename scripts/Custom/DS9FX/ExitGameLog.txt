@@ -3481,3 +3481,529 @@ data/TGL/Maelstrom/Episode 2/E2M2.tgl E2M2Serris3Scan1
 
 
 ##### End Of The Log #####
+##### Bridge Commander Exit Log: 16 Mar 2025 19:31:28#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+Jumpspace Drive 20070905 Initializing...
+TimeVortex Drive 20070905 Initializing...
+Warpspace Drive 20070905 Initializing...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+Jumpspace: Quick Battle is running... Mod is starting up...
+TimeVortex: Quick Battle is running... Mod is starting up...
+Warpspace: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting splash damage for Total PointDefence Firepoint Stolen Cruiser-10 C Torpedo instance at _41256c28_p_Torpedo to (398.437500, 7.968750)
+Setting splash damage for Total PointDefence Firepoint Stolen Cruiser-7 C Torpedo instance at _41256c28_p_Torpedo to (562.500000, 11.250000)
+Setting splash damage for Total PointDefence Firepoint Stolen Cruiser-6 C Torpedo instance at _415bde70_p_Torpedo to (398.437500, 7.968750)
+Setting splash damage for Stolen Cruiser-7 to (312.500092, 6.250002)
+Setting splash damage for Total PointDefence Firepoint Stolen Cruiser-6 C Torpedo instance at _4e5747e8_p_Torpedo to (125.025070, 2.500501)
+Setting splash damage for Stolen Cruiser-6 to (312.500366, 6.250007)
+Setting splash damage for Stolen Cruiser-8 to (312.500488, 6.250010)
+Setting splash damage for Stolen Cruiser-9 to (312.500488, 6.250010)
+Setting splash damage for Stolen Cruiser-10 to (312.500488, 6.250010)
+
+# DS9FX has...
+
+# taken a console dump
+Setting splash damage for Breen BCH-5 to (789.882202, 15.797644)
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Creating WarpSequence:  Ship = Breen BCH-5  // To Set = None  // Placement Name = None
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting splash damage for Total PointDefence Firepoint Stolen Cruiser-9 C Torpedo instance at _415ba0a0_p_Torpedo to (398.437500, 7.968750)
+Setting splash damage for Total PointDefence Firepoint Stolen Cruiser-8 C Torpedo instance at _415ba210_p_Torpedo to (398.437500, 7.968750)
+Setting splash damage for Total PointDefence Firepoint Stolen Cruiser-10 C Torpedo instance at _41257078_p_Torpedo to (398.437500, 7.968750)
+Setting splash damage for Total PointDefence Firepoint Stolen Cruiser-7 C Torpedo instance at _415ba210_p_Torpedo to (562.500000, 11.250000)
+Setting splash damage for Total PointDefence Firepoint Stolen Cruiser-8 C Torpedo instance at _415b5b98_p_Torpedo to (398.437500, 7.968750)
+Setting splash damage for Total PointDefence Firepoint Stolen Cruiser-6 C Torpedo instance at _4e570008_p_Torpedo to (398.437500, 7.968750)
+Setting splash damage for Total PointDefence Firepoint Stolen Cruiser-9 C Torpedo instance at _415b7578_p_Torpedo to (398.437500, 7.968750)
+Setting splash damage for Total PointDefence Firepoint Stolen Cruiser-10 C Torpedo instance at _41117f50_p_Torpedo to (398.437500, 7.968750)
+Setting splash damage for Total PointDefence Firepoint Stolen Cruiser-7 C Torpedo instance at _415b8c80_p_Torpedo to (398.437500, 7.968750)
+Creating WarpSequence:  Ship = Breen BCH-5  // To Set = None  // Placement Name = None
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 54c7d4d8> ignored
+Setting splash damage for Breen BCH-5 to (1024.102417, 20.482048)
+Setting splash damage for Total PointDefence Firepoint Stolen Cruiser-9 C Torpedo instance at _4e570178_p_Torpedo to (398.437500, 7.968750)
+Setting splash damage for Total PointDefence Firepoint Stolen Cruiser-6 C Torpedo instance at _415bcd30_p_Torpedo to (398.437500, 7.968750)
+Setting splash damage for Total PointDefence Firepoint Stolen Cruiser-8 C Torpedo instance at _4f325fc8_p_Torpedo to (375.000061, 7.500001)
+Setting splash damage for Breen DN-2 to (2042.416748, 40.848335)
+Creating WarpSequence:  Ship = Breen DN-2  // To Set = None  // Placement Name = None
+PlasmaFX Communicating with Targetable Plasma Streams...
+...Sucess
+Setting splash damage for Plasma Stream Firepoint0_t to (562.500000, 11.250000)
+Setting splash damage for EFP Firepoint0_t to (562.500000, 11.250000)
+Setting splash damage for Total PointDefence Firepoint Stolen Cruiser-7 C Torpedo instance at _4f0f2648_p_Torpedo to (398.437500, 7.968750)
+Setting splash damage for Total PointDefence Firepoint Stolen Cruiser-10 C Torpedo instance at _4f0f2648_p_Torpedo to (23.437500, 0.468750)
+Setting splash damage for Total PointDefence Firepoint Stolen Cruiser-8 C Torpedo instance at _4e571cc8_p_Torpedo to (562.500000, 11.250000)
+Setting splash damage for Total PointDefence Firepoint Stolen Cruiser-9 C Torpedo instance at _4f0f2648_p_Torpedo to (515.625000, 10.312500)
+Setting splash damage for Breen BCH-4 to (915.377502, 18.307550)
+killing the player class instance
+Creating WarpSequence:  Ship = Breen BCH-4  // To Set = None  // Placement Name = None
+Setting splash damage for Breen DN-1 to (1982.307861, 39.646156)
+Creating WarpSequence:  Ship = Breen DN-1  // To Set = None  // Placement Name = None
+Setting splash damage for Breen BCH-3 to (981.730957, 19.634619)
+Trying to clean memory
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Simulated Point Defence: cancelling, error in try found...
+Simulated Point Defence: cancelling, error in try found...
+Simulated Point Defence: cancelling, error in try found...
+Simulated Point Defence: cancelling, error in try found...
+Simulated Point Defence: cancelling, error in try found...
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 16 Mar 2025 19:31:28#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+Jumpspace Drive 20070905 Initializing...
+TimeVortex Drive 20070905 Initializing...
+Warpspace Drive 20070905 Initializing...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+Jumpspace: Quick Battle is running... Mod is starting up...
+TimeVortex: Quick Battle is running... Mod is starting up...
+Warpspace: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting splash damage for Total PointDefence Firepoint Stolen Cruiser-10 C Torpedo instance at _41256c28_p_Torpedo to (398.437500, 7.968750)
+Setting splash damage for Total PointDefence Firepoint Stolen Cruiser-7 C Torpedo instance at _41256c28_p_Torpedo to (562.500000, 11.250000)
+Setting splash damage for Total PointDefence Firepoint Stolen Cruiser-6 C Torpedo instance at _415bde70_p_Torpedo to (398.437500, 7.968750)
+Setting splash damage for Stolen Cruiser-7 to (312.500092, 6.250002)
+Setting splash damage for Total PointDefence Firepoint Stolen Cruiser-6 C Torpedo instance at _4e5747e8_p_Torpedo to (125.025070, 2.500501)
+Setting splash damage for Stolen Cruiser-6 to (312.500366, 6.250007)
+Setting splash damage for Stolen Cruiser-8 to (312.500488, 6.250010)
+Setting splash damage for Stolen Cruiser-9 to (312.500488, 6.250010)
+Setting splash damage for Stolen Cruiser-10 to (312.500488, 6.250010)
+
+# DS9FX has...
+
+# taken a console dump
+Setting splash damage for Breen BCH-5 to (789.882202, 15.797644)
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Creating WarpSequence:  Ship = Breen BCH-5  // To Set = None  // Placement Name = None
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting splash damage for Total PointDefence Firepoint Stolen Cruiser-9 C Torpedo instance at _415ba0a0_p_Torpedo to (398.437500, 7.968750)
+Setting splash damage for Total PointDefence Firepoint Stolen Cruiser-8 C Torpedo instance at _415ba210_p_Torpedo to (398.437500, 7.968750)
+Setting splash damage for Total PointDefence Firepoint Stolen Cruiser-10 C Torpedo instance at _41257078_p_Torpedo to (398.437500, 7.968750)
+Setting splash damage for Total PointDefence Firepoint Stolen Cruiser-7 C Torpedo instance at _415ba210_p_Torpedo to (562.500000, 11.250000)
+Setting splash damage for Total PointDefence Firepoint Stolen Cruiser-8 C Torpedo instance at _415b5b98_p_Torpedo to (398.437500, 7.968750)
+Setting splash damage for Total PointDefence Firepoint Stolen Cruiser-6 C Torpedo instance at _4e570008_p_Torpedo to (398.437500, 7.968750)
+Setting splash damage for Total PointDefence Firepoint Stolen Cruiser-9 C Torpedo instance at _415b7578_p_Torpedo to (398.437500, 7.968750)
+Setting splash damage for Total PointDefence Firepoint Stolen Cruiser-10 C Torpedo instance at _41117f50_p_Torpedo to (398.437500, 7.968750)
+Setting splash damage for Total PointDefence Firepoint Stolen Cruiser-7 C Torpedo instance at _415b8c80_p_Torpedo to (398.437500, 7.968750)
+Creating WarpSequence:  Ship = Breen BCH-5  // To Set = None  // Placement Name = None
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 54c7d4d8> ignored
+Setting splash damage for Breen BCH-5 to (1024.102417, 20.482048)
+Setting splash damage for Total PointDefence Firepoint Stolen Cruiser-9 C Torpedo instance at _4e570178_p_Torpedo to (398.437500, 7.968750)
+Setting splash damage for Total PointDefence Firepoint Stolen Cruiser-6 C Torpedo instance at _415bcd30_p_Torpedo to (398.437500, 7.968750)
+Setting splash damage for Total PointDefence Firepoint Stolen Cruiser-8 C Torpedo instance at _4f325fc8_p_Torpedo to (375.000061, 7.500001)
+Setting splash damage for Breen DN-2 to (2042.416748, 40.848335)
+Creating WarpSequence:  Ship = Breen DN-2  // To Set = None  // Placement Name = None
+PlasmaFX Communicating with Targetable Plasma Streams...
+...Sucess
+Setting splash damage for Plasma Stream Firepoint0_t to (562.500000, 11.250000)
+Setting splash damage for EFP Firepoint0_t to (562.500000, 11.250000)
+Setting splash damage for Total PointDefence Firepoint Stolen Cruiser-7 C Torpedo instance at _4f0f2648_p_Torpedo to (398.437500, 7.968750)
+Setting splash damage for Total PointDefence Firepoint Stolen Cruiser-10 C Torpedo instance at _4f0f2648_p_Torpedo to (23.437500, 0.468750)
+Setting splash damage for Total PointDefence Firepoint Stolen Cruiser-8 C Torpedo instance at _4e571cc8_p_Torpedo to (562.500000, 11.250000)
+Setting splash damage for Total PointDefence Firepoint Stolen Cruiser-9 C Torpedo instance at _4f0f2648_p_Torpedo to (515.625000, 10.312500)
+Setting splash damage for Breen BCH-4 to (915.377502, 18.307550)
+killing the player class instance
+Creating WarpSequence:  Ship = Breen BCH-4  // To Set = None  // Placement Name = None
+Setting splash damage for Breen DN-1 to (1982.307861, 39.646156)
+Creating WarpSequence:  Ship = Breen DN-1  // To Set = None  // Placement Name = None
+Setting splash damage for Breen BCH-3 to (981.730957, 19.634619)
+Trying to clean memory
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Simulated Point Defence: cancelling, error in try found...
+Simulated Point Defence: cancelling, error in try found...
+Simulated Point Defence: cancelling, error in try found...
+Simulated Point Defence: cancelling, error in try found...
+Simulated Point Defence: cancelling, error in try found...
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 16 Mar 2025 21:18:08#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+Jumpspace Drive 20070905 Initializing...
+TimeVortex Drive 20070905 Initializing...
+Warpspace Drive 20070905 Initializing...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+Jumpspace: Quick Battle is running... Mod is starting up...
+TimeVortex: Quick Battle is running... Mod is starting up...
+Warpspace: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+
+
+
+
+Setting splash damage for Spider Vessel-14 to (314.422455, 6.288449)
+Setting splash damage for Spider Vessel-9 to (314.338837, 6.286777)
+Setting splash damage for Spider Vessel-10 to (312.667236, 6.253345)
+Setting splash damage for Spider Vessel-12 to (314.053925, 6.281078)
+Setting splash damage for Spider Vessel-15 to (312.500092, 6.250002)
+Setting splash damage for Spider Vessel-7 to (312.500092, 6.250002)
+Setting splash damage for Breen DN-5 to (2300.000000, 46.000000)
+Dummy shield damage
+Creating WarpSequence:  Ship = Breen DN-5  // To Set = None  // Placement Name = None
+Setting splash damage for Spider Vessel-13 to (312.500458, 6.250009)
+Dummy shield damage
+Dummy shield damage
+Dummy shield damage
+Creating WarpSequence:  Ship = Breen BCH-2  // To Set = None  // Placement Name = None
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 40a79edc> ignored
+Setting splash damage for Breen BCH-2 to (5992.141602, 119.842834)
+Setting splash damage for Breen BCH-1 to (7175.000000, 143.500000)
+Creating WarpSequence:  Ship = Breen BCH-1  // To Set = None  // Placement Name = None
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+# DS9FX has...
+
+# taken a console dump
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+data/TGL/Maelstrom/Episode 7/E7M6.tgl E7M6CardsFollow4
+Dummy shield damage
+Dummy shield damage
+Setting splash damage for Breen DN-6 to (739.911438, 14.798229)
+Setting splash damage for Breen DN-4 to (2300.000000, 46.000000)
+Dummy shield damage
+Creating WarpSequence:  Ship = Breen DN-4  // To Set = None  // Placement Name = None
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 16 Mar 2025 21:18:08#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+Jumpspace Drive 20070905 Initializing...
+TimeVortex Drive 20070905 Initializing...
+Warpspace Drive 20070905 Initializing...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+Jumpspace: Quick Battle is running... Mod is starting up...
+TimeVortex: Quick Battle is running... Mod is starting up...
+Warpspace: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+
+
+
+
+Setting splash damage for Spider Vessel-14 to (314.422455, 6.288449)
+Setting splash damage for Spider Vessel-9 to (314.338837, 6.286777)
+Setting splash damage for Spider Vessel-10 to (312.667236, 6.253345)
+Setting splash damage for Spider Vessel-12 to (314.053925, 6.281078)
+Setting splash damage for Spider Vessel-15 to (312.500092, 6.250002)
+Setting splash damage for Spider Vessel-7 to (312.500092, 6.250002)
+Setting splash damage for Breen DN-5 to (2300.000000, 46.000000)
+Dummy shield damage
+Creating WarpSequence:  Ship = Breen DN-5  // To Set = None  // Placement Name = None
+Setting splash damage for Spider Vessel-13 to (312.500458, 6.250009)
+Dummy shield damage
+Dummy shield damage
+Dummy shield damage
+Creating WarpSequence:  Ship = Breen BCH-2  // To Set = None  // Placement Name = None
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 40a79edc> ignored
+Setting splash damage for Breen BCH-2 to (5992.141602, 119.842834)
+Setting splash damage for Breen BCH-1 to (7175.000000, 143.500000)
+Creating WarpSequence:  Ship = Breen BCH-1  // To Set = None  // Placement Name = None
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+# DS9FX has...
+
+# taken a console dump
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+data/TGL/Maelstrom/Episode 7/E7M6.tgl E7M6CardsFollow4
+Dummy shield damage
+Dummy shield damage
+Setting splash damage for Breen DN-6 to (739.911438, 14.798229)
+Setting splash damage for Breen DN-4 to (2300.000000, 46.000000)
+Dummy shield damage
+Creating WarpSequence:  Ship = Breen DN-4  // To Set = None  // Placement Name = None
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 16 Mar 2025 21:39:28#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+Jumpspace Drive 20070905 Initializing...
+TimeVortex Drive 20070905 Initializing...
+Warpspace Drive 20070905 Initializing...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+Jumpspace: Quick Battle is running... Mod is starting up...
+TimeVortex: Quick Battle is running... Mod is starting up...
+Warpspace: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Shuttle Launching Error: ship Galaxy-1 has no Shuttle launching points
+Shuttle Launching Error: ship Galaxy-2 has no Shuttle launching points
+Shuttle Launching Error: ship Galaxy-3 has no Shuttle launching points
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+data/TGL/Maelstrom/Episode 8/E8M2.tgl E8M2MatanDepart02
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 16 Mar 2025 21:39:28#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+Jumpspace Drive 20070905 Initializing...
+TimeVortex Drive 20070905 Initializing...
+Warpspace Drive 20070905 Initializing...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+Jumpspace: Quick Battle is running... Mod is starting up...
+TimeVortex: Quick Battle is running... Mod is starting up...
+Warpspace: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Shuttle Launching Error: ship Galaxy-1 has no Shuttle launching points
+Shuttle Launching Error: ship Galaxy-2 has no Shuttle launching points
+Shuttle Launching Error: ship Galaxy-3 has no Shuttle launching points
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+data/TGL/Maelstrom/Episode 8/E8M2.tgl E8M2MatanDepart02
+
+# DS9FX has...
+
+# taken a console dump
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####

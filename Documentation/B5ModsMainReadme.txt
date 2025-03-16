@@ -1,4 +1,7 @@
 ==Changelog==
+1.2.17 -
+   Fixes and updates:
+   * Updated AutomaticDestroyedSystemRepair script to 0.6 to fix weird edge-case issue with Breen Drainer on certain tech combinations.
 1.2.16 -
    Updates:
    * Updated FoolTargeting to 0.4 to support new modes of target miss.
