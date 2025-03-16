@@ -65,7 +65,7 @@ def GetName():
 	return("NovaBombTorpedo")
 
 def GetDamage():
-	return 600.0
+	return 230.0
 
 def GetGuidanceLifetime():
 	return 7.0

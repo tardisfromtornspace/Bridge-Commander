@@ -9,6 +9,8 @@ def GetShipStats():
 		"Name": "HalcyonPromise",
 		"HardpointFile": "HalcyonPromise",
 		"Species": Multiplayer.SpeciesToShip.GALAXY,
+		"DamageRadMod" : 0.2,
+		#"DamageStrMod" : 0.8666,
              }
 	return kShipStats
 

@@ -51,7 +51,7 @@ def GetName():
 	return("PM6Disruptor")
 
 def GetDamage():
-	return 990.0
+	return 300.0
 
 def GetGuidanceLifetime():
 	return 0.9

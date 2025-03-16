@@ -21,7 +21,7 @@ def GetLaunchSpeed():
 
 
 def GetLaunchSound():
-    return 'Photon Torpedo'
+    return "ValiantMissile"
 
 
 def GetPowerCost():
@@ -33,7 +33,7 @@ def GetName():
 
 
 def GetDamage():
-    return 500.0
+    return 110.0
 
 
 def GetGuidanceLifetime():

@@ -9,6 +9,8 @@ def GetShipStats():
 		"Name": "Andromeda",
 		"HardpointFile": "Andromeda",
 		"Species": Multiplayer.SpeciesToShip.SHUTTLE,
+		"DamageRadMod" : 0.2,
+		#"DamageStrMod" : 0.8666,
              }
 	return kShipStats
 

@@ -69,7 +69,7 @@ def GetName():
 	return("Valiant Missile")
 
 def GetDamage():
-	return 450.0
+	return 280.0
 
 def GetGuidanceLifetime():
 	return 10000.0
