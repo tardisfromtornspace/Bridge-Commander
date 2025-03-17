@@ -8391,3 +8391,27 @@ Address   Frame
 //=====================================================
 Current Time: Sun Mar 16 21:34:40 2025
 Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Sun Mar 16 22:42:29 2025
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  77D84824 01:00043824 C:\Windows\SYSTEM32\ntdll.dll
+
+Registers:
+EAX:00000000
+EBX:7C2B4000
+ECX:00000000
+EDX:7C2EF7B0
+ESI:7C2EF7A8
+EDI:02B00000
+CS:EIP:0023:77D84824
+SS:ESP:002B:0019F588  EBP:0019F6D8
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+
+Application Timestamp: Thu Jan 01 01:00:00 1970
+Doing stack walk
+
+Call stack:
+Address   Frame
+77D84824  0019F6D8  0001:00043824 C:\Windows\SYSTEM32\ntdll.dll (No symbol info found)
+

@@ -1,4 +1,7 @@
 ==Changelog==
+1.2.18 -
+   Updates:
+   * Given a glowup to the G'Quan and the Primus' weapon systems.
 1.2.17 -
    Fixes and updates:
    * Updated AutomaticDestroyedSystemRepair script to 0.6 to fix weird edge-case issue with Breen Drainer on certain tech combinations.

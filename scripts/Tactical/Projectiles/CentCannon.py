@@ -22,9 +22,9 @@ import App
 def Create(pTorp):
 
 	kOuterShellColor = App.TGColorA()
-	kOuterShellColor.SetRGBA(0.007843, 1.000000, 0.007843, 1.000000)	
+	kOuterShellColor.SetRGBA(1.000000, 0.007843, 0.007843, 1.000000)	
 	kOuterCoreColor = App.TGColorA()
-	kOuterCoreColor.SetRGBA(0.588235, 1.000000, 0.588235, 1.000000)
+	kOuterCoreColor.SetRGBA(1.000000, 0.788235, 0.588235, 1.000000)
 
 	pTorp.CreateDisruptorModel(kOuterShellColor,kOuterCoreColor, 0.6, 0.14) 	
 	pTorp.SetDamage( GetDamage() )
