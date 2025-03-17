@@ -1,6 +1,6 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
-# 16th March 2024, by Alex SL Gato (CharaToLoki), partially based on the Shield.py script by the Foundation Technologies team and Dasher42's Foundation script, and the FedAblativeArmor.py found in scripts/ftb/Tech in KM 2011.10
+# 17th March 2024, by Alex SL Gato (CharaToLoki), partially based on the Shield.py script by the Foundation Technologies team and Dasher42's Foundation script, and the FedAblativeArmor.py found in scripts/ftb/Tech in KM 2011.10
 # Also based on Conditions.ConditionSystemBelow, probably from the original STBC Team and Activision
 # TODO: 1. Create Read Me
 #	2. Create a clear guide on how to add this...
@@ -22,7 +22,7 @@ Foundation.ShipDef.LowCube.dTechs = {
 """
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.6",
+	    "Version": "0.62",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -257,7 +257,8 @@ class AutomatedDestroyedSystemRepairDef(FoundationTech.TechDef):
 		return 0
 
 	def UnDestroySystemDelay2(self, pObject, pEvent):
-		pShip = App.ShipClass_Cast(App.TGObject_GetTGObjectPtr(pObject.GetObjID()))
+		pShip = App.ShipClass_GetObjectByID(None, pObject.GetObjID())
+		#pShip = App.ShipClass_Cast(App.TGObject_GetTGObjectPtr(pObject.GetObjID()))
 		if pShip:
 			pInstance = findShipInstance(pShip)
 			if pInstance and pInstance.__dict__.has_key("Automated Destroyed System Repair"):
@@ -311,8 +312,8 @@ class AutomatedDestroyedSystemRepairDef(FoundationTech.TechDef):
 
 def UnDestroySystem(pObject, pEvent):
 	debug(__name__ + ", UnDestroySystem")
-	pShip = App.ShipClass_Cast(App.TGObject_GetTGObjectPtr(pObject.GetObjID()))
-
+	#pShip = App.ShipClass_Cast(App.TGObject_GetTGObjectPtr(pObject.GetObjID()))
+	pShip = App.ShipClass_GetObjectByID(None, pObject.GetObjID())
 	if pShip:
 		pInstance = findShipInstance(pShip)
 		if pInstance and pInstance.__dict__.has_key("Automated Destroyed System Repair"):
@@ -353,7 +354,7 @@ def RefreshVisibleDamage(pShip, fast=0):
 			ShipScript.LoadModel()
 			kStats = ShipScript.GetShipStats()
 
-                	if App.g_kLODModelManager.AreGlowMapsEnabled() == 1:
+                	if App.g_kLODModelManager.AreGlowMapsEnabled() == 1 and App.g_kLODModelManager.GetDropLODLevel() == 0:
                         	App.g_kLODModelManager.SetGlowMapsEnabled(0)
                         	App.g_kLODModelManager.SetGlowMapsEnabled(1)
 

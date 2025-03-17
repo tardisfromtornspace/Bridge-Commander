@@ -1,5 +1,14 @@
 ==Changelog==
+1.2.19 -
+   Fixes:
+   * Made Tachyon Sensors a bit more robust.
+   * Updated AutomaticDestroyedSystemRepair script to 0.62 to be a bit more robust.
+   * Fixed that goof from the original G'Quan and Th'Nor that made the engines the engine controls and the engine control the sole actual engine.
+   Updates:
+   * Made G'Quan and Th'Nor visible from further distance.
 1.2.18 -
+   Fixes:
+   * Updated AutomaticDestroyedSystemRepair script to 0.61 to fix a glowUp issue with the Breen Drainer fix. 
    Updates:
    * Given a glowup to the G'Quan and the Primus' weapon systems.
 1.2.17 -

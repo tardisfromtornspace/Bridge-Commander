@@ -2,7 +2,7 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
 #         Tachyon Sensors.py by Alex SL Gato
-#         21st April 2024 TO-DO
+#         17th March 2025
 #         Based on CloakCounterMeasures.py by Defiant. Since that file used BSD license, we need to include their license here. However, for some reason the license files are not present on the file, so we'll have to include them here:
 """
 Copyright (c) 2005, Defiant All rights reserved.
@@ -94,7 +94,6 @@ from bcdebug import debug
 import traceback
 
 dict_lockNoFirepoint = {}
-
 ticksPerKilometer = 225/40 # 225 is approximately 40 km, so 225/40 is the number of ticks per kilometer
 totalShips = 0 # We count how many ships we have with this technology.
 globalCaution = 10 # 10% chance of scanning leaving a trace
@@ -133,17 +132,13 @@ def NiPoint3ToTGPoint3(p):
 def findShipInstance(pShip):
 	pInstance = None
 	try:
-		pInstance = FoundationTech.dShips[pShip.GetName()]
-		if pInstance == None:
-			print "After looking, no pInstance for ship:", pShip.GetName(), "How odd..."
-		
+		if not pShip:
+			return pInstance
+		if FoundationTech.dShips.has_key(pShip.GetName()):
+			pInstance = FoundationTech.dShips[pShip.GetName()]
 	except:
-		#print "Error while looking for pInstance for Borg technology:"
-		#traceback.print_exc()
 		pass
 
-		
-	#finally:
 	return pInstance
 
 def findscriptsShipsField(pShip, thingToFind):
@@ -155,37 +150,37 @@ def findscriptsShipsField(pShip, thingToFind):
 	return thingFound
 
 def MultiPlayerEnableCollisionWith(pObject1, pObject2, CollisionOnOff):
-        # Setup the stream.
-        # Allocate a local buffer stream.
-        debug(__name__ + ", MultiPlayerEnableCollisionWith")
-        kStream = App.TGBufferStream()
-        # Open the buffer stream with a 256 byte buffer.
-        kStream.OpenBuffer(256)
-        # Write relevant data to the stream.
-        # First write message type.
-        kStream.WriteChar(chr(NO_COLLISION_MESSAGE))
-        
-        # send Message
-        kStream.WriteInt(pObject1.GetObjID())
-        kStream.WriteInt(pObject2.GetObjID())
-        kStream.WriteInt(CollisionOnOff)
+	# Setup the stream.
+	# Allocate a local buffer stream.
+	debug(__name__ + ", MultiPlayerEnableCollisionWith")
+	kStream = App.TGBufferStream()
+	# Open the buffer stream with a 256 byte buffer.
+	kStream.OpenBuffer(256)
+	# Write relevant data to the stream.
+	# First write message type.
+	kStream.WriteChar(chr(NO_COLLISION_MESSAGE))
+	
+	# send Message
+	kStream.WriteInt(pObject1.GetObjID())
+	kStream.WriteInt(pObject2.GetObjID())
+	kStream.WriteInt(CollisionOnOff)
 
-        pMessage = App.TGMessage_Create()
-        # Yes, this is a guaranteed packet
-        pMessage.SetGuaranteed(1)
-        # Okay, now set the data from the buffer stream to the message
-        pMessage.SetDataFromStream(kStream)
-        # Send the message to everybody but me.  Use the NoMe group, which
-        # is set up by the multiplayer game.
-        # TODO: Send it to asking client only
-        pNetwork = App.g_kUtopiaModule.GetNetwork()
-        if not App.IsNull(pNetwork):
-                if App.g_kUtopiaModule.IsHost():
-                        pNetwork.SendTGMessageToGroup("NoMe", pMessage)
-                else:
-                        pNetwork.SendTGMessage(pNetwork.GetHostID(), pMessage)
-        # We're done.  Close the buffer.
-        kStream.CloseBuffer()
+	pMessage = App.TGMessage_Create()
+	# Yes, this is a guaranteed packet
+	pMessage.SetGuaranteed(1)
+	# Okay, now set the data from the buffer stream to the message
+	pMessage.SetDataFromStream(kStream)
+	# Send the message to everybody but me.  Use the NoMe group, which
+	# is set up by the multiplayer game.
+	# TODO: Send it to asking client only
+	pNetwork = App.g_kUtopiaModule.GetNetwork()
+	if not App.IsNull(pNetwork):
+		if App.g_kUtopiaModule.IsHost():
+			pNetwork.SendTGMessageToGroup("NoMe", pMessage)
+		else:
+			pNetwork.SendTGMessage(pNetwork.GetHostID(), pMessage)
+	# We're done.  Close the buffer.
+	kStream.CloseBuffer()
 	return 0
 
 # Get the Distance between the Ship and pObject
@@ -242,7 +237,7 @@ def DeleteFirePoint(pAction, myFirePointName):
 
 			# We're done.  Close the buffer.
 			kStream.CloseBuffer()
-	return 0        
+	return 0
 
 def DeleteFirePointAfterScan(pAction, myFirePointName):
 	debug(__name__ + ", DeleteFirePointAfterScan")
@@ -356,14 +351,14 @@ def CreateScanFirepoint(pShip, pScannerShip):
 		pSeq.AppendAction(App.TGScriptAction_Create(__name__, "DeleteFirePointAfterScan", myFirePointName), FIREPOINT_LIFETIME)
 		pSeq.Play()
 
-def DetectCloakedShips(pAction, pShip):
+def DetectCloakedShips(pAction, pShipID):
 	debug(__name__ + ", DetectCloakedShips")
-	pShip = App.ShipClass_GetObjectByID(None, pShip.GetObjID()) # Here is the funny thing, a Tachyon Scan is intensive enough that unless the user has a tech to counter it, they will reveal themselves as well.
-	if pShip:
+	pShip = App.ShipClass_GetObjectByID(None, pShipID) # Here is the funny thing, a Tachyon Scan is intensive enough that unless the user has a tech to counter it, they will reveal themselves as well.
+	if pShip and not pShip.IsDead() and not pShip.IsDying():
 		pSet = pShip.GetContainingSet()
 		pInstance = findShipInstance(pShip)
 		probability = 10
-		if pInstance:
+		if pInstance and pSet:
 			pInsDict = pInstance.__dict__
 			if pInsDict.has_key("Tachyon Sensors"):
 				if pInsDict["Tachyon Sensors"] < 1.0:
@@ -375,8 +370,9 @@ def DetectCloakedShips(pAction, pShip):
 				if pSensor and pSensor.GetSensorRange():
 					pSensorRange = pSensor.GetSensorRange() * pSensor.GetConditionPercentage() * pSensor.GetPowerPercentageWanted()
 					
-					for paShip in pSet.GetClassObjectList(App.CT_SHIP):
-						if paShip.IsCloaked():
+					for pauxShip in pSet.GetClassObjectList(App.CT_SHIP):
+						paShip = App.ShipClass_GetObjectByID(None, pauxShip.GetObjID())
+						if paShip and not paShip.IsDead() and not paShip.IsDying() and paShip.IsCloaked():
 							probabilityOne = probability
 							distanceMult = 1.0
 							pScannedInstance = findShipInstance(paShip)
@@ -394,11 +390,11 @@ def DetectCloakedShips(pAction, pShip):
 								CreateScanFirepoint(paShip, pShip)
 	return 0
 
-def ShipScan(pShip):
+def ShipScan(pShipID):
 	debug(__name__ + ", ShipScan")
 	pSeq = App.TGSequence_Create()
 	for i in range(2):
-		pSeq.AppendAction(App.TGScriptAction_Create(__name__, "DetectCloakedShips", pShip), 1)
+		pSeq.AppendAction(App.TGScriptAction_Create(__name__, "DetectCloakedShips", pShipID), 1)
 	pSeq.Play()
 
 def ScanInit(pObject, pEvent=None, pPlayer=None):
@@ -409,7 +405,8 @@ def ScanInit(pObject, pEvent=None, pPlayer=None):
 	if not App.g_kUtopiaModule.IsMultiplayer() or App.g_kUtopiaModule.IsHost():
 		if not pPlayer:
 			pPlayer = MissionLib.GetPlayer() # As far as I know, only the player can initite scans normally... if that is false, please contact Alex SL Gato.
-		ShipScan(pPlayer)
+		if pPlayer and hasattr(pPlayer, "GetObjID") and not pPlayer.IsDead() and not pPlayer.IsDying():
+			ShipScan(pPlayer.GetObjID())
 	# we are client. Inform the Server that we are scanning
 	else:
 		if not pPlayer:
@@ -490,22 +487,23 @@ def LoadExtraLimitedPlugins(dExcludePlugins=_g_dExcludeBorgPlugins):
 				print "someone attempted to add more than they should to the Tachyon Sensor script"
 				traceback.print_exc()
 
-	
-
-
 LoadExtraLimitedPlugins()
 #print variableNames
+
+## Extra things go below
+
 
 tachyonShips = {} # ship IDs of ships with tachyon tech
 class TachyonSensorsDef(FoundationTech.TechDef):
 	def __init__(self, name):
-		debug(__name__ + ", Initiated Reality Bomb counter")
+		debug(__name__ + ", Initiated Tachyon Sensors")
 		FoundationTech.TechDef.__init__(self, name)
 		self.pEventHandler = App.TGPythonInstanceWrapper()
 		self.pEventHandler.SetPyWrapper(self)
 
 	def Attach(self, pInstance):
 		pInstance.lTechs.append(self)
+
 		#pInstance.lTorpDefense.insert(0, self)		# Important to put shield-type weapons in the front
 		#pInstance.lPulseDefense.insert(0, self)
 		#pInstance.lBeamDefense.insert(0, self)
@@ -524,6 +522,7 @@ class TachyonSensorsDef(FoundationTech.TechDef):
 
 			#App.g_kEventManager.AddBroadcastPythonFuncHandler(App.ET_WEAPON_HIT, self.pEventHandler, __name__+ ".WeaponHit") # Handled by CloakCounterMeasures.py already.
 			# adding the Firepoint in the cloaking phase seems to crash the game so avoid that
+
 			App.g_kEventManager.AddBroadcastPythonMethodHandler(App.ET_CLOAK_BEGINNING, self.pEventHandler, "CloakStart")
 			App.g_kEventManager.AddBroadcastPythonMethodHandler(App.ET_CLOAK_COMPLETED, self.pEventHandler, "CloakDone")
 			App.g_kEventManager.AddBroadcastPythonMethodHandler(App.ET_SCAN, self.pEventHandler, "ScanInitA")
@@ -531,11 +530,17 @@ class TachyonSensorsDef(FoundationTech.TechDef):
 		else:
 			totalShips = totalShips + 1
 
+
 	def Detach(self, pInstance):
+
 		global totalShips, tachyonShips
+
 		totalShips = totalShips - 1
 		if tachyonShips.has_key(pInstance.pShipID):
-			del tachyonShips[pInstance.pShipID]
+			try:
+				del tachyonShips[pInstance.pShipID]
+			except:
+				pass
 
 		self.manualCleanup()
 
@@ -544,16 +549,20 @@ class TachyonSensorsDef(FoundationTech.TechDef):
 			App.g_kEventManager.RemoveBroadcastHandler(App.ET_CLOAK_BEGINNING, self.pEventHandler, "CloakStart") # Maybe we need to add ET_ENTERED_SET...
 			App.g_kEventManager.RemoveBroadcastHandler(App.ET_CLOAK_COMPLETED, self.pEventHandler, "CloakDone")  # ...and ET_EXITED_SET as well
 			App.g_kEventManager.RemoveBroadcastHandler(App.ET_SCAN, self.pEventHandler, "ScanInitA")
+
+
 		pInstance.lTechs.remove(self)
+
 
 	def CloakStart(self, pEvent):
 		debug(__name__ + ", CloakStart")
 		global dict_lockNoFirepoint
 		# Get the ship that is cloaking
 		pShip = App.ShipClass_Cast(pEvent.GetDestination())
-		pShip = App.ShipClass_GetObjectByID(None, pShip.GetObjID())
-		if pShip:
-			dict_lockNoFirepoint[pShip.GetObjID()] = 1
+		if pShip and hasattr(pShip, "GetObjID"):
+			pShip = App.ShipClass_GetObjectByID(None, pShip.GetObjID())
+			if pShip:
+				dict_lockNoFirepoint[pShip.GetObjID()] = 1
         	#pObject.CallNextHandler(pEvent)
 
 
@@ -562,9 +571,14 @@ class TachyonSensorsDef(FoundationTech.TechDef):
 		global dict_lockNoFirepoint
 		# Get the ship that is cloaking
 		pShip = App.ShipClass_Cast(pEvent.GetDestination())
-		pShip = App.ShipClass_GetObjectByID(None, pShip.GetObjID())
-		if pShip and dict_lockNoFirepoint.has_key(pShip.GetObjID()):
-			del dict_lockNoFirepoint[pShip.GetObjID()]
+		if pShip and hasattr(pShip, "GetObjID"):
+			pShipID = pShip.GetObjID()
+			pShip = App.ShipClass_GetObjectByID(pShipID)
+			if pShip and pShipID != App.NULL_ID and dict_lockNoFirepoint.has_key(pShipID):
+				try:
+					del dict_lockNoFirepoint[pShip.GetObjID()]
+				except:
+					pass
 		#pObject.CallNextHandler(pEvent)
 		self.CarefulScan()
 
@@ -575,7 +589,7 @@ class TachyonSensorsDef(FoundationTech.TechDef):
 		listToRemove = []
 		for aShipID in tachyonShips.keys():
 			aShip = App.ShipClass_GetObjectByID(None, aShipID)
-			if not aShip or aShip.IsDead() or aShip.IsDying():
+			if aShip == None or aShip.IsDead() or aShip.IsDying():
 				listToRemove.append(aShipID)
 			elif App.g_kSystemWrapper.GetRandomNumber(100) <= globalCaution: # this may be a bit expensive
 				ScanInit(self, None, aShip)
@@ -602,8 +616,5 @@ class TachyonSensorsDef(FoundationTech.TechDef):
 
 	def ScanInitA(self, pEvent):
 		ScanInit(self, pEvent, None)
-
-
-
 
 oTachyonSensors = TachyonSensorsDef('Tachyon Sensors')

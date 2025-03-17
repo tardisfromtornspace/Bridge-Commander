@@ -1,4 +1,8 @@
 == Changelog ==
+1.9.11 - Automated Destroyed System Repair related fix
+- Updated to 0.62, made a bit more robust.
+1.9.10 - Automated Destroyed System Repair related fix
+- Updated to 0.61, fixed an edge-case with glowups causing a seizure for the Breen Drainer fix.
 1.9.9 - Automated Destroyed System Repair related fix
 - Changed some of the inner logic to be cleaner and fixed an edge-case with Breen Drainer and certain techs mixing together badly.
 1.9.8 - Automated Destroyed System Repair related fix
