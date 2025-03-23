@@ -1,4 +1,6 @@
 == Changelog ==
+0.5.6 - Updates:
+  * Updated SporeDrive to 0.35, now it uses a custom animation GFX and its ISI system is more precise.
 0.5.5 - Updates:
   * Updated this readme properly to credit all the authors behind the High-End Protostar model.
 0.5.4 - Updates:

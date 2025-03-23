@@ -3,15 +3,15 @@
 # GC is ALL Rights Reserved by USS Frontier, but since GC supports Plugins it is fair to release a new TravellingMethod or patch old ones as long as the files remain unmodified.
 # SporeDrive.py
 # prototype custom travelling method plugin script, by USS Frontier (Enhanced Warp, original) and then modified by Alex SL Gato for Spore Drive
-# 11th December 2024
+# 23rd March 2025
 #################################################################################################################
 ##########	MANUAL
 #################################################################################################################
 # NOTE: all functions/methods and attributes defined here (in this prototype example plugin, SporeDrive) are required to be in the plugin, with the exclusion of:
 # ------ MODINFO, which is there just to verify versioning.
 # ------ ALTERNATESUBMODELFTL METHODS subsection, which are exclusively used for alternate SubModels for FTL which is a separate but linked mod, or to import needed modules.
-# ------ Auxiliar functions: "AuxProtoElementNames", "CustomBoostShipSpeed", "findShipInstance", "MainPartRotation", "PlacementOffsetOrbitWatch", "PlaySporeDriveSound", "SporeDriveBasicConfigInfo" and "SporeDriveDisabledCalculations".
-# ------ Auxiliar functions for intra-system intercept (ISI) support, which as a result of being a common-made function between default GalaxyCharts functions/methods, regular AlternateSubModelFTL and ISI, while not required to be on the plugin, some of their contents are actually required if they are not there: "CanTravelShip", "EngageSeqTractorCheckI", "GetEngageDirectionC", "GetEngageDirectionISI", "GetExitedTravelEventsI", "GetStartTravelEventsI", "MainPartRotationI", "PlaySporeDriveSoundI", "MaintainTowingActionI", "removeTractorISITowInfo", "SetupSequenceISI", "SetupTowingI"
+# ------ Auxiliar functions: "AuxProtoElementNames", "CreateDetachedElectricExplosion", "CustomBoostShipSpeed", "findShipInstance", "LoadGFX", "MainPartRotation", "PlacementOffsetOrbitWatch", "PlaySporeDriveSound", "SporeDriveBasicConfigInfo", "SporeDriveDisabledCalculations" and "SporeDriveEnterFlash".
+# ------ Auxiliar functions for intra-system intercept (ISI) support, which as a result of being a common-made function between default GalaxyCharts functions/methods, regular AlternateSubModelFTL and ISI, while not required to be on the plugin, some of their contents are actually required if they are not there: "CanTravelShip", "EngageSeqTractorCheckI", "GetEngageDirectionC", "GetEngageDirectionISI", "GetExitedTravelEventsI", "GetStartTravelEventsI", "MainPartRotationI", "PlaySporeDriveSoundI", "MaintainTowingActionI", "removeTractorISITowInfo", "SetupSequenceISI", "SetupTowingI".
 # NOTE 2: This version of SporeDrive also has Intra-System Intercept functions, meaning a SubMenu appears on the Helm menu to allow for a slipstream-like intercept. For more info on this, see the Manual for AlternateSubModelFTL and the comments on this file.
 # === How-To-Add ===
 # This Travelling Method is Ship-based, on this case it needs of Foundation and FoundationTech to verify if the ship is equipped with it.
@@ -97,7 +97,7 @@ Foundation.ShipDef.USSProtostar.dTechs = { # (#)
 #################################################################################################################
 #
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.32",
+	    "Version": "0.35",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -1123,6 +1123,115 @@ def checkISINearbyRecloaking(pAction, pShipID):
 			pProx.EndObjectIteration(kIter)
 	return 0
 
+# Aux. function
+def LoadGFX(iNumXFrames, iNumYFrames, sFile):
+                fX = 0.0
+                fY = 0.0
+
+                pContainer = App.g_kTextureAnimManager.AddContainer(sFile)   
+                pTrack = pContainer.AddTextureTrack(iNumXFrames * iNumYFrames)
+                for index in range(iNumXFrames * iNumYFrames):
+                        pTrack.SetFrame(index, fX, fY + (1.0 / iNumYFrames), fX + (1.0 / iNumXFrames), fY)
+                        fX = fX + (1.0 / iNumXFrames)
+
+                        if (fX >= 1.0):
+                            fX = 0.0
+                            fY = fY + (1.0 / iNumYFrames)
+
+# Aux function
+def CreateDetachedElectricExplosion(fRed, fGreen, fBlue, fSize, fLifeTime, sFile, pEmitFrom, pAttachTo, fFrequency=1,fEmitLife=1,fSpeed=1.0):
+	pEffect = None
+	try:     
+		pEffect = App.AnimTSParticleController_Create()
+
+		pEffect.AddColorKey(0.0, fRed, fGreen, fBlue)
+		pEffect.AddColorKey(0.5, fRed, fGreen, fBlue)
+		pEffect.AddColorKey(1.0, 1.0 / 255, 1.0 / 255, 1.0 / 255)
+
+		pEffect.AddAlphaKey(0.0, 0.0)
+		pEffect.AddAlphaKey(1.0, 0.0)
+
+		pEffect.AddSizeKey(0.0, 0.8 * fSize)
+		pEffect.AddSizeKey(0.2, 1.0 * fSize)
+		pEffect.AddSizeKey(0.6, 1.0 * fSize)
+		pEffect.AddSizeKey(0.8, 0.7 * fSize)
+		pEffect.AddSizeKey(1.0, 0.1 * fSize)
+
+		pEffect.SetEmitLife(fEmitLife)
+		pEffect.SetEmitFrequency(fFrequency)
+		pEffect.SetEffectLifeTime(fSpeed + fLifeTime)
+		pEffect.SetInheritsVelocity(0)
+		pEffect.SetDetachEmitObject(0) # If set to 1 it makes the main ship invisible LOL
+		pEffect.CreateTarget(sFile)
+		pEffect.SetTargetAlphaBlendModes(0, 7)
+
+		pEffect.SetEmitFromObject(pEmitFrom)
+		pEffect.AttachEffect(pAttachTo)         
+
+		return pEffect
+	except:
+		print "SporeDrive TravellingMethod: error while calling CreateDetachedElectricExplosion:"
+		traceback.print_exc()
+		pEffect = None
+
+	return pEffect
+
+# Aux function. Create flash effect on a ship. Texture is a mix between VonFrank's Remastered electrical efect and Discovery Mycelial effect.
+def SporeDriveEnterFlash(pAction, pShipID, sType, sRace, amount=3, sparkSize=5, sFile = 'data/Textures/Effects/SporeDriveElectricExplosion.tga'):
+	pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), pShipID)
+	if not pShip:
+		return 0
+	if pShip == None:
+		return 0
+
+	fEffectList = []
+	try:
+		iCycleCount = 0
+		if amount > 0 and sparkSize > 0:
+			colorKey = [100.0, 255.0 / 255, 255.0 / 255]
+			try:
+				import Custom.NanoFXv2.NanoFX_Lib
+				colorKey = Custom.NanoFXv2.NanoFX_Lib.GetOverrideColor(pShip, sType)
+				if colorKey == None:
+					colorKey = [100.0 / 255, 255.0 / 255, 255.0 / 255]
+			except:
+				colorKey = [100.0 / 255, 255.0 / 255, 255.0 / 255]
+
+			LoadGFX(8, 1, sFile)
+
+			pAttachTo = pShip.GetContainingSet().GetEffectRoot()
+			fSize = pShip.GetRadius() * sparkSize
+			pEmitFrom = App.TGModelUtils_CastNodeToAVObject(pShip.GetNode())
+
+			while (iCycleCount < amount):
+				try:
+					rdm = (App.g_kSystemWrapper.GetRandomNumber(80) + 20) / 100.0
+					#pEffect = CreateDetachedElectricExplosion(colorKey[0], colorKey[1], colorKey[2], fSize * rdm, 1.5, sFile, pEmitFrom, pAttachTo, fFrequency=0.09,fEmitLife=1.5,fSpeed=0.0)
+					pEffect = CreateDetachedElectricExplosion(colorKey[0], colorKey[1], colorKey[2], fSize * rdm, 0.75, sFile, pEmitFrom, pAttachTo, fFrequency=0.09,fEmitLife=0.75,fSpeed=0.0)
+					if pEffect:
+						fEffect = App.EffectAction_Create(pEffect)
+						if fEffect:
+							fEffectList.append(fEffect)
+				except:
+					print "SporeDrive TravellingMethod: error while calling SporeDriveEnterFlash:"
+					traceback.print_exc()
+
+				iCycleCount = iCycleCount + 1
+
+	except:
+		print "SporeDrive TravellingMethod: error while calling SporeDriveEnterFlash:"
+		traceback.print_exc()
+		fEffect = None
+
+	lenef = len(fEffectList)
+	if lenef > 0:
+		pSequence = App.TGSequence_Create()
+		for fEffect in fEffectList:
+			pSequence.AddAction(fEffect, None)
+		pSequence.Play()
+                
+	return 0
+
 # ISI function
 def SetupSequenceISI(pShip=None):
 	# you can use this function as an example on how to create your own 'SetupSequenceISI(self)' method for AlternateSubModelFTL
@@ -1241,8 +1350,8 @@ def SetupSequenceISI(pShip=None):
 
 	# TO-DO Maybe create two ship clone copies?
 	# Create the warp flash.
-	# TO-DO Replace with a spore-drive flash
-	pFlashAction1 = App.TGScriptAction_Create("Actions.EffectScriptActions", "WarpFlash", pShip.GetObjID())
+	#pFlashAction1 = App.TGScriptAction_Create("Actions.EffectScriptActions", "WarpFlash", pShip.GetObjID())
+	pFlashAction1 = App.TGScriptAction_Create(__name__, "SporeDriveEnterFlash", pShip.GetObjID(), "WarpFX", sRace, 5, 5)
 	pEngageWarpSeq.AddAction(pFlashAction1, None, fTimeToFlash)
 
 	# Hide the ship.
@@ -1278,6 +1387,14 @@ def SetupSequenceISI(pShip=None):
 	pHideShip = App.TGScriptAction_Create(sCustomActionsScript, "HideShip", pShip.GetObjID(), 1)
 	pExitWarpSeq.AddAction(pHideShip, None)
 
+	# Give it a little reverse boost (to avoid collisions)
+	pBoostAAction = App.TGScriptAction_Create(__name__, "CustomBoostShipSpeed", sCustomActionsScript, pShip.GetObjID(), 1, -300.0, myExitDirection)
+	pExitWarpSeq.AddAction(pBoostAAction, pHideShip)
+
+	# Make the ship return to normal speed.
+	pUnBoostAAction = App.TGScriptAction_Create(sCustomActionsScript, "BoostShipSpeed", pShip.GetObjID(), -1, 1.0)
+	pExitWarpSeq.AddAction(pUnBoostAAction, pBoostAAction, 1.2)
+
 	# Check for towee
 	if hasTractorReady == 1:
 		pHideTowee = App.TGScriptAction_Create(sCustomActionsScript, "HideShip", pInstance.SporeDriveISITowee, 1)
@@ -1285,7 +1402,8 @@ def SetupSequenceISI(pShip=None):
 
 	# Create the warp flash.
 	pFlashAction2 = App.TGScriptAction_Create("Actions.EffectScriptActions", "WarpFlash", pShip.GetObjID())
-	pExitWarpSeq.AddAction(pFlashAction2, pHideShip, 0.7)
+	pExitWarpSeq.AddAction(pFlashAction2, pUnBoostAAction)
+	#pExitWarpSeq.AddAction(pFlashAction2, pHideShip, 1.2) #0.7
 
 	# Un-Hide the ship
 	pUnHideShip = App.TGScriptAction_Create(sCustomActionsScript, "HideShip", pShip.GetObjID(), 0)
@@ -1311,7 +1429,6 @@ def SetupSequenceISI(pShip=None):
 	pBoostAction = App.TGScriptAction_Create(__name__, "CustomBoostShipSpeed", sCustomActionsScript, pShip.GetObjID(), 1, 300.0, myExitDirection)
 	pExitWarpSeq.AddAction(pBoostAction, pUnHideShip)
 
-	# TO-DO Replace with a spore-drive flash?
 	# Play the vushhhhh of exiting warp
 	pWarpSoundAction2 = App.TGScriptAction_Create(__name__, "PlaySporeDriveSoundI", pShip, "Exit Warp", sRace)
 	pExitWarpSeq.AddAction(pWarpSoundAction2, pBoostAction)
@@ -1487,8 +1604,8 @@ def SetupSequence(self):
 
 	# TO-DO Maybe create two ship clone copies?
 	# Create the warp flash.
-	# TO-DO Replace with a spore-drive flash
-	pFlashAction1 = App.TGScriptAction_Create("Actions.EffectScriptActions", "WarpFlash", pShip.GetObjID())
+	#pFlashAction1 = App.TGScriptAction_Create("Actions.EffectScriptActions", "WarpFlash", pShip.GetObjID())
+	pFlashAction1 = App.TGScriptAction_Create(__name__, "SporeDriveEnterFlash", pShip.GetObjID(), "WarpFX", sRace, 5, 5)
 	pEngageWarpSeq.AddAction(pFlashAction1, None, fTimeToFlash)
 
 	# Hide the ship.
@@ -1558,7 +1675,6 @@ def SetupSequence(self):
 		pBoostAction = App.TGScriptAction_Create(__name__, "CustomBoostShipSpeed", sCustomActionsScript, pShip.GetObjID(), 1, 300.0, myExitDirection)
 		pExitWarpSeq.AddAction(pBoostAction, pUnHideShip)
 
-		# TO-DO Replace with a spore-drive flash?
 		# Play the vushhhhh of exiting warp
 		pWarpSoundAction2 = App.TGScriptAction_Create(__name__, "PlaySporeDriveSound", pWS, "Exit Warp", sRace)
 		pExitWarpSeq.AddAction(pWarpSoundAction2, pBoostAction)
