@@ -128,6 +128,7 @@ IMPORTANT INSTALL INSTRUCTIONS: Do not copy-paste this mod's scripts/AI folder r
 * Mass Effect FTL sounds and Mass Accelerator sounds from ME3 final space battle, taken from Gamer's Little Playground's channel https://www.youtube.com/watch?v=iEoBsKALnxE
 * Thanix cannon sounds: from N7Reinas's channel https://www.youtube.com/watch?v=hByyA01r0dA recording of ME2
 * Original Electric Explosion effect, modified for the Eezo field, taken from VonFrank's work in BC:Remastered.
+* Original Spore Drive Effect, modified for the Spore Drive, is a modified version of the Electric Explosion Effect mentioned above, combined with Mycelial Network images taken from ST:Discovery.
 * Grey da Derg#2305 aka Greystar, and 𝕟𝕒𝕣𝕣𝕠𝕨𝕔𝕨𝕪𝕗𝕖 aka Hexagonal_Nexul for the original Hardpointing/Sounds/Scripting from BC Remastered Orion (from which the Protostar ship was taken from) and an updated version.
 * Original ST:Discovery torpedoes by Zambie Zan, alexandre.marques@gmail.com (already mentioned on the Crossfield's separate readme).
 * Everyone else from the other mods I mentioned, which have their own readmes crediting them - please feel free to contact me (tardis#2540 on Discord, CharaToLoki on Gamefront) to correct any potential issues, thank you.
