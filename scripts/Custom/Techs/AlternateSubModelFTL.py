@@ -747,7 +747,7 @@ def InSystemIntercept():
 	# Important NOTE: Since intra-system does not call pre-engage nor post-engage functions on its own (only the entry and exit events), if you have an actual pre-engage and post-engage function that is not just a mere "return", you may want to adjust your sequence to call them instead at the appropiate time.
 	isEquipped = IsShipEquipped # Function for knowing if the ship is equipped with ISI for this TravellingMethod.
 	eCanTravel = CanTravelShip # Function for knowing if the ship equipped with ISI for this TravellingMethod, can actually use it for ISI.
-	awayNavPointDistance = awayNavPointDistanceCal # This is a custom multiplier value, used for checking when a ship is too close to a planet or ship. A higher value means that it will allow closer ISI, while a lower value will make that ISI inner proximity limit be further. Negative values are set to 0.
+	awayNavPointDistance = awayNavPointDistanceCal # This is a custom multiplier value, used for checking when a ship is too close to a planet or ship. A lower value means that it will allow closer ISI, while a higher value will make that ISI inner proximity limit be further. Negative values are set to 0.
 	engageDirection = GetEngageDirectionISI # The function used for knowing if the ship is aiming at a good position before engaging. If it returns none it means the ship is correctly aimed, else the function provided should give a better course. AlternateSubModelFTL would orient the ship to that direction.
 
 	return propulsionType, eEntryEvent, eExitEvent, eSequenceFunction, isEquipped, eCanTravel, awayNavPointDistance, engageDirection
@@ -1504,7 +1504,7 @@ def GetEngageDirectionC(mySelf, pPlayerID = None):
 #################################################################################################################
 #
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.83",
+	    "Version": "0.84",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }

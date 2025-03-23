@@ -22,7 +22,7 @@ Foundation.ShipDef.crossfield.fCruiseWarp = 6.95 + 0.0001
 Foundation.ShipDef.crossfield.dTechs = {
 	"Alternate-Warp-FTL": {
 		"Setup": {
-			"Spore-Drive": {	"Nacelles": [], "Core": ["Spore-Drive Chamber"], "NormalRotation": [0, 0, 0], "EndRotation" : [0, 4.19, 0], "Time": 75, "ExitDirection": "Down",  "UncloakDistance": 25, "UncloakChance": 20,},
+			"Spore-Drive": {	"Nacelles": [], "Core": ["Spore-Drive Chamber"], "NormalRotation": [0, 0, 0], "EndRotation" : [0, 4.19, 0], "Time": 75, "ExitDirection": "Down",  "UncloakDistance": 25, "UncloakChance": 20, "I Sparks Chance": 40, "O Sparks Chance": 30, "Enter Sparks Density": 4, "Exit Sparks Density": 4, "Sparks Size": 0.05,},
 			"Body": shipFile,
 			"NormalModel":          shipFile,
 			"Spore-DriveModel":          shipFile,

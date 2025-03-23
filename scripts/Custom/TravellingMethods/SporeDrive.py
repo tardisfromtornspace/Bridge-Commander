@@ -10,7 +10,7 @@
 # NOTE: all functions/methods and attributes defined here (in this prototype example plugin, SporeDrive) are required to be in the plugin, with the exclusion of:
 # ------ MODINFO, which is there just to verify versioning.
 # ------ ALTERNATESUBMODELFTL METHODS subsection, which are exclusively used for alternate SubModels for FTL which is a separate but linked mod, or to import needed modules.
-# ------ Auxiliar functions: "AuxProtoElementNames", "CreateDetachedElectricExplosion", "CustomBoostShipSpeed", "findShipInstance", "LoadGFX", "MainPartRotation", "PlacementOffsetOrbitWatch", "PlaySporeDriveSound", "SporeDriveBasicConfigInfo", "SporeDriveDisabledCalculations" and "SporeDriveEnterFlash".
+# ------ Auxiliar functions: "AuxProtoElementNames", "CreateDetachedElectricExplosion", "CreateElectricExplosion", "CustomBoostShipSpeed", "findShipInstance", "LoadGFX", "MainPartRotation", "PlacementOffsetOrbitWatch", "PlaySporeDriveSound", "SporeDriveBasicConfigInfo", "SporeDriveDisabledCalculations", "SporeDriveEnterFlash" and "SporeElectricField".
 # ------ Auxiliar functions for intra-system intercept (ISI) support, which as a result of being a common-made function between default GalaxyCharts functions/methods, regular AlternateSubModelFTL and ISI, while not required to be on the plugin, some of their contents are actually required if they are not there: "CanTravelShip", "EngageSeqTractorCheckI", "GetEngageDirectionC", "GetEngageDirectionISI", "GetExitedTravelEventsI", "GetStartTravelEventsI", "MainPartRotationI", "PlaySporeDriveSoundI", "MaintainTowingActionI", "removeTractorISITowInfo", "SetupSequenceISI", "SetupTowingI".
 # NOTE 2: This version of SporeDrive also has Intra-System Intercept functions, meaning a SubMenu appears on the Helm menu to allow for a slipstream-like intercept. For more info on this, see the Manual for AlternateSubModelFTL and the comments on this file.
 # === How-To-Add ===
@@ -25,12 +25,17 @@
 # "CamDistance": when the ship enters Spore Drive, how far is the camera from the vessel. Default is 25.
 # "UncloakDistance": when the ship ends an ISI, radius around it where cloaked ships can be decloaked, in kilometers. Negative values are ignored. Default is 25 km.
 # "UncloakChance": when the ship ends an ISI, chance that a ship inside the cloak disruption AOE actually decloaks, with the value being in percentage. Default is 25, that is 25% chance of being uncloaked.
+# "I Sparks Chance": Sometimes when performing a jump, some extra sparks appear before the jump. This keys holds the value which indicates that chance, on a 0-100 effective range. Default is 0.
+# "O Sparks Chance": Sometimes when performing a jump, some extra sparks appear after the jump. This keys holds the value which indicates that chance, on a 0-100 effective range. Default is 0.
+# "Enter Sparks Density": when sparks happen before the jump, this value indicates how many. Default is 0.
+# "Exit Sparks Density": when sparks happen before the jump, this value indicates how many. Default is 0.
+# "Sparks Size": when sparks happen, this value indicates relative size with respect to the ship. Default is 0.05 (5% of the ship's size).
 """
 #Sample Setup: replace "USSProtostar" for the appropiate abbrev. Also remove "# (#)"
 Foundation.ShipDef.USSProtostar.dTechs = { # (#)
 	"Alternate-Warp-FTL": { # (#)
 		"Setup": { # (#)
-			"Spore-Drive": {	"Nacelles": ["Proto Warp Nacelle"], "Core": ["Proto-Core"], "NormalRotation": [0, 0, 0], "EndRotation" : [0, 4.19, 0], "Time": 200, "ExitDirection": "Down", "CamDistance": 25, "UncloakDistance": 25, "UncloakChance": 25,}, # (#)
+			"Spore-Drive": {	"Nacelles": ["Proto Warp Nacelle"], "Core": ["Proto-Core"], "NormalRotation": [0, 0, 0], "EndRotation" : [0, 4.19, 0], "Time": 200, "ExitDirection": "Down", "CamDistance": 25, "UncloakDistance": 25, "UncloakChance": 25, "I Sparks Chance": 30, "O Sparks Chance": 30, "Enter Sparks Density": 3, "Exit Sparks Density": 3, "Sparks Size": 0.05,}, # (#)
 			"Body": "VasKholhr_Body",
 			"NormalModel":          shipFile,
 			"WarpModel":          "VasKholhr_WingUp",
@@ -97,7 +102,7 @@ Foundation.ShipDef.USSProtostar.dTechs = { # (#)
 #################################################################################################################
 #
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.35",
+	    "Version": "0.4",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -258,13 +263,13 @@ def InSystemIntercept():
 	eSequenceFunction = SetupSequenceISI # Important NOTE - This sequence is gonna be a modification of the normal sequences for changing systems. Since intra-system does not call pre-engage nor post-engage functions on its own (only the entry and exit events), if you have an actual pre-engage and post-engage function that is not just a mere "return", you may want to adjust your sequence to call them instead at the appropiate time.
 	isEquipped = IsShipEquipped
 	eCanTravel = CanTravelShip
-	awayNavPointDistance = awayNavPointDistanceCalc # This is a custom multiplier value, used for checking when a ship is too close to a planet or ship. A higher value means that it will allow closer ISI, while a lower value will make that ISI inner proximity limit be further. Negative values are set to 0.
+	awayNavPointDistance = awayNavPointDistanceCalc # This is a custom multiplier value, used for checking when a ship is too close to a planet or ship. A lower value means that it will allow closer ISI, while a higher value will make that ISI inner proximity limit be further. Negative values are set to 0.
 	engageDirection = GetEngageDirectionISI
 
 	return propulsionType, eEntryEvent, eExitEvent, eSequenceFunction, isEquipped, eCanTravel, awayNavPointDistance, engageDirection
 
 def awayNavPointDistanceCalc(pShipID=None):
-	return 1.0
+	return 0.2
 
 #######################################
 # "IsShipEquipped" Method to check if the ship is equipped with this travelling method.
@@ -321,6 +326,11 @@ def SporeDriveBasicConfigInfo(pShip):
 	exitDir = None
 	myTime = 200.0
 	myDistance = 25
+	enterDensity = 0
+	sparksChanceI = 0
+	exitDensity = 0
+	sparksChanceO = 0
+	sparkSize = 0.05
 	if pInstance:
 		pInstancedict = pInstance.__dict__ 
 		if pInstancedict.has_key("Alternate-Warp-FTL") and pInstancedict["Alternate-Warp-FTL"].has_key("Setup") and pInstancedict["Alternate-Warp-FTL"]["Setup"].has_key("Spore-Drive"):
@@ -340,9 +350,20 @@ def SporeDriveBasicConfigInfo(pShip):
 			if pInstancedict["Alternate-Warp-FTL"]["Setup"]["Spore-Drive"].has_key("CamDistance"): # Use: if the tech has this field, use it. Must be a list. "[]" would mean that this field is skipped during checks.
 				myDistance = pInstancedict["Alternate-Warp-FTL"]["Setup"]["Spore-Drive"]["CamDistance"]
 
+			if pInstancedict["Alternate-Warp-FTL"]["Setup"]["Spore-Drive"].has_key("Enter Sparks Density"):
+				enterDensity = pInstancedict["Alternate-Warp-FTL"]["Setup"]["Spore-Drive"]["Enter Sparks Density"]
+			if pInstancedict["Alternate-Warp-FTL"]["Setup"]["Spore-Drive"].has_key("Exit Sparks Density"):
+				exitDensity = pInstancedict["Alternate-Warp-FTL"]["Setup"]["Spore-Drive"]["Exit Sparks Density"]
+			if pInstancedict["Alternate-Warp-FTL"]["Setup"]["Spore-Drive"].has_key("I Sparks Chance"):
+				sparksChanceI = pInstancedict["Alternate-Warp-FTL"]["Setup"]["Spore-Drive"]["I Sparks Chance"]
+			if pInstancedict["Alternate-Warp-FTL"]["Setup"]["Spore-Drive"].has_key("O Sparks Chance"):
+				sparksChanceO = pInstancedict["Alternate-Warp-FTL"]["Setup"]["Spore-Drive"]["O Sparks Chance"]
+			if pInstancedict["Alternate-Warp-FTL"]["Setup"]["Spore-Drive"].has_key("Sparks Size") and pInstancedict["Alternate-Warp-FTL"]["Setup"]["Spore-Drive"]["Sparks Size"] >= 0:
+				sparkSize = pInstancedict["Alternate-Warp-FTL"]["Setup"]["Spore-Drive"]["Sparks Size"]
+
 	hardpointProtoNames, hardpointProtoBlacklist = AuxProtoElementNames()
 
-	return pInstance, pInstancedict, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, normalRot, endRot, exitDir, myTime, myDistance
+	return pInstance, pInstancedict, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, normalRot, endRot, exitDir, myTime, myDistance, enterDensity,	sparksChanceI, exitDensity, sparksChanceO, sparkSize
 
 # This is just another auxiliar function I made for this
 def SporeDriveDisabledCalculations(type, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, pSubsystem, pShip):
@@ -442,7 +463,7 @@ def CanTravelShip(pShip):
 	#			MissionLib.QueueActionToPlay(App.CharacterAction_Create(pXO, App.CharacterAction.AT_SAY_LINE, "EngineeringNeedPowerToEngines", None, 1))
 	#	return "Impulse Engines offline"
 
-	pInstance, pInstancedict, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, _ , _ , _ , _ , _ = SporeDriveBasicConfigInfo(pShip)
+	pInstance, pInstancedict, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, _ , _ , _ , _ , _ , _ , _ , _ , _ , _ = SporeDriveBasicConfigInfo(pShip)
 
 	pWarpEngines = pShip.GetWarpEngineSubsystem()
 	if specificNacelleHPList == None or (specificNacelleHPList != None and len(specificNacelleHPList) > 0):
@@ -591,7 +612,7 @@ def CanContinueTravelling(self):
 			pSequence.Play()
 		bStatus = 0
 	else:
-		pInstance, pInstancedict, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, _ , _ , _ , _ , _ = SporeDriveBasicConfigInfo(pShip)
+		pInstance, pInstancedict, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, _ , _ , _ , _ , _ , _ , _ , _ , _ , _ = SporeDriveBasicConfigInfo(pShip)
 		if pInstance and pInstancedict:
 			totalSporeDriveCores, onlineSporeDriveCores = SporeDriveDisabledCalculations("Core", specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, pWarpEngines, pShip)
 			if totalSporeDriveCores > 0 and onlineSporeDriveCores <= 0:
@@ -1138,6 +1159,80 @@ def LoadGFX(iNumXFrames, iNumYFrames, sFile):
                             fX = 0.0
                             fY = fY + (1.0 / iNumYFrames)
 
+# Aux. function grabebd from VonFrank's Remastered Effects.py
+def CreateElectricExplosion(fSize, fLife, pEmitFrom, bOwnsEmitFrom, pEffectRoot, fRed, fGreen, fBlue, fFrequency = 1.0, fEmitLife=1, fSpeed=2.0, sFile = 'data/Textures/Effects/RegularElectricExplosion.tga'):
+	
+	pExplosion = App.AnimTSParticleController_Create()
+
+	pExplosion.AddColorKey(0.0, fRed, fGreen, fBlue)
+	pExplosion.AddColorKey(0.5, fRed, fGreen, fBlue)
+	pExplosion.AddColorKey(1.0, 1.0 / 255, 1.0 / 255, 1.0 / 255)
+
+	pExplosion.AddAlphaKey(0.4, 1.0)
+	pExplosion.AddAlphaKey(1.0, 1.0)
+
+	pExplosion.AddSizeKey(0.0, 1.0 * fSize)
+	pExplosion.AddSizeKey(0.2, 1.0 * fSize)
+	pExplosion.AddSizeKey(0.6, 1.0 * fSize)
+	pExplosion.AddSizeKey(0.9, 1.0 * fSize)
+
+	pExplosion.SetEmitLife(fEmitLife)
+	pExplosion.SetEmitFrequency(fFrequency)
+	pExplosion.SetEffectLifeTime(fSpeed + fLife)
+	pExplosion.CreateTarget(sFile)
+	pExplosion.SetTargetAlphaBlendModes(0, 7)
+
+	pExplosion.AttachEffect(pEffectRoot)
+
+	pExplosion.SetEmitFromObject(pEmitFrom)
+	pExplosion.SetDetachEmitObject(bOwnsEmitFrom)
+
+	return pExplosion
+
+# Aux function
+def SporeElectricField(pAction, pShipID, sType, sRace, amount=5, sparkSize=0.05, delay=2.0, sFile = 'data/Textures/Effects/RegularElectricExplosion.tga'):
+	pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), pShipID)
+	if not pShip:
+		return 0
+	if pShip == None:
+		return 0
+
+	colorKey = [100.0 / 255, 1.0 / 255, 255.0 / 255]
+	try:
+		import Custom.NanoFXv2.NanoFX_Lib
+		colorKey = Custom.NanoFXv2.NanoFX_Lib.GetOverrideColor(pShip, sType)
+		if colorKey == None:
+			colorKey = [100.0 / 255, 255.0 / 255, 255.0 / 255]
+	except:
+		colorKey = [100.0 / 255, 255.0 / 255, 1.0 / 255]
+
+	iCycleCount = 1
+	if amount > 0 and sparkSize > 0:
+		pElectricShockSequence = App.TGSequence_Create()
+
+		pShipNode = pShip.GetNode()
+		rShip = pShip.GetRadius()
+
+		LoadGFX(8, 1, sFile)
+
+		while (iCycleCount < amount):
+			try:
+				pEmitPos = pShip.GetRandomPointOnModel()
+				pExplosion = CreateElectricExplosion(rShip * sparkSize, 1.0, pEmitPos, 0, pShipNode, colorKey[0], colorKey[1], colorKey[2], fFrequency = 0.09, fEmitLife=1.5, fSpeed=delay)
+				pAExplosion = None
+				if pExplosion != None:
+					pAExplosion = App.EffectAction_Create(pExplosion)
+				if pAExplosion != None:
+					pElectricShockSequence.AddAction(pAExplosion, App.TGAction_CreateNull(), iCycleCount * 0.005)
+			except:
+				print "SporeDrive TravellingMethod: error while calling SporeElectricField:"
+				traceback.print_exc()
+			iCycleCount = iCycleCount + 1
+
+		pElectricShockSequence.Play()
+
+	return 0
+
 # Aux function
 def CreateDetachedElectricExplosion(fRed, fGreen, fBlue, fSize, fLifeTime, sFile, pEmitFrom, pAttachTo, fFrequency=1,fEmitLife=1,fSpeed=1.0):
 	pEffect = None
@@ -1259,7 +1354,7 @@ def SetupSequenceISI(pShip=None):
 	SetupTowingI(pShip.GetObjID())
 
 	pInstance = findShipInstance(pShip)
-	_, _, _, _, _, _, _ , _ , myExitDirection, myTime, myDistance = SporeDriveBasicConfigInfo(pShip)
+	_, _, _, _, _, _, _ , _ , myExitDirection, myTime, myDistance, inDensity, inChance, exDensity, exChance, sparkSize = SporeDriveBasicConfigInfo(pShip)
 
 	if myExitDirection == None or myExitDirection == "":
 		myExitDirection = "Down"
@@ -1318,6 +1413,12 @@ def SetupSequenceISI(pShip=None):
 
 	pWarpSoundAction1 = App.TGScriptAction_Create(__name__, "PlaySporeDriveSoundI", pShip, "Enter Warp", sRace)
 	pEngageWarpSeq.AddAction(pWarpSoundAction1, None, extraSoundTime)
+
+	# Extra added for more likeness
+	rdmI = App.g_kSystemWrapper.GetRandomNumber(100)
+	if rdmI < inChance:
+		pWarpRegularEEffectAction1 = App.TGScriptAction_Create(__name__, "SporeElectricField", pShip.GetObjID(), "PlasmaFX", sRace, inDensity, sparkSize, 0)
+		pEngageWarpSeq.AddAction(pWarpRegularEEffectAction1, None)
 	
 	pBoostAction = App.TGScriptAction_Create(sCustomActionsScript, "BoostShipSpeed", pShip.GetObjID(), 1, 1.0)
 	pEngageWarpSeq.AddAction(pBoostAction, pWarpSoundAction1, 0.01)
@@ -1408,6 +1509,12 @@ def SetupSequenceISI(pShip=None):
 	# Un-Hide the ship
 	pUnHideShip = App.TGScriptAction_Create(sCustomActionsScript, "HideShip", pShip.GetObjID(), 0)
 	pExitWarpSeq.AddAction(pUnHideShip, pFlashAction2, 0.01)
+
+	# Extra added for more likeness
+	rdmO = App.g_kSystemWrapper.GetRandomNumber(100)
+	if rdmO < exChance:
+		pWarpRegularEEffectAction2 = App.TGScriptAction_Create(__name__, "SporeElectricField", pShip.GetObjID(), "PlasmaFX", sRace, exDensity, sparkSize)
+		pExitWarpSeq.AddAction(pWarpRegularEEffectAction2, pUnHideShip, 0.0)
 
 	# Un-hide the Towee, plus if it exists, also set up the maintain chain
 	## REMEMBER: any changes in the time of this sequence will also require a re-check of this part, to make sure
@@ -1510,7 +1617,7 @@ def SetupSequence(self):
 
 	pInstance = findShipInstance(pShip)
 	
-	_, _, _, _, _, _, _ , _ , myExitDirection, myTime, myDistance = SporeDriveBasicConfigInfo(pShip)
+	_, _, _, _, _, _, _ , _ , myExitDirection, myTime, myDistance, inDensity, inChance, exDensity, exChance, sparkSize = SporeDriveBasicConfigInfo(pShip)
 	if myExitDirection == None or myExitDirection == "":
 		myExitDirection = "Down"
 
@@ -1572,6 +1679,12 @@ def SetupSequence(self):
 	pWarpSoundAction1 = App.TGScriptAction_Create(__name__, "PlaySporeDriveSound", pWS, "Enter Warp", sRace)
 	pEngageWarpSeq.AddAction(pWarpSoundAction1, None, extraSoundTime)
 	
+	# Extra added for more likeness
+	rdmI = App.g_kSystemWrapper.GetRandomNumber(100)
+	if rdmI < inChance:
+		pWarpRegularEEffectAction1 = App.TGScriptAction_Create(__name__, "SporeElectricField", pShip.GetObjID(), "PlasmaFX", sRace, inDensity, sparkSize, 0)
+		pEngageWarpSeq.AddAction(pWarpRegularEEffectAction1, None)
+
 	pBoostAction = App.TGScriptAction_Create(sCustomActionsScript, "BoostShipSpeed", pShip.GetObjID(), 1, 1.0)
 	pEngageWarpSeq.AddAction(pBoostAction, pWarpSoundAction1, 0.01)
 
@@ -1655,6 +1768,12 @@ def SetupSequence(self):
 		# Un-Hide the ship
 		pUnHideShip = App.TGScriptAction_Create(sCustomActionsScript, "HideShip", pShip.GetObjID(), 0)
 		pExitWarpSeq.AddAction(pUnHideShip, pFlashAction2, 0.01)
+
+		# Extra added for more likeness
+		rdmO = App.g_kSystemWrapper.GetRandomNumber(100)
+		if rdmO < exChance:
+			pWarpRegularEEffectAction2 = App.TGScriptAction_Create(__name__, "SporeElectricField", pShip.GetObjID(), "PlasmaFX", sRace, exDensity, sparkSize)
+			pExitWarpSeq.AddAction(pWarpRegularEEffectAction2, pUnHideShip, 0.0)
 
 		# Un-hide the Towee, plus if it exists, also set up the maintain chain
 		## REMEMBER: any changes in the time of this sequence will also require a re-check of this part, to make sure

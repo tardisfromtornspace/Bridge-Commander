@@ -1,4 +1,8 @@
 == Changelog ==
+0.6 - Updates:
+  * Updated SporeDrive to 0.4, now it also has customizable additional mini-spark chances for entry and exit, and can jump closer to other vessels.
+  * Updated crossfield scripts/Custom/Ships file to reflect SporeDrive 0.4 changes.
+  * Updated AlternateSubModelFTL to version 0.84 to fix a small documentation error.
 0.5.6 - Updates:
   * Updated SporeDrive to 0.35, now it uses a custom animation GFX and its ISI system is more precise.
 0.5.5 - Updates:
