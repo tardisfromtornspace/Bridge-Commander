@@ -1,6 +1,6 @@
 """
 #         Starcraft Defensive Matrix
-#         30th April 2024
+#         24th March 2025
 #         Based strongly on Shields.py by the FoundationTech team (and QuickBattleAddon.corboniteReflector() in Apollo's Advanced Technologies) and Turrets.py by Alex SL Gato, and based on SubModels by USS Defiant and their team.
 #################################################################################################################
 # This tech gives a ship a Defensive Matrix like on Starcraft.
@@ -49,7 +49,7 @@ import traceback
 
 #################################################################################################################
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.57",
+	    "Version": "0.58",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -385,14 +385,18 @@ class DefensiveMatrix(FoundationTech.TechDef):
 		pShip = App.ShipClass_Cast(App.TGObject_GetTGObjectPtr(pInstance.pShipID))
 		if pShip != None:
 			pShip.RemoveHandlerForInstance(App.ET_SUBSYSTEM_STATE_CHANGED, __name__ + ".SubsystemStateChanged")
-			pShip.AddPythonFuncHandlerForInstance(App.ET_SUBSYSTEM_STATE_CHANGED, __name__ + ".SubsystemStateChanged")
 
 			instanceDict = pInstance.__dict__
 
 			pShields = pShip.GetShields()
 			if pShields:
+				pPlayer = MissionLib.GetPlayer()
+				if pPlayer and pPlayer.GetObjID() == pShip.GetObjID():
+					#set the player at tactical alert. why? Saffi will turn red alert upon being attacked, will automatically raise shields, and that's a big no-no for a shield that should only be active when needed
+					pPlayer.SetAlertLevel(App.ShipClass.RED_ALERT)
+				# because defensive matrix is intensive, we need to turn it off
 				pShields.TurnOff()
-				# because
+
 				instanceDict["Starcraft Defensive Matrix Active"] = 0
 			
 			if not instanceDict["Starcraft Defensive Matrix"].has_key("MatrixScale"):
@@ -424,6 +428,8 @@ class DefensiveMatrix(FoundationTech.TechDef):
 				if not instanceDict["Starcraft Defensive Matrix"]["Starcraft I"].has_key("Leakage"):
 					global defaultLeakage
 					instanceDict["Starcraft Defensive Matrix"]["Starcraft I"]["Leakage"] = defaultLeakage
+
+			pShip.AddPythonFuncHandlerForInstance(App.ET_SUBSYSTEM_STATE_CHANGED, __name__ + ".SubsystemStateChanged")
 
 		#print 'Attaching Starcraft II Terran Defensive Matrix to', pInstance, instanceDict
 

@@ -1,4 +1,7 @@
 ==Changelog==
+1.2.20 -
+   Fixes:
+   * Fixed a slight issue with Turrets script during warp, and slightly better cleanup.
 1.2.19 -
    Fixes:
    * Made Tachyon Sensors a bit more robust.
