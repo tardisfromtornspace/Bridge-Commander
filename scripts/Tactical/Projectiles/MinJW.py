@@ -25,28 +25,32 @@ def Create(pTorp):
 	kCoreColor = App.TGColorA()
 	kCoreColor.SetRGBA(0.0 / 255.0, 0.0 / 255.0, 0.0 / 255.0, 1.000000)
 	kGlowColor = App.TGColorA()
-	kGlowColor.SetRGBA(0.0 / 255.0, 82.0 / 255.0, 255.0 / 255.0, 1.000000)
+	kGlowColor.SetRGBA(0.0 / 255.0, 100.0 / 255.0, 255.0 / 255.0, 1.000000)
+	#kGlowColor.SetRGBA(10.0 / 255.0, 6.5 / 255.0, 2.3 / 255.0, 1.000000)
 	kFlareColor = App.TGColorA()
-	kFlareColor.SetRGBA(0.0 / 255.0, 0.0 / 255.0, 255.0 / 255.0, 1.000000)
+	kFlareColor.SetRGBA(0.0 / 255.0, 0.0 / 255.0, 255.0 / 255.0, 0.8000000)
+	#kFlareColor.SetRGBA(10.0 / 255.0, 6.5 / 255.0, 2.3 / 255.0, 1.0000000)
+
+	print pTorp.GetContainingSet()
 
 	pTorp.CreateTorpedoModel(
 					"data/Textures/Tactical/TorpedoCore.tga",
 					kCoreColor, 
-					1.2,
+					1.1,
 					2.0,	 
 					"data/Textures/Tactical/TorpedoGlow.tga", 
 					kGlowColor,
 					8.0,	
-					3.6,	 
+					5.6,	 
 					6.6,	
 					"data/Textures/Tactical/TorpedoFlares.tga",
 					kFlareColor,										
-					12,		
-					3.4,		
-					0.8)
+					1200,		
+					3.6,		
+					1.99)
 
 	pTorp.SetDamage( GetDamage() )
-	pTorp.SetDamageRadiusFactor(0.20)
+	pTorp.SetDamageRadiusFactor(0.40)
 	pTorp.SetGuidanceLifetime( GetGuidanceLifetime() )
 	pTorp.SetMaxAngularAccel( GetMaxAngularAccel() )
 
