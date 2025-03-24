@@ -1,7 +1,10 @@
 ==Changelog==
+1.2.22 -
+   Updates:
+   * Made the simulated Point Defense for the Vorlon Cruiser be a bit slower but slightly more successfull, to prevent weird cases of starvation between firing the only weapon at the enemy, or firing it at a bunch of torpedoes.
 1.2.21 -
    Updates:
-   * Made the simulated Jump Point weapon eb... well, more like a Jump-point visually. Using blue colors instead of brown ones due totorpedo flare shenanigans.
+   * Made the simulated Jump Point weapon be... well, more like a Jump-point visually. Using blue colors instead of brown ones due to torpedo flare shenanigans.
 1.2.20 -
    Fixes:
    * Fixed a slight issue with Turrets script during warp, and slightly better cleanup.
