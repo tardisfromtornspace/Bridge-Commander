@@ -12,6 +12,8 @@ import App
 import string
 pWeaponLock = {}
 
+import traceback
+
 ###############################################################################
 #	Create(pTorp)
 #	
@@ -31,8 +33,6 @@ def Create(pTorp):
 	kFlareColor.SetRGBA(0.0 / 255.0, 0.0 / 255.0, 255.0 / 255.0, 0.8000000)
 	#kFlareColor.SetRGBA(10.0 / 255.0, 6.5 / 255.0, 2.3 / 255.0, 1.0000000)
 
-	print pTorp.GetContainingSet()
-
 	pTorp.CreateTorpedoModel(
 					"data/Textures/Tactical/TorpedoCore.tga",
 					kCoreColor, 
@@ -50,7 +50,7 @@ def Create(pTorp):
 					1.99)
 
 	pTorp.SetDamage( GetDamage() )
-	pTorp.SetDamageRadiusFactor(0.40)
+	pTorp.SetDamageRadiusFactor(0.20)
 	pTorp.SetGuidanceLifetime( GetGuidanceLifetime() )
 	pTorp.SetMaxAngularAccel( GetMaxAngularAccel() )
 
@@ -74,7 +74,7 @@ def GetName():
 	return("Jumpspace Tunnel")
 
 def GetDamage():
-	return 8000.0
+	return 4000.0
 
 # Sets the minimum damage the torpedo will do
 def GetMinDamage():
@@ -82,7 +82,7 @@ def GetMinDamage():
 
 # Sets the percentage of damage the torpedo will do
 def GetPercentage():
-	return 0.00001
+	return 0.05
 
 def GetGuidanceLifetime():
 	return 0.1
@@ -116,12 +116,53 @@ def TargetHit(pObject, pEvent):
 	pShip=App.ShipClass_Cast(pEvent.GetDestination())
 	if (pTorp==None) or (pShip==None):
 		return
+
+	pAttacker = None
+	finalRadius = 1.0
+	defenderRadius = pShip.GetRadius()
+
+	try:
+		import impactEffects.ImpactTexture
+	
+		defaultCk = [1, 1, 1]
+
+
+		baseTexture = 'scripts/Custom/Jumpspace/GFX/JumpspaceFlashAlternate.tga'
+		pAttacker = App.ShipClass_GetObjectByID(None, pTorp.GetParentID())
+		if pAttacker:
+			finalRadius = pAttacker.GetRadius() * 5 #* 50 # TO-DO REMOVE THIS "* 50" LINE
+
+			pSet = pAttacker.GetContainingSet()
+			if pSet and hasattr(pSet, "GetName") and pSet.GetName() == "JumpspaceTunnel1" or pSet.GetName() == "JumpspaceTunnel":
+				baseTexture = 'scripts/Custom/Jumpspace/GFX/JumpspaceFlash.tga'
+
+		impactEffects.ImpactTexture.DriveEnterFlash(None, pShip.GetObjID(), None, amount=1, sparkSize=1, sFile = baseTexture, sFileFrameW = 4, sFileFrameH = 4, colorKey=defaultCk, pAttachTo = pTorp, pEmitFrom = pTorp, fSize = finalRadius, fFrequency=1,fEmitLife=1,fSpeed=1.0, fLife=1)
+	except:
+		traceback.print_exc()
+
+	if pShip.IsDead() or pShip.IsDying():
+		return
+
 	try:
 		id=pTorp.GetObjID()
 		pSubsystem=pWeaponLock[id]
 		del pWeaponLock[id]
 	except:
 		pSubsystem=pShip.GetHull()
+
+	hullDmgBoostMultiplier = (finalRadius + 0.01)/(pShip.GetRadius() + 0.01)
+
+	if finalRadius < 5 * defenderRadius:
+		hullDmgBoostMultiplier = hullDmgBoostMultiplier * 0.2
+	elif finalRadius > 3.14 * 5 * defenderRadius:
+		hullDmgBoostMultiplier = hullDmgBoostMultiplier * 3.14 * 1.618 * 2
+
+	if hullDmgBoostMultiplier < 1:
+		hullDmgBoostMultiplier = 1
+
+	if not pAttacker:
+		hullDmgBoostMultiplier = 0.001
+		
 
 ### LJ INSERTS - CHECK FOR VULNERABLE SHIP
 	global lImmuneShips
@@ -133,12 +174,14 @@ def TargetHit(pObject, pEvent):
 	if (pSubsystem==None):
 		return
 	Dmg=pSubsystem.GetMaxCondition()*GetPercentage()
-	if (Dmg<GetMinDamage()):
-		Dmg=GetMinDamage()
+	if (Dmg<(GetMinDamage() * hullDmgBoostMultiplier)):
+		Dmg=GetMinDamage() * hullDmgBoostMultiplier
 	if (pSubsystem.GetCondition()>Dmg):
 		pSubsystem.SetCondition(pSubsystem.GetCondition()-Dmg)
 	else:
-		pShip.DestroySystem(pSubsystem)
+		pSubsystem.SetCondition(-1)
+		if not (pShip.IsInvincible() and pSubsystem.IsCritical()):
+			pShip.DestroySystem(pSubsystem)
 	return
 	######################################
 

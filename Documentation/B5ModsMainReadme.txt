@@ -1,4 +1,11 @@
 ==Changelog==
+1.2.24 -
+   Updates:
+   * Made the jump point 'torpedo' stop sending print data about the system they are in.
+   * Made frontal Vorlon Planetkiller shield a bit stronger.
+1.2.23 -
+   Updates:
+   * Made the jump point 'torpedo' actually perform a jump point animation upon hitting, and also its damage now depends a bit on radious too.
 1.2.22 -
    Updates:
    * Made the simulated Point Defense for the Vorlon Cruiser be a bit slower but slightly more successfull, to prevent weird cases of starvation between firing the only weapon at the enemy, or firing it at a bunch of torpedoes.
