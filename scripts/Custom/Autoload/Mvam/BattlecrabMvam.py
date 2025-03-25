@@ -76,12 +76,12 @@ IconNames = ["Launch fighters", "Pilot a fighter"]
 ############# 4) Repeat for each seperated ship, using a different point each time of course. Remember to record the
 #############    results of your calculations and put them below. Be as accurate as possible, as you can see I have done.
 MvamDistances[0].SetXYZ(0.0, 0.000000, 0.000000)
-MvamDistances[1].SetXYZ(1.25, 1.125000, -1.050000)
-MvamDistances[2].SetXYZ(-1.25, 1.125000, -1.050000)
-MvamDistances[3].SetXYZ(1.35, 2.125000, -1.050000)
-MvamDistances[4].SetXYZ(-1.35, 2.125000, -1.050000)
-MvamDistances[5].SetXYZ(1.45, 3.125000, -1.050000)
-MvamDistances[6].SetXYZ(-1.45, 3.125000, -1.050000)
+MvamDistances[1].SetXYZ(2.35, 6.125000, -1.050000)
+MvamDistances[2].SetXYZ(-2.35, 6.125000, -1.050000)
+MvamDistances[3].SetXYZ(2.55, 6.625000, -1.050000)
+MvamDistances[4].SetXYZ(-2.55, 6.625000, -1.050000)
+MvamDistances[5].SetXYZ(2.65, 7.125000, -1.050000)
+MvamDistances[6].SetXYZ(-2.65, 7.125000, -1.050000)
 
 
 ###TO CHANGE: This is the direction you want the seperated ship to go during the seperation sequence. It's all X, Y, Z.
@@ -91,8 +91,8 @@ MvamDistances[6].SetXYZ(-1.45, 3.125000, -1.050000)
 ############# of forward and up, or about a positive 45 degree pitch (i use the word pitch lightly, it doesnt twist or turn
 ############# the model whatsoever, it's just the direction it moves)
 MvamDirections[0].SetXYZ(0.0, 1.0, 0.0)
-MvamDirections[1].SetXYZ(0.5, -1.0, 0.0)
-MvamDirections[2].SetXYZ(0.0, -1.0, 0.0)
+MvamDirections[1].SetXYZ(0.5, 1.0, 0.0)
+MvamDirections[2].SetXYZ(-0.5, 1.0, 0.0)
 MvamDirections[3].SetXYZ(1.0, 0.0, 0.0)
 MvamDirections[4].SetXYZ(-1.0, 0.0, 0.0)
 MvamDirections[5].SetXYZ(0.0, 0.0, 1.0)

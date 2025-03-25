@@ -94,3 +94,1783 @@ data/TGL/Maelstrom/Episode 2/E2M6.tgl E2M6BrexCom2
 
 
 ##### End Of The Log #####
+##### Bridge Commander Exit Log: 25 Mar 2025 20:12:00#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+Jumpspace Drive 20070905 Initializing...
+TimeVortex Drive 20070905 Initializing...
+Warpspace Drive 20070905 Initializing...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+Jumpspace: Quick Battle is running... Mod is starting up...
+TimeVortex: Quick Battle is running... Mod is starting up...
+Warpspace: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+data/TGL/Maelstrom/Episode 7/E7M1.tgl E7M1CommunicateBrex2b
+
+# DS9FX has...
+
+# taken a console dump
+Setting splash damage for Vorlon Planetkiller-1 to (11875.000000, 237.500000)
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Trying to clean memory
+Setting splash damage for Drakh Carrier-1 to (6375.000000, 127.500000)
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Simulated Point Defence: cancelling, error in try found...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Setting splash damage for Drakh Carrier-1 to (6375.000000, 127.500000)
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Setting splash damage for Drakh Carrier-1 to (6375.000000, 127.500000)
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting splash damage for Species 8472 Bioship-1 to (1087.500000, 21.750000)
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Trying to clean memory
+Setting splash damage for Species 8472 Bioship-3 to (1087.500000, 21.750000)
+Creating WarpSequence:  Ship = Species 8472 Bioship-3  // To Set = None  // Placement Name = None
+data/TGL/Maelstrom/Episode 4/E4M4.tgl E4M4FelixReturn3
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 25 Mar 2025 20:12:00#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+Jumpspace Drive 20070905 Initializing...
+TimeVortex Drive 20070905 Initializing...
+Warpspace Drive 20070905 Initializing...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+Jumpspace: Quick Battle is running... Mod is starting up...
+TimeVortex: Quick Battle is running... Mod is starting up...
+Warpspace: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+data/TGL/Maelstrom/Episode 7/E7M1.tgl E7M1CommunicateBrex2b
+
+# DS9FX has...
+
+# taken a console dump
+Setting splash damage for Vorlon Planetkiller-1 to (11875.000000, 237.500000)
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Trying to clean memory
+Setting splash damage for Drakh Carrier-1 to (6375.000000, 127.500000)
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Simulated Point Defence: cancelling, error in try found...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Setting splash damage for Drakh Carrier-1 to (6375.000000, 127.500000)
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\Drakhweapon.py", line 22, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Setting splash damage for Drakh Carrier-1 to (6375.000000, 127.500000)
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting splash damage for Species 8472 Bioship-1 to (1087.500000, 21.750000)
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Trying to clean memory
+Setting splash damage for Species 8472 Bioship-3 to (1087.500000, 21.750000)
+Creating WarpSequence:  Ship = Species 8472 Bioship-3  // To Set = None  // Placement Name = None
+data/TGL/Maelstrom/Episode 4/E4M4.tgl E4M4FelixReturn3
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 25 Mar 2025 21:43:44#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+Jumpspace Drive 20070905 Initializing...
+TimeVortex Drive 20070905 Initializing...
+Warpspace Drive 20070905 Initializing...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+Jumpspace: Quick Battle is running... Mod is starting up...
+TimeVortex: Quick Battle is running... Mod is starting up...
+Warpspace: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+data/TGL/Maelstrom/Episode 8/E8M1.tgl E8M1L185
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+
+# DS9FX has...
+
+# taken a console dump
+Setting splash damage for Vorlon Fighter-12 to (107.999992, 2.160000)
+Setting splash damage for Vorlon Fighter-13 to (107.999992, 2.160000)
+Setting splash damage for Vorlon Fighter-10 to (107.999992, 2.160000)
+Setting splash damage for Superweapon-1 to (6276.423828, 125.528473)
+Setting splash damage for Vorlon Fighter-11 to (112.500000, 2.250000)
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 25 Mar 2025 21:43:44#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+Jumpspace Drive 20070905 Initializing...
+TimeVortex Drive 20070905 Initializing...
+Warpspace Drive 20070905 Initializing...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+Jumpspace: Quick Battle is running... Mod is starting up...
+TimeVortex: Quick Battle is running... Mod is starting up...
+Warpspace: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+data/TGL/Maelstrom/Episode 8/E8M1.tgl E8M1L185
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+
+# DS9FX has...
+
+# taken a console dump
+Setting splash damage for Vorlon Fighter-12 to (107.999992, 2.160000)
+Setting splash damage for Vorlon Fighter-13 to (107.999992, 2.160000)
+Setting splash damage for Vorlon Fighter-10 to (107.999992, 2.160000)
+Setting splash damage for Superweapon-1 to (6276.423828, 125.528473)
+Setting splash damage for Vorlon Fighter-11 to (112.500000, 2.250000)
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 25 Mar 2025 23:26:08#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+Jumpspace Drive 20070905 Initializing...
+TimeVortex Drive 20070905 Initializing...
+Warpspace Drive 20070905 Initializing...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+Jumpspace: Quick Battle is running... Mod is starting up...
+TimeVortex: Quick Battle is running... Mod is starting up...
+Warpspace: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+
+# DS9FX has...
+
+# taken a console dump
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _4039c310_p_Torpedo to (468.750000, 9.375000)
+Setting splash damage for Shadow_Fighter6 to (93.750000, 1.875000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2f1afd38_p_Torpedo to (468.750000, 9.375000)
+Setting splash damage for Shadow_Fighter4 to (93.750000, 1.875000)
+Setting splash damage for Shadow_Fighter7 to (93.750000, 1.875000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2f1b02f8_p_Torpedo to (468.750000, 9.375000)
+Creating WarpSequence:  Ship = Constitution-1  // To Set = None  // Placement Name = None
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 4a4db1a8> ignored
+Setting splash damage for Constitution-1 to (625.000000, 12.500000)
+Simulated Point Defence: cancelling, error in try found...
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _4039bbe0_p_Torpedo to (468.750000, 9.375000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2f25cd80_p_Torpedo to (468.750000, 9.375000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _4039bd50_p_Torpedo to (468.750000, 9.375000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2e4b23a8_p_Torpedo to (468.750000, 9.375000)
+Setting splash damage for Shadow_Fighter3 to (93.750000, 1.875000)
+Setting splash damage for Shuttle - 3 to (40.682640, 0.813653)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2f1b0188_p_Torpedo to (468.750000, 9.375000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2f25cd80_p_Torpedo to (468.750000, 9.375000)
+Creating WarpSequence:  Ship = Constitution-1  // To Set = None  // Placement Name = None
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 278f6e5c> ignored
+Setting splash damage for Constitution-1 to (526.700500, 10.534010)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2f25cef0_p_Torpedo to (468.750000, 9.375000)
+Setting splash damage for Shuttle - 4 to (34.512753, 0.690255)
+Setting splash damage for Shadow_Fighter6 to (93.750000, 1.875000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2f1b05d8_p_Torpedo to (468.750000, 9.375000)
+Setting splash damage for Constitution-2 to (551.554932, 11.031098)
+Setting splash damage for Shadow_Fighter4 to (93.750000, 1.875000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2f1b05d8_p_Torpedo to (468.750000, 9.375000)
+Setting splash damage for Shadow_Fighter7 to (93.750000, 1.875000)
+Creating WarpSequence:  Ship = Constitution-3  // To Set = None  // Placement Name = None
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 4083041c> ignored
+Setting splash damage for Constitution-3 to (519.114990, 10.382299)
+Setting splash damage for Shuttle - 5 to (80.542816, 1.610856)
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _4039c1a0_p_Torpedo to (468.750000, 9.375000)
+Setting splash damage for Shadow_Fighter5 to (93.750000, 1.875000)
+Trying to clean memory
+Setting splash damage for Shadow_Fighter6 to (93.750000, 1.875000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2f1b0a28_p_Torpedo to (459.375000, 9.187500)
+Setting splash damage for Shadow_Fighter4 to (93.750000, 1.875000)
+Setting splash damage for Shadow_Fighter3 to (93.750000, 1.875000)
+Traceback (innermost last):
+  File ".\Scripts\Custom\Autoload\Mvam\BattlecrabMvam.py", line 205, in Battlecrab
+    Custom.Sneaker.Mvam.Seperation.Seperation(snkMvamModule, "Battlecrab")
+  File ".\Scripts\Custom\Autoload\000-Expansion-DS9FXMvamFix.py", line 25, in SeperationIntercept
+    Sep(snkMvamModule, strShip)
+  File ".\Scripts\Custom\Sneaker\Mvam\Seperation.py", line 105, in Seperation
+    pMvamShips[intCounter].SetTranslate(pLocations[i])
+AttributeError: 'None' object has no attribute 'SetTranslate'
+Setting Stock System Planets Random Density.
+Setting splash damage for Shadow_Fighter2 to (93.750000, 1.875000)
+Setting splash damage for Shadow_Fighter7 to (93.750000, 1.875000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2f25cef0_p_Torpedo to (468.750000, 9.375000)
+Setting Stock System Planets Random Density.
+Setting splash damage for Shadow_Fighter6 to (93.750000, 1.875000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2f25cef0_p_Torpedo to (389.859375, 7.797187)
+Setting splash damage for Shadow_Fighter4 to (93.750000, 1.875000)
+Setting splash damage for Shadow_Fighter2 to (93.750000, 1.875000)
+Setting splash damage for Shadow_Fighter3 to (93.750000, 1.875000)
+Setting splash damage for Shadow_Fighter7 to (93.750000, 1.875000)
+Setting splash damage for Excelsior-1 to (1279.068115, 25.581362)
+Creating WarpSequence:  Ship = Excelsior-1  // To Set = None  // Placement Name = None
+Creating WarpSequence:  Ship = Excelsior-3  // To Set = None  // Placement Name = None
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 4aa0e82c> ignored
+Setting splash damage for Excelsior-3 to (1323.472046, 26.469440)
+Creating WarpSequence:  Ship = Excelsior-2  // To Set = None  // Placement Name = None
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 4af47b24> ignored
+Setting splash damage for Excelsior-2 to (1250.505005, 25.010099)
+Traceback (innermost last):
+  File ".\Scripts\Custom\Autoload\Mvam\BattlecrabMvam.py", line 205, in Battlecrab
+    Custom.Sneaker.Mvam.Seperation.Seperation(snkMvamModule, "Battlecrab")
+  File ".\Scripts\Custom\Autoload\000-Expansion-DS9FXMvamFix.py", line 25, in SeperationIntercept
+    Sep(snkMvamModule, strShip)
+  File ".\Scripts\Custom\Sneaker\Mvam\Seperation.py", line 102, in Seperation
+    pMvamShips[intCounter].EnableCollisionsWith(pMvamShips[l], 0)
+AttributeError: 'None' object has no attribute 'EnableCollisionsWith'
+Setting Stock System Planets Random Density.
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _4039c1a0_p_Torpedo to (487.500000, 9.750000)
+Simulated Point Defence: cancelling, error in try found...
+Simulated Point Defence: cancelling, error in try found...
+Simulated Point Defence: cancelling, error in try found...
+Simulated Point Defence: cancelling, error in try found...
+Simulated Point Defence: cancelling, error in try found...
+Simulated Point Defence: cancelling, error in try found...
+Simulated Point Defence: cancelling, error in try found...
+Simulated Point Defence: cancelling, error in try found...
+Simulated Point Defence: cancelling, error in try found...
+Simulated Point Defence: cancelling, error in try found...
+Simulated Point Defence: cancelling, error in try found...
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2f1b0a28_p_Torpedo to (487.500000, 9.750000)
+Setting splash damage for Shadow_Fighter5 1 to (93.750000, 1.875000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2f1b0468_p_Torpedo to (487.500000, 9.750000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _4039c030_p_Torpedo to (487.500000, 9.750000)
+Setting splash damage for Shadow_Fighter6 1 to (93.750000, 1.875000)
+Setting splash damage for Cheyenne-5 to (630.468750, 12.609375)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _4039bbe0_p_Torpedo to (487.500000, 9.750000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2f1b08b8_p_Torpedo to (478.125000, 9.562500)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _40ef3c30_p_Torpedo to (375.000916, 7.500018)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _40ef4360_p_Torpedo to (487.500000, 9.750000)
+Setting splash damage for Shadow_Fighter5 2 to (93.750000, 1.875000)
+Setting splash damage for Shadow_Fighter3 2 to (93.750000, 1.875000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _40ef4360_p_Torpedo to (487.500000, 9.750000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2f25cef0_p_Torpedo to (487.500000, 9.750000)
+Setting splash damage for Cheyenne-1 to (625.000000, 12.500000)
+Creating WarpSequence:  Ship = Cheyenne-1  // To Set = None  // Placement Name = None
+Setting splash damage for Shadow_Fighter3 1 to (93.750000, 1.875000)
+Setting splash damage for Shadow_Fighter1 1 to (93.750000, 1.875000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _40ef4c00_p_Torpedo to (487.500000, 9.750000)
+data/TGL/Maelstrom/Episode 8/E8M1.tgl E8M1L118
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _4039c5f0_p_Torpedo to (487.500000, 9.750000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _40ef3ac0_p_Torpedo to (487.500000, 9.750000)
+Setting splash damage for Shadow_Fighter2 1 to (93.750000, 1.875000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _40ef3220_p_Torpedo to (468.750000, 9.375000)
+Setting splash damage for Shadow_Fighter7 2 to (93.750000, 1.875000)
+Setting splash damage for Cheyenne-2 to (625.000000, 12.500000)
+Creating WarpSequence:  Ship = Cheyenne-2  // To Set = None  // Placement Name = None
+Simulated Point Defence: cancelling, error in try found...
+Simulated Point Defence: cancelling, error in try found...
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 25 Mar 2025 23:26:08#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+Jumpspace Drive 20070905 Initializing...
+TimeVortex Drive 20070905 Initializing...
+Warpspace Drive 20070905 Initializing...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+Jumpspace: Quick Battle is running... Mod is starting up...
+TimeVortex: Quick Battle is running... Mod is starting up...
+Warpspace: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+
+# DS9FX has...
+
+# taken a console dump
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _4039c310_p_Torpedo to (468.750000, 9.375000)
+Setting splash damage for Shadow_Fighter6 to (93.750000, 1.875000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2f1afd38_p_Torpedo to (468.750000, 9.375000)
+Setting splash damage for Shadow_Fighter4 to (93.750000, 1.875000)
+Setting splash damage for Shadow_Fighter7 to (93.750000, 1.875000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2f1b02f8_p_Torpedo to (468.750000, 9.375000)
+Creating WarpSequence:  Ship = Constitution-1  // To Set = None  // Placement Name = None
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 4a4db1a8> ignored
+Setting splash damage for Constitution-1 to (625.000000, 12.500000)
+Simulated Point Defence: cancelling, error in try found...
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _4039bbe0_p_Torpedo to (468.750000, 9.375000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2f25cd80_p_Torpedo to (468.750000, 9.375000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _4039bd50_p_Torpedo to (468.750000, 9.375000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2e4b23a8_p_Torpedo to (468.750000, 9.375000)
+Setting splash damage for Shadow_Fighter3 to (93.750000, 1.875000)
+Setting splash damage for Shuttle - 3 to (40.682640, 0.813653)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2f1b0188_p_Torpedo to (468.750000, 9.375000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2f25cd80_p_Torpedo to (468.750000, 9.375000)
+Creating WarpSequence:  Ship = Constitution-1  // To Set = None  // Placement Name = None
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 278f6e5c> ignored
+Setting splash damage for Constitution-1 to (526.700500, 10.534010)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2f25cef0_p_Torpedo to (468.750000, 9.375000)
+Setting splash damage for Shuttle - 4 to (34.512753, 0.690255)
+Setting splash damage for Shadow_Fighter6 to (93.750000, 1.875000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2f1b05d8_p_Torpedo to (468.750000, 9.375000)
+Setting splash damage for Constitution-2 to (551.554932, 11.031098)
+Setting splash damage for Shadow_Fighter4 to (93.750000, 1.875000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2f1b05d8_p_Torpedo to (468.750000, 9.375000)
+Setting splash damage for Shadow_Fighter7 to (93.750000, 1.875000)
+Creating WarpSequence:  Ship = Constitution-3  // To Set = None  // Placement Name = None
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 4083041c> ignored
+Setting splash damage for Constitution-3 to (519.114990, 10.382299)
+Setting splash damage for Shuttle - 5 to (80.542816, 1.610856)
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _4039c1a0_p_Torpedo to (468.750000, 9.375000)
+Setting splash damage for Shadow_Fighter5 to (93.750000, 1.875000)
+Trying to clean memory
+Setting splash damage for Shadow_Fighter6 to (93.750000, 1.875000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2f1b0a28_p_Torpedo to (459.375000, 9.187500)
+Setting splash damage for Shadow_Fighter4 to (93.750000, 1.875000)
+Setting splash damage for Shadow_Fighter3 to (93.750000, 1.875000)
+Traceback (innermost last):
+  File ".\Scripts\Custom\Autoload\Mvam\BattlecrabMvam.py", line 205, in Battlecrab
+    Custom.Sneaker.Mvam.Seperation.Seperation(snkMvamModule, "Battlecrab")
+  File ".\Scripts\Custom\Autoload\000-Expansion-DS9FXMvamFix.py", line 25, in SeperationIntercept
+    Sep(snkMvamModule, strShip)
+  File ".\Scripts\Custom\Sneaker\Mvam\Seperation.py", line 105, in Seperation
+    pMvamShips[intCounter].SetTranslate(pLocations[i])
+AttributeError: 'None' object has no attribute 'SetTranslate'
+Setting Stock System Planets Random Density.
+Setting splash damage for Shadow_Fighter2 to (93.750000, 1.875000)
+Setting splash damage for Shadow_Fighter7 to (93.750000, 1.875000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2f25cef0_p_Torpedo to (468.750000, 9.375000)
+Setting Stock System Planets Random Density.
+Setting splash damage for Shadow_Fighter6 to (93.750000, 1.875000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2f25cef0_p_Torpedo to (389.859375, 7.797187)
+Setting splash damage for Shadow_Fighter4 to (93.750000, 1.875000)
+Setting splash damage for Shadow_Fighter2 to (93.750000, 1.875000)
+Setting splash damage for Shadow_Fighter3 to (93.750000, 1.875000)
+Setting splash damage for Shadow_Fighter7 to (93.750000, 1.875000)
+Setting splash damage for Excelsior-1 to (1279.068115, 25.581362)
+Creating WarpSequence:  Ship = Excelsior-1  // To Set = None  // Placement Name = None
+Creating WarpSequence:  Ship = Excelsior-3  // To Set = None  // Placement Name = None
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 4aa0e82c> ignored
+Setting splash damage for Excelsior-3 to (1323.472046, 26.469440)
+Creating WarpSequence:  Ship = Excelsior-2  // To Set = None  // Placement Name = None
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 4af47b24> ignored
+Setting splash damage for Excelsior-2 to (1250.505005, 25.010099)
+Traceback (innermost last):
+  File ".\Scripts\Custom\Autoload\Mvam\BattlecrabMvam.py", line 205, in Battlecrab
+    Custom.Sneaker.Mvam.Seperation.Seperation(snkMvamModule, "Battlecrab")
+  File ".\Scripts\Custom\Autoload\000-Expansion-DS9FXMvamFix.py", line 25, in SeperationIntercept
+    Sep(snkMvamModule, strShip)
+  File ".\Scripts\Custom\Sneaker\Mvam\Seperation.py", line 102, in Seperation
+    pMvamShips[intCounter].EnableCollisionsWith(pMvamShips[l], 0)
+AttributeError: 'None' object has no attribute 'EnableCollisionsWith'
+Setting Stock System Planets Random Density.
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _4039c1a0_p_Torpedo to (487.500000, 9.750000)
+Simulated Point Defence: cancelling, error in try found...
+Simulated Point Defence: cancelling, error in try found...
+Simulated Point Defence: cancelling, error in try found...
+Simulated Point Defence: cancelling, error in try found...
+Simulated Point Defence: cancelling, error in try found...
+Simulated Point Defence: cancelling, error in try found...
+Simulated Point Defence: cancelling, error in try found...
+Simulated Point Defence: cancelling, error in try found...
+Simulated Point Defence: cancelling, error in try found...
+Simulated Point Defence: cancelling, error in try found...
+Simulated Point Defence: cancelling, error in try found...
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2f1b0a28_p_Torpedo to (487.500000, 9.750000)
+Setting splash damage for Shadow_Fighter5 1 to (93.750000, 1.875000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2f1b0468_p_Torpedo to (487.500000, 9.750000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _4039c030_p_Torpedo to (487.500000, 9.750000)
+Setting splash damage for Shadow_Fighter6 1 to (93.750000, 1.875000)
+Setting splash damage for Cheyenne-5 to (630.468750, 12.609375)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _4039bbe0_p_Torpedo to (487.500000, 9.750000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2f1b08b8_p_Torpedo to (478.125000, 9.562500)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _40ef3c30_p_Torpedo to (375.000916, 7.500018)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _40ef4360_p_Torpedo to (487.500000, 9.750000)
+Setting splash damage for Shadow_Fighter5 2 to (93.750000, 1.875000)
+Setting splash damage for Shadow_Fighter3 2 to (93.750000, 1.875000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _40ef4360_p_Torpedo to (487.500000, 9.750000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _2f25cef0_p_Torpedo to (487.500000, 9.750000)
+Setting splash damage for Cheyenne-1 to (625.000000, 12.500000)
+Creating WarpSequence:  Ship = Cheyenne-1  // To Set = None  // Placement Name = None
+Setting splash damage for Shadow_Fighter3 1 to (93.750000, 1.875000)
+Setting splash damage for Shadow_Fighter1 1 to (93.750000, 1.875000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _40ef4c00_p_Torpedo to (487.500000, 9.750000)
+data/TGL/Maelstrom/Episode 8/E8M1.tgl E8M1L118
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _4039c5f0_p_Torpedo to (487.500000, 9.750000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _40ef3ac0_p_Torpedo to (487.500000, 9.750000)
+Setting splash damage for Shadow_Fighter2 1 to (93.750000, 1.875000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _40ef3220_p_Torpedo to (468.750000, 9.375000)
+Setting splash damage for Shadow_Fighter7 2 to (93.750000, 1.875000)
+Setting splash damage for Cheyenne-2 to (625.000000, 12.500000)
+Creating WarpSequence:  Ship = Cheyenne-2  // To Set = None  // Placement Name = None
+Simulated Point Defence: cancelling, error in try found...
+Simulated Point Defence: cancelling, error in try found...
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####

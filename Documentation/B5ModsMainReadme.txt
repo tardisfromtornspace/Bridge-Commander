@@ -1,4 +1,7 @@
 ==Changelog==
+1.2.25 -
+   Fixes:
+   * Ensured the Mvam of the Battlecrab to launch fighters en-masse has no risks of shadow fighters crashing with the battlecrab.
 1.2.24 -
    Updates:
    * Made the jump point 'torpedo' stop sending print data about the system they are in.
