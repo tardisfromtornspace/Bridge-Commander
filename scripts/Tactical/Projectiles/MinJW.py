@@ -117,6 +117,13 @@ def TargetHit(pObject, pEvent):
 	if (pTorp==None) or (pShip==None):
 		return
 
+	targetID = pShip.GetObjID()
+	if targetID == None or targetID == App.NULL_ID:
+		return
+	pShip2 = App.ShipClass_GetObjectByID(None, targetID)
+	if (pShip2==None):
+		return
+
 	pAttacker = None
 	finalRadius = 1.0
 	defenderRadius = pShip.GetRadius()

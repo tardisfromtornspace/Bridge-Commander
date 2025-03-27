@@ -70,7 +70,7 @@ def GetMinDamage():
 
 # Sets the percentage of damage the torpedo will do
 def GetPercentage():
-	return 0.00001
+	return 0.001
 
 def GetGuidanceLifetime():
 	return 700.0
@@ -157,12 +157,40 @@ def TargetHit(pObject, pEvent):
 	pShip=App.ShipClass_Cast(pEvent.GetDestination())
 	if (pTorp==None) or (pShip==None):
 		return
+
+	targetID = pShip.GetObjID()
+	if targetID == None or targetID == App.NULL_ID:
+		return
+	pShip2 = App.ShipClass_GetObjectByID(None, targetID)
+	if (pShip2==None):
+		return
+	if (pShip.IsDead()) or (pShip.IsDying()):
+		return
+
+	pSubsystem = None
 	try:
 		id=pTorp.GetObjID()
 		pSubsystem=pWeaponLock[id]
 		del pWeaponLock[id]
 	except:
-		pSubsystem=pShip.GetHull()
+		pSubsystem = None
+		try:
+			pParentID = pTorp.GetParentID()
+			if pParentID != None and pParentID != App.NULL_ID:
+				pParentShip = App.ShipClass_GetObjectByID(None, pParentID)
+				if pParentShip and not pParentShip.IsDead():
+					pSubsys=pParentShip.GetTargetSubsystem()
+					if pSubsys and hasattr(pSubsys, "GetParentShip"):
+						pNewTarget = pSubsys.GetParentShip()
+						if pNewTarget and hasattr(pNewTarget, "GetObjID"):
+							pShip3ID = pNewTarget.GetObjID()
+							if (pShip3ID != None) and (pShip3ID != App.NULL_ID) and (pShip3ID == targetID):
+								pSubsystem = pSubsys
+
+			if pSubsystem == None:
+				pSubsystem=pShip.GetHull()
+		except:
+			pSubsystem=pShip.GetHull()
 
 	### LJ + ALEX SL GATO INSERTS - CHECK FOR IMMUNE SHIP
 	global lImmuneShips

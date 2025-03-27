@@ -1,4 +1,7 @@
 ==Changelog==
+1.2.26 -
+   Fixes:
+   * Found out that UniMod's way of dealing subsystem damage for MinJW's projectile could sometimes cause crashes on certain vessels if those were already dying or nearly dead and then were hit again and a destroyed system was destroyed twice. Now that is fixed.
 1.2.25 -
    Fixes:
    * Ensured the Mvam of the Battlecrab to launch fighters en-masse has no risks of shadow fighters crashing with the battlecrab.

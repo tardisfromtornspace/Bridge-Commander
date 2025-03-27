@@ -1,4 +1,9 @@
 == Changelog ==
+1.1.1 - 
+* Bug fixes:
+  - Found a weird issue with the original damage dealer that could cause a crash sometimes on certain vessels. The only known cause for this (rarely hitting a dead ship that no longer existed on the game) should be fixed.
+* New features:
+  - Improved Drone tactical script funcionality so Drones and Drones2 can change subsystem to hit when the player or AI swap subsystems.
 1.1 - 
 * New features:
   - SGRealisticHoppingTorp to 1.2 - Now if you have enough energy and divert enough power to weapons, THE DRONES WILL SWITCH TARGETS UPON DESTRUCTION OF THEM, and when no enemies are found, they are recalled to the ship, replenishing ammo.
@@ -30,7 +35,7 @@ All of these must be installed before installing this mod, in this order:
 * Everyone involved in Foundation - without you this would have been a real pain to do (please read the separate Foundation.txt license) - Banbury, Dasher42, DigitalFriend, MLeo, Nanobyte and Sleight42, among others
 * Everyone involved in KM - specifically those involved in the creation of armour and Shields.py (FoundationTechnologies) and the AdvArmorTech.py - Apollo from ATP Technologies as well.
 * Dasher42 and USS Sovereign, not only for the above but for some feedback.
-* Those involved with the Stargate Pack 4.0 and other Stargate packs for STBC:
+* Those involved with the Stargate Pack 4.0 and other Stargate packs for STBC: #### TO-DO CHECK THE HYPERDRIVE MOD IS THERE, ELSE LOOK FOR IT ####
 ** https://www.gamefront.com/games/bridge-commander/file/stargate-ship-pack-dave975-and-dkealt by Dave975 and DKealt, among others mentioned on its readme, and LJ.
 ** https://www.gamefront.com/games/bridge-commander/file/ancient-city-atlantis-pack-0-9: abt, limey, cliperkins, jb and dave (models) and icons (http://www.lostmindsinc.com/index.php?page=races)
 *** Evan Light aka sleight42 for the original Carriers script.

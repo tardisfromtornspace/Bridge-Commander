@@ -1,7 +1,7 @@
 #################################################################################################################
 #         GraviticLance by Alex SL Gato
-#         Version 1.51
-#         19th October 2024
+#         Version 1.52
+#         27th March 2025
 #         Based on FiveSecsGodPhaser by USS Frontier, scripts/ftb/Tech/TachyonProjectile by the FoundationTechnologies team, and scripts/ftb/Tech/FedAblativeArmour by the FoundationTechnologies team
 #                          
 #################################################################################################################
@@ -28,7 +28,7 @@ def IsGraviticLanceImmune():
 #################################################################################################################
 #
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "1.51",
+	    "Version": "1.52",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -251,7 +251,8 @@ class GraviticLance(FoundationTech.TechDef):
 
 		if len(pInstance.__dict__['GraviticLance'][sTargetName]['HittingNames']) <= 0:
 			#instance-secs hitting sequence aborted... cancel it.
-			App.g_kTimerManager.DeleteTimer(pInstance.__dict__['GraviticLance'][sTargetName]['Timer'].GetObjID())
+			if pInstance.__dict__['GraviticLance'][sTargetName].has_key('Timer') and hasattr(pInstance.__dict__['GraviticLance'][sTargetName]['Timer'], "GetObjID"):
+				App.g_kTimerManager.DeleteTimer(pInstance.__dict__['GraviticLance'][sTargetName]['Timer'].GetObjID())
 			pInstance.__dict__['GraviticLance'][sTargetName]['Timer'] = None
 			del pInstance.__dict__['GraviticLance'][sTargetName]
 			#print "EJGL (Stop): instance-sec hitting sequence aborted..."
