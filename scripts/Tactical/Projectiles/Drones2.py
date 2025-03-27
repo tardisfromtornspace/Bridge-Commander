@@ -163,6 +163,8 @@ def TargetHit(pObject, pEvent):
 	pShip2 = App.ShipClass_GetObjectByID(None, targetID)
 	if (pShip2==None):
 		return
+	if (pShip.IsDead()) or (pShip.IsDying()):
+		return
 
 	pSubsystem = None
 	try:

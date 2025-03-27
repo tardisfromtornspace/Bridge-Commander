@@ -1,4 +1,7 @@
 == Changelog ==
+1.1.2 - 
+* Bug fixes:
+  - Fixed the issue also on Drones2.
 1.1.1 - 
 * Bug fixes:
   - Found a weird issue with the original damage dealer that could cause a crash sometimes on certain vessels. The only known cause for this (rarely hitting a dead ship that no longer existed on the game) should be fixed.
