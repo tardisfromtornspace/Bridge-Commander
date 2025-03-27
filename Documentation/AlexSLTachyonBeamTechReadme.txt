@@ -1,4 +1,5 @@
 == Changelog ==
+1.4 - Small bugfix
 1.3 - Small bugfix
 1.2 - Small bugfix
 1.1.5 - Small bugfix

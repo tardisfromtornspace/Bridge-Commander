@@ -1,4 +1,6 @@
 == Changelog ==
+1.2.11 - Fixing:
+   * Updated Tachyon Beam to 1.4 to be more robust.
 1.2.10 - Fixing:
    * Updated hull gauge fix unrelated to this mod to be more robust.
 1.2.9 - Fixing:

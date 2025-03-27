@@ -1,6 +1,6 @@
 #################################################################################################################
 #         TachyonBeam by Alex SL Gato
-#         13th March 2025
+#         27th March 2025
 #         Based on FiveSecsGodPhaser by USS Frontier, scripts/ftb/Tech/TachyonProjectile by the FoundationTechnologies team, and scripts/ftb/Tech/FedAblativeArmour by the FoundationTechnologies team
 #                          
 #################################################################################################################
@@ -26,7 +26,7 @@ def IsTachyonImmune():
 #################################################################################################################
 #
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "1.3",
+	    "Version": "1.4",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -360,7 +360,8 @@ class TachyonBeam(FoundationTech.TechDef):
 
 		if len(pInstance.__dict__['TachyonBeam'][sTargetName]['HittingNames']) <= 0:
 			#instance-secs hitting sequence aborted... cancel it.
-			App.g_kTimerManager.DeleteTimer(pInstance.__dict__['TachyonBeam'][sTargetName]['Timer'].GetObjID())
+			if pInstance.__dict__['TachyonBeam'][sTargetName].has_key('Timer') and hasattr(pInstance.__dict__['TachyonBeam'][sTargetName]['Timer'], "GetObjID"):
+				App.g_kTimerManager.DeleteTimer(pInstance.__dict__['TachyonBeam'][sTargetName]['Timer'].GetObjID())
 			pInstance.__dict__['TachyonBeam'][sTargetName]['Timer'] = None
 			del pInstance.__dict__['TachyonBeam'][sTargetName]
 			#print "FSTB (Stop): instance-sec hitting sequence aborted..."
