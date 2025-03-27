@@ -1,4 +1,5 @@
 == Changelog ==
+1.0.4 - Updated hull gauge fix unrelated to this mod to be more robust.
 1.0.3 - Updated the FIX-AblativeArmour1dot0 Autoload script to provide full starbase repair functionality and better armour inheritance.
 1.0.2 - Fixed hull gauge issues unrelated to this mod.
 1.0.1 - Upgraded  SolidProjectiles to 0.32, ensuring that the functions work regardless of MissionLib settings.

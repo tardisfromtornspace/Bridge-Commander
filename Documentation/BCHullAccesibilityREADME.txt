@@ -1,4 +1,6 @@
 == Changelog ==
+1.0.1 
+   - Updated FoundationTech.GaugeTechDef.DetachShip hull gauge fix unrelated to this mod to be more robust.
 1.0.0:
     - Official release of the mod on Gamefront.
 0.5.5:

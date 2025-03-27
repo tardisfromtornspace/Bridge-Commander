@@ -1,4 +1,6 @@
 == Changelog ==
+1.1.21 - fixes:
+   * Updated hull gauge fix unrelated to this mod to be more robust.
 1.1.20 - fixes:
    * Updated the FIX-AblativeArmour1dot0 Autoload script to provide full starbase repair functionality and better armour inheritance.
 1.1.19 - fixes:

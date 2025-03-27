@@ -1,7 +1,7 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
-# 5th March 2025
-# VERSION 0.1
+# 27th March 2025
+# VERSION 0.2
 # By Alex SL Gato
 # FoundationTech.py by Dasher and the Foundation Technologies team -> GaugeTechDef.DetachShip fix
 #
@@ -36,20 +36,33 @@ if necessaryToUpdate:
 		# print 'GaugeTechDef.DetachShip', self.name
 		debug(__name__ + ", DetachShip")
 		if self in pInstance.lHealthGauge:
-			pInstance.lHealthGauge.remove(self)
+			try:
+				pInstance.lHealthGauge.remove(self)
+			except:
+				traceback.print_exc()
 
 			if len(pInstance.lHealthGauge) > 0:
-				if pInstance.pDisplay == None:
-					if len(FoundationTech.dDisplays[pInstance.pShipID]) > 0:
-						myDi = FoundationTech.dDisplays[pInstance.pShipID]
-						if myDi != None:
-							pInstance.pDisplay = FoundationTech.dDisplays[pInstance.pShipID][-1]
-				if pInstance.pDisplay != None:
-					pInstance.lHealthGauge[-1].SetGauge(pShip, pInstance, pInstance.pDisplay.GetHealthGauge())
+				try:
+					if pInstance.pDisplay == None:
+						if len(FoundationTech.dDisplays[pInstance.pShipID]) > 0:
+							myDi = FoundationTech.dDisplays[pInstance.pShipID]
+							if myDi != None and len(myDi) > 0:
+								pInstance.pDisplay = FoundationTech.dDisplays[pInstance.pShipID][-1]
+				except:
+					traceback.print_exc()
+				try:
+					if pInstance.pDisplay != None:
+						pInstance.lHealthGauge[-1].SetGauge(pShip, pInstance, pInstance.pDisplay.GetHealthGauge())
+				except:
+					traceback.print_exc()
 
 			if len(pInstance.lHealthGauge) > 0 and pInstance.pDisplay != None:
 				pInstance.lHealthGauge[-1].SetGauge(pShip, pInstance, pInstance.pDisplay.GetHealthGauge())
-		pInstance.__dict__[self.GetSystemPointer()] = None
+
+		try:
+			pInstance.__dict__[self.GetSystemPointer()] = None
+		except:
+			traceback.print_exc()
 
 	if original1 != None:
 		FoundationTech.GaugeTechDef.DetachShip = DetachShip

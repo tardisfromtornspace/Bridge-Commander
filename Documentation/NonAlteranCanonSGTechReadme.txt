@@ -1,4 +1,5 @@
 == Changelog ==
+1.1.13 - Updated hull gauge fix unrelated to this mod to be more robust.
 1.1.12 - fixes:
    * Fixed small possible issue regarding Tachyon beam tech interference with the unupgraded Beliskner and the Valhalla.
 1.1.11 - fixes:
