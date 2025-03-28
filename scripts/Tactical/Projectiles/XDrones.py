@@ -106,12 +106,41 @@ def TargetHit(pObject, pEvent):
 	pShip=App.ShipClass_Cast(pEvent.GetDestination())
 	if (pTorp==None) or (pShip==None):
 		return
+
+	targetID = pShip.GetObjID()
+	if targetID == None or targetID == App.NULL_ID:
+		return
+	pShip2 = App.ShipClass_GetObjectByID(None, targetID)
+	if (pShip2==None):
+		return
+	if (pShip.IsDead()) or (pShip.IsDying()):
+		return
+
+	pSubsystem = None
 	try:
 		id=pTorp.GetObjID()
 		pSubsystem=pWeaponLock[id]
 		del pWeaponLock[id]
 	except:
-		pSubsystem=pShip.GetHull()
+		pSubsystem = None
+		try:
+			pParentID = pTorp.GetParentID()
+			if pParentID != None and pParentID != App.NULL_ID:
+				pParentShip = App.ShipClass_GetObjectByID(None, pParentID)
+				if pParentShip and not pParentShip.IsDead():
+					pSubsys=pParentShip.GetTargetSubsystem()
+					if pSubsys and hasattr(pSubsys, "GetParentShip"):
+						pNewTarget = pSubsys.GetParentShip()
+						if pNewTarget and hasattr(pNewTarget, "GetObjID"):
+							pShip3ID = pNewTarget.GetObjID()
+							if (pShip3ID != None) and (pShip3ID != App.NULL_ID) and (pShip3ID == targetID):
+								pSubsystem = pSubsys
+
+			if pSubsystem == None:
+				pSubsystem=pShip.GetHull()
+		except:
+			pSubsystem=pShip.GetHull()
+
 
 	### LJ INSERTS - CHECK FOR IMMUNE SHIP
 	global lImmuneShips
@@ -145,3 +174,14 @@ def WeaponFired(pObject, pEvent):
 	except:
 		return
 	return
+
+def RicochetChance(): # Chance of the projectile to do a comeback
+	return 96
+
+try:
+	modSGRealisticHoppingTorp = __import__("Custom.Techs.SGRealisticHoppingTorp")
+	if(modSGRealisticHoppingTorp):
+		modSGRealisticHoppingTorp.oSGRealisticHoppingTorp.AddTorpedo(__name__, RicochetChance())
+
+except:
+	print "SG Hopping Torpedo script not installed, or you are missing Foundation Tech"

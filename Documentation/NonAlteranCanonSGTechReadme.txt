@@ -1,4 +1,6 @@
 == Changelog ==
+1.1.14 - fixes:
+   * Fixed a small edge-case issue with UniMod's way of dealing damage on ReplicatorProjectile and ReplicatorProjectile2.
 1.1.13 - Updated hull gauge fix unrelated to this mod to be more robust.
 1.1.12 - fixes:
    * Fixed small possible issue regarding Tachyon beam tech interference with the unupgraded Beliskner and the Valhalla.

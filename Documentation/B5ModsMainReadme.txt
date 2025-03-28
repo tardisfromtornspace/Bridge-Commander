@@ -1,4 +1,7 @@
 ==Changelog==
+1.2.27 -
+   Fixes:
+   * Found out that UniMod's way of dealing subsystem damage was also applying to other projectiles (now fixed): B5ThirdspaceFireball, B5ThirdspaceTeleAttack, B5ThirdspaceTeleAttack2, shadowSpit and VorlonWeapon.
 1.2.26 -
    Fixes:
    * Found out that UniMod's way of dealing subsystem damage for MinJW's projectile could sometimes cause crashes on certain vessels if those were already dying or nearly dead and then were hit again and a destroyed system was destroyed twice. Now that is fixed.

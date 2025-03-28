@@ -61,39 +61,49 @@ def GetMaxAngularAccel():
     return 0.2
 
 def TargetHit(pObject, pEvent):
-    global pWeaponLock
-    pTorp=App.Torpedo_Cast(pEvent.GetSource())
-    pShip=App.ShipClass_Cast(pEvent.GetDestination())
-    if (pTorp==None) or (pShip==None):
-        return
-    try:
-        id=pTorp.GetObjID()
-        pSubsystem=pWeaponLock[id]
-        del pWeaponLock[id]
-    except:
-        pSubsystem=pShip.GetHull()
-    if (pSubsystem==None):
-        return
-    Dmg=pSubsystem.GetMaxCondition()*GetPercentage()
-    if (Dmg<GetMinDamage()):
-        Dmg=GetMinDamage()
-    if (pSubsystem.GetCondition()>Dmg):
-        pSubsystem.SetCondition(pSubsystem.GetCondition()-Dmg)
-    else:
-        pShip.DestroySystem(pSubsystem)
-    return
+	global pWeaponLock
+
+	pTorp=App.Torpedo_Cast(pEvent.GetSource())
+	pShip=App.ShipClass_Cast(pEvent.GetDestination())
+	if (pTorp==None) or (pShip==None):
+		return
+
+	targetID = pShip.GetObjID()
+	if targetID == None or targetID == App.NULL_ID:
+		return
+	pShip2 = App.ShipClass_GetObjectByID(None, targetID)
+	if (pShip2==None):
+		return
+	if (pShip.IsDead()) or (pShip.IsDying()):
+		return
+	try:
+		id=pTorp.GetObjID()
+		pSubsystem=pWeaponLock[id]
+		del pWeaponLock[id]
+	except:
+		pSubsystem=pShip.GetHull()
+	if (pSubsystem==None):
+		return
+	Dmg=pSubsystem.GetMaxCondition()*GetPercentage()
+	if (Dmg<GetMinDamage()):
+		Dmg=GetMinDamage()
+	if (pSubsystem.GetCondition()>Dmg):
+		pSubsystem.SetCondition(pSubsystem.GetCondition()-Dmg)
+	else:
+		pShip.DestroySystem(pSubsystem)
+	return
 
 def WeaponFired(pObject, pEvent):
-    global pWeaponLock
-    pTorp=App.Torpedo_Cast(pEvent.GetSource())
-    pTube=App.TorpedoTube_Cast(pEvent.GetDestination())
-    if (pTorp==None) or (pTube==None):
-        return
-    pShip=pTube.GetParentShip()
-    if (pShip==None):
-        return
-    try:
-        pWeaponLock[pTorp.GetObjID()]=pShip.GetTargetSubsystem()
-    except:
-        return
-    return
+	global pWeaponLock
+	pTorp=App.Torpedo_Cast(pEvent.GetSource())
+	pTube=App.TorpedoTube_Cast(pEvent.GetDestination())
+	if (pTorp==None) or (pTube==None):
+		return
+	pShip=pTube.GetParentShip()
+	if (pShip==None):
+		return
+	try:
+		pWeaponLock[pTorp.GetObjID()]=pShip.GetTargetSubsystem()
+	except:
+		return
+	return

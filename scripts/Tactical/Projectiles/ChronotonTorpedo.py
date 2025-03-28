@@ -87,6 +87,21 @@ def GetPercentage():
 
 def TargetHit(pObject, pEvent):
 	pTarget=App.ShipClass_Cast(pEvent.GetDestination())
+
+	pTorp=App.Torpedo_Cast(pEvent.GetSource())
+	pTarget=App.ShipClass_Cast(pEvent.GetDestination())
+	if (pTorp==None) or (pTarget==None):
+		return
+
+	targetID = pShip.GetObjID()
+	if targetID == None or targetID == App.NULL_ID:
+		return
+	pShip2 = App.ShipClass_GetObjectByID(None, targetID)
+	if (pShip2==None):
+		return
+	if (pTarget.IsDead()) or (pTarget.IsDying()):
+		return
+
 	Percentage=GetPercentage()
 	MinYield=GetMinDamage()
 	pHull = pTarget.GetHull()

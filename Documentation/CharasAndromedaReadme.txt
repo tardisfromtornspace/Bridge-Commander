@@ -1,5 +1,7 @@
 This mod is a modification on an older mod I could not remember. The older mod had mostly normal technologies, moved by warp drive and had an energy shield. This change intends to make it more canon
 == Changelog ==
+1.1.7 - Fixes:
+   * Updated Andromeda's 'Nova Bomb' projectile to prevent a possible issue from UniMod's implementation.
 1.1.6 - Fixes:
    * Updated Andromeda's ship file so holes are less pronounced, updated armour and hull regeneration to be a bit more realistic, re-updated torpedoes and "shields" to reflect this and fixing a bug.
 1.1.5 - Misc. changes & Potential Bug Fixing:

@@ -690,3 +690,229 @@ DS9FX: Active and Operational...
 
 
 ##### End Of The Log #####
+##### Bridge Commander Exit Log: 28 Mar 2025 22:13:36#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+Jumpspace Drive 20070905 Initializing...
+TimeVortex Drive 20070905 Initializing...
+Warpspace Drive 20070905 Initializing...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+Jumpspace: Quick Battle is running... Mod is starting up...
+TimeVortex: Quick Battle is running... Mod is starting up...
+Warpspace: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+
+
+Setting splash damage for Shadow Battlecrab-1 to (1137.500000, 22.750000)
+
+
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+WARNING: the projectile:  is not found!
+WARNING: the projectile:  is not found!
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Simulated Point Defence: cancelling, no FTech Ship Instance obj
+Simulated Point Defence: cancelling, no FTech Ship Instance obj
+
+
+
+
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+WARNING: the projectile:  is not found!
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+WARNING: the projectile:  is not found!
+Setting Stock System Planets Random Density.
+Ship Player with SubModels support added
+DS9FX: Active and Operational...
+Error in FoundationTech.DetachShipTechs:
+Traceback (innermost last):
+  File ".\Scripts\Custom\Autoload\FIX-FoundationTech20050703ShipInstanceDetach.py", line 76, in NewDetachShipTechs
+  File ".\Scripts\Custom\Techs\SubModels.py", line 176, in DetachShip
+KeyError: Player
+Setting Stock System Planets Random Density.
+Ship Player with SubModels support added
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Player with SubModels support added
+DS9FX: Active and Operational...
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _44a37f70_p_Torpedo to (28.125000, 0.562500)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _31290858_p_Torpedo to (28.125000, 0.562500)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _44a37f70_p_Torpedo to (28.125000, 0.562500)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _4473b010_p_Torpedo to (28.125000, 0.562500)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _4473aea0_p_Torpedo to (28.125000, 0.562500)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _31290858_p_Torpedo to (28.125000, 0.562500)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _4473aea0_p_Torpedo to (28.125000, 0.562500)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _31290858_p_Torpedo to (28.125000, 0.562500)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _44a37e00_p_Torpedo to (28.125000, 0.562500)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _44739300_p_Torpedo to (28.125000, 0.562500)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _4473aea0_p_Torpedo to (28.125000, 0.562500)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _44739300_p_Torpedo to (28.125000, 0.562500)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _31290858_p_Torpedo to (28.125000, 0.562500)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _44739300_p_Torpedo to (28.125000, 0.562500)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _31994f18_p_Torpedo to (28.125000, 0.562500)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _44739300_p_Torpedo to (28.125000, 0.562500)
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 28 Mar 2025 22:13:36#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+Jumpspace Drive 20070905 Initializing...
+TimeVortex Drive 20070905 Initializing...
+Warpspace Drive 20070905 Initializing...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+Jumpspace: Quick Battle is running... Mod is starting up...
+TimeVortex: Quick Battle is running... Mod is starting up...
+Warpspace: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+
+
+Setting splash damage for Shadow Battlecrab-1 to (1137.500000, 22.750000)
+
+
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+WARNING: the projectile:  is not found!
+WARNING: the projectile:  is not found!
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Simulated Point Defence: cancelling, no FTech Ship Instance obj
+Simulated Point Defence: cancelling, no FTech Ship Instance obj
+
+
+
+
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+WARNING: the projectile:  is not found!
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+WARNING: the projectile:  is not found!
+Setting Stock System Planets Random Density.
+Ship Player with SubModels support added
+DS9FX: Active and Operational...
+Error in FoundationTech.DetachShipTechs:
+Traceback (innermost last):
+  File ".\Scripts\Custom\Autoload\FIX-FoundationTech20050703ShipInstanceDetach.py", line 76, in NewDetachShipTechs
+  File ".\Scripts\Custom\Techs\SubModels.py", line 176, in DetachShip
+KeyError: Player
+Setting Stock System Planets Random Density.
+Ship Player with SubModels support added
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Player with SubModels support added
+DS9FX: Active and Operational...
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _44a37f70_p_Torpedo to (28.125000, 0.562500)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _31290858_p_Torpedo to (28.125000, 0.562500)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _44a37f70_p_Torpedo to (28.125000, 0.562500)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _4473b010_p_Torpedo to (28.125000, 0.562500)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _4473aea0_p_Torpedo to (28.125000, 0.562500)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _31290858_p_Torpedo to (28.125000, 0.562500)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _4473aea0_p_Torpedo to (28.125000, 0.562500)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _31290858_p_Torpedo to (28.125000, 0.562500)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _44a37e00_p_Torpedo to (28.125000, 0.562500)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _44739300_p_Torpedo to (28.125000, 0.562500)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _4473aea0_p_Torpedo to (28.125000, 0.562500)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _44739300_p_Torpedo to (28.125000, 0.562500)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _31290858_p_Torpedo to (28.125000, 0.562500)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _44739300_p_Torpedo to (28.125000, 0.562500)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _31994f18_p_Torpedo to (28.125000, 0.562500)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _44739300_p_Torpedo to (28.125000, 0.562500)
+
+# DS9FX has...
+
+# taken a console dump
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####

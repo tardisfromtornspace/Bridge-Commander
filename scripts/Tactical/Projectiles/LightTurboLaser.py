@@ -175,6 +175,15 @@ def TargetHit(pObject, pEvent):
 	pShip=App.ShipClass_Cast(pEvent.GetDestination())
 	if (pTorp==None) or (pShip==None):
 		return
+
+	targetID = pShip.GetObjID()
+	if targetID == None or targetID == App.NULL_ID:
+		return
+	pShip2 = App.ShipClass_GetObjectByID(None, targetID)
+	if (pShip2==None):
+		return
+	if (pShip.IsDead()) or (pShip.IsDying()):
+		return
 	try:
 		id=pTorp.GetObjID()
 		pSubsystem=pWeaponLock[id]

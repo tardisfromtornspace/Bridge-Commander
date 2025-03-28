@@ -92,6 +92,15 @@ def TargetHit(pObject, pEvent):
 	pShip=App.ShipClass_Cast(pEvent.GetDestination())
 	if (pShip==None):
 		return
+
+	targetID = pShip.GetObjID()
+	if targetID == None or targetID == App.NULL_ID:
+		return
+	pShip2 = App.ShipClass_GetObjectByID(None, targetID)
+	if (pShip2==None):
+		return
+	if (pShip.IsDead()) or (pShip.IsDying()):
+		return
 	vNiWorldHitPoint=pEvent.GetWorldHitPoint()
 	vWorldHitPoint=App.TGPoint3()
 	vWorldHitPoint.SetXYZ(vNiWorldHitPoint.x,vNiWorldHitPoint.y,vNiWorldHitPoint.z)
