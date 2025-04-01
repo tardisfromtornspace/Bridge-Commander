@@ -1,5 +1,8 @@
 This mod is a modification on an older mod I could not remember. The older mod had mostly normal technologies, moved by warp drive and had an energy shield. This change intends to make it more canon
 == Changelog ==
+1.1.8 -
+   Fixes:
+   * Found out that Defiant's Power system could glitch out if a ship had impulse engines but no warp engines. The new Autoload patch "FIX-DefiantsQBautostartPower1dot0.py" aims to resolve that issue.
 1.1.7 - Fixes:
    * Updated Andromeda's 'Nova Bomb' projectile to prevent a possible issue from UniMod's implementation.
 1.1.6 - Fixes:

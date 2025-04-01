@@ -1,4 +1,7 @@
 == Changelog ==
+1.1.3 - 
+* Bug fixes:
+  - Found out that Defiant's Power system could glitch out if a ship had impulse engines but no warp engines. The new Autoload patch "FIX-DefiantsQBautostartPower1dot0.py" aims to resolve that issue.
 1.1.2 - 
 * Bug fixes:
   - Fixed the issue also on Drones2.

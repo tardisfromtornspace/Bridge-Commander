@@ -1,0 +1,8 @@
+ShieldStatus = {2: {5: 1.64999997616, 4: 1.64999997616, 3: 2.0, 2: 2.0, 1: 1.05000007153, 0: 2.0}}
+Repair = {2: 2.0}
+pPhasers = {2: {'Energy Weapon 1': 1.0, 'Energy Weapon 2': 1.0, 'Energy Weapon 3': 1.0, 'Energy Weapon 4': 1.0, 'Energy Weapon 5': 1.0, 'Energy Weapon 6': 1.0, 'Energy Weapon 7': 1.0, 'Energy Weapon 8': 1.0, 'Energy Weapon 9': 1.0, 'Energy Weapon 10': 1.0, 'Energy Weapon 11': 1.0, 'Energy Weapon 12': 1.0}}
+pPulse = {2: {'Rail Gun 28': 1.0, 'Rail Gun 29': 1.0, 'Rail Gun 20': 1.0, 'Rail Gun 21': 1.0, 'Rail Gun 22': 1.0, 'Rail Gun 23': 1.0, 'Rail Gun 24': 1.0, 'Rail Gun 25': 1.0, 'Rail Gun 26': 1.0, 'Rail Gun 27': 1.0, 'Rail Gun 11': 1.0, 'Rail Gun 10': 1.0, 'Rail Gun 13': 1.0, 'Rail Gun 12': 1.0, 'Rail Gun 15': 1.0, 'Rail Gun 14': 1.0, 'Rail Gun 17': 1.0, 'Rail Gun 16': 1.0, 'Rail Gun 19': 1.0, 'Rail Gun 18': 1.0, 'Rail Gun 30': 1.0, 'Rail Gun 31': 1.0, 'Rail Gun 32': 1.0, 'Rail Gun 3': 1.0, 'Rail Gun 2': 1.0, 'Rail Gun 1': 1.0, 'Rail Gun 7': 1.0, 'Rail Gun 6': 1.0, 'Rail Gun 5': 1.0, 'Rail Gun 4': 1.0, 'Rail Gun 9': 1.0, 'Rail Gun 8': 1.0}}
+pTorp = {2: {'Missile Tube 1': 1.0, 'Missile Tube 4': 1.0, 'Missile Tube 7': 1.0, 'Missile Tube 6': 1.0, 'Missile Tube 8': 1.0, 'Missile Tube 20': 1.0, 'Missile Tube 21': 1.0, 'Missile Tube 22': 1.0, 'Missile Tube 15': 1.0, 'Missile Tube 14': 1.0, 'Missile Tube 17': 1.0, 'Missile Tube 16': 1.0, 'Missile Tube 11': 1.0, 'Missile Tube 10': 1.0, 'Missile Tube 13': 1.0, 'Missile Tube 12': 1.0, 'Missile Tube 3': 1.0, 'Missile Tube 2': 1.0, 'Missile Tube 19': 1.0, 'Missile Tube 18': 1.0, 'Missile Tube 9': 1.0, 'Missile Tube 5': 1.0}}
+Engines = {2: 1.0}
+Sensors = {2: 1.0}
+Tractors = {2: {}}

@@ -1,4 +1,6 @@
 == Changelog ==
+0.6.1 - Fixes:
+  * Found out that Defiant's Power system could glitch out if a ship had impulse engines but no warp engines. The new Autoload patch "FIX-DefiantsQBautostartPower1dot0.py" aims to resolve that issue.
 0.6 - Updates:
   * Updated SporeDrive to 0.4, now it also has customizable additional mini-spark chances for entry and exit, and can jump closer to other vessels.
   * Updated crossfield scripts/Custom/Ships file to reflect SporeDrive 0.4 changes.

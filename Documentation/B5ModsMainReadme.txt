@@ -1,4 +1,7 @@
 ==Changelog==
+1.2.28 -
+   Fixes:
+   * Found out that Defiant's Power system could glitch out if a ship had impulse engines but no warp engines. The new Autoload patch "FIX-DefiantsQBautostartPower1dot0.py" aims to resolve that issue.
 1.2.27 -
    Fixes:
    * Found out that UniMod's way of dealing subsystem damage was also applying to other projectiles (now fixed): B5ThirdspaceFireball, B5ThirdspaceTeleAttack, B5ThirdspaceTeleAttack2, shadowSpit and VorlonWeapon.
