@@ -1,4 +1,7 @@
 ==Changelog==
+1.2.29 -
+   Fixes:
+   * FBy petition of Greystar, made something to make MinJW not deal as much damage on ships he deems so with a proper tech.
 1.2.28 -
    Fixes:
    * Found out that Defiant's Power system could glitch out if a ship had impulse engines but no warp engines. The new Autoload patch "FIX-DefiantsQBautostartPower1dot0.py" aims to resolve that issue.

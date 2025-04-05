@@ -110,6 +110,20 @@ lImmuneShips = (
                 "VOR_Planetkiller",
                 )
 
+def findShipInstance(pShip):
+	pInstance = None
+	try:
+		import Foundation
+		import FoundationTech
+		if not pShip:
+			return pInstance
+		if FoundationTech.dShips.has_key(pShip.GetName()):
+			pInstance = FoundationTech.dShips[pShip.GetName()]
+	except:
+		pass
+
+	return pInstance
+
 def TargetHit(pObject, pEvent):
 	global pWeaponLock
 	pTorp=App.Torpedo_Cast(pEvent.GetSource())
@@ -177,6 +191,16 @@ def TargetHit(pObject, pEvent):
 	sShipScript = string.split(sScript, ".")[-1]
 	if sShipScript in lImmuneShips:
 		return
+	else:
+		pInstance = findShipInstance(pShip)
+		if pInstance:
+			pInstanceDict = pInstance.__dict__
+			if pInstanceDict:
+				if pInstanceDict.has_key("B5 Jumppoint Dmg modulator"):
+					if pInstanceDict["B5 Jumppoint Dmg modulator"] <= 0:
+						return
+					else:
+						hullDmgBoostMultiplier = hullDmgBoostMultiplier * pInstanceDict["B5 Jumppoint Dmg modulator"]
 	######################################
 	if (pSubsystem==None):
 		return
