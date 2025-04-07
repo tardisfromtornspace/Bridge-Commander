@@ -4,7 +4,26 @@
 # This should be the prime example of a special yield weapon/shield defined
 # according to Foundation Technologies.  The code is mostly based upon
 # QuickBattleAddon.corboniteReflector() in Apollo's Advanced Technologies.
-
+#
+#############################################
+# Usage Example:  Add this to the dTechs attribute of your ShipDef, in the Ship plugin file
+# but modify the values accordingly
+# Strength: it is a key value that help on reducing the damage done by acting as a multiplier, so i.e. a value of 2 will make the game consider you have twice the energy levels.  Values equal or lesser than 0 will be ignored.
+"""
+Foundation.ShipDef.Atlantis.dTechs = {
+	'Alteran ZPM Shields': { "Strength": 1 }
+}
+"""
+#################################################################################################################
+#
+MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
+	    "Version": "1.01",
+	    "License": "LGPL",
+	    "Description": "Read the small title above for more info"
+	    }
+#
+#################################################################################################################
+#
 from bcdebug import debug
 
 import App
@@ -20,7 +39,8 @@ try:
 			fDamage = pEvent.GetDamage()
 			ZPM_ratio = 1.0
 			try:
-				pInstance.__dict__['Alteran ZPM Shields']['Strength']
+				if pInstance and pInstance.__dict__.has_key('Alteran ZPM Shields') and pInstance.__dict__['Alteran ZPM Shields'].has_key('Strength') and pInstance.__dict__['Alteran ZPM Shields']['Strength'] > 0:
+					ZPM_ratio = pInstance.__dict__['Alteran ZPM Shields']['Strength']
 			except:
 				ZPM_ratio = 1.0
 			# print 'Regenerate', fDamage
