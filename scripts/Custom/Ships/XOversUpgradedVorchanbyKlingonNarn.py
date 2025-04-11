@@ -16,6 +16,10 @@ playerMenuGroup = "Non canon X-Overs"
 SubMenu = "Narn-Klingon Alliance"
 Foundation.ShipDef.UpgradedVorchanbyKlingonNarn = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu, "SubMenu": SubMenu })
 
+Foundation.ShipDef.UpgradedVorchanbyKlingonNarn.dTechs = {
+	'Gravimetric Defense': 195,
+	"Tachyon Sensors": 1.1
+}
 
 Foundation.ShipDef.UpgradedVorchanbyKlingonNarn.desc = "This Vorchans were stolen by the Klingons after the Centauri attack on Narn in order to create a fleet that refilled the massive losses of ships. In order to have a real possibility against a greater number of enemies, most of their systems were modified, being capable of matching a Primus-Shadow hybrid built by house Refa in a 1 vs 1 battle."
 
