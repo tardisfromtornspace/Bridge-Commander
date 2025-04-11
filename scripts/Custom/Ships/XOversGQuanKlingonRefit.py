@@ -16,6 +16,9 @@ playerMenuGroup = "Non canon X-Overs"
 SubMenu = "Narn-Klingon Alliance"
 Foundation.ShipDef.GQuanKlingonRefit = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
 
+Foundation.ShipDef.GQuanKlingonRefit.dTechs = {
+	"Tachyon Sensors": 1.4
+}
 
 Foundation.ShipDef.GQuanKlingonRefit.desc = "In a parallel multiverse where the Centauri attacked a paralel under-developed Quo'nos, enslaving and hunting the paralel Klingons, when a lost ST 24th century Klingon fleet discovered that because of a space rift they were enraged and started to attack the Centauri on skirmishes. During one of them they offered assistance to a damaged G'Quan. Knowing that the Narns had their own similar history, they decided to help them in repairs and some minor upgrades in order to give the new ally a decent advantage in a 1 vs 1 skirmish"
 
