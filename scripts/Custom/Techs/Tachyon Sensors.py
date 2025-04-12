@@ -2,7 +2,7 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
 #         Tachyon Sensors.py by Alex SL Gato
-#         17th March 2025
+#         12th April 2025
 #         Based on CloakCounterMeasures.py by Defiant. Since that file used BSD license, we need to include their license here. However, for some reason the license files are not present on the file, so we'll have to include them here:
 """
 Copyright (c) 2005, Defiant All rights reserved.
@@ -74,7 +74,7 @@ def distance(pScannerShip, pScannedShip, pScannerInstanceDict, pScannedInstanceD
 """
 
 MODINFO = { "Author": "\"Defiant\" erik@vontaene.de (original), \"Alex SL Gato\" andromedavirgoa@gmail.com (modified)",
-	    "Version": "0.21",
+	    "Version": "0.22",
 	    "License": "LGPL & BSD",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -573,7 +573,7 @@ class TachyonSensorsDef(FoundationTech.TechDef):
 		pShip = App.ShipClass_Cast(pEvent.GetDestination())
 		if pShip and hasattr(pShip, "GetObjID"):
 			pShipID = pShip.GetObjID()
-			pShip = App.ShipClass_GetObjectByID(pShipID)
+			pShip = App.ShipClass_GetObjectByID(None, pShipID)
 			if pShip and pShipID != App.NULL_ID and dict_lockNoFirepoint.has_key(pShipID):
 				try:
 					del dict_lockNoFirepoint[pShip.GetObjID()]

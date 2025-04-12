@@ -1,14 +1,14 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
-# THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
+# THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL, FOR THOSE SECTIONS THAT DO NOT FALL UNDER ANY OTHER LICENSE (See explanation below)
 # AlternateSubModelFTL.py
-# 16th December 2024, by Alex SL Gato (CharaToLoki)
-#         Based on Defiant's SubModels script (from which it inherits the classes, so in fact SubModels is a dependency) and BorgAdaptation.py by Alex SL Gato, which were based on the Foundation import function by Dasher
+# 12th April 2025, by Alex SL Gato (CharaToLoki)
+#         Based on Defiant's SubModels script (from which it inherited classes and methods and was a dependency once, but now uses independent updated classes and methods) and BorgAdaptation.py by Alex SL Gato, which were based on the Foundation import function by Dasher
 #         Also based on ATPFunctions by Apollo and slightly on DS9FXPulsarManager by USS Sovereign.
-#         Also some sections based on the Slisptream module by Mario aka USS Sovereign, modified by Alex SL Gato with explicit permission from Mario to adapt his code to this script.
+#         Also some sections based on the Slipstream module by Mario aka USS Sovereign, modified by Alex SL Gato with permission from Mario to adapt part of his code to this script ONLY as long as it is meant for KM, and that he can and will take action otherwise (see Documentation/USSSovereignStanceAboutModifyingorRepackagingSlipstream.PNG).
 # IMPORTANT NOTE:
-#  - All sections based on USS Sovereign's Slipstream module fall under the All Rights Reserved section. Those sections are left clear with two text banners, from "BEGINNING OF USS SOVEREIGN'S LIMITED PERMISSION AREA" to "END OF USS SOVEREIGN'S LIMITED PERMISSION AREA". Do not modify or repackage those sections of the mod without extreme permission from the authors:
-#  ---- USS Sovereign condition: that this mod is intended to be released for KM and not for REP, RE nor REM-related mods.
-#  ---- Alex SL Gato condition: does not mind as long as USS Sovereign and he are being credited and both Mario and himself's conditions are covered.
+#  - All sections based on USS Sovereign's Slipstream module fall under the All Rights Reserved section, by USS Sovereign. Those sections are left clear with two text banners, from "BEGINNING OF USS SOVEREIGN'S LIMITED PERMISSION AREA" to "END OF USS SOVEREIGN'S LIMITED PERMISSION AREA". Do not modify or repackage those sections of the mod without extreme permission from the authors:
+#  ---- USS Sovereign condition: that this mod is intended to be released for KM and not for REP, RE nor REM-related mods (see Documentation/USSSovereignStanceAboutModifyingorRepackagingSlipstream.PNG).
+#  ---- Alex SL Gato condition: does not mind as long as USS Sovereign and he are being credited and both Mario and himself's conditions are covered (which means that if Mario's conditions are not met, neither are his).
 #################################################################################################################
 # A modification of a modification, last modification by Alex SL Gato (CharaToLoki)
 ##################################################################################################################################################################################################################################
@@ -1504,7 +1504,7 @@ def GetEngageDirectionC(mySelf, pPlayerID = None):
 #################################################################################################################
 #
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.84",
+	    "Version": "0.85",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -4088,7 +4088,10 @@ def StartingWarpCommon(pObject, pEvent, techP, subPosition="Warp"):
 				return 0	
 		else: # Any other FTL method, we have priority!!!
 			if pInstanceDict["Warp Overriden"] <= 0:
-				pInstanceDict["Warp Overriden"] = 1	
+				pInstanceDict["Warp Overriden"] = 1
+
+	if not pInstanceDict or not pInstanceDict.has_key("Alternate-Warp-FTL"):
+		return 0	
 
 	iLongestTime = 0.0
 	iGracePeriodTime = 2.0
@@ -4205,6 +4208,16 @@ def ExitingProtoWarp(pAction, pShip, techP, subPosition):
 
 	iType = pShip.GetAlertLevel()
 	pInstance = findShipInstance(pShip)
+
+	if not pInstance:
+		#pObject.CallNextHandler(pEvent)
+		return 0
+
+	pInstanceDict = pInstance.__dict__
+
+	if not pInstanceDict or not pInstanceDict.has_key("Alternate-Warp-FTL"):
+		return 0
+
 	iLongestTime = 0.0
 	iGracePeriodTime = 2.0
 	IncCurrentMoveIDUpdated(pShip, pInstance)

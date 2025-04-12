@@ -5,7 +5,6 @@ lActiveMutators = [
 	"""Per Bridge Loading screen""",
 	"""Sneaker98's Bridge Menu Scroller""",
 	"""Engine Smoke (SG1)""",
-	"""Jumpspace Drive 20070905""",
 	"""Stock Systems""",
 	"""Advanced Power control""",
 	"""QBautostart Extension V1.0""",

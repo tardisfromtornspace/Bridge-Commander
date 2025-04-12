@@ -1,4 +1,4 @@
-##### Bridge Commander Exit Log: 12 Apr 2025 01:49:20#####
+##### Bridge Commander Exit Log: 12 Apr 2025 13:09:52#####
 
 Outdated Foundation, updating functions
 Outdated Foundation, installing FolderManager
@@ -21,9 +21,774 @@ Jumpspace Drive 20070905 Initializing...
 TimeVortex Drive 20070905 Initializing...
 Warpspace Drive 20070905 Initializing...
 DS9FX Initializing...
+Detected new mod, restoring Keyboard Binding..
 AccessibilityConfig: Using Legacy extra menu support
 DS9FX: Game Crash Fix Active...
 Fixing Jaggies
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 12 Apr 2025 17:21:36#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+TimeVortex Drive 20070905 Initializing...
+Warpspace Drive 20070905 Initializing...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+TimeVortex: Quick Battle is running... Mod is starting up...
+Warpspace: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+part A
+part A
+
+
+part A
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 28a6110c> ignored
+Traceback (innermost last):
+  File ".\Scripts\Custom\GalaxyCharts\Traveler.py", line 951, in Travel
+TypeError: unsubscriptable object
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 28a61134> ignored
+Error while performing custom FTL Warp:
+Traceback (innermost last):
+  File ".\Scripts\Custom\Techs\AlternateSubModelFTL.py", line 2750, in FTLFunctionHandler
+  File ".\Scripts\Custom\TravellingMethods\Babylon5Jumpspace.py", line 233, in StartingFTLAlternateSubModel
+  File ".\Scripts\Custom\Techs\AlternateSubModelFTL.py", line 4054, in StartingProtoWarp
+  File ".\Scripts\Custom\Techs\AlternateSubModelFTL.py", line 4100, in StartingWarpCommon
+  File ".\Scripts\Custom\Techs\AlternateSubModelFTL.py", line 3617, in PrepareShipForProtoMove
+KeyError: Alternate-Warp-FTL
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 12 Apr 2025 17:21:36#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+TimeVortex Drive 20070905 Initializing...
+Warpspace Drive 20070905 Initializing...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+TimeVortex: Quick Battle is running... Mod is starting up...
+Warpspace: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+part A
+part A
+
+
+part A
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 28a6110c> ignored
+Traceback (innermost last):
+  File ".\Scripts\Custom\GalaxyCharts\Traveler.py", line 951, in Travel
+TypeError: unsubscriptable object
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 28a61134> ignored
+Error while performing custom FTL Warp:
+Traceback (innermost last):
+  File ".\Scripts\Custom\Techs\AlternateSubModelFTL.py", line 2750, in FTLFunctionHandler
+  File ".\Scripts\Custom\TravellingMethods\Babylon5Jumpspace.py", line 233, in StartingFTLAlternateSubModel
+  File ".\Scripts\Custom\Techs\AlternateSubModelFTL.py", line 4054, in StartingProtoWarp
+  File ".\Scripts\Custom\Techs\AlternateSubModelFTL.py", line 4100, in StartingWarpCommon
+  File ".\Scripts\Custom\Techs\AlternateSubModelFTL.py", line 3617, in PrepareShipForProtoMove
+KeyError: Alternate-Warp-FTL
+
+# DS9FX has...
+
+# taken a console dump
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 12 Apr 2025 18:04:16#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+TimeVortex Drive 20070905 Initializing...
+Warpspace Drive 20070905 Initializing...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+TimeVortex: Quick Battle is running... Mod is starting up...
+Warpspace: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at e8dd7d8> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at e8d9ab0> ignored
+Traceback (innermost last):
+  File ".\Scripts\Custom\Autoload\LoadGalaxyCharts.py", line 155, in __call__
+    App.g_kTravelManager.CreateChaser(pDestShip, None)
+  File ".\Scripts\Custom\GalaxyCharts\Traveler.py", line 245, in CreateChaser
+    chaser = Chaser(ship, target, sDestination)
+  File ".\Scripts\Custom\GalaxyCharts\Traveler.py", line 2258, in __init__
+    Travel.__init__(self, pShip, sDestination)
+  File ".\Scripts\Custom\GalaxyCharts\Traveler.py", line 387, in __init__
+    self.Logger.LogDynamicTS()
+  File ".\Scripts\Custom\GravityFX\Logger.py", line 135, in LogDynamicTS
+    file = nt.open(self.FilePath, nt.O_WRONLY|nt.O_CREAT|nt.O_TRUNC)
+OSError: (2, 'No such file or directory', 'scripts\\Custom\\GalaxyCharts\\Logs\\Travel_60768_\012\011\011"Port Pylon":     ["USSProtostarPP", {\012\011\011\011"Experimental": 0,\012\011\011\011"SetScale": 1.0,\012\011\011\011"Position":             [0, 0, 0],\012\011\011\011"Rotation":             [0, 0, 0], # normal Rotation used if not Red Alert and if not Warp\012\011\011\011#"AttackRotation":         [0, -0.6, 0],\012\011\011\011#"AttackDuration":         200.0, # Value is 1/100 of a second\012\011\011\011#"AttackPosition":         [0, 0, 0.03],\012\011\011\011#"WarpRotation":       [0, 0, 0],\012\011\011\011#"WarpPosition":       [0, 0, 0.001],\012\011\011\011#"WarpDuration":       150.0,\012\011\011\011"Proto-WarpRotation":       [0, -0.3, 0],\012\011\011\011"Proto-WarpPosition":       [0, 0, -0.01],\012\011\011\011"Proto-WarpDuration":       150.0,\012\011\011\011},\012\011\011],\012        \012\011\011"Starboard Pylon":     ["USSProtostarSP", {\012\011\011\011"Experimental": 0,\012\011\011\011"SetScale": 1.0,\012\011\011\011"Position":             [0, 0, 0],\012\011\011\011"Rotation":             [0, 0, 0],\012\011\011\011#"AttackRotation":         [0, 0.6, 0],\012\011\011\011#"AttackDuration":         200.0, # Value is 1/100 of a second\012\011\011\011#"AttackPosition":         [0, 0, 0.03],\012\011\011\011#"WarpRotation":       [0, 0, 0],\012\011\011\011#"WarpPosition":       [0, 0, 0.001],\012\011\011\011#"WarpDuration":       150.0,\012\011\011\011"Proto-WarpRotation":       [0, 0.3, 0],\012\011\011\011"Proto-WarpPosition":       [0, 0, -0.01],\012\011\011\011"Proto-WarpDuration":       150.0,\012\011\011\011},\012\011\011],\012\012\011\011"Port PylonP":     ["USSProtostarPDC", { # TO-DO These two parts below are for a model that has some inaccuracies, if we find a better model or make one ourselves, adjust accordingly. Among these, the commented parts below should be addressed, and the two parts immadiately below should be removed/fused with the port and starboard pylons\012\011\011\011"Experimental": 0,\012\011\011\011"SetScale": 1.0,\012\011\011\011"Position":             [0, 0, 0],\012\011\011\011"Rotation":             [0, 0, 0], # normal Rotation used if not Red Alert and if not Warp\012\011\011\011#"AttackRotation":         [0, -0.6, 0],\012\011\011\011#"AttackDuration":         200.0, # Value is 1/100 of a second\012\011\011\011#"AttackPosition":         [0, 0, 0.03],\012\011\011\011#"WarpRotation":       [0, 0, 0],\012\011\011\011#"WarpPosition":       [0, 0, 0.001],\012\011\011\011#"WarpDuration":       150.0,\012\011\011\011"Proto-WarpRotation":       [0, -0.3, 0],\012\011\011\011"Proto-WarpPosition":       [0, 0, -0.01],\012\011\011\011"Proto-WarpDuration":       150.0,\012\011\011\011},\012\011\011],\012\011\011"Starboard PylonP":     ["USSProtostarSDC", {\012\011\011\011"Experimental": 0,\012\011\011\011"SetScale": 1.0,\012\011\011\011"Position":             [0, 0, 0],\012\011\011\011"Rotation":             [0, 0, 0],\012\011\011\011#"AttackRotation":         [0, 0.6, 0],\012\011\011\011#"AttackDuration":         200.0, # Value is 1/100 of a second\012\011\011\011#"AttackPosition":         [0, 0, 0.03],\012\011\011\011#"WarpRotation":       [0, 0, 0],\012\011\011\011#"WarpPosition":       [0, 0, 0.001],\012\011\011\011#"WarpDuration":       150.0,\012\011\011\011"Proto-WarpRotation":       [0, 0.3, 0],\012\011\011\011"Proto-WarpPosition":       [0, 0, -0.01],\012\011\011\011"Proto-WarpDuration":       150.0,\012\011\011\011},\012\011\011],\012\011\011Port Nacelle_LOG.txt')
+Setting Stock System Planets Random Density.
+Setting Stock System Planets Random Density.
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 12 Apr 2025 18:04:16#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+TimeVortex Drive 20070905 Initializing...
+Warpspace Drive 20070905 Initializing...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+TimeVortex: Quick Battle is running... Mod is starting up...
+Warpspace: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at e8dd7d8> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at e8d9ab0> ignored
+Traceback (innermost last):
+  File ".\Scripts\Custom\Autoload\LoadGalaxyCharts.py", line 155, in __call__
+    App.g_kTravelManager.CreateChaser(pDestShip, None)
+  File ".\Scripts\Custom\GalaxyCharts\Traveler.py", line 245, in CreateChaser
+    chaser = Chaser(ship, target, sDestination)
+  File ".\Scripts\Custom\GalaxyCharts\Traveler.py", line 2258, in __init__
+    Travel.__init__(self, pShip, sDestination)
+  File ".\Scripts\Custom\GalaxyCharts\Traveler.py", line 387, in __init__
+    self.Logger.LogDynamicTS()
+  File ".\Scripts\Custom\GravityFX\Logger.py", line 135, in LogDynamicTS
+    file = nt.open(self.FilePath, nt.O_WRONLY|nt.O_CREAT|nt.O_TRUNC)
+OSError: (2, 'No such file or directory', 'scripts\\Custom\\GalaxyCharts\\Logs\\Travel_60768_\012\011\011"Port Pylon":     ["USSProtostarPP", {\012\011\011\011"Experimental": 0,\012\011\011\011"SetScale": 1.0,\012\011\011\011"Position":             [0, 0, 0],\012\011\011\011"Rotation":             [0, 0, 0], # normal Rotation used if not Red Alert and if not Warp\012\011\011\011#"AttackRotation":         [0, -0.6, 0],\012\011\011\011#"AttackDuration":         200.0, # Value is 1/100 of a second\012\011\011\011#"AttackPosition":         [0, 0, 0.03],\012\011\011\011#"WarpRotation":       [0, 0, 0],\012\011\011\011#"WarpPosition":       [0, 0, 0.001],\012\011\011\011#"WarpDuration":       150.0,\012\011\011\011"Proto-WarpRotation":       [0, -0.3, 0],\012\011\011\011"Proto-WarpPosition":       [0, 0, -0.01],\012\011\011\011"Proto-WarpDuration":       150.0,\012\011\011\011},\012\011\011],\012        \012\011\011"Starboard Pylon":     ["USSProtostarSP", {\012\011\011\011"Experimental": 0,\012\011\011\011"SetScale": 1.0,\012\011\011\011"Position":             [0, 0, 0],\012\011\011\011"Rotation":             [0, 0, 0],\012\011\011\011#"AttackRotation":         [0, 0.6, 0],\012\011\011\011#"AttackDuration":         200.0, # Value is 1/100 of a second\012\011\011\011#"AttackPosition":         [0, 0, 0.03],\012\011\011\011#"WarpRotation":       [0, 0, 0],\012\011\011\011#"WarpPosition":       [0, 0, 0.001],\012\011\011\011#"WarpDuration":       150.0,\012\011\011\011"Proto-WarpRotation":       [0, 0.3, 0],\012\011\011\011"Proto-WarpPosition":       [0, 0, -0.01],\012\011\011\011"Proto-WarpDuration":       150.0,\012\011\011\011},\012\011\011],\012\012\011\011"Port PylonP":     ["USSProtostarPDC", { # TO-DO These two parts below are for a model that has some inaccuracies, if we find a better model or make one ourselves, adjust accordingly. Among these, the commented parts below should be addressed, and the two parts immadiately below should be removed/fused with the port and starboard pylons\012\011\011\011"Experimental": 0,\012\011\011\011"SetScale": 1.0,\012\011\011\011"Position":             [0, 0, 0],\012\011\011\011"Rotation":             [0, 0, 0], # normal Rotation used if not Red Alert and if not Warp\012\011\011\011#"AttackRotation":         [0, -0.6, 0],\012\011\011\011#"AttackDuration":         200.0, # Value is 1/100 of a second\012\011\011\011#"AttackPosition":         [0, 0, 0.03],\012\011\011\011#"WarpRotation":       [0, 0, 0],\012\011\011\011#"WarpPosition":       [0, 0, 0.001],\012\011\011\011#"WarpDuration":       150.0,\012\011\011\011"Proto-WarpRotation":       [0, -0.3, 0],\012\011\011\011"Proto-WarpPosition":       [0, 0, -0.01],\012\011\011\011"Proto-WarpDuration":       150.0,\012\011\011\011},\012\011\011],\012\011\011"Starboard PylonP":     ["USSProtostarSDC", {\012\011\011\011"Experimental": 0,\012\011\011\011"SetScale": 1.0,\012\011\011\011"Position":             [0, 0, 0],\012\011\011\011"Rotation":             [0, 0, 0],\012\011\011\011#"AttackRotation":         [0, 0.6, 0],\012\011\011\011#"AttackDuration":         200.0, # Value is 1/100 of a second\012\011\011\011#"AttackPosition":         [0, 0, 0.03],\012\011\011\011#"WarpRotation":       [0, 0, 0],\012\011\011\011#"WarpPosition":       [0, 0, 0.001],\012\011\011\011#"WarpDuration":       150.0,\012\011\011\011"Proto-WarpRotation":       [0, 0.3, 0],\012\011\011\011"Proto-WarpPosition":       [0, 0, -0.01],\012\011\011\011"Proto-WarpDuration":       150.0,\012\011\011\011},\012\011\011],\012\011\011Port Nacelle_LOG.txt')
+Setting Stock System Planets Random Density.
+Setting Stock System Planets Random Density.
+
+# DS9FX has...
+
+# taken a console dump
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 12 Apr 2025 18:06:24#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+TimeVortex Drive 20070905 Initializing...
+Warpspace Drive 20070905 Initializing...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 12 Apr 2025 18:10:40#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+TimeVortex Drive 20070905 Initializing...
+Warpspace Drive 20070905 Initializing...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+TimeVortex: Quick Battle is running... Mod is starting up...
+Warpspace: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 279c40cc> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 279c40a4> ignored
+
+
+Setting Stock System Planets Random Density.
+Setting Stock System Planets Random Density.
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 12 Apr 2025 18:10:40#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+TimeVortex Drive 20070905 Initializing...
+Warpspace Drive 20070905 Initializing...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+TimeVortex: Quick Battle is running... Mod is starting up...
+Warpspace: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 279c40cc> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 279c40a4> ignored
+
+
+Setting Stock System Planets Random Density.
+Setting Stock System Planets Random Density.
+
+# DS9FX has...
+
+# taken a console dump
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 12 Apr 2025 18:29:52#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+TimeVortex Drive 20070905 Initializing...
+Warpspace Drive 20070905 Initializing...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+TimeVortex: Quick Battle is running... Mod is starting up...
+Warpspace: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+# DS9FX has...
+
+# taken a console dump
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 27940b48> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 27940b18> ignored
+Setting Stock System Planets Random Density.
+Setting Stock System Planets Random Density.
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 12 Apr 2025 18:29:52#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+TimeVortex Drive 20070905 Initializing...
+Warpspace Drive 20070905 Initializing...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+TimeVortex: Quick Battle is running... Mod is starting up...
+Warpspace: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+# DS9FX has...
+
+# taken a console dump
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 27940b48> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 27940b18> ignored
+Setting Stock System Planets Random Density.
+Setting Stock System Planets Random Density.
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 12 Apr 2025 21:07:44#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+someone attempted to add more than they should to the AlternateSubModelFTL script
+Traceback (innermost last):
+  File ".\Scripts\Custom\Techs\AlternateSubModelFTL.py", line 1856, in LoadExtraLimitedPlugins
+  File ".\Scripts\Custom\TravellingMethods\Babylon5Jumpspace.py", line 253, in InSystemIntercept
+NameError: SetupSequenceISI
+Gravity FX has been loaded.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+TimeVortex Drive 20070905 Initializing...
+Warpspace Drive 20070905 Initializing...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+# DS9FX has...
+
+# taken a console dump
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+TimeVortex: Quick Battle is running... Mod is starting up...
+Warpspace: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 27971610> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 279772f8> ignored
+Setting Stock System Planets Random Density.
+Setting Stock System Planets Random Density.
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 431cd4c4> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 431d4854> ignored
+Setting Stock System Planets Random Density.
+Setting Stock System Planets Random Density.
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 12 Apr 2025 21:07:44#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+someone attempted to add more than they should to the AlternateSubModelFTL script
+Traceback (innermost last):
+  File ".\Scripts\Custom\Techs\AlternateSubModelFTL.py", line 1856, in LoadExtraLimitedPlugins
+  File ".\Scripts\Custom\TravellingMethods\Babylon5Jumpspace.py", line 253, in InSystemIntercept
+NameError: SetupSequenceISI
+Gravity FX has been loaded.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+TimeVortex Drive 20070905 Initializing...
+Warpspace Drive 20070905 Initializing...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+# DS9FX has...
+
+# taken a console dump
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+TimeVortex: Quick Battle is running... Mod is starting up...
+Warpspace: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 27971610> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 279772f8> ignored
+Setting Stock System Planets Random Density.
+Setting Stock System Planets Random Density.
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 431cd4c4> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 431d4854> ignored
+Setting Stock System Planets Random Density.
+Setting Stock System Planets Random Density.
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 12 Apr 2025 22:03:12#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+TimeVortex Drive 20070905 Initializing...
+Warpspace Drive 20070905 Initializing...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+TimeVortex: Quick Battle is running... Mod is starting up...
+Warpspace: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+
+
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 134b4aa0> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at e6ab92c> ignored
+
+# DS9FX has...
+
+# taken a console dump
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at e6a7d80> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at e6a7efc> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 134aedcc> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 134ae978> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at e6b11e8> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at e6b1300> ignored
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 12 Apr 2025 22:03:12#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+TimeVortex Drive 20070905 Initializing...
+Warpspace Drive 20070905 Initializing...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+TimeVortex: Quick Battle is running... Mod is starting up...
+Warpspace: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+
+
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 134b4aa0> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at e6ab92c> ignored
+
+# DS9FX has...
+
+# taken a console dump
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at e6a7d80> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at e6a7efc> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 134aedcc> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 134ae978> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at e6b11e8> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at e6b1300> ignored
 
 # DS9FX has...
 

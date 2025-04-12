@@ -730,7 +730,7 @@ def PlayProtoWarpSound(pAction, pWS, sType, sRace):
 					siType = ""
 
 				if siType != "":
-					sFile = "sfx\\MassEffectFTL\\"+sRace+"\\"+sRace+siType+".wav"
+					sFile = "sfx\\ProtoWarp\\"+sRace+"\\"+sRace+siType+".wav"
 					Custom.GravityFX.GravityFXlib.PlaySound(sFile, sRace+" "+siType+" Sound")
 			except:
 				print "ProtoWarp TravellingMethod: error while calling PlayProtoWarpSound:"
