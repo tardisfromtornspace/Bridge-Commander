@@ -1,4 +1,6 @@
 == Changelog ==
+1.2.13 - Fixing:
+   * Remvoed code that was not being used.
 1.2.12 - Fixing:
    * Updated Gravitic Lance to 1.52 to be more robust.
 1.2.11 - Fixing:

@@ -1,4 +1,6 @@
 == Changelog ==
+1.1.15 - fixes:
+   * Fixed transport nukes with a patch.
 1.1.14 - fixes:
    * Fixed a small edge-case issue with UniMod's way of dealing damage on ReplicatorProjectile and ReplicatorProjectile2.
 1.1.13 - Updated hull gauge fix unrelated to this mod to be more robust.

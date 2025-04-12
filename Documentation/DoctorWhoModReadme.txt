@@ -1,4 +1,6 @@
 == Changelog ==
+1.1.22 - legal updates:
+   * Upon noticing that the TimeVortex was also based on USS Soverign's script and taht I had unfortuantely violated permissions, removing it from the mod.
 1.1.21 - fixes:
    * Updated hull gauge fix unrelated to this mod to be more robust.
 1.1.20 - fixes:
@@ -77,7 +79,7 @@
 - Some music taken from the Gwylock1 Archive.
 - Importing sounds by Alex SL Gato using Audacity Portable.
 - Icons done by Alex SL Gato.
-- scripts: for the most part Alex SL Gato, except the Babylon 5 Jumpspace and Time Vortex technology, which was adapted from the Slipstream's creator by Alex SL Gato.
+- scripts: for the most part Alex SL Gato, except the Babylon 5 Jumpspace and Time Vortex technology, which was adapted from the Slipstream's creator (USS Sovereign) by Alex SL Gato.
 - mod/ships/hardpoint: Alex SL Gato.
 - some parts of code and advice from USS Sovereign and BCS:TNG
 

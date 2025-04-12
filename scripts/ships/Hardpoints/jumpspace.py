@@ -1,5 +1,4 @@
-# C:\unzipped\DS9FX\DS9FX\scripts\ships\Hardpoints\WormholeCone.py
-# This file was automatically generated - modify at your own risk.
+# This hardpoint was based on the GenericTemplate file at my install (file indicates something about Utopia, so close to SDK ones released by Totally games) and a "WormholeCone" from DS9FX by USS Sovereign. My only "work" was to manually slap them together
 # 
 
 import App
@@ -8,11 +7,11 @@ import GlobalPropertyTemplates
 #################################################
 Hull = App.HullProperty_Create("Hull")
 
-Hull.SetMaxCondition(999999986991104.000000)
+Hull.SetMaxCondition(100000000000000.000000)
 Hull.SetCritical(0)
-Hull.SetTargetable(1)
+Hull.SetTargetable(0)
 Hull.SetPrimary(1)
-Hull.SetPosition(0.000000, -2.500000, 0.000000)
+Hull.SetPosition(0.000000, 0.500000, 0.000000)
 Hull.SetPosition2D(50.000000, 50.000000)
 Hull.SetRepairComplexity(1.000000)
 Hull.SetDisabledPercentage(0.000000)
@@ -58,7 +57,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(PowerPlant)
 #################################################
 SensorArray = App.SensorProperty_Create("Sensor Array")
 
-SensorArray.SetMaxCondition(9999999827968.000000)
+SensorArray.SetMaxCondition(100000000.000000)
 SensorArray.SetCritical(0)
 SensorArray.SetTargetable(0)
 SensorArray.SetPrimary(1)
@@ -68,13 +67,13 @@ SensorArray.SetRepairComplexity(1.000000)
 SensorArray.SetDisabledPercentage(0.000000)
 SensorArray.SetRadius(0.022000)
 SensorArray.SetNormalPowerPerSecond(1.000000)
-SensorArray.SetBaseSensorRange(1000.000000)
+SensorArray.SetBaseSensorRange(3500.000000)
 SensorArray.SetMaxProbes(1)
 App.g_kModelPropertyManager.RegisterLocalTemplate(SensorArray)
 #################################################
 ShieldGenerator = App.ShieldProperty_Create("Shield Generator")
 
-ShieldGenerator.SetMaxCondition(120.000000)
+ShieldGenerator.SetMaxCondition(3000000.000000)
 ShieldGenerator.SetCritical(0)
 ShieldGenerator.SetTargetable(0)
 ShieldGenerator.SetPrimary(1)
@@ -104,7 +103,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(ShieldGenerator)
 #################################################
 WarpEngines = App.WarpEngineProperty_Create("Warp Engines")
 
-WarpEngines.SetMaxCondition(199999995904.000000)
+WarpEngines.SetMaxCondition(10000000000.000000)
 WarpEngines.SetCritical(0)
 WarpEngines.SetTargetable(0)
 WarpEngines.SetPrimary(1)
@@ -118,7 +117,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(WarpEngines)
 #################################################
 Warp = App.EngineProperty_Create("Warp")
 
-Warp.SetMaxCondition(50000000188416.000000)
+Warp.SetMaxCondition(1000000.000000)
 Warp.SetCritical(0)
 Warp.SetTargetable(0)
 Warp.SetPrimary(1)
@@ -130,34 +129,34 @@ Warp.SetRadius(0.025000)
 Warp.SetEngineType(Warp.EP_WARP)
 App.g_kModelPropertyManager.RegisterLocalTemplate(Warp)
 #################################################
-Impulse = App.EngineProperty_Create("Impulse")
+ImpulseDrives = App.EngineProperty_Create("Impulse Drives")
 
-Impulse.SetMaxCondition(49999998976.000000)
-Impulse.SetCritical(0)
-Impulse.SetTargetable(0)
-Impulse.SetPrimary(1)
-Impulse.SetPosition(0.000000, -2.500000, 0.000000)
-Impulse.SetPosition2D(80.000000, 75.000000)
-Impulse.SetRepairComplexity(1.000000)
-Impulse.SetDisabledPercentage(0.000000)
-Impulse.SetRadius(0.020000)
-Impulse.SetEngineType(Impulse.EP_IMPULSE)
-App.g_kModelPropertyManager.RegisterLocalTemplate(Impulse)
+ImpulseDrives.SetMaxCondition(100000.000000)
+ImpulseDrives.SetCritical(0)
+ImpulseDrives.SetTargetable(0)
+ImpulseDrives.SetPrimary(1)
+ImpulseDrives.SetPosition(0.000000, -2.500000, 0.000000)
+ImpulseDrives.SetPosition2D(80.000000, 75.000000)
+ImpulseDrives.SetRepairComplexity(1.000000)
+ImpulseDrives.SetDisabledPercentage(0.000000)
+ImpulseDrives.SetRadius(0.020000)
+ImpulseDrives.SetEngineType(ImpulseDrives.EP_IMPULSE)
+App.g_kModelPropertyManager.RegisterLocalTemplate(ImpulseDrives)
 #################################################
-Wormhole = App.ShipProperty_Create("Wormhole")
+EventHorizon = App.ShipProperty_Create("Event Horizon")
 
-Wormhole.SetGenus(1)
-Wormhole.SetSpecies(710)
-Wormhole.SetMass(0.000000)
-Wormhole.SetRotationalInertia(500.000000)
-Wormhole.SetShipName("Wormhole")
-Wormhole.SetModelFilename("data/Models/Bases/jumpspace/outer.NIF")
-Wormhole.SetDamageResolution(10.000000)
-Wormhole.SetAffiliation(0)
-Wormhole.SetStationary(0)
-Wormhole.SetAIString("FedAttack")
-Wormhole.SetDeathExplosionSound("g_lsDeathExplosions")
-App.g_kModelPropertyManager.RegisterLocalTemplate(Wormhole)
+EventHorizon.SetGenus(1)
+EventHorizon.SetSpecies(710)
+EventHorizon.SetMass(0.000000)
+EventHorizon.SetRotationalInertia(500000000000000000000.000000)
+EventHorizon.SetShipName("EventHorizon")
+EventHorizon.SetModelFilename("data/Models/Bases/jumpspace/outer.NIF")
+EventHorizon.SetDamageResolution(10.000000)
+EventHorizon.SetAffiliation(0)
+EventHorizon.SetStationary(0)
+EventHorizon.SetAIString("FedAttack")
+EventHorizon.SetDeathExplosionSound("g_lsDeathExplosions")
+App.g_kModelPropertyManager.RegisterLocalTemplate(EventHorizon)
 
 # Property load function.
 def LoadPropertySet(pObj):
@@ -168,7 +167,7 @@ def LoadPropertySet(pObj):
 	prop = App.g_kModelPropertyManager.FindByName("Impulse Engines", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
-	prop = App.g_kModelPropertyManager.FindByName("Impulse", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	prop = App.g_kModelPropertyManager.FindByName("Impulse Drives", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
 	prop = App.g_kModelPropertyManager.FindByName("Warp Engines", App.TGModelPropertyManager.LOCAL_TEMPLATES)
@@ -183,7 +182,7 @@ def LoadPropertySet(pObj):
 	prop = App.g_kModelPropertyManager.FindByName("Sensor Array", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
-	prop = App.g_kModelPropertyManager.FindByName("Wormhole", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	prop = App.g_kModelPropertyManager.FindByName("Event Horizon", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
 	prop = App.g_kModelPropertyManager.FindByName("Shield Generator", App.TGModelPropertyManager.LOCAL_TEMPLATES)
