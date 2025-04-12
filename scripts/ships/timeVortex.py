@@ -1,5 +1,3 @@
-# by USS Sovereign
-
 import App
 import Multiplayer.SpeciesToShip
 
