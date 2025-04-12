@@ -12,16 +12,16 @@
 # ------ MODINFO, which is there just to verify versioning.
 # ------ ALTERNATESUBMODELFTL METHODS subsection, which are exclusively used for alternate SubModels for FTL which is a separate but linked mod, or to import needed modules.
 # ------ Auxiliar functions: "AuxProtoElementNames", "B5JumpspaceFlash", "CreateDetachedElectricExplosion", "findShipInstance", "HasPhasedJumpspace", "HasSigmaJumpspace", "LoadGFX", "PlayB5JumpspaceSound", "PlayB5JumpspaceSoundC", "B5JumpspaceBasicConfigInfo" and "B5JumpspaceDisabledCalculations".
-# ------ Auxiliar functions for intra-system intercept (ISI) support, which as a result of being a common-made function between default GalaxyCharts functions/methods, regular AlternateSubModelFTL and ISI, while not required to be on the plugin, some of their contents are actually required if they are not there: "awayNavPointDistanceCalc", "CanTravelShip", "ConditionalCloak", "ConditionalDecloak", "GetEngageDirectionISI", "GetExitedTravelEventsI", "GetStartTravelEventsI", "GetEngageDirectionC", "InSystemIntercept", "PlayB5JumpspaceSoundI".
-
+# ------ Auxiliar functions for intra-system intercept (ISI) support, which as a result of being a common-made function between default GalaxyCharts functions/methods, regular AlternateSubModelFTL and ISI, while not required to be on the plugin, some of their contents are actually required if they are not there: "awayNavPointDistanceCalc", "CanTravelShip", "ConditionalCloak", "ConditionalDecloak", "EngageSeqTractorCheckI", "GetEngageDirectionISI", "GetExitedTravelEventsI", "GetStartTravelEventsI", "GetEngageDirectionC", "InSystemIntercept", "MaintainTowingActionI", "PlayB5JumpspaceSoundI", "removeTractorISITowInfo", "SetupSequenceISI" and "SetupTowingI".
 # === How-To-Add ===
-#TO-DO UPDATE THIS README
-# This Travelling Method is Ship-based, on this case it needs of Foundation and FoundationTech to verify if the ship is equipped with it.
-# This main FTL method check is stored inside an "Alternate-Warp-FTL" dictionary, which is a script that should be located at scripts/Custom/Techs/AlternateSubModelFTL.py. While this sub-tech can work totally fine without such module installed (by just including a ship subsystem that contains "jumpspace drive" or "jump-space drive", case insensitive), or even just act on hardpoint properties alone, it is recommended to have it.
+# This Travelling Method is Ship-based, on this case it may need of Foundation and FoundationTech to verify if the ship is equipped with it.
+# This main FTL method check is stored inside an "Alternate-Warp-FTL" dictionary, which is a script that should be located at scripts/Custom/Techs/AlternateSubModelFTL.py. While this sub-tech can work totally fine without such module installed, or even just act on hardpoint properties alone (including a ship subsystem that contains "jumpspace drive" or "jump-space drive", case insensitive, on the hardpoint will suffice), it is recommended to have it.
 # On this case, due to that, only the lines marked with "# (#)" are needed for B5Jumpspace to work, but the final parent technology may require more:
 # "B5Jumpspace": is the name of the key. This is the bare minimum for the technology to work
 # "Nacelles": is the name of a key whose value indicates a list of which warp engine property children (nacelles) are part of the B5Jumpspace system. If all are disabled/destroyed, B5Jumpspace will not engage. If this field does not exist or "Nacelles": [] it skips this disabled check.
 # "Core": is the name of a key whose value indicates a list of which hardpoint properties (not nacelles) are part of the B5Jumpspace system. If all are disabled/destroyed, Jumpspace will not engage either. If this field does not exist, it wil check for all subsystems with "jumpspace drive" or "jump-space drive", case insensitive. Use "Core": [] to skip this check.
+# Subsystems note: when editing the hardpoint, you can also add another hardpoint property called "TransDimensional Drive" to change this FTL effects and behaviour slightly (instead of a vortex-like animation at great speeds, it's a big silent rotund flash with barely any movement). Same with "Hyperspace Cloak" (will not use any flashes and will actually try to make the ship cloak and decloak and will use shadow sounds).
+# Also, important note, this mod uses additional systems for GalaxyCharts TO-DO UPDATE
 """
 #Sample Setup: replace "EAOmega" for the appropiate abbrev. Also remove "# (#)"
 Foundation.ShipDef.EAOmega.dTechs = { # (#)
@@ -956,7 +956,7 @@ def B5JumpspaceFlash(pAction, pShipID, sType, sRace, sparkSize=5, sFile = 'scrip
 	return 0
 
 #######
-# Aux. ISI function TO-DO ADD TO DOC
+# Aux. ISI function
 def removeTractorISITowInfo(pShipID, pInstance=None):
 	debug(__name__ + ", removeTractorISITowInfo")
 	if pInstance == None:
@@ -988,7 +988,7 @@ def removeTractorISITowInfo(pShipID, pInstance=None):
 
 	return 0
 
-# Aux. ISI function TO-DO ADD TO DOC
+# Aux. ISI function
 def SetupTowingI(ShipID):
 	debug(__name__ + ", SetupTowingI")
 	try:
@@ -1040,7 +1040,7 @@ def SetupTowingI(ShipID):
 
 	return 0
 
-# Aux. ISI function TO-DO ADD TO DOC
+# Aux. ISI function
 def MaintainTowingActionI(pAction, pShipID):
 	debug(__name__ + ", MaintainTowingActionI")
 	pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), pShipID)
@@ -1113,7 +1113,7 @@ def MaintainTowingActionI(pAction, pShipID):
 
 	return 0
 
-# Aux. ISI function TO-DO ADD TO DOC
+# Aux. ISI function
 def EngageSeqTractorCheckI(pAction, pShipID):
 	debug(__name__ + ", EngageSeqTractorCheckI")
 
@@ -1146,9 +1146,8 @@ def EngageSeqTractorCheckI(pAction, pShipID):
 			pToweeShip.UpdateNodeOnly()
 	return 0
 
-# ISI function TO-DO COMPLETE AND ADD TO DOC
+# ISI function
 def SetupSequenceISI(pShip=None):
-######
 	# you can use this function as an example on how to create your own 'SetupSequenceISI(self)' method for AlternateSubModelFTL
 	# While it has to basically mirror the '.SetupSequence(self)' method below (albeit you could create totally different sequences if you want), it needs to remove any unecessary code that references to self or changing systems.
 	# Also this intraSystem intercept does not automatically call PreEngage nor PostEngage functions, if you really need to call those, you would need to call them by yourself, and adapted to also not include references to self.
@@ -1373,9 +1372,6 @@ def SetupSequenceISI(pShip=None):
 	# Note that each one of them can be None, if you don't want to have that sequence in your travel method.
 
 	return [pEngageWarpSeq, fTimeToFlash + 2.5, pExitWarpSeq]
-######
-
-#######
 
 def SetupSequence(self):
 	# you can use this function as an example on how to create your own '.SetupSequence(self)' method for your
