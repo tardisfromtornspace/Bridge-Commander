@@ -233,7 +233,7 @@ This mod falls under the GNU LESSER GENERAL PUBLIC LICENSE Version 3, 29 June 20
 ===Mods required===
 You'll of course need Foundation, Nanofx2, Submenu v 3.0, QBAutostart and Kobayashi Maru mod, the latest version the better. GalaxyCharts is also required, probably the GalaxyCharts Warp AI fix as well.
 
-All the mods on https://www.gamefront.com/games/bridge-commander/category/babylon5 mentioned above, on reverse order (NONE of the ones called "Remastered") would be probably required (albeit at the time I downloaded the mods from NexusMods so the content may have been different), **but** some of them conflicted with each other due to Caps issue (i.e. EAOmega - eaomega), certain shuttle quirks and BCMMods affected certain filenames and inner files, which back when I was a newbie took me 3 years to fix, made that unadvisable. Additionally some like the original Minbari Sharlin for KM are still missing from gamefront.
+All the mods on https://www.gamefront.com/games/bridge-commander/category/babylon5 mentioned above, on reverse order (NONE of the ones called "Remastered") would be probably required (albeit at the time I downloaded the mods from NexusMods so the content may have been different), **but** some of them conflicted with each other due to Caps issue (i.e. EAOmega - eaomega), certain shuttle quirks and BCMMods affected certain filenames and inner files, which back when I was a newbie took me 3 years to fix, made that unadvisable. Additionally some are still missing from gamefront.
 
 ===Installation Guide===
 1º Ok, first of all, just in case, backup your STBC.
