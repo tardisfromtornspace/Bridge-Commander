@@ -10351,3 +10351,93 @@ Call stack:
 Address   Frame
 00717874  0019F8B8  0001:00316874 C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
 
+//=====================================================
+Current Time: Sun Apr 13 12:03:41 2025
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  00717FDB 01:00316FDB C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+Registers:
+EAX:00000040
+EBX:02A47624
+ECX:00000014
+EDX:00000014
+ESI:00051F90
+EDI:00000040
+CS:EIP:0023:00717FDB
+SS:ESP:002B:0019F6E0  EBP:00000000
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010216
+Couldn't initialize symbol reader, no symbol info available
+
+Call stack:
+Address   Frame     Logical addr  Module
+00717FDB  00000000  0001:00316FDB C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+//=====================================================
+Current Time: Sun Apr 13 20:31:14 2025
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  00434EE2 01:00033EE2 C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+Registers:
+EAX:00000012
+EBX:2EA867E4
+ECX:0095E960
+EDX:0095E960
+ESI:0095E960
+EDI:005F4E40
+CS:EIP:0023:00434EE2
+SS:ESP:002B:0019F94C  EBP:00000000
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010206
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+
+//=====================================================
+Current Time: Sun Apr 13 20:33:00 2025
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  00434EE2 01:00033EE2 C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+Registers:
+EAX:00000012
+EBX:30DBDA2C
+ECX:0095E960
+EDX:0095E960
+ESI:0095E960
+EDI:005F4E40
+CS:EIP:0023:00434EE2
+SS:ESP:002B:0019F94C  EBP:00000000
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010206
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+
+//=====================================================
+Current Time: Sun Apr 13 20:51:22 2025
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  00434EE2 01:00033EE2 C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+Registers:
+EAX:00000012
+EBX:278A9D24
+ECX:0095E960
+EDX:0095E960
+ESI:0095E960
+EDI:005F4E40
+CS:EIP:0023:00434EE2
+SS:ESP:002B:0019F94C  EBP:00000000
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010206
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+

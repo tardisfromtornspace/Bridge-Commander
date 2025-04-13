@@ -4,15 +4,18 @@
 # Babylon5Jumpspace.py
 # Based on the prototype custom travelling method plugin script, by USS Frontier (Enhanced Warp.py, original, template), and then modified by Alex SL Gato for B5Jumpspace.
 # This ship is a legal replacement to the illegal JumpspaceModule - use Babylon5Jumpspace instead.
-# 12th April 2025
+# 13th April 2025
 #################################################################################################################
 ##########	MANUAL
 #################################################################################################################
 # NOTE: all functions/methods and attributes defined here (in this prototype example plugin, B5Jumpspace) are required to be in the plugin, with the exclusion of:
 # ------ MODINFO, which is there just to verify versioning.
 # ------ ALTERNATESUBMODELFTL METHODS subsection, which are exclusively used for alternate SubModels for FTL which is a separate but linked mod, or to import needed modules.
-# ------ Auxiliar functions: "AuxProtoElementNames", "B5JumpspaceFlash", "CreateDetachedElectricExplosion", "findShipInstance", "HasPhasedJumpspace", "HasSigmaJumpspace", "LoadGFX", "PlayB5JumpspaceSound", "PlayB5JumpspaceSoundC", "B5JumpspaceBasicConfigInfo" and "B5JumpspaceDisabledCalculations".
+# ------ Auxiliar functions: "AnObjectDying", "AuxProtoElementNames", "B5JumpspaceFlash", "CreateDetachedElectricExplosion", "findShipInstance", "HasPhasedJumpspace", "HasSigmaJumpspace", "LoadGFX", "PlayB5JumpspaceSound", "PlayB5JumpspaceSoundC", "B5JumpspaceBasicConfigInfo" and "B5JumpspaceDisabledCalculations".
+# ------ Auxiliar variables: "defineTravelSpaceNoise", "myGlobalAISet", "myGlobalpSet" and "pJumpspaceEngineSound", used for keeping tabs on our alternate pSets and the sound that plays while on jumpspace.
+# ------ Auxiliar class "WhyMissionLibGetsError" and its instance "basicListener"
 # ------ Auxiliar functions for intra-system intercept (ISI) support, which as a result of being a common-made function between default GalaxyCharts functions/methods, regular AlternateSubModelFTL and ISI, while not required to be on the plugin, some of their contents are actually required if they are not there: "awayNavPointDistanceCalc", "CanTravelShip", "ConditionalCloak", "ConditionalDecloak", "EngageSeqTractorCheckI", "GetEngageDirectionISI", "GetExitedTravelEventsI", "GetStartTravelEventsI", "GetEngageDirectionC", "InSystemIntercept", "MaintainTowingActionI", "PlayB5JumpspaceSoundI", "removeTractorISITowInfo", "SetupSequenceISI" and "SetupTowingI".
+# Please note that "GetTravelSetToUse" has been modified to allow a different Travel Set.
 # === How-To-Add ===
 # This Travelling Method is Ship-based, on this case it may need of Foundation and FoundationTech to verify if the ship is equipped with it.
 # This main FTL method check is stored inside an "Alternate-Warp-FTL" dictionary, which is a script that should be located at scripts/Custom/Techs/AlternateSubModelFTL.py. While this sub-tech can work totally fine without such module installed, or even just act on hardpoint properties alone (including a ship subsystem that contains "jumpspace drive" or "jump-space drive", case insensitive, on the hardpoint will suffice), it is recommended to have it.
@@ -21,7 +24,7 @@
 # "Nacelles": is the name of a key whose value indicates a list of which warp engine property children (nacelles) are part of the B5Jumpspace system. If all are disabled/destroyed, B5Jumpspace will not engage. If this field does not exist or "Nacelles": [] it skips this disabled check.
 # "Core": is the name of a key whose value indicates a list of which hardpoint properties (not nacelles) are part of the B5Jumpspace system. If all are disabled/destroyed, Jumpspace will not engage either. If this field does not exist, it wil check for all subsystems with "jumpspace drive" or "jump-space drive", case insensitive. Use "Core": [] to skip this check.
 # Subsystems note: when editing the hardpoint, you can also add another hardpoint property called "TransDimensional Drive" to change this FTL effects and behaviour slightly (instead of a vortex-like animation at great speeds, it's a big silent rotund flash with barely any movement). Same with "Hyperspace Cloak" (will not use any flashes and will actually try to make the ship cloak and decloak and will use shadow sounds).
-# Also, important note, this mod uses additional systems for GalaxyCharts TO-DO UPDATE
+# Also, important note, this mod uses additional systems for GalaxyCharts, "Custom.GalaxyCharts.TravelerSystems.JumpspaceTunnelTravelSet" and "Custom.GalaxyCharts.TravelerSystems.AIJumpspaceTunnelTravelSet", with "Custom.GalaxyCharts.TravelerSystems.JumpspaceTunnelTravelSet_S" being optional but highly recommended to have.
 """
 #Sample Setup: replace "EAOmega" for the appropiate abbrev. Also remove "# (#)"
 Foundation.ShipDef.EAOmega.dTechs = { # (#)
@@ -94,7 +97,7 @@ Foundation.ShipDef.EAOmega.dTechs = { # (#)
 #################################################################################################################
 #
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.1",
+	    "Version": "0.2",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -222,7 +225,7 @@ DISENGAGING_ALTERNATEFTLSUBMODEL = App.UtopiaModule_GetNextEventType() # For whe
 
 # Because we could end on an endless loop, the imports must be done inside the functions, else the game will not recognize any attribute or function beyond that
 # Reason I'm doing this function pass beyond just passing input parameters to the common function is to allow other TravellingMethod modders more flexibility
-# from Custom.Techs.AlternateSubModelFTL import StartingB5Jumpspace, ExitSetProto
+# from Custom.Techs.AlternateSubModelFTL import StartingProtoWarp, ExitSetProto
 
 def KindOfMove(): 
 	return "B5Jumpspace" # Modify this with the name you are gonna use for the AlternateSubModelFTL
@@ -747,7 +750,7 @@ def PlayB5JumpspaceSound(pAction, pWS, sType, sRace):
 	debug(__name__ + ", PlayB5JumpspaceSound")
 
 	pShip = pWS.GetShip()
-	return PlayB5JumpspaceSoundI(pAction, pShip, sType, sRace)
+	return PlayB5JumpspaceSoundC(pAction, pShip, sType, sRace)
 
 # Aux. ISI function
 def PlayB5JumpspaceSoundI(pAction, pShipID, sType, sRace):
@@ -778,7 +781,10 @@ def PlayB5JumpspaceSoundC(pAction, pShip, sType, sRace):
 			sFile = None
 
 			if HasSigmaJumpspace(pShip):
-				sFile = None
+				if sType == "Enter Warp":
+					sFile = "scripts/Custom/TravellingMethods/SFX/SigmaB5DriveSounds.wav"
+				else:
+					sFile = "scripts/Custom/TravellingMethods/SFX/SigmaB5DriveSoundsExit.wav"
 
 			elif HasPhasedJumpspace(pShip):
 				if sType == "Enter Warp":
@@ -1146,6 +1152,123 @@ def EngageSeqTractorCheckI(pAction, pShipID):
 			pToweeShip.UpdateNodeOnly()
 	return 0
 
+# Some auxiliar global variables to allow set change and better sounds
+myGlobalpSet = None
+myGlobalAISet = None
+pJumpspaceEngineSound = None
+
+# An aux class and its instance.
+class WhyMissionLibGetsError:
+	def __init__(self, name):
+		self.pEventHandler = App.TGPythonInstanceWrapper()
+		self.pEventHandler.SetPyWrapper(self)
+
+	def AnObjectDying(self, pEvent):
+		try:
+			AnObjectDying(self, pEvent)
+		except:
+			traceback.print_exc()
+		return 0
+
+	def BeginListening(self):
+		self.StopListening()
+		App.g_kEventManager.AddBroadcastPythonMethodHandler(Foundation.TriggerDef.ET_FND_CREATE_PLAYER_SHIP, self.pEventHandler, "AnObjectDying")
+		#App.g_kEventManager.AddBroadcastPythonMethodHandler(App.ET_OBJECT_EXPLODING, self.pEventHandler, "AnObjectDying")
+
+	def StopListening(self):
+		#App.g_kEventManager.RemoveBroadcastHandler(App.ET_OBJECT_EXPLODING, self.pEventHandler, "AnObjectDying")
+		App.g_kEventManager.RemoveBroadcastHandler(Foundation.TriggerDef.ET_FND_CREATE_PLAYER_SHIP, self.pEventHandler, "AnObjectDying")
+
+	def CallNextHandler(self, pEvent):
+		return	
+
+basicListener = WhyMissionLibGetsError("Lennier is listening")
+
+# An aux function
+def AnObjectDying(TGObject, pEvent):
+	# Check and see if the mission is terminating
+	debug(__name__ + ", ObjectDying")
+		
+	pShip	= App.ShipClass_Cast(pEvent.GetDestination())
+	if (pShip == None):
+		return 0
+
+	pShipID = App.NULL_ID
+	if hasattr(pShip, "GetObjID"):
+		pShipID = pShip.GetObjID()
+
+	if pShipID == None or pShipID == App.NULL_ID:
+		return 0
+
+	pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), pShipID)
+	if not pShip:
+		return 0
+
+	pPlayer = App.Game_GetCurrentPlayer()
+	if pPlayer and hasattr(pPlayer, "GetObjID"):
+		pPlayerID = pPlayer.GetObjID()
+		if pPlayerID != None and pPlayerID != App.NULL_ID and pPlayerID == pShipID:
+			try:
+				defineTravelSpaceNoise(None, 0)
+			except:
+				print "Error while shutting up the global B5 Jumpspace noise:"
+				traceback.print_exc()
+
+	# All done, pass the event on
+	TGObject.CallNextHandler(pEvent)
+	return 0
+
+# An aux function.
+def defineTravelSpaceNoise(pAction, engage=1):
+	debug(__name__ + ", defineTravelSpaceNoise")
+	global pJumpspaceEngineSound
+	if pJumpspaceEngineSound == None:
+		pJumpspaceEngineSoundAux = None
+		try:
+			pJumpspaceEngineSoundAux = App.TGSound_Create("scripts/Custom/TravellingMethods/SFX/JumpspaceSpaceNoise.wav", "Babylon5JumpspaceStormSound", 0)
+			pJumpspaceEngineSoundAux.SetSFX(0) 
+			pJumpspaceEngineSoundAux.SetInterface(1)
+			pJumpspaceEngineSoundAux.SetLooping(1)
+		except:
+			pJumpspaceEngineSoundAux = None
+			print "Error on ", __name__, " defineTravelSpaceNoise:"
+			traceback.print_exc()
+
+		if pJumpspaceEngineSoundAux != None:
+			pJumpspaceEngineSound = pJumpspaceEngineSoundAux
+
+	if pJumpspaceEngineSound == None:
+		return 0
+
+	if engage == 0:
+		try:
+			App.g_kSoundManager.StopSound("Babylon5JumpspaceStormSound")
+
+			#try:
+			#	basicListener.StopListening()
+			#except:
+			#	print "Error on ", __name__, " defineTravelSpaceNoise:"
+			#	traceback.print_exc()
+
+		except:
+			print "Error on ", __name__, " defineTravelSpaceNoise:"
+			traceback.print_exc()
+	else:
+		try:
+			App.g_kSoundManager.PlaySound("Babylon5JumpspaceStormSound")
+
+			try:
+				basicListener.BeginListening()
+			except:
+				print "Error on ", __name__, " defineTravelSpaceNoise:"
+				traceback.print_exc()
+
+		except:
+			print "Error on ", __name__, " defineTravelSpaceNoise:"
+			traceback.print_exc()
+		
+	return 0
+
 # ISI function
 def SetupSequenceISI(pShip=None):
 	# you can use this function as an example on how to create your own 'SetupSequenceISI(self)' method for AlternateSubModelFTL
@@ -1454,7 +1577,7 @@ def SetupSequence(self):
 		pCinematicStart = App.TGScriptAction_Create("Actions.CameraScriptActions", "StartCinematicMode", 0)
 		pEngageWarpSeq.AddAction(pCinematicStart, None)
 
-		pWarpSoundAction0 = App.TGScriptAction_Create(__name__, "PlayB5JumpspaceSound", pWS, "Enter Warp", sRace)
+		pWarpSoundAction0 = App.TGScriptAction_Create(__name__, "PlayB5JumpspaceSoundI", pShipID, "Enter Warp", sRace)
 		pEngageWarpSeq.AddAction(pWarpSoundAction0, None, 0)
 
 		pDisallowInput = App.TGScriptAction_Create("MissionLib", "RemoveControl")
@@ -1464,7 +1587,7 @@ def SetupSequence(self):
 	pWarpAction0 = App.TGScriptAction_Create(__name__, "ConditionalCloak", pShipID, 0)
 	pEngageWarpSeq.AddAction(pWarpAction0, None, fEntryDelayTime + 0.2)
 
-	pWarpSoundAction1 = App.TGScriptAction_Create(__name__, "PlayB5JumpspaceSound", pWS, "Enter Warp", sRace)
+	pWarpSoundAction1 = App.TGScriptAction_Create(__name__, "PlayB5JumpspaceSoundI", pShipID, "Enter Warp", sRace)
 	pEngageWarpSeq.AddAction(pWarpSoundAction1, None, fEntryDelayTime + 0.2)
 	
 	pBoostAction = App.TGScriptAction_Create(sCustomActionsScript, "BoostShipSpeed", pShipID, 1, myBoosting)
@@ -1504,7 +1627,11 @@ def SetupSequence(self):
 
 	# An extra for checks
 	pWarpActionN = App.TGScriptAction_Create(__name__, "ConditionalDecloak", pShipID, 1)
-	pEngageWarpSeq.AddAction(pWarpActionN, None)	
+	pEngageWarpSeq.AddAction(pWarpActionN, None)
+
+	if (pPlayer != None) and (pShipID == pPlayer.GetObjID()):
+		pWarpSoundActionMid = App.TGScriptAction_Create(__name__, "defineTravelSpaceNoise", 1)
+		pEngageWarpSeq.AddAction(pWarpSoundActionMid, pUnBoostAction, 2.5)	
 
 	pEnWarpSeqEND = App.TGScriptAction_Create(sCustomActionsScript, "NoAction")
 	pEngageWarpSeq.AddAction(pEnWarpSeqEND, pUnBoostAction, 2.5)
@@ -1517,6 +1644,9 @@ def SetupSequence(self):
 			# Force a noninteractive cinematic view in space..
 			pCinematicStart = App.TGScriptAction_Create("Actions.CameraScriptActions", "StartCinematicMode", 0)
 			pExitWarpSeq.AddAction(pCinematicStart, None)
+
+			pWarpSoundActionMidFinal = App.TGScriptAction_Create(__name__, "defineTravelSpaceNoise", 0)
+			pExitWarpSeq.AddAction(pWarpSoundActionMidFinal, None)
 
 			pDisallowInput = App.TGScriptAction_Create("MissionLib", "RemoveControl")
 			pExitWarpSeq.AddAction(pDisallowInput, pCinematicStart)
@@ -1572,7 +1702,7 @@ def SetupSequence(self):
 		pExitWarpSeq.AddAction(pBoostAction, pUnHideShip, 0.1)
 
 		# Play the vushhhhh of exiting warp
-		pWarpSoundAction2 = App.TGScriptAction_Create(__name__, "PlayB5JumpspaceSound", pWS, "Exit Warp", sRace)
+		pWarpSoundAction2 = App.TGScriptAction_Create(__name__, "PlayB5JumpspaceSoundI", pShipID, "Exit Warp", sRace)
 		pExitWarpSeq.AddAction(pWarpSoundAction2, pBoostAction)
 	
 		# Make the ship return to normal speed.
@@ -1661,20 +1791,52 @@ def GetExitedTravelEventsI(pShip):
 # must return a App.SetClass instance, it can't be None.
 # NOTE: for the moment, this is probably the best way to make if ships can, or can not, be chased while warping.
 ########
-def GetTravelSetToUse(self): #TO-DO MODIFY
+def GetTravelSetToUse(self, manual=0):
 	debug(__name__ + ", GetTravelSetToUse")
+	global myGlobalpSet, myGlobalAISet
 	try:
 		import Custom.GalaxyCharts.Traveler
+		import Custom.GalaxyCharts.TravelerSystems.JumpspaceTunnelTravelSet
+		import Custom.GalaxyCharts.TravelerSystems.AIJumpspaceTunnelTravelSet
 		pSet = None
+		if manual == 1:
+			if myGlobalpSet == None:
+				myGlobalpSet = Custom.GalaxyCharts.TravelerSystems.JumpspaceTunnelTravelSet.Initialize()
+			if myGlobalAISet == None:
+				myGlobalAISet = Custom.GalaxyCharts.TravelerSystems.AIJumpspaceTunnelTravelSet.Initialize()	
 		if self.IsPlayer == 1:
-			pSet = Custom.GalaxyCharts.Traveler.Travel.pTravelSet
+			if myGlobalpSet == None:
+				try:
+					myGlobalpSet = Custom.GalaxyCharts.TravelerSystems.JumpspaceTunnelTravelSet.Initialize()
+					self.Logger.LogString(" -Initialized Jumpspace Tunnel Travel Set")
+				except:
+					print "ERROR on GetTravelSetToUse: "
+					traceback.print_exc()
+				#self.Logger.LogString(" -Initialized Jumpspace Tunnel Travel Set")
+			pSet = myGlobalpSet #Custom.GalaxyCharts.Traveler.Travel.pJumpspaceTunnelTravelSet
 		elif self.IsPlayer == 0 and self.IsAIinPlayerRoute == 1:
-			pSet = Custom.GalaxyCharts.Traveler.Travel.pTravelSet
+			if myGlobalpSet == None:
+				try:
+					myGlobalpSet = Custom.GalaxyCharts.TravelerSystems.JumpspaceTunnelTravelSet.Initialize()
+					self.Logger.LogString(" -Initialized Jumpspace Tunnel Travel Set")
+				except:
+					print "ERROR on GetTravelSetToUse: "
+					traceback.print_exc()
+				#self.Logger.LogString(" -Initialized Jumpspace Tunnel Travel Set")
+			pSet = myGlobalpSet #Custom.GalaxyCharts.Traveler.Travel.pJumpspaceTunnelTravelSet
 		elif self.IsPlayer == 0 and self.IsAIinPlayerRoute == 0:
-			pSet = Custom.GalaxyCharts.Traveler.Travel.pAITravelSet
+			if myGlobalAISet == None:
+				try:
+					myGlobalAISet = Custom.GalaxyCharts.TravelerSystems.AIJumpspaceTunnelTravelSet.Initialize()
+					self.Logger.LogString(" -Initialized AI Jumpspace Tunnel Travel Set")
+				except:
+					print "ERROR on GetTravelSetToUse: "
+					traceback.print_exc()
+			pSet = myGlobalAISet #Custom.GalaxyCharts.Traveler.Travel.pAIJumpspaceTunnelTravelSet
 		return pSet
 	except:
 		self._LogError("GetTravelSetToUse")
+	return None
 
 ########
 # Method to convert the speed this ship is travelling at to Cs ("c" is the physical constant that is equal to the speed of light, in km/h. So,
@@ -1682,23 +1844,16 @@ def GetTravelSetToUse(self): #TO-DO MODIFY
 # travelling faster than the speed of light.
 # must return a float  (like 1.0)
 ########
-def ConvertSpeedAmount(fSpeed): #TO-DO MODIFY - Also if it's Sigma, make it 100 times faster
+def ConvertSpeedAmount(fSpeed):
 	debug(__name__ + ", ConvertSpeedAmount")
-	if fSpeed >= 9.999:
-		fFacA = 2.88                ##### Do Not Change These Values #####
-		fFacB = 8.312               ##### Do Not Change These Values #####
-	elif fSpeed > 9.99:
-		fFacA = 2.88                ##### Do Not Change These Values #####
-		fFacB = 7.512               ##### Do Not Change These Values #####
-	elif fSpeed > 9.6:
-		fFacA = 2.8700              ##### Do Not Change These Values #####
-		fFacB = 5.9645              ##### Do Not Change These Values #####
-	elif fSpeed <= 9.6:
-		fFacA = 3.0                 ##### Do Not Change These Values #####
-		fFacB = 3.0                 ##### Do Not Change These Values #####
 
-	speed = (math.pow(fSpeed, (10.0/fFacA)) + math.pow((10.0-fSpeed), (-11.0/fFacB)))
-	return speed #*42
+	baseSpeed = 9.6
+	mediumSpeed = 5.0
+	fFacA = 2.87                ##### Do Not Change These Values #####
+	fFacB = 4.0                 ##### Do Not Change These Values #####
+	speed = ((math.pow(baseSpeed, (10.0/fFacA)) + math.pow((10.0-baseSpeed), (-11.0/fFacB)))) * math.pow((fSpeed/mediumSpeed), 4)
+
+	return speed
 
 ########
 # Method to return the normal max speed of this travelling method that this travel instance (ship) can achieve.

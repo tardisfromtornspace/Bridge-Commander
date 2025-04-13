@@ -37,7 +37,7 @@ QuantumGraviticEngines.SetMaxAccel(6.000000)
 QuantumGraviticEngines.SetMaxAngularAccel(1.400000)
 QuantumGraviticEngines.SetMaxAngularVelocity(1.500000)
 QuantumGraviticEngines.SetMaxSpeed(10.000000)
-QuantumGraviticEngines.SetEngineSound("wsengine")
+QuantumGraviticEngines.SetEngineSound("Federation Engines")
 App.g_kModelPropertyManager.RegisterLocalTemplate(QuantumGraviticEngines)
 #################################################
 QuantumGraviticReactor = App.PowerProperty_Create("Quantum Gravitic Reactor")

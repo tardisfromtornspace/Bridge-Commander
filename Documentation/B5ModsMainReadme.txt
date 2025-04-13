@@ -1,4 +1,17 @@
 ==Changelog==
+1.5.0 -
+   Updates:
+   * Removed all content by PSYCH0 and USS Sovereign, to resolve DMCA takedown.
+   * In order to enforce the reasons for the DMCA takedown, modified the "scripts/Custom/Autoload/zzzJumpspaceMode" and "scripts/Custom/Jumpspace/JumpspaceModule" (both .py and .pyc) files so they are empty and thus if somebody had installed older versions with the infracting module, this will ensure that module is no longer there.
+   * Created new Jumpspace Drive based on adding TravellingMethods to the scripts/Custom/TravellingMethods folder that USS Frontier's GalaxyCharts checks:
+       - Jumpspace Drive - all ships with an operative jumpspace drive can use it. Phased Jumpspace will perform the same but with cloaking and Shadow sounds.
+       - Quantumspace drive - twice faster than regular Jumpspace drive. At the moment, used only by Vorlons, albeit they will not use it often.
+       - TransDimensional Drive - extremely fast, used by The Traveller from Sigma 359.
+   * Updated MinJW to reflect the Jumpspace change.
+   * Added more canonical sounds.
+1.2.31 -
+   Updated for legal reasons:
+   * By petition and demand of USS Sovereign, removed Jumpspace Module from the entire mod.
 1.2.30 -
    Fixes:
    * Fixed small goof on G'quan's technologies.
@@ -190,12 +203,27 @@ Additionally around 60+ ships from the Babylon 5 franchise have been added***
 
 - Most meshes and textures not present on the other mods/readmes were taken from the Celestia Motherlode or remodeled by Alex SL Gato (tardisfromtornspace) when too complex for the tools used, with Blender and Milkshape. When those tools failed, rebuilt from mostly scratch (Earth Alliance Explorer).
 - Icons done by Alex SL Gato (by screenshotting the progress done in the Milkshape 3D tool).
-- scripts: for the most part Alex SL Gato, except the Babylon 5 Jumpspace technology, which was adapted from the Slipstream's creator (USS Sovereign, most likely) by Alex SL Gato
+- scripts: for the most part Alex SL Gato, except the Babylon 5 Jumpspace technologies, which was created as several TravellingMethods using the template provided by USS Frontier, creator of GalaxyCharts.
+   - I was informed that the old version of Jumpspace technology, adapted from the Slipstream's Framework (by USS Sovereign) did not meet the copyright requirements and as thus it was (naturally) taken down. If you have a B5 superpack mod previous to 1.5.0, you MUST download the altest version, which will ensure that older module is removed. Please, if you find any other infringment, do not hesiste to contact me.
 - mod/ships/hardpoint: Alex SL Gato.
 - Special shadow cloak/decloak sound: taken by Alex SL Gato from the Babylon 5 season 4 intro.
-- Movie intro: All credit to the original visual effects artists at Foundation Imaging and Netter Digital who made television history.
+- Movie intro and several Babylon 5 sounds: All credit to the original visual effects artists at Foundation Imaging and Netter Digital who made television history. Jumpspace noise sounds found on http://b5.cs.uwyo.edu/bab5/allsrch.cgi, which were extracted by anmolnar.
 - ATPFunctions: originally made by Apollo, later expanded by Alex SL Gato.
 - B5Defences: originally based on Shields.py by MLeoDaalder and Dasher42, then heavily modified by Alex SL Gato.
+- Special thanks to the already present mods (most of them from https://www.gamefront.com/games/bridge-commander/category/babylon5):
+  - Fighter Launchable Babylon 5: TiqHud, Brad Bowermaster, Wok, Crook, Cordanilus and MScott - from this mod the Auroras and Thunderbolts were obtained.
+      --- Thunderbolt: TiqHud, Wok, Bravo Int.
+      --- Aurora Class Starfury: MadJohn, Crook and the http://www.b5tech.net team and the Homeworld mod teams.
+  - Minbari Sharlin: Maryam, baz1701 and limey98. NOTE: The one I had on my install was NOT MSR1701's version.
+  - B5 Centauri Vorchan and B5 Centauri Primus: TiqHud, Wok, Jackal and Captain Russel.
+  - B5 Bluestar and Whitestar: Nadab Göksu, Thunderchild, DamoclesX, TiqHud, aobob, junky58 and BCU people (the latest 4 are beta testers).
+  - Narn ThNor: TiqHud, Wok, Lord Malek and the original Babylon 5 visual effects artists mentioned before.
+  - Narn GQuan: TiqHud, stresspuppy, Queball.
+  - Drakh Raider: TiqHud, Wok, Jackal Tiger, Nadab, Lord Malek and the original Babylon 5 visual effects artists mentioned before.
+  - Omega Class Destroyer: MadJohn and Spooky.
+  - B5 Warlock and Victory: DamoclesX and Durandal.
+  - Shadow Battlecrab: Sci-Fi DreamYards, Cpt. LC Amaral, Maverick, Executioner_de
+  - Sentri Fighter (no hardpoints): Wok and Bravo Int.
 
 Fulfilling both the SDK and LGPL licenses:
 THIS MOD IS NOT SUPPORTED BY ACTIVISION
@@ -203,28 +231,30 @@ THIS MOD IS NOT SUPPORTED BY ACTIVISION
 This mod falls under the GNU LESSER GENERAL PUBLIC LICENSE Version 3, 29 June 2007, both from any derivative or original work done to the mod. Everyone is permitted to copy and distribute verbatim copies of this mod. As per the LPGL license, everything in this mod is open for everybody to use, read and modify. Just do not forget to credit everyone involved and follow the LGPL license so derivatives of this code remain LGPL.
 
 ===Mods required===
-You'll of course need Foundation, Nanofx2, Submenu v 3.0, QBAutostart and Kobayashi Maru mod, the latest version the better. 
+You'll of course need Foundation, Nanofx2, Submenu v 3.0, QBAutostart and Kobayashi Maru mod, the latest version the better. GalaxyCharts is also required, probably the GalaxyCharts Warp AI fix as well.
+
+All the mods on https://www.gamefront.com/games/bridge-commander/category/babylon5 mentioned above, on reverse order (NONE of the ones called "Remastered") would be probably required (albeit at the time I downloaded the mods from NexusMods so the content may have been different), **but** some of them conflicted with each other due to Caps issue (i.e. EAOmega - eaomega), certain shuttle quirks and BCMMods affected certain filenames and inner files, which back when I was a newbie took me 3 years to fix, made that unadvisable. Additionally some like the original Minbari Sharlin for KM are still missing from gamefront.
 
 ===Installation Guide===
 1º Ok, first of all, just in case, backup your STBC.
 
 2º After that, just unzip the files into your STBC folder, say "yes" to overwrite all the files.
 
-3º After opening your STBC go to the options and activate "The Jumpspace" in start menu, and then activate all the new incorporated mutators (this mod uses foundation, all variants of Mvam, B5 uniforms, and Jumpspace, plus point defence, redistribute shields and repair destroyed systems mod. Ensure all of those Mutators are activated when playing to get the best experience of the B5 mod).
+3º After opening your STBC go to the options -> Customize -> Mutators and make sure that "USS Frontier's Galaxy Charts"/"Galaxy Charts" are active.
 
 4º It's strongly recommended to activate DS9FX so No Damage through Shields is active, but it's not necessary.
 
 --- Why those mutators/configurations are important ---
 
-1st: Without the jumpspace mod active, none of the Younger Races ships can leave the system (to make it more canon to the series). Oh, and don't worry, I made it so the jumpspace engines can actually be engines so you can actually use emergency repair and repair destroyed systems properly on them... unlike the Hyperdrive or Slipstream mods.
+1st: Without the Galaxy Charts active, none of the Younger Races ships can leave the system (to make it more canon to the series). Oh, and don't worry, I made it so the jumpspace engines can actually be engines so you can actually use emergency repair and repair destroyed systems properly on them.
 
-2nd Foundation is vital because for most of the Babylon 5 races, there's at least one Foundation function working to make it more canonical, with No Damage Through Shields helping considerably on overriding normal shield behaviour. Without those functions the ship defences for most babylon 5 ships are pretty weak since they'll have no defence grids, point defence, gravitational defences, polycristalline armour... just the unmodded shield which was only used as a token to make the modded defences work.
+2nd Foundation is vital because for most of the Babylon 5 races, there's at least one Foundation function working to make it more canonical, with No Damage Through Shields helping considerably on overriding normal shield behaviour. Without those functions the ship defences for most babylon 5 ships are pretty weak since they'll have no defence grids, gravitational defences... just the unmodded shield which was only used as a token to make the modded defences work, and some extra shield-unreleted techs.
 * That token shield is for the most part meant to be extremely weak and have little regeneration because:
 ** Canonically, most Babylon 5 races don't have a bubble energy shield like Star Trek.
-** A strong bubble shield on Star Trek Bridge Commander is capable of preventing beam weapons from actually hitting the hull even with the "no damage through shields" DS9FX option inactive, unless you make them ridiculously powerful, to the point in order to make an Earth Alliance ship be capable of firing beams which can hit the hull of another Omega like in the real show, you cannot have an omega or hyperion-class level of laser power to hit through, they need to have a beam as powerful as the Ori blast beam or the original Shadow Battlecrab mod - for a reference, that old mod could insta-kill the Armoured Voyager and any normal Omega in half a second - and that won't do.
+** A strong bubble shield on Star Trek Bridge Commander is capable of preventing beam weapons from actually hitting the hull even with the "no damage through shields" DS9FX option inactive, unless you make them ridiculously powerful, to the point in order to make an Earth Alliance ship be capable of firing beams which can hit the hull of another Omega like in the real show, you cannot have an omega or hyperion-class level of laser power to hit through, they need to have a beam as powerful as the original Ori blast beam or the original Shadow Battlecrab mod - for a reference, that old mod could insta-kill the Armoured Voyager and any normal Omega in half a second - and even sometimes that would not be guaranteed to destroy the vessel. Naturally that won't do.
 ** The token shield combined with the modded techs ensures that Beams actually are the most powerful weapon in Babylon 5, instead of a random person firing pulses o torpedoes - a shield in unmodded STBC actually recovers strength even while being hit, so beams against a fast-regenerating shield become almost worthless, while torpedoes and pulses give their payload damage in a single instant.
 
 --- Known Bugs ---
 * The B5 Intro is soundless and a bit glitchy, but apart from that everything else seems fine. Just in case, it has been disabled, but if you want, you can enable the B5Intro manually in Autoload.
 
-- if you find more bugs, report them.
+- if you find more bugs, report them, please.

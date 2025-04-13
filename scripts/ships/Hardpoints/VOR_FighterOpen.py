@@ -353,7 +353,7 @@ BiobeamEmitter.SetTextureSpeed(4.000000)
 BiobeamEmitter.SetTextureName("data/CA8472Beam.tga")
 App.g_kModelPropertyManager.RegisterLocalTemplate(BiobeamEmitter)
 #################################################
-JumpspaceDriveA = App.HullProperty_Create("Jumpspace Drive 1")
+JumpspaceDriveA = App.HullProperty_Create("Quantum Jumpspace Drive 1")
 
 JumpspaceDriveA.SetMaxCondition(800.000000)
 JumpspaceDriveA.SetCritical(0)
@@ -381,7 +381,7 @@ def LoadPropertySet(pObj):
 	prop = App.g_kModelPropertyManager.FindByName("Warp Core", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
-	prop = App.g_kModelPropertyManager.FindByName("Jumpspace Drive 1", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	prop = App.g_kModelPropertyManager.FindByName("Quantum Jumpspace Drive 1", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
 	prop = App.g_kModelPropertyManager.FindByName("Impulse Engines", App.TGModelPropertyManager.LOCAL_TEMPLATES)

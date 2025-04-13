@@ -3,12 +3,12 @@ UserTimeFactor = 10000.0
 SetDefaultLocs = 1
 ShowBanners = 1
 class LoggerConfig:
-	LogChaser = 0
-	LogTravel = 0
-	LogGalaxy = 0
-	LogTravelerAI = 0
-	LogTWS = 0
-	LogRDF = 0
+	LogChaser = 1
+	LogTravel = 1
+	LogGalaxy = 1
+	LogTravelerAI = 1
+	LogTWS = 1
+	LogRDF = 1
 class Starstreaks:
 	MaxPulseUpdate = 1.69486713409
 	StreaksPerPulse = 63.3053016663

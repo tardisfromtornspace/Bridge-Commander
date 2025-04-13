@@ -148,14 +148,15 @@ def TargetHit(pObject, pEvent):
 		defaultCk = [1, 1, 1]
 
 
-		baseTexture = 'scripts/Custom/Jumpspace/GFX/JumpspaceFlashAlternate.tga'
+		baseTexture = 'scripts/Custom/TravellingMethods/GFX/JumpspaceFlashAlternate.tga'
 		pAttacker = App.ShipClass_GetObjectByID(None, pTorp.GetParentID())
 		if pAttacker:
 			finalRadius = pAttacker.GetRadius() * 5 #* 50 # TO-DO REMOVE THIS "* 50" LINE
 
+			listOfInsideJumpspace = ["AIB5TransDimensionalDriveTunnelTravelSet", "AIJumpspaceTunnelTravelSet", "AIQuantumspaceTunnelTravelSet", "B5TransDimensionalDriveTunnelTravelSet", "JumpspaceTunnel1", "JumpspaceTunnel", "JumpspaceTunnelTravelSet", "QuantumspaceTunnelTravelSet"]
 			pSet = pAttacker.GetContainingSet()
-			if pSet and hasattr(pSet, "GetName") and pSet.GetName() == "JumpspaceTunnel1" or pSet.GetName() == "JumpspaceTunnel":
-				baseTexture = 'scripts/Custom/Jumpspace/GFX/JumpspaceFlash.tga'
+			if pSet and ((hasattr(pSet, "GetName") and pSet.GetName() in listOfInsideJumpspace) or (hasattr(pSet, "GetSetName") and pSet.GetSetName() in listOfInsideJumpspace)):
+				baseTexture = 'scripts/Custom/TravellingMethods/GFX/JumpspaceFlash.tga'
 
 		impactEffects.ImpactTexture.DriveEnterFlash(None, pShip.GetObjID(), None, amount=1, sparkSize=1, sFile = baseTexture, sFileFrameW = 4, sFileFrameH = 4, colorKey=defaultCk, pAttachTo = pTorp, pEmitFrom = pTorp, fSize = finalRadius, fFrequency=1,fEmitLife=1,fSpeed=1.0, fLife=1)
 	except:

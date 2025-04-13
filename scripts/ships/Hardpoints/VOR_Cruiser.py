@@ -541,7 +541,7 @@ VortexGenRight.SetXYZ(1.000000, 0.000000, 0.000000)
 VortexGen.SetRight(VortexGenRight)
 App.g_kModelPropertyManager.RegisterLocalTemplate(VortexGen)
 #################################################
-JumpspaceDriveA = App.HullProperty_Create("Jumpspace Drive 1")
+JumpspaceDriveA = App.HullProperty_Create("Quantum Jumpspace Drive 1")
 
 JumpspaceDriveA.SetMaxCondition(6000.000000)
 JumpspaceDriveA.SetCritical(0)
@@ -603,7 +603,7 @@ def LoadPropertySet(pObj):
 	prop = App.g_kModelPropertyManager.FindByName("Vortex Generator Engine", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
-	prop = App.g_kModelPropertyManager.FindByName("Jumpspace Drive 1", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	prop = App.g_kModelPropertyManager.FindByName("Quantum Jumpspace Drive 1", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
 	prop = App.g_kModelPropertyManager.FindByName("ViewscreenLeft", App.TGModelPropertyManager.LOCAL_TEMPLATES)

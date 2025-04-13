@@ -19,10 +19,19 @@ SubSubMenu = "Capital Ships"
 Foundation.ShipDef.SigmaWalkerScienceLab = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu, "SubSubMenu": SubSubMenu })
 # Unknown capabilities, just using hull polarizer here because with an appropiate hardpoint it can be repurposed as an unknown type of shield.
 Foundation.ShipDef.SigmaWalkerScienceLab.dTechs = {
-    'Breen Drainer Immune': 1,
-    'Fed Ablative Armor': { "Plates": ["Shield"]},
-    'Automated Destroyed System Repair': {"Time": 20.0},
-    "Tachyon Sensors": 0.1
+	'Breen Drainer Immune': 1,
+	'Fed Ablative Armor': { "Plates": ["Shield"]},
+	'Automated Destroyed System Repair': {"Time": 20.0},
+	"Sigma 957 Walkers Molecular Scan": {
+		"% energy dmg": 0.15,
+		"% energy drain": 0.4,
+		"raw energy drain": 5000,
+		"% energy dmg resistance": 0,
+		"% energy drain resistance": 0,
+		"raw energy drain resistance": 0,
+		
+	},
+	"Tachyon Sensors": 0.1,
 }
 
 Foundation.ShipDef.SigmaWalkerScienceLab.desc = "Little is known of these First Ones ships, only that on the strict sense of the word these ships are unarmed. However if necessary their sensor systems can be as destructive."
