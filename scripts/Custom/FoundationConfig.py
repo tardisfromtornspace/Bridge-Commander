@@ -26,7 +26,6 @@ lActiveMutators = [
 	"""Extra Ships and Mods""",
 	"""Babylon 5 Uniforms""",
 	"""Random Crew Reports""",
-	"""Warpspace Drive 20070905""",
 	"""Foundation Technologies""",
 	"""Stock Ships""",
 	"""BCS:TB: Silent Running""",

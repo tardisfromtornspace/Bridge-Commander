@@ -1,4 +1,5 @@
 == Changelog ==
+0.4.8 - Made Warpspace Travelling Method to apply to every ship out there.
 0.4.7 - Defensive Matrix 0.57.
 0.4.8 - Thanks to Greystar, the Defensive Matrix is now translucid.
 0.4.7 - Defensive Matrix 0.56.
@@ -6,7 +7,7 @@
 0.4.5 - Defensive Matrix 0.5, it seems I goofed somewhere and removed the progress I had, so I had to re-create it.
 0.4 - Defensive Matrix 0.4.
 0.3 - Defensive Matrix 0.38 + added weapon sounds.
-0.2 - Adjustments to the Minotaur + Added Warp Space tech very strongly based on USS Sovereign's Slipstream.
+0.2 - Adjustments to the Minotaur + Added Warp Space tech.
 0.1 - first unofficial version of this mod, for feedback. Very W.I.P.
 
 == What does this mod do ==
@@ -22,11 +23,9 @@ All of these must be installed before installing this mod, in this order:
 == Credits ==
 * Everyone involved in Foundation - without you this would have been a real pain to do (please read the separate Foundation.txt license) - Banbury, Dasher42, DigitalFriend, MLeo, Nanobyte and Sleight42, among others
 * Everyone involved in KM - specifically those involved in the creation of armour and Shields.py (FoundationTechnologies) and the AdvArmorTech.py - Apollo from ATP Technologies as well.
-* USS Sovereign for the Slipstream which got modified.
 * Original Minotaur (Yamato Battle Cruiser) model: 09williamsad on Thingiverse. Additionally their Creative Commons license and readme has been included on this pack, still as Creative Commons - Attribution.
 * Original Hyperion model: Arawn6 on Thingiverse. Additionally their Creative Commons license and readme has been included on this pack, still as Creative Commons - Attribution.
-* Alex SL Gato (aka CharaToLoki) for any new code implemented or modified - specifically the Turrets.py, the Defensive Matrix script, importing and texturing the Minotaur, some texturing of the Hyperion, and small 
-tweaks to other scripts.
+* Alex SL Gato (aka CharaToLoki) for any new code implemented or modified - specifically the Turrets.py, the Defensive Matrix script, importing and texturing the Minotaur, some texturing of the Hyperion, and small tweaks to other scripts.
 * Greystar, for making the Starcraft Defensive Matrix translucid!
 * Sounds:
 ** SCIITerranLaser, SCIIYamatoCannon, from here https://pixabay.com/sound-effects/search/space%20shooting/ combined with YT recordings of Starcraft II by Blizzard Entertainment.
