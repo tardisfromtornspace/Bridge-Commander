@@ -1,4 +1,6 @@
 == Changelog ==
+0.6.2 - Updates:
+  * Since I found out how to make GalaxyCahrts use a different set for different travel types, added a Mycelial Network TravelerSystem to GalaxyCharts and updated SporeDrive to 0.5 to reflect this.
 0.6.1 - Fixes:
   * Found out that Defiant's Power system could glitch out if a ship had impulse engines but no warp engines. The new Autoload patch "FIX-DefiantsQBautostartPower1dot0.py" aims to resolve that issue.
 0.6 - Updates:
@@ -131,6 +133,7 @@ IMPORTANT INSTALL INSTRUCTIONS: Do not copy-paste this mod's scripts/AI folder r
 ** Original Crossfield model (from the aforementioned https://www.gamefront.com/games/bridge-commander/file/crossfield-class) ported from Star Trek: Adversaries (https://store.steampowered.com/app/815040/Star_Trek_Adversaries/)
 * Grey da Derg#2305 aka Greystar for Model Conversion of the High-End Protostar model and adjustments.
 ** High-end USS Protostar Model made by LoganRolphh on sketchfab, falls under Creative Commons - Attribution https://sketchfab.com/3d-models/star-trek-prodigy-protostar-class-93efdd42825b410a88e77ed8e4119ff8
+* Spore Drive sprites taken from Star Trek Discovery images uploaded to Memory Alpha wiki (https://memory-alpha.fandom.com/wiki/File:JahSepp.jpg, https://memory-alpha.fandom.com/wiki/File:Mycelial_network.jpg) and then modified to suit BC and add transparency.
 * Mass Effect FTL sounds and Mass Accelerator sounds from ME3 final space battle, taken from Gamer's Little Playground's channel https://www.youtube.com/watch?v=iEoBsKALnxE
 * Thanix cannon sounds: from N7Reinas's channel https://www.youtube.com/watch?v=hByyA01r0dA recording of ME2
 * Original Electric Explosion effect, modified for the Eezo field, taken from VonFrank's work in BC:Remastered.

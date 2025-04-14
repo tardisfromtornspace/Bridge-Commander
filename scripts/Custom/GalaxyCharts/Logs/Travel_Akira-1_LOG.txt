@@ -1,0 +1,27 @@
+#This is the dump of the LogCreator: <Akira-1 Travel Logger LogCreator_659f820L33Ab>
+#This log file was created on: 9:52:57.034 of 14/April/2025, Monday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>9:52:57.034 of 14/April/2025, Monday
+#>>>Initialized Akira-1 Travel logger
+#>>>SELF = <Akira-1(65940) Travel_B9je11BK24AU>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+########################################
+# 9:53:42.774 of 14/April/2025, Monday
+#Ending of log dump - User is quiting the game
+########################################

@@ -3,7 +3,7 @@
 # GC is ALL Rights Reserved by USS Frontier, but since GC supports Plugins it is fair to release a new TravellingMethod or patch old ones as long as the files remain unmodified.
 # SporeDrive.py
 # prototype custom travelling method plugin script, by USS Frontier (Enhanced Warp, original) and then modified by Alex SL Gato for Spore Drive
-# 23rd March 2025
+# 14th April 2025
 #################################################################################################################
 ##########	MANUAL
 #################################################################################################################
@@ -11,6 +11,7 @@
 # ------ MODINFO, which is there just to verify versioning.
 # ------ ALTERNATESUBMODELFTL METHODS subsection, which are exclusively used for alternate SubModels for FTL which is a separate but linked mod, or to import needed modules.
 # ------ Auxiliar functions: "AuxProtoElementNames", "CreateDetachedElectricExplosion", "CreateElectricExplosion", "CustomBoostShipSpeed", "findShipInstance", "LoadGFX", "MainPartRotation", "PlacementOffsetOrbitWatch", "PlaySporeDriveSound", "SporeDriveBasicConfigInfo", "SporeDriveDisabledCalculations", "SporeDriveEnterFlash" and "SporeElectricField".
+# ------ Auxiliar variables: "myGlobalAISet" and "myGlobalpSet" used for keeping tabs on our alternate pSets.
 # ------ Auxiliar functions for intra-system intercept (ISI) support, which as a result of being a common-made function between default GalaxyCharts functions/methods, regular AlternateSubModelFTL and ISI, while not required to be on the plugin, some of their contents are actually required if they are not there: "CanTravelShip", "EngageSeqTractorCheckI", "GetEngageDirectionC", "GetEngageDirectionISI", "GetExitedTravelEventsI", "GetStartTravelEventsI", "MainPartRotationI", "PlaySporeDriveSoundI", "MaintainTowingActionI", "removeTractorISITowInfo", "SetupSequenceISI", "SetupTowingI".
 # NOTE 2: This version of SporeDrive also has Intra-System Intercept functions, meaning a SubMenu appears on the Helm menu to allow for a slipstream-like intercept. For more info on this, see the Manual for AlternateSubModelFTL and the comments on this file.
 # === How-To-Add ===
@@ -102,7 +103,7 @@ Foundation.ShipDef.USSProtostar.dTechs = { # (#)
 #################################################################################################################
 #
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.4",
+	    "Version": "0.5",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -148,7 +149,7 @@ sDegradationSoundFile = "scripts\\Custom\\GalaxyCharts\\Sounds\\DegradationAlert
 # if this travelling method should show starstreaks while travelling
 # (starstreaks options setup in Galaxy Charts UMM Configuration menu)
 ########
-bUseStarstreaks = 1
+bUseStarstreaks = 0
 
 ########
 # if a ship can drop out of travel, while travelling.
@@ -1327,6 +1328,10 @@ def SporeDriveEnterFlash(pAction, pShipID, sType, sRace, amount=3, sparkSize=5, 
                 
 	return 0
 
+# Some auxiliar global variables to allow set change and better sounds
+myGlobalpSet = None
+myGlobalAISet = None
+
 # ISI function
 def SetupSequenceISI(pShip=None):
 	# you can use this function as an example on how to create your own 'SetupSequenceISI(self)' method for AlternateSubModelFTL
@@ -1883,20 +1888,50 @@ def GetExitedTravelEventsI(pShip):
 # must return a App.SetClass instance, it can't be None.
 # NOTE: for the moment, this is probably the best way to make if ships can, or can not, be chased while warping.
 ########
-def GetTravelSetToUse(self):
+def GetTravelSetToUse(self, manual=0):
 	debug(__name__ + ", GetTravelSetToUse")
+	global myGlobalpSet, myGlobalAISet
 	try:
 		import Custom.GalaxyCharts.Traveler
+		import Custom.GalaxyCharts.TravelerSystems.MycelialNetworkTravelSet
+		import Custom.GalaxyCharts.TravelerSystems.AIMycelialNetworkTravelSet
 		pSet = None
+		if manual == 1:
+			if myGlobalpSet == None:
+				myGlobalpSet = Custom.GalaxyCharts.TravelerSystems.MycelialNetworkTravelSet.Initialize()
+			if myGlobalAISet == None:
+				myGlobalAISet = Custom.GalaxyCharts.TravelerSystems.AIMycelialNetworkTravelSet.Initialize()	
 		if self.IsPlayer == 1:
-			pSet = Custom.GalaxyCharts.Traveler.Travel.pTravelSet
+			if myGlobalpSet == None:
+				try:
+					myGlobalpSet = Custom.GalaxyCharts.TravelerSystems.MycelialNetworkTravelSet.Initialize()
+					self.Logger.LogString(" -Initialized Mycelial Network Travel Set")
+				except:
+					print "ERROR on GetTravelSetToUse: "
+					traceback.print_exc()
+			pSet = myGlobalpSet
 		elif self.IsPlayer == 0 and self.IsAIinPlayerRoute == 1:
-			pSet = Custom.GalaxyCharts.Traveler.Travel.pTravelSet
+			if myGlobalpSet == None:
+				try:
+					myGlobalpSet = Custom.GalaxyCharts.TravelerSystems.MycelialNetworkTravelSet.Initialize()
+					self.Logger.LogString(" -Initialized Mycelial Network Travel Set")
+				except:
+					print "ERROR on GetTravelSetToUse: "
+					traceback.print_exc()
+			pSet = myGlobalpSet
 		elif self.IsPlayer == 0 and self.IsAIinPlayerRoute == 0:
-			pSet = Custom.GalaxyCharts.Traveler.Travel.pAITravelSet
+			if myGlobalAISet == None:
+				try:
+					myGlobalAISet = Custom.GalaxyCharts.TravelerSystems.AIMycelialNetworkTravelSet.Initialize()
+					self.Logger.LogString(" -Initialized AI Mycelial Network Travel Set")
+				except:
+					print "ERROR on GetTravelSetToUse: "
+					traceback.print_exc()
+			pSet = myGlobalAISet
 		return pSet
 	except:
 		self._LogError("GetTravelSetToUse")
+	return None
 
 ########
 # Method to convert the speed this ship is travelling at to Cs ("c" is the physical constant that is equal to the speed of light, in km/h. So,
@@ -1924,7 +1959,7 @@ def ConvertSpeedAmount(fSpeed):
 		fFacB = 3.0                 ##### Do Not Change These Values #####	
 
 	speed = (math.pow(fSpeed, (10.0/fFacA)) + math.pow((10.0-fSpeed), (-11.0/fFacB)))
-	return speed*420480*420480
+	return speed *420480*420480
 
 ########
 # Method to return the normal max speed of this travelling method that this travel instance (ship) can achieve.
