@@ -1,4 +1,7 @@
 ==Changelog==
+1.5.1 -
+   Fixes:
+   * Updated inner documentation on TransDimensional Drive.
 1.5.0 -
    Updates:
    * Removed all content by PSYCH0 and USS Sovereign, to resolve DMCA takedown.

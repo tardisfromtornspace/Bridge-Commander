@@ -1,0 +1,53 @@
+#This is the dump of the LogCreator: <Alioth 8 FP Travel Logger[2] LogCreator_gBJm94Ec88Wa>
+#This log file was created on: 13:56:42.734 of 14/April/2025, Monday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>13:56:42.734 of 14/April/2025, Monday
+#>>>Initialized Alioth 8 FP Travel logger
+#>>>SELF = <Alioth 8 FP(126343) Travel_2qZXUE1k9tP2>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: Player Travel Destination OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>13:58:16.933 of 14/April/2025, Monday
+#>>>Initialized Alioth 8 FP Travel logger
+#>>>SELF = <Alioth 8 FP(268452) Travel_iMAtzZt6HjF0>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: Player Travel Destination OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+########################################
+# 13:58:17.083 of 14/April/2025, Monday
+#Ending of log dump - User is quiting the game
+########################################
+########################################
+# 13:58:17.083 of 14/April/2025, Monday
+#Ending of log dump - User is quiting the game
+########################################

@@ -4,7 +4,7 @@
 # Babylon5TransDimensionalDrive.py
 # Based on the prototype custom travelling method plugin script, by USS Frontier (Enhanced Warp.py, original, template), and then modified by Alex SL Gato for B5TransDimensionalDrive.
 # This ship is a legal replacement to the illegal JumpspaceModule - use Babylon5TransDimensionalDrive instead.
-# 13th April 2025
+# 14th April 2025
 #################################################################################################################
 ##########	MANUAL
 #################################################################################################################
@@ -18,7 +18,7 @@
 # Please note that "GetTravelSetToUse" has been modified to allow a different Travel Set.
 # === How-To-Add ===
 # This Travelling Method is Ship-based, on this case it may need of Foundation and FoundationTech to verify if the ship is equipped with it.
-# This main FTL method check is stored inside an "Alternate-Warp-FTL" dictionary, which is a script that should be located at scripts/Custom/Techs/AlternateSubModelFTL.py. While this sub-tech can work totally fine without such module installed, or even just act on hardpoint properties alone (including a ship subsystem that contains "quantum jumpspace drive" or "quantum jump-space drive", case insensitive, on the hardpoint will suffice), it is recommended to have it.
+# This main FTL method check is stored inside an "Alternate-Warp-FTL" dictionary, which is a script that should be located at scripts/Custom/Techs/AlternateSubModelFTL.py. While this sub-tech can work totally fine without such module installed, or even just act on hardpoint properties alone (including a ship subsystem that contains "jumpspace drive" or "jump-space drive", case insensitive, and another called "TransDimensional Drive" case-sensitive, on the hardpoint will suffice), it is recommended to have it.
 # On this case, due to that, only the lines marked with "# (#)" are needed for B5TransDimensionalDrive to work, but the final parent technology may require more:
 # "B5TransDimensionalDrive": is the name of the key. This is the bare minimum for the technology to work
 # "Nacelles": is the name of a key whose value indicates a list of which warp engine property children (nacelles) are part of the B5TransDimensionalDrive system. If all are disabled/destroyed, B5TransDimensionalDrive will not engage. If this field does not exist or "Nacelles": [] it skips this disabled check.
@@ -97,7 +97,7 @@ Foundation.ShipDef.EAOmega.dTechs = { # (#)
 #################################################################################################################
 #
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.2",
+	    "Version": "0.21",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }

@@ -1,11 +1,55 @@
-#This is the dump of the LogCreator: <Main Galaxy Logger LogCreator_hehda1azfGXh>
-#This log file was created on: 11:55:3.0 of 14/April/2025, Monday
+#This is the dump of the LogCreator: <Main Galaxy Logger LogCreator_IzsExV7AtK7z>
+#This log file was created on: 13:52:39.0 of 14/April/2025, Monday
 ########################################
 ## -------------------- ##
 ####################
-#######>>>11:55:3.0 of 14/April/2025, Monday
+#######>>>13:52:39.0 of 14/April/2025, Monday
 #>>>Initialized Main Galaxy logger
+## -------------------- ##
+####################
+#######>>>13:53:32.954 of 14/April/2025, Monday
+#>>>Calculating Time To Travel...
+#>>> -Was Set: Belaruz4
+#>>> -GoingTo Set: Albirea3
+#>>> -Was Region: <BelaruzRegion_j3gv78sqTsQq>
+#>>> -Going Region: <AlbireaRegion_miM230TwhX6d>
+#>>> -Distance: 18.6815414429 lightyears
+#>>> -Speed (arg): 1.00031709671
+#>>> -Time to reach: 14791.6923828 seconds
+## -------------------- ##
+####################
+#######>>>13:53:54.886 of 14/April/2025, Monday
+#>>>Calculating Time To Travel...
+#>>> -Was Set: SpaceSet
+#>>> -GoingTo Set: Albirea3
+#>>> -Was Region: <SpaceSetRegion_NwA5x3uZ0DFJ>
+#>>> -Going Region: <AlbireaRegion_miM230TwhX6d>
+#>>> -Distance: 18.6771450043 lightyears
+#>>> -Speed (arg): 3.37539969843e+014
+#>>> -Time to reach: 4.38256202162e-011 seconds
+## -------------------- ##
+####################
+#######>>>13:54:10.353 of 14/April/2025, Monday
+#>>>Calculating Time To Travel...
+#>>> -Was Set: Albirea3
+#>>> -GoingTo Set: Alioth8
+#>>> -Was Region: <AlbireaRegion_miM230TwhX6d>
+#>>> -Going Region: <AliothRegion_s1zdSae3G2zQ>
+#>>> -Distance: 9.43398094177 lightyears
+#>>> -Speed (arg): 0.0001
+#>>> -Time to reach: 74720184.0 seconds
+## -------------------- ##
+####################
+#######>>>13:55:52.052 of 14/April/2025, Monday
+#>>>Calculating Time To Travel...
+#>>> -Was Set: SpaceSet
+#>>> -GoingTo Set: Alioth8
+#>>> -Was Region: <SpaceSetRegion_NwA5x3uZ0DFJ>
+#>>> -Going Region: <AliothRegion_s1zdSae3G2zQ>
+#>>> -Distance: 9.43398094177 lightyears
+#>>> -Speed (arg): 1.9788390427e+018
+#>>> -Time to reach: 3.77596022348e-015 seconds
 ########################################
-# 11:56:31.346 of 14/April/2025, Monday
+# 13:58:17.083 of 14/April/2025, Monday
 #Ending of log dump - User is quiting the game
 ########################################

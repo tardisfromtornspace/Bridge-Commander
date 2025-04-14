@@ -1,0 +1,28 @@
+#This is the dump of the LogCreator: <Unknown Debris Travel Logger LogCreator_0sv94fhYbxrU>
+#This log file was created on: 13:50:51.172 of 14/April/2025, Monday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>13:50:51.172 of 14/April/2025, Monday
+#>>>Initialized Unknown Debris Travel logger
+#>>>SELF = <Unknown Debris(80702) Travel_NtIUFTS12g02>
+#>>>Initial Travel Type: None
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: Player Travel Destination OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+########################################
+# 13:51:1.071 of 14/April/2025, Monday
+#Ending of log dump - User is quiting the game
+########################################

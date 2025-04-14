@@ -103,7 +103,7 @@ Foundation.ShipDef.USSProtostar.dTechs = { # (#)
 #################################################################################################################
 #
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.5",
+	    "Version": "0.51",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -1941,6 +1941,10 @@ def GetTravelSetToUse(self, manual=0):
 ########
 def ConvertSpeedAmount(fSpeed):
 	debug(__name__ + ", ConvertSpeedAmount")
+
+	if fSpeed <= 1.01:
+		return 0.0001
+
 	if fSpeed >= 9.999:
 		fFacA = 2.88                ##### Do Not Change These Values #####
 		fFacB = 8.312               ##### Do Not Change These Values #####

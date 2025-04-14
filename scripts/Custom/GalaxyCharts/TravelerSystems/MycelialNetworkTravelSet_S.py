@@ -16,7 +16,7 @@ def Initialize(pSet):
 	# sensor density of nebula(value to scale sensor range by)
 	# name of internal texture (needs alpha)
 	# name of external texture (no need for alpha)
-	pNebula = App.MetaNebula_Create(25.0 / 255.0, 50.0 / 255.0, 150.0 / 255.0, 1450.0, 1.0, "data/jahSeppback.tga", "data/Textures/Effects/SporeDriveElectricExplosion.tga")
+	pNebula = App.MetaNebula_Create(25.0 / 255.0, 50.0 / 255.0, 150.0 / 255.0, 35000.0, 1.0, "data/jahSeppback.tga", "data/Textures/Effects/SporeDriveElectricExplosion.tga")
 
 	# Set nebula damage/sec to Hull/Shields.
 	pNebula.SetupDamage(0.0, 0.00001)

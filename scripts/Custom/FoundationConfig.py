@@ -11,7 +11,6 @@ lActiveMutators = [
 	"""Construct Mod""",
 	"""Skinning And Damaging Tool""",
 	"""StarfleetOperations-Cardassia""",
-	"""TimeVortex Drive 20070905""",
 	"""Slipstream Drive 20070905""",
 	"""Stargate Hyperdrive""",
 	"""USS Frontier's GravityFX""",
