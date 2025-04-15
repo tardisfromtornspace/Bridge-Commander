@@ -1,4 +1,6 @@
 == Changelog ==
+1.0.11
+* Updated AdvArmourTechThree from 1.82 to 1.83, fixed weird self-destruct bug.
 1.0.10
 * Updated AdvArmourTechThree from 1.81 to 1.82, fixing certain issues where the buttons were not disappearing accordingly.
 1.0.9

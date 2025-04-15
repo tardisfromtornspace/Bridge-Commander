@@ -10,7 +10,7 @@ import traceback
 from bcdebug import debug
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-            "Version": "1.82",
+            "Version": "1.83",
             "License": "LGPL",
             "Description": "Read info below for better understanding"
             }
@@ -307,7 +307,7 @@ class AdvArmorTechTwoDef(FoundationTech.TechDef):
                 debug(__name__ + ", SubsystemStateChanged")
                 pShip = App.ShipClass_Cast(pObject)
 		pShip = App.ShipClass_GetObjectByID(None, pShip.GetObjID())
-		if not pShip:
+		if not pShip or pShip.IsDead() or pShip.IsDying():
 			return
                 pSubsystem = pEvent.GetSource()
                 #print "Ship %s with AdvArmorTech2 has changed a subsystem" % repr(pShip)
@@ -339,7 +339,7 @@ def SubsystemStateChanged(pObject, pEvent):
 	debug(__name__ + ", SubsystemStateChanged")
 	pShip = App.ShipClass_Cast(pObject)
 	pShip = App.ShipClass_GetObjectByID(None, pShip.GetObjID())
-	if not pShip:
+	if not pShip or pShip.IsDead() or pShip.IsDying():
 		return
 	pSubsystem = pEvent.GetSource()
 	#debug(__name__ + ", SubsystemStateChanged: Ship ", repr(pShip), "with AdvArmorTech2 has changed a subsystem")
@@ -357,7 +357,7 @@ def SubDamage(pObject, pEvent):
 	debug(__name__ + ", SubDamage")
 	pShip = App.ShipClass_Cast(pObject)
 	pShip = App.ShipClass_GetObjectByID(None, pShip.GetObjID())
-	if not pShip:
+	if not pShip or pShip.IsDead() or pShip.IsDying():
 		return
 	if pShip:
 		AdvArmor(pShip)
@@ -373,7 +373,7 @@ def SubDamagePlayer(pObject, pEvent):
 def ReplaceModel(pShip, sNewShipScript):
 	debug(__name__ + ", ReplaceModel")
 	pShip = App.ShipClass_GetObjectByID(None, pShip.GetObjID())
-	if not pShip:
+	if not pShip or pShip.IsDead() or pShip.IsDying():
 		return
 	#print sNewShipScript
         ShipScript = __import__('ships.' + sNewShipScript)
@@ -411,10 +411,10 @@ def AdvArmorPlayer(): # For player
 	global pShipp
 	armor_ratio=0.0
 	pShip=MissionLib.GetPlayer()
-	if not pShip:
+	if not pShip or pShip.IsDead() or pShip.IsDying():
 		return
 	pShip = App.ShipClass_GetObjectByID(None, pShip.GetObjID())
-	if not pShip:
+	if not pShip or pShip.IsDead() or pShip.IsDying():
 		return
 	pShipModule=__import__(pShip.GetScript())
 	try:
@@ -483,10 +483,10 @@ def AdvArmor(pShip): # for AI
 	global sOriginalShipScript
 	global pShipp
 	armor_ratio=0.0
-	if not pShip:
+	if not pShip or pShip.IsDead() or pShip.IsDying():
 		return
 	pShip = App.ShipClass_GetObjectByID(None, pShip.GetObjID())
-	if not pShip:
+	if not pShip or pShip.IsDead() or pShip.IsDying():
 		return
 	pShipModule=__import__(pShip.GetScript())
 	try:
@@ -545,10 +545,10 @@ def AdvArmor(pShip): # for AI
 
 def GetAdvArmor(pShip):
 	pAdvArmor=0
-	if not pShip:
+	if not pShip or pShip.IsDead() or pShip.IsDying():
 		return
 	pShip = App.ShipClass_GetObjectByID(None, pShip.GetObjID())
-	if not pShip:
+	if not pShip or pShip.IsDead() or pShip.IsDying():
 		return pAdvArmor
 	pIterator = pShip.StartGetSubsystemMatch(App.CT_SHIP_SUBSYSTEM)
 	pSubsystem = pShip.GetNextSubsystemMatch(pIterator)
@@ -564,7 +564,7 @@ def findShipInstance(pShip):
         pInstance = None
         try:
             pShip = App.ShipClass_GetObjectByID(None, pShip.GetObjID())
-            if not pShip:
+            if not pShip or pShip.IsDead() or pShip.IsDying():
                 return pInstance
             if FoundationTech.dShips.has_key(pShip.GetName()):
                 pInstance = FoundationTech.dShips[pShip.GetName()]
@@ -584,10 +584,10 @@ def AdvArmorTogglePlayer(pObject, pEvent):
 	global sNewShipScript
 	global sOriginalShipScript
 	pShip=MissionLib.GetPlayer()
-	if not pShip:
+	if not pShip or pShip.IsDead() or pShip.IsDying():
 		return
 	pShip = App.ShipClass_GetObjectByID(None, pShip.GetObjID())
-	if not pShip:
+	if not pShip or pShip.IsDead() or pShip.IsDying():
 		return
 	pShipModule=__import__(pShip.GetScript())
 
@@ -650,9 +650,9 @@ def AdvArmorTogglePlayer(pObject, pEvent):
 			pShip.SetVisibleDamageStrengthModifier(vd_str_mod[repr(pShip)])
 			pShip.SetInvincible(0)
 	else:
+		pShip.SetInvincible(1)
 		ArmorButton.SetName(App.TGString("Adv Plating Online"))
 		AdvArmorRecord[repr(pShip)]=MissionLib.HideSubsystems(pShip)
-		pShip.SetInvincible(1)
 		pShip.SetVisibleDamageRadiusModifier(0.0)
 		pShip.SetVisibleDamageStrengthModifier(0.0)
 		if sNewShipScript[repr(pShip)]:
@@ -669,7 +669,7 @@ def AdvArmorToggleAI(pObject, pEvent, pShip):
 	global sNewShipScript
 	global sOriginalShipScript
 	pShip = App.ShipClass_GetObjectByID(None, pShip.GetObjID())
-	if not pShip:
+	if not pShip or pShip.IsDead() or pShip.IsDying():
 		return
 	pShipModule=__import__(pShip.GetScript())
 
@@ -725,8 +725,8 @@ def AdvArmorToggleAI(pObject, pEvent, pShip):
 			pShip.SetVisibleDamageStrengthModifier(vd_str_mod[repr(pShip)])
 			pShip.SetInvincible(0)
 	else:
-		AdvArmorRecord[repr(pShip)]=MissionLib.HideSubsystems(pShip)
 		pShip.SetInvincible(1)
+		AdvArmorRecord[repr(pShip)]=MissionLib.HideSubsystems(pShip)
 		pShip.SetVisibleDamageRadiusModifier(0.0)
 		pShip.SetVisibleDamageStrengthModifier(0.0)
 		if sNewShipScript[repr(pShip)]:
@@ -743,7 +743,7 @@ def AdvArmorTogglePlayerFirst(armourActive):
 	global sOriginalShipScript
 	pShip=MissionLib.GetPlayer()
 	pShip = App.ShipClass_GetObjectByID(None, pShip.GetObjID())
-	if not pShip:
+	if not pShip or pShip.IsDead() or pShip.IsDying():
 		return
 	pShipModule=__import__(pShip.GetScript())
 
@@ -804,9 +804,9 @@ def AdvArmorTogglePlayerFirst(armourActive):
 		pShip.SetVisibleDamageStrengthModifier(vd_str_mod[repr(pShip)])
 		pShip.SetInvincible(0)
 	else:
+		pShip.SetInvincible(1)
 		ArmorButton.SetName(App.TGString("Adv Plating Online"))
 		AdvArmorRecord[repr(pShip)]=MissionLib.HideSubsystems(pShip)
-		pShip.SetInvincible(1)
 		pShip.SetVisibleDamageRadiusModifier(0.0)
 		pShip.SetVisibleDamageStrengthModifier(0.0)
 		if sNewShipScript[repr(pShip)]:
@@ -823,7 +823,7 @@ def AdvArmorToggleAIFirst(pShip, armourActive):
 	global sNewShipScript
 	global sOriginalShipScript
 	pShip = App.ShipClass_GetObjectByID(None, pShip.GetObjID())
-	if not pShip:
+	if not pShip or pShip.IsDead() or pShip.IsDying():
 		return
 	pShipModule=__import__(pShip.GetScript())
 
@@ -881,8 +881,8 @@ def AdvArmorToggleAIFirst(pShip, armourActive):
 		pShip.SetVisibleDamageStrengthModifier(vd_str_mod[repr(pShip)])
 		pShip.SetInvincible(0)
 	else:
-		AdvArmorRecord[repr(pShip)]=MissionLib.HideSubsystems(pShip)
 		pShip.SetInvincible(1)
+		AdvArmorRecord[repr(pShip)]=MissionLib.HideSubsystems(pShip)
 		pShip.SetVisibleDamageRadiusModifier(0.0)
 		pShip.SetVisibleDamageStrengthModifier(0.0)
 		if sNewShipScript[repr(pShip)]:

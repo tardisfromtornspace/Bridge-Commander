@@ -1,5 +1,5 @@
-#This is the dump of the LogCreator: <Debris Travel Logger LogCreator_5o08v1EoeyEz>
-#This log file was created on: 13:47:13.099 of 14/April/2025, Monday
+#This is the dump of the LogCreator: <Debris Travel Logger LogCreator_Elw2Jm8oTM2A>
+#This log file was created on: 1:47:54.495 of 15/April/2025, Tuesday
 ########################################
 < ======== Dynamic TS ========= >
 Updating Travelling Procedures...
@@ -9,9 +9,9 @@ Updating Travelling Procedures...
 < ========== END DTS ========== >
 ## -------------------- ##
 ####################
-#######>>>13:47:13.099 of 14/April/2025, Monday
+#######>>>1:47:54.495 of 15/April/2025, Tuesday
 #>>>Initialized Debris Travel logger
-#>>>SELF = <Debris(3464561) Travel_486u2s2c55o1>
+#>>>SELF = <Debris(69760) Travel_CcLcZ2wIsm2f>
 #>>>Initial Travel Type: None
 #>>>Updating Variables...
 #>>> -Is AI in Player in route CHECKING: Player Travel OK
@@ -22,7 +22,3 @@ Updating Travelling Procedures...
 #>>>Chaser base class initialization complete.
 #>>>Target Ship = NONE
 #>>>Chaser pre-emptive Refresher Initialization
-########################################
-# 13:49:20.998 of 14/April/2025, Monday
-#Ending of log dump - User is quiting the game
-########################################

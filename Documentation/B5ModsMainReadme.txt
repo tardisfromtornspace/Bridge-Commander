@@ -1,4 +1,7 @@
 ==Changelog==
+1.5.2 -
+   Fixes:
+   * Updated Jumpspace modules to fix a cloak no-check issue.
 1.5.1 -
    Fixes:
    * Updated inner documentation on TransDimensional Drive.

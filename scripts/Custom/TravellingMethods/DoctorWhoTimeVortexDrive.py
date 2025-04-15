@@ -96,7 +96,7 @@ Foundation.ShipDef.EAOmega.dTechs = { # (#)
 #################################################################################################################
 #
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.2",
+	    "Version": "0.23",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -1561,7 +1561,7 @@ def SetupSequence(self):
 
 	myBoosting = 200.0
 	if HasPhasedTimeVortexDrive(pShip):
-		myBoosting = 50.0
+		myBoosting = 5.0
 	elif HasSigmaTimeVortexDrive(pShip):
 		myBoosting = 0.0
 		
@@ -1622,7 +1622,7 @@ def SetupSequence(self):
 
 	# An extra for checks
 	pWarpActionN = App.TGScriptAction_Create(__name__, "ConditionalDecloak", pShipID, 1)
-	pEngageWarpSeq.AddAction(pWarpActionN, None)
+	pEngageWarpSeq.AddAction(pWarpActionN, pHideShip, 2.4)
 
 	if (pPlayer != None) and (pShipID == pPlayer.GetObjID()):
 		pWarpSoundActionMid = App.TGScriptAction_Create(__name__, "defineTravelSpaceNoise", 1)
@@ -1698,7 +1698,7 @@ def SetupSequence(self):
 
 		# Play the vushhhhh of exiting warp
 		pWarpSoundAction2 = App.TGScriptAction_Create(__name__, "PlayDrWTimeVortexDriveSoundI", pShipID, "Exit Warp", sRace)
-		pExitWarpSeq.AddAction(pWarpSoundAction2, pBoostAction)
+		pExitWarpSeq.AddAction(pWarpSoundAction2, pWarpActionR0)
 	
 		# Make the ship return to normal speed.
 		pUnBoostAction = App.TGScriptAction_Create(sCustomActionsScript, "BoostShipSpeed", pShipID, 0, 1.0)
@@ -1786,7 +1786,7 @@ def GetExitedTravelEventsI(pShip):
 # must return a App.SetClass instance, it can't be None.
 # NOTE: for the moment, this is probably the best way to make if ships can, or can not, be chased while warping.
 ########
-def GetTravelSetToUse(self, manual=0):
+def GetTravelSetToUse(self, manual=0, whichOne=-1):
 	debug(__name__ + ", GetTravelSetToUse")
 	global myGlobalpSet, myGlobalAISet
 	try:
@@ -1797,8 +1797,17 @@ def GetTravelSetToUse(self, manual=0):
 		if manual == 1:
 			if myGlobalpSet == None:
 				myGlobalpSet = Custom.GalaxyCharts.TravelerSystems.DrWTimeVortexDriveTunnelTravelSet.Initialize()
+				if whichOne == 1:
+					return myGlobalpSet
 			if myGlobalAISet == None:
-				myGlobalAISet = Custom.GalaxyCharts.TravelerSystems.AIDrWTimeVortexDriveTunnelTravelSet.Initialize()	
+				myGlobalAISet = Custom.GalaxyCharts.TravelerSystems.AIDrWTimeVortexDriveTunnelTravelSet.Initialize()
+				if whichOne == 0:
+					return myGlobalAISet
+			if whichOne == 1:
+				return myGlobalpSet
+			elif whichOne == 0:
+				return myGlobalAISet
+				
 		if self.IsPlayer == 1:
 			if myGlobalpSet == None:
 				try:
@@ -1830,7 +1839,9 @@ def GetTravelSetToUse(self, manual=0):
 			pSet = myGlobalAISet #Custom.GalaxyCharts.Traveler.Travel.pAITimeVortexDriveTunnelTravelSet
 		return pSet
 	except:
-		self._LogError("GetTravelSetToUse")
+		traceback.print_exc()
+		if self != None and hasattr(self, "_LogError"):
+			self._LogError("GetTravelSetToUse")
 	return None
 
 ########

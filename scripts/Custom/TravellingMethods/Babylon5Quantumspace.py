@@ -4,7 +4,7 @@
 # Babylon5Quantumspace.py
 # Based on the prototype custom travelling method plugin script, by USS Frontier (Enhanced Warp.py, original, template), and then modified by Alex SL Gato for B5Quantumspace.
 # This ship is a legal replacement to the illegal JumpspaceModule - use Babylon5Quantumspace instead.
-# 13th April 2025
+# 14th April 2025
 #################################################################################################################
 ##########	MANUAL
 #################################################################################################################
@@ -97,7 +97,7 @@ Foundation.ShipDef.EAOmega.dTechs = { # (#)
 #################################################################################################################
 #
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.2",
+	    "Version": "0.23",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -1627,7 +1627,7 @@ def SetupSequence(self):
 
 	# An extra for checks
 	pWarpActionN = App.TGScriptAction_Create(__name__, "ConditionalDecloak", pShipID, 1)
-	pEngageWarpSeq.AddAction(pWarpActionN, None)
+	pEngageWarpSeq.AddAction(pWarpActionN, pHideShip, 2.4)
 
 	if (pPlayer != None) and (pShipID == pPlayer.GetObjID()):
 		pWarpSoundActionMid = App.TGScriptAction_Create(__name__, "defineTravelSpaceNoise", 1)

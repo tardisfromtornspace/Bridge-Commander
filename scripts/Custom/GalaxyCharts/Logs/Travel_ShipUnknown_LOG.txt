@@ -1,0 +1,28 @@
+#This is the dump of the LogCreator: <ShipUnknown Travel Logger LogCreator_57E4QOX753p7>
+#This log file was created on: 16:24:25.092 of 14/April/2025, Monday
+########################################
+< ======== Dynamic TS ========= >
+Updating Travelling Procedures...
+ -Update Loop MARK START
+<DTSC> -Time left:
+ -Update Loop MARK COMPLETED
+< ========== END DTS ========== >
+## -------------------- ##
+####################
+#######>>>16:24:25.092 of 14/April/2025, Monday
+#>>>Initialized ShipUnknown Travel logger
+#>>>SELF = <ShipUnknown(140611) Travel_7XL811EeC8rT>
+#>>>Initial Travel Type: Warp
+#>>>Updating Variables...
+#>>> -Is AI in Player in route CHECKING: Player Travel OK
+#>>> -Is AI in Player in route CHECKING: Player Travel Destination OK
+#>>>Destination set as None
+#>>>Set Exit Placement Name as None
+#>>>Set Exit Point to None
+#>>>Chaser base class initialization complete.
+#>>>Target Ship = NONE
+#>>>Chaser pre-emptive Refresher Initialization
+########################################
+# 16:25:21.558 of 14/April/2025, Monday
+#Ending of log dump - User is quiting the game
+########################################

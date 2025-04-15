@@ -16,7 +16,7 @@ def Initialize(pSet):
 	# sensor density of nebula(value to scale sensor range by)
 	# name of internal texture (needs alpha)
 	# name of external texture (no need for alpha)
-	pNebula = App.MetaNebula_Create(25.0 / 255.0, 25.0 / 255.0, 25.0 / 255.0, 38000.0, 1.0, "scripts/Custom/TravellingMethods/GFX/TimeVortexFlashEntry.tga", "data/timeVortexback.tga")
+	pNebula = App.MetaNebula_Create(25.0 / 255.0, 25.0 / 255.0, 255.0 / 255.0, 38000.0, 1.0, "scripts/Custom/TravellingMethods/GFX/TimeVortexFlashEntry.tga", "data/timeVortexback.tga")
 
 	# Set nebula damage/sec to Hull/Shields.
 	pNebula.SetupDamage(2000.0, 15.0)
@@ -25,4 +25,15 @@ def Initialize(pSet):
 	pNebula.AddNebulaSphere(0.0, 0.0, 0.0, 15000.0)
 
 	# Puts the nebula in the set
-	pSet.AddObjectToSet(pNebula, "Mycelial Network details 1")
+	pSet.AddObjectToSet(pNebula, "Time Vortex details 1")
+
+	pNebula2 = App.MetaNebula_Create(255.0 / 255.0, 25.0 / 255.0, 25.0 / 255.0, 38000.0, 1.0, "scripts/Custom/TravellingMethods/GFX/TimeVortexFlashEntry.tga", "data/timeVortexback.tga")
+
+	# Set nebula damage/sec to Hull/Shields.
+	pNebula2.SetupDamage(2000.0, 15.0)
+
+	# Adds a fuzzy sphere at x, y, z (in world coord) of specified size (15000.0 in this case)
+	pNebula2.AddNebulaSphere(0.0, -15000.0, 0.0, 15000.0)
+
+	# Puts the nebula in the set
+	pSet.AddObjectToSet(pNebula2, "Time Vortex details 2")

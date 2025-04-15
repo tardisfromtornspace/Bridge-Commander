@@ -97,7 +97,7 @@ Foundation.ShipDef.EAOmega.dTechs = { # (#)
 #################################################################################################################
 #
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.21",
+	    "Version": "0.23",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -1620,14 +1620,14 @@ def SetupSequence(self):
 	pEngageWarpSeq.AddAction(pHideShip, pFlashAction1, fTimeToFlash * 0.2)
 
 	pUnBoostAction = App.TGScriptAction_Create(sCustomActionsScript, "BoostShipSpeed", pShipID, 0, 1.0)
-	pEngageWarpSeq.AddAction(pUnBoostAction, pHideShip)
+	pEngageWarpSeq.AddAction(pUnBoostAction, pHideShip, 2.4)
 	
 	pCheckTowing = App.TGScriptAction_Create(sCustomActionsScript, "EngageSeqTractorCheck", pWS)
 	pEngageWarpSeq.AddAction(pCheckTowing, pUnBoostAction, 0.25)
 
 	# An extra for checks
 	pWarpActionN = App.TGScriptAction_Create(__name__, "ConditionalDecloak", pShipID, 1)
-	pEngageWarpSeq.AddAction(pWarpActionN, None)
+	pEngageWarpSeq.AddAction(pWarpActionN, pHideShip)
 
 	if (pPlayer != None) and (pShipID == pPlayer.GetObjID()):
 		pWarpSoundActionMid = App.TGScriptAction_Create(__name__, "defineTravelSpaceNoise", 1)

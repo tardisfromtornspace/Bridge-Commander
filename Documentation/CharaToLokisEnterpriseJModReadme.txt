@@ -1,6 +1,8 @@
 == Changelog ==
+1.2.14 - Fixing:
+   * Updated AdvArmourTechThree from 1.82 to 1.83, fixed weird self-destruct bug.
 1.2.13 - Fixing:
-   * Remvoed code that was not being used.
+   * Removed code that was not being used.
 1.2.12 - Fixing:
    * Updated Gravitic Lance to 1.52 to be more robust.
 1.2.11 - Fixing:

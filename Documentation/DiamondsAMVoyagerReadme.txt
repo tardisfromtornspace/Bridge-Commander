@@ -1,6 +1,7 @@
-This mod was changed by narrowcwyfe and Alex SL Gato.
+This mod was changed by narrowcwyfe and Alex SL Gato. Being temporarily uploaded on narrowcwfe's behalf.
 
-===Changelog===
+== Changelog ==
+0.9.14 - Updated AdvArmourTechThree from 1.82 to 1.83, fixed weird self-destruct bug.
 0.9.13 - Updated AutomaticDestroyedSystemRepairDummy to prevent some defence scripts from targeting it.
 0.9.12 - Updated AdvArmourTechThree from 1.81 to 1.82, fixing any weird cases of the button remaining when it shouldn't.
 0.9.11 - Updated AdvArmourTechThree from 1.7 to 1.81. 1.81 just verifies things a bit better.
@@ -104,7 +105,7 @@ FoundationTechnologies and DS9FX, having the latest version of Kobayashi Maru wo
 
 ===Credits===
 - the original modders (read the adjount readme).
-- narrowcwyfe, for getting the new mod into shape and fixing some issues, enuring the ship was not too powerful, and including new transphasic torpedo textures
+- narrowcwyfe, for getting the new mod into shape and fixing some issues, ensuring the ship was not too powerful, and including new transphasic torpedo textures
 - A fellow modder named "Tardis": for creating, fixing and applying the transphasic torpedo technology, improving and fixing the energy ablative armour tech, and ensuring the ship was not too weak against stock KM foes.
 - CGI for some parts of the model - the original one looked too skinny!
 - KCS for some work on model glows.
