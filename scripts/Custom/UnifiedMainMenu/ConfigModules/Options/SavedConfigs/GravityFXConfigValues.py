@@ -3,7 +3,7 @@ GravForceXvalue = 30.6000003815
 SetStockPlanetsDensity = 1
 SystemMapScale = 9870.828125
 SetSMScaleLightyear = 1
-GravDmgFac = 1.50000011921
+GravDmgFac = 1.47988295555
 class SetUseLogs:
 	LoadGravityFX = 0
 	GravityManager = 0
@@ -15,4 +15,4 @@ class SetUseLogs:
 	Astrometrics = 0
 	GravGenerator = 0
 StationsAreAffected = 0
-ThrusterState = 1
+ThrusterState = 0
