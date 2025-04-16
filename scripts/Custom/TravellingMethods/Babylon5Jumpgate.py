@@ -523,6 +523,10 @@ def MatrixMult(kFwd, kNewUp):
 def ConditionalAlignmentPlace(pAction, pShipID, chooseClosest=0, method="Entry", radiusAdder=0, rRadius=None, sRace=None, fTimeToFlash=None):
 	pShip = GetWellShipFromID(pShipID)
 	if pShip:
+		myCommand = "Enter Warp"
+		if method != "Entry" and method != myCommand:
+			myCommand = "Exit Warp"
+
 		pJumpgate = BringMeJumpgateFromShipSet(pShipID, chooseClosest)
 		if pJumpgate:
 			# Get the forward from that ship
@@ -600,11 +604,11 @@ def ConditionalAlignmentPlace(pAction, pShipID, chooseClosest=0, method="Entry",
 						pShip.SetTranslate(myNiPoint3ToTGPoint3(pGPoint))
 						pShip.UpdateNodeOnly()
 
-						if fTimeToFlash != None and myDependingTravelModule != None and method == "Entry":
+						if fTimeToFlash != None and myDependingTravelModule != None:
 							try:
 								# Create the flash.
 								# Potential TO-DO maybe add a disable collisions check?
-								pFlashAction1 = App.TGScriptAction_Create(myDependingTravelModulePath, "B5JumpspaceFlash", pJumpgate.GetObjID(), "Enter Warp", sRace, 0.8)
+								pFlashAction1 = App.TGScriptAction_Create(myDependingTravelModulePath, "B5JumpspaceFlash", pJumpgate.GetObjID(), myCommand, sRace, radCal)
 								if pFlashAction1:
 									pEngageWarpSeq = App.TGSequence_Create()
 									pEngageWarpSeq.AddAction(pFlashAction1, None, fTimeToFlash)
@@ -616,11 +620,11 @@ def ConditionalAlignmentPlace(pAction, pShipID, chooseClosest=0, method="Entry",
 				except:
 					traceback.print_exc()
 		else:
-			if fTimeToFlash != None and myDependingTravelModule != None and method == "Entry":
+			if fTimeToFlash != None and myDependingTravelModule != None:
 				try:
 					# Create the flash.
 
-					pFlashAction1 = App.TGScriptAction_Create(myDependingTravelModulePath, "B5JumpspaceFlash", pShipID, "Enter Warp", sRace, rRadius)
+					pFlashAction1 = App.TGScriptAction_Create(myDependingTravelModulePath, "B5JumpspaceFlash", pShipID, myCommand, sRace, rRadius)
 					if pFlashAction1:
 						pEngageWarpSeq = App.TGSequence_Create()
 						pEngageWarpSeq.AddAction(pFlashAction1, None, fTimeToFlash)
@@ -766,7 +770,7 @@ def SetupSequence(self):
 
 	# Add the actions for exiting warp only if the destination set exists.
 	if(pWS.GetDestinationSet() != None):
-		pProperAlignment2 = App.TGScriptAction_Create(__name__, "ConditionalAlignmentPlace", pShipID, 0, "Exit")
+		pProperAlignment2 = App.TGScriptAction_Create(__name__, "ConditionalAlignmentPlace", pShipID, 0, "Exit", 0, rRadius, sRace, 0.6)
 		pExitWarpSeq.AddAction(pProperAlignment2, None)
 
 		if (pPlayer != None) and (pShipID == pPlayer.GetObjID()):
@@ -796,9 +800,9 @@ def SetupSequence(self):
 			pExitWarpSeq.AddAction(pHideTowee, pHideShip)
 
 		# Create the warp flash.
-		if myDependingTravelModule != None:
-			pFlashAction2 = App.TGScriptAction_Create(myDependingTravelModulePath, "B5JumpspaceFlash", pShipID, "Exit Warp", sRace, rRadius)
-			pExitWarpSeq.AddAction(pFlashAction2, pHideShip, 0.7)
+		#if myDependingTravelModule != None:
+		#	pFlashAction2 = App.TGScriptAction_Create(myDependingTravelModulePath, "B5JumpspaceFlash", pShipID, "Exit Warp", sRace, rRadius)
+		#	pExitWarpSeq.AddAction(pFlashAction2, pHideShip, 0.7)
 
 		# Un-Hide the ship
 		pUnHideShip = App.TGScriptAction_Create(sCustomActionsScript, "HideShip", pShipID, 0)
