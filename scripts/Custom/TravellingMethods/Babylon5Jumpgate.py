@@ -25,7 +25,7 @@ Foundation.ShipDef.B5JumpgateClosed.IsBabylon5WorkingJumpgate = 1
 #################################################################################################################
 #
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.11",
+	    "Version": "0.12",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -520,7 +520,7 @@ def MatrixMult(kFwd, kNewUp):
     return vAuxVx, vAuxVy, vAuxVz
 
 # An aux. function.
-def ConditionalAlignmentPlace(pAction, pShipID, chooseClosest=0, method="Entry", radiusAdder=0):
+def ConditionalAlignmentPlace(pAction, pShipID, chooseClosest=0, method="Entry", radiusAdder=0, rRadius=None, sRace=None, fTimeToFlash=None):
 	pShip = GetWellShipFromID(pShipID)
 	if pShip:
 		pJumpgate = BringMeJumpgateFromShipSet(pShipID, chooseClosest)
@@ -534,6 +534,18 @@ def ConditionalAlignmentPlace(pAction, pShipID, chooseClosest=0, method="Entry",
 				pointForwardDir = App.TGPoint3_GetModelBackward()
 
 			if pointForwardLoc != None:
+				try:
+					#isUsingPhys = pShip.IsUsingPhysics()
+					#pShip.SetUsePhysics(0)
+					vVelocity = App.TGPoint3()
+					vVelocity.SetXYZ(0,0,0)
+					pShip.SetAcceleration(vVelocity)
+					pShip.SetAngularAcceleration(vVelocity)
+					pShip.SetVelocity(vVelocity)
+					pShip.SetAngularVelocity(vVelocity, App.PhysicsObjectClass.DIRECTION_MODEL_SPACE)				
+					#pShip.SetUsePhysics(isUsingPhys)
+				except:
+					traceback.print_exc()	
 				try:
 					pShipNode = pShip.GetNiObject()
 					pJumpgateNode = pJumpgate.GetNiObject()
@@ -574,16 +586,45 @@ def ConditionalAlignmentPlace(pAction, pShipID, chooseClosest=0, method="Entry",
 
 						# Second, translation: scale the forward by both ship's radius, adjusting the conversion from local to world (1 world = 100 local)
 
+						radCal = 0.9
 						intoCalc= 1.0
-						if pJumpgate.GetRadius() > 5 * pShip.GetRadius():
+						jumpRad = pJumpgate.GetRadius()
+						shipRad = pShip.GetRadius()
+						if jumpRad > 5 * shipRad:
 							intoCalc = 0.8
-						pointForwardLoc.Scale(100*((intoCalc*pJumpgate.GetRadius())+pShip.GetRadius()) + radiusAdder)
+
+						pointForwardLoc.Scale(100*((intoCalc*jumpRad)+shipRad) + radiusAdder)
 
 						pGPoint = App.TGModelUtils_LocalToWorldPoint(pJumpgateNode, pointForwardLoc)
 
 						pShip.SetTranslate(myNiPoint3ToTGPoint3(pGPoint))
 						pShip.UpdateNodeOnly()
 
+						if fTimeToFlash != None and myDependingTravelModule != None and method == "Entry":
+							try:
+								# Create the flash.
+								# Potential TO-DO maybe add a disable collisions check?
+								pFlashAction1 = App.TGScriptAction_Create(myDependingTravelModulePath, "B5JumpspaceFlash", pJumpgate.GetObjID(), "Enter Warp", sRace, 0.8)
+								if pFlashAction1:
+									pEngageWarpSeq = App.TGSequence_Create()
+									pEngageWarpSeq.AddAction(pFlashAction1, None, fTimeToFlash)
+									pEngageWarpSeq.Play()
+							except:
+								traceback.print_exc()
+
+
+				except:
+					traceback.print_exc()
+		else:
+			if fTimeToFlash != None and myDependingTravelModule != None and method == "Entry":
+				try:
+					# Create the flash.
+
+					pFlashAction1 = App.TGScriptAction_Create(myDependingTravelModulePath, "B5JumpspaceFlash", pShipID, "Enter Warp", sRace, rRadius)
+					if pFlashAction1:
+						pEngageWarpSeq = App.TGSequence_Create()
+						pEngageWarpSeq.AddAction(pFlashAction1, None, fTimeToFlash)
+						pEngageWarpSeq.Play()
 				except:
 					traceback.print_exc()
 					
@@ -660,8 +701,16 @@ def SetupSequence(self):
 		rRadius = 2/(pSRad+0.0001) * 5
 
 	iVelRel = 1.8 * 100 * myBoosting/(fEntryDelayTime+0.1)
+
+	if (pPlayer != None) and (pShipID == pPlayer.GetObjID()):
+		fEntryDelayTime = fEntryDelayTime + 0.1
+
+		pDisallowInput = App.TGScriptAction_Create("MissionLib", "RemoveControl")
+		pEngageWarpSeq.AddAction(pDisallowInput, None)
+
+	fTimeToFlash = fEntryDelayTime*0.5
 	
-	pProperAlignment1 = App.TGScriptAction_Create(__name__, "ConditionalAlignmentPlace", pShipID, 1, "Entry", iVelRel)
+	pProperAlignment1 = App.TGScriptAction_Create(__name__, "ConditionalAlignmentPlace", pShipID, 1, "Entry", iVelRel, rRadius, sRace, fEntryDelayTime * 0.6 + 0.2 + 0.7 + fTimeToFlash * 0.6)
 	pEngageWarpSeq.AddAction(pProperAlignment1, None)
 
 	if (pPlayer != None) and (pShipID == pPlayer.GetObjID()):
@@ -681,7 +730,7 @@ def SetupSequence(self):
 	pBoostAction = App.TGScriptAction_Create(sCustomActionsScript, "BoostShipSpeed", pShipID, 1, myBoosting)
 	pEngageWarpSeq.AddAction(pBoostAction, pProperAlignment1, fEntryDelayTime + 0.2 + 0.7)
 
-	fTimeToFlash = fEntryDelayTime*0.5
+	#fTimeToFlash = fEntryDelayTime*0.5
 	if pWS.Travel.bTractorStat == 1:
 		fCount = 0.0
 		while fCount < fTimeToFlash:
@@ -692,9 +741,9 @@ def SetupSequence(self):
 				break
 
 	# Create the warp flash.
-	if myDependingTravelModule != None:
-		pFlashAction1 = App.TGScriptAction_Create(myDependingTravelModulePath, "B5JumpspaceFlash", pShipID, "Enter Warp", sRace, rRadius)
-		pEngageWarpSeq.AddAction(pFlashAction1, pBoostAction, fTimeToFlash * 0.8)
+	#if myDependingTravelModule != None:
+	#	pFlashAction1 = App.TGScriptAction_Create(myDependingTravelModulePath, "B5JumpspaceFlash", pShipID, "Enter Warp", sRace, rRadius)
+	#	pEngageWarpSeq.AddAction(pFlashAction1, pBoostAction, fTimeToFlash * 0.8)
 
 	# Hide the ship.
 	pHideShip = App.TGScriptAction_Create(sCustomActionsScript, "HideShip", pShipID, 1)

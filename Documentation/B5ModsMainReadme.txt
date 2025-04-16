@@ -1,4 +1,7 @@
 ==Changelog==
+1.5.6 -
+   Fixes:
+   * Upgraded Jumpgate Travelling Method to 0.12, now the drifting bug is solved and the entry vortex will generate properly.
 1.5.5 -
    Fixes:
    * Removed leftover DS9FX configuration files.
