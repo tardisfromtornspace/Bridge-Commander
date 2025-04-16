@@ -1,4 +1,12 @@
 ==Changelog==
+1.5.3 -
+   Updates:
+   * Added a very simplistic Jumpgate TravellingMethod, done in a few hours. This one allows vessels close to a jumpgate to open a vortex to jumpspace and travel to another system with a jumpgate. Ships with regular jumpspace drive can also use the gates to travel to any system regardless of having a gate at the end. It uses GalaxyCharts too.
+   Fixes:
+   * Updated Jumpspace modules to fix a cloak no-check issue.
+   * Made Jumpspace ISI methods a bit more precise.
+   * Fixed that certain vessels could use warp (I thought I had fixed that years ago?)
+   * Made jumpgates visible from further ranges.
 1.5.2 -
    Fixes:
    * Updated Jumpspace modules to fix a cloak no-check issue.

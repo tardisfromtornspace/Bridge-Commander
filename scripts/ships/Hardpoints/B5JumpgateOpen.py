@@ -904,6 +904,34 @@ Vortex.SetRepairComplexity(7.500000)
 Vortex.SetDisabledPercentage(0.000000)
 Vortex.SetRadius(1.300000)
 App.g_kModelPropertyManager.RegisterLocalTemplate(Vortex)
+#################################################
+InsideVisibility1 = App.PositionOrientationProperty_Create("Inside Visibility 1")
+
+InsideVisibility1Forward = App.TGPoint3()
+InsideVisibility1Forward.SetXYZ(0.707378, 0.650504, -0.276516)
+InsideVisibility1Up = App.TGPoint3()
+InsideVisibility1Up.SetXYZ(-0.019565, 0.409071, 0.912293)
+InsideVisibility1Right = App.TGPoint3()
+InsideVisibility1Right.SetXYZ(0.706566, -0.639924, 0.302096)
+InsideVisibility1.SetOrientation(InsideVisibility1Forward, InsideVisibility1Up, InsideVisibility1Right)
+InsideVisibility1Position = App.TGPoint3()
+InsideVisibility1Position.SetXYZ(0.000000, -0.030744, 12.000000)
+InsideVisibility1.SetPosition(InsideVisibility1Position)
+App.g_kModelPropertyManager.RegisterLocalTemplate(InsideVisibility1)
+#################################################
+InsideVisibility2 = App.PositionOrientationProperty_Create("Inside Visibility 2")
+
+InsideVisibility2Forward = App.TGPoint3()
+InsideVisibility2Forward.SetXYZ(-0.153183, 0.980705, -0.121461)
+InsideVisibility2Up = App.TGPoint3()
+InsideVisibility2Up.SetXYZ(-0.141259, 0.099917, 0.984918)
+InsideVisibility2Right = App.TGPoint3()
+InsideVisibility2Right.SetXYZ(0.978050, 0.168028, 0.123230)
+InsideVisibility2.SetOrientation(InsideVisibility2Forward, InsideVisibility2Up, InsideVisibility2Right)
+InsideVisibility2Position = App.TGPoint3()
+InsideVisibility2Position.SetXYZ(-23.000000, -0.030744, 0.000000)
+InsideVisibility2.SetPosition(InsideVisibility2Position)
+App.g_kModelPropertyManager.RegisterLocalTemplate(InsideVisibility2)
 
 
 # Property load function.
@@ -1033,6 +1061,12 @@ def LoadPropertySet(pObj):
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
 	prop = App.g_kModelPropertyManager.FindByName("Engine Glow 4 ppp", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	if (prop != None):
+		pObj.AddToSet("Scene Root", prop)
+	prop = App.g_kModelPropertyManager.FindByName("Inside Visibility 1", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	if (prop != None):
+		pObj.AddToSet("Scene Root", prop)
+	prop = App.g_kModelPropertyManager.FindByName("Inside Visibility 2", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
 	prop = App.g_kModelPropertyManager.FindByName("Vortex Light", App.TGModelPropertyManager.LOCAL_TEMPLATES)

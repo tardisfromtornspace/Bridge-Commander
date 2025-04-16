@@ -15,4 +15,4 @@ class SetUseLogs:
 	Astrometrics = 0
 	GravGenerator = 0
 StationsAreAffected = 0
-ThrusterState = 0
+ThrusterState = 1

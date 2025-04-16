@@ -4,7 +4,7 @@
 # Babylon5Quantumspace.py
 # Based on the prototype custom travelling method plugin script, by USS Frontier (Enhanced Warp.py, original, template), and then modified by Alex SL Gato for B5Quantumspace.
 # This ship is a legal replacement to the illegal JumpspaceModule - use Babylon5Quantumspace instead.
-# 14th April 2025
+# 16th April 2025
 #################################################################################################################
 ##########	MANUAL
 #################################################################################################################
@@ -97,7 +97,7 @@ Foundation.ShipDef.EAOmega.dTechs = { # (#)
 #################################################################################################################
 #
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.23",
+	    "Version": "0.24",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -1415,6 +1415,14 @@ def SetupSequenceISI(pShip=None):
 	pHideShip = App.TGScriptAction_Create(sCustomActionsScript, "HideShip", pShipID, 1)
 	pExitWarpSeq.AddAction(pHideShip, None)
 
+	# Give it a little reverse boost (to avoid collisions)
+	pBoostAAction = App.TGScriptAction_Create(sCustomActionsScript, "BoostShipSpeed", pShipID, 1, -2 * myBoosting)
+	pExitWarpSeq.AddAction(pBoostAAction, pHideShip)
+
+	# Make the ship return to normal speed.
+	pUnBoostAAction = App.TGScriptAction_Create(sCustomActionsScript, "BoostShipSpeed", pShip.GetObjID(), -1, 1.0)
+	pExitWarpSeq.AddAction(pUnBoostAAction, pBoostAAction, 0.6)
+
 	# Extra added
 	pWarpActionR0 = App.TGScriptAction_Create(__name__, "ConditionalCloak", pShipID, 1)
 	pExitWarpSeq.AddAction(pWarpActionR0, None)
@@ -1462,7 +1470,7 @@ def SetupSequenceISI(pShip=None):
 	
 	# Make the ship return to normal speed.
 	pUnBoostAction = App.TGScriptAction_Create(sCustomActionsScript, "BoostShipSpeed", pShipID, 0, 1.0)
-	pExitWarpSeq.AddAction(pUnBoostAction, pWarpSoundAction2, 2.0)
+	pExitWarpSeq.AddAction(pUnBoostAction, pWarpSoundAction2, 1.0)
 
 	# IMPORTANT: These three actions below are an extra added for intra-system intercept since we need to ensure the cutscene really ends and control is returned to the player.
 	# This could be handled on the main AlternateSubModelFTL script but I'm leaving it here to allow better customization

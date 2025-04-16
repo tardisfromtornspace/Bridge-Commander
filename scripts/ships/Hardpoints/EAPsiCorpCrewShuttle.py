@@ -124,7 +124,7 @@ JumpSys.SetPrimary(1)
 JumpSys.SetPosition(0.000000, 0.000000, 0.000000)
 JumpSys.SetPosition2D(65.000000, 60.000000)
 JumpSys.SetRepairComplexity(1.000000)
-JumpSys.SetDisabledPercentage(0.500000)
+JumpSys.SetDisabledPercentage(1.500000)
 JumpSys.SetRadius(0.002500)
 JumpSys.SetNormalPowerPerSecond(0.500000)
 App.g_kModelPropertyManager.RegisterLocalTemplate(JumpSys)
@@ -208,7 +208,7 @@ kFiringChainString.SetString("")
 TractorSys.SetFiringChainString(kFiringChainString)
 App.g_kModelPropertyManager.RegisterLocalTemplate(TractorSys)
 #################################################
-GraplingClaw = App.TractorBeamProperty_Create("Grapling Claw")
+GraplingClaw = App.TractorBeamProperty_Create("Grappling Claw")
 
 GraplingClaw.SetMaxCondition(25.000000)
 GraplingClaw.SetCritical(0)
@@ -319,9 +319,6 @@ def LoadPropertySet(pObj):
 	prop = App.g_kModelPropertyManager.FindByName("Sub Light Sys", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
-	prop = App.g_kModelPropertyManager.FindByName("Jump Sys", App.TGModelPropertyManager.LOCAL_TEMPLATES)
-	if (prop != None):
-		pObj.AddToSet("Scene Root", prop)
 	prop = App.g_kModelPropertyManager.FindByName("Repair Sys", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
@@ -337,7 +334,7 @@ def LoadPropertySet(pObj):
 	prop = App.g_kModelPropertyManager.FindByName("Tractor Sys", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
-	prop = App.g_kModelPropertyManager.FindByName("Grapling Claw", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	prop = App.g_kModelPropertyManager.FindByName("Grappling Claw", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
 	prop = App.g_kModelPropertyManager.FindByName("Shuttle Bay 1", App.TGModelPropertyManager.LOCAL_TEMPLATES)

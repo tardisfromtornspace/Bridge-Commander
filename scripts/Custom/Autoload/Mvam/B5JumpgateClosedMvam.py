@@ -216,37 +216,32 @@ def CheckSeperate (pShip):
 	pSet = pShip.GetContainingSet()
 	pEnemies = pMission.GetEnemyGroup()
 	pFriendlies = pMission.GetFriendlyGroup()
-	snkAiRanSep = App.g_kSystemWrapper.GetRandomNumber(5)
+	snkAiRanSep = App.g_kSystemWrapper.GetRandomNumber(20)
 
 	#is the ship an enemy?
 	if (pEnemies.IsNameInGroup(pShip.GetName())):
-		#seperate if we're outnumbered 3 to 1
-		if ((pFriendlies.GetNumActiveObjects() >= (pEnemies.GetNumActiveObjects() * 3) or (pEnemies.GetNumActiveObjects() >= (pFriendlies.GetNumActiveObjects() * 3))) and (snkAiRanSep == 4)):
-			return 1
-		#seperate if we're targetting a HUGE ship (a la the Enterprise D vs. Borg). make sure the ai has a target
-		try:
-			if (pShip.GetTarget().GetRadius() > 20.0):
-				return 1
-		except:
-			DoNothing = 0
-		#seperate if 50% damaged
-		if ( (pShip.GetHull().GetConditionPercentage() <= 0.5) and (snkAiRanSep == 4)):
+		#seperate if we're outnumbered 6 to 1
+		if ((pFriendlies.GetNumActiveObjects() >= (pEnemies.GetNumActiveObjects() * 6) or (pEnemies.GetNumActiveObjects() >= (pFriendlies.GetNumActiveObjects() * 6))) and (snkAiRanSep == 4)):
 			return 1
 
 	#the ship is a friendly or neutral
 	else:
-		#seperate if we're outnumbered 3 to 1 or the  enemies are outnumbered 3 to 1
-		if ((pEnemies.GetNumActiveObjects() >= (pFriendlies.GetNumActiveObjects() * 3) or (pFriendlies.GetNumActiveObjects() >= (pEnemies.GetNumActiveObjects() * 3))) and (snkAiRanSep == 4)):
+		#seperate if we're outnumbered 7 to 1 or the  enemies are outnumbered 3 to 1 but more than 2
+		if ((pEnemies.GetNumActiveObjects() >= (pFriendlies.GetNumActiveObjects() * 7) or (pFriendlies.GetNumActiveObjects() > 2 and pFriendlies.GetNumActiveObjects() >= (pEnemies.GetNumActiveObjects() * 3))) and (snkAiRanSep == 4)):
 			return 1
-		#seperate if we're targetting a HUGE ship (a la the Enterprise D vs. Borg). make sure the ai has a target
-		try:
-			if (pShip.GetTarget().GetRadius() > 20.0):
-				return 1
-		except:
-			DoNothing = 0
-		#seperate if 50% damaged
-		if ( (pShip.GetHull().GetConditionPercentage() <= 0.5) and (snkAiRanSep == 4)):
+
+
+	#seperate if we're targetting a HUGE ship (a la the Enterprise D vs. Borg). make sure the ai has a target
+	try:
+		if (pShip.GetTarget() != None and pShip.GetTarget().GetRadius() > 20.0 and (snkAiRanSep == 5)):
 			return 1
+	except:
+		DoNothing = 0
+
+	#seperate if 50% damaged
+	if ( (pShip.GetHull().GetConditionPercentage() <= 0.5) and (snkAiRanSep == 4)):
+		return 1
+
 	return 0
 
 

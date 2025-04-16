@@ -40,8 +40,10 @@ credits = {
 Foundation.ShipDef.B5JumpgateClosed = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
 
 Foundation.ShipDef.B5JumpgateClosed.dTechs = {
-	"Tachyon Sensors": 2.2
+	"Tachyon Sensors": 2.2,
 }
+
+Foundation.ShipDef.B5JumpgateClosed.IsBabylon5WorkingJumpgate = 1
 #                                                                                     #
 #######################################################################################
 #                                                                                     #
