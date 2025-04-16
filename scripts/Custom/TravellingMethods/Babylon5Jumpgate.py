@@ -25,7 +25,7 @@ Foundation.ShipDef.B5JumpgateClosed.IsBabylon5WorkingJumpgate = 1
 #################################################################################################################
 #
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.1",
+	    "Version": "0.11",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -396,18 +396,16 @@ def CanTravel(self):
 						if works > -1:
 							break
 		if works == -1:
-			return "No jumpgates found on destination"
 			if myDependingTravelModule == None or not myDependingTravelModule.IsShipEquipped(pShip):
 				return "No jumpgates found on destination"
 			else:
 				withAnotherDrive = myDependingTravelModule.CanTravel(self)
 				if withAnotherDrive != 1 and withAnotherDrive != "Inside Starbase12":
-					return "Our backup use of jumpspace drive would fail, engineers tell us: "
+					return "Our backup use of jumpspace drive would fail, engineers tell us: " + str(withAnotherDrive)
 
-	if works > -1:
-		return 1
-	else:
-		return "Cannot travel"						
+
+	return 1
+					
 
 ########
 # Method to check if the ship can continue travelling (she's travelling, yeah)

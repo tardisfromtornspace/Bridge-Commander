@@ -1,4 +1,7 @@
 ==Changelog==
+1.5.4 -
+   Fixes:
+   * Updated Jumpgate TravellingMethod to 0.11 fixing an issue with determining if the ship could travel to a non-gate system.
 1.5.3 -
    Updates:
    * Added a very simplistic Jumpgate TravellingMethod, done in a few hours. This one allows vessels close to a jumpgate to open a vortex to jumpspace and travel to another system with a jumpgate. Ships with regular jumpspace drive can also use the gates to travel to any system regardless of having a gate at the end. It uses GalaxyCharts too.
