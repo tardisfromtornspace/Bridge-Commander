@@ -1,4 +1,7 @@
 ==Changelog==
+1.5.5 -
+   Fixes:
+   * Removed leftover DS9FX configuration files.
 1.5.4 -
    Fixes:
    * Updated Jumpgate TravellingMethod to 0.11 fixing an issue with determining if the ship could travel to a non-gate system.
