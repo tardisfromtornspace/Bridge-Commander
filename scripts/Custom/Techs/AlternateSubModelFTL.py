@@ -1,9 +1,9 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL, FOR THOSE SECTIONS THAT DO NOT FALL UNDER ANY OTHER LICENSE (See explanation below)
 # AlternateSubModelFTL.py
-# 12th April 2025, by Alex SL Gato (CharaToLoki)
-#         Based on Defiant's SubModels script (from which it inherited classes and methods and was a dependency once, but now uses independent updated classes and methods) and BorgAdaptation.py by Alex SL Gato, which were based on the Foundation import function by Dasher
-#         Also based on ATPFunctions by Apollo and slightly on DS9FXPulsarManager by USS Sovereign.
+# 17th April 2025, by Alex SL Gato (CharaToLoki)
+#         Based on Defiant's SubModels script implementation (from which it inherited classes and methods and was a dependency once, but now uses independent updated classes and methods) and BorgAdaptation.py by Alex SL Gato, which were based on the Foundation import function by Dasher
+#         Also based on ATPFunctions by Apollo and slightly on DS9FXPulsarManager style by USS Sovereign.
 #         Also some sections based on the Slipstream module by Mario aka USS Sovereign, modified by Alex SL Gato with permission from Mario to adapt part of his code to this script ONLY as long as it is meant for KM, and that he can and will take action otherwise (see Documentation/USSSovereignStanceAboutModifyingorRepackagingSlipstream.PNG).
 # IMPORTANT NOTE:
 #  - All sections based on USS Sovereign's Slipstream module fall under the All Rights Reserved section, by USS Sovereign. Those sections are left clear with two text banners, from "BEGINNING OF USS SOVEREIGN'S LIMITED PERMISSION AREA" to "END OF USS SOVEREIGN'S LIMITED PERMISSION AREA". Do not modify or repackage those sections of the mod without extreme permission from the authors:
@@ -30,7 +30,7 @@
 # For clarity, we will use the symbols:
 # - "(*)"                - to determine something which is arbitrary to the TravellingMethods FTL sub-tech.
 # - "(-)"                - to something that is optional but necessary to perform the function they indicate, or not globally necessary but still needed for a set of functions.
-# - "(0)"                - to something that is optional but does nothing else that add a nice touch, since no other functions would be affected if they were skipped, for the most part.
+# - "(0)"                - to something that is optional but does nothing else that adds a nice touch, since no other functions would be affected if they were skipped, for the most part.
 # - "(#)"                - something that is always needed, or may always be needed if you need any figment of functionality outside of calling a literal empty version of the function.
 # - "<insert_name_here>" - basically a generalization example for any other TravellingMethod. On this case in particular, <insert_name_here> = "Proto-Warp". Unless told otherwise, this generalization implies you can have as many of that field as you want, as long as <insert_name_here> is different for each one, allowing multiple TravellingMethods subModels support.
 # - "c.s."               - "case-sensitive". That is, it will notice it is different if you type like this, LIKE THIS, LiKe ThIs and so on.
@@ -60,6 +60,9 @@
 # --------- On this case, each dictionary entry would be "Subsystem name" : [x, y, z]
 # -- (0) "<insert_name_here>Hardpoints": a dictionary which stores inside all subsystem property names in <k:v> format which would move after a transformation, regarding <insert_name_here> positions.
 # --------- On this case, each dictionary entry would be "Subsystem name" : [x, y, z]
+# -- (0) "<insert_name_here>IgnoreCall": a dictionary entry which stores inside a value that determines if a ship complies (0) or ignores (1 or greater) certain event calls for when a ship uses <insert_name_here>.
+# --------- The objective of this parameter is to help cover strange cases, where an FTL TravellingMethod with AlternateSubModels support not constrained by the template (and excluding regular Warp) is used by a vessel which can perform such travelling method, but you don't want that vessel to even swap between models nor attach/detach non-main-body-pieces.
+# --------- If <insert_name_here> = "Attack" or "<insert_name_here>" = "", it will apply for Attack and Normal states when switching between alerts, albeit that is not the objective of this parameter and for that case it would be better to just not add attack rotation nor attack positions to non-main body pieces.
 # (-) After that, there's a section for each non-main-body piece, in <k:v> format, with "k" being the inner name the piece will receive, and v a list of structure: ["A", D]
 # --------- (#) "A" is the first value of the list, it is the ship model used for that particular piece during any transformation. <s-s> c.s.
 # --------- (-) "D" is a dictionary containing positions, rotations and miscelllaneous information for each situation. c.s.
@@ -1504,8 +1507,8 @@ def GetEngageDirectionC(mySelf, pPlayerID = None):
 #################################################################################################################
 #
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.85",
-	    "License": "LGPL",
+	    "Version": "0.86",
+	    "License": "All Rights Reserved (USS Sovereign sections), LGPL (everywhere else)",
 	    "Description": "Read the small title above for more info"
 	    }
 #
@@ -3610,18 +3613,38 @@ def SubsystemStateProtoChanged(pObject, pEvent, techP = oProtoWarp):
 	return 0 
 
 # Prepares a ship to move: Replaces the current Model with the move Model and attaches its sub Models
-def PrepareShipForProtoMove(pShip, pInstance, techType=oProtoWarp):
+def PrepareShipForProtoMove(pShip, pInstance, techType=oProtoWarp, move=oProtoWarp.MySubPositionPointer()):
 	debug(__name__ + ", PrepareShipForProtoMove")
+	pInstanceDict = None
+	pIdictTech = None
+	techName = techType.MySystemPointer()
+
+	if pInstance != None:
+		pInstanceDict = pInstance.__dict__
+	else:
+		return 1
+
+	if pInstanceDict != None and pInstanceDict.has_key(techName):
+		pIdictTech = pInstanceDict[techName]
+	else:
+		return 1
+
+	sToIgnore = str(move) + "IgnoreCall"
+
+	if pIdictTech == None or (pIdictTech["Setup"].has_key(sToIgnore) and pIdictTech["Setup"][sToIgnore] == 1):
+		return 1
+
 	if not techType.ArePartsAttached(pShip, pInstance):
-		techName = techType.MySystemPointer()
-		if pInstance.__dict__[techName]["Setup"].has_key("Body"):
-			ReplaceModel(pShip, pInstance.__dict__[techName]["Setup"]["Body"])
+		if pIdictTech["Setup"].has_key("Body"): 
+			ReplaceModel(pShip, pIdictTech["Setup"]["Body"])
 		if not hasattr(pInstance, "HasExperimentalRotationParts") or pInstance.HasExperimentalRotationParts <= 0:
 			ReplaceModelBlackLightsFix(pShip)
+
 		techType.AttachParts(pShip, pInstance)
+
 		scaleFactor = 1.0
-		if pInstance.__dict__[techName]["Setup"].has_key("BodySetScale") and pInstance.__dict__[techName]["Setup"]["BodySetScale"] != 0.0:
-			scaleFactor = pInstance.__dict__[techName]["Setup"]["BodySetScale"]
+		if pIdictTech["Setup"].has_key("BodySetScale") and pIdictTech["Setup"]["BodySetScale"] != 0.0:
+			scaleFactor = pIdictTech["Setup"]["BodySetScale"]
 		pShip.SetScale(scaleFactor)
 
 	checkingReCloak(pShip)
@@ -3912,6 +3935,9 @@ def PartsForWeaponProtoState(pShip, techP):
 		return 0
 	
 	pInstance = findShipInstance(pShip)
+	if pInstance == None or not pInstance.__dict__.has_key(techP.MySystemPointer()):
+		return 0
+
 	iType = pShip.GetAlertLevel()
 	iLongestTime = 0.0
 	iGracePeriodTime = 2.0
@@ -3934,11 +3960,17 @@ def PartsForWeaponProtoState(pShip, techP):
 		return 0
 	# update alert state
 	dGenShipDict["AlertLevel"] = iType
-	IncCurrentMoveIDUpdated(pShip, pInstance)
-	thisMoveCurrentID = GetCurrentMoveIDUpdated(pShip, pInstance)
+
 
 	# start with replacing the Models
-	PrepareShipForProtoMove(pShip, pInstance, techP)
+	myTransStr = ""
+	if iType == 2:
+		myTransStr = "Attack"
+	shouldStop = PrepareShipForProtoMove(pShip, pInstance, techP, myTransStr)
+	if shouldStop == 1:
+		return 0
+	IncCurrentMoveIDUpdated(pShip, pInstance)
+	thisMoveCurrentID = GetCurrentMoveIDUpdated(pShip, pInstance)
 	
 	# iterate over every submodel
 	for item in pInstance.AlternateFTLSubModelOptionsList:
@@ -3995,7 +4027,7 @@ def PartsForWeaponProtoState(pShip, techP):
 			print "AlternateSubModelFTL: oMovingEventUpdated found an issue while initializing - skipping"
 			continue
 
-		pSeq = App.TGSequence_Create()
+		pSeq = None
 		
 		# do the move
 		
@@ -4006,6 +4038,8 @@ def PartsForWeaponProtoState(pShip, techP):
 				iWait = 0.01 # normal step
 			theScriptToPerform = App.TGScriptAction_Create(__name__, "MovingActionUpdated", oMovingEventUpdated)
 			if theScriptToPerform != None:
+				if pSeq == None:
+					pSeq = App.TGSequence_Create()
 				pSeq.AppendAction(theScriptToPerform, iWait)
 			else:
 				print "AlternateSubModelFTL: failed to create script action for PartsForWeaponProtoState ", iTimeNeededTotal, iTime, iWait
@@ -4014,6 +4048,8 @@ def PartsForWeaponProtoState(pShip, techP):
 
 		finalLocalScriptAct = App.TGScriptAction_Create(__name__, "UpdateStateProto", pShip, item, lStoppingRotation, lStoppingTranslation, thisMoveCurrentID)
 		if finalLocalScriptAct:
+			if pSeq == None:
+				pSeq = App.TGSequence_Create()
 			pSeq.AppendAction(finalLocalScriptAct, 0.01)
 			pSeq.Play()
 		else:
@@ -4033,6 +4069,7 @@ def PartsForWeaponProtoState(pShip, techP):
 	pSeq = App.TGSequence_Create()
 	pSeq.AppendAction(App.TGScriptAction_Create(__name__, "JointAlertMoveFinishProtoAction", pShip, pInstance, dHardpoints, thisMoveCurrentID), iLongestTime + iGracePeriodTime + 0.01)
 	pSeq.Play()
+	return 0
 
 
 # Set the parts for Warp state
@@ -4087,20 +4124,26 @@ def StartingWarpCommon(pObject, pEvent, techP, subPosition="Warp"):
 				#pObject.CallNextHandler(pEvent)
 				return 0	
 		else: # Any other FTL method, we have priority!!!
-			if pInstanceDict["Warp Overriden"] <= 0:
+			techName = techP.MySystemPointer()
+			if pInstanceDict["Warp Overriden"] <= 0 and not pInstanceDict.has_key(techName) and not pInstanceDict[techName].has_key(str(subPosition) + "IgnoreCall"):
 				pInstanceDict["Warp Overriden"] = 1
 
-	if not pInstanceDict or not pInstanceDict.has_key("Alternate-Warp-FTL"):
-		return 0	
+	if not pInstanceDict or not pInstanceDict.has_key(techP.MySystemPointer()):
+		return 0
 
 	iLongestTime = 0.0
 	iGracePeriodTime = 2.0
-	IncCurrentMoveIDUpdated(pShip, pInstance)
-	thisMoveCurrentID = GetCurrentMoveIDUpdated(pShip, pInstance)
+
 	dHardpoints = {}
 
-	# first replace the Models
-	PrepareShipForProtoMove(pShip, pInstance, techP)
+	# start with replacing the Models
+	shouldStop = PrepareShipForProtoMove(pShip, pInstance, techP, str(subPosition))
+	if shouldStop == 1:
+		return 0
+
+	IncCurrentMoveIDUpdated(pShip, pInstance)
+	thisMoveCurrentID = GetCurrentMoveIDUpdated(pShip, pInstance)
+
 	subPositionHardpoints = str(subPosition) + "Hardpoints"
 	subPositionDuration = str(subPosition) + "Duration"
 	subPositionRotation = str(subPosition) + "Rotation"
@@ -4215,17 +4258,23 @@ def ExitingProtoWarp(pAction, pShip, techP, subPosition):
 
 	pInstanceDict = pInstance.__dict__
 
-	if not pInstanceDict or not pInstanceDict.has_key("Alternate-Warp-FTL"):
+	if not pInstanceDict or not pInstanceDict.has_key(techP.MySystemPointer()): 
 		return 0
 
 	iLongestTime = 0.0
 	iGracePeriodTime = 2.0
-	IncCurrentMoveIDUpdated(pShip, pInstance)
-	thisMoveCurrentID = GetCurrentMoveIDUpdated(pShip, pInstance)
+
 	dHardpoints = {}
 	
 	# first replace the Models
-	PrepareShipForProtoMove(pShip, pInstance, techP)
+	shouldStop = PrepareShipForProtoMove(pShip, pInstance, techP, str(subPosition))
+	if shouldStop == 1:
+		return 0
+
+
+	IncCurrentMoveIDUpdated(pShip, pInstance)
+	thisMoveCurrentID = GetCurrentMoveIDUpdated(pShip, pInstance)
+
 	subPositionHardpoints = str(subPosition) + "Hardpoints"
 	subPositionDuration = str(subPosition) + "Duration"
 	subPositionRotation = str(subPosition) + "Rotation"

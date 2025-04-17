@@ -1,4 +1,6 @@
 == Changelog ==
+0.6.3 - Updates:
+  * Updated AlternateSubModelsFTL to 0.86 to support new "IgnoreCall" parameter and to clarify documentation better.
 0.6.2 - Updates:
   * Since I found out how to make GalaxyCahrts use a different set for different travel types, added a Mycelial Network TravelerSystem to GalaxyCharts and updated SporeDrive to 0.5 to reflect this.
 0.6.1 - Fixes:

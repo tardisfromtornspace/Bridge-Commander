@@ -24,12 +24,15 @@ Foundation.ShipDef.Andromeda.dTechs = {
 	'Simulated Point Defence' : { "Distance": 120.0, "InnerDistance": 15.0, "Effectiveness": 0.8, "LimitTurn": 5.0, "LimitSpeed": 300, "Period": 0.2, "MaxNumberTorps": 12, "Torpedo": {"Priority": 1}},
 	'Fed Ablative Armor': { "Plates": ["Armour"]
 },
+#'Alternate-Warp-FTL': {
 'SubModel': {
         "Setup":        {
                 "Body":                 shipFile,
                 "NormalModel":          shipFile,
-                "WarpModel":            shipFile,
+                #"WarpModel":            shipFile,
                 "AttackModel":          "AndromedaBattleForm",
+		"WarpIgnoreCall": 1,
+		"SlipstreamIgnoreCall": 1,
                 "Hardpoints":       {
                         "Battle Blades 1":  [-1.700000, 0.950000, 0.950000],
                         "Battle Blades 2":  [1.700000, 0.950000, 0.950000],
@@ -46,9 +49,9 @@ Foundation.ShipDef.Andromeda.dTechs = {
                 "AttackRotation":         [0, 0.1, -0.4],
                 "AttackDuration":         150.0, # Value 200 is 1/100 of a second
                 "AttackPosition":         [0, 0, 0.0],
-                "WarpRotation":       [0, 0, 0],
-                "WarpPosition":       [0, 0, 0],
-                "WarpDuration":       150.0,
+                #"WarpRotation":       [0, 0, 0],
+                #"WarpPosition":       [0, 0, 0],
+                #"WarpDuration":       150.0,
                 }
         ],
         
@@ -58,9 +61,9 @@ Foundation.ShipDef.Andromeda.dTechs = {
                 "AttackRotation":         [0, -0.1, 0.4],
                 "AttackDuration":         150.0, # Value is 1/100 of a second
                 "AttackPosition":         [0, 0, 0.0],
-                "WarpRotation":       [0, 0, 0],
-                "WarpPosition":       [0, 0, 0],
-                "WarpDuration":       150.0,
+                #"WarpRotation":       [0, 0, 0],
+                #"WarpPosition":       [0, 0, 0],
+                #"WarpDuration":       150.0,
                 }
         ],
 
@@ -70,9 +73,9 @@ Foundation.ShipDef.Andromeda.dTechs = {
                 "AttackRotation":         [0, -0.1, 0.2],
                 "AttackDuration":         150.0, # Value 200 is 1/100 of a second
                 "AttackPosition":         [-3, 1, 0.0],
-                "WarpRotation":       [0, 0, 0],
-                "WarpPosition":       [-3, 1, 0.0],
-                "WarpDuration":       150.0,
+                #"WarpRotation":       [0, 0, 0],
+                #"WarpPosition":       [-3, 1, 0.0],
+                #"WarpDuration":       150.0,
                 }
         ],
 
@@ -82,9 +85,9 @@ Foundation.ShipDef.Andromeda.dTechs = {
                 "AttackRotation":         [0, 0.1, -0.2],
                 "AttackDuration":         150.0, # Value is 1/100 of a second
                 "AttackPosition":         [3, 1, 0.0],
-                "WarpRotation":       [0, 0, 0],
-                "WarpPosition":       [3, 1, 0.0],
-                "WarpDuration":       150.0,
+                #"WarpRotation":       [0, 0, 0],
+                #"WarpPosition":       [3, 1, 0.0],
+                #"WarpDuration":       150.0,
                 }
         ],
 }
