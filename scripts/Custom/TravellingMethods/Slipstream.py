@@ -1,8 +1,9 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
-# THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
-# GC is ALL Rights Reserved by USS Frontier, but since GC supports Plugins it is fair to release a new TravellingMethod or patch old ones as long as the files remain unmodified.
 # Slipstream.py
+# GC is ALL Rights Reserved by USS Frontier, but since GC supports Plugins it is fair to release a new TravellingMethod or patch old ones as long as the files remain unmodified.
 # Based on the prototype custom travelling method plugin script, by USS Frontier (Normal Warp.py, original, template), original incomplete version made by BCXtreme (https://www.gamefront.com/games/bridge-commander/file/slipstream-for-galaxy-charts) and finished by Alex SL Gato.
+# This plugin was originally released without a license, which means it defaults to All Rights Reserved. While the original readme includes the line "As far as I am concerned, anyone can take this and finish it if they want to," that grants permission to continue development — but not to relicense or attach a license such as LGPL. The absence of an explicit license means the work cannot be treated as open source.
+# Slipstream Module remains ALL RIGHTS RESERVED, by USS Sovereign.
 # Please note that this file requires:
 # - USS Sovereign's Slipstream Module, as the purpose of the original mod was to provide exactly that.
 # - All assets from the incomplete original from https://www.gamefront.com/games/bridge-commander/file/slipstream-for-galaxy-charts, except scripts/Custom/TravellingMethods/Slipstream.py.new (so, basically the files at scripts/Custom/GalaxyCharts)
@@ -10,9 +11,11 @@
 #################################################################################################################
 ##########	MANUAL
 #################################################################################################################
-# This mod provides Slipstream functionality for GalaxyCharts, finishing the work done by BCXtreme so sounds and flashes work properly and speeds are adjusted. To make a ship use Slipstream, follow USS Sovereign's instructions on how to add his own Slipstream, which basically consists on adding any hardpoint called "Slipstream Drive " followed by a number from 1 to 20. Slipstream intercept is still handled by Sovereign's Slipstream Module, so do not expect a non-player to use it.
-# NOTE: all functions/methods and attributes defined here (in this prototype example plugin, Babylon5Jumpgate) are required to be in the plugin, with the exception of:
-# -Auxiliar attributes: "myDependingTravelModule", "myDependingTravelModuleLib", "myDependingTravelModuleLibPath", "myDependingTravelModulePath", "myGlobalpSet", "pSlipstreamEngineSound"
+# This mod provides Slipstream functionality for GalaxyCharts for ships that could use SlipstreamModule, finishing the work done by BCXtreme so sounds and flashes work properly, AI-only slipstream set is different from player-and-AI set, and speeds are adjusted so AI vessels can use Slipstream.
+
+# To make a ship use Slipstream, follow USS Sovereign's instructions on how to add his own Slipstream, which basically consists on adding any hardpoint called "Slipstream Drive " followed by a number from 1 to 20. Slipstream intercept is still handled by Sovereign's Slipstream Module, so do not expect a non-player to use it.
+# NOTE: all functions/methods and attributes defined here (in this prototype example plugin, Slipstream) are required to be in the plugin, with the exception of:
+# -Auxiliar attributes: "myDependingTravelModule", "myDependingTravelModuleLib", "myDependingTravelModuleLibPath", "myDependingTravelModulePath", "myGlobalAISet", "myGlobalpSet", "pSlipstreamEngineSound"
 # -Auxiliar functions: "AnObjectDying", "defineTravelSpaceNoise", "GetWellShipFromID", "SlipstreamFlash" and "WatchPlayerShipLeave".
 # -Auxiliar classes: "WhyMissionLibGetsError" and its instance "basicListener"
 # Additionally, "GetTravelSetToUse" was modified slightly from the template's original, so as to provide a way for possible extra scripts (i.e. some slipstream Hub jump network, if that is possible) to work easier.
@@ -22,9 +25,9 @@
 #################################################################################################################
 #################################################################################################################
 #
-MODINFO = { "Author": "\"BCXtreme\" (original), \"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.12",
-	    "License": "LGPL",
+MODINFO = { "Author": "\"BCXtreme\" (original), \"Alex SL Gato\" andromedavirgoa@gmail.com (fixes), \"USS Sovereign\" (Slipstream Module)",
+	    "Version": "0.13",
+	    "License": "All Rights Reserved, by BCXtreme",
 	    "Description": "Read the small title above for more info"
 	    }
 #
@@ -447,6 +450,7 @@ def PreExitStuff(self):
 
 # Some auxiliar global variables to allow set change and better sounds
 myGlobalpSet = None
+myGlobalAISet = None
 pSlipstreamEngineSound = None
 
 # An aux. function.
@@ -897,15 +901,21 @@ def GetExitedTravelEvents(self): # No need for ISI, Slipstream module takes care
 # NOTE: for the moment, this is probably the best way to make if ships can, or can not, be chased while warping.
 ########
 def GetTravelSetToUse(self, manual = 0):
-	global myGlobalpSet
+	global myGlobalpSet, myGlobalAISet
 	try:
 		import Custom.GalaxyCharts.Traveler
 		import Custom.GalaxyCharts.TravelerSystems.SlipstreamTravel
+		import Custom.GalaxyCharts.TravelerSystems.AISlipstreamTravel
 		pSet = None
-		if manual == 1:
-			if myGlobalpSet == None:
-				myGlobalpSet = Custom.GalaxyCharts.TravelerSystems.SlipstreamTravel.Initialize()
-			return myGlobalpSet
+		if manual != 0:
+			if manual == 1:
+				if myGlobalpSet == None:
+					myGlobalpSet = Custom.GalaxyCharts.TravelerSystems.SlipstreamTravel.Initialize()
+				return myGlobalpSet
+			else:
+				if myGlobalAISet == None:
+					myGlobalAISet = Custom.GalaxyCharts.TravelerSystems.AISlipstreamTravel.Initialize()
+				return myGlobalAISet
 		if self.IsPlayer == 1:
 			if myGlobalpSet == None:
 				myGlobalpSet = Custom.GalaxyCharts.TravelerSystems.SlipstreamTravel.Initialize()
@@ -915,12 +925,12 @@ def GetTravelSetToUse(self, manual = 0):
 				myGlobalpSet = Custom.GalaxyCharts.TravelerSystems.SlipstreamTravel.Initialize()
 			pSet = myGlobalpSet
 		elif self.IsPlayer == 0 and self.IsAIinPlayerRoute == 0:
-			if myGlobalpSet == None:
-				myGlobalpSet = Custom.GalaxyCharts.TravelerSystems.SlipstreamTravel.Initialize()
-			pSet = myGlobalpSet
+			if myGlobalAISet == None:
+				myGlobalAISet = Custom.GalaxyCharts.TravelerSystems.SlipstreamTravel.Initialize()
+			pSet = myGlobalAISet
 		return pSet
 	except:
-		print "Erro on ", __name__, "GetTravelSetToUse. Please read the in-file documentation for possible ways to fix it."
+		print "Error on ", __name__, "GetTravelSetToUse. Please read the in-file documentation for possible ways to fix it."
 		traceback.print_exc()
 		self._LogError("GetTravelSetToUse")
 
