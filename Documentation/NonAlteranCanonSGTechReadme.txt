@@ -1,4 +1,6 @@
 == Changelog ==
+1.1.16 - tweak updates:
+   * Reinforced Ori Warship shield gimmick.
 1.1.15 - fixes:
    * Fixed transport nukes with a patch.
 1.1.14 - fixes:
