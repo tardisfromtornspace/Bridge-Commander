@@ -2,9 +2,9 @@
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL, FOR THOSE SECTIONS THAT DO NOT FALL UNDER ANY OTHER LICENSE (See explanation below)
 # AlternateSubModelFTL.py
 # 17th April 2025, by Alex SL Gato (CharaToLoki)
-#         Based on Defiant's SubModels script implementation (from which it inherited classes and methods and was a dependency once, but now uses independent updated classes and methods) and BorgAdaptation.py by Alex SL Gato, which were based on the Foundation import function by Dasher
-#         Also based on ATPFunctions by Apollo and slightly on DS9FXPulsarManager style by USS Sovereign.
-#         Also some sections based on the Slipstream module by Mario aka USS Sovereign, modified by Alex SL Gato with permission from Mario to adapt part of his code to this script ONLY as long as it is meant for KM, and that he can and will take action otherwise (see Documentation/USSSovereignStanceAboutModifyingorRepackagingSlipstream.PNG).
+#         Based on Defiant's SubModels script logic and BorgAdaptation.py by Alex SL Gato, which were based on the Foundation import function by Dasher
+#         Also based slightly on ATPFunctions (by Apollo) and DS9FXPulsarManager style (by USS Sovereign).
+#         Also some sections based and copied from the Slipstream module by Mario aka USS Sovereign, modified by Alex SL Gato with Mario's permission to adapt part of his code to this script ONLY as long as it is meant for KM, and that he can and will take action otherwise (see Documentation/USSSovereignStanceAboutModifyingorRepackagingSlipstream.PNG).
 # IMPORTANT NOTE:
 #  - All sections based on USS Sovereign's Slipstream module fall under the All Rights Reserved section, by USS Sovereign. Those sections are left clear with two text banners, from "BEGINNING OF USS SOVEREIGN'S LIMITED PERMISSION AREA" to "END OF USS SOVEREIGN'S LIMITED PERMISSION AREA". Do not modify or repackage those sections of the mod without extreme permission from the authors:
 #  ---- USS Sovereign condition: that this mod is intended to be released for KM and not for REP, RE nor REM-related mods (see Documentation/USSSovereignStanceAboutModifyingorRepackagingSlipstream.PNG).
@@ -19,7 +19,7 @@
 # === INTRODUCTION ===
 # The purpose of this plugin is to provide extended globalized actions for alternate TravellingMethods, providing them with the option to modify the model, like SubModels, but a bit less "broken"; as well as supporting SubModels Warp and Attack support, and a limited intra-system-intercept for each of those methods.
 # NOTE: This will not affect pre-existing TravellingMethods, a ship could have those and not use this tech at all.
-# INFO: While originally this script had two classes "ProtoWarp" and "MovingEventUpdated" which inherited from Defiant's SubModels "SubModel" and "MovingEvent" classes, and also used certain functions from that script, current version doesn't, so no issues should arise from combining both on the same ship. However, due to this script being a better replacement, it is suggested to just use AlternateSubmodelFTL instead.
+# INFO: While originally this script had two classes "ProtoWarp" and "MovingEventUpdated" which inherited from Defiant's SubModels "SubModel" and "MovingEvent" classes, and also used certain functions from that script, current version doesn't, so no issues should arise from combining both on the same ship. However, due to this script's mechanisms, it is suggested to just use AlternateSubmodelFTL instead. Please note that due to one of this script's roles being to also cover SubModel's functionality without modders needing to also change the scripts/Custom/Ships fine-tuned positions and rotations, some functionalities present similarities with SubModel ones.
 # ATTENTION: The script is dependant on scripts/Custom/TravellingMethods and on GalaxyCharts to verify sub-technology and FTL availability. With those options turned off, the usefulness of this script is reduced to a cleaner customizable SubModels.
 # ATTENTION: The script is also dependant on ftb.Tech.ATPFunctions
 # === HOW-TO-USE a pre-existing FTL TravellingMethods that supports this tech ===
