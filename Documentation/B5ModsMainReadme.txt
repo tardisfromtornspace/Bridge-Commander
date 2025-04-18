@@ -1,4 +1,7 @@
 ==Changelog==
+1.5.8 -
+   Fixes:
+   * Removed dependency code from Babylon 5 Uniforms (except newer parts), since it was pretty much downloaded from the dependency.
 1.5.7 -
    Fixes:
    * Upgraded Jumpgate Travelling Method so now the vortex is synced properly.
@@ -250,6 +253,7 @@ Additionally around 60+ ships from the Babylon 5 franchise have been added***
   - B5 Warlock and Victory: DamoclesX and Durandal.
   - Shadow Battlecrab: Sci-Fi DreamYards, Cpt. LC Amaral, Maverick, Executioner_de
   - Sentri Fighter (no hardpoints): Wok and Bravo Int.
+  - Babylon 5 Uniforms by Houliganisle, Crazyhid and MLeo. 
 
 Fulfilling both the SDK and LGPL licenses:
 THIS MOD IS NOT SUPPORTED BY ACTIVISION
@@ -259,16 +263,22 @@ This mod falls under the GNU LESSER GENERAL PUBLIC LICENSE Version 3, 29 June 20
 ===Mods required===
 You'll of course need Foundation, Nanofx2, Submenu v 3.0, QBAutostart and Kobayashi Maru mod, the latest version the better. GalaxyCharts is also required, probably the GalaxyCharts Warp AI fix as well.
 
-All the mods on https://www.gamefront.com/games/bridge-commander/category/babylon5 mentioned above, on reverse order (NONE of the ones called "Remastered") would be probably required (albeit at the time I downloaded the mods from NexusMods so the content may have been different), **but** some of them conflicted with each other due to Caps issue (i.e. EAOmega - eaomega), certain shuttle quirks and BCMMods affected certain filenames and inner files, which back when I was a newbie took me 3 years to fix, made that unadvisable. Additionally some are still missing from gamefront.
+All the mods on https://www.gamefront.com/games/bridge-commander/category/babylon5 mentioned above, on reverse order (NONE of the ones called "Remastered") would be probably required (albeit at the time I downloaded the mods from NexusMods so the content may have been different), **but** some of them conflicted with each other due to Caps issue (i.e. EAOmega - eaomega), certain shuttle quirks and BCMMods affected certain filenames and inner files, which back when I was a newbie took me 3 years to fix, made that unadvisable.
+
+Also this one, Babylon 5 uniforms https://www.gamefront.com/games/bridge-commander/file/babylon-5-uniforms, but only some elements
 
 ===Installation Guide===
 1º Ok, first of all, just in case, backup your STBC.
 
-2º After that, just unzip the files into your STBC folder, say "yes" to overwrite all the files.
+2º Install the Babylon 5 Uniforms mod from https://www.gamefront.com/games/bridge-commander/file/babylon-5-uniforms on a temporary folder, then go to TEMPFOLDER/scripts/Custom/Autoload and remove the file "Tmp crew".
 
-3º After opening your STBC go to the options -> Customize -> Mutators and make sure that "USS Frontier's Galaxy Charts"/"Galaxy Charts" are active.
+3º Unzip the files from this main mod onto the temporary folder created in 2, say "yes" to overwrite all files.
 
-4º It's strongly recommended to activate DS9FX so No Damage through Shields is active, but it's not necessary.
+4º After that, just move the files from the temp folder into your STBC root folder, say "yes" to overwrite all the files (data -> data, scripts -> scripts, sfx -> sfx, and so on).
+
+5º After opening your STBC go to the options -> Customize -> Mutators and make sure that "USS Frontier's Galaxy Charts"/"Galaxy Charts" are active. Optionally, make sure "Babylon 5 Uniforms" is also active.
+
+6º It's strongly recommended to activate DS9FX so No Damage through Shields is active, but it's not necessary.
 
 --- Why those mutators/configurations are important ---
 
