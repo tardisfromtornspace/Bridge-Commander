@@ -7,7 +7,7 @@
 # Please note that this file requires:
 # - USS Sovereign's Slipstream Module, as the purpose of the original mod was to provide exactly that.
 # - All assets from the incomplete original from https://www.gamefront.com/games/bridge-commander/file/slipstream-for-galaxy-charts, except scripts/Custom/TravellingMethods/Slipstream.py.new (so, basically the files at scripts/Custom/GalaxyCharts)
-# 17th April 2025
+# 18th April 2025
 #################################################################################################################
 ##########	MANUAL
 #################################################################################################################
@@ -15,8 +15,8 @@
 
 # To make a ship use Slipstream, follow USS Sovereign's instructions on how to add his own Slipstream, which basically consists on adding any hardpoint called "Slipstream Drive " followed by a number from 1 to 20. Slipstream intercept is still handled by Sovereign's Slipstream Module, so do not expect a non-player to use it.
 # NOTE: all functions/methods and attributes defined here (in this prototype example plugin, Slipstream) are required to be in the plugin, with the exception of:
-# -Auxiliar attributes: "myDependingTravelModule", "myDependingTravelModuleLib", "myDependingTravelModuleLibPath", "myDependingTravelModulePath", "myGlobalAISet", "myGlobalpSet", "pSlipstreamEngineSound"
-# -Auxiliar functions: "AnObjectDying", "defineTravelSpaceNoise", "GetWellShipFromID", "SlipstreamFlash" and "WatchPlayerShipLeave".
+# -Auxiliar attributes: "myDependingTravelModule", "myDependingTravelModuleLib", "myDependingTravelModuleLibPath", "myDependingTravelModulePath", "myGlobalAISet", "myGlobalpSet" and "pSlipstreamEngineSound"
+# -Auxiliar functions: "AnObjectDying", "defineTravelSpaceNoise", "GetWellShipFromID", "PlaySlipstreamSounds", "SlipstreamFlash" and "WatchPlayerShipLeave".
 # -Auxiliar classes: "WhyMissionLibGetsError" and its instance "basicListener"
 # Additionally, "GetTravelSetToUse" was modified slightly from the template's original, so as to provide a way for possible extra scripts (i.e. some slipstream Hub jump network, if that is possible) to work easier.
 #
@@ -26,7 +26,7 @@
 #################################################################################################################
 #
 MODINFO = { "Author": "\"BCXtreme\" (original), \"Alex SL Gato\" andromedavirgoa@gmail.com (fixes), \"USS Sovereign\" (Slipstream Module)",
-	    "Version": "0.13",
+	    "Version": "0.15",
 	    "License": "All Rights Reserved, by BCXtreme",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -157,7 +157,7 @@ myDependingTravelModule = None # The module we load.
 myDependingTravelModulePath = "Custom.Slipstream.SlipstreamModule" # From where we load the module.
 try:
 	myDependingTravelModuleAux = __import__(myDependingTravelModulePath)
-	if myDependingTravelModuleAux != None and hasattr(myDependingTravelModuleAux, "VERSION") and hasattr(myDependingTravelModuleAux, "sSlipstreamList"):
+	if myDependingTravelModuleAux != None and hasattr(myDependingTravelModuleAux, "VERSION") and hasattr(myDependingTravelModuleAux, "sSlipstreamList") and hasattr(myDependingTravelModuleAux, "EnteringFlash") and hasattr(myDependingTravelModuleAux, "ExitingFlash"):
 		myDependingTravelModule = myDependingTravelModuleAux
 except:
 	traceback.print_exc()
@@ -216,7 +216,7 @@ def AlternateFTLActionExitWarp(): # Linking eType with the function
 #       this is actually used just like a helper for the Travel Manager.
 ########
 def IsShipEquipped(pShip):
-	for i in range(20):
+	for i in range(20): #TO-DO REPLACE THIS FOR A MORE EFFICIENT METHOD YOU HAVE
 		number = i + 1
 		pDrive = MissionLib.GetSubsystemByName(pShip, "Slipstream Drive "+str(number) )
 		if pDrive != None:
@@ -460,6 +460,25 @@ def GetWellShipFromID(pShipID):
 		return None
 	return pShip
 
+# An aux. function.
+def PlaySlipstreamSounds(pAction, pShipID, sAction = "Enter Warp", sRace = None):
+	try:
+		pShip = GetWellShipFromID(pShipID)
+		if pShip:
+			if myDependingTravelModule != None:
+				if myDependingTravelModuleLib != None:
+					if sAction == "Enter Warp":
+						myDependingTravelModule.EnteringFlash(pAction, pShipID)
+					else:
+						myDependingTravelModule.ExitingFlash(pAction, pShipID)
+				else:
+					print "Your slipstream module is missing a key library: ", myDependingTravelModuleLibPath
+			else:
+				print "There's no slipstream module on ", myDependingTravelModuleLibPath
+	except:
+			traceback.print_exc()
+	return 0
+
 # An aux. function. original by BCXtreme, modified by Alex SL Gato.
 def SlipstreamFlash(pFlashAction1, pShipID):
 	pShip = GetWellShipFromID(pShipID)
@@ -467,7 +486,7 @@ def SlipstreamFlash(pFlashAction1, pShipID):
 		try:
 			if myDependingTravelModule != None:
 				if myDependingTravelModuleLib != None:
-					myDependingTravelModuleLib.StartGFX()
+					myDependingTravelModuleLib.StartGFX(pShipID)
 					myDependingTravelModuleLib.CreateGFX(pShip)
 				else:
 					print "Your slipstream module is missing a key library: ", myDependingTravelModuleLibPath
@@ -691,7 +710,7 @@ def SetupSequence(self):
 	except:
 		sRace = ""
 	
-	if (pPlayer != None) and (pShip.GetObjID() == pPlayer.GetObjID()):
+	if (pPlayer != None) and (pShipID == pPlayer.GetObjID()):
 		fEntryDelayTime = fEntryDelayTime + 1.0
 
 		# Force a noninteractive cinematic view in space..
@@ -713,10 +732,10 @@ def SetupSequence(self):
 			if pWatchShipLeave != None:
 				pEngageWarpSeq.AddAction(pWatchShipLeave, pCinematicStart)
 
-	pWarpSoundAction1 = App.TGScriptAction_Create(sCustomActionsScript, "PlayWarpSound", pWS, "Enter Warp", sRace)
+	pWarpSoundAction1 = App.TGScriptAction_Create(__name__, "PlaySlipstreamSounds", pShipID, "Enter Warp", sRace)
 	pEngageWarpSeq.AddAction(pWarpSoundAction1, None, fEntryDelayTime + 0.2)
 	
-	pBoostAction = App.TGScriptAction_Create(sCustomActionsScript, "BoostShipSpeed", pShip.GetObjID(), 1, 100.0)
+	pBoostAction = App.TGScriptAction_Create(sCustomActionsScript, "BoostShipSpeed", pShipID, 1, 100.0)
 	pEngageWarpSeq.AddAction(pBoostAction, pWarpSoundAction1, 0.7)
 
 	try:
@@ -727,7 +746,7 @@ def SetupSequence(self):
 	except:
 		pass
 
-	fTimeToFlash = 3.5 + fEntryDelayTime
+	fTimeToFlash = 3.5 + fEntryDelayTime -1.3
 	if pWS.Travel.bTractorStat == 1:
 		fCount = 0.0
 		while fCount < fTimeToFlash:
@@ -738,14 +757,14 @@ def SetupSequence(self):
 				break
 
 	## Create the warp flash.
-	pFlashAction1 = App.TGScriptAction_Create(__name__, "SlipstreamFlash", pShipID) #pFlashAction1 = App.TGScriptAction_Create("Actions.EffectScriptActions", "WarpFlash", pShip.GetObjID())
+	pFlashAction1 = App.TGScriptAction_Create(__name__, "SlipstreamFlash", pShipID) #pFlashAction1 = App.TGScriptAction_Create("Actions.EffectScriptActions", "WarpFlash", pShip)
 	pEngageWarpSeq.AddAction(pFlashAction1, None, fTimeToFlash)
 
 	# Hide the ship.
-	pHideShip = App.TGScriptAction_Create(sCustomActionsScript, "HideShip", pShip.GetObjID(), 1)
+	pHideShip = App.TGScriptAction_Create(sCustomActionsScript, "HideShip", pShipID, 1)
 	pEngageWarpSeq.AddAction(pHideShip, pFlashAction1, 1.6)
 
-	pUnBoostAction = App.TGScriptAction_Create(sCustomActionsScript, "BoostShipSpeed", pShip.GetObjID(), 0, 1.0)
+	pUnBoostAction = App.TGScriptAction_Create(sCustomActionsScript, "BoostShipSpeed", pShipID, 0, 1.0)
 	pEngageWarpSeq.AddAction(pUnBoostAction, pHideShip)
 	
 	pCheckTowing = App.TGScriptAction_Create(sCustomActionsScript, "EngageSeqTractorCheck", pWS)
@@ -762,7 +781,7 @@ def SetupSequence(self):
 
 	# Add the actions for exiting warp only if the destination set exists.
 	if(pWS.GetDestinationSet() != None):
-		if (pPlayer != None) and (pShip.GetObjID() == pPlayer.GetObjID()):
+		if (pPlayer != None) and (pShipID == pPlayer.GetObjID()):
 			# Force a noninteractive cinematic view in space..
 			pCinematicStart = App.TGScriptAction_Create("Actions.CameraScriptActions", "StartCinematicMode", 0)
 			pExitWarpSeq.AddAction(pCinematicStart, None)
@@ -780,7 +799,7 @@ def SetupSequence(self):
 			pExitWarpSeq.AddAction(pCameraAction4, pDisallowInput)
 	
 		# Hide the ship.
-		pHideShip = App.TGScriptAction_Create(sCustomActionsScript, "HideShip", pShip.GetObjID(), 1)
+		pHideShip = App.TGScriptAction_Create(sCustomActionsScript, "HideShip", pShipID, 1)
 		pExitWarpSeq.AddAction(pHideShip, None)
 
 		# Check for towee
@@ -789,11 +808,11 @@ def SetupSequence(self):
 			pExitWarpSeq.AddAction(pHideTowee, pHideShip)
 
 		## Create the warp flash.
-		pFlashAction2 = App.TGScriptAction_Create(__name__, "SlipstreamFlash", pShipID)  #pFlashAction2 = App.TGScriptAction_Create("Actions.EffectScriptActions", "WarpFlash", pShip.GetObjID())
+		pFlashAction2 = App.TGScriptAction_Create(__name__, "SlipstreamFlash", pShipID)  #pFlashAction2 = App.TGScriptAction_Create("Actions.EffectScriptActions", "WarpFlash", pShip)
 		pExitWarpSeq.AddAction(pFlashAction2, pHideShip, 0.7)
 
 		# Un-Hide the ship
-		pUnHideShip = App.TGScriptAction_Create(sCustomActionsScript, "HideShip", pShip.GetObjID(), 0)
+		pUnHideShip = App.TGScriptAction_Create(sCustomActionsScript, "HideShip", pShipID, 0)
 		pExitWarpSeq.AddAction(pUnHideShip, pFlashAction2, 1.5)
 
 		# Un-hide the Towee, plus if it exists, also set up the maintain chain
@@ -812,15 +831,15 @@ def SetupSequence(self):
 					break
 
 		# Give it a little boost
-		pBoostAction = App.TGScriptAction_Create(sCustomActionsScript, "BoostShipSpeed", pShip.GetObjID(), 1, 100.0)
+		pBoostAction = App.TGScriptAction_Create(sCustomActionsScript, "BoostShipSpeed", pShipID, 1, 100.0)
 		pExitWarpSeq.AddAction(pBoostAction, pUnHideShip, 0.1)
 
 		# Play the vushhhhh of exiting warp
-		pWarpSoundAction2 = App.TGScriptAction_Create(sCustomActionsScript, "PlayWarpSound", pWS, "Exit Warp", sRace)
+		pWarpSoundAction2 = App.TGScriptAction_Create(__name__, "PlaySlipstreamSounds", pShipID, "Exit Warp", sRace)
 		pExitWarpSeq.AddAction(pWarpSoundAction2, pBoostAction)
 	
 		# Make the ship return to normal speed.
-		pUnBoostAction = App.TGScriptAction_Create(sCustomActionsScript, "BoostShipSpeed", pShip.GetObjID(), 0, 1.0)
+		pUnBoostAction = App.TGScriptAction_Create(sCustomActionsScript, "BoostShipSpeed", pShipID, 0, 1.0)
 		pExitWarpSeq.AddAction(pUnBoostAction, pWarpSoundAction2, 2.0)
 
 		# And finally finish the exit sequence
