@@ -5,7 +5,7 @@
 # Please note that this file requires:
 # - USS Sovereign's Slipstream Module, as this file's purpose revolves around it.
 # 18th April 2025
-# Version 0.2
+# Version 0.21
 
 # Imports
 import App
@@ -308,7 +308,6 @@ if myDependingTravelModule != None and myDependingTravelModuleLib != None:
 				pShip = pPlayer
 
 			if not pShip:
-				print "TO-DO no valid ship found"
 				return 0
 
 			if pShipID == None or (pPlayer != None and pShipID == pPlayer.GetObjID()):

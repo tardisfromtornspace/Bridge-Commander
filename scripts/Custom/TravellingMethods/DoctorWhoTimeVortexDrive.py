@@ -96,7 +96,7 @@ Foundation.ShipDef.EAOmega.dTechs = { # (#)
 #################################################################################################################
 #
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.23",
+	    "Version": "0.24",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -347,7 +347,7 @@ def DrWTimeVortexDriveBasicConfigInfo(pShip):
 	return pInstance, pInstancedict, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist
 
 # This is just another auxiliar function I made for this
-def DrWTimeVortexDriveDisabledCalculations(type, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, pSubsystem, pShip):
+def DrWTimeVortexDriveDisabledCalculations(type, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, pSubsystem, pShip, justFindOne=0):
 	totalDrWTimeVortexDriveEngines = 0
 	onlineDrWTimeVortexDriveEngines = 0
 	if type == "Nacelle":
@@ -378,6 +378,8 @@ def DrWTimeVortexDriveDisabledCalculations(type, specificNacelleHPList, specific
 							totalDrWTimeVortexDriveEngines = totalDrWTimeVortexDriveEngines + 1
 							if pChild.GetCondition() > 0.0 and not pChild.IsDisabled():
 								onlineDrWTimeVortexDriveEngines = onlineDrWTimeVortexDriveEngines + 1
+								if justFindOne == 1:
+									break
 	elif type == "Core":
 		pShipSet = pShip.GetPropertySet()
 		pShipList = pShipSet.GetPropertiesByType(App.CT_SUBSYSTEM_PROPERTY)
@@ -413,6 +415,8 @@ def DrWTimeVortexDriveDisabledCalculations(type, specificNacelleHPList, specific
 							totalDrWTimeVortexDriveEngines = totalDrWTimeVortexDriveEngines + 1
 							if pSubsystema.GetCondition() > 0.0 and not pSubsystema.IsDisabled():
 								onlineDrWTimeVortexDriveEngines = onlineDrWTimeVortexDriveEngines + 1
+								if justFindOne == 1:
+									break
 
 		pShipList.TGDoneIterating()
 		pShipList.TGDestroy()

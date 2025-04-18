@@ -1,4 +1,7 @@
 ==Changelog==
+1.5.9 -
+   Fixes:
+   * Updated Jumpgate TravellingMethods to 0.24, now the cehck for if a ship can use them or not should be slightly more efficient.
 1.5.8 -
    Fixes:
    * Removed dependency code from Babylon 5 Uniforms (except newer parts), since it was pretty much downloaded from the dependency.

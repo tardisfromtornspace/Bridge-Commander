@@ -294,7 +294,7 @@ def IsShipEquipped(pShip):
 			return 1
 	
         # For legacy reasons
-        totalB5QuantumspaceEngines, onlineB5QuantumspaceEngines = B5QuantumspaceDisabledCalculations("Core", specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, None, pShip)
+        totalB5QuantumspaceEngines, onlineB5QuantumspaceEngines = B5QuantumspaceDisabledCalculations("Core", specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, None, pShip, 1)
 	return (totalB5QuantumspaceEngines > 0)
 
 # An aux function, checks if this ship can do phased Quantumspace. In order for ships that used another version can still use this, it follows similar functionality.
@@ -348,7 +348,7 @@ def B5QuantumspaceBasicConfigInfo(pShip):
 	return pInstance, pInstancedict, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist
 
 # This is just another auxiliar function I made for this
-def B5QuantumspaceDisabledCalculations(type, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, pSubsystem, pShip):
+def B5QuantumspaceDisabledCalculations(type, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, pSubsystem, pShip, justFindOne=0):
 	totalB5QuantumspaceEngines = 0
 	onlineB5QuantumspaceEngines = 0
 	if type == "Nacelle":
@@ -379,6 +379,8 @@ def B5QuantumspaceDisabledCalculations(type, specificNacelleHPList, specificCore
 							totalB5QuantumspaceEngines = totalB5QuantumspaceEngines + 1
 							if pChild.GetCondition() > 0.0 and not pChild.IsDisabled():
 								onlineB5QuantumspaceEngines = onlineB5QuantumspaceEngines + 1
+								if justFindOne == 1:
+									break
 	elif type == "Core":
 		pShipSet = pShip.GetPropertySet()
 		pShipList = pShipSet.GetPropertiesByType(App.CT_SUBSYSTEM_PROPERTY)
@@ -414,6 +416,8 @@ def B5QuantumspaceDisabledCalculations(type, specificNacelleHPList, specificCore
 							totalB5QuantumspaceEngines = totalB5QuantumspaceEngines + 1
 							if pSubsystema.GetCondition() > 0.0 and not pSubsystema.IsDisabled():
 								onlineB5QuantumspaceEngines = onlineB5QuantumspaceEngines + 1
+								if justFindOne == 1:
+									break
 
 		pShipList.TGDoneIterating()
 		pShipList.TGDestroy()
@@ -469,7 +473,7 @@ def CanTravelShip(pShip):
 
 	pWarpEngines = pShip.GetWarpEngineSubsystem()
 	if (specificNacelleHPList != None and len(specificNacelleHPList) > 0):
-		totalB5QuantumspaceEngines, onlineB5QuantumspaceEngines = B5QuantumspaceDisabledCalculations("Nacelle", specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, pWarpEngines, pShip)
+		totalB5QuantumspaceEngines, onlineB5QuantumspaceEngines = B5QuantumspaceDisabledCalculations("Nacelle", specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, pWarpEngines, pShip, 1)
 
 		if totalB5QuantumspaceEngines <= 0 or onlineB5QuantumspaceEngines <= 0:
 			if bIsPlayer == 1:
@@ -489,7 +493,7 @@ def CanTravelShip(pShip):
 			return "Quantumspace Engines disabled"
 
 	if specificCoreHPList == None or (specificCoreHPList != None and len(specificCoreHPList) > 0):
-		totalB5QuantumspaceCores, onlineB5QuantumspaceCores = B5QuantumspaceDisabledCalculations("Core", specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, pWarpEngines, pShip)
+		totalB5QuantumspaceCores, onlineB5QuantumspaceCores = B5QuantumspaceDisabledCalculations("Core", specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, pWarpEngines, pShip, 1)
 
 		if totalB5QuantumspaceCores <= 0 or onlineB5QuantumspaceCores <= 0:
 			if bIsPlayer == 1:
@@ -596,7 +600,7 @@ def CanContinueTravelling(self):
 		bStatus = 0
 	else:
 		pInstance, pInstancedict, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist = B5QuantumspaceBasicConfigInfo(pShip)
-		totalB5QuantumspaceCores, onlineB5QuantumspaceCores = B5QuantumspaceDisabledCalculations("Core", specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, pWarpEngines, pShip)
+		totalB5QuantumspaceCores, onlineB5QuantumspaceCores = B5QuantumspaceDisabledCalculations("Core", specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, pWarpEngines, pShip, 1)
 		if totalB5QuantumspaceCores > 0 and onlineB5QuantumspaceCores <= 0:
 			if bIsPlayer == 1:
 				pSequence = App.TGSequence_Create ()
@@ -607,7 +611,7 @@ def CanContinueTravelling(self):
 			bStatus = 0
 		elif (specificNacelleHPList != None and len(specificNacelleHPList) > 0):
 			pWarpEngines = pShip.GetWarpEngineSubsystem()
-			totalB5QuantumspaceEngines, onlineB5QuantumspaceEngines = B5QuantumspaceDisabledCalculations("Nacelle", specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, pWarpEngines, pShip)
+			totalB5QuantumspaceEngines, onlineB5QuantumspaceEngines = B5QuantumspaceDisabledCalculations("Nacelle", specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, pWarpEngines, pShip, 1)
 			if totalB5QuantumspaceEngines > 0 and onlineB5QuantumspaceEngines <= 0:
 				if bIsPlayer == 1:
 					pSequence = App.TGSequence_Create ()

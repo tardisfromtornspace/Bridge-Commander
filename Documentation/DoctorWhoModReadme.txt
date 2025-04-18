@@ -1,4 +1,6 @@
 == Changelog ==
+1.2.1 - Updates:
+   * Upgraded TimeVortex TravellingMethod to provide a slightly more efficient check for if a ship has this travelling method.
 1.2.0 - Updates:
    * Updated AdvArmourTechThree from 1.82 to 1.83, fixed weird self-destruct bug.
    * Refurbished Time Vortex module - Now it uses GalaxyCharts and all ships can use it!

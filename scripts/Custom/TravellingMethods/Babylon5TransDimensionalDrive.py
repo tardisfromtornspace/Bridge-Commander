@@ -97,7 +97,7 @@ Foundation.ShipDef.EAOmega.dTechs = { # (#)
 #################################################################################################################
 #
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.23",
+	    "Version": "0.24",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -294,7 +294,7 @@ def IsShipEquipped(pShip):
 			return 1
 	
         # For legacy reasons
-        totalB5TransDimensionalDriveEngines, onlineB5TransDimensionalDriveEngines = B5TransDimensionalDriveDisabledCalculations("Core", specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, None, pShip)
+        totalB5TransDimensionalDriveEngines, onlineB5TransDimensionalDriveEngines = B5TransDimensionalDriveDisabledCalculations("Core", specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, None, pShip, 1)
 	return (totalB5TransDimensionalDriveEngines > 0) and (HasSigmaTransDimensionalDrive(pShip))
 
 # An aux function, checks if this ship can do phased TransDimensionalDrive. In order for ships that used another version can still use this, it follows similar functionality.
@@ -348,7 +348,7 @@ def B5TransDimensionalDriveBasicConfigInfo(pShip):
 	return pInstance, pInstancedict, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist
 
 # This is just another auxiliar function I made for this
-def B5TransDimensionalDriveDisabledCalculations(type, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, pSubsystem, pShip):
+def B5TransDimensionalDriveDisabledCalculations(type, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, pSubsystem, pShip, justFindOne=0):
 	totalB5TransDimensionalDriveEngines = 0
 	onlineB5TransDimensionalDriveEngines = 0
 	if type == "Nacelle":
@@ -379,6 +379,8 @@ def B5TransDimensionalDriveDisabledCalculations(type, specificNacelleHPList, spe
 							totalB5TransDimensionalDriveEngines = totalB5TransDimensionalDriveEngines + 1
 							if pChild.GetCondition() > 0.0 and not pChild.IsDisabled():
 								onlineB5TransDimensionalDriveEngines = onlineB5TransDimensionalDriveEngines + 1
+								if justFindOne == 1:
+									break
 	elif type == "Core":
 		pShipSet = pShip.GetPropertySet()
 		pShipList = pShipSet.GetPropertiesByType(App.CT_SUBSYSTEM_PROPERTY)
@@ -414,6 +416,8 @@ def B5TransDimensionalDriveDisabledCalculations(type, specificNacelleHPList, spe
 							totalB5TransDimensionalDriveEngines = totalB5TransDimensionalDriveEngines + 1
 							if pSubsystema.GetCondition() > 0.0 and not pSubsystema.IsDisabled():
 								onlineB5TransDimensionalDriveEngines = onlineB5TransDimensionalDriveEngines + 1
+								if justFindOne == 1:
+									break
 
 		pShipList.TGDoneIterating()
 		pShipList.TGDestroy()
@@ -469,7 +473,7 @@ def CanTravelShip(pShip):
 
 	pWarpEngines = pShip.GetWarpEngineSubsystem()
 	if (specificNacelleHPList != None and len(specificNacelleHPList) > 0):
-		totalB5TransDimensionalDriveEngines, onlineB5TransDimensionalDriveEngines = B5TransDimensionalDriveDisabledCalculations("Nacelle", specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, pWarpEngines, pShip)
+		totalB5TransDimensionalDriveEngines, onlineB5TransDimensionalDriveEngines = B5TransDimensionalDriveDisabledCalculations("Nacelle", specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, pWarpEngines, pShip, 1)
 
 		if totalB5TransDimensionalDriveEngines <= 0 or onlineB5TransDimensionalDriveEngines <= 0:
 			if bIsPlayer == 1:
@@ -489,7 +493,7 @@ def CanTravelShip(pShip):
 			return "TransDimensionalDrive Engines disabled"
 
 	if specificCoreHPList == None or (specificCoreHPList != None and len(specificCoreHPList) > 0):
-		totalB5TransDimensionalDriveCores, onlineB5TransDimensionalDriveCores = B5TransDimensionalDriveDisabledCalculations("Core", specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, pWarpEngines, pShip)
+		totalB5TransDimensionalDriveCores, onlineB5TransDimensionalDriveCores = B5TransDimensionalDriveDisabledCalculations("Core", specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, pWarpEngines, pShip, 1)
 
 		if totalB5TransDimensionalDriveCores <= 0 or onlineB5TransDimensionalDriveCores <= 0:
 			if bIsPlayer == 1:
@@ -596,7 +600,7 @@ def CanContinueTravelling(self):
 		bStatus = 0
 	else:
 		pInstance, pInstancedict, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist = B5TransDimensionalDriveBasicConfigInfo(pShip)
-		totalB5TransDimensionalDriveCores, onlineB5TransDimensionalDriveCores = B5TransDimensionalDriveDisabledCalculations("Core", specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, pWarpEngines, pShip)
+		totalB5TransDimensionalDriveCores, onlineB5TransDimensionalDriveCores = B5TransDimensionalDriveDisabledCalculations("Core", specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, pWarpEngines, pShip, 1)
 		if totalB5TransDimensionalDriveCores > 0 and onlineB5TransDimensionalDriveCores <= 0:
 			if bIsPlayer == 1:
 				pSequence = App.TGSequence_Create ()
@@ -607,7 +611,7 @@ def CanContinueTravelling(self):
 			bStatus = 0
 		elif (specificNacelleHPList != None and len(specificNacelleHPList) > 0):
 			pWarpEngines = pShip.GetWarpEngineSubsystem()
-			totalB5TransDimensionalDriveEngines, onlineB5TransDimensionalDriveEngines = B5TransDimensionalDriveDisabledCalculations("Nacelle", specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, pWarpEngines, pShip)
+			totalB5TransDimensionalDriveEngines, onlineB5TransDimensionalDriveEngines = B5TransDimensionalDriveDisabledCalculations("Nacelle", specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, pWarpEngines, pShip, 1)
 			if totalB5TransDimensionalDriveEngines > 0 and onlineB5TransDimensionalDriveEngines <= 0:
 				if bIsPlayer == 1:
 					pSequence = App.TGSequence_Create ()

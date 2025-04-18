@@ -11,12 +11,12 @@
 #################################################################################################################
 ##########	MANUAL
 #################################################################################################################
-# This mod provides Slipstream functionality for GalaxyCharts for ships that could use SlipstreamModule, finishing the work done by BCXtreme so sounds and flashes work properly, AI-only slipstream set is different from player-and-AI set, and speeds are adjusted so AI vessels can use Slipstream.
+# This mod provides Slipstream functionality for GalaxyCharts for ships that could use SlipstreamModule, finishing the work done by BCXtreme so sounds and flashes work properly, AI-only slipstream set is different from player-and-AI set, made some code check more efficient, and speeds are adjusted so AI vessels can use Slipstream.
 
 # To make a ship use Slipstream, follow USS Sovereign's instructions on how to add his own Slipstream, which basically consists on adding any hardpoint called "Slipstream Drive " followed by a number from 1 to 20. Slipstream intercept is still handled by Sovereign's Slipstream Module, so do not expect a non-player to use it.
 # NOTE: all functions/methods and attributes defined here (in this prototype example plugin, Slipstream) are required to be in the plugin, with the exception of:
 # -Auxiliar attributes: "myDependingTravelModule", "myDependingTravelModuleLib", "myDependingTravelModuleLibPath", "myDependingTravelModulePath", "myGlobalAISet", "myGlobalpSet" and "pSlipstreamEngineSound"
-# -Auxiliar functions: "AnObjectDying", "defineTravelSpaceNoise", "GetWellShipFromID", "PlaySlipstreamSounds", "SlipstreamFlash" and "WatchPlayerShipLeave".
+# -Auxiliar functions: "AnObjectDying", "AuxProtoElementNames", "defineTravelSpaceNoise", "GetWellShipFromID", "PlaySlipstreamSounds", "SlipstreamDisabledCalculations", "SlipstreamFlash" and "WatchPlayerShipLeave".
 # -Auxiliar classes: "WhyMissionLibGetsError" and its instance "basicListener"
 # Additionally, "GetTravelSetToUse" was modified slightly from the template's original, so as to provide a way for possible extra scripts (i.e. some slipstream Hub jump network, if that is possible) to work easier.
 #
@@ -26,7 +26,7 @@
 #################################################################################################################
 #
 MODINFO = { "Author": "\"BCXtreme\" (original), \"Alex SL Gato\" andromedavirgoa@gmail.com (fixes), \"USS Sovereign\" (Slipstream Module)",
-	    "Version": "0.15",
+	    "Version": "0.16",
 	    "License": "All Rights Reserved, by BCXtreme",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -216,11 +216,11 @@ def AlternateFTLActionExitWarp(): # Linking eType with the function
 #       this is actually used just like a helper for the Travel Manager.
 ########
 def IsShipEquipped(pShip):
-	for i in range(20): #TO-DO REPLACE THIS FOR A MORE EFFICIENT METHOD YOU HAVE
-		number = i + 1
-		pDrive = MissionLib.GetSubsystemByName(pShip, "Slipstream Drive "+str(number) )
-		if pDrive != None:
-			return 1
+
+	hardpointProtoNames, hardpointProtoBlacklist = AuxProtoElementNames()
+        totalSlipstreamEngines, onlineSlipstreamEngines = SlipstreamDisabledCalculations("Core", None, None, hardpointProtoNames, hardpointProtoBlacklist, None, pShip, 1)
+	return (totalSlipstreamEngines > 0)
+
 	return 0
 
 
@@ -228,6 +228,96 @@ def IsShipEquipped(pShip):
 # Method to check if the ship can travel.
 # Must return 1 if it can, otherwise return a string(reason why the ship couldn't travel)
 ########
+# This is just an auxiliar function I made for this
+def AuxProtoElementNames(*args):
+	# Returns hardpoint property name fragments that indicate are part of the B5Jumpspace system, and blacklists
+	return ["slipstream drive"], ["not a slipstream drive", " not slipstream drive"]
+
+# This is just another auxiliar function I (Alex SL Gato) made for more efficient system lookup.
+# The original was like the OLD CODE example below, which follows Slipstream Module style in a way, looking for 20 particular names. However, there is an issue with that - it needs to do a pass on a ship's hardpoint for each subsystem name, out of 20. That means that on a best-case scenario it needs to perform part of a pass, while on a worst-case scenario, it needs to perform 20 passes to state that the ship lacks Slipstream. When it's only the player ship, it is acceptable. However, when it applies to ALL the potential ships on the galaxy and some of them have huge hardpoints, it LAGs a lot. The new method just needs to perform part of a pass on a best-case scenario, and 1 hardpoint pass on a worst-case one, and it will tell you how many slipstream drives are if you allow it to perform a full pass.
+# OLD CODE:
+# for i in range(20): # Slisptream Drive uses something like this. This is compeltely feasible when there's only 1 player
+#		number = i + 1
+#		pDrive = MissionLib.GetSubsystemByName(pShip, "Slipstream Drive "+str(number) )
+#		if pDrive != None:
+#			return 1
+
+def SlipstreamDisabledCalculations(type, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, pSubsystem, pShip, justFindOne=0):
+	totalSlipstreamEngines = 0
+	onlineSlipstreamEngines = 0
+	if type == "Nacelle":
+		if pSubsystem != None:
+			for i in range(pSubsystem.GetNumChildSubsystems()):
+				pChild = pSubsystem.GetChildSubsystem(i)
+				if pChild:
+					if hasattr(pChild, "GetName") and pChild.GetName() != None:
+						pChildName = pChild.GetName()
+						found = 0
+						blacklisted = 0
+						if specificNacelleHPList == None:				
+							pchildnamelower = string.lower(pChildName)
+							for item in hardpointProtoNames:
+								foundThis = string.find(pchildnamelower, item) + 1
+								if foundThis > 0:
+									found = 1
+									break
+							for item in hardpointProtoBlacklist:
+								foundThis = string.find(pchildnamelower, item) + 1
+								if foundThis > 0:
+									blacklisted = 1
+									break
+						else:
+							found = (pChildName in specificNacelleHPList)
+
+						if found and not blacklisted:
+							totalSlipstreamEngines = totalSlipstreamEngines + 1
+							if pChild.GetCondition() > 0.0 and not pChild.IsDisabled():
+								onlineSlipstreamEngines = onlineSlipstreamEngines + 1
+								if justFindOne == 1:
+									break
+	elif type == "Core":
+		pShipSet = pShip.GetPropertySet()
+		pShipList = pShipSet.GetPropertiesByType(App.CT_SUBSYSTEM_PROPERTY)
+		iNumItems = pShipList.TGGetNumItems()
+
+		pShipList.TGBeginIteration()
+		for i in range(iNumItems):
+			pShipProperty = App.SubsystemProperty_Cast(pShipList.TGGetNext().GetProperty())
+			if pShipProperty:
+				pSubsystema = pShip.GetSubsystemByProperty(pShipProperty)
+				if pSubsystema and pSubsystema != None:
+					if hasattr(pSubsystema, "GetName") and pSubsystema.GetName() != None:
+						pSubsystemName = pSubsystema.GetName()
+
+						found = 0
+						blacklisted = 0
+						if specificCoreHPList == None:				
+							pSubsystemNamelower = string.lower(pSubsystemName)
+							for item in hardpointProtoNames:
+								foundThis = string.find(pSubsystemNamelower, item) + 1
+								if foundThis > 0:
+									found = 1
+									break
+							for item in hardpointProtoBlacklist:
+								foundThis = string.find(pSubsystemNamelower, item) + 1
+								if foundThis > 0:
+									blacklisted = 1
+									break
+						else:
+							found = (pSubsystemName in specificCoreHPList)
+
+						if found and not blacklisted:
+							totalSlipstreamEngines = totalSlipstreamEngines + 1
+							if pSubsystema.GetCondition() > 0.0 and not pSubsystema.IsDisabled() and (not hasattr(pSubsystema, "IsOn") or pSubsystema.IsOn()):
+								onlineSlipstreamEngines = onlineSlipstreamEngines + 1
+								if justFindOne == 1:
+									break
+
+		pShipList.TGDoneIterating()
+		pShipList.TGDestroy()
+
+	return totalSlipstreamEngines, onlineSlipstreamEngines
+
 def CanTravel(self):
 	if myDependingTravelModule == None:
 		return "Impossible to travel to Slipstream if Slipstream does not exist!"
@@ -249,27 +339,13 @@ def CanTravel(self):
 				MissionLib.QueueActionToPlay(App.CharacterAction_Create(pXO, App.CharacterAction.AT_SAY_LINE, "EngineeringNeedPowerToEngines", None, 1))
 		return "Impulse Engines offline"
 
-	for i in range(20):
-		number = i + 1
-		pDrive = MissionLib.GetSubsystemByName(pShip, "Slipstream Drive "+str(number) )
-		if pDrive:
-			if pDrive.IsDisabled():
-				if bIsPlayer == 1:
-					pSequence = App.TGSequence_Create()
-					pSubtitleAction = App.SubtitleAction_CreateC("Brex: Slipstream Drive is disabled, sir.")
-					pSubtitleAction.SetDuration(3.0)
-					pSequence.AddAction(pSubtitleAction)
-					pSequence.Play()
-				return "Slipstream Drive disabled"
 
-#			if not pDrive.IsOn():
-#			      if bIsPlayer == 1:
-#					pSequence = App.TGSequence_Create()
-#					pSubtitleAction = App.SubtitleAction_CreateC("Brex: Slipstream Drive is offline, sir.")
-#					pSubtitleAction.SetDuration(3.0)
-#					pSequence.AddAction(pSubtitleAction)
-#					pSequence.Play()
-#				return "Slipstream Drive offline"
+	hardpointProtoNames, hardpointProtoBlacklist = AuxProtoElementNames()
+        totalSlipstreamEngines, onlineSlipstreamEngines = SlipstreamDisabledCalculations("Core", None, None, hardpointProtoNames, hardpointProtoBlacklist, None, pShip, 0)
+	if totalSlipstreamEngines <= 0:
+		return "Unequipped with Slipstream Drive"
+	if onlineSlipstreamEngines <= 0:
+		return "Slipstream Drive disabled or offline"
 
 	pSet = pShip.GetContainingSet()
 	pNebula = pSet.GetNebula()
@@ -332,44 +408,18 @@ def CanContinueTravelling(self):
 	if pPlayer and pShip.GetObjID() == pPlayer.GetObjID():
 		bIsPlayer = 1
 	bStatus = 1
-	for i in range(20):
-		number = i + 1
-		pDrive = MissionLib.GetSubsystemByName(pShip, "Slipstream Drive "+str(number) )
-		if pDrive != None:
-			if pDrive.IsDisabled() == 1:
-				if bIsPlayer == 1:
-					pSequence = App.TGSequence_Create ()
-					pSubtitleAction = App.SubtitleAction_CreateC("Brex: Slipstream Drive is disabled, sir, the slipstream tunnel is collapsing.")
-					pSubtitleAction.SetDuration(3.0)
-					pSequence.AddAction(pSubtitleAction)
-					pSequence.Play()
-				bStatus = 0
 
-#		if pDrive.IsOn() == 0:
-#			if bIsPlayer == 1:
-#				pSequence = App.TGSequence_Create ()
-#				pSubtitleAction = App.SubtitleAction_CreateC("Brex: Slipstream Drive is offline, sir, the slipstream tunnel is collapsing.")
-#				pSubtitleAction.SetDuration(3.0)
-#				pSequence.AddAction(pSubtitleAction)
-#				pSequence.Play()
-#			bStatus = 0
-	"""
-	pStarbase12Set = App.g_kSetManager.GetSet("Starbase12")
-	if pStarbase12Set:
-		if pShip.GetContainingSet():
-			if pStarbase12Set.GetObjID() == pShip.GetContainingSet().GetObjID():
-				pStarbase12 = App.ShipClass_GetObject(pStarbase12Set, "Starbase 12")
-				if pStarbase12:
-					import AI.Compound.DockWithStarbase
-					if AI.Compound.DockWithStarbase.IsInViewOfInsidePoints(pShip, pStarbase12):
-						if bIsPlayer == 1:
-							pSequence = App.TGSequence_Create()
-							pSubtitleAction = App.SubtitleAction_CreateC("LoMar: Captain, we can't open a slipstream tunnel inside a starbase.")
-							pSubtitleAction.SetDuration(3.0)
-							pSequence.AddAction(pSubtitleAction)
-							pSequence.Play()
-						return "Inside Starbase12"
-	"""
+	hardpointProtoNames, hardpointProtoBlacklist = AuxProtoElementNames()
+        totalSlipstreamEngines, onlineSlipstreamEngines = SlipstreamDisabledCalculations("Core", None, None, hardpointProtoNames, hardpointProtoBlacklist, None, pShip, 0)
+	if totalSlipstreamEngines <= 0 or onlineSlipstreamEngines <= 0:
+		if bIsPlayer == 1:
+			pSequence = App.TGSequence_Create ()
+			pSubtitleAction = App.SubtitleAction_CreateC("Brex: Slipstream Drive is disabled or offline, sir, the slipstream tunnel is collapsing.")
+			pSubtitleAction.SetDuration(3.0)
+			pSequence.AddAction(pSubtitleAction)
+			pSequence.Play()
+		bStatus = 0
+
 	return bStatus
 
 ########
@@ -989,7 +1039,7 @@ def ConvertSpeedAmount(fSpeed):
 
 	speed = (math.pow(fSpeed, (10.0/fFacA)) + math.pow((10.0-fSpeed), (-11.0/fFacB)))
 
-	speed = 75000 * speed * (math.pow(4.0, (10.0/fFacA)) + math.pow((10.0-4.0), (-11.0/fFacB)))
+	speed = (75000/3.0) * speed * (math.pow(4.0, (10.0/fFacA)) + math.pow((10.0-4.0), (-11.0/fFacB)))
 
 	return speed
 
