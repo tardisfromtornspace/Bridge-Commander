@@ -27,8 +27,8 @@ SubSubMenu = "Capital Ships"
 #                                                                                     #
 credits = {
 	'modName': 'EANova',
-	'author': 'Madjohn',
-	'version': '0.1beta',
+	'author': '',
+	'version': '1.0',
 	'sources': [ 'http://' ],
 	'comments': ''
 }

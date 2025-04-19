@@ -1,4 +1,9 @@
 ==Changelog==
+1.6.0 -
+   Fixes:
+   * Updated Victory Turret options to fix a small goof while warping.
+   * Updated the readme a bit to clarify install of dependencies.
+   * Given a glow-up to the Warlock: buffed its particle rays and made their weapon positions look better.
 1.5.9 -
    Fixes:
    * Updated Jumpgate TravellingMethods to 0.24, now the cehck for if a ship can use them or not should be slightly more efficient.
@@ -246,17 +251,17 @@ Additionally around 60+ ships from the Babylon 5 franchise have been added***
   - Fighter Launchable Babylon 5: TiqHud, Brad Bowermaster, Wok, Crook, Cordanilus and MScott - from this mod the Auroras and Thunderbolts were obtained.
       --- Thunderbolt: TiqHud, Wok, Bravo Int.
       --- Aurora Class Starfury: MadJohn, Crook and the http://www.b5tech.net team and the Homeworld mod teams.
-  - Minbari Sharlin: Maryam, baz1701 and limey98. NOTE: The one I had on my install was NOT MSR1701's version.
-  - B5 Centauri Vorchan and B5 Centauri Primus: TiqHud, Wok, Jackal and Captain Russel.
-  - B5 Bluestar and Whitestar: Nadab Göksu, Thunderchild, DamoclesX, TiqHud, aobob, junky58 and BCU people (the latest 4 are beta testers).
-  - Narn ThNor: TiqHud, Wok, Lord Malek and the original Babylon 5 visual effects artists mentioned before.
-  - Narn GQuan: TiqHud, stresspuppy, Queball.
+  - Minbari Sharlin: Maryam, baz1701 and limey98 and Dalek. NOTE: The one I had on my install was NOT MSR1701's version.
+  - B5 Centauri Vorchan and B5 Centauri Warship (latter also known as Centauri Primus): TiqHud, Wok, Jackal and Captain Russel.
+  - Babylon 5 - Bluestar and Babylon 5 Whitestar: Nadab Göksu, Kier Darby, Thunderchild, DamoclesX, TiqHud, aobob, junky58 and BCU people (the latest 4 are beta testers).
+  - Narn - ThNor: TiqHud, Wok, Lord Malek and the original Babylon 5 visual effects artists mentioned before.
+  - Narn G'quan: TiqHud, stresspuppy, Queball.
   - Drakh Raider: TiqHud, Wok, Jackal Tiger, Nadab, Lord Malek and the original Babylon 5 visual effects artists mentioned before.
   - Omega Class Destroyer: MadJohn and Spooky.
-  - B5 Warlock and Victory: DamoclesX and Durandal.
+  - B5 Warlock and Babylon5 Victory: DamoclesX and Durandal.
   - Shadow Battlecrab: Sci-Fi DreamYards, Cpt. LC Amaral, Maverick, Executioner_de
-  - Sentri Fighter (no hardpoints): Wok and Bravo Int.
-  - Babylon 5 Uniforms by Houliganisle, Crazyhid and MLeo. 
+  - Cenaturi Sentri fighter (no hardpoints): Wok and Bravo Int.
+  - Babylon 5 Uniforms (https://www.gamefront.com/games/bridge-commander/file/babylon-5-uniforms) by Houliganisle, Crazyhid and MLeo. 
 
 Fulfilling both the SDK and LGPL licenses:
 THIS MOD IS NOT SUPPORTED BY ACTIVISION
@@ -266,16 +271,18 @@ This mod falls under the GNU LESSER GENERAL PUBLIC LICENSE Version 3, 29 June 20
 ===Mods required===
 You'll of course need Foundation, Nanofx2, Submenu v 3.0, QBAutostart and Kobayashi Maru mod, the latest version the better. GalaxyCharts is also required, probably the GalaxyCharts Warp AI fix as well.
 
-All the mods on https://www.gamefront.com/games/bridge-commander/category/babylon5 mentioned above, on reverse order (NONE of the ones called "Remastered") would be probably required (albeit at the time I downloaded the mods from NexusMods so the content may have been different), **but** some of them conflicted with each other due to Caps issue (i.e. EAOmega - eaomega), certain shuttle quirks and BCMMods affected certain filenames and inner files, which back when I was a newbie took me 3 years to fix, made that unadvisable.
+All the mods on https://www.gamefront.com/games/bridge-commander/category/babylon5 mentioned above, on reverse order (NONE of the ones called "Remastered") would be probably required (albeit at the time I downloaded the mods from NexusMods so the content may have been different), **but** some of them conflicted with each other due to Caps issue (i.e. EAOmega - eaomega), certain shuttle quirks and BCMMods affected certain filenames and inner files, which back when I was a newbie took me 3 years to fix, made that unadvisable. What I recommend to do is to do the following: get those mods downloaded on a temp folder, grab ONLY the data and sfx folders, make sure they follow the proper folder names, case-sensitive (i.e. they should be called "Icons", not "icon"), icon names, model names and sound names (which are seen inside this super-pack, they are meant to be placeholders so the correct case-sensitive names work), and then, after ensuring all the files are there, copy the unzipped super-pack to another temp folder (let's call it "temp folder SuP"), then copy the data and sfx fixed folders from those mods to "temp folder SuP", and then copy the sfx one from the super-pack again onto "temp folder SuP". That procedure should guarantee that all the folders and files are named properly while using those mod files and having updated sounds (because when Windows OS replaces a file by another it ay replace the contents, but if one was called "AAAA" and the other "aaaa" then the name of the oldest file will remain). 
 
 Also this one, Babylon 5 uniforms https://www.gamefront.com/games/bridge-commander/file/babylon-5-uniforms, but only some elements
 
 ===Installation Guide===
-1º Ok, first of all, just in case, backup your STBC.
+STEP 0: Ok, first of all, just in case, backup your STBC.
+
+1º Follow the steps indicated on mods required as well, skip the babylon 5 uniforms one, which we will do on the following steps.
 
 2º Install the Babylon 5 Uniforms mod from https://www.gamefront.com/games/bridge-commander/file/babylon-5-uniforms on a temporary folder, then go to TEMPFOLDER/scripts/Custom/Autoload and remove the file "Tmp crew".
 
-3º Unzip the files from this main mod onto the temporary folder created in 2, say "yes" to overwrite all files.
+3º Unzip the files from this main mod (the ones already passed through step 2 "temp folder SuP") onto the temporary folder created in 2, say "yes" to overwrite all files.
 
 4º After that, just move the files from the temp folder into your STBC root folder, say "yes" to overwrite all the files (data -> data, scripts -> scripts, sfx -> sfx, and so on).
 

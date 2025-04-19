@@ -18,79 +18,60 @@ Foundation.ShipDef.Andromeda = Foundation.ShipDef(abbrev, species, { 'name': lon
 Foundation.ShipDef.Andromeda.dTechs = {
 	"AutoTargeting": { "Torpedo": [8, 1] },
 	'Breen Drainer Immune': 1,
+	'Fed Ablative Armor': { "Plates": ["Armour"]},
 	'Multivectral Shields': 10,
         "Reflector Shields": 40,
-
 	'Simulated Point Defence' : { "Distance": 120.0, "InnerDistance": 15.0, "Effectiveness": 0.8, "LimitTurn": 5.0, "LimitSpeed": 300, "Period": 0.2, "MaxNumberTorps": 12, "Torpedo": {"Priority": 1}},
-	'Fed Ablative Armor': { "Plates": ["Armour"]
-},
-#'Alternate-Warp-FTL': {
-'SubModel': {
-        "Setup":        {
-                "Body":                 shipFile,
-                "NormalModel":          shipFile,
-                #"WarpModel":            shipFile,
-                "AttackModel":          "AndromedaBattleForm",
-		"WarpIgnoreCall": 1,
-		"SlipstreamIgnoreCall": 1,
-                "Hardpoints":       {
-                        "Battle Blades 1":  [-1.700000, 0.950000, 0.950000],
-                        "Battle Blades 2":  [1.700000, 0.950000, 0.950000],
-                },
-                "AttackHardpoints":       {
-                        "Battle Blades 1":  [-2.700000, 0.980000, 0.850000],
-                        "Battle Blades 2":  [2.700000, 0.980000, 0.850000],
-                },
-        },
-                
-        "Port Wing":     ["andromedaBattleBladeLeft", {
-                "Position":             [0, 0, 0.0],
-                "Rotation":             [0, -0.1, 0.4], # normal Rotation used if not Red Alert and if not Warp
-                "AttackRotation":         [0, 0.1, -0.4],
-                "AttackDuration":         150.0, # Value 200 is 1/100 of a second
-                "AttackPosition":         [0, 0, 0.0],
-                #"WarpRotation":       [0, 0, 0],
-                #"WarpPosition":       [0, 0, 0],
-                #"WarpDuration":       150.0,
-                }
-        ],
-        
-        "Starboard Wing":     ["andromedaBattleBladeRight", {
-                "Position":             [0, 0, 0.0],
-                "Rotation":             [0, 0.1, -0.4],
-                "AttackRotation":         [0, -0.1, 0.4],
-                "AttackDuration":         150.0, # Value is 1/100 of a second
-                "AttackPosition":         [0, 0, 0.0],
-                #"WarpRotation":       [0, 0, 0],
-                #"WarpPosition":       [0, 0, 0],
-                #"WarpDuration":       150.0,
-                }
-        ],
-
-        "PortLow Wing":     ["andromedaBattleBladeRightDown", {
-                "Position":             [-3, 1, 0.0],
-                "Rotation":             [0, 0.1, -0.4], # normal Rotation used if not Red Alert and if not Warp
-                "AttackRotation":         [0, -0.1, 0.2],
-                "AttackDuration":         150.0, # Value 200 is 1/100 of a second
-                "AttackPosition":         [-3, 1, 0.0],
-                #"WarpRotation":       [0, 0, 0],
-                #"WarpPosition":       [-3, 1, 0.0],
-                #"WarpDuration":       150.0,
-                }
-        ],
-
-        "StarboardLow Wing":     ["andromedaBattleBladeLeftDown", {
-                "Position":             [3, 1, 0.0],
-                "Rotation":             [0, -0.1, 0.4],
-                "AttackRotation":         [0, 0.1, -0.2],
-                "AttackDuration":         150.0, # Value is 1/100 of a second
-                "AttackPosition":         [3, 1, 0.0],
-                #"WarpRotation":       [0, 0, 0],
-                #"WarpPosition":       [3, 1, 0.0],
-                #"WarpDuration":       150.0,
-                }
-        ],
-}
+	'SubModel': { #'Alternate-Warp-FTL': {
+	        "Setup":        {
+	                "Body":                 shipFile,
+	                "NormalModel":          shipFile,
+	                #"WarpModel":            shipFile,
+	                "AttackModel":          "AndromedaBattleForm",
+			#"WarpIgnoreCall": 1,
+			#"SlipstreamIgnoreCall": 1,
+	                "Hardpoints":       {
+	                        "Battle Blades 1":  [-1.700000, 0.950000, 0.950000],
+	                        "Battle Blades 2":  [1.700000, 0.950000, 0.950000],
+	                },
+	                "AttackHardpoints":       {
+	                        "Battle Blades 1":  [-2.700000, 0.980000, 0.850000],
+	                        "Battle Blades 2":  [2.700000, 0.980000, 0.850000],
+	                },
+	        },                
+	        "Port Wing":     ["andromedaBattleBladeLeft", {
+	                "Position":             [0, 0, 0.0],
+	                "Rotation":             [0, -0.1, 0.4], # normal Rotation used if not Red Alert and if not Warp
+	                "AttackRotation":         [0, 0.1, -0.4],
+	                "AttackDuration":         150.0, # Value 200 is 1/100 of a second
+	                "AttackPosition":         [0, 0, 0.0],
+	                }
+	        ],        
+	        "Starboard Wing":     ["andromedaBattleBladeRight", {
+	                "Position":             [0, 0, 0.0],
+	                "Rotation":             [0, 0.1, -0.4],
+	                "AttackRotation":         [0, -0.1, 0.4],
+	                "AttackDuration":         150.0, # Value is 1/100 of a second
+	                "AttackPosition":         [0, 0, 0.0],
+	                }
+	        ],
+	        "PortLow Wing":     ["andromedaBattleBladeRightDown", {
+	                "Position":             [-3, 1, 0.0],
+	                "Rotation":             [0, 0.1, -0.4], # normal Rotation used if not Red Alert and if not Warp
+	                "AttackRotation":         [0, -0.1, 0.2],
+	                "AttackDuration":         150.0, # Value 200 is 1/100 of a second
+	                "AttackPosition":         [-3, 1, 0.0],
+	                }
+	        ],
+	        "StarboardLow Wing":     ["andromedaBattleBladeLeftDown", {
+	                "Position":             [3, 1, 0.0],
+	                "Rotation":             [0, -0.1, 0.4],
+	                "AttackRotation":         [0, 0.1, -0.2],
+	                "AttackDuration":         150.0, # Value is 1/100 of a second
+	                "AttackPosition":         [3, 1, 0.0],
+	                }
+	        ],
+	},
 }
 Foundation.ShipDef.Andromeda.bPlanetKiller = 1
 
