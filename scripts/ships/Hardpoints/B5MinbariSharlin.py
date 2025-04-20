@@ -8,13 +8,13 @@ import GlobalPropertyTemplates
 
 # Local Templates
 #################################################
-MinbariSharlin = App.ShipProperty_Create("MinbariSharlin")
+MinbariSharlin = App.ShipProperty_Create("Minbari Sharlin")
 
 MinbariSharlin.SetGenus(1)
 MinbariSharlin.SetSpecies(103)
 MinbariSharlin.SetMass(1600.000000)
 MinbariSharlin.SetRotationalInertia(8000.000000)
-MinbariSharlin.SetShipName("MinbariSharlin")
+MinbariSharlin.SetShipName("B5MinbariSharlin")
 MinbariSharlin.SetModelFilename("data/Models/Ships/MinbariSharlin/MinbariSharlin.nif")
 MinbariSharlin.SetDamageResolution(15.000000)
 MinbariSharlin.SetAffiliation(0)
@@ -1350,6 +1350,9 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(NeutronPulse4)
 # Property Set
 def LoadPropertySet(pObj):
 	"Sets up the object's properties."
+	prop = App.g_kModelPropertyManager.FindByName("Minbari Sharlin", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	if (prop != None):
+		pObj.AddToSet("Scene Root", prop)
 	prop = App.g_kModelPropertyManager.FindByName("Hull", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
@@ -1435,9 +1438,6 @@ def LoadPropertySet(pObj):
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
 	prop = App.g_kModelPropertyManager.FindByName("Neutron Pulse 4", App.TGModelPropertyManager.LOCAL_TEMPLATES)
-	if (prop != None):
-		pObj.AddToSet("Scene Root", prop)
-	prop = App.g_kModelPropertyManager.FindByName("MinbariSharlin", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
 	prop = App.g_kModelPropertyManager.FindByName("Tractors", App.TGModelPropertyManager.LOCAL_TEMPLATES)

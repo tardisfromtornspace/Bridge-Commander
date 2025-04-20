@@ -3,7 +3,7 @@
 
 
 Carrier = __import__('ftb.Carrier')
-class MinbariSharlin(Carrier.Carrier):
+class B5MinbariSharlin(Carrier.Carrier):
    def __init__(self, pShip):
                Carrier.Carrier.__init__(self, pShip)
                LauncherGroup = __import__('ftb.LauncherGroup')
@@ -28,4 +28,4 @@ class MinbariSharlin(Carrier.Carrier):
 
 
 ShipManager = __import__('ftb.ShipManager')
-ShipManager.RegisterShipClass('MinbariSharlin', MinbariSharlin)
+ShipManager.RegisterShipClass('B5MinbariSharlin', B5MinbariSharlin)

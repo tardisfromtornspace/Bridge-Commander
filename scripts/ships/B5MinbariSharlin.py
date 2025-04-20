@@ -7,8 +7,8 @@ def GetShipStats():
 		"FilenameHigh": "data/Models/Ships/MinbariSharlin/MinbariSharlin.nif",
 		"FilenameMed": "data/Models/Ships/MinbariSharlin/MinbariSharlin.nif",
 		"FilenameLow": "data/Models/Ships/MinbariSharlin/MinbariSharlin.nif",
-		"Name": "MinbariSharlin",
-		"HardpointFile": "MinbariSharlin",
+		"Name": "B5MinbariSharlin",
+		"HardpointFile": "B5MinbariSharlin",
 		"Species": Multiplayer.SpeciesToShip.AMBASSADOR
 	}
 	return kShipStats
