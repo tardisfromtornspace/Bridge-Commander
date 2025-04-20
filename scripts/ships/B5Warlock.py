@@ -6,8 +6,8 @@ def GetShipStats():
 		"FilenameHigh": "data/Models/Ships/Warlock/Warlock.nif",
 		"FilenameMed": "data/Models/Ships/Warlock/WarlockMed.nif",
 		"FilenameLow": "data/Models/Ships/Warlock/WarlockLow.nif",
-		"Name": "Warlock",
-		"HardpointFile": "warlock",
+		"Name": "B5Warlock",
+		"HardpointFile": "B5warlock",
 		"Species": Multiplayer.SpeciesToShip.MARAUDER
 	}
 	return kShipStats

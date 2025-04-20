@@ -3,7 +3,7 @@
 
 
 Carrier = __import__('ftb.Carrier')
-class Warlock(Carrier.Carrier):
+class B5Warlock(Carrier.Carrier):
    def __init__(self, pShip):
                Carrier.Carrier.__init__(self, pShip)
                LauncherGroup = __import__('ftb.LauncherGroup')
@@ -31,4 +31,4 @@ class Warlock(Carrier.Carrier):
 
 
 ShipManager = __import__('ftb.ShipManager')
-ShipManager.RegisterShipClass('Warlock', Warlock)
+ShipManager.RegisterShipClass('B5Warlock', B5Warlock)

@@ -1,4 +1,4 @@
-# D:\Games\bc\scripts\ships\Hardpoints\Warlock.py
+# D:\Games\bc\scripts\ships\Hardpoints\B5Warlock.py
 # This file was automatically generated - modify at your own risk.
 # 
 
@@ -118,7 +118,7 @@ EAWarlock.SetGenus(1)
 EAWarlock.SetSpecies(301)
 EAWarlock.SetMass(1600.000000)
 EAWarlock.SetRotationalInertia(20000.000000)
-EAWarlock.SetShipName("Warlock")
+EAWarlock.SetShipName("B5Warlock")
 EAWarlock.SetModelFilename("data/Models/Ships/Warbird.nif")
 EAWarlock.SetDamageResolution(12.000000)
 EAWarlock.SetAffiliation(0)
