@@ -6,8 +6,8 @@ def GetShipStats():
 		"FilenameHigh": "data/Models/Ships/Battlecrab/battlecrab.nif",
 		"FilenameMed": "data/Models/Ships/Battlecrab/battlecrab.nif",
 		"FilenameLow": "data/Models/Ships/Battlecrab/battlecrab.nif",
-		"Name": "Battlecrab",
-		"HardpointFile": "Battlecrab",
+		"Name": "B5Battlecrab",
+		"HardpointFile": "B5Battlecrab",
 		"Species": Multiplayer.SpeciesToShip.SOVEREIGN,
 	}
 	return kShipStats

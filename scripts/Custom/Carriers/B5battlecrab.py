@@ -3,7 +3,7 @@
 
 
 Carrier = __import__('ftb.Carrier')
-class battlecrab(Carrier.Carrier):
+class B5battlecrab(Carrier.Carrier):
    def __init__(self, pShip):
                Carrier.Carrier.__init__(self, pShip)
                LauncherGroup = __import__('ftb.LauncherGroup')
@@ -28,4 +28,4 @@ class battlecrab(Carrier.Carrier):
 
 
 ShipManager = __import__('ftb.ShipManager')
-ShipManager.RegisterShipClass('battlecrab', battlecrab)
+ShipManager.RegisterShipClass('B5battlecrab', B5battlecrab)

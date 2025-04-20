@@ -1,4 +1,4 @@
-# C:\Programme\Activision\Babylon 5 Bridge Commander\scripts\ships\Hardpoints\Battlecrab.py
+# C:\Programme\Activision\Babylon 5 Bridge Commander\scripts\ships\Hardpoints\B5Battlecrab.py
 # This file was automatically generated - modify at your own risk.
 # 
 
@@ -119,7 +119,7 @@ ShadowBattlecrab.SetGenus(0)
 ShadowBattlecrab.SetSpecies(401)
 ShadowBattlecrab.SetMass(11000.000000)
 ShadowBattlecrab.SetRotationalInertia(1000.000000)
-ShadowBattlecrab.SetShipName("battlecrab")
+ShadowBattlecrab.SetShipName("B5battlecrab")
 ShadowBattlecrab.SetModelFilename("data/Models/Ships/battlecrab/battlecrab.nif")
 ShadowBattlecrab.SetDamageResolution(0.000010)
 ShadowBattlecrab.SetAffiliation(0)

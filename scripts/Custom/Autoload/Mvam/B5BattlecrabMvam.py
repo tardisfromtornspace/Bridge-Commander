@@ -37,7 +37,7 @@ import App
 
 
 ###TO CHANGE: what ships are in this? start with the full ship, then the ones that seperate
-MvamShips = ["Battlecrab", "Battlecrab", "Shadow_Fighter2", "Shadow_Fighter3", "Shadow_Fighter4", "Shadow_Fighter5", "Shadow_Fighter6", "Shadow_Fighter7"]
+MvamShips = ["B5Battlecrab", "B5Battlecrab", "Shadow_Fighter2", "Shadow_Fighter3", "Shadow_Fighter4", "Shadow_Fighter5", "Shadow_Fighter6", "Shadow_Fighter7"]
 
 
 #this is to make things less confusing... don't touch this!
@@ -189,7 +189,7 @@ AiSepAbility = 1
 
 ###TO CHANGE: name the following def's EXACTLY what the seperated mvam ships are called. You need to have as many def's
 ############# as you have ships seperating (we aren't counting the integrated ship).
-def Battlecrab(pObject, pEvent):
+def B5Battlecrab(pObject, pEvent):
 
 
 	# get the base variables
@@ -202,7 +202,7 @@ def Battlecrab(pObject, pEvent):
 
 
 ###TO CHANGE: change the last word in quotes in the next line to the name of the def
-		Custom.Sneaker.Mvam.Seperation.Seperation(snkMvamModule, "Battlecrab")
+		Custom.Sneaker.Mvam.Seperation.Seperation(snkMvamModule, "B5Battlecrab")
 
 
 	pObject.CallNextHandler(pEvent)

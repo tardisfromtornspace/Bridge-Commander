@@ -3,7 +3,7 @@ import Foundation
 
 # Usually you need only edit these seven lines
 abbrev = 'B5Warlock'
-iconName = 'Warlock'
+iconName = 'B5Warlock'
 longName = 'Warlock'
 shipFile = 'B5Warlock' 
 menuGroup = 'Babylon 5'
