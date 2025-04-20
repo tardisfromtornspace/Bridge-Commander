@@ -40,6 +40,12 @@ Foundation.ShipDef.MidwayStation = Foundation.ShipDef(abbrev, species, { 'name':
 Foundation.ShipDef.MidwayStation.dTechs = {
 	'SG Shields': { "RaceShieldTech": "Asgard" }
 }
+
+Foundation.ShipDef.MidwayStation.fMaxWarp = 1.0
+Foundation.ShipDef.MidwayStation.fCruiseWarp = 1.0
+Foundation.ShipDef.MidwayStation.IsSGWorkingStargate = 3
+Foundation.ShipDef.MidwayStation.SGWorkingStargateRad = 0.17
+Foundation.ShipDef.MidwayStation.SGWorkingStargateFlashRad = 0.08
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

@@ -18,6 +18,21 @@ def LoadTunnel(pSet):
         fTunnel.SetTargetable(0)
         fTunnel.SetCollisionsOn(0)
         fTunnel.SetScale(scale)
+
+        TunnelString2 = "Slipstream Inner"
+        pTunnel = loadspacehelper.CreateShip("slipstream", pSet, TunnelString2, "Player Start")
+        fTunnel2 = MissionLib.GetShip(TunnelString2, pSet)
+
+	fTunnel2.EnableCollisionsWith(fTunnel, 0)
+        vCurVelocity2 = App.TGPoint3()
+        vCurVelocity2.SetXYZ(0, 0.8, 0)
+        fTunnel2.SetAngularVelocity(vCurVelocity, App.PhysicsObjectClass.DIRECTION_MODEL_SPACE)
+        fTunnel2.SetInvincible(1)
+        fTunnel2.SetHurtable(0)
+        fTunnel2.SetTargetable(0)
+        fTunnel2.SetCollisionsOn(0)
+        fTunnel2.SetScale(scale)
+
 def Initialize():
 	global SET_NAME
 	pSet = App.SetClass_Create()

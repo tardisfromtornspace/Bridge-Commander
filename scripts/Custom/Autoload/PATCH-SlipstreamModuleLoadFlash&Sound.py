@@ -313,7 +313,7 @@ if myDependingTravelModule != None and myDependingTravelModuleLib != None:
 			if pShipID == None or (pPlayer != None and pShipID == pPlayer.GetObjID()):
 				return oldStartGFX()
 
-			pModule = __import__(pPlayer.GetScript())
+			pModule = __import__(pShip.GetScript())
 
 			# Is there a customization for this ship available?
 			if hasattr(pModule, "SlipstreamCustomizations"):
@@ -425,9 +425,8 @@ if myDependingTravelModule != None and myDependingTravelModuleLib != None:
 		myDependingTravelModuleLib.GetTexture = GetTexture
 		myDependingTravelModuleLib.CreateGFX = CreateGFX
 
-	except:
-		print str(__name__) + ": Error while patching ", myDependingTravelModulePath
-		traceback.print_exc()
+		print str(__name__) + ": patched " + str(myDependingTravelModulePath) + " for AI GalaxyCharts Customization."
 
-if myDependingTravelModule != None and myDependingTravelModuleLib != None:	
-	print str(__name__) + ": patched ", myDependingTravelModulePath, " for AI GalaxyCharts Customization."
+	except:
+		print str(__name__) + ": Error while patching " + str(myDependingTravelModulePath)
+		traceback.print_exc()

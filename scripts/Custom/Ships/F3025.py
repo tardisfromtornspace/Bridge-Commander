@@ -39,6 +39,9 @@ Foundation.ShipDef.F3025 = Foundation.FedShipDef(abbrev, species, { 'iconName': 
 Foundation.ShipDef.F3025.dTechs = {
 	'SG Shields': { "RaceShieldTech": "None" }
 }
+
+Foundation.ShipDef.F3025.fMaxWarp = 1.8
+Foundation.ShipDef.F3025.fCruiseWarp = 1.0
 #                                                                                     #
 # Com-man's note: Of course you need to remove the 'name': longname here too for it   #
 # to work.              						                          #

@@ -40,6 +40,9 @@ Foundation.ShipDef.NeedleThreader = Foundation.ShipDef(abbrev, species, { 'name'
 Foundation.ShipDef.NeedleThreader.dTechs = {
 	'SG Shields': { "RaceShieldTech": "Go'auld" }
 }
+
+Foundation.ShipDef.NeedleThreader.fMaxWarp = 2.25
+Foundation.ShipDef.NeedleThreader.fCruiseWarp = 1.0
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

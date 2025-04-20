@@ -40,6 +40,11 @@ Foundation.ShipDef.PegActive = Foundation.ShipDef(abbrev, species, { 'name': lon
 Foundation.ShipDef.PegActive.dTechs = {
 	'SG Shields': { "RaceShieldTech": "Lantean" }
 }
+
+Foundation.ShipDef.PegActive.fMaxWarp = 1.0
+Foundation.ShipDef.PegActive.fCruiseWarp = 1.0
+Foundation.ShipDef.PegActive.IsSGWorkingStargate = -3
+Foundation.ShipDef.PegActive.SGWorkingStargateRad = 0.17
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

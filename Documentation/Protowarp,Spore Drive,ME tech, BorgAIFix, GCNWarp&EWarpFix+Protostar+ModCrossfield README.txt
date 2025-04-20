@@ -1,4 +1,6 @@
 == Changelog ==
+0.6.4 - Updates:
+  * Updated Spore Drive for more efficient tractor ISI check.
 0.6.3 - Updates:
   * Updated AlternateSubModelsFTL to 0.86 to support new "IgnoreCall" parameter and to clarify documentation better.
 0.6.2 - Updates:

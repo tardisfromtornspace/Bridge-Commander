@@ -40,6 +40,9 @@ Foundation.ShipDef.OriSatellite = Foundation.ShipDef(abbrev, species, { 'name': 
 Foundation.ShipDef.OriSatellite.dTechs = {
 	'SG Shields': { "RaceShieldTech": "Ori" }
 }
+
+Foundation.ShipDef.OriSatellite.fMaxWarp = 8.0
+Foundation.ShipDef.OriSatellite.fCruiseWarp = 2.0
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

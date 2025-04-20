@@ -42,6 +42,9 @@ Foundation.ShipDef.Satellite.dTechs = {
 	'SG Shields': { "RaceShieldTech": "Asuran" },
 	"TachyonBeam": { "Immune": -1 }
 }
+
+Foundation.ShipDef.Satellite.fMaxWarp = 8.25
+Foundation.ShipDef.Satellite.fCruiseWarp = 3.25
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

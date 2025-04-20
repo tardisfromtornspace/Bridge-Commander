@@ -42,6 +42,9 @@ Foundation.ShipDef.ReplicatorWarship.dTechs = {
 	"SGReplicator Adaptation": 1,
 	'SG Shields': { "RaceShieldTech": "Replicator" }
 }
+
+Foundation.ShipDef.ReplicatorWarship.fMaxWarp = 9.0
+Foundation.ShipDef.ReplicatorWarship.fCruiseWarp = 9.0
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

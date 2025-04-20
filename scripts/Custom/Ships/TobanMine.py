@@ -41,6 +41,9 @@ Foundation.ShipDef.TobanMine = F_DomRamAI.DomRamAI(abbrev, species, { 'name': lo
 Foundation.ShipDef.TobanMine.dTechs = {
 	'SG Shields': { "RaceShieldTech": "Go'auld" }
 }
+
+Foundation.ShipDef.TobanMine.fMaxWarp = 2.0
+Foundation.ShipDef.TobanMine.fCruiseWarp = 1.0
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

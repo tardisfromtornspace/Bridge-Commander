@@ -50,6 +50,10 @@ Foundation.ShipDef.DSC304ApolloRefitS.dTechs = {
 	"SG Asgard Beams Weapon": {"HullDmgMultiplier": 1.0, "ShieldDmgMultiplier": 1.0},
 	'SG Shields': { "RaceShieldTech": "Asgard", "RaceHullTech": "Tau'ri" }
 }
+
+
+Foundation.ShipDef.DSC304ApolloRefitS.fMaxWarp = 6.5
+Foundation.ShipDef.DSC304ApolloRefitS.fCruiseWarp = 6.25
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

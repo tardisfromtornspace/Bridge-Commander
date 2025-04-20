@@ -41,6 +41,9 @@ Foundation.ShipDef.X301 = Foundation.ShipDef(abbrev, species, { 'name': longName
 Foundation.ShipDef.X301.dTechs = {
 	'SG Shields': { "RaceShieldTech": "Go'auld" }
 }
+
+Foundation.ShipDef.X301.fMaxWarp = 1.0
+Foundation.ShipDef.X301.fCruiseWarp = 1.0
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

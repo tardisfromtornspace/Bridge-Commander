@@ -46,6 +46,9 @@ Foundation.ShipDef.OdysseyRefit.dTechs = {
 	"SG Asgard Beams Weapon": {"HullDmgMultiplier": 1.0, "ShieldDmgMultiplier": 1.0, "FacetFactor": 2.0},
 	'SG Shields': { "RaceShieldTech": "Asgard", "RaceHullTech": "Tau'ri" }
 }
+
+Foundation.ShipDef.OdysseyRefit.fMaxWarp = 9.4
+Foundation.ShipDef.OdysseyRefit.fCruiseWarp = 6.8
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

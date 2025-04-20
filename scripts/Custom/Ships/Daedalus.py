@@ -37,6 +37,9 @@ Foundation.ShipDef.Daedalus.dTechs = {
 	"AutoTargeting": { "Pulse": [3, 1] },
 	'SG Shields': { "RaceShieldTech": "Asgard", "RaceHullTech": "Tau'ri" }
 }
+
+Foundation.ShipDef.Daedalus.fMaxWarp = 6.0
+Foundation.ShipDef.Daedalus.fCruiseWarp = 5.9
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

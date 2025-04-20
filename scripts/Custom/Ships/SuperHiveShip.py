@@ -46,6 +46,9 @@ Foundation.ShipDef.SuperHiveShip.dTechs = {
 	"Multivectral Shields": 100,
 	'SG Shields': { "RaceShieldTech": "Wraith", "Wraith Dampening" : 0.5 }
 }
+
+Foundation.ShipDef.SuperHiveShip.fMaxWarp = 7.9
+Foundation.ShipDef.SuperHiveShip.fCruiseWarp = 7.9
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

@@ -41,6 +41,8 @@ Foundation.ShipDef.SGGalacticaRefit.dTechs = {
 	'Fed Ablative Armor': { "Plates": ["Armour"]},
 	'SG Shields': { "RaceShieldTech": "Go'auld" }
 }
+Foundation.ShipDef.SGGalacticaRefit.fMaxWarp = 2.1
+Foundation.ShipDef.SGGalacticaRefit.fCruiseWarp = 1.9
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

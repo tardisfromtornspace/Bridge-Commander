@@ -40,6 +40,10 @@ Foundation.ShipDef.Orion = Foundation.ShipDef(abbrev, species, { 'name': longNam
 Foundation.ShipDef.Orion.dTechs = {
 	'SG Shields': { "RaceShieldTech": "Lantean" }
 }
+
+
+Foundation.ShipDef.Orion.fMaxWarp = 8.0
+Foundation.ShipDef.Orion.fCruiseWarp = 2.0
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

@@ -41,6 +41,9 @@ Foundation.ShipDef.F302 = Foundation.FedShipDef(abbrev, species, { 'name': longN
 Foundation.ShipDef.F302.dTechs = {
 	'SG Shields': { "RaceShieldTech": "None" }
 }
+
+Foundation.ShipDef.F302.fMaxWarp = 1.8
+Foundation.ShipDef.F302.fCruiseWarp = 1.0
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

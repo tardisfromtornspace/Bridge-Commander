@@ -41,6 +41,9 @@ Foundation.ShipDef.Nuke = F_MineAI.MineDef(abbrev, species, { 'name': longName, 
 Foundation.ShipDef.Nuke.dTechs = {
 	'SG Shields': { "RaceShieldTech": "None" }
 }
+
+Foundation.ShipDef.Nuke.fMaxWarp = 2.25
+Foundation.ShipDef.Nuke.fCruiseWarp = 1.0
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

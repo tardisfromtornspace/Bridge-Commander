@@ -40,6 +40,9 @@ Foundation.ShipDef.PuddleJumper = Foundation.ShipDef(abbrev, species, { 'name': 
 Foundation.ShipDef.PuddleJumper.dTechs = {
 	'SG Shields': { "RaceShieldTech": "Alteran" }
 }
+
+Foundation.ShipDef.PuddleJumper.fMaxWarp = 2.02
+Foundation.ShipDef.PuddleJumper.fCruiseWarp = 1.55
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

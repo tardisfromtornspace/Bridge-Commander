@@ -38,6 +38,9 @@ Foundation.ShipDef.Pod4 = Foundation.FedShipDef(abbrev, species, { 'iconName': i
 Foundation.ShipDef.Pod4.dTechs = {
 	'SG Shields': { "RaceShieldTech": "Go'auld" }
 }
+
+Foundation.ShipDef.Pod4.fMaxWarp = 2.0
+Foundation.ShipDef.Pod4.fCruiseWarp = 1.0
 #                                                                                     #
 # Com-man's note: Of course you need to remove the 'name': longname here too for it   #
 # to work.              						                          #

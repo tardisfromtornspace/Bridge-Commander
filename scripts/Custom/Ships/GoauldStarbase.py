@@ -41,6 +41,9 @@ Foundation.ShipDef.GoauldStarbase.dTechs = {
 	"AutoTargeting": { "Pulse": [6, 0] },
 	'SG Shields': { "RaceShieldTech": "Starbase Go'auld" }
 }
+
+Foundation.ShipDef.GoauldStarbase.fMaxWarp = 2.25
+Foundation.ShipDef.GoauldStarbase.fCruiseWarp = 2.25
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

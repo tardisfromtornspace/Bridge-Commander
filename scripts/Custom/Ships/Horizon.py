@@ -36,6 +36,9 @@ Foundation.ShipDef.Horizon = Foundation.ShipDef(abbrev, species, { 'iconName': i
 Foundation.ShipDef.Horizon.dTechs = {
 	'SG Shields': { "RaceShieldTech": "Go'auld" }
 }
+
+Foundation.ShipDef.Horizon.fMaxWarp = 1.0
+Foundation.ShipDef.Horizon.fCruiseWarp = 1.0
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

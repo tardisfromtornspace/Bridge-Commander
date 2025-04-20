@@ -44,6 +44,13 @@ Foundation.ShipDef.Atlantis.dTechs = {
 	'Breen Drainer Immune': 0,
 	'Alteran ZPM Shields': { "Strength": 1 }
 }
+
+Foundation.ShipDef.Atlantis.fMaxWarp = 3.0
+Foundation.ShipDef.Atlantis.fCruiseWarp = 2.25
+
+Foundation.ShipDef.Atlantis.IsSGWorkingStargate = 3
+Foundation.ShipDef.Atlantis.SGWorkingStargateRad = 0.17
+Foundation.ShipDef.Atlantis.SGWorkingStargateFlashRad = 0.08
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

@@ -43,6 +43,10 @@ Foundation.ShipDef.WraithCruiser.dTechs = {
 	'Breen Drainer Immune': 1,
 	'SG Shields': { "RaceShieldTech": "Wraith" }
 }
+
+
+Foundation.ShipDef.WraithCruiser.fMaxWarp = 2.03
+Foundation.ShipDef.WraithCruiser.fCruiseWarp = 1.95
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

@@ -40,6 +40,9 @@ Foundation.ShipDef.ApophisFlagship = Foundation.ShipDef(abbrev, species, { 'name
 Foundation.ShipDef.ApophisFlagship.dTechs = {
 	'SG Shields': { "RaceShieldTech": "Go'auld" }
 }
+
+Foundation.ShipDef.ApophisFlagship.fMaxWarp = 2.25
+Foundation.ShipDef.ApophisFlagship.fCruiseWarp = 2.25
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

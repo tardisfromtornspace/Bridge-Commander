@@ -41,6 +41,9 @@ Foundation.ShipDef.DSC304Korolev.dTechs = {
 	"AutoTargeting": { "Pulse": [3, 1] },
 	'SG Shields': { "RaceShieldTech": "Asgard", "RaceHullTech": "Tau'ri" }
 }
+
+Foundation.ShipDef.DSC304Korolev.fMaxWarp = 6.0
+Foundation.ShipDef.DSC304Korolev.fCruiseWarp = 6.0
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

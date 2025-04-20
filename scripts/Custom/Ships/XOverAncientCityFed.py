@@ -42,6 +42,12 @@ Foundation.ShipDef.XOverAncientCityFed.dTechs = {
 	'Alteran ZPM Shields': { "Strength": 1 }
 }
 
+Foundation.ShipDef.XOverAncientCityFed.fMaxWarp = 9.99
+Foundation.ShipDef.XOverAncientCityFed.fCruiseWarp = 5.2
+
+Foundation.ShipDef.XOverAncientCityFed.IsSGWorkingStargate = 3
+Foundation.ShipDef.XOverAncientCityFed.SGWorkingStargateRad = 0.17
+Foundation.ShipDef.XOverAncientCityFed.SGWorkingStargateFlashRad = 0.08
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

@@ -41,6 +41,9 @@ Foundation.ShipDef.OriFighter.dTechs = {
 	'SG Shields': { "RaceShieldTech": "Ori" },
 	"TachyonBeam": { "Immune": -1 }
 }
+
+Foundation.ShipDef.OriFighter.fMaxWarp = 2.25
+Foundation.ShipDef.OriFighter.fCruiseWarp = 1.55
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

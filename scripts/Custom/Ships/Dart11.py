@@ -41,6 +41,9 @@ Foundation.ShipDef.Dart11 = Foundation.FedShipDef(abbrev, species, { 'iconName':
 Foundation.ShipDef.Dart11.dTechs = {
 	'SG Shields': { "RaceShieldTech": "Wraith" }
 }
+
+Foundation.ShipDef.Dart11.fMaxWarp = 2.03
+Foundation.ShipDef.Dart11.fCruiseWarp = 1.2
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

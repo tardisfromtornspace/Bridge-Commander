@@ -33,9 +33,12 @@ credits = {
 # automatically generated the proper ShipDef Line for you.                            #
 #                                                                                     #
 Foundation.ShipDef.Glider6 = Foundation.ShipDef(abbrev, species, { 'iconName': iconName, 'shipFile': shipFile })
-Foundation.ShipDef.Glider1.dTechs = {
+Foundation.ShipDef.Glider6.dTechs = {
 	'SG Shields': { "RaceShieldTech": "Go'auld" }
 }
+
+Foundation.ShipDef.Glider6.fMaxWarp = 2.25
+Foundation.ShipDef.Glider6.fCruiseWarp = 1.0
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

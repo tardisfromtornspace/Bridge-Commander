@@ -41,6 +41,9 @@ Foundation.ShipDef.AncientCruiser.dTechs = {
 	'Breen Drainer Immune': 1,
 	'SG Shields': { "RaceShieldTech": "Lantian" }
 }
+
+Foundation.ShipDef.AncientCruiser.fMaxWarp = 8.0
+Foundation.ShipDef.AncientCruiser.fCruiseWarp = 3.0
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

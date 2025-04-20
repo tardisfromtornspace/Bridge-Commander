@@ -38,8 +38,10 @@ credits = {
 #                                                                                     #
 Foundation.ShipDef.ModifiedTelTak = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
 Foundation.ShipDef.ModifiedTelTak.dTechs = {
-	'SG Shields': { "RaceShieldTech": "Uprated Go'auld" }
+	'SG Shields': { "RaceShieldTech": "Uprated Goa'uld" }
 }
+Foundation.ShipDef.ModifiedTelTak.fMaxWarp = 3.25
+Foundation.ShipDef.ModifiedTelTak.fCruiseWarp = 3.0
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

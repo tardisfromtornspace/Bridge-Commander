@@ -40,6 +40,9 @@ Foundation.ShipDef.PyramidShip = Foundation.ShipDef(abbrev, species, { 'name': l
 Foundation.ShipDef.PyramidShip.dTechs = {
 	'SG Shields': { "RaceShieldTech": "Go'auld" }
 }
+
+Foundation.ShipDef.PyramidShip.fMaxWarp = 2.1
+Foundation.ShipDef.PyramidShip.fCruiseWarp = 1.9
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

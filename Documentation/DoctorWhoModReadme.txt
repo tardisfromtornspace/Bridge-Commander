@@ -1,4 +1,6 @@
 == Changelog ==
+1.2.2 - Updates:
+   * Upgraded TimeVortex TravellingMethod to provide a slightly more efficient ISI tractor check.
 1.2.1 - Updates:
    * Upgraded TimeVortex TravellingMethod to provide a slightly more efficient check for if a ship has this travelling method.
 1.2.0 - Updates:

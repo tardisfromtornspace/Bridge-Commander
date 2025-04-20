@@ -41,6 +41,9 @@ Foundation.ShipDef.DanielJackson.dTechs = {
 	'SG Shields': { "RaceShieldTech": "Asgard", "FacetFactor" : 3 },
 	"TachyonBeam": { "Immune": -1 }
 }
+
+Foundation.ShipDef.DanielJackson.fMaxWarp = 9.2
+Foundation.ShipDef.DanielJackson.fCruiseWarp = 9.2
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

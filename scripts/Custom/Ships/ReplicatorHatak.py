@@ -41,6 +41,10 @@ Foundation.ShipDef.ReplicatorHatak.dTechs = {
 	"SGReplicator Adaptation": 1,
 	'SG Shields': { "RaceShieldTech": "Replicator", "RaceHullTech": "Go'auld" }
 }
+
+
+Foundation.ShipDef.ReplicatorHatak.fMaxWarp = 9.0
+Foundation.ShipDef.ReplicatorHatak.fCruiseWarp = 9.0
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

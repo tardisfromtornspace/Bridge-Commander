@@ -37,7 +37,14 @@ credits = {
 # automatically generated the proper ShipDef Line for you.                            #
 #                                                                                     #
 Foundation.ShipDef.XOverAlteranWarship = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
-Foundation.ShipDef.XOverAlteranWarship.dTechs = {'Breen Drainer Immune': 1}
+Foundation.ShipDef.XOverAlteranWarship.dTechs = {
+	'Breen Drainer Immune': 1,
+	'Simulated Point Defence' : { "Distance": 120.0, "InnerDistance": 15.0, "Effectiveness": 1.0, "LimitTurn": 18.0, "LimitSpeed": 50, "LimitDamage": "-48", "Period": 0.2, "MaxNumberTorps": 1, "Torpedo": {"Priority": 1}},
+	'SG Shields': { "RaceShieldTech": "Lantian" }
+}
+
+Foundation.ShipDef.XOverAlteranWarship.fMaxWarp = 9.5
+Foundation.ShipDef.XOverAlteranWarship.fCruiseWarp = 7.0
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

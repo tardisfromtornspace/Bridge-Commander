@@ -40,6 +40,9 @@ Foundation.ShipDef.TelTakVariant = Foundation.ShipDef(abbrev, species, { 'name':
 Foundation.ShipDef.TelTakVariant.dTechs = {
 	'SG Shields': { "RaceShieldTech": "Go'auld" }
 }
+
+Foundation.ShipDef.TelTakVariant.fMaxWarp = 2.25
+Foundation.ShipDef.TelTakVariant.fCruiseWarp = 1.9
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

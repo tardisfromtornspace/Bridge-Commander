@@ -40,6 +40,9 @@ Foundation.ShipDef.AsuranSatellite = Foundation.ShipDef(abbrev, species, { 'name
 Foundation.ShipDef.AsuranSatellite.dTechs = {
 	'SG Shields': { "RaceShieldTech": "Asuran" }
 }
+
+Foundation.ShipDef.AsuranSatellite.fMaxWarp = 8.25
+Foundation.ShipDef.AsuranSatellite.fCruiseWarp = 3.25
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

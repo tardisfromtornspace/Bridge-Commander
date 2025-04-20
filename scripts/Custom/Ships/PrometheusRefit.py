@@ -37,6 +37,9 @@ Foundation.ShipDef.PrometheusRefit.dTechs = {
 	"AutoTargeting": { "Pulse": [3, 1] },
 	'SG Shields': { "RaceShieldTech": "Asgard - Go'auld Hybrid", "RaceHullTech": "Tau'ri" }
 }
+
+Foundation.ShipDef.PrometheusRefit.fMaxWarp = 6.0
+Foundation.ShipDef.PrometheusRefit.fCruiseWarp = 5.75
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

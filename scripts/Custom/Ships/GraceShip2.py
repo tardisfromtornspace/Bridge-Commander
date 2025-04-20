@@ -37,6 +37,9 @@ Foundation.ShipDef.GraceShip2.dTechs = {
 	'SG Shields': { "RaceShieldTech": "Grace" },
 	'Simulated Point Defence' : { "Distance": 60.0, "InnerDistance": 12.0, "Effectiveness": 0.99, "LimitTurn": 8.5, "LimitSpeed": 250, "LimitDamage": "-600", "Period": 8.0, "MaxNumberTorps": 2, "Pulse": {"Priority": 1}},
 }
+
+Foundation.ShipDef.GraceShip2.fMaxWarp = 4.0
+Foundation.ShipDef.GraceShip2.fCruiseWarp = 3.0
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

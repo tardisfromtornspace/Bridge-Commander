@@ -37,6 +37,9 @@ credits = {
 # automatically generated the proper ShipDef Line for you.                            #
 #                                                                                     #
 Foundation.ShipDef.XOverAncientSatelliteFed = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
+
+Foundation.ShipDef.XOverAncientSatelliteFed.fMaxWarp = 2.03
+Foundation.ShipDef.XOverAncientSatelliteFed.fCruiseWarp = 1.1
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

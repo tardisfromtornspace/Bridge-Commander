@@ -40,6 +40,9 @@ Foundation.ShipDef.MartinsShip = Foundation.ShipDef(abbrev, species, { 'name': l
 Foundation.ShipDef.MartinsShip.dTechs = {
 	'SG Shields': { "RaceShieldTech": "Martin Lloyds People" }
 }
+
+Foundation.ShipDef.MartinsShip.fMaxWarp = 2.1
+Foundation.ShipDef.MartinsShip.fCruiseWarp = 0.7
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

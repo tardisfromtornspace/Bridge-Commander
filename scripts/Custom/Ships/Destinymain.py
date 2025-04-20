@@ -42,6 +42,9 @@ Foundation.ShipDef.Destinymain.dTechs = {
 	"AutoTargeting": { "Pulse": [3, 1] },
 	'SG Shields': { "RaceShieldTech": "Ancient Alteran" }
 }
+
+Foundation.ShipDef.Destinymain.fMaxWarp = 7.0
+Foundation.ShipDef.Destinymain.fCruiseWarp = 7.0
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

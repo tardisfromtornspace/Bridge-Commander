@@ -42,6 +42,10 @@ Foundation.ShipDef.ActiveSupergate.dTechs = {
 	'SG Shields': { "RaceShieldTech": "Ori" },
 	"TachyonBeam": { "Immune": -1 }
 }
+
+Foundation.ShipDef.ActiveSupergate.fMaxWarp = 8.0
+Foundation.ShipDef.ActiveSupergate.fCruiseWarp = 1.0
+Foundation.ShipDef.ActiveSupergate.IsSGWorkingStargate = 1
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

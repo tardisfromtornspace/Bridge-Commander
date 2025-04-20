@@ -40,6 +40,9 @@ Foundation.ShipDef.DeathGlider = Foundation.ShipDef(abbrev, species, { 'name': l
 Foundation.ShipDef.DeathGlider.dTechs = {
 	'SG Shields': { "RaceShieldTech": "Go'auld" }
 }
+
+Foundation.ShipDef.DeathGlider.fMaxWarp = 2.25
+Foundation.ShipDef.DeathGlider.fCruiseWarp = 1.0
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

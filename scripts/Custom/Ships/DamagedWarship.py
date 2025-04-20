@@ -36,6 +36,9 @@ Foundation.ShipDef.DamagedWarship = Foundation.ShipDef(abbrev, species, { 'iconN
 Foundation.ShipDef.DamagedWarship.dTechs = {
 	'SG Shields': { "RaceShieldTech": "Lantian" }
 }
+
+Foundation.ShipDef.AncientWarship.fMaxWarp = 8.0
+Foundation.ShipDef.AncientWarship.fCruiseWarp = 2.0
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

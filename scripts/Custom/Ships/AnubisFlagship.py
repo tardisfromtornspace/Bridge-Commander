@@ -42,6 +42,9 @@ Foundation.ShipDef.AnubisFlagship.dTechs = {
 	'Breen Drainer Immune': 1,
 	'SG Shields': { "RaceShieldTech": "Anubis Go'auld", "Superweapon" : 1}
 }
+
+Foundation.ShipDef.AnubisFlagship.fMaxWarp = 2.35
+Foundation.ShipDef.AnubisFlagship.fCruiseWarp = 2.25
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

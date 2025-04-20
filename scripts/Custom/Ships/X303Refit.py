@@ -41,6 +41,9 @@ Foundation.ShipDef.X303Refit.dTechs = {
 	"AutoTargeting": { "Pulse": [3, 1] },
 	'SG Shields': { "RaceShieldTech": "Asgard - Go'auld Hybrid", "RaceHullTech": "Tau'ri" }
 }
+
+Foundation.ShipDef.X303Refit.fMaxWarp = 6.0
+Foundation.ShipDef.X303Refit.fCruiseWarp = 5.75
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

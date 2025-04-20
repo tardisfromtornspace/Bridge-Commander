@@ -40,6 +40,9 @@ Foundation.ShipDef.Alkesh = Foundation.FedShipDef(abbrev, species, { 'name': lon
 Foundation.ShipDef.Alkesh.dTechs = {
 	'SG Shields': { "RaceShieldTech": "Go'auld" }
 }
+
+Foundation.ShipDef.Alkesh.fMaxWarp = 2.1
+Foundation.ShipDef.Alkesh.fCruiseWarp = 1.9
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

@@ -45,6 +45,9 @@ Foundation.ShipDef.HiveShip.dTechs = {
 	'Breen Drainer Immune': 1,
 	'SG Shields': { "RaceShieldTech": "Wraith" }
 }
+
+Foundation.ShipDef.HiveShip.fMaxWarp = 2.03
+Foundation.ShipDef.HiveShip.fCruiseWarp = 1.95
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

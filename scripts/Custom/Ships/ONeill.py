@@ -41,6 +41,9 @@ Foundation.ShipDef.ONeill.dTechs = {
 	'SG Shields': { "RaceShieldTech": "Asgard", "FacetFactor" : 3},
 	"TachyonBeam": { "Immune": -1 }
 }
+
+Foundation.ShipDef.ONeill.fMaxWarp = 9.2
+Foundation.ShipDef.ONeill.fCruiseWarp = 9.2
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

@@ -37,6 +37,10 @@ Foundation.ShipDef.Korolev.dTechs = {
 	"AutoTargeting": { "Pulse": [3, 1] },
 	'SG Shields': { "RaceShieldTech": "Asgard" }
 }
+
+
+Foundation.ShipDef.Korolev.fMaxWarp = 6.0
+Foundation.ShipDef.Korolev.fCruiseWarp = 6.0
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

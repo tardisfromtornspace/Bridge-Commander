@@ -40,6 +40,9 @@ Foundation.ShipDef.DamagedSatellite = Foundation.ShipDef(abbrev, species, { 'nam
 Foundation.ShipDef.DamagedSatellite.dTechs = {
 	'SG Shields': { "RaceShieldTech": "Lantian" }
 }
+
+Foundation.ShipDef.AncientSatellite.fMaxWarp = 1.4
+Foundation.ShipDef.AncientSatellite.fCruiseWarp = 1.0
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

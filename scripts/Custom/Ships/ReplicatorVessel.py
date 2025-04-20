@@ -42,6 +42,9 @@ Foundation.ShipDef.ReplicatorVessel.dTechs = {
 	'SG Shields': { "RaceShieldTech": "Replicator", "RaceHullTech": "Unknown" },
 	'Simulated Point Defence' : { "Distance": 70.0, "InnerDistance": 26.0, "Effectiveness": 0.99, "LimitTurn": 8.5, "LimitSpeed": 250, "LimitDamage": "-600", "Period": 8.0, "MaxNumberTorps": 1, "Phaser": {"Priority": 1}},
 }
+
+Foundation.ShipDef.ReplicatorVessel.fMaxWarp = 9.0
+Foundation.ShipDef.ReplicatorVessel.fCruiseWarp = 9.0
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

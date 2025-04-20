@@ -42,6 +42,9 @@ Foundation.ShipDef.AncientWarship.dTechs = {
 	'Simulated Point Defence' : { "Distance": 120.0, "InnerDistance": 15.0, "Effectiveness": 1.0, "LimitTurn": 18.0, "LimitSpeed": 50, "LimitDamage": "-48", "Period": 0.2, "MaxNumberTorps": 1, "Torpedo": {"Priority": 1}},
 	'SG Shields': { "RaceShieldTech": "Lantian" }
 }
+
+Foundation.ShipDef.AncientWarship.fMaxWarp = 8.0
+Foundation.ShipDef.AncientWarship.fCruiseWarp = 3.0
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

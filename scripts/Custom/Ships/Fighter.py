@@ -36,6 +36,9 @@ Foundation.ShipDef.Fighter = Foundation.ShipDef(abbrev, species, { 'iconName': i
 Foundation.ShipDef.Fighter.dTechs = {
 	'SG Shields': { "RaceShieldTech": "Ori" }
 }
+
+Foundation.ShipDef.Fighter.fMaxWarp = 2.25
+Foundation.ShipDef.Fighter.fCruiseWarp = 1.55
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

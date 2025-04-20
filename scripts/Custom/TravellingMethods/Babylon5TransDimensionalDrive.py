@@ -97,7 +97,7 @@ Foundation.ShipDef.EAOmega.dTechs = { # (#)
 #################################################################################################################
 #
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.24",
+	    "Version": "0.25",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -1302,7 +1302,7 @@ def SetupSequenceISI(pShip=None):
 
 	pInstance = findShipInstance(pShip)
 
-	hasTractorReady = hasattr(pInstance, "BSTransDimensionalDriveISIbTractorStat") and (pInstance.BSTransDimensionalDriveISIbTractorStat == 1)
+	hasTractorReady = pInstance != None and hasattr(pInstance, "BSTransDimensionalDriveISIbTractorStat") and (pInstance.BSTransDimensionalDriveISIbTractorStat == 1)
 
 	# Get the destination set name from the module name, if applicable.
 	pPlayerSet = pShip.GetContainingSet()
@@ -1368,12 +1368,12 @@ def SetupSequenceISI(pShip=None):
 
 	fTimeToFlash = (fEntryDelayTime*2) + (1*(App.WarpEngineSubsystem_GetWarpEffectTime()/2.0))
 	fCount = 0.0
-	while fCount < fTimeToFlash:
-		if hasTractorReady == 1:
+	if hasTractorReady == 1:
+		while fCount < fTimeToFlash:
 			pMaintainTowingAction = App.TGScriptAction_Create(__name__, "MaintainTowingActionI", pShipID)
 			pEngageWarpSeq.AddAction(pMaintainTowingAction, None, fCount)
 
-		fCount = fCount + 0.01
+			fCount = fCount + 0.01
 
 	if fCount != fTimeToFlash:
 		fTimeToFlash = fCount + 0.25
@@ -1470,13 +1470,13 @@ def SetupSequenceISI(pShip=None):
 
 	# IMPORTANT: These three actions below are an extra added for intra-system intercept since we need to ensure the cutscene really ends and control is returned to the player.
 	# This could be handled on the main AlternateSubModelFTL script but I'm leaving it here to allow better customization
-
-	pActionCSE0 = App.TGScriptAction_Create("MissionLib", "ReturnControl")
-	pExitWarpSeq.AddAction(pActionCSE0, pUnBoostAction, 0.5)
-	pActionCSE1 = App.TGScriptAction_Create("Actions.CameraScriptActions", "CutsceneCameraEnd", sSet)
-	pExitWarpSeq.AddAction(pActionCSE1, pUnBoostAction, 0.1)
-	pActionCSE2 = App.TGScriptAction_Create("MissionLib", "EndCutscene")
-	pExitWarpSeq.AddAction(pActionCSE2, pUnBoostAction, 0.1)
+	if (pPlayer != None) and (pShipID == pPlayer.GetObjID()):
+		pActionCSE0 = App.TGScriptAction_Create("MissionLib", "ReturnControl")
+		pExitWarpSeq.AddAction(pActionCSE0, pUnBoostAction, 0.5)
+		pActionCSE1 = App.TGScriptAction_Create("Actions.CameraScriptActions", "CutsceneCameraEnd", sSet)
+		pExitWarpSeq.AddAction(pActionCSE1, pUnBoostAction, 0.1)
+		pActionCSE2 = App.TGScriptAction_Create("MissionLib", "EndCutscene")
+		pExitWarpSeq.AddAction(pActionCSE2, pUnBoostAction, 0.1)
 
 
 	# And finally finish the exit sequence

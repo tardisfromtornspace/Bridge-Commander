@@ -41,6 +41,9 @@ Foundation.ShipDef.Valhalla.dTechs = {
 	'SG Shields': { "RaceShieldTech": "Asgard", "FacetFactor" : 3 },
 	"TachyonBeam": { "Immune": -1 }
 }
+
+Foundation.ShipDef.Valhalla.fMaxWarp = 9.35
+Foundation.ShipDef.Valhalla.fCruiseWarp = 9.2
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

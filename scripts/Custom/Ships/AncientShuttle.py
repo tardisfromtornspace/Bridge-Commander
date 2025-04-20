@@ -41,6 +41,10 @@ Foundation.ShipDef.ancientshuttle.fCrew = 17
 Foundation.ShipDef.ancientshuttle.dTechs = {
 	'SG Shields': { "RaceShieldTech": "Ancient Alteran" }
 }
+
+Foundation.ShipDef.ancientshuttle.fMaxWarp = 2.8
+Foundation.ShipDef.ancientshuttle.fCruiseWarp = 1.5
+
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

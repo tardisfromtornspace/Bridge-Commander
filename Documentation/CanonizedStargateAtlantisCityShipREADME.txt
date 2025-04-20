@@ -1,4 +1,7 @@
 == Changelog ==
+1.1.5 - 
+* Updates:
+  - Updated AncientCity and Atlantis' warp speeds to provide a more accurate hyperdrive for when the entire stargate overhaul pack is added.
 1.1.4 - 
 * Bug fixes-updates:
   - Updated AlteranShields to 1.01, fixing a bug with strength modifier not being considered for energy calculations.

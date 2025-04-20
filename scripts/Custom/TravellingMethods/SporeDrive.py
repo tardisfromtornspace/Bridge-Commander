@@ -103,7 +103,7 @@ Foundation.ShipDef.USSProtostar.dTechs = { # (#)
 #################################################################################################################
 #
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.51",
+	    "Version": "0.52",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -1551,13 +1551,13 @@ def SetupSequenceISI(pShip=None):
 
 	# IMPORTANT: These three actions below are an extra added for intra-system intercept since we need to ensure the cutscene really ends and control is returned to the player.
 	# This could be handled on the main AlternateSubModelFTL script but I'm leaving it here to allow better customization
-
-	pActionCSE0 = App.TGScriptAction_Create("MissionLib", "ReturnControl")
-	pExitWarpSeq.AddAction(pActionCSE0, pUnBoostAction, 0.5)
-	pActionCSE1 = App.TGScriptAction_Create("Actions.CameraScriptActions", "CutsceneCameraEnd", sSet)
-	pExitWarpSeq.AddAction(pActionCSE1, pUnBoostAction, 0.1)
-	pActionCSE2 = App.TGScriptAction_Create("MissionLib", "EndCutscene")
-	pExitWarpSeq.AddAction(pActionCSE2, pUnBoostAction, 0.1)
+	if (pPlayer != None) and (pShipID == pPlayer.GetObjID()):
+		pActionCSE0 = App.TGScriptAction_Create("MissionLib", "ReturnControl")
+		pExitWarpSeq.AddAction(pActionCSE0, pUnBoostAction, 0.5)
+		pActionCSE1 = App.TGScriptAction_Create("Actions.CameraScriptActions", "CutsceneCameraEnd", sSet)
+		pExitWarpSeq.AddAction(pActionCSE1, pUnBoostAction, 0.1)
+		pActionCSE2 = App.TGScriptAction_Create("MissionLib", "EndCutscene")
+		pExitWarpSeq.AddAction(pActionCSE2, pUnBoostAction, 0.1)
 
 	# This is just a tiny extra, this vessel can uncloak nerby vessels which don't use a phased cloak
 

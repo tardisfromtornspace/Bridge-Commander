@@ -42,6 +42,9 @@ Foundation.ShipDef.BelisknerRefit.dTechs = {
 	"TachyonBeam": { "Immune": -1 }
 }
 
+Foundation.ShipDef.BelisknerRefit.fMaxWarp = 9.0
+Foundation.ShipDef.BelisknerRefit.fCruiseWarp = 8.0
+
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

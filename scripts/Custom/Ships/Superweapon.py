@@ -43,6 +43,9 @@ Foundation.ShipDef.Superweapon.dTechs = {
 	'SG Shields': { "RaceShieldTech": "Anubis Go'auld", "Superweapon" : 1}
 }
 
+Foundation.ShipDef.Superweapon.fMaxWarp = 2.35
+Foundation.ShipDef.Superweapon.fCruiseWarp = 2.25
+
 Foundation.ShipDef.Superweapon.bPlanetKiller = 1
 #                                                                                     #
 #######################################################################################

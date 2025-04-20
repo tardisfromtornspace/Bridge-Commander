@@ -16,7 +16,7 @@
 # To make a ship use Slipstream, follow USS Sovereign's instructions on how to add his own Slipstream, which basically consists on adding any hardpoint called "Slipstream Drive " followed by a number from 1 to 20. Slipstream intercept is still handled by Sovereign's Slipstream Module, so do not expect a non-player to use it.
 # NOTE: all functions/methods and attributes defined here (in this prototype example plugin, Slipstream) are required to be in the plugin, with the exception of:
 # -Auxiliar attributes: "myDependingTravelModule", "myDependingTravelModuleLib", "myDependingTravelModuleLibPath", "myDependingTravelModulePath", "myGlobalAISet", "myGlobalpSet" and "pSlipstreamEngineSound"
-# -Auxiliar functions: "AnObjectDying", "AuxProtoElementNames", "defineTravelSpaceNoise", "GetWellShipFromID", "PlaySlipstreamSounds", "SlipstreamDisabledCalculations", "SlipstreamFlash" and "WatchPlayerShipLeave".
+# -Auxiliar functions: "AnObjectDying", "AuxProtoElementNames", "defineTravelSpaceNoise", "GetWellShipFromID", "PlaySlipstreamSounds", "ProperTunnelTexture", "SlipstreamDisabledCalculations", "SlipstreamFlash" and "WatchPlayerShipLeave".
 # -Auxiliar classes: "WhyMissionLibGetsError" and its instance "basicListener"
 # Additionally, "GetTravelSetToUse" was modified slightly from the template's original, so as to provide a way for possible extra scripts (i.e. some slipstream Hub jump network, if that is possible) to work easier.
 #
@@ -693,6 +693,30 @@ def WatchPlayerShipLeave(pAction, sSet, sObjectName):
 
 	return 0
 
+# An aux function I used
+def ProperTunnelTexture(pShip):
+	# Custom tunnel textures?
+	fTunnel = MissionLib.GetShip("Slipstream Outer", myGlobalpSet)
+	fTunnel2 = MissionLib.GetShip("Slipstream Inner", myGlobalpSet)
+	pModule = __import__(pShip.GetScript())
+
+	GFX = "scripts/Custom/Slipstream/GFX/SlipstreamTunnelAlt1.tga"
+	# Is there a customization for this ship available?
+	if hasattr(pModule, "SlipstreamCustomizations"):
+		pCustomization = pModule.SlipstreamCustomizations()
+            
+		# Customization exists, but does the tunnel texture entry exist?!
+		if pCustomization.has_key('TunnelTexture'):
+			# Bingo, replace textures for both tunnels then
+			GFX = "scripts/Custom/Slipstream/GFX/" + pCustomization['TunnelTexture']
+
+
+	fTunnel.ReplaceTexture(GFX, "outer_glow")
+	fTunnel2.ReplaceTexture(GFX, "outer_glow")
+
+	fTunnel.RefreshReplacedTextures()
+	fTunnel2.RefreshReplacedTextures()
+
 def SetupSequence(self):
 	# you can use this function as an example on how to create your own '.SetupSequence(self)' method for your
 	# custom travelling method.
@@ -766,7 +790,10 @@ def SetupSequence(self):
 		# Force a noninteractive cinematic view in space..
 		pCinematicStart = App.TGScriptAction_Create("Actions.CameraScriptActions", "StartCinematicMode", 0)
 		pEngageWarpSeq.AddAction(pCinematicStart, None)
-
+		try:
+			ProperTunnelTexture(pShip)
+		except:
+			traceback.print_exc()
 		pDisallowInput = App.TGScriptAction_Create("MissionLib", "RemoveControl")
 		pEngageWarpSeq.AddAction(pDisallowInput, pCinematicStart)
 

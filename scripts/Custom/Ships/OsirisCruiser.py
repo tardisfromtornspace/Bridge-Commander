@@ -40,6 +40,9 @@ Foundation.ShipDef.OsirisCruiser = Foundation.ShipDef(abbrev, species, { 'name':
 Foundation.ShipDef.OsirisCruiser.dTechs = {
 	'SG Shields': { "RaceShieldTech": "Go'auld" }
 }
+
+Foundation.ShipDef.OsirisCruiser.fMaxWarp = 2.0
+Foundation.ShipDef.OsirisCruiser.fCruiseWarp = 1.8
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

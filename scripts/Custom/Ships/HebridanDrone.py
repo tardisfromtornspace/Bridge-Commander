@@ -40,6 +40,9 @@ Foundation.ShipDef.HebridanDrone = Foundation.ShipDef(abbrev, species, { 'name':
 Foundation.ShipDef.HebridanDrone.dTechs = {
 	'SG Shields': { "RaceShieldTech": "Hebridan" }
 }
+
+Foundation.ShipDef.HebridanDrone.fMaxWarp = 2.25
+Foundation.ShipDef.HebridanDrone.fCruiseWarp = 1.8
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

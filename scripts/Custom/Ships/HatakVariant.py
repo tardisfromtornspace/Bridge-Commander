@@ -40,6 +40,9 @@ Foundation.ShipDef.HatakVariant = Foundation.ShipDef(abbrev, species, { 'name': 
 Foundation.ShipDef.HatakVariant.dTechs = {
 	'SG Shields': { "RaceShieldTech": "Go'auld" }
 }
+
+Foundation.ShipDef.HatakVariant.fMaxWarp = 2.25
+Foundation.ShipDef.HatakVariant.fCruiseWarp = 2.2
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

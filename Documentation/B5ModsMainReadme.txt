@@ -1,4 +1,7 @@
 ==Changelog==
+1.6.2 -
+   Fixes:
+   * Updated Jumpgate TravellingMethods to 0.25, now the check for ISI tractor ship should be less intensive.
 1.6.1 -
    Fixes:
    * Clarified readme further, and fixed a few placeholder files.

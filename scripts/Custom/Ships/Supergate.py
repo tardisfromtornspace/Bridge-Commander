@@ -40,6 +40,10 @@ Foundation.ShipDef.Supergate = Foundation.ShipDef(abbrev, species, { 'name': lon
 Foundation.ShipDef.Supergate.dTechs = {
 	'SG Shields': { "RaceShieldTech": "Ori" }
 }
+
+Foundation.ShipDef.Supergate.fMaxWarp = 1.0
+Foundation.ShipDef.Supergate.fCruiseWarp = 1.0
+Foundation.ShipDef.Supergate.IsSGWorkingStargate = 1
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

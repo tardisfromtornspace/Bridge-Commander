@@ -37,6 +37,9 @@ Foundation.ShipDef.OdysseyUpgrade.dTechs = {
 	"AutoTargeting": { "Pulse": [3, 1] },
 	'SG Shields': { "RaceShieldTech": "Asgard", "RaceHullTech": "Tau'ri" }
 }
+
+Foundation.ShipDef.OdysseyUpgrade.fMaxWarp = 9.0
+Foundation.ShipDef.OdysseyUpgrade.fCruiseWarp = 8.8
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

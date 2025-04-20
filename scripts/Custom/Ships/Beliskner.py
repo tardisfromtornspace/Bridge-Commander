@@ -41,6 +41,9 @@ Foundation.ShipDef.Beliskner.dTechs = {
 	'SG Shields': { "RaceShieldTech": "Asgard", "FacetFactor" : 2 },
 	"TachyonBeam": { "Immune": -1 }
 }
+
+Foundation.ShipDef.Beliskner.fMaxWarp = 8.0
+Foundation.ShipDef.Beliskner.fCruiseWarp = 8.0
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

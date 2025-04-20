@@ -40,6 +40,9 @@ Foundation.ShipDef.UpgradedHatak = Foundation.ShipDef(abbrev, species, { 'name':
 Foundation.ShipDef.UpgradedHatak.dTechs = {
 	'SG Shields': { "RaceShieldTech": "Anubis Go'auld" }
 }
+
+Foundation.ShipDef.UpgradedHatak.fMaxWarp = 2.35
+Foundation.ShipDef.UpgradedHatak.fCruiseWarp = 2.25
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

@@ -40,6 +40,11 @@ Foundation.ShipDef.MilkyWayInactive = Foundation.ShipDef(abbrev, species, { 'nam
 Foundation.ShipDef.MilkyWayInactive.dTechs = {
 	'SG Shields': { "RaceShieldTech": "Alteran" }
 }
+
+Foundation.ShipDef.MilkyWayInactive.fMaxWarp = 1.0
+Foundation.ShipDef.MilkyWayInactive.fCruiseWarp = 1.0
+Foundation.ShipDef.MilkyWayInactive.IsSGWorkingStargate = 2
+Foundation.ShipDef.MilkyWayInactive.SGWorkingStargateRad = 0.17
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

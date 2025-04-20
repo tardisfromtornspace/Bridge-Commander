@@ -38,6 +38,10 @@ Foundation.ShipDef.GoauldAlkesh = Foundation.FedShipDef(abbrev, species, { 'icon
 Foundation.ShipDef.GoauldAlkesh.dTechs = {
 	'SG Shields': { "RaceShieldTech": "Go'auld" }
 }
+
+Foundation.ShipDef.GoauldAlkesh.fMaxWarp = 2.1
+Foundation.ShipDef.GoauldAlkesh.fCruiseWarp = 1.9
+
 #                                                                                     #
 # Com-man's note: Of course you need to remove the 'name': longname here too for it   #
 # to work.              						                          #

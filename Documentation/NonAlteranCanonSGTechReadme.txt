@@ -1,4 +1,8 @@
 == Changelog ==
+1.1.17 - Updates:
+   * Added Hyperdrive Module support for GalaxyCharts (thank you, Sovereign, and BCXtreme).
+   * Adjusted Custom/Ships files to reflect this new module's FTL speeds.
+   * Added a very simplistic version of the Stargate Network.
 1.1.16 - tweak updates:
    * Reinforced Ori Warship shield gimmick.
 1.1.15 - fixes:
@@ -160,6 +164,7 @@ Also please note that if you download the multiplayer patch AFTER installing thi
 * .truncatedcake0161 for feedback on the Discord about power tweaks.
 * Hexagonal_Nexul for the modified sounds and beam colors of the Asgard Beams from the Season 10 of Stargate + a new railgun sound for the Odyssey Refit.
 * TenScape for the SGA Asgard Beam sound from SGA.
+* BCXtreme for the original incomplete Slipstream for Galaxy Charts (https://www.gamefront.com/games/bridge-commander/file/slipstream-for-galaxy-charts). This plugin was originally released without a license, which means it defaults to All Rights Reserved. While the original readme includes the line "As far as I am concerned, anyone can take this and finish it if they want to," that grants permission to continue development — but not to relicense or attach a license such as LGPL. The absence of an explicit license means the work cannot be treated as open source.
 * Grey da Derg#2305 for helping with noticing bugs and their cause and finding out possible ways to tweak the hardpoints and techs.
 * Alex SL Gato (aka CharaToLoki) for any new code implemented or modified - specifically the heavy modifications to the Ion and Plasma projectiles, the buffs to the Asgard Hardpoints and modifications to the Ha'tak, X301, F302, Death Glider and Needle Threader hardpoints.
 ** Special tools used: Audacity for cleaning up the Asgard Beam sounds.

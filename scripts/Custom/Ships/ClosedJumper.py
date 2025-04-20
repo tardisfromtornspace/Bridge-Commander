@@ -40,6 +40,10 @@ Foundation.ShipDef.ClosedJumper = Foundation.ShipDef(abbrev, species, { 'name': 
 Foundation.ShipDef.ClosedJumper.dTechs = {
 	'SG Shields': { "RaceShieldTech": "Alteran" }
 }
+
+
+Foundation.ShipDef.ClosedJumper.fMaxWarp = 2.02
+Foundation.ShipDef.ClosedJumper.fCruiseWarp = 1.55
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

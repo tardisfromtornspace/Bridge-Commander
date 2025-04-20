@@ -36,6 +36,9 @@ Foundation.ShipDef.Glider1 = Foundation.ShipDef(abbrev, species, { 'iconName': i
 Foundation.ShipDef.Glider1.dTechs = {
 	'SG Shields': { "RaceShieldTech": "Go'auld" }
 }
+
+Foundation.ShipDef.Glider1.fMaxWarp = 2.25
+Foundation.ShipDef.Glider1.fCruiseWarp = 1.0
 #                                                                                     #
 #######################################################################################
 #                                                                                     #
