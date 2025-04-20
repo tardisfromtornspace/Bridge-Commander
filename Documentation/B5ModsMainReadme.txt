@@ -1,4 +1,7 @@
 ==Changelog==
+1.6.1 -
+   Fixes:
+   * Clarified readme further, and fixed a few placeholder files.
 1.6.0 -
    Fixes:
    * Updated Victory Turret options to fix a small goof while warping.
@@ -241,26 +244,27 @@ Additionally around 60+ ships from the Babylon 5 franchise have been added***
 - Most meshes and textures not present on the other mods/readmes were taken from the Celestia Motherlode or remodeled by Alex SL Gato (tardisfromtornspace) when too complex for the tools used, with Blender and Milkshape. When those tools failed, rebuilt from mostly scratch (Earth Alliance Explorer).
 - Icons done by Alex SL Gato (by screenshotting the progress done in the Milkshape 3D tool).
 - scripts: for the most part Alex SL Gato, except the Babylon 5 Jumpspace technologies, which was created as several TravellingMethods using the template provided by USS Frontier, creator of GalaxyCharts.
-   - I was informed that the old version of Jumpspace technology, adapted from the Slipstream's Framework (by USS Sovereign) did not meet the copyright requirements and as thus it was (naturally) taken down. If you have a B5 superpack mod previous to 1.5.0, you MUST download the altest version, which will ensure that older module is removed. Please, if you find any other infringment, do not hesiste to contact me.
+   - I was informed that the old version of Jumpspace technology, adapted from the Slipstream's Framework (by USS Sovereign) did not meet the copyright requirements and as thus it was (naturally) taken down. If you have a B5 superpack mod previous to 1.5.0, you MUST download the latest version, which will ensure that older module is removed. Please, if you find any other infringment, do not hesiste to contact me.
 - mod/ships/hardpoint: Alex SL Gato.
 - Special shadow cloak/decloak sound: taken by Alex SL Gato from the Babylon 5 season 4 intro.
 - Movie intro and several Babylon 5 sounds: All credit to the original visual effects artists at Foundation Imaging and Netter Digital who made television history. Jumpspace noise sounds found on http://b5.cs.uwyo.edu/bab5/allsrch.cgi, which were extracted by anmolnar.
 - ATPFunctions: originally made by Apollo, later expanded by Alex SL Gato.
 - B5Defences: originally based on Shields.py by MLeoDaalder and Dasher42, then heavily modified by Alex SL Gato.
 - Special thanks to the already present mods (most of them from https://www.gamefront.com/games/bridge-commander/category/babylon5):
-  - Fighter Launchable Babylon 5: TiqHud, Brad Bowermaster, Wok, Crook, Cordanilus and MScott - from this mod the Auroras and Thunderbolts were obtained.
-      --- Thunderbolt: TiqHud, Wok, Bravo Int.
-      --- Aurora Class Starfury: MadJohn, Crook and the http://www.b5tech.net team and the Homeworld mod teams.
-  - Minbari Sharlin: Maryam, baz1701 and limey98 and Dalek. NOTE: The one I had on my install was NOT MSR1701's version.
-  - B5 Centauri Vorchan and B5 Centauri Warship (latter also known as Centauri Primus): TiqHud, Wok, Jackal and Captain Russel.
-  - Babylon 5 - Bluestar and Babylon 5 Whitestar: Nadab Göksu, Kier Darby, Thunderchild, DamoclesX, TiqHud, aobob, junky58 and BCU people (the latest 4 are beta testers).
-  - Narn - ThNor: TiqHud, Wok, Lord Malek and the original Babylon 5 visual effects artists mentioned before.
-  - Narn G'quan: TiqHud, stresspuppy, Queball.
-  - Drakh Raider: TiqHud, Wok, Jackal Tiger, Nadab, Lord Malek and the original Babylon 5 visual effects artists mentioned before.
-  - Omega Class Destroyer: MadJohn and Spooky.
-  - B5 Warlock and Babylon5 Victory: DamoclesX and Durandal.
-  - Shadow Battlecrab: Sci-Fi DreamYards, Cpt. LC Amaral, Maverick, Executioner_de
-  - Cenaturi Sentri fighter (no hardpoints): Wok and Bravo Int.
+  - Fighter Launchable Babylon 5 (https://www.gamefront.com/games/bridge-commander/file/fighter-launchable-b5-station): TiqHud, Brad Bowermaster, Wok, Crook, Cordanilus and MScott.
+  - Thunderbolt (https://www.gamefront.com/games/bridge-commander/file/thunderbolt): TiqHud, Wok, Bravo Int.
+  - Aurora Class Starfury (https://www.gamefront.com/games/bridge-commander/file/aurora-class-starfury): MadJohn, Crook and the http://www.b5tech.net team and the Homeworld mod teams.
+  - Minbari Sharlin (https://www.gamefront.com/games/bridge-commander/file/minbari-sharlin-class-dreadnought): Maryam, baz1701 and limey98 and Dalek. NOTE: The one I had on my install was NOT MSR1701's version.
+  - B5 Centauri Vorchan (https://www.gamefront.com/games/bridge-commander/file/b5-centauri-vorchan) and B5 Centauri Warship (latter also known as Centauri Primus, https://www.gamefront.com/games/bridge-commander/file/b5-centauri-warship): TiqHud, Wok, Jackal and Captain Russel.
+  - Babylon 5 - Bluestar (https://www.gamefront.com/games/bridge-commander/file/babylon-5-bluestar) and Babylon 5 Whitestar (https://www.gamefront.com/games/bridge-commander/file/babylon-5-whitestar): Nadab Göksu, Kier Darby, Thunderchild, DamoclesX, TiqHud, aobob, junky58 and BCU people (the latest 4 are beta testers).
+  - Narn - ThNor (https://www.gamefront.com/games/bridge-commander/file/narn-thnor-1): TiqHud, Wok, Lord Malek and the original Babylon 5 visual effects artists mentioned before.
+  - Narn G'quan (https://www.gamefront.com/games/bridge-commander/file/narn-g-quan-1): TiqHud, stresspuppy, Queball.
+  - Drakh Raider (https://www.gamefront.com/games/bridge-commander/file/drakh-raider): TiqHud, Wok, Jackal Tiger, Nadab, Lord Malek and the original Babylon 5 visual effects artists mentioned before.
+  - Omega Class Destroyer (https://www.gamefront.com/games/bridge-commander/file/omega-class-destroyer): MadJohn and Spooky.
+  - B5 Warlock (https://www.gamefront.com/games/bridge-commander/file/b5-warlock) and Babylon5 Victory (https://www.gamefront.com/games/bridge-commander/file/babylon5-victory): DamoclesX and Durandal.
+  - Shadow Battlecrab (https://www.gamefront.com/games/bridge-commander/file/shadow-battlecrab): Sci-Fi DreamYards, Cpt. LC Amaral, Maverick, Executioner_de.
+  - Centauri Sentri fighter (no hardpoints, https://www.gamefront.com/games/bridge-commander/file/centauri-sentri-fighter): Wok and Bravo Int.
+  - Vorlon Fighter (no hardpoints, https://www.gamefront.com/games/bridge-commander/file/vorlon-fighter) by Wok, Jackal and the B5 Sci-fi show.
   - Babylon 5 Uniforms (https://www.gamefront.com/games/bridge-commander/file/babylon-5-uniforms) by Houliganisle, Crazyhid and MLeo. 
 
 Fulfilling both the SDK and LGPL licenses:
@@ -271,14 +275,18 @@ This mod falls under the GNU LESSER GENERAL PUBLIC LICENSE Version 3, 29 June 20
 ===Mods required===
 You'll of course need Foundation, Nanofx2, Submenu v 3.0, QBAutostart and Kobayashi Maru mod, the latest version the better. GalaxyCharts is also required, probably the GalaxyCharts Warp AI fix as well.
 
-All the mods on https://www.gamefront.com/games/bridge-commander/category/babylon5 mentioned above, on reverse order (NONE of the ones called "Remastered") would be probably required (albeit at the time I downloaded the mods from NexusMods so the content may have been different), **but** some of them conflicted with each other due to Caps issue (i.e. EAOmega - eaomega), certain shuttle quirks and BCMMods affected certain filenames and inner files, which back when I was a newbie took me 3 years to fix, made that unadvisable. What I recommend to do is to do the following: get those mods downloaded on a temp folder, grab ONLY the data and sfx folders, make sure they follow the proper folder names, case-sensitive (i.e. they should be called "Icons", not "icon"), icon names, model names and sound names (which are seen inside this super-pack, they are meant to be placeholders so the correct case-sensitive names work), and then, after ensuring all the files are there, copy the unzipped super-pack to another temp folder (let's call it "temp folder SuP"), then copy the data and sfx fixed folders from those mods to "temp folder SuP", and then copy the sfx one from the super-pack again onto "temp folder SuP". That procedure should guarantee that all the folders and files are named properly while using those mod files and having updated sounds (because when Windows OS replaces a file by another it ay replace the contents, but if one was called "AAAA" and the other "aaaa" then the name of the oldest file will remain). 
+All the mods on https://www.gamefront.com/games/bridge-commander/category/babylon5 mentioned above, on reverse order (NONE of the ones called "Remastered") would be probably required (albeit at the time I downloaded the mods from NexusMods so the content may have been different), **but** some of them conflicted with each other due to Caps issue (i.e. EAOmega - eaomega), certain shuttle quirks and BCMMods affected certain filenames and inner files, which back when I was a newbie took me 3 years to fix, made that unadvisable. What I recommend to do is to do the following: get those mods downloaded on a temp folder, grab ONLY the data and sfx folders, make sure they follow the proper folder names, case-sensitive (i.e. they should be called "Icons", not "icon", example on the G'Quan where that bug happened), icon names, model names and sound names (some, when legally allowed, seen inside this super-pack. They are meant to be placeholders so the correct case-sensitive names work), and then, after ensuring all the files are there, copy the unzipped super-pack to another temp folder (let's call it "temp folder SuP"), then copy the data and sfx fixed folders from those mods to "temp folder SuP", and then copy the sfx and data ones from the super-pack again onto "temp folder SuP". That procedure should guarantee that all the folders and files are named properly while using those mod files and having updated ones (because when Windows OS replaces a file by another it may replace the contents, but if one was called "AAAA" and the other "aaaa" then the name of the oldest file will remain). 
+
+For older mods like the Shadow Battlecrab mod which is stored on .BCMod format you may require of extra tools, like BCUT -> BCTools -> BCMod Unpacker (https://www.gamefront.com/games/bridge-commander/file/bridge-commander-universal-tool-bcut-v-1-8-1)
+
+For some other mods that are inside .exe like the Omega-class, you might need to create a "fake" install - which requires of data, sfx and script folders and stbc.exe - fortunately for the Omega-class that is not the case.
 
 Also this one, Babylon 5 uniforms https://www.gamefront.com/games/bridge-commander/file/babylon-5-uniforms, but only some elements
 
 ===Installation Guide===
 STEP 0: Ok, first of all, just in case, backup your STBC.
 
-1º Follow the steps indicated on mods required as well, skip the babylon 5 uniforms one, which we will do on the following steps.
+1º Follow the steps indicated on mods required as well, skip the babylon 5 uniforms one, which we will do on the following steps. The Bluestar, Drakh Raider, Fighter Launchable Babylon 5, G'Quan, ThNor, Thunderbolt and Whitestar are not exactly required to be installed from there (as they are already on this super-pack), but welcome to give their authors more credit. 
 
 2º Install the Babylon 5 Uniforms mod from https://www.gamefront.com/games/bridge-commander/file/babylon-5-uniforms on a temporary folder, then go to TEMPFOLDER/scripts/Custom/Autoload and remove the file "Tmp crew".
 
