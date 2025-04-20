@@ -6,8 +6,8 @@ def GetShipStats():
 		"FilenameHigh": "data/Models/Ships/Victory/Victory.nif",
 		"FilenameMed": "data/Models/Ships/Victory/VictoryMed.nif",
 		"FilenameLow": "data/Models/Ships/Victory/VictoryLow.nif",
-		"Name": "Victory",
-		"HardpointFile": "victory",
+		"Name": "B5Victory",
+		"HardpointFile": "B5victory",
 		"Species": Multiplayer.SpeciesToShip.MARAUDER
 	}
 	return kShipStats

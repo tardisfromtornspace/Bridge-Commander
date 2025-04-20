@@ -1,4 +1,4 @@
-# D:\Games\bc\scripts\ships\Hardpoints\Victory.py
+# D:\Games\bc\scripts\ships\Hardpoints\B5Victory.py
 # This file was automatically generated - modify at your own risk.
 # 
 
@@ -244,7 +244,7 @@ B5Excalibur.SetGenus(1)
 B5Excalibur.SetSpecies(301)
 B5Excalibur.SetMass(14000.000000)
 B5Excalibur.SetRotationalInertia(20000.000000)
-B5Excalibur.SetShipName("Victory")
+B5Excalibur.SetShipName("B5Victory")
 B5Excalibur.SetModelFilename("data/Models/Ships/Warbird.nif")
 B5Excalibur.SetDamageResolution(12.000000)
 B5Excalibur.SetAffiliation(0)
