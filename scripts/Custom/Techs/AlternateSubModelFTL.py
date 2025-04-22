@@ -23,7 +23,7 @@
 # ATTENTION: The script is dependant on scripts/Custom/TravellingMethods and on GalaxyCharts to verify sub-technology and FTL availability. With those options turned off, the usefulness of this script is reduced to a cleaner customizable SubModels.
 # ATTENTION: The script is also dependant on ftb.Tech.ATPFunctions
 # === HOW-TO-USE a pre-existing FTL TravellingMethods that supports this tech ===
-# Below there's a sample setup. Those familiarized with SubModels script will notice the script is basically identical, but with a twist, presenting extra elements related with the TravellingMethods files that support this file.
+# Below there's a sample setup. Those familiarized with SubModels script will notice the how-to is basically identical, but with a twist, presenting extra elements related with more rotations and the TravellingMethods files that support this file.
 #
 # On this case, we have a TravellingMethods file called ProtoWarp which is called inside as "Proto-Warp" (explanaton on how to add these are mentioned after the Sample Setup).
 #
