@@ -1,4 +1,7 @@
 == Changelog ==
+1.1.6 - 
+* Updates:
+  - Updated Drones and Drones2 to fix certain check-condition issue.
 1.1.5 - 
 * Updates:
   - Updated AncientCity and Atlantis' warp speeds to provide a more accurate hyperdrive for when the entire stargate overhaul pack is added.

@@ -1,5 +1,4 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
-# THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
 ###############################################################################
 #		
 #	Script for filling in the attributes of Fusion torpedoes.
@@ -104,7 +103,14 @@ lImmuneShips = (
                 "DJEnterpriseGDrive",
                 "DJEnterpriseGSaucer",
                 "DSC304Apollo",
+                "DSC304ApolloRefit",
+                "DSC304ApolloRefitS",
                 "DSC304Daedalus",
+                "DSC304DaedalusRefit",
+                "DSC304DaedalusRefitS",
+                "DSC304SunTzu",
+                "DSC304SunTzuRefit",
+                "DSC304SunTzuRefitS",
                 "DSC304Korolev",
                 "DSC304Odyssey",
                 "DSC304OdysseyRefit",
@@ -200,7 +206,7 @@ def TargetHit(pObject, pEvent):
 
 	pShipModule =__import__(sScript)
 	pShields = pShip.GetShields()
-	if hasattr(pShipModule, "IsStargateDroneImmune") and pShields or sShipScript in lImmuneShips:
+	if pShields and (hasattr(pShipModule, "IsStargateDroneImmune") or sShipScript in lImmuneShips):
 		# print "the target is immune to drones via ship script"
 		shieldsStrong = 6
 		for shieldDir in range(App.ShieldClass.NUM_SHIELDS):

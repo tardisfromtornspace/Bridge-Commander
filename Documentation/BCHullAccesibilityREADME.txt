@@ -1,4 +1,6 @@
 == Changelog ==
+1.0.2 
+   - Fixed a gooff that made 0-decimal hull percentage to show as "%" - thank you Sovereign for pointing it out! <3
 1.0.1 
    - Updated FoundationTech.GaugeTechDef.DetachShip hull gauge fix unrelated to this mod to be more robust.
 1.0.0:

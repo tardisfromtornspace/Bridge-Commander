@@ -1,14 +1,14 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL LICENSE AS WELL
 # HullIntegrity.py
-# 7th March 2025, by USS Sovereign, and tweaked by Noat and Alex SL Gato (CharaToLoki)
+# 3rd June 2025, by USS Sovereign, and tweaked by Noat and Alex SL Gato (CharaToLoki)
 #         Inspired by the Shield Percentages mod by Defiant. It was originally made pre-2010 with the goal of showing lots of accessibility options, such as for colorblind people.
 #
 # Modify, redistribute to your liking. Just remember to give credit where due.
 #################################################################################################################
 #
 MODINFO = { "Author": "\"USS Sovereign\" (mario0085), Noat (noatblok),\"Alex SL Gato\" (andromedavirgoa@gmail.com)",
-	    "Version": "0.54",
+	    "Version": "0.55",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -299,6 +299,7 @@ def convertToString(iExact, numDec, radNot):
 			iDec = string.replace(currHullRelA, " ", "0")
 		else:
 			iDec = string.zfill(iDec, numDec)
+
 	if numDec > 0:
 		auxPercString = auxPercString + str(radNot) + str(iDec)
 
@@ -346,8 +347,8 @@ class Watcher:
 		
 			if globalVarList["ShowPercent"]:
 				auxPercString = ""
-				if globalVarList["NumberDecimals"] > 0:
-					auxPercString = convertToString(self.iExact, globalVarList["NumberDecimals"], str(globalVarList["RadixNotation"]))
+				#if globalVarList["NumberDecimals"] >= 0:
+				auxPercString = convertToString(self.iExact, globalVarList["NumberDecimals"], str(globalVarList["RadixNotation"]))
 
 				infoString = infoString + auxPercString + "% "
 				if not globalVarList["ShowFraction"]:
@@ -379,35 +380,6 @@ class Watcher:
 
 			if globalVarList["ShowFraction"] or globalVarList["ShowPercent"]:			
 				pText.SetString("Hull " + infoString)
-
-			"""
-			if globalVarList["ShowPercent"]:
-				auxPercString = ""
-				if globalVarList["NumberDecimals"] > 0:
-					auxPercString = convertToString(self.iExact, globalVarList["NumberDecimals"], str(globalVarList["RadixNotation"]))
-
-				infoString = infoString + auxPercString + "%"
-				if not globalVarList["ShowFraction"]:
-					infoString = "          " + infoString
-				else:
-					infoString = " " + infoString
-			if globalVarList["ShowFraction"]:
-				if self.fHullMax <= 1.0 and globalVarList["NumberDecimals"] < 6:
-					signifDec = 6
-				else:
-					signifDec = globalVarList["NumberDecimals"]
-
-				sCurrHull = convertToString(self.fHullCurr, signifDec, str(globalVarList["RadixNotation"]))
-				sMaxHull = convertToString(self.fHullMax, signifDec, str(globalVarList["RadixNotation"]))
-
-				auxString = str(sCurrHull) + "/" + str(sMaxHull)
-				if globalVarList["ShowPercent"]:
-					auxString = "(" + auxString + ")"
-				infoString = infoString + " " + auxString
-
-			if globalVarList["ShowFraction"] or globalVarList["ShowPercent"]:			
-				pText.SetString("Hull :" + infoString)
-			"""
 
 		global pHealth
 
