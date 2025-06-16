@@ -5,7 +5,7 @@
 #         Version 1.10
 #         16th June 2025
 #         Based strongly on Shields.py by the FoundationTechnologies team, and ATPFunctions by Apollo.
-#         From version 1.10 onwards, also has a dependency with USS Sovereign's DS9FX "Handle Shields" function - used for the 'no bleedthrough Shields' tech, eminently used for those vessels whose "no dmg through shields" option from DS9FX should remain active the most to be better canon-compliant
+#         From version 1.10 onwards, also has a dependency with USS Sovereign's DS9FX "Handle Shields" functions, which must be installed separately as a pre-requisite - used for the 'no bleedthrough Shields' tech, eminently used for those vessels whose "no dmg through shields" option from DS9FX should remain active the most to be better canon-compliant
 #################################################################################################################
 
 from bcdebug import debug

@@ -98,7 +98,7 @@ Several daleks, a Time War dalek saucer, an Emperor Dalek Saucer, a Dalek Crucib
 - some parts of code and advice from USS Sovereign (Mario) and BCS:TNG. Thank you to Mario from BCCentral for aiding me with some ShipDef counseling
 
 ===Required mods===
-* Foundation + FoundationTech + Kobayashi Maru (the most modern the best. Foundation and FoundationTech already come by default with KM).
+* Foundation + FoundationTech + DS9FX + Kobayashi Maru (the most modern the best. Foundation, FoundationTech and DS9FX already come by default with KM).
 * GalaxyCharts (already by default on KM, just make sure its Mutator on Options -> Customize -> Mutators is active or you will not be able to enter the Time Vortex beyond maybe being forced into it by a Battle Tardis Time Missile).
 ===Optional mods===
 OPTIONAL (but strongly recommended for drives, while you can perfectly play without these, you lose some potential):
