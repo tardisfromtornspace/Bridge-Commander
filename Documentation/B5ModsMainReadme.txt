@@ -1,4 +1,8 @@
 ==Changelog==
+1.6.3 -
+   Updates:
+   * Updated B5Defences script to 1.10, now adding a new tech that should force no damage through shields ONLY on vessels that call that tech in particular IF DS9FX "No-damage-through-shields" option is turned off.
+   * Added that new tech to the Thirdspace Capital ship and Thirdspace fighter.
 1.6.2 -
    Fixes:
    * Updated Jumpgate TravellingMethods to 0.25, now the check for ISI tractor ship should be less intensive.
@@ -276,7 +280,7 @@ THIS MOD IS NOT SUPPORTED BY ACTIVISION
 This mod falls under the GNU LESSER GENERAL PUBLIC LICENSE Version 3, 29 June 2007, both from any derivative or original work done to the mod. Everyone is permitted to copy and distribute verbatim copies of this mod. As per the LPGL license, everything in this mod is open for everybody to use, read and modify. Just do not forget to credit everyone involved and follow the LGPL license so derivatives of this code remain LGPL.
 
 ===Mods required===
-You'll of course need Foundation, Nanofx2, Submenu v 3.0, QBAutostart and Kobayashi Maru mod, the latest version the better. GalaxyCharts is also required, probably the GalaxyCharts Warp AI fix as well.
+You'll of course need Foundation, Nanofx2, Submenu v 3.0, QBAutostart , DS9FX and Kobayashi Maru mod, the latest version the better (Kobayashi Maru already has those). GalaxyCharts is also required (KM also has that), probably the GalaxyCharts Warp AI fix as well (KM may NOT have that pre-installed).
 
 All the mods on https://www.gamefront.com/games/bridge-commander/category/babylon5 mentioned above, on reverse order (NONE of the ones called "Remastered") would be probably required (albeit at the time I downloaded the mods from NexusMods so the content may have been different), **but** some of them conflicted with each other due to Caps issue (i.e. EAOmega - eaomega), certain shuttle quirks and BCMMods affected certain filenames and inner files, which back when I was a newbie took me 3 years to fix, made that unadvisable. What I recommend to do is to do the following: get those mods downloaded on a temp folder, grab ONLY the data and sfx folders, make sure they follow the proper folder names, case-sensitive (i.e. they should be called "Icons", not "icon", example on the G'Quan where that bug happened), icon names, model names and sound names (some, when legally allowed, seen inside this super-pack. They are meant to be placeholders so the correct case-sensitive names work), and then, after ensuring all the files are there, copy the unzipped super-pack to another temp folder (let's call it "temp folder SuP"), then copy the data and sfx fixed folders from those mods to "temp folder SuP", and then copy the sfx and data ones from the super-pack again onto "temp folder SuP". That procedure should guarantee that all the folders and files are named properly while using those mod files and having updated ones (because when Windows OS replaces a file by another it may replace the contents, but if one was called "AAAA" and the other "aaaa" then the name of the oldest file will remain). 
 

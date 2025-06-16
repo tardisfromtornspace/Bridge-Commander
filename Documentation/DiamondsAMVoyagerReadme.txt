@@ -1,6 +1,8 @@
 This mod was changed by narrowcwyfe and Alex SL Gato. Being temporarily uploaded on narrowcwfe's behalf.
 
 == Changelog ==
+
+0.9.15 - Updated AdvArmourTechThree from 1.83 to 1.84, fixed weird button bug.
 0.9.14 - Updated AdvArmourTechThree from 1.82 to 1.83, fixed weird self-destruct bug.
 0.9.13 - Updated AutomaticDestroyedSystemRepairDummy to prevent some defence scripts from targeting it.
 0.9.12 - Updated AdvArmourTechThree from 1.81 to 1.82, fixing any weird cases of the button remaining when it shouldn't.

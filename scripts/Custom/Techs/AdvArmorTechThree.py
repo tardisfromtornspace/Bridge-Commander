@@ -10,7 +10,7 @@ import traceback
 from bcdebug import debug
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-            "Version": "1.83",
+            "Version": "1.84",
             "License": "LGPL",
             "Description": "Read info below for better understanding"
             }
@@ -100,7 +100,7 @@ class AdvArmorTechTwoDef(FoundationTech.TechDef):
 		pPlayer = MissionLib.GetPlayer()
 		if pPlayer:
 			pInstance = findShipInstance(pPlayer)
-			if not pInstance.__dict__.has_key("Adv Armor Tech"):
+			if not pInstance or not pInstance.__dict__.has_key("Adv Armor Tech"):
 				try:
 					self.DeleteMenuButton("Tactical", "Adv Plating Offline")
 				except:

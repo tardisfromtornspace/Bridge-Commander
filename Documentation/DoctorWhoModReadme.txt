@@ -1,4 +1,7 @@
 == Changelog ==
+1.2.3 - Fixes:
+   * Updated AdvArmourTechThree from 1.83 to 1.84, fixed weird button bug.
+   * Upgraded B5Defences to 1.10.
 1.2.2 - Updates:
    * Upgraded TimeVortex TravellingMethod to provide a slightly more efficient ISI tractor check.
 1.2.1 - Updates:

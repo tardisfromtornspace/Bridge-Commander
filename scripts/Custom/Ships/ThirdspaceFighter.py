@@ -19,7 +19,7 @@ SubSubMenu = "Fighters"
 Foundation.ShipDef.ThirdspaceFighter = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu, "SubSubMenu": SubSubMenu })
 
 # Yeah I know thirdspace aliens don't have Vree tech, but on this case I made both of them work the same way
-Foundation.ShipDef.ThirdspaceFighter.dTechs = {'Breen Drainer Immune': 1, "Vree Shields": 100}
+Foundation.ShipDef.ThirdspaceFighter.dTechs = {'Breen Drainer Immune': 1, "Vree Shields": 100, 'No bleedthrough Shields': 100,}
 
 Foundation.ShipDef.ThirdspaceFighter.desc = "A Thirdspace fighter is a small vessel controlled by the Thirdspace Aliens.These ships are capable of equaling a Whitestar in firepower. The ships are small, fast, with weapons and defenses unlike anything ever seen. Starfuries could do practically nothing against them, and as quoted 'We have to hit them four times before they even notice.' There is plenty of proof to that statement. The weapons systems were based around three coiled appendages that generated a surprisingly powerful plasma burst capable of crippling a Whitestar in just two shots and destroying a starfury like it was a bug on a windshield."
 

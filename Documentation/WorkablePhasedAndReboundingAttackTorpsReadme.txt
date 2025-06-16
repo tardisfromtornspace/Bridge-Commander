@@ -2,11 +2,14 @@ Modifications made by Alex SL Gato
 
 Special Thanks to 𝕟𝕒𝕣𝕣𝕠𝕨𝕔𝕨𝕪𝕗𝕖#0007 for driving me to complete this mod for their Voyager-J mod, as well as for some help with the PhasedTorp scripts.
 
-===Changelog===
+== Changelog ==
+
+1.5.0 - Updated AdvArmourTechThree from 1.83 to 1.84, fixed weird button bug.
+1.4.9 - Updated HoppingDrone to fix weird edge-case crash issues.
 1.4.8 - Changed AutomaticDestroyedSystemDummy torpedo name to prevent some issues.
 1.4.7 - Updated AdvArmourTechThree from 1.81 to 1.82, 1.82 solves a possible missing button issue.
 1.4.6 - Updated AdvArmourTechThree from 1.8 to 1.81, 1.81 checks things a tiny bit better.
-1.4.5 - Removed SRealisticHoppingTorp from here now that my other Stargate packs have it (less difficult to forget and elave outdated versions).
+1.4.5 - Removed SGRealisticHoppingTorp from here now that my other Stargate packs have it (less difficult to forget and elave outdated versions).
 1.4.4 - Updated AdvArmourTechThree from 1.7 to 1.8, 1.8 is a tiny bit slower but it is far better for some KM installs where for some reason 1.7 might crash. If 1.7 did not crash for you, use the 1.7 script from previous versions instead.
 1.4.2 to 1.4.3 - Improvements to the armour to 1.7 which eliminate the no-glow issue.
 1.4 - Total bug fix to the armour

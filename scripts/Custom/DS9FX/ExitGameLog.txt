@@ -8196,3 +8196,795 @@ auxPercString=  15000 iDec =
 
 
 ##### End Of The Log #####
+##### Bridge Commander Exit Log: 09 Jun 2025 00:24:00#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Traceback (innermost last):
+  File ".\Scripts\Bridge\EngineerCharacterHandlers.py", line 690, in AnnounceSpecificShield
+    fShields = (pShip.GetShields().GetCurShields(App.ShieldClass.FRONT_SHIELDS)/pShip.GetShields().GetMaxShields(App.ShieldClass.FRONT_SHIELDS))
+ZeroDivisionError: float division
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\NXTorpedo.py", line 13, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\NXTorpedo.py", line 13, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\NXTorpedo.py", line 13, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+data/TGL/Maelstrom/Episode 5/E5M2.tgl E5M2PrendelScan7
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Traceback (innermost last):
+  File ".\Scripts\Bridge\EngineerCharacterHandlers.py", line 690, in AnnounceSpecificShield
+    fShields = (pShip.GetShields().GetCurShields(App.ShieldClass.FRONT_SHIELDS)/pShip.GetShields().GetMaxShields(App.ShieldClass.FRONT_SHIELDS))
+ZeroDivisionError: float division
+PlasmaFX Communicating with Targetable Plasma Streams...
+...Sucess
+killing the player class instance
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Traceback (innermost last):
+  File ".\Scripts\Bridge\EngineerCharacterHandlers.py", line 690, in AnnounceSpecificShield
+    fShields = (pShip.GetShields().GetCurShields(App.ShieldClass.FRONT_SHIELDS)/pShip.GetShields().GetMaxShields(App.ShieldClass.FRONT_SHIELDS))
+ZeroDivisionError: float division
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\NXTorpedo.py", line 13, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\NXTorpedo.py", line 13, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\NXTorpedo.py", line 13, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Creating WarpSequence:  Ship = Neptune Class-3  // To Set = None  // Placement Name = None
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 43a05830> ignored
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\NXTorpedo.py", line 13, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Setting splash damage for Neptune Class-3 to (339.556549, 6.791131)
+Trying to clean memory
+data/TGL/Maelstrom/Episode 7/E7M1.tgl E7M1SaalekComing4
+Creating WarpSequence:  Ship = Neptune Class-4  // To Set = None  // Placement Name = None
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 43a66af0> ignored
+Setting splash damage for Neptune Class-4 to (1559.938110, 31.198763)
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting splash damage for Neptune Class-3 to (1562.500000, 31.250000)
+Creating WarpSequence:  Ship = Neptune Class-3  // To Set = None  // Placement Name = None
+Setting Shield  0 to 4.25
+Setting Shield  1 to 3.75
+Setting Shield  2 to 3.25
+Setting Shield  3 to 3.25
+Setting Shield  4 to 2.75
+Setting Shield  5 to 2.75
+Setting Shield  0 to 8.5
+Setting Shield  1 to 7.5
+Setting Shield  2 to 6.5
+Setting Shield  3 to 6.5
+Setting Shield  4 to 5.5
+Setting Shield  5 to 5.5
+Setting Shield  0 to 8.5
+Setting Shield  1 to 7.5
+Setting Shield  2 to 6.5
+Setting Shield  3 to 6.5
+Setting Shield  4 to 5.5
+Setting Shield  5 to 5.5
+Trying to clean memory
+Setting splash damage for Protector-1 to (2748.225830, 54.964516)
+Shuttle Launching Error: ship Galaxy 1 has no Shuttle launching points
+
+
+Setting splash damage for Neptune Class-6 to (1549.389893, 30.987799)
+Setting splash damage for Neptune Class-4 to (433.814056, 8.676281)
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Traceback (innermost last):
+  File ".\Scripts\Bridge\EngineerCharacterHandlers.py", line 690, in AnnounceSpecificShield
+    fShields = (pShip.GetShields().GetCurShields(App.ShieldClass.FRONT_SHIELDS)/pShip.GetShields().GetMaxShields(App.ShieldClass.FRONT_SHIELDS))
+ZeroDivisionError: float division
+Creating WarpSequence:  Ship = Neptune Class-2  // To Set = None  // Placement Name = None
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 500688e0> ignored
+Setting splash damage for Neptune Class-2 to (1530.081787, 30.601635)
+Creating WarpSequence:  Ship = Neptune Class-4  // To Set = None  // Placement Name = None
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 5312fcbc> ignored
+Setting splash damage for Neptune Class-4 to (1562.500000, 31.250000)
+Trying to clean memory
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Traceback (innermost last):
+  File ".\Scripts\Bridge\EngineerCharacterHandlers.py", line 690, in AnnounceSpecificShield
+    fShields = (pShip.GetShields().GetCurShields(App.ShieldClass.FRONT_SHIELDS)/pShip.GetShields().GetMaxShields(App.ShieldClass.FRONT_SHIELDS))
+ZeroDivisionError: float division
+Setting splash damage for Neptune Class-3 to (1562.500000, 31.250000)
+Creating WarpSequence:  Ship = Neptune Class-3  // To Set = None  // Placement Name = None
+Setting splash damage for Neptune Class-2 to (1562.500000, 31.250000)
+Creating WarpSequence:  Ship = Neptune Class-2  // To Set = None  // Placement Name = None
+Setting splash damage for Neptune Class-6 to (1562.500000, 31.250000)
+Creating WarpSequence:  Ship = Neptune Class-6  // To Set = None  // Placement Name = None
+data/TGL/Maelstrom/Episode 8/E8M2.tgl E8M2CommArray3b
+Setting splash damage for Neptune Class-5 to (1562.500000, 31.250000)
+Creating WarpSequence:  Ship = Neptune Class-5  // To Set = None  // Placement Name = None
+Creating WarpSequence:  Ship = Neptune Class-4  // To Set = None  // Placement Name = None
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 531544d4> ignored
+Setting splash damage for Neptune Class-4 to (1562.500000, 31.250000)
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Creating WarpSequence:  Ship = Neptune Class-4  // To Set = None  // Placement Name = None
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 50741dbc> ignored
+Setting splash damage for Neptune Class-4 to (1562.500000, 31.250000)
+Creating WarpSequence:  Ship = Neptune Class-5  // To Set = None  // Placement Name = None
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 50743010> ignored
+data/TGL/Maelstrom/Episode 8/E8M1.tgl E8M1L156
+Setting splash damage for Neptune Class-6 to (396.469940, 7.929399)
+Creating WarpSequence:  Ship = Neptune Class-6  // To Set = None  // Placement Name = None
+Trying to clean memory
+data/TGL/Maelstrom/Episode 5/E5M4.tgl E5M4SaffiComm2
+data/TGL/Maelstrom/Episode 7/E7M1.tgl E7M1GeronimoHull25b
+Creating WarpSequence:  Ship = Protector-1  // To Set = None  // Placement Name = None
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 50811780> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 50812f40> ignored
+Setting Stock System Planets Random Density.
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 5080e8d0> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 5080e894> ignored
+data/TGL/Maelstrom/Episode 6/E6M4.tgl E6M4ScanPrompt1
+Trying to clean memory
+data/TGL/Maelstrom/Episode 5/E5M2.tgl E5M2PrendelScan8
+Setting Stock System Planets Random Density.
+
+# DS9FX has...
+
+# taken a console dump
+data/TGL/Maelstrom/Episode 8/E8M2.tgl E8M2MatanTry1
+data/TGL/Maelstrom/Episode 8/E8M2.tgl E8M2MatanDefeated05
+Trying to clean memory
+data/TGL/Maelstrom/Episode 1/E1M2.tgl E1M2MissionLost6
+data/TGL/Maelstrom/Episode 8/E8M1.tgl E8M1L184
+Setting splash damage for jclass 4 to (333.547546, 6.670951)
+Setting splash damage for jclass 3 to (331.454498, 6.629090)
+Setting splash damage for jclass 5 to (187.500000, 3.750000)
+Trying to clean memory
+Setting splash damage for WCNXRefit 3 to (1329.637695, 26.592754)
+Ship TurianFrigate 5 with Alternative Warp FTL SubModel support added
+PlasmaFX Communicating with Targetable Plasma Streams...
+...Sucess
+killing the player class instance
+Setting splash damage for Total PointDefence Firepoint TurianFrigate 5 C Torpedo instance at _440c6090_p_Torpedo to (75.000000, 1.500000)
+Setting splash damage for Total PointDefence Firepoint TurianFrigate 5 C Torpedo instance at _4375fd60_p_Torpedo to (75.000000, 1.500000)
+Setting splash damage for Total PointDefence Firepoint TurianFrigate 5 C Torpedo instance at _5256ed98_p_Torpedo to (75.000000, 1.500000)
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 09 Jun 2025 00:24:00#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Traceback (innermost last):
+  File ".\Scripts\Bridge\EngineerCharacterHandlers.py", line 690, in AnnounceSpecificShield
+    fShields = (pShip.GetShields().GetCurShields(App.ShieldClass.FRONT_SHIELDS)/pShip.GetShields().GetMaxShields(App.ShieldClass.FRONT_SHIELDS))
+ZeroDivisionError: float division
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\NXTorpedo.py", line 13, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\NXTorpedo.py", line 13, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\NXTorpedo.py", line 13, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+data/TGL/Maelstrom/Episode 5/E5M2.tgl E5M2PrendelScan7
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Traceback (innermost last):
+  File ".\Scripts\Bridge\EngineerCharacterHandlers.py", line 690, in AnnounceSpecificShield
+    fShields = (pShip.GetShields().GetCurShields(App.ShieldClass.FRONT_SHIELDS)/pShip.GetShields().GetMaxShields(App.ShieldClass.FRONT_SHIELDS))
+ZeroDivisionError: float division
+PlasmaFX Communicating with Targetable Plasma Streams...
+...Sucess
+killing the player class instance
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Traceback (innermost last):
+  File ".\Scripts\Bridge\EngineerCharacterHandlers.py", line 690, in AnnounceSpecificShield
+    fShields = (pShip.GetShields().GetCurShields(App.ShieldClass.FRONT_SHIELDS)/pShip.GetShields().GetMaxShields(App.ShieldClass.FRONT_SHIELDS))
+ZeroDivisionError: float division
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\NXTorpedo.py", line 13, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\NXTorpedo.py", line 13, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\NXTorpedo.py", line 13, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Creating WarpSequence:  Ship = Neptune Class-3  // To Set = None  // Placement Name = None
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 43a05830> ignored
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\NXTorpedo.py", line 13, in Create
+    pTorp.SetLifetime( GetLifetime() )
+NameError: GetLifetime
+Setting splash damage for Neptune Class-3 to (339.556549, 6.791131)
+Trying to clean memory
+data/TGL/Maelstrom/Episode 7/E7M1.tgl E7M1SaalekComing4
+Creating WarpSequence:  Ship = Neptune Class-4  // To Set = None  // Placement Name = None
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 43a66af0> ignored
+Setting splash damage for Neptune Class-4 to (1559.938110, 31.198763)
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting splash damage for Neptune Class-3 to (1562.500000, 31.250000)
+Creating WarpSequence:  Ship = Neptune Class-3  // To Set = None  // Placement Name = None
+Setting Shield  0 to 4.25
+Setting Shield  1 to 3.75
+Setting Shield  2 to 3.25
+Setting Shield  3 to 3.25
+Setting Shield  4 to 2.75
+Setting Shield  5 to 2.75
+Setting Shield  0 to 8.5
+Setting Shield  1 to 7.5
+Setting Shield  2 to 6.5
+Setting Shield  3 to 6.5
+Setting Shield  4 to 5.5
+Setting Shield  5 to 5.5
+Setting Shield  0 to 8.5
+Setting Shield  1 to 7.5
+Setting Shield  2 to 6.5
+Setting Shield  3 to 6.5
+Setting Shield  4 to 5.5
+Setting Shield  5 to 5.5
+Trying to clean memory
+Setting splash damage for Protector-1 to (2748.225830, 54.964516)
+Shuttle Launching Error: ship Galaxy 1 has no Shuttle launching points
+
+
+Setting splash damage for Neptune Class-6 to (1549.389893, 30.987799)
+Setting splash damage for Neptune Class-4 to (433.814056, 8.676281)
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Traceback (innermost last):
+  File ".\Scripts\Bridge\EngineerCharacterHandlers.py", line 690, in AnnounceSpecificShield
+    fShields = (pShip.GetShields().GetCurShields(App.ShieldClass.FRONT_SHIELDS)/pShip.GetShields().GetMaxShields(App.ShieldClass.FRONT_SHIELDS))
+ZeroDivisionError: float division
+Creating WarpSequence:  Ship = Neptune Class-2  // To Set = None  // Placement Name = None
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 500688e0> ignored
+Setting splash damage for Neptune Class-2 to (1530.081787, 30.601635)
+Creating WarpSequence:  Ship = Neptune Class-4  // To Set = None  // Placement Name = None
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 5312fcbc> ignored
+Setting splash damage for Neptune Class-4 to (1562.500000, 31.250000)
+Trying to clean memory
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Traceback (innermost last):
+  File ".\Scripts\Bridge\EngineerCharacterHandlers.py", line 690, in AnnounceSpecificShield
+    fShields = (pShip.GetShields().GetCurShields(App.ShieldClass.FRONT_SHIELDS)/pShip.GetShields().GetMaxShields(App.ShieldClass.FRONT_SHIELDS))
+ZeroDivisionError: float division
+Setting splash damage for Neptune Class-3 to (1562.500000, 31.250000)
+Creating WarpSequence:  Ship = Neptune Class-3  // To Set = None  // Placement Name = None
+Setting splash damage for Neptune Class-2 to (1562.500000, 31.250000)
+Creating WarpSequence:  Ship = Neptune Class-2  // To Set = None  // Placement Name = None
+Setting splash damage for Neptune Class-6 to (1562.500000, 31.250000)
+Creating WarpSequence:  Ship = Neptune Class-6  // To Set = None  // Placement Name = None
+data/TGL/Maelstrom/Episode 8/E8M2.tgl E8M2CommArray3b
+Setting splash damage for Neptune Class-5 to (1562.500000, 31.250000)
+Creating WarpSequence:  Ship = Neptune Class-5  // To Set = None  // Placement Name = None
+Creating WarpSequence:  Ship = Neptune Class-4  // To Set = None  // Placement Name = None
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 531544d4> ignored
+Setting splash damage for Neptune Class-4 to (1562.500000, 31.250000)
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Creating WarpSequence:  Ship = Neptune Class-4  // To Set = None  // Placement Name = None
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 50741dbc> ignored
+Setting splash damage for Neptune Class-4 to (1562.500000, 31.250000)
+Creating WarpSequence:  Ship = Neptune Class-5  // To Set = None  // Placement Name = None
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 50743010> ignored
+data/TGL/Maelstrom/Episode 8/E8M1.tgl E8M1L156
+Setting splash damage for Neptune Class-6 to (396.469940, 7.929399)
+Creating WarpSequence:  Ship = Neptune Class-6  // To Set = None  // Placement Name = None
+Trying to clean memory
+data/TGL/Maelstrom/Episode 5/E5M4.tgl E5M4SaffiComm2
+data/TGL/Maelstrom/Episode 7/E7M1.tgl E7M1GeronimoHull25b
+Creating WarpSequence:  Ship = Protector-1  // To Set = None  // Placement Name = None
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 50811780> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 50812f40> ignored
+Setting Stock System Planets Random Density.
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 5080e8d0> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 5080e894> ignored
+data/TGL/Maelstrom/Episode 6/E6M4.tgl E6M4ScanPrompt1
+Trying to clean memory
+data/TGL/Maelstrom/Episode 5/E5M2.tgl E5M2PrendelScan8
+Setting Stock System Planets Random Density.
+
+# DS9FX has...
+
+# taken a console dump
+data/TGL/Maelstrom/Episode 8/E8M2.tgl E8M2MatanTry1
+data/TGL/Maelstrom/Episode 8/E8M2.tgl E8M2MatanDefeated05
+Trying to clean memory
+data/TGL/Maelstrom/Episode 1/E1M2.tgl E1M2MissionLost6
+data/TGL/Maelstrom/Episode 8/E8M1.tgl E8M1L184
+Setting splash damage for jclass 4 to (333.547546, 6.670951)
+Setting splash damage for jclass 3 to (331.454498, 6.629090)
+Setting splash damage for jclass 5 to (187.500000, 3.750000)
+Trying to clean memory
+Setting splash damage for WCNXRefit 3 to (1329.637695, 26.592754)
+Ship TurianFrigate 5 with Alternative Warp FTL SubModel support added
+PlasmaFX Communicating with Targetable Plasma Streams...
+...Sucess
+killing the player class instance
+Setting splash damage for Total PointDefence Firepoint TurianFrigate 5 C Torpedo instance at _440c6090_p_Torpedo to (75.000000, 1.500000)
+Setting splash damage for Total PointDefence Firepoint TurianFrigate 5 C Torpedo instance at _4375fd60_p_Torpedo to (75.000000, 1.500000)
+Setting splash damage for Total PointDefence Firepoint TurianFrigate 5 C Torpedo instance at _5256ed98_p_Torpedo to (75.000000, 1.500000)
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 16 Jun 2025 20:20:48#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+
+
+Timed Torpedoes loaded
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+calling maybe check TO-DO remove this
+calling maybe check TO-DO remove this
+calling maybe check TO-DO remove this
+calling maybe check TO-DO remove this
+calling maybe check TO-DO remove this
+cloak TO-DO REMOVE THIS
+calling maybe check TO-DO remove this
+calling maybe check TO-DO remove this
+calling maybe check TO-DO remove this
+calling maybe check TO-DO remove this
+calling maybe check TO-DO remove this
+calling maybe check TO-DO remove this
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 16 Jun 2025 20:20:48#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+
+
+Timed Torpedoes loaded
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+calling maybe check TO-DO remove this
+calling maybe check TO-DO remove this
+calling maybe check TO-DO remove this
+calling maybe check TO-DO remove this
+calling maybe check TO-DO remove this
+cloak TO-DO REMOVE THIS
+calling maybe check TO-DO remove this
+calling maybe check TO-DO remove this
+calling maybe check TO-DO remove this
+calling maybe check TO-DO remove this
+calling maybe check TO-DO remove this
+calling maybe check TO-DO remove this
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+# DS9FX has...
+
+# taken a console dump
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 16 Jun 2025 20:25:04#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+
+
+Timed Torpedoes loaded
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+Setting splash damage for Vorlon Cruiser-1 to (8125.000000, 162.500000)
+Creating WarpSequence:  Ship = Vorlon Cruiser-1  // To Set = None  // Placement Name = None
+
+
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+Setting splash damage for Vorlon Cruiser-1 to (8125.000000, 162.500000)
+Creating WarpSequence:  Ship = Vorlon Cruiser-1  // To Set = None  // Placement Name = None
+
+
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 16 Jun 2025 20:25:04#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+
+
+Timed Torpedoes loaded
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+Setting splash damage for Vorlon Cruiser-1 to (8125.000000, 162.500000)
+Creating WarpSequence:  Ship = Vorlon Cruiser-1  // To Set = None  // Placement Name = None
+
+
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+Setting splash damage for Vorlon Cruiser-1 to (8125.000000, 162.500000)
+Creating WarpSequence:  Ship = Vorlon Cruiser-1  // To Set = None  // Placement Name = None
+
+
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+# DS9FX has...
+
+# taken a console dump
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 16 Jun 2025 20:29:20#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 16 Jun 2025 20:29:20#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+# DS9FX has...
+
+# taken a console dump
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####

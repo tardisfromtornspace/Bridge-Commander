@@ -1,4 +1,6 @@
 == Changelog ==
+1.2.15 - Fixing:
+   * Updated AdvArmourTechThree from 1.83 to 1.84, fixed weird button bug.
 1.2.14 - Fixing:
    * Updated AdvArmourTechThree from 1.82 to 1.83, fixed weird self-destruct bug.
 1.2.13 - Fixing:

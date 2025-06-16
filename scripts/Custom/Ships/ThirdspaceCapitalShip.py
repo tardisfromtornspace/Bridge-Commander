@@ -23,6 +23,7 @@ Foundation.ShipDef.ThirdspaceCapitalShip.dTechs = {
 	"AutoTargeting": { "Pulse": [3, 0] },
 	'Breen Drainer Immune': 1,
 	"Vree Shields": 100,
+	'No bleedthrough Shields': 100,
 }
 
 Foundation.ShipDef.ThirdspaceCapitalShip.desc = "The Thirdspace capital ships are large vessels used by the beings from Thirdspace, piloted by the Harbingers themselves. These ships are the primary spearheads of an extinction armada. Slow and relentless, these ships are capable enough to withstand assaults by entire fleets of lesser ships."
