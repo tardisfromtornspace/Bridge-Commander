@@ -1,4 +1,7 @@
 ==Changelog==
+1.6.4 -
+   Bug Fixes:
+   * Updated Automated Destroyed System Repair to 0.64, fixing a minor Mvam issue related with status check.
 1.6.3 -
    Updates:
    * Updated B5Defences script to 1.10, now adding a new tech that should force no damage through shields ONLY on vessels that call that tech in particular IF DS9FX "No-damage-through-shields" option is turned off.
