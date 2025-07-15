@@ -1,6 +1,6 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
-# 17th March 2024, by Alex SL Gato (CharaToLoki), partially based on the Shield.py script by the Foundation Technologies team and Dasher42's Foundation script, and the FedAblativeArmor.py found in scripts/ftb/Tech in KM 2011.10
+# 15th July 2025, by Alex SL Gato (CharaToLoki), partially based on the Shield.py script by the Foundation Technologies team and Dasher42's Foundation script, and the FedAblativeArmor.py found in scripts/ftb/Tech in KM 2011.10
 # Also based on Conditions.ConditionSystemBelow, probably from the original STBC Team and Activision
 # TODO: 1. Create Read Me
 #	2. Create a clear guide on how to add this...
@@ -22,7 +22,7 @@ Foundation.ShipDef.LowCube.dTechs = {
 """
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.62",
+	    "Version": "0.64",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -122,7 +122,7 @@ class AutomatedDestroyedSystemRepairDef(FoundationTech.TechDef):
 				pEvent.SetDestination( self.pEventHandler )
 				pEvent.SetSource( pSubsystem )
 
-				fFraction = 1.0 - (1.0/pSubsystem.GetMaxCondition())
+				fFraction = 1.0 - (0.01/pSubsystem.GetMaxCondition())
 				pWatcher = pSubsystem.GetConditionWatcher()
 				iRangeID = pWatcher.AddRangeCheck( fFraction, App.FloatRangeWatcher.FRW_BOTH, pEvent )
 				if pInstance:
@@ -159,16 +159,28 @@ class AutomatedDestroyedSystemRepairDef(FoundationTech.TechDef):
 					pInstanceDict = pInstance.__dict__
 
 					if pInstanceDict.has_key("Automated Destroyed System Repair") and pInstanceDict.has_key("Automated Destroyed System Repair I"):
+						subSysID = pSubsystem.GetObjID()
 						myfFraction = 1.1 # Impossible to reach, ergo a good default value
-						if pInstanceDict["Automated Destroyed System Repair I"].has_key(pSubsystem.GetObjID()) and pInstanceDict["Automated Destroyed System Repair I"][pSubsystem.GetObjID()].has_key("Fraction"):
-							myfFraction = pInstanceDict["Automated Destroyed System Repair I"][pSubsystem.GetObjID()]["Fraction"]
+						if not pInstanceDict["Automated Destroyed System Repair I"].has_key(subSysID):
+							pEvent = App.TGFloatEvent_Create()
+							pEvent.SetEventType( eAllSystemsat100Type )
+							pEvent.SetDestination( self.pEventHandler )
+							pEvent.SetSource( pSubsystem )
+							pWatcher = pSubsystem.GetConditionWatcher()
+							dfFraction = 1.0 - (0.01/pSubsystem.GetMaxCondition())
+							iRangeID = pWatcher.AddRangeCheck( dfFraction, App.FloatRangeWatcher.FRW_BOTH, pEvent )
+							pInstanceDict["Automated Destroyed System Repair I"][subSysID] = {"Complies": 1, "Fraction": dfFraction}
+							pInstanceDict["Automated Destroyed System Repair I"][subSysID]["Watcher"] = iRangeID
+
+						if pInstanceDict["Automated Destroyed System Repair I"].has_key(subSysID) and pInstanceDict["Automated Destroyed System Repair I"][subSysID].has_key("Fraction"):
+							myfFraction = pInstanceDict["Automated Destroyed System Repair I"][subSysID]["Fraction"]
 					
 						if fFraction >= myfFraction:
-							pInstanceDict["Automated Destroyed System Repair I"][pSubsystem.GetObjID()]["Complies"] = 1
+							pInstanceDict["Automated Destroyed System Repair I"][subSysID]["Complies"] = 1
 						else:
-							pInstanceDict["Automated Destroyed System Repair I"][pSubsystem.GetObjID()]["Complies"] = 0
+							pInstanceDict["Automated Destroyed System Repair I"][subSysID]["Complies"] = 0
 
-						totalComply = pInstanceDict["Automated Destroyed System Repair I"][pSubsystem.GetObjID()]["Complies"]
+						totalComply = pInstanceDict["Automated Destroyed System Repair I"][subSysID]["Complies"]
 						for subSysID in pInstanceDict["Automated Destroyed System Repair I"].keys():
 							if pInstanceDict["Automated Destroyed System Repair I"][subSysID]["Complies"] == 0:
 								totalComply = 0
