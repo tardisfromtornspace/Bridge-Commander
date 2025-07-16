@@ -11420,3 +11420,26 @@ Call stack:
 Address   Frame
 779A4826  0019F6B8  0001:00043826 C:\Windows\SYSTEM32\ntdll.dll (No symbol info found)
 
+//=====================================================
+Current Time: Wed Jul 16 02:14:57 2025
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  0041011F 01:0000F11F C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+Registers:
+EAX:0088C0D8
+EBX:3D000000
+ECX:00431130
+EDX:718B5651
+ESI:134E1490
+EDI:4451E8C4
+CS:EIP:0023:0041011F
+SS:ESP:002B:0019FC08  EBP:00000000
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010206
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+

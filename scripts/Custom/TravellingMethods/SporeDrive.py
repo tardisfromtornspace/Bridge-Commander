@@ -1356,7 +1356,8 @@ def SetupSequenceISI(pShip=None):
 	if (pShip == None):
 		return
 
-	SetupTowingI(pShip.GetObjID())
+	pShipID = pShip.GetObjID()
+	SetupTowingI(pShipID)
 
 	pInstance = findShipInstance(pShip)
 	_, _, _, _, _, _, _ , _ , myExitDirection, myTime, myDistance, inDensity, inChance, exDensity, exChance, sparkSize = SporeDriveBasicConfigInfo(pShip)
