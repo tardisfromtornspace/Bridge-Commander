@@ -28,6 +28,9 @@ Foundation.ShipDef.ZZBorgSC.dTechs = {
 	'Breen Drainer Immune': 1,
 	'Borg Adaptation': 1,
 	'Automated Destroyed System Repair': {"Time": 120.0},
+	"Fool Targeting": {
+		"Accurate": 0.1,
+	},
 	'Multivectral Shields': 5,
 }
 
