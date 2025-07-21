@@ -1,4 +1,7 @@
 ==Changelog==
+1.6.5 -
+   Updates:
+   * Updated FoolTargeting to 0.45 to allow patching it to negate regular InaccurateFire.
 1.6.4 -
    Bug Fixes:
    * Updated Automated Destroyed System Repair to 0.64, fixing a minor Mvam issue related with status check.

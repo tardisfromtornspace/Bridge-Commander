@@ -2,8 +2,8 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
 #         FoolTargeting.py by Alex SL Gato
-#         Version 0.4
-#         21st December 2024
+#         Version 0.45
+#         21st July 2025
 #         Based on BorgAdaptation.py by Alex SL Gato, which was based on the Shield.py script by the Foundation Technologies team and Dasher42's FoundationTech script.
 #         Also based on ATPFunctions by Apollo and Sneaker's Innacurate Phaser mod.
 #################################################################################################################
@@ -145,8 +145,46 @@ def pulseTCondition(techName, pInstanceFool, fMiss, pAttackerShip, pAttackerInst
 		return 0.0
 """
 
+# EXTRA!!!! THIS SCRIPT SUPPORTS 'DISABLING' REGULAR INACCURATE PHASER FIRE WHILE KEEPING INACCURATEFIRE WORKING SO TECHS CAN STILL MAKE IT MISS - YOu just need to create a scripts.Custom.Autoload fire where the commented example below is pasted - recommended to call the file "TWEAK-InaccuratePhasersTechMissRedu.py" so we all know what it does.
+"""
+# THIS FILE IS NOT SUPPORTED BY ACTIVISION
+# THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
+# 21st July 2025
+# VERSION 0.1
+# By Alex SL Gato
+#
+# Changes: 
+# - This file is related to the FoolTargeting Tech and makes all phasers to not miss.
+
+from bcdebug import debug
+import App
+
+
+necessaryToUpdate = 0
+FoolTargeting = None
+try:
+	import Foundation
+	import FoundationTech
+	necessaryToUpdate = 1
+except:
+	print "Unable to find fTech"
+	necessaryToUpdate = 0
+	pass
+
+if necessaryToUpdate == 1:
+	try:
+		FoolTargeting = __import__("Custom.Techs.FoolTargeting") #from ftb.Tech import FoolTargeting
+	except:
+		FoolTargeting = None
+	if FoolTargeting != None and hasattr(FoolTargeting,"ApplyPseudoMonkeyPatch") and hasattr(FoolTargeting,"necessaryToUpdate") and hasattr(FoolTargeting,"basicMissMult"):
+			FoolTargeting.ApplyPseudoMonkeyPatch()
+			FoolTargeting.necessaryToUpdate = 0
+			FoolTargeting.basicMissMult = 0.0
+			print "Patched FoolTargeting to not miss from regular InaccurateFire"
+"""
+
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.4",
+	    "Version": "0.45",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -167,6 +205,7 @@ import traceback
 necessaryToUpdate = 0 # Who knows, we may not need to update this on newer versions...
 ticksPerKilometer = 225/40 # 225 is approximately 40 km, so 225/40 is the number of ticks per kilometer
 totalShips = 0 # We count how many ships we have with this technology.
+basicMissMult = 1.0 # We can use this to patch this later to outright disable missing from typical inaccurate phaser effects.
 oldInnacurateFire = FoundationTech.InaccurateFire # The old function we have for InnacurateFire - yes, in a way part of this is a bit like Monkey Patching, but temporary
 
 # "variableNames" is a global dictionary, filled automatically by the files in scripts/Custom/Techs/FoolTargetingScripts 
@@ -340,7 +379,7 @@ def newInaccurateFire(pShip, pSystem, pTarget):
 		# Alex SL Gato: We love innacurate phasers, but not that much when the target is literally still at 10 units from you and keep missing. Changing 2.2 to 1.0 and 0.15, and made it so sensors are better
 		# If you want your ship to miss more or less, just add a sub-Tech from this that adjust the fMiss accordingly
 		# fMiss = ((fAngleDiff * fObjectDistance) * 2.2) / (fSensorRange + 1.0)
-		fMiss = (fAngleDiff * (1.0 + fObjectDistance * 0.15)) / (16 * fSensorRange + 1.0)
+		fMiss = basicMissMult * (fAngleDiff * (1.0 + fObjectDistance * 0.15)) / (16 * fSensorRange + 1.0)
 
 		# Now comes the really extra thing - we are adding countermeasures for both sides - there is going to be a sub-tech "Accurate" that will make normal non sub-Tech fire miss more or less, or nothing.
 		# Additionally, the victim will have multiple ECM (Electronic Counter-Measures) and ECCM (Electronic Counter-Counter-Measures) that will add a Miss factor.
