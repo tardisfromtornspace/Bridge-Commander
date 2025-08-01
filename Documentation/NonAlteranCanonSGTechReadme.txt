@@ -1,4 +1,6 @@
 == Changelog ==
+1.1.18 - Updates:
+  * Created new trail script for OriBeam to allow better customization but still similar to LJ's in regards to naming and functionality to allow backwards compatibility.
 1.1.17 - Updates:
    * Added Hyperdrive Module support for GalaxyCharts (thank you, Sovereign, and BCXtreme).
    * Adjusted Custom/Ships files to reflect this new module's FTL speeds.

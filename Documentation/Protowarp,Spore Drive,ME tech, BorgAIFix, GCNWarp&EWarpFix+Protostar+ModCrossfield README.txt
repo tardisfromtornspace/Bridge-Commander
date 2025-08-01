@@ -1,4 +1,6 @@
 == Changelog ==
+0.6.5 - Updates:
+  * Created new trail script for projectiles with better customization but still similar to LJ's in regards to naming to allow backwards compatibility. Do not forget to install scripts.Tactical.Projectiles.trails.OriBeam now to have these working.
 0.6.4 - Updates:
   * Updated Spore Drive for more efficient tractor ISI check.
 0.6.3 - Updates:
@@ -104,7 +106,7 @@ All of these must be installed before installing this mod, in this order:
 * This mod, for the Turian vessels https://www.gamefront.com/games/bridge-commander/file/turian-frigate
 * All the dependencies for this mod + the mod: https://www.gamefront.com/games/bridge-commander/file/stbc-babylon-5-mod
 ** From here, HullPolarizer is the most used, but also the file "FIX-FoundationTech20050703ShipInstanceDetach.py", which solves problems related with iterating lTechs when detaching and removing from such FoundationTech list.
-* This mod, for the projectile ExtraCollisionDamageDummy and certain NanoFX 2.0 Beta fixes implemented there: https://www.gamefront.com/games/bridge-commander/file/sg1-sga-and-sgu-generic-overhaul-mod
+* This mod, for the projectile ExtraCollisionDamageDummy, scripts.Tactical.Projectiles.trails.OriBeam version >= 1.01 and certain NanoFX 2.0 Beta fixes implemented there: https://www.gamefront.com/games/bridge-commander/file/sg1-sga-and-sgu-generic-overhaul-mod
 
 IMPORTANT INSTALL INSTRUCTIONS: Do not copy-paste this mod's scripts/AI folder right away, first move this mod's scripts/AI folder somewhere else. You only have to install it if the following steps require so. The provided AI scripts scripts/AI/Compound/BasicAttack and BorgAttack scripts can also be found at BCC KM 2011.10 download site (https://www.bc-central.net/forums/index.php?action=downloads;sa=view;down=33).
 

@@ -10,6 +10,7 @@
 
 import App
 import trails.METrail
+import trails.OriBeam
 
 ###############################################################################
 #	Create(pTorp)
@@ -39,7 +40,7 @@ def Create(pTorp):
 	# type. modify the SpeciesToTorp.py file to add the new type.
 	import Multiplayer.SpeciesToTorp
 	pTorp.SetNetType (Multiplayer.SpeciesToTorp.DISRUPTOR)
-	trails.METrail.AddCreationHandler(pTorp, __name__ + ".AttachSmoke")
+	trails.OriBeam.AddCreationHandler(pTorp, __name__ + ".AttachSmoke")
 
 	return(0)
 
@@ -49,7 +50,21 @@ def AttachSmoke(self, pEvent = None):
     if not pTorpedo:
         return (1)
     ## Create and Play a sequence
-    trails.METrail.SetupSmokeTrail(pTorpedo)
+    trails.OriBeam.SetupSmokeTrail(pTorpedo, 
+					sTexture = 'data/Textures/Effects/ExplosionC.tga',
+					fFrequency = 0.01,
+					fVelocity = 0.1,
+					fSize = pTorpedo.GetRadius() * 2,
+					#kEmitPos = App.NiPoint3(0, 0, 0),
+					#kEmitDir = App.NiPoint3(0, 0, 0),
+					sAngleVariance = 60.0,
+					sEmitLife = 5.5,
+					sEffectLifetime = 8.3,
+					sDrawOldToNew = 0,
+					#sTargetAb1 = 0,
+					#sTargetAb2 = 0,
+					pFunction= trails.METrail.DefaultColorKeyFunc
+					)
     return (0)
 
 
