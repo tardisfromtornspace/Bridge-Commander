@@ -2,11 +2,11 @@
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
 # OriBeam.py
 # I wanted to create a trail script like Lost_Jedi's but allowing more customization from the projectile's side while still being compatible with the syntax Lost_Jedi used so people could use it on one projectile or another without needing to change projectile inner trail-call syntax, thus the same names and needing some similar stuff including global variables names in case someone ever used them on a script.
-# 1st August 2025
+# 7th September 2025
 #################################################################################################################
 #
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "1.01",
+	    "Version": "1.02",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -16,6 +16,7 @@ MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
 
 # Imports and global variables
 import App
+import traceback
 
 # Lost_Jedi's version had these globals so, yeah, in case somebody used them on a script, so at least this script is compatible with those.
 __author__      = MODINFO["Author"]
@@ -27,13 +28,20 @@ __notes__       = MODINFO["Description"]
 # Some extra defaults, these are new:
 g_sTexture = "scripts/Custom/NanoFXv2/SpecialFX/Gfx/Plasma/Plasma.tga"
 g_fFrequency = 0.001
+g_efVar = None
 g_fVelocity = 0.01
+g_evVar = None
 g_sAngleVariance = 60.0
 g_sEmitLife = 4.0
+g_elVar = None
 g_sEffectLifetime = 12.0
 g_sDrawOldToNew = 0
 g_sTargetAb1 = 0
 g_sTargetAb2 = 0
+g_inhVel = 0
+g_damp = 0
+g_detEO = 0
+g_gravy = [0.0, 0.0, 0.0]
 g_dCenter = App.NiPoint3(0, 0, 0)
 
 # Another global variable with same name as LJ's to keep backwards compatibility
@@ -62,10 +70,16 @@ def LoadTexture(sTexturePath = None, iNumXFrames = 1, iNumYFrames = 1):
 
 
 # Aux functions - for getting the NiAVNode, EffectRoot and EffectSequence without bugging
-def GetNIAVNode(pObject):
+def GetpNiNode(pObject):
 	leNode = None
-	if pObject and hasattr(pObject, "GetNode"):
-		leNode = pObject.GetNode()
+	if pObject:
+		if hasattr(pObject, "GetNode"):
+			leNode = pObject.GetNode()
+		elif hasattr(pObject, "__class__") and pObject.__class__ == App.NiNode:
+			leNode = pObject
+	return leNode
+def GetNIAVNode(pObject):
+	leNode = GetpNiNode(pObject)
 	return App.TGModelUtils_CastNodeToAVObject(leNode)
 
 def GetSetEffectRoot(pObject):
@@ -110,7 +124,7 @@ def DefaultColorKeyFunc(pEffect, fSize):
 	pEffect.AddSizeKey(0.1, 0.23 * fSize)
 	pEffect.AddSizeKey(1.0, 0.16 * fSize)
 
-def CreateSmokeHigh(sTexture, fFrequency, fVelocity, fSize, pEmitFrom, kEmitPos, kEmitDir, pAttachTo, sAngleVariance = 60.0, sEmitLife = 4.0, sEffectLifetime = 12.0, sDrawOldToNew = 0, sTargetAb1 = 0, sTargetAb2 = 0, pFunc = DefaultColorKeyFunc):
+def CreateSmokeHigh(sTexture, fFrequency, fVelocity, fSize, pEmitFrom, kEmitPos, kEmitDir, pAttachTo, sAngleVariance = g_sAngleVariance, sEmitLife = g_sEmitLife, sEffectLifetime = g_sEffectLifetime, sDrawOldToNew = g_sDrawOldToNew, sTargetAb1 = g_sTargetAb1, sTargetAb2 = g_sTargetAb2, pFunc = DefaultColorKeyFunc, inhVel = g_inhVel, gravy = g_gravy, leDamp = g_damp, evVar = g_evVar, efVar = g_efVar, elVar = g_elVar, detEO = g_detEO):
 	pEffectD = None
 	try:
 		pEffect = App.AnimTSParticleController_Create()
@@ -121,15 +135,27 @@ def CreateSmokeHigh(sTexture, fFrequency, fVelocity, fSize, pEmitFrom, kEmitPos,
 
 		## Setup properties
 		pEffect.SetEmitVelocity(fVelocity)
+		if evVar != None:
+			pEffect.SetEmitVelocityVariance(evVar)
 		pEffect.SetAngleVariance(sAngleVariance)
 		pEffect.SetEmitLife(sEmitLife)
+		if elVar != None:
+			pEffect.SetEmitLifeVariance(elVar)
 		pEffect.SetEmitFrequency(fFrequency)
+		if efVar != None:
+			pEffect.SetEmitFrequencyVariance(efVar)
 		pEffect.SetEffectLifeTime(sEffectLifetime)
 		pEffect.SetDrawOldToNew(sDrawOldToNew)
 		pEffect.CreateTarget(sTexture)
 		pEffect.SetTargetAlphaBlendModes(sTargetAb1, sTargetAb2)
 		pEffect.SetEmitFromObject(pEmitFrom)
 		pEffect.SetEmitPositionAndDirection(kEmitPos, kEmitDir)
+
+		pEffect.SetInheritsVelocity(inhVel)
+		pEffect.SetGravity(gravy[0], gravy[1], gravy[2])
+		pEffect.SetDamping(leDamp)
+		pEffect.SetDetachEmitObject(detEO)
+
 		pEffect.AttachEffect(pAttachTo)
 		pEffectD = App.EffectAction_Create(pEffect)
 
@@ -141,11 +167,15 @@ def CreateSmokeHigh(sTexture, fFrequency, fVelocity, fSize, pEmitFrom, kEmitPos,
 	return pEffectD
 
 # Something like what LJ dubbed "Common" function to call, but more customizable.
-def SetupSmokeTrail(pTorpedo, sTexture = g_sTexture, fFrequency = g_fFrequency, fVelocity = g_fVelocity, fSize = None, kEmitPos = g_dCenter, kEmitDir = g_dCenter, sAngleVariance = g_sAngleVariance, sEmitLife = g_sEmitLife, sEffectLifetime = g_sEffectLifetime, sDrawOldToNew = g_sDrawOldToNew, sTargetAb1 = g_sTargetAb1, sTargetAb2 = g_sTargetAb2, pFunction = DefaultColorKeyFunc):
+def SetupSmokeTrail(pTorpedo, sTexture = g_sTexture, fFrequency = g_fFrequency, fVelocity = g_fVelocity, fSize = None, kEmitPos = g_dCenter, kEmitDir = g_dCenter, sAngleVariance = g_sAngleVariance, sEmitLife = g_sEmitLife, sEffectLifetime = g_sEffectLifetime, sDrawOldToNew = g_sDrawOldToNew, sTargetAb1 = g_sTargetAb1, sTargetAb2 = g_sTargetAb2, pFunction = DefaultColorKeyFunc, inhVel = g_inhVel, pEffectRoot = None, gravy = g_gravy, leDamp = g_damp, evVar = g_evVar, efVar = g_efVar, elVar = g_elVar, detEO = g_detEO):
 
-	pEffectRoot = GetSetEffectRoot(pTorpedo)
+	if pEffectRoot is None:
+		pEffectRoot = GetSetEffectRoot(pTorpedo)
+	else:
+		pEffectRoot   = GetpNiNode(pEffectRoot)
+
 	if pEffectRoot:
-		pEmitFrom   = GetNIAVNode(pTorpedo)
+		pEmitFrom = GetNIAVNode(pTorpedo)
 		if pEmitFrom:
 			efSize = 1.0
 			if fSize != None:
@@ -154,8 +184,9 @@ def SetupSmokeTrail(pTorpedo, sTexture = g_sTexture, fFrequency = g_fFrequency, 
 				efSize = pTorpedo.GetRadius() * 3
 
 			pAction = None
+
 			try:
-				pAction = CreateSmokeHigh(sTexture, fFrequency, fVelocity, efSize, pEmitFrom, kEmitPos, kEmitDir, pEffectRoot, sAngleVariance, sEmitLife, sEffectLifetime, sDrawOldToNew, sTargetAb1, sTargetAb2, pFunction)
+				pAction = CreateSmokeHigh(sTexture, fFrequency, fVelocity, efSize, pEmitFrom, kEmitPos, kEmitDir, pEffectRoot, sAngleVariance, sEmitLife, sEffectLifetime, sDrawOldToNew, sTargetAb1, sTargetAb2, pFunction, inhVel, gravy, leDamp, evVar, efVar, elVar, detEO)
 			except:
 				print "OriBeam trail: error while calling SetupSmokeTrail:"
 				traceback.print_exc()

@@ -1,4 +1,7 @@
 == Changelog ==
+1.1.19 - Updates:
+  * Updated OriBeam trail to 1.02 to provide more customization.
+  * Updated SGOriBeam to provide a bit more embellishment.
 1.1.18 - Updates:
   * Created new trail script for OriBeam to allow better customization but still similar to LJ's in regards to naming and functionality to allow backwards compatibility.
 1.1.17 - Updates:

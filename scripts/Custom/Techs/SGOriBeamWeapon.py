@@ -275,6 +275,14 @@ try:
 	from ftb.Tech.ATPFunctions import *
 	from math import *
 
+	myTrailsPlugin = "Tactical.Projectiles.trails.OriBeam"
+	try:
+		oriBeamTrail = __import__(myTrailsPlugin, globals(), locals(), ["legacyImmunity", "interactionShieldBehaviour", "interactionHullBehaviour"])
+	except:
+		oriBeamTrail = None
+		print __name__, "; seems that we are missing OriBeam trail at ", myTrailsPlugin
+		traceback.print_exc()
+
 	# based on the FedAblativeArmour.py script, a fragment probably imported from ATP Functions by Apollo
 	def NiPoint3ToTGPoint3(p, factor = 1.0):
 		debug(__name__ + ", NiPoint3ToTGPoint3")
@@ -719,7 +727,8 @@ try:
 					torpVSHullDamage = thePowerPercentageWanted * baseTorpDamage * baseHullMultiplier
 					torpVSShieldDamage = thePowerPercentageWanted * baseTorpDamage * baseShieldMultiplier
 					shouldDoHull, remainingShield = self.shieldIsLesserThan(pTarget, kPoint, torpVSShieldDamage, 0.2, 0, 0)
-					if pEvent.IsHullHit() or shouldPassThrough > 0 or shouldDoHull > 0:
+					kaboom = (pEvent.IsHullHit() or shouldPassThrough > 0 or shouldDoHull > 0)
+					if kaboom:
 						finalTorpDamage = torpVSHullDamage
 						if shouldDoHull > 0:
 							finalTorpDamage = finalTorpDamage + remainingShield
@@ -735,6 +744,7 @@ try:
 					pTempTorp = FireTorpFromPointWithVectorAndNetType(pWpnPos, pVec, mod, targetID, attackerID, torpImportedSpeed, leNetType, finalTorpDamage, None, 0, pTarget, theOffset)
 					if pTempTorp:
 						pTempTorp.SetLifetime(12.0)
+						oriBeamTrail.SetupSmokeTrail(pTempTorp, fSize = pTempTorp.GetRadius() * 1.2, inhVel = kaboom)
 						pSet = pTarget.GetContainingSet()
 						if pSet:
 							pSound = App.TGSoundAction_Create("OriBeam Loop", 0, pSet.GetName())
