@@ -38,13 +38,31 @@ Foundation.ShipDef.AllianceNormandySR2.dTechs = {
 	"Alternate-Warp-FTL": {
 		"Setup": {
 			"Mass Effect FTL": {	"Nacelles": ["Port Mass Effect Engine", "Star Mass Effect Engine"], "Core": ["Element Zero Core"], "Enter FTL Density": 25, "Mid FTL Density": 10, "Exit FTL Density": 25, "Spark Size": 0.10,},
+			#"Body": shipFile,
+			#"NormalModel": shipFile,
+			#"AttackModel": shipFile,			
+			"Hardpoints":       {
+				"Thanix Cannons":  [0.000000, 1.666640, -0.068550, {"Disabled Percentage" : 1.1}],
+			},
+
+			"AttackHardpoints":       {
+				"Thanix Cannons":  [0.000000, 1.666640, -0.068550, {"Disabled Percentage" : 0.5}],
+			},
 		},
+		"Thanix Mhdc":     ["Shuttle", { # Future TO-DO let's add an actual thanix magnatic-hydrodynamic cannon model
+			"Experimental": 0,
+			"SetScale": 0.01,
+			"Position":             [0, 0.5, 0],
+			"AttackDuration":         100.0, # Value is 1/100 of a second
+			"AttackPosition":         [0, 0.5, 0.0],
+			},
+		],
 	},
 	"AutoTargeting": { "Phaser": [2, 1] },
 	'Fed Ablative Armor': { "Plates": ["Aft Silaris Armor", "Forward Silaris Armor", "Left Silaris Armor", "Right Silaris Armor", "Silaris Armor" ]},
 	"ME IES Stealth System": 1,
 	"ME Shields": { "CollisionBlock": 0, "BypassMultiplier": 1, "FacetFactor": 0, "FacetRegeneration": 1, "MinimumSpeedTrigger": 5, "MaximumSpeedTrigger": -270, "ShieldScaleMultiplier": 0.2, "AtmosphericNerf": -1, },
-	"ME Thanix Magnetic-Hydrodynamic Cannon": {"HullDmgMultiplier": 0.05, "ShieldDmgMultiplier": 1.0, "DShieldDmgMultiplier": 1.0, "Beams": ["Thanix Cannons"]},
+	"ME Thanix Magnetic-Hydrodynamic Cannon": {"HullDmgMultiplier": 0.05, "ShieldDmgMultiplier": 2.0, "DShieldDmgMultiplier": 1.0, "Beams": ["Thanix Cannons"]},
 	'Simulated Point Defence' : { "Distance": 75.0, "InnerDistance": 2.0, "Effectiveness": 0.998, "LimitTurn": 0.3, "LimitSpeed": 55, "LimitDamage": "-400", "Period": 0.8, "MaxNumberTorps": 2, }, #"Phaser": {"Priority": 1} could be used, but no idea how many actual GARDIAN lasers the Normandy has and for this to work efficiently with Phaser option set, we would need quite a few lasers with more accuracy - plus "GARDIAN lasers typically operate in infrared frequencies [...] Salarians use near-UV and Geth use UV", so for an Alliance ship they would not be visible - better for us!"
 	"Systems Changed With GC On": {"Message": {"Content": "This vessel has warp-drives disabled on GC. Please use its Mass Effect Drive instead.", "Time": 4.0}, "Hardpoints": {"Mass Effect Engines": 1.15,},},
 }

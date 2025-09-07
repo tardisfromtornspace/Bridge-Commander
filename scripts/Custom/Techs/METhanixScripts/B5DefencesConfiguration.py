@@ -22,6 +22,9 @@ import string
 global METhanixB5LegacyShieldDamageMultiplier
 METhanixB5LegacyShieldDamageMultiplier = 0.1
 
+global METhanixB5LegacyShieldVDamageMul
+METhanixB5LegacyShieldVDamageMul = 3.0
+
 global METhanixB5LegacyHullDamageMultiplier
 METhanixB5LegacyHullDamageMultiplier = 0.1 
 
@@ -36,8 +39,11 @@ global lB5VulnerableLegacyList
 lB5VulnerableLegacyList = (
 		"bluestar",
 		"MinbariSharlin",
+		"MinbariAshenShuumtian"
 		"MinbariNial"
 		"Victory",
+                "VOR_Fighter",
+                "VOR_FighterOpen",
 		"whitestar",
                 )
 
@@ -49,8 +55,6 @@ lB5ResistantLegacyList = (
                 "VOR_Cruiser",
                 "VOR_Destroyer",
                 "VOR_DestroyerClosed",
-                "VOR_Fighter",
-                "VOR_FighterOpen",
                 "VOR_Planetkiller",
 		"whitestar",
                 )
@@ -89,6 +93,7 @@ def interactionShieldBehaviour(attackerID, pAttacker, pAttackerInstance, pAttack
 	global lB5VulnerableLegacyList
 	if sShipScript in lB5VulnerableLegacyList:
 		wasChanged = wasChanged + 1
+		shieldDamageMultiplier = shieldDamageMultiplier * METhanixB5LegacyShieldVDamageMul
 		shouldPassThrough = shouldPassThrough + 1
 
 	return hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, wasChanged, considerDisabledShieldPass

@@ -1,4 +1,7 @@
 == Changelog ==
+0.6.6 - Updates:
+  * Updated AlternateSubModelsFTL to 0.87 to support new "Disable Percentage" parameter option.
+  * Modified NormandySR2 and AllianceNormandySR2 hardpoitns to reflect this change - now the Thanix cannon hardpoint is disabled by default and only activates when red alert is issued.
 0.6.5 - Updates:
   * Created new trail script for projectiles with better customization but still similar to LJ's in regards to naming to allow backwards compatibility. Do not forget to install scripts.Tactical.Projectiles.trails.OriBeam now to have these working.
 0.6.4 - Updates:
@@ -85,6 +88,10 @@ This mod adds the following updates and fixes:
 ** An USS Prodigy from Star Trek Prodigy equipped with this drive (TO-DO not yet added).
 * Spore-Drive Travelling Method with ISI.
 ** A modified USS Discovery (Crossfield Class) equipped with Spore drive.
+* Mass Effect Drive Travelling Method `+ a system Disabler for when GC is off/on) + Mass Effect Shields, Mass Effect Projectiles, Mass Effect IES Stealth System, Mass Effect Thanix Magnetic-Hydrodynamic Cannon technologies:
+** Modified SR1 Normandy, SR2 Normandy, Alliance SR2 Normandy, Turian Fighter and Turian Frigate to correct certian original hardpoint issues, incorporate all these technologies, and properly adjust their power levels accordingly (for example, now that lasers pass through Mass Effect shields, there's no need to make the not-necessarily-lethal lasers powerful enough to brute-force a shield).
+*** The Thanix Cannon on the Cerberus and Alliance Normandy SR2 is offline until you enter red alert.
+*** The "SystemsChangedWithGCOn" tech is used here for better compatibility - if you have GalaxyCharts on, it will disable the warp control property so both players and AI vessels of this franchise use the Mass Effect field to travel and not warp; and if GC is off, it will enable the warp control property so these ships from Mass Effect can still warp in an out of a system (because from a lore-point of view, it is not much of a stretch to modify the application of Mass effect fields to create an Alcubierre Warp Drive).
 * Fixed NormalWarp and EnhancedWarp travelling methods:
 ** Now they support the ship stretching when it goes in an out of warp!
 ** The camera no longer gets a stroke when a ship is warping in or out, switching to several places and then having the warp flash on our face! Now they behave properly!

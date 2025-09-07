@@ -93,8 +93,7 @@ def AddCreationHandler(pObject, sFunction):
 	AddInstanceHandler(pObject, sFunction, App.ET_TORPEDO_ENTERED_SET)
 
 def AddHitHandler(pObject, sFunction):
-	AddInstanceHandler(pObject, sFunction, App.ET_WEAPON_HIT)            
-       
+	AddInstanceHandler(pObject, sFunction, App.ET_WEAPON_HIT)
 
 # Effects
 # This function below is there so people can customize it from their own files
@@ -130,7 +129,7 @@ def CreateSmokeHigh(sTexture, fFrequency, fVelocity, fSize, pEmitFrom, kEmitPos,
 		pEffect.CreateTarget(sTexture)
 		pEffect.SetTargetAlphaBlendModes(sTargetAb1, sTargetAb2)
 		pEffect.SetEmitFromObject(pEmitFrom)
-		pEffect.SetEmitPositionAndDirection(kEmitPos, kEmitDir)	
+		pEffect.SetEmitPositionAndDirection(kEmitPos, kEmitDir)
 		pEffect.AttachEffect(pAttachTo)
 		pEffectD = App.EffectAction_Create(pEffect)
 

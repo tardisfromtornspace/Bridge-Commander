@@ -1,7 +1,7 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL, FOR THOSE SECTIONS THAT DO NOT FALL UNDER ANY OTHER LICENSE (See explanation below)
 # AlternateSubModelFTL.py
-# 17th April 2025, by Alex SL Gato (CharaToLoki)
+# 7th September 2025, by Alex SL Gato (CharaToLoki)
 #         Based on Defiant's SubModels script logic and BorgAdaptation.py by Alex SL Gato, which were based on the Foundation import function by Dasher
 #         Also based slightly on ATPFunctions (by Apollo) and DS9FXPulsarManager style (by USS Sovereign).
 #         Also some sections based and copied from the Slipstream module by Mario aka USS Sovereign, modified by Alex SL Gato with Mario's permission to adapt part of his code to this script ONLY as long as it is meant for KM, and that he can and will take action otherwise (see Documentation/USSSovereignStanceAboutModifyingorRepackagingSlipstream.PNG).
@@ -53,13 +53,14 @@
 # -- (0) "AttackSetScale": indicates the model size multiplier during red alert. Affects ALL attached part scales as well. Do not include to have default 1.0 (regular scale). <k:v>
 # -- (0) "<insert_name_here>SetScale": indicates the model size multiplier during <insert_name_here> (f.ex. during Warp, during Proto-Warp). Affects ALL attached part scales as well. Do not include to have default 1.0 (regular scale). <k:v>
 # -- (0) "Hardpoints": a dictionary which stores inside all subsystem property names in <k:v> format which would move after a transformation, regarding normal positions (including yellow alert).
-# --------- On this case, each dictionary entry would be "Subsystem name" : [x, y, z]
+# --------- On this case, each dictionary entry would be "Subsystem name" : [x, y, z], or alternatively "Subsystem name" : [x, y, z, S], with "S" being a dictionary of structure {<k:v>} that provides extra features to apply during or after a subModel transformation:
+# ------------- (0) "Disabled Percentage": a dictionary entry which stores the disabled percentage for a subsystem when ending a transfomation for the requested "<insert_name_here>Hardpoints" dictionary (for example, after switching from red alert to normal alert, it would follow the disabled percentages of "Hardpoints"). On this case this value is skipped if the dictionary entry for a subsystem lacks this parameter, allowing for a limited selective system disabling/enabling according only to alert levels, the FTL being used, or both. <s-s> c.s.
 # -- (0) "AttackHardpoints": a dictionary which stores inside all subsystem property names in <k:v> format which would move after a transformation, regarding red alert positions.
-# --------- On this case, each dictionary entry would be "Subsystem name" : [x, y, z]
+# --------- On this case, each dictionary entry would be "Subsystem name" : [x, y, z], or [x, y, z, S] (see above)
 # -- (0) "WarpHardpoints": a dictionary which stores inside all subsystem property names in <k:v> format which would move after a transformation, regarding normal warp positions.
-# --------- On this case, each dictionary entry would be "Subsystem name" : [x, y, z]
+# --------- On this case, each dictionary entry would be "Subsystem name" : [x, y, z], or [x, y, z, S] (see above)
 # -- (0) "<insert_name_here>Hardpoints": a dictionary which stores inside all subsystem property names in <k:v> format which would move after a transformation, regarding <insert_name_here> positions.
-# --------- On this case, each dictionary entry would be "Subsystem name" : [x, y, z]
+# --------- On this case, each dictionary entry would be "Subsystem name" : [x, y, z], or [x, y, z, S] (see above)
 # -- (0) "<insert_name_here>IgnoreCall": a dictionary entry which stores inside a value that determines if a ship complies (0) or ignores (1 or greater) certain event calls for when a ship uses <insert_name_here>.
 # --------- The objective of this parameter is to help cover strange cases, where an FTL TravellingMethod with AlternateSubModels support not constrained by the template (and excluding regular Warp) is used by a vessel which can perform such travelling method, but you don't want that vessel to even swap between models nor attach/detach non-main-body-pieces.
 # --------- If <insert_name_here> = "Attack" or "<insert_name_here>" = "", it will apply for Attack and Normal states when switching between alerts, albeit that is not the objective of this parameter and for that case it would be better to just not add attack rotation nor attack positions to non-main body pieces.
@@ -98,11 +99,11 @@ Foundation.ShipDef.USSProtostar.dTechs = {
 			"Proto-WarpSetScale": 1.0,
 			"AttackSetScale": 1.0,
 			"Hardpoints":       {
-				"Proto Warp Nacelle":  [0.000000, 0.000000, 0.075000],
+				"Proto Warp Nacelle":  [0.000000, 0.000000, 0.075000, {"Disabled Percentage" : 1.1}],
 			},
 
 			"AttackHardpoints":       {
-				"Proto Warp Nacelle":  [0.000000, -0.250000, 2.075000],
+				"Proto Warp Nacelle":  [0.000000, -0.250000, 2.075000, {"Disabled Percentage" : 0.5}],
 			},
 			"WarpHardpoints":       {
 				"Proto Warp Nacelle":  [0.000000, -0.250000, -2.075000],
@@ -1507,7 +1508,7 @@ def GetEngageDirectionC(mySelf, pPlayerID = None):
 #################################################################################################################
 #
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.86",
+	    "Version": "0.87",
 	    "License": "All Rights Reserved (USS Sovereign sections), LGPL (everywhere else)",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -3899,7 +3900,7 @@ def GetPositionOrientationPropertyByName(pShip, pcSubsystemName):
 	return None
 
 
-def UpdateHardpointPositionsTo(pShip, sHP, lPos):
+def UpdateHardpointPositionsTo(pShip, sHP, lPos, extraCh = 0):
 	debug(__name__ + ", UpdateHardpointPositionsTo")
 
 	pHP = MissionLib.GetSubsystemByName(pShip, sHP)
@@ -3907,6 +3908,10 @@ def UpdateHardpointPositionsTo(pShip, sHP, lPos):
 	if pHP:
 		pHPprob = pHP.GetProperty()
 		pHPprob.SetPosition(lPos[0], lPos[1], lPos[2])
+		if extraCh == 1:
+			if lPos[3] != None and type(lPos[3]) == type({}):
+				if lPos[3].has_key("Disabled Percentage"):
+					pHPprob.SetDisabledPercentage(lPos[3]["Disabled Percentage"])
 	elif pPOP:
 		pPosition = App.TGPoint3()
 		pPosition.SetXYZ(lPos[0], lPos[1], lPos[2])
@@ -3914,6 +3919,11 @@ def UpdateHardpointPositionsTo(pShip, sHP, lPos):
 	else:
 		print "Submodel Error: Unable to find Hardpoint %s" % sHP
 	pShip.UpdateNodeOnly()
+
+def UpdateHardpointStatusTo(pShip, sHP, lPos):
+	pSubsystemProperty = pSubsystem.GetProperty()
+	if pSubsystemProperty:
+		pSubsystemProperty.SetDisabledPercentage(pInstanceDict["Systems Changed With GC On"]["Hardpoints"][pSubsystem.GetName()])
 
 def UpdateHardpointPositionsE(pAction, pShip, dHardpoints, iThisMovID):
 	debug(__name__ + ", UpdateHardpointPositionsE")
@@ -3923,7 +3933,7 @@ def UpdateHardpointPositionsE(pAction, pShip, dHardpoints, iThisMovID):
 		return 0
 
 	for sHP in dHardpoints.keys():
-		UpdateHardpointPositionsTo(pShip, sHP, dHardpoints[sHP])
+		UpdateHardpointPositionsTo(pShip, sHP, dHardpoints[sHP], 1)
 	return 0
 
 
