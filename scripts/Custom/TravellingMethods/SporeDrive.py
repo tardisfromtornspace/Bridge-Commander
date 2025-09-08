@@ -63,7 +63,7 @@ Foundation.ShipDef.USSProtostar.dTechs = { # (#)
 		}, # (#)
 
 		"Port Wing":     ["VasKholhr_Portwing", {
-			"SetScale": 1.0
+			"SetScale": 1.0,
 			"Position":             [0, 0, 0],
 			"Rotation":             [0, 0, 0], # normal Rotation used if not Red Alert and if not Warp
 			"AttackRotation":         [0, -0.6, 0],
@@ -79,7 +79,7 @@ Foundation.ShipDef.USSProtostar.dTechs = { # (#)
 		],
         
 		"Starboard Wing":     ["VasKholhr_Starboardwing", {
-			"SetScale": 1.0
+			"SetScale": 1.0,
 			"Position":             [0, 0, 0],
 			"Rotation":             [0, 0, 0],
 			"AttackRotation":         [0, 0.6, 0],

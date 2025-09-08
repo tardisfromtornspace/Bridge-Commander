@@ -1,0 +1,3349 @@
+##### Bridge Commander Exit Log: 08 Sep 2025 15:15:44#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 08 Sep 2025 15:17:52#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+Detected new mod, restoring Keyboard Binding..
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Traceback (innermost last):
+  File ".\Scripts\Bridge\EngineerCharacterHandlers.py", line 690, in AnnounceSpecificShield
+    fShields = (pShip.GetShields().GetCurShields(App.ShieldClass.FRONT_SHIELDS)/pShip.GetShields().GetMaxShields(App.ShieldClass.FRONT_SHIELDS))
+ZeroDivisionError: float division
+
+
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 08 Sep 2025 15:17:52#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+Detected new mod, restoring Keyboard Binding..
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Traceback (innermost last):
+  File ".\Scripts\Bridge\EngineerCharacterHandlers.py", line 690, in AnnounceSpecificShield
+    fShields = (pShip.GetShields().GetCurShields(App.ShieldClass.FRONT_SHIELDS)/pShip.GetShields().GetMaxShields(App.ShieldClass.FRONT_SHIELDS))
+ZeroDivisionError: float division
+
+
+
+# DS9FX has...
+
+# taken a console dump
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 08 Sep 2025 15:26:24#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Traceback (innermost last):
+  File ".\Scripts\Bridge\EngineerCharacterHandlers.py", line 690, in AnnounceSpecificShield
+    fShields = (pShip.GetShields().GetCurShields(App.ShieldClass.FRONT_SHIELDS)/pShip.GetShields().GetMaxShields(App.ShieldClass.FRONT_SHIELDS))
+ZeroDivisionError: float division
+
+
+Banzai Freighter Banzai Facility Banzai 1
+BZ Transport Banzai Facility Banzai 2 Alpha
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 44866d80> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 44866da8> ignored
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5 OEP
+Shuttle Launching Error: ship USS Farragut has no Shuttle launching points
+Shuttle Launching Error: ship IKV Batleth has no Shuttle launching points
+Shuttle Launching Error: ship USS Yamato has no Shuttle launching points
+Submodel Error: Unable to find Hardpoint Launch Tube P2
+Submodel Error: Unable to find Hardpoint Launch Tube P3
+Submodel Error: Unable to find Hardpoint Launch Tube P7 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1
+Submodel Error: Unable to find Hardpoint Launch Tube P6
+Submodel Error: Unable to find Hardpoint Launch Tube P7
+Submodel Error: Unable to find Hardpoint Launch Tube P4
+Submodel Error: Unable to find Hardpoint Launch Tube P5
+Submodel Error: Unable to find Hardpoint Launch Tube P2 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P9 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8
+Submodel Error: Unable to find Hardpoint Launch Tube P9
+Submodel Error: Unable to find Hardpoint Launch Tube P6 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P4 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P3 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10
+Submodel Error: Unable to find Hardpoint Launch Tube P5 OEP
+Setting Stock System Planets Random Density.
+Setting Stock System Planets Random Density.
+
+
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 4eec21a0> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 4eec21c8> ignored
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P2
+Submodel Error: Unable to find Hardpoint Launch Tube P3
+Submodel Error: Unable to find Hardpoint Launch Tube P7 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1
+Submodel Error: Unable to find Hardpoint Launch Tube P6
+Submodel Error: Unable to find Hardpoint Launch Tube P7
+Submodel Error: Unable to find Hardpoint Launch Tube P4
+Submodel Error: Unable to find Hardpoint Launch Tube P5
+Submodel Error: Unable to find Hardpoint Launch Tube P2 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P9 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8
+Submodel Error: Unable to find Hardpoint Launch Tube P9
+Submodel Error: Unable to find Hardpoint Launch Tube P6 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P4 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P3 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10
+Submodel Error: Unable to find Hardpoint Launch Tube P5 OEP
+Setting Stock System Planets Random Density.
+Setting Stock System Planets Random Density.
+
+
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 4eed8dac> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 4eed8dd4> ignored
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P2
+Submodel Error: Unable to find Hardpoint Launch Tube P3
+Submodel Error: Unable to find Hardpoint Launch Tube P7 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1
+Submodel Error: Unable to find Hardpoint Launch Tube P6
+Submodel Error: Unable to find Hardpoint Launch Tube P7
+Submodel Error: Unable to find Hardpoint Launch Tube P4
+Submodel Error: Unable to find Hardpoint Launch Tube P5
+Submodel Error: Unable to find Hardpoint Launch Tube P2 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P9 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8
+Submodel Error: Unable to find Hardpoint Launch Tube P9
+Submodel Error: Unable to find Hardpoint Launch Tube P6 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P4 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P3 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10
+Submodel Error: Unable to find Hardpoint Launch Tube P5 OEP
+Setting Stock System Planets Random Density.
+Setting Stock System Planets Random Density.
+PlasmaFX Communicating with Targetable Plasma Streams...
+...Sucess
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 4eee5130> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 4eee5158> ignored
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P2
+Submodel Error: Unable to find Hardpoint Launch Tube P3
+Submodel Error: Unable to find Hardpoint Launch Tube P7 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1
+Submodel Error: Unable to find Hardpoint Launch Tube P6
+Submodel Error: Unable to find Hardpoint Launch Tube P7
+Submodel Error: Unable to find Hardpoint Launch Tube P4
+Submodel Error: Unable to find Hardpoint Launch Tube P5
+Submodel Error: Unable to find Hardpoint Launch Tube P2 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P9 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8
+Submodel Error: Unable to find Hardpoint Launch Tube P9
+Submodel Error: Unable to find Hardpoint Launch Tube P6 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P4 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P3 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10
+Submodel Error: Unable to find Hardpoint Launch Tube P5 OEP
+Setting splash damage for Banzai Freighter to (1875.000000, 37.500000)
+killing the player class instance
+Setting Stock System Planets Random Density.
+Setting Stock System Planets Random Density.
+Setting splash damage for Plasma Stream Firepoint0_t to (562.500000, 11.250000)
+
+# DS9FX has...
+
+# taken a console dump
+Setting splash damage for BZ Transport to (1875.000000, 37.500000)
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 4ef1e06c> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 4ef1e240> ignored
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P2
+Submodel Error: Unable to find Hardpoint Launch Tube P3
+Submodel Error: Unable to find Hardpoint Launch Tube P7 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1
+Submodel Error: Unable to find Hardpoint Launch Tube P6
+Submodel Error: Unable to find Hardpoint Launch Tube P7
+Submodel Error: Unable to find Hardpoint Launch Tube P4
+Submodel Error: Unable to find Hardpoint Launch Tube P5
+Submodel Error: Unable to find Hardpoint Launch Tube P2 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P9 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8
+Submodel Error: Unable to find Hardpoint Launch Tube P9
+Submodel Error: Unable to find Hardpoint Launch Tube P6 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P4 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P3 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10
+Submodel Error: Unable to find Hardpoint Launch Tube P5 OEP
+Setting Stock System Planets Random Density.
+Setting Stock System Planets Random Density.
+Trying to clean memory
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 08 Sep 2025 15:26:24#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Traceback (innermost last):
+  File ".\Scripts\Bridge\EngineerCharacterHandlers.py", line 690, in AnnounceSpecificShield
+    fShields = (pShip.GetShields().GetCurShields(App.ShieldClass.FRONT_SHIELDS)/pShip.GetShields().GetMaxShields(App.ShieldClass.FRONT_SHIELDS))
+ZeroDivisionError: float division
+
+
+Banzai Freighter Banzai Facility Banzai 1
+BZ Transport Banzai Facility Banzai 2 Alpha
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 44866d80> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 44866da8> ignored
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5 OEP
+Shuttle Launching Error: ship USS Farragut has no Shuttle launching points
+Shuttle Launching Error: ship IKV Batleth has no Shuttle launching points
+Shuttle Launching Error: ship USS Yamato has no Shuttle launching points
+Submodel Error: Unable to find Hardpoint Launch Tube P2
+Submodel Error: Unable to find Hardpoint Launch Tube P3
+Submodel Error: Unable to find Hardpoint Launch Tube P7 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1
+Submodel Error: Unable to find Hardpoint Launch Tube P6
+Submodel Error: Unable to find Hardpoint Launch Tube P7
+Submodel Error: Unable to find Hardpoint Launch Tube P4
+Submodel Error: Unable to find Hardpoint Launch Tube P5
+Submodel Error: Unable to find Hardpoint Launch Tube P2 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P9 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8
+Submodel Error: Unable to find Hardpoint Launch Tube P9
+Submodel Error: Unable to find Hardpoint Launch Tube P6 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P4 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P3 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10
+Submodel Error: Unable to find Hardpoint Launch Tube P5 OEP
+Setting Stock System Planets Random Density.
+Setting Stock System Planets Random Density.
+
+
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 4eec21a0> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 4eec21c8> ignored
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P2
+Submodel Error: Unable to find Hardpoint Launch Tube P3
+Submodel Error: Unable to find Hardpoint Launch Tube P7 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1
+Submodel Error: Unable to find Hardpoint Launch Tube P6
+Submodel Error: Unable to find Hardpoint Launch Tube P7
+Submodel Error: Unable to find Hardpoint Launch Tube P4
+Submodel Error: Unable to find Hardpoint Launch Tube P5
+Submodel Error: Unable to find Hardpoint Launch Tube P2 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P9 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8
+Submodel Error: Unable to find Hardpoint Launch Tube P9
+Submodel Error: Unable to find Hardpoint Launch Tube P6 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P4 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P3 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10
+Submodel Error: Unable to find Hardpoint Launch Tube P5 OEP
+Setting Stock System Planets Random Density.
+Setting Stock System Planets Random Density.
+
+
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 4eed8dac> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 4eed8dd4> ignored
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P2
+Submodel Error: Unable to find Hardpoint Launch Tube P3
+Submodel Error: Unable to find Hardpoint Launch Tube P7 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1
+Submodel Error: Unable to find Hardpoint Launch Tube P6
+Submodel Error: Unable to find Hardpoint Launch Tube P7
+Submodel Error: Unable to find Hardpoint Launch Tube P4
+Submodel Error: Unable to find Hardpoint Launch Tube P5
+Submodel Error: Unable to find Hardpoint Launch Tube P2 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P9 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8
+Submodel Error: Unable to find Hardpoint Launch Tube P9
+Submodel Error: Unable to find Hardpoint Launch Tube P6 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P4 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P3 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10
+Submodel Error: Unable to find Hardpoint Launch Tube P5 OEP
+Setting Stock System Planets Random Density.
+Setting Stock System Planets Random Density.
+PlasmaFX Communicating with Targetable Plasma Streams...
+...Sucess
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 4eee5130> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 4eee5158> ignored
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P2
+Submodel Error: Unable to find Hardpoint Launch Tube P3
+Submodel Error: Unable to find Hardpoint Launch Tube P7 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1
+Submodel Error: Unable to find Hardpoint Launch Tube P6
+Submodel Error: Unable to find Hardpoint Launch Tube P7
+Submodel Error: Unable to find Hardpoint Launch Tube P4
+Submodel Error: Unable to find Hardpoint Launch Tube P5
+Submodel Error: Unable to find Hardpoint Launch Tube P2 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P9 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8
+Submodel Error: Unable to find Hardpoint Launch Tube P9
+Submodel Error: Unable to find Hardpoint Launch Tube P6 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P4 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P3 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10
+Submodel Error: Unable to find Hardpoint Launch Tube P5 OEP
+Setting splash damage for Banzai Freighter to (1875.000000, 37.500000)
+killing the player class instance
+Setting Stock System Planets Random Density.
+Setting Stock System Planets Random Density.
+Setting splash damage for Plasma Stream Firepoint0_t to (562.500000, 11.250000)
+
+# DS9FX has...
+
+# taken a console dump
+Setting splash damage for BZ Transport to (1875.000000, 37.500000)
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 4ef1e06c> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 4ef1e240> ignored
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P2
+Submodel Error: Unable to find Hardpoint Launch Tube P3
+Submodel Error: Unable to find Hardpoint Launch Tube P7 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1
+Submodel Error: Unable to find Hardpoint Launch Tube P6
+Submodel Error: Unable to find Hardpoint Launch Tube P7
+Submodel Error: Unable to find Hardpoint Launch Tube P4
+Submodel Error: Unable to find Hardpoint Launch Tube P5
+Submodel Error: Unable to find Hardpoint Launch Tube P2 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P9 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8
+Submodel Error: Unable to find Hardpoint Launch Tube P9
+Submodel Error: Unable to find Hardpoint Launch Tube P6 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P4 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P3 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10
+Submodel Error: Unable to find Hardpoint Launch Tube P5 OEP
+Setting Stock System Planets Random Density.
+Setting Stock System Planets Random Density.
+Trying to clean memory
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 08 Sep 2025 15:47:44#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Traceback (innermost last):
+  File ".\Scripts\Bridge\EngineerCharacterHandlers.py", line 690, in AnnounceSpecificShield
+    fShields = (pShip.GetShields().GetCurShields(App.ShieldClass.FRONT_SHIELDS)/pShip.GetShields().GetMaxShields(App.ShieldClass.FRONT_SHIELDS))
+ZeroDivisionError: float division
+
+
+
+
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 447255e0> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 44720f98> ignored
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P2
+Submodel Error: Unable to find Hardpoint Launch Tube P3
+Submodel Error: Unable to find Hardpoint Launch Tube P7 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1
+Submodel Error: Unable to find Hardpoint Launch Tube P6
+Submodel Error: Unable to find Hardpoint Launch Tube P7
+Submodel Error: Unable to find Hardpoint Launch Tube P4
+Submodel Error: Unable to find Hardpoint Launch Tube P5
+Submodel Error: Unable to find Hardpoint Launch Tube P2 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P9 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8
+Submodel Error: Unable to find Hardpoint Launch Tube P9
+Submodel Error: Unable to find Hardpoint Launch Tube P6 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P4 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P3 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10
+Submodel Error: Unable to find Hardpoint Launch Tube P5 OEP
+Setting Stock System Planets Random Density.
+Setting Stock System Planets Random Density.
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 08 Sep 2025 15:47:44#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Traceback (innermost last):
+  File ".\Scripts\Bridge\EngineerCharacterHandlers.py", line 690, in AnnounceSpecificShield
+    fShields = (pShip.GetShields().GetCurShields(App.ShieldClass.FRONT_SHIELDS)/pShip.GetShields().GetMaxShields(App.ShieldClass.FRONT_SHIELDS))
+ZeroDivisionError: float division
+
+
+
+
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 447255e0> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 44720f98> ignored
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P2
+Submodel Error: Unable to find Hardpoint Launch Tube P3
+Submodel Error: Unable to find Hardpoint Launch Tube P7 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1
+Submodel Error: Unable to find Hardpoint Launch Tube P6
+Submodel Error: Unable to find Hardpoint Launch Tube P7
+Submodel Error: Unable to find Hardpoint Launch Tube P4
+Submodel Error: Unable to find Hardpoint Launch Tube P5
+Submodel Error: Unable to find Hardpoint Launch Tube P2 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P9 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8
+Submodel Error: Unable to find Hardpoint Launch Tube P9
+Submodel Error: Unable to find Hardpoint Launch Tube P6 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P4 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P3 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10
+Submodel Error: Unable to find Hardpoint Launch Tube P5 OEP
+Setting Stock System Planets Random Density.
+Setting Stock System Planets Random Density.
+
+# DS9FX has...
+
+# taken a console dump
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 08 Sep 2025 16:17:36#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Traceback (innermost last):
+  File ".\Scripts\Bridge\EngineerCharacterHandlers.py", line 690, in AnnounceSpecificShield
+    fShields = (pShip.GetShields().GetCurShields(App.ShieldClass.FRONT_SHIELDS)/pShip.GetShields().GetMaxShields(App.ShieldClass.FRONT_SHIELDS))
+ZeroDivisionError: float division
+
+
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 3ed8cc38> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 3ed86074> ignored
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P2
+Submodel Error: Unable to find Hardpoint Launch Tube P3
+Submodel Error: Unable to find Hardpoint Launch Tube P7 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1
+Submodel Error: Unable to find Hardpoint Launch Tube P6
+Submodel Error: Unable to find Hardpoint Launch Tube P7
+Submodel Error: Unable to find Hardpoint Launch Tube P4
+Submodel Error: Unable to find Hardpoint Launch Tube P5
+Submodel Error: Unable to find Hardpoint Launch Tube P2 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P9 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8
+Submodel Error: Unable to find Hardpoint Launch Tube P9
+Submodel Error: Unable to find Hardpoint Launch Tube P6 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P4 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P3 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10
+Submodel Error: Unable to find Hardpoint Launch Tube P5 OEP
+Setting Stock System Planets Random Density.
+Setting Stock System Planets Random Density.
+
+# DS9FX has...
+
+# taken a console dump
+Arena 1 Cloud of Stones Comm Array 2
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 3ed9d618> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 3ed9d640> ignored
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P2
+Submodel Error: Unable to find Hardpoint Launch Tube P3
+Submodel Error: Unable to find Hardpoint Launch Tube P7 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1
+Submodel Error: Unable to find Hardpoint Launch Tube P6
+Submodel Error: Unable to find Hardpoint Launch Tube P7
+Submodel Error: Unable to find Hardpoint Launch Tube P4
+Submodel Error: Unable to find Hardpoint Launch Tube P5
+Submodel Error: Unable to find Hardpoint Launch Tube P2 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P9 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8
+Submodel Error: Unable to find Hardpoint Launch Tube P9
+Submodel Error: Unable to find Hardpoint Launch Tube P6 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P4 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P3 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10
+Submodel Error: Unable to find Hardpoint Launch Tube P5 OEP
+Setting Stock System Planets Random Density.
+Setting Stock System Planets Random Density.
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 08 Sep 2025 16:17:36#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Traceback (innermost last):
+  File ".\Scripts\Bridge\EngineerCharacterHandlers.py", line 690, in AnnounceSpecificShield
+    fShields = (pShip.GetShields().GetCurShields(App.ShieldClass.FRONT_SHIELDS)/pShip.GetShields().GetMaxShields(App.ShieldClass.FRONT_SHIELDS))
+ZeroDivisionError: float division
+
+
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 3ed8cc38> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 3ed86074> ignored
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P2
+Submodel Error: Unable to find Hardpoint Launch Tube P3
+Submodel Error: Unable to find Hardpoint Launch Tube P7 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1
+Submodel Error: Unable to find Hardpoint Launch Tube P6
+Submodel Error: Unable to find Hardpoint Launch Tube P7
+Submodel Error: Unable to find Hardpoint Launch Tube P4
+Submodel Error: Unable to find Hardpoint Launch Tube P5
+Submodel Error: Unable to find Hardpoint Launch Tube P2 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P9 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8
+Submodel Error: Unable to find Hardpoint Launch Tube P9
+Submodel Error: Unable to find Hardpoint Launch Tube P6 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P4 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P3 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10
+Submodel Error: Unable to find Hardpoint Launch Tube P5 OEP
+Setting Stock System Planets Random Density.
+Setting Stock System Planets Random Density.
+
+# DS9FX has...
+
+# taken a console dump
+Arena 1 Cloud of Stones Comm Array 2
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 3ed9d618> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 3ed9d640> ignored
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P2
+Submodel Error: Unable to find Hardpoint Launch Tube P3
+Submodel Error: Unable to find Hardpoint Launch Tube P7 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1
+Submodel Error: Unable to find Hardpoint Launch Tube P6
+Submodel Error: Unable to find Hardpoint Launch Tube P7
+Submodel Error: Unable to find Hardpoint Launch Tube P4
+Submodel Error: Unable to find Hardpoint Launch Tube P5
+Submodel Error: Unable to find Hardpoint Launch Tube P2 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P9 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8
+Submodel Error: Unable to find Hardpoint Launch Tube P9
+Submodel Error: Unable to find Hardpoint Launch Tube P6 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P4 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P3 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10
+Submodel Error: Unable to find Hardpoint Launch Tube P5 OEP
+Setting Stock System Planets Random Density.
+Setting Stock System Planets Random Density.
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 08 Sep 2025 16:21:52#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Traceback (innermost last):
+  File ".\Scripts\Bridge\EngineerCharacterHandlers.py", line 690, in AnnounceSpecificShield
+    fShields = (pShip.GetShields().GetCurShields(App.ShieldClass.FRONT_SHIELDS)/pShip.GetShields().GetMaxShields(App.ShieldClass.FRONT_SHIELDS))
+ZeroDivisionError: float division
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 46a918cc> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 46a918a4> ignored
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P2
+Submodel Error: Unable to find Hardpoint Launch Tube P3
+Submodel Error: Unable to find Hardpoint Launch Tube P7 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1
+Submodel Error: Unable to find Hardpoint Launch Tube P6
+Submodel Error: Unable to find Hardpoint Launch Tube P7
+Submodel Error: Unable to find Hardpoint Launch Tube P4
+Submodel Error: Unable to find Hardpoint Launch Tube P5
+Submodel Error: Unable to find Hardpoint Launch Tube P2 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P9 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8
+Submodel Error: Unable to find Hardpoint Launch Tube P9
+Submodel Error: Unable to find Hardpoint Launch Tube P6 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P4 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P3 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10
+Submodel Error: Unable to find Hardpoint Launch Tube P5 OEP
+Setting Stock System Planets Random Density.
+Setting Stock System Planets Random Density.
+
+
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 46aa7ca8> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 46aa7cd0> ignored
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P2
+Submodel Error: Unable to find Hardpoint Launch Tube P3
+Submodel Error: Unable to find Hardpoint Launch Tube P7 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1
+Submodel Error: Unable to find Hardpoint Launch Tube P6
+Submodel Error: Unable to find Hardpoint Launch Tube P7
+Submodel Error: Unable to find Hardpoint Launch Tube P4
+Submodel Error: Unable to find Hardpoint Launch Tube P5
+Submodel Error: Unable to find Hardpoint Launch Tube P2 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P9 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8
+Submodel Error: Unable to find Hardpoint Launch Tube P9
+Submodel Error: Unable to find Hardpoint Launch Tube P6 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P4 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P3 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10
+Submodel Error: Unable to find Hardpoint Launch Tube P5 OEP
+
+
+
+
+Setting Stock System Planets Random Density.
+
+
+Setting Stock System Planets Random Density.
+
+
+Setting splash damage for ShipUnknown to (1639.374512, 32.787491)
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 46a812c0> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 46a82ce0> ignored
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P2
+Submodel Error: Unable to find Hardpoint Launch Tube P3
+Submodel Error: Unable to find Hardpoint Launch Tube P7 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1
+Submodel Error: Unable to find Hardpoint Launch Tube P6
+Submodel Error: Unable to find Hardpoint Launch Tube P7
+Submodel Error: Unable to find Hardpoint Launch Tube P4
+Submodel Error: Unable to find Hardpoint Launch Tube P5
+Submodel Error: Unable to find Hardpoint Launch Tube P2 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P9 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8
+Submodel Error: Unable to find Hardpoint Launch Tube P9
+Submodel Error: Unable to find Hardpoint Launch Tube P6 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P4 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P3 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10
+Submodel Error: Unable to find Hardpoint Launch Tube P5 OEP
+Setting Stock System Planets Random Density.
+
+
+
+
+
+
+
+
+
+
+
+
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 08 Sep 2025 16:21:52#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Traceback (innermost last):
+  File ".\Scripts\Bridge\EngineerCharacterHandlers.py", line 690, in AnnounceSpecificShield
+    fShields = (pShip.GetShields().GetCurShields(App.ShieldClass.FRONT_SHIELDS)/pShip.GetShields().GetMaxShields(App.ShieldClass.FRONT_SHIELDS))
+ZeroDivisionError: float division
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 46a918cc> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 46a918a4> ignored
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P2
+Submodel Error: Unable to find Hardpoint Launch Tube P3
+Submodel Error: Unable to find Hardpoint Launch Tube P7 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1
+Submodel Error: Unable to find Hardpoint Launch Tube P6
+Submodel Error: Unable to find Hardpoint Launch Tube P7
+Submodel Error: Unable to find Hardpoint Launch Tube P4
+Submodel Error: Unable to find Hardpoint Launch Tube P5
+Submodel Error: Unable to find Hardpoint Launch Tube P2 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P9 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8
+Submodel Error: Unable to find Hardpoint Launch Tube P9
+Submodel Error: Unable to find Hardpoint Launch Tube P6 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P4 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P3 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10
+Submodel Error: Unable to find Hardpoint Launch Tube P5 OEP
+Setting Stock System Planets Random Density.
+Setting Stock System Planets Random Density.
+
+
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 46aa7ca8> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 46aa7cd0> ignored
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P2
+Submodel Error: Unable to find Hardpoint Launch Tube P3
+Submodel Error: Unable to find Hardpoint Launch Tube P7 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1
+Submodel Error: Unable to find Hardpoint Launch Tube P6
+Submodel Error: Unable to find Hardpoint Launch Tube P7
+Submodel Error: Unable to find Hardpoint Launch Tube P4
+Submodel Error: Unable to find Hardpoint Launch Tube P5
+Submodel Error: Unable to find Hardpoint Launch Tube P2 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P9 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8
+Submodel Error: Unable to find Hardpoint Launch Tube P9
+Submodel Error: Unable to find Hardpoint Launch Tube P6 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P4 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P3 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10
+Submodel Error: Unable to find Hardpoint Launch Tube P5 OEP
+
+
+
+
+Setting Stock System Planets Random Density.
+
+
+Setting Stock System Planets Random Density.
+
+
+Setting splash damage for ShipUnknown to (1639.374512, 32.787491)
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 46a812c0> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 46a82ce0> ignored
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P2
+Submodel Error: Unable to find Hardpoint Launch Tube P3
+Submodel Error: Unable to find Hardpoint Launch Tube P7 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1
+Submodel Error: Unable to find Hardpoint Launch Tube P6
+Submodel Error: Unable to find Hardpoint Launch Tube P7
+Submodel Error: Unable to find Hardpoint Launch Tube P4
+Submodel Error: Unable to find Hardpoint Launch Tube P5
+Submodel Error: Unable to find Hardpoint Launch Tube P2 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P9 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8
+Submodel Error: Unable to find Hardpoint Launch Tube P9
+Submodel Error: Unable to find Hardpoint Launch Tube P6 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P4 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P3 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10
+Submodel Error: Unable to find Hardpoint Launch Tube P5 OEP
+Setting Stock System Planets Random Density.
+
+
+
+
+
+
+
+
+
+
+
+
+
+# DS9FX has...
+
+# taken a console dump
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 08 Sep 2025 16:51:44#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+Traceback (innermost last):
+  File ".\Scripts\Bridge\EngineerCharacterHandlers.py", line 690, in AnnounceSpecificShield
+    fShields = (pShip.GetShields().GetCurShields(App.ShieldClass.FRONT_SHIELDS)/pShip.GetShields().GetMaxShields(App.ShieldClass.FRONT_SHIELDS))
+ZeroDivisionError: float division
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Traceback (innermost last):
+  File ".\Scripts\Bridge\EngineerCharacterHandlers.py", line 690, in AnnounceSpecificShield
+    fShields = (pShip.GetShields().GetCurShields(App.ShieldClass.FRONT_SHIELDS)/pShip.GetShields().GetMaxShields(App.ShieldClass.FRONT_SHIELDS))
+ZeroDivisionError: float division
+
+
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 3ffafc38> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 3ffafc10> ignored
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P2
+Submodel Error: Unable to find Hardpoint Launch Tube P3
+Submodel Error: Unable to find Hardpoint Launch Tube P7 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1
+Submodel Error: Unable to find Hardpoint Launch Tube P6
+Submodel Error: Unable to find Hardpoint Launch Tube P7
+Submodel Error: Unable to find Hardpoint Launch Tube P4
+Submodel Error: Unable to find Hardpoint Launch Tube P5
+Submodel Error: Unable to find Hardpoint Launch Tube P2 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P9 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8
+Submodel Error: Unable to find Hardpoint Launch Tube P9
+Submodel Error: Unable to find Hardpoint Launch Tube P6 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P4 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P3 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10
+Submodel Error: Unable to find Hardpoint Launch Tube P5 OEP
+Setting Stock System Planets Random Density.
+TO-DO CanContinueTravelling Check
+  - TO-DO InstateFTLStrCooldown remove = -1 applied, PiNSTANCE =  <FoundationTech.ShipInstance instance at fb3a694>
+  - TO-DO timeR =  0.199996948242
+TO-DO CanContinueTravelling Check
+  - TO-DO InstateFTLStrCooldown remove = -1 applied, PiNSTANCE =  <FoundationTech.ShipInstance instance at fb3a694>
+  - TO-DO timeR =  0.0749969482422
+TO-DO CanContinueTravelling Check
+  - TO-DO InstateFTLStrCooldown remove = -1 applied, PiNSTANCE =  <FoundationTech.ShipInstance instance at fb3a694>
+  - TO-DO timeR =  0
+  - TO-DO called InstateFTLStrCooldown remove = 1
+Setting Stock System Planets Random Density.
+
+
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 3ffb540c> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 3ffb5434> ignored
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5 OEP
+Shuttle Launching Error: ship USS Galaxy has no Shuttle launching points
+Submodel Error: Unable to find Hardpoint Launch Tube P2
+Submodel Error: Unable to find Hardpoint Launch Tube P3
+Submodel Error: Unable to find Hardpoint Launch Tube P7 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1
+Submodel Error: Unable to find Hardpoint Launch Tube P6
+Submodel Error: Unable to find Hardpoint Launch Tube P7
+Submodel Error: Unable to find Hardpoint Launch Tube P4
+Submodel Error: Unable to find Hardpoint Launch Tube P5
+Submodel Error: Unable to find Hardpoint Launch Tube P2 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P9 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8
+Submodel Error: Unable to find Hardpoint Launch Tube P9
+Submodel Error: Unable to find Hardpoint Launch Tube P6 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P4 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P3 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10
+Submodel Error: Unable to find Hardpoint Launch Tube P5 OEP
+Setting Stock System Planets Random Density.
+TO-DO CanContinueTravelling Check
+  - TO-DO InstateFTLStrCooldown remove = -1 applied, PiNSTANCE =  <FoundationTech.ShipInstance instance at fb3a694>
+  - TO-DO timeR =  0.199996948242
+Setting Stock System Planets Random Density.
+
+
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 3ffc0f60> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 3ffc0f10> ignored
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P2
+Submodel Error: Unable to find Hardpoint Launch Tube P3
+Submodel Error: Unable to find Hardpoint Launch Tube P7 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1
+Submodel Error: Unable to find Hardpoint Launch Tube P6
+Submodel Error: Unable to find Hardpoint Launch Tube P7
+Submodel Error: Unable to find Hardpoint Launch Tube P4
+Submodel Error: Unable to find Hardpoint Launch Tube P5
+Submodel Error: Unable to find Hardpoint Launch Tube P2 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P9 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8
+Submodel Error: Unable to find Hardpoint Launch Tube P9
+Submodel Error: Unable to find Hardpoint Launch Tube P6 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P4 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P3 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10
+Submodel Error: Unable to find Hardpoint Launch Tube P5 OEP
+Setting Stock System Planets Random Density.
+TO-DO CanContinueTravelling Check
+  - TO-DO InstateFTLStrCooldown remove = -1 applied, PiNSTANCE =  <FoundationTech.ShipInstance instance at fb3a694>
+  - TO-DO timeR =  0
+  - TO-DO called InstateFTLStrCooldown remove = 1
+Setting Stock System Planets Random Density.
+
+# DS9FX has...
+
+# taken a console dump
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 3ffc014c> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 3ffa9888> ignored
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P2
+Submodel Error: Unable to find Hardpoint Launch Tube P3
+Submodel Error: Unable to find Hardpoint Launch Tube P7 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1
+Submodel Error: Unable to find Hardpoint Launch Tube P6
+Submodel Error: Unable to find Hardpoint Launch Tube P7
+Submodel Error: Unable to find Hardpoint Launch Tube P4
+Submodel Error: Unable to find Hardpoint Launch Tube P5
+Submodel Error: Unable to find Hardpoint Launch Tube P2 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P9 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8
+Submodel Error: Unable to find Hardpoint Launch Tube P9
+Submodel Error: Unable to find Hardpoint Launch Tube P6 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P4 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P3 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10
+Submodel Error: Unable to find Hardpoint Launch Tube P5 OEP
+Setting Stock System Planets Random Density.
+TO-DO CanContinueTravelling Check
+  - TO-DO InstateFTLStrCooldown remove = -1 applied, PiNSTANCE =  <FoundationTech.ShipInstance instance at fb3a694>
+  - TO-DO timeR =  0.199996948242
+Setting Stock System Planets Random Density.
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 3ff9d16c> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 3ff9925c> ignored
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P2
+Submodel Error: Unable to find Hardpoint Launch Tube P3
+Submodel Error: Unable to find Hardpoint Launch Tube P7 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1
+Submodel Error: Unable to find Hardpoint Launch Tube P6
+Submodel Error: Unable to find Hardpoint Launch Tube P7
+Submodel Error: Unable to find Hardpoint Launch Tube P4
+Submodel Error: Unable to find Hardpoint Launch Tube P5
+Submodel Error: Unable to find Hardpoint Launch Tube P2 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P9 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8
+Submodel Error: Unable to find Hardpoint Launch Tube P9
+Submodel Error: Unable to find Hardpoint Launch Tube P6 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P4 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P3 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10
+Submodel Error: Unable to find Hardpoint Launch Tube P5 OEP
+Setting Stock System Planets Random Density.
+TO-DO CanContinueTravelling Check
+  - TO-DO InstateFTLStrCooldown remove = -1 applied, PiNSTANCE =  <FoundationTech.ShipInstance instance at fb3a694>
+  - TO-DO timeR =  0
+  - TO-DO called InstateFTLStrCooldown remove = 1
+Setting Stock System Planets Random Density.
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 3ff9d778> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 51efcad8> ignored
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P2
+Submodel Error: Unable to find Hardpoint Launch Tube P3
+Submodel Error: Unable to find Hardpoint Launch Tube P7 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1
+Submodel Error: Unable to find Hardpoint Launch Tube P6
+Submodel Error: Unable to find Hardpoint Launch Tube P7
+Submodel Error: Unable to find Hardpoint Launch Tube P4
+Submodel Error: Unable to find Hardpoint Launch Tube P5
+Submodel Error: Unable to find Hardpoint Launch Tube P2 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P9 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8
+Submodel Error: Unable to find Hardpoint Launch Tube P9
+Submodel Error: Unable to find Hardpoint Launch Tube P6 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P4 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P3 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10
+Submodel Error: Unable to find Hardpoint Launch Tube P5 OEP
+Setting Stock System Planets Random Density.
+TO-DO CanContinueTravelling Check
+  - TO-DO InstateFTLStrCooldown remove = -1 applied, PiNSTANCE =  <FoundationTech.ShipInstance instance at fb3a694>
+  - TO-DO timeR =  0.200012207031
+Setting Stock System Planets Random Density.
+Trying to clean memory
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 08 Sep 2025 16:51:44#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+Traceback (innermost last):
+  File ".\Scripts\Bridge\EngineerCharacterHandlers.py", line 690, in AnnounceSpecificShield
+    fShields = (pShip.GetShields().GetCurShields(App.ShieldClass.FRONT_SHIELDS)/pShip.GetShields().GetMaxShields(App.ShieldClass.FRONT_SHIELDS))
+ZeroDivisionError: float division
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Traceback (innermost last):
+  File ".\Scripts\Bridge\EngineerCharacterHandlers.py", line 690, in AnnounceSpecificShield
+    fShields = (pShip.GetShields().GetCurShields(App.ShieldClass.FRONT_SHIELDS)/pShip.GetShields().GetMaxShields(App.ShieldClass.FRONT_SHIELDS))
+ZeroDivisionError: float division
+
+
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 3ffafc38> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 3ffafc10> ignored
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P2
+Submodel Error: Unable to find Hardpoint Launch Tube P3
+Submodel Error: Unable to find Hardpoint Launch Tube P7 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1
+Submodel Error: Unable to find Hardpoint Launch Tube P6
+Submodel Error: Unable to find Hardpoint Launch Tube P7
+Submodel Error: Unable to find Hardpoint Launch Tube P4
+Submodel Error: Unable to find Hardpoint Launch Tube P5
+Submodel Error: Unable to find Hardpoint Launch Tube P2 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P9 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8
+Submodel Error: Unable to find Hardpoint Launch Tube P9
+Submodel Error: Unable to find Hardpoint Launch Tube P6 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P4 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P3 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10
+Submodel Error: Unable to find Hardpoint Launch Tube P5 OEP
+Setting Stock System Planets Random Density.
+TO-DO CanContinueTravelling Check
+  - TO-DO InstateFTLStrCooldown remove = -1 applied, PiNSTANCE =  <FoundationTech.ShipInstance instance at fb3a694>
+  - TO-DO timeR =  0.199996948242
+TO-DO CanContinueTravelling Check
+  - TO-DO InstateFTLStrCooldown remove = -1 applied, PiNSTANCE =  <FoundationTech.ShipInstance instance at fb3a694>
+  - TO-DO timeR =  0.0749969482422
+TO-DO CanContinueTravelling Check
+  - TO-DO InstateFTLStrCooldown remove = -1 applied, PiNSTANCE =  <FoundationTech.ShipInstance instance at fb3a694>
+  - TO-DO timeR =  0
+  - TO-DO called InstateFTLStrCooldown remove = 1
+Setting Stock System Planets Random Density.
+
+
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 3ffb540c> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 3ffb5434> ignored
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5 OEP
+Shuttle Launching Error: ship USS Galaxy has no Shuttle launching points
+Submodel Error: Unable to find Hardpoint Launch Tube P2
+Submodel Error: Unable to find Hardpoint Launch Tube P3
+Submodel Error: Unable to find Hardpoint Launch Tube P7 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1
+Submodel Error: Unable to find Hardpoint Launch Tube P6
+Submodel Error: Unable to find Hardpoint Launch Tube P7
+Submodel Error: Unable to find Hardpoint Launch Tube P4
+Submodel Error: Unable to find Hardpoint Launch Tube P5
+Submodel Error: Unable to find Hardpoint Launch Tube P2 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P9 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8
+Submodel Error: Unable to find Hardpoint Launch Tube P9
+Submodel Error: Unable to find Hardpoint Launch Tube P6 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P4 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P3 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10
+Submodel Error: Unable to find Hardpoint Launch Tube P5 OEP
+Setting Stock System Planets Random Density.
+TO-DO CanContinueTravelling Check
+  - TO-DO InstateFTLStrCooldown remove = -1 applied, PiNSTANCE =  <FoundationTech.ShipInstance instance at fb3a694>
+  - TO-DO timeR =  0.199996948242
+Setting Stock System Planets Random Density.
+
+
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 3ffc0f60> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 3ffc0f10> ignored
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P2
+Submodel Error: Unable to find Hardpoint Launch Tube P3
+Submodel Error: Unable to find Hardpoint Launch Tube P7 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1
+Submodel Error: Unable to find Hardpoint Launch Tube P6
+Submodel Error: Unable to find Hardpoint Launch Tube P7
+Submodel Error: Unable to find Hardpoint Launch Tube P4
+Submodel Error: Unable to find Hardpoint Launch Tube P5
+Submodel Error: Unable to find Hardpoint Launch Tube P2 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P9 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8
+Submodel Error: Unable to find Hardpoint Launch Tube P9
+Submodel Error: Unable to find Hardpoint Launch Tube P6 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P4 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P3 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10
+Submodel Error: Unable to find Hardpoint Launch Tube P5 OEP
+Setting Stock System Planets Random Density.
+TO-DO CanContinueTravelling Check
+  - TO-DO InstateFTLStrCooldown remove = -1 applied, PiNSTANCE =  <FoundationTech.ShipInstance instance at fb3a694>
+  - TO-DO timeR =  0
+  - TO-DO called InstateFTLStrCooldown remove = 1
+Setting Stock System Planets Random Density.
+
+# DS9FX has...
+
+# taken a console dump
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 3ffc014c> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 3ffa9888> ignored
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P2
+Submodel Error: Unable to find Hardpoint Launch Tube P3
+Submodel Error: Unable to find Hardpoint Launch Tube P7 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1
+Submodel Error: Unable to find Hardpoint Launch Tube P6
+Submodel Error: Unable to find Hardpoint Launch Tube P7
+Submodel Error: Unable to find Hardpoint Launch Tube P4
+Submodel Error: Unable to find Hardpoint Launch Tube P5
+Submodel Error: Unable to find Hardpoint Launch Tube P2 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P9 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8
+Submodel Error: Unable to find Hardpoint Launch Tube P9
+Submodel Error: Unable to find Hardpoint Launch Tube P6 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P4 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P3 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10
+Submodel Error: Unable to find Hardpoint Launch Tube P5 OEP
+Setting Stock System Planets Random Density.
+TO-DO CanContinueTravelling Check
+  - TO-DO InstateFTLStrCooldown remove = -1 applied, PiNSTANCE =  <FoundationTech.ShipInstance instance at fb3a694>
+  - TO-DO timeR =  0.199996948242
+Setting Stock System Planets Random Density.
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 3ff9d16c> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 3ff9925c> ignored
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P2
+Submodel Error: Unable to find Hardpoint Launch Tube P3
+Submodel Error: Unable to find Hardpoint Launch Tube P7 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1
+Submodel Error: Unable to find Hardpoint Launch Tube P6
+Submodel Error: Unable to find Hardpoint Launch Tube P7
+Submodel Error: Unable to find Hardpoint Launch Tube P4
+Submodel Error: Unable to find Hardpoint Launch Tube P5
+Submodel Error: Unable to find Hardpoint Launch Tube P2 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P9 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8
+Submodel Error: Unable to find Hardpoint Launch Tube P9
+Submodel Error: Unable to find Hardpoint Launch Tube P6 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P4 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P3 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10
+Submodel Error: Unable to find Hardpoint Launch Tube P5 OEP
+Setting Stock System Planets Random Density.
+TO-DO CanContinueTravelling Check
+  - TO-DO InstateFTLStrCooldown remove = -1 applied, PiNSTANCE =  <FoundationTech.ShipInstance instance at fb3a694>
+  - TO-DO timeR =  0
+  - TO-DO called InstateFTLStrCooldown remove = 1
+Setting Stock System Planets Random Density.
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 3ff9d778> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 51efcad8> ignored
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P2
+Submodel Error: Unable to find Hardpoint Launch Tube P3
+Submodel Error: Unable to find Hardpoint Launch Tube P7 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1
+Submodel Error: Unable to find Hardpoint Launch Tube P6
+Submodel Error: Unable to find Hardpoint Launch Tube P7
+Submodel Error: Unable to find Hardpoint Launch Tube P4
+Submodel Error: Unable to find Hardpoint Launch Tube P5
+Submodel Error: Unable to find Hardpoint Launch Tube P2 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P9 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8
+Submodel Error: Unable to find Hardpoint Launch Tube P9
+Submodel Error: Unable to find Hardpoint Launch Tube P6 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P4 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P3 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10
+Submodel Error: Unable to find Hardpoint Launch Tube P5 OEP
+Setting Stock System Planets Random Density.
+TO-DO CanContinueTravelling Check
+  - TO-DO InstateFTLStrCooldown remove = -1 applied, PiNSTANCE =  <FoundationTech.ShipInstance instance at fb3a694>
+  - TO-DO timeR =  0.200012207031
+Setting Stock System Planets Random Density.
+Trying to clean memory
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 08 Sep 2025 18:00:00#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Traceback (innermost last):
+  File ".\Scripts\Bridge\EngineerCharacterHandlers.py", line 690, in AnnounceSpecificShield
+    fShields = (pShip.GetShields().GetCurShields(App.ShieldClass.FRONT_SHIELDS)/pShip.GetShields().GetMaxShields(App.ShieldClass.FRONT_SHIELDS))
+ZeroDivisionError: float division
+
+
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 3fecb998> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 3fecb9c0> ignored
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P2
+Submodel Error: Unable to find Hardpoint Launch Tube P3
+Submodel Error: Unable to find Hardpoint Launch Tube P7 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1
+Submodel Error: Unable to find Hardpoint Launch Tube P6
+Submodel Error: Unable to find Hardpoint Launch Tube P7
+Submodel Error: Unable to find Hardpoint Launch Tube P4
+Submodel Error: Unable to find Hardpoint Launch Tube P5
+Submodel Error: Unable to find Hardpoint Launch Tube P2 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P9 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8
+Submodel Error: Unable to find Hardpoint Launch Tube P9
+Submodel Error: Unable to find Hardpoint Launch Tube P6 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P4 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P3 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10
+Submodel Error: Unable to find Hardpoint Launch Tube P5 OEP
+Setting Stock System Planets Random Density.
+TO-DO CanContinueTravelling Check
+TO-DO CanContinueTravelling Check
+TO-DO CanContinueTravelling Check
+Setting Stock System Planets Random Density.
+
+
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 3feddc64> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 3fed07fc> ignored
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P2
+Submodel Error: Unable to find Hardpoint Launch Tube P3
+Submodel Error: Unable to find Hardpoint Launch Tube P7 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1
+Submodel Error: Unable to find Hardpoint Launch Tube P6
+Submodel Error: Unable to find Hardpoint Launch Tube P7
+Submodel Error: Unable to find Hardpoint Launch Tube P4
+Submodel Error: Unable to find Hardpoint Launch Tube P5
+Submodel Error: Unable to find Hardpoint Launch Tube P2 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P9 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8
+Submodel Error: Unable to find Hardpoint Launch Tube P9
+Submodel Error: Unable to find Hardpoint Launch Tube P6 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P4 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P3 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10
+Submodel Error: Unable to find Hardpoint Launch Tube P5 OEP
+Setting Stock System Planets Random Density.
+TO-DO CanContinueTravelling Check
+TO-DO CanContinueTravelling Check
+Setting Stock System Planets Random Density.
+
+
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 3fecbbf0> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at e63e7f0> ignored
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P2
+Submodel Error: Unable to find Hardpoint Launch Tube P3
+Submodel Error: Unable to find Hardpoint Launch Tube P7 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1
+Submodel Error: Unable to find Hardpoint Launch Tube P6
+Submodel Error: Unable to find Hardpoint Launch Tube P7
+Submodel Error: Unable to find Hardpoint Launch Tube P4
+Submodel Error: Unable to find Hardpoint Launch Tube P5
+Submodel Error: Unable to find Hardpoint Launch Tube P2 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P9 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8
+Submodel Error: Unable to find Hardpoint Launch Tube P9
+Submodel Error: Unable to find Hardpoint Launch Tube P6 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P4 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P3 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10
+Submodel Error: Unable to find Hardpoint Launch Tube P5 OEP
+Setting Stock System Planets Random Density.
+TO-DO CanContinueTravelling Check
+TO-DO CanContinueTravelling Check
+Setting Stock System Planets Random Density.
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 3fee6324> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 3fee6308> ignored
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P2
+Submodel Error: Unable to find Hardpoint Launch Tube P3
+Submodel Error: Unable to find Hardpoint Launch Tube P7 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1
+Submodel Error: Unable to find Hardpoint Launch Tube P6
+Submodel Error: Unable to find Hardpoint Launch Tube P7
+Submodel Error: Unable to find Hardpoint Launch Tube P4
+Submodel Error: Unable to find Hardpoint Launch Tube P5
+Submodel Error: Unable to find Hardpoint Launch Tube P2 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P9 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8
+Submodel Error: Unable to find Hardpoint Launch Tube P9
+Submodel Error: Unable to find Hardpoint Launch Tube P6 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P4 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P3 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10
+Submodel Error: Unable to find Hardpoint Launch Tube P5 OEP
+Setting Stock System Planets Random Density.
+TO-DO CanContinueTravelling Check
+TO-DO CanContinueTravelling Check
+Setting Stock System Planets Random Density.
+
+
+
+
+data/TGL/Maelstrom/Episode 8/E8M1.tgl E8M1L189
+Trying to clean memory
+data/TGL/Maelstrom/Episode 5/E5M2.tgl E5M2PrendelScan2
+data/TGL/Maelstrom/Episode 8/E8M2.tgl E8M2MatanDefeated02
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 3feb0c88> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 3fea9ec8> ignored
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P2
+Submodel Error: Unable to find Hardpoint Launch Tube P3
+Submodel Error: Unable to find Hardpoint Launch Tube P7 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1
+Submodel Error: Unable to find Hardpoint Launch Tube P6
+Submodel Error: Unable to find Hardpoint Launch Tube P7
+Submodel Error: Unable to find Hardpoint Launch Tube P4
+Submodel Error: Unable to find Hardpoint Launch Tube P5
+Submodel Error: Unable to find Hardpoint Launch Tube P2 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P9 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8
+Submodel Error: Unable to find Hardpoint Launch Tube P9
+Submodel Error: Unable to find Hardpoint Launch Tube P6 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P4 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P3 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10
+Submodel Error: Unable to find Hardpoint Launch Tube P5 OEP
+Setting Stock System Planets Random Density.
+TO-DO CanContinueTravelling Check
+TO-DO CanContinueTravelling Check
+Setting Stock System Planets Random Density.
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 3feb8478> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 3feb76f8> ignored
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P2
+Submodel Error: Unable to find Hardpoint Launch Tube P3
+Submodel Error: Unable to find Hardpoint Launch Tube P7 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1
+Submodel Error: Unable to find Hardpoint Launch Tube P6
+Submodel Error: Unable to find Hardpoint Launch Tube P7
+Submodel Error: Unable to find Hardpoint Launch Tube P4
+Submodel Error: Unable to find Hardpoint Launch Tube P5
+Submodel Error: Unable to find Hardpoint Launch Tube P2 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P9 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8
+Submodel Error: Unable to find Hardpoint Launch Tube P9
+Submodel Error: Unable to find Hardpoint Launch Tube P6 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P4 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P3 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10
+Submodel Error: Unable to find Hardpoint Launch Tube P5 OEP
+Setting Stock System Planets Random Density.
+TO-DO CanContinueTravelling Check
+Setting Stock System Planets Random Density.
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 3feb9bd4> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 3feba0f0> ignored
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P2
+Submodel Error: Unable to find Hardpoint Launch Tube P3
+Submodel Error: Unable to find Hardpoint Launch Tube P7 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1
+Submodel Error: Unable to find Hardpoint Launch Tube P6
+Submodel Error: Unable to find Hardpoint Launch Tube P7
+Submodel Error: Unable to find Hardpoint Launch Tube P4
+Submodel Error: Unable to find Hardpoint Launch Tube P5
+Submodel Error: Unable to find Hardpoint Launch Tube P2 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P9 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8
+Submodel Error: Unable to find Hardpoint Launch Tube P9
+Submodel Error: Unable to find Hardpoint Launch Tube P6 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P4 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P3 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10
+Submodel Error: Unable to find Hardpoint Launch Tube P5 OEP
+Setting Stock System Planets Random Density.
+TO-DO CanContinueTravelling Check
+Setting Stock System Planets Random Density.
+Trying to clean memory
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 3feddaa4> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 3fed06b4> ignored
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P2
+Submodel Error: Unable to find Hardpoint Launch Tube P3
+Submodel Error: Unable to find Hardpoint Launch Tube P7 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1
+Submodel Error: Unable to find Hardpoint Launch Tube P6
+Submodel Error: Unable to find Hardpoint Launch Tube P7
+Submodel Error: Unable to find Hardpoint Launch Tube P4
+Submodel Error: Unable to find Hardpoint Launch Tube P5
+Submodel Error: Unable to find Hardpoint Launch Tube P2 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P9 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8
+Submodel Error: Unable to find Hardpoint Launch Tube P9
+Submodel Error: Unable to find Hardpoint Launch Tube P6 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P4 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P3 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10
+Submodel Error: Unable to find Hardpoint Launch Tube P5 OEP
+Setting Stock System Planets Random Density.
+TO-DO CanContinueTravelling Check
+Setting Stock System Planets Random Density.
+
+
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 3fec0d20> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 3fec32ec> ignored
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P2
+Submodel Error: Unable to find Hardpoint Launch Tube P3
+Submodel Error: Unable to find Hardpoint Launch Tube P7 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1
+Submodel Error: Unable to find Hardpoint Launch Tube P6
+Submodel Error: Unable to find Hardpoint Launch Tube P7
+Submodel Error: Unable to find Hardpoint Launch Tube P4
+Submodel Error: Unable to find Hardpoint Launch Tube P5
+Submodel Error: Unable to find Hardpoint Launch Tube P2 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P9 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8
+Submodel Error: Unable to find Hardpoint Launch Tube P9
+Submodel Error: Unable to find Hardpoint Launch Tube P6 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P4 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P3 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10
+Submodel Error: Unable to find Hardpoint Launch Tube P5 OEP
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 08 Sep 2025 18:00:00#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Traceback (innermost last):
+  File ".\Scripts\Bridge\EngineerCharacterHandlers.py", line 690, in AnnounceSpecificShield
+    fShields = (pShip.GetShields().GetCurShields(App.ShieldClass.FRONT_SHIELDS)/pShip.GetShields().GetMaxShields(App.ShieldClass.FRONT_SHIELDS))
+ZeroDivisionError: float division
+
+
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 3fecb998> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 3fecb9c0> ignored
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P2
+Submodel Error: Unable to find Hardpoint Launch Tube P3
+Submodel Error: Unable to find Hardpoint Launch Tube P7 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1
+Submodel Error: Unable to find Hardpoint Launch Tube P6
+Submodel Error: Unable to find Hardpoint Launch Tube P7
+Submodel Error: Unable to find Hardpoint Launch Tube P4
+Submodel Error: Unable to find Hardpoint Launch Tube P5
+Submodel Error: Unable to find Hardpoint Launch Tube P2 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P9 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8
+Submodel Error: Unable to find Hardpoint Launch Tube P9
+Submodel Error: Unable to find Hardpoint Launch Tube P6 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P4 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P3 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10
+Submodel Error: Unable to find Hardpoint Launch Tube P5 OEP
+Setting Stock System Planets Random Density.
+TO-DO CanContinueTravelling Check
+TO-DO CanContinueTravelling Check
+TO-DO CanContinueTravelling Check
+Setting Stock System Planets Random Density.
+
+
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 3feddc64> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 3fed07fc> ignored
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P2
+Submodel Error: Unable to find Hardpoint Launch Tube P3
+Submodel Error: Unable to find Hardpoint Launch Tube P7 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1
+Submodel Error: Unable to find Hardpoint Launch Tube P6
+Submodel Error: Unable to find Hardpoint Launch Tube P7
+Submodel Error: Unable to find Hardpoint Launch Tube P4
+Submodel Error: Unable to find Hardpoint Launch Tube P5
+Submodel Error: Unable to find Hardpoint Launch Tube P2 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P9 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8
+Submodel Error: Unable to find Hardpoint Launch Tube P9
+Submodel Error: Unable to find Hardpoint Launch Tube P6 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P4 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P3 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10
+Submodel Error: Unable to find Hardpoint Launch Tube P5 OEP
+Setting Stock System Planets Random Density.
+TO-DO CanContinueTravelling Check
+TO-DO CanContinueTravelling Check
+Setting Stock System Planets Random Density.
+
+
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 3fecbbf0> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at e63e7f0> ignored
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P2
+Submodel Error: Unable to find Hardpoint Launch Tube P3
+Submodel Error: Unable to find Hardpoint Launch Tube P7 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1
+Submodel Error: Unable to find Hardpoint Launch Tube P6
+Submodel Error: Unable to find Hardpoint Launch Tube P7
+Submodel Error: Unable to find Hardpoint Launch Tube P4
+Submodel Error: Unable to find Hardpoint Launch Tube P5
+Submodel Error: Unable to find Hardpoint Launch Tube P2 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P9 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8
+Submodel Error: Unable to find Hardpoint Launch Tube P9
+Submodel Error: Unable to find Hardpoint Launch Tube P6 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P4 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P3 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10
+Submodel Error: Unable to find Hardpoint Launch Tube P5 OEP
+Setting Stock System Planets Random Density.
+TO-DO CanContinueTravelling Check
+TO-DO CanContinueTravelling Check
+Setting Stock System Planets Random Density.
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 3fee6324> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 3fee6308> ignored
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P2
+Submodel Error: Unable to find Hardpoint Launch Tube P3
+Submodel Error: Unable to find Hardpoint Launch Tube P7 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1
+Submodel Error: Unable to find Hardpoint Launch Tube P6
+Submodel Error: Unable to find Hardpoint Launch Tube P7
+Submodel Error: Unable to find Hardpoint Launch Tube P4
+Submodel Error: Unable to find Hardpoint Launch Tube P5
+Submodel Error: Unable to find Hardpoint Launch Tube P2 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P9 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8
+Submodel Error: Unable to find Hardpoint Launch Tube P9
+Submodel Error: Unable to find Hardpoint Launch Tube P6 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P4 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P3 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10
+Submodel Error: Unable to find Hardpoint Launch Tube P5 OEP
+Setting Stock System Planets Random Density.
+TO-DO CanContinueTravelling Check
+TO-DO CanContinueTravelling Check
+Setting Stock System Planets Random Density.
+
+
+
+
+data/TGL/Maelstrom/Episode 8/E8M1.tgl E8M1L189
+Trying to clean memory
+data/TGL/Maelstrom/Episode 5/E5M2.tgl E5M2PrendelScan2
+data/TGL/Maelstrom/Episode 8/E8M2.tgl E8M2MatanDefeated02
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 3feb0c88> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 3fea9ec8> ignored
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P2
+Submodel Error: Unable to find Hardpoint Launch Tube P3
+Submodel Error: Unable to find Hardpoint Launch Tube P7 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1
+Submodel Error: Unable to find Hardpoint Launch Tube P6
+Submodel Error: Unable to find Hardpoint Launch Tube P7
+Submodel Error: Unable to find Hardpoint Launch Tube P4
+Submodel Error: Unable to find Hardpoint Launch Tube P5
+Submodel Error: Unable to find Hardpoint Launch Tube P2 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P9 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8
+Submodel Error: Unable to find Hardpoint Launch Tube P9
+Submodel Error: Unable to find Hardpoint Launch Tube P6 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P4 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P3 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10
+Submodel Error: Unable to find Hardpoint Launch Tube P5 OEP
+Setting Stock System Planets Random Density.
+TO-DO CanContinueTravelling Check
+TO-DO CanContinueTravelling Check
+Setting Stock System Planets Random Density.
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 3feb8478> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 3feb76f8> ignored
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P2
+Submodel Error: Unable to find Hardpoint Launch Tube P3
+Submodel Error: Unable to find Hardpoint Launch Tube P7 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1
+Submodel Error: Unable to find Hardpoint Launch Tube P6
+Submodel Error: Unable to find Hardpoint Launch Tube P7
+Submodel Error: Unable to find Hardpoint Launch Tube P4
+Submodel Error: Unable to find Hardpoint Launch Tube P5
+Submodel Error: Unable to find Hardpoint Launch Tube P2 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P9 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8
+Submodel Error: Unable to find Hardpoint Launch Tube P9
+Submodel Error: Unable to find Hardpoint Launch Tube P6 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P4 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P3 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10
+Submodel Error: Unable to find Hardpoint Launch Tube P5 OEP
+Setting Stock System Planets Random Density.
+TO-DO CanContinueTravelling Check
+Setting Stock System Planets Random Density.
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 3feb9bd4> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 3feba0f0> ignored
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P2
+Submodel Error: Unable to find Hardpoint Launch Tube P3
+Submodel Error: Unable to find Hardpoint Launch Tube P7 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1
+Submodel Error: Unable to find Hardpoint Launch Tube P6
+Submodel Error: Unable to find Hardpoint Launch Tube P7
+Submodel Error: Unable to find Hardpoint Launch Tube P4
+Submodel Error: Unable to find Hardpoint Launch Tube P5
+Submodel Error: Unable to find Hardpoint Launch Tube P2 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P9 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8
+Submodel Error: Unable to find Hardpoint Launch Tube P9
+Submodel Error: Unable to find Hardpoint Launch Tube P6 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P4 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P3 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10
+Submodel Error: Unable to find Hardpoint Launch Tube P5 OEP
+Setting Stock System Planets Random Density.
+TO-DO CanContinueTravelling Check
+Setting Stock System Planets Random Density.
+Trying to clean memory
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 3feddaa4> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 3fed06b4> ignored
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P2
+Submodel Error: Unable to find Hardpoint Launch Tube P3
+Submodel Error: Unable to find Hardpoint Launch Tube P7 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1
+Submodel Error: Unable to find Hardpoint Launch Tube P6
+Submodel Error: Unable to find Hardpoint Launch Tube P7
+Submodel Error: Unable to find Hardpoint Launch Tube P4
+Submodel Error: Unable to find Hardpoint Launch Tube P5
+Submodel Error: Unable to find Hardpoint Launch Tube P2 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P9 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8
+Submodel Error: Unable to find Hardpoint Launch Tube P9
+Submodel Error: Unable to find Hardpoint Launch Tube P6 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P4 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P3 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10
+Submodel Error: Unable to find Hardpoint Launch Tube P5 OEP
+Setting Stock System Planets Random Density.
+TO-DO CanContinueTravelling Check
+Setting Stock System Planets Random Density.
+
+
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 3fec0d20> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 3fec32ec> ignored
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P2
+Submodel Error: Unable to find Hardpoint Launch Tube P3
+Submodel Error: Unable to find Hardpoint Launch Tube P7 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1
+Submodel Error: Unable to find Hardpoint Launch Tube P6
+Submodel Error: Unable to find Hardpoint Launch Tube P7
+Submodel Error: Unable to find Hardpoint Launch Tube P4
+Submodel Error: Unable to find Hardpoint Launch Tube P5
+Submodel Error: Unable to find Hardpoint Launch Tube P2 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P9 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8
+Submodel Error: Unable to find Hardpoint Launch Tube P9
+Submodel Error: Unable to find Hardpoint Launch Tube P6 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P4 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P3 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10
+Submodel Error: Unable to find Hardpoint Launch Tube P5 OEP
+
+# DS9FX has...
+
+# taken a console dump
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####

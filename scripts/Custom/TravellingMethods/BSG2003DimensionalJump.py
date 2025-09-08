@@ -1,58 +1,100 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
 # GC is ALL Rights Reserved by USS Frontier, but since GC supports Plugins it is fair to release a new TravellingMethod or patch old ones as long as the files remain unmodified.
-# Babylon5Jumpspace.py
-# Based on the prototype custom travelling method plugin script, by USS Frontier (Enhanced Warp.py, original, template), and then modified by Alex SL Gato for B5Jumpspace.
-# This ship is a legal replacement to the illegal JumpspaceModule - use Babylon5Jumpspace instead.
-# 16th April 2025
+# BSG2003DimensionalJump.py
+# Based on the prototype custom travelling method plugin script, by USS Frontier (Enhanced Warp.py, original, template), and then modified by Alex SL Gato for nBSGDimensionalJump.
+# This ship is a legal replacement to the illegal JumpspaceModule - use BSG2003DimensionalJump instead.
+# 8th September 2025
 #################################################################################################################
 ##########	MANUAL
 #################################################################################################################
-# NOTE: all functions/methods and attributes defined here (in this prototype example plugin, B5Jumpspace) are required to be in the plugin, with the exclusion of:
+#TO-DO UPDATE THIS MANUAL
+# TO-DO THE LIGHT JUMPS FROM FRONT TO BACK
+# TO-DO MAKE IT SO WHILE ON THE SYSTEM THE JUMP AUTOMATICALLY FAILS SO YOU NEED MULTIPLE JUMPS TO REACH YOUR DESTINATION
+# TO-DO MAKE IT SO THE CYLONS REQUIRE 10x JUMPS FOR A THING AND THEN GALACTICA 200x
+# TO-DO LOOK A WAY TO MAKE THE JUMP ENGINES WORK EVERY 33 MINUTES
+# NOTE: all functions/methods and attributes defined here (in this prototype example plugin, nBSGDimensionalJump) are required to be in the plugin, with the exclusion of:
 # ------ MODINFO, which is there just to verify versioning.
 # ------ ALTERNATESUBMODELFTL METHODS subsection, which are exclusively used for alternate SubModels for FTL which is a separate but linked mod, or to import needed modules.
-# ------ Auxiliar functions: "AnObjectDying", "AuxProtoElementNames", "B5JumpspaceFlash", "CreateDetachedElectricExplosion", "findShipInstance", "HasPhasedJumpspace", "HasSigmaJumpspace", "LoadGFX", "PlayB5JumpspaceSound", "PlayB5JumpspaceSoundC", "B5JumpspaceBasicConfigInfo" and "B5JumpspaceDisabledCalculations".
-# ------ Auxiliar variables: "defineTravelSpaceNoise", "myGlobalAISet", "myGlobalpSet" and "pJumpspaceEngineSound", used for keeping tabs on our alternate pSets and the sound that plays while on jumpspace.
+# ------ Auxiliar functions: "AnObjectDying", "AuxProtoElementNames", "nBSGDimensionalJumpFlash", "CreateDetachedElectricExplosion", "findShipInstance", "HasPhasednBSGDimensionalJumpDrive", "HasCloakedJumpSystem", "LoadGFX", "PlaynBSGDimensionalJumpSound", "PlaynBSGDimensionalJumpSoundC", "nBSGDimensionalJumpBasicConfigInfo" and "nBSGDimensionalJumpDisabledCalculations".
+# ------ Auxiliar variables: "defineTravelSpaceNoise" and "pnBSGDimensionalJumpDriveEngineSound", used for keeping tabs on our alternate pSets and the sound that plays while on jumpspace.
 # ------ Auxiliar class "WhyMissionLibGetsError" and its instance "basicListener"
-# ------ Auxiliar functions for intra-system intercept (ISI) support, which as a result of being a common-made function between default GalaxyCharts functions/methods, regular AlternateSubModelFTL and ISI, while not required to be on the plugin, some of their contents are actually required if they are not there: "awayNavPointDistanceCalc", "CanTravelShip", "ConditionalCloak", "ConditionalDecloak", "EngageSeqTractorCheckI", "GetEngageDirectionISI", "GetExitedTravelEventsI", "GetStartTravelEventsI", "GetEngageDirectionC", "InSystemIntercept", "MaintainTowingActionI", "PlayB5JumpspaceSoundI", "removeTractorISITowInfo", "SetupSequenceISI" and "SetupTowingI".
+# ------ Auxiliar functions for intra-system intercept (ISI) support, which as a result of being a common-made function between default GalaxyCharts functions/methods, regular AlternateSubModelFTL and ISI, while not required to be on the plugin, some of their contents are actually required if they are not there: "awayNavPointDistanceCalc", "CanTravelShip", "ConditionalCloak", "ConditionalDecloak", "EngageSeqTractorCheckI", "GetEngageDirectionISI", "GetExitedTravelEventsI", "GetStartTravelEventsI", "GetEngageDirectionC", "InSystemIntercept", "MaintainTowingActionI", "PlaynBSGDimensionalJumpSoundI", "removeTractorISITowInfo", "SetupSequenceISI" and "SetupTowingI".
 # Please note that "GetTravelSetToUse" has been modified to allow a different Travel Set.
 # === How-To-Add ===
 # This Travelling Method is Ship-based, on this case it may need of Foundation and FoundationTech to verify if the ship is equipped with it.
-# This main FTL method check is stored inside an "Alternate-Warp-FTL" dictionary, which is a script that should be located at scripts/Custom/Techs/AlternateSubModelFTL.py. While this sub-tech can work totally fine without such module installed, or even just act on hardpoint properties alone (including a ship subsystem that contains "jumpspace drive" or "jump-space drive", case insensitive, on the hardpoint will suffice), it is recommended to have it.
-# On this case, due to that, only the lines marked with "# (#)" are needed for B5Jumpspace to work, but the final parent technology may require more:
-# "B5Jumpspace": is the name of the key. This is the bare minimum for the technology to work
-# "Nacelles": is the name of a key whose value indicates a list of which warp engine property children (nacelles) are part of the B5Jumpspace system. If all are disabled/destroyed, B5Jumpspace will not engage. If this field does not exist or "Nacelles": [] it skips this disabled check.
-# "Core": is the name of a key whose value indicates a list of which hardpoint properties (not nacelles) are part of the B5Jumpspace system. If all are disabled/destroyed, Jumpspace will not engage either. If this field does not exist, it wil check for all subsystems with "jumpspace drive" or "jump-space drive", case insensitive. Use "Core": [] to skip this check.
+# This main FTL method check is stored inside an "Alternate-Warp-FTL" dictionary, which is a script that should be located at scripts/Custom/Techs/AlternateSubModelFTL.py. While this sub-tech can work totally fine without such module installed, or even just act on hardpoint properties alone (including a ship subsystem that contains "jumpspace drive" or "jump-space drive", case insensitive, and another called "TransDimensional Drive" case-sensitive, on the hardpoint will suffice), it is recommended to have it.
+# On this case, due to that, only the lines marked with "# (#)" are needed for nBSGDimensionalJump to work, but the final parent technology may require more:
+# "nBSGDimensionalJump": is the name of the key. This is the bare minimum for the technology to work
+# "Nacelles": is the name of a key whose value indicates a list of which warp engine property children (nacelles) are part of the nBSGDimensionalJump system. If all are disabled/destroyed, nBSGDimensionalJump will not engage. If this field does not exist or "Nacelles": [] it skips this disabled check.
+# "Core": is the name of a key whose value indicates a list of which hardpoint properties (not nacelles) are part of the nBSGDimensionalJump system. If all are disabled/destroyed, nBSGDimensionalJumpDrive will not engage either. If this field does not exist, it wil check for all subsystems with "quantum jumpspace drive" or "quantum jump-space drive", case insensitive. Use "Core": [] to skip this check.
 # Subsystems note: when editing the hardpoint, you can also add another hardpoint property called "TransDimensional Drive" to change this FTL effects and behaviour slightly (instead of a vortex-like animation at great speeds, it's a big silent rotund flash with barely any movement). Same with "Hyperspace Cloak" (will not use any flashes and will actually try to make the ship cloak and decloak and will use shadow sounds).
-# Also, important note, this mod uses additional systems for GalaxyCharts, "Custom.GalaxyCharts.TravelerSystems.JumpspaceTunnelTravelSet" and "Custom.GalaxyCharts.TravelerSystems.AIJumpspaceTunnelTravelSet", with "Custom.GalaxyCharts.TravelerSystems.JumpspaceTunnelTravelSet_S" being optional but highly recommended to have.
+# TO-DO CHANGE THIS --> Also, important note, this mod uses additional systems for GalaxyCharts, "Custom.GalaxyCharts.TravelerSystems.nBSGDimensionalJumpDriveTunnelTravelSet" and "Custom.GalaxyCharts.TravelerSystems.AInBSGDimensionalJumpDriveTunnelTravelSet", with "Custom.GalaxyCharts.TravelerSystems.nBSGDimensionalJumpDriveTunnelTravelSet_S" being optional but highly recommended to have.
+# "Cooldown Time": time in seconds between jumps on a type of ship, in seconds. Default is 33 * 60 secoonds.
 """
 #Sample Setup: replace "EAOmega" for the appropiate abbrev. Also remove "# (#)"
 Foundation.ShipDef.EAOmega.dTechs = { # (#)
 	"Alternate-Warp-FTL": { # (#)
 		"Setup": { # (#)
-			"B5Jumpspace": {	"Nacelles": ["Proto Warp Nacelle"], "Core": ["Proto-Core"], }, # (#)
+			"nBSGDimensionalJump": {	"Nacelles": ["Dimensional Jump Engine"], "Core": ["Tylium Core"], "Cooldown Time": 33 * 60}, # (#)
 			"Body": "VasKholhr_Body",
 			"NormalModel":          shipFile,
 			"WarpModel":          "VasKholhr_WingUp",
-			"B5JumpspaceModel":          "VasKholhr_WingUp",
+			"nBSGDimensionalJumpModel":          "VasKholhr_WingUp",
 			"AttackModel":          "VasKholhr_WingDown",
 			"BodySetScale": 1.0,
 			"NormalSetScale": 1.0,
 			"WarpSetScale": 1.0,
-			"B5JumpspaceSetScale": 1.0,
+			"nBSGDimensionalJumpSetScale": 1.0,
 			"AttackSetScale": 1.0,
 			"Hardpoints":       {
-				"Proto Warp Nacelle":  [0.000000, 0.000000, 0.075000],
+				"Port Hanger":  [-5.500000, 1.000000, 0.000000, {"Disabled Percentage" : 0.5}],
+				"Star Hanger":  [5.500000, 1.000000, 0.000000, {"Disabled Percentage" : 0.5}],
+				"Launch Tube P1":  [-6.900000, 2.900000, -0.620000, {"Disabled Percentage" : 0.5}],
+				"Launch Tube P2":  [-6.950000, 2.150000, -0.620000, {"Disabled Percentage" : 0.5}],
+				"Launch Tube P3":  [-7.000000, 1.020000, -0.620000, {"Disabled Percentage" : 0.5}],
+				"Launch Tube P4":  [-7.020000, 0.300000, -0.620000, {"Disabled Percentage" : 0.5}],
+				"Launch Tube P5":  [-7.020000, -0.800000, -0.620000, {"Disabled Percentage" : 0.5}],
+				"Launch Tube P6":  [-7.020000, -1.550000, -0.620000, {"Disabled Percentage" : 0.5}],
+				"Launch Tube P7":  [-7.020000, -2.675000, -0.620000, {"Disabled Percentage" : 0.5}],
+				"Launch Tube P8":  [-7.020000, -3.400000, -0.620000, {"Disabled Percentage" : 0.5}],
+				"Launch Tube P9":  [-6.930000, -4.500000, -0.620000, {"Disabled Percentage" : 0.5}],
+				"Launch Tube P10":  [-6.850000, -5.275000, -0.620000, {"Disabled Percentage" : 0.5}],
+				"Launch Tube P1 OEP":  [-6.900000, 2.900000, -0.620000 ],
+				"Launch Tube P2 OEP":  [-6.950000, 2.150000, -0.620000 ],
+				"Launch Tube P3 OEP":  [-7.000000, 1.020000, -0.620000 ],
+				"Launch Tube P4 OEP":  [-7.020000, 0.300000, -0.620000 ],
+				"Launch Tube P5 OEP":  [-7.020000, -0.800000, -0.620000 ],
+				"Launch Tube P6 OEP":  [-7.020000, -1.550000, -0.620000 ],
+				"Launch Tube P7 OEP":  [-7.020000, -2.675000, -0.620000 ],
+				"Launch Tube P8 OEP":  [-7.020000, -3.400000, -0.620000 ],
+				"Launch Tube P9 OEP":  [-6.930000, -4.500000, -0.620000 ],
+				"Launch Tube P10 OEP":  [-6.850000, -5.275000, -0.620000 ],
 			},
 
-			"AttackHardpoints":       {
-				"Proto Warp Nacelle":  [0.000000, -0.250000, 2.075000],
-			},
-			"WarpHardpoints":       {
-				"Proto Warp Nacelle":  [0.000000, -0.250000, -2.075000],
-			},
-			"B5JumpspaceHardpoints":       {
-				"Proto Warp Nacelle":  [0.000000, -1.000000, -2.075000],
+			"nBSGDimensionalJumpHardpoints":       {
+				"Port Hanger":  [-5.500000, 1.000000, 0.000000, {"Disabled Percentage" : 1.5}],
+				"Star Hanger":  [5.500000, 1.000000, 0.000000, {"Disabled Percentage" : 1.5}],
+				"Launch Tube P1":  [-6.900000, 2.900000, -0.620000, {"Disabled Percentage" : 1.5}],
+				"Launch Tube P2":  [-6.950000, 2.150000, -0.620000, {"Disabled Percentage" : 1.5}],
+				"Launch Tube P3":  [-7.000000, 1.020000, -0.620000, {"Disabled Percentage" : 1.5}],
+				"Launch Tube P4":  [-7.020000, 0.300000, -0.620000, {"Disabled Percentage" : 1.5}],
+				"Launch Tube P5":  [-7.020000, -0.800000, -0.620000, {"Disabled Percentage" : 1.5}],
+				"Launch Tube P6":  [-7.020000, -1.550000, -0.620000, {"Disabled Percentage" : 1.5}],
+				"Launch Tube P7":  [-7.020000, -2.675000, -0.620000, {"Disabled Percentage" : 1.5}],
+				"Launch Tube P8":  [-7.020000, -3.400000, -0.620000, {"Disabled Percentage" : 1.5}],
+				"Launch Tube P9":  [-6.930000, -4.500000, -0.620000, {"Disabled Percentage" : 1.5}],
+				"Launch Tube P10":  [-6.850000, -5.275000, -0.620000, {"Disabled Percentage" : 1.5}],
+				"Launch Tube P1 OEP":  [-6.900000, 2.900000, -0.620000 ],
+				"Launch Tube P2 OEP":  [-6.950000, 2.150000, -0.620000 ],
+				"Launch Tube P3 OEP":  [-7.000000, 1.020000, -0.620000 ],
+				"Launch Tube P4 OEP":  [-7.020000, 0.300000, -0.620000 ],
+				"Launch Tube P5 OEP":  [-7.020000, -0.800000, -0.620000 ],
+				"Launch Tube P6 OEP":  [-7.020000, -1.550000, -0.620000 ],
+				"Launch Tube P7 OEP":  [-7.020000, -2.675000, -0.620000 ],
+				"Launch Tube P8 OEP":  [-7.020000, -3.400000, -0.620000 ],
+				"Launch Tube P9 OEP":  [-6.930000, -4.500000, -0.620000 ],
+				"Launch Tube P10 OEP":  [-6.850000, -5.275000, -0.620000 ],
 			},
 		}, # (#)
 
@@ -66,9 +108,9 @@ Foundation.ShipDef.EAOmega.dTechs = { # (#)
 			"WarpRotation":       [0, 0.349, 0],
 			"WarpPosition":       [0, 0, 0.02],
 			"WarpDuration":       150.0,
-			"B5JumpspaceRotation":       [0, 0.749, 0],
-			"B5JumpspacePosition":       [0, 0, 0.05],
-			"B5JumpspaceDuration":       150.0,
+			"nBSGDimensionalJumpRotation":       [0, 0.749, 0],
+			"nBSGDimensionalJumpPosition":       [0, 0, 0.05],
+			"nBSGDimensionalJumpDuration":       150.0,
 			},
 		],
         
@@ -82,9 +124,9 @@ Foundation.ShipDef.EAOmega.dTechs = { # (#)
 			"WarpRotation":       [0, -0.349, 0],
 			"WarpPosition":       [0, 0, 0.02],
 			"WarpDuration":       150.0,
-			"B5JumpspaceRotation":       [0, -0.749, 0],
-			"B5JumpspacePosition":       [0, 0, 0.05],
-			"B5JumpspaceDuration":       150.0,
+			"nBSGDimensionalJumpRotation":       [0, -0.749, 0],
+			"nBSGDimensionalJumpPosition":       [0, 0, 0.05],
+			"nBSGDimensionalJumpDuration":       150.0,
 			},
 		],
 	}, # (#)
@@ -97,7 +139,7 @@ Foundation.ShipDef.EAOmega.dTechs = { # (#)
 #################################################################################################################
 #
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.24",
+	    "Version": "0.25",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -112,9 +154,9 @@ from bcdebug import debug
 #######################################
 #######################################
 ########
-# name of this travelling method 
+# name of this travelling method
 ########
-sName = "Jumpspace"
+sName = "Kobollian Dimensional Jump"
 
 ########
 # if this travelling method is ship based. Warp for example is ship based, that means that any ship equipped with it can
@@ -132,7 +174,7 @@ bIsShipBased = 1
 ########
 # if this travelling method can be used to tow ships.
 ########
-bCanTowShips = 1
+bCanTowShips = 0
 
 ########
 # path and file name to engine degradation sound alert
@@ -164,12 +206,12 @@ bCanChangeSpeed = 1
 # Phrase to show when ship is engaging this travelling method, the destination name is automatically added to the end
 # so, like in warp, for example, it'll be "Warping to Kronos..."
 ########
-sGoingTo = "Entering Jumpspace to go to"
+sGoingTo = "10, 9, 8, 7, 6, 5, 4, 3, 2, 1... Jumping towards" # TO-DO ADD 10 SEC JUMP COUNTDOWN
 
 ########
 # Phrase to show when the ship drops out of travel (while travelling)
 ########
-sDropOut = "Dropped out of Jumpspace..."
+sDropOut = "00:00:00 Jump executed..."
 
 ########
 # if this travelling method can trigger RDFs when a ship exits travel.
@@ -228,7 +270,7 @@ DISENGAGING_ALTERNATEFTLSUBMODEL = App.UtopiaModule_GetNextEventType() # For whe
 # from Custom.Techs.AlternateSubModelFTL import StartingProtoWarp, ExitSetProto
 
 def KindOfMove(): 
-	return "B5Jumpspace" # Modify this with the name you are gonna use for the AlternateSubModelFTL
+	return "nBSGDimensionalJump" # Modify this with the name you are gonna use for the AlternateSubModelFTL
 
 def StartingFTLAlternateSubModel(pObject, pEvent, techP, move): # What actions does AlternateSubModelFTL need to do when entering this FTL method
 	if move == None:
@@ -263,7 +305,7 @@ def InSystemIntercept():
 	return propulsionType, eEntryEvent, eExitEvent, eSequenceFunction, isEquipped, eCanTravel, awayNavPointDistance, engageDirection
 
 def awayNavPointDistanceCalc(pShipID=None):
-	return 0.9
+	return 0.6
 
 
 #######################################
@@ -287,18 +329,15 @@ def findShipInstance(pShip):
 def IsShipEquipped(pShip):
 	debug(__name__ + ", IsShipEquipped")
 
-	pInstance, pInstanceDict, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist = B5JumpspaceBasicConfigInfo(pShip)
+	pInstance, pInstanceDict, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist = nBSGDimensionalJumpBasicConfigInfo(pShip)
 	pInstance = findShipInstance(pShip)
 	if pInstance:
-		if pInstanceDict.has_key("Alternate-Warp-FTL") and pInstanceDict["Alternate-Warp-FTL"].has_key("Setup") and pInstanceDict["Alternate-Warp-FTL"]["Setup"].has_key("B5Jumpspace"): # You need to add a foundation technology to this vessel "AlternateSubModelFTL"
+		if pInstanceDict.has_key("Alternate-Warp-FTL") and pInstanceDict["Alternate-Warp-FTL"].has_key("Setup") and pInstanceDict["Alternate-Warp-FTL"]["Setup"].has_key("nBSGDimensionalJump"): # You need to add a foundation technology to this vessel "AlternateSubModelFTL"
 			return 1
-	
-        # For legacy reasons
-        totalB5JumpspaceEngines, onlineB5JumpspaceEngines = B5JumpspaceDisabledCalculations("Core", specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, None, pShip, 1)
-	return (totalB5JumpspaceEngines > 0)
+	return 0
 
-# An aux function, checks if this ship can do phased Jumpspace. In order for ships that used another version can still use this, it follows similar functionality.
-def HasPhasedJumpspace(pShip, myStr = "Hyperspace Cloak"):
+# An aux function, checks if this ship can do phased nBSGDimensionalJumpDrive. In order for ships that used another version can still use this, it follows similar functionality.
+def HasPhasednBSGDimensionalJumpDrive(pShip, myStr = "Jump Cloak"):
 	found = 0
         pIterator = pShip.StartGetSubsystemMatch(App.CT_SHIP_SUBSYSTEM)
 	pSystem = pShip.GetNextSubsystemMatch(pIterator)
@@ -317,8 +356,8 @@ def HasPhasedJumpspace(pShip, myStr = "Hyperspace Cloak"):
 	return found
 
 # An aux function, checks if this ship can do Sigma Walkers Dimensional Drive. In order for ships that used another version can still use this, it follows similar functionality.
-def HasSigmaJumpspace(pShip):
-	return HasPhasedJumpspace(pShip, myStr = "TransDimensional Drive")
+def HasCloakedJumpSystem(pShip):
+	return HasPhasednBSGDimensionalJumpDrive(pShip, myStr = "Jump Cloak")
 
 ########
 # "CanTravel" Method to check if the ship can travel.
@@ -326,31 +365,31 @@ def HasSigmaJumpspace(pShip):
 ########
 # This is just an auxiliar function I made for this
 def AuxProtoElementNames(*args):
-	# Returns hardpoint property name fragments that indicate are part of the B5Jumpspace system, and blacklists
-	return ["jumpspace drive", "jump-space drive"], ["not a jumpspace drive", "not a jump-space drive", " not jumpspace drive", " not jump-space drive"]
+	# Returns hardpoint property name fragments that indicate are part of the nBSGDimensionalJump system, and blacklists
+	return ["ftl dimensional jump drive", "ftl dimensional drive"], ["not a ftl dimensional jump drive", "not a ftl dimensional drive", " not ftl dimensional jump drive", " not ftl dimensional drive"]
 
 # This is just another auxiliar function I made for this
-def B5JumpspaceBasicConfigInfo(pShip):
+def nBSGDimensionalJumpBasicConfigInfo(pShip):
 	pInstance = findShipInstance(pShip) # On this case, IsShipEquipped(pShip) already checked this for us - HOWEVER do not forget to check if you modify the script
 	pInstancedict = None
 	specificNacelleHPList = None
 	specificCoreHPList = None
 	if pInstance:
 		pInstancedict = pInstance.__dict__ 
-		if pInstancedict.has_key("Alternate-Warp-FTL") and pInstancedict["Alternate-Warp-FTL"].has_key("Setup") and pInstancedict["Alternate-Warp-FTL"]["Setup"].has_key("B5Jumpspace"):
-			if pInstancedict["Alternate-Warp-FTL"]["Setup"]["B5Jumpspace"].has_key("Nacelles"): # Use: if the tech has this field, use it. Must be a list. "[]" would mean that this field is skipped during checks.
-				specificNacelleHPList = pInstancedict["Alternate-Warp-FTL"]["Setup"]["B5Jumpspace"]["Nacelles"]
-			if pInstancedict["Alternate-Warp-FTL"]["Setup"]["B5Jumpspace"].has_key("Core"): # Use: if the tech has this field, use it. Must be a list. "[]" would mean that this field is skipped during checks.
-				specificCoreHPList = pInstancedict["Alternate-Warp-FTL"]["Setup"]["B5Jumpspace"]["Core"]
+		if pInstancedict.has_key("Alternate-Warp-FTL") and pInstancedict["Alternate-Warp-FTL"].has_key("Setup") and pInstancedict["Alternate-Warp-FTL"]["Setup"].has_key("nBSGDimensionalJump"):
+			if pInstancedict["Alternate-Warp-FTL"]["Setup"]["nBSGDimensionalJump"].has_key("Nacelles"): # Use: if the tech has this field, use it. Must be a list. "[]" would mean that this field is skipped during checks.
+				specificNacelleHPList = pInstancedict["Alternate-Warp-FTL"]["Setup"]["nBSGDimensionalJump"]["Nacelles"]
+			if pInstancedict["Alternate-Warp-FTL"]["Setup"]["nBSGDimensionalJump"].has_key("Core"): # Use: if the tech has this field, use it. Must be a list. "[]" would mean that this field is skipped during checks.
+				specificCoreHPList = pInstancedict["Alternate-Warp-FTL"]["Setup"]["nBSGDimensionalJump"]["Core"]
 
 	hardpointProtoNames, hardpointProtoBlacklist = AuxProtoElementNames()
 
 	return pInstance, pInstancedict, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist
 
 # This is just another auxiliar function I made for this
-def B5JumpspaceDisabledCalculations(type, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, pSubsystem, pShip, justFindOne=0):
-	totalB5JumpspaceEngines = 0
-	onlineB5JumpspaceEngines = 0
+def nBSGDimensionalJumpDisabledCalculations(type, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, pSubsystem, pShip, justFindOne=0):
+	totalnBSGDimensionalJumpEngines = 0
+	onlinenBSGDimensionalJumpEngines = 0
 	if type == "Nacelle":
 		if pSubsystem != None:
 			for i in range(pSubsystem.GetNumChildSubsystems()):
@@ -376,9 +415,9 @@ def B5JumpspaceDisabledCalculations(type, specificNacelleHPList, specificCoreHPL
 							found = (pChildName in specificNacelleHPList)
 
 						if found and not blacklisted:
-							totalB5JumpspaceEngines = totalB5JumpspaceEngines + 1
+							totalnBSGDimensionalJumpEngines = totalnBSGDimensionalJumpEngines + 1
 							if pChild.GetCondition() > 0.0 and not pChild.IsDisabled():
-								onlineB5JumpspaceEngines = onlineB5JumpspaceEngines + 1
+								onlinenBSGDimensionalJumpEngines = onlinenBSGDimensionalJumpEngines + 1
 								if justFindOne == 1:
 									break
 	elif type == "Core":
@@ -413,16 +452,63 @@ def B5JumpspaceDisabledCalculations(type, specificNacelleHPList, specificCoreHPL
 							found = (pSubsystemName in specificCoreHPList)
 
 						if found and not blacklisted:
-							totalB5JumpspaceEngines = totalB5JumpspaceEngines + 1
+							totalnBSGDimensionalJumpEngines = totalnBSGDimensionalJumpEngines + 1
 							if pSubsystema.GetCondition() > 0.0 and not pSubsystema.IsDisabled():
-								onlineB5JumpspaceEngines = onlineB5JumpspaceEngines + 1
+								onlinenBSGDimensionalJumpEngines = onlinenBSGDimensionalJumpEngines + 1
 								if justFindOne == 1:
 									break
 
 		pShipList.TGDoneIterating()
 		pShipList.TGDestroy()
 
-	return totalB5JumpspaceEngines, onlineB5JumpspaceEngines
+	return totalnBSGDimensionalJumpEngines, onlinenBSGDimensionalJumpEngines
+
+# Auxiliar function TO-DO ADD TO DOC
+def AreWeOnFTLCooldown(pInstance):
+	timeRemaining = 0
+	if pInstance:
+		if hasattr(pInstance, "nBSGJumpCooldown"): # TO-DO ADD THIS AS A SEPARATE FUNCTION?
+			coolDown = pInstance.nBSGJumpCooldown
+			currentTime = App.g_kUtopiaModule.GetGameTime()
+			if coolDown is not None and currentTime is not None and type(coolDown) == type(currentTime) and coolDown > currentTime:
+				timeRemaining = coolDown - currentTime
+	else:
+		timeRemaining = None
+	return timeRemaining
+
+# Auxiliar function TO-DO ADD TO DOC
+def AreWeOnFTLStretch(pInstance):
+	timeRemaining = 0
+	if pInstance:
+		if pInstance and hasattr(pInstance, "nBSGJumpStretch"): # TO-DO ADD THIS AS A SEPARATE FUNCTION?
+			coolDown = pInstance.nBSGJumpStretch
+			currentTime = App.g_kUtopiaModule.GetGameTime()
+			if coolDown is not None and currentTime is not None and type(coolDown) == type(currentTime) and coolDown > currentTime:
+				timeRemaining = coolDown  - currentTime
+	else:
+		timeRemaining = None
+	return timeRemaining
+
+# Auxiliar function TO-DO ADD TO DOC
+def InstateFTLCooldown(pInstance, delay): # TO-DO add a method to get the delays also TO-DO cleanup
+	if pInstance:
+		#if not hasattr(pInstance, "nBSGJumpCooldown"):
+		currentTime = App.g_kUtopiaModule.GetGameTime()
+		pInstance.nBSGJumpCooldown = currentTime + delay
+	else:
+		print __name__, "InstateFTLCooldown could not find a pInstance..."
+
+# Auxiliar function TO-DO ADD TO DOC
+def InstateFTLStrCooldown(pInstance, delay=0.2, remove=0): # TO-DO add a method to get the delays also TO-DO cleanup
+	if pInstance:
+		if remove == 1:
+			if hasattr(pInstance, "nBSGJumpStretch"):
+				pInstance.nBSGJumpStretch = None	
+		elif remove == 0 or (not hasattr(pInstance, "nBSGJumpStretch") or pInstance.nBSGJumpStretch == None):
+			currentTime = App.g_kUtopiaModule.GetGameTime()
+			pInstance.nBSGJumpStretch = currentTime + delay
+	else:
+		print __name__, "InstateFTLStrCooldown could not find a pInstance..."
 
 def CanTravel(self): # NOTE: Requires CanTravelShip
 	debug(__name__ + ", CanTravel")
@@ -453,29 +539,27 @@ def CanTravelShip(pShip):
 					pSequence.AddAction (pSubtitleAction)
 					pSequence.Play ()
 					App.g_kLocalizationManager.Unload (pDatabase)
-		return "This ship is not equipped with B5Jumpspace"
+		return "This ship is not equipped with Kobollian FTL Jump Drive"
 
+	#pImpulseEngines = pShip.GetImpulseEngineSubsystem()
+	#if not pImpulseEngines:
+	#	return "No Impulse Engines"
 
+	#if (pImpulseEngines.GetPowerPercentageWanted() == 0.0):
+	#	# Ship is trying to warp with their engines off.
+	#	if bIsPlayer == 1:
+	#		pXO = App.CharacterClass_GetObject(App.g_kSetManager.GetSet("bridge"), "XO")
+	#		if pXO:
+	#			MissionLib.QueueActionToPlay(App.CharacterAction_Create(pXO, App.CharacterAction.AT_SAY_LINE, "EngineeringNeedPowerToEngines", None, 1))
+	#	return "Impulse Engines offline"
 
-	pImpulseEngines = pShip.GetImpulseEngineSubsystem()
-	if not pImpulseEngines:
-		return "No Impulse Engines"
-
-	if (pImpulseEngines.GetPowerPercentageWanted() == 0.0):
-		# Ship is trying to warp with their engines off.
-		if bIsPlayer == 1:
-			pXO = App.CharacterClass_GetObject(App.g_kSetManager.GetSet("bridge"), "XO")
-			if pXO:
-				MissionLib.QueueActionToPlay(App.CharacterAction_Create(pXO, App.CharacterAction.AT_SAY_LINE, "EngineeringNeedPowerToEngines", None, 1))
-		return "Impulse Engines offline"
-
-	pInstance, pInstancedict, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist = B5JumpspaceBasicConfigInfo(pShip)
+	pInstance, pInstancedict, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist = nBSGDimensionalJumpBasicConfigInfo(pShip)
 
 	pWarpEngines = pShip.GetWarpEngineSubsystem()
 	if (specificNacelleHPList != None and len(specificNacelleHPList) > 0):
-		totalB5JumpspaceEngines, onlineB5JumpspaceEngines = B5JumpspaceDisabledCalculations("Nacelle", specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, pWarpEngines, pShip, 1)
+		totalnBSGDimensionalJumpEngines, onlinenBSGDimensionalJumpEngines = nBSGDimensionalJumpDisabledCalculations("Nacelle", specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, pWarpEngines, pShip, 1)
 
-		if totalB5JumpspaceEngines <= 0 or onlineB5JumpspaceEngines <= 0:
+		if totalnBSGDimensionalJumpEngines <= 0 or onlinenBSGDimensionalJumpEngines <= 0:
 			if bIsPlayer == 1:
 				if pHelm:
 					App.CharacterAction_Create(pHelm, App.CharacterAction.AT_SAY_LINE, "CantWarp1", None, 1).Play()
@@ -490,12 +574,12 @@ def CanTravelShip(pShip):
 						pSequence.Play ()
 						App.g_kLocalizationManager.Unload (pDatabase)
 
-			return "Jumpspace Engines disabled"
+			return "Kobollian FTL Drive Engines disabled"
 
 	if specificCoreHPList == None or (specificCoreHPList != None and len(specificCoreHPList) > 0):
-		totalB5JumpspaceCores, onlineB5JumpspaceCores = B5JumpspaceDisabledCalculations("Core", specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, pWarpEngines, pShip, 1)
+		totalnBSGDimensionalJumpCores, onlinenBSGDimensionalJumpCores = nBSGDimensionalJumpDisabledCalculations("Core", specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, pWarpEngines, pShip, 1)
 
-		if totalB5JumpspaceCores <= 0 or onlineB5JumpspaceCores <= 0:
+		if totalnBSGDimensionalJumpCores <= 0 or onlinenBSGDimensionalJumpCores <= 0:
 			if bIsPlayer == 1:
 				if pHelm:
 					App.CharacterAction_Create(pHelm, App.CharacterAction.AT_SAY_LINE, "CantWarp1", None, 1).Play()
@@ -509,9 +593,15 @@ def CanTravelShip(pShip):
 						pSequence.AddAction (pSubtitleAction)
 						pSequence.Play ()
 						App.g_kLocalizationManager.Unload (pDatabase)
-			return "Jumpspace Drive is disabled"
+			return "Kobollian FTL Drive or power are disabled"
 
-	pSet = pShip.GetContainingSet()
+	timeRemaining = AreWeOnFTLCooldown(pInstance)
+	if timeRemaining == None:
+		return "Some kind of error must have happened with pInstances for ", __name__, "!"
+	if timeRemaining > 0:
+		return "This Drive is still on cooldown, we need to wait another ", timeRemaining, " seconds until the engines are operative again"
+			
+	#pSet = pShip.GetContainingSet()
 	#pNebula = pSet.GetNebula()
 	#if pNebula:
 	#	if pNebula.IsObjectInNebula(pShip):
@@ -551,28 +641,28 @@ def CanTravelShip(pShip):
 	#						App.g_kLocalizationManager.Unload (pDatabase)
 	#			return "Inside Asteroid Field"
 					
-	pStarbase12Set = App.g_kSetManager.GetSet("Starbase12")
-	if pStarbase12Set:
-		if pShip.GetContainingSet():
-			if pStarbase12Set.GetObjID() == pShip.GetContainingSet().GetObjID():
-				pStarbase12 = App.ShipClass_GetObject(pStarbase12Set, "Starbase 12")
-				if pStarbase12:
-					import AI.Compound.DockWithStarbase
-					if AI.Compound.DockWithStarbase.IsInViewOfInsidePoints(pShip, pStarbase12):
-						if bIsPlayer == 1:
-							if pHelm:
-								App.CharacterAction_Create(pHelm, App.CharacterAction.AT_SAY_LINE, "CantWarp3", None, 1).Play()
-							else:
-								# No character, display subtitle only.
-								pDatabase = App.g_kLocalizationManager.Load("data/TGL/Bridge Crew General.tgl")
-								if pDatabase:
-									pSequence = App.TGSequence_Create()
-									pSubtitleAction = App.SubtitleAction_Create(pDatabase, "CantWarp3")
-									pSubtitleAction.SetDuration(3.0)
-									pSequence.AddAction(pSubtitleAction)
-									pSequence.Play()
-									App.g_kLocalizationManager.Unload(pDatabase)
-						return "Inside Starbase12"
+	#pStarbase12Set = App.g_kSetManager.GetSet("Starbase12")
+	#if pStarbase12Set:
+	#	if pShip.GetContainingSet():
+	#		if pStarbase12Set.GetObjID() == pShip.GetContainingSet().GetObjID():
+	#			pStarbase12 = App.ShipClass_GetObject(pStarbase12Set, "Starbase 12")
+	#			if pStarbase12:
+	#				import AI.Compound.DockWithStarbase
+	#				if AI.Compound.DockWithStarbase.IsInViewOfInsidePoints(pShip, pStarbase12):
+	#					if bIsPlayer == 1:
+	#						if pHelm:
+	#							App.CharacterAction_Create(pHelm, App.CharacterAction.AT_SAY_LINE, "CantWarp3", None, 1).Play()
+	#						else:
+	#							# No character, display subtitle only.
+	#							pDatabase = App.g_kLocalizationManager.Load("data/TGL/Bridge Crew General.tgl")
+	#							if pDatabase:
+	#								pSequence = App.TGSequence_Create()
+	#								pSubtitleAction = App.SubtitleAction_Create(pDatabase, "CantWarp3")
+	#								pSubtitleAction.SetDuration(3.0)
+	#								pSequence.AddAction(pSubtitleAction)
+	#								pSequence.Play()
+	#								App.g_kLocalizationManager.Unload(pDatabase)
+	#					return "Inside Starbase12"
 	return 1
 
 
@@ -580,7 +670,7 @@ def CanTravelShip(pShip):
 # Method to check if the ship can continue travelling (she's travelling, yeah)
 # must return 1 if she can, 0 if she can't travel anymore (thus will forcibly drop out).
 ########
-def CanContinueTravelling(self):
+def CanContinueTravelling(self): # TO-DO UPDATE
 	debug(__name__ + ", CanContinueTravelling")
 	pShip = self.GetShip()
 	pPlayer = App.Game_GetCurrentPlayer()
@@ -589,38 +679,30 @@ def CanContinueTravelling(self):
 		bIsPlayer = 1
 	pWarpEngines = pShip.GetWarpEngineSubsystem()
 	bStatus = 1
+
+	print "TO-DO CanContinueTravelling Check"
 	isEquipped = IsShipEquipped(pShip)
 	if not isEquipped:
-		if bIsPlayer == 1:
-			pSequence = App.TGSequence_Create ()
-			pSubtitleAction = App.SubtitleAction_CreateC("Brex: We don't have B5Jumpspace sir, we are dropping out of it.")
-			pSubtitleAction.SetDuration(3.0)
-			pSequence.AddAction(pSubtitleAction)
-			pSequence.Play()
+		print "  - TO-DO Not equipped"
 		bStatus = 0
 	else:
-		pInstance, pInstancedict, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist = B5JumpspaceBasicConfigInfo(pShip)
-		totalB5JumpspaceCores, onlineB5JumpspaceCores = B5JumpspaceDisabledCalculations("Core", specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, pWarpEngines, pShip, 1)
-		if totalB5JumpspaceCores > 0 and onlineB5JumpspaceCores <= 0:
-			if bIsPlayer == 1:
-				pSequence = App.TGSequence_Create ()
-				pSubtitleAction = App.SubtitleAction_CreateC("Brex: All Jumpspace systems are offline or disabled sir, however I've managed to get us out of Jumpspace before the systems failed utterly.")
-				pSubtitleAction.SetDuration(3.0)
-				pSequence.AddAction(pSubtitleAction)
-				pSequence.Play()
-			bStatus = 0
-		elif (specificNacelleHPList != None and len(specificNacelleHPList) > 0):
-			pWarpEngines = pShip.GetWarpEngineSubsystem()
-			totalB5JumpspaceEngines, onlineB5JumpspaceEngines = B5JumpspaceDisabledCalculations("Nacelle", specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, pWarpEngines, pShip, 1)
-			if totalB5JumpspaceEngines > 0 and onlineB5JumpspaceEngines <= 0:
-				if bIsPlayer == 1:
-					pSequence = App.TGSequence_Create ()
-					pSubtitleAction = App.SubtitleAction_CreateC("Brex: All Jumpspace vortex generators are now offline or disabled sir, however I've managed to get us out of Jumpspace before the systems failed utterly")
-					pSubtitleAction.SetDuration(3.0)
-					pSequence.AddAction(pSubtitleAction)
-					pSequence.Play()
+		pInstance, pInstancedict, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist = nBSGDimensionalJumpBasicConfigInfo(pShip)
+		try:
+			InstateFTLStrCooldown(pInstance, remove=-1)
+			timeR = AreWeOnFTLStretch(pInstance)
+			if timeR == None or timeR <= 0.0:
+				InstateFTLStrCooldown(pInstance, remove=1)
 				bStatus = 0
-
+		except:
+			traceback.print_exc()
+		
+	if bStatus == 0 and bIsPlayer == 1:
+		pSubtitleAction = App.SubtitleAction_CreateC("Brex: Jump!")
+		if pSubtitleAction:
+			pSubtitleAction.SetDuration(3.0)
+			pSequence = App.TGSequence_Create ()
+			pSequence.AddAction(pSubtitleAction)
+			pSequence.Play()
 	return bStatus
 
 ########
@@ -641,6 +723,7 @@ def GetEngageDirectionISI(pPlayerID): # NOTE: Requires GetEngageDirectionC
 
 # Aux. ISI function.
 def GetEngageDirectionC(mySelf, pPlayerID = None):
+	"""
 	# Get all the objects along the line that we'll
 	# be warping through.
 	debug(__name__ + ", GetEngageDirectionC")
@@ -722,6 +805,7 @@ def GetEngageDirectionC(mySelf, pPlayerID = None):
 	if vBetterDirection:
 		# Return the better direction to turn to, the Travel will take care of the rest.
 		return vBetterDirection
+	"""
 	return None
 
 ########
@@ -750,23 +834,23 @@ def PreExitStuff(self):
 # 3º exiting travel sequence
 ########
 # Another aux function I made
-def PlayB5JumpspaceSound(pAction, pWS, sType, sRace):
-	debug(__name__ + ", PlayB5JumpspaceSound")
+def PlaynBSGDimensionalJumpSound(pAction, pWS, sType, sRace):
+	debug(__name__ + ", PlaynBSGDimensionalJumpSound")
 
 	pShip = pWS.GetShip()
-	return PlayB5JumpspaceSoundC(pAction, pShip, sType, sRace)
+	return PlaynBSGDimensionalJumpSoundC(pAction, pShip, sType, sRace)
 
 # Aux. ISI function
-def PlayB5JumpspaceSoundI(pAction, pShipID, sType, sRace):
-	debug(__name__ + ", PlayB5JumpspaceSoundI")
+def PlaynBSGDimensionalJumpSoundI(pAction, pShipID, sType, sRace):
+	debug(__name__ + ", PlaynBSGDimensionalJumpSoundI")
 	pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), pShipID)
 	if pShip != None:
-		PlayB5JumpspaceSoundC(pAction, pShip, sType, sRace)
+		PlaynBSGDimensionalJumpSoundC(pAction, pShip, sType, sRace)
 	return 0
 
 # Aux. ISI function
-def PlayB5JumpspaceSoundC(pAction, pShip, sType, sRace):
-	debug(__name__ + ", PlayB5JumpspaceSoundC")
+def PlaynBSGDimensionalJumpSoundC(pAction, pShip, sType, sRace):
+	debug(__name__ + ", PlaynBSGDimensionalJumpSoundC")
 
 	pPlayer = App.Game_GetCurrentPlayer()
 
@@ -784,13 +868,13 @@ def PlayB5JumpspaceSoundC(pAction, pShip, sType, sRace):
 
 			sFile = None
 
-			if HasSigmaJumpspace(pShip):
+			if HasCloakedJumpSystem(pShip):
 				if sType == "Enter Warp":
-					sFile = "scripts/Custom/TravellingMethods/SFX/SigmaB5DriveSounds.wav"
+					sFile = "scripts/Custom/TravellingMethods/SFX/SigmaB5DriveSounds.wav" #TO-DO Update with the sound from https://www.youtube.com/watch?v=sGCfC4NvQaY at 1:04
 				else:
 					sFile = "scripts/Custom/TravellingMethods/SFX/SigmaB5DriveSoundsExit.wav"
 
-			elif HasPhasedJumpspace(pShip):
+			elif HasPhasednBSGDimensionalJumpDrive(pShip):
 				if sType == "Enter Warp":
 					sFile = "scripts/Custom/TravellingMethods/SFX/shadowPhasedFScream.wav"
 				else:
@@ -818,7 +902,7 @@ def PlayB5JumpspaceSoundC(pAction, pShip, sType, sRace):
 				if sFile != None:
 					Custom.GravityFX.GravityFXlib.PlaySound(sFile, sRace+" "+sType+" B5 Sound")
 			except:
-				print "B5Jumpspace TravellingMethod: error while calling PlayB5JumpspaceSoundC:"
+				print "nBSGDimensionalJump TravellingMethod: error while calling PlaynBSGDimensionalJumpSoundC:"
 				traceback.print_exc()
 	return 0
 
@@ -828,7 +912,7 @@ def ConditionalDecloak(pAction, pShipID, instant = 0):
 	if not pShip:
 		return 0
 
-	if HasPhasedJumpspace(pShip):
+	if HasPhasednBSGDimensionalJumpDrive(pShip):
 		if pShip.IsCloaked():
 			pCloak = pShip.GetCloakingSubsystem()
 			if pCloak:
@@ -844,7 +928,7 @@ def ConditionalCloak(pAction, pShipID, instant = 0):
 	if not pShip:
 		return 0
 
-	if HasPhasedJumpspace(pShip):
+	if HasPhasednBSGDimensionalJumpDrive(pShip):
 		if not pShip.IsCloaked():
 			pCloak = pShip.GetCloakingSubsystem()
 			if pCloak:
@@ -869,7 +953,7 @@ def LoadGFX(iNumXFrames, iNumYFrames, sFile):
                             fX = 0.0
                             fY = fY + (1.0 / iNumYFrames)
 
-# Aux function
+# Aux function TO-DO REMOVE UNECESSARY STUFF
 def CreateDetachedElectricExplosion(fRed, fGreen, fBlue, fSize, fLifeTime, sFile, pEmitFrom, pAttachTo, fFrequency=1,fEmitLife=1,fSpeed=1.0):
 	pEffect = None
 	try:     
@@ -879,8 +963,8 @@ def CreateDetachedElectricExplosion(fRed, fGreen, fBlue, fSize, fLifeTime, sFile
 		pEffect.AddColorKey(0.5, fRed, fGreen, fBlue)
 		pEffect.AddColorKey(1.0, 1.0 / 255, 1.0 / 255, 1.0 / 255)
 
-		pEffect.AddAlphaKey(0.0, 0.0)
-		pEffect.AddAlphaKey(1.0, 0.0)
+		pEffect.AddAlphaKey(0.0, 1.0)
+		pEffect.AddAlphaKey(1.0, 1.0)
 
 		pEffect.AddSizeKey(0.0, 0.8 * fSize)
 		pEffect.AddSizeKey(0.2, 1.0 * fSize)
@@ -901,14 +985,14 @@ def CreateDetachedElectricExplosion(fRed, fGreen, fBlue, fSize, fLifeTime, sFile
 
 		return pEffect
 	except:
-		print "B5Jumpspace TravellingMethod: error while calling CreateDetachedElectricExplosion:"
+		print "nBSGDimensionalJump TravellingMethod: error while calling CreateDetachedElectricExplosion:"
 		traceback.print_exc()
 		pEffect = None
 
 	return pEffect
 
-# Aux function. Create flash effect on a ship.
-def B5JumpspaceFlash(pAction, pShipID, sType, sRace, sparkSize=5, sFile = 'scripts/Custom/TravellingMethods/GFX/JumpspaceFlashAlternate.tga'):
+# Aux function. Create flash effect on a ship. TO-DO UPDATE
+def nBSGDimensionalJumpFlash(pAction, pShipID, sType, sRace, sparkSize=5, sFile = 'scripts/Custom/TravellingMethods/GFX/nBSGDimensionalJumpFlashAlternate.tga'):
 	pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), pShipID)
 	if not pShip:
 		return 0
@@ -917,10 +1001,10 @@ def B5JumpspaceFlash(pAction, pShipID, sType, sRace, sparkSize=5, sFile = 'scrip
 
 	fEffectList = []
 	try:
-		if HasPhasedJumpspace(pShip):
+		if HasPhasednBSGDimensionalJumpDrive(pShip):
 			return 0
 
-		elif HasSigmaJumpspace(pShip):
+		elif HasCloakedJumpSystem(pShip): # TO-DO ADJUST THIS
 			if sType == "Enter Warp":
 				sFile = "scripts/Custom/TravellingMethods/GFX/SigmaJumpspaceFlash.tga"
 			else:
@@ -928,12 +1012,12 @@ def B5JumpspaceFlash(pAction, pShipID, sType, sRace, sparkSize=5, sFile = 'scrip
 
 		else:
 			if sType == "Enter Warp":
-				sFile = "scripts/Custom/TravellingMethods/GFX/JumpspaceFlashAlternate.tga"
+				sFile = "scripts/Custom/TravellingMethods/GFX/SigmaJumpspaceFlash.tga"
 			else:
-				sFile = "scripts/Custom/TravellingMethods/GFX/JumpspaceFlash.tga"
+				sFile = "scripts/Custom/TravellingMethods/GFX/SigmaJumpspaceFlash.tga"
 
 		if sparkSize > 0:
-			colorKey = [255.0 / 255, 255.0 / 255, 255.0 / 255]
+			colorKey = [255.0 / 255, 155.0 / 255, 55.0 / 255]
 
 			LoadGFX(4, 4, sFile)
 
@@ -948,11 +1032,11 @@ def B5JumpspaceFlash(pAction, pShipID, sType, sRace, sparkSize=5, sFile = 'scrip
 					if fEffect:
 						fEffectList.append(fEffect)
 			except:
-				print "B5Jumpspace TravellingMethod: error while calling B5JumpspaceEnterFlash:"
+				print "nBSGDimensionalJump TravellingMethod: error while calling nBSGDimensionalJumpEnterFlash:"
 				traceback.print_exc()
 
 	except:
-		print "B5Jumpspace TravellingMethod: error while calling B5JumpspaceEnterFlash:"
+		print "nBSGDimensionalJump TravellingMethod: error while calling nBSGDimensionalJumpEnterFlash:"
 		traceback.print_exc()
 		fEffect = None
 
@@ -978,22 +1062,22 @@ def removeTractorISITowInfo(pShipID, pInstance=None):
 		
 	if pInstance:
 		try:
-			if hasattr(pInstance, "BSJumpspaceISIvTowPosition"):
-				del pInstance.BSJumpspaceISIvTowPosition
+			if hasattr(pInstance, "nBSGDimensionalJumpDriveISIvTowPosition"):
+				del pInstance.nBSGDimensionalJumpDriveISIvTowPosition
 		except:
-			print "BSJumpspace: Error while calling removeTractorISITowInfo"
+			print "nBSGDimensionalJumpDrive: Error while calling removeTractorISITowInfo"
 			traceback.print_exc()
 		try:
-			if hasattr(pInstance, "BSJumpspaceISITowee"):
-				del pInstance.BSJumpspaceISITowee
+			if hasattr(pInstance, "nBSGDimensionalJumpDriveISITowee"):
+				del pInstance.nBSGDimensionalJumpDriveISITowee
 		except:
-			print "BSJumpspace: Error while calling removeTractorISITowInfo"
+			print "nBSGDimensionalJumpDrive: Error while calling removeTractorISITowInfo"
 			traceback.print_exc()
 		try:
-			if hasattr(pInstance, "BSJumpspaceISIbTractorStat"):
-				del pInstance.BSJumpspaceISIbTractorStat
+			if hasattr(pInstance, "nBSGDimensionalJumpDriveISIbTractorStat"):
+				del pInstance.nBSGDimensionalJumpDriveISIbTractorStat
 		except:
-			print "BSJumpspace: Error while calling removeTractorISITowInfo"
+			print "nBSGDimensionalJumpDrive: Error while calling removeTractorISITowInfo"
 			traceback.print_exc()
 
 	return 0
@@ -1036,16 +1120,16 @@ def SetupTowingI(ShipID):
 		if pTarget.GetWorldLocation() == None:
 			return 0
 
-		pInstance.BSJumpspaceISIvTowPosition = pTarget.GetWorldLocation()
-		pInstance.BSJumpspaceISIvTowPosition.Subtract( pShip.GetWorldLocation() )
-		pInstance.BSJumpspaceISIvTowPosition.MultMatrixLeft( pShip.GetWorldRotation().Transpose() )
+		pInstance.nBSGDimensionalJumpDriveISIvTowPosition = pTarget.GetWorldLocation()
+		pInstance.nBSGDimensionalJumpDriveISIvTowPosition.Subtract( pShip.GetWorldLocation() )
+		pInstance.nBSGDimensionalJumpDriveISIvTowPosition.MultMatrixLeft( pShip.GetWorldRotation().Transpose() )
 
-		pInstance.BSJumpspaceISITowee = pTarget.GetObjID()
+		pInstance.nBSGDimensionalJumpDriveISITowee = pTarget.GetObjID()
 
-		pInstance.BSJumpspaceISIbTractorStat = 1
+		pInstance.nBSGDimensionalJumpDriveISIbTractorStat = 1
 
 	except:
-		print "BSJumpspace: Error while calling SetupTowingI"
+		print "nBSGDimensionalJumpDrive: Error while calling SetupTowingI"
 		traceback.print_exc()
 
 	return 0
@@ -1061,7 +1145,7 @@ def MaintainTowingActionI(pAction, pShipID):
 	if not pInstance:
 		return 0
 	try:
-		if hasattr(pInstance, "BSJumpspaceISIbTractorStat") and pInstance.BSJumpspaceISIbTractorStat == 1:
+		if hasattr(pInstance, "nBSGDimensionalJumpDriveISIbTractorStat") and pInstance.nBSGDimensionalJumpDriveISIbTractorStat == 1:
 			pTractor = pShip.GetTractorBeamSystem()
 			if pTractor == None:
 				# ship has no tractor beam... what in the blazes?!?
@@ -1079,17 +1163,17 @@ def MaintainTowingActionI(pAction, pShipID):
 				# no problems will occur, and the process of towing a ship thru travel goes smoothly
 				pTractor.SetMode(App.TractorBeamSystem.TBS_TOW)
 
-			if not hasattr(pInstance, "BSJumpspaceISITowee"):
+			if not hasattr(pInstance, "nBSGDimensionalJumpDriveISITowee"):
 				return 0
 
-			targetID = pInstance.BSJumpspaceISITowee
+			targetID = pInstance.nBSGDimensionalJumpDriveISITowee
 			pTempTargetAux = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), targetID)
 			if not pTempTargetAux:
 				return 0
 
 			# Update/Maintain the towee's position and speed with the tower.
 			vPosition = App.TGPoint3()
-			vPosition.Set( pInstance.BSJumpspaceISIvTowPosition )
+			vPosition.Set( pInstance.nBSGDimensionalJumpDriveISIvTowPosition )
 			vPosition.MultMatrixLeft( pShip.GetWorldRotation() )
 			vPosition.Add( pShip.GetWorldLocation() )
 			pTempTargetAux.SetTranslate(vPosition)
@@ -1118,7 +1202,7 @@ def MaintainTowingActionI(pAction, pShipID):
 				# self isn't tractoring anymore, so resume tractoring on the Towee
 				pTractor.StartFiring(pTempTargetAux, vOffset)
 	except:
-		print "BSJumpspace: Error while calling MaintainTowingActionI"
+		print "nBSGDimensionalJumpDrive: Error while calling MaintainTowingActionI"
 		traceback.print_exc()
 
 	return 0
@@ -1135,10 +1219,10 @@ def EngageSeqTractorCheckI(pAction, pShipID):
 	if not pInstance:
 		return 0
 
-	if hasattr(pInstance, "BSJumpspaceISIbTractorStat") and pInstance.BSJumpspaceISIbTractorStat == 1 and hasattr(pInstance, "BSJumpspaceISITowee") and pInstance.BSJumpspaceISITowee != None:
+	if hasattr(pInstance, "nBSGDimensionalJumpDriveISIbTractorStat") and pInstance.nBSGDimensionalJumpDriveISIbTractorStat == 1 and hasattr(pInstance, "nBSGDimensionalJumpDriveISITowee") and pInstance.nBSGDimensionalJumpDriveISITowee != None:
 		# hide the towee
 
-		pToweeShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), pInstance.BSJumpspaceISITowee)
+		pToweeShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), pInstance.nBSGDimensionalJumpDriveISITowee)
 		if pToweeShip:
 			pToweeShip.SetHidden(1)
 
@@ -1156,13 +1240,11 @@ def EngageSeqTractorCheckI(pAction, pShipID):
 			pToweeShip.UpdateNodeOnly()
 	return 0
 
-# Some auxiliar global variables to allow set change and better sounds
-myGlobalpSet = None
-myGlobalAISet = None
-pJumpspaceEngineSound = None
+# Some auxiliar global variables to allow set change and better sounds #TO-DO REMOVE UNECESSARY ONES
+pnBSGDimensionalJumpDriveEngineSound = None
 
 # An aux class and its instance.
-class WhyMissionLibGetsError:
+class WhyMissionLibGetsError: #TO-DO REMOVE UNECESSARY ONES
 	def __init__(self, name):
 		self.pEventHandler = App.TGPythonInstanceWrapper()
 		self.pEventHandler.SetPyWrapper(self)
@@ -1184,11 +1266,11 @@ class WhyMissionLibGetsError:
 		App.g_kEventManager.RemoveBroadcastHandler(Foundation.TriggerDef.ET_FND_CREATE_PLAYER_SHIP, self.pEventHandler, "AnObjectDying")
 
 	def CallNextHandler(self, pEvent):
-		return	
+		return
 
 basicListener = WhyMissionLibGetsError("Lennier is listening")
 
-# An aux function
+# An aux function #TO-DO REMOVE UNECESSARY ONES
 def AnObjectDying(TGObject, pEvent):
 	# Check and see if the mission is terminating
 	debug(__name__ + ", ObjectDying")
@@ -1215,38 +1297,38 @@ def AnObjectDying(TGObject, pEvent):
 			try:
 				defineTravelSpaceNoise(None, 0)
 			except:
-				print "Error while shutting up the global B5 Jumpspace noise:"
+				print "Error while shutting up the global B5 nBSGDimensionalJumpDrive noise:"
 				traceback.print_exc()
 
 	# All done, pass the event on
 	TGObject.CallNextHandler(pEvent)
 	return 0
 
-# An aux function.
+# An aux function. #TO-DO REMOVE UNECESSARY ONES
 def defineTravelSpaceNoise(pAction, engage=1):
 	debug(__name__ + ", defineTravelSpaceNoise")
-	global pJumpspaceEngineSound
-	if pJumpspaceEngineSound == None:
-		pJumpspaceEngineSoundAux = None
+	global pnBSGDimensionalJumpDriveEngineSound
+	if pnBSGDimensionalJumpDriveEngineSound == None:
+		pnBSGDimensionalJumpDriveEngineSoundAux = None
 		try:
-			pJumpspaceEngineSoundAux = App.TGSound_Create("scripts/Custom/TravellingMethods/SFX/JumpspaceSpaceNoise.wav", "Babylon5JumpspaceStormSound", 0)
-			pJumpspaceEngineSoundAux.SetSFX(0) 
-			pJumpspaceEngineSoundAux.SetInterface(1)
-			pJumpspaceEngineSoundAux.SetLooping(1)
+			pnBSGDimensionalJumpDriveEngineSoundAux = App.TGSound_Create("scripts/Custom/TravellingMethods/SFX/JumpspaceSpaceNoise.wav", "BSG2003DimensionalJumpStormSound", 0)
+			pnBSGDimensionalJumpDriveEngineSoundAux.SetSFX(0) 
+			pnBSGDimensionalJumpDriveEngineSoundAux.SetInterface(1)
+			pnBSGDimensionalJumpDriveEngineSoundAux.SetLooping(1)
 		except:
-			pJumpspaceEngineSoundAux = None
+			pnBSGDimensionalJumpDriveEngineSoundAux = None
 			print "Error on ", __name__, " defineTravelSpaceNoise:"
 			traceback.print_exc()
 
-		if pJumpspaceEngineSoundAux != None:
-			pJumpspaceEngineSound = pJumpspaceEngineSoundAux
+		if pnBSGDimensionalJumpDriveEngineSoundAux != None:
+			pnBSGDimensionalJumpDriveEngineSound = pnBSGDimensionalJumpDriveEngineSoundAux
 
-	if pJumpspaceEngineSound == None:
+	if pnBSGDimensionalJumpDriveEngineSound == None:
 		return 0
 
 	if engage == 0:
 		try:
-			App.g_kSoundManager.StopSound("Babylon5JumpspaceStormSound")
+			App.g_kSoundManager.StopSound("BSG2003DimensionalJumpStormSound")
 
 			#try:
 			#	basicListener.StopListening()
@@ -1259,7 +1341,7 @@ def defineTravelSpaceNoise(pAction, engage=1):
 			traceback.print_exc()
 	else:
 		try:
-			App.g_kSoundManager.PlaySound("Babylon5JumpspaceStormSound")
+			App.g_kSoundManager.PlaySound("BSG2003DimensionalJumpStormSound")
 
 			try:
 				basicListener.BeginListening()
@@ -1302,7 +1384,7 @@ def SetupSequenceISI(pShip=None):
 
 	pInstance = findShipInstance(pShip)
 
-	hasTractorReady = pInstance != None and hasattr(pInstance, "BSJumpspaceISIbTractorStat") and (pInstance.BSJumpspaceISIbTractorStat == 1)
+	hasTractorReady = pInstance != None and hasattr(pInstance, "nBSGDimensionalJumpDriveISIbTractorStat") and (pInstance.nBSGDimensionalJumpDriveISIbTractorStat == 1)
 
 	# Get the destination set name from the module name, if applicable.
 	pPlayerSet = pShip.GetContainingSet()
@@ -1334,9 +1416,9 @@ def SetupSequenceISI(pShip=None):
 		sRace = ""
 
 	myBoosting = 200.0
-	if HasPhasedJumpspace(pShip):
+	if HasPhasednBSGDimensionalJumpDrive(pShip):
 		myBoosting = 50.0
-	elif HasSigmaJumpspace(pShip):
+	elif HasCloakedJumpSystem(pShip):
 		myBoosting = 0.0
 		
 	if (pPlayer != None) and (pShipID == pPlayer.GetObjID()):
@@ -1353,7 +1435,7 @@ def SetupSequenceISI(pShip=None):
 	pWarpAction0 = App.TGScriptAction_Create(__name__, "ConditionalCloak", pShipID, 0)
 	pEngageWarpSeq.AddAction(pWarpAction0, None, fEntryDelayTime + 0.2)
 
-	pWarpSoundAction1 = App.TGScriptAction_Create(__name__, "PlayB5JumpspaceSoundI", pShipID, "Enter Warp", sRace)
+	pWarpSoundAction1 = App.TGScriptAction_Create(__name__, "PlaynBSGDimensionalJumpSoundI", pShipID, "Enter Warp", sRace)
 	pEngageWarpSeq.AddAction(pWarpSoundAction1, None, fEntryDelayTime + 0.2)
 	
 	pBoostAction = App.TGScriptAction_Create(sCustomActionsScript, "BoostShipSpeed", pShipID, 1, myBoosting)
@@ -1379,7 +1461,7 @@ def SetupSequenceISI(pShip=None):
 		fTimeToFlash = fCount + 0.25
 
 	# Create the warp flash.
-	pFlashAction1 = App.TGScriptAction_Create(__name__, "B5JumpspaceFlash", pShipID, "Enter Warp", sRace)
+	pFlashAction1 = App.TGScriptAction_Create(__name__, "nBSGDimensionalJumpFlash", pShipID, "Enter Warp", sRace)
 	pEngageWarpSeq.AddAction(pFlashAction1, None, fTimeToFlash * 0.8)
 
 	# Hide the ship.
@@ -1419,26 +1501,18 @@ def SetupSequenceISI(pShip=None):
 	pHideShip = App.TGScriptAction_Create(sCustomActionsScript, "HideShip", pShipID, 1)
 	pExitWarpSeq.AddAction(pHideShip, None)
 
-	# Give it a little reverse boost (to avoid collisions)
-	pBoostAAction = App.TGScriptAction_Create(sCustomActionsScript, "BoostShipSpeed", pShipID, 1, -2 * myBoosting)
-	pExitWarpSeq.AddAction(pBoostAAction, pHideShip)
-
-	# Make the ship return to normal speed.
-	pUnBoostAAction = App.TGScriptAction_Create(sCustomActionsScript, "BoostShipSpeed", pShip.GetObjID(), -1, 1.0)
-	pExitWarpSeq.AddAction(pUnBoostAAction, pBoostAAction, 0.6)
-
 	# Extra added
 	pWarpActionR0 = App.TGScriptAction_Create(__name__, "ConditionalCloak", pShipID, 1)
 	pExitWarpSeq.AddAction(pWarpActionR0, None)
 
 	# Check for towee
 	if hasTractorReady == 1:
-		pHideTowee = App.TGScriptAction_Create(sCustomActionsScript, "HideShip", pInstance.BSJumpspaceISITowee, 1)
+		pHideTowee = App.TGScriptAction_Create(sCustomActionsScript, "HideShip", pInstance.nBSGDimensionalJumpDriveISITowee, 1)
 		pExitWarpSeq.AddAction(pHideTowee, pHideShip)
 
 	# Create the warp flash.
-	pFlashAction2 = App.TGScriptAction_Create(__name__, "B5JumpspaceFlash", pShipID, "Exit Warp", sRace)
-	pExitWarpSeq.AddAction(pFlashAction2, pUnBoostAAction, 0.65)
+	pFlashAction2 = App.TGScriptAction_Create(__name__, "nBSGDimensionalJumpFlash", pShipID, "Exit Warp", sRace)
+	pExitWarpSeq.AddAction(pFlashAction2, pHideShip, 0.65)
 
 	# Un-Hide the ship
 	pUnHideShip = App.TGScriptAction_Create(sCustomActionsScript, "HideShip", pShipID, 0)
@@ -1452,7 +1526,7 @@ def SetupSequenceISI(pShip=None):
 	## REMEMBER: any changes in the time of this sequence will also require a re-check of this part, to make sure
 	##           we're making the right amount of MaintainTowing actions.
 	if hasTractorReady == 1:
-		pUnHideTowee = App.TGScriptAction_Create(sCustomActionsScript, "HideShip", pInstance.BSJumpspaceISITowee, 0)
+		pUnHideTowee = App.TGScriptAction_Create(sCustomActionsScript, "HideShip", pInstance.nBSGDimensionalJumpDriveISITowee, 0)
 		pExitWarpSeq.AddAction(pUnHideTowee, pUnHideShip)
 		fCount = 0.0
 		while fCount < 3.6:
@@ -1469,12 +1543,12 @@ def SetupSequenceISI(pShip=None):
 	pExitWarpSeq.AddAction(pBoostAction, pUnHideShip, 0.1)
 
 	# Play the vushhhhh of exiting warp
-	pWarpSoundAction2 = App.TGScriptAction_Create(__name__, "PlayB5JumpspaceSoundI", pShipID, "Exit Warp", sRace)
+	pWarpSoundAction2 = App.TGScriptAction_Create(__name__, "PlaynBSGDimensionalJumpSoundI", pShipID, "Exit Warp", sRace)
 	pExitWarpSeq.AddAction(pWarpSoundAction2, pBoostAction)
 	
 	# Make the ship return to normal speed.
 	pUnBoostAction = App.TGScriptAction_Create(sCustomActionsScript, "BoostShipSpeed", pShipID, 0, 1.0)
-	pExitWarpSeq.AddAction(pUnBoostAction, pWarpSoundAction2, 1.0)
+	pExitWarpSeq.AddAction(pUnBoostAction, pWarpSoundAction2, 2.0)
 
 	# IMPORTANT: These three actions below are an extra added for intra-system intercept since we need to ensure the cutscene really ends and control is returned to the player.
 	# This could be handled on the main AlternateSubModelFTL script but I'm leaving it here to allow better customization
@@ -1522,7 +1596,7 @@ def SetupSequence(self):
 	#########
 	# NOTE:  ALL tractor related actions that are used here for the engaging and for the exiting
 	#        warp sequences ARE REQUIRED if you want to be able to succesfully (and beautifully)
-	#	   tractor ships thru your travel. (in this example, thru Jumpspace)
+	#	   tractor ships thru your travel. (in this example, thru nBSGDimensionalJumpDrive)
 	################################################################################
 
 	debug(__name__ + ", SetupSequence")
@@ -1576,11 +1650,14 @@ def SetupSequence(self):
 	except:
 		sRace = ""
 
-	myBoosting = 200.0
-	if HasPhasedJumpspace(pShip):
+	myBoosting = 5.0
+	if HasPhasednBSGDimensionalJumpDrive(pShip):
 		myBoosting = 50.0
-	elif HasSigmaJumpspace(pShip):
+	elif HasCloakedJumpSystem(pShip):
 		myBoosting = 0.0
+	#TO-DO ADD SIZE REDUCTION AND RE-ESCALE
+	#TO-DO ADD THE COOLDOWN THING
+	#TO-DO CREATEA A FUNCTION THAT CHECKS SHIPS AROUND AND DAMAGES THEM SLIGHTLY
 		
 	if (pPlayer != None) and (pShipID == pPlayer.GetObjID()):
 		fEntryDelayTime = fEntryDelayTime + 0.1
@@ -1589,7 +1666,7 @@ def SetupSequence(self):
 		pCinematicStart = App.TGScriptAction_Create("Actions.CameraScriptActions", "StartCinematicMode", 0)
 		pEngageWarpSeq.AddAction(pCinematicStart, None)
 
-		pWarpSoundAction0 = App.TGScriptAction_Create(__name__, "PlayB5JumpspaceSoundI", pShipID, "Enter Warp", sRace)
+		pWarpSoundAction0 = App.TGScriptAction_Create(__name__, "PlaynBSGDimensionalJumpSoundI", pShipID, "Enter Warp", sRace)
 		pEngageWarpSeq.AddAction(pWarpSoundAction0, None, 0)
 
 		pDisallowInput = App.TGScriptAction_Create("MissionLib", "RemoveControl")
@@ -1599,7 +1676,7 @@ def SetupSequence(self):
 	pWarpAction0 = App.TGScriptAction_Create(__name__, "ConditionalCloak", pShipID, 0)
 	pEngageWarpSeq.AddAction(pWarpAction0, None, fEntryDelayTime + 0.2)
 
-	pWarpSoundAction1 = App.TGScriptAction_Create(__name__, "PlayB5JumpspaceSoundI", pShipID, "Enter Warp", sRace)
+	pWarpSoundAction1 = App.TGScriptAction_Create(__name__, "PlaynBSGDimensionalJumpSoundI", pShipID, "Enter Warp", sRace)
 	pEngageWarpSeq.AddAction(pWarpSoundAction1, None, fEntryDelayTime + 0.2)
 	
 	pBoostAction = App.TGScriptAction_Create(sCustomActionsScript, "BoostShipSpeed", pShipID, 1, myBoosting)
@@ -1624,7 +1701,7 @@ def SetupSequence(self):
 				break
 
 	# Create the warp flash.
-	pFlashAction1 = App.TGScriptAction_Create(__name__, "B5JumpspaceFlash", pShipID, "Enter Warp", sRace)
+	pFlashAction1 = App.TGScriptAction_Create(__name__, "nBSGDimensionalJumpFlash", pShipID, "Enter Warp", sRace)
 	pEngageWarpSeq.AddAction(pFlashAction1, None, fTimeToFlash * 0.8)
 
 	# Hide the ship.
@@ -1632,14 +1709,14 @@ def SetupSequence(self):
 	pEngageWarpSeq.AddAction(pHideShip, pFlashAction1, fTimeToFlash * 0.2)
 
 	pUnBoostAction = App.TGScriptAction_Create(sCustomActionsScript, "BoostShipSpeed", pShipID, 0, 1.0)
-	pEngageWarpSeq.AddAction(pUnBoostAction, pHideShip)
+	pEngageWarpSeq.AddAction(pUnBoostAction, pHideShip, 2.4)
 	
 	pCheckTowing = App.TGScriptAction_Create(sCustomActionsScript, "EngageSeqTractorCheck", pWS)
 	pEngageWarpSeq.AddAction(pCheckTowing, pUnBoostAction, 0.25)
 
 	# An extra for checks
 	pWarpActionN = App.TGScriptAction_Create(__name__, "ConditionalDecloak", pShipID, 1)
-	pEngageWarpSeq.AddAction(pWarpActionN, pHideShip, 2.4)
+	pEngageWarpSeq.AddAction(pWarpActionN, pHideShip)
 
 	if (pPlayer != None) and (pShipID == pPlayer.GetObjID()):
 		pWarpSoundActionMid = App.TGScriptAction_Create(__name__, "defineTravelSpaceNoise", 1)
@@ -1682,8 +1759,8 @@ def SetupSequence(self):
 			pHideTowee = App.TGScriptAction_Create(sCustomActionsScript, "HideShip", pWS.Travel.Towee.GetObjID(), 1)
 			pExitWarpSeq.AddAction(pHideTowee, pHideShip)
 
-		# Create the warp flash.
-		pFlashAction2 = App.TGScriptAction_Create(__name__, "B5JumpspaceFlash", pShipID, "Exit Warp", sRace)
+		# Create the warp flash. # TO-DO ADD SOMETHING HERE THAT ADDS COOLDOWN AND REMOVES FTL STRETCH
+		pFlashAction2 = App.TGScriptAction_Create(__name__, "nBSGDimensionalJumpFlash", pShipID, "Exit Warp", sRace)
 		pExitWarpSeq.AddAction(pFlashAction2, pHideShip, 0.7)
 
 		# Un-Hide the ship
@@ -1714,7 +1791,7 @@ def SetupSequence(self):
 		pExitWarpSeq.AddAction(pBoostAction, pUnHideShip, 0.1)
 
 		# Play the vushhhhh of exiting warp
-		pWarpSoundAction2 = App.TGScriptAction_Create(__name__, "PlayB5JumpspaceSoundI", pShipID, "Exit Warp", sRace)
+		pWarpSoundAction2 = App.TGScriptAction_Create(__name__, "PlaynBSGDimensionalJumpSoundI", pShipID, "Exit Warp", sRace)
 		pExitWarpSeq.AddAction(pWarpSoundAction2, pBoostAction)
 	
 		# Make the ship return to normal speed.
@@ -1805,49 +1882,19 @@ def GetExitedTravelEventsI(pShip):
 ########
 def GetTravelSetToUse(self, manual=0):
 	debug(__name__ + ", GetTravelSetToUse")
-	global myGlobalpSet, myGlobalAISet
 	try:
 		import Custom.GalaxyCharts.Traveler
-		import Custom.GalaxyCharts.TravelerSystems.JumpspaceTunnelTravelSet
-		import Custom.GalaxyCharts.TravelerSystems.AIJumpspaceTunnelTravelSet
 		pSet = None
-		if manual == 1:
-			if myGlobalpSet == None:
-				myGlobalpSet = Custom.GalaxyCharts.TravelerSystems.JumpspaceTunnelTravelSet.Initialize()
-			if myGlobalAISet == None:
-				myGlobalAISet = Custom.GalaxyCharts.TravelerSystems.AIJumpspaceTunnelTravelSet.Initialize()	
 		if self.IsPlayer == 1:
-			if myGlobalpSet == None:
-				try:
-					myGlobalpSet = Custom.GalaxyCharts.TravelerSystems.JumpspaceTunnelTravelSet.Initialize()
-					self.Logger.LogString(" -Initialized Jumpspace Tunnel Travel Set")
-				except:
-					print "ERROR on GetTravelSetToUse: "
-					traceback.print_exc()
-				#self.Logger.LogString(" -Initialized Jumpspace Tunnel Travel Set")
-			pSet = myGlobalpSet #Custom.GalaxyCharts.Traveler.Travel.pJumpspaceTunnelTravelSet
+			pSet = Custom.GalaxyCharts.Traveler.Travel.pTravelSet
 		elif self.IsPlayer == 0 and self.IsAIinPlayerRoute == 1:
-			if myGlobalpSet == None:
-				try:
-					myGlobalpSet = Custom.GalaxyCharts.TravelerSystems.JumpspaceTunnelTravelSet.Initialize()
-					self.Logger.LogString(" -Initialized Jumpspace Tunnel Travel Set")
-				except:
-					print "ERROR on GetTravelSetToUse: "
-					traceback.print_exc()
-				#self.Logger.LogString(" -Initialized Jumpspace Tunnel Travel Set")
-			pSet = myGlobalpSet #Custom.GalaxyCharts.Traveler.Travel.pJumpspaceTunnelTravelSet
+			pSet = Custom.GalaxyCharts.Traveler.Travel.pTravelSet
 		elif self.IsPlayer == 0 and self.IsAIinPlayerRoute == 0:
-			if myGlobalAISet == None:
-				try:
-					myGlobalAISet = Custom.GalaxyCharts.TravelerSystems.AIJumpspaceTunnelTravelSet.Initialize()
-					self.Logger.LogString(" -Initialized AI Jumpspace Tunnel Travel Set")
-				except:
-					print "ERROR on GetTravelSetToUse: "
-					traceback.print_exc()
-			pSet = myGlobalAISet #Custom.GalaxyCharts.Traveler.Travel.pAIJumpspaceTunnelTravelSet
+			pSet = Custom.GalaxyCharts.Traveler.Travel.pAITravelSet
 		return pSet
 	except:
 		self._LogError("GetTravelSetToUse")
+
 	return None
 
 ########
@@ -1856,14 +1903,13 @@ def GetTravelSetToUse(self, manual=0):
 # travelling faster than the speed of light.
 # must return a float  (like 1.0)
 ########
-def ConvertSpeedAmount(fSpeed):
+def ConvertSpeedAmount(fSpeed): #TO-DO ADJUST
 	debug(__name__ + ", ConvertSpeedAmount")
 
-	baseSpeed = 9.6
+	baseSpeed = 32 * 5 * 80.0
 	mediumSpeed = 5.0
-	fFacA = 2.87                ##### Do Not Change These Values #####
-	fFacB = 4.0                 ##### Do Not Change These Values #####
-	speed = ((math.pow(baseSpeed, (10.0/fFacA)) + math.pow((10.0-baseSpeed), (-11.0/fFacB)))) * math.pow((fSpeed/mediumSpeed), 4)
+	AfactIs = 1.0
+	speed = baseSpeed * math.pow((fSpeed/mediumSpeed), 4) * math.pow(20, (fSpeed - mediumSpeed) * AfactIs) # Ok so the Cylons required 10 jumps to go from Galactica to Caprica - while Battlestar Galactica required 200 - that's 20 times faster. I jsut have to make their warp factors so the Cylons are 1 step further from the Colonials
 
 	return speed
 
@@ -1902,8 +1948,8 @@ def GetActualMaxSpeed(self):
 	else:
 		fPower = self.AIwarpPower
 	fAMWS = (fRealMaxSpeed * fPower) - (fPower - 1.0)
-	if fAMWS > 9.99:
-		fAMWS = 9.99
+	if fAMWS > 10.0:
+		fAMWS = 10.0
 	return fAMWS
 
 ########
@@ -1923,8 +1969,8 @@ def GetActualCruiseSpeed(self):
 	else:
 		fPower = self.AIwarpPower
 	fACWS = (fRealCruiseSpeed * fPower) - (fPower - 1.0)
-	if fACWS > 9.99:
-		fACWS = 9.99
+	if fACWS > 10.0:
+		fACWS = 10.0
 	return fACWS
 
 ########
@@ -1935,7 +1981,9 @@ def GetActualCruiseSpeed(self):
 def GetDegradationSystems(self):
 	debug(__name__ + ", GetDegradationSystems")
 	pWarpEngines = self.Ship.GetWarpEngineSubsystem()
-	return [ pWarpEngines ]
+	pHull = self.Ship.GetHull()
+	pPower = self.Ship.GetPowerSubsystem()
+	return [ pWarpEngines, pHull, pPower]
 
 ########
 # Method to return the list of coordinates (points in space) in this set which the ship can activate this travelling method from.
