@@ -1,6 +1,6 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
-# 4th September 2024, by Alex SL Gato (CharaToLoki)
+# 8th September 2024, by Alex SL Gato (CharaToLoki)
 #         Based on SGOriBeamWeapon and BorgAdaptation.py by Alex SL Gato, which were based on the Foundation import function by Dasher; the Shield.py scripts and KM Armour scripts and FoundationTechnologies team's PhasedTorp.py
 #         Also based on ATPFunctions by Apollo.
 #################################################################################################################
@@ -10,7 +10,7 @@
 #
 # Start on 2:
 # This tech makes ships gain Ori Beam tech, which will make the same damage from "phasers" regardless of distance, by creating a torp with a trail. It still makes beam yields variable to 3 damage-dealing status with the phaser level slider or button: full-power (100%), half-power (>= 50%) and fraction power (<50%). This technology came to mind to properly fix that issue that made the battles on STBC with the Ori beams either too overpowered when at very close range, or extremely underpowered everywhere else.
-# No add it, just add to your Custom/Ships/shipFileName.py this:
+# To add it, just add to your Custom/Ships/shipFileName.py this:
 """
 Foundation.ShipDef.Ambassador.dTechs = {
 	"SG Ori Beams Weapon": {"HullDmgMultiplier": 1.0, "ShieldDmgMultiplier": 1.0, "Beams": ["Beam name 1", "Beam name 2"]},
@@ -122,12 +122,18 @@ import nt
 import string
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-            "Version": "0.16",
+            "Version": "0.2",
             "License": "LGPL",
             "Description": "Read the small title above for more info"
             }
 # A. GENERAL BASIC CONFIGURATION
 # Some generic info that would affect mostly everyone
+g_FIRED = 0
+g_HIT = 1
+g_DMG_NEGIGLIBLE = 0.001 # I decided to get rid of pure immunities that dealt 0 dmg since I actually want the weapon to be fired and hit, even if it deals next to no damage
+g_mod = "Tactical.Projectiles.SGOriBeamDummy" # This torpedo was made so Automated Point Defence scripts stop harrasing us
+torpImportedInfo = None
+g_torpImportedSpeed = 60.0
 OriBeamsGenericShieldDamageMultiplier = 300.0 # Required low damage with high multiplier to prevent possible bleedthrough issues.
 
 OriBeamsHullDamageMultiplier = 300.0 # Because we may want the beam to take down an unupgraded BC-304 shields in 2-3 shots, but then instantly kill that vessel if the hull is hit, we need two separate multipliers.
@@ -275,13 +281,13 @@ try:
 	from ftb.Tech.ATPFunctions import *
 	from math import *
 
-	myTrailsPlugin = "Tactical.Projectiles.trails.OriBeam"
-	try:
-		oriBeamTrail = __import__(myTrailsPlugin, globals(), locals(), ["legacyImmunity", "interactionShieldBehaviour", "interactionHullBehaviour"])
-	except:
-		oriBeamTrail = None
-		print __name__, "; seems that we are missing OriBeam trail at ", myTrailsPlugin
-		traceback.print_exc()
+	#myTrailsPlugin = "Tactical.Projectiles.trails.OriBeam"
+	#try:
+	#	oriBeamTrail = __import__(myTrailsPlugin, globals(), locals(), ["legacyImmunity", "interactionShieldBehaviour", "interactionHullBehaviour"])
+	#except:
+	#	oriBeamTrail = None
+	#	print __name__, "; seems that we are missing OriBeam trail at ", myTrailsPlugin
+	#	traceback.print_exc()
 
 	# based on the FedAblativeArmour.py script, a fragment probably imported from ATP Functions by Apollo
 	def NiPoint3ToTGPoint3(p, factor = 1.0):
@@ -315,7 +321,7 @@ try:
 		return kCopy
 
 	#NetType=Multiplayer.SpeciesToTorp.PHASEDPLASMA
-	def FireTorpFromPointWithVectorAndNetType(kPoint, kVector, pcTorpScriptName, idTarget, pShipID, fSpeed, NetType=torpsNetTypeThatCanPhase, damage=0.1, dmgRd=None, hidden=0, detectCollison= None, TGOffset = None):
+	def FireTorpFromPointWithVectorAndNetType(kPoint, kVector, pcTorpScriptName, idTarget, pShipID, fSpeed, NetType=torpsNetTypeThatCanPhase, damage=0.1, dmgRd=None, hidden=0, detectCollison= None, TGOffset = None, detectCollision = None):
 
 		# This is an slightly altered version of the original definition (MissionLib.py), to suit specific needs
 
@@ -344,6 +350,9 @@ try:
 		else:
 			pTorp.SetTargetOffset(TGOffset)
 		pTorp.SetParent(pShipID)
+
+		#if detectCollision == "None":
+		#	pTorp.SetCollisionFlags(App.ObjectClass.CFB_NO_COLLISIONS)
 
 		# Add the torpedo to the set, and place it at the specified placement.
 		pSet.AddObjectToSet(pTorp, None)
@@ -513,16 +522,22 @@ try:
 		def OneWeaponHit(self, pEvent):
 			debug(__name__ + ", OneWeaponHit")
 			try:
+				pParentTorp = None
+				performAs = g_FIRED
 				if pEvent.GetWeaponType() != pEvent.PHASER:
-					# Future TO-DO it would be nice to just create a torp whose damage is only the powerPercentageWanted and then to that you multiply the base damage or something, to prevent extra damage (or less)
-					#if not pEvent.GetWeaponType() == pEvent.TRACTOR_BEAM:
-					#	pTorp = App.Torpedo_Cast(pEvent.GetSource())
-					#	if pTorp:
-					#		mod = pTorp.GetModuleName() 
-					#		if mod == "Tactical.Projectiles.SGOriBeamDummy":
-					#			# This is a stub, from here we would then calculate damage according to impact and then generate a new torp with proper damage
-					# 
-					return 0
+					# It would be nice to just create a torp whose damage is only the powerPercentageWanted and then to that you multiply the base damage or something, to prevent extra damage (or less)
+					if not pEvent.GetWeaponType() == pEvent.TRACTOR_BEAM:
+						pTorp = App.Torpedo_Cast(pEvent.GetSource())
+						if pTorp:
+							mod = pTorp.GetModuleName() 
+							if mod == g_mod:
+								objId = pTorp.GetTargetID()
+								pParentTorp = App.Torpedo_GetObjectByID(None, objId)
+								if pParentTorp and pParentTorp.GetModuleName() == g_mod:
+									performAs = g_HIT
+								
+					if not performAs == g_HIT:
+						return 0
 
 				# First check we have valid targets and attackers
 				pAttacker = App.ShipClass_Cast(pEvent.GetFiringObject()) # If we use App.ET_WEAPON_HIT, it is this
@@ -530,6 +545,14 @@ try:
 
 				if not pAttacker or not pTarget:
 					return 0
+
+				pWeaponFired = None
+
+				if performAs == g_FIRED:
+					pWeaponFired = App.Weapon_Cast(pEvent.GetSource())
+					if pWeaponFired == None:
+						print __name__, ": no weapon stopped fired obj..."
+						return 0
 
 				attackerID = pAttacker.GetObjID()
 				targetID = pTarget.GetObjID()
@@ -543,219 +566,258 @@ try:
 				pAttackerInstance = findShipInstance(pAttacker)
 				pTargetInstance = findShipInstance(pTarget)
 			
-				if not pAttackerInstance or not pAttackerInstance.__dict__.has_key("SG Ori Beams Weapon"):
+				if not pAttackerInstance:
+					return 0
+				pAttackerInstanceDict = pAttackerInstance.__dict__
+
+				if not pAttackerInstanceDict.has_key("SG Ori Beams Weapon"):
 					return 0
 
+				quickImmune = 0
+				pTargetInstanceDict = None
+				pTargetInstanceDict = None
 				# Then check immunities before doing calculations
 				sScript     = pTarget.GetScript()
 				sShipScript = string.split(sScript, ".")[-1]
 
 				global lImmuneSGOriBeamsWeaponShips # This legacy list goes first - it is to reduce unnecessary calculations
 				if sShipScript in lImmuneSGOriBeamsWeaponShips:
-					return 0
+					quickImmune = 1
+				else:
+					if pTargetInstance:
+						pTargetInstanceDict = pTargetInstance.__dict__
+						if pTargetInstanceDict.has_key('SG Ori Beams Weapon Immune'):
+							if(pEvent.IsHullHit()):
+								if pTargetInstanceDict.has_key('SG Ori Beams Weapon Immune') and (pTargetInstanceDict['SG Ori Beams Weapon Immune'] == 0 or pTargetInstanceDict['SG Ori Beams Weapon Immune'] > 1):
+									quickImmune = 1
+							else:
+								if pTargetInstanceDict.has_key('SG Ori Beams Weapon Immune') and pTargetInstanceDict['SG Ori Beams Weapon Immune'] > 0:
+									quickImmune = 1
 
-				pTargetInstanceDict = None
-				if pTargetInstance:
-					pTargetInstanceDict = pTargetInstance.__dict__
-					if(pEvent.IsHullHit()):
-						 if pTargetInstanceDict.has_key('SG Ori Beams Weapon Immune') and (pTargetInstanceDict['SG Ori Beams Weapon Immune'] == 0 or pTargetInstanceDict['SG Ori Beams Weapon Immune'] > 1):
+				if performAs == g_FIRED:
+					if pAttackerInstanceDict["SG Ori Beams Weapon"].has_key("Beams") and len(pAttackerInstanceDict["SG Ori Beams Weapon"]["Beams"]) > 0:
+						#print "SGOriBeamWeapon: I have beams key, verifying the phaser bank is among them"
+						lBeamNames = pAttackerInstanceDict["SG Ori Beams Weapon"]["Beams"]		
+
+						if not pWeaponFired.GetName() in lBeamNames:
+							#print "SGOriBeamWeapon: cancelling, ship has SGOriBeamWeapon equipped but not for that beam..."
 							return 0
-					else:
-						if pTargetInstanceDict.has_key('SG Ori Beams Weapon Immune') and pTargetInstanceDict['SG Ori Beams Weapon Immune'] > 0:
-							return 0
+					#else:
+					#	print "SGOriBeamWeapon: I do not have beams key, I will assume all phasers have SG Ori Beam weapons ability"
 
-				pWeaponFired = App.Weapon_Cast(pEvent.GetSource())
+					if getChargeTo0(pWeaponFired) < 0.5:
+						setChargeTo0(pWeaponFired)
+						return 0
 
-				if pWeaponFired == None:
-					print "no weapon stopped fired obj..."
-					return 0
+					setChargeTo0(pWeaponFired)
 
-				pAttackerInstanceDict = pAttackerInstance.__dict__
+					####
+					# Since pHitPointE = NiPoint3ToTGPoint3(pEvent.GetWorldHitPoint()) works fine for shields, but is wonky for targeting subsystems in general, we need to do some kind of approximation where we later add a projection of it
+					theOffset =  pAttacker.GetTargetOffsetTG() # This is given on the target's coordinates
+					theOffsetNi = TGPoint3ToNiPoint3(theOffset)
 
-				if pAttackerInstanceDict["SG Ori Beams Weapon"].has_key("Beams") and len(pAttackerInstanceDict["SG Ori Beams Weapon"]["Beams"]) > 0:
-					#print "SGOriBeamWeapon: I have beams key, verifying the phaser bank is among them"
-					lBeamNames = pAttackerInstanceDict["SG Ori Beams Weapon"]["Beams"]		
+					pTargetShipNode = pTarget.GetNiObject()
 
-					if not pWeaponFired.GetName() in lBeamNames:
-						#print "SGOriBeamWeapon: cancelling, ship has SGOriBeamWeapon equipped but not for that beam..."
-						return
-				#else:
-				#	print "SGOriBeamWeapon: I do not have beams key, I will assume all phasers have SG Ori Beam weapons ability"
+					pHitPointONi = App.TGModelUtils_LocalToWorldVector(pTargetShipNode, theOffsetNi)
+					pHitPointO = NiPoint3ToTGPoint3(pHitPointONi, 100.0)
+
+					pWpnPosNi = pWeaponFired.GetWorldLocation()
+					pWpnPos = NiPoint3ToTGPoint3(pWpnPosNi) # We fire from here
+					targetplacement = pTarget.GetWorldLocation() # Target placement
+					#targetplacement.Add(pHitPointO)
+
+					mod = g_mod
+					torpImportedSpeed = g_torpImportedSpeed
+					try:
+						global torpImportedInfo
+						if torpImportedInfo is None:
+							torpImportedInfo = __import__(mod)
+							if hasattr(torpImportedInfo, "GetLaunchSpeed"):
+								torpImportedSpeed = torpImportedInfo.GetLaunchSpeed()
+								primAm = type(torpImportedSpeed)
+								if primAm == type(1) or primAm == type(1.0):
+									global g_torpImportedSpeed
+									g_torpImportedSpeed = torpImportedSpeed
+					except:
+						print "Tactical.Projectiles.SGOriBeamDummy is missing from the install, or similar, we need that to deal damage!"
+						torpImportedInfo = None
+						traceback.print_exc()
+						return 0
+
+					targetplacement = PredictTargetLocation(pTarget, pWeaponFired, targetplacement, torpImportedSpeed, theOffset) # We predict where to fire
+
+					pVec = CopyVector(targetplacement)
+					pVec.Subtract(pWpnPos)
+
+					distTargetSubToMe = pVec.Length()
+
+					pVec.Unitize()
+					pVec.Scale(0.001)
 
 				# Ok now the shot is almost guaranteed, proceed with calculations
-
 				fRadius, fDamage, kPoint = self.EventInformation(pEvent)
 				#if fDamage <= 0.0:
 				#	return
-
-				if getChargeTo0(pWeaponFired) < 0.5:
-					setChargeTo0(pWeaponFired)
-					return 0
-
-				setChargeTo0(pWeaponFired)
 
 				global OriBeamsGenericShieldDamageMultiplier, OriBeamsHullDamageMultiplier
 
 				baseHullMultiplier = 1.0 * OriBeamsHullDamageMultiplier
 				baseShieldMultiplier = 1.0 * OriBeamsGenericShieldDamageMultiplier
+				shouldPassThrough = 0
+				wasHullChanged = 0
 
-				if pAttackerInstanceDict["SG Ori Beams Weapon"].has_key("HullDmgMultiplier") and pAttackerInstanceDict["SG Ori Beams Weapon"]["HullDmgMultiplier"] > 0.0:
-					baseHullMultiplier = baseHullMultiplier * pAttackerInstanceDict["SG Ori Beams Weapon"]["HullDmgMultiplier"]
+				if quickImmune == 1:
+					baseHullMultiplier = g_DMG_NEGIGLIBLE
+					baseShieldMultiplier = g_DMG_NEGIGLIBLE
+				else:
+					if pAttackerInstanceDict["SG Ori Beams Weapon"].has_key("HullDmgMultiplier") and pAttackerInstanceDict["SG Ori Beams Weapon"]["HullDmgMultiplier"] > 0.0:
+						baseHullMultiplier = baseHullMultiplier * pAttackerInstanceDict["SG Ori Beams Weapon"]["HullDmgMultiplier"]
 
-				if pAttackerInstanceDict["SG Ori Beams Weapon"].has_key("ShieldDmgMultiplier") and pAttackerInstanceDict["SG Ori Beams Weapon"]["ShieldDmgMultiplier"] > 0.0:
-					baseShieldMultiplier = baseShieldMultiplier * pAttackerInstanceDict["SG Ori Beams Weapon"]["ShieldDmgMultiplier"]
+					if pAttackerInstanceDict["SG Ori Beams Weapon"].has_key("ShieldDmgMultiplier") and pAttackerInstanceDict["SG Ori Beams Weapon"]["ShieldDmgMultiplier"] > 0.0:
+						baseShieldMultiplier = baseShieldMultiplier * pAttackerInstanceDict["SG Ori Beams Weapon"]["ShieldDmgMultiplier"]
 
 				hullDamageMultiplier = baseHullMultiplier
 				shieldDamageMultiplier = baseShieldMultiplier
-				shouldPassThrough = 0
 
-				wasHullChanged = 0
+				if quickImmune == 0:
+					for item in variableNames.keys():
+						if variableNames[item].has_key("interactionHullBehaviour"): # These are reserved for when the hull has been hit! These are meant to be accumulative, for defenses.
+							hullDamageMultiplier3 = 0
+							shieldDamageMultiplier3 = 0
+							shouldPassThrough3 = 0
+							wasHullChanged3 = 0
+							try:
+								hullDamageMultiplier3, shieldDamageMultiplier3, shouldPassThrough3, wasHullChanged3 = variableNames[item]["interactionHullBehaviour"](attackerID, pAttacker, pAttackerInstance, pAttackerInstanceDict, targetID, pTarget, pTargetInstance, pTargetInstanceDict, sScript, sShipScript, pEvent, hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, wasHullChanged)
+							except:
+								hullDamageMultiplier3 = hullDamageMultiplier
+								shieldDamageMultiplier3 = shieldDamageMultiplier
+								shouldPassThrough3 = shouldPassThrough
+								wasHullChanged3 = wasHullChanged
+								print "Some SGOriBeamsWeapon hull subtech suffered an error"
+								traceback.print_exc()
 
-				for item in variableNames.keys():
-					if variableNames[item].has_key("interactionHullBehaviour"): # These are reserved for when the hull has been hit! These are meant to be accumulative, for defenses.
-						hullDamageMultiplier3 = 0
-						shieldDamageMultiplier3 = 0
-						shouldPassThrough3 = 0
-						wasHullChanged3 = 0
-						try:
-							hullDamageMultiplier3, shieldDamageMultiplier3, shouldPassThrough3, wasHullChanged3 = variableNames[item]["interactionHullBehaviour"](attackerID, pAttacker, pAttackerInstance, pAttackerInstanceDict, targetID, pTarget, pTargetInstance, pTargetInstanceDict, sScript, sShipScript, pEvent, hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, wasHullChanged)
-						except:
-							hullDamageMultiplier3 = hullDamageMultiplier
-							shieldDamageMultiplier3 = shieldDamageMultiplier
-							shouldPassThrough3 = shouldPassThrough
-							wasHullChanged3 = wasHullChanged
-							print "Some SGOriBeamsWeapon hull subtech suffered an error"
-							traceback.print_exc()
+							hullDamageMultiplier = hullDamageMultiplier3
+							shieldDamageMultiplier = shieldDamageMultiplier3
+							shouldPassThrough = shouldPassThrough3
+							wasHullChanged = wasHullChanged3
 
-						hullDamageMultiplier = hullDamageMultiplier3
-						shieldDamageMultiplier = shieldDamageMultiplier3
-						shouldPassThrough = shouldPassThrough3
-						wasHullChanged = wasHullChanged3
+					if wasHullChanged > 0:
+						baseHullMultiplier = hullDamageMultiplier
 
-				if wasHullChanged > 0:
-					baseHullMultiplier = hullDamageMultiplier
+					wasShieldChanged = 0
+					for item in variableNames.keys():
+						if variableNames[item].has_key("interactionShieldBehaviour"): # These are reserved for when the shield has been hit! Also be careful, since these are more likely to stack weaknesses! Preferable to only have one of this type per ship
+							try:
+								hullDamageMultiplier2 = 0
+								shieldDamageMultiplier2 = 0
+								shouldPassThrough2 = 0
+								wasShieldChanged2 = 0			
+								hullDamageMultiplier2, shieldDamageMultiplier2, shouldPassThrough2, wasShieldChanged2 = variableNames[item]["interactionShieldBehaviour"](attackerID, pAttacker, pAttackerInstance, pAttackerInstanceDict, targetID, pTarget, pTargetInstance, pTargetInstanceDict, sScript, sShipScript, pEvent, hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, wasShieldChanged)
+							except:
+								hullDamageMultiplier2 = hullDamageMultiplier
+								shieldDamageMultiplier2 = shieldDamageMultiplier
+								shouldPassThrough2 = shouldPassThrough
+								wasShieldChanged2 = wasShieldChanged
+								print "Some SGOriBeamWeapon shield subtech suffered an error"
+								traceback.print_exc()
 
-				wasShieldChanged = 0
-				for item in variableNames.keys():
-					if variableNames[item].has_key("interactionShieldBehaviour"): # These are reserved for when the shield has been hit! Also be careful, since these are more likely to stack weaknesses! Preferable to only have one of this type per ship
-						try:
-							hullDamageMultiplier2 = 0
-							shieldDamageMultiplier2 = 0
-							shouldPassThrough2 = 0
-							wasShieldChanged2 = 0			
-							hullDamageMultiplier2, shieldDamageMultiplier2, shouldPassThrough2, wasShieldChanged2 = variableNames[item]["interactionShieldBehaviour"](attackerID, pAttacker, pAttackerInstance, pAttackerInstanceDict, targetID, pTarget, pTargetInstance, pTargetInstanceDict, sScript, sShipScript, pEvent, hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, wasShieldChanged)
+							hullDamageMultiplier = hullDamageMultiplier2
+							shieldDamageMultiplier = shieldDamageMultiplier2
+							shouldPassThrough = shouldPassThrough2
+							wasShieldChanged = wasShieldChanged2
 
-						except:
-							hullDamageMultiplier2 = hullDamageMultiplier
-							shieldDamageMultiplier2 = shieldDamageMultiplier
-							shouldPassThrough2 = shouldPassThrough
-							wasShieldChanged2 = wasShieldChanged
-							print "Some SGOriBeamWeapon shield subtech suffered an error"
-							traceback.print_exc()
-
-						hullDamageMultiplier = hullDamageMultiplier2
-						shieldDamageMultiplier = shieldDamageMultiplier2
-						shouldPassThrough = shouldPassThrough2
-						wasShieldChanged = wasShieldChanged2
-
-				if wasShieldChanged <= 0:
-					# normal shields
-					shouldPassThrough = 0
-					baseShieldMultiplier = baseShieldMultiplier * 0.34 # Reduced damage to STBC shields because of Plasma and shield shenanigans - don't worry it's still enough to break most ships in one or two shots, and a hull hit is still pretty much insta-death.
-				else:
-					baseShieldMultiplier = shieldDamageMultiplier
-
-				# Since pHitPointE = NiPoint3ToTGPoint3(pEvent.GetWorldHitPoint()) works fine for shields, but is wonky for targeting subsystems in general, we need to do some kind of approximation where we later add a projection of it
-				theOffset =  pAttacker.GetTargetOffsetTG() # This is given on the target's coordinates
-				theOffsetNi = TGPoint3ToNiPoint3(theOffset)
-
-				pTargetShipNode = pTarget.GetNiObject()
-
-				pHitPointONi = App.TGModelUtils_LocalToWorldVector(pTargetShipNode, theOffsetNi)
-				pHitPointO = NiPoint3ToTGPoint3(pHitPointONi, 100.0)
-
-				pWpnPosNi = pWeaponFired.GetWorldLocation()
-				pWpnPos = NiPoint3ToTGPoint3(pWpnPosNi) # We fire from here
-				targetplacement = pTarget.GetWorldLocation() # Target placement
-				#targetplacement.Add(pHitPointO)
-
-				mod = "Tactical.Projectiles.SGOriBeamDummy" # This torpedo was made so Automated Point Defence scripts stop harrasing us
-				torpImportedInfo = None
-				torpImportedSpeed = 60.0
-				try:
-					torpImportedInfo = __import__(mod)
-					if hasattr(torpImportedInfo, "GetLaunchSpeed"):
-						torpImportedSpeed = torpImportedInfo.GetLaunchSpeed()	
-				except:
-					print "Tactical.Projectiles.SGOriBeamDummy is missing from the install, or similar, we need that to deal damage!"
-					traceback.print_exc()
-					return 0
-
-
-				targetplacement = PredictTargetLocation(pTarget, pWeaponFired, targetplacement, torpImportedSpeed, theOffset) # We predict where to fire
-
-				pVec = CopyVector(targetplacement)
-				pVec.Subtract(pWpnPos)
-
-				distTargetSubToMe = pVec.Length()
-
-				pVec.Unitize()
-				pVec.Scale(0.001)
+					if wasShieldChanged <= 0:
+						# normal shields
+						shouldPassThrough = 0
+						baseShieldMultiplier = baseShieldMultiplier * 0.34 # Reduced damage to STBC shields because of Plasma and shield shenanigans - don't worry it's still enough to break most ships in one or two shots, and a hull hit is still pretty much insta-death.
+					else:
+						baseShieldMultiplier = shieldDamageMultiplier
 
 				thePowerPercentageWanted = 1.0
 				pParentFired = pAttacker.GetPhaserSystem()
 				if pParentFired:
-					thePowerPercentageWanted = (pParentFired.GetPowerLevel()/2.0) # The 2.0 is ebcause the phasers work that way, 100% is 2, 50% is 1, 0% is 0
+					thePowerPercentageWanted = (pParentFired.GetPowerLevel()/2.0) # The 2.0 is because the phasers work that way, 100% is 2, 50% is 1, 0% is 0
 				else:
 					pParentFired = pWeaponFired.GetParentSubsystem()
 					if pParentFired:
-						thePowerPercentageWanted = (App.PoweredSubsystem_Cast(pParentFired).GetPowerLevel()/2.0)
+						castedpParentF = App.PoweredSubsystem_Cast(pParentFired)
+						if castedpParentF and hasattr(pParentFired, "GetPowerLevel"):
+							thePowerPercentageWanted = (castedpParentF.GetPowerLevel()/2.0)
+
 				if thePowerPercentageWanted <= 0.0:
 					thePowerPercentageWanted = 0.02
 
-				pTargetBID = pWeaponFired.GetTargetID()
-				pTargetB = App.ShipClass_Cast(App.TGObject_GetTGObjectPtr(pTargetBID))
-				if pTargetB:
-					targetID = pTargetB.GetObjID()			
+				if performAs == g_FIRED:
+					pTargetBID = pWeaponFired.GetTargetID()
+					pTargetB = App.ShipClass_Cast(App.TGObject_GetTGObjectPtr(pTargetBID))
+					if pTargetB:
+						targetID = pTargetB.GetObjID()		
 
 				global SlowDownRatio
 
 				try:
-					baseTorpDamage = torpImportedInfo.GetDamage()
 					leNetType = Multiplayer.SpeciesToTorp.DISRUPTOR
+					finalTorpDamage = baseHullMultiplier
+					if quickImmune == 0:
+						baseTorpDamage = torpImportedInfo.GetDamage()
 
-					torpVSHullDamage = thePowerPercentageWanted * baseTorpDamage * baseHullMultiplier
-					torpVSShieldDamage = thePowerPercentageWanted * baseTorpDamage * baseShieldMultiplier
-					shouldDoHull, remainingShield = self.shieldIsLesserThan(pTarget, kPoint, torpVSShieldDamage, 0.2, 0, 0)
-					kaboom = (pEvent.IsHullHit() or shouldPassThrough > 0 or shouldDoHull > 0)
-					if kaboom:
-						finalTorpDamage = torpVSHullDamage
-						if shouldDoHull > 0:
-							finalTorpDamage = finalTorpDamage + remainingShield
-						leNetType = Multiplayer.SpeciesToTorp.PHASEDPLASMA
+						torpVSHullDamage = thePowerPercentageWanted * baseTorpDamage * baseHullMultiplier
+						torpVSShieldDamage = thePowerPercentageWanted * baseTorpDamage * baseShieldMultiplier
+						shouldDoHull, remainingShield = self.shieldIsLesserThan(pTarget, kPoint, torpVSShieldDamage, 0.2, 0, 0)
+						kaboom = (pEvent.IsHullHit() or shouldPassThrough > 0 or shouldDoHull > 0)
+						if kaboom:
+							finalTorpDamage = torpVSHullDamage
+							if shouldDoHull > 0:
+								finalTorpDamage = finalTorpDamage + remainingShield
+							leNetType = Multiplayer.SpeciesToTorp.PHASEDPLASMA
+						else:
+							finalTorpDamage = torpVSShieldDamage	
+
+						#if fRadius <= 0.0:
+						#	fRadius = 0.13
+						#else:
+						#	fRadius = 0.13
+
+					if performAs == g_FIRED:
+						pTempTorp = FireTorpFromPointWithVectorAndNetType(pWpnPos, pVec, mod, targetID, attackerID, g_torpImportedSpeed, leNetType, finalTorpDamage, None, 0, pTarget, theOffset, "None")
+						if pTempTorp:
+							pTempTorp.SetLifetime(12.0)
+							#if oriBeamTrail != None:
+							#	oriBeamTrail.SetupSmokeTrail(pTempTorp, fSize = pTempTorp.GetRadius() * 1.2, inhVel = kaboom)
+							# TRICK - APPEND ANOTHER TORP THAT GOES BEFORE THE FIRST!
+							finalTorpDamage = 0.01
+							pTempTorp2 = FireTorpFromPointWithVectorAndNetType(pWpnPos, pVec, mod, targetID, attackerID, g_torpImportedSpeed + 1, leNetType, finalTorpDamage, None, 0, pTarget, theOffset, "Normal")
+							# FUTURE TO-DO I aded a + on the speed and gave the main payload a smaller size... there must be a better way to do this, but collisions and torpedo attach get wonky...
+							pTempTorp2.SetLifetime(12.0)
+							
+							pTempTorp2.SetTarget(pTempTorp.GetObjID())
+							pTempTorp.SetScale(0.25)
+							#pTempTorp.AttachObject(pTempTorp2)
+							#pTempTorp2.SetTranslateXYZ(0, 40.1, 0)
+							#pTempTorp.SetUsePhysics(0)
+							#g_ColFlags = pTempTorp.GetCollisionFlags()
+							#pTempTorp.SetCollisionFlags(App.ObjectClass.CFB_NO_COLLISIONS)
+							pTempTorp.UpdateNodeOnly()
+						
+							pSet = pTarget.GetContainingSet()
+							if pSet:
+								pSound = App.TGSoundAction_Create("OriBeam Loop", 0, pSet.GetName())
+								pSound.SetNode(pTempTorp.GetNode())
+								pSound.Play()
 					else:
-						finalTorpDamage = torpVSShieldDamage
+						if quickImmune == 1:
+							pParentTorp.SetDamageRadiusFactor(0.01)
+						pParentTorp.SetDamage(finalTorpDamage)
+						pParentTorp.SetNetType(leNetType)
 
-					#if fRadius <= 0.0:
-					#	fRadius = 0.13
-					#else:
-					#	fRadius = 0.13
-
-					pTempTorp = FireTorpFromPointWithVectorAndNetType(pWpnPos, pVec, mod, targetID, attackerID, torpImportedSpeed, leNetType, finalTorpDamage, None, 0, pTarget, theOffset)
-					if pTempTorp:
-						pTempTorp.SetLifetime(12.0)
-						oriBeamTrail.SetupSmokeTrail(pTempTorp, fSize = pTempTorp.GetRadius() * 1.2, inhVel = kaboom)
-						pSet = pTarget.GetContainingSet()
-						if pSet:
-							pSound = App.TGSoundAction_Create("OriBeam Loop", 0, pSet.GetName())
-							pSound.SetNode(pTempTorp.GetNode())
-							pSound.Play()	
+						#if simFl != None:
+						#	pParentTorp.SetCollisionFlags(simFl)
 				except:
 					print "You are missing 'Tactical.Projectiles.SGOriBeamDummy' torpedo on your install, without that the SG Ori Beam Weapons here cannot deal extra hull damage... or another error happened"
 					traceback.print_exc()		
 			
 			except:
-				print "	Error when handling SG Ori Beams Weapon Hit"
+				print "Error when handling SG Ori Beams Weapon Hit"
 				traceback.print_exc()
 			return 0
 
