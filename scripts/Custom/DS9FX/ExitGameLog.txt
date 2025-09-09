@@ -3347,3 +3347,1153 @@ Submodel Error: Unable to find Hardpoint Launch Tube P5 OEP
 
 
 ##### End Of The Log #####
+##### Bridge Commander Exit Log: 08 Sep 2025 21:14:08#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Traceback (innermost last):
+  File ".\Scripts\Bridge\EngineerCharacterHandlers.py", line 690, in AnnounceSpecificShield
+    fShields = (pShip.GetShields().GetCurShields(App.ShieldClass.FRONT_SHIELDS)/pShip.GetShields().GetMaxShields(App.ShieldClass.FRONT_SHIELDS))
+ZeroDivisionError: float division
+
+
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at c711b74> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at c7138a0> ignored
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5 OEP
+Setting splash damage for Comet to (187.500000, 3.750000)
+Submodel Error: Unable to find Hardpoint Launch Tube P2
+Submodel Error: Unable to find Hardpoint Launch Tube P3
+Submodel Error: Unable to find Hardpoint Launch Tube P7 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1
+Submodel Error: Unable to find Hardpoint Launch Tube P6
+Submodel Error: Unable to find Hardpoint Launch Tube P7
+Submodel Error: Unable to find Hardpoint Launch Tube P4
+Submodel Error: Unable to find Hardpoint Launch Tube P5
+Submodel Error: Unable to find Hardpoint Launch Tube P2 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P9 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8
+Submodel Error: Unable to find Hardpoint Launch Tube P9
+Submodel Error: Unable to find Hardpoint Launch Tube P6 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P4 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P3 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10
+Submodel Error: Unable to find Hardpoint Launch Tube P5 OEP
+Setting Stock System Planets Random Density.
+Setting Stock System Planets Random Density.
+
+
+
+
+Ship MvamTemp with Alternative Warp FTL SubModel support added
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Traceback (innermost last):
+  File ".\Scripts\Bridge\EngineerCharacterHandlers.py", line 690, in AnnounceSpecificShield
+    fShields = (pShip.GetShields().GetCurShields(App.ShieldClass.FRONT_SHIELDS)/pShip.GetShields().GetMaxShields(App.ShieldClass.FRONT_SHIELDS))
+ZeroDivisionError: float division
+Setting Stock System Planets Random Density.
+Traceback (innermost last):
+  File ".\Scripts\Bridge\EngineerCharacterHandlers.py", line 690, in AnnounceSpecificShield
+    fShields = (pShip.GetShields().GetCurShields(App.ShieldClass.FRONT_SHIELDS)/pShip.GetShields().GetMaxShields(App.ShieldClass.FRONT_SHIELDS))
+ZeroDivisionError: float division
+
+
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Traceback (innermost last):
+  File ".\Scripts\Bridge\EngineerCharacterHandlers.py", line 690, in AnnounceSpecificShield
+    fShields = (pShip.GetShields().GetCurShields(App.ShieldClass.FRONT_SHIELDS)/pShip.GetShields().GetMaxShields(App.ShieldClass.FRONT_SHIELDS))
+ZeroDivisionError: float division
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 404eafb4> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 404f8018> ignored
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P2
+Submodel Error: Unable to find Hardpoint Launch Tube P3
+Submodel Error: Unable to find Hardpoint Launch Tube P7 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1
+Submodel Error: Unable to find Hardpoint Launch Tube P6
+Submodel Error: Unable to find Hardpoint Launch Tube P7
+Submodel Error: Unable to find Hardpoint Launch Tube P4
+Submodel Error: Unable to find Hardpoint Launch Tube P5
+Submodel Error: Unable to find Hardpoint Launch Tube P2 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P9 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8
+Submodel Error: Unable to find Hardpoint Launch Tube P9
+Submodel Error: Unable to find Hardpoint Launch Tube P6 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P4 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P3 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10
+Submodel Error: Unable to find Hardpoint Launch Tube P5 OEP
+Setting Stock System Planets Random Density.
+Setting Stock System Planets Random Density.
+Traceback (innermost last):
+  File ".\Scripts\Custom\Autoload\Mvam\GalacticaMvam.py", line 206, in Reintegrate
+    Custom.Sneaker.Mvam.Reintegration.Reintegration(snkMvamModule)
+  File ".\Scripts\Custom\Autoload\000-Expansion-DS9FXMvamFix.py", line 36, in ReintegrationIntercept
+    Rein(snkMvamModule)
+  File ".\Scripts\Custom\Sneaker\Mvam\Reintegration.py", line 102, in Reintegration
+    pPlayerJunk.SetTranslate(kPoint1)
+AttributeError: 'None' object has no attribute 'SetTranslate'
+
+
+Trying to clean memory
+Drive is still spooling for another 1877.4921875 seconds
+Drive is still spooling for another 1871.140625 seconds
+data/TGL/Maelstrom/Episode 6/E6M4.tgl E6M4Communicate2-2
+data/TGL/Maelstrom/Episode 2/E2M2.tgl E2M2Serris3Scan1
+Trying to clean memory
+data/TGL/Maelstrom/Episode 5/E5M4.tgl E5M4BrexComm2
+data/TGL/Maelstrom/Episode 5/E5M2.tgl E5M2L020
+data/TGL/Maelstrom/Episode 8/E8M2.tgl E8M2Warp3
+data/TGL/Maelstrom/Episode 8/E8M2.tgl E8M2MatanMsg10
+Trying to clean memory
+data/TGL/Maelstrom/Episode 3/E3M4.tgl E3M4CommKiska1
+data/TGL/Maelstrom/Episode 1/E1M1.tgl E1M1BrexCom2
+data/TGL/Maelstrom/Episode 8/E8M1.tgl E8M1L205
+Trying to clean memory
+data/TGL/Maelstrom/Episode 1/E1M2.tgl E1M2MissionLost8
+data/TGL/Maelstrom/Episode 1/E1M2.tgl E1M2MissionLost6
+data/TGL/Maelstrom/Episode 5/E5M2.tgl E5M2OutpostDetected2
+Trying to clean memory
+data/TGL/Maelstrom/Episode 8/E8M1.tgl E8M1L118
+data/TGL/Maelstrom/Episode 6/E6M5.tgl E6M5Communicate08
+data/TGL/Maelstrom/Episode 2/E2M6.tgl E2M6BrexCom4
+Trying to clean memory
+data/TGL/Maelstrom/Episode 8/E8M1.tgl E8M1L190
+data/TGL/Maelstrom/Episode 8/E8M2.tgl E8M2OD3KesDestroyed2
+data/TGL/Maelstrom/Episode 8/E8M1.tgl E8M1L078
+Trying to clean memory
+data/TGL/Maelstrom/Episode 2/E2M2.tgl E2M2BrexCom4
+data/TGL/Maelstrom/Episode 1/E1M1.tgl E1M1MiguelCom2
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 4050f95c> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at c713e70> ignored
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P2
+Submodel Error: Unable to find Hardpoint Launch Tube P3
+Submodel Error: Unable to find Hardpoint Launch Tube P7 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1
+Submodel Error: Unable to find Hardpoint Launch Tube P6
+Submodel Error: Unable to find Hardpoint Launch Tube P7
+Submodel Error: Unable to find Hardpoint Launch Tube P4
+Submodel Error: Unable to find Hardpoint Launch Tube P5
+Submodel Error: Unable to find Hardpoint Launch Tube P2 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P9 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8
+Submodel Error: Unable to find Hardpoint Launch Tube P9
+Submodel Error: Unable to find Hardpoint Launch Tube P6 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P4 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P3 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10
+Submodel Error: Unable to find Hardpoint Launch Tube P5 OEP
+Setting Stock System Planets Random Density.
+Setting Stock System Planets Random Density.
+
+# DS9FX has...
+
+# taken a console dump
+Traceback (innermost last):
+  File ".\Scripts\Custom\Autoload\Mvam\GalacticaMvam.py", line 206, in Reintegrate
+    Custom.Sneaker.Mvam.Reintegration.Reintegration(snkMvamModule)
+  File ".\Scripts\Custom\Autoload\000-Expansion-DS9FXMvamFix.py", line 36, in ReintegrationIntercept
+    Rein(snkMvamModule)
+  File ".\Scripts\Custom\Sneaker\Mvam\Reintegration.py", line 102, in Reintegration
+    pPlayerJunk.SetTranslate(kPoint1)
+AttributeError: 'None' object has no attribute 'SetTranslate'
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 08 Sep 2025 21:14:08#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Traceback (innermost last):
+  File ".\Scripts\Bridge\EngineerCharacterHandlers.py", line 690, in AnnounceSpecificShield
+    fShields = (pShip.GetShields().GetCurShields(App.ShieldClass.FRONT_SHIELDS)/pShip.GetShields().GetMaxShields(App.ShieldClass.FRONT_SHIELDS))
+ZeroDivisionError: float division
+
+
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at c711b74> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at c7138a0> ignored
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5 OEP
+Setting splash damage for Comet to (187.500000, 3.750000)
+Submodel Error: Unable to find Hardpoint Launch Tube P2
+Submodel Error: Unable to find Hardpoint Launch Tube P3
+Submodel Error: Unable to find Hardpoint Launch Tube P7 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1
+Submodel Error: Unable to find Hardpoint Launch Tube P6
+Submodel Error: Unable to find Hardpoint Launch Tube P7
+Submodel Error: Unable to find Hardpoint Launch Tube P4
+Submodel Error: Unable to find Hardpoint Launch Tube P5
+Submodel Error: Unable to find Hardpoint Launch Tube P2 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P9 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8
+Submodel Error: Unable to find Hardpoint Launch Tube P9
+Submodel Error: Unable to find Hardpoint Launch Tube P6 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P4 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P3 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10
+Submodel Error: Unable to find Hardpoint Launch Tube P5 OEP
+Setting Stock System Planets Random Density.
+Setting Stock System Planets Random Density.
+
+
+
+
+Ship MvamTemp with Alternative Warp FTL SubModel support added
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Traceback (innermost last):
+  File ".\Scripts\Bridge\EngineerCharacterHandlers.py", line 690, in AnnounceSpecificShield
+    fShields = (pShip.GetShields().GetCurShields(App.ShieldClass.FRONT_SHIELDS)/pShip.GetShields().GetMaxShields(App.ShieldClass.FRONT_SHIELDS))
+ZeroDivisionError: float division
+Setting Stock System Planets Random Density.
+Traceback (innermost last):
+  File ".\Scripts\Bridge\EngineerCharacterHandlers.py", line 690, in AnnounceSpecificShield
+    fShields = (pShip.GetShields().GetCurShields(App.ShieldClass.FRONT_SHIELDS)/pShip.GetShields().GetMaxShields(App.ShieldClass.FRONT_SHIELDS))
+ZeroDivisionError: float division
+
+
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Traceback (innermost last):
+  File ".\Scripts\Bridge\EngineerCharacterHandlers.py", line 690, in AnnounceSpecificShield
+    fShields = (pShip.GetShields().GetCurShields(App.ShieldClass.FRONT_SHIELDS)/pShip.GetShields().GetMaxShields(App.ShieldClass.FRONT_SHIELDS))
+ZeroDivisionError: float division
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 404eafb4> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 404f8018> ignored
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P2
+Submodel Error: Unable to find Hardpoint Launch Tube P3
+Submodel Error: Unable to find Hardpoint Launch Tube P7 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1
+Submodel Error: Unable to find Hardpoint Launch Tube P6
+Submodel Error: Unable to find Hardpoint Launch Tube P7
+Submodel Error: Unable to find Hardpoint Launch Tube P4
+Submodel Error: Unable to find Hardpoint Launch Tube P5
+Submodel Error: Unable to find Hardpoint Launch Tube P2 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P9 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8
+Submodel Error: Unable to find Hardpoint Launch Tube P9
+Submodel Error: Unable to find Hardpoint Launch Tube P6 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P4 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P3 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10
+Submodel Error: Unable to find Hardpoint Launch Tube P5 OEP
+Setting Stock System Planets Random Density.
+Setting Stock System Planets Random Density.
+Traceback (innermost last):
+  File ".\Scripts\Custom\Autoload\Mvam\GalacticaMvam.py", line 206, in Reintegrate
+    Custom.Sneaker.Mvam.Reintegration.Reintegration(snkMvamModule)
+  File ".\Scripts\Custom\Autoload\000-Expansion-DS9FXMvamFix.py", line 36, in ReintegrationIntercept
+    Rein(snkMvamModule)
+  File ".\Scripts\Custom\Sneaker\Mvam\Reintegration.py", line 102, in Reintegration
+    pPlayerJunk.SetTranslate(kPoint1)
+AttributeError: 'None' object has no attribute 'SetTranslate'
+
+
+Trying to clean memory
+Drive is still spooling for another 1877.4921875 seconds
+Drive is still spooling for another 1871.140625 seconds
+data/TGL/Maelstrom/Episode 6/E6M4.tgl E6M4Communicate2-2
+data/TGL/Maelstrom/Episode 2/E2M2.tgl E2M2Serris3Scan1
+Trying to clean memory
+data/TGL/Maelstrom/Episode 5/E5M4.tgl E5M4BrexComm2
+data/TGL/Maelstrom/Episode 5/E5M2.tgl E5M2L020
+data/TGL/Maelstrom/Episode 8/E8M2.tgl E8M2Warp3
+data/TGL/Maelstrom/Episode 8/E8M2.tgl E8M2MatanMsg10
+Trying to clean memory
+data/TGL/Maelstrom/Episode 3/E3M4.tgl E3M4CommKiska1
+data/TGL/Maelstrom/Episode 1/E1M1.tgl E1M1BrexCom2
+data/TGL/Maelstrom/Episode 8/E8M1.tgl E8M1L205
+Trying to clean memory
+data/TGL/Maelstrom/Episode 1/E1M2.tgl E1M2MissionLost8
+data/TGL/Maelstrom/Episode 1/E1M2.tgl E1M2MissionLost6
+data/TGL/Maelstrom/Episode 5/E5M2.tgl E5M2OutpostDetected2
+Trying to clean memory
+data/TGL/Maelstrom/Episode 8/E8M1.tgl E8M1L118
+data/TGL/Maelstrom/Episode 6/E6M5.tgl E6M5Communicate08
+data/TGL/Maelstrom/Episode 2/E2M6.tgl E2M6BrexCom4
+Trying to clean memory
+data/TGL/Maelstrom/Episode 8/E8M1.tgl E8M1L190
+data/TGL/Maelstrom/Episode 8/E8M2.tgl E8M2OD3KesDestroyed2
+data/TGL/Maelstrom/Episode 8/E8M1.tgl E8M1L078
+Trying to clean memory
+data/TGL/Maelstrom/Episode 2/E2M2.tgl E2M2BrexCom4
+data/TGL/Maelstrom/Episode 1/E1M1.tgl E1M1MiguelCom2
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 4050f95c> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at c713e70> ignored
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P2
+Submodel Error: Unable to find Hardpoint Launch Tube P3
+Submodel Error: Unable to find Hardpoint Launch Tube P7 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1
+Submodel Error: Unable to find Hardpoint Launch Tube P6
+Submodel Error: Unable to find Hardpoint Launch Tube P7
+Submodel Error: Unable to find Hardpoint Launch Tube P4
+Submodel Error: Unable to find Hardpoint Launch Tube P5
+Submodel Error: Unable to find Hardpoint Launch Tube P2 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P9 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8
+Submodel Error: Unable to find Hardpoint Launch Tube P9
+Submodel Error: Unable to find Hardpoint Launch Tube P6 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P8 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P4 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P1 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P3 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10 OEP
+Submodel Error: Unable to find Hardpoint Launch Tube P10
+Submodel Error: Unable to find Hardpoint Launch Tube P5 OEP
+Setting Stock System Planets Random Density.
+Setting Stock System Planets Random Density.
+
+# DS9FX has...
+
+# taken a console dump
+Traceback (innermost last):
+  File ".\Scripts\Custom\Autoload\Mvam\GalacticaMvam.py", line 206, in Reintegrate
+    Custom.Sneaker.Mvam.Reintegration.Reintegration(snkMvamModule)
+  File ".\Scripts\Custom\Autoload\000-Expansion-DS9FXMvamFix.py", line 36, in ReintegrationIntercept
+    Rein(snkMvamModule)
+  File ".\Scripts\Custom\Sneaker\Mvam\Reintegration.py", line 102, in Reintegration
+    pPlayerJunk.SetTranslate(kPoint1)
+AttributeError: 'None' object has no attribute 'SetTranslate'
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 09 Sep 2025 12:27:12#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+Traceback (innermost last):
+  File ".\Scripts\Custom\Techs\AlternateSubModelFTL.py", line 3916, in UpdateHardpointPositionsTo
+AttributeError: Update
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 09 Sep 2025 12:27:12#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+Traceback (innermost last):
+  File ".\Scripts\Custom\Techs\AlternateSubModelFTL.py", line 3916, in UpdateHardpointPositionsTo
+AttributeError: Update
+
+# DS9FX has...
+
+# taken a console dump
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 09 Sep 2025 12:31:28#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+data/TGL/Maelstrom/Episode 2/E2M6.tgl E2M6StayBiranu4
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+
+
+Traceback (innermost last):
+  File ".\Scripts\Custom\Techs\AlternateSubModelFTL.py", line 3916, in UpdateHardpointPositionsTo
+TypeError: ShipSubsystem_Update requires exactly 2 arguments; 1 given
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 09 Sep 2025 12:31:28#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+data/TGL/Maelstrom/Episode 2/E2M6.tgl E2M6StayBiranu4
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+
+
+Traceback (innermost last):
+  File ".\Scripts\Custom\Techs\AlternateSubModelFTL.py", line 3916, in UpdateHardpointPositionsTo
+TypeError: ShipSubsystem_Update requires exactly 2 arguments; 1 given
+
+# DS9FX has...
+
+# taken a console dump
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 09 Sep 2025 12:33:36#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+Traceback (innermost last):
+  File ".\Scripts\Custom\Techs\AlternateSubModelFTL.py", line 3917, in UpdateHardpointPositionsTo
+AttributeError: UpdateNodeOnly
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 09 Sep 2025 12:33:36#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+Traceback (innermost last):
+  File ".\Scripts\Custom\Techs\AlternateSubModelFTL.py", line 3917, in UpdateHardpointPositionsTo
+AttributeError: UpdateNodeOnly
+
+# DS9FX has...
+
+# taken a console dump
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 09 Sep 2025 12:40:00#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 09 Sep 2025 12:40:00#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+
+# DS9FX has...
+
+# taken a console dump
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 09 Sep 2025 12:57:04#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+handleing re-intergration
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Traceback (innermost last):
+  File ".\Scripts\Bridge\EngineerCharacterHandlers.py", line 690, in AnnounceSpecificShield
+    fShields = (pShip.GetShields().GetCurShields(App.ShieldClass.FRONT_SHIELDS)/pShip.GetShields().GetMaxShields(App.ShieldClass.FRONT_SHIELDS))
+ZeroDivisionError: float division
+
+
+
+
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at eb4a9a8> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at eb49b80> ignored
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5 OEP
+AltSubmodel Error: Unable to find Hardpoint Launch Tube P2
+AltSubmodel Error: Unable to find Hardpoint Launch Tube P3
+AltSubmodel Error: Unable to find Hardpoint Launch Tube P7 OEP
+AltSubmodel Error: Unable to find Hardpoint Launch Tube P1
+AltSubmodel Error: Unable to find Hardpoint Launch Tube P6
+AltSubmodel Error: Unable to find Hardpoint Launch Tube P7
+AltSubmodel Error: Unable to find Hardpoint Launch Tube P4
+AltSubmodel Error: Unable to find Hardpoint Launch Tube P5
+AltSubmodel Error: Unable to find Hardpoint Launch Tube P2 OEP
+AltSubmodel Error: Unable to find Hardpoint Launch Tube P9 OEP
+AltSubmodel Error: Unable to find Hardpoint Launch Tube P8
+AltSubmodel Error: Unable to find Hardpoint Launch Tube P9
+AltSubmodel Error: Unable to find Hardpoint Launch Tube P6 OEP
+AltSubmodel Error: Unable to find Hardpoint Launch Tube P8 OEP
+AltSubmodel Error: Unable to find Hardpoint Launch Tube P4 OEP
+AltSubmodel Error: Unable to find Hardpoint Launch Tube P1 OEP
+AltSubmodel Error: Unable to find Hardpoint Launch Tube P3 OEP
+AltSubmodel Error: Unable to find Hardpoint Launch Tube P10 OEP
+AltSubmodel Error: Unable to find Hardpoint Launch Tube P10
+AltSubmodel Error: Unable to find Hardpoint Launch Tube P5 OEP
+Setting Stock System Planets Random Density.
+Setting Stock System Planets Random Density.
+
+# DS9FX has...
+
+# taken a console dump
+Drive is still spooling for another 862.875 seconds
+Drive is still spooling for another 857.9375 seconds
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 09 Sep 2025 12:57:04#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+handleing re-intergration
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Traceback (innermost last):
+  File ".\Scripts\Bridge\EngineerCharacterHandlers.py", line 690, in AnnounceSpecificShield
+    fShields = (pShip.GetShields().GetCurShields(App.ShieldClass.FRONT_SHIELDS)/pShip.GetShields().GetMaxShields(App.ShieldClass.FRONT_SHIELDS))
+ZeroDivisionError: float division
+
+
+
+
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at eb4a9a8> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at eb49b80> ignored
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P7
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P2 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P9
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P6 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P8 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P4 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P1 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P3 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10 OEP
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P10
+AlternateSubModelFTL Error: Unable to find Hardpoint Launch Tube P5 OEP
+AltSubmodel Error: Unable to find Hardpoint Launch Tube P2
+AltSubmodel Error: Unable to find Hardpoint Launch Tube P3
+AltSubmodel Error: Unable to find Hardpoint Launch Tube P7 OEP
+AltSubmodel Error: Unable to find Hardpoint Launch Tube P1
+AltSubmodel Error: Unable to find Hardpoint Launch Tube P6
+AltSubmodel Error: Unable to find Hardpoint Launch Tube P7
+AltSubmodel Error: Unable to find Hardpoint Launch Tube P4
+AltSubmodel Error: Unable to find Hardpoint Launch Tube P5
+AltSubmodel Error: Unable to find Hardpoint Launch Tube P2 OEP
+AltSubmodel Error: Unable to find Hardpoint Launch Tube P9 OEP
+AltSubmodel Error: Unable to find Hardpoint Launch Tube P8
+AltSubmodel Error: Unable to find Hardpoint Launch Tube P9
+AltSubmodel Error: Unable to find Hardpoint Launch Tube P6 OEP
+AltSubmodel Error: Unable to find Hardpoint Launch Tube P8 OEP
+AltSubmodel Error: Unable to find Hardpoint Launch Tube P4 OEP
+AltSubmodel Error: Unable to find Hardpoint Launch Tube P1 OEP
+AltSubmodel Error: Unable to find Hardpoint Launch Tube P3 OEP
+AltSubmodel Error: Unable to find Hardpoint Launch Tube P10 OEP
+AltSubmodel Error: Unable to find Hardpoint Launch Tube P10
+AltSubmodel Error: Unable to find Hardpoint Launch Tube P5 OEP
+Setting Stock System Planets Random Density.
+Setting Stock System Planets Random Density.
+
+# DS9FX has...
+
+# taken a console dump
+Drive is still spooling for another 862.875 seconds
+Drive is still spooling for another 857.9375 seconds
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####

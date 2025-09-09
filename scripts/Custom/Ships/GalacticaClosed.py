@@ -37,9 +37,10 @@ credits = {
 Foundation.ShipDef.GalacticaClosed = Foundation.FedShipDef(abbrev, species, { 'iconName': iconName, 'shipFile': shipFile })
 Foundation.ShipDef.GalacticaClosed.dTechs = {
 	'Fed Ablative Armor': { "Plates": ["Armour"]},
+	'Simulated Point Defence' : { "Distance": 35.0, "InnerDistance": 5.0, "Effectiveness": 0.5, "LimitTurn": 0.125, "LimitSpeed": 35, "Period": 0.1, "MaxNumberTorps": 12, },
 	"Alternate-Warp-FTL": { # (#)
 		"Setup": { # (#)
-			"nBSGDimensionalJump": {	"Nacelles": ["FTL Drive 1", "FTL Drive 2"], "Core": ["Reactor Module"], "Cooldown Time": 33 * 60},
+			"nBSGDimensionalJump": {	"Nacelles": ["FTL Drive 1", "FTL Drive 2"], "Core": ["Reactor Module"], "Cooldown Time": 15 * 60},
 			"BodySetScale": 1.0,
 			"NormalSetScale": 1.0,
 			"WarpSetScale": 1.0,
@@ -66,33 +67,33 @@ Foundation.ShipDef.GalacticaClosed.dTechs = {
 				"Launch Tube P6 OEP":  [-7.020000, -1.550000, -0.620000 ],
 				"Launch Tube P7 OEP":  [-7.020000, -2.675000, -0.620000 ],
 				"Launch Tube P8 OEP":  [-7.020000, -3.400000, -0.620000 ],
-				"Launch Tube P9 OEP":  [-6.930000, -4.500000, -0.620000 ],
+				"Launch Tube P9 OEP":  [-5.180000, -4.500000, -0.620000 ],
 				"Launch Tube P10 OEP":  [-6.850000, -5.275000, -0.620000 ],
 			},
 
 			"nBSGDimensionalJumpHardpoints":       {
-				"Port Hanger":  [-5.500000, 1.000000, 0.000000, {"Disabled Percentage" : 1.5}],
-				"Star Hanger":  [5.500000, 1.000000, 0.000000, {"Disabled Percentage" : 1.5}],
-				"Launch Tube P1":  [-6.900000, 2.900000, -0.620000, {"Disabled Percentage" : 1.5}],
-				"Launch Tube P2":  [-6.950000, 2.150000, -0.620000, {"Disabled Percentage" : 1.5}],
-				"Launch Tube P3":  [-7.000000, 1.020000, -0.620000, {"Disabled Percentage" : 1.5}],
-				"Launch Tube P4":  [-7.020000, 0.300000, -0.620000, {"Disabled Percentage" : 1.5}],
-				"Launch Tube P5":  [-7.020000, -0.800000, -0.620000, {"Disabled Percentage" : 1.5}],
-				"Launch Tube P6":  [-7.020000, -1.550000, -0.620000, {"Disabled Percentage" : 1.5}],
-				"Launch Tube P7":  [-7.020000, -2.675000, -0.620000, {"Disabled Percentage" : 1.5}],
-				"Launch Tube P8":  [-7.020000, -3.400000, -0.620000, {"Disabled Percentage" : 1.5}],
-				"Launch Tube P9":  [-6.930000, -4.500000, -0.620000, {"Disabled Percentage" : 1.5}],
-				"Launch Tube P10":  [-6.850000, -5.275000, -0.620000, {"Disabled Percentage" : 1.5}],
-				"Launch Tube P1 OEP":  [-6.900000, 2.900000, -0.620000 ],
-				"Launch Tube P2 OEP":  [-6.950000, 2.150000, -0.620000 ],
-				"Launch Tube P3 OEP":  [-7.000000, 1.020000, -0.620000 ],
-				"Launch Tube P4 OEP":  [-7.020000, 0.300000, -0.620000 ],
-				"Launch Tube P5 OEP":  [-7.020000, -0.800000, -0.620000 ],
-				"Launch Tube P6 OEP":  [-7.020000, -1.550000, -0.620000 ],
-				"Launch Tube P7 OEP":  [-7.020000, -2.675000, -0.620000 ],
-				"Launch Tube P8 OEP":  [-7.020000, -3.400000, -0.620000 ],
-				"Launch Tube P9 OEP":  [-6.930000, -4.500000, -0.620000 ],
-				"Launch Tube P10 OEP":  [-6.850000, -5.275000, -0.620000 ],
+				"Port Hanger":  [-3.750000, -1.000000, -0.750000, {"Disabled Percentage" : 1.5}],
+				"Star Hanger":  [3.750000, -1.000000, -0.750000, {"Disabled Percentage" : 1.5}],
+				"Launch Tube P1":  [-5.150000, 2.900000, -0.620000, {"Disabled Percentage" : 1.5}],
+				"Launch Tube P2":  [-5.200000, 2.150000, -0.620000, {"Disabled Percentage" : 1.5}],
+				"Launch Tube P3":  [-5.250000, 1.020000, -0.620000, {"Disabled Percentage" : 1.5}],
+				"Launch Tube P4":  [-5.270000, 0.300000, -0.620000, {"Disabled Percentage" : 1.5}],
+				"Launch Tube P5":  [-5.270000, -0.800000, -0.620000, {"Disabled Percentage" : 1.5}],
+				"Launch Tube P6":  [-5.270000, -1.550000, -0.620000, {"Disabled Percentage" : 1.5}],
+				"Launch Tube P7":  [-5.270000, -2.675000, -0.620000, {"Disabled Percentage" : 1.5}],
+				"Launch Tube P8":  [-5.270000, -3.400000, -0.620000, {"Disabled Percentage" : 1.5}],
+				"Launch Tube P9":  [-5.180000, -4.500000, -0.620000, {"Disabled Percentage" : 1.5}],
+				"Launch Tube P10":  [-5.100000, -5.275000, -0.620000, {"Disabled Percentage" : 1.5}],
+				"Launch Tube P1 OEP":  [-5.150000, 2.900000, -0.620000 ],
+				"Launch Tube P2 OEP":  [-5.200000, 2.150000, -0.620000 ],
+				"Launch Tube P3 OEP":  [-5.250000, 1.020000, -0.620000 ],
+				"Launch Tube P4 OEP":  [-5.270000, 0.300000, -0.620000 ],
+				"Launch Tube P5 OEP":  [-5.270000, -0.800000, -0.620000 ],
+				"Launch Tube P6 OEP":  [-5.270000, -1.550000, -0.620000 ],
+				"Launch Tube P7 OEP":  [-5.270000, -2.675000, -0.620000 ],
+				"Launch Tube P8 OEP":  [-5.270000, -3.400000, -0.620000 ],
+				"Launch Tube P9 OEP":  [-5.180000, -4.500000, -0.620000 ],
+				"Launch Tube P10 OEP":  [-5.100000, -5.275000, -0.620000 ],
 			},
 		},
 
@@ -117,6 +118,9 @@ Foundation.ShipDef.GalacticaClosed.dTechs = {
 		],
 	},
 }
+
+Foundation.ShipDef.GalacticaClosed.fMaxWarp = 5.25
+Foundation.ShipDef.GalacticaClosed.fCruiseWarp = 5.0
 #                                                                                     #
 # Com-man's note: Of course you need to remove the 'name': longname here too for it   #
 # to work.              						                          #

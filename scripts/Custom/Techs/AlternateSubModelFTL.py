@@ -1,7 +1,7 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL, FOR THOSE SECTIONS THAT DO NOT FALL UNDER ANY OTHER LICENSE (See explanation below)
 # AlternateSubModelFTL.py
-# 7th September 2025, by Alex SL Gato (CharaToLoki)
+# 9th September 2025, by Alex SL Gato (CharaToLoki)
 #         Based on Defiant's SubModels script logic and BorgAdaptation.py by Alex SL Gato, which were based on the Foundation import function by Dasher
 #         Also based slightly on ATPFunctions (by Apollo) and DS9FXPulsarManager style (by USS Sovereign).
 #         Also some sections based and copied from the Slipstream module by Mario aka USS Sovereign, modified by Alex SL Gato with Mario's permission to adapt part of his code to this script ONLY as long as it is meant for KM, and that he can and will take action otherwise (see Documentation/USSSovereignStanceAboutModifyingorRepackagingSlipstream.PNG).
@@ -3907,17 +3907,19 @@ def UpdateHardpointPositionsTo(pShip, sHP, lPos, extraCh = 0):
 	pPOP = GetPositionOrientationPropertyByName(pShip, sHP)
 	if pHP:
 		pHPprob = pHP.GetProperty()
-		pHPprob.SetPosition(lPos[0], lPos[1], lPos[2])
-		if extraCh == 1:
-			if lPos[3] != None and type(lPos[3]) == type({}):
-				if lPos[3].has_key("Disabled Percentage"):
-					pHPprob.SetDisabledPercentage(lPos[3]["Disabled Percentage"])
+		if pHPprob != None:
+			pHPprob.SetPosition(lPos[0], lPos[1], lPos[2])
+			if extraCh == 1:
+				if lPos[3] != None and type(lPos[3]) == type({}):
+					if lPos[3].has_key("Disabled Percentage"):
+						pHPprob.SetDisabledPercentage(lPos[3]["Disabled Percentage"])
+						#pHP.SetCondition(pHP.GetCondition())
 	elif pPOP:
 		pPosition = App.TGPoint3()
 		pPosition.SetXYZ(lPos[0], lPos[1], lPos[2])
 		pPOP.SetPosition(pPosition)
 	else:
-		print "Submodel Error: Unable to find Hardpoint %s" % sHP
+		print "AltSubmodel Error: Unable to find Hardpoint %s" % sHP
 	pShip.UpdateNodeOnly()
 
 def UpdateHardpointStatusTo(pShip, sHP, lPos):

@@ -12,7 +12,7 @@
 # TO-DO THE LIGHT JUMPS FROM FRONT TO BACK
 # TO-DO MAKE IT SO WHILE ON THE SYSTEM THE JUMP AUTOMATICALLY FAILS SO YOU NEED MULTIPLE JUMPS TO REACH YOUR DESTINATION
 # TO-DO MAKE IT SO THE CYLONS REQUIRE 10x JUMPS FOR A THING AND THEN GALACTICA 200x
-# TO-DO LOOK A WAY TO MAKE THE JUMP ENGINES WORK EVERY 33 MINUTES
+# TO-DO LOOK A WAY TO MAKE THE JUMP ENGINES WORK EVERY 33 MINUTES - ACTUALLY 15 MINUTES
 # NOTE: all functions/methods and attributes defined here (in this prototype example plugin, nBSGDimensionalJump) are required to be in the plugin, with the exclusion of:
 # ------ MODINFO, which is there just to verify versioning.
 # ------ ALTERNATESUBMODELFTL METHODS subsection, which are exclusively used for alternate SubModels for FTL which is a separate but linked mod, or to import needed modules.
@@ -30,7 +30,7 @@
 # "Core": is the name of a key whose value indicates a list of which hardpoint properties (not nacelles) are part of the nBSGDimensionalJump system. If all are disabled/destroyed, nBSGDimensionalJumpDrive will not engage either. If this field does not exist, it wil check for all subsystems with "quantum jumpspace drive" or "quantum jump-space drive", case insensitive. Use "Core": [] to skip this check.
 # Subsystems note: when editing the hardpoint, you can also add another hardpoint property called "TransDimensional Drive" to change this FTL effects and behaviour slightly (instead of a vortex-like animation at great speeds, it's a big silent rotund flash with barely any movement). Same with "Hyperspace Cloak" (will not use any flashes and will actually try to make the ship cloak and decloak and will use shadow sounds).
 # TO-DO CHANGE THIS --> Also, important note, this mod uses additional systems for GalaxyCharts, "Custom.GalaxyCharts.TravelerSystems.nBSGDimensionalJumpDriveTunnelTravelSet" and "Custom.GalaxyCharts.TravelerSystems.AInBSGDimensionalJumpDriveTunnelTravelSet", with "Custom.GalaxyCharts.TravelerSystems.nBSGDimensionalJumpDriveTunnelTravelSet_S" being optional but highly recommended to have.
-# "Cooldown Time": time in seconds between jumps on a type of ship, in seconds. Default is 33 * 60 secoonds.
+# "Cooldown Time": time in seconds between jumps on a type of ship, in seconds. Default is 15 * 60 seconds (I was told 33 minutes was just during the 33 minutes arc and it was more like the times they needed to jump when the Cylons found them).
 """
 #Sample Setup: replace "EAOmega" for the appropiate abbrev. Also remove "# (#)"
 Foundation.ShipDef.EAOmega.dTechs = { # (#)
@@ -329,7 +329,7 @@ def findShipInstance(pShip):
 def IsShipEquipped(pShip):
 	debug(__name__ + ", IsShipEquipped")
 
-	pInstance, pInstanceDict, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist = nBSGDimensionalJumpBasicConfigInfo(pShip)
+	pInstance, pInstanceDict, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, delay = nBSGDimensionalJumpBasicConfigInfo(pShip)
 	pInstance = findShipInstance(pShip)
 	if pInstance:
 		if pInstanceDict.has_key("Alternate-Warp-FTL") and pInstanceDict["Alternate-Warp-FTL"].has_key("Setup") and pInstanceDict["Alternate-Warp-FTL"]["Setup"].has_key("nBSGDimensionalJump"): # You need to add a foundation technology to this vessel "AlternateSubModelFTL"
@@ -374,6 +374,7 @@ def nBSGDimensionalJumpBasicConfigInfo(pShip):
 	pInstancedict = None
 	specificNacelleHPList = None
 	specificCoreHPList = None
+	delay = 15 * 60
 	if pInstance:
 		pInstancedict = pInstance.__dict__ 
 		if pInstancedict.has_key("Alternate-Warp-FTL") and pInstancedict["Alternate-Warp-FTL"].has_key("Setup") and pInstancedict["Alternate-Warp-FTL"]["Setup"].has_key("nBSGDimensionalJump"):
@@ -381,10 +382,12 @@ def nBSGDimensionalJumpBasicConfigInfo(pShip):
 				specificNacelleHPList = pInstancedict["Alternate-Warp-FTL"]["Setup"]["nBSGDimensionalJump"]["Nacelles"]
 			if pInstancedict["Alternate-Warp-FTL"]["Setup"]["nBSGDimensionalJump"].has_key("Core"): # Use: if the tech has this field, use it. Must be a list. "[]" would mean that this field is skipped during checks.
 				specificCoreHPList = pInstancedict["Alternate-Warp-FTL"]["Setup"]["nBSGDimensionalJump"]["Core"]
+			if pInstancedict["Alternate-Warp-FTL"]["Setup"]["nBSGDimensionalJump"].has_key("Cooldown Time"): # Use: if the tech has this field, use it. Must be a number.
+				delay = pInstancedict["Alternate-Warp-FTL"]["Setup"]["nBSGDimensionalJump"]["Cooldown Time"]
 
 	hardpointProtoNames, hardpointProtoBlacklist = AuxProtoElementNames()
 
-	return pInstance, pInstancedict, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist
+	return pInstance, pInstancedict, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, delay
 
 # This is just another auxiliar function I made for this
 def nBSGDimensionalJumpDisabledCalculations(type, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, pSubsystem, pShip, justFindOne=0):
@@ -510,6 +513,36 @@ def InstateFTLStrCooldown(pInstance, delay=0.2, remove=0): # TO-DO add a method 
 	else:
 		print __name__, "InstateFTLStrCooldown could not find a pInstance..."
 
+# Auxiliar function TO-DO ADD TO DOC
+def afterGlowFTLact(pAction, pWS):
+	debug(__name__ + ", afterGlowFTLact")
+
+	pShip = pWS.GetShip()
+	if pShip != None:
+		afterGlowFTLC(pShip)
+	return 0
+
+# Auxiliar function TO-DO ADD TO DOC
+def afterGlowFTLactISI(pAction, pShipID):
+	debug(__name__ + ", afterGlowFTLactI")
+
+	pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), pShipID)
+	if pShip != None:
+		afterGlowFTL(pShip)
+	return 0
+
+# Auxiliar function TO-DO ADD TO DOC
+def afterGlowFTLC(pShip):
+	debug(__name__ + ", afterGlowFTL")
+	try:
+		if pShip != None:
+			pInstance, pInstancedict, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, delay = nBSGDimensionalJumpBasicConfigInfo(pShip)
+			if pInstance != None:
+				InstateFTLStrCooldown(pInstance, remove=0)
+				InstateFTLCooldown(pInstance, delay)
+	except:
+		traceback.print_exc()
+
 def CanTravel(self): # NOTE: Requires CanTravelShip
 	debug(__name__ + ", CanTravel")
 	return CanTravelShip(self.GetShip())
@@ -553,7 +586,7 @@ def CanTravelShip(pShip):
 	#			MissionLib.QueueActionToPlay(App.CharacterAction_Create(pXO, App.CharacterAction.AT_SAY_LINE, "EngineeringNeedPowerToEngines", None, 1))
 	#	return "Impulse Engines offline"
 
-	pInstance, pInstancedict, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist = nBSGDimensionalJumpBasicConfigInfo(pShip)
+	pInstance, pInstancedict, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, delay = nBSGDimensionalJumpBasicConfigInfo(pShip)
 
 	pWarpEngines = pShip.GetWarpEngineSubsystem()
 	if (specificNacelleHPList != None and len(specificNacelleHPList) > 0):
@@ -597,9 +630,9 @@ def CanTravelShip(pShip):
 
 	timeRemaining = AreWeOnFTLCooldown(pInstance)
 	if timeRemaining == None:
-		return "Some kind of error must have happened with pInstances for ", __name__, "!"
+		return "Some kind of error must have happened with pInstances"
 	if timeRemaining > 0:
-		return "This Drive is still on cooldown, we need to wait another ", timeRemaining, " seconds until the engines are operative again"
+		return "Drive is still spooling for another "+ str(timeRemaining) +" seconds"
 			
 	#pSet = pShip.GetContainingSet()
 	#pNebula = pSet.GetNebula()
@@ -679,14 +712,11 @@ def CanContinueTravelling(self): # TO-DO UPDATE
 		bIsPlayer = 1
 	pWarpEngines = pShip.GetWarpEngineSubsystem()
 	bStatus = 1
-
-	print "TO-DO CanContinueTravelling Check"
 	isEquipped = IsShipEquipped(pShip)
 	if not isEquipped:
-		print "  - TO-DO Not equipped"
 		bStatus = 0
 	else:
-		pInstance, pInstancedict, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist = nBSGDimensionalJumpBasicConfigInfo(pShip)
+		pInstance, pInstancedict, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, delay = nBSGDimensionalJumpBasicConfigInfo(pShip)
 		try:
 			InstateFTLStrCooldown(pInstance, remove=-1)
 			timeR = AreWeOnFTLStretch(pInstance)
@@ -969,7 +999,7 @@ def CreateDetachedElectricExplosion(fRed, fGreen, fBlue, fSize, fLifeTime, sFile
 		pEffect.AddSizeKey(0.0, 0.8 * fSize)
 		pEffect.AddSizeKey(0.2, 1.0 * fSize)
 		pEffect.AddSizeKey(0.6, 1.0 * fSize)
-		pEffect.AddSizeKey(0.8, 0.7 * fSize)
+		pEffect.AddSizeKey(0.8, 0.5 * fSize)
 		pEffect.AddSizeKey(1.0, 0.1 * fSize)
 
 		pEffect.SetEmitLife(fEmitLife)
@@ -1415,7 +1445,7 @@ def SetupSequenceISI(pShip=None):
 	except:
 		sRace = ""
 
-	myBoosting = 200.0
+	myBoosting = 5.0
 	if HasPhasednBSGDimensionalJumpDrive(pShip):
 		myBoosting = 50.0
 	elif HasCloakedJumpSystem(pShip):
@@ -1500,6 +1530,10 @@ def SetupSequenceISI(pShip=None):
 	# Hide the ship.
 	pHideShip = App.TGScriptAction_Create(sCustomActionsScript, "HideShip", pShipID, 1)
 	pExitWarpSeq.AddAction(pHideShip, None)
+
+	# An extra, ensures cooldown works
+	pFlagShip = App.TGScriptAction_Create(__name__, "afterGlowFTLactISI", pShipID)
+	pExitWarpSeq.AddAction(pFlagShip, None)
 
 	# Extra added
 	pWarpActionR0 = App.TGScriptAction_Create(__name__, "ConditionalCloak", pShipID, 1)
@@ -1750,6 +1784,10 @@ def SetupSequence(self):
 		pHideShip = App.TGScriptAction_Create(sCustomActionsScript, "HideShip", pShipID, 1)
 		pExitWarpSeq.AddAction(pHideShip, None)
 
+		# An extra, ensures cooldown works
+		pFlagShip = App.TGScriptAction_Create(__name__, "afterGlowFTLact", pWS)
+		pExitWarpSeq.AddAction(pFlagShip, None)
+		
 		# Extra added
 		pWarpActionR0 = App.TGScriptAction_Create(__name__, "ConditionalCloak", pShipID, 1)
 		pExitWarpSeq.AddAction(pWarpActionR0, None)
