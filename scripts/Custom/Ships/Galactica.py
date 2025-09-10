@@ -39,8 +39,8 @@ credits = {
 Foundation.ShipDef.Galactica = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
 Foundation.ShipDef.Galactica.dTechs = {
 	'Fed Ablative Armor': { "Plates": ["Armour"]},
-	"AutoTargeting": { "Pulse": [3, 1] },
-	'Simulated Point Defence' : { "Distance": 35.0, "InnerDistance": 5.0, "Effectiveness": 0.5, "LimitTurn": 0.125, "LimitSpeed": 35, "Period": 0.1, "MaxNumberTorps": 12, },
+	"AutoTargeting": { "Pulse": [6, 1] },
+	'Simulated Point Defence' : { "Distance": 35.0, "InnerDistance": 5.0, "Effectiveness": 0.75, "LimitTurn": 5.125, "LimitSpeed": 155, "Period": 0.1, "MaxNumberTorps": 12, },
 	"Alternate-Warp-FTL": { # (#)
 		"Setup": { # (#)
 			"nBSGDimensionalJump": {	"Nacelles": ["FTL Drive 1", "FTL Drive 2"], "Core": ["Reactor Module"], "Cooldown Time": 15 * 60},

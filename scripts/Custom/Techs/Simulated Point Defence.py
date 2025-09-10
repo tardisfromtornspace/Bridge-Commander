@@ -41,7 +41,7 @@ from bcdebug import debug
 import traceback
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-            "Version": "0.94",
+            "Version": "1.0",
             "License": "LGPL",
             "Description": "Read the small title above for more info"
             }
@@ -64,8 +64,10 @@ try:
 
 	bOverflow = 0
 	pTimer = None
-	pAllShipsWithTheTech = {} # Has the ship, with the pInstances as keys
+	pAllShipsWithTheTech = {} # Has the shipID as keys, with the pInstances as values
 	ticksPerKilometer = 225/40 # 225 is approximately 40 km, so 225/40 is the number of ticks per kilometer
+
+	strTechName = "Simulated Point Defence"
 
 
 	global lImmuneTorps   #Some torps do not have an inner name, only empty, for this case we have a list of some weapons our point defence should not block - for example telepathic attacks done via dummy projectile
@@ -76,6 +78,36 @@ try:
 		"MinJW",
 		"VorlonWeapon",
 		)
+
+	def GetShipFromID(pShipID):
+		debug(__name__ + ", GetShipFromID")
+		pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), pShipID)
+		return pShip
+
+	def GetWellShipFromID(pShipID):
+		debug(__name__ + ", GetWellShipFromID")
+		pShip = GetShipFromID(pShipID)
+		if not pShip or pShip.IsDead() or pShip.IsDying():
+			return None
+		return pShip
+
+	def findShipInstance(pShip):
+		debug(__name__ + ", findShipInstance")
+		pInstance = None
+		try:
+			if not pShip:
+				return pInstance
+			if FoundationTech.dShips.has_key(pShip.GetName()):
+				pInstance = FoundationTech.dShips[pShip.GetName()]
+		except:
+			pass
+		return pInstance
+
+	def getShipIDfromInstance(pInstance):
+		pShipID = None
+		if pInstance != None and hasattr(pInstance, "pShipID"):
+			pShipID = pInstance.pShipID
+		return pShipID
 
 	def Start():
 		global pTimer, bOverflow
@@ -95,9 +127,9 @@ try:
 				self.pEventHandler = App.TGPythonInstanceWrapper()
 				self.pEventHandler.SetPyWrapper(self)
 
-				bOverflow = 1
+				#bOverflow = 1 TO-DO COMMENTED FOR TESTING
 				self.pTimer = None
-				self.countdown()
+				#self.countdown() TO-DO COMMENTED FOR TESTING
 
 
 		def Attach(self, pInstance):
@@ -105,12 +137,11 @@ try:
 			pShip = App.ShipClass_Cast(App.TGObject_GetTGObjectPtr(pInstance.pShipID))
 			if pShip != None:
 				global bOverflow, pAllShipsWithTheTech
-				dMasterDict = pInstance.__dict__['Simulated Point Defence']
-				pAllShipsWithTheTech[pInstance] = pShip
+				pAllShipsWithTheTech[getShipIDfromInstance(pInstance)] = pInstance # NO NEED TO SAVE SHIPS IF WE CAN DO THIS AND THEN GET THE pShip, right?, RIGHT? Well, not wholly
 					
 				if not bOverflow:
 					bOverflow = 1
-					self.pTimer = None
+					self.deleteTimer()
 					#print "SimulatedPointDefence: initiating new countdown for:", pShip.GetName()
 					self.countdown()
 					
@@ -121,67 +152,39 @@ try:
 			pInstance.lTechs.append(self)
 			#print "Simulated Point Defence: attached to ship:", pShip.GetName()
 
-		def Detach(self, pInstance):
+
+		def Detach(self, pInstance, iShipID = None):
 			debug(__name__ + ", Detach")
 			global bOverflow, pAllShipsWithTheTech
-			if pInstance == None:
-				return
 
-			del pInstance.__dict__['Simulated Point Defence Mine']
-
-			if pAllShipsWithTheTech.has_key(pInstance):
-				#print "key found, to remove ", pInstance
-
-				del pAllShipsWithTheTech[pInstance]
-
-			pShip = App.ShipClass_Cast(App.TGObject_GetTGObjectPtr(pInstance.pShipID))
-			if pShip != None:
-				dMasterDict = pInstance.__dict__['Simulated Point Defence']
-				#self.pShip = None
-			else:
-				print "SimulatedPointDefence Error (at Detach): couldn't acquire ship of id", pInstance.pShipID
-				pass
-
-			#print "Simulated Point Defence: detached from ship"
-			#if pShip != None:
-			#	print "---ship name:", pShip.GetName()
-
-			pInstance.lTechs.remove(self)
-
-
-		def Detach2(self, pInstance, pShip):
-			debug(__name__ + ", Detach")
-			global bOverflow, pAllShipsWithTheTech
-			
-			if not pInstance and pShip:
-				try:
-					pInstance = FoundationTech.dShips[pShip.GetName()]
-					if pInstance == None:
-						return
-				except:
-					print "Simulated Point Defence: cancelling, error in try from Detach2 found..."
+			if iShipID == None:
+				auxShipID = getShipIDfromInstance(pInstance)
+				if auxShipID != None:
+					iShipID = pInstance.pShipID
+			if iShipID != None:
+				if pAllShipsWithTheTech.has_key(iShipID):
+					del pAllShipsWithTheTech[iShipID]
+				else:
 					return
-				
-			if pAllShipsWithTheTech.has_key(pInstance):
-				#print "key found, to remove ", pInstance
-				del pAllShipsWithTheTech[pInstance]
-			if pShip == None and pInstance != None:
-				pShip = App.ShipClass_Cast(App.TGObject_GetTGObjectPtr(pInstance.pShipID))
-			if pShip != None and pInstance != None:
-				dMasterDict = pInstance.__dict__['Simulated Point Defence']
-				del pInstance.__dict__['Simulated Point Defence Mine']
 			else:
-				print "SimulatedPointDefence Error (at Detach): couldn't acquire ship"
-				if pInstance != None:
-					print "--- of id", pInstance.pShipID
-				pass
+				print __name__ , ", Detach: the pInstance has no pShipID attribute?"
 
-			#print "Simulated Point Defence: cleanup-detached from ship"
-			#if pShip != None:
-			#	print "---ship name:", pShip.GetName()
+			try:
+				if pInstance == None:
+					return
 
-			if pInstance != None:
+				pInstanceDict = pInstance.__dict__
+				try:
+					if pInstanceDict.has_key('Simulated Point Defence Mine'):
+						del pInstanceDict['Simulated Point Defence Mine']
+				except:
+					print __name__ , " Error (at Detach):"
+					traceback.print_exc()
+				
 				pInstance.lTechs.remove(self)
+			except:
+				print __name__ + " ERROR while calling Detach:"
+				traceback.print_exc()
 
 		def countdown(self):
 			debug(__name__ + ", Countdown")
@@ -194,45 +197,70 @@ try:
 				self.pTimer.SetPriority(App.TimeSliceProcess.LOW)	
 				self.pTimer.SetDelayUsesGameTime(1)
 
+		def deleteTimer(self):
+			if hasattr(self, "pTimer") and self.pTimer != None:
+				try:
+					self.pTimer = None #self.pTimer.__del__()
+				except:
+					traceback.print_exc()
+			
+
 		def lookclosershipsEveryone(self, fTime):
 			debug(__name__ + ", lookclosershipsEveryone")
 			global pAllShipsWithTheTech
-			for myShipInstance in pAllShipsWithTheTech.keys():
-				if myShipInstance != None:
-					self.lookcloserProjectiles(fTime, pAllShipsWithTheTech[myShipInstance], myShipInstance)
+			for iShipID in pAllShipsWithTheTech.keys():
+				if iShipID != None and pAllShipsWithTheTech[iShipID] != None:
+					self.checkWell(fTime, iShipID, pAllShipsWithTheTech[iShipID])
 
+			if not pAllShipsWithTheTech: # If the dictionary is empty
+				global bOverflow
+				self.deleteTimer()
+				bOverflow = 0
+				
+
+		def checkWell(self, fTime, myShipID, pInstanceO):
+			pShip = GetShipFromID(myShipID)
+			if pShip:
+				pInstance = findShipInstance(pShip)
+				if pInstance != None:
+					pInstanceShipID = getShipIDfromInstance(pInstance) # TO-DO
+					if pInstanceShipID != myShipID: # Weird but can happen for the player - trying to make this as player-agnostic as possible, in case this ever gets implemented for multiplayer
+						self.Detach(pInstanceO, myShipID) #self.Detach(pInstance, myShipID) #self.Detach(pInstance, pInstanceShipID)
+					pInstanceDict = pInstance.__dict__
+					if pInstanceDict.has_key(strTechName):
+						self.lookcloserProjectiles(fTime, pShip, pInstance)
+					else:
+						#print __name__ , " checkWell: cancelling, the ship", pShip.GetName(), " has no '", strTechName, "'"
+						self.Detach(pInstance, myShipID)
+				else:
+					try:
+						self.Detach(pInstanceO, myShipID)
+					except:
+						print __name__ , "error when calling checkWell:"
+						traceback.print_exc()
+			else:
+				try:
+					self.Detach(pInstanceO, myShipID)
+				except:
+					print __name__ , "error when calling checkWell:"
+					traceback.print_exc()
+			
 		def lookcloserProjectiles(self, fTime, pShip, pInstance):
 			debug(__name__ + ", lookcloserProjectiles")
-			if pInstance == None:
-				return
-
-			if pShip == None or not pInstance.__dict__.has_key("Simulated Point Defence"):
-				self.Detach2(pInstance, pShip)
-				return
 
 			#print "The ship which is using it is ", pShip.GetName()
 
+			pInstanceDict = pInstance.__dict__
+
 			global defaultPeriod, defaultSlice
-			if not pInstance.__dict__['Simulated Point Defence'].has_key("Period"):
-				pInstance.__dict__['Simulated Point Defence']["Period"] = defaultPeriod
+			if not pInstanceDict[strTechName].has_key("Period"):
+				pInstanceDict[strTechName]["Period"] = defaultPeriod
 
-			if not pInstance.__dict__.has_key('Simulated Point Defence Mine'):
-				pInstance.__dict__['Simulated Point Defence Mine'] = {}
+			if not pInstanceDict.has_key('Simulated Point Defence Mine'):
+				pInstanceDict['Simulated Point Defence Mine'] = {}
 
-			if not pInstance.__dict__['Simulated Point Defence Mine'].has_key("TimeRemaining"):
-				pInstance.__dict__['Simulated Point Defence Mine']["TimeRemaining"] = 0.0
-
-			
-			try:
-				pInstanceAux = FoundationTech.dShips[pShip.GetName()]
-				if pInstanceAux == None or not pInstanceAux.__dict__.has_key("Simulated Point Defence"):
-					print "Simulated Point Defence: cancelling, no FTech Ship Instance obj"
-					self.Detach2(pInstance, pShip)
-					return
-			except:
-				print "Simulated Point Defence: cancelling, error in try found..."
-				self.Detach2(pInstance, pShip)
-				return
+			if not pInstanceDict['Simulated Point Defence Mine'].has_key("TimeRemaining"):
+				pInstanceDict['Simulated Point Defence Mine']["TimeRemaining"] = 0.0
 
 			energyCommited = 1.0
 			pShields = pShip.GetShields()
@@ -241,12 +269,12 @@ try:
 				if energyCommited < 0.5:
 					energyCommited = 0.5
 
-			pInstance.__dict__['Simulated Point Defence Mine']["TimeRemaining"] = pInstance.__dict__['Simulated Point Defence Mine']["TimeRemaining"] - defaultSlice * energyCommited
+			pInstanceDict['Simulated Point Defence Mine']["TimeRemaining"] = pInstanceDict['Simulated Point Defence Mine']["TimeRemaining"] - defaultSlice * energyCommited
 
-			if pInstance.__dict__['Simulated Point Defence Mine']["TimeRemaining"] > 0:	
+			if pInstanceDict['Simulated Point Defence Mine']["TimeRemaining"] > 0:	
 				return
 			else:
-				pInstance.__dict__['Simulated Point Defence Mine']["TimeRemaining"] = pInstance.__dict__['Simulated Point Defence']["Period"]
+				pInstanceDict['Simulated Point Defence Mine']["TimeRemaining"] = pInstanceDict[strTechName]["Period"]
 
 			pSet = pShip.GetContainingSet()
 			if not pSet:
@@ -259,15 +287,15 @@ try:
 			# Allowing dynamic modification of this value mid-battle
 			global defaultDistance, defaultInnerDistance
 
-			if not pInstance.__dict__['Simulated Point Defence'].has_key("Distance"):
-				pInstance.__dict__['Simulated Point Defence']["Distance"] = defaultDistance
+			if not pInstanceDict[strTechName].has_key("Distance"):
+				pInstanceDict[strTechName]["Distance"] = defaultDistance
 
-			iRange = pInstance.__dict__['Simulated Point Defence']["Distance"]
+			iRange = pInstanceDict[strTechName]["Distance"]
 
-			if not pInstance.__dict__['Simulated Point Defence'].has_key("InnerDistance"):
-				pInstance.__dict__['Simulated Point Defence']["InnerDistance"] = defaultInnerDistance
+			if not pInstanceDict[strTechName].has_key("InnerDistance"):
+				pInstanceDict[strTechName]["InnerDistance"] = defaultInnerDistance
 
-			iMinRange = pInstance.__dict__['Simulated Point Defence']["InnerDistance"]
+			iMinRange = pInstanceDict[strTechName]["InnerDistance"]
 
 			lTorpTargets = []
 			subSys = []  
@@ -294,37 +322,12 @@ try:
 				if not pShip:
 					return
 
-				debug(__name__ + ", Checking Distance 2")
 				isTorpedo = pObject.IsTypeOf(App.CT_TORPEDO)
-				debug(__name__ + ", Checking Distance 2A")
 				if isTorpedo:
-					#objName = None
-					#if pObject and hasattr(pObject, "GetName") and pObject.GetName() != None:
-					#	objName = pObject.GetName()
-					#debug(__name__ + ", Checking Distance 2B")
-					#sameName = 0
-					#if objName != None:
-					#	sameName = (objName == shipName)
-					#debug(__name__ + ", Checking Distance 2C")
-					#if not sameName:
-					debug(__name__ + ", Checking Distance 2D")
-					if not (self.Distance(pShip, pObject, iMinRange * ticksPerKilometer) < (iMinRange * ticksPerKilometer)):
-						
-					
-
-				
-				#sameName = (objName == shipName)
-				#debug(__name__ + ", Checking Distance 2B")
-
-				#if pObject.IsTypeOf(App.CT_TORPEDO) and not pObject.GetName() == pShip.GetName() and not (self.Distance(pShip, pObject, iMinRange * ticksPerKilometer) < (iMinRange * ticksPerKilometer)):
-				#if isTorpedo and not sameName and not (self.Distance(pShip, pObject, iMinRange * ticksPerKilometer) < (iMinRange * ticksPerKilometer)):
-				
-						debug(__name__ + ", Checking Distance 3")
+					if not (self.Distance(pShip, pObject, iMinRange * ticksPerKilometer) < (iMinRange * ticksPerKilometer)):		
 						pTorp = App.Torpedo_GetObjectByID(None, pObject.GetObjID())
-						debug(__name__ + ", Checking Distance 4")
 						if pTorp:
 							pFiredShip = App.ShipClass_GetObjectByID(None, pTorp.GetTargetID())
-							debug(__name__ + ", Checking Distance 5")
 							## Check the friendlies and enemy group for the ship. If that ship does not exist it is a stray torpedo and must be shot down in case it hits us
 							if not pFiredShip or (pFriendlies.IsNameInGroup(pFiredShip.GetName()) and thisShipInFriendlyGroup) or (pEnemies.IsNameInGroup(pFiredShip.GetName()) and thisShipInEnemyGroup)  or (pGroup.IsNameInGroup(pFiredShip.GetName()) and thisShipInNeutralGroup):
 								if pTorp.GetTargetID() != App.NULL_ID: # 0.93 update, not target torps that have same target and parent ID, because those cannot normally harm them
@@ -332,9 +335,6 @@ try:
 										lTorpTargets.append(pObject.GetObjID())
 								else:
 									lTorpTargets.append(pObject.GetObjID())
-							debug(__name__ + ", Checking Distance 6")
-
-			debug(__name__ + ", Going to remove iterator")
 
 			pProx.EndObjectIteration(kIter) 
 
@@ -349,25 +349,28 @@ try:
 
 			global defaultEffectiveness, defaultLimitSpeed, defaultMaxNumberTorps
 
-			if not pInstance.__dict__['Simulated Point Defence'].has_key("MaxNumberTorps"):
-				pInstance.__dict__['Simulated Point Defence']["MaxNumberTorps"] = defaultMaxNumberTorps
+			pInstanceDict = pInstance.__dict__
 
-			maxTorpsPerTurn = pInstance.__dict__['Simulated Point Defence']["MaxNumberTorps"]
 
-			if not pInstance.__dict__['Simulated Point Defence'].has_key("Effectiveness"):
-				pInstance.__dict__['Simulated Point Defence']["Effectiveness"] = defaultEffectiveness
+			if not pInstanceDict[strTechName].has_key("MaxNumberTorps"):
+				pInstanceDict[strTechName]["MaxNumberTorps"] = defaultMaxNumberTorps
 
-			effectiveness = pInstance.__dict__['Simulated Point Defence']["Effectiveness"]
+			maxTorpsPerTurn = pInstanceDict[strTechName]["MaxNumberTorps"]
+
+			if not pInstanceDict[strTechName].has_key("Effectiveness"):
+				pInstanceDict[strTechName]["Effectiveness"] = defaultEffectiveness
+
+			effectiveness = pInstanceDict[strTechName]["Effectiveness"]
             
-			hasLimitTurn = pInstance.__dict__['Simulated Point Defence'].has_key("LimitTurn")
+			hasLimitTurn = pInstanceDict[strTechName].has_key("LimitTurn")
 			divider = 1
 			if hasLimitTurn:
-				divider = pInstance.__dict__['Simulated Point Defence']["LimitTurn"]
+				divider = pInstanceDict[strTechName]["LimitTurn"]
 
 			damageLimit = 1000000
-			hasLimitDamage = pInstance.__dict__['Simulated Point Defence'].has_key("LimitDamage")
+			hasLimitDamage = pInstanceDict[strTechName].has_key("LimitDamage")
 			if hasLimitDamage:
-					damageLimit = pInstance.__dict__['Simulated Point Defence']["LimitDamage"]
+					damageLimit = pInstanceDict[strTechName]["LimitDamage"]
 
 			energyCommited = 1.0
 			pShields = pShip.GetShields()
@@ -377,19 +380,19 @@ try:
 					energyCommited = 1.25
 
 
-			if not pInstance.__dict__['Simulated Point Defence'].has_key("LimitSpeed"):
-				pInstance.__dict__['Simulated Point Defence']["LimitSpeed"] = defaultLimitSpeed
+			if not pInstanceDict[strTechName].has_key("LimitSpeed"):
+				pInstanceDict[strTechName]["LimitSpeed"] = defaultLimitSpeed
 
-			dictLimitSpeed = pInstance.__dict__['Simulated Point Defence']["LimitSpeed"]
+			dictLimitSpeed = pInstanceDict[strTechName]["LimitSpeed"]
 
 			preferredWeapon = "None"
 			pWeaponSystem = None
 			subSys = []
 
-			havePhaser = pInstance.__dict__['Simulated Point Defence'].has_key("Phaser")
-			havePulse = pInstance.__dict__['Simulated Point Defence'].has_key("Pulse")
-			haveTorpedo = pInstance.__dict__['Simulated Point Defence'].has_key("Torpedo")
-			haveTractor = pInstance.__dict__['Simulated Point Defence'].has_key("Tractor")
+			havePhaser = pInstanceDict[strTechName].has_key("Phaser")
+			havePulse = pInstanceDict[strTechName].has_key("Pulse")
+			haveTorpedo = pInstanceDict[strTechName].has_key("Torpedo")
+			haveTractor = pInstanceDict[strTechName].has_key("Tractor")
 			nottooSpecificToSwitch = 0
 
 			if havePhaser or havePulse or haveTorpedo or haveTractor:
@@ -402,31 +405,31 @@ try:
 				priorityTorp = 0
 				priorityTractor = 0
 				if havePhaser:
-					if pInstance.__dict__['Simulated Point Defence']["Phaser"].has_key("Priority"):
-						priorityPhaser = pInstance.__dict__['Simulated Point Defence']["Phaser"]["Priority"]
+					if pInstanceDict[strTechName]["Phaser"].has_key("Priority"):
+						priorityPhaser = pInstanceDict[strTechName]["Phaser"]["Priority"]
 						if priorityPhaser < 0.0:
 							priorityPhaser = 0.0
 					else:
 						priorityPhaser = 0.1
 
 				if havePulse:
-					if pInstance.__dict__['Simulated Point Defence']["Pulse"].has_key("Priority"):
-						priorityPulse = pInstance.__dict__['Simulated Point Defence']["Pulse"]["Priority"]
+					if pInstanceDict[strTechName]["Pulse"].has_key("Priority"):
+						priorityPulse = pInstanceDict[strTechName]["Pulse"]["Priority"]
 						if priorityPulse < 0.0:
 							priorityPulse = 0.0
 					else:
 						priorityPulse = 0.1
 				if haveTorpedo:
-					if pInstance.__dict__['Simulated Point Defence']["Torpedo"].has_key("Priority"):
-						priorityTorp = pInstance.__dict__['Simulated Point Defence']["Torpedo"]["Priority"]
+					if pInstanceDict[strTechName]["Torpedo"].has_key("Priority"):
+						priorityTorp = pInstanceDict[strTechName]["Torpedo"]["Priority"]
 						if priorityTorp < 0.0:
 							priorityTorp = 0.0
 					else:
 						priorityTorp = 0.1
 
 				if haveTractor:
-					if pInstance.__dict__['Simulated Point Defence']["Tractor"].has_key("Priority"):
-						priorityTractor = pInstance.__dict__['Simulated Point Defence']["Tractor"]["Priority"]
+					if pInstanceDict[strTechName]["Tractor"].has_key("Priority"):
+						priorityTractor = pInstanceDict[strTechName]["Tractor"]["Priority"]
 						if priorityTractor < 0.0:
 							priorityTractor = 0.0
 					else:
@@ -468,13 +471,11 @@ try:
 						elif haveTractor:
 							pWeaponSystem = pWeaponSystem4
 							preferredWeapon = "Tractor"
-
-				#print "preferredWeapon is", preferredWeapon
 				
 				try:
-					if (not preferredWeapon == "None") and pInstance.__dict__['Simulated Point Defence'].has_key(preferredWeapon) and pInstance.__dict__['Simulated Point Defence'][preferredWeapon].has_key("Properties"):
-						subSysNames = pInstance.__dict__['Simulated Point Defence'][preferredWeapon]["Properties"]
-						if pInstance.__dict__['Simulated Point Defence'][preferredWeapon].has_key("Specially") and pInstance.__dict__['Simulated Point Defence'][preferredWeapon]["Specially"] > 0:
+					if (not preferredWeapon == "None") and pInstanceDict[strTechName].has_key(preferredWeapon) and pInstanceDict[strTechName][preferredWeapon].has_key("Properties"):
+						subSysNames = pInstanceDict[strTechName][preferredWeapon]["Properties"]
+						if pInstanceDict[strTechName][preferredWeapon].has_key("Specially") and pInstanceDict[strTechName][preferredWeapon]["Specially"] > 0:
 							nottooSpecificToSwitch = 0
 						else:
 							nottooSpecificToSwitch = 1
@@ -489,13 +490,12 @@ try:
 					else:
 						nottooSpecificToSwitch = 1
 				except:
-					print "Error found while assigning speciality in", pShip.GetName(), "Probably all assigned systems are disabled or destroyed"
+					print __name__ , "Error found while assigning speciality in ", pShip.GetName(), " Probably all assigned systems are disabled or destroyed"
 					return
 
 			for kTorp in lTorpTargets:
 				pTorp = App.Torpedo_GetObjectByID(None, kTorp)
 				if not pTorp:
-					#print "No torp?"
 					continue
 
 				thisTorpDamage = pTorp.GetDamage()
@@ -511,12 +511,9 @@ try:
 
 				#print "The torp has the damage, speed, turn and lifetime shown here: ", thisTorpDamage, thisTorpSpeed, thisTorpTurn, thisTorpGuideLife
 				if hasattr(pTorp, "GetModuleName") and not pTorp.GetModuleName() == None:
-					
-					#print "There is a torp module, the module name is ", pTorp.GetModuleName()
 					leTorpExtraInfo = __import__(pTorp.GetModuleName(), globals(), locals())
 					if hasattr(leTorpExtraInfo, "GetName"):
 						theTorpName = leTorpExtraInfo.GetName()
-						#print "the name is", theTorpName
 						if theTorpName == "":
 							#print "Having to do a harsher search for not including a name..."
 							global lImmuneTorps
@@ -609,7 +606,6 @@ try:
 
 				#print "finalChance", finalChance, " = effectiveness", effectiveness, " * extraFactor", extraFactor, " * energyCommited", energyCommited, " * leRicochetChance", leRicochetChance, " * turnSpeedEffectiveness", turnSpeedEffectiveness, " * linearSpeedEffectiveness", linearSpeedEffectiveness, " * damageEffectivenness", damageEffectivenness 
 				if preferredWeapon == "Tractor" or preferredWeapon == "Phaser" or App.g_kSystemWrapper.GetRandomNumber(100) <= 100 * finalChance:
-					#print "This torp must be destroyed"
 					if torpsFiredDown >= maxTorpsPerTurn:
 						torpsFiredDown = 0
 						return
@@ -618,7 +614,6 @@ try:
 					pTorpNameStripped = string.split(str(pTorp), '<')[-1]
 					pTorpNameStripped2 = string.split(pTorpNameStripped, '>')[0]
 					sThisFirePointName = FirePointName + " " + pShip.GetName() + " " + pTorpNameStripped2 #str(firepointCount)
-					#print "sThisFirePointName is ", sThisFirePointName
 					firepointCount = firepointCount + 1
 
 					originalSingle = "Unused"
@@ -666,11 +661,6 @@ try:
 							pFirePoint.UpdateNodeOnly()
 							pTorp.AttachObject(pFirePoint)
 
-							#vSubsystemOffset = App.TGPoint3()
-							#vSubsystemOffset.SetXYZ(0, 0, 0)
-
-							#pWeaponSystem.StartFiring(pFirePoint, vSubsystemOffset)
-							#print "Phaser Attack"
 							if donotneedtospamattack == 0:
 								torpsFiredDown = torpsFiredDown + 1
 							pSeq = App.TGSequence_Create()
@@ -772,7 +762,6 @@ try:
 	def WeaponaHit(pObject, pEvent):
 		debug(__name__ + ", WeaponaHit")
 		pShip = App.ShipClass_Cast(pEvent.GetDestination())
-                #print "firepoint was hit, moving to block the torp"
 		if pShip:
 			global dictFirePointToTorp
 			if dictFirePointToTorp.has_key(pShip.GetName()):
@@ -810,7 +799,6 @@ try:
 	def DeleteFirePoint(pAction, sThisFirePointName):
 		debug(__name__ + ", DeleteFirePoint")
 		global dictFirePointToTorp
-		#print "deleting firepoint"
 		pFirepoint = MissionLib.GetShip(sThisFirePointName, None, 1)
 		if not pFirepoint:
 			return 0
@@ -855,7 +843,7 @@ try:
 
 			# We're done.  Close the buffer.
 			kStream.CloseBuffer()
-		#print "and I return"
+
 		return 0
 
 	def MPSendRemoveTorpMessage(pTorp):
@@ -895,10 +883,9 @@ try:
 
 		# We're done.  Close the buffer.
 		kStream.CloseBuffer()
-		#print "end of MPSendRemoveTorpMessage"
 
-	oSimulatedPointDefence = SimulatedPointDefenceDef('Simulated Point Defence')
+	oSimulatedPointDefence = SimulatedPointDefenceDef(strTechName)
 
 except:
-	print "Something went wrong with Simulated Point Defence technology"
+	print "Something went wrong with ", __name__
 	traceback.print_exc()

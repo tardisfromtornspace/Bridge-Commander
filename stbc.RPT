@@ -11623,3 +11623,27 @@ Address   Frame
 //=====================================================
 Current Time: Mon Sep 08 03:22:48 2025
 Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Wed Sep 10 17:11:01 2025
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  00717FDB 01:00316FDB C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+Registers:
+EAX:00000040
+EBX:00000000
+ECX:0000000C
+EDX:0000000C
+ESI:00001680
+EDI:00000040
+CS:EIP:0023:00717FDB
+SS:ESP:002B:0019F898  EBP:40F62D9C
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010202
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+00717FDB  0019F898  0001:00316FDB C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
