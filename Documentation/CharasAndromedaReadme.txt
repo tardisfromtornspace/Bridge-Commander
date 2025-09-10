@@ -1,4 +1,10 @@
-== Changelog ==
+==Changelog==
+1.2.2 -
+   Updates:
+   * Updated SimulatedPointDefence to 1.0 to allow cleaner logic and cleanup.
+1.2.1 -
+   Updates:
+   * Added an Autoload patch that provides full customization for slipstream for GC. 
 1.2.0 -
    Updates:
    * Updated readme and install guide to reflect new versions.

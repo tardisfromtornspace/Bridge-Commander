@@ -1,4 +1,7 @@
 ==Changelog==
+1.6.6 -
+   Updates:
+   * Updated SimulatedPointDefence to 1.0 to allow cleaner logic and cleanup.
 1.6.5 -
    Updates:
    * Updated FoolTargeting to 0.45 to allow patching it to negate regular InaccurateFire.

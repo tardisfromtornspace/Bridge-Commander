@@ -1,4 +1,7 @@
-== Changelog ==
+==Changelog==
+1.2.0 -
+   Updates:
+   * Updated SimulatedPointDefence to 1.0 to allow cleaner logic and cleanup.
 1.1.19 - Updates:
   * Updated OriBeam trail to 1.02 to provide more customization.
   * Updated SGOriBeam to 0.2 to provide a bit more embellishment.

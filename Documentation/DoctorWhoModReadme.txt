@@ -1,4 +1,7 @@
 == Changelog ==
+1.2.4 -
+   Updates:
+   * Updated SimulatedPointDefence to 1.0 to allow cleaner logic and cleanup.
 1.2.3 - Fixes:
    * Updated AdvArmourTechThree from 1.83 to 1.84, fixed weird button bug.
    * Upgraded B5Defences to 1.10.
