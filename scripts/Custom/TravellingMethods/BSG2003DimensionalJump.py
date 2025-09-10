@@ -16,9 +16,9 @@
 # NOTE: all functions/methods and attributes defined here (in this prototype example plugin, nBSGDimensionalJump) are required to be in the plugin, with the exclusion of:
 # ------ MODINFO, which is there just to verify versioning.
 # ------ ALTERNATESUBMODELFTL METHODS subsection, which are exclusively used for alternate SubModels for FTL which is a separate but linked mod, or to import needed modules.
-# ------ Auxiliar functions: "AnObjectDying", "AuxProtoElementNames", "nBSGDimensionalJumpFlash", "CreateDetachedElectricExplosion", "findShipInstance", "HasPhasednBSGDimensionalJumpDrive", "HasCloakedJumpSystem", "LoadGFX", "PlaynBSGDimensionalJumpSound", "PlaynBSGDimensionalJumpSoundC", "nBSGDimensionalJumpBasicConfigInfo" and "nBSGDimensionalJumpDisabledCalculations".
-# ------ Auxiliar variables: "defineTravelSpaceNoise" and "pnBSGDimensionalJumpDriveEngineSound", used for keeping tabs on our alternate pSets and the sound that plays while on jumpspace.
-# ------ Auxiliar class "WhyMissionLibGetsError" and its instance "basicListener"
+# ------ Auxiliar functions: "AuxProtoElementNames", "nBSGDimensionalJumpFlash", "CreateDetachedElectricExplosion", "findShipInstance", "HasPhasednBSGDimensionalJumpDrive", "HasCloakedJumpSystem", "LoadGFX", "PlaynBSGDimensionalJumpSound", "PlaynBSGDimensionalJumpSoundC", "nBSGDimensionalJumpBasicConfigInfo" and "nBSGDimensionalJumpDisabledCalculations".
+# ------ Auxiliar variables: and , used for keeping tabs on our alternate pSets and the sound that plays while on jumpspace.
+# ------ Auxiliar class  and its instance 
 # ------ Auxiliar functions for intra-system intercept (ISI) support, which as a result of being a common-made function between default GalaxyCharts functions/methods, regular AlternateSubModelFTL and ISI, while not required to be on the plugin, some of their contents are actually required if they are not there: "awayNavPointDistanceCalc", "CanTravelShip", "ConditionalCloak", "ConditionalDecloak", "EngageSeqTractorCheckI", "GetEngageDirectionISI", "GetExitedTravelEventsI", "GetStartTravelEventsI", "GetEngageDirectionC", "InSystemIntercept", "MaintainTowingActionI", "PlaynBSGDimensionalJumpSoundI", "removeTractorISITowInfo", "SetupSequenceISI" and "SetupTowingI".
 # Please note that "GetTravelSetToUse" has been modified to allow a different Travel Set.
 # === How-To-Add ===
@@ -260,7 +260,6 @@ import traceback
 ####   ALTERNATESUBMODELFTL METHODS
 #######################################
 
-
 ENGAGING_ALTERNATEFTLSUBMODEL = App.UtopiaModule_GetNextEventType() # For when we are immediately about to fly with this FTL method
 DISENGAGING_ALTERNATEFTLSUBMODEL = App.UtopiaModule_GetNextEventType() # For when we are immediately about to stop flying with this FTL method
 # Due to AlternateSubModelFTL implementation, only 1 function can cover 1 event, no multiple functions can cover the same event directly. While on regular implementation of these SubModel FTL method that limits nothing, if you want multiple functions to respond, you must create a parent function of sorts that calls all the other functions you want, or create some sort of alternate listener inside some function.
@@ -337,7 +336,7 @@ def IsShipEquipped(pShip):
 	return 0
 
 # An aux function, checks if this ship can do phased nBSGDimensionalJumpDrive. In order for ships that used another version can still use this, it follows similar functionality.
-def HasPhasednBSGDimensionalJumpDrive(pShip, myStr = "Jump Cloak"):
+def HasPhasednBSGDimensionalJumpDrive(pShip, myStr = "Better Jump"):
 	found = 0
         pIterator = pShip.StartGetSubsystemMatch(App.CT_SHIP_SUBSYSTEM)
 	pSystem = pShip.GetNextSubsystemMatch(pIterator)
@@ -538,8 +537,8 @@ def afterGlowFTLC(pShip):
 		if pShip != None:
 			pInstance, pInstancedict, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, delay = nBSGDimensionalJumpBasicConfigInfo(pShip)
 			if pInstance != None:
-				InstateFTLStrCooldown(pInstance, remove=0)
-				InstateFTLCooldown(pInstance, delay)
+				InstateFTLStrCooldown(pInstance, remove=1) # No longer stretching
+				#TO-DO UNCOMMENT THIS InstateFTLCooldown(pInstance, delay)
 	except:
 		traceback.print_exc()
 
@@ -573,18 +572,6 @@ def CanTravelShip(pShip):
 					pSequence.Play ()
 					App.g_kLocalizationManager.Unload (pDatabase)
 		return "This ship is not equipped with Kobollian FTL Jump Drive"
-
-	#pImpulseEngines = pShip.GetImpulseEngineSubsystem()
-	#if not pImpulseEngines:
-	#	return "No Impulse Engines"
-
-	#if (pImpulseEngines.GetPowerPercentageWanted() == 0.0):
-	#	# Ship is trying to warp with their engines off.
-	#	if bIsPlayer == 1:
-	#		pXO = App.CharacterClass_GetObject(App.g_kSetManager.GetSet("bridge"), "XO")
-	#		if pXO:
-	#			MissionLib.QueueActionToPlay(App.CharacterAction_Create(pXO, App.CharacterAction.AT_SAY_LINE, "EngineeringNeedPowerToEngines", None, 1))
-	#	return "Impulse Engines offline"
 
 	pInstance, pInstancedict, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, delay = nBSGDimensionalJumpBasicConfigInfo(pShip)
 
@@ -633,69 +620,7 @@ def CanTravelShip(pShip):
 		return "Some kind of error must have happened with pInstances"
 	if timeRemaining > 0:
 		return "Drive is still spooling for another "+ str(timeRemaining) +" seconds"
-			
-	#pSet = pShip.GetContainingSet()
-	#pNebula = pSet.GetNebula()
-	#if pNebula:
-	#	if pNebula.IsObjectInNebula(pShip):
-	#		if bIsPlayer == 1:
-	#			if pHelm:
-	#				App.CharacterAction_Create(pHelm, App.CharacterAction.AT_SAY_LINE, "CantWarp2", None, 1).Play()
-	#			else:
-	#				# No character, display subtitle only.
-	#				pDatabase = App.g_kLocalizationManager.Load("data/TGL/Bridge Crew General.tgl")
-	#				if pDatabase:
-	#					pSequence = App.TGSequence_Create()
-	#					pSubtitleAction = App.SubtitleAction_Create(pDatabase, "CantWarp2")
-	#					pSubtitleAction.SetDuration(3.0)
-	#					pSequence.AddAction(pSubtitleAction)
-	#					pSequence.Play()
-	#					App.g_kLocalizationManager.Unload(pDatabase)
-	#		return "Inside Nebula"
 
-	# See if we are in an asteroid field
-	#AsteroidFields = pSet.GetClassObjectList(App.CT_ASTEROID_FIELD)
-	#for i in AsteroidFields:
-	#	pField = App.AsteroidField_Cast(i)
-	#	if pField:
-	#		if pField.IsShipInside(pShip):
-	#			if bIsPlayer == 1:
-	#				if pHelm:
-	#					App.CharacterAction_Create(pHelm, App.CharacterAction.AT_SAY_LINE, "CantWarp4", None, 1).Play()
-	#				else:
-	#					# No character, display subtitle only.
-	#					pDatabase = App.g_kLocalizationManager.Load ("data/TGL/Bridge Crew General.tgl")
-	#					if pDatabase:
-	#						pSequence = App.TGSequence_Create ()
-	#						pSubtitleAction = App.SubtitleAction_Create (pDatabase, "CantWarp4")
-	#						pSubtitleAction.SetDuration (3.0)
-	#						pSequence.AddAction (pSubtitleAction)
-	#						pSequence.Play ()
-	#						App.g_kLocalizationManager.Unload (pDatabase)
-	#			return "Inside Asteroid Field"
-					
-	#pStarbase12Set = App.g_kSetManager.GetSet("Starbase12")
-	#if pStarbase12Set:
-	#	if pShip.GetContainingSet():
-	#		if pStarbase12Set.GetObjID() == pShip.GetContainingSet().GetObjID():
-	#			pStarbase12 = App.ShipClass_GetObject(pStarbase12Set, "Starbase 12")
-	#			if pStarbase12:
-	#				import AI.Compound.DockWithStarbase
-	#				if AI.Compound.DockWithStarbase.IsInViewOfInsidePoints(pShip, pStarbase12):
-	#					if bIsPlayer == 1:
-	#						if pHelm:
-	#							App.CharacterAction_Create(pHelm, App.CharacterAction.AT_SAY_LINE, "CantWarp3", None, 1).Play()
-	#						else:
-	#							# No character, display subtitle only.
-	#							pDatabase = App.g_kLocalizationManager.Load("data/TGL/Bridge Crew General.tgl")
-	#							if pDatabase:
-	#								pSequence = App.TGSequence_Create()
-	#								pSubtitleAction = App.SubtitleAction_Create(pDatabase, "CantWarp3")
-	#								pSubtitleAction.SetDuration(3.0)
-	#								pSequence.AddAction(pSubtitleAction)
-	#								pSequence.Play()
-	#								App.g_kLocalizationManager.Unload(pDatabase)
-	#					return "Inside Starbase12"
 	return 1
 
 
@@ -879,7 +804,7 @@ def PlaynBSGDimensionalJumpSoundI(pAction, pShipID, sType, sRace):
 	return 0
 
 # Aux. ISI function
-def PlaynBSGDimensionalJumpSoundC(pAction, pShip, sType, sRace):
+def PlaynBSGDimensionalJumpSoundC(pAction, pShip, sType, sRace): #TO-DO Update with the sound from https://www.youtube.com/watch?v=sGCfC4NvQaY at 1:04
 	debug(__name__ + ", PlaynBSGDimensionalJumpSoundC")
 
 	pPlayer = App.Game_GetCurrentPlayer()
@@ -900,7 +825,7 @@ def PlaynBSGDimensionalJumpSoundC(pAction, pShip, sType, sRace):
 
 			if HasCloakedJumpSystem(pShip):
 				if sType == "Enter Warp":
-					sFile = "scripts/Custom/TravellingMethods/SFX/SigmaB5DriveSounds.wav" #TO-DO Update with the sound from https://www.youtube.com/watch?v=sGCfC4NvQaY at 1:04
+					sFile = "scripts/Custom/TravellingMethods/SFX/SigmaB5DriveSounds.wav" 
 				else:
 					sFile = "scripts/Custom/TravellingMethods/SFX/SigmaB5DriveSoundsExit.wav"
 
@@ -984,14 +909,19 @@ def LoadGFX(iNumXFrames, iNumYFrames, sFile):
                             fY = fY + (1.0 / iNumYFrames)
 
 # Aux function TO-DO REMOVE UNECESSARY STUFF
-def CreateDetachedElectricExplosion(fRed, fGreen, fBlue, fSize, fLifeTime, sFile, pEmitFrom, pAttachTo, fFrequency=1,fEmitLife=1,fSpeed=1.0):
+def CreateDetachedElectricExplosion(fRed, fGreen, fBlue, fSize, fLifeTime, sFile, pEmitFrom, pAttachTo, fFrequency=1,fEmitLife=1,fSpeed=1.0, fBrightness= 0.7, vEmitPos=App.NiPoint3(0, 0, 0), vEmitDir=App.NiPoint3(0, 0, 0)):
 	pEffect = None
 	try:     
 		pEffect = App.AnimTSParticleController_Create()
 
-		pEffect.AddColorKey(0.0, fRed, fGreen, fBlue)
-		pEffect.AddColorKey(0.5, fRed, fGreen, fBlue)
-		pEffect.AddColorKey(1.0, 1.0 / 255, 1.0 / 255, 1.0 / 255)
+		pEffect.AddColorKey(0.1, 1.0, 1.0, 1.0)
+		pEffect.AddColorKey(fBrightness, fRed / 255, fGreen / 255, fBlue / 255)
+		pEffect.AddColorKey(1.0, 0.0, 0.0, 0.0)
+
+		pEffect.AddAlphaKey(0.0, 1.0)
+		pEffect.AddAlphaKey(0.7, 0.5)
+		pEffect.AddAlphaKey(1.0, 0.0)
+
 
 		pEffect.AddAlphaKey(0.0, 1.0)
 		pEffect.AddAlphaKey(1.0, 1.0)
@@ -1009,8 +939,13 @@ def CreateDetachedElectricExplosion(fRed, fGreen, fBlue, fSize, fLifeTime, sFile
 		pEffect.SetDetachEmitObject(0) # If set to 1 it makes the main ship invisible LOL
 		pEffect.CreateTarget(sFile)
 		pEffect.SetTargetAlphaBlendModes(0, 7)
+		pEffect.SetGravity(0, -5, 0)
+
+		pEffect.SetDrawOldToNew(0) # TO-DO test line 1 makes it like normal, but 0?
 
 		pEffect.SetEmitFromObject(pEmitFrom)
+
+		pEffect.SetEmitPositionAndDirection(vEmitPos, vEmitDir)
 		pEffect.AttachEffect(pAttachTo)         
 
 		return pEffect
@@ -1021,7 +956,20 @@ def CreateDetachedElectricExplosion(fRed, fGreen, fBlue, fSize, fLifeTime, sFile
 
 	return pEffect
 
-# Aux function. Create flash effect on a ship. TO-DO UPDATE
+# Aux function. TO-DO UPDATE AND ADD TO DOC
+def NiPoint3ToTGPoint3(p, factor = 1.0):
+		debug(__name__ + ", NiPoint3ToTGPoint3")
+		kPoint = App.TGPoint3()
+		kPoint.SetXYZ(p.x * factor, p.y * factor, p.z * factor)
+		return kPoint
+
+# Aux function. TO-DO UPDATE AND ADD TO DOC
+def TGPoint3ToNiPoint3(p, factor=1.0):
+	debug(__name__ + ", TGPoint3ToNiPoint3")
+	kPoint = App.NiPoint3(p.x * factor, p.y * factor, p.z * factor)
+	return kPoint
+
+# Aux function. Create flash effect on a ship. TO-DO UPDATE AND ADD THAT IT NEEDS NANOFXV2 TO WORK
 def nBSGDimensionalJumpFlash(pAction, pShipID, sType, sRace, sparkSize=5, sFile = 'scripts/Custom/TravellingMethods/GFX/nBSGDimensionalJumpFlashAlternate.tga'):
 	pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), pShipID)
 	if not pShip:
@@ -1047,20 +995,48 @@ def nBSGDimensionalJumpFlash(pAction, pShipID, sType, sRace, sparkSize=5, sFile 
 				sFile = "scripts/Custom/TravellingMethods/GFX/SigmaJumpspaceFlash.tga"
 
 		if sparkSize > 0:
-			colorKey = [255.0 / 255, 155.0 / 255, 55.0 / 255]
+			colorKey = [255.0, 155.0, 55.0]
 
 			LoadGFX(4, 4, sFile)
 
 			pAttachTo = pShip.GetContainingSet().GetEffectRoot()
-			fSize = pShip.GetRadius() * sparkSize
-			pEmitFrom = App.TGModelUtils_CastNodeToAVObject(pShip.GetNode())
+			shipR = pShip.GetRadius()
+			fiSize = shipR * sparkSize # TO-DO WE MAY NEED TO TWEAK THIS FOR EACH SHIP AS A CASE-BY-CASE BASIS
+			shipNode = pShip.GetNode() # NiPoint3
+			frontDir = App.TGPoint3_GetModelForward() #TGPoint3
+			shipFwd = TGPoint3ToNiPoint3(frontDir, shipR) # NiPoint3
+			pEmitFrom = App.TGModelUtils_CastNodeToAVObject(shipNode) # TO-DO ADD pS
 
 			try:
-				pEffect = CreateDetachedElectricExplosion(colorKey[0], colorKey[1], colorKey[2], fSize, 1, sFile, pEmitFrom, pAttachTo, fFrequency=1,fEmitLife=1,fSpeed=1)
+				pEffect = CreateDetachedElectricExplosion(colorKey[0], colorKey[1], colorKey[2], fiSize, 1, sFile, pEmitFrom, pAttachTo, fFrequency=1,fEmitLife=1,fSpeed=1, fBrightness=0.7, vEmitPos = shipFwd, vEmitDir    = App.NiPoint3(0, -1, 0)) # TO-DO ADD OTHER STUFF
+
+				#import Custom.NanoFXv2.NanoFX_ScriptActions
+				#pEffect = Custom.NanoFXv2.NanoFX_ScriptActions.CreateControllerFX(sFile,
+				#									pEmitFrom, 
+				#									pAttachTo, 
+				#									fSize = fiSize, 
+				#									vEmitPos    = shipFwd, 
+				#									vEmitDir    = App.NiPoint3(0, -1, 0),
+				#									bInheritVel = 1,
+				#									bDetach     = 0,
+				#									fFrequency = 1,
+				#									fLifeTime = 1,
+				#									fEmitVel = None,
+				#									fVariance = 150.0,
+				#									fDamping    = None,
+				#									vGravity    = None,
+				#									iTiming = 72,
+				#									sType = "Plasma",
+				#									fRed = colorKey[0], 
+				#									fGreen = colorKey[1], 
+				#									fBlue = colorKey[2],
+				#									fBrightness = 0.90) 
+				
 				if pEffect:
 					fEffect = App.EffectAction_Create(pEffect)
 					if fEffect:
 						fEffectList.append(fEffect)
+					#fEffectList.append(pEffect)
 			except:
 				print "nBSGDimensionalJump TravellingMethod: error while calling nBSGDimensionalJumpEnterFlash:"
 				traceback.print_exc()
@@ -1270,122 +1246,7 @@ def EngageSeqTractorCheckI(pAction, pShipID):
 			pToweeShip.UpdateNodeOnly()
 	return 0
 
-# Some auxiliar global variables to allow set change and better sounds #TO-DO REMOVE UNECESSARY ONES
-pnBSGDimensionalJumpDriveEngineSound = None
-
-# An aux class and its instance.
-class WhyMissionLibGetsError: #TO-DO REMOVE UNECESSARY ONES
-	def __init__(self, name):
-		self.pEventHandler = App.TGPythonInstanceWrapper()
-		self.pEventHandler.SetPyWrapper(self)
-
-	def AnObjectDying(self, pEvent):
-		try:
-			AnObjectDying(self, pEvent)
-		except:
-			traceback.print_exc()
-		return 0
-
-	def BeginListening(self):
-		self.StopListening()
-		App.g_kEventManager.AddBroadcastPythonMethodHandler(Foundation.TriggerDef.ET_FND_CREATE_PLAYER_SHIP, self.pEventHandler, "AnObjectDying")
-		#App.g_kEventManager.AddBroadcastPythonMethodHandler(App.ET_OBJECT_EXPLODING, self.pEventHandler, "AnObjectDying")
-
-	def StopListening(self):
-		#App.g_kEventManager.RemoveBroadcastHandler(App.ET_OBJECT_EXPLODING, self.pEventHandler, "AnObjectDying")
-		App.g_kEventManager.RemoveBroadcastHandler(Foundation.TriggerDef.ET_FND_CREATE_PLAYER_SHIP, self.pEventHandler, "AnObjectDying")
-
-	def CallNextHandler(self, pEvent):
-		return
-
-basicListener = WhyMissionLibGetsError("Lennier is listening")
-
-# An aux function #TO-DO REMOVE UNECESSARY ONES
-def AnObjectDying(TGObject, pEvent):
-	# Check and see if the mission is terminating
-	debug(__name__ + ", ObjectDying")
-		
-	pShip	= App.ShipClass_Cast(pEvent.GetDestination())
-	if (pShip == None):
-		return 0
-
-	pShipID = App.NULL_ID
-	if hasattr(pShip, "GetObjID"):
-		pShipID = pShip.GetObjID()
-
-	if pShipID == None or pShipID == App.NULL_ID:
-		return 0
-
-	pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), pShipID)
-	if not pShip:
-		return 0
-
-	pPlayer = App.Game_GetCurrentPlayer()
-	if pPlayer and hasattr(pPlayer, "GetObjID"):
-		pPlayerID = pPlayer.GetObjID()
-		if pPlayerID != None and pPlayerID != App.NULL_ID and pPlayerID == pShipID:
-			try:
-				defineTravelSpaceNoise(None, 0)
-			except:
-				print "Error while shutting up the global B5 nBSGDimensionalJumpDrive noise:"
-				traceback.print_exc()
-
-	# All done, pass the event on
-	TGObject.CallNextHandler(pEvent)
-	return 0
-
-# An aux function. #TO-DO REMOVE UNECESSARY ONES
-def defineTravelSpaceNoise(pAction, engage=1):
-	debug(__name__ + ", defineTravelSpaceNoise")
-	global pnBSGDimensionalJumpDriveEngineSound
-	if pnBSGDimensionalJumpDriveEngineSound == None:
-		pnBSGDimensionalJumpDriveEngineSoundAux = None
-		try:
-			pnBSGDimensionalJumpDriveEngineSoundAux = App.TGSound_Create("scripts/Custom/TravellingMethods/SFX/JumpspaceSpaceNoise.wav", "BSG2003DimensionalJumpStormSound", 0)
-			pnBSGDimensionalJumpDriveEngineSoundAux.SetSFX(0) 
-			pnBSGDimensionalJumpDriveEngineSoundAux.SetInterface(1)
-			pnBSGDimensionalJumpDriveEngineSoundAux.SetLooping(1)
-		except:
-			pnBSGDimensionalJumpDriveEngineSoundAux = None
-			print "Error on ", __name__, " defineTravelSpaceNoise:"
-			traceback.print_exc()
-
-		if pnBSGDimensionalJumpDriveEngineSoundAux != None:
-			pnBSGDimensionalJumpDriveEngineSound = pnBSGDimensionalJumpDriveEngineSoundAux
-
-	if pnBSGDimensionalJumpDriveEngineSound == None:
-		return 0
-
-	if engage == 0:
-		try:
-			App.g_kSoundManager.StopSound("BSG2003DimensionalJumpStormSound")
-
-			#try:
-			#	basicListener.StopListening()
-			#except:
-			#	print "Error on ", __name__, " defineTravelSpaceNoise:"
-			#	traceback.print_exc()
-
-		except:
-			print "Error on ", __name__, " defineTravelSpaceNoise:"
-			traceback.print_exc()
-	else:
-		try:
-			App.g_kSoundManager.PlaySound("BSG2003DimensionalJumpStormSound")
-
-			try:
-				basicListener.BeginListening()
-			except:
-				print "Error on ", __name__, " defineTravelSpaceNoise:"
-				traceback.print_exc()
-
-		except:
-			print "Error on ", __name__, " defineTravelSpaceNoise:"
-			traceback.print_exc()
-		
-	return 0
-
-# ISI function
+# ISI function TO-DO UPDATE
 def SetupSequenceISI(pShip=None):
 	# you can use this function as an example on how to create your own 'SetupSequenceISI(self)' method for AlternateSubModelFTL
 	# While it has to basically mirror the '.SetupSequence(self)' method below (albeit you could create totally different sequences if you want), it needs to remove any unecessary code that references to self or changing systems.
@@ -1445,7 +1306,7 @@ def SetupSequenceISI(pShip=None):
 	except:
 		sRace = ""
 
-	myBoosting = 5.0
+	myBoosting = 0.0
 	if HasPhasednBSGDimensionalJumpDrive(pShip):
 		myBoosting = 50.0
 	elif HasCloakedJumpSystem(pShip):
@@ -1684,7 +1545,7 @@ def SetupSequence(self):
 	except:
 		sRace = ""
 
-	myBoosting = 5.0
+	myBoosting = 0.0
 	if HasPhasednBSGDimensionalJumpDrive(pShip):
 		myBoosting = 50.0
 	elif HasCloakedJumpSystem(pShip):
@@ -1750,11 +1611,7 @@ def SetupSequence(self):
 
 	# An extra for checks
 	pWarpActionN = App.TGScriptAction_Create(__name__, "ConditionalDecloak", pShipID, 1)
-	pEngageWarpSeq.AddAction(pWarpActionN, pHideShip)
-
-	if (pPlayer != None) and (pShipID == pPlayer.GetObjID()):
-		pWarpSoundActionMid = App.TGScriptAction_Create(__name__, "defineTravelSpaceNoise", 1)
-		pEngageWarpSeq.AddAction(pWarpSoundActionMid, pUnBoostAction, 2.5)	
+	pEngageWarpSeq.AddAction(pWarpActionN, pHideShip)	
 
 	pEnWarpSeqEND = App.TGScriptAction_Create(sCustomActionsScript, "NoAction")
 	pEngageWarpSeq.AddAction(pEnWarpSeqEND, pUnBoostAction, 2.5)
@@ -1767,9 +1624,6 @@ def SetupSequence(self):
 			# Force a noninteractive cinematic view in space..
 			pCinematicStart = App.TGScriptAction_Create("Actions.CameraScriptActions", "StartCinematicMode", 0)
 			pExitWarpSeq.AddAction(pCinematicStart, None)
-
-			pWarpSoundActionMidFinal = App.TGScriptAction_Create(__name__, "defineTravelSpaceNoise", 0)
-			pExitWarpSeq.AddAction(pWarpSoundActionMidFinal, None)
 
 			pDisallowInput = App.TGScriptAction_Create("MissionLib", "RemoveControl")
 			pExitWarpSeq.AddAction(pDisallowInput, pCinematicStart)
@@ -1941,7 +1795,7 @@ def GetTravelSetToUse(self, manual=0):
 # travelling faster than the speed of light.
 # must return a float  (like 1.0)
 ########
-def ConvertSpeedAmount(fSpeed): #TO-DO ADJUST
+def ConvertSpeedAmount(fSpeed):
 	debug(__name__ + ", ConvertSpeedAmount")
 
 	baseSpeed = 32 * 5 * 80.0

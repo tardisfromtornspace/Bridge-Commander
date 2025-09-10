@@ -23,68 +23,68 @@ class Galactica( Carrier.Carrier):
 
         LauncherManager = __import__( "ftb.LauncherManager")
         launcher = LauncherManager.GetLauncher( "Launch Tube P1", pShip)
-        group.AddLauncher( "Launch Tube P1 ", launcher)
-        launcher.AddLaunchable( "ViperMk2", "ftb.friendlyAI", 2)
-
+        group.AddLauncher( "Launch Tube P1", launcher)
+        launcher.AddLaunchable( "ViperMk2", "ftb.friendlyAI", 4)
+        launcher.AddLaunchable( "ViperMk7", "ftb.friendlyAI", 3)
 
         launcher = LauncherManager.GetLauncher( "Launch Tube P2", pShip)
-        group.AddLauncher( "Launch Tube P2 ", launcher)
-        launcher.AddLaunchable( "ViperMk2", "ftb.friendlyAI", 2)
-
+        group.AddLauncher( "Launch Tube P2", launcher)
+        launcher.AddLaunchable( "ViperMk2", "ftb.friendlyAI", 4)
+        launcher.AddLaunchable( "ViperMk7", "ftb.friendlyAI", 3)
 
         launcher = LauncherManager.GetLauncher( "Launch Tube P3", pShip)
-        group.AddLauncher( "Launch Tube P3 ", launcher)
-        launcher.AddLaunchable( "ViperMk2", "ftb.friendlyAI", 2)
-
+        group.AddLauncher( "Launch Tube P3", launcher)
+        launcher.AddLaunchable( "ViperMk2", "ftb.friendlyAI", 4)
+        launcher.AddLaunchable( "ViperMk7", "ftb.friendlyAI", 3)
 
         launcher = LauncherManager.GetLauncher( "Launch Tube P4", pShip)
-        group.AddLauncher( "Launch Tube P4 ", launcher)
-        launcher.AddLaunchable( "ViperMk2", "ftb.friendlyAI", 2)
-
+        group.AddLauncher( "Launch Tube P4", launcher)
+        launcher.AddLaunchable( "ViperMk2", "ftb.friendlyAI", 4)
+        launcher.AddLaunchable( "ViperMk7", "ftb.friendlyAI", 3)
 
         launcher = LauncherManager.GetLauncher( "Launch Tube P5", pShip)
-        group.AddLauncher( "Launch Tube P5 ", launcher)
-        launcher.AddLaunchable( "ViperMk7", "ftb.friendlyAI", 2)
-
+        group.AddLauncher( "Launch Tube P5", launcher)
+        launcher.AddLaunchable( "ViperMk2", "ftb.friendlyAI", 4)
+        launcher.AddLaunchable( "ViperMk7", "ftb.friendlyAI", 3)
 
         launcher = LauncherManager.GetLauncher( "Launch Tube P6", pShip)
-        group.AddLauncher( "Launch Tube P6 ", launcher)
-        launcher.AddLaunchable( "ViperMk2", "ftb.friendlyAI", 2)
-
+        group.AddLauncher( "Launch Tube P6", launcher)
+        launcher.AddLaunchable( "ViperMk2", "ftb.friendlyAI", 4)
+        launcher.AddLaunchable( "ViperMk7", "ftb.friendlyAI", 3)
 
         launcher = LauncherManager.GetLauncher( "Launch Tube P7", pShip)
-        group.AddLauncher( "Launch Tube P7 ", launcher)
-        launcher.AddLaunchable( "ViperMk2", "ftb.friendlyAI", 2)
-
+        group.AddLauncher( "Launch Tube P7", launcher)
+        launcher.AddLaunchable( "ViperMk2", "ftb.friendlyAI", 4)
+        launcher.AddLaunchable( "ViperMk7", "ftb.friendlyAI", 3)
 
         launcher = LauncherManager.GetLauncher( "Launch Tube P8", pShip)
-        group.AddLauncher( "Launch Tube P8 ", launcher)
-        launcher.AddLaunchable( "ViperMk7", "ftb.friendlyAI", 2)
-
+        group.AddLauncher( "Launch Tube P8", launcher)
+        launcher.AddLaunchable( "ViperMk2", "ftb.friendlyAI", 4)
+        launcher.AddLaunchable( "ViperMk7", "ftb.friendlyAI", 3)
 
         launcher = LauncherManager.GetLauncher( "Launch Tube P9", pShip)
-        group.AddLauncher( "Launch Tube P9 ", launcher)
-        launcher.AddLaunchable( "ViperMk2", "ftb.friendlyAI", 2)
-
+        group.AddLauncher( "Launch Tube P9", launcher)
+        launcher.AddLaunchable( "ViperMk2", "ftb.friendlyAI", 4)
+        launcher.AddLaunchable( "ViperMk7", "ftb.friendlyAI", 3)
 
         launcher = LauncherManager.GetLauncher( "Launch Tube P10", pShip)
-        group.AddLauncher( "Launch Tube P10 ", launcher)
-        launcher.AddLaunchable( "ViperMk2", "ftb.friendlyAI", 2)
+        group.AddLauncher( "Launch Tube P10", launcher)
+        launcher.AddLaunchable( "ViperMk2", "ftb.friendlyAI", 4)
+        launcher.AddLaunchable( "ViperMk7", "ftb.friendlyAI", 3)
 
-
-        launcher = LauncherManager.GetLauncher( "Port Hanger", pShip)
-        group.AddLauncher( "Port Hanger ", launcher)
-        launcher.AddLaunchable( "Raptor2", "ftb.friendlyAI", 2)
-
+        launcher = LauncherManager.GetLauncher( "Port Hangar", pShip)
+        group.AddLauncher( "Port Hangar", launcher)
+        launcher.AddLaunchable( "Raptor2", "ftb.friendlyAI", 4)
+        launcher.AddLaunchable( "Blackbird", "ftb.friendlyAI", 1)
 
         self.AddLauncher( "Group 1", group)
 
         # Play with this feature if you dare... MUHAHAHAHAHAHAHAHAHAHAHAHA!!!!!
-        #group.SetLaunchMode( LauncherGroup.ALL)
+        group.SetLaunchMode( LauncherGroup.ALL)
 
     # Define how much Shuttles we can carry maximal (Return Shuttles script)
     def GetMaxShuttles(self): 
-    	return 20
+    	return 90
     # Don't use the following Tractors to Dock:
     def IgnoreTractors(self):    	
     	return []

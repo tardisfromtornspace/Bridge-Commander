@@ -11,11 +11,13 @@ import App
 #                                                                                     #
 abbrev = 'GalacticaClosed'
 iconName = 'GalacticaClosed'
+longName = 'Galactica (Closed)'
 shipFile = 'GalacticaClosed' 
+menuGroup = 'BSG Ships'
+playerMenuGroup = 'BSG Ships'
 species = App.SPECIES_GALAXY
+SubMenu = ["Colonial Ships", "Battlestars"]
 #                                                                                     #
-# Com-man's note: I removed the menugroup and playermenu group so that u wont         #
-# be flooded with a list of F-302's                                                   #
 #######################################################################################
 #                                                                                     #
 # Mod Info.  Use this as an opportunity to describe your work in brief.  This may     #
@@ -24,7 +26,7 @@ species = App.SPECIES_GALAXY
 credits = {
 	'modName': 'GalacticaClosed',
 	'author': '',
-	'version': '1.0',
+	'version': '1.1',
 	'sources': [ 'http://' ],
 	'comments': ''
 }
@@ -34,9 +36,10 @@ credits = {
 # This is the ShipDef that adds the Ship to the game... BC-Mod Packager has           #
 # automatically generated the proper ShipDef Line for you.                            #
 #                                                                                     #
-Foundation.ShipDef.GalacticaClosed = Foundation.FedShipDef(abbrev, species, { 'iconName': iconName, 'shipFile': shipFile })
+Foundation.ShipDef.GalacticaClosed = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
 Foundation.ShipDef.GalacticaClosed.dTechs = {
 	'Fed Ablative Armor': { "Plates": ["Armour"]},
+	"AutoTargeting": { "Pulse": [3, 1] },
 	'Simulated Point Defence' : { "Distance": 35.0, "InnerDistance": 5.0, "Effectiveness": 0.5, "LimitTurn": 0.125, "LimitSpeed": 35, "Period": 0.1, "MaxNumberTorps": 12, },
 	"Alternate-Warp-FTL": { # (#)
 		"Setup": { # (#)
@@ -97,25 +100,25 @@ Foundation.ShipDef.GalacticaClosed.dTechs = {
 			},
 		},
 
-		"Port Wing":     ["VasKholhr_Portwing", {
-			"SetScale": 1.0,
-			"Position":             [0, 0, 0],
-			"Rotation":             [0, 0, 0], # normal Rotation used if not Red Alert and if not Warp
-			"nBSGDimensionalJumpRotation":       [0, 0, 0],
-			"nBSGDimensionalJumpPosition":       [0, 0, 0],
-			"nBSGDimensionalJumpDuration":       150.0,
-			},
-		],
+		#"Port Wing":     ["VasKholhr_Portwing", {
+		#	"SetScale": 1.0,
+		#	"Position":             [1.75, 0, 0],
+		#	"Rotation":             [0, 0, 0], # normal Rotation used if not Red Alert and if not Warp
+		#	"nBSGDimensionalJumpRotation":       [0, 0, 0],
+		#	"nBSGDimensionalJumpPosition":       [0, 0, 0],
+		#	"nBSGDimensionalJumpDuration":       150.0,
+		#	},
+		#],
         
-		"Starboard Wing":     ["VasKholhr_Starboardwing", {
-			"SetScale": 1.0,
-			"Position":             [0, 0, 0],
-			"Rotation":             [0, 0, 0],
-			"nBSGDimensionalJumpRotation":       [0, 0, 0],
-			"nBSGDimensionalJumpPosition":       [0, 0, 0],
-			"nBSGDimensionalJumpDuration":       150.0,
-			},
-		],
+		#"Starboard Wing":     ["VasKholhr_Starboardwing", {
+		#	"SetScale": 1.0,
+		#	"Position":             [-1.75, 0, 0],
+		#	"Rotation":             [0, 0, 0],
+		#	"nBSGDimensionalJumpRotation":       [0, 0, 0],
+		#	"nBSGDimensionalJumpPosition":       [0, 0, 0],
+		#	"nBSGDimensionalJumpDuration":       150.0,
+		#	},
+		#],
 	},
 }
 
@@ -138,7 +141,12 @@ Foundation.ShipDef.GalacticaClosed.desc = 'The Galactica Class Battlestar was th
 #######################################################################################
 #                                                                                     #
 # These register the ship with the QuickBattle menus.  Don't touch them!!!            #
-#   Com-man's note: Removing these lines was nesecary to prevent BC giving the        #
-#   black screen yellow cursor error.                                                 #
+#                                                                                     #
+if menuGroup:           Foundation.ShipDef.GalacticaClosed.RegisterQBShipMenu(menuGroup)
+if playerMenuGroup:     Foundation.ShipDef.GalacticaClosed.RegisterQBPlayerShipMenu(playerMenuGroup)
+
+if Foundation.shipList._keyList.has_key(longName):
+     Foundation.ShipDef.__dict__[longName].friendlyDetails[2] = Foundation.shipList[longName].friendlyDetails[2]
+     Foundation.ShipDef.__dict__[longName].enemyDetails[2] = Foundation.shipList[longName].enemyDetails[2]
 #                                                                                     #
 #######################################################################################
