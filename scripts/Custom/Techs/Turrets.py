@@ -23,7 +23,7 @@
 #     (beam, torpedo, pulse or tractor). Also, for the sake of STABILITY and not having wonky behaviour, do not create turrets for turrets without extreme caution nor add the AutoTargeting to the turret itself (the latter is already taken care of by the parent)!!!
 # --- From version 0.9993, "Tactical.Projectiles.AutomaticSystemRepairDummy" and "ftb.Tech.ATPFunctions" are required as dependencies.
 
-# The scheme is that:
+# The scheme is that: # TO-DO SEE IF BY NOT DETACHING THE PARTS WE CAN GET SOMETHING ELSE... IF THAT WORKS THEN CHANGE THE SYSTEM BEHAVIOUR
 # 1. add normal model
 # 2. replace model with body + turrets if red alert or weapons are activated
 # 3. move the turrets + consider original turret size re-escale (for some reason, turrets are always bigger than the model... strange. Anyways, to help fix that, we've given the "SetScale" property; else there's a default 0.5 times
@@ -810,8 +810,10 @@ class Turrets(FoundationTech.TechDef):
         def DetachParts(self, pShip, pInstance, fromSet=0):
                 debug(__name__ + ", DetachParts")
 
-                pShip = App.ShipClass_GetObjectByID(None, pShip.GetObjID())
-
+                pShipID = pShip.GetObjID()
+                iShipID = getShipIDfromInstance(pInstance)
+                pShip = App.ShipClass_GetObjectByID(None, pShipID)
+                print "TO-DO TEST DetachParts for ids - ship: ", pShipID, " instance: ", iShipID
                 if hasattr(pInstance, "TurretList"):
                         for pSubShip in pInstance.TurretList:
                             pSubShip = App.ShipClass_GetObjectByID(None, pSubShip.GetObjID())
