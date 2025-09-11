@@ -39,7 +39,7 @@ Foundation.ShipDef.StarcraftIIMinotaurDominion.dTechs = {
                 "AttackDuration":         200.0, # Value is 1/100 of a second
                 "AttackPosition":         [0.8520000, 0.5850000, -0.042000],
                 "WarpPosition":       [0.5720000, 0.5850000, -0.042000],
-                "WarpDuration":       150.0,
+                "WarpDuration":       10.0,
                 "SyncTorpType": 1,
                 "SetScale": 0.6,
                 }
@@ -49,7 +49,7 @@ Foundation.ShipDef.StarcraftIIMinotaurDominion.dTechs = {
                 "AttackDuration":         200.0, # Value is 1/100 of a second
                 "AttackPosition":         [0.8520000, -0.0250000, -0.042000],
                 "WarpPosition":       [0.5720000, -0.0250000, -0.042000],
-                "WarpDuration":       150.0,
+                "WarpDuration":       10.0,
                 "SyncTorpType": 1,
                 "SetScale": 0.6,
                 }
@@ -59,7 +59,7 @@ Foundation.ShipDef.StarcraftIIMinotaurDominion.dTechs = {
                 "AttackDuration":         200.0, # Value is 1/100 of a second
                 "AttackPosition":         [-0.8520000, 0.5850000, -0.042000],
                 "WarpPosition":       [-0.5720000, 0.5850000, -0.042000],
-                "WarpDuration":       150.0,
+                "WarpDuration":       10.0,
                 "SyncTorpType": 1,
                 "SetScale": 0.6,
                 }
@@ -69,7 +69,7 @@ Foundation.ShipDef.StarcraftIIMinotaurDominion.dTechs = {
                 "AttackDuration":         200.0, # Value is 1/100 of a second
                 "AttackPosition":         [-0.8520000, -0.0250000, -0.042000],
                 "WarpPosition":       [-0.5720000, -0.0250000, -0.042000],
-                "WarpDuration":       150.0,
+                "WarpDuration":       10.0,
                 "SyncTorpType": 1,
                 "SetScale": 0.6,
                 }
@@ -79,7 +79,7 @@ Foundation.ShipDef.StarcraftIIMinotaurDominion.dTechs = {
                 "AttackDuration":         200.0, # Value is 1/100 of a second
                 "AttackPosition":         [-1.400000, -0.620000, -0.450000],
                 "WarpPosition":       [-1.400000, -0.620000, -0.150000],
-                "WarpDuration":       150.0,
+                "WarpDuration":       10.0,
                 "SyncTorpType": 1,
                 "SetScale": 0.6,
                 }
@@ -89,7 +89,7 @@ Foundation.ShipDef.StarcraftIIMinotaurDominion.dTechs = {
                 "AttackDuration":         200.0, # Value is 1/100 of a second
                 "AttackPosition":         [1.400000, -0.620000, -0.450000],
                 "WarpPosition":       [1.400000, -0.620000, -0.150000],
-                "WarpDuration":       150.0,
+                "WarpDuration":       10.0,
                 "SyncTorpType": 1,
                 "SetScale": 0.6,
                 }
@@ -99,7 +99,7 @@ Foundation.ShipDef.StarcraftIIMinotaurDominion.dTechs = {
                 "AttackDuration":         200.0, # Value is 1/100 of a second
                 "AttackPosition":         [-0.300000, -0.160000, 0.820000],
                 "WarpPosition":       [-0.240000, -0.160000, 0.520000],
-                "WarpDuration":       150.0,
+                "WarpDuration":       10.0,
                 "SyncTorpType": 1,
                 "SetScale": 0.6,
                 }
@@ -109,7 +109,7 @@ Foundation.ShipDef.StarcraftIIMinotaurDominion.dTechs = {
                 "AttackDuration":         200.0, # Value is 1/100 of a second
                 "AttackPosition":         [0.300000, -0.160000, 0.820000],
                 "WarpPosition":       [0.240000, -0.160000, 0.520000],
-                "WarpDuration":       150.0,
+                "WarpDuration":       10.0,
                 "SyncTorpType": 1,
                 "SetScale": 0.6,
                 }
@@ -119,7 +119,7 @@ Foundation.ShipDef.StarcraftIIMinotaurDominion.dTechs = {
                 "AttackDuration":         200.0, # Value is 1/100 of a second
                 "AttackPosition":         [-0.510000, -1.100000, 0.720000],
                 "WarpPosition":       [-0.410000, -1.100000, 0.420000],
-                "WarpDuration":       150.0,
+                "WarpDuration":       10.0,
                 "SyncTorpType": 1,
                 "SetScale": 0.6,
                 }
@@ -129,7 +129,7 @@ Foundation.ShipDef.StarcraftIIMinotaurDominion.dTechs = {
                 "AttackDuration":         200.0, # Value is 1/100 of a second
                 "AttackPosition":         [0.510000, -1.100000, 0.720000],
                 "WarpPosition":       [0.410000, -1.100000, 0.420000],
-                "WarpDuration":       150.0,
+                "WarpDuration":       10.0,
                 "SyncTorpType": 1,
                 "SetScale": 0.6,
                 }
