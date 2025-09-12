@@ -37,7 +37,7 @@
 # Please note that there's a field in Setup "ShieldOption", if it doesn't exist or is set to 0, shields will work normally - else shields will drop when turrets are active - this is useful for some functional turrets that are inside
 # the shield grid, or for lore reasons!
 
-# NOTE: If the versioning being below 1.0 did not give you a hint, this is an experimental work-in-progress, it may be possible to find far more bugs
+# NOTE: While this is a 1.0, it is still an experimental work, it may be possible to find far more bugs
 # KNOWN UNINTENDED EFFECTS, BUGS, LIMITATIONS and other TO-DOs (By order of priority):
 
 # 1. Functional turrets when firing may hit and damage the parent ship shields and subsystems with their phaser weaponry. Originally that also included torps and pulses if they required multiple fires too fast and if they were very big
@@ -54,7 +54,7 @@
 #    ----- Option A: Just place a normal aesthethic turret that never fires above a phaser or phaser group. This option is preferable if there is only 1 phaser per turret and model/scalability issues do not make the following option
 #          feasible.
 #    ----- Option B: Create auxiliar parent ship hardpoint properties, identical to the turret ship phaser to imitate if that phaser worked, but with their name ending on a " T" (space included, f.ex. if weapon was "Quantom 10", then it
-#          would be called "Quantom10 T") but with a max charge identical but on the negatives and a recharge rate greater than twice its max charge, and the firing arcs and direction of the parent , non-T hardpoint. Then the script 
+#          would be called "Quantom 10 T") but with a max charge identical but on the negatives and a recharge rate greater than twice its max charge, and the firing arcs and direction of the parent , non-T hardpoint. Then the script 
 #          will make sure that upon firing a "non-T" parent phaser bank, the fire and charge of those associated "T" hardpoint properties becomes the opposite value, and when a "non- T" stops firing, all the associated T siblings' max
 #          charge will be sent to the negatives. Additionally, these auxiliar hardpoint properties will attempt to move to fit the turret sibling one.
 #          -- Remember that the functional turret hardpoint positions and the ones with this function may not totally match (f.ex. a phaser at 0.5 forward on the turret end may actually end on the middle because the game had adjusted 

@@ -99,7 +99,7 @@ GraviticInitator.SetRadius(0.750000)
 GraviticInitator.SetEngineType(GraviticInitator.EP_IMPULSE)
 App.g_kModelPropertyManager.RegisterLocalTemplate(GraviticInitator)
 #################################################
-GravimetricIniatior = App.EngineProperty_Create("Gravimetric Iniatior")
+GravimetricIniatior = App.EngineProperty_Create("FTL Coils")
 
 GravimetricIniatior.SetMaxCondition(1000.000000)
 GravimetricIniatior.SetCritical(0)
@@ -3657,7 +3657,7 @@ def LoadPropertySet(pObj):
 	prop = App.g_kModelPropertyManager.FindByName("FTL Drive", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
-	prop = App.g_kModelPropertyManager.FindByName("Gravimetric Iniatior", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	prop = App.g_kModelPropertyManager.FindByName("FTL Coils", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
 	prop = App.g_kModelPropertyManager.FindByName("Sensor Jammer", App.TGModelPropertyManager.LOCAL_TEMPLATES)

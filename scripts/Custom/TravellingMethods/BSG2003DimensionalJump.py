@@ -13,6 +13,10 @@
 # TO-DO MAKE IT SO WHILE ON THE SYSTEM THE JUMP AUTOMATICALLY FAILS SO YOU NEED MULTIPLE JUMPS TO REACH YOUR DESTINATION
 # TO-DO MAKE IT SO THE CYLONS REQUIRE 10x JUMPS FOR A THING AND THEN GALACTICA 200x
 # TO-DO LOOK A WAY TO MAKE THE JUMP ENGINES WORK EVERY 33 MINUTES - ACTUALLY 15 MINUTES
+# TO-DO When popping in and out the vessel the flash should move backwards (enter) forwards (exit) -use gravity?.
+# TO-DO Noise from https://www.youtube.com/watch?v=sGCfC4NvQaY minute 1:04
+# TO-DO when disappearing all ships nearby may suffer from some damage that passes through shields. The close to the source the worse the damage would be (but not affecting ships that are dead or dying already, to prevent issues).
+
 # NOTE: all functions/methods and attributes defined here (in this prototype example plugin, nBSGDimensionalJump) are required to be in the plugin, with the exclusion of:
 # ------ MODINFO, which is there just to verify versioning.
 # ------ ALTERNATESUBMODELFTL METHODS subsection, which are exclusively used for alternate SubModels for FTL which is a separate but linked mod, or to import needed modules.

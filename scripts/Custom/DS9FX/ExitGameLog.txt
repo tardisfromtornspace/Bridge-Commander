@@ -1,0 +1,2364 @@
+##### Bridge Commander Exit Log: 12 Sep 2025 04:54:56#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 12 Sep 2025 12:42:08#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Ship Galactica-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Traceback (innermost last):
+  File ".\Scripts\Bridge\EngineerCharacterHandlers.py", line 690, in AnnounceSpecificShield
+    fShields = (pShip.GetShields().GetCurShields(App.ShieldClass.FRONT_SHIELDS)/pShip.GetShields().GetMaxShields(App.ShieldClass.FRONT_SHIELDS))
+ZeroDivisionError: float division
+Setting splash damage for Galactica-1 to (2665.847168, 53.316944)
+
+
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 12 Sep 2025 12:42:08#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Ship Galactica-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Traceback (innermost last):
+  File ".\Scripts\Bridge\EngineerCharacterHandlers.py", line 690, in AnnounceSpecificShield
+    fShields = (pShip.GetShields().GetCurShields(App.ShieldClass.FRONT_SHIELDS)/pShip.GetShields().GetMaxShields(App.ShieldClass.FRONT_SHIELDS))
+ZeroDivisionError: float division
+Setting splash damage for Galactica-1 to (2665.847168, 53.316944)
+
+
+
+# DS9FX has...
+
+# taken a console dump
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 12 Sep 2025 12:54:56#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+
+
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Ship Galactica (Closed)-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Ship Galactica-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Ship Galactica-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Traceback (innermost last):
+  File ".\Scripts\Bridge\EngineerCharacterHandlers.py", line 690, in AnnounceSpecificShield
+    fShields = (pShip.GetShields().GetCurShields(App.ShieldClass.FRONT_SHIELDS)/pShip.GetShields().GetMaxShields(App.ShieldClass.FRONT_SHIELDS))
+ZeroDivisionError: float division
+
+
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 12 Sep 2025 12:54:56#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+
+
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Ship Galactica (Closed)-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Ship Galactica-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Ship Galactica-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Traceback (innermost last):
+  File ".\Scripts\Bridge\EngineerCharacterHandlers.py", line 690, in AnnounceSpecificShield
+    fShields = (pShip.GetShields().GetCurShields(App.ShieldClass.FRONT_SHIELDS)/pShip.GetShields().GetMaxShields(App.ShieldClass.FRONT_SHIELDS))
+ZeroDivisionError: float division
+
+
+
+# DS9FX has...
+
+# taken a console dump
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 12 Sep 2025 13:01:20#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Ship Galactica-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+Setting splash damage for Total PointDefence Firepoint Galactica-1 C Torpedo instance at _4ed5c290_p_Torpedo to (33.750000, 0.675000)
+Setting splash damage for Total PointDefence Firepoint Galactica-1 C Torpedo instance at _442448d0_p_Torpedo to (33.750000, 0.675000)
+Setting splash damage for Galactica-1 to (2812.500000, 56.250000)
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+
+# DS9FX has...
+
+# taken a console dump
+Setting splash damage for Mark 2-5 to (93.750000, 1.875000)
+Setting splash damage for Mark 2-4 to (93.750000, 1.875000)
+Setting splash damage for Mark 2-6 to (93.750000, 1.875000)
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 12 Sep 2025 13:01:20#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Ship Galactica-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+Setting splash damage for Total PointDefence Firepoint Galactica-1 C Torpedo instance at _4ed5c290_p_Torpedo to (33.750000, 0.675000)
+Setting splash damage for Total PointDefence Firepoint Galactica-1 C Torpedo instance at _442448d0_p_Torpedo to (33.750000, 0.675000)
+Setting splash damage for Galactica-1 to (2812.500000, 56.250000)
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+
+# DS9FX has...
+
+# taken a console dump
+Setting splash damage for Mark 2-5 to (93.750000, 1.875000)
+Setting splash damage for Mark 2-4 to (93.750000, 1.875000)
+Setting splash damage for Mark 2-6 to (93.750000, 1.875000)
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 12 Sep 2025 13:16:16#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Ship Galactica-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+Traceback (innermost last):
+  File ".\Scripts\Bridge\EngineerCharacterHandlers.py", line 690, in AnnounceSpecificShield
+    fShields = (pShip.GetShields().GetCurShields(App.ShieldClass.FRONT_SHIELDS)/pShip.GetShields().GetMaxShields(App.ShieldClass.FRONT_SHIELDS))
+ZeroDivisionError: float division
+Setting splash damage for Total PointDefence Firepoint Galactica-1 C Torpedo instance at _4a9d5178_p_Torpedo to (33.750000, 0.675000)
+Setting splash damage for Total PointDefence Firepoint Galactica-1 C Torpedo instance at _4a98f4d8_p_Torpedo to (33.750000, 0.675000)
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 12 Sep 2025 13:16:16#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Ship Galactica-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+Traceback (innermost last):
+  File ".\Scripts\Bridge\EngineerCharacterHandlers.py", line 690, in AnnounceSpecificShield
+    fShields = (pShip.GetShields().GetCurShields(App.ShieldClass.FRONT_SHIELDS)/pShip.GetShields().GetMaxShields(App.ShieldClass.FRONT_SHIELDS))
+ZeroDivisionError: float division
+Setting splash damage for Total PointDefence Firepoint Galactica-1 C Torpedo instance at _4a9d5178_p_Torpedo to (33.750000, 0.675000)
+Setting splash damage for Total PointDefence Firepoint Galactica-1 C Torpedo instance at _4a98f4d8_p_Torpedo to (33.750000, 0.675000)
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+# DS9FX has...
+
+# taken a console dump
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 12 Sep 2025 14:11:44#####
+
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 12 Sep 2025 14:11:44#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 12 Sep 2025 14:13:52#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 12 Sep 2025 14:13:52#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 12 Sep 2025 14:16:00#####
+
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 12 Sep 2025 14:16:00#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 12 Sep 2025 14:20:16#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+data/TGL/Maelstrom/Episode 7/E7M2.tgl E7M2BattleConversation5
+Trying to clean memory
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 12 Sep 2025 14:20:16#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+data/TGL/Maelstrom/Episode 7/E7M2.tgl E7M2BattleConversation5
+Trying to clean memory
+
+# DS9FX has...
+
+# taken a console dump
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 12 Sep 2025 14:24:32#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 12 Sep 2025 14:33:04#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 12 Sep 2025 15:02:56#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 12 Sep 2025 15:17:52#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 12 Sep 2025 15:37:04#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+
+
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 12 Sep 2025 15:37:04#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+
+
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+# DS9FX has...
+
+# taken a console dump
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 12 Sep 2025 15:43:28#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 12 Sep 2025 15:43:28#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+# DS9FX has...
+
+# taken a console dump
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 12 Sep 2025 15:47:44#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 12 Sep 2025 16:09:04#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 12 Sep 2025 16:51:44#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 12 Sep 2025 16:56:00#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 12 Sep 2025 17:06:40#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 12 Sep 2025 17:25:52#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+# DS9FX has...
+
+# taken a console dump
+data/TGL/Maelstrom/Episode 8/E8M1.tgl E8M1L142b
+data/TGL/Maelstrom/Episode 2/E2M2.tgl E2M2BrexCom4a
+Trying to clean memory
+data/TGL/Maelstrom/Episode 2/E2M6.tgl E2M6Briefing4
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 12 Sep 2025 17:25:52#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+# DS9FX has...
+
+# taken a console dump
+data/TGL/Maelstrom/Episode 8/E8M1.tgl E8M1L142b
+data/TGL/Maelstrom/Episode 2/E2M2.tgl E2M2BrexCom4a
+Trying to clean memory
+data/TGL/Maelstrom/Episode 2/E2M6.tgl E2M6Briefing4
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 12 Sep 2025 17:30:08#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 12 Sep 2025 17:47:12#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+data/TGL/Maelstrom/Episode 5/E5M2.tgl E5M2PrendelScan2
+
+
+Traceback (innermost last):
+  File ".\Scripts\QuickBattle\QuickBattle.py", line 2568, in StartSimulationAction
+    pModule.PreLoadModel ()
+AttributeError: 'None' object has no attribute 'PreLoadModel'
+
+
+
+
+data/TGL/Maelstrom/Episode 2/E2M2.tgl E2M2BrexCom4
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 12 Sep 2025 17:47:12#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+data/TGL/Maelstrom/Episode 5/E5M2.tgl E5M2PrendelScan2
+
+
+Traceback (innermost last):
+  File ".\Scripts\QuickBattle\QuickBattle.py", line 2568, in StartSimulationAction
+    pModule.PreLoadModel ()
+AttributeError: 'None' object has no attribute 'PreLoadModel'
+
+
+
+
+data/TGL/Maelstrom/Episode 2/E2M2.tgl E2M2BrexCom4
+
+# DS9FX has...
+
+# taken a console dump
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 12 Sep 2025 18:19:12#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+
+
+Setting Stock System Planets Random Density.
+Ship Galactica-1 with Alternative Warp FTL SubModel support added
+Ship Galactica-2 with Alternative Warp FTL SubModel support added
+Ship Galactica-3 with Alternative Warp FTL SubModel support added
+Ship Pegasus-4 with Alternative Warp FTL SubModel support added
+Ship Pegasus-5 with Alternative Warp FTL SubModel support added
+Ship Pegasus-6 with Alternative Warp FTL SubModel support added
+Ship Assault Raptor-7 with Alternative Warp FTL SubModel support added
+Ship Assault Raptor-8 with Alternative Warp FTL SubModel support added
+Ship Assault Raptor-9 with Alternative Warp FTL SubModel support added
+Ship Escort Raptor-10 with Alternative Warp FTL SubModel support added
+Ship Escort Raptor-11 with Alternative Warp FTL SubModel support added
+Ship Escort Raptor-12 with Alternative Warp FTL SubModel support added
+Ship SAR Raptor-13 with Alternative Warp FTL SubModel support added
+Ship SAR Raptor-14 with Alternative Warp FTL SubModel support added
+Ship SAR Raptor-15 with Alternative Warp FTL SubModel support added
+Ship Blackbird-16 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+Shuttle Launching Error: ship SAR Raptor-13 has no Shuttle launching points
+Shuttle Launching Error: ship SAR Raptor-14 has no Shuttle launching points
+Shuttle Launching Error: ship SAR Raptor-15 has no Shuttle launching points
+
+
+
+
+Setting splash damage for Total PointDefence Firepoint Galactica-1 C Torpedo instance at _4f25ed98_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Total PointDefence Firepoint Pegasus-4 C Torpedo instance at _5f805d70_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Pegasus-4 to (5625.000000, 112.500000)
+Creating WarpSequence:  Ship = Pegasus-4  // To Set = None  // Placement Name = None
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Galactica-1 with Alternative Warp FTL SubModel support added
+Ship Galactica-2 with Alternative Warp FTL SubModel support added
+Ship Galactica-3 with Alternative Warp FTL SubModel support added
+Ship Pegasus-4 with Alternative Warp FTL SubModel support added
+Ship Pegasus-5 with Alternative Warp FTL SubModel support added
+Ship Pegasus-6 with Alternative Warp FTL SubModel support added
+Ship Assault Raptor-7 with Alternative Warp FTL SubModel support added
+Ship Assault Raptor-8 with Alternative Warp FTL SubModel support added
+Ship Assault Raptor-9 with Alternative Warp FTL SubModel support added
+Ship Escort Raptor-10 with Alternative Warp FTL SubModel support added
+Ship Escort Raptor-11 with Alternative Warp FTL SubModel support added
+Ship Escort Raptor-12 with Alternative Warp FTL SubModel support added
+Ship SAR Raptor-13 with Alternative Warp FTL SubModel support added
+Ship SAR Raptor-14 with Alternative Warp FTL SubModel support added
+Ship SAR Raptor-15 with Alternative Warp FTL SubModel support added
+Ship Blackbird-16 with Alternative Warp FTL SubModel support added
+Ship Artemis-23 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting splash damage for Total PointDefence Firepoint Pegasus-4 C Torpedo instance at _5f805ee0_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Total PointDefence Firepoint Galactica-1 C Torpedo instance at _4ef05e38_p_Torpedo to (112.500000, 2.250000)
+
+
+Setting splash damage for Total PointDefence Firepoint Pegasus-5 C Torpedo instance at _5f805ee0_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Total PointDefence Firepoint Pegasus-4 C Torpedo instance at _4ef05e38_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Total PointDefence Firepoint Galactica-3 C Torpedo instance at _4ef05fa8_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Total PointDefence Firepoint Pegasus-5 C Torpedo instance at _5f806050_p_Torpedo to (112.500000, 2.250000)
+
+
+Setting splash damage for Total PointDefence Firepoint Galactica-1 C Torpedo instance at _5f806050_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Total PointDefence Firepoint Pegasus-4 C Torpedo instance at _4ef05fa8_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Total PointDefence Firepoint Galactica-1 C Torpedo instance at _5f806050_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Total PointDefence Firepoint Galactica-2 C Torpedo instance at _5f806050_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Total PointDefence Firepoint Pegasus-4 C Torpedo instance at _5f806050_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Total PointDefence Firepoint Pegasus-5 C Torpedo instance at _5f806050_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Total PointDefence Firepoint Pegasus-5 C Torpedo instance at _5f806050_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Total PointDefence Firepoint Galactica-3 C Torpedo instance at _5f806050_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Total PointDefence Firepoint Pegasus-5 C Torpedo instance at _5f806050_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Total PointDefence Firepoint Galactica-2 C Torpedo instance at _4ef05fa8_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Total PointDefence Firepoint Pegasus-4 C Torpedo instance at _5f805ee0_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Total PointDefence Firepoint Mark 1-19 C Torpedo instance at _4ef05e38_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Total PointDefence Firepoint Galactica-3 C Torpedo instance at _4ef05e38_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Total PointDefence Firepoint Artemis-23 C Torpedo instance at _4ef05e38_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Total PointDefence Firepoint Galactica-1 C Torpedo instance at _5f806050_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Total PointDefence Firepoint Galactica-2 C Torpedo instance at _4ef05fa8_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Total PointDefence Firepoint Artemis-23 C Torpedo instance at _4ef05fa8_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Total PointDefence Firepoint Artemis-23 C Torpedo instance at _4f25cda0_p_Torpedo to (112.500000, 2.250000)
+
+
+Setting splash damage for Total PointDefence Firepoint Pegasus-4 C Torpedo instance at _4ef05e38_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Total PointDefence Firepoint Artemis-23 C Torpedo instance at _4ef05fa8_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Total PointDefence Firepoint Galactica-1 C Torpedo instance at _5f806050_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Total PointDefence Firepoint Galactica-1 C Torpedo instance at _4f25cda0_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Total PointDefence Firepoint Artemis-23 C Torpedo instance at _4f25cda0_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Total PointDefence Firepoint Galactica-1 C Torpedo instance at _5f806050_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Total PointDefence Firepoint Galactica-1 C Torpedo instance at _5f805c00_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Total PointDefence Firepoint Artemis-23 C Torpedo instance at _4f25cda0_p_Torpedo to (112.500000, 2.250000)
+
+# DS9FX has...
+
+# taken a console dump
+Setting splash damage for Total PointDefence Firepoint Galactica-2 C Torpedo instance at _5f805c00_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Total PointDefence Firepoint Galactica-1 C Torpedo instance at _4ef06118_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Total PointDefence Firepoint Galactica-3 C Torpedo instance at _5f805ee0_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Total PointDefence Firepoint Galactica-1 C Torpedo instance at _5f806050_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Galactica-2 to (2812.500000, 56.250000)
+Creating WarpSequence:  Ship = Galactica-2  // To Set = None  // Placement Name = None
+Trying to clean memory
+Error: Intercepting critical Lauching Error in LaunchShip.LaunchObject()
+Blackbird-16 (ships.BSG2003Blackbird) tried to launch ViperMk7
+If you can reproduce this error, contact a BC scripter please
+Unknown Shuttle Launching Error (LaunchShip.py): Ship was not created
+Error: Intercepting critical Lauching Error in LaunchShip.LaunchObject()
+Blackbird-16 (ships.BSG2003Blackbird) tried to launch ViperMk7
+If you can reproduce this error, contact a BC scripter please
+Unknown Shuttle Launching Error (LaunchShip.py): Ship was not created
+Error: Intercepting critical Lauching Error in LaunchShip.LaunchObject()
+Blackbird-16 (ships.BSG2003Blackbird) tried to launch ViperMk7
+If you can reproduce this error, contact a BC scripter please
+Unknown Shuttle Launching Error (LaunchShip.py): Ship was not created
+Error: Intercepting critical Lauching Error in LaunchShip.LaunchObject()
+Blackbird-16 (ships.BSG2003Blackbird) tried to launch ViperMk7
+If you can reproduce this error, contact a BC scripter please
+Unknown Shuttle Launching Error (LaunchShip.py): Ship was not created
+Error: Intercepting critical Lauching Error in LaunchShip.LaunchObject()
+Blackbird-16 (ships.BSG2003Blackbird) tried to launch ViperMk7
+If you can reproduce this error, contact a BC scripter please
+Unknown Shuttle Launching Error (LaunchShip.py): Ship was not created
+Error: Intercepting critical Lauching Error in LaunchShip.LaunchObject()
+Blackbird-16 (ships.BSG2003Blackbird) tried to launch ViperMk7
+If you can reproduce this error, contact a BC scripter please
+Unknown Shuttle Launching Error (LaunchShip.py): Ship was not created
+Error: Intercepting critical Lauching Error in LaunchShip.LaunchObject()
+Blackbird-16 (ships.BSG2003Blackbird) tried to launch ViperMk7
+If you can reproduce this error, contact a BC scripter please
+Unknown Shuttle Launching Error (LaunchShip.py): Ship was not created
+Error: Intercepting critical Lauching Error in LaunchShip.LaunchObject()
+Blackbird-16 (ships.BSG2003Blackbird) tried to launch ViperMk7
+If you can reproduce this error, contact a BC scripter please
+Unknown Shuttle Launching Error (LaunchShip.py): Ship was not created
+Error: Intercepting critical Lauching Error in LaunchShip.LaunchObject()
+Blackbird-16 (ships.BSG2003Blackbird) tried to launch ViperMk7
+If you can reproduce this error, contact a BC scripter please
+Unknown Shuttle Launching Error (LaunchShip.py): Ship was not created
+('MISSING SHIP:', 'ViperMk7')
+Traceback (innermost last):
+  File ".\Scripts\ftb\LaunchShip.py", line 206, in LaunchObject
+    pObject = loadspacehelper.CreateShip(pcScript, pSet, pcName, "", 0, 1)
+  File ".\Scripts\Custom\Autoload\000-Fixes20030402-FoundationRedirect.py", line 118, in CreateShip
+    debug("MISSING SHIP: %s" % pcScript)
+NameError: debug
+Unknown Shuttle Launching Error (LaunchShip.py): Ship was not created
+('MISSING SHIP:', 'ViperMk7')
+Traceback (innermost last):
+  File ".\Scripts\ftb\LaunchShip.py", line 206, in LaunchObject
+    pObject = loadspacehelper.CreateShip(pcScript, pSet, pcName, "", 0, 1)
+  File ".\Scripts\Custom\Autoload\000-Fixes20030402-FoundationRedirect.py", line 118, in CreateShip
+    debug("MISSING SHIP: %s" % pcScript)
+NameError: debug
+Unknown Shuttle Launching Error (LaunchShip.py): Ship was not created
+('MISSING SHIP:', 'ViperMk7')
+Traceback (innermost last):
+  File ".\Scripts\ftb\LaunchShip.py", line 206, in LaunchObject
+    pObject = loadspacehelper.CreateShip(pcScript, pSet, pcName, "", 0, 1)
+  File ".\Scripts\Custom\Autoload\000-Fixes20030402-FoundationRedirect.py", line 118, in CreateShip
+    debug("MISSING SHIP: %s" % pcScript)
+NameError: debug
+Unknown Shuttle Launching Error (LaunchShip.py): Ship was not created
+('MISSING SHIP:', 'ViperMk7')
+Traceback (innermost last):
+  File ".\Scripts\ftb\LaunchShip.py", line 206, in LaunchObject
+    pObject = loadspacehelper.CreateShip(pcScript, pSet, pcName, "", 0, 1)
+  File ".\Scripts\Custom\Autoload\000-Fixes20030402-FoundationRedirect.py", line 118, in CreateShip
+    debug("MISSING SHIP: %s" % pcScript)
+NameError: debug
+Unknown Shuttle Launching Error (LaunchShip.py): Ship was not created
+('MISSING SHIP:', 'ViperMk7')
+Traceback (innermost last):
+  File ".\Scripts\ftb\LaunchShip.py", line 206, in LaunchObject
+    pObject = loadspacehelper.CreateShip(pcScript, pSet, pcName, "", 0, 1)
+  File ".\Scripts\Custom\Autoload\000-Fixes20030402-FoundationRedirect.py", line 118, in CreateShip
+    debug("MISSING SHIP: %s" % pcScript)
+NameError: debug
+Unknown Shuttle Launching Error (LaunchShip.py): Ship was not created
+('MISSING SHIP:', 'ViperMk7')
+Traceback (innermost last):
+  File ".\Scripts\ftb\LaunchShip.py", line 206, in LaunchObject
+    pObject = loadspacehelper.CreateShip(pcScript, pSet, pcName, "", 0, 1)
+  File ".\Scripts\Custom\Autoload\000-Fixes20030402-FoundationRedirect.py", line 118, in CreateShip
+    debug("MISSING SHIP: %s" % pcScript)
+NameError: debug
+Unknown Shuttle Launching Error (LaunchShip.py): Ship was not created
+('MISSING SHIP:', 'ViperMk7')
+Traceback (innermost last):
+  File ".\Scripts\ftb\LaunchShip.py", line 206, in LaunchObject
+    pObject = loadspacehelper.CreateShip(pcScript, pSet, pcName, "", 0, 1)
+  File ".\Scripts\Custom\Autoload\000-Fixes20030402-FoundationRedirect.py", line 118, in CreateShip
+    debug("MISSING SHIP: %s" % pcScript)
+NameError: debug
+Unknown Shuttle Launching Error (LaunchShip.py): Ship was not created
+('MISSING SHIP:', 'ViperMk7')
+Traceback (innermost last):
+  File ".\Scripts\ftb\LaunchShip.py", line 206, in LaunchObject
+    pObject = loadspacehelper.CreateShip(pcScript, pSet, pcName, "", 0, 1)
+  File ".\Scripts\Custom\Autoload\000-Fixes20030402-FoundationRedirect.py", line 118, in CreateShip
+    debug("MISSING SHIP: %s" % pcScript)
+NameError: debug
+Unknown Shuttle Launching Error (LaunchShip.py): Ship was not created
+('MISSING SHIP:', 'ViperMk7')
+Traceback (innermost last):
+  File ".\Scripts\ftb\LaunchShip.py", line 206, in LaunchObject
+    pObject = loadspacehelper.CreateShip(pcScript, pSet, pcName, "", 0, 1)
+  File ".\Scripts\Custom\Autoload\000-Fixes20030402-FoundationRedirect.py", line 118, in CreateShip
+    debug("MISSING SHIP: %s" % pcScript)
+NameError: debug
+Unknown Shuttle Launching Error (LaunchShip.py): Ship was not created
+('MISSING SHIP:', 'ViperMk7')
+Traceback (innermost last):
+  File ".\Scripts\ftb\LaunchShip.py", line 206, in LaunchObject
+    pObject = loadspacehelper.CreateShip(pcScript, pSet, pcName, "", 0, 1)
+  File ".\Scripts\Custom\Autoload\000-Fixes20030402-FoundationRedirect.py", line 118, in CreateShip
+    debug("MISSING SHIP: %s" % pcScript)
+NameError: debug
+Unknown Shuttle Launching Error (LaunchShip.py): Ship was not created
+('MISSING SHIP:', 'ViperMk7')
+Traceback (innermost last):
+  File ".\Scripts\ftb\LaunchShip.py", line 206, in LaunchObject
+    pObject = loadspacehelper.CreateShip(pcScript, pSet, pcName, "", 0, 1)
+  File ".\Scripts\Custom\Autoload\000-Fixes20030402-FoundationRedirect.py", line 118, in CreateShip
+    debug("MISSING SHIP: %s" % pcScript)
+NameError: debug
+Unknown Shuttle Launching Error (LaunchShip.py): Ship was not created
+Setting splash damage for Galactica-1 to (2812.500000, 56.250000)
+Creating WarpSequence:  Ship = Galactica-1  // To Set = None  // Placement Name = None
+data/TGL/Maelstrom/Episode 5/E5M2.tgl E5M2PrendelScan2
+Setting splash damage for Total PointDefence Firepoint Galactica-1 C Torpedo instance at _4ef06118_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Total PointDefence Firepoint Pegasus-5 C Torpedo instance at _5f806050_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Total PointDefence Firepoint Pegasus-4 C Torpedo instance at _4ef06118_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Total PointDefence Firepoint Pegasus-6 C Torpedo instance at _5f805c00_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Total PointDefence Firepoint Galactica-3 C Torpedo instance at _4ef05e38_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Total PointDefence Firepoint Pegasus-5 C Torpedo instance at _5f805d70_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Total PointDefence Firepoint Galactica-3 C Torpedo instance at _5f805ee0_p_Torpedo to (112.500000, 2.250000)
+Creating WarpSequence:  Ship = Galactica-3  // To Set = None  // Placement Name = None
+Setting splash damage for Total PointDefence Firepoint Pegasus-6 C Torpedo instance at _4ef05fa8_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Pegasus-4 to (5625.000000, 112.500000)
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 12 Sep 2025 18:19:12#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+
+
+Setting Stock System Planets Random Density.
+Ship Galactica-1 with Alternative Warp FTL SubModel support added
+Ship Galactica-2 with Alternative Warp FTL SubModel support added
+Ship Galactica-3 with Alternative Warp FTL SubModel support added
+Ship Pegasus-4 with Alternative Warp FTL SubModel support added
+Ship Pegasus-5 with Alternative Warp FTL SubModel support added
+Ship Pegasus-6 with Alternative Warp FTL SubModel support added
+Ship Assault Raptor-7 with Alternative Warp FTL SubModel support added
+Ship Assault Raptor-8 with Alternative Warp FTL SubModel support added
+Ship Assault Raptor-9 with Alternative Warp FTL SubModel support added
+Ship Escort Raptor-10 with Alternative Warp FTL SubModel support added
+Ship Escort Raptor-11 with Alternative Warp FTL SubModel support added
+Ship Escort Raptor-12 with Alternative Warp FTL SubModel support added
+Ship SAR Raptor-13 with Alternative Warp FTL SubModel support added
+Ship SAR Raptor-14 with Alternative Warp FTL SubModel support added
+Ship SAR Raptor-15 with Alternative Warp FTL SubModel support added
+Ship Blackbird-16 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+Shuttle Launching Error: ship SAR Raptor-13 has no Shuttle launching points
+Shuttle Launching Error: ship SAR Raptor-14 has no Shuttle launching points
+Shuttle Launching Error: ship SAR Raptor-15 has no Shuttle launching points
+
+
+
+
+Setting splash damage for Total PointDefence Firepoint Galactica-1 C Torpedo instance at _4f25ed98_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Total PointDefence Firepoint Pegasus-4 C Torpedo instance at _5f805d70_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Pegasus-4 to (5625.000000, 112.500000)
+Creating WarpSequence:  Ship = Pegasus-4  // To Set = None  // Placement Name = None
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Galactica-1 with Alternative Warp FTL SubModel support added
+Ship Galactica-2 with Alternative Warp FTL SubModel support added
+Ship Galactica-3 with Alternative Warp FTL SubModel support added
+Ship Pegasus-4 with Alternative Warp FTL SubModel support added
+Ship Pegasus-5 with Alternative Warp FTL SubModel support added
+Ship Pegasus-6 with Alternative Warp FTL SubModel support added
+Ship Assault Raptor-7 with Alternative Warp FTL SubModel support added
+Ship Assault Raptor-8 with Alternative Warp FTL SubModel support added
+Ship Assault Raptor-9 with Alternative Warp FTL SubModel support added
+Ship Escort Raptor-10 with Alternative Warp FTL SubModel support added
+Ship Escort Raptor-11 with Alternative Warp FTL SubModel support added
+Ship Escort Raptor-12 with Alternative Warp FTL SubModel support added
+Ship SAR Raptor-13 with Alternative Warp FTL SubModel support added
+Ship SAR Raptor-14 with Alternative Warp FTL SubModel support added
+Ship SAR Raptor-15 with Alternative Warp FTL SubModel support added
+Ship Blackbird-16 with Alternative Warp FTL SubModel support added
+Ship Artemis-23 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting splash damage for Total PointDefence Firepoint Pegasus-4 C Torpedo instance at _5f805ee0_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Total PointDefence Firepoint Galactica-1 C Torpedo instance at _4ef05e38_p_Torpedo to (112.500000, 2.250000)
+
+
+Setting splash damage for Total PointDefence Firepoint Pegasus-5 C Torpedo instance at _5f805ee0_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Total PointDefence Firepoint Pegasus-4 C Torpedo instance at _4ef05e38_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Total PointDefence Firepoint Galactica-3 C Torpedo instance at _4ef05fa8_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Total PointDefence Firepoint Pegasus-5 C Torpedo instance at _5f806050_p_Torpedo to (112.500000, 2.250000)
+
+
+Setting splash damage for Total PointDefence Firepoint Galactica-1 C Torpedo instance at _5f806050_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Total PointDefence Firepoint Pegasus-4 C Torpedo instance at _4ef05fa8_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Total PointDefence Firepoint Galactica-1 C Torpedo instance at _5f806050_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Total PointDefence Firepoint Galactica-2 C Torpedo instance at _5f806050_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Total PointDefence Firepoint Pegasus-4 C Torpedo instance at _5f806050_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Total PointDefence Firepoint Pegasus-5 C Torpedo instance at _5f806050_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Total PointDefence Firepoint Pegasus-5 C Torpedo instance at _5f806050_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Total PointDefence Firepoint Galactica-3 C Torpedo instance at _5f806050_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Total PointDefence Firepoint Pegasus-5 C Torpedo instance at _5f806050_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Total PointDefence Firepoint Galactica-2 C Torpedo instance at _4ef05fa8_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Total PointDefence Firepoint Pegasus-4 C Torpedo instance at _5f805ee0_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Total PointDefence Firepoint Mark 1-19 C Torpedo instance at _4ef05e38_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Total PointDefence Firepoint Galactica-3 C Torpedo instance at _4ef05e38_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Total PointDefence Firepoint Artemis-23 C Torpedo instance at _4ef05e38_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Total PointDefence Firepoint Galactica-1 C Torpedo instance at _5f806050_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Total PointDefence Firepoint Galactica-2 C Torpedo instance at _4ef05fa8_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Total PointDefence Firepoint Artemis-23 C Torpedo instance at _4ef05fa8_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Total PointDefence Firepoint Artemis-23 C Torpedo instance at _4f25cda0_p_Torpedo to (112.500000, 2.250000)
+
+
+Setting splash damage for Total PointDefence Firepoint Pegasus-4 C Torpedo instance at _4ef05e38_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Total PointDefence Firepoint Artemis-23 C Torpedo instance at _4ef05fa8_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Total PointDefence Firepoint Galactica-1 C Torpedo instance at _5f806050_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Total PointDefence Firepoint Galactica-1 C Torpedo instance at _4f25cda0_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Total PointDefence Firepoint Artemis-23 C Torpedo instance at _4f25cda0_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Total PointDefence Firepoint Galactica-1 C Torpedo instance at _5f806050_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Total PointDefence Firepoint Galactica-1 C Torpedo instance at _5f805c00_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Total PointDefence Firepoint Artemis-23 C Torpedo instance at _4f25cda0_p_Torpedo to (112.500000, 2.250000)
+
+# DS9FX has...
+
+# taken a console dump
+Setting splash damage for Total PointDefence Firepoint Galactica-2 C Torpedo instance at _5f805c00_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Total PointDefence Firepoint Galactica-1 C Torpedo instance at _4ef06118_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Total PointDefence Firepoint Galactica-3 C Torpedo instance at _5f805ee0_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Total PointDefence Firepoint Galactica-1 C Torpedo instance at _5f806050_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Galactica-2 to (2812.500000, 56.250000)
+Creating WarpSequence:  Ship = Galactica-2  // To Set = None  // Placement Name = None
+Trying to clean memory
+Error: Intercepting critical Lauching Error in LaunchShip.LaunchObject()
+Blackbird-16 (ships.BSG2003Blackbird) tried to launch ViperMk7
+If you can reproduce this error, contact a BC scripter please
+Unknown Shuttle Launching Error (LaunchShip.py): Ship was not created
+Error: Intercepting critical Lauching Error in LaunchShip.LaunchObject()
+Blackbird-16 (ships.BSG2003Blackbird) tried to launch ViperMk7
+If you can reproduce this error, contact a BC scripter please
+Unknown Shuttle Launching Error (LaunchShip.py): Ship was not created
+Error: Intercepting critical Lauching Error in LaunchShip.LaunchObject()
+Blackbird-16 (ships.BSG2003Blackbird) tried to launch ViperMk7
+If you can reproduce this error, contact a BC scripter please
+Unknown Shuttle Launching Error (LaunchShip.py): Ship was not created
+Error: Intercepting critical Lauching Error in LaunchShip.LaunchObject()
+Blackbird-16 (ships.BSG2003Blackbird) tried to launch ViperMk7
+If you can reproduce this error, contact a BC scripter please
+Unknown Shuttle Launching Error (LaunchShip.py): Ship was not created
+Error: Intercepting critical Lauching Error in LaunchShip.LaunchObject()
+Blackbird-16 (ships.BSG2003Blackbird) tried to launch ViperMk7
+If you can reproduce this error, contact a BC scripter please
+Unknown Shuttle Launching Error (LaunchShip.py): Ship was not created
+Error: Intercepting critical Lauching Error in LaunchShip.LaunchObject()
+Blackbird-16 (ships.BSG2003Blackbird) tried to launch ViperMk7
+If you can reproduce this error, contact a BC scripter please
+Unknown Shuttle Launching Error (LaunchShip.py): Ship was not created
+Error: Intercepting critical Lauching Error in LaunchShip.LaunchObject()
+Blackbird-16 (ships.BSG2003Blackbird) tried to launch ViperMk7
+If you can reproduce this error, contact a BC scripter please
+Unknown Shuttle Launching Error (LaunchShip.py): Ship was not created
+Error: Intercepting critical Lauching Error in LaunchShip.LaunchObject()
+Blackbird-16 (ships.BSG2003Blackbird) tried to launch ViperMk7
+If you can reproduce this error, contact a BC scripter please
+Unknown Shuttle Launching Error (LaunchShip.py): Ship was not created
+Error: Intercepting critical Lauching Error in LaunchShip.LaunchObject()
+Blackbird-16 (ships.BSG2003Blackbird) tried to launch ViperMk7
+If you can reproduce this error, contact a BC scripter please
+Unknown Shuttle Launching Error (LaunchShip.py): Ship was not created
+('MISSING SHIP:', 'ViperMk7')
+Traceback (innermost last):
+  File ".\Scripts\ftb\LaunchShip.py", line 206, in LaunchObject
+    pObject = loadspacehelper.CreateShip(pcScript, pSet, pcName, "", 0, 1)
+  File ".\Scripts\Custom\Autoload\000-Fixes20030402-FoundationRedirect.py", line 118, in CreateShip
+    debug("MISSING SHIP: %s" % pcScript)
+NameError: debug
+Unknown Shuttle Launching Error (LaunchShip.py): Ship was not created
+('MISSING SHIP:', 'ViperMk7')
+Traceback (innermost last):
+  File ".\Scripts\ftb\LaunchShip.py", line 206, in LaunchObject
+    pObject = loadspacehelper.CreateShip(pcScript, pSet, pcName, "", 0, 1)
+  File ".\Scripts\Custom\Autoload\000-Fixes20030402-FoundationRedirect.py", line 118, in CreateShip
+    debug("MISSING SHIP: %s" % pcScript)
+NameError: debug
+Unknown Shuttle Launching Error (LaunchShip.py): Ship was not created
+('MISSING SHIP:', 'ViperMk7')
+Traceback (innermost last):
+  File ".\Scripts\ftb\LaunchShip.py", line 206, in LaunchObject
+    pObject = loadspacehelper.CreateShip(pcScript, pSet, pcName, "", 0, 1)
+  File ".\Scripts\Custom\Autoload\000-Fixes20030402-FoundationRedirect.py", line 118, in CreateShip
+    debug("MISSING SHIP: %s" % pcScript)
+NameError: debug
+Unknown Shuttle Launching Error (LaunchShip.py): Ship was not created
+('MISSING SHIP:', 'ViperMk7')
+Traceback (innermost last):
+  File ".\Scripts\ftb\LaunchShip.py", line 206, in LaunchObject
+    pObject = loadspacehelper.CreateShip(pcScript, pSet, pcName, "", 0, 1)
+  File ".\Scripts\Custom\Autoload\000-Fixes20030402-FoundationRedirect.py", line 118, in CreateShip
+    debug("MISSING SHIP: %s" % pcScript)
+NameError: debug
+Unknown Shuttle Launching Error (LaunchShip.py): Ship was not created
+('MISSING SHIP:', 'ViperMk7')
+Traceback (innermost last):
+  File ".\Scripts\ftb\LaunchShip.py", line 206, in LaunchObject
+    pObject = loadspacehelper.CreateShip(pcScript, pSet, pcName, "", 0, 1)
+  File ".\Scripts\Custom\Autoload\000-Fixes20030402-FoundationRedirect.py", line 118, in CreateShip
+    debug("MISSING SHIP: %s" % pcScript)
+NameError: debug
+Unknown Shuttle Launching Error (LaunchShip.py): Ship was not created
+('MISSING SHIP:', 'ViperMk7')
+Traceback (innermost last):
+  File ".\Scripts\ftb\LaunchShip.py", line 206, in LaunchObject
+    pObject = loadspacehelper.CreateShip(pcScript, pSet, pcName, "", 0, 1)
+  File ".\Scripts\Custom\Autoload\000-Fixes20030402-FoundationRedirect.py", line 118, in CreateShip
+    debug("MISSING SHIP: %s" % pcScript)
+NameError: debug
+Unknown Shuttle Launching Error (LaunchShip.py): Ship was not created
+('MISSING SHIP:', 'ViperMk7')
+Traceback (innermost last):
+  File ".\Scripts\ftb\LaunchShip.py", line 206, in LaunchObject
+    pObject = loadspacehelper.CreateShip(pcScript, pSet, pcName, "", 0, 1)
+  File ".\Scripts\Custom\Autoload\000-Fixes20030402-FoundationRedirect.py", line 118, in CreateShip
+    debug("MISSING SHIP: %s" % pcScript)
+NameError: debug
+Unknown Shuttle Launching Error (LaunchShip.py): Ship was not created
+('MISSING SHIP:', 'ViperMk7')
+Traceback (innermost last):
+  File ".\Scripts\ftb\LaunchShip.py", line 206, in LaunchObject
+    pObject = loadspacehelper.CreateShip(pcScript, pSet, pcName, "", 0, 1)
+  File ".\Scripts\Custom\Autoload\000-Fixes20030402-FoundationRedirect.py", line 118, in CreateShip
+    debug("MISSING SHIP: %s" % pcScript)
+NameError: debug
+Unknown Shuttle Launching Error (LaunchShip.py): Ship was not created
+('MISSING SHIP:', 'ViperMk7')
+Traceback (innermost last):
+  File ".\Scripts\ftb\LaunchShip.py", line 206, in LaunchObject
+    pObject = loadspacehelper.CreateShip(pcScript, pSet, pcName, "", 0, 1)
+  File ".\Scripts\Custom\Autoload\000-Fixes20030402-FoundationRedirect.py", line 118, in CreateShip
+    debug("MISSING SHIP: %s" % pcScript)
+NameError: debug
+Unknown Shuttle Launching Error (LaunchShip.py): Ship was not created
+('MISSING SHIP:', 'ViperMk7')
+Traceback (innermost last):
+  File ".\Scripts\ftb\LaunchShip.py", line 206, in LaunchObject
+    pObject = loadspacehelper.CreateShip(pcScript, pSet, pcName, "", 0, 1)
+  File ".\Scripts\Custom\Autoload\000-Fixes20030402-FoundationRedirect.py", line 118, in CreateShip
+    debug("MISSING SHIP: %s" % pcScript)
+NameError: debug
+Unknown Shuttle Launching Error (LaunchShip.py): Ship was not created
+('MISSING SHIP:', 'ViperMk7')
+Traceback (innermost last):
+  File ".\Scripts\ftb\LaunchShip.py", line 206, in LaunchObject
+    pObject = loadspacehelper.CreateShip(pcScript, pSet, pcName, "", 0, 1)
+  File ".\Scripts\Custom\Autoload\000-Fixes20030402-FoundationRedirect.py", line 118, in CreateShip
+    debug("MISSING SHIP: %s" % pcScript)
+NameError: debug
+Unknown Shuttle Launching Error (LaunchShip.py): Ship was not created
+Setting splash damage for Galactica-1 to (2812.500000, 56.250000)
+Creating WarpSequence:  Ship = Galactica-1  // To Set = None  // Placement Name = None
+data/TGL/Maelstrom/Episode 5/E5M2.tgl E5M2PrendelScan2
+Setting splash damage for Total PointDefence Firepoint Galactica-1 C Torpedo instance at _4ef06118_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Total PointDefence Firepoint Pegasus-5 C Torpedo instance at _5f806050_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Total PointDefence Firepoint Pegasus-4 C Torpedo instance at _4ef06118_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Total PointDefence Firepoint Pegasus-6 C Torpedo instance at _5f805c00_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Total PointDefence Firepoint Galactica-3 C Torpedo instance at _4ef05e38_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Total PointDefence Firepoint Pegasus-5 C Torpedo instance at _5f805d70_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Total PointDefence Firepoint Galactica-3 C Torpedo instance at _5f805ee0_p_Torpedo to (112.500000, 2.250000)
+Creating WarpSequence:  Ship = Galactica-3  // To Set = None  // Placement Name = None
+Setting splash damage for Total PointDefence Firepoint Pegasus-6 C Torpedo instance at _4ef05fa8_p_Torpedo to (112.500000, 2.250000)
+Setting splash damage for Pegasus-4 to (5625.000000, 112.500000)
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 12 Sep 2025 18:46:56#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+
+
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Ship Artemis class-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 12 Sep 2025 18:46:56#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+
+
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Ship Artemis class-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+# DS9FX has...
+
+# taken a console dump
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 12 Sep 2025 19:12:32#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+data/TGL/Maelstrom/Episode 7/E7M2.tgl E7M2L0341
+data/TGL/Maelstrom/Episode 8/E8M2.tgl E8M2OD5Arrive5
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 12 Sep 2025 19:12:32#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+data/TGL/Maelstrom/Episode 7/E7M2.tgl E7M2L0341
+data/TGL/Maelstrom/Episode 8/E8M2.tgl E8M2OD5Arrive5
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+# DS9FX has...
+
+# taken a console dump
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 12 Sep 2025 19:12:32#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####

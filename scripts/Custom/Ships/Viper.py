@@ -10,7 +10,7 @@ import App
 #######################################################################################
 #                                                                                     #
 abbrev = 'Viper'
-iconName = 'Viper'
+iconName = 'ViperMk1'
 longName = 'Viper'
 shipFile = 'Viper' 
 menuGroup = 'BSG (TOS) Ships'

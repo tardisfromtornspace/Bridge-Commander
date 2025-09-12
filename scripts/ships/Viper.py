@@ -3,8 +3,8 @@ import Multiplayer.SpeciesToShip
 
 def GetShipStats():
 	kShipStats = {
-		"FilenameHigh": "data/Models/Ships/Viper/Viper.nif",
-		"FilenameLow": "data/Models/Ships/Viper/Viper.nif",
+		"FilenameHigh": "data/Models/Ships/ViperMk1/ViperMk1.nif",
+		"FilenameLow": "data/Models/Ships/ViperMk1/ViperMk1.nif",
 		"Name": "Viper",
 		"HardpointFile": "Viper",
 		"Species": Multiplayer.SpeciesToShip.SHUTTLE

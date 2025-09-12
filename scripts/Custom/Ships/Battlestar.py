@@ -10,7 +10,7 @@ import App
 #######################################################################################
 #                                                                                     #
 abbrev = 'Battlestar'
-iconName = 'Battlestar'
+iconName = 'BS_Acropolis'
 longName = 'Battlestar Galactica'
 shipFile = 'Battlestar' 
 menuGroup = 'BSG (TOS) Ships'
