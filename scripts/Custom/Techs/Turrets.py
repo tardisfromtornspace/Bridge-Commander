@@ -253,7 +253,7 @@ class Turrets(FoundationTech.TechDef):
                                                 self.trueDetach(pInstance, myShipID)
                                                 self.extraCleanup(myShipID)
                                         except:
-                                                print __name__ , "error when calling checkWell:"
+                                                print __name__ , " error when calling checkWell:"
                                                 traceback.print_exc()
                         else:
                                 try:
@@ -964,7 +964,7 @@ class MovingEvent:
                 else:
                     item[0].SetScale(0.5)
                 
-        # move!
+        # adjust planned move
         def __call__(self, pShip, pTarget=None):
                 # if the move ID doesn't match then this move is outdated
                 debug(__name__ + ", __call__")
@@ -1045,12 +1045,12 @@ def partTranslate(item, iShipID, lStoppingTranslation, warpDirty, usualMove = 0)
                 iNacelleID = item[0].GetObjID()
 
         if iNacelleID == None or iNacelleID == App.NULL_ID:
-                print __name__, ": Transloc Error: Lost Nacelle ID"
+                #print __name__, ": Transloc Error: Lost Nacelle ID"
                 return 0
 
         pNacelle = GetShipFromID(iNacelleID)
         if not pNacelle:
-               print __name__, ": Transloc Error: Lost Nacelle ship"
+               #print __name__, ": Transloc Error: Lost Nacelle ship"
                return 0
 
         dTurretSystemOptionsList = item[1]
@@ -1072,24 +1072,26 @@ def partTranslate(item, iShipID, lStoppingTranslation, warpDirty, usualMove = 0)
         return 0
 
 # aim!
-def aim1Item(item, iShipID, pTarget=None):
+def aim1Item(item, iShipID, pTarget=None, pShip = None): #(item, iShipID, pTarget=None):
 
-        #pShip = GetShipFromID(iShipID)
-        #if not pShip:
-        #        print __name__, ": Rotating Error: Lost MAIN part"
-        #        return 0
+        if not pShip:
+                pShip = GetShipFromID(iShipID)
+
+        if not pShip:
+                print __name__, ": Rotating Error: Lost MAIN part"
+                return 0
 
         iNacelleID = None
         if item[0] != None and hasattr(item[0], "GetObjID"):
                 iNacelleID = item[0].GetObjID()
 
         if iNacelleID == None or iNacelleID == App.NULL_ID:
-                print __name__, ": Rotating Error: Lost Nacelle ID"
+                #print __name__, ": Rotating Error: Lost Nacelle ID"
                 return 0
 
         pNacelle = GetShipFromID(iNacelleID)
         if not pNacelle:
-               print __name__, ": Rotating Error: Lost Nacelle ship"
+               #print __name__, ": Rotating Error: Lost Nacelle ship"
                return 0
 
         dTurretSystemOptionsList = item[1]
@@ -1266,7 +1268,6 @@ def SubsystemStateChanged(pObject, pEvent):
 
         pShip = App.ShipClass_GetObjectByID(None, pObject.GetObjID())
         pSubsystem = pEvent.GetSource()
-
         # if the subsystem that changes its power is a weapon
         if not pSubsystem:
                 pObject.CallNextHandler(pEvent)
@@ -1274,7 +1275,7 @@ def SubsystemStateChanged(pObject, pEvent):
         if hasattr(pEvent, "GetBool"):
                 wpnActiveState = pEvent.GetBool()
 
-                if pSubsystem.IsTypeOf(App.CT_WEAPON_SYSTEM): # in theory this should be enough, in practice...
+                if pSubsystem.IsTypeOf(App.CT_WEAPON_SYSTEM) or pSubsystem.IsTypeOf(App.CT_PHASER_SYSTEM) or pSubsystem.IsTypeOf(App.CT_PULSE_WEAPON_SYSTEM) or pSubsystem.IsTypeOf(App.CT_TORPEDO_SYSTEM): # in theory this should be enough, in practice...
                         # set turrets for this alert state
                         PartsForWeaponState(pShip, wpnActiveState)
                 elif pSubsystem.IsTypeOf(App.CT_SHIELD_SUBSYSTEM):
@@ -1287,10 +1288,10 @@ def SubsystemStateChanged(pObject, pEvent):
                 else:
                         try:
                                 pParent = pSubsystem.GetParentSubsystem()
-                                if pParent and (pParent.IsTypeOf(App.CT_WEAPON_SYSTEM) or pParent.IsTypeOf(App.CT_PHASER_SYSTEM) or pSubsystem.IsTypeOf(App.CT_PULSE_WEAPON_SYSTEM) or pSubsystem.IsTypeOf(App.CT_TORPEDO_SYSTEM)):
+                                if pParent and (pParent.IsTypeOf(App.CT_WEAPON_SYSTEM) or pParent.IsTypeOf(App.CT_PHASER_SYSTEM) or pParent.IsTypeOf(App.CT_PULSE_WEAPON_SYSTEM) or pParent.IsTypeOf(App.CT_TORPEDO_SYSTEM)):
                                         PartsForWeaponState(pShip, wpnActiveState)
                         except:
-                                pass
+                                traceback.print_exc()
 
                 pObject.CallNextHandler(pEvent)
                 return
@@ -1444,7 +1445,7 @@ def ExitSet(pObject, pEvent):
 
                             pInstanceAdict = pInstanceA.__dict__
                             if pInstanceAdict[oTurrets.name]["Setup"].has_key("AttackModel") and iType == 2:
-                                    oTurrets.AttachParts(pShip, pInstance)
+                                    oTurrets.AttachParts(pShip, pInstanceA)
                                     if pInstanceAdict[oTurrets.name]["Setup"].has_key("AttackModel"):
                                             sNewShipScript = pInstanceAdict[oTurrets.name]["Setup"]["AttackModel"]
                                             ReplaceModel(pShip, sNewShipScript)
@@ -2159,7 +2160,6 @@ def AlertMoveFinishTemporarilyAction(pAction, pShip, pInstance, iThisMovID, iTyp
                         ReplaceModel(pShip, sNewShipScript)
                         checkingReCloak(pShip)
 
-                print "calling AlertMoveFinishTemporarilyAction --> Detach Parts"
                 oTurrets.DetachParts(pShip, pInstance) # we hide turrets when not in alert mode, else we keep them
 
         turretTranslocation(pInstance, pShip.GetObjID(), iType)
@@ -2179,7 +2179,6 @@ def WarpStartMoveFinishAction(pAction, pShip, pInstance, iThisMovID):
                 return 1
 
         # We may have finished the start of warp, but that doesn't mean we have ended yet - turrets will remain in position and then probably hide
-        print "calling WarpStartMoveFinishAction --> Detach Parts"
         oTurrets.DetachParts(pShip, pInstance)
         return 0
 
@@ -2232,7 +2231,7 @@ def WarpExitMoveFinishAction(pAction, pShip, pInstance, iThisMovID):
                         ReplaceModel(pShip, sNewShipScript)
                         checkingReCloak(pShip)
 
-                print "calling AlertMoveFinishTemporarilyAction --> Detach Parts"
+                #print "calling AlertMoveFinishTemporarilyAction --> Detach Parts"
                 oTurrets.DetachParts(pShip, pInstance) # we hide turrets when not in alert mode, else we keep them
 
         turretTranslocation(pInstance, pShip.GetObjID(), iType)
@@ -2312,15 +2311,15 @@ def PartsForWeaponState(pShip, weaponsActive=None):
         if App.g_kUtopiaModule.IsMultiplayer() and not App.g_kUtopiaModule.IsHost():
                 return
         
-        pInstance = findShipInstance(pShip)
-        iType = pShip.GetAlertLevel()
-        iLongestTime = 0.0
-        dHardpoints = {}
-        
         # check if ship still exits
         pShip = App.ShipClass_GetObjectByID(None, pShip.GetObjID())
         if not pShip:
                 return
+
+        pInstance = findShipInstance(pShip)
+        iType = pShip.GetAlertLevel()
+        iLongestTime = 0.0
+        dHardpoints = {}
 
         oTurrets.SetBattleTurretListenerTo(pShip, 0)
         
@@ -2359,7 +2358,7 @@ def PartsForWeaponTurretState(pInstance, pShip, iShipID):
 
         pShip2 = GetShipFromID(iShipID)
         if not pShip2:
-                print __name__, ": TranslocRotating Error: Lost MAIN part"
+                #print __name__, ": TranslocRotating Error: Lost MAIN part"
                 return 0
 
         for item in pInstance.TurretSystemOptionsList:
@@ -2381,7 +2380,7 @@ def PartsForWeaponTurretState(pInstance, pShip, iShipID):
         for item in pInstance.TurretSystemOptionsList:
                 try:
                         if hasattr(item[0], "__class__") and item[0].__class__ == App.ShipClass:
-                                aim1Item(item, iShipID)
+                                aim1Item(item, iShipID, pShip=pShip2)
                                 turretTranslocation(pInstance, iShipID, iType, warpDirty = 0, usualMove = 1, alreadyChecked = 1)
                 except:
                         traceback.print_exc()
@@ -2394,7 +2393,7 @@ def turretTranslocation(pInstance, iShipID, iType, warpDirty=0, usualMove = 0, a
         if alreadyChecked == 0:
                 pShip = GetShipFromID(iShipID)
                 if not pShip:
-                        print __name__, ": Transloc Error: Lost MAIN part"
+                        #print __name__, ": Transloc Error: Lost MAIN part"
                         return 0
 
         for item in pInstance.TurretSystemOptionsList:

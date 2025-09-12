@@ -7,20 +7,29 @@
 # Below we have what NormalWarp would look like, then we add the replacement functions on a "monkey patch" section:
 # NormalWarp.py
 # prototype custom travelling method plugin script, by USS Frontier (Normal Warp, original) and then modified by Alex SL Gato
-# 13th December 2024
+# 12th September 2025
 #################################################################################################################
 ##########	MANUAL
 #################################################################################################################
 # NOTE: all functions/methods and attributes defined here (in this prototype example plugin, NormalWarp) are required to be in the plugin, with the exclusion of:
-# ------ MODINFO, which is there just to verify versioning.
-# ------ import Camera statement
-# ------ Auxiliar functions: "setTheStretchyState", "theStagesOfGrief", "WatchPlayerShipLeave".
+# ------ MODINFO, which is there just to verify versioning; and backwardsWarpTech, used for stretch tech customization.
+# ------ import Camera and import FoundationTech statements.
+# ------ Auxiliar functions: "findShipInstance", "setTheStretchyState", "theStagesOfGrief", "WatchPlayerShipLeave".
 # === How-To-Add ===
 # This Travelling Method is Ship-based, on this case it just checks if your ship was Warp Drive to use. It is the default, with default speeds.
 # === Changes over old Normal Warp ===
 # All changes done have been to fix bugs and enhance the experience. The areas declared as "extras" highlight what changes were made on pre-existing functions.
 # - Set upper Warp limit to warp 10.0 - this pretty much does nothing except ensure that ships with warp 9.99 can actually choose warp 9.99 with the GalaxyCharts slidebar, and also allows transwarp speed if necessary.
 # - Normal Warp for GC has the stretchy-effect back!
+# ---- Provided the option to use "App.WarpEngineSubsystem.WES_WARP_INITIATED" (regular entering warp stretch effect) or "App.WarpEngineSubsystem.WES_DEWARP_INITIATED" (regular exiting warp stretch effect) for warp entry stretch effect. This was done for two reasons:
+# ------- 1. Always calling "App.WarpEngineSubsystem.WES_WARP_INITIATED" during the warp effect sequence would be the most correct option. However, calling that state seems to cause problems (admittedly, very rarely) on GC with some ship-attached-to-model stuff, while "App.WarpEngineSubsystem.WES_DEWARP_INITIATED" doesn't, is aesthetically nearly identical, and most importantly, GalaxyCharts and the AI do not use those two warp engine states for things (it may look like "Traveler" from Galaxy Charts does so through the "SetEnginesState" function, but that function is literally a "try-pass" disabled feature because 'setting the warp engine state is for those warp effects' like really fast and stretched ships... So just disable that for now').
+# ------- 2. Greater customization.
+# In order to ensure people can use one or the other, you can just add a "Turret" dictionary field on a ships's scripts/Custom/Ships file
+"""
+Sample Setup (replace "Ambassador" below for the proper abbrev):
+
+Foundation.ShipDef.Ambassador.dTechs = { 'Turret': {} }
+"""
 # - Fixed the camera jumping over the place to catch the player ship, to then have the warp flash band at 2 centimeters from your face.
 #
 #################################################################################################################
@@ -29,8 +38,8 @@
 #################################################################################################################
 #
 MODINFO = { "Author": "\"USS Frontier\" (original) and \"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "20241213",
-	    "License": "All Rights Reserved to USS Frontier, LGPL from Alex SL Gato changes",
+	    "Version": "20250912",
+	    "License": "All Rights Reserved to USS Frontier, LGPL only on Alex SL Gato changes",
 	    "Description": "Read the small title above for more info"
 	    }
 #
@@ -38,6 +47,22 @@ MODINFO = { "Author": "\"USS Frontier\" (original) and \"Alex SL Gato\" andromed
 #
 
 from bcdebug import debug
+import FoundationTech
+
+backwardsWarpTech = "Turret" # Update manual if this changes
+
+def findShipInstance(pShip):
+        debug(__name__ + ", findShipInstance")
+        pInstance = None
+        try:
+                if not pShip:
+                        return pInstance
+                if FoundationTech.dShips.has_key(pShip.GetName()):
+                        pInstance = FoundationTech.dShips[pShip.GetName()]
+        except:
+                pass
+        return pInstance
+
 # prototype custom travelling method plugin script, by USS Frontier
 
 # NOTE: all functions/methods and attributes defined here (in this prototype example plugin, NormalWarp) are required to be in the plugin.
@@ -402,9 +427,9 @@ def PreExitStuff(self):
 # 3º exiting travel sequence
 ########
 # Aux. Restoring the stretchy feature
-def setTheStretchyState(pAction, pShipID, state):
+def setTheStretchyState(pAction, pShipID, state, setOrTrans = 0, state2=None, repeat=0):
 	# STATES ARE:
-	# App.WarpEngineSubsystem.WES_NOT_WARPING
+	# App.WarpEngineSubsystem.WES_NOT_WARPING     <- Not warping, duh
 	# App.WarpEngineSubsystem.WES_WARP_INITIATED, <- Gives front stretchy part
 	# App.WarpEngineSubsystem.WES_WARP_BEGINNING, <- Speed boost
 	# App.WarpEngineSubsystem.WES_WARP_ENDING,    <- Makes the camera freeze while warping out
@@ -416,24 +441,39 @@ def setTheStretchyState(pAction, pShipID, state):
 	pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), pShipID)
 	if pShip:
 		pWarpEngines = pShip.GetWarpEngineSubsystem()
-		if pWarpEngines and pWarpEngines.GetWarpState() != state:
-			# Turns out that setting the warp engine state is for those warp effects, like really fast and stretched ships... Since GC disables them I will re-enable them for now.
-			pWarpEngines.TransitionToState(state)
-			pWarpEngines.SetWarpState(state)
+		if state2 == None:
+			state2 = state
 
+		if pWarpEngines and (repeat == 1 or pWarpEngines.GetWarpState() != state):
+			# Turns out that setting the warp engine state is for those warp effects, like really fast and stretched ships... Since GC disables them I will re-enable them for now.
+			if setOrTrans == 0:
+				pWarpEngines.TransitionToState(state2)
+				pWarpEngines.SetWarpState(state)
+			elif setOrTrans == -1:
+				pWarpEngines.SetWarpState(state2)
+				pWarpEngines.TransitionToState(state)
+			elif setOrTrans == 1:
+				pWarpEngines.SetWarpState(state2)
+			elif setOrTrans == 2:
+				pWarpEngines.TransitionToState(state2)
 	return 0
 
 # Aux. Restoring the stretchy feature
 def theStagesOfGrief(pAction, pShipID, deWarp = 0):
 	# So the vessel can change things
+	setOrSuave = 1
 	if deWarp == 0:
-		setTheStretchyState(pAction, pShipID, App.WarpEngineSubsystem.WES_WARP_BEGINNING)
-		setTheStretchyState(pAction, pShipID, App.WarpEngineSubsystem.WES_WARP_ENDING)
-		setTheStretchyState(pAction, pShipID, App.WarpEngineSubsystem.WES_WARPING)
-		setTheStretchyState(pAction, pShipID, App.WarpEngineSubsystem.WES_DEWARP_INITIATED)
-	setTheStretchyState(pAction, pShipID, App.WarpEngineSubsystem.WES_DEWARP_BEGINNING)
-	setTheStretchyState(pAction, pShipID, App.WarpEngineSubsystem.WES_DEWARP_ENDING)
-	setTheStretchyState(pAction, pShipID, App.WarpEngineSubsystem.WES_NOT_WARPING)
+		setOrSuave = 2
+		setTheStretchyState(pAction, pShipID, App.WarpEngineSubsystem.WES_NOT_WARPING, setOrTrans = 1)
+		setTheStretchyState(pAction, pShipID, App.WarpEngineSubsystem.WES_WARP_BEGINNING, setOrTrans = 2)
+		setTheStretchyState(pAction, pShipID, App.WarpEngineSubsystem.WES_WARP_ENDING, setOrTrans = 2)
+
+	setTheStretchyState(pAction, pShipID, App.WarpEngineSubsystem.WES_WARPING, setOrTrans = setOrSuave)
+	setTheStretchyState(pAction, pShipID, App.WarpEngineSubsystem.WES_DEWARP_INITIATED, setOrTrans = 2)
+	setTheStretchyState(pAction, pShipID, App.WarpEngineSubsystem.WES_DEWARP_BEGINNING, setOrTrans = 2)
+	setTheStretchyState(pAction, pShipID, App.WarpEngineSubsystem.WES_DEWARP_ENDING, setOrTrans = 2)
+	setTheStretchyState(pAction, pShipID, App.WarpEngineSubsystem.WES_NOT_WARPING, setOrTrans = 2)
+
 	return 0
 
 # Aux. for a better camera
@@ -512,6 +552,11 @@ def SetupSequence(self):
 
 	pWarpSet = pWS.Travel.GetTravelSetToUse()
 
+	myState = App.WarpEngineSubsystem.WES_WARP_INITIATED
+	pInstance = findShipInstance(pShip)
+	if pInstance and hasattr(pInstance, "__dict__") and pInstance.__dict__.has_key(backwardsWarpTech):
+		myState = App.WarpEngineSubsystem.WES_DEWARP_INITIATED
+
 	pEngageWarpSeq = App.TGSequence_Create()
 
 	## disable during warp seq because for now WARP gfx effect doesn't have the need of any during warp seq fx
@@ -564,10 +609,12 @@ def SetupSequence(self):
 	pEngageWarpSeq.AddAction(pWarpSoundAction1, None, fEntryDelayTime + 0.2)
 	
 	pBoostAction = App.TGScriptAction_Create(sCustomActionsScript, "BoostShipSpeed", pShip.GetObjID(), 1, 300.0)
-	pEngageWarpSeq.AddAction(pBoostAction, pWarpSoundAction1, 0.7)
+	pEngageWarpSeq.AddAction(pBoostAction, pWarpSoundAction1, 0.7) #TO-DO it was 0.7
 
 	# THIS WAS AN EXTRA ADDED TO RESTORE WARP STRETCHINESS
-	pStretchAction = App.TGScriptAction_Create(__name__, "setTheStretchyState", pShip.GetObjID(), App.WarpEngineSubsystem.WES_WARP_INITIATED)
+	pPreStretchAction = App.TGScriptAction_Create(__name__, "setTheStretchyState", pShip.GetObjID(), App.WarpEngineSubsystem.WES_NOT_WARPING, 1)
+	pEngageWarpSeq.AddAction(pPreStretchAction, pWarpSoundAction1, 0.1)
+	pStretchAction = App.TGScriptAction_Create(__name__, "setTheStretchyState", pShip.GetObjID(), myState, 0)
 	pEngageWarpSeq.AddAction(pStretchAction, pWarpSoundAction1, 0.7)
 	# END OF THE EXTRA
 
@@ -643,7 +690,9 @@ def SetupSequence(self):
 		pExitWarpSeq.AddAction(pFlashAction2, pHideShip, 0.7)
 
 		# THIS WAS AN EXTRA ADDED TO RESTORE WARP STRETCHINESS
-		pStretchEAction = App.TGScriptAction_Create(__name__, "setTheStretchyState", pShip.GetObjID(), App.WarpEngineSubsystem.WES_DEWARP_INITIATED)
+		pPreStretchEAction = App.TGScriptAction_Create(__name__, "setTheStretchyState", pShip.GetObjID(), App.WarpEngineSubsystem.WES_WARPING, 1)
+		pExitWarpSeq.AddAction(pPreStretchEAction, pHideShip, 0.5)
+		pStretchEAction = App.TGScriptAction_Create(__name__, "setTheStretchyState", pShip.GetObjID(), App.WarpEngineSubsystem.WES_DEWARP_INITIATED, 2)
 		pExitWarpSeq.AddAction(pStretchEAction, pFlashAction2)
 		# END OF THE EXTRA
 
@@ -667,12 +716,12 @@ def SetupSequence(self):
 					break
 
 		# Give it a little boost
-		pBoostAction = App.TGScriptAction_Create(sCustomActionsScript, "BoostShipSpeed", pShip.GetObjID(), 1, 100.0)
-		pExitWarpSeq.AddAction(pBoostAction, pUnHideShip, 0.1)
+		pBoostAction2 = App.TGScriptAction_Create(sCustomActionsScript, "BoostShipSpeed", pShip.GetObjID(), 1, 100.0)
+		pExitWarpSeq.AddAction(pBoostAction2, pUnHideShip, 0.1)
 
 		# Play the vushhhhh of exiting warp
 		pWarpSoundAction2 = App.TGScriptAction_Create(sCustomActionsScript, "PlayWarpSound", pWS, "Exit Warp", sRace)
-		pExitWarpSeq.AddAction(pWarpSoundAction2, pBoostAction)
+		pExitWarpSeq.AddAction(pWarpSoundAction2, pBoostAction2)
 	
 		# Make the ship return to normal speed.
 		pUnBoostAction = App.TGScriptAction_Create(sCustomActionsScript, "BoostShipSpeed", pShip.GetObjID(), 0, 1.0)
