@@ -1,4 +1,7 @@
 ==Changelog==
+1.6.7 -
+   Updates:
+   * Updated Turrets to 1.0.
 1.6.6 -
    Updates:
    * Updated SimulatedPointDefence to 1.0 to allow cleaner logic and cleanup.
