@@ -23,7 +23,7 @@
 #     (beam, torpedo, pulse or tractor). Also, for the sake of STABILITY and not having wonky behaviour, do not create turrets for turrets without extreme caution nor add the AutoTargeting to the turret itself (the latter is already taken care of by the parent)!!!
 # --- From version 0.9993, "Tactical.Projectiles.AutomaticSystemRepairDummy" and "ftb.Tech.ATPFunctions" are required as dependencies.
 
-# The scheme is that: # TO-DO SEE IF BY NOT DETACHING THE PARTS WE CAN GET SOMETHING ELSE... IF THAT WORKS THEN CHANGE THE SYSTEM BEHAVIOUR
+# The scheme is that:
 # 1. add normal model
 # 2. replace model with body + turrets if red alert or weapons are activated
 # 3. move the turrets + consider original turret size re-escale (for some reason, turrets are always bigger than the model... strange. Anyways, to help fix that, we've given the "SetScale" property; else there's a default 0.5 times
@@ -66,7 +66,7 @@
 #    -- However, naturally, phasers using the "SimulatedPhaser" will work with advanced power control because those are actually the parent ship beams.
 # 3. Torpedo change-type and spread-type support is non-existant at the moment
 #    -- The reason for this is because, for some unexplainable reason, trying to change the ammo for a torpedo will work fine, but then when a turret torpedo of the new type collides or despawns, it causes a virtual call function error.
-# 4. For some unknown reason, when a ship gets out of warp, if the turret "WarpPosition" is too, too far, turrets might become invisible - something similar happens sometimes with GC warp stretchiness - this does not affect the turret functionality at all, it can still fire and do actions.
+# 4. For some unknown reason, when a ship gets out of warp, if the turret "WarpPosition" is too, too far, turrets might become invisible - this does not affect the turret functionality at all, it can still fire and do actions.
 # 5. Turrets support AutoTargeting and MultiTargeting fine, but for some cases it may be a tiny bit wonky (including very rarely having a turret aiming at a target for a millisecond, to later on aim and fire at another). 
 #    ***Behaviour may turn out even weirder if multiple parent ship weapons are assigned to the same turret (with each one aiming at a different target)***
 # 6. For functional turrets:
@@ -144,7 +144,7 @@ import MissionLib
 
 #################################################################################################################
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.9996",
+	    "Version": "1.0",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -224,15 +224,21 @@ class Turrets(FoundationTech.TechDef):
         def countdown(self):
                 debug(__name__ + ", Initiated Turret counter countdown")
                 if not self.pTimer:
-                        global bOverflow
+                        global bOverflow, defaultSlice
                         bOverflow = 1
-                        global defaultSlice
                         self.pTimer = App.PythonMethodProcess()
                         self.pTimer.SetInstance(self)
                         self.pTimer.SetFunction("aimingAtTarget")
                         self.pTimer.SetDelay(defaultSlice)
                         self.pTimer.SetPriority(App.TimeSliceProcess.LOW)        
                         self.pTimer.SetDelayUsesGameTime(1)
+
+        def deleteTimer(self):
+                if hasattr(self, "pTimer") and self.pTimer != None:
+                        try:
+                                self.pTimer = None
+                        except:
+                                traceback.print_exc()
 
         def checkWell(self, fTime, myShipID, pInstanceO):
                 pShip = GetShipFromID(myShipID)
@@ -296,6 +302,11 @@ class Turrets(FoundationTech.TechDef):
                 for itemList in auxBattleTurretListenerKeys:
                         if itemList != None and self.bBattleTurretListener[itemList] != None:
                                 self.checkWell(fTime, itemList, self.bBattleTurretListener[itemList][0])
+
+                if not auxBattleTurretListenerKeys: # If the dictionary is empty
+                        global bOverflow
+                        self.deleteTimer()
+                        bOverflow = 0
 
 
         def SetBattleTurretListenerTo(self, pShip, value, otherValue = -1):
@@ -391,7 +402,7 @@ class Turrets(FoundationTech.TechDef):
                         pShip.RemoveHandlerForInstance(App.ET_EXITED_SET, __name__ + ".ExitSet")
                         pShip.RemoveHandlerForInstance(App.ET_ENTERED_SET, __name__ + ".EnterSet")
 
-                        pShip.AddPythonFuncHandlerForInstance(App.ET_START_WARP, __name__ + ".StartingWarp") # It seems something about ET_START_WARP or ET_START_WARP_NOTIFY causes issues TO-DO CHECK
+                        pShip.AddPythonFuncHandlerForInstance(App.ET_START_WARP, __name__ + ".StartingWarp")
                         pShip.AddPythonFuncHandlerForInstance(App.ET_START_WARP_NOTIFY, __name__ + ".StartingWarp")
                         # ET_EXITED_WARP handler doesn't seem to work, so use ET_EXITED_SET instead
                         pShip.AddPythonFuncHandlerForInstance(App.ET_EXITED_SET, __name__ + ".ExitSet")
@@ -792,7 +803,7 @@ class Turrets(FoundationTech.TechDef):
                                 #pParentFiredSystemProperty = App.TorpedoSystemProperty_Cast(parentTorpSys.GetProperty())
                                 #if pInstance.__dict__[self.name][sNameSuffix][1]["SyncTorpType"] == 1: # We sync types
                                 #    #print "Ok so torp slot sync"
-                                #    ammoNum = parentTorpSys.GetCurrentAmmoTypeNumber() # TO-DO if this works, move them above to avoid getting too much loop
+                                #    ammoNum = parentTorpSys.GetCurrentAmmoTypeNumber() # if this works, move them above to avoid getting too much loop
                                 #    pTorpedoType = parentTorpSys.GetAmmoType(ammoNum)
                                 #    pTorpedoTypeScript = pTorpedoType.GetTorpedoScript()
 
@@ -1391,7 +1402,7 @@ def EnterSet(pObject, pEvent):
                 pInstanceO = pEntry[0]
                 if pInstanceShipID != myShipID: # Weird but can happen for the player - trying to make this as player-agnostic as possible, in case this ever gets implemented for multiplayer
                     #print "calling EnterSet --> trueDetach"
-                    oTurrets.trueDetach(pInstanceO, myShipID) # TO-DO MAYBE NOT ADD THE TRUE DETACH CALL HERE?
+                    oTurrets.trueDetach(pInstanceO, myShipID) # Maybe we should not add that here...
                 else:
                     if pInstanceA != None:
                         #print "calling EnterSet --> Detach Parts"
@@ -1418,7 +1429,7 @@ def ExitSet(pObject, pEvent):
                 pInstanceO = pEntry[0]
                 if pInstanceShipID != myShipID: # Weird but can happen for the player - trying to make this as player-agnostic as possible, in case this ever gets implemented for multiplayer
                     #print "calling EnterSet --> trueDetach"
-                    oTurrets.trueDetach(pInstanceO, myShipID) # TO-DO MAYBE NOT ADD THE TRUE DETACH CALL HERE?
+                    oTurrets.trueDetach(pInstanceO, myShipID)
                 else:
                     if pInstanceA != None:
                         #print "calling EnterSet --> Detach Parts"
