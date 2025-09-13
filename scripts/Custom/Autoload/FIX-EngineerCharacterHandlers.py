@@ -18,7 +18,7 @@ necessaryToUpdate = 0
 patchDone = 0
 scriptToPatch = None
 toPatchPath = "Bridge.EngineerCharacterHandlers"
-VERSION = 20250912
+VERSION = 20250913
 originalReport = None
 originalAnnounceShields = None
 originalAnnounceSpecificShield = None
@@ -82,7 +82,7 @@ if originalReport != None and originalAnnounceShields != None and originalAnnoun
 						else:
 							iNumShields = 1
 							if maxShieldsi > 0:
-								fShields = fShields + (pShip.GetShields().GetCurShields(i)/pShip.GetShields().GetMaxShields(i))
+								fShields = fShields + (pShip.GetShields().GetCurShields(specificId)/pShip.GetShields().GetMaxShields(specificId))
 							else:
 								inexistantFacets = inexistantFacets + 1
 					except:

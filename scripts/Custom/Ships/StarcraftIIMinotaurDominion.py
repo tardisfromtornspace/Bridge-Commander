@@ -130,7 +130,7 @@ Foundation.ShipDef.StarcraftIIMinotaurDominion.dTechs = {
                 "WarpDuration":       10.0,
                 "SyncTorpType": 1,
                 "SetScale": 0.6,
-                "Orientation": "Up",
+                "Orientation": [-0.1, 0, 1],
                 }
         ],
         "BackRight TriCannon":     ["StarcraftIIMinotaurDominionTurretBackRight", {
@@ -141,7 +141,7 @@ Foundation.ShipDef.StarcraftIIMinotaurDominion.dTechs = {
                 "WarpDuration":       10.0,
                 "SyncTorpType": 1,
                 "SetScale": 0.6,
-                "Orientation": "Up",
+                "Orientation": [0.1, 0, 1],
                 }
         ],
         

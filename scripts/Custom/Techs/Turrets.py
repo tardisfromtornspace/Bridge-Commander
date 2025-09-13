@@ -31,7 +31,11 @@
 # 4. replace body if necessary, but keep turrets moving around
 # 5. if red alert is cancelled or it is not red alert but the weapons are deactivated, or the ship warps away, pull back the turrets.
 # 6. When parent ship fires, we aim, and maybe fire as well. How to aim is controlled by the dictionary entries "Orientation" and "No Elevation" inside the dictionary of the ship setup:
-# ---- "Orientation" indicates the alignment with respect to the parent ship, and has the following values which must be an exact match to apply: "Up", "Down" (the turret is aligned to the Z axis of the parent with more or less elevation, but standing up or upside down), "Forward", "Backward" (the turret is aligned to the Y axis of the parent with more or less elevation, but the turret's up is aiming forward or backwards), "Right", "Left" (the turret is aligned to the X axis of the parent with more or less elevation, but the turret's up is aiming right or left)
+# ---- "Orientation" indicates the alignment with respect to the parent ship, and has the following values which must be an exact match to apply:
+# -------- "Up", "Down" (the turret is aligned to the Z axis of the parent with more or less elevation, but standing up or upside down),
+# -------- "Forward", "Backward" (the turret is aligned to the Y axis of the parent with more or less elevation, but the turret's up is aiming forward or backwards),
+# -------- "Right", "Left" (the turret is aligned to the X axis of the parent with more or less elevation, but the turret's up is aiming right or left),
+# -------- [<howstrongtoTheRight>, <howstrongToTheFront>, <howstrongUpwards>], with the names between "<>" being replaced by a float number (i.e. [1.0, 0, 1.0] would mean that the turret base orientation would be 45 degrees tilted to the right without being moved forward or backward)
 # ---- "No Elevation": 0 means it aims perfectly, while any other value means we ignore any elevation axis compared with the plane defined by the "Orientation" value (i.e. if Orientation is "Up" and "No Elevation" is 0, that means the turret will have its rotation axis upward but the turret itself will not aim upwards or downwards)., "Orientation") and dTurretSystemOptionsList["Orientation"] != "Up": # TO-DO ADD TO DOC
 
 # Please note that there's a field in Setup "ShieldOption", if it doesn't exist or is set to 0, shields will work normally - else shields will drop when turrets are active - this is useful for some functional turrets that are inside
@@ -149,7 +153,7 @@ import MissionLib
 
 #################################################################################################################
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "1.1",
+	    "Version": "1.11",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -1164,7 +1168,29 @@ def aim1Item(item, iShipID, pTarget=None, pShip = None): #(item, iShipID, pTarge
                             elif dTurretSystemOptionsList["Orientation"] == "Left":
                                 kNewUpReal = pShip.GetWorldLeftTG()
                             else:
-                                kNewUpReal = pShip.GetWorldUpTG()
+                                xyzRot = dTurretSystemOptionsList["Orientation"]
+                                if type(xyzRot) == type([]) and len(xyzRot) >= 3:
+                                    rx = xyzRot[0]
+                                    ry = xyzRot[1]
+                                    rz = xyzRot[2]
+                                    if (rx == None or rx == None or rz == None) or (rx == 0.0 and ry == 0.0 and rz == 0.0):
+                                        kNewUpReal = pShip.GetWorldUpTG()
+                                    else:
+                                        kXReal = pShip.GetWorldRightTG()
+                                        kYReal = pShip.GetWorldForwardTG()
+                                        kZReal = pShip.GetWorldUpTG()
+                                        try:
+                                            kNewUpReal = App.TGPoint3()
+                                            # It's a base transform
+                                            rfX = rx * kXReal.x + ry * kYReal.x + rz * kZReal.x
+                                            rfY = rx * kXReal.y + ry * kYReal.y + rz * kZReal.y
+                                            rfZ = rx * kXReal.z + ry * kYReal.z + rz * kZReal.z
+                                            kNewUpReal.SetXYZ(rfX, rfY, rfZ)
+                                        except:
+                                            kNewUpReal = kZReal
+                                            traceback.print_exc()
+                                else:
+                                    kNewUpReal = pShip.GetWorldUpTG() # FUTURE TO-DO we could always just incorporate a coordinate system that just performed a sum of three angles
                         else:
                             kNewUpReal = pShip.GetWorldUpTG()
 

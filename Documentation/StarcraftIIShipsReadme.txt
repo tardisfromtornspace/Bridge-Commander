@@ -1,4 +1,5 @@
 == Changelog ==
+0.4.9 - Tweaked turret configuration for the Minotaur slightly.
 0.4.8 - Made Warpspace Travelling Method to apply to every ship out there.
 0.4.7 - Defensive Matrix 0.57.
 0.4.8 - Thanks to Greystar, the Defensive Matrix is now translucid.
