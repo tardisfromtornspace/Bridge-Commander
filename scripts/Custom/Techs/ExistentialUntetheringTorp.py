@@ -121,7 +121,7 @@ try:
 		if pEvent and hasattr(pEvent, "GetDamage"):
 			pDmg = pEvent.GetDamage() # We could import torp damage, but this is way better for any type of torp including those without GetDamage() and allows synergy with other techs if necessary (i.e. overcharging a torpedo or variable projectile yields)
 
-		return leMult, leYield, pDmg, mod
+		return leMult, leYiLvl, pDmg, mod
 
 	# From AlternateSubModelFTL, likely from SubModels by Defiant, but I've seen this function quite widespread.
 	def DeleteObjectFromSet(pSet, sObjectName):
