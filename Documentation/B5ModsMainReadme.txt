@@ -1,4 +1,7 @@
 ==Changelog==
+1.7.0 -
+   Updates:
+   * Updated Turrets to 1.12, brought back "check LOS" functionality (albeit it considers radious) as an optional parameter.
 1.6.9 -
    Updates:
    * Updated Turrets to 1.11, improved alternate rotation axis modes.

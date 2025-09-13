@@ -30,14 +30,14 @@
 # smaller than the "inflated" size... albeit the turret hardpoint may need to be adjusted accordingly).
 # 4. replace body if necessary, but keep turrets moving around
 # 5. if red alert is cancelled or it is not red alert but the weapons are deactivated, or the ship warps away, pull back the turrets.
-# 6. When parent ship fires, we aim, and maybe fire as well. How to aim is controlled by the dictionary entries "Orientation" and "No Elevation" inside the dictionary of the ship setup:
-# ---- "Orientation" indicates the alignment with respect to the parent ship, and has the following values which must be an exact match to apply:
+# 6. When parent ship fires, we aim, and maybe fire as well. How to aim is controlled by the dictionary entries "Orientation", "No Elevation" and "Check LOS" inside the dictionary of the ship setup:
+# ---- "Orientation" indicates the alignment with respect to the parent ship, and has the following values which must be an exact match to apply (if there's an error, it will default to "Up"):
 # -------- "Up", "Down" (the turret is aligned to the Z axis of the parent with more or less elevation, but standing up or upside down),
 # -------- "Forward", "Backward" (the turret is aligned to the Y axis of the parent with more or less elevation, but the turret's up is aiming forward or backwards),
 # -------- "Right", "Left" (the turret is aligned to the X axis of the parent with more or less elevation, but the turret's up is aiming right or left),
 # -------- [<howstrongtoTheRight>, <howstrongToTheFront>, <howstrongUpwards>], with the names between "<>" being replaced by a float number (i.e. [1.0, 0, 1.0] would mean that the turret base orientation would be 45 degrees tilted to the right without being moved forward or backward)
 # ---- "No Elevation": 0 means it aims perfectly, while any other value means we ignore any elevation axis compared with the plane defined by the "Orientation" value (i.e. if Orientation is "Up" and "No Elevation" is 0, that means the turret will have its rotation axis upward but the turret itself will not aim upwards or downwards)., "Orientation") and dTurretSystemOptionsList["Orientation"] != "Up": # TO-DO ADD TO DOC
-
+# ---- "Check LOS": if not left blank or 0, it will verify if the parent ship is on the line connecting a turret with its target, and if it is, will not aim to that target. Please notice that since most turrets remain close to the ship model and the line of sight considers radious, leaving this parameter active would most often make turrets immobile... Default is to always aim regardless of line of sight.
 # Please note that there's a field in Setup "ShieldOption", if it doesn't exist or is set to 0, shields will work normally - else shields will drop when turrets are active - this is useful for some functional turrets that are inside
 # the shield grid, or for lore reasons!
 
@@ -117,6 +117,7 @@ Foundation.ShipDef.VasKholhr.dTechs = { 'Turret': {
                 "SetScale": 1.0,
                 "No Elevation": 0, # 0 = This turret has elevation, 1 = this turret doesn't
                 "Orientation": "Up",
+                "Check LOS": 0,
                 }
         ],
         
@@ -132,6 +133,7 @@ Foundation.ShipDef.VasKholhr.dTechs = { 'Turret': {
                 "SetScale": 1.0,
                 "No Elevation": 0, # 0 = This turret has elevation, 1 = this turret doesn't
                 "Orientation": "Up",
+                "Check LOS": 0,
                 }
         ],
 }}
@@ -153,7 +155,7 @@ import MissionLib
 
 #################################################################################################################
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "1.11",
+	    "Version": "1.12",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -1148,8 +1150,17 @@ def aim1Item(item, iShipID, pTarget=None, pShip = None): #(item, iShipID, pTarge
         ###else:
         ###    pNacelle.SetScale(0.5)
 
-        while pTarget and (pTarget.GetObjID() == iNacelleID): # another safety feature for doofus AutoTargeting scripts
+        while pTarget and pTarget.GetObjID() == iNacelleID: # another safety feature for doofus AutoTargeting scripts
                 pTarget = pShip.GetNextTarget()
+                if pTarget.GetObjID() == iNacelleID: # Anti-infinite loop measure
+                        pTarget = None
+
+        if pTarget and dTurretSystemOptionsList.has_key("Check LOS") and dTurretSystemOptionsList["Check LOS"] != 0:
+                pSet = pNacelle.GetContainingSet()
+                if pSet:
+                        mothershipBlock = CheckLOS(pNacelle, pTarget, pShip, pSet) # This prevents turrets from firing most of the time since technically the turrets are inside.
+                        if mothershipBlock:
+                                pTarget = None
 
         if pTarget: 
                         kNacelleLocation = pNacelle.GetWorldLocation()
@@ -1627,17 +1638,24 @@ def CheckLOS(pObject1, pObject2, pObjectInBetween, pSet):
         pProxManager = pSet.GetProximityManager()
 
         if pProxManager:
-                # Get a list of objects between pObject1 and pObject2
-                kIter = pProxManager.GetLineIntersectObjects(pObject1.GetWorldLocation(), pObject2.GetWorldLocation(), 0)
-                pObject = pProxManager.GetNextObject(kIter)
-                while (pObject != None):
+            # Get a list of objects between pObject1 and pObject2
+            if pObjectInBetween:
+                pbTwnID = pObjectInBetween.GetObjID()
+                iobj1ID = pObject1.GetObjID()
+                iobj2ID = pObject2.GetObjID()
+                try:
+                    kIter = pProxManager.GetLineIntersectObjects(pObject1.GetWorldLocation(), pObject2.GetWorldLocation(), 0.0)
+                    pObject = pProxManager.GetNextObject(kIter)
+                    while (pObject != None):
                         # Is this object the object we're looking for?
-                        if pObject.GetObjID() == pObjectInBetween.GetObjID() and pObject.GetObjID() != pObject2.GetObjID() and pObject.GetObjID() != pObject1.GetObjID():
+                        if pObject.GetObjID() == pbTwnID and pObject.GetObjID() != iobj1ID and pObject.GetObjID() != iobj2ID:
                                 # not firing because parent ship is between us. Yep. We're now true.
                                 bBlockedLOS = 1
                                 break
                         pObject = pProxManager.GetNextObject(kIter)
-                pProxManager.EndObjectIteration(kIter)
+                    pProxManager.EndObjectIteration(kIter)
+                except:
+                    traceback.print_exc()
 
         return bBlockedLOS
 

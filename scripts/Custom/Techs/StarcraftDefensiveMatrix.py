@@ -1,6 +1,6 @@
 """
 #         Starcraft Defensive Matrix
-#         24th March 2025
+#         13th September 2025
 #         Based strongly on Shields.py by the FoundationTech team (and QuickBattleAddon.corboniteReflector() in Apollo's Advanced Technologies) and Turrets.py by Alex SL Gato, and based on SubModels by USS Defiant and their team.
 #################################################################################################################
 # This tech gives a ship a Defensive Matrix like on Starcraft.
@@ -49,7 +49,7 @@ import traceback
 
 #################################################################################################################
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.58",
+	    "Version": "0.59",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -372,11 +372,16 @@ class DefensiveMatrix(FoundationTech.TechDef):
 	def DetachDefensiveMatrix(self, pShip, pInstance):
 		debug(__name__ + ", DetachDefensiveMatrix")
 
-		pShip = App.ShipClass_GetObjectByID(None, pShip.GetObjID())
-		if pShip and hasattr(pInstance, "StarcraftDefensiveMatrixShield"):
+		if pShip:
+			if hasattr(pShip, "GetObjID"):
+				pShip = App.ShipClass_GetObjectByID(None, pShip.GetObjID())
+			else:
+				pShip = None
+		if pInstance and hasattr(pInstance, "StarcraftDefensiveMatrixShield"):
 			for pSubShip in pInstance.StarcraftDefensiveMatrixShield:
 				pSet = pSubShip.GetContainingSet()
-				pShip.DetachObject(pSubShip)
+				if pShip:
+					pShip.DetachObject(pSubShip)
 				DeleteObjectFromSet(pSet, pSubShip.GetName())
 			del pInstance.StarcraftDefensiveMatrixShield
 
@@ -438,6 +443,12 @@ class DefensiveMatrix(FoundationTech.TechDef):
 		pShip = App.ShipClass_Cast(App.TGObject_GetTGObjectPtr(pInstance.pShipID))
 		if pShip != None:
 			pShip.RemoveHandlerForInstance(App.ET_SUBSYSTEM_STATE_CHANGED, __name__ + ".SubsystemStateChanged")
+		else:
+			#print "StarcraftDefensiveMatrix Error (at Detach): couldn't acquire ship of id", pInstance.pShipID
+			pass
+
+		if pInstance:
+			self.DetachDefensiveMatrix(pShip, pInstance)
 			if pInstance.__dict__.has_key("Starcraft Defensive Matrix TimeDeactivate"):
 				App.g_kTimerManager.DeleteTimer(pInstance.__dict__["Starcraft Defensive Matrix TimeDeactivate"].GetObjID())
 			if pInstance.__dict__.has_key("Starcraft Defensive Matrix TimeDeactivate"):
@@ -446,12 +457,7 @@ class DefensiveMatrix(FoundationTech.TechDef):
 				del pInstance.__dict__["Starcraft Defensive Matrix TimeCooldown"]
 			if pInstance.__dict__.has_key("Starcraft Defensive Matrix Active"):
 				del pInstance.__dict__["Starcraft Defensive Matrix Active"]
-		else:
-			#print "StarcraftDefensiveMatrix Error (at Detach): couldn't acquire ship of id", pInstance.pShipID
-			pass
 
-		if pInstance.__dict__.has_key("Starcraft Defensive Matrix TimeDeactivate"):
-			del pInstance.__dict__["Starcraft Defensive Matrix TimeDeactivate"]
 		#pInstance.lTechs.remove(self) # DO NOT INCLUDE THIS ON DETACHSHIP, LET THE DEFAULT DETACH DO ITS JOB!
 
 	# def Activate(self):
