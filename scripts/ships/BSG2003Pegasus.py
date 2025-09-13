@@ -7,8 +7,8 @@ def GetShipStats():
 		"FilenameMed": "data/Models/Ships/Pegasus/Pegasus.nif",
 		"FilenameLow": "data/Models/Ships/Pegasus/Pegasus.nif",
 
-		"Name": "Pegasus",
-		"HardpointFile": "Pegasus",
+		"Name": "BSG2003Pegasus",
+		"HardpointFile": "BSG2003Pegasus",
 		"Species": Multiplayer.SpeciesToShip.UNKNOWN
 	 }
 	return kShipStats

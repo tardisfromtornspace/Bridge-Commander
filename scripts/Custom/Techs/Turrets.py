@@ -1,12 +1,12 @@
 """
 #         Turrets
-#         11th September 2025
+#         13th September 2025
 #         Based strongly on SubModels.py by USS Defiant and their team, and AutoTargeting.py by USS Frontier.
 #         Also based slightly on AdvancedTorpedoManagement.py from BCSTB Team, the Borg Technology from Alex SL Gato, and ConditionInLineOfSight by the original STBC team
 #         Special thanks to USS Sovereign and Gizmo_3.
 #################################################################################################################
 # This tech gives a ship the ability to have working turrets, not merely props added - that is, the turrets aim and fire and that turn is visible.
-# - Please notice, that you must make turret script/Custom/Ships, scripts/ships and scripts/Ships/Hardpoints files for each turret. This tech will make it so, upon firing, all turrets with the same weapon subsystem name as the 
+# - Please notice, that you must make turret scripts/ships and scripts/Ships/Hardpoints files for each turret (script/Custom/Ships may be recommended if you try to do some other stuff, too). This tech will make it so, upon firing, all turrets with the same weapon subsystem name as the 
 # fired weapon will fire. 
 # - Depending on the hardpoint and weapon used, the turrets can be fully functional and really fire for themselves, or be aesthethic and only aim at where the weapon they are tied to is aiming (f.ex by needing a higher charge 
 # to fire than the max, not having torpedoes, etc.). Aesthethic turrets are possible because those subShips are removed from the ProximityManager, they become ghosts that can fire on other ships without risking getting hit by ships
@@ -30,16 +30,15 @@
 # smaller than the "inflated" size... albeit the turret hardpoint may need to be adjusted accordingly).
 # 4. replace body if necessary, but keep turrets moving around
 # 5. if red alert is cancelled or it is not red alert but the weapons are deactivated, or the ship warps away, pull back the turrets.
-# 6. When parent ship fires, we aim, and maybe fire as well.
-# 6a. OPTIONAL - CANCELLED: if "SyncTorpType" is set to 1 for a turret, upon changing torpedo types, it will change them as well for that turret only.
-## REASON OF CANCEL - SEE LIMITATION 3.
+# 6. When parent ship fires, we aim, and maybe fire as well. How to aim is controlled by the dictionary entries "Orientation" and "No Elevation" inside the dictionary of the ship setup:
+# ---- "Orientation" indicates the alignment with respect to the parent ship, and has the following values which must be an exact match to apply: "Up", "Down" (the turret is aligned to the Z axis of the parent with more or less elevation, but standing up or upside down), "Forward", "Backward" (the turret is aligned to the Y axis of the parent with more or less elevation, but the turret's up is aiming forward or backwards), "Right", "Left" (the turret is aligned to the X axis of the parent with more or less elevation, but the turret's up is aiming right or left)
+# ---- "No Elevation": 0 means it aims perfectly, while any other value means we ignore any elevation axis compared with the plane defined by the "Orientation" value (i.e. if Orientation is "Up" and "No Elevation" is 0, that means the turret will have its rotation axis upward but the turret itself will not aim upwards or downwards)., "Orientation") and dTurretSystemOptionsList["Orientation"] != "Up": # TO-DO ADD TO DOC
 
 # Please note that there's a field in Setup "ShieldOption", if it doesn't exist or is set to 0, shields will work normally - else shields will drop when turrets are active - this is useful for some functional turrets that are inside
 # the shield grid, or for lore reasons!
 
 # NOTE: While this is a 1.0, it is still an experimental work, it may be possible to find far more bugs
 # KNOWN UNINTENDED EFFECTS, BUGS, LIMITATIONS and other TO-DOs (By order of priority):
-
 # 1. Functional turrets when firing may hit and damage the parent ship shields and subsystems with their phaser weaponry. Originally that also included torps and pulses if they required multiple fires too fast and if they were very big
 # and their spawn location was inside the parent ship model, but that got fixed for most cases. However, it is known it may sometimes still happen for torpedoes, and to a lesser degree, disruptors. Obviously if using aesthethic turrets
 # that will not happen.
@@ -73,6 +72,8 @@
 # -- Turret fire range may not totally overlap the parent ship beam range that they are covering, specially when aiming totally upwards. They cover a slighly smaller area inside the parent coverage area.
 # -- Turret fire may be very slightly delayed.
 # 7. Setup load/unload times for ships with turrets can be noticeably longer. This is because naturally, every small turret is technically a ship, so a ship with 20 turrets would need to load an extra 20 ships. Please be patient. Also the simpler the turret hardpoint and the turret model, the least impact.
+#
+# CANCELLED FUNCTIONALITIES: 6a. OPTIONAL: if "SyncTorpType" is set to 1 for a turret, upon changing torpedo types, it will change them as well for that turret only. ## REASON OF CANCEL - SEE LIMITATION 3.
 
 """
 """
@@ -110,6 +111,8 @@ Foundation.ShipDef.VasKholhr.dTechs = { 'Turret': {
                 "SimulatedPhaser": 1,
                 "SimulatedTractor": 1,
                 "SetScale": 1.0,
+                "No Elevation": 0, # 0 = This turret has elevation, 1 = this turret doesn't
+                "Orientation": "Up",
                 }
         ],
         
@@ -123,6 +126,8 @@ Foundation.ShipDef.VasKholhr.dTechs = { 'Turret': {
                 "SimulatedPhaser": 1,
                 "SimulatedTractor": 1,
                 "SetScale": 1.0,
+                "No Elevation": 0, # 0 = This turret has elevation, 1 = this turret doesn't
+                "Orientation": "Up",
                 }
         ],
 }}
@@ -144,7 +149,7 @@ import MissionLib
 
 #################################################################################################################
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "1.0",
+	    "Version": "1.1",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -1146,7 +1151,22 @@ def aim1Item(item, iShipID, pTarget=None, pShip = None): #(item, iShipID, pTarge
                         kNacelleLocation = pNacelle.GetWorldLocation()
                         kTargetLocation = pTarget.GetWorldLocation()
 
-                        kNewUpReal = pShip.GetWorldUpTG()
+                        kNewUpReal = None
+                        if dTurretSystemOptionsList.has_key("Orientation") and dTurretSystemOptionsList["Orientation"] != "Up":
+                            if dTurretSystemOptionsList["Orientation"] == "Down":
+                                kNewUpReal = pShip.GetWorldDownTG()
+                            elif dTurretSystemOptionsList["Orientation"] == "Forward":
+                                kNewUpReal = pShip.GetWorldForwardTG()
+                            elif dTurretSystemOptionsList["Orientation"] == "Backward":
+                                kNewUpReal = pShip.GetWorldBackwardTG()
+                            elif dTurretSystemOptionsList["Orientation"] == "Right":
+                                kNewUpReal = pShip.GetWorldRightTG()
+                            elif dTurretSystemOptionsList["Orientation"] == "Left":
+                                kNewUpReal = pShip.GetWorldLeftTG()
+                            else:
+                                kNewUpReal = pShip.GetWorldUpTG()
+                        else:
+                            kNewUpReal = pShip.GetWorldUpTG()
 
                         kTargetLocation.Subtract(kNacelleLocation)
 
@@ -1163,23 +1183,26 @@ def aim1Item(item, iShipID, pTarget=None, pShip = None): #(item, iShipID, pTarge
                         #kFwd.Perpendicular() ... would it give us any perpendicular in particular? If so, maybe another manual option would be better, we want the perpendicular parallel to the kNewUp
                         # Step 1: a x b, with a and b being the kFwd and the kNewUp
 
-                        vAuxVx, vAuxVy, vAuxVz = MatrixMult(kFwd, kNewUp)
-
-                        if vAuxVx == 0.0 and vAuxVy == 0.0 and vAuxVz == 0.0: # No other option, we share the same rect
-                            pNacelle.AlignToVectors(kFwd, kPerp2) # Aims correctly but gives a weird clockwise or counterclockwise turn if the ship rotates
+                        if dTurretSystemOptionsList.has_key("No Elevation") and dTurretSystemOptionsList["No Elevation"] > 0:
+                            pNacelle.AlignToVectors(kFwd, kNewUp) # aims without clockwise or counterclockwise turn, but no turn-up
                         else:
-                            kVect1 = App.TGPoint3()
-                            kVect1.SetXYZ(vAuxVx, vAuxVy, vAuxVz)
+                            vAuxVx, vAuxVy, vAuxVz = MatrixMult(kFwd, kNewUp)
 
-                            #Now that we got a x b, we want to get (a x b) x a = kVect1 x a, to get the perpendicular we really want
-                            vAuxVx, vAuxVy, vAuxVz = MatrixMult(kVect1, kFwd)
+                            if vAuxVx == 0.0 and vAuxVy == 0.0 and vAuxVz == 0.0: # No other option, we share the same rect
+                                pNacelle.AlignToVectors(kFwd, kPerp2) # Aims correctly but gives a weird clockwise or counterclockwise turn if the ship rotates
+                            else:
+                                kVect1 = App.TGPoint3()
+                                kVect1.SetXYZ(vAuxVx, vAuxVy, vAuxVz)
+
+                                #Now that we got a x b, we want to get (a x b) x a = kVect1 x a, to get the perpendicular we really want
+                                vAuxVx, vAuxVy, vAuxVz = MatrixMult(kVect1, kFwd)
 
 
-                            kVect2 = App.TGPoint3()
-                            kVect2.SetXYZ(vAuxVx, vAuxVy, vAuxVz)
-                            kVect2.Unitize()
+                                kVect2 = App.TGPoint3()
+                                kVect2.SetXYZ(vAuxVx, vAuxVy, vAuxVz)
+                                kVect2.Unitize()
 
-                            pNacelle.AlignToVectors(kFwd, kVect2)
+                                pNacelle.AlignToVectors(kFwd, kVect2)
 
                         if dTurretSystemOptionsList.has_key("SimulatedPhaser") and dTurretSystemOptionsList["SimulatedPhaser"] == 1:
                             turPhsSys = pNacelle.GetPhaserSystem()

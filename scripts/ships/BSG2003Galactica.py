@@ -7,8 +7,8 @@ def GetShipStats():
 		"FilenameMed": "data/Models/Ships/Galactica/Galactica.nif",
 		"FilenameLow": "data/Models/Ships/Galactica/Galactica.nif",
 
-		"Name": "Galactica",
-		"HardpointFile": "Galactica",
+		"Name": "BSG2003Galactica",
+		"HardpointFile": "BSG2003Galactica",
 		"Species": Multiplayer.SpeciesToShip.UNKNOWN
 	 }
 	return kShipStats

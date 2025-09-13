@@ -37,7 +37,7 @@ import App
 
 
 ###TO CHANGE: what ships are in this? start with the full ship, then the ones that seperate
-MvamShips = ["Galactica", "GalacticaClosed"]
+MvamShips = ["BSG2003Galactica", "BSG2003GalacticaClosed"]
 
 
 #this is to make things less confusing... don't touch this ;)
@@ -160,12 +160,12 @@ MvamAiName = "Custom.Sneaker.Mvam.MvamAI"
 
 ###TO CHANGE: if you want your integrated ship to have the ability to seperate when it's under computer control, set it
 ############# to 1. If not, set it to 0.
-AiSepAbility = 0
+AiSepAbility = 1
 
 
 ###TO CHANGE: name the following def's EXACTLY what the seperated mvam ships are called. You need to have as many def's
 ############# as you have ships seperating (we aren't counting the integrated ship).
-def GalacticaClosed(pObject, pEvent):
+def BSG2003GalacticaClosed(pObject, pEvent):
 
 
 	# get the player
@@ -178,7 +178,7 @@ def GalacticaClosed(pObject, pEvent):
 
 
 ###TO CHANGE: change the last word in quotes in the next line to the name of the def. (ie: "MvamGalaxySaucer")
-		Custom.Sneaker.Mvam.Seperation.Seperation(snkMvamModule, "GalacticaClosed")
+		Custom.Sneaker.Mvam.Seperation.Seperation(snkMvamModule, "BSG2003GalacticaClosed")
 
 
 	pObject.CallNextHandler(pEvent)
@@ -203,7 +203,7 @@ def Reintegrate(pObject, pEvent):
 	#alright, if this is a legit reintegrate, intCounter will equal 0
 	if (intCounter == 0):
 		import Custom.Sneaker.Mvam.Reintegration
-		Custom.Sneaker.Mvam.Reintegration.Reintegration(snkMvamModule)
+		Custom.Sneaker.Mvam.Reintegration.Reintegration(snkMvamModule) # TO-DO Apparently somewhere here it cannot find pPlayerJunk FIX
 	pObject.CallNextHandler(pEvent)
 
 
@@ -221,32 +221,14 @@ def CheckSeperate (pShip):
 
 	#is the ship an enemy?
 	if (pEnemies.IsNameInGroup(pShip.GetName())):
-		#seperate if we're outnumbered 3 to 1
-		if ((pFriendlies.GetNumActiveObjects() >= (pEnemies.GetNumActiveObjects() * 3)) and (snkAiRanSep == 4)):
-			return 1
-		#seperate if we're targetting a HUGE ship (a la the Enterprise D vs. Borg). make sure the ai has a target
-		try:
-			if (pShip.GetTarget().GetRadius() > 20.0):
-				return 1
-		except:
-			DoNothing = 0
-		#seperate if 50% damaged and outnumbered 2 to 1
-		if ((pShip.GetHull().GetConditionPercentage() <= 0.5) and (pFriendlies.GetNumActiveObjects() >= (pEnemies.GetNumActiveObjects() * 2)) and (snkAiRanSep == 4)):
+		#seperate if 75% damaged and outnumbered 3 to 1
+		if ((pShip.GetHull().GetConditionPercentage() <= 0.25) and (pFriendlies.GetNumActiveObjects() >= (pEnemies.GetNumActiveObjects() * 3)) and (snkAiRanSep == 4)):
 			return 1
 
 	#the ship is a friendly or neutral
 	else:
-		#seperate if we're outnumbered 3 to 1
-		if ((pEnemies.GetNumActiveObjects() >= (pFriendlies.GetNumActiveObjects() * 3)) and (snkAiRanSep == 4)):
-			return 1
-		#seperate if we're targetting a HUGE ship (a la the Enterprise D vs. Borg). make sure the ai has a target
-		try:
-			if (pShip.GetTarget().GetRadius() > 20.0):
-				return 1
-		except:
-			DoNothing = 0
-		#seperate if 50% damaged and outnumbered 2 to 1
-		if ((pShip.GetHull().GetConditionPercentage() <= 0.5) and (pEnemies.GetNumActiveObjects() >= (pFriendlies.GetNumActiveObjects() * 2)) and (snkAiRanSep == 4)):
+		#seperate if 75% damaged and outnumbered 3 to 1
+		if ((pShip.GetHull().GetConditionPercentage() <= 0.25) and (pEnemies.GetNumActiveObjects() >= (pFriendlies.GetNumActiveObjects() * 3)) and (snkAiRanSep == 4)):
 			return 1
 	return 0
 

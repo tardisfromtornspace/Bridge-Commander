@@ -11,7 +11,7 @@
 0.1 - first unofficial version of this mod, for feedback. Very W.I.P.
 
 == What does this mod do ==
-This mod adds two Starcraft Terran ships: the Terran Dominion Minotaur Battlecruiser (also known as Yamato), and the Hyperion; as well as some Starcraft Tech imitations.
+This mod adds two Starcraft Terran ships: the Terran Dominion Minotaur Battlecruiser (also known as Yamato), and the Hyperion (latter is still planned but not added, still W.I.P.); as well as some Starcraft Tech imitations.
 
 For more details, read the licenses and readmes inside each file - I've done it that way so people can still use them if they separate, plus the addition is not automatic to the techs - you must include it properly.
 

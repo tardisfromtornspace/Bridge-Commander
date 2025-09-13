@@ -6,8 +6,8 @@ def GetShipStats():
 		"FilenameHigh": "data/Models/Ships/CylonBasestar/CylonBasestar.NIF",
 		"FilenameMed": "data/Models/Ships/CylonBasestar/CylonBasestar.NIF",
 		"FilenameLow": "data/Models/Ships/CylonBasestar/CylonBasestar.NIF",
-		"Name": "CylonBasestar",
-		"HardpointFile": "CylonBasestar",
+		"Name": "BSG2003CylonBasestar",
+		"HardpointFile": "BSG2003CylonBasestar",
 		"Species": Multiplayer.SpeciesToShip.BIRDOFPREY
 		 }
 	return kShipStats

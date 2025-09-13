@@ -6,8 +6,8 @@ def GetShipStats():
 		"FilenameHigh": "data/Models/Ships/HadesBasestar/HadesBasestar.nif",
 		"FilenameMed": "data/Models/Ships/HadesBasestar/HadesBasestar.nif",
 		"FilenameLow": "data/Models/Ships/HadesBasestar/HadesBasestar.nif",
-		"Name": "HadesBasestar2003",
-		"HardpointFile": "hadesbasestar2003",
+		"Name": "BSG2003HadesBasestar",
+		"HardpointFile": "BSG2003HadesBasestar",
 		"Species": Multiplayer.SpeciesToShip.GALAXY
 	 }
 	return kShipStats

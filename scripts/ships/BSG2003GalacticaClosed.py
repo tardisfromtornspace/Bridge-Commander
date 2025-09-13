@@ -7,8 +7,8 @@ def GetShipStats():
 		"FilenameMed": "data/Models/Ships/Galactica/GalacticaClosed.nif",
 		"FilenameLow": "data/Models/Ships/Galactica/GalacticaClosed.nif",
 
-		"Name": "GalacticaClosed",
-		"HardpointFile": "GalacticaClosed",
+		"Name": "BSG2003GalacticaClosed",
+		"HardpointFile": "BSG2003GalacticaClosed",
 		"Species": Multiplayer.SpeciesToShip.UNKNOWN
 	 }
 	return kShipStats

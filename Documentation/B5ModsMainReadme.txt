@@ -1,4 +1,7 @@
 ==Changelog==
+1.6.8 -
+   Updates:
+   * Updated Turrets to 1.1, now they support no elevation and alternate rotation axis modes.
 1.6.7 -
    Updates:
    * Updated Turrets to 1.0.

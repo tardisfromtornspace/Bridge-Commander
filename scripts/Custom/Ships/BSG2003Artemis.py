@@ -51,6 +51,12 @@ Foundation.ShipDef.BSG2003Artemis.dTechs = {
 Foundation.ShipDef.BSG2003Artemis.fMaxWarp = 5.25
 Foundation.ShipDef.BSG2003Artemis.fCruiseWarp = 5.0
 
+def BSGArtemisIDSwap(self):
+       retval = {"Textures": [["galact1.tga", "Data/Models/Ships/Battlestar/battlestar_names/Acropolis/galact1.tga"]]}
+       return retval
+
+Foundation.ShipDef.BSG2003Artemis.__dict__['SDT Entry'] = BSGArtemisIDSwap
+
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

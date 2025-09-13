@@ -24,14 +24,14 @@ Foundation.ShipDef.StarcraftIIMinotaurDominion.dTechs = {
 	"AutoTargeting": { "Pulse": [12, 0] },
         'Turret': {
         "Setup":        {
-                "Body":                 shipFile,
-                "NormalModel":          shipFile,
-                "WarpModel":          shipFile,
-                "AttackModel":          shipFile,
-                "Hardpoints":       {
-                },
-                "AttackHardpoints":       {
-                },
+                #"Body":                 shipFile,
+                #"NormalModel":          shipFile,
+                #"WarpModel":          shipFile,
+                #"AttackModel":          shipFile,
+                #"Hardpoints":       {
+                #},
+                #"AttackHardpoints":       {
+                #},
         },
                 
         "Left TriCannon 1":     ["StarcraftIIMinotaurDominionTurretLeft1", {
@@ -42,6 +42,7 @@ Foundation.ShipDef.StarcraftIIMinotaurDominion.dTechs = {
                 "WarpDuration":       10.0,
                 "SyncTorpType": 1,
                 "SetScale": 0.6,
+                "Orientation": "Right",
                 }
         ],
         "Left TriCannon 2":     ["StarcraftIIMinotaurDominionTurretLeft2", {
@@ -52,6 +53,7 @@ Foundation.ShipDef.StarcraftIIMinotaurDominion.dTechs = {
                 "WarpDuration":       10.0,
                 "SyncTorpType": 1,
                 "SetScale": 0.6,
+                "Orientation": "Right",
                 }
         ],
         "Right TriCannon 1":     ["StarcraftIIMinotaurDominionTurretRight1", {
@@ -62,6 +64,7 @@ Foundation.ShipDef.StarcraftIIMinotaurDominion.dTechs = {
                 "WarpDuration":       10.0,
                 "SyncTorpType": 1,
                 "SetScale": 0.6,
+                "Orientation": "Left",
                 }
         ],
         "Right TriCannon 2":     ["StarcraftIIMinotaurDominionTurretRight2", {
@@ -72,6 +75,7 @@ Foundation.ShipDef.StarcraftIIMinotaurDominion.dTechs = {
                 "WarpDuration":       10.0,
                 "SyncTorpType": 1,
                 "SetScale": 0.6,
+                "Orientation": "Left",
                 }
         ],
         "LeftWing TriCannon":     ["StarcraftIIMinotaurDominionTurretDown2", {
@@ -82,6 +86,7 @@ Foundation.ShipDef.StarcraftIIMinotaurDominion.dTechs = {
                 "WarpDuration":       10.0,
                 "SyncTorpType": 1,
                 "SetScale": 0.6,
+                "Orientation": "Down",
                 }
         ],
         "RightWing TriCannon":     ["StarcraftIIMinotaurDominionTurretDown1", {
@@ -92,6 +97,7 @@ Foundation.ShipDef.StarcraftIIMinotaurDominion.dTechs = {
                 "WarpDuration":       10.0,
                 "SyncTorpType": 1,
                 "SetScale": 0.6,
+                "Orientation": "Down",
                 }
         ],
         "FrontLeft TriCannon":     ["StarcraftIIMinotaurDominionTurretFrontLeft", {
@@ -102,6 +108,7 @@ Foundation.ShipDef.StarcraftIIMinotaurDominion.dTechs = {
                 "WarpDuration":       10.0,
                 "SyncTorpType": 1,
                 "SetScale": 0.6,
+                "Orientation": "Up",
                 }
         ],
         "FrontRight TriCannon":     ["StarcraftIIMinotaurDominionTurretFrontRight", {
@@ -112,6 +119,7 @@ Foundation.ShipDef.StarcraftIIMinotaurDominion.dTechs = {
                 "WarpDuration":       10.0,
                 "SyncTorpType": 1,
                 "SetScale": 0.6,
+                "Orientation": "Up",
                 }
         ],
         "BackLeft TriCannon":     ["StarcraftIIMinotaurDominionTurretBackLeft", {
@@ -122,6 +130,7 @@ Foundation.ShipDef.StarcraftIIMinotaurDominion.dTechs = {
                 "WarpDuration":       10.0,
                 "SyncTorpType": 1,
                 "SetScale": 0.6,
+                "Orientation": "Up",
                 }
         ],
         "BackRight TriCannon":     ["StarcraftIIMinotaurDominionTurretBackRight", {
@@ -132,6 +141,7 @@ Foundation.ShipDef.StarcraftIIMinotaurDominion.dTechs = {
                 "WarpDuration":       10.0,
                 "SyncTorpType": 1,
                 "SetScale": 0.6,
+                "Orientation": "Up",
                 }
         ],
         
