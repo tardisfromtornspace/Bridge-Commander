@@ -52,14 +52,6 @@ class BSG2003Artemis( Carrier.Carrier):
         group.AddLauncher( "Launch Tube P8 ", launcher)
         launcher.AddLaunchable( "BSG2003ViperMkI", "QuickBattle.QuickBattleFriendlyAI", 5)
 
-	group.SetLaunchMode( LauncherGroup.ALL)
-
-        self.AddLauncher( "Group 1", group)
-
-
-        LauncherGroup = __import__( "ftb.LauncherGroup")
-        group = LauncherGroup.LauncherGroup()
-
         launcher = LauncherManager.GetLauncher( "Launch Tube S1", pShip)
         group.AddLauncher( "Launch Tube S1 ", launcher)
         launcher.AddLaunchable( "BSG2003ViperMkI", "QuickBattle.QuickBattleFriendlyAI", 5)
@@ -99,12 +91,6 @@ class BSG2003Artemis( Carrier.Carrier):
         group.AddLauncher( "Launch Tube S8 ", launcher)
         launcher.AddLaunchable( "BSG2003ViperMkI", "QuickBattle.QuickBattleFriendlyAI", 5)
 
-	group.SetLaunchMode( LauncherGroup.ALL)
-
-        self.AddLauncher( "Group 2", group)
-
-        LauncherGroup = __import__( "ftb.LauncherGroup")
-        group = LauncherGroup.LauncherGroup()
 
         launcher = LauncherManager.GetLauncher( "Port Shuttle Bay", pShip)
         group.AddLauncher( "Port Shuttle Bay", launcher)
@@ -117,10 +103,10 @@ class BSG2003Artemis( Carrier.Carrier):
         launcher.AddLaunchable( "BSG2003Raptor", "QuickBattle.QuickBattleFriendlyAI", 2)
         launcher.AddLaunchable( "BSG2003ViperMkI", "QuickBattle.QuickBattleFriendlyAI", 2)
 
-        self.AddLauncher( "Group 3", group)
+        self.AddLauncher( "Group 1", group)
 
         # Play with this feature if you dare... MUHAHAHAHAHAHAHAHAHAHAHAHA!!!!!
-        #group.SetLaunchMode( LauncherGroup.ALL)
+        group.SetLaunchMode( LauncherGroup.ALL)
 
     # Define how much Shuttles we can carry maximal (Return Shuttles script)
     def GetMaxShuttles(self): 

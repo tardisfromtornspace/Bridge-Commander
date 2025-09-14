@@ -1,10 +1,4 @@
-# Dauntless.py
-# April 11, 2002
-#
-# by Evan Light aka sleight42, all rights reserved
-#
-# Permission to redistribute this code as part of any other packaging requires
-# the explicit permission of the author in advance.
+# Battlestar.py by CharaToLoki based on Dauntless.py
 ##############################################################################
 
 # A simple example of how to define a custom Carrier with a specified 
@@ -58,11 +52,11 @@ class Battlestar( Carrier.Carrier):
         group.AddLauncher( "Launch Tube P8 ", launcher)
         launcher.AddLaunchable( "Viper", "QuickBattle.QuickBattleFriendlyAI", 6)
 
-        self.AddLauncher( "Group 1", group)
+        #self.AddLauncher( "Group 1", group)
 
 
-        LauncherGroup = __import__( "ftb.LauncherGroup")
-        group = LauncherGroup.LauncherGroup()
+        #LauncherGroup = __import__( "ftb.LauncherGroup")
+        #group = LauncherGroup.LauncherGroup()
 
         launcher = LauncherManager.GetLauncher( "Launch Tube S1", pShip)
         group.AddLauncher( "Launch Tube S1 ", launcher)
@@ -103,10 +97,10 @@ class Battlestar( Carrier.Carrier):
         group.AddLauncher( "Launch Tube S8 ", launcher)
         launcher.AddLaunchable( "Viper", "QuickBattle.QuickBattleFriendlyAI", 6)
 
-        self.AddLauncher( "Group 2", group)
+        #self.AddLauncher( "Group 2", group)
 
-        LauncherGroup = __import__( "ftb.LauncherGroup")
-        group = LauncherGroup.LauncherGroup()
+        #LauncherGroup = __import__( "ftb.LauncherGroup")
+        #group = LauncherGroup.LauncherGroup()
 
         launcher = LauncherManager.GetLauncher( "Port Shuttle Bay", pShip)
         group.AddLauncher( "Port Shuttle Bay", launcher)
@@ -119,10 +113,10 @@ class Battlestar( Carrier.Carrier):
         launcher.AddLaunchable( "Shuttle", "QuickBattle.QuickBattleFriendlyAI", 2)
         launcher.AddLaunchable( "Viper", "QuickBattle.QuickBattleFriendlyAI", 2)
 
-        self.AddLauncher( "Group 3", group)
+        self.AddLauncher( "Group 1", group)
 
         # Play with this feature if you dare... MUHAHAHAHAHAHAHAHAHAHAHAHA!!!!!
-        #group.SetLaunchMode( LauncherGroup.ALL)
+        group.SetLaunchMode( LauncherGroup.ALL)
 
     # Define how much Shuttles we can carry maximal (Return Shuttles script)
     def GetMaxShuttles(self): 
