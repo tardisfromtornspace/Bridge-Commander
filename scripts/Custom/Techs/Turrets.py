@@ -155,7 +155,7 @@ import MissionLib
 
 #################################################################################################################
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "1.12",
+	    "Version": "1.13",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -1805,8 +1805,18 @@ def WeaponFired(pObject, pEvent, stoppedFiring=None):
                     pTarget = App.ShipClass_GetObjectByID(None, pTarget.GetObjID())
                 if not pTarget:
                     pTarget = pShip.GetTarget()
-                    while pTarget in pInstance.TurretList: # another safety feature for doofus AutoTargeting scripts
+                    iaNacelleID = None
+                    while pTarget and (pTarget in pInstance.TurretList): # another safety feature for doofus AutoTargeting scripts
                         pTarget = pShip.GetNextTarget()
+                        if pTarget != None:
+                            thisTID = None
+                            if hasattr(pTarget, "GetObjID"):
+                                thisTID = pTarget.GetObjID()
+                            if iaNacelleID != None and iaNacelleID == thisTID: # anti-infinite-loop measure
+                                pTarget = None
+                            if iaNacelleID == None and hasattr(pTarget, "GetObjID"):
+                                iaNacelleID = thisTID
+
 
                 pParentFired = pWeaponFired.GetParentSubsystem()
                 if pParentFired == None:

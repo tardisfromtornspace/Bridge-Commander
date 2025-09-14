@@ -1,4 +1,7 @@
 ==Changelog==
+1.7.1 -
+   Fixes:
+   * Updated Turrets to 1.13, resolving one potential if unlikely case of looping.
 1.7.0 -
    Updates:
    * Updated Turrets to 1.12, brought back "check LOS" functionality (albeit it considers radious) as an optional parameter.
