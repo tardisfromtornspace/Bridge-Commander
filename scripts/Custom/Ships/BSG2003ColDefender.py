@@ -59,7 +59,7 @@ Foundation.ShipDef.BSG2003ColDefender.fCruiseWarp = 5.0
 #                                                                                     #
 # Otherwise, uncomment this and type something in:                                    #
 #                                                                                     #
-Foundation.ShipDef.BSG2003ColDefender.desc = "The Colonial Defender, also known as Gunstar, is a minor colonial combat vessel used to protect larger vessels."
+Foundation.ShipDef.BSG2003ColDefender.desc = "The Colonial Defender, also known as Gunstar, is a minor colonial combat vessel used to protect larger vessels developed during the 1st Cylon War. At some point during its 50-year-long career, some of these ships were sold off to non-military entities, which allowed two of them, the Adriatic and another unknown Defender-class vessel, to join the Roslin-led refugee fleet and rendezvous with Galactica at Ragnar Anchorage."
 #                                                                                     #
 #######################################################################################
 #                                                                                     #
