@@ -6,8 +6,8 @@ def GetShipStats():
 		"FilenameHigh": "data/Models/Ships/Blackbird/Blackbird.NIF",
 		"FilenameMed": "data/Models/Ships/Blackbird/Blackbird.NIF",
 		"FilenameLow": "data/Models/Ships/Blackbird/Blackbird.NIF",
-		"Name": "Blackbird",
-		"HardpointFile": "Blackbird",
+		"Name": "BSG2003Blackbird",
+		"HardpointFile": "BSG2003Blackbird",
 		"Species": Multiplayer.SpeciesToShip.BIRDOFPREY
 		 }
 	return kShipStats

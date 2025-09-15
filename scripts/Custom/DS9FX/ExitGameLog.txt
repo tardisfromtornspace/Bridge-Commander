@@ -1,0 +1,1254 @@
+##### Bridge Commander Exit Log: 15 Sep 2025 14:30:56#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Custom.Autoload.FIX-EngineerCharacterHandlers : Patched your  Bridge.EngineerCharacterHandlers  to cover 0-shield-strength ships
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+
+
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Ship Galactica-1 with Alternative Warp FTL SubModel support added
+Ship Pegasus-2 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+data/TGL/Maelstrom/Episode 8/E8M2.tgl E8M2MatanMsg10
+
+
+
+
+Setting splash damage for BSG2003ViperMk2 - 28 to (93.750000, 1.875000)
+Setting splash damage for BSG2003ViperMk2 - 32 to (93.750000, 1.875000)
+Ship BSG2003Raptor - 34 with Alternative Warp FTL SubModel support added
+Ship BSG2003Raptor - 35 with Alternative Warp FTL SubModel support added
+Ship BSG2003Raptor - 36 with Alternative Warp FTL SubModel support added
+Ship BSG2003Raptor - 37 with Alternative Warp FTL SubModel support added
+Setting splash damage for BSG2003Raptor - 36 to (656.250000, 13.125000)
+Shuttle Launching Error: ship BSG2003Raptor - 34 has no Shuttle launching points
+Shuttle Launching Error: ship BSG2003Raptor - 35 has no Shuttle launching points
+Shuttle Launching Error: ship BSG2003Raptor - 36 has no Shuttle launching points
+Shuttle Launching Error: ship BSG2003Raptor - 37 has no Shuttle launching points
+data/TGL/Maelstrom/Episode 7/Episode7.tgl E7M1NewTorps06
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Ship Galactica-1 with Alternative Warp FTL SubModel support added
+Ship Pegasus-2 with Alternative Warp FTL SubModel support added
+Ship Artemis class-3 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+data/TGL/Maelstrom/Episode 2/E2M1.tgl E2M1KrellSurvives3b
+Setting splash damage for Pegasus-2 to (5511.886230, 110.237724)
+Setting splash damage for Galactica-1 to (2767.198242, 55.343964)
+Trying to clean memory
+data/TGL/Maelstrom/Episode 8/E8M1.tgl E8M1L078
+Setting splash damage for Artemis class-3 to (931.120422, 18.622408)
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Ship Galactica-1 with Alternative Warp FTL SubModel support added
+Ship Pegasus-2 with Alternative Warp FTL SubModel support added
+Ship Artemis class-3 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+Unknown Shuttle Launching Error (LaunchShip.py): Ship was not created
+Ship BSG2003Raptor - 38 with Alternative Warp FTL SubModel support added
+Ship BSG2003Raptor - 39 with Alternative Warp FTL SubModel support added
+Ship BSG2003Raptor - 40 with Alternative Warp FTL SubModel support added
+Ship BSG2003Raptor - 41 with Alternative Warp FTL SubModel support added
+Ship BSG2003Raptor - 42 with Alternative Warp FTL SubModel support added
+Ship BSG2003Raptor - 43 with Alternative Warp FTL SubModel support added
+Ship BSG2003Raptor - 44 with Alternative Warp FTL SubModel support added
+Shuttle Launching Error: ship BSG2003Raptor - 38 has no Shuttle launching points
+Shuttle Launching Error: ship BSG2003Raptor - 42 has no Shuttle launching points
+Shuttle Launching Error: ship BSG2003Raptor - 44 has no Shuttle launching points
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Ship Galactica-1 with Alternative Warp FTL SubModel support added
+Ship Pegasus-2 with Alternative Warp FTL SubModel support added
+Ship Artemis class-3 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+
+
+TurnOff Crash avoided; Please fix LaunchAIShip
+TurnOff Crash avoided; Please fix LaunchAIShip
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 15 Sep 2025 14:30:56#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Custom.Autoload.FIX-EngineerCharacterHandlers : Patched your  Bridge.EngineerCharacterHandlers  to cover 0-shield-strength ships
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+
+
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Ship Galactica-1 with Alternative Warp FTL SubModel support added
+Ship Pegasus-2 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+data/TGL/Maelstrom/Episode 8/E8M2.tgl E8M2MatanMsg10
+
+
+
+
+Setting splash damage for BSG2003ViperMk2 - 28 to (93.750000, 1.875000)
+Setting splash damage for BSG2003ViperMk2 - 32 to (93.750000, 1.875000)
+Ship BSG2003Raptor - 34 with Alternative Warp FTL SubModel support added
+Ship BSG2003Raptor - 35 with Alternative Warp FTL SubModel support added
+Ship BSG2003Raptor - 36 with Alternative Warp FTL SubModel support added
+Ship BSG2003Raptor - 37 with Alternative Warp FTL SubModel support added
+Setting splash damage for BSG2003Raptor - 36 to (656.250000, 13.125000)
+Shuttle Launching Error: ship BSG2003Raptor - 34 has no Shuttle launching points
+Shuttle Launching Error: ship BSG2003Raptor - 35 has no Shuttle launching points
+Shuttle Launching Error: ship BSG2003Raptor - 36 has no Shuttle launching points
+Shuttle Launching Error: ship BSG2003Raptor - 37 has no Shuttle launching points
+data/TGL/Maelstrom/Episode 7/Episode7.tgl E7M1NewTorps06
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Ship Galactica-1 with Alternative Warp FTL SubModel support added
+Ship Pegasus-2 with Alternative Warp FTL SubModel support added
+Ship Artemis class-3 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+data/TGL/Maelstrom/Episode 2/E2M1.tgl E2M1KrellSurvives3b
+Setting splash damage for Pegasus-2 to (5511.886230, 110.237724)
+Setting splash damage for Galactica-1 to (2767.198242, 55.343964)
+Trying to clean memory
+data/TGL/Maelstrom/Episode 8/E8M1.tgl E8M1L078
+Setting splash damage for Artemis class-3 to (931.120422, 18.622408)
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Ship Galactica-1 with Alternative Warp FTL SubModel support added
+Ship Pegasus-2 with Alternative Warp FTL SubModel support added
+Ship Artemis class-3 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+Unknown Shuttle Launching Error (LaunchShip.py): Ship was not created
+Ship BSG2003Raptor - 38 with Alternative Warp FTL SubModel support added
+Ship BSG2003Raptor - 39 with Alternative Warp FTL SubModel support added
+Ship BSG2003Raptor - 40 with Alternative Warp FTL SubModel support added
+Ship BSG2003Raptor - 41 with Alternative Warp FTL SubModel support added
+Ship BSG2003Raptor - 42 with Alternative Warp FTL SubModel support added
+Ship BSG2003Raptor - 43 with Alternative Warp FTL SubModel support added
+Ship BSG2003Raptor - 44 with Alternative Warp FTL SubModel support added
+Shuttle Launching Error: ship BSG2003Raptor - 38 has no Shuttle launching points
+Shuttle Launching Error: ship BSG2003Raptor - 42 has no Shuttle launching points
+Shuttle Launching Error: ship BSG2003Raptor - 44 has no Shuttle launching points
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Ship Galactica-1 with Alternative Warp FTL SubModel support added
+Ship Pegasus-2 with Alternative Warp FTL SubModel support added
+Ship Artemis class-3 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+
+
+TurnOff Crash avoided; Please fix LaunchAIShip
+TurnOff Crash avoided; Please fix LaunchAIShip
+
+# DS9FX has...
+
+# taken a console dump
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 15 Sep 2025 14:35:12#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Custom.Autoload.FIX-EngineerCharacterHandlers : Patched your  Bridge.EngineerCharacterHandlers  to cover 0-shield-strength ships
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+data/TGL/Maelstrom/Episode 2/E2M1.tgl E2M1KrellSurvives3b
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Ship Artemis class-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+# DS9FX has...
+
+# taken a console dump
+Ship BSG2003Raptor - 2 with Alternative Warp FTL SubModel support added
+Ship BSG2003Raptor - 3 with Alternative Warp FTL SubModel support added
+Ship BSG2003Raptor - 4 with Alternative Warp FTL SubModel support added
+Ship BSG2003Raptor - 5 with Alternative Warp FTL SubModel support added
+Setting splash damage for BSG2003Raptor - 4 to (656.250000, 13.125000)
+Shuttle Launching Error: ship BSG2003Raptor - 2 has no Shuttle launching points
+Shuttle Launching Error: ship BSG2003Raptor - 3 has no Shuttle launching points
+Shuttle Launching Error: ship BSG2003Raptor - 4 has no Shuttle launching points
+Shuttle Launching Error: ship BSG2003Raptor - 5 has no Shuttle launching points
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 15 Sep 2025 14:35:12#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Custom.Autoload.FIX-EngineerCharacterHandlers : Patched your  Bridge.EngineerCharacterHandlers  to cover 0-shield-strength ships
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+data/TGL/Maelstrom/Episode 2/E2M1.tgl E2M1KrellSurvives3b
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Ship Artemis class-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+# DS9FX has...
+
+# taken a console dump
+Ship BSG2003Raptor - 2 with Alternative Warp FTL SubModel support added
+Ship BSG2003Raptor - 3 with Alternative Warp FTL SubModel support added
+Ship BSG2003Raptor - 4 with Alternative Warp FTL SubModel support added
+Ship BSG2003Raptor - 5 with Alternative Warp FTL SubModel support added
+Setting splash damage for BSG2003Raptor - 4 to (656.250000, 13.125000)
+Shuttle Launching Error: ship BSG2003Raptor - 2 has no Shuttle launching points
+Shuttle Launching Error: ship BSG2003Raptor - 3 has no Shuttle launching points
+Shuttle Launching Error: ship BSG2003Raptor - 4 has no Shuttle launching points
+Shuttle Launching Error: ship BSG2003Raptor - 5 has no Shuttle launching points
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 15 Sep 2025 15:09:20#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Custom.Autoload.FIX-EngineerCharacterHandlers : Patched your  Bridge.EngineerCharacterHandlers  to cover 0-shield-strength ships
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Ship Galactica-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+data/TGL/Maelstrom/Episode 8/E8M2.tgl E8M2MatanMsg10
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 15 Sep 2025 15:09:20#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Custom.Autoload.FIX-EngineerCharacterHandlers : Patched your  Bridge.EngineerCharacterHandlers  to cover 0-shield-strength ships
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Ship Galactica-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+data/TGL/Maelstrom/Episode 8/E8M2.tgl E8M2MatanMsg10
+
+# DS9FX has...
+
+# taken a console dump
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 15 Sep 2025 16:13:20#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Custom.Autoload.FIX-EngineerCharacterHandlers : Patched your  Bridge.EngineerCharacterHandlers  to cover 0-shield-strength ships
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+
+
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Ship Blackbird-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+data/TGL/Maelstrom/Episode 8/E8M2.tgl E8M2CommunicateKiska2
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Ship Blackbird-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+data/TGL/Maelstrom/Episode 2/E2M6.tgl E2M6StationDestroyed2
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Ship Blackbird-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Ship Blackbird-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Ship Blackbird-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Trying to clean memory
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Ship Blackbird-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+# DS9FX has...
+
+# taken a console dump
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Ship Blackbird-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Ship Blackbird-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+data/TGL/Maelstrom/Episode 7/E7M6.tgl E7M6HailingStarbase2
+Setting splash damage for Blackbird-1 to (196.875000, 3.937500)
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting splash damage for EchoWing-1 to (16.875000, 0.337500)
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Trying to clean memory
+Setting splash damage for EchoWing-1 to (12.382813, 0.247656)
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting splash damage for EchoWing-1 to (15.976563, 0.319531)
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 15 Sep 2025 16:13:20#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Custom.Autoload.FIX-EngineerCharacterHandlers : Patched your  Bridge.EngineerCharacterHandlers  to cover 0-shield-strength ships
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+
+
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Ship Blackbird-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+data/TGL/Maelstrom/Episode 8/E8M2.tgl E8M2CommunicateKiska2
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Ship Blackbird-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+data/TGL/Maelstrom/Episode 2/E2M6.tgl E2M6StationDestroyed2
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Ship Blackbird-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Ship Blackbird-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Ship Blackbird-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Trying to clean memory
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Ship Blackbird-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+# DS9FX has...
+
+# taken a console dump
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Ship Blackbird-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Ship Blackbird-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+data/TGL/Maelstrom/Episode 7/E7M6.tgl E7M6HailingStarbase2
+Setting splash damage for Blackbird-1 to (196.875000, 3.937500)
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting splash damage for EchoWing-1 to (16.875000, 0.337500)
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Trying to clean memory
+Setting splash damage for EchoWing-1 to (12.382813, 0.247656)
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting splash damage for EchoWing-1 to (15.976563, 0.319531)
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 15 Sep 2025 19:27:28#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Custom.Autoload.FIX-EngineerCharacterHandlers : Patched your  Bridge.EngineerCharacterHandlers  to cover 0-shield-strength ships
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+
+
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Ship Botanical Cruiser-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+Ship BSG2003Raptor - 2 with Alternative Warp FTL SubModel support added
+Shuttle Launching Error: ship BSG2003Raptor - 2 has no Shuttle launching points
+BSG2003ViperMk2 10 None
+BSG2003Raptor 2 BSG2003ViperMk2
+('Using Shuttle Bay', 'Hangar OEP')
+
+
+
+
+BSG2003ViperMk2 9 None
+BSG2003Raptor 3 BSG2003ViperMk2
+('Using Shuttle Bay', 'Hangar OEP')
+
+
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 44023094> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 44023058> ignored
+Setting Stock System Planets Random Density.
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 1168e354> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 44022460> ignored
+Setting Stock System Planets Random Density.
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 15 Sep 2025 19:27:28#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Custom.Autoload.FIX-EngineerCharacterHandlers : Patched your  Bridge.EngineerCharacterHandlers  to cover 0-shield-strength ships
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+
+
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Ship Botanical Cruiser-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+Ship BSG2003Raptor - 2 with Alternative Warp FTL SubModel support added
+Shuttle Launching Error: ship BSG2003Raptor - 2 has no Shuttle launching points
+BSG2003ViperMk2 10 None
+BSG2003Raptor 2 BSG2003ViperMk2
+('Using Shuttle Bay', 'Hangar OEP')
+
+
+
+
+BSG2003ViperMk2 9 None
+BSG2003Raptor 3 BSG2003ViperMk2
+('Using Shuttle Bay', 'Hangar OEP')
+
+
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 44023094> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 44023058> ignored
+Setting Stock System Planets Random Density.
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 1168e354> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 44022460> ignored
+Setting Stock System Planets Random Density.
+
+# DS9FX has...
+
+# taken a console dump
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 15 Sep 2025 19:29:36#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Custom.Autoload.FIX-EngineerCharacterHandlers : Patched your  Bridge.EngineerCharacterHandlers  to cover 0-shield-strength ships
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 15 Sep 2025 19:31:44#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Custom.Autoload.FIX-EngineerCharacterHandlers : Patched your  Bridge.EngineerCharacterHandlers  to cover 0-shield-strength ships
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 15 Sep 2025 19:44:32#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Custom.Autoload.FIX-EngineerCharacterHandlers : Patched your  Bridge.EngineerCharacterHandlers  to cover 0-shield-strength ships
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+
+
+Setting Stock System Planets Random Density.
+Ship Gunstar-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+Creating WarpSequence:  Ship = Gunstar-1  // To Set = None  // Placement Name = None
+Setting splash damage for Total PointDefence Firepoint Gunstar-1 C Torpedo instance at _416c04e8_p_Torpedo to (46.875000, 0.937500)
+Setting splash damage for Gunstar-1 to (1484.375000, 29.687500)
+
+
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Gunstar-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+Creating WarpSequence:  Ship = Gunstar-1  // To Set = None  // Placement Name = None
+Setting splash damage for Gunstar-1 to (1484.375000, 29.687500)
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Galactica-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Trying to clean memory
+Setting Stock System Planets Random Density.
+Ship Galactica-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+Setting splash damage for Galactica-1 to (2812.500000, 56.250000)
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Galactica-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+data/TGL/Maelstrom/Episode 2/E2M0.tgl E2M0BrexCom3
+Setting splash damage for Galactica-1 to (2812.500000, 56.250000)
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Galactica-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+
+
+Setting splash damage for Galactica-1 to (2812.500000, 56.250000)
+
+# DS9FX has...
+
+# taken a console dump
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Galactica-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 15 Sep 2025 19:44:32#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Custom.Autoload.FIX-EngineerCharacterHandlers : Patched your  Bridge.EngineerCharacterHandlers  to cover 0-shield-strength ships
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+
+
+Setting Stock System Planets Random Density.
+Ship Gunstar-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+Creating WarpSequence:  Ship = Gunstar-1  // To Set = None  // Placement Name = None
+Setting splash damage for Total PointDefence Firepoint Gunstar-1 C Torpedo instance at _416c04e8_p_Torpedo to (46.875000, 0.937500)
+Setting splash damage for Gunstar-1 to (1484.375000, 29.687500)
+
+
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Gunstar-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+Creating WarpSequence:  Ship = Gunstar-1  // To Set = None  // Placement Name = None
+Setting splash damage for Gunstar-1 to (1484.375000, 29.687500)
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Galactica-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Trying to clean memory
+Setting Stock System Planets Random Density.
+Ship Galactica-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+Setting splash damage for Galactica-1 to (2812.500000, 56.250000)
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Galactica-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+data/TGL/Maelstrom/Episode 2/E2M0.tgl E2M0BrexCom3
+Setting splash damage for Galactica-1 to (2812.500000, 56.250000)
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Galactica-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+
+
+Setting splash damage for Galactica-1 to (2812.500000, 56.250000)
+
+# DS9FX has...
+
+# taken a console dump
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Galactica-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####

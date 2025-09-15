@@ -7,8 +7,8 @@ def GetShipStats():
 		"FilenameMed": "data/Models/Ships/Celestra/Celestra.nif",
 		"FilenameLow": "data/Models/Ships/Celestra/Celestra.nif",
 
-		"Name": "Celestra",
-		"HardpointFile": "Celestra",
+		"Name": "BSG2003Celestra",
+		"HardpointFile": "BSG2003Celestra",
 		"Species": Multiplayer.SpeciesToShip.UNKNOWN
 	 }
 	return kShipStats

@@ -7,8 +7,8 @@ def GetShipStats():
 		"FilenameMed": "data/Models/Ships/Col1/Col1.nif",
 		"FilenameLow": "data/Models/Ships/Col1/Col1.nif",
 
-		"Name": "Col1",
-		"HardpointFile": "Col1",
+		"Name": "BSG2003Col1",
+		"HardpointFile": "BSG2003Col1",
 		"Species": Multiplayer.SpeciesToShip.UNKNOWN
 	 }
 	return kShipStats

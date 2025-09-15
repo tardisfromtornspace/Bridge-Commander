@@ -7,8 +7,8 @@ def GetShipStats():
 		"FilenameMed": "data/Models/Ships/AstralQueen/AstralQueen.nif",
 		"FilenameLow": "data/Models/Ships/AstralQueen/AstralQueen.nif",
 
-		"Name": "AstralQueen",
-		"HardpointFile": "AstralQueen",
+		"Name": "BSG2003AstralQueen",
+		"HardpointFile": "BSG2003AstralQueen",
 		"Species": Multiplayer.SpeciesToShip.UNKNOWN
 	 }
 	return kShipStats

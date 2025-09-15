@@ -7,8 +7,8 @@ def GetShipStats():
 		"FilenameMed": "data/Models/Ships/Cloud9/Cloud9.nif",
 		"FilenameLow": "data/Models/Ships/Cloud9/Cloud9.nif",
 
-		"Name": "Cloud9",
-		"HardpointFile": "Cloud9",
+		"Name": "BSG2003Cloud9",
+		"HardpointFile": "BSG2003Cloud9",
 		"Species": Multiplayer.SpeciesToShip.UNKNOWN
 	 }
 	return kShipStats

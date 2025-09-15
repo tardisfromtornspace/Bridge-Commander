@@ -531,7 +531,7 @@ def afterGlowFTLactISI(pAction, pShipID):
 
 	pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), pShipID)
 	if pShip != None:
-		afterGlowFTL(pShip)
+		afterGlowFTLC(pShip)
 	return 0
 
 # Auxiliar function TO-DO ADD TO DOC

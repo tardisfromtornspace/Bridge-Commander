@@ -6,7 +6,7 @@ def GetShipStats():
 		"FilenameHigh": "data/Models/Ships/Battlestar/Battlestar.nif",
 		"FilenameLow": "data/Models/Ships/Battlestar/Battlestar.nif",
 		"Name": "BSG2003Artemis",
-		"HardpointFile": "Battlestar",
+		"HardpointFile": "BSG2003Artemis",
 		"Species": Multiplayer.SpeciesToShip.GALAXY,
 		"DamageRadMod" : 0.1,
 		"DamageStrMod" : 0.1666

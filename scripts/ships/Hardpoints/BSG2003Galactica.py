@@ -170,7 +170,7 @@ StarHangar.SetPosition(5.500000, 1.000000, 0.000000)
 StarHangar.SetPosition2D(84.000000, 64.000000)
 StarHangar.SetRepairComplexity(1.000000)
 StarHangar.SetDisabledPercentage(0.500000)
-StarHangar.SetRadius(0.250000)
+StarHangar.SetRadius(10.250000)
 App.g_kModelPropertyManager.RegisterLocalTemplate(StarHangar)
 #################################################
 PortHangar = App.HullProperty_Create("Port Hangar")

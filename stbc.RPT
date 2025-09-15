@@ -11715,3 +11715,26 @@ Doing stack walk
 Call stack:
 Address   Frame
 
+//=====================================================
+Current Time: Mon Sep 15 12:27:12 2025
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  00684A92 01:00283A92 C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+Registers:
+EAX:00000050
+EBX:2A0C9190
+ECX:321CA2E4
+EDX:321CA2E4
+ESI:321CA2E4
+EDI:00646A30
+CS:EIP:0023:00684A92
+SS:ESP:002B:0019F588  EBP:00000000
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010206
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+
