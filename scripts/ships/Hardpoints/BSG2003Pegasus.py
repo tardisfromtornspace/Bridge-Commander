@@ -173,6 +173,19 @@ PortHangar.SetDisabledPercentage(0.500000)
 PortHangar.SetRadius(10.250000)
 App.g_kModelPropertyManager.RegisterLocalTemplate(PortHangar)
 #################################################
+LowerPortHangar = App.HullProperty_Create("Lower Port Hangar")
+
+LowerPortHangar.SetMaxCondition(276.000000)
+LowerPortHangar.SetCritical(0)
+LowerPortHangar.SetTargetable(1)
+LowerPortHangar.SetPrimary(0)
+LowerPortHangar.SetPosition(-7.000000, 0.000000, -4.000000)
+LowerPortHangar.SetPosition2D(43.000000, 64.000000)
+LowerPortHangar.SetRepairComplexity(1.000000)
+LowerPortHangar.SetDisabledPercentage(0.500000)
+LowerPortHangar.SetRadius(4.250000)
+App.g_kModelPropertyManager.RegisterLocalTemplate(LowerPortHangar)
+#################################################
 LaunchTubeP1 = App.HullProperty_Create("Launch Tube P1")
 
 LaunchTubeP1.SetMaxCondition(450.000000)
@@ -315,6 +328,19 @@ StarHangar.SetRepairComplexity(1.000000)
 StarHangar.SetDisabledPercentage(0.500000)
 StarHangar.SetRadius(10.250000)
 App.g_kModelPropertyManager.RegisterLocalTemplate(StarHangar)
+#################################################
+LowerStarHangar = App.HullProperty_Create("Lower Star Hangar")
+
+LowerStarHangar.SetMaxCondition(276.000000)
+LowerStarHangar.SetCritical(0)
+LowerStarHangar.SetTargetable(1)
+LowerStarHangar.SetPrimary(0)
+LowerStarHangar.SetPosition(7.000000, 0.000000, -4.000000)
+LowerStarHangar.SetPosition2D(81.000000, 64.000000)
+LowerStarHangar.SetRepairComplexity(1.000000)
+LowerStarHangar.SetDisabledPercentage(0.500000)
+LowerStarHangar.SetRadius(4.250000)
+App.g_kModelPropertyManager.RegisterLocalTemplate(LowerStarHangar)
 #################################################
 LaunchTubeS1 = App.HullProperty_Create("Launch Tube S1")
 
@@ -460,6 +486,21 @@ PortHangarOEPPosition.SetXYZ(-6.750000, 5.000000, -1.750000)
 PortHangarOEP.SetPosition(PortHangarOEPPosition)
 PortHangarOEP.SetEmittedObjectType(PortHangarOEP.OEP_SHUTTLE)
 App.g_kModelPropertyManager.RegisterLocalTemplate(PortHangarOEP)
+#################################################
+LowerPortHangarOEP = App.ObjectEmitterProperty_Create("Lower Port Hangar OEP")
+
+LowerPortHangarOEPForward = App.TGPoint3()
+LowerPortHangarOEPForward.SetXYZ(0.000000, -1.000000, 0.000000)
+LowerPortHangarOEPUp = App.TGPoint3()
+LowerPortHangarOEPUp.SetXYZ(0.000000, 0.000000, -1.000000)
+LowerPortHangarOEPRight = App.TGPoint3()
+LowerPortHangarOEPRight.SetXYZ(1.000000, 0.000000, 0.000000) 
+LowerPortHangarOEP.SetOrientation(LowerPortHangarOEPForward, LowerPortHangarOEPUp, LowerPortHangarOEPRight)
+LowerPortHangarOEPPosition = App.TGPoint3()
+LowerPortHangarOEPPosition.SetXYZ(-6.750000, -13.000000, -3.450000)
+LowerPortHangarOEP.SetPosition(LowerPortHangarOEPPosition)
+LowerPortHangarOEP.SetEmittedObjectType(LowerPortHangarOEP.OEP_SHUTTLE)
+App.g_kModelPropertyManager.RegisterLocalTemplate(LowerPortHangarOEP)
 #################################################
 LaunchTubeP1OEP = App.ObjectEmitterProperty_Create("Launch Tube P1 OEP")
 
@@ -625,6 +666,21 @@ StarHangarOEPPosition.SetXYZ(6.750000, 5.000000, -1.750000)
 StarHangarOEP.SetPosition(StarHangarOEPPosition)
 StarHangarOEP.SetEmittedObjectType(StarHangarOEP.OEP_SHUTTLE)
 App.g_kModelPropertyManager.RegisterLocalTemplate(StarHangarOEP)
+#################################################
+LowerStarHangarOEP = App.ObjectEmitterProperty_Create("Lower Star Hangar OEP")
+
+LowerStarHangarOEPForward = App.TGPoint3()
+LowerStarHangarOEPForward.SetXYZ(0.000000, -1.000000, 0.000000)
+LowerStarHangarOEPUp = App.TGPoint3()
+LowerStarHangarOEPUp.SetXYZ(0.000000, 0.000000, -1.000000)
+LowerStarHangarOEPRight = App.TGPoint3()
+LowerStarHangarOEPRight.SetXYZ(1.000000, 0.000000, 0.000000)
+LowerStarHangarOEP.SetOrientation(LowerStarHangarOEPForward, LowerStarHangarOEPUp, LowerStarHangarOEPRight)
+LowerStarHangarOEPPosition = App.TGPoint3()
+LowerStarHangarOEPPosition.SetXYZ(6.750000, -13.000000, -3.450000)
+LowerStarHangarOEP.SetPosition(LowerStarHangarOEPPosition)
+LowerStarHangarOEP.SetEmittedObjectType(LowerStarHangarOEP.OEP_SHUTTLE)
+App.g_kModelPropertyManager.RegisterLocalTemplate(LowerStarHangarOEP)
 #################################################
 LaunchTubeS1OEP = App.ObjectEmitterProperty_Create("Launch Tube S1 OEP")
 
@@ -3873,7 +3929,13 @@ def LoadPropertySet(pObj):
 	prop = App.g_kModelPropertyManager.FindByName("Port Hangar", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
+	prop = App.g_kModelPropertyManager.FindByName("Lower Port Hangar", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	if (prop != None):
+		pObj.AddToSet("Scene Root", prop)
 	prop = App.g_kModelPropertyManager.FindByName("Star Hangar", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	if (prop != None):
+		pObj.AddToSet("Scene Root", prop)
+	prop = App.g_kModelPropertyManager.FindByName("Lower Star Hangar", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
 	prop = App.g_kModelPropertyManager.FindByName("Launch Tube P1", App.TGModelPropertyManager.LOCAL_TEMPLATES)
@@ -3939,7 +4001,13 @@ def LoadPropertySet(pObj):
 	prop = App.g_kModelPropertyManager.FindByName("Port Hangar OEP", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
+	prop = App.g_kModelPropertyManager.FindByName("Lower Port Hangar OEP", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	if (prop != None):
+		pObj.AddToSet("Scene Root", prop)
 	prop = App.g_kModelPropertyManager.FindByName("Star Hangar OEP", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	if (prop != None):
+		pObj.AddToSet("Scene Root", prop)
+	prop = App.g_kModelPropertyManager.FindByName("Lower Star Hangar OEP", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
 	prop = App.g_kModelPropertyManager.FindByName("Launch Tube P1 OEP", App.TGModelPropertyManager.LOCAL_TEMPLATES)
