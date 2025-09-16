@@ -6,8 +6,8 @@ def GetShipStats():
 		"FilenameHigh": "data/Models/Ships/CylonRaider/CylonRaider.NIF",
 		"FilenameMed": "data/Models/Ships/CylonRaider/CylonRaider.NIF",
 		"FilenameLow": "data/Models/Ships/CylonRaider/CylonRaider.NIF",
-		"Name": "CylonRaider",
-		"HardpointFile": "CylonRaider",
+		"Name": "BSG2003CylonRaider",
+		"HardpointFile": "BSG2003CylonRaider",
 		"Species": Multiplayer.SpeciesToShip.BIRDOFPREY
 		 }
 	return kShipStats
@@ -21,9 +21,9 @@ def LoadModel(bPreLoad = 0):
 		# Surface Damage Res, Internal Damage Res, Burn Value, Hole Value,
 		# Search String for Glow, Search string for Specular, Suffix for specular
 		pLODModel = App.g_kLODModelManager.Create(pStats["Name"])
-		pLODModel.AddLOD(pStats["FilenameHigh"], 10, 200.0, 15.0, 15.0, 400, 900, "", None, "_specular")
-		pLODModel.AddLOD(pStats["FilenameMed"],  10, 400.0, 15.0, 15.0, 400, 900, "", None, "_specular")
-		pLODModel.AddLOD(pStats["FilenameLow"],  10, 800.0, 15.0, 30.0, 400, 900, "", None, "_specular")
+		pLODModel.AddLOD(pStats["FilenameHigh"], 10, 200.0, 15.0, 15.0, 4, 900, "", None, "_specular")
+		pLODModel.AddLOD(pStats["FilenameMed"],  10, 400.0, 15.0, 15.0, 4, 900, "", None, "_specular")
+		pLODModel.AddLOD(pStats["FilenameLow"],  10, 800.0, 15.0, 30.0, 4, 900, "", None, "_specular")
 
 #		kDebugObj = App.CPyDebug()
 		if (bPreLoad == 0):

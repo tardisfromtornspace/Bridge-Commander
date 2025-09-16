@@ -6,6 +6,8 @@
 #	Script for filling in the attributes of disruptor blasts.
 #	
 #	Created:	11/3/00 -	Erik Novales
+#                       10/9/2025 -    CharaToLoki
+#                                           Power and tech adjustments
 ###############################################################################
 
 import App

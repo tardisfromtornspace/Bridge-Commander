@@ -8,6 +8,8 @@
 #	Created:	11/3/00 -	Erik Novales
 #       Modified:       29/10/2006 -    Lost_Jedi
 #                                           Now includes torpedo trails
+#                       10/9/2025 -    CharaToLoki
+#                                           Power and tech adjustments
 ###############################################################################
 
 import App
@@ -73,7 +75,7 @@ def AttachSmoke(self, pEvent = None):
 
 
 def GetLaunchSpeed():
-	return(20.0)
+	return(30.0)
 
 def GetLaunchSound():
 	return("MissileFire")
@@ -85,10 +87,23 @@ def GetName():
 	return("Cylon Missile")
 
 def GetDamage():
-	return 5.0
+	return 15.0
 
 def GetGuidanceLifetime():
 	return 60.0
 
 def GetMaxAngularAccel():
 	return 4.0
+
+def HullDmgMultiplier():
+	return 2.0
+
+def ShieldDmgMultiplier():
+	return 2.6
+
+try:
+	modMERailgunWeaponTorp = __import__("Custom.Techs.MERailgunWeapon")
+	if(modMERailgunWeaponTorp):
+		modMERailgunWeaponTorp.oMERailgunWeaponTorp.AddTorpedo(__name__)
+except:
+	print "MERailgunWeapon projectile script not installed, or you are missing Foundation Tech"

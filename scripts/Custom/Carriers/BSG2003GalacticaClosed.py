@@ -1,4 +1,12 @@
 # BSG2003GalacticaClosed.py    a Carrier File by CharaToLoki based on Dauntless.py
+#
+# Dauntless.py
+# April 11, 2002
+#
+# by Evan Light aka sleight42, all rights reserved
+#
+# Permission to redistribute this code as part of any other packaging requires
+# the explicit permission of the author in advance.
 ##############################################################################
 
 # A simple example of how to define a custom Carrier with a specified 

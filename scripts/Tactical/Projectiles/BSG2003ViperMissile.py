@@ -8,6 +8,8 @@
 #	Created:	11/3/00 -	Erik Novales
 #       Modified:       29/10/2006 -    Lost_Jedi
 #                                           Now includes torpedo trails
+#                       10/9/2025 -    CharaToLoki
+#                                           Power and tech adjustments
 ###############################################################################
 
 import App

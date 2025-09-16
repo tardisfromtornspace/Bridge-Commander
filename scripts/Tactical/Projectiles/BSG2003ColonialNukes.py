@@ -6,6 +6,8 @@
 #	Script for filling in the attributes of photon torpedoes.
 #	
 #	Created:	11/3/00 -	Erik Novales
+#       Modified:       10/9/2025 -    CharaToLoki
+#                                           Power and tech adjustments
 ###############################################################################
 
 import App

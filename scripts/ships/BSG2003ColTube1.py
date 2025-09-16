@@ -7,8 +7,8 @@ def GetShipStats():
 		"FilenameMed": "data/Models/Ships/ColTube1/ColTube1.nif",
 		"FilenameLow": "data/Models/Ships/ColTube1/ColTube1.nif",
 
-		"Name": "ColTube1",
-		"HardpointFile": "ColTube1",
+		"Name": "BSG2003ColTube1",
+		"HardpointFile": "BSG2003ColTube1",
 		"Species": Multiplayer.SpeciesToShip.UNKNOWN
 	 }
 	return kShipStats

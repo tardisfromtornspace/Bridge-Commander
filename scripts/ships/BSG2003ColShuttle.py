@@ -6,8 +6,8 @@ def GetShipStats():
 		"FilenameHigh": "data/Models/Ships/ColShuttle/ColShuttle.NIF",
 		"FilenameMed": "data/Models/Ships/ColShuttle/ColShuttle.NIF",
 		"FilenameLow": "data/Models/Ships/ColShuttle/ColShuttle.NIF",
-		"Name": "ColShuttle",
-		"HardpointFile": "ColShuttle",
+		"Name": "BSG2003ColShuttle",
+		"HardpointFile": "BSG2003ColShuttle",
 		"Species": Multiplayer.SpeciesToShip.BIRDOFPREY
 		 }
 	return kShipStats

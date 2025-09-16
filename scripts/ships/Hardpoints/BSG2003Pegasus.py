@@ -123,7 +123,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(FirstPersonCamera)
 #################################################
 Hull = App.HullProperty_Create("Hull")
 
-Hull.SetMaxCondition(2100.000000)
+Hull.SetMaxCondition(1950.000000)
 Hull.SetCritical(1)
 Hull.SetTargetable(0)
 Hull.SetPrimary(1)
@@ -136,7 +136,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(Hull)
 #################################################
 Armour = App.HullProperty_Create("Armour")
 
-Armour.SetMaxCondition(2100.000000)
+Armour.SetMaxCondition(1950.000000)
 Armour.SetCritical(0)
 Armour.SetTargetable(0)
 Armour.SetPrimary(0)
@@ -149,7 +149,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(Armour)
 #################################################
 CIC = App.HullProperty_Create("CIC")
 
-CIC.SetMaxCondition(1800.000000)
+CIC.SetMaxCondition(1700.000000)
 CIC.SetCritical(0)
 CIC.SetTargetable(1)
 CIC.SetPrimary(0)

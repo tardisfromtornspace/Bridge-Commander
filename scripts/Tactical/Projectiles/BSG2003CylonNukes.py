@@ -6,6 +6,8 @@
 #	Script for filling in the attributes of photon torpedoes.
 #	
 #	Created:	11/3/00 -	Erik Novales
+#                       10/9/2025 -    CharaToLoki
+#                                           Power and tech adjustments
 ###############################################################################
 
 import App
@@ -46,7 +48,7 @@ def Create(pTorp):
 
 
 	pTorp.SetDamage( GetDamage() )
-	pTorp.SetDamageRadiusFactor(0.3)
+	pTorp.SetDamageRadiusFactor(0.49)
 	pTorp.SetGuidanceLifetime( GetGuidanceLifetime() )
 	pTorp.SetMaxAngularAccel( GetMaxAngularAccel() )
 

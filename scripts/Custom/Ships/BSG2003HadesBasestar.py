@@ -11,7 +11,7 @@ import App
 #                                                                                     #
 abbrev = 'BSG2003HadesBasestar'
 iconName = 'HadesBasestar'
-longName = 'Hades Basestar'
+longName = 'Type-A Basestar'
 shipFile = 'BSG2003HadesBasestar' 
 menuGroup = 'BSG (2003) Ships'
 playerMenuGroup = 'BSG (2003) Ships'
@@ -60,7 +60,7 @@ Foundation.ShipDef.BSG2003HadesBasestar.fCruiseWarp = 6.0
 #                                                                                     #
 # Otherwise, uncomment this and type something in:                                    #
 #                                                                                     #
-Foundation.ShipDef.BSG2003HadesBasestar.desc = "Backbone of the Cylon Rebellion during the First Cylon War and originally designed by Colonial scientists as a combat vessel is the infamous 'Hades Basestar'. A fully armed Basestar is the most deadly ship in the known space. This massive, double saucer vessels measured some 1768 meters in diameter and carried a Legion of Cylon troops and 300 Raider type fighter craft. They are armed with over one-hundred defensive  RailGun turrets and nukes. So formidable is a lone Basestar, it is considered to be more powerful than a Battlestar."
+Foundation.ShipDef.BSG2003HadesBasestar.desc = "Backbone of the Cylon Rebellion during the First Cylon War and originally designed by Colonial scientists as a combat vessel is the infamous 'Type-A' Basestar, also known as 'Hades Basestar'. A fully armed Basestar is the most deadly ship in the known space. This massive, double saucer vessels measured some 1768 meters in diameter and carried a Legion of Cylon troops and 300 Raider type fighter craft. They are armed with over one-hundred defensive RailGun turrets and nukes. So formidable is a lone Basestar, it is considered to be more powerful than a Battlestar."
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

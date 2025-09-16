@@ -6,6 +6,10 @@
 #	Script for filling in the attributes of photon torpedoes.
 #	
 #	Created:	11/3/00 -	Erik Novales
+#       Modified:       29/10/2006 -    Lost_Jedi
+#                                           Now includes torpedo trails
+#                       10/9/2025 -    CharaToLoki
+#                                           Power and tech adjustments
 ###############################################################################
 
 import App
@@ -31,22 +35,22 @@ def Create(pTorp):
 	pTorp.CreateTorpedoModel(
 					"data/Textures/Tactical/c2xtorpedo.tga",
 					kCoreColor,
-					1.02,
-					1.05,	 
+					0.04,
+					0.05,	 
 					"data/Textures/Tactical/c2xtorpedo.tga", 
 					kGlowColor,
-					5.0,	
-					1.01,	 
-					1.035,	
+					0.2,	
+					0.04,	 
+					0.025,	
 					"data/Textures/Tactical/TorpedoFlares.tga",
 					kFlareColor,										
 					0,		
-					0.1,		
-					0.05)
+					0.01,		
+					0.01)
 
 
 	pTorp.SetDamage( GetDamage() )
-	pTorp.SetDamageRadiusFactor(0.13)
+	pTorp.SetDamageRadiusFactor(0.33)
 	pTorp.SetGuidanceLifetime( GetGuidanceLifetime() )
 	pTorp.SetMaxAngularAccel( GetMaxAngularAccel() )
 
@@ -55,10 +59,10 @@ def Create(pTorp):
 	import Multiplayer.SpeciesToTorp
 	pTorp.SetNetType (Multiplayer.SpeciesToTorp.PHOTON)
 
+
         ## Add a creation handler to the torpedo :)
         LJTorpLib.LibTorp.AddCreationHandler(pTorp, __name__ + ".AttachSmoke")
-        return(0)
-
+	return(0)
 
 def AttachSmoke(self, pEvent = None):
     ## Attach Missile Effect
@@ -71,22 +75,35 @@ def AttachSmoke(self, pEvent = None):
 
 
 def GetLaunchSpeed():
-	return(10.0)
+	return(35.0)
 
 def GetLaunchSound():
-	return("MissileFire")
+	return("RaiderMissile")
 
 def GetPowerCost():
-	return(20.0)
+	return(10.0)
 
 def GetName():
-	return("Nuclear Warheads")
+	return("Missile")
 
 def GetDamage():
-	return 300.0
+	return 9.0
 
 def GetGuidanceLifetime():
-	return 17.2
+	return 1.25
 
 def GetMaxAngularAccel():
-	return 0.85
+	return 0.75
+
+def HullDmgMultiplier():
+	return 2.0
+
+def ShieldDmgMultiplier():
+	return 3.8
+
+try:
+	modMERailgunWeaponTorp = __import__("Custom.Techs.MERailgunWeapon")
+	if(modMERailgunWeaponTorp):
+		modMERailgunWeaponTorp.oMERailgunWeaponTorp.AddTorpedo(__name__)
+except:
+	print "MERailgunWeapon projectile script not installed, or you are missing Foundation Tech"

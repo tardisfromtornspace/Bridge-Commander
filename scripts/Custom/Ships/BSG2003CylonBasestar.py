@@ -44,7 +44,7 @@ Foundation.ShipDef.BSG2003CylonBasestar.dTechs = {
 	'Simulated Point Defence' : { "Distance": 35.0, "InnerDistance": 5.0, "Effectiveness": 0.95, "LimitTurn": 0.27, "LimitSpeed": 56, "Period": 0.1, "MaxNumberTorps": 10, },
 	"Alternate-Warp-FTL": {
 		"Setup": {
-			"nBSGDimensionalJump": {	"Nacelles": ["FTL Drive 1", "FTL Drive 2"], "Core": ["Reactor Module"], "Cooldown Time": 13 * 60},
+			"nBSGDimensionalJump": {	"Nacelles": ["FTL Drive 1", "FTL Drive 2", "FTL Drive 3", "FTL Drive 4"], "Core": ["Reactor Module"], "Cooldown Time": 13 * 60},
 		},
 	},
 }
