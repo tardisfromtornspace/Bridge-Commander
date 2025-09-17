@@ -1,6 +1,5 @@
-# Galactica.py    a Carrier File by MadJohn
+# SGGalacticaRefit.py by CharaToLoki based on Dauntless.py
 #
-# Based off.
 # Dauntless.py
 # April 11, 2002
 #
@@ -23,59 +22,59 @@ class SGGalacticaRefit( Carrier.Carrier):
 
         LauncherManager = __import__( "ftb.LauncherManager")
         launcher = LauncherManager.GetLauncher( "Launch Tube P1", pShip)
-        group.AddLauncher( "Launch Tube P1 ", launcher)
-        launcher.AddLaunchable( "ViperMk2", "ftb.friendlyAI", 2)
-
+        group.AddLauncher( "Launch Tube P1", launcher)
+        launcher.AddLaunchable( "BSG2003ViperMk2", "ftb.friendlyAI", 4)
+        launcher.AddLaunchable( "BSG2003ViperMk7", "ftb.friendlyAI", 3)
 
         launcher = LauncherManager.GetLauncher( "Launch Tube P2", pShip)
-        group.AddLauncher( "Launch Tube P2 ", launcher)
-        launcher.AddLaunchable( "ViperMk2", "ftb.friendlyAI", 2)
-
+        group.AddLauncher( "Launch Tube P2", launcher)
+        launcher.AddLaunchable( "BSG2003ViperMk2", "ftb.friendlyAI", 4)
+        launcher.AddLaunchable( "BSG2003ViperMk7", "ftb.friendlyAI", 3)
 
         launcher = LauncherManager.GetLauncher( "Launch Tube P3", pShip)
-        group.AddLauncher( "Launch Tube P3 ", launcher)
-        launcher.AddLaunchable( "ViperMk2", "ftb.friendlyAI", 2)
-
+        group.AddLauncher( "Launch Tube P3", launcher)
+        launcher.AddLaunchable( "BSG2003ViperMk2", "ftb.friendlyAI", 4)
+        launcher.AddLaunchable( "BSG2003ViperMk7", "ftb.friendlyAI", 3)
 
         launcher = LauncherManager.GetLauncher( "Launch Tube P4", pShip)
-        group.AddLauncher( "Launch Tube P4 ", launcher)
-        launcher.AddLaunchable( "ViperMk2", "ftb.friendlyAI", 2)
-
+        group.AddLauncher( "Launch Tube P4", launcher)
+        launcher.AddLaunchable( "BSG2003ViperMk2", "ftb.friendlyAI", 4)
+        launcher.AddLaunchable( "BSG2003ViperMk7", "ftb.friendlyAI", 3)
+        launcher.AddLaunchable( "BSG2003Blackbird", "ftb.friendlyAI", 1)
 
         launcher = LauncherManager.GetLauncher( "Launch Tube P5", pShip)
-        group.AddLauncher( "Launch Tube P5 ", launcher)
-        launcher.AddLaunchable( "ViperMk7", "ftb.friendlyAI", 2)
-
+        group.AddLauncher( "Launch Tube P5", launcher)
+        launcher.AddLaunchable( "BSG2003ViperMk2", "ftb.friendlyAI", 4)
+        launcher.AddLaunchable( "BSG2003ViperMk7", "ftb.friendlyAI", 3)
 
         launcher = LauncherManager.GetLauncher( "Launch Tube P6", pShip)
-        group.AddLauncher( "Launch Tube P6 ", launcher)
-        launcher.AddLaunchable( "ViperMk2", "ftb.friendlyAI", 2)
-
+        group.AddLauncher( "Launch Tube P6", launcher)
+        launcher.AddLaunchable( "BSG2003ViperMk2", "ftb.friendlyAI", 4)
+        launcher.AddLaunchable( "BSG2003ViperMk7", "ftb.friendlyAI", 3)
 
         launcher = LauncherManager.GetLauncher( "Launch Tube P7", pShip)
-        group.AddLauncher( "Launch Tube P7 ", launcher)
-        launcher.AddLaunchable( "ViperMk2", "ftb.friendlyAI", 2)
-
+        group.AddLauncher( "Launch Tube P7", launcher)
+        launcher.AddLaunchable( "BSG2003ViperMk2", "ftb.friendlyAI", 4)
+        launcher.AddLaunchable( "BSG2003ViperMk7", "ftb.friendlyAI", 3)
 
         launcher = LauncherManager.GetLauncher( "Launch Tube P8", pShip)
-        group.AddLauncher( "Launch Tube P8 ", launcher)
-        launcher.AddLaunchable( "ViperMk7", "ftb.friendlyAI", 2)
-
+        group.AddLauncher( "Launch Tube P8", launcher)
+        launcher.AddLaunchable( "BSG2003ViperMk2", "ftb.friendlyAI", 4)
+        launcher.AddLaunchable( "BSG2003ViperMk7", "ftb.friendlyAI", 3)
 
         launcher = LauncherManager.GetLauncher( "Launch Tube P9", pShip)
-        group.AddLauncher( "Launch Tube P9 ", launcher)
-        launcher.AddLaunchable( "ViperMk2", "ftb.friendlyAI", 2)
-
+        group.AddLauncher( "Launch Tube P9", launcher)
+        launcher.AddLaunchable( "BSG2003ViperMk2", "ftb.friendlyAI", 4)
+        launcher.AddLaunchable( "BSG2003ViperMk7", "ftb.friendlyAI", 3)
 
         launcher = LauncherManager.GetLauncher( "Launch Tube P10", pShip)
-        group.AddLauncher( "Launch Tube P10 ", launcher)
-        launcher.AddLaunchable( "ViperMk2", "ftb.friendlyAI", 2)
+        group.AddLauncher( "Launch Tube P10", launcher)
+        launcher.AddLaunchable( "BSG2003ViperMk2", "ftb.friendlyAI", 4)
+        launcher.AddLaunchable( "BSG2003ViperMk7", "ftb.friendlyAI", 3)
 
-
-        launcher = LauncherManager.GetLauncher( "Port Hanger", pShip)
-        group.AddLauncher( "Port Hanger ", launcher)
-        launcher.AddLaunchable( "Raptor2", "ftb.friendlyAI", 2)
-
+        launcher = LauncherManager.GetLauncher( "Port Hangar", pShip)
+        group.AddLauncher( "Port Hangar", launcher)
+        launcher.AddLaunchable( "BSG2003Raptor2", "ftb.friendlyAI", 4)
 
         self.AddLauncher( "Group 1", group)
 
@@ -84,7 +83,7 @@ class SGGalacticaRefit( Carrier.Carrier):
 
     # Define how much Shuttles we can carry maximal (Return Shuttles script)
     def GetMaxShuttles(self): 
-    	return 20
+    	return 90
     # Don't use the following Tractors to Dock:
     def IgnoreTractors(self):    	
     	return []
