@@ -1738,7 +1738,7 @@ ReactorModule.SetBackupConduitCapacity(100.000000)
 ReactorModule.SetPowerOutput(400.000000)
 App.g_kModelPropertyManager.RegisterLocalTemplate(ReactorModule)
 #################################################
-SensorArray = App.SensorProperty_Create("Sensor Array")
+SensorArray = App.SensorProperty_Create("DRADIS Array")
 
 SensorArray.SetMaxCondition(792.000000)
 SensorArray.SetCritical(0)
@@ -4589,7 +4589,7 @@ def LoadPropertySet(pObj):
 	prop = App.g_kModelPropertyManager.FindByName("Reactor Module", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
-	prop = App.g_kModelPropertyManager.FindByName("Sensor Array", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	prop = App.g_kModelPropertyManager.FindByName("DRADIS Array", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
 	prop = App.g_kModelPropertyManager.FindByName("Sublight Engines", App.TGModelPropertyManager.LOCAL_TEMPLATES)

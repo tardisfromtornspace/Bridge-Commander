@@ -69,7 +69,7 @@ def GetName():
 	return("Solonite Missile")
 
 def GetDamage():
-	return 150.0
+	return 240.0
 
 def GetGuidanceLifetime():
 	return 6.0

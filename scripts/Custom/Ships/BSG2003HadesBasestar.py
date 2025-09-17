@@ -40,7 +40,7 @@ Foundation.ShipDef.BSG2003HadesBasestar = Foundation.ShipDef(abbrev, species, { 
 
 Foundation.ShipDef.BSG2003HadesBasestar.dTechs = {
 	"AutoTargeting": { "Pulse": [3, 1] },
-	'Simulated Point Defence' : { "Distance": 35.0, "InnerDistance": 5.0, "Effectiveness": 0.8, "LimitTurn": 0.25, "LimitSpeed": 56, "Period": 0.3, "MaxNumberTorps": 24, },
+	'Simulated Point Defence' : { "Distance": 35.0, "InnerDistance": 5.0, "Effectiveness": 0.8, "LimitTurn": 0.25, "LimitSpeed": 56, "Period": 0.1, "MaxNumberTorps": 24, },
 	"Alternate-Warp-FTL": {
 		"Setup": {
 			"nBSGDimensionalJump": {	"Nacelles": ["FTL Coils"], "Core": ["Tylium Energizer"], "Cooldown Time": 15 * 60},

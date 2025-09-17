@@ -6,8 +6,8 @@ def GetShipStats():
 		"FilenameHigh": "data/Models/Ships/HeavyRaider/HeavyRaider.NIF",
 		"FilenameMed": "data/Models/Ships/HeavyRaider/HeavyRaider.NIF",
 		"FilenameLow": "data/Models/Ships/HeavyRaider/HeavyRaider.NIF",
-		"Name": "HeavyRaider",
-		"HardpointFile": "HeavyRaider",
+		"Name": "BSG2003HeavyRaider",
+		"HardpointFile": "BSG2003HeavyRaider",
 		"Species": Multiplayer.SpeciesToShip.BIRDOFPREY
 		 }
 	return kShipStats

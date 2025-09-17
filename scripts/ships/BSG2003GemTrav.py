@@ -7,8 +7,8 @@ def GetShipStats():
 		"FilenameMed": "data/Models/Ships/GemTrav/GemTrav1.nif",
 		"FilenameLow": "data/Models/Ships/GemTrav/GemTrav1.nif",
 
-		"Name": "GemTrav",
-		"HardpointFile": "GemTrav",
+		"Name": "BSG2003GemTrav",
+		"HardpointFile": "BSG2003GemTrav",
 		"Species": Multiplayer.SpeciesToShip.UNKNOWN
 	 }
 	return kShipStats

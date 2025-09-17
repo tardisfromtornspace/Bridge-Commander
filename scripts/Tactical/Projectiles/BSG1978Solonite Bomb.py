@@ -45,7 +45,7 @@ def Create(pTorp):
 
 
 	pTorp.SetDamage( GetDamage() )
-	pTorp.SetDamageRadiusFactor(0.13)
+	pTorp.SetDamageRadiusFactor(0.23)
 	pTorp.SetGuidanceLifetime( GetGuidanceLifetime() )
 	pTorp.SetMaxAngularAccel( GetMaxAngularAccel() )
 
@@ -69,10 +69,23 @@ def GetName():
 	return("Solonite Bomb")
 
 def GetDamage():
-	return 700.0
+	return 606.0
 
 def GetGuidanceLifetime():
 	return 20.0
 
 def GetMaxAngularAccel():
 	return 5.0
+
+def HullDmgMultiplier():
+	return 3.0
+
+def ShieldDmgMultiplier():
+	return 3.0
+
+try:
+	modMERailgunWeaponTorp = __import__("Custom.Techs.MERailgunWeapon")
+	if(modMERailgunWeaponTorp):
+		modMERailgunWeaponTorp.oMERailgunWeaponTorp.AddTorpedo(__name__)
+except:
+	print "MERailgunWeapon projectile script not installed, or you are missing Foundation Tech"

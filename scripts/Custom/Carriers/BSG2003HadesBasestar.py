@@ -21,103 +21,115 @@ class BSG2003HadesBasestar( Carrier.Carrier):
         group = LauncherGroup.LauncherGroup()
 
         LauncherManager = __import__( "ftb.LauncherManager")
-        launcher = LauncherManager.GetLauncher( "Launch Tube P1", pShip)
-        group.AddLauncher( "Launch Tube P1 ", launcher)
-        launcher.AddLaunchable( "BSG2003MkXRaider", "ftb.friendlyAI", 2)
+        launcher = LauncherManager.GetLauncher( "Hangar 1", pShip)
+        group.AddLauncher( "Hangar 1", launcher)
+        launcher.AddLaunchable( "BSG2003MkXRaider", "ftb.friendlyAI", 15)
 
 
-        launcher = LauncherManager.GetLauncher( "Launch Tube P2", pShip)
-        group.AddLauncher( "Launch Tube P2 ", launcher)
-        launcher.AddLaunchable( "BSG2003MkXRaider", "ftb.friendlyAI", 2)
+        launcher = LauncherManager.GetLauncher( "Hangar 2", pShip)
+        group.AddLauncher( "Hangar 2", launcher)
+        launcher.AddLaunchable( "BSG2003MkXRaider", "ftb.friendlyAI", 15)
 
 
-        launcher = LauncherManager.GetLauncher( "Launch Tube P3", pShip)
-        group.AddLauncher( "Launch Tube P3 ", launcher)
-        launcher.AddLaunchable( "BSG2003MkXRaider", "ftb.friendlyAI", 2)
+        launcher = LauncherManager.GetLauncher( "Hangar 3", pShip)
+        group.AddLauncher( "Hangar 3", launcher)
+        launcher.AddLaunchable( "BSG2003MkXRaider", "ftb.friendlyAI", 15)
 
 
-        launcher = LauncherManager.GetLauncher( "Launch Tube P4", pShip)
-        group.AddLauncher( "Launch Tube P4 ", launcher)
-        launcher.AddLaunchable( "BSG2003MkXRaider", "ftb.friendlyAI", 2)
+        launcher = LauncherManager.GetLauncher( "Hangar 4", pShip)
+        group.AddLauncher( "Hangar 4", launcher)
+        launcher.AddLaunchable( "BSG2003MkXRaider", "ftb.friendlyAI", 15)
 
 
-        launcher = LauncherManager.GetLauncher( "Launch Tube P5", pShip)
-        group.AddLauncher( "Launch Tube P5 ", launcher)
-        launcher.AddLaunchable( "BSG2003MkXRaider", "ftb.friendlyAI", 2)
+        launcher = LauncherManager.GetLauncher( "Hangar 5", pShip)
+        group.AddLauncher( "Hangar 5", launcher)
+        launcher.AddLaunchable( "BSG2003MkXRaider", "ftb.friendlyAI", 15)
 
 
-        launcher = LauncherManager.GetLauncher( "Launch Tube P6", pShip)
-        group.AddLauncher( "Launch Tube P6 ", launcher)
-        launcher.AddLaunchable( "BSG2003MkXRaider", "ftb.friendlyAI", 2)
+        launcher = LauncherManager.GetLauncher( "Hangar 6", pShip)
+        group.AddLauncher( "Hangar 6", launcher)
+        launcher.AddLaunchable( "BSG2003MkXRaider", "ftb.friendlyAI", 15)
 
 
-        launcher = LauncherManager.GetLauncher( "Launch Tube P7", pShip)
-        group.AddLauncher( "Launch Tube P7 ", launcher)
-        launcher.AddLaunchable( "BSG2003MkXRaider", "ftb.friendlyAI", 2)
+        launcher = LauncherManager.GetLauncher( "Hangar 7", pShip)
+        group.AddLauncher( "Hangar 7", launcher)
+        launcher.AddLaunchable( "BSG2003MkXRaider", "ftb.friendlyAI", 15)
 
 
-        launcher = LauncherManager.GetLauncher( "Launch Tube P8", pShip)
-        group.AddLauncher( "Launch Tube P8 ", launcher)
-        launcher.AddLaunchable( "BSG2003MkXRaider", "ftb.friendlyAI", 2)
+        launcher = LauncherManager.GetLauncher( "Hangar 8", pShip)
+        group.AddLauncher( "Hangar 8", launcher)
+        launcher.AddLaunchable( "BSG2003MkXRaider", "ftb.friendlyAI", 15)
 
 
-        launcher = LauncherManager.GetLauncher( "Launch Tube P9", pShip)
-        group.AddLauncher( "Launch Tube P9 ", launcher)
-        launcher.AddLaunchable( "BSG2003MkXRaider", "ftb.friendlyAI", 2)
+        launcher = LauncherManager.GetLauncher( "Hangar 9", pShip)
+        group.AddLauncher( "Hangar 9", launcher)
+        launcher.AddLaunchable( "BSG2003MkXRaider", "ftb.friendlyAI", 15)
 
 
-        launcher = LauncherManager.GetLauncher( "Launch Tube S1", pShip)
-        group.AddLauncher( "Launch Tube S1 ", launcher)
-        launcher.AddLaunchable( "BSG2003MkXRaider", "ftb.friendlyAI", 2)
+        launcher = LauncherManager.GetLauncher( "Hangar 10", pShip)
+        group.AddLauncher( "Hangar 10", launcher)
+        launcher.AddLaunchable( "BSG2003MkXRaider", "ftb.friendlyAI", 15)
 
 
-        launcher = LauncherManager.GetLauncher( "Launch Tube S2", pShip)
-        group.AddLauncher( "Launch Tube S2 ", launcher)
-        launcher.AddLaunchable( "BSG2003MkXRaider", "ftb.friendlyAI", 2)
+        launcher = LauncherManager.GetLauncher( "Hangar 11", pShip)
+        group.AddLauncher( "Hangar 11", launcher)
+        launcher.AddLaunchable( "BSG2003MkXRaider", "ftb.friendlyAI", 15)
 
 
-        launcher = LauncherManager.GetLauncher( "Launch Tube S3", pShip)
-        group.AddLauncher( "Launch Tube S3 ", launcher)
-        launcher.AddLaunchable( "BSG2003MkXRaider", "ftb.friendlyAI", 2)
+        launcher = LauncherManager.GetLauncher( "Hangar 12", pShip)
+        group.AddLauncher( "Hangar 12", launcher)
+        launcher.AddLaunchable( "BSG2003MkXRaider", "ftb.friendlyAI", 15)
 
 
-        launcher = LauncherManager.GetLauncher( "Launch Tube S4", pShip)
-        group.AddLauncher( "Launch Tube S4 ", launcher)
-        launcher.AddLaunchable( "BSG2003MkXRaider", "ftb.friendlyAI", 2)
+        launcher = LauncherManager.GetLauncher( "Hangar 13", pShip)
+        group.AddLauncher( "Hangar 13", launcher)
+        launcher.AddLaunchable( "BSG2003MkXRaider", "ftb.friendlyAI", 15)
 
 
-        launcher = LauncherManager.GetLauncher( "Launch Tube S5", pShip)
-        group.AddLauncher( "Launch Tube S5 ", launcher)
-        launcher.AddLaunchable( "BSG2003MkXRaider", "ftb.friendlyAI", 2)
+        launcher = LauncherManager.GetLauncher( "Hangar 14", pShip)
+        group.AddLauncher( "Hangar 14", launcher)
+        launcher.AddLaunchable( "BSG2003MkXRaider", "ftb.friendlyAI", 15)
 
 
-        launcher = LauncherManager.GetLauncher( "Launch Tube S6", pShip)
-        group.AddLauncher( "Launch Tube S6 ", launcher)
-        launcher.AddLaunchable( "BSG2003MkXRaider", "ftb.friendlyAI", 2)
+        launcher = LauncherManager.GetLauncher( "Hangar 15", pShip)
+        group.AddLauncher( "Hangar 15", launcher)
+        launcher.AddLaunchable( "BSG2003MkXRaider", "ftb.friendlyAI", 15)
 
 
-        launcher = LauncherManager.GetLauncher( "Launch Tube S7", pShip)
-        group.AddLauncher( "Launch Tube S7 ", launcher)
-        launcher.AddLaunchable( "BSG2003MkXRaider", "ftb.friendlyAI", 2)
+        launcher = LauncherManager.GetLauncher( "Hangar 16", pShip)
+        group.AddLauncher( "Hangar 16", launcher)
+        launcher.AddLaunchable( "BSG2003MkXRaider", "ftb.friendlyAI", 15)
 
 
-        launcher = LauncherManager.GetLauncher( "Launch Tube S8", pShip)
-        group.AddLauncher( "Launch Tube S8 ", launcher)
-        launcher.AddLaunchable( "BSG2003MkXRaider", "ftb.friendlyAI", 2)
+        launcher = LauncherManager.GetLauncher( "Hangar 17", pShip)
+        group.AddLauncher( "Hangar 17", launcher)
+        launcher.AddLaunchable( "BSG2003MkXRaider", "ftb.friendlyAI", 15)
 
 
-        launcher = LauncherManager.GetLauncher( "Launch Tube S9", pShip)
-        group.AddLauncher( "Launch Tube S9 ", launcher)
-        launcher.AddLaunchable( "BSG2003MkXRaider", "ftb.friendlyAI", 2)
+        launcher = LauncherManager.GetLauncher( "Hangar 18", pShip)
+        group.AddLauncher( "Hangar 18", launcher)
+        launcher.AddLaunchable( "BSG2003MkXRaider", "ftb.friendlyAI", 15)
+
+
+        launcher = LauncherManager.GetLauncher( "Hangar 19", pShip)
+        group.AddLauncher( "Hangar 19", launcher)
+        launcher.AddLaunchable( "BSG2003MkXRaider", "ftb.friendlyAI", 15)
+
+
+        launcher = LauncherManager.GetLauncher( "Hangar 20", pShip)
+        group.AddLauncher( "Hangar 20", launcher)
+        launcher.AddLaunchable( "BSG2003MkXRaider", "ftb.friendlyAI", 15)
+
 
         self.AddLauncher( "Group 1", group)
 
         # Play with this feature if you dare... MUHAHAHAHAHAHAHAHAHAHAHAHA!!!!!
-        #group.SetLaunchMode( LauncherGroup.ALL)
+        group.SetLaunchMode( LauncherGroup.ALL)
 
     # Define how much Shuttles we can carry maximal (Return Shuttles script)
     def GetMaxShuttles(self): 
-    	return 36
+    	return 360
+
     # Don't use the following Tractors to Dock:
     def IgnoreTractors(self):    	
     	return []
