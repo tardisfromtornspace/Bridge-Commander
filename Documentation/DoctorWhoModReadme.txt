@@ -1,4 +1,7 @@
 == Changelog ==
+1.2.5 -
+   Updates:
+   * Updated some Mvam and Mvam-related hardpoints to provide better infinite Mvam.
 1.2.4 -
    Updates:
    * Updated SimulatedPointDefence to 1.0 to allow cleaner logic and cleanup.

@@ -55,7 +55,7 @@ for i in range (len(MvamShips) - 1):
 ###TO CHANGE: these are all the buttons used. Keep them in the order that you named them first (ie: saucer sep for the
 ############# saucer, then stardrive, etc). Note: For the reintegration button, make sure you have "$Rein" at the VERY
 ############# end, so I know what it is. Dont worry, that part wont show in game.
-IconNames = ["Release Cargo Clamps"]
+IconNames = ["Release Cargo Clamps", "Recover Cargo$Rein"]
 
 
 ###TO CHANGE: This is the hardest part. You need to find the offset of the new ship models as opposed to the

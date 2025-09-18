@@ -3,7 +3,7 @@
 # GC is ALL Rights Reserved by USS Frontier, but since GC supports Plugins it is fair to release a new TravellingMethod or patch old ones as long as the files remain unmodified.
 # SGStargateNetwork.py
 # Based on the prototype custom travelling method plugin script, by USS Frontier (Enhanced Warp.py, original, template), and then modified by Alex SL Gato for B5Stargate.
-# 16th April 2025
+# 18th September 2025
 #################################################################################################################
 ##########	MANUAL
 #################################################################################################################
@@ -36,7 +36,7 @@ Foundation.ShipDef.ActiveSupergate.SGWorkingStargateFlashRad = 1
 #################################################################################################################
 #
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.12",
+	    "Version": "0.2",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -60,7 +60,7 @@ sName = "Stargate Network"
 # engage it anytime she wants. 
 # Some travelling methods, like wormholes, are not ship based, that means ships need to enter the wormhole to travel.
 ########
-bIsShipBased = 1
+bIsShipBased = 0
 
 ########################################
 ########################################
@@ -1118,4 +1118,26 @@ def GetDegradationSystems(self):
 # must return a list  (like [])
 ########
 def GetLaunchCoordinatesList(pSet):
-	return []
+	myList = []
+	try:
+		if pSet:	
+			pProx = pSet.GetProximityManager()
+			if not pProx:
+				return myList
+
+			ticksPerKilometer = 225/40 # 225 is approximately 40 km, so 225/40 is the number of ticks per kilometer
+
+			for pObject in pSet.GetClassObjectList(App.CT_SHIP):
+				if pObject and hasattr(pObject, "GetObjID"):
+					paTargetID = pObject.GetObjID()
+					pTarget = GetWellShipFromID(paTargetID)
+					if pTarget:
+						works , _, _ = IsWorkingStargate(pTarget)
+						if works != None and works != 0:
+							pShipLoc = pTarget.GetWorldLocation()
+							if pShipLoc:
+								myList.append(pShipLoc)
+	except:
+		traceback.print_exc()
+
+	return myList

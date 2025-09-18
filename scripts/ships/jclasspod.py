@@ -8,7 +8,7 @@ def GetShipStats():
 		"FilenameMed": "data/Models/Ships/jclass/jclasspod.nif",
 		"FilenameLow": "data/Models/Ships/jclass/jclasspod.nif",
 		"Name": "jclasspod",
-		"HardpointFile": "asteroidh3",
+		"HardpointFile": "jclasspod",
 		"Species": Multiplayer.SpeciesToShip.GALAXY
 	}
 	return kShipStats

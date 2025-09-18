@@ -11784,3 +11784,89 @@ Doing stack walk
 Call stack:
 Address   Frame
 
+//=====================================================
+Current Time: Thu Sep 18 16:39:46 2025
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  00717874 01:00316874 C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+Registers:
+EAX:00000000
+EBX:61EDD374
+ECX:00000000
+EDX:00000008
+ESI:001DD1F8
+EDI:00000000
+CS:EIP:0023:00717874
+SS:ESP:002B:0019FBD4  EBP:61EDD354
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+Couldn't load module
+
+//=====================================================
+Current Time: Thu Sep 18 17:12:00 2025
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  00717874 01:00316874 C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+Registers:
+EAX:00000000
+EBX:00000000
+ECX:00000000
+EDX:00000008
+ESI:00400000
+EDI:00000400
+CS:EIP:0023:00717874
+SS:ESP:002B:0019F4B0  EBP:00000002
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+Couldn't load module
+
+//=====================================================
+Current Time: Thu Sep 18 17:32:55 2025
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  004090EB 01:000080EB C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+Registers:
+EAX:4ED6A150
+EBX:00000077
+ECX:00000000
+EDX:3201BF88
+ESI:321E328C
+EDI:00000005
+CS:EIP:0023:004090EB
+SS:ESP:002B:0019FC3C  EBP:14A703F0
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010206
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+004090EB  0019FC40  0001:000080EB C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+//=====================================================
+Current Time: Thu Sep 18 18:15:13 2025
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Thu Sep 18 20:38:02 2025
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  00611D78 01:00210D78 C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+Registers:
+EAX:7AA280A4
+EBX:67E14414
+ECX:00000000
+EDX:0095DD20
+ESI:67E14414
+EDI:00611CF0
+CS:EIP:0023:00611D78
+SS:ESP:002B:0019F81C  EBP:00000000
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010212
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+

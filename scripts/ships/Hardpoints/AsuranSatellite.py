@@ -299,6 +299,29 @@ RotationalThruster4.SetDisabledPercentage(0.500000)
 RotationalThruster4.SetRadius(0.015000)
 RotationalThruster4.SetEngineType(RotationalThruster4.EP_IMPULSE)
 App.g_kModelPropertyManager.RegisterLocalTemplate(RotationalThruster4)
+#################################################
+Missiles = App.TorpedoSystemProperty_Create("Missiles")
+
+Missiles.SetMaxCondition(3500.000000)
+Missiles.SetCritical(0)
+Missiles.SetTargetable(0)
+Missiles.SetPrimary(1)
+Missiles.SetPosition(0.000000, 0.062500, 0.000000)
+Missiles.SetPosition2D(64.000000, 10.000000)
+Missiles.SetRepairComplexity(1.000000)
+Missiles.SetDisabledPercentage(1.250000)
+Missiles.SetRadius(0.090000)
+Missiles.SetNormalPowerPerSecond(0.000000)
+Missiles.SetWeaponSystemType(Missiles.WST_TORPEDO)
+Missiles.SetSingleFire(0)
+Missiles.SetAimedWeapon(1)
+kFiringChainString = App.TGString()
+kFiringChainString.SetString("")
+Missiles.SetFiringChainString(kFiringChainString)
+Missiles.SetMaxTorpedoes(0, 0)
+Missiles.SetTorpedoScript(0, "Tactical.Projectiles.A2AMissiles2")
+Missiles.SetNumAmmoTypes(1)
+App.g_kModelPropertyManager.RegisterLocalTemplate(Missiles)
 
 # Property load function.
 def LoadPropertySet(pObj):
@@ -346,6 +369,9 @@ def LoadPropertySet(pObj):
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
 	prop = App.g_kModelPropertyManager.FindByName("FirstPersonCamera", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	if (prop != None):
+		pObj.AddToSet("Scene Root", prop)
+	prop = App.g_kModelPropertyManager.FindByName("Missiles", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
 	prop = App.g_kModelPropertyManager.FindByName("Rotational Thruster 1", App.TGModelPropertyManager.LOCAL_TEMPLATES)

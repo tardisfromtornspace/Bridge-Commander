@@ -30,7 +30,8 @@
 # This main FTL method check is stored inside an "Alternate-Warp-FTL" dictionary, which is a script that should be located at scripts/Custom/Techs/AlternateSubModelFTL.py. While this sub-tech can work totally fine without such module installed, or even just act on hardpoint properties alone (including a ship subsystem that contains "jumpspace drive" or "jump-space drive", case insensitive, and another called "TransDimensional Drive" case-sensitive, on the hardpoint will suffice), it is recommended to have it.
 # On this case, due to that, only the lines marked with "# (#)" are needed for nBSGDimensionalJump to work, but the final parent technology may require more:
 # "nBSGDimensionalJump": is the name of the key. This is the bare minimum for the technology to work
-# "Nacelles": is the name of a key whose value indicates a list of which warp engine property children (nacelles) are part of the nBSGDimensionalJump system. If all are disabled/destroyed, nBSGDimensionalJump will not engage. If this field does not exist or "Nacelles": [] it skips this disabled check.
+# "WNacelles": is the name of a key whose value indicates a list of which warp engine property children (nacelles) are part of the nBSGDimensionalJump system. If all are disabled/destroyed, nBSGDimensionalJump will not engage. If this field does not exist or "WNacelles": [] it skips this disabled check.
+# "Nacelles": is the name of a key whose value indicates a list of which hardpoint properties (nacelles) are part of the nBSGDimensionalJump system. If all are disabled/destroyed, nBSGDimensionalJump will not engage. If this field does not exist or "Nacelles": [] it skips this disabled check. Only use this field if your hardpoint does not allow you to have a primary warp control subsystem, else use Nacelles as it is more efficient.
 # "Core": is the name of a key whose value indicates a list of which hardpoint properties (not nacelles) are part of the nBSGDimensionalJump system. If all are disabled/destroyed, nBSGDimensionalJumpDrive will not engage either. If this field does not exist, it wil check for all subsystems with "quantum jumpspace drive" or "quantum jump-space drive", case insensitive. Use "Core": [] to skip this check.
 # Subsystems note: when editing the hardpoint, you can also add another hardpoint property called "TransDimensional Drive" to change this FTL effects and behaviour slightly (instead of a vortex-like animation at great speeds, it's a big silent rotund flash with barely any movement). Same with "Hyperspace Cloak" (will not use any flashes and will actually try to make the ship cloak and decloak and will use shadow sounds).
 # TO-DO CHANGE THIS --> Also, important note, this mod uses additional systems for GalaxyCharts, "Custom.GalaxyCharts.TravelerSystems.nBSGDimensionalJumpDriveTunnelTravelSet" and "Custom.GalaxyCharts.TravelerSystems.AInBSGDimensionalJumpDriveTunnelTravelSet", with "Custom.GalaxyCharts.TravelerSystems.nBSGDimensionalJumpDriveTunnelTravelSet_S" being optional but highly recommended to have.
@@ -40,7 +41,7 @@
 Foundation.ShipDef.EAOmega.dTechs = { # (#)
 	"Alternate-Warp-FTL": { # (#)
 		"Setup": { # (#)
-			"nBSGDimensionalJump": {	"Nacelles": ["Dimensional Jump Engine"], "Core": ["Tylium Core"], "Cooldown Time": 33 * 60}, # (#)
+			"nBSGDimensionalJump": {	"WNacelles": [], "Nacelles": ["Dimensional Jump Engine"], "Core": ["Tylium Core"], "Cooldown Time": 33 * 60}, # (#)
 			"Body": "VasKholhr_Body",
 			"NormalModel":          shipFile,
 			"WarpModel":          "VasKholhr_WingUp",
@@ -332,7 +333,7 @@ def findShipInstance(pShip):
 def IsShipEquipped(pShip):
 	debug(__name__ + ", IsShipEquipped")
 
-	pInstance, pInstanceDict, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, delay = nBSGDimensionalJumpBasicConfigInfo(pShip)
+	pInstance, pInstanceDict, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, delay, specificNacelleWHPList = nBSGDimensionalJumpBasicConfigInfo(pShip)
 	pInstance = findShipInstance(pShip)
 	if pInstance:
 		if pInstanceDict.has_key("Alternate-Warp-FTL") and pInstanceDict["Alternate-Warp-FTL"].has_key("Setup") and pInstanceDict["Alternate-Warp-FTL"]["Setup"].has_key("nBSGDimensionalJump"): # You need to add a foundation technology to this vessel "AlternateSubModelFTL"
@@ -376,6 +377,7 @@ def nBSGDimensionalJumpBasicConfigInfo(pShip):
 	pInstance = findShipInstance(pShip) # On this case, IsShipEquipped(pShip) already checked this for us - HOWEVER do not forget to check if you modify the script
 	pInstancedict = None
 	specificNacelleHPList = None
+	specificNacelleWHPList = []
 	specificCoreHPList = None
 	delay = 15 * 60
 	if pInstance:
@@ -383,6 +385,8 @@ def nBSGDimensionalJumpBasicConfigInfo(pShip):
 		if pInstancedict.has_key("Alternate-Warp-FTL") and pInstancedict["Alternate-Warp-FTL"].has_key("Setup") and pInstancedict["Alternate-Warp-FTL"]["Setup"].has_key("nBSGDimensionalJump"):
 			if pInstancedict["Alternate-Warp-FTL"]["Setup"]["nBSGDimensionalJump"].has_key("Nacelles"): # Use: if the tech has this field, use it. Must be a list. "[]" would mean that this field is skipped during checks.
 				specificNacelleHPList = pInstancedict["Alternate-Warp-FTL"]["Setup"]["nBSGDimensionalJump"]["Nacelles"]
+			if pInstancedict["Alternate-Warp-FTL"]["Setup"]["nBSGDimensionalJump"].has_key("WNacelles"): # Use: if the tech has this field, use it. Must be a list. "[]" would mean that this field is skipped during checks.
+				specificNacelleWHPList = pInstancedict["Alternate-Warp-FTL"]["Setup"]["nBSGDimensionalJump"]["WNacelles"]
 			if pInstancedict["Alternate-Warp-FTL"]["Setup"]["nBSGDimensionalJump"].has_key("Core"): # Use: if the tech has this field, use it. Must be a list. "[]" would mean that this field is skipped during checks.
 				specificCoreHPList = pInstancedict["Alternate-Warp-FTL"]["Setup"]["nBSGDimensionalJump"]["Core"]
 			if pInstancedict["Alternate-Warp-FTL"]["Setup"]["nBSGDimensionalJump"].has_key("Cooldown Time"): # Use: if the tech has this field, use it. Must be a number.
@@ -390,7 +394,7 @@ def nBSGDimensionalJumpBasicConfigInfo(pShip):
 
 	hardpointProtoNames, hardpointProtoBlacklist = AuxProtoElementNames()
 
-	return pInstance, pInstancedict, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, delay
+	return pInstance, pInstancedict, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, delay, specificNacelleWHPList
 
 # This is just another auxiliar function I made for this
 def nBSGDimensionalJumpDisabledCalculations(type, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, pSubsystem, pShip, justFindOne=0):
@@ -539,7 +543,7 @@ def afterGlowFTLC(pShip):
 	debug(__name__ + ", afterGlowFTL")
 	try:
 		if pShip != None:
-			pInstance, pInstancedict, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, delay = nBSGDimensionalJumpBasicConfigInfo(pShip)
+			pInstance, pInstancedict, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, delay, specificNacelleWHPList = nBSGDimensionalJumpBasicConfigInfo(pShip)
 			if pInstance != None:
 				InstateFTLStrCooldown(pInstance, remove=1) # No longer stretching
 				#TO-DO UNCOMMENT THIS InstateFTLCooldown(pInstance, delay)
@@ -577,13 +581,33 @@ def CanTravelShip(pShip):
 					App.g_kLocalizationManager.Unload (pDatabase)
 		return "This ship is not equipped with Kobollian FTL Jump Drive"
 
-	pInstance, pInstancedict, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, delay = nBSGDimensionalJumpBasicConfigInfo(pShip)
+	pInstance, pInstancedict, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, delay, specificNacelleWHPList = nBSGDimensionalJumpBasicConfigInfo(pShip)
 
 	pWarpEngines = pShip.GetWarpEngineSubsystem()
-	if (specificNacelleHPList != None and len(specificNacelleHPList) > 0):
-		totalnBSGDimensionalJumpEngines, onlinenBSGDimensionalJumpEngines = nBSGDimensionalJumpDisabledCalculations("Nacelle", specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, pWarpEngines, pShip, 1)
+	if (specificNacelleWHPList != None and len(specificNacelleWHPList) > 0):
+		totalnBSGDimensionalJumpEngines, onlinenBSGDimensionalJumpEngines = nBSGDimensionalJumpDisabledCalculations("Nacelle", specificNacelleWHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, pWarpEngines, pShip, 1)
 
 		if totalnBSGDimensionalJumpEngines <= 0 or onlinenBSGDimensionalJumpEngines <= 0:
+			if bIsPlayer == 1:
+				if pHelm:
+					App.CharacterAction_Create(pHelm, App.CharacterAction.AT_SAY_LINE, "CantWarp1", None, 1).Play()
+				else:
+					# No character, display subtitle only.
+					pDatabase = App.g_kLocalizationManager.Load ("data/TGL/Bridge Crew General.tgl")
+					if pDatabase:
+						pSequence = App.TGSequence_Create ()
+						pSubtitleAction = App.SubtitleAction_Create (pDatabase, "CantWarp1")
+						pSubtitleAction.SetDuration (3.0)
+						pSequence.AddAction (pSubtitleAction)
+						pSequence.Play ()
+						App.g_kLocalizationManager.Unload (pDatabase)
+
+			return "Kobollian FTL Drive Engines disabled"
+
+	if (specificNacelleHPList != None and len(specificNacelleHPList) > 0):
+		totalnBSGDimensionalJumpCores, onlinenBSGDimensionalJumpCores = nBSGDimensionalJumpDisabledCalculations("Core", specificNacelleHPList, specificNacelleHPList, hardpointProtoNames, hardpointProtoBlacklist, pWarpEngines, pShip, 1)
+
+		if totalnBSGDimensionalJumpCores <= 0 or onlinenBSGDimensionalJumpCores <= 0:
 			if bIsPlayer == 1:
 				if pHelm:
 					App.CharacterAction_Create(pHelm, App.CharacterAction.AT_SAY_LINE, "CantWarp1", None, 1).Play()
@@ -645,7 +669,7 @@ def CanContinueTravelling(self): # TO-DO UPDATE
 	if not isEquipped:
 		bStatus = 0
 	else:
-		pInstance, pInstancedict, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, delay = nBSGDimensionalJumpBasicConfigInfo(pShip)
+		pInstance, pInstancedict, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, delay, specificNacelleWHPList = nBSGDimensionalJumpBasicConfigInfo(pShip)
 		try:
 			InstateFTLStrCooldown(pInstance, remove=-1)
 			timeR = AreWeOnFTLStretch(pInstance)
@@ -1003,47 +1027,49 @@ def nBSGDimensionalJumpFlash(pAction, pShipID, sType, sRace, sparkSize=5, sFile 
 
 			LoadGFX(4, 4, sFile)
 
-			pAttachTo = pShip.GetContainingSet().GetEffectRoot()
-			shipR = pShip.GetRadius()
-			fiSize = shipR * sparkSize # TO-DO WE MAY NEED TO TWEAK THIS FOR EACH SHIP AS A CASE-BY-CASE BASIS
-			shipNode = pShip.GetNode() # NiPoint3
-			frontDir = App.TGPoint3_GetModelForward() #TGPoint3
-			shipFwd = TGPoint3ToNiPoint3(frontDir, shipR) # NiPoint3
-			pEmitFrom = App.TGModelUtils_CastNodeToAVObject(shipNode) # TO-DO ADD pS
+			pSet = pShip.GetContainingSet()
+			if pSet:
+				pAttachTo = pSet.GetEffectRoot()
+				shipR = pShip.GetRadius()
+				fiSize = shipR * sparkSize # TO-DO WE MAY NEED TO TWEAK THIS FOR EACH SHIP AS A CASE-BY-CASE BASIS
+				shipNode = pShip.GetNode() # NiPoint3
+				frontDir = App.TGPoint3_GetModelForward() #TGPoint3
+				shipFwd = TGPoint3ToNiPoint3(frontDir, shipR) # NiPoint3
+				pEmitFrom = App.TGModelUtils_CastNodeToAVObject(shipNode) # TO-DO ADD pS
 
-			try:
-				pEffect = CreateDetachedElectricExplosion(colorKey[0], colorKey[1], colorKey[2], fiSize, 1, sFile, pEmitFrom, pAttachTo, fFrequency=1,fEmitLife=1,fSpeed=1, fBrightness=0.7, vEmitPos = shipFwd, vEmitDir    = App.NiPoint3(0, -1, 0)) # TO-DO ADD OTHER STUFF
+				try:
+					pEffect = CreateDetachedElectricExplosion(colorKey[0], colorKey[1], colorKey[2], fiSize, 1, sFile, pEmitFrom, pAttachTo, fFrequency=1,fEmitLife=1,fSpeed=1, fBrightness=0.7, vEmitPos = shipFwd, vEmitDir    = App.NiPoint3(0, -1, 0)) # TO-DO ADD OTHER STUFF
 
-				#import Custom.NanoFXv2.NanoFX_ScriptActions
-				#pEffect = Custom.NanoFXv2.NanoFX_ScriptActions.CreateControllerFX(sFile,
-				#									pEmitFrom, 
-				#									pAttachTo, 
-				#									fSize = fiSize, 
-				#									vEmitPos    = shipFwd, 
-				#									vEmitDir    = App.NiPoint3(0, -1, 0),
-				#									bInheritVel = 1,
-				#									bDetach     = 0,
-				#									fFrequency = 1,
-				#									fLifeTime = 1,
-				#									fEmitVel = None,
-				#									fVariance = 150.0,
-				#									fDamping    = None,
-				#									vGravity    = None,
-				#									iTiming = 72,
-				#									sType = "Plasma",
-				#									fRed = colorKey[0], 
-				#									fGreen = colorKey[1], 
-				#									fBlue = colorKey[2],
-				#									fBrightness = 0.90) 
+					#import Custom.NanoFXv2.NanoFX_ScriptActions
+					#pEffect = Custom.NanoFXv2.NanoFX_ScriptActions.CreateControllerFX(sFile,
+					#									pEmitFrom, 
+					#									pAttachTo, 
+					#									fSize = fiSize, 
+					#									vEmitPos    = shipFwd, 
+					#									vEmitDir    = App.NiPoint3(0, -1, 0),
+					#									bInheritVel = 1,
+					#									bDetach     = 0,
+					#									fFrequency = 1,
+					#									fLifeTime = 1,
+					#									fEmitVel = None,
+					#									fVariance = 150.0,
+					#									fDamping    = None,
+					#									vGravity    = None,
+					#									iTiming = 72,
+					#									sType = "Plasma",
+					#									fRed = colorKey[0], 
+					#									fGreen = colorKey[1], 
+					#									fBlue = colorKey[2],
+					#									fBrightness = 0.90) 
 				
-				if pEffect:
-					fEffect = App.EffectAction_Create(pEffect)
-					if fEffect:
-						fEffectList.append(fEffect)
-					#fEffectList.append(pEffect)
-			except:
-				print "nBSGDimensionalJump TravellingMethod: error while calling nBSGDimensionalJumpEnterFlash:"
-				traceback.print_exc()
+					if pEffect:
+						fEffect = App.EffectAction_Create(pEffect)
+						if fEffect:
+							fEffectList.append(fEffect)
+						#fEffectList.append(pEffect)
+				except:
+					print "nBSGDimensionalJump TravellingMethod: error while calling nBSGDimensionalJumpEnterFlash:"
+					traceback.print_exc()
 
 	except:
 		print "nBSGDimensionalJump TravellingMethod: error while calling nBSGDimensionalJumpEnterFlash:"
@@ -1289,7 +1315,9 @@ def SetupSequenceISI(pShip=None):
 
 	# Get the destination set name from the module name, if applicable.
 	pcDest = None
-	pcDestModule = pPlayerSet.GetRegionModule()
+	pcDestModule = None
+	if pPlayerSet:
+		pcDestModule = pPlayerSet.GetRegionModule()
 	if (pcDestModule != None):
 		pcDest = pcDestModule[string.rfind(pcDestModule, ".") + 1:]
 		if (pcDest == None):
@@ -1564,9 +1592,6 @@ def SetupSequence(self):
 		# Force a noninteractive cinematic view in space..
 		pCinematicStart = App.TGScriptAction_Create("Actions.CameraScriptActions", "StartCinematicMode", 0)
 		pEngageWarpSeq.AddAction(pCinematicStart, None)
-
-		pWarpSoundAction0 = App.TGScriptAction_Create(__name__, "PlaynBSGDimensionalJumpSoundI", pShipID, "Enter Warp", sRace)
-		pEngageWarpSeq.AddAction(pWarpSoundAction0, None, 0)
 
 		pDisallowInput = App.TGScriptAction_Create("MissionLib", "RemoveControl")
 		pEngageWarpSeq.AddAction(pDisallowInput, pCinematicStart)

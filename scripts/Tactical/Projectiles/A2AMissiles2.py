@@ -53,7 +53,7 @@ def GetName():
 	return("Energy Weapons")
 
 def GetDamage():
-	return 0.0
+	return 0.01
 
 def GetGuidanceLifetime():
 	return 0.0

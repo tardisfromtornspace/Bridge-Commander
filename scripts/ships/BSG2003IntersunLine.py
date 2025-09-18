@@ -7,8 +7,8 @@ def GetShipStats():
 		"FilenameMed": "data/Models/Ships/IntersunLine/IntersunLine.nif",
 		"FilenameLow": "data/Models/Ships/IntersunLine/IntersunLine.nif",
 
-		"Name": "IntersunLine",
-		"HardpointFile": "IntersunLine",
+		"Name": "BSG2003IntersunLine",
+		"HardpointFile": "BSG2003IntersunLine",
 		"Species": Multiplayer.SpeciesToShip.UNKNOWN
 	 }
 	return kShipStats

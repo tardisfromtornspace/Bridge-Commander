@@ -783,6 +783,29 @@ AftPulse2.SetArcHeightAngles(-1.047198, 1.047198)
 AftPulse2.SetCooldownTime(0.300000)
 AftPulse2.SetModuleName("Tactical.Projectiles.GracePulse")
 App.g_kModelPropertyManager.RegisterLocalTemplate(AftPulse2)
+#################################################
+mvamInfiniteFix = App.TorpedoSystemProperty_Create("MVAM Infinite Fix")
+
+mvamInfiniteFix.SetMaxCondition(1.000000)
+mvamInfiniteFix.SetCritical(0)
+mvamInfiniteFix.SetTargetable(0)
+mvamInfiniteFix.SetPrimary(1)
+mvamInfiniteFix.SetPosition(0.000000, 0.000000, 0.000000)
+mvamInfiniteFix.SetPosition2D(64.000000, 64.000000)
+mvamInfiniteFix.SetRepairComplexity(1.000000)
+mvamInfiniteFix.SetDisabledPercentage(1.500000)
+mvamInfiniteFix.SetRadius(0.250000)
+mvamInfiniteFix.SetNormalPowerPerSecond(0.000000)
+mvamInfiniteFix.SetWeaponSystemType(mvamInfiniteFix.WST_TORPEDO)
+mvamInfiniteFix.SetSingleFire(1)
+mvamInfiniteFix.SetAimedWeapon(0)
+kFiringChainString = App.TGString()
+kFiringChainString.SetString("")
+mvamInfiniteFix.SetFiringChainString(kFiringChainString)
+mvamInfiniteFix.SetMaxTorpedoes(0, 0)
+mvamInfiniteFix.SetTorpedoScript(0, "Tactical.Projectiles.GracePulse")
+mvamInfiniteFix.SetNumAmmoTypes(1)
+App.g_kModelPropertyManager.RegisterLocalTemplate(mvamInfiniteFix)
 
 # Property load function.
 def LoadPropertySet(pObj):
@@ -878,5 +901,8 @@ def LoadPropertySet(pObj):
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
 	prop = App.g_kModelPropertyManager.FindByName("FirstPersonCamera", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	if (prop != None):
+		pObj.AddToSet("Scene Root", prop)
+	prop = App.g_kModelPropertyManager.FindByName("MVAM Infinite Fix", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)

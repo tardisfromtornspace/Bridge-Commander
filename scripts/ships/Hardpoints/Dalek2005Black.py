@@ -510,25 +510,25 @@ ArmourGenerator.SetDisabledPercentage(0.500000)
 ArmourGenerator.SetRadius(0.000250)
 App.g_kModelPropertyManager.RegisterLocalTemplate(ArmourGenerator)
 #################################################
-Torpedoes = App.TorpedoSystemProperty_Create("Torpedoes")
+Torpedoes = App.TorpedoSystemProperty_Create("MVAM Infinite Fix")
 
-Torpedoes.SetMaxCondition(50000.000000)
+Torpedoes.SetMaxCondition(1.000000)
 Torpedoes.SetCritical(0)
-Torpedoes.SetTargetable(1)
+Torpedoes.SetTargetable(0)
 Torpedoes.SetPrimary(1)
 Torpedoes.SetPosition(0.000000, -0.900000, -0.200000)
 Torpedoes.SetPosition2D(65.000000, 80.000000)
 Torpedoes.SetRepairComplexity(1.000000)
 Torpedoes.SetDisabledPercentage(0.500000)
 Torpedoes.SetRadius(0.014000)
-Torpedoes.SetNormalPowerPerSecond(10.000000)
+Torpedoes.SetNormalPowerPerSecond(0.000000)
 Torpedoes.SetWeaponSystemType(Torpedoes.WST_TORPEDO)
 Torpedoes.SetSingleFire(0)
 Torpedoes.SetAimedWeapon(0)
 kFiringChainString = App.TGString()
 kFiringChainString.SetString("")
 Torpedoes.SetFiringChainString(kFiringChainString)
-Torpedoes.SetMaxTorpedoes(0, 2500)
+Torpedoes.SetMaxTorpedoes(0, 999999)
 Torpedoes.SetTorpedoScript(0, "Tactical.Projectiles.DalekGunstick")
 Torpedoes.SetNumAmmoTypes(1)
 App.g_kModelPropertyManager.RegisterLocalTemplate(Torpedoes)
@@ -817,6 +817,7 @@ ForwardTractor.SetTextureSpeed(0.200000)
 ForwardTractor.SetTextureName("data/Textures/Tactical/CADominion.tga")
 App.g_kModelPropertyManager.RegisterLocalTemplate(ForwardTractor)
 
+
 # Property load function.
 def LoadPropertySet(pObj):
 	"Sets up the object's properties."
@@ -911,5 +912,8 @@ def LoadPropertySet(pObj):
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
 	prop = App.g_kModelPropertyManager.FindByName("FirstPersonCamera", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	if (prop != None):
+		pObj.AddToSet("Scene Root", prop)
+	prop = App.g_kModelPropertyManager.FindByName("MVAM Infinite Fix", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)

@@ -37,7 +37,7 @@ import App
 
 
 ###TO CHANGE: what ships are in this? start with the full ship, then the ones that seperate
-MvamShips = ["DalekGenesisArk", "DalekGenesisArk", "Dalek2005Gold"]
+MvamShips = ["DalekGenesisArk", "DalekGenesisArk", "Dalek2005GoldG1"]
 
 
 #this is to make things less confusing... don't touch this!
@@ -188,7 +188,7 @@ def DalekGenesisArk(pObject, pEvent):
 
 
 ###TO CHANGE: dont forget to change this name too.
-def Dalek2005Gold(pObject, pEvent):
+def Dalek2005GoldG1(pObject, pEvent):
 
 
 	# get the base variables
@@ -201,7 +201,7 @@ def Dalek2005Gold(pObject, pEvent):
 
 
 ###TO CHANGE: change the last word in quotes in the next line to the name of the def
-		Custom.Sneaker.Mvam.Seperation.Seperation(snkMvamModule, "Dalek2005Gold")
+		Custom.Sneaker.Mvam.Seperation.Seperation(snkMvamModule, "Dalek2005GoldG1")
 
 
 	pObject.CallNextHandler(pEvent)

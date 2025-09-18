@@ -65,7 +65,7 @@ SensorArray.SetBaseSensorRange(1700000.000000)
 SensorArray.SetMaxProbes(10)
 App.g_kModelPropertyManager.RegisterLocalTemplate(SensorArray)
 #################################################
-ReactorModule = App.PowerProperty_Create("Reactor Module")
+ReactorModule = App.PowerProperty_Create("Main Reactor Module")
 
 ReactorModule.SetMaxCondition(130000.000000)
 ReactorModule.SetCritical(1)
@@ -2718,7 +2718,7 @@ def LoadPropertySet(pObj):
 	prop = App.g_kModelPropertyManager.FindByName("Engineering", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
-	prop = App.g_kModelPropertyManager.FindByName("Reactor Module", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	prop = App.g_kModelPropertyManager.FindByName("Main Reactor Module", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
 	prop = App.g_kModelPropertyManager.FindByName("Command Room", App.TGModelPropertyManager.LOCAL_TEMPLATES)

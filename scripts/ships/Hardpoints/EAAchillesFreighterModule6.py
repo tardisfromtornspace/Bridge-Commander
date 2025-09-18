@@ -263,6 +263,29 @@ ShuttleBay1.SetRepairComplexity(14.500000)
 ShuttleBay1.SetDisabledPercentage(0.000000)
 ShuttleBay1.SetRadius(1.300000)
 App.g_kModelPropertyManager.RegisterLocalTemplate(ShuttleBay1)
+#################################################
+MissileSys = App.TorpedoSystemProperty_Create("MVAM Infinite Fix")
+
+MissileSys.SetMaxCondition(1.000000)
+MissileSys.SetCritical(0)
+MissileSys.SetTargetable(0)
+MissileSys.SetPrimary(1)
+MissileSys.SetPosition(0.000000, 0.000000, 0.000000)
+MissileSys.SetPosition2D(10.000000, 20.000000)
+MissileSys.SetRepairComplexity(1.000000)
+MissileSys.SetDisabledPercentage(1.500000)
+MissileSys.SetRadius(0.002500)
+MissileSys.SetNormalPowerPerSecond(0.000000)
+MissileSys.SetWeaponSystemType(MissileSys.WST_TORPEDO)
+MissileSys.SetSingleFire(0)
+MissileSys.SetAimedWeapon(0)
+kFiringChainString = App.TGString()
+kFiringChainString.SetString("0;Single;1;Dual")
+MissileSys.SetFiringChainString(kFiringChainString)
+MissileSys.SetMaxTorpedoes(0, 0)
+MissileSys.SetTorpedoScript(0, "Tactical.Projectiles.Starfury_FusionMissile")
+MissileSys.SetNumAmmoTypes(1)
+App.g_kModelPropertyManager.RegisterLocalTemplate(MissileSys)
 
 # Property load function.
 def LoadPropertySet(pObj):
@@ -289,5 +312,8 @@ def LoadPropertySet(pObj):
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
 	prop = App.g_kModelPropertyManager.FindByName("EAAchillesFreighterModule6", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	if (prop != None):
+		pObj.AddToSet("Scene Root", prop)
+	prop = App.g_kModelPropertyManager.FindByName("MVAM Infinite Fix", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)

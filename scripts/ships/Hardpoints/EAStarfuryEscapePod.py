@@ -381,6 +381,29 @@ GraplingClaw.SetPerimeterTile(1.000000)
 GraplingClaw.SetTextureSpeed(0.200000)
 GraplingClaw.SetTextureName("data/Textures/Tactical/TractorBeam.tga")
 App.g_kModelPropertyManager.RegisterLocalTemplate(GraplingClaw)
+#################################################
+MissileSys = App.TorpedoSystemProperty_Create("Missile Sys")
+
+MissileSys.SetMaxCondition(4.000000)
+MissileSys.SetCritical(0)
+MissileSys.SetTargetable(0)
+MissileSys.SetPrimary(1)
+MissileSys.SetPosition(0.000000, 0.000000, 0.000000)
+MissileSys.SetPosition2D(10.000000, 20.000000)
+MissileSys.SetRepairComplexity(1.000000)
+MissileSys.SetDisabledPercentage(1.500000)
+MissileSys.SetRadius(0.002500)
+MissileSys.SetNormalPowerPerSecond(0.000000)
+MissileSys.SetWeaponSystemType(MissileSys.WST_TORPEDO)
+MissileSys.SetSingleFire(0)
+MissileSys.SetAimedWeapon(0)
+kFiringChainString = App.TGString()
+kFiringChainString.SetString("0;Single;1;Dual")
+MissileSys.SetFiringChainString(kFiringChainString)
+MissileSys.SetMaxTorpedoes(0, 8)
+MissileSys.SetTorpedoScript(0, "Tactical.Projectiles.Starfury_FusionMissile")
+MissileSys.SetNumAmmoTypes(1)
+App.g_kModelPropertyManager.RegisterLocalTemplate(MissileSys)
 
 # Property load function.
 def LoadPropertySet(pObj):
@@ -407,5 +430,8 @@ def LoadPropertySet(pObj):
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
 	prop = App.g_kModelPropertyManager.FindByName("Backup Drive", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	if (prop != None):
+		pObj.AddToSet("Scene Root", prop)
+	prop = App.g_kModelPropertyManager.FindByName("Missile Sys", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)

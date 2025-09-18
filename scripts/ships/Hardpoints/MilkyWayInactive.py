@@ -211,6 +211,57 @@ Engineering.SetNormalPowerPerSecond(0.000000)
 Engineering.SetMaxRepairPoints(0.001000)
 Engineering.SetNumRepairTeams(1)
 App.g_kModelPropertyManager.RegisterLocalTemplate(Engineering)
+#################################################
+EventHorizonOEP = App.ObjectEmitterProperty_Create("Event Horizon OEP")
+
+EventHorizonOEPForward = App.TGPoint3()
+EventHorizonOEPForward.SetXYZ(0.000000, 1.000000, 0.000000)
+EventHorizonOEPUp = App.TGPoint3()
+EventHorizonOEPUp.SetXYZ(0.000000, 0.000000, 1.000000)
+EventHorizonOEPRight = App.TGPoint3()
+EventHorizonOEPRight.SetXYZ(1.000000, 0.000000, 0.000000)
+EventHorizonOEP.SetOrientation(EventHorizonOEPForward, EventHorizonOEPUp, EventHorizonOEPRight)
+EventHorizonOEPPosition = App.TGPoint3()
+EventHorizonOEPPosition.SetXYZ(0.000000, 0.200000, 0.000000)
+EventHorizonOEP.SetPosition(EventHorizonOEPPosition)
+EventHorizonOEP.SetEmittedObjectType(EventHorizonOEP.OEP_SHUTTLE)
+App.g_kModelPropertyManager.RegisterLocalTemplate(EventHorizonOEP)
+#################################################
+EventHorizon = App.HullProperty_Create("Event Horizon")
+
+EventHorizon.SetMaxCondition(1000000.000000)
+EventHorizon.SetCritical(0)
+EventHorizon.SetTargetable(0)
+EventHorizon.SetPrimary(0)
+EventHorizon.SetPosition(0.000000, 0.200000, 0.000000)
+EventHorizon.SetPosition2D(0.000000, 0.000000)
+EventHorizon.SetRepairComplexity(1.000000)
+EventHorizon.SetDisabledPercentage(2.000000)
+EventHorizon.SetRadius(10.000000)
+App.g_kModelPropertyManager.RegisterLocalTemplate(EventHorizon)
+#################################################
+mvamInfiniteFix = App.TorpedoSystemProperty_Create("MVAM Infinite Fix")
+
+mvamInfiniteFix.SetMaxCondition(1.000000)
+mvamInfiniteFix.SetCritical(0)
+mvamInfiniteFix.SetTargetable(0)
+mvamInfiniteFix.SetPrimary(1)
+mvamInfiniteFix.SetPosition(0.000000, 0.000000, 0.000000)
+mvamInfiniteFix.SetPosition2D(64.000000, 64.000000)
+mvamInfiniteFix.SetRepairComplexity(1.000000)
+mvamInfiniteFix.SetDisabledPercentage(1.500000)
+mvamInfiniteFix.SetRadius(0.250000)
+mvamInfiniteFix.SetNormalPowerPerSecond(0.000000)
+mvamInfiniteFix.SetWeaponSystemType(mvamInfiniteFix.WST_TORPEDO)
+mvamInfiniteFix.SetSingleFire(1)
+mvamInfiniteFix.SetAimedWeapon(0)
+kFiringChainString = App.TGString()
+kFiringChainString.SetString("")
+mvamInfiniteFix.SetFiringChainString(kFiringChainString)
+mvamInfiniteFix.SetMaxTorpedoes(0, 0)
+mvamInfiniteFix.SetTorpedoScript(0, "Tactical.Projectiles.Drones")
+mvamInfiniteFix.SetNumAmmoTypes(1)
+App.g_kModelPropertyManager.RegisterLocalTemplate(mvamInfiniteFix)
 
 # Property load function.
 def LoadPropertySet(pObj):
@@ -254,3 +305,13 @@ def LoadPropertySet(pObj):
 	prop = App.g_kModelPropertyManager.FindByName("MilkyWayInactive", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
+	prop = App.g_kModelPropertyManager.FindByName("Event Horizon OEP", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	if (prop != None):
+		pObj.AddToSet("Scene Root", prop)
+	prop = App.g_kModelPropertyManager.FindByName("Event Horizon", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	if (prop != None):
+		pObj.AddToSet("Scene Root", prop)
+	prop = App.g_kModelPropertyManager.FindByName("MVAM Infinite Fix", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	if (prop != None):
+		pObj.AddToSet("Scene Root", prop)
+

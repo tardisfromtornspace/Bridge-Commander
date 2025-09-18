@@ -1,4 +1,7 @@
 ==Changelog==
+1.7.2 -
+   Fixes:
+   * Updated certain hardpoints to ensure certain versions of Mvam infinite can indeed be done infinetely.
 1.7.1 -
    Fixes:
    * Updated Turrets to 1.13, resolving one potential if unlikely case of looping.

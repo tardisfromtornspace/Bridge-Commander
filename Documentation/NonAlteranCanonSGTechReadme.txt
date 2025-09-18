@@ -1,4 +1,10 @@
 ==Changelog==
+1.2.1 -
+   Updates:
+   * Made the Stargate Network for GC more non-ship-based, to make it easier for the AI.
+   * Made Anubis Superweapon emplacements a bit clearer.
+   Fixes:
+   * Modified multiple Mvam-related hardpoints to allow some Mvam infinite versions to properly Mvam infinitely.
 1.2.0 -
    Updates:
    * Updated SimulatedPointDefence to 1.0 to allow cleaner logic and cleanup.
