@@ -7,8 +7,8 @@ def GetShipStats():
 		"FilenameMed": "data/Models/Ships/MineShp/MineShp.nif",
 		"FilenameLow": "data/Models/Ships/MineShp/MineShp.nif",
 
-		"Name": "MineShp",
-		"HardpointFile": "MineShp",
+		"Name": "BSG2003MineShp",
+		"HardpointFile": "BSG2003MineShp",
 		"Species": Multiplayer.SpeciesToShip.UNKNOWN
 	 }
 	return kShipStats

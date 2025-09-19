@@ -42,7 +42,7 @@ Foundation.ShipDef.BSG2003MkXRaider.dTechs = {
 	'Simulated Point Defence' : { "Distance": 15.0, "InnerDistance": 2.0, "Effectiveness": 0.45, "LimitTurn": -0.8, "LimitSpeed": 25, "LimitDamage": "-90", "Period": 2.0, "MaxNumberTorps": 1, "Pulse": {"Priority": 1}},
 	"Alternate-Warp-FTL": {
 		"Setup": {
-			"nBSGDimensionalJump": {	"Nacelles": ["Jump Sys"], "Core": ["Tylium Energizer"], "Cooldown Time": 15 * 60},
+			"nBSGDimensionalJump": {	"Nacelles": ["FTL Drive 1"], "Core": ["Tylium Energizer"], "Cooldown Time": 15 * 60},
 		},
 	},
 }
@@ -59,7 +59,7 @@ Foundation.ShipDef.BSG2003MkXRaider.fCruiseWarp = 6.0
 #                                                                                     #
 # Otherwise, uncomment this and type something in:                                    #
 #                                                                                     #
-Foundation.ShipDef.BSG2003MkXRaider.desc = "The Assault Fighter used by the Cylon Fleet in the First Cylon War."
+Foundation.ShipDef.BSG2003MkXRaider.desc = "The Assault Fighter used by the Cylon Fleet during most of the First Cylon War."
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

@@ -6,8 +6,8 @@ def GetShipStats():
 		"FilenameHigh": "data/models/ships/Mk10Raider/Mk10Raider.nif",
 		"FilenameMed": "data/models/ships/Mk10Raider/Mk10Raider.nif",
 		"FilenameLow": "data/models/ships/Mk10Raider/Mk10Raider.nif",
-		"Name": "MkXRaider",
-		"HardpointFile": "mkXraider",
+		"Name": "BSG2003MkXRaider",
+		"HardpointFile": "BSG2003MkXraider",
 		"Species": Multiplayer.SpeciesToShip.SHUTTLE
 	 }
 	return kShipStats

@@ -65,3 +65,16 @@ def GetMaxAngularAccel():
 
 def GetLifetime():
 	return 15.0
+
+def HullDmgMultiplier():
+	return 1.1
+
+def ShieldDmgMultiplier():
+	return 1.1
+
+try:
+	modMERailgunWeaponTorp = __import__("Custom.Techs.MERailgunWeapon")
+	if(modMERailgunWeaponTorp):
+		modMERailgunWeaponTorp.oMERailgunWeaponTorp.AddTorpedo(__name__)
+except:
+	print "MERailgunWeapon projectile script not installed, or you are missing Foundation Tech"

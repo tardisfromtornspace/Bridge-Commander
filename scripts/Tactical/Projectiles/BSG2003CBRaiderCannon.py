@@ -6,7 +6,7 @@
 #	Script for filling in the attributes of disruptor blasts.
 #	
 #	Created:	11/3/00 -	Erik Novales
-#                       10/9/2025 -    CharaToLoki
+#       Modified:       10/9/2025 -    CharaToLoki
 #                                           Power and tech adjustments
 ###############################################################################
 
@@ -24,13 +24,13 @@ import App
 def Create(pTorp):
 
 	kOuterShellColor = App.TGColorA()
-	kOuterShellColor.SetRGBA(1.000000, 0.380392, 0.000000, 1.000000)	
+	kOuterShellColor.SetRGBA(84.0 / 255.0, 255.0 / 255.0, 255.0 / 255.0, 1.000000)	
 	kOuterCoreColor = App.TGColorA()
-	kOuterCoreColor.SetRGBA(1.000000, 0.870588, 0.662745, 1.000000)
+	kOuterCoreColor.SetRGBA(255.0 / 255.0, 255.0 / 255.0, 255.0 / 255.0, 1.000000)
 
 	pTorp.CreateDisruptorModel(kOuterShellColor,kOuterCoreColor, 0.08, 0.01) 	
 	pTorp.SetDamage( GetDamage() )
-	pTorp.SetDamageRadiusFactor(0.25)
+	pTorp.SetDamageRadiusFactor(0.025)
 	pTorp.SetGuidanceLifetime( GetGuidanceLifetime() )
 	pTorp.SetMaxAngularAccel( GetMaxAngularAccel() )
 	pTorp.SetLifetime( GetLifetime() )
@@ -46,22 +46,22 @@ def GetLaunchSpeed():
 	return(30.0)
 
 def GetLaunchSound():
-	return("ViperCanons")
+	return("RaiderCanons")
 
 def GetPowerCost():
 	return(10.0)
 
 def GetName():
-	return("Viper Cannon")
+	return("Tracer Cannon")
 
 def GetDamage():
-	return 0.5
+	return 1.0
 
 def GetGuidanceLifetime():
 	return 0.0
 
 def GetMaxAngularAccel():
-	return 0.125
+	return 4.0
 
 def GetLifetime():
 	return 15.0
@@ -70,7 +70,7 @@ def HullDmgMultiplier():
 	return 2.0
 
 def ShieldDmgMultiplier():
-	return 3.6
+	return 4.0
 
 try:
 	modMERailgunWeaponTorp = __import__("Custom.Techs.MERailgunWeapon")

@@ -7,8 +7,8 @@ def GetShipStats():
 		"FilenameMed": "data/Models/Ships/MSPlat/MSPlat.nif",
 		"FilenameLow": "data/Models/Ships/MSPlat/MSPlat.nif",
 
-		"Name": "MSPlat",
-		"HardpointFile": "MSPlat",
+		"Name": "BSG2003MSPlat",
+		"HardpointFile": "BSG2003MSPlat",
 		"Species": Multiplayer.SpeciesToShip.UNKNOWN
 	 }
 	return kShipStats
