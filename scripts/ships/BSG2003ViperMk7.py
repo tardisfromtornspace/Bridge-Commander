@@ -6,8 +6,8 @@ def GetShipStats():
 		"FilenameHigh": "data/Models/Ships/ViperMk7/ViperMk7.NIF",
 		"FilenameMed": "data/Models/Ships/ViperMk7/ViperMk7.NIF",
 		"FilenameLow": "data/Models/Ships/ViperMk7/ViperMk7.NIF",
-		"Name": "ViperMk7",
-		"HardpointFile": "ViperMk7",
+		"Name": "BSG2003ViperMk7",
+		"HardpointFile": "BSG2003ViperMk7",
 		"Species": Multiplayer.SpeciesToShip.BIRDOFPREY
 		 }
 	return kShipStats

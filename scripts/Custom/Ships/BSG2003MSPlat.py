@@ -1,7 +1,7 @@
 #######################################################################################
 #  Custom Ship Plugin                                                                 #
-#  Created by BC - Mod Packager                                                       #
-#  Date: 22/10/2006                                                                    #
+#  Created manually                                                                   #
+#  Date: 19/09/2025                                                                   #
 #######################################################################################
 #                                                                                     #
 import Foundation
@@ -40,7 +40,7 @@ Foundation.ShipDef.BSG2003MSPlat = Foundation.ShipDef(abbrev, species, { 'name':
 
 Foundation.ShipDef.BSG2003MSPlat.dTechs = {
 	"AutoTargeting": { "Pulse": [6, 1] },
-	'Simulated Point Defence' : { "Distance": 35.0, "InnerDistance": 4.0, "Effectiveness": 0.15, "LimitTurn": 0.26, "LimitSpeed": 51, "Period": 3.1, "MaxNumberTorps": 1, },
+	'Simulated Point Defence' : { "Distance": 35.0, "InnerDistance": 4.0, "Effectiveness": 0.25, "LimitTurn": 0.26, "LimitSpeed": 51, "Period": 3.1, "MaxNumberTorps": 1, },
 	"Alternate-Warp-FTL": {
 		"Setup": {
 			"nBSGDimensionalJump": {	"Nacelles": ["FTL Coil"], "Core": ["Power Core"], "Cooldown Time": 15 * 60},

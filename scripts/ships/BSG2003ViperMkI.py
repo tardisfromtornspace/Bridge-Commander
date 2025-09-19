@@ -5,8 +5,8 @@ def GetShipStats():
 	kShipStats = {
 		"FilenameHigh": "data/Models/Ships/ViperMk1/ViperMk1.nif",
 		"FilenameLow": "data/Models/Ships/ViperMk1/ViperMk1.nif",
-		"Name": "ViperMkI",
-		"HardpointFile": "ViperMkI",
+		"Name": "BSG2003ViperMkI",
+		"HardpointFile": "BSG2003ViperMkI",
 		"Species": Multiplayer.SpeciesToShip.SHUTTLE
 	 }
 	return kShipStats

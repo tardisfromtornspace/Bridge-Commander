@@ -1,5 +1,4 @@
-# C:\Program Files\Activision\QBR 2.2\Bridge Commander\scripts\ships\Hardpoints\hadesBasestar2003.py
-# This file was automatically generated - modify at your own risk.
+# C:\Program Files\Activision\QBR 2.2\Bridge Commander\scripts\ships\Hardpoints\BSG2003HadesBasestar.py
 # 
 
 import App

@@ -1,5 +1,4 @@
-# C:\Program Files\Activision\Bridge Commander\scripts\ships\Hardpoints\Battlestar.py
-# This file was automatically generated - modify at your own risk.
+# C:\Program Files\Activision\Bridge Commander\scripts\ships\Hardpoints\BSG2003Artemis.py
 # 
 
 import App

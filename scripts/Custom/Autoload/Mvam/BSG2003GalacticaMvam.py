@@ -203,7 +203,7 @@ def Reintegrate(pObject, pEvent):
 	#alright, if this is a legit reintegrate, intCounter will equal 0
 	if (intCounter == 0):
 		import Custom.Sneaker.Mvam.Reintegration
-		Custom.Sneaker.Mvam.Reintegration.Reintegration(snkMvamModule) # If it cannot find pPlayerJunk here, the FIX is to ensure all the ships involved on the Mvam have the same hardpoint properties names in total - that is, ShipToSeparate hardpoint names = ShipSpearated1 hardpoints + ShipSeparated2 hardpoints + .. + ShipSeparatedN hardpoints; and with the same names, so if a subsystem is called "Repair Team 1", then the vessel which inherits that subsystem when separating should have a subsystem called "Repair Team 1" too, and that none of the separated ships has more hardpoints that the Ship to separate from has not.
+		Custom.Sneaker.Mvam.Reintegration.Reintegration(snkMvamModule) # If it cannot find pPlayerJunk here, the FIX is to ensure all the ships involved on the Mvam have a torpedo system property.
 	pObject.CallNextHandler(pEvent)
 
 

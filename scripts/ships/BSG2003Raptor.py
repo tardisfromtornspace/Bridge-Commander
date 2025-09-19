@@ -6,8 +6,8 @@ def GetShipStats():
 		"FilenameHigh": "data/Models/Ships/Raptor/Raptor.NIF",
 		"FilenameMed": "data/Models/Ships/Raptor/Raptor.NIF",
 		"FilenameLow": "data/Models/Ships/Raptor/Raptor.NIF",
-		"Name": "Raptor",
-		"HardpointFile": "Raptor",
+		"Name": "BSG2003Raptor",
+		"HardpointFile": "BSG2003Raptor",
 		"Species": Multiplayer.SpeciesToShip.BIRDOFPREY
 		 }
 	return kShipStats
