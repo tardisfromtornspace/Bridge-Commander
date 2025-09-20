@@ -74,6 +74,7 @@ class BSG2003GalacticaClosed( Carrier.Carrier):
 
         launcher = LauncherManager.GetLauncher( "Port Hangar", pShip)
         group.AddLauncher( "Port Hangar", launcher)
+        launcher.AddLaunchable( "BSG2003Raptor", "ftb.friendlyAI", 9)
         launcher.AddLaunchable( "BSG2003Raptor2", "ftb.friendlyAI", 4)
 
         self.AddLauncher( "Group 1", group)
