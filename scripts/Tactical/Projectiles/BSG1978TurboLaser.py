@@ -53,7 +53,7 @@ def GetName():
 	return("TurboLaser")
 
 def GetDamage():
-	return 100.0
+	return 35.0
 
 def GetGuidanceLifetime():
 	return 0.0

@@ -3,7 +3,7 @@
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
 #         DampeningAOEDefensiveField.py by Alex SL Gato
 #         Version 0.4
-#         21st September 2025
+#         22nd September 2025
 #         Based on scripts\ftb\Tech/Shields.py by MLeo Daalder, Apollo, Dasher, and the rest of the FoundationTechnologies team.
 #         Special Thanks to USS Sovereign for telling me better tips to remove the need of a hardpoint-wise made-up axis.
 #                          
@@ -30,7 +30,7 @@ from bcdebug import debug
 import traceback
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-            "Version": "0.3",
+            "Version": "0.31",
             "License": "LGPL",
             "Description": "Read the small title above for more info"
             }
@@ -48,7 +48,7 @@ try:
 			pShields = pShip.GetShields()
 			shieldHitBroken = 0
 
-			if pEvent.IsHullHit() or not pShields or pShields.IsDisabled():
+			if pEvent.IsHullHit() or not pShields or pShields.IsDisabled() or not pShields.IsOn():
 				return
 
 			# orientation of the impact
@@ -63,7 +63,7 @@ try:
 			myYvalue = abs(kPoint.GetY())
 			myZvalue = abs(kPoint.GetZ())
 
-			distance = math.sqrt((myXvalue ** 2) + (myYvalue ** 2) + (myZvalue ** 2)) # THIS IS 1 IF UNITIZE WORKS TO-DO
+			distance = math.sqrt((myXvalue ** 2) + (myYvalue ** 2) + (myZvalue ** 2))
 
 			pointForward = App.TGPoint3_GetModelForward()
 			pointBackward = App.TGPoint3_GetModelBackward()
@@ -139,34 +139,34 @@ try:
 						pShields.SetCurShields(shieldDir, self.adjustShieldPower(fCurr, fMax, -fDamage/numAvailableShields) )
 
 				return			
-			
-			for shieldField in listaCercanos:
-				shieldDir = shieldField[1]
-				distanceField = shieldField[0]
-				#if shieldDir == listaCercanos[-1][1] and distanceField > listaCercanos[-2][0] and distanceField > ignoreDistancePastThis:
-				#	return
-				fCurr = pShields.GetCurShields(shieldDir)
-				fMax = pShields.GetMaxShields(shieldDir)
-				if fMax > 0 and fCurr/fMax >= collapseLimit and numAvailableShields > 0:
-					distributedDamage = 0
-					#print "shield DAMAGING for shield before ", shieldDir,":", fCurr
-					if distanceField == 0.0: # Absolute hit on the center of this shield, so we know it must deal a third of the damage on the best circumstances and all the damage in the worst case
-						distributedDamage =  maxPercentageDamage * fDamage / (numAvailableShields)
+			else:
+				for shieldField in listaCercanos:
+					shieldDir = shieldField[1]
+					distanceField = shieldField[0]
+					#if shieldDir == listaCercanos[-1][1] and distanceField > listaCercanos[-2][0] and distanceField > ignoreDistancePastThis:
+					#	return
+					fCurr = pShields.GetCurShields(shieldDir)
+					fMax = pShields.GetMaxShields(shieldDir)
+					if fMax > 0 and fCurr/fMax >= collapseLimit and numAvailableShields > 0:
+						distributedDamage = 0
+						#print "shield DAMAGING for shield before ", shieldDir,":", fCurr
+						if distanceField == 0.0: # Absolute hit on the center of this shield, so we know it must deal a third of the damage on the best circumstances and all the damage in the worst case
+							distributedDamage =  maxPercentageDamage * fDamage / (numAvailableShields)
 
-					else:
+						else:
 	
-						#print "partial hit - recalculating damage for shield ", shieldDir, " - distanceField <= ignoreDistancePastThis:", distanceField, "<=", ignoreDistancePastThis
-						if distanceField <= ignoreDistancePastThis: # knowing we are correctly using this, then... I mean with current code it could be left to allow distance up to 2, but I don't want the shield on the other side to be drained normally
+							#print "partial hit - recalculating damage for shield ", shieldDir, " - distanceField <= ignoreDistancePastThis:", distanceField, "<=", ignoreDistancePastThis
+							if distanceField <= ignoreDistancePastThis: # knowing we are correctly using this, then... I mean with current code it could be left to allow distance up to 2, but I don't want the shield on the other side to be drained normally
 
-							reductionDmg = math.asin(distanceField/2.0) * 1.275 * shieldTransferRatio # combination of knowing the radians and adjusting so at pi/2 radians the damage is already reduced to 1/6th
-							distributedDamage = fDamage * ( maxPercentageDamage - reductionDmg) / (numAvailableShields)
-						#else:
-						#	print "I IGNORE SHIELD ", shieldDir
+								reductionDmg = math.asin(distanceField/2.0) * 1.275 * shieldTransferRatio # combination of knowing the radians and adjusting so at pi/2 radians the damage is already reduced to 1/6th
+								distributedDamage = fDamage * ( maxPercentageDamage - reductionDmg) / (numAvailableShields)
+							#else:
+							#	print "I IGNORE SHIELD ", shieldDir
 
-					distributedDamage = self.adjustShieldPower(fCurr, fMax, -distributedDamage)
-					pShields.SetCurShields(shieldDir, distributedDamage)
+						distributedDamage = self.adjustShieldPower(fCurr, fMax, -distributedDamage)
+						pShields.SetCurShields(shieldDir, distributedDamage)
 
-					#print "shield DAMAGING for shield AFTER ", shieldDir,":", distributedDamage
+						#print "shield DAMAGING for shield AFTER ", shieldDir,":", distributedDamage
 
 
 		def adjustShieldPower(self, fCurr, fMax, fDamage):
