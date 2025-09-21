@@ -40,7 +40,7 @@ Foundation.ShipDef.BSG1978Atlantia = Foundation.ShipDef(abbrev, species, { 'name
 
 Foundation.ShipDef.BSG1978Atlantia.dTechs = {
 	"AutoTargeting": { "Pulse": [3, 1] },
-	'Partially Distributed Shields': {"Shield Transfer Ratio": 1, "Max Percentage Damage": 2, "Collapse Threshold": 0.25, "Max Radians": 2.094395},
+	'Partially Distributed Shields': {"Shield Transfer Ratio": 1, "Max Percentage Damage": 2, "Collapse Threshold": 0.05, "Max Radians": 2.094395},
 	"Alternate-Warp-FTL": {
 		"Setup": {
 			"BSG 1978 Ultra-Light-Drive": {	"Nacelles": ["FTL Drive 1", "FTL Drive 2"], "Core": ["Reactor Module"]},
