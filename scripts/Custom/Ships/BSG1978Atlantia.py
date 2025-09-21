@@ -25,8 +25,8 @@ SubMenu = ["Twelve Colonies of Man", "Battlestars"]
 #                                                                                     #
 credits = {
 	'modName': 'BSG1978Atlantia',
-	'author': 'MadJohn',
-	'version': '2.0.5',
+	'author': '',
+	'version': '1.0',
 	'sources': [ 'http://' ],
 	'comments': ''
 }
@@ -43,7 +43,7 @@ Foundation.ShipDef.BSG1978Atlantia.dTechs = {
 	'Partially Distributed Shields': {"Shield Transfer Ratio": 1, "Max Percentage Damage": 2, "Collapse Threshold": 0.05, "Max Radians": 2.094395},
 	"Alternate-Warp-FTL": {
 		"Setup": {
-			"BSG 1978 Ultra-Light-Drive": {	"Nacelles": ["FTL Drive 1", "FTL Drive 2"], "Core": ["Reactor Module"]},
+			"BSG 1978 Ultra-Light-Drive": {	"Nacelles": ["Gravimetric Initiator"], "Core": ["Tylium Energizer"]},
 		},
 	},
 }
@@ -57,7 +57,7 @@ Foundation.ShipDef.BSG1978Atlantia.fCruiseWarp = 2.0
 #                                                                                     #
 # Otherwise, uncomment this and type something in:                                    #
 #                                                                                     #
-Foundation.ShipDef.BSG1978Atlantia.desc = "Atlantia is the battlestar aboard which the Quorum of Twelve met in anticipation of the coming treaty between humanity and the Cylons that would bring to an end the Thousand-Yahren War. "
+Foundation.ShipDef.BSG1978Atlantia.desc = "Atlantia is the battlestar aboard which the Quorum of Twelve met in anticipation of the coming treaty between humanity and the Cylons that would bring to an end the Thousand-Yahren War."
 #                                                                                     #
 #######################################################################################
 #                                                                                     #
