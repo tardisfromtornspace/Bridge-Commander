@@ -5,9 +5,9 @@ def GetShipStats():
 	kShipStats = {
 		"FilenameHigh": "data/Models/Ships/Atlantia/GalaticaBS75.nif",
 		"FilenameLow": "data/Models/Ships/Atlantia/GalaticaBS75.nif",
-		"Name": "Atlantia",
-		"HardpointFile": "GalaticaBS75",
-		"Species": Multiplayer.SpeciesToShip.GALAXY
+		"Name": "BSG1978Atlantia",
+		"HardpointFile": "BSG1978GalacticaBS75",
+		"Species": Multiplayer.SpeciesToShip.UNKNOWN
 	 }
 	return kShipStats
 

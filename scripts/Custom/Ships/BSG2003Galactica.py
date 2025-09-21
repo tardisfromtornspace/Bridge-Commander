@@ -47,11 +47,11 @@ Foundation.ShipDef.BSG2003Galactica.dTechs = {
 			"BodySetScale": 1.0,
 			"NormalSetScale": 1.0,
 			"WarpSetScale": 1.0,
-			"nBSGDimensionalJumpSetScale": 0.1,
+			"nBSGDimensionalJumpSetScale": 1.0,
 			"AttackSetScale": 1.0,
 			"Hardpoints":       {
-				"Port Hanger":  [-5.500000, 1.000000, 0.000000, {"Disabled Percentage" : 0.5}],
-				"Star Hanger":  [5.500000, 1.000000, 0.000000, {"Disabled Percentage" : 0.5}],
+				"Port Hangar":  [-5.500000, 1.000000, 0.000000, {"Disabled Percentage" : 0.5}],
+				"Star Hangar":  [5.500000, 1.000000, 0.000000, {"Disabled Percentage" : 0.5}],
 				"Launch Tube P1":  [-6.900000, 2.900000, -0.620000, {"Disabled Percentage" : 0.5}],
 				"Launch Tube P2":  [-6.950000, 2.150000, -0.620000, {"Disabled Percentage" : 0.5}],
 				"Launch Tube P3":  [-7.000000, 1.020000, -0.620000, {"Disabled Percentage" : 0.5}],
@@ -75,8 +75,8 @@ Foundation.ShipDef.BSG2003Galactica.dTechs = {
 			},
 
 			"nBSGDimensionalJumpHardpoints":       {
-				"Port Hanger":  [-3.750000, -1.000000, -0.750000, {"Disabled Percentage" : 1.5}],
-				"Star Hanger":  [3.750000, -1.000000, -0.750000, {"Disabled Percentage" : 1.5}],
+				"Port Hangar":  [-3.750000, -1.000000, -0.750000, {"Disabled Percentage" : 1.5}],
+				"Star Hangar":  [3.750000, -1.000000, -0.750000, {"Disabled Percentage" : 1.5}],
 				"Launch Tube P1":  [-5.150000, 2.900000, -0.620000, {"Disabled Percentage" : 1.5}],
 				"Launch Tube P2":  [-5.200000, 2.150000, -0.620000, {"Disabled Percentage" : 1.5}],
 				"Launch Tube P3":  [-5.250000, 1.020000, -0.620000, {"Disabled Percentage" : 1.5}],

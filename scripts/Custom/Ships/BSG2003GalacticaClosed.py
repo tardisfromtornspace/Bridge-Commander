@@ -47,11 +47,11 @@ Foundation.ShipDef.BSG2003GalacticaClosed.dTechs = {
 			"BodySetScale": 1.0,
 			"NormalSetScale": 1.0,
 			"WarpSetScale": 1.0,
-			"nBSGDimensionalJumpSetScale": 0.1,
+			"nBSGDimensionalJumpSetScale": 1.0,
 			"AttackSetScale": 1.0,
 			"Hardpoints":       {
-				"Port Hanger":  [-5.500000, 1.000000, 0.000000, {"Disabled Percentage" : 0.5}],
-				"Star Hanger":  [5.500000, 1.000000, 0.000000, {"Disabled Percentage" : 0.5}],
+				"Port Hangar":  [-5.500000, 1.000000, 0.000000, {"Disabled Percentage" : 0.5}],
+				"Star Hangar":  [5.500000, 1.000000, 0.000000, {"Disabled Percentage" : 0.5}],
 				"Launch Tube P1":  [-6.900000, 2.900000, -0.620000, {"Disabled Percentage" : 0.5}],
 				"Launch Tube P2":  [-6.950000, 2.150000, -0.620000, {"Disabled Percentage" : 0.5}],
 				"Launch Tube P3":  [-7.000000, 1.020000, -0.620000, {"Disabled Percentage" : 0.5}],
@@ -75,8 +75,8 @@ Foundation.ShipDef.BSG2003GalacticaClosed.dTechs = {
 			},
 
 			"nBSGDimensionalJumpHardpoints":       {
-				"Port Hanger":  [-3.750000, -1.000000, -0.750000, {"Disabled Percentage" : 1.5}],
-				"Star Hanger":  [3.750000, -1.000000, -0.750000, {"Disabled Percentage" : 1.5}],
+				"Port Hangar":  [-3.750000, -1.000000, -0.750000, {"Disabled Percentage" : 1.5}],
+				"Star Hangar":  [3.750000, -1.000000, -0.750000, {"Disabled Percentage" : 1.5}],
 				"Launch Tube P1":  [-5.150000, 2.900000, -0.620000, {"Disabled Percentage" : 1.5}],
 				"Launch Tube P2":  [-5.200000, 2.150000, -0.620000, {"Disabled Percentage" : 1.5}],
 				"Launch Tube P3":  [-5.250000, 1.020000, -0.620000, {"Disabled Percentage" : 1.5}],
@@ -136,7 +136,7 @@ Foundation.ShipDef.BSG2003GalacticaClosed.fCruiseWarp = 5.0
 #                                                                                     #
 # Otherwise, uncomment this and type something in:                                    #
 #                                                                                     #
-Foundation.ShipDef.BSG2003GalacticaClosed.desc = "The Jupiter-Class Battlestar, sometimes also known as Galactica-class or Columbia-type, was the first class of battlestar ever to be designed and constructed by the Twelve Colonies as a united government. Twelve were initially constructed for the First Cylon War, each representing one of the Twelve Colonies of Kobol. Several were destroyed during the war; the rest were being retired from active service slowly at the time of the Fall, presumably either to be scrapped or converted into museums. Designed and constructed during the First Cylon War, ships of this class lack the advanced computer technology and networking of more modern battlestars for fear of Cylon infiltration of their computer systems. It is due to this resistance to infiltration that one ship being refurbished as a war museum, the Galactica, was able to escape the Fall of the Colonies, going on to lead a group of survivors to Earth."
+Foundation.ShipDef.BSG2003GalacticaClosed.desc = "The Jupiter-Class Battlestar, sometimes also known as Galactica-class or Columbia-type, was the first class of battlestar ever to be designed and constructed by the Twelve Colonies as a united government. Twelve were initially constructed for the First Cylon War, each representing one of the Twelve Colonies of Kobol. Several were destroyed during the war; the rest were being retired from active service slowly at the time of the Fall, presumably either to be scrapped or converted into museums. Designed and constructed during the First Cylon War, ships of this class lack the advanced computer technology and networking of more modern battlestars for fear of Cylon infiltration of their computer systems. It is due to this resistance to infiltration that one ship being refurbished as a war museum, the Galactica, was able to escape the Fall of the Colonies, going on to lead a group of survivors to Earth.\n\nJupiter-Class Battlestars were equipped with retractable pods, and normally retracted them before performing an FTL jump."
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

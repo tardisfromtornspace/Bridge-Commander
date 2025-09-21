@@ -2,8 +2,8 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
 #         DampeningAOEDefensiveField.py by Alex SL Gato
-#         Version 0.3
-#         21st September 2023
+#         Version 0.4
+#         21st September 2025
 #         Based on scripts\ftb\Tech/Shields.py by MLeo Daalder, Apollo, Dasher, and the rest of the FoundationTechnologies team.
 #         Special Thanks to USS Sovereign for telling me better tips to remove the need of a hardpoint-wise made-up axis.
 #                          
@@ -11,10 +11,8 @@
 # What does this tech do: a variant of Multivectral shielding and Vree shields, but instead of uniforming all the shields with a chance, it distributes part of the conventional damage on a shield to the nearby ones (the furthest one is generally excluded) and doesn't try to do so on collapsed shields.
 # Usage Example:  Add this to the dTechs attribute of your ShipDef, in the Ship plugin file, but modify the values accordingly to what you want, and for actual values since the following is just a general example
 # NOTE: replace "Galaxy" by the proper abbrev when doing so.
-# - "Shield Transfer Ratio": OPTIONAL this script uses a formula where by default the more you go to the sides, the less is transferred - with this you can tweak that to make the transfer less the higher the value - even try 0 for equal values,
-# and negative values if you want for it to transfer more to the sides! Very high values can also be used to heal the other shields, if balanced properly with Max Percentage Damage field.
-# - "Max Percentage Damage": OPTIONAL this states how much part of the damage the shield hit closest can receive (of course, if you use a positive or neutral value in the previous "Shield Transfer Ratio" field). The numbers input are then
-# considered in sixths, that is, if you set it to 1, that shield will only receive 1/6th of the damage, if it's 2, 2/6ths, and so on. You can even try negatives if you so desire.
+# - "Shield Transfer Ratio": OPTIONAL this script uses a formula where by default the more you go to the sides, the less is transferred - with this you can tweak that to make the transfer less the higher the value - even try 0 for equal values, and negative values if you want for it to transfer more to the sides! Very high values can also be used to heal the other shields, if balanced properly with Max Percentage Damage field.
+# - "Max Percentage Damage": OPTIONAL this states how much part of the damage the shield hit closest can receive (of course, if you use a positive or neutral value in the previous "Shield Transfer Ratio" field). The numbers input are then considered in sixths, that is, if you set it to 1, that shield will only receive 1/6th of the damage, if it's 2, 2/6ths, and so on. You can even try negatives if you so desire.
 # - "Collapse Threshold": OPTIONAL how much you need to have the shields down to consider that shield collapsed. Default is 0.25, that is, shield integrity at 25%. Minimum is 0%.
 # - "Max Radians": OPTIONAL advanced, it makes it consider how far it extends the redistribution - the recommended value is 2 * math.pi/3.0, but you can try to do math.pi for total shield redistribution or more restrictive values. Unit is in radians, not degrees.
 """
@@ -44,7 +42,7 @@ try:
 		def OnDefense(self, pShip, pInstance, oYield, pEvent):
 			debug(__name__ + ", OnDefense")
 
-			if not pShip or (oYield and hasattr(oYield, "IsPhaseYield") and oYield.IsPhaseYield()):
+			if not pShip or not pInstance or (oYield and hasattr(oYield, "IsPhaseYield") and oYield.IsPhaseYield()):
 				return
 
 			pShields = pShip.GetShields()
@@ -101,29 +99,31 @@ try:
 			maxPercentageDamage = 2 # How much percentage of the damage is absorbed in a max hit - by default it's 2, for 2/6ths on the best case.
 			collapseLimit = 0.25 # limit before not considering shield redistribution
 
-			if pInstance.__dict__.has_key("Partially Distributed Shields"):
-				if pInstance.__dict__["Partially Distributed Shields"].has_key("Shield Transfer Ratio"):
-					shieldTransferRatio = pInstance.__dict__["Partially Distributed Shields"]["Shield Transfer Ratio"]
-				
-				if pInstance.__dict__["Partially Distributed Shields"].has_key("Max Percentage Damage"):
-					maxPercentageDamage = pInstance.__dict__["Partially Distributed Shields"]["Max Percentage Damage"]
+			pIdict = pInstance.__dict__
 
-				if pInstance.__dict__["Partially Distributed Shields"].has_key("Collapse Threshold"):
-					collapseLimit = pInstance.__dict__["Partially Distributed Shields"]["Collapse Threshold"]
+			if pIdict.has_key("Partially Distributed Shields"):
+				if pIdict["Partially Distributed Shields"].has_key("Shield Transfer Ratio"):
+					shieldTransferRatio = pIdict["Partially Distributed Shields"]["Shield Transfer Ratio"]
+				
+				if pIdict["Partially Distributed Shields"].has_key("Max Percentage Damage"):
+					maxPercentageDamage = pIdict["Partially Distributed Shields"]["Max Percentage Damage"]
+
+				if pIdict["Partially Distributed Shields"].has_key("Collapse Threshold"):
+					collapseLimit = pIdict["Partially Distributed Shields"]["Collapse Threshold"]
 					if collapseLimit < 0.0:
 						collapseLimit = 0.0
 
-				if pInstance.__dict__["Partially Distributed Shields"].has_key("Max Radians"):
-					if pInstance.__dict__["Partially Distributed Shields"]["Max Radians"] > math.pi:
-						pInstance.__dict__["Partially Distributed Shields"]["Max Radians"] = math.pi
-					ignoreDistancePastThis = abs(2.0 * math.sin(pInstance.__dict__["Partially Distributed Shields"]["Max Radians"]/2.0))
+				if pIdict["Partially Distributed Shields"].has_key("Max Radians"):
+					if pIdict["Partially Distributed Shields"]["Max Radians"] > math.pi:
+						pIdict["Partially Distributed Shields"]["Max Radians"] = math.pi
+					ignoreDistancePastThis = abs(2.0 * math.sin(pIdict["Partially Distributed Shields"]["Max Radians"]/2.0))
 
 			numAvailableShields = 1
 			for shieldField in listaCercanos: # All shields included, naturally
 				shieldDir = shieldField[1]
 				fCurr = pShields.GetCurShields(shieldDir)
 				fMax = pShields.GetMaxShields(shieldDir)
-				if fCurr/fMax > collapseLimit:
+				if fMax > 0 and fCurr/fMax > collapseLimit:
 					numAvailableShields = numAvailableShields +1
 
 			if numAvailableShields > 6: # done on purpose, so it works both both for equal distances to all shields where all damage is distributed equally, and when distances are not equal, in which case the furthest one does not count
@@ -135,7 +135,7 @@ try:
 					shieldDir = shieldField[1]
 					fCurr = pShields.GetCurShields(shieldDir)
 					fMax = pShields.GetMaxShields(shieldDir)
-					if fCurr/fMax <= collapseLimit and numAvailableShields > 0:		
+					if fMax > 0 and fCurr/fMax <= collapseLimit and numAvailableShields > 0:		
 						pShields.SetCurShields(shieldDir, self.adjustShieldPower(fCurr, fMax, -fDamage/numAvailableShields) )
 
 				return			
@@ -147,7 +147,7 @@ try:
 				#	return
 				fCurr = pShields.GetCurShields(shieldDir)
 				fMax = pShields.GetMaxShields(shieldDir)
-				if fCurr/fMax >= collapseLimit and numAvailableShields > 0:
+				if fMax > 0 and fCurr/fMax >= collapseLimit and numAvailableShields > 0:
 					distributedDamage = 0
 					#print "shield DAMAGING for shield before ", shieldDir,":", fCurr
 					if distanceField == 0.0: # Absolute hit on the center of this shield, so we know it must deal a third of the damage on the best circumstances and all the damage in the worst case
@@ -180,20 +180,16 @@ try:
 
 		def OnBeamDefense(self, pShip, pInstance, oYield, pEvent):
 			debug(__name__ + ", OnBeamDefense")
-			#if App.g_kSystemWrapper.GetRandomNumber(100) <= pInstance.__dict__['Multivectral Shields']:
 			return self.OnDefense(pShip, pInstance, oYield, pEvent)
 
 		def OnPulseDefense(self, pShip, pInstance, pTorp, oYield, pEvent):
 			debug(__name__ + ", OnPulseDefense")
-			#if App.g_kSystemWrapper.GetRandomNumber(100) <= pInstance.__dict__['Multivectral Shields']:
 			return self.OnDefense(pShip, pInstance, oYield, pEvent)
 
 		def OnTorpDefense(self, pShip, pInstance, pTorp, oYield, pEvent):
 			debug(__name__ + ", OnTorpDefense")
-			#if App.g_kSystemWrapper.GetRandomNumber(100) <= pInstance.__dict__['Multivectral Shields']:
 			return self.OnDefense(pShip, pInstance, oYield, pEvent)
 
-		# TODO:  Make this an activated technology
 		def Attach(self, pInstance):
 			debug(__name__ + ", Attach")
 			pInstance.lTechs.append(self)
