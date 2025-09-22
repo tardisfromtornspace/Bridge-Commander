@@ -14,102 +14,102 @@ class BSG1978HadesBasestar( Carrier.Carrier):
         LauncherManager = __import__( "ftb.LauncherManager")
         launcher = LauncherManager.GetLauncher( "Hangar 1", pShip)
         group.AddLauncher( "Hangar 1", launcher)
-        launcher.AddLaunchable( "BSG2003MkXRaider", "ftb.friendlyAI", 15)
+        launcher.AddLaunchable( "BSG1978Mk10Raider", "ftb.friendlyAI", 15)
 
 
         launcher = LauncherManager.GetLauncher( "Hangar 2", pShip)
         group.AddLauncher( "Hangar 2", launcher)
-        launcher.AddLaunchable( "BSG2003MkXRaider", "ftb.friendlyAI", 15)
+        launcher.AddLaunchable( "BSG1978Mk10Raider", "ftb.friendlyAI", 15)
 
 
         launcher = LauncherManager.GetLauncher( "Hangar 3", pShip)
         group.AddLauncher( "Hangar 3", launcher)
-        launcher.AddLaunchable( "BSG2003MkXRaider", "ftb.friendlyAI", 15)
+        launcher.AddLaunchable( "BSG1978Mk10Raider", "ftb.friendlyAI", 15)
 
 
         launcher = LauncherManager.GetLauncher( "Hangar 4", pShip)
         group.AddLauncher( "Hangar 4", launcher)
-        launcher.AddLaunchable( "BSG2003MkXRaider", "ftb.friendlyAI", 15)
+        launcher.AddLaunchable( "BSG1978Mk10Raider", "ftb.friendlyAI", 15)
 
 
         launcher = LauncherManager.GetLauncher( "Hangar 5", pShip)
         group.AddLauncher( "Hangar 5", launcher)
-        launcher.AddLaunchable( "BSG2003MkXRaider", "ftb.friendlyAI", 15)
+        launcher.AddLaunchable( "BSG1978Mk10Raider", "ftb.friendlyAI", 15)
 
 
         launcher = LauncherManager.GetLauncher( "Hangar 6", pShip)
         group.AddLauncher( "Hangar 6", launcher)
-        launcher.AddLaunchable( "BSG2003MkXRaider", "ftb.friendlyAI", 15)
+        launcher.AddLaunchable( "BSG1978Mk10Raider", "ftb.friendlyAI", 15)
 
 
         launcher = LauncherManager.GetLauncher( "Hangar 7", pShip)
         group.AddLauncher( "Hangar 7", launcher)
-        launcher.AddLaunchable( "BSG2003MkXRaider", "ftb.friendlyAI", 15)
+        launcher.AddLaunchable( "BSG1978Mk10Raider", "ftb.friendlyAI", 15)
 
 
         launcher = LauncherManager.GetLauncher( "Hangar 8", pShip)
         group.AddLauncher( "Hangar 8", launcher)
-        launcher.AddLaunchable( "BSG2003MkXRaider", "ftb.friendlyAI", 15)
+        launcher.AddLaunchable( "BSG1978Mk10Raider", "ftb.friendlyAI", 15)
 
 
         launcher = LauncherManager.GetLauncher( "Hangar 9", pShip)
         group.AddLauncher( "Hangar 9", launcher)
-        launcher.AddLaunchable( "BSG2003MkXRaider", "ftb.friendlyAI", 15)
+        launcher.AddLaunchable( "BSG1978Mk10Raider", "ftb.friendlyAI", 15)
 
 
         launcher = LauncherManager.GetLauncher( "Hangar 10", pShip)
         group.AddLauncher( "Hangar 10", launcher)
-        launcher.AddLaunchable( "BSG2003MkXRaider", "ftb.friendlyAI", 15)
+        launcher.AddLaunchable( "BSG1978Mk10Raider", "ftb.friendlyAI", 15)
 
 
         launcher = LauncherManager.GetLauncher( "Hangar 11", pShip)
         group.AddLauncher( "Hangar 11", launcher)
-        launcher.AddLaunchable( "BSG2003MkXRaider", "ftb.friendlyAI", 15)
+        launcher.AddLaunchable( "BSG1978Mk10Raider", "ftb.friendlyAI", 15)
 
 
         launcher = LauncherManager.GetLauncher( "Hangar 12", pShip)
         group.AddLauncher( "Hangar 12", launcher)
-        launcher.AddLaunchable( "BSG2003MkXRaider", "ftb.friendlyAI", 15)
+        launcher.AddLaunchable( "BSG1978Mk10Raider", "ftb.friendlyAI", 15)
 
 
         launcher = LauncherManager.GetLauncher( "Hangar 13", pShip)
         group.AddLauncher( "Hangar 13", launcher)
-        launcher.AddLaunchable( "BSG2003MkXRaider", "ftb.friendlyAI", 15)
+        launcher.AddLaunchable( "BSG1978Mk10Raider", "ftb.friendlyAI", 15)
 
 
         launcher = LauncherManager.GetLauncher( "Hangar 14", pShip)
         group.AddLauncher( "Hangar 14", launcher)
-        launcher.AddLaunchable( "BSG2003MkXRaider", "ftb.friendlyAI", 15)
+        launcher.AddLaunchable( "BSG1978Mk10Raider", "ftb.friendlyAI", 15)
 
 
         launcher = LauncherManager.GetLauncher( "Hangar 15", pShip)
         group.AddLauncher( "Hangar 15", launcher)
-        launcher.AddLaunchable( "BSG2003MkXRaider", "ftb.friendlyAI", 15)
+        launcher.AddLaunchable( "BSG1978Mk10Raider", "ftb.friendlyAI", 15)
 
 
         launcher = LauncherManager.GetLauncher( "Hangar 16", pShip)
         group.AddLauncher( "Hangar 16", launcher)
-        launcher.AddLaunchable( "BSG2003MkXRaider", "ftb.friendlyAI", 15)
+        launcher.AddLaunchable( "BSG1978Mk10Raider", "ftb.friendlyAI", 15)
 
 
         launcher = LauncherManager.GetLauncher( "Hangar 17", pShip)
         group.AddLauncher( "Hangar 17", launcher)
-        launcher.AddLaunchable( "BSG2003MkXRaider", "ftb.friendlyAI", 15)
+        launcher.AddLaunchable( "BSG1978Mk10Raider", "ftb.friendlyAI", 15)
 
 
         launcher = LauncherManager.GetLauncher( "Hangar 18", pShip)
         group.AddLauncher( "Hangar 18", launcher)
-        launcher.AddLaunchable( "BSG2003MkXRaider", "ftb.friendlyAI", 15)
+        launcher.AddLaunchable( "BSG1978Mk10Raider", "ftb.friendlyAI", 15)
 
 
         launcher = LauncherManager.GetLauncher( "Hangar 19", pShip)
         group.AddLauncher( "Hangar 19", launcher)
-        launcher.AddLaunchable( "BSG2003MkXRaider", "ftb.friendlyAI", 15)
+        launcher.AddLaunchable( "BSG1978Mk10Raider", "ftb.friendlyAI", 15)
 
 
         launcher = LauncherManager.GetLauncher( "Hangar 20", pShip)
         group.AddLauncher( "Hangar 20", launcher)
-        launcher.AddLaunchable( "BSG2003MkXRaider", "ftb.friendlyAI", 15)
+        launcher.AddLaunchable( "BSG1978Mk10Raider", "ftb.friendlyAI", 15)
 
 
         self.AddLauncher( "Group 1", group)

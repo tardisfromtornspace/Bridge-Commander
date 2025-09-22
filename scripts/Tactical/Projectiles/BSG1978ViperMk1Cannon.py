@@ -26,7 +26,7 @@ def Create(pTorp):
 	kOuterCoreColor = App.TGColorA()
 	kOuterCoreColor.SetRGBA(1.000000, 1.000000, 0.700000, 1.000000)
 
-	pTorp.CreateDisruptorModel(kOuterShellColor,kOuterCoreColor, 1.0, 0.15) 	
+	pTorp.CreateDisruptorModel(kOuterShellColor,kOuterCoreColor, 1.0, 0.04) 	
 	pTorp.SetDamage( GetDamage() )
 	pTorp.SetDamageRadiusFactor(0.15)
 	pTorp.SetGuidanceLifetime( GetGuidanceLifetime() )
@@ -44,7 +44,7 @@ def GetLaunchSpeed():
 	return(95.0)
 
 def GetLaunchSound():
-	return("Pulse PhaserJLH")
+	return("BSG 1978 Turbo Laser")
 
 def GetPowerCost():
 	return(10.0)

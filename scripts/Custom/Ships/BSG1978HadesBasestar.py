@@ -1,7 +1,7 @@
 #######################################################################################
 #  Custom Ship Plugin                                                                 #
-#  Created by BC - Mod Packager                                                       #
-#  Date: 23/10/2003                                                                    #
+#  Created manually                                                                   #
+#  Date: 22/09/2025                                                                   #
 #######################################################################################
 #                                                                                     #
 import Foundation
@@ -9,13 +9,13 @@ import App
 #                                                                                     #
 #######################################################################################
 #                                                                                     #
-abbrev = 'Battlestar'
-iconName = 'BS_Acropolis'
-longName = 'Battlestar Galactica'
-shipFile = 'Battlestar' 
-menuGroup = 'BSG (TOS) Ships'
-playerMenuGroup = 'BSG (TOS) Ships'
-SubMenu = "Twelve Colonies of Man"
+abbrev = 'BSG1978HadesBasestar'
+iconName = 'HadesBasestar'
+longName = 'Hades Basestar'
+shipFile = 'BSG1978HadesBasestar' 
+menuGroup = 'BSG (1978) Ships'
+playerMenuGroup = 'BSG (1978) Ships'
+SubMenu = ["Cylon Empire", "Basestars"]
 species = App.SPECIES_GALAXY
 #                                                                                     #
 #######################################################################################
@@ -24,9 +24,9 @@ species = App.SPECIES_GALAXY
 # have use later on for updates and such.                                             #
 #                                                                                     #
 credits = {
-	'modName': 'Battlestar',
-	'author': 'MadJohn',
-	'version': '0.9',
+	'modName': 'BSG1978HadesBasestar',
+	'author': '',
+	'version': '1.0',
 	'sources': [ 'http://' ],
 	'comments': ''
 }
@@ -36,29 +36,37 @@ credits = {
 # This is the ShipDef that adds the Ship to the game... BC-Mod Packager has           #
 # automatically generated the proper ShipDef Line for you.                            #
 #                                                                                     #
-Foundation.ShipDef.Battlestar = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
-Foundation.ShipDef.Battlestar.dTechs = {
-	'Fed Ablative Armor': { "Plates": ["Ablative Armour"]
-}}
+Foundation.ShipDef.BSG1978HadesBasestar = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "SubMenu": SubMenu })
+Foundation.ShipDef.BSG1978HadesBasestar.dTechs = {
+	"AutoTargeting": { "Pulse": [3, 1] },
+	'Partially Distributed Shields': {"Shield Transfer Ratio": 1.25, "Max Percentage Damage": 2, "Collapse Threshold": 0.23, "Max Radians": 2.094395},
+	"Alternate-Warp-FTL": {
+		"Setup": {
+			"BSG 1978 Ultra-Light-Drive": {	"Nacelles": ["Gravimetric Initiator"], "Core": ["Tylium Energizer"]},
+		},
+	},
+}
 
+Foundation.ShipDef.BSG1978HadesBasestar.fMaxWarp = 4.0
+Foundation.ShipDef.BSG1978HadesBasestar.fCruiseWarp = 3.0
 #                                                                                     #
 #######################################################################################
 #                                                                                     #
 # Uncomment these if you have TGL                                                     #
 #                                                                                     #
-# Foundation.ShipDef.Battlestar.hasTGLName = 1
-# Foundation.ShipDef.Battlestar.hasTGLDesc = 1
+# Foundation.ShipDef.BSG1978HadesBasestar.hasTGLName = 1
+# Foundation.ShipDef.BSG1978HadesBasestar.hasTGLDesc = 1
 #                                                                                     #
 # Otherwise, uncomment this and type something in:                                    #
 #                                                                                     #
-Foundation.ShipDef.Battlestar.desc = 'Columbia-Class Battlestars represented the heart of the Colonial defense against the armies of the Cylon Empire. They served a three prong role in the defense of humanity, operating as aircraft carrier, battleship and a mobile base of operations. Standard Battlestars carried 75 Starhound class Vipers, 12 Landram ground-troop transports and twelve shuttlecrafts. Following the destruction of the twelve colonies, the Galactica was forced to dramatically increase the number of crew she carried, as well as the number of fighters she could bring onto the battlefield. Galactica now carries a crew of roughly 1000 military personnel, 168 of which are Viper fighter pilots. Galactica, in addition to her original Viper squadrons, Red and Blue, now has two additional Viper squadrons, Silver Spar and Bronze Spar of the Battlestar Pegasus. Galactica is still armed with her standard weapon system, consisting of 32 known Turbo-Lasers, which were powerful enough to destroy fighters, asteroids and their combined power was capable of destroying another vessel; and Fusion Missiles. Main power aboard Colonial Battlestars was provided by a combination of Tylium energizers and advanced Fusion reactors. Its megatron shield uses electromagnetic radiation to disrupt incoming energy weapons, and, by the inverse square law, reduces the weapon´s intensity spreading the energy beam over a wide area.'
+Foundation.ShipDef.BSG1978HadesBasestar.desc = "Backbone of the Cylon Empire is the infamous 'Basestar'. A fully armed Basestar has three times the fighters, troop and weapons capability of a Colonial Battlestar, making this space born killer the most deadly ship in the known galaxy. This massive, double saucer vessels measured some 1768 meters in diameter and carried a Legion of Cylon troops and 300 Raider type fighter craft. They are armed with over one-hundred defensive Turbo Laser turrets and two, long range, Mega-Pulsar guns. So formidable is a lone Basestar, it is considered to be more than a match for a single Battlestar, or even the defenses of an entire planet."
 #                                                                                     #
 #######################################################################################
 #                                                                                     #
 # These register the ship with the QuickBattle menus.  Don't touch them!!!            #
 #                                                                                     #
-if menuGroup:           Foundation.ShipDef.Battlestar.RegisterQBShipMenu(menuGroup)
-if playerMenuGroup:     Foundation.ShipDef.Battlestar.RegisterQBPlayerShipMenu(playerMenuGroup)
+if menuGroup:           Foundation.ShipDef.BSG1978HadesBasestar.RegisterQBShipMenu(menuGroup)
+if playerMenuGroup:     Foundation.ShipDef.BSG1978HadesBasestar.RegisterQBPlayerShipMenu(playerMenuGroup)
 
 if Foundation.shipList._keyList.has_key(longName):
      Foundation.ShipDef.__dict__[longName].friendlyDetails[2] = Foundation.shipList[longName].friendlyDetails[2]

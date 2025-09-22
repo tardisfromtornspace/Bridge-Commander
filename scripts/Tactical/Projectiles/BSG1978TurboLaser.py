@@ -44,7 +44,7 @@ def GetLaunchSpeed():
 	return(95.0)
 
 def GetLaunchSound():
-	return("Pulse PhaserJLH")
+	return("BSG 1978 Turbo Laser")
 
 def GetPowerCost():
 	return(10.0)
