@@ -807,14 +807,14 @@ def EezoField(pAction, pWS, sType, sRace, amount=50, sparkSize=0.05):
 	if pShip == None:
 		return 0
 
-	colorKey = [1.0 / 255, 1.0 / 255, 1.0 / 255]
+	colorKey = [255, 255, 255]
 	try:
 		import Custom.NanoFXv2.NanoFX_Lib
 		colorKey = Custom.NanoFXv2.NanoFX_Lib.GetOverrideColor(pShip, sType)
 		if colorKey == None:
-			colorKey = [1.0 / 255, 1.0 / 255, 1.0 / 255]
+			colorKey = [255, 255, 255]
 	except:
-		colorKey = [1.0 / 255, 1.0 / 255, 1.0 / 255]
+		colorKey = [255, 255, 255]
 
 	iCycleCount = 1
 	if amount > 0 and sparkSize > 0:

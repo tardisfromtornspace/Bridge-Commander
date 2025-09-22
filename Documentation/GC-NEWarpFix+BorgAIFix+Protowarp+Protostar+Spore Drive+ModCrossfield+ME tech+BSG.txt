@@ -1,0 +1,393 @@
+== Changelog ==
+0.7 - Updates:
+  * Fused this mod with the Battlestar Galactica 2003 + 1978 overhaul script mod:
+  ** Added BSG 2003 and BSG 1978 GC-dependant FTLs.
+  ** Added Partially Distributed Shields.
+  ** Added alternate versions from all vessels from https://www.gamefront.com/games/bridge-commander/file/battlestar-galactica-fleet-pack (BSG 2003 pack) and from https://www.gamefront.com/games/bridge-commander/file/battlestar-galactica-ship-pack-2 (2.0 BSG 1978 mod) with tech improvements and fixes.
+  ** Added BSG2003 version of the original-series battlestar using the model from https://www.gamefront.com/games/bridge-commander/file/battlestar-galactica-w-colonial-viper, the 2003 version of the Viper mark 1 from the 2.0 BSG 1978 mod, and the 1978 version of the Colonial Defender from the BSG 2003 pack.
+0.6.6 - Updates:
+  * Updated AlternateSubModelsFTL to 0.87 to support new "Disable Percentage" parameter option.
+  * Modified NormandySR2 and AllianceNormandySR2 hardpoitns to reflect this change - now the Thanix cannon hardpoint is disabled by default and only activates when red alert is issued.
+0.6.5 - Updates:
+  * Created new trail script for projectiles with better customization but still similar to LJ's in regards to naming to allow backwards compatibility. Do not forget to install scripts.Tactical.Projectiles.trails.OriBeam now to have these working.
+0.6.4 - Updates:
+  * Updated Spore Drive for more efficient tractor ISI check.
+0.6.3 - Updates:
+  * Updated AlternateSubModelsFTL to 0.86 to support new "IgnoreCall" parameter and to clarify documentation better.
+0.6.2 - Updates:
+  * Since I found out how to make GalaxyCahrts use a different set for different travel types, added a Mycelial Network TravelerSystem to GalaxyCharts and updated SporeDrive to 0.5 to reflect this.
+0.6.1 - Fixes:
+  * Found out that Defiant's Power system could glitch out if a ship had impulse engines but no warp engines. The new Autoload patch "FIX-DefiantsQBautostartPower1dot0.py" aims to resolve that issue.
+0.6 - Updates:
+  * Updated SporeDrive to 0.4, now it also has customizable additional mini-spark chances for entry and exit, and can jump closer to other vessels.
+  * Updated crossfield scripts/Custom/Ships file to reflect SporeDrive 0.4 changes.
+  * Updated AlternateSubModelFTL to version 0.84 to fix a small documentation error.
+0.5.6 - Updates:
+  * Updated SporeDrive to 0.35, now it uses a custom animation GFX and its ISI system is more precise.
+0.5.5 - Updates:
+  * Updated this readme properly to credit all the authors behind the High-End Protostar model.
+0.5.4 - Updates:
+  * Updated AlternateSubModelFTL to version 0.83 to support custom exit and entry delay subPart times.
+  * Updated USS Protostar Custom script to include this new update.
+  * Partially updated Protostar Model with Greystar's additions, made by LoganRolphh on sketchfab, still a W.I.P.
+0.5.3 - Fixes:
+  * Updated MEShields to manually cover an edge-case where a torpedo hitting behind a shield is impossible.
+  * Updated Turian Frigate hardpoints so they do not repair so fast.
+0.5.2 - Fixes:
+  * Updated ProtoWarp, SporeDrive and MassEffect FTL to 0.32, fixing a sound issue.
+0.5.1 - Updates:
+  * Added properly-adjusted Turian frigate and fighter.
+  * Refined the use of Simulated Point Defence for the GARDIAN system.
+  * Completed readme to fully localize where each thing came from.
+0.5 - Updates:
+  * Added Realistic Mass Effect technology and ships for the Normandy SR-1 and Cerberus and Alliance Normandy SR-2.
+0.4.8 - Updates:
+  * Updated AlternateSubModelFTL to version 0.82 to support vessels which do not have any models to replace.
+0.4.7 - Updates:
+  * Updated scripts/Custom/Autoload/FIX-GCNormalWarpAndEnhancedWarp.py to version 20241214 to reduce as much as possible any legal issues.
+0.4.6 - Updates:
+  * Created scripts/Custom/Autoload/FIX-GCNormalWarpAndEnhancedWarp.py version 20241213 that fixes a pre-existing glitch that caused a crash-to-desktop for KM's BorgAttack AI during GalaxyCharts travels.
+0.4.5 - Updates:
+  * Removed the Updated NormalWarp and EnhancedWarp, which I did not know were All Rights Reserved and could not be modified directly.
+  * Created scripts/Custom/Autoload/FIX-GCNormalWarpAndEnhancedWarp.py, which fixes NormalWarp and EnhancedWarp via monkey patching, preventing a license violation.
+  * Giving extra credit to USS Sovereign for helping me notice the legal issue above and how to fix it.
+0.4.4 - Updates:
+  * Updated NormalWarp and EnhancedWarp to version 20241212 to fix camera issues and support warp stretchiness again when using GC.
+  * Updated SporeDrive to 0.3 to grant better speeds.
+  * Updated Crossfield Custom/Ships file to cap warp speed at warp 7.0 like a very-early TOS vessel.
+0.4.3 - Updates:
+  * Updated Crossfield, SporeDrive and Spore Drive sounds to be a bit faster.
+0.4.2 - Updates:
+  * Updated AlternateSubModelFTL to 0.81 to so when a ship cannot move, it says "CANNOT DO" instead of just "CANNOT".
+0.4.1 - Updates:
+  * Updated SporeDrive to 0.2 to allow ISI to have a customizable chance to uncloak nearby vessels without phase cloak.
+0.4 - Updates:
+  * Updated AlternateSubModelFTL to 0.8 to give the script intra-system-intercept (ISI) support.
+  * Updated SporeDrive to 0.19 to cover ISI support.
+  * Updated readmes to cover use-conditions for the script, per USS Sovereign's request (and necessary condition for use).
+0.3.6 - Updates:
+  * Updated AlternateSubModelFTL to 0.76 to fix a bug with hardpoints not returning to normal after FTL.
+  * Updated USSProtostar and USS Discovery hardpoints so all properties now have a proper 2DPosition.
+  * Updated SporeDrive to 0.16 to fix the camera rotating issue and made it so people can tow ships.
+0.3.5 - Updates:
+  * Updated AlternateSubModelFTL to 0.75 to support the option to only perform entry or exit FTL sequences for each part and FTL method individually.
+  * Updated SporeDrive to 0.15 to cover the new update to AlternateSubModelFTL.
+0.3.4 - Updates:
+  * Added a fragment of the Spore Drive - still missing proper flash textures and in-system interception!
+  * Updated Documentation to fill these gaps.
+0.3.3 - Updates:
+  * Updated AlternateSubModelFTL to 0.71, fixing a potential issue related with different MissionLib files.
+0.3.2 - Updates:
+  * Updated scripts/Custom/Ships file to provide the full list of parts also in-game, pending of model repalcement and position/rotation adjustment.
+0.3.1 - Updates:
+  * Updated ProtoWarp TravellingMethod to 0.31, providing starting sound.
+  * Updated scripts/Custom/Ships file to provide a more extensive list on what moves on the Protostar (as a list to help Greystar with models).
+0.3 - Updated AlternateSubModelFTL to 0.7, finally making the tech independent from SubModels as well as fixing a weird non-experimental lights bug.
+0.2 - Updated AlternateSubModelFTL to 0.64, fixed the rapid-change drifting for the most part, also now Experimental is no longer ugly at the beginning.
+0.1 - First unofficial release, for testing
+
+== What does this mod do ==
+This mod adds the following updates and fixes:
+* A new SubModels-derivated file that supports other FTL methods (from GalaxyCharts) and mobility fix and intra-system intercept (ISI) improvements.
+* Proto-Warp Travelling Method.
+** An USS Protostar from Star Trek Prodigy equipped with this drive (TO-DO W.I.P.).
+** An USS Prodigy from Star Trek Prodigy equipped with this drive (TO-DO not yet added).
+* Spore-Drive Travelling Method with ISI.
+** A modified USS Discovery (Crossfield Class) equipped with Spore drive.
+* Mass Effect Drive Travelling Method `+ a system Disabler for when GC is off/on) + Mass Effect Shields, Mass Effect Projectiles, Mass Effect IES Stealth System, Mass Effect Thanix Magnetic-Hydrodynamic Cannon technologies:
+** Modified SR1 Normandy, SR2 Normandy, Alliance SR2 Normandy, Turian Fighter and Turian Frigate to correct certian original hardpoint issues, incorporate all these technologies, and properly adjust their power levels accordingly (for example, now that lasers pass through Mass Effect shields, there's no need to make the not-necessarily-lethal lasers powerful enough to brute-force a shield).
+*** The Thanix Cannon on the Cerberus and Alliance Normandy SR2 is offline until you enter red alert.
+*** The "SystemsChangedWithGCOn" tech is used here for better compatibility - if you have GalaxyCharts on, it will disable the warp control property so both players and AI vessels of this franchise use the Mass Effect field to travel and not warp; and if GC is off, it will enable the warp control property so these ships from Mass Effect can still warp in an out of a system (because from a lore-point of view, it is not much of a stretch to modify the application of Mass effect fields to create an Alcubierre Warp Drive).
+* Fixed NormalWarp and EnhancedWarp travelling methods:
+** Now they support the ship stretching when it goes in an out of warp!
+** The camera no longer gets a stroke when a ship is warping in or out, switching to several places and then having the warp flash on our face! Now they behave properly!
+** Small allowance for max warp 10.0 as some vessels might allow that speed factor with regular warp methods.
+* IMPORTANT: PATCH For BorgAttack AI version "Borg AI Final - 10 July 2008", present in KM 2011.10, while using GalaxyCharts with the Warp AI fix (also present in KM), so when GC is OFF, it uses the totally unmodified BorgAttack, but while GC is on, it can use BorgAttack Warp sections without causing a crash-to-desktop after a vessel with BorgAttack follows the player after two Warp jumps.
+** This PATCH is on Autoload, and it is the only patch done on this mod to this AI, done under fair use and falling under the same license as the BorgAttack file, and does not release a modified BorgAttack file named BorgAttack.py, so in case of any problems are found with this patch, the file "FIX-BorgAttackAIforGC.py" can be safely removed without causing any changes to the BorgAttack.pyc your install may have.
+** scripts/AI/Compound with BasicAttack.py, BasicAtatck.pyc and BorgAttack.pyc are also added here to follow the Borg AI doc (doc/Borg AI/BORG AI FINAL - README.txt) as best as possible while distributing this fix.
+* BSG2003DimensionalJump Travelling Method for Galaxy Charts - performs mini-jumps, the AI can also use it to follow you or flee. Between jumps there's a cooldown. Be careful not to jump too close to another vessel or you may hurt them.
+* ALL nBSG vessels had their effective scripts/Custom/Ships/, scripts/Custom/Carriers/, scripts/ships/ scripts/ships/Hardpoints and projectiles recreated or readjusted for:
+** More realistic names/name fixes (i.e. "Megatron shields" do not exist on nBSG, "Disruptors" -> "KEW", providing more types of Basestar and Raiders, corrected some spelling mistakes...)
+** Added new and removed "unused" hardpoint properties (added)
+** Corrected any discrepancies between ModelPropertyEditor locations and real "in-game" locations I managed to find (i.e. Viper Mark 2's engines were correctly placed on ModelPropertyEditor, but in-game the engines were practically on the 0 coordinate point).
+** Now all hardpoint properties should have a 2D position, and all weapons should be easily visible on the Weapon Tactical Window.
+** One of the hardpoint "fixes" done was to solve the Mvam issue that the old Galactica 2003 mod had for deploying/retracting pods because of lack of a torpedo control subsystem, by adding a torpedo control subsystem. Additionally, the hardpoints for both the deployed and retracted pod versions were made more uniform (having the same systems with same names, and if one hardpoint was supposed to not have something, then that subsystem is now disabled instead of nonexistant) to also avoid automatically regenerating hardpoints by retracting and deploying the pods.
+** All ships now have ship descriptions.
+** Renamed Cylon Basestar to Type-D Basestar.
+** Added Type-A Basestar, 2004-series version (using the 1978 model).
+** Added Viper mk. I, 2004-series version (using the 1978 model).
+** Renamed Cylon Raider to Type III Raider.
+** Added Type I Raider, 2004-series version (using the 1978 model).
+** Added Artemis-class battlestar, 2004-series version (using the smaller 1978 model from the 0.9 BSG fleet pack).
+** Adjusted their power levels to canon and native main game ships. Amongst these changes:
+*** Equipping BSG2003DimensionalJump Travelling Method to them. No BSG 2003 series vessels can use "Warp" or "EnhancedWarp" travellingMethods, but can perform these "jumps", with the game max and cruise "warp speed" parameters of each one adjusted to follow the statment that a Cylon Raider required only 10 jumps to go from Galactica to Caprica, while Galactica herself would have needed 200 jumps. Most colonial vessels have Cruise speed of 5.0 and max of 5.25 and take 15 minutes to spool their engines (albeit the Battlestar Pegasus has some upgrades so cruiser speed is 5.15 and max 5.3, with 14.5 minutes); Cylons have Cruise "Warp" of 6.0 and max of 6.5 and take 13 minutes to spool their engines.
+*** Most nBSG ships are now equipped with greater or lesser degree of point-defence, with the capital ships having naturally better point-defence that smaller or civilian vessels.
+*** Increased number of raptor, vipers and raiders immensely, and allowed vessels to launch multiple of them at a time. Also now some vessels can launch more types of raptor.
+**** Ensured hangars are big enough for ships to dock inside, and ensured a ship can take at the very least the shuttles/vipers/raptors/raiders it can launch.
+*** Since both in Blood & Chrome and 2004 series both Cylon raiders and Vipers could sometimes one-shot each other, ensured that the hull can take more than one hit, but allowed the chance that lucky shots can one-shot each other.
+*** Viper pilots and Type-I raiders are now targetable repair subsystem hardpoints (if the pilot is too hurt it cannot repair anything).
+*** Colonial Defender and Mobile Shipyard gained Carrier scripts.
+*** Ensuring the Mobile Shipyard can actually repair vessels by creating a Mvam and alternate version that is stationary (so Dock functions work).
+*** Pegasus, the Type-D Basestar, the Colonial Defender and the Mobile shipyard gained more functional hangars.
+*** The Type-D Battlestar got several glowups in terms of having more replicated hardpoints, providing it Automatic Destroyed System repair (with a veeery long cooldown) and by making its missiles just slightly faster so its pulse systems do not make it not fire until you are at less than 30 km of a target.
+*** Each battlestar and basestar gained some extra nuke complement, specially since Galactica actually deployed the warhead silos during the "Eye of Jupiter" event.
+*** As the original mod creator said "They have no shields and are barely able to stand up to nukes, let alone anti-matter warheads" so made sure that the current hardpoints are definetely more balanced to that, taking into account the point-defence tecnology and certain projectile technologies made for kinetic weaponry.
+*** Adjusted masses.
+* "script" filenames are also different to avoid overwriting pre-existing files (both from older BSG mods, and certain mods that also had vessels with same names, i.e. "Pegasus" as phase-cloak Oberth-class).
+* All nBSG vessels are now on the "BSG (2003) Ships" menu, to avoid "fused" shipMenu entries.
+* BSG1978UltraLightDrive Travelling Method for Galaxy Charts - performs some effects (somewhat similar to Battlestar Galactica 2003 PS2 videogame effects) but for the most part is just a slower warp, the AI can also use it to follow you or flee.
+* All old BSG ships had their effective scripts/Custom/Ships/, scripts/Custom/Carriers/, scripts/ships/ scripts/ships/Hardpoints and projectiles recreated or readjusted the same way, due to:
+** Installing partially distributed shields, AutoTargeting techs and its Ultra-Light-Drive FTL method - made the vessels mostly use Warp-3 equivalents.
+** Making beam sizes a bit closer to canon (that is, both the laser cannons and the mega pulsar guns were bigger) and fixing some off colors.
+** Providing more canon sounds to their pulse weaponry.
+** More canon names for some stuff and fixing some spelling mistakes (i.e. the Viper mk I cannons were laser-torps) and small hardpoint mistakes.
+** All ships now have ship descriptions.
+** Added Colonial Defender, 1978-series version, using the 2003 model.
+** Also considering that their hulls "are 20 times stronger than iron", that they have "lasers" AND stuff "that are called lasers but are not", and that they have shields ("megatron shields"), but which work differently from ST shields and rely on the inverse square law and on a lesser degree from where it is being shot to spread damage on a broader area but with lesser impact (considering this http://www.tecr.com/galactica/weapons/weapons.htm#shield).
+* All 1978 BSG vessels are now on the "BSG (1978) Ships" menu, to avoid "fused" shipMenu entries.
+
+All of the technologies have their own detailed instruction manuals inside the files to ensure people can use those techs easily.
+
+== Dependencies ==
+All of these must be installed before installing this mod, in this order:
+* Foundation + Kobayashi Maru (KM has Foundation already installed - the most recent version of KM, the better).
+* GalaxyCharts (KM has this mod already installed. Required for ProtoWarp TravellingMethod and any method you may want derived from that).
+* NanoFX 2.0 beta (KM already has this installed)
+** Depending on the version of KM, you may require GalaxyCharts' Warp AI fix as well: https://www.gamefront.com/games/bridge-commander/file/galaxy-charts-warp-ai-fix/
+* This mod, for the ST:Discovery original Crossfield class: https://www.gamefront.com/games/bridge-commander/file/crossfield-class
+* This mod, for the SSV Normandy https://www.gamefront.com/games/bridge-commander/file/normandy-sr-1
+* This mod, for the SR2 Normandy and ME3 Normandy https://www.gamefront.com/games/bridge-commander/file/normandy-sr-2
+* This mod, for the Turian vessels https://www.gamefront.com/games/bridge-commander/file/turian-frigate
+* All the dependencies for this mod + the mod: https://www.gamefront.com/games/bridge-commander/file/stbc-babylon-5-mod
+** From here, HullPolarizer is the most used, but also the file "FIX-FoundationTech20050703ShipInstanceDetach.py", which solves problems related with iterating lTechs when detaching and removing from such FoundationTech list.
+* This mod, for the projectile ExtraCollisionDamageDummy, scripts.Tactical.Projectiles.trails.OriBeam version >= 1.01 and certain NanoFX 2.0 Beta fixes implemented there: https://www.gamefront.com/games/bridge-commander/file/sg1-sga-and-sgu-generic-overhaul-mod
+* It also requires AutoTargeting, but the script itself is present on this mod too, just in case.
+###CAREFUL### 
+* The following are going to be installed partially (see "install steps"):
+** This mod, for 2003 BSG and the gunstar/colonial defender, but we are only going to use SOME of its folders: https://www.gamefront.com/games/bridge-commander/file/battlestar-galactica-fleet-pack
+*** We need all the contents inside the data and sfx folders, then we need the contents inside scripts/Tactical/Projectiles/LJTorpLib and scripts/Tactical/Projectiles/LJTorpLib2, and scripts/Custom/Autoload/Galactica_SoundPak.py
+* This mod, for the 2003 Artemis Battlestar model - https://www.gamefront.com/games/bridge-commander/file/battlestar-galactica-w-colonial-viper
+* This mod, for 1978 BSG and used for the 2003 version of the Hades basestar, the icon of the Viper Mk I and 2003 Artemis Battlestar, and the Mark X Cylon Raiders; and the battlestars of the original series; but we are only going to use the data and sfx folders: https://www.gamefront.com/games/bridge-commander/file/battlestar-galactica-ship-pack-2
+*** We need the contents inside the data folder.
+###CAREFUL###
+
+For older mods like the battlestar-galactica-ship-pack-2 mod which is stored on .BCMod format you may require of extra tools, like BCUT -> BCTools -> BCMod Unpacker (https://www.gamefront.com/games/bridge-commander/file/bridge-commander-universal-tool-bcut-v-1-8-1)
+
+=== Install steps ===
+IMPORTANT INSTALL INSTRUCTIONS: Do not copy-paste this mod's scripts/AI folder right away, first move this mod's scripts/AI folder somewhere else. You only have to install it if the following steps require so. The provided AI scripts scripts/AI/Compound/BasicAttack and BorgAttack scripts can also be found at BCC KM 2011.10 download site (https://www.bc-central.net/forums/index.php?action=downloads;sa=view;down=33).
+
+STEP 0: Ok, first of all, just in case, backup your STBC.
+
+STEP 1. Check that on scripts/AI/Compound folder you already have a BasicAttack.py, BasicAttack.pyc, BorgAttack.py and BorgAttack.pyc, and BorgAttack.py contents on the first lines have a banner saying 'Borg AI Final - 10 July 2008' 'By: jayce AKA Resistance Is Futile' and then more text explaining how it is the latest version and thus that file should not be modified. If that does not appear, you will have to install the AI provided (something which, at least on a normal KM install 2011.10, unless modified, should not happen since this BorgAttack AI is technically added as a given).
+
+STEP 2. Enter your KM game and activate automatic test mode (or your way to view the game's console), then install the rest of the folders from this mod normally (except the ones mentioned on the ###CAREFUL### area of dependencies). The console will send a message about "FIX-BorgAttackAIforGC", if it says "Your install's BorgAttack AI is not the final version to patch. Skipping...", "Missing BorgAttack AI to patch. Skipping..." or "FIX-BorgAttackAIforGC: just found out that your BorgAttack AI does not have a CreateAI function... this will be patched." that means you don't have the correct BorgAttack script and then you WILL need to install the AI too, but not before removing BorgAttack.py and BorgAttack.pyc from your install's scripts/AI/Compund folder, and verifying the scripts/AI/Compund/BasicAttack.py you have is the same as AI/Compund/BasicAttack.py this mod has (who knows, you could have modified your BasicAttack.py and still be a modified version of a valid one - it would not be the first time I've seen modified BasicAttack.py that work with the latest BorgAttack AI but which were modified to warp faster or not miss torpedoes...)
+** The provided AI scripts scripts/AI/Compound/BasicAttack and BorgAttack scripts can also be found at BCC KM 2011.10 download site https://www.bc-central.net/forums/index.php?action=downloads;sa=view;down=33
+
+STEP 3. Unzip the files from this main mod (the one this readme is from) onto a temporay folder (TEMPFOLDER1).
+
+STEP 4. Install the "battlestar-galactica-fleet-pack" mod from https://www.gamefront.com/games/bridge-commander/file/battlestar-galactica-fleet-pack on a TEMPORARY folder (TEMPFOLDER2):
+   - We need all the contents inside the data and sfx folders, then we need the contents inside scripts/Tactical/Projectiles/LJTorpLib and scripts/Tactical/Projectiles/LJTorpLib2 (the lost jedi torp libs), and scripts/Custom/Autoload/Galactica_SoundPak.py (any other file on the scripts folders can be deleted for this mod in particular - or you can keep them, whatever you want).
+   - The readme "Battlestar Galactica Ship PackREADME - VERY, VERY IMPORTANT.txt" from this mod is already included inside a Documentation folder under the name "Original 2003 Battlestar Galactica Ship PackREADME - VERY, VERY IMPORTANT.txt" on the main mod - you can keep "1978BSG_Ship Pack Ver.2.0_Read Me.txt" or not.
+
+STEP 5. Install the "battlestar-galactica-ship-pack-2" mod from https://www.gamefront.com/games/bridge-commander/file/battlestar-galactica-ship-pack-2 on a TEMPORARY folder (TEMPFOLDER3):
+   - We only need all the contents inside the data and sfx folders - the scripts folder can be deleted for this install (or you can keep them, whatever you want).
+   - The readme "BSG_Ship Pack Ver.2.0_Read Me.txt" from this mod is already included inside a Documentation folder under the name "1978BSG_Ship Pack Ver.2.0_Read Me.txt" on the main mod - you can keep "1978BSG_Ship Pack Ver.2.0_Read Me.txt" or not. There are also several readmes like "1978BSG_SFC_Basestar.txt" which are copies of those inside the data/Models/Ships from "battlestar-galactica-ship-pack-2" (TO-DO CHECK THERE MAY BE MORE READMES)
+
+STEP 6. Install the "battlestar-galactica-w-colonial-viper" mod from https://www.gamefront.com/games/bridge-commander/file/battlestar-galactica-w-colonial-viper on a TEMPORARY folder (TEMPFOLDER4).
+   - We only need all the contents inside the data and sfx folders - the scripts folder can be deleted for this install (or you can keep them, whatever you want).
+   - The readmes "BSG_ReadMe.txt", "SFC_Battlestar.txt" and "SFC_Viper.txt" from this mod are already included inside a Documentation folder under the names "1978BSG_ReadMe_0.9.txt", "1978BSG_SFC_Battlestar_0.9.txt" and "1978BSG_SFC_Viper_0.9.txt" on the main mod - you can keep the renamed files, the original-named ones, or both.
+
+STEP 7. Copy-paste the remaining contents of TEMPFOLDER2, TEMPFOLDER3 and TEMPFOLDER4 inside TEMPFOLDER1.
+
+STEP 8. Then once again unzip the files from this main mod (the one this readme is from), on the same TEMPFOLDER1, say "yes" to overwrite all files - steps 4-8 are ordered this way to ensure all files/folders are both up-to-date and present the same names without Windows causing weird case-insensitive file replacement issues.
+
+STEP 9. After that, just move the files from TEMPFOLDER1 into your STBC root folder, say "yes" to overwrite all the files (data -> data, scripts -> scripts, sfx -> sfx, and so on).
+
+STEP 10. After opening your STBC go to the options -> Customize -> Mutators and make sure that "USS Frontier's Galaxy Charts"/"Galaxy Charts" are active.
+
+== Credits ==
+* Everyone involved in Foundation - without you this would have been a real pain to do (please read the separate Foundation.txt license) - Banbury, Dasher42, DigitalFriend, MLeo, Nanobyte and Sleight42, among others.
+* Everyone involved in KM - specifically those involved in the creation of armour and Shields.py (FoundationTechnologies) the AdvArmorTech.py, FiveSecsGodPhaser.py, TractorBeams.py - Apollo from ATP Technologies as well.
+* Dasher42 for reminding me of licensing.
+* USS Sovereign for some DS9FX advice regarding timers, inspired in one of DS9FX Pulsar files for improved rotations, AND MOST IMPORTANTLY, for giving me permission to adopt fragments of his Slipstream Module for Intra-System-Intercept. Those sections, while still modified to be adjusted to the script, still fall under "All Rights Reserved" so you cannot modify or repacakge them without USS Sovereign's permission!
+** Again USS Sovereign for helping me notice NormalWarp and EnhancedWarp were All Rights Reserved by USS Frontier and could not be modified directly without violating such license, helping me from suffering a legal headache.
+* USS Frontier for GalaxyCharts.
+* The authors of https://www.gamefront.com/games/bridge-commander/file/normandy-sr-1, https://www.gamefront.com/games/bridge-commander/file/normandy-sr-2 and https://www.gamefront.com/games/bridge-commander/file/turian-frigate (apparently Bones) for the original Normandy SR-1, SR-2 (Alliance and Cerberus), and the Turian fighter and Turian Frigate, whose READMES have also been included on this mod and which seem to only fall under teh SDK license (their contact is 1701abcde@gmail.com or PM them at http://www.bc-central.com/forums if there's any issue).
+** Excerpt from both readmes (in case something happens and they are lost):
+*** Bioware: Mass Effect 1&2&3 ; Normandy SR1 and SR2 Mesh and Turian Fighter and Frigate.
+*** Activision/Totally Games: For Bridge Commander
+*** Paramount and Gene Roddenberry: For Star Trek
+*** dr_mccoy 11/Bones: Model conversion, new textures for Alliance version
+*** BETA TESTERS for original sr1 and sr2 mods: TiqHud, Killallewoks, FarShot and Shadowknight1
+*** SPECIAL THANKS TO BRIDGE COMMANDER CENTRAL COMMUNITY AND BETA TESTERS FOR ALL FEEDBACK AND SUPPORT.
+* Defiant for some scripts that drew inspiration (or were practically used as a base), particularly the original SubModels.
+* jayce AKA Resistance Is Futile for the original BorgAttack.py which I patched to support GC and no GC without issue.
+* WileyCoyote (michaelwileyart@gmail.com) for the Crossfield Phaser sounds (already mentioned of the Crossfield's separate readme).
+* BCC Community for feedback.
+* That Guy... Brian (ThatGuyBrian, trekker12@hotmail.com) - for Model Conversion of the original Protostar and Crossfield models (already mentioned on the Crossfield's separate readme), the Crossfield original HP (already mentioned on the Crossfield's separate readme), and for telling me to install Nifskope, that tool has proven to be very useful to me.
+** Original Prodigy model extracted from Star Trek Prodigy: Supernova. https://drive.google.com/file/d/1BMaT2_i5KBIqZ5Am1Hr4vK-81yZQ9GsE/view
+** Original Crossfield model (from the aforementioned https://www.gamefront.com/games/bridge-commander/file/crossfield-class) ported from Star Trek: Adversaries (https://store.steampowered.com/app/815040/Star_Trek_Adversaries/)
+* Grey da Derg#2305 aka Greystar for Model Conversion of the High-End Protostar model and adjustments.
+** High-end USS Protostar Model made by LoganRolphh on sketchfab, falls under Creative Commons - Attribution https://sketchfab.com/3d-models/star-trek-prodigy-protostar-class-93efdd42825b410a88e77ed8e4119ff8
+* Spore Drive sprites taken from Star Trek Discovery images uploaded to Memory Alpha wiki (https://memory-alpha.fandom.com/wiki/File:JahSepp.jpg, https://memory-alpha.fandom.com/wiki/File:Mycelial_network.jpg) and then modified to suit BC and add transparency.
+* The authors of https://www.gamefront.com/games/bridge-commander/file/battlestar-galactica-fleet-pack, https://www.gamefront.com/games/bridge-commander/file/battlestar-galactica-w-colonial-viper and https://www.gamefront.com/games/bridge-commander/file/battlestar-galactica-ship-pack-2 for basically all the BSG vessels changed by this mod, whose READMES have also been included on this mod (their contact is 1701abcde@gmail.com or PM them at http://www.bc-central.com/forums if there's any issue).
+** Excerpt from readmes (in case something happens and they are lost - also I'm including the models readmes even though this mod does not package any from the Battlestar Galactica mods):
+*** Regarding the "battlestar-galactica-fleet-pack" (2003 Battlestar Galactica Pack):
+**** Thanks to lost_Jedi the original missiles all have smoke trails on them which makes them look much cooler.
+**** All the credits for the original models except for the Blackbird Fighter go to Coxxon, although Dave975 and MadJohn added a few improvements to them, such as afterburners, glows and engine textures. The HP's were done by Dave975 and MadJohn. The Blackbird model was done by Dave975 since it wasn't included with Coxxon's models, and DKealt was kind enough to add the textures to it. Sfx were all done by Dave975.
+*** Regarding the "battlestar-galactica-ship-pack-2 (1978 Battlestar Galactica Pack version 2.0):
+**** "Gene ...You are a God..."
+**** Overall readme:
+***** Meshes 			- Maudib/MadJohn 	SFCommand Conversion  --- See Original Read me's.
+***** Hardpoints		- Madjohn		
+***** Carrier Files		- MadJohn		*Included but not tested at time of release*
+***** Weapons			- MadJohn
+***** Battlestar Pack 	- Blackrook32
+***** The Few who Helped, BlackRook32 for his Colonial Battlestar Fleet, chears m8ty ;)
+***** Vessel Statistics from http://www.tecr.com/galactica/index.html [Ver2 note]this link is now dead  Shame as it was IMHO, THE 'Best' BSG site on the web.
+***** Also worth a look http://ravensbranch.allen.com/galacticaships.html
+**** COLUMBIA CLASS - BATTLESTAR - Galatica BS-75 (also applies for 1978-1980 Atlantia, Acropolis, Bellerophon, Columbia, Olympia, Pacifica, Pegasus, Prometheus, Cerberus, Rycon and Solaria)
+***** Meshes 		Maudib/MadJohn		SFCommand Conversion --- See Original Read me's.
+***** Hardpoints	MadJohn		Finaly!!!!! Weeks of blood, sweat and caffine.
+***** Carrier Files	MadJohn		*Included but not tested at time of release*
+***** Weapons		MadJohn
+**** HadesBasestar -  Ver.2.0   by MadJohn  
+***** General Stuff: HADES CLASS BASESTAR
+***** Meshes 		Maudib/MadJohn		SFCommand Conversion --- See Original Read me's.
+***** Hardpoints	MadJohn		Finaly!!!!! Weeks of blood, sweat and caffine.
+***** Carrier Files	MadJohn		*Included but not tested at time of release*
+***** Weapons		MadJohn
+**** Cylon Mk 10 Raider Ver.2.0	by MadJohn 	14/09/2004
+***** Details:
+****** Meshes 		Maudib/MadJohn		SFCommand Conversion  --- See Original Read me's.
+****** Hardpoints	MadJohn
+****** Weapons		MadJohn
+***** Description: This is the second version of my Cylon Raider, based on the Original series of BSG. 
+***** CREDITS: Blackrook32 for all his help and suggestions.
+**** Colonial Viper Mk 1  Ver.2.0	by MadJohn 	14/09/2004
+***** Details:
+****** Meshes 		Maudib/MadJohn		SFCommand Conversion  --- See Original Read me's.
+****** Hardpoints	MadJohn
+****** Weapons		MadJohn
+***** Description: This is the second version of my Colonial Viper Mk 1, based on the Original series of BSG. 
+***** CREDITS: Blackrook32 for all his help and sugestions.
+**** Original SFCommand Conversions:
+***** Model:			Colombia Class Colonial Battlestar
+****** Modeller:			Maudib
+****** Conversion/Scaling:	Kane Anuenue
+****** Hard/Damage Points:	Kane Anuenue
+****** Illumination:		Kane Anuenue
+****** Break Mod:			Kane Anuenue
+****** UI use for hp/dp:		XMMER
+***** Model:			Hades Class Cylon Basestar
+****** Modeller:		Maudib
+****** Conversion/Scaling:	Kane Anuenue
+****** Hard/Damage Points:	Kane Anuenue
+****** Illumination:		Kane Anuenue
+****** Break Mod:		Kane Anuenue
+****** UI use for hp/dp:	XBS
+***** Model:			Raider Class Cylon Fighter
+****** Modeller:		Maudib
+****** Conversion/Scaling:	Kane Anuenue
+****** Hard/Damage Points:	N/A
+****** Illumination:		Kane Anuenue
+****** Break Mod:		Kane Anuenue
+****** UI use for hp/dp:	N/A
+***** Model:			Starhound Class Colonial Viper
+****** Modeller:		Maudib
+****** Conversion/Scaling:	Kane Anuenue
+****** Hard/Damage Points:	N/A
+****** Illumination:		Kane Anuenue
+****** Break Mod:		Kane Anuenue
+****** UI use for hp/dp:	N/A
+*** Regarding "battlestar-galactica-w-colonial-viper" (1978 Battlestar Galactica Pack version 0.9):
+**** General Stuff:
+***** File		BSG_Battlestar_V.0.9.zip
+****** Ship/s		Colonial Battlestar Ver 0.9
+****** Meshes 		MadJohn		SFCommand Conversion --- See Original Read me's.
+****** Hardpoints	MadJohn		Finaly!!!!! Weeks of blood, sweat and caffine.
+****** Carrier File	MadJohn
+****** SFX		Nine of Nine	PulsePhaserJLH.wav from Defiant V1.5
+**** Original SFCommand Conversions:
+***** Model:			Colombia Class Colonial Battlestar
+****** Modeller:		Maudib
+****** Conversion/Scaling:	Kane Anuenue
+****** Hard/Damage Points:	Kane Anuenue
+****** Illumination:		Kane Anuenue
+****** Break Mod:		Kane Anuenue
+****** UI use for hp/dp:	XMMER
+***** Model:			Starhound Class Colonial Viper
+****** Modeller:		Maudib
+****** Conversion/Scaling:	Kane Anuenue
+****** Hard/Damage Points:	N/A
+****** Illumination:		Kane Anuenue
+****** Break Mod:		Kane Anuenue
+****** UI use for hp/dp:	N/A
+*** Stuff common to all SFCommand Conversions (please note that the following seems to be a generic cover-all license/legal/copyright document, that some stuff like "creating missions" does not apply to this mod nor the mods that we are using for ship models):
+***** Copyright and Distribution Permissions 
+***** -------------------------------------- 
+***** THIS PATCH IS NOT MADE, DISTRIBUTED, OR SUPPORTED BY INTERPLAY TM & (C) INTERPLAY & TALDREN & PARAMOUNT PICTURES. 
+***** Copyright notices: 
+***** Battlestar Galactica (and the various logo devices used in them) are copyright Universal City Studios, as are the  characters, related images, and sound from the productions. 
+***** Star Trek, Star Fleet Command, Star Trek: Deep Space Nine, Star Trek: The Next Generation, Star Trek: Voyager (and the various logo devices used in them) are copyright Paramount Pictures, as are the  characters, related images, and sound from the productions. 
+***** LEGAL STUFF: This file is not supported or affiliated with Interplay Productions. While most who have used these files have had no problems, we will not be held accountable for any damage done to your computer by use of these files or techniques. USE AT YOUR OWN RISK! This file is freeware. It is not to be sold. 
+***** Copyrights 
+***** User-created missions contain source-code that is the property of Interplay Productions and Quicksilver Software. In addition, Star Trek is a property of Paramount Pictures. Star Fleet Battles is the property of ADB, Inc. You may not sell user-created missions commercially. You should respect the rights of the property owners. Missions created based on Star Fleet Battles material must be marked "Based on copyrighted material by ADB, Inc."in the documentation or mission briefing. ADB also requests that these missions not be placed on "out of network" SFB web-sites. 
+***** SOFTWARE USE LIMITATIONS AND LIMITED LICENSE 
+***** Any Star Trek: Starfleet Command mission (each, a "Mission", and collectively, "Missions") created using the Star Trek: Starfleet Command Mission API ("SFC Mission API") is intended solely for your personal, noncommercial home entertainment use. You may not decompile, reverse engineer, or disassemble SFC Mission API or any Mission, except as permitted by law. Interplay Entertainment Corp. ("Interplay") retains all rights and title in SFC Mission API and the Missions including all intellectual property rights embodied therein and derivatives thereof. SFC Mission API and the Missions, including, without limitation, all code, data structures, characters, images, sounds, text, screens, game play, derivative works and all other elements may not be copied (except as provided below), sold, rented, leased, distributed (except as provided below), used on pay-per-play, coin-op or other for-charge basis, or for commercial purpose. You may make copies of SFC Mission API and any Mission for your personal, noncommercial  home entertainment use and to give to friends and acquaintances on a no cost, noncommercial basis. This limited right to copy or provide public access to the SFC Mission API and the Missions expressly excludes any copying, access or distribution of SFC Mission API and the Missions on a commercial basis, including, without limitation, bundling SFC Mission API or any Mission with any other product or service, selling SFC Mission API or any Mission, and any giveaway in connection with another product or service. Any permissions granted herein are provided on a temporary basis and can be withdrawn by Interplay at any time. All rights not expressly granted herein are reserved. No technical support from either Interplay or Quicksilver Software, Inc. ("Quicksilver") shall be available  for SFC Mission API or any Mission. 
+***** INTERPLAY AND QUICKSILVER DISCLAIM ALL WARRANTIES, EXPRESS OR IMPLIED, RELATING TO SFC MISSION API AND THE MISSIONS (INCLUDING WITHOUT LIMITATION, MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT), AND NEITHER INTERPLAY NOR QUICKSILVER SHALL HAVE ANY RESPONSIBILITY OR LIABILITY REGARDING SFC MISSION API AND THE MISSIONS, INCLUDING, WITHOUT LIMITATION, ANY RESPONSIBILITY OR LIABILITY REGARDING USE OR OPERABILITY OF SFC MISSION API AND THE MISSIONS. YOU ASSUME ALL RISK OF LOSS IN CHOOSING TO USE SFC MISSION API AND THE MISSIONS. 
+***** SFC Mission API and all Missions © 1999 Interplay Entertainment Corp. SFC Mission API and Star Trek: Starfleet  Command are trademarks of Interplay Entertainment Corp. All Rights Reserved. 
+* Mass Effect FTL sounds and Mass Accelerator sounds from ME3 final space battle, taken from Gamer's Little Playground's channel https://www.youtube.com/watch?v=iEoBsKALnxE
+* Thanix cannon sounds: from N7Reinas's channel https://www.youtube.com/watch?v=hByyA01r0dA recording of ME2
+* Original Electric Explosion effect, modified for the Eezo field, taken from VonFrank's work in BC:Remastered.
+* Original Spore Drive Effect, modified for the Spore Drive, is a modified version of the Electric Explosion Effect mentioned above, combined with Mycelial Network images taken from ST:Discovery.
+* Grey da Derg#2305 aka Greystar, and 𝕟𝕒𝕣𝕣𝕠𝕨𝕔𝕨𝕪𝕗𝕖 aka Hexagonal_Nexul for the original Hardpointing/Sounds/Scripting from BC Remastered Orion (from which the Protostar ship was taken from) and an updated version.
+* Original ST:Discovery torpedoes by Zambie Zan, alexandre.marques@gmail.com (already mentioned on the Crossfield's separate readme).
+* Everyone else from the other mods I mentioned, which have their own readmes crediting them - please feel free to contact me (tardis#2540 on Discord, CharaToLoki on Gamefront) to correct any potential issues, thank you.
+* Michael Giachinno for the ST Prodigy Intro music.
+* Bonnie Gordon for the Protostar computer voice.
+* Kobollian FTL Dimensional jump sound from youtuber Muernu's Battlestar Galactica recording https://www.youtube.com/watch?v=sGCfC4NvQaY at around minute 1:04 - by Universal Studios.
+* 1978 Galactica's weaponry sound from youtuber Darth Plagueis' Battlestar Galactica recording https://www.youtube.com/watch?v=0M3O1pde3Ek at around minute 1:02 - by Universal Studios.
+* BSG2003ExplosionFlash.tga and BSG2003ExplosionEFlash.tga, derived from a screenshot of Cumbrian Transport Lover's 2004 Battlestar Galactica's intro recording (https://www.youtube.com/watch?v=XPBzHa2PcS8) made by R&D TV, British Sky Broadcasting (BSkyB), NBC Universal Television, Universal Media Studios (UMS).
+* 1978 Ultra-Drive Sounds from youtuber IntroGameOver's recording of Battlestar Galactica 2003 PS2 videogame https://www.youtube.com/watch?v=zW9C-xSYq44 - by Warthog Games and published by Universal Interactive (Universal Studios).
+* Tools used:
+** Audacity to fix some sounds, and import and fix some recordings.
+** BCUT to import the BCMods, and to create a skeleton template for carriers, some Custom files, and some hardpoints.
+** GIMP to modify and create textures and icons, amongst them some FTL textures.
+** Milkshape 3D and FreeCAD for checking some pre-existing models, and editing the Protostar model.
+** Model Property Editor to iron-out a few hardpoints and carriers.
+** Nifskope to validate the textures.
+** Notepad: pretty much used to modify or expand anything else (that can be safely edited with this tool, like .txt, or .py).
+** Windows Explorer for new file creation and file renaming when necessary.
+* Grey da Derg#2305, Grim455#4905 aka THE SCI-FI KING, HexagonalNexul and MSR1701 for helping with noticing bugs and their cause, and for being inquisitive and finding out possible ways to tweak the hardpoints and techs and models.
+* Alex SL Gato (aka CharaToLoki) for any new code or model implemented, fixed or modified (including all the monkey patches and the icon), plus (but not only):
+** Importing/recording new sounds for the 2003 and 1978 BSG FTLs and BSG 1978 Weapon.
+** BSG2003ExplosionFlash.tga and BSG2003ExplosionEFlash.tga, derived from Cumbrian Transport Lover's 2004 Battlestar Galactica's intro recording.
+
+Fulfilling both the SDK and LGPL licenses:
+THIS MOD IS NOT SUPPORTED BY ACTIVISION
+
+This mod falls under the GNU LESSER GENERAL PUBLIC LICENSE Version 3, 29 June 2007, both from any derivative or original work done to the mod. Everyone is permitted to copy and distribute verbatim copies of this mod. As per the LPGL license, everything in this mod is open for everybody to use, read and modify. Just do not forget to credit everyone involved and follow the LGPL license so derivatives of this code remain LGPL.
+
+PointDefence.py (apparently under BSD license so despite the things I make have NO merchantibility and this mod MUST NOT be sold, only freely given and shared, I need to copy this line down here): 
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+Fulfilling USS Sovereign's conditions:
+
+All sections based on USS Sovereign's Slipstream module fall under All Rights Reserved. Do not modify or repackage those sections of the mod without extreme permission from the authors:
+---- USS Sovereign condition: that this mod is intended to be released for KM and not for REP, RE nor REM-related mods.
+---- Alex SL Gato condition: does not mind as long as USS Sovereign and he are being credited and both Mario and himself's conditions are covered.
+
+Those sections are left clear with two text banners, from "BEGINNING OF USS SOVEREIGN'S LIMITED PERMISSION AREA" to "END OF USS SOVEREIGN'S LIMITED PERMISSION AREA", to ensure people do not accidentally copy those sections.
+
+Fulfilling the BorgAttack conditions as best as possible (the following goes for BasicAttack and BorgAttack only):
+
+*NOTE* This AI can replace the current Borg AI found in use in KM1.0
+
+The python files included have been created by jayce and some assistance from Defiant with the exception of the BasicAttack AI.
+The original author or modifier of this file is unknown for me (jayce) to give the proper credits. Aparently, it is necessary in order to use the BorgAttack AI in Quickbattle. It was obtain undoubtedly in one of the very many downloads of Borg vessels that I (jayce) have acquired over the the years, with most new downloads replacing the older one. The BasicAttack.py AI file was not altered in any way, so if the author sees their handywork, please contact me and claim it.
+
+If you distribute this AI with another mod, make every attempt to list this AI version clearly in your readme file so that people can know that it's safe to override if they want to. If you distribute this AI with another mod, it must contain the entire AI and not just parts of it. Meaning if you distribute the Borg AI, it needs to contain both the BorgAttack.pyc and the BasicAttack.py together with the mod. I absolutely do not want to see any BorgAttack.py files from this AI distributed with any other mods. Period. The last thing I want to hear is how someone's AI is not working right because of an altered (.py) file. There is a reason why this AI is being released in (.pyc) form.
+
+
+== Bugs ==

@@ -2,12 +2,11 @@
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
 # GC is ALL Rights Reserved by USS Frontier, but since GC supports Plugins it is fair to release a new TravellingMethod or patch old ones as long as the files remain unmodified.
 # BSG1978UltraLightDrive.py
-# prototype custom travelling method plugin script, by USS Frontier (Enhanced Warp, original) and then modified by Alex SL Gato for Mass Effect FTL
+# prototype custom travelling method plugin script, by USS Frontier (Enhanced Warp, original) and then modified by Alex SL Gato for BSG 1978 Ultra-Light Drive.
 # 22nd September 2025
 #################################################################################################################
 ##########	MANUAL
 #################################################################################################################
-#TO-DO UPDATE THIS MANUAL
 # NOTE: all functions/methods and attributes defined here (in this prototype example plugin, BSG1978UltraLightDrive) are required to be in the plugin, with the exclusion of:
 # ------ MODINFO, which is there just to verify versioning.
 # ------ import Camera
@@ -278,7 +277,7 @@ def IsShipEquipped(pShip):
 		return 0
 
 	pInstanceDict = pInstance.__dict__
-	if pInstanceDict.has_key("Alternate-Warp-FTL") and pInstanceDict["Alternate-Warp-FTL"].has_key("Setup") and pInstanceDict["Alternate-Warp-FTL"]["Setup"].has_key(subTechFTLName): # TO-DO AQÍ FALLA ALGO EN ACROPOLIS@@@ You need to add a foundation technology to this vessel "AlternateSubModelFTL"
+	if pInstanceDict.has_key("Alternate-Warp-FTL") and pInstanceDict["Alternate-Warp-FTL"].has_key("Setup") and pInstanceDict["Alternate-Warp-FTL"]["Setup"].has_key(subTechFTLName): # You need to add a foundation technology to this vessel "AlternateSubModelFTL"
 		return 1
 	else:
 		return 0
@@ -551,7 +550,6 @@ def CanTravel(self):
 										App.g_kLocalizationManager.Unload(pDatabase)
 							return "Inside Starbase12"
 	except:
-		print "TO-DO ERROR"
 		traceback.print_exc()
 	return 1
 
@@ -722,6 +720,8 @@ def PlayBSG1978UltraLightDriveSound(pAction, pWS, sType, sRace):
 
 			if sType == "Enter Warp":
 				sFile = "scripts/Custom/TravellingMethods/SFX/enterBSG1978FTL.wav"
+			elif sType == "Entering Warp":
+				sFile = "scripts/Custom/TravellingMethods/SFX/vooshBSG1978FTL.wav"
 			else:
 				sFile = "scripts/Custom/TravellingMethods/SFX/exitBSG1978FTL.wav"
 
@@ -766,12 +766,13 @@ def CreateElectricExplosion(fSize, fLife, pEmitFrom, bOwnsEmitFrom, pEffectRoot,
 	
 	pExplosion = App.AnimTSParticleController_Create()
 
-	pExplosion.AddColorKey(0.1, colorKey[0]/255.0, colorKey[1]/255.0, colorKey[2]/255.0)
-	pExplosion.AddColorKey(0.5, colorKey2[0]/255.0, colorKey2[1]/255.0, colorKey2[2]/255.0)
-	pExplosion.AddColorKey(1.0, 1.0 / 255, 1.0 / 255, 1.0 / 255)
+	pExplosion.AddColorKey(0.1, colorKey[0]/ 255.0, colorKey[1]/ 255.0, colorKey[2]/ 255.0)
+	pExplosion.AddColorKey(0.5, colorKey2[0]/ 255.0, colorKey2[1]/ 255.0, colorKey2[2]/ 255.0)
+	pExplosion.AddColorKey(1.0, colorKey2[0]/ 255.0, colorKey2[1]/ 255.0, colorKey2[2]/ 255.0)
 
-	pExplosion.AddAlphaKey(0.4, 1.0)
-	pExplosion.AddAlphaKey(1.0, 0.0)
+	pExplosion.AddAlphaKey(0.0, 1.0)
+	pExplosion.AddAlphaKey(0.8, 0.8)
+	pExplosion.AddAlphaKey(1.0, 0.1)
 
 	pExplosion.AddSizeKey(0.0, 1.0 * fSize)
 	pExplosion.AddSizeKey(0.2, 1.0 * fSize)
@@ -790,7 +791,7 @@ def CreateElectricExplosion(fSize, fLife, pEmitFrom, bOwnsEmitFrom, pEffectRoot,
 	pExplosion.SetEmitFromObject(pEmitFrom)
 	pExplosion.SetDetachEmitObject(bOwnsEmitFrom)
 
-	return pExplosion #App.EffectAction_Create(pExplosion)
+	return pExplosion
 
 # An aux function
 def EezoField(pAction, pWS, sType, sRace, amount=50, sparkSize=0.05, type="Enter Warp"):
@@ -798,28 +799,26 @@ def EezoField(pAction, pWS, sType, sRace, amount=50, sparkSize=0.05, type="Enter
 	if pShip == None:
 		return 0
 
-	colorKey = [255.0 / 255, 255.0 / 255, 255.0 / 255]
-	colorKey2 = [255.0 / 255, 255.0 / 255, 255.0 / 255]
+	colorKey = [255.0, 255.0, 255.0]
+	colorKey2 = [255.0, 255.0, 255.0]
 	try:
 		import Custom.NanoFXv2.NanoFX_Lib
 		colorKey = Custom.NanoFXv2.NanoFX_Lib.GetOverrideColor(pShip, sType)
 		if colorKey == None:
-			colorKey = [255.0 / 255, 255.0 / 255, 255.0 / 255]
+			colorKey = [255.0, 255.0, 255.0]
 	except:
-		colorKey = [255.0 / 255, 255.0 / 255, 255.0 / 255]
+		colorKey = [255.0, 255.0, 255.0]
 
 	if type == "Enter Warp":
 		colorKey2[1] = colorKey2[1] * 0.5
-		colorKey2[2] = colorKey2[0] * 0.1
+		colorKey2[2] = colorKey2[2] * 0.1
 	elif type == "Exit Warp":
 		colorKey[0] = colorKey[0] * 0.1
 		colorKey[1] = colorKey[1] * 0.5
-		
 
 	iCycleCount = 1
 	if amount > 0 and sparkSize > 0:
-		pElectricShockSequence = App.TGSequence_Create()
-
+		pElectricShockSequence = None
 		pShipNode = pShip.GetNode()
 		pSet =	pShip.GetContainingSet()
 		pSetERoot = None
@@ -828,32 +827,36 @@ def EezoField(pAction, pWS, sType, sRace, amount=50, sparkSize=0.05, type="Enter
 		rShip = pShip.GetRadius()
 
 		LoadGFX(8, 1, 'data/Textures/Effects/EezoElectricExplosion.tga')
+		try:
+			while (iCycleCount <= amount):
+				pEmitPos = pShip.GetRandomPointOnModel()
+				pExplosion = CreateElectricExplosion(rShip * sparkSize, 1.0, pEmitPos, 0, pShipNode, colorKey, colorKey2, fFrequency = 1.0, fEL = 1.0)
+				pAExplosion = None
+				if pExplosion != None:
+					pAExplosion = App.EffectAction_Create(pExplosion)
+				if pAExplosion != None:
+					if pElectricShockSequence == None:
+						pElectricShockSequence = App.TGSequence_Create()
+					pElectricShockSequence.AddAction(pAExplosion, App.TGAction_CreateNull(), iCycleCount * 0.005)
 
-		while (iCycleCount <= amount):
-			pEmitPos = pShip.GetRandomPointOnModel()
-			pExplosion = CreateElectricExplosion(rShip * sparkSize, 1.0, pEmitPos, 0, pShipNode, colorKey, colorKey2)
-			pAExplosion = None
-			if pExplosion != None:
-				pAExplosion = App.EffectAction_Create(pExplosion)
-			if pAExplosion != None:
-				pElectricShockSequence.AddAction(pAExplosion, App.TGAction_CreateNull(), iCycleCount * 0.005)
+				if pSetERoot != None:
+					pEmitPos2 = pShip.GetRandomPointOnModel()
+					pExplosion2 = CreateElectricExplosion(rShip * sparkSize, 1.0, pEmitPos2, 0, pSetERoot, colorKey, colorKey2, fFrequency = 1.0, fEL = 3.0)
+					pAExplosion2 = None
+					if pExplosion2 != None:
+						pAExplosion2 = App.EffectAction_Create(pExplosion)
+					if pAExplosion2 != None:
+						pElectricShockSequence.AddAction(pAExplosion2, App.TGAction_CreateNull(), iCycleCount * 0.005)
 
-			if pSetERoot != None:
-				pEmitPos2 = pShip.GetRandomPointOnModel()
-				pExplosion2 = CreateElectricExplosion(rShip * sparkSize, 1.0, pEmitPos, 0, pSetERoot, colorKey, colorKey2, fEL = 3.0)
-				pAExplosion2 = None
-				if pExplosion2 != None:
-					pAExplosion2 = App.EffectAction_Create(pExplosion)
-				if pAExplosion2 != None:
-					pElectricShockSequence.AddAction(pAExplosion2, App.TGAction_CreateNull(), iCycleCount * 0.005)
-
-			iCycleCount = iCycleCount + 1
-
-		pElectricShockSequence.Play()
+				iCycleCount = iCycleCount + 1
+		except:
+			traceback.print_exc()
+		if pElectricShockSequence != None:
+			pElectricShockSequence.Play()
 
 	return 0
 
-# Create flash effect on a ship, I found it on a projectile library, but I think
+# Create flash effect on a ship
 def EezoEnterExitFlash(pAction, pWS):
 	pShip = pWS.GetShip()
 	if pShip == None:
@@ -1036,14 +1039,13 @@ def SetupSequence(self):
 
 	# Extra added for Ultra-Light-Drive
 	pWarpEezoEffectAction1 = App.TGScriptAction_Create(__name__, "EezoField", pWS, "PlasmaFX", sRace, eDensity, sparkSize, "Enter Warp")
-	pEngageWarpSeq.AddAction(pWarpEezoEffectAction1, None, 0.5)
+	pEngageWarpSeq.AddAction(pWarpEezoEffectAction1, None, fEntryDelayTime * 0.5)
 
-	pBoostAction = App.TGScriptAction_Create(sCustomActionsScript, "BoostShipSpeed", pShip.GetObjID(), 1, 500.0)
+	pBoostAction = App.TGScriptAction_Create(sCustomActionsScript, "BoostShipSpeed", pShip.GetObjID(), 1, 10000.0)
 	pEngageWarpSeq.AddAction(pBoostAction, pWarpSoundAction1, 0.7)
 
-	# Extra added for Ultra-Light-Drive
-	pWarpEezoEffectAction1b = App.TGScriptAction_Create(__name__, "EezoField", pWS, "PlasmaFX", sRace, eDensity, sparkSize, "Enter Warp")
-	pEngageWarpSeq.AddAction(pWarpEezoEffectAction1b, pBoostAction)
+	pWarpSoundAction1v = App.TGScriptAction_Create(__name__, "PlayBSG1978UltraLightDriveSound", pWS, "Entering Warp", sRace)
+	pEngageWarpSeq.AddAction(pWarpSoundAction1v, pBoostAction)
 
 	try:
 		import Custom.NanoFXv2.WarpFX.WarpFX
@@ -1063,26 +1065,26 @@ def SetupSequence(self):
 			if fCount >= fTimeToFlash:
 				break
 
-	# Create the warp flash. - THIS METHOD HAS NONE
+	# Create the warp flash.
 	#pFlashAction1 = App.TGScriptAction_Create("Actions.EffectScriptActions", "WarpFlash", pShip.GetObjID())
 	#pFlashAction1 = App.TGScriptAction_Create(__name__, "EezoEnterExitFlash", pWS)
 	#pEngageWarpSeq.AddAction(pFlashAction1, None, fTimeToFlash)
 
-	# Hide the ship.
-	pHideShip = App.TGScriptAction_Create(sCustomActionsScript, "HideShip", pShip.GetObjID(), 1)
-	pEngageWarpSeq.AddAction(pHideShip, fTimeToFlash, 2.0)
+	# Hide the ship... wait, we don't need to for this method!
+	#pHideShip = App.TGScriptAction_Create(sCustomActionsScript, "HideShip", pShip.GetObjID(), 1)
+	#pEngageWarpSeq.AddAction(pHideShip, pBoostAction, fTimeToFlash)
 
 	pUnBoostAction = App.TGScriptAction_Create(sCustomActionsScript, "BoostShipSpeed", pShip.GetObjID(), 0, 1.0)
-	pEngageWarpSeq.AddAction(pUnBoostAction, pHideShip)
+	pEngageWarpSeq.AddAction(pUnBoostAction, pBoostAction, fTimeToFlash)
 	
 	pCheckTowing = App.TGScriptAction_Create(sCustomActionsScript, "EngageSeqTractorCheck", pWS)
-	pEngageWarpSeq.AddAction(pCheckTowing, pHideShip)	
+	pEngageWarpSeq.AddAction(pCheckTowing, pUnBoostAction)	
 
 	pEnWarpSeqEND = App.TGScriptAction_Create(sCustomActionsScript, "NoAction")
-	pEngageWarpSeq.AddAction(pEnWarpSeqEND, pUnBoostAction, 2.5)
+	pEngageWarpSeq.AddAction(pEnWarpSeqEND, pUnBoostAction, 0.5)
 
 	############### mid sequence begins ########
-	# Extra added for Mass Effect
+	# Extra added for Ultra-Light-Drive
 	#pWarpEezoEffectAction2 = App.TGScriptAction_Create(__name__, "EezoField", pWS, "PlasmaFX", sRace, mDensity, sparkSize)
 	#pDuringWarpSeq.AddAction(pWarpEezoEffectAction2, None, 1.0)
 	#pMidWarpSeqEND = App.TGScriptAction_Create(sCustomActionsScript, "NoAction")
@@ -1105,34 +1107,26 @@ def SetupSequence(self):
 			pCameraAction4 = App.TGScriptAction_Create("Actions.CameraScriptActions", "DropAndWatch", pcDest, pPlayer.GetName())
 			pExitWarpSeq.AddAction(pCameraAction4, pDisallowInput)
 	
-		# Hide the ship.
-		pHideShip = App.TGScriptAction_Create(sCustomActionsScript, "HideShip", pShip.GetObjID(), 1)
-		pExitWarpSeq.AddAction(pHideShip, None)
+		# Hide the ship... wait we don't need to for this one
+		#pHideShip = App.TGScriptAction_Create(sCustomActionsScript, "HideShip", pShip.GetObjID(), 1)
+		#pExitWarpSeq.AddAction(pHideShip, None)
 
 		# Check for towee
 		if pWS.Travel.bTractorStat == 1:
 			pHideTowee = App.TGScriptAction_Create(sCustomActionsScript, "HideShip", pWS.Travel.Towee.GetObjID(), 1)
 			pExitWarpSeq.AddAction(pHideTowee, pHideShip)
 
-		# Create the warp flash. THIS METHOD HAS NONE
+		# Create the warp flash.
 		#pFlashAction2 = App.TGScriptAction_Create("Actions.EffectScriptActions", "WarpFlash", pShip.GetObjID())
 		#pFlashAction2 = App.TGScriptAction_Create(__name__, "EezoEnterExitFlash", pWS)
 		#pExitWarpSeq.AddAction(pFlashAction2, pHideShip, 0.7)
 		#pExitWarpSeq.AddAction(pFlashAction2, pHideShip, 0)
 
-		# Extra added for Ultra-Light Drive
-		pWarpEezoEffectAction3a = App.TGScriptAction_Create(__name__, "EezoField", pWS, "PlasmaFX", sRace, exDensity, sparkSize, "Exit Warp")
-		pExitWarpSeq.AddAction(pWarpEezoEffectAction3a, pHideShip, 0.7)
-
-		# Give it a little boost
-		pBoostAction = App.TGScriptAction_Create(sCustomActionsScript, "BoostShipSpeed", pShip.GetObjID(), 1, 400.0)
-		pExitWarpSeq.AddAction(pBoostAction, pWarpEezoEffectAction3a, 0.2)
-
 		# Un-Hide the ship
 		pUnHideShip = App.TGScriptAction_Create(sCustomActionsScript, "HideShip", pShip.GetObjID(), 0)
-		pExitWarpSeq.AddAction(pUnHideShip, pBoostAction, 0.5)
+		pExitWarpSeq.AddAction(pUnHideShip, None)
 
-		# Extra added for Ultra-Light Drive
+		# Extra added for Ultra-Light-Drive
 		pWarpEezoEffectAction3 = App.TGScriptAction_Create(__name__, "EezoField", pWS, "PlasmaFX", sRace, exDensity, sparkSize, "Exit Warp")
 		pExitWarpSeq.AddAction(pWarpEezoEffectAction3, pUnHideShip)
 
@@ -1144,20 +1138,24 @@ def SetupSequence(self):
 			pExitWarpSeq.AddAction(pUnHideTowee, pUnHideShip)
 
 			fCount = 0.0
-			while fCount < 3.6:
+			while fCount < (fTimeToFlash * 0.5):
 				pMaintainTowingAction = App.TGScriptAction_Create(sCustomActionsScript, "MaintainTowingAction", pWS)
 				pExitWarpSeq.AddAction(pMaintainTowingAction, pUnHideTowee, fCount)
 				fCount = fCount + 0.01
-				if fCount >= 3.6:
+				if fCount >= (fTimeToFlash * 0.5):
 					break
+
+		# Give it a little boost
+		pBoostAction = App.TGScriptAction_Create(sCustomActionsScript, "BoostShipSpeed", pShip.GetObjID(), 1, 10000.0)
+		pExitWarpSeq.AddAction(pBoostAction, pWarpEezoEffectAction3)
 
 		# Play the vushhhhh of exiting warp
 		pWarpSoundAction2 = App.TGScriptAction_Create(__name__, "PlayBSG1978UltraLightDriveSound", pWS, "Exit Warp", sRace)
-		pExitWarpSeq.AddAction(pWarpSoundAction2, pUnHideShip)
+		pExitWarpSeq.AddAction(pWarpSoundAction2, pBoostAction)
 	
 		# Make the ship return to normal speed.
 		pUnBoostAction = App.TGScriptAction_Create(sCustomActionsScript, "BoostShipSpeed", pShip.GetObjID(), 0, 1.0)
-		pExitWarpSeq.AddAction(pUnBoostAction, pWarpSoundAction2, 3.0)
+		pExitWarpSeq.AddAction(pUnBoostAction, pUnHideShip, fTimeToFlash * 0.5)
 
 		# And finally finish the exit sequence
 		# actually, just put up a empty action, the Traveler system automatically puts his exit sequence action at the
