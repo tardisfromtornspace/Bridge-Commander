@@ -1,24 +1,27 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
 # GC is ALL Rights Reserved by USS Frontier, but since GC supports Plugins it is fair to release a new TravellingMethod or patch old ones as long as the files remain unmodified.
-# MassEffectFTL.py
+# BSG1978UltraLightDrive.py
 # prototype custom travelling method plugin script, by USS Frontier (Enhanced Warp, original) and then modified by Alex SL Gato for Mass Effect FTL
 # 22nd September 2025
 #################################################################################################################
 ##########	MANUAL
 #################################################################################################################
-# NOTE: all functions/methods and attributes defined here (in this prototype example plugin, MassEffectFTL) are required to be in the plugin, with the exclusion of:
+#TO-DO UPDATE THIS MANUAL
+# NOTE: all functions/methods and attributes defined here (in this prototype example plugin, BSG1978UltraLightDrive) are required to be in the plugin, with the exclusion of:
 # ------ MODINFO, which is there just to verify versioning.
 # ------ import Camera
+# ------ "subTechName", just to make our life easier
 # ------ ALTERNATESUBMODELFTL METHODS subsection, which are exclusively used for alternate SubModels for FTL which is a separate but linked mod, or to import needed modules.
-# ------ Auxiliar functions: "AuxProtoElementNames", "CreateElectricExplosion", "EezoEnterExitFlash", "EezoField", "findShipInstance", "LoadGFX", "PlayMassEffectFTLSound", "MassEffectFTLBasicConfigInfo", "MassEffectFTLDisabledCalculations" and "WatchPlayerShipLeave". 
+# ------ Auxiliar functions: "AuxProtoElementNames", "CreateElectricExplosion", "EezoEnterExitFlash", "EezoField", "findShipInstance", "LoadGFX", "PlayBSG1978UltraLightDriveSound", "BSG1978UltraLightDriveBasicConfigInfo", "BSG1978UltraLightDriveDisabledCalculations" and "WatchPlayerShipLeave". 
 # === How-To-Add ===
 # This Travelling Method is Ship-based, on this case it needs of Foundation and FoundationTech to verify if the ship is equipped with it.
 # This FTL method check is stored inside an "Alternate-Warp-FTL" dictionary, which is a script that should be located at scripts/Custom/Techs/AlternateSubModelFTL.py. While this sub-tech can work totally fine without such module installed, it is recommended to have it.
-# On this case, due to that, only the lines marked with "# (#)" are needed for Mass Effect FTL to work, but the final parent technology may require more:
-# "Mass Effect FTL": is the name of the key. This is the bare minimum for the technology to work
-# "Nacelles": is the name of a key whose value indicates a list of which warp engine property children (nacelles) are part of the Mass Effect FTL system. If all are disabled/destroyed, Mass Effect FTL will not engage. If this field does not exist, it will check all warp hardpoints containing "MassEffect Engine", "Mass Effect Engine", "Mass-Effect Engine" or "Mass Effect FTL" (case-insensitive). Leave as "Nacelles": [] to make it skip this disabled check.
-# "Core": is the name of a key whose value indicates a list of which hardpoint properties (not nacelles) are part of the Mass Effect FTL system. If all are disabled/destroyed, Mass Effect FTL will not engage either. If this field does not exist or "Core": [] this check will be skipped.
+# On this case, due to that, only the lines marked with "# (#)" are needed for BSG 1978 Ultra-Light-Drive to work, but the final parent technology may require more:
+# "BSG 1978 Ultra-Light-Drive": is the name of the key. This is the bare minimum for the technology to work
+# "WNacelles": is the name of a key whose value indicates a list of which warp engine property children (nacelles) are part of the BSG 1978 Ultra-Light-Drive system. If all are disabled/destroyed, BSG 1978 Ultra-Light-Drive will not engage. If this field does not exist or "WNacelles": [] it skips this disabled check.
+# "Nacelles": is the name of a key whose value indicates a list of which hardpoint properties (nacelles) are part of the BSG 1978 Ultra-Light-Drive system. If all are disabled/destroyed, BSG 1978 Ultra-Light-Drive will not engage. If this field does not exist or "Nacelles": [] it skips this disabled check. Only use this field if your hardpoint does not allow you to have a primary warp control subsystem, else use WNacelles as it is more efficient.
+# "Core": is the name of a key whose value indicates a list of which hardpoint properties (not nacelles) are part of the BSG 1978 Ultra-Light-Drive system. If all are disabled/destroyed, BSG 1978 Ultra-Light-Drive will not engage either. If this field does not exist or "Core": [] this check will be skipped.
 # "Enter FTL Density": is the name of a key whose value indicates how many Eezo "sparks" happen when entering FTL. Default is 50. Eezo sparks adopt the tint of the Race's PlasmaFX color.
 # "Mid FTL Density": is the name of a key whose value indicates how many Eezo "sparks" happen when mid FTL. Default is 50. At the moment this Mid value does nothing because during-FTL sequences seem to crash the game.
 # "Exit FTL Density": is the name of a key whose value indicates how many Eezo "sparks" happen when exiting FTL. Default is 50.
@@ -28,16 +31,16 @@
 Foundation.ShipDef.USSProtostar.dTechs = { # (#)
 	"Alternate-Warp-FTL": { # (#)
 		"Setup": { # (#)
-			"Mass Effect FTL": {	"Nacelles": ["Mass Effect Engine"], "Core": ["Element Zero Core"], "Enter FTL Density": 50, "Mid FTL Density": 50, "Exit FTL Density": 50, "Spark Size": 0.05,}, # (#)
+			"BSG 1978 Ultra-Light-Drive": {	"WNacelles": [], "Nacelles": ["Gravitic Initiator"], "Core": ["Tylium Energizer"], "Enter FTL Density": 50, "Mid FTL Density": 50, "Exit FTL Density": 50, "Spark Size": 0.05,}, # (#)
 			"Body": "VasKholhr_Body",
 			"NormalModel":          shipFile,
 			"WarpModel":          "VasKholhr_WingUp",
-			"Mass Effect FTLModel":          "VasKholhr_WingUp",
+			"BSG 1978 Ultra-Light-DriveModel":          "VasKholhr_WingUp",
 			"AttackModel":          "VasKholhr_WingDown",
 			"BodySetScale": 1.0,
 			"NormalSetScale": 1.0,
 			"WarpSetScale": 1.0,
-			"Mass Effect FTLSetScale": 1.0,
+			"BSG 1978 Ultra-Light-DriveSetScale": 1.0,
 			"AttackSetScale": 1.0,
 			"Hardpoints":       {
 				"Proto Warp Nacelle":  [0.000000, 0.000000, 0.075000],
@@ -49,7 +52,7 @@ Foundation.ShipDef.USSProtostar.dTechs = { # (#)
 			"WarpHardpoints":       {
 				"Proto Warp Nacelle":  [0.000000, -0.250000, -2.075000],
 			},
-			"Mass Effect FTLHardpoints":       {
+			"BSG 1978 Ultra-Light-DriveHardpoints":       {
 				"Proto Warp Nacelle":  [0.000000, -1.000000, -2.075000],
 			},
 		}, # (#)
@@ -64,9 +67,9 @@ Foundation.ShipDef.USSProtostar.dTechs = { # (#)
 			"WarpRotation":       [0, 0.349, 0],
 			"WarpPosition":       [0, 0, 0.02],
 			"WarpDuration":       150.0,
-			"Mass Effect FTLRotation":       [0, 0.749, 0],
-			"Mass Effect FTLPosition":       [0, 0, 0.05],
-			"Mass Effect FTLDuration":       150.0,
+			"BSG 1978 Ultra-Light-DriveRotation":       [0, 0.749, 0],
+			"BSG 1978 Ultra-Light-DrivePosition":       [0, 0, 0.05],
+			"BSG 1978 Ultra-Light-DriveDuration":       150.0,
 			},
 		],
         
@@ -80,9 +83,9 @@ Foundation.ShipDef.USSProtostar.dTechs = { # (#)
 			"WarpRotation":       [0, -0.349, 0],
 			"WarpPosition":       [0, 0, 0.02],
 			"WarpDuration":       150.0,
-			"Mass Effect FTLRotation":       [0, -0.749, 0],
-			"Mass Effect FTLPosition":       [0, 0, 0.05],
-			"Mass Effect FTLDuration":       150.0,
+			"BSG 1978 Ultra-Light-DriveRotation":       [0, -0.749, 0],
+			"BSG 1978 Ultra-Light-DrivePosition":       [0, 0, 0.05],
+			"BSG 1978 Ultra-Light-DriveDuration":       150.0,
 			},
 		],
 	}, # (#)
@@ -112,7 +115,7 @@ from bcdebug import debug
 ########
 # name of this travelling method 
 ########
-sName = "Mass Effect FTL"
+sName = "Colonial Ultra-Light-Drive"
 
 ########
 # if this travelling method is ship based. Warp for example is ship based, that means that any ship equipped with it can
@@ -162,12 +165,12 @@ bCanChangeSpeed = 1
 # Phrase to show when ship is engaging this travelling method, the destination name is automatically added to the end
 # so, like in warp, for example, it'll be "Warping to Kronos..."
 ########
-sGoingTo = "Mass Effect driving to"
+sGoingTo = "Ultra-Light-Driving to"
 
 ########
 # Phrase to show when the ship drops out of travel (while travelling)
 ########
-sDropOut = "Dropped out of Mass Effect FTL..."
+sDropOut = "Dropped out of superluminic speeds..."
 
 ########
 # if this travelling method can trigger RDFs when a ship exits travel.
@@ -226,8 +229,9 @@ DISENGAGING_ALTERNATEFTLSUBMODEL = App.UtopiaModule_GetNextEventType() # For whe
 # Reason I'm doing this function pass beyond just passing input parameters to the common function is to allow other TravellingMethod modders more flexibility
 # from Custom.Techs.AlternateSubModelFTL import StartingProtoWarp, ExitSetProto
 
+subTechFTLName = "BSG 1978 Ultra-Light-Drive"
 def KindOfMove(): 
-	return "Mass Effect FTL" # Modify this with the name you are gonna use for the AlternateSubModelFTL
+	return subTechFTLName # Modify this with the name you are gonna use for the AlternateSubModelFTL
 
 def StartingFTLAlternateSubModel(pObject, pEvent, techP, move): # What actions does AlternateSubModelFTL need to do when entering this FTL method
 	if move == None:
@@ -269,19 +273,16 @@ def findShipInstance(pShip):
 
 def IsShipEquipped(pShip):
 	debug(__name__ + ", IsShipEquipped")
-	pWarpEngines = pShip.GetWarpEngineSubsystem()
-	if pWarpEngines:
-		pInstance = findShipInstance(pShip)
-		if not pInstance:
-			return 0
+	pInstance = findShipInstance(pShip)
+	if not pInstance:
+		return 0
 
-		pInstanceDict = pInstance.__dict__
-		if pInstanceDict.has_key("Alternate-Warp-FTL") and pInstanceDict["Alternate-Warp-FTL"].has_key("Setup") and pInstanceDict["Alternate-Warp-FTL"]["Setup"].has_key("Mass Effect FTL"): # You need to add a foundation technology to this vessel "AlternateSubModelFTL"
-			return 1
-		else:
-			return 0
+	pInstanceDict = pInstance.__dict__
+	if pInstanceDict.has_key("Alternate-Warp-FTL") and pInstanceDict["Alternate-Warp-FTL"].has_key("Setup") and pInstanceDict["Alternate-Warp-FTL"]["Setup"].has_key(subTechFTLName): # TO-DO AQÍ FALLA ALGO EN ACROPOLIS@@@ You need to add a foundation technology to this vessel "AlternateSubModelFTL"
+		return 1
 	else:
 		return 0
+	return 0
 
 
 ########
@@ -290,43 +291,46 @@ def IsShipEquipped(pShip):
 ########
 # This is just an auxiliar function I made for this
 def AuxProtoElementNames(*args):
-	# Returns hardpoint property name fragments that indicate are part of the Mass Effect FTL system, and blacklists
-	return ["masseffect engine", "mass-effect engine", "mass effect engine", "mass effect ftl"], ["not a masseffect engine", "not a mass-effect engine", "not a mass effect engine", "not a mass effect ftl", " not masseffect engine", " not mass-effect engine", " not mass effect engine", " not mass effect ftl"]
+	# Returns hardpoint property name fragments that indicate are part of the BSG 1978 Ultra-Light-Drive system, and blacklists
+	return ["ultra-light-drive engine"], ["not an ultra-light-drive engine", "not a ultra-light-drive engine", " not ultra-light-drive engine"]
 
 # This is just another auxiliar function I made for this
-def MassEffectFTLBasicConfigInfo(pShip):
+def BSG1978UltraLightDriveBasicConfigInfo(pShip):
 	pInstance = findShipInstance(pShip) # On this case, IsShipEquipped(pShip) already checked this for us - HOWEVER do not forget to check if you modify the script
 	pInstancedict = None
-	specificNacelleHPList = None 
+	specificNacelleHPList = None
+	specificNacelleWHPList = [] 
 	specificCoreHPList = None
-	enterDensity = 50
-	midDensity = 50
-	exitDensity = 50
+	enterDensity = 200
+	midDensity = 200
+	exitDensity = 200
 	sparkSize = 0.05
 	if pInstance:
 		pInstancedict = pInstance.__dict__ 
-		if pInstancedict.has_key("Alternate-Warp-FTL") and pInstancedict["Alternate-Warp-FTL"].has_key("Setup") and pInstancedict["Alternate-Warp-FTL"]["Setup"].has_key("Mass Effect FTL"):
-			if pInstancedict["Alternate-Warp-FTL"]["Setup"]["Mass Effect FTL"].has_key("Nacelles"): # Use: if the tech has this field, use it. Must be a list. "[]" would mean that this field is skipped during checks.
-				specificNacelleHPList = pInstancedict["Alternate-Warp-FTL"]["Setup"]["Mass Effect FTL"]["Nacelles"]
-			if pInstancedict["Alternate-Warp-FTL"]["Setup"]["Mass Effect FTL"].has_key("Core"): # Use: if the tech has this field, use it. Must be a list. "[]" would mean that this field is skipped during checks.
-				specificCoreHPList = pInstancedict["Alternate-Warp-FTL"]["Setup"]["Mass Effect FTL"]["Core"]
-			if pInstancedict["Alternate-Warp-FTL"]["Setup"]["Mass Effect FTL"].has_key("Enter FTL Density"):
-				enterDensity = pInstancedict["Alternate-Warp-FTL"]["Setup"]["Mass Effect FTL"]["Enter FTL Density"]
-			if pInstancedict["Alternate-Warp-FTL"]["Setup"]["Mass Effect FTL"].has_key("Mid FTL Density"):
-				midDensity = pInstancedict["Alternate-Warp-FTL"]["Setup"]["Mass Effect FTL"]["Mid FTL Density"]
-			if pInstancedict["Alternate-Warp-FTL"]["Setup"]["Mass Effect FTL"].has_key("Exit FTL Density"):
-				exitDensity = pInstancedict["Alternate-Warp-FTL"]["Setup"]["Mass Effect FTL"]["Exit FTL Density"]
-			if pInstancedict["Alternate-Warp-FTL"]["Setup"]["Mass Effect FTL"].has_key("Spark Size"):
-				sparkSize = pInstancedict["Alternate-Warp-FTL"]["Setup"]["Mass Effect FTL"]["Spark Size"]
+		if pInstancedict.has_key("Alternate-Warp-FTL") and pInstancedict["Alternate-Warp-FTL"].has_key("Setup") and pInstancedict["Alternate-Warp-FTL"]["Setup"].has_key(subTechFTLName):
+			if pInstancedict["Alternate-Warp-FTL"]["Setup"][subTechFTLName].has_key("Nacelles"): # Use: if the tech has this field, use it. Must be a list. "[]" would mean that this field is skipped during checks.
+				specificNacelleHPList = pInstancedict["Alternate-Warp-FTL"]["Setup"][subTechFTLName]["Nacelles"]
+			if pInstancedict["Alternate-Warp-FTL"]["Setup"][subTechFTLName].has_key("WNacelles"): # Use: if the tech has this field, use it. Must be a list. "[]" would mean that this field is skipped during checks.
+				specificNacelleWHPList = pInstancedict["Alternate-Warp-FTL"]["Setup"][subTechFTLName]["WNacelles"]
+			if pInstancedict["Alternate-Warp-FTL"]["Setup"][subTechFTLName].has_key("Core"): # Use: if the tech has this field, use it. Must be a list. "[]" would mean that this field is skipped during checks.
+				specificCoreHPList = pInstancedict["Alternate-Warp-FTL"]["Setup"][subTechFTLName]["Core"]
+			if pInstancedict["Alternate-Warp-FTL"]["Setup"][subTechFTLName].has_key("Enter FTL Density"):
+				enterDensity = pInstancedict["Alternate-Warp-FTL"]["Setup"][subTechFTLName]["Enter FTL Density"]
+			if pInstancedict["Alternate-Warp-FTL"]["Setup"][subTechFTLName].has_key("Mid FTL Density"):
+				midDensity = pInstancedict["Alternate-Warp-FTL"]["Setup"][subTechFTLName]["Mid FTL Density"]
+			if pInstancedict["Alternate-Warp-FTL"]["Setup"][subTechFTLName].has_key("Exit FTL Density"):
+				exitDensity = pInstancedict["Alternate-Warp-FTL"]["Setup"][subTechFTLName]["Exit FTL Density"]
+			if pInstancedict["Alternate-Warp-FTL"]["Setup"][subTechFTLName].has_key("Spark Size"):
+				sparkSize = pInstancedict["Alternate-Warp-FTL"]["Setup"][subTechFTLName]["Spark Size"]
 
 	hardpointProtoNames, hardpointProtoBlacklist = AuxProtoElementNames()
 
-	return pInstance, pInstancedict, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, enterDensity, midDensity, exitDensity, sparkSize
+	return pInstance, pInstancedict, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, enterDensity, midDensity, exitDensity, sparkSize, specificNacelleWHPList
 
 # This is just another auxiliar function I made for this
-def MassEffectFTLDisabledCalculations(type, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, pSubsystem, pShip):
-	totalMassEffectFTLEngines = 0
-	onlineMassEffectFTLEngines = 0
+def BSG1978UltraLightDriveDisabledCalculations(type, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, pSubsystem, pShip, justFindOne=0):
+	totalBSG1978UltraLightDriveEngines = 0
+	onlineBSG1978UltraLightDriveEngines = 0
 	if type == "Nacelle":	
 		for i in range(pSubsystem.GetNumChildSubsystems()):
 			pChild = pSubsystem.GetChildSubsystem(i)
@@ -351,9 +355,11 @@ def MassEffectFTLDisabledCalculations(type, specificNacelleHPList, specificCoreH
 						found = (pChildName in specificNacelleHPList)
 
 					if found and not blacklisted:
-						totalMassEffectFTLEngines = totalMassEffectFTLEngines + 1
+						totalBSG1978UltraLightDriveEngines = totalBSG1978UltraLightDriveEngines + 1
 						if pChild.GetCondition() > 0.0 and not pChild.IsDisabled():
-							onlineMassEffectFTLEngines = onlineMassEffectFTLEngines + 1
+							onlineBSG1978UltraLightDriveEngines = onlineBSG1978UltraLightDriveEngines + 1
+							if justFindOne == 1:
+								break
 	elif type == "Core":
 		pShipSet = pShip.GetPropertySet()
 		pShipList = pShipSet.GetPropertiesByType(App.CT_SUBSYSTEM_PROPERTY)
@@ -370,14 +376,16 @@ def MassEffectFTLDisabledCalculations(type, specificNacelleHPList, specificCoreH
 						found = (pSubsystemName in specificCoreHPList)
 
 						if found:
-							totalMassEffectFTLEngines = totalMassEffectFTLEngines + 1
+							totalBSG1978UltraLightDriveEngines = totalBSG1978UltraLightDriveEngines + 1
 							if pSubsystema.GetCondition() > 0.0 and not pSubsystema.IsDisabled():
-								onlineMassEffectFTLEngines = onlineMassEffectFTLEngines + 1
+								onlineBSG1978UltraLightDriveEngines = onlineBSG1978UltraLightDriveEngines + 1
+								if justFindOne == 1:
+									break
 
 		pShipList.TGDoneIterating()
 		pShipList.TGDestroy()
 
-	return totalMassEffectFTLEngines, onlineMassEffectFTLEngines
+	return totalBSG1978UltraLightDriveEngines, onlineBSG1978UltraLightDriveEngines
 
 def CanTravel(self):
 	debug(__name__ + ", CanTravel")
@@ -403,7 +411,7 @@ def CanTravel(self):
 					pSequence.AddAction (pSubtitleAction)
 					pSequence.Play ()
 					App.g_kLocalizationManager.Unload (pDatabase)
-		return "This ship is not equipped with Mass Effect FTL"
+		return "This ship is not equipped with BSG 1978 Ultra-Light-Drive"
 
 	pImpulseEngines = pShip.GetImpulseEngineSubsystem()
 	if not pImpulseEngines:
@@ -417,31 +425,14 @@ def CanTravel(self):
 				MissionLib.QueueActionToPlay(App.CharacterAction_Create(pXO, App.CharacterAction.AT_SAY_LINE, "EngineeringNeedPowerToEngines", None, 1))
 		return "Impulse Engines offline"
 
-	pInstance, pInstancedict, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, _, _, _, _ = MassEffectFTLBasicConfigInfo(pShip)
+	try:
+		pInstance, pInstancedict, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, _, _, _, _, specificNacelleWHPList = BSG1978UltraLightDriveBasicConfigInfo(pShip)
 
-	pWarpEngines = pShip.GetWarpEngineSubsystem()
-	if pWarpEngines:
-		"""
-		if pWarpEngines.IsDisabled():
-			if bIsPlayer == 1:
-				if pHelm:
-					App.CharacterAction_Create(pHelm, App.CharacterAction.AT_SAY_LINE, "CantWarp1", None, 1).Play()
-				else:
-					# No character, display subtitle only.
-					pDatabase = App.g_kLocalizationManager.Load ("data/TGL/Bridge Crew General.tgl")
-					if pDatabase:
-						pSequence = App.TGSequence_Create ()
-						pSubtitleAction = App.SubtitleAction_Create (pDatabase, "CantWarp1")
-						pSubtitleAction.SetDuration (3.0)
-						pSequence.AddAction (pSubtitleAction)
-						pSequence.Play ()
-						App.g_kLocalizationManager.Unload (pDatabase)
-			return "Warp Engines disabled"
-		"""
-		if specificNacelleHPList == None or (specificNacelleHPList != None and len(specificNacelleHPList) > 0):
-			totalMassEffectFTLEngines, onlineMassEffectFTLEngines = MassEffectFTLDisabledCalculations("Nacelle", specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, pWarpEngines, pShip)
+		pWarpEngines = pShip.GetWarpEngineSubsystem()
+		if (specificNacelleWHPList != None and len(specificNacelleWHPList) > 0):
+			totalBSG1978UltraLightDriveEngines, onlineBSG1978UltraLightDriveEngines = BSG1978UltraLightDriveDisabledCalculations("Nacelle", specificNacelleWHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, pWarpEngines, pShip, 1)
 
-			if totalMassEffectFTLEngines <= 0 or onlineMassEffectFTLEngines <= 0:
+			if totalBSG1978UltraLightDriveEngines <= 0 or onlineBSG1978UltraLightDriveEngines <= 0:
 				if bIsPlayer == 1:
 					if pHelm:
 						App.CharacterAction_Create(pHelm, App.CharacterAction.AT_SAY_LINE, "CantWarp1", None, 1).Play()
@@ -456,107 +447,112 @@ def CanTravel(self):
 							pSequence.Play ()
 							App.g_kLocalizationManager.Unload (pDatabase)
 
-				return "Mass Effect FTL Engines disabled"
-		
-		if not pWarpEngines.IsOn():
-			if bIsPlayer == 1:
-				if pHelm:
-					App.CharacterAction_Create(pHelm, App.CharacterAction.AT_SAY_LINE, "CantWarp5", None, 1).Play()
-				else:
-					# No character, display subtitle only.
-					pDatabase = App.g_kLocalizationManager.Load("data/TGL/Bridge Crew General.tgl")
-					if pDatabase:
-						pSequence = App.TGSequence_Create()
-						pSubtitleAction = App.SubtitleAction_Create(pDatabase, "CantWarp5")
-						pSubtitleAction.SetDuration(3.0)
-						pSequence.AddAction(pSubtitleAction)
-						pSequence.Play()
-						App.g_kLocalizationManager.Unload(pDatabase)
-			return "Mass Effect FTL Engines offline"
-	else:
-		return "No Warp Engines"
+				return "BSG 1978 Ultra-Light-Drive Engines disabled"
 
-	if specificCoreHPList != None and len(specificCoreHPList) > 0:
-		totalMassEffectFTLCores, onlineMassEffectFTLCores = MassEffectFTLDisabledCalculations("Core", specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, pWarpEngines, pShip)
+		if (specificNacelleHPList != None and len(specificNacelleHPList) > 0):
+			totalBSG1978UltraLightDriveCores, onlineBSG1978UltraLightDriveCores = BSG1978UltraLightDriveDisabledCalculations("Core", specificNacelleHPList, specificNacelleHPList, hardpointProtoNames, hardpointProtoBlacklist, pWarpEngines, pShip, 1)
 
-		if totalMassEffectFTLCores <= 0 or onlineMassEffectFTLCores <= 0:
-			if bIsPlayer == 1:
-				if pHelm:
-					App.CharacterAction_Create(pHelm, App.CharacterAction.AT_SAY_LINE, "CantWarp1", None, 1).Play()
-				else:
-					# No character, display subtitle only.
-					pDatabase = App.g_kLocalizationManager.Load ("data/TGL/Bridge Crew General.tgl")
-					if pDatabase:
-						pSequence = App.TGSequence_Create ()
-						pSubtitleAction = App.SubtitleAction_Create (pDatabase, "CantWarp1")
-						pSubtitleAction.SetDuration (3.0)
-						pSequence.AddAction (pSubtitleAction)
-						pSequence.Play ()
-						App.g_kLocalizationManager.Unload (pDatabase)
-			return "All Mass Effect cores are disabled"
-
-	pSet = pShip.GetContainingSet()
-	#pNebula = pSet.GetNebula()
-	#if pNebula:
-	#	if pNebula.IsObjectInNebula(pShip):
-	#		if bIsPlayer == 1:
-	#			if pHelm:
-	#				App.CharacterAction_Create(pHelm, App.CharacterAction.AT_SAY_LINE, "CantWarp2", None, 1).Play()
-	#			else:
-	#				# No character, display subtitle only.
-	#				pDatabase = App.g_kLocalizationManager.Load("data/TGL/Bridge Crew General.tgl")
-	#				if pDatabase:
-	#					pSequence = App.TGSequence_Create()
-	#					pSubtitleAction = App.SubtitleAction_Create(pDatabase, "CantWarp2")
-	#					pSubtitleAction.SetDuration(3.0)
-	#					pSequence.AddAction(pSubtitleAction)
-	#					pSequence.Play()
-	#					App.g_kLocalizationManager.Unload(pDatabase)
-	#		return "Inside Nebula"
-
-	# See if we are in an asteroid field
-	AsteroidFields = pSet.GetClassObjectList(App.CT_ASTEROID_FIELD)
-	for i in AsteroidFields:
-		pField = App.AsteroidField_Cast(i)
-		if pField:
-			if pField.IsShipInside(pShip):
+			if totalBSG1978UltraLightDriveCores <= 0 or onlineBSG1978UltraLightDriveCores <= 0:
 				if bIsPlayer == 1:
 					if pHelm:
-						App.CharacterAction_Create(pHelm, App.CharacterAction.AT_SAY_LINE, "CantWarp4", None, 1).Play()
+						App.CharacterAction_Create(pHelm, App.CharacterAction.AT_SAY_LINE, "CantWarp1", None, 1).Play()
 					else:
 						# No character, display subtitle only.
 						pDatabase = App.g_kLocalizationManager.Load ("data/TGL/Bridge Crew General.tgl")
 						if pDatabase:
 							pSequence = App.TGSequence_Create ()
-							pSubtitleAction = App.SubtitleAction_Create (pDatabase, "CantWarp4")
+							pSubtitleAction = App.SubtitleAction_Create (pDatabase, "CantWarp1")
 							pSubtitleAction.SetDuration (3.0)
 							pSequence.AddAction (pSubtitleAction)
-							pSequence.Play ()
+							pSequence.Play()
 							App.g_kLocalizationManager.Unload (pDatabase)
-				return "Inside Asteroid Field"
-					
-	pStarbase12Set = App.g_kSetManager.GetSet("Starbase12")
-	if pStarbase12Set:
-		if pShip.GetContainingSet():
-			if pStarbase12Set.GetObjID() == pShip.GetContainingSet().GetObjID():
-				pStarbase12 = App.ShipClass_GetObject(pStarbase12Set, "Starbase 12")
-				if pStarbase12:
-					import AI.Compound.DockWithStarbase
-					if AI.Compound.DockWithStarbase.IsInViewOfInsidePoints(pShip, pStarbase12):
-						if bIsPlayer == 1:
-							if pHelm:
-								App.CharacterAction_Create(pHelm, App.CharacterAction.AT_SAY_LINE, "CantWarp3", None, 1).Play()
-							else:
-								# No character, display subtitle only.
-								pDatabase = App.g_kLocalizationManager.Load("data/TGL/Bridge Crew General.tgl")
-								if pDatabase:
-									pSequence = App.TGSequence_Create()
-									pSubtitleAction = App.SubtitleAction_Create(pDatabase, "CantWarp3")
-									pSubtitleAction.SetDuration(3.0)
-									pSequence.AddAction(pSubtitleAction)
-									pSequence.Play()
-									App.g_kLocalizationManager.Unload(pDatabase)
-						return "Inside Starbase12"
+
+				return "BSG 1978 Ultra-Light-Drive Engines disabled"
+	
+		if specificCoreHPList != None and len(specificCoreHPList) > 0:
+			totalBSG1978UltraLightDriveCores, onlineBSG1978UltraLightDriveCores = BSG1978UltraLightDriveDisabledCalculations("Core", specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, pWarpEngines, pShip)
+
+			if totalBSG1978UltraLightDriveCores <= 0 or onlineBSG1978UltraLightDriveCores <= 0:
+				if bIsPlayer == 1:
+					if pHelm:
+						App.CharacterAction_Create(pHelm, App.CharacterAction.AT_SAY_LINE, "CantWarp1", None, 1).Play()
+					else:
+						# No character, display subtitle only.
+						pDatabase = App.g_kLocalizationManager.Load ("data/TGL/Bridge Crew General.tgl")
+						if pDatabase:
+							pSequence = App.TGSequence_Create ()
+							pSubtitleAction = App.SubtitleAction_Create (pDatabase, "CantWarp1")
+							pSubtitleAction.SetDuration (3.0)
+							pSequence.AddAction (pSubtitleAction)
+							pSequence.Play()
+							App.g_kLocalizationManager.Unload (pDatabase)
+				return "All Mass Effect cores are disabled"
+
+		pSet = pShip.GetContainingSet()
+		#pNebula = pSet.GetNebula()
+		#if pNebula:
+		#	if pNebula.IsObjectInNebula(pShip):
+		#		if bIsPlayer == 1:
+		#			if pHelm:
+		#				App.CharacterAction_Create(pHelm, App.CharacterAction.AT_SAY_LINE, "CantWarp2", None, 1).Play()
+		#			else:
+		#				# No character, display subtitle only.
+		#				pDatabase = App.g_kLocalizationManager.Load("data/TGL/Bridge Crew General.tgl")
+		#				if pDatabase:
+		#					pSequence = App.TGSequence_Create()
+		#					pSubtitleAction = App.SubtitleAction_Create(pDatabase, "CantWarp2")
+		#					pSubtitleAction.SetDuration(3.0)
+		#					pSequence.AddAction(pSubtitleAction)
+		#					pSequence.Play()
+		#					App.g_kLocalizationManager.Unload(pDatabase)
+		#		return "Inside Nebula"
+
+		# See if we are in an asteroid field
+		AsteroidFields = pSet.GetClassObjectList(App.CT_ASTEROID_FIELD)
+		for i in AsteroidFields:
+			pField = App.AsteroidField_Cast(i)
+			if pField:
+				if pField.IsShipInside(pShip):
+					if bIsPlayer == 1:
+						if pHelm:
+							App.CharacterAction_Create(pHelm, App.CharacterAction.AT_SAY_LINE, "CantWarp4", None, 1).Play()
+						else:
+							# No character, display subtitle only.
+							pDatabase = App.g_kLocalizationManager.Load ("data/TGL/Bridge Crew General.tgl")
+							if pDatabase:
+								pSequence = App.TGSequence_Create ()
+								pSubtitleAction = App.SubtitleAction_Create (pDatabase, "CantWarp4")
+								pSubtitleAction.SetDuration (3.0)
+								pSequence.AddAction (pSubtitleAction)
+								pSequence.Play ()
+								App.g_kLocalizationManager.Unload (pDatabase)
+					return "Inside Asteroid Field"
+						
+		pStarbase12Set = App.g_kSetManager.GetSet("Starbase12")
+		if pStarbase12Set:
+			if pShip.GetContainingSet():
+				if pStarbase12Set.GetObjID() == pShip.GetContainingSet().GetObjID():
+					pStarbase12 = App.ShipClass_GetObject(pStarbase12Set, "Starbase 12")
+					if pStarbase12:
+						import AI.Compound.DockWithStarbase
+						if AI.Compound.DockWithStarbase.IsInViewOfInsidePoints(pShip, pStarbase12):
+							if bIsPlayer == 1:
+								if pHelm:
+									App.CharacterAction_Create(pHelm, App.CharacterAction.AT_SAY_LINE, "CantWarp3", None, 1).Play()
+								else:
+									# No character, display subtitle only.
+									pDatabase = App.g_kLocalizationManager.Load("data/TGL/Bridge Crew General.tgl")
+									if pDatabase:
+										pSequence = App.TGSequence_Create()
+										pSubtitleAction = App.SubtitleAction_Create(pDatabase, "CantWarp3")
+										pSubtitleAction.SetDuration(3.0)
+										pSequence.AddAction(pSubtitleAction)
+										pSequence.Play()
+										App.g_kLocalizationManager.Unload(pDatabase)
+							return "Inside Starbase12"
+	except:
+		print "TO-DO ERROR"
+		traceback.print_exc()
 	return 1
 
 ########
@@ -572,62 +568,57 @@ def CanContinueTravelling(self):
 		bIsPlayer = 1
 	pWarpEngines = pShip.GetWarpEngineSubsystem()
 	bStatus = 1
-	if pWarpEngines != None:
-		"""
-		if pWarpEngines.IsDisabled() == 1:
+	if bStatus > 0:
+		isEquipped = IsShipEquipped(pShip)
+		if not isEquipped:
 			if bIsPlayer == 1:
 				pSequence = App.TGSequence_Create ()
-				pSubtitleAction = App.SubtitleAction_CreateC("Brex: Warp engines are disabled sir, we are dropping out of FTL.")
+				pSubtitleAction = App.SubtitleAction_CreateC("Brex: We don't have BSG 1978 Ultra-Light-Drive sir, we are dropping out of it.")
 				pSubtitleAction.SetDuration(3.0)
 				pSequence.AddAction(pSubtitleAction)
 				pSequence.Play()
 			bStatus = 0
-		"""
-		if pWarpEngines.IsOn() == 0:
-			if bIsPlayer == 1:
-				pSequence = App.TGSequence_Create ()
-				pSubtitleAction = App.SubtitleAction_CreateC("Brex: FTL engines are offline sir, we are dropping out of FTL.")
-				pSubtitleAction.SetDuration(3.0)
-				pSequence.AddAction(pSubtitleAction)
-				pSequence.Play()
-			bStatus = 0
+		else:
+			pInstance, pInstancedict, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, _, _, _, _, specificNacelleWHPList = BSG1978UltraLightDriveBasicConfigInfo(pShip)
+			if pInstance and pInstancedict:
+				if (specificNacelleWHPList != None and len(specificNacelleWHPList) > 0):
+					totalBSG1978UltraLightDriveEngines, onlineBSG1978UltraLightDriveEngines = BSG1978UltraLightDriveDisabledCalculations("Nacelle", specificNacelleWHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, pWarpEngines, pShip, 1)
 
-		if bStatus > 0:
-			isEquipped = IsShipEquipped(pShip)
-			if not isEquipped:
-				if bIsPlayer == 1:
-					pSequence = App.TGSequence_Create ()
-					pSubtitleAction = App.SubtitleAction_CreateC("Brex: We don't have Mass Effect FTL sir, we are dropping out of it.")
-					pSubtitleAction.SetDuration(3.0)
-					pSequence.AddAction(pSubtitleAction)
-					pSequence.Play()
-				bStatus = 0
-			else:
-				pInstance, pInstancedict, specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, _, _, _, _ = MassEffectFTLBasicConfigInfo(pShip)
-				if pInstance and pInstancedict:
-					totalMassEffectFTLCores, onlineMassEffectFTLCores = MassEffectFTLDisabledCalculations("Core", specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, pWarpEngines, pShip)
-					if totalMassEffectFTLCores > 0 and onlineMassEffectFTLCores <= 0:
+					if totalBSG1978UltraLightDriveEngines <= 0 or onlineBSG1978UltraLightDriveEngines <= 0:
 						if bIsPlayer == 1:
 							pSequence = App.TGSequence_Create ()
-							pSubtitleAction = App.SubtitleAction_CreateC("Brex: All Mass Effect FTL cores are offline or disabled sir, we are dropping out of Mass Effect FTL.")
+							pSubtitleAction = App.SubtitleAction_CreateC("Brex: All Ultra-Light-Drive engines are offline or disabled sir, we are dropping out of superluminic speeds.")
 							pSubtitleAction.SetDuration(3.0)
 							pSequence.AddAction(pSubtitleAction)
 							pSequence.Play()
 						bStatus = 0
-					elif (specificNacelleHPList == None or (specificNacelleHPList != None and len(specificNacelleHPList) > 0)):
-						totalMassEffectFTLEngines, onlineMassEffectFTLEngines = MassEffectFTLDisabledCalculations("Nacelle", specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, pWarpEngines, pShip)
-						if totalMassEffectFTLEngines > 0 and onlineMassEffectFTLEngines <= 0:
-							if bIsPlayer == 1:
-								pSequence = App.TGSequence_Create ()
-								pSubtitleAction = App.SubtitleAction_CreateC("Brex: All Mass Effect FTL nacelles are offline or disabled sir, we are dropping out of Mass Effect FTL.")
-								pSubtitleAction.SetDuration(3.0)
-								pSequence.AddAction(pSubtitleAction)
-								pSequence.Play()
-							bStatus = 0
-				else:
-					bStatus = 0
-	else:
-		bStatus = 0
+
+				if bStatus > 0 and (specificNacelleHPList != None and len(specificNacelleHPList) > 0):
+					totalBSG1978UltraLightDriveCores, onlineBSG1978UltraLightDriveCores = BSG1978UltraLightDriveDisabledCalculations("Core", specificNacelleHPList, specificNacelleHPList, hardpointProtoNames, hardpointProtoBlacklist, pWarpEngines, pShip, 1)
+
+					if totalBSG1978UltraLightDriveCores <= 0 or onlineBSG1978UltraLightDriveCores <= 0:
+						if bIsPlayer == 1:
+							pSequence = App.TGSequence_Create ()
+							pSubtitleAction = App.SubtitleAction_CreateC("Brex: All Ultra-Light-Drive engines are offline or disabled sir, we are dropping out of superluminic speeds.")
+							pSubtitleAction.SetDuration(3.0)
+							pSequence.AddAction(pSubtitleAction)
+							pSequence.Play()
+						bStatus = 0
+
+				if bStatus > 0 and specificCoreHPList != None and len(specificCoreHPList) > 0:
+					totalBSG1978UltraLightDriveCores, onlineBSG1978UltraLightDriveCores = BSG1978UltraLightDriveDisabledCalculations("Core", specificNacelleHPList, specificCoreHPList, hardpointProtoNames, hardpointProtoBlacklist, pWarpEngines, pShip)
+
+					if totalBSG1978UltraLightDriveCores <= 0 or onlineBSG1978UltraLightDriveCores <= 0:
+						if bIsPlayer == 1:
+							pSequence = App.TGSequence_Create ()
+							pSubtitleAction = App.SubtitleAction_CreateC("Brex: All Ultra-Light-Drive cores are offline or disabled sir, we are dropping out of superluminic speeds.")
+							pSubtitleAction.SetDuration(3.0)
+							pSequence.AddAction(pSubtitleAction)
+							pSequence.Play()
+						bStatus = 0
+			else:
+				bStatus = 0
+
 	return bStatus
 
 ########
@@ -711,7 +702,7 @@ def PreExitStuff(self):
 # 3º exiting travel sequence
 ########
 # Anther aux function I made
-def PlayMassEffectFTLSound(pAction, pWS, sType, sRace):
+def PlayBSG1978UltraLightDriveSound(pAction, pWS, sType, sRace):
 	debug(__name__ + ", PlayWarpSound")
 	pShip = pWS.GetShip()
 	pPlayer = App.Game_GetCurrentPlayer()
@@ -726,34 +717,32 @@ def PlayMassEffectFTLSound(pAction, pWS, sType, sRace):
 	if pSet.GetRegionModule() == pPlaSet.GetRegionModule():
 		try:
 			import Custom.NanoFXv2.WarpFX.WarpFX
-			if sRace == "":
-				sRace = "Default"
-			siType = ""
+
+			sFile = None
+
 			if sType == "Enter Warp":
-				siType = "EnterMassEffectFTL"
-			elif sType == "Exit Warp":
-				siType = "ExitMassEffectFTL"
+				sFile = "scripts/Custom/TravellingMethods/SFX/enterBSG1978FTL.wav"
 			else:
-				siType = ""
-			if siType != "":
-				sFile = "sfx\\MassEffectFTL\\"+sRace+"\\"+sRace+siType+".wav"
-				Custom.GravityFX.GravityFXlib.PlaySound(sFile, sRace+" "+siType+" Sound")
+				sFile = "scripts/Custom/TravellingMethods/SFX/exitBSG1978FTL.wav"
+
+			if sFile != None:
+				pEnterSound = App.TGSound_Create(sFile, sType, 0)
+				pEnterSound.SetSFX(0) 
+				pEnterSound.SetInterface(1)
+
+				App.g_kSoundManager.PlaySound(sType)
+				#Custom.GravityFX.GravityFXlib.PlaySound(sFile, sRace+" "+sType+" B5 Sound")
 		except:
 			try:
-				sRace = "Default"
-				siType = ""
 				if sType == "Enter Warp":
-					siType = "EnterMassEffectFTL"
-				elif sType == "Exit Warp":
-					siType = "ExitMassEffectFTL"
+					sFile = "scripts/Custom/TravellingMethods/SFX/enterBSG1978FTL.wav"
 				else:
-					siType = ""
+					sFile = "scripts/Custom/TravellingMethods/SFX/exitBSG1978FTL.wav"
 
-				if siType != "":
-					sFile = "sfx\\MassEffectFTL\\"+sRace+"\\"+sRace+siType+".wav"
-					Custom.GravityFX.GravityFXlib.PlaySound(sFile, sRace+" "+siType+" Sound")
+				if sFile != None:
+					Custom.GravityFX.GravityFXlib.PlaySound(sFile, sRace+" "+sType+" B5 Sound")
 			except:
-				print "MassEffectFTL TravellingMethod: error while calling PlayMassEffectFTLSound:"
+				print "BSG1978UltraLightDrive TravellingMethod: error while calling PlaynBSGDimensionalJumpSoundC:"
 				traceback.print_exc()
 	return 0
 
@@ -773,12 +762,13 @@ def LoadGFX(iNumXFrames, iNumYFrames, sFile):
                             fY = fY + (1.0 / iNumYFrames)
 
 # Aux. function grabebd from VonFrank's Remastered Effects.py
-def CreateElectricExplosion(fSize, fLife, pEmitFrom, bOwnsEmitFrom, pEffectRoot, colorKey=None):
+def CreateElectricExplosion(fSize, fLife, pEmitFrom, bOwnsEmitFrom, pEffectRoot, colorKey, colorKey2, fFrequency = 1.0, fEL = 1.0):
 	
 	pExplosion = App.AnimTSParticleController_Create()
 
-	pExplosion.AddColorKey(0.4, colorKey[0]/255.0, colorKey[1]/255.0, colorKey[2]/255.0)
-	pExplosion.AddColorKey(0.8, 1.0 / 255, 1.0 / 255, 1.0 / 255)
+	pExplosion.AddColorKey(0.1, colorKey[0]/255.0, colorKey[1]/255.0, colorKey[2]/255.0)
+	pExplosion.AddColorKey(0.5, colorKey2[0]/255.0, colorKey2[1]/255.0, colorKey2[2]/255.0)
+	pExplosion.AddColorKey(1.0, 1.0 / 255, 1.0 / 255, 1.0 / 255)
 
 	pExplosion.AddAlphaKey(0.4, 1.0)
 	pExplosion.AddAlphaKey(1.0, 0.0)
@@ -788,8 +778,8 @@ def CreateElectricExplosion(fSize, fLife, pEmitFrom, bOwnsEmitFrom, pEffectRoot,
 	pExplosion.AddSizeKey(0.6, 1.0 * fSize)
 	pExplosion.AddSizeKey(0.9, 1.0 * fSize)
 
-	fFrequency = 1.0
-	pExplosion.SetEmitLife(1.0)
+	
+	pExplosion.SetEmitLife(fEL)
 	pExplosion.SetEmitFrequency(fFrequency)
 	pExplosion.SetEffectLifeTime(fLife + 2.0)
 	pExplosion.CreateTarget('data/Textures/Effects/EezoElectricExplosion.tga')
@@ -802,37 +792,60 @@ def CreateElectricExplosion(fSize, fLife, pEmitFrom, bOwnsEmitFrom, pEffectRoot,
 
 	return pExplosion #App.EffectAction_Create(pExplosion)
 
-def EezoField(pAction, pWS, sType, sRace, amount=50, sparkSize=0.05):
+# An aux function
+def EezoField(pAction, pWS, sType, sRace, amount=50, sparkSize=0.05, type="Enter Warp"):
 	pShip = pWS.GetShip()
 	if pShip == None:
 		return 0
 
-	colorKey = [1.0 / 255, 1.0 / 255, 1.0 / 255]
+	colorKey = [255.0 / 255, 255.0 / 255, 255.0 / 255]
+	colorKey2 = [255.0 / 255, 255.0 / 255, 255.0 / 255]
 	try:
 		import Custom.NanoFXv2.NanoFX_Lib
 		colorKey = Custom.NanoFXv2.NanoFX_Lib.GetOverrideColor(pShip, sType)
 		if colorKey == None:
-			colorKey = [1.0 / 255, 1.0 / 255, 1.0 / 255]
+			colorKey = [255.0 / 255, 255.0 / 255, 255.0 / 255]
 	except:
-		colorKey = [1.0 / 255, 1.0 / 255, 1.0 / 255]
+		colorKey = [255.0 / 255, 255.0 / 255, 255.0 / 255]
+
+	if type == "Enter Warp":
+		colorKey2[1] = colorKey2[1] * 0.5
+		colorKey2[2] = colorKey2[0] * 0.1
+	elif type == "Exit Warp":
+		colorKey[0] = colorKey[0] * 0.1
+		colorKey[1] = colorKey[1] * 0.5
+		
 
 	iCycleCount = 1
 	if amount > 0 and sparkSize > 0:
 		pElectricShockSequence = App.TGSequence_Create()
 
 		pShipNode = pShip.GetNode()
+		pSet =	pShip.GetContainingSet()
+		pSetERoot = None
+		if pSet != None:
+			pSetERoot = pSet.GetEffectRoot() 
 		rShip = pShip.GetRadius()
 
 		LoadGFX(8, 1, 'data/Textures/Effects/EezoElectricExplosion.tga')
 
 		while (iCycleCount <= amount):
 			pEmitPos = pShip.GetRandomPointOnModel()
-			pExplosion = CreateElectricExplosion(rShip * sparkSize, 1.0, pEmitPos, 0, pShipNode, colorKey)
+			pExplosion = CreateElectricExplosion(rShip * sparkSize, 1.0, pEmitPos, 0, pShipNode, colorKey, colorKey2)
 			pAExplosion = None
 			if pExplosion != None:
 				pAExplosion = App.EffectAction_Create(pExplosion)
 			if pAExplosion != None:
 				pElectricShockSequence.AddAction(pAExplosion, App.TGAction_CreateNull(), iCycleCount * 0.005)
+
+			if pSetERoot != None:
+				pEmitPos2 = pShip.GetRandomPointOnModel()
+				pExplosion2 = CreateElectricExplosion(rShip * sparkSize, 1.0, pEmitPos, 0, pSetERoot, colorKey, colorKey2, fEL = 3.0)
+				pAExplosion2 = None
+				if pExplosion2 != None:
+					pAExplosion2 = App.EffectAction_Create(pExplosion)
+				if pAExplosion2 != None:
+					pElectricShockSequence.AddAction(pAExplosion2, App.TGAction_CreateNull(), iCycleCount * 0.005)
 
 			iCycleCount = iCycleCount + 1
 
@@ -883,7 +896,7 @@ def EezoEnterExitFlash(pAction, pWS):
 		fEffect = App.EffectAction_Create(pEffect)
 
 	except:
-		print "MassEffectFTL TravellingMethod: error while calling EezoEnterExitFlash:"
+		print "BSG1978UltraLightDrive TravellingMethod: error while calling EezoEnterExitFlash:"
 		traceback.print_exc()
 		fEffect = None
 
@@ -968,7 +981,7 @@ def SetupSequence(self):
 
 	pWarpSet = pWS.Travel.GetTravelSetToUse()
 
-	_, _, _, _, _, _, eDensity, mDensity, exDensity, sparkSize = MassEffectFTLBasicConfigInfo(pShip)
+	_, _, _, _, _, _, eDensity, mDensity, exDensity, sparkSize, _ = BSG1978UltraLightDriveBasicConfigInfo(pShip)
 
 	pEngageWarpSeq = App.TGSequence_Create()
 
@@ -1018,15 +1031,19 @@ def SetupSequence(self):
 				pEngageWarpSeq.AddAction(pWatchShipLeave, pCinematicStart)
 		# END OF THE EXTRA
 
-	pWarpSoundAction1 = App.TGScriptAction_Create(__name__, "PlayMassEffectFTLSound", pWS, "Enter Warp", sRace)
+	pWarpSoundAction1 = App.TGScriptAction_Create(__name__, "PlayBSG1978UltraLightDriveSound", pWS, "Enter Warp", sRace)
 	pEngageWarpSeq.AddAction(pWarpSoundAction1, None, fEntryDelayTime + 0.2)
 
-	# Extra added for Mass Effect
-	pWarpEezoEffectAction1 = App.TGScriptAction_Create(__name__, "EezoField", pWS, "PlasmaFX", sRace, eDensity, sparkSize)
+	# Extra added for Ultra-Light-Drive
+	pWarpEezoEffectAction1 = App.TGScriptAction_Create(__name__, "EezoField", pWS, "PlasmaFX", sRace, eDensity, sparkSize, "Enter Warp")
 	pEngageWarpSeq.AddAction(pWarpEezoEffectAction1, None, 0.5)
 
-	pBoostAction = App.TGScriptAction_Create(sCustomActionsScript, "BoostShipSpeed", pShip.GetObjID(), 1, 400.0)
+	pBoostAction = App.TGScriptAction_Create(sCustomActionsScript, "BoostShipSpeed", pShip.GetObjID(), 1, 500.0)
 	pEngageWarpSeq.AddAction(pBoostAction, pWarpSoundAction1, 0.7)
+
+	# Extra added for Ultra-Light-Drive
+	pWarpEezoEffectAction1b = App.TGScriptAction_Create(__name__, "EezoField", pWS, "PlasmaFX", sRace, eDensity, sparkSize, "Enter Warp")
+	pEngageWarpSeq.AddAction(pWarpEezoEffectAction1b, pBoostAction)
 
 	try:
 		import Custom.NanoFXv2.WarpFX.WarpFX
@@ -1046,14 +1063,14 @@ def SetupSequence(self):
 			if fCount >= fTimeToFlash:
 				break
 
-	# Create the warp flash.
+	# Create the warp flash. - THIS METHOD HAS NONE
 	#pFlashAction1 = App.TGScriptAction_Create("Actions.EffectScriptActions", "WarpFlash", pShip.GetObjID())
-	pFlashAction1 = App.TGScriptAction_Create(__name__, "EezoEnterExitFlash", pWS)
-	pEngageWarpSeq.AddAction(pFlashAction1, None, fTimeToFlash)
+	#pFlashAction1 = App.TGScriptAction_Create(__name__, "EezoEnterExitFlash", pWS)
+	#pEngageWarpSeq.AddAction(pFlashAction1, None, fTimeToFlash)
 
 	# Hide the ship.
 	pHideShip = App.TGScriptAction_Create(sCustomActionsScript, "HideShip", pShip.GetObjID(), 1)
-	pEngageWarpSeq.AddAction(pHideShip, pFlashAction1, 0.6)
+	pEngageWarpSeq.AddAction(pHideShip, fTimeToFlash, 2.0)
 
 	pUnBoostAction = App.TGScriptAction_Create(sCustomActionsScript, "BoostShipSpeed", pShip.GetObjID(), 0, 1.0)
 	pEngageWarpSeq.AddAction(pUnBoostAction, pHideShip)
@@ -1097,18 +1114,26 @@ def SetupSequence(self):
 			pHideTowee = App.TGScriptAction_Create(sCustomActionsScript, "HideShip", pWS.Travel.Towee.GetObjID(), 1)
 			pExitWarpSeq.AddAction(pHideTowee, pHideShip)
 
-		# Create the warp flash.
+		# Create the warp flash. THIS METHOD HAS NONE
 		#pFlashAction2 = App.TGScriptAction_Create("Actions.EffectScriptActions", "WarpFlash", pShip.GetObjID())
-		pFlashAction2 = App.TGScriptAction_Create(__name__, "EezoEnterExitFlash", pWS)
+		#pFlashAction2 = App.TGScriptAction_Create(__name__, "EezoEnterExitFlash", pWS)
 		#pExitWarpSeq.AddAction(pFlashAction2, pHideShip, 0.7)
-		pExitWarpSeq.AddAction(pFlashAction2, pHideShip, 0)
+		#pExitWarpSeq.AddAction(pFlashAction2, pHideShip, 0)
+
+		# Extra added for Ultra-Light Drive
+		pWarpEezoEffectAction3a = App.TGScriptAction_Create(__name__, "EezoField", pWS, "PlasmaFX", sRace, exDensity, sparkSize, "Exit Warp")
+		pExitWarpSeq.AddAction(pWarpEezoEffectAction3a, pHideShip, 0.7)
+
+		# Give it a little boost
+		pBoostAction = App.TGScriptAction_Create(sCustomActionsScript, "BoostShipSpeed", pShip.GetObjID(), 1, 400.0)
+		pExitWarpSeq.AddAction(pBoostAction, pWarpEezoEffectAction3a, 0.2)
 
 		# Un-Hide the ship
 		pUnHideShip = App.TGScriptAction_Create(sCustomActionsScript, "HideShip", pShip.GetObjID(), 0)
-		pExitWarpSeq.AddAction(pUnHideShip, pFlashAction2, 1.0)
+		pExitWarpSeq.AddAction(pUnHideShip, pBoostAction, 0.5)
 
-		# Extra added for Mass Effect
-		pWarpEezoEffectAction3 = App.TGScriptAction_Create(__name__, "EezoField", pWS, "PlasmaFX", sRace, exDensity, sparkSize)
+		# Extra added for Ultra-Light Drive
+		pWarpEezoEffectAction3 = App.TGScriptAction_Create(__name__, "EezoField", pWS, "PlasmaFX", sRace, exDensity, sparkSize, "Exit Warp")
 		pExitWarpSeq.AddAction(pWarpEezoEffectAction3, pUnHideShip)
 
 		# Un-hide the Towee, plus if it exists, also set up the maintain chain
@@ -1126,17 +1151,13 @@ def SetupSequence(self):
 				if fCount >= 3.6:
 					break
 
-		# Give it a little boost
-		pBoostAction = App.TGScriptAction_Create(sCustomActionsScript, "BoostShipSpeed", pShip.GetObjID(), 1, 400.0)
-		pExitWarpSeq.AddAction(pBoostAction, pWarpEezoEffectAction3)
-
 		# Play the vushhhhh of exiting warp
-		pWarpSoundAction2 = App.TGScriptAction_Create(__name__, "PlayMassEffectFTLSound", pWS, "Exit Warp", sRace)
-		pExitWarpSeq.AddAction(pWarpSoundAction2, pBoostAction)
+		pWarpSoundAction2 = App.TGScriptAction_Create(__name__, "PlayBSG1978UltraLightDriveSound", pWS, "Exit Warp", sRace)
+		pExitWarpSeq.AddAction(pWarpSoundAction2, pUnHideShip)
 	
 		# Make the ship return to normal speed.
 		pUnBoostAction = App.TGScriptAction_Create(sCustomActionsScript, "BoostShipSpeed", pShip.GetObjID(), 0, 1.0)
-		pExitWarpSeq.AddAction(pUnBoostAction, pWarpSoundAction2, 1.0)
+		pExitWarpSeq.AddAction(pUnBoostAction, pWarpSoundAction2, 3.0)
 
 		# And finally finish the exit sequence
 		# actually, just put up a empty action, the Traveler system automatically puts his exit sequence action at the
@@ -1275,16 +1296,22 @@ def GetCruiseSpeed(self):
 def GetActualMaxSpeed(self):
 	debug(__name__ + ", GetActualMaxSpeed")
 	pWarpEngines = self.Ship.GetWarpEngineSubsystem()
-	if pWarpEngines == None:
-		return 5.0
+	fPower = 1.0
 	fRealMaxSpeed = self.GetMaxSpeed()
-	if self.IsPlayer == 1:
-		fPower = pWarpEngines.GetPowerPercentageWanted()
+	if pWarpEngines != None:
+		if self.IsPlayer == 1:
+			fPower = pWarpEngines.GetPowerPercentageWanted()
+		else:
+			fPower = self.AIwarpPower
 	else:
-		fPower = self.AIwarpPower
+		if fRealMaxSpeed != 0:
+			fPower = self.GetSpeed()/fRealMaxSpeed
+		else:
+			fPower = 1.0
+
 	fAMWS = (fRealMaxSpeed * fPower) - (fPower - 1.0)
-	if fAMWS > 9.99:
-		fAMWS = 9.99
+	if fAMWS > 10.0:
+		fAMWS = 10.0
 	return fAMWS
 
 ########
@@ -1295,17 +1322,23 @@ def GetActualMaxSpeed(self):
 ########
 def GetActualCruiseSpeed(self):
 	debug(__name__ + ", GetActualCruiseSpeed")
+
 	pWarpEngines = self.Ship.GetWarpEngineSubsystem()
-	if pWarpEngines == None:
-		return 5.0
 	fRealCruiseSpeed = self.GetCruiseSpeed()
-	if self.IsPlayer == 1:
-		fPower = pWarpEngines.GetPowerPercentageWanted()
+	if pWarpEngines != None:
+		if self.IsPlayer == 1:
+			fPower = pWarpEngines.GetPowerPercentageWanted()
+		else:
+			fPower = self.AIwarpPower
 	else:
-		fPower = self.AIwarpPower
+		if fRealCruiseSpeed != 0:
+			fPower = self.GetSpeed()/fRealCruiseSpeed
+		else:
+			fPower = 1.0
+
 	fACWS = (fRealCruiseSpeed * fPower) - (fPower - 1.0)
-	if fACWS > 9.99:
-		fACWS = 9.99
+	if fACWS > 10.0:
+		fACWS = 10.0
 	return fACWS
 
 ########

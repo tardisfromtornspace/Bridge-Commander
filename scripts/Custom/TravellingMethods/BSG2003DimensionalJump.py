@@ -20,7 +20,7 @@
 # On this case, due to that, only the lines marked with "# (#)" are needed for nBSGDimensionalJump to work, but the final parent technology may require more:
 # "nBSGDimensionalJump": is the name of the key. This is the bare minimum for the technology to work
 # "WNacelles": is the name of a key whose value indicates a list of which warp engine property children (nacelles) are part of the nBSGDimensionalJump system. If all are disabled/destroyed, nBSGDimensionalJump will not engage. If this field does not exist or "WNacelles": [] it skips this disabled check.
-# "Nacelles": is the name of a key whose value indicates a list of which hardpoint properties (nacelles) are part of the nBSGDimensionalJump system. If all are disabled/destroyed, nBSGDimensionalJump will not engage. If this field does not exist or "Nacelles": [] it skips this disabled check. Only use this field if your hardpoint does not allow you to have a primary warp control subsystem, else use Nacelles as it is more efficient.
+# "Nacelles": is the name of a key whose value indicates a list of which hardpoint properties (nacelles) are part of the nBSGDimensionalJump system. If all are disabled/destroyed, nBSGDimensionalJump will not engage. If this field does not exist or "Nacelles": [] it skips this disabled check. Only use this field if your hardpoint does not allow you to have a primary warp control subsystem, else use WNacelles as it is more efficient.
 # "Core": is the name of a key whose value indicates a list of which hardpoint properties (not nacelles) are part of the nBSGDimensionalJump system. If all are disabled/destroyed, nBSGDimensionalJumpDrive will not engage either. If this field does not exist, it wil check for all subsystems with "ftl dimensional jump drive" or "ftl dimensional drive", case insensitive. Use "Core": [] to skip this check.
 # Subsystems note: when editing the hardpoint, you can also add another hardpoint property called "Cloaked Jump" to change this FTL effects and behaviour slightly (will try to make the ship cloak and decloak).
 # "Cooldown Time": time in seconds between jumps on a type of ship, in seconds. Default is 15 * 60 seconds (I was told 33 minutes was just during the 33 minutes arc and it was more like the times they needed to jump when the Cylons found them).
@@ -1927,13 +1927,19 @@ def GetCruiseSpeed(self):
 def GetActualMaxSpeed(self):
 	debug(__name__ + ", GetActualMaxSpeed")
 	pWarpEngines = self.Ship.GetWarpEngineSubsystem()
-	if pWarpEngines == None:
-		return 5.0
+	fPower = 1.0
 	fRealMaxSpeed = self.GetMaxSpeed()
-	if self.IsPlayer == 1:
-		fPower = pWarpEngines.GetPowerPercentageWanted()
+	if pWarpEngines != None:
+		if self.IsPlayer == 1:
+			fPower = pWarpEngines.GetPowerPercentageWanted()
+		else:
+			fPower = self.AIwarpPower
 	else:
-		fPower = self.AIwarpPower
+		if fRealMaxSpeed != 0:
+			fPower = self.GetSpeed()/fRealMaxSpeed
+		else:
+			fPower = 1.0
+
 	fAMWS = (fRealMaxSpeed * fPower) - (fPower - 1.0)
 	if fAMWS > 10.0:
 		fAMWS = 10.0
@@ -1947,14 +1953,20 @@ def GetActualMaxSpeed(self):
 ########
 def GetActualCruiseSpeed(self):
 	debug(__name__ + ", GetActualCruiseSpeed")
+
 	pWarpEngines = self.Ship.GetWarpEngineSubsystem()
-	if pWarpEngines == None:
-		return 5.0
 	fRealCruiseSpeed = self.GetCruiseSpeed()
-	if self.IsPlayer == 1:
-		fPower = pWarpEngines.GetPowerPercentageWanted()
+	if pWarpEngines != None:
+		if self.IsPlayer == 1:
+			fPower = pWarpEngines.GetPowerPercentageWanted()
+		else:
+			fPower = self.AIwarpPower
 	else:
-		fPower = self.AIwarpPower
+		if fRealCruiseSpeed != 0:
+			fPower = self.GetSpeed()/fRealCruiseSpeed
+		else:
+			fPower = 1.0
+
 	fACWS = (fRealCruiseSpeed * fPower) - (fPower - 1.0)
 	if fACWS > 10.0:
 		fACWS = 10.0
