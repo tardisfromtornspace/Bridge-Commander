@@ -1,16 +1,7 @@
-# BSG2003MSPlatDock.py by CharaToLoki based on Dauntless.py
-#
-# Dauntless.py
-# April 11, 2002
-#
-# by Evan Light aka sleight42, all rights reserved
-#
-# Permission to redistribute this code as part of any other packaging requires
-# the explicit permission of the author in advance.
-##############################################################################
+#####  Created by:
+#####  Bridge Commander Universal Tool
 
-# A simple example of how to define a custom Carrier with a specified 
-# compliment of vessels
+
 Carrier = __import__( "ftb.Carrier")
 class BSG2003MSPlatDock( Carrier.Carrier):
     def __init__( self, pShip):
@@ -42,7 +33,7 @@ class BSG2003MSPlatDock( Carrier.Carrier):
         return []
 
 
-# "Dauntless" is the "ShipProperty" name of the ship to be registered as
+# "BSG2003MSPlatDock" is the "ShipProperty" name of the ship to be registered as
 # defined in the Hardpoints PY file for your ship
 ShipManager = __import__( "ftb.ShipManager")
 ShipManager.RegisterShipClass( "BSG2003MSPlatDock", BSG2003MSPlatDock)

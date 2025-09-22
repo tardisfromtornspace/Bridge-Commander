@@ -1,16 +1,7 @@
-# BSG1978HadesBasestar.py by CharaToLoki based on Dauntless.py
-#
-# Dauntless.py
-# April 11, 2002
-#
-# by Evan Light aka sleight42, all rights reserved
-#
-# Permission to redistribute this code as part of any other packaging requires
-# the explicit permission of the author in advance.
-##############################################################################
+#####  Created by:
+#####  Bridge Commander Universal Tool
 
-# A simple example of how to define a custom Carrier with a specified 
-# compliment of vessels
+
 Carrier = __import__( "ftb.Carrier")
 class BSG1978HadesBasestar( Carrier.Carrier):
     def __init__( self, pShip):
@@ -135,7 +126,7 @@ class BSG1978HadesBasestar( Carrier.Carrier):
     	return []
 
 
-# "Dauntless" is the "ShipProperty" name of the ship to be registered as
+# "BSG1978HadesBasestar" is the "ShipProperty" name of the ship to be registered as
 # defined in the Hardpoints PY file for your ship
 ShipManager = __import__( "ftb.ShipManager")
 ShipManager.RegisterShipClass( "BSG1978HadesBasestar", BSG1978HadesBasestar)

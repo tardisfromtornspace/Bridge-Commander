@@ -1,5 +1,7 @@
-# C:\Program Files\Activision\QBR 2.2\Bridge Commander\scripts\ships\Hardpoints\BSG1978GalacticaBS75.py
-# 
+#####  Created by:
+#####  Bridge Commander Universal Tool
+
+
 
 import App
 import GlobalPropertyTemplates
@@ -152,9 +154,9 @@ PortHangar.SetTargetable(1)
 PortHangar.SetPrimary(0)
 PortHangar.SetPosition(-11.250000, -20.474899, -2.093280)
 PortHangar.SetPosition2D(47.000000, 70.000000)
-PortHangar.SetRepairComplexity(1.000000)
+PortHangar.SetRepairComplexity(10.000000)
 PortHangar.SetDisabledPercentage(0.500000)
-PortHangar.SetRadius(0.250000)
+PortHangar.SetRadius(10.125000)
 App.g_kModelPropertyManager.RegisterLocalTemplate(PortHangar)
 #################################################
 PortOutrigger = App.HullProperty_Create("Port Outrigger")
@@ -164,15 +166,15 @@ PortOutrigger.SetCritical(0)
 PortOutrigger.SetTargetable(1)
 PortOutrigger.SetPrimary(0)
 PortOutrigger.SetPosition(-10.971100, -1.989600, -2.050820)
-PortOutrigger.SetPosition2D(47.000000, 68.000000)
-PortOutrigger.SetRepairComplexity(10.000000)
+PortOutrigger.SetPosition2D(47.000000, 72.000000)
+PortOutrigger.SetRepairComplexity(1.000000)
 PortOutrigger.SetDisabledPercentage(0.500000)
-PortOutrigger.SetRadius(0.500000)
+PortOutrigger.SetRadius(10.250000)
 App.g_kModelPropertyManager.RegisterLocalTemplate(PortOutrigger)
 #################################################
 LaunchTubeP1 = App.HullProperty_Create("Launch Tube P1")
 
-LaunchTubeP1.SetMaxCondition(2500.000000)
+LaunchTubeP1.SetMaxCondition(334.000000)
 LaunchTubeP1.SetCritical(0)
 LaunchTubeP1.SetTargetable(1)
 LaunchTubeP1.SetPrimary(0)
@@ -185,7 +187,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(LaunchTubeP1)
 #################################################
 LaunchTubeP2 = App.HullProperty_Create("Launch Tube P2")
 
-LaunchTubeP2.SetMaxCondition(2500.000000)
+LaunchTubeP2.SetMaxCondition(334.000000)
 LaunchTubeP2.SetCritical(0)
 LaunchTubeP2.SetTargetable(1)
 LaunchTubeP2.SetPrimary(0)
@@ -198,7 +200,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(LaunchTubeP2)
 #################################################
 LaunchTubeP3 = App.HullProperty_Create("Launch Tube P3")
 
-LaunchTubeP3.SetMaxCondition(2500.000000)
+LaunchTubeP3.SetMaxCondition(334.000000)
 LaunchTubeP3.SetCritical(0)
 LaunchTubeP3.SetTargetable(1)
 LaunchTubeP3.SetPrimary(0)
@@ -211,7 +213,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(LaunchTubeP3)
 #################################################
 LaunchTubeP4 = App.HullProperty_Create("Launch Tube P4")
 
-LaunchTubeP4.SetMaxCondition(2500.000000)
+LaunchTubeP4.SetMaxCondition(334.000000)
 LaunchTubeP4.SetCritical(0)
 LaunchTubeP4.SetTargetable(1)
 LaunchTubeP4.SetPrimary(0)
@@ -224,7 +226,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(LaunchTubeP4)
 #################################################
 LaunchTubeP5 = App.HullProperty_Create("Launch Tube P5")
 
-LaunchTubeP5.SetMaxCondition(2500.000000)
+LaunchTubeP5.SetMaxCondition(334.000000)
 LaunchTubeP5.SetCritical(0)
 LaunchTubeP5.SetTargetable(1)
 LaunchTubeP5.SetPrimary(0)
@@ -237,7 +239,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(LaunchTubeP5)
 #################################################
 LaunchTubeP6 = App.HullProperty_Create("Launch Tube P6")
 
-LaunchTubeP6.SetMaxCondition(2500.000000)
+LaunchTubeP6.SetMaxCondition(334.000000)
 LaunchTubeP6.SetCritical(0)
 LaunchTubeP6.SetTargetable(1)
 LaunchTubeP6.SetPrimary(0)
@@ -250,7 +252,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(LaunchTubeP6)
 #################################################
 LaunchTubeP7 = App.HullProperty_Create("Launch Tube P7")
 
-LaunchTubeP7.SetMaxCondition(2500.000000)
+LaunchTubeP7.SetMaxCondition(334.000000)
 LaunchTubeP7.SetCritical(0)
 LaunchTubeP7.SetTargetable(1)
 LaunchTubeP7.SetPrimary(0)
@@ -263,7 +265,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(LaunchTubeP7)
 #################################################
 LaunchTubeP8 = App.HullProperty_Create("Launch Tube P8")
 
-LaunchTubeP8.SetMaxCondition(2500.000000)
+LaunchTubeP8.SetMaxCondition(334.000000)
 LaunchTubeP8.SetCritical(0)
 LaunchTubeP8.SetTargetable(1)
 LaunchTubeP8.SetPrimary(0)
@@ -282,9 +284,9 @@ StarHangar.SetTargetable(1)
 StarHangar.SetPrimary(0)
 StarHangar.SetPosition(11.250000, -20.476000, -2.165670)
 StarHangar.SetPosition2D(81.000000, 70.000000)
-StarHangar.SetRepairComplexity(1.000000)
+StarHangar.SetRepairComplexity(10.000000)
 StarHangar.SetDisabledPercentage(0.500000)
-StarHangar.SetRadius(0.250000)
+StarHangar.SetRadius(10.125000)
 App.g_kModelPropertyManager.RegisterLocalTemplate(StarHangar)
 #################################################
 StarOutrigger = App.HullProperty_Create("Star Outrigger")
@@ -295,9 +297,9 @@ StarOutrigger.SetTargetable(1)
 StarOutrigger.SetPrimary(0)
 StarOutrigger.SetPosition(10.722600, -1.108000, -2.050820)
 StarOutrigger.SetPosition2D(81.000000, 72.000000)
-StarOutrigger.SetRepairComplexity(10.000000)
+StarOutrigger.SetRepairComplexity(1.000000)
 StarOutrigger.SetDisabledPercentage(0.500000)
-StarOutrigger.SetRadius(0.500000)
+StarOutrigger.SetRadius(10.250000)
 App.g_kModelPropertyManager.RegisterLocalTemplate(StarOutrigger)
 #################################################
 LaunchTubeS1 = App.HullProperty_Create("Launch Tube S1")
@@ -403,6 +405,19 @@ LaunchTubeS8.SetRepairComplexity(1.000000)
 LaunchTubeS8.SetDisabledPercentage(0.500000)
 LaunchTubeS8.SetRadius(0.025000)
 App.g_kModelPropertyManager.RegisterLocalTemplate(LaunchTubeS8)
+#################################################
+Decoy = App.HullProperty_Create("Decoy")
+
+Decoy.SetMaxCondition(334.000000)
+Decoy.SetCritical(0)
+Decoy.SetTargetable(0)
+Decoy.SetPrimary(0)
+Decoy.SetPosition(-0.141729, -34.729900, 1.622380)
+Decoy.SetPosition2D(81.000000, 68.000000)
+Decoy.SetRepairComplexity(1.000000)
+Decoy.SetDisabledPercentage(0.500000)
+Decoy.SetRadius(0.025000)
+App.g_kModelPropertyManager.RegisterLocalTemplate(Decoy)
 #################################################
 PortHangarOEP = App.ObjectEmitterProperty_Create("Port Hangar OEP")
 
@@ -674,20 +689,20 @@ LaunchTubeS8OEP.SetPosition(LaunchTubeS8OEPPosition)
 LaunchTubeS8OEP.SetEmittedObjectType(LaunchTubeS8OEP.OEP_SHUTTLE)
 App.g_kModelPropertyManager.RegisterLocalTemplate(LaunchTubeS8OEP)
 #################################################
-DecoyOEP = App.ObjectEmitterProperty_Create("Decoy OEP")
+DecoyLauncher = App.ObjectEmitterProperty_Create("Decoy Launcher")
 
-DecoyOEPForward = App.TGPoint3()
-DecoyOEPForward.SetXYZ(0.000000, -1.000000, 0.000000)
-DecoyOEPUp = App.TGPoint3()
-DecoyOEPUp.SetXYZ(0.000000, 0.000000, 1.000000)
-DecoyOEPRight = App.TGPoint3()
-DecoyOEPRight.SetXYZ(1.000000, 0.000000, 0.000000)
-DecoyOEP.SetOrientation(DecoyOEPForward, DecoyOEPUp, DecoyOEPRight)
-DecoyOEPPosition = App.TGPoint3()
-DecoyOEPPosition.SetXYZ(-0.141729, -34.729900, 1.622380)
-DecoyOEP.SetPosition(DecoyOEPPosition)
-DecoyOEP.SetEmittedObjectType(DecoyOEP.OEP_DECOY)
-App.g_kModelPropertyManager.RegisterLocalTemplate(DecoyOEP)
+DecoyLauncherForward = App.TGPoint3()
+DecoyLauncherForward.SetXYZ(0.000000, -1.000000, 0.000000)
+DecoyLauncherUp = App.TGPoint3()
+DecoyLauncherUp.SetXYZ(0.000000, 0.000000, 1.000000)
+DecoyLauncherRight = App.TGPoint3()
+DecoyLauncherRight.SetXYZ(1.000000, 0.000000, 0.000000)
+DecoyLauncher.SetOrientation(DecoyLauncherForward, DecoyLauncherUp, DecoyLauncherRight)
+DecoyLauncherPosition = App.TGPoint3()
+DecoyLauncherPosition.SetXYZ(-0.141729, -34.729900, 1.622380)
+DecoyLauncher.SetPosition(DecoyLauncherPosition)
+DecoyLauncher.SetEmittedObjectType(DecoyLauncher.OEP_DECOY)
+App.g_kModelPropertyManager.RegisterLocalTemplate(DecoyLauncher)
 #################################################
 MegatronShieldSystem = App.ShieldProperty_Create("Megatron Shield System")
 
@@ -1969,14 +1984,12 @@ def LoadPropertySet(pObj):
 	prop = App.g_kModelPropertyManager.FindByName("FirstPersonCamera", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
-
 	prop = App.g_kModelPropertyManager.FindByName("Hull", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
 	prop = App.g_kModelPropertyManager.FindByName("Bridge", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
-
 	prop = App.g_kModelPropertyManager.FindByName("Port Hangar", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
@@ -2037,10 +2050,10 @@ def LoadPropertySet(pObj):
 	prop = App.g_kModelPropertyManager.FindByName("Launch Tube S8", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
-	prop = App.g_kModelPropertyManager.FindByName("Port Hangar OEP", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	prop = App.g_kModelPropertyManager.FindByName("Decoy", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
-	prop = App.g_kModelPropertyManager.FindByName("Star Hangar OEP", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	prop = App.g_kModelPropertyManager.FindByName("Port Hangar OEP", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
 	prop = App.g_kModelPropertyManager.FindByName("Launch Tube P1 OEP", App.TGModelPropertyManager.LOCAL_TEMPLATES)
@@ -2067,6 +2080,9 @@ def LoadPropertySet(pObj):
 	prop = App.g_kModelPropertyManager.FindByName("Launch Tube P8 OEP", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
+	prop = App.g_kModelPropertyManager.FindByName("Star Hangar OEP", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	if (prop != None):
+		pObj.AddToSet("Scene Root", prop)
 	prop = App.g_kModelPropertyManager.FindByName("Launch Tube S1 OEP", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
@@ -2091,7 +2107,7 @@ def LoadPropertySet(pObj):
 	prop = App.g_kModelPropertyManager.FindByName("Launch Tube S8 OEP", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
-	prop = App.g_kModelPropertyManager.FindByName("Decoy OEP", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	prop = App.g_kModelPropertyManager.FindByName("Decoy Launcher", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
 	prop = App.g_kModelPropertyManager.FindByName("Megatron Shield System", App.TGModelPropertyManager.LOCAL_TEMPLATES)

@@ -1,5 +1,7 @@
-# C:\Program Files\Activision\Bridge Commander\scripts\ships\Hardpoints\BSG2003AstralQueen.py
-# 
+#####  Created by:
+#####  Bridge Commander Universal Tool
+
+
 
 import App
 import GlobalPropertyTemplates

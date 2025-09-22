@@ -1,5 +1,7 @@
-# C:\Program Files\Activision\QBR 2.2\Bridge Commander\scripts\ships\Hardpoints\BSG2003HadesBasestar.py
-# 
+#####  Created by:
+#####  Bridge Commander Universal Tool
+
+
 
 import App
 import GlobalPropertyTemplates

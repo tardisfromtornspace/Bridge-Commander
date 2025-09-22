@@ -1,16 +1,7 @@
-# BSGArtemis.py	by CharaToLoki based on Dauntless.py
-#
-# Dauntless.py
-# April 11, 2002
-#
-# by Evan Light aka sleight42, all rights reserved
-#
-# Permission to redistribute this code as part of any other packaging requires
-# the explicit permission of the author in advance.
-##############################################################################
+#####  Created by:
+#####  Bridge Commander Universal Tool
 
-# A simple example of how to define a custom Carrier with a specified 
-# compliment of vessels
+
 Carrier = __import__( "ftb.Carrier")
 class BSG1978ColDefender( Carrier.Carrier):
     def __init__( self, pShip):
@@ -24,7 +15,7 @@ class BSG1978ColDefender( Carrier.Carrier):
 
         launcher = LauncherManager.GetLauncher( "Hangar", pShip)
         group.AddLauncher( "Hangar", launcher)
-        launcher.AddLaunchable( "BSG1978ViperMkI", "QuickBattle.QuickBattleFriendlyAI", 6)
+        launcher.AddLaunchable( "BSG1978Viper", "QuickBattle.QuickBattleFriendlyAI", 6)
 
         self.AddLauncher( "Group 1", group)
 
@@ -35,7 +26,7 @@ class BSG1978ColDefender( Carrier.Carrier):
     def GetMaxShuttles(self): 
     	return 20
 
-# "Dauntless" is the "ShipProperty" name of the ship to be registered as
+# "BSG1978ColDefender" is the "ShipProperty" name of the ship to be registered as
 # defined in the Hardpoints PY file for your ship
 ShipManager = __import__( "ftb.ShipManager")
 ShipManager.RegisterShipClass( "BSG1978ColDefender", BSG1978ColDefender)

@@ -7,8 +7,8 @@ def GetShipStats():
 		"FilenameMed": "data/Models/Ships/ColDefender/ColDefender.nif",
 		"FilenameLow": "data/Models/Ships/ColDefender/ColDefender.nif",
 
-		"Name": "TOSColDefender",
-		"HardpointFile": "TOSColDefender",
+		"Name": "BSG1978ColDefender",
+		"HardpointFile": "BSG1978ColDefender",
 		"Species": Multiplayer.SpeciesToShip.VORCHA
 	 }
 	return kShipStats

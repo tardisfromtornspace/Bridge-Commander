@@ -22,13 +22,13 @@ import App
 def Create(pTorp):
 
 	kOuterShellColor = App.TGColorA()
-	kOuterShellColor.SetRGBA(1.000000, 0.380392, 0.000000, 1.000000)	
+	kOuterShellColor.SetRGBA(1.000000, 0.400000, 0.000001, 0.0005000)	
 	kOuterCoreColor = App.TGColorA()
-	kOuterCoreColor.SetRGBA(1.000000, 0.870588, 0.662745, 1.000000)
+	kOuterCoreColor.SetRGBA(1.000000, 1.000000, 0.700000, 1.000000)
 
-	pTorp.CreateDisruptorModel(kOuterShellColor,kOuterCoreColor, 0.08, 0.01) 	
+	pTorp.CreateDisruptorModel(kOuterShellColor,kOuterCoreColor, 1.0, 0.15) 	
 	pTorp.SetDamage( GetDamage() )
-	pTorp.SetDamageRadiusFactor(0.025)
+	pTorp.SetDamageRadiusFactor(0.15)
 	pTorp.SetGuidanceLifetime( GetGuidanceLifetime() )
 	pTorp.SetMaxAngularAccel( GetMaxAngularAccel() )
 	pTorp.SetLifetime( GetLifetime() )
@@ -41,25 +41,25 @@ def Create(pTorp):
 	return(0)
 
 def GetLaunchSpeed():
-	return(30.0)
+	return(95.0)
 
 def GetLaunchSound():
-	return("ViperCanons")
+	return("Pulse PhaserJLH")
 
 def GetPowerCost():
 	return(10.0)
 
 def GetName():
-	return("Viper Cannon")
+	return("Laser-Torp")
 
 def GetDamage():
-	return 0.5
+	return 8.0
 
 def GetGuidanceLifetime():
 	return 0.0
 
 def GetMaxAngularAccel():
-	return 0.125
+	return 0.005
 
 def GetLifetime():
-	return 15.0
+	return 3.0

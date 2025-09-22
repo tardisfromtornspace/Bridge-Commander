@@ -1,5 +1,6 @@
-# C:\Program Files\Activision\Bridge Commander\scripts\ships\Hardpoints\BSG2003MSPlatDock.py
-# 
+#####  Created by:
+#####  Bridge Commander Universal Tool
+# Then modified to add this import code
 
 import App
 import GlobalPropertyTemplates
