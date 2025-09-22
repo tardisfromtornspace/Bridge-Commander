@@ -3,12 +3,11 @@ import Multiplayer.SpeciesToShip
 
 def GetShipStats():
 	kShipStats = {
-		"FilenameHigh": "data/Models/Ships/GalaticaBS75/GalaticaBS75.nif",
-		"FilenameMed": "data/Models/Ships/GalaticaBS75/GalaticaBS75.nif",
-		"FilenameLow": "data/Models/Ships/GalaticaBS75/GalaticaBS75.nif",
-		"Name": "GalaticaBS75",
-		"HardpointFile": "GalaticaBS75",
-		"Species": Multiplayer.SpeciesToShip.GALAXY
+		"FilenameHigh": "data/Models/Ships/Rycon/GalaticaBS75.nif",
+		"FilenameLow": "data/Models/Ships/Rycon/GalaticaBS75.nif",
+		"Name": "BSG1978Rycon",
+		"HardpointFile": "BSG1978GalacticaBS75",
+		"Species": Multiplayer.SpeciesToShip.UNKNOWN
 	 }
 	return kShipStats
 
