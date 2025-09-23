@@ -1,4 +1,7 @@
 ==Changelog==
+1.7.3 -
+   Fixes:
+   * Updated Babylon 5 hardpoint for two names I forgot to place and the reactor position being flipped.
 1.7.2 -
    Fixes:
    * Updated certain hardpoints to ensure certain versions of Mvam infinite can indeed be done infinetely.

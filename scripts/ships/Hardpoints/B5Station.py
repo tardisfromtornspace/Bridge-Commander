@@ -412,7 +412,7 @@ WarpCore.SetMaxCondition(8000.000000)
 WarpCore.SetCritical(1)
 WarpCore.SetTargetable(1)
 WarpCore.SetPrimary(1)
-WarpCore.SetPosition(-0.063789, -0.668446, -0.200000)
+WarpCore.SetPosition(-0.063789, 15.668446, -0.200000)
 WarpCore.SetPosition2D(64.000000, 75.000000)
 WarpCore.SetRepairComplexity(2.000000)
 WarpCore.SetDisabledPercentage(0.500000)
@@ -424,7 +424,7 @@ WarpCore.SetBackupConduitCapacity(46.947998)
 WarpCore.SetPowerOutput(4139.740234)
 App.g_kModelPropertyManager.RegisterLocalTemplate(WarpCore)
 #################################################
-ShieldGenerator = App.ShieldProperty_Create("Shield Generator")
+ShieldGenerator = App.ShieldProperty_Create("Defense Grid")
 
 ShieldGenerator.SetMaxCondition(12000.000000)
 ShieldGenerator.SetCritical(0)
@@ -595,7 +595,7 @@ AftTorpedo2Right.SetXYZ(-1.000000, 0.000000, 0.000000)
 AftTorpedo2.SetRight(AftTorpedo2Right)
 App.g_kModelPropertyManager.RegisterLocalTemplate(AftTorpedo2)
 #################################################
-PulsePhasers = App.WeaponSystemProperty_Create("Pulse Phasers")
+PulsePhasers = App.WeaponSystemProperty_Create("Pulse Weapons")
 
 PulsePhasers.SetMaxCondition(3000.000000)
 PulsePhasers.SetCritical(0)
@@ -1122,7 +1122,7 @@ def LoadPropertySet(pObj):
 	prop = App.g_kModelPropertyManager.FindByName("Hull", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
-	prop = App.g_kModelPropertyManager.FindByName("Shield Generator", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	prop = App.g_kModelPropertyManager.FindByName("Defense Grid", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
 	prop = App.g_kModelPropertyManager.FindByName("Fusion Reactors", App.TGModelPropertyManager.LOCAL_TEMPLATES)
@@ -1188,7 +1188,7 @@ def LoadPropertySet(pObj):
 	prop = App.g_kModelPropertyManager.FindByName("Aft Torpedo 2", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
-	prop = App.g_kModelPropertyManager.FindByName("Pulse Phasers", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	prop = App.g_kModelPropertyManager.FindByName("Pulse Weapons", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
 	prop = App.g_kModelPropertyManager.FindByName("Port Cannon 2", App.TGModelPropertyManager.LOCAL_TEMPLATES)
