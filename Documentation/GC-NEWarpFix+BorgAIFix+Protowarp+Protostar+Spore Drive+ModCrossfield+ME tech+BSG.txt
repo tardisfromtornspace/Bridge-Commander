@@ -162,7 +162,8 @@ All of these must be installed before installing this mod, in this order:
 ** From here, HullPolarizer is the most used, but also the file "FIX-FoundationTech20050703ShipInstanceDetach.py", which solves problems related with iterating lTechs when detaching and removing from such FoundationTech list.
 * This mod, for the projectile ExtraCollisionDamageDummy, scripts.Tactical.Projectiles.trails.OriBeam version >= 1.01 and certain NanoFX 2.0 Beta fixes implemented there: https://www.gamefront.com/games/bridge-commander/file/sg1-sga-and-sgu-generic-overhaul-mod
 * It also requires AutoTargeting, but the script itself is present on this mod too, just in case.
-###CAREFUL### 
+* This mod is recommended too https://www.gamefront.com/games/bridge-commander/file/st-hull-and-color-accessibility
+###CAREFUL###
 * The following are going to be installed partially (see "install steps"):
 ** This mod, for 2003 BSG and the gunstar/colonial defender, but we are only going to use SOME of its folders: https://www.gamefront.com/games/bridge-commander/file/battlestar-galactica-fleet-pack
 *** We need all the contents inside the data and sfx folders, then we need the contents inside scripts/Tactical/Projectiles/LJTorpLib and scripts/Tactical/Projectiles/LJTorpLib2, and scripts/Custom/Autoload/Galactica_SoundPak.py
