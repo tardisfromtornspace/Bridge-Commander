@@ -1,4 +1,7 @@
 ==Changelog==
+1.2.3 -
+   Updates:
+   * Updated doc a bit.
 1.2.2 -
    Updates:
    * Slightly modified Hyperdrive Travelling Method's GetActualMaxSpeed and GetMaxCruiseSpeed to provide smarter speed-handling.
@@ -144,7 +147,8 @@ This mod attempts to fix some Stargate pack balance inconsistencies by adding ap
 
 == Dependencies ==
 All of these must be installed before installing this mod, in this order:
-* Foundation + Kobayashi Maru (KM has Foundation already installed - the most recent, the better, preferably 2011.10 or latter)
+* Foundation + NanoFXv2 + Kobayashi Maru + Galaxy Charts (KM has Foundation, NanoFXv2 and GalaxyCharts already installed - the most recent, the better, preferably 2011.10 or latter)
+** Depending on the version of KM, you may require GalaxyCharts' Warp AI fix as well: https://www.gamefront.com/games/bridge-commander/file/galaxy-charts-warp-ai-fix/
 * Stargate pack 3.0 or 4.0 https://www.gamefront.com/games/bridge-commander/file/stargate-ship-pack-dave975-and-dkealt
 ** If you want to install the Stargate multiplayer patch (for 3.0, https://www.gamefront.com/games/bridge-commander/file/sg-pack-3-0-multiplayer-patch, install the KM version of it, not the other), do it immediately after installing this one.
 ** IMPORTANT NOTE: BEFORE YOU INSTALL ANY OF THE FOLLOWING MODS, MAKE SURE YOU HAVE A PROPER BACKUP OF THE CORRECT 000-Utilities-GetFileNames-20030402.py and 000-Fixes20030402-FoundationRedirect.py from Kobayashi Maru 2011.10 (located on scripts/Custom/Autoload folder) since for some reason the people who released it added a faulty/incomplete version of them. If you already have the proper versions, once you have finished installing the last of the mods mentioned here, you just need to overwrite the faulty files with the correct KM 2011.10 version, or with alternate fix-ups I have (contact me for those fix-ups, since only a few installs, including mine, required those to have a non-buggy SP Campaign and QB).
