@@ -3,7 +3,7 @@
 # GC is ALL Rights Reserved by USS Frontier, but since GC supports Plugins it is fair to release a new TravellingMethod or patch old ones as long as the files remain unmodified.
 # BSG1978UltraLightDrive.py
 # prototype custom travelling method plugin script, by USS Frontier (Enhanced Warp, original) and then modified by Alex SL Gato for BSG 1978 Ultra-Light Drive.
-# 22nd September 2025
+# 27th September 2025
 #################################################################################################################
 ##########	MANUAL
 #################################################################################################################
@@ -97,7 +97,7 @@ Foundation.ShipDef.USSProtostar.dTechs = { # (#)
 #################################################################################################################
 #
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.33",
+	    "Version": "0.34",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -1303,13 +1303,18 @@ def GetActualMaxSpeed(self):
 			fPower = self.AIwarpPower
 	else:
 		if fRealMaxSpeed != 0:
-			fPower = self.GetSpeed()/fRealMaxSpeed
+			mySpeed = self.GetSpeed()
+			if mySpeed is None or mySpeed > fMaximumSpeed or mySpeed > fRealMaxSpeed:
+				mySpeed = fRealMaxSpeed
+			elif mySpeed < fMinimumSpeed:
+				mySpeed = fRealMaxSpeed
+			fPower = mySpeed/fRealMaxSpeed
 		else:
 			fPower = 1.0
 
 	fAMWS = (fRealMaxSpeed * fPower) - (fPower - 1.0)
-	if fAMWS > 10.0:
-		fAMWS = 10.0
+	if fAMWS > fMaximumSpeed:
+		fAMWS = fMaximumSpeed
 	return fAMWS
 
 ########
@@ -1321,6 +1326,7 @@ def GetActualMaxSpeed(self):
 def GetActualCruiseSpeed(self):
 	debug(__name__ + ", GetActualCruiseSpeed")
 
+	fPower = 1.0
 	pWarpEngines = self.Ship.GetWarpEngineSubsystem()
 	fRealCruiseSpeed = self.GetCruiseSpeed()
 	if pWarpEngines != None:
@@ -1330,13 +1336,19 @@ def GetActualCruiseSpeed(self):
 			fPower = self.AIwarpPower
 	else:
 		if fRealCruiseSpeed != 0:
-			fPower = self.GetSpeed()/fRealCruiseSpeed
+			mySpeed = self.GetSpeed()
+			if mySpeed is None or mySpeed > fMaximumSpeed or mySpeed > fRealCruiseSpeed:
+				mySpeed = fRealCruiseSpeed
+			elif mySpeed < fMinimumSpeed:
+				mySpeed = fRealCruiseSpeed
+
+			fPower = mySpeed/fRealCruiseSpeed
 		else:
 			fPower = 1.0
 
 	fACWS = (fRealCruiseSpeed * fPower) - (fPower - 1.0)
-	if fACWS > 10.0:
-		fACWS = 10.0
+	if fACWS > fMaximumSpeed:
+		fACWS = fMaximumSpeed
 	return fACWS
 
 ########

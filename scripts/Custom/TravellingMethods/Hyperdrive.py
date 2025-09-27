@@ -7,7 +7,7 @@
 # Please note that this file requires:
 # - USS Sovereign's Hyperdrive Module, as the purpose of the original mod was to provide exactly that.
 # The original Slipstream version requires all assets from the incomplete original from https://www.gamefront.com/games/bridge-commander/file/slipstream-for-galaxy-charts, except scripts/Custom/TravellingMethods/Slipstream.py.new (so, basically the files at scripts/Custom/GalaxyCharts), but since this file needs to create its own for Hyperdrive, it does not require them.
-# 20th April 2025
+# 27th September 2025
 #################################################################################################################
 ##########	MANUAL
 #################################################################################################################
@@ -27,7 +27,7 @@
 #################################################################################################################
 #
 MODINFO = { "Author": "\"BCXtreme\" (original), \"Alex SL Gato\" andromedavirgoa@gmail.com (fixes), \"USS Sovereign\" (Hyperdrive Module)",
-	    "Version": "0.16",
+	    "Version": "0.34",
 	    "License": "All Rights Reserved, by BCXtreme",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -1460,17 +1460,29 @@ def GetCruiseSpeed(self):
 # must return a float  (like 1.0)
 ########
 def GetActualMaxSpeed(self):
+	debug(__name__ + ", GetActualMaxSpeed")
 	pWarpEngines = self.Ship.GetWarpEngineSubsystem()
-	if pWarpEngines == None:
-		return 5.0
+	fPower = 1.0
 	fRealMaxSpeed = self.GetMaxSpeed()
-	if self.IsPlayer == 1:
-		fPower = pWarpEngines.GetPowerPercentageWanted()
+	if pWarpEngines != None:
+		if self.IsPlayer == 1:
+			fPower = pWarpEngines.GetPowerPercentageWanted()
+		else:
+			fPower = self.AIwarpPower
 	else:
-		fPower = self.AIwarpPower
+		if fRealMaxSpeed != 0:
+			mySpeed = self.GetSpeed()
+			if mySpeed is None or mySpeed > fMaximumSpeed or mySpeed > fRealMaxSpeed:
+				mySpeed = fRealMaxSpeed
+			elif mySpeed < fMinimumSpeed:
+				mySpeed = fRealMaxSpeed
+			fPower = mySpeed/fRealMaxSpeed
+		else:
+			fPower = 1.0
+
 	fAMWS = (fRealMaxSpeed * fPower) - (fPower - 1.0)
-	if fAMWS > 9.99:
-		fAMWS = 9.99
+	if fAMWS > fMaximumSpeed:
+		fAMWS = fMaximumSpeed
 	return fAMWS
 
 ########
@@ -1480,17 +1492,31 @@ def GetActualMaxSpeed(self):
 # must return a float  (like 1.0)
 ########
 def GetActualCruiseSpeed(self):
+	debug(__name__ + ", GetActualCruiseSpeed")
+
+	fPower = 1.0
 	pWarpEngines = self.Ship.GetWarpEngineSubsystem()
-	if pWarpEngines == None:
-		return 5.0
 	fRealCruiseSpeed = self.GetCruiseSpeed()
-	if self.IsPlayer == 1:
-		fPower = pWarpEngines.GetPowerPercentageWanted()
+	if pWarpEngines != None:
+		if self.IsPlayer == 1:
+			fPower = pWarpEngines.GetPowerPercentageWanted()
+		else:
+			fPower = self.AIwarpPower
 	else:
-		fPower = self.AIwarpPower
+		if fRealCruiseSpeed != 0:
+			mySpeed = self.GetSpeed()
+			if mySpeed is None or mySpeed > fMaximumSpeed or mySpeed > fRealCruiseSpeed:
+				mySpeed = fRealCruiseSpeed
+			elif mySpeed < fMinimumSpeed:
+				mySpeed = fRealCruiseSpeed
+
+			fPower = mySpeed/fRealCruiseSpeed
+		else:
+			fPower = 1.0
+
 	fACWS = (fRealCruiseSpeed * fPower) - (fPower - 1.0)
-	if fACWS > 9.99:
-		fACWS = 9.99
+	if fACWS > fMaximumSpeed:
+		fACWS = fMaximumSpeed
 	return fACWS
 
 ########

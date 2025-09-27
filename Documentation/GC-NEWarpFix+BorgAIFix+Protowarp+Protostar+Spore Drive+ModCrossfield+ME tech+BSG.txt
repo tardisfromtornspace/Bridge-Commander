@@ -1,4 +1,6 @@
 == Changelog ==
+0.71 - Updates:
+  * Modified BSG 1978, BSG 2003 and Mass Effect FTL drives' GetActualCruiseSpeed and GetActualMaxSpeed to have the speed bar work slightly better.
 0.7 - Updates:
   * Fused this mod with the Battlestar Galactica 2003 + 1978 overhaul script mod:
   ** Added BSG 2003 and BSG 1978 GC-dependant FTLs.

@@ -1,4 +1,7 @@
 ==Changelog==
+1.2.2 -
+   Updates:
+   * Slightly modified Hyperdrive Travelling Method's GetActualMaxSpeed and GetMaxCruiseSpeed to provide smarter speed-handling.
 1.2.1 -
    Updates:
    * Made the Stargate Network for GC more non-ship-based, to make it easier for the AI.
