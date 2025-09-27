@@ -159,7 +159,7 @@ All of these must be installed before installing this mod, in this order:
 * This mod, for the SR2 Normandy and ME3 Normandy https://www.gamefront.com/games/bridge-commander/file/normandy-sr-2
 * This mod, for the Turian vessels https://www.gamefront.com/games/bridge-commander/file/turian-frigate
 * All the dependencies for this mod + the mod: https://www.gamefront.com/games/bridge-commander/file/stbc-babylon-5-mod
-** From here, HullPolarizer is the most used, but also the file "FIX-FoundationTech20050703ShipInstanceDetach.py", which solves problems related with iterating lTechs when detaching and removing from such FoundationTech list.
+** From here, HullPolarizer is the most used, but also several of the Autoload files, including "FIX-FoundationTech20050703ShipInstanceDetach.py", which solves problems related with iterating lTechs when detaching and removing from such FoundationTech list, "FIX-DS9FXbelow1dot2" which fixes some phased torpedo shenanigans when certain mutators are active, and "FIX-DefiantsQBautostartPower1dot0" which fixes an advanced power control issue when there are no warp engines.
 * This mod, for the projectile ExtraCollisionDamageDummy, scripts.Tactical.Projectiles.trails.OriBeam version >= 1.01 and certain NanoFX 2.0 Beta fixes implemented there: https://www.gamefront.com/games/bridge-commander/file/sg1-sga-and-sgu-generic-overhaul-mod
 * It also requires AutoTargeting, but the script itself is present on this mod too, just in case.
 * This mod is recommended too https://www.gamefront.com/games/bridge-commander/file/st-hull-and-color-accessibility
