@@ -1,4 +1,7 @@
-==Changelog==
+== Changelog ==
+1.2.4 -
+   Fixes:
+   * Updated FIX-DS9FXbelow1dot2 to be a bit more agnostic towards the actual value of SpeciesToTorp.PHASEDPLASMA
 1.2.3 -
    Updates:
    * Updated doc a bit.

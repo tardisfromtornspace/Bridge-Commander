@@ -1,4 +1,7 @@
 == Changelog ==
+1.1.7 -
+   Fixes:
+   * Updated FIX-DS9FXbelow1dot2 to be a bit more agnostic towards the actual value of SpeciesToTorp.PHASEDPLASMA
 1.1.6 - 
 * Updates:
   - Updated Drones and Drones2 to fix certain check-condition issue.

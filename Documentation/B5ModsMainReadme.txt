@@ -1,4 +1,7 @@
 ==Changelog==
+1.7.4 -
+   Fixes:
+   * Updated FIX-DS9FXbelow1dot2 to be a bit more agnostic towards the actual value of SpeciesToTorp.PHASEDPLASMA
 1.7.3 -
    Fixes:
    * Updated Babylon 5 hardpoint for two names I forgot to place and the reactor position being flipped.

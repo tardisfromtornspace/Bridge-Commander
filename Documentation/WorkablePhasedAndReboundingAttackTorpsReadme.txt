@@ -4,6 +4,7 @@ Special Thanks to 𝕟𝕒𝕣𝕣𝕠𝕨𝕔𝕨𝕪𝕗𝕖#0007 for driving 
 
 == Changelog ==
 
+1.5.1 - Updated FIX-DS9FXbelow1dot2 to be a bit more agnostic towards the actual value of SpeciesToTorp.PHASEDPLASMA
 1.5.0 - Updated AdvArmourTechThree from 1.83 to 1.84, fixed weird button bug.
 1.4.9 - Updated HoppingDrone to fix weird edge-case crash issues.
 1.4.8 - Changed AutomaticDestroyedSystemDummy torpedo name to prevent some issues.

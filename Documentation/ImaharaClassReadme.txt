@@ -1,4 +1,6 @@
 == Changelog ==
+1.0.13
+* Updated FIX-DS9FXbelow1dot2 to be a bit more agnostic towards the actual value of SpeciesToTorp.PHASEDPLASMA
 1.0.12
 * Updated AdvArmourTechThree from 1.83 to 1.84, fixed weird button bug.
 1.0.11

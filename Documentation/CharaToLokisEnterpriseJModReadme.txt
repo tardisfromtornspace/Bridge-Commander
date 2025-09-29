@@ -1,4 +1,6 @@
 == Changelog ==
+1.2.17 - Fixing:
+   * Updated FIX-DS9FXbelow1dot2 to be a bit more agnostic towards the actual value of SpeciesToTorp.PHASEDPLASMA
 1.2.16 - Fixing:
    * Updated SimulatedPointDefence to 1.0 to allow cleaner logic and cleanup.
 1.2.15 - Fixing:

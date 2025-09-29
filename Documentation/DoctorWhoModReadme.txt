@@ -1,4 +1,7 @@
 == Changelog ==
+1.2.6 -
+   Fixes:
+   * Updated FIX-DS9FXbelow1dot2 to be a bit more agnostic towards the actual value of SpeciesToTorp.PHASEDPLASMA
 1.2.5 -
    Updates:
    * Updated some Mvam and Mvam-related hardpoints to provide better infinite Mvam.
