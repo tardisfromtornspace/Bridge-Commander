@@ -24,7 +24,7 @@ AndorianStarship = App.ShipProperty_Create("Andorian Starship")
 
 AndorianStarship.SetGenus(1)
 AndorianStarship.SetSpecies(106)
-AndorianStarship.SetMass(600.000000)
+AndorianStarship.SetMass(3600.000000)
 AndorianStarship.SetRotationalInertia(1200.000000)
 AndorianStarship.SetShipName("Kumari")
 AndorianStarship.SetModelFilename("data/Models/Ships/Andorian_Starship/Andorian_Starship.nif")

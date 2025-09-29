@@ -848,7 +848,7 @@ Centaur = App.ShipProperty_Create("Centaur")
 
 Centaur.SetGenus(1)
 Centaur.SetSpecies(144)
-Centaur.SetMass(87.000000)
+Centaur.SetMass(7500.000000)
 Centaur.SetRotationalInertia(43500.000000)
 Centaur.SetShipName("Excelsior")
 Centaur.SetModelFilename("data/Models/Ships/Excelsior/Excelsior.nif")

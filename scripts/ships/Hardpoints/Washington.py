@@ -229,7 +229,7 @@ Yorktown = App.ShipProperty_Create("Yorktown")
 
 Yorktown.SetGenus(1)
 Yorktown.SetSpecies(103)
-Yorktown.SetMass(470.000000)
+Yorktown.SetMass(5470.000000)
 Yorktown.SetRotationalInertia(8000.000000)
 Yorktown.SetShipName("NXBulgaria")
 Yorktown.SetModelFilename("data/Models/Ships/YorktownClass/Washington.nif")

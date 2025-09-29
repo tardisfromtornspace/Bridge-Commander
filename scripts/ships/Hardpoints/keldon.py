@@ -288,7 +288,7 @@ Galor = App.ShipProperty_Create("Galor")
 
 Galor.SetGenus(1)
 Galor.SetSpecies(202)
-Galor.SetMass(60.000000)
+Galor.SetMass(12500.000000)
 Galor.SetRotationalInertia(6000.000000)
 Galor.SetShipName("Galor")
 Galor.SetModelFilename("data/Models/Ships/Galor.nif")

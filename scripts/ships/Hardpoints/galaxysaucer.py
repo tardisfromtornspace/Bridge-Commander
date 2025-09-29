@@ -727,7 +727,7 @@ GalaxySaucer = App.ShipProperty_Create("GalaxySaucer")
 
 GalaxySaucer.SetGenus(1)
 GalaxySaucer.SetSpecies(125)
-GalaxySaucer.SetMass(350.000000)
+GalaxySaucer.SetMass(4000.000000)
 GalaxySaucer.SetRotationalInertia(15000.000000)
 GalaxySaucer.SetShipName("GalaxySaucer")
 GalaxySaucer.SetModelFilename("data/Models/Ships/Galaxy/Saucer.NIF")

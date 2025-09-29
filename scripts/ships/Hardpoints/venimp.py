@@ -318,7 +318,7 @@ Venator = App.ShipProperty_Create("Venator")
 
 Venator.SetGenus(1)
 Venator.SetSpecies(101)
-Venator.SetMass(200000.000000)
+Venator.SetMass(29000.000000)
 Venator.SetRotationalInertia(800000.000000)
 Venator.SetShipName("Isd")
 Venator.SetModelFilename("")

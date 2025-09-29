@@ -331,7 +331,7 @@ Peragrine = App.ShipProperty_Create("Peragrine")
 
 Peragrine.SetGenus(1)
 Peragrine.SetSpecies(119)
-Peragrine.SetMass(45.000000)
+Peragrine.SetMass(1500.000000)
 Peragrine.SetRotationalInertia(2000.000000)
 Peragrine.SetShipName("Peragrine Fighter")
 Peragrine.SetModelFilename("data/Models/Ships/Peragrine.nif")

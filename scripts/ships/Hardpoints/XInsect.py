@@ -223,7 +223,7 @@ Insectoid = App.ShipProperty_Create("Insectoid")
 
 Insectoid.SetGenus(1)
 Insectoid.SetSpecies(501)
-Insectoid.SetMass(200.000000)
+Insectoid.SetMass(1200.000000)
 Insectoid.SetRotationalInertia(600.000000)
 Insectoid.SetShipName("Insectoid")
 Insectoid.SetModelFilename("")

@@ -6,7 +6,7 @@ XCV330 = App.ShipProperty_Create("XCV330")
 
 XCV330.SetGenus(1)
 XCV330.SetSpecies(101)
-XCV330.SetMass(10.000000)
+XCV330.SetMass(1400.000000)
 XCV330.SetRotationalInertia(1000.000000)
 XCV330.SetShipName("XCV330")
 XCV330.SetModelFilename("data/Models/Ships/XCV330/XCV330.nif")

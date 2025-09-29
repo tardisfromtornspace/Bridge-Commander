@@ -643,7 +643,7 @@ KessokDestroyer = App.ShipProperty_Create("Kessok Destroyer")
 
 KessokDestroyer.SetGenus(1)
 KessokDestroyer.SetSpecies(502)
-KessokDestroyer.SetMass(140.000000)
+KessokDestroyer.SetMass(8140.000000)
 KessokDestroyer.SetRotationalInertia(300.000000)
 KessokDestroyer.SetShipName("Kessok Destroyer")
 KessokDestroyer.SetModelFilename("data/Models/Ships/KessokLight.nif")

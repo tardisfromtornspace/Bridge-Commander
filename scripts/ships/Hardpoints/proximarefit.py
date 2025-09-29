@@ -199,7 +199,7 @@ Proxima = App.ShipProperty_Create("Proxima")
 
 Proxima.SetGenus(1)
 Proxima.SetSpecies(103)
-Proxima.SetMass(70.000000)
+Proxima.SetMass(8700.000000)
 Proxima.SetRotationalInertia(8000.000000)
 Proxima.SetShipName("U.S.S. Proxima")
 Proxima.SetModelFilename("data/Models/Ships/Proxima Class/Proxima Refit/ProximaRefit.nif")

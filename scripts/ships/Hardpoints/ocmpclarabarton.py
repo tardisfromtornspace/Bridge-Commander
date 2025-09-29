@@ -233,7 +233,7 @@ CI_Olympic = App.ShipProperty_Create("CI_Olympic")
 
 CI_Olympic.SetGenus(1)
 CI_Olympic.SetSpecies(139)
-CI_Olympic.SetMass(15.000000)
+CI_Olympic.SetMass(15000.000000)
 CI_Olympic.SetRotationalInertia(2000.000000)
 CI_Olympic.SetShipName("CI_Olympic")
 CI_Olympic.SetModelFilename("data/Models/Ships/CI_Olympic.nif")

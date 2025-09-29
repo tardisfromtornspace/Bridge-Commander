@@ -150,7 +150,7 @@ ISS = App.ShipProperty_Create("ISS")
 
 ISS.SetGenus(1)
 ISS.SetSpecies(501)
-ISS.SetMass(24000.000000)
+ISS.SetMass(29000.000000)
 ISS.SetRotationalInertia(600000.000000)
 ISS.SetShipName("ISS")
 ISS.SetModelFilename("data/Models/Ships/CSS.nif")

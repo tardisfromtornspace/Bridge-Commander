@@ -928,7 +928,7 @@ Tholian = App.ShipProperty_Create("Tholian")
 
 Tholian.SetGenus(1)
 Tholian.SetSpecies(104)
-Tholian.SetMass(51.000000)
+Tholian.SetMass(3100.000000)
 Tholian.SetRotationalInertia(1000.000000)
 Tholian.SetShipName("NX01Enterprise")
 Tholian.SetModelFilename("data/Models/Ships/NX01-Enterprise/nx01.nif")

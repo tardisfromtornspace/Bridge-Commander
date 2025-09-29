@@ -10,7 +10,7 @@ Miranda = App.ShipProperty_Create("Miranda")
 
 Miranda.SetGenus(3)
 Miranda.SetSpecies(155)
-Miranda.SetMass(45.000000)
+Miranda.SetMass(7250.000000)
 Miranda.SetRotationalInertia(6500.000000)
 Miranda.SetShipName("Miranda")
 Miranda.SetModelFilename("data/Models/ships/MirandaPack/ZZSitak.nif")

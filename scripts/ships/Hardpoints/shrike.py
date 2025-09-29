@@ -270,7 +270,7 @@ Shrike = App.ShipProperty_Create("Shrike")
 
 Shrike.SetGenus(1)
 Shrike.SetSpecies(306)
-Shrike.SetMass(50.000000)
+Shrike.SetMass(7000.000000)
 Shrike.SetRotationalInertia(2000.000000)
 Shrike.SetShipName("Shrike")
 Shrike.SetModelFilename("data/Models/Ships/Falcon.nif")

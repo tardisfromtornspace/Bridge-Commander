@@ -944,7 +944,7 @@ NX01Enterprise = App.ShipProperty_Create("NX01 Enterprise")
 
 NX01Enterprise.SetGenus(1)
 NX01Enterprise.SetSpecies(104)
-NX01Enterprise.SetMass(51.000000)
+NX01Enterprise.SetMass(6500.000000)
 NX01Enterprise.SetRotationalInertia(1000.000000)
 NX01Enterprise.SetShipName("NX01Enterprise")
 NX01Enterprise.SetModelFilename("data/Models/Ships/NX01-Enterprise/nx01.nif")

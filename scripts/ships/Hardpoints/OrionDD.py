@@ -346,7 +346,7 @@ Orion = App.ShipProperty_Create("Orion")
 
 Orion.SetGenus(1)
 Orion.SetSpecies(401)
-Orion.SetMass(100.000000)
+Orion.SetMass(15000.000000)
 Orion.SetRotationalInertia(38500.000000)
 Orion.SetShipName("Orion")
 Orion.SetModelFilename("data/Models/Ships/OrionDD/OrionDD.nif")

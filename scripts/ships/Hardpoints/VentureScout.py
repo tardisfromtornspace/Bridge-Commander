@@ -233,7 +233,7 @@ VentureScout = App.ShipProperty_Create("VentureScout")
 
 VentureScout.SetGenus(1)
 VentureScout.SetSpecies(139)
-VentureScout.SetMass(15.000000)
+VentureScout.SetMass(16.000000)
 VentureScout.SetRotationalInertia(2000.000000)
 VentureScout.SetShipName("VentureScout")
 VentureScout.SetModelFilename("data/Models/Ships/VentureScout.nif")

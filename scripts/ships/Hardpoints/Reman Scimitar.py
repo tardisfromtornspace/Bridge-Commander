@@ -99,7 +99,7 @@ scimitar = App.ShipProperty_Create("scimitar")
 
 scimitar.SetGenus(1)
 scimitar.SetSpecies(718)
-scimitar.SetMass(800.000000)
+scimitar.SetMass(28000.000000)
 scimitar.SetRotationalInertia(8000.000000)
 scimitar.SetShipName("scimitar")
 scimitar.SetModelFilename("data/Models/Ships/Reman Scimitar/Reman Scimitar.NIF")

@@ -522,7 +522,7 @@ Kvort = App.ShipProperty_Create("Kvort")
 
 Kvort.SetGenus(1)
 Kvort.SetSpecies(404)
-Kvort.SetMass(130.000000)
+Kvort.SetMass(2300.000000)
 Kvort.SetRotationalInertia(15000.000000)
 Kvort.SetShipName("Kvort")
 Kvort.SetModelFilename("data/Models/Ships/Kvort.nif")

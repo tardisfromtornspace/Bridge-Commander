@@ -570,7 +570,7 @@ SFPBugship = App.ShipProperty_Create("SFPBugship")
 
 SFPBugship.SetGenus(1)
 SFPBugship.SetSpecies(925)
-SFPBugship.SetMass(150.000000)
+SFPBugship.SetMass(4500.000000)
 SFPBugship.SetRotationalInertia(15000.000000)
 SFPBugship.SetShipName("bugship")
 SFPBugship.SetModelFilename("data/Models/Ships/jhd/jhd.nif")

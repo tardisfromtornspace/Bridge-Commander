@@ -906,7 +906,7 @@ SonaB = App.ShipProperty_Create("SonaB")
 
 SonaB.SetGenus(1)
 SonaB.SetSpecies(920)
-SonaB.SetMass(100.000000)
+SonaB.SetMass(23000.000000)
 SonaB.SetRotationalInertia(10000.000000)
 SonaB.SetShipName("SonaB")
 SonaB.SetModelFilename("data/Models/Ships/SonaB.nif")

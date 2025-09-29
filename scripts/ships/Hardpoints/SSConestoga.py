@@ -659,7 +659,7 @@ SSConestoga = App.ShipProperty_Create("SSConestoga")
 
 SSConestoga.SetGenus(1)
 SSConestoga.SetSpecies(140)
-SSConestoga.SetMass(25.000000)
+SSConestoga.SetMass(1000.000000)
 SSConestoga.SetRotationalInertia(5000.000000)
 SSConestoga.SetShipName("SSConestoga")
 SSConestoga.SetModelFilename("data/Models/Ships/SSConestoga.nif")

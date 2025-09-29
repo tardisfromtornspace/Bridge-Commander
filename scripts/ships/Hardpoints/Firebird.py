@@ -1285,7 +1285,7 @@ Firebird = App.ShipProperty_Create("Firebird")
 
 Firebird.SetGenus(1)
 Firebird.SetSpecies(103)
-Firebird.SetMass(70.000000)
+Firebird.SetMass(18000.000000)
 Firebird.SetRotationalInertia(8000.000000)
 Firebird.SetShipName("Prometheus")
 Firebird.SetModelFilename("data/Models/Ships/Intrepid/Intrepid.nif")

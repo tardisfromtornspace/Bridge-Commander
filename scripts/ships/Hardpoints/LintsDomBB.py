@@ -532,7 +532,7 @@ LintsDomBB = App.ShipProperty_Create("LintsDomBB")
 
 LintsDomBB.SetGenus(1)
 LintsDomBB.SetSpecies(901)
-LintsDomBB.SetMass(600.000000)
+LintsDomBB.SetMass(23000.000000)
 LintsDomBB.SetRotationalInertia(16000.000000)
 LintsDomBB.SetShipName("LintsDomBB")
 LintsDomBB.SetModelFilename("data/Models/Ships/LintsDomBB/LintsDomBB.nif")

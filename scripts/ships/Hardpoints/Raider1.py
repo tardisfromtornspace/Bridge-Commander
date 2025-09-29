@@ -347,7 +347,7 @@ BirdofPrey = App.ShipProperty_Create("Bird of Prey")
 
 BirdofPrey.SetGenus(1)
 BirdofPrey.SetSpecies(927)
-BirdofPrey.SetMass(25.000000)
+BirdofPrey.SetMass(1500.000000)
 BirdofPrey.SetRotationalInertia(2000.000000)
 BirdofPrey.SetShipName("Bird of Prey")
 BirdofPrey.SetModelFilename("data/Models/Ships/Birdofprey.nif")

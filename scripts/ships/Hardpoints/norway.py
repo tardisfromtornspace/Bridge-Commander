@@ -563,7 +563,7 @@ Norway = App.ShipProperty_Create("Norway")
 
 Norway.SetGenus(1)
 Norway.SetSpecies(116)
-Norway.SetMass(100.000000)
+Norway.SetMass(8000.000000)
 Norway.SetRotationalInertia(4000.000000)
 Norway.SetShipName("norway")
 Norway.SetModelFilename("data/Models/Ships/norway.nif")

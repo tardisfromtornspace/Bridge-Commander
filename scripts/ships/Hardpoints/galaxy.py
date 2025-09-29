@@ -1185,7 +1185,7 @@ Galaxy = App.ShipProperty_Create("Galaxy")
 
 Galaxy.SetGenus(1)
 Galaxy.SetSpecies(101)
-Galaxy.SetMass(100.000000)
+Galaxy.SetMass(15000.000000)
 Galaxy.SetRotationalInertia(300.000000)
 Galaxy.SetShipName("Dauntless")
 Galaxy.SetModelFilename("")

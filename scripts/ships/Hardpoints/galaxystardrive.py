@@ -727,7 +727,7 @@ GalaxyStardrive = App.ShipProperty_Create("Galaxy Stardrive")
 
 GalaxyStardrive.SetGenus(1)
 GalaxyStardrive.SetSpecies(126)
-GalaxyStardrive.SetMass(350.000000)
+GalaxyStardrive.SetMass(11000.000000)
 GalaxyStardrive.SetRotationalInertia(15000.000000)
 GalaxyStardrive.SetShipName("Galaxy Stardrive")
 GalaxyStardrive.SetModelFilename("data/Models/Ships/Galaxy/Stardrive.NIF")

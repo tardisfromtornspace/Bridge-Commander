@@ -199,7 +199,7 @@ Constitution = App.ShipProperty_Create("Constitution")
 
 Constitution.SetGenus(1)
 Constitution.SetSpecies(103)
-Constitution.SetMass(70.000000)
+Constitution.SetMass(7100.000000)
 Constitution.SetRotationalInertia(8000.000000)
 Constitution.SetShipName("EnterpriseNCC1701")
 Constitution.SetModelFilename("data/Models/Ships/WCWOKBDEnterprise/WCWOKBDEnterprise.nif")

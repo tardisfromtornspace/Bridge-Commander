@@ -813,7 +813,7 @@ Peregrine = App.ShipProperty_Create("Peregrine")
 
 Peregrine.SetGenus(1)
 Peregrine.SetSpecies(105)
-Peregrine.SetMass(100.000000)
+Peregrine.SetMass(1500.000000)
 Peregrine.SetRotationalInertia(8000.000000)
 Peregrine.SetShipName("Peregrine")
 Peregrine.SetModelFilename("data/Models/Ships/Nebula.nif")

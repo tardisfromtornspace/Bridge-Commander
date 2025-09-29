@@ -122,7 +122,7 @@ Raptor = App.ShipProperty_Create("Raptor")
 
 Raptor.SetGenus(1)
 Raptor.SetSpecies(402)
-Raptor.SetMass(5.000000)
+Raptor.SetMass(7000.000000)
 Raptor.SetRotationalInertia(800.000000)
 Raptor.SetShipName("Raptor")
 Raptor.SetModelFilename("data/Models/Ships/Vorcha.nif")

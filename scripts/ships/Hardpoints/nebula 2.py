@@ -954,7 +954,7 @@ Nebula = App.ShipProperty_Create("Nebula")
 
 Nebula.SetGenus(1)
 Nebula.SetSpecies(105)
-Nebula.SetMass(100.000000)
+Nebula.SetMass(14500.000000)
 Nebula.SetRotationalInertia(10000.000000)
 Nebula.SetShipName("Nebula")
 Nebula.SetModelFilename("data/Models/Ships/Nebula.nif")

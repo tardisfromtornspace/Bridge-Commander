@@ -956,7 +956,7 @@ MvamVoyagerSep = App.ShipProperty_Create("MvamVoyagerSep")
 
 MvamVoyagerSep.SetGenus(1)
 MvamVoyagerSep.SetSpecies(103)
-MvamVoyagerSep.SetMass(120.000000)
+MvamVoyagerSep.SetMass(7200.000000)
 MvamVoyagerSep.SetRotationalInertia(8000.000000)
 MvamVoyagerSep.SetShipName("MvamVoyagerSep")
 MvamVoyagerSep.SetModelFilename("data/Models/Ships/MvamVoyagerSep/MvamVoyagerSep.nif")

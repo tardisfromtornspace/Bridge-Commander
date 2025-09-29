@@ -318,7 +318,7 @@ ImperatorII = App.ShipProperty_Create("Imperator II")
 
 ImperatorII.SetGenus(1)
 ImperatorII.SetSpecies(101)
-ImperatorII.SetMass(180000.000000)
+ImperatorII.SetMass(30000.000000)
 ImperatorII.SetRotationalInertia(800000.000000)
 ImperatorII.SetShipName("Isd")
 ImperatorII.SetModelFilename("")

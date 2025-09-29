@@ -120,7 +120,7 @@ WCcitydestclosed = App.ShipProperty_Create("WCcitydestclosed")
 
 WCcitydestclosed.SetGenus(1)
 WCcitydestclosed.SetSpecies(106)
-WCcitydestclosed.SetMass(2000.000000)
+WCcitydestclosed.SetMass(20000.000000)
 WCcitydestclosed.SetRotationalInertia(500.000000)
 WCcitydestclosed.SetShipName("WCcitydestclosed")
 WCcitydestclosed.SetModelFilename("data/Models/Ships/WCcitydestclosed/WCcitydestclosed.nif")

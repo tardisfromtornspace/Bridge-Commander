@@ -650,7 +650,7 @@ Achilles = App.ShipProperty_Create("Achilles")
 
 Achilles.SetGenus(1)
 Achilles.SetSpecies(128)
-Achilles.SetMass(100.000000)
+Achilles.SetMass(9000.000000)
 Achilles.SetRotationalInertia(10000.000000)
 Achilles.SetShipName("USS Lennox")
 Achilles.SetModelFilename("data/Models/USSLennox/USSLennox.NIF")

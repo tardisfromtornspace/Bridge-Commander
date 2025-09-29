@@ -411,7 +411,7 @@ Prometheus = App.ShipProperty_Create("Prometheus")
 
 Prometheus.SetGenus(1)
 Prometheus.SetSpecies(121)
-Prometheus.SetMass(95.000000)
+Prometheus.SetMass(4000.000000)
 Prometheus.SetRotationalInertia(47500.000000)
 Prometheus.SetShipName("Prometheus")
 Prometheus.SetModelFilename("data/Models/Ships/MvamPrometheus/UpperMid.NIF")

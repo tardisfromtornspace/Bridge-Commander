@@ -226,7 +226,7 @@ KTinga = App.ShipProperty_Create("KTinga")
 
 KTinga.SetGenus(1)
 KTinga.SetSpecies(407)
-KTinga.SetMass(150.000000)
+KTinga.SetMass(7600.000000)
 KTinga.SetRotationalInertia(15000.000000)
 KTinga.SetShipName("KTinga")
 KTinga.SetModelFilename("data/Models/Ships/KTinga/d7.NIF")

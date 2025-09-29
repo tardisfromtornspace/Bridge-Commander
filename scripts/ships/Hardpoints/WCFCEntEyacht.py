@@ -501,7 +501,7 @@ sovereignyacht = App.ShipProperty_Create("sovereignyacht")
 
 sovereignyacht.SetGenus(1)
 sovereignyacht.SetSpecies(134)
-sovereignyacht.SetMass(15.000000)
+sovereignyacht.SetMass(35.000000)
 sovereignyacht.SetRotationalInertia(2000.000000)
 sovereignyacht.SetShipName("Sovereign Yacht")
 sovereignyacht.SetModelFilename("data/Models/Ships/sovereignyacht/sovereignyacht.nif")

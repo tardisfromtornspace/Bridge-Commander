@@ -245,7 +245,7 @@ Junk = App.ShipProperty_Create("Junk")
 
 Junk.SetGenus(1)
 Junk.SetSpecies(918)
-Junk.SetMass(250.000000)
+Junk.SetMass(2500.000000)
 Junk.SetRotationalInertia(15000.000000)
 Junk.SetShipName("Junk")
 Junk.SetModelFilename("data/Models/Ships/Junk.nif")

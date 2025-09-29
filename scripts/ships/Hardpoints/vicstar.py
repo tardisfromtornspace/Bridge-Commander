@@ -318,7 +318,7 @@ VSD = App.ShipProperty_Create("VSD")
 
 VSD.SetGenus(1)
 VSD.SetSpecies(101)
-VSD.SetMass(50000.000000)
+VSD.SetMass(30000.000000)
 VSD.SetRotationalInertia(800000.000000)
 VSD.SetShipName("Isd")
 VSD.SetModelFilename("")

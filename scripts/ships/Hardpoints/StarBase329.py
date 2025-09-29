@@ -10,7 +10,7 @@ Starbase329 = App.ShipProperty_Create("Starbase329")
 
 Starbase329.SetGenus(2)
 Starbase329.SetSpecies(149)
-Starbase329.SetMass(500.000000)
+Starbase329.SetMass(5500.000000)
 Starbase329.SetRotationalInertia(49999998976.000000)
 Starbase329.SetShipName("Space Facility")
 Starbase329.SetModelFilename("data/Models/Bases/Starbase329/Starbase329.nif")

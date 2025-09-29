@@ -218,7 +218,7 @@ Cardfreighter = App.ShipProperty_Create("Cardfreighter")
 
 Cardfreighter.SetGenus(1)
 Cardfreighter.SetSpecies(924)
-Cardfreighter.SetMass(80.000000)
+Cardfreighter.SetMass(2800.000000)
 Cardfreighter.SetRotationalInertia(20000.000000)
 Cardfreighter.SetShipName("Freighter")
 Cardfreighter.SetModelFilename("data/Models/Ships/BlahBlah.nif")

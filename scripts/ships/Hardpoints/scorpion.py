@@ -232,7 +232,7 @@ scorpion = App.ShipProperty_Create("scorpion")
 
 scorpion.SetGenus(1)
 scorpion.SetSpecies(719)
-scorpion.SetMass(45.000000)
+scorpion.SetMass(4500.000000)
 scorpion.SetRotationalInertia(2000.000000)
 scorpion.SetShipName("scorpion")
 scorpion.SetModelFilename("data/Models/Ships/scorpion/scorpion.nif")

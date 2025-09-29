@@ -788,7 +788,7 @@ WCcentaur = App.ShipProperty_Create("WCcentaur")
 
 WCcentaur.SetGenus(1)
 WCcentaur.SetSpecies(103)
-WCcentaur.SetMass(215.000000)
+WCcentaur.SetMass(7512.000000)
 WCcentaur.SetRotationalInertia(107500.000000)
 WCcentaur.SetShipName("WCcentaur")
 WCcentaur.SetModelFilename("data/Models/Ships/WCExcelsior/WCcentaur.nif")

@@ -638,7 +638,7 @@ TOSTholian = App.ShipProperty_Create("TOSTholian")
 
 TOSTholian.SetGenus(1)
 TOSTholian.SetSpecies(104)
-TOSTholian.SetMass(53.000000)
+TOSTholian.SetMass(5300.000000)
 TOSTholian.SetRotationalInertia(1000.000000)
 TOSTholian.SetShipName("TOSTholian")
 TOSTholian.SetModelFilename("data/Models/Ships/TOS Tholian/NTCA.NIF")

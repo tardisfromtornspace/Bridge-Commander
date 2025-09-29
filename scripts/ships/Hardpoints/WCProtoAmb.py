@@ -661,7 +661,7 @@ Ambassador = App.ShipProperty_Create("Ambassador")
 
 Ambassador.SetGenus(1)
 Ambassador.SetSpecies(104)
-Ambassador.SetMass(320.000000)
+Ambassador.SetMass(14000.000000)
 Ambassador.SetRotationalInertia(1500.000000)
 Ambassador.SetShipName("WCProtoAmb")
 Ambassador.SetModelFilename("data/Models/Ships/DQP/WCProtoAmb/WCProroAmb.nif")

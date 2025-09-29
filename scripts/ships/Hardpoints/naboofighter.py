@@ -150,7 +150,7 @@ NabooFighter = App.ShipProperty_Create("Naboo Fighter")
 
 NabooFighter.SetGenus(0)
 NabooFighter.SetSpecies(401)
-NabooFighter.SetMass(100.000000)
+NabooFighter.SetMass(15.000000)
 NabooFighter.SetRotationalInertia(35000.000000)
 NabooFighter.SetShipName("naboofighter")
 NabooFighter.SetModelFilename("data/Models/Ships/naboofighter/naboofighter.nif")

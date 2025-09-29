@@ -690,7 +690,7 @@ KessokHeavy = App.ShipProperty_Create("KessokHeavy")
 
 KessokHeavy.SetGenus(1)
 KessokHeavy.SetSpecies(501)
-KessokHeavy.SetMass(500.000000)
+KessokHeavy.SetMass(18000.000000)
 KessokHeavy.SetRotationalInertia(1500.000000)
 KessokHeavy.SetShipName("Kesshon")
 KessokHeavy.SetModelFilename("data/Models/Ships/KessokHeavy.nif")

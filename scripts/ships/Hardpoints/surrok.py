@@ -122,7 +122,7 @@ Ship = App.ShipProperty_Create("Ship")
 
 Ship.SetGenus(1)
 Ship.SetSpecies(1)
-Ship.SetMass(100.000000)
+Ship.SetMass(6000.000000)
 Ship.SetRotationalInertia(12000.000000)
 Ship.SetShipName("Surrok")
 Ship.SetModelFilename("data/Models/Ships/Surrok/Surrok.nif")

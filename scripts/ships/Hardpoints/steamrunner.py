@@ -1360,7 +1360,7 @@ Steamrunner = App.ShipProperty_Create("Steamrunner")
 
 Steamrunner.SetGenus(1)
 Steamrunner.SetSpecies(120)
-Steamrunner.SetMass(95.000000)
+Steamrunner.SetMass(9500.000000)
 Steamrunner.SetRotationalInertia(8000.000000)
 Steamrunner.SetShipName("Steamrunner")
 Steamrunner.SetModelFilename("data/Models/Ships/Fca/fca/Fca.nif")

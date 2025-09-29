@@ -203,7 +203,7 @@ WCDoomMachine = App.ShipProperty_Create("WCDoomMachine")
 
 WCDoomMachine.SetGenus(1)
 WCDoomMachine.SetSpecies(106)
-WCDoomMachine.SetMass(2000.000000)
+WCDoomMachine.SetMass(200000.000000)
 WCDoomMachine.SetRotationalInertia(500.000000)
 WCDoomMachine.SetShipName("WCDoomMachine")
 WCDoomMachine.SetModelFilename("data/Models/Ships/WCDoomMachine.nif")

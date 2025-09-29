@@ -205,7 +205,7 @@ Sabre = App.ShipProperty_Create("Sabre")
 
 Sabre.SetGenus(1)
 Sabre.SetSpecies(130)
-Sabre.SetMass(1000.000000)
+Sabre.SetMass(2000.000000)
 Sabre.SetRotationalInertia(25000.000000)
 Sabre.SetShipName("Sabre")
 Sabre.SetModelFilename("data/Models/Ships/Sabre.nif")

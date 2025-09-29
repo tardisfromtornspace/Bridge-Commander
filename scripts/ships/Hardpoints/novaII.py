@@ -553,7 +553,7 @@ NovaMkII = App.ShipProperty_Create("Nova MkII")
 
 NovaMkII.SetGenus(1)
 NovaMkII.SetSpecies(118)
-NovaMkII.SetMass(55.000000)
+NovaMkII.SetMass(5500.000000)
 NovaMkII.SetRotationalInertia(5000.000000)
 NovaMkII.SetShipName("Nova MkII")
 NovaMkII.SetModelFilename("data/Models/Ships/Intrepid/Intrepid.nif")

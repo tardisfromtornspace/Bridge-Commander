@@ -435,7 +435,7 @@ Transport = App.ShipProperty_Create("Transport")
 
 Transport.SetGenus(1)
 Transport.SetSpecies(107)
-Transport.SetMass(80.000000)
+Transport.SetMass(1800.000000)
 Transport.SetRotationalInertia(7000.000000)
 Transport.SetShipName("Transport")
 Transport.SetModelFilename("data/Models/Ships/Transport.nif")

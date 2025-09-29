@@ -306,7 +306,7 @@ Valdore = App.ShipProperty_Create("Valdore")
 
 Valdore.SetGenus(1)
 Valdore.SetSpecies(302)
-Valdore.SetMass(400.000000)
+Valdore.SetMass(11000.000000)
 Valdore.SetRotationalInertia(2000.000000)
 Valdore.SetShipName("Valdore")
 Valdore.SetModelFilename("")

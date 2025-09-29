@@ -777,7 +777,7 @@ Raider = App.ShipProperty_Create("Raider")
 
 Raider.SetGenus(1)
 Raider.SetSpecies(915)
-Raider.SetMass(45000.000000)
+Raider.SetMass(4500.000000)
 Raider.SetRotationalInertia(10000.000000)
 Raider.SetShipName("Predator")
 Raider.SetModelFilename("data/Models/Ships/Kazonraider.nif")

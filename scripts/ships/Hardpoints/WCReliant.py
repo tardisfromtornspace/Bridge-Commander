@@ -183,7 +183,7 @@ WCReliant = App.ShipProperty_Create("WCReliant")
 
 WCReliant.SetGenus(1)
 WCReliant.SetSpecies(103)
-WCReliant.SetMass(50.000000)
+WCReliant.SetMass(9500.000000)
 WCReliant.SetRotationalInertia(8000.000000)
 WCReliant.SetShipName("WCReliant")
 WCReliant.SetModelFilename("data/Models/Ships/Fca/fca/Fca.nif")

@@ -295,7 +295,7 @@ Marauder = App.ShipProperty_Create("Marauder")
 
 Marauder.SetGenus(1)
 Marauder.SetSpecies(601)
-Marauder.SetMass(100.000000)
+Marauder.SetMass(16000.000000)
 Marauder.SetRotationalInertia(9000.000000)
 Marauder.SetShipName("Marauder")
 Marauder.SetModelFilename("data/Models/Ships/Marauder.nif")

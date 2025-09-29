@@ -853,7 +853,7 @@ WCnxexcel = App.ShipProperty_Create("WCnxexcel")
 
 WCnxexcel.SetGenus(1)
 WCnxexcel.SetSpecies(103)
-WCnxexcel.SetMass(215.000000)
+WCnxexcel.SetMass(8500.000000)
 WCnxexcel.SetRotationalInertia(107500.000000)
 WCnxexcel.SetShipName("WCnxexcel")
 WCnxexcel.SetModelFilename("data/Models/Ships/WCExcelsior/WCnxexcel.nif")

@@ -853,7 +853,7 @@ WCexcelrefit = App.ShipProperty_Create("WCexcelrefit")
 
 WCexcelrefit.SetGenus(1)
 WCexcelrefit.SetSpecies(103)
-WCexcelrefit.SetMass(215.000000)
+WCexcelrefit.SetMass(8500.000000)
 WCexcelrefit.SetRotationalInertia(107500.000000)
 WCexcelrefit.SetShipName("WCexcelrefit")
 WCexcelrefit.SetModelFilename("data/Models/Ships/WCExcelsior/WCexcelrefit.nif")

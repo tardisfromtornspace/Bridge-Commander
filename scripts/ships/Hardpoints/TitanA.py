@@ -1654,7 +1654,7 @@ TitanA = App.ShipProperty_Create("TitanA")
 
 TitanA.SetGenus(1)
 TitanA.SetSpecies(123)
-TitanA.SetMass(6989.000000)
+TitanA.SetMass(15989.000000)
 TitanA.SetRotationalInertia(698900.000000)
 TitanA.SetShipName("TitanA")
 TitanA.SetModelFilename("data/Models/Ships/TitanA/TitanA.nif")

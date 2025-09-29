@@ -10,7 +10,7 @@ Firehawk = App.ShipProperty_Create("Firehawk")
 
 Firehawk.SetGenus(1)
 Firehawk.SetSpecies(308)
-Firehawk.SetMass(400.000000)
+Firehawk.SetMass(2400.000000)
 Firehawk.SetRotationalInertia(20000.000000)
 Firehawk.SetShipName("Firehawk")
 Firehawk.SetModelFilename("data/Models/Ships/Firehawk/Firehawk.NIF")

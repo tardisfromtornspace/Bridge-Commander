@@ -537,7 +537,7 @@ Miradorn = App.ShipProperty_Create("Miradorn")
 
 Miradorn.SetGenus(1)
 Miradorn.SetSpecies(922)
-Miradorn.SetMass(90.000000)
+Miradorn.SetMass(4990.000000)
 Miradorn.SetRotationalInertia(2000.000000)
 Miradorn.SetShipName("Miradorn")
 Miradorn.SetModelFilename("data/Models/Ships/Miradorn.nif")

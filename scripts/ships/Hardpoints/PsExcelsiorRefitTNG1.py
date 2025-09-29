@@ -10,7 +10,7 @@ ExcelsiorRefitTNG = App.ShipProperty_Create("ExcelsiorRefitTNG")
 
 ExcelsiorRefitTNG.SetGenus(1)
 ExcelsiorRefitTNG.SetSpecies(110)
-ExcelsiorRefitTNG.SetMass(90.000000)
+ExcelsiorRefitTNG.SetMass(8500.000000)
 ExcelsiorRefitTNG.SetRotationalInertia(5000.000000)
 ExcelsiorRefitTNG.SetShipName("ExcelsiorRefitTNG")
 ExcelsiorRefitTNG.SetModelFilename("data/Models/ships/TNGExcelsiorRefit/SFPEnterpriseB.nif")

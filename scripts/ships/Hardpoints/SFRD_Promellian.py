@@ -547,7 +547,7 @@ SFRD_Promellian = App.ShipProperty_Create("SFRD_Promellian")
 
 SFRD_Promellian.SetGenus(1)
 SFRD_Promellian.SetSpecies(928)
-SFRD_Promellian.SetMass(51.000000)
+SFRD_Promellian.SetMass(4900.000000)
 SFRD_Promellian.SetRotationalInertia(1000.000000)
 SFRD_Promellian.SetShipName("SFRD_Promellian")
 SFRD_Promellian.SetModelFilename("data/Models/Ships/SFRD_Promellian/SFRD_Promellian.nif")

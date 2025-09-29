@@ -831,7 +831,7 @@ XRT55D = App.ShipProperty_Create("XRT55D")
 
 XRT55D.SetGenus(1)
 XRT55D.SetSpecies(101)
-XRT55D.SetMass(300.000000)
+XRT55D.SetMass(30000.000000)
 XRT55D.SetRotationalInertia(10000.000000)
 XRT55D.SetShipName("Vulcan")
 XRT55D.SetModelFilename("data/Models/Ships/VulcanXRT55D/VulcanXRT55D.nif")

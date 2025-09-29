@@ -331,7 +331,7 @@ VasKholhr = App.ShipProperty_Create("VasKholhr")
 
 VasKholhr.SetGenus(1)
 VasKholhr.SetSpecies(311)
-VasKholhr.SetMass(45.000000)
+VasKholhr.SetMass(4500.000000)
 VasKholhr.SetRotationalInertia(2000.000000)
 VasKholhr.SetShipName("VasKholhr")
 VasKholhr.SetModelFilename("data/Models/Ships/Vaskholhr.nif")

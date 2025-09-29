@@ -687,7 +687,7 @@ Intrepid = App.ShipProperty_Create("Intrepid")
 
 Intrepid.SetGenus(1)
 Intrepid.SetSpecies(114)
-Intrepid.SetMass(150.000000)
+Intrepid.SetMass(7250.000000)
 Intrepid.SetRotationalInertia(8000.000000)
 Intrepid.SetShipName("Intrepid")
 Intrepid.SetModelFilename("data/Models/Ships/Intrepid/Intrepid.nif")
