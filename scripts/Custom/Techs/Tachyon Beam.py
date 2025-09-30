@@ -1,6 +1,6 @@
 #################################################################################################################
 #         TachyonBeam by Alex SL Gato
-#         27th March 2025
+#         1st October 2025
 #         Based on FiveSecsGodPhaser by USS Frontier, scripts/ftb/Tech/TachyonProjectile by the FoundationTechnologies team, and scripts/ftb/Tech/FedAblativeArmour by the FoundationTechnologies team
 #                          
 #################################################################################################################
@@ -26,7 +26,7 @@ def IsTachyonImmune():
 #################################################################################################################
 #
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "1.4",
+	    "Version": "1.41",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -145,6 +145,7 @@ lImmuneShips = (
   "MidwayStation",
   "MillionVoices",
   "MinbariNial",
+  "B5MinbariSharlin",
   "MinbariSharlin",
   "MindridersThoughtforce",
   "MvamFusionCube",
@@ -193,6 +194,7 @@ lImmuneShips = (
   "TOSColDefender",
   "UENeptune",
   "vger",
+  "B5Victory",
   "Victory",
   "VOR_Destroyer",
   "VOR_DestroyerClosed",
@@ -202,6 +204,7 @@ lImmuneShips = (
   "VreeXill",
   "VreeXorr",
   "VulcanXRT55D",
+  "B5Warlock",
   "Warlock",
   "WCnx01",
   "WCnxColumbia",
