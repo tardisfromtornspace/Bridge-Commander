@@ -1,4 +1,7 @@
 ==Changelog==
+1.7.5 -
+   Fixes:
+   * Created FIX-DS9FXSetGamePlayerFixExpansion to avoid certain transporter bugs.
 1.7.4 -
    Fixes:
    * Updated FIX-DS9FXbelow1dot2 to be a bit more agnostic towards the actual value of SpeciesToTorp.PHASEDPLASMA

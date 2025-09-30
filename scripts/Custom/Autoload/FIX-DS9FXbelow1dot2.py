@@ -1,4 +1,10 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
+# This file is a patch made by CharaToLoki (Alex SL Gato) for DS9FX that is ALL Rights Reserved by USS Sovereign, with the aim of this patch meant to fix on older DS9FX installs a conflict between phased weaponry and No Dmg Through Shields option (a patch whose manufacturing process was seen by USS Sovereign and that got updated on newer DS9FX versions).
+# The only code I own from this patch would fall under the LGPL license, but excluding the patch itself and patch conditions, the rest of the code is pretty much Sovereign's, so as always, ask first! 
+# 30th September 2025
+# By Alex SL Gato, with permission from Sov
+
+
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
 # 29th September 2025
 # By Alex SL Gato
