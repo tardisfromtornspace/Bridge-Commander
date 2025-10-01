@@ -1,4 +1,4 @@
-# Dauntless.py
+# GalaxySaucer.py based on Dauntless.py
 # April 11, 2002
 #
 # by Evan Light aka sleight42, all rights reserved
@@ -10,7 +10,7 @@
 # A simple example of how to define a custom Carrier with a specified 
 # compliment of vessels
 Carrier = __import__( "ftb.Carrier")
-class Dauntless( Carrier.Carrier):
+class GalaxySaucer( Carrier.Carrier):
     def __init__( self, pShip):
         Carrier.Carrier.__init__( self, pShip)
         # The script name should be the name of the "ship" script, not the
@@ -25,13 +25,13 @@ class Dauntless( Carrier.Carrier):
         launcher.AddLaunchable( "Shuttle", "ftb.friendlyAI", 12)
         launcher.AddLaunchable( "PeragrineF1", "ftb.friendlyAI", 1)
 
-        launcher = LauncherManager.GetLauncher( "Shuttle Bay 2", pShip)
-        group.AddLauncher( "Shuttle Bay 2", launcher)
-        launcher.AddLaunchable( "Shuttle", "ftb.friendlyAI", 2)
+        #launcher = LauncherManager.GetLauncher( "Shuttle Bay 2", pShip)
+        #group.AddLauncher( "Shuttle Bay 2", launcher)
+        #launcher.AddLaunchable( "Shuttle", "ftb.friendlyAI", 2)
         
-        launcher = LauncherManager.GetLauncher( "Shuttle Bay 3", pShip)
-        group.AddLauncher( "Shuttle Bay 3", launcher)
-        launcher.AddLaunchable( "Shuttle", "ftb.friendlyAI", 6)
+        #launcher = LauncherManager.GetLauncher( "Shuttle Bay 3", pShip)
+        #group.AddLauncher( "Shuttle Bay 3", launcher)
+        #launcher.AddLaunchable( "Shuttle", "ftb.friendlyAI", 6)
 
         self.AddLauncher( "Group 1", group)
 
@@ -45,9 +45,9 @@ class Dauntless( Carrier.Carrier):
     def IgnoreTractors(self):    	
     	return ["Aft Tractor 2", "Forward Tractor 1", "Forward Tractor 2"]
 
-# "Dauntless" is the "ShipProperty" name of the ship to be registered as
+# "GalaxySaucer" is the "ShipProperty" name of the ship to be registered as
 # defined in the Hardpoints PY file for your ship
 ShipManager = __import__( "ftb.ShipManager")
-ShipManager.RegisterShipClass( "Dauntless", Dauntless)
-ShipManager.RegisterShipClass( "Galaxy", Dauntless)
-ShipManager.RegisterShipClass( "MvamGalaxy", Dauntless)
+ShipManager.RegisterShipClass( "GalaxySaucer", GalaxySaucer)
+ShipManager.RegisterShipClass( "MvamGalaxySaucer", GalaxySaucer)
+ShipManager.RegisterShipClass( "GalaxyX", GalaxySaucer)

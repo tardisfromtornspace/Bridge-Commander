@@ -28,6 +28,9 @@ class Sovereign( Carrier.Carrier):
         launcher = LauncherManager.GetLauncher( "Shuttle Bay 2", pShip)
         group.AddLauncher( "Shuttle Bay 2", launcher)
         launcher.AddLaunchable( "Type11", "ftb.friendlyAI", 6)
+        launcher.AddLaunchable( "DanubemkI", "ftb.friendlyAI", 2)
+        launcher.AddLaunchable( "DanubemkII", "ftb.friendlyAI", 2)
+        launcher.AddLaunchable( "PeragrineF1", "ftb.friendlyAI", 1)
 
         self.AddLauncher( "Group 1", group)
 
@@ -41,7 +44,7 @@ class Sovereign( Carrier.Carrier):
     	debug(__name__ + ", GetMaxShuttles")
     	return 25
 
-# "Dauntless" is the "ShipProperty" name of the ship to be registered as
+# "Sovereign" is the "ShipProperty" name of the ship to be registered as
 # defined in the Hardpoints PY file for your ship
 ShipManager = __import__( "ftb.ShipManager")
 ShipManager.RegisterShipClass( "Sovereign", Sovereign)

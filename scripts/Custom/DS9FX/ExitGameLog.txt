@@ -280,3 +280,1751 @@ Trying to clean memory
 
 
 ##### End Of The Log #####
+##### Bridge Commander Exit Log: 01 Oct 2025 18:32:00#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Custom.Autoload.FIX-EngineerCharacterHandlers : Patched your  Bridge.EngineerCharacterHandlers  to cover 0-shield-strength ships
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+Timed Torpedoes loaded
+Setting Stock System Planets Random Density.
+Ship Battlestar Acropolis-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 88498
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 88741
+{'_when': 71.0, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe6c318>, 'pFirstID': 88498, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 80583, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 89096
+{'_when': 71.5, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe6fc94>, 'pFirstID': 88741, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 80583, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 89436
+{'_when': 72.0, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe6c318>, 'pFirstID': 88498, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 80583, 'distance': 250.0}
+{'_when': 72.1999969482, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe70188>, 'pFirstID': 89096, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 80583, 'distance': 250.0}
+{'_when': 72.5, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe6fc94>, 'pFirstID': 88741, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 80583, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 89807
+{'_when': 72.8000030518, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 299766ec>, 'pFirstID': 89436, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 80583, 'distance': 250.0}
+{'_when': 73.0, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe6c318>, 'pFirstID': 88498, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 80583, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 90149
+{'_when': 73.3000030518, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe70188>, 'pFirstID': 89096, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 80583, 'distance': 250.0}
+{'_when': 73.5, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe6fc94>, 'pFirstID': 88741, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 80583, 'distance': 250.0}
+{'_when': 73.5, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe6efc0>, 'pFirstID': 89807, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 80583, 'distance': 250.0}
+{'_when': 73.8000030518, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 299766ec>, 'pFirstID': 89436, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 80583, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 90520
+{'_when': 74.0, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe6c318>, 'pFirstID': 88498, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 80583, 'distance': 250.0}
+{'_when': 74.0999984741, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe701ec>, 'pFirstID': 90149, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 80583, 'distance': 250.0}
+{'_when': 74.3000030518, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe70188>, 'pFirstID': 89096, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 80583, 'distance': 250.0}
+{'_when': 74.5, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe6fc94>, 'pFirstID': 88741, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 80583, 'distance': 250.0}
+{'_when': 74.5, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe6efc0>, 'pFirstID': 89807, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 80583, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 90969
+{'_when': 74.8000030518, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 299766ec>, 'pFirstID': 89436, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 80583, 'distance': 250.0}
+{'_when': 74.8000030518, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe6e170>, 'pFirstID': 90520, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 80583, 'distance': 250.0}
+{'_when': 75.0, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe6c318>, 'pFirstID': 88498, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 80583, 'distance': 250.0}
+{'_when': 75.0999984741, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe701ec>, 'pFirstID': 90149, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 80583, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 91432
+{'_when': 75.3000030518, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe70188>, 'pFirstID': 89096, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 80583, 'distance': 250.0}
+{'_when': 75.5, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe6fc94>, 'pFirstID': 88741, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 80583, 'distance': 250.0}
+{'_when': 75.5, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe6efc0>, 'pFirstID': 89807, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 80583, 'distance': 250.0}
+{'_when': 75.5, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe70458>, 'pFirstID': 90969, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 80583, 'distance': 250.0}
+{'_when': 75.8000030518, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 299766ec>, 'pFirstID': 89436, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 80583, 'distance': 250.0}
+{'_when': 75.8000030518, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe6e170>, 'pFirstID': 90520, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 80583, 'distance': 250.0}
+{'_when': 76.0999984741, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe701ec>, 'pFirstID': 90149, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 80583, 'distance': 250.0}
+{'_when': 76.0999984741, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe6edb8>, 'pFirstID': 91432, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 80583, 'distance': 250.0}
+{'_when': 76.5, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe6efc0>, 'pFirstID': 89807, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 80583, 'distance': 250.0}
+{'_when': 76.5, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe70458>, 'pFirstID': 90969, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 80583, 'distance': 250.0}
+{'_when': 76.8000030518, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe6e170>, 'pFirstID': 90520, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 80583, 'distance': 250.0}
+{'_when': 77.0999984741, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe701ec>, 'pFirstID': 90149, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 80583, 'distance': 250.0}
+{'_when': 77.0999984741, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe6edb8>, 'pFirstID': 91432, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 80583, 'distance': 250.0}
+{'_when': 77.5, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe70458>, 'pFirstID': 90969, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 80583, 'distance': 250.0}
+{'_when': 77.8000030518, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe6e170>, 'pFirstID': 90520, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 80583, 'distance': 250.0}
+{'_when': 78.0999984741, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe6edb8>, 'pFirstID': 91432, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 80583, 'distance': 250.0}
+{'_when': 78.5, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe70458>, 'pFirstID': 90969, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 80583, 'distance': 250.0}
+{'_when': 79.0999984741, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe6edb8>, 'pFirstID': 91432, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 80583, 'distance': 250.0}
+Setting splash damage for Battlestar Acropolis-1 to (2591.875000, 51.837502)
+Creating WarpSequence:  Ship = Battlestar Acropolis-1  // To Set = None  // Placement Name = None
+
+
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Battlestar Acropolis-1 with Alternative Warp FTL SubModel support added
+Ship Battlestar Atlantia-2 with Alternative Warp FTL SubModel support added
+Ship Battlestar Bellerophon-3 with Alternative Warp FTL SubModel support added
+Ship Battlestar Cerberus-4 with Alternative Warp FTL SubModel support added
+Ship Battlestar Columbia-5 with Alternative Warp FTL SubModel support added
+Ship Battlestar Galactica-6 with Alternative Warp FTL SubModel support added
+Ship Battlestar Olympia-7 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 134413
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 134557
+{'_when': 120.300003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 2997527c>, 'pFirstID': 134413, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 134740
+{'_when': 120.800003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe9760c>, 'pFirstID': 134557, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 134894
+{'_when': 121.300003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 2997527c>, 'pFirstID': 134413, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 121.5, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe92514>, 'pFirstID': 134740, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 121.800003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe9760c>, 'pFirstID': 134557, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 135038
+{'_when': 122.099998474, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe952c0>, 'pFirstID': 134894, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 122.300003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 2997527c>, 'pFirstID': 134413, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 135188
+{'_when': 122.5, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe92514>, 'pFirstID': 134740, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 122.800003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe9760c>, 'pFirstID': 134557, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 122.800003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 299751f0>, 'pFirstID': 135038, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 123.099998474, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe952c0>, 'pFirstID': 134894, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 135346
+{'_when': 123.300003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 2997527c>, 'pFirstID': 134413, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 123.5, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 2997643c>, 'pFirstID': 135188, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 123.5, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe92514>, 'pFirstID': 134740, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 123.800003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe9760c>, 'pFirstID': 134557, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 123.800003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 299751f0>, 'pFirstID': 135038, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 135642
+{'_when': 124.099998474, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe952c0>, 'pFirstID': 134894, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 124.099998474, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe95680>, 'pFirstID': 135346, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 135893
+{'_when': 124.5, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 2997643c>, 'pFirstID': 135188, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 124.5, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe92514>, 'pFirstID': 134740, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 124.800003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 299751f0>, 'pFirstID': 135038, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 124.800003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe9aa14>, 'pFirstID': 135642, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 125.099998474, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe952c0>, 'pFirstID': 134894, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 125.099998474, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe95680>, 'pFirstID': 135346, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 136258
+{'_when': 125.5, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe77ac0>, 'pFirstID': 135893, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 125.5, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 2997643c>, 'pFirstID': 135188, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 125.800003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 299751f0>, 'pFirstID': 135038, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 125.800003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe9aa14>, 'pFirstID': 135642, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 136579
+{'_when': 126.099998474, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe95680>, 'pFirstID': 135346, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 126.099998474, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe9a278>, 'pFirstID': 136258, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 136855
+{'_when': 126.5, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe77ac0>, 'pFirstID': 135893, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 126.800003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe9aa14>, 'pFirstID': 135642, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 126.800003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe9bb0c>, 'pFirstID': 136579, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 127.099998474, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe9a278>, 'pFirstID': 136258, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 137405
+{'_when': 127.400001526, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe928c0>, 'pFirstID': 136855, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 127.5, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe77ac0>, 'pFirstID': 135893, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 127.800003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe9bb0c>, 'pFirstID': 136579, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 138456
+{'_when': 128.100006104, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe9a278>, 'pFirstID': 136258, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 128.100006104, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe9fa6c>, 'pFirstID': 137405, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 128.399993896, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe928c0>, 'pFirstID': 136855, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 139391
+{'_when': 128.800003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe9bb0c>, 'pFirstID': 136579, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 128.800003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe9e108>, 'pFirstID': 138456, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 129.100006104, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe9fa6c>, 'pFirstID': 137405, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 140143
+{'_when': 129.399993896, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe928c0>, 'pFirstID': 136855, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 129.399993896, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 29255be8>, 'pFirstID': 139391, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 140964
+{'_when': 129.800003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe9e108>, 'pFirstID': 138456, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 130.100006104, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe9fa6c>, 'pFirstID': 137405, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 130.100006104, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe9eaa0>, 'pFirstID': 140143, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 130.399993896, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 29255be8>, 'pFirstID': 139391, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 141899
+{'_when': 130.699996948, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 2925d1f8>, 'pFirstID': 140964, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 130.800003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe9e108>, 'pFirstID': 138456, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 142740
+{'_when': 131.100006104, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe9eaa0>, 'pFirstID': 140143, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 131.399993896, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 29255be8>, 'pFirstID': 139391, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 131.399993896, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe9f124>, 'pFirstID': 141899, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 131.699996948, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 2925d1f8>, 'pFirstID': 140964, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 143612
+{'_when': 132.0, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe9a660>, 'pFirstID': 142740, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 132.100006104, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe9eaa0>, 'pFirstID': 140143, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 144664
+{'_when': 132.399993896, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe9f124>, 'pFirstID': 141899, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 132.699996948, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 2925d1f8>, 'pFirstID': 140964, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 132.699996948, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fea7a50>, 'pFirstID': 143612, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 133.0, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe9a660>, 'pFirstID': 142740, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 145663
+{'_when': 133.300003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe9bdbc>, 'pFirstID': 144664, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 133.399993896, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe9f124>, 'pFirstID': 141899, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 133.699996948, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fea7a50>, 'pFirstID': 143612, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 146950
+{'_when': 134.0, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe9a660>, 'pFirstID': 142740, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 134.0, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe9df3c>, 'pFirstID': 145663, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 134.300003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe9bdbc>, 'pFirstID': 144664, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 148553
+{'_when': 134.699996948, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fea7a50>, 'pFirstID': 143612, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 134.699996948, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fea3b20>, 'pFirstID': 146950, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 135.0, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe9df3c>, 'pFirstID': 145663, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 150234
+{'_when': 135.300003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fea3d28>, 'pFirstID': 148553, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 151781
+{'_when': 135.699996948, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fea3b20>, 'pFirstID': 146950, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 136.0, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 57b0fa1c>, 'pFirstID': 150234, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 136.300003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fea3d28>, 'pFirstID': 148553, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 153759
+{'_when': 136.600006104, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 57b146d4>, 'pFirstID': 151781, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 155574
+{'_when': 137.0, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 57b0fa1c>, 'pFirstID': 150234, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 137.399993896, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fea5acc>, 'pFirstID': 153759, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 137.600006104, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 57b146d4>, 'pFirstID': 151781, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 157808
+{'_when': 138.0, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 57b11608>, 'pFirstID': 155574, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 160579
+{'_when': 138.399993896, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fea5acc>, 'pFirstID': 153759, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+Setting splash damage for Battlestar Bellerophon-3 to (2591.875000, 51.837502)
+{'_when': 138.600006104, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 57b0f88c>, 'pFirstID': 157808, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 139.0, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 57b11608>, 'pFirstID': 155574, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 139.300003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 57b0acd8>, 'pFirstID': 160579, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 139.600006104, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 57b0f88c>, 'pFirstID': 157808, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 140.300003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 57b0acd8>, 'pFirstID': 160579, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 169288
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 171498
+{'_when': 141.5, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 57b0943c>, 'pFirstID': 169288, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 119527, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 174001
+{'_when': 142.0, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fea7534>, 'pFirstID': 171498, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 119527, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 177039
+{'_when': 142.600006104, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 57b15900>, 'pFirstID': 174001, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 119527, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 180129
+Creating WarpSequence:  Ship = Battlestar Bellerophon-3  // To Set = None  // Placement Name = None
+{'_when': 143.300003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 57aeed24>, 'pFirstID': 177039, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 119527, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 183753
+{'_when': 144.0, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 57af0130>, 'pFirstID': 180129, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 119527, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 186593
+{'_when': 144.600006104, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 57af0cf8>, 'pFirstID': 183753, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 119527, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 188767
+{'_when': 145.300003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe9cb6c>, 'pFirstID': 186593, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 119527, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 190942
+{'_when': 146.0, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 57ae7b10>, 'pFirstID': 188767, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 119527, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 192655
+{'_when': 146.600006104, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 57b0deec>, 'pFirstID': 190942, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 119527, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 194398
+{'_when': 147.199996948, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fea0050>, 'pFirstID': 192655, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 119527, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 195112
+Creating WarpSequence:  Ship = Battlestar Atlantia-2  // To Set = None  // Placement Name = None
+{'_when': 147.899993896, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe9dec4>, 'pFirstID': 194398, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 119527, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 195934
+{'_when': 148.5, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 57b0a250>, 'pFirstID': 195112, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 119527, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 196732
+Setting splash damage for Battlestar Atlantia-2 to (2591.875000, 51.837502)
+{'_when': 149.199996948, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 57af42ac>, 'pFirstID': 195934, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 119527, 'distance': 250.0}
+{'_when': 149.800003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 57b1e0c4>, 'pFirstID': 196732, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 119527, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 208310
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 208515
+{'_when': 159.800003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 57b1b570>, 'pFirstID': 208310, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 121041, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 208723
+{'_when': 160.399993896, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe7db70>, 'pFirstID': 208515, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 121041, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 208981
+{'_when': 160.800003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 57b1b570>, 'pFirstID': 208310, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 121041, 'distance': 250.0}
+{'_when': 161.100006104, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 57af2fb8>, 'pFirstID': 208723, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 121041, 'distance': 250.0}
+{'_when': 161.399993896, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe7db70>, 'pFirstID': 208515, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 121041, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 209207
+{'_when': 161.800003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 57af1a58>, 'pFirstID': 208981, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 121041, 'distance': 250.0}
+{'_when': 161.800003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 57b1b570>, 'pFirstID': 208310, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 121041, 'distance': 250.0}
+{'_when': 162.100006104, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 57af2fb8>, 'pFirstID': 208723, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 121041, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 209546
+{'_when': 162.399993896, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe7db70>, 'pFirstID': 208515, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 121041, 'distance': 250.0}
+{'_when': 162.399993896, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 29977c38>, 'pFirstID': 209207, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 121041, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 209851
+{'_when': 162.800003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 57af1a58>, 'pFirstID': 208981, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 121041, 'distance': 250.0}
+{'_when': 163.100006104, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 57af2fb8>, 'pFirstID': 208723, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 121041, 'distance': 250.0}
+{'_when': 163.100006104, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe6f750>, 'pFirstID': 209546, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 121041, 'distance': 250.0}
+{'_when': 163.399993896, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 29977c38>, 'pFirstID': 209207, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 121041, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 210199
+{'_when': 163.699996948, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe87920>, 'pFirstID': 209851, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 121041, 'distance': 250.0}
+{'_when': 163.800003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 57af1a58>, 'pFirstID': 208981, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 121041, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 210563
+{'_when': 164.100006104, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe6f750>, 'pFirstID': 209546, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 121041, 'distance': 250.0}
+{'_when': 164.399993896, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 29977c38>, 'pFirstID': 209207, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 121041, 'distance': 250.0}
+{'_when': 164.399993896, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 57b01d48>, 'pFirstID': 210199, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 121041, 'distance': 250.0}
+{'_when': 164.699996948, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe87920>, 'pFirstID': 209851, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 121041, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 211215
+{'_when': 165.0, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 57af4338>, 'pFirstID': 210563, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 121041, 'distance': 250.0}
+{'_when': 165.100006104, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe6f750>, 'pFirstID': 209546, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 121041, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 211647
+{'_when': 165.399993896, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 57b01d48>, 'pFirstID': 210199, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 121041, 'distance': 250.0}
+{'_when': 165.699996948, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 57af6460>, 'pFirstID': 211215, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 121041, 'distance': 250.0}
+{'_when': 166.0, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 57af4338>, 'pFirstID': 210563, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 121041, 'distance': 250.0}
+{'_when': 166.300003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 57b19860>, 'pFirstID': 211647, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 121041, 'distance': 250.0}
+{'_when': 166.699996948, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 57af6460>, 'pFirstID': 211215, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 121041, 'distance': 250.0}
+{'_when': 167.300003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 57b19860>, 'pFirstID': 211647, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 121041, 'distance': 250.0}
+Setting splash damage for Battlestar Acropolis-1 to (2591.875000, 51.837502)
+Creating WarpSequence:  Ship = Battlestar Galactica-6  // To Set = None  // Placement Name = None
+Creating WarpSequence:  Ship = Battlestar Cerberus-4  // To Set = None  // Placement Name = None
+Setting splash damage for Battlestar Cerberus-4 to (2591.875000, 51.837502)
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 221194
+Setting splash damage for Battlestar Galactica-6 to (2591.875000, 51.837502)
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 222801
+{'_when': 173.0, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 57aea5c4>, 'pFirstID': 221194, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 121798, 'distance': 250.0}
+{'_when': 173.600006104, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 57ae8194>, 'pFirstID': 222801, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 121798, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 228779
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 228942
+{'_when': 181.600006104, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe7f498>, 'pFirstID': 228779, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 121798, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 229252
+{'_when': 182.199996948, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe6fb90>, 'pFirstID': 228942, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 121798, 'distance': 250.0}
+{'_when': 183.100006104, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe81ad0>, 'pFirstID': 229252, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 121798, 'distance': 250.0}
+Setting splash damage for Battlestar Columbia-5 to (2591.875000, 51.837502)
+Ship BSG1978Viper - 2 with Alternative Warp FTL SubModel support added
+Ship BSG1978Viper - 3 with Alternative Warp FTL SubModel support added
+Ship BSG1978Viper - 4 with Alternative Warp FTL SubModel support added
+Ship BSG1978Viper - 5 with Alternative Warp FTL SubModel support added
+Ship BSG1978Viper - 6 with Alternative Warp FTL SubModel support added
+Ship BSG1978Viper - 7 with Alternative Warp FTL SubModel support added
+Ship BSG1978Viper - 8 with Alternative Warp FTL SubModel support added
+Ship BSG1978Viper - 9 with Alternative Warp FTL SubModel support added
+Ship BSG1978Viper - 10 with Alternative Warp FTL SubModel support added
+Ship BSG1978Viper - 11 with Alternative Warp FTL SubModel support added
+Ship BSG1978Viper - 12 with Alternative Warp FTL SubModel support added
+Ship BSG1978Viper - 13 with Alternative Warp FTL SubModel support added
+Ship BSG1978Viper - 14 with Alternative Warp FTL SubModel support added
+Ship BSG1978Viper - 15 with Alternative Warp FTL SubModel support added
+Ship BSG1978Viper - 16 with Alternative Warp FTL SubModel support added
+Ship BSG1978Viper - 17 with Alternative Warp FTL SubModel support added
+Ship BSG1978Viper - 18 with Alternative Warp FTL SubModel support added
+Ship BSG1978Viper - 19 with Alternative Warp FTL SubModel support added
+Creating WarpSequence:  Ship = Battlestar Columbia-5  // To Set = None  // Placement Name = None
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 250333
+{'_when': 194.100006104, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe8f9e8>, 'pFirstID': 250333, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 235448, 'distance': 250.0}
+Setting splash damage for BSG1978Viper - 11 to (175.000000, 3.500000)
+Setting splash damage for BSG1978Viper - 10 to (175.000000, 3.500000)
+Setting splash damage for BSG1978Viper - 6 to (175.000000, 3.500000)
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 267858
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 268326
+{'_when': 199.100006104, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 5828b8c4>, 'pFirstID': 267858, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 235448, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 268761
+{'_when': 199.699996948, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe8cbc4>, 'pFirstID': 268326, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 235448, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 269263
+{'_when': 200.300003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe8d55c>, 'pFirstID': 268761, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 235448, 'distance': 250.0}
+Creating WarpSequence:  Ship = BSG1978Viper - 6  // To Set = None  // Placement Name = None
+Creating WarpSequence:  Ship = BSG1978Viper - 10  // To Set = None  // Placement Name = None
+Creating WarpSequence:  Ship = BSG1978Viper - 11  // To Set = None  // Placement Name = None
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 269645
+{'_when': 201.0, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 5827c034>, 'pFirstID': 269263, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 235448, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 270011
+{'_when': 201.600006104, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 58257d38>, 'pFirstID': 269645, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 235448, 'distance': 250.0}
+Setting splash damage for BSG1978Viper - 7 to (175.000000, 3.500000)
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 270662
+{'_when': 202.300003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe8d5fc>, 'pFirstID': 270011, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 235448, 'distance': 250.0}
+Creating WarpSequence:  Ship = BSG1978Viper - 7  // To Set = None  // Placement Name = None
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 272443
+Setting splash damage for BSG1978Viper - 3 to (175.000000, 3.500000)
+Setting splash damage for BSG1978Viper - 2 to (175.000000, 3.500000)
+{'_when': 203.0, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 586352c8>, 'pFirstID': 270662, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 235448, 'distance': 250.0}
+Creating WarpSequence:  Ship = BSG1978Viper - 2  // To Set = None  // Placement Name = None
+Creating WarpSequence:  Ship = BSG1978Viper - 3  // To Set = None  // Placement Name = None
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 273409
+{'_when': 203.600006104, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 5828ea88>, 'pFirstID': 272443, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 235448, 'distance': 250.0}
+{'_when': 204.300003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 58640cc0>, 'pFirstID': 273409, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 235448, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 274933
+Setting splash damage for BSG1978Viper - 12 to (151.479645, 3.029593)
+Creating WarpSequence:  Ship = BSG1978Viper - 12  // To Set = None  // Placement Name = None
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 275764
+Setting splash damage for BSG1978Viper - 8 to (175.000000, 3.500000)
+Creating WarpSequence:  Ship = BSG1978Viper - 8  // To Set = None  // Placement Name = None
+{'_when': 205.399993896, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 5828fca0>, 'pFirstID': 274933, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 235448, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 276628
+Setting splash damage for BSG1978Viper - 19 to (139.765091, 2.795302)
+Setting splash damage for BSG1978Viper - 9 to (175.000000, 3.500000)
+Setting splash damage for BSG1978Viper - 4 to (175.000000, 3.500000)
+{'_when': 206.0, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 58634e38>, 'pFirstID': 275764, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 235448, 'distance': 250.0}
+Creating WarpSequence:  Ship = BSG1978Viper - 19  // To Set = None  // Placement Name = None
+Creating WarpSequence:  Ship = BSG1978Viper - 4  // To Set = None  // Placement Name = None
+Creating WarpSequence:  Ship = BSG1978Viper - 9  // To Set = None  // Placement Name = None
+{'_when': 206.600006104, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 58646278>, 'pFirstID': 276628, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 235448, 'distance': 250.0}
+Setting splash damage for BSG1978Viper - 5 to (175.000000, 3.500000)
+Creating WarpSequence:  Ship = BSG1978Viper - 5  // To Set = None  // Placement Name = None
+Setting splash damage for BSG1978Viper - 13 to (139.765091, 2.795302)
+Creating WarpSequence:  Ship = BSG1978Viper - 13  // To Set = None  // Placement Name = None
+Setting splash damage for BSG1978Viper - 17 to (139.765091, 2.795302)
+Creating WarpSequence:  Ship = BSG1978Viper - 17  // To Set = None  // Placement Name = None
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 288933
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 289579
+{'_when': 218.5, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 5864f67c>, 'pFirstID': 288933, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 123312, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 291329
+{'_when': 219.100006104, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 5864ba08>, 'pFirstID': 289579, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 123312, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 294101
+{'_when': 219.800003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 58269254>, 'pFirstID': 291329, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 123312, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 297736
+{'_when': 220.5, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 5863dc6c>, 'pFirstID': 294101, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 123312, 'distance': 250.0}
+Setting splash damage for BSG1978Viper - 14 to (155.701614, 3.114032)
+{'_when': 221.199996948, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe7807c>, 'pFirstID': 297736, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 123312, 'distance': 250.0}
+Setting splash damage for BSG1978Viper - 18 to (175.000000, 3.500000)
+Creating WarpSequence:  Ship = BSG1978Viper - 14  // To Set = None  // Placement Name = None
+Setting splash damage for Battlestar Olympia-7 to (2591.875000, 51.837502)
+Creating WarpSequence:  Ship = BSG1978Viper - 18  // To Set = None  // Placement Name = None
+Creating WarpSequence:  Ship = BSG1978Viper - 15  // To Set = None  // Placement Name = None
+Setting splash damage for BSG1978Viper - 15 to (139.713333, 2.794267)
+Creating WarpSequence:  Ship = Battlestar Olympia-7  // To Set = None  // Placement Name = None
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 317860
+{'_when': 244.899993896, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 58647814>, 'pFirstID': 317860, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 238550, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 319260
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 319404
+{'_when': 252.5, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 58279f98>, 'pFirstID': 319260, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 238550, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 319612
+{'_when': 253.100006104, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 5864b49c>, 'pFirstID': 319404, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 238550, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 319817
+{'_when': 253.800003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 58644c0c>, 'pFirstID': 319612, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 238550, 'distance': 250.0}
+{'_when': 254.5, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 5864b49c>, 'pFirstID': 319817, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 238550, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 320810
+{'_when': 259.100006104, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 58635960>, 'pFirstID': 320810, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 238550, 'distance': 250.0}
+Setting splash damage for BSG1978Viper - 16 to (175.000000, 3.500000)
+Creating WarpSequence:  Ship = BSG1978Viper - 16  // To Set = None  // Placement Name = None
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Ship Battlestar Olympia-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Trying to clean memory
+PlasmaFX Communicating with Targetable Plasma Streams...
+...Sucess
+PlasmaFX Communicating with Targetable Plasma Streams...
+...Sucess
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+Setting Stock System Planets Random Density.
+Ship Battlestar Olympia-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Error: Intercepting critical Lauching Error in LaunchShip.LaunchObject()
+Player (ships.Ambassador) tried to launch BSG1978Viper
+If you can reproduce this error, contact a BC scripter please
+Unknown Shuttle Launching Error (LaunchShip.py): Ship was not created
+Error: Intercepting critical Lauching Error in LaunchShip.LaunchObject()
+Player (ships.Ambassador) tried to launch BSG1978Viper
+If you can reproduce this error, contact a BC scripter please
+Unknown Shuttle Launching Error (LaunchShip.py): Ship was not created
+Error: Intercepting critical Lauching Error in LaunchShip.LaunchObject()
+Player (ships.Ambassador) tried to launch BSG1978Viper
+If you can reproduce this error, contact a BC scripter please
+Unknown Shuttle Launching Error (LaunchShip.py): Ship was not created
+Error: Intercepting critical Lauching Error in LaunchShip.LaunchObject()
+Player (ships.Ambassador) tried to launch BSG1978Viper
+If you can reproduce this error, contact a BC scripter please
+Unknown Shuttle Launching Error (LaunchShip.py): Ship was not created
+Error: Intercepting critical Lauching Error in LaunchShip.LaunchObject()
+Player (ships.Ambassador) tried to launch BSG1978Viper
+If you can reproduce this error, contact a BC scripter please
+Unknown Shuttle Launching Error (LaunchShip.py): Ship was not created
+Error: Intercepting critical Lauching Error in LaunchShip.LaunchObject()
+Player (ships.Ambassador) tried to launch BSG1978Viper
+If you can reproduce this error, contact a BC scripter please
+Unknown Shuttle Launching Error (LaunchShip.py): Ship was not created
+Error: Intercepting critical Lauching Error in LaunchShip.LaunchObject()
+Player (ships.Ambassador) tried to launch BSG1978Viper
+If you can reproduce this error, contact a BC scripter please
+Unknown Shuttle Launching Error (LaunchShip.py): Ship was not created
+Error: Intercepting critical Lauching Error in LaunchShip.LaunchObject()
+Player (ships.Ambassador) tried to launch BSG1978Viper
+If you can reproduce this error, contact a BC scripter please
+Unknown Shuttle Launching Error (LaunchShip.py): Ship was not created
+Error: Intercepting critical Lauching Error in LaunchShip.LaunchObject()
+Player (ships.Ambassador) tried to launch BSG1978Viper
+If you can reproduce this error, contact a BC scripter please
+Unknown Shuttle Launching Error (LaunchShip.py): Ship was not created
+Error: Intercepting critical Lauching Error in LaunchShip.LaunchObject()
+Player (ships.Ambassador) tried to launch BSG1978Viper
+If you can reproduce this error, contact a BC scripter please
+Unknown Shuttle Launching Error (LaunchShip.py): Ship was not created
+Error: Intercepting critical Lauching Error in LaunchShip.LaunchObject()
+Player (ships.Ambassador) tried to launch BSG1978Viper
+If you can reproduce this error, contact a BC scripter please
+Unknown Shuttle Launching Error (LaunchShip.py): Ship was not created
+TurnOff Crash avoided; Please fix LaunchAIShip
+TurnOff Crash avoided; Please fix LaunchAIShip
+Error: Intercepting critical Lauching Error in LaunchShip.LaunchObject()
+Player (ships.Ambassador) tried to launch BSG1978Viper
+If you can reproduce this error, contact a BC scripter please
+Unknown Shuttle Launching Error (LaunchShip.py): Ship was not created
+Error: Intercepting critical Lauching Error in LaunchShip.LaunchObject()
+Player (ships.Ambassador) tried to launch BSG1978Viper
+If you can reproduce this error, contact a BC scripter please
+Unknown Shuttle Launching Error (LaunchShip.py): Ship was not created
+Ship BSG1978Viper - 31 with Alternative Warp FTL SubModel support added
+Ship BSG1978Viper - 32 with Alternative Warp FTL SubModel support added
+Ship BSG1978Viper - 35 with Alternative Warp FTL SubModel support added
+Setting splash damage for BSG1978Viper - 31 to (161.772079, 3.235442)
+Creating WarpSequence:  Ship = BSG1978Viper - 31  // To Set = None  // Placement Name = None
+Creating WarpSequence:  Ship = BSG1978Viper - 32  // To Set = None  // Placement Name = None
+Setting splash damage for BSG1978Viper - 32 to (139.765091, 2.795302)
+Creating WarpSequence:  Ship = Battlestar Olympia-1  // To Set = None  // Placement Name = None
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 628c7c2c> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 628c9a70> ignored
+Target is not friendly - failed.
+data/TGL/Maelstrom/Episode 7/E7M6.tgl E7M6CardsFollow4
+data/TGL/Maelstrom/Episode 8/E8M1.tgl E8M1HailingMacCray2d
+
+
+Trying to clean memory
+Setting splash damage for BSG1978Viper - 35 to (175.000000, 3.500000)
+Creating WarpSequence:  Ship = BSG1978Viper - 35  // To Set = None  // Placement Name = None
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Battlestar Olympia-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Creating WarpSequence:  Ship = Battlestar Olympia-1  // To Set = None  // Placement Name = None
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 62909478> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 6290eac8> ignored
+Setting splash damage for Battlestar Olympia-1 to (2591.875000, 51.837502)
+
+
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+data/TGL/Maelstrom/Episode 5/E5M2.tgl E5M2MiguelProd2
+Setting Stock System Planets Random Density.
+Ship Battlestar Acropolis-1 with Alternative Warp FTL SubModel support added
+Ship Battlestar Atlantia-2 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+Trying to clean memory
+Setting splash damage for Battlestar Atlantia-2 to (750.625000, 15.012500)
+Creating WarpSequence:  Ship = Battlestar Atlantia-2  // To Set = None  // Placement Name = None
+TurnOff Crash avoided; Please fix LaunchAIShip
+TurnOff Crash avoided; Please fix LaunchAIShip
+TurnOff Crash avoided; Please fix LaunchAIShip
+TurnOff Crash avoided; Please fix LaunchAIShip
+TurnOff Crash avoided; Please fix LaunchAIShip
+TurnOff Crash avoided; Please fix LaunchAIShip
+TurnOff Crash avoided; Please fix LaunchAIShip
+TurnOff Crash avoided; Please fix LaunchAIShip
+TurnOff Crash avoided; Please fix LaunchAIShip
+TurnOff Crash avoided; Please fix LaunchAIShip
+TurnOff Crash avoided; Please fix LaunchAIShip
+TurnOff Crash avoided; Please fix LaunchAIShip
+Error: Intercepting critical Lauching Error in LaunchShip.LaunchObject()
+BSG1978Viper - 54 (ships.BSG1978Viper) tried to launch BSG1978Viper
+If you can reproduce this error, contact a BC scripter please
+Unknown Shuttle Launching Error (LaunchShip.py): Ship was not created
+Ship BSG1978Viper - 38 with Alternative Warp FTL SubModel support added
+Ship BSG1978Viper - 39 with Alternative Warp FTL SubModel support added
+Ship BSG1978Viper - 40 with Alternative Warp FTL SubModel support added
+Ship BSG1978Viper - 47 with Alternative Warp FTL SubModel support added
+Ship BSG1978Viper - 54 with Alternative Warp FTL SubModel support added
+Setting splash damage for Battlestar Acropolis-1 to (2591.875000, 51.837502)
+Creating WarpSequence:  Ship = Battlestar Acropolis-1  // To Set = None  // Placement Name = None
+Setting splash damage for BSG1978Viper - 40 to (175.000000, 3.500000)
+Creating WarpSequence:  Ship = BSG1978Viper - 40  // To Set = None  // Placement Name = None
+Setting splash damage for BSG1978Viper - 38 to (175.000000, 3.500000)
+Setting splash damage for BSG1978Viper - 47 to (175.000000, 3.500000)
+Creating WarpSequence:  Ship = BSG1978Viper - 38  // To Set = None  // Placement Name = None
+Setting splash damage for BSG1978Viper - 39 to (175.000000, 3.500000)
+Creating WarpSequence:  Ship = BSG1978Viper - 39  // To Set = None  // Placement Name = None
+Setting splash damage for BSG1978Viper - 54 to (175.000000, 3.500000)
+Creating WarpSequence:  Ship = BSG1978Viper - 54  // To Set = None  // Placement Name = None
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+Setting Stock System Planets Random Density.
+Ship Artemis class-1 with Alternative Warp FTL SubModel support added
+Ship Artemis class-2 with Alternative Warp FTL SubModel support added
+Ship Artemis class-3 with Alternative Warp FTL SubModel support added
+Ship Galactica-4 with Alternative Warp FTL SubModel support added
+Ship Galactica-5 with Alternative Warp FTL SubModel support added
+Ship Galactica-6 with Alternative Warp FTL SubModel support added
+Ship Pegasus-7 with Alternative Warp FTL SubModel support added
+Ship Pegasus-8 with Alternative Warp FTL SubModel support added
+Ship Pegasus-9 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+# DS9FX has...
+
+# taken a console dump
+Setting splash damage for Artemis class-3 to (951.250000, 19.025000)
+Creating WarpSequence:  Ship = Artemis class-3  // To Set = None  // Placement Name = None
+Setting splash damage for Galactica-4 to (2812.500000, 56.250000)
+Setting splash damage for Artemis class-1 to (951.250000, 19.025000)
+Setting splash damage for Galactica-5 to (2812.500000, 56.250000)
+Creating WarpSequence:  Ship = Artemis class-1  // To Set = None  // Placement Name = None
+Setting splash damage for Pegasus-9 to (5625.000000, 112.500000)
+Setting splash damage for Galactica-6 to (2812.500000, 56.250000)
+Setting splash damage for Pegasus-7 to (5625.000000, 112.500000)
+Setting splash damage for Pegasus-8 to (5625.000000, 112.500000)
+Setting splash damage for Artemis class-2 to (951.250000, 19.025000)
+Creating WarpSequence:  Ship = Artemis class-2  // To Set = None  // Placement Name = None
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 01 Oct 2025 18:32:00#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Custom.Autoload.FIX-EngineerCharacterHandlers : Patched your  Bridge.EngineerCharacterHandlers  to cover 0-shield-strength ships
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+Timed Torpedoes loaded
+Setting Stock System Planets Random Density.
+Ship Battlestar Acropolis-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 88498
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 88741
+{'_when': 71.0, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe6c318>, 'pFirstID': 88498, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 80583, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 89096
+{'_when': 71.5, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe6fc94>, 'pFirstID': 88741, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 80583, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 89436
+{'_when': 72.0, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe6c318>, 'pFirstID': 88498, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 80583, 'distance': 250.0}
+{'_when': 72.1999969482, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe70188>, 'pFirstID': 89096, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 80583, 'distance': 250.0}
+{'_when': 72.5, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe6fc94>, 'pFirstID': 88741, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 80583, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 89807
+{'_when': 72.8000030518, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 299766ec>, 'pFirstID': 89436, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 80583, 'distance': 250.0}
+{'_when': 73.0, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe6c318>, 'pFirstID': 88498, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 80583, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 90149
+{'_when': 73.3000030518, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe70188>, 'pFirstID': 89096, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 80583, 'distance': 250.0}
+{'_when': 73.5, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe6fc94>, 'pFirstID': 88741, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 80583, 'distance': 250.0}
+{'_when': 73.5, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe6efc0>, 'pFirstID': 89807, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 80583, 'distance': 250.0}
+{'_when': 73.8000030518, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 299766ec>, 'pFirstID': 89436, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 80583, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 90520
+{'_when': 74.0, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe6c318>, 'pFirstID': 88498, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 80583, 'distance': 250.0}
+{'_when': 74.0999984741, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe701ec>, 'pFirstID': 90149, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 80583, 'distance': 250.0}
+{'_when': 74.3000030518, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe70188>, 'pFirstID': 89096, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 80583, 'distance': 250.0}
+{'_when': 74.5, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe6fc94>, 'pFirstID': 88741, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 80583, 'distance': 250.0}
+{'_when': 74.5, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe6efc0>, 'pFirstID': 89807, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 80583, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 90969
+{'_when': 74.8000030518, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 299766ec>, 'pFirstID': 89436, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 80583, 'distance': 250.0}
+{'_when': 74.8000030518, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe6e170>, 'pFirstID': 90520, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 80583, 'distance': 250.0}
+{'_when': 75.0, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe6c318>, 'pFirstID': 88498, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 80583, 'distance': 250.0}
+{'_when': 75.0999984741, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe701ec>, 'pFirstID': 90149, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 80583, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 91432
+{'_when': 75.3000030518, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe70188>, 'pFirstID': 89096, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 80583, 'distance': 250.0}
+{'_when': 75.5, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe6fc94>, 'pFirstID': 88741, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 80583, 'distance': 250.0}
+{'_when': 75.5, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe6efc0>, 'pFirstID': 89807, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 80583, 'distance': 250.0}
+{'_when': 75.5, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe70458>, 'pFirstID': 90969, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 80583, 'distance': 250.0}
+{'_when': 75.8000030518, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 299766ec>, 'pFirstID': 89436, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 80583, 'distance': 250.0}
+{'_when': 75.8000030518, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe6e170>, 'pFirstID': 90520, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 80583, 'distance': 250.0}
+{'_when': 76.0999984741, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe701ec>, 'pFirstID': 90149, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 80583, 'distance': 250.0}
+{'_when': 76.0999984741, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe6edb8>, 'pFirstID': 91432, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 80583, 'distance': 250.0}
+{'_when': 76.5, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe6efc0>, 'pFirstID': 89807, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 80583, 'distance': 250.0}
+{'_when': 76.5, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe70458>, 'pFirstID': 90969, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 80583, 'distance': 250.0}
+{'_when': 76.8000030518, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe6e170>, 'pFirstID': 90520, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 80583, 'distance': 250.0}
+{'_when': 77.0999984741, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe701ec>, 'pFirstID': 90149, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 80583, 'distance': 250.0}
+{'_when': 77.0999984741, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe6edb8>, 'pFirstID': 91432, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 80583, 'distance': 250.0}
+{'_when': 77.5, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe70458>, 'pFirstID': 90969, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 80583, 'distance': 250.0}
+{'_when': 77.8000030518, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe6e170>, 'pFirstID': 90520, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 80583, 'distance': 250.0}
+{'_when': 78.0999984741, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe6edb8>, 'pFirstID': 91432, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 80583, 'distance': 250.0}
+{'_when': 78.5, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe70458>, 'pFirstID': 90969, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 80583, 'distance': 250.0}
+{'_when': 79.0999984741, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe6edb8>, 'pFirstID': 91432, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 80583, 'distance': 250.0}
+Setting splash damage for Battlestar Acropolis-1 to (2591.875000, 51.837502)
+Creating WarpSequence:  Ship = Battlestar Acropolis-1  // To Set = None  // Placement Name = None
+
+
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Battlestar Acropolis-1 with Alternative Warp FTL SubModel support added
+Ship Battlestar Atlantia-2 with Alternative Warp FTL SubModel support added
+Ship Battlestar Bellerophon-3 with Alternative Warp FTL SubModel support added
+Ship Battlestar Cerberus-4 with Alternative Warp FTL SubModel support added
+Ship Battlestar Columbia-5 with Alternative Warp FTL SubModel support added
+Ship Battlestar Galactica-6 with Alternative Warp FTL SubModel support added
+Ship Battlestar Olympia-7 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 134413
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 134557
+{'_when': 120.300003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 2997527c>, 'pFirstID': 134413, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 134740
+{'_when': 120.800003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe9760c>, 'pFirstID': 134557, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 134894
+{'_when': 121.300003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 2997527c>, 'pFirstID': 134413, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 121.5, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe92514>, 'pFirstID': 134740, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 121.800003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe9760c>, 'pFirstID': 134557, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 135038
+{'_when': 122.099998474, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe952c0>, 'pFirstID': 134894, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 122.300003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 2997527c>, 'pFirstID': 134413, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 135188
+{'_when': 122.5, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe92514>, 'pFirstID': 134740, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 122.800003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe9760c>, 'pFirstID': 134557, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 122.800003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 299751f0>, 'pFirstID': 135038, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 123.099998474, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe952c0>, 'pFirstID': 134894, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 135346
+{'_when': 123.300003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 2997527c>, 'pFirstID': 134413, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 123.5, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 2997643c>, 'pFirstID': 135188, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 123.5, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe92514>, 'pFirstID': 134740, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 123.800003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe9760c>, 'pFirstID': 134557, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 123.800003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 299751f0>, 'pFirstID': 135038, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 135642
+{'_when': 124.099998474, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe952c0>, 'pFirstID': 134894, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 124.099998474, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe95680>, 'pFirstID': 135346, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 135893
+{'_when': 124.5, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 2997643c>, 'pFirstID': 135188, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 124.5, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe92514>, 'pFirstID': 134740, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 124.800003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 299751f0>, 'pFirstID': 135038, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 124.800003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe9aa14>, 'pFirstID': 135642, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 125.099998474, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe952c0>, 'pFirstID': 134894, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 125.099998474, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe95680>, 'pFirstID': 135346, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 136258
+{'_when': 125.5, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe77ac0>, 'pFirstID': 135893, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 125.5, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 2997643c>, 'pFirstID': 135188, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 125.800003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 299751f0>, 'pFirstID': 135038, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 125.800003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe9aa14>, 'pFirstID': 135642, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 136579
+{'_when': 126.099998474, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe95680>, 'pFirstID': 135346, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 126.099998474, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe9a278>, 'pFirstID': 136258, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 136855
+{'_when': 126.5, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe77ac0>, 'pFirstID': 135893, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 126.800003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe9aa14>, 'pFirstID': 135642, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 126.800003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe9bb0c>, 'pFirstID': 136579, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 127.099998474, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe9a278>, 'pFirstID': 136258, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 137405
+{'_when': 127.400001526, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe928c0>, 'pFirstID': 136855, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 127.5, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe77ac0>, 'pFirstID': 135893, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 127.800003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe9bb0c>, 'pFirstID': 136579, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 138456
+{'_when': 128.100006104, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe9a278>, 'pFirstID': 136258, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 128.100006104, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe9fa6c>, 'pFirstID': 137405, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 128.399993896, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe928c0>, 'pFirstID': 136855, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 139391
+{'_when': 128.800003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe9bb0c>, 'pFirstID': 136579, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 128.800003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe9e108>, 'pFirstID': 138456, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 129.100006104, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe9fa6c>, 'pFirstID': 137405, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 140143
+{'_when': 129.399993896, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe928c0>, 'pFirstID': 136855, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 129.399993896, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 29255be8>, 'pFirstID': 139391, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 140964
+{'_when': 129.800003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe9e108>, 'pFirstID': 138456, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 130.100006104, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe9fa6c>, 'pFirstID': 137405, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 130.100006104, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe9eaa0>, 'pFirstID': 140143, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 130.399993896, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 29255be8>, 'pFirstID': 139391, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 141899
+{'_when': 130.699996948, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 2925d1f8>, 'pFirstID': 140964, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 130.800003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe9e108>, 'pFirstID': 138456, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 142740
+{'_when': 131.100006104, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe9eaa0>, 'pFirstID': 140143, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 131.399993896, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 29255be8>, 'pFirstID': 139391, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 131.399993896, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe9f124>, 'pFirstID': 141899, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 131.699996948, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 2925d1f8>, 'pFirstID': 140964, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 143612
+{'_when': 132.0, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe9a660>, 'pFirstID': 142740, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 132.100006104, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe9eaa0>, 'pFirstID': 140143, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 144664
+{'_when': 132.399993896, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe9f124>, 'pFirstID': 141899, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 132.699996948, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 2925d1f8>, 'pFirstID': 140964, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 132.699996948, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fea7a50>, 'pFirstID': 143612, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 133.0, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe9a660>, 'pFirstID': 142740, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 145663
+{'_when': 133.300003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe9bdbc>, 'pFirstID': 144664, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 133.399993896, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe9f124>, 'pFirstID': 141899, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 133.699996948, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fea7a50>, 'pFirstID': 143612, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 146950
+{'_when': 134.0, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe9a660>, 'pFirstID': 142740, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 134.0, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe9df3c>, 'pFirstID': 145663, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 134.300003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe9bdbc>, 'pFirstID': 144664, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 148553
+{'_when': 134.699996948, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fea7a50>, 'pFirstID': 143612, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 134.699996948, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fea3b20>, 'pFirstID': 146950, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 135.0, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe9df3c>, 'pFirstID': 145663, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 150234
+{'_when': 135.300003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fea3d28>, 'pFirstID': 148553, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 151781
+{'_when': 135.699996948, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fea3b20>, 'pFirstID': 146950, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 136.0, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 57b0fa1c>, 'pFirstID': 150234, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 136.300003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fea3d28>, 'pFirstID': 148553, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 153759
+{'_when': 136.600006104, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 57b146d4>, 'pFirstID': 151781, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 155574
+{'_when': 137.0, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 57b0fa1c>, 'pFirstID': 150234, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 137.399993896, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fea5acc>, 'pFirstID': 153759, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 137.600006104, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 57b146d4>, 'pFirstID': 151781, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 157808
+{'_when': 138.0, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 57b11608>, 'pFirstID': 155574, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 160579
+{'_when': 138.399993896, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fea5acc>, 'pFirstID': 153759, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+Setting splash damage for Battlestar Bellerophon-3 to (2591.875000, 51.837502)
+{'_when': 138.600006104, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 57b0f88c>, 'pFirstID': 157808, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 139.0, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 57b11608>, 'pFirstID': 155574, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 139.300003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 57b0acd8>, 'pFirstID': 160579, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 139.600006104, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 57b0f88c>, 'pFirstID': 157808, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+{'_when': 140.300003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 57b0acd8>, 'pFirstID': 160579, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 120284, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 169288
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 171498
+{'_when': 141.5, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 57b0943c>, 'pFirstID': 169288, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 119527, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 174001
+{'_when': 142.0, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fea7534>, 'pFirstID': 171498, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 119527, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 177039
+{'_when': 142.600006104, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 57b15900>, 'pFirstID': 174001, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 119527, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 180129
+Creating WarpSequence:  Ship = Battlestar Bellerophon-3  // To Set = None  // Placement Name = None
+{'_when': 143.300003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 57aeed24>, 'pFirstID': 177039, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 119527, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 183753
+{'_when': 144.0, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 57af0130>, 'pFirstID': 180129, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 119527, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 186593
+{'_when': 144.600006104, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 57af0cf8>, 'pFirstID': 183753, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 119527, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 188767
+{'_when': 145.300003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe9cb6c>, 'pFirstID': 186593, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 119527, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 190942
+{'_when': 146.0, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 57ae7b10>, 'pFirstID': 188767, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 119527, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 192655
+{'_when': 146.600006104, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 57b0deec>, 'pFirstID': 190942, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 119527, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 194398
+{'_when': 147.199996948, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fea0050>, 'pFirstID': 192655, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 119527, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 195112
+Creating WarpSequence:  Ship = Battlestar Atlantia-2  // To Set = None  // Placement Name = None
+{'_when': 147.899993896, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe9dec4>, 'pFirstID': 194398, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 119527, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 195934
+{'_when': 148.5, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 57b0a250>, 'pFirstID': 195112, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 119527, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 196732
+Setting splash damage for Battlestar Atlantia-2 to (2591.875000, 51.837502)
+{'_when': 149.199996948, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 57af42ac>, 'pFirstID': 195934, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 119527, 'distance': 250.0}
+{'_when': 149.800003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 57b1e0c4>, 'pFirstID': 196732, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 119527, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 208310
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 208515
+{'_when': 159.800003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 57b1b570>, 'pFirstID': 208310, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 121041, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 208723
+{'_when': 160.399993896, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe7db70>, 'pFirstID': 208515, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 121041, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 208981
+{'_when': 160.800003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 57b1b570>, 'pFirstID': 208310, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 121041, 'distance': 250.0}
+{'_when': 161.100006104, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 57af2fb8>, 'pFirstID': 208723, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 121041, 'distance': 250.0}
+{'_when': 161.399993896, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe7db70>, 'pFirstID': 208515, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 121041, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 209207
+{'_when': 161.800003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 57af1a58>, 'pFirstID': 208981, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 121041, 'distance': 250.0}
+{'_when': 161.800003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 57b1b570>, 'pFirstID': 208310, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 121041, 'distance': 250.0}
+{'_when': 162.100006104, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 57af2fb8>, 'pFirstID': 208723, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 121041, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 209546
+{'_when': 162.399993896, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe7db70>, 'pFirstID': 208515, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 121041, 'distance': 250.0}
+{'_when': 162.399993896, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 29977c38>, 'pFirstID': 209207, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 121041, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 209851
+{'_when': 162.800003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 57af1a58>, 'pFirstID': 208981, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 121041, 'distance': 250.0}
+{'_when': 163.100006104, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 57af2fb8>, 'pFirstID': 208723, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 121041, 'distance': 250.0}
+{'_when': 163.100006104, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe6f750>, 'pFirstID': 209546, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 121041, 'distance': 250.0}
+{'_when': 163.399993896, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 29977c38>, 'pFirstID': 209207, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 121041, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 210199
+{'_when': 163.699996948, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe87920>, 'pFirstID': 209851, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 121041, 'distance': 250.0}
+{'_when': 163.800003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 57af1a58>, 'pFirstID': 208981, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 121041, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 210563
+{'_when': 164.100006104, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe6f750>, 'pFirstID': 209546, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 121041, 'distance': 250.0}
+{'_when': 164.399993896, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 29977c38>, 'pFirstID': 209207, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 121041, 'distance': 250.0}
+{'_when': 164.399993896, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 57b01d48>, 'pFirstID': 210199, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 121041, 'distance': 250.0}
+{'_when': 164.699996948, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe87920>, 'pFirstID': 209851, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 121041, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 211215
+{'_when': 165.0, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 57af4338>, 'pFirstID': 210563, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 121041, 'distance': 250.0}
+{'_when': 165.100006104, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe6f750>, 'pFirstID': 209546, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 121041, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 211647
+{'_when': 165.399993896, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 57b01d48>, 'pFirstID': 210199, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 121041, 'distance': 250.0}
+{'_when': 165.699996948, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 57af6460>, 'pFirstID': 211215, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 121041, 'distance': 250.0}
+{'_when': 166.0, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 57af4338>, 'pFirstID': 210563, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 121041, 'distance': 250.0}
+{'_when': 166.300003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 57b19860>, 'pFirstID': 211647, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 121041, 'distance': 250.0}
+{'_when': 166.699996948, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 57af6460>, 'pFirstID': 211215, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 121041, 'distance': 250.0}
+{'_when': 167.300003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 57b19860>, 'pFirstID': 211647, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 121041, 'distance': 250.0}
+Setting splash damage for Battlestar Acropolis-1 to (2591.875000, 51.837502)
+Creating WarpSequence:  Ship = Battlestar Galactica-6  // To Set = None  // Placement Name = None
+Creating WarpSequence:  Ship = Battlestar Cerberus-4  // To Set = None  // Placement Name = None
+Setting splash damage for Battlestar Cerberus-4 to (2591.875000, 51.837502)
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 221194
+Setting splash damage for Battlestar Galactica-6 to (2591.875000, 51.837502)
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 222801
+{'_when': 173.0, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 57aea5c4>, 'pFirstID': 221194, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 121798, 'distance': 250.0}
+{'_when': 173.600006104, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 57ae8194>, 'pFirstID': 222801, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 121798, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 228779
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 228942
+{'_when': 181.600006104, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe7f498>, 'pFirstID': 228779, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 121798, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 229252
+{'_when': 182.199996948, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe6fb90>, 'pFirstID': 228942, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 121798, 'distance': 250.0}
+{'_when': 183.100006104, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe81ad0>, 'pFirstID': 229252, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 121798, 'distance': 250.0}
+Setting splash damage for Battlestar Columbia-5 to (2591.875000, 51.837502)
+Ship BSG1978Viper - 2 with Alternative Warp FTL SubModel support added
+Ship BSG1978Viper - 3 with Alternative Warp FTL SubModel support added
+Ship BSG1978Viper - 4 with Alternative Warp FTL SubModel support added
+Ship BSG1978Viper - 5 with Alternative Warp FTL SubModel support added
+Ship BSG1978Viper - 6 with Alternative Warp FTL SubModel support added
+Ship BSG1978Viper - 7 with Alternative Warp FTL SubModel support added
+Ship BSG1978Viper - 8 with Alternative Warp FTL SubModel support added
+Ship BSG1978Viper - 9 with Alternative Warp FTL SubModel support added
+Ship BSG1978Viper - 10 with Alternative Warp FTL SubModel support added
+Ship BSG1978Viper - 11 with Alternative Warp FTL SubModel support added
+Ship BSG1978Viper - 12 with Alternative Warp FTL SubModel support added
+Ship BSG1978Viper - 13 with Alternative Warp FTL SubModel support added
+Ship BSG1978Viper - 14 with Alternative Warp FTL SubModel support added
+Ship BSG1978Viper - 15 with Alternative Warp FTL SubModel support added
+Ship BSG1978Viper - 16 with Alternative Warp FTL SubModel support added
+Ship BSG1978Viper - 17 with Alternative Warp FTL SubModel support added
+Ship BSG1978Viper - 18 with Alternative Warp FTL SubModel support added
+Ship BSG1978Viper - 19 with Alternative Warp FTL SubModel support added
+Creating WarpSequence:  Ship = Battlestar Columbia-5  // To Set = None  // Placement Name = None
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 250333
+{'_when': 194.100006104, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe8f9e8>, 'pFirstID': 250333, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 235448, 'distance': 250.0}
+Setting splash damage for BSG1978Viper - 11 to (175.000000, 3.500000)
+Setting splash damage for BSG1978Viper - 10 to (175.000000, 3.500000)
+Setting splash damage for BSG1978Viper - 6 to (175.000000, 3.500000)
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 267858
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 268326
+{'_when': 199.100006104, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 5828b8c4>, 'pFirstID': 267858, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 235448, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 268761
+{'_when': 199.699996948, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe8cbc4>, 'pFirstID': 268326, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 235448, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 269263
+{'_when': 200.300003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe8d55c>, 'pFirstID': 268761, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 235448, 'distance': 250.0}
+Creating WarpSequence:  Ship = BSG1978Viper - 6  // To Set = None  // Placement Name = None
+Creating WarpSequence:  Ship = BSG1978Viper - 10  // To Set = None  // Placement Name = None
+Creating WarpSequence:  Ship = BSG1978Viper - 11  // To Set = None  // Placement Name = None
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 269645
+{'_when': 201.0, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 5827c034>, 'pFirstID': 269263, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 235448, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 270011
+{'_when': 201.600006104, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 58257d38>, 'pFirstID': 269645, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 235448, 'distance': 250.0}
+Setting splash damage for BSG1978Viper - 7 to (175.000000, 3.500000)
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 270662
+{'_when': 202.300003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe8d5fc>, 'pFirstID': 270011, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 235448, 'distance': 250.0}
+Creating WarpSequence:  Ship = BSG1978Viper - 7  // To Set = None  // Placement Name = None
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 272443
+Setting splash damage for BSG1978Viper - 3 to (175.000000, 3.500000)
+Setting splash damage for BSG1978Viper - 2 to (175.000000, 3.500000)
+{'_when': 203.0, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 586352c8>, 'pFirstID': 270662, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 235448, 'distance': 250.0}
+Creating WarpSequence:  Ship = BSG1978Viper - 2  // To Set = None  // Placement Name = None
+Creating WarpSequence:  Ship = BSG1978Viper - 3  // To Set = None  // Placement Name = None
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 273409
+{'_when': 203.600006104, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 5828ea88>, 'pFirstID': 272443, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 235448, 'distance': 250.0}
+{'_when': 204.300003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 58640cc0>, 'pFirstID': 273409, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 235448, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 274933
+Setting splash damage for BSG1978Viper - 12 to (151.479645, 3.029593)
+Creating WarpSequence:  Ship = BSG1978Viper - 12  // To Set = None  // Placement Name = None
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 275764
+Setting splash damage for BSG1978Viper - 8 to (175.000000, 3.500000)
+Creating WarpSequence:  Ship = BSG1978Viper - 8  // To Set = None  // Placement Name = None
+{'_when': 205.399993896, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 5828fca0>, 'pFirstID': 274933, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 235448, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 276628
+Setting splash damage for BSG1978Viper - 19 to (139.765091, 2.795302)
+Setting splash damage for BSG1978Viper - 9 to (175.000000, 3.500000)
+Setting splash damage for BSG1978Viper - 4 to (175.000000, 3.500000)
+{'_when': 206.0, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 58634e38>, 'pFirstID': 275764, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 235448, 'distance': 250.0}
+Creating WarpSequence:  Ship = BSG1978Viper - 19  // To Set = None  // Placement Name = None
+Creating WarpSequence:  Ship = BSG1978Viper - 4  // To Set = None  // Placement Name = None
+Creating WarpSequence:  Ship = BSG1978Viper - 9  // To Set = None  // Placement Name = None
+{'_when': 206.600006104, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 58646278>, 'pFirstID': 276628, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 235448, 'distance': 250.0}
+Setting splash damage for BSG1978Viper - 5 to (175.000000, 3.500000)
+Creating WarpSequence:  Ship = BSG1978Viper - 5  // To Set = None  // Placement Name = None
+Setting splash damage for BSG1978Viper - 13 to (139.765091, 2.795302)
+Creating WarpSequence:  Ship = BSG1978Viper - 13  // To Set = None  // Placement Name = None
+Setting splash damage for BSG1978Viper - 17 to (139.765091, 2.795302)
+Creating WarpSequence:  Ship = BSG1978Viper - 17  // To Set = None  // Placement Name = None
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 288933
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 289579
+{'_when': 218.5, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 5864f67c>, 'pFirstID': 288933, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 123312, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 291329
+{'_when': 219.100006104, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 5864ba08>, 'pFirstID': 289579, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 123312, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 294101
+{'_when': 219.800003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 58269254>, 'pFirstID': 291329, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 123312, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 297736
+{'_when': 220.5, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 5863dc6c>, 'pFirstID': 294101, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 123312, 'distance': 250.0}
+Setting splash damage for BSG1978Viper - 14 to (155.701614, 3.114032)
+{'_when': 221.199996948, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 3fe7807c>, 'pFirstID': 297736, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 123312, 'distance': 250.0}
+Setting splash damage for BSG1978Viper - 18 to (175.000000, 3.500000)
+Creating WarpSequence:  Ship = BSG1978Viper - 14  // To Set = None  // Placement Name = None
+Setting splash damage for Battlestar Olympia-7 to (2591.875000, 51.837502)
+Creating WarpSequence:  Ship = BSG1978Viper - 18  // To Set = None  // Placement Name = None
+Creating WarpSequence:  Ship = BSG1978Viper - 15  // To Set = None  // Placement Name = None
+Setting splash damage for BSG1978Viper - 15 to (139.713333, 2.794267)
+Creating WarpSequence:  Ship = Battlestar Olympia-7  // To Set = None  // Placement Name = None
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 317860
+{'_when': 244.899993896, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 58647814>, 'pFirstID': 317860, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 238550, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 319260
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 319404
+{'_when': 252.5, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 58279f98>, 'pFirstID': 319260, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 238550, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 319612
+{'_when': 253.100006104, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 5864b49c>, 'pFirstID': 319404, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 238550, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 319817
+{'_when': 253.800003052, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 58644c0c>, 'pFirstID': 319612, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 238550, 'distance': 250.0}
+{'_when': 254.5, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 5864b49c>, 'pFirstID': 319817, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 238550, 'distance': 250.0}
+MIRVMultiTargetTorpedo.OnFire
+{'warheadModule': 'Tactical.Projectiles.naradaPhoton', 'spreadDensity': 358.0, 'spreadNumber': 10, 'name': 'MIRVMultiTargetTorpedo', 'num': 116, 'shellLive': 1} 320810
+{'_when': 259.100006104, 'oEvent': <ftb.Tech.TimedTorpedoes.MultipleMIRVEvent instance at 58635960>, 'pFirstID': 320810, '_source': None, '_queue': <FoundationTech.EventQueueDef instance at c802758>, 'interval': 1, 'pSecondID': 238550, 'distance': 250.0}
+Setting splash damage for BSG1978Viper - 16 to (175.000000, 3.500000)
+Creating WarpSequence:  Ship = BSG1978Viper - 16  // To Set = None  // Placement Name = None
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Ship Battlestar Olympia-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Trying to clean memory
+PlasmaFX Communicating with Targetable Plasma Streams...
+...Sucess
+PlasmaFX Communicating with Targetable Plasma Streams...
+...Sucess
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+Setting Stock System Planets Random Density.
+Ship Battlestar Olympia-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Error: Intercepting critical Lauching Error in LaunchShip.LaunchObject()
+Player (ships.Ambassador) tried to launch BSG1978Viper
+If you can reproduce this error, contact a BC scripter please
+Unknown Shuttle Launching Error (LaunchShip.py): Ship was not created
+Error: Intercepting critical Lauching Error in LaunchShip.LaunchObject()
+Player (ships.Ambassador) tried to launch BSG1978Viper
+If you can reproduce this error, contact a BC scripter please
+Unknown Shuttle Launching Error (LaunchShip.py): Ship was not created
+Error: Intercepting critical Lauching Error in LaunchShip.LaunchObject()
+Player (ships.Ambassador) tried to launch BSG1978Viper
+If you can reproduce this error, contact a BC scripter please
+Unknown Shuttle Launching Error (LaunchShip.py): Ship was not created
+Error: Intercepting critical Lauching Error in LaunchShip.LaunchObject()
+Player (ships.Ambassador) tried to launch BSG1978Viper
+If you can reproduce this error, contact a BC scripter please
+Unknown Shuttle Launching Error (LaunchShip.py): Ship was not created
+Error: Intercepting critical Lauching Error in LaunchShip.LaunchObject()
+Player (ships.Ambassador) tried to launch BSG1978Viper
+If you can reproduce this error, contact a BC scripter please
+Unknown Shuttle Launching Error (LaunchShip.py): Ship was not created
+Error: Intercepting critical Lauching Error in LaunchShip.LaunchObject()
+Player (ships.Ambassador) tried to launch BSG1978Viper
+If you can reproduce this error, contact a BC scripter please
+Unknown Shuttle Launching Error (LaunchShip.py): Ship was not created
+Error: Intercepting critical Lauching Error in LaunchShip.LaunchObject()
+Player (ships.Ambassador) tried to launch BSG1978Viper
+If you can reproduce this error, contact a BC scripter please
+Unknown Shuttle Launching Error (LaunchShip.py): Ship was not created
+Error: Intercepting critical Lauching Error in LaunchShip.LaunchObject()
+Player (ships.Ambassador) tried to launch BSG1978Viper
+If you can reproduce this error, contact a BC scripter please
+Unknown Shuttle Launching Error (LaunchShip.py): Ship was not created
+Error: Intercepting critical Lauching Error in LaunchShip.LaunchObject()
+Player (ships.Ambassador) tried to launch BSG1978Viper
+If you can reproduce this error, contact a BC scripter please
+Unknown Shuttle Launching Error (LaunchShip.py): Ship was not created
+Error: Intercepting critical Lauching Error in LaunchShip.LaunchObject()
+Player (ships.Ambassador) tried to launch BSG1978Viper
+If you can reproduce this error, contact a BC scripter please
+Unknown Shuttle Launching Error (LaunchShip.py): Ship was not created
+Error: Intercepting critical Lauching Error in LaunchShip.LaunchObject()
+Player (ships.Ambassador) tried to launch BSG1978Viper
+If you can reproduce this error, contact a BC scripter please
+Unknown Shuttle Launching Error (LaunchShip.py): Ship was not created
+TurnOff Crash avoided; Please fix LaunchAIShip
+TurnOff Crash avoided; Please fix LaunchAIShip
+Error: Intercepting critical Lauching Error in LaunchShip.LaunchObject()
+Player (ships.Ambassador) tried to launch BSG1978Viper
+If you can reproduce this error, contact a BC scripter please
+Unknown Shuttle Launching Error (LaunchShip.py): Ship was not created
+Error: Intercepting critical Lauching Error in LaunchShip.LaunchObject()
+Player (ships.Ambassador) tried to launch BSG1978Viper
+If you can reproduce this error, contact a BC scripter please
+Unknown Shuttle Launching Error (LaunchShip.py): Ship was not created
+Ship BSG1978Viper - 31 with Alternative Warp FTL SubModel support added
+Ship BSG1978Viper - 32 with Alternative Warp FTL SubModel support added
+Ship BSG1978Viper - 35 with Alternative Warp FTL SubModel support added
+Setting splash damage for BSG1978Viper - 31 to (161.772079, 3.235442)
+Creating WarpSequence:  Ship = BSG1978Viper - 31  // To Set = None  // Placement Name = None
+Creating WarpSequence:  Ship = BSG1978Viper - 32  // To Set = None  // Placement Name = None
+Setting splash damage for BSG1978Viper - 32 to (139.765091, 2.795302)
+Creating WarpSequence:  Ship = Battlestar Olympia-1  // To Set = None  // Placement Name = None
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 628c7c2c> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 628c9a70> ignored
+Target is not friendly - failed.
+data/TGL/Maelstrom/Episode 7/E7M6.tgl E7M6CardsFollow4
+data/TGL/Maelstrom/Episode 8/E8M1.tgl E8M1HailingMacCray2d
+
+
+Trying to clean memory
+Setting splash damage for BSG1978Viper - 35 to (175.000000, 3.500000)
+Creating WarpSequence:  Ship = BSG1978Viper - 35  // To Set = None  // Placement Name = None
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Battlestar Olympia-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Creating WarpSequence:  Ship = Battlestar Olympia-1  // To Set = None  // Placement Name = None
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 62909478> ignored
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 6290eac8> ignored
+Setting splash damage for Battlestar Olympia-1 to (2591.875000, 51.837502)
+
+
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+data/TGL/Maelstrom/Episode 5/E5M2.tgl E5M2MiguelProd2
+Setting Stock System Planets Random Density.
+Ship Battlestar Acropolis-1 with Alternative Warp FTL SubModel support added
+Ship Battlestar Atlantia-2 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+Trying to clean memory
+Setting splash damage for Battlestar Atlantia-2 to (750.625000, 15.012500)
+Creating WarpSequence:  Ship = Battlestar Atlantia-2  // To Set = None  // Placement Name = None
+TurnOff Crash avoided; Please fix LaunchAIShip
+TurnOff Crash avoided; Please fix LaunchAIShip
+TurnOff Crash avoided; Please fix LaunchAIShip
+TurnOff Crash avoided; Please fix LaunchAIShip
+TurnOff Crash avoided; Please fix LaunchAIShip
+TurnOff Crash avoided; Please fix LaunchAIShip
+TurnOff Crash avoided; Please fix LaunchAIShip
+TurnOff Crash avoided; Please fix LaunchAIShip
+TurnOff Crash avoided; Please fix LaunchAIShip
+TurnOff Crash avoided; Please fix LaunchAIShip
+TurnOff Crash avoided; Please fix LaunchAIShip
+TurnOff Crash avoided; Please fix LaunchAIShip
+Error: Intercepting critical Lauching Error in LaunchShip.LaunchObject()
+BSG1978Viper - 54 (ships.BSG1978Viper) tried to launch BSG1978Viper
+If you can reproduce this error, contact a BC scripter please
+Unknown Shuttle Launching Error (LaunchShip.py): Ship was not created
+Ship BSG1978Viper - 38 with Alternative Warp FTL SubModel support added
+Ship BSG1978Viper - 39 with Alternative Warp FTL SubModel support added
+Ship BSG1978Viper - 40 with Alternative Warp FTL SubModel support added
+Ship BSG1978Viper - 47 with Alternative Warp FTL SubModel support added
+Ship BSG1978Viper - 54 with Alternative Warp FTL SubModel support added
+Setting splash damage for Battlestar Acropolis-1 to (2591.875000, 51.837502)
+Creating WarpSequence:  Ship = Battlestar Acropolis-1  // To Set = None  // Placement Name = None
+Setting splash damage for BSG1978Viper - 40 to (175.000000, 3.500000)
+Creating WarpSequence:  Ship = BSG1978Viper - 40  // To Set = None  // Placement Name = None
+Setting splash damage for BSG1978Viper - 38 to (175.000000, 3.500000)
+Setting splash damage for BSG1978Viper - 47 to (175.000000, 3.500000)
+Creating WarpSequence:  Ship = BSG1978Viper - 38  // To Set = None  // Placement Name = None
+Setting splash damage for BSG1978Viper - 39 to (175.000000, 3.500000)
+Creating WarpSequence:  Ship = BSG1978Viper - 39  // To Set = None  // Placement Name = None
+Setting splash damage for BSG1978Viper - 54 to (175.000000, 3.500000)
+Creating WarpSequence:  Ship = BSG1978Viper - 54  // To Set = None  // Placement Name = None
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+Setting Stock System Planets Random Density.
+Ship Artemis class-1 with Alternative Warp FTL SubModel support added
+Ship Artemis class-2 with Alternative Warp FTL SubModel support added
+Ship Artemis class-3 with Alternative Warp FTL SubModel support added
+Ship Galactica-4 with Alternative Warp FTL SubModel support added
+Ship Galactica-5 with Alternative Warp FTL SubModel support added
+Ship Galactica-6 with Alternative Warp FTL SubModel support added
+Ship Pegasus-7 with Alternative Warp FTL SubModel support added
+Ship Pegasus-8 with Alternative Warp FTL SubModel support added
+Ship Pegasus-9 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+# DS9FX has...
+
+# taken a console dump
+Setting splash damage for Artemis class-3 to (951.250000, 19.025000)
+Creating WarpSequence:  Ship = Artemis class-3  // To Set = None  // Placement Name = None
+Setting splash damage for Galactica-4 to (2812.500000, 56.250000)
+Setting splash damage for Artemis class-1 to (951.250000, 19.025000)
+Setting splash damage for Galactica-5 to (2812.500000, 56.250000)
+Creating WarpSequence:  Ship = Artemis class-1  // To Set = None  // Placement Name = None
+Setting splash damage for Pegasus-9 to (5625.000000, 112.500000)
+Setting splash damage for Galactica-6 to (2812.500000, 56.250000)
+Setting splash damage for Pegasus-7 to (5625.000000, 112.500000)
+Setting splash damage for Pegasus-8 to (5625.000000, 112.500000)
+Setting splash damage for Artemis class-2 to (951.250000, 19.025000)
+Creating WarpSequence:  Ship = Artemis class-2  // To Set = None  // Placement Name = None
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 01 Oct 2025 21:20:32#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Custom.Autoload.FIX-EngineerCharacterHandlers : Patched your  Bridge.EngineerCharacterHandlers  to cover 0-shield-strength ships
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+Shuttle Launching Error: ship Player has no Shuttle launching points
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+
+
+Setting Stock System Planets Random Density.
+
+
+
+
+auto switching Bridge to GalaxyBridge
+added activation event for re-intergration sequence
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+Setting Stock System Planets Random Density.
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 01 Oct 2025 21:20:32#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Custom.Autoload.FIX-EngineerCharacterHandlers : Patched your  Bridge.EngineerCharacterHandlers  to cover 0-shield-strength ships
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+Shuttle Launching Error: ship Player has no Shuttle launching points
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+
+
+Setting Stock System Planets Random Density.
+
+
+
+
+auto switching Bridge to GalaxyBridge
+added activation event for re-intergration sequence
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+Setting Stock System Planets Random Density.
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+# DS9FX has...
+
+# taken a console dump
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 01 Oct 2025 21:44:00#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Custom.Autoload.FIX-EngineerCharacterHandlers : Patched your  Bridge.EngineerCharacterHandlers  to cover 0-shield-strength ships
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+PeragrineF1 1 None
+Type11 6 PeragrineF1
+DanubemkII 2 PeragrineF1
+Shuttle 5 PeragrineF1
+DanubemkI 1 PeragrineF1
+('Using Shuttle Bay', 'Shuttle Bay OEP')
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+data/TGL/Maelstrom/Episode 5/E5M2.tgl E5M2PrendelScan2
+Setting Stock System Planets Random Density.
+Setting splash damage for Shuttle - 21 to (112.500000, 2.250000)
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 01 Oct 2025 21:44:00#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Custom.Autoload.FIX-EngineerCharacterHandlers : Patched your  Bridge.EngineerCharacterHandlers  to cover 0-shield-strength ships
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+PeragrineF1 1 None
+Type11 6 PeragrineF1
+DanubemkII 2 PeragrineF1
+Shuttle 5 PeragrineF1
+DanubemkI 1 PeragrineF1
+('Using Shuttle Bay', 'Shuttle Bay OEP')
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+data/TGL/Maelstrom/Episode 5/E5M2.tgl E5M2PrendelScan2
+Setting Stock System Planets Random Density.
+Setting splash damage for Shuttle - 21 to (112.500000, 2.250000)
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+# DS9FX has...
+
+# taken a console dump
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
