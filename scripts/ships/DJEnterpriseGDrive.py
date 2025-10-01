@@ -10,7 +10,7 @@ def GetShipStats():
 		"FilenameLow": "data/Models/Ships/DJEclipse/DJEnterpriseGDrive.NIF",
 		"Name": "DJEnterpriseGDrive",
 		"HardpointFile": "DJEnterpriseGDrive",
-		"Species": Multiplayer.SpeciesToShip.SOVEREIGN
+		"Species": Multiplayer.SpeciesToShip.DJENTERPRISEG_DRIVE
 	}
 	return kShipStats
 

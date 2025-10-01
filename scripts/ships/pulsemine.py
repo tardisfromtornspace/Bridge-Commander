@@ -7,7 +7,7 @@ def GetShipStats():
 		"FilenameLow": "data/Models/Ships/pulsemine/pulsemine.NIF",
 		"Name": "pulsemine",
 		"HardpointFile": "pulsemine",
-		"Species": Multiplayer.SpeciesToShip.CARDOUTPOST
+		"Species": Multiplayer.SpeciesToShip.PULSEMINE
 	}
 	return kShipStats
 

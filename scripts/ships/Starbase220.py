@@ -8,7 +8,7 @@ def GetShipStats():
 		"FilenameLow": "data/Models/Bases/Starbase220/Starbase220.NIF",
 		"Name": "Starbase220",
 		"HardpointFile": "Starbase220",
-		"Species": Multiplayer.SpeciesToShip.FEDSTARBASE,
+		"Species": Multiplayer.SpeciesToShip.STARBASE220,
 		"DamageRadMod" : 15.0,
 		"DamageStrMod" : 0.0666
 	}

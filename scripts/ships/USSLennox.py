@@ -8,7 +8,7 @@ def GetShipStats():
 		"FilenameLow": "data/Models/Ships/USSLennox/USSLennox.NIF",
 		"Name": "USSLennox",
 		"HardpointFile": "USSLennox",
-		"Species": Multiplayer.SpeciesToShip.GALAXY
+		"Species": Multiplayer.SpeciesToShip.USSLENNOX
 		 }
 	return kShipStats
 

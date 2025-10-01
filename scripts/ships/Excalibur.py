@@ -9,7 +9,7 @@ def GetShipStats():
 		"FilenameLow": "data/Models/Ships/Excalibur/Excalibur.NIF",
 		"Name": "USS Excalibur",
 		"HardpointFile": "Excalibur",
-		"Species": Multiplayer.SpeciesToShip.AMBASSADOR
+		"Species": Multiplayer.SpeciesToShip.EXCALIBUR
 	}
 	return kShipStats
 

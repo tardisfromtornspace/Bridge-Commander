@@ -8,7 +8,7 @@ def GetShipStats():
 		"FilenameLow": "data/Models/Ships/Firehawk/Firehawk.NIF",
 		"Name": "Firehawk",
 		"HardpointFile": "Firehawk",
-		"Species": Multiplayer.SpeciesToShip.WARBIRD
+		"Species": Multiplayer.SpeciesToShip.FIREHAWK
 	}
 	return kShipStats
 

@@ -8,7 +8,7 @@ def GetShipStats():
 		"FilenameLow": "data/Models/Ships/Hutet/Hutet.NIF",
 		"Name": "Hutet",
 		"HardpointFile": "Hutet",
-		"Species": Multiplayer.SpeciesToShip.CARDHYBRID
+		"Species": Multiplayer.SpeciesToShip.HUTET
 		 }
 	return kShipStats
 

@@ -9,7 +9,7 @@ def GetShipStats():
 		"FilenameLow": "data/Models/Ships/SFPCheyenne/SFPCheyenne.NIF",
 		"Name": "SFPCheyenne",
 		"HardpointFile": "cheyenne",
-		"Species": Multiplayer.SpeciesToShip.GALAXY
+		"Species": Multiplayer.SpeciesToShip.CHEYENNE
 	}
 	return kShipStats
 

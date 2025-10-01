@@ -10,7 +10,7 @@ def GetShipStats():
 		"FilenameLow": "data/Models/Ships/Praetor/Praetor.NIF",
 		"Name": "Praetor",
 		"HardpointFile": "Praetor",
-		"Species": Multiplayer.SpeciesToShip.WARBIRD
+		"Species": Multiplayer.SpeciesToShip.PRAETOR
 	}
 	return kShipStats
 

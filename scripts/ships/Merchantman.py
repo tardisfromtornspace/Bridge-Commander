@@ -8,7 +8,7 @@ def GetShipStats():
 		"FilenameLow": "data/Models/Ships/Merchantman/Merchantman.NIF",
 		"Name": "Merchantman",
 		"HardpointFile": "Merchantman",
-		"Species": Multiplayer.SpeciesToShip.MARAUDER
+		"Species": Multiplayer.SpeciesToShip.MERCHANTMAN
 	}
 	return kShipStats
 

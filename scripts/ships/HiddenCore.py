@@ -6,7 +6,7 @@ def GetShipStats():
 		"FilenameHigh": "data/Models/Misc/Asteroids/asteroid.NIF",
 		"Name": "HiddenCore",
 		"HardpointFile": "HiddenCore",
-		"Species": Multiplayer.SpeciesToShip.GALAXY
+		"Species": Multiplayer.SpeciesToShip.HIDDENCORE
 	}
 	return kShipStats
 

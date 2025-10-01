@@ -8,7 +8,7 @@ def GetShipStats():
 		"FilenameLow": "data/Models/Ships/sphere/sphere.NIF",
 		"Name": "sphere",
 		"HardpointFile": "sphere",
-		"Species": Multiplayer.SpeciesToShip.GALAXY,
+		"Species": Multiplayer.SpeciesToShip.SPHERE,
 		"DamageRadMod" : 0.3,
 		"DamageStrMod" : 0.7,
 		 }

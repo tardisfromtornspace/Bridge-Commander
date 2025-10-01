@@ -9,7 +9,7 @@ def GetShipStats():
 		"FilenameLow": "data/Models/Ships/FedConstOpen/FedConstOpen.nif",
 		"Name": "FedConstOpen",
 		"HardpointFile": "FedConstOpen",
-		"Species": Multiplayer.SpeciesToShip.AMBASSADOR
+		"Species": Multiplayer.SpeciesToShip.FEDCONSTOPEN
 	}
 	return kShipStats
 

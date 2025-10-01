@@ -10,7 +10,7 @@ def GetShipStats():
 		"FilenameLow": "data/Models/Ships/DJEclipse/DJEnterpriseGThunderbird.NIF",
 		"Name": "DJEnterpriseGThunderbird",
 		"HardpointFile": "DJEnterpriseGThunderbird",
-		"Species": Multiplayer.SpeciesToShip.SHUTTLE
+		"Species": Multiplayer.SpeciesToShip.DJENTERPRISEG_THUNDERB
 	}
 	return kShipStats
 

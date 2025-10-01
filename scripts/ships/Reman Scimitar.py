@@ -8,7 +8,7 @@ def GetShipStats():
 		"FilenameLow": "data/Models/Ships/Reman Scimitar/Reman Scimitar.NIF",
 		"Name": "Reman Scimitar",
 		"HardpointFile": "Reman Scimitar",
-		"Species": Multiplayer.SpeciesToShip.CARDHYBRID
+		"Species": Multiplayer.SpeciesToShip.SCIMITAR
 		 }
 	return kShipStats
 

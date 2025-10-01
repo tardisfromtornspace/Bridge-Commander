@@ -6,7 +6,7 @@ def GetShipStats():
 		"FilenameHigh": "data/Models/Misc/Probe/Probe2.NIF",
 		"Name": "Decoy",
 		"HardpointFile": "probe2",
-		"Species": Multiplayer.SpeciesToShip.PROBE
+		"Species": Multiplayer.SpeciesToShip.DECOY
 	}
 	return kShipStats
 

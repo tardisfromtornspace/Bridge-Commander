@@ -8,7 +8,7 @@ def GetShipStats():
 		"FilenameLow": "data/Models/Misc/blackhole/Blackhole.nif",
 		"Name": "Blackhole",
 		"HardpointFile": "blackhole",
-		"Species": Multiplayer.SpeciesToShip.ASTEROID
+		"Species": Multiplayer.SpeciesToShip.BLACKHOLE
 	 }
 	return kShipStats
 

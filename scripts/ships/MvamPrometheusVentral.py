@@ -8,7 +8,7 @@ def GetShipStats():
 		"FilenameLow": "data/Models/Ships/MvamPrometheus/LowerMid.nif",
 		"Name": "MvamPrometheusVentral",
 		"HardpointFile": "MvamPrometheusVentral",
-		"Species": Multiplayer.SpeciesToShip.SOVEREIGN
+		"Species": Multiplayer.SpeciesToShip.MVAMPROMETHEUSVENRAL
 	 }
 	return kShipStats
 

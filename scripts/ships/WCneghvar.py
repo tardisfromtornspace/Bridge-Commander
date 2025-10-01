@@ -9,7 +9,7 @@ def GetShipStats():
 		"FilenameLow": "data/Models/ships/WCneghvar/WCneghvar.nif",
 		"Name": "WCneghvar",
 		"HardpointFile": "WCneghvar",
-		"Species": Multiplayer.SpeciesToShip.GALAXY
+		"Species": Multiplayer.SpeciesToShip.MPNEGHVAR
 	}
 	return kShipStats
 

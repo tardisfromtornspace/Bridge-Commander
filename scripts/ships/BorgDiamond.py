@@ -8,7 +8,7 @@ def GetShipStats():
 		"FilenameLow": "data/Models/Ships/BorgDiamond/BorgDiamond.NIF",
 		"Name": "BorgDiamond",
 		"HardpointFile": "BorgDiamond",
-		"Species": Multiplayer.SpeciesToShip.CARDHYBRID,
+		"Species": Multiplayer.SpeciesToShip.BORGDIAMOND,
 		"DamageRadMod" : 0.3,
 		"DamageStrMod" : 0.7,
 	}

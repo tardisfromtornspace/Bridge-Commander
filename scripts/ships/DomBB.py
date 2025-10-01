@@ -8,7 +8,7 @@ def GetShipStats():
 		"FilenameLow": "data/Models/Ships/DomBB/DomBB.NIF",
 		"Name": "Dominion Battleship",
 		"HardpointFile": "DomBB",
-		"Species": Multiplayer.SpeciesToShip.SOVEREIGN,
+		"Species": Multiplayer.SpeciesToShip.DOMBB,
 		"SpecularCoef": 0.5
 	 }
 	return kShipStats

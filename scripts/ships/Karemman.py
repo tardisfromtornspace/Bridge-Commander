@@ -8,7 +8,7 @@ def GetShipStats():
 		"FilenameLow": "data/Models/Ships/Karemman/Karemman.NIF",
 		"Name": "Karemman",
 		"HardpointFile": "Karemman",
-		"Species": Multiplayer.SpeciesToShip.TRANSPORT
+		"Species": Multiplayer.SpeciesToShip.KAREMMA
 	 }
 	return kShipStats
 

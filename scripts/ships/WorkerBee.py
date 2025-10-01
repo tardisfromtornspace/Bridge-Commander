@@ -7,7 +7,7 @@ def GetShipStats():
 		"FilenameLow": "data/Models/Ships/WorkerBee/workerbee.nif",
 		"Name": "WorkerBee",
 		"HardpointFile": "WorkerBee",
-		"Species": Multiplayer.SpeciesToShip.SHUTTLE
+		"Species": Multiplayer.SpeciesToShip.WORKERBEE
 	}
 	return kShipStats
 

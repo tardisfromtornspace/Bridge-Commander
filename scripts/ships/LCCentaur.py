@@ -9,7 +9,7 @@ def GetShipStats():
 		"FilenameLow": "data/Models/Ships/LCCentaur/centaur.NIF",
 		"Name": "LCCentaur",
 		"HardpointFile": "lccentaur",
-		"Species": Multiplayer.SpeciesToShip.AMBASSADOR
+		"Species": Multiplayer.SpeciesToShip.CENTAUR
 	}
 	return kShipStats
 

@@ -9,7 +9,7 @@ def GetShipStats():
 		"FilenameLow": "data/Models/Ships/MvamVoyagerSep/MvamVoyagerSep.nif",
 		"Name": "MvamVoyagerSep",
 		"HardpointFile": "MvamVoyagerSep",
-		"Species": Multiplayer.SpeciesToShip.GALAXY
+		"Species": Multiplayer.SpeciesToShip.INTREPID
 	}
 	return kShipStats
 

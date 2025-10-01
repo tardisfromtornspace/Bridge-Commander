@@ -8,7 +8,7 @@ def GetShipStats():
 		"FilenameLow": "data/Models/Ships/DomBC/DomBC.NIF",
 		"Name": "DomBC",
 		"HardpointFile": "DomBC",
-		"Species": Multiplayer.SpeciesToShip.GALAXY,
+		"Species": Multiplayer.SpeciesToShip.DOMBC,
 		"DamageRadMod" : 0.0,
 		"DamageStrMod" : 0.0,
 		}

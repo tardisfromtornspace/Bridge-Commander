@@ -10,7 +10,7 @@ def GetShipStats():
 		"FilenameLow": "data/Models/Ships/Raider1/Raider1.NIF",
 		"Name": "Raider1",
 		"HardpointFile": "Raider1",
-		"Species": Multiplayer.SpeciesToShip.BIRDOFPREY
+		"Species": Multiplayer.SpeciesToShip.RAIDER1
 		 }
 	return kShipStats
 

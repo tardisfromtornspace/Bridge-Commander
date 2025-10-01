@@ -8,7 +8,7 @@ def GetShipStats():
 		"FilenameLow": "data/Models/Ships/venimp/venimp.nif",
 		"Name": "venimp",
 		"HardpointFile": "venimp",
-		"Species": Multiplayer.SpeciesToShip.AKIRA
+		"Species": Multiplayer.SpeciesToShip.VENATOR
 	}
 	return kShipStats
 

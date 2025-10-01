@@ -9,7 +9,7 @@ def GetShipStats():
 		"FilenameLow": "data/Models/Ships/ExcelsiorP81/ExcelsiorP81Low.NIF",
 		"Name": "ExcelsiorP81",
 		"HardpointFile": "ExcelsiorP81",
-		"Species": Multiplayer.SpeciesToShip.AMBASSADOR
+		"Species": Multiplayer.SpeciesToShip.EXCELSIOR
 	}
 	return kShipStats
 

@@ -8,7 +8,7 @@ def GetShipStats():
 		"FilenameLow": "data/Models/Ships/KTinga/d7.NIF",
 		"Name": "KTinga",
 		"HardpointFile": "KTinga",
-		"Species": Multiplayer.SpeciesToShip.VORCHA
+		"Species": Multiplayer.SpeciesToShip.KTINGA
 	}
 	return kShipStats
 

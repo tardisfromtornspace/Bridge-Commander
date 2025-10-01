@@ -8,7 +8,7 @@ def GetShipStats():
 		"FilenameLow": "data/Models/Ships/Galaxy/Saucer.NIF",
 		"Name": "GalaxySaucer",
 		"HardpointFile": "galaxysaucer",
-		"Species": Multiplayer.SpeciesToShip.GALAXY,
+		"Species": Multiplayer.SpeciesToShip.GALAXYSAUCER,
 		"SpecularCoef": 0.55
 		 }
 	return kShipStats

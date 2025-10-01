@@ -8,7 +8,7 @@ def GetShipStats():
 		"FilenameLow": "data/Models/Bases/RomulanOutpost/RomulanOutpost.NIF",
 		"Name": "RomulanOutpost",
 		"HardpointFile": "RomulanOutpost",
-		"Species": Multiplayer.SpeciesToShip.CARDOUTPOST,
+		"Species": Multiplayer.SpeciesToShip.ROMULANOUTPOST,
 		"DamageRadMod" : 15.0,
 		"DamageStrMod" : 0.0666
 	}

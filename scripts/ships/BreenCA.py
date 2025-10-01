@@ -8,7 +8,7 @@ def GetShipStats():
 		"FilenameLow": "data/Models/Ships/BreenCA/BreenCA.nif",
 		"Name": "BreenCA",
 		"HardpointFile": "BreenCA",
-		"Species": Multiplayer.SpeciesToShip.CARDHYBRID,
+		"Species": Multiplayer.SpeciesToShip.BREENCA,
 		"SpecularCoef": 0.5,
 		 }
 	return kShipStats

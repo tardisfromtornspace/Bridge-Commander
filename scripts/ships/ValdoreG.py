@@ -9,7 +9,7 @@ def GetShipStats():
 		"FilenameLow": "data/Models/Ships/ValdoreG/Valdore.nif",
 		"Name": "ValdoreG",
 		"HardpointFile": "ValdoreHP",
-		"Species": Multiplayer.SpeciesToShip.WARBIRD
+		"Species": Multiplayer.SpeciesToShip.VALDORE
 	}
 	return kShipStats
 

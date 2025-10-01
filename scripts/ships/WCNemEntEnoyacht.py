@@ -9,7 +9,7 @@ def GetShipStats():
 		"FilenameLow": "data/Models/ships/WCNemEntE/WCNemEntEnoyacht.nif",
 		"Name": "WCNemEntEnoyacht",
 		"HardpointFile": "WCNemEntEnoyacht",
-		"Species": Multiplayer.SpeciesToShip.SOVEREIGN
+		"Species": Multiplayer.SpeciesToShip.SOVEREIGN_NOYACHT
 	}
 	return kShipStats
 

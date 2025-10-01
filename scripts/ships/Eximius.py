@@ -8,7 +8,7 @@ def GetShipStats():
 		"FilenameLow": "data/Models/Ships/_F_TNG_Eximius/Low/EximiusLow.NIF",
 		"Name": "Eximius",
 		"HardpointFile": "Eximius",
-		"Species": Multiplayer.SpeciesToShip.WARBIRD,
+		"Species": Multiplayer.SpeciesToShip.EXIMIUS,
 		"SpecularCoef": 0.7
 	 }
 	return kShipStats

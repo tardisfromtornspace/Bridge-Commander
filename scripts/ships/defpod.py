@@ -6,7 +6,7 @@ def GetShipStats():
 		"FilenameHigh": "data/Models/Misc/Pods/defpod.nif",
 		"Name": "defpod",
 		"HardpointFile": "defpod",
-		"Species": Multiplayer.SpeciesToShip.ESCAPEPOD
+		"Species": Multiplayer.SpeciesToShip.DEFPOD
 	}
 	return kShipStats
 

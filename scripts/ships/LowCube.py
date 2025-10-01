@@ -8,7 +8,7 @@ def GetShipStats():
 		"FilenameLow": "data/Models/Ships/LowCube/LowCube.NIF",
 		"Name": "LowCube",
 		"HardpointFile": "LowCube",
-		"Species": Multiplayer.SpeciesToShip.SOVEREIGN,
+		"Species": Multiplayer.SpeciesToShip.LOWCUBE,
 		"DamageRadMod" : 0.0,
 		"DamageStrMod" : 0.0,
 	}

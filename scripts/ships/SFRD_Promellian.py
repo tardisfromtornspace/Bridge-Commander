@@ -9,7 +9,7 @@ def GetShipStats():
 		"FilenameLow": "data/Models/Ships/SFRD_Promellian/SFRD_Promellian.nif",
 		"Name": "SFRD_Promellian",
 		"HardpointFile": "SFRD_Promellian",
-		"Species": Multiplayer.SpeciesToShip.AMBASSADOR
+		"Species": Multiplayer.SpeciesToShip.PROMELLIAN
 	}
 	return kShipStats
 

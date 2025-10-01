@@ -8,7 +8,7 @@ def GetShipStats():
 		"FilenameLow": "data/Models/Ships/norway/norway.NIF",
 		"Name": "norway",
 		"HardpointFile": "norway",
-		"Species": Multiplayer.SpeciesToShip.GALAXY
+		"Species": Multiplayer.SpeciesToShip.NORWAY
 	}
 	return kShipStats
 

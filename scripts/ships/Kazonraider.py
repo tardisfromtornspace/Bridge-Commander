@@ -8,7 +8,7 @@ def GetShipStats():
 		"FilenameLow": "data/Models/Ships/Kazonraider/Kazonraider.nif",
 		"Name": "Kazonraider",
 		"HardpointFile": "Kazonraider",
-		"Species": Multiplayer.SpeciesToShip.MARAUDER
+		"Species": Multiplayer.SpeciesToShip.KAZONRAIDER
 	}
 	return kShipStats
 

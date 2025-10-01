@@ -8,7 +8,7 @@ def GetShipStats():
 		"FilenameLow": "data/Models/Ships/MPneghvar/MPneghvar.NIF",
 		"Name": "MPneghvar",
 		"HardpointFile": "MPneghvar",
-		"Species": Multiplayer.SpeciesToShip.VORCHA
+		"Species": Multiplayer.SpeciesToShip.MPNEGHVAR
 		 }
 	return kShipStats
 

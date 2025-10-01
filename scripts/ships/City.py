@@ -6,7 +6,7 @@ def GetShipStats():
 		"FilenameHigh": "data/Models/Environment/City/City.NIF",
 		"Name": "City",
 		"HardpointFile": "city",
-		"Species": Multiplayer.SpeciesToShip.ASTEROID
+		"Species": Multiplayer.SpeciesToShip.CITY
 	}
 	return kShipStats
 

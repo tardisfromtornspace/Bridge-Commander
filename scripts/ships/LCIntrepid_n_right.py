@@ -9,7 +9,7 @@ def GetShipStats():
 		"FilenameLow": "data/Models/Ships/LCIntrepid/Intrepid_nacelle_right.NIF",
 		"Name": "Intrepid_right",
 		"HardpointFile": "LCIntrepid_right",
-		"Species": Multiplayer.SpeciesToShip.NEBULA
+		"Species": Multiplayer.SpeciesToShip.INTREPID_N_RIGHT
 	}
 	return kShipStats
 

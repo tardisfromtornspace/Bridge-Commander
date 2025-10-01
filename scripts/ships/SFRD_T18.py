@@ -8,7 +8,7 @@ def GetShipStats():
 		"FilenameLow": "data/Models/Ships/SFRD_T18/SFRD_T18.nif",
 		"Name": "SFRD_T18",
 		"HardpointFile": "SFRD_T18",
-		"Species": Multiplayer.SpeciesToShip.SHUTTLE
+		"Species": Multiplayer.SpeciesToShip.TYPE18
 		 }
 	return kShipStats
 

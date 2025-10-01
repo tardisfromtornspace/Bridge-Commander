@@ -8,7 +8,7 @@ def GetShipStats():
 		"FilenameLow": "data/Models/Ships/VasKholhr/RightWing.nif",
 		"Name": "Vas Kholhr Starboard Wing",
 		"HardpointFile": "VasKholhr_StarboardWing",
-		"Species": Multiplayer.SpeciesToShip.WARBIRD
+		"Species": Multiplayer.SpeciesToShip.VAS_STARPORT_WING
 	}
 	return kShipStats
 

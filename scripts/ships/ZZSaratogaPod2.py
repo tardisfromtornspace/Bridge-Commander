@@ -9,7 +9,7 @@ def GetShipStats():
 		"FilenameLow": "data/Models/Ships/MirandaPack/ZZSaratogaPod.nif",
 		"Name": "ZZSaratogaPod2",
 		"HardpointFile": "ZZSaratogaPodHP2",
-		"Species": Multiplayer.SpeciesToShip.ESCAPEPOD
+		"Species": Multiplayer.SpeciesToShip.MIRANDAPOD
 	}
 	return kShipStats
 

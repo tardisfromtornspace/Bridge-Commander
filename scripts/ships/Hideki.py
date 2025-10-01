@@ -8,7 +8,7 @@ def GetShipStats():
 		"FilenameLow": "data/Models/Ships/Hideki/Hideki.NIF",
 		"Name": "Hideki",
 		"HardpointFile": "Hideki",
-		"Species": Multiplayer.SpeciesToShip.GALOR
+		"Species": Multiplayer.SpeciesToShip.HIDEKI
 		 }
 	return kShipStats
 

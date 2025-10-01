@@ -6,7 +6,7 @@ def GetShipStats():
 		"FilenameHigh": "data/Models/Misc/mine/mine.NIF",
 		"Name": "Mine",
 		"HardpointFile": "Mine",
-		"Species": Multiplayer.SpeciesToShip.SHUTTLE
+		"Species": Multiplayer.SpeciesToShip.MINE
 	}
 	return kShipStats
 

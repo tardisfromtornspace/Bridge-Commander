@@ -8,7 +8,7 @@ def GetShipStats():
 		"FilenameLow": "data/Models/Ships/LCRaptor/LCRaptor.NIF",
 		"Name": "LCRaptor",
 		"HardpointFile": "LCRaptor",
-		"Species": Multiplayer.SpeciesToShip.BIRDOFPREY
+		"Species": Multiplayer.SpeciesToShip.LCRAPTOR
 	}
 	return kShipStats
 

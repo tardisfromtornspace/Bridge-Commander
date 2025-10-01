@@ -6,7 +6,7 @@ def GetShipStats():
 		"FilenameHigh": "data/Models/Misc/Pods/galpod.nif",
 		"Name": "Galaxy Escape Pod",
 		"HardpointFile": "Galpod",
-		"Species": Multiplayer.SpeciesToShip.ESCAPEPOD,
+		"Species": Multiplayer.SpeciesToShip.GALPOD,
 	}
 	return kShipStats
 

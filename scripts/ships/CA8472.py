@@ -8,7 +8,7 @@ def GetShipStats():
 		"FilenameLow": "data/Models/Ships/CA8472/bio.NIF",
 		"Name": "CA8472",
 		"HardpointFile": "CA8472",
-		"Species": Multiplayer.SpeciesToShip.VORCHA
+		"Species": Multiplayer.SpeciesToShip.CA8472
 	}
 	return kShipStats
 

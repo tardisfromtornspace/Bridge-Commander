@@ -7,7 +7,7 @@ def GetShipStats():
 		"FilenameMed": "data/Models/Bases/DryDock/DryDockMed.NIF",
 		"Name": "Dry Dock",
 		"HardpointFile": "drydockrepair",
-		"Species": Multiplayer.SpeciesToShip.DRYDOCK
+		"Species": Multiplayer.SpeciesToShip.DRYDOCKREPAIR
 	}
 	return kShipStats
 

@@ -10,7 +10,7 @@ def GetShipStats():
 		"FilenameLow": "data/Models/Ships/Shrike/Shrike.NIF",
 		"Name": "Shrike",
 		"HardpointFile": "shrike",
-		"Species": Multiplayer.SpeciesToShip.WARBIRD
+		"Species": Multiplayer.SpeciesToShip.SHRIKE
 	}
 	return kShipStats
 

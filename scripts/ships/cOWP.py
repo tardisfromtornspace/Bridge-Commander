@@ -8,7 +8,7 @@ def GetShipStats():
 		"FilenameLow": "data/Models/Ships/cOWP/owp.nif",
 		"Name": "owp",
 		"HardpointFile": "cOWP",
-		"Species": Multiplayer.SpeciesToShip.GALOR
+		"Species": Multiplayer.SpeciesToShip.COWP
 		 }
 	return kShipStats
 

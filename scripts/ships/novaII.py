@@ -8,7 +8,7 @@ def GetShipStats():
 		"FilenameLow": "data/Models/Ships/novaII/novaII.nif",
 		"Name": "novaII",
 		"HardpointFile": "novaII",
-		"Species": Multiplayer.SpeciesToShip.NEBULA
+		"Species": Multiplayer.SpeciesToShip.NOVAII
 		 }
 	return kShipStats
 

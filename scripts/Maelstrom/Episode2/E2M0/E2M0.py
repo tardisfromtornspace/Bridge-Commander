@@ -2113,7 +2113,7 @@ def CreateWarbirds(pTGAction):
 	
 	pWarbird1	= loadspacehelper.CreateShip("E2M0Warbird", pTevron2Set, "Warbird 1", "Warbird1Start")
 	pWarbird2	= loadspacehelper.CreateShip("E2M0Warbird", pTevron2Set, "Warbird 2", "Warbird2Start")
-	
+
 	# Cloak the Warbirds instantly
 	MissionLib.Cloak(None, pWarbird1, TRUE)
 	MissionLib.Cloak(None, pWarbird2, TRUE)

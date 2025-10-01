@@ -8,7 +8,7 @@ def GetShipStats():
 		"FilenameLow": "data/Models/Ships/sovereignyachtwarp/sovereignyachtwarp.NIF",
 		"Name": "sovereignyachtwarp",
 		"HardpointFile": "sovereignyachtwarp",
-		"Species": Multiplayer.SpeciesToShip.SHUTTLE
+		"Species": Multiplayer.SpeciesToShip.SOVEREIGNYACHTWARP
 		 }
 	return kShipStats
 

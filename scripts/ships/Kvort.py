@@ -8,7 +8,7 @@ def GetShipStats():
 		"FilenameLow": "data/Models/Ships/Kvort/KvortLow.NIF",
 		"Name": "Kvort",
 		"HardpointFile": "Kvort",
-		"Species": Multiplayer.SpeciesToShip.BIRDOFPREY
+		"Species": Multiplayer.SpeciesToShip.KVORT
 	}
 	return kShipStats
 

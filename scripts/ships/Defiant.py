@@ -8,7 +8,7 @@ def GetShipStats():
 		"FilenameLow": "data/Models/Ships/Defiant/Defiant.NIF",
 		"Name": "Defiant",
 		"HardpointFile": "Defiant",
-		"Species": Multiplayer.SpeciesToShip.SOVEREIGN,
+		"Species": Multiplayer.SpeciesToShip.DEFIANT,
 		"DamageRadMod" : 0.4,
 		"DamageStrMod" : 0.6,
 	}

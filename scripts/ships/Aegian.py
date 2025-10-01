@@ -9,7 +9,7 @@ def GetShipStats():
 		"FilenameLow": "data/Models/Ships/Aegian/AegianLow.NIF",
 		"Name": "Aegian",
 		"HardpointFile": "Aegian",
-		"Species": Multiplayer.SpeciesToShip.SOVEREIGN
+		"Species": Multiplayer.SpeciesToShip.AEGIAN
 	}
 	return kShipStats
 

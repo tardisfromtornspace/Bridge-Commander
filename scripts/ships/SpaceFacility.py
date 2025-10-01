@@ -8,7 +8,7 @@ def GetShipStats():
 		"FilenameLow": "data/Models/Bases/SpaceFacility/SpaceFacilityLow.NIF",
 		"Name": "Space Facility",
 		"HardpointFile": "spacefacility",
-		"Species": Multiplayer.SpeciesToShip.FEDOUTPOST,
+		"Species": Multiplayer.SpeciesToShip.SPACEFACILITY,
 		"DamageRadMod" : 5.0,
 		"DamageStrMod" : 0.2
 	}

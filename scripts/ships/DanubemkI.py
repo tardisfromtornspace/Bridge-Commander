@@ -9,7 +9,7 @@ def GetShipStats():
 		"FilenameLow": "data/Models/Ships/SKDanube/danubeNR.NIF",
 		"Name": "DanubemkI",
 		"HardpointFile": "DanubemkI",
-		"Species": Multiplayer.SpeciesToShip.SHUTTLE
+		"Species": Multiplayer.SpeciesToShip.DANUBEMKI
 	}
 	return kShipStats
 

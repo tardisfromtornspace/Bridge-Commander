@@ -8,7 +8,7 @@ def GetShipStats():
 		"FilenameLow": "data/Models/Ships/deltaflyer/Deltaflyer.NIF",		
 		"Name": "deltaflyer",
 		"HardpointFile": "deltaflyer",
-		"Species": Multiplayer.SpeciesToShip.SHUTTLE
+		"Species": Multiplayer.SpeciesToShip.DELTAFLYER
 	}
 	return kShipStats
 

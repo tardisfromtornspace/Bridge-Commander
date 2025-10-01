@@ -8,7 +8,7 @@ def GetShipStats():
 		"FilenameLow": "data/Models/Ships/Miradorn/Miradorn.nif",
 		"Name": "Miradorn",
 		"HardpointFile": "Miradorn",
-		"Species": Multiplayer.SpeciesToShip.AMBASSADOR
+		"Species": Multiplayer.SpeciesToShip.MIRADORN
 	}
 	return kShipStats
 

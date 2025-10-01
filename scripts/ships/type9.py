@@ -8,7 +8,7 @@ def GetShipStats():
 		"FilenameLow": "data/Models/Ships/type9/type9Low.NIF",		
 		"Name": "type9",
 		"HardpointFile": "type9",
-		"Species": Multiplayer.SpeciesToShip.SHUTTLE
+		"Species": Multiplayer.SpeciesToShip.TYPE9
 	}
 	return kShipStats
 

@@ -8,7 +8,7 @@ def GetShipStats():
 		"FilenameLow": "data/Models/Ships/C2steamrunner/Steamrunner.nif",
 		"Name": "Steamrunner",
 		"HardpointFile": "steamrunner",
-		"Species": Multiplayer.SpeciesToShip.GALAXY
+		"Species": Multiplayer.SpeciesToShip.STEAMRUNNER
 		 }
 	return kShipStats
 

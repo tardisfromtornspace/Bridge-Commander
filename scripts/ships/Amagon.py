@@ -7,7 +7,7 @@ def GetShipStats():
 		"FilenameHigh": "data/Models/Misc/Asteroids/asteroid3.NIF",
 		"Name": "Amagon",
 		"HardpointFile": "amagon",
-		"Species": Multiplayer.SpeciesToShip.GALOR
+		"Species": Multiplayer.SpeciesToShip.AMAGON
 	}
 	return kShipStats
 

@@ -8,7 +8,7 @@ def GetShipStats():
 		"FilenameLow": "data/Models/Bases/KlingonImperialStarbase/KlingonImperialStarbase.NIF",
 		"Name": "KlingonImperialStarbase",
 		"HardpointFile": "KlingonImperialStarbase",
-		"Species": Multiplayer.SpeciesToShip.CARDSTARBASE,
+		"Species": Multiplayer.SpeciesToShip.IMPERIALBASE,
 		"DamageRadMod" : 15.0,
 		"DamageStrMod" : 0.0666
 	}

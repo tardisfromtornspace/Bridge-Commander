@@ -8,7 +8,7 @@ def GetShipStats():
 		"FilenameLow": "data/Models/Ships/VentureScout/VentureScout.NIF",
 		"Name": "VentureScout",
 		"HardpointFile": "VentureScout",
-		"Species": Multiplayer.SpeciesToShip.SHUTTLE
+		"Species": Multiplayer.SpeciesToShip.VENTURESCOUT
 	}
 	return kShipStats
 

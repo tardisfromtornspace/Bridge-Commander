@@ -2,7 +2,7 @@ import App
 import Multiplayer.SpeciesToShip
 
 def GetShipStats():
-    kShipStats = {'FilenameHigh': 'data/Models/Ships/Birdofprey/Birdofprey.nif', 'FilenameMed': 'data/Models/Ships/Birdofprey/Birdofprey.nif', 'FilenameLow': 'data/Models/Ships/Birdofprey/Birdofprey.nif', 'Name': 'BirdofPrey', 'HardpointFile': 'CloakFireBirdOfPrey', 'Species': Multiplayer.SpeciesToShip.BIRDOFPREY}
+    kShipStats = {'FilenameHigh': 'data/Models/Ships/Birdofprey/Birdofprey.nif', 'FilenameMed': 'data/Models/Ships/Birdofprey/Birdofprey.nif', 'FilenameLow': 'data/Models/Ships/Birdofprey/Birdofprey.nif', 'Name': 'BirdofPrey', 'HardpointFile': 'CloakFireBirdOfPrey', 'Species': Multiplayer.SpeciesToShip.CLOAKFIREBIRDOFPREY}
     return kShipStats
 
 

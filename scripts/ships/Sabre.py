@@ -10,7 +10,7 @@ def GetShipStats():
 		"FilenameLow": "data/Models/Ships/Sabre/SabreLow.nif",
 		"Name": "Sabre",
 		"HardpointFile": "Sabre",
-		"Species": Multiplayer.SpeciesToShip.AMBASSADOR
+		"Species": Multiplayer.SpeciesToShip.SABRE
 	}
 	return kShipStats
 

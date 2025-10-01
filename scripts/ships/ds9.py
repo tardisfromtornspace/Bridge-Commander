@@ -8,7 +8,7 @@ def GetShipStats():
 		"FilenameLow": "data/Models/Bases/DeepSpaceNine/FedDS9.NIF",
 		"Name": "DeepSpaceNine",
 		"HardpointFile": "ds9",
-		"Species": Multiplayer.SpeciesToShip.CARDSTARBASE,
+		"Species": Multiplayer.SpeciesToShip.DS9,
 		"DamageRadMod" : 8.0,
 		"DamageStrMod" : 0.125
 	}

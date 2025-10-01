@@ -8,7 +8,7 @@ def GetShipStats():
 		"FilenameLow": "data/Models/Ships/Galaxy/Stardrive.NIF",
 		"Name": "GalaxyStardrive",
 		"HardpointFile": "galaxystardrive",
-		"Species": Multiplayer.SpeciesToShip.GALAXY,
+		"Species": Multiplayer.SpeciesToShip.GALAXYSTARDRIVE,
 		"SpecularCoef": 0.55
 		 }
 	return kShipStats

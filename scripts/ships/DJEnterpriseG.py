@@ -10,7 +10,7 @@ def GetShipStats():
 		"FilenameLow": "data/Models/Ships/DJEclipse/DJEnterpriseG.NIF",
 		"Name": "DJEnterpriseG",
 		"HardpointFile": "DJEnterpriseG",
-		"Species": Multiplayer.SpeciesToShip.SOVEREIGN
+		"Species": Multiplayer.SpeciesToShip.DJENTERPRISEG
 	}
 	return kShipStats
 

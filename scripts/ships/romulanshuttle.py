@@ -8,7 +8,7 @@ def GetShipStats():
 		"FilenameLow": "data/Models/Ships/romulanshuttle/romulanshuttle.NIF",
 		"Name": "romulanshuttle",
 		"HardpointFile": "romulanshuttle",
-		"Species": Multiplayer.SpeciesToShip.SHUTTLE
+		"Species": Multiplayer.SpeciesToShip.ROMULANSHUTTLE
 		 }
 	return kShipStats
 

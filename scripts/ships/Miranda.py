@@ -9,7 +9,7 @@ def GetShipStats():
 		"FilenameLow": "data/Models/Ships/MirandaPack/ZZSitak.nif",
 		"Name": "Miranda",
 		"HardpointFile": "Miranda",
-		"Species": Multiplayer.SpeciesToShip.AMBASSADOR
+		"Species": Multiplayer.SpeciesToShip.MIRANDA
 	}
 	return kShipStats
 

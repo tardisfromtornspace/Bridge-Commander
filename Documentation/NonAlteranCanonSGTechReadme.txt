@@ -1,4 +1,7 @@
 == Changelog ==
+1.2.5 -
+   Fixes:
+   * Updated SpeciesToTorp and SpeciesToShip to provide a better combined KM-SG-mod coverage.
 1.2.4 -
    Fixes:
    * Updated FIX-DS9FXbelow1dot2 to be a bit more agnostic towards the actual value of SpeciesToTorp.PHASEDPLASMA

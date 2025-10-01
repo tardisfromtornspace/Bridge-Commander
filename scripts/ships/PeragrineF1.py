@@ -8,7 +8,7 @@ def GetShipStats():
 		"FilenameLow": "data/Models/Ships/PeragrineF1/PeragrineF1.NIF",
 		"Name": "PeragrineF1",
 		"HardpointFile": "PeragrineF1",
-		"Species": Multiplayer.SpeciesToShip.BIRDOFPREY
+		"Species": Multiplayer.SpeciesToShip.PERAGRINEF1
 		 }
 	return kShipStats
 

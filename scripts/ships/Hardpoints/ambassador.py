@@ -628,7 +628,7 @@ Ambassador = App.ShipProperty_Create("Ambassador")
 
 Ambassador.SetGenus(1)
 Ambassador.SetSpecies(104)
-Ambassador.SetMass(100.000000)
+Ambassador.SetMass(11000.000000)
 Ambassador.SetRotationalInertia(10000.000000)
 Ambassador.SetShipName("Ambassador")
 Ambassador.SetModelFilename("data/Models/Ships/Ambassador.nif")

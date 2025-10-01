@@ -6,7 +6,7 @@ def GetShipStats():
 		"FilenameHigh": "data/Models/Misc/QuanTar/QuanTar.NIF",
 		"Name": "QuanTar",
 		"HardpointFile": "QuanTar",
-		"Species": Multiplayer.SpeciesToShip.SHUTTLE
+		"Species": Multiplayer.SpeciesToShip.QUANTAR
 	}
 	return kShipStats
 

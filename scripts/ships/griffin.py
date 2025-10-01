@@ -9,7 +9,7 @@ def GetShipStats():
 		"FilenameLow": "data/Models/Ships/griffin/griffin.nif",
 		"Name": "Griffin",
 		"HardpointFile": "griffin",
-		"Species": Multiplayer.SpeciesToShip.GALAXY
+		"Species": Multiplayer.SpeciesToShip.GRIFFIN
 		
 	}
 	return kShipStats

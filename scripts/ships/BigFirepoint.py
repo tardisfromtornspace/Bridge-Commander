@@ -6,7 +6,7 @@ def GetShipStats():
 		"FilenameHigh": "data/Models/Misc/Probe/Probe.NIF",
 		"Name": "BigFirepoint",
 		"HardpointFile": "BigFirepoint",
-		"Species": Multiplayer.SpeciesToShip.ASTEROID
+		"Species": Multiplayer.SpeciesToShip.BIGFIREPOINT
 	}
 	return kShipStats
 
@@ -19,7 +19,7 @@ def LoadModel(bPreLoad = 0):
 		# Surface Damage Res, Internal Damage Res, Burn Value, Hole Value,
 		# Search String for Glow, Search string for Specular, Suffix for specular
 		pLODModel = App.g_kLODModelManager.Create(pStats["Name"])
-		pLODModel.AddLOD(pStats["FilenameHigh"], 10,  15.0, 15.0, 15.0, 400, 900, "_glow", None, None)
+		pLODModel.AddLOD(pStats["FilenameHigh"], 10,  10.0, 15.0, 15.0, 400, 900, "_glow", None, None)
 
 #		kDebugObj = App.CPyDebug()
 		if (bPreLoad == 0):
