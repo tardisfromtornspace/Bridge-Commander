@@ -107,9 +107,9 @@ class HullWatcher:
 		self.pEventHandler.AddPythonMethodHandlerForInstance( ET_HULL_WATCHER, "SystemEvent" )
 
 	def RemoveWatchers(self):
-		if self.Ship == None:
+		if (not hasattr(self, "Ship")) or self.Ship == None:
 			return
-		if self.RangeCheck is not None:
+		if hasattr(self, "RangeCheck") and self.RangeCheck is not None:
 			pWatcher = pShip.GetHull().GetConditionWatcher()
 			for iRangeCheckID in self.lRangeCheckIDs:
 				pWatcher.RemoveRangeCheck( iRangeCheckID )
