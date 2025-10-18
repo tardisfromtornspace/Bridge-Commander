@@ -382,7 +382,7 @@ Engineering.SetRepairComplexity(4.000000)
 Engineering.SetDisabledPercentage(0.100000)
 Engineering.SetRadius(0.150000)
 Engineering.SetNormalPowerPerSecond(1.000000)
-Engineering.SetMaxRepairPoints(16.000000)
+Engineering.SetMaxRepairPoints(8.000000)
 Engineering.SetNumRepairTeams(1)
 App.g_kModelPropertyManager.RegisterLocalTemplate(Engineering)
 #################################################
