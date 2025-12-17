@@ -3,9 +3,9 @@ import Multiplayer.SpeciesToShip
 
 def GetShipStats():
 	kShipStats = {
-		"FilenameHigh": "data/Models/Ships/Protostar Pieces/ProtocoreDoorLeft.NIF",
-		"FilenameMed": "data/Models/Ships/Protostar Pieces/ProtocoreDoorLeft.NIF",
-		"FilenameLow": "data/Models/Ships/Protostar Pieces/ProtocoreDoorLeft.NIF",
+		"FilenameHigh": "data/Models/Ships/ProtostarProtowarp/LeftProtocoreDoor.nif",
+		"FilenameMed": "data/Models/Ships/ProtostarProtowarp/LeftProtocoreDoor.nif",
+		"FilenameLow": "data/Models/Ships/ProtostarProtowarp/LeftProtocoreDoor.nif",
 		"Name": "USSProtostarPD",
 		"HardpointFile": "USSProtostarDummy",
 		"Species": Multiplayer.SpeciesToShip.GALOR

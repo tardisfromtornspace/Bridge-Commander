@@ -12264,3 +12264,27 @@ Doing stack walk
 Call stack:
 Address   Frame
 
+//=====================================================
+Current Time: Wed Dec 17 21:23:46 2025
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  2BA0261C 00:00000000 
+
+Registers:
+EAX:00000001
+EBX:009976B0
+ECX:0019F7E0
+EDX:00000057
+ESI:009976B0
+EDI:0045060D
+CS:EIP:0023:2BA0261C
+SS:ESP:002B:0019F71C  EBP:4447F164
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+
+Application Timestamp: Thu Jan 01 01:00:00 1970
+Doing stack walk
+
+Call stack:
+Address   Frame
+2BA0261C  0019F75C  0000:00000000  (No symbol info found)
+
