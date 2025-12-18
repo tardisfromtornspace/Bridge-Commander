@@ -1,4 +1,7 @@
 == Changelog ==
+0.8 - Official Mod release
+  * Thanks to the Orange Guy and Co. (O.G.A.C.) at the White House, everybody has problems and we had a ton of delays to do stuff (most of the core scripts were already complete by January 2025!). It is also because of the O.G.A.C. and other creepy stuff (amongst them, being on the brink of WWIII) that I decided to try to release this to the public before everything goes kaboom, trying to finish most WIPs as best as I could, rushed as some of the art-aspects of this update are, and cutting some plans (like adding the Reapers from Mass Effect or the USS Prodigy). On the bright side, this may be a good Christmas present for you all!
+  * Replaced non-suitable high-quality model of the USS Protostar with a complete new one made with Milkshape by modifying the suitable lower-quality Protostar model to have the Protowarp mode and all the missing pieces, now complete (excluding maybe a few finishing touches on the texture mapping). So now you can fully play as the USS Protostar!
 0.71 - Updates:
   * Modified BSG 1978, BSG 2003 and Mass Effect FTL drives' GetActualCruiseSpeed and GetActualMaxSpeed to have the speed bar work slightly better.
 0.7 - Updates:
@@ -92,8 +95,7 @@
 This mod adds the following updates and fixes:
 * A new SubModels-derivated file that supports other FTL methods (from GalaxyCharts) and mobility fix and intra-system intercept (ISI) improvements.
 * Proto-Warp Travelling Method.
-** An USS Protostar from Star Trek Prodigy equipped with this drive (TO-DO W.I.P.).
-** An USS Prodigy from Star Trek Prodigy equipped with this drive (TO-DO not yet added).
+** An USS Protostar from Star Trek Prodigy equipped with this drive.
 * Spore-Drive Travelling Method with ISI.
 ** A modified USS Discovery (Crossfield Class) equipped with Spore drive.
 * Mass Effect Drive Travelling Method `+ a system Disabler for when GC is off/on) + Mass Effect Shields, Mass Effect Projectiles, Mass Effect IES Stealth System, Mass Effect Thanix Magnetic-Hydrodynamic Cannon technologies:
@@ -194,7 +196,7 @@ STEP 4. Install the "battlestar-galactica-fleet-pack" mod from https://www.gamef
 
 STEP 5. Install the "battlestar-galactica-ship-pack-2" mod from https://www.gamefront.com/games/bridge-commander/file/battlestar-galactica-ship-pack-2 on a TEMPORARY folder (TEMPFOLDER3):
    - We only need all the contents inside the data and sfx folders - the scripts folder can be deleted for this install (or you can keep them, whatever you want).
-   - The readme "BSG_Ship Pack Ver.2.0_Read Me.txt" from this mod is already included inside a Documentation folder under the name "1978BSG_Ship Pack Ver.2.0_Read Me.txt" on the main mod - you can keep "1978BSG_Ship Pack Ver.2.0_Read Me.txt" or not. There are also several readmes like "1978BSG_SFC_Basestar.txt" which are copies of those inside the data/Models/Ships from "battlestar-galactica-ship-pack-2" (TO-DO CHECK THERE MAY BE MORE READMES)
+   - The readme "BSG_Ship Pack Ver.2.0_Read Me.txt" from this mod is already included inside a Documentation folder under the name "1978BSG_Ship Pack Ver.2.0_Read Me.txt" on the main mod - you can keep "1978BSG_Ship Pack Ver.2.0_Read Me.txt" or not. There are also several readmes like "1978BSG_SFC_Basestar.txt" which are copies of those inside the data/Models/Ships from "battlestar-galactica-ship-pack-2"
 
 STEP 6. Install the "battlestar-galactica-w-colonial-viper" mod from https://www.gamefront.com/games/bridge-commander/file/battlestar-galactica-w-colonial-viper on a TEMPORARY folder (TEMPFOLDER4).
    - We only need all the contents inside the data and sfx folders - the scripts folder can be deleted for this install (or you can keep them, whatever you want).
@@ -230,8 +232,9 @@ STEP 10. After opening your STBC go to the options -> Customize -> Mutators and 
 * That Guy... Brian (ThatGuyBrian, trekker12@hotmail.com) - for Model Conversion of the original Protostar and Crossfield models (already mentioned on the Crossfield's separate readme), the Crossfield original HP (already mentioned on the Crossfield's separate readme), and for telling me to install Nifskope, that tool has proven to be very useful to me.
 ** Original Prodigy model extracted from Star Trek Prodigy: Supernova. https://drive.google.com/file/d/1BMaT2_i5KBIqZ5Am1Hr4vK-81yZQ9GsE/view
 ** Original Crossfield model (from the aforementioned https://www.gamefront.com/games/bridge-commander/file/crossfield-class) ported from Star Trek: Adversaries (https://store.steampowered.com/app/815040/Star_Trek_Adversaries/)
-* Grey da Derg#2305 aka Greystar for Model Conversion of the High-End Protostar model and adjustments.
-** High-end USS Protostar Model made by LoganRolphh on sketchfab, falls under Creative Commons - Attribution https://sketchfab.com/3d-models/star-trek-prodigy-protostar-class-93efdd42825b410a88e77ed8e4119ff8
+* Grey da Derg#2305 aka Greystar for Model Conversion of the High-End Protostar model and adjustments (a model which at the end went unused except to use as a template to adjust a copy of the lower-polygon to make stuff valid).
+** High-end USS Protostar Model was on sketchfab by LoganRolphh, falling under Creative Commons - Attribution https://sketchfab.com/3d-models/star-trek-prodigy-protostar-class-93efdd42825b410a88e77ed8e4119ff8 
+** However we suspect this model might be an STO port, so just to be safe this model was not used beyond making parts created from the lower-polygon version to fit a shape.
 * Spore Drive sprites taken from Star Trek Discovery images uploaded to Memory Alpha wiki (https://memory-alpha.fandom.com/wiki/File:JahSepp.jpg, https://memory-alpha.fandom.com/wiki/File:Mycelial_network.jpg) and then modified to suit BC and add transparency.
 * The authors of https://www.gamefront.com/games/bridge-commander/file/battlestar-galactica-fleet-pack, https://www.gamefront.com/games/bridge-commander/file/battlestar-galactica-w-colonial-viper and https://www.gamefront.com/games/bridge-commander/file/battlestar-galactica-ship-pack-2 for basically all the BSG vessels changed by this mod, whose READMES have also been included on this mod (their contact is 1701abcde@gmail.com or PM them at http://www.bc-central.com/forums if there's any issue).
 ** Excerpt from readmes (in case something happens and they are lost - also I'm including the models readmes even though this mod does not package any from the Battlestar Galactica mods):
@@ -366,31 +369,30 @@ STEP 10. After opening your STBC go to the options -> Customize -> Mutators and 
 * Alex SL Gato (aka CharaToLoki) for any new code or model implemented, fixed or modified (including all the monkey patches and the icon), plus (but not only):
 ** Importing/recording new sounds for the 2003 and 1978 BSG FTLs and BSG 1978 Weapon.
 ** BSG2003ExplosionFlash.tga and BSG2003ExplosionEFlash.tga, derived from Cumbrian Transport Lover's 2004 Battlestar Galactica's intro recording.
+** Picking the lower-poly Protostar apart and use its pieces to attempt to rebuild a new Protostar Protowarp Model and separate moving protostar pieces.
 
-Fulfilling both the SDK and LGPL licenses:
+
+######
+- Fulfilling both the SDK and LGPL licenses:
+
 THIS MOD IS NOT SUPPORTED BY ACTIVISION
 
-This mod falls under the GNU LESSER GENERAL PUBLIC LICENSE Version 3, 29 June 2007, both from any derivative or original work done to the mod. Everyone is permitted to copy and distribute verbatim copies of this mod. As per the LPGL license, everything in this mod is open for everybody to use, read and modify. Just do not forget to credit everyone involved and follow the LGPL license so derivatives of this code remain LGPL.
+This mod falls under the GNU LESSER GENERAL PUBLIC LICENSE Version 3, 29 June 2007, both from any derivative or original work done to the mod. Everyone is permitted to copy and distribute verbatim copies of this mod. As per the LPGL license, everything in this mod (except any areas indicated below otherwise) is open for everybody to use, read and modify. Just do not forget to credit everyone involved and follow the LGPL license so derivatives of this code remain LGPL.
 
-PointDefence.py (apparently under BSD license so despite the things I make have NO merchantibility and this mod MUST NOT be sold, only freely given and shared, I need to copy this line down here): 
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-
-Fulfilling USS Sovereign's conditions:
+- Fulfilling USS Sovereign's conditions:
 
 All sections based on USS Sovereign's Slipstream module fall under All Rights Reserved. Do not modify or repackage those sections of the mod without extreme permission from the authors:
 ---- USS Sovereign condition: that this mod is intended to be released for KM and not for REP, RE nor REM-related mods.
----- Alex SL Gato condition: does not mind as long as USS Sovereign and he are being credited and both Mario and himself's conditions are covered.
+---- Alex SL Gato condition: does not mind as long as USS Sovereign and Alex SL Gato are being credited and both Mario and Alex SL Gato's conditions are covered.
+- Those sections are left clear with two text banners, from "BEGINNING OF USS SOVEREIGN'S LIMITED PERMISSION AREA" to "END OF USS SOVEREIGN'S LIMITED PERMISSION AREA", to ensure people do not accidentally copy those sections.
 
-Those sections are left clear with two text banners, from "BEGINNING OF USS SOVEREIGN'S LIMITED PERMISSION AREA" to "END OF USS SOVEREIGN'S LIMITED PERMISSION AREA", to ensure people do not accidentally copy those sections.
-
-Fulfilling the BorgAttack conditions as best as possible (the following goes for BasicAttack and BorgAttack only, specifically "Borg AI Final - 10 July 2008" apparently-final version):
-
+- Fulfilling the BorgAttack conditions as best as possible (the following goes for BasicAttack and BorgAttack only, specifically "Borg AI Final - 10 July 2008" apparently-final version):
+######
 *NOTE* This AI can replace the current Borg AI found in use in KM1.0
 
 The python files included have been created by jayce and some assistance from Defiant with the exception of the BasicAttack AI.
 The original author or modifier of this file is unknown for me (jayce) to give the proper credits. Aparently, it is necessary in order to use the BorgAttack AI in Quickbattle. It was obtain undoubtedly in one of the very many downloads of Borg vessels that I (jayce) have acquired over the the years, with most new downloads replacing the older one. The BasicAttack.py AI file was not altered in any way, so if the author sees their handywork, please contact me and claim it.
 
 If you distribute this AI with another mod, make every attempt to list this AI version clearly in your readme file so that people can know that it's safe to override if they want to. If you distribute this AI with another mod, it must contain the entire AI and not just parts of it. Meaning if you distribute the Borg AI, it needs to contain both the BorgAttack.pyc and the BasicAttack.py together with the mod. I absolutely do not want to see any BorgAttack.py files from this AI distributed with any other mods. Period. The last thing I want to hear is how someone's AI is not working right because of an altered (.py) file. There is a reason why this AI is being released in (.pyc) form.
-
-
+######
 == Bugs ==
