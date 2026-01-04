@@ -2,11 +2,11 @@
 # ZZMineAI.py
 # 4th January 2026
 # Created originally from defiant's QBautostart Mines' MinesAI (that falls under the GPL license, according to Mines.py Modinfo), adapted by CharaToLoki on ZambieZan's request to allow Mines for SolidProjectiles.
-# This file, being a CompundAI, should be located at scripts.AI.Compound folder on a KMM install.
+# This file, being a CompoundAI, should be located at scripts.AI.Compound folder on a KMM install.
 ####
 
-MODINFO = { "Author": "\"defiant, Alex SL Gato, ZambieZan\" andromedavirgoa@gmail.com, mail@defiant.homedns.org, alex400zz (on Discord)",
-	    "Version": "0.41",
+MODINFO = { "Author": "\"defiant, Alex SL Gato, ZambieZan\" mail@defiant.homedns.org, andromedavirgoa@gmail.com, alex400zz (on Discord)",
+	    "Version": "0.42",
 	    "License": "GPL",
 	    "Description": "Read the small title above for more info",
 	    "needBridge": 0
