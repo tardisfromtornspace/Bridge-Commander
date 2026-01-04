@@ -1,4 +1,5 @@
 == Changelog ==
+1.0.5 - Updated SolidProjectiles to 0.35, now it has a more obvious fully collidable mode (sCollide = 3).
 1.0.4 - Updated hull gauge fix unrelated to this mod to be more robust.
 1.0.3 - Updated the FIX-AblativeArmour1dot0 Autoload script to provide full starbase repair functionality and better armour inheritance.
 1.0.2 - Fixed hull gauge issues unrelated to this mod.

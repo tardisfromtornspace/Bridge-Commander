@@ -1,6 +1,6 @@
 """
 #         SolidProjectiles
-#         15th October 2024
+#         4th January 2026
 #         Modification by Alex SL Gato, Greystar and JohnKuhns777 of ftb/Tech/SolidProjectiles.py, most likely by FoundationTechnologies team
 #         Also based slightly on Turrets script by Alex SL Gato.
 #################################################################################################################
@@ -15,7 +15,7 @@
 # - "sModel": literally the ship from scripts/Ships folder. That is, if we wanted a scripts/ships/ambassador ship to be deployed with the torpedo, then we make it "sModel" : "ambassador". Recommended to make the ship one without any warp engines or elements of the sort to avoid possible conflicts with certain warp or alternate FTL scripts (mostly with Slipstream-like FTLs, which would temporarily move the projectile vessel to the new set but without moving).
 # - "sScale": changes the model's size with respect to the original.
 # - "sShield": value of 1 means shields will be in whatever state they are normally set when a non-player ship is added (which, in most cases, means shields up), value of 0 means shields down, value of 2 will guarantee shields. Default is 1.
-# - "sCollide": represents status of collisions. 0 means it's like a ghost for weapons and collisions. -1 (or lesser) ensures it's like a ghost, removing the torpedo ship from the proximity manager fully. 1, if enabled, will attempt to keep some degree of tangibility, so weapons cannot pass through, but ships can. 2 will attempt to keep tangibility and collidability too but avoiding the parent ship colliding (in practice though, it is nearly identical to 1, without any of the potential glitches, so mode 1 is currently disabled). Any other positive or disabled value will make the ship fully collidable, which is totally NOT recommended. Please consider any configuration that restores tangibility will make the AI freak out for having incoming ships trying to collide with them. Default is 0.
+# - "sCollide": represents status of collisions. 0 means it's like a ghost for weapons and collisions. -1 (or lesser) ensures it's like a ghost, removing the torpedo ship from the proximity manager fully. 1, if enabled, will attempt to keep some degree of tangibility, so weapons cannot pass through, but ships can (currently this mode is disabled so it Sets CollisionFlags to 1). 2 will attempt to keep tangibility and collidability too but avoiding the parent ship colliding (in practice though, it is nearly identical to 1 if it was enabled, without any of the potential glitches, so mode 1 is currently disabled). 3 will attempt to do like 2 but without setting any extra collidability flags. Any other positive value will makes the projectile ship fully collidable, which is totally NOT recommended. Please consider any configuration that restores tangibility will make the AI freak out for having incoming ships trying to collide with them. Default is 0.
 # - "sHideProj": if you want the projectile whose torpedo ship is attached to visible (0) or not (1). Please notice that this will also make the solid projectile vessel invisible! Default is 0.
 # - "sTargetable": if you want the vessel attached to the torpedo to be targetable by players (1) or not (0). Default is 1.
 # - "sAI": imagine your torpedo vessel firing back. If you need to do a MIRV torpedo attack with solid projectiles and need to keep those torps solid, you will probably need to use a ship-solid_torp_with_AI-solid_torp strategy. "sAI" is a dictionary with some fields:
@@ -43,7 +43,7 @@ except:
 Known Bugs (ordered by priority):
 - 1. [FIXED] With sCollide set to 1 with original functions enabled, ships can in fact crash the game if the player tries to end the simulation if and only if one of those ships is still active. In pro of cautiousness mode 1 is disabled.
 - 2. Firing these torpedoes while at warp makes the targets unhittable with these torpedoes (as, the projectile does not collide with the targets). No other effects. Torps keep working correctly outside warp as intended.
-- 3. Even when tangible, ONLY phasers can hit, no projectiles. 
+- 3. When partially tangible, ONLY phasers can hit, no projectiles. 
 - 4. Trying to tractor a torpedo ship may cause it to teleport.
 - 5. Due to the nature of Warp mods (with Warp being a common set for all warp travels in general), if a ship enters Warp from system A to B, fires torpedoes while on the Warp set, leaves Warp and then rapidly enters Warp again, they may still see temporary previous solid projectiles.
 - 6. While killing a torpedo ship causes no real issues, killing one of them with a phaser causes the vessel explosion to teleport.
@@ -60,7 +60,7 @@ import traceback
 
 #################################################################################################################
 MODINFO = { "Author": "\"Alex SL Gato, Greystar, JohnKuhns777 and likely the ftb Team\" andromedavirgoa@gmail.com",
-	    "Version": "0.32",
+	    "Version": "0.35",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -145,10 +145,10 @@ class AuxInitiater(FoundationTech.TechDef):
 		return pTimer
 
 	def CreateShip(self, pEvent, pTorp, pTorpID, sModel, sScale, sShield, sCollide, sHideProj, sTargetable, sAI):
-		#print "Creating ship:", sModel, pTorp.GetContainingSet(), "SolidTorpedo"+str(pTorpID)
+		#print "Creating ship:", sModel, pTorp.GetContainingSet(), "SolidCharge"+str(pTorpID)
 		#print "pTorp set is ", pTorp.GetContainingSet().GetName()
 
-		pcName = "SolidTorpedo" + str(pTorpID)
+		pcName = "SolidCharge" + str(pTorpID)
 		pSet = pTorp.GetContainingSet()
 
 		pTorpShip = loadspacehelper.CreateShip(sModel, None, pcName, None) # Adding the ship to a set then changing its flags generates a glitch which causes the game to crash when a ship dies, warps out or the player reloads. Thus, we first create the ship, add the flags, and then we add it to the set.
@@ -161,7 +161,7 @@ class AuxInitiater(FoundationTech.TechDef):
 			pTorpShip.SetCollisionFlags(0)
 			#pTorpShip.SetCollisionsOn(0)
 			pTorpShip.UpdateNodeOnly()
-		else:
+		elif sCollide <= 2:
 			pTorpShip.SetCollisionFlags(1)
 
 		if not pSet.AddObjectToSet(pTorpShip, pcName):
@@ -196,10 +196,11 @@ class AuxInitiater(FoundationTech.TechDef):
 		#elif sCollide == 1: # This makes a strange combo - cannot be damaged by its own torpedo nor cannot be collided with, but now weapons can actually hit its hull.
 		#	pTorpShip.SetCollisionFlags(0)
 		#	pTorpShip.UpdateNodeOnly()
-		elif sCollide == 2: # Ships are fully collidable
+		elif sCollide == 2 or sCollide == 3: # Ships are fully collidable
 			if pShip:
 				pShip.EnableCollisionsWith(pTorpShip, 0)
 				pTorpShip.EnableCollisionsWith(pShip, 0)
+				pShip.UpdateNodeOnly()
 
 		pTorpShipA.SetHidden(0) # guarantees the vessel is visible
 		pTorpShipA.UpdateNodeOnly()
