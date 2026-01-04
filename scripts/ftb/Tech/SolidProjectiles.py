@@ -16,6 +16,7 @@
 # - "sScale": changes the model's size with respect to the original.
 # - "sShield": value of 1 means shields will be in whatever state they are normally set when a non-player ship is added (which, in most cases, means shields up), value of 0 means shields down, value of 2 will guarantee shields. Default is 1.
 # - "sCollide": represents status of collisions. 0 means it's like a ghost for weapons and collisions. -1 (or lesser) ensures it's like a ghost, removing the torpedo ship from the proximity manager fully. 1, if enabled, will attempt to keep some degree of tangibility, so weapons cannot pass through, but ships can (currently this mode is disabled so it Sets CollisionFlags to 1). 2 will attempt to keep tangibility and collidability too but avoiding the parent ship colliding (in practice though, it is nearly identical to 1 if it was enabled, without any of the potential glitches, so mode 1 is currently disabled). 3 will attempt to do like 2 but without setting any extra collidability flags. Any other positive value will makes the projectile ship fully collidable, which is totally NOT recommended. Please consider any configuration that restores tangibility will make the AI freak out for having incoming ships trying to collide with them. Default is 0.
+# - "sShipRmOrDeath": a new value which indicates to the scrpt how to handle when the ship attached to the torpedo dies before the torpedo: 0 (default) means that it will remove the vessel accordingly when tied to the torpedo; while 1 will make it so it lets the ship die first, a 'dirtier' approach (read-as, if this value is 0, the ship will not leave a main debri chunk behind, at most only explosions' visual effects will ocurr; while value 1 will allow the full aftereffects of the ship's death to happen, including explosion's AOE damage and debri that could collide with other vessels). Useful for certain suicide AIs like Mine AI explosions where the AOE of such explosions is only dealt after the ship dies from self-destruct, while still allowing other solid projectiles a cleaner approach.
 # - "sHideProj": if you want the projectile whose torpedo ship is attached to visible (0) or not (1). Please notice that this will also make the solid projectile vessel invisible! Default is 0.
 # - "sTargetable": if you want the vessel attached to the torpedo to be targetable by players (1) or not (0). Default is 1.
 # - "sAI": imagine your torpedo vessel firing back. If you need to do a MIRV torpedo attack with solid projectiles and need to keep those torps solid, you will probably need to use a ship-solid_torp_with_AI-solid_torp strategy. "sAI" is a dictionary with some fields:
@@ -32,8 +33,8 @@ try:
 	#import path.to.tailoredAI.tailoredAIfilename
 	#myAIfunction = tailoredAIfilename.CreateAI
 	# Remember, if you don't want AI, do not add the "sAI" field.
-	#oFire = ftb.Tech.SolidProjectiles.Rocket('Spatial Projectiles', {"sModel" : "ambassador", "sScale" : 1.0, "sShield": 1, "sCollide": 0, "sHideProj": 0, "sTargetable": 1, "sAI": {"AI": myAIfunction, "Side": None, "Team": None}})
-	oFire = ftb.Tech.SolidProjectiles.Rocket('Spatial Projectiles', {"sModel" : "ambassador", "sScale" : 1.0, "sShield": 1, "sCollide": 0, "sHideProj": 0, "sTargetable": 1}) 
+	#oFire = ftb.Tech.SolidProjectiles.Rocket('Spatial Projectiles', {"sModel" : "ambassador", "sScale" : 1.0, "sShield": 1, "sCollide": 0, "sShipRmOrDeath": 0, "sHideProj": 0, "sTargetable": 1, "sAI": {"AI": myAIfunction, "Side": None, "Team": None}})
+	oFire = ftb.Tech.SolidProjectiles.Rocket('Spatial Projectiles', {"sModel" : "ambassador", "sScale" : 1.0, "sShield": 1, "sCollide": 0, "sShipRmOrDeath": 0, "sHideProj": 0, "sTargetable": 1}) 
 	FoundationTech.dOnFires[__name__] = oFire
 	FoundationTech.dYields[__name__] = oFire
 except:
@@ -60,7 +61,7 @@ import traceback
 
 #################################################################################################################
 MODINFO = { "Author": "\"Alex SL Gato, Greystar, JohnKuhns777 and likely the ftb Team\" andromedavirgoa@gmail.com",
-	    "Version": "0.35",
+	    "Version": "0.36",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -369,7 +370,13 @@ class AuxInitiater(FoundationTech.TechDef):
 				if dShipsTorp.has_key(dTorpShips[pTorpID][0]):
 					del dShipsTorp[dTorpShips[pTorpID][0]]
 				if pTorp:
+
+					kLocation = pTorp.GetWorldLocation()
+
 					pTorp.DetachObject(pTorpShip)
+
+					pTorpShip.SetTranslate(kLocation)
+					pTorpShip.UpdateNodeOnly()
 
 				pSet = pTorpShip.GetContainingSet()
 				if pSet:
@@ -389,13 +396,29 @@ class AuxInitiater(FoundationTech.TechDef):
 				if pTorpShip and dShipsTorp.has_key(pTorpShipID) and dShipsTorp[pTorpShipID] != App.NULL_ID:
 					pTorpID = dShipsTorp[pTorpShipID]
 					pTorp = App.Torpedo_GetObjectByID(None, pTorpID)
-					if pTorp:
-						pTorp.SetLifetime(0.0)
+
 					del dShipsTorp[pTorpShipID]
+
+					if pTorp:
+
+						kLocation = pTorp.GetWorldLocation()
+
+						pTorp.DetachObject(pTorpShip)
+
+						pTorpShip.SetTranslate(kLocation)
+						pTorpShip.UpdateNodeOnly()
+
+						pTorp.SetLifetime(0.0)
+
 					try:
-						if dTorpShips.has_key(pTorpID) and dTorpShips[pTorpID] != None and dTorpShips[pTorpID][1] != None:
-							App.g_kTimerManager.DeleteTimer(dTorpShips[pTorpID][1].GetObjID())
-							dTorpShips[pTorpID][1] = None
+						if dTorpShips.has_key(pTorpID) and dTorpShips[pTorpID] != None:
+							auxLl = len(dTorpShips[pTorpID])
+							if auxLl > 1 and dTorpShips[pTorpID][1] != None:
+								App.g_kTimerManager.DeleteTimer(dTorpShips[pTorpID][1].GetObjID())
+								dTorpShips[pTorpID][1] = None
+
+							if auxLl > 2 and dTorpShips[pTorpID][2] != None and dTorpShips[pTorpID][2] != 0:
+								del dTorpShips[pTorpID]
 					except:
 						print "Error on SolidProjectiles' RemoveTorp2:"
 						traceback.print_exc()
@@ -417,61 +440,6 @@ class Rocket(FoundationTech.TechDef):
 		debug(__name__ + ", OnFire")
 		#print 'SolidTorpedoTorpedo.OnFire'
 		return
-		"""
-		pTorpID = pTorp.GetObjID()
-		if not pTorpID:
-			return
-		try:
-			delay = pTorp.GetLifetime() - 0.25
-			if delay < 0.0:
-				delay = 0.0
-			pTimer = auxIniti.CreateTimer(pEvent, pTorp, pTorpID, delay)
-
-			if not hasattr(self, "sScale") or self.sScale <= 0.0:
-				self.sScale = 1.0
-			if not hasattr(self, "sShield") or self.sShield <= 0.0:
-				self.sShield = 1.0
-			if not hasattr(self, "sCollide") or self.sCollide < -1:
-				self.sCollide = 0
-			if not hasattr(self, "sHideProj") or self.sHideProj <= 0.0:
-				self.sHideProj = 0
-			if self.sHideProj > 1:
-				self.sHideProj = 1
-			self.sHideProj = round(self.sHideProj)
-
-			if not hasattr(self, "sTargetable") or self.sTargetable > 1:
-				self.sTargetable = 1
-			if self.sTargetable <= 0:
-				self.sTargetable = 0
-			self.sTargetable = round(self.sTargetable)
-
-			if not hasattr(self, "sAI"):
-				self.sAI = None
-			elif self.sAI != None: # So it has an AI
-				if not self.sAI.has_key("AI"):
-					self.sAI["AI"] = None
-				if not self.sAI.has_key("Side"):
-					self.sAI["Side"] = "Tractor"
-				if not self.sAI.has_key("Team"):
-					self.sAI["Team"] = "Tractor"
-				#"sAI": {"AI": None, "Side": None, "Team": None}
-
-			pTorpShipA = auxIniti.CreateShip(pEvent, pTorp, pTorpID, self.sModel, self.sScale, self.sShield, self.sCollide, self.sHideProj, self.sTargetable, self.sAI)
-
-			global dTorpShips, dShipsTorp
-
-			pTorpShipID = pTorpShipA.GetObjID()
-			dTorpShips[pTorpID] = [pTorpShipID, pTimer]
-			dShipsTorp[pTorpShipID] = pTorpID
-
-			pTorp.AttachObject(pTorpShipA)
-			pTorp.SetHidden(self.sHideProj)
-			pTorp.UpdateNodeOnly()
-
-		except:
-			print "Creating ship failed somehow..."
-			traceback.print_exc()
-		"""
 
 	def OnFire2(self, pEvent, pTorp):
 		debug(__name__ + ", OnFire")
@@ -518,12 +486,15 @@ class Rocket(FoundationTech.TechDef):
 					self.sAI["Team"] = "Tractor"
 				#"sAI": {"AI": None, "Side": None, "Team": None}
 
+			if not hasattr(self, "sShipRmOrDeath") or self.sShipRmOrDeath != 1: #TO-DO EXPLAIN NEW PARAMETER
+				self.sShipRmOrDeath = 0
+
 			pTorpShipA = auxIniti.CreateShip(pEvent, pTorp, pTorpID, self.sModel, self.sScale, self.sShield, self.sCollide, self.sHideProj, self.sTargetable, self.sAI)
 
 			global dTorpShips, dShipsTorp
 
 			pTorpShipID = pTorpShipA.GetObjID()
-			dTorpShips[pTorpID] = [pTorpShipID, pTimer]
+			dTorpShips[pTorpID] = [pTorpShipID, pTimer, self.sShipRmOrDeath]
 			dShipsTorp[pTorpShipID] = pTorpID
 
 			pTorp.AttachObject(pTorpShipA)
@@ -537,38 +508,6 @@ class Rocket(FoundationTech.TechDef):
 	def OnYield(self, pShip, pInstance, pEvent, pTorp):
 		debug(__name__ + ", OnYield")
 		return
-		"""
-		pTorpID = pTorp.GetObjID()
-		pTorp = App.Torpedo_GetObjectByID(None, pTorpID)
-		if not pTorp:
-			return
-
-		global dTorpShips, dShipsTorp
-
-		if not (dTorpShips.has_key(pTorpID) and dTorpShips[pTorpID]):
-			return
-
-		pTorpShip = App.ShipClass_GetObjectByID(None, dTorpShips[pTorpID][0])
-		if pTorpShip:
-			if dShipsTorp.has_key(dTorpShips[pTorpID][0]):
-				del dShipsTorp[dTorpShips[pTorpID][0]]
-			pTorp.DetachObject(pTorpShip)
-
-			pSet = pTorpShip.GetContainingSet()
-			if pSet:
-				DeleteObjectFromSet(pSet, pTorpShip.GetName())
-				pTorpShip.SetDeleteMe(1)
-
-		try:
-			if dTorpShips.has_key(pTorpID) and dTorpShips[pTorpID] != None and dTorpShips[pTorpID][1] != None:
-				App.g_kTimerManager.DeleteTimer(dTorpShips[pTorpID][1].GetObjID())
-				dTorpShips[pTorpID][1] = None
-		except:
-			print "Error on SolidProjectiles' onYield"
-			traceback.print_exc()
-
-		del dTorpShips[pTorpID]
-		"""
 
 def DeleteObjectFromSet(pSet, sObjectName):
         if not MissionLib.GetShip(sObjectName, None, 1):

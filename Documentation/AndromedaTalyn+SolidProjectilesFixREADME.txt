@@ -1,4 +1,5 @@
 == Changelog ==
+1.0.6 - Updated SolidProjectiles to 0.36, adding an extra parameter that allows handling how the projectile and its attached ship model react when the ship is destroyed before the torpedo.
 1.0.5 - Updated SolidProjectiles to 0.35, now it has a more obvious fully collidable mode (sCollide = 3).
 1.0.4 - Updated hull gauge fix unrelated to this mod to be more robust.
 1.0.3 - Updated the FIX-AblativeArmour1dot0 Autoload script to provide full starbase repair functionality and better armour inheritance.
