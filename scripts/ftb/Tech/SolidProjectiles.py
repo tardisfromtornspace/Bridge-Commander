@@ -1,10 +1,10 @@
 """
 #         SolidProjectiles
-#         4th January 2026
+#         5th January 2026
 #         Modification by Alex SL Gato, Greystar and JohnKuhns777 of ftb/Tech/SolidProjectiles.py, most likely by FoundationTechnologies team
 #         Also based slightly on Turrets script by Alex SL Gato.
 #################################################################################################################
-# This tech update gives a torpedo or disruptor projectile the ability to fire a ship alongside it.
+# This tech update gives a torpedo or disruptor projectile the ability to fire a ship (a "solid") alongside it.
 # Due to how base FoundationTech does not have a proper OnFire for projectiles fired from Pulse Weapon systems, meaning the torpedo or disrupter needed to be fired from a Torpedo Launcher to work, and only would work while uncloaked; I've added a secondary broadcast listener that will also make torpedoes with a OnFire, a OnFire2 and a function called "IwannaBeWithPulsesToo" which returns 1 work as pulses and while cloaked.
 # The update to the original was made so the technology actually works in a cleaner manner, in order not to leave random flying ships floating invisible around the map and to fix an error with a casting.
 # HOW-TO-ADD:
@@ -16,13 +16,15 @@
 # - "sScale": changes the model's size with respect to the original.
 # - "sShield": value of 1 means shields will be in whatever state they are normally set when a non-player ship is added (which, in most cases, means shields up), value of 0 means shields down, value of 2 will guarantee shields. Default is 1.
 # - "sCollide": represents status of collisions. 0 means it's like a ghost for weapons and collisions. -1 (or lesser) ensures it's like a ghost, removing the torpedo ship from the proximity manager fully. 1, if enabled, will attempt to keep some degree of tangibility, so weapons cannot pass through, but ships can (currently this mode is disabled so it Sets CollisionFlags to 1). 2 will attempt to keep tangibility and collidability too but avoiding the parent ship colliding (in practice though, it is nearly identical to 1 if it was enabled, without any of the potential glitches, so mode 1 is currently disabled). 3 will attempt to do like 2 but without setting any extra collidability flags. Any other positive value will makes the projectile ship fully collidable, which is totally NOT recommended. Please consider any configuration that restores tangibility will make the AI freak out for having incoming ships trying to collide with them. Default is 0.
-# - "sShipRmOrDeath": a new value which indicates to the scrpt how to handle when the ship attached to the torpedo dies before the torpedo: 0 (default) means that it will remove the vessel accordingly when tied to the torpedo; while 1 will make it so it lets the ship die first, a 'dirtier' approach (read-as, if this value is 0, the ship will not leave a main debri chunk behind, at most only explosions' visual effects will ocurr; while value 1 will allow the full aftereffects of the ship's death to happen, including explosion's AOE damage and debri that could collide with other vessels). Useful for certain suicide AIs like Mine AI explosions where the AOE of such explosions is only dealt after the ship dies from self-destruct, while still allowing other solid projectiles a cleaner approach.
+# - "sShipRmOrDeath": a new value which indicates to the scrpt how to handle when the ship attached to the torpedo dies before the torpedo: 0 (default) means that it will remove the vessel accordingly when tied to the torpedo; while 1 and 2 will make it so it lets the ship die first, a 'dirtier' approach (read-as, if this value is 0, the ship will not leave a main debri chunk behind, at most only explosions' visual effects will ocurr; while value 1 will allow the full aftereffects of the ship's death to happen, including explosion's AOE damage and debri that could collide with other vessels). Useful for certain suicide AIs like Mine AI explosions where the AOE of such explosions is only dealt after the ship dies from self-destruct, while still allowing other solid projectiles a cleaner approach. If sShipRmOrDeath = 2 or higher and sCollide is 3 or higher, it will basically ditch the solid projectile, albeit it will do it on different ways: 2 will make it remove the torpedo entirely (transforming this script onto an uglier shuttle-launch framework, except that it allows you to also launch fully fledged vessels from stuff like MIRV torpedoes), while 3 will just not attach it but will stil provide a way to take the projectile or the solid by taking the other down.
 # - "sHideProj": if you want the projectile whose torpedo ship is attached to visible (0) or not (1). Please notice that this will also make the solid projectile vessel invisible! Default is 0.
 # - "sTargetable": if you want the vessel attached to the torpedo to be targetable by players (1) or not (0). Default is 1.
 # - "sAI": imagine your torpedo vessel firing back. If you need to do a MIRV torpedo attack with solid projectiles and need to keep those torps solid, you will probably need to use a ship-solid_torp_with_AI-solid_torp strategy. "sAI" is a dictionary with some fields:
 # -- "AI": here you must include a CreateAI function to add an AI to make the ship act. Default is CreateAI from this file. Custom AIs need to be tailored so "def CreateAI" function has two fields, pShip and whoIattack, respectively.
 # -- "Side": here you either indicate if you want your AI to be "Friendly", "Enemy", "Neutral" or "Tractor" compared with parent ship. Default is tractor group.
 # -- "Team": here you either indicate if you want your ship to be on the "Friendly", "Enemy", "Neutral" or "Tractor" groups compared with parent ship. Default is tractor group.
+# - "LeftoverDetonation": a multiplier value that only makes sense for sCollide = 3 and higher. On more ghostly collisions, when the projectile side of the solid projectile is destroyed before the attached ship (for example, mines despawning or special point defence-like scripts), the attached ship is removed, ensuring its visible detonating power is lessened. However, due to special interactions with NanoFXv2 beta, a safer route has been approached for cases with more collisions, when the attached ship is made to detonate. With this parameter, you can modify the final power output of the detonating mine on these instances by multiplying the regular power output of such mine by a value. Default is 0.001 (a thousandth-power)
+# - "sX", "sY" and "sZ": again, values which are only used for sCollide = 3 and higher; and if sShipRmOrDeath is 1 or lesser. They provide an offset between the solid and the projectile, as a workaround for full collisions also allowing collisions between the solid and the projectile. Defaults are "sX": 0, "sY": 0.5 and "sZ": 0, which are more than enough for most smaller mines.
 ###
 import traceback
 
@@ -33,8 +35,8 @@ try:
 	#import path.to.tailoredAI.tailoredAIfilename
 	#myAIfunction = tailoredAIfilename.CreateAI
 	# Remember, if you don't want AI, do not add the "sAI" field.
-	#oFire = ftb.Tech.SolidProjectiles.Rocket('Spatial Projectiles', {"sModel" : "ambassador", "sScale" : 1.0, "sShield": 1, "sCollide": 0, "sShipRmOrDeath": 0, "sHideProj": 0, "sTargetable": 1, "sAI": {"AI": myAIfunction, "Side": None, "Team": None}})
-	oFire = ftb.Tech.SolidProjectiles.Rocket('Spatial Projectiles', {"sModel" : "ambassador", "sScale" : 1.0, "sShield": 1, "sCollide": 0, "sShipRmOrDeath": 0, "sHideProj": 0, "sTargetable": 1}) 
+	#oFire = ftb.Tech.SolidProjectiles.Rocket('Spatial Projectiles', {"sModel" : "ambassador", "sScale" : 1.0, "sShield": 1, "sCollide": 0, "sShipRmOrDeath": 0, "sHideProj": 0, "sTargetable": 1, "LeftoverDetonation": 0.001, "sAI": {"AI": myAIfunction, "Side": None, "Team": None}})
+	oFire = ftb.Tech.SolidProjectiles.Rocket('Spatial Projectiles', {"sModel" : "ambassador", "sScale" : 1.0, "sShield": 1, "sCollide": 0, "sShipRmOrDeath": 0, "sHideProj": 0, "sTargetable": 1, "LeftoverDetonation": 0.001}) 
 	FoundationTech.dOnFires[__name__] = oFire
 	FoundationTech.dYields[__name__] = oFire
 except:
@@ -61,7 +63,7 @@ import traceback
 
 #################################################################################################################
 MODINFO = { "Author": "\"Alex SL Gato, Greystar, JohnKuhns777 and likely the ftb Team\" andromedavirgoa@gmail.com",
-	    "Version": "0.36",
+	    "Version": "0.4",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -158,6 +160,24 @@ class AuxInitiater(FoundationTech.TechDef):
 			return None
 
 		# If we set the collision flags before adding it to the set, no more issues happen
+
+		# Flags on App.ObjectClass are positional. A ship will not change flags if you call its .SetCollisionsOn(0)
+		# CFB_NO_COLLISIONS         = 0   = 0000000
+		# CFB_IN_PROXIMITY_MANAGER  = 1   = 0000001
+		# CFB_MEMBER_GROUP_1        = 2   = 0000010
+		# CFB_COLLIDES_WITH_GROUP_1 = 4   = 0000100
+		# CFB_MEMBER_GROUP_2        = 8   = 0001000
+		# CFB_COLLIDES_WITH_GROUP_2 = 16  = 0010000
+		# CFB_MEMBER_GROUP_3        = 32  = 0100000
+		# CFB_COLLIDES_WITH_GROUP_3 = 64  = 1000000
+		# CFB_MEMBER_MASK           = 42  = 0101010
+		# CFB_COLLISION_MASK        = 84  = 1010100
+		# CFB_DEFAULTS              = 127 = 1111111 --> Parts of ProximityManager and all groups, can collide with all groups
+
+		# A torpedo flags:          = 77  = 1001101 --> It is only part of the proximityManager and part of group 2, cannot collide with other group 2 members but can collide with groups 1 and 3
+		# A ship flags:	            = 127 = Collides with everything
+
+
 		if sCollide <= 0:
 			pTorpShip.SetCollisionFlags(0)
 			#pTorpShip.SetCollisionsOn(0)
@@ -190,6 +210,7 @@ class AuxInitiater(FoundationTech.TechDef):
 				pTorpShipA.GetShields().TurnOn()
 
 		pShip = App.ShipClass_GetObjectByID(None, pTorp.GetParentID())
+
 		if sCollide <= -1:
 			pProxManager = pSet.GetProximityManager()
 			if pProxManager:
@@ -199,8 +220,8 @@ class AuxInitiater(FoundationTech.TechDef):
 		#	pTorpShip.UpdateNodeOnly()
 		elif sCollide == 2 or sCollide == 3: # Ships are fully collidable
 			if pShip:
-				pShip.EnableCollisionsWith(pTorpShip, 0)
-				pTorpShip.EnableCollisionsWith(pShip, 0)
+				pShip.EnableCollisionsWith(pTorpShipA, 0)
+				pTorpShipA.EnableCollisionsWith(pShip, 0)
 				pShip.UpdateNodeOnly()
 
 		pTorpShipA.SetHidden(0) # guarantees the vessel is visible
@@ -303,17 +324,17 @@ class AuxInitiater(FoundationTech.TechDef):
 								elif parentAlignment == "pTractors" or parentAlignment == "pNeutrals2":
 									whoIattack = pNeutrals
 
-								pShip.SetAI(ai(pTorpShipA, whoIattack))
+								pTorpShipA.SetAI(ai(pTorpShipA, whoIattack))
 							
 							elif string.lower(team) == "enemy":
-								pShip.SetAI(ai(pTorpShipA, parentTeam))
+								pTorpShipA.SetAI(ai(pTorpShipA, parentTeam))
 
 							elif string.lower(team) == "neutral":
-								pShip.SetAI(ai(pTorpShipA, pNeutrals))
+								pTorpShipA.SetAI(ai(pTorpShipA, pNeutrals))
 							else:
-								pShip.SetAI(ai(pTorpShipA, pTractors))
+								pTorpShipA.SetAI(ai(pTorpShipA, pTractors))
 						else:
-							pShip.SetAI(ai(pTorpShipA, pTractors))
+							pTorpShipA.SetAI(ai(pTorpShipA, pTractors))
 
 			else:
 				pTractors.AddName(pTorpShipA.GetName())
@@ -356,10 +377,21 @@ class AuxInitiater(FoundationTech.TechDef):
 		debug(__name__ + ", RemoveTorpAux")
 		global dTorpShips, dShipsTorp
 		if dTorpShips.has_key(pTorpID):
+			hitLevel = 0
+			detonationFraction = 0.001
 			try:
-				if dTorpShips.has_key(pTorpID) and dTorpShips[pTorpID] != None and dTorpShips[pTorpID][1] != None:
-					App.g_kTimerManager.DeleteTimer(dTorpShips[pTorpID][1].GetObjID())
-					dTorpShips[pTorpID][1] = None
+				if dTorpShips.has_key(pTorpID) and dTorpShips[pTorpID] != None:
+					auxLl = len(dTorpShips[pTorpID])
+					if auxLl > 1:
+						if dTorpShips[pTorpID][1] != None:
+							App.g_kTimerManager.DeleteTimer(dTorpShips[pTorpID][1].GetObjID())
+							dTorpShips[pTorpID][1] = None
+						if auxLl > 3:
+							if dTorpShips[pTorpID][3] != None and dTorpShips[pTorpID][3] != hitLevel:
+								hitLevel = dTorpShips[pTorpID][3]
+							if auxLl > 4:
+								if dTorpShips[pTorpID][4] != None and dTorpShips[pTorpID][4] != detonationFraction:
+									detonationFraction = dTorpShips[pTorpID][4]
 			except:
 				print "Error on SolidProjectiles' RemoveTorpAux:"
 				traceback.print_exc()
@@ -372,16 +404,33 @@ class AuxInitiater(FoundationTech.TechDef):
 				if pTorp:
 
 					kLocation = pTorp.GetWorldLocation()
-
-					pTorp.DetachObject(pTorpShip)
-
+					try:
+						pTorp.DetachObject(pTorpShip)
+					except:
+						pass
 					pTorpShip.SetTranslate(kLocation)
 					pTorpShip.UpdateNodeOnly()
 
 				pSet = pTorpShip.GetContainingSet()
-				if pSet:
+				if pSet and (hitLevel <= 2):
 					DeleteObjectFromSet(pSet, pTorpShip.GetName())
 					pTorpShip.SetDeleteMe(1)
+				elif not (pTorpShip.IsDead() or pTorpShip.IsDying()):
+
+					# For the Explosion Size
+					try:
+						pwrSubSys = pTorpShip.GetPowerSubsystem()
+						if pwrSubSys:
+							pwrSSysPrp = pwrSubSys.GetProperty()
+							if pwrSSysPrp:
+								pwrOut = pwrSSysPrp.GetPowerOutput()
+								pwrSSysPrp.SetPowerOutput(pwrOut * detonationFraction)
+								pTorpShip.UpdateNodeOnly()
+					except:
+						print __name__ ," error while readjusting leftover detonation power:"
+						traceback.print_exc()
+
+					pTorpShip.RunDeathScript()
 
 			del dTorpShips[pTorpID]
 
@@ -389,6 +438,9 @@ class AuxInitiater(FoundationTech.TechDef):
 		debug(__name__ + ", RemoveTorp2")
 		global dTorpShips, dShipsTorp
 		pShip = App.ShipClass_Cast(pEvent.GetDestination())
+		self.RemoveTorpShipStuff(pShip)
+
+	def RemoveTorpShipStuff(self, pShip=None):
 		if pShip:
 			pTorpShipID = pShip.GetObjID()
 			if pTorpShipID:
@@ -403,7 +455,10 @@ class AuxInitiater(FoundationTech.TechDef):
 
 						kLocation = pTorp.GetWorldLocation()
 
-						pTorp.DetachObject(pTorpShip)
+						try:
+							pTorp.DetachObject(pTorpShip)
+						except:
+							pass
 
 						pTorpShip.SetTranslate(kLocation)
 						pTorpShip.UpdateNodeOnly()
@@ -486,23 +541,58 @@ class Rocket(FoundationTech.TechDef):
 					self.sAI["Team"] = "Tractor"
 				#"sAI": {"AI": None, "Side": None, "Team": None}
 
-			if not hasattr(self, "sShipRmOrDeath") or self.sShipRmOrDeath != 1:
+			if not hasattr(self, "sShipRmOrDeath") or (self.sShipRmOrDeath != 1 and self.sShipRmOrDeath != 2 and self.sShipRmOrDeath != 3):
 				self.sShipRmOrDeath = 0
+
+			if not hasattr(self, "LeftoverDetonation") or self.LeftoverDetonation <= 0:
+				self.LeftoverDetonation = 0.001
 
 			pTorpShipA = auxIniti.CreateShip(pEvent, pTorp, pTorpID, self.sModel, self.sScale, self.sShield, self.sCollide, self.sHideProj, self.sTargetable, self.sAI)
 
 			global dTorpShips, dShipsTorp
 
 			pTorpShipID = pTorpShipA.GetObjID()
-			dTorpShips[pTorpID] = [pTorpShipID, pTimer, self.sShipRmOrDeath]
+			dTorpShips[pTorpID] = [pTorpShipID, pTimer, self.sShipRmOrDeath, self.sCollide, self.LeftoverDetonation]
 			dShipsTorp[pTorpShipID] = pTorpID
 
-			pTorp.AttachObject(pTorpShipA)
-			pTorp.SetHidden(self.sHideProj)
-			pTorp.UpdateNodeOnly()
+
+			if self.sCollide >= 3: # Ships are fully collidable
+				try:
+					if self.sShipRmOrDeath > 1:
+						if self.sShipRmOrDeath == 2:
+							auxIniti.RemoveTorpShipStuff(pTorpShipA) # Yeah this would make it so it's basically an ugly shuttle framework launcher
+					else:
+						if not hasattr(self, "sX"):
+							self.sX = 0
+						if not hasattr(self, "sY"):
+							self.sY = 0.5
+						if not hasattr(self, "sZ"):
+							self.sZ = 0
+
+						kLocation = App.TGPoint3()
+						kLocation.SetXYZ(self.sX, self.sY, self.sZ)
+						pTorpShipA.SetTranslate(kLocation)
+
+						pTorp.AttachObject(pTorpShipA)
+						pTorp.SetHidden(self.sHideProj)
+
+						pTorp.UpdateNodeOnly()
+						pTorpShipA.UpdateNodeOnly()
+
+				except:
+						print __name__, " ERROR while fixing sCollide selfTorp issues:"
+						traceback.print_exc()
+
+			else:
+				pTorp.AttachObject(pTorpShipA)
+				pTorp.SetHidden(self.sHideProj)
+
+				pTorp.UpdateNodeOnly()
+
+
 
 		except:
-			print "Creating ship failed somehow..."
+			print  __name__, " Creating ship failed somehow..."
 			traceback.print_exc()
 
 	def OnYield(self, pShip, pInstance, pEvent, pTorp):

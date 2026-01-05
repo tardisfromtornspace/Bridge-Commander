@@ -6,7 +6,7 @@
 ####
 
 MODINFO = { "Author": "\"defiant, Alex SL Gato, ZambieZan\" mail@defiant.homedns.org, andromedavirgoa@gmail.com, alex400zz (on Discord)",
-		"Version": "0.44",
+		"Version": "0.45",
 		"License": "GPL",
 		"Description": "Read the small title above for more info",
 		"needBridge": 0
@@ -22,17 +22,17 @@ import MissionLib
 
 
 # Set AI
-def CreateAI(pShip, pEnemies=MissionLib.GetEnemyGroup(), initTime=None, fRangeValue=50):
+def CreateAI(pShip, pEnemies=MissionLib.GetEnemyGroup(), initTime=None, fRangeValue=50, one0OrMany1=1):
 	debug(__name__ + ", CreateAI")
-	return CreateAIWrapped(pShip, pEnemies, initTime, fRangeValue)
+	return CreateAIWrapped(pShip, pEnemies, initTime, fRangeValue, one0OrMany1)
 
-def CreateAIWrapped(pShip, pEnemies=MissionLib.GetEnemyGroup(), initTime=None, fRangeValue=50):
+def CreateAIWrapped(pShip, pEnemies=MissionLib.GetEnemyGroup(), initTime=None, fRangeValue=50, one0OrMany1=1):
 	debug(__name__ + ", CreateAIWrapped")
 	if initTime == 0:
 		import AI.Player.Stay
 		pAttack = AI.Player.Stay.CreateAI(pShip)
 	else:
-		pAttack = CreateAI2Wrapped(pShip, fRangeValue, pEnemies)
+		pAttack = CreateAI2Wrapped(pShip, fRangeValue, one0OrMany1, pEnemies)
 		if initTime == None:
 			return pAttack
 

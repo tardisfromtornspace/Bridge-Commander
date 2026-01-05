@@ -12288,3 +12288,78 @@ Call stack:
 Address   Frame
 2BA0261C  0019F75C  0000:00000000  (No symbol info found)
 
+//=====================================================
+Current Time: Mon Jan 05 18:48:38 2026
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  004BC76A 01:000BB76A C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+Registers:
+EAX:413B8460
+EBX:0088C6F4
+ECX:00000000
+EDX:33ADE548
+ESI:0019FA74
+EDI:00000000
+CS:EIP:0023:004BC76A
+SS:ESP:002B:0019F9F8  EBP:0019FA74
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+004BC76A  0019FA74  0001:000BB76A C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+//=====================================================
+Current Time: Mon Jan 05 19:15:59 2026
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  004BC76A 01:000BB76A C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+Registers:
+EAX:61FF4D78
+EBX:0088C6F4
+ECX:00000000
+EDX:61042CB4
+ESI:0019FA74
+EDI:00000000
+CS:EIP:0023:004BC76A
+SS:ESP:002B:0019F9F8  EBP:0019FA74
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+004BC76A  0019FA74  0001:000BB76A C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+//=====================================================
+Current Time: Mon Jan 05 19:34:29 2026
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Mon Jan 05 22:00:52 2026
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  004BC76A 01:000BB76A C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+Registers:
+EAX:58CABB98
+EBX:0088C6F4
+ECX:00000000
+EDX:59D6F048
+ESI:0019FA74
+EDI:00000000
+CS:EIP:0023:004BC76A
+SS:ESP:002B:0019F9F8  EBP:0019FA74
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+004BC76A  0019FA74  0001:000BB76A C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
