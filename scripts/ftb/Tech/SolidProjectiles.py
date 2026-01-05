@@ -486,7 +486,7 @@ class Rocket(FoundationTech.TechDef):
 					self.sAI["Team"] = "Tractor"
 				#"sAI": {"AI": None, "Side": None, "Team": None}
 
-			if not hasattr(self, "sShipRmOrDeath") or self.sShipRmOrDeath != 1: #TO-DO EXPLAIN NEW PARAMETER
+			if not hasattr(self, "sShipRmOrDeath") or self.sShipRmOrDeath != 1:
 				self.sShipRmOrDeath = 0
 
 			pTorpShipA = auxIniti.CreateShip(pEvent, pTorp, pTorpID, self.sModel, self.sScale, self.sShield, self.sCollide, self.sHideProj, self.sTargetable, self.sAI)

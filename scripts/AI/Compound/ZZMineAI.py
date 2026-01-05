@@ -1,16 +1,16 @@
 ####
 # ZZMineAI.py
-# 4th January 2026
+# 5th January 2026
 # Created originally from defiant's QBautostart Mines' MinesAI (that falls under the GPL license, according to Mines.py Modinfo), adapted by CharaToLoki on ZambieZan's request to allow Mines for SolidProjectiles.
 # This file, being a CompoundAI, should be located at scripts.AI.Compound folder on a KMM install.
 ####
 
 MODINFO = { "Author": "\"defiant, Alex SL Gato, ZambieZan\" mail@defiant.homedns.org, andromedavirgoa@gmail.com, alex400zz (on Discord)",
-	    "Version": "0.42",
-	    "License": "GPL",
-	    "Description": "Read the small title above for more info",
-	    "needBridge": 0
-	    }
+		"Version": "0.44",
+		"License": "GPL",
+		"Description": "Read the small title above for more info",
+		"needBridge": 0
+}
 
 # Don't forget imports
 import App
@@ -23,18 +23,19 @@ import MissionLib
 
 # Set AI
 def CreateAI(pShip, pEnemies=MissionLib.GetEnemyGroup(), initTime=None, fRangeValue=50):
-        debug(__name__ + ", CreateAI")
+	debug(__name__ + ", CreateAI")
 	return CreateAIWrapped(pShip, pEnemies, initTime, fRangeValue)
 
 def CreateAIWrapped(pShip, pEnemies=MissionLib.GetEnemyGroup(), initTime=None, fRangeValue=50):
-        debug(__name__ + ", CreateAIWrapped")
-        if initTime == 0:
-                import AI.Player.Stay
-                pAttack = AI.Player.Stay.CreateAI(pShip)
-        else:
-	        pAttack = CreateAI2Wrapped(pShip, fRangeValue, pEnemies)
+	debug(__name__ + ", CreateAIWrapped")
+	if initTime == 0:
+		import AI.Player.Stay
+		pAttack = AI.Player.Stay.CreateAI(pShip)
+	else:
+		pAttack = CreateAI2Wrapped(pShip, fRangeValue, pEnemies)
 		if initTime == None:
 			return pAttack
+
 	# Done creating CompoundAI Attack
 	#########################################
 	#########################################
@@ -62,18 +63,31 @@ def CreateAIWrapped(pShip, pEnemies=MissionLib.GetEnemyGroup(), initTime=None, f
 	return pWait
 
 def CreateAI2(pShip, *lsTargets):
-        debug(__name__ + ", CreateAI2")
+	debug(__name__ + ", CreateAI2")
 	fRangeValue = 50
-	return CreateAI2Wrapped(pShip, fRangeValue, *lsTargets)
+	one0OrMany1 = 1
+	return CreateAI2Wrapped(pShip, fRangeValue, one0OrMany1, lsTargets)
 
-def CreateAI2Wrapped(pShip, fRangeValue, *lsTargets):
+def CreateAI3(pShip, *lsTargets):
+	debug(__name__ + ", CreateAI2")
+	fRangeValue = 50
+	one0OrMany1 = 0
+	return CreateAI2Wrapped(pShip, fRangeValue, one0OrMany1, lsTargets)
+
+def CreateAI2Wrapped(pShip, fRangeValue, one0OrMany1, *lsTargets):
+	debug(__name__ + ", CreateAI2Wrapped")
 	# Make a group for all the targets...
-	pAllTargetsGroup = App.ObjectGroup_ForceToGroup(lsTargets)
-	sInitialTarget = None
-	if pAllTargetsGroup.GetNameTuple():
-		sInitialTarget = pAllTargetsGroup.GetNameTuple()[0]
 
-        debug(__name__ + ", CreateAI2")
+	sInitialTarget = None
+
+	pAllTargetsGroup = App.ObjectGroup_ForceToGroup(lsTargets)
+	if pAllTargetsGroup.GetNameTuple():
+		
+		if one0OrMany1 == 0:
+			sInitialTarget = pAllTargetsGroup.GetNameTuple()[0]
+		else:
+			sInitialTarget = pAllTargetsGroup.GetNameTuple() #lsTargets
+
 	#########################################
 	# Creating PlainAI SelfDestruct_2 at (117, 91)
 	pSelfDestruct_2 = App.PlainAI_Create(pShip, "SelfDestruct_2")
@@ -114,7 +128,7 @@ def CreateAI2Wrapped(pShip, fRangeValue, *lsTargets):
 	# Creating ConditionalAI ConditionInRange at (245, 127)
 	## Conditions:
 	#### Condition InRange
-	pInRange = App.ConditionScript_Create("Conditions.ConditionInRange", "ConditionInRange", fRangeValue, sInitialTarget, pShip.GetName())
+	pInRange = App.ConditionScript_Create("Conditions.ConditionInRange", "ConditionInRange", fRangeValue, pShip.GetName(), sInitialTarget)
 	## Evaluation function:
 	def EvalFunc(bInRange):
 		debug(__name__ + ", EvalFunc")
