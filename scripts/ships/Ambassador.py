@@ -18,7 +18,10 @@ def GetShipStats():
 	else:
 		kShipStats = {
 			"DamageRadMod" : 0.75, 
-			"DamageStrMod" : 0.75, 
+			"DamageStrMod" : 0.75,
+			#"FilenameHigh": "data/Models/Ships/FedAmb_X_P81/FedAmb_X_P81_Trio.NIF",
+			#"FilenameMed": "data/Models/Ships/FedAmb_X_P81/FedAmb_X_P81_Trio.NIF",
+			#"FilenameLow": "data/Models/Ships/FedAmb_X_P81/FedAmb_X_P81_Trio.NIF",
 			"FilenameHigh": "data/Models/Ships/DJAmbassador/DJRepublic.NIF",
 			"FilenameMed": "data/Models/Ships/DJAmbassador/DJRepublic.NIF",
 			"FilenameLow": "data/Models/Ships/DJAmbassador/DJRepublic.NIF",
