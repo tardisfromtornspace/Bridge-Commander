@@ -174,7 +174,7 @@ import FoundationTech
 from ftb.Tech.ATPFunctions import *
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-            "Version": "0.1",
+            "Version": "0.2",
             "License": "LGPL",
             "Description": "Read the small title above for more info"
             }
@@ -218,6 +218,9 @@ try:
 
 	# So we can globally customize the Global configs without needing to modify the files
 	raceShieldGlobalConfigs = {}
+
+	# Something for race names, just in case a ship's shield race does not exist.
+	gdefaultRaceName = "Default"
 	
 	# For regular shields against collisions
 	globalRegularShieldReduction = 0.5
@@ -395,7 +398,6 @@ try:
 									similarTechsNames[item] = banana.similarTechNames[item]
 
 						if hasattr(banana, "ProjectileName") and banana.ProjectileName != "": # These will not be affected at all by the hull or shield effects, period
-							# TO-DO ADD MAYBE A SPEED PARAMETER FOR THE PROJECTILES TOO?
 							projName = string.lower(banana.ProjectileName)
 							if not vulnerableProjToMEShields.has_key(projName):
 								vulnerableProjToMEShields[projName] = {}
@@ -477,7 +479,6 @@ try:
 										vulnerableBeamsToMEShields[projName]["RacesImmune"].append(item)
 
 						if fileName == "BasicMEShieldsConfiguration":
-							# TO-DO ADD MAYBE A MINIMUM GLOBAL SPEED PARAMETER FOR THE PROJECTILES TOO?
 							if hasattr(banana, "defaultPassThroughDmgMult"):
 								global defaultPassThroughDmgMult
 								defaultPassThroughDmgMult = banana.defaultPassThroughDmgMult
@@ -634,14 +635,14 @@ try:
 					# then we add the hull
 					fShieldDamage = fShieldDamage + otherHull.GetCondition()
 				else:
-					print "Dummy hull damage"
+					#print "Dummy hull damage"
 					fShieldDamage = fShieldDamage + dummyDamage * 10
 			else:
 				#print "the other resists too", pOtherShields, othersShieldDirNearest
 				if pOtherShields and othersShieldDirNearest != None: # If they have still some shield strength, add it to the damage
 					fShieldDamage = fShieldDamage + pOtherShields.GetCurShields(othersShieldDirNearest)
 				else:
-					print "Dummy shield damage"
+					#print "Dummy shield damage"
 					fShieldDamage = fShieldDamage + dummyDamage * 10
 
 			fShieldDamage = fShieldDamage * massToMassRelation
@@ -655,7 +656,7 @@ try:
 				else:
 					fShieldDamage = fShieldDamage * globalRegularShieldReduction
 
-		if not myShieldBroken and (pinstanceMeShieldRace >= 1):
+		if not myShieldBroken and (pinstanceMeShieldRace != None and pinstanceMeShieldRace >= 1):
 				fShieldDamage = fShieldDamage * 0.8
 				negateRegeneration = -1
 				multFactor = multFactor * pinstanceMeShieldRace
@@ -1081,6 +1082,27 @@ try:
 		myShipRadius = pShip.GetRadius()
 		otherShipRadius = pOtherShip.GetRadius()
 
+		myShipSpd = pShip.GetVelocityTG()
+		otherShipSpd = pOtherShip.GetVelocityTG()
+
+		myShipSpd.Subtract(otherShipSpd)
+		spdDif = myShipSpd.Length()
+
+		minSt = 5.0
+		if IhaveMEShields and pInstanceMeDict and pInstanceMeDict["ME Shields"].has_key("MinimumSpeedTrigger"):
+			minSt = pInstanceMeDict["ME Shields"]["MinimumSpeedTrigger"]
+
+		othermSt = -1.0
+		if OtherHasMEShields and pInstanceOtherDict and pInstanceOtherDict["ME Shields"].has_key("MinimumSpeedTrigger"):
+			othermSt = pInstanceOtherDict["ME Shields"]["MinimumSpeedTrigger"]
+
+		meBypass = 0
+		otherBypass = 0
+		if spdDif <= minSt:
+			meBypass = 1
+		if spdDif <= othermSt:
+			otherBypass = 1
+
 		numCollisionPoints = pEvent.GetNumPoints()
 		for i in range (pEvent.GetNumPoints()):
 			kPointW = pEvent.GetPoint(i) # For use with the shields
@@ -1112,6 +1134,20 @@ try:
 			myShieldBroken, myShieldDirNearest = shieldInGoodCondition(pShip, kPointpShipPer, shieldPiercedThreshold, 0, None)
 			othersShieldBroken, othersShieldDirNearest = shieldInGoodCondition(pOtherShip, kPointpOtherShipPer, shieldPiercedThreshold, 0, None)
 
+			changeMebyp = 0
+			changeOtherbyp = 0
+			if myShieldBroken < 1 and (OtherHasMEShields or (meBypass > 0 and othersShieldBroken < 1)): # Workaround of sorts for some solid projectiles
+				changeMebyp = 1
+
+			if othersShieldBroken < 1 and (IhaveMEShields or (otherBypass > 0 and myShieldBroken < 1)):
+				changeOtherbyp = 1
+
+			if changeMebyp > 0:
+				myShieldBroken = meBypass
+
+			if changeOtherbyp > 0:
+				othersShieldBroken = otherBypass				
+
 			myShieldBroken, fTorpDamageMe, fShieldDamageMe, multFactorMe, negateRegenerationMe = damageCalc(fTorpDamage, fShieldDamage, myShieldBroken, othersShieldBroken, myHull, otherHull, myShieldDirNearest, othersShieldDirNearest, pOtherShields, pMeShields, IhaveMEShields, OtherHasMEShields, pinstanceMeShieldRace, pinstanceOtherShieldRace, dummyDamage, massToMassRelation, otherHasSimilarShields, multiplierMyShieldFactor)
 
 			#othersShieldBroken2 = 0
@@ -1121,7 +1157,7 @@ try:
 			othersShieldBroken2, othersShieldDirNearest = shieldRecalculationAndBroken(pOtherShip, kPointpOtherShipPer, -fShieldDamageYou, shieldPiercedThreshold, 0, negateRegenerationYou, othersShieldDirNearest, -fShieldDamageYou, multFactorYou)
 			myShieldBroken2, myShieldDirNearest = shieldRecalculationAndBroken(pShip, kPointpShipPer, -fShieldDamageMe, shieldPiercedThreshold, 0, negateRegenerationMe, myShieldDirNearest, fShieldDamageMe, multFactorMe)
 
-			mod = "Tactical.Projectiles.ExtraCollisionDamageDummy" # TO-DO ADD THIS TO YOUR MOD
+			mod = "Tactical.Projectiles.ExtraCollisionDamageDummy" # ADD THIS TO YOUR MOD
 			if (myShieldBroken or myShieldBroken2) and not (pShip.IsDead() or pShip.IsDying()):
 				performFakeTorpEvents(pShip, pInstanceMe, pOtherShip, mod, fTorpDamageMe, myHull, myShieldBroken, myShieldBroken2, otherShipRadius, pShipNode, kPointW, kPoint, kPointpShipPer, kPointpShipPerNi, pShipPositionV)
 
@@ -1137,7 +1173,7 @@ try:
 				fMax = pShields.GetMaxShields(shieldDir)
 				maxShields = maxShields + fMax
 		if activate == 1 and raceShieldTech > 0 and maxShields > 0.0:
-			print "pShip to add collision shields: ", pShip.GetName()
+			#print "pShip to add collision shields: ", pShip.GetName()
 			instanceDict["ME Shields Active"] = 1
 			#if not pShip.IsCollisionDamageDisabled():
 			pShip.DisableCollisionDamage(1)
@@ -1145,7 +1181,7 @@ try:
 		else:
 			instanceDict["ME Shields Active"] = 0
 			if raceShieldTech > 0:
-				print "pShip to remove collision shields: "
+				#print "pShip to remove collision shields: "
 				#if pShip.IsCollisionDamageDisabled():
 				pShip.DisableCollisionDamage(0)
 				pShip.SetCollisionsOn(0)
@@ -1534,24 +1570,51 @@ try:
 				if instanceDict["ME Shields"].has_key("RaceShieldTech"):
 					race = instanceDict["ME Shields"]["RaceShieldTech"]
 
-				global raceShieldGlobalConfigs
+				global raceShieldGlobalConfigs, gdefaultRaceName
 				if race == None  or not race in raceShieldGlobalConfigs.keys():
-					race = "Default"
+					race = gdefaultRaceName
 
-				if (not instanceDict["ME Shields"].has_key("CollisionBlock")) and raceShieldGlobalConfigs[race].has_key("CollisionBlock"):
-					instanceDict["ME Shields"]["CollisionBlock"] = raceShieldGlobalConfigs[race]["CollisionBlock"]
-				if (not instanceDict["ME Shields"].has_key("BypassMultiplier")) and raceShieldGlobalConfigs[race].has_key("BypassMultiplier"):
-					instanceDict["ME Shields"]["BypassMultiplier"] = raceShieldGlobalConfigs[race]["BypassMultiplier"]
-				if (not instanceDict["ME Shields"].has_key("FacetFactor")) and raceShieldGlobalConfigs[race].has_key("FacetFactor"):
-					instanceDict["ME Shields"]["FacetFactor"] = raceShieldGlobalConfigs[race]["FacetFactor"]
-				if (not instanceDict["ME Shields"].has_key("FacetRegeneration")) and raceShieldGlobalConfigs[race].has_key("FacetRegeneration"):
-					instanceDict["ME Shields"]["FacetRegeneration"] = raceShieldGlobalConfigs[race]["FacetRegeneration"]
-				if (not instanceDict["ME Shields"].has_key("MinimumSpeedTrigger")) and raceShieldGlobalConfigs[race].has_key("MinimumSpeedTrigger"):
-					instanceDict["ME Shields"]["MinimumSpeedTrigger"] = raceShieldGlobalConfigs[race]["MinimumSpeedTrigger"]
-				if (not instanceDict["ME Shields"].has_key("MaximumSpeedTrigger")) and raceShieldGlobalConfigs[race].has_key("MaximumSpeedTrigger"):
-					instanceDict["ME Shields"]["MaximumSpeedTrigger"] = raceShieldGlobalConfigs[race]["MaximumSpeedTrigger"]
-				if (not instanceDict["ME Shields"].has_key("AtmosphericNerf")) and raceShieldGlobalConfigs[race].has_key("AtmosphericNerf"):
-					instanceDict["ME Shields"]["AtmosphericNerf"] = raceShieldGlobalConfigs[race]["AtmosphericNerf"]
+				if (not instanceDict["ME Shields"].has_key("CollisionBlock")):
+					if raceShieldGlobalConfigs[race].has_key("CollisionBlock"):
+						instanceDict["ME Shields"]["CollisionBlock"] = raceShieldGlobalConfigs[race]["CollisionBlock"]
+					elif raceShieldGlobalConfigs[gdefaultRaceName].has_key("CollisionBlock"):
+						instanceDict["ME Shields"]["CollisionBlock"] = raceShieldGlobalConfigs[gdefaultRaceName]["CollisionBlock"]
+						
+				if (not instanceDict["ME Shields"].has_key("BypassMultiplier")):
+					if raceShieldGlobalConfigs[race].has_key("BypassMultiplier"):
+						instanceDict["ME Shields"]["BypassMultiplier"] = raceShieldGlobalConfigs[race]["BypassMultiplier"]
+					elif raceShieldGlobalConfigs[gdefaultRaceName].has_key("BypassMultiplier"):
+						instanceDict["ME Shields"]["BypassMultiplier"] = raceShieldGlobalConfigs[gdefaultRaceName]["BypassMultiplier"]
+
+				if (not instanceDict["ME Shields"].has_key("FacetFactor")):
+					if raceShieldGlobalConfigs[race].has_key("FacetFactor"):
+						instanceDict["ME Shields"]["FacetFactor"] = raceShieldGlobalConfigs[race]["FacetFactor"]
+					elif raceShieldGlobalConfigs[gdefaultRaceName].has_key("FacetFactor"):
+						instanceDict["ME Shields"]["FacetFactor"] = raceShieldGlobalConfigs[gdefaultRaceName]["FacetFactor"]
+
+				if (not instanceDict["ME Shields"].has_key("FacetRegeneration")):
+					if raceShieldGlobalConfigs[race].has_key("FacetRegeneration"):
+						instanceDict["ME Shields"]["FacetRegeneration"] = raceShieldGlobalConfigs[race]["FacetRegeneration"]
+					elif raceShieldGlobalConfigs[gdefaultRaceName].has_key("FacetRegeneration"):
+						instanceDict["ME Shields"]["FacetRegeneration"] = raceShieldGlobalConfigs[gdefaultRaceName]["FacetRegeneration"]
+					
+				if (not instanceDict["ME Shields"].has_key("MinimumSpeedTrigger")):
+					if raceShieldGlobalConfigs[race].has_key("MinimumSpeedTrigger"):
+						instanceDict["ME Shields"]["MinimumSpeedTrigger"] = raceShieldGlobalConfigs[race]["MinimumSpeedTrigger"]
+					elif raceShieldGlobalConfigs[gdefaultRaceName].has_key("MinimumSpeedTrigger"):
+						instanceDict["ME Shields"]["MinimumSpeedTrigger"] = raceShieldGlobalConfigs[gdefaultRaceName]["MinimumSpeedTrigger"]
+
+				if (not instanceDict["ME Shields"].has_key("MaximumSpeedTrigger")):
+					if raceShieldGlobalConfigs[race].has_key("MaximumSpeedTrigger"):
+						instanceDict["ME Shields"]["MaximumSpeedTrigger"] = raceShieldGlobalConfigs[race]["MaximumSpeedTrigger"]
+					elif raceShieldGlobalConfigs[gdefaultRaceName].has_key("MaximumSpeedTrigger"):
+						instanceDict["ME Shields"]["MaximumSpeedTrigger"] = raceShieldGlobalConfigs[gdefaultRaceName]["MaximumSpeedTrigger"]
+
+				if (not instanceDict["ME Shields"].has_key("AtmosphericNerf")):
+					if raceShieldGlobalConfigs[race].has_key("AtmosphericNerf"):
+						instanceDict["ME Shields"]["AtmosphericNerf"] = raceShieldGlobalConfigs[race]["AtmosphericNerf"]
+					elif raceShieldGlobalConfigs[gdefaultRaceName].has_key("AtmosphericNerf"):
+						instanceDict["ME Shields"]["AtmosphericNerf"] = raceShieldGlobalConfigs[gdefaultRaceName]["AtmosphericNerf"]
 
 				if instanceDict["ME Shields"]["AtmosphericNerf"] == 1:
 				
@@ -1571,14 +1634,18 @@ try:
 							fMax = pShields.GetMaxShields(shieldDir)
 							maxShields = maxShields + fMax
 						if maxShields > 0.0:
-							#print "adding ME forcefield shield tech listeners to ship: ", pShip.GetName()
+							#print "Adding ME forcefield shield tech listeners to ship: ", pShip.GetName()
 							pShields.TurnOn()
 							instanceDict["ME Shields Active"] = 1
 							pShip.RemoveHandlerForInstance(App.ET_SUBSYSTEM_STATE_CHANGED, __name__ + ".SubsystemStateChanged")
 							pShip.AddPythonFuncHandlerForInstance(App.ET_SUBSYSTEM_STATE_CHANGED, __name__ + ".SubsystemStateChanged")
-							if instanceDict["ME Shields"]["CollisionBlock"]:
-								pShip.RemoveHandlerForInstance(App.ET_OBJECT_COLLISION, __name__ + ".CollisionHappened")
-								pShip.AddPythonFuncHandlerForInstance(App.ET_OBJECT_COLLISION, __name__ + ".CollisionHappened")
+
+							shieldBehaviour = 0
+							if instanceDict["ME Shields"].has_key("CollisionBlock") and instanceDict["ME Shields"]["CollisionBlock"] != 0:
+								shieldBehaviour = instanceDict["ME Shields"]["CollisionBlock"]
+								if shieldBehaviour > 0:
+									pShip.RemoveHandlerForInstance(App.ET_OBJECT_COLLISION, __name__ + ".CollisionHappened")
+									pShip.AddPythonFuncHandlerForInstance(App.ET_OBJECT_COLLISION, __name__ + ".CollisionHappened")
 
 							#pShip.RemoveHandlerForInstance(App.ET_SHIELD_COLLISION, __name__ + ".ShieldCollisionHappened")
 							#pShip.AddPythonFuncHandlerForInstance(App.ET_SHIELD_COLLISION, __name__ + ".ShieldCollisionHappened")
@@ -1589,7 +1656,8 @@ try:
 							#pShip.RemoveHandlerForInstance(App.ET_PLANET_COLLISION, __name__ + ".PCollisionHappened")
 							#pShip.AddPythonFuncHandlerForInstance(App.ET_PLANET_COLLISION, __name__ + ".PCollisionHappened")
 
-							ActivateMEShieldCollisions(pShip, pInstance, instanceDict, 1, instanceDict["ME Shields"]["CollisionBlock"], pShields)
+
+							ActivateMEShieldCollisions(pShip, pInstance, instanceDict, 1, shieldBehaviour, pShields)
 
 		def DetachShip(self, pShipID, pInstance):
 			if not pShipID and pInstance:
@@ -1741,7 +1809,7 @@ try:
 						
 						weaponName = importedMod.GetName()
 						weaponname = string.lower(weaponName)
-					
+
 						for key in vulnerableProjToMEShields.keys():
 							racesImmune = vulnerableProjToMEShields[key]["RacesImmune"]
 							if raceShieldTech in racesImmune or (("Cyclonic" in racesImmune or "Reaper" in racesImmune) and maxSt < 0.0):
@@ -1810,7 +1878,7 @@ try:
 							print "Tactical.Projectiles.ExtraPhasedDamageDummyME is missing from the install, or similar, we need that to deal damage!"
 							traceback.print_exc()
 
-						targetplacement = pShip.GetWorldLocation() #TO-DO targetplacement = PredictTargetLocation(pShip, torpImportedSpeed) # NEW TEST CODE
+						targetplacement = pShip.GetWorldLocation()
 						targetplacement.Add(pHitPointO)
 
 						pHitPointObj = targetplacement # Now THAT works
@@ -1840,6 +1908,7 @@ try:
 
 					weaponName = pWeaponFired.GetName()
 					weaponname = string.lower(weaponName)
+
 					for key in vulnerableBeamsToMEShields.keys():
 							racesImmune = vulnerableBeamsToMEShields[key]["RacesImmune"]
 							if raceShieldTech in racesImmune:
@@ -1995,7 +2064,7 @@ try:
 					myDamage = fDamage * forcedBleedthroughMultiplier * bypassMultiplier
 
 					global SlowDownRatio
-					mod = "Tactical.Projectiles.ExtraPhasedDamageDummyME" # TO-DO ADD THIS PROJECTILE
+					mod = "Tactical.Projectiles.ExtraPhasedDamageDummyME"
 					launchSpeed = __import__(mod).GetLaunchSpeed()
 					considerspeeddebuff = launchSpeed/(1.0 * pShip.GetRadius())
 
@@ -2006,12 +2075,12 @@ try:
 						if pTorp.GetModuleName() == mod:
 							theSame = 1
 					else:
-						myRadius = fRadius * 1.0 # TO-DO ADJUST Because damage radius for events is super-tiny unless they collided
+						myRadius = fRadius * 1.0
 						
 					shipNeeded = None
 					if theHitPoint == None:
 						theHitPoint = NiPoint3ToTGPoint3(pEvent.GetWorldHitPoint())
-					#TO-DO THIS WAS UNCOMMENTED
+					#THIS WAS UNCOMMENTED
 					#if considerspeeddebuff <= SlowDownRatio:
 					#	shipNeeded = pShip
 

@@ -26,7 +26,7 @@ globalRegularShieldReduction = 0.5 # When it's a ME shield vs normal shield duri
 
 RaceShieldTechGlobalConfig = {
 	"Name": "Default",
-	"CollisionBlock" : 0,
+	"CollisionBlock" : 1,
 	"BypassMultiplier": 1,
 	"FacetFactor": 0,
 	"FacetRegeneration": 0,

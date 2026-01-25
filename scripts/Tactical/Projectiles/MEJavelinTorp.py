@@ -54,7 +54,7 @@ def GetName():
 	return("Mass Effect Javelin")
 
 def GetDamage():
-	return 450.0
+	return 232.0
 
 def GetGuidanceLifetime():
 	return 6.0

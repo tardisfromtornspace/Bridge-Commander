@@ -42,7 +42,7 @@ Foundation.ShipDef.TurianFrigate.dTechs = {
 	},
 	"AutoTargeting": { "Pulse": [3, 0] },
 	'Fed Ablative Armor': { "Plates": ["Aft Armor", "Forward Armor", "Left Armor", "Right Armor",]},
-	"ME Shields": { "CollisionBlock": 0, "BypassMultiplier": 1, "FacetFactor": 0, "FacetRegeneration": 1, "MinimumSpeedTrigger": 5, "MaximumSpeedTrigger": 260, "ShieldScaleMultiplier": 0.2, "AtmosphericNerf": -1, },
+	"ME Shields": { "CollisionBlock": 1, "BypassMultiplier": 1, "FacetFactor": 0, "FacetRegeneration": 1, "MinimumSpeedTrigger": 5, "MaximumSpeedTrigger": 260, "ShieldScaleMultiplier": 0.2, "AtmosphericNerf": -1, },
 	'Simulated Point Defence' : { "Distance": 70.0, "InnerDistance": 7.0, "Effectiveness": 0.8, "LimitTurn": 0.3, "LimitSpeed": 55, "LimitDamage": "-400", "Period": 0.2, "MaxNumberTorps": 1, },
 	"Systems Changed With GC On": {"Message": {"Content": "This vessel has warp-drives disabled on GC. Please use its Mass Effect Drive instead.", "Time": 4.0}, "Hardpoints": {"Mass Effect Engines": 1.15,},},
 }

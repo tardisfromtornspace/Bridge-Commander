@@ -1,4 +1,8 @@
 == Changelog ==
+0.81 - Updates:
+  * Updated MEShields to 0.2, to now take into account collisions in a more realistic way.
+  * Added extra examples for MEShields to consider such as phase cannons, and "disrupers".
+  * Adjusted ME Normandys' and Turian Frigate's hardpoints accordingly.
 0.8 - Official Mod release
   * Thanks to the Orange Guy and Co. (O.G.A.C.) at the White House, everybody has problems and we had a ton of delays to do stuff (most of the core scripts were already complete by January 2025!). It is also because of the O.G.A.C. and other creepy stuff (amongst them, being on the brink of WWIII) that I decided to try to release this to the public before everything goes kaboom, trying to finish most WIPs as best as I could, rushed as some of the art-aspects of this update are, and cutting some plans (like adding the Reapers from Mass Effect or the USS Prodigy). On the bright side, this may be a good Christmas present for you all!
   * Replaced non-suitable high-quality model of the USS Protostar with a complete new one made with Milkshape by modifying the suitable lower-quality Protostar model to have the Protowarp mode and all the missing pieces, now complete (excluding maybe a few finishing touches on the texture mapping). So now you can fully play as the USS Protostar!

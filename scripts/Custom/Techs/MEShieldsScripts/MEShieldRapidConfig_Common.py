@@ -15,7 +15,7 @@ import traceback
 
 RaceShieldTechGlobalConfig = {
 	"Name": "Common",
-	"CollisionBlock" : 0,
+	"CollisionBlock" : 1,
 	"BypassMultiplier": 1,
 	"FacetFactor": 0,
 	"FacetRegeneration": 0,

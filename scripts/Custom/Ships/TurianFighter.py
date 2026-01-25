@@ -41,7 +41,7 @@ Foundation.ShipDef.TurianFighter.dTechs = {
 	#		"Mass Effect FTL": {	"Nacelles": [], "Core": ["Eezo Core"], "Enter FTL Density": 25, "Mid FTL Density": 10, "Exit FTL Density": 25, "Spark Size": 0.10,},
 	#	},
 	#},
-	"ME Shields": { "CollisionBlock": 0, "BypassMultiplier": 1, "FacetFactor": 0, "FacetRegeneration": 1, "MinimumSpeedTrigger": 5, "MaximumSpeedTrigger": 260, "ShieldScaleMultiplier": 0.2, "AtmosphericNerf": -1, },
+	"ME Shields": { "CollisionBlock": 1, "BypassMultiplier": 1, "FacetFactor": 0, "FacetRegeneration": 1, "MinimumSpeedTrigger": 5, "MaximumSpeedTrigger": 260, "ShieldScaleMultiplier": 0.2, "AtmosphericNerf": -1, },
 	'Simulated Point Defence' : { "Distance": 75.0, "InnerDistance": 2.0, "Effectiveness": 0.198, "LimitTurn": 0.17, "LimitSpeed": 55, "LimitDamage": "-400", "Period": 0.8, "MaxNumberTorps": 1, },
 	#"Systems Changed With GC On": {"Message": {"Content": "This vessel has warp-drives disabled on GC. Please use its Mass Effect Drive instead.", "Time": 4.0}, "Hardpoints": {"Mass Effect Engines": 1.15,},},
 }
