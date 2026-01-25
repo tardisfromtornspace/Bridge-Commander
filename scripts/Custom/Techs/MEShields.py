@@ -2080,15 +2080,16 @@ try:
 					shipNeeded = None
 					if theHitPoint == None:
 						theHitPoint = NiPoint3ToTGPoint3(pEvent.GetWorldHitPoint())
-					#THIS WAS UNCOMMENTED
+
 					#if considerspeeddebuff <= SlowDownRatio:
 					#	shipNeeded = pShip
 
 					if theSame == 0 and (pTorp or myDamage > 0.1): # If a phaser or torp deals less than certain damage, don't bother - this is both a strategy to produce less torps, and a way to avoid "floaty ghost torps"
-						#pTempTorp = FireTorpFromPointWithVectorAndNetType(theHitPoint, pVec, mod, pShip.GetObjID(), attackerID, launchSpeed, torpsNetTypeThatCanPhase, myDamage, myRadius, 1, shipNeeded)
 						pTempTorp = FireTorpFromPointWithVectorAndNetType(theHitPoint, pVec, mod, pShip.GetObjID(), attackerID, launchSpeed, torpsNetTypeThatCanPhase, myDamage, myRadius, isHidden, shipNeeded, theOffset)
-						pTempTorp.SetLifetime(15.0)
-						pTempTorp.UpdateNodeOnly()
+						if pTempTorp:
+							pTempTorp.SetLifetime(15.0)
+							pTempTorp.UpdateNodeOnly()
+
 						if pShip.GetRadius() < 0.15:
 							# Perform damage manually as well
 							myHull = pShip.GetHull()
@@ -2138,7 +2139,8 @@ try:
 								AdjustListedSubsystems(pShip, affectedSys, nonTargetSys, -myDamage, len(affectedSys) + 1, 1)
 
 								# Fourth part, finally using the pEvent for something! This is also so more armours can work with these collisions, and not only one or two.
-								pInstance.DefendVSTorp(pShip, pEvent1, pTempTorp)
+								if pTempTorp:
+									pInstance.DefendVSTorp(pShip, pEvent1, pTempTorp)
 
 			if oYield and hasattr(oYield, "IsPhasedPolaronYield") and oYield.IsPhasedPolaronYield() != 0 and pInstance and pInstance.__dict__.has_key('ME Shields'): # POINT 6.
 				return 1
