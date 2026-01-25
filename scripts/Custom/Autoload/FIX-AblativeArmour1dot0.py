@@ -1,7 +1,7 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
-# 6th March 2025
-# VERSION 0.4
+# 15th January 2026
+# VERSION 0.41
 # By Alex SL Gato
 # AblativeArmour.py by Foundation Technologies team and Apollo's Advanced Technologies -> v1.1 fix
 #
@@ -197,11 +197,11 @@ if necessaryToUpdate and AblativeArmour != None:
 		self.lNameOld = self.lName + " Old"
 		if not pInstanceDict.has_key(self.lName):
 			if str(pInstanceDict[str(self.name)])[0] == "[":
-				pInstanceDict[self.lName] = [0.0, "Ablative Armour"]
+				pInstanceDict[self.lName] = [0.0, str(self.GetSystemName())]
 				pInstanceDict[self.lName][0] = pInstance.__dict__[str(self.name)][0]
 				pInstanceDict[self.lName][1] = pInstance.__dict__[str(self.name)][1]
 
-				pInstanceDict[self.lNameOld] = [0.0, "Ablative Armour"]
+				pInstanceDict[self.lNameOld] = [0.0, str(self.GetSystemName())]
 				pInstanceDict[self.lNameOld][0] = pInstance.__dict__[str(self.name)][0]
 				pInstanceDict[self.lNameOld][1] = pInstance.__dict__[str(self.name)][1]
 			else:

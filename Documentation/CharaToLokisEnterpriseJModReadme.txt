@@ -1,4 +1,6 @@
 == Changelog ==
+1.2.18 - Fixing:
+   * Updated FIX-AblativeArmour1dot0 Autoload script to 0.41 to provide better armour inheritance.
 1.2.17 - Fixing:
    * Updated FIX-DS9FXbelow1dot2 to be a bit more agnostic towards the actual value of SpeciesToTorp.PHASEDPLASMA
 1.2.16 - Fixing:

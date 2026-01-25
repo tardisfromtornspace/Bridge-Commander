@@ -1,4 +1,7 @@
 == Changelog ==
+1.2.6 -
+   Fixes:
+   * Updated FIX-AblativeArmour1dot0 Autoload script to 0.41 to provide better armour inheritance.
 1.2.5 -
    Fixes:
    * Updated SpeciesToTorp and SpeciesToShip to provide a better combined KM-SG-mod coverage.

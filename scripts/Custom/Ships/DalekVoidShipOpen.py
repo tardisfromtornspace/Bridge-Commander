@@ -5,6 +5,7 @@
 
 import App
 import Foundation
+import traceback
 from Custom.Autoload.RaceDalek import *
 
 
@@ -33,7 +34,7 @@ Foundation.ShipDef.DalekVoidShipOpen.dTechs = {
 	"Vree Shields": 100,
 	"Inversion Beam": [1, 0, 1, 1500],
 	"Power Drain Beam": [1, 0, 1, 1500],
-'SubModel': {
+	"SubModel": {
         "Setup":        {
                 "Body":                 "DalekVoidShipCupOpen",
                 "NormalModel":          shipFile,

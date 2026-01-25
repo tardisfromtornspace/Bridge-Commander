@@ -1,0 +1,1816 @@
+##### Bridge Commander Exit Log: 25 Jan 2026 18:42:24#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Custom.Autoload.FIX-EngineerCharacterHandlers : Patched your  Bridge.EngineerCharacterHandlers  to cover 0-shield-strength ships
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Patched TacticalControlInterfaces.CycleCameraMode to add mode viewing modes
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+
+
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+
+
+AblativeDef.OnDefense Player 405000 0.0
+AblativeDef.OnDefense Player 405000.0 6846.6796875
+
+
+0.15
+0.15
+
+
+
+
+0.15
+0.15
+AblativeDef.OnDefense Player 398153.3125 4800.0
+0.15
+0.15
+AblativeDef.OnDefense Player 393353.3125 1576.60473633
+AblativeDef.OnDefense Player 391776.71875 2429.86279297
+AblativeDef.OnDefense Player 389346.84375 732.223571777
+AblativeDef.OnDefense USS Gateway-1 485000 0.0
+AblativeDef.OnDefense Player 388614.625 1290.01281738
+AblativeDef.OnDefense Player 387324.625 2781.61621094
+AblativeDef.OnDefense Player 384543.0 1086.82104492
+AblativeDef.OnDefense Player 383456.1875 1343.20678711
+AblativeDef.OnDefense Player 382112.96875 1343.20678711
+AblativeDef.OnDefense Player 380769.75 1354.93469238
+0.15
+0.15
+AblativeDef.OnDefense Player 379414.8125 1716.73010254
+AblativeDef.OnDefense Player 377698.09375 1716.73010254
+AblativeDef.OnDefense Player 375981.375 1287.54760742
+AblativeDef.OnDefense USS Gateway-1 485000.0 0.0
+AblativeDef.OnDefense Player 374693.8125 2782.4609375
+AblativeDef.OnDefense Player 371911.34375 950.629638672
+AblativeDef.OnDefense Player 370960.71875 1280.49731445
+AblativeDef.OnDefense Player 369680.21875 2906.125
+AblativeDef.OnDefense Player 366774.09375 695.674743652
+AblativeDef.OnDefense Player 366078.40625 1345.15356445
+AblativeDef.OnDefense Player 364733.25 1269.6217041
+AblativeDef.OnDefense Player 363463.625 2748.23803711
+AblativeDef.OnDefense Player 360715.375 942.555664063
+AblativeDef.OnDefense Player 359772.8125 1315.97485352
+AblativeDef.OnDefense Player 358456.84375 1315.97485352
+AblativeDef.OnDefense Player 357140.875 3152.63354492
+0.15
+AblativeDef.OnDefense Player 353988.25 1934.46923828
+0.15
+AblativeDef.OnDefense Player 352053.78125 1934.46923828
+AblativeDef.OnDefense Player 350119.3125 1137.61047363
+AblativeDef.OnDefense Player 348981.6875 1450.85192871
+AblativeDef.OnDefense Player 347530.84375 2747.00610352
+AblativeDef.OnDefense Player 344783.84375 1276.43078613
+AblativeDef.OnDefense Player 343507.40625 1011.49456787
+AblativeDef.OnDefense Player 342495.90625 1552.5670166
+AblativeDef.OnDefense Player 340943.34375 2820.31225586
+AblativeDef.OnDefense Player 338123.03125 858.592163086
+AblativeDef.OnDefense Player 337264.4375 1302.91833496
+AblativeDef.OnDefense Player 335961.53125 1568.24938965
+AblativeDef.OnDefense Player 334393.28125 3453.51806641
+AblativeDef.OnDefense Player 330939.75 1105.38745117
+AblativeDef.OnDefense Player 329834.375 1327.80761719
+0.15
+AblativeDef.OnDefense Player 328506.5625 1770.41015625
+0.15
+AblativeDef.OnDefense Player 326736.15625 1770.41015625
+AblativeDef.OnDefense Player 324965.75 4729.15185547
+AblativeDef.OnDefense Player 320236.59375 1667.50427246
+AblativeDef.OnDefense Player 318569.09375 2184.75732422
+Ship not inside Starbase - bye
+
+
+AblativeDef.OnDefense Player 316384.34375 0.0
+AblativeDef.OnDefense Player 316384.34375 -24.6852550507
+AblativeDef.OnDefense Player 316409.03125 -22.5489959717
+AblativeDef.OnDefense Player 316431.59375 0.0
+AblativeDef.OnDefense Player 316431.59375 -34.0023727417
+AblativeDef.OnDefense Player 316465.59375 -26.7294445038
+
+
+AblativeDef.OnDefense Player 316492.3125 0.0
+AblativeDef.OnDefense Player 316492.3125 0.0
+AblativeDef.OnDefense Player 316492.3125 -43.6635551453
+AblativeDef.OnDefense Player 316535.96875 -42.8951797485
+AblativeDef.OnDefense Player 316578.875 -44.7551994324
+AblativeDef.OnDefense Player 316623.625 0.0
+AblativeDef.OnDefense Player 316623.625 -34.4052200317
+AblativeDef.OnDefense Player 316658.03125 0.0
+AblativeDef.OnDefense Player 316658.03125 0.0
+AblativeDef.OnDefense Player 316658.03125 -46.0634727478
+AblativeDef.OnDefense Player 316704.09375 -44.8193283081
+AblativeDef.OnDefense Player 316748.90625 -32.7875289917
+AblativeDef.OnDefense Player 316781.6875 -21.2614898682
+AblativeDef.OnDefense Player 316802.9375 0.0
+AblativeDef.OnDefense Player 316802.9375 0.0
+AblativeDef.OnDefense Player 316802.9375 -46.3169364929
+AblativeDef.OnDefense Player 316849.25 -45.0642814636
+AblativeDef.OnDefense Player 316894.3125 -32.9376335144
+AblativeDef.OnDefense Player 316927.25 -21.2340259552
+AblativeDef.OnDefense Player 316948.46875 0.0
+
+
+AblativeDef.OnDefense Player 316948.46875 0.0
+AblativeDef.OnDefense Player 316948.46875 -46.2572860718
+AblativeDef.OnDefense Player 316994.71875 -44.9914054871
+AblativeDef.OnDefense Player 317039.71875 -46.3473854065
+AblativeDef.OnDefense Player 317086.0625 0.0
+AblativeDef.OnDefense Player 317086.0625 -33.1153106689
+Ship not inside Starbase - bye
+AblativeDef.OnDefense Player 317119.1875 0.0
+AblativeDef.OnDefense Player 317119.1875 0.0
+AblativeDef.OnDefense Player 317119.1875 -44.9921646118
+AblativeDef.OnDefense Player 317164.1875 -46.3485641479
+AblativeDef.OnDefense Player 317210.53125 -21.968755722
+
+
+AblativeDef.OnDefense Player 317232.5 -42.6516609192
+AblativeDef.OnDefense Player 317275.15625 0.0
+AblativeDef.OnDefense Player 317275.15625 0.0
+AblativeDef.OnDefense Player 317275.15625 -46.3921508789
+AblativeDef.OnDefense Player 317321.5625 -27.9778003693
+AblativeDef.OnDefense Player 317349.53125 -45.2695732117
+AblativeDef.OnDefense Player 317394.8125 -45.4483261108
+AblativeDef.OnDefense Player 317440.25 -1.22607648373
+AblativeDef.OnDefense Player 317441.46875 0.0
+AblativeDef.OnDefense Player 317441.46875 -50.8342971802
+AblativeDef.OnDefense Player 317492.3125 0.0
+AblativeDef.OnDefense Player 317492.3125 -32.970539093
+AblativeDef.OnDefense Player 317525.28125 -52.8732910156
+AblativeDef.OnDefense Player 317578.15625 -55.9332885742
+AblativeDef.OnDefense Player 317634.09375 0.0
+AblativeDef.OnDefense Player 317634.09375 0.0
+AblativeDef.OnDefense Player 317634.09375 0.0
+AblativeDef.OnDefense Player 317634.09375 -93.5337295532
+AblativeDef.OnDefense Player 317727.625 -65.0091018677
+AblativeDef.OnDefense Player 317792.625 -93.4524841309
+AblativeDef.OnDefense Player 317886.0625 -69.0771636963
+AblativeDef.OnDefense Player 317955.125 0.0
+AblativeDef.OnDefense Player 317955.125 0.0
+AblativeDef.OnDefense Player 317955.125 -91.6875
+AblativeDef.OnDefense Player 318046.8125 -71.115447998
+AblativeDef.OnDefense Player 318117.9375 -88.4032211304
+AblativeDef.OnDefense Player 318206.34375 -50.7189598083
+AblativeDef.OnDefense Player 318257.0625 -84.9138565063
+AblativeDef.OnDefense Player 318341.96875 0.0
+AblativeDef.OnDefense Player 318341.96875 -82.6745986938
+AblativeDef.OnDefense Player 318424.65625 0.0
+AblativeDef.OnDefense Player 318424.65625 -83.2755126953
+AblativeDef.OnDefense Player 318507.9375 -81.2945175171
+AblativeDef.OnDefense Player 318589.21875 -86.9859390259
+AblativeDef.OnDefense Player 318676.21875 -84.7674407959
+AblativeDef.OnDefense Player 318761.0 0.0
+AblativeDef.OnDefense Player 318761.0 0.0
+AblativeDef.OnDefense Player 318761.0 -70.3132705688
+AblativeDef.OnDefense Player 318831.3125 -80.4589767456
+AblativeDef.OnDefense Player 318911.78125 -81.2309875488
+AblativeDef.OnDefense Player 318993.0 -79.9558181763
+AblativeDef.OnDefense Player 319072.96875 -53.7607383728
+AblativeDef.OnDefense Player 319126.71875 -52.3918266296
+AblativeDef.OnDefense Player 319179.125 0.0
+AblativeDef.OnDefense Player 319179.125 0.0
+AblativeDef.OnDefense Player 319179.125 -86.6824035645
+AblativeDef.OnDefense Player 319265.8125 -84.5534286499
+AblativeDef.OnDefense Player 319350.375 -86.8314743042
+AblativeDef.OnDefense Player 319437.21875 0.0
+AblativeDef.OnDefense Player 319437.21875 0.0
+AblativeDef.OnDefense Player 319437.21875 -69.0010986328
+AblativeDef.OnDefense Player 319506.21875 0.0
+AblativeDef.OnDefense Player 319506.21875 -82.310043335
+AblativeDef.OnDefense Player 319588.53125 -56.5517578125
+AblativeDef.OnDefense Player 319645.09375 -79.2477493286
+AblativeDef.OnDefense Player 319724.34375 -41.6508827209
+AblativeDef.OnDefense Player 319766.0 0.0
+AblativeDef.OnDefense Player 319766.0 0.0
+AblativeDef.OnDefense Player 319766.0 -92.0097808838
+AblativeDef.OnDefense Player 319858.0 0.0
+AblativeDef.OnDefense Player 319858.0 -59.2349891663
+AblativeDef.OnDefense Player 319917.25 -84.2942199707
+AblativeDef.OnDefense Player 320001.53125 0.0
+AblativeDef.OnDefense Player 320001.53125 -92.8314666748
+AblativeDef.OnDefense Player 320094.375 -84.2845993042
+AblativeDef.OnDefense Player 320178.65625 -6.65746307373
+AblativeDef.OnDefense Player 320185.3125 -79.2068252563
+AblativeDef.OnDefense Player 320264.53125 -67.3007354736
+AblativeDef.OnDefense Player 320331.84375 -64.3173141479
+AblativeDef.OnDefense Player 320396.15625 0.0
+AblativeDef.OnDefense Player 320396.15625 -0.027204239741
+AblativeDef.OnDefense Player 320396.1875 0.0
+AblativeDef.OnDefense Player 320396.1875 0.0
+AblativeDef.OnDefense Player 320396.1875 -93.2314376831
+AblativeDef.OnDefense Player 320489.40625 0.0
+AblativeDef.OnDefense Player 320489.40625 -81.9321136475
+AblativeDef.OnDefense Player 320571.34375 -126.501861572
+AblativeDef.OnDefense Player 320697.84375 -76.8843307495
+AblativeDef.OnDefense Player 320774.71875 -81.5992431641
+AblativeDef.OnDefense Player 320856.3125 -93.6304016113
+AblativeDef.OnDefense Player 320949.9375 -6.44383144379
+AblativeDef.OnDefense Player 320956.375 -66.74168396
+AblativeDef.OnDefense Player 321023.125 0.0
+AblativeDef.OnDefense Player 321023.125 0.0
+AblativeDef.OnDefense Player 321023.125 -152.34375
+AblativeDef.OnDefense Player 321175.46875 -145.049087524
+AblativeDef.OnDefense Player 321320.53125 0.0
+AblativeDef.OnDefense Player 321320.53125 0.0
+AblativeDef.OnDefense Player 321320.53125 -99.4034881592
+AblativeDef.OnDefense Player 321419.9375 -151.7578125
+AblativeDef.OnDefense Player 321571.6875 0.0
+AblativeDef.OnDefense Player 321571.6875 -80.9850311279
+AblativeDef.OnDefense Player 321652.6875 -128.978027344
+AblativeDef.OnDefense Player 321781.65625 -152.05078125
+AblativeDef.OnDefense Player 321933.71875 -76.7064285278
+AblativeDef.OnDefense Player 322010.4375 -44.23828125
+AblativeDef.OnDefense Player 322054.6875 -113.440734863
+AblativeDef.OnDefense Player 322168.125 -81.0388870239
+AblativeDef.OnDefense Player 322249.15625 0.0
+AblativeDef.OnDefense Player 322249.15625 -58.0264701843
+AblativeDef.OnDefense Player 322307.1875 0.0
+AblativeDef.OnDefense Player 322307.1875 -134.892318726
+AblativeDef.OnDefense Player 322442.09375 -134.143280029
+AblativeDef.OnDefense Player 322576.25 0.0
+AblativeDef.OnDefense Player 322576.25 0.0
+AblativeDef.OnDefense Player 322576.25 0.0
+AblativeDef.OnDefense Player 322576.25 0.0
+AblativeDef.OnDefense Player 322576.25 -0.228097096086
+AblativeDef.OnDefense Player 322576.46875 0.0
+AblativeDef.OnDefense Player 322576.46875 -81.3298110962
+AblativeDef.OnDefense Player 322657.8125 -126.372123718
+AblativeDef.OnDefense Player 322784.1875 -89.5678405762
+AblativeDef.OnDefense Player 322873.75 -77.5644302368
+AblativeDef.OnDefense Player 322951.3125 -62.1379966736
+AblativeDef.OnDefense Player 323013.4375 -40.9482536316
+AblativeDef.OnDefense Player 323054.375 0.0
+AblativeDef.OnDefense Player 323054.375 -132.529251099
+AblativeDef.OnDefense Player 323186.90625 -132.366241455
+AblativeDef.OnDefense Player 323319.28125 0.0
+AblativeDef.OnDefense Player 323319.28125 0.0
+AblativeDef.OnDefense Player 323319.28125 0.0
+AblativeDef.OnDefense Player 323319.28125 0.0
+AblativeDef.OnDefense Player 323319.28125 -120.264884949
+AblativeDef.OnDefense Player 323439.53125 -82.5823745728
+AblativeDef.OnDefense Player 323522.125 -82.312828064
+AblativeDef.OnDefense Player 323604.4375 -84.9789199829
+AblativeDef.OnDefense Player 323689.40625 -63.6212997437
+AblativeDef.OnDefense Player 323753.03125 -47.0108070374
+AblativeDef.OnDefense Player 323800.03125 0.0
+AblativeDef.OnDefense Player 323800.03125 -132.286376953
+AblativeDef.OnDefense Player 323932.3125 -132.227783203
+AblativeDef.OnDefense Player 324064.53125 0.0
+AblativeDef.OnDefense Player 324064.53125 0.0
+AblativeDef.OnDefense Player 324064.53125 0.0
+AblativeDef.OnDefense Player 324064.53125 0.0
+AblativeDef.OnDefense Player 324064.53125 -88.314666748
+AblativeDef.OnDefense Player 324152.84375 -118.38369751
+AblativeDef.OnDefense Player 324271.21875 -88.3218307495
+AblativeDef.OnDefense Player 324359.53125 -84.1224136353
+AblativeDef.OnDefense Player 324443.65625 -70.3488693237
+AblativeDef.OnDefense Player 324514.0 -51.0524787903
+AblativeDef.OnDefense Player 324565.0625 0.0
+AblativeDef.OnDefense Player 324565.0625 -132.231933594
+AblativeDef.OnDefense Player 324697.28125 0.0
+AblativeDef.OnDefense Player 324697.28125 0.0
+AblativeDef.OnDefense Player 324697.28125 0.0
+AblativeDef.OnDefense Player 324697.28125 -132.236373901
+AblativeDef.OnDefense Player 324829.53125 0.0
+AblativeDef.OnDefense Player 324829.53125 -118.18825531
+AblativeDef.OnDefense Player 324947.71875 -91.623085022
+AblativeDef.OnDefense Player 325039.34375 -136.522399902
+AblativeDef.OnDefense Player 325175.875 -75.570350647
+AblativeDef.OnDefense Player 325251.4375 -132.239227295
+AblativeDef.OnDefense Player 325383.6875 -89.3059005737
+AblativeDef.OnDefense Player 325473.0 -90.4007644653
+AblativeDef.OnDefense Player 325563.40625 -74.9022903442
+AblativeDef.OnDefense Player 325638.3125 -41.7868766785
+AblativeDef.OnDefense Player 325680.09375 -53.138835907
+AblativeDef.OnDefense Player 325733.21875 0.0
+AblativeDef.OnDefense Player 325733.21875 0.0
+AblativeDef.OnDefense Player 325733.21875 0.0
+AblativeDef.OnDefense Player 325733.21875 0.0
+AblativeDef.OnDefense Player 325733.21875 0.0
+AblativeDef.OnDefense Player 325733.21875 -117.677429199
+AblativeDef.OnDefense Player 325850.90625 -132.061065674
+AblativeDef.OnDefense Player 325982.96875 -95.9826202393
+AblativeDef.OnDefense Player 326078.9375 -151.7578125
+AblativeDef.OnDefense Player 326230.6875 -65.1951065063
+AblativeDef.OnDefense Player 326295.875 -61.2042312622
+AblativeDef.OnDefense Player 326357.09375 -90.0866928101
+AblativeDef.OnDefense Player 326447.1875 -97.6502380371
+AblativeDef.OnDefense Player 326544.84375 -152.05078125
+AblativeDef.OnDefense Player 326696.90625 -4.39453125
+AblativeDef.OnDefense Player 326701.3125 -89.1273880005
+AblativeDef.OnDefense Player 326790.4375 -7.02483129501
+AblativeDef.OnDefense Player 326797.46875 0.0
+AblativeDef.OnDefense Player 326797.46875 0.0
+AblativeDef.OnDefense Player 326797.46875 0.0
+AblativeDef.OnDefense Player 326797.46875 0.0
+AblativeDef.OnDefense Player 326797.46875 0.0
+AblativeDef.OnDefense Player 326797.46875 -94.9414978027
+AblativeDef.OnDefense Player 326892.40625 -99.3234786987
+AblativeDef.OnDefense Player 326991.71875 -146.943283081
+AblativeDef.OnDefense Player 327138.65625 -93.5962982178
+AblativeDef.OnDefense Player 327232.25 -88.0965881348
+AblativeDef.OnDefense Player 327320.34375 -73.2724990845
+AblativeDef.OnDefense Player 327393.625 -49.1219100952
+AblativeDef.OnDefense Player 327442.75 -96.09375
+AblativeDef.OnDefense Player 327538.84375 -62.3945083618
+AblativeDef.OnDefense Player 327601.25 -73.1316452026
+AblativeDef.OnDefense Player 327674.375 0.0
+AblativeDef.OnDefense Player 327674.375 0.0
+AblativeDef.OnDefense Player 327674.375 0.0
+AblativeDef.OnDefense Player 327674.375 0.0
+AblativeDef.OnDefense Player 327674.375 -65.8828964233
+AblativeDef.OnDefense Player 327740.25 -45.9763679504
+AblativeDef.OnDefense Player 327786.21875 -64.7184371948
+AblativeDef.OnDefense Player 327850.9375 -43.7570877075
+AblativeDef.OnDefense Player 327894.6875 0.0
+AblativeDef.OnDefense Player 327894.6875 0.0
+AblativeDef.OnDefense Player 327894.6875 -62.4117622375
+AblativeDef.OnDefense Player 327957.09375 -62.4059257507
+AblativeDef.OnDefense Player 328019.5 -62.0514793396
+AblativeDef.OnDefense Player 328081.5625 -62.4171295166
+AblativeDef.OnDefense Player 328143.96875 0.0
+AblativeDef.OnDefense Player 328143.96875 -62.1301612854
+AblativeDef.OnDefense Player 328206.09375 -19.6981163025
+AblativeDef.OnDefense Player 328225.78125 0.0
+AblativeDef.OnDefense Player 328225.78125 -68.8829116821
+AblativeDef.OnDefense Player 328294.65625 0.0
+AblativeDef.OnDefense Player 328294.65625 -73.4578704834
+AblativeDef.OnDefense Player 328368.125 0.0
+AblativeDef.OnDefense Player 328368.125 -75.657623291
+AblativeDef.OnDefense Player 328443.78125 -60.4043388367
+AblativeDef.OnDefense Player 328504.1875 0.0
+AblativeDef.OnDefense Player 328504.1875 0.0
+AblativeDef.OnDefense Player 328504.1875 0.0
+AblativeDef.OnDefense Player 328504.1875 -80.6785202026
+AblativeDef.OnDefense Player 328584.875 -140.829360962
+AblativeDef.OnDefense Player 328725.71875 -77.4043884277
+AblativeDef.OnDefense Player 328803.125 0.0
+AblativeDef.OnDefense Player 328803.125 0.0
+AblativeDef.OnDefense Player 328803.125 -76.9288330078
+AblativeDef.OnDefense Player 328880.0625 -53.8927650452
+AblativeDef.OnDefense Player 328933.96875 -66.3841934204
+AblativeDef.OnDefense Player 329000.34375 -133.154968262
+AblativeDef.OnDefense Player 329133.5 -83.1198120117
+AblativeDef.OnDefense Player 329216.625 -41.725856781
+AblativeDef.OnDefense Player 329258.34375 -91.0598449707
+AblativeDef.OnDefense Player 329349.40625 0.0
+AblativeDef.OnDefense Player 329349.40625 0.0
+AblativeDef.OnDefense Player 329349.40625 0.0
+data/TGL/Maelstrom/Episode 2/E2M2.tgl E2M2Serris3Scan1
+AblativeDef.OnDefense Player 329349.40625 -82.9086685181
+AblativeDef.OnDefense Player 329432.3125 -137.705078125
+AblativeDef.OnDefense Player 329570.03125 -79.6987686157
+AblativeDef.OnDefense Player 329649.71875 0.0
+AblativeDef.OnDefense Player 329649.71875 0.0
+AblativeDef.OnDefense Player 329649.71875 -79.5539093018
+AblativeDef.OnDefense Player 329729.28125 -56.7395248413
+AblativeDef.OnDefense Player 329786.03125 -69.3052062988
+AblativeDef.OnDefense Player 329855.34375 -131.952362061
+AblativeDef.OnDefense Player 329987.28125 -83.8048629761
+AblativeDef.OnDefense Player 330071.09375 -41.9921684265
+AblativeDef.OnDefense Player 330113.09375 -90.4836196899
+AblativeDef.OnDefense Player 330203.5625 0.0
+AblativeDef.OnDefense Player 330203.5625 0.0
+AblativeDef.OnDefense Player 330203.5625 0.0
+AblativeDef.OnDefense Player 330203.5625 -137.438751221
+AblativeDef.OnDefense Player 330341.0 0.0
+AblativeDef.OnDefense Player 330341.0 -83.2030410767
+AblativeDef.OnDefense Player 330424.1875 -79.9971542358
+AblativeDef.OnDefense Player 330504.1875 -137.436004639
+AblativeDef.OnDefense Player 330641.625 0.0
+AblativeDef.OnDefense Player 330641.625 0.0
+AblativeDef.OnDefense Player 330641.625 -43.9984321594
+AblativeDef.OnDefense Player 330685.625 -83.8672561646
+AblativeDef.OnDefense Player 330769.5 -82.8830337524
+AblativeDef.OnDefense Player 330852.375 -2.24008202553
+AblativeDef.OnDefense Player 330854.625 -132.612472534
+AblativeDef.OnDefense Player 330987.25 -75.1411819458
+AblativeDef.OnDefense Player 331062.40625 -131.592941284
+AblativeDef.OnDefense Player 331194.0 0.0
+AblativeDef.OnDefense Player 331194.0 0.0
+AblativeDef.OnDefense Player 331194.0 0.0
+AblativeDef.OnDefense Player 331194.0 0.0
+AblativeDef.OnDefense Player 331194.0 -139.62739563
+AblativeDef.OnDefense Player 331333.625 -80.0329666138
+AblativeDef.OnDefense Player 331413.65625 0.0
+AblativeDef.OnDefense Player 331413.65625 -84.5977401733
+AblativeDef.OnDefense Player 331498.25 -82.2378997803
+AblativeDef.OnDefense Player 331580.5 -73.8744049072
+AblativeDef.OnDefense Player 331654.375 0.0
+AblativeDef.OnDefense Player 331654.375 -54.1088676453
+AblativeDef.OnDefense Player 331708.46875 -83.4034042358
+AblativeDef.OnDefense Player 331791.875 -45.870300293
+AblativeDef.OnDefense Player 331837.75 -129.817474365
+AblativeDef.OnDefense Player 331967.5625 -16.11328125
+AblativeDef.OnDefense Player 331983.6875 -85.3017654419
+AblativeDef.OnDefense Player 332069.0 0.0
+AblativeDef.OnDefense Player 332069.0 0.0
+AblativeDef.OnDefense Player 332069.0 0.0
+AblativeDef.OnDefense Player 332069.0 -93.6701812744
+AblativeDef.OnDefense Player 332162.65625 -144.599197388
+AblativeDef.OnDefense Player 332307.25 0.0
+AblativeDef.OnDefense Player 332307.25 0.0
+AblativeDef.OnDefense Player 332307.25 -0.0355747751892
+AblativeDef.OnDefense Player 332307.28125 -95.8729095459
+AblativeDef.OnDefense Player 332403.15625 -80.5133514404
+AblativeDef.OnDefense Player 332483.65625 -97.4557876587
+AblativeDef.OnDefense Player 332581.125 0.0
+AblativeDef.OnDefense Player 332581.125 0.0
+AblativeDef.OnDefense Player 332581.125 -81.4454727173
+AblativeDef.OnDefense Player 332662.5625 -59.3974952698
+AblativeDef.OnDefense Player 332721.96875 -1.00864946842
+AblativeDef.OnDefense Player 332722.96875 -49.6053733826
+AblativeDef.OnDefense Player 332772.5625 -133.421203613
+AblativeDef.OnDefense Player 332905.96875 -94.0839691162
+AblativeDef.OnDefense Player 333000.0625 0.0
+AblativeDef.OnDefense Player 333000.0625 0.0
+AblativeDef.OnDefense Player 333000.0625 0.0
+AblativeDef.OnDefense Player 333000.0625 -137.089096069
+AblativeDef.OnDefense Player 333137.15625 -104.601539612
+AblativeDef.OnDefense Player 333241.75 0.0
+AblativeDef.OnDefense Player 333241.75 -61.0491027832
+AblativeDef.OnDefense Player 333302.8125 -128.304229736
+AblativeDef.OnDefense Player 333431.125 -152.05078125
+AblativeDef.OnDefense Player 333583.1875 0.0
+AblativeDef.OnDefense Player 333583.1875 0.0
+AblativeDef.OnDefense Player 333583.1875 -146.673675537
+AblativeDef.OnDefense Player 333729.875 -111.9140625
+AblativeDef.OnDefense Player 333841.78125 -87.890625
+AblativeDef.OnDefense Player 333929.6875 -64.5385360718
+AblativeDef.OnDefense Player 333994.21875 -39.5977401733
+AblativeDef.OnDefense Player 334033.8125 0.0
+
+
+AblativeDef.OnDefense Player 334033.8125 -42.9537239075
+AblativeDef.OnDefense Player 334076.78125 -37.2054901123
+AblativeDef.OnDefense Player 334114.0 0.0
+AblativeDef.OnDefense Player 334114.0 0.0
+AblativeDef.OnDefense Player 334114.0 -8.41310691833
+AblativeDef.OnDefense Player 334122.40625 0.0
+AblativeDef.OnDefense Player 334122.40625 -24.5342769623
+AblativeDef.OnDefense Player 334146.9375 -11.7678041458
+AblativeDef.OnDefense Player 334158.71875 0.0
+AblativeDef.OnDefense Player 334158.71875 -48.9453010559
+AblativeDef.OnDefense Player 334207.65625 -33.4789619446
+Ship not inside Starbase - bye
+AblativeDef.OnDefense Player 334241.125 0.0
+AblativeDef.OnDefense Player 334241.125 -48.9453010559
+AblativeDef.OnDefense Player 334290.0625 -48.9453010559
+AblativeDef.OnDefense Player 334339.0 -49.0396080017
+AblativeDef.OnDefense Player 334388.03125 -14.1460409164
+AblativeDef.OnDefense Player 334402.1875 0.0
+AblativeDef.OnDefense Player 334402.1875 -48.9453010559
+AblativeDef.OnDefense Player 334451.125 -45.0787162781
+
+
+AblativeDef.OnDefense Player 334496.21875 0.0
+AblativeDef.OnDefense Player 334496.21875 -48.9276580811
+AblativeDef.OnDefense Player 334545.15625 -49.010307312
+AblativeDef.OnDefense Player 334594.15625 0.0
+AblativeDef.OnDefense Player 334594.15625 0.0
+AblativeDef.OnDefense Player 334594.15625 -50.3175430298
+AblativeDef.OnDefense Player 334644.46875 -52.3414726257
+AblativeDef.OnDefense Player 334696.8125 0.0
+AblativeDef.OnDefense Player 334696.8125 0.0
+AblativeDef.OnDefense Player 334696.8125 -55.0782661438
+AblativeDef.OnDefense Player 334751.90625 0.0
+AblativeDef.OnDefense Player 334751.90625 -27.637014389
+AblativeDef.OnDefense Player 334779.53125 -68.5633163452
+AblativeDef.OnDefense Player 334848.09375 -36.6648445129
+AblativeDef.OnDefense Player 334884.75 0.0
+AblativeDef.OnDefense Player 334884.75 -62.3375282288
+AblativeDef.OnDefense Player 334947.09375 0.0
+AblativeDef.OnDefense Player 334947.09375 0.0
+AblativeDef.OnDefense Player 334947.09375 -59.7442893982
+AblativeDef.OnDefense Player 335006.84375 -87.5868911743
+AblativeDef.OnDefense Player 335094.4375 -75.6853485107
+
+
+AblativeDef.OnDefense Player 335170.125 0.0
+AblativeDef.OnDefense Player 335170.125 -40.4483146667
+AblativeDef.OnDefense Player 335210.5625 -80.3830413818
+AblativeDef.OnDefense Player 335290.9375 -152.05078125
+AblativeDef.OnDefense Player 335443.0 -140.0390625
+AblativeDef.OnDefense Player 335583.03125 0.0
+AblativeDef.OnDefense Player 335583.03125 0.0
+AblativeDef.OnDefense Player 335583.03125 0.0
+AblativeDef.OnDefense Player 335583.03125 0.0
+AblativeDef.OnDefense Player 335583.03125 0.0
+AblativeDef.OnDefense Player 335583.03125 -68.8775939941
+AblativeDef.OnDefense Player 335651.90625 -152.34375
+AblativeDef.OnDefense Player 335804.25 -80.4905395508
+AblativeDef.OnDefense Player 335884.75 -121.731216431
+AblativeDef.OnDefense Player 336006.46875 -93.5056838989
+AblativeDef.OnDefense Player 336099.96875 -119.82421875
+
+
+AblativeDef.OnDefense Player 336219.78125 -69.1023406982
+AblativeDef.OnDefense Player 336288.875 0.0
+AblativeDef.OnDefense Player 336288.875 -55.1779060364
+AblativeDef.OnDefense Player 336344.0625 -121.273361206
+AblativeDef.OnDefense Player 336465.34375 0.0
+AblativeDef.OnDefense Player 336465.34375 -93.9805755615
+AblativeDef.OnDefense Player 336559.3125 0.0
+AblativeDef.OnDefense Player 336559.3125 0.0
+AblativeDef.OnDefense Player 336559.3125 -152.05078125
+AblativeDef.OnDefense Player 336711.375 -152.05078125
+AblativeDef.OnDefense Player 336863.4375 0.0
+AblativeDef.OnDefense Player 336863.4375 0.0
+AblativeDef.OnDefense Player 336863.4375 0.0
+AblativeDef.OnDefense Player 336863.4375 0.0
+AblativeDef.OnDefense Player 336863.4375 0.0
+AblativeDef.OnDefense Player 336863.4375 0.0
+AblativeDef.OnDefense Player 336863.4375 -152.05078125
+AblativeDef.OnDefense Player 337015.5 -69.5336990356
+AblativeDef.OnDefense Player 337085.03125 -81.1879425049
+AblativeDef.OnDefense Player 337166.21875 -36.5110931396
+AblativeDef.OnDefense Player 337202.71875 -94.1865463257
+AblativeDef.OnDefense Player 337296.90625 -121.211784363
+AblativeDef.OnDefense Player 337418.125 -76.6842575073
+AblativeDef.OnDefense Player 337494.8125 -152.05078125
+AblativeDef.OnDefense Player 337646.875 0.0
+AblativeDef.OnDefense Player 337646.875 -53.479675293
+AblativeDef.OnDefense Player 337700.34375 -47.1896133423
+AblativeDef.OnDefense Player 337747.53125 0.0
+AblativeDef.OnDefense Player 337747.53125 -152.05078125
+AblativeDef.OnDefense Player 337899.59375 0.0
+AblativeDef.OnDefense Player 337899.59375 -152.05078125
+AblativeDef.OnDefense Player 338051.65625 0.0
+AblativeDef.OnDefense Player 338051.65625 0.0
+AblativeDef.OnDefense Player 338051.65625 0.0
+AblativeDef.OnDefense Player 338051.65625 0.0
+AblativeDef.OnDefense Player 338051.65625 0.0
+AblativeDef.OnDefense Player 338051.65625 -69.4351272583
+AblativeDef.OnDefense Player 338121.09375 -94.2270431519
+AblativeDef.OnDefense Player 338215.3125 -152.05078125
+AblativeDef.OnDefense Player 338367.375 -81.0868835449
+AblativeDef.OnDefense Player 338448.46875 -121.181343079
+AblativeDef.OnDefense Player 338569.65625 -49.3671684265
+AblativeDef.OnDefense Player 338619.03125 -72.0703125
+AblativeDef.OnDefense Player 338691.09375 -86.1578369141
+AblativeDef.OnDefense Player 338777.25 -74.43699646
+AblativeDef.OnDefense Player 338851.6875 -81.0868835449
+AblativeDef.OnDefense Player 338932.78125 -4.37462949753
+AblativeDef.OnDefense Player 338937.15625 0.0
+AblativeDef.OnDefense Player 338937.15625 0.0
+AblativeDef.OnDefense Player 338937.15625 -152.05078125
+AblativeDef.OnDefense Player 339089.21875 0.0
+AblativeDef.OnDefense Player 339089.21875 0.0
+AblativeDef.OnDefense Player 339089.21875 0.0
+AblativeDef.OnDefense Player 339089.21875 -69.4351272583
+AblativeDef.OnDefense Player 339158.65625 -151.7578125
+AblativeDef.OnDefense Player 339310.40625 0.0
+AblativeDef.OnDefense Player 339310.40625 -94.2263336182
+AblativeDef.OnDefense Player 339404.625 -152.05078125
+AblativeDef.OnDefense Player 339556.6875 -121.181343079
+AblativeDef.OnDefense Player 339677.875 -49.3671684265
+AblativeDef.OnDefense Player 339727.25 -72.0703125
+AblativeDef.OnDefense Player 339799.3125 -152.34375
+AblativeDef.OnDefense Player 339951.65625 -81.0868835449
+AblativeDef.OnDefense Player 340032.75 -86.1578369141
+AblativeDef.OnDefense Player 340118.90625 -74.4369888306
+AblativeDef.OnDefense Player 340193.34375 -47.75390625
+AblativeDef.OnDefense Player 340241.09375 -81.0868835449
+AblativeDef.OnDefense Player 340322.1875 0.0
+AblativeDef.OnDefense Player 340322.1875 0.0
+AblativeDef.OnDefense Player 340322.1875 0.0
+AblativeDef.OnDefense Player 340322.1875 0.0
+AblativeDef.OnDefense Player 340322.1875 0.0
+AblativeDef.OnDefense Player 340322.1875 0.0
+AblativeDef.OnDefense Player 340322.1875 -152.05078125
+AblativeDef.OnDefense Player 340474.25 -69.4351272583
+AblativeDef.OnDefense Player 340543.6875 0.0
+AblativeDef.OnDefense Player 340543.6875 -34.6506690979
+AblativeDef.OnDefense Player 340578.34375 -121.414833069
+AblativeDef.OnDefense Player 340699.75 -152.34375
+AblativeDef.OnDefense Player 340852.09375 -94.4078903198
+AblativeDef.OnDefense Player 340946.5 -152.05078125
+AblativeDef.OnDefense Player 341098.5625 0.0
+AblativeDef.OnDefense Player 341098.5625 -54.1696968079
+AblativeDef.OnDefense Player 341152.71875 -49.5641403198
+AblativeDef.OnDefense Player 341202.28125 -95.80078125
+AblativeDef.OnDefense Player 341298.09375 -81.0868835449
+AblativeDef.OnDefense Player 341379.1875 -61.7135238647
+AblativeDef.OnDefense Player 341440.90625 0.0
+AblativeDef.OnDefense Player 341440.90625 0.0
+AblativeDef.OnDefense Player 341440.90625 0.0
+AblativeDef.OnDefense Player 341440.90625 0.0
+AblativeDef.OnDefense Player 341440.90625 0.0
+AblativeDef.OnDefense Player 341440.90625 -69.4351272583
+AblativeDef.OnDefense Player 341510.34375 -152.05078125
+AblativeDef.OnDefense Player 341662.40625 -121.181343079
+AblativeDef.OnDefense Player 341783.59375 0.0
+AblativeDef.OnDefense Player 341783.59375 -152.05078125
+AblativeDef.OnDefense Player 341935.65625 -94.2263336182
+AblativeDef.OnDefense Player 342029.875 -120.1171875
+AblativeDef.OnDefense Player 342150.0 -68.7661895752
+AblativeDef.OnDefense Player 342218.78125 -121.414833069
+AblativeDef.OnDefense Player 342340.1875 0.0
+AblativeDef.OnDefense Player 342340.1875 -67.96875
+AblativeDef.OnDefense Player 342408.15625 -81.0868835449
+AblativeDef.OnDefense Player 342489.25 -94.2263336182
+AblativeDef.OnDefense Player 342583.46875 -70.104057312
+AblativeDef.OnDefense Player 342653.5625 -47.0272674561
+AblativeDef.OnDefense Player 342700.59375 -21.9409637451
+AblativeDef.OnDefense Player 342722.53125 -94.2263336182
+AblativeDef.OnDefense Player 342816.75 -27.233045578
+AblativeDef.OnDefense Player 342843.96875 0.0
+AblativeDef.OnDefense Player 342843.96875 0.0
+AblativeDef.OnDefense Player 342843.96875 0.0
+AblativeDef.OnDefense Player 342843.96875 -152.05078125
+AblativeDef.OnDefense Player 342996.03125 0.0
+AblativeDef.OnDefense Player 342996.03125 0.0
+AblativeDef.OnDefense Player 342996.03125 -120.947853088
+AblativeDef.OnDefense Player 343116.96875 -151.7578125
+AblativeDef.OnDefense Player 343268.71875 -136.23046875
+AblativeDef.OnDefense Player 343404.9375 -53.9362068176
+AblativeDef.OnDefense Player 343458.875 -91.69921875
+AblativeDef.OnDefense Player 343550.5625 -69.5689086914
+AblativeDef.OnDefense Player 343620.125 -81.2431182861
+AblativeDef.OnDefense Player 343701.375 0.0
+AblativeDef.OnDefense Player 343701.375 -59.5262069702
+AblativeDef.OnDefense Player 343760.90625 -67.4283294678
+AblativeDef.OnDefense Player 343828.34375 -94.2263336182
+AblativeDef.OnDefense Player 343922.5625 0.0
+AblativeDef.OnDefense Player 343922.5625 -94.2263336182
+AblativeDef.OnDefense Player 344016.78125 -2.5417509079
+AblativeDef.OnDefense Player 344019.3125 0.0
+AblativeDef.OnDefense Player 344019.3125 0.0
+AblativeDef.OnDefense Player 344019.3125 -152.05078125
+AblativeDef.OnDefense Player 344171.375 0.0
+AblativeDef.OnDefense Player 344171.375 0.0
+AblativeDef.OnDefense Player 344171.375 -121.181343079
+AblativeDef.OnDefense Player 344292.5625 -152.05078125
+AblativeDef.OnDefense Player 344444.625 -139.16015625
+AblativeDef.OnDefense Player 344583.78125 -54.4031867981
+AblativeDef.OnDefense Player 344638.1875 -91.9921875
+AblativeDef.OnDefense Player 344730.1875 -69.836479187
+AblativeDef.OnDefense Player 344800.03125 -81.5555953979
+AblativeDef.OnDefense Player 344881.59375 -59.2137336731
+AblativeDef.OnDefense Player 344940.8125 -67.8296890259
+AblativeDef.OnDefense Player 345008.65625 0.0
+AblativeDef.OnDefense Player 345008.65625 -94.2263336182
+AblativeDef.OnDefense Player 345102.875 0.0
+AblativeDef.OnDefense Player 345102.875 0.0
+AblativeDef.OnDefense Player 345102.875 0.0
+AblativeDef.OnDefense Player 345102.875 -94.2263336182
+AblativeDef.OnDefense Player 345197.09375 0.0
+AblativeDef.OnDefense Player 345197.09375 -152.34375
+AblativeDef.OnDefense Player 345349.4375 -121.414833069
+AblativeDef.OnDefense Player 345470.84375 -152.05078125
+AblativeDef.OnDefense Player 345622.90625 0.0
+AblativeDef.OnDefense Player 345622.90625 0.0
+AblativeDef.OnDefense Player 345622.90625 -95.80078125
+AblativeDef.OnDefense Player 345718.71875 -105.070526123
+AblativeDef.OnDefense Player 345823.78125 -152.05078125
+AblativeDef.OnDefense Player 345975.84375 0.0
+AblativeDef.OnDefense Player 345975.84375 -69.4351272583
+AblativeDef.OnDefense Player 346045.28125 -81.0868835449
+AblativeDef.OnDefense Player 346126.375 -36.2469291687
+AblativeDef.OnDefense Player 346162.625 -47.4941596985
+AblativeDef.OnDefense Player 346210.125 0.0
+AblativeDef.OnDefense Player 346210.125 0.0
+AblativeDef.OnDefense Player 346210.125 0.0
+AblativeDef.OnDefense Player 346210.125 0.0
+AblativeDef.OnDefense Player 346210.125 -94.2263336182
+AblativeDef.OnDefense Player 346304.34375 -152.05078125
+AblativeDef.OnDefense Player 346456.40625 -121.181343079
+AblativeDef.OnDefense Player 346577.59375 -152.05078125
+AblativeDef.OnDefense Player 346729.65625 -94.4078903198
+AblativeDef.OnDefense Player 346824.0625 0.0
+AblativeDef.OnDefense Player 346824.0625 0.0
+AblativeDef.OnDefense Player 346824.0625 -96.09375
+AblativeDef.OnDefense Player 346920.15625 -105.304016113
+AblativeDef.OnDefense Player 347025.46875 -152.05078125
+AblativeDef.OnDefense Player 347177.53125 0.0
+AblativeDef.OnDefense Player 347177.53125 -94.0447845459
+AblativeDef.OnDefense Player 347271.5625 -69.4351272583
+AblativeDef.OnDefense Player 347341.0 -81.0868835449
+AblativeDef.OnDefense Player 347422.09375 -29.7747955322
+AblativeDef.OnDefense Player 347451.875 -38.4342460632
+AblativeDef.OnDefense Player 347490.3125 -48.6982383728
+AblativeDef.OnDefense Player 347539.0 0.0
+AblativeDef.OnDefense Player 347539.0 0.0
+AblativeDef.OnDefense Player 347539.0 0.0
+AblativeDef.OnDefense Player 347539.0 -152.05078125
+AblativeDef.OnDefense Player 347691.0625 0.0
+AblativeDef.OnDefense Player 347691.0625 0.0
+AblativeDef.OnDefense Player 347691.0625 -121.181343079
+AblativeDef.OnDefense Player 347812.25 -152.05078125
+AblativeDef.OnDefense Player 347964.3125 -152.05078125
+AblativeDef.OnDefense Player 348116.375 0.0
+AblativeDef.OnDefense Player 348116.375 0.0
+AblativeDef.OnDefense Player 348116.375 -67.0116500854
+AblativeDef.OnDefense Player 348183.375 -81.0868835449
+AblativeDef.OnDefense Player 348264.46875 -94.2263336182
+AblativeDef.OnDefense Player 348358.6875 -107.8125
+AblativeDef.OnDefense Player 348466.5 -52.1058921814
+AblativeDef.OnDefense Player 348518.59375 -69.5689086914
+AblativeDef.OnDefense Player 348588.15625 -69.212890625
+AblativeDef.OnDefense Player 348657.375 -69.3013381958
+AblativeDef.OnDefense Player 348726.6875 0.0
+
+# DS9FX has...
+
+# taken a console dump
+AblativeDef.OnDefense Player 348726.6875 0.0
+AblativeDef.OnDefense Player 348726.6875 0.0
+AblativeDef.OnDefense Player 348726.6875 0.0
+AblativeDef.OnDefense Player 348726.6875 0.0
+AblativeDef.OnDefense Player 348726.6875 -120.947853088
+AblativeDef.OnDefense Player 348847.625 -151.7578125
+AblativeDef.OnDefense Player 348999.375 0.0
+AblativeDef.OnDefense Player 348999.375 -152.05078125
+AblativeDef.OnDefense Player 349151.4375 -94.2263336182
+AblativeDef.OnDefense Player 349245.65625 -108.10546875
+AblativeDef.OnDefense Player 349353.75 -121.181343079
+AblativeDef.OnDefense Player 349474.9375 0.0
+AblativeDef.OnDefense Player 349474.9375 0.0
+AblativeDef.OnDefense Player 349474.9375 -81.0868835449
+AblativeDef.OnDefense Player 349556.03125 -91.6845855713
+AblativeDef.OnDefense Player 349647.71875 -152.05078125
+AblativeDef.OnDefense Player 349799.78125 -12.01171875
+AblativeDef.OnDefense Player 349811.78125 -44.8399505615
+AblativeDef.OnDefense Player 349856.625 -69.5689086914
+AblativeDef.OnDefense Player 349926.1875 -51.1063919067
+AblativeDef.OnDefense Player 349977.28125 0.0
+AblativeDef.OnDefense Player 349977.28125 0.0
+AblativeDef.OnDefense Player 349977.28125 0.0
+AblativeDef.OnDefense Player 349977.28125 -121.181343079
+AblativeDef.OnDefense Player 350098.46875 -152.34375
+AblativeDef.OnDefense Player 350250.8125 0.0
+AblativeDef.OnDefense Player 350250.8125 0.0
+AblativeDef.OnDefense Player 350250.8125 -94.2263336182
+AblativeDef.OnDefense Player 350345.03125 -111.62109375
+AblativeDef.OnDefense Player 350456.65625 -121.181343079
+AblativeDef.OnDefense Player 350577.84375 0.0
+AblativeDef.OnDefense Player 350577.84375 0.0
+AblativeDef.OnDefense Player 350577.84375 -152.05078125
+AblativeDef.OnDefense Player 350729.90625 -81.0868835449
+AblativeDef.OnDefense Player 350811.0 -91.6845855713
+AblativeDef.OnDefense Player 350902.6875 -42.6526374817
+AblativeDef.OnDefense Player 350945.34375 -69.4351272583
+AblativeDef.OnDefense Player 351014.78125 -152.05078125
+AblativeDef.OnDefense Player 351166.84375 0.0
+AblativeDef.OnDefense Player 351166.84375 -51.2401771545
+AblativeDef.OnDefense Player 351218.09375 0.0
+AblativeDef.OnDefense Player 351218.09375 0.0
+AblativeDef.OnDefense Player 351218.09375 -152.05078125
+AblativeDef.OnDefense Player 351370.15625 0.0
+AblativeDef.OnDefense Player 351370.15625 0.0
+AblativeDef.OnDefense Player 351370.15625 -120.714363098
+AblativeDef.OnDefense Player 351490.875 -152.05078125
+AblativeDef.OnDefense Player 351642.9375 0.0
+AblativeDef.OnDefense Player 351642.9375 0.0
+AblativeDef.OnDefense Player 351642.9375 0.0
+AblativeDef.OnDefense Player 351642.9375 -63.275806427
+AblativeDef.OnDefense Player 351706.21875 -81.0868835449
+AblativeDef.OnDefense Player 351787.3125 -94.2263336182
+AblativeDef.OnDefense Player 351881.53125 -52.1058921814
+AblativeDef.OnDefense Player 351933.625 -69.3013381958
+AblativeDef.OnDefense Player 352002.9375 -151.7578125
+AblativeDef.OnDefense Player 352154.6875 -66.244392395
+AblativeDef.OnDefense Player 352220.9375 -88.18359375
+AblativeDef.OnDefense Player 352309.125 -69.5689086914
+AblativeDef.OnDefense Player 352378.6875 0.0
+AblativeDef.OnDefense Player 352378.6875 0.0
+AblativeDef.OnDefense Player 352378.6875 0.0
+AblativeDef.OnDefense Player 352378.6875 -152.05078125
+AblativeDef.OnDefense Player 352530.75 0.0
+AblativeDef.OnDefense Player 352530.75 0.0
+AblativeDef.OnDefense Player 352530.75 -121.060951233
+AblativeDef.OnDefense Player 352651.8125 -151.171875
+AblativeDef.OnDefense Player 352803.0 0.0
+AblativeDef.OnDefense Player 352803.0 0.0
+AblativeDef.OnDefense Player 352803.0 0.0
+AblativeDef.OnDefense Player 352803.0 -64.0654830933
+AblativeDef.OnDefense Player 352867.0625 -81.146484375
+AblativeDef.OnDefense Player 352948.21875 -94.0823745728
+AblativeDef.OnDefense Player 353042.3125 -52.0170669556
+AblativeDef.OnDefense Player 353094.34375 -150.5859375
+AblativeDef.OnDefense Player 353244.9375 -68.9204025269
+AblativeDef.OnDefense Player 353313.84375 -66.5994873047
+AblativeDef.OnDefense Player 353380.4375 -91.69921875
+AblativeDef.OnDefense Player 353472.125 -70.0701141357
+AblativeDef.OnDefense Player 353542.1875 0.0
+AblativeDef.OnDefense Player 353542.1875 0.0
+AblativeDef.OnDefense Player 353542.1875 0.0
+AblativeDef.OnDefense Player 353542.1875 -151.7578125
+AblativeDef.OnDefense Player 353693.9375 0.0
+AblativeDef.OnDefense Player 353693.9375 0.0
+AblativeDef.OnDefense Player 353693.9375 -120.496437073
+AblativeDef.OnDefense Player 353814.4375 -151.46484375
+AblativeDef.OnDefense Player 353965.90625 0.0
+AblativeDef.OnDefense Player 353965.90625 0.0
+AblativeDef.OnDefense Player 353965.90625 0.0
+AblativeDef.OnDefense Player 353965.90625 -65.3928070068
+AblativeDef.OnDefense Player 354031.3125 -81.3324737549
+AblativeDef.OnDefense Player 354112.65625 -94.8055114746
+AblativeDef.OnDefense Player 354207.46875 -50.2189788818
+AblativeDef.OnDefense Player 354257.6875 -69.1405944824
+AblativeDef.OnDefense Player 354326.8125 -151.7578125
+AblativeDef.OnDefense Player 354478.5625 -64.7871627808
+AblativeDef.OnDefense Player 354543.34375 -93.1640625
+AblativeDef.OnDefense Player 354636.5 -69.146270752
+AblativeDef.OnDefense Player 354705.65625 0.0
+AblativeDef.OnDefense Player 354705.65625 0.0
+AblativeDef.OnDefense Player 354705.65625 0.0
+AblativeDef.OnDefense Player 354705.65625 0.0
+AblativeDef.OnDefense Player 354705.65625 -122.285400391
+AblativeDef.OnDefense Player 354827.9375 -151.46484375
+AblativeDef.OnDefense Player 354979.40625 0.0
+AblativeDef.OnDefense Player 354979.40625 0.0
+AblativeDef.OnDefense Player 354979.40625 -103.41796875
+AblativeDef.OnDefense Player 355082.8125 -95.1407470703
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 25 Jan 2026 18:42:24#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Custom.Autoload.FIX-EngineerCharacterHandlers : Patched your  Bridge.EngineerCharacterHandlers  to cover 0-shield-strength ships
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Patched TacticalControlInterfaces.CycleCameraMode to add mode viewing modes
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+
+
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+
+
+AblativeDef.OnDefense Player 405000 0.0
+AblativeDef.OnDefense Player 405000.0 6846.6796875
+
+
+0.15
+0.15
+
+
+
+
+0.15
+0.15
+AblativeDef.OnDefense Player 398153.3125 4800.0
+0.15
+0.15
+AblativeDef.OnDefense Player 393353.3125 1576.60473633
+AblativeDef.OnDefense Player 391776.71875 2429.86279297
+AblativeDef.OnDefense Player 389346.84375 732.223571777
+AblativeDef.OnDefense USS Gateway-1 485000 0.0
+AblativeDef.OnDefense Player 388614.625 1290.01281738
+AblativeDef.OnDefense Player 387324.625 2781.61621094
+AblativeDef.OnDefense Player 384543.0 1086.82104492
+AblativeDef.OnDefense Player 383456.1875 1343.20678711
+AblativeDef.OnDefense Player 382112.96875 1343.20678711
+AblativeDef.OnDefense Player 380769.75 1354.93469238
+0.15
+0.15
+AblativeDef.OnDefense Player 379414.8125 1716.73010254
+AblativeDef.OnDefense Player 377698.09375 1716.73010254
+AblativeDef.OnDefense Player 375981.375 1287.54760742
+AblativeDef.OnDefense USS Gateway-1 485000.0 0.0
+AblativeDef.OnDefense Player 374693.8125 2782.4609375
+AblativeDef.OnDefense Player 371911.34375 950.629638672
+AblativeDef.OnDefense Player 370960.71875 1280.49731445
+AblativeDef.OnDefense Player 369680.21875 2906.125
+AblativeDef.OnDefense Player 366774.09375 695.674743652
+AblativeDef.OnDefense Player 366078.40625 1345.15356445
+AblativeDef.OnDefense Player 364733.25 1269.6217041
+AblativeDef.OnDefense Player 363463.625 2748.23803711
+AblativeDef.OnDefense Player 360715.375 942.555664063
+AblativeDef.OnDefense Player 359772.8125 1315.97485352
+AblativeDef.OnDefense Player 358456.84375 1315.97485352
+AblativeDef.OnDefense Player 357140.875 3152.63354492
+0.15
+AblativeDef.OnDefense Player 353988.25 1934.46923828
+0.15
+AblativeDef.OnDefense Player 352053.78125 1934.46923828
+AblativeDef.OnDefense Player 350119.3125 1137.61047363
+AblativeDef.OnDefense Player 348981.6875 1450.85192871
+AblativeDef.OnDefense Player 347530.84375 2747.00610352
+AblativeDef.OnDefense Player 344783.84375 1276.43078613
+AblativeDef.OnDefense Player 343507.40625 1011.49456787
+AblativeDef.OnDefense Player 342495.90625 1552.5670166
+AblativeDef.OnDefense Player 340943.34375 2820.31225586
+AblativeDef.OnDefense Player 338123.03125 858.592163086
+AblativeDef.OnDefense Player 337264.4375 1302.91833496
+AblativeDef.OnDefense Player 335961.53125 1568.24938965
+AblativeDef.OnDefense Player 334393.28125 3453.51806641
+AblativeDef.OnDefense Player 330939.75 1105.38745117
+AblativeDef.OnDefense Player 329834.375 1327.80761719
+0.15
+AblativeDef.OnDefense Player 328506.5625 1770.41015625
+0.15
+AblativeDef.OnDefense Player 326736.15625 1770.41015625
+AblativeDef.OnDefense Player 324965.75 4729.15185547
+AblativeDef.OnDefense Player 320236.59375 1667.50427246
+AblativeDef.OnDefense Player 318569.09375 2184.75732422
+Ship not inside Starbase - bye
+
+
+AblativeDef.OnDefense Player 316384.34375 0.0
+AblativeDef.OnDefense Player 316384.34375 -24.6852550507
+AblativeDef.OnDefense Player 316409.03125 -22.5489959717
+AblativeDef.OnDefense Player 316431.59375 0.0
+AblativeDef.OnDefense Player 316431.59375 -34.0023727417
+AblativeDef.OnDefense Player 316465.59375 -26.7294445038
+
+
+AblativeDef.OnDefense Player 316492.3125 0.0
+AblativeDef.OnDefense Player 316492.3125 0.0
+AblativeDef.OnDefense Player 316492.3125 -43.6635551453
+AblativeDef.OnDefense Player 316535.96875 -42.8951797485
+AblativeDef.OnDefense Player 316578.875 -44.7551994324
+AblativeDef.OnDefense Player 316623.625 0.0
+AblativeDef.OnDefense Player 316623.625 -34.4052200317
+AblativeDef.OnDefense Player 316658.03125 0.0
+AblativeDef.OnDefense Player 316658.03125 0.0
+AblativeDef.OnDefense Player 316658.03125 -46.0634727478
+AblativeDef.OnDefense Player 316704.09375 -44.8193283081
+AblativeDef.OnDefense Player 316748.90625 -32.7875289917
+AblativeDef.OnDefense Player 316781.6875 -21.2614898682
+AblativeDef.OnDefense Player 316802.9375 0.0
+AblativeDef.OnDefense Player 316802.9375 0.0
+AblativeDef.OnDefense Player 316802.9375 -46.3169364929
+AblativeDef.OnDefense Player 316849.25 -45.0642814636
+AblativeDef.OnDefense Player 316894.3125 -32.9376335144
+AblativeDef.OnDefense Player 316927.25 -21.2340259552
+AblativeDef.OnDefense Player 316948.46875 0.0
+
+
+AblativeDef.OnDefense Player 316948.46875 0.0
+AblativeDef.OnDefense Player 316948.46875 -46.2572860718
+AblativeDef.OnDefense Player 316994.71875 -44.9914054871
+AblativeDef.OnDefense Player 317039.71875 -46.3473854065
+AblativeDef.OnDefense Player 317086.0625 0.0
+AblativeDef.OnDefense Player 317086.0625 -33.1153106689
+Ship not inside Starbase - bye
+AblativeDef.OnDefense Player 317119.1875 0.0
+AblativeDef.OnDefense Player 317119.1875 0.0
+AblativeDef.OnDefense Player 317119.1875 -44.9921646118
+AblativeDef.OnDefense Player 317164.1875 -46.3485641479
+AblativeDef.OnDefense Player 317210.53125 -21.968755722
+
+
+AblativeDef.OnDefense Player 317232.5 -42.6516609192
+AblativeDef.OnDefense Player 317275.15625 0.0
+AblativeDef.OnDefense Player 317275.15625 0.0
+AblativeDef.OnDefense Player 317275.15625 -46.3921508789
+AblativeDef.OnDefense Player 317321.5625 -27.9778003693
+AblativeDef.OnDefense Player 317349.53125 -45.2695732117
+AblativeDef.OnDefense Player 317394.8125 -45.4483261108
+AblativeDef.OnDefense Player 317440.25 -1.22607648373
+AblativeDef.OnDefense Player 317441.46875 0.0
+AblativeDef.OnDefense Player 317441.46875 -50.8342971802
+AblativeDef.OnDefense Player 317492.3125 0.0
+AblativeDef.OnDefense Player 317492.3125 -32.970539093
+AblativeDef.OnDefense Player 317525.28125 -52.8732910156
+AblativeDef.OnDefense Player 317578.15625 -55.9332885742
+AblativeDef.OnDefense Player 317634.09375 0.0
+AblativeDef.OnDefense Player 317634.09375 0.0
+AblativeDef.OnDefense Player 317634.09375 0.0
+AblativeDef.OnDefense Player 317634.09375 -93.5337295532
+AblativeDef.OnDefense Player 317727.625 -65.0091018677
+AblativeDef.OnDefense Player 317792.625 -93.4524841309
+AblativeDef.OnDefense Player 317886.0625 -69.0771636963
+AblativeDef.OnDefense Player 317955.125 0.0
+AblativeDef.OnDefense Player 317955.125 0.0
+AblativeDef.OnDefense Player 317955.125 -91.6875
+AblativeDef.OnDefense Player 318046.8125 -71.115447998
+AblativeDef.OnDefense Player 318117.9375 -88.4032211304
+AblativeDef.OnDefense Player 318206.34375 -50.7189598083
+AblativeDef.OnDefense Player 318257.0625 -84.9138565063
+AblativeDef.OnDefense Player 318341.96875 0.0
+AblativeDef.OnDefense Player 318341.96875 -82.6745986938
+AblativeDef.OnDefense Player 318424.65625 0.0
+AblativeDef.OnDefense Player 318424.65625 -83.2755126953
+AblativeDef.OnDefense Player 318507.9375 -81.2945175171
+AblativeDef.OnDefense Player 318589.21875 -86.9859390259
+AblativeDef.OnDefense Player 318676.21875 -84.7674407959
+AblativeDef.OnDefense Player 318761.0 0.0
+AblativeDef.OnDefense Player 318761.0 0.0
+AblativeDef.OnDefense Player 318761.0 -70.3132705688
+AblativeDef.OnDefense Player 318831.3125 -80.4589767456
+AblativeDef.OnDefense Player 318911.78125 -81.2309875488
+AblativeDef.OnDefense Player 318993.0 -79.9558181763
+AblativeDef.OnDefense Player 319072.96875 -53.7607383728
+AblativeDef.OnDefense Player 319126.71875 -52.3918266296
+AblativeDef.OnDefense Player 319179.125 0.0
+AblativeDef.OnDefense Player 319179.125 0.0
+AblativeDef.OnDefense Player 319179.125 -86.6824035645
+AblativeDef.OnDefense Player 319265.8125 -84.5534286499
+AblativeDef.OnDefense Player 319350.375 -86.8314743042
+AblativeDef.OnDefense Player 319437.21875 0.0
+AblativeDef.OnDefense Player 319437.21875 0.0
+AblativeDef.OnDefense Player 319437.21875 -69.0010986328
+AblativeDef.OnDefense Player 319506.21875 0.0
+AblativeDef.OnDefense Player 319506.21875 -82.310043335
+AblativeDef.OnDefense Player 319588.53125 -56.5517578125
+AblativeDef.OnDefense Player 319645.09375 -79.2477493286
+AblativeDef.OnDefense Player 319724.34375 -41.6508827209
+AblativeDef.OnDefense Player 319766.0 0.0
+AblativeDef.OnDefense Player 319766.0 0.0
+AblativeDef.OnDefense Player 319766.0 -92.0097808838
+AblativeDef.OnDefense Player 319858.0 0.0
+AblativeDef.OnDefense Player 319858.0 -59.2349891663
+AblativeDef.OnDefense Player 319917.25 -84.2942199707
+AblativeDef.OnDefense Player 320001.53125 0.0
+AblativeDef.OnDefense Player 320001.53125 -92.8314666748
+AblativeDef.OnDefense Player 320094.375 -84.2845993042
+AblativeDef.OnDefense Player 320178.65625 -6.65746307373
+AblativeDef.OnDefense Player 320185.3125 -79.2068252563
+AblativeDef.OnDefense Player 320264.53125 -67.3007354736
+AblativeDef.OnDefense Player 320331.84375 -64.3173141479
+AblativeDef.OnDefense Player 320396.15625 0.0
+AblativeDef.OnDefense Player 320396.15625 -0.027204239741
+AblativeDef.OnDefense Player 320396.1875 0.0
+AblativeDef.OnDefense Player 320396.1875 0.0
+AblativeDef.OnDefense Player 320396.1875 -93.2314376831
+AblativeDef.OnDefense Player 320489.40625 0.0
+AblativeDef.OnDefense Player 320489.40625 -81.9321136475
+AblativeDef.OnDefense Player 320571.34375 -126.501861572
+AblativeDef.OnDefense Player 320697.84375 -76.8843307495
+AblativeDef.OnDefense Player 320774.71875 -81.5992431641
+AblativeDef.OnDefense Player 320856.3125 -93.6304016113
+AblativeDef.OnDefense Player 320949.9375 -6.44383144379
+AblativeDef.OnDefense Player 320956.375 -66.74168396
+AblativeDef.OnDefense Player 321023.125 0.0
+AblativeDef.OnDefense Player 321023.125 0.0
+AblativeDef.OnDefense Player 321023.125 -152.34375
+AblativeDef.OnDefense Player 321175.46875 -145.049087524
+AblativeDef.OnDefense Player 321320.53125 0.0
+AblativeDef.OnDefense Player 321320.53125 0.0
+AblativeDef.OnDefense Player 321320.53125 -99.4034881592
+AblativeDef.OnDefense Player 321419.9375 -151.7578125
+AblativeDef.OnDefense Player 321571.6875 0.0
+AblativeDef.OnDefense Player 321571.6875 -80.9850311279
+AblativeDef.OnDefense Player 321652.6875 -128.978027344
+AblativeDef.OnDefense Player 321781.65625 -152.05078125
+AblativeDef.OnDefense Player 321933.71875 -76.7064285278
+AblativeDef.OnDefense Player 322010.4375 -44.23828125
+AblativeDef.OnDefense Player 322054.6875 -113.440734863
+AblativeDef.OnDefense Player 322168.125 -81.0388870239
+AblativeDef.OnDefense Player 322249.15625 0.0
+AblativeDef.OnDefense Player 322249.15625 -58.0264701843
+AblativeDef.OnDefense Player 322307.1875 0.0
+AblativeDef.OnDefense Player 322307.1875 -134.892318726
+AblativeDef.OnDefense Player 322442.09375 -134.143280029
+AblativeDef.OnDefense Player 322576.25 0.0
+AblativeDef.OnDefense Player 322576.25 0.0
+AblativeDef.OnDefense Player 322576.25 0.0
+AblativeDef.OnDefense Player 322576.25 0.0
+AblativeDef.OnDefense Player 322576.25 -0.228097096086
+AblativeDef.OnDefense Player 322576.46875 0.0
+AblativeDef.OnDefense Player 322576.46875 -81.3298110962
+AblativeDef.OnDefense Player 322657.8125 -126.372123718
+AblativeDef.OnDefense Player 322784.1875 -89.5678405762
+AblativeDef.OnDefense Player 322873.75 -77.5644302368
+AblativeDef.OnDefense Player 322951.3125 -62.1379966736
+AblativeDef.OnDefense Player 323013.4375 -40.9482536316
+AblativeDef.OnDefense Player 323054.375 0.0
+AblativeDef.OnDefense Player 323054.375 -132.529251099
+AblativeDef.OnDefense Player 323186.90625 -132.366241455
+AblativeDef.OnDefense Player 323319.28125 0.0
+AblativeDef.OnDefense Player 323319.28125 0.0
+AblativeDef.OnDefense Player 323319.28125 0.0
+AblativeDef.OnDefense Player 323319.28125 0.0
+AblativeDef.OnDefense Player 323319.28125 -120.264884949
+AblativeDef.OnDefense Player 323439.53125 -82.5823745728
+AblativeDef.OnDefense Player 323522.125 -82.312828064
+AblativeDef.OnDefense Player 323604.4375 -84.9789199829
+AblativeDef.OnDefense Player 323689.40625 -63.6212997437
+AblativeDef.OnDefense Player 323753.03125 -47.0108070374
+AblativeDef.OnDefense Player 323800.03125 0.0
+AblativeDef.OnDefense Player 323800.03125 -132.286376953
+AblativeDef.OnDefense Player 323932.3125 -132.227783203
+AblativeDef.OnDefense Player 324064.53125 0.0
+AblativeDef.OnDefense Player 324064.53125 0.0
+AblativeDef.OnDefense Player 324064.53125 0.0
+AblativeDef.OnDefense Player 324064.53125 0.0
+AblativeDef.OnDefense Player 324064.53125 -88.314666748
+AblativeDef.OnDefense Player 324152.84375 -118.38369751
+AblativeDef.OnDefense Player 324271.21875 -88.3218307495
+AblativeDef.OnDefense Player 324359.53125 -84.1224136353
+AblativeDef.OnDefense Player 324443.65625 -70.3488693237
+AblativeDef.OnDefense Player 324514.0 -51.0524787903
+AblativeDef.OnDefense Player 324565.0625 0.0
+AblativeDef.OnDefense Player 324565.0625 -132.231933594
+AblativeDef.OnDefense Player 324697.28125 0.0
+AblativeDef.OnDefense Player 324697.28125 0.0
+AblativeDef.OnDefense Player 324697.28125 0.0
+AblativeDef.OnDefense Player 324697.28125 -132.236373901
+AblativeDef.OnDefense Player 324829.53125 0.0
+AblativeDef.OnDefense Player 324829.53125 -118.18825531
+AblativeDef.OnDefense Player 324947.71875 -91.623085022
+AblativeDef.OnDefense Player 325039.34375 -136.522399902
+AblativeDef.OnDefense Player 325175.875 -75.570350647
+AblativeDef.OnDefense Player 325251.4375 -132.239227295
+AblativeDef.OnDefense Player 325383.6875 -89.3059005737
+AblativeDef.OnDefense Player 325473.0 -90.4007644653
+AblativeDef.OnDefense Player 325563.40625 -74.9022903442
+AblativeDef.OnDefense Player 325638.3125 -41.7868766785
+AblativeDef.OnDefense Player 325680.09375 -53.138835907
+AblativeDef.OnDefense Player 325733.21875 0.0
+AblativeDef.OnDefense Player 325733.21875 0.0
+AblativeDef.OnDefense Player 325733.21875 0.0
+AblativeDef.OnDefense Player 325733.21875 0.0
+AblativeDef.OnDefense Player 325733.21875 0.0
+AblativeDef.OnDefense Player 325733.21875 -117.677429199
+AblativeDef.OnDefense Player 325850.90625 -132.061065674
+AblativeDef.OnDefense Player 325982.96875 -95.9826202393
+AblativeDef.OnDefense Player 326078.9375 -151.7578125
+AblativeDef.OnDefense Player 326230.6875 -65.1951065063
+AblativeDef.OnDefense Player 326295.875 -61.2042312622
+AblativeDef.OnDefense Player 326357.09375 -90.0866928101
+AblativeDef.OnDefense Player 326447.1875 -97.6502380371
+AblativeDef.OnDefense Player 326544.84375 -152.05078125
+AblativeDef.OnDefense Player 326696.90625 -4.39453125
+AblativeDef.OnDefense Player 326701.3125 -89.1273880005
+AblativeDef.OnDefense Player 326790.4375 -7.02483129501
+AblativeDef.OnDefense Player 326797.46875 0.0
+AblativeDef.OnDefense Player 326797.46875 0.0
+AblativeDef.OnDefense Player 326797.46875 0.0
+AblativeDef.OnDefense Player 326797.46875 0.0
+AblativeDef.OnDefense Player 326797.46875 0.0
+AblativeDef.OnDefense Player 326797.46875 -94.9414978027
+AblativeDef.OnDefense Player 326892.40625 -99.3234786987
+AblativeDef.OnDefense Player 326991.71875 -146.943283081
+AblativeDef.OnDefense Player 327138.65625 -93.5962982178
+AblativeDef.OnDefense Player 327232.25 -88.0965881348
+AblativeDef.OnDefense Player 327320.34375 -73.2724990845
+AblativeDef.OnDefense Player 327393.625 -49.1219100952
+AblativeDef.OnDefense Player 327442.75 -96.09375
+AblativeDef.OnDefense Player 327538.84375 -62.3945083618
+AblativeDef.OnDefense Player 327601.25 -73.1316452026
+AblativeDef.OnDefense Player 327674.375 0.0
+AblativeDef.OnDefense Player 327674.375 0.0
+AblativeDef.OnDefense Player 327674.375 0.0
+AblativeDef.OnDefense Player 327674.375 0.0
+AblativeDef.OnDefense Player 327674.375 -65.8828964233
+AblativeDef.OnDefense Player 327740.25 -45.9763679504
+AblativeDef.OnDefense Player 327786.21875 -64.7184371948
+AblativeDef.OnDefense Player 327850.9375 -43.7570877075
+AblativeDef.OnDefense Player 327894.6875 0.0
+AblativeDef.OnDefense Player 327894.6875 0.0
+AblativeDef.OnDefense Player 327894.6875 -62.4117622375
+AblativeDef.OnDefense Player 327957.09375 -62.4059257507
+AblativeDef.OnDefense Player 328019.5 -62.0514793396
+AblativeDef.OnDefense Player 328081.5625 -62.4171295166
+AblativeDef.OnDefense Player 328143.96875 0.0
+AblativeDef.OnDefense Player 328143.96875 -62.1301612854
+AblativeDef.OnDefense Player 328206.09375 -19.6981163025
+AblativeDef.OnDefense Player 328225.78125 0.0
+AblativeDef.OnDefense Player 328225.78125 -68.8829116821
+AblativeDef.OnDefense Player 328294.65625 0.0
+AblativeDef.OnDefense Player 328294.65625 -73.4578704834
+AblativeDef.OnDefense Player 328368.125 0.0
+AblativeDef.OnDefense Player 328368.125 -75.657623291
+AblativeDef.OnDefense Player 328443.78125 -60.4043388367
+AblativeDef.OnDefense Player 328504.1875 0.0
+AblativeDef.OnDefense Player 328504.1875 0.0
+AblativeDef.OnDefense Player 328504.1875 0.0
+AblativeDef.OnDefense Player 328504.1875 -80.6785202026
+AblativeDef.OnDefense Player 328584.875 -140.829360962
+AblativeDef.OnDefense Player 328725.71875 -77.4043884277
+AblativeDef.OnDefense Player 328803.125 0.0
+AblativeDef.OnDefense Player 328803.125 0.0
+AblativeDef.OnDefense Player 328803.125 -76.9288330078
+AblativeDef.OnDefense Player 328880.0625 -53.8927650452
+AblativeDef.OnDefense Player 328933.96875 -66.3841934204
+AblativeDef.OnDefense Player 329000.34375 -133.154968262
+AblativeDef.OnDefense Player 329133.5 -83.1198120117
+AblativeDef.OnDefense Player 329216.625 -41.725856781
+AblativeDef.OnDefense Player 329258.34375 -91.0598449707
+AblativeDef.OnDefense Player 329349.40625 0.0
+AblativeDef.OnDefense Player 329349.40625 0.0
+AblativeDef.OnDefense Player 329349.40625 0.0
+data/TGL/Maelstrom/Episode 2/E2M2.tgl E2M2Serris3Scan1
+AblativeDef.OnDefense Player 329349.40625 -82.9086685181
+AblativeDef.OnDefense Player 329432.3125 -137.705078125
+AblativeDef.OnDefense Player 329570.03125 -79.6987686157
+AblativeDef.OnDefense Player 329649.71875 0.0
+AblativeDef.OnDefense Player 329649.71875 0.0
+AblativeDef.OnDefense Player 329649.71875 -79.5539093018
+AblativeDef.OnDefense Player 329729.28125 -56.7395248413
+AblativeDef.OnDefense Player 329786.03125 -69.3052062988
+AblativeDef.OnDefense Player 329855.34375 -131.952362061
+AblativeDef.OnDefense Player 329987.28125 -83.8048629761
+AblativeDef.OnDefense Player 330071.09375 -41.9921684265
+AblativeDef.OnDefense Player 330113.09375 -90.4836196899
+AblativeDef.OnDefense Player 330203.5625 0.0
+AblativeDef.OnDefense Player 330203.5625 0.0
+AblativeDef.OnDefense Player 330203.5625 0.0
+AblativeDef.OnDefense Player 330203.5625 -137.438751221
+AblativeDef.OnDefense Player 330341.0 0.0
+AblativeDef.OnDefense Player 330341.0 -83.2030410767
+AblativeDef.OnDefense Player 330424.1875 -79.9971542358
+AblativeDef.OnDefense Player 330504.1875 -137.436004639
+AblativeDef.OnDefense Player 330641.625 0.0
+AblativeDef.OnDefense Player 330641.625 0.0
+AblativeDef.OnDefense Player 330641.625 -43.9984321594
+AblativeDef.OnDefense Player 330685.625 -83.8672561646
+AblativeDef.OnDefense Player 330769.5 -82.8830337524
+AblativeDef.OnDefense Player 330852.375 -2.24008202553
+AblativeDef.OnDefense Player 330854.625 -132.612472534
+AblativeDef.OnDefense Player 330987.25 -75.1411819458
+AblativeDef.OnDefense Player 331062.40625 -131.592941284
+AblativeDef.OnDefense Player 331194.0 0.0
+AblativeDef.OnDefense Player 331194.0 0.0
+AblativeDef.OnDefense Player 331194.0 0.0
+AblativeDef.OnDefense Player 331194.0 0.0
+AblativeDef.OnDefense Player 331194.0 -139.62739563
+AblativeDef.OnDefense Player 331333.625 -80.0329666138
+AblativeDef.OnDefense Player 331413.65625 0.0
+AblativeDef.OnDefense Player 331413.65625 -84.5977401733
+AblativeDef.OnDefense Player 331498.25 -82.2378997803
+AblativeDef.OnDefense Player 331580.5 -73.8744049072
+AblativeDef.OnDefense Player 331654.375 0.0
+AblativeDef.OnDefense Player 331654.375 -54.1088676453
+AblativeDef.OnDefense Player 331708.46875 -83.4034042358
+AblativeDef.OnDefense Player 331791.875 -45.870300293
+AblativeDef.OnDefense Player 331837.75 -129.817474365
+AblativeDef.OnDefense Player 331967.5625 -16.11328125
+AblativeDef.OnDefense Player 331983.6875 -85.3017654419
+AblativeDef.OnDefense Player 332069.0 0.0
+AblativeDef.OnDefense Player 332069.0 0.0
+AblativeDef.OnDefense Player 332069.0 0.0
+AblativeDef.OnDefense Player 332069.0 -93.6701812744
+AblativeDef.OnDefense Player 332162.65625 -144.599197388
+AblativeDef.OnDefense Player 332307.25 0.0
+AblativeDef.OnDefense Player 332307.25 0.0
+AblativeDef.OnDefense Player 332307.25 -0.0355747751892
+AblativeDef.OnDefense Player 332307.28125 -95.8729095459
+AblativeDef.OnDefense Player 332403.15625 -80.5133514404
+AblativeDef.OnDefense Player 332483.65625 -97.4557876587
+AblativeDef.OnDefense Player 332581.125 0.0
+AblativeDef.OnDefense Player 332581.125 0.0
+AblativeDef.OnDefense Player 332581.125 -81.4454727173
+AblativeDef.OnDefense Player 332662.5625 -59.3974952698
+AblativeDef.OnDefense Player 332721.96875 -1.00864946842
+AblativeDef.OnDefense Player 332722.96875 -49.6053733826
+AblativeDef.OnDefense Player 332772.5625 -133.421203613
+AblativeDef.OnDefense Player 332905.96875 -94.0839691162
+AblativeDef.OnDefense Player 333000.0625 0.0
+AblativeDef.OnDefense Player 333000.0625 0.0
+AblativeDef.OnDefense Player 333000.0625 0.0
+AblativeDef.OnDefense Player 333000.0625 -137.089096069
+AblativeDef.OnDefense Player 333137.15625 -104.601539612
+AblativeDef.OnDefense Player 333241.75 0.0
+AblativeDef.OnDefense Player 333241.75 -61.0491027832
+AblativeDef.OnDefense Player 333302.8125 -128.304229736
+AblativeDef.OnDefense Player 333431.125 -152.05078125
+AblativeDef.OnDefense Player 333583.1875 0.0
+AblativeDef.OnDefense Player 333583.1875 0.0
+AblativeDef.OnDefense Player 333583.1875 -146.673675537
+AblativeDef.OnDefense Player 333729.875 -111.9140625
+AblativeDef.OnDefense Player 333841.78125 -87.890625
+AblativeDef.OnDefense Player 333929.6875 -64.5385360718
+AblativeDef.OnDefense Player 333994.21875 -39.5977401733
+AblativeDef.OnDefense Player 334033.8125 0.0
+
+
+AblativeDef.OnDefense Player 334033.8125 -42.9537239075
+AblativeDef.OnDefense Player 334076.78125 -37.2054901123
+AblativeDef.OnDefense Player 334114.0 0.0
+AblativeDef.OnDefense Player 334114.0 0.0
+AblativeDef.OnDefense Player 334114.0 -8.41310691833
+AblativeDef.OnDefense Player 334122.40625 0.0
+AblativeDef.OnDefense Player 334122.40625 -24.5342769623
+AblativeDef.OnDefense Player 334146.9375 -11.7678041458
+AblativeDef.OnDefense Player 334158.71875 0.0
+AblativeDef.OnDefense Player 334158.71875 -48.9453010559
+AblativeDef.OnDefense Player 334207.65625 -33.4789619446
+Ship not inside Starbase - bye
+AblativeDef.OnDefense Player 334241.125 0.0
+AblativeDef.OnDefense Player 334241.125 -48.9453010559
+AblativeDef.OnDefense Player 334290.0625 -48.9453010559
+AblativeDef.OnDefense Player 334339.0 -49.0396080017
+AblativeDef.OnDefense Player 334388.03125 -14.1460409164
+AblativeDef.OnDefense Player 334402.1875 0.0
+AblativeDef.OnDefense Player 334402.1875 -48.9453010559
+AblativeDef.OnDefense Player 334451.125 -45.0787162781
+
+
+AblativeDef.OnDefense Player 334496.21875 0.0
+AblativeDef.OnDefense Player 334496.21875 -48.9276580811
+AblativeDef.OnDefense Player 334545.15625 -49.010307312
+AblativeDef.OnDefense Player 334594.15625 0.0
+AblativeDef.OnDefense Player 334594.15625 0.0
+AblativeDef.OnDefense Player 334594.15625 -50.3175430298
+AblativeDef.OnDefense Player 334644.46875 -52.3414726257
+AblativeDef.OnDefense Player 334696.8125 0.0
+AblativeDef.OnDefense Player 334696.8125 0.0
+AblativeDef.OnDefense Player 334696.8125 -55.0782661438
+AblativeDef.OnDefense Player 334751.90625 0.0
+AblativeDef.OnDefense Player 334751.90625 -27.637014389
+AblativeDef.OnDefense Player 334779.53125 -68.5633163452
+AblativeDef.OnDefense Player 334848.09375 -36.6648445129
+AblativeDef.OnDefense Player 334884.75 0.0
+AblativeDef.OnDefense Player 334884.75 -62.3375282288
+AblativeDef.OnDefense Player 334947.09375 0.0
+AblativeDef.OnDefense Player 334947.09375 0.0
+AblativeDef.OnDefense Player 334947.09375 -59.7442893982
+AblativeDef.OnDefense Player 335006.84375 -87.5868911743
+AblativeDef.OnDefense Player 335094.4375 -75.6853485107
+
+
+AblativeDef.OnDefense Player 335170.125 0.0
+AblativeDef.OnDefense Player 335170.125 -40.4483146667
+AblativeDef.OnDefense Player 335210.5625 -80.3830413818
+AblativeDef.OnDefense Player 335290.9375 -152.05078125
+AblativeDef.OnDefense Player 335443.0 -140.0390625
+AblativeDef.OnDefense Player 335583.03125 0.0
+AblativeDef.OnDefense Player 335583.03125 0.0
+AblativeDef.OnDefense Player 335583.03125 0.0
+AblativeDef.OnDefense Player 335583.03125 0.0
+AblativeDef.OnDefense Player 335583.03125 0.0
+AblativeDef.OnDefense Player 335583.03125 -68.8775939941
+AblativeDef.OnDefense Player 335651.90625 -152.34375
+AblativeDef.OnDefense Player 335804.25 -80.4905395508
+AblativeDef.OnDefense Player 335884.75 -121.731216431
+AblativeDef.OnDefense Player 336006.46875 -93.5056838989
+AblativeDef.OnDefense Player 336099.96875 -119.82421875
+
+
+AblativeDef.OnDefense Player 336219.78125 -69.1023406982
+AblativeDef.OnDefense Player 336288.875 0.0
+AblativeDef.OnDefense Player 336288.875 -55.1779060364
+AblativeDef.OnDefense Player 336344.0625 -121.273361206
+AblativeDef.OnDefense Player 336465.34375 0.0
+AblativeDef.OnDefense Player 336465.34375 -93.9805755615
+AblativeDef.OnDefense Player 336559.3125 0.0
+AblativeDef.OnDefense Player 336559.3125 0.0
+AblativeDef.OnDefense Player 336559.3125 -152.05078125
+AblativeDef.OnDefense Player 336711.375 -152.05078125
+AblativeDef.OnDefense Player 336863.4375 0.0
+AblativeDef.OnDefense Player 336863.4375 0.0
+AblativeDef.OnDefense Player 336863.4375 0.0
+AblativeDef.OnDefense Player 336863.4375 0.0
+AblativeDef.OnDefense Player 336863.4375 0.0
+AblativeDef.OnDefense Player 336863.4375 0.0
+AblativeDef.OnDefense Player 336863.4375 -152.05078125
+AblativeDef.OnDefense Player 337015.5 -69.5336990356
+AblativeDef.OnDefense Player 337085.03125 -81.1879425049
+AblativeDef.OnDefense Player 337166.21875 -36.5110931396
+AblativeDef.OnDefense Player 337202.71875 -94.1865463257
+AblativeDef.OnDefense Player 337296.90625 -121.211784363
+AblativeDef.OnDefense Player 337418.125 -76.6842575073
+AblativeDef.OnDefense Player 337494.8125 -152.05078125
+AblativeDef.OnDefense Player 337646.875 0.0
+AblativeDef.OnDefense Player 337646.875 -53.479675293
+AblativeDef.OnDefense Player 337700.34375 -47.1896133423
+AblativeDef.OnDefense Player 337747.53125 0.0
+AblativeDef.OnDefense Player 337747.53125 -152.05078125
+AblativeDef.OnDefense Player 337899.59375 0.0
+AblativeDef.OnDefense Player 337899.59375 -152.05078125
+AblativeDef.OnDefense Player 338051.65625 0.0
+AblativeDef.OnDefense Player 338051.65625 0.0
+AblativeDef.OnDefense Player 338051.65625 0.0
+AblativeDef.OnDefense Player 338051.65625 0.0
+AblativeDef.OnDefense Player 338051.65625 0.0
+AblativeDef.OnDefense Player 338051.65625 -69.4351272583
+AblativeDef.OnDefense Player 338121.09375 -94.2270431519
+AblativeDef.OnDefense Player 338215.3125 -152.05078125
+AblativeDef.OnDefense Player 338367.375 -81.0868835449
+AblativeDef.OnDefense Player 338448.46875 -121.181343079
+AblativeDef.OnDefense Player 338569.65625 -49.3671684265
+AblativeDef.OnDefense Player 338619.03125 -72.0703125
+AblativeDef.OnDefense Player 338691.09375 -86.1578369141
+AblativeDef.OnDefense Player 338777.25 -74.43699646
+AblativeDef.OnDefense Player 338851.6875 -81.0868835449
+AblativeDef.OnDefense Player 338932.78125 -4.37462949753
+AblativeDef.OnDefense Player 338937.15625 0.0
+AblativeDef.OnDefense Player 338937.15625 0.0
+AblativeDef.OnDefense Player 338937.15625 -152.05078125
+AblativeDef.OnDefense Player 339089.21875 0.0
+AblativeDef.OnDefense Player 339089.21875 0.0
+AblativeDef.OnDefense Player 339089.21875 0.0
+AblativeDef.OnDefense Player 339089.21875 -69.4351272583
+AblativeDef.OnDefense Player 339158.65625 -151.7578125
+AblativeDef.OnDefense Player 339310.40625 0.0
+AblativeDef.OnDefense Player 339310.40625 -94.2263336182
+AblativeDef.OnDefense Player 339404.625 -152.05078125
+AblativeDef.OnDefense Player 339556.6875 -121.181343079
+AblativeDef.OnDefense Player 339677.875 -49.3671684265
+AblativeDef.OnDefense Player 339727.25 -72.0703125
+AblativeDef.OnDefense Player 339799.3125 -152.34375
+AblativeDef.OnDefense Player 339951.65625 -81.0868835449
+AblativeDef.OnDefense Player 340032.75 -86.1578369141
+AblativeDef.OnDefense Player 340118.90625 -74.4369888306
+AblativeDef.OnDefense Player 340193.34375 -47.75390625
+AblativeDef.OnDefense Player 340241.09375 -81.0868835449
+AblativeDef.OnDefense Player 340322.1875 0.0
+AblativeDef.OnDefense Player 340322.1875 0.0
+AblativeDef.OnDefense Player 340322.1875 0.0
+AblativeDef.OnDefense Player 340322.1875 0.0
+AblativeDef.OnDefense Player 340322.1875 0.0
+AblativeDef.OnDefense Player 340322.1875 0.0
+AblativeDef.OnDefense Player 340322.1875 -152.05078125
+AblativeDef.OnDefense Player 340474.25 -69.4351272583
+AblativeDef.OnDefense Player 340543.6875 0.0
+AblativeDef.OnDefense Player 340543.6875 -34.6506690979
+AblativeDef.OnDefense Player 340578.34375 -121.414833069
+AblativeDef.OnDefense Player 340699.75 -152.34375
+AblativeDef.OnDefense Player 340852.09375 -94.4078903198
+AblativeDef.OnDefense Player 340946.5 -152.05078125
+AblativeDef.OnDefense Player 341098.5625 0.0
+AblativeDef.OnDefense Player 341098.5625 -54.1696968079
+AblativeDef.OnDefense Player 341152.71875 -49.5641403198
+AblativeDef.OnDefense Player 341202.28125 -95.80078125
+AblativeDef.OnDefense Player 341298.09375 -81.0868835449
+AblativeDef.OnDefense Player 341379.1875 -61.7135238647
+AblativeDef.OnDefense Player 341440.90625 0.0
+AblativeDef.OnDefense Player 341440.90625 0.0
+AblativeDef.OnDefense Player 341440.90625 0.0
+AblativeDef.OnDefense Player 341440.90625 0.0
+AblativeDef.OnDefense Player 341440.90625 0.0
+AblativeDef.OnDefense Player 341440.90625 -69.4351272583
+AblativeDef.OnDefense Player 341510.34375 -152.05078125
+AblativeDef.OnDefense Player 341662.40625 -121.181343079
+AblativeDef.OnDefense Player 341783.59375 0.0
+AblativeDef.OnDefense Player 341783.59375 -152.05078125
+AblativeDef.OnDefense Player 341935.65625 -94.2263336182
+AblativeDef.OnDefense Player 342029.875 -120.1171875
+AblativeDef.OnDefense Player 342150.0 -68.7661895752
+AblativeDef.OnDefense Player 342218.78125 -121.414833069
+AblativeDef.OnDefense Player 342340.1875 0.0
+AblativeDef.OnDefense Player 342340.1875 -67.96875
+AblativeDef.OnDefense Player 342408.15625 -81.0868835449
+AblativeDef.OnDefense Player 342489.25 -94.2263336182
+AblativeDef.OnDefense Player 342583.46875 -70.104057312
+AblativeDef.OnDefense Player 342653.5625 -47.0272674561
+AblativeDef.OnDefense Player 342700.59375 -21.9409637451
+AblativeDef.OnDefense Player 342722.53125 -94.2263336182
+AblativeDef.OnDefense Player 342816.75 -27.233045578
+AblativeDef.OnDefense Player 342843.96875 0.0
+AblativeDef.OnDefense Player 342843.96875 0.0
+AblativeDef.OnDefense Player 342843.96875 0.0
+AblativeDef.OnDefense Player 342843.96875 -152.05078125
+AblativeDef.OnDefense Player 342996.03125 0.0
+AblativeDef.OnDefense Player 342996.03125 0.0
+AblativeDef.OnDefense Player 342996.03125 -120.947853088
+AblativeDef.OnDefense Player 343116.96875 -151.7578125
+AblativeDef.OnDefense Player 343268.71875 -136.23046875
+AblativeDef.OnDefense Player 343404.9375 -53.9362068176
+AblativeDef.OnDefense Player 343458.875 -91.69921875
+AblativeDef.OnDefense Player 343550.5625 -69.5689086914
+AblativeDef.OnDefense Player 343620.125 -81.2431182861
+AblativeDef.OnDefense Player 343701.375 0.0
+AblativeDef.OnDefense Player 343701.375 -59.5262069702
+AblativeDef.OnDefense Player 343760.90625 -67.4283294678
+AblativeDef.OnDefense Player 343828.34375 -94.2263336182
+AblativeDef.OnDefense Player 343922.5625 0.0
+AblativeDef.OnDefense Player 343922.5625 -94.2263336182
+AblativeDef.OnDefense Player 344016.78125 -2.5417509079
+AblativeDef.OnDefense Player 344019.3125 0.0
+AblativeDef.OnDefense Player 344019.3125 0.0
+AblativeDef.OnDefense Player 344019.3125 -152.05078125
+AblativeDef.OnDefense Player 344171.375 0.0
+AblativeDef.OnDefense Player 344171.375 0.0
+AblativeDef.OnDefense Player 344171.375 -121.181343079
+AblativeDef.OnDefense Player 344292.5625 -152.05078125
+AblativeDef.OnDefense Player 344444.625 -139.16015625
+AblativeDef.OnDefense Player 344583.78125 -54.4031867981
+AblativeDef.OnDefense Player 344638.1875 -91.9921875
+AblativeDef.OnDefense Player 344730.1875 -69.836479187
+AblativeDef.OnDefense Player 344800.03125 -81.5555953979
+AblativeDef.OnDefense Player 344881.59375 -59.2137336731
+AblativeDef.OnDefense Player 344940.8125 -67.8296890259
+AblativeDef.OnDefense Player 345008.65625 0.0
+AblativeDef.OnDefense Player 345008.65625 -94.2263336182
+AblativeDef.OnDefense Player 345102.875 0.0
+AblativeDef.OnDefense Player 345102.875 0.0
+AblativeDef.OnDefense Player 345102.875 0.0
+AblativeDef.OnDefense Player 345102.875 -94.2263336182
+AblativeDef.OnDefense Player 345197.09375 0.0
+AblativeDef.OnDefense Player 345197.09375 -152.34375
+AblativeDef.OnDefense Player 345349.4375 -121.414833069
+AblativeDef.OnDefense Player 345470.84375 -152.05078125
+AblativeDef.OnDefense Player 345622.90625 0.0
+AblativeDef.OnDefense Player 345622.90625 0.0
+AblativeDef.OnDefense Player 345622.90625 -95.80078125
+AblativeDef.OnDefense Player 345718.71875 -105.070526123
+AblativeDef.OnDefense Player 345823.78125 -152.05078125
+AblativeDef.OnDefense Player 345975.84375 0.0
+AblativeDef.OnDefense Player 345975.84375 -69.4351272583
+AblativeDef.OnDefense Player 346045.28125 -81.0868835449
+AblativeDef.OnDefense Player 346126.375 -36.2469291687
+AblativeDef.OnDefense Player 346162.625 -47.4941596985
+AblativeDef.OnDefense Player 346210.125 0.0
+AblativeDef.OnDefense Player 346210.125 0.0
+AblativeDef.OnDefense Player 346210.125 0.0
+AblativeDef.OnDefense Player 346210.125 0.0
+AblativeDef.OnDefense Player 346210.125 -94.2263336182
+AblativeDef.OnDefense Player 346304.34375 -152.05078125
+AblativeDef.OnDefense Player 346456.40625 -121.181343079
+AblativeDef.OnDefense Player 346577.59375 -152.05078125
+AblativeDef.OnDefense Player 346729.65625 -94.4078903198
+AblativeDef.OnDefense Player 346824.0625 0.0
+AblativeDef.OnDefense Player 346824.0625 0.0
+AblativeDef.OnDefense Player 346824.0625 -96.09375
+AblativeDef.OnDefense Player 346920.15625 -105.304016113
+AblativeDef.OnDefense Player 347025.46875 -152.05078125
+AblativeDef.OnDefense Player 347177.53125 0.0
+AblativeDef.OnDefense Player 347177.53125 -94.0447845459
+AblativeDef.OnDefense Player 347271.5625 -69.4351272583
+AblativeDef.OnDefense Player 347341.0 -81.0868835449
+AblativeDef.OnDefense Player 347422.09375 -29.7747955322
+AblativeDef.OnDefense Player 347451.875 -38.4342460632
+AblativeDef.OnDefense Player 347490.3125 -48.6982383728
+AblativeDef.OnDefense Player 347539.0 0.0
+AblativeDef.OnDefense Player 347539.0 0.0
+AblativeDef.OnDefense Player 347539.0 0.0
+AblativeDef.OnDefense Player 347539.0 -152.05078125
+AblativeDef.OnDefense Player 347691.0625 0.0
+AblativeDef.OnDefense Player 347691.0625 0.0
+AblativeDef.OnDefense Player 347691.0625 -121.181343079
+AblativeDef.OnDefense Player 347812.25 -152.05078125
+AblativeDef.OnDefense Player 347964.3125 -152.05078125
+AblativeDef.OnDefense Player 348116.375 0.0
+AblativeDef.OnDefense Player 348116.375 0.0
+AblativeDef.OnDefense Player 348116.375 -67.0116500854
+AblativeDef.OnDefense Player 348183.375 -81.0868835449
+AblativeDef.OnDefense Player 348264.46875 -94.2263336182
+AblativeDef.OnDefense Player 348358.6875 -107.8125
+AblativeDef.OnDefense Player 348466.5 -52.1058921814
+AblativeDef.OnDefense Player 348518.59375 -69.5689086914
+AblativeDef.OnDefense Player 348588.15625 -69.212890625
+AblativeDef.OnDefense Player 348657.375 -69.3013381958
+AblativeDef.OnDefense Player 348726.6875 0.0
+
+# DS9FX has...
+
+# taken a console dump
+AblativeDef.OnDefense Player 348726.6875 0.0
+AblativeDef.OnDefense Player 348726.6875 0.0
+AblativeDef.OnDefense Player 348726.6875 0.0
+AblativeDef.OnDefense Player 348726.6875 0.0
+AblativeDef.OnDefense Player 348726.6875 -120.947853088
+AblativeDef.OnDefense Player 348847.625 -151.7578125
+AblativeDef.OnDefense Player 348999.375 0.0
+AblativeDef.OnDefense Player 348999.375 -152.05078125
+AblativeDef.OnDefense Player 349151.4375 -94.2263336182
+AblativeDef.OnDefense Player 349245.65625 -108.10546875
+AblativeDef.OnDefense Player 349353.75 -121.181343079
+AblativeDef.OnDefense Player 349474.9375 0.0
+AblativeDef.OnDefense Player 349474.9375 0.0
+AblativeDef.OnDefense Player 349474.9375 -81.0868835449
+AblativeDef.OnDefense Player 349556.03125 -91.6845855713
+AblativeDef.OnDefense Player 349647.71875 -152.05078125
+AblativeDef.OnDefense Player 349799.78125 -12.01171875
+AblativeDef.OnDefense Player 349811.78125 -44.8399505615
+AblativeDef.OnDefense Player 349856.625 -69.5689086914
+AblativeDef.OnDefense Player 349926.1875 -51.1063919067
+AblativeDef.OnDefense Player 349977.28125 0.0
+AblativeDef.OnDefense Player 349977.28125 0.0
+AblativeDef.OnDefense Player 349977.28125 0.0
+AblativeDef.OnDefense Player 349977.28125 -121.181343079
+AblativeDef.OnDefense Player 350098.46875 -152.34375
+AblativeDef.OnDefense Player 350250.8125 0.0
+AblativeDef.OnDefense Player 350250.8125 0.0
+AblativeDef.OnDefense Player 350250.8125 -94.2263336182
+AblativeDef.OnDefense Player 350345.03125 -111.62109375
+AblativeDef.OnDefense Player 350456.65625 -121.181343079
+AblativeDef.OnDefense Player 350577.84375 0.0
+AblativeDef.OnDefense Player 350577.84375 0.0
+AblativeDef.OnDefense Player 350577.84375 -152.05078125
+AblativeDef.OnDefense Player 350729.90625 -81.0868835449
+AblativeDef.OnDefense Player 350811.0 -91.6845855713
+AblativeDef.OnDefense Player 350902.6875 -42.6526374817
+AblativeDef.OnDefense Player 350945.34375 -69.4351272583
+AblativeDef.OnDefense Player 351014.78125 -152.05078125
+AblativeDef.OnDefense Player 351166.84375 0.0
+AblativeDef.OnDefense Player 351166.84375 -51.2401771545
+AblativeDef.OnDefense Player 351218.09375 0.0
+AblativeDef.OnDefense Player 351218.09375 0.0
+AblativeDef.OnDefense Player 351218.09375 -152.05078125
+AblativeDef.OnDefense Player 351370.15625 0.0
+AblativeDef.OnDefense Player 351370.15625 0.0
+AblativeDef.OnDefense Player 351370.15625 -120.714363098
+AblativeDef.OnDefense Player 351490.875 -152.05078125
+AblativeDef.OnDefense Player 351642.9375 0.0
+AblativeDef.OnDefense Player 351642.9375 0.0
+AblativeDef.OnDefense Player 351642.9375 0.0
+AblativeDef.OnDefense Player 351642.9375 -63.275806427
+AblativeDef.OnDefense Player 351706.21875 -81.0868835449
+AblativeDef.OnDefense Player 351787.3125 -94.2263336182
+AblativeDef.OnDefense Player 351881.53125 -52.1058921814
+AblativeDef.OnDefense Player 351933.625 -69.3013381958
+AblativeDef.OnDefense Player 352002.9375 -151.7578125
+AblativeDef.OnDefense Player 352154.6875 -66.244392395
+AblativeDef.OnDefense Player 352220.9375 -88.18359375
+AblativeDef.OnDefense Player 352309.125 -69.5689086914
+AblativeDef.OnDefense Player 352378.6875 0.0
+AblativeDef.OnDefense Player 352378.6875 0.0
+AblativeDef.OnDefense Player 352378.6875 0.0
+AblativeDef.OnDefense Player 352378.6875 -152.05078125
+AblativeDef.OnDefense Player 352530.75 0.0
+AblativeDef.OnDefense Player 352530.75 0.0
+AblativeDef.OnDefense Player 352530.75 -121.060951233
+AblativeDef.OnDefense Player 352651.8125 -151.171875
+AblativeDef.OnDefense Player 352803.0 0.0
+AblativeDef.OnDefense Player 352803.0 0.0
+AblativeDef.OnDefense Player 352803.0 0.0
+AblativeDef.OnDefense Player 352803.0 -64.0654830933
+AblativeDef.OnDefense Player 352867.0625 -81.146484375
+AblativeDef.OnDefense Player 352948.21875 -94.0823745728
+AblativeDef.OnDefense Player 353042.3125 -52.0170669556
+AblativeDef.OnDefense Player 353094.34375 -150.5859375
+AblativeDef.OnDefense Player 353244.9375 -68.9204025269
+AblativeDef.OnDefense Player 353313.84375 -66.5994873047
+AblativeDef.OnDefense Player 353380.4375 -91.69921875
+AblativeDef.OnDefense Player 353472.125 -70.0701141357
+AblativeDef.OnDefense Player 353542.1875 0.0
+AblativeDef.OnDefense Player 353542.1875 0.0
+AblativeDef.OnDefense Player 353542.1875 0.0
+AblativeDef.OnDefense Player 353542.1875 -151.7578125
+AblativeDef.OnDefense Player 353693.9375 0.0
+AblativeDef.OnDefense Player 353693.9375 0.0
+AblativeDef.OnDefense Player 353693.9375 -120.496437073
+AblativeDef.OnDefense Player 353814.4375 -151.46484375
+AblativeDef.OnDefense Player 353965.90625 0.0
+AblativeDef.OnDefense Player 353965.90625 0.0
+AblativeDef.OnDefense Player 353965.90625 0.0
+AblativeDef.OnDefense Player 353965.90625 -65.3928070068
+AblativeDef.OnDefense Player 354031.3125 -81.3324737549
+AblativeDef.OnDefense Player 354112.65625 -94.8055114746
+AblativeDef.OnDefense Player 354207.46875 -50.2189788818
+AblativeDef.OnDefense Player 354257.6875 -69.1405944824
+AblativeDef.OnDefense Player 354326.8125 -151.7578125
+AblativeDef.OnDefense Player 354478.5625 -64.7871627808
+AblativeDef.OnDefense Player 354543.34375 -93.1640625
+AblativeDef.OnDefense Player 354636.5 -69.146270752
+AblativeDef.OnDefense Player 354705.65625 0.0
+AblativeDef.OnDefense Player 354705.65625 0.0
+AblativeDef.OnDefense Player 354705.65625 0.0
+AblativeDef.OnDefense Player 354705.65625 0.0
+AblativeDef.OnDefense Player 354705.65625 -122.285400391
+AblativeDef.OnDefense Player 354827.9375 -151.46484375
+AblativeDef.OnDefense Player 354979.40625 0.0
+AblativeDef.OnDefense Player 354979.40625 0.0
+AblativeDef.OnDefense Player 354979.40625 -103.41796875
+AblativeDef.OnDefense Player 355082.8125 -95.1407470703
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 25 Jan 2026 20:05:36#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Custom.Autoload.FIX-EngineerCharacterHandlers : Patched your  Bridge.EngineerCharacterHandlers  to cover 0-shield-strength ships
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Patched TacticalControlInterfaces.CycleCameraMode to add mode viewing modes
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 25 Jan 2026 20:05:36#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Custom.Autoload.FIX-EngineerCharacterHandlers : Patched your  Bridge.EngineerCharacterHandlers  to cover 0-shield-strength ships
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Patched TacticalControlInterfaces.CycleCameraMode to add mode viewing modes
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+# DS9FX has...
+
+# taken a console dump
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
