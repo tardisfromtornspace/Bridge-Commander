@@ -1,5 +1,8 @@
 == Changelog ==
-0.81 - Updates:
+0.8.2 - Updates:
+  * Updated ME Normandys', Turian Frigate's and Turian Fighter's hardpoints properly to fix a goof with repairs.
+  * Adjusted ME Kinetic weapon's power.
+0.8.1 - Updates:
   * Updated MEShields to 0.2, to now take into account collisions in a more realistic way.
   * Added extra examples for MEShields to consider such as phase cannons, and "disrupers".
   * Adjusted ME Normandys' and Turian Frigate's hardpoints accordingly.

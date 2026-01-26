@@ -1814,3 +1814,845 @@ Trying to clean memory
 
 
 ##### End Of The Log #####
+##### Bridge Commander Exit Log: 25 Jan 2026 20:46:08#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Custom.Autoload.FIX-EngineerCharacterHandlers : Patched your  Bridge.EngineerCharacterHandlers  to cover 0-shield-strength ships
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Patched TacticalControlInterfaces.CycleCameraMode to add mode viewing modes
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+Setting Stock System Planets Random Density.
+Ship SSV Normandy SR1-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _349307d0_p_Torpedo to (43.500000, 0.870000)
+Setting splash damage for SSV Normandy SR1-1 to (69.796288, 1.395926)
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship SSV Normandy SR-2-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _42f603c8_p_Torpedo to (43.500000, 0.870000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _34fd45c0_p_Torpedo to (43.500000, 0.870000)
+Creating WarpSequence:  Ship = SSV Normandy SR-2-1  // To Set = None  // Placement Name = None
+Setting splash damage for SSV Normandy SR-2-1 to (1444.870483, 28.897409)
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Turian Frigate-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _42f60538_p_Torpedo to (43.500000, 0.870000)
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Turian Frigate-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Creating WarpSequence:  Ship = Turian Frigate-1  // To Set = None  // Placement Name = None
+Trying to clean memory
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Turian Frigate-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _34fd38d0_p_Torpedo to (43.500000, 0.870000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _34fd4450_p_Torpedo to (43.500000, 0.870000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _34fd4000_p_Torpedo to (43.500000, 0.870000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _430133a8_p_Torpedo to (43.500000, 0.870000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _34fd45c0_p_Torpedo to (43.500000, 0.870000)
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+# DS9FX has...
+
+# taken a console dump
+Setting Stock System Planets Random Density.
+Ship Turian Frigate-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _42f5ff78_p_Torpedo to (2.625000, 0.052500)
+data/TGL/Maelstrom/Episode 4/E4M4.tgl E4M4SuggestScan
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Turian Frigate-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Creating WarpSequence:  Ship = Turian Frigate-1  // To Set = None  // Placement Name = None
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _34fd45c0_p_Torpedo to (43.500000, 0.870000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _43013518_p_Torpedo to (43.500000, 0.870000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _34fd4e60_p_Torpedo to (43.500000, 0.870000)
+Setting splash damage for Turian Frigate-1 to (1435.510864, 28.710217)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _430133a8_p_Torpedo to (43.500000, 0.870000)
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Turian Frigate-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Trying to clean memory
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Turian Frigate-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Creating WarpSequence:  Ship = Turian Frigate-1  // To Set = None  // Placement Name = None
+Setting splash damage for Turian Frigate-1 to (1434.843628, 28.696873)
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Turian Frigate-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Creating WarpSequence:  Ship = Turian Frigate-1  // To Set = None  // Placement Name = None
+Setting splash damage for Turian Frigate-1 to (1446.323486, 28.926470)
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship SSV Normandy SR1-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting splash damage for SSV Normandy SR1-1 to (129.720734, 2.594415)
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 25 Jan 2026 20:46:08#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Custom.Autoload.FIX-EngineerCharacterHandlers : Patched your  Bridge.EngineerCharacterHandlers  to cover 0-shield-strength ships
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Patched TacticalControlInterfaces.CycleCameraMode to add mode viewing modes
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+Setting Stock System Planets Random Density.
+Ship SSV Normandy SR1-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _349307d0_p_Torpedo to (43.500000, 0.870000)
+Setting splash damage for SSV Normandy SR1-1 to (69.796288, 1.395926)
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship SSV Normandy SR-2-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _42f603c8_p_Torpedo to (43.500000, 0.870000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _34fd45c0_p_Torpedo to (43.500000, 0.870000)
+Creating WarpSequence:  Ship = SSV Normandy SR-2-1  // To Set = None  // Placement Name = None
+Setting splash damage for SSV Normandy SR-2-1 to (1444.870483, 28.897409)
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Turian Frigate-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _42f60538_p_Torpedo to (43.500000, 0.870000)
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Turian Frigate-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Creating WarpSequence:  Ship = Turian Frigate-1  // To Set = None  // Placement Name = None
+Trying to clean memory
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Turian Frigate-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _34fd38d0_p_Torpedo to (43.500000, 0.870000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _34fd4450_p_Torpedo to (43.500000, 0.870000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _34fd4000_p_Torpedo to (43.500000, 0.870000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _430133a8_p_Torpedo to (43.500000, 0.870000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _34fd45c0_p_Torpedo to (43.500000, 0.870000)
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+# DS9FX has...
+
+# taken a console dump
+Setting Stock System Planets Random Density.
+Ship Turian Frigate-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _42f5ff78_p_Torpedo to (2.625000, 0.052500)
+data/TGL/Maelstrom/Episode 4/E4M4.tgl E4M4SuggestScan
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Turian Frigate-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Creating WarpSequence:  Ship = Turian Frigate-1  // To Set = None  // Placement Name = None
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _34fd45c0_p_Torpedo to (43.500000, 0.870000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _43013518_p_Torpedo to (43.500000, 0.870000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _34fd4e60_p_Torpedo to (43.500000, 0.870000)
+Setting splash damage for Turian Frigate-1 to (1435.510864, 28.710217)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _430133a8_p_Torpedo to (43.500000, 0.870000)
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Turian Frigate-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Trying to clean memory
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Turian Frigate-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Creating WarpSequence:  Ship = Turian Frigate-1  // To Set = None  // Placement Name = None
+Setting splash damage for Turian Frigate-1 to (1434.843628, 28.696873)
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Turian Frigate-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Creating WarpSequence:  Ship = Turian Frigate-1  // To Set = None  // Placement Name = None
+Setting splash damage for Turian Frigate-1 to (1446.323486, 28.926470)
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship SSV Normandy SR1-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting splash damage for SSV Normandy SR1-1 to (129.720734, 2.594415)
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 26 Jan 2026 00:08:48#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Custom.Autoload.FIX-EngineerCharacterHandlers : Patched your  Bridge.EngineerCharacterHandlers  to cover 0-shield-strength ships
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Patched TacticalControlInterfaces.CycleCameraMode to add mode viewing modes
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+
+
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Ship SSV Normandy SR1-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _4318f2d8_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _4318f2d8_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _43190a18_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _437241c8_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-1 C Torpedo instance at _437241c8_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-1 C Torpedo instance at _4318f2d8_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _437241c8_p_Torpedo to (22.500000, 0.450000)
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship SSV Normandy SR1-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+# DS9FX has...
+
+# taken a console dump
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _43724058_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _43724338_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _43724058_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _43a2e508_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _4318f2d8_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _439b0620_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _43a2e398_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _43a2e7e8_p_Torpedo to (22.500000, 0.450000)
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 26 Jan 2026 00:08:48#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Custom.Autoload.FIX-EngineerCharacterHandlers : Patched your  Bridge.EngineerCharacterHandlers  to cover 0-shield-strength ships
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Patched TacticalControlInterfaces.CycleCameraMode to add mode viewing modes
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+
+
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Ship SSV Normandy SR1-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _4318f2d8_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _4318f2d8_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _43190a18_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _437241c8_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-1 C Torpedo instance at _437241c8_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-1 C Torpedo instance at _4318f2d8_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _437241c8_p_Torpedo to (22.500000, 0.450000)
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship SSV Normandy SR1-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+# DS9FX has...
+
+# taken a console dump
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _43724058_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _43724338_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _43724058_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _43a2e508_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _4318f2d8_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _439b0620_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _43a2e398_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _43a2e7e8_p_Torpedo to (22.500000, 0.450000)
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 26 Jan 2026 01:44:48#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Custom.Autoload.FIX-EngineerCharacterHandlers : Patched your  Bridge.EngineerCharacterHandlers  to cover 0-shield-strength ships
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Patched TacticalControlInterfaces.CycleCameraMode to add mode viewing modes
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+
+
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Ship Normandy SR-2-1 with Alternative Warp FTL SubModel support added
+Ship Normandy SR-2-2 with Alternative Warp FTL SubModel support added
+Ship SSV Normandy SR1-3 with Alternative Warp FTL SubModel support added
+Ship Turian Frigate-5 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+Setting splash damage for Total PointDefence Firepoint Normandy SR-2-2 C Torpedo instance at _476606b8_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _476606b8_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for Total PointDefence Firepoint Normandy SR-2-2 C Torpedo instance at _476606b8_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for Total PointDefence Firepoint Turian Frigate-5 C Torpedo instance at _5b3cb3b0_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _5b3cb3b0_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for Total PointDefence Firepoint Normandy SR-2-2 C Torpedo instance at _5b3cb3b0_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for Total PointDefence Firepoint Turian Frigate-5 C Torpedo instance at _5b3cb3b0_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for Total PointDefence Firepoint Normandy SR-2-2 C Torpedo instance at _476606b8_p_Torpedo to (22.500000, 0.450000)
+
+
+Setting splash damage for SSV Normandy SR1-3 to (174.529190, 3.490584)
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Ship Normandy SR-2-1 with Alternative Warp FTL SubModel support added
+Ship Normandy SR-2-2 with Alternative Warp FTL SubModel support added
+Ship SSV Normandy SR1-3 with Alternative Warp FTL SubModel support added
+Ship Turian Frigate-5 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting splash damage for Turian Fighter-4 to (421.875000, 8.437500)
+Creating WarpSequence:  Ship = Turian Frigate-5  // To Set = None  // Placement Name = None
+Setting splash damage for Turian Frigate-5 to (1453.125000, 29.062500)
+
+
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Ship SSV Normandy SR1-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _47660828_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _5b512cb0_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _5b3cb520_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _5b512f90_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _5b513100_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for SSV Normandy SR1-1 to (727.407288, 14.548145)
+PlasmaFX Communicating with Targetable Plasma Streams...
+...Sucess
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Ship SSV Normandy SR1-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _5b3cb3b0_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for SSV Normandy SR1-1 to (1453.125000, 29.062500)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _47660828_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _5bc27fe8_p_Torpedo to (22.500000, 0.450000)
+Creating WarpSequence:  Ship = SSV Normandy SR1-1  // To Set = None  // Placement Name = None
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Ship SSV Normandy SR1-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _5b512f90_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _5b3cb520_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _47660828_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _5bc28438_p_Torpedo to (22.500000, 0.450000)
+Trying to clean memory
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-1 C Torpedo instance at _479d3c90_p_Torpedo to (22.500000, 0.450000)
+Creating WarpSequence:  Ship = SSV Normandy SR1-1  // To Set = None  // Placement Name = None
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-1 C Torpedo instance at _5b61cb58_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-1 C Torpedo instance at _479d2e30_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-1 C Torpedo instance at _479d1a10_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for SSV Normandy SR1-1 to (1453.125000, 29.062500)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-1 C Torpedo instance at _5b61cb58_p_Torpedo to (22.500000, 0.450000)
+
+
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship SSV Normandy SR1-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _5b3cb3b0_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _5bc28158_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _5b3cb3b0_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _5bc28158_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _5b512e20_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _479d2fa0_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _5b513100_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _5b512e20_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for SSV Normandy SR1-1 to (63.685547, 1.273711)
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship SSV Normandy SR1-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _479d3840_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for SSV Normandy SR1-1 to (640.183838, 12.803677)
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship SSV Normandy SR1-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+Setting splash damage for SSV Normandy SR1-1 to (187.990311, 3.759806)
+
+# DS9FX has...
+
+# taken a console dump
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship SSV Normandy SR1-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting splash damage for SSV Normandy SR1-1 to (421.875000, 8.437500)
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Turian Frigate-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Creating WarpSequence:  Ship = Turian Frigate-1  // To Set = None  // Placement Name = None
+Setting splash damage for Turian Frigate-1 to (1390.987671, 27.819754)
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship SSV Normandy SR-2-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Trying to clean memory
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship SSV Normandy SR-2-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _5b3cb520_p_Torpedo to (397.500000, 7.950000)
+Setting splash damage for SSV Normandy SR-2-1 to (1453.125000, 29.062500)
+Creating WarpSequence:  Ship = SSV Normandy SR-2-1  // To Set = None  // Placement Name = None
+data/TGL/Maelstrom/Episode 8/E8M1.tgl E8M1L078
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 26 Jan 2026 01:44:48#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Custom.Autoload.FIX-EngineerCharacterHandlers : Patched your  Bridge.EngineerCharacterHandlers  to cover 0-shield-strength ships
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Patched TacticalControlInterfaces.CycleCameraMode to add mode viewing modes
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+
+
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Ship Normandy SR-2-1 with Alternative Warp FTL SubModel support added
+Ship Normandy SR-2-2 with Alternative Warp FTL SubModel support added
+Ship SSV Normandy SR1-3 with Alternative Warp FTL SubModel support added
+Ship Turian Frigate-5 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+Setting splash damage for Total PointDefence Firepoint Normandy SR-2-2 C Torpedo instance at _476606b8_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _476606b8_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for Total PointDefence Firepoint Normandy SR-2-2 C Torpedo instance at _476606b8_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for Total PointDefence Firepoint Turian Frigate-5 C Torpedo instance at _5b3cb3b0_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _5b3cb3b0_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for Total PointDefence Firepoint Normandy SR-2-2 C Torpedo instance at _5b3cb3b0_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for Total PointDefence Firepoint Turian Frigate-5 C Torpedo instance at _5b3cb3b0_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for Total PointDefence Firepoint Normandy SR-2-2 C Torpedo instance at _476606b8_p_Torpedo to (22.500000, 0.450000)
+
+
+Setting splash damage for SSV Normandy SR1-3 to (174.529190, 3.490584)
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Ship Normandy SR-2-1 with Alternative Warp FTL SubModel support added
+Ship Normandy SR-2-2 with Alternative Warp FTL SubModel support added
+Ship SSV Normandy SR1-3 with Alternative Warp FTL SubModel support added
+Ship Turian Frigate-5 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting splash damage for Turian Fighter-4 to (421.875000, 8.437500)
+Creating WarpSequence:  Ship = Turian Frigate-5  // To Set = None  // Placement Name = None
+Setting splash damage for Turian Frigate-5 to (1453.125000, 29.062500)
+
+
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Ship SSV Normandy SR1-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _47660828_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _5b512cb0_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _5b3cb520_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _5b512f90_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _5b513100_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for SSV Normandy SR1-1 to (727.407288, 14.548145)
+PlasmaFX Communicating with Targetable Plasma Streams...
+...Sucess
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Ship SSV Normandy SR1-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _5b3cb3b0_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for SSV Normandy SR1-1 to (1453.125000, 29.062500)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _47660828_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _5bc27fe8_p_Torpedo to (22.500000, 0.450000)
+Creating WarpSequence:  Ship = SSV Normandy SR1-1  // To Set = None  // Placement Name = None
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+Ship SSV Normandy SR1-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _5b512f90_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _5b3cb520_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _47660828_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _5bc28438_p_Torpedo to (22.500000, 0.450000)
+Trying to clean memory
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-1 C Torpedo instance at _479d3c90_p_Torpedo to (22.500000, 0.450000)
+Creating WarpSequence:  Ship = SSV Normandy SR1-1  // To Set = None  // Placement Name = None
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-1 C Torpedo instance at _5b61cb58_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-1 C Torpedo instance at _479d2e30_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-1 C Torpedo instance at _479d1a10_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for SSV Normandy SR1-1 to (1453.125000, 29.062500)
+Setting splash damage for Total PointDefence Firepoint SSV Normandy SR1-1 C Torpedo instance at _5b61cb58_p_Torpedo to (22.500000, 0.450000)
+
+
+Setting Stock System Planets Random Density.
+Ship Player with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship SSV Normandy SR1-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _5b3cb3b0_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _5bc28158_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _5b3cb3b0_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _5bc28158_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _5b512e20_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _479d2fa0_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _5b513100_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _5b512e20_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for SSV Normandy SR1-1 to (63.685547, 1.273711)
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship SSV Normandy SR1-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _479d3840_p_Torpedo to (22.500000, 0.450000)
+Setting splash damage for SSV Normandy SR1-1 to (640.183838, 12.803677)
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship SSV Normandy SR1-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+
+
+Setting splash damage for SSV Normandy SR1-1 to (187.990311, 3.759806)
+
+# DS9FX has...
+
+# taken a console dump
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship SSV Normandy SR1-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting splash damage for SSV Normandy SR1-1 to (421.875000, 8.437500)
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship Turian Frigate-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Creating WarpSequence:  Ship = Turian Frigate-1  // To Set = None  // Placement Name = None
+Setting splash damage for Turian Frigate-1 to (1390.987671, 27.819754)
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship SSV Normandy SR-2-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Trying to clean memory
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Ship SSV Normandy SR-2-1 with Alternative Warp FTL SubModel support added
+DS9FX: Active and Operational...
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _5b3cb520_p_Torpedo to (397.500000, 7.950000)
+Setting splash damage for SSV Normandy SR-2-1 to (1453.125000, 29.062500)
+Creating WarpSequence:  Ship = SSV Normandy SR-2-1  // To Set = None  // Placement Name = None
+data/TGL/Maelstrom/Episode 8/E8M1.tgl E8M1L078
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####

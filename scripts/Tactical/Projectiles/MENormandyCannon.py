@@ -54,7 +54,7 @@ def GetName():
 	return("Normandy Cannon")
 
 def GetDamage():
-	return 33.0
+	return 16.5 # 33.0
 
 def GetGuidanceLifetime():
 	return 0.0

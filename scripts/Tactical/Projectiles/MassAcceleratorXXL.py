@@ -80,7 +80,7 @@ def GetName():
 	return("Spinal Mass Accelerator")
 
 def GetDamage():
-	return 60.0
+	return 30.0 # 60.0
 
 def GetGuidanceLifetime():
 	return 0.0
@@ -95,7 +95,7 @@ def HullDmgMultiplier():
 	return 10
 
 def ShieldDmgMultiplier():
-	return 16
+	return 18
 
 try:
 	modMERailgunWeaponTorp = __import__("Custom.Techs.MERailgunWeapon")

@@ -54,7 +54,7 @@ def GetName():
 	return("Mass Effect Javelin")
 
 def GetDamage():
-	return 232.0
+	return 120.0 #232.0
 
 def GetGuidanceLifetime():
 	return 6.0
@@ -66,7 +66,7 @@ def GetLifetime():
 	return 20.0
 
 def HullDmgMultiplier():
-	return 4
+	return 1.5
 
 def ShieldDmgMultiplier():
 	return 4.4

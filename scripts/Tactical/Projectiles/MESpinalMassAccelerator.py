@@ -81,7 +81,7 @@ def GetName():
 	return("Spinal Mass Accelerator")
 
 def GetDamage():
-	return 82.5
+	return 41.25 # 82.5
 
 def GetGuidanceLifetime():
 	return 1.0

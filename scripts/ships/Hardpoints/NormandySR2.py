@@ -9,7 +9,7 @@ import GlobalPropertyTemplates
 #################################################
 CloakingDevice = App.CloakingSubsystemProperty_Create("IES Stealth System")
 
-CloakingDevice.SetMaxCondition(800.000000)
+CloakingDevice.SetMaxCondition(294.745000)
 CloakingDevice.SetCritical(0)
 CloakingDevice.SetTargetable(1)
 CloakingDevice.SetPrimary(1)
@@ -24,7 +24,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(CloakingDevice)
 #################################################
 MassEffectGravity = App.ShieldProperty_Create("Mass Effect Gravity Generator")
 
-MassEffectGravity.SetMaxCondition(1040.000000)
+MassEffectGravity.SetMaxCondition(386.925000)
 MassEffectGravity.SetCritical(0)
 MassEffectGravity.SetTargetable(0)
 MassEffectGravity.SetPrimary(0)
@@ -54,7 +54,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(MassEffectGravity)
 #################################################
 ShieldGenerator = App.ShieldProperty_Create("Shield Generator")
 
-ShieldGenerator.SetMaxCondition(1040.000000)
+ShieldGenerator.SetMaxCondition(386.925000)
 ShieldGenerator.SetCritical(0)
 ShieldGenerator.SetTargetable(0)
 ShieldGenerator.SetPrimary(1)
@@ -84,7 +84,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(ShieldGenerator)
 #################################################
 Hull = App.HullProperty_Create("Silaris Armor")
 
-Hull.SetMaxCondition(1664.000000)
+Hull.SetMaxCondition(613.100000)
 Hull.SetCritical(1)
 Hull.SetTargetable(1)
 Hull.SetPrimary(1)
@@ -97,7 +97,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(Hull)
 #################################################
 Torpedoes = App.TorpedoSystemProperty_Create("Torpedoes")
 
-Torpedoes.SetMaxCondition(1040.000000)
+Torpedoes.SetMaxCondition(400.800000)
 Torpedoes.SetCritical(0)
 Torpedoes.SetTargetable(0)
 Torpedoes.SetPrimary(1)
@@ -120,7 +120,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(Torpedoes)
 #################################################
 FwdTorpedo1 = App.TorpedoTubeProperty_Create("Fwd Torpedo 1")
 
-FwdTorpedo1.SetMaxCondition(572.000000)
+FwdTorpedo1.SetMaxCondition(383.240000)
 FwdTorpedo1.SetCritical(0)
 FwdTorpedo1.SetTargetable(1)
 FwdTorpedo1.SetPrimary(1)
@@ -150,7 +150,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(FwdTorpedo1)
 #################################################
 PulsePhasers = App.WeaponSystemProperty_Create("Pulse Cannons")
 
-PulsePhasers.SetMaxCondition(1040.000000)
+PulsePhasers.SetMaxCondition(500.800000)
 PulsePhasers.SetCritical(0)
 PulsePhasers.SetTargetable(1)
 PulsePhasers.SetPrimary(1)
@@ -170,7 +170,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(PulsePhasers)
 #################################################
 PortCannon1 = App.PulseWeaponProperty_Create("Port Cannon 1")
 
-PortCannon1.SetMaxCondition(572.000000)
+PortCannon1.SetMaxCondition(383.240000)
 PortCannon1.SetCritical(0)
 PortCannon1.SetTargetable(1)
 PortCannon1.SetPrimary(1)
@@ -210,7 +210,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(PortCannon1)
 #################################################
 PortCannon2 = App.PulseWeaponProperty_Create("Port Cannon 2")
 
-PortCannon2.SetMaxCondition(572.000000)
+PortCannon2.SetMaxCondition(383.240000)
 PortCannon2.SetCritical(0)
 PortCannon2.SetTargetable(1)
 PortCannon2.SetPrimary(1)
@@ -250,7 +250,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(PortCannon2)
 #################################################
 StarCannon1 = App.PulseWeaponProperty_Create("Star Cannon 1")
 
-StarCannon1.SetMaxCondition(572.000000)
+StarCannon1.SetMaxCondition(383.240000)
 StarCannon1.SetCritical(0)
 StarCannon1.SetTargetable(1)
 StarCannon1.SetPrimary(1)
@@ -290,7 +290,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(StarCannon1)
 #################################################
 StarCannon2 = App.PulseWeaponProperty_Create("Star Cannon 2")
 
-StarCannon2.SetMaxCondition(572.000000)
+StarCannon2.SetMaxCondition(383.240000)
 StarCannon2.SetCritical(0)
 StarCannon2.SetTargetable(1)
 StarCannon2.SetPrimary(1)
@@ -330,7 +330,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(StarCannon2)
 #################################################
 SensorArray = App.SensorProperty_Create("Sensor Array")
 
-SensorArray.SetMaxCondition(1248.000000)
+SensorArray.SetMaxCondition(459.745000)
 SensorArray.SetCritical(0)
 SensorArray.SetTargetable(1)
 SensorArray.SetPrimary(1)
@@ -361,7 +361,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(ProbeLauncher)
 #################################################
 ImpulseEngines = App.ImpulseEngineProperty_Create("Impulse Engines")
 
-ImpulseEngines.SetMaxCondition(832.000000)
+ImpulseEngines.SetMaxCondition(557.440000)
 ImpulseEngines.SetCritical(0)
 ImpulseEngines.SetTargetable(0)
 ImpulseEngines.SetPrimary(1)
@@ -380,7 +380,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(ImpulseEngines)
 #################################################
 PortImpulseEngine = App.EngineProperty_Create("Port Impulse Engine")
 
-PortImpulseEngine.SetMaxCondition(520.000000)
+PortImpulseEngine.SetMaxCondition(348.400000)
 PortImpulseEngine.SetCritical(0)
 PortImpulseEngine.SetTargetable(1)
 PortImpulseEngine.SetPrimary(1)
@@ -394,7 +394,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(PortImpulseEngine)
 #################################################
 WarpCore = App.PowerProperty_Create("Element Zero Core")
 
-WarpCore.SetMaxCondition(899.000000)
+WarpCore.SetMaxCondition(500.330000)
 WarpCore.SetCritical(1)
 WarpCore.SetTargetable(1)
 WarpCore.SetPrimary(1)
@@ -412,7 +412,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(WarpCore)
 #################################################
 WarpEngines = App.WarpEngineProperty_Create("Mass Effect Engines")
 
-WarpEngines.SetMaxCondition(1040.000000)
+WarpEngines.SetMaxCondition(386.925000)
 WarpEngines.SetCritical(0)
 WarpEngines.SetTargetable(1)
 WarpEngines.SetPrimary(1)
@@ -426,7 +426,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(WarpEngines)
 #################################################
 PortWarp = App.EngineProperty_Create("Port Mass Effect Engine")
 
-PortWarp.SetMaxCondition(832.000000)
+PortWarp.SetMaxCondition(450.745000)
 PortWarp.SetCritical(0)
 PortWarp.SetTargetable(1)
 PortWarp.SetPrimary(1)
@@ -440,7 +440,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(PortWarp)
 #################################################
 StarWarp = App.EngineProperty_Create("Star Mass Effect Engine")
 
-StarWarp.SetMaxCondition(832.000000)
+StarWarp.SetMaxCondition(450.745000)
 StarWarp.SetCritical(0)
 StarWarp.SetTargetable(1)
 StarWarp.SetPrimary(1)
@@ -454,7 +454,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(StarWarp)
 #################################################
 Engineering = App.RepairSubsystemProperty_Create("Engineering")
 
-Engineering.SetMaxCondition(1000.000000)
+Engineering.SetMaxCondition(600.000000)
 Engineering.SetCritical(0)
 Engineering.SetTargetable(1)
 Engineering.SetPrimary(1)
@@ -464,7 +464,7 @@ Engineering.SetRepairComplexity(1.000000)
 Engineering.SetDisabledPercentage(0.100000)
 Engineering.SetRadius(0.030000)
 Engineering.SetNormalPowerPerSecond(1.000000)
-Engineering.SetMaxRepairPoints(25.000000)
+Engineering.SetMaxRepairPoints(10.750000)
 Engineering.SetNumRepairTeams(3)
 App.g_kModelPropertyManager.RegisterLocalTemplate(Engineering)
 #################################################
@@ -583,7 +583,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(FirstPersonCamera)
 #################################################
 StarImpulseEngine = App.EngineProperty_Create("Star Impulse Engine")
 
-StarImpulseEngine.SetMaxCondition(520.000000)
+StarImpulseEngine.SetMaxCondition(348.400000)
 StarImpulseEngine.SetCritical(0)
 StarImpulseEngine.SetTargetable(1)
 StarImpulseEngine.SetPrimary(1)
@@ -597,7 +597,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(StarImpulseEngine)
 #################################################
 Bridge = App.HullProperty_Create("Bridge")
 
-Bridge.SetMaxCondition(1196.000000)
+Bridge.SetMaxCondition(441.000000)
 Bridge.SetCritical(0)
 Bridge.SetTargetable(1)
 Bridge.SetPrimary(0)
@@ -625,7 +625,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(DecoyLauncher)
 #################################################
 AftSilarisArmor = App.HullProperty_Create("Aft Silaris Armor")
 
-AftSilarisArmor.SetMaxCondition(1456.000000)
+AftSilarisArmor.SetMaxCondition(536.000000)
 AftSilarisArmor.SetCritical(0)
 AftSilarisArmor.SetTargetable(1)
 AftSilarisArmor.SetPrimary(0)
@@ -638,7 +638,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(AftSilarisArmor)
 #################################################
 ForwardSilarisArmor = App.HullProperty_Create("Forward Silaris Armor")
 
-ForwardSilarisArmor.SetMaxCondition(1456.000000)
+ForwardSilarisArmor.SetMaxCondition(536.000000)
 ForwardSilarisArmor.SetCritical(0)
 ForwardSilarisArmor.SetTargetable(1)
 ForwardSilarisArmor.SetPrimary(0)
@@ -651,7 +651,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(ForwardSilarisArmor)
 #################################################
 LeftSilarisArmor = App.HullProperty_Create("Left Silaris Armor")
 
-LeftSilarisArmor.SetMaxCondition(1456.000000)
+LeftSilarisArmor.SetMaxCondition(536.000000)
 LeftSilarisArmor.SetCritical(0)
 LeftSilarisArmor.SetTargetable(1)
 LeftSilarisArmor.SetPrimary(0)
@@ -664,7 +664,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(LeftSilarisArmor)
 #################################################
 RightSilarisArmor = App.HullProperty_Create("Right Silaris Armor")
 
-RightSilarisArmor.SetMaxCondition(1456.000000)
+RightSilarisArmor.SetMaxCondition(536.000000)
 RightSilarisArmor.SetCritical(0)
 RightSilarisArmor.SetTargetable(1)
 RightSilarisArmor.SetPrimary(0)
@@ -677,7 +677,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(RightSilarisArmor)
 #################################################
 PortWarpvent = App.EngineProperty_Create("Port Mass Effect Engine vent")
 
-PortWarpvent.SetMaxCondition(832.000000)
+PortWarpvent.SetMaxCondition(450.745000)
 PortWarpvent.SetCritical(0)
 PortWarpvent.SetTargetable(1)
 PortWarpvent.SetPrimary(1)
@@ -691,7 +691,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(PortWarpvent)
 #################################################
 StarWarpvent = App.EngineProperty_Create("Star Mass Effect Engine vent")
 
-StarWarpvent.SetMaxCondition(832.000000)
+StarWarpvent.SetMaxCondition(450.745000)
 StarWarpvent.SetCritical(0)
 StarWarpvent.SetTargetable(1)
 StarWarpvent.SetPrimary(1)
@@ -705,7 +705,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(StarWarpvent)
 #################################################
 FwdTorpedo2 = App.TorpedoTubeProperty_Create("Fwd Torpedo 2")
 
-FwdTorpedo2.SetMaxCondition(572.000000)
+FwdTorpedo2.SetMaxCondition(383.240000)
 FwdTorpedo2.SetCritical(0)
 FwdTorpedo2.SetTargetable(1)
 FwdTorpedo2.SetPrimary(1)
@@ -735,7 +735,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(FwdTorpedo2)
 #################################################
 FwdTorpedo3 = App.TorpedoTubeProperty_Create("Fwd Torpedo 3")
 
-FwdTorpedo3.SetMaxCondition(572.000000)
+FwdTorpedo3.SetMaxCondition(383.240000)
 FwdTorpedo3.SetCritical(0)
 FwdTorpedo3.SetTargetable(1)
 FwdTorpedo3.SetPrimary(1)
@@ -765,7 +765,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(FwdTorpedo3)
 #################################################
 FwdTorpedo4 = App.TorpedoTubeProperty_Create("Fwd Torpedo 4")
 
-FwdTorpedo4.SetMaxCondition(572.000000)
+FwdTorpedo4.SetMaxCondition(383.240000)
 FwdTorpedo4.SetCritical(0)
 FwdTorpedo4.SetTargetable(1)
 FwdTorpedo4.SetPrimary(1)
@@ -795,7 +795,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(FwdTorpedo4)
 #################################################
 FwdTorpedo5 = App.TorpedoTubeProperty_Create("Fwd Torpedo 5")
 
-FwdTorpedo5.SetMaxCondition(572.000000)
+FwdTorpedo5.SetMaxCondition(383.240000)
 FwdTorpedo5.SetCritical(0)
 FwdTorpedo5.SetTargetable(1)
 FwdTorpedo5.SetPrimary(1)
@@ -825,7 +825,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(FwdTorpedo5)
 #################################################
 FwdTorpedo6 = App.TorpedoTubeProperty_Create("Fwd Torpedo 6")
 
-FwdTorpedo6.SetMaxCondition(572.000000)
+FwdTorpedo6.SetMaxCondition(383.240000)
 FwdTorpedo6.SetCritical(0)
 FwdTorpedo6.SetTargetable(1)
 FwdTorpedo6.SetPrimary(1)
@@ -855,7 +855,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(FwdTorpedo6)
 #################################################
 FwdTorpedo7 = App.TorpedoTubeProperty_Create("Fwd Torpedo 7")
 
-FwdTorpedo7.SetMaxCondition(572.000000)
+FwdTorpedo7.SetMaxCondition(383.240000)
 FwdTorpedo7.SetCritical(0)
 FwdTorpedo7.SetTargetable(1)
 FwdTorpedo7.SetPrimary(1)
@@ -885,7 +885,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(FwdTorpedo7)
 #################################################
 FwdTorpedo8 = App.TorpedoTubeProperty_Create("Fwd Torpedo 8")
 
-FwdTorpedo8.SetMaxCondition(572.000000)
+FwdTorpedo8.SetMaxCondition(383.240000)
 FwdTorpedo8.SetCritical(0)
 FwdTorpedo8.SetTargetable(1)
 FwdTorpedo8.SetPrimary(1)
@@ -915,7 +915,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(FwdTorpedo8)
 #################################################
 FwdTorpedo9 = App.TorpedoTubeProperty_Create("Fwd Torpedo 9")
 
-FwdTorpedo9.SetMaxCondition(572.000000)
+FwdTorpedo9.SetMaxCondition(383.240000)
 FwdTorpedo9.SetCritical(0)
 FwdTorpedo9.SetTargetable(1)
 FwdTorpedo9.SetPrimary(1)
@@ -945,7 +945,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(FwdTorpedo9)
 #################################################
 FwdTorpedo10 = App.TorpedoTubeProperty_Create("Fwd Torpedo 10")
 
-FwdTorpedo10.SetMaxCondition(572.000000)
+FwdTorpedo10.SetMaxCondition(383.240000)
 FwdTorpedo10.SetCritical(0)
 FwdTorpedo10.SetTargetable(1)
 FwdTorpedo10.SetPrimary(1)
@@ -1269,7 +1269,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(exh4)
 #################################################
 GARDIANDefenseSystem = App.WeaponSystemProperty_Create("GARDIAN Defense System")
 
-GARDIANDefenseSystem.SetMaxCondition(1040.000000)
+GARDIANDefenseSystem.SetMaxCondition(387.000000)
 GARDIANDefenseSystem.SetCritical(0)
 GARDIANDefenseSystem.SetTargetable(1)
 GARDIANDefenseSystem.SetPrimary(1)
@@ -1289,7 +1289,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(GARDIANDefenseSystem)
 #################################################
 PortLaser = App.PhaserProperty_Create("Port Laser")
 
-PortLaser.SetMaxCondition(930.000000)
+PortLaser.SetMaxCondition(343.000000)
 PortLaser.SetCritical(0)
 PortLaser.SetTargetable(1)
 PortLaser.SetPrimary(1)
@@ -1308,7 +1308,7 @@ PortLaser.SetIconPositionY(49.000000)
 PortLaser.SetIconAboveShip(1)
 PortLaser.SetFireSound("GARDIAN")
 PortLaser.SetMaxCharge(5.000000)
-PortLaser.SetMaxDamage(45.000000)
+PortLaser.SetMaxDamage(29.000000)
 PortLaser.SetMaxDamageDistance(100.000000)
 PortLaser.SetMinFiringCharge(3.000000)
 PortLaser.SetNormalDischargeRate(1.000000)
@@ -1352,7 +1352,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(PortLaser)
 #################################################
 StarboardLaser = App.PhaserProperty_Create("Starboard Laser")
 
-StarboardLaser.SetMaxCondition(930.000000)
+StarboardLaser.SetMaxCondition(343.000000)
 StarboardLaser.SetCritical(0)
 StarboardLaser.SetTargetable(1)
 StarboardLaser.SetPrimary(1)
@@ -1371,7 +1371,7 @@ StarboardLaser.SetIconPositionY(49.000000)
 StarboardLaser.SetIconAboveShip(1)
 StarboardLaser.SetFireSound("GARDIAN")
 StarboardLaser.SetMaxCharge(5.000000)
-StarboardLaser.SetMaxDamage(45.000000)
+StarboardLaser.SetMaxDamage(29.000000)
 StarboardLaser.SetMaxDamageDistance(100.000000)
 StarboardLaser.SetMinFiringCharge(3.000000)
 StarboardLaser.SetNormalDischargeRate(1.000000)
@@ -1415,7 +1415,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(StarboardLaser)
 #################################################
 METhanix = App.PhaserProperty_Create("Thanix Cannons")
 
-METhanix.SetMaxCondition(1040.000000)
+METhanix.SetMaxCondition(500.000000)
 METhanix.SetCritical(0)
 METhanix.SetTargetable(1)
 METhanix.SetPrimary(1)

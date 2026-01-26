@@ -54,7 +54,7 @@ def GetName():
 	return("Mass Accelerator")
 
 def GetDamage():
-	return 28.0
+	return 18.0 # 28.0
 
 def GetGuidanceLifetime():
 	return 0.0
