@@ -1,4 +1,6 @@
 == Changelog ==
+0.8.3 - Updates:
+  * Updated MEShield dictionaries to also take into account Gamma Rays, X-Rays, UV-rays and PCannon (short from particle cannon)
 0.8.2 - Updates:
   * Updated ME Normandys', Turian Frigate's and Turian Fighter's hardpoints properly to fix a goof with repairs.
   * Adjusted ME Kinetic weapon's power.
