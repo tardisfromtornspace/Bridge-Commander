@@ -41,7 +41,7 @@ Foundation.ShipDef.saturn.dTechs = {
 ##################################
 #
 MODINFO = { "Author": "\"ftb Team\", \"Apollo\", \"Greystar\", \"Alex SL Gato\" (andromedavirgoa@gmail.com)",
-	    "Version": "0.2",
+	    "Version": "0.21",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -109,9 +109,8 @@ if AblativeArmour != None:
 			global kEmptyColor
 			return kEmptyColor
 
-		def Attach(self, pInstance):
-			parentAttach(self, pInstance)
-
+		#def Attach(self, pInstance):
+		#	parentAttach(self, pInstance)
 
 		def Attach(self, pInstance):
 			debug(__name__ + ", Attach")
