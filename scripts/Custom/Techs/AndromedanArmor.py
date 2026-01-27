@@ -55,24 +55,37 @@ import traceback
 import Foundation
 import FoundationTech
 
-
 # TO-DO PLEASE AFTER TESTING TELL ME ANY PROBLEMS SO I CAN FIX THEM, PLUS ADD THE ACCESIBILITY FEATURE!
 kEmptyColor = App.TGColorA()
 kEmptyColor.SetRGBA(App.g_kSubsystemFillColor.r,App.g_kSubsystemFillColor.g,App.g_kSubsystemFillColor.b,App.g_kSubsystemFillColor.a)
 kFillColor = App.TGColorA()
 kFillColor.SetRGBA(100.0/255.0, 255.0/255.0, 255.0/255.0, App.g_kSubsystemFillColor.a)
 
-AblativeArmour = None
+attempts = 0
+theArmourParentInherited = None
 oAndromedanArmor = None
-try:
-	AblativeArmour = __import__("ftb.Tech.AblativeArmour") #from ftb.Tech import AblativeArmour
-except:
-	try:
-		AblativeArmour = __import__("Custom.Techs.AblativeArmour")
-	except:
-		AblativeArmour = None
 
-if AblativeArmour != None:
+def getAblativeAmourScriptToInherit():
+	AblativeArmourS = None
+	try:
+		AblativeArmourS = __import__("ftb.Tech.AblativeArmour") #from ftb.Tech import AblativeArmour
+		attempts = 1
+	except:
+		try:
+			AblativeArmourS = __import__("Custom.Techs.AblativeArmour")
+			attempts = 2
+		except:
+			AblativeArmourS = None
+			attempts = 0
+	return AblativeArmourS
+
+theArmourParentInherited = getAblativeAmourScriptToInherit()
+
+if theArmourParentInherited != None:
+
+	parentOnDefenseBck = None
+	parentOnDefense = theArmourParentInherited.AblativeDef.OnDefense # FUTURE TO-DO: It works on most installs, except ZZ's. Check why.
+	#parentAttach = theArmourParentInherited.AblativeDef.Attach
 
 	validWeaponTypes = {"Beams": "GetPhaserSystem", "Pulses": "GetPulseWeaponSystem", "Tractors": "GetTractorBeamSystem", "Torpedoes": "GetTorpedoSystem"} # Relation between key names and the functions to obtain their control subsystems
 
@@ -94,9 +107,8 @@ if AblativeArmour != None:
 			return None
 		return pShip
 
-	parentOnDefense = AblativeArmour.AblativeDef.OnDefense
-	#parentAttach = AblativeArmour.AblativeDef.Attach
-	class AndromedanArmorDef(AblativeArmour.AblativeDef):
+
+	class AndromedanArmorDef(theArmourParentInherited.AblativeDef):
 		def GetSystemName(self):
 			debug(__name__ + ", GetSystemName")
 			return "Andromedan-type Armor"
@@ -108,9 +120,6 @@ if AblativeArmour != None:
 		def GetEmptyColor(self):
 			global kEmptyColor
 			return kEmptyColor
-
-		#def Attach(self, pInstance):
-		#	parentAttach(self, pInstance)
 
 		def Attach(self, pInstance):
 			debug(__name__ + ", Attach")
@@ -270,7 +279,20 @@ if AblativeArmour != None:
 					except:
 						traceback.print_exc()
 
-			parentOnDefense(self, pShip, pInstance, oYield, pEvent)
+			# Plan A # FUTURE TO-DO: It works on most installs..., except ZZ's. WHY???
+			#try:
+			#	parentOnDefense(self, pShip, pInstance, oYield, pEvent) 
+			#except:
+			#	traceback.print_exc()
+			#	# TO-DO if attempts == 1:
+
+			# Plan B # It seems to work on my install TO-DO verify on ZZ's install
+			if attempts == 1:
+				from ftb.Tech.AblativeArmour import AblativeDef
+				AblativeDef.OnDefense(self, pShip, pInstance, oYield, pEvent)
+			elif attempts == 2:
+				from Custom.Techs.AblativeArmour import AblativeDef
+				AblativeDef.OnDefense(self, pShip, pInstance, oYield, pEvent)
 
 		def checkWhichSubToChg(self, validSubsystems, pShip, key, rechargeIs):
 			keyFactor = str(key)+"Factor"
