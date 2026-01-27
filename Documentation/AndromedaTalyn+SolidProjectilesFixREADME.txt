@@ -1,4 +1,5 @@
 == Changelog ==
+1.0.9 - Updated SlowStart ot 0.3 to support torpedo tubes, tractor beams and different charges from 0!
 1.0.8 - Updated FIX-AblativeArmour1dot0 Autoload script to 0.41 to provide better armour inheritance.
 1.0.7 - Updated SolidProjectiles to 0.4, providing even more customization for fully collidable projectiles and leftover explosions, as well as a bug fix.
 1.0.6 - Updated SolidProjectiles to 0.36, adding an extra parameter that allows handling how the projectile and its attached ship model react when the ship is destroyed before the torpedo.
