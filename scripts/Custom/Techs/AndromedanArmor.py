@@ -1,7 +1,7 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE FOUNDATION LGPL LICENSE AS WELL
 # Andromedan.py
-# 26th January 2026, by Alex SL Gato, based on a Cristalline armour adjusted for colors, fixed by Alex SL Gato (CharaToLoki), modified from Greystar's (which was likely an ftb AblativeArmour script copy)
+# 27th January 2026, by Alex SL Gato, based on a Cristalline armour adjusted for colors, fixed by Alex SL Gato (CharaToLoki), modified from Greystar's (which was likely an ftb AblativeArmour script copy)
 # Also based on SlowStart.py by Alex SL Gato.
 #
 # Meant to be used alongside ftb AblativeArmour, in fact, it requires it to work properly. It also requires to have the FIX-AblativeArmour1dot0 too to work properly.
@@ -22,16 +22,17 @@ Foundation.ShipDef.saturn.dTechs = {
 # If you want to determine what weapon properties benefit from this tech, choose this:
 # Notes:
 # - "GlobalFactor" determines how much they recharge (it's a multiplier of the event damage).
+# ---- there are also particular weapon type Factors too, they follow the format weaponType+Factor (for example, "BeamsFactor")
 # - "HealDepletes" is also a multiplier, which indicates if a healing weapon will depower these instead (1), if it will ignore it (0) or if it will replenish energy too (-1), or if it will gain more or something in-between.
-# - "Beams" lists a bunch of phaser beam properties, and "Pulses" does the same for pulse firing properties. If these fields do not apepar, it will assume all beams and all pusles can benefit from thsi tech.
+# - "Beams" lists a bunch of phaser beam properties, "Pulses" does the same for pulse firing properties, "Torpedoes" for torpedo tubes and "Tractors" for tractor beam properties. If these fields do not appear, it will assume all beams/pulses/torpedoes/disruptors can benefit from this tech.
 # - "DmgStrMod" and "DmgRadMod" affect how much is the visible mesh affected when hit, multiplying, the visible strength of the impact and the visible radious when the armour hardpoint is not dead. If neither of them are there, it will not modify any visible armour setting.
 Foundation.ShipDef.saturn.dTechs = {
-	'Andromedan-type Armor': [485000, {"Beams": ["One phaser hardpoint name", "another laser hardpoint name"], "Pulses": ["One pulse hardpoint name", "Another disruptor hardpoint name"], "GlobalFactor": 1.0, "HealDepletes": 0, "DmgStrMod": 0.0, "DmgRadMod": 0.0}]
+	'Andromedan-type Armor': [485000, {"Beams": ["One phaser hardpoint name", "another laser hardpoint name"], "Pulses": ["One pulse hardpoint name", "Another disruptor hardpoint name"], "Torpedoes": [], "Tractors": [], "BeamsFactor": 1.0, "PulsesFactor": 1.0, "TorpedoesFactor": 1.0, "TractorsFactor: 1.0", "GlobalFactor": 1.0, "HealDepletes": 0, "DmgStrMod": 0.0, "DmgRadMod": 0.0}]
 }
 
 # If you want to do everything at once, do this:
 Foundation.ShipDef.saturn.dTechs = {
-	'Andromedan-type Armor': [485000, "Potato tasty chip", {"Beams": ["One phaser hardpoint name", "another laser hardpoint name"], "Pulses": ["One pulse hardpoint name", "Another disruptor hardpoint name"], "GlobalFactor": 1.0, "HealDepletes": 0, "DmgStrMod": 0.0, "DmgRadMod": 0.0}]
+	'Andromedan-type Armor': [485000, "Potato tasty chip", {"Beams": ["One phaser hardpoint name", "another laser hardpoint name"], "Pulses": ["One pulse hardpoint name", "Another disruptor hardpoint name"], "Torpedoes": [], "Tractors": [], "BeamsFactor": 1.0, "PulsesFactor": 1.0, "TorpedoesFactor": 1.0, "TractorsFactor: 1.0", "GlobalFactor": 1.0, "HealDepletes": 0, "DmgStrMod": 0.0, "DmgRadMod": 0.0}]
 }
 """
 # SECOND, you need to add a hardpoint health property (could be a hull subsystem, but can also be another kind of subsystem... anything with actual health, no OEP of blinking light properties, please!) on that ships's script/ships/Hardpoints/whatever.py file with the same name as those used on the scripts/Custom/Ships/whateverShip.py one.
@@ -40,7 +41,7 @@ Foundation.ShipDef.saturn.dTechs = {
 ##################################
 #
 MODINFO = { "Author": "\"ftb Team\", \"Apollo\", \"Greystar\", \"Alex SL Gato\" (andromedavirgoa@gmail.com)",
-	    "Version": "0.13",
+	    "Version": "0.2",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -72,6 +73,8 @@ except:
 		AblativeArmour = None
 
 if AblativeArmour != None:
+
+	validWeaponTypes = {"Beams": "GetPhaserSystem", "Pulses": "GetPulseWeaponSystem", "Tractors": "GetTractorBeamSystem", "Torpedoes": "GetTorpedoSystem"} # Relation between key names and the functions to obtain their control subsystems
 
 	def findShipInstance(pShip):
 		debug(__name__ + ", findShipInstance")
@@ -178,9 +181,9 @@ if AblativeArmour != None:
 									pShip2 = GetWellShipFromID(iShipID)
 									if pShip2 != None:
 										if repair > 0.0:
-											self.SetDmgRadMod(pInstance, pShip2, setDmgRadMod, setDmgStrMod)
+											self.SetDmgRadModif(pShip2, setDmgRadMod, setDmgStrMod)
 										else:
-											self.SetDmgRadMod(pInstance, pShip2, None, None)
+											self.SetDmgRadModif(pShip2, None, None)
 			except:
 				print __name__, "Error on conditionalVisibleDmgSwitch:"
 				traceback.print_exc()
@@ -235,16 +238,24 @@ if AblativeArmour != None:
 			
 			repair = pInstance.__dict__[self.lName]
 
-			print 'TO-DO AndromedanArmorDef', pShip.GetName(), repair, pEvent.GetDamage()
+			#print 'AndromedanArmorDef', pShip.GetName(), repair, pEvent.GetDamage()
 
 			validSubsystems = None
 			pSubName = self.GetSystemName()
 			if str(repair)[0] == "[":
-				pSubName = repair[1]
+				if len(repair) > 2:
+					validSubsystems = repair[2]
+				if len(repair) > 1:
+					pSubName = repair[1]
 				repair = repair[0]
-				validSubsystems = repair[2]
-			
-			if repair > 0.0:
+
+			repairV = -1
+			if repair != None and (type(1.0) == type(repair) or type(1) == type(repair)):
+				repairV = repair
+
+			self.conditionalVisibleDmgSwitch(pInstance, pShip, repairV)
+
+			if repair != None and repair > 0.0:
 				rechargeIs = pEvent.GetDamage()
 
 				if validSubsystems.has_key("GlobalFactor"):
@@ -253,56 +264,54 @@ if AblativeArmour != None:
 				if validSubsystems.has_key("HealDepletes"):
 					if pEvent.GetDamage() < 0.0:
 						rechargeIs = rechargeIs * validSubsystems["HealDepletes"]
-					
-				if validSubsystems.has_key("Beams"):
-					if len(validSubsystems["Beams"]) > 0:
-						print "TO-DO Found things, now to see"
-						pWeaponSystem1 = pShip.GetPhaserSystem()
-
-						if pWeaponSystem1:
-							subsystemsOptions = validSubsystems["Beams"]	
-							print "TO-DO I have beams to update"
-
-							iChildren = pWeaponSystem1.GetNumChildSubsystems()
-							if iChildren > 0:
-								for iIndex in range(iChildren):
-									pChild = pWeaponSystem1.GetChildSubsystem(iIndex)
-									if pChild.GetName() in subsystemsOptions:
-										self.setChargeToX(pChild, rechargeIs)
-										self.setChildrenSubsystemsChargeToX(pChild, rechargeIs)
-				else:
-					print "TO-DO: I do not have beams key, I will assume all phasers have ", __name__, " ability"
-					phasers = pShip.GetPhaserSystem()
-					self.setChildrenSubsystemsChargeTo0(phasers)
-
-				if validSubsystems.has_key("Pulses"):
-
-					if len(validSubsystems["Pulses"]) > 0:
-						pWeaponSystem1 = pShip.GetPulseWeaponSystem()
-
-						if pWeaponSystem1:
-							subsystemsOptions = validSubsystems["Pulses"]	
-
-							iChildren = pWeaponSystem1.GetNumChildSubsystems()
-							if iChildren > 0:
-								for iIndex in range(iChildren):
-									pChild = pWeaponSystem1.GetChildSubsystem(iIndex)
-									if pChild.GetName() in subsystemsOptions:
-										self.setChargeToX(pChild, rechargeIs)
-										self.setChildrenSubsystemsChargeToX(pChild, rechargeIs)
-
-					else:
-						print "TO-DO: I do not have pulses key, I will assume all pulses have ", __name__, " ability"
-						pulses = pShip.GetPulseWeaponSystem()
-						self.setChildrenSubsystemsChargeTo0(pulses)
-
-			repairV = -1
-			if repair != None and (type(1.0) == type(repair) or type(1) == type(repair)):
-				repairV = repair
-
-			self.conditionalVisibleDmgSwitch(pInstance, pShip, repairV)
+				
+				for wpnType in validWeaponTypes.keys():
+					try:
+						self.checkWhichSubToChg(validSubsystems, pShip, wpnType, rechargeIs)
+					except:
+						traceback.print_exc()
 
 			parentOnDefense(self, pShip, pInstance, oYield, pEvent)
+
+		def checkWhichSubToChg(self, validSubsystems, pShip, key, rechargeIs):
+			keyFactor = str(key)+"Factor"
+			if validSubsystems.has_key(keyFactor):
+				rechargeIs = rechargeIs * validSubsystems[keyFactor]
+
+			if validSubsystems.has_key(key):
+				if len(validSubsystems[key]) > 0:
+					pWeaponSystem = self.getControlSys(pShip, key)
+					self.chargeSubsystemTypes(pWeaponSystem, validSubsystems, key, rechargeIs)
+			else:
+				#print "I do not have ", key ," key, I will assume all ", key ," have ", __name__, " ability"
+				pWeaponSystem = self.getControlSys(pShip, key)
+				self.setChildrenSubsystemsChargeToX(pWeaponSystem, rechargeIs)
+
+		def getControlSys(self, pShip, key):
+			pSubsystem = None
+			if key != None and validWeaponTypes.has_key(key):
+				if hasattr(pShip, validWeaponTypes[key]):
+					try:
+						getWpnSysF = getattr(pShip, validWeaponTypes[key])
+						if getWpnSysF:
+							pSubsystem = getWpnSysF()
+					except:
+						print __name__, " error on getControlSys: "
+						traceback.print_exc()
+						pSubsystem = None
+			return pSubsystem
+
+		def chargeSubsystemTypes(self, pWeaponSystem, validSubsystems, key, rechargeIs):
+			if pWeaponSystem:
+				subsystemsOptions = validSubsystems[key]	
+
+				iChildren = pWeaponSystem.GetNumChildSubsystems()
+				if iChildren > 0:
+					for iIndex in range(iChildren):
+						pChild = pWeaponSystem.GetChildSubsystem(iIndex)
+						if pChild and pChild.GetName() in subsystemsOptions:
+							self.setChargeToX(pChild, rechargeIs)
+							self.setChildrenSubsystemsChargeToX(pChild, rechargeIs)
 
 		def setChildrenSubsystemsChargeToX(self, pSystem, dmgAmount):
 			if not pSystem:
@@ -315,7 +324,6 @@ if AblativeArmour != None:
 
 		def setChargeToX(self, pSubsystem, dmgAmount):
 			try:
-				print "Subsystem found to set charge to X"
 				pWeapon = App.PhaserBank_Cast(pSubsystem)
 				if not pWeapon:
 					pWeapon = App.PulseWeapon_Cast(pSubsystem)
@@ -325,13 +333,29 @@ if AblativeArmour != None:
 				if pWeapon and hasattr(pWeapon, "SetChargeLevel") and hasattr(pWeapon, "GetChargeLevel") and hasattr(pWeapon, "GetMaxCharge"):
 					minCharge = 0.0
 					maxCharge = pWeapon.GetMaxCharge()
-					myCharge = pWeapon.GetChargeLevel() + dmgAmount
+					myoldCharge = pWeapon.GetChargeLevel()
+					myCharge = myoldCharge + dmgAmount
 					if myCharge > maxCharge:
 						myCharge = maxCharge
 					elif  myCharge < minCharge:
 						myCharge = minCharge
-					
-					pWeapon.SetChargeLevel(myCharge)
+
+					if myoldCharge != myCharge:
+						pWeapon.SetChargeLevel(myCharge)
+
+				else:
+					pWeapon = App.TorpedoTube_Cast(pSubsystem)
+					if pWeapon and hasattr(pWeapon, "SetNumReady") and hasattr(pWeapon, "GetNumReady") and hasattr(pWeapon, "GetMaxReady"):
+						minCharge = 0.0
+						maxCharge = pWeapon.GetMaxReady()
+						myoldCharge = pWeapon.GetNumReady()
+						myCharge = myoldCharge + int(dmgAmount)
+						if myCharge > maxCharge:
+							myCharge = maxCharge
+						elif  myCharge < minCharge:
+							myCharge = minCharge
+						if myoldCharge != myCharge:
+							pWeapon.SetNumReady(myCharge)
 			except:
 				print "error with ", __name__, ":"
 				traceback.print_exc()
