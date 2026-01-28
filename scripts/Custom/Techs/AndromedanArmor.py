@@ -1,7 +1,7 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE FOUNDATION LGPL LICENSE AS WELL
 # AndromedanArmor.py
-# 27th January 2026, by Alex SL Gato, based on a Cristalline armour adjusted for colors, fixed by Alex SL Gato (CharaToLoki), modified from Greystar's (which was likely an ftb AblativeArmour script copy)
+# 28th January 2026, by Alex SL Gato, based on a Cristalline armour adjusted for colors, fixed by Alex SL Gato (CharaToLoki), modified from Greystar's (which was likely an ftb AblativeArmour script copy)
 # Also based on SlowStart.py by Alex SL Gato.
 #
 # Meant to be used alongside ftb AblativeArmour, in fact, it requires it to work properly. It also requires to have the FIX-AblativeArmour1dot0 too to work properly.
@@ -26,13 +26,14 @@ Foundation.ShipDef.saturn.dTechs = {
 # - "HealDepletes" is also a multiplier, which indicates if a healing weapon will depower these instead (1), if it will ignore it (0) or if it will replenish energy too (-1), or if it will gain more or something in-between.
 # - "Beams" lists a bunch of phaser beam properties, "Pulses" does the same for pulse firing properties, "Torpedoes" for torpedo tubes and "Tractors" for tractor beam properties. If these fields do not appear, it will assume all beams/pulses/torpedoes/disruptors can benefit from this tech.
 # - "DmgStrMod" and "DmgRadMod" affect how much is the visible mesh affected when hit, multiplying, the visible strength of the impact and the visible radious when the armour hardpoint is not dead. If neither of them are there, it will not modify any visible armour setting.
+# - "OverDS9FXNoDmgThroughShields" is a parameter that tells this module to directly interfere with DS9FX's No Dmg Through Shields option (value, 1), so this armour has precedence over DS9FX in terms of visible damage protection. Useful (and actually, should only be used) when shields and armour visible damage effects interfere with each other. Default is 0 (Do not interfere).
 Foundation.ShipDef.saturn.dTechs = {
-	'Andromedan absorption Armor': [485000, {"Beams": ["One phaser hardpoint name", "another laser hardpoint name"], "Pulses": ["One pulse hardpoint name", "Another disruptor hardpoint name"], "Torpedoes": [], "Tractors": [], "BeamsFactor": 1.0, "PulsesFactor": 1.0, "TorpedoesFactor": 1.0, "TractorsFactor: 1.0", "GlobalFactor": 1.0, "HealDepletes": 0, "DmgStrMod": 0.0, "DmgRadMod": 0.0}]
+	'Andromedan absorption Armor': [485000, {"Beams": ["One phaser hardpoint name", "another laser hardpoint name"], "Pulses": ["One pulse hardpoint name", "Another disruptor hardpoint name"], "Torpedoes": [], "Tractors": [], "BeamsFactor": 1.0, "PulsesFactor": 1.0, "TorpedoesFactor": 1.0, "TractorsFactor: 1.0", "GlobalFactor": 1.0, "HealDepletes": 0, "DmgStrMod": 0.0, "DmgRadMod": 0.0, "OverDS9FXNoDmgThroughShields": 0}]
 }
 
 # If you want to do everything at once, do this:
 Foundation.ShipDef.saturn.dTechs = {
-	'Andromedan absorption Armor': [485000, "Potato tasty chip", {"Beams": ["One phaser hardpoint name", "another laser hardpoint name"], "Pulses": ["One pulse hardpoint name", "Another disruptor hardpoint name"], "Torpedoes": [], "Tractors": [], "BeamsFactor": 1.0, "PulsesFactor": 1.0, "TorpedoesFactor": 1.0, "TractorsFactor: 1.0", "GlobalFactor": 1.0, "HealDepletes": 0, "DmgStrMod": 0.0, "DmgRadMod": 0.0}]
+	'Andromedan absorption Armor': [485000, "Potato tasty chip", {"Beams": ["One phaser hardpoint name", "another laser hardpoint name"], "Pulses": ["One pulse hardpoint name", "Another disruptor hardpoint name"], "Torpedoes": [], "Tractors": [], "BeamsFactor": 1.0, "PulsesFactor": 1.0, "TorpedoesFactor": 1.0, "TractorsFactor: 1.0", "GlobalFactor": 1.0, "HealDepletes": 0, "DmgStrMod": 0.0, "DmgRadMod": 0.0, "OverDS9FXNoDmgThroughShields": 0}]
 }
 """
 # SECOND, you need to add a hardpoint health property (could be a hull subsystem, but can also be another kind of subsystem... anything with actual health, no OEP of blinking light properties, please!) on that ships's script/ships/Hardpoints/whatever.py file with the same name as those used on the scripts/Custom/Ships/whateverShip.py one.
@@ -41,7 +42,7 @@ Foundation.ShipDef.saturn.dTechs = {
 ##################################
 #
 MODINFO = { "Author": "\"ftb Team\", \"Apollo\", \"Greystar\", \"Alex SL Gato\" (andromedavirgoa@gmail.com)",
-	    "Version": "0.221",
+	    "Version": "0.3",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -55,7 +56,6 @@ import traceback
 import Foundation
 import FoundationTech
 
-# TO-DO PLEASE AFTER TESTING TELL ME ANY PROBLEMS SO I CAN FIX THEM, PLUS ADD THE ACCESIBILITY FEATURE!
 kEmptyColor = App.TGColorA()
 kEmptyColor.SetRGBA(App.g_kSubsystemFillColor.r,App.g_kSubsystemFillColor.g,App.g_kSubsystemFillColor.b,App.g_kSubsystemFillColor.a)
 kFillColor = App.TGColorA()
@@ -108,6 +108,47 @@ if theArmourParentInherited != None:
 			return None
 		return pShip
 
+	def getDS9FXCheck(armorWorks=0, iShipID=None, pShip=None):
+		aScriptIneed = None
+		ds9checks = 0
+		pShDmg = 0
+		try:
+			from Custom.UnifiedMainMenu.ConfigModules.Options.SavedConfigs import DS9FXSavedConfig
+
+			try:
+				reload (DS9FXSavedConfig)
+				if DS9FXSavedConfig.NoDamageThroughShields == 1:
+					ds9checks = 1
+			except:
+				print __name__, "Error while trying to import DS9FXSavedConfig"
+				ds9checks = 0
+				traceback.print_exc()
+
+			from Custom.DS9FX.DS9FXLib import DS9FXLifeSupportLib
+
+			fShieldStats = DS9FXLifeSupportLib.GetShieldPerc(pShip)
+			if fShieldStats < 20:
+				pShDmg = 1
+			else:
+				pShDmg = 0
+
+			aScriptIneed = __import__("Custom.DS9FX.DS9FXLifeSupport.HandleShields")
+			attempts = 1
+		except:
+			print __name__, "DS9FX is probably not installed"
+			traceback.print_exc()
+			aScriptIneed = None
+			pShDmg = 0
+
+		if aScriptIneed != None and hasattr(aScriptIneed, "lModified") and type(aScriptIneed.lModified) == type([]):
+			if iShipID != None:
+				imThere = (iShipID in aScriptIneed.lModified)
+				if armorWorks and imThere:
+					aScriptIneed.lModified.remove(iShipID)
+				elif (not armorWorks) and not imThere:
+					aScriptIneed.lModified.append(iShipID)
+
+		return 0
 
 	class AndromedanArmorDef(theArmourParentInherited.AblativeDef):
 		def GetSystemName(self):
@@ -171,7 +212,7 @@ if theArmourParentInherited != None:
 					pInstanceDict = pInstance.__dict__
 					if hasattr(self, "lName") and hasattr(self, "lNameOld") and pInstanceDict.has_key(self.lName) and pInstanceDict.has_key(self.lNameOld):
 						if str(pInstanceDict[str(self.name)])[0] == "[":
-							myLen = len(pInstanceDict[str(self.name)])
+							myLen = len(pInstanceDict[str(self.lName)])
 							if myLen > 2:
 								setDmgStrMod = "None"
 								setDmgRadMod = "None"
@@ -190,7 +231,19 @@ if theArmourParentInherited != None:
 
 									pShip2 = GetWellShipFromID(iShipID)
 									if pShip2 != None:
-										if repair > 0.0:
+										armorWorks = (repair > 0.0)
+
+										interfereOnDS9FX = 0
+										if pInstanceDict[self.lName][2].has_key("OverDS9FXNoDmgThroughShields"):
+											interfereOnDS9FX = pInstanceDict[self.lName][2]["OverDS9FXNoDmgThroughShields"]
+										try:
+											if interfereOnDS9FX > 0:
+												getDS9FXCheck(armorWorks, iShipID, pShip2)
+										except:
+											print __name__, "Error on conditionalVisibleDmgSwitch"
+											traceback.print_exc()
+
+										if armorWorks > 0.0:
 											self.SetDmgRadModif(pShip2, setDmgRadMod, setDmgStrMod)
 										else:
 											self.SetDmgRadModif(pShip2, None, None)
@@ -232,15 +285,20 @@ if theArmourParentInherited != None:
 				except:
 					myStr = 1.0
 
-			if dmgRd == None:
-				pShip.SetVisibleDamageRadiusModifier(myRad)
-			elif dmgRd != "None":
-				pShip.SetVisibleDamageRadiusModifier(dmgRd)				
+			if App.DamageableObject_IsDamageGeometryEnabled():
+				if dmgRd == None:
+					pShip.SetVisibleDamageRadiusModifier(myRad)
+				elif dmgRd != "None":
+					pShip.SetVisibleDamageRadiusModifier(dmgRd)				
 
-			if dmgStr == None:
-				pShip.SetVisibleDamageStrengthModifier(myStr)
-			elif dmgStr != "None":
-				pShip.SetVisibleDamageStrengthModifier(dmgStr)	
+				if dmgStr == None:
+					pShip.SetVisibleDamageStrengthModifier(myStr)
+				elif dmgStr != "None":
+					pShip.SetVisibleDamageStrengthModifier(dmgStr)
+
+			pShip.UpdateNodeOnly()
+
+			
 
 			
 			
@@ -248,7 +306,7 @@ if theArmourParentInherited != None:
 			
 			repair = pInstance.__dict__[self.lName]
 
-			#print 'AndromedanArmorDef', pShip.GetName(), repair, pEvent.GetDamage()
+			#print __name__, "'s ArmorDef", pShip.GetName(), repair, pEvent.GetDamage()
 
 			validSubsystems = None
 			pSubName = self.GetSystemName()
@@ -286,18 +344,8 @@ if theArmourParentInherited != None:
 			#	parentOnDefense(self, pShip, pInstance, oYield, pEvent) 
 			#except:
 			#	traceback.print_exc()
-			#	# TO-DO if attempts == 1:
 
-			# Plan B # It seemed to work on my install, but it does not work on ZZ's?
-			#if attempts == 1:
-			#	from ftb.Tech.AblativeArmour import AblativeDef
-			#	AblativeDef.OnDefense(self, pShip, pInstance, oYield, pEvent)
-			#elif attempts == 2:
-			#	from Custom.Techs.AblativeArmour import AblativeDef
-			#	AblativeDef.OnDefense(self, pShip, pInstance, oYield, pEvent)
-
-			# TO-DO BELOW
-			#  Plan C: import the same module again, but on demand the first time
+			#  Plan B: import the same module again, but on demand the first time
 
 			global parentCOnDefense
 			if parentCOnDefense == None or not hasattr(parentCOnDefense, "OnDefense"):
@@ -318,7 +366,6 @@ if theArmourParentInherited != None:
 
 			else:
 				print __name__, "ERROR on OnDefense, there's no parent?"
-			# TO-DO ABOVE 
 
 		def checkWhichSubToChg(self, validSubsystems, pShip, key, rechargeIs):
 			keyFactor = str(key)+"Factor"
