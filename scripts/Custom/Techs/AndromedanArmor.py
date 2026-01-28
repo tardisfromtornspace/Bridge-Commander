@@ -13,11 +13,11 @@
 # NOTE: replace "saturn" for your ship's abbrev
 # If oyou only want the basic one, where the health is the only thing determining that, and everytything else is default (that is, the hardpoint property will be the one stated on "GetSystemName", and all beams and pulses will recharge when hit) choose this:
 Foundation.ShipDef.saturn.dTechs = {
-	'Andromedan-type Armor': 485000,
+	'Andromedan absorption Armor': 485000,
 }
 # If you want to determine the hardpoint property name, choose something like this
 Foundation.ShipDef.saturn.dTechs = {
-	'Andromedan-type Armor': [485000, "Potato tasty chip"]
+	'Andromedan absorption Armor': [485000, "Potato tasty chip"]
 }
 # If you want to determine what weapon properties benefit from this tech, choose this:
 # Notes:
@@ -27,12 +27,12 @@ Foundation.ShipDef.saturn.dTechs = {
 # - "Beams" lists a bunch of phaser beam properties, "Pulses" does the same for pulse firing properties, "Torpedoes" for torpedo tubes and "Tractors" for tractor beam properties. If these fields do not appear, it will assume all beams/pulses/torpedoes/disruptors can benefit from this tech.
 # - "DmgStrMod" and "DmgRadMod" affect how much is the visible mesh affected when hit, multiplying, the visible strength of the impact and the visible radious when the armour hardpoint is not dead. If neither of them are there, it will not modify any visible armour setting.
 Foundation.ShipDef.saturn.dTechs = {
-	'Andromedan-type Armor': [485000, {"Beams": ["One phaser hardpoint name", "another laser hardpoint name"], "Pulses": ["One pulse hardpoint name", "Another disruptor hardpoint name"], "Torpedoes": [], "Tractors": [], "BeamsFactor": 1.0, "PulsesFactor": 1.0, "TorpedoesFactor": 1.0, "TractorsFactor: 1.0", "GlobalFactor": 1.0, "HealDepletes": 0, "DmgStrMod": 0.0, "DmgRadMod": 0.0}]
+	'Andromedan absorption Armor': [485000, {"Beams": ["One phaser hardpoint name", "another laser hardpoint name"], "Pulses": ["One pulse hardpoint name", "Another disruptor hardpoint name"], "Torpedoes": [], "Tractors": [], "BeamsFactor": 1.0, "PulsesFactor": 1.0, "TorpedoesFactor": 1.0, "TractorsFactor: 1.0", "GlobalFactor": 1.0, "HealDepletes": 0, "DmgStrMod": 0.0, "DmgRadMod": 0.0}]
 }
 
 # If you want to do everything at once, do this:
 Foundation.ShipDef.saturn.dTechs = {
-	'Andromedan-type Armor': [485000, "Potato tasty chip", {"Beams": ["One phaser hardpoint name", "another laser hardpoint name"], "Pulses": ["One pulse hardpoint name", "Another disruptor hardpoint name"], "Torpedoes": [], "Tractors": [], "BeamsFactor": 1.0, "PulsesFactor": 1.0, "TorpedoesFactor": 1.0, "TractorsFactor: 1.0", "GlobalFactor": 1.0, "HealDepletes": 0, "DmgStrMod": 0.0, "DmgRadMod": 0.0}]
+	'Andromedan absorption Armor': [485000, "Potato tasty chip", {"Beams": ["One phaser hardpoint name", "another laser hardpoint name"], "Pulses": ["One pulse hardpoint name", "Another disruptor hardpoint name"], "Torpedoes": [], "Tractors": [], "BeamsFactor": 1.0, "PulsesFactor": 1.0, "TorpedoesFactor": 1.0, "TractorsFactor: 1.0", "GlobalFactor": 1.0, "HealDepletes": 0, "DmgStrMod": 0.0, "DmgRadMod": 0.0}]
 }
 """
 # SECOND, you need to add a hardpoint health property (could be a hull subsystem, but can also be another kind of subsystem... anything with actual health, no OEP of blinking light properties, please!) on that ships's script/ships/Hardpoints/whatever.py file with the same name as those used on the scripts/Custom/Ships/whateverShip.py one.
@@ -41,7 +41,7 @@ Foundation.ShipDef.saturn.dTechs = {
 ##################################
 #
 MODINFO = { "Author": "\"ftb Team\", \"Apollo\", \"Greystar\", \"Alex SL Gato\" (andromedavirgoa@gmail.com)",
-	    "Version": "0.22",
+	    "Version": "0.221",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -84,7 +84,8 @@ theArmourParentInherited = getAblativeAmourScriptToInherit()
 if theArmourParentInherited != None:
 
 	parentOnDefenseBck = None
-	parentOnDefense = theArmourParentInherited.AblativeDef.OnDefense # FUTURE TO-DO: It works on most installs, except ZZ's. Check why.
+	parentCOnDefense = None # FUTURE TO-DO: Because on ZZ's install this does not work properly, gotta perform a different check. Check why.
+	#parentOnDefense = theArmourParentInherited.AblativeDef.OnDefense # FUTURE TO-DO: It works on most installs, except ZZ's. Check why.
 	#parentAttach = theArmourParentInherited.AblativeDef.Attach
 
 	validWeaponTypes = {"Beams": "GetPhaserSystem", "Pulses": "GetPulseWeaponSystem", "Tractors": "GetTractorBeamSystem", "Torpedoes": "GetTorpedoSystem"} # Relation between key names and the functions to obtain their control subsystems
@@ -111,7 +112,7 @@ if theArmourParentInherited != None:
 	class AndromedanArmorDef(theArmourParentInherited.AblativeDef):
 		def GetSystemName(self):
 			debug(__name__ + ", GetSystemName")
-			return "Andromedan-type Armor"
+			return "Andromedan absorption Armor"
 
 		def GetFillColor(self):
 			global kFillColor
@@ -132,6 +133,7 @@ if theArmourParentInherited != None:
 			pInstanceDict = pInstance.__dict__
 			self.lName = str(self.name) + " L"
 			self.lNameOld = self.lName + " Old"
+
 			if not pInstanceDict.has_key(self.lName):
 				if str(pInstanceDict[str(self.name)])[0] == "[":
 					pInstanceDict[self.lName] = [0.0, str(self.GetSystemName()), {}]
@@ -286,13 +288,37 @@ if theArmourParentInherited != None:
 			#	traceback.print_exc()
 			#	# TO-DO if attempts == 1:
 
-			# Plan B # It seems to work on my install, but it does not work on ZZ's?
-			if attempts == 1:
-				from ftb.Tech.AblativeArmour import AblativeDef
-				AblativeDef.OnDefense(self, pShip, pInstance, oYield, pEvent)
-			elif attempts == 2:
-				from Custom.Techs.AblativeArmour import AblativeDef
-				AblativeDef.OnDefense(self, pShip, pInstance, oYield, pEvent)
+			# Plan B # It seemed to work on my install, but it does not work on ZZ's?
+			#if attempts == 1:
+			#	from ftb.Tech.AblativeArmour import AblativeDef
+			#	AblativeDef.OnDefense(self, pShip, pInstance, oYield, pEvent)
+			#elif attempts == 2:
+			#	from Custom.Techs.AblativeArmour import AblativeDef
+			#	AblativeDef.OnDefense(self, pShip, pInstance, oYield, pEvent)
+
+			# TO-DO BELOW
+			#  Plan C: import the same module again, but on demand the first time
+
+			global parentCOnDefense
+			if parentCOnDefense == None or not hasattr(parentCOnDefense, "OnDefense"):
+				parentArmorFile = getAblativeAmourScriptToInherit()
+				if parentArmorFile != None and hasattr(parentArmorFile, "AblativeDef"):
+					parentCOnDefense = parentArmorFile.AblativeDef
+
+			if parentCOnDefense:
+				hasOnDefense = hasattr(parentCOnDefense, "OnDefense")					
+				if hasattr(parentCOnDefense, "OnDefense"):
+					try:
+						parentCOnDefense.OnDefense(self, pShip, pInstance, oYield, pEvent) 
+					except:
+						print __name__, "ERROR on OnDefense: "
+						traceback.print_exc()
+				else:
+					print __name__, "ERROR on OnDefense: parentCOnDefense does not have OnDefense()"	
+
+			else:
+				print __name__, "ERROR on OnDefense, there's no parent?"
+			# TO-DO ABOVE 
 
 		def checkWhichSubToChg(self, validSubsystems, pShip, key, rechargeIs):
 			keyFactor = str(key)+"Factor"
@@ -382,4 +408,4 @@ if theArmourParentInherited != None:
 				traceback.print_exc()
 
 
-	oAndromedanArmor = AndromedanArmorDef('Andromedan-type Armor')
+	oAndromedanArmor = AndromedanArmorDef('Andromedan absorption Armor')
