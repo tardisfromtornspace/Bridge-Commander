@@ -1,6 +1,6 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE FOUNDATION LGPL LICENSE AS WELL
-# Andromedan.py
+# AndromedanArmor.py
 # 27th January 2026, by Alex SL Gato, based on a Cristalline armour adjusted for colors, fixed by Alex SL Gato (CharaToLoki), modified from Greystar's (which was likely an ftb AblativeArmour script copy)
 # Also based on SlowStart.py by Alex SL Gato.
 #
@@ -41,7 +41,7 @@ Foundation.ShipDef.saturn.dTechs = {
 ##################################
 #
 MODINFO = { "Author": "\"ftb Team\", \"Apollo\", \"Greystar\", \"Alex SL Gato\" (andromedavirgoa@gmail.com)",
-	    "Version": "0.21",
+	    "Version": "0.22",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -286,7 +286,7 @@ if theArmourParentInherited != None:
 			#	traceback.print_exc()
 			#	# TO-DO if attempts == 1:
 
-			# Plan B # It seems to work on my install TO-DO verify on ZZ's install
+			# Plan B # It seems to work on my install, but it does not work on ZZ's?
 			if attempts == 1:
 				from ftb.Tech.AblativeArmour import AblativeDef
 				AblativeDef.OnDefense(self, pShip, pInstance, oYield, pEvent)
