@@ -38,9 +38,11 @@ shadowDispersiveHullMin = 0.2
 global lB5VulnerableLegacyList
 lB5VulnerableLegacyList = (
 		"bluestar",
+		"B5MinbariSharlin",
 		"MinbariSharlin",
 		"MinbariAshenShuumtian"
 		"MinbariNial"
+		"B5Victory",
 		"Victory",
                 "VOR_Fighter",
                 "VOR_FighterOpen",
@@ -51,6 +53,7 @@ global lB5ResistantLegacyList
 lB5ResistantLegacyList = (
 		"bluestar",
 		"SigmaWalkerScienceLab",
+		"B5Victory",
 		"Victory",
                 "VOR_Cruiser",
                 "VOR_Destroyer",

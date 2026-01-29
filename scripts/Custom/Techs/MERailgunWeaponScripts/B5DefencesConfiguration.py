@@ -34,11 +34,15 @@ shadowDispersiveHullMin = 0.38
 ### Some ships that from legacy reasons are extra vulnerable to this weapon in some way - for these ones is because B5 defences and STBC shields work differently
 global lB5VulnerableLegacyList 
 lB5VulnerableLegacyList = (
+                "AshenShuumtian",
                 "bluestar",
                 "DRA_Raider",
                 "DRA_Shuttle",
                 "MinbariNial",
+                "MinbariAshenShuumtian",
+                "B5MinbariSharlin",
                 "MinbariSharlin",
+                "B5Victory",
                 "Victory",
                 "VOR_Destroyer",
                 "VOR_DestroyerClosed",
@@ -47,10 +51,17 @@ lB5VulnerableLegacyList = (
                 "whitestar",
                 )
 
+global lResistantLegacyList
+lResistantLegacyList = {
+                "minbari": 0.5,
+                "ashenshuumtian": 0.75,
+                "vorlon": 0.75,		
+}
 
 def interactionShieldBehaviour(pShip, sScript, sShipScript, pInstance, pEvent, pTorp, pInstancedict, pAttackerShipID, hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, considerPiercing, shouldDealAllFacetDamage, wasChanged):
 	global RailgunB5LegacyShieldDamageMultiplier
 	changed = 0
+	passThru = 0
 	if pInstance:
 		if pInstancedict.has_key('Gravimetric Defense'): # ohhhh Babylon 5 gravimetric defenses - they help quite a bit, a far-away watered-down cousin from a cyclonic mass effect shield - but you still need to consider piercing.
 			changed = 1
@@ -61,6 +72,7 @@ def interactionShieldBehaviour(pShip, sScript, sShipScript, pInstance, pEvent, p
 			wasChanged = wasChanged + 1
 			shieldDamageMultiplier = shieldDamageMultiplier * RailgunB5LegacyGridDamageMultiplier
 			considerPiercing = considerPiercing + 1
+			passThru = 1
 
 		elif pInstancedict.has_key('Shadow Dispersive Hull'): # ohhhh Babylon 5 Shadow Dispersive Hull - yeah, no shields against kinetic impact, sorry - but don't worry, at least your hull damage will be reduced
 			changed = 1
@@ -83,8 +95,10 @@ def interactionShieldBehaviour(pShip, sScript, sShipScript, pInstance, pEvent, p
 		wasChanged = wasChanged + 1
 		shieldDamageMultiplier = shieldDamageMultiplier * RailgunB5LegacyShieldDamageMultiplier
 		considerPiercing = considerPiercing + 1
+		shouldPassThrough = shouldPassThrough + 1
+		passThru = 1
 
-	if changed == 1:
+	if changed == 1 and passThru == 0:
 		mod = pTorp.GetModuleName()
 		importedTorpInfo = __import__(mod)
 		if hasattr(importedTorpInfo, "ShieldDmgMultiplier"): # If this torp has a special global multiplier, then we use it
@@ -127,6 +141,13 @@ def interactionHullBehaviour(pShip, sScript, sShipScript, pInstance, pEvent, pTo
 			importedTorpInfo = __import__(mod)
 			if hasattr(importedTorpInfo, "HullDmgMultiplier"): # If this torp has a special global multiplier, then we use it
 				hullDamageMultiplier = hullDamageMultiplier * (importedTorpInfo.HullDmgMultiplier() -1)
+
+	sshipscript = string.lower(sShipScript)
+	for key in lResistantLegacyList.keys():
+		foundThis = string.find(sshipscript, key) + 1
+		if foundThis > 0:
+			hullDamageMultiplier = hullDamageMultiplier * lResistantLegacyList[key]
+			break
 
 	return hullDamageMultiplier, shieldDamageMultiplier, shouldPassThrough, considerPiercing, shouldDealAllFacetDamage, wasChanged
 

@@ -35,6 +35,7 @@ shadowDispersiveHullMin = 0.2
 global lB5VulnerableLegacyList 
 lB5ResistantLegacyList = (
 		"SigmaWalkerScienceLab",
+                "B5Victory",
                 "Victory",
                 "VOR_Cruiser",
                 "VOR_Destroyer",

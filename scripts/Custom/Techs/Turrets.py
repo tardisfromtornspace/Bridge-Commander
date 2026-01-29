@@ -157,7 +157,7 @@ import MissionLib
 
 #################################################################################################################
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "1.14",
+	    "Version": "1.15",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -2021,8 +2021,8 @@ def WeaponFired(pObject, pEvent, stoppedFiring=None):
 
                                                 wpnSystem.StopFiring() # Safety check for strays due to multi-targeting
 
-                                                pParent = pShip
-                                                aim1Item(lTurretsToFire[turret][-2], pShip.GetObjID(), pShip=pParent)
+                                                #pParent = pShip
+                                                #aim1Item(lTurretsToFire[turret][-2], pShip.GetObjID(), pShip=pParent)
 
                                                 wpnSystem.StartFiring(pTarget)
                                                 

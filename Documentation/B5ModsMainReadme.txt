@@ -1,4 +1,7 @@
 ==Changelog==
+1.7.6 -
+   Updates:
+   * Updated Turrets to 1.14, allowing with a new parameter if a turret aims at the parent ship's target or only at what the related turret is firing at; and made the aim a bit.
 1.7.5 -
    Fixes:
    * Created FIX-DS9FXSetGamePlayerFixExpansion to avoid certain transporter bugs.
