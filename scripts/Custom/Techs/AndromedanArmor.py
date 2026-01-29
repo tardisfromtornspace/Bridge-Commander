@@ -42,7 +42,7 @@ Foundation.ShipDef.saturn.dTechs = {
 ##################################
 #
 MODINFO = { "Author": "\"ftb Team\", \"Apollo\", \"Greystar\", \"Alex SL Gato\" (andromedavirgoa@gmail.com)",
-	    "Version": "0.3",
+	    "Version": "0.31",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -140,7 +140,7 @@ if theArmourParentInherited != None:
 			aScriptIneed = None
 			pShDmg = 0
 
-		if aScriptIneed != None and hasattr(aScriptIneed, "lModified") and type(aScriptIneed.lModified) == type([]):
+		if aScriptIneed != None and ds9checks == 1 and hasattr(aScriptIneed, "lModified") and type(aScriptIneed.lModified) == type([]):
 			if iShipID != None:
 				imThere = (iShipID in aScriptIneed.lModified)
 				if armorWorks and imThere:
