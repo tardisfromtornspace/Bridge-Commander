@@ -1,6 +1,6 @@
 """
 #         Turrets
-#         13th September 2025
+#         29th January 2026
 #         Based strongly on SubModels.py by USS Defiant and their team, and AutoTargeting.py by USS Frontier.
 #         Also based slightly on AdvancedTorpedoManagement.py from BCSTB Team, the Borg Technology from Alex SL Gato, and ConditionInLineOfSight by the original STBC team
 #         Special thanks to USS Sovereign and Gizmo_3.
@@ -36,7 +36,8 @@
 # -------- "Forward", "Backward" (the turret is aligned to the Y axis of the parent with more or less elevation, but the turret's up is aiming forward or backwards),
 # -------- "Right", "Left" (the turret is aligned to the X axis of the parent with more or less elevation, but the turret's up is aiming right or left),
 # -------- [<howstrongtoTheRight>, <howstrongToTheFront>, <howstrongUpwards>], with the names between "<>" being replaced by a float number (i.e. [1.0, 0, 1.0] would mean that the turret base orientation would be 45 degrees tilted to the right without being moved forward or backward)
-# ---- "No Elevation": 0 means it aims perfectly, while any other value means we ignore any elevation axis compared with the plane defined by the "Orientation" value (i.e. if Orientation is "Up" and "No Elevation" is 0, that means the turret will have its rotation axis upward but the turret itself will not aim upwards or downwards)., "Orientation") and dTurretSystemOptionsList["Orientation"] != "Up": # TO-DO ADD TO DOC
+# ---- "No Elevation": 0 means it aims perfectly, while any other value means we ignore any elevation axis compared with the plane defined by the "Orientation" value (i.e. if Orientation is "Up" and "No Elevation" is 0, that means the turret will have its rotation axis upward but the turret itself will not aim upwards or downwards)., "Orientation") and dTurretSystemOptionsList["Orientation"] != "Up":
+# ---- "aimOnlyOnFire": 0 (or nota dding the field) means that the turrets will always follow a target, even if that could lead to them pointing somewhere their related hardpoint property cannot fire at. 1 means that it will only face those targets its  related hardpoints are firing upon and will stop aiming when the related hardpoints stop firing (prevents the turret from aiming outside the scope, but blocks auto-turrets from working)
 # ---- "Check LOS": if not left blank or 0, it will verify if the parent ship is on the line connecting a turret with its target, and if it is, will not aim to that target. Please notice that since most turrets remain close to the ship model and the line of sight considers radious, leaving this parameter active would most often make turrets immobile... Default is to always aim regardless of line of sight.
 # Please note that there's a field in Setup "ShieldOption", if it doesn't exist or is set to 0, shields will work normally - else shields will drop when turrets are active - this is useful for some functional turrets that are inside
 # the shield grid, or for lore reasons!
@@ -130,6 +131,7 @@ Foundation.ShipDef.VasKholhr.dTechs = { 'Turret': {
                 "SyncTorpType": 1,
                 "SimulatedPhaser": 1,
                 "SimulatedTractor": 1,
+                "aimOnlyOnFire" : 0,
                 "SetScale": 1.0,
                 "No Elevation": 0, # 0 = This turret has elevation, 1 = this turret doesn't
                 "Orientation": "Up",
@@ -155,7 +157,7 @@ import MissionLib
 
 #################################################################################################################
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "1.13",
+	    "Version": "1.14",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -1094,7 +1096,7 @@ def partTranslate(item, iShipID, lStoppingTranslation, warpDirty, usualMove = 0)
         return 0
 
 # aim!
-def aim1Item(item, iShipID, pTarget=None, pShip = None): #(item, iShipID, pTarget=None):
+def aim1Item(item, iShipID, pTarget=None, pShip = None):
 
         if not pShip:
                 pShip = GetShipFromID(iShipID)
@@ -1133,14 +1135,23 @@ def aim1Item(item, iShipID, pTarget=None, pShip = None): #(item, iShipID, pTarge
                         
         # set new Rotation values
         if pTarget == None:
+                autoLook = 1
+                if dTurretSystemOptionsList.has_key("aimOnlyOnFire") and dTurretSystemOptionsList["aimOnlyOnFire"] == 1:
+                        autoLook = 0
                 if dTurretSystemOptionsList.has_key("TARGET"):
                         pTarget = dTurretSystemOptionsList["TARGET"]
                         if pTarget:
                                 pTarget = GetShipFromID(pTarget.GetObjID())
-                        if not pTarget or pTarget.IsDead() or pTarget.IsDying() or pTarget.GetObjID() == iNacelleID:
-                                pTarget = pShip.GetTarget()
+
+                        if autoLook:
+                                if (not pTarget or pTarget.IsDead() or pTarget.IsDying() or pTarget.GetObjID() == iNacelleID):
+                                        pTarget = pShip.GetTarget()
+                        else:
+                                if pTarget != None and (pTarget.IsDead() or pTarget.IsDying() or pTarget.GetObjID() == iNacelleID):
+                                        pTarget = None			
                 else:
-                        pTarget = pShip.GetTarget()
+                        if autoLook:
+                                pTarget = pShip.GetTarget()
         else:
                 dTurretSystemOptionsList["TARGET"] = pTarget
 
@@ -1762,6 +1773,13 @@ def WeaponFiredStop(pObject, pEvent, stoppedFiring=None):
 
                                         if pTarget:
                                             wpnSystem.StopFiringAtTarget(pTarget)
+                                            if lTurretsToFire[turret][-2][1].has_key("aimOnlyOnFire") and lTurretsToFire[turret][-2][1]["aimOnlyOnFire"] == 1:
+                                                if lTurretsToFire[turret][-2][1].has_key("TARGET"):
+                                                    pTarget2 = lTurretsToFire[turret][-2][1]["TARGET"]
+                                                    if pTarget2 and hasattr(pTarget2, "GetObjID"):
+                                                        iTarget2ID = pTarget2.GetObjID()
+                                                        if iTarget2ID != App.NULL_ID and iTarget2ID == pTarget.GetObjID():
+                                                            lTurretsToFire[turret][-2][1]["TARGET"] = None
 
                                         if lTurretsToFire[turret][-2][1].has_key("SimulatedPhaser") and lTurretsToFire[turret][-2][1]["SimulatedPhaser"] == 1:
                                             turPhsSys = lTurretsToFire[turret][0].GetPhaserSystem()
@@ -1775,8 +1793,6 @@ def WeaponFiredStop(pObject, pEvent, stoppedFiring=None):
                                                 lookandUpdateSiblingTPhasers(wpnSystem, pShip, lTurretsToFire[turret][0], 1, 0)
 
                                         wpnSystem.StopFiring()
-                         
-
                                         wpnSystem.SetForceUpdate(1)
                                 #else:
                                 #        print "We have gone so far, what do you mean you don't have the system to fire???"
@@ -1875,7 +1891,7 @@ def WeaponFired(pObject, pEvent, stoppedFiring=None):
 
                                 if wpnSystem != None:
                                         if pTarget and not shouldWeTakeMeasuresToAvoidGettingHit: # Just a safety precaution
-                                            lTurretsToFire[turret][-2][1]["TARGET"] = pTarget #item[1]["TARGET"] = pTarget
+                                            lTurretsToFire[turret][-2][1]["TARGET"] = pTarget
                                             pSet = lTurretsToFire[turret][0].GetContainingSet()
                                             mothershipBlock = 0 # 0.991 change, after optimizing this is so effective that no turret can ever fire if it Checks Line of Sight
                                             # mothershipBlock = CheckLOS(pTarget, lTurretsToFire[turret][0], pShip, pSet) # This prevents turrets from firing most of the time since technically the turrets are inside.
@@ -2004,6 +2020,10 @@ def WeaponFired(pObject, pEvent, stoppedFiring=None):
                                                 ####### XPERIMENTAL AREA, TO SEE KCS' idea 
 
                                                 wpnSystem.StopFiring() # Safety check for strays due to multi-targeting
+
+                                                pParent = pShip
+                                                aim1Item(lTurretsToFire[turret][-2], pShip.GetObjID(), pShip=pParent)
+
                                                 wpnSystem.StartFiring(pTarget)
                                                 
                                         else:
