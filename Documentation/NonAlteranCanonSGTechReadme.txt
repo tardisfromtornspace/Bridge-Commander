@@ -1,4 +1,9 @@
 == Changelog ==
+1.2.7 -
+   Fixes:
+   * Updated DamagedWarship scripts/Custom/Ships file to correct an issue with its hyperdrive.
+   * Now a depowered Asuran Satellite will work as a conencting stargate for the network.
+   * Updated SGStargateNetwork to 0.21 to fix a small goof on stargate connection and hopefully fix some collision situations.
 1.2.6 -
    Fixes:
    * Updated FIX-AblativeArmour1dot0 Autoload script to 0.41 to provide better armour inheritance.
