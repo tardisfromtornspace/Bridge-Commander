@@ -43,6 +43,9 @@ Foundation.ShipDef.AsuranSatellite.dTechs = {
 
 Foundation.ShipDef.AsuranSatellite.fMaxWarp = 8.25
 Foundation.ShipDef.AsuranSatellite.fCruiseWarp = 3.25
+
+Foundation.ShipDef.AsuranSatellite.IsSGWorkingStargate = -3
+Foundation.ShipDef.AsuranSatellite.SGWorkingStargateRad = 0.17
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

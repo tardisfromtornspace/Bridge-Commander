@@ -3,7 +3,7 @@
 # GC is ALL Rights Reserved by USS Frontier, but since GC supports Plugins it is fair to release a new TravellingMethod or patch old ones as long as the files remain unmodified.
 # SGStargateNetwork.py
 # Based on the prototype custom travelling method plugin script, by USS Frontier (Enhanced Warp.py, original, template), and then modified by Alex SL Gato for B5Stargate.
-# 18th September 2025
+# 31st January 2025
 #################################################################################################################
 ##########	MANUAL
 #################################################################################################################
@@ -36,7 +36,7 @@ Foundation.ShipDef.ActiveSupergate.SGWorkingStargateFlashRad = 1
 #################################################################################################################
 #
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.2",
+	    "Version": "0.21",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -384,7 +384,7 @@ def CanTravel(self):
 					if pFutureShip:
 						destGateType, destGateRad, _ = IsWorkingStargate(pFutureShip)
 						pFutureShipRad = pFutureShip.GetRadius()
-						if destGateType != None and destGateType != 0 and ((gateType > 0 and destGateType > 0) or (gateType < 0 and gateType == -destGateType)):
+						if destGateType != None and destGateType != 0 and ((gateType > 0 and destGateType > 0) or (gateType < 0 and abs(gateType) == abs(destGateType))):
 							if (destGateRad != None and shipRad <= destGateRad) or (shipRad <= pFutureShipRad):
 								works = destGateType
 								break
@@ -474,7 +474,7 @@ def BringMeStargateFromShipSet(pShipID, chooseClosest=0, gateType=None):
 						pFutureShip = GetWellShipFromID(aShipID)
 						if pFutureShip:
 							works, radLimit, iFlash = IsWorkingStargate(pFutureShip)
-							if works != None and works != 0 and (gateType == None or ((gateType > 0 and works > 0) or (gateType < 0 and gateType == -works)) ):
+							if works != None and works != 0 and (gateType == None or ((gateType > 0 and works > 0) or (gateType < 0 and abs(gateType) == abs(works))) ):
 								if pStargate == None:
 									pStargate = pFutureShip
 									returningType = works
@@ -802,10 +802,11 @@ def SetupSequence(self):
 
 	myBoosting = 15.0
 
-	rRadius = 5 
+	rRadius = 15 
 	pSRad = pShip.GetRadius()
 	if pSRad < 5:
 		rRadius = 2/(pSRad+0.0001) * 5
+		myBoosting = 10.0
 
 	iVelRel = 2.0 * 100 * myBoosting/(fEntryDelayTime+0.1)
 

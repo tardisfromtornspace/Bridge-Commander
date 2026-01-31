@@ -37,8 +37,8 @@ Foundation.ShipDef.DamagedWarship.dTechs = {
 	'SG Shields': { "RaceShieldTech": "Lantian" }
 }
 
-Foundation.ShipDef.AncientWarship.fMaxWarp = 8.0
-Foundation.ShipDef.AncientWarship.fCruiseWarp = 2.0
+Foundation.ShipDef.DamagedWarship.fMaxWarp = 8.0
+Foundation.ShipDef.DamagedWarship.fCruiseWarp = 2.0
 #                                                                                     #
 #######################################################################################
 #                                                                                     #
