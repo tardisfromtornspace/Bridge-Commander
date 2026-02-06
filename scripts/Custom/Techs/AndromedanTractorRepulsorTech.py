@@ -16,7 +16,7 @@
 # To add it, just add to your Custom/Ships/shipFileName.py this:
 """
 Foundation.ShipDef.Ambassador.dTechs = {
-	"Andromedan Tractor-Repulsor Beams Weapon": [{"HullDmgMultiplier": 100.0, "ShieldDmgMultiplier": 1.0}, ["Beam Sound 1 to add", "Beam 2 sound to add"]],
+	"Andromedan Tractor-Repulsor Beams Weapon": [{"HullDmgMultiplier": 100.0, "ShieldDmgMultiplier": 1.0, Beam: ["Tractor beam projector name 1", "Tractor beam projector name 2"]}, ["Beam Sound 1 to add", "Beam 2 sound to add"]],
 }
 """
 # "HullDmgMultiplier" will multiply upon the base global multiplier for hull damage. Default is x1.0.
@@ -132,7 +132,7 @@ import nt
 import string
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-            "Version": "0.1",
+            "Version": "0.11",
             "License": "LGPL",
             "Description": "Read the small title above for more info"
             }
