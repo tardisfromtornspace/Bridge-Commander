@@ -1,7 +1,7 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
 # 11th February 2025
-# VERSION 0.3
+# VERSION 0.31
 # By Alex SL Gato
 # FoundationTech.py by Dasher and the Foundation Technologies team -> GaugeTechDef.DetachShip fix
 #
@@ -47,10 +47,8 @@ if necessaryToUpdate:
 						myDi = []
 						if FoundationTech.dDisplays.has_key(pInstance.pShipID):
 							myDi = FoundationTech.dDisplays[pInstance.pShipID]
-						if len(myDi) > 0:
-							#myDi = FoundationTech.dDisplays[pInstance.pShipID]
-							if myDi != None and len(myDi) > 0:
-								pInstance.pDisplay = FoundationTech.dDisplays[pInstance.pShipID][-1]
+						if myDi != None and len(myDi) > 0:
+							pInstance.pDisplay = FoundationTech.dDisplays[pInstance.pShipID][-1]
 				except:
 					traceback.print_exc()
 				try:
