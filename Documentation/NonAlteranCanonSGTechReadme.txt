@@ -1,4 +1,7 @@
 == Changelog ==
+1.2.9 -
+   Fixes:
+   * Updated SGReplicator adaptation to 1.34, making its resistance tech exist as a token tech, to fix log warnings.
 1.2.8 -
    Fixes:
    * Updated SGReplicator adaptation to 1.33, making it stronger and fixing a possible shield facet that may not have been covered.

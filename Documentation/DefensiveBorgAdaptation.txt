@@ -1,4 +1,6 @@
 == Changelog ==
+1.9.13 - Borg Adapttion script 1.35
+- Added a token tech for Borg resistance to avoid log warnings.
 1.9.12 - Automated Destroyed System Repair related fix
 - Updated to 0.64, made a bit more robust under certain Mvam situations.
 1.9.11 - Automated Destroyed System Repair related fix

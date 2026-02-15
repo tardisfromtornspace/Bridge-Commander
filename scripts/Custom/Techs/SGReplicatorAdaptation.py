@@ -58,7 +58,7 @@ Foundation.ShipDef.Ambassador.dTechs = {
 
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "1.33",
+	    "Version": "1.34",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -224,7 +224,7 @@ LoadExtraLimitedPlugins()
 
 class SGReplicatorAdaptationDef(FoundationTech.TechDef):
 	def __init__(self, name):
-		debug(__name__ + ", Initiated Reality Bomb counter")
+		debug(__name__ + ", Initiated SGReplicatorAdaptationDef")
 		FoundationTech.TechDef.__init__(self, name)
 		self.pEventHandler = App.TGPythonInstanceWrapper()
 		self.pEventHandler.SetPyWrapper(self)
@@ -997,3 +997,10 @@ def findscriptsShipsField(pShip, thingToFind):
 	return thingFound
 
 oSGReplicatorAdaptation = SGReplicatorAdaptationDef('SGReplicator Adaptation')
+
+class SGReplicatorAdaptationResDef(FoundationTech.TechDef):
+	def __init__(self, name):
+		debug(__name__ + ", Initiated SGReplicatorAdaptationRsDef")
+		FoundationTech.TechDef.__init__(self, name)
+
+oSGReplicatorAdaptationRes = SGReplicatorAdaptationResDef('SGReplicator Attack Resistance')

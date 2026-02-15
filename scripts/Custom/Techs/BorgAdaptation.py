@@ -1,6 +1,6 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
-# 20th June 2024, by Alex SL Gato (CharaToLoki), partially based on the Shield.py script by the Foundation Technologies team and Dasher42's Foundation script, and the FedAblativeArmor.py found in scripts/ftb/Tech in KM 2011.10
+# 15th February 2026, by Alex SL Gato (CharaToLoki), partially based on the Shield.py script by the Foundation Technologies team and Dasher42's Foundation script, and the FedAblativeArmor.py found in scripts/ftb/Tech in KM 2011.10
 #
 # TODO: 1. Create Read Me
 #	2. Create a clear guide on how to add this...
@@ -59,7 +59,7 @@ Foundation.ShipDef.Ambassador.dTechs = {
 
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "1.34",
+	    "Version": "1.35",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -734,3 +734,11 @@ def findscriptsShipsField(pShip, thingToFind):
 	return thingFound
 
 oBorgAdaptation = BorgAdaptationDef('Borg Adaptation')
+
+class BorgAdaptationResDef(FoundationTech.TechDef):
+	def __init__(self, name):
+		debug(__name__ + ", Initiated BorgAdaptationResDef")
+		FoundationTech.TechDef.__init__(self, name)
+
+
+oBorgAdaptationRes = BorgAdaptationResDef('Borg Attack Resistance')
