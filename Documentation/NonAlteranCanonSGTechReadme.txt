@@ -1,4 +1,7 @@
 == Changelog ==
+1.2.8 -
+   Fixes:
+   * Updated SGReplicator adaptation to 1.33, making it stronger and fixing a possible shield facet that may not have been covered.
 1.2.7 -
    Fixes:
    * Updated DamagedWarship scripts/Custom/Ships file to correct an issue with its hyperdrive.

@@ -1,7 +1,6 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
-# 27th August 2024, by Alex SL Gato (CharaToLoki), based on BorgAdatation script by Alex SL Gato, partially based on the Shield.py script by the Foundation Technologies team and Dasher42's Foundation script, and the FedAblativeArmor.py found in scripts/ftb/Tech in KM 2011.10
-# TO-DO UPDATE THIS DOCUMENTATION
+# 15th February 2026, by Alex SL Gato (CharaToLoki), based on BorgAdatation script by Alex SL Gato, partially based on the Shield.py script by the Foundation Technologies team and Dasher42's Foundation script, and the FedAblativeArmor.py found in scripts/ftb/Tech in KM 2011.10
 # TODO: 1. Create Read Me
 #	2. Create a clear guide on how to add this...
 #
@@ -59,7 +58,7 @@ Foundation.ShipDef.Ambassador.dTechs = {
 
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "1.32",
+	    "Version": "1.33",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -84,10 +83,10 @@ maxCountdown = 65535 # we want to keep things moderate
 maxCountdownModifier = 64 # for normal yields, allows a higher cap of max
 yieldAdaptationCounter = 8000.0 # default point before the SGReplicator manage to prevent the special yield of a weapon
 nonYieldAdaptationCounter = 100.0 # the point before the SGReplicator manage to prevent 50% of the non-yield weapons damage
-extraReductionAdaptationCycle =  2 #originally 10 TO-DO FIX THE FORMMULA THING TO PREVENT SUPER-HEAL TO-DO ADD THI TO SG SHIELDS AND HERE, THAT if pShields.GetShieldPercentage() < 0.2 it considers no damge through shields, For torps we know that if hull was hit and the torp radius is equal to the event radius, it means they hit fully # this is how many extra steps are taken after nonYieldAdaptationCounter has been reached - the first initial ones make a huge drop
-extraReductionAdaptationTorpCycle = 0 # this is how many extra steps are taken after nonYieldAdaptationCounter has been reached for torps - the first initial ones make a huge drop
+extraReductionAdaptationCycle = 10 # this is how many extra steps are taken after nonYieldAdaptationCounter has been reached - the first initial ones make a huge drop
+extraReductionAdaptationTorpCycle = 12 # this is how many extra steps are taken after nonYieldAdaptationCounter has been reached for torps - the first initial ones make a huge drop
 yieldAttackAdaptationCounter = 500.0 # default point before the SGReplicator reach maximum weapon Damage output - on this case, adaptation for replicator blocks bypassing a shield
-extraDamage = 1.0 # How much damage is given when reaching max offensive peak, equivalent to original damage * (1 + extraDamage). CURRENTLY UNUSED #### TO-DO change if modified ####
+extraDamage = 1.0 # How much damage is given when reaching max offensive peak, equivalent to original damage * (1 + extraDamage). CURRENTLY UNUSED #### FUTURE TO-DO change if modified ####
 
 scanTargetMultiplierBoost = 10 # When an adaptive SG Replicator vessel scans a target specifically, it gets info 10 times faster (basically it's as if it hit once with 100 times more learning power. Normal learning is unaffected)
 scanAreaMultiplierBoost = 0.5 # When an adaptive SG Replicator vessel scans a target specifically, it gets info 0.5 times faster (basically it's as if it hit once with 0.5 times more learning power. Normal learning is unaffected)
@@ -230,7 +229,6 @@ class SGReplicatorAdaptationDef(FoundationTech.TechDef):
 		self.pEventHandler = App.TGPythonInstanceWrapper()
 		self.pEventHandler.SetPyWrapper(self)
 		App.g_kEventManager.RemoveBroadcastHandler(App.ET_WEAPON_HIT, self.pEventHandler, "OneWeaponHit")
-		# TO-DO Add these to assimilated vessels if possible? Then also add a way to clean it! if the ship has a pInstance, then do oSGReplicatorAdaptation.Attach(pInstance)
 		App.g_kEventManager.RemoveBroadcastHandler(App.ET_SCAN, self.pEventHandler, "ScanProgress")
 		App.g_kEventManager.AddBroadcastPythonMethodHandler(App.ET_WEAPON_HIT, self.pEventHandler, "OneWeaponHit")
 		App.g_kEventManager.AddBroadcastPythonMethodHandler(App.ET_SCAN, self.pEventHandler, "ScanProgress")
@@ -397,10 +395,10 @@ class SGReplicatorAdaptationDef(FoundationTech.TechDef):
 
 						if ds9checks <= 0 or (myShieldBroken and ihaveSGshields == 0) or (myRaceHullTech == "Replicator" and ((pTorp and pTorp.GetNetType() == torpsNetTypeThatCanPhase) or myShieldBroken)):
 							self.AdjustListedSubsystems(pShip, lAffectedSystems, lNonTargetableAffeSys, damageHealed, fAllocatedFactor, 0) # , ds9checks, pShDmgForDS9FX
-
+						if not (myShieldBroken or aShieldBroken):
+							shieldsArePierced, nearestPoint = self.shieldRecalculationAndBroken(pShip, kPoint, damageHealed, shieldThresholdUsed, 0, negateRegeneration, myShieldDirNearest, fDamage, multFactor)
 
 					else:
-						# TO-DO ADD PRINTS TO CHECK WHAT IS GOING WRONG
 						shieldsArePierced, nearestPoint = self.shieldRecalculationAndBroken(pShip, kPoint, damageHealed, shieldThresholdUsed, 0, negateRegeneration, None, fDamage, multFactor)
 
 				# We learn from the experience
@@ -625,7 +623,7 @@ class SGReplicatorAdaptationDef(FoundationTech.TechDef):
 			else:
 				shieldDirNearest = nearShields
 
-			if shieldDirNearest and not (pShields.IsDisabled() or not pShields.IsOn()):
+			if shieldDirNearest != None and not (pShields.IsDisabled() or not pShields.IsOn()):
 				pShieldsProperty = pShields.GetProperty()
 				for shieldDir in range(App.ShieldClass.NUM_SHIELDS):
 					if shieldDirNearest == shieldDir or multifacet != 0:
@@ -637,10 +635,12 @@ class SGReplicatorAdaptationDef(FoundationTech.TechDef):
 							resultHeal = resultHeal + fRecharge
 						else:
 							resultHeal = resultHeal + extraDamageHeal
+
 						if resultHeal < 0.0:
 							resultHeal = 0.0
 						elif resultHeal > fMax:
 							resultHeal = fMax
+
 						pShields.SetCurShields(shieldDir, resultHeal)
 						
 						if shieldDirNearest == shieldDir and (fMax <= 0 or resultHeal < (shieldThreshold * fMax)):
