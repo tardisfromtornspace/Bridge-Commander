@@ -40,7 +40,7 @@ def GetLaunchSpeed():
 	return(65.0)
 
 def GetLaunchSound():
-	return("PicardPhoton2")
+	return("PicPhoton")
 
 def GetPowerCost():
 	return(20.0)
@@ -55,4 +55,4 @@ def GetGuidanceLifetime():
 	return 20.0
 
 def GetMaxAngularAccel():
-	return 0.5
+	return 3.5

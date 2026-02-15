@@ -33,12 +33,12 @@ def Create(pTorp):
 					kCoreColor, 
 					0.17, #was 0.6
 					3.5,	 
-					"data/textures/tactical/NemQuantumGlow.tga", 
+					"data/Textures/Tactical/NemQuantumGlow.tga", 
 					kGlowColor,
 					3,	
 					3.65,	#was 7.10 
 					3.95,	#was 7.75
-					"data/textures/tactical/NemQuantumBlank.tga",
+					"data/Textures/Tactical/NemQuantumBlank.tga",
 					kGlowColor,										
 					0,		
 					0.2,		
@@ -75,4 +75,4 @@ def GetGuidanceLifetime():
 	return 12.0
 
 def GetMaxAngularAccel():
-	return 0.2
+	return 2.2
