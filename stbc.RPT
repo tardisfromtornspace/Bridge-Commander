@@ -12602,3 +12602,24 @@ DS:002B  ES:002B  FS:0053  GS:002B
 Flags:00010246
 Couldn't load module
 
+//=====================================================
+Current Time: Sun Feb 15 20:16:28 2026
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  30015664 01:00014664 C:\ASL\Soft\GithubProjects\Bridge-Commander\binkw32.dll
+
+Registers:
+EAX:00000000
+EBX:02A61F30
+ECX:02A60498
+EDX:02A60000
+ESI:1703A0A0
+EDI:00000001
+CS:EIP:0023:30015664
+SS:ESP:002B:0019F5B0  EBP:02A61E20
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+Couldn't initialize symbol reader, no symbol info available
+
+Call stack:
+Address   Frame     Logical addr  Module
+30015664  02A61E20  0001:00014664 C:\ASL\Soft\GithubProjects\Bridge-Commander\binkw32.dll
