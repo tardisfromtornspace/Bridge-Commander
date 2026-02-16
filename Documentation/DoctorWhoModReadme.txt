@@ -1,4 +1,7 @@
 == Changelog ==
+1.2.8 -
+   Fixes:
+   * Updated AdvArmourTechThree from 1.84 to 1.85, fixed conflict with DS9FX sometimes resetting visible damage.
 1.2.7 -
    Fixes:
    * Updated FIX-AblativeArmour1dot0 Autoload script to 0.41 to provide better armour inheritance.

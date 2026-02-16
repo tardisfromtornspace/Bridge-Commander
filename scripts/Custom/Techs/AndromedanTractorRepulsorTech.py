@@ -1,6 +1,6 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
-# 6th February 2026, by Alex SL Gato (CharaToLoki)
+# 16th February 2026, by Alex SL Gato (CharaToLoki)
 #         Based on SGAsgardBeamWeapon by Alex SL Gato, which was based on BorgAdaptation.py and PhasedTorp.py by Alex SL Gato, which were based on the Foundation import function by Dasher; the Shield.py scripts and KM Armour scripts and FoundationTechnologies team's PhasedTorp.py, on ATPFunctions by Apollo.
 #         Also based on MEShields by Alex SL Gato, which was based on SGShields by Alex SL Gato, which was strongly based on Shields.py by the FoundationTechnologies team, ATPFunctions by Apollo, HelmMenuHandlers from the STBC Team, and MEGIonWeapon by Alex SL Gato.
 #         Also upon noticing how App.WEAPON_HIT did not make the tractor work, based slightly on MLeo Daalder's Tractordef, but using Attach instead of AttachShip because of weird tech check errors.
@@ -132,7 +132,7 @@ import nt
 import string
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-            "Version": "0.11",
+            "Version": "0.12",
             "License": "LGPL",
             "Description": "Read the small title above for more info"
             }
@@ -1163,7 +1163,7 @@ except:
 	traceback.print_exc()
 
 class AndromedanTractorBeamsWeaponDef(FoundationTech.TechDef):
-	def OnTractorDefense(self, pShip, pInstance, pTorp, oYield, pEvent):
+	def OnTractorDefense(self, pShip, pInstance, oYield, pEvent):
 		debug(__name__ + ", OnProjectileDefense")
 		if oYield and hasattr(oYield, "IsAndromedanTractorBeamsWeaponYield") and oYield.IsAndromedanTractorBeamsWeaponYield() != 0 and pInstance and pInstance.__dict__.has_key(self.name) and pInstance.__dict__[self.name] >= 2:
 			return 1

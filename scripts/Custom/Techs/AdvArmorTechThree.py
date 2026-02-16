@@ -10,7 +10,7 @@ import traceback
 from bcdebug import debug
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-            "Version": "1.84",
+            "Version": "1.85",
             "License": "LGPL",
             "Description": "Read info below for better understanding"
             }
@@ -458,6 +458,8 @@ def AdvArmorPlayer(): # For player
 		armor_pwr=armor_pwr-hull_dmg
 		pHull.SetCondition(hull_max)
 		pPower.SetMainBatteryPower(armor_pwr/armor_ratio)
+		pShip.SetVisibleDamageRadiusModifier(0.0)
+		pShip.SetVisibleDamageStrengthModifier(0.0)
 	else:
 		pHull.SetCondition(hull_cond+armor_pwr)
 		armor_pwr=0
@@ -528,6 +530,8 @@ def AdvArmor(pShip): # for AI
 		armor_pwr=armor_pwr-hull_dmg
 		pHull.SetCondition(hull_max)
 		pPower.SetMainBatteryPower(armor_pwr/armor_ratio)
+		pShip.SetVisibleDamageRadiusModifier(0.0)
+		pShip.SetVisibleDamageStrengthModifier(0.0)
 	else:
 		pHull.SetCondition(hull_cond+armor_pwr)
 		armor_pwr=0

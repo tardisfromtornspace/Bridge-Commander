@@ -1,4 +1,6 @@
 == Changelog ==
+1.0.14
+* Updated AdvArmourTechThree from 1.84 to 1.85, fixed conflict with DS9FX sometimes resetting visible damage.
 1.0.13
 * Updated FIX-DS9FXbelow1dot2 to be a bit more agnostic towards the actual value of SpeciesToTorp.PHASEDPLASMA
 1.0.12

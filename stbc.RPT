@@ -12623,3 +12623,6 @@ Couldn't initialize symbol reader, no symbol info available
 Call stack:
 Address   Frame     Logical addr  Module
 30015664  02A61E20  0001:00014664 C:\ASL\Soft\GithubProjects\Bridge-Commander\binkw32.dll
+//=====================================================
+Current Time: Mon Feb 16 21:30:18 2026
+Exception code: C0000005 ACCESS_VIOLATION
