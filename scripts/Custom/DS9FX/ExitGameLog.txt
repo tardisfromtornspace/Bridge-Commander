@@ -1154,3 +1154,259 @@ DS9FX: Active and Operational...
 
 
 ##### End Of The Log #####
+##### Bridge Commander Exit Log: 16 Feb 2026 16:55:44#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Custom.Autoload.FIX-EngineerCharacterHandlers : Patched your  Bridge.EngineerCharacterHandlers  to cover 0-shield-strength ships
+Updated FoundationTech.ShipInstance's DefendVS* Fixes
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Patched TacticalControlInterfaces.CycleCameraMode to add mode viewing modes
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+
+
+Setting Stock System Planets Random Density.
+DampeningField: attached to ship: Player
+Ship Player with AdvArmorTechThree support added
+SUCCESS while attaching advarmortechthree
+DampeningField: attached to ship: U.S.S Mjolnir-1
+Ship U.S.S Mjolnir-1 with AdvArmorTechThree support added
+SUCCESS while attaching advarmortechthree
+DampeningField: attached to ship: U.S.S. Seleucia-2
+Ship U.S.S. Seleucia-2 with AdvArmorTechThree support added
+SUCCESS while attaching advarmortechthree
+DS9FX: Active and Operational...
+
+
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\GladSingularity.py", line 220, in TargetHit
+ImportError: No module named MEShields
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\GladSingularity.py", line 220, in TargetHit
+ImportError: No module named MEShields
+
+
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _47369fc0_p_Torpedo to (1950.000000, 39.000000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _47369e50_p_Torpedo to (1950.000000, 39.000000)
+Setting splash damage for Total PointDefence Firepoint U.S.S Mjolnir-1 C Torpedo instance at _47369ce0_p_Torpedo to (1950.000000, 39.000000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _47369ce0_p_Torpedo to (562.500000, 11.250000)
+
+# DS9FX has...
+
+# taken a console dump
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _478dcd58_p_Torpedo to (1950.000000, 39.000000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _478dcbe8_p_Torpedo to (1950.000000, 39.000000)
+data/TGL/Maelstrom/Episode 2/E2M2.tgl E2M2Serris3Scan1
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _47369e50_p_Torpedo to (1950.000000, 39.000000)
+Setting splash damage for Total PointDefence Firepoint U.S.S Mjolnir-1 C Torpedo instance at _47369e50_p_Torpedo to (1950.000000, 39.000000)
+Setting splash damage for Total PointDefence Firepoint U.S.S Mjolnir-1 C Torpedo instance at _470d5de8_p_Torpedo to (461.250031, 9.225000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _470d5de8_p_Torpedo to (459.375000, 9.187500)
+Setting splash damage for Total PointDefence Firepoint U.S.S Mjolnir-1 C Torpedo instance at _470d5de8_p_Torpedo to (1575.000000, 31.500000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _47369ce0_p_Torpedo to (461.250031, 9.225000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _478dcbe8_p_Torpedo to (461.250031, 9.225000)
+Setting splash damage for Total PointDefence Firepoint U.S.S Mjolnir-1 C Torpedo instance at _47369e50_p_Torpedo to (461.250031, 9.225000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _478dcbe8_p_Torpedo to (461.250031, 9.225000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _470d5828_p_Torpedo to (750.000000, 15.000000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _47369fc0_p_Torpedo to (750.000000, 15.000000)
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\GladSingularity.py", line 220, in TargetHit
+ImportError: No module named MEShields
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\GladSingularity.py", line 220, in TargetHit
+ImportError: No module named MEShields
+Setting splash damage for Total PointDefence Firepoint U.S.S Mjolnir-1 C Torpedo instance at _4736a130_p_Torpedo to (461.250031, 9.225000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _4736a130_p_Torpedo to (461.250031, 9.225000)
+Setting splash damage for Total PointDefence Firepoint U.S.S Mjolnir-1 C Torpedo instance at _47369e50_p_Torpedo to (461.250031, 9.225000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _47369e50_p_Torpedo to (562.500000, 11.250000)
+Setting splash damage for Total PointDefence Firepoint U.S.S Mjolnir-1 C Torpedo instance at _478dc618_p_Torpedo to (461.250031, 9.225000)
+Setting splash damage for Total PointDefence Firepoint U.S.S Mjolnir-1 C Torpedo instance at _470d5de8_p_Torpedo to (562.500000, 11.250000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _478dc618_p_Torpedo to (461.250031, 9.225000)
+Setting splash damage for Total PointDefence Firepoint U.S.S Mjolnir-1 C Torpedo instance at _470d5828_p_Torpedo to (461.250031, 9.225000)
+Setting splash damage for Total PointDefence Firepoint U.S.S Mjolnir-1 C Torpedo instance at _47369e50_p_Torpedo to (461.250031, 9.225000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _47369e50_p_Torpedo to (459.375000, 9.187500)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _47369e50_p_Torpedo to (461.250031, 9.225000)
+Setting splash damage for Total PointDefence Firepoint U.S.S Mjolnir-1 C Torpedo instance at _470d5de8_p_Torpedo to (562.500000, 11.250000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _478dc618_p_Torpedo to (562.500000, 11.250000)
+Tactical.Projectiles.ChronitonPulse_P
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _4736a130_p_Torpedo to (461.250031, 9.225000)
+Setting splash damage for Total PointDefence Firepoint U.S.S Mjolnir-1 C Torpedo instance at _478dc618_p_Torpedo to (461.250031, 9.225000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _47369fc0_p_Torpedo to (461.250031, 9.225000)
+Setting splash damage for Total PointDefence Firepoint U.S.S Mjolnir-1 C Torpedo instance at _478dc788_p_Torpedo to (461.250031, 9.225000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _47369fc0_p_Torpedo to (750.000000, 15.000000)
+Tactical.Projectiles.ChronitonPulse_P
+Setting splash damage for Total PointDefence Firepoint U.S.S Mjolnir-1 C Torpedo instance at _470d5de8_p_Torpedo to (461.250031, 9.225000)
+Setting splash damage for Total PointDefence Firepoint U.S.S Mjolnir-1 C Torpedo instance at _478dcbe8_p_Torpedo to (461.250031, 9.225000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _470d5828_p_Torpedo to (562.500000, 11.250000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _470d5de8_p_Torpedo to (461.250031, 9.225000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _470d5de8_p_Torpedo to (461.250031, 9.225000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _470d5828_p_Torpedo to (461.250031, 9.225000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _478dcbe8_p_Torpedo to (461.250031, 9.225000)
+data/TGL/Maelstrom/Episode 7/E7M1.tgl E7M1CommunicateBrex2c
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _47369e50_p_Torpedo to (1950.000000, 39.000000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _470d5f58_p_Torpedo to (562.500000, 11.250000)
+Setting splash damage for Total PointDefence Firepoint U.S.S Mjolnir-1 C Torpedo instance at _470d5f58_p_Torpedo to (562.500000, 11.250000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _47369ce0_p_Torpedo to (1575.000000, 31.500000)
+Setting splash damage for Total PointDefence Firepoint U.S.S Mjolnir-1 C Torpedo instance at _47369ce0_p_Torpedo to (1950.000000, 39.000000)
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 16 Feb 2026 16:55:44#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Custom.Autoload.FIX-EngineerCharacterHandlers : Patched your  Bridge.EngineerCharacterHandlers  to cover 0-shield-strength ships
+Updated FoundationTech.ShipInstance's DefendVS* Fixes
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version 20240829)
+Patched TacticalControlInterfaces.CycleCameraMode to add mode viewing modes
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+
+
+Setting Stock System Planets Random Density.
+DampeningField: attached to ship: Player
+Ship Player with AdvArmorTechThree support added
+SUCCESS while attaching advarmortechthree
+DampeningField: attached to ship: U.S.S Mjolnir-1
+Ship U.S.S Mjolnir-1 with AdvArmorTechThree support added
+SUCCESS while attaching advarmortechthree
+DampeningField: attached to ship: U.S.S. Seleucia-2
+Ship U.S.S. Seleucia-2 with AdvArmorTechThree support added
+SUCCESS while attaching advarmortechthree
+DS9FX: Active and Operational...
+
+
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\GladSingularity.py", line 220, in TargetHit
+ImportError: No module named MEShields
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\GladSingularity.py", line 220, in TargetHit
+ImportError: No module named MEShields
+
+
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _47369fc0_p_Torpedo to (1950.000000, 39.000000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _47369e50_p_Torpedo to (1950.000000, 39.000000)
+Setting splash damage for Total PointDefence Firepoint U.S.S Mjolnir-1 C Torpedo instance at _47369ce0_p_Torpedo to (1950.000000, 39.000000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _47369ce0_p_Torpedo to (562.500000, 11.250000)
+
+# DS9FX has...
+
+# taken a console dump
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _478dcd58_p_Torpedo to (1950.000000, 39.000000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _478dcbe8_p_Torpedo to (1950.000000, 39.000000)
+data/TGL/Maelstrom/Episode 2/E2M2.tgl E2M2Serris3Scan1
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _47369e50_p_Torpedo to (1950.000000, 39.000000)
+Setting splash damage for Total PointDefence Firepoint U.S.S Mjolnir-1 C Torpedo instance at _47369e50_p_Torpedo to (1950.000000, 39.000000)
+Setting splash damage for Total PointDefence Firepoint U.S.S Mjolnir-1 C Torpedo instance at _470d5de8_p_Torpedo to (461.250031, 9.225000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _470d5de8_p_Torpedo to (459.375000, 9.187500)
+Setting splash damage for Total PointDefence Firepoint U.S.S Mjolnir-1 C Torpedo instance at _470d5de8_p_Torpedo to (1575.000000, 31.500000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _47369ce0_p_Torpedo to (461.250031, 9.225000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _478dcbe8_p_Torpedo to (461.250031, 9.225000)
+Setting splash damage for Total PointDefence Firepoint U.S.S Mjolnir-1 C Torpedo instance at _47369e50_p_Torpedo to (461.250031, 9.225000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _478dcbe8_p_Torpedo to (461.250031, 9.225000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _470d5828_p_Torpedo to (750.000000, 15.000000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _47369fc0_p_Torpedo to (750.000000, 15.000000)
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\GladSingularity.py", line 220, in TargetHit
+ImportError: No module named MEShields
+Traceback (innermost last):
+  File ".\Scripts\Tactical\Projectiles\GladSingularity.py", line 220, in TargetHit
+ImportError: No module named MEShields
+Setting splash damage for Total PointDefence Firepoint U.S.S Mjolnir-1 C Torpedo instance at _4736a130_p_Torpedo to (461.250031, 9.225000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _4736a130_p_Torpedo to (461.250031, 9.225000)
+Setting splash damage for Total PointDefence Firepoint U.S.S Mjolnir-1 C Torpedo instance at _47369e50_p_Torpedo to (461.250031, 9.225000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _47369e50_p_Torpedo to (562.500000, 11.250000)
+Setting splash damage for Total PointDefence Firepoint U.S.S Mjolnir-1 C Torpedo instance at _478dc618_p_Torpedo to (461.250031, 9.225000)
+Setting splash damage for Total PointDefence Firepoint U.S.S Mjolnir-1 C Torpedo instance at _470d5de8_p_Torpedo to (562.500000, 11.250000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _478dc618_p_Torpedo to (461.250031, 9.225000)
+Setting splash damage for Total PointDefence Firepoint U.S.S Mjolnir-1 C Torpedo instance at _470d5828_p_Torpedo to (461.250031, 9.225000)
+Setting splash damage for Total PointDefence Firepoint U.S.S Mjolnir-1 C Torpedo instance at _47369e50_p_Torpedo to (461.250031, 9.225000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _47369e50_p_Torpedo to (459.375000, 9.187500)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _47369e50_p_Torpedo to (461.250031, 9.225000)
+Setting splash damage for Total PointDefence Firepoint U.S.S Mjolnir-1 C Torpedo instance at _470d5de8_p_Torpedo to (562.500000, 11.250000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _478dc618_p_Torpedo to (562.500000, 11.250000)
+Tactical.Projectiles.ChronitonPulse_P
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _4736a130_p_Torpedo to (461.250031, 9.225000)
+Setting splash damage for Total PointDefence Firepoint U.S.S Mjolnir-1 C Torpedo instance at _478dc618_p_Torpedo to (461.250031, 9.225000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _47369fc0_p_Torpedo to (461.250031, 9.225000)
+Setting splash damage for Total PointDefence Firepoint U.S.S Mjolnir-1 C Torpedo instance at _478dc788_p_Torpedo to (461.250031, 9.225000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _47369fc0_p_Torpedo to (750.000000, 15.000000)
+Tactical.Projectiles.ChronitonPulse_P
+Setting splash damage for Total PointDefence Firepoint U.S.S Mjolnir-1 C Torpedo instance at _470d5de8_p_Torpedo to (461.250031, 9.225000)
+Setting splash damage for Total PointDefence Firepoint U.S.S Mjolnir-1 C Torpedo instance at _478dcbe8_p_Torpedo to (461.250031, 9.225000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _470d5828_p_Torpedo to (562.500000, 11.250000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _470d5de8_p_Torpedo to (461.250031, 9.225000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _470d5de8_p_Torpedo to (461.250031, 9.225000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _470d5828_p_Torpedo to (461.250031, 9.225000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _478dcbe8_p_Torpedo to (461.250031, 9.225000)
+data/TGL/Maelstrom/Episode 7/E7M1.tgl E7M1CommunicateBrex2c
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _47369e50_p_Torpedo to (1950.000000, 39.000000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _470d5f58_p_Torpedo to (562.500000, 11.250000)
+Setting splash damage for Total PointDefence Firepoint U.S.S Mjolnir-1 C Torpedo instance at _470d5f58_p_Torpedo to (562.500000, 11.250000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _47369ce0_p_Torpedo to (1575.000000, 31.500000)
+Setting splash damage for Total PointDefence Firepoint U.S.S Mjolnir-1 C Torpedo instance at _47369ce0_p_Torpedo to (1950.000000, 39.000000)
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
