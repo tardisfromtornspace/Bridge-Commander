@@ -8,12 +8,15 @@ import Foundation
 
 abbrev = "Independence"
 iconName = "Independence"
-longName = "USS Enterprise H"
+longName = "U.S.S. Enterprise H"
 shipFile = "Independence"
 species = App.SPECIES_GALAXY
 menuGroup = "Fed Ships"
 playerMenuGroup = "Fed Ships"
 Foundation.ShipDef.Independence = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile })
+
+Foundation.ShipDef.Independence.SubMenu = "2400s"
+
 Foundation.ShipDef.Independence.dTechs = {
 	"AutoTargeting": { "Phaser": [3, 1] },
 	'Breen Drainer Immune': 1,

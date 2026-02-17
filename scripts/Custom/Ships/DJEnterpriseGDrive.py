@@ -25,8 +25,11 @@ except:
 
 
 Foundation.ShipDef.DJEnterpriseGDrive.desc = "Drive section of the Enterprise G."
-Foundation.ShipDef.DJEnterpriseGDrive.SubMenu = "Eclipse Class"
-Foundation.ShipDef.DJEnterpriseGDrive.SubSubMenu = "DJ Enterprise G"
+
+Foundation.ShipDef.DJEnterpriseGDrive.SubMenu = "2400s"
+Foundation.ShipDef.DJEnterpriseGDrive.SubSubMenu = "Eclipse Class"
+Foundation.ShipDef.DJEnterpriseGDrive.SubSubSubMenu = "DJ Enterprise G"
+
 Foundation.ShipDef.DJEnterpriseGDrive.fMaxWarp = 9.99 + 0.0001
 Foundation.ShipDef.DJEnterpriseGDrive.fCruiseWarp = 8.5 + 0.0001
 Foundation.ShipDef.DJEnterpriseGDrive.OverrideWarpFXColor = Foundation.ShipDef.DJEnterpriseGDrive.OverrideWarpFXColor

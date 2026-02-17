@@ -26,6 +26,7 @@ except:
 
 Foundation.ShipDef.PicEntG.desc = "The USS Enterprise (NCC-1701-G), formerly the USS Titan (NCC-80102-A), was a Federation Constitution III-class starship operated by Starfleet in the 24th and 25th centuries. Launched in 2396 under the command of Captain Liam Shaw, the USS Titan-A was originally the fourth Starfleet vessel to bear the name Titan and the second to bear the NCC-80102 registry. In 2401, the Titan-A was instrumental in stopping the Changeling/Borg threat to Starfleet and the Federation. In 2402, she was rechristened as the Enterprise-G under the command of Captain Seven of Nine, the eighth Federation starship to bear the name Enterprise, in honor of the command crew of the USS Enterprise-D and the crucial part the ship had played in assisting their efforts to counter the Borg."
 Foundation.ShipDef.PicEntG.SubMenu = "2400s"
+Foundation.ShipDef.PicEntG.SubSubMenu = "Neo-Constitution III class"
 Foundation.ShipDef.PicEntG.OverrideWarpFXColor = Foundation.ShipDef.PicEntG.OverrideWarpFXColor
 Foundation.ShipDef.PicEntG.OverridePlasmaFXColor = Foundation.ShipDef.PicEntG.OverridePlasmaFXColor
 Foundation.ShipDef.PicEntG.dTechs = {

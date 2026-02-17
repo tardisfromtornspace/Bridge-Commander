@@ -9,7 +9,7 @@ import traceback
 
 abbrev = "GSEminence"
 iconName = "GSEminence"
-longName = "Enterprise F (Eminence-class Retrofit)"
+longName = "U.S.S. Enterprise F (Eminence-class Retrofit)"
 shipFile = "GSEminence"
 species = App.SPECIES_GALAXY
 menuGroup = "Fed Ships"
@@ -26,6 +26,7 @@ except:
 
 Foundation.ShipDef.GSEminence.desc = "In the 25th century, The Eminence class was becoming outdated as it was simply a Sovereign Refit with some simple reverse engineered borg technologies. It was refit in the 2420s into a far more capable vessel, boasting newly developed Nanite Regenerative Ablative Plating, Multivectoral Regenerative Adaptive Shielding, Multiflux Nadionic Slicing Arrays, as well as an Enhanced Regeneration Node and an Experimental Phase Cloak developed by Starfleet. Most of the other technologies were reverse engineered from abandoned or captured borg tech.\n\nRetrofit Heavy Tritanium Dual Hull: 33500\n\nNanite Regenerative Ablative Plating\nFore: 17500\nAft: 17500\nPort: 12500\nStar: 12500\n\nShielding Stats:\nForward: 18000, 100 Regen\nAft: 18000, 100 regen\nPort: 18000, 100 regen\nStar: 18000, 100 regen\nDorsal: 18000, 100 regen\nVentral: 18000, 100 regen\n\nPhaser damage: 1950\n\nTorpedo loadout:\nQuantum Mk.XI: 300\nAdvanced Photon Mk.XXVI: 500\nTransphasic Mk.II: 15"
 Foundation.ShipDef.GSEminence.SubMenu = "2400s"
+Foundation.ShipDef.GSEminence.SubSubMenu = "Borg Enhanced Ships"
 Foundation.ShipDef.GSEminence.CloakingSFX = ""
 Foundation.ShipDef.GSEminence.DeCloakingSFX = ""
 Foundation.ShipDef.GSEminence.OverrideWarpFXColor = Foundation.ShipDef.GSEminence.OverrideWarpFXColor

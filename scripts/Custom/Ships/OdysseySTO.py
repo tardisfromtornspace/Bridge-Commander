@@ -26,6 +26,8 @@ except:
 
 Foundation.ShipDef.OdysseySTO.desc = "Odyssey Class Starship badged as NCC - 1701 - F, a late 24th century to early 25th century Federation Flagship."
 Foundation.ShipDef.OdysseySTO.SubMenu = "2400s"
+Foundation.ShipDef.OdysseySTO.SubSubMenu = "Odyssey Class"
+
 Foundation.ShipDef.OdysseySTO.OverrideWarpFXColor = Foundation.ShipDef.OdysseySTO.OverrideWarpFXColor
 Foundation.ShipDef.OdysseySTO.OverridePlasmaFXColor = Foundation.ShipDef.OdysseySTO.OverridePlasmaFXColor
 Foundation.ShipDef.OdysseySTO.dTechs = {

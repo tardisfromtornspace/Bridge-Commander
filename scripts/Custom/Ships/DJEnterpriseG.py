@@ -25,8 +25,11 @@ except:
 
 
 Foundation.ShipDef.DJEnterpriseG.desc = "U.S.S. Enterprise\nNCC-1701-G\nEclipse Class (2nd of her class)\nCommissioned 2431\n\nThe Enterprise sets a new standard for Starfleet vehicles in speed, scientific capacity, and defensive ability.  Armed with the latest phasers and quantum filament pulse weapons, the ship is capable of holding her own against virtually any known threat.  Rapidly recharging shields ensure that the Enterprise can not be damaged by anything but continous heavy fire.\n\nThe ship is protected by an ablative coating and equipped with MVAM; splitting into a saucer, drive section, and Auxillary Support Vehicle known as the Thunderbird."
-Foundation.ShipDef.DJEnterpriseG.SubMenu = "Eclipse Class"
-Foundation.ShipDef.DJEnterpriseG.SubSubMenu = "DJ Enterprise G"
+
+Foundation.ShipDef.DJEnterpriseG.SubMenu = "2400s"
+Foundation.ShipDef.DJEnterpriseG.SubSubMenu = "Eclipse Class"
+Foundation.ShipDef.DJEnterpriseG.SubSubSubMenu = "DJ Enterprise G"
+
 Foundation.ShipDef.DJEnterpriseG.fMaxWarp = 9.9999 + 0.0001
 Foundation.ShipDef.DJEnterpriseG.fCruiseWarp = 9.5 + 0.0001
 Foundation.ShipDef.DJEnterpriseG.fCrew = 2000

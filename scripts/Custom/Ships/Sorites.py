@@ -43,9 +43,9 @@ Foundation.ShipDef.Sorites.dTechs = {
 	"Power Drain Beam": [0.5, 0, 0.5, 1500],
 	"Phase Cloak": -1, 
 	'Phased Torpedo Immune': 1,
+	"Reflector Shields": 2,
 	'Reflux Weapon': 1000,
 	'Regenerative Shields': 60,
-	'Transphasic Torpedo Immune': 1,
 	"SGReplicator Attack Resistance": 40,
 	"SG Asgard Beams Weapon Immune": 2,
 	"SG Ion Weapon Immune": 2,
@@ -54,8 +54,10 @@ Foundation.ShipDef.Sorites.dTechs = {
 	"SG Railgun Weapon Immune": 2,
 	'Subatomic Disruptor Beams Weapon Immune': 1,
 	"Subparticle Torpedo Immune": 1,
+	"TachyonBeam": {"Immune": -1},
 	'Tetraburnium Armour': 200000,
 	"TimeVortex Torpedo Immune": 1,
+	'Transphasic Torpedo Immune': 1,
 	'Vree Shields': 55,	
 }
 

@@ -8,7 +8,7 @@ import Foundation
 
 abbrev = "kirk"
 iconName = "kirk"
-longName = "USS Armstrong"
+longName = "U.S.S. Armstrong"
 shipFile = "kirk"
 species = App.SPECIES_GALAXY
 menuGroup = "Fed Ships"
@@ -29,6 +29,7 @@ Foundation.ShipDef.kirk.dTechs = {
 Foundation.ShipDef.kirk.CloakingSFX   = "FutureBattleCloak"
 Foundation.ShipDef.kirk.DeCloakingSFX = "FutureBattleDecloak"
 
+Foundation.ShipDef.kirk.SubMenu = "32nd Century"
 
 if menuGroup:           Foundation.ShipDef.kirk.RegisterQBShipMenu(menuGroup)
 if playerMenuGroup:     Foundation.ShipDef.kirk.RegisterQBPlayerShipMenu(playerMenuGroup)

@@ -8,12 +8,16 @@ import Foundation
 
 abbrev = "EnterpriseF"
 iconName = "Century"
-longName = "USS Enterprise F Century"
+longName = "U.S.S. Enterprise F (Century)"
 shipFile = "EnterpriseF"
 species = App.SPECIES_GALAXY
 menuGroup = "Fed Ships"
 playerMenuGroup = "Fed Ships"
 Foundation.ShipDef.EnterpriseF = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile })
+
+Foundation.ShipDef.EnterpriseF.SubMenu = "2400s"
+Foundation.ShipDef.EnterpriseF.SubSubMenu = "Century Class"
+
 Foundation.ShipDef.EnterpriseF.dTechs = {
 	'Breen Drainer Immune': 0,
 	'Regenerative Shields': 30,

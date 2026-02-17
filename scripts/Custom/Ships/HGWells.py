@@ -67,9 +67,9 @@ Foundation.ShipDef.HGWells.dTechs = {
 	"Power Drain Beam": [0.5, 0, 0.5, 1500],
 	"Phase Cloak": -1, 
 	'Phased Torpedo Immune': 1,
+	"Reflector Shields": 2,
 	'Reflux Weapon': 1000,
 	'Regenerative Shields': 60,
-	'Transphasic Torpedo Immune': 1,
 	"SGReplicator Attack Resistance": 40,
 	"SG Asgard Beams Weapon Immune": 2,
 	"SG Ion Weapon Immune": 2,
@@ -79,6 +79,8 @@ Foundation.ShipDef.HGWells.dTechs = {
 	"Subatomic Disruptor Beams Weapon": [{"HullDmgMultiplier": 1000.0, "ShieldDmgMultiplier": 19000.0, "Beams": ["Subatomic Disruptor"]}, ["Subatomic_Disruptor_Beam"]],
 	"Subparticle Torpedo Immune": 1,
 	'Tetraburnium Armour': 110000,
+	"TachyonBeam": {"Immune": -1},
+	'Transphasic Torpedo Immune': 1,
 	'Vree Shields': 55,	
 }
 

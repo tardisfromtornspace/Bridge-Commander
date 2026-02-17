@@ -15,8 +15,8 @@ longName = 'Enterprise TOS'
 shipFile = 'WCtosent' 
 menuGroup = 'Fed Ships'
 playerMenuGroup = 'Fed Ships'
-SubMenu = "WC TOS Ships"
-SubSubMenu = "WC TOS Constitution"
+SubMenu = "TOS Ships"
+SubSubMenu = "TOS Constitution"
 species = App.SPECIES_GALAXY
 #                                                                                     #
 #######################################################################################
@@ -48,7 +48,7 @@ Foundation.ShipDef.WCtosent = Foundation.FedShipDef(abbrev, species, { 'name': l
 #                                                                                     #
 # Otherwise, uncomment this and type something in:                                    #
 #                                                                                     #
-Foundation.ShipDef.WCtosent.desc = 'No Description Available'
+Foundation.ShipDef.WCtosent.desc = "This is the known NCC-1701 with its original configuration as seen on 'Star Trek: The Original Series'"
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

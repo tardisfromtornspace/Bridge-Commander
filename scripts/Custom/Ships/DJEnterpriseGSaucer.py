@@ -25,8 +25,11 @@ except:
 
 
 Foundation.ShipDef.DJEnterpriseGSaucer.desc = "Saucer section of the Enterprise G."
-Foundation.ShipDef.DJEnterpriseGSaucer.SubMenu = "Eclipse Class"
-Foundation.ShipDef.DJEnterpriseGSaucer.SubSubMenu = "DJ Enterprise G"
+
+Foundation.ShipDef.DJEnterpriseGSaucer.SubMenu = "2400s"
+Foundation.ShipDef.DJEnterpriseGSaucer.SubSubMenu = "Eclipse Class"
+Foundation.ShipDef.DJEnterpriseGSaucer.SubSubSubMenu = "DJ Enterprise G"
+
 Foundation.ShipDef.DJEnterpriseGSaucer.OverrideWarpFXColor = Foundation.ShipDef.DJEnterpriseGSaucer.OverrideWarpFXColor
 Foundation.ShipDef.DJEnterpriseGSaucer.OverridePlasmaFXColor = Foundation.ShipDef.DJEnterpriseGSaucer.OverridePlasmaFXColor
 

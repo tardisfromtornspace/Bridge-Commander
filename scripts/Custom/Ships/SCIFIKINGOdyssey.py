@@ -14,6 +14,10 @@ species = App.SPECIES_GALAXY
 menuGroup = "Fed Ships"
 playerMenuGroup = "Fed Ships"
 Foundation.ShipDef.SCIFIKINGOdyssey = Foundation.FedShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile })
+
+Foundation.ShipDef.SCIFIKINGOdyssey.SubMenu = "2400s"
+Foundation.ShipDef.SCIFIKINGOdyssey.SubSubMenu = "Odyssey Class"
+
 Foundation.ShipDef.SCIFIKINGOdyssey.dTechs = {
 	"AutoTargeting": { "Phaser": [3, 1] },
 	'Breen Drainer Immune': 1,

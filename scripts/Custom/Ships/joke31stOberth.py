@@ -14,7 +14,7 @@ from Custom.Autoload.RaceMixedGalaxyQuest import *
 #                                                                                     #
 abbrev = 'joke31stOberth'
 iconName = 'joke31stOberth'
-longName = 'USS Imahara'
+longName = 'U.S.S. Imahara'
 shipFile = 'joke31stOberth' 
 menuGroup = 'Fed Ships'
 playerMenuGroup = 'Fed Ships'
@@ -55,7 +55,7 @@ Foundation.ShipDef.joke31stOberth.dTechs = {
 	"Power Drain Beam": [0.5, 0, 0.5, 1500],
 	'Fed Ablative Armor': { "Plates": ["Ablative Armour"]}
 }
-
+Foundation.ShipDef.joke31stOberth.SubMenu = "31st Century"
 Foundation.ShipDef.joke31stOberth.CloakingSFX   = "FutureBattleCloak"
 Foundation.ShipDef.joke31stOberth.DeCloakingSFX = "FutureBattleDecloak"
 

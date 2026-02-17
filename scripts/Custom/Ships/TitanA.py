@@ -15,6 +15,9 @@ menuGroup = "Fed Ships"
 playerMenuGroup = "Fed Ships"
 Foundation.ShipDef.TitanA = Foundation.FedShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile })
 
+Foundation.ShipDef.TitanA.SubMenu = "2400s"
+Foundation.ShipDef.TitanA.SubSubMenu = "Neo-Constitution III class"
+
 Foundation.ShipDef.TitanA.dTechs = {
 	"AutoTargeting": {"Phaser": [3, 1], "Torpedo": [2, 1], "Pulse": [2, 1] },
 	#'Ablative Armour': 30000.000000,

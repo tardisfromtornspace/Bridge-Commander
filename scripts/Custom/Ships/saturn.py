@@ -8,7 +8,7 @@ import Foundation
 
 abbrev = "saturn"
 iconName = "saturn"
-longName = "USS Gateway"
+longName = "U.S.S. Gateway"
 shipFile = "saturn"
 species = App.SPECIES_GALAXY
 menuGroup = "Fed Ships"
@@ -26,6 +26,7 @@ Foundation.ShipDef.saturn.dTechs = {
 Foundation.ShipDef.saturn.CloakingSFX   = "FutureBattleCloak"
 Foundation.ShipDef.saturn.DeCloakingSFX = "FutureBattleDecloak"
 
+Foundation.ShipDef.saturn.SubMenu = "32nd Century"
 
 Foundation.ShipDef.saturn.desc = "The Saturn class was a type of Federation starship operated by Starfleet during the 32nd century. In 3189, the fleet at Federation Headquarters included a ship of this class. The collective energy of this fleet sustained a distortion field that concealed the headquarters' location. In 3190, ships of this class were present at the re-opening of Starfleet Academy and the unveiling of the Archer Spacedock."
 

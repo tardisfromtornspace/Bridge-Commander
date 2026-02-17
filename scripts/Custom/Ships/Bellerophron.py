@@ -9,7 +9,7 @@ import traceback
 
 abbrev = "Bellerophron"
 iconName = "Bellerophron"
-longName = "USS Bellerophron"
+longName = "U.S.S. Bellerophon"
 shipFile = "Bellerophron"
 species = App.SPECIES_GALAXY
 menuGroup = "Fed Ships"
@@ -24,7 +24,7 @@ except:
 	traceback.print_exc()
 	
 
-Foundation.ShipDef.Bellerophron.desc = "The Bellerophron class is a relative of the now obsolete Intrepid class. It is equppied with a class 5 tunnel array quantum slipstream drive. It is also equipped with advanced phaser arrays and quantum torpedoes, as well as transphasic torpedoes. This  was first comissioned in 2411, as a purposed science vessel as well as an unoficial warship."
+Foundation.ShipDef.Bellerophron.desc = "The Bellerophon class is a relative of the now obsolete Intrepid class. It is equppied with a class 5 tunnel array quantum slipstream drive. It is also equipped with advanced phaser arrays and quantum torpedoes, as well as transphasic torpedoes. This  was first comissioned in 2411, as a purposed science vessel as well as an unoficial warship."
 Foundation.ShipDef.Bellerophron.SubMenu = "2400s"
 Foundation.ShipDef.Bellerophron.OverrideWarpFXColor = Foundation.ShipDef.Bellerophron.OverrideWarpFXColor
 Foundation.ShipDef.Bellerophron.OverridePlasmaFXColor = Foundation.ShipDef.Bellerophron.OverridePlasmaFXColor

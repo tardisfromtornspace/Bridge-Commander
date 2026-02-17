@@ -4,7 +4,7 @@ import traceback
 
 abbrev = "Windrunner"
 iconName = "Windrunner"
-longName = "U.S.S Windrunner"
+longName = "U.S.S. Windrunner"
 shipFile = "Windrunner"
 species = App.SPECIES_GALAXY
 menuGroup = "Fed Ships"
@@ -32,19 +32,19 @@ Foundation.ShipDef.Windrunner.dTechs = {
 	'Drainer Immune': 1,
 	"Inversion Beam": [12000, 0, 0.5, 1500],
 	'Multivectral Shields': 25,
-	'Phased Torpedo Immune': 1,
 	"Power Drain Beam": [1500, 0, 0.5, 1500],
+	'Phased Torpedo Immune': 1,
 	"Reflector Shields": 2,
 	'Reflux Weapon': 3800,
 	'Regenerative Shields': 75,
-	"TachyonBeam": {"Immune": -1},
-	'Transphasic Torpedo Immune': 1,
 	"SGReplicator Attack Resistance": 30,
 	"SG Asgard Beams Weapon Immune": 2,
 	"SG Ion Weapon Immune": 2,
 	"SG Ori Beams Weapon Immune": 2,
 	"SG Plasma Weapon Immune": 2,
 	"SG Railgun Weapon Immune": 2,
+	"TachyonBeam": {"Immune": -1},
+	'Transphasic Torpedo Immune': 1,
 	'Vree Shields': 55,
 }
 

@@ -9,7 +9,7 @@ import traceback
 
 abbrev = "NomadClass"
 iconName = "NomadClass"
-longName = "USS Nomad"
+longName = "U.S.S. Nomad"
 shipFile = "NomadClass"
 species = App.SPECIES_GALAXY
 menuGroup = "Fed Ships"
