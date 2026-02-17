@@ -5,7 +5,7 @@ import App
 # Usually, you need only edit these seven lines
 abbrev = 'EnterpriseJ'				# Short name, no spaces, used as a preface for descriptions
 iconName = 'EnterpriseJ'					# Name of icon .tga file
-longName = 'U.S.S. Enterprise J (Monarch variant)'					# Long name with spaces
+longName = 'U.S.S. Enterprise J (Monarch class)'					# Long name with spaces
 shipFile = 'EnterpriseJ'				# Name of the file in Scripts\Ships\ to use.
 menuGroup = 'Fed Ships'			# Menu to appear under in Quick Battle
 playerMenuGroup = 'Fed Ships'		# ...set to None if you don't want to appear here.
@@ -53,7 +53,7 @@ Foundation.ShipDef.EnterpriseJ.fMaxWarp = 9.995
 Foundation.ShipDef.EnterpriseJ.fWarpEntryDelayTime = 3.5
 Foundation.ShipDef.EnterpriseJ.SubMenu = SubMenu
 
-Foundation.ShipDef.EnterpriseJ.desc = 'The USS Enterprise NCC-1701-J was a 26th century Federation Universe-class starship operated by Starfleet in a possible future.\n\nThe Enterprise-J participated in the historic Battle of Procyon V, wherein the forces of the Federation successfully drove the Sphere-Builders back into their trans-dimensional realm.'
+Foundation.ShipDef.EnterpriseJ.desc = 'The USS Enterprise NCC-1701-J was a 26th century Federation Monarch-class starship operated by Starfleet in a possible future.\n\nThe Enterprise-J participated in the historic Battle of Procyon V, wherein the forces of the Federation successfully drove the Sphere-Builders back into their trans-dimensional realm.'
 
 if menuGroup:           Foundation.ShipDef.EnterpriseJ.RegisterQBShipMenu(menuGroup)
 if playerMenuGroup:     Foundation.ShipDef.EnterpriseJ.RegisterQBPlayerShipMenu(playerMenuGroup)

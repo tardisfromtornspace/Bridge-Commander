@@ -15,7 +15,7 @@ Hull.SetPrimary(1)
 Hull.SetPosition(0.000000, 0.000000, 0.000000)
 Hull.SetPosition2D(0.000000, 0.000000)
 Hull.SetRepairComplexity(1.800000)
-Hull.SetDisabledPercentage(0.000000)
+Hull.SetDisabledPercentage(0.980000)
 Hull.SetRadius(1.000000)
 App.g_kModelPropertyManager.RegisterLocalTemplate(Hull)
 #################################################
