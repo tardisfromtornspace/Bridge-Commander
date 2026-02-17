@@ -1,23 +1,13 @@
-# THIS FILE IS NOT SUPPORTED BY ACTIVISION
-# THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
-#         EnterpriseJ.py by Alex SL Gato
-#         Version 1.3.6
-#         24th July 2023
-#         Based on previous versions done by EnterpriseJ and WileyCoyote
-#                          
-#################################################################################################################
-
 import App
 import Multiplayer.SpeciesToShip
 
 def GetShipStats():
 	kShipStats = {
-		"DamageRadMod" : 0.00000000625, 
-		"DamageStrMod" : 0.00000000625,
-		#"SpecularCoef": 30.0,
-		"FilenameHigh": "data/Models/Ships/EnterpriseJ/CanonEnterpriseJ.nif",
-		"FilenameMed": "data/Models/Ships/EnterpriseJ/CanonEnterpriseJ.nif",
-		"FilenameLow": "data/Models/Ships/EnterpriseJ/CanonEnterpriseJ.nif",
+		"DamageRadMod" : 0.75, 
+		"DamageStrMod" : 0.75, 
+		"FilenameHigh": "data/Models/Ships/EnterpriseJ/EnterpriseJ.nif",
+		"FilenameMed": "data/Models/Ships/EnterpriseJ/EnterpriseJ.nif",
+		"FilenameLow": "data/Models/Ships/EnterpriseJ/EnterpriseJ.nif",
 		"Name": "EnterpriseJ",
 		"HardpointFile": "EnterpriseJ",
 		"Species": Multiplayer.SpeciesToShip.MARAUDER
@@ -33,9 +23,9 @@ def LoadModel(bPreLoad = 0):
 		# Surface Damage Res, Internal Damage Res, Burn Value, Hole Value,
 		# Search String for Glow, Search string for Specular, Suffix for specular
 		pLODModel = App.g_kLODModelManager.Create(pStats["Name"])
-		pLODModel.AddLOD(pStats["FilenameHigh"], 10, 600.0, 15.0, 15.0, 9000, 382000, "_glow", None, "_specular")
-		pLODModel.AddLOD(pStats["FilenameMed"],  10, 1500.0, 15.0, 15.0, 9000, 382000, "_glow", None, None)
-		pLODModel.AddLOD(pStats["FilenameLow"],  10, 1800.0, 15.0, 30.0, 9000, 382000, "_glow", None, None)
+		pLODModel.AddLOD(pStats["FilenameHigh"], 10, 200.0, 15.0, 15.0, 400, 900, "_glow", None, "_specular")
+		pLODModel.AddLOD(pStats["FilenameMed"],  10, 300.0, 15.0, 15.0, 400, 900, "_glow", None, None)
+		pLODModel.AddLOD(pStats["FilenameLow"],  10, 800.0, 15.0, 30.0, 400, 900, "_glow", None, None)
 
 #		kDebugObj = App.CPyDebug()
 		if (bPreLoad == 0):
@@ -52,19 +42,10 @@ def GetArmorRatio():
       return 1.55
 
 def GetDamageStrMod():
-	return 0
+	return 0.75
 
 def GetDamageRadMod():
-	return 0
+	return 0.75
 
 def GetForcedArmor():
-	return 1
-
-def GetArmouredModel():
-	return "EnterpriseJArmor"
-
-def GetOriginalShipModel(): # Should be this script, but for more flexibility, here you can change it to never return...
-	return "EnterpriseJ"
-
-def IsTachyonImmune():
 	return 1

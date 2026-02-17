@@ -4,7 +4,7 @@ import traceback
 
 abbrev = "GSTheseus"
 iconName = "GSTheseus"
-longName = "U.S.S Mjolnir"
+longName = "U.S.S. Mjolnir"
 shipFile = "GSTheseus"
 species = App.SPECIES_GALAXY
 menuGroup = "Fed Ships"

@@ -1,4 +1,6 @@
 == Changelog ==
+1.2.20 - Fixing:
+   * Updated Enterprise J files to avoid accidentally overwriting WC's EnterpriseJ
 1.2.19 - Fixing:
    * Updated AdvArmourTechThree from 1.84 to 1.85, fixed conflict with DS9FX sometimes resetting visible damage.
 1.2.18 - Fixing:
