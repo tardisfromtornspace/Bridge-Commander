@@ -43,7 +43,7 @@ Foundation.ShipDef.UniverseEntJ.dTechs = {
 	'ChronitonTorpe Immune': 1,
 	'Defensive AOE Siphoon' : { "Distance": 55.0, "Power": -10000.0, "Efficiency": 0.99, "Resistance": 1.0,},
 	'Drainer Immune': 1,
-	"Fed Ablative Armor": {"Plates": ["Forward Ablative Armor","Aft Ablative Armor","Dorsal Ablative Armor","Ventral Ablative Armor"]},
+	"Fed Ablative Armor": {"Plates": ["Forward Ablative Armor","Aft Ablative Armor","Dorsal Ablative Armor","Ventral Ablative Armor", "Hull"]},
 	#"GraviticLance": { "Time": 0.1, "TimeEffect": 5.0, "RadDepletionStrength": 1000, "Beams": ["Gravitic Lance"], "Immune": 0},
 	"Inversion Beam": [12000, 0, 0.5, 1500],
 	'Multivectral Shields': 10,

@@ -41,7 +41,7 @@ def PreLoadModel():
 	LoadModel(1)
 
 def GetArmorRatio():
-	return 0.1
+	return 0.01
 
 def GetDamageStrMod():
 	return 0.000625
