@@ -30,7 +30,7 @@ Foundation.ShipDef.DarkWellsRef.dTechs = {
 	'Adv Armor Tech': 1,
 	"Alternate-Warp-FTL": {
 		"Setup": {
-			"DrWTimeVortexDrive": {	"Core": ["Isolytic Reactor", "Temporal Drive"], },
+			"DrWTimeVortexDrive": {	"Core": ["Isofractic Reactor", "Chronofractic Drive"], },
 		},
 	},
 	"Andromedan Tractor-Repulsor Beams Weapon": [{"HullDmgMultiplier": 2400.0, "ShieldDmgMultiplier": 150.0}, ["Dark Wells Ref Tractor Beam"]],
