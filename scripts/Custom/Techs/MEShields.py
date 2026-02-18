@@ -2,7 +2,7 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
 #         MEShields.py by Alex SL Gato
-#         17th December 2024
+#         18th February 2026
 #         Based on SGShields by Alex SL Gato, which was strongly based on Shields.py by the FoundationTechnologies team, ATPFunctions by Apollo, HelmMenuHandlers from the STBC Team, and MEGIonWeapon by Alex SL Gato.
 #################################################################################################################
 # === Introduction ===
@@ -174,7 +174,7 @@ import FoundationTech
 from ftb.Tech.ATPFunctions import *
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-            "Version": "0.2",
+            "Version": "0.21",
             "License": "LGPL",
             "Description": "Read the small title above for more info"
             }
@@ -1703,6 +1703,10 @@ try:
 
 			pShip = App.ShipClass_GetObjectByID(None, pShip.GetObjID())
 			if not pShip:
+				return
+
+			pShipisDead = (pShip.IsDead() or pShip.IsDying())
+			if pShipisDead:
 				return
 
 			global shieldPiercedThreshold, shieldGoodThreshold, defaultPassThroughDmgMult, defaultDummyNothing, vulnerableProjToMEShields, vulnerableBeamsToMEShields, torpsNetTypeThatCanPhase

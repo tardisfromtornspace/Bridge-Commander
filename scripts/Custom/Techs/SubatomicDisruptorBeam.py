@@ -1,6 +1,6 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
-# 16th February 2026, by Alex SL Gato (CharaToLoki)
+# 18th February 2026, by Alex SL Gato (CharaToLoki)
 #         Based on AndromedanTractorRepulsorTech by Alex SL Gato, which was based on:
 #             - SGAsgardBeamWeapon by Alex SL Gato, which was based on BorgAdaptation.py and PhasedTorp.py by Alex SL Gato, which were based on the Foundation import function by Dasher; the Shield.py scripts and KM Armour scripts and FoundationTechnologies team's PhasedTorp.py, on ATPFunctions by Apollo.
 #             - Also based on MEShields by Alex SL Gato, which was based on SGShields by Alex SL Gato, which was strongly based on Shields.py by the FoundationTechnologies team, ATPFunctions by Apollo, HelmMenuHandlers from the STBC Team, and MEGIonWeapon by Alex SL Gato.
@@ -133,7 +133,7 @@ import nt
 import string
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-            "Version": "0.1",
+            "Version": "0.2",
             "License": "LGPL",
             "Description": "Read the small title above for more info"
             }
@@ -818,6 +818,15 @@ try:
 
 				if not pAttacker or not pTarget:
 					return 0
+
+				pAttackerDead = (pAttacker.IsDead() or pAttacker.IsDying())
+				if pAttackerDead:
+					return 0
+
+				pTargetDead = (pTarget.IsDead() or pTarget.IsDying())
+				if pTargetDead:
+					return 0
+
 
 				pAttackerInstance = findShipInstance(pAttacker)
 				pTargetInstance = findShipInstance(pTarget)

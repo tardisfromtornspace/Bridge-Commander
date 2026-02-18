@@ -1,6 +1,6 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
-# 4th September 2024, by Alex SL Gato (CharaToLoki)
+# 18th February 2026, by Alex SL Gato (CharaToLoki)
 #         Based on BorgAdaptation.py and PhasedTorp.py by Alex SL Gato, which were based on the Foundation import function by Dasher; the Shield.py scripts and KM Armour scripts and FoundationTechnologies team's PhasedTorp.py
 #         Also based on ATPFunctions by Apollo.
 #################################################################################################################
@@ -120,7 +120,7 @@ import nt
 import string
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-            "Version": "0.95",
+            "Version": "0.96",
             "License": "LGPL",
             "Description": "Read the small title above for more info"
             }
@@ -483,6 +483,14 @@ try:
 				pTarget = App.ShipClass_GetObjectByID(None, targetID)
 
 				if not pAttacker or not pTarget:
+					return 0
+
+				pAttackerDead = (pAttacker.IsDead() or pAttacker.IsDying())
+				if pAttackerDead:
+					return 0
+
+				pTargetDead = (pTarget.IsDead() or pTarget.IsDying())
+				if pTargetDead:
 					return 0
 
 				pAttackerInstance = findShipInstance(pAttacker)
