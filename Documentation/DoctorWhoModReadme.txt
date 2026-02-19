@@ -1,4 +1,7 @@
 == Changelog ==
+1.2.9 -
+   Updates:
+   * Added something to the crucible to simulate the temporal loop to make it even more menacing.
 1.2.8 -
    Fixes:
    * Updated AdvArmourTechThree from 1.84 to 1.85, fixed conflict with DS9FX sometimes resetting visible damage.

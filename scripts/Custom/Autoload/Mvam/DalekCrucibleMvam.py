@@ -231,7 +231,7 @@ def CheckSeperate (pShip):
 			DoNothing = 0
 		#seperate if 5% damaged and outnumbered 2 to 1
 		if ((pShip.GetHull().GetConditionPercentage() <= 0.95) and (pFriendlies.GetNumActiveObjects() >= (pEnemies.GetNumActiveObjects() * 2))):
-			pPlayer = MissionLib.GetPlayer()
+			pPlayer = pGame.GetPlayer()
 			if pPlayer and (pPlayer.GetHull().GetConditionPercentage() >= 0.9):
 				return 1
 			elif snkAiRanSep == 4:

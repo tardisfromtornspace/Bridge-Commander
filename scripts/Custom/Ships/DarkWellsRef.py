@@ -42,7 +42,7 @@ Foundation.ShipDef.DarkWellsRef.dTechs = {
 	'Defensive AOE Siphoon' : { "Distance": 25.0, "Power": -11000.0, "Efficiency": 0.99, "Resistance": 0.95,},
 	'Digitizer Torpedo Immune': 1,
 	'Drainer Immune': 1,
-	"GraviticLance": { "Time": 2.0, "TimeEffect": 15.0, "RadDepletionStrength": 2000, "Immune": 1},
+	"GraviticLance": { "Time": 2.0, "TimeEffect": 15.0, "RadDepletionStrength": 2000, "Immune": 0},
 	"Inversion Beam": [0.5, 0, 0.5, 10500],
 	'Multivectral Shields' : 27,
 	"Power Drain Beam": [0.5, 0, 0.5, 10500],

@@ -30,6 +30,7 @@ Foundation.ShipDef.DalekCrucible.dTechs = {
 	#'Davros Reality Bomb' : { "Distance": 10000000.0, "Period": 30},
 	'Drainer Immune': 1,
 	"FiveSecsGodPhaser": 1,
+	"GraviticLance": { "Time": 5.0, "TimeEffect": 60.0, "RadDepletionStrength": 50000, "Immune": 1},
 	"Vree Shields": 100,
 	"Phased Torpedo Immune": 1,
 	'Reflux Weapon': 100,
