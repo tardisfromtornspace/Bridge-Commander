@@ -38,7 +38,7 @@ except:
 ##################################
 #
 MODINFO = { "Author": "\"ftb Team\", \"Apollo\", \"Greystar\", \"Alex SL Gato\" (andromedavirgoa@gmail.com)",
-	    "Version": "0.1",
+	    "Version": "0.11",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -102,7 +102,7 @@ if SCRIPT_INHERITED != None and hasattr(SCRIPT_INHERITED, "MIRVMultiTargetTorped
 
 	class MIRVMultiSingleTargetTorpedoFire2(SCRIPT_INHERITED.MIRVMultiTargetTorpedo):
 		def __init__(self, name, dict):
-			SCRIPT_INHERITED.MIRVMultiTargetTorpedo(self, name, dict)
+			SCRIPT_INHERITED.MIRVMultiTargetTorpedo.__init__(self, name, dict)
 			self.checkIfAScriptIsPatched()
 
 		def scriptFilePatch(self):
