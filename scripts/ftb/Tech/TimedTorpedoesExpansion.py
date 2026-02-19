@@ -17,6 +17,7 @@
 # HOW-TO- ADD
 # At the bottom of your torpedo projectile file add this (Between the """ and """) and adjust its contents to your preferences:
 """
+import traceback
 try:
 	import FoundationTech
 	import ftb.Tech.TimedTorpedoesExpansion
@@ -30,14 +31,14 @@ try:
 	})
 	FoundationTech.dOnFires[__name__] = oFire
 except:
-	print "Something went wrong with TimedTorpedoes"
+	print "Something went wrong with TimedTorpedoesExpansion"
 	traceback.print_exc()
 """
 
 ##################################
 #
 MODINFO = { "Author": "\"ftb Team\", \"Apollo\", \"Greystar\", \"Alex SL Gato\" (andromedavirgoa@gmail.com)",
-	    "Version": "0.05",
+	    "Version": "0.06",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
