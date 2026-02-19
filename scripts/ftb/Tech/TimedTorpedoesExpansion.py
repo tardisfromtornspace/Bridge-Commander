@@ -38,7 +38,7 @@ except:
 ##################################
 #
 MODINFO = { "Author": "\"ftb Team\", \"Apollo\", \"Greystar\", \"Alex SL Gato\" (andromedavirgoa@gmail.com)",
-	    "Version": "0.11",
+	    "Version": "0.12",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -98,7 +98,7 @@ def isSolidProjectilesPatched(scriptOne, listi, notDone):
 
 
 
-if SCRIPT_INHERITED != None and hasattr(SCRIPT_INHERITED, "MIRVMultiTargetTorpedo") and hasattr(SCRIPT_INHERITED, "SingleMIRVEvent") and hasattr(SCRIPT_INHERITED, "MultipleMIRVEvent"):
+if SCRIPT_INHERITED != None and hasattr(SCRIPT_INHERITED, "MIRVMultiTargetTorpedo") and hasattr(SCRIPT_INHERITED, "SingleMIRVEvent") and hasattr(SCRIPT_INHERITED, "MultipleMIRVEvent") and hasattr(SCRIPT_INHERITED, "TorpDistanceEvent"):
 
 	class MIRVMultiSingleTargetTorpedoFire2(SCRIPT_INHERITED.MIRVMultiTargetTorpedo):
 		def __init__(self, name, dict):
@@ -159,7 +159,7 @@ if SCRIPT_INHERITED != None and hasattr(SCRIPT_INHERITED, "MIRVMultiTargetTorped
 								self.spreadDensity = 1
 
 							FoundationTech.oEventQueue.Queue(
-								TorpDistanceEvent(
+								SCRIPT_INHERITED.TorpDistanceEvent(
 									pTorpID,
 									pTorp.GetTargetID(),
 									myClassCall(pTorpID, self, self.multipleTargetSelect),
