@@ -1,7 +1,7 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE FOUNDATION LGPL LICENSE AS WELL
 # TimedTorpedoesExpansion.py
-# 28th January 2026, by Alex SL Gato, based and depending on TimedTorpedoes (by the ftb team; scripts/ftb/Techs/TimedTorpedoes or scripts/Custom/Techs/TimedTorpedoes) to work
+# 20th February 2026, by Alex SL Gato, based and depending on TimedTorpedoes (by the ftb team; scripts/ftb/Techs/TimedTorpedoes or scripts/Custom/Techs/TimedTorpedoes) to work
 # This script depends on Alex SL Gato's updated SolidProjectiles (by the ftb team; scripts/ftb/Techs/SolidProjectiles or scripts/Custom/Techs/SolidProjectiles) to work fully
 #################################################################################################################
 # This script:
@@ -38,7 +38,7 @@ except:
 ##################################
 #
 MODINFO = { "Author": "\"ftb Team\", \"Apollo\", \"Greystar\", \"Alex SL Gato\" (andromedavirgoa@gmail.com)",
-	    "Version": "0.06",
+	    "Version": "0.1",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -101,8 +101,8 @@ def isSolidProjectilesPatched(scriptOne, listi, notDone):
 if SCRIPT_INHERITED != None and hasattr(SCRIPT_INHERITED, "MIRVMultiTargetTorpedo") and hasattr(SCRIPT_INHERITED, "SingleMIRVEvent") and hasattr(SCRIPT_INHERITED, "MultipleMIRVEvent"):
 
 	class MIRVMultiSingleTargetTorpedoFire2(SCRIPT_INHERITED.MIRVMultiTargetTorpedo):
-		def __init__(self, pTorpID, oTech, when):
-			SCRIPT_INHERITED.MIRVMultiTargetTorpedo(self, pTorpID, oTech, when)
+		def __init__(self, name, dict):
+			SCRIPT_INHERITED.MIRVMultiTargetTorpedo(self, name, dict)
 			self.checkIfAScriptIsPatched()
 
 		def scriptFilePatch(self):
