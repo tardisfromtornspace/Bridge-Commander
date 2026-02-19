@@ -1,0 +1,74 @@
+This Ship was created by Jeff Wallace
+111wallace111@msn.com
+
+TNG era model
+Based on original sKetches for the Enterprise Before the first pilot was made circa 1964
+
+fed heavy cruiser alternate A...
+uses fCA hardpoints
+
+model and textures by Jeff Wallace
+
+
+
+DISCLAIMER
+"THIS 3D model for SfC is a product of hard work and Aristic Interpretation by its creators Any Similarity to any other works is purley coincidental, It is not intended to represent accuratley or otherwise any Model ship , drawing OR computer generated image of any kind in anyway, either past ,present or future"
+
+"this model is intended for free distribution and Cannot be sold in anyform without the creators express consent"..
+ 
+
+
+****comments****
+ alot of time and effort has been spent on this model by the group to get it as close to the source matrerial as possible and we may well release further updates based on weather ADB produce better SOURCE material or our own personal tastes dictate..  
+
+IF YOU WISH TO REPOST, RE-TEXTURE OR REWORK THE MESH 
+I would ask you seek prior approval BEFORE RELEASING ANY SUCH
+RE-MODELS.
+
+
+
+USE:
+To use this model PUT the file in the models folder of sfc AND
+name as per the model IE :KL9CC .
+
+Then goto the sfbsfc13 file in the specs folder of sfc and amend the entry
+for the ship you want to replace .
+
+Example  TO change the klingon D5WC  MODEL TO A KL9CC
+
+IE :CHANGE -  ASSETS/MODELS/KCL/KCL.MOD  to
+                            ASSETS/MODELS/KL9CC/KL9CC.MOD
+
+DO NOT change the ship class name or any thing else in the file unless you know 
+exactly what to do this model is intended to change the look of the ship purely for recognition
+and variety not for perfomance in action.
+OBVIOSLEY you need to use the correct model and file names as per the mod 
+being used.
+          
+
+ 
+
+Copyright and Distribution Permissions 
+-------------------------------------- 
+THIS PATCH IS NOT MADE, DISTRIBUTED, OR SUPPORTED BY INTERPLAY TM & (C) INTERPLAY & TALDREN & PARAMOUNT PICTURES. 
+
+Copyright notices: 
+
+Star Trek, Star Fleet Command, Star Trek: Deep Space Nine, Star Trek: The Next Generation, Star Trek: Voyager (and the various logo devices used in them) are copyright Paramount Pictures, as are the  characters, related images, and sound from the productions. 
+
+LEGAL STUFF: This file is not supported or affiliated with Interplay Productions. While most who have used these files have had no problems, we will not be held accountable for any damage done to your computer by use of these files or techniques. USE AT YOUR OWN RISK! This file is freeware. It is not to be sold. 
+
+Copyrights 
+User-created missions contain source-code that is the property of Interplay Productions and Quicksilver Software. In addition, Star Trek is a property of Paramount Pictures. Star Fleet Battles is the property of ADB, Inc. You may not sell user-created missions commercially. You should respect the rights of the property owners. Missions created based on Star Fleet Battles material must be marked "Based on copyrighted material by ADB, Inc."in the documentation or mission briefing. ADB also requests that these missions not be placed on "out of network" SFB web-sites. 
+
+SOFTWARE USE LIMITATIONS AND LIMITED LICENSE 
+Any Star Trek: Starfleet Command mission (each, a "Mission", and collectively, "Missions") created using the Star Trek: Starfleet Command Mission API ("SFC Mission API") is intended solely for your personal, noncommercial home entertainment use. You may not decompile, reverse engineer, or disassemble SFC Mission API or any Mission, except as permitted by law. Interplay Entertainment Corp. ("Interplay") retains all rights and title in SFC Mission API and the Missions including all intellectual property rights embodied therein and derivatives thereof. SFC Mission API and the Missions, including, without limitation, all code, data structures, characters, images, sounds, text, screens, game play, derivative works and all other elements may not be copied (except as provided below), sold, rented, leased, distributed (except as provided below), used on pay-per-play, coin-op or other for-charge basis, or for commercial purpose. You may make copies of SFC Mission API and any Mission for your personal, noncommercial  home entertainment use and to give to friends and acquaintances on a no cost, noncommercial basis. This limited right to copy or provide public access to the SFC Mission API and the Missions expressly excludes any copying, access or distribution of SFC Mission API and the Missions on a commercial basis, including, without limitation, bundling SFC Mission API or any Mission with any other product or service, selling SFC Mission API or any Mission, and any giveaway in connection with another product or service. Any permissions granted herein are provided on a temporary basis and can be withdrawn by Interplay at any time. All rights not expressly granted herein are reserved. No technical support from either Interplay or Quicksilver Software, Inc. ("Quicksilver") shall be available  for SFC Mission API or any Mission. 
+
+INTERPLAY AND QUICKSILVER DISCLAIM ALL WARRANTIES, EXPRESS OR IMPLIED, RELATING TO SFC MISSION API AND THE MISSIONS (INCLUDING WITHOUT LIMITATION, MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT), AND NEITHER INTERPLAY NOR QUICKSILVER SHALL HAVE ANY RESPONSIBILITY OR LIABILITY REGARDING SFC MISSION API AND THE MISSIONS, INCLUDING, WITHOUT LIMITATION, ANY RESPONSIBILITY OR LIABILITY REGARDING USE OR OPERABILITY OF SFC MISSION API AND THE MISSIONS. YOU ASSUME ALL RISK OF LOSS IN CHOOSING TO USE SFC MISSION API AND THE MISSIONS. 
+
+SFC Mission API and all Missions © 1999 Interplay Entertainment Corp. SFC Mission API and Star Trek: Starfleet  Command are trademarks of Interplay Entertainment Corp. All Rights Reserved. 
+
+
+
+
+
