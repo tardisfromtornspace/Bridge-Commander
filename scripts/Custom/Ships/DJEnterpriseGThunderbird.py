@@ -39,8 +39,9 @@ Foundation.ShipDef.DJEnterpriseGThunderbird.dTechs = {
 	'Transphasic Torpedo Immune': 1,
 	'Drainer Immune': 1,
 	'Breen Drainer Immune': 0,
-	'Regenerative Shields': 45,
-	'Multivectral Shields': 30,
+	'Regenerative Shields': 55,
+	'Multivectral Shields': 8,
+	'Partially Distributed Shields': {"Shield Transfer Ratio": 0.1, "Max Percentage Damage": 2, "Collapse Threshold": 0.5, "Emergency Redistribute Threshold": 0.32, "Emergency Redistribute Chance": 10, "Max Radians": 0.5 * 3.141592},
 	"Fed Ablative Armor": {"Plates": ["Forward Ablative Armor","Aft Ablative Armor","Dorsal Ablative Armor","Ventral Ablative Armor"]}
 }
 

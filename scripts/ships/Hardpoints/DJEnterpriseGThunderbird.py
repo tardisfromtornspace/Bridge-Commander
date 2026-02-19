@@ -442,7 +442,7 @@ kFiringChainString = App.TGString()
 kFiringChainString.SetString("0;Single;12;Dual;5;Quad")
 TorpedoLaunchers.SetFiringChainString(kFiringChainString)
 TorpedoLaunchers.SetMaxTorpedoes(0, 0)
-TorpedoLaunchers.SetTorpedoScript(0, "")
+TorpedoLaunchers.SetTorpedoScript(0, "Tactical.Projectiles.PhotonTorpedo")
 TorpedoLaunchers.SetNumAmmoTypes(1)
 App.g_kModelPropertyManager.RegisterLocalTemplate(TorpedoLaunchers)
 #################################################
@@ -648,5 +648,8 @@ def LoadPropertySet(pObj):
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
 	prop = App.g_kModelPropertyManager.FindByName("For Phaser 2", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	if (prop != None):
+		pObj.AddToSet("Scene Root", prop)
+	prop = App.g_kModelPropertyManager.FindByName("Torpedo Launchers", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
