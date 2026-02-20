@@ -2,6 +2,7 @@ This mod was changed by narrowcwyfe and Alex SL Gato. Being temporarily uploaded
 
 == Changelog ==
 
+0.9.18 - Updated AdvArmourTechThree to 1.9, cleaned code a bit and fixed potential issue with lights.
 0.9.17 - Updated AdvArmourTechThree from 1.84 to 1.85, fixed conflict with DS9FX sometimes resetting visible damage.
 0.9.16 - Updated FIX-DS9FXbelow1dot2 to be a bit more agnostic towards the actual value of SpeciesToTorp.PHASEDPLASMA.
 0.9.15 - Updated AdvArmourTechThree from 1.83 to 1.84, fixed weird button bug.

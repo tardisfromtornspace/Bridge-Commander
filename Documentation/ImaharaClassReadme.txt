@@ -1,4 +1,6 @@
 == Changelog ==
+1.0.15
+* Updated AdvArmourTechThree to 1.9, cleaned code a bit and fixed potential issue with lights.
 1.0.14
 * Updated AdvArmourTechThree from 1.84 to 1.85, fixed conflict with DS9FX sometimes resetting visible damage.
 1.0.13

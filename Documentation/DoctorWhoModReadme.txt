@@ -1,4 +1,7 @@
 == Changelog ==
+1.3.0 - 
+   Fixes:
+   * Updated AdvArmourTechThree to 1.9, cleaned code a bit and fixed potential issue with lights.
 1.2.9 -
    Updates:
    * Added something to the crucible to simulate the temporal loop to make it even more menacing.

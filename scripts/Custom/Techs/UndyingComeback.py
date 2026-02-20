@@ -2,7 +2,7 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
 #         UndyingComeback.py by Alex SL Gato
-#         15th October 2024
+#         20th February 2026
 #         Based on AdvArmorTechThree by Alex SL Gato derived from a KM and ftb team file, B5Defenses (based on Shields.py by the Foundation Technologies team), loadspacehelper (Dasher, BANBURY and other ftb people), SlipstreamModule (by USS Sovereign) and HelmMenuHandlers by the stbc team Totally Games (also partially based on Defiant's FleetUtils).
 #################################################################################################################
 #
@@ -40,7 +40,7 @@ Foundation.ShipDef.Ambassador.dTechs = {
 #################################################################################################################
 #
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.11",
+	    "Version": "0.12",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -745,6 +745,10 @@ def ReplaceModel(pShip, sNewShipScript):
 	pShip = App.ShipClass_GetObjectByID(None, pShip.GetObjID())
 	if not pShip:
 		return 0
+
+	if App.g_kLODModelManager.AreGlowMapsEnabled() == 1 and App.g_kLODModelManager.GetDropLODLevel() == 0:
+		App.g_kLODModelManager.SetGlowMapsEnabled(0)
+		App.g_kLODModelManager.SetGlowMapsEnabled(1)
 
 	ShipScript = __import__('ships.' + sNewShipScript)
 	ShipScript.LoadModel()
