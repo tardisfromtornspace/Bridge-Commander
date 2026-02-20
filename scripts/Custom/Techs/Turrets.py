@@ -1,6 +1,6 @@
 """
 #         Turrets
-#         29th January 2026
+#         20th February 2026
 #         Based strongly on SubModels.py by USS Defiant and their team, and AutoTargeting.py by USS Frontier.
 #         Also based slightly on AdvancedTorpedoManagement.py from BCSTB Team, the Borg Technology from Alex SL Gato, and ConditionInLineOfSight by the original STBC team
 #         Special thanks to USS Sovereign and Gizmo_3.
@@ -157,7 +157,7 @@ import MissionLib
 
 #################################################################################################################
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "1.15",
+	    "Version": "1.16",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -1553,7 +1553,11 @@ def ReplaceModel(pShip, sNewShipScript):
         pShip = App.ShipClass_GetObjectByID(None, pShip.GetObjID())
         if not pShip:
                 return
-        
+
+        if App.g_kLODModelManager.AreGlowMapsEnabled() == 1 and App.g_kLODModelManager.GetDropLODLevel() == 0:
+                App.g_kLODModelManager.SetGlowMapsEnabled(0)
+                App.g_kLODModelManager.SetGlowMapsEnabled(1)
+
         ShipScript = __import__('ships.' + sNewShipScript)
         ShipScript.LoadModel()
         kStats = ShipScript.GetShipStats()

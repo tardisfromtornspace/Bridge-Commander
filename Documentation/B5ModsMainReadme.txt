@@ -1,4 +1,7 @@
 ==Changelog==
+1.7.8 -
+   Fixes:
+   * Updated Turrets to 1.16, fixing a potential edge-case light issue.
 1.7.7 -
    Updates:
    * Created FIX-FoundationTech20050703DefendVSXFix to fix certain pInstance DefendVSBeam, DefendVSTorp, DefendVSTractor and DefendVSPulse issues, as well as TractorEvent issues - now tractor events should be listened to more often.
