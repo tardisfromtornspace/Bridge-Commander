@@ -1,7 +1,7 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL, FOR THOSE SECTIONS THAT DO NOT FALL UNDER ANY OTHER LICENSE (See explanation below)
 # AlternateSubModelFTL.py
-# 22nd October 2025, by Alex SL Gato (CharaToLoki)
+# 22th February2026, by Alex SL Gato (CharaToLoki)
 #         Based on Defiant's SubModels script logic and BorgAdaptation.py by Alex SL Gato, which were based on the Foundation import function by Dasher
 #         Also based slightly on ATPFunctions (by Apollo) and DS9FXPulsarManager style (by USS Sovereign).
 #         Also some sections based and copied from the Slipstream module by Mario aka USS Sovereign, modified by Alex SL Gato with Mario's permission to adapt part of his code to this script ONLY as long as it is meant for KM, and that he can and will take action otherwise (see Documentation/USSSovereignStanceAboutModifyingorRepackagingSlipstream.PNG).
@@ -1508,7 +1508,7 @@ def GetEngageDirectionC(mySelf, pPlayerID = None):
 #################################################################################################################
 #
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.88",
+	    "Version": "0.89",
 	    "License": "All Rights Reserved (USS Sovereign sections), LGPL (everywhere else)",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -1617,6 +1617,10 @@ def ReplaceModel(pShip, sNewShipScript):
 	if not pShip:
 		return
 	
+	if App.g_kLODModelManager.AreGlowMapsEnabled() == 1 and App.g_kLODModelManager.GetDropLODLevel() == 0:
+		App.g_kLODModelManager.SetGlowMapsEnabled(0)
+		App.g_kLODModelManager.SetGlowMapsEnabled(1)
+
 	ShipScript = __import__('ships.' + sNewShipScript)
 	ShipScript.LoadModel()
 	kStats = ShipScript.GetShipStats()
