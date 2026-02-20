@@ -35,7 +35,7 @@ Foundation.ShipDef.DarkSongClass.dTechs = {
 		},
 	},
 	"Andromedan Tractor-Repulsor Beams Weapon": [{"HullDmgMultiplier": 900.0, "ShieldDmgMultiplier": 50.0}, ["Dark Song Tractor Beam"]],
-	#"Andromedan Tractor Beams Weapon Immune": 1,
+	#"Andromedan Tractor-Repulsor Beams Weapon Immune": 1,
 	'Automated Destroyed System Repair': {"Time": 45.0, "DoNotInterfere": 1},
 	"Borg Attack Resistance": 80,
 	'Breen Drainer Immune': 0,

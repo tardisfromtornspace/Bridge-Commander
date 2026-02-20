@@ -33,7 +33,7 @@ Foundation.ShipDef.DarkWells.dTechs = {
 		},
 	},
 	"Andromedan Tractor-Repulsor Beams Weapon": [{"HullDmgMultiplier": 1200.0, "ShieldDmgMultiplier": 75.0}, ["Dark Wells Tractor Beam"]],
-	"Andromedan Tractor Beams Weapon Immune": 1,
+	"Andromedan Tractor-Repulsor Beams Weapon Immune": 1,
 	'Automated Destroyed System Repair': {"Time": 45.0, "DoNotInterfere": 1},
 	"Borg Attack Resistance": 80,
 	'Breen Drainer Immune': 0,

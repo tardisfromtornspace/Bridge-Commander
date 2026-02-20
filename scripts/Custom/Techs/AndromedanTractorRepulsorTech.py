@@ -34,7 +34,7 @@ Foundation.ShipDef.Ambassador.dTechs = {
 # However also note that due to how Tractor Beam continuous hits do not carry certain values, it will assume by defect that the tractor is not hitting the hull for this immunity
 """
 Foundation.ShipDef.Ambassador.dTechs = {
-	"Andromedan Tractor Beams Weapon Immune": 1
+	"Andromedan Tractor-Repulsor Beams Weapon Immune": 1
 }
 """
 # Regarding subTechs
@@ -132,7 +132,7 @@ import nt
 import string
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-            "Version": "0.2",
+            "Version": "0.21",
             "License": "LGPL",
             "Description": "Read the small title above for more info"
             }
