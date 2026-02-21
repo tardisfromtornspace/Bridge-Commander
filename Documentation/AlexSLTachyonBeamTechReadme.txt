@@ -1,4 +1,5 @@
 == Changelog ==
+1.4.3 - Cleaner and more robust code
 1.4.1 - Small name expansion
 1.4 - Small bugfix
 1.3 - Small bugfix

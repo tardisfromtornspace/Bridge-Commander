@@ -1,4 +1,6 @@
 == Changelog ==
+1.2.22 - Fixing:
+   * Updated Gravitic Lance to 1.55, making the code cleaner and slightly better at handling exceptions
 1.2.21 - Fixing:
    * Updated AdvArmourTechThree to 1.9, cleaned code a bit and fixed potential issue with lights.
 1.2.20 - Fixing:

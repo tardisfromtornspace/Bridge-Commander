@@ -1,7 +1,7 @@
 #################################################################################################################
 #         GraviticLance by Alex SL Gato
-#         Version 1.52
-#         27th March 2025
+#         Version 1.55
+#         21st February 2026
 #         Based on FiveSecsGodPhaser by USS Frontier, scripts/ftb/Tech/TachyonProjectile by the FoundationTechnologies team, and scripts/ftb/Tech/FedAblativeArmour by the FoundationTechnologies team
 #                          
 #################################################################################################################
@@ -28,7 +28,7 @@ def IsGraviticLanceImmune():
 #################################################################################################################
 #
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "1.52",
+	    "Version": "1.55",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -43,6 +43,8 @@ from ftb.Tech.DisablerYields import *
 
 import time
 import string
+
+import traceback
 
 global lImmuneShips # A list meant only for backwards compatibility - do NOT edit
 lImmuneShips = (
@@ -120,55 +122,62 @@ class GraviticLance(FoundationTech.TechDef):
 		App.g_kEventManager.RemoveBroadcastHandler(App.ET_PHASER_STOPPED_HITTING, self.pEventHandler, "PhaserStoppedHitting")
 		App.g_kEventManager.AddBroadcastPythonMethodHandler(App.ET_PHASER_STARTED_HITTING, self.pEventHandler, "PhaserStartedHitting")
 		App.g_kEventManager.AddBroadcastPythonMethodHandler(App.ET_PHASER_STOPPED_HITTING, self.pEventHandler, "PhaserStoppedHitting")
-		#print "Initialized GraviticLance"
+		#print "Initialized ", __name__, ".", self.name
 
 	def Attach(self, pInstance):
 		pShip = App.ShipClass_Cast(App.TGObject_GetTGObjectPtr(pInstance.pShipID))
 		if pShip != None:
-			dMasterDict = pInstance.__dict__['GraviticLance']
+			dMasterDict = pInstance.__dict__[self.name]
 		else:
 			pass
-			#print "GraviticLance Error (at Attach): couldn't acquire ship of id", pInstance.pShipID
+			#print __name__, " Error (at Attach): couldn't acquire ship of id", pInstance.pShipID
 		pInstance.lTechs.append(self)
 		#print "EJGL: attached to ship:", pShip.GetName()
 	def Detach(self, pInstance):
 		pShip = App.ShipClass_Cast(App.TGObject_GetTGObjectPtr(pInstance.pShipID))
 		if pShip != None:
-			dMasterDict = pInstance.__dict__['GraviticLance']
+			dMasterDict = pInstance.__dict__[self.name]
 		else:
-			#print "GraviticLance Error (at Detach): couldn't acquire ship of id", pInstance.pShipID
+			#print __name__, " Error (at Detach): couldn't acquire ship of id", pInstance.pShipID
 			pass
 		pInstance.lTechs.remove(self)
-		#print "EJGL: detached from ship:", pShip.GetName()
+		#print __name__, ".", self.name,": detached from ship:", pShip.GetName()
 
 
 	def PhaserStartedHitting(self, pEvent):
 		pPhaser = App.Weapon_Cast(pEvent.GetSource())
-		#print "EJGL: phasers started hitting"
-		if pPhaser == None:
-			#print "EJGL: cancelling... no phaser weapon"
+		#print __name__, ": phasers started hitting"
+		if pPhaser == None or not hasattr(pPhaser, "GetParentShip"):
+			#print __name__, " (Start): cancelling... no phaser weapon"
 			return
 		pShip = pPhaser.GetParentShip()
-		try:
-			pInstance = FoundationTech.dShips[pShip.GetName()]
-			if pInstance == None:
-				#print "EJGL: cancelling, no FTech Ship Instance obj"
-				return
-		except:
-			#print "EJGL: cancelling, error in try found..."
+		if not pShip or not hasattr(pShip, "GetObjID"):
 			return
 
-		if not pInstance.__dict__.has_key("GraviticLance"):
+		iShipID = pShip.GetObjID()
+		if iShipID is None or iShipID == App.NULL_ID:
+			return
+
+		pShip = GetWellShipFromID(iShipID)
+		if not pShip:
+			return
+
+		pInstance = findShipInstance(pShip)
+		if not pInstance:
+			#print __name__, ": (Start) cancelling, no FTech Ship Instance obj"
+			return
+
+		if not pInstance.__dict__.has_key(self.name):
 			#print "EJGL: cancelling, ship does not have EJGL equipped..."
 			return
 
-		if pInstance.__dict__['GraviticLance'].has_key("Immune") and pInstance.__dict__['GraviticLance']["Immune"] < 0:
+		if pInstance.__dict__[self.name].has_key("Immune") and pInstance.__dict__[self.name]["Immune"] < 0:
 			#print "EJGL: cancelling, ship is immune but NOT meant to have EJGL equipped..."
 			return
 		
-		if pInstance.__dict__['GraviticLance'].has_key("Beams") and len(pInstance.__dict__['GraviticLance']["Beams"]) > 0:
+		if pInstance.__dict__[self.name].has_key("Beams") and len(pInstance.__dict__[self.name]["Beams"]) > 0:
 			#print "EJGL: I have beams key, verifying the phaser is among them"
-			lBeamNames = pInstance.__dict__['GraviticLance']["Beams"]		
+			lBeamNames = pInstance.__dict__[self.name]["Beams"]		
 
 			if not pPhaser.GetName() in lBeamNames:
 				#print "EJGL: cancelling, ship has EJGL equipped but not for that phaser..."
@@ -177,13 +186,25 @@ class GraviticLance(FoundationTech.TechDef):
 		#	print "EJGL: I do not have beams key, I will assume all phasers have gravitic lance ability"
 
 		pTarget = App.ShipClass_Cast(pEvent.GetDestination())
-		if pTarget == None:
-			#print "EJGL: cancelling, no target..."
+		if pTarget == None or not hasattr(pTarget, "GetObjID"):
+			#print __name__, " (Start): cancelling, no target..."
 			return
+
+		iTargetID = pTarget.GetObjID()
+		if iTargetID is None or iTargetID == App.NULL_ID:
+			#print __name__, " (Start): cancelling, no target ID..."
+			return
+
+		pTarget = GetWellShipFromID(iTargetID)
+		if not pTarget:
+			return
+
 		sTargetName = pTarget.GetName()
+		sPhaserName = pPhaser.GetName()
+		sPhaserFQDN = str(iShipID) + sPhaserName # I see an issue with only using the phaser name, you could have two ships with this tech fire from a phaser with identical name at the same target
 		#print "EJGL: Mark 1, Target is:", sTargetName
-		if not pInstance.__dict__['GraviticLance'].has_key(sTargetName):
-			pInstance.__dict__['GraviticLance'][sTargetName] = {"HittingNames": [], "Target": pTarget}
+		if not pInstance.__dict__[self.name].has_key(sTargetName):
+			pInstance.__dict__[self.name][sTargetName] = {"HittingNames": [], "Target": pTarget}
 
 			pGame = App.Game_GetCurrentGame()
 			pEpisode = pGame.GetCurrentEpisode()
@@ -194,65 +215,92 @@ class GraviticLance(FoundationTech.TechDef):
 			pEvent.SetEventType(eType)
 			pEvent.SetDestination(pMission)
 			pEvent.SetString(pShip.GetName()+">|<"+sTargetName)
+
 			pTimer = App.TGTimer_Create()
-			if not pInstance.__dict__['GraviticLance'].has_key("Time") or pInstance.__dict__['GraviticLance']["Time"] <= 0.0:
-				pInstance.__dict__['GraviticLance']["Time"] = 0.25
-			pTimer.SetTimerStart( App.g_kUtopiaModule.GetGameTime()+pInstance.__dict__['GraviticLance']["Time"] )
+			if not pInstance.__dict__[self.name].has_key("Time") or pInstance.__dict__[self.name]["Time"] <= 0.0:
+				pInstance.__dict__[self.name]["Time"] = 0.25
+
+			pTimer.SetTimerStart( App.g_kUtopiaModule.GetGameTime()+pInstance.__dict__[self.name]["Time"] )
 			pTimer.SetDelay(0)
 			pTimer.SetDuration(0)
 			pTimer.SetEvent(pEvent)
 			App.g_kTimerManager.AddTimer(pTimer)
 
-			pInstance.__dict__['GraviticLance'][sTargetName]['Timer'] = pTimer
-			#print "EJGL: first time hitting target, setting up data."
+			pInstance.__dict__[self.name][sTargetName]['Timer'] = pTimer
+			#print __name__, " (Start): first time hitting target, setting up data."
 
 		#however we still need to store their names so that the events are properly handled
-		if not pPhaser.GetName() in pInstance.__dict__['GraviticLance'][sTargetName]['HittingNames']:
-			pInstance.__dict__['GraviticLance'][sTargetName]['HittingNames'].append( pPhaser.GetName() )
-			#print "EJGL: adding phaser", pPhaser.GetName(), "to Target hitting list."
+		if not sPhaserFQDN in pInstance.__dict__[self.name][sTargetName]['HittingNames']:
+			pInstance.__dict__[self.name][sTargetName]['HittingNames'].append( sPhaserFQDN )
+			#print __name__, " (Start): adding phaser", sPhaserFQDN, "to Target hitting list."
+
 	def PhaserStoppedHitting(self, pEvent):
 		pPhaser = App.Weapon_Cast(pEvent.GetSource())
-		if pPhaser == None:
-			#print "EJGL (Stop): cancelling, no phaser..."
+		#print __name__, ": phasers stopped hitting"
+		if pPhaser == None or not hasattr(pPhaser, "GetParentShip"):
+			#print __name__, " (Stop): cancelling... no phaser weapon"
 			return
 		pShip = pPhaser.GetParentShip()
-		try:
-			pInstance = FoundationTech.dShips[pShip.GetName()]
-			if pInstance == None:
-				#print "EJGL (Stop): cancelling, no FTech Ship Instance obj"
-				return
-		except:
-			#print "EJGL (Stop): cancelling, error in try found."
-			return
-		if not pInstance.__dict__.has_key("GraviticLance"):
-			#print "EJGL (Stop): ship does not have EJGL equipped."
+		if not pShip or not hasattr(pShip, "GetObjID"):
 			return
 
-		if pInstance.__dict__['GraviticLance'].has_key("Immune") and pInstance.__dict__['GraviticLance']["Immune"] < 0:
+		iShipID = pShip.GetObjID()
+		if iShipID is None or iShipID == App.NULL_ID:
+			return
+
+		pShip = GetWellShipFromID(iShipID, ignoreDying=1)
+		if not pShip:
+			return
+
+		pInstance = findShipInstance(pShip)
+		if not pInstance:
+			#print __name__, " (Stop): cancelling, no FTech Ship Instance obj"
+			return
+
+		if not pInstance.__dict__.has_key(self.name):
+			#print __name__, " (Stop): ship does not have ", self.name, " equipped."
+			return
+
+		if pInstance.__dict__[self.name].has_key("Immune") and pInstance.__dict__[self.name]["Immune"] < 0:
 			#print "EJGL: cancelling, ship is immune but NOT meant to have EJGL equipped..."
 			return
 	
 		pTarget = App.ShipClass_Cast(pEvent.GetDestination())
-		if pTarget == None:
-			#print "EJGL (Stop): cancelling, no target"
+		if pTarget == None or not hasattr(pTarget, "GetObjID"):
+			#print __name__, " (Stop): cancelling, no target..."
 			return
+
+		iTargetID = pTarget.GetObjID()
+		if iTargetID is None or iTargetID == App.NULL_ID:
+			#print __name__, " (Stop): cancelling, no target ID..."
+			return
+
+		pTarget = GetWellShipFromID(iTargetID, ignoreDying=1)
+		if not pTarget:
+			return
+
 		sTargetName = pTarget.GetName()
+		sPhaserName = pPhaser.GetName()
+		sPhaserFQDN = str(iShipID) + sPhaserName
 		#print "EJGL (Stop): Mark 1, target is:", sTargetName
-		if not pInstance.__dict__['GraviticLance'].has_key(sTargetName):
+		if not pInstance.__dict__[self.name].has_key(sTargetName):
 			# if: ship was just destroyed by this phaser fire, thus her entry deleted from our data dict,
 			# but phaser was still hitting her and stopped after the destruction. So we simply return here...
 			return
-		if pPhaser.GetName() in pInstance.__dict__['GraviticLance'][sTargetName]['HittingNames']:
-			pInstance.__dict__['GraviticLance'][sTargetName]['HittingNames'].remove( pPhaser.GetName() )
-			#print "EJGL (Stop): removing phaser", pPhaser.GetName(), "from target hitting list."
 
-		if len(pInstance.__dict__['GraviticLance'][sTargetName]['HittingNames']) <= 0:
+		if sPhaserFQDN in pInstance.__dict__[self.name][sTargetName]['HittingNames']:
+			pInstance.__dict__[self.name][sTargetName]['HittingNames'].remove( sPhaserFQDN )
+			#print __name__, " (Stop): removing phaser", sPhaserFQDN, "from target hitting list."
+
+		if len(pInstance.__dict__[self.name][sTargetName]['HittingNames']) <= 0:
 			#instance-secs hitting sequence aborted... cancel it.
-			if pInstance.__dict__['GraviticLance'][sTargetName].has_key('Timer') and hasattr(pInstance.__dict__['GraviticLance'][sTargetName]['Timer'], "GetObjID"):
-				App.g_kTimerManager.DeleteTimer(pInstance.__dict__['GraviticLance'][sTargetName]['Timer'].GetObjID())
-			pInstance.__dict__['GraviticLance'][sTargetName]['Timer'] = None
-			del pInstance.__dict__['GraviticLance'][sTargetName]
-			#print "EJGL (Stop): instance-sec hitting sequence aborted..."
+			if pInstance.__dict__[self.name][sTargetName].has_key('Timer'):
+				if hasattr(pInstance.__dict__[self.name][sTargetName]['Timer'], "GetObjID"):
+					App.g_kTimerManager.DeleteTimer(pInstance.__dict__[self.name][sTargetName]['Timer'].GetObjID())
+				pInstance.__dict__[self.name][sTargetName]['Timer'] = None
+
+			del pInstance.__dict__[self.name][sTargetName]
+			#print "FSTB (Stop): instance-sec hitting sequence aborted..."
 
 	def HandlePowerDrop(self, pEvent):
 		sMasterStr = pEvent.GetCString()
@@ -261,31 +309,43 @@ class GraviticLance(FoundationTech.TechDef):
 		sTargetName = lStrs[1]
 		#print "EJGL (HIK): Handle Power Drop called..."
 		#print "EJGL (HIK): Ship:", sShipName, " ||Target:", sTargetName
-		try:
-			pInstance = FoundationTech.dShips[sShipName]
-			if pInstance == None:
-				#print "EJGL (HIK): cancelling, no FTech Ship Instance obj"
-				return
-		except:
-			#print "EJGL (HIK): cancelling, error at try found..."
+
+		pInstance = findShipInstance(None, sShipName)
+		if not pInstance:
+			#print __name__, " (HSD): cancelling, no FTech Ship Instance obj"
 			return
-		if not pInstance.__dict__.has_key("GraviticLance"):
+
+		if not pInstance.__dict__.has_key(self.name):
 			#print "EJGL (HIK): cancelling, ship is not equipped with EJGL..."
 			return
 
-		if pInstance.__dict__['GraviticLance'].has_key("Immune") and pInstance.__dict__['GraviticLance']["Immune"] < 0:
+		if pInstance.__dict__[self.name].has_key("Immune") and pInstance.__dict__[self.name]["Immune"] < 0:
 			#print "EJGL: cancelling, ship is immune but NOT meant to have EJGL equipped..."
 			return
 
-		if pInstance.__dict__['GraviticLance'].has_key(sTargetName):
+		if pInstance.__dict__[self.name].has_key(sTargetName):
 			#okydokey, we did it. Drain the target energy, then delete our data about it.
-			pTarget = pInstance.__dict__['GraviticLance'][sTargetName]['Target']
+			pTarget = None
+			iHaveTarget = (pInstance.__dict__[self.name][sTargetName].has_key('Target'))
+			if iHaveTarget:
+				pTarget = pInstance.__dict__[self.name][sTargetName]['Target']
+			forgetIt = 1
+			if pTarget:
+				iTargetID = pTarget.GetObjID()
+				if iTargetID != None and iTargetID != App.NULL_ID:
+					pTarget = GetWellShipFromID(iTargetID)
+					if pTarget:
+						forgetIt = 0
+						self.TheYield(pTarget, pInstance, pEvent)
 
-			self.TheYield(pTarget, pInstance, pEvent)
+			if pInstance.__dict__[self.name][sTargetName].has_key('Timer'):
+				if hasattr(pInstance.__dict__[self.name][sTargetName]['Timer'], "GetObjID"):
+					App.g_kTimerManager.DeleteTimer(pInstance.__dict__[self.name][sTargetName]['Timer'].GetObjID())
+				pInstance.__dict__[self.name][sTargetName]['Timer'] = None
 
-			App.g_kTimerManager.DeleteTimer(pInstance.__dict__['GraviticLance'][sTargetName]['Timer'].GetObjID())
-			pInstance.__dict__['GraviticLance'][sTargetName]['Timer'] = None
-			del pInstance.__dict__['GraviticLance'][sTargetName]
+			if iHaveTarget:
+				del pInstance.__dict__[self.name][sTargetName]['Target']
+			del pInstance.__dict__[self.name][sTargetName]
 			#print "EJGL (HIK): instance-sec hitting sequence completed, draining target power."
 
 	def IsDrainYield(self): # Added this in case someone ever makes a Breen Drainer Beam and doesn't code it properly, so this tech doesn't crash
@@ -300,35 +360,38 @@ class GraviticLance(FoundationTech.TechDef):
 		sScript     = pShip.GetScript()
 		sShipScript = string.split(sScript, ".")[-1]
 
-		pShipModule =__import__(sScript)
+		pShipModule = None
+		try:
+			pShipModule =__import__(sScript)
+		except:
+			pShipModule = None
+			traceback.print_exc()
+
+		if not pShipModule:
+			return
+
 		pShields = pShip.GetShields()
 		if sShipScript in lImmuneShips:
 			return
 
-		pShipInst = None
 		vibechecker = 1
-		try: 
-			pShipInst = FoundationTech.dShips[pShip.GetName()]
-			if pShipInst == None:
-				#print "After looking, no instance for Ship:", pShip.GetName(), "How odd..."
-				vibechecker = 0
-		except:
-			#print "Error, so no instance for Ship:", pShip.GetName(), "How odd..."
-			vibechecker = 0
-		if vibechecker == 1 and pShipInst.__dict__.has_key('GraviticLance') and pShipInst.__dict__['GraviticLance'].has_key("Immune") and not pShipInst.__dict__['GraviticLance']["Immune"] == 0:
+		pShipInst = findShipInstance(pShip)
+		if pShipInst == None:
+			vibechecker =0
+
+		if vibechecker == 1 and pShipInst.__dict__.has_key(self.name) and pShipInst.__dict__[self.name].has_key("Immune") and not pShipInst.__dict__[self.name]["Immune"] == 0:
 			return
 
 
-		if not pInstance.__dict__['GraviticLance'].has_key("RadDepletionStrength"):
-			pInstance.__dict__['GraviticLance']["RadDepletionStrength"] = 100.0 # energy
-		iPower = pInstance.__dict__['GraviticLance']["RadDepletionStrength"]
+		if not pInstance.__dict__[self.name].has_key("RadDepletionStrength"):
+			pInstance.__dict__[self.name]["RadDepletionStrength"] = 100.0 # energy
+		iPower = pInstance.__dict__[self.name]["RadDepletionStrength"]
 
 		pSeq = App.TGSequence_Create()
-		#print "depleting energy"
 
-		if not pInstance.__dict__['GraviticLance'].has_key("TimeEffect") or pInstance.__dict__['GraviticLance']["TimeEffect"] <= 0.0:
-			pInstance.__dict__['GraviticLance']["TimeEffect"] = 5.0 # seconds
-		iTime = pInstance.__dict__['GraviticLance']["TimeEffect"]
+		if not pInstance.__dict__[self.name].has_key("TimeEffect") or pInstance.__dict__[self.name]["TimeEffect"] <= 0.0:
+			pInstance.__dict__[self.name]["TimeEffect"] = 5.0 # seconds
+		iTime = pInstance.__dict__[self.name]["TimeEffect"]
 		while(iTime >= 0):
 			pAction	= App.TGScriptAction_Create(__name__, "Update", self, pShip.GetObjID(), iPower)
 			pSeq.AppendAction(pAction, 0.1)
@@ -341,9 +404,38 @@ class GraviticLance(FoundationTech.TechDef):
 		return App.ShipClass_GetObjectByID(None, shipID)
 
 	def GetPower(self, shipID):
-		pShip = self.GetShip(shipID)
+		pShip = GetWellShipFromID(shipID) #self.GetShip(shipID)
 		if pShip:
 			return pShip.GetPowerSubsystem()
+
+def GetWellShipFromID(pShipID, ignoreDying=0):
+	pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), pShipID)
+	if not pShip:
+		return None
+
+	if ignoreDying == 0 and (pShip.IsDead() or pShip.IsDying()):
+		return None
+
+	return pShip
+
+def findShipInstance(pShip, alternateName=None):
+	debug(__name__ + ", findShipInstance")
+	pInstance = None
+	try:
+		myName = None
+		if alternateName == None:
+			if not pShip:
+				return pInstance
+			myName = pShip.GetName()
+		else:
+			myName = alternateName
+		if FoundationTech.dShips.has_key(myName):
+			pInstance = FoundationTech.dShips[myName]
+	except:
+		pInstance = None
+		pass
+
+	return pInstance
 
 def Update(pAction, self, shipID, iPower):
 	pPowerSubsystem = self.GetPower(shipID)
@@ -352,6 +444,8 @@ def Update(pAction, self, shipID, iPower):
 			pPowerSubsystem.AddPower(-iPower)
 		else:
 			pPowerSubsystem.StealPower(iPower)
+	else:
+		return 1
 	return 0
 		
 oGraviticLance = GraviticLance("GraviticLance")
