@@ -2,20 +2,20 @@
 
 import Foundation
 ShipDef = Foundation.ShipDef
-Federation = Foundation.Federation
+Romulan = Foundation.Romulan
 
 class ZZAttackDef(ShipDef):
     
     def __init__(self, abbrev, species, dict):
-        dict['race'] = Federation
+        dict['race'] = Romulan
         ShipDef.__init__(self, abbrev, species, dict)
 
     
-    def StrFriendlyAI(self):
+    def StrFriendlyAI(self, *args):
         return 'ZZVeritexFAI'
 
     
-    def StrEnemyAI(self):
+    def StrEnemyAI(self, *args):
         return 'ZZVeritexEAI'
 
 
