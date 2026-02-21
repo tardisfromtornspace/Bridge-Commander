@@ -1,7 +1,7 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE FOUNDATION LGPL LICENSE AS WELL
 # AndromedanArmor.py
-# 28th January 2026, by Alex SL Gato, based on a Cristalline armour adjusted for colors, fixed by Alex SL Gato (CharaToLoki), modified from Greystar's (which was likely an ftb AblativeArmour script copy)
+# 21st February 2026, by Alex SL Gato, based on a Cristalline armour adjusted for colors, fixed by Alex SL Gato (CharaToLoki), modified from Greystar's (which was likely an ftb AblativeArmour script copy)
 # Also based on SlowStart.py by Alex SL Gato.
 #
 # Meant to be used alongside ftb AblativeArmour, in fact, it requires it to work properly. It also requires to have the FIX-AblativeArmour1dot0 too to work properly.
@@ -42,7 +42,7 @@ Foundation.ShipDef.saturn.dTechs = {
 ##################################
 #
 MODINFO = { "Author": "\"ftb Team\", \"Apollo\", \"Greystar\", \"Alex SL Gato\" (andromedavirgoa@gmail.com)",
-	    "Version": "0.31",
+	    "Version": "0.32",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -303,7 +303,10 @@ if theArmourParentInherited != None:
 			
 			
 		def OnDefense(self, pShip, pInstance, oYield, pEvent):
-			
+
+			if not pShip or pShip.IsDead() or pShip.IsDying():
+				return
+
 			repair = pInstance.__dict__[self.lName]
 
 			#print __name__, "'s ArmorDef", pShip.GetName(), repair, pEvent.GetDamage()
