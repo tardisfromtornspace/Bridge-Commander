@@ -1,6 +1,6 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
-# 18th February 2026, by Alex SL Gato (CharaToLoki)
+# 21st February 2026, by Alex SL Gato (CharaToLoki)
 #         Based on SGAsgardBeamWeapon by Alex SL Gato, which was based on BorgAdaptation.py and PhasedTorp.py by Alex SL Gato, which were based on the Foundation import function by Dasher; the Shield.py scripts and KM Armour scripts and FoundationTechnologies team's PhasedTorp.py, on ATPFunctions by Apollo.
 #         Also based on MEShields by Alex SL Gato, which was based on SGShields by Alex SL Gato, which was strongly based on Shields.py by the FoundationTechnologies team, ATPFunctions by Apollo, HelmMenuHandlers from the STBC Team, and MEGIonWeapon by Alex SL Gato.
 #         Also upon noticing how App.WEAPON_HIT did not make the tractor work, based slightly on MLeo Daalder's Tractordef, but using Attach instead of AttachShip because of weird tech check errors.
@@ -132,7 +132,7 @@ import nt
 import string
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-            "Version": "0.21",
+            "Version": "0.22",
             "License": "LGPL",
             "Description": "Read the small title above for more info"
             }
@@ -1108,51 +1108,52 @@ try:
 						if myHull == None:
 							myHull = pTarget.GetHull()
 						if myHull:
-							global torpCountersForInstance
-
-							pEvent1 = TGFakeTractorWeaponHitEvent_Create() # This gives us a pointer, it has no arguments, but it is our "fake" event
-							pEventSource = pTempTorp
-							pEventDestination = pTarget
-
-							pEvent1.SetSource(pEventSource)
-							pEvent1.SetDestination(pEventDestination)
-							pEvent1.SetEventType(App.ET_WEAPON_HIT)
-
-							pEvent1.SetFiringObject(pAttacker)
-							pEvent1.SetTargetObject(pTarget)
-
 							if myHullPos == None:
 								myHullPos = NiPoint3ToTGPoint3(myHull.GetPosition())
-
-							pEvent1.SetObjectHitPoint(myHullPos)
-
-							pTargetPositionV = pTarget.GetWorldLocation()
-							pTargetPositionVI = TGPoint3ToNiPoint3(pTargetPositionV, -1.0)
-							pTargetNode = pTarget.GetNiObject()
-
-							pEvent1.SetObjectHitNormal(pTargetPositionVI) 
-							pEvent1.SetWorldHitPoint(myHullPos)
-							pTargetPositionVW = TGPoint3ToNiPoint3(App.TGModelUtils_LocalToWorldUnitVector(pTargetNode, pTargetPositionVI), 1.0)
-							pEvent1.SetWorldHitNormal(pTargetPositionVW)
-
-							eCondition = 1.0
-							if myHull:
-								eCondition = myHull.GetConditionPercentage()
-							pEvent1.SetCondition(eCondition)
-
-							valPlus = torpCountersForInstance + 1
-							pEvent1.SetWeaponInstanceID(valPlus) # Not needed... at least, I am not aware of any scripts handling it for torpedo defense
-
-							pEvent1.SetRadius(fRadius)
-							pEvent1.SetDamage(finalTorpDamage)
-							pEvent1.SetHullHit(1)
-							pEvent1.SetFiringPlayerID(0)
 
 							affectedSys, nonTargetSys = FindAllAffectedSystems(pTarget, myHullPos, fRadius)
 							AdjustListedSubsystems(pTarget, affectedSys, nonTargetSys, -finalTorpDamage, len(affectedSys) + 1, 1)
 
-							# Fourth part, finally using the pEvent for something! This is also so more armours can work with these collisions, and not only one or two.
-							if pTempTorp:
+							if pTargetInstance and pTempTorp:
+								global torpCountersForInstance
+
+								pEvent1 = TGFakeTractorWeaponHitEvent_Create() # This gives us a pointer, it has no arguments, but it is our "fake" event
+								pEventSource = pTempTorp
+								pEventDestination = pTarget
+
+								pEvent1.SetSource(pEventSource)
+								pEvent1.SetDestination(pEventDestination)
+								pEvent1.SetEventType(App.ET_WEAPON_HIT)
+
+								pEvent1.SetFiringObject(pAttacker)
+								pEvent1.SetTargetObject(pTarget)
+
+								pEvent1.SetObjectHitPoint(myHullPos)
+
+								pTargetPositionV = pTarget.GetWorldLocation()
+								pTargetPositionVI = TGPoint3ToNiPoint3(pTargetPositionV, -1.0)
+								pTargetNode = pTarget.GetNiObject()
+
+								pEvent1.SetObjectHitNormal(pTargetPositionVI) 
+								pEvent1.SetWorldHitPoint(myHullPos)
+								pTargetPositionVW = TGPoint3ToNiPoint3(App.TGModelUtils_LocalToWorldUnitVector(pTargetNode, pTargetPositionVI), 1.0)
+								pEvent1.SetWorldHitNormal(pTargetPositionVW)
+
+								eCondition = 1.0
+								if myHull:
+									eCondition = myHull.GetConditionPercentage()
+								pEvent1.SetCondition(eCondition)
+
+								valPlus = torpCountersForInstance + 1
+								pEvent1.SetWeaponInstanceID(valPlus) # Not needed... at least, I am not aware of any scripts handling it for torpedo defense
+
+								pEvent1.SetRadius(fRadius)
+								pEvent1.SetDamage(finalTorpDamage)
+								pEvent1.SetHullHit(1)
+								pEvent1.SetFiringPlayerID(0)
+
+								# Fourth part, finally using the pEvent for something! This is also so more armours can work with these collisions, and not only one or two.
+							
 								pTargetInstance.DefendVSTorp(pTarget, pEvent1, pTempTorp)
 
 				except:
