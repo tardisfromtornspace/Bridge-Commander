@@ -3,10 +3,13 @@ import Quickbattle
 import MissionLib
 
 def CreateAI(pShip):
+        pTargets        = MissionLib.GetFriendlyGroup()
+        if not pTargets.GetNameTuple():
+                pTargets.AddName("This ship probably wont exist")
 	#########################################
 	# Creating CompoundAI Attack at (150, 92)
 	import AI.Compound.BorgAttack
-	pAttack = AI.Compound.BorgAttack.CreateAI(pShip, MissionLib.GetFriendlyGroup(), Difficulty = 1.0, MaxFiringRange = 300.0, FollowTargetThroughWarp = 1, ChooseSubsystemTargets = 1, AggressivePulseWeapons = 0, DisableBeforeDestroy = 0, InaccurateTorps = 1, SmartWeaponBalance = 0, SmartShields = 1, UseSideArcs = 1, HighPower = 1, PowerManagement = 1)
+	pAttack = AI.Compound.BorgAttack.CreateAI(pShip, pTargets, Difficulty = 1.0, MaxFiringRange = 300.0, FollowTargetThroughWarp = 1, ChooseSubsystemTargets = 1, AggressivePulseWeapons = 0, DisableBeforeDestroy = 0, InaccurateTorps = 1, SmartWeaponBalance = 0, SmartShields = 1, UseSideArcs = 1, HighPower = 1, PowerManagement = 1)
 	# Done creating CompoundAI Attack
 	#########################################
 	#########################################
