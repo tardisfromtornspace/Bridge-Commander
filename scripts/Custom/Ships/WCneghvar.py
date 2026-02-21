@@ -12,7 +12,7 @@ import App
 #                                                                                     #
 abbrev = 'WCneghvar'
 iconName = 'WCneghvar'
-longName = 'Neghvar'
+longName = "WC Negh'Var"
 shipFile = 'WCneghvar' 
 menuGroup = 'Klingon Ships'
 playerMenuGroup = 'Klingon Ships'
@@ -43,11 +43,11 @@ Foundation.ShipDef.WCneghvar.fMaxWarp = 8.68
 #######################################################################################
 #                                                                                     #
 # Uncomment these if you have TGL  
-Foundation.ShipDef.WCneghvar.hasTGLName = 1
-Foundation.ShipDef.WCneghvar.hasTGLDesc = 1
+# Foundation.ShipDef.WCneghvar.hasTGLName = 1
+# Foundation.ShipDef.WCneghvar.hasTGLDesc = 1
 
 # Otherwise, uncomment this and type something in:
-# Foundation.ShipDef.WCneghvar.desc = 'No Description Available'
+Foundation.ShipDef.WCneghvar.desc = "Negh'Var version by WileyCoyote."
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

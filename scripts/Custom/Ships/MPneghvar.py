@@ -12,7 +12,7 @@ import App
 #                                                                                     #
 abbrev = 'MPneghvar'
 iconName = 'MPneghvar'
-longName = 'Neghvar'
+longName = "MP Negh'Var"
 shipFile = 'MPneghvar' 
 menuGroup = 'Klingon Ships'
 playerMenuGroup = 'Klingon Ships'
