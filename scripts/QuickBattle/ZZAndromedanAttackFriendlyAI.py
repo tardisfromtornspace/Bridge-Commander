@@ -3,7 +3,10 @@ import MissionLib
 import Quickbattle
 
 def CreateAI(pShip):
-        pTargets        = MissionLib.GetEnemyGroup()
+        pTargets        = grabOppositeTeamsQB(pShip)
+        if not pTargets:
+		return None
+
         if not pTargets.GetNameTuple():
                 pTargets.AddName("This ship probably wont exist")
 	#########################################
@@ -34,3 +37,46 @@ def CreateAI(pShip):
 	# Done creating ConditionalAI TargetInRange
 	#########################################
 	return pTargetInRange
+
+def grabOppositeTeamsQB(pShip):
+	if not pShip or not hasattr(pShip, "GetObjID"):
+		return None
+
+	iShipID = pShip.GetObjID()
+	if iShipID == None or iShipID == App.NULL_ID:
+		return None
+	
+	pShip = App.ShipClass_GetObjectByID(None, iShipID)
+	if not pShip:
+		return None
+
+	pMission        = MissionLib.GetMission()
+
+	pFriendlies     = None
+	pEnemies        = None
+	pNeutrals       = None
+	pNeutrals2      = None
+	pTractors       = None
+	myGroup = None
+	if pMission:
+		pcName = pShip.GetName()
+		pFriendlies     = pMission.GetFriendlyGroup() 
+		pEnemies        = pMission.GetEnemyGroup() 
+		pNeutrals       = pMission.GetNeutralGroup()
+		pTractors       = pMission.GetTractorGroup()	
+		pNeutrals2      = App.ObjectGroup_FromModule("Custom.QuickBattleGame.QuickBattle", "pNeutrals2")
+	
+		if pFriendlies and pEnemies and pFriendlies.IsNameInGroup(pcName):
+			myGroup = pEnemies
+		if pEnemies and pFriendlies and pEnemies.IsNameInGroup(pcName):
+			myGroup = pFriendlies
+		if pNeutrals and pNeutrals2 and pNeutrals.IsNameInGroup(pcName):
+			myGroup = pNeutrals2
+		if pNeutrals2 and pNeutrals and pNeutrals2.IsNameInGroup(pcName):
+			myGroup = pNeutrals
+		if pTractors and pTractors.IsNameInGroup(pcName):
+			myGroup = pTractors
+		if pEnemies and myGroup == None:
+			myGroup = pEnemies
+
+	return myGroup
