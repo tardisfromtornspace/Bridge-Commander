@@ -1,4 +1,6 @@
 == Changelog ==
+1.0.16
+* Updated AdvArmourTechThree to 1.94, cleaned code more and fixed potential issue with uninvicibilitators.
 1.0.15
 * Updated AdvArmourTechThree to 1.9, cleaned code a bit and fixed potential issue with lights.
 1.0.14

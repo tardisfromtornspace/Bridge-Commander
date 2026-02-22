@@ -10,7 +10,7 @@ import traceback
 from bcdebug import debug
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-            "Version": "1.93",
+            "Version": "1.94",
             "License": "LGPL",
             "Description": "Read info below for better understanding"
             }
@@ -545,7 +545,8 @@ def AdvArmorPlayer(aShip=None, isPlayer=1): # For player
 			AdvArmorRecord[iShipID]=0
 			pShip.SetVisibleDamageRadiusModifier(vd_rad_mod[iShipID])
 			pShip.SetVisibleDamageStrengthModifier(vd_str_mod[iShipID])
-			if (not isPlayer) or pShip.IsInvincible():
+			#if (not isPlayer) or pShip.IsInvincible():
+			if pShip.IsInvincible():
 				pShip.SetInvincible(0)
 		return
 	armor_pwr=batt_chg*armor_ratio
@@ -572,7 +573,8 @@ def AdvArmorPlayer(aShip=None, isPlayer=1): # For player
 			pShip.SetVisibleDamageRadiusModifier(vd_rad_mod[iShipID])
 			pShip.SetVisibleDamageStrengthModifier(vd_str_mod[iShipID])
 			pPower.SetMainBatteryPower(armor_pwr/armor_ratio)
-			if (not isPlayer) or pShip.IsInvincible():
+			#if (not isPlayer) or pShip.IsInvincible():
+			if pShip.IsInvincible():
 				pShip.SetInvincible(0)
 
 	return
@@ -699,7 +701,8 @@ def AdvArmorTogglePlayer(pObject, pEvent, aShip=None, isPlayer=1):
 				ReplaceModel(pShip, sOriginalShipScript[iShipID])
 			pShip.SetVisibleDamageRadiusModifier(vd_rad_mod[iShipID])
 			pShip.SetVisibleDamageStrengthModifier(vd_str_mod[iShipID])
-			if (not isPlayer) or pShip.IsInvincible():
+			#if (not isPlayer) or pShip.IsInvincible():
+			if pShip.IsInvincible():
 				pShip.SetInvincible(0)
 	else:
 		pShip.SetInvincible(1)

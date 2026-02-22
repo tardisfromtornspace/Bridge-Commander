@@ -3,7 +3,7 @@ Modifications made by Alex SL Gato
 Special Thanks to 𝕟𝕒𝕣𝕣𝕠𝕨𝕔𝕨𝕪𝕗𝕖#0007 for driving me to complete this mod for their Voyager-J mod, as well as for some help with the PhasedTorp scripts.
 
 == Changelog ==
-
+1.5.4 - Updated AdvArmourTechThree to 1.94, cleaned code more and fixed potential issue with uninvicibilitators.
 1.5.3 - Updated AdvArmourTechThree to 1.9, cleaned code a bit and fixed potential issue with lights.
 1.5.2 - Updated AdvArmourTechThree from 1.84 to 1.85, fixed conflict with DS9FX sometimes resetting visible damage.
 1.5.1 - Updated FIX-DS9FXbelow1dot2 to be a bit more agnostic towards the actual value of SpeciesToTorp.PHASEDPLASMA

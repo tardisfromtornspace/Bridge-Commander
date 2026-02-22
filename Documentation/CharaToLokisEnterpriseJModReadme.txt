@@ -1,4 +1,6 @@
 == Changelog ==
+1.2.23 - Fixing:
+   * Updated AdvArmourTechThree to 1.94, cleaned code more and fixed potential issue with uninvicibilitators.
 1.2.22 - Fixing:
    * Updated Gravitic Lance to 1.55, making the code cleaner and slightly better at handling exceptions
 1.2.21 - Fixing:
