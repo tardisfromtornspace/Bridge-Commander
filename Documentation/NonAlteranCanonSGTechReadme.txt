@@ -1,4 +1,7 @@
 == Changelog ==
+1.3.0 -
+   Fixes:
+   * Updated TWEAK-NanoFXExpFX20240830 to version 1.1, now it should also fix certain death explosions and collision effects.
 1.2.9 -
    Fixes:
    * Updated SGReplicator adaptation to 1.34, making its resistance tech exist as a token tech, to fix log warnings.
