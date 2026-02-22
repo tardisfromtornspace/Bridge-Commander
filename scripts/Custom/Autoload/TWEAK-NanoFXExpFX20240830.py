@@ -1,4 +1,4 @@
-# VERSION 1.1
+# VERSION 1.1.1
 # 22nd February 2026
 
 import App
@@ -60,29 +60,29 @@ if bEnabled:
 		### Setup ###
 		pShip = App.ShipClass_Cast(pEvent.GetTargetObject())
 		if not pShip or not hasattr(pShip, "GetObjID"):
-			pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.0) 
+			pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.5) 
 			return pSequence
 
 		iShipID = pShip.GetObjID()
 
 		pShip = App.ShipClass_GetObjectByID(None, iShipID)
 		if not pShip:
-			pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.0) 
+			pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.5) 
 			return pSequence
 
 		# little Defiant fix:
 		if pShip.GetRadius() < 0.1: # or else with small objects the game will crash without any warning
-			pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.0) 
+			pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.5) 
 			return pSequence
 
 		myHull = pShip.GetHull()
 		if not myHull or myHull.GetCondition() < 100: # or else with small objects the game will crash without any warning
-			pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.0) 
+			pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.5) 
 			return pSequence		
 
 		pSet = pShip.GetContainingSet()
 		if not pSet:
-			pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.0) 
+			pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.5) 
 			return pSequence
 
 		### Create Nano's Small Explosion Sound ###
@@ -117,7 +117,8 @@ if bEnabled:
 				auxRad = pEvent.GetRadius() / 0.13
 				fSize = (fSize / 2.0) * auxRad
 				if fSize <= 0.1:
-					pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.0) 
+					if actionsAdded <= 0:
+						pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.5) 
 					return pSequence
 
 				if fSize <= 1.0:
@@ -200,7 +201,8 @@ if bEnabled:
 		### Create Nano's Large Explosion ###
 		debug(__name__ + ", CreateNanoWeaponExpSeq, the large explosion")
 		if pAttachTo == None or vEmitPos == None or vEmitDir == None or pEmitFrom == None or fSize <= 0.0:
-			pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.0) 
+			if actionsAdded <= 0:
+				pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.5) 
 			return pSequence
 
 		sFile = ExpFX.GetNanoGfxFile("ExplosionGfx", "scripts/Custom/NanoFXv2/ExplosionFX/Gfx/Explosions/")
@@ -228,7 +230,7 @@ if bEnabled:
 				actionsAdded = actionsAdded + 1
 		###
 		if actionsAdded == 0:
-			pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.0) 
+			pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.5) 
 
 		return pSequence
 
@@ -244,19 +246,19 @@ if bEnabled:
 		pSequence = App.TGSequence_Create()
 
 		if not pShip or not hasattr(pShip, "GetObjID"):
-			pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.0) 
+			pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.5) 
 			return pSequence
 
 		iShipID = pShip.GetObjID()
 
 		pShip = App.ShipClass_GetObjectByID(None, iShipID)
 		if not pShip:
-			pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.0) 
+			pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.5) 
 			return pSequence
 
 		pSet = pShip.GetContainingSet()
 		if not pSet:
-			pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.0) 
+			pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.5) 
 			return pSequence
 
 		###
@@ -270,7 +272,7 @@ if bEnabled:
 			pWarpcoreEmitPos = pWarpcore.GetPosition()
 		else:
 		#if not pWarpcore or not hasattr(pWarpcore, "GetPosition"):
-			pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.0) 
+			pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.5) 
 			return pSequence
 		
 		vEmitDir = App.NiPoint3((App.g_kSystemWrapper.GetRandomNumber(200) - 100) * 0.01, (App.g_kSystemWrapper.GetRandomNumber(200) - 100) * 0.01, (App.g_kSystemWrapper.GetRandomNumber(200) - 100) * 0.01)
@@ -329,7 +331,7 @@ if bEnabled:
 		###
 
 		if actionsAdded == 0:
-			pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.0) 
+			pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.5) 
 
 		return pSequence
 
@@ -344,24 +346,24 @@ if bEnabled:
 		pSequence = App.TGSequence_Create()
 
 		if not pShip or not hasattr(pShip, "GetObjID"):
-			pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.0) 
+			pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.5) 
 			return pSequence
 
 		iShipID = pShip.GetObjID()
 
 		pShip = App.ShipClass_GetObjectByID(None, iShipID)
 		if not pShip:
-			pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.0) 
+			pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.5) 
 			return pSequence
 
 		# prevent GetRandomPointOnModel() from crashing the game on dying/dead ships
 		if pShip.IsDead() or pShip.IsDying():
-			pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.0) 
+			pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.5) 
 			return pSequence
 
 		pSet = pShip.GetContainingSet()
 		if not pSet:
-			pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.0) 
+			pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.5) 
 			return pSequence
 
 		###
@@ -381,15 +383,18 @@ if bEnabled:
 		# little Defiant fix: just don't crash with small objects, please.
 		myHull = pShip.GetHull()
 		if not myHull or myHull.GetCondition() <= 0: # or else with small objects the game will crash without any warning
-			pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.0) 
+			if actionsAdded <= 0:
+				pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.5) 
 			return pSequence
 
 		if pShip.GetRadius() < 0.1 or (myHull.GetCondition() < 100):
-			pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.0) 
+			if actionsAdded <= 0:
+				pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.5) 
 			return pSequence
 
 		if not pEmitFrom:
-			pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.0) 
+			if actionsAdded <= 0:
+				pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.5) 
 			return pSequence
 
 		pExplosion = Custom.NanoFXv2.NanoFX_ScriptActions.CreateControllerFX(sFile, pEmitFrom, pAttachTo, fSize)
@@ -422,7 +427,7 @@ if bEnabled:
 				actionsAdded = actionsAdded + 1
 		###
 		if actionsAdded == 0:
-			pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.0) 
+			pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.5) 
 
 		return pSequence
 
@@ -440,19 +445,19 @@ if bEnabled:
 		### Setup for Effect ###
 
 		if not pShip or not hasattr(pShip, "GetObjID"):
-			pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.0) 
+			pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.5) 
 			return pSequence
 
 		iShipID = pShip.GetObjID()
 
 		pShip = App.ShipClass_GetObjectByID(None, iShipID)
 		if not pShip:
-			pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.0) 
+			pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.5) 
 			return pSequence
 
 		pSet = pShip.GetContainingSet()
 		if not pSet:
-			pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.0) 
+			pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.5) 
 			return pSequence
 
 		iNumPlume = 1
@@ -471,16 +476,19 @@ if bEnabled:
 
 		myHull = pShip.GetHull()
 		if not myHull: # or else with small objects the game will crash without any warning
-			pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.0) 
+			if actionsAdded <= 0:
+				pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.5) 
 			return pSequence
 
 		## prevent GetRandomPointOnModel() from crashing the game on dying/dead ships
 		if pShip.IsDead(): # or pShip.IsDying():
-			pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.0) 
+			if actionsAdded <= 0:
+				pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.5) 
 			return pSequence
 
 		if pShip.GetRadius() < 0.1:
-			pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.0) 
+			if actionsAdded <= 0:
+				pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.5) 
 			return pSequence
 
 		shipRadius = pShip.GetRadius()
@@ -491,12 +499,14 @@ if bEnabled:
 			# prevent GetRandomPointOnModel() from crashing the game on dying/dead ships
 			#if pShip.IsDead() or pShip.IsDying() or not pShip.GetHull() or pShip.GetHull().GetConditionPercentage() == 0:
 			if pShip.IsDead():
-				pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.0) 
+				if actionsAdded <= 0:
+					pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.5) 
 				return pSequence
 
 			pEmitFrom = pShip.GetRandomPointOnModel()
 			if not pEmitFrom:
-				pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.0) 
+				if actionsAdded <= 0:
+					pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.5) 
 				return pSequence
 			fSize  = shipRadius * (App.g_kSystemWrapper.GetRandomNumber(40) + 20) * 0.01
 			sFile = ExpFX.GetNanoGfxFile("ExplosionGfx", "scripts/Custom/NanoFXv2/ExplosionFX/Gfx/Explosions/")
@@ -538,11 +548,13 @@ if bEnabled:
 				# prevent GetRandomPointOnModel() from crashing the game on dying/dead ships
 				#if pShip.IsDead() or pShip.IsDying() or not pShip.GetHull() or pShip.GetHull().GetConditionPercentage() == 0:
 				if pShip.IsDead():
-					pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.0) 
+					if actionsAdded <= 0:
+						pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.5) 
 					return pSequence
 				pEmitFrom = pShip.GetRandomPointOnModel()
 				if not pEmitFrom:
-					pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.0) 
+					if actionsAdded <= 0:
+						pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.5) 
 					return pSequence
 				anotherDmgAction = App.TGScriptAction_Create("Custom.NanoFXv2.NanoFX_ScriptActions", "NanoDamageShip", pShip, pEmitFrom, shipRadius / 3.0, 1200.0)
 				if anotherDmgAction:
@@ -553,7 +565,7 @@ if bEnabled:
 			fExplosionTime = fExplosionTime + 0.5
 
 		if actionsAdded == 0:
-			pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.0) 
+			pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.5) 
 
 		return pSequence
 
@@ -574,7 +586,7 @@ if bEnabled:
 		### Set up Exploding Ship Properties ###
 		pExplodingShip = App.ShipClass_Cast(pShip)
 		if not pExplodingShip or not hasattr(pExplodingShip, "GetObjID"):
-			pFullSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.0) 
+			pFullSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.5) 
 			pFullSequence.Play()
 			return
 
@@ -582,7 +594,7 @@ if bEnabled:
 
 		pExplodingShip = App.ShipClass_GetObjectByID(None, iShipID)
 		if not pExplodingShip:
-			pFullSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.0) 
+			pFullSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.5) 
 			pFullSequence.Play()
 			return
 
@@ -691,7 +703,7 @@ if bEnabled:
 			actionsAdded = actionsAdded + 1
 
 		if actionsAdded == 0:
-			pFullSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.0) 
+			pFullSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.5) 
 
 		#pDestroyTGSequenceAction = App.TGScriptAction_Create("Custom.NanoFXv2.NanoFX_ScriptActions", "DestroyTGSequence", pFullSequence) # This sequence exists but was commented on newer NanoFX, so I'll leave it commented
 		#if pDestroyTGSequenceAction:
@@ -714,8 +726,6 @@ if bEnabled:
 				Custom.NanoFXv2.NanoFX_Lib.g_LightsOff.remove(sName)
 		except:
 			traceback.print_exc()
-
-	ExpFX.NanoDeathSeq = NewNanoDeathSeq
 
 	ExpFX.NanoDeathSeq = NewNanoDeathSeq
 
@@ -761,7 +771,7 @@ if bEnabled:
 		###
 
 		if actionsAdded == 0:
-			pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.0) 
+			pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.5) 
 		pSequence.Play()
 		###
 		pShip.CallNextHandler(pEvent)
