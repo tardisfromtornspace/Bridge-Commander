@@ -1,4 +1,4 @@
-# VERSION 1.1.5
+# VERSION 1.2.0
 # 24th February 2026
 
 import App
@@ -10,7 +10,7 @@ from bcdebug import debug
 TRUE = 1
 FALSE = 0
 
-G_PATCHFIX = 0 # 0 Means we only apply the tweak, 1 that we also apply some extra fixes TO-DO SET IT TO 1 TO HAVE STUFF A BIT MORE FIXED
+G_PATCHFIX = 1 # 0 Means we only apply the tweak, 1 that we also apply some extra fixes
 versionPatch = 20260222 # Our version of the patch
 # If disabled, replace TRUE with FALSE
 bEnabled = FALSE
@@ -53,12 +53,68 @@ if bEnabled:
 	import FoundationTriggers
 	import MissionLib
 
+	g_Threshold = 0.9
+	g_minThreshold = 0.87
+	g_minShield = 1900
+
+	def ShouldDoDebris(pShip, doShields=0.9, minThreshold = 0.87, fDmg=1000):
+		debug(__name__ + ", ShouldDoDebris")
+		shouldDo = 0
+		try:
+			if pShip:
+				hullIgnore = 0
+				if hasattr(pShip, "GetScript"):
+					pShipModule = __import__(pShip.GetScript())
+					if pShipModule != None and hasattr(pShipModule, "GetShipStats"):
+						mDmgRadMod = 1.0
+						mDmgStrMod = 1.0						
+						try:
+							kStats=pShipModule.GetShipStats()
+							iskStatsD = (type(kStats) == type({}))
+							if iskStatsD and (kStats.has_key('DamageRadMod')):
+								mDmgRadMod=kStats['DamageRadMod']
+							elif hasattr(pShipModule, "GetDamageRadMod"):
+								mDmgRadMod=pShipModule.GetDamageRadMod()
+
+							if iskStatsD and (kStats.has_key('DamageStrMod')):
+								mDmgStrMod=kStats['DamageStrMod']
+							elif hasattr(pShipModule, "GetDamageStrMod"):
+								mDmgStrMod=pShipModule.GetDamageStrMod()
+						except:
+							mDmgRadMod = 1.0
+							mDmgStrMod = 1.0
+							traceback.print_exc()
+
+						if mDmgRadMod == 0.0 or mDmgStrMod == 0.0:
+							shouldDo = 0
+						else:
+							shouldDo = 1
+
+				if shouldDo and doShields != 2 and hasattr(pShip, "GetShields"):
+					pShd = pShip.GetShields()
+					if pShd and pShd.IsOn() and not pShd.IsDisabled():
+						breachedShields = 0
+						for shieldDir in range(App.ShieldClass.NUM_SHIELDS):
+							fCurr = pShd.GetCurShields(shieldDir)
+							fMax = pShd.GetMaxShields(shieldDir)
+							if fMax < fDmg or (fMax > 0.0 and fCurr/fMax < minThreshold):
+								breachedShields = breachedShields + 1
+								break
+						if not breachedShields and pShd.GetShieldPercentage() >= doShields:
+							shouldDo = 0
+		except:
+			shouldDo = 0
+			traceback.print_exc()
+
+		return shouldDo
+
 	def SafeShipFunc(function, checkDeadDying, iShipID, *args, **kwargs): # TO-DO CHECK THIS, FOR WEAPON EXPLOSIONS, it is meant to wrap around the actions
 		try:
+			debug(__name__ + ", SafeShipFunc")
 			pShip = App.ShipClass_GetObjectByID(None, self.iShipID)
 			if pShip:
 				shouldPass = TRUE
-				if checkDeadDying > 0:
+				if checkDeadDying != None and checkDeadDying > 0:
 					if pShip.IsDead():
 						shouldPass = FALSE
 					elif checkDeadDying > 1 and pShip.IsDying():
@@ -110,6 +166,11 @@ if bEnabled:
 					self.tDuration = 0
 					self.OneWonder = 1
 
+				if dict.has_key("checkDead"):
+					self.checkDead = dict["checkDead"]
+				else:
+					self.checkDead = 0
+
 			key = name + str(eventKey)
 			FoundationTriggers.__dict__[name + str(eventKey)] = self
 			Foundation.MutatorElementDef.__init__(self, name, dict)
@@ -154,51 +215,57 @@ if bEnabled:
 				#print "__call__ function ", self.function, " time ", App.g_kUtopiaModule.GetGameTime(), "previus interval should have been ", (App.g_kUtopiaModule.GetGameTime() - self.tInterval)
 				pShip = App.ShipClass_GetObjectByID(None, self.iShipID)
 				if pShip:
-					if self.numArguments <= 0 and self.numKWArguments <= 0:
-						try:
-							myStuff = self.function()
-						except:
-							traceback.print_exc()
-							myStuff = None
-					else:
-						myargs = None
-						myargslen = len(self.myarguments)
-						mykwargs = None
-						funct = self.function
-						if self.numKWArguments > 0 and not self.mykeywordargs and myargslen > 1: # For some reason, when switching from the init to call, self.myarguments sometimes transforms into a tuple of tuples and will now hold what self.mykeywordargs had, on the last position; while self.mykeywordargs just turns into an empty dictionary
-							myargslen = len(self.myarguments[0])
-							myargs = self.myarguments[0]
-							mykwargs = self.myarguments[-1]
+					shouldPass = TRUE
+					if self.checkDead != None and self.checkDead > 0:
+						if pShip.IsDead():
+							shouldPass = FALSE
+						elif self.checkDead > 1 and pShip.IsDying():
+							shouldPass = FALSE
+					if shouldPass:
+						if self.numArguments <= 0 and self.numKWArguments <= 0:
+							try:
+								myStuff = self.function()
+							except:
+								traceback.print_exc()
+								myStuff = None
 						else:
-							myargs = self.myarguments
-							mykwargs = self.mykeywordargs
-
-						if type(mykwargs) != type({}):
+							myargs = None
+							myargslen = len(self.myarguments)
 							mykwargs = None
-							mykwargs = {}
+							funct = self.function
+							if self.numKWArguments > 0 and not self.mykeywordargs and myargslen > 1: # For some reason, when switching from the init to call, self.myarguments sometimes transforms into a tuple of tuples and will now hold what self.mykeywordargs had, on the last position; while self.mykeywordargs just turns into an empty dictionary
+								myargslen = len(self.myarguments[0])
+								myargs = self.myarguments[0]
+								mykwargs = self.myarguments[-1]
+							else:
+								myargs = self.myarguments
+								mykwargs = self.mykeywordargs
 
-						#if myargs == None or len(myargs) <= 0:
-						#	myargs = ()					
+							if type(mykwargs) != type({}):
+								mykwargs = None
+								mykwargs = {}
+
+							#if myargs == None or len(myargs) <= 0:
+							#	myargs = ()					
+							try:
+								myStuff = apply(self.function, myargs, mykwargs)
+							except:
+								print "ERROR on function when __call__ is ", self.function, " *args are ", self.myarguments, " **kwargs are ", self.mykeywordargs
+								traceback.print_exc()
+								myStuff = None
 						try:
-							myStuff = apply(self.function, myargs, mykwargs)
+							if myStuff and self.itsanEffect:
+								myStuff.Play()
 						except:
-							print "ERROR on function when __call__ is ", self.function, " *args are ", self.myarguments, " **kwargs are ", self.mykeywordargs
+							print "ERROR on function when calling Play for __call__ is ", self.function, " *args are ", self.myarguments, " **kwargs are ", self.mykeywordargs
 							traceback.print_exc()
 							myStuff = None
-					try:
-						if myStuff and self.itsanEffect:
-							myStuff.Play()
-					except:
-						print "ERROR on function when calling Play for __call__ is ", self.function, " *args are ", self.myarguments, " **kwargs are ", self.mykeywordargs
-						traceback.print_exc()
-						myStuff = None
 			if self.OneWonder == 1:
 				self.Stop(1)
 			return 0
 	
 		
 	# PATCH FOR: CreateNanoWeaponExpSeq
-	# TO-DO ADD A TWEAK - IF A SHIP HAS THE DAMAGE RAD MOD OR DAMAGESTRMOD A 0, THEN DON'T ADD DEBRIS
 	def NewCreateNanoWeaponExpSeq(pEvent, sType):
 		debug(__name__ + ", NewCreateNanoWeaponExpSeq")
 		kTiming = App.TGProfilingInfo("ExpFX, CreateNanoWeaponExpSeq")
@@ -214,7 +281,8 @@ if bEnabled:
 		iShipID = pShip.GetObjID()
 
 		pShip = App.ShipClass_GetObjectByID(None, iShipID)
-		if not pShip:
+		#if (not pShip):
+		if (not pShip) or pShip.IsDead() or pShip.IsDying(): # TO-DO CHANGED TO TO CHECK IF THIS IS WHAT CAUSES THE CRASH
 			pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.5) 
 			return pSequence
 
@@ -251,12 +319,16 @@ if bEnabled:
 		vEmitPos = pEvent.GetObjectHitPoint()
 		vEmitDir = pEvent.GetObjectHitNormal()
 		fSize  = pEvent.GetDamage() * (App.g_kSystemWrapper.GetRandomNumber(10) + 30) * 0.000035
-
+		if fSize  > 9000000: # Something to prevent possible hyper-Damage crashes - it would be rare, but it could happen!
+			fSize = 9000000
+			
 		# MLeo Flying debris Edit 2
 		vSpeed = pShip.GetVelocityTG()
 		vEmitDir.x = vSpeed.GetX() * vEmitDir.x
 		vEmitDir.y = vSpeed.GetY() * vEmitDir.y
 		vEmitDir.z = vSpeed.GetZ() * vEmitDir.z
+
+		shouldDoVisibleDmgStuff = ShouldDoDebris(pShip, g_Threshold, g_minThreshold, g_minShield)
 
 		if sType == "TorpShieldHit":
 			# 0.13 is the stock photon torpedo damage radius
@@ -299,19 +371,20 @@ if bEnabled:
 				knockback = 0.1
 
 			if (pEvent.GetDamage() >= 500 and sType == "TorpHullHit") and pAttachTo != None and vEmitPos != None and vEmitDir != None and pEmitFrom != None:
-				pSparks = ExpFX.CreateExpSparkSeq(fSize, pEmitFrom, pAttachTo, vEmitPos, vEmitDir)
-				if pSparks:
-					pSequence.AddAction(pSparks, App.TGAction_CreateNull(), 0.4)
-					actionsAdded = actionsAdded + 1
-				pDebris = ExpFX.CreateNanoDebrisSeq(fSize * 1.25, pEmitFrom, pSet.GetEffectRoot(), vEmitPos, vEmitDir)
-				if pDebris:
-					pSequence.AddAction(pDebris, App.TGAction_CreateNull(), 0.4)
-					actionsAdded = actionsAdded + 1
-				if (App.g_kSystemWrapper.GetRandomNumber(100) < 25):
-					pSparks = ExpFX.CreateDamageSparkSeq(fSize, pEmitFrom, pAttachTo, vEmitPos, vEmitDir)
+				if shouldDoVisibleDmgStuff:
+					pSparks = ExpFX.CreateExpSparkSeq(fSize, pEmitFrom, pAttachTo, vEmitPos, vEmitDir)
 					if pSparks:
 						pSequence.AddAction(pSparks, App.TGAction_CreateNull(), 0.4)
 						actionsAdded = actionsAdded + 1
+					pDebris = ExpFX.CreateNanoDebrisSeq(fSize * 1.25, pEmitFrom, pSet.GetEffectRoot(), vEmitPos, vEmitDir)
+					if pDebris:
+						pSequence.AddAction(pDebris, App.TGAction_CreateNull(), 0.4)
+						actionsAdded = actionsAdded + 1
+					if (App.g_kSystemWrapper.GetRandomNumber(100) < 25):
+						pSparks = ExpFX.CreateDamageSparkSeq(fSize, pEmitFrom, pAttachTo, vEmitPos, vEmitDir)
+						if pSparks:
+							pSequence.AddAction(pSparks, App.TGAction_CreateNull(), 0.4)
+							actionsAdded = actionsAdded + 1
 
 				pSound = ExpFX.CreateNanoSoundSeq(pShip, "ExpMedSfx")
 				if pSound:
@@ -319,7 +392,7 @@ if bEnabled:
 					actionsAdded = actionsAdded + 1
 	
 			### Add Rotational Spin to Ship From Torp Explosion 25% Chance##
-			if (App.g_kSystemWrapper.GetRandomNumber(100) < 25) and not (pShip.IsDead() or pShip.IsDying()):
+			if shouldDoVisibleDmgStuff and (App.g_kSystemWrapper.GetRandomNumber(100) < 25) and not (pShip.IsDead() or pShip.IsDying()):
 				if (pEvent.GetDamage() >= 200):
 					if (Custom.NanoFXv2.NanoFX_Config.eFX_RotationFX == "On") and (auxRad >= 1.0):
 						anAction = Custom.NanoFXv2.NanoFX_Lib.CreateRotationSeq(pShip, knockback)
@@ -348,7 +421,7 @@ if bEnabled:
 
 		### Create Nano's Large Explosion ###
 		debug(__name__ + ", CreateNanoWeaponExpSeq, the large explosion")
-		if pAttachTo == None or vEmitPos == None or vEmitDir == None or pEmitFrom == None or fSize <= 0.0:
+		if pAttachTo == None or vEmitPos == None or vEmitDir == None or pEmitFrom == None or fSize <= 0.000035:
 			if actionsAdded <= 0:
 				pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.5) 
 			return pSequence
@@ -386,64 +459,100 @@ if bEnabled:
 
 	# PATCH FOR: CreateNanoExpNovaSeq
 
-	def CreateNanoExpNovaNoSeq(pShip, fSize, forceStart=1):
+	def CreateNanoExpNovaNoSeq(pShip, fSize, forceStart=1, pSet=None, pAttachTo=None, pEmitFrom = None, pWarpcoreEmitPos = None, isPlayer=None, fFlashColor=None, sRace=None, iShow=None, iRadius=None):
 		debug(__name__ + ", NewCreateNanoExpNovaSeq")
 
 		kTiming = App.TGProfilingInfo("ExpFX, CreateNanoExpNovaSeq")
 		### Create Sequence Object ###
 		actionsAdded = 0
-		pSequence = [] # NOT an actual Sequence!!!!
+		pSequence = [] # NOT an actual TGSequence!!!!
 
 		#############################
-		# TO-DO something like:
+		# something like:
 		# for aTimerClass in pSequence:
 		# 	aTimerClass.Start()
 		##############################
 
 
-		if not pShip or not hasattr(pShip, "GetObjID"):
+		if not pShip or not hasattr(pShip, "GetObjID") or fSize == 0.0:
 			return pSequence
 
 		iShipID = pShip.GetObjID()
 
 		pShip = App.ShipClass_GetObjectByID(None, iShipID)
-		if not pShip:
+		#if (not pShip):
+		if (not pShip) or pShip.IsDead(): #TO-DO CHANGED THIS TO SEE IF THIS IS WHAT IS CAUSING THE CRASH
 			return pSequence
 
-		pSet = pShip.GetContainingSet()
+		shipIsDead = pShip.IsDead()
+		if pSet is None:
+			pSet = pShip.GetContainingSet()
 		if not pSet: 
 			return pSequence
 
 		###
 		### Setup for Effect ###
-		pAttachTo 	 = pSet.GetEffectRoot()
-		pEmitFrom 	 = App.TGModelUtils_CastNodeToAVObject(pShip.GetNode())
 
-		pWarpcore 	 = pShip.GetPowerSubsystem()
-		pWarpcoreEmitPos = App.NiPoint3(0, 0, 0)
-		if pWarpcore and hasattr(pWarpcore, "GetPosition"):
-			pWarpcoreEmitPos = pWarpcore.GetPosition()
-		else:
-			return pSequence
-		
+		if pAttachTo is None:
+			pAttachTo 	 = pSet.GetEffectRoot()
+
+		if pEmitFrom is None:
+			pEmitFrom 	 = App.TGModelUtils_CastNodeToAVObject(pShip.GetNode())
+
+		if pWarpcoreEmitPos is None:
+			if not shipIsDead:
+				pWarpcore 	 = pShip.GetPowerSubsystem() # TO-DO WE DON'T CARE ABOUT THE WARP CORE, ONLY ITS POSITION!
+				if pWarpcore and hasattr(pWarpcore, "GetPosition"):
+					pWarpcoreEmitPos = pWarpcore.GetPosition()
+
+		if pWarpcoreEmitPos is None:
+			pWarpcoreEmitPos = App.NiPoint3(0, 0, 0)
+
+		if isPlayer is None:
+			if (not shipIsDead):
+				try:
+					pPlayer = MissionLib.GetPlayer()
+					iPlayerID = None
+					if pPlayer and hasattr(pPlayer, "GetObjID") and not pPlayer.IsDead():
+						iPlayerID = pPlayer.GetObjID()
+					if iPlayerID == iShipID:
+						isPlayer = 1
+				except:
+					traceback.print_exc()
+					myShpName = pShip.GetName()
+					if myShpName is not None:
+						sMyName = str(myShpName)
+						if sMyName is not None and sMyName == "Player" or sMyName == "player":
+							isPlayer = 1
+		if iShow is None:
+			if isPlayer:
+				iShow = 2.0
+			else:
+				iShow = 0.0
+
+		if fFlashColor is None:
+			if (not shipIsDead):
+				fFlashColor   = Custom.NanoFXv2.NanoFX_Lib.GetOverrideColor(pShip, "ExpFX")
+				if (fFlashColor == None):
+					if sRace is None:
+						sRace 			= Custom.NanoFXv2.NanoFX_Lib.GetSpeciesName(pShip)
+					if not (sRace is None):
+						fFlashColor 	= Custom.NanoFXv2.NanoFX_Lib.GetRaceTextureColor(sRace)
+
+		if fFlashColor is None:
+			fFlashColor   = (255.0, 248.0, 220.0)
+
 		vEmitDir = App.NiPoint3((App.g_kSystemWrapper.GetRandomNumber(200) - 100) * 0.01, (App.g_kSystemWrapper.GetRandomNumber(200) - 100) * 0.01, (App.g_kSystemWrapper.GetRandomNumber(200) - 100) * 0.01)
-		fFlashColor   = Custom.NanoFXv2.NanoFX_Lib.GetOverrideColor(pShip, "ExpFX")
-		iShow = 0.0
-		if pShip.GetName() == "Player" or pShip.GetName() == "player":
-			iShow = 2.0
-
-		if (fFlashColor == None):
-			sRace 			= Custom.NanoFXv2.NanoFX_Lib.GetSpeciesName(pShip)
-			fFlashColor 	= Custom.NanoFXv2.NanoFX_Lib.GetRaceTextureColor(sRace)
 
 		###
+		shouldDoVisibleDmgStuff = ShouldDoDebris(pShip, 2)
 		if fSize != 1:
 
 			sFile = ExpFX.GetNanoGfxFile("NovaRingGfx", "scripts/Custom/NanoFXv2/ExplosionFX/Gfx/NovaRing/")
 			if sFile != None:
 				
 				ET_NOVA_EVT = App.UtopiaModule_GetNextEventType()
-				pExplosion = NewNanoTimerDef(str(actionsAdded) + "NanoExpNovaNoSeq" + str(iShipID), ET_NOVA_EVT, 0.4, 0.4, {"itsanEffect": 1}, Custom.NanoFXv2.NanoFX_ScriptActions.CreateControllerFX, iShipID, sFile, pEmitFrom, pAttachTo, fSize * (5.0 + iShow), pWarpcoreEmitPos, iTiming = 64, fRed = fFlashColor[0], fGreen = fFlashColor[1], fBlue = fFlashColor[2], fBrightness = 0.5)
+				pExplosion = NewNanoTimerDef(str(actionsAdded) + "NanoExpNovaNoSeq" + str(iShipID), ET_NOVA_EVT, 0.4, 0.4, {"itsanEffect": 1, "checkDead": 1}, Custom.NanoFXv2.NanoFX_ScriptActions.CreateControllerFX, iShipID, sFile, pEmitFrom, pAttachTo, fSize * (5.0 + iShow), pWarpcoreEmitPos, iTiming = 64, fRed = fFlashColor[0], fGreen = fFlashColor[1], fBlue = fFlashColor[2], fBrightness = 0.5) # TO-DO TEST UNCHECKING THE checkDead for a moment
 				if pExplosion:
 					pSequence.append(pExplosion)
 					actionsAdded = actionsAdded + 1
@@ -451,7 +560,7 @@ if bEnabled:
 			sFile = ExpFX.GetNanoGfxFile("NovaSphereGfx", "scripts/Custom/NanoFXv2/ExplosionFX/Gfx/NovaSphere/")
 			if sFile != None:
 				ET_NOVA_EVT = App.UtopiaModule_GetNextEventType()
-				pExplosion = NewNanoTimerDef(str(actionsAdded) + "NanoExpNovaNoSeq" + str(iShipID), ET_NOVA_EVT, 0.5, 0.5, {"itsanEffect": 1}, Custom.NanoFXv2.NanoFX_ScriptActions.CreateControllerFX, iShipID, sFile, pEmitFrom, pAttachTo, fSize * (3.0 + iShow), pWarpcoreEmitPos, iTiming = 28)
+				pExplosion = NewNanoTimerDef(str(actionsAdded) + "NanoExpNovaNoSeq" + str(iShipID), ET_NOVA_EVT, 0.5, 0.5, {"itsanEffect": 1, "checkDead": 1}, Custom.NanoFXv2.NanoFX_ScriptActions.CreateControllerFX, iShipID, sFile, pEmitFrom, pAttachTo, fSize * (3.0 + iShow), pWarpcoreEmitPos, iTiming = 28)
 				if pExplosion:
 					pSequence.append(pExplosion)
 					actionsAdded = actionsAdded + 1
@@ -459,43 +568,56 @@ if bEnabled:
 			sFile = ExpFX.GetNanoGfxFile("NovaFlashGfx", "scripts/Custom/NanoFXv2/ExplosionFX/Gfx/NovaFlash/")
 			if sFile != None:
 				ET_NOVA_EVT = App.UtopiaModule_GetNextEventType()
-				pExplosion = NewNanoTimerDef(str(actionsAdded) + "NanoExpNovaNoSeq" + str(iShipID), ET_NOVA_EVT, 0.01, 0.01, {"itsanEffect": 1}, Custom.NanoFXv2.NanoFX_ScriptActions.CreateControllerFX, iShipID, sFile, pEmitFrom, pAttachTo, fSize * (3.0 + iShow), pWarpcoreEmitPos, iTiming = 20)
+				pExplosion = NewNanoTimerDef(str(actionsAdded) + "NanoExpNovaNoSeq" + str(iShipID), ET_NOVA_EVT, 0.01, 0.01, {"itsanEffect": 1, "checkDead": 1}, Custom.NanoFXv2.NanoFX_ScriptActions.CreateControllerFX, iShipID, sFile, pEmitFrom, pAttachTo, fSize * (3.0 + iShow), pWarpcoreEmitPos, iTiming = 20)
 				if pExplosion:
 					pSequence.append(pExplosion)
 					actionsAdded = actionsAdded + 1
 
 			### Create Nano's Nova Explosion Sound ###
 			ET_NOVA_EVT = App.UtopiaModule_GetNextEventType()
-			pSound = NewNanoTimerDef(str(actionsAdded) + "NanoExpNovaNoSeq" + str(iShipID), ET_NOVA_EVT, 0.01, 0.01, {"itsanEffect": 1}, ExpFX.CreateNanoSoundSeq, iShipID, pShip, "ExpNovaSfx")
+			pSound = NewNanoTimerDef(str(actionsAdded) + "NanoExpNovaNoSeq" + str(iShipID), ET_NOVA_EVT, 0.01, 0.01, {"itsanEffect": 1, "checkDead": 1}, ExpFX.CreateNanoSoundSeq, iShipID, pShip, "ExpNovaSfx")
 			if pSound:
 				pSequence.append(pSound)
 				actionsAdded = actionsAdded + 1
 			###
 			### Damage the model with Warp Core Explosion ###
-			ET_NOVA_EVT = App.UtopiaModule_GetNextEventType()
-			aDmgAction = NewNanoTimerDef(str(actionsAdded) + "NanoExpNovaNoSeq" + str(iShipID), ET_NOVA_EVT, 0.7, 0.7, {"itsanEffect": 0}, Custom.NanoFXv2.NanoFX_ScriptActions.NanoDamageShip, iShipID, None, pShip, pEmitFrom, pShip.GetRadius(), 600.0)
-			if aDmgAction:
-				pSequence.append(aDmgAction)
-				actionsAdded = actionsAdded + 1
+			if shouldDoVisibleDmgStuff:
+				ET_NOVA_EVT = App.UtopiaModule_GetNextEventType()
+				aDmgAction = NewNanoTimerDef(str(actionsAdded) + "NanoExpNovaNoSeq" + str(iShipID), ET_NOVA_EVT, 0.7, 0.7, {"itsanEffect": 0, "checkDead": 1}, Custom.NanoFXv2.NanoFX_ScriptActions.NanoDamageShip, iShipID, None, pShip, pEmitFrom, pShip.GetRadius(), 600.0) # TO-DO Last time it worked , "checkDead": 1 wasn't there and we had a check if the pShip was dead
+				if aDmgAction:
+					pSequence.append(aDmgAction)
+					actionsAdded = actionsAdded + 1
 		else:
-			fSize = pShip.GetRadius() / 1.2
+			try:
+				if iRadius is None:
+					if (not shipIsDead):
+						iRadius = pShip.GetRadius()
+			except:
+				iRadius = 0
+				traceback.print_exc()
+
+			fSize = iRadius / 1.2
+
 			### Create Nano's Nova Explosion Sound ###
 			ET_NOVA_EVT = App.UtopiaModule_GetNextEventType()
-			pSound = NewNanoTimerDef(str(actionsAdded) + "NanoExpNovaNoSeq" + str(iShipID), ET_NOVA_EVT, 0.01, 0.01, {"itsanEffect": 1}, ExpFX.CreateNanoSoundSeq, iShipID, pShip, "ExpLargeSfx")
+			pSound = NewNanoTimerDef(str(actionsAdded) + "NanoExpNovaNoSeq" + str(iShipID), ET_NOVA_EVT, 0.01, 0.01, {"itsanEffect": 1, "checkDead": 1}, ExpFX.CreateNanoSoundSeq, iShipID, pShip, "ExpLargeSfx")
 			if pSound:
 				pSequence.append(pSound)
 				actionsAdded = actionsAdded + 1
 
 			###
-		iNovaSparks = Custom.NanoFXv2.NanoFX_Config.eFX_ExpSparkFXLevel * 7.0
-		for iPoint in range( iNovaSparks ):
-			fRand = App.g_kSystemWrapper.GetRandomNumber(100) *  0.01
-			ET_NOVA_EVT = App.UtopiaModule_GetNextEventType()
-			pSparks = NewNanoTimerDef(str(actionsAdded) + "NanoExpNovaNoSeq" + str(iShipID), ET_NOVA_EVT, 0.5, 0.5, {"itsanEffect": 1}, ExpFX.CreateExpSparkSeq, iShipID, fSize * (0.8 + fRand), pEmitFrom, pAttachTo, pWarpcoreEmitPos, vEmitDir)
 
-			if pSparks:
-				pSequence.append(pSparks)
-				actionsAdded = actionsAdded + 1
+		if fSize > 0.0001:
+			iNovaSparks = Custom.NanoFXv2.NanoFX_Config.eFX_ExpSparkFXLevel * 7.0
+			if (not iNovaSparks is None) and iNovaSparks > 0:
+				for iPoint in range( iNovaSparks ):
+					fRand = App.g_kSystemWrapper.GetRandomNumber(100) *  0.01
+					ET_NOVA_EVT = App.UtopiaModule_GetNextEventType()
+					pSparks = NewNanoTimerDef(str(actionsAdded) + "NanoExpNovaNoSeq" + str(iShipID), ET_NOVA_EVT, 0.5, 0.5, {"itsanEffect": 1, "checkDead": 1}, ExpFX.CreateExpSparkSeq, iShipID, fSize * (0.8 + fRand), pEmitFrom, pAttachTo, pWarpcoreEmitPos, vEmitDir)
+
+					if pSparks:
+						pSequence.append(pSparks)
+						actionsAdded = actionsAdded + 1
 		###
 
 		#if actionsAdded == 0:
@@ -505,12 +627,9 @@ if bEnabled:
 		#		pSequence.append(dummyF)
 		#		actionsAdded = actionsAdded + 1
 
-		#############################
-		# TO-DO something like:
 		if forceStart:
 			for aTimerClass in pSequence:
 				aTimerClass.Start()
-		##############################
 
 		return pSequence
 
@@ -522,14 +641,15 @@ if bEnabled:
 		actionsAdded = 0
 		pSequence = App.TGSequence_Create()
 
-		if not pShip or not hasattr(pShip, "GetObjID"):
+		if not pShip or not hasattr(pShip, "GetObjID") or fSize == 0.0:
 			pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.5) 
 			return pSequence
 
 		iShipID = pShip.GetObjID()
 
 		pShip = App.ShipClass_GetObjectByID(None, iShipID)
-		if not pShip:
+		if not pShip or pShip.IsDead(): # Alex SL Gato tweak - apparently if the ship is dead some parameters will be broken and crash the game, so better not.
+		#if not pShip or pShip.IsDead():
 			pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.5) 
 			return pSequence
 
@@ -562,6 +682,7 @@ if bEnabled:
 			sRace 			= Custom.NanoFXv2.NanoFX_Lib.GetSpeciesName(pShip)
 			fFlashColor 	= Custom.NanoFXv2.NanoFX_Lib.GetRaceTextureColor(sRace)
 
+		shouldDoVisibleDmgStuff = ShouldDoDebris(pShip, 2)
 		###
 		if fSize != 1:
 			sFile = ExpFX.GetNanoGfxFile("NovaRingGfx", "scripts/Custom/NanoFXv2/ExplosionFX/Gfx/NovaRing/")
@@ -586,10 +707,11 @@ if bEnabled:
 				actionsAdded = actionsAdded + 1
 			###
 			### Damage the model with Warp Core Explosion ###
-			aDmgAction = App.TGScriptAction_Create("Custom.NanoFXv2.NanoFX_ScriptActions", "NanoDamageShip", pShip, pEmitFrom, pShip.GetRadius(), 600.0)
-			if aDmgAction:
-				pSequence.AddAction(aDmgAction, App.TGAction_CreateNull(), 0.7)
-				actionsAdded = actionsAdded + 1
+			if shouldDoVisibleDmgStuff:
+				aDmgAction = App.TGScriptAction_Create("Custom.NanoFXv2.NanoFX_ScriptActions", "NanoDamageShip", pShip, pEmitFrom, pShip.GetRadius(), 600.0)
+				if aDmgAction:
+					pSequence.AddAction(aDmgAction, App.TGAction_CreateNull(), 0.7)
+					actionsAdded = actionsAdded + 1
 		else:
 			fSize = pShip.GetRadius() / 1.2
 			### Create Nano's Nova Explosion Sound ###
@@ -720,12 +842,9 @@ if bEnabled:
 		#		pSequence.append(dummyF)
 		#		actionsAdded = actionsAdded + 1
 
-		#############################
-		# TO-DO something like:
 		if forceStart:
 			for aTimerClass in pSequence:
 				aTimerClass.Start()
-		##############################
 
 		return pSequence
 
@@ -880,6 +999,8 @@ if bEnabled:
 		if not shipRadius or shipRadius < 0.1:
 			return pSequence
 
+		shouldDoVisibleDmgStuff = ShouldDoDebris(pShip, 2, fDmg=1200)
+
 		while (fExplosionTime < fTime):
 			###
 			### Create Nano's Visual Smaller Explosions ###
@@ -939,28 +1060,29 @@ if bEnabled:
 
 			###
 			### Damage the model with these explosions ###
-			ET_NOVA_EVT = App.UtopiaModule_GetNextEventType()
-			dmgModelAction = NewNanoTimerDef(str(actionsAdded) + "NanoExpSmallNoSeq" + str(iShipID), ET_NOVA_EVT, 0.3, 0.3, {"itsanEffect": 0}, Custom.NanoFXv2.NanoFX_ScriptActions.NanoDamageShip, iShipID, None, pShip, pEmitFrom, shipRadius / 2.0, 1200.0)
-			if dmgModelAction:
-				pSequence.append(dmgModelAction)
-				actionsAdded = actionsAdded + 1
-
-			fExtraDamage = 0.1
-			while (fExtraDamage < fTime):
-				# prevent GetRandomPointOnModel() from crashing the game on dying/dead ships
-				#if pShip.IsDead() or pShip.IsDying() or not pShip.GetHull() or pShip.GetHull().GetConditionPercentage() == 0:
-				if pShip.IsDead():
-					return pSequence
-				pEmitFrom = pShip.GetRandomPointOnModel()
-				if not pEmitFrom:
-					return pSequence
+			if shouldDoVisibleDmgStuff:
 				ET_NOVA_EVT = App.UtopiaModule_GetNextEventType()
-				anotherDmgAction = NewNanoTimerDef(str(actionsAdded) + "NanoExpSmallNoSeq" + str(iShipID), ET_NOVA_EVT, 0.3, 0.3, {"itsanEffect": 0}, Custom.NanoFXv2.NanoFX_ScriptActions.NanoDamageShip, iShipID, None,  pShip, pEmitFrom, shipRadius / 3.0, 1200.0)
-				if anotherDmgAction:
-					pSequence.append(anotherDmgAction)
+				dmgModelAction = NewNanoTimerDef(str(actionsAdded) + "NanoExpSmallNoSeq" + str(iShipID), ET_NOVA_EVT, 0.3, 0.3, {"itsanEffect": 0}, Custom.NanoFXv2.NanoFX_ScriptActions.NanoDamageShip, iShipID, None, pShip, pEmitFrom, shipRadius / 2.0, 1200.0)
+				if dmgModelAction:
+					pSequence.append(dmgModelAction)
 					actionsAdded = actionsAdded + 1
 
-				fExtraDamage = fExtraDamage + 0.04
+				fExtraDamage = 0.1
+				while (fExtraDamage < fTime):
+					# prevent GetRandomPointOnModel() from crashing the game on dying/dead ships
+					#if pShip.IsDead() or pShip.IsDying() or not pShip.GetHull() or pShip.GetHull().GetConditionPercentage() == 0:
+					if pShip.IsDead():
+						return pSequence
+					pEmitFrom = pShip.GetRandomPointOnModel()
+					if not pEmitFrom:
+						return pSequence
+					ET_NOVA_EVT = App.UtopiaModule_GetNextEventType()
+					anotherDmgAction = NewNanoTimerDef(str(actionsAdded) + "NanoExpSmallNoSeq" + str(iShipID), ET_NOVA_EVT, 0.3+fExtraDamage , 0.3 +fExtraDamage, {"itsanEffect": 0, "checkDead": 1}, Custom.NanoFXv2.NanoFX_ScriptActions.NanoDamageShip, iShipID, None,  pShip, pEmitFrom, shipRadius / 3.0, 1200.0)
+					if anotherDmgAction:
+						pSequence.append(anotherDmgAction)
+						actionsAdded = actionsAdded + 1
+
+					fExtraDamage = fExtraDamage + 0.04
 			###
 			fExplosionTime = fExplosionTime + 0.5
 
@@ -971,12 +1093,9 @@ if bEnabled:
 		#		pSequence.append(dummyF)
 		#		actionsAdded = actionsAdded + 1
 
-		#############################
-		# TO-DO something like:
 		if forceStart:
 			for aTimerClass in pSequence:
 				aTimerClass.Start()
-		##############################
 
 		return pSequence
 
@@ -1044,6 +1163,8 @@ if bEnabled:
 				pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.5) 
 			return pSequence
 
+		shouldDoVisibleDmgStuff = ShouldDoDebris(pShip, 2, fDmg=1200)
+
 		while (fExplosionTime < fTime):
 			###
 			### Create Nano's Visual Smaller Explosions ###
@@ -1089,29 +1210,30 @@ if bEnabled:
 					actionsAdded = actionsAdded + 1
 			###
 			### Damage the model with these explosions ###
-			dmgModelAction = App.TGScriptAction_Create("Custom.NanoFXv2.NanoFX_ScriptActions", "NanoDamageShip", pShip, pEmitFrom, shipRadius / 2.0, 1200.0)
-			if dmgModelAction:
-				pSequence.AddAction(dmgModelAction, App.TGAction_CreateNull(), 0.3)
-				actionsAdded = actionsAdded + 1
-
-			fExtraDamage = 0.1
-			while (fExtraDamage < fTime):
-				# prevent GetRandomPointOnModel() from crashing the game on dying/dead ships
-				#if pShip.IsDead() or pShip.IsDying() or not pShip.GetHull() or pShip.GetHull().GetConditionPercentage() == 0:
-				if pShip.IsDead():
-					if actionsAdded <= 0:
-						pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.5) 
-					return pSequence
-				pEmitFrom = pShip.GetRandomPointOnModel()
-				if not pEmitFrom:
-					if actionsAdded <= 0:
-						pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.5) 
-					return pSequence
-				anotherDmgAction = App.TGScriptAction_Create("Custom.NanoFXv2.NanoFX_ScriptActions", "NanoDamageShip", pShip, pEmitFrom, shipRadius / 3.0, 1200.0)
-				if anotherDmgAction:
-					pSequence.AddAction(anotherDmgAction, App.TGAction_CreateNull(), 0.3)
+			if shouldDoVisibleDmgStuff:
+				dmgModelAction = App.TGScriptAction_Create("Custom.NanoFXv2.NanoFX_ScriptActions", "NanoDamageShip", pShip, pEmitFrom, shipRadius / 2.0, 1200.0)
+				if dmgModelAction:
+					pSequence.AddAction(dmgModelAction, App.TGAction_CreateNull(), 0.3)
 					actionsAdded = actionsAdded + 1
-				fExtraDamage = fExtraDamage + 0.04
+
+				fExtraDamage = 0.1
+				while (fExtraDamage < fTime):
+					# prevent GetRandomPointOnModel() from crashing the game on dying/dead ships
+					#if pShip.IsDead() or pShip.IsDying() or not pShip.GetHull() or pShip.GetHull().GetConditionPercentage() == 0:
+					if pShip.IsDead():
+						if actionsAdded <= 0:
+							pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.5) 
+						return pSequence
+					pEmitFrom = pShip.GetRandomPointOnModel()
+					if not pEmitFrom:
+						if actionsAdded <= 0:
+							pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.5) 
+						return pSequence
+					anotherDmgAction = App.TGScriptAction_Create("Custom.NanoFXv2.NanoFX_ScriptActions", "NanoDamageShip", pShip, pEmitFrom, shipRadius / 3.0, 1200.0)
+					if anotherDmgAction:
+						pSequence.AddAction(anotherDmgAction, App.TGAction_CreateNull(), 0.3)
+						actionsAdded = actionsAdded + 1
+					fExtraDamage = fExtraDamage + 0.04
 			###
 			fExplosionTime = fExplosionTime + 0.5
 
@@ -1119,6 +1241,59 @@ if bEnabled:
 			pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.5) 
 
 		return pSequence
+
+	# PATCH FOR: NanoCollisionEffect
+
+	def NewNanoCollisionEffect(pShip, pEvent):
+		### Setup ###
+		debug(__name__ + ", NanoCollisionEffect")
+
+		if not pShip or not hasattr(pShip, "GetObjID"):
+			return
+
+		iShipID = pShip.GetObjID()
+
+		pShip = App.ShipClass_GetObjectByID(None, iShipID)
+		if not pShip: # or pShip.IsDead():
+			return
+
+		pSet = pShip.GetContainingSet()
+		if not pSet:
+			return
+		actionsAdded = 0
+		fSize     = pShip.GetRadius()
+		pAttachTo = pSet.GetEffectRoot()
+		pEmitFrom = App.TGModelUtils_CastNodeToAVObject(pShip.GetNode())
+		pSequence = App.TGSequence_Create()
+		###
+		### Get the collision points ###
+		for iPoint in range( pEvent.GetNumPoints() ):
+			vEmitPos = pEvent.GetPoint(iPoint)
+			vEmitDir = App.TGPoint3_GetRandomUnitVector()
+
+			### Add an explosion at this point ###
+			sFile = ExpFX.GetNanoGfxFile("ExplosionGfx", "scripts/Custom/NanoFXv2/ExplosionFX/Gfx/Explosions/")
+			pCollision = Custom.NanoFXv2.NanoFX_ScriptActions.CreateControllerFX(sFile, None, pAttachTo, fSize, vEmitPos, vEmitDir)
+			if pCollision:
+				pSequence.AddAction(pCollision)
+				actionsAdded = actionsAdded + 1
+			pSound = ExpFX.CreateNanoSoundSeq(pShip, "ExpCollisionSfx")
+			if pSound:
+				pSequence.AddAction(pSound)
+				actionsAdded = actionsAdded + 1
+		###
+
+		if actionsAdded == 0:
+			pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.5) 
+		pSequence.Play()
+		###
+		pShip.CallNextHandler(pEvent)
+
+	ExpFX.CreateNanoWeaponExpSeq = NewCreateNanoWeaponExpSeq
+	ExpFX.CreateNanoExpNovaSeq = NewCreateNanoExpNovaSeq
+	ExpFX.CreateNanoExpLargeSeq = NewCreateNanoExpLargeSeq
+	ExpFX.CreateNanoExpSmallSeq = NewCreateNanoExpSmallSeq
+	ExpFX.NanoCollisionEffect = NewNanoCollisionEffect
 
 	# PATCH FOR: NanoDeathSeq
 
@@ -1149,6 +1324,76 @@ if bEnabled:
 		fRadius = 0.0
 		shipName = pExplodingShip.GetName()
 		fExplodingShipRadius = pExplodingShip.GetRadius()
+
+		##################
+		# If we are changing stuff, better make it so we can store it before the ship dies!
+		shipIsDead = pShip.IsDead()
+
+		pNovaAttachTo 	 = None
+		pNovaEmitFrom = None
+		pNovaWarpcoreEmitPos = None
+		isNovaPlayer = None
+		iNovaShow = 0.0
+		sNovaRace = None
+		fNovaFlashColor = None
+
+		pNovaSet = pShip.GetContainingSet()
+		if pNovaSet and hasattr(pNovaSet, "GetEffectRoot"): 
+			pNovaAttachTo 	 = pNovaSet.GetEffectRoot()
+
+		if not shipIsDead:
+			pNovaEmitFrom 	 = App.TGModelUtils_CastNodeToAVObject(pShip.GetNode())
+			pWarpcore 	 = pShip.GetPowerSubsystem()
+			if pWarpcore and hasattr(pWarpcore, "GetPosition"):
+				pNovaWarpcoreEmitPos = pWarpcore.GetPosition()
+
+			try:
+				pPlayer = MissionLib.GetPlayer()
+				iPlayerID = None
+				if pPlayer and hasattr(pPlayer, "GetObjID") and not pPlayer.IsDead():
+					iPlayerID = pPlayer.GetObjID()
+				if iPlayerID == iShipID:
+					isNovaPlayer = 1
+				else:
+					isNovaPlayer = 0
+			except:
+				traceback.print_exc()
+				myShpName = pShip.GetName()
+				if myShpName is not None:
+					sMyName = str(myShpName)
+					if sMyName is not None and sMyName == "Player" or sMyName == "player":
+						isNovaPlayer = 1
+					else:
+						isNovaPlayer = 0
+				else:
+					isNovaPlayer = 0
+			try:
+				fNovaFlashColor   = Custom.NanoFXv2.NanoFX_Lib.GetOverrideColor(pShip, "ExpFX")
+				if (fNovaFlashColor == None):
+					if sNovaRace is None:
+						sNovaRace 			= Custom.NanoFXv2.NanoFX_Lib.GetSpeciesName(pShip)
+					if not (sNovaRace is None):
+						fNovaFlashColor 	= Custom.NanoFXv2.NanoFX_Lib.GetRaceTextureColor(sNovaRace)
+			except:
+				sNovaRace = None
+				fNovaFlashColor = None
+				traceback.print_exc()
+
+			if isNovaPlayer is None:
+				isNovaPlayer = 0
+
+		if pNovaWarpcoreEmitPos is None:
+			pNovaWarpcoreEmitPos = App.NiPoint3(0, 0, 0)
+
+		if isNovaPlayer:
+			iNovaShow = 2.0
+
+		if fNovaFlashColor is None:
+			fNovaFlashColor   = (255.0, 248.0, 220.0)
+
+		#######################
+
+
 		pWarpSubsys = pExplodingShip.GetPowerSubsystem()
 		if (pExplodingShip.GetName() == "Player") or (pExplodingShip.GetName() == "player"):
 			pExplodingShip.SetLifeTime (fTotalSequenceTime)
@@ -1173,47 +1418,17 @@ if bEnabled:
 		### Flicker some lights ###
 		if (Custom.NanoFXv2.NanoFX_Config.eFX_LightFlickerFX == "On"):
 			ET_NOVA_EVT = App.UtopiaModule_GetNextEventType()
-			
-			#TO-DO THIS BELOW WORKS
 			"""
 			anonFunc1 = lambda pExplodingShip=pExplodingShip : Custom.NanoFXv2.NanoFX_Lib.CreateFlickerSeq(pExplodingShip, 3.0, sStatus = "Off") # TO-DO SEE IF THIS WORKS LIKE THIS OR IF YOU NEED TO SET DEFAULT INPUT PARAMETERS
 			pFlickerAction1 = NewNanoTimerDef(str(actionsAdded) + "NanoDeathNoSeq" + str(iShipID), ET_NOVA_EVT, 1.0, 1.0, {"itsanEffect": 1}, anonFunc1, iShipID)
 			"""
-			#TO-DO THIS BELOW IS A TEST... AND WORKS!
 			pFlickerAction1 = NewNanoTimerDef(str(actionsAdded) + "NanoDeathNoSeq" + str(iShipID), ET_NOVA_EVT, 1.0, 1.0, {"itsanEffect": 1}, Custom.NanoFXv2.NanoFX_Lib.CreateFlickerSeq, iShipID, pExplodingShip, 3.0, sStatus = "Off")
-			#TO-DO THIS ABOVE IS A TEST
 			if pFlickerAction1:
 				pFullSequence.append(pFlickerAction1)
 				actionsAdded = actionsAdded + 1
 
 		###
 		### Create Nano's Initial Large explosions ###
-
-		###### TO-DO TEST BELOW -IT WORKS
-		#pSet = pShip.GetContainingSet()
-		#pWarpcore 	 = pShip.GetPowerSubsystem()
-		#pWarpcoreEmitPos = App.NiPoint3(0, 0, 0)
-		#if pWarpcore and hasattr(pWarpcore, "GetPosition"):
-		#	pWarpcoreEmitPos = pWarpcore.GetPosition()
-		#fSize = (fRadius + 0.15) / 15
-
-		#pAttachToTEM 	 = pSet.GetEffectRoot()
-		#pEmitFromTEM 	 = App.TGModelUtils_CastNodeToAVObject(pShip.GetNode())
-		#sRace 			= Custom.NanoFXv2.NanoFX_Lib.GetSpeciesName(pShip)
-		#fFlashColor 	= Custom.NanoFXv2.NanoFX_Lib.GetRaceTextureColor(sRace)
-
-		#sFile = ExpFX.GetNanoGfxFile("NovaRingGfx", "scripts/Custom/NanoFXv2/ExplosionFX/Gfx/NovaRing/")
-		#if sFile != None:
-		#	ET_NOVA_EVT = App.UtopiaModule_GetNextEventType()
-
-		#	pExplosion = NewNanoTimerDef(
-		#		str(actionsAdded) + "NanoExpNovaNoSeq" + str(iShipID),
-		#		ET_NOVA_EVT, 0.4, 0.4, {"itsanEffect": 1}, Custom.NanoFXv2.NanoFX_ScriptActions.CreateControllerFX, iShipID, sFile, pEmitFromTEM, pAttachToTEM, fSize * (5.0 + 1), pWarpcoreEmitPos, iTiming = 64, fRed = fFlashColor[0], fGreen = fFlashColor[1], fBlue = fFlashColor[2], fBrightness = 0.5)
-		#	if pExplosion:
-		#		pFullSequence.append(pExplosion)
-		#		actionsAdded = actionsAdded + 1
-
-		###### TO-DO TEST ABOVE
 
 		ET_NOVA_EVT = App.UtopiaModule_GetNextEventType()
 		pSmallExpSeq1 = NewNanoTimerDef(str(actionsAdded) + "NanoDeathNoSeq" + str(iShipID), ET_NOVA_EVT, 0.2, 0.2, {"itsanEffect": 0}, CreateNanoExpSmallNoSeq, iShipID, pExplodingShip, 0.01)
@@ -1256,7 +1471,6 @@ if bEnabled:
 			if pRotAction1:
 				pFullSequence.append(pRotAction1)
 				actionsAdded = actionsAdded + 1
-
 			ET_NOVA_EVT = App.UtopiaModule_GetNextEventType()
 			pRotAction2 = NewNanoTimerDef(str(actionsAdded) + "NanoDeathNoSeq" + str(iShipID), ET_NOVA_EVT, fTotalSequenceTime - 1.6 + fExplosionShift, fTotalSequenceTime - 1.6 + fExplosionShift, {"itsanEffect": 1}, Custom.NanoFXv2.NanoFX_Lib.CreateRotationSeq, iShipID, pExplodingShip, fRotation = 1000, fSpeed = 0.5)
 			if pRotAction2:
@@ -1266,7 +1480,7 @@ if bEnabled:
 		### Create Nano's Warp Core Explosion ###
 		if fRadius and fRadius > 0.0:
 			ET_NOVA_EVT = App.UtopiaModule_GetNextEventType()
-			pNovaExpAction1 = NewNanoTimerDef(str(actionsAdded) + "NanoDeathNoSeq" + str(iShipID), ET_NOVA_EVT, fTotalSequenceTime - 1.7 + fExplosionShift, fTotalSequenceTime - 1.7 + fExplosionShift, {"itsanEffect": 0}, CreateNanoExpNovaNoSeq, iShipID, pExplodingShip, fRadius / 15)
+			pNovaExpAction1 = NewNanoTimerDef(str(actionsAdded) + "NanoDeathNoSeq" + str(iShipID), ET_NOVA_EVT, fTotalSequenceTime - 1.7 + fExplosionShift, fTotalSequenceTime - 1.7 + fExplosionShift, {"itsanEffect": 0}, CreateNanoExpNovaNoSeq, iShipID, pExplodingShip, fRadius / 15, forceStart=1, pSet=pNovaSet, pAttachTo=pNovaAttachTo, pEmitFrom = pNovaEmitFrom, pWarpcoreEmitPos = pNovaWarpcoreEmitPos, isPlayer=isNovaPlayer, fFlashColor=fNovaFlashColor, sRace=sNovaRace, iShow=iNovaShow, iRadius=fExplodingShipRadius)
 			if pNovaExpAction1:
 				pFullSequence.append(pNovaExpAction1)
 				actionsAdded = actionsAdded + 1
@@ -1300,12 +1514,9 @@ if bEnabled:
 			pFullSequence.append(pPostExplosionStuffAction)
 			actionsAdded = actionsAdded + 1
 
-		#############################
-		# TO-DO something like:
 		if forceStart:
 			for aTimerClass in pFullSequence:
 				aTimerClass.Start()
-		##############################
 
 		###
 		bFound = 0
@@ -1324,8 +1535,6 @@ if bEnabled:
 				Custom.NanoFXv2.NanoFX_Lib.g_LightsOff.remove(sName)
 		except:
 			traceback.print_exc()
-
-
 
 	def NewNanoDeathSeq(pShip):
 		### Holds the Entire Death Sequence ###
@@ -1481,58 +1690,6 @@ if bEnabled:
 		except:
 			traceback.print_exc()
 
-	# PATCH FOR: NanoCollisionEffect
-
-	def NewNanoCollisionEffect(pShip, pEvent):
-		### Setup ###
-		debug(__name__ + ", NanoCollisionEffect")
-
-		if not pShip or not hasattr(pShip, "GetObjID"):
-			return
-
-		iShipID = pShip.GetObjID()
-
-		pShip = App.ShipClass_GetObjectByID(None, iShipID)
-		if not pShip: # or pShip.IsDead():
-			return
-
-		pSet = pShip.GetContainingSet()
-		if not pSet:
-			return
-		actionsAdded = 0
-		fSize     = pShip.GetRadius()
-		pAttachTo = pSet.GetEffectRoot()
-		pEmitFrom = App.TGModelUtils_CastNodeToAVObject(pShip.GetNode())
-		pSequence = App.TGSequence_Create()
-		###
-		### Get the collision points ###
-		for iPoint in range( pEvent.GetNumPoints() ):
-			vEmitPos = pEvent.GetPoint(iPoint)
-			vEmitDir = App.TGPoint3_GetRandomUnitVector()
-
-			### Add an explosion at this point ###
-			sFile = ExpFX.GetNanoGfxFile("ExplosionGfx", "scripts/Custom/NanoFXv2/ExplosionFX/Gfx/Explosions/")
-			pCollision = Custom.NanoFXv2.NanoFX_ScriptActions.CreateControllerFX(sFile, None, pAttachTo, fSize, vEmitPos, vEmitDir)
-			if pCollision:
-				pSequence.AddAction(pCollision)
-				actionsAdded = actionsAdded + 1
-			pSound = ExpFX.CreateNanoSoundSeq(pShip, "ExpCollisionSfx")
-			if pSound:
-				pSequence.AddAction(pSound)
-				actionsAdded = actionsAdded + 1
-		###
-
-		if actionsAdded == 0:
-			pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.5) 
-		pSequence.Play()
-		###
-		pShip.CallNextHandler(pEvent)
-
-	ExpFX.CreateNanoWeaponExpSeq = NewCreateNanoWeaponExpSeq
-	ExpFX.CreateNanoExpNovaSeq = NewCreateNanoExpNovaSeq
-	ExpFX.CreateNanoExpLargeSeq = NewCreateNanoExpLargeSeq
-	ExpFX.CreateNanoExpSmallSeq = NewCreateNanoExpSmallSeq
-	ExpFX.NanoCollisionEffect = NewNanoCollisionEffect
 	if G_PATCHFIX == 0:
 		ExpFX.NanoDeathSeq = NewNanoDeathSeq
 	else:
