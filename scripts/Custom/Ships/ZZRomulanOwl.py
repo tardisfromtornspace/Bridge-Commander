@@ -21,30 +21,6 @@ credits = {
 
 import F_ZZAttackDef
 
-
-# This is the new class that defines your ship and links it to the AI.
-class ZZRomulanOwl(Foundation.ShipDef):
-	"""
-	Defines a custom ship class for the Veritex.
-	"""
-	def __init__(self, abbrev, species, dict):
-		# Set the ship's race to Federation.
-		dict['race'] = Foundation.Federation
-		# Call the parent class's constructor to set up the ship definition.
-		Foundation.ShipDef.__init__(self, abbrev, species, dict)
-
-	def StrFriendlyAI(self):
-		"""
-		Returns the string name of the AI script for a friendly ship.
-		"""
-		return 'ZZVeritexFAI'
-
-	def StrEnemyAI(self):
-		"""
-		Returns the string name of the AI script for an enemy ship.
-		"""
-		return 'ZZVeritexEAI'
-
 Foundation.ShipDef.ZZRomulanOwl = F_ZZAttackDef.ZZAttackDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile})
 
 # Set the ship's description.
