@@ -1,4 +1,4 @@
-# VERSION 1.2.2
+# VERSION 1.2.3
 # 25th February 2026
 
 import App
@@ -11,6 +11,7 @@ TRUE = 1
 FALSE = 0
 
 G_PATCHFIX = 3 # 0 Means we only apply the tweak, 1 that we also apply some extra fixes, 2 that we only apply a new death sequence alongside the tweak, 3 that we apply all the fixes and tweaks
+G_DISABLE_DEATH_EFFECTS = 0 # If set to 1, death Sequences do not generate any effect
 versionPatch = 20260222 # Our version of the patch
 # If disabled, replace TRUE with FALSE
 bEnabled = FALSE
@@ -112,6 +113,28 @@ if bEnabled:
 
 		return shouldDo
 
+
+	def RemoveFromg_LightsOff(pAction, shipName):
+		bFound = 0
+		listToDelete = []
+		try:
+			for sName in Custom.NanoFXv2.NanoFX_Lib.g_LightsOff: # You cannot use a for loop to traverse lists to then delete items on that, not this way - internally C just makes it skip one, which is not good!
+				if shipName == sName:
+					bFound = 1
+				if bFound == 1:
+					listToDelete.append(sName)
+		except:
+			traceback.print_exc()
+
+		try:
+			for sName in listToDelete: # Weird cases where you have multiple of the same name.
+				Custom.NanoFXv2.NanoFX_Lib.g_LightsOff.remove(sName)
+				break
+		except:
+			traceback.print_exc()
+
+		return 0
+
 	def SafeShipFunc(function, checkDeadDying, iShipID, defaultReturn, *args, **kwargs): # TO-DO It is meant to wrap around the actions
 		try:
 			debug(__name__ + ", SafeShipFunc")
@@ -130,10 +153,171 @@ if bEnabled:
 			traceback.print_exc()
 		return defaultReturn
 
+	class NewNanoTimerDef(FoundationTech.TimerDef):
+		def __init__(self, name, eventKey, tInterval, tDuration, dict, function, iShipID, *args, **kwargs):
+			debug(__name__ + ", __init__")
+			if eventKey != None:
+				self.eventKey = eventKey
+			else:
+				self.eventKey = App.UtopiaModule_GetNextEventType()
+			self.count = 0 # If set to -1 it will ignore the first event that happens
+
+			self.idTimer = None
+			self.tInterval = tInterval
+			self.StartDelay = 0
+
+			if dict != None and type(dict) == type({}):
+				if dict.has_key("countStart"):
+					self.count = dict["countStart"]
+				else:
+					self.count = 0
+
+				if dict.has_key("countStart"):
+					self.count = dict["countStart"]
+				else:
+					self.count = 0
+				if dict.has_key("itsanEffect") and dict["itsanEffect"] == 1:
+					self.itsanEffect = 1
+				else:
+					self.itsanEffect = 0
+
+				if dict.has_key("defaultTimerDefBehaviour") and dict["defaultTimerDefBehaviour"] == 0:
+					self.tInterval = tInterval
+					self.StartDelay = 0
+					self.tDuration = tDuration
+					self.OneWonder = 0
+				else:
+					self.StartDelay = tInterval
+					self.tInterval = 0
+					self.tDuration = 0
+					self.OneWonder = 1
+
+				if dict.has_key("checkDead"):
+					self.checkDead = dict["checkDead"]
+				else:
+					self.checkDead = 0
+
+				if dict.has_key("doVerbose"):
+					self.doVerbose = dict["doVerbose"]
+				else:
+					self.doVerbose = 0
+
+			else:
+				self.itsanEffect = 0
+				self.StartDelay = tInterval
+				self.tInterval = 0
+				self.tDuration = 0
+				self.OneWonder = 1
+				self.checkDead = 0
+				self.doVerbose = 0
+
+			key = name + str(eventKey)
+			FoundationTriggers.__dict__[name + str(eventKey)] = self
+			Foundation.MutatorElementDef.__init__(self, name, dict)
+			# The line below because apparently the lines above did not cover dict on the level we want
+			#self.__dict__.update(dict)
+			self.function = function
+			self.iShipID = iShipID
+			self.myarguments = args
+			self.numArguments = 0
+			if args != None:
+				 self.numArguments = len(self.myarguments)
+
+			#self.mykeywordargs = kwargs #Theoretically, this should be the actual keyword argument values - in reality, for some reason, when it comes to call, that is not the case and they get on self.myarguments[1] as if they were introduced on a new tuple
+			self.mykeywordargs = {}
+			self.numKWArguments = 0
+			for key in kwargs.keys():
+				self.mykeywordargs[key] = kwargs[key]
+				self.numKWArguments = self.numKWArguments + 1
+
+			if self.doVerbose:
+				print "function when __init__ is ", self.function, " *args are ", self.myarguments, " **kwargs are ", self.mykeywordargs
+				print "__init__ function ", self.function, " time ", App.g_kUtopiaModule.GetGameTime(), "next interval should be ", (App.g_kUtopiaModule.GetGameTime() + self.tInterval + self.StartDelay)
+
+		def Start(self):
+			#print 'Start:  self.__dict__', self.__dict__
+
+			debug(__name__ + ", Start")
+			if self.count == 0:
+				#print 'Making a timer', self.__dict__
+
+				sFunc = 'FoundationTriggers.' + self.name + str(self.eventKey)
+				pTimer = MissionLib.CreateTimer(self.eventKey, sFunc, (App.g_kUtopiaModule.GetGameTime() + self.StartDelay), self.tInterval, self.tDuration)
+				self.idTimer = pTimer.GetObjID()
+
+			#print 'Start:  self.__dict__', self.__dict__
+
+			self.count = self.count + 1
+
+		def __call__(self, pObject, pEvent):
+			debug(__name__ + ", __call__")
+			if self.function != None:
+
+				pShip = App.ShipClass_GetObjectByID(None, self.iShipID)
+
+				if self.doVerbose:
+					print "__call__ function ", self.function, " time ", App.g_kUtopiaModule.GetGameTime(), "previus interval should have been ", (App.g_kUtopiaModule.GetGameTime() - self.tInterval), "pShip = ", repr(pShip)
+				if pShip or self.checkDead < 0:
+					shouldPass = TRUE
+					if self.checkDead != None and self.checkDead > 0:
+						if pShip.IsDead():
+							shouldPass = FALSE
+						elif self.checkDead > 1 and pShip.IsDying():
+							shouldPass = FALSE
+					if shouldPass:
+						if self.numArguments <= 0 and self.numKWArguments <= 0:
+							try:
+								myStuff = self.function()
+							except:
+								traceback.print_exc()
+								myStuff = None
+						else:
+							myargs = None
+							myargslen = len(self.myarguments)
+							mykwargs = None
+							funct = self.function
+							if self.numKWArguments > 0 and not self.mykeywordargs and myargslen > 1: # For some reason, when switching from the init to call, self.myarguments sometimes transforms into a tuple of tuples and will now hold what self.mykeywordargs had, on the last position; while self.mykeywordargs just turns into an empty dictionary
+								myargslen = len(self.myarguments[0])
+								myargs = self.myarguments[0]
+								mykwargs = self.myarguments[-1]
+							else:
+								myargs = self.myarguments
+								mykwargs = self.mykeywordargs
+
+							if type(mykwargs) != type({}):
+								mykwargs = None
+								mykwargs = {}
+
+							#if myargs == None or len(myargs) <= 0:
+							#	myargs = ()					
+							try:
+								if self.doVerbose:
+									print __name__, ".", self.name, ".__call__ is calling... ", self.function
+								myStuff = apply(self.function, myargs, mykwargs)
+							except:
+								print "ERROR on function when __call__ is ", self.function, " *args are ", self.myarguments, " **kwargs are ", self.mykeywordargs
+								traceback.print_exc()
+								myStuff = None
+						try:
+							if myStuff and self.itsanEffect:
+								if self.doVerbose:
+									print __name__, ".", self.name, ".__call__ is hitting .Play()"
+								myStuff.Play()
+						except:
+							print "ERROR on function when calling Play for __call__ is ", self.function, " *args are ", self.myarguments, " **kwargs are ", self.mykeywordargs
+							traceback.print_exc()
+							myStuff = None
+			if self.OneWonder == 1:
+				self.Stop(1)
+			return 0
+
 	####################################################################
 	####################################################################
-	# A DOUBLE TEST, IF THIS WORKS, MAKE IT WORK BETTER:
-	# It doesn't...
+
+	####################################################################
+	####################################################################
+	# FUTURE TO-DO A DOUBLE TEST, IF THIS WORKS, MAKE IT WORK BETTER:
+	# It doesn't prevent the memory crash that can happen with unpached NanoFXv2 beta :( ...
 	"""
 	from Custom.NanoFXv2.SpecialFX import PlasmaFX
 	oldCreatePlasmaFX = PlasmaFX.CreatePlasmaFX
@@ -173,7 +357,7 @@ if bEnabled:
 		debug(__name__ + ", NewCreateSpecialFXSeq")
 		shouldPass = FALSE
 		pSpecialFX = None
-		checkDeadDying = 1 # TO-DO 2 or 1?
+		checkDeadDying = 1 # TO-DO 2, 1 or 0?
 		pShip = None
 		iShipID = pShipA.GetObjID()
 		if (iShipID is not None) and iShipID != App.NULL_ID:
@@ -288,159 +472,71 @@ if bEnabled:
 	# ENABLE PATCH TO APPLY
 	if G_PATCHFIX == 1 or G_PATCHFIX > 2:
 		ExpFX.DeleteObjectFromSet = NewDeleteObjectFromSet
+	"""
+
+	####################################################################
+	####################################################################
+	# PATCH FOR: DoPostExplosionStuff
+	# Currently not applied
 
 	# leave no derelict for small ships
-	def NewDoPostExplosionStuff(pAction, iShipID):	
+	oldDoPostExplosionStuff = ExpFX.DoPostExplosionStuff
+	def NewDoPostExplosionStuff(pAction, iShipID):
+		if not(G_PATCHFIX == 1 or G_PATCHFIX > 2):
+			return oldDoPostExplosionStuff(pAction, iShipID)
+
 		pShip = App.ShipClass_GetObjectByID(None, iShipID)
 	
 		if pShip:
-			if pShip.GetRadius() < 0.5 and pShip.GetContainingSet():
-				ExpFX.DeleteObjectFromSet(pShip.GetContainingSet(), pShip)
-				pShip.SetDeleteMe(1)
+			iPlayerID = None
+			try:
+				iPlayerID = MissionLib.GetPlayer()
+				if iPlayerID:
+					iPlayerID = iPlayerID.GetObjID()
+			except:
+				iPlayerID = None
+				traceback.print_exc()
+			isPlayer = ((iShipID == iPlayerID))
+			if (not isPlayer): # and pShip.IsDead():
+				try:
+					#App.g_kEventManager.RemoveAllBroadcastHandlersForObject(pShip)
+					pShip.SetDeleteMe(1)
+				except:
+					traceback.print_exc()
+
+			#if pShip.GetRadius() < 0.5 and pShip.GetContainingSet(): # TO-DO ORIGINAL
+			if pShip.GetContainingSet():
+				try:
+					ExpFX.DeleteObjectFromSet(pShip.GetContainingSet(), pShip)
+				except:
+					traceback.print_exc()
+
+			if not isPlayer:
+				try:
+					# TO-DO You'll begin to get when I became desperate D;
+					#App.g_kPoolManager.Purge() # TESTED, DON'T ADD IT
+					#App.g_kLocalizationManager.Purge() # TESTED, DON'T ADD IT
+					#App.g_kAnimationManager.ClearAnimations()# TESTED BUT DON'T ADD IT
+					#App.g_kModelManager.Purge() # TESTED, DON'T ADD IT
+
+					App.g_kEventManager.RemoveAllBroadcastHandlersForObject(pShip)
+
+					#App.g_kIconManager.Purge()
+					#App.g_kModelPropertyManager.ClearLocalTemplates() # TO-DO
+					#App.g_kLODModelManager.Purge() # TO-DO TESTED, DON'T ADD IT
+					#pShip.SetDeleteMe(1)
+				except:
+					traceback.print_exc()
+
 		return 0
 
+	################### ############# ############# ####################
 	# ENABLE PATCH TO APPLY
-	if G_PATCHFIX == 1 or G_PATCHFIX > 2:
-		ExpFX.DoPostExplosionStuff = NewDoPostExplosionStuff
-	"""
+	#if G_PATCHFIX == 1 or G_PATCHFIX > 2:
+	#	ExpFX.DoPostExplosionStuff = NewDoPostExplosionStuff
+	
 	####################################################################
 	####################################################################
-
-
-	class NewNanoTimerDef(FoundationTech.TimerDef):
-		def __init__(self, name, eventKey, tInterval, tDuration, dict, function, iShipID, *args, **kwargs):
-			debug(__name__ + ", __init__")
-			if eventKey != None:
-				self.eventKey = eventKey
-			else:
-				self.eventKey = App.UtopiaModule_GetNextEventType()
-			self.count = 0 # If set to -1 it will ignore the first event that happens
-
-			self.idTimer = None
-			self.tInterval = tInterval
-			self.StartDelay = 0
-
-			if dict != None and type(dict) == type({}):
-				if dict.has_key("countStart"):
-					self.count = dict["countStart"]
-				else:
-					self.count = 0
-
-				if dict.has_key("countStart"):
-					self.count = dict["countStart"]
-				else:
-					self.count = 0
-				if dict.has_key("itsanEffect") and dict["itsanEffect"] == 1:
-					self.itsanEffect = 1
-				else:
-					self.itsanEffect = 0
-
-				if dict.has_key("defaultTimerDefBehaviour") and dict["defaultTimerDefBehaviour"] == 0:
-					self.tInterval = tInterval
-					self.StartDelay = 0
-					self.tDuration = tDuration
-					self.OneWonder = 0
-				else:
-					self.StartDelay = tInterval
-					self.tInterval = 0
-					self.tDuration = 0
-					self.OneWonder = 1
-
-				if dict.has_key("checkDead"):
-					self.checkDead = dict["checkDead"]
-				else:
-					self.checkDead = 0
-
-			key = name + str(eventKey)
-			FoundationTriggers.__dict__[name + str(eventKey)] = self
-			Foundation.MutatorElementDef.__init__(self, name, dict)
-			# The line below because apparently the lines above did not cover dict on the level we want
-			#self.__dict__.update(dict)
-			self.function = function
-			self.iShipID = iShipID
-			self.myarguments = args
-			self.numArguments = 0
-			if args != None:
-				 self.numArguments = len(self.myarguments)
-
-			#self.mykeywordargs = kwargs #Theoretically, this should be the actual keyword argument values - in reality, for some reason, when it comes to call, that is not the case and they get on self.myarguments[1] as if they were introduced on a new tuple
-			self.mykeywordargs = {}
-			self.numKWArguments = 0
-			for key in kwargs.keys():
-				self.mykeywordargs[key] = kwargs[key]
-				self.numKWArguments = self.numKWArguments + 1
-			#print "function when __init__ is ", self.function, " *args are ", self.myarguments, " **kwargs are ", self.mykeywordargs
-			#print "__init__ function ", self.function, " time ", App.g_kUtopiaModule.GetGameTime(), "next interval should be ", (App.g_kUtopiaModule.GetGameTime() + self.tInterval)
-
-		def Start(self):
-			#print 'Start:  self.__dict__', self.__dict__
-
-			debug(__name__ + ", Start")
-			if self.count == 0:
-				#print 'Making a timer', self.__dict__
-
-				sFunc = 'FoundationTriggers.' + self.name + str(self.eventKey)
-				pTimer = MissionLib.CreateTimer(self.eventKey, sFunc, (App.g_kUtopiaModule.GetGameTime() + self.StartDelay), self.tInterval, self.tDuration)
-				self.idTimer = pTimer.GetObjID()
-
-			#print 'Start:  self.__dict__', self.__dict__
-
-			self.count = self.count + 1
-
-		def __call__(self, pObject, pEvent):
-			debug(__name__ + ", __call__")
-			if self.function != None:
-				#print "__call__ function ", self.function, " time ", App.g_kUtopiaModule.GetGameTime(), "previus interval should have been ", (App.g_kUtopiaModule.GetGameTime() - self.tInterval)
-				pShip = App.ShipClass_GetObjectByID(None, self.iShipID)
-				if pShip:
-					shouldPass = TRUE
-					if self.checkDead != None and self.checkDead > 0:
-						if pShip.IsDead():
-							shouldPass = FALSE
-						elif self.checkDead > 1 and pShip.IsDying():
-							shouldPass = FALSE
-					if shouldPass:
-						if self.numArguments <= 0 and self.numKWArguments <= 0:
-							try:
-								myStuff = self.function()
-							except:
-								traceback.print_exc()
-								myStuff = None
-						else:
-							myargs = None
-							myargslen = len(self.myarguments)
-							mykwargs = None
-							funct = self.function
-							if self.numKWArguments > 0 and not self.mykeywordargs and myargslen > 1: # For some reason, when switching from the init to call, self.myarguments sometimes transforms into a tuple of tuples and will now hold what self.mykeywordargs had, on the last position; while self.mykeywordargs just turns into an empty dictionary
-								myargslen = len(self.myarguments[0])
-								myargs = self.myarguments[0]
-								mykwargs = self.myarguments[-1]
-							else:
-								myargs = self.myarguments
-								mykwargs = self.mykeywordargs
-
-							if type(mykwargs) != type({}):
-								mykwargs = None
-								mykwargs = {}
-
-							#if myargs == None or len(myargs) <= 0:
-							#	myargs = ()					
-							try:
-								myStuff = apply(self.function, myargs, mykwargs)
-							except:
-								print "ERROR on function when __call__ is ", self.function, " *args are ", self.myarguments, " **kwargs are ", self.mykeywordargs
-								traceback.print_exc()
-								myStuff = None
-						try:
-							if myStuff and self.itsanEffect:
-								myStuff.Play()
-						except:
-							print "ERROR on function when calling Play for __call__ is ", self.function, " *args are ", self.myarguments, " **kwargs are ", self.mykeywordargs
-							traceback.print_exc()
-							myStuff = None
-			if self.OneWonder == 1:
-				self.Stop(1)
-			return 0
 
 
 	####################################################################
@@ -513,12 +609,12 @@ if bEnabled:
 		vEmitDir.z = vSpeed.GetZ() * vEmitDir.z
 
 
-		### TO-DO A TEST BELOW - doesn't seem to do the trick, but it might help ###
+		### TO-DO A TEST BELOW - doesn't seem to do much, but it might help ###
 		if App.g_kLODModelManager.AreGlowMapsEnabled() == 1 and App.g_kLODModelManager.GetDropLODLevel() == 0:
 			App.g_kLODModelManager.SetGlowMapsEnabled(0)
 			App.g_kLODModelManager.SetGlowMapsEnabled(1)
-		
 		### TO-DO A TEST ABOVE ###
+
 		shouldDoVisibleDmgStuff = 0
 		if not (pShip.IsDead() or pShip.IsDying()):
 			shouldDoVisibleDmgStuff = ShouldDoDebris(pShip, g_Threshold, g_minThreshold, g_minShield)
@@ -750,7 +846,9 @@ if bEnabled:
 		vEmitDir = App.NiPoint3((App.g_kSystemWrapper.GetRandomNumber(200) - 100) * 0.01, (App.g_kSystemWrapper.GetRandomNumber(200) - 100) * 0.01, (App.g_kSystemWrapper.GetRandomNumber(200) - 100) * 0.01)
 
 		###
-		shouldDoVisibleDmgStuff = ShouldDoDebris(pShip, 2)
+		shouldDoVisibleDmgStuff = 0
+		if not shipIsDead:
+			shouldDoVisibleDmgStuff = ShouldDoDebris(pShip, 2)
 		if fSize != 1:
 
 			sFile = ExpFX.GetNanoGfxFile("NovaRingGfx", "scripts/Custom/NanoFXv2/ExplosionFX/Gfx/NovaRing/")
@@ -1229,7 +1327,9 @@ if bEnabled:
 		if not shipRadius or shipRadius < 0.1:
 			return pSequence
 
-		shouldDoVisibleDmgStuff = ShouldDoDebris(pShip, 2, fDmg=1200)
+		shouldDoVisibleDmgStuff = 0
+		if not pShip.IsDead(): # or pShip.IsDying():
+			shouldDoVisibleDmgStuff = ShouldDoDebris(pShip, 2, fDmg=1200)
 
 		while (fExplosionTime < fTime):
 			###
@@ -1394,7 +1494,9 @@ if bEnabled:
 				pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.5) 
 			return pSequence
 
-		shouldDoVisibleDmgStuff = ShouldDoDebris(pShip, 2, fDmg=1200)
+		shouldDoVisibleDmgStuff = 0
+		if not pShip.IsDead(): # or pShip.IsDying():
+			shouldDoVisibleDmgStuff = ShouldDoDebris(pShip, 2, fDmg=1200)
 
 		while (fExplosionTime < fTime):
 			###
@@ -1488,7 +1590,7 @@ if bEnabled:
 	# -- The following function is the sequence-style patch
 	def NewNanoCollisionEffect(pShip, pEvent):
 		### Setup ###
-		debug(__name__ + ", NanoCollisionEffect")
+		debug(__name__ + ", NewNanoCollisionEffect")
 
 		if not pShip or not hasattr(pShip, "GetObjID"):
 			return
@@ -1526,9 +1628,59 @@ if bEnabled:
 		###
 
 		if actionsAdded == 0:
-			pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.5) 
-		pSequence.Play()
+			pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.5)
+
+		if pSequence:
+			pSequence.Play()
 		###
+		"""
+		# FUTURE TO-DO ALTERNATE
+		if not pShip or not hasattr(pShip, "GetObjID"):
+			return
+
+		iShipID = pShip.GetObjID()
+
+		pShip2 = App.ShipClass_GetObjectByID(None, iShipID)
+		if not pShip2: # or pShip.IsDead():
+			return
+
+		pSet = pShip.GetContainingSet()
+		if pSet:
+			#actionsAdded = 0
+			fSize     = pShip.GetRadius()
+			if (not fSize is None) and fSize > 0.0:
+				pAttachTo = pSet.GetEffectRoot()
+				shipNode = pShip.GetNode()
+				if (not shipNode is None): 
+					pEmitFrom = App.TGModelUtils_CastNodeToAVObject(pShip.GetNode())
+					if pEmitFrom is not None:
+						#pSequence = App.TGSequence_Create()
+						###
+						### Get the collision points ###
+						for iPoint in range( pEvent.GetNumPoints() ):
+							vEmitPos = pEvent.GetPoint(iPoint)
+							vEmitDir = App.TGPoint3_GetRandomUnitVector()
+
+							### Add an explosion at this point ###
+							sFile = ExpFX.GetNanoGfxFile("ExplosionGfx", "scripts/Custom/NanoFXv2/ExplosionFX/Gfx/Explosions/")
+							pCollision = Custom.NanoFXv2.NanoFX_ScriptActions.CreateControllerFX(sFile, None, pAttachTo, fSize, vEmitPos, vEmitDir)
+							if pCollision:
+								pCollision.Play()
+								#pSequence.AddAction(pCollision)
+								#actionsAdded = actionsAdded + 1
+
+						pSound = ExpFX.CreateNanoSoundSeq(pShip, "ExpCollisionSfx")
+						if pSound:
+							pSound.Play()
+							#pSequence.AddAction(pSound)
+							#actionsAdded = actionsAdded + 1
+						###
+
+						#if actionsAdded == 0:
+						#	pSequence.AddAction(App.TGScriptAction_Create(__name__, "ASequenceDummy")) 
+						#pSequence.Play()
+						###
+		"""
 		pShip.CallNextHandler(pEvent)
 
 	################### ############# ############# ####################
@@ -1577,11 +1729,45 @@ if bEnabled:
 		if (fExplodingShipRadius is not None) and fExplodingShipRadius > 0.1:
 			pLargeExpSeq1EmitFrom = pExplodingShip.GetRandomPointOnModel() #ADDED LINEs, TEST if this functions is the cause of our suffering
 
-		if fExplodingShipRadius <= (0.01 / 15.0): #ANOTHER ADDITION, MAYBE RADIUS TOO SMALL ARE NOT CONSIDERED?
-			fExplodingShipRadius = 0.01/15.0 #ANOTHER ADDITION, MAYBE RADIUS TOO SMALL ARE NOT CONSIDERED?
+		if fExplodingShipRadius <= (0.01 / 15.0):
+			fExplodingShipRadius = 0.01/15.0
+
+		isPlayer = 0
+		#auxPlayer = None
+		skipUnwatched = 0 #1
+		try:
+			pPlayer = MissionLib.GetPlayer()
+			iPlayerID = None
+			if pPlayer and hasattr(pPlayer, "GetObjID") and not pPlayer.IsDead():
+				iPlayerID = pPlayer.GetObjID()
+				auxPlayer = pPlayer
+				if iPlayerID == iShipID:
+					isPlayer = 1
+			else:
+				myShpName = pShip.GetName()
+				if myShpName is not None:
+					sMyName = str(myShpName)
+					if sMyName is not None and sMyName == "Player" or sMyName == "player":
+						isPlayer = 1
+		except:
+			isPlayer = 0
+			traceback.print_exc()
+
+		if auxPlayer is None:
+			skipUnwatched = 1
+
+		if not skipUnwatched and not isPlayer:
+			pMeSet = pShip.GetContainingSet()
+			pPlSet = auxPlayer.GetContainingSet()
+			if pMeSet != None and pPlSet != None and pMeSet.GetRegionModule() == pPlSet.GetRegionModule():
+				skipUnwatched = 0
+			else:
+				skipUnwatched = 1
 
 		pWarpSubsys = pExplodingShip.GetPowerSubsystem()
-		if (pExplodingShip.GetName() == "Player") or (pExplodingShip.GetName() == "player"):
+		if isPlayer:
+		#if (pExplodingShip.GetName() == "Player") or (pExplodingShip.GetName() == "player"):
+			#isPlayer = 1
 			pExplodingShip.SetLifeTime (fTotalSequenceTime)
 			pWarpPower = 15
 			if pWarpSubsys and pWarpSubsys.GetPowerOutput() > 0 and fExplodingShipRadius > 0:
@@ -1598,13 +1784,12 @@ if bEnabled:
 					print("Setting splash damage for %s to (%f, %f)" % (pExplodingShip.GetName(), pExplodingShip.GetSplashDamage(), pExplodingShip.GetSplashDamageRadius()))
 					debug(__name__ + ", NewNanoDeathSeq Setting splash damage for %s to (%f, %f)" % (pExplodingShip.GetName(), pExplodingShip.GetSplashDamage(), pExplodingShip.GetSplashDamageRadius()))
 
-			pExplodingShip.UpdateNodeOnly() # ANOTHER ADDITION
 		###
 		### Begin Death Sequence ###
 		############################
 		###
 		### Flicker some lights ###
-		if (Custom.NanoFXv2.NanoFX_Config.eFX_LightFlickerFX == "On"):
+		if (not skipUnwatched) and (Custom.NanoFXv2.NanoFX_Config.eFX_LightFlickerFX == "On"):
 			ET_NOVA_EVT = App.UtopiaModule_GetNextEventType()
 			myTime = 1.0
 			pFlickerAction1 = NewNanoTimerDef(str(actionsAdded) + "NanoDeathNoSeq" + str(iShipID), ET_NOVA_EVT, myTime, myTime, {"itsanEffect": 1}, Custom.NanoFXv2.NanoFX_Lib.CreateFlickerSeq, iShipID, pExplodingShip, 3.0, sStatus = "Off")
@@ -1614,66 +1799,75 @@ if bEnabled:
 
 		###
 		### Create Nano's Initial Large explosions ###
+		if (not skipUnwatched):
+			ET_NOVA_EVT = App.UtopiaModule_GetNextEventType()
+			myTime = 0.2
+			pSmallExpSeq1 = NewNanoTimerDef(str(actionsAdded) + "NanoDeathNoSeq" + str(iShipID), ET_NOVA_EVT, myTime, myTime, {"itsanEffect": 0}, CreateNanoExpSmallNoSeq, iShipID, pExplodingShip, 0.01)
+			if pSmallExpSeq1:
+				pFullSequence.append(pSmallExpSeq1)
+				actionsAdded = actionsAdded + 1
 
-		ET_NOVA_EVT = App.UtopiaModule_GetNextEventType()
-		myTime = 0.2
-		pSmallExpSeq1 = NewNanoTimerDef(str(actionsAdded) + "NanoDeathNoSeq" + str(iShipID), ET_NOVA_EVT, myTime, myTime, {"itsanEffect": 0}, CreateNanoExpSmallNoSeq, iShipID, pExplodingShip, 0.01)
-		if pSmallExpSeq1:
-			pFullSequence.append(pSmallExpSeq1)
-			actionsAdded = actionsAdded + 1
+			ET_NOVA_EVT = App.UtopiaModule_GetNextEventType()
+			myTime = fTotalSequenceTime - 3.2 + fExplosionShift
+			pLargeExpSeq1 = NewNanoTimerDef(str(actionsAdded) + "NanoDeathNoSeq" + str(iShipID), ET_NOVA_EVT, myTime, myTime, {"itsanEffect": 0}, CreateNanoExpLargeNoSeq, iShipID, pExplodingShip, 2, pEmitFrom=pLargeExpSeq1EmitFrom)
+			if pLargeExpSeq1: # CRASH CHECK PROGRESS: WITH THIS UNCOMMENTED, IT SOMETIMES CRASHES
+				pFullSequence.append(pLargeExpSeq1)
+				actionsAdded = actionsAdded + 1
 
+			ET_NOVA_EVT = App.UtopiaModule_GetNextEventType()
+			myTime = fTotalSequenceTime - 3.05 + fExplosionShift
+			pLargeExpSeq2 = NewNanoTimerDef(str(actionsAdded) + "NanoDeathNoSeq" + str(iShipID), ET_NOVA_EVT, myTime, myTime, {"itsanEffect": 0}, CreateNanoExpLargeNoSeq, iShipID, pExplodingShip, 2)
+			if pLargeExpSeq2:
+				pFullSequence.append(pLargeExpSeq2)
+				actionsAdded = actionsAdded + 1
 
-		ET_NOVA_EVT = App.UtopiaModule_GetNextEventType()
-		myTime = fTotalSequenceTime - 3.2 + fExplosionShift
-		pLargeExpSeq1 = NewNanoTimerDef(str(actionsAdded) + "NanoDeathNoSeq" + str(iShipID), ET_NOVA_EVT, myTime, myTime, {"itsanEffect": 0}, CreateNanoExpLargeNoSeq, iShipID, pExplodingShip, 2, pEmitFrom=pLargeExpSeq1EmitFrom)
-		if pLargeExpSeq1: # CRASH CHECK PROGRESS: WITH THIS UNCOMMENTED, IT SOMETIMES CRASHES
-			pFullSequence.append(pLargeExpSeq1)
-			actionsAdded = actionsAdded + 1
-
-
-
-		ET_NOVA_EVT = App.UtopiaModule_GetNextEventType()
-		myTime = fTotalSequenceTime - 3.05 + fExplosionShift
-		pLargeExpSeq2 = NewNanoTimerDef(str(actionsAdded) + "NanoDeathNoSeq" + str(iShipID), ET_NOVA_EVT, myTime, myTime, {"itsanEffect": 0}, CreateNanoExpLargeNoSeq, iShipID, pExplodingShip, 2)
-		if pLargeExpSeq2:
-			pFullSequence.append(pLargeExpSeq2)
-			actionsAdded = actionsAdded + 1
-
-		ET_NOVA_EVT = App.UtopiaModule_GetNextEventType()
-		myTime = fTotalSequenceTime - 2.85 + fExplosionShift
-		pLargeExpSeq3 = NewNanoTimerDef(str(actionsAdded) + "NanoDeathNoSeq" + str(iShipID), ET_NOVA_EVT, myTime, myTime, {"itsanEffect": 0}, CreateNanoExpLargeNoSeq, iShipID, pExplodingShip, 2)
-		if pLargeExpSeq3:
-			pFullSequence.append(pLargeExpSeq3)
-			actionsAdded = actionsAdded + 1
+			ET_NOVA_EVT = App.UtopiaModule_GetNextEventType()
+			myTime = fTotalSequenceTime - 2.85 + fExplosionShift
+			pLargeExpSeq3 = NewNanoTimerDef(str(actionsAdded) + "NanoDeathNoSeq" + str(iShipID), ET_NOVA_EVT, myTime, myTime, {"itsanEffect": 0}, CreateNanoExpLargeNoSeq, iShipID, pExplodingShip, 2)
+			if pLargeExpSeq3:
+				pFullSequence.append(pLargeExpSeq3)
+				actionsAdded = actionsAdded + 1
 
 		###
 		### Destroy Model into Debris Parts ###
-		ET_NOVA_EVT = App.UtopiaModule_GetNextEventType()
-		myTime = fTotalSequenceTime - 1.7 + fExplosionShift
-		pSmallExpSeq2 = NewNanoTimerDef(str(actionsAdded) + "NanoDeathNoSeq" + str(iShipID), ET_NOVA_EVT, myTime, myTime, {"itsanEffect": 0}, CreateNanoExpSmallNoSeq, iShipID, pExplodingShip, 2.0)
-		if pSmallExpSeq2:
-			pFullSequence.append(pSmallExpSeq2)
-			actionsAdded = actionsAdded + 1
+			ET_NOVA_EVT = App.UtopiaModule_GetNextEventType()
+			myTime = fTotalSequenceTime - 1.7 + fExplosionShift
+			pSmallExpSeq2 = NewNanoTimerDef(str(actionsAdded) + "NanoDeathNoSeq" + str(iShipID), ET_NOVA_EVT, myTime, myTime, {"itsanEffect": 0}, CreateNanoExpSmallNoSeq, iShipID, pExplodingShip, 2.0)
+			if pSmallExpSeq2:
+				pFullSequence.append(pSmallExpSeq2)
+				actionsAdded = actionsAdded + 1
 
 
 		###
 		### Add Random Spin to Model ###
 		if (Custom.NanoFXv2.NanoFX_Config.eFX_RotationFX == "On"):
+			## TO-DO TESTING STUFF HERE -WHEN I SET IT TO IGNORE ALL EVENTS, THESE TWO WERE THE ONLY ONES STILL APPLYING, APART FROM THE CLEANUP ONE
+			## Crash could be becaue of these two, the cleanup, the g_LightsOff removal, or a combination of all three, or something else
+			## When removing these two, crash still happened, so at least the other two may cause stuff to happen
+			## When removing the Cleanup Event, still happened
+			## When hiding the g_LightsOff removal, still happened
+			## Conclusion: something else must be causing this
+			## When commenting the forceStart thing, still happens
+			## When it made the function return normally, it also crashed after a few WC' Neghvar dead (I think it was 5?)
+			## When it generated an error that needed to get traceback working, stuff worked somehow, once. Then couldn't replicate it again - check how
 			ET_NOVA_EVT = App.UtopiaModule_GetNextEventType()
 			myTime = 0.3
 			pRotAction1 = NewNanoTimerDef(str(actionsAdded) + "NanoDeathNoSeq" + str(iShipID), ET_NOVA_EVT, myTime, myTime, {"itsanEffect": 1}, Custom.NanoFXv2.NanoFX_Lib.CreateRotationSeq, iShipID, pExplodingShip, fRotation = 700)
 			if pRotAction1:
 				pFullSequence.append(pRotAction1)
 				actionsAdded = actionsAdded + 1
+
+
 			ET_NOVA_EVT = App.UtopiaModule_GetNextEventType()
 			myTime = fTotalSequenceTime - 1.6 + fExplosionShift
 			pRotAction2 = NewNanoTimerDef(str(actionsAdded) + "NanoDeathNoSeq" + str(iShipID), ET_NOVA_EVT, myTime, myTime, {"itsanEffect": 1}, Custom.NanoFXv2.NanoFX_Lib.CreateRotationSeq, iShipID, pExplodingShip, fRotation = 1000, fSpeed = 0.5)
 			if pRotAction2:
 				pFullSequence.append(pRotAction2)
 				actionsAdded = actionsAdded + 1
+
 		###
 		### Create Nano's Warp Core Explosion ###
-		if fRadius and fRadius > 0.0: 
+		if (not skipUnwatched) and fRadius and fRadius > 0.0: 
 			ET_NOVA_EVT = App.UtopiaModule_GetNextEventType()
 			myTime = fTotalSequenceTime - 1.7 + fExplosionShift
 			pNovaExpAction1 = NewNanoTimerDef(str(actionsAdded) + "NanoDeathNoSeq" + str(iShipID), ET_NOVA_EVT, myTime, myTime, {"itsanEffect": 0}, CreateNanoExpNovaNoSeq, iShipID, pExplodingShip, fRadius / 15)
@@ -1683,30 +1877,40 @@ if bEnabled:
 
 		###
 		### Create Nano's Final Explosions ###
+		if (not skipUnwatched):
+			ET_NOVA_EVT = App.UtopiaModule_GetNextEventType()
+			pFinalExpAction1 = NewNanoTimerDef(str(actionsAdded) + "NanoDeathNoSeq" + str(iShipID), ET_NOVA_EVT, fTotalSequenceTime - 1.95 + fExplosionShift, fTotalSequenceTime - 1.95 + fExplosionShift, {"itsanEffect": 0}, CreateNanoExpLargeNoSeq, iShipID, pExplodingShip, 2)
+			if pFinalExpAction1:
+				pFullSequence.append(pFinalExpAction1)
+				actionsAdded = actionsAdded + 1
 
-		ET_NOVA_EVT = App.UtopiaModule_GetNextEventType()
-		pFinalExpAction1 = NewNanoTimerDef(str(actionsAdded) + "NanoDeathNoSeq" + str(iShipID), ET_NOVA_EVT, fTotalSequenceTime - 1.95 + fExplosionShift, fTotalSequenceTime - 1.95 + fExplosionShift, {"itsanEffect": 0}, CreateNanoExpLargeNoSeq, iShipID, pExplodingShip, 2)
-		if pFinalExpAction1:
-			pFullSequence.append(pFinalExpAction1)
-			actionsAdded = actionsAdded + 1
+			ET_NOVA_EVT = App.UtopiaModule_GetNextEventType()
+			pFinalExpAction2 = NewNanoTimerDef(str(actionsAdded) + "NanoDeathNoSeq" + str(iShipID), ET_NOVA_EVT, fTotalSequenceTime - 1.85 + fExplosionShift, fTotalSequenceTime - 1.85 + fExplosionShift, {"itsanEffect": 0}, CreateNanoExpLargeNoSeq, iShipID, pExplodingShip, 2)
+			if pFinalExpAction2:
+				pFullSequence.append(pFinalExpAction2)
+				actionsAdded = actionsAdded + 1
 
-		ET_NOVA_EVT = App.UtopiaModule_GetNextEventType()
-		pFinalExpAction2 = NewNanoTimerDef(str(actionsAdded) + "NanoDeathNoSeq" + str(iShipID), ET_NOVA_EVT, fTotalSequenceTime - 1.85 + fExplosionShift, fTotalSequenceTime - 1.85 + fExplosionShift, {"itsanEffect": 0}, CreateNanoExpLargeNoSeq, iShipID, pExplodingShip, 2)
-		if pFinalExpAction2:
-			pFullSequence.append(pFinalExpAction2)
-			actionsAdded = actionsAdded + 1
-
-		ET_NOVA_EVT = App.UtopiaModule_GetNextEventType()
-		pFinalExpAction3 = NewNanoTimerDef(str(actionsAdded) + "NanoDeathNoSeq" + str(iShipID), ET_NOVA_EVT, fTotalSequenceTime - 1.65 + fExplosionShift, fTotalSequenceTime - 1.65 + fExplosionShift, {"itsanEffect": 0}, CreateNanoExpLargeNoSeq, iShipID, pExplodingShip, 2)
-		if pFinalExpAction3:
-			pFullSequence.append(pFinalExpAction3)
-			actionsAdded = actionsAdded + 1
+			ET_NOVA_EVT = App.UtopiaModule_GetNextEventType()
+			pFinalExpAction3 = NewNanoTimerDef(str(actionsAdded) + "NanoDeathNoSeq" + str(iShipID), ET_NOVA_EVT, fTotalSequenceTime - 1.65 + fExplosionShift, fTotalSequenceTime - 1.65 + fExplosionShift, {"itsanEffect": 0}, CreateNanoExpLargeNoSeq, iShipID, pExplodingShip, 2)
+			if pFinalExpAction3:
+				pFullSequence.append(pFinalExpAction3)
+				actionsAdded = actionsAdded + 1
 		###
 		#pFullSequence.SetUseRealTime(1)
 
 		ET_NOVA_EVT = App.UtopiaModule_GetNextEventType()
-		pPostExplosionStuffAction = NewNanoTimerDef(str(actionsAdded) + "NanoDeathNoSeq" + str(iShipID), ET_NOVA_EVT, fTotalSequenceTime, fTotalSequenceTime, {"itsanEffect": 0}, Custom.NanoFXv2.ExplosionFX.ExpFX.DoPostExplosionStuff, iShipID, None, iShipID)
+		myTime = fTotalSequenceTime
+		if isPlayer: # FUTURE TO-DO TESTING SHORTER TIMES
+			myTime = fTotalSequenceTime -0.5
+		else:
+			myTime = fTotalSequenceTime/2 +0.5
+		pPostExplosionStuffAction = NewNanoTimerDef(str(actionsAdded) + "NanoDeathNoSeq" + str(iShipID), ET_NOVA_EVT, myTime, myTime, {"itsanEffect": 0}, ExpFX.DoPostExplosionStuff, iShipID, None, iShipID)
 		if pPostExplosionStuffAction:
+			pFullSequence.append(pPostExplosionStuffAction)
+			actionsAdded = actionsAdded + 1
+
+		pPostExplosionStuffAction2 = NewNanoTimerDef(str(actionsAdded) + "NanoDeathNoSeq" + str(iShipID), ET_NOVA_EVT, myTime * 0.95, myTime * 0.95, {"itsanEffect": 0, "checkDead": -1}, RemoveFromg_LightsOff, iShipID, None, iShipID)
+		if pPostExplosionStuffAction2:
 			pFullSequence.append(pPostExplosionStuffAction)
 			actionsAdded = actionsAdded + 1
 
@@ -1715,24 +1919,6 @@ if bEnabled:
 				aTimerClass.Start()
 
 		###
-		bFound = 0
-		listToDelete = []
-		try:
-			for sName in Custom.NanoFXv2.NanoFX_Lib.g_LightsOff: # You cannot use a for loop to traverse lists to then delete items on that, not this way - internally C just makes it skip one, which is not good!
-				if shipName == sName:
-					bFound = 1
-				if bFound == 1:
-					listToDelete.append(sName)
-		except:
-			traceback.print_exc()
-
-		try:
-			for sName in listToDelete: # Weird cases where you have multiple of the same name.
-				Custom.NanoFXv2.NanoFX_Lib.g_LightsOff.remove(sName)
-				break
-		except:
-			traceback.print_exc()
-
 
 	# -- The following function is the sequence-style patch
 	def NewNanoDeathSeq(pShip):
@@ -1767,7 +1953,9 @@ if bEnabled:
 		shipName = pExplodingShip.GetName()
 		fExplodingShipRadius = pExplodingShip.GetRadius()
 		pWarpSubsys = pExplodingShip.GetPowerSubsystem()
+		isPlayer = 0
 		if (pExplodingShip.GetName() == "Player") or (pExplodingShip.GetName() == "player"):
+			isPlayer = 1
 			pExplodingShip.SetLifeTime (fTotalSequenceTime)
 			pWarpPower = 15
 			if pWarpSubsys and pWarpSubsys.GetPowerOutput() > 0 and fExplodingShipRadius > 0:
@@ -1783,6 +1971,11 @@ if bEnabled:
 					pExplodingShip.SetSplashDamage(pWarpPower, fRadius)
 					print("Setting splash damage for %s to (%f, %f)" % (pExplodingShip.GetName(), pExplodingShip.GetSplashDamage(), pExplodingShip.GetSplashDamageRadius()))
 					debug(__name__ + ", NewNanoDeathSeq Setting splash damage for %s to (%f, %f)" % (pExplodingShip.GetName(), pExplodingShip.GetSplashDamage(), pExplodingShip.GetSplashDamageRadius()))
+
+		if G_DISABLE_DEATH_EFFECTS == 1:
+			pFullSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.5) 
+			pFullSequence.Play()
+			return
 		###
 		### Begin Death Sequence ###
 		############################
@@ -1861,7 +2054,15 @@ if bEnabled:
 		#pFullSequence.SetUseRealTime(1)
 		pPostExplosionStuffAction = App.TGScriptAction_Create("Custom.NanoFXv2.ExplosionFX.ExpFX", "DoPostExplosionStuff", iShipID)
 		if pPostExplosionStuffAction:
-			pFullSequence.AppendAction(pPostExplosionStuffAction, fTotalSequenceTime)
+			# FUTURE TO-DO A TEST
+			myTime = 0.0
+			if isPlayer:
+				myTime = fTotalSequenceTime -0.5
+			else:
+				myTime = fTotalSequenceTime/2 +0.5
+			
+			#pFullSequence.AppendAction(pPostExplosionStuffAction, fTotalSequenceTime) # TO-DO ORIGINAL
+			pFullSequence.AddAction(pPostExplosionStuffAction, App.TGAction_CreateNull(), myTime) # TO-DO A TEST
 			actionsAdded = actionsAdded + 1
 
 		if actionsAdded == 0:
