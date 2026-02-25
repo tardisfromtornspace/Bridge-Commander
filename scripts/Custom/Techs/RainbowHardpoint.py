@@ -68,8 +68,8 @@ try:
 			self.pEventHandler.SetPyWrapper(self)
 
 			self.pTimer = None
-			bOverflow = 1
-			self.countdown()
+			#bOverflow = 1
+			#self.countdown()
 
 		def countdown(self):
 			debug(__name__ + ", Countdown")
@@ -163,7 +163,7 @@ try:
 				self.lookcloserships(fTime, pAllShipsWithTheTech[myShipInstance], myShipInstance)
 
 		def lookcloserships(self, fTime, pShip, pInstance):
-			debug(__name__ + ", Reality Bomb Counter lookcloserships")
+			debug(__name__ + ", Rainbow Hardpoint Counter lookcloserships")
 			pShip2 = App.ShipClass_Cast(App.TGObject_GetTGObjectPtr(pInstance.pShipID)) # If ship does not exist, do not continue
 			if pShip == None or pInstance == None or pShip.IsDead() or pShip.IsDying() or not pShip2:
 				self.Detach2(pInstance, pShip)

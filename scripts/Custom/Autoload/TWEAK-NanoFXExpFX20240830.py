@@ -1,4 +1,4 @@
-# VERSION 1.2.1
+# VERSION 1.2.2
 # 25th February 2026
 
 import App
@@ -10,7 +10,7 @@ from bcdebug import debug
 TRUE = 1
 FALSE = 0
 
-G_PATCHFIX = 2 # 0 Means we only apply the tweak, 1 that we also apply some extra fixes, 2 that we also apply a new death sequence
+G_PATCHFIX = 3 # 0 Means we only apply the tweak, 1 that we also apply some extra fixes, 2 that we only apply a new death sequence alongside the tweak, 3 that we apply all the fixes and tweaks
 versionPatch = 20260222 # Our version of the patch
 # If disabled, replace TRUE with FALSE
 bEnabled = FALSE
@@ -112,7 +112,7 @@ if bEnabled:
 
 		return shouldDo
 
-	def SafeShipFunc(function, checkDeadDying, iShipID, *args, **kwargs): # TO-DO It is meant to wrap around the actions
+	def SafeShipFunc(function, checkDeadDying, iShipID, defaultReturn, *args, **kwargs): # TO-DO It is meant to wrap around the actions
 		try:
 			debug(__name__ + ", SafeShipFunc")
 			pShip = App.ShipClass_GetObjectByID(None, iShipID)
@@ -128,7 +128,183 @@ if bEnabled:
 					return apply(function, args, kwargs)
 		except:
 			traceback.print_exc()
+		return defaultReturn
+
+	####################################################################
+	####################################################################
+	# A DOUBLE TEST, IF THIS WORKS, MAKE IT WORK BETTER:
+	# It doesn't...
+	"""
+	from Custom.NanoFXv2.SpecialFX import PlasmaFX
+	oldCreatePlasmaFX = PlasmaFX.CreatePlasmaFX
+	def newCreatePlasmaFX(pShip, pEvent):
+		debug(__name__ + ", newCreatePlasmaFX")
+		pSequence = App.TGSequence_Create()
+		pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.5)
+		if not pShip:
+			return pSequence
+
+		iShipID = pShip.GetObjID()
+		return SafeShipFunc(oldCreatePlasmaFX, 2, iShipID, pSequence, pShip, pEvent)
+
+	# ENABLE PATCH TO APPLY
+	if G_PATCHFIX == 1 or G_PATCHFIX > 2:
+		PlasmaFX.CreatePlasmaFX = newCreatePlasmaFX
+
+	from Custom.QBautostart.TPSDATA import BCSTNGPlasmaFXoverride
+	oldBCSTNGPlasmaFXoverride = BCSTNGPlasmaFXoverride.BCSTNGPlasmaFXoverride
+	def newBCSTNGPlasmaFXoverride(pShip, pEvent):
+		debug(__name__ + ", newBCSTNGPlasmaFXoverride")
+		pSequence = App.TGSequence_Create()
+		pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.5)
+		if not pShip:
+			return pSequence
+
+		iShipID = pShip.GetObjID()
+		return SafeShipFunc(oldBCSTNGPlasmaFXoverride, 2, iShipID, pSequence, pShip, pEvent)
+
+	# ENABLE PATCH TO APPLY
+	if G_PATCHFIX == 1 or G_PATCHFIX > 2:
+		BCSTNGPlasmaFXoverride.BCSTNGPlasmaFXoverride = newBCSTNGPlasmaFXoverride
+
+	from Custom.NanoFXv2 import NanoFX_Lib
+	oldCreateSpecialFXSeq = NanoFX_Lib.CreateSpecialFXSeq
+	def NewCreateSpecialFXSeq(pShipA, pEvent, sFXType, bPlay = 0):
+		debug(__name__ + ", NewCreateSpecialFXSeq")
+		shouldPass = FALSE
+		pSpecialFX = None
+		checkDeadDying = 1 # TO-DO 2 or 1?
+		pShip = None
+		iShipID = pShipA.GetObjID()
+		if (iShipID is not None) and iShipID != App.NULL_ID:
+			pShip = App.ShipClass_GetObjectByID(None, iShipID)
+		if pShip:
+			shouldPass = TRUE
+			if checkDeadDying != None and checkDeadDying > 0:
+				if pShip.IsDead():
+						shouldPass = FALSE
+				elif checkDeadDying > 1 and pShip.IsDying():
+						shouldPass = FALSE
+			if shouldPass:
+				debug(__name__ + ", NewCreateSpecialFXSeq (actually doing it)")
+				pSpecialFX = None
+				if (sFXType == "PhalantiumFX"):
+					try:
+						import Custom.NanoFXv2.SpecialFX.PhalantiumFX
+						pSpecialFX = Custom.NanoFXv2.SpecialFX.PhalantiumFX.CreatePhalantiumFX(pShip, pEvent)
+					except:
+						pSpecialFX = None
+						traceback.print_exc()
+	
+				if (sFXType == "PlasmaFX"):
+					try:
+						import Custom.NanoFXv2.SpecialFX.PlasmaFX
+						pSpecialFX = Custom.NanoFXv2.SpecialFX.PlasmaFX.CreatePlasmaFX(pShip, pEvent)
+					except:
+						pSpecialFX = None
+						traceback.print_exc()
+	
+				if (sFXType == "Spatial"):
+					try:
+						import Custom.NanoFXv2.SpecialFX.SpatialFX
+						pSpecialFX = Custom.NanoFXv2.SpecialFX.SpatialFX.CreateSpatialFX(pShip, pEvent)
+					except:
+						pSpecialFX = None
+						traceback.print_exc()
+
+				if (sFXType == "AtmosphereFX"):
+					try:
+						import Custom.NanoFXv2.SpecialFX.AtmosphereFX
+						pSpecialFX = Custom.NanoFXv2.SpecialFX.SpatialFX.CreateAtmosphereFX(pSet, sName, sPlacement, fSize)
+					except:
+						pSpecialFX = None
+						traceback.print_exc()
+
+				noneSpecial = (pSpecialFX is not None)
+				if noneSpecial:
+					pSpecialFX = App.TGScriptAction_Create(__name__, "ASequenceDummy")
+				if (bPlay == 1):
+					pSequence = App.TGSequence_Create()
+					pSequence.AddAction(pSpecialFX)
+					pSequence.Play()
+				else:
+					return pSpecialFX
+
+		if not shouldPass:
+			pSpecialFX = App.TGScriptAction_Create(__name__, "ASequenceDummy")
+			if (bPlay == 1):
+				pSequence = App.TGSequence_Create()
+				pSequence.AddAction(pSpecialFX)
+				pSequence.Play()
+			else:
+				return pSpecialFX
+
+		return pSpecialFX
+
+	# ENABLE PATCH TO APPLY
+	if G_PATCHFIX == 1 or G_PATCHFIX > 2:
+		NanoFX_Lib.CreateSpecialFXSeq = NewCreateSpecialFXSeq
+
+	DELETE_OBJECT_FROM_SET_MSG = 211
+	def NewDeleteObjectFromSet(pSet, pShip):
+		debug(__name__ + ", DeleteObjectFromSet")
+		if not MissionLib.GetShip(pShip.GetName(), None, bAnySet = 1):
+			return
+
+		pSet.DeleteObjectFromSet(pShip.GetName())
+		#pSet.RemoveObjectFromSet(pShip.GetName())
+	
+		if not App.g_kUtopiaModule.IsMultiplayer():
+			return
+
+		pNetwork = App.g_kUtopiaModule.GetNetwork()
+	
+	        # Now send a message to everybody else that the score was updated.
+	        # allocate the message.
+	        pMessage = App.TGMessage_Create()
+		pMessage.SetGuaranteed(1)		# Yes, this is a guaranteed packet
+	               
+	        # Setup the stream.
+	        kStream = App.TGBufferStream()		# Allocate a local buffer stream.
+	        kStream.OpenBuffer(Multiplayer.MissionShared.NET_BUFFER_SIZE)				# Open the buffer stream with byte buffer.
+	
+	        # Write relevant data to the stream.
+	        # First write message type.
+	        kStream.WriteChar(chr(DELETE_OBJECT_FROM_SET_MSG))
+                                        
+	        kStream.WriteInt(pShip.GetObjID())
+
+	        # Okay, now set the data from the buffer stream to the message
+	        pMessage.SetDataFromStream(kStream)
+
+	        if not App.IsNull(pNetwork):
+	                if App.g_kUtopiaModule.IsHost():
+	                        pNetwork.SendTGMessageToGroup("NoMe", pMessage)
+	                else:
+	                        pNetwork.SendTGMessage(pNetwork.GetHostID(), pMessage)
+	        # We're done.  Close the buffer.
+	        kStream.CloseBuffer()
+
+	# ENABLE PATCH TO APPLY
+	if G_PATCHFIX == 1 or G_PATCHFIX > 2:
+		ExpFX.DeleteObjectFromSet = NewDeleteObjectFromSet
+
+	# leave no derelict for small ships
+	def NewDoPostExplosionStuff(pAction, iShipID):	
+		pShip = App.ShipClass_GetObjectByID(None, iShipID)
+	
+		if pShip:
+			if pShip.GetRadius() < 0.5 and pShip.GetContainingSet():
+				ExpFX.DeleteObjectFromSet(pShip.GetContainingSet(), pShip)
+				pShip.SetDeleteMe(1)
 		return 0
+
+	# ENABLE PATCH TO APPLY
+	if G_PATCHFIX == 1 or G_PATCHFIX > 2:
+		ExpFX.DoPostExplosionStuff = NewDoPostExplosionStuff
+	"""
+	####################################################################
+	####################################################################
 
 
 	class NewNanoTimerDef(FoundationTech.TimerDef):
@@ -178,10 +354,8 @@ if bEnabled:
 			key = name + str(eventKey)
 			FoundationTriggers.__dict__[name + str(eventKey)] = self
 			Foundation.MutatorElementDef.__init__(self, name, dict)
-			# The line below because apaprently the lines above did not cover dict on the level we want
+			# The line below because apparently the lines above did not cover dict on the level we want
 			#self.__dict__.update(dict)
-
-
 			self.function = function
 			self.iShipID = iShipID
 			self.myarguments = args
@@ -189,7 +363,7 @@ if bEnabled:
 			if args != None:
 				 self.numArguments = len(self.myarguments)
 
-			#self.mykeywordargs = kwargs #Theoretically, this should be the actual keyword argument values - in reality, for some reason, when it comes to call, that is not the case and they get on self.myarguments[1]
+			#self.mykeywordargs = kwargs #Theoretically, this should be the actual keyword argument values - in reality, for some reason, when it comes to call, that is not the case and they get on self.myarguments[1] as if they were introduced on a new tuple
 			self.mykeywordargs = {}
 			self.numKWArguments = 0
 			for key in kwargs.keys():
@@ -281,29 +455,34 @@ if bEnabled:
 		### Setup ###
 		pShip = App.ShipClass_Cast(pEvent.GetTargetObject())
 		if not pShip or not hasattr(pShip, "GetObjID"):
-			pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.5) 
+			pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 1.0)
+			#pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.5) 
 			return pSequence
 
 		iShipID = pShip.GetObjID()
 
 		pShip = App.ShipClass_GetObjectByID(None, iShipID)
 		if (not pShip) or pShip.IsDead() or pShip.IsDying():
-			pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.5) 
+			pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 1.0)
+			#pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.5) 
 			return pSequence
 
 		# little Defiant fix:
 		if pShip.GetRadius() < 0.1: # or else with small objects the game will crash without any warning
-			pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.5) 
+			pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 1.0)
+			#pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.5) 
 			return pSequence
 
 		myHull = pShip.GetHull()
 		if not myHull or myHull.GetCondition() < 100: # or else with small objects the game will crash without any warning
-			pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.5) 
+			pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 1.0)
+			#pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.5) 
 			return pSequence		
 
 		pSet = pShip.GetContainingSet()
 		if not pSet:
-			pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.5) 
+			pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 1.0)
+			#pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.5) 
 			return pSequence
 
 		### Create Nano's Small Explosion Sound ###
@@ -333,7 +512,16 @@ if bEnabled:
 		vEmitDir.y = vSpeed.GetY() * vEmitDir.y
 		vEmitDir.z = vSpeed.GetZ() * vEmitDir.z
 
-		shouldDoVisibleDmgStuff = ShouldDoDebris(pShip, g_Threshold, g_minThreshold, g_minShield)
+
+		### TO-DO A TEST BELOW - doesn't seem to do the trick, but it might help ###
+		if App.g_kLODModelManager.AreGlowMapsEnabled() == 1 and App.g_kLODModelManager.GetDropLODLevel() == 0:
+			App.g_kLODModelManager.SetGlowMapsEnabled(0)
+			App.g_kLODModelManager.SetGlowMapsEnabled(1)
+		
+		### TO-DO A TEST ABOVE ###
+		shouldDoVisibleDmgStuff = 0
+		if not (pShip.IsDead() or pShip.IsDying()):
+			shouldDoVisibleDmgStuff = ShouldDoDebris(pShip, g_Threshold, g_minThreshold, g_minShield)
 
 		if sType == "TorpShieldHit":
 			# 0.13 is the stock photon torpedo damage radius
@@ -343,7 +531,8 @@ if bEnabled:
 				fSize = (fSize / 2.0) * auxRad
 				if fSize <= 0.1:
 					if actionsAdded <= 0:
-						pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.5) 
+						pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 1.0)
+						#pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.5) 
 					return pSequence
 
 				if fSize <= 1.0:
@@ -428,7 +617,8 @@ if bEnabled:
 		debug(__name__ + ", CreateNanoWeaponExpSeq, the large explosion")
 		if pAttachTo == None or vEmitPos == None or vEmitDir == None or pEmitFrom == None or fSize <= 0.000035:
 			if actionsAdded <= 0:
-				pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.5) 
+				pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 1.0)
+				#pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.5) 
 			return pSequence
 
 		sFile = ExpFX.GetNanoGfxFile("ExplosionGfx", "scripts/Custom/NanoFXv2/ExplosionFX/Gfx/Explosions/")
@@ -436,11 +626,13 @@ if bEnabled:
 		if pExplosion:
 			pSequence.AddAction(pExplosion)
 			actionsAdded = actionsAdded + 1
+
 		sFile = ExpFX.GetNanoGfxFile("ExpFlashGfx", "scripts/Custom/NanoFXv2/ExplosionFX/Gfx/ExpFlash/")
 		pFlash = Custom.NanoFXv2.NanoFX_ScriptActions.CreateControllerFX(sFile, pEmitFrom, pAttachTo, fSize, vEmitPos, vEmitDir, iTiming = 8.0, fBrightness = 0.6)
 		if pFlash:
 			pSequence.AddAction(pFlash)
 			actionsAdded = actionsAdded + 1
+
 		iNumPlume = 3
 		for iPoint in range( iNumPlume ):
 			debug(__name__ + ", CreateNanoWeaponExpSeq, the iPoint explosion")
@@ -456,7 +648,8 @@ if bEnabled:
 				actionsAdded = actionsAdded + 1
 		###
 		if actionsAdded == 0:
-			pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.5) 
+			pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 1.0)
+			#pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.5)
 
 		return pSequence
 
@@ -487,13 +680,13 @@ if bEnabled:
 		##############################
 
 
-		if not pShip or not hasattr(pShip, "GetObjID") or fSize == 0.0:
+		if not pShip or not hasattr(pShip, "GetObjID") or fSize <= 0.0:
 			return pSequence
 
 		iShipID = pShip.GetObjID()
 
 		pShip = App.ShipClass_GetObjectByID(None, iShipID)
-		if (not pShip) or pShip.IsDead(): #TO-DO CHANGED THIS TO SEE IF THIS IS WHAT IS CAUSING THE CRASH
+		if (not pShip) or pShip.IsDead():
 			return pSequence
 
 		shipIsDead = pShip.IsDead()
@@ -513,7 +706,7 @@ if bEnabled:
 
 		if pWarpcoreEmitPos is None:
 			if not shipIsDead:
-				pWarpcore 	 = pShip.GetPowerSubsystem() # TO-DO WE DON'T CARE ABOUT THE WARP CORE, ONLY ITS POSITION!
+				pWarpcore 	 = pShip.GetPowerSubsystem() # WE DON'T CARE ABOUT THE WARP CORE, ONLY ITS POSITION!
 				if pWarpcore and hasattr(pWarpcore, "GetPosition"):
 					pWarpcoreEmitPos = pWarpcore.GetPosition()
 
@@ -564,7 +757,7 @@ if bEnabled:
 			if sFile != None:
 				
 				ET_NOVA_EVT = App.UtopiaModule_GetNextEventType()
-				pExplosion = NewNanoTimerDef(str(actionsAdded) + "NanoExpNovaNoSeq" + str(iShipID), ET_NOVA_EVT, 0.4, 0.4, {"itsanEffect": 1, "checkDead": 1}, Custom.NanoFXv2.NanoFX_ScriptActions.CreateControllerFX, iShipID, sFile, pEmitFrom, pAttachTo, fSize * (5.0 + iShow), pWarpcoreEmitPos, iTiming = 64, fRed = fFlashColor[0], fGreen = fFlashColor[1], fBlue = fFlashColor[2], fBrightness = 0.5) # TO-DO TEST UNCHECKING THE checkDead for a moment
+				pExplosion = NewNanoTimerDef(str(actionsAdded) + "NanoExpNovaNoSeq" + str(iShipID), ET_NOVA_EVT, 0.4, 0.4, {"itsanEffect": 1, "checkDead": 1}, Custom.NanoFXv2.NanoFX_ScriptActions.CreateControllerFX, iShipID, sFile, pEmitFrom, pAttachTo, fSize * (5.0 + iShow), pWarpcoreEmitPos, iTiming = 64, fRed = fFlashColor[0], fGreen = fFlashColor[1], fBlue = fFlashColor[2], fBrightness = 0.5)
 				if pExplosion:
 					pSequence.append(pExplosion)
 					actionsAdded = actionsAdded + 1
@@ -595,7 +788,7 @@ if bEnabled:
 			### Damage the model with Warp Core Explosion ###
 			if shouldDoVisibleDmgStuff:
 				ET_NOVA_EVT = App.UtopiaModule_GetNextEventType()
-				aDmgAction = NewNanoTimerDef(str(actionsAdded) + "NanoExpNovaNoSeq" + str(iShipID), ET_NOVA_EVT, 0.7, 0.7, {"itsanEffect": 0, "checkDead": 1}, Custom.NanoFXv2.NanoFX_ScriptActions.NanoDamageShip, iShipID, None, pShip, pEmitFrom, pShip.GetRadius(), 600.0) # TO-DO Last time it worked , "checkDead": 1 wasn't there and we had a check if the pShip was dead
+				aDmgAction = NewNanoTimerDef(str(actionsAdded) + "NanoExpNovaNoSeq" + str(iShipID), ET_NOVA_EVT, 0.7, 0.7, {"itsanEffect": 0, "checkDead": 1}, Custom.NanoFXv2.NanoFX_ScriptActions.NanoDamageShip, iShipID, None, pShip, pEmitFrom, pShip.GetRadius(), 600.0)
 				if aDmgAction:
 					pSequence.append(aDmgAction)
 					actionsAdded = actionsAdded + 1
@@ -747,7 +940,7 @@ if bEnabled:
 
 	################### ############# ############# ####################
 	# ENABLE PATCH TO APPLY
-	if G_PATCHFIX > 0:
+	if G_PATCHFIX == 1 or G_PATCHFIX > 2:
 		ExpFX.CreateNanoExpNovaSeq = NewCreateNanoExpNovaSeq
 	####################################################################
 	####################################################################
@@ -757,7 +950,7 @@ if bEnabled:
 	####################################################################
 	# PATCH FOR: CreateNanoExpLargeSeq
 	# -- The following function is only for the Alternate Death "No sequence"
-	def CreateNanoExpLargeNoSeq(pShip, iNumPlume, forceStart=1):
+	def CreateNanoExpLargeNoSeq(pShip, iNumPlume, forceStart=1, shipRad=None, pEmitFrom=None):
 		debug(__name__ + ", NewCreateNanoExpLargeSeq")
 		kTiming = App.TGProfilingInfo("ExpFX, CreateNanoExpLargeSeq")
 		### Create Sequence Object ###
@@ -777,12 +970,12 @@ if bEnabled:
 		if pShip.IsDead() or pShip.IsDying():
 			return pSequence
 
-		myHull = pShip.GetHull()
-		if not myHull or myHull.GetConditionPercentage() == 0: # or else with small objects the game will crash without any warning
-			return pSequence
-
 		pSet = pShip.GetContainingSet()
 		if not pSet:
+			return pSequence
+
+		myHull = pShip.GetHull()
+		if not myHull or myHull.GetConditionPercentage() <= 0: # or else with small objects the game will crash without any warning
 			return pSequence
 
 		ET_NOVA_EVT = App.UtopiaModule_GetNextEventType()
@@ -793,13 +986,19 @@ if bEnabled:
 
 		# little Defiant fix: just don't crash with small objects, please.
 
+		if shipRad is None:
+			shipRad = pShip.GetRadius()
 
-		if pShip.GetRadius() < 0.1 or (myHull.GetCondition() < 100):
+		if shipRad <= 0.1 or (myHull.GetCondition() < 100):
 			return pSequence
 
 		###
 		### Setup for Effect ###
-		pEmitFrom = pShip.GetRandomPointOnModel()
+		if pEmitFrom is None:
+			if not pShip.IsDead():
+				pEmitFrom = pShip.GetRandomPointOnModel()
+			else:
+				pEmitFrom = App.NiPoint3(0, 0, 0)
 		if not pEmitFrom:
 			return pSequence
 
@@ -965,7 +1164,7 @@ if bEnabled:
 
 	################### ############# ############# ####################
 	# ENABLE PATCH TO APPLY
-	if G_PATCHFIX > 0:
+	if G_PATCHFIX == 1 or G_PATCHFIX > 2:
 		ExpFX.CreateNanoExpLargeSeq = NewCreateNanoExpLargeSeq
 
 	####################################################################
@@ -1276,7 +1475,7 @@ if bEnabled:
 
 	################### ############# ############# ####################
 	# ENABLE PATCH TO APPLY
-	if G_PATCHFIX > 0:
+	if G_PATCHFIX == 1 or G_PATCHFIX > 2:
 		ExpFX.CreateNanoExpSmallSeq = NewCreateNanoExpSmallSeq
 
 	####################################################################
@@ -1334,7 +1533,7 @@ if bEnabled:
 
 	################### ############# ############# ####################
 	# ENABLE PATCH TO APPLY
-	if G_PATCHFIX > 0:
+	if G_PATCHFIX == 1 or G_PATCHFIX > 2:
 		ExpFX.NanoCollisionEffect = NewNanoCollisionEffect
 
 	####################################################################
@@ -1356,11 +1555,11 @@ if bEnabled:
 		fExplosionShift = -8.0
 		###
 		### Set up Exploding Ship Properties ###
-		pExplodingShip = App.ShipClass_Cast(pShip)
-		if not pExplodingShip or not hasattr(pExplodingShip, "GetObjID"):
+		pExplodingShipA = App.ShipClass_Cast(pShip)
+		if not pExplodingShipA or not hasattr(pExplodingShipA, "GetObjID"):
 			return
 
-		iShipID = pExplodingShip.GetObjID()
+		iShipID = pExplodingShipA.GetObjID()
 
 		pExplodingShip = App.ShipClass_GetObjectByID(None, iShipID)
 		if not pExplodingShip:
@@ -1372,75 +1571,14 @@ if bEnabled:
 		fRadius = 0.0
 		shipName = pExplodingShip.GetName()
 		fExplodingShipRadius = pExplodingShip.GetRadius()
+		
 
-		##################
-		# If we are changing stuff, better make it so we can store it before the ship dies!
-		shipIsDead = pShip.IsDead()
+		pLargeExpSeq1EmitFrom = None # ADDED LINEs, TEST if this functions is the cause of our suffering
+		if (fExplodingShipRadius is not None) and fExplodingShipRadius > 0.1:
+			pLargeExpSeq1EmitFrom = pExplodingShip.GetRandomPointOnModel() #ADDED LINEs, TEST if this functions is the cause of our suffering
 
-		pNovaAttachTo 	 = None
-		pNovaEmitFrom = None
-		pNovaWarpcoreEmitPos = None
-		isNovaPlayer = None
-		iNovaShow = 0.0
-		sNovaRace = None
-		fNovaFlashColor = None
-
-		pNovaSet = pShip.GetContainingSet()
-		if pNovaSet and hasattr(pNovaSet, "GetEffectRoot"): 
-			pNovaAttachTo 	 = pNovaSet.GetEffectRoot()
-
-		if not shipIsDead:
-			pNovaEmitFrom 	 = App.TGModelUtils_CastNodeToAVObject(pShip.GetNode())
-			pWarpcore 	 = pShip.GetPowerSubsystem()
-			if pWarpcore and hasattr(pWarpcore, "GetPosition"):
-				pNovaWarpcoreEmitPos = pWarpcore.GetPosition()
-
-			try:
-				pPlayer = MissionLib.GetPlayer()
-				iPlayerID = None
-				if pPlayer and hasattr(pPlayer, "GetObjID") and not pPlayer.IsDead():
-					iPlayerID = pPlayer.GetObjID()
-				if iPlayerID == iShipID:
-					isNovaPlayer = 1
-				else:
-					isNovaPlayer = 0
-			except:
-				traceback.print_exc()
-				myShpName = pShip.GetName()
-				if myShpName is not None:
-					sMyName = str(myShpName)
-					if sMyName is not None and sMyName == "Player" or sMyName == "player":
-						isNovaPlayer = 1
-					else:
-						isNovaPlayer = 0
-				else:
-					isNovaPlayer = 0
-			try:
-				fNovaFlashColor   = Custom.NanoFXv2.NanoFX_Lib.GetOverrideColor(pShip, "ExpFX")
-				if (fNovaFlashColor == None):
-					if sNovaRace is None:
-						sNovaRace 			= Custom.NanoFXv2.NanoFX_Lib.GetSpeciesName(pShip)
-					if not (sNovaRace is None):
-						fNovaFlashColor 	= Custom.NanoFXv2.NanoFX_Lib.GetRaceTextureColor(sNovaRace)
-			except:
-				sNovaRace = None
-				fNovaFlashColor = None
-				traceback.print_exc()
-
-			if isNovaPlayer is None:
-				isNovaPlayer = 0
-
-		if pNovaWarpcoreEmitPos is None:
-			pNovaWarpcoreEmitPos = App.NiPoint3(0, 0, 0)
-
-		if isNovaPlayer:
-			iNovaShow = 2.0
-
-		if fNovaFlashColor is None:
-			fNovaFlashColor   = (255.0, 248.0, 220.0)
-
-		#######################
-
+		if fExplodingShipRadius <= (0.01 / 15.0): #ANOTHER ADDITION, MAYBE RADIUS TOO SMALL ARE NOT CONSIDERED?
+			fExplodingShipRadius = 0.01/15.0 #ANOTHER ADDITION, MAYBE RADIUS TOO SMALL ARE NOT CONSIDERED?
 
 		pWarpSubsys = pExplodingShip.GetPowerSubsystem()
 		if (pExplodingShip.GetName() == "Player") or (pExplodingShip.GetName() == "player"):
@@ -1459,6 +1597,8 @@ if bEnabled:
 					pExplodingShip.SetSplashDamage(pWarpPower, fRadius)
 					print("Setting splash damage for %s to (%f, %f)" % (pExplodingShip.GetName(), pExplodingShip.GetSplashDamage(), pExplodingShip.GetSplashDamageRadius()))
 					debug(__name__ + ", NewNanoDeathSeq Setting splash damage for %s to (%f, %f)" % (pExplodingShip.GetName(), pExplodingShip.GetSplashDamage(), pExplodingShip.GetSplashDamageRadius()))
+
+			pExplodingShip.UpdateNodeOnly() # ANOTHER ADDITION
 		###
 		### Begin Death Sequence ###
 		############################
@@ -1466,11 +1606,8 @@ if bEnabled:
 		### Flicker some lights ###
 		if (Custom.NanoFXv2.NanoFX_Config.eFX_LightFlickerFX == "On"):
 			ET_NOVA_EVT = App.UtopiaModule_GetNextEventType()
-			"""
-			anonFunc1 = lambda pExplodingShip=pExplodingShip : Custom.NanoFXv2.NanoFX_Lib.CreateFlickerSeq(pExplodingShip, 3.0, sStatus = "Off") # TO-DO SEE IF THIS WORKS LIKE THIS OR IF YOU NEED TO SET DEFAULT INPUT PARAMETERS
-			pFlickerAction1 = NewNanoTimerDef(str(actionsAdded) + "NanoDeathNoSeq" + str(iShipID), ET_NOVA_EVT, 1.0, 1.0, {"itsanEffect": 1}, anonFunc1, iShipID)
-			"""
-			pFlickerAction1 = NewNanoTimerDef(str(actionsAdded) + "NanoDeathNoSeq" + str(iShipID), ET_NOVA_EVT, 1.0, 1.0, {"itsanEffect": 1}, Custom.NanoFXv2.NanoFX_Lib.CreateFlickerSeq, iShipID, pExplodingShip, 3.0, sStatus = "Off")
+			myTime = 1.0
+			pFlickerAction1 = NewNanoTimerDef(str(actionsAdded) + "NanoDeathNoSeq" + str(iShipID), ET_NOVA_EVT, myTime, myTime, {"itsanEffect": 1}, Custom.NanoFXv2.NanoFX_Lib.CreateFlickerSeq, iShipID, pExplodingShip, 3.0, sStatus = "Off")
 			if pFlickerAction1:
 				pFullSequence.append(pFlickerAction1)
 				actionsAdded = actionsAdded + 1
@@ -1479,25 +1616,32 @@ if bEnabled:
 		### Create Nano's Initial Large explosions ###
 
 		ET_NOVA_EVT = App.UtopiaModule_GetNextEventType()
-		pSmallExpSeq1 = NewNanoTimerDef(str(actionsAdded) + "NanoDeathNoSeq" + str(iShipID), ET_NOVA_EVT, 0.2, 0.2, {"itsanEffect": 0}, CreateNanoExpSmallNoSeq, iShipID, pExplodingShip, 0.01)
+		myTime = 0.2
+		pSmallExpSeq1 = NewNanoTimerDef(str(actionsAdded) + "NanoDeathNoSeq" + str(iShipID), ET_NOVA_EVT, myTime, myTime, {"itsanEffect": 0}, CreateNanoExpSmallNoSeq, iShipID, pExplodingShip, 0.01)
 		if pSmallExpSeq1:
 			pFullSequence.append(pSmallExpSeq1)
 			actionsAdded = actionsAdded + 1
 
+
 		ET_NOVA_EVT = App.UtopiaModule_GetNextEventType()
-		pLargeExpSeq1 = NewNanoTimerDef(str(actionsAdded) + "NanoDeathNoSeq" + str(iShipID), ET_NOVA_EVT, fTotalSequenceTime - 3.2 + fExplosionShift, fTotalSequenceTime - 3.2 + fExplosionShift, {"itsanEffect": 0}, CreateNanoExpLargeNoSeq, iShipID, pExplodingShip, 2)
-		if pLargeExpSeq1:
+		myTime = fTotalSequenceTime - 3.2 + fExplosionShift
+		pLargeExpSeq1 = NewNanoTimerDef(str(actionsAdded) + "NanoDeathNoSeq" + str(iShipID), ET_NOVA_EVT, myTime, myTime, {"itsanEffect": 0}, CreateNanoExpLargeNoSeq, iShipID, pExplodingShip, 2, pEmitFrom=pLargeExpSeq1EmitFrom)
+		if pLargeExpSeq1: # CRASH CHECK PROGRESS: WITH THIS UNCOMMENTED, IT SOMETIMES CRASHES
 			pFullSequence.append(pLargeExpSeq1)
 			actionsAdded = actionsAdded + 1
 
+
+
 		ET_NOVA_EVT = App.UtopiaModule_GetNextEventType()
-		pLargeExpSeq2 = NewNanoTimerDef(str(actionsAdded) + "NanoDeathNoSeq" + str(iShipID), ET_NOVA_EVT, fTotalSequenceTime - 3.05 + fExplosionShift, fTotalSequenceTime - 3.05 + fExplosionShift, {"itsanEffect": 0}, CreateNanoExpLargeNoSeq, iShipID, pExplodingShip, 2)
+		myTime = fTotalSequenceTime - 3.05 + fExplosionShift
+		pLargeExpSeq2 = NewNanoTimerDef(str(actionsAdded) + "NanoDeathNoSeq" + str(iShipID), ET_NOVA_EVT, myTime, myTime, {"itsanEffect": 0}, CreateNanoExpLargeNoSeq, iShipID, pExplodingShip, 2)
 		if pLargeExpSeq2:
 			pFullSequence.append(pLargeExpSeq2)
 			actionsAdded = actionsAdded + 1
 
 		ET_NOVA_EVT = App.UtopiaModule_GetNextEventType()
-		pLargeExpSeq3 = NewNanoTimerDef(str(actionsAdded) + "NanoDeathNoSeq" + str(iShipID), ET_NOVA_EVT, fTotalSequenceTime - 2.85 + fExplosionShift, fTotalSequenceTime - 2.85 + fExplosionShift, {"itsanEffect": 0}, CreateNanoExpLargeNoSeq, iShipID, pExplodingShip, 2)
+		myTime = fTotalSequenceTime - 2.85 + fExplosionShift
+		pLargeExpSeq3 = NewNanoTimerDef(str(actionsAdded) + "NanoDeathNoSeq" + str(iShipID), ET_NOVA_EVT, myTime, myTime, {"itsanEffect": 0}, CreateNanoExpLargeNoSeq, iShipID, pExplodingShip, 2)
 		if pLargeExpSeq3:
 			pFullSequence.append(pLargeExpSeq3)
 			actionsAdded = actionsAdded + 1
@@ -1505,7 +1649,8 @@ if bEnabled:
 		###
 		### Destroy Model into Debris Parts ###
 		ET_NOVA_EVT = App.UtopiaModule_GetNextEventType()
-		pSmallExpSeq2 = NewNanoTimerDef(str(actionsAdded) + "NanoDeathNoSeq" + str(iShipID), ET_NOVA_EVT, fTotalSequenceTime - 1.7 + fExplosionShift, fTotalSequenceTime - 1.7 + fExplosionShift, {"itsanEffect": 0}, CreateNanoExpSmallNoSeq, iShipID, pExplodingShip, 2.0)
+		myTime = fTotalSequenceTime - 1.7 + fExplosionShift
+		pSmallExpSeq2 = NewNanoTimerDef(str(actionsAdded) + "NanoDeathNoSeq" + str(iShipID), ET_NOVA_EVT, myTime, myTime, {"itsanEffect": 0}, CreateNanoExpSmallNoSeq, iShipID, pExplodingShip, 2.0)
 		if pSmallExpSeq2:
 			pFullSequence.append(pSmallExpSeq2)
 			actionsAdded = actionsAdded + 1
@@ -1515,20 +1660,23 @@ if bEnabled:
 		### Add Random Spin to Model ###
 		if (Custom.NanoFXv2.NanoFX_Config.eFX_RotationFX == "On"):
 			ET_NOVA_EVT = App.UtopiaModule_GetNextEventType()
-			pRotAction1 = NewNanoTimerDef(str(actionsAdded) + "NanoDeathNoSeq" + str(iShipID), ET_NOVA_EVT, 0.3, 0.3, {"itsanEffect": 1}, Custom.NanoFXv2.NanoFX_Lib.CreateRotationSeq, iShipID, pExplodingShip, fRotation = 700)
+			myTime = 0.3
+			pRotAction1 = NewNanoTimerDef(str(actionsAdded) + "NanoDeathNoSeq" + str(iShipID), ET_NOVA_EVT, myTime, myTime, {"itsanEffect": 1}, Custom.NanoFXv2.NanoFX_Lib.CreateRotationSeq, iShipID, pExplodingShip, fRotation = 700)
 			if pRotAction1:
 				pFullSequence.append(pRotAction1)
 				actionsAdded = actionsAdded + 1
 			ET_NOVA_EVT = App.UtopiaModule_GetNextEventType()
-			pRotAction2 = NewNanoTimerDef(str(actionsAdded) + "NanoDeathNoSeq" + str(iShipID), ET_NOVA_EVT, fTotalSequenceTime - 1.6 + fExplosionShift, fTotalSequenceTime - 1.6 + fExplosionShift, {"itsanEffect": 1}, Custom.NanoFXv2.NanoFX_Lib.CreateRotationSeq, iShipID, pExplodingShip, fRotation = 1000, fSpeed = 0.5)
+			myTime = fTotalSequenceTime - 1.6 + fExplosionShift
+			pRotAction2 = NewNanoTimerDef(str(actionsAdded) + "NanoDeathNoSeq" + str(iShipID), ET_NOVA_EVT, myTime, myTime, {"itsanEffect": 1}, Custom.NanoFXv2.NanoFX_Lib.CreateRotationSeq, iShipID, pExplodingShip, fRotation = 1000, fSpeed = 0.5)
 			if pRotAction2:
 				pFullSequence.append(pRotAction2)
 				actionsAdded = actionsAdded + 1
 		###
 		### Create Nano's Warp Core Explosion ###
-		if fRadius and fRadius > 0.0:
+		if fRadius and fRadius > 0.0: 
 			ET_NOVA_EVT = App.UtopiaModule_GetNextEventType()
-			pNovaExpAction1 = NewNanoTimerDef(str(actionsAdded) + "NanoDeathNoSeq" + str(iShipID), ET_NOVA_EVT, fTotalSequenceTime - 1.7 + fExplosionShift, fTotalSequenceTime - 1.7 + fExplosionShift, {"itsanEffect": 0}, CreateNanoExpNovaNoSeq, iShipID, pExplodingShip, fRadius / 15, forceStart=1, pSet=pNovaSet, pAttachTo=pNovaAttachTo, pEmitFrom = pNovaEmitFrom, pWarpcoreEmitPos = pNovaWarpcoreEmitPos, isPlayer=isNovaPlayer, fFlashColor=fNovaFlashColor, sRace=sNovaRace, iShow=iNovaShow, iRadius=fExplodingShipRadius)
+			myTime = fTotalSequenceTime - 1.7 + fExplosionShift
+			pNovaExpAction1 = NewNanoTimerDef(str(actionsAdded) + "NanoDeathNoSeq" + str(iShipID), ET_NOVA_EVT, myTime, myTime, {"itsanEffect": 0}, CreateNanoExpNovaNoSeq, iShipID, pExplodingShip, fRadius / 15)
 			if pNovaExpAction1:
 				pFullSequence.append(pNovaExpAction1)
 				actionsAdded = actionsAdded + 1
@@ -1581,8 +1729,10 @@ if bEnabled:
 		try:
 			for sName in listToDelete: # Weird cases where you have multiple of the same name.
 				Custom.NanoFXv2.NanoFX_Lib.g_LightsOff.remove(sName)
+				break
 		except:
 			traceback.print_exc()
+
 
 	# -- The following function is the sequence-style patch
 	def NewNanoDeathSeq(pShip):
@@ -1743,5 +1893,5 @@ if bEnabled:
 	# ENABLE PATCH TO APPLY IMPROVED SEQUENCE OR NO SEQUENCE VERSION
 	if G_PATCHFIX == 1:
 		ExpFX.NanoDeathSeq = NewNanoDeathSeq
-	elif G_PATCHFIX == 2:
+	elif G_PATCHFIX >= 2:
 		ExpFX.NanoDeathSeq = NanoDeathNoSeq
