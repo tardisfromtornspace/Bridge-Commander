@@ -1,5 +1,5 @@
-# VERSION 1.2.0
-# 24th February 2026
+# VERSION 1.2.1
+# 25th February 2026
 
 import App
 import string
@@ -10,7 +10,7 @@ from bcdebug import debug
 TRUE = 1
 FALSE = 0
 
-G_PATCHFIX = 1 # 0 Means we only apply the tweak, 1 that we also apply some extra fixes
+G_PATCHFIX = 2 # 0 Means we only apply the tweak, 1 that we also apply some extra fixes, 2 that we also apply a new death sequence
 versionPatch = 20260222 # Our version of the patch
 # If disabled, replace TRUE with FALSE
 bEnabled = FALSE
@@ -47,6 +47,10 @@ if bEnabled:
 	oldCreateNanoExpSmallSeq = ExpFX.CreateNanoExpSmallSeq
 	oldNanoCollisionEffect = ExpFX.NanoCollisionEffect
 	oldNanoDeathSeq = ExpFX.NanoDeathSeq
+
+	####################################################################
+	####################################################################
+	# AUXILIAR STUFF:
 
 	import Foundation
 	import FoundationTech
@@ -108,10 +112,10 @@ if bEnabled:
 
 		return shouldDo
 
-	def SafeShipFunc(function, checkDeadDying, iShipID, *args, **kwargs): # TO-DO CHECK THIS, FOR WEAPON EXPLOSIONS, it is meant to wrap around the actions
+	def SafeShipFunc(function, checkDeadDying, iShipID, *args, **kwargs): # TO-DO It is meant to wrap around the actions
 		try:
 			debug(__name__ + ", SafeShipFunc")
-			pShip = App.ShipClass_GetObjectByID(None, self.iShipID)
+			pShip = App.ShipClass_GetObjectByID(None, iShipID)
 			if pShip:
 				shouldPass = TRUE
 				if checkDeadDying != None and checkDeadDying > 0:
@@ -263,9 +267,11 @@ if bEnabled:
 			if self.OneWonder == 1:
 				self.Stop(1)
 			return 0
-	
-		
-	# PATCH FOR: CreateNanoWeaponExpSeq
+
+
+	####################################################################
+	####################################################################
+	# TWEAK FOR: CreateNanoWeaponExpSeq
 	def NewCreateNanoWeaponExpSeq(pEvent, sType):
 		debug(__name__ + ", NewCreateNanoWeaponExpSeq")
 		kTiming = App.TGProfilingInfo("ExpFX, CreateNanoWeaponExpSeq")
@@ -281,8 +287,7 @@ if bEnabled:
 		iShipID = pShip.GetObjID()
 
 		pShip = App.ShipClass_GetObjectByID(None, iShipID)
-		#if (not pShip):
-		if (not pShip) or pShip.IsDead() or pShip.IsDying(): # TO-DO CHANGED TO TO CHECK IF THIS IS WHAT CAUSES THE CRASH
+		if (not pShip) or pShip.IsDead() or pShip.IsDying():
 			pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.5) 
 			return pSequence
 
@@ -455,10 +460,18 @@ if bEnabled:
 
 		return pSequence
 
+	################### ############# ############# ####################
+	# THE TWEAK IS ALWAYS ENABLED
+	ExpFX.CreateNanoWeaponExpSeq = NewCreateNanoWeaponExpSeq
+
+	####################################################################
+	####################################################################
 
 
+	####################################################################
+	####################################################################
 	# PATCH FOR: CreateNanoExpNovaSeq
-
+	# -- The following function is only for the Alternate Death "No sequence"
 	def CreateNanoExpNovaNoSeq(pShip, fSize, forceStart=1, pSet=None, pAttachTo=None, pEmitFrom = None, pWarpcoreEmitPos = None, isPlayer=None, fFlashColor=None, sRace=None, iShow=None, iRadius=None):
 		debug(__name__ + ", NewCreateNanoExpNovaSeq")
 
@@ -480,7 +493,6 @@ if bEnabled:
 		iShipID = pShip.GetObjID()
 
 		pShip = App.ShipClass_GetObjectByID(None, iShipID)
-		#if (not pShip):
 		if (not pShip) or pShip.IsDead(): #TO-DO CHANGED THIS TO SEE IF THIS IS WHAT IS CAUSING THE CRASH
 			return pSequence
 
@@ -633,6 +645,7 @@ if bEnabled:
 
 		return pSequence
 
+	# -- The following function is the sequence-style patch
 	def NewCreateNanoExpNovaSeq(pShip, fSize):
 		debug(__name__ + ", NewCreateNanoExpNovaSeq")
 
@@ -649,7 +662,6 @@ if bEnabled:
 
 		pShip = App.ShipClass_GetObjectByID(None, iShipID)
 		if not pShip or pShip.IsDead(): # Alex SL Gato tweak - apparently if the ship is dead some parameters will be broken and crash the game, so better not.
-		#if not pShip or pShip.IsDead():
 			pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.5) 
 			return pSequence
 
@@ -668,7 +680,6 @@ if bEnabled:
 		if pWarpcore and hasattr(pWarpcore, "GetPosition"):
 			pWarpcoreEmitPos = pWarpcore.GetPosition()
 		else:
-		#if not pWarpcore or not hasattr(pWarpcore, "GetPosition"):
 			pSequence.AppendAction(App.TGScriptAction_Create(__name__, "ASequenceDummy"), 0.5) 
 			return pSequence
 		
@@ -734,8 +745,18 @@ if bEnabled:
 
 		return pSequence
 
+	################### ############# ############# ####################
+	# ENABLE PATCH TO APPLY
+	if G_PATCHFIX > 0:
+		ExpFX.CreateNanoExpNovaSeq = NewCreateNanoExpNovaSeq
+	####################################################################
+	####################################################################
 
+
+	####################################################################
+	####################################################################
 	# PATCH FOR: CreateNanoExpLargeSeq
+	# -- The following function is only for the Alternate Death "No sequence"
 	def CreateNanoExpLargeNoSeq(pShip, iNumPlume, forceStart=1):
 		debug(__name__ + ", NewCreateNanoExpLargeSeq")
 		kTiming = App.TGProfilingInfo("ExpFX, CreateNanoExpLargeSeq")
@@ -848,7 +869,7 @@ if bEnabled:
 
 		return pSequence
 
-
+	# -- The following function is the sequence-style patch
 	def NewCreateNanoExpLargeSeq(pShip, iNumPlume):
 		debug(__name__ + ", NewCreateNanoExpLargeSeq")
 		kTiming = App.TGProfilingInfo("ExpFX, CreateNanoExpLargeSeq")
@@ -942,9 +963,19 @@ if bEnabled:
 
 		return pSequence
 
+	################### ############# ############# ####################
+	# ENABLE PATCH TO APPLY
+	if G_PATCHFIX > 0:
+		ExpFX.CreateNanoExpLargeSeq = NewCreateNanoExpLargeSeq
 
+	####################################################################
+	####################################################################
+
+
+	####################################################################
+	####################################################################
 	# PATCH FOR: CreateNanoExpSmallSeq
-
+	# -- The following function is only for the Alternate Death "No sequence"
 	def CreateNanoExpSmallNoSeq(pShip, fTime, forceStart=1):
 		debug(__name__ + ", NewCreateNanoExpSmallSeq")
 		kTiming = App.TGProfilingInfo("ExpFX, CreateNanoExpSmallSeq")
@@ -1099,6 +1130,7 @@ if bEnabled:
 
 		return pSequence
 
+	# -- The following function is the sequence-style patch
 	def NewCreateNanoExpSmallSeq(pShip, fTime):
 		debug(__name__ + ", NewCreateNanoExpSmallSeq")
 		kTiming = App.TGProfilingInfo("ExpFX, CreateNanoExpSmallSeq")
@@ -1242,8 +1274,19 @@ if bEnabled:
 
 		return pSequence
 
-	# PATCH FOR: NanoCollisionEffect
+	################### ############# ############# ####################
+	# ENABLE PATCH TO APPLY
+	if G_PATCHFIX > 0:
+		ExpFX.CreateNanoExpSmallSeq = NewCreateNanoExpSmallSeq
 
+	####################################################################
+	####################################################################
+
+
+	####################################################################
+	####################################################################
+	# PATCH FOR: NanoCollisionEffect
+	# -- The following function is the sequence-style patch
 	def NewNanoCollisionEffect(pShip, pEvent):
 		### Setup ###
 		debug(__name__ + ", NanoCollisionEffect")
@@ -1253,8 +1296,8 @@ if bEnabled:
 
 		iShipID = pShip.GetObjID()
 
-		pShip = App.ShipClass_GetObjectByID(None, iShipID)
-		if not pShip: # or pShip.IsDead():
+		pShip2 = App.ShipClass_GetObjectByID(None, iShipID)
+		if not pShip2: # or pShip.IsDead():
 			return
 
 		pSet = pShip.GetContainingSet()
@@ -1289,14 +1332,19 @@ if bEnabled:
 		###
 		pShip.CallNextHandler(pEvent)
 
-	ExpFX.CreateNanoWeaponExpSeq = NewCreateNanoWeaponExpSeq
-	ExpFX.CreateNanoExpNovaSeq = NewCreateNanoExpNovaSeq
-	ExpFX.CreateNanoExpLargeSeq = NewCreateNanoExpLargeSeq
-	ExpFX.CreateNanoExpSmallSeq = NewCreateNanoExpSmallSeq
-	ExpFX.NanoCollisionEffect = NewNanoCollisionEffect
+	################### ############# ############# ####################
+	# ENABLE PATCH TO APPLY
+	if G_PATCHFIX > 0:
+		ExpFX.NanoCollisionEffect = NewNanoCollisionEffect
 
+	####################################################################
+	####################################################################
+
+
+	####################################################################
+	####################################################################
 	# PATCH FOR: NanoDeathSeq
-
+	# -- The following function is the Alternate Death "No sequence"
 	def NanoDeathNoSeq(pShip, forceStart=1):
 		### Holds the Entire Death Sequence ###
 		debug(__name__ + ", NewNanoDeathSeq")
@@ -1536,6 +1584,7 @@ if bEnabled:
 		except:
 			traceback.print_exc()
 
+	# -- The following function is the sequence-style patch
 	def NewNanoDeathSeq(pShip):
 		### Holds the Entire Death Sequence ###
 		debug(__name__ + ", NewNanoDeathSeq")
@@ -1690,7 +1739,9 @@ if bEnabled:
 		except:
 			traceback.print_exc()
 
-	if G_PATCHFIX == 0:
+	################### ############# ############# ####################
+	# ENABLE PATCH TO APPLY IMPROVED SEQUENCE OR NO SEQUENCE VERSION
+	if G_PATCHFIX == 1:
 		ExpFX.NanoDeathSeq = NewNanoDeathSeq
-	else:
+	elif G_PATCHFIX == 2:
 		ExpFX.NanoDeathSeq = NanoDeathNoSeq
