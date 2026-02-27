@@ -1,6 +1,6 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
-# 21st February 2026, by Alex SL Gato (CharaToLoki)
+# 27th February 2026, by Alex SL Gato (CharaToLoki)
 #         Based on SGAsgardBeamWeapon by Alex SL Gato, which was based on BorgAdaptation.py and PhasedTorp.py by Alex SL Gato, which were based on the Foundation import function by Dasher; the Shield.py scripts and KM Armour scripts and FoundationTechnologies team's PhasedTorp.py, on ATPFunctions by Apollo.
 #         Also based on MEShields by Alex SL Gato, which was based on SGShields by Alex SL Gato, which was strongly based on Shields.py by the FoundationTechnologies team, ATPFunctions by Apollo, HelmMenuHandlers from the STBC Team, and MEGIonWeapon by Alex SL Gato.
 #         Also upon noticing how App.WEAPON_HIT did not make the tractor work, based slightly on MLeo Daalder's Tractordef, but using Attach instead of AttachShip because of weird tech check errors.
@@ -16,12 +16,13 @@
 # To add it, just add to your Custom/Ships/shipFileName.py this:
 """
 Foundation.ShipDef.Ambassador.dTechs = {
-	"Andromedan Tractor-Repulsor Beams Weapon": [{"HullDmgMultiplier": 100.0, "ShieldDmgMultiplier": 1.0, "Beams": ["Tractor beam projector name 1", "Tractor beam projector name 2"]}, ["Beam Sound 1 to add", "Beam 2 sound to add"]],
+	"Andromedan Tractor-Repulsor Beams Weapon": [{"HullDmgMultiplier": 100.0, "ShieldDmgMultiplier": 1.0, "TorpLifetime": 0, "Beams": ["Tractor beam projector name 1", "Tractor beam projector name 2"]}, ["Beam Sound 1 to add", "Beam 2 sound to add"]],
 }
 """
 # "HullDmgMultiplier" will multiply upon the base global multiplier for hull damage. Default is x1.0.
 # "ShieldDmgMultiplier" will multiply upon the base global multiplier for shield damage. Default is x1.0.
 # "Beams" is an optional list with Phaser Bank names, wich will narrow the tractor beam projectors to a select few. Not adding the field or making it blank will mean all tractor beams are Andromedan Tractor-Repulsor beam yields... if they have the proper sound.
+# "TorpLifetime": just tells the engine to set the Torpedo lifetime generated to its value. Default is 1 second. Set to 0 to avoid certain vox issues that might happen on certain rare cases.
 #
 # The final list was added because of compatibilities with how FoundationTech handles phaser and tractor beam yields, by their sounds. Basically in order for a certain tractor property to have a yield on the first place, you need to make sure it has its sound (that is, the string inside the .SetFireSound("") function on that projector's hardpoint, not the actual .wav or .mp3 sound file) registered on the yields list, so basically all tractor beam projectors with that sound will have that yield (unless someone else decided to use that same sound for another type of yield). So please, whenever you have to add this yield or tractor/phaser yields, make sure the sound names on the list are distinctive and unique enough. By default, if that list is unavilable it will use the sound of the first tractor beam projector registered on the hardpoint.
 
@@ -132,7 +133,7 @@ import nt
 import string
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-            "Version": "0.22",
+            "Version": "0.23",
             "License": "LGPL",
             "Description": "Read the small title above for more info"
             }
@@ -923,12 +924,17 @@ try:
 
 				baseHullMultiplier = 1.0 * AndromedanTractorBeamsHullDamageMultiplier
 				baseShieldMultiplier = 1.0 * AndromedanTractorBeamsGenericShieldDamageMultiplier
+				torpLifeTimeStuff = 1.0
 
 				if cfg0dict.has_key("HullDmgMultiplier") and cfg0dict["HullDmgMultiplier"] > 0.0:
 					baseHullMultiplier = baseHullMultiplier * cfg0dict["HullDmgMultiplier"]
 
 				if cfg0dict.has_key("ShieldDmgMultiplier") and cfg0dict["ShieldDmgMultiplier"] > 0.0:
 					baseShieldMultiplier = baseShieldMultiplier * cfg0dict["ShieldDmgMultiplier"]
+
+				if cfg0dict.has_key("TorpLifetime") and cfg0dict["TorpLifetime"] > 0.0:
+					torpLifeTimeStuff = cfg0dict["TorpLifetime"] # TO-DO
+
 
 				hullDamageMultiplier = baseHullMultiplier
 				shieldDamageMultiplier = baseShieldMultiplier
@@ -1101,7 +1107,10 @@ try:
 					if not torp404Fallback:
 						pTempTorp = FireTorpFromPointWithVectorAndNetType(pHitPoint, pVec, mod, targetID, attackerID, torpImportedSpeed, leNetType, finalTorpDamage, fRadius, 1, pTarget, theOffset)
 					if pTempTorp:
-						pTempTorp.SetLifetime(1.0)
+						if torpLifeTimeStuff > 0.0:
+							pTempTorp.SetLifetime(torpLifeTimeStuff)
+						else:
+							pTempTorp.SetLifetime(1.0)
 
 					if targetRadius < 0.15 or evtHType == 1:
 						# Perform damage manually as well
@@ -1155,6 +1164,8 @@ try:
 								# Fourth part, finally using the pEvent for something! This is also so more armours can work with these collisions, and not only one or two.
 							
 								pTargetInstance.DefendVSTorp(pTarget, pEvent1, pTempTorp)
+								if torpLifeTimeStuff == 0.0:
+									pTempTorp.SetLifetime(torpLifeTimeStuff)
 
 				except:
 					print "You are missing '", self.GetMySupportProjectile() ,"' torpedo on your install, or another error happened"

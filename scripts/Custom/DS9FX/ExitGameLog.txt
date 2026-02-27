@@ -1,0 +1,366 @@
+##### Bridge Commander Exit Log: 26 Feb 2026 20:44:00#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Custom.Autoload.FIX-EngineerCharacterHandlers : Patched your  Bridge.EngineerCharacterHandlers  to cover 0-shield-strength ships
+Updated FoundationTech.ShipInstance's DefendVS* Fixes
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version  20260222 )
+Patched TacticalControlInterfaces.CycleCameraMode to add mode viewing modes
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 27 Feb 2026 11:35:44#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Custom.Autoload.FIX-EngineerCharacterHandlers : Patched your  Bridge.EngineerCharacterHandlers  to cover 0-shield-strength ships
+Updated FoundationTech.ShipInstance's DefendVS* Fixes
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version  20260222 )
+Patched TacticalControlInterfaces.CycleCameraMode to add mode viewing modes
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+# DS9FX has...
+
+# taken a console dump
+Setting splash damage for WC Negh'Var-17 to (1857.164551, 37.143291)
+Creating WarpSequence:  Ship = WC Negh'Var-17  // To Set = None  // Placement Name = None
+Creating WarpSequence:  Ship = WC Negh'Var-20  // To Set = None  // Placement Name = None
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 781c435c> ignored
+Creating WarpSequence:  Ship = WC Negh'Var-2  // To Set = None  // Placement Name = None
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 610c5890> ignored
+Setting splash damage for WC Negh'Var-2 to (2032.121704, 40.642433)
+Creating WarpSequence:  Ship = WC Negh'Var-3  // To Set = None  // Placement Name = None
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 77630fac> ignored
+Creating WarpSequence:  Ship = WC Negh'Var-2  // To Set = None  // Placement Name = None
+Setting splash damage for WC Negh'Var-19 to (1780.733276, 35.614666)
+Creating WarpSequence:  Ship = WC Negh'Var-3  // To Set = None  // Placement Name = None
+data/TGL/Maelstrom/Episode 7/E7M6.tgl E7M6HailingStarbase2
+Setting splash damage for WC Negh'Var-16 to (1851.043701, 37.020874)
+Creating WarpSequence:  Ship = WC Negh'Var-14  // To Set = None  // Placement Name = None
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 781b5010> ignored
+Setting splash damage for WC Negh'Var-14 to (1814.680420, 36.293610)
+Creating WarpSequence:  Ship = WC Negh'Var-18  // To Set = None  // Placement Name = None
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 610fb36c> ignored
+Setting splash damage for WC Negh'Var-18 to (2099.395264, 41.987904)
+Setting splash damage for WC Negh'Var-10 to (2060.923828, 41.218475)
+Creating WarpSequence:  Ship = WC Negh'Var-18  // To Set = None  // Placement Name = None
+Creating WarpSequence:  Ship = WC Negh'Var-10  // To Set = None  // Placement Name = None
+Creating WarpSequence:  Ship = WC Negh'Var-21  // To Set = None  // Placement Name = None
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 781b27d0> ignored
+Creating WarpSequence:  Ship = WC Negh'Var-15  // To Set = None  // Placement Name = None
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 610fc494> ignored
+Setting splash damage for WC Negh'Var-15 to (1876.007813, 37.520157)
+Creating WarpSequence:  Ship = WC Negh'Var-23  // To Set = None  // Placement Name = None
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 77633e34> ignored
+Creating WarpSequence:  Ship = WC Negh'Var-24  // To Set = None  // Placement Name = None
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 776354f0> ignored
+Setting splash damage for WC Negh'Var-23 to (2089.818604, 41.796371)
+Setting splash damage for WC Negh'Var-24 to (2184.956299, 43.699127)
+Creating WarpSequence:  Ship = WC Negh'Var-24  // To Set = None  // Placement Name = None
+Setting splash damage for WC Negh'Var-12 to (2063.707031, 41.274139)
+PlasmaFX Communicating with Targetable Plasma Streams...
+...Sucess
+Creating WarpSequence:  Ship = WC Negh'Var-13  // To Set = None  // Placement Name = None
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 610fc374> ignored
+Setting splash damage for WC Negh'Var-22 to (1947.497192, 38.949944)
+Creating WarpSequence:  Ship = WC Negh'Var-22  // To Set = None  // Placement Name = None
+Creating WarpSequence:  Ship = WC Negh'Var-9  // To Set = None  // Placement Name = None
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 7819e3c0> ignored
+Setting splash damage for WC Negh'Var-9 to (1553.862549, 31.077251)
+data/TGL/Maelstrom/Episode 8/E8M1.tgl E8M1L078
+Setting splash damage for WC Negh'Var-6 to (2187.500000, 43.750000)
+Creating WarpSequence:  Ship = WC Negh'Var-6  // To Set = None  // Placement Name = None
+Setting splash damage for WC Negh'Var-1 to (2141.608643, 42.832172)
+killing the player class instance
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 27 Feb 2026 11:35:44#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Custom.Autoload.FIX-EngineerCharacterHandlers : Patched your  Bridge.EngineerCharacterHandlers  to cover 0-shield-strength ships
+Updated FoundationTech.ShipInstance's DefendVS* Fixes
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version  20260222 )
+Patched TacticalControlInterfaces.CycleCameraMode to add mode viewing modes
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+# DS9FX has...
+
+# taken a console dump
+Setting splash damage for WC Negh'Var-17 to (1857.164551, 37.143291)
+Creating WarpSequence:  Ship = WC Negh'Var-17  // To Set = None  // Placement Name = None
+Creating WarpSequence:  Ship = WC Negh'Var-20  // To Set = None  // Placement Name = None
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 781c435c> ignored
+Creating WarpSequence:  Ship = WC Negh'Var-2  // To Set = None  // Placement Name = None
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 610c5890> ignored
+Setting splash damage for WC Negh'Var-2 to (2032.121704, 40.642433)
+Creating WarpSequence:  Ship = WC Negh'Var-3  // To Set = None  // Placement Name = None
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 77630fac> ignored
+Creating WarpSequence:  Ship = WC Negh'Var-2  // To Set = None  // Placement Name = None
+Setting splash damage for WC Negh'Var-19 to (1780.733276, 35.614666)
+Creating WarpSequence:  Ship = WC Negh'Var-3  // To Set = None  // Placement Name = None
+data/TGL/Maelstrom/Episode 7/E7M6.tgl E7M6HailingStarbase2
+Setting splash damage for WC Negh'Var-16 to (1851.043701, 37.020874)
+Creating WarpSequence:  Ship = WC Negh'Var-14  // To Set = None  // Placement Name = None
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 781b5010> ignored
+Setting splash damage for WC Negh'Var-14 to (1814.680420, 36.293610)
+Creating WarpSequence:  Ship = WC Negh'Var-18  // To Set = None  // Placement Name = None
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 610fb36c> ignored
+Setting splash damage for WC Negh'Var-18 to (2099.395264, 41.987904)
+Setting splash damage for WC Negh'Var-10 to (2060.923828, 41.218475)
+Creating WarpSequence:  Ship = WC Negh'Var-18  // To Set = None  // Placement Name = None
+Creating WarpSequence:  Ship = WC Negh'Var-10  // To Set = None  // Placement Name = None
+Creating WarpSequence:  Ship = WC Negh'Var-21  // To Set = None  // Placement Name = None
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 781b27d0> ignored
+Creating WarpSequence:  Ship = WC Negh'Var-15  // To Set = None  // Placement Name = None
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 610fc494> ignored
+Setting splash damage for WC Negh'Var-15 to (1876.007813, 37.520157)
+Creating WarpSequence:  Ship = WC Negh'Var-23  // To Set = None  // Placement Name = None
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 77633e34> ignored
+Creating WarpSequence:  Ship = WC Negh'Var-24  // To Set = None  // Placement Name = None
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 776354f0> ignored
+Setting splash damage for WC Negh'Var-23 to (2089.818604, 41.796371)
+Setting splash damage for WC Negh'Var-24 to (2184.956299, 43.699127)
+Creating WarpSequence:  Ship = WC Negh'Var-24  // To Set = None  // Placement Name = None
+Setting splash damage for WC Negh'Var-12 to (2063.707031, 41.274139)
+PlasmaFX Communicating with Targetable Plasma Streams...
+...Sucess
+Creating WarpSequence:  Ship = WC Negh'Var-13  // To Set = None  // Placement Name = None
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 610fc374> ignored
+Setting splash damage for WC Negh'Var-22 to (1947.497192, 38.949944)
+Creating WarpSequence:  Ship = WC Negh'Var-22  // To Set = None  // Placement Name = None
+Creating WarpSequence:  Ship = WC Negh'Var-9  // To Set = None  // Placement Name = None
+Exception AttributeError: 'thisown' in <method WarpEvent.__del__ of WarpEvent instance at 7819e3c0> ignored
+Setting splash damage for WC Negh'Var-9 to (1553.862549, 31.077251)
+data/TGL/Maelstrom/Episode 8/E8M1.tgl E8M1L078
+Setting splash damage for WC Negh'Var-6 to (2187.500000, 43.750000)
+Creating WarpSequence:  Ship = WC Negh'Var-6  // To Set = None  // Placement Name = None
+Setting splash damage for WC Negh'Var-1 to (2141.608643, 42.832172)
+killing the player class instance
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 27 Feb 2026 11:37:52#####
+# DS9FX has...
+
+# taken a console dump
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Custom.Autoload.FIX-EngineerCharacterHandlers : Patched your  Bridge.EngineerCharacterHandlers  to cover 0-shield-strength ships
+Updated FoundationTech.ShipInstance's DefendVS* Fixes
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version  20260222 )
+Patched TacticalControlInterfaces.CycleCameraMode to add mode viewing modes
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 27 Feb 2026 13:09:36#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Custom.Autoload.FIX-EngineerCharacterHandlers : Patched your  Bridge.EngineerCharacterHandlers  to cover 0-shield-strength ships
+Updated FoundationTech.ShipInstance's DefendVS* Fixes
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version  20260222 )
+Patched TacticalControlInterfaces.CycleCameraMode to add mode viewing modes
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 27 Feb 2026 13:09:36#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Custom.Autoload.FIX-EngineerCharacterHandlers : Patched your  Bridge.EngineerCharacterHandlers  to cover 0-shield-strength ships
+Updated FoundationTech.ShipInstance's DefendVS* Fixes
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version  20260222 )
+Patched TacticalControlInterfaces.CycleCameraMode to add mode viewing modes
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+# DS9FX has...
+
+# taken a console dump
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
