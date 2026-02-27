@@ -933,7 +933,7 @@ try:
 					baseShieldMultiplier = baseShieldMultiplier * cfg0dict["ShieldDmgMultiplier"]
 
 				if cfg0dict.has_key("TorpLifetime") and cfg0dict["TorpLifetime"] > 0.0:
-					torpLifeTimeStuff = cfg0dict["TorpLifetime"] # TO-DO
+					torpLifeTimeStuff = cfg0dict["TorpLifetime"]
 
 
 				hullDamageMultiplier = baseHullMultiplier
@@ -1105,7 +1105,11 @@ try:
 					pTempTorp = None
 
 					if not torp404Fallback:
-						pTempTorp = FireTorpFromPointWithVectorAndNetType(pHitPoint, pVec, mod, targetID, attackerID, torpImportedSpeed, leNetType, finalTorpDamage, fRadius, 1, pTarget, theOffset)
+						leTarget = None
+						if torpLifeTimeStuff > 0.0:
+							leTarget = pTarget
+							
+						pTempTorp = FireTorpFromPointWithVectorAndNetType(pHitPoint, pVec, mod, targetID, attackerID, torpImportedSpeed, leNetType, finalTorpDamage, fRadius, 1, leTarget, theOffset)
 					if pTempTorp:
 						if torpLifeTimeStuff > 0.0:
 							pTempTorp.SetLifetime(torpLifeTimeStuff)
