@@ -3,28 +3,29 @@ import App
 def Create(pTorp):
 
 	kGlowColor = App.TGColorA()
-	kGlowColor.SetRGBA(255.0 / 255.0, 130.0 / 255.0, 0.0 / 255.0, 1.000000)	
+	kGlowColor.SetRGBA(255.0 / 255.0, 92.0 / 255.0, 0.0 / 255.0, 1.000000)	
 	kCoreColor = App.TGColorA()
-	kCoreColor.SetRGBA(255.0 / 255.0, 255.0 / 255.0, 0.0 / 255.0, 1.000000)
+	kCoreColor.SetRGBA(255.0 / 255.0, 165.0 / 255.0, 0.0 / 255.0, 1.000000)
 
 	# Params are:
 
 	pTorp.CreateTorpedoModel(
-					"data/Textures/Tactical/ZZ_TNGPhotonCore.tga",
+					"data/Textures/Tactical/ZZMauler2Core.tga",
 					kCoreColor, 
-					0.6,
-					4.2,	 
-					"data/textures/tactical/ZZ_TNGPhotonGlow.tga", 
+					0.3,
+					5.0,	 
+					"data/textures/tactical/ZZMauler2Glow.tga", 
 					kGlowColor,
-					5.0,	
-					0.55,	 
-					0.9,	
-					"data/textures/tactical/ZZST6PhotonFlares.tga",
-					kGlowColor,										
-					8,		
-					0.3,		
-					0.5)
+					7.0,	
+					0.7,	 
+					1.2,	
+					"data/textures/tactical/ZZMauler2Core.tga",
+					kCoreColor,										
+					30,		
+					0.45,		
+					0.3)
 
+	App.g_kSoundManager.PlaySound("ZZ_Mauler2")
 	pTorp.SetDamage( GetDamage() )
 	pTorp.SetDamageRadiusFactor(0.25)
 	pTorp.SetGuidanceLifetime( GetGuidanceLifetime() )
@@ -42,7 +43,7 @@ def GetLaunchSpeed():
 	return(19.0)
 
 def GetLaunchSound():
-	return("ZZ_ST6Photon2")
+	return("ZZ_Mauler")
 
 def GetPowerCost():
 	return(1.0)
@@ -69,8 +70,10 @@ try:
 	oFire = ftb.Tech.TimedTorpedoesExpansion.MIRVMultiSingleTargetTorpedoFire2(
 		'MIRVMultiSingleTargetTorpedoFire2', {
 		'multipleTargetSelect': 0,
-		'spreadNumber': 3,
-		'spreadDensity': 5.0,
+		'splitProx': 229,
+		'chkInterval': 3,
+		'spreadNumber': 1,
+		'spreadDensity': 360.1,
 		'warheadModule': "Tactical.Projectiles.ZZSpread3",
 		'shellLive': 0,
 	})

@@ -17,47 +17,47 @@ class WZErad( Carrier.Carrier):
 
         launcher = LauncherManager.GetLauncher( "Shuttle Bay 1", pShip)
         group.AddLauncher( "Shuttle Bay 1", launcher)
-        launcher.AddLaunchable( "WZInter", "ftb.friendlyAI", 1)
+        launcher.AddLaunchable( "WZInter", "QuickBattle.ZZAndromedanAttackFriendlyAI", 1)
 
         launcher = LauncherManager.GetLauncher( "Shuttle Bay 2", pShip)
         group.AddLauncher( "Shuttle Bay 2", launcher)
-        launcher.AddLaunchable( "WZInter", "ftb.friendlyAI", 1)
+        launcher.AddLaunchable( "WZInter", "QuickBattle.ZZAndromedanAttackFriendlyAI", 1)
  
         launcher = LauncherManager.GetLauncher( "Shuttle Bay 3", pShip)
         group.AddLauncher( "Shuttle Bay 3", launcher)
-        launcher.AddLaunchable( "WZInter", "ftb.friendlyAI", 1)
+        launcher.AddLaunchable( "WZInter", "QuickBattle.ZZAndromedanAttackFriendlyAI", 1)
 
         launcher = LauncherManager.GetLauncher( "Shuttle Bay 4", pShip)
         group.AddLauncher( "Shuttle Bay 4", launcher)
-        launcher.AddLaunchable( "WZInter", "ftb.friendlyAI", 1)
+        launcher.AddLaunchable( "WZInter", "QuickBattle.ZZAndromedanAttackFriendlyAI", 1)
 
         launcher = LauncherManager.GetLauncher( "Shuttle Bay 5", pShip)
         group.AddLauncher( "Shuttle Bay 5", launcher)
-        launcher.AddLaunchable( "WZInter", "ftb.friendlyAI", 1)
+        launcher.AddLaunchable( "WZInter", "QuickBattle.ZZAndromedanAttackFriendlyAI", 1)
 
         launcher = LauncherManager.GetLauncher( "Shuttle Bay 6", pShip)
         group.AddLauncher( "Shuttle Bay 6", launcher)
-        launcher.AddLaunchable( "WZInter", "ftb.friendlyAI", 1)
+        launcher.AddLaunchable( "WZInter", "QuickBattle.ZZAndromedanAttackFriendlyAI", 1)
 
         launcher = LauncherManager.GetLauncher( "Shuttle Bay 1a", pShip)
         group.AddLauncher( "Shuttle Bay 1a", launcher)
-        launcher.AddLaunchable( "WZDetec", "ftb.friendlyAI", 1)
+        launcher.AddLaunchable( "WZDetec", "QuickBattle.ZZAndromedanAttackFriendlyAI", 1)
 
         launcher = LauncherManager.GetLauncher( "Shuttle Bay 2a", pShip)
         group.AddLauncher( "Shuttle Bay 2a", launcher)
-        launcher.AddLaunchable( "WZDetec", "ftb.friendlyAI", 1)
+        launcher.AddLaunchable( "WZDetec", "QuickBattle.ZZAndromedanAttackFriendlyAI", 1)
 
         launcher = LauncherManager.GetLauncher( "Shuttle Bay 3a", pShip)
         group.AddLauncher( "Shuttle Bay 3a", launcher)
-        launcher.AddLaunchable( "WZDetec", "ftb.friendlyAI", 1)
+        launcher.AddLaunchable( "WZDetec", "QuickBattle.ZZAndromedanAttackFriendlyAI", 1)
 
         launcher = LauncherManager.GetLauncher( "Shuttle Bay 1b", pShip)
         group.AddLauncher( "Shuttle Bay 1b", launcher)
-        launcher.AddLaunchable( "WZDestru", "ftb.friendlyAI", 1)
+        launcher.AddLaunchable( "WZDestru", "QuickBattle.ZZAndromedanAttackFriendlyAI", 1)
 
         launcher = LauncherManager.GetLauncher( "Shuttle Bay 2b", pShip)
         group.AddLauncher( "Shuttle Bay 2b", launcher)
-        launcher.AddLaunchable( "WZDestru", "ftb.friendlyAI", 1)
+        launcher.AddLaunchable( "WZDestru", "QuickBattle.ZZAndromedanAttackFriendlyAI", 1)
         
         self.AddLauncher( "Group 1", group)
 

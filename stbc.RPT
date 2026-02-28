@@ -15844,3 +15844,27 @@ Couldn't initialize symbol reader, no symbol info available
 Call stack:
 Address   Frame     Logical addr  Module
 00717874  4EF1E5E4  0001:00316874 C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+//=====================================================
+Current Time: Fri Feb 27 15:28:48 2026
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  004BC76A 01:000BB76A C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+
+Registers:
+EAX:4C9934C8
+EBX:0088C6F4
+ECX:00000000
+EDX:3D6B18B8
+ESI:0019FA74
+EDI:00000000
+CS:EIP:0023:004BC76A
+SS:ESP:002B:0019F9F8  EBP:0019FA74
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+
+Application Timestamp: Tue Apr 09 23:14:56 2002
+Doing stack walk
+
+Call stack:
+Address   Frame
+004BC76A  0019FA74  0001:000BB76A C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+

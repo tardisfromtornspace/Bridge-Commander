@@ -9,14 +9,17 @@ shipFile = 'WZAggravS'
 menuGroup = 'ZZ Ships'
 playerMenuGroup = 'ZZ Ships'
 SubMenu = "Andromedans WZ"
+SubSubMenu = "TMP"
 species = App.SPECIES_GALAXY
 
-Foundation.ShipDef.WZAggravS = Foundation.FedShipDef(abbrev, species, {'name': longName, 'iconName': iconName, 'shipFile': shipFile, 'SubMenu': SubMenu })
+import K_ZZAndromedanAttackDef
 
-Foundation.ShipDef.WZAggravS.desc = 'Pray to the Omnissiah it works'
+Foundation.ShipDef.WZAggravS = K_ZZAndromedanAttackDef.ZZAndromedanShipDef(abbrev, species, {'name': longName, 'iconName': iconName, 'shipFile': shipFile, 'SubMenu': SubMenu, "SubSubMenu": SubSubMenu })
 
-Foundation.ShipDef.WZAggravS.dTechs = {
-	"Andromedan absorption Armor": [50000, "Ablative Armor", {
+Foundation.ShipDef.WZAggravS.desc = """Andromedan Aggravator Heavy Destroyer/Large Satship"""
+
+Foundation.ShipDef.WZAggravS.dTechs = {"AutoTargeting": { "Phaser": [3, 1] },
+	"Andromedan absorption Armor": [0.0001, "Power Absorber", {
 			"Torpedoes": [],
 			"Tractors": [],
 			"BeamsFactor": 1.0,
@@ -27,7 +30,9 @@ Foundation.ShipDef.WZAggravS.dTechs = {
 			"DmgRadMod": 0.0,
 		}
 	],
+	"Andromedan Tractor-Repulsor Beams Weapon": [{"HullDmgMultiplier": 600.0, "ShieldDmgMultiplier": 2.0, "TorpLifetime": 0}, ["Andromedan Tractor-Repulsor Beam"]],
 }
+
 
 
 if menuGroup:

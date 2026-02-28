@@ -1,6 +1,6 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
-# 27th February 2026, by Alex SL Gato (CharaToLoki)
+# 28th February 2026, by Alex SL Gato (CharaToLoki)
 #         Based on SGAsgardBeamWeapon by Alex SL Gato, which was based on BorgAdaptation.py and PhasedTorp.py by Alex SL Gato, which were based on the Foundation import function by Dasher; the Shield.py scripts and KM Armour scripts and FoundationTechnologies team's PhasedTorp.py, on ATPFunctions by Apollo.
 #         Also based on MEShields by Alex SL Gato, which was based on SGShields by Alex SL Gato, which was strongly based on Shields.py by the FoundationTechnologies team, ATPFunctions by Apollo, HelmMenuHandlers from the STBC Team, and MEGIonWeapon by Alex SL Gato.
 #         Also upon noticing how App.WEAPON_HIT did not make the tractor work, based slightly on MLeo Daalder's Tractordef, but using Attach instead of AttachShip because of weird tech check errors.
@@ -133,7 +133,7 @@ import nt
 import string
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-            "Version": "0.23",
+            "Version": "0.25",
             "License": "LGPL",
             "Description": "Read the small title above for more info"
             }
@@ -932,7 +932,7 @@ try:
 				if cfg0dict.has_key("ShieldDmgMultiplier") and cfg0dict["ShieldDmgMultiplier"] > 0.0:
 					baseShieldMultiplier = baseShieldMultiplier * cfg0dict["ShieldDmgMultiplier"]
 
-				if cfg0dict.has_key("TorpLifetime") and cfg0dict["TorpLifetime"] > 0.0:
+				if cfg0dict.has_key("TorpLifetime") and cfg0dict["TorpLifetime"] >= 0.0:
 					torpLifeTimeStuff = cfg0dict["TorpLifetime"]
 
 
@@ -1104,11 +1104,10 @@ try:
 
 					pTempTorp = None
 
-					if not torp404Fallback:
+					if not torp404Fallback and torpLifeTimeStuff > 0.0:
 						leTarget = None
 						if torpLifeTimeStuff > 0.0:
 							leTarget = pTarget
-							
 						pTempTorp = FireTorpFromPointWithVectorAndNetType(pHitPoint, pVec, mod, targetID, attackerID, torpImportedSpeed, leNetType, finalTorpDamage, fRadius, 1, leTarget, theOffset)
 					if pTempTorp:
 						if torpLifeTimeStuff > 0.0:
@@ -1131,8 +1130,16 @@ try:
 								global torpCountersForInstance
 
 								pEvent1 = TGFakeTractorWeaponHitEvent_Create() # This gives us a pointer, it has no arguments, but it is our "fake" event
-								pEventSource = pTempTorp
-								pEventDestination = pTarget
+								pEventSource = None
+								pEventDestination = None
+
+								if pTempTorp:
+									pEventSource = pTempTorp
+									pEventDestination = pTarget
+
+								else:
+									pEventSource = pWeaponFired
+									pEventDestination = pTarget
 
 								pEvent1.SetSource(pEventSource)
 								pEvent1.SetDestination(pEventDestination)
@@ -1166,10 +1173,12 @@ try:
 								pEvent1.SetFiringPlayerID(0)
 
 								# Fourth part, finally using the pEvent for something! This is also so more armours can work with these collisions, and not only one or two.
-							
-								pTargetInstance.DefendVSTorp(pTarget, pEvent1, pTempTorp)
-								if torpLifeTimeStuff == 0.0:
-									pTempTorp.SetLifetime(torpLifeTimeStuff)
+								if pTempTorp:
+									pTargetInstance.DefendVSTorp(pTarget, pEvent1, pTempTorp)
+									if torpLifeTimeStuff == 0.0:
+										pTempTorp.SetLifetime(torpLifeTimeStuff)
+								else:
+									pTargetInstance.DefendVSBeam(pTarget, pEvent1)
 
 				except:
 					print "You are missing '", self.GetMySupportProjectile() ,"' torpedo on your install, or another error happened"

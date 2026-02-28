@@ -3,27 +3,27 @@ import App
 def Create(pTorp):
 
 	kGlowColor = App.TGColorA()
-	kGlowColor.SetRGBA(125.0 / 255.0, 130.0 / 255.0, 0.0 / 255.0, 1.000000)	
+	kGlowColor.SetRGBA(0.0 / 255.0, 255.0 / 255.0, 0.0 / 255.0, 1.000000)	
 	kCoreColor = App.TGColorA()
-	kCoreColor.SetRGBA(125.0 / 255.0, 255.0 / 255.0, 0.0 / 255.0, 1.000000)
+	kCoreColor.SetRGBA(255.0 / 255.0, 255.0 / 255.0, 0.0 / 255.0, 1.000000)
 
 	# Params are:
 
 	pTorp.CreateTorpedoModel(
-					"data/Textures/Tactical/ZZ_TNGPhotonCore.tga",
+					"data/Textures/Tactical/ZZMauler1Core.tga",
 					kCoreColor, 
-					0.3,
-					4.2,	 
-					"data/textures/tactical/ZZ_TNGPhotonGlow.tga", 
+					0.1,
+					5.0,	 
+					"data/textures/tactical/ZZMauler1Glow.tga", 
 					kGlowColor,
-					3.0,	
-					0.35,	 
-					0.6,	
-					"data/textures/tactical/ZZST6PhotonFlares.tga",
-					kGlowColor,										
-					8,		
-					0.1,		
-					0.4)
+					7.0,	
+					0.3,	 
+					0.5,	
+					"data/textures/tactical/ZZMauler1Core.tga",
+					kCoreColor,										
+					20,		
+					0.35,		
+					0.3)
 
 	pTorp.SetDamage( GetDamage() )
 	pTorp.SetDamageRadiusFactor(0.25)
@@ -42,7 +42,7 @@ def GetLaunchSpeed():
 	return(19.0)
 
 def GetLaunchSound():
-	return("ZZ_ST6Photon2")
+	return("ZZ_Mauler")
 
 def GetPowerCost():
 	return(1.0)
@@ -68,9 +68,11 @@ try:
 	import ftb.Tech.TimedTorpedoesExpansion
 	oFire = ftb.Tech.TimedTorpedoesExpansion.MIRVMultiSingleTargetTorpedoFire2(
 		'MIRVMultiSingleTargetTorpedoFire2', {
-		'multipleTargetSelect': 1,
-		'spreadNumber': 3,
-		'spreadDensity': 4.5,
+		'multipleTargetSelect': 0,
+		'splitProx': 229,
+		'chkInterval': 3,
+		'spreadNumber': 1,
+		'spreadDensity': 360.1,
 		'warheadModule': "Tactical.Projectiles.ZZSpread2",
 		'shellLive': 0,
 	})

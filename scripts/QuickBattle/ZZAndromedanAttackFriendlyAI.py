@@ -12,14 +12,14 @@ def CreateAI(pShip):
 	#########################################
 	# Creating CompoundAI Attack at (150, 92)
 	import AI.Compound.BorgAttack
-	pAttack = AI.Compound.BorgAttack.CreateAI(pShip, pTargets, Difficulty = 1.0, MaxFiringRange = 300.0, FollowTargetThroughWarp = 1, ChooseSubsystemTargets = 1, AggressivePulseWeapons = 0, DisableBeforeDestroy = 0, InaccurateTorps = 1, SmartWeaponBalance = 0, SmartShields = 1, UseSideArcs = 1, HighPower = 1, PowerManagement = 1)
+	pAttack = AI.Compound.BorgAttack.CreateAI(pShip, pTargets, Difficulty = 1.0, MaxFiringRange = 70.0, FollowTargetThroughWarp = 1, ChooseSubsystemTargets = 1, AggressivePulseWeapons = 0, DisableBeforeDestroy = 0, InaccurateTorps = 1, SmartWeaponBalance = 0, SmartShields = 1, UseSideArcs = 1, HighPower = 1, PowerManagement = 1)
 	# Done creating CompoundAI Attack
 	#########################################
 	#########################################
 	# Creating ConditionalAI TargetInRange at (86, 150)
 	## Conditions:
 	#### Condition InRange
-	pInRange = App.ConditionScript_Create("Conditions.ConditionInRange", "ConditionInRange", 4000, pShip.GetName(), MissionLib.GetEnemyGroup())
+	pInRange = App.ConditionScript_Create("Conditions.ConditionInRange", "ConditionInRange", 1000, pShip.GetName(), MissionLib.GetEnemyGroup())
 	## Evaluation function:
 	def EvalFunc(bInRange):
 		ACTIVE = App.ArtificialIntelligence.US_ACTIVE

@@ -12,9 +12,11 @@ SubMenu = "Andromedans WZ"
 SubSubMenu = "TMP"
 species = App.SPECIES_GALAXY
 
-Foundation.ShipDef.WZErad = Foundation.FedShipDef(abbrev, species, {'name': longName, 'iconName': iconName, 'shipFile': shipFile, 'SubMenu': SubMenu, "SubSubMenu": SubSubMenu })
+import K_ZZAndromedanAttackDef
 
-Foundation.ShipDef.WZErad.desc = 'Pray to the Omnissiah it works'
+Foundation.ShipDef.WZErad = K_ZZAndromedanAttackDef.ZZAndromedanShipDef(abbrev, species, {'name': longName, 'iconName': iconName, 'shipFile': shipFile, 'SubMenu': SubMenu, "SubSubMenu": SubSubMenu })
+
+Foundation.ShipDef.WZErad.desc = 'Eradicator Class Heavy Cruiser'
 
 Foundation.ShipDef.WZErad.dTechs = {"AutoTargeting": { "Phaser": [4, 1] },
 	"Andromedan absorption Armor": [0.0001, "Power Absorber", {
@@ -28,7 +30,7 @@ Foundation.ShipDef.WZErad.dTechs = {"AutoTargeting": { "Phaser": [4, 1] },
 			"DmgRadMod": 0.0,
 		}
 	],
-	"Andromedan Tractor-Repulsor Beams Weapon": [{"HullDmgMultiplier": 800.0, "ShieldDmgMultiplier": 4.0}, ["Andromedan Tractor-Repulsor Beam"]],
+	"Andromedan Tractor-Repulsor Beams Weapon": [{"HullDmgMultiplier": 800.0, "ShieldDmgMultiplier": 4.0, "TorpLifetime": 0}, ["Andromedan Tractor-Repulsor Beam"]],
 }
 
 

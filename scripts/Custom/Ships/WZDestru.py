@@ -12,11 +12,13 @@ SubMenu = "Andromedans WZ"
 SubSubMenu = "TMP"
 species = App.SPECIES_GALAXY
 
-Foundation.ShipDef.WZDestru = Foundation.FedShipDef(abbrev, species, {'name': longName, 'iconName': iconName, 'shipFile': shipFile, 'SubMenu': SubMenu, "SubSubMenu": SubSubMenu })
+import K_ZZAndromedanAttackDef
+
+Foundation.ShipDef.WZDestru = K_ZZAndromedanAttackDef.ZZAndromedanShipDef(abbrev, species, {'name': longName, 'iconName': iconName, 'shipFile': shipFile, 'SubMenu': SubMenu, "SubSubMenu": SubSubMenu })
 
 Foundation.ShipDef.WZDestru.desc = """Andromedan Destructor Destroyer/Medium Satship"""
 
-Foundation.ShipDef.WZDestru.dTechs = {
+Foundation.ShipDef.WZDestru.dTechs = {"AutoTargeting": { "Phaser": [3, 1] },
 	"Andromedan absorption Armor": [0.0001, "Power Absorber", {
 			"Torpedoes": [],
 			"Tractors": [],
@@ -28,7 +30,7 @@ Foundation.ShipDef.WZDestru.dTechs = {
 			"DmgRadMod": 0.0,
 		}
 	],
-	"Andromedan Tractor-Repulsor Beams Weapon": [{"HullDmgMultiplier": 500.0, "ShieldDmgMultiplier": 1.0}, ["Andromedan Tractor-Repulsor Beam"]],
+	"Andromedan Tractor-Repulsor Beams Weapon": [{"HullDmgMultiplier": 500.0, "ShieldDmgMultiplier": 2.0, "TorpLifetime": 0}, ["Andromedan Tractor-Repulsor Beam"]],
 }
 
 
