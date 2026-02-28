@@ -1126,7 +1126,7 @@ try:
 							affectedSys, nonTargetSys = FindAllAffectedSystems(pTarget, myHullPos, fRadius)
 							AdjustListedSubsystems(pTarget, affectedSys, nonTargetSys, -finalTorpDamage, len(affectedSys) + 1, 1)
 
-							if pTargetInstance and pTempTorp:
+							if pTargetInstance:
 								global torpCountersForInstance
 
 								pEvent1 = TGFakeTractorWeaponHitEvent_Create() # This gives us a pointer, it has no arguments, but it is our "fake" event
