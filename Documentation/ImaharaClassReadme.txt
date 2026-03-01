@@ -1,4 +1,6 @@
 == Changelog ==
+1.0.17
+* Since this ship would have been equipped with programmable matter if it really existed in canon, I added Automated Destroyed System repair to this vessel - this now also needs another dependency, to the Borg Adaptation Mod or any other of my mods that has that tech.
 1.0.16
 * Updated AdvArmourTechThree to 1.94, cleaned code more and fixed potential issue with uninvicibilitators.
 1.0.15
@@ -38,6 +40,7 @@ We've left our milkshape file at data/Models/Ships/31stOberth so you can improve
 == Required mods ==
 * Kobayashi Maru Mod (the newest, the better. I personally used KM 2011).
 * Foundation Technologies (already installed on Kobayashi Maru).
+* Any of my mods that have Automated Destroyed System Repair, I recommend Borg Adaptation Mod (https://www.gamefront.com/games/bridge-commander/file/borg-adaptation-mod-defensive) since it has no more extra dependencies 
 
 == Installation guide ==
 1º Ok, first of all, just in case, backup your STBC.

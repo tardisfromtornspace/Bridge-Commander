@@ -15,6 +15,7 @@ menuGroup = "Fed Ships"
 playerMenuGroup = "Fed Ships"
 Foundation.ShipDef.saturn = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile })
 Foundation.ShipDef.saturn.dTechs = {
+	'Automated Destroyed System Repair': {"Time": 120.0},
 	'Breen Drainer Immune': 1,
 	'Drainer Immune': 1,
 	'Ablative Armour': 485000,

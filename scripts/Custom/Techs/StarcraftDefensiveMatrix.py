@@ -87,7 +87,7 @@ def findShipInstance(pShip):
 
 class DefensiveMatrix(FoundationTech.TechDef):
 	def __init__(self, name):
-		debug(__name__ + ", Initiated AutomatedDestroyedSystemRepair counter")
+		debug(__name__ + ", Initiated " + name + " counter")
 		FoundationTech.TechDef.__init__(self, name)
 		self.pEventHandler = App.TGPythonInstanceWrapper()
 		self.pEventHandler.SetPyWrapper(self)

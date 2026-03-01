@@ -21,6 +21,7 @@ Foundation.ShipDef.janeway.CloakingSFX   = "FutureBattleCloak"
 Foundation.ShipDef.janeway.DeCloakingSFX = "FutureBattleDecloak"
 
 Foundation.ShipDef.janeway.dTechs = {
+	'Automated Destroyed System Repair': {"Time": 120.0},
 	'Breen Drainer Immune': 1,
 	'Drainer Immune': 1,
 	'Ablative Armour': 405000,

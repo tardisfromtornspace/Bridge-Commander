@@ -18,6 +18,7 @@ Foundation.ShipDef.kirk = Foundation.FedShipDef(abbrev, species, { 'name': longN
 
 Foundation.ShipDef.kirk.desc = "The Kirk Constitution-class was a type of Federation starship operated by Starfleet during the 31st and the 32nd centuries. A Constitution layout vessel in the 32nd Century, ship class named after the legendary captain James T. Kirk. In 3190, various Constitution-class starships participated in the evacuation of United Earth when Earth was under siege from the Dark Matter Anomaly that was sent by Species 10-C."
 Foundation.ShipDef.kirk.dTechs = {
+	'Automated Destroyed System Repair': {"Time": 120.0},
 	'Breen Drainer Immune': 1,
 	'Drainer Immune': 1,
 	'Ablative Armour': 550000,

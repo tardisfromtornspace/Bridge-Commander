@@ -41,6 +41,7 @@ credits = {
 Foundation.ShipDef.joke31stOberth = Foundation.ShipDef(abbrev, species, { 'name': longName, 'iconName': iconName, 'shipFile': shipFile, "race": MixedGalaxyQuest })
 Foundation.ShipDef.joke31stOberth.sBridge = 'novabridge'
 Foundation.ShipDef.joke31stOberth.dTechs = {
+	'Automated Destroyed System Repair': {"Time": 120.0},
 #	"AutoTargeting": {"Phaser": [2, 1], "Torpedo": [2, 1]},
 	'Breen Drainer Immune': 1,
 	'Drainer Immune': 1,
