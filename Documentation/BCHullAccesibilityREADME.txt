@@ -1,4 +1,6 @@
 == Changelog ==
+1.0.4
+   - Added base configuration file to allow customization to AblativeArmour's derived armor, Andromedan Armor.
 1.0.3
    - Updated FIX-AblativeArmour1dot0 Autoload script to 0.41 to provide better armour inheritance.
 1.0.2 
