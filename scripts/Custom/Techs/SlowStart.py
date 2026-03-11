@@ -1,6 +1,6 @@
 #################################################################################################################
 #         SlowStart by Alex SL Gato
-#         27th January 2026
+#         11th March 2026
 #         Based on FiveSecsGodPhaser by USS Frontier, scripts/ftb/Tech/TachyonProjectile by the FoundationTechnologies team, and scripts/ftb/Tech/FedAblativeArmour by the FoundationTechnologies team
 #         Elminster did something similar for the DCMP Sau Paulo and for the BOBW Galaxy, but I really did not know of that script's existance at the time I made this script.        
 #################################################################################################################
@@ -20,7 +20,7 @@ Foundation.ShipDef.Sovereign.dTechs = {
 """
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.3",
+	    "Version": "0.31",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -98,8 +98,8 @@ class SlowStartWeapon(FoundationTech.TechDef):
 		if pInstance:
 			validSubsystems = {}
 			pInstanceDict = pInstance.__dict__
-			if pInstanceDict and pInstanceDict.has_key("Slow Start"):
-				validSubsystems = pInstanceDict['Slow Start']
+			if pInstanceDict and pInstanceDict.has_key(self.name):
+				validSubsystems = pInstanceDict[self.name]
 
 			rechargeIs = 0
 			if validSubsystems.has_key("GlobalFactor"):
@@ -114,7 +114,7 @@ class SlowStartWeapon(FoundationTech.TechDef):
 			print __name__, ": attached to ship:", pShip.GetName()
 
 	def checkWhichSubToChg(self, validSubsystems, pShip, key, rechargeIs):
-		if validSubsystems.has_key(key) and len(validSubsystems[key]) > 0:
+		if validSubsystems.has_key(key) and (type(validSubsystems[key]) == type ([])):
 			keyFactor = str(key)+"Factor"
 			if validSubsystems.has_key(keyFactor):
 				rechargeIs = rechargeIs * validSubsystems[keyFactor]
@@ -144,21 +144,21 @@ class SlowStartWeapon(FoundationTech.TechDef):
 			if iChildren > 0:
 				for iIndex in range(iChildren):
 					pChild = pWeaponSystem.GetChildSubsystem(iIndex)
-					if pChild and pChild.GetName() in subsystemsOptions:
+					if pChild and (len(subsystemsOptions) == 0 or pChild.GetName() in subsystemsOptions):
 						self.setChargeToX(pChild, rechargeIs)
 						self.setChildrenSubsystemsChargeToX(pChild, rechargeIs)
 
 	def Attach(self, pInstance):
 		pShip = App.ShipClass_Cast(App.TGObject_GetTGObjectPtr(pInstance.pShipID))
 		if pShip != None:
-			if not pInstance.__dict__.has_key("Slow Start"):
-				#print "Slow Start: cancelling, ship does not have Slow Start equipped..."
+			if not pInstance.__dict__.has_key(self.name):
+				#print self.name, ": cancelling, ship does not have ", self.name, " equipped..."
 				return
 
-			dMasterDict = pInstance.__dict__['Slow Start']
+			dMasterDict = pInstance.__dict__[self.name]
 			self.CommonStartPart(pShip, pInstance)
 		else:
-			print "Slow Start Error (at Attach): couldn't acquire ship of id", pInstance.pShipID
+			print self.name, ": Error (at Attach): couldn't acquire ship of id", pInstance.pShipID
 			pass
 
 		pInstance.lTechs.append(self)
@@ -166,12 +166,12 @@ class SlowStartWeapon(FoundationTech.TechDef):
 	def Detach(self, pInstance):
 		pShip = App.ShipClass_Cast(App.TGObject_GetTGObjectPtr(pInstance.pShipID))
 		if pShip != None:
-			dMasterDict = pInstance.__dict__['Slow Start']
+			dMasterDict = pInstance.__dict__[self.name]
 		else:
-			#print "Slow Start Error (at Detach): couldn't acquire ship of id", pInstance.pShipID
+			#print self.name, ": Error (at Detach): couldn't acquire ship of id", pInstance.pShipID
 			pass
 		pInstance.lTechs.remove(self)
-		#print "Slow Start: detached from ship:", pShip.GetName()
+		#print self.name, ": detached from ship:", pShip.GetName()
     
 	def ObjectCreatedHandler(self, pEvent):
 		debug(__name__ + ", ObjectCreatedHandler")
@@ -187,8 +187,8 @@ class SlowStartWeapon(FoundationTech.TechDef):
 				#print "FSTB: cancelling, error in try found..."
 				return
 
-			if not pInstance.__dict__.has_key("Slow Start"):
-				print "Slow Start: cancelling, ship does not have Slow Start equipped..."
+			if not pInstance.__dict__.has_key(self.name):
+				print self.name, ": cancelling, ship does not have ", self.name, " equipped..."
 				return
 
 			self.CommonStartPart(pShip, pInstance)
