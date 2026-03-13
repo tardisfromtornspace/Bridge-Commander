@@ -1,0 +1,25 @@
+These specs are for SFC 3 should you wish to include this as a seperate vessel and not replace a stock one.
+
+DefaultCore:
+
+25	BCH	1800	0	1900	8500	3000	6500	26000	1000	Klingon-Battlecruiser2	Vagabond	PrimaryHP:1:0_360:2:0_360:3:330_30:4:330_30:5:150_210:6:150_210:7:150_210:8:150_210:9:240_300:10:60_120:11:330_30	HeavyHP:12:240_300:13:60_120:14:240_300:15:60_120:16:240_300:17:60_120:18:240_300:19:60_120:20:240_300:21:60_120	HullHP:1:2:3	BridgeHP:1:2:3	ship	Mines:4:16:4	Marines:10:20:10	Shuttles:2:4:2
+
+DefaultLoadOut:
+
+Klingon	Klingon-Battlecruiser2	Vagabond	Vagabond			K-TRACTOR-IV:3	K-TRANSPORTER-II:1	K-ARMOR-III:2	K-COMPUTER-II:1	K-CLOAK-I:2	K-WARP-VII:1	K-IMPULSE-IV:2	K-THRUSTER-IV:3	K-SHIELD-V:3	DISRUPTOR III:1	DISRUPTOR III:2	K-PHOTON TORPEDO:12	K-PHOTON TORPEDO:13	OFFICER:ENGINEER:	OFFICER:SECURITY:	OFFICER:HELM:	OFFICER:OPS:	OFFICER:TACTICAL:	OFFICER:MEDICAL:	K-SHIELD-VII:1	K-SHIELD-VI:2	K-SHIELD-VI:4	DISRUPTOR II:3	DISRUPTOR II:4	DISRUPTOR IF:7	DISRUPTOR IF:8			
+
+Shipnames string file:
+
+|Klingon-Battlecruiser2|Vagabond
+||Slaughter
+||Lastri's Ort
+||Random Task
+||Oddjob
+||Waytansee
+||Smokontha Water
+||Wonder Bread
+||Orion Lion
+||Navi Gator
+||Soapy By-Product
+||Dewey Cheetum and Howe
+||Tell William

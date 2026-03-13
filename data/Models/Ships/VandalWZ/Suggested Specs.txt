@@ -1,0 +1,43 @@
+These specs are for SFC 3 should you wish to include this as a seperate vessel and not replace a stock one.
+
+DefaultCore:
+
+10	DD	1125	0	1125	2425	1000	2300	8500	650	Klingon-Destroyer2	Vandal	PrimaryHP:1:0_360:2:330_30:3:330_30:4:210_270:5:90_150:6:300_360:7:0_60:8:150_210:9:150_210	HeavyHP:12:330_30:13:330_30:14:300_360:15:0_60	HullHP:1:2:3	BridgeHP:1:2	ship	Mines:2:8:2	Marines:5:10:5	Shuttles:1:3:2
+
+DefaultLoadOut:
+
+Klingon	Klingon-Destroyer2	Vandal	Vandal			K-TRACTOR-II:3	K-TRANSPORTER-I:1	K-ARMOR-I:2	K-COMPUTER-I:1	K-CLOAK-I:2	K-WARP-III:1	K-IMPULSE-I:2	K-THRUSTER-I:3	DISRUPTOR I:1	DISRUPTOR I:2	DISRUPTOR I:3	DISRUPTOR I:4	K-PHOTON TORPEDO:12	OFFICER:ENGINEER:	OFFICER:SECURITY:	OFFICER:HELM:	OFFICER:OPS:	OFFICER:TACTICAL:	OFFICER:MEDICAL:	K-SHIELD-III:2	K-SHIELD-III:4	K-SHIELD-II:3	K-SHIELD-IV:1				
+
+Shipnames string file:
+
+|Klingon-Destroyer2|Vandal
+||Boxer
+||Uprightman
+||Ruffler
+||Sharper
+||Cutpurse
+||Swagman
+||Dodger
+||Fence
+||Pickpocket
+||Climer
+||Burgler
+||Safecracker
+||Pander
+||Rustler
+||Prigger
+||Angler
+||Palliard
+||Patricoe
+||Jarckman
+||Hitman
+||Prancer
+||Robber
+||Mugger
+||Rowdy
+||Ruffian
+||Highwayman
+||Bandit
+||Picklock
+||Filcher
+||Ambusher

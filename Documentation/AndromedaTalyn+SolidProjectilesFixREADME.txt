@@ -1,6 +1,7 @@
 == Changelog ==
-1.1.0 - Updated SlowStart ot 0.31 to fix a goof that made empty weapon lists (objective: all properties of that type had this tech) behave the same as not having the list on the first place (no properties of that type had that tech)!
-1.0.9 - Updated SlowStart ot 0.3 to support torpedo tubes, tractor beams and different charges from 0!
+1.1.1 - Updated SlowStart to 0.33 to both fix and provide a feature or torpedo tubes not relaoding until manually changing the torpedo load. Thank you so much ZambieZan for finding this error.
+1.1.0 - Updated SlowStart to 0.31 to fix a goof that made empty weapon lists (objective: all properties of that type had this tech) behave the same as not having the list on the first place (no properties of that type had that tech)!
+1.0.9 - Updated SlowStart to 0.3 to support torpedo tubes, tractor beams and different charges from 0!
 1.0.8 - Updated FIX-AblativeArmour1dot0 Autoload script to 0.41 to provide better armour inheritance.
 1.0.7 - Updated SolidProjectiles to 0.4, providing even more customization for fully collidable projectiles and leftover explosions, as well as a bug fix.
 1.0.6 - Updated SolidProjectiles to 0.36, adding an extra parameter that allows handling how the projectile and its attached ship model react when the ship is destroyed before the torpedo.
@@ -64,7 +65,7 @@ For the hybrid ship to work fully, you must have had these mods installed alread
 * Tools used: Milkshape 3D and FreeCAD for extensive modifications and adjustments to the original Andromeda Model, Nifskope to validate the textures, GIMP to modify and create textures and icons, Model Property Editor to iron.out a few hardpoint issues, Audacity to fix some sounds.
 * Grey da Derg#2305 for the gravitic lance sounds.
 * 𝕟𝕒𝕣𝕣𝕠𝕨𝕔𝕨𝕪𝕗𝕖 aka Hexagonal_Nexul for the transphasic torpedo sounds and .tga.
-* Grey da Derg#2305, Grim455#4905 aka THE SCI-FI KING, HexagonalNexul and MSR1701 for helping with noticing bugs and their cause, and for being inquisitive and finding out possible ways to tweak the hardpoints and techs and models.
+* Grey da Derg#2305, Grim455#4905 aka THE SCI-FI KING, HexagonalNexul, MSR1701 and ZambieZan for helping with noticing bugs and their cause, and for being inquisitive and finding out possible ways to tweak the hardpoints and techs and models.
 * Alex SL Gato (aka CharaToLoki) for any new code or model implemented, fixed or modified (including all the monkey patches and the icon), plus the original fusion idea I had, based on a Spore Andromeda-Talyn fusion (image provided on Documentation/AndromedaTalynOriginalSporeIdea.png), and the Spear model.
 
 Fulfilling both the SDK and LGPL licenses:

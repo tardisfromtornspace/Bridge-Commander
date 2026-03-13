@@ -81,6 +81,8 @@ from bcdebug import debug
 #		-Do Mini Streams properly
 #               v1.4 -- USS Sovereign
 #                    - updated it so that it doesn't use probe.py anymore
+#               v1.4.001 CharaToLoki
+#                   - not sure if this was on v1.4 or the version on my install had been modified before I found out, but on my install I found an error at around line 803 where ship ID was not being checked - I fixed that.
 #                                                       
 ###################################################################
 
@@ -800,7 +802,11 @@ def VentMiniPlasma(pWarpChild = None, pShip = None):
     debug(__name__ + ", VentMiniPlasma")
     if not pShip:
         return
+    pShipID = pShip.GetObjID() # TO-DO a fix on my particular install
     pShip = App.ShipClass_GetObjectByID(None, pShipID)
+    if not pShip:
+        return
+
     #pSet          = pShip.GetContainingSet()
     pAttachTo     = pShip.GetNode() #pSet.GetEffectRoot()
     pEmitFrom     = App.TGModelUtils_CastNodeToAVObject(pShip.GetNode())
