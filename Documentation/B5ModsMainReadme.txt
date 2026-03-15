@@ -1,4 +1,8 @@
 ==Changelog==
+1.7.9 -
+   Fixes:
+   * Updated Turrets to 1.18, providing a new "SimulatedPulse" and "SimulatedTorpedo" which allow the modder to totally skip any potential Torpedo ammo and pulse-shield hit issues.
+   * Updated BSVictory scripts/Custom/Ships file to reflect this new Turret update.
 1.7.8 -
    Fixes:
    * Updated Turrets to 1.16, fixing a potential edge-case light issue.
