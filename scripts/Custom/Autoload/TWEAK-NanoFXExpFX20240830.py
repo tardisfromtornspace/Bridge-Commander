@@ -1,5 +1,5 @@
-# VERSION 1.2.3
-# 25th February 2026
+# VERSION 1.2.4
+# 15th March 2026
 
 import App
 import string
@@ -1733,7 +1733,7 @@ if bEnabled:
 			fExplodingShipRadius = 0.01/15.0
 
 		isPlayer = 0
-		#auxPlayer = None
+		auxPlayer = None
 		skipUnwatched = 0 #1
 		try:
 			pPlayer = MissionLib.GetPlayer()

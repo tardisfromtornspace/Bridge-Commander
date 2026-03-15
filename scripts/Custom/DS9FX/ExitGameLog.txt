@@ -1,0 +1,1318 @@
+##### Bridge Commander Exit Log: 15 Mar 2026 16:10:56#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Custom.Autoload.FIX-EngineerCharacterHandlers : Patched your  Bridge.EngineerCharacterHandlers  to cover 0-shield-strength ships
+Updated FoundationTech.ShipInstance's DefendVS* Fixes
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version  20260222 )
+Patched TacticalControlInterfaces.CycleCameraMode to add mode viewing modes
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+
+
+
+
+TO-DO leSubsystem is  <C ShipSubsystem instance at _3d36fb50_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _3d36fc24_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+
+
+TO-DO leSubsystem is  <C ShipSubsystem instance at _3d36fb50_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _3d36fc24_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _3d36fb50_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _3d36fc24_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _3d36fb50_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _3d36fc24_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+
+
+Setting splash damage for Asteroid-2 to (562.500000, 11.250000)
+TO-DO leSubsystem is  <C ShipSubsystem instance at _3d36fb50_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _3d36fc24_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _3d36fb50_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _3d36fc24_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+
+
+Setting splash damage for Asteroid-3 to (562.500000, 11.250000)
+TO-DO leSubsystem is  <C ShipSubsystem instance at _3d36fb50_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _3d36fc24_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+
+
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+
+
+
+
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597b1348_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597b141c_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+Setting splash damage for Total PointDefence Firepoint Victory-2 C Torpedo instance at _495b4140_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-2 C Torpedo instance at _495b42b0_p_Torpedo to (37.500000, 0.750000)
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597af720_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597af7f4_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+
+
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597b1348_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597b141c_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597af720_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597af7f4_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+
+
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597af720_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597af7f4_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+Setting splash damage for Total PointDefence Firepoint Victory-2 C Torpedo instance at _495b42b0_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-2 C Torpedo instance at _495b4140_p_Torpedo to (37.500000, 0.750000)
+TO-DO leSubsystem is  <C ShipSubsystem instance at _34028b70_p_ShipSubsystem>
+TO-DO modS =  Tactical.Projectiles.VorlonWeapon mod =  <module 'Tactical.Projectiles.VorlonWeapon' from '.\Scripts\Tactical\Projectiles\VorlonWeapon.pyc'>
+TO-DO torpImportedSpeedA =  24.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _34028d80_p_ShipSubsystem>
+TO-DO modS =  Tactical.Projectiles.VorlonWeapon mod =  <module 'Tactical.Projectiles.VorlonWeapon' from '.\Scripts\Tactical\Projectiles\VorlonWeapon.pyc'>
+TO-DO torpImportedSpeedA =  24.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _34028cd0_p_ShipSubsystem>
+TO-DO modS =  Tactical.Projectiles.VorlonWeapon mod =  <module 'Tactical.Projectiles.VorlonWeapon' from '.\Scripts\Tactical\Projectiles\VorlonWeapon.pyc'>
+TO-DO torpImportedSpeedA =  24.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _34028b70_p_ShipSubsystem>
+TO-DO modS =  Tactical.Projectiles.VorlonWeapon mod =  <module 'Tactical.Projectiles.VorlonWeapon' from '.\Scripts\Tactical\Projectiles\VorlonWeapon.pyc'>
+TO-DO torpImportedSpeedA =  24.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _34028d80_p_ShipSubsystem>
+TO-DO modS =  Tactical.Projectiles.VorlonWeapon mod =  <module 'Tactical.Projectiles.VorlonWeapon' from '.\Scripts\Tactical\Projectiles\VorlonWeapon.pyc'>
+TO-DO torpImportedSpeedA =  24.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _34028cd0_p_ShipSubsystem>
+TO-DO modS =  Tactical.Projectiles.VorlonWeapon mod =  <module 'Tactical.Projectiles.VorlonWeapon' from '.\Scripts\Tactical\Projectiles\VorlonWeapon.pyc'>
+TO-DO torpImportedSpeedA =  24.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597af720_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597af7f4_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _34028b70_p_ShipSubsystem>
+TO-DO modS =  Tactical.Projectiles.VorlonWeapon mod =  <module 'Tactical.Projectiles.VorlonWeapon' from '.\Scripts\Tactical\Projectiles\VorlonWeapon.pyc'>
+TO-DO torpImportedSpeedA =  24.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _34028d80_p_ShipSubsystem>
+TO-DO modS =  Tactical.Projectiles.VorlonWeapon mod =  <module 'Tactical.Projectiles.VorlonWeapon' from '.\Scripts\Tactical\Projectiles\VorlonWeapon.pyc'>
+TO-DO torpImportedSpeedA =  24.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _34028cd0_p_ShipSubsystem>
+TO-DO modS =  Tactical.Projectiles.VorlonWeapon mod =  <module 'Tactical.Projectiles.VorlonWeapon' from '.\Scripts\Tactical\Projectiles\VorlonWeapon.pyc'>
+TO-DO torpImportedSpeedA =  24.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _34028b70_p_ShipSubsystem>
+TO-DO modS =  Tactical.Projectiles.VorlonWeapon mod =  <module 'Tactical.Projectiles.VorlonWeapon' from '.\Scripts\Tactical\Projectiles\VorlonWeapon.pyc'>
+TO-DO torpImportedSpeedA =  24.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _34028d80_p_ShipSubsystem>
+TO-DO modS =  Tactical.Projectiles.VorlonWeapon mod =  <module 'Tactical.Projectiles.VorlonWeapon' from '.\Scripts\Tactical\Projectiles\VorlonWeapon.pyc'>
+TO-DO torpImportedSpeedA =  24.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _34028cd0_p_ShipSubsystem>
+TO-DO modS =  Tactical.Projectiles.VorlonWeapon mod =  <module 'Tactical.Projectiles.VorlonWeapon' from '.\Scripts\Tactical\Projectiles\VorlonWeapon.pyc'>
+TO-DO torpImportedSpeedA =  24.0
+TO-DO WE HAVE A TEMP TORP
+
+
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _495b3fd0_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _495b3e60_p_Torpedo to (37.500000, 0.750000)
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597b1348_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597b141c_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597af720_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597af7f4_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597af720_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597af7f4_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597b1348_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597b141c_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597af720_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597af7f4_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+
+X
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597b1348_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597b141c_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597af720_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597af7f4_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597b1348_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597b141c_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597af720_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597af7f4_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+Traceback (innermost last):
+  File "<string>", line 1, in ?
+NameError: X
+
+
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _4a15bb58_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _4986b360_p_Torpedo to (75.000000, 1.500000)
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597b1348_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597b141c_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597af720_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597af7f4_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _340286a0_p_ShipSubsystem>
+TO-DO modS =  Tactical.Projectiles.VorlonWeapon mod =  <module 'Tactical.Projectiles.VorlonWeapon' from '.\Scripts\Tactical\Projectiles\VorlonWeapon.pyc'>
+TO-DO torpImportedSpeedA =  24.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _59754738_p_ShipSubsystem>
+TO-DO modS =  Tactical.Projectiles.VorlonWeapon mod =  <module 'Tactical.Projectiles.VorlonWeapon' from '.\Scripts\Tactical\Projectiles\VorlonWeapon.pyc'>
+TO-DO torpImportedSpeedA =  24.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597547e8_p_ShipSubsystem>
+TO-DO modS =  Tactical.Projectiles.VorlonWeapon mod =  <module 'Tactical.Projectiles.VorlonWeapon' from '.\Scripts\Tactical\Projectiles\VorlonWeapon.pyc'>
+TO-DO torpImportedSpeedA =  24.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597af720_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597af7f4_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597b1348_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597b141c_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+Setting splash damage for Total PointDefence Firepoint Victory-2 C Torpedo instance at _5d0a7088_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-2 C Torpedo instance at _5d0a6f18_p_Torpedo to (37.500000, 0.750000)
+TO-DO leSubsystem is  <C ShipSubsystem instance at _340286a0_p_ShipSubsystem>
+TO-DO modS =  Tactical.Projectiles.VorlonWeapon mod =  <module 'Tactical.Projectiles.VorlonWeapon' from '.\Scripts\Tactical\Projectiles\VorlonWeapon.pyc'>
+TO-DO torpImportedSpeedA =  24.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _59754738_p_ShipSubsystem>
+TO-DO modS =  Tactical.Projectiles.VorlonWeapon mod =  <module 'Tactical.Projectiles.VorlonWeapon' from '.\Scripts\Tactical\Projectiles\VorlonWeapon.pyc'>
+TO-DO torpImportedSpeedA =  24.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597547e8_p_ShipSubsystem>
+TO-DO modS =  Tactical.Projectiles.VorlonWeapon mod =  <module 'Tactical.Projectiles.VorlonWeapon' from '.\Scripts\Tactical\Projectiles\VorlonWeapon.pyc'>
+TO-DO torpImportedSpeedA =  24.0
+TO-DO WE HAVE A TEMP TORP
+
+
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597af720_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597af7f4_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+
+
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597af720_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597af7f4_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+
+
+
+
+
+
+
+
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597af720_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597af7f4_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+
+
+
+
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 15 Mar 2026 16:10:56#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Custom.Autoload.FIX-EngineerCharacterHandlers : Patched your  Bridge.EngineerCharacterHandlers  to cover 0-shield-strength ships
+Updated FoundationTech.ShipInstance's DefendVS* Fixes
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version  20260222 )
+Patched TacticalControlInterfaces.CycleCameraMode to add mode viewing modes
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+
+
+
+
+TO-DO leSubsystem is  <C ShipSubsystem instance at _3d36fb50_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _3d36fc24_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+
+
+TO-DO leSubsystem is  <C ShipSubsystem instance at _3d36fb50_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _3d36fc24_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _3d36fb50_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _3d36fc24_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _3d36fb50_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _3d36fc24_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+
+
+Setting splash damage for Asteroid-2 to (562.500000, 11.250000)
+TO-DO leSubsystem is  <C ShipSubsystem instance at _3d36fb50_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _3d36fc24_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _3d36fb50_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _3d36fc24_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+
+
+Setting splash damage for Asteroid-3 to (562.500000, 11.250000)
+TO-DO leSubsystem is  <C ShipSubsystem instance at _3d36fb50_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _3d36fc24_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+
+
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+
+
+
+
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597b1348_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597b141c_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+Setting splash damage for Total PointDefence Firepoint Victory-2 C Torpedo instance at _495b4140_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-2 C Torpedo instance at _495b42b0_p_Torpedo to (37.500000, 0.750000)
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597af720_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597af7f4_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+
+
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597b1348_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597b141c_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597af720_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597af7f4_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+
+
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597af720_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597af7f4_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+Setting splash damage for Total PointDefence Firepoint Victory-2 C Torpedo instance at _495b42b0_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-2 C Torpedo instance at _495b4140_p_Torpedo to (37.500000, 0.750000)
+TO-DO leSubsystem is  <C ShipSubsystem instance at _34028b70_p_ShipSubsystem>
+TO-DO modS =  Tactical.Projectiles.VorlonWeapon mod =  <module 'Tactical.Projectiles.VorlonWeapon' from '.\Scripts\Tactical\Projectiles\VorlonWeapon.pyc'>
+TO-DO torpImportedSpeedA =  24.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _34028d80_p_ShipSubsystem>
+TO-DO modS =  Tactical.Projectiles.VorlonWeapon mod =  <module 'Tactical.Projectiles.VorlonWeapon' from '.\Scripts\Tactical\Projectiles\VorlonWeapon.pyc'>
+TO-DO torpImportedSpeedA =  24.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _34028cd0_p_ShipSubsystem>
+TO-DO modS =  Tactical.Projectiles.VorlonWeapon mod =  <module 'Tactical.Projectiles.VorlonWeapon' from '.\Scripts\Tactical\Projectiles\VorlonWeapon.pyc'>
+TO-DO torpImportedSpeedA =  24.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _34028b70_p_ShipSubsystem>
+TO-DO modS =  Tactical.Projectiles.VorlonWeapon mod =  <module 'Tactical.Projectiles.VorlonWeapon' from '.\Scripts\Tactical\Projectiles\VorlonWeapon.pyc'>
+TO-DO torpImportedSpeedA =  24.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _34028d80_p_ShipSubsystem>
+TO-DO modS =  Tactical.Projectiles.VorlonWeapon mod =  <module 'Tactical.Projectiles.VorlonWeapon' from '.\Scripts\Tactical\Projectiles\VorlonWeapon.pyc'>
+TO-DO torpImportedSpeedA =  24.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _34028cd0_p_ShipSubsystem>
+TO-DO modS =  Tactical.Projectiles.VorlonWeapon mod =  <module 'Tactical.Projectiles.VorlonWeapon' from '.\Scripts\Tactical\Projectiles\VorlonWeapon.pyc'>
+TO-DO torpImportedSpeedA =  24.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597af720_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597af7f4_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _34028b70_p_ShipSubsystem>
+TO-DO modS =  Tactical.Projectiles.VorlonWeapon mod =  <module 'Tactical.Projectiles.VorlonWeapon' from '.\Scripts\Tactical\Projectiles\VorlonWeapon.pyc'>
+TO-DO torpImportedSpeedA =  24.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _34028d80_p_ShipSubsystem>
+TO-DO modS =  Tactical.Projectiles.VorlonWeapon mod =  <module 'Tactical.Projectiles.VorlonWeapon' from '.\Scripts\Tactical\Projectiles\VorlonWeapon.pyc'>
+TO-DO torpImportedSpeedA =  24.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _34028cd0_p_ShipSubsystem>
+TO-DO modS =  Tactical.Projectiles.VorlonWeapon mod =  <module 'Tactical.Projectiles.VorlonWeapon' from '.\Scripts\Tactical\Projectiles\VorlonWeapon.pyc'>
+TO-DO torpImportedSpeedA =  24.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _34028b70_p_ShipSubsystem>
+TO-DO modS =  Tactical.Projectiles.VorlonWeapon mod =  <module 'Tactical.Projectiles.VorlonWeapon' from '.\Scripts\Tactical\Projectiles\VorlonWeapon.pyc'>
+TO-DO torpImportedSpeedA =  24.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _34028d80_p_ShipSubsystem>
+TO-DO modS =  Tactical.Projectiles.VorlonWeapon mod =  <module 'Tactical.Projectiles.VorlonWeapon' from '.\Scripts\Tactical\Projectiles\VorlonWeapon.pyc'>
+TO-DO torpImportedSpeedA =  24.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _34028cd0_p_ShipSubsystem>
+TO-DO modS =  Tactical.Projectiles.VorlonWeapon mod =  <module 'Tactical.Projectiles.VorlonWeapon' from '.\Scripts\Tactical\Projectiles\VorlonWeapon.pyc'>
+TO-DO torpImportedSpeedA =  24.0
+TO-DO WE HAVE A TEMP TORP
+
+
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _495b3fd0_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _495b3e60_p_Torpedo to (37.500000, 0.750000)
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597b1348_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597b141c_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597af720_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597af7f4_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597af720_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597af7f4_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597b1348_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597b141c_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597af720_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597af7f4_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+
+X
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597b1348_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597b141c_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597af720_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597af7f4_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597b1348_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597b141c_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597af720_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597af7f4_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+Traceback (innermost last):
+  File "<string>", line 1, in ?
+NameError: X
+
+
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _4a15bb58_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _4986b360_p_Torpedo to (75.000000, 1.500000)
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597b1348_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597b141c_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597af720_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597af7f4_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _340286a0_p_ShipSubsystem>
+TO-DO modS =  Tactical.Projectiles.VorlonWeapon mod =  <module 'Tactical.Projectiles.VorlonWeapon' from '.\Scripts\Tactical\Projectiles\VorlonWeapon.pyc'>
+TO-DO torpImportedSpeedA =  24.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _59754738_p_ShipSubsystem>
+TO-DO modS =  Tactical.Projectiles.VorlonWeapon mod =  <module 'Tactical.Projectiles.VorlonWeapon' from '.\Scripts\Tactical\Projectiles\VorlonWeapon.pyc'>
+TO-DO torpImportedSpeedA =  24.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597547e8_p_ShipSubsystem>
+TO-DO modS =  Tactical.Projectiles.VorlonWeapon mod =  <module 'Tactical.Projectiles.VorlonWeapon' from '.\Scripts\Tactical\Projectiles\VorlonWeapon.pyc'>
+TO-DO torpImportedSpeedA =  24.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597af720_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597af7f4_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597b1348_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597b141c_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+Setting splash damage for Total PointDefence Firepoint Victory-2 C Torpedo instance at _5d0a7088_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-2 C Torpedo instance at _5d0a6f18_p_Torpedo to (37.500000, 0.750000)
+TO-DO leSubsystem is  <C ShipSubsystem instance at _340286a0_p_ShipSubsystem>
+TO-DO modS =  Tactical.Projectiles.VorlonWeapon mod =  <module 'Tactical.Projectiles.VorlonWeapon' from '.\Scripts\Tactical\Projectiles\VorlonWeapon.pyc'>
+TO-DO torpImportedSpeedA =  24.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _59754738_p_ShipSubsystem>
+TO-DO modS =  Tactical.Projectiles.VorlonWeapon mod =  <module 'Tactical.Projectiles.VorlonWeapon' from '.\Scripts\Tactical\Projectiles\VorlonWeapon.pyc'>
+TO-DO torpImportedSpeedA =  24.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597547e8_p_ShipSubsystem>
+TO-DO modS =  Tactical.Projectiles.VorlonWeapon mod =  <module 'Tactical.Projectiles.VorlonWeapon' from '.\Scripts\Tactical\Projectiles\VorlonWeapon.pyc'>
+TO-DO torpImportedSpeedA =  24.0
+TO-DO WE HAVE A TEMP TORP
+
+
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597af720_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597af7f4_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+
+
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597af720_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597af7f4_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+
+
+
+
+
+
+
+
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597af720_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+TO-DO leSubsystem is  <C ShipSubsystem instance at _597af7f4_p_ShipSubsystem>
+TO-DO pulse modS =  Tactical.Projectiles.VicFusion
+TO-DO modS =  Tactical.Projectiles.VicFusion mod =  <module 'Tactical.Projectiles.VicFusion' from '.\Scripts\Tactical\Projectiles\VicFusion.pyc'>
+TO-DO torpImportedSpeedA =  30.0
+TO-DO WE HAVE A TEMP TORP
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+
+
+
+
+
+# DS9FX has...
+
+# taken a console dump
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 15 Mar 2026 16:49:20#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Custom.Autoload.FIX-EngineerCharacterHandlers : Patched your  Bridge.EngineerCharacterHandlers  to cover 0-shield-strength ships
+Updated FoundationTech.ShipInstance's DefendVS* Fixes
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version  20260222 )
+Patched TacticalControlInterfaces.CycleCameraMode to add mode viewing modes
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+
+
+Setting splash damage for Total PointDefence Firepoint Victory-1 C Torpedo instance at _3de36ae0_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-2 C Torpedo instance at _3de370a0_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-2 C Torpedo instance at _3de36f30_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-1 C Torpedo instance at _3de36970_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-3 C Torpedo instance at _3d905a38_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-4 C Torpedo instance at _3d905d18_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-4 C Torpedo instance at _3d905ba8_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-3 C Torpedo instance at _3d9058c8_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-7 C Torpedo instance at _3de3b100_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-7 C Torpedo instance at _3de3b270_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-5 C Torpedo instance at _3de36800_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-5 C Torpedo instance at _3de36690_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _3de36dc0_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _3de36c50_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-1 C Torpedo instance at _3d905a38_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-1 C Torpedo instance at _3d9058c8_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-4 C Torpedo instance at _4779e778_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-4 C Torpedo instance at _4779e608_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-2 C Torpedo instance at _3de36970_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-2 C Torpedo instance at _3de36ae0_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-3 C Torpedo instance at _4779e1b8_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-3 C Torpedo instance at _4779e048_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-7 C Torpedo instance at _4779e498_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-7 C Torpedo instance at _4779e328_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-6 C Torpedo instance at _4779ded8_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-6 C Torpedo instance at _4779dd68_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-5 C Torpedo instance at _3de36f30_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-5 C Torpedo instance at _3de370a0_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _3d905ba8_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _3d905d18_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-3 C Torpedo instance at _56364e40_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-3 C Torpedo instance at _56364fb0_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-4 C Torpedo instance at _56365850_p_Torpedo to (75.000000, 1.500000)
+Setting splash damage for Total PointDefence Firepoint Victory-2 C Torpedo instance at _562cb658_p_Torpedo to (46.080318, 0.921606)
+Setting splash damage for Total PointDefence Firepoint Victory-1 C Torpedo instance at _563635d0_p_Torpedo to (75.000000, 1.500000)
+Setting splash damage for Total PointDefence Firepoint Victory-1 C Torpedo instance at _56363740_p_Torpedo to (75.000000, 1.500000)
+Setting splash damage for Total PointDefence Firepoint Victory-7 C Torpedo instance at _56365ca0_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-7 C Torpedo instance at _56365b30_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-5 C Torpedo instance at _562cac48_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-5 C Torpedo instance at _562caad8_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-6 C Torpedo instance at _56365120_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-6 C Torpedo instance at _56365290_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Victory-7 to (4406.250000, 88.125000)
+Setting splash damage for Total PointDefence Firepoint Victory-2 C Torpedo instance at _562cfb58_p_Torpedo to (75.000000, 1.500000)
+Setting splash damage for Total PointDefence Firepoint Victory-2 C Torpedo instance at _562cf9e8_p_Torpedo to (75.000000, 1.500000)
+Setting splash damage for Total PointDefence Firepoint Victory-4 C Torpedo instance at _562cb7c8_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-4 C Torpedo instance at _562ce738_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-1 C Torpedo instance at _4779e1b8_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-3 C Torpedo instance at _562cac48_p_Torpedo to (9.045320, 0.180906)
+Setting splash damage for Total PointDefence Firepoint Victory-3 C Torpedo instance at _562caad8_p_Torpedo to (72.500000, 1.450000)
+Setting splash damage for Total PointDefence Firepoint Victory-1 C Torpedo instance at _563642c0_p_Torpedo to (53.749996, 1.075000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _562ccd58_p_Torpedo to (75.000000, 1.500000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _562ccbe8_p_Torpedo to (75.000000, 1.500000)
+Setting splash damage for Total PointDefence Firepoint Victory-5 C Torpedo instance at _56364cd0_p_Torpedo to (53.749996, 1.075000)
+Setting splash damage for Total PointDefence Firepoint Victory-6 C Torpedo instance at _562cd318_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-6 C Torpedo instance at _562cd1a8_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-1 C Torpedo instance at _3de370a0_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-1 C Torpedo instance at _562ca7f8_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-2 C Torpedo instance at _562ce8a8_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-2 C Torpedo instance at _562cea18_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-3 C Torpedo instance at _4779e608_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-4 C Torpedo instance at _562cdbb8_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-4 C Torpedo instance at _5b273d70_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-3 C Torpedo instance at _5b273c00_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _4779e498_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _4779e328_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-3 C Torpedo instance at _56363010_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-3 C Torpedo instance at _4779f2f8_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-1 C Torpedo instance at _562cfcc8_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-1 C Torpedo instance at _56364cd0_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-2 C Torpedo instance at _4779eea8_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-2 C Torpedo instance at _4779f018_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-5 C Torpedo instance at _562ce2e8_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-5 C Torpedo instance at _563632f0_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-6 C Torpedo instance at _562ce5c8_p_Torpedo to (12.344233, 0.246885)
+Setting splash damage for Total PointDefence Firepoint Victory-6 C Torpedo instance at _562ce458_p_Torpedo to (70.041664, 1.400833)
+Setting splash damage for Total PointDefence Firepoint Victory-3 C Torpedo instance at _56365290_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-2 C Torpedo instance at _3de36dc0_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-2 C Torpedo instance at _56364150_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-1 C Torpedo instance at _5b273d70_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-1 C Torpedo instance at _562cea18_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-4 C Torpedo instance at _562cc068_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-4 C Torpedo instance at _56364430_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-5 C Torpedo instance at _562cfb58_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-5 C Torpedo instance at _56364fb0_p_Torpedo to (5.496932, 0.109939)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _5b274330_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _5b2744a0_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-1 C Torpedo instance at _56363d00_p_Torpedo to (75.000000, 1.500000)
+Setting splash damage for Total PointDefence Firepoint Victory-1 C Torpedo instance at _562ce8a8_p_Torpedo to (75.000000, 1.500000)
+Setting splash damage for Total PointDefence Firepoint Victory-3 C Torpedo instance at _562ce178_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-3 C Torpedo instance at _5b278830_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-2 C Torpedo instance at _5b274eb0_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-2 C Torpedo instance at _5b275020_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-5 C Torpedo instance at _5b2779d0_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-5 C Torpedo instance at _5b277860_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-6 C Torpedo instance at _5b2776f0_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-6 C Torpedo instance at _5b277580_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _4779e1b8_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-6 C Torpedo instance at _562ceb88_p_Torpedo to (75.000000, 1.500000)
+Setting splash damage for Total PointDefence Firepoint Victory-5 C Torpedo instance at _562ce2e8_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-5 C Torpedo instance at _563632f0_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-3 C Torpedo instance at _56364430_p_Torpedo to (20.625000, 0.412500)
+Setting splash damage for Total PointDefence Firepoint Victory-3 C Torpedo instance at _4779f018_p_Torpedo to (20.625000, 0.412500)
+Setting splash damage for Total PointDefence Firepoint Victory-5 C Torpedo instance at _3de3b270_p_Torpedo to (75.000000, 1.500000)
+Setting splash damage for Total PointDefence Firepoint Victory-5 C Torpedo instance at _4779e8e8_p_Torpedo to (75.000000, 1.500000)
+
+
+Setting splash damage for Total PointDefence Firepoint Victory-4 C Torpedo instance at _56364b60_p_Torpedo to (20.625000, 0.412500)
+Setting splash damage for Total PointDefence Firepoint Victory-3 C Torpedo instance at _5b277860_p_Torpedo to (20.625000, 0.412500)
+Setting splash damage for Total PointDefence Firepoint Victory-3 C Torpedo instance at _3de36ae0_p_Torpedo to (20.625000, 0.412500)
+Setting splash damage for Total PointDefence Firepoint Victory-5 C Torpedo instance at _563649f0_p_Torpedo to (65.895576, 1.317912)
+Setting splash damage for Total PointDefence Firepoint Victory-4 C Torpedo instance at _562ccec8_p_Torpedo to (20.625000, 0.412500)
+Setting splash damage for Victory-5 to (4406.250000, 88.125000)
+Setting splash damage for Total PointDefence Firepoint Victory-6 C Torpedo instance at _5b2786c0_p_Torpedo to (4.961751, 0.099235)
+Setting splash damage for Total PointDefence Firepoint Victory-6 C Torpedo instance at _5b2758c0_p_Torpedo to (4.961751, 0.099235)
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _5b273ee0_p_Torpedo to (20.625000, 0.412500)
+
+
+
+
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 15 Mar 2026 16:49:20#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Custom.Autoload.FIX-EngineerCharacterHandlers : Patched your  Bridge.EngineerCharacterHandlers  to cover 0-shield-strength ships
+Updated FoundationTech.ShipInstance's DefendVS* Fixes
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version  20260222 )
+Patched TacticalControlInterfaces.CycleCameraMode to add mode viewing modes
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+
+
+Setting splash damage for Total PointDefence Firepoint Victory-1 C Torpedo instance at _3de36ae0_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-2 C Torpedo instance at _3de370a0_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-2 C Torpedo instance at _3de36f30_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-1 C Torpedo instance at _3de36970_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-3 C Torpedo instance at _3d905a38_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-4 C Torpedo instance at _3d905d18_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-4 C Torpedo instance at _3d905ba8_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-3 C Torpedo instance at _3d9058c8_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-7 C Torpedo instance at _3de3b100_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-7 C Torpedo instance at _3de3b270_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-5 C Torpedo instance at _3de36800_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-5 C Torpedo instance at _3de36690_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _3de36dc0_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _3de36c50_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-1 C Torpedo instance at _3d905a38_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-1 C Torpedo instance at _3d9058c8_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-4 C Torpedo instance at _4779e778_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-4 C Torpedo instance at _4779e608_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-2 C Torpedo instance at _3de36970_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-2 C Torpedo instance at _3de36ae0_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-3 C Torpedo instance at _4779e1b8_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-3 C Torpedo instance at _4779e048_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-7 C Torpedo instance at _4779e498_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-7 C Torpedo instance at _4779e328_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-6 C Torpedo instance at _4779ded8_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-6 C Torpedo instance at _4779dd68_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-5 C Torpedo instance at _3de36f30_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-5 C Torpedo instance at _3de370a0_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _3d905ba8_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _3d905d18_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-3 C Torpedo instance at _56364e40_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-3 C Torpedo instance at _56364fb0_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-4 C Torpedo instance at _56365850_p_Torpedo to (75.000000, 1.500000)
+Setting splash damage for Total PointDefence Firepoint Victory-2 C Torpedo instance at _562cb658_p_Torpedo to (46.080318, 0.921606)
+Setting splash damage for Total PointDefence Firepoint Victory-1 C Torpedo instance at _563635d0_p_Torpedo to (75.000000, 1.500000)
+Setting splash damage for Total PointDefence Firepoint Victory-1 C Torpedo instance at _56363740_p_Torpedo to (75.000000, 1.500000)
+Setting splash damage for Total PointDefence Firepoint Victory-7 C Torpedo instance at _56365ca0_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-7 C Torpedo instance at _56365b30_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-5 C Torpedo instance at _562cac48_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-5 C Torpedo instance at _562caad8_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-6 C Torpedo instance at _56365120_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-6 C Torpedo instance at _56365290_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Victory-7 to (4406.250000, 88.125000)
+Setting splash damage for Total PointDefence Firepoint Victory-2 C Torpedo instance at _562cfb58_p_Torpedo to (75.000000, 1.500000)
+Setting splash damage for Total PointDefence Firepoint Victory-2 C Torpedo instance at _562cf9e8_p_Torpedo to (75.000000, 1.500000)
+Setting splash damage for Total PointDefence Firepoint Victory-4 C Torpedo instance at _562cb7c8_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-4 C Torpedo instance at _562ce738_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-1 C Torpedo instance at _4779e1b8_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-3 C Torpedo instance at _562cac48_p_Torpedo to (9.045320, 0.180906)
+Setting splash damage for Total PointDefence Firepoint Victory-3 C Torpedo instance at _562caad8_p_Torpedo to (72.500000, 1.450000)
+Setting splash damage for Total PointDefence Firepoint Victory-1 C Torpedo instance at _563642c0_p_Torpedo to (53.749996, 1.075000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _562ccd58_p_Torpedo to (75.000000, 1.500000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _562ccbe8_p_Torpedo to (75.000000, 1.500000)
+Setting splash damage for Total PointDefence Firepoint Victory-5 C Torpedo instance at _56364cd0_p_Torpedo to (53.749996, 1.075000)
+Setting splash damage for Total PointDefence Firepoint Victory-6 C Torpedo instance at _562cd318_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-6 C Torpedo instance at _562cd1a8_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-1 C Torpedo instance at _3de370a0_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-1 C Torpedo instance at _562ca7f8_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-2 C Torpedo instance at _562ce8a8_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-2 C Torpedo instance at _562cea18_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-3 C Torpedo instance at _4779e608_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-4 C Torpedo instance at _562cdbb8_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-4 C Torpedo instance at _5b273d70_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-3 C Torpedo instance at _5b273c00_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _4779e498_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _4779e328_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-3 C Torpedo instance at _56363010_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-3 C Torpedo instance at _4779f2f8_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-1 C Torpedo instance at _562cfcc8_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-1 C Torpedo instance at _56364cd0_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-2 C Torpedo instance at _4779eea8_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-2 C Torpedo instance at _4779f018_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-5 C Torpedo instance at _562ce2e8_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-5 C Torpedo instance at _563632f0_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-6 C Torpedo instance at _562ce5c8_p_Torpedo to (12.344233, 0.246885)
+Setting splash damage for Total PointDefence Firepoint Victory-6 C Torpedo instance at _562ce458_p_Torpedo to (70.041664, 1.400833)
+Setting splash damage for Total PointDefence Firepoint Victory-3 C Torpedo instance at _56365290_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-2 C Torpedo instance at _3de36dc0_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-2 C Torpedo instance at _56364150_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-1 C Torpedo instance at _5b273d70_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-1 C Torpedo instance at _562cea18_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-4 C Torpedo instance at _562cc068_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-4 C Torpedo instance at _56364430_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-5 C Torpedo instance at _562cfb58_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-5 C Torpedo instance at _56364fb0_p_Torpedo to (5.496932, 0.109939)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _5b274330_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _5b2744a0_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-1 C Torpedo instance at _56363d00_p_Torpedo to (75.000000, 1.500000)
+Setting splash damage for Total PointDefence Firepoint Victory-1 C Torpedo instance at _562ce8a8_p_Torpedo to (75.000000, 1.500000)
+Setting splash damage for Total PointDefence Firepoint Victory-3 C Torpedo instance at _562ce178_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-3 C Torpedo instance at _5b278830_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-2 C Torpedo instance at _5b274eb0_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-2 C Torpedo instance at _5b275020_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-5 C Torpedo instance at _5b2779d0_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-5 C Torpedo instance at _5b277860_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-6 C Torpedo instance at _5b2776f0_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-6 C Torpedo instance at _5b277580_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _4779e1b8_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-6 C Torpedo instance at _562ceb88_p_Torpedo to (75.000000, 1.500000)
+Setting splash damage for Total PointDefence Firepoint Victory-5 C Torpedo instance at _562ce2e8_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-5 C Torpedo instance at _563632f0_p_Torpedo to (37.500000, 0.750000)
+Setting splash damage for Total PointDefence Firepoint Victory-3 C Torpedo instance at _56364430_p_Torpedo to (20.625000, 0.412500)
+Setting splash damage for Total PointDefence Firepoint Victory-3 C Torpedo instance at _4779f018_p_Torpedo to (20.625000, 0.412500)
+Setting splash damage for Total PointDefence Firepoint Victory-5 C Torpedo instance at _3de3b270_p_Torpedo to (75.000000, 1.500000)
+Setting splash damage for Total PointDefence Firepoint Victory-5 C Torpedo instance at _4779e8e8_p_Torpedo to (75.000000, 1.500000)
+
+
+Setting splash damage for Total PointDefence Firepoint Victory-4 C Torpedo instance at _56364b60_p_Torpedo to (20.625000, 0.412500)
+Setting splash damage for Total PointDefence Firepoint Victory-3 C Torpedo instance at _5b277860_p_Torpedo to (20.625000, 0.412500)
+Setting splash damage for Total PointDefence Firepoint Victory-3 C Torpedo instance at _3de36ae0_p_Torpedo to (20.625000, 0.412500)
+Setting splash damage for Total PointDefence Firepoint Victory-5 C Torpedo instance at _563649f0_p_Torpedo to (65.895576, 1.317912)
+Setting splash damage for Total PointDefence Firepoint Victory-4 C Torpedo instance at _562ccec8_p_Torpedo to (20.625000, 0.412500)
+Setting splash damage for Victory-5 to (4406.250000, 88.125000)
+Setting splash damage for Total PointDefence Firepoint Victory-6 C Torpedo instance at _5b2786c0_p_Torpedo to (4.961751, 0.099235)
+Setting splash damage for Total PointDefence Firepoint Victory-6 C Torpedo instance at _5b2758c0_p_Torpedo to (4.961751, 0.099235)
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting splash damage for Total PointDefence Firepoint Player C Torpedo instance at _5b273ee0_p_Torpedo to (20.625000, 0.412500)
+
+
+
+
+
+# DS9FX has...
+
+# taken a console dump
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####

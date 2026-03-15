@@ -70,6 +70,7 @@ Foundation.ShipDef.B5Victory.dTechs = {
                 "WarpDuration":       150.0,
                 "SyncTorpType": 1,
                 "SimulatedPhaser": 1,
+                "SimulatedPulse": 1,
                 "SetScale": 0.5,
                 }
         ],
@@ -82,6 +83,7 @@ Foundation.ShipDef.B5Victory.dTechs = {
                 "WarpDuration":       150.0,
                 "SyncTorpType": 1,
                 "SimulatedPhaser": 1,
+                "SimulatedPulse": 1,
                 "SetScale": 0.5,
                 }
         ],

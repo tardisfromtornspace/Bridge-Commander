@@ -1,6 +1,6 @@
 """
 #         Turrets
-#         20th February 2026
+#         15th March 2026
 #         Based strongly on SubModels.py by USS Defiant and their team, and AutoTargeting.py by USS Frontier.
 #         Also based slightly on AdvancedTorpedoManagement.py from BCSTB Team, the Borg Technology from Alex SL Gato, and ConditionInLineOfSight by the original STBC team
 #         Special thanks to USS Sovereign and Gizmo_3.
@@ -39,14 +39,16 @@
 # ---- "No Elevation": 0 means it aims perfectly, while any other value means we ignore any elevation axis compared with the plane defined by the "Orientation" value (i.e. if Orientation is "Up" and "No Elevation" is 0, that means the turret will have its rotation axis upward but the turret itself will not aim upwards or downwards)., "Orientation") and dTurretSystemOptionsList["Orientation"] != "Up":
 # ---- "aimOnlyOnFire": 0 (or nota dding the field) means that the turrets will always follow a target, even if that could lead to them pointing somewhere their related hardpoint property cannot fire at. 1 means that it will only face those targets its  related hardpoints are firing upon and will stop aiming when the related hardpoints stop firing (prevents the turret from aiming outside the scope, but blocks auto-turrets from working)
 # ---- "Check LOS": if not left blank or 0, it will verify if the parent ship is on the line connecting a turret with its target, and if it is, will not aim to that target. Please notice that since most turrets remain close to the ship model and the line of sight considers radious, leaving this parameter active would most often make turrets immobile... Default is to always aim regardless of line of sight.
+# ---- "SimulatedPhaser", "SimulatedTorpedo", "SimulatedPulse", these parameters explicitly mention if you are actually using truly the turret's weapons (value set to 0) when the parent is firing a phaser, pulse or torpedo, or if instead you are using an alternative method to fire phasers, pulses and torpedoes (unless mentioned otherwise, that happens if it is set to 1) - on the SimulatedPhaser's case it's done by actually moving a parent's ship's phaser property where the turret's phaser is, on the torpedo and pulses' case is by creating our own torpedo/pulse on the place the turret's torpedo/pulse weapon property is. Quite useful on cases where due to engine's issues non-parent phasers or projectiles can interfere with the parent's shields or hull. Also these parameters force the turret to aim at the target they are trying to fire, too. Please take into account that due to these fallbacks, a turret without an actual torpedo constrol system could still fire torpedoes if the torpedoes are set to simulated.
+# 6a. "SyncTorpType": related with torpedo ammo types; -1 means that it will use only the turret's current torpedo system, no sync nor change; 0 that it will use the same ammo number as the parent, considering remainders (so if the parent has 4 types of ammo but the child only has 3, the turret will fire the ammo on slot 0, because 0, 1, 2 -> 0); 1 that it will use exactly the same ammo types as the parent. Note that the system will still performs a fallback to the parent's torpedo tubes and then the turret's systems if something went wrong. Currently this feature is only applied for "Simulated" torps and pulses.
 # Please note that there's a field in Setup "ShieldOption", if it doesn't exist or is set to 0, shields will work normally - else shields will drop when turrets are active - this is useful for some functional turrets that are inside
 # the shield grid, or for lore reasons!
+ 
 
 # NOTE: While this is a 1.0, it is still an experimental work, it may be possible to find far more bugs
 # KNOWN UNINTENDED EFFECTS, BUGS, LIMITATIONS and other TO-DOs (By order of priority):
 # 1. Functional turrets when firing may hit and damage the parent ship shields and subsystems with their phaser weaponry. Originally that also included torps and pulses if they required multiple fires too fast and if they were very big
-# and their spawn location was inside the parent ship model, but that got fixed for most cases. However, it is known it may sometimes still happen for torpedoes, and to a lesser degree, disruptors. Obviously if using aesthethic turrets
-# that will not happen.
+# and their spawn location was inside the parent ship model, but that got fixed for most cases. However, it is known it may sometimes still happen for torpedoes, and to a lesser degree, disruptors (unless using simulated pulses and torepdoes, then this issue does not arise). Obviously if using aesthethic turrets that will not happen.
 #    -- If facing issues with a functional turret accidentally hitting a subsystem, adjust turret and parent hardpoints so the weapon area is lesser than the amplitude needed to hit the parent ship (if it's a turret-side beam) or so 
 #       the turret torpedo launcher is not inside the parent ship (if it's a torpedo one). 
 #    --- IMPORTANT NOTE: If you need to use a functional phaser turret whose phasers may be/end up inside the parent ship's shields, or suffer similar hit issues with own-turrets torps and pulses, make sure either:
@@ -68,8 +70,9 @@
 #          -- Additionally, the option of "SimulatedPhaser" needs to be set to 1, that is because this faithful option is more expensive and it's better to reduce its use if the turrets do not need it.
 # 2. Weapon intensity for turret-side phasers is not currently being totally modulated to the user - it uses the main weapon control subsystem for that, not advanced power control.
 #    -- However, naturally, phasers using the "SimulatedPhaser" will work with advanced power control because those are actually the parent ship beams.
-# 3. Torpedo change-type and spread-type support is non-existant at the moment
+# 3. Torpedo change-type and spread-type support is non-existant at the moment (excluding Simulated pulses and Simulated torpedoes)
 #    -- The reason for this is because, for some unexplainable reason, trying to change the ammo for a torpedo will work fine, but then when a turret torpedo of the new type collides or despawns, it causes a virtual call function error.
+#    -- Since simulated torpedoes do not actually modify the turret's ammo types, this limitation does not apply on that case.
 # 4. For some unknown reason, when a ship gets out of warp, if the turret "WarpPosition" is too, too far, turrets might become invisible - this does not affect the turret functionality at all, it can still fire and do actions.
 # 5. Turrets support AutoTargeting and MultiTargeting fine, but for some cases it may be a tiny bit wonky (including very rarely having a turret aiming at a target for a millisecond, to later on aim and fire at another). 
 #    ***Behaviour may turn out even weirder if multiple parent ship weapons are assigned to the same turret (with each one aiming at a different target)***
@@ -78,7 +81,7 @@
 # -- Turret fire may be very slightly delayed.
 # 7. Setup load/unload times for ships with turrets can be noticeably longer. This is because naturally, every small turret is technically a ship, so a ship with 20 turrets would need to load an extra 20 ships. Please be patient. Also the simpler the turret hardpoint and the turret model, the least impact.
 #
-# CANCELLED FUNCTIONALITIES: 6a. OPTIONAL: if "SyncTorpType" is set to 1 for a turret, upon changing torpedo types, it will change them as well for that turret only. ## REASON OF CANCEL - SEE LIMITATION 3.
+# CANCELLED FUNCTIONALITIES (For functional turrets): 6a. OPTIONAL: if "SyncTorpType" is set to 1 for a turret, upon changing torpedo types, it will change them as well for that turret only. ## REASON OF CANCEL - SEE LIMITATION 3.
 
 """
 """
@@ -114,6 +117,8 @@ Foundation.ShipDef.VasKholhr.dTechs = { 'Turret': {
                 "WarpDuration":       150.0,
                 "SyncTorpType": 1,
                 "SimulatedPhaser": 1,
+                "SimulatedPulse": 1,
+                "SimulatedTorpedo": 1,
                 "SimulatedTractor": 1,
                 "SetScale": 1.0,
                 "No Elevation": 0, # 0 = This turret has elevation, 1 = this turret doesn't
@@ -130,6 +135,8 @@ Foundation.ShipDef.VasKholhr.dTechs = { 'Turret': {
                 "WarpDuration":       150.0,
                 "SyncTorpType": 1,
                 "SimulatedPhaser": 1,
+                "SimulatedPulse": 1,
+                "SimulatedTorpedo": 1,
                 "SimulatedTractor": 1,
                 "aimOnlyOnFire" : 0,
                 "SetScale": 1.0,
@@ -153,11 +160,11 @@ import loadspacehelper
 import math
 import MissionLib
 
-
+import Multiplayer.SpeciesToTorp
 
 #################################################################################################################
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "1.16",
+	    "Version": "1.18",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -1292,6 +1299,24 @@ def GetWellShipFromID(pShipID):
                 return None
         return pShip
 
+# based on the FedAblativeArmour.py script, a fragment probably imported from ATP Functions by Apollo
+def NiPoint3ToTGPoint3(p, factor = 1.0):
+        debug(__name__ + ", NiPoint3ToTGPoint3")
+        kPoint = App.TGPoint3()
+        kPoint.SetXYZ(p.x * factor, p.y * factor, p.z * factor)
+        return kPoint
+
+def TGPoint3ToNiPoint3(p, factor=1.0):
+        debug(__name__ + ", TGPoint3ToNiPoint3")
+        kPoint = App.NiPoint3(p.x * factor, p.y * factor, p.z * factor)
+        return kPoint
+
+def CopyVector(kVect):
+        debug(__name__ + ", CopyVector")
+        kCopy = App.TGPoint3()
+        kCopy.SetXYZ(kVect.GetX(),kVect.GetY(),kVect.GetZ())
+        return kCopy
+
 def findShipInstance(pShip):
         debug(__name__ + ", findShipInstance")
         pInstance = None
@@ -1309,6 +1334,33 @@ def getShipIDfromInstance(pInstance):
         if pInstance != None and hasattr(pInstance, "pShipID"):
                 pShipID = pInstance.pShipID
         return pShipID
+
+def PredictTargetLocation(pTarget, pSubsystem, targetplacement, fSpeed, targetDisplacement=None):
+        # Find how far we are to our target.
+        debug(__name__ + ", PredictTargetLocation")
+        vDiff = pTarget.GetWorldLocation()
+        if (pSubsystem == None):
+                return vDiff
+
+        vDiff.Subtract( pSubsystem.GetWorldLocation() )
+        fDistance = vDiff.Length() # vDiff.Unitize()
+
+        # Get a rough estimate of how long it'll take our weapon
+        # to hit the target.
+        fTime = fDistance / fSpeed
+                
+        # Predict the target's position in that amount of time.
+        vPredicted = pTarget.GetWorldLocation()
+        pPhysicsTarget = App.PhysicsObjectClass_Cast(pTarget)
+        if (pPhysicsTarget != None):
+                vPredicted.Set(pPhysicsTarget.GetPredictedPosition(pTarget.GetWorldLocation(), pPhysicsTarget.GetVelocityTG(), pPhysicsTarget.GetAccelerationTG(), fTime ))
+
+        if targetDisplacement:
+                vSubsystemPos = targetDisplacement
+                vSubsystemPos.MultMatrixLeft( pTarget.GetWorldRotation() )
+                vPredicted.Add(vSubsystemPos)
+                
+        return vPredicted
 
 # calls the MovingEvent class and returns its return value
 def MovingAction(pAction, oMovingEvent, pShip):
@@ -1899,6 +1951,11 @@ def WeaponFired(pObject, pEvent, stoppedFiring=None):
                                             pSet = lTurretsToFire[turret][0].GetContainingSet()
                                             mothershipBlock = 0 # 0.991 change, after optimizing this is so effective that no turret can ever fire if it Checks Line of Sight
                                             # mothershipBlock = CheckLOS(pTarget, lTurretsToFire[turret][0], pShip, pSet) # This prevents turrets from firing most of the time since technically the turrets are inside.
+                                            isPulseFire = 0
+                                            isTorpFire = 0
+                                            isSimPulse = (lTurretsToFire[turret][-2][1].has_key("SimulatedPulse") and lTurretsToFire[turret][-2][1]["SimulatedPulse"] == 1)
+                                            isSimTorp = (lTurretsToFire[turret][-2][1].has_key("SimulatedTorpedo") and lTurretsToFire[turret][-2][1]["SimulatedTorpedo"] == 1)
+                                            actuallyApply = 1
                                             if mothershipBlock:
                                                 #print "parent is between us, stopping..."
                                                 wpnSystem.StopFiring()
@@ -1911,11 +1968,16 @@ def WeaponFired(pObject, pEvent, stoppedFiring=None):
                                                         wpnSystemButPhaser.SetPowerLevel(phsrLvl)
 
                                                 # Fix for disruptors, we only fire when we want to... once!
+                                                wpnSysN = wpnSystem.GetName()
                                                 turPulSys = lTurretsToFire[turret][0].GetPulseWeaponSystem()
                                                 turTrpSys = lTurretsToFire[turret][0].GetTorpedoSystem()
-                                                isPulseFire = turPulSys and wpnSystem.GetName() == turPulSys.GetName()
-                                                isTorpFire = turTrpSys and wpnSystem.GetName() == turTrpSys.GetName()
-                                                if (isPulseFire) or (isTorpFire):
+                                                leSubsystem = lTurretsToFire[turret][1]
+                                                pParentFiredSystemA = leSubsystem.GetParentSubsystem()
+                                                isPulseFire = turPulSys and wpnSysN == turPulSys.GetName()
+                                                isTorpFire = turTrpSys and wpnSysN == turTrpSys.GetName()
+                                                isTPulseFire = turPulSys and pParentFiredSystemA and pParentFiredSystemA.GetName() == turPulSys.GetName()
+                                                isTTorpFire = turTrpSys and pParentFiredSystemA and pParentFiredSystemA.GetName() == turTrpSys.GetName()
+                                                if (isPulseFire) or (isTorpFire) or (isTPulseFire) or (isTTorpFire):
                                                     """
                                                     ## *** SORRY BUT DOING THIS, WHILE IT WORKS, MAKES THE TORPEDO FIRED REACH A VIRTUAL CALL WHEN DISAPPEARING FROM THE SET FOR SOME UNKNOWN REASON ***
                                                     if isTorpFire and lTurretsToFire[turret][-2][1].has_key("SyncTorpType") and lTurretsToFire[turret][-2][1]["SyncTorpType"] > 0:
@@ -1984,6 +2046,105 @@ def WeaponFired(pObject, pEvent, stoppedFiring=None):
                                                     """
                                                     WeaponSystemFiredStopAction(pShip, wpnSystem, pTarget)
 
+                                                    if ((isPulseFire or isTPulseFire) and isSimPulse) or ((isTorpFire or isTTorpFire) and isSimTorp):
+                                                        try:
+                                                            aim1Item(lTurretsToFire[turret][-2], pShip.GetObjID()) # We have to aim before firing or weapon aim may get wonky
+                                                            if leSubsystem:
+                                                                subsystemProperty = leSubsystem.GetProperty()
+                                                                if subsystemProperty:
+                                                                    modS = None
+                                                                    torpDmgMultiplier = None
+                                                                    subsystemPropertyP = App.PulseWeaponProperty_Cast(subsystemProperty)
+                                                                    if subsystemPropertyP and hasattr(subsystemPropertyP, "GetModuleName"): # Pulse Property, thus we need to consider phaser slider bar stuff too
+                                                                        modS = subsystemPropertyP.GetModuleName()
+                                                                        if not phsrLvl:
+                                                                            phsrDmgControlM = pShip.GetPhaserSystem()
+                                                                            if phsrDmgControlM and hasattr(phsrDmgControlM, "GetPowerLevel") and phsrDmgControlM.GetPowerLevel() != None:
+                                                                                phsrLvl = phsrDmgControlM.GetPowerLevel()
+                                                                        if phsrLvl:
+                                                                            torpDmgMultiplier = phsrLvl/2.0
+                                                                            if torpDmgMultiplier < 0.5:
+                                                                                torpDmgMultiplier = 0.5
+
+                                                                    else:
+                                                                        pParentFiredSystem = None
+                                                                        syncMode = 1
+                                                                        if (lTurretsToFire[turret][-2][1].has_key("SyncTorpType")):
+                                                                             syncMode = lTurretsToFire[turret][-2][1]["SyncTorpType"]
+
+                                                                        if syncMode == -1 and turTrpSys != None:
+                                                                            pParentFiredSystem = App.TorpedoSystem_Cast(turTrpSys)
+                                                                        if syncMode != -1 and isTTorpFire:
+                                                                            pParentFiredSystem = App.TorpedoSystem_Cast(pParentFired)
+                                                                        if not pParentFiredSystem:
+                                                                            pParentFiredSystem = App.TorpedoSystem_Cast(leSubsystem.GetParentSubsystem())
+                                                                        if not pParentFiredSystem and syncMode != -1:
+                                                                            pParentFiredSystem = App.TorpedoSystem_Cast(turTrpSys)
+
+                                                                        if pParentFiredSystem:
+                                                                            ammoNum = pParentFiredSystem.GetCurrentAmmoTypeNumber()
+                                                                            pPTorpedoType = None
+                                                                            if not turTrpSys or syncMode == -1 or syncMode == 1:
+                                                                                pPTorpedoType = pParentFiredSystem.GetAmmoType(ammoNum)
+                                                                            else:
+                                                                                pOwnTurretFsys = App.TorpedoSystem_Cast(turTrpSys)
+                                                                                if pOwnTurretFsys:
+                                                                                    maxAmmoNum = pOwnTurretFsys.GetNumAmmoTypes()
+                                                                                    if maxAmmoNum > 0:
+                                                                                        pPTorpedoType = pOwnTurretFsys.GetAmmoType(ammoNum%maxAmmoNum)
+                                                                            if pPTorpedoType:
+                                                                                modS = pPTorpedoType.GetTorpedoScript()
+
+                                                                    if modS:
+                                                                        mod = __import__(modS)
+                                                                        if mod:  
+                                                                            theOffset =  pShip.GetTargetOffsetTG() # This is given on the target's coordinates
+                                                                            theOffsetNi = TGPoint3ToNiPoint3(theOffset)
+
+                                                                            pTargetShipNode = pTarget.GetNiObject()
+
+                                                                            pHitPointONi = App.TGModelUtils_LocalToWorldVector(pTargetShipNode, theOffsetNi)
+                                                                            pHitPointO = NiPoint3ToTGPoint3(pHitPointONi, 100.0)
+
+                                                                            pWpnPosNi = leSubsystem.GetWorldLocation()
+                                                                            pWpnPos = NiPoint3ToTGPoint3(pWpnPosNi) # We fire from here
+                                                                            targetplacement = pTarget.GetWorldLocation() # Target placement
+
+                                                                            torpImportedSpeed = 10
+                                                                            try:
+                                                                                if hasattr(mod, "GetLaunchSpeed"):
+                                                                                    torpImportedSpeedA = mod.GetLaunchSpeed()
+                                                                                    primAm = type(torpImportedSpeed)
+                                                                                    if primAm == type(1) or primAm == type(1.0):
+                                                                                        torpImportedSpeed = torpImportedSpeedA
+                                                                            except:
+                                                                                print __name__, ".WeaponFired: Error while assuming a torp type:"
+                                                                                torpImportedSpeed = 10
+                                                                                traceback.print_exc()
+
+                                                                            targetplacement = PredictTargetLocation(pTarget, leSubsystem, targetplacement, torpImportedSpeed, theOffset)
+
+                                                                            pVec = CopyVector(targetplacement)
+                                                                            pVec.Subtract(pWpnPos)
+
+                                                                            distTargetSubToMe = pVec.Length()
+
+                                                                            pVec.Unitize()
+                                                                            pVec.Scale(0.001)
+
+
+                                                                            targetID = pTarget.GetObjID()
+                                                                            attackerID = pShip.GetObjID()
+                                                                            finalTorpDamage = None
+                                                                            fRadius = None
+                                                                            lifeTime = None
+                                                                            pTempTorp = FireTorpFromPointWithVectorAndNetType(pWpnPos, pVec, modS, targetID, attackerID, torpImportedSpeed, None, finalTorpDamage, fRadius, 0, pTarget, theOffset, torpDmgMultiplier, lifeTime)
+                                                                            if pTempTorp:
+                                                                                actuallyApply = 0
+                                                        except:
+                                                            print __name__, ".WeaponFired: Error while performing simulated pulses/torpedoes:"
+                                                            traceback.print_exc()
+
                                                 else:
                                                     if lTurretsToFire[turret][-2][1].has_key("SimulatedPhaser") and lTurretsToFire[turret][-2][1]["SimulatedPhaser"] == 1:
                                                         turPhsSys = lTurretsToFire[turret][0].GetPhaserSystem()
@@ -2025,10 +2186,9 @@ def WeaponFired(pObject, pEvent, stoppedFiring=None):
 
                                                 wpnSystem.StopFiring() # Safety check for strays due to multi-targeting
 
-                                                #pParent = pShip
-                                                #aim1Item(lTurretsToFire[turret][-2], pShip.GetObjID(), pShip=pParent)
-
-                                                wpnSystem.StartFiring(pTarget)
+                                                #aim1Item(lTurretsToFire[turret][-2], pShip.GetObjID())
+                                                if actuallyApply:
+                                                    wpnSystem.StartFiring(pTarget)
                                                 
                                         else:
                                             lTurretsToFire[turret][-2][1]["TARGET"] = pShip.GetTarget()
@@ -2041,6 +2201,90 @@ def WeaponFired(pObject, pEvent, stoppedFiring=None):
                                 #        print "We have gone so far, what do you mean you don't have the system to fire???"
                         
         pObject.CallNextHandler(pEvent)
+
+# TO-DO
+def FireTorpFromPointWithVectorAndNetType(kPoint, kVector, pcTorpScriptName, idTarget, pShipID, fSpeed, NetType=None, damage=None, dmgRd=None, hidden=0, detectCollison= None, TGOffset = None, torpDmgMultiplier = None, lifeTime = None):
+        # This is an slightly altered version of the original definition (MissionLib.py), to suit specific needs
+
+        debug(__name__ + ", FireTorpFromPointWithVector")
+        pTarget = App.ShipClass_Cast(App.TGObject_GetTGObjectPtr(idTarget))
+        pSet = pTarget.GetContainingSet()
+        if not pSet:
+                return None
+
+        # Create the torpedo.
+        pTorp = App.Torpedo_Create(pcTorpScriptName, kPoint)
+        if dmgRd != None:
+                if dmgRd < 0.0:
+                        dmgRd = 0.0
+                pTorp.SetDamageRadiusFactor(dmgRd)
+        if damage != None:
+                if damage < 0.1:
+                        damage = 0.1
+                pTorp.SetDamage(damage)
+        if torpDmgMultiplier != None:
+                damage = pTorp.GetDamage()
+                if damage != None and damage != 0:
+                    damage = damage * torpDmgMultiplier
+                    pTorp.SetDamage(damage)
+
+        if NetType != None:
+                try:
+                        pTorp.SetNetType(NetType)
+                except:
+                        traceback.print_exc()
+                        pTorp.SetNetType(Multiplayer.SpeciesToTorp.PHOTON)
+        #pTorp.SetMass(0.00000001)
+        #pTorp.SetUsePhysics(0)
+        if lifeTime != None:
+                pTorp.SetLifetime(lifeTime)
+  
+        pTorp.UpdateNodeOnly()
+
+        pShip = App.ShipClass_Cast(App.TGObject_GetTGObjectPtr(pShipID))
+        # Set up its target and target subsystem, if necessary.
+        pTorp.SetTarget(idTarget)
+        if not TGOffset and pShip:
+                pTorp.SetTargetOffset(pShip.GetHull().GetPosition())
+        else:
+                pTorp.SetTargetOffset(TGOffset)
+        pTorp.SetParent(pShipID)
+
+        # Add the torpedo to the set, and place it at the specified placement.
+        pSet.AddObjectToSet(pTorp, None)
+        pTorp.UpdateNodeOnly()
+        if hidden != 0:
+                pTorp.SetHidden(1)
+                pTorp.UpdateNodeOnly()
+
+        # If there was a target, then orient the torpedo towards it.
+        kTorpLocation = pTorp.GetWorldLocation()
+        kTargetLocation = pTarget.GetWorldLocation()
+
+        kTargetLocation.Subtract(kTorpLocation)
+        kFwd = kTargetLocation
+        kFwd.Unitize()
+        kPerp = kFwd.Perpendicular()
+        kPerp2 = App.TGPoint3()
+        kPerp2.SetXYZ(kPerp.x, kPerp.y, kPerp.z)
+        pTorp.AlignToVectors(kFwd, kPerp2)
+        pTorp.UpdateNodeOnly()
+
+        if detectCollison != None: # We want to detect collision first
+                pTorp.DetectCollision(detectCollison)
+                pTorp.UpdateNodeOnly()
+
+        # Give the torpedo an appropriate speed.
+        kSpeed = CopyVector(kVector)
+        kSpeed.Unitize()
+        kSpeed.Scale(fSpeed)
+        pTorp.SetVelocity(kSpeed)
+
+        #print "Torpedo mass", pTorp.GetMass()
+
+        return pTorp
+# TO-DO ABOVE
+
 
 # Phasers maybe we cannot fix, but torps? Surely we can... right?
 def TorpedoTurretFiredTest(pObject, pEvent):
@@ -2091,7 +2335,7 @@ def TorpedoTurretFiredTest(pObject, pEvent):
             # Torpedo scanning would just work like normal, with no buffs
             pTorp = App.Torpedo_Cast(App.TGObject_GetTGObjectPtr(pdObject.GetObjID()))
             if pTorp and pTorp.GetParentID() == pTurret.GetObjID():
-                mineTorps.append(pTorp)	
+                mineTorps.append(pTorp)
 
     pProx.EndObjectIteration(kIter)
     # Removed dry lava
