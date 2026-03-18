@@ -1,6 +1,6 @@
 #################################################################################################################
 #         SlowStart by Alex SL Gato
-#         13th March 2026
+#         18th March 2026
 #         Based on FiveSecsGodPhaser by USS Frontier, scripts/ftb/Tech/TachyonProjectile by the FoundationTechnologies team, and scripts/ftb/Tech/FedAblativeArmour by the FoundationTechnologies team
 #         Elminster did something similar for the DCMP Sau Paulo and for the BOBW Galaxy, but I really did not know of that script's existance at the time I made this script.        
 #################################################################################################################
@@ -12,10 +12,11 @@
 # Torpedoes: same, but for torpedo tubes.
 # -- "TorpedoesFix": a related field, called , meant to regulate a potential issue with torpedoes, where if you were to discharge normally and the torpedo tube got empty, it would never fire again until you changed torpedo load:
 # ---- "TorpedoesFix": -2 : the ship will not use any safeties to prevent the torpedo tubes from totally unloading and no automatic torpedo load change fix will be applied - useful if you are actually interested on having some sort of "faulty" torpedo tubes.
-# ---- "TorpedoesFix": -1 OR "TorpedoesFix": 5: default behaviour, the ship will use a safety measure where none of the torpedo tubes will be totally emptied (will leave at least 1 torpedo ready) and if the percentage charge sent was meant to be 0%, then will force a change on the torpedo load.
+# ---- "TorpedoesFix": -1: the ship will use a safety measure where none of the torpedo tubes will be totally emptied (will leave at least 1 torpedo ready).
+# ---- "TorpedoesFix": 5: default behaviour, the ship will use a safety measure where none of the torpedo tubes will be totally emptied (will leave at least 1 torpedo ready) and if the percentage charge sent was meant to be 0%, then will force a change on the torpedo load.
 # Tractors: same, but for tractors (normally this would not do a thing, tho).
-# ---- "TorpedoesFix: 0 : same as "TorpedoesFix": -1, but the ammo is replenished instantly (when why would you even want to do this??? I'm not sure but better leave it as an option).
-# ---- "TorpedoesFix": with any other value greater than 0, would do nearly the same as "TorpedoesFix": -1
+# ---- "TorpedoesFix: 0 : same as "TorpedoesFix": 5, but the ammo is replenished instantly (when why would you even want to do this??? I'm not sure but better leave it as an option).
+# ---- "TorpedoesFix": with any other value greater than 0, would do nearly the same as "TorpedoesFix": 5
 # ---- "TorpedoesFix": -3 or even lesser values, do NOT apply those values unless you want to know what happens when you apply a negative value to a TorpedoSystem's SetAmmoType function.
 # "GlobalFactor": multiplier of the charge available at start. default is 0
 #  -- Note: you can also add particular multipliers to each weapon system separately.  (for example "BeamsFactor"), but not all of these depend on the global factor, so with a global factor of 0 you cannot give more energy to beams!
@@ -26,7 +27,7 @@ Foundation.ShipDef.Sovereign.dTechs = {
 """
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.33",
+	    "Version": "0.34",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
