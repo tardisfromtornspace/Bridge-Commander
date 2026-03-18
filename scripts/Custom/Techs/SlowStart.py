@@ -27,7 +27,7 @@ Foundation.ShipDef.Sovereign.dTechs = {
 """
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.34",
+	    "Version": "0.35",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -76,7 +76,7 @@ class SlowStartWeapon(FoundationTech.TechDef):
 					minCharge = 0
 					maxCharge = pWeapon.GetMaxReady()
 					myoldCharge = pWeapon.GetNumReady()
-					myCharge = int(myoldCharge * int(dmgAmount)) + extraChg
+					myCharge = int(myoldCharge * dmgAmount + extraChg) 
 					if myCharge > maxCharge:
 						myCharge = maxCharge
 					elif myCharge < (minCharge):
@@ -111,7 +111,7 @@ class SlowStartWeapon(FoundationTech.TechDef):
 
 			rechargeIs = 0
 			if validSubsystems.has_key("GlobalFactor"):
-				rechargeIs = rechargeIs * validSubsystems["GlobalFactor"]
+				rechargeIs = validSubsystems["GlobalFactor"]
 
 			for wpnType in validWeaponTypes.keys():
 				try:
