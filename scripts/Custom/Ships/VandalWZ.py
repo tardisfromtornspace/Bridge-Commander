@@ -29,7 +29,7 @@ Foundation.ShipDef.VandalWZ.desc = """The Vandal Class Destroyer fills the workh
 
 Foundation.ShipDef.VandalWZ.dTechs = {
 					"AutoTargeting": { "Phaser": [3, 1] },
-					"Slow Start": {"Beams": [], "Pulses": [], "Torpedoes": [], "TorpedoesFactor": 0.8, "GlobalFactor": 0.6}
+					"Slow Start": {"Beams": [], "Pulses": [], "Torpedoes": [], "BeamsFactor": 0.0, "TorpedoesFactor": 0.8, "GlobalFactor": 0.6}
 }
 
 
