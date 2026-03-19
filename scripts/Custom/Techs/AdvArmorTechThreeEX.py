@@ -10,7 +10,7 @@ import traceback
 from bcdebug import debug
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-            "Version": "0.101",
+            "Version": "0.102",
             "License": "LGPL",
             "Description": "Read info below for better understanding"
             }
@@ -94,7 +94,7 @@ LastShipType = "nonArmored"
 def detectBrokenSubsystemFromList(pShip, pSubsystem, subSystemList, subSystemPoundList, extraDamage=0, removeHeal=0, broken = 0, total = 0):
 	if (pSubsystem.GetName() in subSystemList):
 		total = total + 1
-		broken = broken + (pSubsystem.GetCondition() <= 0.0) + (pSubsystem.GetCondition() - extraDamage <= 0.0 )
+		broken = broken + ((pSubsystem.GetCondition() <= 0.0) or (pSubsystem.GetCondition() - extraDamage <= 0.0 ))
 
 	iChildren = pSubsystem.GetNumChildSubsystems()
 	if iChildren > 0:
