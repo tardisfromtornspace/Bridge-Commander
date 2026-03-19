@@ -10,7 +10,7 @@ import traceback
 from bcdebug import debug
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-            "Version": "0.1",
+            "Version": "0.101",
             "License": "LGPL",
             "Description": "Read info below for better understanding"
             }
@@ -141,6 +141,8 @@ def healSubsystemAndChild(pShip, pSubsystem, subSystemList, subSystemPoundList, 
 
 	if depth == 0:
 		for system in systemsToDestroy:
+			if system.IsInvincible():
+				system.SetInvincible(0)
 			pShip.DestroySystem(system)
 
 		return []
