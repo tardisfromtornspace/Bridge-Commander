@@ -1,4 +1,5 @@
 == Changelog ==
+1.1.2 - Updated SlowStart to 0.36 to provide charge factor fixes and to provide a way to make torpedo tube charges delayed by time. Thank you so much ZambieZan for finding these errors and suggesting ideas.
 1.1.1 - Updated SlowStart to 0.33 to both fix and provide a feature or torpedo tubes not relaoding until manually changing the torpedo load. Thank you so much ZambieZan for finding this error.
 1.1.0 - Updated SlowStart to 0.31 to fix a goof that made empty weapon lists (objective: all properties of that type had this tech) behave the same as not having the list on the first place (no properties of that type had that tech)!
 1.0.9 - Updated SlowStart to 0.3 to support torpedo tubes, tractor beams and different charges from 0!
