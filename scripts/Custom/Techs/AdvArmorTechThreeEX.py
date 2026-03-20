@@ -10,7 +10,7 @@ import traceback
 from bcdebug import debug
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-            "Version": "0.102",
+            "Version": "0.103",
             "License": "LGPL",
             "Description": "Read info below for better understanding"
             }
@@ -171,7 +171,7 @@ def unhurtAllSubsystemsExceptASet(pShip, subSystemList, subSystemPoundList, extr
 		pSubsystem = pShip.GetNextSubsystemMatch(pIterator)
 		systemsToDestroy = []
 		while pSubsystem:
-			systemsToDestroy = healSubsystemAndChild(pShip, pChild, subSystemList, subSystemPoundList, extraDamage, removeHeal, invinState, 1, systemsToDestroy)
+			systemsToDestroy = healSubsystemAndChild(pShip, pSubsystem, subSystemList, subSystemPoundList, extraDamage, removeHeal, invinState, 1, systemsToDestroy)
 			pSubsystem = pShip.GetNextSubsystemMatch(pIterator)
 
 		pShip.EndGetSubsystemMatch(pIterator)
