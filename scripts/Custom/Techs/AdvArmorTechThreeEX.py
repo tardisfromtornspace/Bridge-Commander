@@ -10,7 +10,7 @@ import traceback
 from bcdebug import debug
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-            "Version": "0.103",
+            "Version": "0.104",
             "License": "LGPL",
             "Description": "Read info below for better understanding"
             }
@@ -90,101 +90,6 @@ pShipp = {}
 
 #global LastShipType
 LastShipType = "nonArmored"
-
-def detectBrokenSubsystemFromList(pShip, pSubsystem, subSystemList, subSystemPoundList, extraDamage=0, removeHeal=0, broken = 0, total = 0):
-	if (pSubsystem.GetName() in subSystemList):
-		total = total + 1
-		broken = broken + ((pSubsystem.GetCondition() <= 0.0) or (pSubsystem.GetCondition() - extraDamage <= 0.0 ))
-
-	iChildren = pSubsystem.GetNumChildSubsystems()
-	if iChildren > 0:
-		for iIndex in range(iChildren):
-			pChild = pSubsystem.GetChildSubsystem(iIndex)
-			if pChild:
-				broken, total = detectBrokenSubsystemFromList(pShip, pChild, subSystemList, subSystemPoundList, extraDamage, removeHeal, broken, total)
-	return broken, total	
-
-def healSubsystemAndChild(pShip, pSubsystem, subSystemList, subSystemPoundList, extraDamage=0, removeHeal=0, invinState=0, depth = 0, systemsToDestroy=[]):
-	if (pSubsystem.GetName() in subSystemList): # the "armor"
-		if not pSubsystem.IsTargetable():
-			finalDmg = pSubsystem.GetMaxCondition() - extraDamage
-			if finalDmg > 0.0:
-				pSubsystem.SetCondition(finalDmg)
-			elif not (pShip.IsDead() or pShip.IsDying()):
-				systemsToDestroy.append(pSubsystem)
-	else:
-		imTheEnergyBackup = (pSubsystem.GetName() in subSystemPoundList)
-		if imTheEnergyBackup: # the "energy" counterparts
-			if (not pSubsystem.IsHurtable()):
-				pSubsystem.SetHurtable(1)
-
-			if (not pSubsystem.IsTargetable()):
-				finalDmg = pSubsystem.GetMaxCondition() - extraDamage
-				if finalDmg < 0.0:
-					finalDmg = 0.00001
-				pSubsystem.SetCondition(finalDmg)
-
-		elif (invinState) or (not pSubsystem.IsHurtable()):
-			pSubsystem.SetHurtable(not invinState)
-
-		#pSubsystem.SetCondition(pSubsystem.GetMaxCondition())
-
-	iChildren = pSubsystem.GetNumChildSubsystems()
-	if iChildren > 0:
-		for iIndex in range(iChildren):
-			pChild = pSubsystem.GetChildSubsystem(iIndex)
-			if pChild:
-				systemsToDestroy = healSubsystemAndChild(pShip, pChild, subSystemList, subSystemPoundList, extraDamage, removeHeal, invinState, depth + 1, systemsToDestroy)
-
-	if (not invinState) or (not pSubsystem.IsInvincible()):
-		pSubsystem.SetInvincible(invinState)
-
-	if depth == 0:
-		for system in systemsToDestroy:
-			if system.IsInvincible():
-				system.SetInvincible(0)
-			pShip.DestroySystem(system)
-
-		return []
-	else:
-		return systemsToDestroy
-
-def unhurtAllSubsystemsExceptASet(pShip, subSystemList, subSystemPoundList, extraDamage=0, removeHeal=0):
-
-	invinState = 0
-	try:
-		broken = 0
-		total = 0
-		if removeHeal == 0:
-			pIterator = pShip.StartGetSubsystemMatch(App.CT_SHIP_SUBSYSTEM)
-			pSubsystem = pShip.GetNextSubsystemMatch(pIterator)
-
-			while pSubsystem:
-				broken, total = detectBrokenSubsystemFromList(pShip, pSubsystem, subSystemList, subSystemPoundList, extraDamage, removeHeal, broken, total)
-				pSubsystem = pShip.GetNextSubsystemMatch(pIterator)
-
-			pShip.EndGetSubsystemMatch(pIterator)
-
-		invinState = ((removeHeal == 0) and ((total == 0) or (broken/total >= 1.0)))
-
-		pIterator = pShip.StartGetSubsystemMatch(App.CT_SHIP_SUBSYSTEM)
-		pSubsystem = pShip.GetNextSubsystemMatch(pIterator)
-		systemsToDestroy = []
-		while pSubsystem:
-			systemsToDestroy = healSubsystemAndChild(pShip, pSubsystem, subSystemList, subSystemPoundList, extraDamage, removeHeal, invinState, 1, systemsToDestroy)
-			pSubsystem = pShip.GetNextSubsystemMatch(pIterator)
-
-		pShip.EndGetSubsystemMatch(pIterator)
-
-		for system in systemsToDestroy:
-			pShip.DestroySystem(system)
-	except:
-		print (__name__, ".unhurtAllSubsystemsExceptASet ERROR:")
-		traceback.print_exc()
-		invinState = 0
-
-	return invinState
-
 
 # This class does control the attach and detach of the Models
 class AdvArmorTechEXDef(FoundationTech.TechDef):
@@ -330,15 +235,16 @@ class AdvArmorTechEXDef(FoundationTech.TechDef):
 			else:
 				AdvArmorToggleAIFirst(pShip, armorStatus)
 			
-			print("SUCCESS while attaching advarmortechthree")
+			print("SUCCESS while attaching ", self.name)
 		except:
-			print("ERROR while attaching advarmortechthree")
+			print("ERROR while attaching ", self.name)
 			traceback.print_exc()  
 
 	# Called by FoundationTech when a Ship is removed from set (eg destruction)
 	def DetachShip(self, iShipID, pInstance):
 		# get our Ship
 		debug(__name__ + ", DetachShip")
+
 		pShip = App.ShipClass_GetObjectByID(None, iShipID)
 		if pShip:
 			# remove the listeners
@@ -361,6 +267,7 @@ class AdvArmorTechEXDef(FoundationTech.TechDef):
 			else:
 				pShip.RemoveHandlerForInstance(App.ET_SUBSYSTEM_STATE_CHANGED, __name__ + ".SubsystemStateChanged")
 				pShip.RemoveHandlerForInstance(App.ET_SUBSYSTEM_DAMAGED, __name__ + ".SubDamage")
+
 			if self.bAddedWarpListener.has_key(iShipID):
 				try:
 					if self.bAddedWarpListener.has_key(iShipID):
@@ -387,6 +294,21 @@ class AdvArmorTechEXDef(FoundationTech.TechDef):
 						del pShipp[iShipID]
 				except:
 					pass
+
+		techName = None
+		if hasattr(self, name):
+			techName = self.name
+
+		try:
+			if techName and pInstance and pInstance.__dict__.has_key(techName):
+				pTech = pInstance.__dict__[techName]
+				if pTech != None:
+					iShipID2 = pShip.GetObjID()
+					if pTech.has_key("Ships") and pTech["Ships"].has_key(iShipID):
+						del pTech["Ships"][iShipID]	
+		except:
+			print("ERROR while detaching ", self.name)
+			traceback.print_exc()
 
 	#def Detach(self, pInstance):
 	#	debug(__name__ + ", Detach")
@@ -423,8 +345,133 @@ class AdvArmorTechEXDef(FoundationTech.TechDef):
 		
 oAdvArmorTechEX = AdvArmorTechEXDef(TECH_NAME)
 
-
 # Extra functions
+def detectBrokenSubsystemFromList(pShip, pSubsystem, subSystemList, subSystemPoundList, extraDamage=0, removeHeal=0, broken = 0, total = 0, pTech=None):
+	if (pSubsystem.GetName() in subSystemList):
+		total = total + 1
+		broken = broken + ((pSubsystem.GetCondition() <= 0.0) or (pSubsystem.GetCondition() - extraDamage <= 0.0 ))
+
+	iChildren = pSubsystem.GetNumChildSubsystems()
+	if iChildren > 0:
+		for iIndex in range(iChildren):
+			pChild = pSubsystem.GetChildSubsystem(iIndex)
+			if pChild:
+				broken, total = detectBrokenSubsystemFromList(pShip, pChild, subSystemList, subSystemPoundList, extraDamage, removeHeal, broken, total, pTech)
+	return broken, total	
+
+def healSubsystemAndChild(pShip, pSubsystem, subSystemList, subSystemPoundList, extraDamage=0, removeHeal=0, invinState=0, depth = 0, systemsToDestroy=[], pTech=None):
+	dOldConditions = None
+	if pTech != None:
+		dOldConditions = pTech["Ships"][pShip.GetObjID()]
+
+	subSysName = pSubsystem.GetName()
+
+	if (subSysName in subSystemList): # the "armor"
+		if not pSubsystem.IsTargetable():
+			finalDmg = pSubsystem.GetMaxCondition() - extraDamage
+			if finalDmg > 0.0:
+				pSubsystem.SetCondition(finalDmg)
+			elif not (pShip.IsDead() or pShip.IsDying()):
+				systemsToDestroy.append(pSubsystem)
+	else:
+		imTheEnergyBackup = (subSysName in subSystemPoundList)
+		if imTheEnergyBackup: # the "energy" counterparts
+			#if (not pSubsystem.IsHurtable()): # This function is for the whole ship, not just a subsystem... unless you manually perform damage I guess... but we cannot know the damage on our case without a system getting hurt first!
+			#	pSubsystem.SetHurtable(1)
+
+			if (not pSubsystem.IsTargetable()):
+				finalDmg = pSubsystem.GetMaxCondition() - extraDamage
+				if finalDmg < 0.0:
+					finalDmg = 0.00001
+				pSubsystem.SetCondition(finalDmg)
+
+		#elif (invinState) or (not pSubsystem.IsHurtable()): # Hurtable is Ship-wide
+
+		if dOldConditions != None: # Workaround for not having apparently an option to block damage from happening to a targetable system (well I guess there must be one where you catch the proper damage event but...)
+			fOldCondition = 1.0
+			if dOldConditions.has_key(subSysName):
+				fOldCondition = dOldConditions[subSysName]
+ 
+			fCurrentCondition = pSubsystem.GetConditionPercentage()
+			fNewCondition = None
+			if invinState:
+				if fCurrentCondition > fOldCondition:
+					fNewCondition = fCurrentCondition
+				else:
+					fNewCondition = fOldCondition
+				pSubsystem.SetConditionPercentage(fNewCondition)
+			else:
+				fNewCondition = fCurrentCondition
+
+			dOldConditions[subSysName] = fNewCondition
+
+	iChildren = pSubsystem.GetNumChildSubsystems()
+	if iChildren > 0:
+		for iIndex in range(iChildren):
+			pChild = pSubsystem.GetChildSubsystem(iIndex)
+			if pChild:
+				systemsToDestroy = healSubsystemAndChild(pShip, pChild, subSystemList, subSystemPoundList, extraDamage, removeHeal, invinState, depth + 1, systemsToDestroy, pTech)
+
+	if (not invinState) or (not pSubsystem.IsInvincible()):
+		pSubsystem.SetInvincible(invinState)
+
+
+
+	if depth == 0:
+		for system in systemsToDestroy:
+			if system.IsInvincible():
+				system.SetInvincible(0)
+			pShip.DestroySystem(system)
+
+		return []
+	else:
+		return systemsToDestroy
+
+def unhurtAllSubsystemsExceptASet(pShip, subSystemList, subSystemPoundList, extraDamage=0, removeHeal=0, pTech=None):
+	try:
+		if pTech != None:
+			if not pTech.has_key("Ships"):
+				pTech["Ships"] = {}
+			if not pTech["Ships"].has_key(pShip.GetObjID()):
+				pTech["Ships"][pShip.GetObjID()] = {}
+	except:
+		print (__name__, ".unhurtAllSubsystemsExceptASet ERROR:")
+		traceback.print_exc()
+
+	invinState = 0
+	try:
+		broken = 0
+		total = 0
+		if removeHeal == 0:
+			pIterator = pShip.StartGetSubsystemMatch(App.CT_SHIP_SUBSYSTEM)
+			pSubsystem = pShip.GetNextSubsystemMatch(pIterator)
+
+			while pSubsystem:
+				broken, total = detectBrokenSubsystemFromList(pShip, pSubsystem, subSystemList, subSystemPoundList, extraDamage, removeHeal, broken, total, pTech)
+				pSubsystem = pShip.GetNextSubsystemMatch(pIterator)
+
+			pShip.EndGetSubsystemMatch(pIterator)
+
+		invinState = ((removeHeal == 0) and ((total == 0) or (broken/total >= 1.0)))
+
+		pIterator = pShip.StartGetSubsystemMatch(App.CT_SHIP_SUBSYSTEM)
+		pSubsystem = pShip.GetNextSubsystemMatch(pIterator)
+		systemsToDestroy = []
+		while pSubsystem:
+			systemsToDestroy = healSubsystemAndChild(pShip, pSubsystem, subSystemList, subSystemPoundList, extraDamage, removeHeal, invinState, 1, systemsToDestroy, pTech)
+			pSubsystem = pShip.GetNextSubsystemMatch(pIterator)
+
+		pShip.EndGetSubsystemMatch(pIterator)
+
+		for system in systemsToDestroy:
+			pShip.DestroySystem(system)
+	except:
+		print (__name__, ".unhurtAllSubsystemsExceptASet ERROR:")
+		traceback.print_exc()
+		invinState = 0
+
+	return invinState
+
 def SubsystemStateChanged(pObject, pEvent):
 	debug(__name__ + ", SubsystemStateChanged")
 	pShip = App.ShipClass_Cast(pObject)
@@ -645,7 +692,7 @@ def AdvArmorPlayer(aShip=None, isPlayer=1, techName = TECH_NAME): # For player
 		hull_dmg=hull_max-hull_cond
 		theCondition = (armor_pwr<hull_dmg)
 
-	working = unhurtAllSubsystemsExceptASet(pShip, subSystemList, subSystemPoundList, extraDamage=0, removeHeal=(not (theCondition)))
+	working = unhurtAllSubsystemsExceptASet(pShip, subSystemList, subSystemPoundList, extraDamage=0, removeHeal=(not (theCondition)), pTech=techDict )
 
 	if (working):
 		armor_pwr=armor_pwr-hull_dmg
@@ -802,7 +849,7 @@ def AdvArmorTogglePlayer(pObject, pEvent, aShip=None, isPlayer=1, techNameT=TECH
 	else:
 		theCondition = not AdvArmorRecord[iShipID]	
 
-	working = unhurtAllSubsystemsExceptASet(pShip, subSystemList, subSystemPoundList, extraDamage=0, removeHeal=(not (theCondition)))
+	working = unhurtAllSubsystemsExceptASet(pShip, subSystemList, subSystemPoundList, extraDamage=0, removeHeal=(not (theCondition)), pTech=techDict)
 	if not theCondition:
 		if isPlayer and ArmorButton != None:
 			ArmorButton.SetName(App.TGString("Adv Plating EX Offline"))
@@ -959,7 +1006,7 @@ def AdvArmorTogglePlayerFirst(armourActive, aShip=None, isPlayer=1, techNameTF=T
 	else:
 		theCondition = not AdvArmorRecord[iShipID]	
 
-	working = unhurtAllSubsystemsExceptASet(pShip, subSystemList, subSystemPoundList, extraDamage=0, removeHeal=(not (armourActive)))
+	working = unhurtAllSubsystemsExceptASet(pShip, subSystemList, subSystemPoundList, extraDamage=0, removeHeal=(not (armourActive)), pTech=techDict)
 	if not (working):
 		if isPlayer and ArmorButton != None:
 			ArmorButton.SetName(App.TGString("Adv Plating EX Offline"))
