@@ -385,17 +385,31 @@ def healSubsystemAndChild(pShip, pSubsystem, subSystemList, subSystemPoundList, 
 					finalDmg = 0.00001
 				pSubsystem.SetCondition(finalDmg)
 
+			if dOldConditions != None:
+				fCurrentCondition = pSubsystem.GetConditionPercentage()
+				dOldConditions[subSysName] = fNewCondition
+
 		#elif (invinState) or (not pSubsystem.IsHurtable()): # Hurtable is Ship-wide
 
-		if dOldConditions != None: # Workaround for not having apparently an option to block damage from happening to a targetable system (well I guess there must be one where you catch the proper damage event but...)
+		elif dOldConditions != None: # Workaround for not having apparently an option to block damage from happening to a targetable system (well I guess there must be one where you catch the proper damage event but...)
+			fCurrentCondition = pSubsystem.GetConditionPercentage()
+
 			fOldCondition = 1.0
 			if dOldConditions.has_key(subSysName):
 				fOldCondition = dOldConditions[subSysName]
+			else:
+				fOldCondition = fCurrentCondition
  
-			fCurrentCondition = pSubsystem.GetConditionPercentage()
+
 			fNewCondition = None
-			if invinState:
+			if invinState and not (fCurrentCondition <= 0):
+				if fOldCondition >= 10: # That is, it got destroyed before but now it has been rebuilt:
+					fOldCondition = fCurrentCondition 
+					if subSysName == subSystemPoundList:
+						fOldCondition = fOldCondition + (extraDamage/(pSubsystem.GetMaxCondition()+0.000001))
+
 				if fCurrentCondition > fOldCondition:
+					#fNewCondition = fCurrentCondition
 					fNewCondition = fCurrentCondition
 				else:
 					fNewCondition = fOldCondition
@@ -403,6 +417,11 @@ def healSubsystemAndChild(pShip, pSubsystem, subSystemList, subSystemPoundList, 
 			else:
 				fNewCondition = fCurrentCondition
 
+			if fNewCondition < 0:
+				iOld = fOldCondition
+				if iOld > 10:
+					iOld = iOld - 10.0
+				fNewCondition = 10.0 + iOld # we establish the system was destroyed beyond regular repair.
 			dOldConditions[subSysName] = fNewCondition
 
 	iChildren = pSubsystem.GetNumChildSubsystems()
@@ -654,6 +673,7 @@ def AdvArmorPlayer(aShip=None, isPlayer=1, techName = TECH_NAME): # For player
 	pHull=pShip.GetHull()
 	if (pHull==None):
 		return
+
 	if len(subSystemPoundList) <= 0:
 		subSystemPoundList.append(pHull.GetName())
 
@@ -679,11 +699,21 @@ def AdvArmorPlayer(aShip=None, isPlayer=1, techName = TECH_NAME): # For player
 
 	inde = 0
 	energySponge = None
+	sHullName = pHull.GetName()
 	while ((not energySponge or (energySponge is None)) and inde < len(subSystemPoundList)):
 		energySponge = MissionLib.GetSubsystemByName(pShip, subSystemPoundList[inde]) # Potential TO-DO we could totally customize this so it goes through multiple options...
+		if energySponge:
+			if (not energySponge.IsTargetable()) and energySponge.GetName() != sHullName:
+				energySponge = None
 		inde = inde + 1
+
+	senergySpongeName = None
+
 	if not energySponge:
 		energySponge = pHull
+		senergySpongeName = sHullName
+	else:
+		senergySpongeName = energySponge.GetName()
 
 	if not theCondition:
 		armor_pwr=batt_chg*armor_ratio
@@ -702,6 +732,7 @@ def AdvArmorPlayer(aShip=None, isPlayer=1, techName = TECH_NAME): # For player
 		pShip.SetVisibleDamageStrengthModifier(0.0)
 
 	else:
+		energySponge.SetCondition(hull_max)
 		energySponge.SetCondition(hull_cond+armor_pwr)
 		armor_pwr=0
 		if isPlayer and ArmorButton != None:
