@@ -10,7 +10,7 @@ import traceback
 from bcdebug import debug
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-            "Version": "0.104",
+            "Version": "0.105",
             "License": "LGPL",
             "Description": "Read info below for better understanding"
             }
@@ -359,7 +359,7 @@ def detectBrokenSubsystemFromList(pShip, pSubsystem, subSystemList, subSystemPou
 				broken, total = detectBrokenSubsystemFromList(pShip, pChild, subSystemList, subSystemPoundList, extraDamage, removeHeal, broken, total, pTech)
 	return broken, total	
 
-def healSubsystemAndChild(pShip, pSubsystem, subSystemList, subSystemPoundList, extraDamage=0, removeHeal=0, invinState=0, depth = 0, systemsToDestroy=[], pTech=None):
+def healSubsystemAndChild(pShip, pSubsystem, subSystemList, subSystemPoundList, extraDamage=0, removeHeal=0, invinState=0, depth = 0, systemsToDestroy=[], pTech=None, chosenSponges=[]):
 	dOldConditions = None
 	if pTech != None:
 		dOldConditions = pTech["Ships"][pShip.GetObjID()]
@@ -379,7 +379,7 @@ def healSubsystemAndChild(pShip, pSubsystem, subSystemList, subSystemPoundList, 
 			#if (not pSubsystem.IsHurtable()): # This function is for the whole ship, not just a subsystem... unless you manually perform damage I guess... but we cannot know the damage on our case without a system getting hurt first!
 			#	pSubsystem.SetHurtable(1)
 
-			if (not pSubsystem.IsTargetable()):
+			if (not pSubsystem.IsTargetable()) and not (subSysName in chosenSponges):
 				finalDmg = pSubsystem.GetMaxCondition() - extraDamage
 				if finalDmg < 0.0:
 					finalDmg = 0.00001
@@ -446,7 +446,7 @@ def healSubsystemAndChild(pShip, pSubsystem, subSystemList, subSystemPoundList, 
 	else:
 		return systemsToDestroy
 
-def unhurtAllSubsystemsExceptASet(pShip, subSystemList, subSystemPoundList, extraDamage=0, removeHeal=0, pTech=None):
+def unhurtAllSubsystemsExceptASet(pShip, subSystemList, subSystemPoundList, extraDamage=0, removeHeal=0, pTech=None, chosenSponges=[]):
 	try:
 		if pTech != None:
 			if not pTech.has_key("Ships"):
@@ -477,7 +477,7 @@ def unhurtAllSubsystemsExceptASet(pShip, subSystemList, subSystemPoundList, extr
 		pSubsystem = pShip.GetNextSubsystemMatch(pIterator)
 		systemsToDestroy = []
 		while pSubsystem:
-			systemsToDestroy = healSubsystemAndChild(pShip, pSubsystem, subSystemList, subSystemPoundList, extraDamage, removeHeal, invinState, 1, systemsToDestroy, pTech)
+			systemsToDestroy = healSubsystemAndChild(pShip, pSubsystem, subSystemList, subSystemPoundList, extraDamage, removeHeal, invinState, 1, systemsToDestroy, pTech, chosenSponges)
 			pSubsystem = pShip.GetNextSubsystemMatch(pIterator)
 
 		pShip.EndGetSubsystemMatch(pIterator)
@@ -702,19 +702,23 @@ def AdvArmorPlayer(aShip=None, isPlayer=1, techName = TECH_NAME): # For player
 	sHullName = pHull.GetName()
 	while ((not energySponge or (energySponge is None)) and inde < len(subSystemPoundList)):
 		energySponge = MissionLib.GetSubsystemByName(pShip, subSystemPoundList[inde]) # Potential TO-DO we could totally customize this so it goes through multiple options...
-		if energySponge:
-			if (not energySponge.IsTargetable()) and energySponge.GetName() != sHullName:
-				energySponge = None
+		#if energySponge:
+		#	if (not energySponge.IsTargetable()) and energySponge.GetName() != sHullName:
+		#		energySponge = None
 		inde = inde + 1
 
-	senergySpongeName = None
+	senergySpongeName = []
 
 	if not energySponge:
 		energySponge = pHull
-		senergySpongeName = sHullName
 	else:
-		senergySpongeName = energySponge.GetName()
+		aSpongeName = energySponge.GetName()
+		if aSpongeName:
+			senergySpongeName.append(aSpongeName)			
 
+	senergySpongeName.append(sHullName)
+
+	hull_dmg=0
 	if not theCondition:
 		armor_pwr=batt_chg*armor_ratio
 		hull_max=energySponge.GetMaxCondition()
@@ -722,7 +726,7 @@ def AdvArmorPlayer(aShip=None, isPlayer=1, techName = TECH_NAME): # For player
 		hull_dmg=hull_max-hull_cond
 		theCondition = (armor_pwr<hull_dmg)
 
-	working = unhurtAllSubsystemsExceptASet(pShip, subSystemList, subSystemPoundList, extraDamage=0, removeHeal=(not (theCondition)), pTech=techDict )
+	working = unhurtAllSubsystemsExceptASet(pShip, subSystemList, subSystemPoundList, extraDamage=0, removeHeal=(not (theCondition)), pTech=techDict, chosenSponges=senergySpongeName)
 
 	if (working):
 		armor_pwr=armor_pwr-hull_dmg
