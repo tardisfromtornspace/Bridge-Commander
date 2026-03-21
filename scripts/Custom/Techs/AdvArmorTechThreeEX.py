@@ -10,20 +10,22 @@ import traceback
 from bcdebug import debug
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-            "Version": "0.108",
+            "Version": "0.109",
             "License": "LGPL",
             "Description": "Read info below for better understanding"
             }
 
 """
-Based on AdvArmorTechThree version 1.941 BY Alex SL Gato, made for Greystar. Basically a weird combination between AdvArmorTechThree and some concepts from techs that also affect hull properties, like MEShields.
+Based on AdvArmorTechThree version 1.941 BY Alex SL Gato, made for Greystar. Basically a weird combination between AdvArmorTechThree and some concepts from techs that also affect hull properties, like MEShields and FedAblativeArmour.
+As such, the tech shares much of its behaviour with AdvArmorTechThree (including that Players can manually toggle it "Online" and "Offline" by clicking on a button), with a few exceptions.
 PLEASE NOTE THIS IS STILL A VERY EARLY-VERSION
 
 Sample Setup:
 # In scripts/Custom/ships/yourShip.py
-# NOTE: replace "AMVoyager" with your abbrev
-# NOTE: "Energy Subsystems" is a dictionary entry that provides a list, that list indicates the order where the properties used for the energy-side of these armor calculations are used (invincible but can be harmed) - only the first of those listed will be actually considered. By default (not mentioned/cannot find any of the lsited properties) it's the primary hull property.
-# NOTE: "Armor Subsystems" is a dictionary entry that provides a list, which indicates what subsystems are used for the "armor" stuff (these are set to "invincible" but can be harmed and actually destroyed according to the damage absorbed by the first "Energy" subystem (not the actual energy systems)). By default (not mentioned/cannot find any of the lsited properties) this is set to the Power property.
+# -- NOTE: "Energy Subsystems" is a dictionary entry that provides a list, that list indicates the names and order of the hardpoint properties used for the energy-side of this tech (invincible but can be harmed, since that damage is needed to verify the actual "energy-absorbed" damage) - only the first of those listed will be actually considered for the task, and if the tech is "Online", it will reverse the damage received to that property in particular, in a similar way to AdvArmorTechThree. By default (not mentioned/entry present but not a list/cannot find any of the listed properties) it's the primary hull property.
+# -- NOTE: "Armor Subsystems" is a dictionary entry that provides a list, which indicates the names of the subsystems used for the "armor plate" side of this tech (these are set to "invincible" but can be harmed and actually destroyed according to the damage absorbed by the chosen "energy-absorber" subystem (not the actual energy systems)). Once all armors are essentially destroyed o disabled, the armor tech will switch to "Offline". By default (not mentioned/cannot find any of the listed properties) this is set to the Power property. If this entry's value holds something that is not a list, it will work as if no armors were needed.
+# -- NOTE: All properties not considered as "Energy Subsystems"/"energy-absorbers"/"Armor subsystems" will be invincible as long as this armor tech is "On", and any regular damage received by them will be reversed in a similar fashion to Fed Ablative Armor (will try to reset the subsystem's health to the last saved condition).
+# -- NOTE: replace "AMVoyager" with your abbrev
 Foundation.ShipDef.AMVoyager.dTechs = {
 	'Adv Armor Tech EX': {"Energy Subsystems": [], "Armor Subsystems": []}
 }
@@ -70,6 +72,9 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(ArmourGenerator)
 
 """
 TECH_NAME = "Adv Armor Tech EX"
+OFFLINE_BUTTON_TEXT = "Adv Plating EX Offline"
+ONLINE_BUTTON_TEXT = "Adv Plating EX Online"
+
 REMOVE_POINTER_FROM_SET = 190
 NO_COLLISION_MESSAGE = 192
 REPLACE_MODEL_MSG = 208
@@ -88,8 +93,11 @@ vd_str_mod = {}
 global pShipp
 pShipp = {}
 
-#global LastShipType
-LastShipType = "nonArmored"
+#global LastPlayerShipType
+g_NOT_ARMORED = "nonArmored"
+g_YES_ARMORED = "yesArmored"
+LastPlayerShipType = g_NOT_ARMORED
+
 
 # This class does control the attach and detach of the Models
 class AdvArmorTechEXDef(FoundationTech.TechDef):
@@ -107,11 +115,11 @@ class AdvArmorTechEXDef(FoundationTech.TechDef):
 			pInstance = findShipInstance(pPlayer)
 			if not pInstance or not pInstance.__dict__.has_key(self.name):
 				try:
-					self.DeleteMenuButton("Tactical", "Adv Plating EX Offline")
+					self.DeleteMenuButton("Tactical", OFFLINE_BUTTON_TEXT)
 				except:
 					pass
 				try:
-					self.DeleteMenuButton("Tactical", "Adv Plating EX Online")
+					self.DeleteMenuButton("Tactical", ONLINE_BUTTON_TEXT)
 				except:
 					pass
 
@@ -137,7 +145,7 @@ class AdvArmorTechEXDef(FoundationTech.TechDef):
 			global vd_rad_mod
 			global vd_str_mod
 			global pShipp
-			global LastShipType
+			global LastPlayerShipType
 
 			iShipID = pShip.GetObjID()
 			if iShipID == None or iShipID == App.NULL_ID:
@@ -167,46 +175,46 @@ class AdvArmorTechEXDef(FoundationTech.TechDef):
 			mustGo = 0
 			if (iShipID == iPlayerID):
 				if not self.bAddedWarpListener.has_key(iShipID):
-					if LastShipType == "nonArmored":
+					if LastPlayerShipType == g_NOT_ARMORED:
 						#print ("Ok the previous was not armored")
-						ArmorButton = Lib.LibEngineering.CreateMenuButton("Adv Plating EX Offline", "Tactical", __name__ + ".AdvArmorTogglePlayer")
+						ArmorButton = Lib.LibEngineering.CreateMenuButton(OFFLINE_BUTTON_TEXT, "Tactical", __name__ + ".AdvArmorTogglePlayer")
 					else:
 						#print ("Ok the previous WAS armored, attempting to get the past button")
 						try:
 							theMenu = Lib.LibEngineering.GetBridgeMenu("Tactical")
-							ArmorButton = Lib.LibEngineering.GetButton("Adv Plating EX Offline", theMenu)
+							ArmorButton = Lib.LibEngineering.GetButton(OFFLINE_BUTTON_TEXT, theMenu)
 							#print ("Grabbed online button")
 							if not ArmorButton:
 								try:
-									self.DeleteMenuButton("Tactical", "Adv Plating EX Online")
+									self.DeleteMenuButton("Tactical", ONLINE_BUTTON_TEXT)
 								except:
 									pass
 								try:
-									self.DeleteMenuButton("Tactical", "Adv Plating EX Offline")
+									self.DeleteMenuButton("Tactical", OFFLINE_BUTTON_TEXT)
 								except:
 									pass
-								ArmorButton = Lib.LibEngineering.CreateMenuButton("Adv Plating EX Offline", "Tactical", __name__ + ".AdvArmorTogglePlayer")
+								ArmorButton = Lib.LibEngineering.CreateMenuButton(OFFLINE_BUTTON_TEXT, "Tactical", __name__ + ".AdvArmorTogglePlayer")
 						except:
 							try:
 								theMenu = Lib.LibEngineering.GetBridgeMenu("Tactical")
-								ArmorButton = Lib.LibEngineering.GetButton("Adv Plating EX Online", theMenu)
+								ArmorButton = Lib.LibEngineering.GetButton(ONLINE_BUTTON_TEXT, theMenu)
 								#print ("Grabbed offline button")
 								if not ArmorButton:
 									try:
-										self.DeleteMenuButton("Tactical", "Adv Plating EX Online")
+										self.DeleteMenuButton("Tactical", ONLINE_BUTTON_TEXT)
 									except:
 										pass
 									try:
-										self.DeleteMenuButton("Tactical", "Adv Plating EX Offline")
+										self.DeleteMenuButton("Tactical", OFFLINE_BUTTON_TEXT)
 									except:
 										pass
-									ArmorButton = Lib.LibEngineering.CreateMenuButton("Adv Plating EX Offline", "Tactical", __name__ + ".AdvArmorTogglePlayer")
+									ArmorButton = Lib.LibEngineering.CreateMenuButton(OFFLINE_BUTTON_TEXT, "Tactical", __name__ + ".AdvArmorTogglePlayer")
 							except:
 								print("No armor button to grab, huh")
 					try:
-						LastShipType = "yesArmored"
+						LastPlayerShipType = g_YES_ARMORED
 					except:
-						print("It doesn't let me change the LastShipType wth")
+						print("It doesn't let me change the LastPlayerShipType wth")
 						traceback.print_exc()
 
 					pShip.AddPythonFuncHandlerForInstance(App.ET_SUBSYSTEM_STATE_CHANGED, __name__ + ".SubsystemStateChanged") # Because of transporter mods out there
@@ -255,11 +263,11 @@ class AdvArmorTechEXDef(FoundationTech.TechDef):
 				iPlayerID = pPlayer.GetObjID()
 			if (iShipID == iPlayerID):
 				try:
-					self.DeleteMenuButton("Tactical", "Adv Plating EX Offline")
+					self.DeleteMenuButton("Tactical", OFFLINE_BUTTON_TEXT)
 				except:
 					pass
 				try:
-					self.DeleteMenuButton("Tactical", "Adv Plating EX Online")
+					self.DeleteMenuButton("Tactical", ONLINE_BUTTON_TEXT)
 				except:
 					pass
 				pShip.RemoveHandlerForInstance(App.ET_SUBSYSTEM_STATE_CHANGED, __name__ + ".SubsystemStateChanged")
@@ -462,7 +470,8 @@ def unhurtAllSubsystemsExceptASet(pShip, subSystemList, subSystemPoundList, extr
 	try:
 		broken = 0
 		total = 0
-		if removeHeal == 0:
+		armorsList = (type(subSystemList) == type([]))
+		if removeHeal == 0 and armorsList:
 			pIterator = pShip.StartGetSubsystemMatch(App.CT_SHIP_SUBSYSTEM)
 			pSubsystem = pShip.GetNextSubsystemMatch(pIterator)
 
@@ -471,6 +480,10 @@ def unhurtAllSubsystemsExceptASet(pShip, subSystemList, subSystemPoundList, extr
 				pSubsystem = pShip.GetNextSubsystemMatch(pIterator)
 
 			pShip.EndGetSubsystemMatch(pIterator)
+
+		if not armorsList:
+			subSystemList = []
+			total = total + 1
 
 		invinState = ((removeHeal == 0) and ((total == 0) or (broken/total >= 1.0)))
 
@@ -655,7 +668,7 @@ def AdvArmorPlayer(aShip=None, isPlayer=1, techName = TECH_NAME): # For player
 	subSystemPoundList = []
 
 	if type(techDict) == type({}):
-		if techDict.has_key("Energy Subsystems"):
+		if techDict.has_key("Energy Subsystems") and type(techDict["Energy Subsystems"]) == type([]):
 			subSystemPoundList = techDict["Energy Subsystems"]
 		if techDict.has_key("Armor Subsystems"):
 			subSystemList = techDict["Armor Subsystems"]
@@ -679,7 +692,7 @@ def AdvArmorPlayer(aShip=None, isPlayer=1, techName = TECH_NAME): # For player
 	if isPlayer:
 		BtnName=App.TGString()
 		ArmorButton.GetName(BtnName)
-		if (BtnName.Compare(App.TGString("Adv Plating EX Online"),1)):
+		if (BtnName.Compare(App.TGString(ONLINE_BUTTON_TEXT),1)):
 			return
 	else:
 		theCondition = not AdvArmorRecord[iShipID]
@@ -717,8 +730,9 @@ def AdvArmorPlayer(aShip=None, isPlayer=1, techName = TECH_NAME): # For player
 	if len(subSystemPoundList) <= 0:
 		subSystemPoundList.append(pHull.GetName())
 
-	if len(subSystemList) <= 0:
-		subSystemList.append(pPower.GetName())
+	if type(subSystemList) == type([]):
+		if len(subSystemList) <= 0:
+			subSystemList.append(pPower.GetName())
 
 	hull_dmg=0
 	if not theCondition:
@@ -742,7 +756,7 @@ def AdvArmorPlayer(aShip=None, isPlayer=1, techName = TECH_NAME): # For player
 		energySponge.SetCondition(hull_cond+armor_pwr)
 		armor_pwr=0
 		if isPlayer and ArmorButton != None:
-			ArmorButton.SetName(App.TGString("Adv Plating EX Offline"))
+			ArmorButton.SetName(App.TGString(OFFLINE_BUTTON_TEXT))
 		if (AdvArmorRecord[iShipID]):
 			AdvArmorRecord[iShipID]=0		
 			if (not sOriginalShipScript[iShipID] == None):
@@ -788,7 +802,7 @@ def AdvArmorTogglePlayer(pObject, pEvent, aShip=None, isPlayer=1, techNameT=TECH
 	subSystemPoundList = []
 
 	if type(techDict) == type({}):
-		if techDict.has_key("Energy Subsystems"):
+		if techDict.has_key("Energy Subsystems") and type(techDict["Energy Subsystems"]) == type([]):
 			subSystemPoundList = techDict["Energy Subsystems"]
 		if techDict.has_key("Armor Subsystems"):
 			subSystemList = techDict["Armor Subsystems"]
@@ -799,11 +813,12 @@ def AdvArmorTogglePlayer(pObject, pEvent, aShip=None, isPlayer=1, techNameT=TECH
 			return
 		subSystemPoundList.append(pHull.GetName())
 
-	if len(subSystemList) <= 0:
-		pPower=pShip.GetPowerSubsystem()
-		if (pPower==None):
-			return
-		subSystemList.append(pPower.GetName())
+	if type(subSystemList) == type([]):
+		if len(subSystemList) <= 0:
+			pPower=pShip.GetPowerSubsystem()
+			if (pPower==None):
+				return
+			subSystemList.append(pPower.GetName())
 
 	try:
 		armor_ratio=pShipModule.GetArmorRatio()
@@ -882,14 +897,14 @@ def AdvArmorTogglePlayer(pObject, pEvent, aShip=None, isPlayer=1, techNameT=TECH
 	if isPlayer:
 		BtnName=App.TGString()
 		ArmorButton.GetName(BtnName)
-		theCondition = (BtnName.Compare(App.TGString("Adv Plating EX Online"),1))
+		theCondition = (BtnName.Compare(App.TGString(ONLINE_BUTTON_TEXT),1))
 	else:
 		theCondition = not AdvArmorRecord[iShipID]	
 
 	working = unhurtAllSubsystemsExceptASet(pShip, subSystemList, subSystemPoundList, extraDamage=0, removeHeal=(not (theCondition)), pTech=techDict)
 	if not theCondition:
 		if isPlayer and ArmorButton != None:
-			ArmorButton.SetName(App.TGString("Adv Plating EX Offline"))
+			ArmorButton.SetName(App.TGString(OFFLINE_BUTTON_TEXT))
 		conditionA = AdvArmorRecord[iShipID]
 		if (conditionA):
 			AdvArmorRecord[iShipID]=0
@@ -899,7 +914,7 @@ def AdvArmorTogglePlayer(pObject, pEvent, aShip=None, isPlayer=1, techNameT=TECH
 			pShip.SetVisibleDamageStrengthModifier(vd_str_mod[iShipID])
 	else:
 		if isPlayer and ArmorButton != None:
-			ArmorButton.SetName(App.TGString("Adv Plating EX Online"))
+			ArmorButton.SetName(App.TGString(ONLINE_BUTTON_TEXT))
 		pShip.SetVisibleDamageRadiusModifier(0.0)
 		pShip.SetVisibleDamageStrengthModifier(0.0)
 		if sNewShipScript[iShipID]:
@@ -942,7 +957,7 @@ def AdvArmorTogglePlayerFirst(armourActive, aShip=None, isPlayer=1, techNameTF=T
 	subSystemPoundList = []
 
 	if type(techDict) == type({}):
-		if techDict.has_key("Energy Subsystems"):
+		if techDict.has_key("Energy Subsystems") and type(techDict["Energy Subsystems"]) == type([]):
 			subSystemPoundList = techDict["Energy Subsystems"]
 		if techDict.has_key("Armor Subsystems"):
 			subSystemList = techDict["Armor Subsystems"]
@@ -953,11 +968,12 @@ def AdvArmorTogglePlayerFirst(armourActive, aShip=None, isPlayer=1, techNameTF=T
 			return
 		subSystemPoundList.append(pHull.GetName())
 
-	if len(subSystemList) <= 0:
-		pPower=pShip.GetPowerSubsystem()
-		if (pPower==None):
-			return
-		subSystemList.append(pPower.GetName())
+	if type(subSystemList) == type([]):
+		if len(subSystemList) <= 0:
+			pPower=pShip.GetPowerSubsystem()
+			if (pPower==None):
+				return
+			subSystemList.append(pPower.GetName())
 
 
 	pShipModule=__import__(pShip.GetScript())
@@ -1039,14 +1055,14 @@ def AdvArmorTogglePlayerFirst(armourActive, aShip=None, isPlayer=1, techNameTF=T
 	if isPlayer:
 		BtnName=App.TGString()
 		ArmorButton.GetName(BtnName)
-		theCondition = (BtnName.Compare(App.TGString("Adv Plating EX Online"),1))
+		theCondition = (BtnName.Compare(App.TGString(ONLINE_BUTTON_TEXT),1))
 	else:
 		theCondition = not AdvArmorRecord[iShipID]	
 
 	working = unhurtAllSubsystemsExceptASet(pShip, subSystemList, subSystemPoundList, extraDamage=0, removeHeal=(not (armourActive)), pTech=techDict)
 	if not (working):
 		if isPlayer and ArmorButton != None:
-			ArmorButton.SetName(App.TGString("Adv Plating EX Offline"))
+			ArmorButton.SetName(App.TGString(OFFLINE_BUTTON_TEXT))
 
 		AdvArmorRecord[iShipID]=0
 		if not (sOriginalShipScript[iShipID] == None):
@@ -1055,7 +1071,7 @@ def AdvArmorTogglePlayerFirst(armourActive, aShip=None, isPlayer=1, techNameTF=T
 		pShip.SetVisibleDamageStrengthModifier(vd_str_mod[iShipID])
 	else:
 		if isPlayer:
-			ArmorButton.SetName(App.TGString("Adv Plating EX Online"))
+			ArmorButton.SetName(App.TGString(ONLINE_BUTTON_TEXT))
 		AdvArmorRecord[iShipID]=1
 		pShip.SetVisibleDamageRadiusModifier(0.0)
 		pShip.SetVisibleDamageStrengthModifier(0.0)
@@ -1079,7 +1095,7 @@ def Restart():
 	if pPlayer and hasattr(pPlayer, "GetObjID"):
 		iPlayerID = pPlayer.GetObjID()
 	#if (pShipp == repr(pPlayer)):
-	#	ArmorButton.SetName(App.TGString("Adv Plating EX Offline"))
+	#	ArmorButton.SetName(App.TGString(OFFLINE_BUTTON_TEXT))
 	return
 
 def MPSentReplaceModelMessage(pShip, sNewShipScript):
