@@ -10,7 +10,7 @@ import traceback
 from bcdebug import debug
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-            "Version": "0.107",
+            "Version": "0.108",
             "License": "LGPL",
             "Description": "Read info below for better understanding"
             }
@@ -707,6 +707,8 @@ def AdvArmorPlayer(aShip=None, isPlayer=1, techName = TECH_NAME): # For player
 	if not energySponge:
 		energySponge = pHull
 		senergySpongeName.append(sHullName)
+		if len(subSystemPoundList) <= 0:
+			subSystemPoundList.append(sHullName)
 	else:
 		aSpongeName = energySponge.GetName()
 		if aSpongeName:
