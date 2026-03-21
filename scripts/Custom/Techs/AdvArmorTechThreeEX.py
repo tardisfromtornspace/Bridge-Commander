@@ -10,7 +10,7 @@ import traceback
 from bcdebug import debug
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-            "Version": "0.109",
+            "Version": "0.110",
             "License": "LGPL",
             "Description": "Read info below for better understanding"
             }
@@ -396,7 +396,7 @@ def healSubsystemAndChild(pShip, pSubsystem, subSystemList, subSystemPoundList, 
 
 			if dOldConditions != None:
 				fCurrentCondition = pSubsystem.GetConditionPercentage()
-				dOldConditions[subSysName] = fNewCondition
+				dOldConditions[subSysName] = fCurrentCondition
 
 		#elif (invinState) or (not pSubsystem.IsHurtable()): # Hurtable is Ship-wide
 
