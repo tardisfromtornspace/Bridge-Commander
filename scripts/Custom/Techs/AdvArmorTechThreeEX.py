@@ -10,7 +10,7 @@ import traceback
 from bcdebug import debug
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-            "Version": "0.112",
+            "Version": "0.113",
             "License": "LGPL",
             "Description": "Read info below for better understanding"
             }
@@ -23,11 +23,12 @@ PLEASE NOTE THIS IS STILL A VERY EARLY-VERSION
 Sample Setup:
 # In scripts/Custom/ships/yourShip.py
 # -- NOTE: "Energy Subsystems" is a dictionary entry that provides a list, that list indicates the names and order of the hardpoint properties used for the energy-side of this tech (invincible but can be harmed, since that damage is needed to verify the actual "energy-absorbed" damage) - only the first of those listed will be actually considered for the task, and if the tech is "Online", it will reverse the damage received to that property in particular, in a similar way to AdvArmorTechThree. By default (not mentioned/entry present but not a list/cannot find any of the listed properties) it's the primary hull property.
+# -- NOTE: "Battery Percentage Limit": is a dictionary which indicates how much percentage of the battery limit is considered before the armor shuts down - default is 0.05 (if your main abttery limit is as 5% or less it will shut down).
 # -- NOTE: "Armor Subsystems" is a dictionary entry that provides a list, which indicates the names of the subsystems used for the "armor plate" side of this tech (these are set to "invincible" but can be harmed and actually destroyed according to the damage absorbed by the chosen "energy-absorber" subystem (not the actual energy systems)). Once all armors are essentially destroyed o disabled, the armor tech will switch to "Offline". By default (not mentioned/cannot find any of the listed properties) this is set to the Power property. If this entry's value holds something that is not a list, it will work as if no armors were needed.
 # -- NOTE: All properties not considered as "Energy Subsystems"/"energy-absorbers"/"Armor subsystems" will be invincible as long as this armor tech is "On", and any regular damage received by them will be reversed in a similar fashion to Fed Ablative Armor (will try to reset the subsystem's health to the last saved condition).
 # -- NOTE: replace "AMVoyager" with your abbrev
 Foundation.ShipDef.AMVoyager.dTechs = {
-	'Adv Armor Tech EX': {"Energy Subsystems": [], "Armor Subsystems": []}
+	'Adv Armor Tech EX': {"Energy Subsystems": [], "Armor Subsystems": [], "Battery Percentage Limit": 0.05}
 }
 
 # In scripts/ships/yourShip.py
@@ -671,12 +672,15 @@ def AdvArmorPlayer(aShip=None, isPlayer=1, techName = TECH_NAME): # For player
 
 	subSystemList = []
 	subSystemPoundList = []
+	minPercentage = 0.05
 
 	if type(techDict) == type({}):
 		if techDict.has_key("Energy Subsystems") and type(techDict["Energy Subsystems"]) == type([]):
 			subSystemPoundList = techDict["Energy Subsystems"]
 		if techDict.has_key("Armor Subsystems"):
 			subSystemList = techDict["Armor Subsystems"]
+		if techDict.has_key("Battery Percentage Limit"):
+			minPercentage = techDict["Battery Percentage Limit"]
 
 	pShipModule=__import__(pShip.GetScript())
 	try:
@@ -721,7 +725,7 @@ def AdvArmorPlayer(aShip=None, isPlayer=1, techName = TECH_NAME): # For player
 	senergySpongeName = []
 
 	if theCondition != -1:
-		theCondition = (batt_chg<=(batt_limit*.05))
+		theCondition = (batt_chg<=(batt_limit*minPercentage))
 
 	sHullName = pHull.GetName()
 	while ((not energySponge or (energySponge is None)) and inde < len(subSystemPoundList)):
