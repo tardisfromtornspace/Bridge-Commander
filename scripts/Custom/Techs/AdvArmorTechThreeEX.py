@@ -10,7 +10,7 @@ import traceback
 from bcdebug import debug
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-            "Version": "0.111",
+            "Version": "0.112",
             "License": "LGPL",
             "Description": "Read info below for better understanding"
             }
@@ -126,7 +126,7 @@ class AdvArmorTechEXDef(FoundationTech.TechDef):
 	# called by FoundationTech when a ship is created
 	def AttachShip(self, pShip, pInstance):
 		debug(__name__ + ", AttachShip")
-		print ("Ship ", pShip.GetName(), "with ", self.name, " support added")
+		print "Ship ", pShip.GetName(), "with ", self.name, " support added"
 
 		self.bAddedWarpListener = {} # this variable will make sure we add our event handlers only once
 
@@ -216,7 +216,7 @@ class AdvArmorTechEXDef(FoundationTech.TechDef):
 					try:
 						LastPlayerShipType = g_YES_ARMORED
 					except:
-						print("It doesn't let me change the LastPlayerShipType wth")
+						print "It doesn't let me change the LastPlayerShipType wth"
 						traceback.print_exc()
 
 					pShip.AddPythonFuncHandlerForInstance(App.ET_SUBSYSTEM_STATE_CHANGED, __name__ + ".SubsystemStateChanged") # Because of transporter mods out there
@@ -245,9 +245,9 @@ class AdvArmorTechEXDef(FoundationTech.TechDef):
 			else:
 				AdvArmorToggleAIFirst(pShip, armorStatus)
 			
-			print("SUCCESS while attaching ", self.name)
+			print "SUCCESS while attaching ", self.name
 		except:
-			print("ERROR while attaching ", self.name)
+			print "ERROR while attaching ", self.name
 			traceback.print_exc()  
 
 	# Called by FoundationTech when a Ship is removed from set (eg destruction)
@@ -376,7 +376,7 @@ def healSubsystemAndChild(pShip, pSubsystem, subSystemList, subSystemPoundList, 
 	subSysName = pSubsystem.GetName()
 
 	if (subSysName in subSystemList): # the "armor"
-		if not pSubsystem.IsTargetable():
+		if not pSubsystem.IsTargetable() and (invinState == 1):
 			finalDmg = pSubsystem.GetMaxCondition() - extraDamage
 			if finalDmg > 0.0:
 				pSubsystem.SetCondition(finalDmg)
@@ -389,7 +389,7 @@ def healSubsystemAndChild(pShip, pSubsystem, subSystemList, subSystemPoundList, 
 			#	pSubsystem.SetHurtable(1)
 
 			imEnergyChosenBck = (subSysName in chosenSponges)
-			if (not pSubsystem.IsTargetable()) and not (imEnergyChosenBck):
+			if (not pSubsystem.IsTargetable()) and (invinState == 1) and not (imEnergyChosenBck):
 				finalDmg = pSubsystem.GetMaxCondition() - extraDamage
 				if finalDmg < 0.0:
 					finalDmg = 0.00001
@@ -410,7 +410,7 @@ def healSubsystemAndChild(pShip, pSubsystem, subSystemList, subSystemPoundList, 
  
 
 			fNewCondition = None
-			if invinState and not (fCurrentCondition <= 0):
+			if invinState == 1 and not (fCurrentCondition <= 0):
 				if fOldCondition >= 10: # That is, it got destroyed before but now it has been rebuilt:
 					fOldCondition = fCurrentCondition 
 					if subSysName == subSystemPoundList:
@@ -439,7 +439,7 @@ def healSubsystemAndChild(pShip, pSubsystem, subSystemList, subSystemPoundList, 
 			if pChild:
 				systemsToDestroy = healSubsystemAndChild(pShip, pChild, subSystemList, subSystemPoundList, extraDamage, removeHeal, invinState, depth + 1, systemsToDestroy, pTech)
 
-	if (not invinState) or (not pSubsystem.IsInvincible()):
+	if  (invinState != -1) and ((invinState == 0) or (not pSubsystem.IsInvincible())):
 		pSubsystem.SetInvincible(invinState)
 
 
@@ -486,7 +486,9 @@ def unhurtAllSubsystemsExceptASet(pShip, subSystemList, subSystemPoundList, extr
 			subSystemList = []
 			total = total + 1
 
-		invinState = ((removeHeal == 0) and not ((total == 0) or (broken/total >= 1.0)))
+		invinState = -1
+		if removeHeal != -1:
+			invinState = ((removeHeal == 0) and not ((total == 0) or (broken/total >= 1.0)))
 
 		pIterator = pShip.StartGetSubsystemMatch(App.CT_SHIP_SUBSYSTEM)
 		pSubsystem = pShip.GetNextSubsystemMatch(pIterator)
@@ -692,26 +694,35 @@ def AdvArmorPlayer(aShip=None, isPlayer=1, techName = TECH_NAME): # For player
 		return
 
 	BtnName=None
+	theCondition = 0
 	if isPlayer:
 		BtnName=App.TGString()
 		if ArmorButton == None:
 			return
 		ArmorButton.GetName(BtnName)
 		if (BtnName.Compare(App.TGString(ONLINE_ARMOR_BTN_TXT),1)):
-			return
+			theCondition = -1
 	else:
 		theCondition = not AdvArmorRecord[iShipID]
 	
 		if (theCondition):
-			return
+			theCondition = -1
 
 	batt_chg=pPower.GetMainBatteryPower()
 	batt_limit=pPower.GetMainBatteryLimit()
 
-	theCondition = (batt_chg<=(batt_limit*.05))
-
+	xtra_dmg=0
+	hull_dmg=0
+	armor_pwr=0
+	hull_max=0
+	hull_cond=0
 	inde = 0
 	energySponge = None
+	senergySpongeName = []
+
+	if theCondition != -1:
+		theCondition = (batt_chg<=(batt_limit*.05))
+
 	sHullName = pHull.GetName()
 	while ((not energySponge or (energySponge is None)) and inde < len(subSystemPoundList)):
 		energySponge = MissionLib.GetSubsystemByName(pShip, subSystemPoundList[inde]) # Potential TO-DO we could totally customize this so it goes through multiple options...
@@ -719,8 +730,6 @@ def AdvArmorPlayer(aShip=None, isPlayer=1, techName = TECH_NAME): # For player
 		#	if (not energySponge.IsTargetable()) and energySponge.GetName() != sHullName:
 		#		energySponge = None
 		inde = inde + 1
-
-	senergySpongeName = []
 
 	if not energySponge:
 		energySponge = pHull
@@ -739,15 +748,20 @@ def AdvArmorPlayer(aShip=None, isPlayer=1, techName = TECH_NAME): # For player
 		if len(subSystemList) <= 0:
 			subSystemList.append(pPower.GetName())
 
-	hull_dmg=0
-	if not theCondition:
+	if theCondition != -1:
+		xtra_dmg=0.000001
 		armor_pwr=batt_chg*armor_ratio
 		hull_max=energySponge.GetMaxCondition()
 		hull_cond=energySponge.GetCondition()
 		hull_dmg=hull_max-hull_cond
-		theCondition = (armor_pwr<hull_dmg)
 
-	working = unhurtAllSubsystemsExceptASet(pShip, subSystemList, subSystemPoundList, extraDamage=0.000001, removeHeal=(not (theCondition)), pTech=techDict, chosenSponges=senergySpongeName,extraDamage1=hull_dmg)
+		if theCondition > 0:
+			theCondition = (armor_pwr<hull_dmg)
+
+	working = unhurtAllSubsystemsExceptASet(pShip, subSystemList, subSystemPoundList, extraDamage=xtra_dmg, removeHeal=(theCondition), pTech=techDict, chosenSponges=senergySpongeName,extraDamage1=hull_dmg)
+
+	if theCondition == -1:
+		return
 
 	if (working):
 		armor_pwr=armor_pwr-hull_dmg
@@ -755,6 +769,8 @@ def AdvArmorPlayer(aShip=None, isPlayer=1, techName = TECH_NAME): # For player
 		pPower.SetMainBatteryPower(armor_pwr/(armor_ratio+0.00001))
 		pShip.SetVisibleDamageRadiusModifier(0.0)
 		pShip.SetVisibleDamageStrengthModifier(0.0)
+		if (not AdvArmorRecord[iShipID]):
+			AdvArmorRecord[iShipID]=1
 
 	else:
 		energySponge.SetCondition(hull_max)
@@ -923,6 +939,7 @@ def AdvArmorTogglePlayer(pObject, pEvent, aShip=None, isPlayer=1, techNameT=TECH
 	else:
 		if isPlayer and ArmorButton != None:
 			ArmorButton.SetName(App.TGString(ONLINE_ARMOR_BTN_TXT))
+		AdvArmorRecord[iShipID]=1
 		pShip.SetVisibleDamageRadiusModifier(0.0)
 		pShip.SetVisibleDamageStrengthModifier(0.0)
 		if sNewShipScript[iShipID]:
