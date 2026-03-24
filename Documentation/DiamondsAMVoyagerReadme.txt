@@ -1,6 +1,7 @@
 This mod was changed by narrowcwyfe and Alex SL Gato. Being temporarily uploaded on narrowcwfe's behalf.
 
 == Changelog ==
+0.9.20 - Just in case, provided the exact same files I have on my install, to check if there's issues, and updated the readme a bit.
 0.9.19 - Updated AdvArmourTechThree to 1.94, cleaned code more and fixed potential issue with uninvicibilitators.
 0.9.18 - Updated AdvArmourTechThree to 1.9, cleaned code a bit and fixed potential issue with lights.
 0.9.17 - Updated AdvArmourTechThree from 1.84 to 1.85, fixed conflict with DS9FX sometimes resetting visible damage.
@@ -106,7 +107,9 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(ArmourGenerator)
 ------------------
 
 ===Requirements===
-FoundationTechnologies and DS9FX, having the latest version of Kobayashi Maru would be ideal.
+* Kobayashi Maru (KM), preferably 2011.10
+* Foundation, FoundationTechnologies, DS9FX, Mvam Infinite, Shuttle Launching Framework (Kobayashi Maru already has those)
+* DLC's Intrepid (KM already has that, in theory).
 
 ===Credits===
 - the original modders (read the adjount readme).
