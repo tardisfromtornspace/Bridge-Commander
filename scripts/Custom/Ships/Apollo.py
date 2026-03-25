@@ -40,6 +40,8 @@ Foundation.ShipDef.Apollo.dTechs = {
 
 Foundation.ShipDef.Apollo.fMaxWarp = 6.0
 Foundation.ShipDef.Apollo.fCruiseWarp = 5.9
+
+Foundation.ShipDef.Apollo.shutLauncherShields = -2
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

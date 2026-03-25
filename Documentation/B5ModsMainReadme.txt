@@ -1,4 +1,7 @@
 ==Changelog==
+1.8.0 -
+   Updates:
+   * Added scripts/Custom/Autoload/TWEAK-ShuttleFrameworkDropShields version 20260325 which makes shield drop conditional to several factors.
 1.7.9 -
    Fixes:
    * Updated Turrets to 1.18, providing a new "SimulatedPulse" and "SimulatedTorpedo" which allow the modder to totally skip any potential Torpedo ammo and pulse-shield hit issues.

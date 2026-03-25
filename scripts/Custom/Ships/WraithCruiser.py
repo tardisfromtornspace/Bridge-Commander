@@ -47,6 +47,8 @@ Foundation.ShipDef.WraithCruiser.dTechs = {
 
 Foundation.ShipDef.WraithCruiser.fMaxWarp = 2.03
 Foundation.ShipDef.WraithCruiser.fCruiseWarp = 1.95
+
+Foundation.ShipDef.WraithCruiser.shutLauncherShields = -2
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

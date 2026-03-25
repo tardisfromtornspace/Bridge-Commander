@@ -46,6 +46,8 @@ Foundation.ShipDef.ActiveSupergate.dTechs = {
 Foundation.ShipDef.ActiveSupergate.fMaxWarp = 8.0
 Foundation.ShipDef.ActiveSupergate.fCruiseWarp = 1.0
 Foundation.ShipDef.ActiveSupergate.IsSGWorkingStargate = 1
+
+Foundation.ShipDef.ActiveSupergate.shutLauncherShields = -2
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

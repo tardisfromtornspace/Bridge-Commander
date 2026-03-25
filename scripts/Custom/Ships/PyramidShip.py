@@ -43,6 +43,8 @@ Foundation.ShipDef.PyramidShip.dTechs = {
 
 Foundation.ShipDef.PyramidShip.fMaxWarp = 2.1
 Foundation.ShipDef.PyramidShip.fCruiseWarp = 1.9
+
+Foundation.ShipDef.PyramidShip.shutLauncherShields = -2
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

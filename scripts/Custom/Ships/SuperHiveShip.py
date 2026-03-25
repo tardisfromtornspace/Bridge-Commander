@@ -49,6 +49,8 @@ Foundation.ShipDef.SuperHiveShip.dTechs = {
 
 Foundation.ShipDef.SuperHiveShip.fMaxWarp = 7.9
 Foundation.ShipDef.SuperHiveShip.fCruiseWarp = 7.9
+
+Foundation.ShipDef.SuperHiveShip.shutLauncherShields = -2
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

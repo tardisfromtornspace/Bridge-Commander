@@ -40,6 +40,8 @@ Foundation.ShipDef.PrometheusRefit.dTechs = {
 
 Foundation.ShipDef.PrometheusRefit.fMaxWarp = 6.0
 Foundation.ShipDef.PrometheusRefit.fCruiseWarp = 5.75
+
+Foundation.ShipDef.PrometheusRefit.shutLauncherShields = -2
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

@@ -47,6 +47,8 @@ Foundation.ShipDef.OriWarship.dTechs = {
 
 Foundation.ShipDef.OriWarship.fMaxWarp = 8.0
 Foundation.ShipDef.OriWarship.fCruiseWarp = 7.0
+
+Foundation.ShipDef.OriWarship.shutLauncherShields = -2
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

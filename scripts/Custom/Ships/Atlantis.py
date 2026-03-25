@@ -51,6 +51,11 @@ Foundation.ShipDef.Atlantis.fCruiseWarp = 2.25
 Foundation.ShipDef.Atlantis.IsSGWorkingStargate = 3
 Foundation.ShipDef.Atlantis.SGWorkingStargateRad = 0.17
 Foundation.ShipDef.Atlantis.SGWorkingStargateFlashRad = 0.08
+
+Foundation.ShipDef.Atlantis.shutLauncherShields = 452
+Foundation.ShipDef.Atlantis.felShutleLaunchShields = 452
+Foundation.ShipDef.Atlantis.shutLauncherMultifacet = 0
+Foundation.ShipDef.Atlantis.shuttleLaunchMultifacet = 0
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

@@ -44,6 +44,8 @@ Foundation.ShipDef.DSC304Odyssey.dTechs = {
 
 Foundation.ShipDef.DSC304Odyssey.fMaxWarp = 6.0
 Foundation.ShipDef.DSC304Odyssey.fCruiseWarp = 5.9
+
+Foundation.ShipDef.DSC304Odyssey.shutLauncherShields = -2
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

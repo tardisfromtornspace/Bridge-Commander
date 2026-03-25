@@ -6,7 +6,7 @@ def GetShipStats():
 		"FilenameHigh": "data/Models/Ships/destiny/destinymain.nif",
 		"FilenameMed": "data/Models/Ships/destiny/destinymain.nif",
 		"FilenameLow": "data/Models/Ships/destiny/destinymain.nif",
-		"Name": "Destiny Main weapon",
+		"Name": "DestinyMain",
 		"HardpointFile": "destinymain",
 		"Species": Multiplayer.SpeciesToShip.SOVEREIGN
 	 }

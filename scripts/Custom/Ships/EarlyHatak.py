@@ -44,6 +44,8 @@ Foundation.ShipDef.EarlyHatak.dTechs = {
 
 Foundation.ShipDef.EarlyHatak.fMaxWarp = 2.1
 Foundation.ShipDef.EarlyHatak.fCruiseWarp = 1.9
+
+Foundation.ShipDef.EarlyHatak.shutLauncherShields = -2
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

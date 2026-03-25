@@ -1,4 +1,9 @@
 == Changelog ==
+1.3.1 -
+   Updates:
+   * Added scripts/Custom/Autoload/TWEAK-ShuttleFrameworkDropShields version 20260325 which makes shield drop conditional to several factors.
+   * Updated Destiny Main Weapon ship and hardpoint files to give it shuttle support like the regular Destiny.
+   * Updated 36 vessels which have carrier scripts (amongst them Anubis Flagship, Goa'uld Ha'taks, Pyramid Ship, X303's, BC304's, Ori Warship, Ori Supergate and Wraith Cruisers and Hive Ships) to reflect this. Now you can safely launch shuttles from these without the shields needing to go down!
 1.3.0 -
    Fixes:
    * Updated TWEAK-NanoFXExpFX20240830 to version 1.1, now it should also fix certain death explosions and collision effects.

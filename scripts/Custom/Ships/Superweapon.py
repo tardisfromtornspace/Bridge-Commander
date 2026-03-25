@@ -47,6 +47,7 @@ Foundation.ShipDef.Superweapon.fMaxWarp = 2.35
 Foundation.ShipDef.Superweapon.fCruiseWarp = 2.25
 
 Foundation.ShipDef.Superweapon.bPlanetKiller = 1
+Foundation.ShipDef.Superweapon.shutLauncherShields = -2
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

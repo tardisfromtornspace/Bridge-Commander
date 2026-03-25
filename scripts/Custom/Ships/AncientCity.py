@@ -50,6 +50,11 @@ Foundation.ShipDef.AncientCity.fCruiseWarp = 2.25
 Foundation.ShipDef.AncientCity.IsSGWorkingStargate = 3
 Foundation.ShipDef.AncientCity.SGWorkingStargateRad = 0.17
 Foundation.ShipDef.AncientCity.SGWorkingStargateFlashRad = 0.08
+
+Foundation.ShipDef.AncientCity.shutLauncherShields = 452
+Foundation.ShipDef.AncientCity.felShutleLaunchShields = 452
+Foundation.ShipDef.AncientCity.shutLauncherMultifacet = 0
+Foundation.ShipDef.AncientCity.shuttleLaunchMultifacet = 0
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

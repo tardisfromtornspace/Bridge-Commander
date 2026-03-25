@@ -43,6 +43,8 @@ Foundation.ShipDef.ApophisFlagship.dTechs = {
 
 Foundation.ShipDef.ApophisFlagship.fMaxWarp = 2.25
 Foundation.ShipDef.ApophisFlagship.fCruiseWarp = 2.25
+
+Foundation.ShipDef.ApophisFlagship.shutLauncherShields = -2
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

@@ -53,6 +53,8 @@ Foundation.ShipDef.DSC304DaedalusRefitS.dTechs = {
 
 Foundation.ShipDef.DSC304DaedalusRefitS.fMaxWarp = 6.5
 Foundation.ShipDef.DSC304DaedalusRefitS.fCruiseWarp = 6.25
+
+Foundation.ShipDef.DSC304DaedalusRefitS.shutLauncherShields = -2
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

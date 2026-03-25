@@ -44,6 +44,8 @@ Foundation.ShipDef.DSC304Korolev.dTechs = {
 
 Foundation.ShipDef.DSC304Korolev.fMaxWarp = 6.0
 Foundation.ShipDef.DSC304Korolev.fCruiseWarp = 6.0
+
+Foundation.ShipDef.DSC304Korolev.shutLauncherShields = -2
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

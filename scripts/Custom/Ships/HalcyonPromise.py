@@ -24,6 +24,7 @@ Foundation.ShipDef.HalcyonPromise.dTechs = {
 	'Fed Ablative Armor': { "Plates": ["Armour"]
 }}
 Foundation.ShipDef.HalcyonPromise.bPlanetKiller = 1
+Foundation.ShipDef.HalcyonPromise.shutLauncherShields = -2
 
 Foundation.ShipDef.HalcyonPromise.desc = "The Halcyon promise was Tri-Jema's Triumvir Heavy Cruiser. Not much info is known about this class, only that it clearly presents some degree of threat to a Glorious Heritage Class ship, and that it has a similar size, and that is unwieldy enough that it cannot successfully navigate the Gordian Maze, which caused the destruction of this ship."
 

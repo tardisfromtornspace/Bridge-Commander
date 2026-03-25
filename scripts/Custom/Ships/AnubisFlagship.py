@@ -45,6 +45,8 @@ Foundation.ShipDef.AnubisFlagship.dTechs = {
 
 Foundation.ShipDef.AnubisFlagship.fMaxWarp = 2.35
 Foundation.ShipDef.AnubisFlagship.fCruiseWarp = 2.25
+
+Foundation.ShipDef.AnubisFlagship.shutLauncherShields = -2
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

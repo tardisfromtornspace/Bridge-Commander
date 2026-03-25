@@ -1,4 +1,7 @@
 ==Changelog==
+1.2.3 -
+   Updates:
+   * Added scripts/Custom/Autoload/TWEAK-ShuttleFrameworkDropShields version 20260325 which makes shield drop conditional to several factors.
 1.2.2 -
    Updates:
    * Updated SimulatedPointDefence to 1.0 to allow cleaner logic and cleanup.

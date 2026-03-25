@@ -45,6 +45,8 @@ Foundation.ShipDef.Destinymain.dTechs = {
 
 Foundation.ShipDef.Destinymain.fMaxWarp = 7.0
 Foundation.ShipDef.Destinymain.fCruiseWarp = 7.0
+
+Foundation.ShipDef.Destinymain.shutLauncherShields = -2
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

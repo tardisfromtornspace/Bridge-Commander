@@ -1,4 +1,8 @@
 == Changelog ==
+1.1.8 -
+   Updates:
+   * Added scripts/Custom/Autoload/TWEAK-ShuttleFrameworkDropShields version 20260325 which makes shield drop conditional to several factors.
+   * Updated Atlantis and AncientCity to reflect this.
 1.1.7 -
    Fixes:
    * Updated FIX-DS9FXbelow1dot2 to be a bit more agnostic towards the actual value of SpeciesToTorp.PHASEDPLASMA

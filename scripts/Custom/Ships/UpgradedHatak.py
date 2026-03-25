@@ -43,6 +43,8 @@ Foundation.ShipDef.UpgradedHatak.dTechs = {
 
 Foundation.ShipDef.UpgradedHatak.fMaxWarp = 2.35
 Foundation.ShipDef.UpgradedHatak.fCruiseWarp = 2.25
+
+Foundation.ShipDef.UpgradedHatak.shutLauncherShields = -2
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

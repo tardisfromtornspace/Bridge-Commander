@@ -54,6 +54,8 @@ Foundation.ShipDef.DSC304ApolloRefitS.dTechs = {
 
 Foundation.ShipDef.DSC304ApolloRefitS.fMaxWarp = 6.5
 Foundation.ShipDef.DSC304ApolloRefitS.fCruiseWarp = 6.25
+
+Foundation.ShipDef.DSC304ApolloRefitS.shutLauncherShields = -2
 #                                                                                     #
 #######################################################################################
 #                                                                                     #

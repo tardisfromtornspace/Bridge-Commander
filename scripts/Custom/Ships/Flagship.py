@@ -41,6 +41,9 @@ Foundation.ShipDef.Flagship.dTechs = {
 
 Foundation.ShipDef.Flagship.fMaxWarp = 2.25
 Foundation.ShipDef.Flagship.fCruiseWarp = 2.25
+
+Foundation.ShipDef.Flagship.shutLauncherShields = -2
+
 #                                                                                     #
 # Com-man's note: Of course you need to remove the 'name': longname here too for it   #
 # to work.              						                          #
