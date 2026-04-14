@@ -3271,7 +3271,7 @@ def RemoveInstanceHandlers():
 	
 	# Remove instance handlers for Saffi
 	pSaffi = App.CharacterClass_GetObject(App.g_kSetManager.GetSet("bridge"), "XO")
-	if (pKiska != None):
+	if (pSaffi != None):
 		pSaffiMenu = pSaffi.GetMenu()
 		if (pSaffiMenu != None):
 			pSaffiMenu.RemoveHandlerForInstance(App.ET_COMMUNICATE,	__name__ + ".CommunicateHandler")
