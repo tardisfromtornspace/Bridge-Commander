@@ -3073,14 +3073,14 @@ def CommunicateData(pObject, pEvent):
 		return
 
 #	DebugPrint("Brex Communicating...")
-	pBrex = Bridge.BridgeUtils.GetBridgeCharacter("Engineer")
+	pData = Bridge.BridgeUtils.GetBridgeCharacter("Data")
 
 	pSeq = MissionLib.NewDialogueSequence()
 
 	if g_iMissionProgress == MISSION_BRANCH:
-		pSeq.AppendAction(Bridge.BridgeUtils.MakeCharacterLine(pBrex, "E4M6CommData1", g_pMissionDatabase))
+		pSeq.AppendAction(Bridge.BridgeUtils.MakeCharacterLine(pData, "E4M6CommData1", g_pMissionDatabase))
 	elif g_iMissionProgress == INTERCEPTED_COMM:
-		pSeq.AppendAction(Bridge.BridgeUtils.MakeCharacterLine(pBrex, "E4M6CommData2", g_pMissionDatabase))
+		pSeq.AppendAction(Bridge.BridgeUtils.MakeCharacterLine(pData, "E4M6CommData2", g_pMissionDatabase))
 	else:
 		pSeq.Completed()
 		pObject.CallNextHandler(pEvent)
