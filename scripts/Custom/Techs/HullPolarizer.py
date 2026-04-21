@@ -1,6 +1,6 @@
 # THIS MOD IS NOT SUPPORTED BY ACTIVISION
 # HullPolarizer.py
-# Version 1.36
+# Version 1.365
 # By Alex SL Gato
 # Based on FedAblativeArmour.py and AblativeArmour.py made by the FoundationTechnologies team (specifically, but not only, MLeo) and scripts/Custom/DS9FX/DS9FXLifeSupport/HandleShields.py by USS Sovereign
 from bcdebug import debug
@@ -10,7 +10,7 @@ import Foundation
 
 MODINFO = {
 		"Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-		"Version": "1.36",
+		"Version": "1.365",
 		"License": "LGPL",
 		"Description": "Read the small title above for more info"
 	}
@@ -40,14 +40,22 @@ class PolarizedHullPlatingDef(FoundationTech.TechDef):
 			return
 		# saved stuff
 		fixedAmount = None
-		maxEffec = 1.0
-		minEffec = 0.0
+		maxEffec = 0.0
+		minEffec = 1.0
 		if pInstance.__dict__[self.name].has_key("Fixed"):
 			fixedAmount = pInstance.__dict__[self.name]["Fixed"]
 		if pInstance.__dict__[self.name].has_key("minEffec"):
-			minEffec = pInstance.__dict__[self.name]["minEffec"]
+			minEffec = 1 - pInstance.__dict__[self.name]["minEffec"]
+			if minEffec < 0:
+				minEffec = 0
+			elif minEffec > 1:
+				minEffec = 1	
 		if pInstance.__dict__[self.name].has_key("maxEffec"):
-			maxEffec = pInstance.__dict__[self.name]["maxEffec"]
+			maxEffec = 1 - pInstance.__dict__[self.name]["maxEffec"]
+			if maxEffec < 0:
+				maxEffec = 0
+			elif maxEffec > 1:
+				maxEffec = 1
 		if not pInstance.__dict__[self.name].has_key("Incremental"):
 			pInstance.__dict__[self.name]["Incremental"] = 0
 		if not pInstance.__dict__[self.name].has_key("PlatePosMatters"):
@@ -57,8 +65,8 @@ class PolarizedHullPlatingDef(FoundationTech.TechDef):
 		if not pInstance.__dict__[self.name]["Ships"].has_key(pShip.GetObjID()):
 			pInstance.__dict__[self.name]["Ships"][pShip.GetObjID()] = {}
 
-                incremental = pInstance.__dict__[self.name]["Incremental"]
-                placePosMatters = pInstance.__dict__[self.name]["PlatePosMatters"]
+		incremental = pInstance.__dict__[self.name]["Incremental"]
+		placePosMatters = pInstance.__dict__[self.name]["PlatePosMatters"]
 		dOldConditions = pInstance.__dict__[self.name]["Ships"][pShip.GetObjID()]
 		
 		# armor plate names
@@ -170,7 +178,7 @@ class PolarizedHullPlatingDef(FoundationTech.TechDef):
 		if not pEvent.IsHullHit():
 			return
 
-		if fDamage <= 0.0: # If it heals us or does nothing, do not prevent the hull polarizer from healing, just store damage values
+		if fDamage <= 0.0 or platingEffect <= 0: # If it heals us or does nothing, do not prevent the hull polarizer from healing, just store damage values
 			for pSystem in lSystems:
 				dOldConditions[pSystem.GetName()] = pSystem.GetConditionPercentage()
 			return
@@ -218,33 +226,52 @@ class PolarizedHullPlatingDef(FoundationTech.TechDef):
 			dOldConditions[pProtectingPlate.GetName()] = pProcPlateCP
 
 		if (fixedAmount is None):
-			polarizerEffectiveness = (1-pProcPlateCP) * energyCommited
-		else:
-			polarizerEffectiveness = fixedAmount
-
-		if polarizerEffectiveness > maxEffec:
-			polarizerEffectiveness = maxEffec
-
-		if polarizerEffectiveness < minEffec:
-			polarizerEffectiveness = minEffec		
-
-		if (fixedAmount is None):
 			inversePlateCondition = 1-pProcPlateCP
 		else:
 			inversePlateCondition = 1
 
+		if (fixedAmount is None):
+			#TO-DO original piece of code: polarizerEffectiveness = (1-pProcPlateCP) * energyCommited
+			if ((platingEffect * 0.999) <= 1):
+				polarizerEffectiveness = (1 - (platingEffect * 0.999))
+			else:
+				polarizerEffectiveness = 1/(platingEffect * 0.999)
+			polarizerEffectiveness = polarizerEffectiveness * inversePlateCondition
+		else:
+			polarizerEffectiveness = fixedAmount
+
+		if polarizerEffectiveness < maxEffec:
+			polarizerEffectiveness = maxEffec
+
+		if polarizerEffectiveness > minEffec:
+			polarizerEffectiveness = minEffec		
+
 		lenTotalAffectedSystems = bPlateAtRange + len(lAffectedSystems)
-		genericDamageReduction = 0
+		genericDamageReduction = 0 # Misleading name, this is the damage done
 		if lenTotalAffectedSystems > 0:
 			#TO-DO genericDamageReduction = 1.5 * inversePlateCondition * polarizerEffectiveness * fAllocatedFactor / lenTotalAffectedSystems
-			genericDamageReduction = 1.5 * (fDamage * inversePlateCondition * polarizerEffectiveness * fAllocatedFactor / lenTotalAffectedSystems)
+			#genericDamageReduction = 1.5 * (fDamage * inversePlateCondition * polarizerEffectiveness * fAllocatedFactor / lenTotalAffectedSystems)
+			genericDamageReduction = 1 * (fDamage * polarizerEffectiveness * fAllocatedFactor / lenTotalAffectedSystems)
 
 		for pSystem in lAffectedSystems:
 			if not dOldConditions.has_key(pSystem.GetName()):
 				dOldConditions[pSystem.GetName()] = 1.0
 
+			fsysMaxCondition = pSystem.GetMaxCondition()
+
+			if fsysMaxCondition <= 0:
+				continue
+
+			fcurrentCondition = pSystem.GetConditionPercentage()
+			minAdminsible = (fDamage / fsysMaxCondition)
+
 			if dOldConditions[pSystem.GetName()] < pSystem.GetConditionPercentage():
 				dOldConditions[pSystem.GetName()] = pSystem.GetConditionPercentage()
+			elif minAdminsible > 0 and (dOldConditions[pSystem.GetName()] - (1.04 * fAllocatedFactor/lenTotalAffectedSystems )) > fcurrentCondition: ## Very dirty roundabout way to prevent insta-heal after explosions and collisions
+				postExplodeCondition = fcurrentCondition + (minAdminsible * fAllocatedFactor/lenTotalAffectedSystems)
+				if postExplodeCondition > 1:
+					postExplodeCondition = 1
+				dOldConditions[pSystem.GetName()] = postExplodeCondition
 					
 			fOldCondition = dOldConditions[pSystem.GetName()]
 			if fOldCondition > 0.0:
@@ -286,7 +313,7 @@ class PolarizedHullPlatingDef(FoundationTech.TechDef):
 					fNewCondition = fOldCondition - (genericDamageReduction / pSystem.GetMaxCondition())
 					## TO-DO TEST LINES
 
-					minAdminsible = (fDamage / pSystem.GetMaxCondition())
+					#TO-DO minAdminsible = (fDamage / pSystem.GetMaxCondition())
 					if fNewCondition > (fOldCondition + minAdminsible):
 						fNewCondition = fOldCondition
 
@@ -303,7 +330,7 @@ class PolarizedHullPlatingDef(FoundationTech.TechDef):
 				pSystem.SetConditionPercentage(fNewCondition)
 				dOldConditions[pSystem.GetName()] = fNewCondition
 
-		if bPlateAtRange == 0 and len(lAffectedSystems) > 0:
+		if bPlateAtRange == 0 and len(lAffectedSystems) > 0 and (not noAvailablePlate):
 			fOldCondition2 = dOldConditions[pProtectingPlate.GetName()]
 			#fDiff2 = 1 - fOldCondition2 + fDamage / pProtectingPlate.GetMaxCondition()
 			fDiff2 = fDamage / pProtectingPlate.GetMaxCondition()
