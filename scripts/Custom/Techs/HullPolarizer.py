@@ -1,6 +1,6 @@
 # THIS MOD IS NOT SUPPORTED BY ACTIVISION
 # HullPolarizer.py
-# Version 1.32
+# Version 1.36
 # By Alex SL Gato
 # Based on FedAblativeArmour.py and AblativeArmour.py made by the FoundationTechnologies team (specifically, but not only, MLeo) and scripts/Custom/DS9FX/DS9FXLifeSupport/HandleShields.py by USS Sovereign
 from bcdebug import debug
@@ -10,7 +10,7 @@ import Foundation
 
 MODINFO = {
 		"Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-		"Version": "1.35",
+		"Version": "1.36",
 		"License": "LGPL",
 		"Description": "Read the small title above for more info"
 	}
@@ -194,6 +194,10 @@ class PolarizedHullPlatingDef(FoundationTech.TechDef):
 					lAffectedSystems.append(pSystem)
 				else:
 					dOldConditions[pSystem.GetName()] = pSystem.GetConditionPercentage()
+
+		pHull=pShip.GetHull()
+		if (pHull != None and (not pHull.IsTargetable()) and (not (pHull.GetName() in lArmorNames))):
+			lAffectedSystems.append(pHull)
 		
 		# calculate the damage per radius
 		fAllocatedFactor = 0
@@ -202,7 +206,6 @@ class PolarizedHullPlatingDef(FoundationTech.TechDef):
 			fAllocatedFactor = -1 * kProtectingPlateRad + fOffSet
 			if fAllocatedFactor < 0:
 				fAllocatedFactor = 0
-
 		else:
 			fAllocatedFactor = 1
 
@@ -233,7 +236,8 @@ class PolarizedHullPlatingDef(FoundationTech.TechDef):
 		lenTotalAffectedSystems = bPlateAtRange + len(lAffectedSystems)
 		genericDamageReduction = 0
 		if lenTotalAffectedSystems > 0:
-			genericDamageReduction = 1.5 * inversePlateCondition * polarizerEffectiveness * fAllocatedFactor / lenTotalAffectedSystems
+			#TO-DO genericDamageReduction = 1.5 * inversePlateCondition * polarizerEffectiveness * fAllocatedFactor / lenTotalAffectedSystems
+			genericDamageReduction = 1.5 * (fDamage * inversePlateCondition * polarizerEffectiveness * fAllocatedFactor / lenTotalAffectedSystems)
 
 		for pSystem in lAffectedSystems:
 			if not dOldConditions.has_key(pSystem.GetName()):
@@ -245,14 +249,54 @@ class PolarizedHullPlatingDef(FoundationTech.TechDef):
 			fOldCondition = dOldConditions[pSystem.GetName()]
 			if fOldCondition > 0.0:
 				if not pProtectingPlate.IsDisabled() and not pSystem.GetName() == pProtectingPlate.GetName():
+					"""
+					## TO-DO ORIGINAL KINDA CODE
 					fDiff = 1 - fOldCondition + (fDamage / pSystem.GetMaxCondition()) # Percentage of total health damaged before + percentage of the new damage = current
 					# some of these calcs could be done outside the loop
 					fNewCondition = fOldCondition - (fDiff * genericDamageReduction)
 
-					if fNewCondition > (fOldCondition + (fDamage / pSystem.GetMaxCondition())):
+
+					################33
+					## TO-DO "THINK" CODE
+					# Damage received is:
+					perceivedDamage = (fDamage / pSystem.GetMaxCondition()) / lenTotalAffectedSystems
+						# THAT IS EQUAL TO
+					perceivedDamage = (fDamage / lenTotalAffectedSystems / pSystem.GetMaxCondition()
+					# the "new" condition we are in would be then
+					fNewCondition = fOldCondition - perceivedDamage
+
+					# THE "alternative new" "reduced" damage condition would be something like:
+					fNewCondition = fOldCondition - (perceivedDamage * genericDamageReduction))
+
+					# Then the armour resistance would be like
+					fNewCondition = fOldCondition - ((fDamage / lenTotalAffectedSystems / pSystem.GetMaxCondition()) * genericDamageReduction)
+						# THAT IS EQUAL TO					
+					fNewCondition = fOldCondition - ((fDamage * genericDamageReduction / lenTotalAffectedSystems) / pSystem.GetMaxCondition())
+						# THAT IS EQUAL TO
+					fNewCondition = fOldCondition - ((fDamage * genericDamageReduction / lenTotalAffectedSystems) / pSystem.GetMaxCondition())
+						# THAT IS EQUAL TO	
+					fNewCondition = fOldCondition - ((fDamage * inversePlateCondition * polarizerEffectiveness / lenTotalAffectedSystems) / pSystem.GetMaxCondition())
+				
+
+					fDiff = fOldCondition - ((fDamage / pSystem.GetMaxCondition())/ lenTotalAffectedSystems)
+
+					#################33
+					"""
+					## TO-DO TEST LINES
+					fNewCondition = fOldCondition - (genericDamageReduction / pSystem.GetMaxCondition())
+					## TO-DO TEST LINES
+
+					minAdminsible = (fDamage / pSystem.GetMaxCondition())
+					if fNewCondition > (fOldCondition + minAdminsible):
 						fNewCondition = fOldCondition
+
+					minAdmisible = (fOldCondition - minAdminsible)
+					if fNewCondition < minAdmisible:
+						fNewCondition = minAdmisible
+
 					if fNewCondition > 1.0:
 						fNewCondition = 1.0
+
 				elif pProtectingPlate.IsDisabled():
 					fNewCondition = pSystem.GetConditionPercentage()
 
