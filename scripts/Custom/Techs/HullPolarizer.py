@@ -10,7 +10,7 @@ import Foundation
 
 MODINFO = {
 		"Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-		"Version": "1.32",
+		"Version": "1.35",
 		"License": "LGPL",
 		"Description": "Read the small title above for more info"
 	}
@@ -39,6 +39,15 @@ class PolarizedHullPlatingDef(FoundationTech.TechDef):
 			print "Polarized Hull Plating Error: No plates found"
 			return
 		# saved stuff
+		fixedAmount = None
+		maxEffec = 1.0
+		minEffec = 0.0
+		if pInstance.__dict__[self.name].has_key("Fixed"):
+			fixedAmount = pInstance.__dict__[self.name]["Fixed"]
+		if pInstance.__dict__[self.name].has_key("minEffec"):
+			minEffec = pInstance.__dict__[self.name]["minEffec"]
+		if pInstance.__dict__[self.name].has_key("maxEffec"):
+			maxEffec = pInstance.__dict__[self.name]["maxEffec"]
 		if not pInstance.__dict__[self.name].has_key("Incremental"):
 			pInstance.__dict__[self.name]["Incremental"] = 0
 		if not pInstance.__dict__[self.name].has_key("PlatePosMatters"):
@@ -129,6 +138,8 @@ class PolarizedHullPlatingDef(FoundationTech.TechDef):
 
 			if (not incremental):
 				return
+			else:
+				placePosMatters = 0
 
 		pShields = pShip.GetShields()
 		energyCommited = 1.0
@@ -144,15 +155,16 @@ class PolarizedHullPlatingDef(FoundationTech.TechDef):
 		except:
 			return
 
-		damageRadiVal = 1 - 0.85 * platingEffect
-		if damageRadiVal < 0.0:
-			damageRadiVal = 0
-		damageStreVal = 1 - 0.75 * platingEffect
-		if damageStreVal < 0.0:
-			damageStreVal = 0
+		if not noAvailablePlate:
+			damageRadiVal = 1 - 0.85 * platingEffect
+			if damageRadiVal < 0.0:
+				damageRadiVal = 0
+			damageStreVal = 1 - 0.75 * platingEffect
+			if damageStreVal < 0.0:
+				damageStreVal = 0
 
-		pShip.SetVisibleDamageRadiusModifier(damageRadiVal)
-		pShip.SetVisibleDamageStrengthModifier(damageStreVal)
+			pShip.SetVisibleDamageRadiusModifier(damageRadiVal)
+			pShip.SetVisibleDamageStrengthModifier(damageStreVal)
 
 		# if this was not a hull hit, do nothing
 		if not pEvent.IsHullHit():
@@ -196,13 +208,28 @@ class PolarizedHullPlatingDef(FoundationTech.TechDef):
 
 		# now reallocate the damage
 
-		polarizerEffectiveness = (1-pProtectingPlate.GetConditionPercentage()) * energyCommited
-		if polarizerEffectiveness > 1.0:
-			polarizerEffectiveness = 1.0
+		if noAvailablePlate:
+			pProcPlateCP = 0
+		else:
+			pProcPlateCP = pProtectingPlate.GetConditionPercentage()
+			dOldConditions[pProtectingPlate.GetName()] = pProcPlateCP
 
-		dOldConditions[pProtectingPlate.GetName()] = pProtectingPlate.GetConditionPercentage()
+		if (fixedAmount is None):
+			polarizerEffectiveness = (1-pProcPlateCP) * energyCommited
+		else:
+			polarizerEffectiveness = fixedAmount
 
-		inversePlateCondition = 1-pProtectingPlate.GetConditionPercentage()
+		if polarizerEffectiveness > maxEffec:
+			polarizerEffectiveness = maxEffec
+
+		if polarizerEffectiveness < minEffec:
+			polarizerEffectiveness = minEffec		
+
+		if (fixedAmount is None):
+			inversePlateCondition = 1-pProcPlateCP
+		else:
+			inversePlateCondition = 1
+
 		lenTotalAffectedSystems = bPlateAtRange + len(lAffectedSystems)
 		genericDamageReduction = 0
 		if lenTotalAffectedSystems > 0:

@@ -1,4 +1,9 @@
 ==Changelog==
+1.8.1 -
+   Updates:
+   * Updated HullPolarizer to 1.35 to provide better options when simulating Policrystalline armour.
+   * Tweaked Minbari Sharlin and Minbari Nial techs and hardpoints slightly to reflect the "Hull Polarizer" update.
+   * Improved Babylon 5 Station hardpoint to include Command and Control defenses, two Plasma Guns, and mentions to each sector (except Grey Sector).
 1.8.0 -
    Updates:
    * Added scripts/Custom/Autoload/TWEAK-ShuttleFrameworkDropShields version 20260325 which makes shield drop conditional to several factors.

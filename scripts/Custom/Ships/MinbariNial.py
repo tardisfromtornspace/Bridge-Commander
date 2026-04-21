@@ -30,7 +30,7 @@ Foundation.ShipDef.MinbariNial.dTechs = {
 			"Sensor": 520,
         	}  
 	},
-	'Polarized Hull Plating': { "Plates": ["PolyCrystalline Armour"]},
+	'Polarized Hull Plating': { "Plates": ["PolyCrystalline Armour"], "Incremental": 1},
 	'Simulated Point Defence' : { "Distance": 10.0, "InnerDistance": 3.0, "Effectiveness": 0.8, "LimitTurn": 4.5, "LimitSpeed": 71, "LimitDamage": "-150", "Period": 0.4, "MaxNumberTorps": 2, "Phaser": {"Priority": 1}},
 	"Tachyon Sensors": 0.5
 }
