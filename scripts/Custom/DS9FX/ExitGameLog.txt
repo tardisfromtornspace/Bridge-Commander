@@ -1,0 +1,2016 @@
+##### Bridge Commander Exit Log: 22 Apr 2026 15:32:48#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Custom.Autoload.FIX-EngineerCharacterHandlers : Patched your  Bridge.EngineerCharacterHandlers  to cover 0-shield-strength ships
+Updated FoundationTech.ShipInstance's DefendVS* Fixes
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version  20260222 )
+Custom.Autoload.TWEAK-ShuttleFrameworkDropShields  tweaked Shuttle Launch Framework LaunchShip conditions.
+Patched TacticalControlInterfaces.CycleCameraMode to add mode viewing modes
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+data/TGL/Maelstrom/Episode 8/E8M2.tgl E8M2MatanDefeated05
+Trying to clean memory
+
+
+
+
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+
+
+
+
+TO-DO detected weird case:  1.0  -  0.0113885328174  vs  0.967148423195
+TO-DO detected weird case:  0.978084027767  -  0.00990273896605  vs  0.950618505478
+TO-DO detected weird case:  1.0  -  0.00990273896605  vs  0.971434414387
+
+
+TO-DO detected weird case:  1.0  -  0.0649999976158  vs  0.75
+TO-DO detected weird case:  1.0  -  0.072222225368  vs  0.722222208977
+TO-DO detected weird case:  1.0  -  0.0812499970198  vs  0.6875
+TO-DO detected weird case:  0.810323894024  -  0.0866666659713  vs  0.560323894024
+TO-DO detected weird case:  0.789248764515  -  0.0962963029742  vs  0.51330435276
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 22 Apr 2026 15:32:48#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Custom.Autoload.FIX-EngineerCharacterHandlers : Patched your  Bridge.EngineerCharacterHandlers  to cover 0-shield-strength ships
+Updated FoundationTech.ShipInstance's DefendVS* Fixes
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version  20260222 )
+Custom.Autoload.TWEAK-ShuttleFrameworkDropShields  tweaked Shuttle Launch Framework LaunchShip conditions.
+Patched TacticalControlInterfaces.CycleCameraMode to add mode viewing modes
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+data/TGL/Maelstrom/Episode 8/E8M2.tgl E8M2MatanDefeated05
+Trying to clean memory
+
+
+
+
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+
+
+
+
+TO-DO detected weird case:  1.0  -  0.0113885328174  vs  0.967148423195
+TO-DO detected weird case:  0.978084027767  -  0.00990273896605  vs  0.950618505478
+TO-DO detected weird case:  1.0  -  0.00990273896605  vs  0.971434414387
+
+
+TO-DO detected weird case:  1.0  -  0.0649999976158  vs  0.75
+TO-DO detected weird case:  1.0  -  0.072222225368  vs  0.722222208977
+TO-DO detected weird case:  1.0  -  0.0812499970198  vs  0.6875
+TO-DO detected weird case:  0.810323894024  -  0.0866666659713  vs  0.560323894024
+TO-DO detected weird case:  0.789248764515  -  0.0962963029742  vs  0.51330435276
+
+# DS9FX has...
+
+# taken a console dump
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 22 Apr 2026 15:43:28#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Custom.Autoload.FIX-EngineerCharacterHandlers : Patched your  Bridge.EngineerCharacterHandlers  to cover 0-shield-strength ships
+Updated FoundationTech.ShipInstance's DefendVS* Fixes
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version  20260222 )
+Custom.Autoload.TWEAK-ShuttleFrameworkDropShields  tweaked Shuttle Launch Framework LaunchShip conditions.
+Patched TacticalControlInterfaces.CycleCameraMode to add mode viewing modes
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+
+
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+
+
+
+
+
+
+
+
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 22 Apr 2026 15:43:28#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Custom.Autoload.FIX-EngineerCharacterHandlers : Patched your  Bridge.EngineerCharacterHandlers  to cover 0-shield-strength ships
+Updated FoundationTech.ShipInstance's DefendVS* Fixes
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version  20260222 )
+Custom.Autoload.TWEAK-ShuttleFrameworkDropShields  tweaked Shuttle Launch Framework LaunchShip conditions.
+Patched TacticalControlInterfaces.CycleCameraMode to add mode viewing modes
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+
+
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+
+
+
+
+
+
+
+
+
+# DS9FX has...
+
+# taken a console dump
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 22 Apr 2026 19:01:52#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Custom.Autoload.FIX-EngineerCharacterHandlers : Patched your  Bridge.EngineerCharacterHandlers  to cover 0-shield-strength ships
+Updated FoundationTech.ShipInstance's DefendVS* Fixes
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version  20260222 )
+Custom.Autoload.TWEAK-ShuttleFrameworkDropShields  tweaked Shuttle Launch Framework LaunchShip conditions.
+Patched TacticalControlInterfaces.CycleCameraMode to add mode viewing modes
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+TO-DO case: fDamage is  77.4980163574  fRadius is  1.1999989748  Compare  1.0  -  0.0387490093708  vs  0.961250960827 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.999031245708
+TO-DO case: fDamage is  77.4980163574  fRadius is  1.1999989748  Compare  1.0  -  0.0258326716721  vs  0.974167346954 pSystem is Neutron Pulse 1
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 1  to status  0.999354183674
+TO-DO case: fDamage is  77.4980163574  fRadius is  1.1999989748  Compare  1.0  -  0.0258326716721  vs  0.974167346954 pSystem is Neutron Pulse 2
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 2  to status  0.999354183674
+TO-DO case: fDamage is  155.964050293  fRadius is  1.1999989748  Compare  0.999031245708  -  0.0779820233583  vs  0.921577274799 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.994922161102
+TO-DO case: fDamage is  155.964050293  fRadius is  1.1999989748  Compare  0.999354183674  -  0.051988016814  vs  0.948011934757 pSystem is Neutron Pulse 1
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 1  to status  0.996614813805
+TO-DO case: fDamage is  155.964050293  fRadius is  1.1999989748  Compare  0.999354183674  -  0.051988016814  vs  0.948011934757 pSystem is Neutron Pulse 2
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 2  to status  0.996614813805
+TO-DO case: fDamage is  167.753509521  fRadius is  1.1999989748  Compare  0.994922161102  -  0.0838767513633  vs  0.911441385746 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.985861361027
+TO-DO case: fDamage is  167.753509521  fRadius is  1.1999989748  Compare  0.92429125309  -  0.0559178367257  vs  0.869957447052 pSystem is GFBeam3
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  GFBeam3  to status  0.918250739574
+TO-DO case: fDamage is  167.753509521  fRadius is  1.1999989748  Compare  0.996614813805  -  0.0559178367257  vs  0.942281007767 pSystem is Neutron Pulse 1
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 1  to status  0.990574300289
+TO-DO case: fDamage is  167.753509521  fRadius is  1.1999989748  Compare  0.996614813805  -  0.0559178367257  vs  0.942281007767 pSystem is Neutron Pulse 2
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 2  to status  0.990574300289
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+# DS9FX has...
+
+# taken a console dump
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+TO-DO case: fDamage is  91.3688354492  fRadius is  1.1999989748  Compare  1.0  -  0.0456844195724  vs  0.954315543175 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.998857915401
+TO-DO case: fDamage is  91.3688354492  fRadius is  1.1999989748  Compare  1.0  -  0.0304562784731  vs  0.96954369545 pSystem is Neutron Pulse 1
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 1  to status  0.999238610268
+TO-DO case: fDamage is  91.3688354492  fRadius is  1.1999989748  Compare  1.0  -  0.0304562784731  vs  0.96954369545 pSystem is Neutron Pulse 2
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 2  to status  0.999238610268
+TO-DO case: fDamage is  152.138046265  fRadius is  1.1999989748  Compare  0.998857915401  -  0.0760690197349  vs  0.923316895962 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.994452118874
+TO-DO case: fDamage is  152.138046265  fRadius is  1.1999989748  Compare  0.999238610268  -  0.0507126823068  vs  0.949287354946 pSystem is Neutron Pulse 1
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 1  to status  0.996301412582
+TO-DO case: fDamage is  152.138046265  fRadius is  1.1999989748  Compare  0.999238610268  -  0.0507126823068  vs  0.949287354946 pSystem is Neutron Pulse 2
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 2  to status  0.996301412582
+TO-DO case: fDamage is  154.808868408  fRadius is  1.1999989748  Compare  0.994452118874  -  0.0774044319987  vs  0.917245745659 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.983925461769
+TO-DO case: fDamage is  154.808868408  fRadius is  1.1999989748  Compare  0.996301412582  -  0.0516029559076  vs  0.945490479469 pSystem is Neutron Pulse 1
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 1  to status  0.989283680916
+TO-DO case: fDamage is  154.808868408  fRadius is  1.1999989748  Compare  0.996301412582  -  0.0516029559076  vs  0.945490479469 pSystem is Neutron Pulse 2
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 2  to status  0.989283680916
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 22 Apr 2026 19:01:52#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Custom.Autoload.FIX-EngineerCharacterHandlers : Patched your  Bridge.EngineerCharacterHandlers  to cover 0-shield-strength ships
+Updated FoundationTech.ShipInstance's DefendVS* Fixes
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version  20260222 )
+Custom.Autoload.TWEAK-ShuttleFrameworkDropShields  tweaked Shuttle Launch Framework LaunchShip conditions.
+Patched TacticalControlInterfaces.CycleCameraMode to add mode viewing modes
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+TO-DO case: fDamage is  77.4980163574  fRadius is  1.1999989748  Compare  1.0  -  0.0387490093708  vs  0.961250960827 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.999031245708
+TO-DO case: fDamage is  77.4980163574  fRadius is  1.1999989748  Compare  1.0  -  0.0258326716721  vs  0.974167346954 pSystem is Neutron Pulse 1
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 1  to status  0.999354183674
+TO-DO case: fDamage is  77.4980163574  fRadius is  1.1999989748  Compare  1.0  -  0.0258326716721  vs  0.974167346954 pSystem is Neutron Pulse 2
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 2  to status  0.999354183674
+TO-DO case: fDamage is  155.964050293  fRadius is  1.1999989748  Compare  0.999031245708  -  0.0779820233583  vs  0.921577274799 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.994922161102
+TO-DO case: fDamage is  155.964050293  fRadius is  1.1999989748  Compare  0.999354183674  -  0.051988016814  vs  0.948011934757 pSystem is Neutron Pulse 1
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 1  to status  0.996614813805
+TO-DO case: fDamage is  155.964050293  fRadius is  1.1999989748  Compare  0.999354183674  -  0.051988016814  vs  0.948011934757 pSystem is Neutron Pulse 2
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 2  to status  0.996614813805
+TO-DO case: fDamage is  167.753509521  fRadius is  1.1999989748  Compare  0.994922161102  -  0.0838767513633  vs  0.911441385746 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.985861361027
+TO-DO case: fDamage is  167.753509521  fRadius is  1.1999989748  Compare  0.92429125309  -  0.0559178367257  vs  0.869957447052 pSystem is GFBeam3
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  GFBeam3  to status  0.918250739574
+TO-DO case: fDamage is  167.753509521  fRadius is  1.1999989748  Compare  0.996614813805  -  0.0559178367257  vs  0.942281007767 pSystem is Neutron Pulse 1
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 1  to status  0.990574300289
+TO-DO case: fDamage is  167.753509521  fRadius is  1.1999989748  Compare  0.996614813805  -  0.0559178367257  vs  0.942281007767 pSystem is Neutron Pulse 2
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 2  to status  0.990574300289
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+# DS9FX has...
+
+# taken a console dump
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+TO-DO case: fDamage is  91.3688354492  fRadius is  1.1999989748  Compare  1.0  -  0.0456844195724  vs  0.954315543175 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.998857915401
+TO-DO case: fDamage is  91.3688354492  fRadius is  1.1999989748  Compare  1.0  -  0.0304562784731  vs  0.96954369545 pSystem is Neutron Pulse 1
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 1  to status  0.999238610268
+TO-DO case: fDamage is  91.3688354492  fRadius is  1.1999989748  Compare  1.0  -  0.0304562784731  vs  0.96954369545 pSystem is Neutron Pulse 2
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 2  to status  0.999238610268
+TO-DO case: fDamage is  152.138046265  fRadius is  1.1999989748  Compare  0.998857915401  -  0.0760690197349  vs  0.923316895962 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.994452118874
+TO-DO case: fDamage is  152.138046265  fRadius is  1.1999989748  Compare  0.999238610268  -  0.0507126823068  vs  0.949287354946 pSystem is Neutron Pulse 1
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 1  to status  0.996301412582
+TO-DO case: fDamage is  152.138046265  fRadius is  1.1999989748  Compare  0.999238610268  -  0.0507126823068  vs  0.949287354946 pSystem is Neutron Pulse 2
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 2  to status  0.996301412582
+TO-DO case: fDamage is  154.808868408  fRadius is  1.1999989748  Compare  0.994452118874  -  0.0774044319987  vs  0.917245745659 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.983925461769
+TO-DO case: fDamage is  154.808868408  fRadius is  1.1999989748  Compare  0.996301412582  -  0.0516029559076  vs  0.945490479469 pSystem is Neutron Pulse 1
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 1  to status  0.989283680916
+TO-DO case: fDamage is  154.808868408  fRadius is  1.1999989748  Compare  0.996301412582  -  0.0516029559076  vs  0.945490479469 pSystem is Neutron Pulse 2
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 2  to status  0.989283680916
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 22 Apr 2026 19:06:08#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Custom.Autoload.FIX-EngineerCharacterHandlers : Patched your  Bridge.EngineerCharacterHandlers  to cover 0-shield-strength ships
+Updated FoundationTech.ShipInstance's DefendVS* Fixes
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version  20260222 )
+Custom.Autoload.TWEAK-ShuttleFrameworkDropShields  tweaked Shuttle Launch Framework LaunchShip conditions.
+Patched TacticalControlInterfaces.CycleCameraMode to add mode viewing modes
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+# DS9FX has...
+
+# taken a console dump
+TO-DO case: fDamage is  21.3023071289  fRadius is  1.1999989748  Compare  1.0  -  0.0106511535123  vs  0.989348888397 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.999467432499
+TO-DO case: fDamage is  21.3023071289  fRadius is  1.1999989748  Compare  1.0  -  0.00710076885298  vs  0.992899239063 pSystem is Neutron Pulse 1
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 1  to status  0.999644935131
+TO-DO case: fDamage is  21.3023071289  fRadius is  1.1999989748  Compare  1.0  -  0.00710076885298  vs  0.992899239063 pSystem is Neutron Pulse 2
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 2  to status  0.999644935131
+TO-DO case: fDamage is  237.852981567  fRadius is  1.1999989748  Compare  0.999467432499  -  0.118926487863  vs  0.880738914013 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.991120994091
+TO-DO case: fDamage is  237.852981567  fRadius is  1.1999989748  Compare  0.999644935131  -  0.079284325242  vs  0.920715630054 pSystem is Neutron Pulse 1
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 1  to status  0.994080603123
+TO-DO case: fDamage is  237.852981567  fRadius is  1.1999989748  Compare  0.999644935131  -  0.079284325242  vs  0.920715630054 pSystem is Neutron Pulse 2
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 2  to status  0.994080603123
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+TO-DO case: fDamage is  78.5673446655  fRadius is  1.1999989748  Compare  1.0  -  0.039283670485  vs  0.960716307163 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.998035788536
+TO-DO case: fDamage is  78.5673446655  fRadius is  1.1999989748  Compare  1.0  -  0.0261891148984  vs  0.973810851574 pSystem is Neutron Pulse 1
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 1  to status  0.998690545559
+TO-DO case: fDamage is  78.5673446655  fRadius is  1.1999989748  Compare  1.0  -  0.0261891148984  vs  0.973810851574 pSystem is Neutron Pulse 2
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 2  to status  0.998690545559
+TO-DO case: fDamage is  110.833015442  fRadius is  1.1999989748  Compare  0.998035788536  -  0.0554165095091  vs  0.943015277386 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.995264947414
+TO-DO case: fDamage is  110.833015442  fRadius is  1.1999989748  Compare  0.998690545559  -  0.0369443371892  vs  0.963055670261 pSystem is Neutron Pulse 1
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 1  to status  0.996843338013
+TO-DO case: fDamage is  110.833015442  fRadius is  1.1999989748  Compare  0.998690545559  -  0.0369443371892  vs  0.963055670261 pSystem is Neutron Pulse 2
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 2  to status  0.996843338013
+TO-DO case: fDamage is  119.191177368  fRadius is  1.1999989748  Compare  0.995264947414  -  0.0595955885947  vs  0.935867369175 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.989844202995
+TO-DO case: fDamage is  119.191177368  fRadius is  1.1999989748  Compare  0.996843338013  -  0.0397303923965  vs  0.957904934883 pSystem is Neutron Pulse 1
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 1  to status  0.9932295084
+TO-DO case: fDamage is  119.191177368  fRadius is  1.1999989748  Compare  0.996843338013  -  0.0397303923965  vs  0.957904934883 pSystem is Neutron Pulse 2
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 2  to status  0.9932295084
+TO-DO case: fDamage is  128.804672241  fRadius is  1.1999989748  Compare  0.989844202995  -  0.0644023343921  vs  0.925837814808 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.981959700584
+TO-DO case: fDamage is  128.804672241  fRadius is  1.1999989748  Compare  0.899512112141  -  0.0429348908365  vs  0.858161211014 pSystem is GFBeam3
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  GFBeam3  to status  0.894255757332
+TO-DO case: fDamage is  128.804672241  fRadius is  1.1999989748  Compare  0.9932295084  -  0.0429348908365  vs  0.951878607273 pSystem is Neutron Pulse 1
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 1  to status  0.987973153591
+TO-DO case: fDamage is  128.804672241  fRadius is  1.1999989748  Compare  0.9932295084  -  0.0429348908365  vs  0.951878607273 pSystem is Neutron Pulse 2
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 2  to status  0.987973153591
+Setting splash damage for Minbari Sharlin-1 to (2125.000000, 42.500000)
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+TO-DO case: fDamage is  162.586761475  fRadius is  1.1999989748  Compare  1.0  -  0.0812933817506  vs  0.918706595898 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.996748268604
+TO-DO case: fDamage is  162.586761475  fRadius is  1.1999989748  Compare  1.0  -  0.054195586592  vs  0.945804417133 pSystem is GFBeam3
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  GFBeam3  to status  0.99783217907
+TO-DO case: fDamage is  162.586761475  fRadius is  1.1999989748  Compare  1.0  -  0.054195586592  vs  0.945804417133 pSystem is Neutron Pulse 1
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 1  to status  0.99783217907
+TO-DO case: fDamage is  162.586761475  fRadius is  1.1999989748  Compare  1.0  -  0.054195586592  vs  0.945804417133 pSystem is Neutron Pulse 2
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 2  to status  0.99783217907
+TO-DO case: fDamage is  193.504516602  fRadius is  1.1999989748  Compare  0.996748268604  -  0.096752256155  vs  0.900194048882 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.985078155994
+TO-DO case: fDamage is  193.504516602  fRadius is  1.1999989748  Compare  0.99783217907  -  0.0645015090704  vs  0.934122741222 pSystem is Neutron Pulse 1
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 1  to status  0.990052103996
+TO-DO case: fDamage is  193.504516602  fRadius is  1.1999989748  Compare  0.99783217907  -  0.0645015090704  vs  0.934122741222 pSystem is Neutron Pulse 2
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 2  to status  0.990052103996
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 22 Apr 2026 19:06:08#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Custom.Autoload.FIX-EngineerCharacterHandlers : Patched your  Bridge.EngineerCharacterHandlers  to cover 0-shield-strength ships
+Updated FoundationTech.ShipInstance's DefendVS* Fixes
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version  20260222 )
+Custom.Autoload.TWEAK-ShuttleFrameworkDropShields  tweaked Shuttle Launch Framework LaunchShip conditions.
+Patched TacticalControlInterfaces.CycleCameraMode to add mode viewing modes
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+# DS9FX has...
+
+# taken a console dump
+TO-DO case: fDamage is  21.3023071289  fRadius is  1.1999989748  Compare  1.0  -  0.0106511535123  vs  0.989348888397 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.999467432499
+TO-DO case: fDamage is  21.3023071289  fRadius is  1.1999989748  Compare  1.0  -  0.00710076885298  vs  0.992899239063 pSystem is Neutron Pulse 1
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 1  to status  0.999644935131
+TO-DO case: fDamage is  21.3023071289  fRadius is  1.1999989748  Compare  1.0  -  0.00710076885298  vs  0.992899239063 pSystem is Neutron Pulse 2
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 2  to status  0.999644935131
+TO-DO case: fDamage is  237.852981567  fRadius is  1.1999989748  Compare  0.999467432499  -  0.118926487863  vs  0.880738914013 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.991120994091
+TO-DO case: fDamage is  237.852981567  fRadius is  1.1999989748  Compare  0.999644935131  -  0.079284325242  vs  0.920715630054 pSystem is Neutron Pulse 1
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 1  to status  0.994080603123
+TO-DO case: fDamage is  237.852981567  fRadius is  1.1999989748  Compare  0.999644935131  -  0.079284325242  vs  0.920715630054 pSystem is Neutron Pulse 2
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 2  to status  0.994080603123
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+TO-DO case: fDamage is  78.5673446655  fRadius is  1.1999989748  Compare  1.0  -  0.039283670485  vs  0.960716307163 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.998035788536
+TO-DO case: fDamage is  78.5673446655  fRadius is  1.1999989748  Compare  1.0  -  0.0261891148984  vs  0.973810851574 pSystem is Neutron Pulse 1
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 1  to status  0.998690545559
+TO-DO case: fDamage is  78.5673446655  fRadius is  1.1999989748  Compare  1.0  -  0.0261891148984  vs  0.973810851574 pSystem is Neutron Pulse 2
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 2  to status  0.998690545559
+TO-DO case: fDamage is  110.833015442  fRadius is  1.1999989748  Compare  0.998035788536  -  0.0554165095091  vs  0.943015277386 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.995264947414
+TO-DO case: fDamage is  110.833015442  fRadius is  1.1999989748  Compare  0.998690545559  -  0.0369443371892  vs  0.963055670261 pSystem is Neutron Pulse 1
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 1  to status  0.996843338013
+TO-DO case: fDamage is  110.833015442  fRadius is  1.1999989748  Compare  0.998690545559  -  0.0369443371892  vs  0.963055670261 pSystem is Neutron Pulse 2
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 2  to status  0.996843338013
+TO-DO case: fDamage is  119.191177368  fRadius is  1.1999989748  Compare  0.995264947414  -  0.0595955885947  vs  0.935867369175 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.989844202995
+TO-DO case: fDamage is  119.191177368  fRadius is  1.1999989748  Compare  0.996843338013  -  0.0397303923965  vs  0.957904934883 pSystem is Neutron Pulse 1
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 1  to status  0.9932295084
+TO-DO case: fDamage is  119.191177368  fRadius is  1.1999989748  Compare  0.996843338013  -  0.0397303923965  vs  0.957904934883 pSystem is Neutron Pulse 2
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 2  to status  0.9932295084
+TO-DO case: fDamage is  128.804672241  fRadius is  1.1999989748  Compare  0.989844202995  -  0.0644023343921  vs  0.925837814808 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.981959700584
+TO-DO case: fDamage is  128.804672241  fRadius is  1.1999989748  Compare  0.899512112141  -  0.0429348908365  vs  0.858161211014 pSystem is GFBeam3
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  GFBeam3  to status  0.894255757332
+TO-DO case: fDamage is  128.804672241  fRadius is  1.1999989748  Compare  0.9932295084  -  0.0429348908365  vs  0.951878607273 pSystem is Neutron Pulse 1
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 1  to status  0.987973153591
+TO-DO case: fDamage is  128.804672241  fRadius is  1.1999989748  Compare  0.9932295084  -  0.0429348908365  vs  0.951878607273 pSystem is Neutron Pulse 2
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 2  to status  0.987973153591
+Setting splash damage for Minbari Sharlin-1 to (2125.000000, 42.500000)
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+TO-DO case: fDamage is  162.586761475  fRadius is  1.1999989748  Compare  1.0  -  0.0812933817506  vs  0.918706595898 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.996748268604
+TO-DO case: fDamage is  162.586761475  fRadius is  1.1999989748  Compare  1.0  -  0.054195586592  vs  0.945804417133 pSystem is GFBeam3
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  GFBeam3  to status  0.99783217907
+TO-DO case: fDamage is  162.586761475  fRadius is  1.1999989748  Compare  1.0  -  0.054195586592  vs  0.945804417133 pSystem is Neutron Pulse 1
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 1  to status  0.99783217907
+TO-DO case: fDamage is  162.586761475  fRadius is  1.1999989748  Compare  1.0  -  0.054195586592  vs  0.945804417133 pSystem is Neutron Pulse 2
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 2  to status  0.99783217907
+TO-DO case: fDamage is  193.504516602  fRadius is  1.1999989748  Compare  0.996748268604  -  0.096752256155  vs  0.900194048882 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.985078155994
+TO-DO case: fDamage is  193.504516602  fRadius is  1.1999989748  Compare  0.99783217907  -  0.0645015090704  vs  0.934122741222 pSystem is Neutron Pulse 1
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 1  to status  0.990052103996
+TO-DO case: fDamage is  193.504516602  fRadius is  1.1999989748  Compare  0.99783217907  -  0.0645015090704  vs  0.934122741222 pSystem is Neutron Pulse 2
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 2  to status  0.990052103996
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 22 Apr 2026 19:08:16#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Custom.Autoload.FIX-EngineerCharacterHandlers : Patched your  Bridge.EngineerCharacterHandlers  to cover 0-shield-strength ships
+Updated FoundationTech.ShipInstance's DefendVS* Fixes
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version  20260222 )
+Custom.Autoload.TWEAK-ShuttleFrameworkDropShields  tweaked Shuttle Launch Framework LaunchShip conditions.
+Patched TacticalControlInterfaces.CycleCameraMode to add mode viewing modes
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+# DS9FX has...
+
+# taken a console dump
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+TO-DO case: fDamage is  5.01582098007  fRadius is  0.5  Compare  1.0  -  0.00250791059807  vs  0.997492074966 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.999749183655
+TO-DO case: fDamage is  5.01566362381  fRadius is  0.5  Compare  0.999749183655  -  0.00250783190131  vs  0.997492194176 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.999498426914
+TO-DO case: fDamage is  5.09402227402  fRadius is  0.5  Compare  0.999498426914  -  0.00254701124504  vs  0.997452974319 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.999243736267
+TO-DO case: fDamage is  5.09392213821  fRadius is  0.5  Compare  0.999243736267  -  0.00254696095362  vs  0.996696770191 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.99898904562
+TO-DO case: fDamage is  12.9914312363  fRadius is  0.5  Compare  0.99898904562  -  0.00649571558461  vs  0.993504285812 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.998339474201
+TO-DO case: fDamage is  12.9912118912  fRadius is  0.5  Compare  0.998339474201  -  0.0064956061542  vs  0.991843879223 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.997689902782
+TO-DO case: fDamage is  12.9110012054  fRadius is  0.5  Compare  0.997689902782  -  0.00645550061017  vs  0.993544518948 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.997044324875
+TO-DO case: fDamage is  100.0  fRadius is  0.0324999988079  Compare  0.997044324875  -  0.0500000007451  vs  0.949999988079 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.992044329643
+TO-DO case: fDamage is  400.0  fRadius is  0.129999995232  Compare  0.992044329643  -  0.20000000298  vs  0.792539298534 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.91532933712
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 22 Apr 2026 19:08:16#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Custom.Autoload.FIX-EngineerCharacterHandlers : Patched your  Bridge.EngineerCharacterHandlers  to cover 0-shield-strength ships
+Updated FoundationTech.ShipInstance's DefendVS* Fixes
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version  20260222 )
+Custom.Autoload.TWEAK-ShuttleFrameworkDropShields  tweaked Shuttle Launch Framework LaunchShip conditions.
+Patched TacticalControlInterfaces.CycleCameraMode to add mode viewing modes
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+# DS9FX has...
+
+# taken a console dump
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+TO-DO case: fDamage is  5.01582098007  fRadius is  0.5  Compare  1.0  -  0.00250791059807  vs  0.997492074966 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.999749183655
+TO-DO case: fDamage is  5.01566362381  fRadius is  0.5  Compare  0.999749183655  -  0.00250783190131  vs  0.997492194176 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.999498426914
+TO-DO case: fDamage is  5.09402227402  fRadius is  0.5  Compare  0.999498426914  -  0.00254701124504  vs  0.997452974319 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.999243736267
+TO-DO case: fDamage is  5.09392213821  fRadius is  0.5  Compare  0.999243736267  -  0.00254696095362  vs  0.996696770191 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.99898904562
+TO-DO case: fDamage is  12.9914312363  fRadius is  0.5  Compare  0.99898904562  -  0.00649571558461  vs  0.993504285812 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.998339474201
+TO-DO case: fDamage is  12.9912118912  fRadius is  0.5  Compare  0.998339474201  -  0.0064956061542  vs  0.991843879223 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.997689902782
+TO-DO case: fDamage is  12.9110012054  fRadius is  0.5  Compare  0.997689902782  -  0.00645550061017  vs  0.993544518948 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.997044324875
+TO-DO case: fDamage is  100.0  fRadius is  0.0324999988079  Compare  0.997044324875  -  0.0500000007451  vs  0.949999988079 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.992044329643
+TO-DO case: fDamage is  400.0  fRadius is  0.129999995232  Compare  0.992044329643  -  0.20000000298  vs  0.792539298534 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.91532933712
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 22 Apr 2026 19:16:48#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Custom.Autoload.FIX-EngineerCharacterHandlers : Patched your  Bridge.EngineerCharacterHandlers  to cover 0-shield-strength ships
+Updated FoundationTech.ShipInstance's DefendVS* Fixes
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version  20260222 )
+Custom.Autoload.TWEAK-ShuttleFrameworkDropShields  tweaked Shuttle Launch Framework LaunchShip conditions.
+Patched TacticalControlInterfaces.CycleCameraMode to add mode viewing modes
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+# DS9FX has...
+
+# taken a console dump
+TO-DO case: fDamage is  135.008361816  fRadius is  1.1999989748  Compare  1.0  -  0.0675041824579  vs  0.932495832443 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.998649895191
+TO-DO case: fDamage is  135.008361816  fRadius is  1.1999989748  Compare  1.0  -  0.0450027883053  vs  0.954997241497 pSystem is GFBeam3
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  GFBeam3  to status  0.999099969864
+TO-DO case: fDamage is  135.008361816  fRadius is  1.1999989748  Compare  1.0  -  0.0450027883053  vs  0.954997241497 pSystem is Neutron Pulse 1
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 1  to status  0.999099969864
+TO-DO case: fDamage is  135.008361816  fRadius is  1.1999989748  Compare  1.0  -  0.0450027883053  vs  0.954997241497 pSystem is Neutron Pulse 2
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 2  to status  0.999099969864
+TO-DO case: fDamage is  187.552581787  fRadius is  1.1999989748  Compare  0.998649895191  -  0.0937762930989  vs  0.905071616173 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.989272236824
+TO-DO case: fDamage is  187.552581787  fRadius is  1.1999989748  Compare  0.999099969864  -  0.0625175237656  vs  0.937374413013 pSystem is GFBeam3
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  GFBeam3  to status  0.992848217487
+TO-DO case: fDamage is  187.552581787  fRadius is  1.1999989748  Compare  0.999099969864  -  0.0625175237656  vs  0.937374413013 pSystem is Neutron Pulse 1
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 1  to status  0.992848217487
+TO-DO case: fDamage is  187.552581787  fRadius is  1.1999989748  Compare  0.999099969864  -  0.0625175237656  vs  0.937374413013 pSystem is Neutron Pulse 2
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 2  to status  0.992848217487
+Setting splash damage for Minbari Sharlin-1 to (2125.000000, 42.500000)
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+TO-DO case: fDamage is  91.0995483398  fRadius is  1.1999989748  Compare  1.0  -  0.0455497726798  vs  0.954450190067 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.998861253262
+TO-DO case: fDamage is  91.0995483398  fRadius is  1.1999989748  Compare  1.0  -  0.0303665157408  vs  0.969633460045 pSystem is Neutron Pulse 1
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 1  to status  0.999240815639
+TO-DO case: fDamage is  91.0995483398  fRadius is  1.1999989748  Compare  1.0  -  0.0303665157408  vs  0.969633460045 pSystem is Neutron Pulse 2
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 2  to status  0.999240815639
+TO-DO case: fDamage is  155.598449707  fRadius is  1.1999989748  Compare  0.998861253262  -  0.0777992233634  vs  0.921590089798 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.992331385612
+TO-DO case: fDamage is  155.598449707  fRadius is  1.1999989748  Compare  0.999240815639  -  0.0518661513925  vs  0.94813388586 pSystem is Neutron Pulse 1
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 1  to status  0.994887590408
+TO-DO case: fDamage is  155.598449707  fRadius is  1.1999989748  Compare  0.999240815639  -  0.0518661513925  vs  0.94813388586 pSystem is Neutron Pulse 2
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 2  to status  0.994887590408
+Setting splash damage for Minbari Sharlin-1 to (2125.000000, 42.500000)
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+TO-DO case: fDamage is  24.2370319366  fRadius is  0.25  Compare  1.0  -  0.0121185155585  vs  0.987881481647 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.999394059181
+TO-DO case: fDamage is  150.0  fRadius is  0.300000011921  Compare  1.0  -  0.0750000029802  vs  0.925000011921 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.995279669762
+TO-DO case: fDamage is  108.839004517  fRadius is  0.217678025365  Compare  0.995279669762  -  0.0544195026159  vs  0.940860152245 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.984458327293
+TO-DO case: fDamage is  95.5351867676  fRadius is  0.25  Compare  0.984458327293  -  0.0477675944567  vs  0.936690747738 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.9764970541
+TO-DO case: fDamage is  95.5351867676  fRadius is  0.25  Compare  1.0  -  0.0734886080027  vs  0.926511406898 pSystem is Shuttle Bay 1
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Shuttle Bay 1  to status  0.98775190115
+TO-DO case: fDamage is  85.4987335205  fRadius is  0.25  Compare  0.9764970541  -  0.0427493676543  vs  0.934407711029 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.969372153282
+TO-DO case: fDamage is  85.4987335205  fRadius is  0.25  Compare  0.98775190115  -  0.0657682567835  vs  0.922795891762 pSystem is Shuttle Bay 1
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Shuttle Bay 1  to status  0.976790547371
+TO-DO case: fDamage is  32.6657104492  fRadius is  0.25  Compare  0.999394059181  -  0.0163328554481  vs  0.983667135239 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.998577415943
+TO-DO case: fDamage is  104.071044922  fRadius is  0.25  Compare  0.998577415943  -  0.0520355217159  vs  0.947531878948 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.995975613594
+TO-DO case: fDamage is  30.89453125  fRadius is  0.123578123748  Compare  0.995975613594  -  0.0154472654685  vs  0.981023311615 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.995203256607
+TO-DO case: fDamage is  176.71875  fRadius is  0.25  Compare  0.995203256607  -  0.0883593782783  vs  0.906843900681 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.973113417625
+TO-DO case: fDamage is  43.4717788696  fRadius is  0.173887118697  Compare  0.973113417625  -  0.0217358898371  vs  0.951872467995 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.967679440975
+TO-DO case: fDamage is  75.0  fRadius is  0.300000011921  Compare  0.967679440975  -  0.0375000014901  vs  0.930674433708 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.958304464817
+Setting splash damage for Minbari Sharlin-1 to (2125.000000, 42.500000)
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+TO-DO case: fDamage is  90.4136199951  fRadius is  0.180827245116  Compare  1.0  -  0.0452068112791  vs  0.954793214798 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.997739672661
+TO-DO case: fDamage is  142.5  fRadius is  0.284999996424  Compare  0.997739672661  -  0.0712499991059  vs  0.926984667778 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.986935257912
+TO-DO case: fDamage is  67.3573760986  fRadius is  0.25  Compare  0.986935257912  -  0.0336786881089  vs  0.953256547451 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.978995382786
+TO-DO case: fDamage is  79.3874969482  fRadius is  0.158775001764  Compare  0.978995382786  -  0.0396937467158  vs  0.939796626568 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.969071924686
+TO-DO case: fDamage is  9.38749694824  fRadius is  0.0375499874353  Compare  1.0  -  0.00469374842942  vs  0.995306253433 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.999765336514
+TO-DO case: fDamage is  75.0  fRadius is  0.300000011921  Compare  0.999765336514  -  0.0375000014901  vs  0.962265312672 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.997890353203
+TO-DO case: fDamage is  75.0  fRadius is  0.300000011921  Compare  0.997890353203  -  0.0375000014901  vs  0.962499976158 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.996015369892
+TO-DO case: fDamage is  71.25  fRadius is  0.284999996424  Compare  0.996015369892  -  0.035624999553  vs  0.961380362511 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.993885457516
+TO-DO case: fDamage is  32.5084838867  fRadius is  0.130033940077  Compare  0.993885457516  -  0.0162542425096  vs  0.977631211281 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.99225383997
+TO-DO case: fDamage is  75.0  fRadius is  0.300000011921  Compare  0.99225383997  -  0.0375000014901  vs  0.954753816128 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.98497736454
+TO-DO case: fDamage is  46.8790206909  fRadius is  0.187516078353  Compare  0.98497736454  -  0.0234395097941  vs  0.962527811527 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.979752480984
+TO-DO case: fDamage is  71.25  fRadius is  0.284999996424  Compare  0.979752480984  -  0.035624999553  vs  0.944127500057 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.970846235752
+TO-DO case: fDamage is  71.25  fRadius is  0.284999996424  Compare  0.970846235752  -  0.035624999553  vs  0.935221254826 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.96193999052
+Setting splash damage for Minbari Sharlin-1 to (2125.000000, 42.500000)
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 22 Apr 2026 19:16:48#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Custom.Autoload.FIX-EngineerCharacterHandlers : Patched your  Bridge.EngineerCharacterHandlers  to cover 0-shield-strength ships
+Updated FoundationTech.ShipInstance's DefendVS* Fixes
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version  20260222 )
+Custom.Autoload.TWEAK-ShuttleFrameworkDropShields  tweaked Shuttle Launch Framework LaunchShip conditions.
+Patched TacticalControlInterfaces.CycleCameraMode to add mode viewing modes
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+# DS9FX has...
+
+# taken a console dump
+TO-DO case: fDamage is  135.008361816  fRadius is  1.1999989748  Compare  1.0  -  0.0675041824579  vs  0.932495832443 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.998649895191
+TO-DO case: fDamage is  135.008361816  fRadius is  1.1999989748  Compare  1.0  -  0.0450027883053  vs  0.954997241497 pSystem is GFBeam3
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  GFBeam3  to status  0.999099969864
+TO-DO case: fDamage is  135.008361816  fRadius is  1.1999989748  Compare  1.0  -  0.0450027883053  vs  0.954997241497 pSystem is Neutron Pulse 1
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 1  to status  0.999099969864
+TO-DO case: fDamage is  135.008361816  fRadius is  1.1999989748  Compare  1.0  -  0.0450027883053  vs  0.954997241497 pSystem is Neutron Pulse 2
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 2  to status  0.999099969864
+TO-DO case: fDamage is  187.552581787  fRadius is  1.1999989748  Compare  0.998649895191  -  0.0937762930989  vs  0.905071616173 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.989272236824
+TO-DO case: fDamage is  187.552581787  fRadius is  1.1999989748  Compare  0.999099969864  -  0.0625175237656  vs  0.937374413013 pSystem is GFBeam3
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  GFBeam3  to status  0.992848217487
+TO-DO case: fDamage is  187.552581787  fRadius is  1.1999989748  Compare  0.999099969864  -  0.0625175237656  vs  0.937374413013 pSystem is Neutron Pulse 1
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 1  to status  0.992848217487
+TO-DO case: fDamage is  187.552581787  fRadius is  1.1999989748  Compare  0.999099969864  -  0.0625175237656  vs  0.937374413013 pSystem is Neutron Pulse 2
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 2  to status  0.992848217487
+Setting splash damage for Minbari Sharlin-1 to (2125.000000, 42.500000)
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+TO-DO case: fDamage is  91.0995483398  fRadius is  1.1999989748  Compare  1.0  -  0.0455497726798  vs  0.954450190067 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.998861253262
+TO-DO case: fDamage is  91.0995483398  fRadius is  1.1999989748  Compare  1.0  -  0.0303665157408  vs  0.969633460045 pSystem is Neutron Pulse 1
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 1  to status  0.999240815639
+TO-DO case: fDamage is  91.0995483398  fRadius is  1.1999989748  Compare  1.0  -  0.0303665157408  vs  0.969633460045 pSystem is Neutron Pulse 2
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 2  to status  0.999240815639
+TO-DO case: fDamage is  155.598449707  fRadius is  1.1999989748  Compare  0.998861253262  -  0.0777992233634  vs  0.921590089798 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.992331385612
+TO-DO case: fDamage is  155.598449707  fRadius is  1.1999989748  Compare  0.999240815639  -  0.0518661513925  vs  0.94813388586 pSystem is Neutron Pulse 1
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 1  to status  0.994887590408
+TO-DO case: fDamage is  155.598449707  fRadius is  1.1999989748  Compare  0.999240815639  -  0.0518661513925  vs  0.94813388586 pSystem is Neutron Pulse 2
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 2  to status  0.994887590408
+Setting splash damage for Minbari Sharlin-1 to (2125.000000, 42.500000)
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+TO-DO case: fDamage is  24.2370319366  fRadius is  0.25  Compare  1.0  -  0.0121185155585  vs  0.987881481647 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.999394059181
+TO-DO case: fDamage is  150.0  fRadius is  0.300000011921  Compare  1.0  -  0.0750000029802  vs  0.925000011921 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.995279669762
+TO-DO case: fDamage is  108.839004517  fRadius is  0.217678025365  Compare  0.995279669762  -  0.0544195026159  vs  0.940860152245 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.984458327293
+TO-DO case: fDamage is  95.5351867676  fRadius is  0.25  Compare  0.984458327293  -  0.0477675944567  vs  0.936690747738 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.9764970541
+TO-DO case: fDamage is  95.5351867676  fRadius is  0.25  Compare  1.0  -  0.0734886080027  vs  0.926511406898 pSystem is Shuttle Bay 1
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Shuttle Bay 1  to status  0.98775190115
+TO-DO case: fDamage is  85.4987335205  fRadius is  0.25  Compare  0.9764970541  -  0.0427493676543  vs  0.934407711029 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.969372153282
+TO-DO case: fDamage is  85.4987335205  fRadius is  0.25  Compare  0.98775190115  -  0.0657682567835  vs  0.922795891762 pSystem is Shuttle Bay 1
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Shuttle Bay 1  to status  0.976790547371
+TO-DO case: fDamage is  32.6657104492  fRadius is  0.25  Compare  0.999394059181  -  0.0163328554481  vs  0.983667135239 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.998577415943
+TO-DO case: fDamage is  104.071044922  fRadius is  0.25  Compare  0.998577415943  -  0.0520355217159  vs  0.947531878948 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.995975613594
+TO-DO case: fDamage is  30.89453125  fRadius is  0.123578123748  Compare  0.995975613594  -  0.0154472654685  vs  0.981023311615 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.995203256607
+TO-DO case: fDamage is  176.71875  fRadius is  0.25  Compare  0.995203256607  -  0.0883593782783  vs  0.906843900681 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.973113417625
+TO-DO case: fDamage is  43.4717788696  fRadius is  0.173887118697  Compare  0.973113417625  -  0.0217358898371  vs  0.951872467995 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.967679440975
+TO-DO case: fDamage is  75.0  fRadius is  0.300000011921  Compare  0.967679440975  -  0.0375000014901  vs  0.930674433708 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.958304464817
+Setting splash damage for Minbari Sharlin-1 to (2125.000000, 42.500000)
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+TO-DO case: fDamage is  90.4136199951  fRadius is  0.180827245116  Compare  1.0  -  0.0452068112791  vs  0.954793214798 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.997739672661
+TO-DO case: fDamage is  142.5  fRadius is  0.284999996424  Compare  0.997739672661  -  0.0712499991059  vs  0.926984667778 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.986935257912
+TO-DO case: fDamage is  67.3573760986  fRadius is  0.25  Compare  0.986935257912  -  0.0336786881089  vs  0.953256547451 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.978995382786
+TO-DO case: fDamage is  79.3874969482  fRadius is  0.158775001764  Compare  0.978995382786  -  0.0396937467158  vs  0.939796626568 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.969071924686
+TO-DO case: fDamage is  9.38749694824  fRadius is  0.0375499874353  Compare  1.0  -  0.00469374842942  vs  0.995306253433 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.999765336514
+TO-DO case: fDamage is  75.0  fRadius is  0.300000011921  Compare  0.999765336514  -  0.0375000014901  vs  0.962265312672 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.997890353203
+TO-DO case: fDamage is  75.0  fRadius is  0.300000011921  Compare  0.997890353203  -  0.0375000014901  vs  0.962499976158 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.996015369892
+TO-DO case: fDamage is  71.25  fRadius is  0.284999996424  Compare  0.996015369892  -  0.035624999553  vs  0.961380362511 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.993885457516
+TO-DO case: fDamage is  32.5084838867  fRadius is  0.130033940077  Compare  0.993885457516  -  0.0162542425096  vs  0.977631211281 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.99225383997
+TO-DO case: fDamage is  75.0  fRadius is  0.300000011921  Compare  0.99225383997  -  0.0375000014901  vs  0.954753816128 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.98497736454
+TO-DO case: fDamage is  46.8790206909  fRadius is  0.187516078353  Compare  0.98497736454  -  0.0234395097941  vs  0.962527811527 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.979752480984
+TO-DO case: fDamage is  71.25  fRadius is  0.284999996424  Compare  0.979752480984  -  0.035624999553  vs  0.944127500057 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.970846235752
+TO-DO case: fDamage is  71.25  fRadius is  0.284999996424  Compare  0.970846235752  -  0.035624999553  vs  0.935221254826 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.96193999052
+Setting splash damage for Minbari Sharlin-1 to (2125.000000, 42.500000)
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 22 Apr 2026 19:21:04#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Custom.Autoload.FIX-EngineerCharacterHandlers : Patched your  Bridge.EngineerCharacterHandlers  to cover 0-shield-strength ships
+Updated FoundationTech.ShipInstance's DefendVS* Fixes
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version  20260222 )
+Custom.Autoload.TWEAK-ShuttleFrameworkDropShields  tweaked Shuttle Launch Framework LaunchShip conditions.
+Patched TacticalControlInterfaces.CycleCameraMode to add mode viewing modes
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+# DS9FX has...
+
+# taken a console dump
+TO-DO case: fDamage is  25.4833068848  fRadius is  2.19999909401  Compare  1.0  -  0.0127416532487  vs  0.987258374691 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.999745190144
+TO-DO case: fDamage is  25.4833068848  fRadius is  2.19999909401  Compare  1.0  -  0.00849443580955  vs  0.991505563259 pSystem is GFBeam3
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  GFBeam3  to status  0.999830126762
+TO-DO case: fDamage is  25.4833068848  fRadius is  2.19999909401  Compare  1.0  -  0.00849443580955  vs  0.991505563259 pSystem is Neutron Pulse 1
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 1  to status  0.999830126762
+TO-DO case: fDamage is  25.4833068848  fRadius is  2.19999909401  Compare  1.0  -  0.00849443580955  vs  0.991505563259 pSystem is Neutron Pulse 2
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 2  to status  0.999830126762
+TO-DO case: fDamage is  214.811355591  fRadius is  2.19999909401  Compare  0.999745190144  -  0.107405677438  vs  0.892537474632 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.994558095932
+TO-DO case: fDamage is  214.811355591  fRadius is  2.19999909401  Compare  0.999830126762  -  0.071603782475  vs  0.928396224976 pSystem is GFBeam3
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  GFBeam3  to status  0.996372044086
+TO-DO case: fDamage is  214.811355591  fRadius is  2.19999909401  Compare  0.999830126762  -  0.071603782475  vs  0.928396224976 pSystem is Neutron Pulse 1
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 1  to status  0.996372044086
+TO-DO case: fDamage is  214.811355591  fRadius is  2.19999909401  Compare  0.999830126762  -  0.071603782475  vs  0.928396224976 pSystem is Neutron Pulse 2
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 2  to status  0.996372044086
+TO-DO case: fDamage is  141.962127686  fRadius is  2.19999909401  Compare  0.994558095932  -  0.0709810629487  vs  0.923973023891 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.987460017204
+TO-DO case: fDamage is  141.962127686  fRadius is  2.19999909401  Compare  0.996372044086  -  0.0473207086325  vs  0.950635313988 pSystem is GFBeam3
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  GFBeam3  to status  0.991639971733
+TO-DO case: fDamage is  141.962127686  fRadius is  2.19999909401  Compare  0.996372044086  -  0.0473207086325  vs  0.950635313988 pSystem is Neutron Pulse 1
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 1  to status  0.991639971733
+TO-DO case: fDamage is  141.962127686  fRadius is  2.19999909401  Compare  0.996372044086  -  0.0473207086325  vs  0.950635313988 pSystem is Neutron Pulse 2
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 2  to status  0.991639971733
+TO-DO case: fDamage is  154.45413208  fRadius is  2.19999909401  Compare  0.987460017204  -  0.077227063477  vs  0.910430967808 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.979737281799
+TO-DO case: fDamage is  154.45413208  fRadius is  2.19999909401  Compare  0.991639971733  -  0.0514847114682  vs  0.940947294235 pSystem is GFBeam3
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  GFBeam3  to status  0.986491501331
+TO-DO case: fDamage is  154.45413208  fRadius is  2.19999909401  Compare  0.991639971733  -  0.0514847114682  vs  0.940947294235 pSystem is Neutron Pulse 1
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 1  to status  0.986491501331
+TO-DO case: fDamage is  154.45413208  fRadius is  2.19999909401  Compare  0.991639971733  -  0.0514847114682  vs  0.940947294235 pSystem is Neutron Pulse 2
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 2  to status  0.986491501331
+Setting splash damage for Minbari Sharlin-1 to (2125.000000, 42.500000)
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 22 Apr 2026 19:21:04#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Custom.Autoload.FIX-EngineerCharacterHandlers : Patched your  Bridge.EngineerCharacterHandlers  to cover 0-shield-strength ships
+Updated FoundationTech.ShipInstance's DefendVS* Fixes
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version  20260222 )
+Custom.Autoload.TWEAK-ShuttleFrameworkDropShields  tweaked Shuttle Launch Framework LaunchShip conditions.
+Patched TacticalControlInterfaces.CycleCameraMode to add mode viewing modes
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+# DS9FX has...
+
+# taken a console dump
+TO-DO case: fDamage is  25.4833068848  fRadius is  2.19999909401  Compare  1.0  -  0.0127416532487  vs  0.987258374691 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.999745190144
+TO-DO case: fDamage is  25.4833068848  fRadius is  2.19999909401  Compare  1.0  -  0.00849443580955  vs  0.991505563259 pSystem is GFBeam3
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  GFBeam3  to status  0.999830126762
+TO-DO case: fDamage is  25.4833068848  fRadius is  2.19999909401  Compare  1.0  -  0.00849443580955  vs  0.991505563259 pSystem is Neutron Pulse 1
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 1  to status  0.999830126762
+TO-DO case: fDamage is  25.4833068848  fRadius is  2.19999909401  Compare  1.0  -  0.00849443580955  vs  0.991505563259 pSystem is Neutron Pulse 2
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 2  to status  0.999830126762
+TO-DO case: fDamage is  214.811355591  fRadius is  2.19999909401  Compare  0.999745190144  -  0.107405677438  vs  0.892537474632 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.994558095932
+TO-DO case: fDamage is  214.811355591  fRadius is  2.19999909401  Compare  0.999830126762  -  0.071603782475  vs  0.928396224976 pSystem is GFBeam3
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  GFBeam3  to status  0.996372044086
+TO-DO case: fDamage is  214.811355591  fRadius is  2.19999909401  Compare  0.999830126762  -  0.071603782475  vs  0.928396224976 pSystem is Neutron Pulse 1
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 1  to status  0.996372044086
+TO-DO case: fDamage is  214.811355591  fRadius is  2.19999909401  Compare  0.999830126762  -  0.071603782475  vs  0.928396224976 pSystem is Neutron Pulse 2
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 2  to status  0.996372044086
+TO-DO case: fDamage is  141.962127686  fRadius is  2.19999909401  Compare  0.994558095932  -  0.0709810629487  vs  0.923973023891 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.987460017204
+TO-DO case: fDamage is  141.962127686  fRadius is  2.19999909401  Compare  0.996372044086  -  0.0473207086325  vs  0.950635313988 pSystem is GFBeam3
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  GFBeam3  to status  0.991639971733
+TO-DO case: fDamage is  141.962127686  fRadius is  2.19999909401  Compare  0.996372044086  -  0.0473207086325  vs  0.950635313988 pSystem is Neutron Pulse 1
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 1  to status  0.991639971733
+TO-DO case: fDamage is  141.962127686  fRadius is  2.19999909401  Compare  0.996372044086  -  0.0473207086325  vs  0.950635313988 pSystem is Neutron Pulse 2
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 2  to status  0.991639971733
+TO-DO case: fDamage is  154.45413208  fRadius is  2.19999909401  Compare  0.987460017204  -  0.077227063477  vs  0.910430967808 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.979737281799
+TO-DO case: fDamage is  154.45413208  fRadius is  2.19999909401  Compare  0.991639971733  -  0.0514847114682  vs  0.940947294235 pSystem is GFBeam3
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  GFBeam3  to status  0.986491501331
+TO-DO case: fDamage is  154.45413208  fRadius is  2.19999909401  Compare  0.991639971733  -  0.0514847114682  vs  0.940947294235 pSystem is Neutron Pulse 1
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 1  to status  0.986491501331
+TO-DO case: fDamage is  154.45413208  fRadius is  2.19999909401  Compare  0.991639971733  -  0.0514847114682  vs  0.940947294235 pSystem is Neutron Pulse 2
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 2  to status  0.986491501331
+Setting splash damage for Minbari Sharlin-1 to (2125.000000, 42.500000)
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 22 Apr 2026 19:29:36#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Custom.Autoload.FIX-EngineerCharacterHandlers : Patched your  Bridge.EngineerCharacterHandlers  to cover 0-shield-strength ships
+Updated FoundationTech.ShipInstance's DefendVS* Fixes
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version  20260222 )
+Custom.Autoload.TWEAK-ShuttleFrameworkDropShields  tweaked Shuttle Launch Framework LaunchShip conditions.
+Patched TacticalControlInterfaces.CycleCameraMode to add mode viewing modes
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+# DS9FX has...
+
+# taken a console dump
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+TO-DO case: fDamage is  108.054595947  fRadius is  2.19999909401  Compare  1.0  -  0.0540272966027  vs  0.94597274065 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.998919427395
+TO-DO case: fDamage is  108.054595947  fRadius is  2.19999909401  Compare  1.0  -  0.0360182002187  vs  0.963981747627 pSystem is GFBeam3
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  GFBeam3  to status  0.999279618263
+TO-DO case: fDamage is  108.054595947  fRadius is  2.19999909401  Compare  1.0  -  0.0360182002187  vs  0.963981747627 pSystem is Neutron Pulse 1
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 1  to status  0.999279618263
+TO-DO case: fDamage is  108.054595947  fRadius is  2.19999909401  Compare  1.0  -  0.0360182002187  vs  0.963981747627 pSystem is Neutron Pulse 2
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 2  to status  0.999279618263
+TO-DO case: fDamage is  175.008789063  fRadius is  2.19999909401  Compare  0.998919427395  -  0.0875043943524  vs  0.912108004093 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.993568360806
+TO-DO case: fDamage is  175.008789063  fRadius is  2.19999909401  Compare  0.999279618263  -  0.0583362616599  vs  0.941663742065 pSystem is GFBeam3
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  GFBeam3  to status  0.995712220669
+TO-DO case: fDamage is  175.008789063  fRadius is  2.19999909401  Compare  0.999279618263  -  0.0583362616599  vs  0.941663742065 pSystem is Neutron Pulse 1
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 1  to status  0.995712220669
+TO-DO case: fDamage is  175.008789063  fRadius is  2.19999909401  Compare  0.999279618263  -  0.0583362616599  vs  0.941663742065 pSystem is Neutron Pulse 2
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 2  to status  0.995712220669
+TO-DO case: fDamage is  189.875869751  fRadius is  2.19999909401  Compare  0.993568360806  -  0.0949379354715  vs  0.898828446865 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.98407459259
+TO-DO case: fDamage is  189.875869751  fRadius is  2.19999909401  Compare  0.995712220669  -  0.0632919594646  vs  0.933212220669 pSystem is GFBeam3
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  GFBeam3  to status  0.989383041859
+TO-DO case: fDamage is  189.875869751  fRadius is  2.19999909401  Compare  0.995712220669  -  0.0632919594646  vs  0.933212220669 pSystem is Neutron Pulse 1
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 1  to status  0.989383041859
+TO-DO case: fDamage is  189.875869751  fRadius is  2.19999909401  Compare  0.995712220669  -  0.0632919594646  vs  0.933212220669 pSystem is Neutron Pulse 2
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 2  to status  0.989383041859
+Setting splash damage for Minbari Sharlin-1 to (2125.000000, 42.500000)
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+TO-DO case: fDamage is  105.374298096  fRadius is  2.19999909401  Compare  1.0  -  0.0526871494949  vs  0.947312891483 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.998946249485
+TO-DO case: fDamage is  105.374298096  fRadius is  2.19999909401  Compare  1.0  -  0.10537429899  vs  0.894625723362 pSystem is PolyCrystalline Armour Plating
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  PolyCrystalline Armour Plating  to status  0.99789249897
+TO-DO case: fDamage is  105.374298096  fRadius is  2.19999909401  Compare  1.0  -  0.0263435747474  vs  0.973656415939 pSystem is Gravimetric Fusion Beams
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Gravimetric Fusion Beams  to status  0.999473154545
+TO-DO case: fDamage is  105.374298096  fRadius is  2.19999909401  Compare  1.0  -  0.0810571536422  vs  0.91894286871 pSystem is Shuttle Bay 1
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Shuttle Bay 1  to status  0.998378872871
+TO-DO case: fDamage is  319.3230896  fRadius is  2.19999909401  Compare  0.998946249485  -  0.15966154635  vs  0.839532136917 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.982980072498
+TO-DO case: fDamage is  319.3230896  fRadius is  2.19999909401  Compare  0.99789249897  -  0.319323092699  vs  0.680676877499 pSystem is PolyCrystalline Armour Plating
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  PolyCrystalline Armour Plating  to status  0.965960204601
+TO-DO case: fDamage is  319.3230896  fRadius is  2.19999909401  Compare  0.999473154545  -  0.0798307731748  vs  0.920169234276 pSystem is Gravimetric Fusion Beams
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Gravimetric Fusion Beams  to status  0.991490066051
+TO-DO case: fDamage is  319.3230896  fRadius is  2.19999909401  Compare  0.998378872871  -  0.245633140206  vs  0.753293991089 pSystem is Shuttle Bay 1
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Shuttle Bay 1  to status  0.973815560341
+Setting splash damage for Minbari Sharlin-1 to (1959.490234, 39.189804)
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+auto switching Bridge to EnterpriseCbridge
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+TO-DO case: fDamage is  104.002807617  fRadius is  2.19999909401  Compare  1.0  -  0.0520014055073  vs  0.947998583317 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.99913328886
+TO-DO case: fDamage is  104.002807617  fRadius is  2.19999909401  Compare  1.0  -  0.0346676036716  vs  0.965332329273 pSystem is GFBeam2
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  GFBeam2  to status  0.999422192574
+TO-DO case: fDamage is  104.002807617  fRadius is  2.19999909401  Compare  1.0  -  0.0346676036716  vs  0.965332329273 pSystem is Neutron Pulse 1
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 1  to status  0.999422192574
+TO-DO case: fDamage is  104.002807617  fRadius is  2.19999909401  Compare  1.0  -  0.0346676036716  vs  0.965332329273 pSystem is Neutron Pulse 2
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 2  to status  0.999422192574
+TO-DO case: fDamage is  104.002807617  fRadius is  2.19999909401  Compare  1.0  -  0.0800021588802  vs  0.919997811317 pSystem is Shuttle Bay 1
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Shuttle Bay 1  to status  0.998666644096
+TO-DO case: fDamage is  396.761566162  fRadius is  2.19999909401  Compare  0.99913328886  -  0.1983807832  vs  0.800752520561 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.982601583004
+TO-DO case: fDamage is  396.761566162  fRadius is  2.19999909401  Compare  0.999422192574  -  0.132253855467  vs  0.867746174335 pSystem is GFBeam2
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  GFBeam2  to status  0.988401055336
+TO-DO case: fDamage is  396.761566162  fRadius is  2.19999909401  Compare  0.999422192574  -  0.132253855467  vs  0.867746174335 pSystem is Neutron Pulse 1
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 1  to status  0.988401055336
+TO-DO case: fDamage is  396.761566162  fRadius is  2.19999909401  Compare  0.999422192574  -  0.132253855467  vs  0.867746174335 pSystem is Neutron Pulse 2
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 2  to status  0.988401055336
+TO-DO case: fDamage is  396.761566162  fRadius is  2.19999909401  Compare  0.998666644096  -  0.305201202631  vs  0.693709075451 pSystem is Shuttle Bay 1
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Shuttle Bay 1  to status  0.973233222961
+Setting splash damage for Minbari Sharlin-1 to (2125.000000, 42.500000)
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Trying to clean memory
+TO-DO case: fDamage is  2.29290175438  fRadius is  0.5  Compare  1.0  -  0.0011464508716  vs  0.998853564262 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.999942660332
+TO-DO case: fDamage is  100.0  fRadius is  0.0324999988079  Compare  0.999942660332  -  0.0500000007451  vs  0.949999988079 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.997442662716
+TO-DO case: fDamage is  295.850006104  fRadius is  0.0961512476206  Compare  0.997442662716  -  0.147925004363  vs  0.850012719631 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.960461437702
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 22 Apr 2026 19:29:36#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Custom.Autoload.FIX-EngineerCharacterHandlers : Patched your  Bridge.EngineerCharacterHandlers  to cover 0-shield-strength ships
+Updated FoundationTech.ShipInstance's DefendVS* Fixes
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version  20260222 )
+Custom.Autoload.TWEAK-ShuttleFrameworkDropShields  tweaked Shuttle Launch Framework LaunchShip conditions.
+Patched TacticalControlInterfaces.CycleCameraMode to add mode viewing modes
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+# DS9FX has...
+
+# taken a console dump
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+TO-DO case: fDamage is  108.054595947  fRadius is  2.19999909401  Compare  1.0  -  0.0540272966027  vs  0.94597274065 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.998919427395
+TO-DO case: fDamage is  108.054595947  fRadius is  2.19999909401  Compare  1.0  -  0.0360182002187  vs  0.963981747627 pSystem is GFBeam3
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  GFBeam3  to status  0.999279618263
+TO-DO case: fDamage is  108.054595947  fRadius is  2.19999909401  Compare  1.0  -  0.0360182002187  vs  0.963981747627 pSystem is Neutron Pulse 1
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 1  to status  0.999279618263
+TO-DO case: fDamage is  108.054595947  fRadius is  2.19999909401  Compare  1.0  -  0.0360182002187  vs  0.963981747627 pSystem is Neutron Pulse 2
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 2  to status  0.999279618263
+TO-DO case: fDamage is  175.008789063  fRadius is  2.19999909401  Compare  0.998919427395  -  0.0875043943524  vs  0.912108004093 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.993568360806
+TO-DO case: fDamage is  175.008789063  fRadius is  2.19999909401  Compare  0.999279618263  -  0.0583362616599  vs  0.941663742065 pSystem is GFBeam3
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  GFBeam3  to status  0.995712220669
+TO-DO case: fDamage is  175.008789063  fRadius is  2.19999909401  Compare  0.999279618263  -  0.0583362616599  vs  0.941663742065 pSystem is Neutron Pulse 1
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 1  to status  0.995712220669
+TO-DO case: fDamage is  175.008789063  fRadius is  2.19999909401  Compare  0.999279618263  -  0.0583362616599  vs  0.941663742065 pSystem is Neutron Pulse 2
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 2  to status  0.995712220669
+TO-DO case: fDamage is  189.875869751  fRadius is  2.19999909401  Compare  0.993568360806  -  0.0949379354715  vs  0.898828446865 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.98407459259
+TO-DO case: fDamage is  189.875869751  fRadius is  2.19999909401  Compare  0.995712220669  -  0.0632919594646  vs  0.933212220669 pSystem is GFBeam3
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  GFBeam3  to status  0.989383041859
+TO-DO case: fDamage is  189.875869751  fRadius is  2.19999909401  Compare  0.995712220669  -  0.0632919594646  vs  0.933212220669 pSystem is Neutron Pulse 1
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 1  to status  0.989383041859
+TO-DO case: fDamage is  189.875869751  fRadius is  2.19999909401  Compare  0.995712220669  -  0.0632919594646  vs  0.933212220669 pSystem is Neutron Pulse 2
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 2  to status  0.989383041859
+Setting splash damage for Minbari Sharlin-1 to (2125.000000, 42.500000)
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+TO-DO case: fDamage is  105.374298096  fRadius is  2.19999909401  Compare  1.0  -  0.0526871494949  vs  0.947312891483 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.998946249485
+TO-DO case: fDamage is  105.374298096  fRadius is  2.19999909401  Compare  1.0  -  0.10537429899  vs  0.894625723362 pSystem is PolyCrystalline Armour Plating
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  PolyCrystalline Armour Plating  to status  0.99789249897
+TO-DO case: fDamage is  105.374298096  fRadius is  2.19999909401  Compare  1.0  -  0.0263435747474  vs  0.973656415939 pSystem is Gravimetric Fusion Beams
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Gravimetric Fusion Beams  to status  0.999473154545
+TO-DO case: fDamage is  105.374298096  fRadius is  2.19999909401  Compare  1.0  -  0.0810571536422  vs  0.91894286871 pSystem is Shuttle Bay 1
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Shuttle Bay 1  to status  0.998378872871
+TO-DO case: fDamage is  319.3230896  fRadius is  2.19999909401  Compare  0.998946249485  -  0.15966154635  vs  0.839532136917 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.982980072498
+TO-DO case: fDamage is  319.3230896  fRadius is  2.19999909401  Compare  0.99789249897  -  0.319323092699  vs  0.680676877499 pSystem is PolyCrystalline Armour Plating
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  PolyCrystalline Armour Plating  to status  0.965960204601
+TO-DO case: fDamage is  319.3230896  fRadius is  2.19999909401  Compare  0.999473154545  -  0.0798307731748  vs  0.920169234276 pSystem is Gravimetric Fusion Beams
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Gravimetric Fusion Beams  to status  0.991490066051
+TO-DO case: fDamage is  319.3230896  fRadius is  2.19999909401  Compare  0.998378872871  -  0.245633140206  vs  0.753293991089 pSystem is Shuttle Bay 1
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Shuttle Bay 1  to status  0.973815560341
+Setting splash damage for Minbari Sharlin-1 to (1959.490234, 39.189804)
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+auto switching Bridge to EnterpriseCbridge
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+TO-DO case: fDamage is  104.002807617  fRadius is  2.19999909401  Compare  1.0  -  0.0520014055073  vs  0.947998583317 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.99913328886
+TO-DO case: fDamage is  104.002807617  fRadius is  2.19999909401  Compare  1.0  -  0.0346676036716  vs  0.965332329273 pSystem is GFBeam2
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  GFBeam2  to status  0.999422192574
+TO-DO case: fDamage is  104.002807617  fRadius is  2.19999909401  Compare  1.0  -  0.0346676036716  vs  0.965332329273 pSystem is Neutron Pulse 1
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 1  to status  0.999422192574
+TO-DO case: fDamage is  104.002807617  fRadius is  2.19999909401  Compare  1.0  -  0.0346676036716  vs  0.965332329273 pSystem is Neutron Pulse 2
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 2  to status  0.999422192574
+TO-DO case: fDamage is  104.002807617  fRadius is  2.19999909401  Compare  1.0  -  0.0800021588802  vs  0.919997811317 pSystem is Shuttle Bay 1
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Shuttle Bay 1  to status  0.998666644096
+TO-DO case: fDamage is  396.761566162  fRadius is  2.19999909401  Compare  0.99913328886  -  0.1983807832  vs  0.800752520561 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.982601583004
+TO-DO case: fDamage is  396.761566162  fRadius is  2.19999909401  Compare  0.999422192574  -  0.132253855467  vs  0.867746174335 pSystem is GFBeam2
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  GFBeam2  to status  0.988401055336
+TO-DO case: fDamage is  396.761566162  fRadius is  2.19999909401  Compare  0.999422192574  -  0.132253855467  vs  0.867746174335 pSystem is Neutron Pulse 1
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 1  to status  0.988401055336
+TO-DO case: fDamage is  396.761566162  fRadius is  2.19999909401  Compare  0.999422192574  -  0.132253855467  vs  0.867746174335 pSystem is Neutron Pulse 2
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Neutron Pulse 2  to status  0.988401055336
+TO-DO case: fDamage is  396.761566162  fRadius is  2.19999909401  Compare  0.998666644096  -  0.305201202631  vs  0.693709075451 pSystem is Shuttle Bay 1
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Shuttle Bay 1  to status  0.973233222961
+Setting splash damage for Minbari Sharlin-1 to (2125.000000, 42.500000)
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Trying to clean memory
+TO-DO case: fDamage is  2.29290175438  fRadius is  0.5  Compare  1.0  -  0.0011464508716  vs  0.998853564262 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.999942660332
+TO-DO case: fDamage is  100.0  fRadius is  0.0324999988079  Compare  0.999942660332  -  0.0500000007451  vs  0.949999988079 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.997442662716
+TO-DO case: fDamage is  295.850006104  fRadius is  0.0961512476206  Compare  0.997442662716  -  0.147925004363  vs  0.850012719631 pSystem is Hull
+TO-DO Protecting plate works, applying...
+TO-DO set subsystem:  Hull  to status  0.960461437702
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 22 Apr 2026 19:33:52#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Custom.Autoload.FIX-EngineerCharacterHandlers : Patched your  Bridge.EngineerCharacterHandlers  to cover 0-shield-strength ships
+Updated FoundationTech.ShipInstance's DefendVS* Fixes
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version  20260222 )
+Custom.Autoload.TWEAK-ShuttleFrameworkDropShields  tweaked Shuttle Launch Framework LaunchShip conditions.
+Patched TacticalControlInterfaces.CycleCameraMode to add mode viewing modes
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+# DS9FX has...
+
+# taken a console dump
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting splash damage for Minbari Sharlin-1 to (2125.000000, 42.500000)
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 22 Apr 2026 19:33:52#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Custom.Autoload.FIX-EngineerCharacterHandlers : Patched your  Bridge.EngineerCharacterHandlers  to cover 0-shield-strength ships
+Updated FoundationTech.ShipInstance's DefendVS* Fixes
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version  20260222 )
+Custom.Autoload.TWEAK-ShuttleFrameworkDropShields  tweaked Shuttle Launch Framework LaunchShip conditions.
+Patched TacticalControlInterfaces.CycleCameraMode to add mode viewing modes
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+
+# DS9FX has...
+
+# taken a console dump
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting splash damage for Minbari Sharlin-1 to (2125.000000, 42.500000)
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####

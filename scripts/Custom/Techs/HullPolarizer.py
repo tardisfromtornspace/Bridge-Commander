@@ -42,8 +42,12 @@ class PolarizedHullPlatingDef(FoundationTech.TechDef):
 		fixedAmount = None
 		maxEffec = 0.0
 		minEffec = 1.0
+		mathFactor = 1.0
 		if pInstance.__dict__[self.name].has_key("Fixed"):
 			fixedAmount = pInstance.__dict__[self.name]["Fixed"]
+		if pInstance.__dict__[self.name].has_key("mathFactor"):
+			mathFactor = pInstance.__dict__[self.name]["mathFactor"]
+
 		if pInstance.__dict__[self.name].has_key("minEffec"):
 			minEffec = 1 - pInstance.__dict__[self.name]["minEffec"]
 			if minEffec < 0:
@@ -187,25 +191,32 @@ class PolarizedHullPlatingDef(FoundationTech.TechDef):
 		lAffectedSystems = []
 		kProtectingPlatePos = NiPoint3ToTGPoint3(pProtectingPlate.GetPosition())
 		kProtectingPlateRad = pProtectingPlate.GetRadius()
+
+		paHull=pShip.GetHull()
+		paHullName = None
+		if (paHull != None):
+			paHullName = paHull.GetName()
+			if (not paHull.IsTargetable()) and (not (paHullName in lArmorNames)):
+				lAffectedSystems.append(paHull)
+
 		for pSystem in lSystems:
 			if pSystem.IsTargetable():
 				vDifference = NiPoint3ToTGPoint3(pSystem.GetPosition())
 				auxEx = 0
 				if (placePosMatters):
 					vDifference.Subtract(kProtectingPlatePos)
-					auxEx = kProtectingPlateRad
+					auxEx = kProtectingPlateRad + pSystem.GetRadius()
 				else:
 					vDifference.Subtract(kPoint)
-					auxEx = fRadius
+					auxEx = (fRadius + pSystem.GetRadius()) * mathFactor
 
-				if auxEx + pSystem.GetRadius() >= vDifference.Length():
+				if (auxEx >= vDifference.Length()) or (paHullName != None and paHullName == pSystem.GetName()):
+					#if auxEx / mathFactor < vDifference.Length():
+					#	print "System originally not in range but admitted ", pSystem.GetName(), " auxEx (", (auxEx/mathFactor), ") + sysRad (", pSystem.GetRadius(), ") < ", vDifference.Length()
 					lAffectedSystems.append(pSystem)
 				else:
+					#print "System not in range ", pSystem.GetName(), " auxEx (", auxEx, ") + sysRad (", pSystem.GetRadius(), ") < ", vDifference.Length()
 					dOldConditions[pSystem.GetName()] = pSystem.GetConditionPercentage()
-
-		pHull=pShip.GetHull()
-		if (pHull != None and (not pHull.IsTargetable()) and (not (pHull.GetName() in lArmorNames))):
-			lAffectedSystems.append(pHull)
 		
 		# calculate the damage per radius
 		fAllocatedFactor = 0
@@ -231,12 +242,11 @@ class PolarizedHullPlatingDef(FoundationTech.TechDef):
 			inversePlateCondition = 1
 
 		if (fixedAmount is None):
-			#TO-DO original piece of code: polarizerEffectiveness = (1-pProcPlateCP) * energyCommited
 			if ((platingEffect * 0.999) <= 1):
 				polarizerEffectiveness = (1 - (platingEffect * 0.999))
 			else:
-				polarizerEffectiveness = 1/(platingEffect * 0.999)
-			polarizerEffectiveness = polarizerEffectiveness * inversePlateCondition
+				polarizerEffectiveness = 0.001
+			#polarizerEffectiveness = polarizerEffectiveness
 		else:
 			polarizerEffectiveness = fixedAmount
 
@@ -249,9 +259,15 @@ class PolarizedHullPlatingDef(FoundationTech.TechDef):
 		lenTotalAffectedSystems = bPlateAtRange + len(lAffectedSystems)
 		genericDamageReduction = 0 # Misleading name, this is the damage done
 		if lenTotalAffectedSystems > 0:
-			#TO-DO genericDamageReduction = 1.5 * inversePlateCondition * polarizerEffectiveness * fAllocatedFactor / lenTotalAffectedSystems
+			#genericDamageReduction = 1.5 * inversePlateCondition * polarizerEffectiveness * fAllocatedFactor / lenTotalAffectedSystems
 			#genericDamageReduction = 1.5 * (fDamage * inversePlateCondition * polarizerEffectiveness * fAllocatedFactor / lenTotalAffectedSystems)
-			genericDamageReduction = 1 * (fDamage * polarizerEffectiveness * fAllocatedFactor / lenTotalAffectedSystems)
+			if (placePosMatters):
+				genericDamageReduction = 1 * (fDamage * polarizerEffectiveness * fAllocatedFactor / lenTotalAffectedSystems)
+			else:
+				divideEffect = lenTotalAffectedSystems # (lenTotalAffectedSystems / 2)
+				if divideEffect < 1:
+					divideEffect = 1
+				genericDamageReduction = 1 * (fDamage * polarizerEffectiveness * fAllocatedFactor / divideEffect) # TO-DO there's no need for lenTotalAffectedSystems since we are re-dealing the damage
 
 		for pSystem in lAffectedSystems:
 			if not dOldConditions.has_key(pSystem.GetName()):
@@ -265,55 +281,23 @@ class PolarizedHullPlatingDef(FoundationTech.TechDef):
 			fcurrentCondition = pSystem.GetConditionPercentage()
 			minAdminsible = (fDamage / fsysMaxCondition)
 
+			#print "case: fDamage is ", fDamage, " fRadius is ", fRadius , " Compare ", dOldConditions[pSystem.GetName()], " - ", (minAdminsible), " vs ", fcurrentCondition, "pSystem is", pSystem.GetName()
 			if dOldConditions[pSystem.GetName()] < pSystem.GetConditionPercentage():
 				dOldConditions[pSystem.GetName()] = pSystem.GetConditionPercentage()
-			elif minAdminsible > 0 and (dOldConditions[pSystem.GetName()] - (1.04 * fAllocatedFactor/lenTotalAffectedSystems )) > fcurrentCondition: ## Very dirty roundabout way to prevent insta-heal after explosions and collisions
-				postExplodeCondition = fcurrentCondition + (minAdminsible * fAllocatedFactor/lenTotalAffectedSystems)
+			elif minAdminsible > 0 and (dOldConditions[pSystem.GetName()] - (1.04 * minAdminsible)) > fcurrentCondition: ## Very dirty roundabout way to prevent insta-heal after explosions and collisions
+				#print "detected weird case: fDamage is ", fDamage, " fRadius is ", fRadius , " Compare ", dOldConditions[pSystem.GetName()], " - ", (minAdminsible), " vs ", fcurrentCondition, "pSystem is", pSystem.GetName()
+				postExplodeCondition = fcurrentCondition + (minAdminsible)
+				if postExplodeCondition > dOldConditions[pSystem.GetName()]:
+					postExplodeCondition = dOldConditions[pSystem.GetName()]
 				if postExplodeCondition > 1:
 					postExplodeCondition = 1
 				dOldConditions[pSystem.GetName()] = postExplodeCondition
 					
 			fOldCondition = dOldConditions[pSystem.GetName()]
 			if fOldCondition > 0.0:
-				if not pProtectingPlate.IsDisabled() and not pSystem.GetName() == pProtectingPlate.GetName():
-					"""
-					## TO-DO ORIGINAL KINDA CODE
-					fDiff = 1 - fOldCondition + (fDamage / pSystem.GetMaxCondition()) # Percentage of total health damaged before + percentage of the new damage = current
-					# some of these calcs could be done outside the loop
-					fNewCondition = fOldCondition - (fDiff * genericDamageReduction)
-
-
-					################33
-					## TO-DO "THINK" CODE
-					# Damage received is:
-					perceivedDamage = (fDamage / pSystem.GetMaxCondition()) / lenTotalAffectedSystems
-						# THAT IS EQUAL TO
-					perceivedDamage = (fDamage / lenTotalAffectedSystems / pSystem.GetMaxCondition()
-					# the "new" condition we are in would be then
-					fNewCondition = fOldCondition - perceivedDamage
-
-					# THE "alternative new" "reduced" damage condition would be something like:
-					fNewCondition = fOldCondition - (perceivedDamage * genericDamageReduction))
-
-					# Then the armour resistance would be like
-					fNewCondition = fOldCondition - ((fDamage / lenTotalAffectedSystems / pSystem.GetMaxCondition()) * genericDamageReduction)
-						# THAT IS EQUAL TO					
-					fNewCondition = fOldCondition - ((fDamage * genericDamageReduction / lenTotalAffectedSystems) / pSystem.GetMaxCondition())
-						# THAT IS EQUAL TO
-					fNewCondition = fOldCondition - ((fDamage * genericDamageReduction / lenTotalAffectedSystems) / pSystem.GetMaxCondition())
-						# THAT IS EQUAL TO	
-					fNewCondition = fOldCondition - ((fDamage * inversePlateCondition * polarizerEffectiveness / lenTotalAffectedSystems) / pSystem.GetMaxCondition())
-				
-
-					fDiff = fOldCondition - ((fDamage / pSystem.GetMaxCondition())/ lenTotalAffectedSystems)
-
-					#################33
-					"""
-					## TO-DO TEST LINES
+				if (not pProtectingPlate.IsDisabled()) and not (pSystem.GetName() == pProtectingPlate.GetName()):
 					fNewCondition = fOldCondition - (genericDamageReduction / pSystem.GetMaxCondition())
-					## TO-DO TEST LINES
 
-					#TO-DO minAdminsible = (fDamage / pSystem.GetMaxCondition())
 					if fNewCondition > (fOldCondition + minAdminsible):
 						fNewCondition = fOldCondition
 
@@ -345,7 +329,6 @@ class PolarizedHullPlatingDef(FoundationTech.TechDef):
 		 	if oYield.IsPhaseYield() or oYield.IsDrainYield():
 		 		return
 
-		#if pEvent.IsHullHit():
 		return self.OnDefense(pShip, pInstance, oYield, pEvent)
 
 	def OnPulseDefense(self, pShip, pInstance, pTorp, oYield, pEvent):

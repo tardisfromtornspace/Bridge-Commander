@@ -2,9 +2,9 @@ import App
 def Create(pTorp):
 
 	kGlowColor = App.TGColorA()
-	kGlowColor.SetRGBA(200.0 / 255.0, 0.0 / 255.0, 0.0 / 255.0, 1.000000)	
+	kGlowColor.SetRGBA(0.0 / 255.0, 0.0 / 255.0, 0.0 / 255.0, 0.000000)	
 	kCoreColor = App.TGColorA()
-	kCoreColor.SetRGBA(255.0 / 255.0, 200.0 / 255.0, 0.0 / 255.0, 1.000000)
+	kCoreColor.SetRGBA(0.0 / 255.0, 0.0 / 255.0, 0.0 / 255.0, 0.000000)
 
 	# Params are:
 
@@ -19,7 +19,7 @@ def Create(pTorp):
 					0.35,	 
 					0.6,	
 					"data/textures/tactical/PhotonFlares.tga",
-					kGlowColor,										
+					kCoreColor,										
 					8,		
 					0.5,		
 					0.4)
@@ -49,10 +49,10 @@ def GetName():
 	return("Target Control")
 
 def GetDamage():
-	return 900.0
+	return 10.0
 
 def GetGuidanceLifetime():
-	return 10.0
+	return 1.0
 
 def GetMaxAngularAccel():
 	return 0.15
