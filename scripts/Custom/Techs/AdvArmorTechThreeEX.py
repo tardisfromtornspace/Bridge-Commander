@@ -10,7 +10,7 @@ import traceback
 from bcdebug import debug
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-            "Version": "0.114",
+            "Version": "0.115",
             "License": "LGPL",
             "Description": "Read info below for better understanding"
             }
@@ -25,11 +25,12 @@ Sample Setup:
 # -- NOTE: "Energy Subsystems" is a dictionary entry that provides a list, that list indicates the names and order of the hardpoint properties used for the energy-side of this tech (invincible but can be harmed, since that damage is needed to verify the actual "energy-absorbed" damage) - only the first of those listed will be actually considered for the task, and if the tech is "Online", it will reverse the damage received to that property in particular, in a similar way to AdvArmorTechThree. By default (not mentioned/entry present but not a list/cannot find any of the listed properties) it's the primary hull property.
 # -- NOTE: "Battery Percentage Limit": is a dictionary which indicates how much percentage of the battery limit is considered before the armor fails - default is 0.05 (if your main battery limit is as 5% or less it will shut down).
 # -- NOTE: "Battery Percentage Shutdown Drain": is a dictionary which indicates a percentage of the total battery limit that the battery is set to when the armor fails. Default is 0 (it will fully deplete the main battery). If you wanted it to se set at 100% then it would be 1, and for 50% 0.5
-# -- NOTE: "Armor Subsystems" is a dictionary entry that provides a list, which indicates the names of the subsystems used for the "armor plate" side of this tech (these are set to "invincible" but can be harmed and actually destroyed according to the damage absorbed by the chosen "energy-absorber" subystem (not the actual energy systems)). Once all armors are essentially destroyed o disabled, the armor tech will switch to "Offline". By default (not mentioned/cannot find any of the listed properties) this is set to the Power property. If this entry's value holds something that is not a list, it will work as if no armors were needed.
+# -- NOTE: "Armor Subsystems" is a dictionary entry that provides a list, which indicates the names of the subsystems used for the "armor plate" side of this tech (these are set to "invincible" but can be harmed and actually destroyed according to the damage absorbed by the chosen "energy-absorber" subystem (not the actual energy systems)). Once all armors are essentially destroyed or disabled, the armor tech will switch to "Offline". By default (not mentioned/cannot find any of the listed properties) this is set to the Power property. If this entry's value holds something that is not a list, it will work as if no armors were needed.
 # -- NOTE: All properties not considered as "Energy Subsystems"/"energy-absorbers"/"Armor subsystems" will be invincible as long as this armor tech is "On", and any regular damage received by them will be reversed in a similar fashion to Fed Ablative Armor (will try to reset the subsystem's health to the last saved condition).
+# -- NOTE: Systems considered as Armor can be manually made not invincible by adding the parameter "ArmorVincible": 1, in case you require to do so. This paremater will also add an extra "bit" to consider if an armor system is disabled for this tech. For example, if certain armor is normally disabled at 0.5 (50%) of its max health and you add "ArmorVincible": 0.05, that will make it so that armor is considered disabled/offline for this technology at 0.55 (55%).
 # -- NOTE: replace "AMVoyager" with your abbrev
 Foundation.ShipDef.AMVoyager.dTechs = {
-	'Adv Armor Tech EX': {"Energy Subsystems": [], "Armor Subsystems": [], "Battery Percentage Limit": 0.05, "Battery Percentage Shutdown Drain": 0}
+	'Adv Armor Tech EX': {"Energy Subsystems": [], "Armor Subsystems": [], "Battery Percentage Limit": 0.05, "Battery Percentage Shutdown Drain": 0,  "ArmorVincible": 0}
 }
 
 # In scripts/ships/yourShip.py
@@ -357,10 +358,10 @@ class AdvArmorTechEXDef(FoundationTech.TechDef):
 oAdvArmorTechEX = AdvArmorTechEXDef(TECH_NAME)
 
 # Extra functions
-def detectBrokenSubsystemFromList(pShip, pSubsystem, subSystemList, subSystemPoundList, extraDamage=0, removeHeal=0, broken = 0, total = 0, pTech=None):
+def detectBrokenSubsystemFromList(pShip, pSubsystem, subSystemList, subSystemPoundList, extraDamage=0, removeHeal=0, broken = 0, total = 0, pTech=None, percentageExtra = 0):
 	if (pSubsystem.GetName() in subSystemList):
 		total = total + 1
-		broken = broken + ((pSubsystem.GetCondition() <= 0.0) or (pSubsystem.GetCondition() - extraDamage <= 0.0 ) or (pSubsystem.IsDisabled()))
+		broken = broken + ((pSubsystem.GetCondition() <= 0.0) or (pSubsystem.GetCondition() - extraDamage <= 0.0 ) or (pSubsystem.IsDisabled() or (pSubsystem.GetConditionPercentage() <= (pSubsystem.GetDisabledPercentage() + percentageExtra))))
 
 	iChildren = pSubsystem.GetNumChildSubsystems()
 	if iChildren > 0:
@@ -372,12 +373,15 @@ def detectBrokenSubsystemFromList(pShip, pSubsystem, subSystemList, subSystemPou
 
 def healSubsystemAndChild(pShip, pSubsystem, subSystemList, subSystemPoundList, extraDamage=0, removeHeal=0, invinState=0, depth = 0, systemsToDestroy=[], pTech=None, chosenSponges=[]): # removeHeal=0 (don't remove), invinState=0 (not invincible)
 	dOldConditions = None
+	armorvincible = 0
 	if pTech != None:
 		dOldConditions = pTech["Ships"][pShip.GetObjID()]
+		armorvincible = pTech["ArmorVincible"]
 
 	subSysName = pSubsystem.GetName()
+	imArmor = (subSysName in subSystemList)
 
-	if (subSysName in subSystemList): # the "armor"
+	if (imArmor): # the "armor"
 		if not pSubsystem.IsTargetable() and (invinState == 1):
 			finalDmg = pSubsystem.GetMaxCondition() - extraDamage
 			if finalDmg > 0.0:
@@ -413,25 +417,24 @@ def healSubsystemAndChild(pShip, pSubsystem, subSystemList, subSystemPoundList, 
 
 			fNewCondition = None
 			if invinState == 1 and not (fCurrentCondition <= 0):
-				if fOldCondition >= 10: # That is, it got destroyed before but now it has been rebuilt:
+				if fOldCondition <= 0: # That is, it got destroyed before but now it has been rebuilt:
 					fOldCondition = fCurrentCondition 
-					if subSysName == subSystemPoundList:
+					if imTheEnergyBackup:
 						fOldCondition = fOldCondition + (extraDamage/(pSubsystem.GetMaxCondition()+0.000001))
 
 				if fCurrentCondition > fOldCondition:
-					#fNewCondition = fCurrentCondition
 					fNewCondition = fCurrentCondition
 				else:
 					fNewCondition = fOldCondition
+
 				pSubsystem.SetConditionPercentage(fNewCondition)
 			else:
 				fNewCondition = fCurrentCondition
 
 			if fNewCondition < 0:
-				iOld = fOldCondition
-				if iOld > 10:
-					iOld = iOld - 10.0
-				fNewCondition = 10.0 + iOld # we establish the system was destroyed beyond regular repair.
+				iOld = -abs(fOldCondition)
+				fNewCondition = iOld # we establish the system was destroyed beyond regular repair.
+
 			dOldConditions[subSysName] = fNewCondition
 
 	iChildren = pSubsystem.GetNumChildSubsystems()
@@ -442,9 +445,10 @@ def healSubsystemAndChild(pShip, pSubsystem, subSystemList, subSystemPoundList, 
 				systemsToDestroy = healSubsystemAndChild(pShip, pChild, subSystemList, subSystemPoundList, extraDamage, removeHeal, invinState, depth + 1, systemsToDestroy, pTech)
 
 	if  (invinState != -1) and ((invinState == 0) or (not pSubsystem.IsInvincible())):
-		pSubsystem.SetInvincible(invinState)
-
-
+		leStat = invinState
+		if imArmor and (armorvincible >= 1):
+			leStat = 0
+		pSubsystem.SetInvincible(leStat)
 
 	if depth == 0:
 		for system in systemsToDestroy:
@@ -459,6 +463,8 @@ def healSubsystemAndChild(pShip, pSubsystem, subSystemList, subSystemPoundList, 
 def unhurtAllSubsystemsExceptASet(pShip, subSystemList, subSystemPoundList, extraDamage=0, removeHeal=0, pTech=None, chosenSponges=[], extraDamage1=0):
 	try:
 		if pTech != None:
+			if not pTech.has_key("ArmorVincible"):
+				pTech["ArmorVincible"] = 0
 			if not pTech.has_key("Ships"):
 				pTech["Ships"] = {}
 			if not pTech["Ships"].has_key(pShip.GetObjID()):
@@ -475,11 +481,14 @@ def unhurtAllSubsystemsExceptASet(pShip, subSystemList, subSystemPoundList, extr
 		total = 0
 		armorsList = (type(subSystemList) == type([]))
 		if removeHeal == 0 and armorsList:
+			extraTest = 0
+			if pTech["ArmorVincible"] < 1:
+				extraTest = pTech["ArmorVincible"]
 			pIterator = pShip.StartGetSubsystemMatch(App.CT_SHIP_SUBSYSTEM)
 			pSubsystem = pShip.GetNextSubsystemMatch(pIterator)
 
 			while pSubsystem:
-				broken, total = detectBrokenSubsystemFromList(pShip, pSubsystem, subSystemList, subSystemPoundList, extraDamage, removeHeal, broken, total, pTech)
+				broken, total = detectBrokenSubsystemFromList(pShip, pSubsystem, subSystemList, subSystemPoundList, extraDamage, removeHeal, broken, total, pTech, extraTest)
 				pSubsystem = pShip.GetNextSubsystemMatch(pIterator)
 
 			pShip.EndGetSubsystemMatch(pIterator)
@@ -490,7 +499,7 @@ def unhurtAllSubsystemsExceptASet(pShip, subSystemList, subSystemPoundList, extr
 
 		invinState = -1
 		if removeHeal != -1:
-			invinState = ((removeHeal == 0) and not ((total == 0) or (broken/total >= 1.0)))
+			invinState = ((removeHeal == 0) and not ((total == 0) or (broken >= total)))
 
 		pIterator = pShip.StartGetSubsystemMatch(App.CT_SHIP_SUBSYSTEM)
 		pSubsystem = pShip.GetNextSubsystemMatch(pIterator)
@@ -716,6 +725,7 @@ def AdvArmorPlayer(aShip=None, isPlayer=1, techName = TECH_NAME): # For player
 		if (theCondition):
 			theCondition = -1
 
+	# theCondtion = -1 means armor offline, 0 that it is unknown
 	batt_chg=pPower.GetMainBatteryPower()
 	batt_limit=pPower.GetMainBatteryLimit()
 
@@ -740,6 +750,7 @@ def AdvArmorPlayer(aShip=None, isPlayer=1, techName = TECH_NAME): # For player
 		inde = inde + 1
 
 	if not energySponge:
+		print __name__, ": this tech cannot find any of the subsystems listed on 'Energy Subsystems', defaulting to Hull ", theCondition 
 		energySponge = pHull
 		senergySpongeName.append(sHullName)
 		if len(subSystemPoundList) <= 0:

@@ -1,4 +1,7 @@
 ==Changelog==
+1.8.2 -
+   Fixes:
+   * Updated HullPolarizer to 1.365 to fix explosions and collision bugs.
 1.8.1 -
    Updates:
    * Updated HullPolarizer to 1.35 to provide better options when simulating Policrystalline armour.
