@@ -1,6 +1,6 @@
 # THIS MOD IS NOT SUPPORTED BY ACTIVISION
 # HullPolarizer.py
-# Version 1.365
+# Version 1.395
 # By Alex SL Gato
 # Based on FedAblativeArmour.py and AblativeArmour.py made by the FoundationTechnologies team (specifically, but not only, MLeo) and scripts/Custom/DS9FX/DS9FXLifeSupport/HandleShields.py by USS Sovereign
 from bcdebug import debug
@@ -10,7 +10,7 @@ import Foundation
 
 MODINFO = {
 		"Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-		"Version": "1.365",
+		"Version": "1.395",
 		"License": "LGPL",
 		"Description": "Read the small title above for more info"
 	}
@@ -34,6 +34,8 @@ class PolarizedHullPlatingDef(FoundationTech.TechDef):
 	
 	def OnDefense(self, pShip, pInstance, oYield, pEvent):
 		debug(__name__ + ", OnDefense")
+		if not pShip or pShip.IsDead() or pShip.IsDying():
+			return 
 		kTiming = App.TGProfilingInfo("PolarizedHullPlatingDef, OnDefense")
 		if not pInstance.__dict__[self.name].has_key("Plates"):
 			print "Polarized Hull Plating Error: No plates found"
@@ -43,10 +45,22 @@ class PolarizedHullPlatingDef(FoundationTech.TechDef):
 		maxEffec = 0.0
 		minEffec = 1.0
 		mathFactor = 1.0
+		mathPower = 2.0
+		visibleMathPower = 1.0
+		baseVisibleEffectRad = 0.98
+		baseVisibleEffectStr = 0.95
 		if pInstance.__dict__[self.name].has_key("Fixed"):
 			fixedAmount = pInstance.__dict__[self.name]["Fixed"]
 		if pInstance.__dict__[self.name].has_key("mathFactor"):
 			mathFactor = pInstance.__dict__[self.name]["mathFactor"]
+		if pInstance.__dict__[self.name].has_key("Math Pow"):
+			mathPower = pInstance.__dict__[self.name]["Math Pow"]
+		if pInstance.__dict__[self.name].has_key("Visible Math Pow"):
+			visibleMathPower = pInstance.__dict__[self.name]["Visible Math Pow"]
+		if pInstance.__dict__[self.name].has_key("Visible Effect Rad"):
+			baseVisibleEffectRad = pInstance.__dict__[self.name]["Visible Effect Rad"]
+		if pInstance.__dict__[self.name].has_key("Visible Effect Str"):
+			baseVisibleEffectStr = pInstance.__dict__[self.name]["Visible Effect Str"]
 
 		if pInstance.__dict__[self.name].has_key("minEffec"):
 			minEffec = 1 - pInstance.__dict__[self.name]["minEffec"]
@@ -148,7 +162,7 @@ class PolarizedHullPlatingDef(FoundationTech.TechDef):
 			for pSystem in lSystems:
 				dOldConditions[pSystem.GetName()] = pSystem.GetConditionPercentage()
 
-			if (not incremental):
+			if (not incremental) or (placePosMatters):
 				return
 			else:
 				placePosMatters = 0
@@ -168,12 +182,18 @@ class PolarizedHullPlatingDef(FoundationTech.TechDef):
 			return
 
 		if not noAvailablePlate:
-			damageRadiVal = 1 - 0.85 * platingEffect
-			if damageRadiVal < 0.0:
+			#damageRadiVal = 1 - 0.85 * platingEffect
+			damageRadiVal = (1 - baseVisibleEffectRad * platingEffect) 
+			if damageRadiVal <= 0.0:
 				damageRadiVal = 0
-			damageStreVal = 1 - 0.75 * platingEffect
-			if damageStreVal < 0.0:
+			else:
+				damageRadiVal = (damageRadiVal ** visibleMathPower)
+			#damageStreVal = 1 - 0.75 * platingEffect
+			damageStreVal = (1 - baseVisibleEffectStr * platingEffect) 
+			if damageStreVal <= 0.0:
 				damageStreVal = 0
+			else:
+				damageStreVal =	(damageStreVal ** visibleMathPower)
 
 			pShip.SetVisibleDamageRadiusModifier(damageRadiVal)
 			pShip.SetVisibleDamageStrengthModifier(damageStreVal)
@@ -182,15 +202,27 @@ class PolarizedHullPlatingDef(FoundationTech.TechDef):
 		if not pEvent.IsHullHit():
 			return
 
-		if fDamage <= 0.0 or platingEffect <= 0: # If it heals us or does nothing, do not prevent the hull polarizer from healing, just store damage values
+		isPhasedOrDrain = 0
+		if oYield:
+			if hasattr(oYield, "IsPhaseYield"):
+				isPhasedOrDrain = oYield.IsPhaseYield()
+			if isPhasedOrDrain != 0 and hasattr(oYield, "IsDrainYield"):
+				isPhasedOrDrain = oYield.IsDrainYield()
+			if isPhasedOrDrain != 0 and hasattr(oYield, "IsTransphasicYield"):
+				isPhasedOrDrain = oYield.IsTransphasicYield()
+
+		if fDamage <= 0.0 or noAvailablePlate or platingEffect <= 0 or isPhasedOrDrain: # If it heals us or does nothing, do not prevent the hull polarizer from healing, just store damage values
 			for pSystem in lSystems:
 				dOldConditions[pSystem.GetName()] = pSystem.GetConditionPercentage()
 			return
 
 		# get affected systems
 		lAffectedSystems = []
-		kProtectingPlatePos = NiPoint3ToTGPoint3(pProtectingPlate.GetPosition())
-		kProtectingPlateRad = pProtectingPlate.GetRadius()
+		kProtectingPlatePos = None
+		kProtectingPlateRad = None
+		if (placePosMatters):
+			kProtectingPlatePos = NiPoint3ToTGPoint3(pProtectingPlate.GetPosition())
+			kProtectingPlateRad = pProtectingPlate.GetRadius()
 
 		paHull=pShip.GetHull()
 		paHullName = None
@@ -201,21 +233,27 @@ class PolarizedHullPlatingDef(FoundationTech.TechDef):
 
 		for pSystem in lSystems:
 			if pSystem.IsTargetable():
-				vDifference = NiPoint3ToTGPoint3(pSystem.GetPosition())
+				vDifference = NiPoint3ToTGPoint3(pSystem.GetDamagePoint())
 				auxEx = 0
+				auxExP = 0
+				distEx = 0
 				if (placePosMatters):
 					vDifference.Subtract(kProtectingPlatePos)
-					auxEx = kProtectingPlateRad + pSystem.GetRadius()
+					auxExP = kProtectingPlateRad + pSystem.GetRadius()
+					distEx = vDifference.Length()
 				else:
 					vDifference.Subtract(kPoint)
-					auxEx = (fRadius + pSystem.GetRadius()) * mathFactor
+
+					leRa = pSystem.GetRadius()
+					auxEx = (fRadius + leRa)
+					auxExP = (auxEx * mathFactor) #TO-DO ? + 0.001
+					distEx = vDifference.Length() # (vDifference.Length() / pShip.GetRadius())
+
+				#print "System '", pSystem.GetName(), "'" + " sysP=(", vSysPos.x, vSysPos.y, vSysPos.z, ")",  " evtP=(", kPoint.x, kPoint.y, kPoint.z, ")",  " vDiff=((", vDifference.x, vDifference.y, vDifference.z, ")",  " len=", vDifference.Length(),  "); evtR(", fRadius, ")",  " + sysR(", pSystem.GetRadius(), ")",  " = auxEx(", auxEx, ")",  "->auxExP(", auxExP, ")",    " is in range? (auxExP >= distEx): ", auxExP >= distEx
 
 				if (auxEx >= vDifference.Length()) or (paHullName != None and paHullName == pSystem.GetName()):
-					#if auxEx / mathFactor < vDifference.Length():
-					#	print "System originally not in range but admitted ", pSystem.GetName(), " auxEx (", (auxEx/mathFactor), ") + sysRad (", pSystem.GetRadius(), ") < ", vDifference.Length()
 					lAffectedSystems.append(pSystem)
 				else:
-					#print "System not in range ", pSystem.GetName(), " auxEx (", auxEx, ") + sysRad (", pSystem.GetRadius(), ") < ", vDifference.Length()
 					dOldConditions[pSystem.GetName()] = pSystem.GetConditionPercentage()
 		
 		# calculate the damage per radius
@@ -236,17 +274,17 @@ class PolarizedHullPlatingDef(FoundationTech.TechDef):
 			pProcPlateCP = pProtectingPlate.GetConditionPercentage()
 			dOldConditions[pProtectingPlate.GetName()] = pProcPlateCP
 
-		if (fixedAmount is None):
-			inversePlateCondition = 1-pProcPlateCP
-		else:
-			inversePlateCondition = 1
+		#if (fixedAmount is None):
+		#	inversePlateCondition = 1-pProcPlateCP
+		#else:
+		#	inversePlateCondition = 1
 
 		if (fixedAmount is None):
 			if ((platingEffect * 0.999) <= 1):
 				polarizerEffectiveness = (1 - (platingEffect * 0.999))
 			else:
 				polarizerEffectiveness = 0.001
-			#polarizerEffectiveness = polarizerEffectiveness
+			polarizerEffectiveness = polarizerEffectiveness ** mathPower
 		else:
 			polarizerEffectiveness = fixedAmount
 

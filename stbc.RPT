@@ -15994,3 +15994,9 @@ Couldn't initialize symbol reader, no symbol info available
 Call stack:
 Address   Frame     Logical addr  Module
 00717874  7A60AF5C  0001:00316874 C:\ASL\Soft\GithubProjects\Bridge-Commander\stbc.exe
+//=====================================================
+Current Time: Wed Apr 22 22:36:23 2026
+Exception code: C0000005 ACCESS_VIOLATION
+//=====================================================
+Current Time: Thu Apr 23 00:12:05 2026
+Exception code: C0000005 ACCESS_VIOLATION
