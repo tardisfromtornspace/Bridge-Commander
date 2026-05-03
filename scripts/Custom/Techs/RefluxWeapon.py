@@ -46,7 +46,7 @@ try:
 	from math import *
 
 	class RefluxWeapon(FoundationTech.TechDef):
-                lThePercentage = 0.0
+                lThePercentage = {}
 
 		def __init__(self, name, dict = {}):
 			FoundationTech.TechDef.__init__(self, name, FoundationTech.dMode)
@@ -81,9 +81,13 @@ try:
 				Percentage = pInstance.__dict__['Reflux Weapon'] # This means the defender can modulate the percent drain, even heal from it.
 				Percentage = (Percentage / 1000000.0) # User values are on a 1-1000000 range, we use 0.000000-1.000000 range
 			except:
-				Percentage = self.lThePercentage
+				mod = pTorp.GetModuleName()
+				Percentage = None
+				if mod != None:
+					Percentage = self.lThePercentage[mod]
 				if not Percentage or Percentage == 0.0:
 					Percentage = 0.01 # Default
+
 			print Percentage
 
 			pShields = pShip.GetShields()
@@ -102,7 +106,7 @@ try:
 
 		def AddTorpedo(self, path, myPercent):
 			FoundationTech.dYields[path] = self
-			self.lThePercentage = myPercent
+			self.lThePercentage[path] = myPercent
 
 	def IsInList(item, list):
 		for i in list:
@@ -121,9 +125,16 @@ except:
 class RefluxWeaponDef(FoundationTech.TechDef):
 
 	def OnTorpDefense(self, pShip, pInstance, pTorp, oYield, pEvent):
+		self.OnProjectileDefense(pShip, pInstance, pTorp, oYield, pEvent)
+
+	def OnPulseDefense(self, pShip, pInstance, pTorp, oYield, pEvent):
+		self.OnProjectileDefense(pShip, pInstance, pTorp, oYield, pEvent)
+
+	def OnProjectileDefense(self, pShip, pInstance, pTorp, oYield, pEvent):
 		isThis = 0
 		try:
-			isThis = oYield.IsRefluxWeaponYield()
+			if oYield and hasattr(oYield, "IsRefluxWeaponYield"):
+				isThis = oYield.IsRefluxWeaponYield()
 		except:
 			isThis = 0
 		if oYield and isThis:
@@ -131,6 +142,7 @@ class RefluxWeaponDef(FoundationTech.TechDef):
 
 	def Attach(self, pInstance):
 		pInstance.lTorpDefense.append(self)
+		pInstance.lPulseDefense.append(self)
 
 
 oRefluxWeaponImmunity = RefluxWeaponDef('Reflux Weapon Immune')
