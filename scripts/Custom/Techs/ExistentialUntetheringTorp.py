@@ -1,7 +1,7 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
 #         ExistentialUntetheringTorp
-#         11th April 2024
+#         4th May 2025
 #         by Alex SL Gato, based on SGHoppingTorpedo tech, which was most likely based on PhasedTorp and other ftb team techs, and a function from AlteranteSubModelFTL by Alex SL Gato (with the function itself being probably from a mod by Defiant).
 #         TO-DO THIS IS A STUB, SO LATER ON GREYSTAR CAN MODIFY AT LEISURE
 #         TO-DO ALSO I RECOMMEND THAT IF CURRENT IMMUNITY CHECK IMPLEMENTATION IS USED, TO FUSE THE TECHS INTO ONE SINCE ONLY SHIPS USE THE IMMUNITY
@@ -35,7 +35,7 @@ Foundation.ShipDef.Ambassador.dTechs = {
 """
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-            "Version": "0.11",
+            "Version": "0.12",
             "License": "LGPL",
             "Description": "Read the small title above for more info"
             }
@@ -298,11 +298,11 @@ try:
 		"""
 		def OnTorpDefense(self, pShip, pInstance, pTorp, oYield, pEvent):
 			debug(__name__ + ", OnTorpDefense")
-			self.OnProjectileDefense(pShip, pInstance, pTorp, oYield, pEvent)
+			return self.OnProjectileDefense(pShip, pInstance, pTorp, oYield, pEvent)
 
 		def OnPulseDefense(self, pShip, pInstance, pTorp, oYield, pEvent):
 			debug(__name__ + ", OnPulseDefense")
-			self.OnProjectileDefense(pShip, pInstance, pTorp, oYield, pEvent)
+			return self.OnProjectileDefense(pShip, pInstance, pTorp, oYield, pEvent)
 
 		def OnProjectileDefense(self, pShip, pInstance, pTorp, oYield, pEvent):
 			debug(__name__ + ", OnProjectileDefense")

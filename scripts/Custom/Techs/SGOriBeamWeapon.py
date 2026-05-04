@@ -1,6 +1,6 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
-# 8th September 2024, by Alex SL Gato (CharaToLoki)
+# 4th May 2026, by Alex SL Gato (CharaToLoki)
 #         Based on SGOriBeamWeapon and BorgAdaptation.py by Alex SL Gato, which were based on the Foundation import function by Dasher; the Shield.py scripts and KM Armour scripts and FoundationTechnologies team's PhasedTorp.py
 #         Also based on ATPFunctions by Apollo.
 #################################################################################################################
@@ -122,7 +122,7 @@ import nt
 import string
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-            "Version": "0.2",
+            "Version": "0.3",
             "License": "LGPL",
             "Description": "Read the small title above for more info"
             }
@@ -831,11 +831,11 @@ class SGOriBeamsWeaponDef(FoundationTech.TechDef):
 
 	def OnTorpDefense(self, pShip, pInstance, pTorp, oYield, pEvent):
 		debug(__name__ + ", OnTorpDefense")
-		self.OnProjectileDefense(pShip, pInstance, pTorp, oYield, pEvent)
+		return self.OnProjectileDefense(pShip, pInstance, pTorp, oYield, pEvent)
 
 	def OnPulseDefense(self, pShip, pInstance, pTorp, oYield, pEvent):
 		debug(__name__ + ", OnPulseDefense")
-		self.OnProjectileDefense(pShip, pInstance, pTorp, oYield, pEvent)
+		return self.OnProjectileDefense(pShip, pInstance, pTorp, oYield, pEvent)
 
 	def OnProjectileDefense(self, pShip, pInstance, pTorp, oYield, pEvent):
 		debug(__name__ + ", OnProjectileDefense")

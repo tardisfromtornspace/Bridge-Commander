@@ -33,6 +33,8 @@ import App
 
 import string
 
+import traceback
+
 global lImmuneRefluxWeaponShips # Some ships immune to this blow
 lImmuneRefluxWeaponShips = (
                 "Tardis",
@@ -125,10 +127,10 @@ except:
 class RefluxWeaponDef(FoundationTech.TechDef):
 
 	def OnTorpDefense(self, pShip, pInstance, pTorp, oYield, pEvent):
-		self.OnProjectileDefense(pShip, pInstance, pTorp, oYield, pEvent)
+		return self.OnProjectileDefense(pShip, pInstance, pTorp, oYield, pEvent)
 
 	def OnPulseDefense(self, pShip, pInstance, pTorp, oYield, pEvent):
-		self.OnProjectileDefense(pShip, pInstance, pTorp, oYield, pEvent)
+		return self.OnProjectileDefense(pShip, pInstance, pTorp, oYield, pEvent)
 
 	def OnProjectileDefense(self, pShip, pInstance, pTorp, oYield, pEvent):
 		isThis = 0
@@ -136,7 +138,9 @@ class RefluxWeaponDef(FoundationTech.TechDef):
 			if oYield and hasattr(oYield, "IsRefluxWeaponYield"):
 				isThis = oYield.IsRefluxWeaponYield()
 		except:
+			traceback.print_exc()
 			isThis = 0
+
 		if oYield and isThis:
 			return 1
 

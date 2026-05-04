@@ -1,6 +1,6 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
-# 4th September 2024, by Alex SL Gato (CharaToLoki)
+# 4th May 2026, by Alex SL Gato (CharaToLoki)
 #         Based on BorgAdaptation.py and PhasedTorp.py by Alex SL Gato, which were based on the Foundation import function by Dasher; the Shield.py scripts and KM Armour scripts and FoundationTechnologies team's PhasedTorp.py
 #         Also based on ATPFunctions by Apollo.
 #################################################################################################################
@@ -176,7 +176,7 @@ import nt
 import string
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-            "Version": "0.94",
+            "Version": "0.95",
             "License": "LGPL",
             "Description": "Read the small title above for more info"
             }
@@ -678,10 +678,10 @@ except:
 class SGIonWeaponDef(FoundationTech.TechDef):
 
 	def OnTorpDefense(self, pShip, pInstance, pTorp, oYield, pEvent):
-		self.OnProjectileDefense(pShip, pInstance, pTorp, oYield, pEvent)
+		return self.OnProjectileDefense(pShip, pInstance, pTorp, oYield, pEvent)
 
 	def OnPulseDefense(self, pShip, pInstance, pTorp, oYield, pEvent):
-		self.OnProjectileDefense(pShip, pInstance, pTorp, oYield, pEvent)
+		return self.OnProjectileDefense(pShip, pInstance, pTorp, oYield, pEvent)
 
 	def OnProjectileDefense(self, pShip, pInstance, pTorp, oYield, pEvent):
 		if oYield and hasattr(oYield, "IsSGIonWeaponYield") and oYield.IsSGIonWeaponYield() != 0 and pInstance and pInstance.__dict__.has_key('SG Ion Weapon Immune') and pInstance.__dict__['SG Ion Weapon Immune'] >= 2:
