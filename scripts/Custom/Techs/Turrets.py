@@ -1,6 +1,6 @@
 """
 #         Turrets
-#         15th March 2026
+#         12th May 2026
 #         Based strongly on SubModels.py by USS Defiant and their team, and AutoTargeting.py by USS Frontier.
 #         Also based slightly on AdvancedTorpedoManagement.py from BCSTB Team, the Borg Technology from Alex SL Gato, and ConditionInLineOfSight by the original STBC team
 #         Special thanks to USS Sovereign and Gizmo_3.
@@ -162,9 +162,11 @@ import MissionLib
 
 import Multiplayer.SpeciesToTorp
 
+import string
+
 #################################################################################################################
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "1.18",
+	    "Version": "1.19",
 	    "License": "LGPL",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -1524,12 +1526,34 @@ def EnterSet(pObject, pEvent):
                 pInstanceShipID = getShipIDfromInstance(pInstanceA)
                 pInstanceO = pEntry[0]
                 if pInstanceShipID != myShipID: # Weird but can happen for the player - trying to make this as player-agnostic as possible, in case this ever gets implemented for multiplayer
-                    #print "calling EnterSet --> trueDetach"
+                    #print "calling EnterSet --> trueDetach", pShip.GetName()
                     oTurrets.trueDetach(pInstanceO, myShipID) # Maybe we should not add that here...
                 else:
                     if pInstanceA != None:
-                        #print "calling EnterSet --> Detach Parts"
+                        #print "calling EnterSet --> Detach Parts", pShip.GetName()
                         oTurrets.DetachParts(pShip, pInstanceA) # This would not only ensure that the proximity manager stops complaining, but also cleans any possible turrets left behind
+                        """
+                        try:
+                            pPlayer = MissionLib.GetPlayer()
+                            if pPlayer and pPlayer.GetObjID() == pShip.GetObjID(): # Bugfix for weird situation when sometimes the player ship is not listening to ExitSet
+                                pShip.RemoveHandlerForInstance(App.ET_EXITED_SET, __name__ + ".ExitSet")
+                                pShip.AddPythonFuncHandlerForInstance(App.ET_EXITED_SET, __name__ + ".ExitSet")
+
+                                pSet = pShip.GetContainingSet()
+			        if pSet != None:
+                                    sSetName = pSet.GetName()
+                                    if sSetName:
+                                        sSetname = string.lower(sSetName)
+                                        if not (sSetname == "travelset" or sSetname == "warp" or (string.find(sSetname, "travelset") + 1) > 0):
+                                            # call ExitingWarp in a few seconds
+                                            pSeq = App.TGSequence_Create()
+                                            pSeq.AppendAction(App.TGScriptAction_Create(__name__, "ExitingWarp", pShip.GetObjID()), 4.5)
+                                            pSeq.Play()
+                        except:
+                            traceback.print_exc()
+                        """
+
+        return 0
 
 # called when a ship exits a Set. Replacement for WARP_END Handler.
 def ExitSet(pObject, pEvent):
@@ -1544,6 +1568,7 @@ def ExitSet(pObject, pEvent):
         sSetName = pEvent.GetCString()
 
         if pShip:
+            #print "called ExitSet for ", pShip.GetName()
             myShipID = pShip.GetObjID()
             pEntry = oTurrets.GetBattleTurretListenerEntry(myShipID)
             if pEntry != None:
@@ -1551,18 +1576,18 @@ def ExitSet(pObject, pEvent):
                 pInstanceShipID = getShipIDfromInstance(pInstanceA)
                 pInstanceO = pEntry[0]
                 if pInstanceShipID != myShipID: # Weird but can happen for the player - trying to make this as player-agnostic as possible, in case this ever gets implemented for multiplayer
-                    #print "calling EnterSet --> trueDetach"
+                    #print "calling ExitSet --> trueDetach", pShip.GetName()
                     oTurrets.trueDetach(pInstanceO, myShipID)
                 else:
                     if pInstanceA != None:
-                        #print "calling EnterSet --> Detach Parts"
+                        #print "calling ExitSet --> Detach Parts", pShip.GetName()
                         oTurrets.DetachParts(pShip, pInstanceA) # This would not only ensure that the proximity manager stops complaining, but also cleans any possible turrets left behind
 
                     # if the system we come from is the warp system, then we exitwarp, right?
                     if sSetName == "warp":
                         # call ExitingWarp in a few seconds
                         pSeq = App.TGSequence_Create()
-                        pSeq.AppendAction(App.TGScriptAction_Create(__name__, "ExitingWarp", pShip), 4.0)
+                        pSeq.AppendAction(App.TGScriptAction_Create(__name__, "ExitingWarp", pShip.GetObjID()), 4.0)
                         pSeq.Play()
                     else:
                         if pInstanceA and not oTurrets.ArePartsAttached(pShip, pInstanceA):
@@ -1577,8 +1602,10 @@ def ExitSet(pObject, pEvent):
                                 dGenShipDict["AlertLevel"] = pShip.GetAlertLevel()
                             iType = dGenShipDict["AlertLevel"]
 
+                            #print " ", pShip.GetName(), " iType = ", iType
                             pInstanceAdict = pInstanceA.__dict__
                             if pInstanceAdict[oTurrets.name]["Setup"].has_key("AttackModel") and iType == 2:
+                                    #print " in combat mode", pShip.GetName()
                                     oTurrets.AttachParts(pShip, pInstanceA)
                                     if pInstanceAdict[oTurrets.name]["Setup"].has_key("AttackModel"):
                                             sNewShipScript = pInstanceAdict[oTurrets.name]["Setup"]["AttackModel"]
@@ -1588,7 +1615,9 @@ def ExitSet(pObject, pEvent):
                                     oTurrets.SetBattleTurretListenerTo(pShip, 1) # Combat mode
 
                             else:
+                                    #print " Not in combat mode", pShip.GetName()
                                     if pInstanceAdict[oTurrets.name]["Setup"].has_key("NormalModel"):
+                                            #print " setting normal model", pShip.GetName()
                                             sNewShipScript = pInstanceAdict[oTurrets.name]["Setup"]["NormalModel"]
                                             ReplaceModel(pShip, sNewShipScript)
                                             checkingReCloak(pShip)
@@ -1596,6 +1625,7 @@ def ExitSet(pObject, pEvent):
                                     oTurrets.SetBattleTurretListenerTo(pShip, -1) # Not combat mode
     
         pObject.CallNextHandler(pEvent)
+        return 0
 
 
 # Replaces the Model of pShip
@@ -1606,9 +1636,9 @@ def ReplaceModel(pShip, sNewShipScript):
         if not pShip:
                 return
 
-        if App.g_kLODModelManager.AreGlowMapsEnabled() == 1 and App.g_kLODModelManager.GetDropLODLevel() == 0:
-                App.g_kLODModelManager.SetGlowMapsEnabled(0)
-                App.g_kLODModelManager.SetGlowMapsEnabled(1)
+        #if App.g_kLODModelManager.AreGlowMapsEnabled() == 1 and App.g_kLODModelManager.GetDropLODLevel() == 0:
+        #        App.g_kLODModelManager.SetGlowMapsEnabled(0)
+        #        App.g_kLODModelManager.SetGlowMapsEnabled(1)
 
         ShipScript = __import__('ships.' + sNewShipScript)
         ShipScript.LoadModel()
@@ -2202,7 +2232,6 @@ def WeaponFired(pObject, pEvent, stoppedFiring=None):
                         
         pObject.CallNextHandler(pEvent)
 
-# TO-DO
 def FireTorpFromPointWithVectorAndNetType(kPoint, kVector, pcTorpScriptName, idTarget, pShipID, fSpeed, NetType=None, damage=None, dmgRd=None, hidden=0, detectCollison= None, TGOffset = None, torpDmgMultiplier = None, lifeTime = None):
         # This is an slightly altered version of the original definition (MissionLib.py), to suit specific needs
 
@@ -2283,8 +2312,6 @@ def FireTorpFromPointWithVectorAndNetType(kPoint, kVector, pcTorpScriptName, idT
         #print "Torpedo mass", pTorp.GetMass()
 
         return pTorp
-# TO-DO ABOVE
-
 
 # Phasers maybe we cannot fix, but torps? Surely we can... right?
 def TorpedoTurretFiredTest(pObject, pEvent):
@@ -2963,6 +2990,11 @@ def StartingWarp(pObject, pEvent):
         pSeq.AppendAction(App.TGScriptAction_Create(__name__, "WarpStartMoveFinishAction", pShip, pInstance, thisMoveCurrentID), 2.0)
         pSeq.Play()
 
+        pPlayer = MissionLib.GetPlayer()
+        if pPlayer and pPlayer.GetObjID() == pShip.GetObjID(): # Bugfix for weird situation when sometimes the player ship is not listening to ExitSet
+            pShip.RemoveHandlerForInstance(App.ET_EXITED_SET, __name__ + ".ExitSet")
+            pShip.AddPythonFuncHandlerForInstance(App.ET_EXITED_SET, __name__ + ".ExitSet")
+
         pObject.CallNextHandler(pEvent)
 
 
@@ -2994,15 +3026,23 @@ def GetStartWarpNacellePositions(pShip):
         return ret
                 
 
-def ExitingWarp(pAction, pShip):
+def ExitingWarp(pAction, iShipID):
         debug(__name__ + ", ExitingWarp")
         if App.g_kUtopiaModule.IsMultiplayer() and not App.g_kUtopiaModule.IsHost():
                 debug(__name__ + ", ExitingWarp Return not host")
                 return 0
+
+        try:
+            pShip =  App.ShipClass_GetObjectByID(None, iShipID)
+        except:
+            pShip = None
+            traceback.print_exc()
+
+        if not pShip:
+            return 0
         
         pInstance = findShipInstance(pShip)
         iLongestTime = 0.0
-
         oTurrets.SetBattleTurretListenerTo(pShip, 0) # We clearly indicate we are in combat mode, but doing a thing
         IncCurrentMoveID(pShip, pInstance)
         dHardpoints = {}
