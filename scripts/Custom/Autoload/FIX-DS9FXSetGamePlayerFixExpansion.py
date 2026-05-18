@@ -1,7 +1,7 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # This file is an unofficial patch made by CharaToLoki (Alex SL Gato) for DS9FX that is ALL Rights Reserved by USS Sovereign, with the aim of this patch meant to extend the "SetGamePlayerFix" DS9FXLib file in order to extend "Transporter fix" functionality to also cover certain transporter issues.
 # The only code I own from this patch would fall under the LGPL license, but excluding the patch itself and patch conditions and fixes, the rest of the code is pretty much Sovereign's, so as always, ask permission first!
-# 30th September 2025
+# 18th May 2026
 # By Alex SL Gato, with permission from Sov
 
 import App
@@ -247,7 +247,8 @@ if needUpdate and scriptToPatch and hasattr(scriptToPatch, "Fix") and hasattr(sc
 				return 0
 	
 			localToGlobalSet(pShip)
-	
+			if pObject:
+				pObject.CallNextHandler(pEvent) 
 			return 0
 
 
