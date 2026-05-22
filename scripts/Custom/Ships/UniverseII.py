@@ -37,7 +37,7 @@ Foundation.ShipDef.UniverseII.dTechs = {
 	"Borg Attack Resistance": 60,
 	'Breen Drainer Immune': 1,
 	'ChronitonTorpe Immune': 1,
-	'Defensive AOE Siphon' : { "Distance": 55.0, "Power": -10000.0, "Efficiency": 0.99, "Resistance": 1.0,},
+	'Defensive AOE Siphoon' : { "Distance": 55.0, "Power": -10000.0, "Efficiency": 0.99, "Resistance": 1.0,},
 	"Digitizer Torpedo Immune": 1,
 	'Drainer Immune': 1,
 	'Multivectral Shields': 25,
@@ -51,6 +51,7 @@ Foundation.ShipDef.UniverseII.dTechs = {
 	"SG Asgard Beams Weapon Immune": 2,
 	'Transphasic Torpedo Immune': 1
 }
+
 
 if menuGroup:           Foundation.ShipDef.UniverseII.RegisterQBShipMenu(menuGroup)
 if playerMenuGroup:     Foundation.ShipDef.UniverseII.RegisterQBPlayerShipMenu(playerMenuGroup)

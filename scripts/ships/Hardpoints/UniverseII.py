@@ -1,12 +1,10 @@
-#####  Created by:
-#####  Tactical Display Icon Editor
-
-
+# C:\Program Files (x86)\GOG Galaxy\Games\Star Trek Bridge Commander\scripts\ships\Hardpoints\UniverseII.py
+# This file was automatically generated - modify at your own risk.
+# 
 
 import App
 import GlobalPropertyTemplates
-
-# Local Templates
+# Setting up local templates.
 #################################################
 ElukethiteEnergyDistributionPlating = App.HullProperty_Create("Elukethite Energy Distribution Plating")
 
@@ -4911,8 +4909,64 @@ AftPhaser4.SetPerimeterTile(1.000000)
 AftPhaser4.SetTextureSpeed(0.001000)
 AftPhaser4.SetTextureName("data/IntraflexiveRefluxArray.tga")
 App.g_kModelPropertyManager.RegisterLocalTemplate(AftPhaser4)
+#################################################
+FighterBayOEP = App.ObjectEmitterProperty_Create("Fighter Bay OEP")
 
-# Property Set
+FighterBayOEPForward = App.TGPoint3()
+FighterBayOEPForward.SetXYZ(0.000000, -1.000000, 0.000000)
+FighterBayOEPUp = App.TGPoint3()
+FighterBayOEPUp.SetXYZ(0.000000, 0.000000, 1.000000)
+FighterBayOEPRight = App.TGPoint3()
+FighterBayOEPRight.SetXYZ(1.000000, 0.000000, 0.000000)
+FighterBayOEP.SetOrientation(FighterBayOEPForward, FighterBayOEPUp, FighterBayOEPRight)
+FighterBayOEPPosition = App.TGPoint3()
+FighterBayOEPPosition.SetXYZ(0.000000, -11.750000, -0.450000)
+FighterBayOEP.SetPosition(FighterBayOEPPosition)
+FighterBayOEP.SetEmittedObjectType(FighterBayOEP.OEP_SHUTTLE)
+App.g_kModelPropertyManager.RegisterLocalTemplate(FighterBayOEP)
+#################################################
+FighterBay = App.HullProperty_Create("Fighter Bay")
+
+FighterBay.SetMaxCondition(25000.000000)
+FighterBay.SetCritical(0)
+FighterBay.SetTargetable(1)
+FighterBay.SetPrimary(0)
+FighterBay.SetPosition(0.000000, -10.850000, -0.450000)
+FighterBay.SetPosition2D(64.000000, 25.000000)
+FighterBay.SetRepairComplexity(1.000000)
+FighterBay.SetDisabledPercentage(0.000000)
+FighterBay.SetRadius(0.250000)
+App.g_kModelPropertyManager.RegisterLocalTemplate(FighterBay)
+#################################################
+ShuttleHangerOEP = App.ObjectEmitterProperty_Create("Shuttle Hanger OEP")
+
+ShuttleHangerOEPForward = App.TGPoint3()
+ShuttleHangerOEPForward.SetXYZ(0.000000, -1.000000, 0.000000)
+ShuttleHangerOEPUp = App.TGPoint3()
+ShuttleHangerOEPUp.SetXYZ(0.000000, 0.000000, 1.000000)
+ShuttleHangerOEPRight = App.TGPoint3()
+ShuttleHangerOEPRight.SetXYZ(1.000000, 0.000000, 0.000000)
+ShuttleHangerOEP.SetOrientation(ShuttleHangerOEPForward, ShuttleHangerOEPUp, ShuttleHangerOEPRight)
+ShuttleHangerOEPPosition = App.TGPoint3()
+ShuttleHangerOEPPosition.SetXYZ(0.000000, -11.750000, -0.700000)
+ShuttleHangerOEP.SetPosition(ShuttleHangerOEPPosition)
+ShuttleHangerOEP.SetEmittedObjectType(ShuttleHangerOEP.OEP_SHUTTLE)
+App.g_kModelPropertyManager.RegisterLocalTemplate(ShuttleHangerOEP)
+#################################################
+ShuttleHanger = App.HullProperty_Create("Shuttle Hanger")
+
+ShuttleHanger.SetMaxCondition(25000.000000)
+ShuttleHanger.SetCritical(0)
+ShuttleHanger.SetTargetable(1)
+ShuttleHanger.SetPrimary(0)
+ShuttleHanger.SetPosition(0.000000, -10.950000, -0.700000)
+ShuttleHanger.SetPosition2D(64.000000, 25.000000)
+ShuttleHanger.SetRepairComplexity(1.000000)
+ShuttleHanger.SetDisabledPercentage(0.000000)
+ShuttleHanger.SetRadius(0.250000)
+App.g_kModelPropertyManager.RegisterLocalTemplate(ShuttleHanger)
+
+# Property load function.
 def LoadPropertySet(pObj):
 	"Sets up the object's properties."
 	prop = App.g_kModelPropertyManager.FindByName("UniverseII", App.TGModelPropertyManager.LOCAL_TEMPLATES)
@@ -5240,5 +5294,17 @@ def LoadPropertySet(pObj):
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)
 	prop = App.g_kModelPropertyManager.FindByName("Aft Phaser 4", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	if (prop != None):
+		pObj.AddToSet("Scene Root", prop)
+	prop = App.g_kModelPropertyManager.FindByName("Fighter Bay", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	if (prop != None):
+		pObj.AddToSet("Scene Root", prop)
+	prop = App.g_kModelPropertyManager.FindByName("Fighter Bay OEP", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	if (prop != None):
+		pObj.AddToSet("Scene Root", prop)
+	prop = App.g_kModelPropertyManager.FindByName("Shuttle Hanger", App.TGModelPropertyManager.LOCAL_TEMPLATES)
+	if (prop != None):
+		pObj.AddToSet("Scene Root", prop)
+	prop = App.g_kModelPropertyManager.FindByName("Shuttle Hanger OEP", App.TGModelPropertyManager.LOCAL_TEMPLATES)
 	if (prop != None):
 		pObj.AddToSet("Scene Root", prop)

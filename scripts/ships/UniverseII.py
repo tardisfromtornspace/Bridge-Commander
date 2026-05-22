@@ -11,8 +11,7 @@ def GetShipStats():
 		"HardpointFile": "UniverseII",
 		"Species": Multiplayer.SpeciesToShip.AMBASSADOR,
 		"DamageRadMod" : 0.5,
-		"DamageStrMod" : 0.5,
-		"pickLeafSize" : 0.25
+		"DamageStrMod" : 0.5
 	}
 	return kShipStats
 
@@ -25,9 +24,9 @@ def LoadModel(bPreLoad = 0):
 		# Surface Damage Res, Internal Damage Res, Burn Value, Hole Value,
 		# Search String for Glow, Search string for Specular, Suffix for specular
 		pLODModel = App.g_kLODModelManager.Create(pStats["Name"])
-		pLODModel.AddLOD(pStats["FilenameHigh"], 10, 2000.0, 15.0, 15.0, 4500, 18500, "_glow", None, "_specular")
-		pLODModel.AddLOD(pStats["FilenameMed"],  10, 4000.0, 15.0, 15.0, 4500, 18500, "_glow", None, "_specular")
-		pLODModel.AddLOD(pStats["FilenameLow"],  10, 8000.0, 15.0, 30.0, 4500, 18500, "_glow", None, None)
+		pLODModel.AddLOD(pStats["FilenameHigh"], 12, 2000.0, 15.0, 15.0, 4500, 18500, "_glow", None, "_specular")
+		pLODModel.AddLOD(pStats["FilenameMed"],  12, 4000.0, 15.0, 15.0, 4500, 18500, "_glow", None, "_specular")
+		pLODModel.AddLOD(pStats["FilenameLow"],  12, 8000.0, 15.0, 30.0, 4500, 18500, "_glow", None, None)
 
 #		kDebugObj = App.CPyDebug()
 		if (bPreLoad == 0):
