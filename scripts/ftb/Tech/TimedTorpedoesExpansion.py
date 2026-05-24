@@ -1,7 +1,7 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE FOUNDATION LGPL LICENSE AS WELL
 # TimedTorpedoesExpansion.py
-# 20th February 2026, by Alex SL Gato, based and depending on TimedTorpedoes (by the ftb team; scripts/ftb/Techs/TimedTorpedoes or scripts/Custom/Techs/TimedTorpedoes) to work
+# 24th May 2026, by Alex SL Gato, based and depending on TimedTorpedoes (by the ftb team; scripts/ftb/Techs/TimedTorpedoes or scripts/Custom/Techs/TimedTorpedoes) to work
 # This script depends on Alex SL Gato's updated SolidProjectiles (by the ftb team; scripts/ftb/Techs/SolidProjectiles or scripts/Custom/Techs/SolidProjectiles) to work fully
 #################################################################################################################
 # This script:
@@ -238,7 +238,15 @@ def newCustomFunctionFor2(self, now, oTech, trpE):
 								typevalueMax = type(valueMax)
 								if type(1) == typevalueMax or type(1.0) == typevalueMax:
 									if newValue > valueMax:
-										newValue == valueMax
+										newValue = valueMax
+										trpE = 0
+							if hasattr(oTech, 'LOOK_CUSTOM_MIN_DMG'):
+								valueMin = oTech.LOOK_CUSTOM_MIN_DMG
+								typevalueMin = type(valueMin)
+								if type(1) == typevalueMin or type(1.0) == typevalueMin:
+									if newValue < valueMin:
+										newValue = valueMin
+										trpE = 0
 							if newValue < 0.00001:
 								newValue = 0.00001
 								trpE = 0
