@@ -16,6 +16,7 @@ Foundation.SoundDef("sfx/Weapons/IntraflexiveRefluxArray.wav", "IntraflexiveRefl
 Foundation.SoundDef("sfx/Weapons/LightIntraflexiveRefluxArray.wav", "LightIntraflexiveRefluxArray Start", 1)
 Foundation.SoundDef("sfx/Weapons/LightIntraflexiveRefluxArray.wav", "LightIntraflexiveRefluxArray Loop", 0)
 Foundation.SoundDef("sfx/Weapons/28thCenturyTractor.wav", "28thCenturyTractor", 1)
+Foundation.SoundDef("sfx/28CShuttleEngine.wav", "28CShuttleEngine", 1)
 Foundation.SoundDef("sfx/NornFighterEngine.wav", "NornFighterEngine", 1)
 Foundation.SoundDef("sfx/UniverseIIEngine.wav", "UniverseIIEngine", 1)
 
