@@ -1,5 +1,5 @@
-# VERSION 1.2.4
-# 15th March 2026
+# VERSION 1.2.5
+# 1st June 2026
 
 import App
 import string
@@ -351,13 +351,14 @@ if bEnabled:
 	if G_PATCHFIX == 1 or G_PATCHFIX > 2:
 		BCSTNGPlasmaFXoverride.BCSTNGPlasmaFXoverride = newBCSTNGPlasmaFXoverride
 
+	"""
 	from Custom.NanoFXv2 import NanoFX_Lib
 	oldCreateSpecialFXSeq = NanoFX_Lib.CreateSpecialFXSeq
 	def NewCreateSpecialFXSeq(pShipA, pEvent, sFXType, bPlay = 0):
 		debug(__name__ + ", NewCreateSpecialFXSeq")
 		shouldPass = FALSE
 		pSpecialFX = None
-		checkDeadDying = 1 # TO-DO 2, 1 or 0?
+		checkDeadDying = 0
 		pShip = None
 		iShipID = pShipA.GetObjID()
 		if (iShipID is not None) and iShipID != App.NULL_ID:
@@ -399,12 +400,12 @@ if bEnabled:
 				if (sFXType == "AtmosphereFX"):
 					try:
 						import Custom.NanoFXv2.SpecialFX.AtmosphereFX
-						pSpecialFX = Custom.NanoFXv2.SpecialFX.SpatialFX.CreateAtmosphereFX(pSet, sName, sPlacement, fSize)
+						pSpecialFX = Custom.NanoFXv2.SpecialFX.AtmosphereFX.CreateAtmosphereFX(pSet, sName, sPlacement, fSize)
 					except:
 						pSpecialFX = None
 						traceback.print_exc()
 
-				noneSpecial = (pSpecialFX is not None)
+				noneSpecial = (pSpecialFX is None)
 				if noneSpecial:
 					pSpecialFX = App.TGScriptAction_Create(__name__, "ASequenceDummy")
 				if (bPlay == 1):
@@ -428,6 +429,8 @@ if bEnabled:
 	# ENABLE PATCH TO APPLY
 	if G_PATCHFIX == 1 or G_PATCHFIX > 2:
 		NanoFX_Lib.CreateSpecialFXSeq = NewCreateSpecialFXSeq
+
+	"""
 
 	DELETE_OBJECT_FROM_SET_MSG = 211
 	def NewDeleteObjectFromSet(pSet, pShip):

@@ -1,4 +1,6 @@
 == Changelog ==
+0.8.6 - Fixes:
+  * Updated FIX-GCNormalWarpAndEnhancedWarp to version 20260601, adding some of Tethys' suggestions for camera and impulse.
 0.8.5 - Fixes:
   * Updated AlternateSubModelFTL to version 0.9 to fix a case with background and foreground rendering.
 0.8.4 - Fixes:

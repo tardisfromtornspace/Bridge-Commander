@@ -7,7 +7,7 @@
 # Below we have what NormalWarp would look like, then we add the replacement functions on a "monkey patch" section:
 # NormalWarp.py
 # prototype custom travelling method plugin script, by USS Frontier (Normal Warp, original) and then modified by Alex SL Gato
-# 12th September 2025
+# 1st June 2026
 #################################################################################################################
 ##########	MANUAL
 #################################################################################################################
@@ -38,8 +38,8 @@ Foundation.ShipDef.Ambassador.dTechs = { 'Turret': {} }
 #################################################################################################################
 #
 MODINFO = { "Author": "\"USS Frontier\" (original) and \"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "20250912",
-	    "License": "All Rights Reserved to USS Frontier, LGPL only on Alex SL Gato changes",
+	    "Version": "20260601",
+	    "License": "All Rights Reserved to USS Frontier, LGPL only on Alex SL Gato changes. Sepcial thanks to Tethys for testing.",
 	    "Description": "Read the small title above for more info"
 	    }
 #
@@ -497,14 +497,39 @@ def WatchPlayerShipLeave(pAction, sSet, sObjectName):
 	if not pMode:
 		return 0
 
+	awayDistance = 100000
+	forwardOffset = -7.0
+	sideOffset = -7.0
+	import traceback
+	try:
+		from Custom.NanoFXv2 import NanoFX_Config
+
+		cFX_AwayDistance = NanoFX_Config.cFX_AwayDistance
+		cFX_ForwardDistance = NanoFX_Config.cFX_ForwardDistance
+		if cFX_AwayDistance != None and cFX_AwayDistance >= 1 and cFX_AwayDistance <= 256:
+			awayDistance = awayDistance * cFX_AwayDistance
+
+		if cFX_ForwardDistance != None and cFX_ForwardDistance >= 6:
+			forwardOffset = cFX_ForwardDistance
+			sideOffset = -cFX_ForwardDistance
+
+		if App.g_kSystemWrapper.GetRandomNumber(100) < 50:
+			sideOffset = -sideOffset
+	except:
+		awayDistance = 100000
+		forwardOffset = -7.0
+		sideOffset = -7.0
+		print __name__,  " WatchPlayerShipLeave error:"
+		traceback.print_exc()
+
 	pMode.SetAttrFloat("AwayDistance", -1.0)
-	pMode.SetAttrFloat("ForwardOffset", -7.0)
-	pMode.SetAttrFloat("SideOffset", -7.0)
+	pMode.SetAttrFloat("ForwardOffset", forwardOffset)
+	pMode.SetAttrFloat("SideOffset", sideOffset)
 	pMode.SetAttrFloat("RangeAngle1", -360.0)
 	pMode.SetAttrFloat("RangeAngle2", 360.0)
 	pMode.SetAttrFloat("RangeAngle3", -360.0)
 	pMode.SetAttrFloat("RangeAngle4", 360.0)
-	pMode.SetAttrFloat("AwayDistance", 100000.0)
+	pMode.SetAttrFloat("AwayDistance", awayDistance)
 	pMode.Update()
 
 	return 0
@@ -602,6 +627,11 @@ def SetupSequence(self):
 			pWatchShipLeave = App.TGScriptAction_Create(__name__, "WatchPlayerShipLeave", pcOrig, pShip.GetName())
 			if pWatchShipLeave != None:
 				pEngageWarpSeq.AddAction(pWatchShipLeave, pCinematicStart)
+
+		# Make the ship move a little bit after warping, an extra suggested by Tethys.
+		pAccelAction = App.TGScriptAction_Create("Actions.ShipScriptActions", "SetImpulse", pShip.GetObjID(), 0.5)
+		if pAccelAction != None:
+			pEngageWarpSeq.AddAction(pAccelAction, pCinematicStart)
 		# END OF THE EXTRA
 
 
@@ -651,7 +681,7 @@ def SetupSequence(self):
 
 	pUnBoostAction = App.TGScriptAction_Create(sCustomActionsScript, "BoostShipSpeed", pShip.GetObjID(), 0, 1.0)
 	pEngageWarpSeq.AddAction(pUnBoostAction, pHideShip)
-	
+
 	pCheckTowing = App.TGScriptAction_Create(sCustomActionsScript, "EngageSeqTractorCheck", pWS)
 	pEngageWarpSeq.AddAction(pCheckTowing, pHideShip)
 
@@ -724,20 +754,26 @@ def SetupSequence(self):
 		pExitWarpSeq.AddAction(pWarpSoundAction2, pBoostAction2)
 	
 		# Make the ship return to normal speed.
-		pUnBoostAction = App.TGScriptAction_Create(sCustomActionsScript, "BoostShipSpeed", pShip.GetObjID(), 0, 1.0)
-		pExitWarpSeq.AddAction(pUnBoostAction, pWarpSoundAction2, 2.0)
+		pUnBoost2Action = App.TGScriptAction_Create(sCustomActionsScript, "BoostShipSpeed", pShip.GetObjID(), 0, 1.0)
+		pExitWarpSeq.AddAction(pUnBoost2Action, pWarpSoundAction2, 2.0)
 
 		# THIS WAS AN EXTRA ADDED TO RESTORE WARP STRETCHINESS
 		pStretchStopE0Action = App.TGScriptAction_Create(__name__, "theStagesOfGrief", pShip.GetObjID(), 1)
-		pExitWarpSeq.AddAction(pStretchStopE0Action, pUnBoostAction, 0.01)
+		pExitWarpSeq.AddAction(pStretchStopE0Action, pUnBoost2Action, 0.01)
 		# END OF THE EXTRA
+
+		# Make the ship move a little bit after warping, an extra suggested by Tethys.
+		if (pPlayer != None) and (pShip.GetObjID() == pPlayer.GetObjID()):
+			pAccel2Action = App.TGScriptAction_Create("Actions.ShipScriptActions", "SetImpulse", pShip.GetObjID(), 0.5)
+			if pAccel2Action != None:
+				pExitWarpSeq.AddAction(pAccel2Action, pUnBoost2Action)
 
 		# And finally finish the exit sequence
 		# actually, just put up a empty action, the Traveler system automatically puts his exit sequence action at the
 		# end of the sequence, and his exit action is necessary. However I want it to trigger at the right time, and doing
 		# this, i'll achieve that.
 		pExitWarpSeqEND = App.TGScriptAction_Create(sCustomActionsScript, "NoAction")
-		pExitWarpSeq.AddAction(pExitWarpSeqEND, pUnBoostAction, 1.5)
+		pExitWarpSeq.AddAction(pExitWarpSeqEND, pUnBoost2Action, 1.5)
 
 
 	###########################################################################################
