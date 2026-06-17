@@ -34,6 +34,7 @@ lActiveMutators = [
 	"""Allow Surrender""",
 	"""Nemesis Collisions""",
 	"""Repair Destroyed Systems""",
+	"""Stock KM Regions and Systems (Course-Set Menu)""",
 	"""Thrusters""",
 	"""Blind Firing""",
 	"""BanzaiZAP SystemPack""",

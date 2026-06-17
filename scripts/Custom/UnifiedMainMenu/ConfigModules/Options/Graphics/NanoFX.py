@@ -108,6 +108,9 @@ def CreateMenu(pOptionsPane, pContentPanel, bGameEnded = 0):
     pSpecialFXAtmos = CreateOnOffButton(App.TGString("AtmosphereFX: "), "sFX_AtmosphereGlowFX", NanoFX_Config.sFX_AtmosphereGlowFX)
     pSpecialFX.AddChild(pSpecialFXAtmos)
 
+    pSpecialFXAtmosAlt = CreateOnOffButton(App.TGString("AtmosphereALT: "), "sFX_AtmosphereAltFX", NanoFX_Config.sFX_AtmosphereAltFX)
+    pSpecialFX.AddChild(pSpecialFXAtmosAlt)
+
     pSpecialFXPlasma = CreateOnOffButton(App.TGString("PlasmaFX: "), "sFX_PlasmaFX", NanoFX_Config.sFX_PlasmaFX)
     pSpecialFX.AddChild(pSpecialFXPlasma)
 
@@ -160,6 +163,7 @@ def SaveConfig():
     sFX_Enabled = NanoFX_Config.sFX_Enabled
     ###
     sFX_AtmosphereGlowFX = NanoFX_Config.sFX_AtmosphereGlowFX
+    sFX_AtmosphereAltFX = NanoFX_Config.sFX_AtmosphereAltFX
     sFX_PlasmaFX = NanoFX_Config.sFX_PlasmaFX
     ###
     ###[WarpFX Settings]###
@@ -199,6 +203,7 @@ def SaveConfig():
     # Write special stuff
     nt.write(file, "###[SpecialFX Settings]###\nsFX_Enabled = " + str(sFX_Enabled) +
              "\n###\nsFX_AtmosphereGlowFX = \"" + str(sFX_AtmosphereGlowFX) + "\"" +
+             "\nsFX_AtmosphereAltFX = \"" + str(sFX_AtmosphereAltFX) + "\"" +
              "\nsFX_PlasmaFX = \"" + str(sFX_PlasmaFX) + "\"\n###\n")
     # Write warp stuff
     nt.write(file, "###[WarpFX Settings]###\nwFX_Enabled = " + str(wFX_Enabled) +

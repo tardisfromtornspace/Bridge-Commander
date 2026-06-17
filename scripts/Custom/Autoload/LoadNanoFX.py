@@ -75,6 +75,8 @@ class NanoFXTrigger(Foundation.TriggerDef):
 			from Custom.NanoFXv2.WarpFX import WarpFX_GUI
 			WarpFX_GUI.SetupWarpSpeedButtons()
 			
+			# TO-DO THIS IS QUITE A PICKLE TO MONKEY-PATCH... Oh dear
+			"""
 			import Systems.Starbase12.Starbase
 			Systems.Starbase12.Starbase.CreateMenus()
 
@@ -135,8 +137,8 @@ class NanoFXTrigger(Foundation.TriggerDef):
 			import Systems.Tezle.Tezle
 			Systems.Tezle.Tezle.CreateMenus()
 
-			import Systems.Vesuvi.Vesuvi
-			Systems.Vesuvi.Vesuvi.CreateMenus()
+			import Systems.Procyon.Procyon
+			Systems.Procyon.Procyon.CreateMenus()
 
 			import Systems.Voltair.Voltair
 			Systems.Voltair.Voltair.CreateMenus()
@@ -160,9 +162,6 @@ class NanoFXTrigger(Foundation.TriggerDef):
 			Systems.KavisAlpha.KavisAlpha.CreateMenus()
 
 			import Systems.Obstacles.Obstacles
-			Systems.Obstacles.Obstacles.CreateMenus()
-
-			import Systems.Procyon.Procyon
 			Systems.Obstacles.Obstacles.CreateMenus()
 			
 			import Systems.Ross_128.Ross_128
@@ -284,6 +283,21 @@ class NanoFXTrigger(Foundation.TriggerDef):
 
 			import Systems.Promellian.Promellian
 			Systems.Promellian.Promellian.CreateMenus()
+
+			try:
+				import Systems.Romii.Romii
+				Systems.Romii.Romii.CreateMenus()
+			except:
+				print __name__, ".NanoFXTrigger.__call__ error:"
+				traceback.print_exc()
+
+			try:
+				import Systems.Achernar.Achernar
+				Systems.Romii.Achernar.Achernar.CreateMenus()
+			except:
+				print __name__, ".NanoFXTrigger.__call__ error:"
+				traceback.print_exc()
+			"""
 
 		App.g_kEventManager.RemoveBroadcastHandler(App.ET_WEAPON_FIRED, pMission, "Custom.NanoFXv2.SpecialFX.WeaponFlashFX.CreateWeaponFlashFX")
 		App.g_kEventManager.AddBroadcastPythonFuncHandler(App.ET_WEAPON_FIRED, pMission, "Custom.NanoFXv2.SpecialFX.WeaponFlashFX.CreateWeaponFlashFX")

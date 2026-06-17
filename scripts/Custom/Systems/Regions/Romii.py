@@ -1,0 +1,15 @@
+from bcdebug import debug
+# This is a region plugin for Galaxy Charts and New Frontier, created by the System Plugin Creator Tool
+
+########## GENERAL REGION INFORMATION ##########
+
+Name = "Romii"
+ControllingEmpire = "Romulan"
+SectorNumber = 0
+ImagePath = ""
+Type = "Single"
+Location = [28.5, 25764.5]
+OnlyInQB = 0
+OnlyMult = 0
+SystemsFiles = ["Systems.Romii.Romii1", ]
+Description = " A core system native to the Romulan people, Romii is known for housing indigenous species and serving as an early settlement hub."

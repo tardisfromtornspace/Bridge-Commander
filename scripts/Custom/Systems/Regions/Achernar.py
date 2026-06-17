@@ -1,0 +1,15 @@
+from bcdebug import debug
+# This is a region plugin for Galaxy Charts and New Frontier, created by the System Plugin Creator Tool
+
+########## GENERAL REGION INFORMATION ##########
+
+Name = "Achernar"
+ControllingEmpire = "Romulan"
+SectorNumber = 0
+ImagePath = ""
+Type = "Single"
+Location = [78, 25782]
+OnlyInQB = 0
+OnlyMult = 0
+SystemsFiles = ["Systems.Achernar.Achernar1", ]
+Description = "Achernar system."

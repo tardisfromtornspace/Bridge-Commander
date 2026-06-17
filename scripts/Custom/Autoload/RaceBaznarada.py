@@ -2,7 +2,7 @@ import App
 import Foundation
 from bcdebug import debug
 
-oBaznaradaRace = Foundation.RaceDef("Baznarada", "Bnar")
+oBaznaradaRace = Foundation.RaceDef("Baznarada", "Baznarada")
 
 class BaznaradaShipDef(Foundation.ShipDef):
     def __init__(self, abbrev, species, dict):

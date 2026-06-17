@@ -1,0 +1,145 @@
+from bcdebug import debug
+import traceback
+import App
+import loadspacehelper
+import MissionLib
+import Tactical.LensFlares
+
+g_lRotatingBodies = []
+g_bRotationTimerRunning = 0
+
+def Initialize(pSet):
+
+        # Sun1
+	debug(__name__ + ", Initialize")
+	pSun = App.Sun_Create(10000.0, 5500, 500, "data/Textures/SunWhite.tga", "data/Textures/Effects/SunFlaresBlue.tga")
+	pSet.AddObjectToSet(pSun, "Sun")
+	
+	# Place the object at the specified location.
+	pSun.PlaceObjectByName( "Sun" )
+	pSun.UpdateNodeOnly()
+
+	# Builds a Blue lens flare for Sun 1
+	Tactical.LensFlares.BlueGlareSuperBright(pSet, pSun)
+
+        # Sun2
+	pSun2 = App.Sun_Create(2600.0, 1650, 500, "data/Textures/SunBlueWhite.tga", "data/Textures/Effects/SunFlaresWhite.tga")
+	pSet.AddObjectToSet(pSun2, "Sun2")
+	
+	# Place the object at the specified location.
+	pSun2.PlaceObjectByName( "Sun2" )
+	pSun2.UpdateNodeOnly()
+
+	# Builds a Blue lens flare for Sun 2
+	Tactical.LensFlares.WhiteLensFlare(pSet, pSun2)
+
+	pAchernarPlanet = App.Planet_Create(400.0, "data/Models/Environment/Planet/Achernar.NIF")
+	pSet.AddObjectToSet(pAchernarPlanet, "Achernar (Moon)")
+
+	pAchernarPlanet.PlaceObjectByName("Achernar Location")
+	pAchernarPlanet.UpdateNodeOnly()
+
+	shouldWeSpin = 0
+	try:
+		from Custom.NanoFXv2.SpecialFX.AtmosphereALT import AddRotatingBody
+		AddRotatingBody(pAchernarPlanet, 0.0005)
+		shouldWeSpin = 1
+	except:
+		shouldWeSpin = 0
+		traceback.print_exc()
+
+	pClouds = App.Planet_Create(406.0, "data/Models/Environment/Planet/Achernar.NIF")
+	pSet.AddObjectToSet(pClouds, "AchernarClouds")
+
+	pClouds.PlaceObjectByName("PlanetClouds")
+	pClouds.UpdateNodeOnly()
+	if shouldWeSpin:
+		AddRotatingBody(pClouds, 0.0010)
+
+	# Model and placement for "Moon" 1
+	pPlanet1 = App.Planet_Create(1220.0, "data/Models/Environment/Tethys.NIF")
+	pSet.AddObjectToSet(pPlanet1, "Alpha Eridani 1")
+
+	#Place the object at the specified location.
+	pPlanet1.PlaceObjectByName("Moon1")
+	pPlanet1.UpdateNodeOnly()
+	if shouldWeSpin:
+		AddRotatingBody(pPlanet1, 0.0003)
+
+	pJClouds = App.Planet_Create(1235.0, "data/Models/Environment/JClass1.NIF")
+	pSet.AddObjectToSet(pJClouds, "GasClouds")
+
+	pJClouds.PlaceObjectByName("Moon1Clouds")
+	pJClouds.UpdateNodeOnly()
+	if shouldWeSpin:
+		AddRotatingBody(pJClouds, 0.0009)
+
+	pPlanet2 = App.Planet_Create(480.0, "data/Models/Environment/PClass1.NIF")
+	pSet.AddObjectToSet(pPlanet2, "Alpha Eridani 2")
+
+	pPlanet2.PlaceObjectByName("Planet2")
+	pPlanet2.UpdateNodeOnly()
+	if shouldWeSpin:
+		AddRotatingBody(pPlanet2, 0.0004)
+
+	# pPBump = App.Planet_Create(481.25, "data/Models/Environment/Planet/P-Bump2.NIF")
+	# pSet.AddObjectToSet(pPBump, "Arctic Clouds")
+
+	# pPBump.PlaceObjectByName("Planet2Bump")
+	# pPBump.UpdateNodeOnly()
+	# if shouldWeSpin:
+	#	AddRotatingBody(pPBump, 0.0004)
+	
+	# Create the station here so we don't have to worry about it
+	# when it appears in later missions
+        if App.g_kUtopiaModule.IsHost() or not App.g_kUtopiaModule.IsMultiplayer():
+	        loadspacehelper.CreateShip("RomulanOutpost", pSet, "Romulan Outpost", "Station Location")
+
+#Nebula info reads (R,G,B, Vision-distance, Sensor interference, "neblua texture", "nebula external texture")
+
+	# Center Neb Placement
+	pNebula1 = App.MetaNebula_Create(100.0 / 255.0, 99.0 / 255.0, 146.0 / 255.0, 5000.0, 2500.0, "data/Backgrounds/nebulaoverlay.tga", "data/Backgrounds/nebulaexternal.tga")
+	pNebula1.SetupDamage(2500.0, 500.0)
+
+	pNebula1.AddNebulaSphere(0.0, -225500, 0.0, 16500.0)
+	# Puts the nebula in the set
+	pSet.AddObjectToSet(pNebula1, "Nebula1")
+
+def AddRotatingBody(pObject, fSpeed):
+	global g_lRotatingBodies
+
+	g_lRotatingBodies.append([pObject.GetObjID(), 0.0, fSpeed])
+
+	StartRotationTimer()
+
+def StartRotationTimer():
+	global g_bRotationTimerRunning
+
+	if g_bRotationTimerRunning:
+		return
+
+	g_bRotationTimerRunning = 1
+
+	MissionLib.CreateTimer(App.Game_GetNextEventType(), __name__ + ".RotateTimer", App.g_kUtopiaModule.GetGameTime() + 0.1, 0, 0)
+
+def RotateTimer(pObject, pEvent):
+	global g_lRotatingBodies
+
+	for lBody in g_lRotatingBodies:
+		iID = lBody[0]
+		fRot = lBody[1]
+		fSpeed = lBody[2]
+
+		pBody = App.ObjectClass_GetObjectByID(None, iID)
+
+		if pBody:
+			fRot = fRot + fSpeed
+
+			pBody.SetAngleAxisRotation(fRot, 0, 0, 1)
+			pBody.UpdateNodeOnly()
+
+			lBody[1] = fRot
+
+	MissionLib.CreateTimer(App.Game_GetNextEventType(), __name__ + ".RotateTimer", App.g_kUtopiaModule.GetGameTime() + 0.01, 0, 0)
+
+	return 0
