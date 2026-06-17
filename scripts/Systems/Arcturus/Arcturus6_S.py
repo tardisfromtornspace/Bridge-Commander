@@ -1,4 +1,6 @@
 import App
+import loadspacehelper
+import MissionLib
 import Tactical.LensFlares
 
 def Initialize(pSet):
@@ -22,43 +24,64 @@ def Initialize(pSet):
 	pSun2.PlaceObjectByName( "Sun2" )
 	pSun2.UpdateNodeOnly()
 
-	pPlanet = App.Planet_Create(4320.0, "data/models/environment/Neptune.NIF")
+	pPlanet = App.Planet_Create(4320.0, "data/Models/Environment/Neptune.NIF")
 	pSet.AddObjectToSet(pPlanet, "Arcturus 6")
 
 	pPlanet.PlaceObjectByName("Planet Location")
 	pPlanet.UpdateNodeOnly()
 	
-        try:    
-                import Custom.NanoFXv2.NanoFX_Lib
-                Custom.NanoFXv2.NanoFX_Lib.CreateAtmosphereFX(pPlanet, "data/models/environment/Neptune.NIF", "Class-J")        
-        except ImportError:
-                # Couldn't find NanoFx2.  That's ok.  Do nothing...
-                pass    
+	try:    
+		import Custom.NanoFXv2.NanoFX_Lib
+		Custom.NanoFXv2.NanoFX_Lib.CreateAtmosphereALT(pPlanet, "data/Models/Environment/Neptune.NIF", "data/Models/Environment/Neptune.NIF", "Class-J")
+	except ImportError:
+		# Couldn't find NanoFx2.  That's ok.  Do nothing...
+		pass
+
+	#try:    
+	#	import Custom.NanoFXv2.NanoFX_Lib
+	#	Custom.NanoFXv2.NanoFX_Lib.CreateAtmosphereFX(pPlanet, "data/Models/Environment/Neptune.NIF", "Class-J")	
+	#except ImportError:
+	#	# Couldn't find NanoFx2.  That's ok.  Do nothing...
+	#	pass    
 	
 
-	pMoon1 = App.Planet_Create(133.0, "data/models/environment/RockyPlanet.NIF")
+	pMoon1 = App.Planet_Create(133.0, "data/Models/Environment/RockyPlanet.NIF")
 	pSet.AddObjectToSet(pMoon1, "Arcturus 6, Moon 1")
 	
 	pMoon1.PlaceObjectByName("Moon1")
 	pMoon1.UpdateNodeOnly()
 	
-        try:    
-                import Custom.NanoFXv2.NanoFX_Lib
-                Custom.NanoFXv2.NanoFX_Lib.CreateAtmosphereFX(pPlanet, "data/models/environment/RockyPlanet.NIF", "Class-C")        
-        except ImportError:
-                # Couldn't find NanoFx2.  That's ok.  Do nothing...
-                pass  	
-	
+	#try:    
+	#	import Custom.NanoFXv2.NanoFX_Lib
+	#	Custom.NanoFXv2.NanoFX_Lib.CreateAtmosphereFX(pMoon1, "data/Models/Environment/RockyPlanet.NIF", "Class-C")	
+	#except ImportError:
+	#	# Couldn't find NanoFx2.  That's ok.  Do nothing...
+	#	pass
 
-	pMoon2 = App.Planet_Create(145.0, "data/models/environment/TurquoisePlanet.NIF")
+	try:    
+		import Custom.NanoFXv2.NanoFX_Lib
+		Custom.NanoFXv2.NanoFX_Lib.CreateAtmosphereALT(pMoon1, "data/Models/Environment/RockyPlanet.NIF", "data/Models/Environment/RockyPlanet.NIF", "Class-C")	
+	except ImportError:
+		# Couldn't find NanoFx2.  That's ok.  Do nothing...
+		pass
+
+	pMoon2 = App.Planet_Create(145.0, "data/Models/Environment/TurquoisePlanet.NIF")
 	pSet.AddObjectToSet(pMoon2, "Arcturus 6, Moon 2(Class C)")
 
 	pMoon2.PlaceObjectByName("Moon2")
 	pMoon2.UpdateNodeOnly()
-	
-        try:    
-                import Custom.NanoFXv2.NanoFX_Lib
-                Custom.NanoFXv2.NanoFX_Lib.CreateAtmosphereFX(pPlanet, "data/models/environment/TurquoisPlanetabort.NIF", "Class-C")        
-        except ImportError:
-                # Couldn't find NanoFx2.  That's ok.  Do nothing...
-                pass  	
+
+	try:    
+		import Custom.NanoFXv2.NanoFX_Lib
+		Custom.NanoFXv2.NanoFX_Lib.CreateAtmosphereALT(pMoon2, "data/Models/Environment/TurquoisePlanet.NIF", "data/Models/Environment/TurquoisePlanet.NIF", "Class-C")
+	except ImportError:
+		# Couldn't find NanoFx2.  That's ok.  Do nothing...
+		pass
+
+
+	#try:    
+	#	import Custom.NanoFXv2.NanoFX_Lib
+	#	Custom.NanoFXv2.NanoFX_Lib.CreateAtmosphereFX(pMoon2, "data/Models/Environment/TurquoisPlanetabort.NIF", "Class-C")	
+	#except ImportError:
+	#	# Couldn't find NanoFx2.  That's ok.  Do nothing...
+	#	pass  	
