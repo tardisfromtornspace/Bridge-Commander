@@ -13,7 +13,7 @@ import string
 TRUE = 1
 FALSE = 0
 
-versionPatch = 20260522 # Our version of the patch
+versionPatch = 20260616 # Our version of the patch
 # If disabled, replace TRUE with FALSE
 bEnabled = FALSE
 
@@ -39,21 +39,28 @@ if bEnabled:
 
 	def NewCreateAtmosphereALT(pPlanet, sNifPath = "data/Models/Environment/planet.nif", sCloudPath = "data/Models/Environment/cloud.nif", sTexturePath = "Class-M"):
 
-		debug(__name__ + ", CreateAtmosphereALT")
+		debug(__name__ + ", NewCreateAtmosphereALT")
 		try:
 			import Custom.NanoFXv2.NanoFX_Config 
 			if Custom.NanoFXv2.NanoFX_Config.sFX_Enabled == 1:
 				if Custom.NanoFXv2.NanoFX_Config.sFX_AtmosphereAltFX == "On":
 					import Custom.NanoFXv2.SpecialFX.AtmosphereALT
 					Custom.NanoFXv2.SpecialFX.AtmosphereALT.CreateAtmosphereALT(pPlanet, sNifPath, sTexturePath, sCloudPath)
-				#else:
-				#	import Custom.NanoFXv2.SpecialFX.AtmosphereFX
-				#	Custom.NanoFXv2.SpecialFX.AtmosphereFX.CreateAtmosphereFX(pPlanet, sNifPath, sTexturePath)
+				else:
+					import Custom.NanoFXv2.SpecialFX.AtmosphereFX
+					Custom.NanoFXv2.SpecialFX.AtmosphereFX.CreateAtmosphereFX(pPlanet, sNifPath, sTexturePath)
 		except:
-			print __name__, ".CreateAtmosphereALT ERROR: "
+			print __name__, ".NewCreateAtmosphereALT ERROR: "
 			traceback.print_exc()
-				
+
 	NanoFX_Lib.CreateAtmosphereALT = NewCreateAtmosphereALT
+
+	def NewCreateAtmosphereFXALT(pPlanet, sNifPath = "data/Models/Environment/planet.nif", sTexturePath = "Class-M"):
+		debug(__name__ + ", CreateAtmosphereFXALT")
+		NanoFX_Lib.CreateAtmosphereALT(pPlanet, sNifPath, sNifPath, sTexturePath)
+				
+
+	NanoFX_Lib.CreateAtmosphereFX = NewCreateAtmosphereFXALT
 
 	def NewSetupSpecialFX(mode):
 	

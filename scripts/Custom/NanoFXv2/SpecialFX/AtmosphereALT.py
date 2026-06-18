@@ -7,7 +7,7 @@
 ##	Created:	05/17/2003 - NanoByte a.k.a Michael T. Braams
 ##	Modified:	06/04/2026 - Tethys
 ##			17/06/2026 - CharaToLoki
-## 	Version: 20260617002
+## 	Version: 20260618001
 ###############################################################################
 from bcdebug import debug
 import traceback
@@ -151,7 +151,7 @@ def CreateAtmosphereALT(pPlanet, sNifPath = "data/Models/Environment/planet.nif"
 	timerS.AddRotatingBody(pAtmosphere1, 0.025)
 
 	pAtmosphere3 = App.Sun_Create(fSize * 0.1, fSize * 1.11, 0.0, "scripts/Custom/NanoFXv2/SpecialFX/Gfx/Atmosphere/" + sTexturePath + "/Clouds.tga", None)
-	pSet.AddObjectToSet(pAtmosphere3, sName + " Air")
+	pSet.AddObjectToSet(pAtmosphere3, sName + " Clouds")
 	pAtmosphere3.UpdateNodeOnly()
 	pPlanet.AttachObject(pAtmosphere3)
 	timerS.AddRotatingBody(pAtmosphere3, 0.0125)

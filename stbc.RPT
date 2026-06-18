@@ -16826,3 +16826,30 @@ Call stack:
 Address   Frame
 02010101  0E23FEA4  0000:00000000  (No symbol info found)
 
+//=====================================================
+Current Time: Thu Jun 18 01:42:48 2026
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  02000002 00:00000000 
+
+Registers:
+EAX:010A3B90
+EBX:00000000
+ECX:02000002
+EDX:00008000
+ESI:010A2080
+EDI:010A9FD0
+CS:EIP:0023:02000002
+SS:ESP:002B:0019F46C  EBP:00000000
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010202
+
+Application Timestamp: Thu Jan 01 01:00:00 1970
+Doing stack walk
+
+Call stack:
+Address   Frame
+02000002  0019F468  0000:00000000  (No symbol info found)
+
+//=====================================================
+Current Time: Thu Jun 18 01:52:15 2026
+Exception code: C0000005 ACCESS_VIOLATION

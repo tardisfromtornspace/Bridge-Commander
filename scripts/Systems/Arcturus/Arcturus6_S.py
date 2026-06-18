@@ -3,6 +3,8 @@ import loadspacehelper
 import MissionLib
 import Tactical.LensFlares
 
+import traceback
+
 def Initialize(pSet):
 
 	# Sun 1
@@ -32,9 +34,10 @@ def Initialize(pSet):
 	
 	try:    
 		import Custom.NanoFXv2.NanoFX_Lib
-		Custom.NanoFXv2.NanoFX_Lib.CreateAtmosphereALT(pPlanet, "data/Models/Environment/Neptune.NIF", "data/Models/Environment/Neptune.NIF", "Class-J")
-	except ImportError:
+		Custom.NanoFXv2.NanoFX_Lib.CreateAtmosphereFX(pPlanet, "data/Models/Environment/Neptune.NIF", "Class-J")
+	except:
 		# Couldn't find NanoFx2.  That's ok.  Do nothing...
+		traceback.print_exc()
 		pass
 
 	#try:    
@@ -60,7 +63,7 @@ def Initialize(pSet):
 
 	try:    
 		import Custom.NanoFXv2.NanoFX_Lib
-		Custom.NanoFXv2.NanoFX_Lib.CreateAtmosphereALT(pMoon1, "data/Models/Environment/RockyPlanet.NIF", "data/Models/Environment/RockyPlanet.NIF", "Class-C")	
+		Custom.NanoFXv2.NanoFX_Lib.CreateAtmosphereFX(pMoon1, "data/Models/Environment/RockyPlanet.NIF", "Class-C")	
 	except ImportError:
 		# Couldn't find NanoFx2.  That's ok.  Do nothing...
 		pass
@@ -73,7 +76,7 @@ def Initialize(pSet):
 
 	try:    
 		import Custom.NanoFXv2.NanoFX_Lib
-		Custom.NanoFXv2.NanoFX_Lib.CreateAtmosphereALT(pMoon2, "data/Models/Environment/TurquoisePlanet.NIF", "data/Models/Environment/TurquoisePlanet.NIF", "Class-C")
+		Custom.NanoFXv2.NanoFX_Lib.CreateAtmosphereFX(pMoon2, "data/Models/Environment/TurquoisePlanet.NIF", "Class-C")
 	except ImportError:
 		# Couldn't find NanoFx2.  That's ok.  Do nothing...
 		pass
