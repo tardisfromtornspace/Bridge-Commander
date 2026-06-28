@@ -7,7 +7,7 @@
 ##	Created:	05/17/2003 - NanoByte a.k.a Michael T. Braams
 ##	Modified:	06/04/2026 - Tethys
 ##			17/06/2026 - CharaToLoki
-## 	Version: 20260618001
+## 	Version: 20260628001
 ###############################################################################
 from bcdebug import debug
 import traceback
@@ -51,7 +51,7 @@ class TethysRotationChecks:
 		if self.g_bRotationTimerRunning != None:
 			return
 
-		self.g_bRotationTimerRunning = App.Game_GetNextEventType()
+		self.g_bRotationTimerRunning = App.UtopiaModule_GetNextEventType()
 		self.CreateCleanRotationTimer(self.g_bRotationTimerRunning, future=0.1)
 
 	def CreateCleanRotationTimer(self, evtType, future=0.1):
