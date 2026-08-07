@@ -37,7 +37,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(SensorArray)
 #################################################
 WarpReactorCore = App.PowerProperty_Create("Warp Reactor Core")
 
-WarpReactorCore.SetMaxCondition(4500.000000)
+WarpReactorCore.SetMaxCondition(1300.000000)
 WarpReactorCore.SetCritical(1)
 WarpReactorCore.SetTargetable(1)
 WarpReactorCore.SetPrimary(1)
@@ -215,7 +215,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(Bridge)
 #################################################
 ShieldGenerator = App.ShieldProperty_Create("Shield Generator")
 
-ShieldGenerator.SetMaxCondition(700.000000)
+ShieldGenerator.SetMaxCondition(900.000000)
 ShieldGenerator.SetCritical(0)
 ShieldGenerator.SetTargetable(1)
 ShieldGenerator.SetPrimary(1)

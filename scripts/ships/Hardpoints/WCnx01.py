@@ -8,7 +8,7 @@ import GlobalPropertyTemplates
 #################################################
 Hull = App.HullProperty_Create("Hull")
 
-Hull.SetMaxCondition(1200.000000)
+Hull.SetMaxCondition(599.000000)
 Hull.SetCritical(1)
 Hull.SetTargetable(1)
 Hull.SetPrimary(1)
@@ -37,7 +37,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(SensorArray)
 #################################################
 WarpReactorCore = App.PowerProperty_Create("Warp Reactor Core")
 
-WarpReactorCore.SetMaxCondition(1200.000000)
+WarpReactorCore.SetMaxCondition(599.000000)
 WarpReactorCore.SetCritical(1)
 WarpReactorCore.SetTargetable(1)
 WarpReactorCore.SetPrimary(1)
@@ -215,7 +215,7 @@ App.g_kModelPropertyManager.RegisterLocalTemplate(Bridge)
 #################################################
 ShieldGenerator = App.ShieldProperty_Create("Hull Polarizer")
 
-ShieldGenerator.SetMaxCondition(3500.000000)
+ShieldGenerator.SetMaxCondition(4017.000000)
 ShieldGenerator.SetCritical(0)
 ShieldGenerator.SetTargetable(1)
 ShieldGenerator.SetPrimary(1)
