@@ -34,7 +34,7 @@ eFX_SplashRadius = 25
 sFX_Enabled = 1
 ###
 sFX_AtmosphereGlowFX = "On"
-sFX_AtmosphereAltFX = "On"
+sFX_AtmosphereAltFX = "Off"
 sFX_PlasmaFX = "On"
 ###
 ###[WarpFX Settings]###
