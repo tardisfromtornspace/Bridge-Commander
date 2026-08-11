@@ -25,6 +25,9 @@ None that I've found, but if you find anything (missing files, buggy behaviour) 
 * WileyCoyote for lots of the coolest ships around.
 ** I've personally asked for permission from WileyCoyote via e-mail and while I didn't get a respose there, I got a response from the Discord via a trusted intermediary (THE-SCI-FI-KING) who told me "He said along you give proper credit he is fine".
 * I've tried to find all the readmes about the original mods these pack modifies, specially the WC NX Pack and the Xindi Aquatic, Insectoid and 22nd Century Tholian ship. Those involved with those other mods are included there.
+** https://www.gamefront.com/games/bridge-commander/file/insectoid-vessel I think the XInsect was from this one, by ZambieZan.
+** https://www.gamefront.com/games/bridge-commander/file/xindi-aquatic-dreadnought The Aquatic Dreadnought, also by ZambieZan.
+** https://www.gamefront.com/games/bridge-commander/file/tholian-vessel the 22nd century Tholian vessel, by Ignis/Queball.
 
 Fulfilling both the SDK and LGPL licenses:
 THIS MOD IS NOT SUPPORTED BY ACTIVISION
