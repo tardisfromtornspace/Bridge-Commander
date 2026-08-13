@@ -371,7 +371,7 @@ This mod falls under the GNU LESSER GENERAL PUBLIC LICENSE Version 3, 29 June 20
 ** -- 4th - and then copy the sfx and data ones from the super-pack again onto "temp folder SuP". This procedure should guarantee that all the folders and files are named properly while using those mod files and having updated ones (because when Windows OS replaces a file by another it may replace the contents, but if one was called "AAAA" and the other "aaaa" then the name of the oldest file will remain). 
 * For older mods like the Shadow Battlecrab mod which is stored on .BCMod format you may require of extra tools, like BCUT (Bridge Commander Universal Tool) -> BCTools -> BCMod Unpacker (https://www.gamefront.com/games/bridge-commander/file/bridge-commander-universal-tool-bcut-v-1-8-1)
 * For some other mods that are inside .exe like the Omega-class, you might need to create a "fake" install - which requires of data, sfx and script folders and stbc.exe - fortunately for the Omega-class that is not the case.
-* Babylon 5 uniforms https://www.gamefront.com/games/bridge-commander/file/babylon-5-uniforms, but only some elements.
+* Babylon 5 uniforms https://www.gamefront.com/games/bridge-commander/file/babylon-5-uniforms (by Houliganisle), but only some elements. Alternatively, https://www.gamefront.com/games/bridge-commander/file/b5-earthforce-bridge-crew-only which updates this properly (by TiqHud).
 
 
 
@@ -381,6 +381,7 @@ STEP 0: Ok, first of all, just in case, backup your STBC.
 1º Follow the steps indicated on "mods required" as well, skip the babylon 5 uniforms one, which we will do on the following steps. *** The Bluestar, Drakh Raider, Fighter Launchable Babylon 5, G'Quan, ThNor, Thunderbolt and Whitestar are not exactly required to be installed from there (as they are already on this super-pack), but welcome to give their authors more credit. *** After this step is done, all files required from all the mods (except babylon 5 uniforms) should be on "temp folder SuP".
 
 2º Install the Babylon 5 Uniforms mod from https://www.gamefront.com/games/bridge-commander/file/babylon-5-uniforms on a temporary folder, then go to TEMPFOLDER/scripts/Custom/Autoload and remove the file "Tmp crew".
+** If you instead do it with https://www.gamefront.com/games/bridge-commander/file/b5-earthforce-bridge-crew-only you need to follow no extra steps.
 
 3º Unzip the files from this main mod (the ones already passed through step 2 "temp folder SuP") onto the temporary folder created in 2, say "yes" to overwrite all files.
 

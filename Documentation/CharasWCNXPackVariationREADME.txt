@@ -21,13 +21,23 @@ None that I've found, but if you find anything (missing files, buggy behaviour) 
 
 == Credits ==
 * Special thanks to all the people involved in Foundation and Kobayashi Maru - specially Dasher42 and MLeo.
+* USS Sovereign for tools like BCUT, TDE, and help mentioned on many mods.
 * Alex SL Gato by doing the modifications mentioned above.
 * WileyCoyote for lots of the coolest ships around.
 ** I've personally asked for permission from WileyCoyote via e-mail and while I didn't get a respose there, I got a response from the Discord via a trusted intermediary (THE-SCI-FI-KING) who told me "He said along you give proper credit he is fine".
 * I've tried to find all the readmes about the original mods these pack modifies, specially the WC NX Pack and the Xindi Aquatic, Insectoid and 22nd Century Tholian ship. Those involved with those other mods are included there.
-** https://www.gamefront.com/games/bridge-commander/file/insectoid-vessel I think the XInsect was from this one, by ZambieZan.
 ** https://www.gamefront.com/games/bridge-commander/file/xindi-aquatic-dreadnought The Aquatic Dreadnought, also by ZambieZan.
+** https://www.gamefront.com/games/bridge-commander/file/insectoid-vessel I think the XInsect was from this one, by ZambieZan.
 ** https://www.gamefront.com/games/bridge-commander/file/tholian-vessel the 22nd century Tholian vessel, by Ignis/Queball.
+** https://www.gamefront.com/games/bridge-commander/file/intrepid-neptune-class the United Earth Neptune, by ZambieZan.
+** https://www.gamefront.com/games/bridge-commander/file/terran-empire-neptune-ent Terran Empire Neptune by RedLeader1701/Trip (RedLeader1701 At gmail.com ; mod upload and Terran Empire Markings), Redragon (redragon AT trekmods.com; mesh textures), Zambie Zan (alexandre.marques AT gmail.com ; BC convertion/Hardpoint/Speculars).
+** https://www.gamefront.com/games/bridge-commander/file/vulcan-dkyr Vulcan D'Kyr by shadowbuilder (model), ghugh (textures), yopyop (texture fixes and beta testing) and TiqHud (Hp and beta testing).
+** https://www.gamefront.com/games/bridge-commander/file/surrok Vulcan Surrok by NinjarDiver and Dante.
+** https://www.gamefront.com/games/bridge-commander/file/the-phoenix-warp-ship-admiral-ames Phoenix Warp Ship by Admiral Ames, Dante.
+** https://www.gamefront.com/games/bridge-commander/file/djcubes-j-class-upgrade and https://www.gamefront.com/games/bridge-commander/file/scotts-j-class-cargo-ship J Class by DJCube, Sneaker98, scottpkeene and Rick Knox
+** https://www.gamefront.com/games/bridge-commander/file/andorian-kumari-1 Andorian Kumari by CaptainRansome and ZambieZan.
+** https://www.gamefront.com/games/bridge-commander/file/declaration-class-pack and https://www.gamefront.com/games/bridge-commander/file/declaration-xcvs-fixed-christmas-release XCV packs (Declaration class) by DJCube, Atolm/Azel, Tus, P81, Dante, Dragon, GDluque, Nebula, Shinzon (the latest three beta testers); and TiqHud (fixes) + Linus, King Class Scout (these also were beta testers).
+
 
 Fulfilling both the SDK and LGPL licenses:
 THIS MOD IS NOT SUPPORTED BY ACTIVISION
