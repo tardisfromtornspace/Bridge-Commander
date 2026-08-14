@@ -1,4 +1,6 @@
 == Changelog ==
+1.2.24 - Fixing:
+   * Updated AdvArmourTechThree to 1.942, adding a possibly forgotten NextHandler call.
 1.2.23 - Fixing:
    * Updated AdvArmourTechThree to 1.94, cleaned code more and fixed potential issue with uninvicibilitators.
 1.2.22 - Fixing:

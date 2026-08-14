@@ -1,4 +1,8 @@
 == Changelog ==
+1.3.2 -
+   Fixes:
+   * Updated scripts/Custom/Autoload/PATCH-HyperdriveModuleLoadFlash&Sound.py to 0.22, fixing one goof due to a type that made the patch break the install if no USS Sovereign's Slipstream mod was installed.
+   * Updated scripts/Custom/TravellingMethods/Hyperdrive.py to 0.35, trying to make one re-skin function a bit more robust.
 1.3.1 -
    Updates:
    * Added scripts/Custom/Autoload/TWEAK-ShuttleFrameworkDropShields version 20260325 which makes shield drop conditional to several factors.

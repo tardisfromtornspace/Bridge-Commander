@@ -1,4 +1,6 @@
 == Changelog ==
+1.0.18
+* Updated AdvArmourTechThree to 1.942, adding a possibly forgotten NextHandler call.
 1.0.17
 * Since this ship would have been equipped with programmable matter if it really existed in canon, I added Automated Destroyed System repair to this vessel - this now also needs another dependency, to the Borg Adaptation Mod or any other of my mods that has that tech.
 1.0.16

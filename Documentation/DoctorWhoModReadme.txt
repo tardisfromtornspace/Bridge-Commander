@@ -1,4 +1,8 @@
 == Changelog ==
+1.3.2 - 
+   Fixes:
+   * Updated AdvArmourTechThree to 1.942, adding a possibly forgotten NextHandler call.
+   * Updated RealityBomb to 0.52, adding that same possibly forgotten NextHandler call.
 1.3.1 - 
    Fixes:
    * Updated AdvArmourTechThree to 1.94, cleaned code more and fixed potential issue with uninvicibilitators.

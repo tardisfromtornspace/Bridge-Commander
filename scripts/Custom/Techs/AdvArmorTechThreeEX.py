@@ -10,7 +10,7 @@ import traceback
 from bcdebug import debug
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-            "Version": "0.115",
+            "Version": "0.116",
             "License": "LGPL",
             "Description": "Read info below for better understanding"
             }
@@ -125,6 +125,10 @@ class AdvArmorTechEXDef(FoundationTech.TechDef):
 					self.DeleteMenuButton("Tactical", ONLINE_ARMOR_BTN_TXT)
 				except:
 					pass
+
+		# potential TO-DO this should work - but look out if it brings issues.
+		if self.pEventHandler and pEvent:
+			self.pEventHandler.CallNextHandler(pEvent)
 
 	# called by FoundationTech when a ship is created
 	def AttachShip(self, pShip, pInstance):

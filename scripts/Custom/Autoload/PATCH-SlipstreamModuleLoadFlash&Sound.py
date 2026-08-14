@@ -4,8 +4,8 @@
 # GC is ALL Rights Reserved by USS Frontier, but since GC supports Plugins it is fair to release a new TravellingMethod or patch old ones as long as the files remain unmodified.
 # Please note that this file requires:
 # - USS Sovereign's Slipstream Module, as this file's purpose revolves around it.
-# 18th April 2025
-# Version 0.21
+# 14th August 2026
+# Version 0.22
 
 # Imports
 import App
@@ -29,9 +29,9 @@ try:
 	if myDependingTravelModuleAux != None and hasattr(myDependingTravelModuleAux, "VERSION") and hasattr(myDependingTravelModuleAux, "sSlipstreamList") and myDependingTravelModuleAux.VERSION < VERSION:
 		myDependingTravelModule = myDependingTravelModuleAux
 	else:
-		print str(__name__) + ": the ", myDependingTravelModuleLibPath, " should be already up-to-date."
+		print str(__name__) + ": the ", myDependingTravelModulePath, " should be already up-to-date."
 except:
-	print str(__name__) + ": no ", myDependingTravelModuleLibPath, " to patch."
+	print str(__name__) + ": no ", myDependingTravelModulePath, " to patch."
 	traceback.print_exc()
 
 myDependingTravelModuleLib = None # The module we load.
@@ -117,7 +117,10 @@ def PlayReload(TGObject, pEvent):
 
 	del tempDict
 
-	#basicListener.StopListening()
+	#basicListener.StopListening()+
+
+	if TGObject and pEvent:
+		TGObject.CallNextHandler(pEvent)
 
 	return 0
 
@@ -132,7 +135,9 @@ def ObjectDestroyed(TGObject, pEvent):
 			if pShip:
 				clearShipSoundInfo(pShipID)	
 
-	TGObject.CallNextHandler(pEvent)
+	if TGObject and pEvent:
+		TGObject.CallNextHandler(pEvent)
+
 	return 0
 
 def pPlayerCleanUpRel(pShip, go = "Enter"):

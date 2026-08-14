@@ -2,8 +2,8 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL
 #         RealityBomb.py by Alex SL Gato
-#         Version 0.5
-#         26th October 2023
+#         Version 0.52
+#         14th August 2026
 #         Based on Simulated Point Defense.py and DampeningAOEDefensiveField.py by Alex SL Gato, which was based strongly on scripts\Custom\DS9FX\DS9FXPulsarFX\PulsarManager by USS Sovereign, and slightly on TractorBeams.py, Inversion Beam and Power Drain Beam 1.0 by MLeo Daalder, Apollo, and Dasher; some team-switching torpedo by LJ; and GraviticLance by Alex SL Gato, which was based on FiveSecsGodPhaser by USS Frontier, scripts/ftb/Tech/TachyonProjectile by the FoundationTechnologies team, and scripts/ftb/Tech/FedAblativeArmour by the FoundationTechnologies team, and AssimilationBeam.py from BCS:TNG and Apollo.
 #         Special thanks to USS Sovereign for some tips!                 
 #################################################################################################################
@@ -38,7 +38,7 @@ from bcdebug import debug
 import traceback
 
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-            "Version": "0.4",
+            "Version": "0.52",
             "License": "LGPL",
             "Description": "Read the small title above for more info"
             }
@@ -123,6 +123,10 @@ try:
 			#except:
 			#	pass
 			self.hideSignals()
+
+			# potential TO-DO this should work - but look out if it brings issues.
+			if self.pEventHandler and pEvent:
+				self.pEventHandler.CallNextHandler(pEvent)
 
 		def hideSignals(self):
 			pPlayer = MissionLib.GetPlayer()
@@ -699,16 +703,18 @@ try:
 		pEnterSound.SetInterface(1)
 
 		App.g_kSoundManager.PlaySound("Enter")
+
 		return 0
 
 	def accionDetonationNegative(self):
 		debug(__name__ + ", Reality Bomb Counter accionDetonationNegative")
-		# TO-DO add dust sound as .wav
+
 		pEnterSound = App.TGSound_Create("sfx/Weapons/DoctorDonna.wav", "Enter", 0)
 		pEnterSound.SetSFX(0) 
 		pEnterSound.SetInterface(1)
 
 		App.g_kSoundManager.PlaySound("Enter")
+
 		return 0
 
 	# Deletes a button. From BCS:TNG's mod

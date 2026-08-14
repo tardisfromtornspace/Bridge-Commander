@@ -1,6 +1,7 @@
 This mod was changed by narrowcwyfe and Alex SL Gato. Being temporarily uploaded on narrowcwfe's behalf.
 
 == Changelog ==
+0.9.21 - Updated AdvArmourTechThree to 1.942, adding a possibly forgotten NextHandler call.
 0.9.20 - Just in case, provided the exact same files I have on my install, to check if there's issues, and updated the readme a bit.
 0.9.19 - Updated AdvArmourTechThree to 1.94, cleaned code more and fixed potential issue with uninvicibilitators.
 0.9.18 - Updated AdvArmourTechThree to 1.9, cleaned code a bit and fixed potential issue with lights.

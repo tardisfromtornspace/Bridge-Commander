@@ -7,7 +7,7 @@
 # Please note that this file requires:
 # - USS Sovereign's Hyperdrive Module, as the purpose of the original mod was to provide exactly that.
 # The original Slipstream version requires all assets from the incomplete original from https://www.gamefront.com/games/bridge-commander/file/slipstream-for-galaxy-charts, except scripts/Custom/TravellingMethods/Slipstream.py.new (so, basically the files at scripts/Custom/GalaxyCharts), but since this file needs to create its own for Hyperdrive, it does not require them.
-# 27th September 2025
+# 14th August 2026
 #################################################################################################################
 ##########	MANUAL
 #################################################################################################################
@@ -27,7 +27,7 @@
 #################################################################################################################
 #
 MODINFO = { "Author": "\"BCXtreme\" (original), \"Alex SL Gato\" andromedavirgoa@gmail.com (fixes), \"USS Sovereign\" (Hyperdrive Module)",
-	    "Version": "0.34",
+	    "Version": "0.35",
 	    "License": "All Rights Reserved, by BCXtreme",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -1068,12 +1068,12 @@ def ProperTunnelTexture(pShip):
 			# Bingo, replace textures for both tunnels then
 			GFX = "scripts/Custom/Hyperdrive/GFX/" + pCustomization['TunnelTexture']
 
+	if fTunnel and fTunnel2:
+		fTunnel.ReplaceTexture(GFX, "outer_glow")
+		fTunnel2.ReplaceTexture(GFX, "outer_glow")
 
-	fTunnel.ReplaceTexture(GFX, "outer_glow")
-	fTunnel2.ReplaceTexture(GFX, "outer_glow")
-
-	fTunnel.RefreshReplacedTextures()
-	fTunnel2.RefreshReplacedTextures()
+		fTunnel.RefreshReplacedTextures()
+		fTunnel2.RefreshReplacedTextures()
 
 def SetupSequence(self):
 	# you can use this function as an example on how to create your own '.SetupSequence(self)' method for your

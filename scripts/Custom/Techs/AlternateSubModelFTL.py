@@ -1,7 +1,7 @@
 # THIS FILE IS NOT SUPPORTED BY ACTIVISION
 # THIS FILE IS UNDER THE LGPL FOUNDATION LICENSE AS WELL, FOR THOSE SECTIONS THAT DO NOT FALL UNDER ANY OTHER LICENSE (See explanation below)
 # AlternateSubModelFTL.py
-# 12th May 2026, by Alex SL Gato (CharaToLoki)
+# 14th August 2026, by Alex SL Gato (CharaToLoki)
 #         Based on Defiant's SubModels script logic and BorgAdaptation.py by Alex SL Gato, which were based on the Foundation import function by Dasher
 #         Also based slightly on ATPFunctions (by Apollo) and DS9FXPulsarManager style (by USS Sovereign).
 #         Also some sections based and copied from the Slipstream module by Mario aka USS Sovereign, modified by Alex SL Gato with Mario's permission to adapt part of his code to this script ONLY as long as it is meant for KM, and that he can and will take action otherwise (see Documentation/USSSovereignStanceAboutModifyingorRepackagingSlipstream.PNG).
@@ -1508,7 +1508,7 @@ def GetEngageDirectionC(mySelf, pPlayerID = None):
 #################################################################################################################
 #
 MODINFO = { "Author": "\"Alex SL Gato\" andromedavirgoa@gmail.com",
-	    "Version": "0.90",
+	    "Version": "0.91",
 	    "License": "All Rights Reserved (USS Sovereign sections), LGPL (everywhere else)",
 	    "Description": "Read the small title above for more info"
 	    }
@@ -2736,7 +2736,12 @@ class ProtoWarp(FoundationTech.TechDef):
 						bInterceptButton.SetDisabledColor(DisabledColor)
 						bInterceptButton.SetColorBasedOnFlags()
 
-					eEquippedInSystemIntercept[myGoodPlugin]["bInterceptButton"] = bInterceptButton			
+					eEquippedInSystemIntercept[myGoodPlugin]["bInterceptButton"] = bInterceptButton
+
+		# potential TO-DO this should work - but look out if it brings issues.
+		if self.pEventHandler and pEvent:
+			self.pEventHandler.CallNextHandler(pEvent)
+		
 		return 0
 
 	#### END OF USS SOVEREIGN'S LIMITED PERMISSION AREA ####
