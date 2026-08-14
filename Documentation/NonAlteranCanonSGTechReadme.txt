@@ -1,4 +1,7 @@
 == Changelog ==
+1.3.3 -
+   Fixes:
+   * Updated script TWEAK-NanoFXExpFX20240830 to version 1.2.7, theoretically fixing a possible Mvam-death-player-recreate issue.
 1.3.2 -
    Fixes:
    * Updated scripts/Custom/Autoload/PATCH-HyperdriveModuleLoadFlash&Sound.py to 0.22, fixing one goof due to a type that made the patch break the install if no USS Sovereign's Slipstream mod was installed.
