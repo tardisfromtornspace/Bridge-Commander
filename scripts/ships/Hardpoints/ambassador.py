@@ -157,7 +157,7 @@ kFiringChainString = App.TGString()
 kFiringChainString.SetString("")
 Torpedoes.SetFiringChainString(kFiringChainString)
 Torpedoes.SetMaxTorpedoes(0, 500)
-Torpedoes.SetTorpedoScript(0, "Tactical.Projectiles.ZZ_QuDFMPA")
+Torpedoes.SetTorpedoScript(0, "Tactical.Projectiles.PhotonTorpedo")
 Torpedoes.SetNumAmmoTypes(1)
 App.g_kModelPropertyManager.RegisterLocalTemplate(Torpedoes)
 #################################################
