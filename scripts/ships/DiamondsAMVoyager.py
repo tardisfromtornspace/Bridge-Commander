@@ -1,11 +1,20 @@
 import App
 import Multiplayer.SpeciesToShip
 
+stringSuperHigh = "data/Models/Ships/AMVoyager/AMVoyager.nif"
+stringLessExpensive = "data/Models/Ships/LCIntrepid/Intrepid.NIF"
+chosenModel = ""
+memorySavingMode = 0
+if memorySavingMode:
+	chosenModel = stringLessExpensive
+else:
+	chosenModel = stringSuperHigh
+
 def GetShipStats():
 	kShipStats = {
-		"FilenameHigh": "data/Models/Ships/AMVoyager/AMVoyager.nif",
-		"FilenameMed": "data/Models/Ships/AMVoyager/AMVoyager.nif",
-		"FilenameLow": "data/Models/Ships/AMVoyager/AMVoyager.nif",
+		"FilenameHigh": chosenModel,
+		"FilenameMed": chosenModel,
+		"FilenameLow": chosenModel,
 		"Name": "DiamondsAMVoyager",
 		"HardpointFile": "DiamondsAMVoyager",
 		"Species": Multiplayer.SpeciesToShip.SOVEREIGN,
