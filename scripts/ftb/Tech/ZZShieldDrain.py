@@ -1,3 +1,11 @@
+# August 20, 2026 - v1.0
+#
+# by Alex Marques aka Zambie Zan (alexmarques400@hotmail.com) with great pointers from Alex SL Gato/CharaToLoki (andromedavirgoa@gmail.com)
+#
+# Permission to redistribute or alter this code as part of any other packaging requires
+# the explicit permission of the author in advance.
+##############################################################################
+
 from bcdebug import debug
 import App
 import FoundationTech

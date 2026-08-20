@@ -7,7 +7,7 @@ def Create(pTorp):
     kGlowColor.SetRGBA(255.0 / 255.0, 65.0 / 255.0, 0.0, 1.0)
     kCoreColor = App.TGColorA()
     kCoreColor.SetRGBA(255.0 / 255.0, 252.0 / 255.0, 100.0 / 255.0, 1.0)
-    pTorp.CreateTorpedoModel('data/Textures/Tactical/TorpedoCore.tga', kCoreColor, 0.05, 2.2, 'data/Textures/Tactical/TorpedoGlow.tga', kGlowColor, 1.5, 0.09, 0.11, 'data/Textures/Tactical/TorpedoFlares.tga', kGlowColor, 20, 0.06, 0.5)
+    pTorp.CreateTorpedoModel('data/Textures/Tactical/TorpedoCore.tga', kCoreColor, 0.05, 2.2, 'data/Textures/Tactical/TorpedoGlow.tga', kGlowColor, 1.5, 0.09, 0.11, 'data/Textures/Tactical/TorpedoCore.tga', kGlowColor, 20, 0.06, 0.5)
     pTorp.SetDamage(GetDamage())
     pTorp.SetDamageRadiusFactor(0.13)
     pTorp.SetGuidanceLifetime(GetGuidanceLifetime())
@@ -42,5 +42,5 @@ def GetGuidanceLifetime():
 
 
 def GetMaxAngularAccel():
-    return 0.18
+    return 0.48
 
