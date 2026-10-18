@@ -1,0 +1,127 @@
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Adding Tethys Atmospheres to NanoFX v2 BETA (version  20260616 )
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Custom.Autoload.FIX-EngineerCharacterHandlers : Patched your  Bridge.EngineerCharacterHandlers  to cover 0-shield-strength ships
+Updated FoundationTech.ShipInstance's DefendVS* Fixes
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version  20260222 )
+Custom.Autoload.TWEAK-ShuttleFrameworkDropShields  tweaked Shuttle Launch Framework LaunchShip conditions.
+Patched TacticalControlInterfaces.CycleCameraMode to add mode viewing modes
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+Timed Torpedoes loaded
+Setting Stock System Planets Random Density.
+Tech: SW Shields isn't installed::Imperator Star Destroyer MkII-1
+DS9FX: Active and Operational...
+PlasmaFX Communicating with Targetable Plasma Streams...
+...Sucess
+PlasmaFX Communicating with Targetable Plasma Streams...
+...Sucess
+Setting splash damage for Imperator Star Destroyer MkII-1 to (190.863281, 3.817266)
+killing the player class instance
+killing the player class instance
+Return Shuttles Warning: Tractor System not in Docking Mode
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Tech: SW Shields isn't installed::Imperator Star Destroyer MkII-1
+DS9FX: Active and Operational...
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Setting splash damage for Imperator Star Destroyer MkII-1 to (193.326187, 3.866524)
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Tech: SW Shields isn't installed::Imperator Star Destroyer MkII-1
+DS9FX: Active and Operational...
+PlasmaFX Communicating with Targetable Plasma Streams...
+...Sucess
+Setting splash damage for Plasma Stream Firepoint2_t to (562.500000, 11.250000)
+PlasmaFX Communicating with Targetable Plasma Streams...
+...Sucess
+Setting splash damage for Plasma Stream Firepoint3_t to (187.500000, 3.750000)
+PlasmaFX Communicating with Targetable Plasma Streams...
+...Sucess
+Setting splash damage for Plasma Stream Firepoint4_t to (187.500000, 3.750000)
+PlasmaFX Communicating with Targetable Plasma Streams...
+...Sucess
+Setting splash damage for Plasma Stream Firepoint5_t to (187.500000, 3.750000)
+PlasmaFX Communicating with Targetable Plasma Streams...
+...Sucess
+Setting splash damage for Plasma Stream Firepoint6_t to (187.500000, 3.750000)
+PlasmaFX Communicating with Targetable Plasma Streams...
+...Sucess
+Setting splash damage for Plasma Stream Firepoint7_t to (562.500000, 11.250000)
+Setting splash damage for Imperator Star Destroyer MkII-1 to (7000.000000, 140.000000)
+killing the player class instance
+killing the player class instance
+killing the player class instance
+killing the player class instance
+killing the player class instance
+killing the player class instance
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Tech: SW Shields isn't installed::Imperator Star Destroyer MkII-1
+DS9FX: Active and Operational...
+Setting splash damage for Imperator Star Destroyer MkII-1 to (6996.641602, 139.932831)
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Tech: SW Shields isn't installed::Imperator Star Destroyer MkII-1
+DS9FX: Active and Operational...
+Some SGOriBeamsWeapon hull subtech suffered an error
+Traceback (innermost last):
+  File ".\Scripts\Custom\Techs\SGOriBeamWeapon.py", line 690, in OneWeaponHit
+  File ".\Scripts\Custom\Techs\SGOriBeamWeaponScripts\SWShieldsConfiguration.py", line 108, in interactionHullBehaviour
+NameError: pTorp
+Some SGOriBeamsWeapon hull subtech suffered an error
+Traceback (innermost last):
+  File ".\Scripts\Custom\Techs\SGOriBeamWeapon.py", line 690, in OneWeaponHit
+  File ".\Scripts\Custom\Techs\SGOriBeamWeaponScripts\SWShieldsConfiguration.py", line 108, in interactionHullBehaviour
+NameError: pTorp
+Some SGOriBeamsWeapon hull subtech suffered an error
+Traceback (innermost last):
+  File ".\Scripts\Custom\Techs\SGOriBeamWeapon.py", line 690, in OneWeaponHit
+  File ".\Scripts\Custom\Techs\SGOriBeamWeaponScripts\SWShieldsConfiguration.py", line 108, in interactionHullBehaviour
+NameError: pTorp
+Setting splash damage for Imperator Star Destroyer MkII-1 to (7000.000000, 140.000000)
+GravityFX has been deactivated.
+Gravity FX has been loaded.
+Traceback (innermost last):
+  File ".\Scripts\Custom\Autoload\zzzSlipstreamMode.py", line 101, in __call__
+    Custom.Slipstream.SlipstreamModule.delnavpoint()
+  File ".\Scripts\Custom\Slipstream\SlipstreamModule.py", line 259, in delnavpoint
+    pMission = pEpisode.GetCurrentMission()
+AttributeError: 'None' object has no attribute 'GetCurrentMission'
