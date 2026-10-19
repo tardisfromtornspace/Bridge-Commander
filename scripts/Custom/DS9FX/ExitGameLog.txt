@@ -1928,3 +1928,3447 @@ Setting splash damage for Imperator Star Destroyer MkII-1 to (7000.000000, 140.0
 
 
 ##### End Of The Log #####
+##### Bridge Commander Exit Log: 18 Oct 2026 23:43:28#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Adding Tethys Atmospheres to NanoFX v2 BETA (version  20260616 )
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Custom.Autoload.FIX-EngineerCharacterHandlers : Patched your  Bridge.EngineerCharacterHandlers  to cover 0-shield-strength ships
+Updated FoundationTech.ShipInstance's DefendVS* Fixes
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version  20260222 )
+Custom.Autoload.TWEAK-ShuttleFrameworkDropShields  tweaked Shuttle Launch Framework LaunchShip conditions.
+Patched TacticalControlInterfaces.CycleCameraMode to add mode viewing modes
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 19 Oct 2026 09:34:24#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Adding Tethys Atmospheres to NanoFX v2 BETA (version  20260616 )
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Custom.Autoload.FIX-EngineerCharacterHandlers : Patched your  Bridge.EngineerCharacterHandlers  to cover 0-shield-strength ships
+Updated FoundationTech.ShipInstance's DefendVS* Fixes
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version  20260222 )
+Custom.Autoload.TWEAK-ShuttleFrameworkDropShields  tweaked Shuttle Launch Framework LaunchShip conditions.
+Patched TacticalControlInterfaces.CycleCameraMode to add mode viewing modes
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+# DS9FX has...
+
+# taken a console dump
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+Timed Torpedoes loaded
+Setting Stock System Planets Random Density.
+Tech: SW Shields isn't installed::Player
+Tech: SW Shields isn't installed::Imperator Star Destroyer MkII-1
+DS9FX: Active and Operational...
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Setting splash damage for Imperator Star Destroyer MkII-1 to (6468.072266, 129.361450)
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Setting Stock System Planets Random Density.
+Tech: SW Shields isn't installed::Player
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+DS9FX: Active and Operational...
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 19 Oct 2026 09:34:24#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Adding Tethys Atmospheres to NanoFX v2 BETA (version  20260616 )
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Custom.Autoload.FIX-EngineerCharacterHandlers : Patched your  Bridge.EngineerCharacterHandlers  to cover 0-shield-strength ships
+Updated FoundationTech.ShipInstance's DefendVS* Fixes
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version  20260222 )
+Custom.Autoload.TWEAK-ShuttleFrameworkDropShields  tweaked Shuttle Launch Framework LaunchShip conditions.
+Patched TacticalControlInterfaces.CycleCameraMode to add mode viewing modes
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+# DS9FX has...
+
+# taken a console dump
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+Timed Torpedoes loaded
+Setting Stock System Planets Random Density.
+Tech: SW Shields isn't installed::Player
+Tech: SW Shields isn't installed::Imperator Star Destroyer MkII-1
+DS9FX: Active and Operational...
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Setting splash damage for Imperator Star Destroyer MkII-1 to (6468.072266, 129.361450)
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Setting Stock System Planets Random Density.
+Tech: SW Shields isn't installed::Player
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+DS9FX: Active and Operational...
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+Traceback (innermost last):
+  File ".\Scripts\FoundationTech.py", line 382, in __call__
+    next = i(iMoment)
+  File ".\Scripts\FoundationTech.py", line 454, in __call__
+    self._source.Enable(self.pSubSys)
+  File ".\Scripts\FoundationTech.py", line 801, in Enable
+    pShip = App.ShipClass_GetObjectByID(App.SetClass_GetNull(), self.pShipID)
+  File ".\Scripts\App.py", line 11281, in ShipClass_GetObjectByID
+    val = apply(Appc.ShipClass_GetObjectByID,args,kwargs)
+TypeError: illegal argument type for built-in operation
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 19 Oct 2026 10:04:16#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Adding Tethys Atmospheres to NanoFX v2 BETA (version  20260616 )
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Custom.Autoload.FIX-EngineerCharacterHandlers : Patched your  Bridge.EngineerCharacterHandlers  to cover 0-shield-strength ships
+Updated FoundationTech.ShipInstance's DefendVS* Fixes
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version  20260222 )
+Custom.Autoload.TWEAK-ShuttleFrameworkDropShields  tweaked Shuttle Launch Framework LaunchShip conditions.
+Patched TacticalControlInterfaces.CycleCameraMode to add mode viewing modes
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+Timed Torpedoes loaded
+Setting Stock System Planets Random Density.
+Tech: SW Shields isn't installed::Player
+Tech: SW Shields isn't installed::Imperator Star Destroyer MkII-1
+DS9FX: Active and Operational...
+
+
+Return Shuttles Warning: Tractor System not in Docking Mode
+
+
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+
+
+Return Shuttles Warning: Tractor System not in Docking Mode
+Setting splash damage for Imperator Star Destroyer MkII-1 to (7000.000000, 140.000000)
+Return Shuttles Warning: Tractor System not in Docking Mode
+
+
+Setting Stock System Planets Random Density.
+Tech: SW Shields isn't installed::Player
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Tech: SW Shields isn't installed::Player
+Tech: SW Shields isn't installed::Imperator Star Destroyer MkII-1
+Tech: SW Shields isn't installed::Imperator Star Destroyer MkII-2
+Tech: SW Shields isn't installed::Imperator Star Destroyer MkII-3
+Tech: SW Shields isn't installed::Imperator Star Destroyer MkII-4
+Tech: SW Shields isn't installed::Imperator Star Destroyer MkII-5
+Tech: SW Shields isn't installed::Imperator Star Destroyer MkII-6
+Tech: SW Shields isn't installed::Imperator Star Destroyer MkII-7
+DS9FX: Active and Operational...
+PlasmaFX Communicating with Targetable Plasma Streams...
+...Sucess
+Setting splash damage for ZZTIEFighter - 2 to (375.000000, 7.500000)
+PlasmaFX Communicating with Targetable Plasma Streams...
+...Sucess
+PlasmaFX Communicating with Targetable Plasma Streams...
+...Sucess
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Setting splash damage for Plasma Stream Firepoint1_t to (562.500000, 11.250000)
+Setting splash damage for Plasma Stream Firepoint2_t to (562.500000, 11.250000)
+Setting splash damage for Plasma Stream Firepoint0_t to (562.500000, 11.250000)
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Setting splash damage for ZZTIEFighter - 8 to (375.000000, 7.500000)
+Setting splash damage for ZZTIEFighter - 3 to (660.294128, 13.205883)
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Setting splash damage for ZZTIEInterceptor - 12 to (375.000000, 7.500000)
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Setting splash damage for ZZTIEInterceptor - 4 to (240.306122, 4.806122)
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Setting splash damage for ZZTIEInterceptor - 10 to (375.000000, 7.500000)
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Setting splash damage for Imperator Star Destroyer MkII-1 to (2031.250000, 40.625000)
+killing the player class instance
+killing the player class instance
+killing the player class instance
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Setting splash damage for ZZTIEInterceptor - 11 to (375.000000, 7.500000)
+Setting splash damage for ZZTIEInterceptor - 24 to (375.000000, 7.500000)
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Setting Stock System Planets Random Density.
+Tech: SW Shields isn't installed::Player
+DS9FX: Active and Operational...
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####
+##### Bridge Commander Exit Log: 19 Oct 2026 10:04:16#####
+
+Outdated Foundation, updating functions
+Outdated Foundation, installing FolderManager
+Repairing ship description outputs...
+Adding Tethys Atmospheres to NanoFX v2 BETA (version  20260616 )
+Foundation Tech loaded
+Galaxy Charts v1.5 is online
+Updating your AblativeArmour.py <= 1.0 to regenerate
+FIX-BorgAttackAIforGC: Patched BorgAttack AI for GC.
+Fixing your old DS9FX version
+Custom.Autoload.FIX-EngineerCharacterHandlers : Patched your  Bridge.EngineerCharacterHandlers  to cover 0-shield-strength ships
+Updated FoundationTech.ShipInstance's DefendVS* Fixes
+Updated FoundationTech.GaugeTechDef Detach-related fixes
+Updated FoundationTech.ShipInstance Detach-related fixes
+FIX-GCNormalWarpAndEnhancedWarp: Patched Stock GalaxyCharts_v2 TravellingMethods
+Updating your TractorBeams.py <= 1.0 system mismatch
+Gravity FX has been loaded.
+Custom.Autoload.PATCH-HyperdriveModuleLoadFlash&Sound: patched Custom.Hyperdrive.HyperdriveModule for AI GalaxyCharts Customization.
+Custom.Autoload.PATCH-SlipstreamModuleLoadFlash&Sound: patched Custom.Slipstream.SlipstreamModule for AI GalaxyCharts Customization.
+Patched FoolTargeting to not miss from regular InaccurateFire
+Tweaking NanoFX v2 explosions (version  20260222 )
+Custom.Autoload.TWEAK-ShuttleFrameworkDropShields  tweaked Shuttle Launch Framework LaunchShip conditions.
+Patched TacticalControlInterfaces.CycleCameraMode to add mode viewing modes
+Stargate Hyperdrive Drive Initializing...
+Slipstream Drive 20070905 Initializing...
+Fixing\Enhancing USS Sovereign's mods...
+DS9FX Initializing...
+AccessibilityConfig: Using Legacy extra menu support
+DS9FX: Game Crash Fix Active...
+Fixing Jaggies
+
+
+added activation event for re-intergration sequence
+Setting Stock System Planets Random Density.
+Hyperdrive: Quick Battle is running... Mod is starting up...
+Slipstream: Quick Battle is running... Mod is starting up...
+DS9FX: Active and Operational...
+Trying to clean memory
+
+
+Timed Torpedoes loaded
+Setting Stock System Planets Random Density.
+Tech: SW Shields isn't installed::Player
+Tech: SW Shields isn't installed::Imperator Star Destroyer MkII-1
+DS9FX: Active and Operational...
+
+
+Return Shuttles Warning: Tractor System not in Docking Mode
+
+
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+
+
+Return Shuttles Warning: Tractor System not in Docking Mode
+Setting splash damage for Imperator Star Destroyer MkII-1 to (7000.000000, 140.000000)
+Return Shuttles Warning: Tractor System not in Docking Mode
+
+
+Setting Stock System Planets Random Density.
+Tech: SW Shields isn't installed::Player
+DS9FX: Active and Operational...
+Setting Stock System Planets Random Density.
+Tech: SW Shields isn't installed::Player
+Tech: SW Shields isn't installed::Imperator Star Destroyer MkII-1
+Tech: SW Shields isn't installed::Imperator Star Destroyer MkII-2
+Tech: SW Shields isn't installed::Imperator Star Destroyer MkII-3
+Tech: SW Shields isn't installed::Imperator Star Destroyer MkII-4
+Tech: SW Shields isn't installed::Imperator Star Destroyer MkII-5
+Tech: SW Shields isn't installed::Imperator Star Destroyer MkII-6
+Tech: SW Shields isn't installed::Imperator Star Destroyer MkII-7
+DS9FX: Active and Operational...
+PlasmaFX Communicating with Targetable Plasma Streams...
+...Sucess
+Setting splash damage for ZZTIEFighter - 2 to (375.000000, 7.500000)
+PlasmaFX Communicating with Targetable Plasma Streams...
+...Sucess
+PlasmaFX Communicating with Targetable Plasma Streams...
+...Sucess
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Setting splash damage for Plasma Stream Firepoint1_t to (562.500000, 11.250000)
+Setting splash damage for Plasma Stream Firepoint2_t to (562.500000, 11.250000)
+Setting splash damage for Plasma Stream Firepoint0_t to (562.500000, 11.250000)
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Setting splash damage for ZZTIEFighter - 8 to (375.000000, 7.500000)
+Setting splash damage for ZZTIEFighter - 3 to (660.294128, 13.205883)
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Setting splash damage for ZZTIEInterceptor - 12 to (375.000000, 7.500000)
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Setting splash damage for ZZTIEInterceptor - 4 to (240.306122, 4.806122)
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Setting splash damage for ZZTIEInterceptor - 10 to (375.000000, 7.500000)
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Setting splash damage for Imperator Star Destroyer MkII-1 to (2031.250000, 40.625000)
+killing the player class instance
+killing the player class instance
+killing the player class instance
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Setting splash damage for ZZTIEInterceptor - 11 to (375.000000, 7.500000)
+Setting splash damage for ZZTIEInterceptor - 24 to (375.000000, 7.500000)
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Return Shuttles Warning: Tractor System not in Docking Mode
+Setting Stock System Planets Random Density.
+Tech: SW Shields isn't installed::Player
+DS9FX: Active and Operational...
+
+# DS9FX has...
+
+# taken a console dump
+
+# DS9FX has...
+
+# taken a console dump
+
+
+##### End Of The Log #####

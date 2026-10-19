@@ -11,9 +11,10 @@ try:
 	ImpactTexture = Tactical.Projectiles.impactEffects.ImpactTexture
 except:
 	ImpactTexture = None
+	traceback.print_exc()
 
 # ZZEngineDisable.py
-# August 2026 - v1.021
+# October 2026 - v1.023
 # by Alex Marques aka Zambie Zan (alexmarques400@hotmail.com)
 # small changes by CharaToLoki
 #
@@ -50,7 +51,7 @@ class ZZEngineDisableDef(FoundationTech.TechDef):
 	def OnYield(self, pShip, pInstance, pEvent, pTorp):
 		debug(__name__ + ", OnYield")
 
-		if not pShip:
+		if not pShip or (pShip.IsDead() or pShip.IsDying()) or not pInstance:
 			return
 
 		if not pEvent:
@@ -81,32 +82,25 @@ class ZZEngineDisableDef(FoundationTech.TechDef):
 				fLife    = kData.get('fLife',     fLife)
 				fDuration = kData.get('fDuration', fDuration)
 
-		if ImpactTexture and pShip and sTexture:
-			try:
-				ImpactTexture.DriveEnterFlash(
-					None,
-					pShip.GetObjID(),
-					None,
-					amount      = iAmount,
-					sparkSize   = 1.0,
-					sFile       = sTexture,
-					sFileFrameW = iFrameW,
-					sFileFrameH = iFrameH,
-					colorKey    = kColor,
-					pAttachTo   = pShip.GetNode(),
-					pEmitFrom   = pShip,
-					fSize       = pShip.GetRadius() * fSizeMult,
-					fFrequency  = 0.05,
-					fEmitLife   = 0.75,
-					fSpeed      = 0.0,
-					fLife       = fLife
-				)
-			except:
-				traceback.print_exc()
-
 		# --- Disable ship glows for the duration ---
 		iShipID = pShip.GetObjID()
 		if iShipID != None and iShipID != App.NULL_ID and not (pShip.IsDead() or pShip.IsDying()):
+			# Disable impulse engines
+			pImpulse = pShip.GetImpulseEngineSubsystem()
+			if pImpulse:
+				try:
+					pInstance.DisableSubSys(pShip, pImpulse, fDuration)
+				except:
+					traceback.print_exc()
+
+			# Disable warp engines
+			pWarp = pShip.GetWarpEngineSubsystem()
+			if pWarp:
+				try:
+					pInstance.DisableSubSys(pShip, pWarp, fDuration)
+				except:
+					traceback.print_exc()
+
 			try:
 				pShip.DisableGlowAlphaMaps()
 			except:
@@ -125,19 +119,26 @@ class ZZEngineDisableDef(FoundationTech.TechDef):
 			except:
 				traceback.print_exc()
 
-			# Disable impulse engines
-			pImpulse = pShip.GetImpulseEngineSubsystem()
-			if pImpulse:
+			if ImpactTexture and pShip and sTexture:
 				try:
-					pInstance.DisableSubSys(pShip, pImpulse, fDuration)
-				except:
-					traceback.print_exc()
-
-			# Disable warp engines
-			pWarp = pShip.GetWarpEngineSubsystem()
-			if pWarp:
-				try:
-					pInstance.DisableSubSys(pShip, pWarp, fDuration)
+					ImpactTexture.DriveEnterFlash(
+						None,
+						pShip.GetObjID(),
+						None,
+						amount      = iAmount,
+						sparkSize   = 1.0,
+						sFile       = sTexture,
+						sFileFrameW = iFrameW,
+						sFileFrameH = iFrameH,
+						colorKey    = kColor,
+						pAttachTo   = pShip.GetNode(),
+						pEmitFrom   = pShip,
+						fSize       = pShip.GetRadius() * fSizeMult,
+						fFrequency  = 0.05,
+						fEmitLife   = 0.75,
+						fSpeed      = 0.0,
+						fLife       = fLife
+					)
 				except:
 					traceback.print_exc()
 
